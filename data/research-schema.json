@@ -1,0 +1,152 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EV research structural schema (reconstructed from supplied snapshot)",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "metadata",
+    "criteria",
+    "models",
+    "variants",
+    "trim_equipment",
+    "feature_evidence",
+    "update_eligibility",
+    "update_events",
+    "configuration_history",
+    "sources",
+    "publication_issues",
+    "prior_update_summary"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "metadata": {
+      "type": "object",
+      "required": [
+        "as_of",
+        "baseline_variant_id",
+        "record_count",
+        "criterion_count",
+        "feature_row_count"
+      ]
+    },
+    "criteria": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "key",
+          "label",
+          "group",
+          "definition"
+        ]
+      }
+    },
+    "models": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "variants": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "model_id",
+          "brand",
+          "model",
+          "trim",
+          "price_aud",
+          "range_km",
+          "record_state",
+          "source_ids"
+        ]
+      }
+    },
+    "trim_equipment": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "feature_evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "variant_id",
+          "model_id",
+          "criterion",
+          "status",
+          "value",
+          "conditions",
+          "source_ids"
+        ]
+      }
+    },
+    "update_eligibility": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "variant_id",
+          "scope",
+          "source_ids",
+          "documented_family_minimum"
+        ]
+      }
+    },
+    "update_events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "event_id",
+          "model_ids",
+          "category",
+          "source_ids"
+        ]
+      }
+    },
+    "configuration_history": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "url",
+          "publisher",
+          "source_type",
+          "title"
+        ]
+      }
+    },
+    "publication_issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "issue_id",
+          "model_ids",
+          "publication_action"
+        ]
+      }
+    },
+    "prior_update_summary": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  },
+  "additionalProperties": true
+}

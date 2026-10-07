@@ -1,0 +1,42 @@
+{
+  "created_on": "2026-10-06",
+  "provenance": "Original code-native graphics authored in this implementation; no manufacturer binary or source photograph used.",
+  "assets": [
+    {
+      "id": "brand-bars",
+      "source": "src/app/icon.svg",
+      "purpose": "Original working brand mark; subject to name/brand clearance"
+    },
+    {
+      "id": "seating-positions",
+      "source": "src/components/ui.tsx#SeatingDiagram",
+      "purpose": "Five/six positions only; not dimensions or child-restraint evidence"
+    },
+    {
+      "id": "charge-window",
+      "source": "src/components/ui.tsx#ChargeWindowDiagram",
+      "purpose": "Published charge percentage window; not a measured curve"
+    },
+    {
+      "id": "chapter-artwork",
+      "source": "scripts/build-chapter-art.ts -> public/media/chapters/*.svg",
+      "purpose": "Seven original chapter illustrations (price A, automated driving B, remaining topics C–G; original filenames retained), each as 1600x900 desktop and 960x1200 mobile SVG. Conceptual editorial artwork; not evidence of any specification, interface, rating or figure. No text or numerals in the artwork."
+    },
+    {
+      "id": "automated-driving-animation",
+      "source": "scripts/chapter-art-driving.ts -> public/media/chapters/a-automated-driving-hero-{desktop,mobile}.svg (+ -still)",
+      "purpose": "Original 10-second looping plan-view scene for the automated-driving chapter: roundabout, stop sign, unprotected right turn, left-hand traffic. CSS keyframes only, no script. Conceptual; depicts no manufacturer system or capability. The driver's hands stay on the wheel throughout. The -still files are the resting frame used for reduced motion and when paused."
+    },
+    {
+      "id": "automated-driving-scene",
+      "source": "src/lib/driving-sim.ts + src/lib/driving-render.ts, shown by src/components/driving-scene.tsx",
+      "purpose": "Original night-time isometric city for the automated-driving chapter, drawn live on a canvas (no image files). A 10-second loop along a route through a repeating street grid: roundabout, stop sign, unprotected right turn, left-hand traffic. The followed car is an original low-poly model of the 2025 Tesla Model Y in black, built in code from published dimensions with public photographs used only as visual reference; no Tesla media, logo or wordmark is used. Other vehicles are generic. Conceptual: it demonstrates no vehicle's capability, and the driver's hands stay on the wheel. Replaces the flat SVG animation on the page; that version stays available via the `scene` flag in src/lib/chapter-art.ts."
+    },
+    {
+      "id": "chapter-scenes",
+      "source": "src/lib/chapter-scenes.ts + src/lib/scene-*.ts (drawing kit: src/lib/scene-kit.ts), shown by src/components/loop-scene.tsx",
+      "purpose": "Six original three-second looping scenes, one for each chapter other than automated driving, drawn live on a canvas (no image files) in that scene's night-time isometric treatment. Each has three labelled one-second beats: price (blank tag, calendar year, warranty dome), range (plug in, charge, range), space (seats, storage, safety), convenience (approach, unlock, ready), comfort (cool, warm, smooth) and software (update, phone, voice). They reuse the automated-driving scene's original code-built black Model Y; no Tesla media, logo or wordmark is used. Conceptual: no price, figure, rating or manufacturer interface is drawn, and nothing shown is evidence of any vehicle's equipment. Replaces the flat SVG chapter illustrations on the page; those stay available via the `scene` flag in src/lib/chapter-art.ts."
+    }
+  ],
+  "replacement_slot": "MediaRenderer resolves vehicle-<variantId>; production photography inventory remains empty."
+}
