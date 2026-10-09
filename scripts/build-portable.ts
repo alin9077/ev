@@ -59,20 +59,17 @@ async function main() {
   const css = fs.readFileSync("src/app/globals.css", "utf8");
   const page = (flag: string, title: string) =>
     `<!doctype html><html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>${title}</title><style>${css}</style></head><body><div id="root"></div><noscript>This interactive comparison needs JavaScript enabled.</noscript><script id="ev-data" type="application/json">${json}</script><script>${flag}${js}</script></body></html>`;
-  const html = page("", "EV Side by Side");
-  fs.writeFileSync("index.html", html);
+  // The B experience is the default landing page; keep index-b.html as an alias.
+  const htmlB = page("window.__EV_B=true;", "EV Side by Side");
+  fs.writeFileSync("index.html", htmlB);
   fs.mkdirSync("public", { recursive: true });
-  fs.writeFileSync("public/index.html", html);
-  // Version B: the same file with the B scenes, opened straight from disk.
-  const htmlB = page("window.__EV_B=true;", "EV Side by Side (B)");
+  fs.writeFileSync("public/index.html", htmlB);
   fs.writeFileSync("index-b.html", htmlB);
   fs.writeFileSync("public/index-b.html", htmlB);
   console.log(
-    `Portable index-b.html written (${(Buffer.byteLength(htmlB) / 1e6).toFixed(2)} MB).`,
+    `Portable B landing page written (${(Buffer.byteLength(htmlB) / 1e6).toFixed(2)} MB).`,
   );
-  console.log(
-    `Portable index.html written (${(Buffer.byteLength(html) / 1e6).toFixed(2)} MB). Self-contained; no server or downloads required.`,
-  );
+  console.log("index.html and index-b.html both open the B experience.");
 }
 main().catch((error) => {
   console.error(error);

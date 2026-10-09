@@ -25,6 +25,7 @@ export default async function Home({
         allPacks={catalogue().map((c) => pack(c.id))}
         initial={fleetSelection(catalogue(), query)}
         criteria={research().criteria}
+        version="b"
       />
     </WithEvidence>
   );
