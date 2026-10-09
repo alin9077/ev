@@ -1,7 +1,7 @@
 import { useState, useSyncExternalStore } from "react";
 import { chapterArt } from "@/lib/chapter-art";
 import { artSrc } from "@/lib/chapter-art-src";
-import { chapterScenes, chapterScenesB } from "@/lib/chapter-scenes";
+import { ALT_B, sceneLoaders, sceneLoadersB } from "@/lib/scene-loaders";
 import { readoutFor, specFor } from "@/lib/scene-readout";
 import type { Pack } from "@/lib/types";
 import { SceneCanvas } from "./scene-canvas";
@@ -26,26 +26,15 @@ export function ChapterArt({
 }: Props) {
   const art = chapterArt[chapter];
   if (!art) return null;
-  const sceneB = version === "b" ? chapterScenesB[chapter] : undefined;
-  if (sceneB)
+  const loadScene = (version === "b" ? sceneLoadersB : sceneLoaders)[chapter];
+  if (art.scene && loadScene)
     return (
       <SceneCanvas
-        scene={sceneB.scene}
-        alt={sceneB.alt}
-        look="b"
-        spec={baseline && rival ? specFor(baseline, rival) : undefined}
-        readout={
-          baseline && rival ? readoutFor(chapter, baseline, rival) : undefined
-        }
-      />
-    );
-  const scene = chapterScenes[chapter];
-  if (art.scene && scene)
-    return (
-      <SceneCanvas
-        scene={scene}
-        alt={art.sceneAlt ?? art.alt}
-        wheel={chapter === "02"}
+        key={`${version ?? "a"}-${chapter}`}
+        loadScene={loadScene}
+        alt={version === "b" ? ALT_B[chapter] : (art.sceneAlt ?? art.alt)}
+        wheel={version !== "b" && chapter === "02"}
+        look={version}
         spec={baseline && rival ? specFor(baseline, rival) : undefined}
         readout={
           baseline && rival ? readoutFor(chapter, baseline, rival) : undefined

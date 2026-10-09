@@ -2,6 +2,7 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { chapterArt } from "../src/lib/chapter-art";
 import { chapterScenes, chapterScenesB } from "../src/lib/chapter-scenes";
+import { DRIVE_LOOP, drivePose } from "../src/lib/scenes/b/drive";
 import { chapters } from "../src/lib/chapters";
 
 /** A stand-in canvas context that records every call and every property set. */
@@ -151,6 +152,7 @@ const carB = (name: string, price: number, seconds: number) => ({
     dc_charge_time_min: 24,
     seats: 5,
     boot_l: 822,
+    frunk_l: 116,
     zero_to_100_s: seconds,
   },
   features: {
@@ -170,8 +172,24 @@ const carB = (name: string, price: number, seconds: number) => ({
       value: "Whole car — all of it",
     },
     app_connectivity: { status: "standard", value: "App — key and climate" },
-    carplay_android_auto: { status: "unavailable", value: "Not offered" },
+    adas_optional: { status: "optional", value: "Supervised · A$149/month" },
+    parking_cameras: { status: "standard", value: "Cameras all round" },
+    home_charging: { status: "standard", value: "About 8.5 hours" },
+    supercharger_access: { status: "standard", value: "Whole network" },
+    navigation_route_planner: { status: "standard", value: "Plans stops" },
+    storage: { status: "standard", value: "822 L boot · 116 L front" },
+    power_tailgate: { status: "standard", value: "Powered tailgate" },
+    driver_profiles_local: { status: "standard", value: "Up to 10 profiles" },
+    remote_preconditioning: { status: "standard", value: "From the app" },
   },
+  releases: [
+    { date: "2025-03-25", change: "Preconditioning on the way to chargers." },
+    { date: "2025-05-08", change: "Alternative trip plans." },
+    { date: "2026-05-01", change: "Comfort Braking." },
+    { date: "2026-09-16", change: "Navigation refinements." },
+  ],
+  releaseMinimum: 4,
+  releaseWindow: ["2024-10-05", "2026-10-05"] as [string, string],
 });
 const specB = {
   rangeKm: 466,
@@ -192,8 +210,8 @@ test("the B site has a day scene for every chapter", () => {
     assert.equal(new Set(scene.beats).size, 3, n);
     assert.equal(scene.tone, "day", n);
     assert.ok(alt.length > 120, n);
-    // Slower than the A scenes: at least five seconds a beat.
-    assert.ok(scene.loop >= 15 && scene.loop <= 20, n);
+    // Slower than the A scenes, except the drive, which is one short run.
+    assert.ok(scene.loop >= (n === "02" ? 10 : 15) && scene.loop <= 22, n);
     assert.ok(scene.still >= 0 && scene.still < scene.loop, n);
   }
 });
@@ -239,11 +257,64 @@ test("B scenes reach every beat in order, and clear where the loop joins", () =>
       if (order[order.length - 1] !== shown.beat) order.push(shown.beat);
     }
     assert.deepEqual(order, [0, 1, 2], n);
-    // No labels at the join: the plate has cleared to the floor.
+    // No labels at the join: the plate has cleared to the floor. The drive
+    // is one unbroken lap and never clears.
+    if (n === "02") continue;
     for (const time of [0, scene.loop - 0.01]) {
       const { ctx, seen } = counter();
       scene.draw(ctx, 1200, 514, time, 1, specB);
       assert.deepEqual(seen.text, [], `${n} at ${time}`);
     }
   }
+});
+
+test("the B drive keeps its supervision note up all through the lap", () => {
+  const { scene } = chapterScenesB["02"];
+  for (let time = 0; time < scene.loop; time += 0.5) {
+    const { ctx, seen } = counter();
+    scene.draw(ctx, 1200, 514, time, 1, specB);
+    assert.ok(
+      seen.text.some((text) => /driver supervises/i.test(text)),
+      `at ${time}`,
+    );
+  }
+});
+
+test("B scenes state the conditions the brief asks for", () => {
+  const said = (n: string, time: number) => {
+    const { ctx, seen } = counter();
+    chapterScenesB[n].scene.draw(ctx, 2400, 1028, time, 2, specB);
+    return seen.text.join(" | ");
+  };
+  assert.match(said("01", 3.9), /before on-road costs/);
+  assert.match(said("01", 10.8), /example 50c/);
+  assert.match(said("03", 10.6), /extensive, integrated fast-charging network/);
+  assert.match(said("07", 4.9), /minimums/);
+  assert.doesNotMatch(said("07", 4.9), /CarPlay|Android Auto/);
+});
+
+test("the B drive is driven calmly: no sharp turns, hard braking or jumps", () => {
+  const dt = 1 / 60;
+  let before = drivePose(0),
+    was = 0;
+  for (let frame = 1; frame <= DRIVE_LOOP * 60; frame++) {
+    const now = drivePose(frame * dt);
+    let turned = now.heading - before.heading;
+    while (turned > Math.PI) turned -= 2 * Math.PI;
+    while (turned < -Math.PI) turned += 2 * Math.PI;
+    const speed = Math.hypot(now.x - before.x, now.y - before.y) / dt;
+    const yaw = Math.abs(turned / dt);
+    const at = `at ${(frame * dt).toFixed(2)}s`;
+    assert.ok(speed < 10, `speed ${at}`);
+    // Under 45 degrees a second, and under a third of a g sideways.
+    assert.ok(yaw < (45 * Math.PI) / 180, `turning ${at}`);
+    assert.ok(speed * yaw < 3.5, `cornering ${at}`);
+    assert.ok(Math.abs(speed - was) / dt < 4.5, `gaining or braking ${at}`);
+    before = now;
+    was = speed;
+  }
+  // It ends as it began, one block on, so the run has no join.
+  const [first, last] = [drivePose(0), drivePose(DRIVE_LOOP)];
+  assert.ok(Math.abs(last.y - first.y) < 0.01);
+  assert.ok(Math.abs(Math.sin(last.heading - first.heading)) < 0.01);
 });

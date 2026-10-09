@@ -96,64 +96,113 @@ export function pill(
     ctx.scale(grow, grow);
     ctx.translate(-cx, -cy);
   }
-  ctx.shadowColor = "rgba(34,39,43,0.16)";
-  ctx.shadowBlur = 14 * u;
-  ctx.shadowOffsetY = 4 * u;
-  ctx.fillStyle = dark ? INK_CSS : "rgba(255,255,255,0.96)";
-  ctx.beginPath();
-  ctx.roundRect(x0, y0, width, height, height / 2);
-  ctx.fill();
-  ctx.shadowColor = "rgba(0,0,0,0)";
-  ctx.shadowBlur = 0;
-  ctx.shadowOffsetY = 0;
+  /** The label itself, with its top-left corner at a point. */
+  const paint = (to: CanvasRenderingContext2D, left: number, top: number) => {
+    to.shadowColor = "rgba(34,39,43,0.16)";
+    to.shadowBlur = 14 * u;
+    to.shadowOffsetY = 4 * u;
+    to.fillStyle = dark ? INK_CSS : "rgba(255,255,255,0.96)";
+    to.beginPath();
+    to.roundRect(left, top, width, height, height / 2);
+    to.fill();
+    to.shadowColor = "rgba(0,0,0,0)";
+    to.shadowBlur = 0;
+    to.shadowOffsetY = 0;
 
-  let x = x0 + pad;
-  const mid = y0 + height / 2;
-  if (options.dot !== undefined) {
-    ctx.beginPath();
-    ctx.arc(x + 3.5 * u, mid, 3.5 * u, 0, TAU);
-    if (options.dot) {
-      ctx.fillStyle = options.dot;
-      ctx.fill();
-    } else {
-      ctx.strokeStyle = dark ? "rgba(255,255,255,0.6)" : "rgba(34,39,43,0.45)";
-      ctx.lineWidth = 1.2 * u;
-      ctx.stroke();
+    let x = left + pad;
+    const mid = top + height / 2;
+    if (options.dot !== undefined) {
+      to.beginPath();
+      to.arc(x + 3.5 * u, mid, 3.5 * u, 0, TAU);
+      if (options.dot) {
+        to.fillStyle = options.dot;
+        to.fill();
+      } else {
+        to.strokeStyle = dark ? "rgba(255,255,255,0.6)" : "rgba(34,39,43,0.45)";
+        to.lineWidth = 1.2 * u;
+        to.stroke();
+      }
+      x += dot;
     }
-    x += dot;
-  }
-  ctx.textBaseline = "middle";
-  ctx.textAlign = "left";
-  if (name) {
-    ctx.font = `400 ${12.5 * u}px ${FONT}`;
-    ctx.fillStyle = dark ? "rgba(255,255,255,0.72)" : MUTED;
-    ctx.fillText(name, x, mid + 0.5 * u);
-    x += nameWidth + (value ? gap : 0);
-  }
-  if (value) {
-    ctx.font = `600 ${12.5 * u}px ${FONT}`;
-    ctx.fillStyle = dark ? "#ffffff" : INK_CSS;
-    ctx.fillText(value, x, mid + 0.5 * u);
-    x += valueWidth;
-  }
-  if (options.level !== undefined) {
-    x += gap;
-    ctx.fillStyle = dark ? "rgba(255,255,255,0.22)" : "rgba(34,39,43,0.14)";
-    ctx.beginPath();
-    ctx.roundRect(x, mid - 2 * u, 34 * u, 4 * u, 2 * u);
-    ctx.fill();
-    ctx.fillStyle = options.bar ?? "#35c46a";
-    ctx.beginPath();
-    ctx.roundRect(
-      x,
-      mid - 2 * u,
-      Math.max(4 * u, 34 * u * clamp(options.level)),
-      4 * u,
-      2 * u,
-    );
-    ctx.fill();
-  }
+    to.textBaseline = "middle";
+    to.textAlign = "left";
+    if (name) {
+      to.font = `400 ${12.5 * u}px ${FONT}`;
+      to.fillStyle = dark ? "rgba(255,255,255,0.72)" : MUTED;
+      to.fillText(name, x, mid + 0.5 * u);
+      x += nameWidth + (value ? gap : 0);
+    }
+    if (value) {
+      to.font = `600 ${12.5 * u}px ${FONT}`;
+      to.fillStyle = dark ? "#ffffff" : INK_CSS;
+      to.fillText(value, x, mid + 0.5 * u);
+      x += valueWidth;
+    }
+    if (options.level !== undefined) {
+      x += gap;
+      to.fillStyle = dark ? "rgba(255,255,255,0.22)" : "rgba(34,39,43,0.14)";
+      to.beginPath();
+      to.roundRect(x, mid - 2 * u, 34 * u, 4 * u, 2 * u);
+      to.fill();
+      to.fillStyle = options.bar ?? "#35c46a";
+      to.beginPath();
+      to.roundRect(
+        x,
+        mid - 2 * u,
+        Math.max(4 * u, 34 * u * clamp(options.level)),
+        4 * u,
+        2 * u,
+      );
+      to.fill();
+    }
+  };
+  // A browser sets canvas text on whole pixels, so words drawn straight on
+  // the plate would hop inside a label that drifts. The label is painted
+  // once on a sheet of its own and that sheet is laid down wherever it falls.
+  const sheet = sheetFor(
+    [
+      name,
+      value,
+      dark,
+      u,
+      options.dot,
+      options.level === undefined ? "" : Math.round(clamp(options.level) * 68),
+      options.bar,
+    ].join("|"),
+    width,
+    height,
+    u,
+    paint,
+  );
+  if (sheet) ctx.drawImage(sheet.canvas, x0 - sheet.margin, y0 - sheet.margin);
+  else paint(ctx, x0, y0);
   ctx.restore();
+}
+
+type Sheet = { canvas: HTMLCanvasElement; margin: number };
+const sheets = new Map<string, Sheet>();
+/** A label painted on its own small canvas, kept until it changes. */
+function sheetFor(
+  key: string,
+  width: number,
+  height: number,
+  u: number,
+  paint: (to: CanvasRenderingContext2D, left: number, top: number) => void,
+): Sheet | undefined {
+  if (typeof document === "undefined") return undefined;
+  let sheet = sheets.get(key);
+  if (!sheet) {
+    const margin = Math.ceil(24 * u);
+    const canvas = document.createElement("canvas");
+    canvas.width = Math.ceil(width) + margin * 2;
+    canvas.height = Math.ceil(height) + margin * 2;
+    const to = canvas.getContext("2d");
+    if (!to) return undefined;
+    paint(to, margin, margin);
+    if (sheets.size > 160) sheets.clear();
+    sheets.set(key, (sheet = { canvas, margin }));
+  }
+  return sheet;
 }
 
 export type Glyph =
@@ -168,7 +217,13 @@ export type Glyph =
   | "air"
   | "eye"
   | "person"
-  | "check";
+  | "check"
+  | "sound"
+  | "snow"
+  | "moon"
+  | "park"
+  | "bag"
+  | "pin";
 /** Icons, drawn in a box from −1 to 1. */
 function glyph(ctx: CanvasRenderingContext2D, name: Glyph) {
   ctx.lineCap = "round";
@@ -262,6 +317,53 @@ function glyph(ctx: CanvasRenderingContext2D, name: Glyph) {
     ctx.quadraticCurveTo(-0.46, -0.02, 0, -0.02);
     ctx.quadraticCurveTo(0.46, -0.02, 0.46, 0.7);
     ctx.closePath();
+    ctx.fill();
+  } else if (name === "sound") {
+    ctx.moveTo(-0.66, -0.2);
+    ctx.lineTo(-0.36, -0.2);
+    ctx.lineTo(-0.02, -0.52);
+    ctx.lineTo(-0.02, 0.52);
+    ctx.lineTo(-0.36, 0.2);
+    ctx.lineTo(-0.66, 0.2);
+    ctx.closePath();
+    ctx.fill();
+    ctx.beginPath();
+    ctx.arc(-0.02, 0, 0.34, -0.8, 0.8);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.arc(-0.02, 0, 0.64, -0.8, 0.8);
+    ctx.stroke();
+  } else if (name === "snow") {
+    for (let k = 0; k < 3; k++) {
+      const a = (k * Math.PI) / 3;
+      ctx.moveTo(-0.68 * Math.cos(a), -0.68 * Math.sin(a));
+      ctx.lineTo(0.68 * Math.cos(a), 0.68 * Math.sin(a));
+    }
+    ctx.stroke();
+  } else if (name === "moon") {
+    ctx.arc(0, 0, 0.62, 0.9, 0.9 + Math.PI * 1.5);
+    ctx.quadraticCurveTo(0.1, 0.1, 0.39, 0.49);
+    ctx.fill();
+  } else if (name === "park") {
+    ctx.moveTo(-0.26, 0.62);
+    ctx.lineTo(-0.26, -0.58);
+    ctx.lineTo(0.08, -0.58);
+    ctx.arc(0.08, -0.26, 0.32, -Math.PI / 2, Math.PI / 2);
+    ctx.lineTo(-0.26, 0.06);
+    ctx.stroke();
+  } else if (name === "bag") {
+    ctx.roundRect(-0.5, -0.2, 1.0, 0.86, 0.1);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.arc(0, -0.2, 0.26, Math.PI, 0);
+    ctx.stroke();
+  } else if (name === "pin") {
+    ctx.arc(0, -0.2, 0.42, Math.PI * 0.85, Math.PI * 0.15);
+    ctx.lineTo(0, 0.74);
+    ctx.closePath();
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.arc(0, -0.2, 0.13, 0, TAU);
     ctx.fill();
   } else {
     ctx.moveTo(-0.44, 0.02);
@@ -486,4 +588,102 @@ export function brief(text: string | undefined, limit = 34) {
   return first.length > limit
     ? `${first.slice(0, limit - 1).trimEnd()}…`
     : first;
+}
+
+/**
+ * A line of small print along the foot of the plate: the basis of a figure,
+ * or a condition the picture cannot show.
+ */
+export function caption(plate: Plate, text: string, alpha = 1) {
+  const a = clamp(alpha);
+  if (a <= 0.01 || !text) return;
+  const { ctx } = plate;
+  const u = size(plate);
+  ctx.save();
+  ctx.globalAlpha = a;
+  let px = 11.5 * u;
+  ctx.font = `400 ${px}px ${FONT}`;
+  // A long condition shrinks to the plate before it is ever cut.
+  const room = plate.width - 40 * u;
+  const wide = ctx.measureText(text).width + 26 * u;
+  if (wide > room) {
+    px *= room / wide;
+    ctx.font = `400 ${px}px ${FONT}`;
+  }
+  const width = Math.min(room, ctx.measureText(text).width + 26 * u),
+    height = 25 * u;
+  // The page lays its beat names over the plate's bottom left, and over the
+  // foot of a phone's plate: the small print keeps clear of both.
+  const x0 = plate.wide
+      ? plate.width - width - 22 * u
+      : (plate.width - width) / 2,
+    y0 = plate.wide
+      ? plate.height - height - 16 * u
+      : plate.height * 0.845 - height;
+  ctx.fillStyle = "rgba(255,255,255,0.78)";
+  ctx.beginPath();
+  ctx.roundRect(x0, y0, width, height, height / 2);
+  ctx.fill();
+  ctx.fillStyle = MUTED;
+  ctx.textBaseline = "middle";
+  ctx.textAlign = "left";
+  ctx.fillText(text, x0 + 13 * u, y0 + height / 2 + 0.5 * u);
+  ctx.restore();
+}
+/**
+ * Arcs spreading from a point in the world, as a sound or a signal would:
+ * `phase` 0–1 moves them outward. They are drawn on the ground plane.
+ */
+export function ripples(
+  plate: Plate,
+  at: V3,
+  reach: number,
+  phase: number,
+  colour: V3,
+  options: {
+    alpha?: number;
+    from?: number;
+    to?: number;
+    rings?: number;
+    stop?: (p: V3) => number;
+  } = {},
+) {
+  const alpha = clamp(options.alpha ?? 1);
+  if (alpha <= 0.01) return;
+  const { ctx } = plate;
+  const u = size(plate);
+  const rings = options.rings ?? 4;
+  const from = options.from ?? 0,
+    to = options.to ?? TAU;
+  ctx.save();
+  ctx.lineCap = "round";
+  for (let k = 0; k < rings; k++) {
+    const f = (k + (((phase % 1) + 1) % 1)) / rings;
+    const r = reach * f;
+    const steps = 40;
+    for (let i = 0; i < steps; i++) {
+      const a0 = from + ((to - from) * i) / steps,
+        a1 = from + ((to - from) * (i + 1)) / steps;
+      const p0: V3 = [
+          at[0] + Math.cos(a0) * r,
+          at[1] + Math.sin(a0) * r,
+          at[2],
+        ],
+        p1: V3 = [at[0] + Math.cos(a1) * r, at[1] + Math.sin(a1) * r, at[2]];
+      const kept = options.stop ? options.stop(p0) : 1;
+      const strength =
+        alpha * kept * Math.sin(Math.PI * f) ** 0.7 * (1 - 0.55 * f);
+      if (strength <= 0.01) continue;
+      const [x0, y0] = spot(plate, p0),
+        [x1, y1] = spot(plate, p1);
+      ctx.globalAlpha = strength;
+      ctx.strokeStyle = css(colour);
+      ctx.lineWidth = (1.1 + 1.3 * kept) * u;
+      ctx.beginPath();
+      ctx.moveTo(x0, y0);
+      ctx.lineTo(x1, y1);
+      ctx.stroke();
+    }
+  }
+  ctx.restore();
 }

@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState, useSyncExternalStore } from "react";
-import type { ChapterScene } from "@/lib/chapter-scenes";
+import type { ChapterScene } from "@/lib/scenes/kit";
+import type { SceneLoader } from "@/lib/scene-loaders";
 import type { Readout } from "@/lib/scene-readout";
 import { setCovered, type SceneSpec } from "@/lib/scenes/kit";
 
@@ -17,14 +18,14 @@ function watchReducedMotion(notify: () => void) {
  * for the steering wheel the automated-driving scene draws in its corner.
  */
 export function SceneCanvas({
-  scene,
+  loadScene,
   alt,
   wheel = false,
   spec,
   readout,
   look,
 }: {
-  scene: ChapterScene;
+  loadScene: SceneLoader;
   alt: string;
   wheel?: boolean;
   /** The selected cars' figures: what the scene is drawn from, and quoted. */
@@ -36,6 +37,49 @@ export function SceneCanvas({
   const panel = useRef<HTMLDivElement>(null);
   const canvas = useRef<HTMLCanvasElement>(null);
   const labels = useRef<HTMLOListElement>(null);
+  const [scene, setScene] = useState<ChapterScene>();
+  const [loadFailed, setLoadFailed] = useState(false);
+  const retry = useRef<() => void>(undefined);
+
+  useEffect(() => {
+    const el = canvas.current;
+    if (!el) return;
+    let cancelled = false;
+    let pending = false;
+    const load = () => {
+      if (pending) return;
+      pending = true;
+      setLoadFailed(false);
+      loadScene().then(
+        (loaded) => {
+          if (!cancelled) setScene(loaded);
+        },
+        () => {
+          pending = false;
+          if (!cancelled) setLoadFailed(true);
+        },
+      );
+    };
+    retry.current = load;
+    // About one screen of lead time, bounded so long pages stay inexpensive.
+    // This primes the first frame but never advances the scene's clock.
+    const lead = Math.round(Math.min(1000, Math.max(400, window.innerHeight)));
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) return;
+        observer.disconnect();
+        load();
+      },
+      { rootMargin: `${lead}px 0px` },
+    );
+    observer.observe(el);
+    return () => {
+      cancelled = true;
+      retry.current = undefined;
+      observer.disconnect();
+    };
+  }, [loadScene]);
+
   /** Scene time in seconds; kept across pauses so play resumes where it stopped. */
   const clock = useRef(0);
   /** The latest selection, read on every frame, and a way to redraw for it. */
@@ -59,6 +103,7 @@ export function SceneCanvas({
   const paused = choice ?? reduced;
 
   useEffect(() => {
+    if (!scene) return;
     const el = canvas.current,
       ctx = el?.getContext("2d");
     if (!el || !ctx) return;
@@ -109,13 +154,14 @@ export function SceneCanvas({
     };
     repaint.current = () => {
       measure();
-      paint();
+      if (onScreen && !document.hidden) paint();
     };
     /** Smoothed milliseconds to draw a frame, and whether to draw every other one. */
     let cost = 0,
       halved = false,
       skip = false;
     const tick = (now: number) => {
+      if (!onScreen || document.hidden) return;
       // Long gaps (a hidden tab) should not jump the scene forward.
       clock.current += Math.min((now - (last || now)) / 1000, 0.1);
       played.current ||= last > 0;
@@ -134,19 +180,28 @@ export function SceneCanvas({
     const sync = () => {
       cancelAnimationFrame(frame);
       last = 0;
-      if (onScreen && !paused) frame = requestAnimationFrame(tick);
-      else paint();
+      if (onScreen && !document.hidden) {
+        if (!paused) frame = requestAnimationFrame(tick);
+        else paint();
+      }
     };
     const resize = new ResizeObserver(() => {
       measure();
-      paint();
+      if (onScreen && !document.hidden) paint();
     });
     resize.observe(el);
-    const watch = new IntersectionObserver(([entry]) => {
-      onScreen = entry.isIntersecting;
-      sync();
-    });
+    const watch = new IntersectionObserver(
+      ([entry]) => {
+        // Wait until a meaningful slice is visible; works for tall mobile scenes.
+        onScreen = entry.isIntersecting && entry.intersectionRatio >= 0.15;
+        sync();
+      },
+      { threshold: [0, 0.15] },
+    );
     watch.observe(el);
+    document.addEventListener("visibilitychange", sync);
+    // One prepared frame removes first-entry drawing latency without autoplay.
+    if (!document.hidden) paint();
     // Checks can hold the scene at a moment: a `scene-seek` event carrying seconds.
     const seek = (event: Event) => {
       clock.current = Number((event as CustomEvent).detail) || 0;
@@ -157,6 +212,8 @@ export function SceneCanvas({
     return () => {
       el.removeEventListener("scene-seek", seek);
       cancelAnimationFrame(frame);
+      repaint.current = undefined;
+      document.removeEventListener("visibilitychange", sync);
       resize.disconnect();
       watch.disconnect();
     };
@@ -166,7 +223,8 @@ export function SceneCanvas({
     <div
       ref={panel}
       className={`chapter-art driving-scene${wheel ? "" : " loop-scene"}${look === "b" ? " scene-b" : ""}`}
-      data-tone={scene.tone}
+      data-tone={scene?.tone ?? "day"}
+      data-scene-state={scene ? "ready" : loadFailed ? "error" : "pending"}
     >
       <canvas ref={canvas} role="img" aria-label={alt} />
       <span className="driving-scene-note">Conceptual illustration</span>
@@ -191,7 +249,7 @@ export function SceneCanvas({
         </table>
       )}
       <ol className="driving-scene-acts" ref={labels} aria-hidden="true">
-        {scene.beats.map((beat) => (
+        {scene?.beats.map((beat) => (
           <li key={beat}>
             <span>{beat}</span>
             <i />
@@ -201,8 +259,17 @@ export function SceneCanvas({
       <button
         type="button"
         className="chapter-art-toggle"
-        aria-label={paused ? "Play animation" : "Pause animation"}
-        onClick={() => setChoice(!paused)}
+        disabled={!scene && !loadFailed}
+        aria-label={
+          loadFailed
+            ? "Retry animation"
+            : !scene
+              ? "Loading animation"
+              : paused
+                ? "Play animation"
+                : "Pause animation"
+        }
+        onClick={() => (loadFailed ? retry.current?.() : setChoice(!paused))}
       >
         <svg viewBox="0 0 12 12" aria-hidden="true">
           <path

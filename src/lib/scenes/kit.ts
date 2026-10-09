@@ -735,6 +735,14 @@ export type SceneCar = {
   name: string;
   facts: Record<string, number | string | undefined>;
   features: Record<string, { status: string; value: string } | undefined>;
+  /**
+   * Documented Australian software releases in the research window, oldest
+   * first, and the least number of them the research could establish (null
+   * where no count is documented, which is not a finding of none).
+   */
+  releases?: { date: string; change: string }[];
+  releaseMinimum?: number | null;
+  releaseWindow?: [string, string];
 };
 
 /** A shield with a tick, standing at a point in space: protection, without words. */

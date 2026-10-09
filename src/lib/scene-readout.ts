@@ -12,7 +12,10 @@ import type { Pack } from "./types";
 /** Per chapter: the facts to quote, then features as [criterion, short label]. */
 const SHOWN: Record<string, { facts: string[]; features: [string, string][] }> =
   {
-    "01": { facts: ["price_aud"], features: [] },
+    "01": {
+      facts: ["price_aud", "warranty", "battery_warranty"],
+      features: [],
+    },
     "02": {
       facts: [],
       features: [
@@ -20,25 +23,29 @@ const SHOWN: Record<string, { facts: string[]; features: [string, string][] }> =
         ["adas_standard", "Standard assistance"],
       ],
     },
-    "03": { facts: ["range_km", "dc_peak_kw"], features: [] },
-    "04": { facts: ["seats", "boot_l"], features: [] },
+    "03": {
+      facts: ["range_km", "dc_peak_kw"],
+      features: [["supercharger_access", "Tesla Supercharger access"]],
+    },
+    "04": { facts: ["frunk_l", "boot_l", "max_total_cargo_l"], features: [] },
     "05": {
       facts: [],
       features: [
         ["phone_key", "Phone key"],
+        ["power_tailgate", "Powered tailgate"],
         ["walk_away_lock", "Walk-away lock"],
       ],
     },
     "06": {
       facts: ["zero_to_100_s"],
-      features: [["front_ventilated_seats", "Ventilated front seats"]],
+      features: [
+        ["remote_preconditioning", "Remote climate"],
+        ["front_ventilated_seats", "Ventilated front seats"],
+      ],
     },
     "07": {
       facts: [],
-      features: [
-        ["ota_capability_scope", "Software updates"],
-        ["carplay_android_auto", "CarPlay / Android Auto"],
-      ],
+      features: [["ota_capability_scope", "Software updates"]],
     },
   };
 
@@ -90,18 +97,31 @@ const numberOf = (pack: Pack, key: string) => {
 /** The feature answers the B scenes quote in their labels. */
 const QUOTED = [
   "driveaway_price",
+  "warranty_service",
   "adas_standard",
   "adas_optional",
+  "parking_cameras",
+  "remote_summon",
+  "home_charging",
+  "supercharger_access",
+  "navigation_route_planner",
+  "battery_preconditioning_navigation",
+  "storage",
+  "child_seats",
   "safety_ancap",
   "phone_key",
   "passive_unlock",
   "walk_away_lock",
+  "driver_profiles_local",
+  "power_tailgate",
+  "folding_mirrors",
+  "automatic_start",
+  "remote_preconditioning",
   "front_heated_seats",
   "rear_heated_seats",
   "front_ventilated_seats",
   "ota_capability_scope",
   "app_connectivity",
-  "carplay_android_auto",
 ];
 const sceneCar = (pack: Pack): SceneCar => ({
   name: pack.car.model,
@@ -125,6 +145,21 @@ const sceneCar = (pack: Pack): SceneCar => ({
       ];
     }),
   ),
+  releases: pack.events
+    .filter(
+      (e) =>
+        e.count_in_headline &&
+        e.release_date &&
+        e.release_date >= pack.eligibility.observation_window_start &&
+        e.release_date <= pack.eligibility.observation_window_end,
+    )
+    .map((e) => ({ date: String(e.release_date), change: e.changes[0] ?? "" }))
+    .sort((a, b) => a.date.localeCompare(b.date)),
+  releaseMinimum: pack.eligibility.documented_family_minimum,
+  releaseWindow: [
+    pack.eligibility.observation_window_start,
+    pack.eligibility.observation_window_end,
+  ],
 });
 /** The figures a scene is drawn from. */
 export const specFor = (baseline: Pack, rival: Pack): SceneSpec => ({

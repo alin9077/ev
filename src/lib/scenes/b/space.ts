@@ -1,276 +1,275 @@
 /**
- * Space & safety, B. One car, to scale throughout. Its shell turns to glass
- * and the seats light one at a time; the tailgate lifts and the boot comes
- * out as blocks of a hundred litres, stacked beside the alternative's; then
- * a ring closes round the car under a shield, with a star for each ANCAP star.
+ * Space & safety, B: more useful storage throughout the car. One car on a
+ * drive, to scale throughout. The bonnet lifts on the front trunk and a bag
+ * goes in; the camera comes round to the tail, the tailgate rises and the
+ * luggage waiting on the drive is loaded; then the rear of the boot floor
+ * lifts on the well beneath it, and the shell turns to glass to show all
+ * three spaces at once.
  */
-import { cabinItems, carItems, onCar, placed, seatPoint } from "./car";
-import { answer, figure, hero, numberIn, offset, pair } from "./common";
+import { cabinItems, carItems, onCar, placed } from "./car";
+import {
+  answer,
+  faced,
+  figure,
+  hero,
+  hop,
+  offset,
+  paced,
+  pair,
+  walk,
+} from "./common";
+import { homeLot } from "./home";
 import { type Item } from "./gl";
 import {
+  DEG,
   TAU,
-  clamp,
   colour,
   compose,
   glide,
   lerp,
   ramp,
-  scale,
-  settle,
+  rotateZ,
   span,
   track,
+  transform,
   translate,
   type V2,
   type V3,
 } from "./math";
-import { block } from "./mesh";
-import { badge, brief, pill, spot } from "./overlay";
+import { caption, pill } from "./overlay";
+import { STORE, TAN, holdall, stores, suitcase } from "./props";
 import { scene, type Plate } from "./stage";
-import { CHAMPAGNE, WHITE, arc, clay, ground, kept, ribbon } from "./world";
+import { PAINT, STONE, clay, ground, person } from "./world";
 
-const STARTS: [number, number, number] = [0, 5.4, 11.2];
-const LOOP = 17.2;
-const AZ = -45,
-  EL = 31;
-const AMBER = colour("#e9ad1f"),
-  BLOCK = colour("#e3d6c1");
-/** Tail towards us, so the boot opens into view. */
-const CAR = placed(0, 0, Math.PI);
-/** A block is 100 litres: a metre by half a metre, 20 cm deep. */
-const DEEP = 0.2;
-const STACKS: V2[] = [
-  [4.1, -1.0],
-  [4.1, 0.55],
-];
-const RING = 3.15;
+const STARTS: [number, number, number] = [0, 5.8, 11.6];
+const LOOP = 18;
+const EL = 31;
+const AMBER = colour("#e9ad1f");
+const CAR = placed(0, 0, 0);
+/** Along the far side of the car, from its nose to its tail. */
+const ROUND = walk([
+  [3.7, 2.0],
+  [-3.9, 1.75],
+]);
 
 export const spaceSceneB = scene({
-  beats: ["Seats", "Boot", "Safety rating"],
+  beats: ["Front trunk", "Boot", "Under the floor"],
   starts: STARTS,
   loop: LOOP,
-  still: 10.1,
+  still: 10.4,
   moment({ t, spec, wide }) {
     const model = hero();
     const [base, rival] = pair(spec);
-    const seats = clamp(figure(base, "seats") ?? spec?.seats ?? 5, 2, 7);
-    const litres = [base, rival].map((car) => figure(car, "boot_l") ?? 0);
 
-    const xray = span(0.7, 5.5, t, 0.9);
-    const open = ramp(5.6, 6.7, t, glide) * (1 - ramp(10.7, 11.5, t, glide));
-    const gone = ramp(10.5, 11.3, t, glide);
+    const bonnet = ramp(0.9, 2.1, t, glide) * (1 - ramp(4.8, 5.8, t, glide));
+    const gate =
+      ramp(6.9, 8.0, t, glide) * (1 - ramp(LOOP - 1.3, LOOP - 0.5, t));
+    const lid = ramp(11.9, 12.9, t, glide) * (1 - ramp(14.1, 14.9, t, glide));
+    const xray = span(14.6, LOOP - 0.4, t, 0.9);
 
-    const subject: V3 = [
+    // The camera starts off the nose and comes round the kerb side to the tail.
+    const round = ramp(5.0, 7.3, t, glide);
+    const az = lerp(-34, -146, round);
+    const focus: V3 = [
       track(t, [
-        [0, 0],
-        [5.4, 0],
-        [7, 2.0],
-        [10.6, 2.0],
-        [12, 0],
+        [0, 1.25],
+        [5, 1.25],
+        [7.3, -1.7],
+        [14.4, -1.7],
+        [16, -0.6],
+        [LOOP, -0.5],
       ]),
-      -0.1,
-      0.8,
+      -0.2,
+      0.75,
     ];
     const across = track(t, [
-      [0, wide ? 11 : 8],
-      [5.2, wide ? 10.4 : 7.7],
-      [7, wide ? 13.4 : 9.6],
-      [10.6, wide ? 13 : 9.4],
-      [12.2, wide ? 15 : 9.8],
-      [LOOP, wide ? 14.4 : 9.6],
+      [0, wide ? 17.6 : 10.4],
+      [4.8, wide ? 16.6 : 9.8],
+      [7.3, wide ? 18 : 10.6],
+      [11.4, wide ? 17 : 10],
+      [14.2, wide ? 16.4 : 9.6],
+      [16, wide ? 19 : 11],
+      [LOOP, wide ? 18.6 : 10.8],
     ]);
     const shot = {
       at: t,
-      target: offset(subject, AZ, wide ? 1.2 : 0, wide ? 0.25 : -0.3),
-      az: AZ,
+      target: offset(
+        focus,
+        az,
+        wide ? lerp(1.4, 1.8, round) : 0,
+        wide ? 0.5 : -0.2,
+      ),
+      az,
       el: EL,
       fit: [across, wide ? across * 0.43 : across] as V2,
     };
 
     const items: Item[] = [
       ground(shot.target, across, 0.05),
+      ...homeLot(),
       ...carItems(model, {
         at: CAR,
-        paint: CHAMPAGNE,
+        paint: PAINT,
         xray,
+        lamps: 0.15,
         tail: 0.25,
-        tailgate: open,
+        bonnet,
+        tailgate: gate,
+      }),
+      ...stores(model, {
+        at: CAR,
+        floor: lid,
+        frunk: xray,
+        boot: xray,
+        well: xray,
+        tint: AMBER,
       }),
     ];
-    const counted = (index: number) =>
-      ramp(1.3 + index * 0.42, 1.75 + index * 0.42, t, settle);
-    if (xray > 0.01 || open > 0.01)
-      items.push(
-        ...cabinItems(model, {
-          at: CAR,
-          seats,
-          seat: (index) => ({
-            color: [0.5, 0.5, 0.5],
-            glow: AMBER,
-            amount: 0.75 * clamp(counted(index)) * xray,
-          }),
-        }),
-      );
+    if (xray > 0.01)
+      items.push(...cabinItems(model, { at: CAR, seats: spec?.seats ?? 5 }));
 
-    // The boot, a hundred litres at a time, from the opening to the stack.
-    const slab = kept("litres", () => block(0.5, 1, DEEP, 0.025));
-    const mouth: V3 = onCar(model, CAR, 4.2, 0, 0.78);
-    const blocks = litres[0] / 100;
-    for (let k = 0; k < blocks; k++) {
-      const part = Math.min(1, blocks - k);
-      const out = ramp(6.7 + k * 0.27, 7.6 + k * 0.27, t, glide);
-      if (out <= 0 || gone >= 1) continue;
-      const rest: V3 = [STACKS[0][0], STACKS[0][1], k * DEEP];
-      items.push({
-        mesh: slab,
-        at: compose(
-          translate(
-            lerp(mouth[0], rest[0], out),
-            lerp(mouth[1], rest[1], out),
-            lerp(mouth[2], rest[2], out) +
-              0.5 * Math.sin(Math.PI * out) -
-              2.2 * gone * gone,
+    // The front trunk takes a soft bag.
+    const tub = transform(CAR, [
+      model.nose - (STORE.frunk.from + STORE.frunk.to) / 2,
+      0,
+      STORE.frunk.low + 0.03,
+    ]);
+    const bagAt = hop([3.9, -1.5, 0], tub, ramp(2.2, 3.3, t, glide), 0.9);
+    items.push(
+      ...holdall(
+        compose(translate(bagAt[0], bagAt[1], bagAt[2]), rotateZ(90 * DEG)),
+        clay(TAN),
+      ),
+    );
+
+    // The boot takes two cases, stood against the seats.
+    const loaded = (index: number) =>
+      ramp(8.2 + index * 0.75, 9.3 + index * 0.75, t, glide);
+    const cases: [V3, number, V3][] = [
+      [[-4.1, -1.25, 0], -0.25, [0.46, 0.26, 0.66]],
+      [[-4.3, -0.45, 0], 0.26, [0.44, 0.24, 0.56]],
+    ];
+    cases.forEach(([from, y, size], index) => {
+      const to = onCar(model, CAR, 4.02, y, STORE.boot.low);
+      const f = loaded(index);
+      const at = hop(from, to, f, 0.75);
+      items.push(
+        ...suitcase(
+          compose(
+            translate(at[0], at[1], at[2]),
+            rotateZ(lerp(index ? 0.5 : -0.3, Math.PI / 2, f)),
           ),
-          scale(1, 1, part * lerp(0.6, 1, out)),
-        ),
-        mat: clay(BLOCK),
-      });
-    }
-    // The alternative's boot stands beside it, in white.
-    const beside = ramp(8.9, 9.8, t, glide) * (1 - gone);
-    const other = litres[1] / 100;
-    for (let k = 0; k < other && beside > 0.01; k++)
-      items.push({
-        mesh: slab,
-        at: compose(
-          translate(STACKS[1][0], STACKS[1][1], k * DEEP * beside),
-          scale(1, 1, Math.min(1, other - k) * beside),
-        ),
-        mat: clay(WHITE),
-      });
-
-    // Safety: a ring closing round the car.
-    const ringed = ramp(11.9, 13.5, t, glide);
-    const kept2 = 1 - ramp(LOOP - 0.9, LOOP - 0.5, t);
-    if (ringed > 0.01)
-      items.push(
-        ribbon(
-          "ring",
-          arc(0, 0, RING, -0.125, -0.125 + ringed),
-          0.09,
-          AMBER,
-          0.95 * kept2,
-          0.02,
+          size,
+          clay(index ? STONE : TAN),
         ),
       );
+    });
+    // The well under the floor takes one more.
+    const well = onCar(
+      model,
+      CAR,
+      (STORE.well.from + STORE.well.to) / 2,
+      0,
+      STORE.well.low + 0.03,
+    );
+    const lastAt = hop([-4.9, 0.5, 0], well, ramp(12.7, 13.8, t, glide), 1.0);
+    items.push(
+      ...holdall(
+        compose(translate(lastAt[0], lastAt[1], lastAt[2]), rotateZ(90 * DEG)),
+      ),
+    );
+
+    // Someone walks along the far side from the nose to the tail as the camera does.
+    const walked = paced(t - 4.3, 1.9, ROUND.total);
+    const walker = ROUND.at(walked);
+    items.push(
+      ...person(
+        compose(
+          translate(walker.x, walker.y, 0),
+          rotateZ(faced(walker, walked, ROUND.total, -120 * DEG, -40 * DEG)),
+        ),
+        (walked / 1.45) * TAU,
+        walker.moving,
+      ),
+    );
 
     const labels = (plate: Plate) => {
-      // Seats: how many, for both.
-      const seated = span(1.4, 5.3, t, 0.45);
-      const roof: V3 = [0, 0, 1.75];
-      const count = (car: typeof base) => {
-        const n = figure(car, "seats");
-        return n ? `${n} seats` : "Not stated";
-      };
-      pill(plate, roof, base.name, count(base), {
+      const litres = (n: number | undefined, what: string) =>
+        n ? `${n.toLocaleString("en-AU")} L ${what}` : `No ${what}`;
+      // The front trunk: how much, for both. Labels stand clear of the raised panel.
+      const front = span(2.5, 5.0, t, 0.45);
+      const overNose: V3 = [1.7, 0, 1.9];
+      pill(
+        plate,
+        overNose,
+        base.name,
+        litres(figure(base, "frunk_l"), "front trunk"),
+        {
+          tone: "dark",
+          alpha: front,
+          dy: -62,
+          tie: [tub[0], tub[1], STORE.frunk.high],
+        },
+      );
+      pill(
+        plate,
+        overNose,
+        rival.name,
+        litres(figure(rival, "frunk_l"), "front trunk"),
+        {
+          alpha: front,
+          dy: -27,
+        },
+      );
+
+      // The boot.
+      const rear = span(9.0, 11.4, t, 0.45);
+      const overTail: V3 = [-2.7, 0, 2.3];
+      const mouth = onCar(model, CAR, 4.4, 0, 0.95);
+      pill(plate, overTail, base.name, litres(figure(base, "boot_l"), "boot"), {
         tone: "dark",
-        alpha: seated,
-        dy: -72,
+        alpha: rear,
+        dy: -62,
+        tie: mouth,
+      });
+      pill(
+        plate,
+        overTail,
+        rival.name,
+        litres(figure(rival, "boot_l"), "boot"),
+        {
+          alpha: rear,
+          dy: -27,
+        },
+      );
+
+      // The well.
+      const under = span(12.6, 14.4, t, 0.45);
+      pill(plate, overTail, base.name, "A well under the boot floor", {
+        tone: "dark",
+        alpha: under,
+        dy: -45,
+        tie: well,
+      });
+
+      // All three at once, as each maker states them.
+      const all = ramp(15.4, 16.1, t) * (1 - ramp(LOOP - 0.9, LOOP - 0.5, t));
+      const roof: V3 = [0, 0, 1.75];
+      pill(plate, roof, base.name, answer(base, "storage") ?? "Not stated", {
+        tone: "dark",
+        alpha: all,
+        dy: -84,
         tie: roof,
       });
-      pill(plate, roof, rival.name, count(rival), { alpha: seated, dy: -37 });
-      for (let index = 0; index < seats; index++) {
-        const lit = clamp(counted(index)) * seated;
-        if (lit <= 0.01) continue;
-        const [sx, sy] = spot(plate, seatPoint(model, CAR, seats, index));
-        plate.ctx.save();
-        plate.ctx.globalAlpha = lit;
-        plate.ctx.fillStyle = "#22272b";
-        plate.ctx.beginPath();
-        plate.ctx.arc(sx, sy, 9 * plate.unit, 0, TAU);
-        plate.ctx.fill();
-        plate.ctx.fillStyle = "#ffffff";
-        plate.ctx.font = `600 ${10.5 * plate.unit}px "Helvetica Neue", Helvetica, Arial, sans-serif`;
-        plate.ctx.textAlign = "center";
-        plate.ctx.textBaseline = "middle";
-        plate.ctx.fillText(String(index + 1), sx, sy + 0.5 * plate.unit);
-        plate.ctx.restore();
-      }
-
-      // Boot: litres, on top of each stack.
-      const stacked = span(8.2, 10.6, t, 0.4);
-      const volume = (n: number) => (n ? `${n} L` : "Not stated");
-      const topA: V3 = [STACKS[0][0], STACKS[0][1], blocks * DEEP];
-      const topB: V3 = [STACKS[1][0], STACKS[1][1], other * DEEP];
-      pill(plate, topA, base.name, volume(litres[0]), {
-        tone: "dark",
-        alpha: stacked,
-        anchor: plate.wide ? "right" : "centre",
-        dx: plate.wide ? -20 : -34,
-        dy: plate.wide ? -30 : -70,
-        tie: topA,
+      pill(plate, roof, rival.name, answer(rival, "storage") ?? "Not stated", {
+        alpha: all,
+        dy: -49,
       });
-      pill(plate, topB, rival.name, volume(litres[1]), {
-        alpha: stacked * ramp(9.4, 9.9, t),
-        anchor: plate.wide ? "left" : "centre",
-        dx: plate.wide ? 20 : 10,
-        dy: plate.wide ? -30 : -34,
-        tie: topB,
-      });
-
-      // Safety: the rating as researched, and a star for each star.
-      const rated = ramp(13.2, 13.8, t) * kept2;
-      const rating = (car: typeof base) =>
-        brief(answer(car, "safety_ancap"), 30);
-      const over: V3 = [0, 0, 2.55];
-      const beside = plate.wide
-        ? ({ anchor: "left", dx: 32 } as const)
-        : ({ anchor: "centre", dx: 0 } as const);
-      pill(plate, over, `${base.name} · ANCAP`, rating(base), {
-        tone: "dark",
-        alpha: rated,
-        ...beside,
-        dy: plate.wide ? -18 : -76,
-      });
-      pill(plate, over, rival.name, rating(rival), {
-        alpha: rated,
-        ...beside,
-        dy: plate.wide ? 17 : -41,
-      });
-      badge(plate, over, "shield", AMBER, {
-        alpha: ramp(12, 12.5, t) * kept2,
-        pop: ramp(12, 12.6, t, settle),
-        stem: roof,
-        radius: 17,
-      });
-      const text = answer(base, "safety_ancap") ?? "";
-      const stars = /star/i.test(text) ? clamp(numberIn(text) ?? 0, 0, 5) : 0;
-      for (let k = 0; k < 5; k++) {
-        const angle = (-0.125 - 0.116 + k * 0.058) * TAU;
-        const lit = ramp(12.3 + k * 0.22, 12.7 + k * 0.22, t, settle) * kept2;
-        if (lit <= 0.01) continue;
-        const [sx, sy] = spot(plate, [
-          Math.cos(angle) * RING,
-          Math.sin(angle) * RING,
-          0.02,
-        ]);
-        const { ctx } = plate;
-        const r = 12 * plate.unit * lit;
-        ctx.save();
-        ctx.beginPath();
-        for (let p = 0; p < 10; p++) {
-          const a = -Math.PI / 2 + (p * Math.PI) / 5,
-            d = p % 2 ? r * 0.46 : r;
-          ctx.lineTo(sx + Math.cos(a) * d, sy + Math.sin(a) * d);
-        }
-        ctx.closePath();
-        ctx.fillStyle = k < stars ? "#e9ad1f" : "#ffffff";
-        ctx.strokeStyle = k < stars ? "#ffffff" : "rgba(34,39,43,0.35)";
-        ctx.lineWidth = 1.6 * plate.unit;
-        ctx.lineJoin = "round";
-        ctx.stroke();
-        ctx.fill();
-        ctx.restore();
-      }
+      caption(
+        plate,
+        "Makers' figures. The well under the floor is shown for the Model Y only; some alternatives have one too.",
+        all,
+      );
     };
     return { shot, items, labels };
   },

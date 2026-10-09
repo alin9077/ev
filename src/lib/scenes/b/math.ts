@@ -36,8 +36,13 @@ export const ramp = (from: number, to: number, v: number, e: Ease = smooth) =>
 /** Up after `from`, down before `to`: present for one stretch of time. */
 export const span = (from: number, to: number, v: number, soft = 0.4) =>
   ramp(from, from + soft, v) * (1 - ramp(to - soft, to, v));
-/** A value along keyframes of [time, value]. */
-export function track(t: number, keys: V2[], e: Ease = glide) {
+/**
+ * A value along keyframes of [time, value]. With no easing given it runs
+ * smoothly through every key, never stopping at one unless the value rests
+ * there; with one, it eases from each key to the next.
+ */
+export function track(t: number, keys: V2[], e?: Ease) {
+  if (!e) return curve(keys)(t);
   if (t <= keys[0][0]) return keys[0][1];
   for (let i = 1; i < keys.length; i++)
     if (t <= keys[i][0]) {
@@ -47,12 +52,20 @@ export function track(t: number, keys: V2[], e: Ease = glide) {
     }
   return keys[keys.length - 1][1];
 }
+/** The way from one angle to another by the shorter turn: f 0–1. */
+export function turn(from: number, to: number, f: number) {
+  let d = (to - from) % TAU;
+  if (d > Math.PI) d -= TAU;
+  if (d < -Math.PI) d += TAU;
+  return from + d * f;
+}
 /**
  * A smooth curve through points of [x, y] that never overshoots them: the
  * car's profiles are drawn through measured stations this way.
  */
 export function curve(points: V2[]) {
   const n = points.length;
+  if (n < 2) return () => points[0]?.[1] ?? 0;
   const slope: number[] = [],
     tangent: number[] = new Array(n).fill(0);
   for (let i = 0; i < n - 1; i++)

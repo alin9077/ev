@@ -35,7 +35,8 @@ export const WHITE = colour("#ecebe8"),
   STONE = colour("#dcdbd7"),
   ASPHALT = colour("#c9c8c5"),
   WARM = colour("#e6d8c2"),
-  CHAMPAGNE = colour("#b3ac9f"),
+  /** The paint of the car the page is about: a deep gloss black. */
+  PAINT = colour("#101114"),
   GRAPHITE = colour("#4a4c50"),
   INK = colour("#22272b");
 
@@ -554,5 +555,93 @@ export function person(
       },
     );
   }
+  return items;
+}
+
+/* ---------- Surroundings ---------- */
+
+/**
+ * The town round a scene's subject, as the camera sees it. A wide plate has
+ * room at its sides, not above, so most of it stands to the left and right:
+ * a house, trees, a hedge and a few people each side, with a taller block and
+ * more trees further back for a square plate. Everything is placed by how far
+ * right of the subject it sits and how far behind it, for a camera standing
+ * at `az`; nothing comes within `clear` metres across, and nothing stands in
+ * front. `houses` off leaves the buildings out where a scene has its own.
+ */
+export function surroundings(
+  subject: V3,
+  az: number,
+  clear = 7,
+  seed = 1,
+  houses = true,
+): Item[] {
+  const a = (az * Math.PI) / 180;
+  const right: [number, number] = [-Math.sin(a), Math.cos(a)],
+    back: [number, number] = [-Math.cos(a), -Math.sin(a)];
+  const at = (across: number, behind: number): V3 => [
+    subject[0] + right[0] * across + back[0] * behind,
+    subject[1] + right[1] * across + back[1] * behind,
+    0,
+  ];
+  const r = (n: number) => {
+    const v = Math.sin((seed * 31 + n) * 127.1 + 311.7) * 43758.5453;
+    return v - Math.floor(v);
+  };
+  const items: Item[] = [];
+  if (houses)
+    items.push(
+      ...house(at(-clear - 9, 6 + 2 * r(1)), 10 + 2 * r(2), 7, r(3) > 0.4),
+      ...house(at(clear + 10, 8 + 2 * r(4)), 11, 7.5, r(5) > 0.5),
+      ...mass(at(-3 + 4 * r(6), 30), [16, 12, 9 + 4 * r(7)]),
+      ...mass(at(-clear - 26, 14), [12, 10, 6]),
+      ...mass(at(clear + 27, 18), [13, 11, 7]),
+    );
+  const trees: [number, number][] = [
+    [-clear - 1.5, 4.5],
+    [-clear - 4.5, -0.5],
+    [-clear - 15, 1],
+    [clear + 2, 5.5],
+    [clear + 5.5, 0.5],
+    [clear + 17, 3],
+    [-5, 15],
+    [6, 17],
+    [-16, 16],
+    [18, 19],
+  ];
+  trees.forEach(([across, behind], i) =>
+    items.push(
+      ...tree(
+        at(across + 1.5 * r(10 + i), behind + 1.5 * r(20 + i)),
+        3.6 + 1.8 * r(30 + i),
+        i + seed,
+      ),
+    ),
+  );
+  for (const [across, behind, long] of [
+    [-clear - 2.5, 2, 4],
+    [clear + 3.5, 2.8, 5],
+  ] as const)
+    items.push(
+      box(
+        [long, 0.8, 0.7],
+        at(across, behind),
+        clay(WHITE, { p: [0, 0, 0, 0.22] }),
+        0.16,
+      ),
+    );
+  const people: [number, number, number][] = [
+    [-clear - 0.6, 0.6, 0.4],
+    [-clear - 1.3, 1.1, 3.6],
+    [clear + 1.2, 1.4, 2.4],
+    [clear + 7, 3.5, 5.2],
+    [-clear - 7, 3, 1.2],
+  ];
+  people.forEach(([across, behind, facing]) => {
+    const p = at(across, behind);
+    items.push(
+      ...person(compose(translate(p[0], p[1], 0), rotateZ(facing)), 0, 0),
+    );
+  });
   return items;
 }

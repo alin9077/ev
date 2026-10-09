@@ -2746,7 +2746,7 @@ select {
   --rule: #aab5b8;
 }
 .fleet-intro {
-  background: var(--sky);
+  background: #f6f3eb;
   border-bottom: 1px solid var(--ink);
 }
 .fleet-intro > .container {
@@ -2849,12 +2849,11 @@ select {
   border-radius: 2px 2px 0 0;
   padding-inline: 22px;
 }
-.fleet-controls-inner > .swipe-track {
-  grid-area: names;
+.fleet-controls-inner > .swipe-viewport .swipe-track {
   padding-bottom: 0;
   scrollbar-width: none;
 }
-.fleet-controls-inner > .swipe-track::-webkit-scrollbar {
+.fleet-controls-inner > .swipe-viewport .swipe-track::-webkit-scrollbar {
   display: none;
 }
 /* One name per column: these line up with the cards scrolling beneath. */
@@ -3013,21 +3012,37 @@ select {
   white-space: nowrap;
   font-weight: 500;
 }
-/* Sits under the car names only, one step per car, so it lines up with them. */
-.fleet-progress {
+/* The selected car snaps to the first column; underline that column at any viewport width. */
+.swipe-viewport {
+  position: relative;
+  min-width: 0;
+}
+.fleet-controls-inner > .swipe-viewport {
   grid-area: names;
-  align-self: end;
-  margin-bottom: -1px;
-  height: 2px;
-  width: 100%;
+}
+.fleet-progress {
+  position: absolute;
+  inset: auto 0 0;
+  height: 4px;
   overflow: hidden;
   pointer-events: none;
 }
 .fleet-progress > span {
+  position: absolute;
+  left: 0;
+  width: min(100%, var(--swipe-card-width));
   height: 100%;
   display: block;
-  background: #172326;
-  transition: transform 180ms ease;
+  border-radius: 2px;
+  background: #9daeb4;
+}
+.fleet-controls-inner .fleet-progress {
+  bottom: -1px;
+  height: 2px;
+}
+.fleet-controls-inner .fleet-progress > span {
+  border-radius: 0;
+  background: var(--ink);
 }
 .fleet-overview {
   padding-block: 32px 0;
@@ -3053,12 +3068,15 @@ select {
   gap: var(--swipe-gap);
   overflow-x: auto;
   overscroll-behavior-x: contain;
+  touch-action: pan-y pinch-zoom;
   scroll-snap-type: x mandatory;
-  scrollbar-width: thin;
-  scrollbar-color: #9daeb4 transparent;
+  scrollbar-width: none;
   min-width: 0;
   padding-bottom: 12px;
   cursor: grab;
+}
+.swipe-track::-webkit-scrollbar {
+  display: none;
 }
 .swipe-track.is-dragging {
   scroll-snap-type: none;
@@ -3676,7 +3694,7 @@ select {
     column-gap: 10px;
     padding-top: 4px;
   }
-  .fleet-controls-inner > .swipe-track .fleet-identity {
+  .fleet-controls-inner > .swipe-viewport .swipe-track .fleet-identity {
     padding-right: 112px;
   }
   .fleet-anchor-badge {
@@ -4000,6 +4018,7 @@ select {
     margin-top: 1rem;
     break-inside: avoid;
   }
+  .fleet-progress,
   .swipe-tail {
     display: none;
   }
@@ -4418,11 +4437,14 @@ select {
   .fleet-page {
     --swipe-card-width: 100%;
   }
-  /* The rival changes from the bar, not by swiping a half-width column. */
+  /* Gestures change the rival while keeping each comparison row compact. */
   .fleet-page .swipe-track {
     overflow-x: hidden;
     padding-bottom: 0;
     cursor: auto;
+  }
+  .fleet-progress {
+    display: none;
   }
   .fleet-row .swipe-track {
     align-items: flex-start;
@@ -4455,7 +4477,7 @@ select {
     margin: 0 0 8px 11px;
   }
   .fleet-identity,
-  .fleet-controls-inner > .swipe-track .fleet-identity {
+  .fleet-controls-inner > .swipe-viewport .swipe-track .fleet-identity {
     grid-template-columns: 44px minmax(0, 1fr);
     column-gap: 8px;
     padding: 6px 24px 4px 12px;
@@ -4992,3 +5014,44 @@ html:has(.fleet-chapter-nav) {
     min-width: 0;
   }
 }
+
+/* Compact editorial verdict: each row links to its supporting comparison. */
+.verdict-heading { padding-block: 22px 20px; }
+.roadmark-logo { --roadmark-green: #4a7326; --roadmark-electric: #ffe600; display: block; width: 126px; height: 88px; margin: 0 0 16px; overflow: visible; fill: var(--roadmark-green); }
+.roadmark-wordmark { fill: #2f4d17; }
+.roadmark-wordmark path { fill: none; stroke: #2f4d17; stroke-width: .8; stroke-linecap: round; }
+.roadmark-waves path { fill: none; stroke: var(--roadmark-green); stroke-width: .55; stroke-linecap: round; opacity: .38; animation: roadmark-churn 48s linear infinite; }
+.roadmark-waves path + path { animation-direction: reverse; }
+.roadmark-dot { opacity: .5; animation: roadmark-breathe 3.2s ease-in-out infinite; }
+.roadmark-bolt { stroke: var(--roadmark-green); stroke-width: .45; transform-box: fill-box; transform-origin: center; animation: roadmark-pulse 3.2s ease-in-out infinite; }
+@keyframes roadmark-pulse { 0%, 70%, 100% { transform: scale(.92); fill: var(--roadmark-green); } 32% { transform: scale(1.26); fill: var(--roadmark-electric); } }
+@keyframes roadmark-breathe { 0%, 75%, 100% { opacity: .4; } 38% { opacity: .85; } }
+@keyframes roadmark-churn { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .roadmark-dot, .roadmark-bolt, .roadmark-waves path { animation: none; } }
+.verdict-eyebrow { margin: 0 0 10px; font-size: 10px; text-transform: uppercase; letter-spacing: .1em; }
+.fleet-intro .verdict-heading h1 { max-width: none; font-size: clamp(1.65rem, 2.5vw, 2.3rem); line-height: 1.15; letter-spacing: -.04em; }
+.verdict-introduction { margin: 10px 0 0; font-size: 13px; line-height: 1.5; }
+.verdict-reasons { display: grid; grid-template-columns: 1fr; gap: 0; width: 100%; margin: 0; overflow: visible; align-items: stretch; border: 1px solid #17232640; }
+.verdict-reasons .verdict-reason { --pictogram-body: var(--ink); --pictogram-light: #fff; --pictogram-accent: #ffd84d; --pictogram-record: #e5482f; display: grid; grid-template-columns: 26px 24px 245px minmax(0, 1fr) 16px; align-items: center; gap: 16px; min-width: 0; max-width: none; padding: 13px 16px; white-space: normal; color: var(--ink); text-decoration: none; border-bottom: 1px solid #17232640; transition: background 150ms ease; }
+.verdict-reasons .verdict-reason:last-child { border-bottom: 0; }
+.verdict-reasons .verdict-reason:first-child { background: var(--ink); color: var(--paper); --pictogram-body: var(--paper); --pictogram-light: var(--ink); }
+.verdict-pictogram { display: block; width: 24px; height: 24px; }
+.verdict-reasons .verdict-reason:hover { background: #ffffff70; color: var(--ink); }
+.verdict-reasons .verdict-reason:first-child:hover { background: #245268; color: var(--paper); }
+.verdict-reason:focus-visible { outline: 3px solid #b35722; outline-offset: -4px; }
+.verdict-reason-number { font-size: 10px; letter-spacing: .05em; }
+.verdict-reason h2 { margin: 0; font-size: 15px; line-height: 1.35; letter-spacing: -.02em; font-weight: 500; }
+.verdict-reason p { margin: 0; font-size: 12px; line-height: 1.5; }
+.verdict-reason-arrow { font-size: 16px; text-align: right; }
+.verdict-evidence { padding-block: 12px; font-size: 12px; line-height: 1.7; }
+.verdict-evidence summary { cursor: pointer; width: fit-content; }
+.verdict-evidence p { max-width: 960px; }
+.fleet-intro .fleet-reading-links { margin: 8px 0 16px; }
+.fleet-detail > h3[id], .fleet-chapter[id] { scroll-margin-top: calc(var(--fleet-bar, 130px) + 16px); }
+@media (max-width: 767px) {
+  .verdict-heading { padding-block: 22px 18px; }
+  .verdict-reasons .verdict-reason { grid-template-columns: 20px 24px minmax(0, 1fr) 14px; gap: 6px 10px; padding: 12px; }
+  .verdict-reason p { grid-column: 3; }
+  .verdict-reason-arrow { grid-column: 4; grid-row: 1; }
+}
+@media (prefers-reduced-motion: reduce) { .verdict-reason { transition: none; } }

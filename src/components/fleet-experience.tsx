@@ -1,5 +1,5 @@
 "use client";
-import { SelectedCopy } from "./selected-copy";
+import { ModelYVerdict } from "./model-y-verdict";
 import Link from "next/link";
 import {
   memo,
@@ -306,42 +306,7 @@ export default function FleetExperience({
       <main id="main" className="fleet-page" data-version={version}>
         <header className="fleet-intro">
           <div className="container">
-            <div className="fleet-edition">
-              <span>Australian EV comparison</span>
-              <span>
-                Edition 01 / October 2026
-                {version === "b" && (
-                  <>
-                    {" · Version B · "}
-                    {typeof window !== "undefined" &&
-                    (window as unknown as { __EV_B?: boolean }).__EV_B ? (
-                      <a href="index.html">See version A</a>
-                    ) : (
-                      <Link href="/">See version A</Link>
-                    )}
-                  </>
-                )}
-              </span>
-            </div>
-            <div className="fleet-intro-grid">
-              <h1>
-                Tesla Model Y vs.
-                <br />
-                <span>Australia’s leading EVs.</span>
-              </h1>
-              <div className="fleet-intro-index" aria-hidden="true">
-                <span>10</span>
-                <div>
-                  EV models <span>↔</span>
-                </div>
-              </div>
-            </div>
-            <div className="fleet-reading-links">
-              <Link href="/comparisons">
-                Read a focused two-car comparison →
-              </Link>
-              <SelectedCopy packs={[baseline, alternatives[selected.index]]} />
-            </div>
+            <ModelYVerdict />
             <div className="fleet-intro-footer">
               <p>
                 Nine of Australia’s top ten EVs by sales · Jan–Sep 2026.
@@ -602,14 +567,6 @@ function FleetControls({
             {active.car.brand} {active.car.model}, alternative {index + 1} of{" "}
             {count}. Tesla remains the baseline.
           </span>
-        </div>
-        <div className="fleet-progress" aria-hidden="true">
-          <span
-            style={{
-              width: `${100 / count}%`,
-              transform: `translateX(${index * 100}%)`,
-            }}
-          />
         </div>
       </div>
     </div>

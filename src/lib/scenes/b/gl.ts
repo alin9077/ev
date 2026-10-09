@@ -52,6 +52,8 @@ export type Item = {
    * that stand clear of the ground, like the crown of a tree.
    */
   shades?: boolean;
+  /** Seen through, this lies under whatever else is seen through: it is drawn first. */
+  under?: boolean;
 };
 export type Lighting = {
   /** Unit vector towards the sun, and its colour. */
@@ -215,6 +217,8 @@ void main() {
     f0 = uP.x;
     flake = uP.y;
     emit = uColor2 * uP.z;
+    // How much of the sky a glancing face returns; small parts want less.
+    if (uP.w > 0.0) gleam = uP.w;
   } else if (uKind == 5) {
     // The floor falls off a little away from where the scene is looking.
     float far = length(vW.xy - uP.xy);
@@ -273,15 +277,19 @@ void main() {
 
     // The tailgate is the same mesh drawn twice: once without it, once alone.
     float rail = 0.065;
-    float gate = step(uR.z, s) * smoothstep(3.0 + rail - qa, 3.0 + rail + qa, q) * step(0.74, z);
-    if (uQ.w > 0.5 && uQ.w < 1.5 && gate > 0.5) discard;
-    if (uQ.w > 1.5 && gate < 0.5) discard;
+    float gate = step(uR.z, s) * smoothstep(3.0 + rail - qa, 3.0 + rail + qa, q) * step(0.8, z);
+    // So is the bonnet: the panel between the wings, from the nose to the scuttle.
+    float scuttle = uR.x - 0.17 * (1.0 - min(1.0, (ay * ay) / 0.5));
+    float hood = smoothstep(3.1 - qa, 3.1 + qa, q) * step(0.34, s) * (1.0 - step(scuttle - 0.05, s));
+    if (uQ.w > 0.5 && uQ.w < 1.5 && (gate > 0.5 || hood > 0.5)) discard;
+    if (uQ.w > 1.5 && uQ.w < 2.5 && gate < 0.5) discard;
+    if (uQ.w > 2.5 && hood < 0.5) discard;
     if (cover < 0.004) discard;
 
     // Dark trim: arch lips, sills, the lower bumpers and the scuttle.
     float lipR = archR + 0.046;
     float trim = outer * (1.0 - smoothstep(lipR - aa, lipR + aa, dw)) * step(z, zAxle + lipR + 0.02);
-    float skirt = 0.275 + 0.15 * smoothstep(len - 0.62, len - 0.25, s) + 0.05 * (1.0 - smoothstep(0.1, 0.5, s));
+    float skirt = 0.275 + 0.27 * smoothstep(len - 0.72, len - 0.22, s) + 0.05 * (1.0 - smoothstep(0.1, 0.5, s));
     trim = max(trim, 1.0 - smoothstep(skirt - za, skirt + za, z));
     float cowl = uR.x - 0.17 * (1.0 - min(1.0, (ay * ay) / 0.5));
     float top = smoothstep(3.0 - qa, 3.0 + qa, q);
@@ -307,7 +315,9 @@ void main() {
     float reach = smoothstep(len - 0.56, len - 0.2, s);
     float lamp = step(len - 0.56, s) * stroke(z - uS.z - 0.01 + 0.05 * (1.0 - reach), 0.012 + 0.06 * reach * step(0.5, ay), za);
     float tailBar = step(len - 0.56, s) * stroke(z - uS.z - 0.012 + 0.05 * (1.0 - reach), 0.012, za);
-    float plate = step(len - 0.12, s) * (1.0 - smoothstep(0.26 - 0.004, 0.26 + 0.004, ay)) * band(z, 0.62, 0.75, za);
+    float plate = step(len - 0.14, s) * (1.0 - smoothstep(0.3 - 0.004, 0.3 + 0.004, ay)) * band(z, 0.86, 0.99, za);
+    // A slim reflector low on each rear corner breaks up the bumper.
+    float reflector = step(len - 0.3, s) * step(0.42, ay) * stroke(z - skirt - 0.07, 0.012, za);
 
     // Shut lines and handles, drawn in ink on the paint.
     float flank = step(1.0, q) * (1.0 - step(3.0, q));
@@ -328,6 +338,10 @@ void main() {
       * stroke(z - grip, 0.012, za);
     // A small dark repeater on the wing, ahead of the door.
     ink += flank * band(s, doorA - 0.2, doorA - 0.04, sa) * stroke(z - 0.9 - 0.12 * (s - doorA + 0.2), 0.012, za);
+    // The tailgate's outline: down each side from the lamps, and along its foot.
+    float behindLamps = step(len - 0.5, s) * band(z, 0.8, uS.z - 0.04, za);
+    ink += behindLamps * stroke(q - 3.0 - rail, 0.012, qa);
+    ink += step(len - 0.2, s) * smoothstep(3.0 + rail - qa, 3.0 + rail + qa, q) * stroke(z - 0.8, lw, za);
     // The bonnet's edge, a hand's width in from each wing.
     ink += top * (1.0 - step(cowl - 0.05, s)) * step(0.34, s) * stroke(q - 3.1, 0.006, qa);
     ink = min(ink, 1.0) * (1.0 - glass) * (1.0 - trim);
@@ -348,7 +362,11 @@ void main() {
     // Metallic paint falls away towards the sill and lifts along the shoulder.
     float low = smoothstep(1.02, 0.28, z) * flank;
     albedo = paint * (1.0 - 0.2 * low) * (1.0 - 0.62 * ink);
-    albedo = mix(albedo, paint * 0.7, plate * (1.0 - clay));
+    // On dark paint a shut line shows as a pale edge, not a darker one.
+    float deep = 1.0 - smoothstep(0.02, 0.2, dot(paint, vec3(0.33)));
+    albedo += vec3(0.05, 0.052, 0.056) * ink * deep * (1.0 - clay);
+    albedo = mix(albedo, paint * 0.62, plate * (1.0 - clay));
+    albedo = mix(albedo, mix(vec3(0.16, 0.02, 0.02), paint * 0.7, clay), reflector);
     albedo = mix(albedo, trimTone, trim);
     albedo = mix(albedo, trimTone, max(pods, intake) * (1.0 - trim));
     albedo = mix(albedo, glassTone, glass);
@@ -358,7 +376,11 @@ void main() {
     f0 = mix(f0, 0.012, clay);
     flake = 0.5 * shiny * (1.0 - glass) * (1.0 - trim);
     // Polished paint picks up the sky on whatever faces it.
-    lift = 0.16 * shiny * (1.0 - glass) * (1.0 - trim) + 0.035 * glass * shiny;
+    lift = mix(0.16, 0.06, deep) * shiny * (1.0 - glass) * (1.0 - trim)
+      + 0.035 * glass * shiny * (1.0 - deep);
+    // Black paint lives on its reflections; black glass sits a shade flatter.
+    f0 = mix(f0, f0 * 1.35, deep * (1.0 - glass) * shiny);
+    albedo = mix(albedo, albedo * 0.55, deep * glass * shiny);
     sheen = 0.03;
     // Lamps glow by their own settings.
     vec3 lens = mix(vec3(0.62, 0.64, 0.66), paint * 0.8, clay);
@@ -370,7 +392,13 @@ void main() {
     albedo = mix(albedo, red, tailBar);
     emit += vec3(1.0, 0.05, 0.04) * tailBar * uQ.z * 1.5 * shiny;
     f0 = mix(f0, 0.07, max(bar, lamp) * shiny);
-    gleam = mix(0.58, 0.66, glass) * shiny;
+    gleam = mix(mix(0.58, 0.74, deep), mix(0.66, 0.42, deep), glass) * shiny;
+    // The underside of a raised panel is a plain pale liner.
+    if (!gl_FrontFacing && uQ.w > 1.5 && uQ.x < 0.01) {
+      albedo = vec3(0.34, 0.345, 0.36);
+      emit = vec3(0.0);
+      f0 = 0.02; flake = 0.0; lift = 0.0; gleam = 0.0;
+    }
   }
 
   float lit = sunlight(vW, n);
@@ -393,7 +421,10 @@ void main() {
   if (uGhost > 0.0) {
     float edge = pow(1.0 - ndv, 2.2);
     alpha *= mix(1.0, 0.05 + 0.5 * edge, uGhost);
-    c = mix(c, vec3(1.0), 0.4 * uGhost);
+    // The far side of the shell comes into view only as the near side clears.
+    if (!gl_FrontFacing) alpha *= smoothstep(0.0, 0.45, uGhost);
+    // Whatever its paint, a shell seen through is the same cool glass.
+    c = mix(c, vec3(0.7, 0.71, 0.74), 0.86 * uGhost);
   }
   c += (ign(gl_FragCoord.xy + 7.3) - 0.5) * uGrain;
   o = vec4(pow(max(c, 0.0), vec3(1.0 / 2.2)), uCoverage ? cover : alpha * cover);
@@ -727,7 +758,10 @@ export function render(frame: Frame): HTMLCanvasElement | undefined {
   // Then whatever is seen through, farthest first.
   const [ex, ey, ez] = frame.eye;
   const away = (item: Item) =>
-    (item.at[12] - ex) ** 2 + (item.at[13] - ey) ** 2 + (item.at[14] - ez) ** 2;
+    (item.under ? 1e9 : 0) +
+    (item.at[12] - ex) ** 2 +
+    (item.at[13] - ey) ** 2 +
+    (item.at[14] - ez) ** 2;
   const clear = frame.items.filter((item) => !solid(item));
   if (clear.length) {
     clear.sort((a, b) => away(b) - away(a));

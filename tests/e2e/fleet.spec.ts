@@ -130,6 +130,30 @@ test("phones show one rival beside Model Y in the offline file", async ({
   await expect(range.locator(".fact-basis").first()).toBeHidden();
   await range.getByRole("button", { name: "Details: Claimed range" }).click();
   await expect(range.locator(".fact-basis").first()).toBeVisible();
+  const track = range.locator(".swipe-track");
+  async function swipe(dx: number, dy = 0) {
+    await track.evaluate((el, { dx, dy }) => {
+      const start = new Event("touchstart", { bubbles: true });
+      Object.assign(start, { touches: [{ clientX: 180, clientY: 300 }] });
+      el.dispatchEvent(start);
+      const end = new Event("touchend", { bubbles: true });
+      Object.assign(end, {
+        changedTouches: [{ clientX: 180 + dx, clientY: 300 + dy }],
+      });
+      el.dispatchEvent(end);
+    }, { dx, dy });
+  }
+  await swipe(-100);
+  await expect(page.getByLabel("Jump to EV")).toHaveValue("1");
+  await expect(
+    page.locator('.fleet-hero-row .swipe-card[data-index="1"]'),
+  ).not.toHaveAttribute("inert");
+  await swipe(100);
+  await expect(page.getByLabel("Jump to EV")).toHaveValue("0");
+  await swipe(-100, 200);
+  await expect(page.getByLabel("Jump to EV")).toHaveValue("0");
+  await swipe(100);
+  await expect(page.getByLabel("Jump to EV")).toHaveValue("0");
   await page.getByRole("button", { name: "Next EV", exact: true }).click();
   await expect(page.getByLabel("Jump to EV")).toHaveValue("1");
   await page.getByLabel("Jump to EV").selectOption("5");

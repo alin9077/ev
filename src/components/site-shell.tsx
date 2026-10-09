@@ -14,27 +14,6 @@ export function SiteShell({
       <a className="skip-link" href="#main">
         Skip to content
       </a>
-      <header className="site-header">
-        <div className="nav-inner">
-          <Link className="brand" href="/" aria-label="EV Side by Side home">
-            <span className="brand-mark" aria-hidden="true">
-              <i />
-              <i />
-            </span>
-            <span>
-              EV <b>Side by Side</b>
-            </span>
-          </Link>
-          <nav aria-label="Main navigation">
-            <Link href="/">All EVs</Link>
-            <Link href="/comparisons">Pair comparisons</Link>
-            <Link href="/model-y">Model Y range</Link>
-            <Link href="/cars">Explore cars</Link>
-            <Link href="/software">Software updates</Link>
-          </nav>
-          <span className="region-label">AU / Independent</span>
-        </div>
-      </header>
       {sources.length ? (
         <FootnoteProvider sources={sources}>{children}</FootnoteProvider>
       ) : (

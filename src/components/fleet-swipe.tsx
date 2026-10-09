@@ -100,6 +100,7 @@ export function SwipeTrack({
   const [visibleCount, setVisibleCount] = useState(1);
   const ref = useRef<HTMLDivElement>(null),
     drag = useRef<{ x: number; left: number; moved: boolean } | null>(null);
+  const touch = useRef<{ x: number; y: number; index: number } | null>(null);
   useEffect(() => {
     if (ref.current) return register(ref.current);
   }, [register]);
@@ -127,82 +128,110 @@ export function SwipeTrack({
     );
   }
   return (
-    <div
-      ref={ref}
-      className="swipe-track"
-      tabIndex={0}
-      role="group"
-      aria-label={`${label}. Swipe or use left and right arrow keys.`}
-      onScroll={(e) => {
-        const next = nearest(e.currentTarget);
-        if (next !== index) move(next, e.currentTarget);
-      }}
-      onKeyDown={(e) => {
-        if (e.target !== e.currentTarget) return;
-        if (["ArrowLeft", "ArrowRight", "Home", "End"].includes(e.key)) {
+    <div className="swipe-viewport">
+      <div
+        ref={ref}
+        className="swipe-track"
+        tabIndex={0}
+        role="group"
+        aria-label={`${label}. Swipe or use left and right arrow keys.`}
+        onTouchStart={(e) => {
+          if (e.touches.length !== 1) {
+            touch.current = null;
+            return;
+          }
+          touch.current = {
+            x: e.touches[0].clientX,
+            y: e.touches[0].clientY,
+            index,
+          };
+        }}
+        onTouchEnd={(e) => {
+          const start = touch.current;
+          touch.current = null;
+          if (!start || !e.changedTouches.length) return;
+          const dx = e.changedTouches[0].clientX - start.x;
+          const dy = e.changedTouches[0].clientY - start.y;
+          if (Math.abs(dx) >= 40 && Math.abs(dx) > Math.abs(dy) * 1.5)
+            move(start.index + (dx < 0 ? 1 : -1));
+        }}
+        onTouchCancel={() => {
+          touch.current = null;
+        }}
+        onScroll={(e) => {
+          const next = nearest(e.currentTarget);
+          if (next !== index) move(next, e.currentTarget);
+        }}
+        onKeyDown={(e) => {
+          if (e.target !== e.currentTarget) return;
+          if (["ArrowLeft", "ArrowRight", "Home", "End"].includes(e.key)) {
+            e.preventDefault();
+            move(
+              e.key === "Home"
+                ? 0
+                : e.key === "End"
+                  ? children.length - 1
+                  : index + (e.key === "ArrowLeft" ? -1 : 1),
+            );
+          }
+        }}
+        onPointerDown={(e) => {
+          if (
+            e.pointerType !== "mouse" ||
+            e.button !== 0 ||
+            (e.target as HTMLElement).closest("a,button,select,input,label")
+          )
+            return;
+          drag.current = {
+            x: e.clientX,
+            left: e.currentTarget.scrollLeft,
+            moved: false,
+          };
           e.preventDefault();
-          move(
-            e.key === "Home"
-              ? 0
-              : e.key === "End"
-                ? children.length - 1
-                : index + (e.key === "ArrowLeft" ? -1 : 1),
-          );
-        }
-      }}
-      onPointerDown={(e) => {
-        if (
-          e.pointerType !== "mouse" ||
-          e.button !== 0 ||
-          (e.target as HTMLElement).closest("a,button,select,input,label")
-        )
-          return;
-        drag.current = {
-          x: e.clientX,
-          left: e.currentTarget.scrollLeft,
-          moved: false,
-        };
-        e.preventDefault();
-      }}
-      onPointerMove={(e) => {
-        const d = drag.current;
-        if (!d) return;
-        if (Math.abs(e.clientX - d.x) > 6) {
-          d.moved = true;
-          e.currentTarget.setPointerCapture(e.pointerId);
-          e.currentTarget.classList.add("is-dragging");
-          e.currentTarget.scrollLeft = d.left + d.x - e.clientX;
-        }
-      }}
-      onPointerUp={(e) => {
-        if (!drag.current) return;
-        const moved = drag.current.moved;
-        drag.current = null;
-        e.currentTarget.classList.remove("is-dragging");
-        if (e.currentTarget.hasPointerCapture(e.pointerId))
-          e.currentTarget.releasePointerCapture(e.pointerId);
-        if (moved) move(nearest(e.currentTarget));
-      }}
-      onPointerCancel={(e) => {
-        drag.current = null;
-        e.currentTarget.classList.remove("is-dragging");
-      }}
-      onClickCapture={(e) => {
-        if (drag.current?.moved) e.preventDefault();
-      }}
-    >
-      {children.map((child, i) => (
-        <div
-          className="swipe-card"
-          key={i}
-          data-index={i}
-          inert={i < index || i >= index + visibleCount}
-          aria-hidden={i < index || i >= index + visibleCount}
-        >
-          {child}
-        </div>
-      ))}
-      <div className="swipe-tail" aria-hidden="true" />
+        }}
+        onPointerMove={(e) => {
+          const d = drag.current;
+          if (!d) return;
+          if (Math.abs(e.clientX - d.x) > 6) {
+            d.moved = true;
+            e.currentTarget.setPointerCapture(e.pointerId);
+            e.currentTarget.classList.add("is-dragging");
+            e.currentTarget.scrollLeft = d.left + d.x - e.clientX;
+          }
+        }}
+        onPointerUp={(e) => {
+          if (!drag.current) return;
+          const moved = drag.current.moved;
+          drag.current = null;
+          e.currentTarget.classList.remove("is-dragging");
+          if (e.currentTarget.hasPointerCapture(e.pointerId))
+            e.currentTarget.releasePointerCapture(e.pointerId);
+          if (moved) move(nearest(e.currentTarget));
+        }}
+        onPointerCancel={(e) => {
+          drag.current = null;
+          e.currentTarget.classList.remove("is-dragging");
+        }}
+        onClickCapture={(e) => {
+          if (drag.current?.moved) e.preventDefault();
+        }}
+      >
+        {children.map((child, i) => (
+          <div
+            className="swipe-card"
+            key={i}
+            data-index={i}
+            inert={i < index || i >= index + visibleCount}
+            aria-hidden={i < index || i >= index + visibleCount}
+          >
+            {child}
+          </div>
+        ))}
+        <div className="swipe-tail" aria-hidden="true" />
+      </div>
+      <div className="fleet-progress" aria-hidden="true">
+        <span />
+      </div>
     </div>
   );
 }

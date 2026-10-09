@@ -72,10 +72,10 @@ export const FASTBACK: CarShape = {
   frontAxle: 0.865,
   rearAxle: 3.755,
   track: 1.636,
-  wheelR: 0.356,
-  rimR: 0.252,
-  tyreW: 0.255,
-  archR: 0.392,
+  wheelR: 0.372,
+  rimR: 0.268,
+  tyreW: 0.265,
+  archR: 0.41,
   top: [
     [0, 0.7],
     [0.012, 0.75],
@@ -99,13 +99,17 @@ export const FASTBACK: CarShape = {
     [3.65, 1.55],
     [4.0, 1.476],
     [4.3, 1.39],
-    [4.5, 1.325],
-    [4.6, 1.29],
-    [4.66, 1.25],
-    [4.71, 1.16],
-    [4.75, 1.04],
-    [4.78, 0.92],
-    [4.79, 0.8],
+    [4.5, 1.32],
+    [4.58, 1.29],
+    [4.63, 1.25],
+    [4.67, 1.17],
+    [4.695, 1.06],
+    [4.712, 0.93],
+    [4.722, 0.83],
+    [4.735, 0.795],
+    [4.765, 0.782],
+    [4.782, 0.765],
+    [4.79, 0.73],
   ],
   under: [
     [0, 0.36],
@@ -116,13 +120,13 @@ export const FASTBACK: CarShape = {
     [0.45, 0.175],
     [0.8, 0.17],
     [3.9, 0.17],
-    [4.25, 0.2],
-    [4.5, 0.25],
-    [4.66, 0.29],
-    [4.71, 0.32],
-    [4.75, 0.36],
-    [4.78, 0.41],
-    [4.79, 0.46],
+    [4.15, 0.2],
+    [4.35, 0.26],
+    [4.5, 0.33],
+    [4.64, 0.41],
+    [4.72, 0.46],
+    [4.77, 0.51],
+    [4.79, 0.57],
   ],
   waist: [
     [0, 0.3],
@@ -137,11 +141,12 @@ export const FASTBACK: CarShape = {
     [2.4, 0.953],
     [3.2, 0.957],
     [3.78, 0.96],
-    [4.2, 0.952],
-    [4.45, 0.915],
-    [4.62, 0.845],
-    [4.72, 0.755],
-    [4.77, 0.64],
+    [4.1, 0.948],
+    [4.3, 0.925],
+    [4.45, 0.89],
+    [4.6, 0.83],
+    [4.7, 0.75],
+    [4.76, 0.64],
     [4.79, 0.5],
   ],
   waistZ: [
@@ -157,65 +162,75 @@ export const FASTBACK: CarShape = {
   shoulder: [
     [0, 0.68],
     [0.012, 0.73],
-    [0.04, 0.77],
-    [0.1, 0.805],
-    [0.25, 0.848],
-    [0.45, 0.9],
-    [0.7, 0.958],
-    [0.95, 1.012],
-    [1.2, 1.06],
-    [1.35, 1.095],
-    [1.6, 1.112],
+    [0.04, 0.765],
+    [0.1, 0.79],
+    [0.25, 0.815],
+    [0.45, 0.838],
+    [0.7, 0.862],
+    [0.95, 0.9],
+    [1.1, 0.955],
+    [1.2, 1.005],
+    [1.35, 1.07],
+    [1.5, 1.1],
+    [1.65, 1.114],
     [2.2, 1.132],
     [2.8, 1.165],
-    [3.4, 1.215],
-    [3.8, 1.25],
-    [4.1, 1.27],
-    [4.35, 1.272],
-    [4.5, 1.262],
-    [4.6, 1.236],
-    [4.66, 1.185],
-    [4.71, 1.1],
-    [4.75, 0.99],
-    [4.78, 0.88],
-    [4.79, 0.775],
+    [3.4, 1.212],
+    [3.7, 1.228],
+    [3.9, 1.21],
+    [4.1, 1.18],
+    [4.35, 1.16],
+    [4.5, 1.15],
+    [4.6, 1.13],
+    [4.65, 1.1],
+    [4.69, 1.02],
+    [4.712, 0.9],
+    [4.722, 0.81],
+    [4.735, 0.78],
+    [4.765, 0.768],
+    [4.782, 0.752],
+    [4.79, 0.72],
   ],
   tuck: [
     [0, 0.05],
-    [0.3, 0.16],
-    [0.6, 0.25],
-    [0.89, 0.28],
-    [1.1, 0.24],
-    [1.27, 0.19],
-    [1.5, 0.115],
+    [0.3, 0.2],
+    [0.6, 0.3],
+    [0.89, 0.34],
+    [1.1, 0.3],
+    [1.27, 0.22],
+    [1.4, 0.16],
+    [1.55, 0.11],
     [1.8, 0.082],
     [2.6, 0.078],
-    [3.3, 0.082],
-    [3.78, 0.12],
-    [4.2, 0.16],
-    [4.5, 0.15],
+    [3.3, 0.085],
+    [3.6, 0.13],
+    [3.9, 0.23],
+    [4.1, 0.3],
+    [4.4, 0.32],
+    [4.6, 0.28],
+    [4.72, 0.17],
     [4.79, 0.06],
   ],
   railW: [
     [0, 0.2],
     [0.3, 0.45],
     [0.9, 0.6],
-    [1.27, 0.69],
-    [1.45, 0.695],
-    [1.65, 0.69],
-    [1.85, 0.68],
-    [2.0, 0.665],
-    [2.12, 0.655],
-    [2.35, 0.635],
-    [2.6, 0.62],
-    [2.95, 0.61],
-    [3.3, 0.59],
-    [3.65, 0.56],
-    [4.0, 0.525],
-    [4.3, 0.5],
-    [4.5, 0.5],
-    [4.6, 0.54],
-    [4.7, 0.6],
+    [1.27, 0.74],
+    [1.45, 0.715],
+    [1.65, 0.68],
+    [1.85, 0.64],
+    [2.0, 0.6],
+    [2.12, 0.575],
+    [2.35, 0.545],
+    [2.6, 0.525],
+    [2.95, 0.515],
+    [3.3, 0.5],
+    [3.65, 0.48],
+    [4.0, 0.455],
+    [4.3, 0.44],
+    [4.5, 0.44],
+    [4.6, 0.48],
+    [4.7, 0.55],
     [4.79, 0.4],
   ],
   railZ: [
@@ -241,7 +256,7 @@ export const FASTBACK: CarShape = {
   cowl: 1.27,
   header: 2.1,
   hinge: 3.72,
-  spoiler: 4.5,
+  spoiler: 4.54,
   noseBar: 0.765,
   tailBar: 1.1,
 };
@@ -308,6 +323,9 @@ type Section = (s: number) => Ring;
 function railOf(shape: CarShape) {
   const top = curve(shape.top),
     shoulder = curve(shape.shoulder),
+    waist = curve(shape.waist),
+    tuck = curve(shape.tuck),
+    railW = curve(shape.railW),
     railZ = curve(shape.railZ);
   const [from, to] = [
     shape.railZ[0][0],
@@ -316,17 +334,17 @@ function railOf(shape: CarShape) {
   return (s: number) => {
     const zt = top(s),
       zs = Math.min(shoulder(s), zt - 0.004);
+    const wsh = waist(s) - tuck(s),
+      wr = Math.min(railW(s), wsh - 0.02);
     // Ahead of the screen and behind the glass the rail is only a line on
-    // the bonnet or the tail; between them it lifts into the roof's edge.
+    // the bonnet or the tail, at whatever height their dome has there;
+    // between them it lifts into the roof's edge.
+    const lying = zs + (zt - zs) * (1 - (wr / wsh) ** 2);
     const lifted =
       smooth(clamp((s - from) / 0.1)) * (1 - smooth(clamp((s - to) / 0.08)));
     return {
       lifted,
-      zr: clamp(
-        lerp(zs + 0.55 * (zt - zs), railZ(s), lifted),
-        zs + 0.002,
-        zt - 0.002,
-      ),
+      zr: clamp(lerp(lying, railZ(s), lifted), zs + 0.002, zt - 0.002),
     };
   };
 }
@@ -561,17 +579,58 @@ function seatMesh(width: number): Mesh {
 
 /** The housing over a wheel: half a drum, open towards the outside of the car. */
 function wellMesh(shape: CarShape): Mesh {
-  const r = shape.archR + 0.014;
+  // Kept inside the wing, which slopes in above the wheel.
+  const r = shape.archR + 0.006;
   const drum = turned(
     [
       [0, 0.44],
       [r, 0.44],
-      [r, 0.9],
+      [r, 0.82],
     ],
     20,
     230 * DEG,
   );
   return merge([[drum, compose(rotateX(-90 * DEG), rotateZ(155 * DEG))]]);
+}
+
+/** A door mirror's cap: rounded ahead, flat behind where the glass sits. */
+function capMesh(): Mesh {
+  const shape = new Shape();
+  const rows = 10,
+    columns = 16;
+  const round = (v: number) => Math.sign(v) * Math.abs(v) ** 0.78;
+  for (let r = 0; r <= rows; r++) {
+    const lat = (r / rows - 0.5) * Math.PI;
+    for (let c = 0; c < columns; c++) {
+      const lon = (c / columns) * Math.PI * 2;
+      const d: V3 = [
+        Math.cos(lat) * Math.cos(lon),
+        Math.cos(lat) * Math.sin(lon),
+        Math.sin(lat),
+      ];
+      // Taller towards the door, tapering to its outer end.
+      const taper = 1 - 0.22 * Math.max(0, d[1]);
+      shape.vertex(
+        [
+          round(d[0]) * (d[0] > 0 ? 0.088 : 0.04),
+          round(d[1]) * 0.108,
+          round(d[2]) * 0.068 * taper,
+        ],
+        d,
+      );
+    }
+  }
+  for (let r = 0; r < rows; r++)
+    for (let c = 0; c < columns; c++) {
+      const t = (c + 1) % columns;
+      shape.quad(
+        r * columns + c,
+        r * columns + t,
+        (r + 1) * columns + t,
+        (r + 1) * columns + c,
+      );
+    }
+  return shape.smooth().done();
 }
 
 export type CarModel = {
@@ -580,6 +639,8 @@ export type CarModel = {
   wheel: Mesh;
   well: Mesh;
   mirror: Mesh;
+  /** The mirror's arm and glass, which stay dark whatever the paint. */
+  mirrorArm: Mesh;
   seat: Mesh;
   seatSlim: Mesh;
   /** x of the nose in the car's own frame, whose origin is mid-wheelbase on the ground. */
@@ -606,10 +667,19 @@ export function carModel(shape: CarShape = FASTBACK): CarModel {
       well: wellMesh(shape),
       mirror: merge([
         [
-          block(0.17, 0.11, 0.12, 0.048),
-          compose(translate(-0.03, 0.115, -0.02), rotateZ(-14 * DEG)),
+          capMesh(),
+          compose(translate(-0.015, 0.185, 0.04), rotateZ(-10 * DEG)),
         ],
-        [block(0.06, 0.1, 0.03, 0.012), translate(0, 0.035, 0.0)],
+      ]),
+      mirrorArm: merge([
+        [
+          block(0.075, 0.13, 0.036, 0.014),
+          compose(translate(0.005, 0.055, -0.012), rotateZ(-8 * DEG)),
+        ],
+        [
+          block(0.012, 0.17, 0.098, 0.005),
+          compose(translate(-0.06, 0.185, -0.009), rotateZ(-10 * DEG)),
+        ],
       ]),
       seat: seatMesh(0.5),
       seatSlim: seatMesh(0.38),
@@ -638,6 +708,7 @@ export type CarState = {
   mirrors?: number;
   /** 0 shut – 1 fully raised. */
   tailgate?: number;
+  bonnet?: number;
   /** Radians the body squats (+) or dives (−) on its springs. */
   pitch?: number;
 };
@@ -670,7 +741,8 @@ export function carItems(model: CarModel, state: CarState): Item[] {
   const { shape } = model;
   const xray = clamp(state.xray ?? 0),
     clay = state.clay ? 1 : 0,
-    open = clamp(state.tailgate ?? 0);
+    open = clamp(state.tailgate ?? 0),
+    lifted = clamp(state.bonnet ?? 0);
   const body = compose(
     state.at,
     about([0, 0, 0.45], rotateY(-(state.pitch ?? 0))),
@@ -687,19 +759,28 @@ export function carItems(model: CarModel, state: CarState): Item[] {
   };
   const q = (part: number) => [xray, state.lamps ?? 0, state.tail ?? 0, part];
   const items: Item[] = [];
-  if (open > 0.002) {
+  if (open > 0.002 || lifted > 0.002) {
     const hinge = carPoint(
       model,
       shape.hinge,
       0,
       curve(shape.top)(shape.hinge) - 0.03,
     );
+    // The bonnet is hinged along the scuttle, and lifts its nose.
+    const scuttle = shape.cowl - 0.2;
+    const pivot = carPoint(model, scuttle, 0, curve(shape.top)(scuttle));
     items.push(
       { mesh: model.body, at: body, mat: { ...base, q: q(1) } },
       {
         mesh: model.body,
         at: compose(body, about(hinge, rotateY(open * 76 * DEG))),
-        mat: { ...base, q: q(2) },
+        mat: { ...base, q: q(2), faces: "both" as const },
+      },
+      {
+        mesh: model.body,
+        at: compose(body, about(pivot, rotateY(-lifted * 64 * DEG))),
+        // Raised, the bonnet shows its underside to a camera off the nose.
+        mat: { ...base, q: q(3), faces: "both" as const },
       },
     );
   } else items.push({ mesh: model.body, at: body, mat: { ...base, q: q(0) } });
@@ -714,12 +795,14 @@ export function carItems(model: CarModel, state: CarState): Item[] {
     alpha: 1 - xray,
     faces: "inside",
   };
+  // Seen through, the lining is drawn before the shell, which lies over it.
   if (xray < 0.98)
-    items.push({
+    items.unshift({
       mesh: model.body,
       at: compose(body, translate(0, 0, 0.03), scale(0.985, 0.7, 0.955)),
       mat: lining,
       cast: false,
+      under: true,
     });
 
   const wheelMat = {
@@ -737,7 +820,8 @@ export function carItems(model: CarModel, state: CarState): Item[] {
     [shape.rearAxle, false],
   ] as const)
     for (const side of [1, -1]) {
-      const y = side * (shape.track / 2 - shape.tyreW / 2);
+      // The track is measured between the middles of the tyres.
+      const y = (side * shape.track) / 2;
       items.push({
         mesh: model.wheel,
         at: compose(
@@ -749,7 +833,7 @@ export function carItems(model: CarModel, state: CarState): Item[] {
         mat: wheelMat,
       });
       if (xray < 0.98)
-        items.push({
+        items.unshift({
           mesh: model.well,
           at: compose(
             body,
@@ -758,6 +842,7 @@ export function carItems(model: CarModel, state: CarState): Item[] {
           ),
           mat: { ...lining, faces: "both" },
           cast: false,
+          under: true,
         });
     }
 
@@ -771,24 +856,45 @@ export function carItems(model: CarModel, state: CarState): Item[] {
       side * (curve(shape.waist)(at) - curve(shape.tuck)(at) - 0.03),
       curve(shape.shoulder)(at) + 0.02,
     );
-    items.push({
-      mesh: model.mirror,
-      at: compose(
-        body,
-        translate(root[0], root[1], root[2]),
-        rotateZ(side * (1 - out) * 62 * DEG),
-        scale(1, side, 1),
-      ),
-      mat: clay
-        ? { kind: CLAY, color: paint, ghost: xray, faces: "both" }
-        : {
-            kind: GLOSS,
-            color: paint,
-            p: [0.05, 0.3, 0, 0],
-            ghost: xray,
-            faces: "both",
-          },
-    });
+    const swung = compose(
+      body,
+      translate(root[0], root[1], root[2]),
+      rotateZ(side * (1 - out) * 62 * DEG),
+      scale(1, side, 1),
+    );
+    items.push(
+      {
+        mesh: model.mirror,
+        at: swung,
+        mat: clay
+          ? { kind: CLAY, color: paint, ghost: xray, faces: "both" }
+          : {
+              kind: GLOSS,
+              color: paint,
+              p: [0.05, 0.3, 0, 0.16],
+              ghost: xray,
+              faces: "both",
+            },
+      },
+      {
+        mesh: model.mirrorArm,
+        at: swung,
+        mat: clay
+          ? {
+              kind: CLAY,
+              color: [paint[0] * 0.62, paint[1] * 0.62, paint[2] * 0.62],
+              ghost: xray,
+              faces: "both",
+            }
+          : {
+              kind: GLOSS,
+              color: [0.02, 0.021, 0.024],
+              p: [0.06, 0, 0, 0.14],
+              ghost: xray,
+              faces: "both",
+            },
+      },
+    );
   }
   return items;
 }

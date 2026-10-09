@@ -106,6 +106,15 @@ export function auditedFeature(feature: Feature): Feature {
       ),
       source_ids: ["b7_tesla_centres"],
     };
+  if (f.criterion === "bidirectional_v2g" && f.model_id.startsWith("tesla_"))
+    return {
+      ...patch(
+        "Australian home backup availability unconfirmed",
+        "Tesla's October 2026 Powershare support page includes eligible Model 3 and Model Y vehicles in the US and Puerto Rico, paired with Powerwall and compatible charging equipment. It does not establish availability for Australian vehicles or an Australian vehicle-to-grid program.",
+        "not_verified",
+      ),
+      source_ids: ["b7_tesla_powershare", "b7_agl_v2g", "b7_amber_v2g"],
+    };
   if (f.criterion === "driver_alerts" && f.model_id === "jaecoo_j5_ev")
     return {
       ...patch(

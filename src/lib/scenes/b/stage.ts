@@ -151,6 +151,8 @@ export type SceneDef = {
   starts: [number, number, number];
   loop: number;
   still: number;
+  /** The loop's end meets its start exactly, so the plate never clears. */
+  seamless?: boolean;
   moment: (brief: Brief) => Moment;
 };
 
@@ -192,10 +194,10 @@ export function scene(def: SceneDef): ChapterScene {
         1 - ramp(0, SEAM, t),
         ramp(def.loop - SEAM, def.loop, t),
       );
-      if (wash > 0.003) {
+      if (wash > 0.003 && !def.seamless) {
         ctx.setTransform(1, 0, 0, 1, 0, 0);
         ctx.globalAlpha = 1;
-        ctx.fillStyle = css(light.ground, wash);
+        ctx.fillStyle = css(DAYLIGHT.ground, wash);
         ctx.fillRect(0, 0, width, height);
       }
       let beat = 0;
