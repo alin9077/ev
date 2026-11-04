@@ -1,0 +1,202 @@
+{
+  "schemaVersion": "roadmark101-rebuilt.final-static-measurement-review.v1",
+  "decision": "GO_FOR_RAW_INITIAL_ROUTE_ARTIFACT_SIZE_COMPARISON_ONLY",
+  "blockingFindings": [],
+  "measurementResult": {
+    "path": "roadmark-measurement101/static-route-comparison.json",
+    "bytes": 8201,
+    "sha256": "ac5f7861e7a9502e283f999dd448b4001f685ae173f9face0f1ca488b3f84da3"
+  },
+  "reviewedMeasurementScript": {
+    "path": "roadmark-measurement101/measure_route_assets.py",
+    "bytes": 2433,
+    "sha256": "2ed9277d4f47ba881cf4e9e196bbbdbdc0975e2791d630d8f542dd0c247599da"
+  },
+  "comparisonRecomputed": {
+    "modernJS": {
+      "before": 1815511,
+      "after": 886228,
+      "reductionBytes": 929283,
+      "reductionPercent": 51.18575431379926
+    },
+    "css": {
+      "before": 88013,
+      "after": 88013,
+      "reductionBytes": 0,
+      "reductionPercent": 0.0
+    },
+    "initialModernDocumentAssets": {
+      "before": 2004450,
+      "after": 1075167,
+      "reductionBytes": 929283,
+      "reductionPercent": 46.360996782159695
+    }
+  },
+  "routeAssetChecks": {
+    "before": {
+      "buildID": "T7Eu_1zdzMaYbEyQjlV-X",
+      "html": {
+        "path": "roadmark-measurement101/baseline100/roadmark/.next/server/app/market.html",
+        "bytes": 100926,
+        "sha256": "395e657c3ca20940091c48b25e244f16089cc7ba29cef00d4768ccfbf04e9e47"
+      },
+      "assetGroups": {
+        "modernJS": {
+          "files": 9,
+          "bytes": 1815511,
+          "allAssetPinsMatch": true
+        },
+        "legacyJS": {
+          "files": 1,
+          "bytes": 112594,
+          "allAssetPinsMatch": true
+        },
+        "css": {
+          "files": 1,
+          "bytes": 88013,
+          "allAssetPinsMatch": true
+        }
+      },
+      "noQueryOrFragmentAliases": true,
+      "allScriptPreloadsAlreadyIncluded": true,
+      "scriptPreloads": [
+        "/_next/static/chunks/0iner2fvyfs3r.js"
+      ],
+      "initialModernDocumentAssetsRawBytes": 2004450
+    },
+    "after": {
+      "buildID": "oWIsGbFiaYgzVUEyU5Zrg",
+      "html": {
+        "path": "roadmark-work/roadmark/.next/server/app/market.html",
+        "bytes": 100926,
+        "sha256": "79f02a6ac3b36faa175d62e1f1116e9730a3463d3057ca42350bf9eb33d8f79a"
+      },
+      "assetGroups": {
+        "modernJS": {
+          "files": 9,
+          "bytes": 886228,
+          "allAssetPinsMatch": true
+        },
+        "legacyJS": {
+          "files": 1,
+          "bytes": 112594,
+          "allAssetPinsMatch": true
+        },
+        "css": {
+          "files": 1,
+          "bytes": 88013,
+          "allAssetPinsMatch": true
+        }
+      },
+      "noQueryOrFragmentAliases": true,
+      "allScriptPreloadsAlreadyIncluded": true,
+      "scriptPreloads": [
+        "/_next/static/chunks/0iner2fvyfs3r.js"
+      ],
+      "initialModernDocumentAssetsRawBytes": 1075167
+    }
+  },
+  "sourcePostBuildChecks": [
+    {
+      "label": "baseline100",
+      "map": {
+        "path": "roadmark-rebuild101/baseline-inputs.json",
+        "bytes": 184815,
+        "sha256": "39caa8ae30cf2c6bc09026d0dd87b6fd42811fd8ddb2d632c5d3d18092818225"
+      },
+      "entriesVerified": 1678,
+      "allExact": true
+    },
+    {
+      "label": "current101Authored",
+      "map": {
+        "path": "roadmark-rebuild101/final-authored-inputs.json",
+        "bytes": 185459,
+        "sha256": "6aad76783cc1787f64667b4fb6ef1fd71e7321c6e10ce35cc7f78441716362d5"
+      },
+      "entriesVerified": 1684,
+      "allExact": true
+    },
+    {
+      "label": "current101QA",
+      "map": {
+        "path": "roadmark-rebuild101/qa-expected-inputs.json",
+        "bytes": 356770,
+        "sha256": "0777404050e976a91d2e87e1cb8e64c78d51cffc075e709abbc530cd341bf8aa"
+      },
+      "entriesVerified": 2813,
+      "allExact": true
+    },
+    {
+      "label": "baseline100EntireRestoredArchivePayload",
+      "manifest": {
+        "path": "roadmark-measurement101/baseline100/roadmark/CHECKPOINT-SOURCE-MANIFEST.json",
+        "bytes": 586143,
+        "sha256": "b1155c2b6a2c18f10733215a52758cc17ffe200a12049a49df572037c39a8f55"
+      },
+      "entriesVerified": 2816,
+      "allExact": true
+    }
+  ],
+  "currentPreviousAssetPinsStillExact": 15,
+  "currentQABuildAndAliasHashByteMtimeSealsStillExact": 8,
+  "dependencyParity": {
+    "rootReceipt": {
+      "path": "roadmark-measurement101/dependency-parity.json",
+      "bytes": 251,
+      "sha256": "3a5bae5ccfd518489f481aef6d7e8303f06e06e8c5bff982f717a9d529dad71d"
+    },
+    "independentPostBuildFileAndLinkComparisonEqual": true,
+    "entries": 35730,
+    "files": 34324,
+    "links": 1406,
+    "receiptCanonicalDigestNotRecomputedBecauseItsSerializationRecipeIsUnspecified": true
+  },
+  "baselineBuildEvidence": [
+    {
+      "path": "roadmark-measurement101/baseline-build-result.json",
+      "bytes": 991,
+      "sha256": "39ed09d8d0fc0b13270827989f968e3278d77beb9f772730b3ea50c11df26b66"
+    },
+    {
+      "path": "roadmark-measurement101/baseline-build-external-terminal.json",
+      "bytes": 1087,
+      "sha256": "2a29d254c92f85b3083d798d4403f0b78da7ff1a3d7f4eb84fc09a378e6bbb5f"
+    },
+    {
+      "path": "roadmark-measurement101/baseline-build-start.json",
+      "bytes": 663,
+      "sha256": "d2a426ce811384787d0da9f641d1c188b596bf56ecb637cce93017b17c535538"
+    },
+    {
+      "path": "roadmark-measurement101/baseline-build.stdout.log",
+      "bytes": 2193,
+      "sha256": "b77630699d59f4cb213fbb2d986cbbbdc9a9f8a4763d7b77f63a50b305d9c2f7"
+    },
+    {
+      "path": "roadmark-measurement101/baseline-build.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "method": "Independently read/parse generated HTML and hash referenced files; nine unique modern external JS resources per build, one stylesheet, separate noModule fallback. Raw artifact bytes; inline Flight stays in HTML only. No app/build/measurement-script execution by reviewer.",
+  "interpretation": [
+    "Initial modernJS raw bytes fall1815511\u2192886228,929283B or51.18575431379926%.",
+    "HTML+initialmodernJS+CSS raw bytes fall2004450\u21921075167,929283B or46.360996782159695%.",
+    "CSS raw bytes88013 and HTML length100926 are unchanged. HTML SHA256 differs, so equal length is not byte identity.",
+    "The changed market-associated JS chunk falls1325478\u2192396195B; eight other modernJS files have identical hashes/bytes.",
+    "The112594B noModule legacy chunk is byte-identical and excluded from modern totals.",
+    "Before is freshly rebuilt exact100 source using copied current dependencies; this is not the original historic100 build."
+  ],
+  "notMeasured": [
+    "HTTP transfer bytes or compression",
+    "request/prefetch workload",
+    "browser consumption or cache state",
+    "async chunk graph",
+    "paint,parse,hydration,speed or memory",
+    "physical-phone performance"
+  ],
+  "lost101ResultDisposition": "Earlier lost-VM31.7% request-body result is unavailable historical context with a different measurement basis; it is not reused, reconciled numerically or offered as proof for this rebuilt101.",
+  "rootPerformanceAcceptance": null,
+  "scope": "Independent static evidence review only. Root retains actual measurement execution terminal separately."
+}

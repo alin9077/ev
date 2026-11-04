@@ -1,0 +1,159 @@
+{
+  "checkedAt": "2026-10-10",
+  "appFilesEdited": false,
+  "completeAustralianMarketAudit": false,
+  "artifacts": [
+    {
+      "artifact": "/workspace/scratch/586427eef9f2/roadmark-research/byd-remaining-evidence.json",
+      "sha256": "4db561950bc63b409667f830a6420957a8570c088bdc0499ce999e0f1748ae46",
+      "records": 8,
+      "technicalFactRows": 201,
+      "equipmentFactRows": 167,
+      "acceptedNewStockAds": 6,
+      "sources": 31,
+      "sourceHashesChecked": 31,
+      "textHashesChecked": 31,
+      "evidenceReferencesChecked": 408,
+      "errors": [],
+      "passed": true,
+      "recommendedAction": {
+        "action": "refresh_existing_only",
+        "scope": "8 existing rows: ATTO 3 EVO Dynamic/Premium, legacy ATTO 3 Essential/Premium, ATTO 2 Dynamic/Premium, SEALION 7 Premium/Performance",
+        "holds": [
+          "Legacy Premium exact ads do not establish EVO generation",
+          "Current formal MY not established merely by brochure filename/date",
+          "EVO specific NEW advertisement remains unverified"
+        ]
+      }
+    },
+    {
+      "artifact": "/workspace/scratch/586427eef9f2/roadmark-research/mg-remaining-evidence.json",
+      "sha256": "977a3dff5d051f14b306ac7ee33076044c4cc47d52fd8adc16d77a12bf37dfb5",
+      "records": 12,
+      "technicalFactRows": 300,
+      "equipmentFactRows": 204,
+      "acceptedNewStockAds": 10,
+      "sources": 44,
+      "sourceHashesChecked": 35,
+      "textHashesChecked": 25,
+      "evidenceReferencesChecked": 611,
+      "errors": [],
+      "passed": true,
+      "recommendedAction": {
+        "action": "add_current_configurations_with_field_holds",
+        "scope": "12 current MG/IM configurations: MGS5, MGS6, Cyberster, IM5, IM6",
+        "holds": [
+          "MGS5/Cyberster current page MY26 versus linked MY25 technical scope",
+          "IM5/IM6 brochure MY25 is distinct from 2026 build/stock identity",
+          "MGS6 RWD acceleration and frunk conflict",
+          "Preserve both current listing and NEW advertisement statuses separately"
+        ]
+      }
+    },
+    {
+      "artifact": "/workspace/scratch/586427eef9f2/roadmark-research/mg-remaining-residual-evidence.json",
+      "sha256": "7e780816d5c796cf3d397aeabcec42d2073d6ce6464ee53fb7c515d3df0e3b54",
+      "records": 10,
+      "technicalFactRows": 245,
+      "equipmentFactRows": 0,
+      "acceptedNewStockAds": 0,
+      "sources": 20,
+      "sourceHashesChecked": 20,
+      "textHashesChecked": 0,
+      "evidenceReferencesChecked": 384,
+      "errors": [],
+      "passed": true,
+      "technicalFactRowsLabel": "Combined technical/equipment facts in historical manufacturer epochs, not all eligible additions",
+      "conditionalOrEpochUnresolvedNewAds": 6,
+      "recommendedAction": {
+        "action": "preserve_residual_candidates_hold_technical_epoch_joins",
+        "scope": "Historical manufacturer epochs are reference-only until exact-unit technical epoch is established; Portside MY25 Essence62 is NEW but not proven125kW",
+        "holds": [
+          "Portside G10095 MY25/Essence62 does not distinguish historical125kW from current150kW because both brochures printMY25; no build breakpoint, power field or VIN build sheet",
+          "Registered units labelled NEW are not proved unregistered new",
+          "Cyberster same-VIN MY24.5/MY25 dealer ambiguity",
+          "No current factory order inference from residual advertisements"
+        ]
+      }
+    },
+    {
+      "artifact": "/workspace/scratch/586427eef9f2/roadmark-research/leapmotor-evidence.json",
+      "sha256": "0bc0cfc07318b6e31318474a0fe511967520e977b54ec08fbdfde3fce4cfb765",
+      "records": 10,
+      "technicalFactRows": 239,
+      "equipmentFactRows": 199,
+      "acceptedNewStockAds": 10,
+      "sources": 50,
+      "sourceHashesChecked": 46,
+      "textHashesChecked": 46,
+      "evidenceReferencesChecked": 476,
+      "errors": [],
+      "passed": true,
+      "recommendedAction": {
+        "action": "add_six_current_and_one_residual_with_separate_holds",
+        "scope": "Current B05 MY26 Style/Design LR, B10 MY26 Style/Design LR, C10 Style69.9/Design LR81.9; residual C10 MY25 Design69.9",
+        "holds": [
+          "Do not put B03X two trims into immediately available ranking: announced for November",
+          "AWD Sports+ new-stock/order status and torque conflict unresolved",
+          "Current C10 June guide no printed MY; dealer MY26 label remains unit-specific",
+          "B05/B10 Style exact NEW advertisements unverified in examined direct sources"
+        ]
+      }
+    },
+    {
+      "artifact": "/workspace/scratch/586427eef9f2/roadmark-research/deepal-evidence.json",
+      "sha256": "aa59e9b63de72ce04b17455313339b4ff431768b7dce981bbcc998bb9b153253",
+      "records": 3,
+      "technicalFactRows": 114,
+      "equipmentFactRows": 140,
+      "acceptedNewStockAds": 3,
+      "sources": 18,
+      "sourceHashesChecked": 16,
+      "textHashesChecked": 15,
+      "evidenceReferencesChecked": 290,
+      "errors": [],
+      "passed": true,
+      "recommendedAction": {
+        "action": "add_three_current_configurations",
+        "scope": "S07 RWD, E07 RWD, E07 AWD Performance",
+        "holds": [
+          "Document technical scope S07 MY24 and E07 MY25 does not prove every current delivered VIN epoch",
+          "E07 delivered-build child-anchor recall applicability unverified",
+          "E07 AC charging time conflicts",
+          "S05 remains register-interest lead"
+        ]
+      }
+    },
+    {
+      "artifact": "/workspace/scratch/586427eef9f2/roadmark-research/omoda-jaecoo-evidence.json",
+      "sha256": "c36969258e4e71bc9d1665353ade268172de22a086098f75dc2d288a563e00cb",
+      "records": 4,
+      "technicalFactRows": 171,
+      "equipmentFactRows": 199,
+      "acceptedNewStockAds": 8,
+      "sources": 31,
+      "sourceHashesChecked": 29,
+      "textHashesChecked": 6,
+      "evidenceReferencesChecked": 400,
+      "errors": [],
+      "passed": true,
+      "recommendedAction": {
+        "action": "refresh_J5_add_E5_MY26_and_qualify_residuals",
+        "scope": "Refresh existing J5 EV Summit; add Chery E5 Ultimate MY26; qualified stock-only MY25.5 Urban and Ultimate",
+        "holds": [
+          "MY25.5 dealer year/model-year ambiguity must be visible or hold record",
+          "MY26 portable charging cable conflict",
+          "Do not infer unsupported Chery DC peak or braked towing",
+          "MY27 coming soon; legacy BX/EX current NEW stock unverified"
+        ]
+      }
+    }
+  ],
+  "passed": true,
+  "boundaries": [
+    "Current exact manufacturer configuration != factory order acceptance != specific NEW dealer advertisement != physically available stock",
+    "Formal manufacturer model year, brochure date, production/build year and dealer stock model-year labels are preserved separately",
+    "No generic dealer specifications imported into exact-trim technical or equipment facts",
+    "Geely/Zeekr/XPENG separate audit is owned by parent and excluded from these totals"
+  ]
+}

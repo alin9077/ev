@@ -1,0 +1,249 @@
+{
+  "status": "STATIC_CANDIDATE_ONLY_NOT_APPLIED_NOT_EXECUTED",
+  "checkpoint": 102,
+  "predecessor": 101,
+  "applicationRoot": "roadmark-work/roadmark",
+  "candidateFilesRoot": "files",
+  "fullPreimagesRoot": "preimages",
+  "modifiedExistingCount": 11,
+  "introducedCount": 7,
+  "totalApplicationPaths": 18,
+  "baselineAuthoredMap": {
+    "path": "roadmark-rebuild101/final-authored-inputs.json",
+    "bytes": 185459,
+    "sha256": "6aad76783cc1787f64667b4fb6ef1fd71e7321c6e10ce35cc7f78441716362d5",
+    "entries": 1684,
+    "allEntriesStillExact": true
+  },
+  "plan": {
+    "path": "roadmark-research/trike-integration-plan-2026-10-12/PLAN.md",
+    "bytes": 26866,
+    "sha256": "ba2c39a5b0656643b0590417a0dbfa38c9197a4e40c83b09d80b8ced4eb98592"
+  },
+  "files": [
+    {
+      "path": "data/market-inventory-2026-10-10.json",
+      "operation": "modify",
+      "before": {
+        "bytes": 1653304,
+        "sha256": "2469610f9bea19221ed99483b01ca23ca4f9bb62356a873398e9895c2eb838ac"
+      },
+      "after": {
+        "bytes": 1675100,
+        "sha256": "a3a08a7d7dd5abd88137711e9897a27c5fbfbe3ea51ed07a650b80afffc4ae2f"
+      }
+    },
+    {
+      "path": "data/market-road-trikes-evidence-2026-10-12.json",
+      "operation": "introduce",
+      "before": null,
+      "after": {
+        "bytes": 45820,
+        "sha256": "d3a3bc0d1aafbfbc5edb3849b0f4b6d05e152972f2a089ab8e0204ba18311cf4"
+      }
+    },
+    {
+      "path": "data/market-view.generated.json",
+      "operation": "modify",
+      "before": {
+        "bytes": 446265,
+        "sha256": "e9324e71479402b0e8d3c2e832c6cc0ed6b4be4f0097b6603214474804faed6e"
+      },
+      "after": {
+        "bytes": 449469,
+        "sha256": "9a3dd02a2d4f1e115d697d022e400696fd835e543ddb09662b2afc6b6c85291f"
+      }
+    },
+    {
+      "path": "docs/TRIKE_MARKET_INTEGRATION_2026-10-12.md",
+      "operation": "introduce",
+      "before": null,
+      "after": {
+        "bytes": 4647,
+        "sha256": "eb51219cf99d92ee928269ac0dc0cbd9723e891dbefbbe5149273c1d24cac8b9"
+      }
+    },
+    {
+      "path": "src/components/market-audit.tsx",
+      "operation": "modify",
+      "before": {
+        "bytes": 8464,
+        "sha256": "d2f3999b1e3099e1026aa67e302fd4494a75d19642a49a4bd639f48ebe7024c9"
+      },
+      "after": {
+        "bytes": 8483,
+        "sha256": "9a0b089af4d6330d0098f4648a4d7498299ea4b494c20b6b07786c2e61cf47d9"
+      }
+    },
+    {
+      "path": "tests/checkpoint100-market.test.ts",
+      "operation": "modify",
+      "before": {
+        "bytes": 10000,
+        "sha256": "6775f4db0d4f78753527e266634d25aa1a10339489f25fa89b7daa002319fd78"
+      },
+      "after": {
+        "bytes": 10256,
+        "sha256": "38d81bc39d2cbc0e16200ee3320fdd160a9df9fa6f7592bfa8ada90d92528400"
+      }
+    },
+    {
+      "path": "tests/checkpoint102-history.test.ts",
+      "operation": "introduce",
+      "before": null,
+      "after": {
+        "bytes": 9307,
+        "sha256": "2dcda34413b343a4d524524747fedee58bcedfd10cf7a80dd1c92eb6d29d05fb"
+      }
+    },
+    {
+      "path": "tests/checkpoint102-trikes.test.ts",
+      "operation": "introduce",
+      "before": null,
+      "after": {
+        "bytes": 10463,
+        "sha256": "232e7bda4bd7d8d23e942a2893685381ae6f58a82283d032cc0a39bef3aef553"
+      }
+    },
+    {
+      "path": "tests/checkpoint96-source-history.test.ts",
+      "operation": "modify",
+      "before": {
+        "bytes": 8543,
+        "sha256": "75b933afece18645247b9b3f43ccdfea937c887db177d1b246ef6ddf53958a5b"
+      },
+      "after": {
+        "bytes": 8666,
+        "sha256": "d953bc27c8e076991a7af79c285c6fee52582511c63fdea5045b8d174d4b47f3"
+      }
+    },
+    {
+      "path": "tests/checkpoint97-source-history.test.ts",
+      "operation": "modify",
+      "before": {
+        "bytes": 7195,
+        "sha256": "1eaefb9bba7189a38a3f3718d0ca304bad2386aa86df20625d9a89a81b64dc23"
+      },
+      "after": {
+        "bytes": 7318,
+        "sha256": "2784726df9e4cb4746de1332c8c575060569c9a641eb4051ddfa2ced2f893a94"
+      }
+    },
+    {
+      "path": "tests/checkpoint99-mazda.test.ts",
+      "operation": "modify",
+      "before": {
+        "bytes": 14149,
+        "sha256": "ee528d984c33868d837b32884b7b13e132ec30615b6deaca3e3ae4b7da41d7e2"
+      },
+      "after": {
+        "bytes": 14442,
+        "sha256": "c98e36dfda9dbc8825edb77b1c7012eaeb54cba36df8499393948bc1d1d5dca1"
+      }
+    },
+    {
+      "path": "tests/fixtures/checkpoint102-trikes.json",
+      "operation": "introduce",
+      "before": null,
+      "after": {
+        "bytes": 575868,
+        "sha256": "6ab1848a802a75241cbd13834d24d3ac3cc63260435453c5f0087bd0ad164bc8"
+      }
+    },
+    {
+      "path": "tests/helpers/checkpoint102-market-history.ts",
+      "operation": "introduce",
+      "before": null,
+      "after": {
+        "bytes": 4005,
+        "sha256": "e4685f141e8efbe0649c82595249a5d60c1112a3239c5ea3b84b26a3321e2c59"
+      }
+    },
+    {
+      "path": "tests/helpers/checkpoint102-source-history.ts",
+      "operation": "introduce",
+      "before": null,
+      "after": {
+        "bytes": 3165,
+        "sha256": "b1010d8a9f5cd4720b6849592938923fc05ea511ec99d4a5da86dd129426615c"
+      }
+    },
+    {
+      "path": "tests/helpers/checkpoint91-history.ts",
+      "operation": "modify",
+      "before": {
+        "bytes": 2994,
+        "sha256": "092dc014b751033c0e6544f84dd3400224037ca3cccce64cb9bfe0566ac545e9"
+      },
+      "after": {
+        "bytes": 3109,
+        "sha256": "98b691d5048ec88976a4252209f68ef9d7b40681c7d150ec6e10d5b9a32bff0e"
+      }
+    },
+    {
+      "path": "tests/helpers/checkpoint99-history.ts",
+      "operation": "modify",
+      "before": {
+        "bytes": 7157,
+        "sha256": "4493739f161f9838ffd571f85aff34daa97b032d9e87c83b9bd5d20b36d9e1ed"
+      },
+      "after": {
+        "bytes": 7534,
+        "sha256": "3ef256b04e8051a46faec8ff3b58aa1f08ab87762c4b542a92e612e0dee1ddbd"
+      }
+    },
+    {
+      "path": "tests/market-audit.test.ts",
+      "operation": "modify",
+      "before": {
+        "bytes": 1981,
+        "sha256": "0f4968aa31bf6bac1136a5cf89091c59caba77494311c28553db4c504c8af0a6"
+      },
+      "after": {
+        "bytes": 1981,
+        "sha256": "f07701e9e2be209261949adfc0ec985cd732c380015f776c4ca1973cce4b8df1"
+      }
+    },
+    {
+      "path": "tests/market-view.test.ts",
+      "operation": "modify",
+      "before": {
+        "bytes": 4191,
+        "sha256": "780a48f76359be6c97fe058e651b51a4f59a3a01bbf4fa8b8bfe980940b5e242"
+      },
+      "after": {
+        "bytes": 4314,
+        "sha256": "b31097edbed15601a37a0a1c031a3d00cd8e4afa1a743063532b59f9932805ee"
+      }
+    }
+  ],
+  "bootstrapCycleExclusions": [
+    "tests/fixtures/checkpoint102-trikes.json",
+    "tests/helpers/checkpoint102-market-history.ts",
+    "tests/helpers/checkpoint102-source-history.ts"
+  ],
+  "externalSealRequirement": "Root must compare every candidate after identity and every baseline preimage before applying or executing. This external manifest, separately reviewed, binds all fixtures, helpers and tests including their self-reference exclusions.",
+  "projectionAuthoring": "Static Python JSON assembly of the exact existing14-record/5-top-field contract; original projection reproduced byte-for-byte as a serializer check. Generator never executed. Root must generate/check later.",
+  "executionNotPerformed": [
+    "app imports",
+    "application execution",
+    "generator",
+    "tests",
+    "typecheck",
+    "lint",
+    "validation",
+    "build",
+    "portable build",
+    "browser",
+    "Git",
+    "Codex tasks",
+    "uploads"
+  ],
+  "expectedLaterGeneratedChanges": [
+    "index.html",
+    "index-b.html",
+    "public/index.html",
+    "public/index-b.html",
+    ".next production artifacts"
+  ]
+}

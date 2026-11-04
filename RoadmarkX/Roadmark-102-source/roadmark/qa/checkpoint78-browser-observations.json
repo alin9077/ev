@@ -1,0 +1,115 @@
+{
+  "recordedAtUTC": "2026-10-11T12:13:01.403944+00:00",
+  "environment": "dot own VM Chrome, loopback portable preview, ordinary window resize and browser zoom",
+  "screenshotsSaved": false,
+  "realPhonesTested": false,
+  "releaseApproved": false,
+  "viewports": [
+    {
+      "widthCSS": 1180,
+      "heightCSS": 757,
+      "zoom": "100%"
+    },
+    {
+      "widthCSS": 400,
+      "heightCSS": 606,
+      "zoom": "125%"
+    },
+    {
+      "widthCSS": 320,
+      "heightCSS": 432,
+      "zoom": "175%"
+    }
+  ],
+  "permission": {
+    "approvedAtUTC": "2026-10-11T10:54:38Z",
+    "messageId": "Sentinel_b22ab13f59108191bee4569928e92c09",
+    "browserOpenedAtUTC": "2026-10-11T10:55:25Z"
+  },
+  "source77Checks": [
+    {
+      "area": "Original hero",
+      "result": "Desktop and narrow screenshots visually compared with original baseline. Nine original selling points precede discovery. All nine links reached visible focused targets below sticky controls."
+    },
+    {
+      "area": "Discovery",
+      "result": "HiLux search, class no-results, reset, show12more, retained selection, three-selection limit and fourth-selection refusal verified."
+    },
+    {
+      "area": "Comparison",
+      "result": "Baseline plus selected challenger visible; toggle changes correct range and price; incompatible NEDC/WLTP contexts remain qualified. Copy URL, local saved shortlist, Back navigation and picker search/Escape/focus restoration verified."
+    },
+    {
+      "area": "Comparison accessibility defect",
+      "result": "AX exposed third vehicle header despite two visible cell columns. Existing explicit header IDs remained correct; mislabelling not established. Source78 header class fix awaits final browser recheck."
+    },
+    {
+      "area": "Attributes",
+      "result": "All seven attribute results opened without root overflow. Criteria, incompatible measurement groups, ties, freshness and bounded-shortlist caveats visible. Attribute share URL retained selection."
+    },
+    {
+      "area": "Market",
+      "result": "239 records; H9E New-advertisement details and qualified facts inspected; Lightning unresolved New/VIN/warranty caveats retained. Combined filters no-results and reset verified."
+    },
+    {
+      "area": "Catalogue",
+      "result": "All eight filters set and reset, 342 cards rendered. Source77 root overflow478px at400CSS traced to three Genesis cards and unbroken source caveats."
+    }
+  ],
+  "source78Checks": [
+    {
+      "area": "Catalogue overflow fix",
+      "checkedAtUTC": "2026-10-11T11:14:22Z",
+      "result": "After rebuilding portable and reloading, all342cards remained; document scrollWidth388 at400CSS; no overflowing elements. GV60 search returned2cards."
+    },
+    {
+      "area": "Final full catalogue at400CSS",
+      "checkedAtUTC": "2026-10-11T12:03:48Z",
+      "result": "342cards; root scrollWidth388; zero overflowing main descendants"
+    },
+    {
+      "area": "Mobile comparison headers",
+      "checkedAtUTC": "2026-10-11T12:05:16Z",
+      "result": "At400CSS, baseline HiLux plus active RWD headers and values exposed; inactive Long Range header and cells display:none and absent from AX table. Switching challenger exposes Long Range header and600km and hides RWD. All nine table header/cell groups retain exact ID associations. Root scrollWidth388."
+    },
+    {
+      "area": "Picker keyboard selection",
+      "checkedAtUTC": "2026-10-11T12:07:10Z",
+      "result": "Open focuses Close; searchSealion finds2exacttrims; Enter chooses PerformanceAWD, closesdialog and restoresfocus to Vehicle2 trigger. Three selectedIDs retained in URL with selectedBYDactive."
+    },
+    {
+      "area": "Very narrow comparison and hero",
+      "checkedAtUTC": "2026-10-11T12:10:41Z",
+      "result": "320x432CSS: comparison and originalhero root scrollWidth311. Header descendants outside bounds are intentional clipped 1px accessibility heads, not root overflow. One originalh1 and9reasonlinks remain; allreasons finish at1399CSS before discoveryheading1611CSS. Originalhero screenshot visually inspected."
+    }
+  ],
+  "interruption": {
+    "observedAtUTC": "2026-10-11T11:21:16Z",
+    "result": "Native screenshot shows Chrome Aw Snap error9. Browser protocol timeouts followed prior concurrent test execution. Cause not established; retry after serial QA, do not infer app or memory cause.",
+    "recovery": "Recovered with native Reload at12:03UTC after serial engineering checks; no recurring crash observed during subsequent scoped review; original cause remains unknown"
+  },
+  "notYetVerified": [
+    "Catalogue320CSS title/seating overflow correction",
+    "Complete keyboard focus-cycle/accessibility review",
+    "Print runtime layout; browser Print disabled",
+    "Reduced motion and measured performance",
+    "Modified Playwright e2e assertions",
+    "Actual iPhone Safari and Android Chrome journeys",
+    "Complete changed-screen release review"
+  ],
+  "remainingFindings": [
+    {
+      "area": "Catalogue320CSS",
+      "checkedAtUTC": "2026-10-11T12:12:05Z",
+      "result": "342cards and card-facts containers fit, but rootscrollWidth354 at320CSS. Nine seatingSVGs overflow title rows: fourTrailseeker right328.83, fiveCountrymanElectric right353.59. Current source78 fixes400CSS caveats but does not resolve this separate title/diagram layout. Next mobile pass must fix and recheck."
+    },
+    {
+      "area": "Keyboard focus boundary",
+      "result": "Native dialog lastresult Tab yielded document.activeElement BODY; no underlay control was observed focused. Browserchrome transition versus appfocus issue not established; full forward/backward focus cycle remains inconclusive."
+    },
+    {
+      "area": "Print preview",
+      "result": "AppPrint and nativeCtrlP produced no preview; ownVMChrome menu Print is visibly disabled. Runtimeprint layout not verified; no output printed or saved. Static printCSS regression passed."
+    }
+  ]
+}

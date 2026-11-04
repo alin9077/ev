@@ -1,0 +1,604 @@
+{
+  "title": "Independent Stark market/census static amendment audit",
+  "checkedAtUTC": "2026-10-10T19:08:11.898544+00:00",
+  "passed": true,
+  "decision": "PASS_WITH_NON_BLOCKING_METADATA_CAUTIONS",
+  "scope": "Read-only JSON/static-consumer comparison. No application edits, app imports, browser, network, build, typecheck or runtime/test execution. Only audit files written. Runtime totals corroborated with exact existing proof artifacts plus static candidate deltas; not independently rerun.",
+  "applicationWritten": false,
+  "files": {
+    "roadmark-research/prepare_stark_market_candidate.py": "9236b077c5594d5f26e1b35aa4b0be5703fd434b80248e93d4ea493a00801d6f",
+    "roadmark-research/stark-runtime-candidate/candidate-market-inventory.json": "705fb9c4c50261c8a127f6710cf51919a5e368a2b741bf0b5a0ac3fbc0da05fd",
+    "roadmark-research/stark-runtime-candidate/candidate-motorcycle-census.json": "ddb527e2bc69120f860eaf88df815c39789ff8fbf0e8d88903b52556249ccead",
+    "roadmark-research/stark-runtime-candidate/market-amendment.json": "a6908d6f78341dc0cb7ae36768ba8797ae3f8721f0a5918aecd6a6af4b91ae41",
+    "roadmark-work/roadmark/data/market-inventory-2026-10-10.json": "41df02b379ed7cebf47d41de6e08ed185339b5cb6edc42d8e25e8738152f7a5f",
+    "roadmark-work/roadmark/data/motorcycle-ev-census.json": "c51ba137a9924db8836310c0949b608b40ac63a2413e86df9fc2510008133ed6",
+    "roadmark-research/stark-runtime-candidate/adapter-candidate.json": "0c1af402e78d4ddfee85d392d85caaddddf3f7ad9822ad694f8a40f7ee1e39ab",
+    "roadmark-research/stark-au-integration-readiness-review/capture-freshness-review.json": "6736d1c394e92f6a8e0659b727c3dcfed1775cf3f5f4becdb974ccc477e2f225",
+    "roadmark-research/stark-au-integration-readiness/market-cleanup-worker.json": "ca32d608aaed9e62654feb7342aab4c3df64eea9214123d45f1f4a0703e2d707",
+    "roadmark-research/stark-runtime-candidate/preflight-baseline.json": "bc781badfbfeea051b732fb13702212ba341635f10583539ce8212fa514cf6a9",
+    "roadmark-research/stark-runtime-candidate/candidate-runtime-proof.json": "60ae2bce3dbaca65f98a5afcb220036e42f16f967c05d9d0496c38fce5df6762",
+    "roadmark-research/stark-runtime-candidate/runtime-copy-validation.json": "72df4ae9f52dac037342b21e03ec52354b3cfbd5884fab477988af786b318fed",
+    "roadmark-research/stark-runtime-candidate/runtime-copy-payload.json": "22061bf9bbe07b26d92cde0129725807c41c59bbb4ad7a340c5e014e8609a972",
+    "roadmark-research/stark-runtime-candidate/pre-application-lock.json": "9387460efb8f1aefa1b5ca488458e6d6a333227d52c963222b0d265db59b0f94",
+    "roadmark-research/stark-runtime-candidate/candidate-catalogue-additions.json": "c302687651da67800d1895cc743ec1a4a342baa3c2383abb7709069db0ac50c8",
+    "roadmark-work/roadmark/data/catalogue-additions-2026-10-10.json": "729386711765938a3234e1df910f3a9c75379d42adff9bc13abba74314d42088",
+    "roadmark-work/roadmark/src/components/market-audit.tsx": "137f957d0a7de706eb03a29fa0ac10aa3f9d68ffcadf88286173e58d7b40fff4"
+  },
+  "results": {
+    "market": {
+      "recordCount": 231,
+      "unchangedRows": 229,
+      "changedIds": [
+        "stark-varg-ex",
+        "stark-varg-sm"
+      ],
+      "recomputed": {
+        "recordCount": 231,
+        "namedEntries": 380,
+        "missingNamedEntries": 53,
+        "byOrderStatus": {
+          "listed_unconfirmed": 181,
+          "accepting_orders": 40,
+          "not_current": 4,
+          "preorder": 1,
+          "accepting_order_requests_advertised": 5
+        },
+        "byStockStatus": {
+          "unverified": 165,
+          "new_stock_listed": 66
+        },
+        "byVehicleClass": {
+          "bus": 27,
+          "passenger": 106,
+          "truck": 27,
+          "ute": 13,
+          "van": 19,
+          "motorcycle": 39
+        }
+      },
+      "topLevelChangedKeys": [
+        "counts",
+        "coverageGaps",
+        "detailedCatalogueContext",
+        "historicalAmendedNarratives",
+        "historicalCoverageGaps",
+        "historicalScopeClarification",
+        "notes",
+        "records",
+        "scope",
+        "scopeClarification"
+      ]
+    },
+    "census": {
+      "recordCount": 39,
+      "unchangedRows": 37,
+      "changedIds": [
+        "stark-varg-ex",
+        "stark-varg-sm"
+      ],
+      "recomputed": {
+        "recordCount": 39,
+        "namedEntries": 40,
+        "missingNamedEntries": 12,
+        "byOrderStatus": {
+          "accepting_orders": 22,
+          "listed_unconfirmed": 16,
+          "preorder": 1
+        },
+        "byStockStatus": {
+          "unverified": 35,
+          "new_stock_listed": 4
+        },
+        "byVehicleClass": {
+          "motorcycle": 39
+        }
+      },
+      "topLevelChangedKeys": [
+        "counts",
+        "existingInventoryCheck",
+        "historicalExistingInventoryCheck",
+        "historicalMergeGuidance",
+        "historicalScope",
+        "mergeGuidance",
+        "records",
+        "scope",
+        "sourceGroupMetadataMeaning"
+      ]
+    }
+  },
+  "runtimeProposed": {
+    "records": 321,
+    "families": 136,
+    "effectiveSummaries": 314,
+    "method": "Baseline + four variants/two families/four effective summaries; exact supplied runtime proofs and payload SHA verified."
+  },
+  "checks": [
+    {
+      "check": "market.same_ids_order_no_added_rows",
+      "passed": true
+    },
+    {
+      "check": "market.exactly_two_changed_rows",
+      "passed": true,
+      "details": [
+        "stark-varg-ex",
+        "stark-varg-sm"
+      ]
+    },
+    {
+      "check": "market.unique_ids",
+      "passed": true
+    },
+    {
+      "check": "market.stark-varg-ex.full_previous_record_history",
+      "passed": true
+    },
+    {
+      "check": "market.stark-varg-ex.identity_and_named_trim_count_preserved",
+      "passed": true
+    },
+    {
+      "check": "market.stark-varg-ex.safe_effective_status",
+      "passed": true
+    },
+    {
+      "check": "market.stark-varg-ex.neutral_type_and_attributed_legal_scope",
+      "passed": true
+    },
+    {
+      "check": "market.stark-varg-ex.adapter_and_freshness_hashes",
+      "passed": true
+    },
+    {
+      "check": "market.stark-varg-ex.exact_adapter_configurations",
+      "passed": true
+    },
+    {
+      "check": "market.stark-varg-ex.availability_copied_exactly",
+      "passed": true
+    },
+    {
+      "check": "market.stark-varg-ex.neutral_availability_category_and_timestamp_provenance",
+      "passed": true
+    },
+    {
+      "check": "market.stark-varg-ex.counts_not_physical_units",
+      "passed": true
+    },
+    {
+      "check": "market.stark-varg-ex.ui_fields_static_shapes",
+      "passed": true
+    },
+    {
+      "check": "market.stark-varg-sm.full_previous_record_history",
+      "passed": true
+    },
+    {
+      "check": "market.stark-varg-sm.identity_and_named_trim_count_preserved",
+      "passed": true
+    },
+    {
+      "check": "market.stark-varg-sm.safe_effective_status",
+      "passed": true
+    },
+    {
+      "check": "market.stark-varg-sm.neutral_type_and_attributed_legal_scope",
+      "passed": true
+    },
+    {
+      "check": "market.stark-varg-sm.adapter_and_freshness_hashes",
+      "passed": true
+    },
+    {
+      "check": "market.stark-varg-sm.exact_adapter_configurations",
+      "passed": true
+    },
+    {
+      "check": "market.stark-varg-sm.availability_copied_exactly",
+      "passed": true
+    },
+    {
+      "check": "market.stark-varg-sm.neutral_availability_category_and_timestamp_provenance",
+      "passed": true
+    },
+    {
+      "check": "market.stark-varg-sm.counts_not_physical_units",
+      "passed": true
+    },
+    {
+      "check": "market.stark-varg-sm.ui_fields_static_shapes",
+      "passed": true
+    },
+    {
+      "check": "market.counts.byOrderStatus",
+      "passed": true,
+      "details": {
+        "declared": {
+          "listed_unconfirmed": 181,
+          "accepting_orders": 40,
+          "not_current": 4,
+          "preorder": 1,
+          "accepting_order_requests_advertised": 5
+        },
+        "recomputed": {
+          "listed_unconfirmed": 181,
+          "accepting_orders": 40,
+          "not_current": 4,
+          "preorder": 1,
+          "accepting_order_requests_advertised": 5
+        }
+      }
+    },
+    {
+      "check": "market.counts.consolidatedModelAuditRecords",
+      "passed": true,
+      "details": {
+        "declared": 231,
+        "recomputed": 231
+      }
+    },
+    {
+      "check": "market.counts.byVehicleClass",
+      "passed": true,
+      "details": {
+        "declared": {
+          "bus": 27,
+          "passenger": 106,
+          "truck": 27,
+          "ute": 13,
+          "van": 19,
+          "motorcycle": 39
+        },
+        "recomputed": {
+          "bus": 27,
+          "passenger": 106,
+          "truck": 27,
+          "ute": 13,
+          "van": 19,
+          "motorcycle": 39
+        }
+      }
+    },
+    {
+      "check": "market.counts.namedTrimConfigurationEntries",
+      "passed": true,
+      "details": {
+        "declared": 380,
+        "recomputed": 380
+      }
+    },
+    {
+      "check": "market.counts.exactTrimSetMissingRecords",
+      "passed": true,
+      "details": {
+        "declared": 53,
+        "recomputed": 53
+      }
+    },
+    {
+      "check": "market.counts.newStockListedModelRecords",
+      "passed": true,
+      "details": {
+        "declared": 66,
+        "recomputed": 66
+      }
+    },
+    {
+      "check": "market.counts.unresolvedLeadGroups",
+      "passed": true,
+      "details": {
+        "declared": 152,
+        "recomputed": 152
+      }
+    },
+    {
+      "check": "market.counts.reconciledLeadGroups",
+      "passed": true,
+      "details": {
+        "declared": 11,
+        "recomputed": 11
+      }
+    },
+    {
+      "check": "market.counts.peripheralRecords",
+      "passed": true,
+      "details": {
+        "declared": 5,
+        "recomputed": 5
+      }
+    },
+    {
+      "check": "market.counts.duplicateModelMerges",
+      "passed": true,
+      "details": {
+        "declared": 6,
+        "recomputed": 6
+      }
+    },
+    {
+      "check": "market.amendment_proof_matches",
+      "passed": true
+    },
+    {
+      "check": "market.safe_order_enum_known",
+      "passed": true
+    },
+    {
+      "check": "market.scope_remains_incomplete",
+      "passed": true
+    },
+    {
+      "check": "census.same_ids_order_no_added_rows",
+      "passed": true
+    },
+    {
+      "check": "census.exactly_two_changed_rows",
+      "passed": true,
+      "details": [
+        "stark-varg-ex",
+        "stark-varg-sm"
+      ]
+    },
+    {
+      "check": "census.unique_ids",
+      "passed": true
+    },
+    {
+      "check": "census.stark-varg-ex.full_previous_record_history",
+      "passed": true
+    },
+    {
+      "check": "census.stark-varg-ex.identity_and_named_trim_count_preserved",
+      "passed": true
+    },
+    {
+      "check": "census.stark-varg-ex.safe_effective_status",
+      "passed": true
+    },
+    {
+      "check": "census.stark-varg-ex.neutral_type_and_attributed_legal_scope",
+      "passed": true
+    },
+    {
+      "check": "census.stark-varg-ex.adapter_and_freshness_hashes",
+      "passed": true
+    },
+    {
+      "check": "census.stark-varg-ex.exact_adapter_configurations",
+      "passed": true
+    },
+    {
+      "check": "census.stark-varg-ex.availability_copied_exactly",
+      "passed": true
+    },
+    {
+      "check": "census.stark-varg-ex.neutral_availability_category_and_timestamp_provenance",
+      "passed": true
+    },
+    {
+      "check": "census.stark-varg-ex.counts_not_physical_units",
+      "passed": true
+    },
+    {
+      "check": "census.stark-varg-ex.ui_fields_static_shapes",
+      "passed": true
+    },
+    {
+      "check": "census.stark-varg-sm.full_previous_record_history",
+      "passed": true
+    },
+    {
+      "check": "census.stark-varg-sm.identity_and_named_trim_count_preserved",
+      "passed": true
+    },
+    {
+      "check": "census.stark-varg-sm.safe_effective_status",
+      "passed": true
+    },
+    {
+      "check": "census.stark-varg-sm.neutral_type_and_attributed_legal_scope",
+      "passed": true
+    },
+    {
+      "check": "census.stark-varg-sm.adapter_and_freshness_hashes",
+      "passed": true
+    },
+    {
+      "check": "census.stark-varg-sm.exact_adapter_configurations",
+      "passed": true
+    },
+    {
+      "check": "census.stark-varg-sm.availability_copied_exactly",
+      "passed": true
+    },
+    {
+      "check": "census.stark-varg-sm.neutral_availability_category_and_timestamp_provenance",
+      "passed": true
+    },
+    {
+      "check": "census.stark-varg-sm.counts_not_physical_units",
+      "passed": true
+    },
+    {
+      "check": "census.stark-varg-sm.ui_fields_static_shapes",
+      "passed": true
+    },
+    {
+      "check": "census.counts.byOrderStatus",
+      "passed": true,
+      "details": {
+        "declared": {
+          "accepting_orders": 22,
+          "listed_unconfirmed": 16,
+          "preorder": 1
+        },
+        "recomputed": {
+          "accepting_orders": 22,
+          "listed_unconfirmed": 16,
+          "preorder": 1
+        }
+      }
+    },
+    {
+      "check": "census.counts.modelAuditRecords",
+      "passed": true,
+      "details": {
+        "declared": 39,
+        "recomputed": 39
+      }
+    },
+    {
+      "check": "census.counts.brandsInRecords",
+      "passed": true,
+      "details": {
+        "declared": 18,
+        "recomputed": 18
+      }
+    },
+    {
+      "check": "census.counts.namedConfigurationEntries",
+      "passed": true,
+      "details": {
+        "declared": 40,
+        "recomputed": 40
+      }
+    },
+    {
+      "check": "census.counts.recordsWithoutNamedConfiguration",
+      "passed": true,
+      "details": {
+        "declared": 12,
+        "recomputed": 12
+      }
+    },
+    {
+      "check": "census.counts.byStockStatus",
+      "passed": true,
+      "details": {
+        "declared": {
+          "unverified": 35,
+          "new_stock_listed": 4
+        },
+        "recomputed": {
+          "unverified": 35,
+          "new_stock_listed": 4
+        }
+      }
+    },
+    {
+      "check": "census.counts.byMotorcycleComparisonGroup",
+      "passed": true,
+      "details": {
+        "declared": {
+          "moped": 6,
+          "seated_motor_scooter": 8,
+          "road_motorcycle": 17,
+          "road_enduro_supermoto": 6,
+          "utility_motorcycle": 2
+        },
+        "recomputed": {
+          "moped": 6,
+          "seated_motor_scooter": 8,
+          "road_motorcycle": 17,
+          "road_enduro_supermoto": 6,
+          "utility_motorcycle": 2
+        }
+      }
+    },
+    {
+      "check": "census.counts.unresolvedLeadGroups",
+      "passed": true,
+      "details": {
+        "declared": 63,
+        "recomputed": 63
+      }
+    },
+    {
+      "check": "census.counts.excludedGroups",
+      "passed": true,
+      "details": {
+        "declared": 12,
+        "recomputed": 12
+      }
+    },
+    {
+      "check": "census.amendment_proof_matches",
+      "passed": true
+    },
+    {
+      "check": "census.safe_order_enum_known",
+      "passed": true
+    },
+    {
+      "check": "census.scope_remains_incomplete",
+      "passed": true
+    },
+    {
+      "check": "stark-varg-ex.market_census_effective_rows_equal",
+      "passed": true
+    },
+    {
+      "check": "stark-varg-sm.market_census_effective_rows_equal",
+      "passed": true
+    },
+    {
+      "check": "catalogue_static_delta",
+      "passed": true
+    },
+    {
+      "check": "runtime_count_proof_consistency",
+      "passed": true
+    },
+    {
+      "check": "runtime_proofs_bind_exact_adapter_payload",
+      "passed": true
+    },
+    {
+      "check": "detailed_context_matches_runtime_proof",
+      "passed": true
+    },
+    {
+      "check": "application_lock_unchanged",
+      "passed": true
+    },
+    {
+      "check": "market_census_records_not_reappended",
+      "passed": true
+    },
+    {
+      "check": "historical_baselines_preserved",
+      "passed": true
+    },
+    {
+      "check": "active_market_stale_narratives_removed",
+      "passed": true
+    },
+    {
+      "check": "current_legal_scope_is_attributed",
+      "passed": true
+    },
+    {
+      "check": "source_metadata_is_historical",
+      "passed": true
+    },
+    {
+      "check": "all_audited_inputs_unchanged_during_audit",
+      "passed": true
+    }
+  ],
+  "warnings": [
+    {
+      "code": "existing_hardcoded_legal_wording",
+      "file": "roadmark-work/roadmark/src/components/market-audit.tsx",
+      "line": 64,
+      "value": "Road-registered motorcycles and scooters are included; their full",
+      "impact": "Existing header uses stronger road-registration wording than the corrected data scope. Changing it needs an authorized app edit; no source code was edited in this audit."
+    },
+    {
+      "code": "historical_source_artifact_hash",
+      "file": "market",
+      "path": "/sourceArtifacts/4",
+      "impact": "motorcycle-ev-census.json hash remains the unchanged pre-amendment source snapshot. Preserve it as historical provenance rather than replacing or presenting it as the staged census hash; current candidate hash is in this audit manifest."
+    }
+  ]
+}

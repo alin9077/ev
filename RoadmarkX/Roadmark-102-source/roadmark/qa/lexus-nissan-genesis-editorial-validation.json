@@ -1,0 +1,41 @@
+{
+  "status": "passed_actual_shared_reader_scope",
+  "passed": true,
+  "scope": "Read-only catalogue()/research()/effectiveFeatures() for 13 exact mapped configurations",
+  "snapshotPath": "/workspace/scratch/586427eef9f2/roadmark-research/lexus-nissan-genesis-effective-snapshot.json",
+  "snapshotSha256": "84d7b2251d8aea717f158493530bef00c4476b7f2821fe3b9eed55f755f44a75",
+  "valueOrIdentityErrors": [],
+  "canonicalNullNormalizations": [
+    "ES350e/ES500e dc_quoted_soc_window: contradictory candidate string retained in evidence, canonical value held null."
+  ],
+  "auditOnlySourceLessNulls": 4,
+  "runtimeValidation": {
+    "passed": true,
+    "summaryCount": 13,
+    "clauseCount": 26,
+    "dependencyCount": 150,
+    "mutationCount": 1809,
+    "checks": [
+      "The actual shared reader renders all 13 records and 26 clauses from the current catalogue(), research().sources and effectiveFeatures().",
+      "All 150 executable guards exactly match current effective facts or formal-MY properties, including snapshot source URL/date/eligibility metadata.",
+      "Each fact value/status/unit/basis/comparison basis/market/scope/qualification/condition/date/issue/source-membership mutation suppresses exactly the dependent clauses; formal-MY changes also fail closed.",
+      "Both shared-reader stages suppress affected copy for missing, stale, held, conflicted or access-limited sources.",
+      "Current-record eligibility/revision changes suppress the record. Price changes and promotion expiry do not suppress these price-independent technical clauses.",
+      "Technical copy fails closed after the 30-day evidence freshness window.",
+      "Scoped regression checks preserve all five Lexus null formal MY/10\u201380/usable-capacity values, Advance+ standard/option split, all listed_unconfirmed order states, Nissan campaign versus MSRP separation, Magma conflict holds/425 km claim, GV60 V2L hold and exact system-power values."
+    ],
+    "limitations": [
+      "These reader tests validate guarded publication behaviour in memory, not a deployed UI or publication of the proposal. No app files were edited.",
+      "Exact source URL/publication-date and full expected identity snapshots are audit comparisons. The shared reader enforces source eligibility/freshness plus individual fact guards and formal MY, not every retained audit metadata field.",
+      "Four source-less Genesis dc_peak_kw nulls are explicit audit-only holds. Their station/vehicle distinction is guarded through sourced dc_time_charger_kw facts; the null fields are separately regression checked, not executable buyer-copy dependencies.",
+      "The two ES SOC-window candidate strings are intentionally normalized to null; original contradictory candidate strings and locators are preserved in each dependency\u2019s evidenceValue/sourceEvidence."
+    ]
+  },
+  "publicationStatus": "not_integrated_into_buyer_copy_pack_or_deployed_by_this_worker",
+  "sourceSnapshotHashChecks": 70,
+  "lastSnapshotCapturedAt": "2026-10-10T09:22:53.382Z",
+  "equipmentQualificationRefresh": {
+    "changedGuardCount": 37,
+    "reason": "Parent removed generic unknown-value boilerplate and restricted active-supervision wording to assistance fields; claim values, status, basis and source IDs unchanged."
+  }
+}

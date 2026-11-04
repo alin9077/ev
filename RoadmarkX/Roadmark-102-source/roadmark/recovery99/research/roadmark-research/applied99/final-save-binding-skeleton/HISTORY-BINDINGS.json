@@ -1,0 +1,451 @@
+{
+  "schemaVersion": "roadmark99.final-save-history-bindings.v1",
+  "status": "actual_existing_history_only_no_current_success_claim",
+  "toolingRevision": 5,
+  "sourceRevision": 4,
+  "fullFailedAttempts": [
+    {
+      "attempt": 1,
+      "binding": {
+        "qaResult": {
+          "path": "roadmark-research/applied99/qa-attempt1/run-result.json",
+          "sha256": "84a54ea1cee48a9ce38d2636f89d7e4a73e272c687c1aaf7bb22af22e5866d82",
+          "bytes": 4257
+        },
+        "externalRunnerObservation": {
+          "path": "roadmark-research/applied99/qa-attempt1-external-exit.json",
+          "sha256": "43b3319afe220a7bb5784dbe24a5d1762bd7c29b2c84388db2096e1b3790550e",
+          "bytes": 553
+        },
+        "launchToolExcerpts": {
+          "path": "roadmark-research/applied99/qa-attempt1-outer-tool-excerpts.json",
+          "sha256": "0dbd5cd6d3cdfe1a52b09f96b3d1a97ca4b36f5318ffcf355f39a61cc0fbffe3",
+          "bytes": 715
+        }
+      },
+      "configuration": {
+        "baselineInputs": {
+          "path": "roadmark-research/applied98/expected-inputs.json",
+          "sha256": "e1f1afa40710976b5ef057264cb09b3443866764f1ef584c9ce05a5ebad875d2"
+        },
+        "candidate": {
+          "path": "roadmark-research/applied99/qa-candidate-manifest.json",
+          "sha256": "a4841e51e947a55b07cabfc55592d21f8b5308a66cda9a22cfd6e82161a2095e"
+        },
+        "expectedInputs": {
+          "path": "roadmark-research/applied99/expected-inputs.json",
+          "sha256": "63d8ce2723a3262df3d52531e22fd81397e03ae09418068efc7362902817f25f"
+        }
+      },
+      "sealedEvidence": [
+        {
+          "path": "roadmark-research/applied99/qa-attempt1/execution-request.json",
+          "sha256": "f6461e821c81c32a2b1dca8d3bba7a8b552087d5f7fce16c1b7df8a6a0f7b8e9",
+          "bytes": 1875,
+          "mtimeNs": 1791785842793084587
+        },
+        {
+          "path": "roadmark-research/applied99/qa-attempt1/frozen-inputs.json",
+          "sha256": "63d8ce2723a3262df3d52531e22fd81397e03ae09418068efc7362902817f25f",
+          "bytes": 184361,
+          "mtimeNs": 1791785843320125839
+        },
+        {
+          "path": "roadmark-research/applied99/qa-attempt1/non_http_tests-start.json",
+          "sha256": "035e7b204a1eb94e984507c47e3ec716c9cb3429ba43c88832fda36ad8935415",
+          "bytes": 5796,
+          "mtimeNs": 1791785843909963959
+        },
+        {
+          "path": "roadmark-research/applied99/qa-attempt1/non_http_tests-terminal.json",
+          "sha256": "3544d797941b280e37313e9de14dbaa11d5ba21b47c646686fb57563dd4928aa",
+          "bytes": 6335,
+          "mtimeNs": 1791786660211029208
+        },
+        {
+          "path": "roadmark-research/applied99/qa-attempt1/non_http_tests.json",
+          "sha256": "002a12a8ca48d49bff41a4864efc7ccecba39ad3f9f59e7c1da185da0809918b",
+          "bytes": 779,
+          "mtimeNs": 1791786660571157209
+        },
+        {
+          "path": "roadmark-research/applied99/qa-attempt1/non_http_tests.stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "mtimeNs": 1791785843909963959
+        },
+        {
+          "path": "roadmark-research/applied99/qa-attempt1/non_http_tests.stdout.log",
+          "sha256": "341de1cec1a901c7f45d595172ff2f42d54736b01f6310fa2cd33d7f068c45b3",
+          "bytes": 209471,
+          "mtimeNs": 1791786660200241101
+        },
+        {
+          "path": "roadmark-research/applied99/qa-attempt1/preexisting-outputs.json",
+          "sha256": "507e8a81442b270aad43d8ba96673e38f7117034f2652059f3d01d206d8de067",
+          "bytes": 1633,
+          "mtimeNs": 1791785843546579042
+        },
+        {
+          "path": "roadmark-research/applied99/qa-attempt1/protected-input-comparison.json",
+          "sha256": "b9d38c593aeb4e8f1fdfc2586f114b6a9c3aef0bc4ed7228511e6e51d8b22bbf",
+          "bytes": 192537,
+          "mtimeNs": 1791785843321863837
+        },
+        {
+          "path": "roadmark-research/applied99/qa-attempt1/stage-plan.json",
+          "sha256": "cf60cdce21f7631ff2a7b5a8381482d98f0d911123f3729c100e978919cc8fb1",
+          "bytes": 6720,
+          "mtimeNs": 1791785843319983385
+        }
+      ],
+      "actualExternalTerminal": {
+        "path": "roadmark-research/applied99/qa-attempt1-external-terminal.json",
+        "sha256": "f4c1b8881d86f4c6338feac809b8d0ab16a704ddea65cbbe16c68ad34005f3dc",
+        "bytes": 243
+      },
+      "stageStatus": {
+        "lint": "not_started",
+        "local_http_tests": "not_started",
+        "non_http_tests": "failed",
+        "portable_build": "not_started",
+        "production_build": "not_started",
+        "typecheck": "not_started",
+        "validation": "not_started"
+      },
+      "finishedAtUTC": "2026-10-12T06:31:00.573981+00:00",
+      "outerExitCode": 1,
+      "outerEvidenceLimitations": {
+        "captureMode": "merged_exec_tool_output",
+        "stdoutStderrSeparated": false,
+        "completeOuterStreamsRetained": false,
+        "note": "Root transcription of the nonempty tool-output excerpts actually returned. These are not separate process stdout/stderr files. The sealed stage logs retain real separate stage stdout/stderr. Terminal return is independently retained unmodified."
+      }
+    },
+    {
+      "attempt": 2,
+      "binding": {
+        "qaResult": {
+          "path": "roadmark-research/applied99/qa-attempt2/run-result.json",
+          "sha256": "e71fac202681dafff3389ead00c14a09b700f4808b40cefd09a9c557ee74f93b",
+          "bytes": 6063
+        },
+        "externalRunnerObservation": {
+          "path": "roadmark-research/applied99/qa-attempt2-external-exit.json",
+          "sha256": "a6f48fc24bf5ca22b646b9e2c765882e03bf744cab87877223901723d1bf9a32",
+          "bytes": 553
+        },
+        "launchStdout": {
+          "path": "roadmark-research/applied99/qa-attempt2-launch.stdout.log",
+          "sha256": "20b3b3ac3e2fc1afa871fa5682454f59fbecc0f5c5f670b8f1d31988255d87ba",
+          "bytes": 246
+        },
+        "launchStderr": {
+          "path": "roadmark-research/applied99/qa-attempt2-launch.stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        }
+      },
+      "configuration": {
+        "baselineInputs": {
+          "path": "roadmark-research/applied98/expected-inputs.json",
+          "sha256": "e1f1afa40710976b5ef057264cb09b3443866764f1ef584c9ce05a5ebad875d2"
+        },
+        "candidate": {
+          "path": "roadmark-research/applied99/revision2/qa-candidate-manifest.json",
+          "sha256": "7932ada0ed98a4ee5f63ae01f7758ee713642e8eda6fc8751a3a9a6c604f5450"
+        },
+        "expectedInputs": {
+          "path": "roadmark-research/applied99/revision2/expected-inputs.json",
+          "sha256": "8914e219a8fde52dcce4bab12ebae5b3541893e5cabdd1edc8ab3a143091cb76"
+        }
+      },
+      "sealedEvidence": [
+        {
+          "path": "roadmark-research/applied99/qa-attempt2/execution-request.json",
+          "sha256": "f7ebf1b4e29dc7ec92fd2b0fd94a7e6aafa4f850263f7d92b49bdf30aa95eb78",
+          "bytes": 1915,
+          "mtimeNs": 1791786942839984645
+        },
+        {
+          "path": "roadmark-research/applied99/qa-attempt2/frozen-inputs.json",
+          "sha256": "8914e219a8fde52dcce4bab12ebae5b3541893e5cabdd1edc8ab3a143091cb76",
+          "bytes": 184478,
+          "mtimeNs": 1791786943350607784
+        },
+        {
+          "path": "roadmark-research/applied99/qa-attempt2/local_http_tests-start.json",
+          "sha256": "00b6fe778d4723fa73a570fc12cbc0a993b4327d8a096da1664d71aa7bbee4cc",
+          "bytes": 551,
+          "mtimeNs": 1791787768735302228
+        },
+        {
+          "path": "roadmark-research/applied99/qa-attempt2/local_http_tests-terminal.json",
+          "sha256": "ec031b3fa4e6f458022ab208693b91a4e4d9affe5dd3e396ba79221ddd28bc12",
+          "bytes": 1092,
+          "mtimeNs": 1791787773799783840
+        },
+        {
+          "path": "roadmark-research/applied99/qa-attempt2/local_http_tests.json",
+          "sha256": "cd48b774f1a16218c62a552fadae56c3806021415d3de4617b42003022b4d427",
+          "bytes": 806,
+          "mtimeNs": 1791787774181791181
+        },
+        {
+          "path": "roadmark-research/applied99/qa-attempt2/local_http_tests.stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "mtimeNs": 1791787768735302228
+        },
+        {
+          "path": "roadmark-research/applied99/qa-attempt2/local_http_tests.stdout.log",
+          "sha256": "f6bbbe69d884d37c35045a34b97bd18258f21a4b88f01734f3699a45913e9763",
+          "bytes": 334,
+          "mtimeNs": 1791787773790390574
+        },
+        {
+          "path": "roadmark-research/applied99/qa-attempt2/non_http_tests-start.json",
+          "sha256": "c1596b62c2ecfd973f9b06090e773948e79d61cf0b0e712dde26b35d78c09eff",
+          "bytes": 5847,
+          "mtimeNs": 1791786943999936933
+        },
+        {
+          "path": "roadmark-research/applied99/qa-attempt2/non_http_tests-terminal.json",
+          "sha256": "d70c1aa7747d96c519348bf5924dd41ce3a74efbc281fe5a3e792311a61ac958",
+          "bytes": 6386,
+          "mtimeNs": 1791787767981600742
+        },
+        {
+          "path": "roadmark-research/applied99/qa-attempt2/non_http_tests.json",
+          "sha256": "d03a83a19542f25cacd5f2f0d3c9a5467b3eb11992b273b7a2c2c0a0c0ad7d66",
+          "bytes": 806,
+          "mtimeNs": 1791787768369131950
+        },
+        {
+          "path": "roadmark-research/applied99/qa-attempt2/non_http_tests.stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "mtimeNs": 1791786943999936933
+        },
+        {
+          "path": "roadmark-research/applied99/qa-attempt2/non_http_tests.stdout.log",
+          "sha256": "33dcd28e1617ca24b3f7e7752ed1c5b5ef09b843e78e2402b0a67867b2487e9e",
+          "bytes": 208223,
+          "mtimeNs": 1791787767970232960
+        },
+        {
+          "path": "roadmark-research/applied99/qa-attempt2/preexisting-outputs.json",
+          "sha256": "ac5b88734b90f61bfcd3cfadacc1d3a4ae85248c3ace6d0eeb79291ace9968c4",
+          "bytes": 1633,
+          "mtimeNs": 1791786943601893616
+        },
+        {
+          "path": "roadmark-research/applied99/qa-attempt2/protected-input-comparison.json",
+          "sha256": "b265eb7ab9b0bd1d58285dc207cc2b82639fce5bded91e14d2dbb32c7b17f4ba",
+          "bytes": 193004,
+          "mtimeNs": 1791786943352561387
+        },
+        {
+          "path": "roadmark-research/applied99/qa-attempt2/stage-plan.json",
+          "sha256": "e3085fde505a951ebe3d333bfce1ae01156e1eaf95dda4706b9c361634c7c1de",
+          "bytes": 6773,
+          "mtimeNs": 1791786943350440983
+        },
+        {
+          "path": "roadmark-research/applied99/qa-attempt2/typecheck-start.json",
+          "sha256": "de34cdc403ea11f0c49b6e91c1a42f1872a6d3ac278431523c2657ca6735ba6c",
+          "bytes": 469,
+          "mtimeNs": 1791787774545898370
+        },
+        {
+          "path": "roadmark-research/applied99/qa-attempt2/typecheck-terminal.json",
+          "sha256": "8edde65e6024db2084adcaa97dafcdcc63f2eb9025b9a167758340573bb4eb34",
+          "bytes": 996,
+          "mtimeNs": 1791787784527916720
+        },
+        {
+          "path": "roadmark-research/applied99/qa-attempt2/typecheck.json",
+          "sha256": "630e98c4272f976f94fb750681b910fe467cf28365499745a282448e5b88a44c",
+          "bytes": 654,
+          "mtimeNs": 1791787784897790546
+        },
+        {
+          "path": "roadmark-research/applied99/qa-attempt2/typecheck.stderr.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0,
+          "mtimeNs": 1791787774545898370
+        },
+        {
+          "path": "roadmark-research/applied99/qa-attempt2/typecheck.stdout.log",
+          "sha256": "b3787f4c75c0c1f21ce4918360b83b368946edb99c274a7f5dde59a810f77b79",
+          "bytes": 584,
+          "mtimeNs": 1791787784482680108
+        }
+      ],
+      "actualExternalTerminal": {
+        "path": "roadmark-research/applied99/qa-attempt2-external-terminal.json",
+        "sha256": "a6d61f7037ac903d68bb3cee3963d7150d0d55b4e340a3bea31b9533883a1d54",
+        "bytes": 456
+      },
+      "stageStatus": {
+        "lint": "not_started",
+        "local_http_tests": "passed",
+        "non_http_tests": "passed",
+        "portable_build": "not_started",
+        "production_build": "not_started",
+        "typecheck": "failed",
+        "validation": "not_started"
+      },
+      "finishedAtUTC": "2026-10-12T06:49:44.901333+00:00",
+      "outerExitCode": 1,
+      "outerEvidenceLimitations": {
+        "captureMode": "actual_separate_launch_files",
+        "stdoutStderrSeparated": true,
+        "stderrBytes": 0
+      }
+    }
+  ],
+  "quickHistory": [
+    {
+      "path": "roadmark-research/applied99/revision3/quick-checks-observation.json",
+      "sha256": "c6d82ad495e4604dadf41f4928c5829276364073de598a43bb87c5b9c73b8052",
+      "bytes": 463
+    },
+    {
+      "path": "roadmark-research/applied99/revision3/typecheck-quick.log",
+      "sha256": "6cc99121293f51bfe92eb5772f705a4113a9a2308cad19939f19972e1d6f70e1",
+      "bytes": 13327
+    },
+    {
+      "path": "roadmark-research/applied99/revision4/quick-checks-observation.json",
+      "sha256": "2ef5755917c479ac8342cba86b76c9c1036ad314add902ca0b9188c7732c3df8",
+      "bytes": 412
+    },
+    {
+      "path": "roadmark-research/applied99/revision4/typecheck-quick.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "roadmark-research/applied99/revision4/lint-quick.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "roadmark-research/applied99/revision4/type-erasure-observation.json",
+      "sha256": "770b13940bf36e821794e5a7adf7d733cf9745d381dd1057b913d7a4ccabbd42",
+      "bytes": 622
+    }
+  ],
+  "supersededRawSourcePostimages": {
+    "initial99": [
+      {
+        "applicationPath": "tests/checkpoint84-transit-city.test.ts",
+        "path": "roadmark-research/mazda-trim99-candidate/files/tests/checkpoint84-transit-city.test.ts",
+        "sha256": "d41567ac458ee42771332302b40dc5ea02ea6803bfc22f93cc27066bfabaf4dc",
+        "bytes": 11905
+      },
+      {
+        "applicationPath": "tests/checkpoint95-market.test.ts",
+        "path": "roadmark-research/mazda-trim99-candidate/files/tests/checkpoint95-market.test.ts",
+        "sha256": "81eaf8711aaea83ef66004ef28021060781e3dd1cbc69f76ffacfc96b71146b5",
+        "bytes": 9419
+      }
+    ],
+    "revision3": [
+      {
+        "historyPhase": "revision3",
+        "applicationPath": "tests/helpers/checkpoint99-history.ts",
+        "path": "roadmark-research/applied99/revision4/preimages/tests/helpers/checkpoint99-history.ts",
+        "sha256": "c78c7048e1d9654ddb71b6680c9441bda9c30e4e569d65e6fc9bfd8bd13d8ceb",
+        "bytes": 7150
+      }
+    ]
+  },
+  "baseline98MapRetention": {
+    "sourceArchive": {
+      "path": "roadmark-recovery/final98-attempt1/Roadmark-recovered-98-source.zip",
+      "sha256": "182cfb8fa457fb6f5d0acbf9e0c45cb68f31c7f9bf78cda4ff73a73577c8761e",
+      "bytes": 37370410
+    },
+    "member": "roadmark/recovery98/research/roadmark-research/applied98/expected-inputs.json",
+    "sha256": "e1f1afa40710976b5ef057264cb09b3443866764f1ef584c9ce05a5ebad875d2",
+    "bytes": 183912,
+    "new99ResearchSelection": false,
+    "reason": "Avoid redundant applied98 research admission; preserve and verify the original baseline under exact predecessor-history rules."
+  },
+  "historicalSourceStates": [
+    {
+      "phase": "initial99",
+      "sourceCandidate": {
+        "path": "roadmark-research/mazda-trim99-candidate/manifest.json",
+        "sha256": "089238cd78a3d7712cca9e691f78b9d91f7f46d292b30890086628edb4cf7c42",
+        "bytes": 45702
+      },
+      "expectedInputs": {
+        "path": "roadmark-research/applied99/expected-inputs.json",
+        "sha256": "63d8ce2723a3262df3d52531e22fd81397e03ae09418068efc7362902817f25f",
+        "bytes": 184361
+      },
+      "qaCandidate": {
+        "path": "roadmark-research/applied99/qa-candidate-manifest.json",
+        "sha256": "a4841e51e947a55b07cabfc55592d21f8b5308a66cda9a22cfd6e82161a2095e",
+        "bytes": 5269
+      }
+    },
+    {
+      "phase": "revision2",
+      "sourceCandidate": {
+        "path": "roadmark-research/applied99/revision2/candidate-manifest.json",
+        "sha256": "c3ec1f62102a55a4721641fca61c56547a5193b011e659938ea7fbff87006c8c",
+        "bytes": 46678
+      },
+      "expectedInputs": {
+        "path": "roadmark-research/applied99/revision2/expected-inputs.json",
+        "sha256": "8914e219a8fde52dcce4bab12ebae5b3541893e5cabdd1edc8ab3a143091cb76",
+        "bytes": 184478
+      },
+      "qaCandidate": {
+        "path": "roadmark-research/applied99/revision2/qa-candidate-manifest.json",
+        "sha256": "7932ada0ed98a4ee5f63ae01f7758ee713642e8eda6fc8751a3a9a6c604f5450",
+        "bytes": 5748
+      }
+    },
+    {
+      "phase": "revision3",
+      "sourceCandidate": {
+        "path": "roadmark-research/applied99/revision3/candidate-manifest.json",
+        "sha256": "d5e4a096ad701c4c575fcef2841a068d761477b38224ac0aa6b9299d89192afa",
+        "bytes": 47056
+      },
+      "expectedInputs": {
+        "path": "roadmark-research/applied99/revision3/expected-inputs.json",
+        "sha256": "29bcb7fca21d126b996fb506dd755dfac1d743710e07d265346b060d26fe7d7e",
+        "bytes": 184478
+      },
+      "qaCandidate": {
+        "path": "roadmark-research/applied99/revision3/qa-candidate-manifest.json",
+        "sha256": "89010ff70bac7d72a3084718e1eaf71d37b5a5fcdf037be4c00075aad427b72b",
+        "bytes": 5748
+      }
+    },
+    {
+      "phase": "revision4",
+      "sourceCandidate": {
+        "path": "roadmark-research/applied99/revision4/candidate-manifest.json",
+        "sha256": "c710eb25970241c720c8695024f66a31cbaaaa2e6dd4b101143b531a02ae0850",
+        "bytes": 47262
+      },
+      "expectedInputs": {
+        "path": "roadmark-research/applied99/revision4/expected-inputs.json",
+        "sha256": "4a4204128daf108f35296c77d3beb4476a453c98ab571648da9d85b1b0085e86",
+        "bytes": 184478
+      },
+      "qaCandidate": {
+        "path": "roadmark-research/applied99/revision4/qa-candidate-manifest.json",
+        "sha256": "51e2b73e998f80b4fd10260df54c97ba8d337642c384a4c57606e58875ee590a",
+        "bytes": 5748
+      }
+    }
+  ]
+}

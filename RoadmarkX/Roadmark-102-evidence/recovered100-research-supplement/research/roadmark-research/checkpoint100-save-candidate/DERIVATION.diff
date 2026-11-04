@@ -1,0 +1,761 @@
+--- roadmark-research/checkpoint99-save-candidate/package_checkpoint99.py
++++ roadmark-research/checkpoint100-save-candidate/package_checkpoint100.py
+@@ -1,5 +1,5 @@
+ #!/usr/bin/env python3
+-"""ROOT-RUN ONLY: package a scoped checkpoint99 after genuine QA and observation.
++"""ROOT-RUN ONLY: package a scoped checkpoint100 after genuine QA and observation.
+ 
+ Standard library only. No imports from the app, builds, browser, network, Git or
+ Library actions. Runs only the exact joiner that it ships, in an isolated local
+@@ -24,68 +24,13 @@
+ METADATA = ('CHECKPOINT-PREVIEW-MANIFEST.json', 'CHECKPOINT-SOURCE-MANIFEST.json', 'OPEN-PORTABLE-PREVIEW.txt')
+ STAGES = ('non_http_tests', 'local_http_tests', 'typecheck', 'lint', 'validation', 'production_build', 'portable_build')
+ CHUNK, POLICY = 16 * 1024 * 1024, 32 * 1024 * 1024
+-PINS = {
+-    'source98': ('roadmark-recovery/final98-attempt1/Roadmark-recovered-98-source.zip', '182cfb8fa457fb6f5d0acbf9e0c45cb68f31c7f9bf78cda4ff73a73577c8761e'),
+-    'preview98': ('roadmark-recovery/final98-attempt1/Roadmark-recovered-98-portable-preview.zip', 'f3af970d8ab4ca3a9e224b4fea6d3acbdb41630dd5b449567cf92e0fc1f7b403'),
+-    'saved98': ('roadmark-recovery/final98-review/correlated-save-receipt.json', 'bf0eb155dcd0e44d77e0d5027657d063d0c70631c6753f74260b50d3f104e916'),
+-    'saved98helper': ('roadmark-recovery/final98-review/actual-helper-results.json', '6fd08879ea5bfe945c6b8a8716d71f1ac632cb0cdd6689b95f2901575fa32112'),
+-    'saved98plan': ('roadmark-recovery/final98-attempt1/upload-plan.json', '3bb6e2d9567b781906431cc7329fbda6bce4fe1f8fa44645c19bfd7308d8f642'),
+-    'baselineInputs': ('roadmark-research/applied98/expected-inputs.json', 'e1f1afa40710976b5ef057264cb09b3443866764f1ef584c9ce05a5ebad875d2'),
+-    'expectedInputs': ('roadmark-research/applied99/revision4/expected-inputs.json', '4a4204128daf108f35296c77d3beb4476a453c98ab571648da9d85b1b0085e86'),
+-    'candidate': ('roadmark-research/applied99/revision4/qa-candidate-manifest.json', '51e2b73e998f80b4fd10260df54c97ba8d337642c384a4c57606e58875ee590a'),
+-    'runner': ('roadmark-research/qa99-candidate/run_qa99.py', 'a043d6ac749a39d025bf452eddb55440d2ac81ba3b73be9f4d894a5055a2e10f'),
+-    'sourceCandidate': ('roadmark-research/applied99/revision4/candidate-manifest.json', 'c710eb25970241c720c8695024f66a31cbaaaa2e6dd4b101143b531a02ae0850'),
+-    'initialSourceCandidate': ('roadmark-research/mazda-trim99-candidate/manifest.json', '089238cd78a3d7712cca9e691f78b9d91f7f46d292b30890086628edb4cf7c42'),
+-    'initialExpectedInputs': ('roadmark-research/applied99/expected-inputs.json', '63d8ce2723a3262df3d52531e22fd81397e03ae09418068efc7362902817f25f'),
+-    'initialQACandidate': ('roadmark-research/applied99/qa-candidate-manifest.json', 'a4841e51e947a55b07cabfc55592d21f8b5308a66cda9a22cfd6e82161a2095e'),
+-    'repairCandidate': ('roadmark-research/mazda-trim99-candidate/revision2/manifest.json', '5a68f63bad07833c31a173689616c06bc3dd6dd4b2044c7768aaa70d0fe0d46b'),
+-    'secondSourceCandidate': ('roadmark-research/applied99/revision2/candidate-manifest.json', 'c3ec1f62102a55a4721641fca61c56547a5193b011e659938ea7fbff87006c8c'),
+-    'secondExpectedInputs': ('roadmark-research/applied99/revision2/expected-inputs.json', '8914e219a8fde52dcce4bab12ebae5b3541893e5cabdd1edc8ab3a143091cb76'),
+-    'secondQACandidate': ('roadmark-research/applied99/revision2/qa-candidate-manifest.json', '7932ada0ed98a4ee5f63ae01f7758ee713642e8eda6fc8751a3a9a6c604f5450'),
+-    'thirdSourceCandidate': ('roadmark-research/applied99/revision3/candidate-manifest.json', 'd5e4a096ad701c4c575fcef2841a068d761477b38224ac0aa6b9299d89192afa'),
+-    'thirdExpectedInputs': ('roadmark-research/applied99/revision3/expected-inputs.json', '29bcb7fca21d126b996fb506dd755dfac1d743710e07d265346b060d26fe7d7e'),
+-    'thirdQACandidate': ('roadmark-research/applied99/revision3/qa-candidate-manifest.json', '89010ff70bac7d72a3084718e1eaf71d37b5a5fcdf037be4c00075aad427b72b'),
+-    'typeRepairCandidate': ('roadmark-research/mazda-trim99-candidate/revision3/manifest.json', 'ef550abc42ab248b26170b9b54c1121cf5e0d5aecead6d2f311d164072853a2f'),
+-    'scopedTypeRepairCandidate': ('roadmark-research/mazda-trim99-candidate/revision4/manifest.json', 'd744f716d6d5ca9c3db73bacf72390bc5315cafe4cd5575e1833e780fb3a6790'),
+-}
+-REVIEWED99 = {'bindingsResolved': True, 'candidateSchema': 'roadmark-checkpoint99-candidate-manifest-v1', 'candidatePaths': ['data/buyer-identity-snapshots-2026-10-10.json', 'data/buyer-selling-points-2026-10-10.json', 'data/catalogue-additions-2026-10-10.json', 'data/market-inventory-2026-10-10.json', 'data/mazda-cx6e-technical-evidence-2026-10-12.json', 'qa/checkpoint99-mazda-fixture.json', 'tests/buyer-display-copy-render.test.ts', 'tests/checkpoint84-transit-city.test.ts', 'tests/checkpoint93-market.test.ts', 'tests/checkpoint95-market.test.ts', 'tests/checkpoint96-source-history.test.ts', 'tests/checkpoint99-mazda.test.ts', 'tests/configuration-payload.test.ts', 'tests/domain.test.ts', 'tests/helpers/checkpoint84-runtime.ts', 'tests/helpers/checkpoint91-history.ts', 'tests/helpers/checkpoint95-market-history.ts', 'tests/helpers/checkpoint99-history.ts', 'tests/research-refresh.test.ts', 'tests/source-citation-label92.test.ts', 'tests/avatar-dimension-projection.test.ts', 'tests/checkpoint99-history-coverage.test.ts'], 'expectedInputCount': 1675, 'detailRoutes': ['/cars/mazda-cx6e-au-aug2026/e35-gt-20261012', '/cars/mazda-cx6e-au-aug2026/e35-azami-20261012'], 'requiredResearchPaths': ['roadmark-research/mazda-trim99-candidate/README.md', 'roadmark-research/mazda-trim99-candidate/count-deltas.json', 'roadmark-research/mazda-trim99-candidate/expected-cars.json', 'roadmark-research/mazda-trim99-candidate/data-delta.json', 'roadmark-research/mazda-trim99-candidate/summary-delta.json', 'roadmark-research/mazda-trim99-candidate/adapter-audit/static-adapter-audit.md', 'roadmark-research/applied99/application-receipt.json', 'roadmark-research/applied99/focused-attempt1.log', 'roadmark-research/review-mazda-trim99/review.md', 'roadmark-research/review-mazda-trim99/review-pins.json', 'roadmark-research/applied99/focused-attempt1-observation.json', 'roadmark-research/applied99/revision2/candidate-manifest.json', 'roadmark-research/applied99/revision2/qa-candidate-manifest.json', 'roadmark-research/applied99/revision2/expected-inputs.json', 'roadmark-research/mazda-trim99-candidate/manifest.json', 'roadmark-research/applied99/qa-candidate-manifest.json', 'roadmark-research/applied99/expected-inputs.json', 'roadmark-research/mazda-trim99-candidate/revision2/manifest.json', 'roadmark-research/review-mazda-trim99/revision2-review.md', 'roadmark-research/review-mazda-trim99/revision2-review-pins.json', 'roadmark-research/review-mazda-trim99/cumulative-revision2-review-pins.json', 'roadmark-research/review-mazda-trim99/cumulative-revision2-review.md', 'roadmark-research/applied99/revision2/application-receipt.json', 'roadmark-research/applied99/qa-attempt1-external-exit.json', 'roadmark-research/applied99/qa-attempt1-outer-tool-excerpts.json', 'roadmark-research/applied99/qa-attempt1-external-terminal.json', 'roadmark-research/applied99/revision3/candidate-manifest.json', 'roadmark-research/applied99/revision3/expected-inputs.json', 'roadmark-research/applied99/revision3/qa-candidate-manifest.json', 'roadmark-research/applied99/revision3/application-receipt.json', 'roadmark-research/applied99/revision3/quick-checks-observation.json', 'roadmark-research/applied99/revision3/typecheck-quick.log', 'roadmark-research/applied99/revision4/candidate-manifest.json', 'roadmark-research/applied99/revision4/expected-inputs.json', 'roadmark-research/applied99/revision4/qa-candidate-manifest.json', 'roadmark-research/applied99/revision4/application-receipt.json', 'roadmark-research/applied99/revision4/quick-checks-observation.json', 'roadmark-research/applied99/revision4/typecheck-quick.log', 'roadmark-research/applied99/revision4/lint-quick.log', 'roadmark-research/applied99/revision4/type-erasure-observation.json', 'roadmark-research/mazda-trim99-candidate/revision3/manifest.json', 'roadmark-research/mazda-trim99-candidate/revision4/manifest.json', 'roadmark-research/review-mazda-trim99/revision3-review.md', 'roadmark-research/review-mazda-trim99/revision3-review-pins.json', 'roadmark-research/review-mazda-trim99/cumulative-revision3-review.md', 'roadmark-research/review-mazda-trim99/cumulative-revision3-review-pins.json', 'roadmark-research/review-mazda-trim99/revision3-typecheck-hold.md', 'roadmark-research/review-mazda-trim99/revision4-review.md', 'roadmark-research/review-mazda-trim99/revision4-review-pins.json', 'roadmark-research/review-mazda-trim99/cumulative-revision4-review.md', 'roadmark-research/review-mazda-trim99/cumulative-revision4-review-pins.json', 'roadmark-research/review-mazda-trim99/revision4-root-execution-gate.md', 'roadmark-research/review-mazda-trim99/revision4-root-execution-gate.json', 'roadmark-research/applied99/qa-attempt2-external-exit.json', 'roadmark-research/applied99/qa-attempt2-external-terminal.json', 'roadmark-research/applied99/qa-attempt2-launch.stdout.log', 'roadmark-research/applied99/qa-attempt2-launch.stderr.log'], 'expectedNewFileCount': 5, 'expectedReplacementCount': 17, 'requiredFailedAttemptPaths': ['roadmark-research/applied99/qa-attempt1/run-result.json', 'roadmark-research/applied99/qa-attempt2/run-result.json'], 'supersededInitial99Postimages': [{'applicationPath': 'tests/checkpoint84-transit-city.test.ts', 'path': 'roadmark-research/mazda-trim99-candidate/files/tests/checkpoint84-transit-city.test.ts', 'sha256': 'd41567ac458ee42771332302b40dc5ea02ea6803bfc22f93cc27066bfabaf4dc', 'bytes': 11905}, {'applicationPath': 'tests/checkpoint95-market.test.ts', 'path': 'roadmark-research/mazda-trim99-candidate/files/tests/checkpoint95-market.test.ts', 'sha256': '81eaf8711aaea83ef66004ef28021060781e3dd1cbc69f76ffacfc96b71146b5', 'bytes': 9419}], 'supersededIntermediate99Postimages': [{'historyPhase': 'revision3', 'applicationPath': 'tests/helpers/checkpoint99-history.ts', 'path': 'roadmark-research/applied99/revision4/preimages/tests/helpers/checkpoint99-history.ts', 'sha256': 'c78c7048e1d9654ddb71b6680c9441bda9c30e4e569d65e6fc9bfd8bd13d8ceb', 'bytes': 7150}], 'repairSteps': [{'phase': 'revision2', 'repairPin': 'repairCandidate', 'cumulativePin': 'secondSourceCandidate', 'expectedInputsPin': 'secondExpectedInputs', 'qaCandidatePin': 'secondQACandidate', 'paths': ['tests/avatar-dimension-projection.test.ts', 'tests/checkpoint84-transit-city.test.ts', 'tests/checkpoint99-history-coverage.test.ts'], 'lineageRefs': {'parentCandidate': 'initialSourceCandidate', 'repairCandidate': 'repairCandidate'}}, {'phase': 'revision3', 'repairPin': 'typeRepairCandidate', 'cumulativePin': 'thirdSourceCandidate', 'expectedInputsPin': 'thirdExpectedInputs', 'qaCandidatePin': 'thirdQACandidate', 'paths': ['tests/helpers/checkpoint99-history.ts'], 'lineageRefs': {'parentCandidate': 'initialSourceCandidate', 'repairCandidate': 'repairCandidate', 'typeRepairCandidate': 'typeRepairCandidate', 'previousCumulativeCandidate': 'secondSourceCandidate'}}, {'phase': 'revision4', 'repairPin': 'scopedTypeRepairCandidate', 'cumulativePin': 'sourceCandidate', 'expectedInputsPin': 'expectedInputs', 'qaCandidatePin': 'candidate', 'paths': ['tests/checkpoint95-market.test.ts', 'tests/helpers/checkpoint99-history.ts'], 'lineageRefs': {'parentCandidate': 'initialSourceCandidate', 'repairCandidate': 'repairCandidate', 'typeRepairCandidate': 'typeRepairCandidate', 'scopedTypeRepairCandidate': 'scopedTypeRepairCandidate', 'previousCumulativeCandidate': 'thirdSourceCandidate'}}], 'requiredFailedConfigurations': {'roadmark-research/applied99/qa-attempt1/run-result.json': {'expectedInputsPin': 'initialExpectedInputs', 'qaCandidatePin': 'initialQACandidate'}, 'roadmark-research/applied99/qa-attempt2/run-result.json': {'expectedInputsPin': 'secondExpectedInputs', 'qaCandidatePin': 'secondQACandidate'}}, 'admittedFailedConfigurationPins': [{'expectedInputsPin': 'initialExpectedInputs', 'qaCandidatePin': 'initialQACandidate'}, {'expectedInputsPin': 'secondExpectedInputs', 'qaCandidatePin': 'secondQACandidate'}, {'expectedInputsPin': 'thirdExpectedInputs', 'qaCandidatePin': 'thirdQACandidate'}, {'expectedInputsPin': 'expectedInputs', 'qaCandidatePin': 'candidate'}]}
+-# Final scoped type repair is separately bound to its complete actual lineage.
+-# Failed/quick outcomes remain historical; repaired full QA still needs proof.
+-REQUIRED_RESEARCH = {
+-    'roadmark-research/qa99-candidate/MANIFEST.json',
+-    'roadmark-research/qa99-candidate/README.md',
+-    'roadmark-research/mazda-root-visual99/root-visual-observations.json',
+-    'roadmark-research/review-mazda-technical/root-visual-follow-up.md',
+-    'roadmark-research/review-mazda-technical/root-visual-follow-up-pins.json',
+-}
+-ALLOWED_RESEARCH = (
+-    'roadmark-research/applied99/',
+-    'roadmark-research/mazda-trim99-candidate/',
+-    'roadmark-research/review-mazda-trim99/',
+-    'roadmark-research/qa99-candidate/',
+-    'roadmark-research/review-qa99/',
+-    'roadmark-research/checkpoint99-save-candidate/',
+-    'roadmark-research/review-checkpoint99-save/',
+-    'roadmark-research/browser-mazda99/',
+-    'roadmark-research/mazda-root-visual99/',
+-    'roadmark-research/review-mazda-technical/',
+-    'roadmark-recovery/final99-review/',
+-)
+-OPEN = {
+-    'phoneVerified': False,
+-    'acceleratedWebGLVerified': False,
+-    'fullJourneyVerified': False,
+-    'fullVisualPassClaimed': False,
+-    'sustainedStabilityClaimed': False,
+-    'publicExportRun': False,
+-    'releaseApproved': False,
+-    'wholeProductionRuntimeGraphEquivalenceClaimed': False,
+-    'independentServerByteVerificationPerformed': False,
+-    'fresh99PerformanceImprovementClaimed': False,
+-    'automatedBrowserSuitePassed': False,
+-    'newEvidenceIndexRestorationIncluded': False,
+-}
+-
++PINS = {'applicationReceipt': ('roadmark-research/applied100/application-receipt.json', 'adb675fb91e8b7382f6dc49a9f93f6c006c72736bbe75b7a7026bb51a8d176bf'), 'baselineInputs': ('roadmark-research/applied99/revision4/expected-inputs.json', '4a4204128daf108f35296c77d3beb4476a453c98ab571648da9d85b1b0085e86'), 'candidate': ('roadmark-research/applied100/qa-candidate-manifest.json', '7d85b68eb8b73d6b3dcdca3c6df7f882cf494686c610c5820d5222253fe6784d'), 'expectedInputs': ('roadmark-research/applied100/expected-inputs.json', '39caa8ae30cf2c6bc09026d0dd87b6fd42811fd8ddb2d632c5d3d18092818225'), 'originalCandidate': ('roadmark-research/market100-candidate/manifest.json', '52061d869f2e1cab0ca3cec6252a57200f251bb4b7317337dd3f9cf168ebaa66'), 'preview99': ('roadmark-recovery/final99-attempt1/Roadmark-recovered-99-portable-preview.zip', '0ababbe0d9e9c16aea35f1cb3f427e20d5536d1d0b3b4e11a0a3a88ab78e993a'), 'runner': ('roadmark-research/qa99-candidate/run_qa99.py', 'a043d6ac749a39d025bf452eddb55440d2ac81ba3b73be9f4d894a5055a2e10f'), 'saved99': ('roadmark-recovery/final99-review/correlated-save-receipt.json', '71f2234b1d225cec88384ae056052270de6777aad3e25e7a296d47562c43435e'), 'saved99helper': ('roadmark-recovery/final99-review/library-upload.stdout.json', '17764d775ba36041aa2424cd323efc8071320de231ab42db19a897df23d9b5ca'), 'saved99plan': ('roadmark-recovery/final99-attempt1/upload-plan.json', '319afbd9404a7444b1361678f382080e5c4d4af9dcb042177a618bdb3c937e65'), 'source99': ('roadmark-recovery/final99-attempt1/Roadmark-recovered-99-source.zip', '7514bab9524cdb08af0b9fb8b7b1f001435f61526590c929f069d03c8b7f4fd1'), 'sourceCandidate': ('roadmark-research/applied100/candidate-manifest.json', '52061d869f2e1cab0ca3cec6252a57200f251bb4b7317337dd3f9cf168ebaa66'), 'sourceReview': ('roadmark-research/review-market100/DECISION.json', 'ff08ea1eb44d828136bc5da242c776ad98752ebd859519ac9653a68675a01c64'), 'artifactVerifier': ('roadmark-research/artifact100-candidate/verify-portable100-delta.py', 'aa431a1114e942b9100d680cc7df35cfacb9bdc8487be023eef0ccbec9dafd3e')}
++CANDIDATE_PATHS = ['data/market-inventory-2026-10-10.json', 'qa/checkpoint100-market-fixture.json', 'tests/checkpoint100-market.test.ts', 'tests/helpers/checkpoint100-market-history.ts', 'tests/helpers/checkpoint99-history.ts']
++HELD_IDS = ['bmw-i3', 'bmw-ix4', 'dfac-captain-45e', 'dfac-captain-85e', 'pioneer-ev-dfsk-ec35', 'mercedes-benz-eqb', 'mercedes-benz-eqe-sedan', 'mercedes-benz-eqe-suv', 'mercedes-benz-eqs-suv', 'mercedes-benz-maybach-eqs']
++REQUIRED_RESEARCH = set(['roadmark-research/artifact100-candidate/BASELINE-STATIC-INSPECTION.json', 'roadmark-research/artifact100-candidate/DERIVATION.md', 'roadmark-research/artifact100-candidate/INPUT-PINS.json', 'roadmark-research/artifact100-candidate/SHA256SUMS', 'roadmark-research/artifact100-candidate/derivation.diff', 'roadmark-research/artifact100-candidate/manifest.json', 'roadmark-research/artifact100-candidate/reviewed99-helpers.txt', 'roadmark-research/artifact100-candidate/verify-portable100-delta.py', 'roadmark-research/bmw-market-gap-research/SHA256SUMS', 'roadmark-research/bmw-market-gap-research/before-objects.json', 'roadmark-research/bmw-market-gap-research/research-candidate.json', 'roadmark-research/bmw-market-gap-research/source-provenance.json', 'roadmark-research/checkpoint100-save-candidate/DERIVATION-BASES.json', 'roadmark-research/checkpoint100-save-candidate/DERIVATION.diff', 'roadmark-research/checkpoint100-save-candidate/HANDOFF.md', 'roadmark-research/checkpoint100-save-candidate/PROTECTED-PRIOR-LIBRARY-IDS.json', 'roadmark-research/checkpoint100-save-candidate/verify_checkpoint100_saves.py', 'roadmark-research/market100-candidate/BASELINE-STATIC-CHECK.json', 'roadmark-research/market100-candidate/README.md', 'roadmark-research/market100-candidate/STATIC-VERIFICATION.json', 'roadmark-research/market100-candidate/changes.patch', 'roadmark-research/mercedes-market-batch-research/candidate.json', 'roadmark-research/mercedes-market-batch-research/capture-manifest.json', 'roadmark-research/next-market-gap-research/input-manifest.json', 'roadmark-research/next-market-gap-research/lead-dispositions.json', 'roadmark-research/next-market-gap-research/manifest.json', 'roadmark-research/next-market-gap-research/source-provenance.json', 'roadmark-research/qa99-candidate/MANIFEST.json', 'roadmark-research/qa99-candidate/README.md', 'roadmark-research/review-bmw-market-gap/README.md', 'roadmark-research/review-bmw-market-gap/review.json', 'roadmark-research/review-market100/REVIEW.md', 'roadmark-research/review-market100/candidate-code-and-packet-review.json', 'roadmark-research/review-market100/candidate-data-review.json', 'roadmark-research/review-market100/research-integrity-check.json', 'roadmark-research/review-mercedes-market-batch/REVIEW.md', 'roadmark-research/review-mercedes-market-batch/VERIFICATION.json', 'roadmark-research/review-next-market-gap/REVIEW.json', 'roadmark-research/review-next-market-gap/REVIEW.md'])
++RESEARCH_PINS = {'roadmark-research/bmw-market-gap-research/research-candidate.json': '8c7a14e8937f85aabed7ec30676c5a26fdc09445203166fc51b21259fbe31937', 'roadmark-research/bmw-market-gap-research/before-objects.json': 'dc3b354910e4a52d1fd34a9435d7288deff359030d4b4ec177a134e7fefa5895', 'roadmark-research/bmw-market-gap-research/source-provenance.json': '64831fac7b3fca4bc06b9c6c9144d7d2e3545094107875d9c543b0e44dffaf65', 'roadmark-research/bmw-market-gap-research/SHA256SUMS': '5564599b0123a88ab9d8cdec459fe3ec66ebd138050e68301bd50eba463b74a1', 'roadmark-research/review-bmw-market-gap/review.json': '61ea93982c3fbc82f26c0989e2cc732db5fe32eff795262c593d4a6d28cbbab3', 'roadmark-research/review-bmw-market-gap/README.md': '2cec95c92ac50296672bc97494eef4d3466c34a51f42affad641088cefd40f53', 'roadmark-research/next-market-gap-research/lead-dispositions.json': '6eba755df5527d2ff860ebb23f04864e66971d401e87f6ebfc23ea6a69ca295f', 'roadmark-research/next-market-gap-research/input-manifest.json': '3a21b3f5315e7c05f1dbfd2e2710473457b6ad04a7cead2aa546d750ebd20e7d', 'roadmark-research/next-market-gap-research/source-provenance.json': '7f8eb04fffb8c56fb63db429834ecd959b7de3dc49fafe3bf84913ebc0163270', 'roadmark-research/next-market-gap-research/manifest.json': '131b3ccbbc11229fc0dd21d5007da2675e09086f59c5966c8b8b4bb95eddd8a1', 'roadmark-research/review-next-market-gap/REVIEW.json': '8b276209aec9b5587d553a9cda05d25a760653ae52b1b56c055e25547bb28df7', 'roadmark-research/review-next-market-gap/REVIEW.md': 'd0522b0f76047f149699a52d1d69a171861d08a198655e8a731b5ad1d3979257', 'roadmark-research/mercedes-market-batch-research/candidate.json': '42b92bc028673a2af0aa7730dcfb8fa24dfc84e834b1462289629a0b85a13df6', 'roadmark-research/mercedes-market-batch-research/capture-manifest.json': '97fd9578b149199fcf71636a5ed1c511f78f92c9489a958b31caa4aa7765ba09', 'roadmark-research/review-mercedes-market-batch/VERIFICATION.json': '523f047ae3bc174436acd746d24c7dea549c2e4f1ea9e1a1812ea20792f31d81', 'roadmark-research/review-mercedes-market-batch/REVIEW.md': '42d3d4d44ea0587608447d1969fad09123490e5d312dd2ef24bb67bcf75b5a0d'}
++ALLOWED_RESEARCH = ('roadmark-research/applied100/', 'roadmark-research/market100-candidate/', 'roadmark-research/review-market100/', 'roadmark-research/qa99-candidate/', 'roadmark-research/review-qa99/', 'roadmark-research/checkpoint100-save-candidate/', 'roadmark-research/review-checkpoint100-save/', 'roadmark-research/browser-market100/', 'roadmark-research/artifact100-candidate/', 'roadmark-research/review-artifact100/', 'roadmark-recovery/final100-review/')
++OPEN = {'phoneVerified': False, 'acceleratedWebGLVerified': False, 'fullJourneyVerified': False, 'fullVisualPassClaimed': False, 'sustainedStabilityClaimed': False, 'publicExportRun': False, 'releaseApproved': False, 'wholeProductionRuntimeGraphEquivalenceClaimed': False, 'independentServerByteVerificationPerformed': False, 'fresh100PerformanceImprovementClaimed': False, 'automatedBrowserSuitePassed': False, 'newEvidenceIndexRestorationIncluded': False, 'newVehicleOrTrimAdmissionClaimed': False, 'availabilityVerified': False}
+ 
+ def need(ok, message):
+     if not ok:
+@@ -192,6 +137,8 @@
+ def verify_qa(root, app, binding, expected):
+     raw = pinned(root, binding['qaResult'])
+     qa, directory = decoded(raw), local(root, binding['qaResult']['path']).parent
++    # The unchanged reviewed99 runner retains its mechanics schema label.
++    # Actual100 identity is the exact configuration, map, artifacts and terminal.
+     need(qa['schema'] == 'roadmark99.serial-qa.v1' and qa['passed'] is True and qa['publicExportRun'] is False, 'Full current QA not established')
+     need(qa['runnerSHA256'] == PINS['runner'][1], 'Unreviewed runner')
+     for key in ('baselineInputs', 'expectedInputs', 'candidate'):
+@@ -244,9 +191,9 @@
+         path = local(app, rel)
+         need(info(read(path)) == {k: row[k] for k in ('sha256', 'bytes')} and path.stat().st_mtime_ns == row['mtimeNs'], 'Current output differs from QA: ' + rel)
+     need(len({(qa['artifacts'][p]['sha256'], qa['artifacts'][p]['bytes']) for p in ALIASES}) == 1, 'Portable aliases differ')
+-    need(read(app / '.next/BUILD_ID').decode().strip() == qa['actualBuildID'] and qa['actualBuildID'] != 'G0_48b3NTh9WvzoSGPGR5', 'Current BUILD_ID not fresh99')
++    need(read(app / '.next/BUILD_ID').decode().strip() == qa['actualBuildID'] and qa['actualBuildID'] != '2ATnTkC6XOpEMKXbUzc0U', 'Current BUILD_ID not fresh100')
+     external = decoded(pinned(root, binding['externalRunnerObservation']))
+-    need(external['schemaVersion'] == 'roadmark99.external-runner-observation.v1' and external['qaResultSHA256'] == sha(raw) and external['runnerSHA256'] == PINS['runner'][1] and external['exitCode'] == 0 and external['actualTerminalReviewed'] is True and external['observedAtUTC'], 'Actual external runner exit not established')
++    need(external['schemaVersion'] == 'roadmark100.external-runner-observation.v1' and external['qaResultSHA256'] == sha(raw) and external['runnerSHA256'] == PINS['runner'][1] and external['exitCode'] == 0 and external['actualTerminalReviewed'] is True and external['observedAtUTC'], 'Actual external runner exit not established')
+     need(type(external['exitCode']) is int, 'Outer exit must be an observed integer')
+     terminal_evidence = external['terminalEvidence']
+     if 'path' in terminal_evidence:
+@@ -256,6 +203,34 @@
+         need(type(tool_result) is dict and tool_result['exit_code'] == 0 and type(tool_result['output']) is str and tool_result['chunk_id'], 'Actual inline success terminal differs')
+     evidence[binding['qaResult']['path']] = raw
+     return qa, tallies, evidence
++
++
++def verify_portable_delta(root, app, binding, qa, anchors, evidence):
++    raw = pinned(root, binding['portableArtifactVerification'])
++    result = decoded(raw)
++    need(result['schema'] == 'roadmark-portable100-static-observation-v1' and result['status'] == 'passed' and result['checkpoint'] == 100 and result['baselineCheckpoint'] == 99, 'Actual successful100 portable comparison required')
++    need(result['scriptSHA256'] == PINS['artifactVerifier'][1] and result['verificationScope'] == 'actual_HTML_bytes_and_complete_decoded_payload', 'Reviewed artifact verifier/scope differs')
++    inputs = result['inputs']
++    need(inputs['saved99ZIP'] == {'path': str(local(root, PINS['preview99'][0])), 'sha256': PINS['preview99'][1]}, 'Artifact baseline ZIP differs')
++    need(inputs['saved99HTML'] == {'member': 'roadmark/index.html', 'sha256': '22bbd67dcb7de6fd46598c61c34f10894ef63f2cb02eb7f58af0c7ffb1336a80', 'bytes': 37013686}, 'Artifact baseline99 HTML differs')
++    current = inputs['actual100HTML']
++    portable = qa['artifacts'][ALIASES[0]]
++    need(current['sha256'] == current['expectedSHA256SuppliedExternally'] == portable['sha256'] and current['bytes'] == portable['bytes'] and current['path'] in {str(local(app, rel)) for rel in ALIASES}, 'Actual100 portable proof is not joined to current QA output')
++    fixture_raw = read(local(app, 'qa/checkpoint100-market-fixture.json'))
++    fixture = decoded(fixture_raw)
++    need(inputs['reviewedFixtureSHA256'] == sha(fixture_raw) == '6ca6057ef2db97fb7aa1251e307f9d419c88dadfe67d2390014ccd436f967837' and inputs['candidateManifestSHA256'] == PINS['sourceCandidate'][1] and inputs['candidateMarketSHA256'] == '2469610f9bea19221ed99483b01ca23ca4f9bb62356a873398e9895c2eb838ac', 'Portable proof fixture/candidate/market differs')
++    delta = result['delta']
++    fields = ['checkedAt', 'evidenceNote', 'limitations', 'sourceUrls']
++    expected_rows = [[row['section'], row['index'], row['id']] for row in fixture['changes']]
++    expected_paths = ['/marketInventory/' + row['section'] + '/' + str(row['index']) + '/' + field for row in fixture['changes'] for field in fields]
++    need(delta['rows'] == expected_rows and delta['changedFieldsPerRow'] == fields and delta['allowedFieldPaths'] == expected_paths, 'Portable proof exceeds exact ten-row/four-field scope')
++    need(delta['fixtureExact'] is True and delta['candidateMarketExact'] is True and delta['additionalAuditExceptions'] == [] and result['outsideEvData']['byteIdentical'] is True, 'Portable payload/exterior differs')
++    preserved = result['preserved']
++    need(all(preserved[key] is True for key in ('allOtherDecodedValues', 'arrayOrder', 'objectKeyOrder')) and preserved['topLevelKeys'] == ['marketInventory', 'cars', 'packs', 'research', 'counts', 'art'] and preserved['marketRecords'] == 242 and preserved['unverifiedLeads'] == 143, 'Portable preservation contract differs')
++    need(result['notVerified'] == ['browser_hydration_or_runtime_execution', 'visual_or_mobile_rendering', 'whole_Next_production_module_graph', 'source_tree_or_build_provenance', 'canonical_string_table_layout_or_unused_dictionary_entries', 'other_HTML_files_or_delivery_archives', 'market_claim_truth_or_freshness', 'full_market_or_trim_universe', 'publisher_origin_bytes'], 'Portable proof limitations missing or changed')
++    evidence[binding['portableArtifactVerification']['path']] = raw
++    evidence[PINS['artifactVerifier'][0]] = anchors['artifactVerifier']
++    return result
+ 
+ 
+ def main():
+@@ -270,318 +245,206 @@
+     root = args.workspace.resolve()
+     app = local(root, APP)
+     need(sha(read(Path(__file__))) == args.approved_packager_sha256, 'Packager approval pin differs')
+-    joiner_path = Path(__file__).parent / 'join_recovered99_source.py'
+-    joiner_raw = read(joiner_path)
++    joiner_raw = read(Path(__file__).parent / 'join_recovered100_source.py')
+     need(sha(joiner_raw) == args.approved_joiner_sha256, 'Joiner approval pin differs')
+     binding_raw = pinned(root, {'path': args.binding, 'sha256': args.binding_sha256})
+     binding = decoded(binding_raw)
+-    need(binding['schemaVersion'] == 'roadmark99.save-inputs.v1' and binding['rootReviewed'] is True and binding['allKnownFailedAndRetryEvidenceListed'] is True and binding['noConcurrentAppWriters'] is True and binding['selectedResearchReviewedForSecretsAndRelevance'] is True, 'Root input review/exclusivity/research-content review required')
+-    need(REVIEWED99['bindingsResolved'] is True, 'STOP: unresolved99 candidate/map/scope bindings require root completion and independent review')
+-    need(type(REVIEWED99['candidateSchema']) is str and REVIEWED99['candidateSchema'] and type(REVIEWED99['expectedInputCount']) is int and REVIEWED99['expectedInputCount'] >= 1670 and REVIEWED99['candidatePaths'] and REVIEWED99['requiredResearchPaths'], 'Incomplete reviewed99 scope contract')
+-    need(len(REVIEWED99['detailRoutes']) == 2 and len(set(REVIEWED99['detailRoutes'])) == 2 and all(type(route) is str and route.startswith('/cars/') for route in REVIEWED99['detailRoutes']), 'Two actual reviewed Mazda detail routes required')
++    need(binding['schemaVersion'] == 'roadmark100.save-inputs.v1', 'Wrong current100 save binding')
++    for field in ('rootReviewed', 'allKnownFailedAndRetryEvidenceListed', 'noConcurrentAppWriters', 'selectedResearchReviewedForSecretsAndRelevance'):
++        need(binding[field] is True, 'Root acceptance missing: ' + field)
+     anchors = {key: pinned(root, {'path': path, 'sha256': digest}) for key, (path, digest) in PINS.items()}
+-    need(len(anchors['source98']) == 37370410 and len(anchors['preview98']) == 16380150, 'Wrong98 fallback sizes')
+-    saved98 = decoded(anchors['saved98'])
+-    need(saved98['librarySavesComplete'] is True and saved98['applicationCheckpoint'] == 98, 'Verified saved98 fallback required')
+-    need(saved98['actualHelperResults']['sha256'] == sha(anchors['saved98helper']) and saved98['uploadPlanSHA256'] == sha(anchors['saved98plan']), 'Actual98 receipt/helper/plan chain differs')
+-    prior_plan = decoded(anchors['saved98plan'])
+-    need(prior_plan['fullSourceArchive']['sha256'] == PINS['source98'][1] and prior_plan['fullSourceArchive']['bytes'] == len(anchors['source98']) and prior_plan['pairId'] == saved98['pairId'], 'Actual98 source/save identity differs')
+-    prior_preview = [row for row in saved98['saved'] if row['role'] == 'preview']
+-    need(len(prior_preview) == 1 and prior_preview[0]['localSHA256'] == PINS['preview98'][1] and prior_preview[0]['localBytes'] == len(anchors['preview98']), 'Actual98 preview identity differs')
++    need(len(anchors['source99']) == 47830120 and len(anchors['preview99']) == 16423587, 'Wrong saved99 fallback sizes')
++    saved99, prior_plan = decoded(anchors['saved99']), decoded(anchors['saved99plan'])
++    need(saved99['librarySavesComplete'] is True and saved99['applicationCheckpoint'] == 99, 'Verified saved99 fallback required')
++    need(saved99['actualHelperResults']['sha256'] == sha(anchors['saved99helper']) and saved99['uploadPlanSHA256'] == sha(anchors['saved99plan']), 'Actual99 receipt/helper/plan chain differs')
++    need(prior_plan['fullSourceArchive']['sha256'] == PINS['source99'][1] and prior_plan['fullSourceArchive']['bytes'] == len(anchors['source99']) and prior_plan['pairId'] == saved99['pairId'], 'Actual99 source/save identity differs')
++    prior_preview = [row for row in saved99['saved'] if row['role'] == 'preview']
++    need(len(prior_preview) == 1 and prior_preview[0]['localSHA256'] == PINS['preview99'][1] and prior_preview[0]['localBytes'] == len(anchors['preview99']), 'Actual99 preview identity differs')
+     baseline, expected, candidate = (decoded(anchors[key]) for key in ('baselineInputs', 'expectedInputs', 'sourceCandidate'))
+-    initial_candidate = decoded(anchors['initialSourceCandidate'])
+-    initial_rows = {row['path']: row for row in initial_candidate['candidateFiles']}
+-    need(len(initial_rows) == len(initial_candidate['candidateFiles']) == 20, 'Initial99 source inventory differs')
+-    cumulative_rows = dict(initial_rows)
+-    lineage_states = [('initial99', dict(cumulative_rows))]
+-    for step in REVIEWED99['repairSteps']:
+-        repair = decoded(anchors[step['repairPin']])
+-        cumulative = decoded(anchors[step['cumulativePin']])
+-        need([row['path'] for row in repair['candidateFiles']] == step['paths'] and all(rel.startswith('tests/') for rel in step['paths']), 'Repair differs from its exact reviewed test-path scope')
+-        for field, pin in step['lineageRefs'].items():
+-            need(cumulative[field] == dict(zip(('path', 'sha256'), PINS[pin])), 'Cumulative lineage reference differs: ' + field)
+-        for row in repair['candidateFiles']:
+-            rel = name(row['path'])
+-            previous = cumulative_rows.get(rel)
+-            need(row['beforeSHA256'] == (previous['afterSHA256'] if previous else baseline.get(rel)) and row['checkpoint98BeforeSHA256'] == baseline.get(rel), 'Repair immediate/baseline preimage differs')
+-            need(previous is None or row['beforeBytes'] == previous['afterBytes'], 'Repair immediate preimage length differs')
+-            cumulative_rows[rel] = {'path': rel, 'beforeSHA256': baseline.get(rel), 'beforeBytes': previous['beforeBytes'] if previous else row['beforeBytes'], 'afterSHA256': row['afterSHA256'], 'afterBytes': row['afterBytes']}
+-        need(len(cumulative['candidateFiles']) == len(cumulative_rows) and {row['path']: row for row in cumulative['candidateFiles']} == cumulative_rows, 'Cumulative candidate differs from exact chronological repair composition')
+-        step_expected = dict(baseline)
+-        step_expected.update({rel: row['afterSHA256'] for rel, row in cumulative_rows.items()})
+-        need(decoded(anchors[step['expectedInputsPin']]) == step_expected, 'Intermediate/final expected map differs from its own cumulative source')
+-        step_projection = decoded(anchors[step['qaCandidatePin']])
+-        need(step_projection['originalCandidate'] == dict(zip(('path', 'sha256'), PINS[step['cumulativePin']])) and step_projection['files'] == [{'path': row['path'], 'beforeSHA256': row['beforeSHA256'], 'sha256': row['afterSHA256'], 'bytes': row['afterBytes']} for row in cumulative['candidateFiles']], 'Intermediate/final QA projection differs from its actual source')
+-        lineage_states.append((step['phase'], dict(cumulative_rows)))
+-    need({row['path']: row for row in candidate['candidateFiles']} == cumulative_rows, 'Final source is not the final reviewed lineage state')
+-    history_expected, seen_versions = {}, set()
+-    for phase, state in lineage_states[:-1]:
+-        for rel, row in state.items():
+-            identity = (rel, row['afterSHA256'])
+-            if row['afterSHA256'] != cumulative_rows[rel]['afterSHA256'] and identity not in seen_versions:
+-                seen_versions.add(identity)
+-                history_expected[(phase, rel)] = {'sha256': row['afterSHA256'], 'bytes': row['afterBytes']}
+-    historical_source = {}
+-    history_refs = [dict(ref, historyPhase='initial99') for ref in REVIEWED99['supersededInitial99Postimages']] + REVIEWED99['supersededIntermediate99Postimages']
+-    for ref in history_refs:
+-        phase, rel = name(ref['historyPhase']), name(ref['applicationPath'])
+-        key = (phase, rel)
+-        need(key not in historical_source and key in history_expected, 'Unexpected/duplicate historical99 postimage')
+-        raw = pinned(root, ref)
+-        need(info(raw) == history_expected[key], 'Superseded or rejected99 code postimage differs')
+-        historical_source[key] = raw
+-    need(set(historical_source) == set(history_expected), 'Superseded initial/intermediate99 code history missing')
+-    normalized_candidate = decoded(anchors['candidate'])
+-    need(normalized_candidate['schema'] == 'roadmark99-normalized-qa-candidate.v1', 'Wrong normalized QA projection schema')
+-    need(normalized_candidate['originalCandidate'] == dict(zip(('path', 'sha256'), PINS['sourceCandidate'])), 'Normalized QA candidate lost the exact original manifest binding')
+-    need(len(baseline) == 1670 and len(expected) == REVIEWED99['expectedInputCount'], 'Wrong reviewed99 input count')
+-    need(candidate['schema'] == REVIEWED99['candidateSchema'] and type(candidate['candidateFiles']) is list and candidate['candidateFiles'], 'Wrong reviewed Mazda99 candidate')
+-    need(candidate.get('appRoot', APP) == APP and candidate.get('applicationRoot', str(app)) == str(app), 'Candidate targets another application')
+-    rows = {}
+-    projected_rows = [{'path': row['path'], 'beforeSHA256': row['beforeSHA256'], 'sha256': row['afterSHA256'], 'bytes': row['afterBytes']} for row in candidate['candidateFiles']]
+-    need(normalized_candidate['files'] == projected_rows, 'QA candidate is not the exact original manifest projection')
+-    need(sum(row['beforeSHA256'] is None for row in candidate['candidateFiles']) == REVIEWED99['expectedNewFileCount'] and sum(row['beforeSHA256'] is not None for row in candidate['candidateFiles']) == REVIEWED99['expectedReplacementCount'], 'Wrong reviewed addition/replacement count')
+-    for original_row, row in zip(candidate['candidateFiles'], projected_rows):
++    need(anchors['sourceCandidate'] == anchors['originalCandidate'], 'Application candidate differs from reviewed original')
++    need(candidate['baselineSourceMap'] == dict(path=PINS['baselineInputs'][0], sha256=PINS['baselineInputs'][1], inputCount=1675), 'Candidate baseline differs')
++    need(len(baseline) == 1675 and len(expected) == 1678, 'Wrong current100 input count')
++    need([row['path'] for row in candidate['files']] == CANDIDATE_PATHS and len(CANDIDATE_PATHS) == 5, 'Wrong reviewed five-path scope')
++    projected = [{'path': row['path'], 'beforeSHA256': row['beforeSHA256'], 'sha256': row['afterSHA256'], 'bytes': row['afterBytes']} for row in candidate['files']]
++    need(decoded(anchors['candidate']) == {'appRoot': APP, 'files': projected}, 'QA projection differs from exact reviewed100 source fields')
++    review, applied = decoded(anchors['sourceReview']), decoded(anchors['applicationReceipt'])
++    need(review['decision'] == 'GO_EXACT_CANDIDATE_ROOT_APPLICATION_AND_EXECUTION_ONLY' and review['candidateManifest'] == dict(zip(('path', 'sha256'), PINS['originalCandidate'])), 'Exact100 source review differs')
++    need(applied['rootApplied'] is True and applied['baselineInputs'] == 1675 and applied['finalInputs'] == 1678 and applied['candidateSHA256'] == PINS['originalCandidate'][1] and applied['reviewSHA256'] == PINS['sourceReview'][1] and applied['files'] == candidate['files'], 'Root application receipt differs')
++    rows, wanted = {}, dict(baseline)
++    for original, row in zip(candidate['files'], projected):
+         rel = name(row['path'])
+-        need(rel not in rows and not rel.startswith('.next/') and rel not in (*ALIASES, *METADATA, 'tsconfig.tsbuildinfo') and not ({'node_modules', '.git'} & set(Path(rel).parts)), 'Duplicate/excluded candidate path')
+-        need(Path(rel).suffix.lower() in {'.json', '.ts', '.tsx', '.js', '.cjs', '.mjs', '.py', '.md', '.txt', '.css'} and not any(term in rel.lower() for term in ('capture', 'screenshot', 'private', 'secret', 'queue')), 'Only explicitly reviewed source text is admitted in the99 delta')
+-        need(row['beforeSHA256'] == baseline.get(rel), 'Candidate baseline preimage differs')
+-        need(type(row['sha256']) is str and re.fullmatch('[0-9a-f]{64}', row['sha256']) and row['sha256'] != row['beforeSHA256'] and type(row['bytes']) is int and row['bytes'] > 0, 'Invalid/unchanged candidate postimage')
+-        need((row['beforeSHA256'] is None and original_row['beforeBytes'] is None) or (row['beforeSHA256'] is not None and type(original_row['beforeBytes']) is int and original_row['beforeBytes'] > 0), 'Invalid original candidate preimage size')
+-        rows[rel] = dict(row, beforeBytes=original_row['beforeBytes'])
+-    need(set(rows) == set(REVIEWED99['candidatePaths']) and len(rows) == len(REVIEWED99['candidatePaths']), 'Candidate differs from explicit reviewed99 path allowlist')
+-    wanted = dict(baseline)
+-    for rel, row in rows.items():
+-        need(baseline.get(rel) == row['beforeSHA256'], 'Replacement preimage/operation mismatch')
++        need(rel not in rows and original['operation'] == ('add' if row['beforeSHA256'] is None else 'replace'), 'Duplicate or incorrect operation')
++        need(row['beforeSHA256'] == baseline.get(rel) and row['sha256'] != row['beforeSHA256'], 'Candidate baseline/unchanged postimage differs')
++        need((row['beforeSHA256'] is None and original['beforeBytes'] is None) or (type(original['beforeBytes']) is int and original['beforeBytes'] > 0), 'Invalid preimage size')
++        data = read(local(app, rel))
++        need(info(data) == {k: row[k] for k in ('sha256', 'bytes')}, 'Applied postimage differs')
++        data.decode('utf-8')
++        rows[rel] = dict(row, beforeBytes=original['beforeBytes'])
+         wanted[rel] = row['sha256']
+-        applied_raw = read(local(app, rel))
+-        need(info(applied_raw) == {k: row[k] for k in ('sha256', 'bytes')}, 'Applied delta differs')
+-        applied_raw.decode('utf-8')
+-    need(wanted == expected == input_map(app), 'Current source scope differs')
++    need(sum(row['beforeSHA256'] is None for row in rows.values()) == 3, 'Exactly three additions required')
++    need(wanted == expected == input_map(app), 'Current source differs from exact reviewed delta')
+     qa, tallies, evidence = verify_qa(root, app, binding, expected)
+-    browser_raw = pinned(root, binding['scopedMazdaObservation'])
+-    browser = decoded(browser_raw)
+     portable = qa['artifacts'][ALIASES[0]]
+-    need(browser['schemaVersion'] == 'roadmark99.scoped-mazda-observation.v1' and browser['checkpoint'] == 99 and browser['browser'] == 'own VM Chromium' and browser['observedAtUTC'], 'Actual scoped Mazda observation required')
+-    need(browser['productionBuildID'] == qa['actualBuildID'] and browser['portableSHA256'] == portable['sha256'] and browser['portableBytes'] == portable['bytes'] and browser['baselineSourceSHA256'] == PINS['source98'][1] and browser['baselinePreviewSHA256'] == PINS['preview98'][1], 'Observed artifact identity differs')
+-    need(browser['candidateManifestSHA256'] == PINS['sourceCandidate'][1] and browser['qaCandidateManifestSHA256'] == PINS['candidate'][1] and browser['expectedInputsSHA256'] == PINS['expectedInputs'][1] and browser['sourceRevisionReviewSHA256'] == binding['sourceRevisionReview']['sha256'], 'Mazda observation/source review binding differs')
+-    need(all(browser.get(k) is v for k, v in OPEN.items()), 'Observation overstates verification')
+-    need(browser['prior98QAAndReflowAreHistoricalOnly'] is True and browser['prior96PerformanceIsHistoricalOnly'] is True, 'Historical evidence must not become fresh99 proof')
+-    need(browser['observations'] and browser['limitations'] and browser['checks'], 'Actual scoped CUA observations and caveats required')
++    artifact_verification = verify_portable_delta(root, app, binding, qa, anchors, evidence)
++    browser = decoded(pinned(root, binding['scopedMarketObservation']))
++    need(browser['schemaVersion'] == 'roadmark100.scoped-market-observation.v1' and browser['checkpoint'] == 100 and browser['browser'] == 'own VM Chromium' and browser['observedAtUTC'], 'Actual bounded market observation required')
++    need(browser['productionBuildID'] == qa['actualBuildID'] and browser['portableSHA256'] == portable['sha256'] and browser['portableBytes'] == portable['bytes'], 'Observed100 artifacts differ')
++    need(browser['candidateManifestSHA256'] == PINS['sourceCandidate'][1] and browser['qaCandidateManifestSHA256'] == PINS['candidate'][1] and browser['expectedInputsSHA256'] == PINS['expectedInputs'][1] and browser['sourceRevisionReviewSHA256'] == PINS['sourceReview'][1], 'Browser/source100 identity differs')
++    need(browser['baselineSourceSHA256'] == PINS['source99'][1] and browser['baselinePreviewSHA256'] == PINS['preview99'][1], 'Observed saved99 baseline differs')
++    need(all(browser.get(k) is v for k, v in OPEN.items()) and browser['prior99EvidenceIsHistoricalOnly'] is True, 'Bounded observation overstates fresh verification')
++    need(browser['observations'] and browser['limitations'] and browser['checks'], 'Actual observation text and caveats required')
+     disposition = browser['integrationDisposition']
+     need(disposition['decision'] in {'retain_scoped', 'experimental_unaccepted'} and type(disposition['checksSupportRetention']) is bool and disposition['reason'], 'Explicit integration disposition required')
+-    need(disposition['decision'] != 'retain_scoped' or disposition['checksSupportRetention'] is True, 'Scoped retention needs reviewed Mazda checks')
+     retaining = disposition['decision'] == 'retain_scoped'
++    need(not retaining or disposition['checksSupportRetention'] is True, 'Retention needs actual support')
+     semantic = browser['semanticReview']
+-    configurations = semantic['configurations']
+-    need(len(configurations) == 2 and {row['route'] for row in configurations} == set(REVIEWED99['detailRoutes']) and {row['grade'] for row in configurations} == {'E35 GT', 'E35 Azami'}, 'Exactly two reviewed source-bound Mazda configurations required')
+-    for row in configurations:
+-        need(row['sourceBoundOnly'] is True and row['rankingEligible'] is False and row['completeCurrentVehicleEligible'] is False, 'Brochure detail is not ranking or completeness admission')
+-        for field in ('manufacturerModelYear', 'batteryUsableKWh', 'batteryGrossKWh', 'normalizedCargoLitres', 'normalizedClimateZones', 'normalizedScreenInches'):
+-            need(field in row and row[field] is None, 'Unresolved normalized value must remain explicit null: ' + field)
+-    for field in ('twoSourceBoundConfigurationsOnly', 'rankingAndCompletenessRemainFalse', 'manufacturerMYVINBuildAndAvailabilityUnknownsRetained', 'batteryGrossUsableUnknownsRetained', 'cargoClimateScreenConflictsRetained', 'buyerSummaryGuardsReviewed', 'noUnreviewedSafetyColourPayloadOrDeliveryClaims', 'priorSourceEvidenceAndConflictsRetained'):
+-        need(semantic[field] is True, 'Required bounded Mazda semantic review missing: ' + field)
+-    need(semantic['evidence'], 'Actual source/semantic evidence required')
++    need(semantic['heldIds'] == HELD_IDS and semantic['changedFields'] == ['checkedAt', 'evidenceNote', 'limitations', 'sourceUrls'], 'Ten held objects/four fields differ')
++    for field in ('tenHeldEntriesOnly', 'noVehicleTrimTechnicalRankingCountOrCompletenessAdmission', 'orderAndStockUnknownsRetained', 'globalAustralianVariantTimingSeparated', 'researchProvenanceQualificationsRetained', 'originalModelYHeroAndNineSellingPointsUnchanged', 'allOtherBaselineInputsByteIdentical', 'eightUnresolvedLeadsAreStaticAuditDataNotVisibleUI'):
++        need(semantic[field] is True, 'Required bounded semantic review missing: ' + field)
++    need(semantic['evidence'], 'Actual semantic/preservation receipts required')
+     for ref in semantic['evidence']:
+         evidence[ref['path']] = pinned(root, ref)
+-    def measured(value):
+-        return type(value) in (int, float) and math.isfinite(value) and value >= 0
+-    observed, supporting = set(), set()
+-    required_checks = {(surface, width, 'detail', route) for surface in ('production', 'portable') for width in ('narrow', 'desktop') for route in REVIEWED99['detailRoutes']}
+-    required_checks |= {(surface, width, kind, None) for surface in ('production', 'portable') for width in ('narrow', 'desktop') for kind in ('discovery', 'compare', 'original_hero')}
++    observed = set()
++    required = {(surface, width, kind) for surface in ('production', 'portable') for width in ('desktop', 'narrow') for kind in ('market', 'original_hero')}
+     for check in browser['checks']:
+-        need(check['surface'] in {'production', 'portable'} and check['viewportClass'] in {'narrow', 'desktop'} and check['kind'] in {'detail', 'discovery', 'compare', 'original_hero'}, 'Wrong scoped browser case')
+-        need(check['method'] == 'CUA_visible_inspection' and check['measurementKind'] == 'actual_browser_geometry' and check['route'] and check['location'] and check['observed'] and check['limitations'], 'Actual visible and measured browser evidence missing')
++        key = (check['surface'], check['viewportClass'], check['kind'])
++        need(key in required and key not in observed, 'Unexpected/duplicate bounded browser case')
++        need(check['method'] == 'CUA_visible_inspection' and check['route'] and check['location'] and check['observed'] and check['limitations'] and check['viewportDescription'], 'Actual visible browser evidence missing')
+         width, document_width = check['viewportCSSWidth'], check['documentScrollWidth']
+-        need(measured(width) and width > 0 and measured(document_width) and document_width > 0, 'Actual CSS geometry missing')
+-        need((check['viewportClass'] == 'narrow' and 320 <= width <= 500) or (check['viewportClass'] == 'desktop' and width >= 1000), 'Actual viewport does not match declared coverage class')
+-        for field in ('nativeZoomPercent', 'viewportPhysicalWidth'):
+-            need(check[field] is None or (measured(check[field]) and check[field] > 0), 'Invalid independently observed viewport metadata')
+-        routes = check['configurationRoutes']
+-        if check['kind'] == 'detail':
+-            need(len(routes) == 1 and routes[0] in REVIEWED99['detailRoutes'] and check['route'] == routes[0], 'Detail case must bind one actual new route')
+-            key = (check['surface'], check['viewportClass'], check['kind'], routes[0])
+-        else:
+-            need((check['kind'] == 'original_hero' and routes == []) or (check['kind'] != 'original_hero' and len(routes) == 2 and set(routes) == set(REVIEWED99['detailRoutes'])), 'Discovery/compare must cover both new routes')
+-            key = (check['surface'], check['viewportClass'], check['kind'], None)
+-        fields = ('noEvidenceClippingObserved', 'heroAndNineSellingPointsUnchanged') if check['kind'] == 'original_hero' else ('noEvidenceClippingObserved', 'sourceAndEvidenceBehaviorReviewed', 'unknownsAndConflictWordingRetained', 'buyerSummaryGuardsRetained')
+-        need(all(type(check[field]) is bool for field in fields), 'Actual visible result booleans required')
+-        supported = document_width <= width + 1 and all(check[field] is True for field in fields)
+-        need(not retaining or supported, 'Retained Mazda integration has an unsupported observed case')
++        need(all(type(value) in (int, float) and math.isfinite(value) and value > 0 for value in (width, document_width)), 'Actual CSS geometry required')
++        need(check['measurementKind'] == 'actual_browser_geometry' and ((check['viewportClass'] == 'narrow' and 320 <= width <= 500) or (check['viewportClass'] == 'desktop' and width >= 1000)), 'Viewport coverage class differs from actual geometry')
++        need(type(check['supportsScopedRetention']) is bool, 'Actual scoped retention observation required')
++        need(not retaining or (check['supportsScopedRetention'] is True and document_width <= width + 1), 'Retaining with unsupported visible case or observed horizontal overflow')
++        ids = check['sampledHeldIds']
++        need(type(ids) is list and len(ids) == len(set(ids)) and set(ids) <= set(HELD_IDS), 'Unknown/duplicate visible sample ID')
++        need((key[2] == 'market' and set(ids) == {'bmw-i3', 'bmw-ix4'}) or (key[2] == 'original_hero' and ids == []), 'Only the two revised visible BMW records are required; unresolved leads are static audit-data scope')
++        evidence[check['evidence']['path']] = pinned(root, check['evidence'])
++        need(evidence[check['evidence']['path']], 'Empty visible observation evidence')
+         observed.add(key)
+-        if supported:
+-            supporting.add(key)
+-        ref = check['evidence']
+-        evidence[ref['path']] = pinned(root, ref)
+-        need(evidence[ref['path']], 'Empty browser evidence')
+-    need(required_checks <= observed, 'Actual production/portable narrow/desktop detail, discovery, pair/compare and original-hero coverage required')
+-    need(not retaining or required_checks <= supporting, 'Scoped retention requires supporting visible evidence for every required case')
+-    preservation = browser['evidencePreservation']
+-    for field in ('exactReviewedCandidateDelta', 'allOtherBaselineInputsByteIdentical', 'originalModelYHeroAndNineSellingPointsUnchanged', 'priorSourceCodeQAAndFailureHistoryRetained', 'freshnessPlaceholderUnchanged', 'emittedArtifactComparisonAccountsForReviewedCandidateDelta'):
+-        need(preservation[field] is True, 'Required evidence/source-preservation review missing: ' + field)
+-    for ref in preservation['evidence']:
+-        evidence[ref['path']] = pinned(root, ref)
+-    need(preservation['evidence'], 'Evidence-preservation receipts missing')
+-    for field in ('externalRunnerObservation', 'scopedMazdaObservation', 'sourceRevisionReview', 'repairApplicationReceipt', 'cumulativeSourceReview', 'saveToolingReview', 'successfulLaunchStdout', 'successfulLaunchStderr'):
++    need(observed == required, 'Eight bounded production/portable desktop/narrow market/hero checks required')
++    for field in ('externalRunnerObservation', 'scopedMarketObservation', 'saveToolingReview', 'portableArtifactVerification', 'successfulLaunchStdout', 'successfulLaunchStderr'):
+         row = binding[field]
+         evidence[row['path']] = pinned(root, row)
+-    # Every actual failed99 attempt is listed explicitly. All earlier failures,
+-    # including97 failures and98 quick retries, remain in the saved98 payload.
+-    need(type(binding['failedAndRetryAttempts']) is list, 'Explicit failure/retry inventory required')
+-    seen_failures = set()
+-    failed_outer_capture_scopes = []
++    # All earlier failures are preserved in the exact saved99 source payload.
++    # Any100 failure must keep its actual100 identity, logs and outer terminal.
++    need(type(binding['failedAndRetryAttempts']) is list, 'Explicit100 failure/retry inventory required')
++    seen_failures, failed_outer_capture_scopes = set(), []
+     for attempt in binding['failedAndRetryAttempts']:
+         result_path = attempt['qaResult']['path']
+         need(result_path not in seen_failures and result_path != binding['qaResult']['path'], 'Duplicate/current run in failed history')
+         seen_failures.add(result_path)
+         result_raw = pinned(root, attempt['qaResult'])
+-        failed = decoded(result_raw)
+-        failed_directory = local(root, attempt['qaResult']['path']).parent
+-        need(failed['schema'] == 'roadmark99.serial-qa.v1' and failed['passed'] is False and failed['runnerSHA256'] == PINS['runner'][1], 'Retained failed result was rewritten')
+-        admitted_failed_configurations = [
+-            {'baselineInputs': dict(zip(('path', 'sha256'), PINS['baselineInputs'])), 'expectedInputs': dict(zip(('path', 'sha256'), PINS[row['expectedInputsPin']])), 'candidate': dict(zip(('path', 'sha256'), PINS[row['qaCandidatePin']]))}
+-            for row in REVIEWED99['admittedFailedConfigurationPins']
+-        ]
+-        need(failed['configuration'] in admitted_failed_configurations, 'Failed attempt must retain its actual original or repaired source configuration')
+-        failed_configuration_bytes = {key: pinned(root, ref) for key, ref in failed['configuration'].items()}
+-        failed_expected = decoded(failed_configuration_bytes['expectedInputs'])
+-        failed_digest = sha(json.dumps(failed_expected, sort_keys=True, separators=(',', ':'), allow_nan=False).encode())
+-        need(decoded(read(failed_directory / 'frozen-inputs.json')) == failed_expected, 'Failed attempt frozen map was rebound or rewritten')
+-        need('frozenInputDigest' not in failed or failed['frozenInputDigest'] == failed_digest, 'Actual optional failed-result digest differs')
+-        failed_request = decoded(read(failed_directory / 'execution-request.json'))
+-        need(failed_request['configuration'] == failed['configuration'] and failed_request['runnerSHA256'] == failed['runnerSHA256'], 'Failed launch configuration differs')
++        failed, directory = decoded(result_raw), local(root, result_path).parent
++        need(failed['schema'] == 'roadmark99.serial-qa.v1' and failed['passed'] is False and failed['runnerSHA256'] == PINS['runner'][1], 'Retained100 failed result differs')
++        need(failed['configuration'] == qa['configuration'], 'Failed100 source changed; separately reviewed revision required')
++        need(decoded(read(directory / 'frozen-inputs.json')) == expected, 'Failed100 frozen source differs')
++        failed_digest = sha(json.dumps(expected, sort_keys=True, separators=(',', ':'), allow_nan=False).encode())
++        need('frozenInputDigest' not in failed or failed['frozenInputDigest'] == failed_digest, 'Failed100 digest differs')
++        request = decoded(read(directory / 'execution-request.json'))
++        need(request['configuration'] == failed['configuration'] and request['runnerSHA256'] == failed['runnerSHA256'], 'Failed100 original launch identity differs')
+         for stage in STAGES:
+-            stage_path = failed_directory / (stage + '.json')
++            stage_path = directory / (stage + '.json')
+             if stage_path.is_file():
+                 failed_stage = decoded(read(stage_path))
+-                need(failed_stage['inputDigestBefore'] == failed_digest and failed_stage['inputDigestAfter'] in (None, failed_digest), 'Failed stage source identity differs')
+-        for key, ref in failed['configuration'].items():
+-            # Baseline98 is still pinned/verified above and retained byte-for-byte
+-            # in the complete saved98 archive; do not redundantly admit applied98/
+-            # into the strictly99 research selection.
+-            if key != 'baselineInputs':
+-                evidence[ref['path']] = failed_configuration_bytes[key]
+-        if result_path in REVIEWED99['requiredFailedConfigurations']:
+-            required_config = REVIEWED99['requiredFailedConfigurations'][result_path]
+-            need(failed['configuration']['expectedInputs'] == dict(zip(('path', 'sha256'), PINS[required_config['expectedInputsPin']])) and failed['configuration']['candidate'] == dict(zip(('path', 'sha256'), PINS[required_config['qaCandidatePin']])), 'Known failure must retain its own actual source configuration')
+-        need({p.name for p in failed_directory.iterdir()} == set(failed['evidence']) | {'run-result.json'}, 'Retained failed attempt membership differs')
++                need(failed_stage['inputDigestBefore'] == failed_digest and failed_stage['inputDigestAfter'] in (None, failed_digest), 'Failed100 stage source differs')
++        need({p.name for p in directory.iterdir()} == set(failed['evidence']) | {'run-result.json'}, 'Failed100 evidence membership differs')
+         for filename, row in failed['evidence'].items():
+             need(Path(name(filename)).name == filename, 'Failed evidence must be flat')
+-            path = local(failed_directory, filename)
++            path = local(directory, filename)
+             data = read(path)
+-            need(info(data) == {k: row[k] for k in ('sha256', 'bytes')} and path.stat().st_mtime_ns == row['mtimeNs'], 'Retained failed attempt drifted')
++            need(info(data) == {k: row[k] for k in ('sha256', 'bytes')} and path.stat().st_mtime_ns == row['mtimeNs'], 'Failed100 evidence drift')
+             evidence[path.relative_to(root).as_posix()] = data
+-        failed_exit = decoded(pinned(root, attempt['externalRunnerObservation']))
+-        need(failed_exit['schemaVersion'] == 'roadmark99.external-runner-observation.v1' and failed_exit['qaResultSHA256'] == sha(result_raw) and failed_exit['runnerSHA256'] == failed['runnerSHA256'] and type(failed_exit['exitCode']) is int and failed_exit['exitCode'] != 0 and failed_exit['actualTerminalReviewed'] is True and failed_exit['observedAtUTC'], 'Actual retained external failure missing')
+-        terminal_evidence = failed_exit['terminalEvidence']
+-        if 'path' in terminal_evidence:
+-            evidence[terminal_evidence['path']] = pinned(root, terminal_evidence)
++        exit_row = decoded(pinned(root, attempt['externalRunnerObservation']))
++        need(exit_row['schemaVersion'] == 'roadmark100.external-runner-observation.v1' and exit_row['qaResultSHA256'] == sha(result_raw) and exit_row['runnerSHA256'] == PINS['runner'][1] and type(exit_row['exitCode']) is int and exit_row['exitCode'] != 0 and exit_row['actualTerminalReviewed'] is True and exit_row['observedAtUTC'], 'Genuine100 failure exit required')
++        terminal = exit_row['terminalEvidence']
++        if 'path' in terminal:
++            evidence[terminal['path']] = pinned(root, terminal)
+         else:
+-            # Preserve the genuine inline tool response in the pinned root
+-            # receipt. It is not converted into an invented execution artifact.
+-            tool_result = terminal_evidence['toolResult']
+-            need(type(tool_result) is dict and tool_result['exit_code'] == failed_exit['exitCode'] and type(tool_result['output']) is str and tool_result['chunk_id'], 'Actual inline failure terminal differs')
+-        for field in ('qaResult', 'externalRunnerObservation'):
+-            ref = attempt[field]
+-            evidence[ref['path']] = pinned(root, ref)
+-        if 'launchToolExcerpts' in attempt:
+-            need('launchStdout' not in attempt and 'launchStderr' not in attempt, 'Merged tool excerpts must not masquerade as separate outer streams')
+-            ref = attempt['launchToolExcerpts']
+-            excerpts_raw = pinned(root, ref)
+-            excerpts = decoded(excerpts_raw)
+-            need(excerpts['schema'] == 'roadmark99.outer-tool-output-excerpts.v1' and excerpts['captureMode'] == 'merged_exec_tool_output' and excerpts['stdoutStderrSeparated'] is False and excerpts['completeOuterStreamsRetained'] is False and excerpts['note'], 'Explicit partial/merged outer capture scope required')
+-            need(type(excerpts['sessionId']) is int and excerpts['sessionId'] > 0 and type(excerpts['excerpts']) is list and excerpts['excerpts'], 'Actual tool session/excerpts missing')
+-            for item in excerpts['excerpts']:
+-                need(type(item['chunk_id']) is str and item['chunk_id'] and type(item['output']) is str, 'Actual tool excerpt fields missing')
+-                need('exit_code' not in item or (type(item['exit_code']) is int and item['exit_code'] == failed_exit['exitCode']), 'Tool excerpt exit differs from real failure')
+-            terminal_result = decoded(pinned(root, terminal_evidence))['toolResult'] if 'path' in terminal_evidence else terminal_evidence['toolResult']
+-            need(terminal_result['exit_code'] == failed_exit['exitCode'] and any(all(item.get(key) == terminal_result[key] for key in ('chunk_id', 'output', 'exit_code')) for item in excerpts['excerpts']), 'Merged excerpts do not retain the exact real terminal return')
+-            evidence[ref['path']] = excerpts_raw
+-            failed_outer_capture_scopes.append({'qaResult': attempt['qaResult'], 'launchToolExcerpts': ref, 'stdoutStderrSeparated': False, 'completeOuterStreamsRetained': False, 'note': excerpts['note']})
+-        else:
+-            for field in ('launchStdout', 'launchStderr'):
+-                ref = attempt[field]
+-                evidence[ref['path']] = pinned(root, ref)
+-            failed_outer_capture_scopes.append({'qaResult': attempt['qaResult'], 'captureMode': 'actual_separate_launch_files', 'launchStdout': attempt['launchStdout'], 'launchStderr': attempt['launchStderr']})
+-    need(set(REVIEWED99['requiredFailedAttemptPaths']) <= seen_failures, 'Known failed99 attempt omitted; actual sealed failure and outer exit are required')
++            result = terminal['toolResult']
++            need(type(result) is dict and result['exit_code'] == exit_row['exitCode'] and type(result['output']) is str and result['chunk_id'], 'Actual failed terminal differs')
++        for field in ('qaResult', 'externalRunnerObservation', 'launchStdout', 'launchStderr'):
++            row = attempt[field]
++            evidence[row['path']] = pinned(root, row)
++        failed_outer_capture_scopes.append(attempt)
+     listed = set()
+     for row in binding['researchFiles']:
+         need(row['path'] not in listed, 'Duplicate research reference')
+         listed.add(row['path'])
+         evidence[row['path']] = pinned(root, row)
+-    need(REQUIRED_RESEARCH | set(REVIEWED99['requiredResearchPaths']) <= listed, 'Required source/review/quick-check history omitted')
+-    # Explicitly freeze everything selected for the concise research supplement.
+-    for key in ('sourceCandidate', 'candidate', 'expectedInputs', 'runner', 'initialSourceCandidate', 'initialExpectedInputs', 'initialQACandidate', 'secondSourceCandidate', 'secondExpectedInputs', 'secondQACandidate', 'thirdSourceCandidate', 'thirdExpectedInputs', 'thirdQACandidate', 'repairCandidate', 'typeRepairCandidate', 'scopedTypeRepairCandidate'):
++    need(REQUIRED_RESEARCH <= listed, 'Required100 source/research/review context omitted')
++    for path, digest in RESEARCH_PINS.items():
++        need(sha(evidence[path]) == digest, 'Original text provenance metadata changed')
++    for key in ('sourceCandidate', 'originalCandidate', 'candidate', 'expectedInputs', 'runner', 'sourceReview', 'applicationReceipt'):
+         evidence[PINS[key][0]] = anchors[key]
+     evidence[args.binding] = binding_raw
+-    for path, raw in evidence.items():
++    evidence['roadmark-research/checkpoint100-save-candidate/package_checkpoint100.py'] = read(Path(__file__))
++    evidence['roadmark-research/checkpoint100-save-candidate/join_recovered100_source.py'] = joiner_raw
++    for path, data in evidence.items():
+         lower = path.lower()
+-        need(path.startswith(ALLOWED_RESEARCH) and Path(path).suffix.lower() in {'.json', '.jsonl', '.log', '.md', '.txt', '.py', '.mjs', '.patch'}, 'Unapproved research path/type: ' + path)
+-        need(not any(x in lower for x in ('capture', 'screenshot', 'private', 'secret', 'queue', 'mercedes', 'technical-candidate')), 'Sensitive/raw/unrelated research path rejected: ' + path)
+-        need(len(raw) <= 2 * 1024 * 1024, 'Research file exceeds concise limit: ' + path)
+-        raw.decode('utf-8')
++        need((path.startswith(ALLOWED_RESEARCH) or path in RESEARCH_PINS) and (Path(path).suffix.lower() in {'.json', '.jsonl', '.log', '.md', '.txt', '.py', '.mjs', '.patch', '.diff'} or Path(path).name == 'SHA256SUMS'), 'Unapproved research text path/type: ' + path)
++        need(not any(term in lower for term in ('screenshot', 'private', 'secret', 'queue')) and ('capture' not in lower or path in RESEARCH_PINS), 'Sensitive/raw/unrelated research rejected: ' + path)
++        need(len(data) <= 2 * 1024 * 1024, 'Research file exceeds concise limit: ' + path)
++        data.decode('utf-8')
+     need(sum(map(len, evidence.values())) <= 12 * 1024 * 1024, 'Research supplement exceeds12MiB')
+-    prior = zip_read(local(root, PINS['source98'][0]))
+-    need(prior['roadmark/recovery98/research/roadmark-research/applied98/expected-inputs.json'] == anchors['baselineInputs'], 'Exact baseline98 map history differs')
++    prior = zip_read(local(root, PINS['source99'][0]))
++    need(prior['roadmark/recovery99/research/roadmark-research/applied99/revision4/expected-inputs.json'] == anchors['baselineInputs'], 'Exact99 map history differs')
+     old_manifest = prior['roadmark/CHECKPOINT-SOURCE-MANIFEST.json']
+     old = decoded(old_manifest)
+-    prior_inventory = {r['path']: {'sha256': r['sha256'], 'bytes': r['bytes']} for r in old['files']}
+-    need(set(prior) == set(prior_inventory) | {'roadmark/CHECKPOINT-SOURCE-MANIFEST.json'}, 'Prior source inventory differs')
+-    need(all(info(prior[p]) == row for p, row in prior_inventory.items()), 'Prior payload drift')
+-    need(old['pairId'] == saved98['pairId'], 'Prior saved/source pair differs')
+-    excluded = {r['path'] for r in old['excludedQABrowserRasters']}
+-    need(excluded.isdisjoint(expected) and all('roadmark/' + p not in prior for p in excluded) and all('roadmark/' + p not in prior for p in ALIASES), 'Previously excluded output entered source')
+-    need(all(sha(prior['roadmark/' + p]) == value for p, value in baseline.items()), 'Saved98/input map mismatch')
++    prior_inventory = {row['path']: {'sha256': row['sha256'], 'bytes': row['bytes']} for row in old['files']}
++    need(len(prior_inventory) == len(old['files']) and set(prior) == set(prior_inventory) | {'roadmark/CHECKPOINT-SOURCE-MANIFEST.json'}, 'Prior99 inventory differs')
++    need(all(info(prior[path]) == row for path, row in prior_inventory.items()) and old['pairId'] == saved99['pairId'], 'Prior99 payload or pair differs')
++    excluded = {row['path'] for row in old['excludedQABrowserRasters']}
++    need(excluded.isdisjoint(expected) and all('roadmark/' + path not in prior for path in excluded) and all('roadmark/' + path not in prior for path in ALIASES), 'Previously excluded output entered source')
++    need(all(sha(prior['roadmark/' + path]) == digest for path, digest in baseline.items()), 'Saved99 input map mismatch')
+     for rel, row in rows.items():
+-        if row['beforeSHA256'] is not None:
+-            need(info(prior['roadmark/' + rel]) == {'sha256': row['beforeSHA256'], 'bytes': row['beforeBytes']}, 'Saved98 exact replacement preimage differs')
++        if row['beforeSHA256'] is None:
++            need('roadmark/' + rel not in prior, 'New100 path exists in saved99')
+         else:
+-            need('roadmark/' + rel not in prior, 'New99 path already exists in saved98 payload')
+-    pair = 'roadmark-recovered99-' + portable['sha256'][:16] + '-' + qa['actualBuildID']
+-    scope = dict(OPEN, fullSerialQAPassed=True, qaResult=binding['qaResult'], actualExternalExit=binding['externalRunnerObservation'], actualTestTallies=tallies, failedAttemptOuterCaptureScopes=failed_outer_capture_scopes, scopedMazdaObservation=browser, boundary=qa['boundary'], prior98QAIsHistoricalOnly=True, prior98PerformanceIsHistoricalOnly=True, prior96PerformanceIsHistoricalOnly=True, independent98OutputEquivalenceClaimed=False, upstreamOriginalResearchRecoveryIncomplete=True)
+-    common = {'schemaVersion': 'roadmark99.checkpoint-manifest.v1', 'applicationCheckpoint': 99, 'pairId': pair, 'createdAtUTC': dt.datetime.now(dt.timezone.utc).isoformat(), 'productionBuildId': qa['actualBuildID'], 'portableIndexSHA256': portable['sha256'], 'portableIndexBytes': portable['bytes'], 'integrationDisposition': disposition, 'verificationScope': scope, 'baseline98': {'source': dict(path=PINS['source98'][0], **info(anchors['source98'])), 'preview': dict(path=PINS['preview98'][0], **info(anchors['preview98'])), 'saveReceipt': dict(path=PINS['saved98'][0], **info(anchors['saved98']))}, 'sourceScope': {'baselineInputCount': len(baseline), 'finalInputCount': len(expected), 'candidateManifestSHA256': PINS['sourceCandidate'][1], 'qaCandidateManifestSHA256': PINS['candidate'][1], 'expectedInputsSHA256': PINS['expectedInputs'][1], 'changes': list(rows.values())}, 'releaseApproved': False}
+-    notice = ('ROADMARK99 SOURCE-BOUND MAZDA CHECKPOINT\n\nPair: ' + pair + '\nIntegration disposition: ' + disposition['decision'] + '\nReason: ' + disposition['reason'] + '\n\nTwo source-bound Mazda E35 GT/E35 Azami detail configurations are included only within the reviewed candidate delta. An experimental_unaccepted disposition does not establish an accepted integration; retain saved98 as fallback. Manufacturer MY, VIN/build applicability, accepted orders and present unsold physical stock remain unverified. Gross/usable battery and normalized cargo/climate/screen conflicts remain unresolved. Ranking and completeness admission remain false. Buyer-summary guards and original Model Y hero plus nine selling points are retained. All earlier source, code, QA failures and historical payloads remain; replaced preimages, the old source manifest and actual98 save evidence are preserved separately. Fresh serial QA and scoped production/portable browser evidence are recorded. Prior98 reflow/QA and earlier performance evidence remain historical. Real phones, accelerated WebGL, full journeys, sustained stability, full visual/release approval, public export and complete upstream research recovery remain open. No deployment or publication is implied.\n\nSource is shipped in numbered parts plus a recovery kit. Extract only the kit, keep every numbered ZIP beside its manifest, and run its joiner with Python3. The joiner reconstructs the full source ZIP; it does not execute the application. Keep the full source ZIP locally. Never treat a preview as source recovery.\n').encode()
++            need(info(prior['roadmark/' + rel]) == {'sha256': row['beforeSHA256'], 'bytes': row['beforeBytes']}, 'Saved99 exact preimage differs')
++    pair = 'roadmark-recovered100-' + portable['sha256'][:16] + '-' + qa['actualBuildID']
++    scope = dict(OPEN, fullSerialQAPassed=True, qaRunnerMechanicsSchema='roadmark99.serial-qa.v1', actualApplicationCheckpoint=100, qaResult=binding['qaResult'], actualExternalExit=binding['externalRunnerObservation'], actualTestTallies=tallies, failedAttemptOuterCaptureScopes=failed_outer_capture_scopes, scopedMarketObservation=browser, portableArtifactVerification=binding['portableArtifactVerification'], boundary=qa['boundary'], prior99EvidenceIsHistoricalOnly=True, upstreamOriginalResearchRecoveryIncomplete=True)
++    common = {'schemaVersion': 'roadmark100.checkpoint-manifest.v1', 'applicationCheckpoint': 100, 'pairId': pair, 'createdAtUTC': dt.datetime.now(dt.timezone.utc).isoformat(), 'productionBuildId': qa['actualBuildID'], 'portableIndexSHA256': portable['sha256'], 'portableIndexBytes': portable['bytes'], 'integrationDisposition': disposition, 'verificationScope': scope, 'baseline99': {'source': dict(path=PINS['source99'][0], **info(anchors['source99'])), 'preview': dict(path=PINS['preview99'][0], **info(anchors['preview99'])), 'saveReceipt': dict(path=PINS['saved99'][0], **info(anchors['saved99']))}, 'sourceScope': {'baselineInputCount': len(baseline), 'finalInputCount': len(expected), 'candidateManifestSHA256': PINS['sourceCandidate'][1], 'qaCandidateManifestSHA256': PINS['candidate'][1], 'expectedInputsSHA256': PINS['expectedInputs'][1], 'changes': list(rows.values())}, 'releaseApproved': False}
++    notice = ('ROADMARK100 HELD-MARKET EVIDENCE CHECKPOINT\n\nPair: ' + pair + '\nIntegration disposition: ' + disposition['decision'] + '\nReason: ' + disposition['reason'] + '\n\nTen existing held market entries receive evidence URL, check-date, note and limitation amendments only. There is no new vehicle, trim, technical, model-year, ranking, count, completeness, accepted-order or stock admission. The original Model Y hero and nine selling points remain unchanged. All earlier source, code, failures and historical payloads remain byte-for-byte except the two explicitly replaced paths; their exact saved99 preimages, previous source manifest and actual99 save evidence are preserved separately. Three exact reviewed QA/test paths are added. Fresh100 serial QA uses the unchanged reviewed99 runner with actual100 configuration; schema99 is a mechanics label, not a reused99 pass. Current production/portable desktop/narrow observations cover only the two revised visible BMW records and original hero. The eight commercial/Mercedes unresolved leads are checked as static audit data and are not displayed by the current market UI. Previous99 Mazda/mobile/reflow evidence remains historical. Real phones, accelerated WebGL, full journeys, sustained stability, full visual/release approval, public export and complete upstream research recovery remain open. No deployment or publication is implied.\n\nSource is shipped in numbered parts plus a recovery kit. Extract only the kit, keep every numbered ZIP beside its manifest, and run its joiner with Python3. The joiner reconstructs the full source ZIP; it never executes the application. Keep the full source ZIP locally. Never treat a preview as source recovery.\n').encode()
+     source = dict(prior)
+     source.pop('roadmark/CHECKPOINT-SOURCE-MANIFEST.json')
+-    additions = {'roadmark/recovery99/history/checkpoint98-source-manifest.json': old_manifest, 'roadmark/recovery99/history/checkpoint98-correlated-save-receipt.json': anchors['saved98'], 'roadmark/recovery99/history/checkpoint98-actual-helper-results.json': anchors['saved98helper'], 'roadmark/recovery99/history/checkpoint98-upload-plan.json': anchors['saved98plan'], 'READ-ME-FIRST-ROADMARK99.txt': notice, 'roadmark/RECOVERY99-READ-ME-FIRST.txt': notice}
+-    additions.update({'roadmark/recovery99/history/checkpoint98-preimages/' + rel: prior['roadmark/' + rel] for rel, row in rows.items() if row['beforeSHA256'] is not None})
+-    additions.update({'roadmark/recovery99/history/' + phase + '-superseded-postimages/' + rel: raw for (phase, rel), raw in historical_source.items()})
+-    additions.update({'roadmark/recovery99/research/' + path: raw for path, raw in evidence.items()})
+-    need(set(additions).isdisjoint(source), 'New history/research path collides')
++    additions = {'roadmark/recovery100/history/checkpoint99-source-manifest.json': old_manifest, 'roadmark/recovery100/history/checkpoint99-correlated-save-receipt.json': anchors['saved99'], 'roadmark/recovery100/history/checkpoint99-actual-helper-results.json': anchors['saved99helper'], 'roadmark/recovery100/history/checkpoint99-upload-plan.json': anchors['saved99plan'], 'READ-ME-FIRST-ROADMARK100.txt': notice, 'roadmark/RECOVERY100-READ-ME-FIRST.txt': notice}
++    additions.update({'roadmark/recovery100/history/checkpoint99-preimages/' + rel: prior['roadmark/' + rel] for rel, row in rows.items() if row['beforeSHA256'] is not None})
++    additions.update({'roadmark/recovery100/research/' + path: data for path, data in evidence.items()})
++    need(set(additions).isdisjoint(source), 'New100 recovery path collides')
+     source.update(additions)
+     for rel in rows:
+         source['roadmark/' + rel] = read(local(app, rel))
+-    for p, raw in prior.items():
+-        if p not in {'roadmark/CHECKPOINT-SOURCE-MANIFEST.json', *('roadmark/' + p for p in rows)}:
+-            need(source[p] == raw, 'Unrelated98 payload changed: ' + p)
+-    source['roadmark/CHECKPOINT-SOURCE-MANIFEST.json'] = encoded(dict(common, role='source', files=inventory(source), excludedQABrowserRasters=old['excludedQABrowserRasters'], portablePreviewArchive='Roadmark-recovered-99-portable-preview.zip'))
++    for path, data in prior.items():
++        if path not in {'roadmark/CHECKPOINT-SOURCE-MANIFEST.json', *('roadmark/' + rel for rel in rows)}:
++            need(source[path] == data, 'Unrelated99 payload changed: ' + path)
++    source['roadmark/CHECKPOINT-SOURCE-MANIFEST.json'] = encoded(dict(common, role='source', files=inventory(source), excludedQABrowserRasters=old['excludedQABrowserRasters'], portablePreviewArchive='Roadmark-recovered-100-portable-preview.zip'))
+     output = local(root, args.output)
+     need(output.parent.is_dir() and not output.exists() and not output.resolve().is_relative_to(app), 'Output must be new, external, with existing parent')
+     output.mkdir()
+-    source_path = output / 'Roadmark-recovered-99-source.zip'
++    source_path = output / 'Roadmark-recovered-100-source.zip'
+     zip_write(source_path, source)
+     full = dict(filename=source_path.name, **info(read(source_path)), role='source', operation='create', chatDelivery=False)
+     preview = {'roadmark/' + p: read(local(app, p)) for p in ALIASES}
+-    preview.update({'READ-ME-FIRST-ROADMARK99.txt': notice, 'roadmark/OPEN-PORTABLE-PREVIEW99.txt': b'Open index.html or index-b.html in a browser. This is a portable preview, not the source archive.\n'})
++    preview.update({'READ-ME-FIRST-ROADMARK100.txt': notice, 'roadmark/OPEN-PORTABLE-PREVIEW100.txt': b'Open index.html or index-b.html in a browser. This is a portable preview, not the source archive.\n'})
+     preview['roadmark/CHECKPOINT-PREVIEW-MANIFEST.json'] = encoded(dict(common, role='preview', files=inventory(preview), sourceArchive=full))
+-    preview_path = output / 'Roadmark-recovered-99-portable-preview.zip'
++    preview_path = output / 'Roadmark-recovered-100-portable-preview.zip'
+     zip_write(preview_path, preview)
+     research = {'research/' + path: raw for path, raw in evidence.items()}
+-    research['READ-ME-FIRST-ROADMARK99.txt'] = notice
++    research['READ-ME-FIRST-ROADMARK100.txt'] = notice
+     research['RESEARCH-MANIFEST.json'] = encoded(dict(common, role='concise_research_supplement', files=inventory(research), notOriginalResearchIndex79=True))
+-    research_path = output / 'Roadmark-99-recovery-research-supplement.zip'
++    research_path = output / 'Roadmark-100-recovery-research-supplement.zip'
+     zip_write(research_path, research)
+     source_bytes, parts = read(source_path), []
+     for offset in range(0, len(source_bytes), CHUNK):
+         number = len(parts) + 1
+         payload = source_bytes[offset:offset + CHUNK]
+-        member = 'roadmark-source-99.part%02d.bin' % number
+-        path = output / ('Roadmark-source-99-chat-part-%d.zip' % number)
++        member = 'roadmark-source-100.part%02d.bin' % number
++        path = output / ('Roadmark-source-100-chat-part-%d.zip' % number)
+         zip_write(path, {member: payload}, stored=True)
+         parts.append(dict(filename=path.name, **info(read(path)), member=member, payloadBytes=len(payload), payloadSHA256=sha(payload), role='source_part', operation='create', chatDelivery=True))
+-    part_manifest = {'schemaVersion': 'roadmark99.source-parts.v1', 'applicationCheckpoint': 99, 'pairId': pair, 'chunkBytes': CHUNK, 'originalFilename': full['filename'], 'originalBytes': full['bytes'], 'originalSHA256': full['sha256'], 'parts': parts}
+-    kit_files = {'source-parts.json': encoded(part_manifest), 'join_recovered99_source.py': joiner_raw, 'README.txt': notice}
+-    kit_path = output / 'Roadmark-source-99-recovery-kit.zip'
++    part_manifest = {'schemaVersion': 'roadmark100.source-parts.v1', 'applicationCheckpoint': 100, 'pairId': pair, 'chunkBytes': CHUNK, 'originalFilename': full['filename'], 'originalBytes': full['bytes'], 'originalSHA256': full['sha256'], 'parts': parts}
++    kit_files = {'source-parts.json': encoded(part_manifest), 'join_recovered100_source.py': joiner_raw, 'README.txt': notice}
++    kit_path = output / 'Roadmark-source-100-recovery-kit.zip'
+     zip_write(kit_path, kit_files)
+     # Execute bytes read back from the shipped kit, not a separate implementation.
+     recovered_kit = zip_read(kit_path)
+@@ -591,7 +454,7 @@
+         write(test_root / filename, raw)
+     for part in parts:
+         write(test_root / part['filename'], read(output / part['filename']))
+-    argv = [sys.executable, '-B', str(test_root / 'join_recovered99_source.py'), '--parts-directory', str(test_root)]
++    argv = [sys.executable, '-B', str(test_root / 'join_recovered100_source.py'), '--parts-directory', str(test_root)]
+     started = dt.datetime.now(dt.timezone.utc).isoformat()
+     proc = subprocess.run(argv, capture_output=True, text=True, check=False)
+     write(test_root / 'stdout.log', proc.stdout.encode())
+@@ -600,7 +463,7 @@
+     joined = read(test_root / full['filename'])
+     result = decoded(proc.stdout)
+     need(joined == source_bytes and result['sha256'] == full['sha256'] and result['bytes'] == full['bytes'] and result['pairId'] == pair, 'Shipped joiner reconstruction differs')
+-    self_test = {'schemaVersion': 'roadmark99.kit-self-test.v1', 'argv': argv, 'startedAtUTC': started, 'finishedAtUTC': dt.datetime.now(dt.timezone.utc).isoformat(), 'exitCode': proc.returncode, 'result': result, 'exactBytesReassembled': True, 'applicationExecuted': False, 'kitSHA256': sha(read(kit_path)), 'shippedJoinerSHA256': sha(recovered_kit['join_recovered99_source.py']), 'stdout': dict(path='joiner-self-test/stdout.log', **info(proc.stdout.encode())), 'stderr': dict(path='joiner-self-test/stderr.log', **info(proc.stderr.encode()))}
++    self_test = {'schemaVersion': 'roadmark100.kit-self-test.v1', 'argv': argv, 'startedAtUTC': started, 'finishedAtUTC': dt.datetime.now(dt.timezone.utc).isoformat(), 'exitCode': proc.returncode, 'result': result, 'exactBytesReassembled': True, 'applicationExecuted': False, 'kitSHA256': sha(read(kit_path)), 'shippedJoinerSHA256': sha(recovered_kit['join_recovered100_source.py']), 'stdout': dict(path='joiner-self-test/stdout.log', **info(proc.stdout.encode())), 'stderr': dict(path='joiner-self-test/stderr.log', **info(proc.stderr.encode()))}
+     write(output / 'joiner-self-test-receipt.json', encoded(self_test))
+     write(output / 'source-parts.json', encoded(part_manifest))
+     uploads = list(parts)
+@@ -616,7 +479,7 @@
+         need(read(local(root, path)) == raw, 'Research changed during packaging')
+     for key, (path, digest) in PINS.items():
+         need(sha(read(local(root, path))) == digest, 'Fallback/anchor changed during packaging')
+-    plan = {'schemaVersion': 'roadmark99.upload-plan.v1', 'applicationCheckpoint': 99, 'pairId': pair, 'status': 'local_archives_verified_not_uploaded', 'allLibraryItemsNewCreates': True, 'sourcePartsAlwaysProvidedForChat': True, 'fullSourceLibrarySaveRequested': full['bytes'] < POLICY, 'localUploadPolicyBytes': POLICY, 'genericHelperSizeCapVerified': False, 'fullSourceArchive': full, 'joinerSelfTest': dict(path='joiner-self-test-receipt.json', **info(encoded(self_test))), 'binding': dict(path=args.binding, **info(binding_raw)), 'packagerSHA256': args.approved_packager_sha256, 'joinerSHA256': args.approved_joiner_sha256, 'uploads': uploads, 'immutable98FallbackRetained': True, 'releaseApproved': False}
++    plan = {'schemaVersion': 'roadmark100.upload-plan.v1', 'applicationCheckpoint': 100, 'pairId': pair, 'status': 'local_archives_verified_not_uploaded', 'allLibraryItemsNewCreates': True, 'sourcePartsAlwaysProvidedForChat': True, 'fullSourceLibrarySaveRequested': full['bytes'] < POLICY, 'localUploadPolicyBytes': POLICY, 'genericHelperSizeCapVerified': False, 'fullSourceArchive': full, 'joinerSelfTest': dict(path='joiner-self-test-receipt.json', **info(encoded(self_test))), 'binding': dict(path=args.binding, **info(binding_raw)), 'packagerSHA256': args.approved_packager_sha256, 'joinerSHA256': args.approved_joiner_sha256, 'uploads': uploads, 'immutable99FallbackRetained': True, 'releaseApproved': False}
+     write(output / 'upload-plan.json', encoded(plan))
+     request = {'uploads': [{'local_path': str(output / row['filename']), 'purpose': 'create_library_file', 'library_artifact_type': 'other'} for row in uploads]}
+     write(output / 'library-create-request.json', encoded(request))
+--- roadmark-research/checkpoint99-save-candidate/join_recovered99_source.py
++++ roadmark-research/checkpoint100-save-candidate/join_recovered100_source.py
+@@ -1,5 +1,5 @@
+ #!/usr/bin/env python3
+-"""Reassemble source99 parts after verifying every wrapper and payload hash.
++"""Reassemble source100 parts after verifying every wrapper and payload hash.
+ 
+ Extract the recovery kit into a folder containing all numbered part ZIPs.
+ This program creates only the source ZIP; it never extracts or executes the app.
+@@ -47,9 +47,9 @@
+     manifest_path = root / 'source-parts.json'
+     need(not manifest_path.is_symlink(), 'Manifest symlink rejected')
+     manifest = json.loads(manifest_path.read_bytes(), object_pairs_hook=unique)
+-    need(manifest['schemaVersion'] == 'roadmark99.source-parts.v1' and manifest['applicationCheckpoint'] == 99 and manifest['chunkBytes'] == 16 * 1024 * 1024, 'Wrong parts contract')
++    need(manifest['schemaVersion'] == 'roadmark100.source-parts.v1' and manifest['applicationCheckpoint'] == 100 and manifest['chunkBytes'] == 16 * 1024 * 1024, 'Wrong parts contract')
+     need(re.fullmatch('[0-9a-f]{64}', manifest['originalSHA256']) and type(manifest['originalBytes']) is int and manifest['originalBytes'] > 0, 'Invalid original identity')
+-    need(manifest['originalFilename'] == 'Roadmark-recovered-99-source.zip', 'Unexpected output name')
++    need(manifest['originalFilename'] == 'Roadmark-recovered-100-source.zip', 'Unexpected output name')
+     target = output / filename(manifest['originalFilename'])
+     need(not target.exists() and not target.is_symlink(), 'Output exists; no overwrite')
+     parts = manifest['parts']
+@@ -57,8 +57,8 @@
+     chunks = []
+     for number, part in enumerate(parts, 1):
+         name = filename(part['filename'])
+-        need(name == 'Roadmark-source-99-chat-part-%d.zip' % number, 'Unexpected part name/order')
+-        member = 'roadmark-source-99.part%02d.bin' % number
++        need(name == 'Roadmark-source-100-chat-part-%d.zip' % number, 'Unexpected part name/order')
++        member = 'roadmark-source-100.part%02d.bin' % number
+         need(part['member'] == member, 'Wrong part member')
+         path = root / name
+         need(not path.is_symlink() and path.is_file(), 'Missing/unsafe part')
+@@ -77,7 +77,7 @@
+     with target.open('xb') as destination:
+         destination.write(result)
+     need(sha(target.read_bytes()) == manifest['originalSHA256'] and target.stat().st_size == len(result), 'Written source mismatch')
+-    print(json.dumps({'schemaVersion': 'roadmark99.joiner-result.v1', 'status': 'reassembled_and_verified', 'pairId': manifest['pairId'], 'filename': target.name, 'bytes': len(result), 'sha256': sha(result), 'applicationExecuted': False}))
++    print(json.dumps({'schemaVersion': 'roadmark100.joiner-result.v1', 'status': 'reassembled_and_verified', 'pairId': manifest['pairId'], 'filename': target.name, 'bytes': len(result), 'sha256': sha(result), 'applicationExecuted': False}))
+ 
+ 
+ if __name__ == '__main__':
+--- roadmark-research/checkpoint99-save-candidate/verify_checkpoint99_saves.py
++++ roadmark-research/checkpoint100-save-candidate/verify_checkpoint100_saves.py
+@@ -13,48 +13,9 @@
+ import re
+ import sys
+ 
+-PRIOR = ('roadmark-recovery/final98-review/correlated-save-receipt.json', 'bf0eb155dcd0e44d77e0d5027657d063d0c70631c6753f74260b50d3f104e916')
+-PRIOR_HELPER = ('roadmark-recovery/final98-review/actual-helper-results.json', '6fd08879ea5bfe945c6b8a8716d71f1ac632cb0cdd6689b95f2901575fa32112')
+-PROTECTED_EARLIER_IDS = {
+-    'libfile_0c2af50fad3881919851f3728b506be7',
+-    'libfile_1525c14a8aa4819191c095600f897d34',
+-    'libfile_1ea206b403f48191825690b9b455b21e',
+-    'libfile_2072ae586eb88191a3f08e3bdda2abeb',
+-    'libfile_27ab5129a6788191ad8ac343b706de19',
+-    'libfile_2cd9ab40f714819192cd6af94341abd8',
+-    'libfile_3d5976f913dc8191ad5078a7c37f9e71',
+-    'libfile_4d421f590fbc8191954f4c06a79ca634',
+-    'libfile_4db08d74cdf881919c71d26ae75dc26f',
+-    'libfile_4dcf0d7fcf488191b7d658547498bad4',
+-    'libfile_51b7321f2b9881918fba32743baaefdb',
+-    'libfile_54928bae13448191a73a50e652f309ac',
+-    'libfile_5db2ea332b788191ae18182ed6505cc9',
+-    'libfile_5f7ba4b42dec81918884b41998f95952',
+-    'libfile_687dbaeb797081918cfc4780c7dd2acc',
+-    'libfile_6c04b112e8948191abbef4a6c7c0cb56',
+-    'libfile_757ef78819408191a590c5593888467b',
+-    'libfile_76ea97ed49ac819192a9ae5bc0f006bb',
+-    'libfile_79dc7785f4208191a4d31f1025c311b3',
+-    'libfile_8089aa3d019c8191be242847f158400b',
+-    'libfile_85238a65ba3c8191a33d326c66c2782d',
+-    'libfile_8831c2a6a158819187e606994428ed02',
+-    'libfile_88e02edffb3481918debbba3a4216c69',
+-    'libfile_8d99f8dbf3688191afd4abf1e501a8d8',
+-    'libfile_8e2b0cfb395c819188950e493311bd14',
+-    'libfile_8f6cc6ed4ca08191864212ab3f55f4e8',
+-    'libfile_9620921dd9648191b6da2a70dda71ea8',
+-    'libfile_9c3c3c5746c48191866174412f1311e2',
+-    'libfile_a1dbfd71d6c4819181c337efc5acc641',
+-    'libfile_aa513cea2a64819191f9447d66376019',
+-    'libfile_ac54bb7148388191a7c60cb486f83384',
+-    'libfile_bc094b5c14d48191be4393d5195876f5',
+-    'libfile_bc0b2cecd5f081919b43ef57a109d24c',
+-    'libfile_ca2df87cb9088191bbeb0d487d2c5bef',
+-    'libfile_cf8908bb98688191a615333a425c9474',
+-    'libfile_d5f1a4f2c99c8191b0d4a51fc3170dd4',
+-    'libfile_d824bfda103c8191a1d665e289931632',
+-    'libfile_fb159411750c8191b16edb10fd69e5c1',
+-}
++PRIOR = ('roadmark-recovery/final99-review/correlated-save-receipt.json', '71f2234b1d225cec88384ae056052270de6777aad3e25e7a296d47562c43435e')
++PRIOR_HELPER = ('roadmark-recovery/final99-review/library-upload.stdout.json', '17764d775ba36041aa2424cd323efc8071320de231ab42db19a897df23d9b5ca')
++PROTECTED_EARLIER_IDS = {'libfile_1525c14a8aa4819191c095600f897d34', 'libfile_0beb9a38a4908191b1033aa2bba889d6', 'libfile_aa513cea2a64819191f9447d66376019', 'libfile_6c04b112e8948191abbef4a6c7c0cb56', 'libfile_8e2b0cfb395c819188950e493311bd14', 'libfile_5f7ba4b42dec81918884b41998f95952', 'libfile_d824bfda103c8191a1d665e289931632', 'libfile_2cb2b5fcdc448191b85888c3902af124', 'libfile_8f6cc6ed4ca08191864212ab3f55f4e8', 'libfile_a129a0f06ef081919ff1c404775a0299', 'libfile_a1dbfd71d6c4819181c337efc5acc641', 'libfile_79dc7785f4208191a4d31f1025c311b3', 'libfile_4db08d74cdf881919c71d26ae75dc26f', 'libfile_76ea97ed49ac819192a9ae5bc0f006bb', 'libfile_88e02edffb3481918debbba3a4216c69', 'libfile_bc094b5c14d48191be4393d5195876f5', 'libfile_5db2ea332b788191ae18182ed6505cc9', 'libfile_adfe17d6285c819186d69adc96f59c2a', 'libfile_3d5976f913dc8191ad5078a7c37f9e71', 'libfile_2072ae586eb88191a3f08e3bdda2abeb', 'libfile_27ab5129a6788191ad8ac343b706de19', 'libfile_9c3c3c5746c48191866174412f1311e2', 'libfile_d5f1a4f2c99c8191b0d4a51fc3170dd4', 'libfile_ca2df87cb9088191bbeb0d487d2c5bef', 'libfile_b82f96d0b88481919df95e6f92ec530e', 'libfile_687dbaeb797081918cfc4780c7dd2acc', 'libfile_757ef78819408191a590c5593888467b', 'libfile_85238a65ba3c8191a33d326c66c2782d', 'libfile_9620921dd9648191b6da2a70dda71ea8', 'libfile_cf8908bb98688191a615333a425c9474', 'libfile_2cd9ab40f714819192cd6af94341abd8', 'libfile_4dcf0d7fcf488191b7d658547498bad4', 'libfile_ac54bb7148388191a7c60cb486f83384', 'libfile_51b7321f2b9881918fba32743baaefdb', 'libfile_8831c2a6a158819187e606994428ed02', 'libfile_4d421f590fbc8191954f4c06a79ca634', 'libfile_bc0b2cecd5f081919b43ef57a109d24c', 'libfile_95fe0a804ef4819181043a66f01a98a2', 'libfile_fb159411750c8191b16edb10fd69e5c1', 'libfile_8089aa3d019c8191be242847f158400b', 'libfile_54928bae13448191a73a50e652f309ac', 'libfile_1ea206b403f48191825690b9b455b21e', 'libfile_0c2af50fad3881919851f3728b506be7', 'libfile_8d99f8dbf3688191afd4abf1e501a8d8'}
+ 
+ 
+ def need(ok, message):
+@@ -103,26 +64,26 @@
+     actual_raw = pinned(root, args.actual_results, args.actual_results_sha256)
+     actual = load(actual_raw)
+     prior = load(pinned(root, *PRIOR))
+-    need(plan['schemaVersion'] == 'roadmark99.upload-plan.v1' and plan['applicationCheckpoint'] == 99 and plan['status'] == 'local_archives_verified_not_uploaded' and plan['allLibraryItemsNewCreates'] is True and plan['immutable98FallbackRetained'] is True and plan['releaseApproved'] is False, 'Wrong upload plan')
++    need(plan['schemaVersion'] == 'roadmark100.upload-plan.v1' and plan['applicationCheckpoint'] == 100 and plan['status'] == 'local_archives_verified_not_uploaded' and plan['allLibraryItemsNewCreates'] is True and plan['immutable99FallbackRetained'] is True and plan['releaseApproved'] is False, 'Wrong upload plan')
+     need(plan['sourcePartsAlwaysProvidedForChat'] is True and plan['localUploadPolicyBytes'] == 32 * 1024 * 1024 and plan['genericHelperSizeCapVerified'] is False, 'Wrong transport/local policy')
+-    need(prior['librarySavesComplete'] is True and prior['applicationCheckpoint'] == 98, 'Prior98 saved fallback missing')
+-    actual98_ids = {row['library_file_id'] for row in prior['saved']}
+-    need(len(PROTECTED_EARLIER_IDS) == 38 and len(actual98_ids) == 6 and PROTECTED_EARLIER_IDS.isdisjoint(actual98_ids), 'Incomplete prior identity protection')
++    need(prior['librarySavesComplete'] is True and prior['applicationCheckpoint'] == 99, 'Prior99 saved fallback missing')
++    actual99_ids = {row['library_file_id'] for row in prior['saved']}
++    need(len(PROTECTED_EARLIER_IDS) == 44 and len(actual99_ids) == 6 and PROTECTED_EARLIER_IDS.isdisjoint(actual99_ids), 'Incomplete prior identity protection')
+     prior_helper_raw = pinned(root, *PRIOR_HELPER)
+     prior_helper = load(prior_helper_raw)
+-    need(prior['actualHelperResults']['sha256'] == sha(prior_helper_raw) and len(prior_helper['results']) == len(prior['saved']) == 6, 'Actual98 receipt/helper evidence differs')
++    need(prior['actualHelperResults']['sha256'] == sha(prior_helper_raw) and len(prior_helper['results']) == len(prior['saved']) == 6, 'Actual99 receipt/helper evidence differs')
+     for index, (saved, returned) in enumerate(zip(prior['saved'], prior_helper['results'])):
+-        need(saved['helperItemIndex'] == index and returned['status'] == 'succeeded' and returned['purpose'] == 'create_library_file' and returned['local_metadata_applied'] is True, 'Actual98 helper result was not a successful ordered create')
+-        need(all(saved[key] == returned[key] for key in ('library_file_id', 'file_id', 'file_name', 'current_version_number')), 'Actual98 saved identity differs from genuine helper result')
+-    forbidden = PROTECTED_EARLIER_IDS | actual98_ids
+-    need(len(forbidden) == 44, 'Incomplete44 prior identity protection')
++        need(saved['helperItemIndex'] == index and returned['status'] == 'succeeded' and returned['purpose'] == 'create_library_file' and returned['local_metadata_applied'] is True, 'Actual99 helper result was not a successful ordered create')
++        need(all(saved[key] == returned[key] for key in ('library_file_id', 'file_id', 'file_name', 'current_version_number')), 'Actual99 saved identity differs from genuine helper result')
++    forbidden = PROTECTED_EARLIER_IDS | actual99_ids
++    need(len(forbidden) == 50, 'Incomplete50 prior identity protection')
+     full = plan['fullSourceArchive']
+     raw = local(directory, full['filename']).read_bytes()
+-    need(full['filename'] == 'Roadmark-recovered-99-source.zip' and full['chatDelivery'] is False and len(raw) == full['bytes'] and sha(raw) == full['sha256'], 'Full source differs')
++    need(full['filename'] == 'Roadmark-recovered-100-source.zip' and full['chatDelivery'] is False and len(raw) == full['bytes'] and sha(raw) == full['sha256'], 'Full source differs')
+     need(plan['fullSourceLibrarySaveRequested'] is (full['bytes'] < plan['localUploadPolicyBytes']), 'Optional monolith threshold differs')
+     test_ref = plan['joinerSelfTest']
+     test = load(pinned(directory, test_ref['path'], test_ref['sha256']))
+-    need(test['schemaVersion'] == 'roadmark99.kit-self-test.v1' and test['exitCode'] == 0 and test['exactBytesReassembled'] is True and test['applicationExecuted'] is False, 'Actual shipped joiner test missing')
++    need(test['schemaVersion'] == 'roadmark100.kit-self-test.v1' and test['exitCode'] == 0 and test['exactBytesReassembled'] is True and test['applicationExecuted'] is False, 'Actual shipped joiner test missing')
+     need(test['result']['sha256'] == full['sha256'] and test['result']['bytes'] == full['bytes'] and test['result']['pairId'] == plan['pairId'] and test['shippedJoinerSHA256'] == plan['joinerSHA256'], 'Reconstruction identity differs')
+     planned = plan['uploads']
+     parts = [row for row in planned if row['role'] == 'source_part']
+@@ -149,7 +110,7 @@
+         need(all(type(value) is int and value == row['bytes'] for value in sizes.values()), 'Real returned size differs')
+         ids.add(identity)
+         saved.append({'helperItemIndex': index, 'localFilename': row['filename'], 'file_name': returned['file_name'], 'path': returned.get('path'), 'library_file_id': identity, 'file_id': backing, 'current_version_number': version, 'role': row['role'], 'chatDeliveryRequested': row['chatDelivery'], 'localSHA256': sha(raw), 'localBytes': len(raw), 'localIdentityXattrs': {'user.library-file-id': local_id, 'user.library-file-version': local_version}, 'actualReturnedByteSizes': sizes, 'serverByteSizeReported': bool(sizes)})
+-    receipt = {'schemaVersion': 'roadmark99.correlated-save-receipt.v1', 'applicationCheckpoint': 99, 'status': 'actual_create_helper_results_and_local_xattrs_correlated', 'pairId': plan['pairId'], 'uploadPlanSHA256': args.plan_sha256, 'requestSHA256': args.request_sha256, 'actualHelperResults': {'path': args.actual_results, 'sha256': args.actual_results_sha256, 'bytes': len(actual_raw)}, 'librarySavesComplete': True, 'saved': saved, 'chatDeliveryComplete': False, 'independentServerByteVerificationPerformed': False, 'deniedMetadataReadsRetried': False, 'releaseApproved': False}
++    receipt = {'schemaVersion': 'roadmark100.correlated-save-receipt.v1', 'applicationCheckpoint': 100, 'status': 'actual_create_helper_results_and_local_xattrs_correlated', 'pairId': plan['pairId'], 'uploadPlanSHA256': args.plan_sha256, 'requestSHA256': args.request_sha256, 'actualHelperResults': {'path': args.actual_results, 'sha256': args.actual_results_sha256, 'bytes': len(actual_raw)}, 'librarySavesComplete': True, 'saved': saved, 'chatDeliveryComplete': False, 'independentServerByteVerificationPerformed': False, 'deniedMetadataReadsRetried': False, 'releaseApproved': False}
+     output = local(root, args.output)
+     need(output.parent.is_dir() and not output.exists() and not output.resolve().is_relative_to(root / 'roadmark-work'), 'Use a new external receipt path')
+     with output.open('x', encoding='utf-8') as target:

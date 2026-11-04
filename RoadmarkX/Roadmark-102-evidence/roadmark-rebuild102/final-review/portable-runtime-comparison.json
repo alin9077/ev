@@ -1,0 +1,38 @@
+{
+  "method": "Read HTML bytes only. Extract from the unique window.__EV_B=true; marker through the byte immediately before the final </script></body></html> wrapper, retaining the trailing newline. Replace each of the following unique old byte strings exactly once. Compare the entire reconstructed byte sequence with the actual102 runtime. No application imports or JavaScript execution.",
+  "baselineHTML": {
+    "path": "roadmark-preview100/roadmark/index.html",
+    "bytes": 37020751,
+    "sha256": "cb4fe95ff34b375fe139b7ef81e959c7ae000a1cb4b44ed74ad340a662f4e39b"
+  },
+  "currentHTML": {
+    "path": "roadmark-work/roadmark/index.html",
+    "bytes": 37037396,
+    "sha256": "97e5186cacce6062d8e7c088f7c36f9cc71fe4f79a36807a7ee7cb2b7877652c"
+  },
+  "baselineRuntime": {
+    "bytes": 609969,
+    "sha256": "471570af0618253be2bdcef13c31dd0779709db576481eac6b6a48ded825b880"
+  },
+  "currentRuntime": {
+    "bytes": 609988,
+    "sha256": "3654d10f50194e3e4d59a1201508b10f3ab3891fc0272faa765cc3161125941f"
+  },
+  "replacements": [
+    {
+      "oldUTF8": "motorcycle:\"Motorcycles & scooters\"",
+      "newUTF8": "motorcycle:\"Motorcycles, scooters & road trikes\"",
+      "oldOccurrencesInBaseline": 1,
+      "newOccurrencesInCurrent": 1
+    },
+    {
+      "oldUTF8": "Motorcycles and scooters with cited supplier road-use claims are included; their full",
+      "newUTF8": "Motorcycles, scooters and road trikes with cited road-use evidence are included; their full",
+      "oldOccurrencesInBaseline": 1,
+      "newOccurrencesInCurrent": 1
+    }
+  ],
+  "entireReconstructedRuntimeEqualsCurrent": true,
+  "deltaBytes": 19,
+  "qualification": "Establishes exact portable-runtime byte delta only. Not a semantic proof, whole Next emitted-graph proof, or sustained browser stability approval."
+}

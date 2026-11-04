@@ -1,0 +1,1128 @@
+{
+  "checkedAtUTC": "2026-10-10T22:47:50Z",
+  "verdict": "PASS_STATIC_COMBINED_CANDIDATE",
+  "blockingFindings": [],
+  "checksPassed": 210,
+  "applicationWritten": false,
+  "baselineSHA256": "9789a997999a90a0a233adbe09d497c76f034a7a20f083c965c7017a8511bcb7",
+  "baselineCanonicalSHA256": "29516eea360a01037d04475e5f88227490ee981b58f6936fd2d4d4a389b6ddfb",
+  "candidateSHA256": "3941a1c68ff16e17960673a5f18f3d670bbbe893559429171c60f324563ec4de",
+  "candidateCanonicalSHA256": "ad956992fcaa07253b9b12795eeb9982f080c34160464bfe04fcf8d3f8f280cd",
+  "candidateBytes": 1243333,
+  "changedTopLevelFields": [
+    "records",
+    "unverifiedLeads",
+    "reconciledLeads",
+    "counts"
+  ],
+  "changedEstablishedIds": [
+    "windrose-e700",
+    "ftn-motion-streetdog-xr"
+  ],
+  "counts": {
+    "consolidatedModelAuditRecords": 234,
+    "byVehicleClass": {
+      "bus": 27,
+      "passenger": 109,
+      "truck": 27,
+      "ute": 13,
+      "van": 19,
+      "motorcycle": 39
+    },
+    "byOrderStatus": {
+      "listed_unconfirmed": 185,
+      "accepting_orders": 39,
+      "not_current": 4,
+      "preorder": 1,
+      "accepting_order_requests_advertised": 5
+    },
+    "namedTrimConfigurationEntries": 385,
+    "exactTrimSetMissingRecords": 53,
+    "newStockListedModelRecords": 66,
+    "unresolvedLeadGroups": 149,
+    "reconciledLeadGroups": 14,
+    "peripheralRecords": 5,
+    "duplicateModelMerges": 6
+  },
+  "wholeStateContractProbes": [
+    {
+      "name": "exact baseline",
+      "result": "exact_baseline_candidate_transition_only"
+    },
+    {
+      "name": "exact final repeat",
+      "result": "already_applied_no_write"
+    },
+    {
+      "name": "final JSON object keys reordered",
+      "result": "already_applied_no_write"
+    },
+    {
+      "name": "Windrose only",
+      "result": "abort"
+    },
+    {
+      "name": "FTN only",
+      "result": "abort"
+    },
+    {
+      "name": "both reviewed rows without reconciliation",
+      "result": "abort"
+    },
+    {
+      "name": "reconciliation without reviewed rows",
+      "result": "abort"
+    },
+    {
+      "name": "removed lead without history",
+      "result": "abort"
+    },
+    {
+      "name": "duplicate established identity",
+      "result": "abort"
+    },
+    {
+      "name": "archive while lead active",
+      "result": "abort"
+    },
+    {
+      "name": "stale final counts",
+      "result": "abort"
+    },
+    {
+      "name": "lost historical original",
+      "result": "abort"
+    },
+    {
+      "name": "second archive",
+      "result": "abort"
+    },
+    {
+      "name": "unrelated established drift",
+      "result": "abort"
+    },
+    {
+      "name": "FTN status promoted",
+      "result": "abort"
+    },
+    {
+      "name": "B03X eligibility promoted",
+      "result": "abort"
+    }
+  ],
+  "protectedInputSHA256": {
+    "roadmark-research/audits/jeep-ora-runtime-adapters/baseline-v57/market-inventory-2026-10-10.json": "7d01bcac674352dcb38dc42cc694a7f6eb1db23a44b1999e01b0f1fdc59be52a",
+    "roadmark-research/audits/jeep-ora-runtime-adapters/inherited-leapmotor-overlap-note.json": "d2e042ffdd052ef4b3769c9fccdaa71a7af7795b20220456340eaf607f9874de",
+    "roadmark-research/audits/leapmotor-reconciliation-review/README.md": "83d8593030dcd5a4d832f395095f193dd3e647aa4b05bb2d22c8cc0feabf3799",
+    "roadmark-research/audits/leapmotor-reconciliation-review/artifact-manifest.json": "f2df08146dfff70d881145a3f97e1c62eb9a484fad67b6bb4c1eb1114b03144d",
+    "roadmark-research/audits/leapmotor-reconciliation-review/audit-result.json": "aa47bd31c36e71c576f42e0e09c1566ca799173030b7e6a2c1ecf8771394680f",
+    "roadmark-research/audits/leapmotor-reconciliation-review/audit_proposal.py": "612367ccbf9c0d2b774bcf79eded39c885a0e1f6c0677f7970ae84da79e564da",
+    "roadmark-research/audits/windrose-ftn-market-review/audit-result.json": "69483515871a4ad137bcc221d83aa17c1fdd9cd1ae814c7cbcfecaf6e999cc7f",
+    "roadmark-research/audits/windrose-ftn-market-review/input-fingerprints.json": "cd88cdb6656dd915659a229ed002e743bbfc462e520188e6a300de88f3d82d56",
+    "roadmark-research/chinese-passenger-sources/leap_b03x.html": "778d6d5357f66c559f357bf8f6301607be03c2858a944426380094594c501951",
+    "roadmark-research/chinese-passenger-sources/leap_b03x.txt": "6f0dbf6986fdfa4fd32440cac5cb7480978892c3a4806283d49d55f9d00858fc",
+    "roadmark-research/chinese-passenger-sources/leap_b03x_brochure.pdf": "5036ccad649458e26991f4ce991d00c3fa9050c7ec5e71c5f1a86a63091b284c",
+    "roadmark-research/chinese-passenger-sources/leap_b03x_brochure.txt": "5d6f96d8182fbba28addda0bb8b6cd0439ffc558dba149d05228964a5f04c8c5",
+    "roadmark-research/chinese-passenger-sources/leap_b03x_launch.html": "216e026d61a8fe84287510f22edc5e98fb03c207fa355de810b5e9bf9da88855",
+    "roadmark-research/chinese-passenger-sources/leap_b03x_launch.txt": "d6381b2db62cf2b412f3147e931016361964c7f2e11020ca27e58dc38506c31a",
+    "roadmark-research/jeep-ora-merge-candidate/candidate-market-inventory.json": "9789a997999a90a0a233adbe09d497c76f034a7a20f083c965c7017a8511bcb7",
+    "roadmark-research/leapmotor-evidence.json": "0bc0cfc07318b6e31318474a0fe511967520e977b54ec08fbdfde3fce4cfb765",
+    "roadmark-research/leapmotor-evidence.md": "a410299f48f76c994fd0367a1ca825334027a913791152742ea0ed0ef7cd8510",
+    "roadmark-research/leapmotor-market-reconciliation/README.md": "15c6f48af6f6d224e36bddce3998a54502f3063eb3534820ab2860695ba1e7dc",
+    "roadmark-research/leapmotor-market-reconciliation/artifact-manifest.json": "21badb221e5739df0fedeaf39d7c9a0f2d8a37f70841c02cca7baa2c64b786f7",
+    "roadmark-research/leapmotor-market-reconciliation/proposed-reconciliation.json": "b2edcafce7f734b3ea86506c4001c8fce0773d8a5b6a31fe5459514c8ffe46f9",
+    "roadmark-research/leapmotor-validation.json": "cff252e89a0fe58b1fefaa64024f40096f753d0a6b33c00bd54ed925dfe26178",
+    "roadmark-research/market59-reconciliation-candidate/baseline-market-inventory.json": "9789a997999a90a0a233adbe09d497c76f034a7a20f083c965c7017a8511bcb7",
+    "roadmark-research/market59-reconciliation-candidate/candidate-market-inventory.json": "3941a1c68ff16e17960673a5f18f3d670bbbe893559429171c60f324563ec4de",
+    "roadmark-research/market59-reconciliation-candidate/market-review-test.ts": "4c6b638677832be9b9efad6f137c938cdfd446de9fea82246c98d83db2d5dde2",
+    "roadmark-research/market59-reconciliation-candidate/market59-reconciliation-fixture.json": "c9e795b251748ebf138158f08130146f328740da0eab99531361feaab3e59b60",
+    "roadmark-research/market59-reconciliation-candidate/root-staging-proof.json": "39cf39a5f0d1e0e92679af14976620a835a74d7f293fad09085895afa249335f",
+    "roadmark-research/stage_market59_reconciliation.py": "d486f22078125b50d211b2d5cd3c83978165a05738dfb5dac445dac71e7d9146",
+    "roadmark-research/windrose-ftn-market-readiness/additive-record-proposals.json": "b5aa80582c2f4717b66b380b55055e49d48947d1f920a44ea29b18d10cd7eb31",
+    "roadmark-research/windrose-ftn-market-readiness/expected-final-records.json": "d663eef62d4da28a54c55e4a54ed87547c28c6088efb915269eb33fbc3d572ab",
+    "roadmark-research/windrose-ftn-market-readiness/ftn-current-wording-correction.json": "0cde7d750144957452b0a4b4d26d7b8a38f069925399bfd2d2a6785acc8f83dc",
+    "roadmark-work/roadmark/data/catalogue-additions-2026-10-10.json": "f972d90de0b929c51ce412271b1c63a8a224173d1444ac42c5ec029e305868ad",
+    "roadmark-work/roadmark/data/market-inventory-2026-10-10.json": "9789a997999a90a0a233adbe09d497c76f034a7a20f083c965c7017a8511bcb7",
+    "roadmark-work/roadmark/src/app/b/page.tsx": "a34be83feccdbe4a22ac895d5a926b8a684e0a07c7b8e8dfa19aa11ce5a08185",
+    "roadmark-work/roadmark/src/app/cars/[family]/[variant]/page.tsx": "3a17bac14e82ddce8bee9ce2264fe94fd01721fca88bc8e09c7899f3aa72e2fd",
+    "roadmark-work/roadmark/src/app/cars/page.tsx": "07e37f20d9c38e3e09a7f87344f62f1ea7f927da1cf4f8aa07a3b7382eb5903e",
+    "roadmark-work/roadmark/src/app/compare/[pair]/comparison.json/route.ts": "14b1d3d39afa4a83fc00158534101848a55a881ed0c486e7c7b7d350ff8286a3",
+    "roadmark-work/roadmark/src/app/compare/[pair]/comparison.md/route.ts": "54dc331f312a8ce69fb41538b2cbea2348bafbd2e01fb0380e8eb60162a0a23f",
+    "roadmark-work/roadmark/src/app/compare/[pair]/page.tsx": "9f2254b67381fba390687da0d9a3ed2ca8f7a641339db5bb9a9f4c248901019a",
+    "roadmark-work/roadmark/src/app/compare/page.tsx": "96c999e95daf24ca718f2225ab0311608c159eebfad643b932837cb99ae06728",
+    "roadmark-work/roadmark/src/app/comparisons/page.tsx": "4f94829be89e9f6b80ae939d39ae11c67aad5641c8cb3a28aa5df1c050b4b62d",
+    "roadmark-work/roadmark/src/app/discover/page.tsx": "4799f370524a77b27436f6fa03dc552e3fcf5747db18509a38d810a2e1bb5829",
+    "roadmark-work/roadmark/src/app/error.tsx": "6b190b134099cfbf86546eb4592ba23e42a207bef188c9932d44870aa6ae82bc",
+    "roadmark-work/roadmark/src/app/glossary/page.tsx": "2d1961b928af52e94bbaf7be754be9c76493324d79e963de3d96a9b37d8e1c38",
+    "roadmark-work/roadmark/src/app/layout.tsx": "86c839eff0fc22fa1c9a01225c3188004da9d027a76aa6cdaf815e7bb7d3119c",
+    "roadmark-work/roadmark/src/app/llms.txt/route.ts": "a996e2f017655808e04ac3497d5cd8765040fbf0e8d3fe662f5c5f9dcbbc25db",
+    "roadmark-work/roadmark/src/app/market/page.tsx": "b52174e9dede2a7fadc867ef8517e9f26e2b4885a005345af87c3050a184eb57",
+    "roadmark-work/roadmark/src/app/methodology/page.tsx": "02cc70867799aaf0709f3ce067f854afe4ad4079ed74fe9c91d3575b92b801fb",
+    "roadmark-work/roadmark/src/app/model-y/page.tsx": "2f4fcac5921205e54c488beda18cb036e2f6378c4331acfa437c782bd7491c30",
+    "roadmark-work/roadmark/src/app/not-found.tsx": "c9b8ee59daa59dbedc2b3837f48614896bc112f596aa374c507cb082ba449ecf",
+    "roadmark-work/roadmark/src/app/page.tsx": "94d32047c3253b6417e336a585330f63d4aaa320be02038f5437cf08f867269f",
+    "roadmark-work/roadmark/src/app/review/page.tsx": "cc279b320392ccce3bd94772d903be5718b82a16ff9a05163a570485f2912514",
+    "roadmark-work/roadmark/src/app/robots.ts": "3215e5e2ac8797ae338e6281e24f5cdc1f20114a0c9dec5aba98e0da8a32f78b",
+    "roadmark-work/roadmark/src/app/sitemap.ts": "96c837dc08cd73fc292e02138d0bdf3e05cae7134a9b66939df4ac304737fd8e",
+    "roadmark-work/roadmark/src/app/software/page.tsx": "4fb47d12d65d295ede153159b182c2396d7b3e1f16068af666a57cb7939b649e",
+    "roadmark-work/roadmark/src/app/sources/page.tsx": "b37217edbe14af0b2905fbe167fc6c9110d1bfe2612626c3b51d007b5008ce57",
+    "roadmark-work/roadmark/src/components/buyer-summary.tsx": "fa9d98e786d99a0aa3e755c75e6040ff2eac4dbad8518b046147668c2cb21af8",
+    "roadmark-work/roadmark/src/components/car-avatar.tsx": "dd7854783e5a8297af3b7494cade89f73c8e114d0d05bfe4878f1134727962d2",
+    "roadmark-work/roadmark/src/components/chapter-art.tsx": "f70189a09e601315e3843976632ed3215f6a17badf04807370959aa926eada91",
+    "roadmark-work/roadmark/src/components/citable-report.tsx": "1fd3a842b17690aa9be587032a32ba54dafdb34013fe306a89009dc90f37f961",
+    "roadmark-work/roadmark/src/components/claim-report.tsx": "1a4f23f4c735c787f621257987f2674bb8c2ead48dd6b49164359e5fea22ec46",
+    "roadmark-work/roadmark/src/components/comparison-symbol.tsx": "3cddc36f9fa8a2c199cf092e8de88e250328f093a072229968db0432742f734c",
+    "roadmark-work/roadmark/src/components/copy-for-ai.tsx": "d171920d7813268c785cac19149b1080bdef09e14b2c368af8f63add687cddf2",
+    "roadmark-work/roadmark/src/components/correction-history.tsx": "92a62f4bb7888fa65f894afa5f25577b7001e0f0d61e1344b8c31867710f6edb",
+    "roadmark-work/roadmark/src/components/detail.tsx": "978ab14e0eda23a2369b46348195d1d82a67bb229533a340c5051ccd735505db",
+    "roadmark-work/roadmark/src/components/discovery.tsx": "7c9b51b2a352b2f7e46645ba2675643857907073ddca05a5a67c57ef24343b26",
+    "roadmark-work/roadmark/src/components/evidence-conditions.tsx": "c09249a1528f93b5cac37c13b949e23ba75b40835da0d3a177838a92e4743eba",
+    "roadmark-work/roadmark/src/components/experience.tsx": "0119ddfdaf2433c2e5de46036ac0987c39a4485585e3c90b23f79b586831ffd9",
+    "roadmark-work/roadmark/src/components/explorer.tsx": "89c4b8d8224b14918d1d207a1c348169093f03c9053fc15a11275f86132600e4",
+    "roadmark-work/roadmark/src/components/fleet-experience.tsx": "27946f6db66d0b60a621b163e7b902bb2d98f98c99410ae8dd53d8ae39b305e0",
+    "roadmark-work/roadmark/src/components/fleet-swipe.tsx": "454cfd0de9e35bcffbfd3bc912955f40418fde34945d00b651c9a97852f81010",
+    "roadmark-work/roadmark/src/components/footnotes.tsx": "9fd3e6d1febb1335050483a78e3be8bcf230ec2835f3c90924707daf160a1de4",
+    "roadmark-work/roadmark/src/components/market-audit.tsx": "d5eb04b354844ebc2a5f5abada1e3ca375bd512693a4e4f95b25afc1903b2d92",
+    "roadmark-work/roadmark/src/components/model-y-verdict.tsx": "c01f95e4b6738184609b9b50adc9c77b2cadece144038929f1dae885573693b4",
+    "roadmark-work/roadmark/src/components/picker.tsx": "1f88355837790f69182315876ab3cb6d13937c118a5bf64dfaa452321c38e58b",
+    "roadmark-work/roadmark/src/components/review-queue.tsx": "f74dd0b66ea608230432bc9bb313563174ed97bc07130c4f547a00894948c91c",
+    "roadmark-work/roadmark/src/components/roadmark-error.tsx": "64b3f6209e66489f450b092a010dce7f1a153704bd397c6f9ab61fbb577df2c3",
+    "roadmark-work/roadmark/src/components/roadmark-logo.tsx": "a60f9bee01195bccd4d201053edf07fdb58078a189d4d73e033a598e03c6889a",
+    "roadmark-work/roadmark/src/components/scene-canvas.tsx": "d5847b8cbb796fdcd2c1b7e757559d14b7163f9dea25de6a2e98c369feaa1848",
+    "roadmark-work/roadmark/src/components/selected-copy.tsx": "ba14b26c9cd66e1785d48e26e7ff4379f09b2c7c02bd5fed0e6125c099fd7cb9",
+    "roadmark-work/roadmark/src/components/site-shell.tsx": "d38752aa0f75e93043466048c53556310fa6b49a01ad498043cfa321978d839a",
+    "roadmark-work/roadmark/src/components/software.tsx": "61178d443a93a1bc8f6d1ae7a8f151e76c5ed70de5ea3aa510eacfb3d56da8bd",
+    "roadmark-work/roadmark/src/components/source-registry.tsx": "a1de13b92b6f2d7f015113548eb582b80f63688978d8ca468640ba851a93b032",
+    "roadmark-work/roadmark/src/components/static-comparison.tsx": "3596d553cb5029627d7684f3a776ac17ad2a9ce7e29a995bfe7bc022c0c030aa",
+    "roadmark-work/roadmark/src/components/ui.tsx": "47bb736ac15429883b462f7f1c8661997d04e3c9f4075363848079a7e80f69e8",
+    "roadmark-work/roadmark/src/components/verdict-pictogram.tsx": "8bc88e89f8d433c2811ed4e5058669432554db36022fc96f8cf4bb41fb39ff0c",
+    "roadmark-work/roadmark/src/components/with-evidence.tsx": "53bad778aab02e4d14b793445ff53ca76f9d98675760e06cf00027ab650dbc8f",
+    "roadmark-work/roadmark/src/lib/availability-corrections.ts": "f0b225b0bb662b381268f10926af3fdca2084bf4212ffb11b52d97c6533cceba",
+    "roadmark-work/roadmark/src/lib/buyer-proposal-storage.ts": "2febace11633321f2c103a0b3db4c4632df8e3601195922c4b83fce6354f7f7c",
+    "roadmark-work/roadmark/src/lib/buyer-proposal.ts": "588c5e79b694e63ecb785a80f6cef902544505a8d8fdf0492c355254ccf21b6a",
+    "roadmark-work/roadmark/src/lib/buyer-summary-timing.ts": "2de13a52761a352987a13f539d57d4824036cde20775ae994b7db92f4c3e9ec6",
+    "roadmark-work/roadmark/src/lib/car-avatar-shapes.ts": "5eb5e0d35e6676afaf2cad34ca8bf101f3ac1a3b7119676c88d3fb270c0e5e85",
+    "roadmark-work/roadmark/src/lib/chapter-art-src.ts": "53e1de5a975d096775f2c2dd4674f3bff1bb4594f3e50d76a38ab823fa01a70f",
+    "roadmark-work/roadmark/src/lib/chapter-art.ts": "e7ea3580fc5f5f22a140da6d3a5a22d70b46469a956f46ceb8aee0feb698912a",
+    "roadmark-work/roadmark/src/lib/chapter-scenes.ts": "42b9bf2933afb595481b6bea1e46ecfc7e35d92bc1f38be2ea032b9092a00647",
+    "roadmark-work/roadmark/src/lib/chapters.ts": "69b51024f414263e8827030e1a086034177d334e5dd069ec9ed71802524bc75a",
+    "roadmark-work/roadmark/src/lib/citable.ts": "31c8b9091e1f42ddef502202dcb2400c297a30205bd95d7b5947dbaf3541852e",
+    "roadmark-work/roadmark/src/lib/compare.ts": "2628493eadd12228e96233dc272d19a571359c6612197c62873d9b6deef86d39",
+    "roadmark-work/roadmark/src/lib/comparison-context.ts": "e068fb2678aba7daf17151d501a7f253b883265ef65e9f764fd046239a3c663c",
+    "roadmark-work/roadmark/src/lib/config.ts": "6f3507757cc703272faf172881d3f265d1512b883c0cb6e4808d8062ef61936b",
+    "roadmark-work/roadmark/src/lib/configuration-evidence.ts": "7ff6d81950d7ecd6697769cc01ef950d05b2e15fb4ea246a0a760559574f2aa3",
+    "roadmark-work/roadmark/src/lib/corrections.ts": "01224d222c867e196d58ccd56102ef52c398d9d88f02c3d4e4df09af4b1fc546",
+    "roadmark-work/roadmark/src/lib/data.ts": "ce2d02f7b0c70a3744eb4cc0d776735bf074bbce2b3e30f62e2a17df8b727e62",
+    "roadmark-work/roadmark/src/lib/detail-client-props.ts": "079f88c37b2fc5aba425e93ef157179b8350f3fb64d2df2dd2dec6ffffb6938f",
+    "roadmark-work/roadmark/src/lib/discovery.ts": "a4391f968fda69b4f70215a6698d24606d6e32b22780e50de9e7addb9a067321",
+    "roadmark-work/roadmark/src/lib/driving-sim.ts": "ca6c104caf0e7274a253b266ed09cdf6028b5e1fbbd05f9be7df5fc9ba1ee6b1",
+    "roadmark-work/roadmark/src/lib/evidence-date.ts": "8330e4c20317150c4c1e4ab9039b16562972741cdf0d4d1df2b86ea655574753",
+    "roadmark-work/roadmark/src/lib/fact-presentation.ts": "f9ebe52ef764decd6ab79fcee5d109e790c71833e2dff0c0f2a341388b585824",
+    "roadmark-work/roadmark/src/lib/fact-validity.ts": "6ca1ba756a420d61700db62c7fb58b4ec8b89f632f124a4da4de5eed95373eb5",
+    "roadmark-work/roadmark/src/lib/feature-corrections.ts": "26f158b3ef8d9e34b1c3a88d197d9771b6f907cda3c02bcf1ae13881a943b008",
+    "roadmark-work/roadmark/src/lib/fleet.ts": "a703995220cd37d667c7a3d0a3304e0103ff5165fce38d3222dacebca1f37469",
+    "roadmark-work/roadmark/src/lib/issue-presentation.ts": "98ddde091cc0f99f7b4e1bc95cbb50c5c1d4cccf5b669e85eff128ef554f973c",
+    "roadmark-work/roadmark/src/lib/launch-evidence.ts": "4d017cf74835569b2d3fedb2ca68e4c5a5d8b07369ae814b62a66443f7b79e51",
+    "roadmark-work/roadmark/src/lib/media.ts": "64df39ac3c8d655ab458dff1623d9855b856ee408d18a8bcf5c53c1c1585944b",
+    "roadmark-work/roadmark/src/lib/page-evidence.ts": "f1d11a021e2865e6eff1f41ee976e1bb7ab9bf4e3e423f55a33639f99b2e0377",
+    "roadmark-work/roadmark/src/lib/page-props.ts": "e724d9974f5675530e172236ee47415a7248e8e65553fbc0de5336618d096048",
+    "roadmark-work/roadmark/src/lib/pair-pages.ts": "d4790479c72c9c07d88270f52215be9fd6f071b1eecc9b318285d79e688b84d9",
+    "roadmark-work/roadmark/src/lib/picker-car.ts": "993265afe5d8f63631194f52035a1c46c98774bb6f9540c248b600d1839157c4",
+    "roadmark-work/roadmark/src/lib/portable-packs.ts": "6b4303fe0da00581769ae9dcc2118891999c90c5edde1486cee7021cda474771",
+    "roadmark-work/roadmark/src/lib/portable-string-codec.ts": "5558a213166a5e697f072eb1cf79818cb21f533bcf267337d7f54d3316b76505",
+    "roadmark-work/roadmark/src/lib/research-refresh.ts": "69d8dd8d9a6b7ae804445119d9bb4211dfe7142765534f28de675a9eefa99a1f",
+    "roadmark-work/roadmark/src/lib/scene-loaders.ts": "7ec5810c58193e496e2484d75045d716bf53c87089527a85d8ab335dbeadc3da",
+    "roadmark-work/roadmark/src/lib/scene-readout.ts": "e68d25cfabed601f3ddb8e3680f2c27dd88a4e01a588855684f4a82ae08b15a7",
+    "roadmark-work/roadmark/src/lib/scenes/b/car.ts": "1104f281b7d13e49f00278d516e8a18731e999f3dd86f17a106a83852be17bff",
+    "roadmark-work/roadmark/src/lib/scenes/b/comfort.ts": "192490c9f5d380fec73c0692f3e85f1d3cb4717853af6eb2181e6bfa09843e98",
+    "roadmark-work/roadmark/src/lib/scenes/b/common.ts": "b6ddf9b824cad77c1fad57746d96f1f6d3abcfe66f7162a571119dfd8c8cbc1f",
+    "roadmark-work/roadmark/src/lib/scenes/b/convenience.ts": "68862ced5e356a83a53e6bfdd2a457d5ddc8f24464c07a22aedf7c0baa039ee9",
+    "roadmark-work/roadmark/src/lib/scenes/b/drive.ts": "cceb4b318345af95760ff7f4492ddead685bb7eac13bf014e8934c15cdd54d01",
+    "roadmark-work/roadmark/src/lib/scenes/b/flat.ts": "d161f3a3191cc9011e817d42725ff95faa5379d98184d8f68fcc6f91d378a766",
+    "roadmark-work/roadmark/src/lib/scenes/b/gl.ts": "e0f05bd0ff9d5a7444c8bc076a9ff110756c38f61ba0c447ac5b7907d378c9bb",
+    "roadmark-work/roadmark/src/lib/scenes/b/home.ts": "03d876d4e2ca6c68cb285634f33a9b542e20f3a0df4eaab7fa4f24eabf802a5c",
+    "roadmark-work/roadmark/src/lib/scenes/b/index.ts": "18e4a7fc4067a402f0f4b2370aa63d843e089d522770f5c03c292a6ea5641c17",
+    "roadmark-work/roadmark/src/lib/scenes/b/math.ts": "e4ea4b45da5789be3fd1e5e56997b52d4cdc8ebb396c149ba4cb03600b1e9022",
+    "roadmark-work/roadmark/src/lib/scenes/b/mesh.ts": "a56aa3ce122c464dc6d37353e0534541a3878814205d8782eeff08f704595cb0",
+    "roadmark-work/roadmark/src/lib/scenes/b/overlay.ts": "b6c18b5c857ed23c5a5251fe178a3933a7c44d4d196b58e3f5207d11a43af3f3",
+    "roadmark-work/roadmark/src/lib/scenes/b/price.ts": "02c8099f9c3565f7585a0bffce23684163b7bf9c3335027b34200f90d682ef30",
+    "roadmark-work/roadmark/src/lib/scenes/b/props.ts": "91fa2bce7bfd872ff548e7fe969a31c6c1722ed4ea43e1655a9b1f110ec34000",
+    "roadmark-work/roadmark/src/lib/scenes/b/range.ts": "0de7054204955ed71ce70c88b1744bbe69ed8f5ffa5bbcd8b09b22b918273edb",
+    "roadmark-work/roadmark/src/lib/scenes/b/software.ts": "9bd2670cf616def7b7a23ae6937e089ed2861e988ee0512c5302e6599520c164",
+    "roadmark-work/roadmark/src/lib/scenes/b/space.ts": "7caff62112859ffbf7bcd05eea213c66d1af16dc1b6a7f132fe4f83326de80e9",
+    "roadmark-work/roadmark/src/lib/scenes/b/stage.ts": "8e6a6192ed25d73ce8514944f863f5410a6ccfc4e172adf77786c7e8a7d4cd11",
+    "roadmark-work/roadmark/src/lib/scenes/b/town.ts": "a4506ece572600a2f63974caa558043b4400c44d46cb93d19212200ac8cec300",
+    "roadmark-work/roadmark/src/lib/scenes/b/world.ts": "fbd0361330f77aff812269ba64b36a61901a76dd83b5d6a5af7d7705c3c1c98e",
+    "roadmark-work/roadmark/src/lib/scenes/comfort.ts": "1a93432de0c3833e125a12938a58b6fc4b7a4aa2fd3edbe6c5b4fc35f9809d9e",
+    "roadmark-work/roadmark/src/lib/scenes/convenience.ts": "c2040cf1a9f5a491ae2bb66583d38baf3fc11d51d583ed1f761d755f28019690",
+    "roadmark-work/roadmark/src/lib/scenes/drive.ts": "a5279e1f709d41aaea902ad01bcd8377fa9b88b462f4691e7f4db9aacbd27cad",
+    "roadmark-work/roadmark/src/lib/scenes/figure.ts": "0f9478db6691b49a5d04de67ea74376acf0064d82b7e1b2507ca7ce936bd40d4",
+    "roadmark-work/roadmark/src/lib/scenes/kit.ts": "19b2d89e1766a2db21a7b8203e7ffd3322a2004eca29e865797893b7bf6abda0",
+    "roadmark-work/roadmark/src/lib/scenes/model-y.ts": "18da39f88913310d2cd7b91cc686bbdc8a3049a911e9f01b4a151a88fe58d0bc",
+    "roadmark-work/roadmark/src/lib/scenes/price.ts": "29c411f4e497ffb1233bec82363ac4be2703f9f398767071e72f9b8132ebe27a",
+    "roadmark-work/roadmark/src/lib/scenes/props.ts": "d7fd52470bd1b55a9e69ab644b1d3dbbf9e1e7becb4b029be380cbc196d060a2",
+    "roadmark-work/roadmark/src/lib/scenes/range.ts": "8e6db67dd4a02a54cc29e0a65112ebc6251f5c58098b91ffcbb01adf5d97ab96",
+    "roadmark-work/roadmark/src/lib/scenes/software.ts": "8e3b91780292fcd4c0df4063713e21d442acbfb646ea87b5e3e4c482b09d9e8f",
+    "roadmark-work/roadmark/src/lib/scenes/space.ts": "29ffefe0acc6cb3cdb7737d946da4d143c7deca8c19deacd9434fb9f8fe9c90a",
+    "roadmark-work/roadmark/src/lib/search.ts": "1cc767f7a3f1a36cf9cd4b2b9d4b55bdc905da058bdf6bc52691464939707274",
+    "roadmark-work/roadmark/src/lib/selling-points.ts": "27709189a6ef75f38350b9dbfc464fd6e2b3dc7f7e96af4c57d2a2fcc1c355cf",
+    "roadmark-work/roadmark/src/lib/types.ts": "a13fd87008489eefd347367a61245140238dad5093d5d464f9ac7a6524be253c",
+    "roadmark-work/roadmark/src/lib/validate-catalogue-issues.ts": "0340aca0cdcd85071cd107bc8a700a96206ae775db444f99ef155e91ffa79a2f",
+    "roadmark-work/roadmark/src/lib/validate.ts": "5f0fab1d3827b4ba8220f49f08fbcdf78707f6e949b14726bf94a5122c7c919f",
+    "roadmark-work/roadmark/src/portable/chapter-art-src.ts": "8bb65e84021c892607eba7890b1a28ca0ee0944d812ff4cada6877d27a88be63",
+    "roadmark-work/roadmark/src/portable/data.ts": "0985748b9e03b1719f1235f2441da3abe918083b66b8beebf198cf6ed4dbc483",
+    "roadmark-work/roadmark/src/portable/entry.tsx": "0bdaab7d974e6b4da5a0580ed18002de87996e141e49e406652db52dfd5187c9",
+    "roadmark-work/roadmark/src/portable/image.tsx": "7cb6995f4f0920141c67c20eff62f4785aaf9fd0e079e6c02167722f3d91f4f2",
+    "roadmark-work/roadmark/src/portable/link.tsx": "0add93ac8b2209b4cba733f805d3bfb7f9252fd3d33bd0d9b3da65c95a8ecfe6",
+    "roadmark-work/roadmark/src/portable/navigation.ts": "e5af0074795673341ddabb8d7ef408420c9c4ef109e9b81b37e0e311071dcac8"
+  },
+  "integrationRequirements": [
+    "This approves the pinned staged JSON as a composition of the independently reviewed proposals; it does not authorize application or release.",
+    "Before any authorized write, recheck the exact current baseline raw hash and all reviewed proposal/source pins. Publish all four changed top-level fields together as the exact candidate, with atomic replacement; verify the resulting raw hash.",
+    "For an already-applied no-op, check the complete combined final semantic hash first and do not rewrite or append history. Reject any other/partial state. The standalone Leapmotor after-hash is intentionally not the combined after-hash.",
+    "Root staging code apply_to accepts per-operation final states and is safe here because staging is pinned to the full baseline at module entry. It is not a reviewed general-purpose applier: without that gate, mixed completed/pending components and unrelated drift can be accepted. Do not reuse it against arbitrary app state.",
+    "The standalone Windrose/FTN patches reject repeats; the combined full-state already-applied guard supplies whole-operation idempotence. No transaction, concurrency, application runtime or tests were executed."
+  ],
+  "checks": [
+    {
+      "name": "own Windrose/FTN audit passes",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor independent source/proposal review passes",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-research/leapmotor-market-reconciliation/proposed-reconciliation.json",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-research/leapmotor-market-reconciliation/artifact-manifest.json",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/data/market-inventory-2026-10-10.json",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-research/leapmotor-evidence.json",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-research/audits/jeep-ora-runtime-adapters/inherited-leapmotor-overlap-note.json",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-research/audits/jeep-ora-runtime-adapters/baseline-v57/market-inventory-2026-10-10.json",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-research/jeep-ora-merge-candidate/candidate-market-inventory.json",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/data/catalogue-additions-2026-10-10.json",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-research/leapmotor-market-reconciliation/README.md",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-research/leapmotor-evidence.md",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-research/leapmotor-validation.json",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-research/chinese-passenger-sources/leap_b03x.html",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-research/chinese-passenger-sources/leap_b03x.txt",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-research/chinese-passenger-sources/leap_b03x_launch.html",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-research/chinese-passenger-sources/leap_b03x_launch.txt",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-research/chinese-passenger-sources/leap_b03x_brochure.pdf",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-research/chinese-passenger-sources/leap_b03x_brochure.txt",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/citable.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/buyer-proposal-storage.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/page-props.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/fact-validity.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/corrections.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/scene-readout.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/driving-sim.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/chapters.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/page-evidence.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/data.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/comparison-context.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/chapter-art-src.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/scene-loaders.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/availability-corrections.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/evidence-date.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/research-refresh.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/feature-corrections.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/validate-catalogue-issues.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/issue-presentation.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/detail-client-props.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/chapter-art.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/pair-pages.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/search.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/chapter-scenes.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/car-avatar-shapes.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/compare.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/portable-packs.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/buyer-proposal.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/discovery.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/portable-string-codec.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/fleet.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/fact-presentation.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/types.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/config.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/launch-evidence.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/media.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/picker-car.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/configuration-evidence.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/validate.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/buyer-summary-timing.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/selling-points.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/portable/navigation.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/portable/image.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/portable/data.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/portable/chapter-art-src.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/portable/link.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/portable/entry.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/components/chapter-art.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/components/picker.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/components/correction-history.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/components/buyer-summary.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/components/explorer.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/components/static-comparison.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/components/experience.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/components/site-shell.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/components/footnotes.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/components/roadmark-error.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/components/market-audit.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/components/fleet-swipe.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/components/model-y-verdict.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/components/citable-report.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/components/roadmark-logo.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/components/verdict-pictogram.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/components/software.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/components/ui.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/components/detail.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/components/with-evidence.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/components/claim-report.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/components/source-registry.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/components/car-avatar.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/components/fleet-experience.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/components/copy-for-ai.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/components/evidence-conditions.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/components/comparison-symbol.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/components/discovery.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/components/selected-copy.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/components/scene-canvas.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/components/review-queue.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/app/not-found.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/app/page.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/app/robots.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/app/layout.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/app/error.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/app/sitemap.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/scenes/space.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/scenes/software.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/scenes/model-y.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/scenes/props.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/scenes/figure.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/scenes/price.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/scenes/convenience.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/scenes/drive.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/scenes/kit.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/scenes/range.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/scenes/comfort.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/scenes/b/space.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/scenes/b/software.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/scenes/b/gl.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/scenes/b/index.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/scenes/b/overlay.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/scenes/b/props.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/scenes/b/price.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/scenes/b/common.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/scenes/b/convenience.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/scenes/b/drive.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/scenes/b/mesh.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/scenes/b/range.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/scenes/b/math.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/scenes/b/world.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/scenes/b/home.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/scenes/b/flat.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/scenes/b/town.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/scenes/b/stage.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/scenes/b/car.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/lib/scenes/b/comfort.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/app/review/page.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/app/b/page.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/app/glossary/page.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/app/model-y/page.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/app/software/page.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/app/compare/page.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/app/cars/page.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/app/llms.txt/route.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/app/methodology/page.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/app/market/page.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/app/discover/page.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/app/sources/page.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/app/comparisons/page.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/app/compare/[pair]/page.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/app/compare/[pair]/comparison.json/route.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/app/compare/[pair]/comparison.md/route.ts",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor reviewed input unchanged roadmark-work/roadmark/src/app/cars/[family]/[variant]/page.tsx",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor review artifact pin roadmark-research/audits/leapmotor-reconciliation-review/README.md",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor review artifact pin roadmark-research/audits/leapmotor-reconciliation-review/audit-result.json",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor review artifact pin roadmark-research/audits/leapmotor-reconciliation-review/audit_proposal.py",
+      "passed": true
+    },
+    {
+      "name": "root staged proposal pin leapmotor-market-reconciliation/proposed-reconciliation.json",
+      "passed": true
+    },
+    {
+      "name": "root staged proposal pin windrose-ftn-market-readiness/additive-record-proposals.json",
+      "passed": true
+    },
+    {
+      "name": "root staged proposal pin windrose-ftn-market-readiness/ftn-current-wording-correction.json",
+      "passed": true
+    },
+    {
+      "name": "root staged proposal pin windrose-ftn-market-readiness/expected-final-records.json",
+      "passed": true
+    },
+    {
+      "name": "current app bytes equal pinned baseline",
+      "passed": true
+    },
+    {
+      "name": "staged baseline equals app JSON",
+      "passed": true
+    },
+    {
+      "name": "staged baseline exact raw bytes",
+      "passed": true
+    },
+    {
+      "name": "staged candidate exact raw hash",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor full before established object",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor full before lead object",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor exact archival payload",
+      "passed": true
+    },
+    {
+      "name": "Leapmotor archive canonical hash",
+      "passed": true
+    },
+    {
+      "name": "full candidate equals independent composition",
+      "passed": true
+    },
+    {
+      "name": "full candidate raw serialization independently reproduced",
+      "passed": true
+    },
+    {
+      "name": "only four top-level fields differ",
+      "passed": true
+    },
+    {
+      "name": "exactly the two reviewed established rows change",
+      "passed": true
+    },
+    {
+      "name": "all 232 unrelated established rows unchanged and ordered",
+      "passed": true
+    },
+    {
+      "name": "all 149 other active leads unchanged and ordered",
+      "passed": true
+    },
+    {
+      "name": "existing 13 historical records unchanged and ordered",
+      "passed": true
+    },
+    {
+      "name": "B03X established state wholly unchanged",
+      "passed": true
+    },
+    {
+      "name": "archive exactly reviewed proposal",
+      "passed": true
+    },
+    {
+      "name": "archive non-counting flag countsAsAdditionalFamily",
+      "passed": true
+    },
+    {
+      "name": "archive non-counting flag countsAsNamedConfiguration",
+      "passed": true
+    },
+    {
+      "name": "archive non-counting flag rankingEligible",
+      "passed": true
+    },
+    {
+      "name": "archive non-counting flag completeVehicleCountEligible",
+      "passed": true
+    },
+    {
+      "name": "archive history marker",
+      "passed": true
+    },
+    {
+      "name": "no current B03X lead remains",
+      "passed": true
+    },
+    {
+      "name": "unique IDs within records",
+      "passed": true
+    },
+    {
+      "name": "unique IDs within unverifiedLeads",
+      "passed": true
+    },
+    {
+      "name": "unique IDs within reconciledLeads",
+      "passed": true
+    },
+    {
+      "name": "unique IDs within peripheralRecords",
+      "passed": true
+    },
+    {
+      "name": "exact single reconciliation ID",
+      "passed": true
+    },
+    {
+      "name": "baseline counts independently correct",
+      "passed": true
+    },
+    {
+      "name": "candidate counts independently correct",
+      "passed": true
+    },
+    {
+      "name": "counts only unresolved/history change",
+      "passed": true
+    },
+    {
+      "name": "no active records/leads duplicate overlap",
+      "passed": true
+    },
+    {
+      "name": "all active/archive/peripheral rows conserved",
+      "passed": true
+    },
+    {
+      "name": "unique established plus active IDs conserved",
+      "passed": true
+    },
+    {
+      "name": "detailed catalogue context unchanged",
+      "passed": true
+    },
+    {
+      "name": "full-state gate exact baseline",
+      "passed": true
+    },
+    {
+      "name": "full-state gate exact final repeat",
+      "passed": true
+    },
+    {
+      "name": "full-state gate final JSON object keys reordered",
+      "passed": true
+    },
+    {
+      "name": "full-state gate Windrose only",
+      "passed": true
+    },
+    {
+      "name": "full-state gate FTN only",
+      "passed": true
+    },
+    {
+      "name": "full-state gate both reviewed rows without reconciliation",
+      "passed": true
+    },
+    {
+      "name": "full-state gate reconciliation without reviewed rows",
+      "passed": true
+    },
+    {
+      "name": "full-state gate removed lead without history",
+      "passed": true
+    },
+    {
+      "name": "full-state gate duplicate established identity",
+      "passed": true
+    },
+    {
+      "name": "full-state gate archive while lead active",
+      "passed": true
+    },
+    {
+      "name": "full-state gate stale final counts",
+      "passed": true
+    },
+    {
+      "name": "full-state gate lost historical original",
+      "passed": true
+    },
+    {
+      "name": "full-state gate second archive",
+      "passed": true
+    },
+    {
+      "name": "full-state gate unrelated established drift",
+      "passed": true
+    },
+    {
+      "name": "full-state gate FTN status promoted",
+      "passed": true
+    },
+    {
+      "name": "full-state gate B03X eligibility promoted",
+      "passed": true
+    },
+    {
+      "name": "all protected inputs byte-unchanged",
+      "passed": true
+    }
+  ]
+}

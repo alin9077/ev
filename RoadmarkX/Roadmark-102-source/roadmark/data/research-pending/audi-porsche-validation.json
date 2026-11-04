@@ -1,0 +1,50 @@
+{
+  "checked_on": "2026-10-10",
+  "Audi_manufacturer": {
+    "json_valid": true,
+    "technical_PDF_column_visual_QA": [
+      "audi_q6_spec page2",
+      "audi_q6_sportback_spec page2",
+      "audi_gt_range_spec page2",
+      "audi_q4_my25_spec page2",
+      "audi_q6_my25_spec page2"
+    ],
+    "zero_values_used_for_missing": false,
+    "all_sources_checked_on": "2026-10-10",
+    "missing_anchors": [],
+    "anchored_value_integrity_errors": [],
+    "source_references_valid": true,
+    "value_wrappers_count": 781,
+    "source_snapshot_hashes_verified": true
+  },
+  "Porsche": {
+    "fact_objects": 5406,
+    "sources": 127,
+    "source_snapshots_verified": 125,
+    "records": 25,
+    "battery_branches": 27,
+    "exact_rejected_units": 12,
+    "errors": [],
+    "passed": true,
+    "checked_on": "2026-10-10",
+    "configuration_default_code_qa_passed": true,
+    "withdrawn_default_code_assertions": 25,
+    "normalized_value_changes_after_selection_qa": 0
+  },
+  "source_id_collisions": [],
+  "normalization": "Porsche manufacturer name and MY string normalized; aliases added without changing source values. Per-battery technical data, Vehicle High range, conditional DC peaks, hitch/cargo/wheel scope remain unchanged.",
+  "combined": {
+    "passed": true,
+    "errors": [],
+    "missing_source_ids": [],
+    "counts": {
+      "fact_objects": 6626,
+      "sha_verified": 359,
+      "anchored_fields_verified": 430
+    },
+    "unique_configuration_record_ids": 66,
+    "source_count": 243,
+    "strict_NEW_count": 0,
+    "no_app_edits": true
+  }
+}

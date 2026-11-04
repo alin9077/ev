@@ -1,0 +1,50 @@
+{
+  "schema": "roadmark-rebuilt101-portable-proof-static-revision-v1",
+  "revision": 1,
+  "status": "prepared_only_for_independent_review_and_root_execution",
+  "entrypoint": "roadmark-research/rebuilt101-portable-proof-candidate/revision1/verify_rebuilt101_portable.py",
+  "entrypointSHA256": "cafe3df97dee699e2928c19c285834f3783e4d2d2a2f8a9be561cf046d978187",
+  "originalVerifier": {
+    "path": "roadmark-research/rebuilt101-portable-proof-candidate/verify_rebuilt101_portable.py",
+    "sha256": "8b8404dd1ca644c8a42a1e5633b7b2a6a40d685f9e30799faccb406540a8cdd8"
+  },
+  "originalManifest": {
+    "path": "roadmark-research/rebuilt101-portable-proof-candidate/manifest.json",
+    "sha256": "5c1d71e4bab1f55a63620dbfa64f9998fe5a79af4d4785d9b21bf55afe911398"
+  },
+  "inputPins": {
+    "path": "roadmark-research/rebuilt101-portable-proof-candidate/INPUT-PINS.json",
+    "sha256": "005906c3a3833e6bf34ece22a82b00fa2fa23df1a10bafb58e96ae35317d38eb"
+  },
+  "candidateImported": false,
+  "candidateExecuted": false,
+  "candidateSyntaxChecked": false,
+  "appOrQAOutputsEdited": false,
+  "historical101PassReused": false,
+  "sourceAndPayloadMechanismsUnchanged": true,
+  "narrowChanges": [
+    "Independently derive all frozen tests and seven fixed stage commands",
+    "Validate exact execution request configuration/runner/argv/environment",
+    "Validate stage environment overrides/removal declarations",
+    "Reject outer non-null session_id",
+    "Report new QA checks",
+    "Adjust nested workspace-root default"
+  ],
+  "files": [
+    {
+      "path": "roadmark-research/rebuilt101-portable-proof-candidate/revision1/REVISION.md",
+      "bytes": 3731,
+      "sha256": "0e7f498ae3c565c0d937cdb871f238aecf8ef019fa0bbb3a5263b9e1faa3c167"
+    },
+    {
+      "path": "roadmark-research/rebuilt101-portable-proof-candidate/revision1/revision.diff",
+      "bytes": 7980,
+      "sha256": "a55ae8a508a9a5a74825b79f678980e8f9e645f85d90af0a87df13226d93d173"
+    },
+    {
+      "path": "roadmark-research/rebuilt101-portable-proof-candidate/revision1/verify_rebuilt101_portable.py",
+      "bytes": 31916,
+      "sha256": "cafe3df97dee699e2928c19c285834f3783e4d2d2a2f8a9be561cf046d978187"
+    }
+  ]
+}

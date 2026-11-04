@@ -1,0 +1,57 @@
+{
+  "schema": "roadmark97.static-qa-runner-candidate.v1",
+  "revision": 1,
+  "status": "static-only-unexecuted-requires-independent-review",
+  "sourceRunner": {
+    "path": "roadmark-research/qa96-candidate/revision-2/run_qa96.py",
+    "sha256": "927d4bdf6318b300c4f8581fb074eb929555b902e5dd355381fcafadc4d50ff3",
+    "originalPreserved": true
+  },
+  "change": "Minimal checkpoint97 rename only: two receipt schema occurrences and two console marker strings. All admission, stage, evidence, output and bounded process-group interruption-cleanup logic preserved.",
+  "files": [
+    {
+      "path": "run_qa97.py",
+      "sha256": "8987a86aa9ae380211e3e6ca0765d73a2146558bd1bc754a2756d69c53ba860d",
+      "bytes": 22175
+    },
+    {
+      "path": "README.md",
+      "sha256": "80ef51c2f0cb424bea3e7a2af09dafcebd44e4ac1d1ae733bf9a7b84fe1910ae",
+      "bytes": 14945
+    }
+  ],
+  "baselineInputsObserved": {
+    "checkpoint": 96,
+    "path": "roadmark-research/applied96/expected-inputs-revision3.json",
+    "sha256": "3dbb0442fcd4ac25c29ee489fa721b4bd8aa138601b0618c4256af6f37880c80"
+  },
+  "candidatePreparationContext": {
+    "pathObserved": "roadmark-research/buyer-copy97-candidate/MANIFEST.json",
+    "statusAtPreparation": "Unapplied cumulative candidate awaiting independent review or revision",
+    "declaredFilesAtPreparation": 12,
+    "declaredNewTestsAtPreparation": 21,
+    "notAnApprovedFinalInventoryOrObservedTestResult": true,
+    "finalCandidateManifestAndHash": "Required at runtime from the actual independently reviewed revision; intentionally not pinned here",
+    "finalExpectedInputMapAndHash": "Required at runtime from root; must equal pinned checkpoint96 baseline plus exactly the actual reviewed cumulative candidate delta"
+  },
+  "preservedSerialStages": [
+    "non_http_tests",
+    "local_http_tests",
+    "typecheck",
+    "lint",
+    "validation",
+    "production_build",
+    "portable_build"
+  ],
+  "staticVerification": "Exact source diff inspected; inverse checkpoint label substitutions compared byte-for-byte with the unchanged source runner; source, baseline and deliverable hashes/sizes measured using shell utilities. No syntax or execution check.",
+  "cleanupBoundary": "Exception cleanup preserves bounded independent owned-group probing and verified unreaped leader identity before signals. Ordinary child returns do not trigger cleanup. Root independently confirms no surviving writers after every failed attempt before retry. Escaped groups and inconclusive probes are not claimed cleaned.",
+  "rootExecutionAndAcceptance": "Independent review, actual candidate application, final map preparation, all executable checks, external terminal/exit evidence, buyer-copy semantic and browser checks, artifact acceptance and any publication remain root-owned.",
+  "notRunByThisWorker": [
+    "Runner import, execution or syntax check",
+    "Application code import or mutation",
+    "Tests, typecheck, lint, validation or builds",
+    "Browser, uploads or deployment",
+    "Git or Codex tasks",
+    "Package installation"
+  ]
+}

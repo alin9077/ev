@@ -1,0 +1,20 @@
+import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
+import { readFileSync } from "node:fs";
+import { marketBeforeCheckpoint81 as current } from "./checkpoint81-history";
+import { canonicalReviewedJson } from "../../src/lib/correction-guards";
+
+const fixture = JSON.parse(readFileSync(new URL("../../qa/checkpoint80-market-fixture.json", import.meta.url), "utf8"));
+export const marketHash80 = (value: unknown) => createHash("sha256").update(canonicalReviewedJson(value)).digest("hex");
+const metadata = Object.fromEntries(Object.entries(current).filter(([key]) => key !== "records"));
+assert.deepEqual(metadata, fixture.approvedMetadata, "Exact reviewed80 metadata");
+assert.equal(marketHash80(current), fixture.approvedCanonicalSHA256, "Exact reviewed80 full market");
+assert.equal(current.records.length, fixture.previousRecordCount + 1);
+assert.equal(new Set(current.records.map(row => row.id)).size, current.records.length);
+assert.deepEqual(current.records.find(row => row.id === fixture.addedRecord.id), fixture.addedRecord);
+const priorRecords = current.records.filter(row => row.id !== fixture.addedRecord.id);
+assert.equal(priorRecords.length, fixture.previousRecordCount);
+assert.equal(Object.keys(fixture.unchangedRecordHashes).length, fixture.previousRecordCount);
+for (const row of priorRecords) assert.equal(marketHash80(row), fixture.unchangedRecordHashes[row.id], "Unchanged pre80 record: " + row.id);
+export const marketBeforeCheckpoint80 = { ...fixture.previousMetadata, records: priorRecords } as typeof current;
+assert.equal(marketHash80(marketBeforeCheckpoint80), fixture.previousCanonicalSHA256, "Exact full source79 market restores from preserved live records");

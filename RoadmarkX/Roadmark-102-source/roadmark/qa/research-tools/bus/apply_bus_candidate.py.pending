@@ -1,0 +1,23 @@
+"""Apply the already prepared bus candidate only after Hyundai's exact merge passes.
+This script has not been executed. Run from dot's VM after a verified Hyundai checkpoint.
+"""
+from pathlib import Path
+import hashlib,json,shutil
+R=Path('/workspace/scratch/586427eef9f2/roadmark-research');A=R.parent/'roadmark-work/roadmark'
+read=lambda p:json.loads(p.read_text())
+sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+proof=read(R/'hyundai-post-merge-verification.json')
+assert proof['status']=='passed_quick_post_merge_verification_with_preserved_exhaustive_proof'
+assert proof['completeSummaries']==270 and proof['priorCarsUnchanged']==262
+assert sha(A/'data/buyer-selling-points-2026-10-10.json')==proof['actualMergedEditorialSha256']
+report=read(R/'bus-application-candidate-report.json')
+assert report['status']=='prepared_not_applied'
+for name,digest in report['baselineApplicationFiles'].items():assert sha(A/'data'/name)==digest,name
+for entry in report['candidateFiles'].values():assert sha(Path(entry['path']))==entry['sha256']
+for key,name in [('catalogue-additions','catalogue-additions-2026-10-10.json'),('market-inventory','market-inventory-2026-10-10.json')]:
+ shutil.copy2(report['candidateFiles'][key]['path'],A/'data'/name)
+shutil.copy2(R/'bus-integration-regression.test.ts',A/'tests/bus-integration.test.ts')
+shutil.copy2(R/'bus-application-candidate-report.json',A/'qa/bus-application-candidate-report.json')
+for name in ['yutong-bci-electric-buses-evidence.json','bus-selling-points-proposal.json','bus-selling-points-validation.json']:
+ shutil.copy2(R/name,A/'data/research-pending'/name)
+print('Applied seven source-scoped bus records. Counts, runtime invariants, buyer-summary binding, full tests, production build and browser checks remain required. This is not a verified checkpoint.')

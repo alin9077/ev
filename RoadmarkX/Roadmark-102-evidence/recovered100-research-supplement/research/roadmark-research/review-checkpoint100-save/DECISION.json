@@ -1,0 +1,74 @@
+{
+  "decision": "GO_EXACT_FROZEN_SAVE_MECHANICS_AND_ARTIFACT_VERIFIER",
+  "blockingFindings": [],
+  "saveManifest": {
+    "path": "roadmark-research/checkpoint100-save-candidate/MANIFEST.json",
+    "sha256": "266808797849c231a7ba64edc976354c2685476c2d07902ae15ed4ff2a9a812b",
+    "bytes": 8095
+  },
+  "saveScripts": {
+    "join_recovered100_source.py": {
+      "bytes": 4239,
+      "path": "roadmark-research/checkpoint100-save-candidate/join_recovered100_source.py",
+      "sha256": "d6e825961fdf774e443f0fd52f9088e28140518acc060e96a87ddc05b310fe2a"
+    },
+    "package_checkpoint100.py": {
+      "bytes": 50780,
+      "path": "roadmark-research/checkpoint100-save-candidate/package_checkpoint100.py",
+      "sha256": "cb311683966b847d9c9da234c7d61908ff846d642cb16edf38c065a4db7cdf62"
+    },
+    "verify_checkpoint100_saves.py": {
+      "bytes": 11607,
+      "path": "roadmark-research/checkpoint100-save-candidate/verify_checkpoint100_saves.py",
+      "sha256": "8a784cc021b5d20db7cfc717642460682ac7f7b1d9ea3495d7faa38e0042514f"
+    }
+  },
+  "artifactManifest": {
+    "path": "roadmark-research/artifact100-candidate/manifest.json",
+    "sha256": "c63408ceec8c4c8047735e9bf2b3ccb0723b408fa7f623dc52d433ebf6856357",
+    "bytes": 2228
+  },
+  "artifactVerifier": {
+    "path": "roadmark-research/artifact100-candidate/verify-portable100-delta.py",
+    "sha256": "aa431a1114e942b9100d680cc7df35cfacb9bdc8487be023eef0ccbec9dafd3e",
+    "bytes": 19342
+  },
+  "sourceCandidateManifestSHA256": "52061d869f2e1cab0ca3cec6252a57200f251bb4b7317337dd3f9cf168ebaa66",
+  "requiredNextGate": "Review actual root final100 QA/artifact/browser/semantic/selected-text evidence and exact final save binding before packaging.",
+  "actualCurrent100QAClaimed": false,
+  "actualCurrent100ArtifactPassClaimed": false,
+  "actualCurrent100BrowserAcceptanceClaimed": false,
+  "packagingOrUploadPerformed": false,
+  "releaseApproved": false,
+  "closedDraftFindings": [
+    "Correlator emits applicationCheckpoint100",
+    "Artifact result is parsed and strictly joined to pinned verifier,99 baseline,current100QA artifacts,exact fixture/delta and full preservation flags"
+  ],
+  "reviewFiles": [
+    {
+      "path": "roadmark-research/review-checkpoint100-save/REVIEW.md",
+      "sha256": "f1a5c4e4df09810b860e3cc755709a2c26cf58a3ee6bf0e6324da9f0fd03ad40",
+      "bytes": 9552
+    },
+    {
+      "path": "roadmark-research/review-checkpoint100-save/BASELINE-AND-IDENTITY-CHECKS.json",
+      "sha256": "c44e90075b6158a4276ee046f91f5380380f0540af7c86f6ec8afded9d4a315b",
+      "bytes": 4575
+    },
+    {
+      "path": "roadmark-research/review-checkpoint100-save/ARTIFACT-BASELINE-STATIC-CHECKS.json",
+      "sha256": "e44af590792a8b404a87e58bc3c8a11953cef05276ed394fc49b0bc00b922462",
+      "bytes": 3393
+    },
+    {
+      "path": "roadmark-research/review-checkpoint100-save/ARTIFACT-DECISION.json",
+      "sha256": "6146a2130d97c0c11cb322beb68a24077c39da2bf673e4105f831ff35356242e",
+      "bytes": 1502
+    },
+    {
+      "path": "roadmark-research/review-checkpoint100-save/FROZEN-SAVE-STATIC-CHECKS.json",
+      "sha256": "1356382989b5a7bdef5f5a52341c5b69f6601013a41bde8986b42a83bcbf70bf",
+      "bytes": 2364
+    }
+  ]
+}

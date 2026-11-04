@@ -1,0 +1,2930 @@
+{
+  "createdAt": "2026-10-15T04:41:54.712016+00:00",
+  "status": "Recovery integrity verified; Mazda integration independently accepted; broader release gates remain open",
+  "source": {
+    "filename": "Roadmark-recovery-source-MAZDA-WORKING-20261015T0405.tar.xz",
+    "group": "source-MAZDA-WORKING-20261015T0405",
+    "bytes": 8419376,
+    "sha256": "e73c41c5ad2dd58940c5d1a6a41f30fa8404b4983c254439991bdedb144b1165",
+    "restoreOrder": 39,
+    "library_file_id": "libfile_a5b3cbb702808191b77bd8e0e121d210",
+    "file_id": "file_00000000f73881f5bd20fda1df40ad10",
+    "version": 0,
+    "new": true
+  },
+  "newArchives": [
+    {
+      "filename": "Roadmark-recovery-source-MAZDA-WORKING-20261015T0405.tar.xz",
+      "group": "source-MAZDA-WORKING-20261015T0405",
+      "bytes": 8419376,
+      "sha256": "e73c41c5ad2dd58940c5d1a6a41f30fa8404b4983c254439991bdedb144b1165",
+      "restoreOrder": 39,
+      "library_file_id": "libfile_a5b3cbb702808191b77bd8e0e121d210",
+      "file_id": "file_00000000f73881f5bd20fda1df40ad10",
+      "version": 0,
+      "new": true
+    },
+    {
+      "filename": "Roadmark-recovery-MAZDA-WORKING-20261015T0405-part01of03-metadata-v2.tar.xz",
+      "group": "MAZDA-WORKING-20261015T0405",
+      "bytes": 8297032,
+      "sha256": "c78c1cef0f2819739b30fa8137c19c43398068e067f9aba5de8d3db09aa30061",
+      "restoreOrder": 109,
+      "library_file_id": "libfile_267b44470f208191a96f1052e846bb91",
+      "file_id": "file_0000000063bc820ea2b95093fa642ca2",
+      "version": 0,
+      "new": true
+    },
+    {
+      "filename": "Roadmark-recovery-MAZDA-WORKING-20261015T0405-part02of03.tar.xz",
+      "group": "MAZDA-WORKING-20261015T0405",
+      "bytes": 851672,
+      "sha256": "cb6cdc0b67c8ae1ba2ab67a33c07a3f9ee0987a54d292e95014ceef4f69174dc",
+      "restoreOrder": 110,
+      "library_file_id": "libfile_18b99135c0648191b685fcf0ed5d2467",
+      "file_id": "file_0000000004bc81f698c3518d5d78fbd3",
+      "version": 0,
+      "new": true
+    },
+    {
+      "filename": "Roadmark-recovery-MAZDA-WORKING-20261015T0405-part03of03.tar.xz",
+      "group": "MAZDA-WORKING-20261015T0405",
+      "bytes": 237644,
+      "sha256": "51293d3865555dd77908af84b90f17d03c70e6cb324dc8bbf8d6fc30155ef99d",
+      "restoreOrder": 111,
+      "library_file_id": "libfile_acd02481ab78819194ff24471c0ad76f",
+      "file_id": "file_000000000cdc81f5a58de4e8f9c845b0",
+      "version": 0,
+      "new": true
+    }
+  ],
+  "baseRecovery": {
+    "manifestLibraryFileId": "libfile_6e14e52415088191b26424498a029a32",
+    "indexLibraryFileId": "libfile_dbab961e5f4c8191b89e44f4d12cb9d9",
+    "activeReceiptLibraryFileId": "libfile_22c33ad0ccac8191b7a2e7347b96fd91",
+    "manifestPin": {
+      "bytes": 2458378,
+      "sha256": "f7e9e95a4ca5198a82b776d49380f308b3a89363c0b5e04c38f2dee9f88518bd"
+    },
+    "finalReceiptPin": {
+      "bytes": 56882,
+      "sha256": "c5d5f452dac77a33f0dd403f91c82ad8c3ea0970f919b979bfd9da704f4cc8bc"
+    },
+    "archives": 108,
+    "logicalFiles": 8866,
+    "priorSource": {
+      "filename": "Roadmark-recovery-source-LEAPMOTOR-WORKING-20261015T0155.tar.xz",
+      "group": "source-LEAPMOTOR-WORKING-20261015T0155",
+      "bytes": 8389032,
+      "sha256": "da6cb57c5025975494d76825500cb32c78328a5270b6d606d7932081918fae59",
+      "restoreOrder": 39,
+      "library_file_id": "libfile_f04cf1158b748191837ac8c2b58b6627",
+      "file_id": "file_00000000bd9081f586f450a8ee2e2913",
+      "version": 0,
+      "new": true
+    },
+    "reuse": "107 exact unchanged archive versions reused; prior full source and every earlier recovery separately preserved."
+  },
+  "workState": {
+    "label": "Registered Mazda working recovery",
+    "registered": true,
+    "integrationIndependentlyAccepted": true,
+    "freshValidationPassed": true,
+    "completeNormalCoveragePassed": true,
+    "wholeReportByteAndDeepEqualToStage": true,
+    "targetedAggregate": {
+      "passed": 229,
+      "failed": 3,
+      "cleanPass": false,
+      "originalFailureRetained": true
+    },
+    "isolatedBuyer": {
+      "passed": 11,
+      "sourceUnchanged": true,
+      "earlierFileFailureCause": "unexplained"
+    },
+    "isolatedCorrectedSafety": {
+      "passed": 7,
+      "reviewedTestOnlyCorrection": true
+    },
+    "changedFileLintPassed": true,
+    "earlierTestBoundaryVerification": {
+      "focusedPasses": 71,
+      "fullLintPassed": true,
+      "separateFromMazdaClaim": true
+    },
+    "completeStandardTypeScriptPassed": false,
+    "latestFullCompilerAttempts": "Prior 512 and 640 MiB limits ended explicit OOM; no later full standard compiler pass",
+    "fullProjectSuitePassed": false,
+    "buildPassed": false,
+    "mobilePassed": false,
+    "releaseReady": false,
+    "published": false,
+    "milestone": "M1 open",
+    "failedAttempts": "Original full stage v1 body-identity assertion, original targeted aggregate, manual-stop intent/outcome without delivered signal, original proposal failures and full TypeScript OOMs retained. Later successful stage and isolated tests do not erase them.",
+    "factualSummarySource": {
+      "restoredPath": "roadmark/docs/MAZDA_M1_UPDATE.md",
+      "bytes": 3755,
+      "sha256": "017fc53d0f9e04868f38e4ebcada0c465faee4d60b597f3e359f778e6209590c"
+    },
+    "latestStandardCheckedRecovery": "Polestar",
+    "authorFreezeAt": "2026-10-15T04:05:57.012169+00:00",
+    "sourceCaptureCutoff": "2026-10-15T04:10:08.245641+00:00",
+    "captureIsFrozenHistoricalCut": true,
+    "currentCounts": {
+      "registryPackets": 23,
+      "catalogue": 413,
+      "tier1": 336,
+      "onSale": 303,
+      "reviewedCore": 4819,
+      "onSaleCoreTotal": 5151,
+      "strictGaps": 380
+    },
+    "derivedBaseline": "Retained accepted recursive baseline, not a fresh canonical export"
+  },
+  "verificationScope": "1264 new source/proof/QA archive members and 329981216 bytes freshly decompressed and independently hash-verified. No full restore clone. Current known-value searches cover every fresh member; unchanged source pattern verdicts reuse exact content/rule proofs, with full current patterns for changed/generated members. The 107 unchanged base versions reuse prior independent proofs without a whole-base rescan.",
+  "counts": {
+    "archiveCount": 111,
+    "logicalFiles": 9464,
+    "logicalBytes": 2958220021,
+    "freshFiles": 1264,
+    "freshBytes": 329981216,
+    "fullSourceFiles": 671,
+    "sourceChangedPaths": [
+      "data/m1-brand-updates/mazda-2026-10-15.json",
+      "data/m1-brand-updates/registry.json",
+      "data/m1-mazda-market-reconciliation-2026-10-15.json",
+      "docs/M1_PROGRESS.md",
+      "docs/MAZDA_M1_UPDATE.md",
+      "scripts/reporting/load.ts",
+      "src/lib/availability-corrections.ts",
+      "tests/availability-preorder.test.ts",
+      "tests/brand-added-detail.test.ts",
+      "tests/brand-live-safety.test.ts",
+      "tests/helpers/kia-cadillac-stage.ts",
+      "tests/kia-cadillac-integration.test.ts",
+      "tests/kia-cadillac-stage.boundary.test.ts",
+      "tests/typechecks/kia-cadillac-stage.contract.ts"
+    ],
+    "baseArchivesReused": 107,
+    "scopeOriginalFiles": 598
+  },
+  "documents": [
+    {
+      "filename": "Roadmark-RECOVERY-INDEX-MAZDA-WORKING-20261015.md",
+      "library_file_id": "libfile_833441417e948191afa4f2dfd4dc5ef1",
+      "version": 0,
+      "bytes": 29508,
+      "sha256": "d1407584b830ce024a69be73bf14cc42753e617b4881acbffe6b5c8bb2b2de1f"
+    },
+    {
+      "filename": "Roadmark-RECOVERY-MANIFEST-MAZDA-WORKING-20261015.json",
+      "library_file_id": "libfile_3f65f60302408191bf2c2d95d1dfbb2d",
+      "version": 0,
+      "bytes": 3283649,
+      "sha256": "2c37d2e1355856e89c092d195ba9a994a7f9f95f4980cd3cf0be272647f01ba0"
+    },
+    {
+      "filename": "Roadmark-RECOVERY-VERIFICATION-MAZDA-WORKING-20261015.json",
+      "library_file_id": "libfile_0aa7b1754c8881919722bf69912e73c8",
+      "version": 0,
+      "bytes": 973889,
+      "sha256": "a69c724f4b33ae2e50bde2c4e39f308210fc7e56845af4b912818f8973e219ed"
+    },
+    {
+      "filename": "Roadmark-MAZDA-M1-UPDATE-20261015.md",
+      "library_file_id": "libfile_f3a7990065e48191850699b94988317c",
+      "version": 0,
+      "bytes": 3755,
+      "sha256": "017fc53d0f9e04868f38e4ebcada0c465faee4d60b597f3e359f778e6209590c"
+    }
+  ],
+  "independentVerification": {
+    "result": "PASS",
+    "verificationScope": "Every fresh archive/member fully stream-hashed with exact metadata/order and complete logical overlay; no broad base payload scan or restore clone.",
+    "source": {
+      "files": 671,
+      "changedPaths": [
+        "data/m1-brand-updates/mazda-2026-10-15.json",
+        "data/m1-brand-updates/registry.json",
+        "data/m1-mazda-market-reconciliation-2026-10-15.json",
+        "docs/M1_PROGRESS.md",
+        "docs/MAZDA_M1_UPDATE.md",
+        "scripts/reporting/load.ts",
+        "src/lib/availability-corrections.ts",
+        "tests/availability-preorder.test.ts",
+        "tests/brand-added-detail.test.ts",
+        "tests/brand-live-safety.test.ts",
+        "tests/helpers/kia-cadillac-stage.ts",
+        "tests/kia-cadillac-integration.test.ts",
+        "tests/kia-cadillac-stage.boundary.test.ts",
+        "tests/typechecks/kia-cadillac-stage.contract.ts"
+      ],
+      "exactPriorReuse": 657,
+      "captureCutoff": "2026-10-15T04:10:08.245641+00:00",
+      "strictCompressedUnder15000000": true,
+      "archive": {
+        "filename": "Roadmark-recovery-source-MAZDA-WORKING-20261015T0405.tar.xz",
+        "bytes": 8419376,
+        "sha256": "e73c41c5ad2dd58940c5d1a6a41f30fa8404b4983c254439991bdedb144b1165",
+        "members": 672,
+        "uncompressedBytes": 277904281
+      }
+    },
+    "proof": {
+      "selectedOriginalFiles": 598,
+      "sourceCovered": 15,
+      "reusedBaseMembers": 0,
+      "newDeltaFiles": 583,
+      "captureCutoff": "2026-10-15T04:22:31.890508+00:00",
+      "sanitizedJsonFiles": 8,
+      "sanitizedJsonFields": 8,
+      "sanitizedHtmlFiles": 13,
+      "sanitizedHtmlRanges": 13,
+      "allNonHeaderAndOutsideRangeBytesBoundToIndependentReview": true,
+      "originalExpectedPinsUnchanged": true,
+      "originalPinReplayLimitation": "Sanitized wrappers and HTML bodies satisfy separately stated sanitized hashes, not original raw-file expected pins. Original replay requires intact originals or a separately reviewed manifest."
+    },
+    "newArchives": [
+      {
+        "filename": "Roadmark-recovery-source-MAZDA-WORKING-20261015T0405.tar.xz",
+        "bytes": 8419376,
+        "sha256": "e73c41c5ad2dd58940c5d1a6a41f30fa8404b4983c254439991bdedb144b1165",
+        "members": 672,
+        "uncompressedBytes": 277904281
+      },
+      {
+        "filename": "Roadmark-recovery-MAZDA-WORKING-20261015T0405-part01of03-metadata-v2.tar.xz",
+        "bytes": 8297032,
+        "sha256": "c78c1cef0f2819739b30fa8137c19c43398068e067f9aba5de8d3db09aa30061",
+        "members": 112,
+        "uncompressedBytes": 22184547
+      },
+      {
+        "filename": "Roadmark-recovery-MAZDA-WORKING-20261015T0405-part02of03.tar.xz",
+        "bytes": 851672,
+        "sha256": "cb6cdc0b67c8ae1ba2ab67a33c07a3f9ee0987a54d292e95014ceef4f69174dc",
+        "members": 213,
+        "uncompressedBytes": 23929982
+      },
+      {
+        "filename": "Roadmark-recovery-MAZDA-WORKING-20261015T0405-part03of03.tar.xz",
+        "bytes": 237644,
+        "sha256": "51293d3865555dd77908af84b90f17d03c70e6cb324dc8bbf8d6fc30155ef99d",
+        "members": 267,
+        "uncompressedBytes": 5962406
+      }
+    ],
+    "phaseTerminals": {
+      "capture-source": {
+        "receipt": {
+          "bytes": 587,
+          "sha256": "2bfe0ac87cc82ee3e8fa9c73f9887d22116920ae741d40b18fcdcd8708643838"
+        },
+        "invocation": {
+          "bytes": 537,
+          "sha256": "d0f6ed58392c124269a688a4bac9cd82721fd3bc99bcff7cdb947aa761065cfb"
+        },
+        "command": [
+          "python3",
+          "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/stream_capture_v2.py",
+          "source"
+        ],
+        "exitCode": 0,
+        "maxRssKiB": 17508,
+        "wallSeconds": 1.805
+      },
+      "capture-proof-v2": {
+        "receipt": {
+          "bytes": 586,
+          "sha256": "84fa8fca316a70c83e75b6db68aa34a56c31dcc9c4eac71f4ecf49c1a65e5e9a"
+        },
+        "invocation": {
+          "bytes": 536,
+          "sha256": "b5dd47e420a16b2b55dd2dbf2392aa7529a940d0ff9052b393771dee4c1aa1ac"
+        },
+        "command": [
+          "python3",
+          "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/stream_capture_v3.py",
+          "proof"
+        ],
+        "exitCode": 0,
+        "maxRssKiB": 40040,
+        "wallSeconds": 1.206
+      },
+      "duplicate-provenance": {
+        "receipt": {
+          "bytes": 581,
+          "sha256": "595c51bc36403ba7ec79c9783f284847f304567c6d5c2107dfd06353a2b8f17f"
+        },
+        "invocation": {
+          "bytes": 531,
+          "sha256": "ea115d80f076c8eff3f8f0bba154c9361ec9a0ed5345b665fd2701fa2e2f3423"
+        },
+        "command": [
+          "python3",
+          "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/make_duplicate_provenance.py"
+        ],
+        "exitCode": 0,
+        "maxRssKiB": 14144,
+        "wallSeconds": 0.102
+      },
+      "package-source": {
+        "receipt": {
+          "bytes": 589,
+          "sha256": "3edf77596d45834dafb19d801094d06fda3eaa99aea70c2b64d652cce2d0ecd7"
+        },
+        "invocation": {
+          "bytes": 537,
+          "sha256": "c5a1c1d67b162cfc80fda408ee4b8bd4bf1f5ed28beb4be029514dd10ce3002f"
+        },
+        "command": [
+          "python3",
+          "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/stream_package_v4.py",
+          "source"
+        ],
+        "exitCode": 0,
+        "maxRssKiB": 109088,
+        "wallSeconds": 37.894
+      },
+      "package-proof": {
+        "receipt": {
+          "bytes": 586,
+          "sha256": "7bbe29ff66de1161fae12d44fbc31cbea33f31a1bfe10fe6801a376efacea1ea"
+        },
+        "invocation": {
+          "bytes": 536,
+          "sha256": "468b25b400ae424d54de1610a454d1527d3af1f254c1af16fe33641bb412a358"
+        },
+        "command": [
+          "python3",
+          "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/stream_package_v4.py",
+          "proof"
+        ],
+        "exitCode": 0,
+        "maxRssKiB": 110228,
+        "wallSeconds": 9.84
+      },
+      "derive-plan": {
+        "receipt": {
+          "bytes": 578,
+          "sha256": "de98aeb6cd566c43913c5f271675e333ed44dafc841c5487da188ae581b3fbfd"
+        },
+        "invocation": {
+          "bytes": 528,
+          "sha256": "0aa282104434baaab15be3e9ad635ae48293ec3726e4e4e5776ea4c3250be24c"
+        },
+        "command": [
+          "python3",
+          "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/derive_restore_plan_v2.py"
+        ],
+        "exitCode": 0,
+        "maxRssKiB": 23508,
+        "wallSeconds": 0.202
+      },
+      "package-proof-part1-v2": {
+        "receipt": {
+          "bytes": 593,
+          "sha256": "b34c6b4eb9408318b740a20b03f0ee65d925ba56485766c9a46fe1bf9f3ac42b"
+        },
+        "invocation": {
+          "bytes": 542,
+          "sha256": "9e0e19bc15b932bf5b7999d5856279b46cf983673faf3e488ecc216818ff5f60"
+        },
+        "command": [
+          "python3",
+          "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/stream_package_part1_v5.py",
+          "proof"
+        ],
+        "exitCode": 0,
+        "maxRssKiB": 109384,
+        "wallSeconds": 5.311
+      },
+      "derive-plan-v2": {
+        "receipt": {
+          "bytes": 578,
+          "sha256": "04aea376e90894c33f4e3be218aa7395eb34dcad6713ec2202a6db00ab80a90f"
+        },
+        "invocation": {
+          "bytes": 528,
+          "sha256": "ca9a6bc4de710d89bf302a47721f3d833c1dc352ca39dc6fdd01ddf608f5d530"
+        },
+        "command": [
+          "python3",
+          "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/derive_restore_plan_v2.py"
+        ],
+        "exitCode": 0,
+        "maxRssKiB": 23504,
+        "wallSeconds": 0.202
+      }
+    },
+    "privacy": {
+      "result": "PASS",
+      "reports": [
+        {
+          "archive": "Roadmark-recovery-source-MAZDA-WORKING-20261015T0405.tar.xz",
+          "report": {
+            "bytes": 234886,
+            "sha256": "77bad07b8534046be7758363bb47ad362473dfe479ab028c8e6b7ffd41df5782"
+          },
+          "terminal": {
+            "receipt": {
+              "bytes": 820,
+              "sha256": "c2c2c8d225a592ef28c34c878a99ae9073f266e17c1944bb1e4891a3785ac619"
+            },
+            "invocation": {
+              "bytes": 770,
+              "sha256": "37a38179e538ba6596c2b2491e03ffa1470f3450e51a00380b1263c03bb2d77b"
+            },
+            "command": [
+              "python3",
+              "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/stream_privacy_v6.py",
+              "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/Roadmark-recovery-source-MAZDA-WORKING-20261015T0405.tar.xz",
+              "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/scan-01.json"
+            ],
+            "exitCode": 0,
+            "maxRssKiB": 48416,
+            "wallSeconds": 88.942
+          },
+          "members": 672,
+          "bytes": 277904281,
+          "cachedPatternMembers": 643,
+          "classifiedPublicLexicalCollisions": 66395
+        },
+        {
+          "archive": "Roadmark-recovery-MAZDA-WORKING-20261015T0405-part01of03-metadata-v2.tar.xz",
+          "report": {
+            "bytes": 42185,
+            "sha256": "a039b5a3e2fc55042c325403fa478ad682b0adcd5729dc9243d8090fdffd8e53"
+          },
+          "terminal": {
+            "receipt": {
+              "bytes": 839,
+              "sha256": "bc5c25c733082f9447c22949a8e40e676512f9bc9780a2c0a2ac946df5903930"
+            },
+            "invocation": {
+              "bytes": 789,
+              "sha256": "5fd951ae8060e946afe45400da341119c1e79cb4446d06e4c2bd8cc6c5c25a1b"
+            },
+            "command": [
+              "python3",
+              "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/stream_privacy_v6.py",
+              "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/Roadmark-recovery-MAZDA-WORKING-20261015T0405-part01of03-metadata-v2.tar.xz",
+              "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/scan-02-v2.json"
+            ],
+            "exitCode": 0,
+            "maxRssKiB": 53696,
+            "wallSeconds": 17.134
+          },
+          "members": 112,
+          "bytes": 22184547,
+          "cachedPatternMembers": 0,
+          "classifiedPublicLexicalCollisions": 2588
+        },
+        {
+          "archive": "Roadmark-recovery-MAZDA-WORKING-20261015T0405-part02of03.tar.xz",
+          "report": {
+            "bytes": 79030,
+            "sha256": "480c3ed6d896df210bce7a40fcfbcd4c3859a387389414ddef24d5d2ff33996b"
+          },
+          "terminal": {
+            "receipt": {
+              "bytes": 824,
+              "sha256": "7cae06bff19f23bd79e3e3c9aece8aedd95fb29a4738ca2a4b41e3766fd99355"
+            },
+            "invocation": {
+              "bytes": 774,
+              "sha256": "b266b4430aa91e2595365500bddf93b8690cb89f782cd6e9dd0a6cea7913519a"
+            },
+            "command": [
+              "python3",
+              "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/stream_privacy_v6.py",
+              "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/Roadmark-recovery-MAZDA-WORKING-20261015T0405-part02of03.tar.xz",
+              "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/scan-03.json"
+            ],
+            "exitCode": 0,
+            "maxRssKiB": 48312,
+            "wallSeconds": 19.955
+          },
+          "members": 213,
+          "bytes": 23929982,
+          "cachedPatternMembers": 0,
+          "classifiedPublicLexicalCollisions": 4748
+        },
+        {
+          "archive": "Roadmark-recovery-MAZDA-WORKING-20261015T0405-part03of03.tar.xz",
+          "report": {
+            "bytes": 110810,
+            "sha256": "5b24c1d28c7ea6a549914d273756e507741a70b928e13136d2c4e783197528dc"
+          },
+          "terminal": {
+            "receipt": {
+              "bytes": 823,
+              "sha256": "8a7d2550581f98c4b3a06a9af72a7654cfc558636e27ac8be40c41d12619f7e5"
+            },
+            "invocation": {
+              "bytes": 774,
+              "sha256": "0914439a4186ae8ca6b884f41ae9f05f480a5ee6d7c91caa1330d14968a30f6b"
+            },
+            "command": [
+              "python3",
+              "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/stream_privacy_v6.py",
+              "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/Roadmark-recovery-MAZDA-WORKING-20261015T0405-part03of03.tar.xz",
+              "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/scan-04.json"
+            ],
+            "exitCode": 0,
+            "maxRssKiB": 49300,
+            "wallSeconds": 9.723
+          },
+          "members": 267,
+          "bytes": 5962406,
+          "cachedPatternMembers": 0,
+          "classifiedPublicLexicalCollisions": 1980
+        }
+      ],
+      "seedCounts": {
+        "historicalValues": 55,
+        "historicalForms": 373,
+        "mercedesValues": 20,
+        "mercedesForms": 128,
+        "originalSeedMembers": 200,
+        "leapmotorCookieAndHeaderValues": 26,
+        "leapmotorCookieForms": 171,
+        "mazdaCookieAndHeaderValues": 6,
+        "mazdaCookieForms": 42,
+        "mazdaPublicBareValues": 3,
+        "mazdaPublicBareForms": 20,
+        "mazdaCompleteHeaderValues": 3,
+        "mazdaCompleteHeaderForms": 22,
+        "mazdaCookiePairValues": 3,
+        "mazdaCookiePairForms": 23,
+        "mazdaFormTokenValues": 13,
+        "mazdaFormTokenForms": 91
+      },
+      "everyMemberCurrentKnownValueSearchVerified": true,
+      "allObservedMatchesAccounted": true,
+      "classifiedPublicLexicalCollisions": 75711,
+      "blockingOrUnclassifiedFindings": 0,
+      "priorPatternCacheExactPathSizeHashRulesOnly": true,
+      "rawValuesRecorded": false,
+      "limitations": [
+        "No decryption",
+        "No recursive unpacking of embedded compressed/proprietary content",
+        "Standalone base64 does not cover arbitrary wrapping/alignment",
+        "No universal secret-free claim"
+      ]
+    },
+    "replay": {
+      "manifest": {
+        "bytes": 242839,
+        "sha256": "8ddddb26d384f3bfe1f1023394428690ffb66f6bb5e66182a5c7503b148efdfd"
+      },
+      "noDiskExtractedTree": true
+    },
+    "overlay": {
+      "baseArchiveCount": 108,
+      "unchangedBaseArchivesReused": 107,
+      "combinedArchiveCount": 111,
+      "freshFiles": 1264,
+      "freshBytes": 329981216,
+      "combinedLogicalFiles": 9464,
+      "combinedLogicalBytes": 2958220021,
+      "onlyNonSourceOverlay": [
+        "roadmark-104-qa/work-status.json"
+      ],
+      "basePayloadReadsPerformed": false
+    },
+    "symlinkReconstruction": [
+      {
+        "originalPath": "/tmp/roadmark-kia-fixture-boundary-review/node_modules",
+        "linkTarget": "/workspace/scratch/586427eef9f2/roadmark-104/node_modules",
+        "restorePath": "roadmark-kia-fixture-boundary-review/node_modules",
+        "traversed": false,
+        "handling": "Recreate dependency link after normal dependency install",
+        "linkLstatIdentity": {
+          "size": 57,
+          "mtimeNs": 1792029339157109489,
+          "ctimeNs": 1792029339157109489,
+          "inode": 291392,
+          "device": 55,
+          "mode": 41471
+        }
+      },
+      {
+        "originalPath": "/tmp/roadmark-kia-fixture-boundary-review/tests/fixtures/catalogue/kia-cadillac-staged-delta.json",
+        "linkTarget": "/workspace/scratch/586427eef9f2/roadmark-104/tests/fixtures/catalogue/kia-cadillac-staged-delta.json",
+        "restorePath": "roadmark-kia-fixture-boundary-review/tests/fixtures/catalogue/kia-cadillac-staged-delta.json",
+        "traversed": false,
+        "handling": "Recreate relative link or copy the exact standalone source fixture member",
+        "sourceArchiveMember": "roadmark/tests/fixtures/catalogue/kia-cadillac-staged-delta.json",
+        "exactExpectedPin": {
+          "bytes": 8236430,
+          "sha256": "99e3ae7c37cb1481d75b4eadc7f01e8e7f20480c84f95d20bb4b3023eb2e90cb"
+        },
+        "linkLstatIdentity": {
+          "size": 100,
+          "mtimeNs": 1792029339157109489,
+          "ctimeNs": 1792029339157109489,
+          "inode": 291391,
+          "device": 55,
+          "mode": 41471
+        }
+      }
+    ],
+    "duplicateProvenance": {
+      "groups": 30,
+      "mappedPaths": 138,
+      "allLogicalPathsPreserved": true,
+      "mappingPin": {
+        "bytes": 75682,
+        "sha256": "7918cc0d8ca16dc07e020ec5352ec883585feefce647789f2037f59c19e31b1d"
+      }
+    },
+    "inheritedSanitation": {
+      "leapmotorWrapperFiles": 19,
+      "leapmotorWrapperFields": 51,
+      "mercedesRawFiles": 8,
+      "mercedesRuntimeLocations": 51,
+      "sourceHeaderFields": 10,
+      "allExactSanitizedPinsPreserved": true
+    },
+    "state": {
+      "workingState": "Registered Mazda working cut; fresh structural validation and complete normal report/staged parity pass. Initial targeted aggregate retained at 229 passes/3 failures; unchanged buyer isolated 11/11 and reviewed corrected safety isolated 7/7 pass, four-file lint pass. Earlier five-path test-only verification 71 focused/full lint pass. Full standard TypeScript remains explicit OOM at 512/640 MiB; whole-project suite/build/mobile/release gates open. No clean aggregate, fresh canonical export, publication or M2 claim.\n",
+      "sourceCutoff": "2026-10-15T04:10:08.245641+00:00",
+      "proofCutoff": "2026-10-15T04:22:31.890508+00:00",
+      "retainedAggregate": "229 pass / 3 fail",
+      "isolatedBuyer": "11/11 unchanged",
+      "isolatedSafety": "7/7 after narrow reviewed test assertions",
+      "priorFocusedTests": "71 and full lint",
+      "fullTypeScript": "512/640 MiB explicit OOM; gate open",
+      "fullSuiteBuildMobileReleaseGatesOpen": true,
+      "noFreshCanonicalExportPublicationOrM2": true,
+      "allOriginalFailuresAndVersionedVerifierFailuresPreserved": true
+    },
+    "metadataKeyRetry": {
+      "record": {
+        "createdAt": "2026-10-15T04:30:48.624311+00:00",
+        "scope": "Root approved generated mapping metadata key rename only; no scanner or evidence changes",
+        "oldMapping": {
+          "file": "HTML-FORM-TOKEN-SANITATION-MAPPING.json",
+          "bytes": 12067,
+          "sha256": "b8577b2cc568568f0402b8638fddf9c049867f042015e26481582b71ae2c605c"
+        },
+        "newMapping": {
+          "file": "HTML-FORM-TOKEN-SANITATION-MAPPING-v2.json",
+          "bytes": 12067,
+          "sha256": "f933be4e767be029fa906513c956227b45a52d6bb133ca4332ae7ba957da9a47"
+        },
+        "changedKey": {
+          "from": "authorization",
+          "to": "approvalScope"
+        },
+        "valueAndEveryOtherFieldUnchanged": true,
+        "originalFailedArchivePreserved": true,
+        "failedScan": "scan-02.json",
+        "sourceAndParts2And3ReusedExact": true
+      },
+      "keyOnlyObjectEquality": true,
+      "allOriginalAndSanitizedFilePinsAndRangesUnchanged": true,
+      "onlyPart1Rebuilt": true,
+      "oldExcludedPart1Preserved": {
+        "filename": "Roadmark-recovery-MAZDA-WORKING-20261015T0405-part01of03.tar.xz",
+        "bytes": 8297028,
+        "sha256": "56c309c4c4871d05aa2a12e43806e51b034dd4be60f5930133377005ccaaad5d"
+      },
+      "sourceAndParts2And3Unchanged": true,
+      "originalSourceScan01ExactlyReused": true,
+      "scannerCoreUnchanged": true
+    },
+    "preuploadPlanTransition": {
+      "createdAt": "2026-10-15T04:38:15.691330+00:00",
+      "result": "PASS_EXACT_APPROVED_METADATA_TRANSITION",
+      "approvalScope": "Root approved only exact part1/scan terminal names plus 13 HTML disclosure, mechanically required verification-result v2 pointers, provenance paths/hashes, and one versioned verifier-only retry; parent confirms exclusive bounded review slot.",
+      "historicalGate": {
+        "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/preupload_gate_planned_v1.py",
+        "bytes": 1751,
+        "sha256": "1ce8f7127e7a4907a85393bd77f60acca62b9514775a3d3b5d11b4dc89b82989",
+        "reconstructedByExactReverseOfApprovedEdits": true
+      },
+      "intermediateGate": {
+        "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/preupload_gate-before-result-v2.py",
+        "bytes": 1841,
+        "sha256": "63273a41ac01401659b997fd96fa01af5edca1d563da39b599db4ef208330bf1"
+      },
+      "currentGate": {
+        "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/preupload_gate.py",
+        "bytes": 1841,
+        "sha256": "1bbc38b08a3419f518694bc84c445ee43dd104d5c423e14938f244228bb2c3f9"
+      },
+      "phaseChanges": {
+        "retainedRequiredTerminal": "package-proof exit 0",
+        "additionalRequiredTerminal": "package-proof-part1-v2 exit 0",
+        "derive-plan": "derive-plan-v2",
+        "scan-02": "scan-02-v2",
+        "unchangedScans": [
+          "scan-01",
+          "scan-03",
+          "scan-04"
+        ],
+        "addedDisclosure": {
+          "htmlFiles": 13,
+          "htmlLocations": 13
+        }
+      },
+      "allExistingAssertionsAndArchiveChecksRetained": true,
+      "exactResultPointerChecks": [
+        {
+          "file": "preupload_gate.py",
+          "beforeFile": "preupload_gate-before-result-v2.py",
+          "before": {
+            "bytes": 1841,
+            "sha256": "63273a41ac01401659b997fd96fa01af5edca1d563da39b599db4ef208330bf1"
+          },
+          "after": {
+            "bytes": 1841,
+            "sha256": "1bbc38b08a3419f518694bc84c445ee43dd104d5c423e14938f244228bb2c3f9"
+          },
+          "occurrencesChanged": 2,
+          "exactPointerOnly": true
+        },
+        {
+          "file": "build_documents.py",
+          "beforeFile": "build_documents-before-result-v2.py",
+          "before": {
+            "bytes": 12661,
+            "sha256": "74686183f99747f54e8321e438b122ba65f7f831006be4cd4371a1f6daa4211a"
+          },
+          "after": {
+            "bytes": 12661,
+            "sha256": "5cd636a1a5c8f898ec9724bb2ff0b4ed8b5c69df36dbc51d354a32a51c020c21"
+          },
+          "occurrencesChanged": 1,
+          "exactPointerOnly": true
+        },
+        {
+          "file": "finalize_upload_receipt.py",
+          "beforeFile": "finalize_upload_receipt-before-result-v2.py",
+          "before": {
+            "bytes": 2941,
+            "sha256": "b606193ad1c0cc6668f7f002c1f02c39432691edd4f852bec9131265217de5d9"
+          },
+          "after": {
+            "bytes": 2941,
+            "sha256": "c6e64dba152f527b2b513f9fe5a85eaa379fc7517736dd28f375f43375c73ef2"
+          },
+          "occurrencesChanged": 1,
+          "exactPointerOnly": true
+        }
+      ],
+      "pointerRecord": {
+        "file": "RESULT-POINTER-PROPAGATION-v2.json",
+        "bytes": 1203,
+        "sha256": "d858488b16dd07a3b52c8cf7ebdb0cb1fddad47aff9607dbf5996a90b5b80f78"
+      },
+      "allPlanScriptPins": [
+        {
+          "record": "COMMAND-PLAN-v1.json",
+          "array": "scriptPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/stream_capture_v2.py",
+          "expected": {
+            "bytes": 7709,
+            "sha256": "52cbc4040262cff62296f2ecdd544eaad3478ace6b5298a209db392b8f3fe427"
+          },
+          "current": {
+            "bytes": 7709,
+            "sha256": "52cbc4040262cff62296f2ecdd544eaad3478ace6b5298a209db392b8f3fe427"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "COMMAND-PLAN-v1.json",
+          "array": "scriptPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/stream_package_v3.py",
+          "expected": {
+            "bytes": 3542,
+            "sha256": "e1040a007215c966f2e5297aff4d378e23a7b79daa81594cefef94aab345bdec"
+          },
+          "current": {
+            "bytes": 3542,
+            "sha256": "e1040a007215c966f2e5297aff4d378e23a7b79daa81594cefef94aab345bdec"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "COMMAND-PLAN-v1.json",
+          "array": "scriptPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/stream_privacy_v5.py",
+          "expected": {
+            "bytes": 10698,
+            "sha256": "ea6a7c147b605cd9b800d74cb0630bf849cdb0f8733fb71ad7088c4e21002c75"
+          },
+          "current": {
+            "bytes": 10698,
+            "sha256": "ea6a7c147b605cd9b800d74cb0630bf849cdb0f8733fb71ad7088c4e21002c75"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "COMMAND-PLAN-v1.json",
+          "array": "scriptPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/run_bounded_v2.py",
+          "expected": {
+            "bytes": 2358,
+            "sha256": "44aa66726c01e1defd7b2fa45ad0ccd45fcfaf3cfcbe0792ab62fe5aa1c1fb8d"
+          },
+          "current": {
+            "bytes": 2358,
+            "sha256": "44aa66726c01e1defd7b2fa45ad0ccd45fcfaf3cfcbe0792ab62fe5aa1c1fb8d"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "COMMAND-PLAN-v1.json",
+          "array": "scriptPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/inventory_json_sanitizer_candidates.py",
+          "expected": {
+            "bytes": 1576,
+            "sha256": "3fb4455e98b8a0fec884018671bc3fe0cf0dcfedc63e00c96abe2314b214fa15"
+          },
+          "current": {
+            "bytes": 1576,
+            "sha256": "3fb4455e98b8a0fec884018671bc3fe0cf0dcfedc63e00c96abe2314b214fa15"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "COMMAND-PLAN-v1.json",
+          "array": "scriptPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/preliminary_scope_privacy.py",
+          "expected": {
+            "bytes": 1621,
+            "sha256": "44399f5651c1af694f5acd7a81c584f0abe266991424a8e1a9c4e236a1b9bb5d"
+          },
+          "current": {
+            "bytes": 1621,
+            "sha256": "44399f5651c1af694f5acd7a81c584f0abe266991424a8e1a9c4e236a1b9bb5d"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "COMMAND-PLAN-v1.json",
+          "array": "scriptPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/derive_restore_plan_v2.py",
+          "expected": {
+            "bytes": 2748,
+            "sha256": "fa7615a2e9172f8402fabbaf95aca2cce75ec0a12343674ab4af0a23b5125f8b"
+          },
+          "current": {
+            "bytes": 2748,
+            "sha256": "fa7615a2e9172f8402fabbaf95aca2cce75ec0a12343674ab4af0a23b5125f8b"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "COMMAND-PLAN-v1.json",
+          "array": "scriptPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/run_scans_v2.py",
+          "expected": {
+            "bytes": 2487,
+            "sha256": "83ac8c492dc7f5abd66d4194291cf821a4a28fae46a19d9242b187cfb07e79e6"
+          },
+          "current": {
+            "bytes": 2487,
+            "sha256": "83ac8c492dc7f5abd66d4194291cf821a4a28fae46a19d9242b187cfb07e79e6"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "COMMAND-PLAN-v1.json",
+          "array": "scriptPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/preupload_gate.py",
+          "expected": {
+            "bytes": 1751,
+            "sha256": "1ce8f7127e7a4907a85393bd77f60acca62b9514775a3d3b5d11b4dc89b82989"
+          },
+          "current": {
+            "bytes": 1841,
+            "sha256": "1bbc38b08a3419f518694bc84c445ee43dd104d5c423e14938f244228bb2c3f9"
+          },
+          "resolution": "exact historical snapshot plus approved current transition"
+        },
+        {
+          "record": "COMMAND-PLAN-v1.json",
+          "array": "scriptPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/scan_documents.py",
+          "expected": {
+            "bytes": 1596,
+            "sha256": "c9f0ede91b0dba2561b136be66bc2e246ee92a748ab3b15336243b73536a4f68"
+          },
+          "current": {
+            "bytes": 1596,
+            "sha256": "c9f0ede91b0dba2561b136be66bc2e246ee92a748ab3b15336243b73536a4f68"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "COMMAND-PLAN-v1.json",
+          "array": "scriptPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/check_upload_phase.py",
+          "expected": {
+            "bytes": 929,
+            "sha256": "a5bfe7e7a19394a2e896beb1cf59503a351b7c97ec49e5bd5708983d1ac5bf04"
+          },
+          "current": {
+            "bytes": 929,
+            "sha256": "a5bfe7e7a19394a2e896beb1cf59503a351b7c97ec49e5bd5708983d1ac5bf04"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "COMMAND-PLAN-v1.json",
+          "array": "scriptPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/freeze_scope_v2.py",
+          "expected": {
+            "bytes": 4640,
+            "sha256": "22b0d859659a26db0a898443851d812e292310c46b1f7e4a6f3da69bb86be223"
+          },
+          "current": {
+            "bytes": 4640,
+            "sha256": "22b0d859659a26db0a898443851d812e292310c46b1f7e4a6f3da69bb86be223"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "COMMAND-PLAN-v2.json",
+          "array": "scriptPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/stream_capture_v2.py",
+          "expected": {
+            "bytes": 7709,
+            "sha256": "52cbc4040262cff62296f2ecdd544eaad3478ace6b5298a209db392b8f3fe427"
+          },
+          "current": {
+            "bytes": 7709,
+            "sha256": "52cbc4040262cff62296f2ecdd544eaad3478ace6b5298a209db392b8f3fe427"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "COMMAND-PLAN-v2.json",
+          "array": "scriptPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/stream_package_v3.py",
+          "expected": {
+            "bytes": 3542,
+            "sha256": "e1040a007215c966f2e5297aff4d378e23a7b79daa81594cefef94aab345bdec"
+          },
+          "current": {
+            "bytes": 3542,
+            "sha256": "e1040a007215c966f2e5297aff4d378e23a7b79daa81594cefef94aab345bdec"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "COMMAND-PLAN-v2.json",
+          "array": "scriptPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/stream_privacy_v5.py",
+          "expected": {
+            "bytes": 10698,
+            "sha256": "ea6a7c147b605cd9b800d74cb0630bf849cdb0f8733fb71ad7088c4e21002c75"
+          },
+          "current": {
+            "bytes": 10698,
+            "sha256": "ea6a7c147b605cd9b800d74cb0630bf849cdb0f8733fb71ad7088c4e21002c75"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "COMMAND-PLAN-v2.json",
+          "array": "scriptPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/run_bounded_v2.py",
+          "expected": {
+            "bytes": 2358,
+            "sha256": "44aa66726c01e1defd7b2fa45ad0ccd45fcfaf3cfcbe0792ab62fe5aa1c1fb8d"
+          },
+          "current": {
+            "bytes": 2358,
+            "sha256": "44aa66726c01e1defd7b2fa45ad0ccd45fcfaf3cfcbe0792ab62fe5aa1c1fb8d"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "COMMAND-PLAN-v2.json",
+          "array": "scriptPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/inventory_json_sanitizer_candidates.py",
+          "expected": {
+            "bytes": 1576,
+            "sha256": "3fb4455e98b8a0fec884018671bc3fe0cf0dcfedc63e00c96abe2314b214fa15"
+          },
+          "current": {
+            "bytes": 1576,
+            "sha256": "3fb4455e98b8a0fec884018671bc3fe0cf0dcfedc63e00c96abe2314b214fa15"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "COMMAND-PLAN-v2.json",
+          "array": "scriptPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/preliminary_scope_privacy.py",
+          "expected": {
+            "bytes": 1621,
+            "sha256": "44399f5651c1af694f5acd7a81c584f0abe266991424a8e1a9c4e236a1b9bb5d"
+          },
+          "current": {
+            "bytes": 1621,
+            "sha256": "44399f5651c1af694f5acd7a81c584f0abe266991424a8e1a9c4e236a1b9bb5d"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "COMMAND-PLAN-v2.json",
+          "array": "scriptPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/derive_restore_plan_v2.py",
+          "expected": {
+            "bytes": 2748,
+            "sha256": "fa7615a2e9172f8402fabbaf95aca2cce75ec0a12343674ab4af0a23b5125f8b"
+          },
+          "current": {
+            "bytes": 2748,
+            "sha256": "fa7615a2e9172f8402fabbaf95aca2cce75ec0a12343674ab4af0a23b5125f8b"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "COMMAND-PLAN-v2.json",
+          "array": "scriptPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/run_scans_v2.py",
+          "expected": {
+            "bytes": 2487,
+            "sha256": "83ac8c492dc7f5abd66d4194291cf821a4a28fae46a19d9242b187cfb07e79e6"
+          },
+          "current": {
+            "bytes": 2487,
+            "sha256": "83ac8c492dc7f5abd66d4194291cf821a4a28fae46a19d9242b187cfb07e79e6"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "COMMAND-PLAN-v2.json",
+          "array": "scriptPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/preupload_gate.py",
+          "expected": {
+            "bytes": 1751,
+            "sha256": "1ce8f7127e7a4907a85393bd77f60acca62b9514775a3d3b5d11b4dc89b82989"
+          },
+          "current": {
+            "bytes": 1841,
+            "sha256": "1bbc38b08a3419f518694bc84c445ee43dd104d5c423e14938f244228bb2c3f9"
+          },
+          "resolution": "exact historical snapshot plus approved current transition"
+        },
+        {
+          "record": "COMMAND-PLAN-v2.json",
+          "array": "scriptPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/scan_documents.py",
+          "expected": {
+            "bytes": 1596,
+            "sha256": "c9f0ede91b0dba2561b136be66bc2e246ee92a748ab3b15336243b73536a4f68"
+          },
+          "current": {
+            "bytes": 1596,
+            "sha256": "c9f0ede91b0dba2561b136be66bc2e246ee92a748ab3b15336243b73536a4f68"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "COMMAND-PLAN-v2.json",
+          "array": "scriptPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/check_upload_phase.py",
+          "expected": {
+            "bytes": 929,
+            "sha256": "a5bfe7e7a19394a2e896beb1cf59503a351b7c97ec49e5bd5708983d1ac5bf04"
+          },
+          "current": {
+            "bytes": 929,
+            "sha256": "a5bfe7e7a19394a2e896beb1cf59503a351b7c97ec49e5bd5708983d1ac5bf04"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "COMMAND-PLAN-v2.json",
+          "array": "scriptPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/freeze_scope_v2.py",
+          "expected": {
+            "bytes": 4640,
+            "sha256": "22b0d859659a26db0a898443851d812e292310c46b1f7e4a6f3da69bb86be223"
+          },
+          "current": {
+            "bytes": 4640,
+            "sha256": "22b0d859659a26db0a898443851d812e292310c46b1f7e4a6f3da69bb86be223"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "COMMAND-PLAN-v2.json",
+          "array": "scriptPinsV2",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/stream_capture_v3.py",
+          "expected": {
+            "bytes": 8378,
+            "sha256": "ee29da1b656e265187b305d7a983800f70c82744c7bc539e3e87d54c73025a6e"
+          },
+          "current": {
+            "bytes": 8378,
+            "sha256": "ee29da1b656e265187b305d7a983800f70c82744c7bc539e3e87d54c73025a6e"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "COMMAND-PLAN-v2.json",
+          "array": "scriptPinsV2",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/stream_package_v4.py",
+          "expected": {
+            "bytes": 3834,
+            "sha256": "a9fcde18e3219cb45f17a3d10159ed245f9bb0850cf4de86786ab327dc1a36cd"
+          },
+          "current": {
+            "bytes": 3834,
+            "sha256": "a9fcde18e3219cb45f17a3d10159ed245f9bb0850cf4de86786ab327dc1a36cd"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "COMMAND-PLAN-v2.json",
+          "array": "scriptPinsV2",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/stream_privacy_v6.py",
+          "expected": {
+            "bytes": 13177,
+            "sha256": "15bf164a3df54afcabb30159bfee5398ef705d71a18dbd37eb3891bdf19366a0"
+          },
+          "current": {
+            "bytes": 13177,
+            "sha256": "15bf164a3df54afcabb30159bfee5398ef705d71a18dbd37eb3891bdf19366a0"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "COMMAND-PLAN-v2.json",
+          "array": "scriptPinsV2",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/run_scans_v3.py",
+          "expected": {
+            "bytes": 2852,
+            "sha256": "56b079309144918aabae5b9f8a09747e697c8131fdc6c569ba5d4020aa42a0ef"
+          },
+          "current": {
+            "bytes": 2852,
+            "sha256": "56b079309144918aabae5b9f8a09747e697c8131fdc6c569ba5d4020aa42a0ef"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "COMMAND-PLAN-v2.json",
+          "array": "scriptPinsV2",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/scan_documents_v2.py",
+          "expected": {
+            "bytes": 1938,
+            "sha256": "a7dd41cc26a989937b414c456cc94ab30c79a69603c2c6624bbf86c77b3c92cf"
+          },
+          "current": {
+            "bytes": 1938,
+            "sha256": "a7dd41cc26a989937b414c456cc94ab30c79a69603c2c6624bbf86c77b3c92cf"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "COMMAND-PLAN-v2.json",
+          "array": "scriptPinsV2",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/make_duplicate_provenance.py",
+          "expected": {
+            "bytes": 1475,
+            "sha256": "7613358c09827b6173b6cbf5c5278924b16a8b3f37773dd263774f7a5de88e66"
+          },
+          "current": {
+            "bytes": 1475,
+            "sha256": "7613358c09827b6173b6cbf5c5278924b16a8b3f37773dd263774f7a5de88e66"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "INDEPENDENT-MAZDA-PLAN-REVIEW-v1.json",
+          "array": "reviewedInputPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/stream_capture_v2.py",
+          "expected": {
+            "bytes": 7709,
+            "sha256": "52cbc4040262cff62296f2ecdd544eaad3478ace6b5298a209db392b8f3fe427"
+          },
+          "current": {
+            "bytes": 7709,
+            "sha256": "52cbc4040262cff62296f2ecdd544eaad3478ace6b5298a209db392b8f3fe427"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "INDEPENDENT-MAZDA-PLAN-REVIEW-v1.json",
+          "array": "reviewedInputPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/stream_package_v3.py",
+          "expected": {
+            "bytes": 3542,
+            "sha256": "e1040a007215c966f2e5297aff4d378e23a7b79daa81594cefef94aab345bdec"
+          },
+          "current": {
+            "bytes": 3542,
+            "sha256": "e1040a007215c966f2e5297aff4d378e23a7b79daa81594cefef94aab345bdec"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "INDEPENDENT-MAZDA-PLAN-REVIEW-v1.json",
+          "array": "reviewedInputPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/stream_privacy_v5.py",
+          "expected": {
+            "bytes": 10698,
+            "sha256": "ea6a7c147b605cd9b800d74cb0630bf849cdb0f8733fb71ad7088c4e21002c75"
+          },
+          "current": {
+            "bytes": 10698,
+            "sha256": "ea6a7c147b605cd9b800d74cb0630bf849cdb0f8733fb71ad7088c4e21002c75"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "INDEPENDENT-MAZDA-PLAN-REVIEW-v1.json",
+          "array": "reviewedInputPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/run_bounded_v2.py",
+          "expected": {
+            "bytes": 2358,
+            "sha256": "44aa66726c01e1defd7b2fa45ad0ccd45fcfaf3cfcbe0792ab62fe5aa1c1fb8d"
+          },
+          "current": {
+            "bytes": 2358,
+            "sha256": "44aa66726c01e1defd7b2fa45ad0ccd45fcfaf3cfcbe0792ab62fe5aa1c1fb8d"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "INDEPENDENT-MAZDA-PLAN-REVIEW-v1.json",
+          "array": "reviewedInputPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/inventory_json_sanitizer_candidates.py",
+          "expected": {
+            "bytes": 1576,
+            "sha256": "3fb4455e98b8a0fec884018671bc3fe0cf0dcfedc63e00c96abe2314b214fa15"
+          },
+          "current": {
+            "bytes": 1576,
+            "sha256": "3fb4455e98b8a0fec884018671bc3fe0cf0dcfedc63e00c96abe2314b214fa15"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "INDEPENDENT-MAZDA-PLAN-REVIEW-v1.json",
+          "array": "reviewedInputPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/preliminary_scope_privacy.py",
+          "expected": {
+            "bytes": 1621,
+            "sha256": "44399f5651c1af694f5acd7a81c584f0abe266991424a8e1a9c4e236a1b9bb5d"
+          },
+          "current": {
+            "bytes": 1621,
+            "sha256": "44399f5651c1af694f5acd7a81c584f0abe266991424a8e1a9c4e236a1b9bb5d"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "INDEPENDENT-MAZDA-PLAN-REVIEW-v1.json",
+          "array": "reviewedInputPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/derive_restore_plan_v2.py",
+          "expected": {
+            "bytes": 2748,
+            "sha256": "fa7615a2e9172f8402fabbaf95aca2cce75ec0a12343674ab4af0a23b5125f8b"
+          },
+          "current": {
+            "bytes": 2748,
+            "sha256": "fa7615a2e9172f8402fabbaf95aca2cce75ec0a12343674ab4af0a23b5125f8b"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "INDEPENDENT-MAZDA-PLAN-REVIEW-v1.json",
+          "array": "reviewedInputPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/run_scans_v2.py",
+          "expected": {
+            "bytes": 2487,
+            "sha256": "83ac8c492dc7f5abd66d4194291cf821a4a28fae46a19d9242b187cfb07e79e6"
+          },
+          "current": {
+            "bytes": 2487,
+            "sha256": "83ac8c492dc7f5abd66d4194291cf821a4a28fae46a19d9242b187cfb07e79e6"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "INDEPENDENT-MAZDA-PLAN-REVIEW-v1.json",
+          "array": "reviewedInputPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/preupload_gate.py",
+          "expected": {
+            "bytes": 1751,
+            "sha256": "1ce8f7127e7a4907a85393bd77f60acca62b9514775a3d3b5d11b4dc89b82989"
+          },
+          "current": {
+            "bytes": 1841,
+            "sha256": "1bbc38b08a3419f518694bc84c445ee43dd104d5c423e14938f244228bb2c3f9"
+          },
+          "resolution": "exact historical snapshot plus approved current transition"
+        },
+        {
+          "record": "INDEPENDENT-MAZDA-PLAN-REVIEW-v1.json",
+          "array": "reviewedInputPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/scan_documents.py",
+          "expected": {
+            "bytes": 1596,
+            "sha256": "c9f0ede91b0dba2561b136be66bc2e246ee92a748ab3b15336243b73536a4f68"
+          },
+          "current": {
+            "bytes": 1596,
+            "sha256": "c9f0ede91b0dba2561b136be66bc2e246ee92a748ab3b15336243b73536a4f68"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "INDEPENDENT-MAZDA-PLAN-REVIEW-v1.json",
+          "array": "reviewedInputPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/check_upload_phase.py",
+          "expected": {
+            "bytes": 929,
+            "sha256": "a5bfe7e7a19394a2e896beb1cf59503a351b7c97ec49e5bd5708983d1ac5bf04"
+          },
+          "current": {
+            "bytes": 929,
+            "sha256": "a5bfe7e7a19394a2e896beb1cf59503a351b7c97ec49e5bd5708983d1ac5bf04"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "INDEPENDENT-MAZDA-PLAN-REVIEW-v1.json",
+          "array": "reviewedInputPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/freeze_scope_v2.py",
+          "expected": {
+            "bytes": 4640,
+            "sha256": "22b0d859659a26db0a898443851d812e292310c46b1f7e4a6f3da69bb86be223"
+          },
+          "current": {
+            "bytes": 4640,
+            "sha256": "22b0d859659a26db0a898443851d812e292310c46b1f7e4a6f3da69bb86be223"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "INDEPENDENT-MAZDA-PLAN-REVIEW-v1.json",
+          "array": "reviewedInputPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/check_upload_phase.py",
+          "expected": {
+            "bytes": 929,
+            "sha256": "a5bfe7e7a19394a2e896beb1cf59503a351b7c97ec49e5bd5708983d1ac5bf04"
+          },
+          "current": {
+            "bytes": 929,
+            "sha256": "a5bfe7e7a19394a2e896beb1cf59503a351b7c97ec49e5bd5708983d1ac5bf04"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "INDEPENDENT-MAZDA-PLAN-REVIEW-v1.json",
+          "array": "reviewedInputPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/inventory_json_sanitizer_candidates.py",
+          "expected": {
+            "bytes": 1576,
+            "sha256": "3fb4455e98b8a0fec884018671bc3fe0cf0dcfedc63e00c96abe2314b214fa15"
+          },
+          "current": {
+            "bytes": 1576,
+            "sha256": "3fb4455e98b8a0fec884018671bc3fe0cf0dcfedc63e00c96abe2314b214fa15"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "INDEPENDENT-MAZDA-PLAN-REVIEW-v1.json",
+          "array": "reviewedInputPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/preliminary_scope_privacy.py",
+          "expected": {
+            "bytes": 1621,
+            "sha256": "44399f5651c1af694f5acd7a81c584f0abe266991424a8e1a9c4e236a1b9bb5d"
+          },
+          "current": {
+            "bytes": 1621,
+            "sha256": "44399f5651c1af694f5acd7a81c584f0abe266991424a8e1a9c4e236a1b9bb5d"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "INDEPENDENT-MAZDA-PLAN-REVIEW-v1.json",
+          "array": "reviewedInputPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/run_bounded_v2.py",
+          "expected": {
+            "bytes": 2358,
+            "sha256": "44aa66726c01e1defd7b2fa45ad0ccd45fcfaf3cfcbe0792ab62fe5aa1c1fb8d"
+          },
+          "current": {
+            "bytes": 2358,
+            "sha256": "44aa66726c01e1defd7b2fa45ad0ccd45fcfaf3cfcbe0792ab62fe5aa1c1fb8d"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "INDEPENDENT-MAZDA-PLAN-REVIEW-v1.json",
+          "array": "reviewedInputPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/scan_documents.py",
+          "expected": {
+            "bytes": 1596,
+            "sha256": "c9f0ede91b0dba2561b136be66bc2e246ee92a748ab3b15336243b73536a4f68"
+          },
+          "current": {
+            "bytes": 1596,
+            "sha256": "c9f0ede91b0dba2561b136be66bc2e246ee92a748ab3b15336243b73536a4f68"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "INDEPENDENT-MAZDA-PLAN-REVIEW-v1.json",
+          "array": "reviewedInputPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/stream_capture_v2.py",
+          "expected": {
+            "bytes": 7709,
+            "sha256": "52cbc4040262cff62296f2ecdd544eaad3478ace6b5298a209db392b8f3fe427"
+          },
+          "current": {
+            "bytes": 7709,
+            "sha256": "52cbc4040262cff62296f2ecdd544eaad3478ace6b5298a209db392b8f3fe427"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "INDEPENDENT-MAZDA-PLAN-REVIEW-v1.json",
+          "array": "reviewedInputPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/stream_package_v3.py",
+          "expected": {
+            "bytes": 3542,
+            "sha256": "e1040a007215c966f2e5297aff4d378e23a7b79daa81594cefef94aab345bdec"
+          },
+          "current": {
+            "bytes": 3542,
+            "sha256": "e1040a007215c966f2e5297aff4d378e23a7b79daa81594cefef94aab345bdec"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "INDEPENDENT-MAZDA-PLAN-REVIEW-v1.json",
+          "array": "reviewedInputPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/stream_privacy_v5.py",
+          "expected": {
+            "bytes": 10698,
+            "sha256": "ea6a7c147b605cd9b800d74cb0630bf849cdb0f8733fb71ad7088c4e21002c75"
+          },
+          "current": {
+            "bytes": 10698,
+            "sha256": "ea6a7c147b605cd9b800d74cb0630bf849cdb0f8733fb71ad7088c4e21002c75"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "INDEPENDENT-MAZDA-PLAN-REVIEW-v1.json",
+          "array": "reviewedInputPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/snapshot_recovery_v2.py",
+          "expected": {
+            "bytes": 10384,
+            "sha256": "cf321c73428059b8b4c2d69b284392a5e9e4c1f6238475ef10ab75a46e5c20a7"
+          },
+          "current": {
+            "bytes": 10384,
+            "sha256": "cf321c73428059b8b4c2d69b284392a5e9e4c1f6238475ef10ab75a46e5c20a7"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "INDEPENDENT-MAZDA-PLAN-REVIEW-v1.json",
+          "array": "reviewedInputPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-104/scripts/package-source.py",
+          "expected": {
+            "bytes": 8343,
+            "sha256": "1742adb876b577a9b71b477f5d8a1313595fd37ca7eb74c4969b99a26910b5e6"
+          },
+          "current": {
+            "bytes": 8343,
+            "sha256": "1742adb876b577a9b71b477f5d8a1313595fd37ca7eb74c4969b99a26910b5e6"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "INDEPENDENT-MAZDA-ADAPTER-REVIEW-v2.json",
+          "array": "reviewedInputPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/stream_privacy_v6.py",
+          "expected": {
+            "bytes": 13177,
+            "sha256": "15bf164a3df54afcabb30159bfee5398ef705d71a18dbd37eb3891bdf19366a0"
+          },
+          "current": {
+            "bytes": 13177,
+            "sha256": "15bf164a3df54afcabb30159bfee5398ef705d71a18dbd37eb3891bdf19366a0"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "INDEPENDENT-MAZDA-ADAPTER-REVIEW-v2.json",
+          "array": "reviewedInputPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/stream_capture_v3.py",
+          "expected": {
+            "bytes": 8378,
+            "sha256": "ee29da1b656e265187b305d7a983800f70c82744c7bc539e3e87d54c73025a6e"
+          },
+          "current": {
+            "bytes": 8378,
+            "sha256": "ee29da1b656e265187b305d7a983800f70c82744c7bc539e3e87d54c73025a6e"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "INDEPENDENT-MAZDA-ADAPTER-REVIEW-v2.json",
+          "array": "reviewedInputPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/stream_package_v4.py",
+          "expected": {
+            "bytes": 3834,
+            "sha256": "a9fcde18e3219cb45f17a3d10159ed245f9bb0850cf4de86786ab327dc1a36cd"
+          },
+          "current": {
+            "bytes": 3834,
+            "sha256": "a9fcde18e3219cb45f17a3d10159ed245f9bb0850cf4de86786ab327dc1a36cd"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "INDEPENDENT-MAZDA-ADAPTER-REVIEW-v2.json",
+          "array": "reviewedInputPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/run_scans_v3.py",
+          "expected": {
+            "bytes": 2852,
+            "sha256": "56b079309144918aabae5b9f8a09747e697c8131fdc6c569ba5d4020aa42a0ef"
+          },
+          "current": {
+            "bytes": 2852,
+            "sha256": "56b079309144918aabae5b9f8a09747e697c8131fdc6c569ba5d4020aa42a0ef"
+          },
+          "resolution": "unchanged exact pin"
+        },
+        {
+          "record": "INDEPENDENT-MAZDA-ADAPTER-REVIEW-v2.json",
+          "array": "reviewedInputPins",
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/scan_documents_v2.py",
+          "expected": {
+            "bytes": 1938,
+            "sha256": "a7dd41cc26a989937b414c456cc94ab30c79a69603c2c6624bbf86c77b3c92cf"
+          },
+          "current": {
+            "bytes": 1938,
+            "sha256": "a7dd41cc26a989937b414c456cc94ab30c79a69603c2c6624bbf86c77b3c92cf"
+          },
+          "resolution": "unchanged exact pin"
+        }
+      ],
+      "failedPreflightPreserved": [
+        {
+          "file": "INDEPENDENT-MAZDA-RECOVERY-VERIFICATION-v1.json",
+          "bytes": 1737,
+          "sha256": "6a4b411e1af65a0b01b8c46c2b1ab00bf258afac1603a59e8ca8927f68bd264e"
+        },
+        {
+          "file": "independent_mazda_recovery_v2.py",
+          "bytes": 26016,
+          "sha256": "95f41b24efbbab5c9aa07b0420a92397a615883f85a6130c60cdfa12d0318dd0"
+        },
+        {
+          "file": "independent-replay.resources.json",
+          "bytes": 621,
+          "sha256": "4b31d2a3994ceb693e1891cab2bf70d83b56953573116587d371bd06218b8455"
+        },
+        {
+          "file": "independent-replay.resources.invocation.json",
+          "bytes": 571,
+          "sha256": "a605fd2d2fe7427e39946fd5231acb7277cbb9aa9cfb4d8a16f1002a0f037ee9"
+        },
+        {
+          "file": "independent-replay.log",
+          "bytes": 1636,
+          "sha256": "3eda32b45ead10f521cffe24696ecc02cef4bf772a7060b43338c0c6c1a58562"
+        },
+        {
+          "file": "independent-replay.err",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "blockedReportRemainsAtOriginalPath": true,
+      "retrySuccessPath": "INDEPENDENT-MAZDA-RECOVERY-VERIFICATION-v2.json",
+      "originalCheckerV1Unexecuted": true,
+      "preparationInterruption": "Earlier metadata-only transition preparation observed concurrent approved pointer edit and stopped at assertion before writes or payload replay; final transition independently binds retained before/after copies.",
+      "sourceCaptureScannerAndReplayAssertionsUnchanged": true
+    },
+    "preservedFailedBackupAttempts": [
+      {
+        "phase": "freeze-scope",
+        "terminal": {
+          "bytes": 568,
+          "sha256": "935cbdbcce6df9b68ea37b9dff32d78c8351b13f9b79314d29d5a4947f75b1de"
+        },
+        "stderr": {
+          "bytes": 318,
+          "sha256": "b4f57fc88d25bf2a214ed570f1ab742160225e8dc8228745d3589661abd1e225"
+        },
+        "exitCode": 1
+      },
+      {
+        "phase": "independent-sanitation-review",
+        "terminal": {
+          "bytes": 588,
+          "sha256": "3ae169ce5db947dcfeec39b806066c0ee871755a459bf95b7e58251818800c94"
+        },
+        "stderr": {
+          "bytes": 1435,
+          "sha256": "f9b446f873ef4f6d877c8efccc4754d7a5e6a2b169a99674e6c063da35eea8fd"
+        },
+        "exitCode": 1
+      },
+      {
+        "phase": "independent-adapter-review",
+        "terminal": {
+          "bytes": 585,
+          "sha256": "0a7812388c06c9a6ddcf88f775288f9127889fba8efad915e918e53054c37b79"
+        },
+        "stderr": {
+          "bytes": 907,
+          "sha256": "49a0c2302cf83a181f1d87aa927fde85844622a701aa6e169edd9786150e275e"
+        },
+        "exitCode": 1
+      },
+      {
+        "phase": "scan-02",
+        "terminal": {
+          "bytes": 824,
+          "sha256": "8a11d5ad37a762719d9d1512d75ad29815cb7ce691aaf325ed094c80fb5caf76"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "exitCode": 2
+      },
+      {
+        "phase": "independent-replay",
+        "terminal": {
+          "bytes": 621,
+          "sha256": "4b31d2a3994ceb693e1891cab2bf70d83b56953573116587d371bd06218b8455"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "exitCode": 1
+      }
+    ],
+    "postCaptureLiveChanges": [],
+    "inputPins": {
+      "COMMAND-PLAN-PREUPLOAD-PIN-TRANSITION-v3.json": {
+        "bytes": 35960,
+        "sha256": "2657362bd356774d6585c633a50d05c0c6a6bb48ad2bbe3aa5a201096482c39f"
+      },
+      "RESULT-POINTER-PROPAGATION-v2.json": {
+        "bytes": 1203,
+        "sha256": "d858488b16dd07a3b52c8cf7ebdb0cb1fddad47aff9607dbf5996a90b5b80f78"
+      },
+      "METADATA-KEY-RETRY-RECORD.json": {
+        "bytes": 756,
+        "sha256": "319388b0f78754b65a499dd4219ffa2709df96fdcfe4bbf1b8ab43678ac72ac0"
+      },
+      "HTML-FORM-TOKEN-SANITATION-MAPPING-v2.json": {
+        "bytes": 12067,
+        "sha256": "f933be4e767be029fa906513c956227b45a52d6bb133ca4332ae7ba957da9a47"
+      },
+      "metadata-v1-ARCHIVE-PLAN.json": {
+        "bytes": 268900,
+        "sha256": "6f8c3ece3d2fb6e323d319b7469bdf53d2a5d1b71ee69b725050c39b7a25b7cd"
+      },
+      "metadata-v1-RESTORE-PLAN.json": {
+        "bytes": 2770088,
+        "sha256": "4e5b633f3c35435375ea8772d6e0ea4a703c5ce2f147a63eeeeae41f99ccd87a"
+      },
+      "metadata-v1-proof-packages.json": {
+        "bytes": 134849,
+        "sha256": "5f67361a29fa92961d8ee6ec130d7ffdaa85ddf97318ec8537f987bc43245795"
+      },
+      "COMMAND-PLAN-v2.json": {
+        "bytes": 8412,
+        "sha256": "42715ef40d2b893d0c99baaff7df8387a124746401f887823c73a0d259086067"
+      },
+      "FROZEN-CAPTURE-SCOPE.json": {
+        "bytes": 130921,
+        "sha256": "7ab8cbbadbf20c9892b80d7c2ddf81e337049cb040c847198500ceed7df1d049"
+      },
+      "source-capture.json": {
+        "bytes": 536797,
+        "sha256": "3aa3b74cb19e0248c8d11f4748ff92911929dbeadcdca498800a3aefd6a3579d"
+      },
+      "proof-capture-v2.json": {
+        "bytes": 1194017,
+        "sha256": "c647594baaeeb119c0fa1d7dcd6affb76bb1380a1c6d03cb25df7c7b8d85a2b9"
+      },
+      "source-package.json": {
+        "bytes": 120455,
+        "sha256": "bf060017aff954c5487a96e87c7ff1bd047e28d18fdf63c4d305c98ff4090f8e"
+      },
+      "proof-packages.json": {
+        "bytes": 134876,
+        "sha256": "41903e545f5e67da91ad66fa16ec0bfad4babcd1036fadf59704cde236eaaa0d"
+      },
+      "RESTORE-PLAN.json": {
+        "bytes": 2770148,
+        "sha256": "5d2fea48990546641a790e418ceb542a85bd159b97b63d101b08e2a6dce7f21c"
+      },
+      "ARCHIVE-PLAN.json": {
+        "bytes": 268927,
+        "sha256": "b70f0738e35ba5e3a2918a030aa634b8e9cd36568ce1b4c4ad0517d8af300400"
+      },
+      "ALL-ARCHIVE-PRIVACY-GATE.json": {
+        "bytes": 6692,
+        "sha256": "37baaa82c44cb7483f0b232da579829be53edde4d0763019c941d63f6b583900"
+      },
+      "JSON-COOKIE-SANITATION-MAPPING.json": {
+        "bytes": 5688,
+        "sha256": "026a6c2885d76d1dac79b7dfa80284a829645ed86b01cc11c0fc7819a3d4abff"
+      },
+      "HTML-FORM-TOKEN-SANITATION-MAPPING.json": {
+        "bytes": 12067,
+        "sha256": "b8577b2cc568568f0402b8638fddf9c049867f042015e26481582b71ae2c605c"
+      },
+      "SYMLINK-RECONSTRUCTION-MAPPING.json": {
+        "bytes": 1255,
+        "sha256": "1c3e310ba8a5ac98a4fcba0aa26ec614f2bb0d5b86d5714046fa655e27de2864"
+      },
+      "SYMLINK-IDENTITY-ADDENDUM.json": {
+        "bytes": 1652,
+        "sha256": "206cbe1ad5d2a12e9d25822e960f3f62e03bd52a205a30a9a5a9f49a3b695ece"
+      },
+      "EXACT-DUPLICATE-PROVENANCE.json": {
+        "bytes": 75682,
+        "sha256": "7918cc0d8ca16dc07e020ec5352ec883585feefce647789f2037f59c19e31b1d"
+      },
+      "SCANNER-PUBLIC-LEXICAL-CLASSIFICATION-APPROVAL.json": {
+        "bytes": 1039,
+        "sha256": "058be7e0d9bbd6386a621c554b67c0a7d86259248f3509e06676788a809c1849"
+      },
+      "INDEPENDENT-MAZDA-SANITATION-REVIEW-v2.json": {
+        "bytes": 33704,
+        "sha256": "d8b1d1d7146144cb127390d0bfdafe76005d6e3ff9358ac0f59cf3bd279d7135"
+      },
+      "INDEPENDENT-MAZDA-ADAPTER-REVIEW-v2.json": {
+        "bytes": 8824,
+        "sha256": "9ec2c3c8cce5639433636920103bfbb07ec12d5f08c1b4521af0ab12105b0f30"
+      },
+      "INDEPENDENT-SANITATION-RETRY-ACCEPTANCE-ADDENDUM.json": {
+        "bytes": 1898,
+        "sha256": "38234b5c24f62731fae7810eb1d9ba4175a96f6eeb37fbc953b55da14d5eac16"
+      }
+    },
+    "verifierScript": {
+      "bytes": 27227,
+      "sha256": "7b3990793f0c0e8ef67d94b25a909d646d845cd2e3c7544a9e92fad551d81c59"
+    },
+    "noUploadsOrDeletion": true,
+    "completedAt": "2026-10-15T04:38:33.599229+00:00",
+    "resources": {
+      "wallSeconds": 1.852,
+      "maxRssKiB": 53384,
+      "addressSpaceLimitBytes": 268435456,
+      "chunkBytes": 65536,
+      "noRestoreClone": true
+    }
+  },
+  "preSaveDocumentVerification": {
+    "result": "PASS",
+    "reviewedAt": "2026-10-15T04:41:26.873523+00:00",
+    "documents": [
+      {
+        "filename": "Roadmark-RECOVERY-INDEX-MAZDA-WORKING-20261015.md",
+        "bytes": 29508,
+        "sha256": "d1407584b830ce024a69be73bf14cc42753e617b4881acbffe6b5c8bb2b2de1f"
+      },
+      {
+        "filename": "Roadmark-RECOVERY-MANIFEST-MAZDA-WORKING-20261015.json",
+        "bytes": 3283649,
+        "sha256": "2c37d2e1355856e89c092d195ba9a994a7f9f95f4980cd3cf0be272647f01ba0"
+      },
+      {
+        "filename": "Roadmark-RECOVERY-VERIFICATION-MAZDA-WORKING-20261015.json",
+        "bytes": 973889,
+        "sha256": "a69c724f4b33ae2e50bde2c4e39f308210fc7e56845af4b912818f8973e219ed"
+      },
+      {
+        "filename": "Roadmark-MAZDA-M1-UPDATE-20261015.md",
+        "bytes": 3755,
+        "sha256": "017fc53d0f9e04868f38e4ebcada0c465faee4d60b597f3e359f778e6209590c"
+      }
+    ],
+    "source": {
+      "filename": "Roadmark-recovery-source-MAZDA-WORKING-20261015T0405.tar.xz",
+      "group": "source-MAZDA-WORKING-20261015T0405",
+      "bytes": 8419376,
+      "sha256": "e73c41c5ad2dd58940c5d1a6a41f30fa8404b4983c254439991bdedb144b1165",
+      "restoreOrder": 39,
+      "library_file_id": "libfile_a5b3cbb702808191b77bd8e0e121d210",
+      "file_id": "file_00000000f73881f5bd20fda1df40ad10",
+      "version": 0,
+      "new": true
+    },
+    "newArchiveNativeIdentities": [
+      {
+        "filename": "Roadmark-recovery-source-MAZDA-WORKING-20261015T0405.tar.xz",
+        "group": "source-MAZDA-WORKING-20261015T0405",
+        "bytes": 8419376,
+        "sha256": "e73c41c5ad2dd58940c5d1a6a41f30fa8404b4983c254439991bdedb144b1165",
+        "restoreOrder": 39,
+        "library_file_id": "libfile_a5b3cbb702808191b77bd8e0e121d210",
+        "file_id": "file_00000000f73881f5bd20fda1df40ad10",
+        "version": 0,
+        "new": true
+      },
+      {
+        "filename": "Roadmark-recovery-MAZDA-WORKING-20261015T0405-part01of03-metadata-v2.tar.xz",
+        "group": "MAZDA-WORKING-20261015T0405",
+        "bytes": 8297032,
+        "sha256": "c78c1cef0f2819739b30fa8137c19c43398068e067f9aba5de8d3db09aa30061",
+        "restoreOrder": 109,
+        "library_file_id": "libfile_267b44470f208191a96f1052e846bb91",
+        "file_id": "file_0000000063bc820ea2b95093fa642ca2",
+        "version": 0,
+        "new": true
+      },
+      {
+        "filename": "Roadmark-recovery-MAZDA-WORKING-20261015T0405-part02of03.tar.xz",
+        "group": "MAZDA-WORKING-20261015T0405",
+        "bytes": 851672,
+        "sha256": "cb6cdc0b67c8ae1ba2ab67a33c07a3f9ee0987a54d292e95014ceef4f69174dc",
+        "restoreOrder": 110,
+        "library_file_id": "libfile_18b99135c0648191b685fcf0ed5d2467",
+        "file_id": "file_0000000004bc81f698c3518d5d78fbd3",
+        "version": 0,
+        "new": true
+      },
+      {
+        "filename": "Roadmark-recovery-MAZDA-WORKING-20261015T0405-part03of03.tar.xz",
+        "group": "MAZDA-WORKING-20261015T0405",
+        "bytes": 237644,
+        "sha256": "51293d3865555dd77908af84b90f17d03c70e6cb324dc8bbf8d6fc30155ef99d",
+        "restoreOrder": 111,
+        "library_file_id": "libfile_acd02481ab78819194ff24471c0ad76f",
+        "file_id": "file_000000000cdc81f5a58de4e8f9c845b0",
+        "version": 0,
+        "new": true
+      }
+    ],
+    "checks": {
+      "completeSelfContainedRestoreOrder": 111,
+      "logicalFiles": 9464,
+      "priorExactArchiveVersionsReused": 107,
+      "freshMembers": 1264,
+      "freshBytes": 329981216,
+      "oneSourceStrictlyUnder15000000": true,
+      "sourceNativeIdAndReplayPinMatched": true,
+      "acceptedUpdateByteIdentical": true,
+      "frozenCutAndOriginalExpectedPinsExplicit": true,
+      "targeted229Pass3FailAndSeparate11Plus7Retained": true,
+      "earlier71NotAddedToMazdaAggregate": true,
+      "fullTypeScriptBuildFullSuiteMobileReleaseGatesOpen": true,
+      "copySanitation8JsonFields13HtmlRanges": true,
+      "originalVersusSanitizedPinsAndReplayLimitationsExplicit": true,
+      "inheritedSanitationAndExclusionsPreserved": true,
+      "indexContainsAllExactArchiveIdentitiesInOrder": true,
+      "independentReplayEmbeddedUnchanged": true,
+      "failedAttemptsAndExactApprovedRetriesPreserved": true,
+      "allSupportTextPinsVerified": true,
+      "noArchivePayloadReadOrUploadPerformed": true
+    },
+    "privacy": {
+      "gatePin": {
+        "bytes": 2407,
+        "sha256": "db69336e9dcff8a372a45563007685d78d2d3f1fdb5ee1de276eea85a209e563"
+      },
+      "resourceReceiptPin": {
+        "bytes": 590,
+        "sha256": "7889c3b7468467da8eb215c71b42d03421a601e0781a45e857ec40a4fbae9f23"
+      },
+      "seedCounts": {
+        "historicalValues": 55,
+        "historicalForms": 373,
+        "mercedesValues": 20,
+        "mercedesForms": 128,
+        "originalSeedMembers": 200,
+        "leapmotorCookieAndHeaderValues": 26,
+        "leapmotorCookieForms": 171,
+        "mazdaCookieAndHeaderValues": 6,
+        "mazdaCookieForms": 42,
+        "mazdaPublicBareValues": 3,
+        "mazdaPublicBareForms": 20,
+        "mazdaCompleteHeaderValues": 3,
+        "mazdaCompleteHeaderForms": 22,
+        "mazdaCookiePairValues": 3,
+        "mazdaCookiePairForms": 23,
+        "mazdaFormTokenValues": 13,
+        "mazdaFormTokenForms": 91
+      },
+      "allKnownValuesAndFullCurrentPatterns": true,
+      "classifiedPublicLexicalCollisions": 1043,
+      "findings": 0
+    },
+    "inputPins": {
+      "library-archives-results.json": {
+        "bytes": 2090,
+        "sha256": "e268e52b24fa558ecfe7539fe2b7e973f2e65542916678b3c452a50c5be79e5b"
+      },
+      "library-archives-verified.jsonl": {
+        "bytes": 1090,
+        "sha256": "169b8cac06f320b77c12d774a499d5e658ac210b7067c0db411225998d1f58e4"
+      },
+      "library-documents-request.json": {
+        "bytes": 1135,
+        "sha256": "13f670458e33b5858241577a718f017d1b0a9b19953e28a73b182e2b1cebf750"
+      },
+      "INDEPENDENT-MAZDA-RECOVERY-VERIFICATION-v2.json": {
+        "bytes": 62761,
+        "sha256": "b0bc3fce89a2b6e52cf1173b4bc9d725bfd0f32598f8c04a84198f84a0bd58b2"
+      },
+      "build_documents.py": {
+        "bytes": 12978,
+        "sha256": "870bc5284599a671f81b27428175c17651b071d041d73c5540310a11636c053d"
+      },
+      "FINAL-DOCUMENT-SUPPORT-ADDITION.json": {
+        "bytes": 832,
+        "sha256": "85c2154687e28618176954cf6a88bcdddff2da7592ea8077d4bc9d0ee22d6c88"
+      }
+    },
+    "checkerPin": {
+      "bytes": 13661,
+      "sha256": "0cd44cb6c96e6bb8fbdd42034000dab3a8da4d042c7a7b12054e446184315326"
+    }
+  },
+  "privacySummary": {
+    "newArchiveGate": {
+      "bytes": 6692,
+      "sha256": "37baaa82c44cb7483f0b232da579829be53edde4d0763019c941d63f6b583900"
+    },
+    "newDocumentGate": {
+      "bytes": 2407,
+      "sha256": "db69336e9dcff8a372a45563007685d78d2d3f1fdb5ee1de276eea85a209e563"
+    },
+    "unclassifiedResiduals": 0,
+    "limitations": "Exact bounded content/rule and known-value checks, not universal secret-free assurance."
+  },
+  "originalRawCaptureReplayCompatibility": {
+    "sanitizedRawCopies": 8,
+    "withRetainedOriginalHashReferences": 7,
+    "pinnedByFinalV6SourceManifest": 4,
+    "mappingRestorePath": "mercedes-safety-support/RUNTIME-SANITATION-REPORT.json",
+    "files": [
+      {
+        "path": "mercedes-research/people-movers/evans-2023-au-maker-brochure-mirror.error.raw",
+        "originalBytes": 6093,
+        "originalSHA256": "43e73052950b1e4f0f1cf1f1c17e33f1353cfb5bf68b0b8e153f77f7bb1bca94",
+        "sanitizedBytes": 3963,
+        "sanitizedSHA256": "723ccd8d4cb44ed7262105731e949c39955fa9e02c728b5b898acecfdb834d4f",
+        "originalHashReferencedByRetainedMetadata": true,
+        "referencedByFinalV6SourceManifest": false,
+        "referenceFiles": [
+          "mercedes-research/normalized-evidence-draft-v3.json",
+          "mercedes-research/normalized-evidence-draft-v4.json",
+          "mercedes-research/normalized-evidence-v1.json",
+          "mercedes-research/normalized-evidence-v2.json",
+          "mercedes-research/normalized-evidence-v3.json",
+          "mercedes-research/normalized-evidence-v4.json",
+          "mercedes-research/normalized-evidence-v5.json",
+          "mercedes-research/normalized-evidence-v6.json"
+        ]
+      },
+      {
+        "path": "mercedes-research/people-movers/evito-redbook-2026.error.raw",
+        "originalBytes": 773,
+        "originalSHA256": "ef91352335721e0d690c83085a0d6fb525163a4a122697b01e05a6bc646d4c10",
+        "sanitizedBytes": 616,
+        "sanitizedSHA256": "1eb23b46f90872f70a39fa5e5918edf889a2bbb6ba86908837cea6a300d75893",
+        "originalHashReferencedByRetainedMetadata": true,
+        "referencedByFinalV6SourceManifest": false,
+        "referenceFiles": [
+          "mercedes-research/normalized-evidence-draft-v3.json",
+          "mercedes-research/normalized-evidence-draft-v4.json",
+          "mercedes-research/normalized-evidence-v1.json",
+          "mercedes-research/normalized-evidence-v2.json",
+          "mercedes-research/normalized-evidence-v3.json",
+          "mercedes-research/normalized-evidence-v4.json",
+          "mercedes-research/normalized-evidence-v5.json",
+          "mercedes-research/normalized-evidence-v6.json"
+        ]
+      },
+      {
+        "path": "mercedes-research/technical/city-ringwood.raw.html",
+        "originalBytes": 127678,
+        "originalSHA256": "90bbd08d40adbd8a5d813859f2366924973a7b9d54ae060b42162daa9f236110",
+        "sanitizedBytes": 127747,
+        "sanitizedSHA256": "a82fc8fb0f398c7da19ee807010fab0d5ef0f9749c5db54d7a69e79ef40a7c4b",
+        "originalHashReferencedByRetainedMetadata": true,
+        "referencedByFinalV6SourceManifest": true,
+        "referenceFiles": [
+          "mercedes-research/city-editions/normalized-city-editions.json",
+          "mercedes-research/city-editions/sources.json",
+          "mercedes-research/normalized-evidence-draft-v4.json",
+          "mercedes-research/normalized-evidence-v1.json",
+          "mercedes-research/normalized-evidence-v2.json",
+          "mercedes-research/normalized-evidence-v3.json",
+          "mercedes-research/normalized-evidence-v4.json",
+          "mercedes-research/normalized-evidence-v5.json",
+          "mercedes-research/normalized-evidence-v6.json",
+          "mercedes-research/technical/extra1-capture-manifest.json",
+          "mercedes-staging-plan/packet-preparation/source-capture-manifest-v4.json",
+          "mercedes-staging-plan/packet-preparation/source-capture-manifest-v6.json"
+        ]
+      },
+      {
+        "path": "mercedes-research/technical/eqa-choice.raw.html",
+        "originalBytes": 538630,
+        "originalSHA256": "306e6986a4149505818d86bbd8d8591519032c76378af45cb7ef7e1f0b20756e",
+        "sanitizedBytes": 538699,
+        "sanitizedSHA256": "5362b17c79d6deba116ab21c1feb26a123d6887cc384a3f21f1e6dc2f3d15b90",
+        "originalHashReferencedByRetainedMetadata": true,
+        "referencedByFinalV6SourceManifest": true,
+        "referenceFiles": [
+          "mercedes-research/normalized-evidence-draft-v2.json",
+          "mercedes-research/normalized-evidence-draft-v3.json",
+          "mercedes-research/normalized-evidence-draft-v4.json",
+          "mercedes-research/normalized-evidence-v1.json",
+          "mercedes-research/normalized-evidence-v2.json",
+          "mercedes-research/normalized-evidence-v3.json",
+          "mercedes-research/normalized-evidence-v4.json",
+          "mercedes-research/normalized-evidence-v5.json",
+          "mercedes-research/normalized-evidence-v6.json",
+          "mercedes-research/normalized-passenger-draft-v1.json",
+          "mercedes-research/technical/extra5-capture-manifest.json",
+          "mercedes-staging-plan/packet-preparation/source-capture-manifest-v4.json",
+          "mercedes-staging-plan/packet-preparation/source-capture-manifest-v6.json"
+        ]
+      },
+      {
+        "path": "mercedes-research/technical/eqa-stock-current.raw.html",
+        "originalBytes": 467018,
+        "originalSHA256": "04f9d556013be49932c42fbd05c90da51a2e8fca59bf62c1bd2d66330c23c8c6",
+        "sanitizedBytes": 466976,
+        "sanitizedSHA256": "d02f2b156999b98c8a4b55ec28a39c2942e90fc8133f8c275c77e1cb7f16a743",
+        "originalHashReferencedByRetainedMetadata": true,
+        "referencedByFinalV6SourceManifest": false,
+        "referenceFiles": [
+          "mercedes-research/technical/more-capture-manifest-v1.json"
+        ]
+      },
+      {
+        "path": "mercedes-research/technical/eqa-stock-current.ssr.json",
+        "originalBytes": 290318,
+        "originalSHA256": "e2e2011b0e674bf6f32dacf45ccd6cb803a912bf5109fe608c6e27379408fde4",
+        "sanitizedBytes": 290276,
+        "sanitizedSHA256": "99aa956a00c6414bd0720f4834cc1c5b28fc0cbfddf6a02998ef1c06df8fba6e",
+        "originalHashReferencedByRetainedMetadata": false,
+        "referencedByFinalV6SourceManifest": false,
+        "referenceFiles": []
+      },
+      {
+        "path": "mercedes-research/technical/glb-whichcar.raw.html",
+        "originalBytes": 165001,
+        "originalSHA256": "b54ca183b859ee18fa291195db74b7c584ff9b59bf361bf774fc0ae26f42df51",
+        "sanitizedBytes": 165024,
+        "sanitizedSHA256": "84d9a54dab043f194d3e3201928c79dcdef34590d23fea5d7e99391cf0c84c42",
+        "originalHashReferencedByRetainedMetadata": true,
+        "referencedByFinalV6SourceManifest": true,
+        "referenceFiles": [
+          "mercedes-research/normalized-evidence-draft-v2.json",
+          "mercedes-research/normalized-evidence-draft-v3.json",
+          "mercedes-research/normalized-evidence-draft-v4.json",
+          "mercedes-research/normalized-evidence-v1.json",
+          "mercedes-research/normalized-evidence-v2.json",
+          "mercedes-research/normalized-evidence-v3.json",
+          "mercedes-research/normalized-evidence-v4.json",
+          "mercedes-research/normalized-evidence-v5.json",
+          "mercedes-research/normalized-evidence-v6.json",
+          "mercedes-research/normalized-passenger-draft-v1.json",
+          "mercedes-research/technical/extra5-capture-manifest.json",
+          "mercedes-staging-plan/packet-preparation/source-capture-manifest-v4.json",
+          "mercedes-staging-plan/packet-preparation/source-capture-manifest-v6.json"
+        ]
+      },
+      {
+        "path": "mercedes-research/technical/glc-whichcar.raw.html",
+        "originalBytes": 169461,
+        "originalSHA256": "d9eafe061ffc46c9814a7ca6e8f9e958e0b0d1e9279789e5b7522b66b10274ba",
+        "sanitizedBytes": 169484,
+        "sanitizedSHA256": "314207d7cf569680cd7873a99d7f0d9fc737d6f533fc3253fda1777affcbea02",
+        "originalHashReferencedByRetainedMetadata": true,
+        "referencedByFinalV6SourceManifest": true,
+        "referenceFiles": [
+          "mercedes-research/normalized-evidence-draft-v2.json",
+          "mercedes-research/normalized-evidence-draft-v3.json",
+          "mercedes-research/normalized-evidence-draft-v4.json",
+          "mercedes-research/normalized-evidence-v1.json",
+          "mercedes-research/normalized-evidence-v2.json",
+          "mercedes-research/normalized-evidence-v3.json",
+          "mercedes-research/normalized-evidence-v4.json",
+          "mercedes-research/normalized-evidence-v5.json",
+          "mercedes-research/normalized-evidence-v6.json",
+          "mercedes-research/normalized-passenger-draft-v1.json",
+          "mercedes-research/technical/more-capture-manifest-v1.json",
+          "mercedes-staging-plan/packet-preparation/source-capture-manifest-v4.json",
+          "mercedes-staging-plan/packet-preparation/source-capture-manifest-v6.json"
+        ]
+      }
+    ],
+    "originalExpectedHashesUnchanged": true,
+    "originalRawBytesAvailableInThisRecoveryCopy": false,
+    "replayRule": "The recovery manifest verifies sanitized copies. An original raw-capture pin check must report those original bytes unavailable, never substitute the sanitized digest. Replaying those raw pins requires intact original bytes or a separately reviewed new manifest. Current working originals remain untouched.",
+    "factualPassageReview": {
+      "schemaVersion": 1,
+      "status": "accepted_bounded_factual_preservation_of_sanitized_backup_copies",
+      "reviewedAt": "2026-10-14",
+      "runtimeSanitationReport": {
+        "path": "RUNTIME-SANITATION-REPORT.json",
+        "bytes": 51410,
+        "sha256": "d2783deea56dc69a68e33166c97a235942333fd7afad2c228223bc1e591a7971"
+      },
+      "originalSourceCaptureManifest": {
+        "path": "mercedes-staging-plan/packet-preparation/source-capture-manifest-v6.json",
+        "bytes": 18041,
+        "sha256": "3e18f87b18dd36a39a64dfdc3394cd46e84297ea00edd257ae07cbc105e86300"
+      },
+      "files": [
+        {
+          "sourceKey": "city-ringwood",
+          "original": {
+            "path": "mercedes-research/technical/city-ringwood.raw.html",
+            "bytes": 127678,
+            "sha256": "90bbd08d40adbd8a5d813859f2366924973a7b9d54ae060b42162daa9f236110"
+          },
+          "sanitizedCopy": {
+            "path": "city-ringwood.raw.html",
+            "bytes": 127747,
+            "sha256": "a82fc8fb0f398c7da19ee807010fab0d5ef0f9749c5db54d7a69e79ef40a7c4b"
+          },
+          "restoredCopy": {
+            "path": "city-ringwood.raw.html",
+            "bytes": 127747,
+            "sha256": "a82fc8fb0f398c7da19ee807010fab0d5ef0f9749c5db54d7a69e79ef40a7c4b"
+          },
+          "redactionLocations": [
+            {
+              "originalByteStart": 73911,
+              "originalByteEndExclusive": 73921,
+              "sanitizedByteStart": 73911,
+              "sanitizedByteEndExclusive": 73944,
+              "encoding": "literal",
+              "sourceFields": [
+                {
+                  "member": "mercedes-research/technical/city-ringwood.raw.html",
+                  "field": "nonce",
+                  "classification": "Captured nonce/form value or public-site API capability; not factual vehicle evidence"
+                }
+              ]
+            },
+            {
+              "originalByteStart": 122606,
+              "originalByteEndExclusive": 122616,
+              "sanitizedByteStart": 122629,
+              "sanitizedByteEndExclusive": 122662,
+              "encoding": "literal",
+              "sourceFields": [
+                {
+                  "member": "mercedes-research/technical/city-ringwood.raw.html",
+                  "field": "nonce",
+                  "classification": "Captured nonce/form value or public-site API capability; not factual vehicle evidence"
+                }
+              ]
+            },
+            {
+              "originalByteStart": 123255,
+              "originalByteEndExclusive": 123265,
+              "sanitizedByteStart": 123301,
+              "sanitizedByteEndExclusive": 123334,
+              "encoding": "literal",
+              "sourceFields": [
+                {
+                  "member": "mercedes-research/technical/city-ringwood.raw.html",
+                  "field": "nonce",
+                  "classification": "Captured nonce/form value or public-site API capability; not factual vehicle evidence"
+                }
+              ]
+            }
+          ],
+          "unchangedBytesOutsideDeclaredRanges": true,
+          "entireExtractedNonScriptStyleTextEqual": true,
+          "visibleTextSha256": "58d06dc66f8aaa4e0f16195d24271b5b654e6b36c4aeeaa1c261c8c7c1f484a4",
+          "restoredBytesEqualSanitizedCopy": true,
+          "originalStillMatchesAcceptedSourceCaptureManifest": true,
+          "factualWitnessChecks": [
+            {
+              "text": "EQA and EQB 250+ City Edition",
+              "preserved": true
+            },
+            {
+              "text": "Currently available",
+              "preserved": true
+            },
+            {
+              "text": "Copyright \u00a9 2025",
+              "preserved": true
+            }
+          ]
+        },
+        {
+          "sourceKey": "eqa-choice",
+          "original": {
+            "path": "mercedes-research/technical/eqa-choice.raw.html",
+            "bytes": 538630,
+            "sha256": "306e6986a4149505818d86bbd8d8591519032c76378af45cb7ef7e1f0b20756e"
+          },
+          "sanitizedCopy": {
+            "path": "eqa-choice.raw.html",
+            "bytes": 538699,
+            "sha256": "5362b17c79d6deba116ab21c1feb26a123d6887cc384a3f21f1e6dc2f3d15b90"
+          },
+          "restoredCopy": {
+            "path": "eqa-choice.raw.html",
+            "bytes": 538699,
+            "sha256": "5362b17c79d6deba116ab21c1feb26a123d6887cc384a3f21f1e6dc2f3d15b90"
+          },
+          "redactionLocations": [
+            {
+              "originalByteStart": 533949,
+              "originalByteEndExclusive": 533959,
+              "sanitizedByteStart": 533949,
+              "sanitizedByteEndExclusive": 533982,
+              "encoding": "literal",
+              "sourceFields": [
+                {
+                  "member": "mercedes-research/technical/eqa-choice.raw.html",
+                  "field": "nonce",
+                  "classification": "Captured nonce/form value or public-site API capability; not factual vehicle evidence"
+                }
+              ]
+            },
+            {
+              "originalByteStart": 534278,
+              "originalByteEndExclusive": 534288,
+              "sanitizedByteStart": 534301,
+              "sanitizedByteEndExclusive": 534334,
+              "encoding": "literal",
+              "sourceFields": [
+                {
+                  "member": "mercedes-research/technical/eqa-choice.raw.html",
+                  "field": "nonce",
+                  "classification": "Captured nonce/form value or public-site API capability; not factual vehicle evidence"
+                }
+              ]
+            },
+            {
+              "originalByteStart": 534380,
+              "originalByteEndExclusive": 534390,
+              "sanitizedByteStart": 534426,
+              "sanitizedByteEndExclusive": 534459,
+              "encoding": "literal",
+              "sourceFields": [
+                {
+                  "member": "mercedes-research/technical/eqa-choice.raw.html",
+                  "field": "nonce",
+                  "classification": "Captured nonce/form value or public-site API capability; not factual vehicle evidence"
+                }
+              ]
+            }
+          ],
+          "unchangedBytesOutsideDeclaredRanges": true,
+          "entireExtractedNonScriptStyleTextEqual": true,
+          "visibleTextSha256": "85300132f792fb8d7bf720e1755f9bb3610569921b4f4c7bd1cbc5ebfe31a9eb",
+          "restoredBytesEqualSanitizedCopy": true,
+          "originalStillMatchesAcceptedSourceCaptureManifest": true,
+          "factualWitnessChecks": [
+            {
+              "text": "2025 model",
+              "preserved": true
+            },
+            {
+              "text": "Powertrain ? FWD",
+              "preserved": true
+            },
+            {
+              "text": "Acceleration 0-100 (km/h, sec) ? 8.6",
+              "preserved": true
+            },
+            {
+              "text": "Cargo volume with seats up (L) ? 340",
+              "preserved": true
+            },
+            {
+              "text": "Braked towing capacity (kg) ? No Towing",
+              "preserved": true
+            }
+          ]
+        },
+        {
+          "sourceKey": "glb-whichcar",
+          "original": {
+            "path": "mercedes-research/technical/glb-whichcar.raw.html",
+            "bytes": 165001,
+            "sha256": "b54ca183b859ee18fa291195db74b7c584ff9b59bf361bf774fc0ae26f42df51"
+          },
+          "sanitizedCopy": {
+            "path": "glb-whichcar.raw.html",
+            "bytes": 165024,
+            "sha256": "84d9a54dab043f194d3e3201928c79dcdef34590d23fea5d7e99391cf0c84c42"
+          },
+          "restoredCopy": {
+            "path": "glb-whichcar.raw.html",
+            "bytes": 165024,
+            "sha256": "84d9a54dab043f194d3e3201928c79dcdef34590d23fea5d7e99391cf0c84c42"
+          },
+          "redactionLocations": [
+            {
+              "originalByteStart": 103597,
+              "originalByteEndExclusive": 103607,
+              "sanitizedByteStart": 103597,
+              "sanitizedByteEndExclusive": 103630,
+              "encoding": "literal",
+              "sourceFields": [
+                {
+                  "member": "mercedes-research/technical/glb-whichcar.raw.html",
+                  "field": "_wpnonce",
+                  "classification": "Captured nonce/form value or public-site API capability; not factual vehicle evidence"
+                },
+                {
+                  "member": "mercedes-research/technical/glc-whichcar.raw.html",
+                  "field": "_wpnonce",
+                  "classification": "Captured nonce/form value or public-site API capability; not factual vehicle evidence"
+                }
+              ]
+            }
+          ],
+          "unchangedBytesOutsideDeclaredRanges": true,
+          "entireExtractedNonScriptStyleTextEqual": true,
+          "visibleTextSha256": "fdbe51c47688d8b5062940858410122dd95770409787c157723512ae23efafc8",
+          "restoredBytesEqualSanitizedCopy": true,
+          "originalStillMatchesAcceptedSourceCaptureManifest": true,
+          "factualWitnessChecks": [
+            {
+              "text": "570km (250+) or 554km (350 4Matic) of WLTP-rated range",
+              "preserved": true
+            },
+            {
+              "text": "Folding the third row provides 480 litres",
+              "preserved": true
+            },
+            {
+              "text": "127-litre front boot",
+              "preserved": true
+            }
+          ]
+        },
+        {
+          "sourceKey": "glc-whichcar",
+          "original": {
+            "path": "mercedes-research/technical/glc-whichcar.raw.html",
+            "bytes": 169461,
+            "sha256": "d9eafe061ffc46c9814a7ca6e8f9e958e0b0d1e9279789e5b7522b66b10274ba"
+          },
+          "sanitizedCopy": {
+            "path": "glc-whichcar.raw.html",
+            "bytes": 169484,
+            "sha256": "314207d7cf569680cd7873a99d7f0d9fc737d6f533fc3253fda1777affcbea02"
+          },
+          "restoredCopy": {
+            "path": "glc-whichcar.raw.html",
+            "bytes": 169484,
+            "sha256": "314207d7cf569680cd7873a99d7f0d9fc737d6f533fc3253fda1777affcbea02"
+          },
+          "redactionLocations": [
+            {
+              "originalByteStart": 107753,
+              "originalByteEndExclusive": 107763,
+              "sanitizedByteStart": 107753,
+              "sanitizedByteEndExclusive": 107786,
+              "encoding": "literal",
+              "sourceFields": [
+                {
+                  "member": "mercedes-research/technical/glb-whichcar.raw.html",
+                  "field": "_wpnonce",
+                  "classification": "Captured nonce/form value or public-site API capability; not factual vehicle evidence"
+                },
+                {
+                  "member": "mercedes-research/technical/glc-whichcar.raw.html",
+                  "field": "_wpnonce",
+                  "classification": "Captured nonce/form value or public-site API capability; not factual vehicle evidence"
+                }
+              ]
+            }
+          ],
+          "unchangedBytesOutsideDeclaredRanges": true,
+          "entireExtractedNonScriptStyleTextEqual": true,
+          "visibleTextSha256": "e46127b7cdcb3ca885f16c2ad2a807c7bd9f2f4e71404c5a466ee4ec09ca5462",
+          "restoredBytesEqualSanitizedCopy": true,
+          "originalStillMatchesAcceptedSourceCaptureManifest": true,
+          "factualWitnessChecks": [
+            {
+              "text": "pricing (excluding on-road costs)",
+              "preserved": true
+            },
+            {
+              "text": "GLC 400 4Matic $112,200",
+              "preserved": true
+            },
+            {
+              "text": "WLTP-rated range of 630km",
+              "preserved": true
+            },
+            {
+              "text": "dual-motor electric drivetrain",
+              "preserved": true
+            },
+            {
+              "text": "4.3 seconds",
+              "preserved": true
+            },
+            {
+              "text": "570 (rear seats up)",
+              "preserved": true
+            },
+            {
+              "text": "128-litre front boot",
+              "preserved": true
+            }
+          ]
+        }
+      ],
+      "method": "Read only the four named original, selected and restored HTML files. Verified exact original/sanitized hash mappings, byte equality of every segment outside all eight declared nonce/_wpnonce replacement ranges, full decoded text equality excluding script/style bodies, selected factual witnesses, and exact restored-copy equality. No capture-tree scan or production execution.",
+      "factualScope": "Preserves City advertisement naming/currently-available wording and copyright scope; public 2025 CHOICE drive/acceleration/cargo/categorical towing; exact GLB WLTP grades and third-row-folded/front-cargo scope; GLC exact price exclusion, range, drivetrain, acceleration and cargo seating scope. This is preservation review, not an evidence regrade or new current-supply attestation.",
+      "limitations": [
+        "Sanitized files have different bytes and SHA256 values; they cannot satisfy original capture pins.",
+        "The original research, source-capture manifest and working originals are unchanged. This receipt does not amend them.",
+        "Future restoration replay requires the unavailable original bytes or a separately reviewed replacement manifest and provenance review; no silent original-hash equivalence.",
+        "This bounded check does not attest residual credential scanning, archive/upload integrity or other backup members; those remain the backup verifier scope.",
+        "No original removed nonce/runtime value is included in this receipt."
+      ],
+      "result": "PASS",
+      "priorReviewArtifact": {
+        "path": "FOUR-SANITIZED-CAPTURES-FACTUAL-REVIEW.json",
+        "bytes": 13953,
+        "sha256": "ba5d3c698257ce28f1598ae02efac059d38e78e1a3714ad17003ea0c72eb065c"
+      }
+    }
+  },
+  "sourceSanitation": {
+    "changedCopiedSourceFiles": 1,
+    "inheritedHeaderRedactions": 10,
+    "newSourceSanitationChanges": 0,
+    "files": [
+      {
+        "path": "roadmark/data/farizon-foton-jac-trucks-evidence.json",
+        "originalBytes": 733472,
+        "originalSHA256": "e6b1f6adae33871d57f0c6bd730571cf64fed06ae4166c1947aed422d97b4a7f",
+        "sanitizedBytes": 732552,
+        "sanitizedSHA256": "fb34e31bc3bdf5a1a2e1673d33ba9ab1ba6a8c0a3c2d3fb49e7e4267789b422d",
+        "redactedHeaderPaths": [
+          "/sources/5/headers/set-cookie",
+          "/sources/6/headers/set-cookie",
+          "/sources/7/headers/set-cookie",
+          "/sources/19/headers/set-cookie",
+          "/sources/20/headers/set-cookie",
+          "/sources/23/headers/Set-Cookie",
+          "/sources/24/headers/set-cookie",
+          "/sources/29/headers/set-cookie",
+          "/sources/33/headers/set-cookie",
+          "/sources/35/headers/Set-Cookie"
+        ]
+      }
+    ],
+    "scope": "Exact previously sanitized source copy reused. Ten captured Set-Cookie header values remain redacted; original live source stays untouched. This copied file is verified by the sanitized hash and cannot satisfy its original byte hash. No approved packet or factual content was changed by this backup."
+  },
+  "copyOnlySanitation": {
+    "receiptHeaders": {
+      "result": "EXACT_COPY_ONLY_MAPPING; independent and executed-copy verification recorded separately",
+      "files": [
+        {
+          "originalPath": "/tmp/mazda-research/sources/au-bev-range-receipt.json",
+          "originalBytes": 1271,
+          "originalSHA256": "39c3fdbcd10327b9193977afb990fe69c3c4fa013d09508f8ac5ff1e7aed7b85",
+          "sanitizedBytes": 1267,
+          "sanitizedSHA256": "b3298dbe3fd609e09765b1845d7d8f0907034f4b8b6048e689236549e7ad86cb",
+          "locations": [
+            {
+              "pointer": "/headers/Set-Cookie",
+              "valueType": "str",
+              "valueLength": 60,
+              "alreadyExplicitlyRedacted": false
+            }
+          ],
+          "restorePath": "mazda-research/sources/au-bev-range-receipt.json"
+        },
+        {
+          "originalPath": "/tmp/mazda-research/sources/au-cx6e-preorder-receipt.json",
+          "originalBytes": 1311,
+          "originalSHA256": "63c6060208d850bcfca8f184aa0e9c6711e08ce66ebcad7f7e7571458fab658f",
+          "sanitizedBytes": 1307,
+          "sanitizedSHA256": "b6b0b03cd10edfc84148bcf9051bd168c17d80842f01c45d68764a06674a8153",
+          "locations": [
+            {
+              "pointer": "/headers/Set-Cookie",
+              "valueType": "str",
+              "valueLength": 60,
+              "alreadyExplicitlyRedacted": false
+            }
+          ],
+          "restorePath": "mazda-research/sources/au-cx6e-preorder-receipt.json"
+        },
+        {
+          "originalPath": "/tmp/mazda-research/sources/au-home-receipt.json",
+          "originalBytes": 1204,
+          "originalSHA256": "c1d49ab73f91ade274e034ee6f59d4b3d364363e2078d10e99789be29281e0dd",
+          "sanitizedBytes": 1200,
+          "sanitizedSHA256": "8efc51e75dda65022ed80d2a2adb4a269a6a78f241a625db7c65b3f6caafb7af",
+          "locations": [
+            {
+              "pointer": "/headers/Set-Cookie",
+              "valueType": "str",
+              "valueLength": 60,
+              "alreadyExplicitlyRedacted": false
+            }
+          ],
+          "restorePath": "mazda-research/sources/au-home-receipt.json"
+        },
+        {
+          "originalPath": "/tmp/mazda-research/sources/au-offers-receipt.json",
+          "originalBytes": 1262,
+          "originalSHA256": "e055ddf0b2b0899c9693f1ffaef4fe85784af56c070db7bf3b040b2a233c9f6c",
+          "sanitizedBytes": 1258,
+          "sanitizedSHA256": "552eefadc514111f669630f434ad2f8ea733928a04c3dd74a4c0230e94229b00",
+          "locations": [
+            {
+              "pointer": "/headers/Set-Cookie",
+              "valueType": "str",
+              "valueLength": 60,
+              "alreadyExplicitlyRedacted": false
+            }
+          ],
+          "restorePath": "mazda-research/sources/au-offers-receipt.json"
+        },
+        {
+          "originalPath": "/tmp/mazda-research/sources/au-warranty-receipt.json",
+          "originalBytes": 1248,
+          "originalSHA256": "0c88ca40e1949f2ee1135253f77e0731625f22971cb6f3e9d254c35f249cfda9",
+          "sanitizedBytes": 1244,
+          "sanitizedSHA256": "e00db826f7255497ea38d090d523994a7aba4521d3d367f2513fa7135d54c213",
+          "locations": [
+            {
+              "pointer": "/headers/Set-Cookie",
+              "valueType": "str",
+              "valueLength": 60,
+              "alreadyExplicitlyRedacted": false
+            }
+          ],
+          "restorePath": "mazda-research/sources/au-warranty-receipt.json"
+        },
+        {
+          "originalPath": "/tmp/mazda-research/sources/au-warranty-terms-receipt.json",
+          "originalBytes": 1350,
+          "originalSHA256": "c82d24d0131720353e666bdff26f6d41d214386600364f05cd3ff95672a8615e",
+          "sanitizedBytes": 1346,
+          "sanitizedSHA256": "ed4204b9c2196a5594566424611430db57a1b87b83e92382571d04ca2f034190",
+          "locations": [
+            {
+              "pointer": "/headers/Set-Cookie",
+              "valueType": "str",
+              "valueLength": 60,
+              "alreadyExplicitlyRedacted": false
+            }
+          ],
+          "restorePath": "mazda-research/sources/au-warranty-terms-receipt.json"
+        },
+        {
+          "originalPath": "/tmp/mazda-research/sources/secondary-6e-atenza-carsguide-receipt.json",
+          "originalBytes": 1337,
+          "originalSHA256": "d62eeff714e4e38027bafa2cab1b6858d9ab54f0906514c1a1dc9484aa23a817",
+          "sanitizedBytes": 1311,
+          "sanitizedSHA256": "74f4cd00d95ee493e9d4b0ff9161738fb5a502fcf2760f36ec3f960838b4b890",
+          "locations": [
+            {
+              "pointer": "/headers/Set-Cookie",
+              "valueType": "str",
+              "valueLength": 82,
+              "alreadyExplicitlyRedacted": false
+            }
+          ],
+          "restorePath": "mazda-research/sources/secondary-6e-atenza-carsguide-receipt.json"
+        },
+        {
+          "originalPath": "/tmp/mazda-research/sources/secondary-cx6e-azami-carsguide-receipt.json",
+          "originalBytes": 1364,
+          "originalSHA256": "3c71fdf1c401cddd38e15c5ac8fa825e579d952006dbd9b91a09d9e582e50bcb",
+          "sanitizedBytes": 1342,
+          "sanitizedSHA256": "b7ce11c0eff54cf03b96812c61bc747036e109adc5072d66c37b61b638f9d056",
+          "locations": [
+            {
+              "pointer": "/headers/Set-Cookie",
+              "valueType": "str",
+              "valueLength": 78,
+              "alreadyExplicitlyRedacted": false
+            }
+          ],
+          "restorePath": "mazda-research/sources/secondary-cx6e-azami-carsguide-receipt.json"
+        }
+      ],
+      "fileCount": 8,
+      "locations": 8,
+      "rawValuesOrValueDigestsPersisted": false,
+      "factualPreservation": "Parsed JSON equality after replacing only the exact Set-Cookie pointers; all other values unchanged",
+      "originalPinReplay": "Original expected pins remain unchanged. Sanitized wrapper copies verify only against separately stated sanitized hashes; original replay requires intact originals or a separately reviewed manifest.",
+      "originalsUntouched": true,
+      "packetReconciliationAndLiveOriginalsUnchanged": true,
+      "htmlBodyCopyMapping": "HTML-FORM-TOKEN-SANITATION-MAPPING.json records the separately approved13 hidden-value copy edits"
+    },
+    "htmlFormTokens": {
+      "result": "PREPARED_PENDING_INDEPENDENT_PARITY",
+      "files": [
+        {
+          "originalPath": "/tmp/mazda-research/sources/au-6e-build.html",
+          "restorePath": "mazda-research/sources/au-6e-build.html",
+          "originalBytes": 825343,
+          "originalSHA256": "2edd10c8bd883cf3ce61a246ff7a9bb324aaa0bf75b52990c712c46be8c3f241",
+          "sanitizedBytes": 825198,
+          "sanitizedSHA256": "951e52448f0ff976a6dfc2ceaf3397a0768d5f251d489d28f7050d2e49c5864d",
+          "reviewCopyPath": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/reviewed-html-sanitized/mazda-research/sources/au-6e-build.html",
+          "ranges": [
+            {
+              "field": "__RequestVerificationToken",
+              "charStart": 13154,
+              "charEndExclusive": 13309,
+              "byteStart": 13154,
+              "byteEndExclusive": 13309,
+              "originalValueLength": 155,
+              "replacement": "[REDACTED]"
+            }
+          ]
+        },
+        {
+          "originalPath": "/tmp/mazda-research/sources/au-6e-launch.html",
+          "restorePath": "mazda-research/sources/au-6e-launch.html",
+          "originalBytes": 435168,
+          "originalSHA256": "5fc0f939ba2a193828e76e9f37e40eca461032f5d6dce1de57cc62f6a0644fd9",
+          "sanitizedBytes": 435023,
+          "sanitizedSHA256": "70ae8ad7efddb01894dfa065fba5d6cd18a117235518b52b56295c492781a638",
+          "reviewCopyPath": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/reviewed-html-sanitized/mazda-research/sources/au-6e-launch.html",
+          "ranges": [
+            {
+              "field": "__RequestVerificationToken",
+              "charStart": 21685,
+              "charEndExclusive": 21840,
+              "byteStart": 21687,
+              "byteEndExclusive": 21842,
+              "originalValueLength": 155,
+              "replacement": "[REDACTED]"
+            }
+          ]
+        },
+        {
+          "originalPath": "/tmp/mazda-research/sources/au-6e.html",
+          "restorePath": "mazda-research/sources/au-6e.html",
+          "originalBytes": 2536920,
+          "originalSHA256": "c6d5c91c2c2adea35f458fcdf1dad0405bec8bc96dd67c8148809ae92b22efe1",
+          "sanitizedBytes": 2536775,
+          "sanitizedSHA256": "178b163bfac972fddf9fb47ed48d30ad8566190ed6c9ce983a7fa7f53bda89a3",
+          "reviewCopyPath": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/reviewed-html-sanitized/mazda-research/sources/au-6e.html",
+          "ranges": [
+            {
+              "field": "__RequestVerificationToken",
+              "charStart": 19855,
+              "charEndExclusive": 20010,
+              "byteStart": 19857,
+              "byteEndExclusive": 20012,
+              "originalValueLength": 155,
+              "replacement": "[REDACTED]"
+            }
+          ]
+        },
+        {
+          "originalPath": "/tmp/mazda-research/sources/au-bev-range.html",
+          "restorePath": "mazda-research/sources/au-bev-range.html",
+          "originalBytes": 336354,
+          "originalSHA256": "08486062caa81ce95f785d2d1742b05ec1ea2777e2c5f09ce55b3f1ff6c90bd2",
+          "sanitizedBytes": 336209,
+          "sanitizedSHA256": "59ce279a6e35007d8a030ace470d5cfd85f91fbc69cae166aa88197fbaf50912",
+          "reviewCopyPath": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/reviewed-html-sanitized/mazda-research/sources/au-bev-range.html",
+          "ranges": [
+            {
+              "field": "__RequestVerificationToken",
+              "charStart": 19902,
+              "charEndExclusive": 20057,
+              "byteStart": 19904,
+              "byteEndExclusive": 20059,
+              "originalValueLength": 155,
+              "replacement": "[REDACTED]"
+            }
+          ]
+        },
+        {
+          "originalPath": "/tmp/mazda-research/sources/au-cx6e-build.html",
+          "restorePath": "mazda-research/sources/au-cx6e-build.html",
+          "originalBytes": 770914,
+          "originalSHA256": "f1b2d4eae7721aa60554e2d6c5879f0e71e22f74f6f774ade0d4fc7b3818cea1",
+          "sanitizedBytes": 770769,
+          "sanitizedSHA256": "68cf105b5fe00fe716a742d31f3cdf1c0a4ee2c00456f7d3c8a6178b92f9c60e",
+          "reviewCopyPath": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/reviewed-html-sanitized/mazda-research/sources/au-cx6e-build.html",
+          "ranges": [
+            {
+              "field": "__RequestVerificationToken",
+              "charStart": 13209,
+              "charEndExclusive": 13364,
+              "byteStart": 13209,
+              "byteEndExclusive": 13364,
+              "originalValueLength": 155,
+              "replacement": "[REDACTED]"
+            }
+          ]
+        },
+        {
+          "originalPath": "/tmp/mazda-research/sources/au-cx6e-launch.html",
+          "restorePath": "mazda-research/sources/au-cx6e-launch.html",
+          "originalBytes": 318685,
+          "originalSHA256": "a76d6413fb32318c15e2771c9ea19f48172265dcded6a2824063caaa77a08b13",
+          "sanitizedBytes": 318540,
+          "sanitizedSHA256": "f7eabe6231e755a78e5aa19f492fbcf6ba59c480dfdfb4db15b31844c07408ba",
+          "reviewCopyPath": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/reviewed-html-sanitized/mazda-research/sources/au-cx6e-launch.html",
+          "ranges": [
+            {
+              "field": "__RequestVerificationToken",
+              "charStart": 21668,
+              "charEndExclusive": 21823,
+              "byteStart": 21670,
+              "byteEndExclusive": 21825,
+              "originalValueLength": 155,
+              "replacement": "[REDACTED]"
+            }
+          ]
+        },
+        {
+          "originalPath": "/tmp/mazda-research/sources/au-cx6e-preorder.html",
+          "restorePath": "mazda-research/sources/au-cx6e-preorder.html",
+          "originalBytes": 251218,
+          "originalSHA256": "fd46e579b73094eb7a31e10b8a0a99fc6bbe895c95246ebe054057281325e839",
+          "sanitizedBytes": 251073,
+          "sanitizedSHA256": "e8c5af71a7ee807556338b545532b8846772d2e612e0367287ceca85f7f2dbd3",
+          "reviewCopyPath": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/reviewed-html-sanitized/mazda-research/sources/au-cx6e-preorder.html",
+          "ranges": [
+            {
+              "field": "__RequestVerificationToken",
+              "charStart": 19594,
+              "charEndExclusive": 19749,
+              "byteStart": 19596,
+              "byteEndExclusive": 19751,
+              "originalValueLength": 155,
+              "replacement": "[REDACTED]"
+            }
+          ]
+        },
+        {
+          "originalPath": "/tmp/mazda-research/sources/au-cx6e.html",
+          "restorePath": "mazda-research/sources/au-cx6e.html",
+          "originalBytes": 2445164,
+          "originalSHA256": "c26c50fefe34450a03bb68b3ce85ee7553ae6e5b994d0614aad9296774c64323",
+          "sanitizedBytes": 2445019,
+          "sanitizedSHA256": "084c844f9951dbd26da6231a458d8b8e678be8f4ebbe3924a4b87b6ac14db8b7",
+          "reviewCopyPath": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/reviewed-html-sanitized/mazda-research/sources/au-cx6e.html",
+          "ranges": [
+            {
+              "field": "__RequestVerificationToken",
+              "charStart": 19917,
+              "charEndExclusive": 20072,
+              "byteStart": 19919,
+              "byteEndExclusive": 20074,
+              "originalValueLength": 155,
+              "replacement": "[REDACTED]"
+            }
+          ]
+        },
+        {
+          "originalPath": "/tmp/mazda-research/sources/au-discontinued.html",
+          "restorePath": "mazda-research/sources/au-discontinued.html",
+          "originalBytes": 405574,
+          "originalSHA256": "b91d63269a81a348f7e13865d8bd2778baf9f4124758fda2cea53100b5225959",
+          "sanitizedBytes": 405429,
+          "sanitizedSHA256": "18c93c09f3f55cc2f7d0241037b3aa76869865c3e20e0d58da7bcde22a3b9f9b",
+          "reviewCopyPath": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/reviewed-html-sanitized/mazda-research/sources/au-discontinued.html",
+          "ranges": [
+            {
+              "field": "__RequestVerificationToken",
+              "charStart": 19790,
+              "charEndExclusive": 19945,
+              "byteStart": 19792,
+              "byteEndExclusive": 19947,
+              "originalValueLength": 155,
+              "replacement": "[REDACTED]"
+            }
+          ]
+        },
+        {
+          "originalPath": "/tmp/mazda-research/sources/au-home.html",
+          "restorePath": "mazda-research/sources/au-home.html",
+          "originalBytes": 451837,
+          "originalSHA256": "7457eac904c359f877282b9c36b340e065afbdf361b6575e4209779a18368549",
+          "sanitizedBytes": 451692,
+          "sanitizedSHA256": "3057d6835ec683e0fc9d10a2ccc12e887c8a0127f44ae9ccb54ae16efb219046",
+          "reviewCopyPath": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/reviewed-html-sanitized/mazda-research/sources/au-home.html",
+          "ranges": [
+            {
+              "field": "__RequestVerificationToken",
+              "charStart": 19609,
+              "charEndExclusive": 19764,
+              "byteStart": 19611,
+              "byteEndExclusive": 19766,
+              "originalValueLength": 155,
+              "replacement": "[REDACTED]"
+            }
+          ]
+        },
+        {
+          "originalPath": "/tmp/mazda-research/sources/au-offers.html",
+          "restorePath": "mazda-research/sources/au-offers.html",
+          "originalBytes": 373356,
+          "originalSHA256": "d3d3341ff5bcdd175fa366ba2d71ae31c6044bdde045794b27849e09352e9297",
+          "sanitizedBytes": 373211,
+          "sanitizedSHA256": "3b1ac1a78c35ed9803b31eda705d342809cde04ddac268d0f9b022f51173ab6e",
+          "reviewCopyPath": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/reviewed-html-sanitized/mazda-research/sources/au-offers.html",
+          "ranges": [
+            {
+              "field": "__RequestVerificationToken",
+              "charStart": 19658,
+              "charEndExclusive": 19813,
+              "byteStart": 19660,
+              "byteEndExclusive": 19815,
+              "originalValueLength": 155,
+              "replacement": "[REDACTED]"
+            }
+          ]
+        },
+        {
+          "originalPath": "/tmp/mazda-research/sources/au-warranty-terms.html",
+          "restorePath": "mazda-research/sources/au-warranty-terms.html",
+          "originalBytes": 314863,
+          "originalSHA256": "633636d93c41d3fd182537e6f400ea91a7f3711edfa808fed89ccf5810660166",
+          "sanitizedBytes": 314718,
+          "sanitizedSHA256": "9e533b8c9d7ca7750dc41b4e044ba890dd943c5c87bf6ca2e52289af63ede4df",
+          "reviewCopyPath": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/reviewed-html-sanitized/mazda-research/sources/au-warranty-terms.html",
+          "ranges": [
+            {
+              "field": "__RequestVerificationToken",
+              "charStart": 19583,
+              "charEndExclusive": 19738,
+              "byteStart": 19585,
+              "byteEndExclusive": 19740,
+              "originalValueLength": 155,
+              "replacement": "[REDACTED]"
+            }
+          ]
+        },
+        {
+          "originalPath": "/tmp/mazda-research/sources/au-warranty.html",
+          "restorePath": "mazda-research/sources/au-warranty.html",
+          "originalBytes": 295891,
+          "originalSHA256": "3fdd69902b6a6407047ed7663a2b82154e184b4b6038a87c2c2a9c946ef396af",
+          "sanitizedBytes": 295746,
+          "sanitizedSHA256": "72b14fb3c067e582f6ec1a0207e047fcf71acef9fab3a3bfd4609bb6dedcd441",
+          "reviewCopyPath": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mazda-working-20261015T0405/reviewed-html-sanitized/mazda-research/sources/au-warranty.html",
+          "ranges": [
+            {
+              "field": "__RequestVerificationToken",
+              "charStart": 19519,
+              "charEndExclusive": 19674,
+              "byteStart": 19521,
+              "byteEndExclusive": 19676,
+              "originalValueLength": 155,
+              "replacement": "[REDACTED]"
+            }
+          ]
+        }
+      ],
+      "fileCount": 13,
+      "locationCount": 13,
+      "approvalScope": "Root approved only these13 exact form-value ranges after preliminary diagnostic; no live changes",
+      "originalExpectedPinsUnchanged": true,
+      "rawValuesPersisted": false,
+      "restoreLimitation": "Sanitized HTML copies verify against sanitized hashes only; original raw replay requires intact originals or a separately reviewed new manifest."
+    }
+  },
+  "savingAnnouncement": {
+    "messageId": "Sentinel_1ead619b26a0819191cf8f24521e4ab2",
+    "sentAt": "2026-10-15T04:02:15.803782Z",
+    "reportedBy": "/root",
+    "text": "I\u2019m preparing the Mazda backup and continuing with \u0160koda.",
+    "ongoingPeriodicBackupAuthorization": true
+  },
+  "noSourceOrStatusMutationByBackup": true,
+  "noDeletionOrReplacement": true
+}

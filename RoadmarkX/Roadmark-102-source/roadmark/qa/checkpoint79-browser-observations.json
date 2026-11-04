@@ -1,0 +1,56 @@
+{
+  "recordedAtUTC": "2026-10-11T12:29:40.742997+00:00",
+  "environment": "dot own VM Chrome, ordinary window resize/zoom; portable loopback preview",
+  "phase": "Final amended artifact: engineering checks passed and scoped own-VM Chrome review completed",
+  "realPhonesTested": false,
+  "releaseApproved": false,
+  "screenshotsSaved": false,
+  "checks": [
+    {
+      "area": "Initial catalogue",
+      "result": "320CSS viewport: 12 of342 matching cards,921 DOM elements, rootscrollWidth311; whole-catalogue search wording visible. No previous DOM baseline measured; not a latency benchmark."
+    },
+    {
+      "area": "Keyboard reveal",
+      "result": "Enter on Show12more yields24cards; new13th heading7X focused at206.8px, entirely within432px viewport. Root311."
+    },
+    {
+      "area": "Narrow title fix",
+      "result": "Countryman search findsall5cards; allmain descendants fit320CSS, root311. Firstcard screenshot visually reviewed: complete CountrymanElectric name and seating diagram wrap onto separate rows, no clipping. Trailseeker findsall4cards, no overflow."
+    },
+    {
+      "area": "Final reveal",
+      "result": "Kia search checkswholecatalogue,12of24 thenEnter\u219224of24; revealbuttonremoved,13th EV6 headingfocusedat207px. Clearallfilters resets12of342andretainsfocusonClear."
+    },
+    {
+      "area": "Initial final-artifact boundary failure",
+      "result": "At360CSS the initial359px rule left scroll358 > client351, despite scroll < innerWidth360. Fixed by intrinsic editorial-title wrapping across viewport sizes. Initial failed candidate preserved."
+    },
+    {
+      "area": "Amended360 and desktop",
+      "result": "Countryman all5 cards: at360CSS scroll351=client351 and zero overflowing main descendants; at1180CSS scroll1165=client1165 and zero overflowing descendants. Screenshots visually reviewed; names and diagrams wrap coherently."
+    },
+    {
+      "area": "Original desktop hero",
+      "result": "1180CSS original ModelY hero screenshot reviewed; all9sellingpoints remain above discovery; scroll1165=client1165."
+    },
+    {
+      "area": "Final artifact after full serial QA",
+      "result": "Exact HTML hash matches previously visually reviewed amended bytes. Fresh Chrome tab: initial12of342; Enter reveals24 and focuses13th7X. At320CSS Countryman all5 and Trailseeker all4 have scroll311=client311, no clipping; Countryman screenshot reviewed. Kia12of24\u219224of24 via Enter removes revealbutton and focuses EV6 at207px; Clear resets12of342 with focus retained. Desktop1180 and boundary360 observations refer to byte-identical final HTML."
+    }
+  ],
+  "limitations": [
+    "Browser Find and print include only currently revealed cards; on-page search checks whole catalogue",
+    "Does not reduce embedded data payload",
+    "Print preview remains unavailable in this browser",
+    "Complete picker focus cycle, actual phones, full accessibility and performance release checks open",
+    "Pre-existing comparison third-picker focus restoration gap confirmed: after keyboard selection and settled aria-busy=false, focus is BODY/AXWebArea rather than the replacement Vehicle3 trigger; next mobile pass, not amended in79",
+    "Changed wrapping was checked at320,360 and1180CSS; other widths and full device matrix remain release gates"
+  ],
+  "amendmentBrowserArtifactSHA256": "f5e776e318b4cb7f66657e064ff1d331c7e87b337bab0106cfe2275c3219c20b",
+  "amendmentBrowserArtifactRecordedAtUTC": "2026-10-11T13:13:57.266293+00:00",
+  "amendmentBrowserArtifactNote": "Exact currently served portable bytes after amended CSS build and before final QA portable rebuild;360/1180px and hero observations refer to these bytes",
+  "finalArtifactRechecked": true,
+  "finalArtifactSHA256": "f5e776e318b4cb7f66657e064ff1d331c7e87b337bab0106cfe2275c3219c20b",
+  "finalCheckedAtUTC": "2026-10-11T13:22:12.798260+00:00"
+}

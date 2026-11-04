@@ -1,0 +1,727 @@
+{
+  "createdAt": "2026-10-14T04:37:40.379987+00:00",
+  "integrity": {
+    "restoredSource": "Market-view and structural validation passed: 363 variants, 2,963 source references. Structural integrity is not independent factual verification.",
+    "archiveCount": 40,
+    "archiveMemberOccurrencesVerified": 3767,
+    "payloadFiles": 3651,
+    "metadataFiles": 79,
+    "allRestoredFiles": 3730,
+    "allRestoredBytes": 1509942831,
+    "effectiveCurrentManifestChecks": [
+      {
+        "group": "hyundai-established-sanitized-delta-20261014T035107Z",
+        "files": 468,
+        "redactedDigestTransitions": [
+          "hyundai-research/elexio-ioniq9/sources/ioniq9_carsales_25622863.headers",
+          "hyundai-research/elexio-ioniq9/sources/ioniq9_carsales_25622863.html",
+          "hyundai-research/elexio-ioniq9/sources/ioniq9_carsales_26041433.headers",
+          "hyundai-research/elexio-ioniq9/sources/ioniq9_carsales_26041433.html",
+          "hyundai-research/elexio-ioniq9/sources/ioniq9_redbook_my27.headers",
+          "hyundai-research/elexio-ioniq9/sources/ioniq9_redbook_my27.html",
+          "hyundai-research/inster-kona/sources/kona_premium_new_alan.html",
+          "hyundai-research/ioniq5-6/sources/used_i6.html",
+          "hyundai-research/ioniq9-sixseat-lead/sources/ioniq9_carsales_25622863.headers",
+          "hyundai-research/ioniq9-sixseat-lead/sources/ioniq9_carsales_25622863.html"
+        ],
+        "result": "PASS"
+      },
+      {
+        "group": "qa-hyundai-integrated-delta-20261014T035653Z",
+        "files": 1128,
+        "redactedDigestTransitions": [],
+        "result": "PASS"
+      }
+    ],
+    "independentIntegrity": {
+      "schemaVersion": 1,
+      "startedAt": "2026-10-14T04:33:49.227788+00:00",
+      "scope": "Independent read-only archive, member, replacement-span and restored-tree verification. No privacy scanning duplicated.",
+      "checks": {
+        "archiveCount": 40,
+        "replacementArchiveCount": 12,
+        "unaffectedArchiveCount": 28,
+        "archiveMemberOccurrencesVerified": 3767,
+        "allRestoredFiles": 3730,
+        "allRestoredBytes": 1509942831,
+        "payloadFiles": 3651,
+        "metadataFiles": 79,
+        "replacementUnchangedMemberOccurrences": 1227,
+        "changedPayloadMemberOccurrences": 56,
+        "changedMetadataMemberOccurrences": 24,
+        "verifiedRedactionSpans": 125,
+        "effectiveChangedPayloadFiles": 39,
+        "effectiveUnchangedPayloadFiles": 3612,
+        "researchPacketAndReconciliationFilesUnchanged": 18,
+        "affectedOriginalArchivesExcludedFromRestore": 12,
+        "archiveAndEmbeddedManifestConsistency": "PASS",
+        "finalManifestMatchesEffectiveArchiveOverlay": "PASS",
+        "restoredTreeMatchesFinalManifest": "PASS",
+        "allChangedPayloadBytesExplainedByRecordedRedactions": "PASS",
+        "approvedResearchPacketBytesUnchanged": "PASS",
+        "restoreChainExcludesAllAffectedOriginals": "PASS"
+      },
+      "archiveChecks": [
+        {
+          "originalFilename": "Roadmark-recovery-byd-20261014T023829Z-part01of04.tar.xz",
+          "selectedFilename": "Roadmark-recovery-byd-20261014T023829Z-part01of04.tar.xz",
+          "bytes": 36527796,
+          "sha256": "2bc13861afd1ecf55129f0d935872e1713f45520db9b8d68b496c37187f9aa57",
+          "memberCount": 6,
+          "payloadMemberCount": 4,
+          "replaced": false,
+          "result": "PASS"
+        },
+        {
+          "originalFilename": "Roadmark-recovery-byd-20261014T023829Z-part02of04.tar.xz",
+          "selectedFilename": "Roadmark-recovery-byd-20261014T023829Z-part02of04.tar.xz",
+          "bytes": 32201180,
+          "sha256": "0d8dbf2abad0a774de65a77faa17621da5f1d86c3db15e7d62410b07a60b7eac",
+          "memberCount": 7,
+          "payloadMemberCount": 5,
+          "replaced": false,
+          "result": "PASS"
+        },
+        {
+          "originalFilename": "Roadmark-recovery-byd-20261014T023829Z-part03of04.tar.xz",
+          "selectedFilename": "Roadmark-recovery-byd-20261014T023829Z-part03of04.tar.xz",
+          "bytes": 21600852,
+          "sha256": "18b00e9e136c8d280cc7a2aac89f313194d545dc38ab945cae2e48de3c5a54b6",
+          "memberCount": 19,
+          "payloadMemberCount": 17,
+          "replaced": false,
+          "result": "PASS"
+        },
+        {
+          "originalFilename": "Roadmark-recovery-byd-20261014T023829Z-part04of04.tar.xz",
+          "selectedFilename": "Roadmark-recovery-byd-20261014T023829Z-part04of04.tar.xz",
+          "bytes": 30528644,
+          "sha256": "2dfca56de16befb9618933e9c88c5b23132b1c2b3c767165aeca2d2bef269ab7",
+          "memberCount": 16,
+          "payloadMemberCount": 14,
+          "replaced": false,
+          "result": "PASS"
+        },
+        {
+          "originalFilename": "Roadmark-recovery-tesla-20261014T024007Z-part01of03.tar.xz",
+          "selectedFilename": "Roadmark-recovery-tesla-20261014T024007Z-part01of03.tar.xz",
+          "bytes": 3407484,
+          "sha256": "a4d368ad57baf85da01e42c8353cd187ce0794e5a85d810723529a33d58049c6",
+          "memberCount": 62,
+          "payloadMemberCount": 60,
+          "replaced": false,
+          "result": "PASS"
+        },
+        {
+          "originalFilename": "Roadmark-recovery-tesla-20261014T024007Z-part02of03.tar.xz",
+          "selectedFilename": "Roadmark-recovery-tesla-20261014T024007Z-part02of03-privacy-sanitized-20261014T0355.tar.xz",
+          "bytes": 11715404,
+          "sha256": "9c00a02c9526962e8fa0e33ee3dcba6568ac29b1301306333ee2ad5cb4b4df15",
+          "memberCount": 22,
+          "payloadMemberCount": 20,
+          "replaced": true,
+          "result": "PASS",
+          "unchangedMembers": 19,
+          "changedPayloadMembers": 1,
+          "changedMetadataMembers": 2,
+          "verifiedRedactionSpans": 3,
+          "originalMemberNamesPreserved": true,
+          "otherPayloadBytesUnchanged": true
+        },
+        {
+          "originalFilename": "Roadmark-recovery-tesla-20261014T024007Z-part03of03.tar.xz",
+          "selectedFilename": "Roadmark-recovery-tesla-20261014T024007Z-part03of03.tar.xz",
+          "bytes": 1599080,
+          "sha256": "4cab034f8ad897a73d70e0ba3e48490010b9117a16ca4a8e122ddfc02e8efe87",
+          "memberCount": 46,
+          "payloadMemberCount": 44,
+          "replaced": false,
+          "result": "PASS"
+        },
+        {
+          "originalFilename": "Roadmark-recovery-geely-20261014T024007Z-part01of02.tar.xz",
+          "selectedFilename": "Roadmark-recovery-geely-20261014T024007Z-part01of02-privacy-sanitized-final-20261014T0355.tar.xz",
+          "bytes": 9763536,
+          "sha256": "9f8c08283c6b2abf49f008a9dcc2c4195dc88df8db1ff89ed35e86ccf95f866f",
+          "memberCount": 90,
+          "payloadMemberCount": 88,
+          "replaced": true,
+          "result": "PASS",
+          "unchangedMembers": 87,
+          "changedPayloadMembers": 1,
+          "changedMetadataMembers": 2,
+          "verifiedRedactionSpans": 1,
+          "originalMemberNamesPreserved": true,
+          "otherPayloadBytesUnchanged": true
+        },
+        {
+          "originalFilename": "Roadmark-recovery-geely-20261014T024007Z-part02of02.tar.xz",
+          "selectedFilename": "Roadmark-recovery-geely-20261014T024007Z-part02of02.tar.xz",
+          "bytes": 2294412,
+          "sha256": "640ce596227f1482efc81c8c7e0cef9fc3a994d8fa0696dcf21ba3b4cb2c59e3",
+          "memberCount": 18,
+          "payloadMemberCount": 16,
+          "replaced": false,
+          "result": "PASS"
+        },
+        {
+          "originalFilename": "Roadmark-recovery-zeekr-20261014T024212Z-part01of03.tar.xz",
+          "selectedFilename": "Roadmark-recovery-zeekr-20261014T024212Z-part01of03-privacy-sanitized-final-20261014T0355.tar.xz",
+          "bytes": 24832432,
+          "sha256": "2c0118e1a078660d8b6ea6fc5dd8dcc3b1915f54cb430b1258a843cb6eced1c4",
+          "memberCount": 113,
+          "payloadMemberCount": 111,
+          "replaced": true,
+          "result": "PASS",
+          "unchangedMembers": 106,
+          "changedPayloadMembers": 5,
+          "changedMetadataMembers": 2,
+          "verifiedRedactionSpans": 9,
+          "originalMemberNamesPreserved": true,
+          "otherPayloadBytesUnchanged": true
+        },
+        {
+          "originalFilename": "Roadmark-recovery-zeekr-20261014T024212Z-part02of03.tar.xz",
+          "selectedFilename": "Roadmark-recovery-zeekr-20261014T024212Z-part02of03-privacy-sanitized-final-20261014T0355.tar.xz",
+          "bytes": 2994180,
+          "sha256": "ec66d3aae0b1954155f26d225872cd4b8b6b3b8924327f39c9cd30f245050e84",
+          "memberCount": 60,
+          "payloadMemberCount": 58,
+          "replaced": true,
+          "result": "PASS",
+          "unchangedMembers": 57,
+          "changedPayloadMembers": 1,
+          "changedMetadataMembers": 2,
+          "verifiedRedactionSpans": 1,
+          "originalMemberNamesPreserved": true,
+          "otherPayloadBytesUnchanged": true
+        },
+        {
+          "originalFilename": "Roadmark-recovery-zeekr-20261014T024212Z-part03of03.tar.xz",
+          "selectedFilename": "Roadmark-recovery-zeekr-20261014T024212Z-part03of03.tar.xz",
+          "bytes": 12030136,
+          "sha256": "7d317f4d1aeccebc4b52ec6f0603ab704b4bef98720a61ce48fa372afedc4bb0",
+          "memberCount": 41,
+          "payloadMemberCount": 39,
+          "replaced": false,
+          "result": "PASS"
+        },
+        {
+          "originalFilename": "Roadmark-recovery-omoda-jaecoo-20261014T024008Z-part01of01.tar.xz",
+          "selectedFilename": "Roadmark-recovery-omoda-jaecoo-20261014T024008Z-part01of01-privacy-sanitized-final-20261014T0355.tar.xz",
+          "bytes": 2863228,
+          "sha256": "eda16295bb69661ed7191e6037df96c54eabf42b02845f840c510856b759446d",
+          "memberCount": 115,
+          "payloadMemberCount": 113,
+          "replaced": true,
+          "result": "PASS",
+          "unchangedMembers": 111,
+          "changedPayloadMembers": 2,
+          "changedMetadataMembers": 2,
+          "verifiedRedactionSpans": 2,
+          "originalMemberNamesPreserved": true,
+          "otherPayloadBytesUnchanged": true
+        },
+        {
+          "originalFilename": "Roadmark-recovery-kia-20261014T024212Z-part01of03.tar.xz",
+          "selectedFilename": "Roadmark-recovery-kia-20261014T024212Z-part01of03.tar.xz",
+          "bytes": 15345208,
+          "sha256": "507b056edb60e05444371bcc103d857fc8cb29b3651e7685f2091dc35cc2a4fc",
+          "memberCount": 159,
+          "payloadMemberCount": 157,
+          "replaced": false,
+          "result": "PASS"
+        },
+        {
+          "originalFilename": "Roadmark-recovery-kia-20261014T024212Z-part02of03.tar.xz",
+          "selectedFilename": "Roadmark-recovery-kia-20261014T024212Z-part02of03.tar.xz",
+          "bytes": 4798876,
+          "sha256": "1c59f048e7ada04fc41d1b4bfbd205e6ecc95a27db5e6f838b22204fe79495d6",
+          "memberCount": 171,
+          "payloadMemberCount": 169,
+          "replaced": false,
+          "result": "PASS"
+        },
+        {
+          "originalFilename": "Roadmark-recovery-kia-20261014T024212Z-part03of03.tar.xz",
+          "selectedFilename": "Roadmark-recovery-kia-20261014T024212Z-part03of03.tar.xz",
+          "bytes": 1170572,
+          "sha256": "b9da514671dd846094544524a4e0234e714f59cb6ddc230893349272666d98bd",
+          "memberCount": 34,
+          "payloadMemberCount": 32,
+          "replaced": false,
+          "result": "PASS"
+        },
+        {
+          "originalFilename": "Roadmark-recovery-mg-im-20261014T024008Z-part01of05.tar.xz",
+          "selectedFilename": "Roadmark-recovery-mg-im-20261014T024008Z-part01of05-privacy-sanitized-final-20261014T0355.tar.xz",
+          "bytes": 18556936,
+          "sha256": "4360f343f817fcb61296c95d63c1268943e2011b87046d001c5fb4aefb4c0dad",
+          "memberCount": 125,
+          "payloadMemberCount": 123,
+          "replaced": true,
+          "result": "PASS",
+          "unchangedMembers": 119,
+          "changedPayloadMembers": 4,
+          "changedMetadataMembers": 2,
+          "verifiedRedactionSpans": 12,
+          "originalMemberNamesPreserved": true,
+          "otherPayloadBytesUnchanged": true
+        },
+        {
+          "originalFilename": "Roadmark-recovery-mg-im-20261014T024008Z-part02of05.tar.xz",
+          "selectedFilename": "Roadmark-recovery-mg-im-20261014T024008Z-part02of05-privacy-sanitized-final-20261014T0355.tar.xz",
+          "bytes": 26748780,
+          "sha256": "1184479ab02bc537dd995400c7c5b975abd6b7b141b53a319bb35cebdd9cddd9",
+          "memberCount": 127,
+          "payloadMemberCount": 125,
+          "replaced": true,
+          "result": "PASS",
+          "unchangedMembers": 120,
+          "changedPayloadMembers": 5,
+          "changedMetadataMembers": 2,
+          "verifiedRedactionSpans": 15,
+          "originalMemberNamesPreserved": true,
+          "otherPayloadBytesUnchanged": true
+        },
+        {
+          "originalFilename": "Roadmark-recovery-mg-im-20261014T024008Z-part03of05.tar.xz",
+          "selectedFilename": "Roadmark-recovery-mg-im-20261014T024008Z-part03of05-privacy-sanitized-final-20261014T0355.tar.xz",
+          "bytes": 14181232,
+          "sha256": "458ca4474ceb9fc73394014023b6aa1825487fb06960f3ac8c186e9433b66f4b",
+          "memberCount": 80,
+          "payloadMemberCount": 78,
+          "replaced": true,
+          "result": "PASS",
+          "unchangedMembers": 72,
+          "changedPayloadMembers": 6,
+          "changedMetadataMembers": 2,
+          "verifiedRedactionSpans": 19,
+          "originalMemberNamesPreserved": true,
+          "otherPayloadBytesUnchanged": true
+        },
+        {
+          "originalFilename": "Roadmark-recovery-mg-im-20261014T024008Z-part04of05.tar.xz",
+          "selectedFilename": "Roadmark-recovery-mg-im-20261014T024008Z-part04of05.tar.xz",
+          "bytes": 12971164,
+          "sha256": "7fad263cad0b1e90fce87768e779d3b20fb37afa052b064990e64b741b6ad3b2",
+          "memberCount": 32,
+          "payloadMemberCount": 30,
+          "replaced": false,
+          "result": "PASS"
+        },
+        {
+          "originalFilename": "Roadmark-recovery-mg-im-20261014T024008Z-part05of05.tar.xz",
+          "selectedFilename": "Roadmark-recovery-mg-im-20261014T024008Z-part05of05-privacy-sanitized-final-20261014T0355.tar.xz",
+          "bytes": 22334984,
+          "sha256": "94fa0d800671f2a8b64c9ec9c9412f8fc901febf7dee42820987098a7202ac0f",
+          "memberCount": 107,
+          "payloadMemberCount": 105,
+          "replaced": true,
+          "result": "PASS",
+          "unchangedMembers": 101,
+          "changedPayloadMembers": 4,
+          "changedMetadataMembers": 2,
+          "verifiedRedactionSpans": 12,
+          "originalMemberNamesPreserved": true,
+          "otherPayloadBytesUnchanged": true
+        },
+        {
+          "originalFilename": "Roadmark-recovery-qa-through-mg-im-20261014T024343Z-part01of09.tar.xz",
+          "selectedFilename": "Roadmark-recovery-qa-through-mg-im-20261014T024343Z-part01of09.tar.xz",
+          "bytes": 36896,
+          "sha256": "c9116fd80850e29cdf37c87cf9e1ce8207def10612f14c1d51d42cad2634fda2",
+          "memberCount": 5,
+          "payloadMemberCount": 3,
+          "replaced": false,
+          "result": "PASS"
+        },
+        {
+          "originalFilename": "Roadmark-recovery-qa-through-mg-im-20261014T024343Z-part02of09.tar.xz",
+          "selectedFilename": "Roadmark-recovery-qa-through-mg-im-20261014T024343Z-part02of09.tar.xz",
+          "bytes": 1227284,
+          "sha256": "853c236fd0c7368eae9fd8ff01d9fe64822454fcb750bfb90757dd3546332ef3",
+          "memberCount": 3,
+          "payloadMemberCount": 1,
+          "replaced": false,
+          "result": "PASS"
+        },
+        {
+          "originalFilename": "Roadmark-recovery-qa-through-mg-im-20261014T024343Z-part03of09.tar.xz",
+          "selectedFilename": "Roadmark-recovery-qa-through-mg-im-20261014T024343Z-part03of09.tar.xz",
+          "bytes": 2657032,
+          "sha256": "b6d4a700e95624b2b46881699763ed36c56adcc3a59a603346b82786adf4aa48",
+          "memberCount": 405,
+          "payloadMemberCount": 403,
+          "replaced": false,
+          "result": "PASS"
+        },
+        {
+          "originalFilename": "Roadmark-recovery-qa-through-mg-im-20261014T024343Z-part04of09.tar.xz",
+          "selectedFilename": "Roadmark-recovery-qa-through-mg-im-20261014T024343Z-part04of09.tar.xz",
+          "bytes": 285028,
+          "sha256": "9bdb41bc5be5d26544e6694269c18b1cea3763c1eb853f886d8a415a028b45fb",
+          "memberCount": 11,
+          "payloadMemberCount": 9,
+          "replaced": false,
+          "result": "PASS"
+        },
+        {
+          "originalFilename": "Roadmark-recovery-qa-through-mg-im-20261014T024343Z-part05of09.tar.xz",
+          "selectedFilename": "Roadmark-recovery-qa-through-mg-im-20261014T024343Z-part05of09.tar.xz",
+          "bytes": 850508,
+          "sha256": "bc5ce407d39249aaff9364c7ad57c5a9b17a296ee497b41d6e3135c3bceabcc0",
+          "memberCount": 3,
+          "payloadMemberCount": 1,
+          "replaced": false,
+          "result": "PASS"
+        },
+        {
+          "originalFilename": "Roadmark-recovery-qa-through-mg-im-20261014T024343Z-part06of09.tar.xz",
+          "selectedFilename": "Roadmark-recovery-qa-through-mg-im-20261014T024343Z-part06of09.tar.xz",
+          "bytes": 744364,
+          "sha256": "b10b5cd8c83f138c9e1f6601ef56694cec6d6532581fcb9b2052f6bedf4da338",
+          "memberCount": 4,
+          "payloadMemberCount": 2,
+          "replaced": false,
+          "result": "PASS"
+        },
+        {
+          "originalFilename": "Roadmark-recovery-qa-through-mg-im-20261014T024343Z-part07of09.tar.xz",
+          "selectedFilename": "Roadmark-recovery-qa-through-mg-im-20261014T024343Z-part07of09.tar.xz",
+          "bytes": 1518912,
+          "sha256": "391e7ab5a6eeac1ce16826c400abe96e8b6a01e70a71cc8ec4e7d71b490945f0",
+          "memberCount": 3,
+          "payloadMemberCount": 1,
+          "replaced": false,
+          "result": "PASS"
+        },
+        {
+          "originalFilename": "Roadmark-recovery-qa-through-mg-im-20261014T024343Z-part08of09.tar.xz",
+          "selectedFilename": "Roadmark-recovery-qa-through-mg-im-20261014T024343Z-part08of09.tar.xz",
+          "bytes": 2913628,
+          "sha256": "c3acafd801fe11e1103d2512bb1d724a173c7bab354c7abea024035513ad4339",
+          "memberCount": 358,
+          "payloadMemberCount": 356,
+          "replaced": false,
+          "result": "PASS"
+        },
+        {
+          "originalFilename": "Roadmark-recovery-qa-through-mg-im-20261014T024343Z-part09of09.tar.xz",
+          "selectedFilename": "Roadmark-recovery-qa-through-mg-im-20261014T024343Z-part09of09.tar.xz",
+          "bytes": 891752,
+          "sha256": "b89734766a1e45f3218a66d4845617f76137eacb53afeabefae44d2989a517fd",
+          "memberCount": 274,
+          "payloadMemberCount": 272,
+          "replaced": false,
+          "result": "PASS"
+        },
+        {
+          "originalFilename": "Roadmark-recovery-recovery-support-20261014T024649Z-part01of01.tar.xz",
+          "selectedFilename": "Roadmark-recovery-recovery-support-20261014T024649Z-part01of01.tar.xz",
+          "bytes": 45508,
+          "sha256": "36db17a2ff99c47cb817abb62fab3412516dd3adf1b36d2527c41cf0c514c226",
+          "memberCount": 11,
+          "payloadMemberCount": 9,
+          "replaced": false,
+          "result": "PASS"
+        },
+        {
+          "originalFilename": "Roadmark-recovery-hyundai-provisional-20261014T031746Z-part01of03.tar.xz",
+          "selectedFilename": "Roadmark-recovery-hyundai-provisional-20261014T031746Z-part01of03-privacy-sanitized-20261014T0355-v2.tar.xz",
+          "bytes": 16290576,
+          "sha256": "d7ea78ba1734c3bfd19f886fe41f7cc94d7762d502a45e3d6c616df80b1ae6d6",
+          "memberCount": 213,
+          "payloadMemberCount": 211,
+          "replaced": true,
+          "result": "PASS",
+          "unchangedMembers": 192,
+          "changedPayloadMembers": 19,
+          "changedMetadataMembers": 2,
+          "verifiedRedactionSpans": 34,
+          "originalMemberNamesPreserved": true,
+          "otherPayloadBytesUnchanged": true
+        },
+        {
+          "originalFilename": "Roadmark-recovery-hyundai-provisional-20261014T031746Z-part02of03.tar.xz",
+          "selectedFilename": "Roadmark-recovery-hyundai-provisional-20261014T031746Z-part02of03-privacy-sanitized-final-20261014T0355.tar.xz",
+          "bytes": 5869040,
+          "sha256": "3c6d0bc71154f70a60de489a6921232290f96c2de8871a52d5b918af06cb9bd5",
+          "memberCount": 200,
+          "payloadMemberCount": 198,
+          "replaced": true,
+          "result": "PASS",
+          "unchangedMembers": 194,
+          "changedPayloadMembers": 4,
+          "changedMetadataMembers": 2,
+          "verifiedRedactionSpans": 13,
+          "originalMemberNamesPreserved": true,
+          "otherPayloadBytesUnchanged": true
+        },
+        {
+          "originalFilename": "Roadmark-recovery-hyundai-provisional-20261014T031746Z-part03of03.tar.xz",
+          "selectedFilename": "Roadmark-recovery-hyundai-provisional-20261014T031746Z-part03of03.tar.xz",
+          "bytes": 2472728,
+          "sha256": "2136b50bef45f6df95a0777d2e8c9984075df11cfe5e9e073d78a490e758d8fd",
+          "memberCount": 34,
+          "payloadMemberCount": 32,
+          "replaced": false,
+          "result": "PASS"
+        },
+        {
+          "originalFilename": "Roadmark-recovery-qa-provisional-hyundai-delta-20261014T031908Z-part01of01.tar.xz",
+          "selectedFilename": "Roadmark-recovery-qa-provisional-hyundai-delta-20261014T031908Z-part01of01.tar.xz",
+          "bytes": 5683160,
+          "sha256": "6e50be9608c49fad7f947429f144d5c33c7c0a46ea5525c633b32b58a40f9793",
+          "memberCount": 45,
+          "payloadMemberCount": 43,
+          "replaced": false,
+          "result": "PASS"
+        },
+        {
+          "originalFilename": "Roadmark-recovery-support-provisional-hyundai-20261014T032112Z-part01of01.tar.xz",
+          "selectedFilename": "Roadmark-recovery-support-provisional-hyundai-20261014T032112Z-part01of01.tar.xz",
+          "bytes": 93188,
+          "sha256": "a796fa6c17cbe88b057d4e26e1e8804fc1f712a05c1049c764a05e05e7c5ba7c",
+          "memberCount": 12,
+          "payloadMemberCount": 10,
+          "replaced": false,
+          "result": "PASS"
+        },
+        {
+          "originalFilename": "Roadmark-recovery-hyundai-established-sanitized-delta-20261014T035107Z-part01of02.tar.xz",
+          "selectedFilename": "Roadmark-recovery-hyundai-established-sanitized-delta-20261014T035107Z-part01of02-privacy-sanitized-20261014T0355.tar.xz",
+          "bytes": 701724,
+          "sha256": "0870119a211d1221d3be462c38b72d27145ccbd67f3dc0e90fd276aecd4358e6",
+          "memberCount": 55,
+          "payloadMemberCount": 53,
+          "replaced": true,
+          "result": "PASS",
+          "unchangedMembers": 49,
+          "changedPayloadMembers": 4,
+          "changedMetadataMembers": 2,
+          "verifiedRedactionSpans": 4,
+          "originalMemberNamesPreserved": true,
+          "otherPayloadBytesUnchanged": true
+        },
+        {
+          "originalFilename": "Roadmark-recovery-hyundai-established-sanitized-delta-20261014T035107Z-part02of02.tar.xz",
+          "selectedFilename": "Roadmark-recovery-hyundai-established-sanitized-delta-20261014T035107Z-part02of02.tar.xz",
+          "bytes": 246300,
+          "sha256": "9897e78916d3119badfbf7730c436cca97e2d9cfef8a27784bf26817f0c7e650",
+          "memberCount": 7,
+          "payloadMemberCount": 5,
+          "replaced": false,
+          "result": "PASS"
+        },
+        {
+          "originalFilename": "Roadmark-recovery-source-hyundai-integrated-closure-pending-20261014T0348.tar.xz",
+          "selectedFilename": "Roadmark-recovery-source-hyundai-integrated-closure-pending-20261014T0348.tar.xz",
+          "bytes": 7888712,
+          "sha256": "1b5695d82c6b58719724e7a66f10f04c5080331c4f5c224e0a4fcb481b2a2ee8",
+          "memberCount": 629,
+          "payloadMemberCount": 628,
+          "replaced": false,
+          "result": "PASS"
+        },
+        {
+          "originalFilename": "Roadmark-recovery-qa-hyundai-integrated-delta-20261014T035653Z-part01of01.tar.xz",
+          "selectedFilename": "Roadmark-recovery-qa-hyundai-integrated-delta-20261014T035653Z-part01of01.tar.xz",
+          "bytes": 1450668,
+          "sha256": "0bf3e3c61f26dfce81f61acf40a0c840528e534ecd5d7c98daaba049c2b60949",
+          "memberCount": 45,
+          "payloadMemberCount": 43,
+          "replaced": false,
+          "result": "PASS"
+        }
+      ],
+      "packetChecks": [
+        {
+          "path": "byd-research/byd-2026-10-14.json",
+          "bytes": 656326,
+          "sha256": "f3783a1980cdc49ef1f4e49c227311b45fe8d90d030edcf05854a0c0bd26ab07",
+          "unchangedFromOriginal": true
+        },
+        {
+          "path": "byd-research/byd-reconciliation-2026-10-14.json",
+          "bytes": 9322,
+          "sha256": "fe42227db84de3cb665fba5f7253730c40dfb3cb2da8f62d0edfbffeeba1ff98",
+          "unchangedFromOriginal": true
+        },
+        {
+          "path": "geely-research/geely-2026-10-14.json",
+          "bytes": 493382,
+          "sha256": "f1a7332edda3fd9cdbb5d60f6b97636a20f5b14e623158f9c3705963f34ff882",
+          "unchangedFromOriginal": true
+        },
+        {
+          "path": "geely-research/geely-reconciliation-2026-10-14.json",
+          "bytes": 8636,
+          "sha256": "682544d30b186ee1c294c20deb5bb7bdb98022c41b144bb61efb759cfc50c8ea",
+          "unchangedFromOriginal": true
+        },
+        {
+          "path": "hyundai-research/hyundai-2026-10-14.json",
+          "bytes": 18134105,
+          "sha256": "99d93286d74881a571bd7b544c242bacd486c8800f5c19c8e747bf117f7a0d28",
+          "unchangedFromOriginal": true
+        },
+        {
+          "path": "hyundai-research/hyundai-reconciliation-2026-10-14.json",
+          "bytes": 25611,
+          "sha256": "aa45114f3aa6fbd7153d5ce87970060a6b0dc6b0de274fb923a610e74f661be4",
+          "unchangedFromOriginal": true
+        },
+        {
+          "path": "kia-research/kia-2026-10-14.json",
+          "bytes": 4718533,
+          "sha256": "7fa42384d26808dda94732b51fbdb8f6e1c666c6ab50ceff3129a8cedf23797e",
+          "unchangedFromOriginal": true
+        },
+        {
+          "path": "kia-research/kia-reconciliation-2026-10-14.json",
+          "bytes": 23540,
+          "sha256": "0be0fa552c246999f2fa9a213ae3c30cdf7abc776bbb94972acf165cad42d24e",
+          "unchangedFromOriginal": true
+        },
+        {
+          "path": "mg-im-research/im-2026-10-14.json",
+          "bytes": 1378416,
+          "sha256": "14e224bbd15a219d6a530bd0218e0183ceaa454f120ab990cf45762edd4ef801",
+          "unchangedFromOriginal": true
+        },
+        {
+          "path": "mg-im-research/im-reconciliation-2026-10-14.json",
+          "bytes": 5745,
+          "sha256": "7f8ade71d596bd550181199f7dc39e45c3327011704705d1da3f329b35ab2961",
+          "unchangedFromOriginal": true
+        },
+        {
+          "path": "mg-im-research/mg-2026-10-14.json",
+          "bytes": 3257769,
+          "sha256": "b13872c4ffa2ae506e6a8e8c4daeac59db4fe6d6b267d5b6107797fb7c536e06",
+          "unchangedFromOriginal": true
+        },
+        {
+          "path": "mg-im-research/mg-reconciliation-2026-10-14.json",
+          "bytes": 20292,
+          "sha256": "8102d0892e4cd6e7e54664749c5ab7ac4a1d3ec3ae2723d315fa3d6aa30f475c",
+          "unchangedFromOriginal": true
+        },
+        {
+          "path": "omoda-jaecoo-research/jaecoo-2026-10-14.json",
+          "bytes": 113514,
+          "sha256": "21770f6bfc731711fdfdb81e54c8a1276a452d2b338294f874d36b67c82333ca",
+          "unchangedFromOriginal": true
+        },
+        {
+          "path": "omoda-jaecoo-research/jaecoo-reconciliation-2026-10-14.json",
+          "bytes": 5238,
+          "sha256": "db337ac69f5d950068b1364b4cc25bd4f8e32b6314db74978d90d3f5a09e6c94",
+          "unchangedFromOriginal": true
+        },
+        {
+          "path": "tesla-research/tesla-2026-10-14.json",
+          "bytes": 640105,
+          "sha256": "e45015f156b981e2c6e9e94338c4d548c91a2588d092a7e0b139fe0e0cc45d03",
+          "unchangedFromOriginal": true
+        },
+        {
+          "path": "tesla-research/tesla-reconciliation-2026-10-14.json",
+          "bytes": 5643,
+          "sha256": "4f1ec930cfd512fea44d890cc30e62c9b7a64287496910361dc982748eff0576",
+          "unchangedFromOriginal": true
+        },
+        {
+          "path": "zeekr-research/zeekr-2026-10-14.json",
+          "bytes": 762774,
+          "sha256": "f173bd6728fde5a2e5aa5383348e64de38b68a4cd4666187de4ec4a801a7a73b",
+          "unchangedFromOriginal": true
+        },
+        {
+          "path": "zeekr-research/zeekr-reconciliation-2026-10-14.json",
+          "bytes": 7250,
+          "sha256": "68bd81b6c1e80cec5b72a83079fe41b0376c76ac06af15557e226a6ad608f5ee",
+          "unchangedFromOriginal": true
+        }
+      ],
+      "blockers": [],
+      "result": "PASS",
+      "completedAt": "2026-10-14T04:34:10.779233+00:00",
+      "limitations": [
+        "This verification validates integrity and exact documented redactions, not the separate privacy residual scan.",
+        "Historical embedded evidentiary hashes remain historical; canonical archive files[] digests and the final effective tree manifest were verified.",
+        "Library persistence and deletion authorization are outside this read-only verification."
+      ]
+    },
+    "privacyResidualScan": {
+      "status": "clean",
+      "regularFilesScanned": 5037,
+      "bytesScanned": 1980054991,
+      "uniquePayloadsScanned": 2816,
+      "knownDistinctCapturedValues": 55,
+      "testedDistinctByteVariants": 373,
+      "recognizedBenignRuntimeCandidateCount": 609,
+      "startedAt": "2026-10-14T04:31:51.869933+00:00",
+      "completedAt": "2026-10-14T04:35:51.516096+00:00",
+      "exactValueMatches": 0,
+      "primaryHeaderCandidates": 0,
+      "unclassifiedRuntimeCandidates": 0,
+      "errors": 0,
+      "coverage": {
+        "byteSearch": "Every regular payload, regardless of extension",
+        "encodings": [
+          "literal",
+          "URL component",
+          "base64/base64url standalone value, padded and unpadded",
+          "UTF-16LE/BE",
+          "JSON string escaping",
+          "HTML entity escaping",
+          "full Unicode-escaped value in lower/upper hex"
+        ],
+        "patternSearch": "Primary nested-JSON/raw-header scanner and runtime HTML meta/input/property scanner with entity decoding and up to three nested escape levels",
+        "limitations": [
+          "Does not decrypt encrypted content",
+          "Does not recursively unpack arbitrary compressed or proprietary content inside regular payloads",
+          "Standalone base64 matching is not a claim to inspect every possible base64 wrapping/alignment of a larger structure"
+        ]
+      }
+    }
+  },
+  "privacy": {
+    "correctedArchives": 12,
+    "payloadMemberOccurrencesChanged": 56,
+    "redactionLocations": 125,
+    "removedCategories": [
+      "Captured session-cookie/header values",
+      "Session and anti-bot challenge identifiers",
+      "CSRF, CAPTCHA, form and AJAX/REST nonces",
+      "Client secrets and configurator credential/capability values"
+    ],
+    "retainedCategories": [
+      "Factual research content and source URLs",
+      "Deliberately public CAPTCHA sitekeys, analytics identifiers and static public site configuration"
+    ],
+    "rawCaptureDigestNote": "Copied raw HTML/header/text captures containing the removed values have different full-file bytes and SHA-256. File digest transitions below document these differences; approved packet/reconciliation content is unchanged.",
+    "limitations": [
+      "Does not decrypt encrypted content",
+      "Does not recursively unpack arbitrary compressed or proprietary content inside regular payloads",
+      "Standalone base64 matching is not a claim to inspect every possible base64 wrapping/alignment of a larger structure",
+      "Pattern and known-value scanning does not prove the absence of every possible secret.",
+      "Earlier affected and intermediate Library files remain until separately removed by the user."
+    ]
+  },
+  "source": {
+    "restoreOrder": 39,
+    "filename": "Roadmark-recovery-source-hyundai-integrated-closure-pending-20261014T0348.tar.xz",
+    "library_file_id": "libfile_6d2dde37e4288191a31fe2655c358801",
+    "file_id": "file_0000000037bc81f5ae4234c4f0d60beb",
+    "version": 0,
+    "bytes": 7888712,
+    "sha256": "1b5695d82c6b58719724e7a66f10f04c5080331c4f5c224e0a4fcb481b2a2ee8",
+    "group": "source-hyundai-integrated-closure-pending",
+    "privacyCorrectedCopy": false
+  },
+  "cleanupCandidateCount": 15,
+  "deletionPerformed": false
+}

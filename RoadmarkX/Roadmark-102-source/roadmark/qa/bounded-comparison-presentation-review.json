@@ -1,0 +1,258 @@
+{
+  "title": "Bounded comparison presentation review",
+  "reviewed_at_utc": "2026-10-10T18:49:04Z",
+  "verdict": "STATIC_REVIEW_PASS",
+  "blocking_findings": [],
+  "app_root": "/workspace/scratch/586427eef9f2/roadmark-work/roadmark",
+  "baseline": {
+    "label": "WIP48",
+    "path": "/workspace/scratch/586427eef9f2/roadmark-recovery/roadmark-checkpoint-2026-10-10(1).zip",
+    "sha256": "51c08fe5c1bc29567c41464022df8e3fcb2489ddf2267776237edf1c4c09f788",
+    "expected_sha256": "51c08fe5c1bc29567c41464022df8e3fcb2489ddf2267776237edf1c4c09f788",
+    "note": "ZIP source is the baseline; its intentionally older rendered preview is not a verification target."
+  },
+  "findings": [
+    {
+      "id": "bounded-intro",
+      "result": "pass_static",
+      "files": [
+        "src/lib/comparison-context.ts:14",
+        "src/components/experience.tsx:412"
+      ],
+      "detail": "Any configurationEvidence in the full selected packs array returns qualified catalogue/build/VIN wording, preventing the legacy range/seat fragment from rendering. All-bounded and mixed selections receive distinct scopes. Empty/unbounded selections return null; bus context retains first priority and its exact original text."
+    },
+    {
+      "id": "reader-labels",
+      "result": "pass_static",
+      "files": [
+        "src/lib/fact-presentation.ts:9",
+        "src/lib/compare.ts:188",
+        "src/lib/citable.ts:192"
+      ],
+      "detail": "Only case-insensitive exact raw-key labels (underscore key or space-separated key) receive one of five display names. Custom charge windows and cargo methods are returned untouched. Existing mixed-basis shared labels are unchanged and remain before normalization. factClaim builds a new Claim with the reader label; it does not assign to the Fact."
+    },
+    {
+      "id": "evidence-and-guards",
+      "result": "pass_byte_comparison_and_static",
+      "files": [
+        "data/",
+        "src/lib/data.ts",
+        "src/lib/selling-points.ts",
+        "src/lib/buyer-proposal.ts",
+        "src/lib/buyer-proposal-storage.ts"
+      ],
+      "detail": "All 105 data files and all 124 otherwise unchanged source files match WIP48 byte-for-byte. This includes facts, configuration metadata, full expected-fact/identity snapshots and guard modules. Added helpers perform reads and construct strings only. Neither helper imports data or a guard module."
+    },
+    {
+      "id": "discovery-count",
+      "result": "pass_static",
+      "files": [
+        "src/components/discovery.tsx:281"
+      ],
+      "detail": "Exactly one matching version uses record; zero or multiple versions use records. Matching/filtering, catalogue eligibility and availability wording are unchanged."
+    },
+    {
+      "id": "client-boundary",
+      "result": "pass_static",
+      "files": [
+        "src/lib/comparison-context.ts",
+        "src/lib/fact-presentation.ts",
+        "src/components/experience.tsx"
+      ],
+      "detail": "New client-imported helpers have no runtime dependencies, filesystem access, server-only API or nonserializable props. comparison-context imports Car as a type only. Reviewed installed Next client-boundary guidance."
+    }
+  ],
+  "scope_comparison": {
+    "src": {
+      "baseline_file_count": 129,
+      "current_file_count": 130,
+      "changed_paths": [
+        "src/components/discovery.tsx",
+        "src/components/experience.tsx",
+        "src/lib/citable.ts",
+        "src/lib/compare.ts",
+        "src/lib/comparison-context.ts",
+        "src/lib/fact-presentation.ts"
+      ],
+      "unchanged_file_count": 124,
+      "baseline_tree_sha256": "184ce5ff1c94a5e5406884361bc1b42a264c83b737276efbc8a7c6da54ba2f33",
+      "current_tree_sha256": "fbde49898075d00b8488539c5ea42a8222b927780d8696b36d0a222cf81f4ec6"
+    },
+    "tests": {
+      "baseline_file_count": 68,
+      "current_file_count": 69,
+      "changed_paths": [
+        "tests/comparison-context.test.ts",
+        "tests/detail-discovery.test.ts",
+        "tests/fact-presentation.test.ts"
+      ],
+      "unchanged_file_count": 66,
+      "baseline_tree_sha256": "32ce8b54868bc14b6f8ab65dda9f59f56c74050f124d612860d7a082bcb4346d",
+      "current_tree_sha256": "81a2fe3b5153184c4b3a1b41be5300114df4a6353052c88f213b038e7f5fce3c"
+    },
+    "data": {
+      "baseline_file_count": 105,
+      "current_file_count": 105,
+      "changed_paths": [],
+      "unchanged_file_count": 105,
+      "baseline_tree_sha256": "560228896e3c94e480c537efc09f07c75bf127c18cdab938236cda11aa514b97",
+      "current_tree_sha256": "560228896e3c94e480c537efc09f07c75bf127c18cdab938236cda11aa514b97"
+    }
+  },
+  "tree_hash_convention": "SHA-256 over sorted relative path + NUL + per-file SHA-256 + LF, UTF-8, no directory entries.",
+  "files": [
+    {
+      "path": "src/components/discovery.tsx",
+      "sha256": "7c9b51b2a352b2f7e46645ba2675643857907073ddca05a5a67c57ef24343b26",
+      "bytes": 23912,
+      "baseline_sha256": "5028e13c715dd7509fb25b33a8da1f5f1675840fe552b6175c1bd390bdb3ced6",
+      "byte_identical_to_baseline": false,
+      "scope": "changed_reviewed"
+    },
+    {
+      "path": "src/components/experience.tsx",
+      "sha256": "0119ddfdaf2433c2e5de46036ac0987c39a4485585e3c90b23f79b586831ffd9",
+      "bytes": 35575,
+      "baseline_sha256": "dea96ce79217d199d3b9b4de6de05d43aef4b79120b87ee91f2c2e3675210d61",
+      "byte_identical_to_baseline": false,
+      "scope": "changed_reviewed"
+    },
+    {
+      "path": "src/lib/citable.ts",
+      "sha256": "31c8b9091e1f42ddef502202dcb2400c297a30205bd95d7b5947dbaf3541852e",
+      "bytes": 13604,
+      "baseline_sha256": "c840c1ef6812f42068aef3ef0a82f54fbf475974bd45debd294a544a098779ef",
+      "byte_identical_to_baseline": false,
+      "scope": "changed_reviewed"
+    },
+    {
+      "path": "src/lib/compare.ts",
+      "sha256": "2628493eadd12228e96233dc272d19a571359c6612197c62873d9b6deef86d39",
+      "bytes": 6631,
+      "baseline_sha256": "8f8980113c28997046067081f17084f9bf4ee025351d165e432e2f964131a835",
+      "byte_identical_to_baseline": false,
+      "scope": "changed_reviewed"
+    },
+    {
+      "path": "src/lib/comparison-context.ts",
+      "sha256": "e068fb2678aba7daf17151d501a7f253b883265ef65e9f764fd046239a3c663c",
+      "bytes": 1415,
+      "baseline_sha256": "bcff166e26c80c4e1f1af9c386c995a9f7a3cbe8540252973f21788fd08d7583",
+      "byte_identical_to_baseline": false,
+      "scope": "changed_reviewed"
+    },
+    {
+      "path": "src/lib/fact-presentation.ts",
+      "sha256": "f9ebe52ef764decd6ab79fcee5d109e790c71833e2dff0c0f2a341388b585824",
+      "bytes": 586,
+      "baseline_sha256": null,
+      "byte_identical_to_baseline": false,
+      "scope": "changed_reviewed"
+    },
+    {
+      "path": "tests/comparison-context.test.ts",
+      "sha256": "5e8f1b9aca7d3fb5e7004ca1570f3aaa31524694d2c6cd8fc0c9f9dc838707e0",
+      "bytes": 2709,
+      "baseline_sha256": "33430f5c2e144a5ade4fe3a76f97d3196671d54d588b8224c7a9833c82db46c5",
+      "byte_identical_to_baseline": false,
+      "scope": "changed_reviewed"
+    },
+    {
+      "path": "tests/detail-discovery.test.ts",
+      "sha256": "e558598ad85b2ab8f5a49ee56ddb8af6579c7b688474f72aebc85d339b048c80",
+      "bytes": 3306,
+      "baseline_sha256": "b5067251a4514feb4691f9df33ec6a07464dc0eec2ab1aabaa68157ee43c5f16",
+      "byte_identical_to_baseline": false,
+      "scope": "changed_reviewed"
+    },
+    {
+      "path": "tests/fact-presentation.test.ts",
+      "sha256": "a2b2e11e9182b16824ad0e96ee1d15a11fcfad58e0e284fd9374f00c5d21da4c",
+      "bytes": 1789,
+      "baseline_sha256": null,
+      "byte_identical_to_baseline": false,
+      "scope": "changed_reviewed"
+    },
+    {
+      "path": "src/lib/data.ts",
+      "sha256": "3ad2ffb8335ad1d061ffa9962d9002dd8a16b564825a905884098223d8edf5db",
+      "bytes": 29336,
+      "baseline_sha256": "3ad2ffb8335ad1d061ffa9962d9002dd8a16b564825a905884098223d8edf5db",
+      "byte_identical_to_baseline": true,
+      "scope": "unchanged_reference"
+    },
+    {
+      "path": "src/lib/types.ts",
+      "sha256": "e669bb885ff8f1a2a5565b139a9fce6b5507cfb3c99179cec061d84af091d645",
+      "bytes": 5374,
+      "baseline_sha256": "e669bb885ff8f1a2a5565b139a9fce6b5507cfb3c99179cec061d84af091d645",
+      "byte_identical_to_baseline": true,
+      "scope": "unchanged_reference"
+    },
+    {
+      "path": "src/lib/selling-points.ts",
+      "sha256": "27709189a6ef75f38350b9dbfc464fd6e2b3dc7f7e96af4c57d2a2fcc1c355cf",
+      "bytes": 13892,
+      "baseline_sha256": "27709189a6ef75f38350b9dbfc464fd6e2b3dc7f7e96af4c57d2a2fcc1c355cf",
+      "byte_identical_to_baseline": true,
+      "scope": "unchanged_reference"
+    },
+    {
+      "path": "src/lib/buyer-proposal.ts",
+      "sha256": "588c5e79b694e63ecb785a80f6cef902544505a8d8fdf0492c355254ccf21b6a",
+      "bytes": 744,
+      "baseline_sha256": "588c5e79b694e63ecb785a80f6cef902544505a8d8fdf0492c355254ccf21b6a",
+      "byte_identical_to_baseline": true,
+      "scope": "unchanged_reference"
+    },
+    {
+      "path": "src/lib/buyer-proposal-storage.ts",
+      "sha256": "2febace11633321f2c103a0b3db4c4632df8e3601195922c4b83fce6354f7f7c",
+      "bytes": 4108,
+      "baseline_sha256": "2febace11633321f2c103a0b3db4c4632df8e3601195922c4b83fce6354f7f7c",
+      "byte_identical_to_baseline": true,
+      "scope": "unchanged_reference"
+    },
+    {
+      "path": "src/lib/configuration-evidence.ts",
+      "sha256": "7ff6d81950d7ecd6697769cc01ef950d05b2e15fb4ea246a0a760559574f2aa3",
+      "bytes": 621,
+      "baseline_sha256": "7ff6d81950d7ecd6697769cc01ef950d05b2e15fb4ea246a0a760559574f2aa3",
+      "byte_identical_to_baseline": true,
+      "scope": "unchanged_reference"
+    },
+    {
+      "path": "data/catalogue-additions-2026-10-10.json",
+      "sha256": "729386711765938a3234e1df910f3a9c75379d42adff9bc13abba74314d42088",
+      "bytes": 36012116,
+      "baseline_sha256": "729386711765938a3234e1df910f3a9c75379d42adff9bc13abba74314d42088",
+      "byte_identical_to_baseline": true,
+      "scope": "unchanged_reference"
+    },
+    {
+      "path": "data/buyer-selling-points-2026-10-10.json",
+      "sha256": "0cc11616b78bd82a0e9a8d55362dc1e098b84ff95849d31d4fbd494f6bcb0f54",
+      "bytes": 22489685,
+      "baseline_sha256": "0cc11616b78bd82a0e9a8d55362dc1e098b84ff95849d31d4fbd494f6bcb0f54",
+      "byte_identical_to_baseline": true,
+      "scope": "unchanged_reference"
+    },
+    {
+      "path": "data/buyer-identity-snapshots-2026-10-10.json",
+      "sha256": "80a21fae26da4c18c85fa793a390b2477e259a0abaec073a1df6e22a369a61d1",
+      "bytes": 29117240,
+      "baseline_sha256": "80a21fae26da4c18c85fa793a390b2477e259a0abaec073a1df6e22a369a61d1",
+      "byte_identical_to_baseline": true,
+      "scope": "unchanged_reference"
+    }
+  ],
+  "documentation_reviewed": [
+    "node_modules/next/dist/docs/01-app/03-api-reference/01-directives/use-client.md",
+    "node_modules/next/dist/docs/01-app/02-guides/server-and-client-boundary.md"
+  ],
+  "verification_limits": [
+    "Static review and raw-file byte/hash comparison only. No application runtime was imported, tests/builds run, browser opened, or app source edited by this reviewer.",
+    "Added test source was reviewed but not executed. Parent owns focused/full serial checks and rebuilt browser verification.",
+    "No rendered or hydration claim is made. In the reviewed tests, bounded intro coverage calls the helper, not the rendered Experience component. Browser verification should cover Ford/Ford, a third-position bounded selection, bus/bounded priority, and ordinary legacy comparison."
+  ]
+}

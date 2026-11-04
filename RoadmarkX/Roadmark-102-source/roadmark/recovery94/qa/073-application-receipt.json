@@ -1,0 +1,63 @@
+{
+  "appliedAtUTC": "2026-10-12T01:06:41.210925+00:00",
+  "candidateManifestSHA256": "33ec7a7dc94784d360e4a4e62c491f69b42f2663919f72376b303e24dce72643",
+  "changes": [
+    {
+      "candidateFile": "files/docs/REVIEW_WORKFLOW.md",
+      "operation": "replace_exact_preimage",
+      "postimageSha256": "d0bde7c41757787b4578cbebe52d7ddfda03e5ad38becf1369caa3abc8da7b07",
+      "preimageFile": "preimages/docs/REVIEW_WORKFLOW.md",
+      "preimageSha256": "8cf28ee6fcf2ebe54fd23549c49947deaf726a4a2cba72b057417729ad4e822b",
+      "target": "docs/REVIEW_WORKFLOW.md"
+    },
+    {
+      "candidateFile": "files/scripts/preview-report-review.ts",
+      "operation": "create_only_if_absent",
+      "postimageSha256": "d01375f8cecf89fa034de48cff7dc3ec68d336386b578612db83462338027241",
+      "preimageFile": null,
+      "preimageSha256": null,
+      "target": "scripts/preview-report-review.ts"
+    },
+    {
+      "candidateFile": "files/src/lib/report-review-dry-run.ts",
+      "operation": "create_only_if_absent",
+      "postimageSha256": "3aa9b6817764ad53f58ec4598c5a914e81c404f4f88ab750a4f667eafb0aad82",
+      "preimageFile": null,
+      "preimageSha256": null,
+      "target": "src/lib/report-review-dry-run.ts"
+    },
+    {
+      "candidateFile": "files/tests/helpers/report-preview-fixture.ts",
+      "operation": "create_only_if_absent",
+      "postimageSha256": "b5a4eab60c7a2cdfc8c780410948363b9a622105eeb577e8a86d0ccf34275972",
+      "preimageFile": null,
+      "preimageSha256": null,
+      "target": "tests/helpers/report-preview-fixture.ts"
+    },
+    {
+      "candidateFile": "files/tests/report-review-cli.test.ts",
+      "operation": "create_only_if_absent",
+      "postimageSha256": "5cc424f9413da060469ef0bcbfed5d6426f983ea7aad3572542ba17cab78f77c",
+      "preimageFile": null,
+      "preimageSha256": null,
+      "target": "tests/report-review-cli.test.ts"
+    },
+    {
+      "candidateFile": "files/tests/report-review-dry-run.test.ts",
+      "operation": "create_only_if_absent",
+      "postimageSha256": "90264499c2bfb05741e6c56eb594681afb405748201daf76bddf0a494bb6783b",
+      "preimageFile": null,
+      "preimageSha256": null,
+      "target": "tests/report-review-dry-run.test.ts"
+    }
+  ],
+  "checkpoint93FreezeReleasedForExactReviewedChanges": true,
+  "currentInputCount": 1655,
+  "deploymentOrPublication": false,
+  "priorCheckpoint93SavedAndChatAccepted": true,
+  "priorInputCount": 1650,
+  "registersRemainEmpty": true,
+  "reviewSHA256": "3f8dc00a3df47fc6e674bd8f78363308438a3425e72f423526525c149a1c237f",
+  "runtimeVerified": false,
+  "schemaVersion": "roadmark94.root-application.v1"
+}

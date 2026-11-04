@@ -1,0 +1,36 @@
+{
+  "checkedAtUTC": "2026-10-10T15:51:53.241Z",
+  "passed": true,
+  "checks": 335,
+  "mutations": 163,
+  "configurations": 291,
+  "summaries": 284,
+  "clauses": 568,
+  "exactExpandedJSONStringify": true,
+  "completeCatalogueParity": true,
+  "expectedSnapshotsImmutableAndUnchanged": true,
+  "inputs": [
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/buyer-normalization-baseline-inline.json",
+      "bytes": 70256293,
+      "sha256": "31d7eae894540f72d630edb644758c649237885ac118e950cd8999e0ec6824fe"
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/../roadmark-work/roadmark/data/buyer-selling-points-2026-10-10.json",
+      "bytes": 21734608,
+      "sha256": "08afe6dcf5b9bf720fb4b8933306e204d11cef2747342f136420b0b77307f212"
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/../roadmark-work/roadmark/data/buyer-identity-snapshots-2026-10-10.json",
+      "bytes": 19793332,
+      "sha256": "afe66c77d3b132bce3500c051d3a229441009402a0fb57eb3d554eb928061a08"
+    }
+  ],
+  "limitations": [
+    "Mutation coverage is representative storage regression, not a rerun of the frozen Kia exhaustive proof",
+    "No serialization cache or evaluator change",
+    "No runtime/mobile speed improvement claimed"
+  ],
+  "activeInputBytes": 41527940,
+  "savedBytes": 28728353
+}

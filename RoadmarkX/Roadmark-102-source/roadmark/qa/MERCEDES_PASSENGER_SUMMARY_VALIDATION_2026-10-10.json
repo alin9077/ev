@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "recordCount": 7,
+  "clauseCount": 14,
+  "dependencyCount": 96,
+  "factDependencyCount": 89,
+  "featureDependencyCount": 0,
+  "featurePatchCount": 0,
+  "sourceCount": 6,
+  "priceDependenciesUsedInTechnicalCopy": 0,
+  "rangeDeltas": 0,
+  "cargoDeltas": 0,
+  "batteryUsableDeltas": 1,
+  "powerDeltas": 1,
+  "runtimeReaderCheck": "Passed read-only invocation against effective data",
+  "checks": [
+    "Seven confirmed integration IDs, all formal MY null, all listed_unconfirmed with unverified stock",
+    "GLC and eVito excluded; no equipment patches or default-build inheritance",
+    "All effective fact envelopes and sources snapshotted exactly",
+    "Six relevant primary source hashes verified",
+    "27kWh usable and 60kW power arithmetic checked without range/performance inference",
+    "Canonical conflict nulls, GLB battery-warranty nulls and offer isolation preserved"
+  ],
+  "runtimeValidation": {
+    "passed": true,
+    "summaryCount": 7,
+    "clauseCount": 14,
+    "factValueMutations": 74,
+    "sourceMutations": 30,
+    "checks": [
+      "All seven summaries and all 14 clauses render against the current shared catalogue, effective features and source registry",
+      "All 96 dependency snapshots exactly match, including 89 full effective fact envelopes, seven null model years, source evidence/eligibility metadata and all availability envelopes",
+      "Changing each of 74 clause-used fact values suppresses every dependent clause while preserving every independent companion clause",
+      "All seven records fail closed for changed formal MY, model code, usable-energy basis, gross/range nulls, charging window, qualifications, status, stale fact date, fact issues or loss of listed eligibility",
+      "Both GLB records suppress stale battery-warranty conditions if any null battery term/distance/retention or warranty string is filled",
+      "Removing the G 580 commercial high-voltage-battery exclusion suppresses its tradeoff while preserving independent output/battery copy",
+      "Resolving a canonical AC/DC null suppresses dependent unresolved-rating copy; no conditional attributed-table value is substituted into canonical fields",
+      "Changing or expiring all prices preserves all technical/warranty clauses inside their independent 30-day evidence window",
+      "Changing separately attributed conditional charging claims does not mutate or replace canonical nulls and does not affect copy that makes no attributed-table-power claim",
+      "All summaries suppress outside the 30-day evidence freshness window",
+      "30 missing/stale/held/conflicted/blocked source mutations fail closed for dependent copy in both shared reader stages",
+      "No equipment claims or feature patches; GLC and all vans excluded from the seven-record proposal"
+    ],
+    "limitations": [
+      "Runtime guards compare fact value/status/unit/basis/qualifications/conditionExplanation, freshness/issues, required source membership and source access/conflict/hold states. Rich comparisonBasis, scope, market, source publication/qualification metadata and full availability envelopes are exact review snapshots, not independently compared at runtime.",
+      "Current-listed runtime eligibility checks record availability state; it does not compare the saved listed_unconfirmed/unverified availability envelope. This proposal does not claim that stronger availability enforcement exists.",
+      "No app code or data was changed; mutation tests use in-memory fixtures only."
+    ]
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "checkedAtUTC": "2026-10-10T14:26:31Z",
+  "browser": "dot own Chromium browser",
+  "build": "281 configurations, before inline bus explanation cleanup",
+  "checks": {
+    "initialPassengerComparisonRendered": true,
+    "searchYutongShowsFourExactChoices": true,
+    "seatsFiveFilterExcludesUnknownBusGenericSeats": true,
+    "noResultsStateShown": true,
+    "resetFiltersWorks": true,
+    "escapeFirstClearsSearchThenCloses": true,
+    "closeButtonPreservesSelectionAndURL": true,
+    "exactBusChoiceLoadsNewURLAndEvidence": true,
+    "backRestoresPriorGeelySelection": true,
+    "forwardRestoresYutongSelection": true,
+    "busOnlyCapacityHeaders": [
+      "Seated passengers, excluding driver",
+      "Standing passengers",
+      "Driver places",
+      "Published bus length",
+      "Gross vehicle mass",
+      "Declared battery energy; gross/usable unverified",
+      "Published vehicle warranty"
+    ],
+    "busOnlyGenericSeatRowAbsent": true
+  },
+  "narrowCheck": {
+    "method": "desktop browser zoom, not device emulation or real phone",
+    "viewportCssWidth": 393,
+    "documentScrollWidth": 388,
+    "pickerWidth": 369.333,
+    "pickerClientWidth": 362,
+    "pickerScrollWidth": 362,
+    "closeTargetHeight": 48,
+    "resetTargetHeight": 45.698
+  },
+  "issueFoundAndFixed": {
+    "issue": "Every primary bus fact repeated vehicle-wide holds and procedural mapping text inline",
+    "fix": "194 conditionExplanation strings now use fact-specific context; all complete qualifications and source locators preserved",
+    "finalRebuiltVisualCheck": {
+      "checkedAtUTC": "2026-10-10T14:35:29Z",
+      "passed": true,
+      "busOnlyCapacityRows": 7,
+      "sourceReferences": 14,
+      "inlineProceduralMappingTokensAbsent": true,
+      "fullQualificationsPreservedByTests": true
+    }
+  },
+  "limits": [
+    "Not real iPhone/Safari or Android/Chrome",
+    "Not complete changed-screen side-by-side review",
+    "Not measured mobile LCP/INP"
+  ],
+  "finalMergedCheck": {
+    "checkedAtUTC": "2026-10-10T14:50:03Z",
+    "allSevenPairsRendered": true,
+    "newStockFilterBusCount": 0,
+    "exactBusSelections": 2,
+    "busSpecificIntroduction": true,
+    "singularDriverWording": true,
+    "narrowViewportCss": 393,
+    "narrowDocumentWidth": 388,
+    "narrowTableWidth": 348.333,
+    "originalHeroBeforeDiscovery": true,
+    "heroLinks": 9,
+    "allHeroTargetsPresent": true,
+    "h1": 1,
+    "main": 1,
+    "actualPhoneTesting": false,
+    "fullChangedScreenReview": false
+  }
+}

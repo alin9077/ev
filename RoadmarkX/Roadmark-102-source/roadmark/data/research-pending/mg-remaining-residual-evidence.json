@@ -1,0 +1,4134 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-10-10T08:36:42.640859+00:00",
+  "auditDate": "2026-10-10",
+  "scope": "Bounded Australian residual-new-stock check for outgoing MGS5 EV and ZS EV, plus direct Cyberster NEW evidence. Read-only; no app edits/outreach.",
+  "originalEvidencePreserved": true,
+  "definitions": {
+    "confirmed_new_stock_epoch_unresolved": "Exact dealer NEW-stock identity is supported, but the manufacturer technical epoch is unproven; no power, torque or range is inherited solely from MY/trim.",
+    "conditional_advertised_new_registered": "Direct New/InStock declaration preserved, registration also disclosed; strict unregistered-new eligibility not established.",
+    "new_stock_MY_conflict": "Stock condition can be New while exact manufacturer technical epoch is still unresolved.",
+    "absence": "No accepted sampled NEW stock is not evidence of nationwide absence.",
+    "modelYear": "Dealer stated MY, production month/year, advertised year and brochure epoch are kept separately."
+  },
+  "manufacturerEpochs": [
+    {
+      "id": "mgs5-my25-excite-49",
+      "brand": "MG",
+      "model": "MGS5 EV",
+      "trim": "Excite 49",
+      "formalMY": {
+        "value": "MY25",
+        "evidence": [
+          {
+            "sourceId": "mgs5-my25-brochure",
+            "locator": "PDF page 17 (1-based), row: publication footer"
+          }
+        ]
+      },
+      "documentEpoch": {
+        "value": "February 2025",
+        "evidence": [
+          {
+            "sourceId": "mgs5-my25-brochure",
+            "locator": "PDF page 17 (1-based), row: publication footer"
+          }
+        ]
+      },
+      "productionEpoch": null,
+      "facts": {
+        "batteryKWh": {
+          "value": 49,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Battery Capacity (kWh); column: 49kWh EXCITE"
+            }
+          ]
+        },
+        "batteryChemistry": {
+          "value": "LFP",
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Battery Type; column: 49kWh EXCITE"
+            }
+          ]
+        },
+        "motorPowerKW": {
+          "value": 125,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Motor Maximum Power (kW); column: 49kWh EXCITE"
+            }
+          ]
+        },
+        "motorTorqueNm": {
+          "value": 250,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Motor Maximum Torque (Nm); column: 49kWh EXCITE"
+            }
+          ]
+        },
+        "zeroTo100Seconds": {
+          "value": 8,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: 0-100km/h (seconds); column: 49kWh EXCITE"
+            }
+          ]
+        },
+        "wltpCombinedKm": {
+          "value": 340,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Driving Range: WLTP Combined Cycle (km); column: 49kWh EXCITE"
+            }
+          ]
+        },
+        "acOnboardKW": {
+          "value": 6.6,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: On-Board Charging Unit (kW); column: 49kWh EXCITE"
+            }
+          ]
+        },
+        "dcPeakKW": {
+          "value": 120,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Maximum DC Charging Power (kW); column: 49kWh EXCITE"
+            }
+          ]
+        },
+        "dcChargeMinutes": {
+          "value": 19,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Estimated CCS Public Charge Time (30% to 80%) / Mins @25°C; column: 49kWh EXCITE"
+            }
+          ]
+        },
+        "dcChargeSOCPercent": {
+          "value": [
+            30,
+            80
+          ],
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Estimated CCS Public Charge Time (30% to 80%) / Mins @25°C; column: 49kWh EXCITE"
+            }
+          ]
+        },
+        "chargingPort": {
+          "value": "CCS Type 2",
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Charger Connection Type; column: 49kWh EXCITE"
+            }
+          ]
+        },
+        "lengthMM": {
+          "value": 4476,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Length (mm); column: 49kWh EXCITE"
+            }
+          ]
+        },
+        "widthMM": {
+          "value": 1849,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Width (mm); column: 49kWh EXCITE"
+            }
+          ]
+        },
+        "heightMM": {
+          "value": 1621,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Height (mm); column: 49kWh EXCITE"
+            }
+          ]
+        },
+        "wheelbaseMM": {
+          "value": 2730,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Wheelbase (mm); column: 49kWh EXCITE"
+            }
+          ]
+        },
+        "bootSeatsUpL": {
+          "value": 453,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Boot Volume Seats In Place (L); column: 49kWh EXCITE"
+            }
+          ]
+        },
+        "bootSeatsFoldedL": {
+          "value": 1441,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Boot Volume Seats Folded (L); column: 49kWh EXCITE"
+            }
+          ]
+        },
+        "tareMassKg": {
+          "value": 1635,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Tare Mass (kg); column: 49kWh EXCITE"
+            }
+          ]
+        },
+        "gvmKg": {
+          "value": 2080,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Gross Vehicle Mass (kg); column: 49kWh EXCITE"
+            }
+          ]
+        },
+        "towBrakedKg": {
+          "value": 750,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Maximum Towing Weight Braked (kg); column: 49kWh EXCITE"
+            }
+          ]
+        },
+        "towUnbrakedKg": {
+          "value": 750,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Maximum Towing Weight Unbraked (kg); column: 49kWh EXCITE"
+            }
+          ]
+        },
+        "tyres": {
+          "value": "215/60R17",
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Tyre Size; column: 49kWh EXCITE"
+            }
+          ]
+        },
+        "heatedFrontSeats": {
+          "value": false,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Heated Front Seats; column: 49kWh EXCITE"
+            }
+          ]
+        },
+        "heatedSteeringWheel": {
+          "value": false,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Heated Steering Wheel; column: 49kWh EXCITE"
+            }
+          ]
+        },
+        "powerTailgateKick": {
+          "value": false,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Power Tailgate with One Foot Kick; column: 49kWh EXCITE"
+            }
+          ]
+        },
+        "driverPowerSeat": {
+          "value": false,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Driver’s 6-way Electric Adjustable Seat; column: 49kWh EXCITE"
+            }
+          ]
+        },
+        "v2l": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Vehicle to Load Charging Function (V2L); column: 49kWh EXCITE"
+            }
+          ]
+        },
+        "preconditioningNavigation": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Charging Pre-Heating (with Related to Navigation Destination of Charger); column: 49kWh EXCITE"
+            }
+          ]
+        },
+        "panoramicSunroof": {
+          "value": false,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 15 (1-based), row: Electronic Panoramic Sunroof; column: 49kWh EXCITE"
+            }
+          ]
+        },
+        "camera360": {
+          "value": false,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 15 (1-based), row: 360° Camera (HD); column: 49kWh EXCITE"
+            }
+          ]
+        },
+        "reverseCamera": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 15 (1-based), row: Reverse Camera; column: 49kWh EXCITE"
+            }
+          ]
+        },
+        "acc": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 15 (1-based), row: Adaptive Cruise Control (ACC); column: 49kWh EXCITE"
+            }
+          ]
+        },
+        "aeb": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 15 (1-based), row: Autonomous Emergency Braking (AEB); column: 49kWh EXCITE"
+            }
+          ]
+        },
+        "blindSpotDetection": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 15 (1-based), row: Blind Spot Detection (BSD); column: 49kWh EXCITE"
+            }
+          ]
+        },
+        "rearCrossTrafficBraking": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 15 (1-based), row: Rear Cross Traffic Braking (RCTB); column: 49kWh EXCITE"
+            }
+          ]
+        },
+        "wirelessPhoneCharging": {
+          "value": false,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 16 (1-based), row: Wireless Phone Charger; column: 49kWh EXCITE"
+            }
+          ]
+        },
+        "speakers": {
+          "value": 4,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 16 (1-based), row: 6 Speakers / 4 Speakers; column: 49kWh EXCITE"
+            }
+          ]
+        },
+        "infotainmentInch": {
+          "value": 12.8,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 16 (1-based), row: 12.8\" Infotainment Screen; column: 49kWh EXCITE"
+            }
+          ]
+        },
+        "wirelessCarPlayAndroidAuto": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 16 (1-based), row: Wireless & Wired Apple CarPlay® and Android Auto™; column: 49kWh EXCITE"
+            }
+          ]
+        },
+        "drive": {
+          "value": "RWD",
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 8 (1-based), row: Excite / Essence model description: Rear Wheel Drive"
+            }
+          ]
+        }
+      },
+      "notes": []
+    },
+    {
+      "id": "mgs5-my25-excite-62",
+      "brand": "MG",
+      "model": "MGS5 EV",
+      "trim": "Excite 62",
+      "formalMY": {
+        "value": "MY25",
+        "evidence": [
+          {
+            "sourceId": "mgs5-my25-brochure",
+            "locator": "PDF page 17 (1-based), row: publication footer"
+          }
+        ]
+      },
+      "documentEpoch": {
+        "value": "February 2025",
+        "evidence": [
+          {
+            "sourceId": "mgs5-my25-brochure",
+            "locator": "PDF page 17 (1-based), row: publication footer"
+          }
+        ]
+      },
+      "productionEpoch": null,
+      "facts": {
+        "batteryKWh": {
+          "value": 62,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Battery Capacity (kWh); column: 62kWh EXCITE"
+            }
+          ]
+        },
+        "batteryChemistry": {
+          "value": "LFP",
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Battery Type; column: 62kWh EXCITE"
+            }
+          ]
+        },
+        "motorPowerKW": {
+          "value": 125,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Motor Maximum Power (kW); column: 62kWh EXCITE"
+            }
+          ]
+        },
+        "motorTorqueNm": {
+          "value": 250,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Motor Maximum Torque (Nm); column: 62kWh EXCITE"
+            }
+          ]
+        },
+        "zeroTo100Seconds": {
+          "value": 8.2,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: 0-100km/h (seconds); column: 62kWh EXCITE"
+            }
+          ]
+        },
+        "wltpCombinedKm": {
+          "value": 430,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Driving Range: WLTP Combined Cycle (km); column: 62kWh EXCITE"
+            }
+          ]
+        },
+        "acOnboardKW": {
+          "value": 6.6,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: On-Board Charging Unit (kW); column: 62kWh EXCITE"
+            }
+          ]
+        },
+        "dcPeakKW": {
+          "value": 150,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Maximum DC Charging Power (kW); column: 62kWh EXCITE"
+            }
+          ]
+        },
+        "dcChargeMinutes": {
+          "value": 19.3,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Estimated CCS Public Charge Time (30% to 80%) / Mins @25°C; column: 62kWh EXCITE"
+            }
+          ]
+        },
+        "dcChargeSOCPercent": {
+          "value": [
+            30,
+            80
+          ],
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Estimated CCS Public Charge Time (30% to 80%) / Mins @25°C; column: 62kWh EXCITE"
+            }
+          ]
+        },
+        "chargingPort": {
+          "value": "CCS Type 2",
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Charger Connection Type; column: 62kWh EXCITE"
+            }
+          ]
+        },
+        "lengthMM": {
+          "value": 4476,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Length (mm); column: 62kWh EXCITE"
+            }
+          ]
+        },
+        "widthMM": {
+          "value": 1849,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Width (mm); column: 62kWh EXCITE"
+            }
+          ]
+        },
+        "heightMM": {
+          "value": 1621,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Height (mm); column: 62kWh EXCITE"
+            }
+          ]
+        },
+        "wheelbaseMM": {
+          "value": 2730,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Wheelbase (mm); column: 62kWh EXCITE"
+            }
+          ]
+        },
+        "bootSeatsUpL": {
+          "value": 453,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Boot Volume Seats In Place (L); column: 62kWh EXCITE"
+            }
+          ]
+        },
+        "bootSeatsFoldedL": {
+          "value": 1441,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Boot Volume Seats Folded (L); column: 62kWh EXCITE"
+            }
+          ]
+        },
+        "tareMassKg": {
+          "value": 1705,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Tare Mass (kg); column: 62kWh EXCITE"
+            }
+          ]
+        },
+        "gvmKg": {
+          "value": 2150,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Gross Vehicle Mass (kg); column: 62kWh EXCITE"
+            }
+          ]
+        },
+        "towBrakedKg": {
+          "value": 750,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Maximum Towing Weight Braked (kg); column: 62kWh EXCITE"
+            }
+          ]
+        },
+        "towUnbrakedKg": {
+          "value": 750,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Maximum Towing Weight Unbraked (kg); column: 62kWh EXCITE"
+            }
+          ]
+        },
+        "tyres": {
+          "value": "215/60R17",
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Tyre Size; column: 62kWh EXCITE"
+            }
+          ]
+        },
+        "heatedFrontSeats": {
+          "value": false,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Heated Front Seats; column: 62kWh EXCITE"
+            }
+          ]
+        },
+        "heatedSteeringWheel": {
+          "value": false,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Heated Steering Wheel; column: 62kWh EXCITE"
+            }
+          ]
+        },
+        "powerTailgateKick": {
+          "value": false,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Power Tailgate with One Foot Kick; column: 62kWh EXCITE"
+            }
+          ]
+        },
+        "driverPowerSeat": {
+          "value": false,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Driver’s 6-way Electric Adjustable Seat; column: 62kWh EXCITE"
+            }
+          ]
+        },
+        "v2l": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Vehicle to Load Charging Function (V2L); column: 62kWh EXCITE"
+            }
+          ]
+        },
+        "preconditioningNavigation": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Charging Pre-Heating (with Related to Navigation Destination of Charger); column: 62kWh EXCITE"
+            }
+          ]
+        },
+        "panoramicSunroof": {
+          "value": false,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 15 (1-based), row: Electronic Panoramic Sunroof; column: 62kWh EXCITE"
+            }
+          ]
+        },
+        "camera360": {
+          "value": false,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 15 (1-based), row: 360° Camera (HD); column: 62kWh EXCITE"
+            }
+          ]
+        },
+        "reverseCamera": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 15 (1-based), row: Reverse Camera; column: 62kWh EXCITE"
+            }
+          ]
+        },
+        "acc": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 15 (1-based), row: Adaptive Cruise Control (ACC); column: 62kWh EXCITE"
+            }
+          ]
+        },
+        "aeb": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 15 (1-based), row: Autonomous Emergency Braking (AEB); column: 62kWh EXCITE"
+            }
+          ]
+        },
+        "blindSpotDetection": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 15 (1-based), row: Blind Spot Detection (BSD); column: 62kWh EXCITE"
+            }
+          ]
+        },
+        "rearCrossTrafficBraking": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 15 (1-based), row: Rear Cross Traffic Braking (RCTB); column: 62kWh EXCITE"
+            }
+          ]
+        },
+        "wirelessPhoneCharging": {
+          "value": false,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 16 (1-based), row: Wireless Phone Charger; column: 62kWh EXCITE"
+            }
+          ]
+        },
+        "speakers": {
+          "value": 4,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 16 (1-based), row: 6 Speakers / 4 Speakers; column: 62kWh EXCITE"
+            }
+          ]
+        },
+        "infotainmentInch": {
+          "value": 12.8,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 16 (1-based), row: 12.8\" Infotainment Screen; column: 62kWh EXCITE"
+            }
+          ]
+        },
+        "wirelessCarPlayAndroidAuto": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 16 (1-based), row: Wireless & Wired Apple CarPlay® and Android Auto™; column: 62kWh EXCITE"
+            }
+          ]
+        },
+        "drive": {
+          "value": "RWD",
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 8 (1-based), row: Excite / Essence model description: Rear Wheel Drive"
+            }
+          ]
+        }
+      },
+      "notes": []
+    },
+    {
+      "id": "mgs5-my25-essence-49",
+      "brand": "MG",
+      "model": "MGS5 EV",
+      "trim": "Essence 49",
+      "formalMY": {
+        "value": "MY25",
+        "evidence": [
+          {
+            "sourceId": "mgs5-my25-brochure",
+            "locator": "PDF page 17 (1-based), row: publication footer"
+          }
+        ]
+      },
+      "documentEpoch": {
+        "value": "February 2025",
+        "evidence": [
+          {
+            "sourceId": "mgs5-my25-brochure",
+            "locator": "PDF page 17 (1-based), row: publication footer"
+          }
+        ]
+      },
+      "productionEpoch": null,
+      "facts": {
+        "batteryKWh": {
+          "value": 49,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Battery Capacity (kWh); column: 49kWh ESSENCE"
+            }
+          ]
+        },
+        "batteryChemistry": {
+          "value": "LFP",
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Battery Type; column: 49kWh ESSENCE"
+            }
+          ]
+        },
+        "motorPowerKW": {
+          "value": 125,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Motor Maximum Power (kW); column: 49kWh ESSENCE"
+            }
+          ]
+        },
+        "motorTorqueNm": {
+          "value": 250,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Motor Maximum Torque (Nm); column: 49kWh ESSENCE"
+            }
+          ]
+        },
+        "zeroTo100Seconds": {
+          "value": 8.2,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: 0-100km/h (seconds); column: 49kWh ESSENCE"
+            }
+          ]
+        },
+        "wltpCombinedKm": {
+          "value": 335,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Driving Range: WLTP Combined Cycle (km); column: 49kWh ESSENCE"
+            }
+          ]
+        },
+        "acOnboardKW": {
+          "value": 6.6,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: On-Board Charging Unit (kW); column: 49kWh ESSENCE"
+            }
+          ]
+        },
+        "dcPeakKW": {
+          "value": 120,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Maximum DC Charging Power (kW); column: 49kWh ESSENCE"
+            }
+          ]
+        },
+        "dcChargeMinutes": {
+          "value": 19,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Estimated CCS Public Charge Time (30% to 80%) / Mins @25°C; column: 49kWh ESSENCE"
+            }
+          ]
+        },
+        "dcChargeSOCPercent": {
+          "value": [
+            30,
+            80
+          ],
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Estimated CCS Public Charge Time (30% to 80%) / Mins @25°C; column: 49kWh ESSENCE"
+            }
+          ]
+        },
+        "chargingPort": {
+          "value": "CCS Type 2",
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Charger Connection Type; column: 49kWh ESSENCE"
+            }
+          ]
+        },
+        "lengthMM": {
+          "value": 4476,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Length (mm); column: 49kWh ESSENCE"
+            }
+          ]
+        },
+        "widthMM": {
+          "value": 1849,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Width (mm); column: 49kWh ESSENCE"
+            }
+          ]
+        },
+        "heightMM": {
+          "value": 1621,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Height (mm); column: 49kWh ESSENCE"
+            }
+          ]
+        },
+        "wheelbaseMM": {
+          "value": 2730,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Wheelbase (mm); column: 49kWh ESSENCE"
+            }
+          ]
+        },
+        "bootSeatsUpL": {
+          "value": 453,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Boot Volume Seats In Place (L); column: 49kWh ESSENCE"
+            }
+          ]
+        },
+        "bootSeatsFoldedL": {
+          "value": 1441,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Boot Volume Seats Folded (L); column: 49kWh ESSENCE"
+            }
+          ]
+        },
+        "tareMassKg": {
+          "value": 1680,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Tare Mass (kg); column: 49kWh ESSENCE"
+            }
+          ]
+        },
+        "gvmKg": {
+          "value": 2125,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Gross Vehicle Mass (kg); column: 49kWh ESSENCE"
+            }
+          ]
+        },
+        "towBrakedKg": {
+          "value": 750,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Maximum Towing Weight Braked (kg); column: 49kWh ESSENCE"
+            }
+          ]
+        },
+        "towUnbrakedKg": {
+          "value": 750,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Maximum Towing Weight Unbraked (kg); column: 49kWh ESSENCE"
+            }
+          ]
+        },
+        "tyres": {
+          "value": "225/55R18",
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Tyre Size; column: 49kWh ESSENCE"
+            }
+          ]
+        },
+        "heatedFrontSeats": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Heated Front Seats; column: 49kWh ESSENCE"
+            }
+          ]
+        },
+        "heatedSteeringWheel": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Heated Steering Wheel; column: 49kWh ESSENCE"
+            }
+          ]
+        },
+        "powerTailgateKick": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Power Tailgate with One Foot Kick; column: 49kWh ESSENCE"
+            }
+          ]
+        },
+        "driverPowerSeat": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Driver’s 6-way Electric Adjustable Seat; column: 49kWh ESSENCE"
+            }
+          ]
+        },
+        "v2l": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Vehicle to Load Charging Function (V2L); column: 49kWh ESSENCE"
+            }
+          ]
+        },
+        "preconditioningNavigation": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Charging Pre-Heating (with Related to Navigation Destination of Charger); column: 49kWh ESSENCE"
+            }
+          ]
+        },
+        "panoramicSunroof": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 15 (1-based), row: Electronic Panoramic Sunroof; column: 49kWh ESSENCE"
+            }
+          ]
+        },
+        "camera360": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 15 (1-based), row: 360° Camera (HD); column: 49kWh ESSENCE"
+            }
+          ]
+        },
+        "reverseCamera": {
+          "value": false,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 15 (1-based), row: Reverse Camera; column: 49kWh ESSENCE"
+            }
+          ]
+        },
+        "acc": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 15 (1-based), row: Adaptive Cruise Control (ACC); column: 49kWh ESSENCE"
+            }
+          ]
+        },
+        "aeb": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 15 (1-based), row: Autonomous Emergency Braking (AEB); column: 49kWh ESSENCE"
+            }
+          ]
+        },
+        "blindSpotDetection": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 15 (1-based), row: Blind Spot Detection (BSD); column: 49kWh ESSENCE"
+            }
+          ]
+        },
+        "rearCrossTrafficBraking": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 15 (1-based), row: Rear Cross Traffic Braking (RCTB); column: 49kWh ESSENCE"
+            }
+          ]
+        },
+        "wirelessPhoneCharging": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 16 (1-based), row: Wireless Phone Charger; column: 49kWh ESSENCE"
+            }
+          ]
+        },
+        "speakers": {
+          "value": 6,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 16 (1-based), row: 6 Speakers / 4 Speakers; column: 49kWh ESSENCE"
+            }
+          ]
+        },
+        "infotainmentInch": {
+          "value": 12.8,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 16 (1-based), row: 12.8\" Infotainment Screen; column: 49kWh ESSENCE"
+            }
+          ]
+        },
+        "wirelessCarPlayAndroidAuto": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 16 (1-based), row: Wireless & Wired Apple CarPlay® and Android Auto™; column: 49kWh ESSENCE"
+            }
+          ]
+        },
+        "drive": {
+          "value": "RWD",
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 9 (1-based), row: Excite / Essence model description: Rear Wheel Drive"
+            }
+          ]
+        }
+      },
+      "notes": []
+    },
+    {
+      "id": "mgs5-my25-essence-62",
+      "brand": "MG",
+      "model": "MGS5 EV",
+      "trim": "Essence 62",
+      "formalMY": {
+        "value": "MY25",
+        "evidence": [
+          {
+            "sourceId": "mgs5-my25-brochure",
+            "locator": "PDF page 17 (1-based), row: publication footer"
+          }
+        ]
+      },
+      "documentEpoch": {
+        "value": "February 2025",
+        "evidence": [
+          {
+            "sourceId": "mgs5-my25-brochure",
+            "locator": "PDF page 17 (1-based), row: publication footer"
+          }
+        ]
+      },
+      "productionEpoch": null,
+      "facts": {
+        "batteryKWh": {
+          "value": 62,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Battery Capacity (kWh); column: 62kWh ESSENCE"
+            }
+          ]
+        },
+        "batteryChemistry": {
+          "value": "LFP",
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Battery Type; column: 62kWh ESSENCE"
+            }
+          ]
+        },
+        "motorPowerKW": {
+          "value": 125,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Motor Maximum Power (kW); column: 62kWh ESSENCE"
+            }
+          ]
+        },
+        "motorTorqueNm": {
+          "value": 250,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Motor Maximum Torque (Nm); column: 62kWh ESSENCE"
+            }
+          ]
+        },
+        "zeroTo100Seconds": {
+          "value": 8.6,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: 0-100km/h (seconds); column: 62kWh ESSENCE"
+            }
+          ]
+        },
+        "wltpCombinedKm": {
+          "value": 425,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Driving Range: WLTP Combined Cycle (km); column: 62kWh ESSENCE"
+            }
+          ]
+        },
+        "acOnboardKW": {
+          "value": 6.6,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: On-Board Charging Unit (kW); column: 62kWh ESSENCE"
+            }
+          ]
+        },
+        "dcPeakKW": {
+          "value": 150,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Maximum DC Charging Power (kW); column: 62kWh ESSENCE"
+            }
+          ]
+        },
+        "dcChargeMinutes": {
+          "value": 19.3,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Estimated CCS Public Charge Time (30% to 80%) / Mins @25°C; column: 62kWh ESSENCE"
+            }
+          ]
+        },
+        "dcChargeSOCPercent": {
+          "value": [
+            30,
+            80
+          ],
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Estimated CCS Public Charge Time (30% to 80%) / Mins @25°C; column: 62kWh ESSENCE"
+            }
+          ]
+        },
+        "chargingPort": {
+          "value": "CCS Type 2",
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Charger Connection Type; column: 62kWh ESSENCE"
+            }
+          ]
+        },
+        "lengthMM": {
+          "value": 4476,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Length (mm); column: 62kWh ESSENCE"
+            }
+          ]
+        },
+        "widthMM": {
+          "value": 1849,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Width (mm); column: 62kWh ESSENCE"
+            }
+          ]
+        },
+        "heightMM": {
+          "value": 1621,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Height (mm); column: 62kWh ESSENCE"
+            }
+          ]
+        },
+        "wheelbaseMM": {
+          "value": 2730,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Wheelbase (mm); column: 62kWh ESSENCE"
+            }
+          ]
+        },
+        "bootSeatsUpL": {
+          "value": 453,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Boot Volume Seats In Place (L); column: 62kWh ESSENCE"
+            }
+          ]
+        },
+        "bootSeatsFoldedL": {
+          "value": 1441,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Boot Volume Seats Folded (L); column: 62kWh ESSENCE"
+            }
+          ]
+        },
+        "tareMassKg": {
+          "value": 1755,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Tare Mass (kg); column: 62kWh ESSENCE"
+            }
+          ]
+        },
+        "gvmKg": {
+          "value": 2200,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Gross Vehicle Mass (kg); column: 62kWh ESSENCE"
+            }
+          ]
+        },
+        "towBrakedKg": {
+          "value": 750,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Maximum Towing Weight Braked (kg); column: 62kWh ESSENCE"
+            }
+          ]
+        },
+        "towUnbrakedKg": {
+          "value": 750,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Maximum Towing Weight Unbraked (kg); column: 62kWh ESSENCE"
+            }
+          ]
+        },
+        "tyres": {
+          "value": "225/55R18",
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Tyre Size; column: 62kWh ESSENCE"
+            }
+          ]
+        },
+        "heatedFrontSeats": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Heated Front Seats; column: 62kWh ESSENCE"
+            }
+          ]
+        },
+        "heatedSteeringWheel": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Heated Steering Wheel; column: 62kWh ESSENCE"
+            }
+          ]
+        },
+        "powerTailgateKick": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Power Tailgate with One Foot Kick; column: 62kWh ESSENCE"
+            }
+          ]
+        },
+        "driverPowerSeat": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Driver’s 6-way Electric Adjustable Seat; column: 62kWh ESSENCE"
+            }
+          ]
+        },
+        "v2l": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Vehicle to Load Charging Function (V2L); column: 62kWh ESSENCE"
+            }
+          ]
+        },
+        "preconditioningNavigation": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 14 (1-based), row: Charging Pre-Heating (with Related to Navigation Destination of Charger); column: 62kWh ESSENCE"
+            }
+          ]
+        },
+        "panoramicSunroof": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 15 (1-based), row: Electronic Panoramic Sunroof; column: 62kWh ESSENCE"
+            }
+          ]
+        },
+        "camera360": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 15 (1-based), row: 360° Camera (HD); column: 62kWh ESSENCE"
+            }
+          ]
+        },
+        "reverseCamera": {
+          "value": false,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 15 (1-based), row: Reverse Camera; column: 62kWh ESSENCE"
+            }
+          ]
+        },
+        "acc": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 15 (1-based), row: Adaptive Cruise Control (ACC); column: 62kWh ESSENCE"
+            }
+          ]
+        },
+        "aeb": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 15 (1-based), row: Autonomous Emergency Braking (AEB); column: 62kWh ESSENCE"
+            }
+          ]
+        },
+        "blindSpotDetection": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 15 (1-based), row: Blind Spot Detection (BSD); column: 62kWh ESSENCE"
+            }
+          ]
+        },
+        "rearCrossTrafficBraking": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 15 (1-based), row: Rear Cross Traffic Braking (RCTB); column: 62kWh ESSENCE"
+            }
+          ]
+        },
+        "wirelessPhoneCharging": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 16 (1-based), row: Wireless Phone Charger; column: 62kWh ESSENCE"
+            }
+          ]
+        },
+        "speakers": {
+          "value": 6,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 16 (1-based), row: 6 Speakers / 4 Speakers; column: 62kWh ESSENCE"
+            }
+          ]
+        },
+        "infotainmentInch": {
+          "value": 12.8,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 16 (1-based), row: 12.8\" Infotainment Screen; column: 62kWh ESSENCE"
+            }
+          ]
+        },
+        "wirelessCarPlayAndroidAuto": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 16 (1-based), row: Wireless & Wired Apple CarPlay® and Android Auto™; column: 62kWh ESSENCE"
+            }
+          ]
+        },
+        "drive": {
+          "value": "RWD",
+          "evidence": [
+            {
+              "sourceId": "mgs5-my25-brochure",
+              "locator": "PDF page 9 (1-based), row: Excite / Essence model description: Rear Wheel Drive"
+            }
+          ]
+        }
+      },
+      "notes": [
+        "Production/VIN cutoff is not published in this source. Do not infer it from publication month.",
+        "Current June 2026 Essence 62 document has 150 kW/350 Nm/450 km WLTP; this MY25 document has 125 kW/250 Nm/425 km WLTP. Keep separate."
+      ]
+    },
+    {
+      "id": "zs-ev-my23-excite",
+      "brand": "MG",
+      "model": "ZS EV",
+      "trim": "Excite",
+      "formalMY": {
+        "value": "MY23",
+        "evidence": [
+          {
+            "sourceId": "zs-my23-au-specs",
+            "locator": "PDF page 18 (1-based), row: publication footer"
+          }
+        ]
+      },
+      "documentEpoch": {
+        "value": "March 2023",
+        "evidence": [
+          {
+            "sourceId": "zs-my23-au-specs",
+            "locator": "PDF page 18 (1-based), row: publication footer"
+          }
+        ]
+      },
+      "productionEpoch": null,
+      "facts": {
+        "batteryNominalKWh": {
+          "value": 51.1,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: Battery Capacity (nominal kWh); column: ZS EV - EXCITE"
+            }
+          ]
+        },
+        "motorPowerKW": {
+          "value": 130,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: Maximum Power (kW); column: ZS EV - EXCITE"
+            }
+          ]
+        },
+        "motorTorqueNm": {
+          "value": 280,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: Maximum Torque (Nm); column: ZS EV - EXCITE"
+            }
+          ]
+        },
+        "zeroTo100Seconds": {
+          "value": 8.2,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: 0-100kph (seconds); column: ZS EV - EXCITE"
+            }
+          ]
+        },
+        "wltpCombinedKm": {
+          "value": 320,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: Driving Range: WLTP Combined Cycle (km); column: ZS EV - EXCITE"
+            }
+          ]
+        },
+        "acOnboardKW": {
+          "value": 11,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: CCU Combined Charging Unit - On Board Charger (ThreePhase); column: ZS EV - EXCITE"
+            }
+          ]
+        },
+        "chargingPort": {
+          "value": "CCS Type 2",
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: Charger Connection Type; column: ZS EV - EXCITE"
+            }
+          ]
+        },
+        "chargeAt50KWMinutesTo80": {
+          "value": 54,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: Estimated 50kW CCS public Charge Time (to 80%) / mins; column: ZS EV - EXCITE"
+            }
+          ]
+        },
+        "lengthMM": {
+          "value": 4323,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: Length (mm); column: ZS EV - EXCITE"
+            }
+          ]
+        },
+        "widthMM": {
+          "value": 1809,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: Width (mm); column: ZS EV - EXCITE"
+            }
+          ]
+        },
+        "heightMM": {
+          "value": 1625,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: Height (mm); column: ZS EV - EXCITE"
+            }
+          ]
+        },
+        "wheelbaseMM": {
+          "value": 2585,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: Wheelbase (mm); column: ZS EV - EXCITE"
+            }
+          ]
+        },
+        "bootSeatsUpL": {
+          "value": 359,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: Boot Volume with Seats in Place (L); column: ZS EV - EXCITE"
+            }
+          ]
+        },
+        "bootSeatsFoldedL": {
+          "value": 1187,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: Boot Volume with Seats Folded (L); column: ZS EV - EXCITE"
+            }
+          ]
+        },
+        "towBrakedKg": {
+          "value": 500,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: Maximum braked trailer towing weight (kg); column: ZS EV - EXCITE"
+            }
+          ]
+        },
+        "towUnbrakedKg": {
+          "value": 500,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: Maximum unbraked trailer towing weight (kg); column: ZS EV - EXCITE"
+            }
+          ]
+        },
+        "batteryChemistry": {
+          "value": null,
+          "status": "not established by cited exact technical table"
+        },
+        "dcPeakKW": {
+          "value": null,
+          "status": "50 kW charger test is not vehicle peak acceptance"
+        },
+        "dcStartSOCPercent": {
+          "value": null,
+          "status": "source says to 80%, does not state starting SOC"
+        }
+      },
+      "notes": [
+        "MG Australia authored document hosted by press mirror; actual Australian footer visually/textually checked. No dealer generic template specifications used.",
+        "MY23 51.1 kWh nominal versus MY22 50.3 kWh label is preserved as documentary difference; a hardware/capacity change is not independently established."
+      ]
+    },
+    {
+      "id": "zs-ev-my23-essence",
+      "brand": "MG",
+      "model": "ZS EV",
+      "trim": "Essence",
+      "formalMY": {
+        "value": "MY23",
+        "evidence": [
+          {
+            "sourceId": "zs-my23-au-specs",
+            "locator": "PDF page 18 (1-based), row: publication footer"
+          }
+        ]
+      },
+      "documentEpoch": {
+        "value": "March 2023",
+        "evidence": [
+          {
+            "sourceId": "zs-my23-au-specs",
+            "locator": "PDF page 18 (1-based), row: publication footer"
+          }
+        ]
+      },
+      "productionEpoch": null,
+      "facts": {
+        "batteryNominalKWh": {
+          "value": 51.1,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: Battery Capacity (nominal kWh); column: ZS EV - ESSENCE"
+            }
+          ]
+        },
+        "motorPowerKW": {
+          "value": 130,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: Maximum Power (kW); column: ZS EV - ESSENCE"
+            }
+          ]
+        },
+        "motorTorqueNm": {
+          "value": 280,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: Maximum Torque (Nm); column: ZS EV - ESSENCE"
+            }
+          ]
+        },
+        "zeroTo100Seconds": {
+          "value": 8.2,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: 0-100kph (seconds); column: ZS EV - ESSENCE"
+            }
+          ]
+        },
+        "wltpCombinedKm": {
+          "value": 320,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: Driving Range: WLTP Combined Cycle (km); column: ZS EV - ESSENCE"
+            }
+          ]
+        },
+        "acOnboardKW": {
+          "value": 11,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: CCU Combined Charging Unit - On Board Charger (ThreePhase); column: ZS EV - ESSENCE"
+            }
+          ]
+        },
+        "chargingPort": {
+          "value": "CCS Type 2",
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: Charger Connection Type; column: ZS EV - ESSENCE"
+            }
+          ]
+        },
+        "chargeAt50KWMinutesTo80": {
+          "value": 54,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: Estimated 50kW CCS public Charge Time (to 80%) / mins; column: ZS EV - ESSENCE"
+            }
+          ]
+        },
+        "lengthMM": {
+          "value": 4323,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: Length (mm); column: ZS EV - ESSENCE"
+            }
+          ]
+        },
+        "widthMM": {
+          "value": 1809,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: Width (mm); column: ZS EV - ESSENCE"
+            }
+          ]
+        },
+        "heightMM": {
+          "value": 1649,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: Height (mm); column: ZS EV - ESSENCE"
+            }
+          ]
+        },
+        "wheelbaseMM": {
+          "value": 2585,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: Wheelbase (mm); column: ZS EV - ESSENCE"
+            }
+          ]
+        },
+        "bootSeatsUpL": {
+          "value": 359,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: Boot Volume with Seats in Place (L); column: ZS EV - ESSENCE"
+            }
+          ]
+        },
+        "bootSeatsFoldedL": {
+          "value": 1187,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: Boot Volume with Seats Folded (L); column: ZS EV - ESSENCE"
+            }
+          ]
+        },
+        "towBrakedKg": {
+          "value": 500,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: Maximum braked trailer towing weight (kg); column: ZS EV - ESSENCE"
+            }
+          ]
+        },
+        "towUnbrakedKg": {
+          "value": 500,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: Maximum unbraked trailer towing weight (kg); column: ZS EV - ESSENCE"
+            }
+          ]
+        },
+        "batteryChemistry": {
+          "value": null,
+          "status": "not established by cited exact technical table"
+        },
+        "dcPeakKW": {
+          "value": null,
+          "status": "50 kW charger test is not vehicle peak acceptance"
+        },
+        "dcStartSOCPercent": {
+          "value": null,
+          "status": "source says to 80%, does not state starting SOC"
+        }
+      },
+      "notes": [
+        "MG Australia authored document hosted by press mirror; actual Australian footer visually/textually checked. No dealer generic template specifications used.",
+        "MY23 51.1 kWh nominal versus MY22 50.3 kWh label is preserved as documentary difference; a hardware/capacity change is not independently established."
+      ]
+    },
+    {
+      "id": "zs-ev-my23-long-range",
+      "brand": "MG",
+      "model": "ZS EV",
+      "trim": "Long Range",
+      "formalMY": {
+        "value": "MY23",
+        "evidence": [
+          {
+            "sourceId": "zs-my23-au-specs",
+            "locator": "PDF page 18 (1-based), row: publication footer"
+          }
+        ]
+      },
+      "documentEpoch": {
+        "value": "March 2023",
+        "evidence": [
+          {
+            "sourceId": "zs-my23-au-specs",
+            "locator": "PDF page 18 (1-based), row: publication footer"
+          }
+        ]
+      },
+      "productionEpoch": null,
+      "facts": {
+        "batteryNominalKWh": {
+          "value": 72.6,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: Battery Capacity (nominal kWh); column: ZS EV - LONG RANGE"
+            }
+          ]
+        },
+        "motorPowerKW": {
+          "value": 115,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: Maximum Power (kW); column: ZS EV - LONG RANGE"
+            }
+          ]
+        },
+        "motorTorqueNm": {
+          "value": 280,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: Maximum Torque (Nm); column: ZS EV - LONG RANGE"
+            }
+          ]
+        },
+        "zeroTo100Seconds": {
+          "value": 8.5,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: 0-100kph (seconds); column: ZS EV - LONG RANGE"
+            }
+          ]
+        },
+        "wltpCombinedKm": {
+          "value": 440,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: Driving Range: WLTP Combined Cycle (km); column: ZS EV - LONG RANGE"
+            }
+          ]
+        },
+        "acOnboardKW": {
+          "value": 11,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: CCU Combined Charging Unit - On Board Charger (ThreePhase); column: ZS EV - LONG RANGE"
+            }
+          ]
+        },
+        "chargingPort": {
+          "value": "CCS Type 2",
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: Charger Connection Type; column: ZS EV - LONG RANGE"
+            }
+          ]
+        },
+        "chargeAt50KWMinutesTo80": {
+          "value": 63,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: Estimated 50kW CCS public Charge Time (to 80%) / mins; column: ZS EV - LONG RANGE"
+            }
+          ]
+        },
+        "lengthMM": {
+          "value": 4323,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: Length (mm); column: ZS EV - LONG RANGE"
+            }
+          ]
+        },
+        "widthMM": {
+          "value": 1809,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: Width (mm); column: ZS EV - LONG RANGE"
+            }
+          ]
+        },
+        "heightMM": {
+          "value": 1649,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: Height (mm); column: ZS EV - LONG RANGE"
+            }
+          ]
+        },
+        "wheelbaseMM": {
+          "value": 2585,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: Wheelbase (mm); column: ZS EV - LONG RANGE"
+            }
+          ]
+        },
+        "bootSeatsUpL": {
+          "value": 359,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: Boot Volume with Seats in Place (L); column: ZS EV - LONG RANGE"
+            }
+          ]
+        },
+        "bootSeatsFoldedL": {
+          "value": 1187,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: Boot Volume with Seats Folded (L); column: ZS EV - LONG RANGE"
+            }
+          ]
+        },
+        "towBrakedKg": {
+          "value": 500,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: Maximum braked trailer towing weight (kg); column: ZS EV - LONG RANGE"
+            }
+          ]
+        },
+        "towUnbrakedKg": {
+          "value": 500,
+          "evidence": [
+            {
+              "sourceId": "zs-my23-au-specs",
+              "locator": "PDF page 13 (1-based), row: Maximum unbraked trailer towing weight (kg); column: ZS EV - LONG RANGE"
+            }
+          ]
+        },
+        "batteryChemistry": {
+          "value": null,
+          "status": "not established by cited exact technical table"
+        },
+        "dcPeakKW": {
+          "value": null,
+          "status": "50 kW charger test is not vehicle peak acceptance"
+        },
+        "dcStartSOCPercent": {
+          "value": null,
+          "status": "source says to 80%, does not state starting SOC"
+        }
+      },
+      "notes": [
+        "MG Australia authored document hosted by press mirror; actual Australian footer visually/textually checked. No dealer generic template specifications used.",
+        "MY23 51.1 kWh nominal versus MY22 50.3 kWh label is preserved as documentary difference; a hardware/capacity change is not independently established."
+      ]
+    },
+    {
+      "id": "zs-ev-my22-excite",
+      "brand": "MG",
+      "model": "ZS EV",
+      "trim": "Excite",
+      "formalMY": {
+        "value": "MY22",
+        "evidence": [
+          {
+            "sourceId": "zs-brochure-au-early",
+            "locator": "PDF page 15 (1-based), row: publication footer"
+          }
+        ]
+      },
+      "documentEpoch": {
+        "value": "September 2022",
+        "evidence": [
+          {
+            "sourceId": "zs-brochure-au-early",
+            "locator": "PDF page 15 (1-based), row: publication footer"
+          }
+        ]
+      },
+      "productionEpoch": null,
+      "facts": {
+        "batteryReportedKWh": {
+          "value": 50.3,
+          "evidence": [
+            {
+              "sourceId": "zs-brochure-au-early",
+              "locator": "PDF page 13 (1-based), row: Battery Capacity, kWh; column: EXCITE (merged technical column)"
+            }
+          ]
+        },
+        "motorPowerKW": {
+          "value": 130,
+          "evidence": [
+            {
+              "sourceId": "zs-brochure-au-early",
+              "locator": "PDF page 13 (1-based), row: Maximum Power (kW); column: EXCITE (merged technical column)"
+            }
+          ]
+        },
+        "motorTorqueNm": {
+          "value": 280,
+          "evidence": [
+            {
+              "sourceId": "zs-brochure-au-early",
+              "locator": "PDF page 13 (1-based), row: Maximum Torque (Nm); column: EXCITE (merged technical column)"
+            }
+          ]
+        },
+        "wltpCombinedKm": {
+          "value": 320,
+          "evidence": [
+            {
+              "sourceId": "zs-brochure-au-early",
+              "locator": "PDF page 13 (1-based), row: Driving Range: WLTP Combined Cycle (km); column: EXCITE (merged technical column)"
+            }
+          ]
+        }
+      },
+      "notes": [
+        "50.3 kWh is as printed; gross/usable distinction not supplied. Do not equate MY22 and MY23 solely from trim name. AC charge times at different charger ratings do not establish onboard maximum."
+      ]
+    },
+    {
+      "id": "zs-ev-my22-essence",
+      "brand": "MG",
+      "model": "ZS EV",
+      "trim": "Essence",
+      "formalMY": {
+        "value": "MY22",
+        "evidence": [
+          {
+            "sourceId": "zs-brochure-au-early",
+            "locator": "PDF page 15 (1-based), row: publication footer"
+          }
+        ]
+      },
+      "documentEpoch": {
+        "value": "September 2022",
+        "evidence": [
+          {
+            "sourceId": "zs-brochure-au-early",
+            "locator": "PDF page 15 (1-based), row: publication footer"
+          }
+        ]
+      },
+      "productionEpoch": null,
+      "facts": {
+        "batteryReportedKWh": {
+          "value": 50.3,
+          "evidence": [
+            {
+              "sourceId": "zs-brochure-au-early",
+              "locator": "PDF page 13 (1-based), row: Battery Capacity, kWh; column: ESSENCE (merged technical column)"
+            }
+          ]
+        },
+        "motorPowerKW": {
+          "value": 130,
+          "evidence": [
+            {
+              "sourceId": "zs-brochure-au-early",
+              "locator": "PDF page 13 (1-based), row: Maximum Power (kW); column: ESSENCE (merged technical column)"
+            }
+          ]
+        },
+        "motorTorqueNm": {
+          "value": 280,
+          "evidence": [
+            {
+              "sourceId": "zs-brochure-au-early",
+              "locator": "PDF page 13 (1-based), row: Maximum Torque (Nm); column: ESSENCE (merged technical column)"
+            }
+          ]
+        },
+        "wltpCombinedKm": {
+          "value": 320,
+          "evidence": [
+            {
+              "sourceId": "zs-brochure-au-early",
+              "locator": "PDF page 13 (1-based), row: Driving Range: WLTP Combined Cycle (km); column: ESSENCE (merged technical column)"
+            }
+          ]
+        }
+      },
+      "notes": [
+        "50.3 kWh is as printed; gross/usable distinction not supplied. Do not equate MY22 and MY23 solely from trim name. AC charge times at different charger ratings do not establish onboard maximum."
+      ]
+    },
+    {
+      "id": "cyberster-my24-5-awd",
+      "brand": "MG",
+      "model": "Cyberster",
+      "trim": "AWD",
+      "formalMY": {
+        "value": "MY24.5",
+        "evidence": [
+          {
+            "sourceId": "cyberster-my245-brochure",
+            "locator": "PDF page 12 (1-based), row: publication footer"
+          }
+        ]
+      },
+      "documentEpoch": {
+        "value": "October 2024",
+        "evidence": [
+          {
+            "sourceId": "cyberster-my245-brochure",
+            "locator": "PDF page 12 (1-based), row: publication footer"
+          }
+        ]
+      },
+      "productionEpoch": null,
+      "facts": {
+        "batteryKWh": {
+          "value": 77,
+          "evidence": [
+            {
+              "sourceId": "cyberster-my245-brochure",
+              "locator": "PDF page 10 (1-based), row: Battery Capacity (kWh)"
+            }
+          ]
+        },
+        "batteryChemistry": {
+          "value": "Ternary Lithium",
+          "evidence": [
+            {
+              "sourceId": "cyberster-my245-brochure",
+              "locator": "PDF page 10 (1-based), row: Battery Type"
+            }
+          ]
+        },
+        "combinedPowerKW": {
+          "value": 375,
+          "evidence": [
+            {
+              "sourceId": "cyberster-my245-brochure",
+              "locator": "PDF page 10 (1-based), row: Combined Maximum Power (kW)"
+            }
+          ]
+        },
+        "combinedTorqueNm": {
+          "value": 725,
+          "evidence": [
+            {
+              "sourceId": "cyberster-my245-brochure",
+              "locator": "PDF page 10 (1-based), row: Combined Maximum Torque (Nm)"
+            }
+          ]
+        },
+        "frontPowerKW": {
+          "value": 150,
+          "evidence": [
+            {
+              "sourceId": "cyberster-my245-brochure",
+              "locator": "PDF page 10 (1-based), row: Front Motor Maximum Power (kW)"
+            }
+          ]
+        },
+        "rearPowerKW": {
+          "value": 250,
+          "evidence": [
+            {
+              "sourceId": "cyberster-my245-brochure",
+              "locator": "PDF page 10 (1-based), row: Rear Motor Maximum Power (kW)"
+            }
+          ]
+        },
+        "zeroTo100Seconds": {
+          "value": 3.2,
+          "evidence": [
+            {
+              "sourceId": "cyberster-my245-brochure",
+              "locator": "PDF page 10 (1-based), row: 0-100km/h (seconds)"
+            }
+          ]
+        },
+        "wltpCombinedKm": {
+          "value": 443,
+          "evidence": [
+            {
+              "sourceId": "cyberster-my245-brochure",
+              "locator": "PDF page 10 (1-based), row: Driving Range: WLTP Combined Cycle (km)"
+            }
+          ]
+        },
+        "acOnboardKW": {
+          "value": 11,
+          "evidence": [
+            {
+              "sourceId": "cyberster-my245-brochure",
+              "locator": "PDF page 10 (1-based), row: On-Board Charging Unit"
+            }
+          ]
+        },
+        "dcPeakKW": {
+          "value": 144,
+          "evidence": [
+            {
+              "sourceId": "cyberster-my245-brochure",
+              "locator": "PDF page 10 (1-based), row: Maximum DC Charging Power (kW)"
+            }
+          ]
+        },
+        "chargeAt150KWMinutes": {
+          "value": 40,
+          "evidence": [
+            {
+              "sourceId": "cyberster-my245-brochure",
+              "locator": "PDF page 10 (1-based), row: Estimated 150kW CCS Public Charge Time (10% to 80%) / Mins @25°C"
+            }
+          ]
+        },
+        "chargeAt150KWSOCPercent": {
+          "value": [
+            10,
+            80
+          ],
+          "evidence": [
+            {
+              "sourceId": "cyberster-my245-brochure",
+              "locator": "PDF page 10 (1-based), row: Estimated 150kW CCS Public Charge Time (10% to 80%) / Mins @25°C"
+            }
+          ]
+        },
+        "bootL": {
+          "value": 249,
+          "evidence": [
+            {
+              "sourceId": "cyberster-my245-brochure",
+              "locator": "PDF page 10 (1-based), row: Boot Volume (L)"
+            }
+          ]
+        },
+        "wheelsInch": {
+          "value": 20,
+          "evidence": [
+            {
+              "sourceId": "cyberster-my245-brochure",
+              "locator": "PDF page 10 (1-based), row: 20\" Alloy Wheel"
+            }
+          ]
+        },
+        "seats": {
+          "value": "Alcantara with PU bolsters",
+          "evidence": [
+            {
+              "sourceId": "cyberster-my245-brochure",
+              "locator": "PDF page 11 (1-based), row: Sport Alcantara Seats with PU Leather Bolsters"
+            }
+          ]
+        },
+        "heatedFrontSeats": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "cyberster-my245-brochure",
+              "locator": "PDF page 11 (1-based), row: Heated Front Seats (3 Levels)"
+            }
+          ]
+        },
+        "heatedSteeringWheel": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "cyberster-my245-brochure",
+              "locator": "PDF page 11 (1-based), row: Heated Steering Wheel"
+            }
+          ]
+        },
+        "v2l": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "cyberster-my245-brochure",
+              "locator": "PDF page 11 (1-based), row: Vehicle to Load Charging Function (V2L)"
+            }
+          ]
+        },
+        "camera360": {
+          "value": true,
+          "evidence": [
+            {
+              "sourceId": "cyberster-my245-brochure",
+              "locator": "PDF page 11 (1-based), row: 360° Camera (HD)"
+            }
+          ]
+        },
+        "speakers": {
+          "value": 8,
+          "evidence": [
+            {
+              "sourceId": "cyberster-my245-brochure",
+              "locator": "PDF page 11 (1-based), row: 8-Speaker BOSE Audio System"
+            }
+          ]
+        }
+      },
+      "notes": [
+        "Do not replace this 40 minute 10–80% specification with current brochure 34 minute 30–80% claim. These charging windows differ.",
+        "MY24.5 manufacturer document supports a candidate join only; same-VIN dealer MY conflict must remain visible."
+      ]
+    }
+  ],
+  "stockCandidates": [
+    {
+      "id": "portside-g10095",
+      "facts": {
+        "brand": {
+          "value": "MG",
+          "evidence": [
+            {
+              "sourceId": "mgs5-essence62-portside",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "model": {
+          "value": "MGS5 EV",
+          "evidence": [
+            {
+              "sourceId": "mgs5-essence62-portside",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "trim": {
+          "value": "Essence 62",
+          "evidence": [
+            {
+              "sourceId": "mgs5-essence62-portside",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "vin": {
+          "value": "LSJWS4090SZ707607",
+          "evidence": [
+            {
+              "sourceId": "mgs5-essence62-portside",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "stockNumber": {
+          "value": "G10095",
+          "evidence": [
+            {
+              "sourceId": "mgs5-essence62-portside",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "advertisedYear": {
+          "value": 2025,
+          "evidence": [
+            {
+              "sourceId": "mgs5-essence62-portside",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "dealerFormalMY": {
+          "value": "MY25",
+          "evidence": [
+            {
+              "sourceId": "mgs5-essence62-portside",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "odometerKm": {
+          "value": 18,
+          "evidence": [
+            {
+              "sourceId": "mgs5-essence62-portside",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "advertisedPriceAUD": {
+          "value": 46990,
+          "evidence": [
+            {
+              "sourceId": "mgs5-essence62-portside",
+              "locator": "Displayed Drive Away price"
+            }
+          ]
+        },
+        "condition": {
+          "value": "New",
+          "evidence": [
+            {
+              "sourceId": "mgs5-essence62-portside",
+              "locator": "Vehicle details > Type; unit header"
+            }
+          ]
+        },
+        "registrationNumberDisplayed": {
+          "value": false,
+          "evidence": [
+            {
+              "sourceId": "mgs5-essence62-portside",
+              "locator": "Embedded unit data registration_number is empty; not proof of never registered"
+            }
+          ]
+        }
+      },
+      "decision": "confirmed_new_stock_epoch_unresolved",
+      "reason": "Direct live page proves NEW Essence62 MY25 stock identity, but has no build/compliance date or vehicle power/torque field. Historical February2025 and current June2026 manufacturer documents both say MY25 while listing different power. MY/trim alone cannot distinguish 125 kW from 150 kW; normalized technical epoch is unproven.",
+      "manufacturerEpochCandidate": null,
+      "manufacturerJoin": "unresolved_conflicting_MY25_document_epochs",
+      "sourceId": "mgs5-essence62-portside",
+      "technicalFieldsImportedFromDealer": false,
+      "normalizedTechnicalEpoch": null,
+      "normalizedMotorPowerKW": null,
+      "historicalDocumentReferenceOnly": "mgs5-my25-essence-62",
+      "epochCheck": {
+        "checkedAt": "2026-10-10T08:36:42.640859+00:00",
+        "scope": "Existing archived HTML and manufacturer PDF text only",
+        "independentBuildOrPowerEvidence": false,
+        "locator": "mgs5-essence62-portside.html: const current_stock, visible vehicle details and Dealer Comments; no build/compliance/power fields",
+        "nonVehicleNumericHits": "125 appears only in SVG coordinates; 150 appears only in CSS transition values",
+        "manufacturerBreakpointPublished": false
+      }
+    },
+    {
+      "id": "westpoint-4106082",
+      "facts": {
+        "brand": {
+          "value": "MG",
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite49-westpoint",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "model": {
+          "value": "MGS5 EV",
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite49-westpoint",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "trim": {
+          "value": "Excite 49",
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite49-westpoint",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "vin": {
+          "value": "LSJWS4093SZ671864",
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite49-westpoint",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "stockNumber": {
+          "value": "4106082",
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite49-westpoint",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "advertisedYear": {
+          "value": 2025,
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite49-westpoint",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "dealerFormalMY": {
+          "value": "MY25",
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite49-westpoint",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "odometerKm": {
+          "value": 10,
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite49-westpoint",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "advertisedPriceAUD": {
+          "value": 34988,
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite49-westpoint",
+              "locator": "Displayed Drive Away price"
+            }
+          ]
+        },
+        "registration": {
+          "value": "496RF7",
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite49-westpoint",
+              "locator": "Key information > Registration / Rego Expiry"
+            }
+          ]
+        },
+        "buildMonth": {
+          "value": "2025-04",
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite49-westpoint",
+              "locator": "Embedded unit object build_date; day 01 not interpreted as actual production day"
+            }
+          ]
+        },
+        "condition": {
+          "value": "NewCondition",
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite49-westpoint",
+              "locator": "JSON-LD unit itemCondition"
+            }
+          ]
+        },
+        "availability": {
+          "value": "InStock",
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite49-westpoint",
+              "locator": "JSON-LD unit offers.availability"
+            }
+          ]
+        }
+      },
+      "decision": "conditional_advertised_new_registered",
+      "reason": "Live unit header and schema say New/InStock, but a registration plate and August 2027 expiry are present. Accept only as advertised-new evidence; unregistered-new eligibility is not established. Do not silently classify as demo either.",
+      "manufacturerEpochCandidate": "mgs5-my25-excite-49",
+      "manufacturerJoin": "exact_dealer_MY_and_trim_match",
+      "sourceId": "mgs5-excite49-westpoint",
+      "technicalFieldsImportedFromDealer": false
+    },
+    {
+      "id": "westpoint-4106079",
+      "facts": {
+        "brand": {
+          "value": "MG",
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite62-westpoint",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "model": {
+          "value": "MGS5 EV",
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite62-westpoint",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "trim": {
+          "value": "Excite 62",
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite62-westpoint",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "vin": {
+          "value": "LSJWS4093SZ699566",
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite62-westpoint",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "stockNumber": {
+          "value": "4106079",
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite62-westpoint",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "advertisedYear": {
+          "value": 2025,
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite62-westpoint",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "dealerFormalMY": {
+          "value": "MY25",
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite62-westpoint",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "odometerKm": {
+          "value": 12,
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite62-westpoint",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "advertisedPriceAUD": {
+          "value": 38488,
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite62-westpoint",
+              "locator": "Displayed Drive Away price"
+            }
+          ]
+        },
+        "registration": {
+          "value": "492RF7",
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite62-westpoint",
+              "locator": "Key information > Registration / Rego Expiry"
+            }
+          ]
+        },
+        "buildMonth": {
+          "value": "2025-06",
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite62-westpoint",
+              "locator": "Embedded unit object build_date; day 01 not interpreted as actual production day"
+            }
+          ]
+        },
+        "condition": {
+          "value": "NewCondition",
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite62-westpoint",
+              "locator": "JSON-LD unit itemCondition"
+            }
+          ]
+        },
+        "availability": {
+          "value": "InStock",
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite62-westpoint",
+              "locator": "JSON-LD unit offers.availability"
+            }
+          ]
+        }
+      },
+      "decision": "conditional_advertised_new_registered",
+      "reason": "Live unit header and schema say New/InStock, but a registration plate and August 2027 expiry are present. Accept only as advertised-new evidence; unregistered-new eligibility is not established. Do not silently classify as demo either.",
+      "manufacturerEpochCandidate": "mgs5-my25-excite-62",
+      "manufacturerJoin": "exact_dealer_MY_and_trim_match",
+      "sourceId": "mgs5-excite62-westpoint",
+      "technicalFieldsImportedFromDealer": false
+    },
+    {
+      "id": "adelaide-mg079184",
+      "facts": {
+        "brand": {
+          "value": "MG",
+          "evidence": [
+            {
+              "sourceId": "cyberster-awd-adelaide-web",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "model": {
+          "value": "Cyberster",
+          "evidence": [
+            {
+              "sourceId": "cyberster-awd-adelaide-web",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "trim": {
+          "value": "AWD",
+          "evidence": [
+            {
+              "sourceId": "cyberster-awd-adelaide-web",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "vin": {
+          "value": "LSJWN5069SN079184",
+          "evidence": [
+            {
+              "sourceId": "cyberster-awd-adelaide-web",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "stockNumber": {
+          "value": "MG079184",
+          "evidence": [
+            {
+              "sourceId": "cyberster-awd-adelaide-web",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "advertisedYear": {
+          "value": 2025,
+          "evidence": [
+            {
+              "sourceId": "cyberster-awd-adelaide-web",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "dealerFormalMY": {
+          "value": "MY24.5",
+          "evidence": [
+            {
+              "sourceId": "cyberster-awd-adelaide-web",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "odometerKm": {
+          "value": 35,
+          "evidence": [
+            {
+              "sourceId": "cyberster-awd-adelaide-web",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "advertisedPriceAUD": {
+          "value": 121158,
+          "evidence": [
+            {
+              "sourceId": "cyberster-awd-adelaide-web",
+              "locator": "Displayed Drive Away price"
+            }
+          ]
+        },
+        "condition": {
+          "value": "New",
+          "evidence": [
+            {
+              "sourceId": "cyberster-awd-adelaide-web",
+              "locator": "lines 389 and 398, New and In stock"
+            }
+          ]
+        }
+      },
+      "decision": "confirmed_new_stock_MY_conflict",
+      "reason": "Direct dealer page says New/In stock. Same VIN/stock is MY24.5 on Adelaide City MG and MY25 in Newspot search snapshot. Formal MY normalized to null pending reconciliation.",
+      "manufacturerEpochCandidate": "cyberster-my24-5-awd",
+      "manufacturerJoin": "conditional_MY_conflict",
+      "sourceId": "cyberster-awd-adelaide-web",
+      "technicalFieldsImportedFromDealer": false,
+      "formalMYNormalized": null,
+      "conflictingMY": {
+        "value": "MY25",
+        "evidence": [
+          {
+            "sourceId": "candidate-searches",
+            "locator": "Newspot 33992962 result, same VIN LSJWN5069SN079184/stock MG079184; title EC32 MY25"
+          }
+        ]
+      }
+    },
+    {
+      "id": "hobart-2604150358",
+      "facts": {
+        "brand": {
+          "value": "MG",
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite49-hobart-web",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "model": {
+          "value": "MGS5 EV",
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite49-hobart-web",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "trim": {
+          "value": "Excite 49",
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite49-hobart-web",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "vin": {
+          "value": "LSJWS4092TZ586614",
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite49-hobart-web",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "stockNumber": {
+          "value": "2604150358",
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite49-hobart-web",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "advertisedYear": {
+          "value": 2026,
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite49-hobart-web",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "dealerFormalMY": {
+          "value": "MY26",
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite49-hobart-web",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "odometerKm": {
+          "value": 10,
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite49-hobart-web",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "advertisedPriceAUD": {
+          "value": 40690,
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite49-hobart-web",
+              "locator": "Displayed Drive Away price"
+            }
+          ]
+        },
+        "condition": {
+          "value": "New/In stock",
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite49-hobart-web",
+              "locator": "lines 348 and 358"
+            }
+          ]
+        }
+      },
+      "decision": "confirmed_new_stock_epoch_unresolved",
+      "reason": "Direct New/In stock unit explicitly MY26. Available MY25 four-trim brochure cannot prove MY26 Excite technical epoch; current official brochure lists only Essence. Manufacturer technical join withheld.",
+      "manufacturerEpochCandidate": null,
+      "manufacturerJoin": "unresolved",
+      "sourceId": "mgs5-excite49-hobart-web",
+      "technicalFieldsImportedFromDealer": false
+    },
+    {
+      "id": "macarthur-mg698624",
+      "facts": {
+        "brand": {
+          "value": "MG",
+          "evidence": [
+            {
+              "sourceId": "mgs5-essence49-macarthur",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "model": {
+          "value": "MGS5 EV",
+          "evidence": [
+            {
+              "sourceId": "mgs5-essence49-macarthur",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "trim": {
+          "value": "Essence 49",
+          "evidence": [
+            {
+              "sourceId": "mgs5-essence49-macarthur",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "vin": {
+          "value": "LSJWS4098SZ698624",
+          "evidence": [
+            {
+              "sourceId": "mgs5-essence49-macarthur",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "stockNumber": {
+          "value": "MG698624",
+          "evidence": [
+            {
+              "sourceId": "mgs5-essence49-macarthur",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "advertisedYear": {
+          "value": 2026,
+          "evidence": [
+            {
+              "sourceId": "mgs5-essence49-macarthur",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "odometerKm": {
+          "value": 10,
+          "evidence": [
+            {
+              "sourceId": "mgs5-essence49-macarthur",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "buildMonth": {
+          "value": "2025-06",
+          "evidence": [
+            {
+              "sourceId": "mgs5-essence49-macarthur",
+              "locator": "Embedded unit object build_date; day 01 not interpreted as actual production day"
+            }
+          ]
+        },
+        "condition": {
+          "value": "NewCondition/InStock",
+          "evidence": [
+            {
+              "sourceId": "mgs5-essence49-macarthur",
+              "locator": "JSON-LD exact unit itemCondition and offers.availability"
+            }
+          ]
+        }
+      },
+      "decision": "confirmed_new_stock_residual_epoch_unresolved",
+      "reason": "Direct unit NewCondition/InStock with 2025 build/compliance but advertised 2026. Technical-description MY26 is from generic variant metadata, not accepted as formal exact MY. Build year alone cannot join MY25 residual epoch.",
+      "manufacturerEpochCandidate": null,
+      "manufacturerJoin": "unresolved",
+      "sourceId": "mgs5-essence49-macarthur",
+      "technicalFieldsImportedFromDealer": false
+    },
+    {
+      "id": "kenmuston-19883",
+      "facts": {
+        "brand": {
+          "value": "MG",
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite49-kenmuston",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "model": {
+          "value": "MGS5 EV",
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite49-kenmuston",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "trim": {
+          "value": "Excite 49",
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite49-kenmuston",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "vin": {
+          "value": "LSJWS409XSZ699872",
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite49-kenmuston",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "stockNumber": {
+          "value": "19883",
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite49-kenmuston",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "advertisedYear": {
+          "value": 2025,
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite49-kenmuston",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "dealerFormalMY": {
+          "value": "MY25",
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite49-kenmuston",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "odometerKm": {
+          "value": 315,
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite49-kenmuston",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "advertisedPriceAUD": {
+          "value": 36990,
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite49-kenmuston",
+              "locator": "Displayed Drive Away price"
+            }
+          ]
+        },
+        "registration": {
+          "value": "2ES2VL",
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite49-kenmuston",
+              "locator": "Key information > Registration / Rego Expiry"
+            }
+          ]
+        },
+        "condition": {
+          "value": "Demo",
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite49-kenmuston",
+              "locator": "Live vehicle type heading and Dealer Comments EX-DEMO"
+            }
+          ]
+        }
+      },
+      "decision": "rejected_not_new",
+      "reason": "Live page explicitly Demo / EX-DEMO and registered, despite /new-cars URL and stale New search snippet.",
+      "manufacturerEpochCandidate": "mgs5-my25-excite-49",
+      "manufacturerJoin": "exact_dealer_MY_and_trim_match",
+      "sourceId": "mgs5-excite49-kenmuston",
+      "technicalFieldsImportedFromDealer": false
+    },
+    {
+      "id": "xcite-1300155",
+      "facts": {
+        "brand": {
+          "value": "MG",
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite62-xcite",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "model": {
+          "value": "MGS5 EV",
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite62-xcite",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "trim": {
+          "value": "Excite 62",
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite62-xcite",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "vin": {
+          "value": "LSJWS4099SZ652087",
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite62-xcite",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "stockNumber": {
+          "value": "1300155",
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite62-xcite",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "advertisedYear": {
+          "value": 2025,
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite62-xcite",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "dealerFormalMY": {
+          "value": "MY25",
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite62-xcite",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "odometerKm": {
+          "value": 10,
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite62-xcite",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "advertisedPriceAUD": {
+          "value": 37875,
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite62-xcite",
+              "locator": "Displayed Drive Away price"
+            }
+          ]
+        },
+        "condition": {
+          "value": "Demo",
+          "evidence": [
+            {
+              "sourceId": "mgs5-excite62-xcite",
+              "locator": "Make/Model table > Condition; repeated unit summary"
+            }
+          ]
+        }
+      },
+      "decision": "rejected_conflicting_new_demo",
+      "reason": "Headline says New | IN STOCK but exact Condition field and repeated unit details say Demo. Non-unit-stable URL previously indexed another VIN; live VIN retained.",
+      "manufacturerEpochCandidate": "mgs5-my25-excite-62",
+      "manufacturerJoin": "exact_dealer_MY_and_trim_match",
+      "sourceId": "mgs5-excite62-xcite",
+      "technicalFieldsImportedFromDealer": false
+    },
+    {
+      "id": "maw-6482",
+      "facts": {
+        "brand": {
+          "value": "MG",
+          "evidence": [
+            {
+              "sourceId": "zs-longrange-maw",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "model": {
+          "value": "ZS EV",
+          "evidence": [
+            {
+              "sourceId": "zs-longrange-maw",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "trim": {
+          "value": "Long Range",
+          "evidence": [
+            {
+              "sourceId": "zs-longrange-maw",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "vin": {
+          "value": "LSJW74090PZ174005",
+          "evidence": [
+            {
+              "sourceId": "zs-longrange-maw",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "stockNumber": {
+          "value": "6482",
+          "evidence": [
+            {
+              "sourceId": "zs-longrange-maw",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "advertisedYear": {
+          "value": 2023,
+          "evidence": [
+            {
+              "sourceId": "zs-longrange-maw",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "dealerFormalMY": {
+          "value": "MY23",
+          "evidence": [
+            {
+              "sourceId": "zs-longrange-maw",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "odometerKm": {
+          "value": 100,
+          "evidence": [
+            {
+              "sourceId": "zs-longrange-maw",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "advertisedPriceAUD": {
+          "value": 27990,
+          "evidence": [
+            {
+              "sourceId": "zs-longrange-maw",
+              "locator": "Displayed price $27,990 Excl. Govt. Charges"
+            }
+          ],
+          "priceBasis": "excluding government charges"
+        }
+      },
+      "decision": "rejected_no_new_condition_proof",
+      "reason": "Used-car dealer/page positioning and comments call it essentially brand new; low kilometres and promotional brand-new wording do not establish NEW condition.",
+      "manufacturerEpochCandidate": "zs-ev-my23-long-range",
+      "manufacturerJoin": "exact_dealer_MY_and_trim_match",
+      "sourceId": "zs-longrange-maw",
+      "technicalFieldsImportedFromDealer": false
+    },
+    {
+      "id": "northern-b4505",
+      "facts": {
+        "brand": {
+          "value": "MG",
+          "evidence": [
+            {
+              "sourceId": "candidate-searches",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "model": {
+          "value": "ZS EV",
+          "evidence": [
+            {
+              "sourceId": "candidate-searches",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "trim": {
+          "value": "Long Range",
+          "evidence": [
+            {
+              "sourceId": "candidate-searches",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "vin": {
+          "value": "LSJW74091PZ211773",
+          "evidence": [
+            {
+              "sourceId": "candidate-searches",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "stockNumber": {
+          "value": "B4505",
+          "evidence": [
+            {
+              "sourceId": "candidate-searches",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "advertisedYear": {
+          "value": 2023,
+          "evidence": [
+            {
+              "sourceId": "candidate-searches",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "dealerFormalMY": {
+          "value": "MY23",
+          "evidence": [
+            {
+              "sourceId": "candidate-searches",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "odometerKm": {
+          "value": 355,
+          "evidence": [
+            {
+              "sourceId": "candidate-searches",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "advertisedPriceAUD": {
+          "value": 31888,
+          "evidence": [
+            {
+              "sourceId": "candidate-searches",
+              "locator": "Displayed Drive Away price"
+            }
+          ]
+        }
+      },
+      "decision": "rejected_used_registered",
+      "reason": "Search snapshot of dealer page says Condition Used and Registered, despite never-registered/brand-new prose. Direct retrieval failed, so current availability remains unknown. Technical prose wrongly claims 130 kW; excluded.",
+      "manufacturerEpochCandidate": "zs-ev-my23-long-range",
+      "manufacturerJoin": "exact_dealer_MY_and_trim_match",
+      "sourceId": "candidate-searches",
+      "technicalFieldsImportedFromDealer": false,
+      "sourceFreshness": "search index, crawled 4 months earlier"
+    },
+    {
+      "id": "pickerings-540820",
+      "facts": {
+        "brand": {
+          "value": "MG",
+          "evidence": [
+            {
+              "sourceId": "candidate-searches",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "model": {
+          "value": "ZS EV",
+          "evidence": [
+            {
+              "sourceId": "candidate-searches",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "trim": {
+          "value": "Long Range",
+          "evidence": [
+            {
+              "sourceId": "candidate-searches",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "vin": {
+          "value": "LSJW74098PZ171594",
+          "evidence": [
+            {
+              "sourceId": "candidate-searches",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "stockNumber": {
+          "value": "540820",
+          "evidence": [
+            {
+              "sourceId": "candidate-searches",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "advertisedYear": {
+          "value": 2023,
+          "evidence": [
+            {
+              "sourceId": "candidate-searches",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "dealerFormalMY": {
+          "value": "MY23",
+          "evidence": [
+            {
+              "sourceId": "candidate-searches",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "odometerKm": {
+          "value": 30,
+          "evidence": [
+            {
+              "sourceId": "candidate-searches",
+              "locator": "Vehicle heading; Key information / vehicle details; unit VIN and stock fields"
+            }
+          ]
+        },
+        "registration": {
+          "value": "845NI8",
+          "evidence": [
+            {
+              "sourceId": "candidate-searches",
+              "locator": "Key information > Registration / Rego Expiry"
+            }
+          ]
+        }
+      },
+      "decision": "rejected_demo",
+      "reason": "Dealer search snapshot explicitly Demo. Direct page retrieval returned 403. MY23 and Feb 2023 build versus Jan 2025 compliance remain distinct.",
+      "manufacturerEpochCandidate": "zs-ev-my23-long-range",
+      "manufacturerJoin": "exact_dealer_MY_and_trim_match",
+      "sourceId": "candidate-searches",
+      "technicalFieldsImportedFromDealer": false,
+      "sourceFreshness": "search snapshot only"
+    }
+  ],
+  "unresolvedLeads": [
+    {
+      "id": "albany-rwd-015953",
+      "url": "https://www.carsguide.com.au/car/15122555/mg/cyberster/wa/orana/convertible",
+      "reason": "Refreshed third-party page still says Dealer New In Stock but now has 50 km, registration A929K/expiry 26 Feb 2027, and no displayed VIN/stock ID. Previously indexed 015953/LSJWN5065TN015953 cannot safely be attached to the refreshed page without direct unit confirmation. Dealer model page no longer supplies exact unit. MY25/MY26 indexed conflict remains.",
+      "evidence": [
+        {
+          "sourceId": "rwd-albany-web",
+          "locator": "CarsGuide lines 87,95,135,160–168"
+        }
+      ]
+    },
+    {
+      "id": "motorama-cyberster-a2507140023",
+      "url": "https://www.motorama.com.au/cars/new-diamond-red-2025-mg-cyberster-a2507140023",
+      "reason": "Search lead says New but live fetch HTTP 404. Cannot accept current stock; 404 alone does not establish sale or nationwide absence."
+    },
+    {
+      "id": "bartons-cyberster-m022087",
+      "url": "https://www.bartonsmg.com.au/cars/new-diamond-red-2025-mg-cyberster-m022087",
+      "reason": "Search lead says New but live fetch HTTP 404; current exact stock unverified."
+    },
+    {
+      "id": "penfold-essence49-597586",
+      "url": "https://www.penfold.com.au/cars/new-camden-grey-2025-mg-mgs5-ev-597586",
+      "reason": "Indexed MY25 Essence49 New unit, live HTTP500; do not use old snippet as current residual-new proof."
+    },
+    {
+      "id": "newspot-excite62-33917922",
+      "url": "https://www.newspot.com.au/all-stock/view/2025-MG-MGS5-EV/33917922",
+      "reason": "Indexed MY25 Excite62 New unit; live HTTP403 and web cache miss. Current stock unverified."
+    }
+  ],
+  "sourceRegistry": [
+    {
+      "id": "mgs5-launch-microsite",
+      "url": "https://mgs5ev.mgmotor.com.au/",
+      "retrievedAt": "2026-10-10T08:10:46.839624+00:00",
+      "snapshotPath": "/workspace/scratch/586427eef9f2/roadmark-research/mg-remaining-residual-sources/mgs5-launch-microsite.html",
+      "sha256": "aa101cacc6344abfb5fb376b782681202fc13cc2e88a2822223a2c25a2c725f1",
+      "contentType": "text/html",
+      "status": 200,
+      "pdf_links": []
+    },
+    {
+      "id": "mgs5-excite49-kenmuston",
+      "url": "https://www.kenmuston.com.au/new-cars/for-sale/mg/mgs5-ev/2025/excite-49/zs3em-my25/3825822/",
+      "retrievedAt": "2026-10-10T08:10:51.110879+00:00",
+      "snapshotPath": "/workspace/scratch/586427eef9f2/roadmark-research/mg-remaining-residual-sources/mgs5-excite49-kenmuston.html",
+      "sha256": "bc32e0d5de41b2bbf2063725bcbd7a7858404af21d8c347dd8de70131c3bb039",
+      "contentType": "text/html; charset=utf-8",
+      "status": 200,
+      "pdf_links": []
+    },
+    {
+      "id": "mgs5-excite62-xcite",
+      "url": "https://www.xciteautos.com.au/cars/2025-mg-mgs5-ev-excite-62-auto-my25",
+      "retrievedAt": "2026-10-10T08:10:47.236263+00:00",
+      "snapshotPath": "/workspace/scratch/586427eef9f2/roadmark-research/mg-remaining-residual-sources/mgs5-excite62-xcite.html",
+      "sha256": "53620110cf5598d38537a0ab0a7b4778f1918d10e00e54307ec9e052fbe86cad",
+      "contentType": "text/html; charset=UTF-8",
+      "status": 200,
+      "pdf_links": []
+    },
+    {
+      "id": "zs-brochure-au-three",
+      "url": "https://resource.digitaldealer.com.au/pdf/61223192566d10488eb26f178964849.pdf",
+      "retrievedAt": "2026-10-10T08:13:40.827233+00:00",
+      "snapshotPath": "/workspace/scratch/586427eef9f2/roadmark-research/mg-remaining-residual-sources/zs-brochure-au-three.pdf",
+      "sha256": "f34df8eb72a6b2d1ed0bdb636608e78a6c3bbe37e6da466768d60aa382352fb9",
+      "contentType": "application/pdf",
+      "status": 200,
+      "sourceType": "rejected_wrong_market_manufacturer_document"
+    },
+    {
+      "id": "zs-brochure-au-early",
+      "url": "https://media.adtorqueedge.com/new-cars/mg-aus/zs-ev/mg-zs-ev-specs.pdf",
+      "retrievedAt": "2026-10-10T08:13:37.747077+00:00",
+      "snapshotPath": "/workspace/scratch/586427eef9f2/roadmark-research/mg-remaining-residual-sources/zs-brochure-au-early.pdf",
+      "sha256": "ae01624101ee752a50353e9a488894a440c0951006c45c4ea36362392bc1639c",
+      "contentType": "application/pdf",
+      "status": 200,
+      "sourceType": "manufacturer_document_dealer_cdn"
+    },
+    {
+      "id": "mgs5-essence62-portside",
+      "url": "https://www.portsidemotors.com.au/new-cars/for-sale/mg/mgs5-ev/2025/essence-62/zs3em-my25/3752489",
+      "retrievedAt": "2026-10-10T08:13:44.035669+00:00",
+      "snapshotPath": "/workspace/scratch/586427eef9f2/roadmark-research/mg-remaining-residual-sources/mgs5-essence62-portside.html",
+      "sha256": "e206e6e1ecefb04ba92cfdbd4cccf1083bb9cda6975d46e5988f41a00cbe6532",
+      "contentType": "text/html",
+      "status": 200,
+      "pdf_links": []
+    },
+    {
+      "id": "zs-longrange-maw",
+      "url": "https://www.mawmotorgroup.com.au/stock/2023-mg-zsev-wagon-longrange-azs1my23-562309",
+      "retrievedAt": "2026-10-10T08:13:38.935169+00:00",
+      "snapshotPath": "/workspace/scratch/586427eef9f2/roadmark-research/mg-remaining-residual-sources/zs-longrange-maw.html",
+      "sha256": "05a633e81484af202676d9da51cb643b03812fcb30de5ec118b036dcda6c3c31",
+      "contentType": "text/html; charset=utf-8",
+      "status": 200,
+      "pdf_links": []
+    },
+    {
+      "id": "mgs5-excite49-westpoint",
+      "url": "https://www.westpointautos.com.au/cars/new-silver-2025-mg-mgs5-ev-4106082",
+      "retrievedAt": "2026-10-10T08:15:02.569375+00:00",
+      "snapshotPath": "/workspace/scratch/586427eef9f2/roadmark-research/mg-remaining-residual-sources/mgs5-excite49-westpoint.html",
+      "sha256": "350f4551fa2f0fcfbf587c1cdd73668e922e954e041576857f1f991d42e206cc",
+      "contentType": "text/html; charset=utf-8",
+      "status": 200,
+      "pdf_links": [
+        "https://res.cloudinary.com/total-dealer/image/upload/v1759103367/td_dashboard/ppsr-register-motor-vehicle-search-result-sample_panp90.pdf"
+      ]
+    },
+    {
+      "id": "mgs5-excite62-westpoint",
+      "url": "https://www.westpointautos.com.au/cars/new-black-2025-mg-mgs5-ev-4106079",
+      "retrievedAt": "2026-10-10T08:15:02.647498+00:00",
+      "snapshotPath": "/workspace/scratch/586427eef9f2/roadmark-research/mg-remaining-residual-sources/mgs5-excite62-westpoint.html",
+      "sha256": "f821968b5ab4d1ec8ad277803fbd5de71449a621c937fc9e55de40af981c5032",
+      "contentType": "text/html; charset=utf-8",
+      "status": 200,
+      "pdf_links": [
+        "https://res.cloudinary.com/total-dealer/image/upload/v1759103367/td_dashboard/ppsr-register-motor-vehicle-search-result-sample_panp90.pdf"
+      ]
+    },
+    {
+      "id": "zs-my23-au-specs",
+      "url": "https://gaycarboys.com/wp-content/uploads/2023/06/2023-MG-ZS-EV-Range-Specifications.pdf",
+      "retrievedAt": "2026-10-10T08:15:21.221043+00:00",
+      "snapshotPath": "/workspace/scratch/586427eef9f2/roadmark-research/mg-remaining-residual-sources/zs-my23-au-specs.pdf",
+      "sha256": "124d189395740a2f749c0e1bab71d2ee296aac02752d989d3e2c5f0f0951d5b8",
+      "contentType": "application/pdf",
+      "status": 200,
+      "sourceType": "manufacturer_document_press_mirror"
+    },
+    {
+      "id": "mgs5-my25-brochure",
+      "url": "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf",
+      "retrievedAt": "2026-10-10T08:15:52.671929+00:00",
+      "snapshotPath": "/workspace/scratch/586427eef9f2/roadmark-research/mg-remaining-residual-sources/mgs5-my25-brochure.pdf",
+      "sha256": "ecb359d36fd030ee2628f4977baee32f4f14ab1e8776cc810772e78e77b47020",
+      "contentType": "application/pdf",
+      "status": 200,
+      "sourceType": "manufacturer_document_dealer_cdn"
+    },
+    {
+      "id": "cyberster-my245-brochure",
+      "url": "https://tddashboard.s3.ap-southeast-2.amazonaws.com/1739326916-mg-cyberster-spec-sheet.pdf",
+      "retrievedAt": "2026-10-10T08:15:52.418171+00:00",
+      "snapshotPath": "/workspace/scratch/586427eef9f2/roadmark-research/mg-remaining-residual-sources/cyberster-my245-brochure.pdf",
+      "sha256": "5bb0b2eef0e213b00ab053c6372e8d11ffc81b0dbade3cf1bd1b3c44b0b5317d",
+      "contentType": "application/pdf",
+      "status": 200,
+      "sourceType": "manufacturer_document_dealer_cdn"
+    },
+    {
+      "id": "mgs5-essence49-macarthur",
+      "url": "https://www.macarthurautomotive.com.au/cars/new-dover-white-2026-mg-mgs5-ev-mg698624",
+      "retrievedAt": "2026-10-10T08:16:40.167289+00:00",
+      "snapshotPath": "/workspace/scratch/586427eef9f2/roadmark-research/mg-remaining-residual-sources/mgs5-essence49-macarthur.html",
+      "sha256": "95677f7bfabcf858eb9141f99ebc88b2ac62181fe3b8a556f312237da59208a9",
+      "contentType": "text/html; charset=utf-8",
+      "status": 200,
+      "pdf_links": []
+    },
+    {
+      "id": "cyberster-awd-adelaide-web",
+      "url": "https://adelaidecitymg.com.au/mg079184-1703290-mg-cyberster-2025/",
+      "snapshotPath": "/workspace/scratch/586427eef9f2/roadmark-research/mg-remaining-residual-sources/cyberster-awd-adelaide-web.json",
+      "sha256": "20b79ccb8bbc323cafdcf8e29ef44cbf7f2e81c4c8598b5c3caa59ec850058e3",
+      "retrievedAt": "2026-10-10",
+      "sourceType": "direct_dealer_web_retrieval"
+    },
+    {
+      "id": "mgs5-excite49-hobart-web",
+      "url": "https://hobartmg.com.au/2604150358-1874460-mg-mgs5ev-2026/",
+      "snapshotPath": "/workspace/scratch/586427eef9f2/roadmark-research/mg-remaining-residual-sources/mgs5-excite49-hobart-web.json",
+      "sha256": "50a6fdccca9a0a61319fcb47cceb4323c1b30457a56d035a6e6d81bc89011fa8",
+      "retrievedAt": "2026-10-10",
+      "sourceType": "direct_dealer_web_retrieval"
+    },
+    {
+      "id": "candidate-searches",
+      "url": null,
+      "snapshotPath": "/workspace/scratch/586427eef9f2/roadmark-research/mg-remaining-residual-sources/three-candidate-search-snapshot.json",
+      "sha256": "075ba71d85781e558086f39831b9af5e63a97b9f18540bfed6cbeaf4e514e8a4",
+      "retrievedAt": "2026-10-10",
+      "sourceType": "search_index_snapshot"
+    },
+    {
+      "id": "rwd-albany-web",
+      "url": "https://www.carsguide.com.au/car/15122555/mg/cyberster/wa/orana/convertible",
+      "snapshotPath": "/workspace/scratch/586427eef9f2/roadmark-research/mg-remaining-residual-sources/stock-pickerings-albany-web.json",
+      "sha256": "92a6ac7dfcb76cf0788caa82251211737a4ebebd634acbdb643343a1854a22cd",
+      "retrievedAt": "2026-10-10",
+      "sourceType": "third_party_listing_web_retrieval"
+    },
+    {
+      "id": "retrieval-failures",
+      "url": null,
+      "snapshotPath": "/workspace/scratch/586427eef9f2/roadmark-research/mg-remaining-residual-sources/newspot-northern-web.json",
+      "sha256": "91c5b1b11edf4139c7de6e58c66a439083a282eea2d940b3b608f2db30009a43",
+      "retrievedAt": "2026-10-10",
+      "sourceType": "retrieval_failure_snapshot"
+    },
+    {
+      "id": "final-excite-search",
+      "url": null,
+      "snapshotPath": "/workspace/scratch/586427eef9f2/roadmark-research/mg-remaining-residual-sources/search-residual-final-excite.json",
+      "sha256": "f8986cfd0b1cce607aa8c5b80725089b41e60c132590b3dbaef9d3783b4b989a",
+      "retrievedAt": "2026-10-10",
+      "sourceType": "search_index_snapshot"
+    },
+    {
+      "id": "newspot-s5-search",
+      "url": null,
+      "snapshotPath": "/workspace/scratch/586427eef9f2/roadmark-research/mg-remaining-residual-sources/search-residual-2.json",
+      "sha256": "cf123645499b8640218ca923f8b0c29898864d6017bfa7a3442d02b827076851",
+      "retrievedAt": "2026-10-10",
+      "sourceType": "search_index_snapshot"
+    }
+  ],
+  "retrievalAttempts": [
+    {
+      "id": "mgs5-launch-microsite",
+      "url": "https://mgs5ev.mgmotor.com.au/",
+      "retrievedAt": "2026-10-10T08:10:46.839624+00:00",
+      "snapshotPath": "/workspace/scratch/586427eef9f2/roadmark-research/mg-remaining-residual-sources/mgs5-launch-microsite.html",
+      "sha256": "aa101cacc6344abfb5fb376b782681202fc13cc2e88a2822223a2c25a2c725f1",
+      "contentType": "text/html",
+      "status": 200,
+      "pdf_links": []
+    },
+    {
+      "id": "mgs5-excite49-kenmuston",
+      "url": "https://www.kenmuston.com.au/new-cars/for-sale/mg/mgs5-ev/2025/excite-49/zs3em-my25/3825822/",
+      "retrievedAt": "2026-10-10T08:10:51.110879+00:00",
+      "snapshotPath": "/workspace/scratch/586427eef9f2/roadmark-research/mg-remaining-residual-sources/mgs5-excite49-kenmuston.html",
+      "sha256": "bc32e0d5de41b2bbf2063725bcbd7a7858404af21d8c347dd8de70131c3bb039",
+      "contentType": "text/html; charset=utf-8",
+      "status": 200,
+      "pdf_links": []
+    },
+    {
+      "id": "mgs5-excite62-newspot",
+      "url": "https://www.newspot.com.au/all-stock/view/2025-MG-MGS5-EV/33917922",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "mgs5-excite62-xcite",
+      "url": "https://www.xciteautos.com.au/cars/2025-mg-mgs5-ev-excite-62-auto-my25",
+      "retrievedAt": "2026-10-10T08:10:47.236263+00:00",
+      "snapshotPath": "/workspace/scratch/586427eef9f2/roadmark-research/mg-remaining-residual-sources/mgs5-excite62-xcite.html",
+      "sha256": "53620110cf5598d38537a0ab0a7b4778f1918d10e00e54307ec9e052fbe86cad",
+      "contentType": "text/html; charset=UTF-8",
+      "status": 200,
+      "pdf_links": []
+    },
+    {
+      "id": "zs-brochure-au-three",
+      "url": "https://resource.digitaldealer.com.au/pdf/61223192566d10488eb26f178964849.pdf",
+      "retrievedAt": "2026-10-10T08:13:40.827233+00:00",
+      "snapshotPath": "/workspace/scratch/586427eef9f2/roadmark-research/mg-remaining-residual-sources/zs-brochure-au-three.pdf",
+      "sha256": "f34df8eb72a6b2d1ed0bdb636608e78a6c3bbe37e6da466768d60aa382352fb9",
+      "contentType": "application/pdf",
+      "status": 200,
+      "sourceType": "rejected_wrong_market_manufacturer_document"
+    },
+    {
+      "id": "zs-brochure-au-early",
+      "url": "https://media.adtorqueedge.com/new-cars/mg-aus/zs-ev/mg-zs-ev-specs.pdf",
+      "retrievedAt": "2026-10-10T08:13:37.747077+00:00",
+      "snapshotPath": "/workspace/scratch/586427eef9f2/roadmark-research/mg-remaining-residual-sources/zs-brochure-au-early.pdf",
+      "sha256": "ae01624101ee752a50353e9a488894a440c0951006c45c4ea36362392bc1639c",
+      "contentType": "application/pdf",
+      "status": 200,
+      "sourceType": "manufacturer_document_dealer_cdn"
+    },
+    {
+      "id": "zs-device-index",
+      "url": "https://device.report/m/6e2a83def976dd642019c7fc4a5feea62c08cf472d35743d5d4cb645eeda0aa7",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "mgs5-essence62-portside",
+      "url": "https://www.portsidemotors.com.au/new-cars/for-sale/mg/mgs5-ev/2025/essence-62/zs3em-my25/3752489",
+      "retrievedAt": "2026-10-10T08:13:44.035669+00:00",
+      "snapshotPath": "/workspace/scratch/586427eef9f2/roadmark-research/mg-remaining-residual-sources/mgs5-essence62-portside.html",
+      "sha256": "e206e6e1ecefb04ba92cfdbd4cccf1083bb9cda6975d46e5988f41a00cbe6532",
+      "contentType": "text/html",
+      "status": 200,
+      "pdf_links": []
+    },
+    {
+      "id": "cyberster-awd-motorama",
+      "url": "https://www.motorama.com.au/cars/new-diamond-red-2025-mg-cyberster-a2507140023",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "cyberster-albany-index",
+      "url": "https://albanymg.com.au/new-mg-cyberster/",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "zs-longrange-northern",
+      "url": "https://www.northernkia.com.au/vehicle-for-sale/B4505/2023-mg-zs-ev-long-range-auto-my23",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "zs-longrange-maw",
+      "url": "https://www.mawmotorgroup.com.au/stock/2023-mg-zsev-wagon-longrange-azs1my23-562309",
+      "retrievedAt": "2026-10-10T08:13:38.935169+00:00",
+      "snapshotPath": "/workspace/scratch/586427eef9f2/roadmark-research/mg-remaining-residual-sources/zs-longrange-maw.html",
+      "sha256": "05a633e81484af202676d9da51cb643b03812fcb30de5ec118b036dcda6c3c31",
+      "contentType": "text/html; charset=utf-8",
+      "status": 200,
+      "pdf_links": []
+    },
+    {
+      "id": "mgs5-excite49-westpoint",
+      "url": "https://www.westpointautos.com.au/cars/new-silver-2025-mg-mgs5-ev-4106082",
+      "retrievedAt": "2026-10-10T08:15:02.569375+00:00",
+      "snapshotPath": "/workspace/scratch/586427eef9f2/roadmark-research/mg-remaining-residual-sources/mgs5-excite49-westpoint.html",
+      "sha256": "350f4551fa2f0fcfbf587c1cdd73668e922e954e041576857f1f991d42e206cc",
+      "contentType": "text/html; charset=utf-8",
+      "status": 200,
+      "pdf_links": [
+        "https://res.cloudinary.com/total-dealer/image/upload/v1759103367/td_dashboard/ppsr-register-motor-vehicle-search-result-sample_panp90.pdf"
+      ]
+    },
+    {
+      "id": "mgs5-excite62-westpoint",
+      "url": "https://www.westpointautos.com.au/cars/new-black-2025-mg-mgs5-ev-4106079",
+      "retrievedAt": "2026-10-10T08:15:02.647498+00:00",
+      "snapshotPath": "/workspace/scratch/586427eef9f2/roadmark-research/mg-remaining-residual-sources/mgs5-excite62-westpoint.html",
+      "sha256": "f821968b5ab4d1ec8ad277803fbd5de71449a621c937fc9e55de40af981c5032",
+      "contentType": "text/html; charset=utf-8",
+      "status": 200,
+      "pdf_links": [
+        "https://res.cloudinary.com/total-dealer/image/upload/v1759103367/td_dashboard/ppsr-register-motor-vehicle-search-result-sample_panp90.pdf"
+      ]
+    },
+    {
+      "id": "zs-my23-lr-copy",
+      "url": "https://device.report/m/6e2a83def976dd642019c7fc4a5feea62c08cf472d35743d5d4cb645eeda0aa7.pdf",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "cyberster-awd-bartons",
+      "url": "https://www.bartonsmg.com.au/cars/new-diamond-red-2025-mg-cyberster-m022087",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "cyberster-awd-adelaide",
+      "url": "https://adelaidecitymg.com.au/mg079184-1703290-mg-cyberster-2025/",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "zs-my23-au-specs",
+      "url": "https://gaycarboys.com/wp-content/uploads/2023/06/2023-MG-ZS-EV-Range-Specifications.pdf",
+      "retrievedAt": "2026-10-10T08:15:21.221043+00:00",
+      "snapshotPath": "/workspace/scratch/586427eef9f2/roadmark-research/mg-remaining-residual-sources/zs-my23-au-specs.pdf",
+      "sha256": "124d189395740a2f749c0e1bab71d2ee296aac02752d989d3e2c5f0f0951d5b8",
+      "contentType": "application/pdf",
+      "status": 200,
+      "sourceType": "manufacturer_document_press_mirror"
+    },
+    {
+      "id": "mgs5-my25-brochure",
+      "url": "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf",
+      "retrievedAt": "2026-10-10T08:15:52.671929+00:00",
+      "snapshotPath": "/workspace/scratch/586427eef9f2/roadmark-research/mg-remaining-residual-sources/mgs5-my25-brochure.pdf",
+      "sha256": "ecb359d36fd030ee2628f4977baee32f4f14ab1e8776cc810772e78e77b47020",
+      "contentType": "application/pdf",
+      "status": 200,
+      "sourceType": "manufacturer_document_dealer_cdn"
+    },
+    {
+      "id": "cyberster-my245-brochure",
+      "url": "https://tddashboard.s3.ap-southeast-2.amazonaws.com/1739326916-mg-cyberster-spec-sheet.pdf",
+      "retrievedAt": "2026-10-10T08:15:52.418171+00:00",
+      "snapshotPath": "/workspace/scratch/586427eef9f2/roadmark-research/mg-remaining-residual-sources/cyberster-my245-brochure.pdf",
+      "sha256": "5bb0b2eef0e213b00ab053c6372e8d11ffc81b0dbade3cf1bd1b3c44b0b5317d",
+      "contentType": "application/pdf",
+      "status": 200,
+      "sourceType": "manufacturer_document_dealer_cdn"
+    },
+    {
+      "id": "mgs5-essence49-penfold",
+      "url": "https://www.penfold.com.au/cars/new-camden-grey-2025-mg-mgs5-ev-597586",
+      "error": "HTTP Error 500: Internal Server Error"
+    },
+    {
+      "id": "mgs5-essence49-macarthur",
+      "url": "https://www.macarthurautomotive.com.au/cars/new-dover-white-2026-mg-mgs5-ev-mg698624",
+      "retrievedAt": "2026-10-10T08:16:40.167289+00:00",
+      "snapshotPath": "/workspace/scratch/586427eef9f2/roadmark-research/mg-remaining-residual-sources/mgs5-essence49-macarthur.html",
+      "sha256": "95677f7bfabcf858eb9141f99ebc88b2ac62181fe3b8a556f312237da59208a9",
+      "contentType": "text/html; charset=utf-8",
+      "status": 200,
+      "pdf_links": []
+    },
+    {
+      "id": "zs-longrange-pickerings",
+      "url": "https://pickeringsmg.com.au/540820-1616805-mg-zsev-2023/",
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ],
+  "excludedSources": [
+    {
+      "sourceId": "zs-brochure-au-three",
+      "reason": "Australian dealer CDN PDF is actually MG Motor New Zealand MY24 August2024, p18. Excluded from Australian technical facts."
+    }
+  ],
+  "coverageLimits": [
+    "ZS EV sample has no accepted NEW vehicle; this is a bounded unresolved result, not a market-wide absence finding.",
+    "No clean MY25 Essence49 residual-new unit was established in the sampled live pages. New 2026/build2025 or failed-fetch leads were not forced into MY25.",
+    "Hobart explicitly advertises MY26 Excite49 New despite current national brochure omitting Excite. That is positive stock evidence with an unresolved manufacturer epoch, not permission to copy MY25 equipment.",
+    "No VIN-specific build sheet, registration registry or dealer confirmation was obtained; no external contact made."
+  ],
+  "addVersusRefreshRecommendations": [
+    {
+      "priority": 1,
+      "action": "refresh_NEW_stock_evidence_hold_technical_epoch",
+      "familyId": "mg-mgs5-ev",
+      "candidateIds": [
+        "portside-g10095"
+      ],
+      "recommendation": "Retain exact NEW Essence62 MY25 stock evidence only; normalized technical epoch/power remain null. Do not add Portside as a proven 125 kW or 150 kW unit. Preserve February2025 125 kW manufacturer facts as historical document reference, separate from this VIN; June2026 document also says MY25 and no production breakpoint is established."
+    },
+    {
+      "priority": 2,
+      "action": "refresh_availability_with_condition_flags",
+      "familyId": "mg-mgs5-ev",
+      "candidateIds": [
+        "westpoint-4106082",
+        "westpoint-4106079"
+      ],
+      "recommendation": "Add Excite49/62 named residual configurations plus advertised-new evidence, retaining plates/registration and conditional eligibility; do not count as clean unregistered stock."
+    },
+    {
+      "priority": 2,
+      "action": "refresh_availability_only_hold_exact_MY",
+      "familyId": "mg-cyberster",
+      "candidateIds": [
+        "adelaide-mg079184"
+      ],
+      "recommendation": "Refresh AWD specific-NEW evidence; retain normalized MY null and do not force current MY25/MY26 technical values onto the MY24.5 candidate."
+    },
+    {
+      "priority": 3,
+      "action": "retain_research_holds",
+      "candidateIds": [
+        "hobart-2604150358",
+        "macarthur-mg698624"
+      ],
+      "recommendation": "Preserve positive NEW evidence, but hold manufacturer epoch join. MY26 Excite49 evidence does not authorize MY25 equipment inheritance."
+    },
+    {
+      "priority": 3,
+      "action": "no_NEW_eligible_addition_from_this_sample",
+      "models": [
+        "ZS EV",
+        "Cyberster RWD"
+      ],
+      "recommendation": "Keep unresolved NEW/epoch holds. Retain the rejected used/demo evidence and documentary epochs; do not label either model nationally unavailable."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "applicationCheckpoint": 94,
+  "baseline": {
+    "previewArchive": {
+      "bytes": 16046108,
+      "path": "roadmark-recovery/final93-20261012/Roadmark-recovered-93-portable-preview.zip",
+      "sha256": "ffd7eddaaeaab3c812cf44685954cdfa11d41fb0c3abe26709de6f7da77995c4"
+    },
+    "sourceArchive": {
+      "bytes": 31976924,
+      "path": "roadmark-recovery/final93-20261012/Roadmark-recovered-93-source.zip",
+      "sha256": "f08aa0b5bccf15f1e6e0699d305e866618dc4cf03c5e7c745513db7e86800f6d"
+    }
+  },
+  "baselinePairId": "roadmark-recovered93-da97acddcc6319fb-FiQ7cjEGs0HqHeWcLMb47",
+  "candidateManifestSHA256": "33ec7a7dc94784d360e4a4e62c491f69b42f2663919f72376b303e24dce72643",
+  "changedApplicationFiles": [
+    {
+      "beforeSHA256": "8cf28ee6fcf2ebe54fd23549c49947deaf726a4a2cba72b057417729ad4e822b",
+      "bytes": 18501,
+      "operation": "modify",
+      "path": "docs/REVIEW_WORKFLOW.md",
+      "sha256": "d0bde7c41757787b4578cbebe52d7ddfda03e5ad38becf1369caa3abc8da7b07"
+    },
+    {
+      "beforeSHA256": null,
+      "bytes": 6737,
+      "operation": "add",
+      "path": "scripts/preview-report-review.ts",
+      "sha256": "d01375f8cecf89fa034de48cff7dc3ec68d336386b578612db83462338027241"
+    },
+    {
+      "beforeSHA256": null,
+      "bytes": 11449,
+      "operation": "add",
+      "path": "src/lib/report-review-dry-run.ts",
+      "sha256": "3aa9b6817764ad53f58ec4598c5a914e81c404f4f88ab750a4f667eafb0aad82"
+    },
+    {
+      "beforeSHA256": null,
+      "bytes": 3869,
+      "operation": "add",
+      "path": "tests/helpers/report-preview-fixture.ts",
+      "sha256": "1aeff036b6797db940ce28e1fafc27c962f17878708e3904f9645425d7256a98"
+    },
+    {
+      "beforeSHA256": null,
+      "bytes": 17850,
+      "operation": "add",
+      "path": "tests/report-review-cli.test.ts",
+      "sha256": "56c3eaf80e449288d5b621fac01303e885bfa4953e42d4be8e47c58f8ee60526"
+    },
+    {
+      "beforeSHA256": null,
+      "bytes": 13329,
+      "operation": "add",
+      "path": "tests/report-review-dry-run.test.ts",
+      "sha256": "90264499c2bfb05741e6c56eb594681afb405748201daf76bddf0a494bb6783b"
+    }
+  ],
+  "expectedInputsSHA256": "6fe274badc06ae64b9fa2be225d73019ef98bd503dcdf0cc9b38238daa33a3ba",
+  "finalBindingSHA256": "3e6c48aa5d1a40796415b6ffdef76571e01a8ce18eac372cb70d76adeb3b8eed",
+  "librarySavesComplete": false,
+  "pairId": "roadmark-recovered94-da97acddcc6319fb-bRi5VFzp553AQovWPUkLQ",
+  "releaseApproved": false,
+  "revisionManifestSHA256": "7baf0f650bfc0b957c51555617aa3e80898815874672f02c28d2fae2bdf362cd",
+  "schemaVersion": "roadmark94.provenance.v1",
+  "upstreamOriginalResearchRecoveryIncomplete": true,
+  "wholeMarketDateReverified": false
+}

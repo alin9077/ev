@@ -1,0 +1,1043 @@
+{
+  "schema": "roadmark102.independent-final-review.v1",
+  "reviewedAtUTC": "2026-10-13T00:13:10.093978+00:00",
+  "decision": "PASS_VERIFIED_SCOPED_CHECKPOINT_AND_SOURCE_PREVIEW_PACKAGES",
+  "blockingFindingsWithinReviewedGates": [],
+  "checkpoint": 102,
+  "reviewMode": "Independent static file reads, JSON/log parsing, hashing, inventory enumeration, byte comparison. No app/candidate/helper execution, tests, builds, browser use, Git, or live application writes. Root supplied authoritative actual execution and browser observations.",
+  "source": {
+    "staticApprovedCandidateManifestSHA256": "ac9860734726b5b23424df7875c64baa58b22c725614eeea2b09a7f049de59ef",
+    "baselineInputs": 2813,
+    "finalInputs": 2820,
+    "protectedUnchangedInputs": 2802,
+    "authoredBaselineInputs": 1684,
+    "authoredFinalInputs": 1691,
+    "modifiedPaths": 11,
+    "introducedPaths": 7,
+    "exactAllowedDelta": true,
+    "independentCurrentInventoryAndAllHashesMatch": true,
+    "unexpectedFiles": [],
+    "missingFiles": [],
+    "symlinks": []
+  },
+  "qa": {
+    "runResult": {
+      "path": "roadmark-rebuild102/qa-attempt1/run-result.json",
+      "bytes": 11743,
+      "sha256": "715c3b1508bb11c56cced0b77c10f4894d4f46d5cc165301327e1cf81008b4c3"
+    },
+    "actualOuterTerminal": {
+      "path": "roadmark-rebuild102/qa-attempt1-external-terminal.json",
+      "bytes": 105,
+      "sha256": "2f2b760982b4daabf31b604a66bf6cf24ab5e227ce52d3424c17f0b4d05e6a8e"
+    },
+    "runnerSHA256": "a043d6ac749a39d025bf452eddb55440d2ac81ba3b73be9f4d894a5055a2e10f",
+    "all42EvidenceFilesHashSizeMtimeExact": true,
+    "allSevenCommandsAndTerminalsVerified": true,
+    "serialNoOverlap": true,
+    "nonHTTPTestFiles": 132,
+    "totalTestsPassed": 1043,
+    "failures": 0,
+    "skips": 0,
+    "focused171OverlapNotAdditional": true,
+    "stages": [
+      {
+        "stage": "non_http_tests",
+        "command": [
+          "node",
+          "--import",
+          "tsx",
+          "--test",
+          "--test-reporter=tap",
+          "--test-concurrency=1",
+          "tests/action-feedback.test.ts",
+          "tests/atto1-additions.test.ts",
+          "tests/audi-porsche-catalogue.test.ts",
+          "tests/availability-corrections.test.ts",
+          "tests/availability-ranking.test.ts",
+          "tests/avatar-dimension-projection.test.ts",
+          "tests/bmw-mini-catalogue.test.ts",
+          "tests/bus-integration.test.ts",
+          "tests/bus-report-boundaries.test.ts",
+          "tests/buyer-display-copy-render.test.ts",
+          "tests/buyer-display-copy.test.ts",
+          "tests/buyer-proposal-storage.test.ts",
+          "tests/buyer-summary-timing.test.ts",
+          "tests/buyer-visible-conditions.test.ts",
+          "tests/cached-summary-ssr.test.ts",
+          "tests/catalogue-additions.test.ts",
+          "tests/catalogue-reuse.test.ts",
+          "tests/checkpoint100-market.test.ts",
+          "tests/checkpoint102-history.test.ts",
+          "tests/checkpoint102-trikes.test.ts",
+          "tests/checkpoint62-motorcycles.test.ts",
+          "tests/checkpoint64-market.test.ts",
+          "tests/checkpoint66-market.test.ts",
+          "tests/checkpoint67-market.test.ts",
+          "tests/checkpoint68-market.test.ts",
+          "tests/checkpoint69-market.test.ts",
+          "tests/checkpoint71-offer.test.ts",
+          "tests/checkpoint73-honda.test.ts",
+          "tests/checkpoint77-market.test.ts",
+          "tests/checkpoint80-market.test.ts",
+          "tests/checkpoint81-market.test.ts",
+          "tests/checkpoint82-strength.test.ts",
+          "tests/checkpoint83-market.test.ts",
+          "tests/checkpoint84-transit-city.test.ts",
+          "tests/checkpoint86-market.test.ts",
+          "tests/checkpoint88-market.test.ts",
+          "tests/checkpoint89-market.test.ts",
+          "tests/checkpoint91-desert-strength.test.ts",
+          "tests/checkpoint91-market.test.ts",
+          "tests/checkpoint93-market.test.ts",
+          "tests/checkpoint95-market.test.ts",
+          "tests/checkpoint96-source-history.test.ts",
+          "tests/checkpoint97-source-history.test.ts",
+          "tests/checkpoint99-history-coverage.test.ts",
+          "tests/checkpoint99-mazda.test.ts",
+          "tests/citable.test.ts",
+          "tests/comparison-context.test.ts",
+          "tests/comparison-focus.test.ts",
+          "tests/comparison-mobile-headers.test.ts",
+          "tests/comparison-picker.test.ts",
+          "tests/configuration-evidence-transport.test.ts",
+          "tests/configuration-option.test.ts",
+          "tests/configuration-payload.test.ts",
+          "tests/correction-guard-parity.test.ts",
+          "tests/corrections.test.ts",
+          "tests/denza-gac-smart-integration.test.ts",
+          "tests/detail-client-props.test.ts",
+          "tests/detail-discovery.test.ts",
+          "tests/detail-evidence-layout.test.ts",
+          "tests/detail-responsive.test.ts",
+          "tests/device-draft-interactions.test.ts",
+          "tests/device-issue-drafts.test.ts",
+          "tests/discovery-feedback.test.ts",
+          "tests/discovery-prefetch.test.ts",
+          "tests/discovery.test.ts",
+          "tests/domain.test.ts",
+          "tests/electric-trucks-catalogue.test.ts",
+          "tests/evidence-conditions.test.ts",
+          "tests/evidence-date.test.ts",
+          "tests/explorer-interactions.test.ts",
+          "tests/explorer-state.test.ts",
+          "tests/fact-condition-presentation.test.ts",
+          "tests/fact-issue-validation.test.ts",
+          "tests/fact-presentation.test.ts",
+          "tests/fact-validity.test.ts",
+          "tests/feature-corrections.test.ts",
+          "tests/fonz-integration.test.ts",
+          "tests/fonz-z-integration.test.ts",
+          "tests/footnote-origins.test.ts",
+          "tests/ford-custom-integration.test.ts",
+          "tests/geely-zeekr-xpeng-catalogue.test.ts",
+          "tests/home-hero.test.ts",
+          "tests/home-payload.test.ts",
+          "tests/hyundai-additions.test.ts",
+          "tests/issue-presentation.test.ts",
+          "tests/jeep-ora-integration.test.ts",
+          "tests/junior-integration.test.ts",
+          "tests/kia-additions.test.ts",
+          "tests/kia-cadillac-integration.test.ts",
+          "tests/ldv-van-additions.test.ts",
+          "tests/lexus-nissan-genesis-catalogue.test.ts",
+          "tests/local-report-store.test.ts",
+          "tests/mache-mazda6e-integration.test.ts",
+          "tests/market-audit-interactions.test.ts",
+          "tests/market-audit.test.ts",
+          "tests/market-review-reconciliation.test.ts",
+          "tests/market-view.test.ts",
+          "tests/mercedes-passenger-catalogue.test.ts",
+          "tests/mg-remaining-catalogue.test.ts",
+          "tests/mg4-additions.test.ts",
+          "tests/next-van-additions.test.ts",
+          "tests/page-evidence.test.ts",
+          "tests/portable-market-data.test.ts",
+          "tests/portable-packs.test.ts",
+          "tests/portable-string-codec.test.ts",
+          "tests/remaining-electric-vans-catalogue.test.ts",
+          "tests/remaining-hyundai.test.ts",
+          "tests/remaining-passenger-catalogue.test.ts",
+          "tests/remaining-utes-vans.test.ts",
+          "tests/remaining-volkswagen-integration.test.ts",
+          "tests/renault-kgm-integration.test.ts",
+          "tests/report-binding.test.ts",
+          "tests/report-queue-reader.test.ts",
+          "tests/report-review-cli.test.ts",
+          "tests/report-review-dry-run.test.ts",
+          "tests/report-review-proposal.test.ts",
+          "tests/research-refresh.test.ts",
+          "tests/road-scooters-catalogue.test.ts",
+          "tests/scene-dynamic-geometry.test.ts",
+          "tests/scenes.test.ts",
+          "tests/search.test.ts",
+          "tests/selling-points.test.ts",
+          "tests/server-catalogue-additions.test.ts",
+          "tests/source-citation-label92.test.ts",
+          "tests/stark-integration.test.ts",
+          "tests/structured-facts.test.ts",
+          "tests/suzuki-integration.test.ts",
+          "tests/talaria-market-reconciliation.test.ts",
+          "tests/toyota-subaru-additions.test.ts",
+          "tests/volvo-polestar-catalogue.test.ts",
+          "tests/vw-payload-correction.test.ts",
+          "tests/vw-skoda-catalogue.test.ts"
+        ],
+        "exitCode": 0,
+        "startedAtUTC": "2026-10-12T23:38:46.152001+00:00",
+        "finishedAtUTC": "2026-10-12T23:52:48.638479+00:00",
+        "durationNs": 842486029572,
+        "unchangedFrozenInputDigest": "5933904d0d15d02bda91dc0fa40caf0aea4b62642f36a654405753aa75f9b4e4",
+        "terminal": {
+          "path": "roadmark-rebuild102/qa-attempt1/non_http_tests-terminal.json",
+          "bytes": 6546,
+          "sha256": "f3e85bc7cdb65d4464f44a17cceeb00398fcf76022f91442c16339c15e7575ac"
+        },
+        "receipt": {
+          "path": "roadmark-rebuild102/qa-attempt1/non_http_tests.json",
+          "bytes": 808,
+          "sha256": "b489467d720521742e2ed8590a4a115e5f9d8df0a08d0440d934a486fcddc8a9"
+        },
+        "testSummary": {
+          "tests": 1042,
+          "suites": 0,
+          "pass": 1042,
+          "fail": 0,
+          "cancelled": 0,
+          "skipped": 0,
+          "todo": 0
+        }
+      },
+      {
+        "stage": "local_http_tests",
+        "command": [
+          "node",
+          "--import",
+          "tsx",
+          "--test",
+          "--test-reporter=tap",
+          "--test-concurrency=1",
+          "tests/local-review.test.ts"
+        ],
+        "exitCode": 0,
+        "startedAtUTC": "2026-10-12T23:52:49.923879+00:00",
+        "finishedAtUTC": "2026-10-12T23:52:54.963219+00:00",
+        "durationNs": 5039178952,
+        "unchangedFrozenInputDigest": "5933904d0d15d02bda91dc0fa40caf0aea4b62642f36a654405753aa75f9b4e4",
+        "terminal": {
+          "path": "roadmark-rebuild102/qa-attempt1/local_http_tests-terminal.json",
+          "bytes": 1092,
+          "sha256": "5d53ba24d0f0f75d9a963b79fcaf8a03457c84a44961310eee3936c6dae62c8c"
+        },
+        "receipt": {
+          "path": "roadmark-rebuild102/qa-attempt1/local_http_tests.json",
+          "bytes": 806,
+          "sha256": "94bbf531fb1fcc2cdc2ce49af91055b614c6a4d3b22dc07b8d1aba4888013c57"
+        },
+        "testSummary": {
+          "tests": 1,
+          "suites": 0,
+          "pass": 1,
+          "fail": 0,
+          "cancelled": 0,
+          "skipped": 0,
+          "todo": 0
+        }
+      },
+      {
+        "stage": "typecheck",
+        "command": [
+          "node",
+          "node_modules/typescript/bin/tsc",
+          "--noEmit"
+        ],
+        "exitCode": 0,
+        "startedAtUTC": "2026-10-12T23:52:56.151748+00:00",
+        "finishedAtUTC": "2026-10-12T23:52:59.014946+00:00",
+        "durationNs": 2863078315,
+        "unchangedFrozenInputDigest": "5933904d0d15d02bda91dc0fa40caf0aea4b62642f36a654405753aa75f9b4e4",
+        "terminal": {
+          "path": "roadmark-rebuild102/qa-attempt1/typecheck-terminal.json",
+          "bytes": 994,
+          "sha256": "8efa929ec4e39ec5802ab896b85743d643dbd32fdf783619cffb5bcf4ef5c6a3"
+        },
+        "receipt": {
+          "path": "roadmark-rebuild102/qa-attempt1/typecheck.json",
+          "bytes": 653,
+          "sha256": "2e21429eec4197202c42a8050dcba48034a79a7f3695120d094c48d970136fee"
+        }
+      },
+      {
+        "stage": "lint",
+        "command": [
+          "node",
+          "node_modules/eslint/bin/eslint.js",
+          "src",
+          "tests",
+          "scripts"
+        ],
+        "exitCode": 0,
+        "startedAtUTC": "2026-10-12T23:53:00.262129+00:00",
+        "finishedAtUTC": "2026-10-12T23:53:09.544820+00:00",
+        "durationNs": 9282367366,
+        "unchangedFrozenInputDigest": "5933904d0d15d02bda91dc0fa40caf0aea4b62642f36a654405753aa75f9b4e4",
+        "terminal": {
+          "path": "roadmark-rebuild102/qa-attempt1/lint-terminal.json",
+          "bytes": 1004,
+          "sha256": "dfc049cdf768796a80506b7416fe697a53a20fdd41932efa9f455be57e9f5469"
+        },
+        "receipt": {
+          "path": "roadmark-rebuild102/qa-attempt1/lint.json",
+          "bytes": 643,
+          "sha256": "ec03b8dfea5fcdd713cdc5f1a2a6ed2541e09753b9667e99fd0c26c309fee443"
+        }
+      },
+      {
+        "stage": "validation",
+        "command": [
+          "node",
+          "--import",
+          "tsx",
+          "scripts/validate.ts"
+        ],
+        "exitCode": 0,
+        "startedAtUTC": "2026-10-12T23:53:10.764818+00:00",
+        "finishedAtUTC": "2026-10-12T23:53:14.726460+00:00",
+        "durationNs": 3961533337,
+        "unchangedFrozenInputDigest": "5933904d0d15d02bda91dc0fa40caf0aea4b62642f36a654405753aa75f9b4e4",
+        "terminal": {
+          "path": "roadmark-rebuild102/qa-attempt1/validation-terminal.json",
+          "bytes": 998,
+          "sha256": "4b3d5fc82fcfbb70dc38b02c6e9f7c985c5d68337173b72992011d9258eb9c8e"
+        },
+        "receipt": {
+          "path": "roadmark-rebuild102/qa-attempt1/validation.json",
+          "bytes": 655,
+          "sha256": "38001d53258cc2ec43fa78b13bca52b88033871d73e055ebea6017238afb3894"
+        }
+      },
+      {
+        "stage": "production_build",
+        "command": [
+          "node",
+          "node_modules/next/dist/bin/next",
+          "build"
+        ],
+        "exitCode": 0,
+        "startedAtUTC": "2026-10-12T23:53:15.986658+00:00",
+        "finishedAtUTC": "2026-10-13T00:00:26.480958+00:00",
+        "durationNs": 430494230349,
+        "unchangedFrozenInputDigest": "5933904d0d15d02bda91dc0fa40caf0aea4b62642f36a654405753aa75f9b4e4",
+        "terminal": {
+          "path": "roadmark-rebuild102/qa-attempt1/production_build-terminal.json",
+          "bytes": 1017,
+          "sha256": "acad8a534c09ff9578e99b6f4068ceca7b867dac822c656c28c2dc1301b3733e"
+        },
+        "receipt": {
+          "path": "roadmark-rebuild102/qa-attempt1/production_build.json",
+          "bytes": 767,
+          "sha256": "1637e913eda81785e4ae6bef3a211abe5d299e792ca633196df222241b564e62"
+        },
+        "outputs": {
+          ".next/BUILD_ID": {
+            "bytes": 21,
+            "mtimeNs": 1791849211720089180,
+            "sha256": "6e4842e7b1c21ca1e1297269309d97c7a262a387defab39dc2afa225f9f7cfb1"
+          },
+          ".next/prerender-manifest.json": {
+            "bytes": 325548,
+            "mtimeNs": 1791849626449766312,
+            "sha256": "a3a3e06e8bf6753e024d341b5cf34ebd0849b651930178775cace5ce0e3315f7"
+          },
+          ".next/routes-manifest.json": {
+            "bytes": 5598,
+            "mtimeNs": 1791849626447239368,
+            "sha256": "7a2503dfc27ec67d17527bc2f595612ad4a29ca9631e4d0ad19fe4b1ee90ff79"
+          },
+          ".next/server/app-paths-manifest.json": {
+            "bytes": 1134,
+            "mtimeNs": 1791849197911763200,
+            "sha256": "404a5035d92a41934aa444f5ea289aff19b50d6368931161337a3ebc975721af"
+          }
+        }
+      },
+      {
+        "stage": "portable_build",
+        "command": [
+          "node",
+          "--import",
+          "tsx",
+          "scripts/build-portable.ts"
+        ],
+        "exitCode": 0,
+        "startedAtUTC": "2026-10-13T00:00:27.809617+00:00",
+        "finishedAtUTC": "2026-10-13T00:00:35.374066+00:00",
+        "durationNs": 7564335104,
+        "unchangedFrozenInputDigest": "5933904d0d15d02bda91dc0fa40caf0aea4b62642f36a654405753aa75f9b4e4",
+        "terminal": {
+          "path": "roadmark-rebuild102/qa-attempt1/portable_build-terminal.json",
+          "bytes": 1016,
+          "sha256": "945ff4db96a906129a1fa40755b9fccef0e3945b30a6caebd1ae507ebe170cec"
+        },
+        "receipt": {
+          "path": "roadmark-rebuild102/qa-attempt1/portable_build.json",
+          "bytes": 717,
+          "sha256": "cc220f17a10cc8f5687e5a23a6aa31195e4d58894e2ea77990237a81dab2e1d4"
+        },
+        "outputs": {
+          "index-b.html": {
+            "bytes": 37037396,
+            "mtimeNs": 1791849634613960244,
+            "sha256": "97e5186cacce6062d8e7c088f7c36f9cc71fe4f79a36807a7ee7cb2b7877652c"
+          },
+          "index.html": {
+            "bytes": 37037396,
+            "mtimeNs": 1791849633881942806,
+            "sha256": "97e5186cacce6062d8e7c088f7c36f9cc71fe4f79a36807a7ee7cb2b7877652c"
+          },
+          "public/index-b.html": {
+            "bytes": 37037396,
+            "mtimeNs": 1791849634981969010,
+            "sha256": "97e5186cacce6062d8e7c088f7c36f9cc71fe4f79a36807a7ee7cb2b7877652c"
+          },
+          "public/index.html": {
+            "bytes": 37037396,
+            "mtimeNs": 1791849634253951668,
+            "sha256": "97e5186cacce6062d8e7c088f7c36f9cc71fe4f79a36807a7ee7cb2b7877652c"
+          }
+        }
+      }
+    ],
+    "productionPages": 391,
+    "actualBuildID": "SCilKbWANhL34GKoq5Td2",
+    "buildIDFreshVsPreexisting": true,
+    "portableAliases": 4,
+    "portableAliasBytes": 37037396,
+    "portableAliasSHA256": "97e5186cacce6062d8e7c088f7c36f9cc71fe4f79a36807a7ee7cb2b7877652c",
+    "structuralValidationNotFactualTruth": true
+  },
+  "portableProof": {
+    "result": {
+      "path": "roadmark-rebuild102/portable-proof-attempt1.stdout.json",
+      "bytes": 6051,
+      "sha256": "373fd006806e0c7b9892a3f8ba28db51a36b32a0b6915858e93e5d33d845d1b8"
+    },
+    "actualOuterTerminal": {
+      "path": "roadmark-rebuild102/portable-proof-attempt1-external-terminal.json",
+      "bytes": 124,
+      "sha256": "2d6c9e7ffb79a3e598d45877e3856f60858f9818e80a5a3064b0a94259be3067"
+    },
+    "status": "passed",
+    "approvedVerifierPinMatches": true,
+    "finalContractPinsMatch": true,
+    "scope": "Exact decoded portable payload, static shell/CSS, enumerated source preservation, and narrow portable producer join only",
+    "runtimeReview": "portable-runtime-comparison.json",
+    "limitsRetained": [
+      "full_seven_stage_QA_acceptance_or_TAP_tallies",
+      "enumerated_input_map_completeness_or_dependency_integrity",
+      "emitted_runtime_semantics_or_unrelated_runtime_code_preservation",
+      "browser_hydration_interactions_layout_or_visible_Model_Y_hero",
+      "Next_client_projection_or_whole_emitted_Next_module_graph",
+      "real_phone_performance_publisher_claim_truth_or_market_completeness",
+      "signed_source_to_build_attestation_release_approval_or_durable_save"
+    ]
+  },
+  "browser": {
+    "rootFinalObservation": {
+      "path": "roadmark-rebuild102/browser/final-browser-review.json",
+      "bytes": 1994,
+      "sha256": "f3d9ebf56bdb440d3a624898ebab8b781fdfa2cac9e5e4de5f3af3779e95cc44"
+    },
+    "journeys": [
+      {
+        "file": {
+          "path": "roadmark-rebuild102/browser/portable-desktop-journey.json",
+          "bytes": 87973,
+          "sha256": "4c95db5b44f557d249c501d2c71e841baf19f01781e60f0bd16b39ec62743409"
+        },
+        "label": "portable-desktop102",
+        "recordCount": 243,
+        "orderedModelsAndSourceURLsExact": true,
+        "geometry": {
+          "documentWidth": 1165,
+          "dpr": 1,
+          "viewport": 1180
+        },
+        "pagination": [
+          24,
+          48,
+          72,
+          96,
+          120,
+          144,
+          168,
+          192,
+          216,
+          240,
+          243
+        ],
+        "moreButtonsRemaining": 0,
+        "steps": [
+          "alias",
+          "alias",
+          "class",
+          "combined",
+          "empty",
+          "keyboard_reset",
+          "repeat_reset",
+          "order_only",
+          "evidence",
+          "keyboard_focus",
+          "hero",
+          "back",
+          "forward",
+          "repeat_query_latest"
+        ]
+      },
+      {
+        "file": {
+          "path": "roadmark-rebuild102/browser/portable-narrow-journey.json",
+          "bytes": 87969,
+          "sha256": "3e346eeb588225a0d6e65ac4bc7ff1286d3a0737d4a53ab2e470781d307031a6"
+        },
+        "label": "portable-narrow102",
+        "recordCount": 243,
+        "orderedModelsAndSourceURLsExact": true,
+        "geometry": {
+          "documentWidth": 388,
+          "dpr": 1.25,
+          "viewport": 400
+        },
+        "pagination": [
+          24,
+          48,
+          72,
+          96,
+          120,
+          144,
+          168,
+          192,
+          216,
+          240,
+          243
+        ],
+        "moreButtonsRemaining": 0,
+        "steps": [
+          "alias",
+          "alias",
+          "class",
+          "combined",
+          "empty",
+          "keyboard_reset",
+          "repeat_reset",
+          "order_only",
+          "evidence",
+          "keyboard_focus",
+          "hero",
+          "back",
+          "forward",
+          "repeat_query_latest"
+        ]
+      },
+      {
+        "file": {
+          "path": "roadmark-rebuild102/browser/production-desktop-journey.json",
+          "bytes": 87975,
+          "sha256": "ac21a8a38d3bcd8edf4e825c369ca8e3971c58e5036ab0c24ffde70bfc7a48ca"
+        },
+        "label": "production-desktop102",
+        "recordCount": 243,
+        "orderedModelsAndSourceURLsExact": true,
+        "geometry": {
+          "documentWidth": 1165,
+          "dpr": 1,
+          "viewport": 1180
+        },
+        "pagination": [
+          24,
+          48,
+          72,
+          96,
+          120,
+          144,
+          168,
+          192,
+          216,
+          240,
+          243
+        ],
+        "moreButtonsRemaining": 0,
+        "steps": [
+          "alias",
+          "alias",
+          "class",
+          "combined",
+          "empty",
+          "keyboard_reset",
+          "repeat_reset",
+          "order_only",
+          "evidence",
+          "keyboard_focus",
+          "hero",
+          "back",
+          "forward",
+          "repeat_query_latest"
+        ]
+      },
+      {
+        "file": {
+          "path": "roadmark-rebuild102/browser/production-narrow-journey.json",
+          "bytes": 87971,
+          "sha256": "5f9cb905968b42502594016f3bf03c90fd48ebed5b8d757bcf4a783783a0ba14"
+        },
+        "label": "production-narrow102",
+        "recordCount": 243,
+        "orderedModelsAndSourceURLsExact": true,
+        "geometry": {
+          "documentWidth": 388,
+          "dpr": 1.25,
+          "viewport": 400
+        },
+        "pagination": [
+          24,
+          48,
+          72,
+          96,
+          120,
+          144,
+          168,
+          192,
+          216,
+          240,
+          243
+        ],
+        "moreButtonsRemaining": 0,
+        "steps": [
+          "alias",
+          "alias",
+          "class",
+          "combined",
+          "empty",
+          "keyboard_reset",
+          "repeat_reset",
+          "order_only",
+          "evidence",
+          "keyboard_focus",
+          "hero",
+          "back",
+          "forward",
+          "repeat_query_latest"
+        ]
+      }
+    ],
+    "trikeChecks": [
+      {
+        "file": {
+          "path": "roadmark-rebuild102/browser/portable-desktop-trikes.json",
+          "bytes": 2866,
+          "sha256": "a66dc283e1c7a0ba19e5e5bf4f23fa999fd34c860d8a23f056c687f9385f125d"
+        },
+        "label": "portable-desktop102",
+        "queries": [
+          {
+            "q": "Mate150",
+            "models": [
+              "Mate150"
+            ]
+          },
+          {
+            "q": "OZ eTrike",
+            "models": [
+              "Mate150"
+            ]
+          },
+          {
+            "q": "OZetrike",
+            "models": [
+              "Mate150"
+            ]
+          },
+          {
+            "q": "JP1500DZH-B",
+            "models": [
+              "Mate150"
+            ]
+          },
+          {
+            "q": "Mate150L",
+            "models": []
+          },
+          {
+            "q": "CT-KARGO",
+            "models": []
+          },
+          {
+            "q": "KOOL",
+            "models": []
+          },
+          {
+            "q": "CT-KUBE",
+            "models": []
+          },
+          {
+            "q": "OzPOD",
+            "models": []
+          },
+          {
+            "q": "E-QL150",
+            "models": []
+          },
+          {
+            "q": "DXP",
+            "models": [
+              "MG4 EV"
+            ]
+          }
+        ],
+        "classStatus": "41 model records. Exact-trim fact coverage varies; unverified measurements stay out of rankings.",
+        "orderStatus": "8 model records. Exact-trim fact coverage varies; unverified measurements stay out of rankings.",
+        "geometry": {
+          "doc": 1165,
+          "open": true,
+          "viewport": 1180
+        }
+      },
+      {
+        "file": {
+          "path": "roadmark-rebuild102/browser/portable-narrow-trikes.json",
+          "bytes": 2863,
+          "sha256": "5c9c4cc1d3ad6971185007ad1e7ebfeab18769df1d278e4bf8512c57bfd30c2c"
+        },
+        "label": "portable-narrow102",
+        "queries": [
+          {
+            "q": "Mate150",
+            "models": [
+              "Mate150"
+            ]
+          },
+          {
+            "q": "OZ eTrike",
+            "models": [
+              "Mate150"
+            ]
+          },
+          {
+            "q": "OZetrike",
+            "models": [
+              "Mate150"
+            ]
+          },
+          {
+            "q": "JP1500DZH-B",
+            "models": [
+              "Mate150"
+            ]
+          },
+          {
+            "q": "Mate150L",
+            "models": []
+          },
+          {
+            "q": "CT-KARGO",
+            "models": []
+          },
+          {
+            "q": "KOOL",
+            "models": []
+          },
+          {
+            "q": "CT-KUBE",
+            "models": []
+          },
+          {
+            "q": "OzPOD",
+            "models": []
+          },
+          {
+            "q": "E-QL150",
+            "models": []
+          },
+          {
+            "q": "DXP",
+            "models": [
+              "MG4 EV"
+            ]
+          }
+        ],
+        "classStatus": "41 model records. Exact-trim fact coverage varies; unverified measurements stay out of rankings.",
+        "orderStatus": "8 model records. Exact-trim fact coverage varies; unverified measurements stay out of rankings.",
+        "geometry": {
+          "doc": 388,
+          "open": true,
+          "viewport": 400
+        }
+      },
+      {
+        "file": {
+          "path": "roadmark-rebuild102/browser/production-desktop-trikes.json",
+          "bytes": 2868,
+          "sha256": "faac547aa6186ad1189b9a387f10747002b470593ddcd7bd19a2a358b175c5f3"
+        },
+        "label": "production-desktop102",
+        "queries": [
+          {
+            "q": "Mate150",
+            "models": [
+              "Mate150"
+            ]
+          },
+          {
+            "q": "OZ eTrike",
+            "models": [
+              "Mate150"
+            ]
+          },
+          {
+            "q": "OZetrike",
+            "models": [
+              "Mate150"
+            ]
+          },
+          {
+            "q": "JP1500DZH-B",
+            "models": [
+              "Mate150"
+            ]
+          },
+          {
+            "q": "Mate150L",
+            "models": []
+          },
+          {
+            "q": "CT-KARGO",
+            "models": []
+          },
+          {
+            "q": "KOOL",
+            "models": []
+          },
+          {
+            "q": "CT-KUBE",
+            "models": []
+          },
+          {
+            "q": "OzPOD",
+            "models": []
+          },
+          {
+            "q": "E-QL150",
+            "models": []
+          },
+          {
+            "q": "DXP",
+            "models": [
+              "MG4 EV"
+            ]
+          }
+        ],
+        "classStatus": "41 model records. Exact-trim fact coverage varies; unverified measurements stay out of rankings.",
+        "orderStatus": "8 model records. Exact-trim fact coverage varies; unverified measurements stay out of rankings.",
+        "geometry": {
+          "doc": 1165,
+          "open": true,
+          "viewport": 1180
+        }
+      },
+      {
+        "file": {
+          "path": "roadmark-rebuild102/browser/production-narrow-trikes.json",
+          "bytes": 2865,
+          "sha256": "23ad4cc6425426c9c6daa05c012f80941b2135f6e78fb14041cbb62d76896f18"
+        },
+        "label": "production-narrow102",
+        "queries": [
+          {
+            "q": "Mate150",
+            "models": [
+              "Mate150"
+            ]
+          },
+          {
+            "q": "OZ eTrike",
+            "models": [
+              "Mate150"
+            ]
+          },
+          {
+            "q": "OZetrike",
+            "models": [
+              "Mate150"
+            ]
+          },
+          {
+            "q": "JP1500DZH-B",
+            "models": [
+              "Mate150"
+            ]
+          },
+          {
+            "q": "Mate150L",
+            "models": []
+          },
+          {
+            "q": "CT-KARGO",
+            "models": []
+          },
+          {
+            "q": "KOOL",
+            "models": []
+          },
+          {
+            "q": "CT-KUBE",
+            "models": []
+          },
+          {
+            "q": "OzPOD",
+            "models": []
+          },
+          {
+            "q": "E-QL150",
+            "models": []
+          },
+          {
+            "q": "DXP",
+            "models": [
+              "MG4 EV"
+            ]
+          }
+        ],
+        "classStatus": "41 model records. Exact-trim fact coverage varies; unverified measurements stay out of rankings.",
+        "orderStatus": "8 model records. Exact-trim fact coverage varies; unverified measurements stay out of rankings.",
+        "geometry": {
+          "doc": 388,
+          "open": true,
+          "viewport": 400
+        }
+      }
+    ],
+    "browserNotRerunByIndependentReviewer": true,
+    "rootVisualReview": "Transient native screenshots inspected for both102 heroes at desktop and narrow width, compared with saved100 hero. Desktop market headers match between production and portable; narrow trike labels and expanded evidence wrap within viewport. No screenshots persisted. Original typography, colours, logo and nine-point hero presentation remain. Scoped visual review only.",
+    "rootReportedLimitations": [
+      "No real iPhone/Safari or Android/Chrome run",
+      "No complete-site mobile journey, accessibility, reduced-motion or performance signoff",
+      "Existing browser graphics stability issue remains unresolved; native renderer briefly retained stale narrow paint after expanding window. Reload restored correct desktop presentation on both surfaces; DOM width reported1180. Do not claim sustained stability fixed.",
+      "Initial stale CDP tab5 unavailable after context recovery; fresh tab on same browser succeeded",
+      "DXP search matches an existing MG4 EV record; no KYBURZ DXP card admitted. Search covers evidence/source content."
+    ]
+  },
+  "archiveReview": {
+    "status": "PASS_SOURCE_PREVIEW",
+    "details": "archive-review.json",
+    "source": {
+      "name": "Roadmark-102-source.zip",
+      "bytes": 49135311,
+      "sha256": "13a9c0f32f7a35839fde6377d33c873770e7b9aadee76d7b27f8db60fa9ff09d",
+      "members": 2823
+    },
+    "preview": {
+      "name": "Roadmark-102-portable-preview.zip",
+      "bytes": 16435592,
+      "sha256": "a733b6778701d48f2231ffcd0d012cf9268cf49f3e11bddc6b8330539cb38d5b",
+      "members": 6
+    },
+    "restorationBoundary": "Every archived file was read and hashed in memory; full source content and the four generated aliases can be restored together under the common roadmark/ root with no collision or predecessor patch chain. No cold install, execution, filesystem extraction, direct file:// run, dependency verification, or deployment was performed in this independent archive review. QA applies to the byte-identical original source/output evidence.",
+    "evidenceArchive": "To be verified by external final receipt after root packaging; no circular self-hash required"
+  },
+  "scopeLimits": [
+    "No real iPhone/Safari or Android/Chrome result",
+    "No sustained graphics-stability resolution; transient stale native paint required reload",
+    "No full-site mobile, accessibility, reduced-motion or performance signoff",
+    "No complete national market audit or new physical-stock verification",
+    "Mate150 inclusion remains a cautious advertised model offer with no exact retail trims, no VIN/RAV/state-registration confirmation, no numeric-ranking admission",
+    "No release, publication, deployment, or production readiness approval",
+    "No cryptographic source-to-build attestation or dependency-integrity proof"
+  ],
+  "evidenceReferences": [
+    {
+      "path": "roadmark-rebuild102/root-application.json",
+      "bytes": 262,
+      "sha256": "33df4384f532c72a39c138a34b692a453052eb396d0063f701970f0d2ad05e81"
+    },
+    {
+      "path": "roadmark-rebuild102/qa-candidate.json",
+      "bytes": 4348,
+      "sha256": "2354a05b7ebaad0ca9924c552d7f0a300f4828755641d255131826e4e89ab1dc"
+    },
+    {
+      "path": "roadmark-rebuild102/qa-baseline-inputs.json",
+      "bytes": 356770,
+      "sha256": "0777404050e976a91d2e87e1cb8e64c78d51cffc075e709abbc530cd341bf8aa"
+    },
+    {
+      "path": "roadmark-rebuild102/qa-expected-inputs.json",
+      "bytes": 357578,
+      "sha256": "75ec5fb0d9d3dd88cf61bbc0892ab126b13aa5f5423669b37f9b7e6dcc7ab6b7"
+    },
+    {
+      "path": "roadmark-rebuild102/authored-baseline-inputs.json",
+      "bytes": 185459,
+      "sha256": "6aad76783cc1787f64667b4fb6ef1fd71e7321c6e10ce35cc7f78441716362d5"
+    },
+    {
+      "path": "roadmark-rebuild102/final-authored-inputs.json",
+      "bytes": 186267,
+      "sha256": "fd50295e740811fbd232862f4309aab8a01be10ba9042a6033d56eeb9baa79f0"
+    },
+    {
+      "path": "roadmark-rebuild102/qa-attempt1/run-result.json",
+      "bytes": 11743,
+      "sha256": "715c3b1508bb11c56cced0b77c10f4894d4f46d5cc165301327e1cf81008b4c3"
+    },
+    {
+      "path": "roadmark-rebuild102/qa-attempt1-external-terminal.json",
+      "bytes": 105,
+      "sha256": "2f2b760982b4daabf31b604a66bf6cf24ab5e227ce52d3424c17f0b4d05e6a8e"
+    },
+    {
+      "path": "roadmark-rebuild102/portable-proof-final-inputs.json",
+      "bytes": 1669,
+      "sha256": "dcf93095d0d8036821ca1c84bed41e69380b0397395e965258c66bb5dc0e4696"
+    },
+    {
+      "path": "roadmark-rebuild102/portable-proof-attempt1.stdout.json",
+      "bytes": 6051,
+      "sha256": "373fd006806e0c7b9892a3f8ba28db51a36b32a0b6915858e93e5d33d845d1b8"
+    },
+    {
+      "path": "roadmark-rebuild102/portable-proof-attempt1.stderr.json",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "roadmark-rebuild102/portable-proof-attempt1-external-terminal.json",
+      "bytes": 124,
+      "sha256": "2d6c9e7ffb79a3e598d45877e3856f60858f9818e80a5a3064b0a94259be3067"
+    },
+    {
+      "path": "roadmark-rebuild102/browser/final-browser-review.json",
+      "bytes": 1994,
+      "sha256": "f3d9ebf56bdb440d3a624898ebab8b781fdfa2cac9e5e4de5f3af3779e95cc44"
+    },
+    {
+      "path": "roadmark-research/trike-checkpoint102-candidate/manifest.json",
+      "bytes": 7693,
+      "sha256": "ac9860734726b5b23424df7875c64baa58b22c725614eeea2b09a7f049de59ef"
+    },
+    {
+      "path": "roadmark-research/trike-checkpoint102-source-review/review.json",
+      "bytes": 3168,
+      "sha256": "afb6d3af45984880df2440c10d03d501d3158ad040855f42fc91aa9d969ed74a"
+    },
+    {
+      "path": "roadmark-research/trike-checkpoint102-proof-review/DECISION.json",
+      "bytes": 1274,
+      "sha256": "ceb051ab2d524e9d2185c7e7c69f85c59a62e0c6a194677672e2d86b66f9d7a5"
+    },
+    {
+      "path": "roadmark-research/trike-checkpoint102-proof-candidate/verify_checkpoint102_portable.py",
+      "bytes": 31981,
+      "sha256": "609f3387cfdb5c1729b5acc83f7b3992c56c1902199e193d16bb4a1678c73557"
+    }
+  ]
+}

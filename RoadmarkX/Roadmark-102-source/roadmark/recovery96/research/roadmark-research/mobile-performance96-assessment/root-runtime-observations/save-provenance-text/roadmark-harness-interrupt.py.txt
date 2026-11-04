@@ -1,0 +1,17 @@
+import subprocess,pathlib,time,json,datetime,socket,hashlib
+w=pathlib.Path('/workspace/scratch/586427eef9f2');h=w/'roadmark-research/mobile-performance96-assessment/measurement-candidate/acceptance-candidate/revision-2/run-acceptance.mjs';assert hashlib.sha256(h.read_bytes()).hexdigest()=='fa5e6a202ebfcc95a5f85289cc811fc0b6c9c823757d74b24859281c0480e51e';o=w/'roadmark-research/mobile-performance96-assessment/root-runtime-observations';log=o/'interruption-attempt1.log'
+with log.open('x') as f:
+ p=subprocess.Popen([str(w/'roadmark-restoration/browser92/node-runtime'),str(h),'--port-base','18850'],stdout=f,stderr=subprocess.STDOUT)
+ start=time.monotonic();signalled=False
+ while p.poll() is None and time.monotonic()-start<15:
+  if 'PASS Downstream abort' in log.read_text():
+   time.sleep(.5);p.terminate();signalled=True;break
+  time.sleep(.1)
+ try:code=p.wait(timeout=15)
+ except subprocess.TimeoutExpired:p.kill();code=p.wait()
+free=[]
+for port in [8766,*range(18850,18856)]:
+ with socket.socket() as s:
+  s.bind(('127.0.0.1',port));free.append(port)
+d={'observedAtUTC':datetime.datetime.now(datetime.timezone.utc).isoformat(),'signalSentToOwnedHarness':signalled,'actualExitCode':code,'elapsedSeconds':time.monotonic()-start,'releasedPorts':free,'scope':'Signal during idle-timeout case; no listener-acquisition, forced-child-exit or disk-failure simulation.'}
+(o/'interruption-attempt1-observation.json').write_text(json.dumps(d,indent=2)+'\n');print(json.dumps(d));print(log.read_text()[-700:])

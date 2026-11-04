@@ -1,0 +1,69 @@
+{
+  "checkpoint": 95,
+  "appliedAtUTC": "2026-10-12T01:44:21.994092+00:00",
+  "candidateManifestSHA256": "2b8f983e5da1524d0517aa0e400231c651a179fd524b71359cebb707516499ed",
+  "changes": [
+    {
+      "path": "data/market-inventory-2026-10-10.json",
+      "beforeSHA256": "96d518229b971bb0539ced668e6dd286be16f81fc25cf4b041d5b6dd0dbb6e39",
+      "sha256": "64f38d5d72f75c2a5264568602d5a1eacae49b1aba8b1e8cfcf5a9708a35c023",
+      "bytes": 1637572,
+      "precondition": "Exact preimage bytes required",
+      "stagedPath": "candidate/data/market-inventory-2026-10-10.json"
+    },
+    {
+      "path": "data/market-mazda-cx6e-lead-evidence-2026-10-12.json",
+      "beforeSHA256": null,
+      "sha256": "370449ee44a832977f99952ec6fc764fe38180c5c4aa10128fc4187856863c68",
+      "bytes": 11924,
+      "precondition": "Target must not exist",
+      "stagedPath": "candidate/data/market-mazda-cx6e-lead-evidence-2026-10-12.json"
+    },
+    {
+      "path": "qa/checkpoint95-market-fixture.json",
+      "beforeSHA256": null,
+      "sha256": "be8fc1fb14600253d57ecdcd2ec27927208c66abf853f03fcb34b5ff706259e2",
+      "bytes": 10670,
+      "precondition": "Target must not exist",
+      "stagedPath": "candidate/qa/checkpoint95-market-fixture.json"
+    },
+    {
+      "path": "tests/checkpoint93-market.test.ts",
+      "beforeSHA256": "85332fb4d43212d42b54d93775faba01add48148a993922b76985961dfd6314d",
+      "sha256": "f9d9714327f56a117e17e390b260fb3b65086a68f1557d4fe87ea50da5e0525b",
+      "bytes": 6304,
+      "precondition": "Exact preimage bytes required",
+      "stagedPath": "candidate/tests/checkpoint93-market.test.ts"
+    },
+    {
+      "path": "tests/checkpoint95-market.test.ts",
+      "beforeSHA256": null,
+      "sha256": "7103187118b092244866b77d8bf023f149dacf622f099005b1af69590a35ef0a",
+      "bytes": 9161,
+      "precondition": "Target must not exist",
+      "stagedPath": "candidate/tests/checkpoint95-market.test.ts"
+    },
+    {
+      "path": "tests/helpers/checkpoint93-market-history.ts",
+      "beforeSHA256": "a2c4fdabcec1e2846311c7e7be5a765650de5d7884d9f5fc9ed867c7c27e2a13",
+      "sha256": "fa560c77c9979bddab813dc5d46f5456c8fc1e3b5a74f86a1ee0e02ae3151977",
+      "bytes": 2709,
+      "precondition": "Exact preimage bytes required",
+      "stagedPath": "candidate/tests/helpers/checkpoint93-market-history.ts"
+    },
+    {
+      "path": "tests/helpers/checkpoint95-market-history.ts",
+      "beforeSHA256": null,
+      "sha256": "e8ba3100743ef068e863291913e53f8dadbb13ec92558178e0d17e3fa10459e3",
+      "bytes": 3666,
+      "precondition": "Target must not exist",
+      "stagedPath": "candidate/tests/helpers/checkpoint95-market-history.ts"
+    }
+  ],
+  "expectedInputCount": 1659,
+  "expectedInputsSHA256": "42e12fc28be57b321a7b05ce553f59cd19faed85161ee74dc0fb8122bc3b1c57",
+  "previousCheckpoint94Saved": true,
+  "fullQAPassed": false,
+  "browserVerified": false,
+  "releaseApproved": false
+}

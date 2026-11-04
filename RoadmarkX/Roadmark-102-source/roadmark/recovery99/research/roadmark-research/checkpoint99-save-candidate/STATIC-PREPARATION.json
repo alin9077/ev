@@ -1,0 +1,728 @@
+{
+  "schemaVersion": "roadmark99.static-preparation.v1",
+  "status": "revision5_static_candidate_awaiting_save_tooling_review_no_execution",
+  "pins": {
+    "source98": {
+      "path": "roadmark-recovery/final98-attempt1/Roadmark-recovered-98-source.zip",
+      "sha256": "182cfb8fa457fb6f5d0acbf9e0c45cb68f31c7f9bf78cda4ff73a73577c8761e",
+      "bytes": 37370410
+    },
+    "preview98": {
+      "path": "roadmark-recovery/final98-attempt1/Roadmark-recovered-98-portable-preview.zip",
+      "sha256": "f3af970d8ab4ca3a9e224b4fea6d3acbdb41630dd5b449567cf92e0fc1f7b403",
+      "bytes": 16380150
+    },
+    "saved98": {
+      "path": "roadmark-recovery/final98-review/correlated-save-receipt.json",
+      "sha256": "bf0eb155dcd0e44d77e0d5027657d063d0c70631c6753f74260b50d3f104e916",
+      "bytes": 5626
+    },
+    "saved98helper": {
+      "path": "roadmark-recovery/final98-review/actual-helper-results.json",
+      "sha256": "6fd08879ea5bfe945c6b8a8716d71f1ac632cb0cdd6689b95f2901575fa32112",
+      "bytes": 2675
+    },
+    "saved98plan": {
+      "path": "roadmark-recovery/final98-attempt1/upload-plan.json",
+      "sha256": "3bb6e2d9567b781906431cc7329fbda6bce4fe1f8fa44645c19bfd7308d8f642",
+      "bytes": 3402
+    },
+    "baselineInputs": {
+      "path": "roadmark-research/applied98/expected-inputs.json",
+      "sha256": "e1f1afa40710976b5ef057264cb09b3443866764f1ef584c9ce05a5ebad875d2"
+    },
+    "expectedInputs": {
+      "path": "roadmark-research/applied99/revision4/expected-inputs.json",
+      "sha256": "4a4204128daf108f35296c77d3beb4476a453c98ab571648da9d85b1b0085e86",
+      "bytes": 184478
+    },
+    "candidate": {
+      "path": "roadmark-research/applied99/revision4/qa-candidate-manifest.json",
+      "sha256": "51e2b73e998f80b4fd10260df54c97ba8d337642c384a4c57606e58875ee590a",
+      "bytes": 5748
+    },
+    "runner": {
+      "path": "roadmark-research/qa99-candidate/run_qa99.py",
+      "sha256": "a043d6ac749a39d025bf452eddb55440d2ac81ba3b73be9f4d894a5055a2e10f"
+    },
+    "sourceCandidate": {
+      "path": "roadmark-research/applied99/revision4/candidate-manifest.json",
+      "sha256": "c710eb25970241c720c8695024f66a31cbaaaa2e6dd4b101143b531a02ae0850",
+      "bytes": 47262
+    },
+    "initialSourceCandidate": {
+      "path": "roadmark-research/mazda-trim99-candidate/manifest.json",
+      "sha256": "089238cd78a3d7712cca9e691f78b9d91f7f46d292b30890086628edb4cf7c42",
+      "bytes": 45702
+    },
+    "initialExpectedInputs": {
+      "path": "roadmark-research/applied99/expected-inputs.json",
+      "sha256": "63d8ce2723a3262df3d52531e22fd81397e03ae09418068efc7362902817f25f",
+      "bytes": 184361
+    },
+    "initialQACandidate": {
+      "path": "roadmark-research/applied99/qa-candidate-manifest.json",
+      "sha256": "a4841e51e947a55b07cabfc55592d21f8b5308a66cda9a22cfd6e82161a2095e",
+      "bytes": 5269
+    },
+    "repairCandidate": {
+      "path": "roadmark-research/mazda-trim99-candidate/revision2/manifest.json",
+      "sha256": "5a68f63bad07833c31a173689616c06bc3dd6dd4b2044c7768aaa70d0fe0d46b",
+      "bytes": 1856
+    },
+    "secondSourceCandidate": {
+      "path": "roadmark-research/applied99/revision2/candidate-manifest.json",
+      "sha256": "c3ec1f62102a55a4721641fca61c56547a5193b011e659938ea7fbff87006c8c",
+      "bytes": 46678
+    },
+    "secondExpectedInputs": {
+      "path": "roadmark-research/applied99/revision2/expected-inputs.json",
+      "sha256": "8914e219a8fde52dcce4bab12ebae5b3541893e5cabdd1edc8ab3a143091cb76",
+      "bytes": 184478
+    },
+    "secondQACandidate": {
+      "path": "roadmark-research/applied99/revision2/qa-candidate-manifest.json",
+      "sha256": "7932ada0ed98a4ee5f63ae01f7758ee713642e8eda6fc8751a3a9a6c604f5450",
+      "bytes": 5748
+    },
+    "thirdSourceCandidate": {
+      "path": "roadmark-research/applied99/revision3/candidate-manifest.json",
+      "sha256": "d5e4a096ad701c4c575fcef2841a068d761477b38224ac0aa6b9299d89192afa",
+      "bytes": 47056
+    },
+    "thirdExpectedInputs": {
+      "path": "roadmark-research/applied99/revision3/expected-inputs.json",
+      "sha256": "29bcb7fca21d126b996fb506dd755dfac1d743710e07d265346b060d26fe7d7e",
+      "bytes": 184478
+    },
+    "thirdQACandidate": {
+      "path": "roadmark-research/applied99/revision3/qa-candidate-manifest.json",
+      "sha256": "89010ff70bac7d72a3084718e1eaf71d37b5a5fcdf037be4c00075aad427b72b",
+      "bytes": 5748
+    },
+    "typeRepairCandidate": {
+      "path": "roadmark-research/mazda-trim99-candidate/revision3/manifest.json",
+      "sha256": "ef550abc42ab248b26170b9b54c1121cf5e0d5aecead6d2f311d164072853a2f",
+      "bytes": 1776
+    },
+    "scopedTypeRepairCandidate": {
+      "path": "roadmark-research/mazda-trim99-candidate/revision4/manifest.json",
+      "sha256": "d744f716d6d5ca9c3db73bacf72390bc5315cafe4cd5575e1833e780fb3a6790",
+      "bytes": 2113
+    }
+  },
+  "requiredResearchPaths": [
+    "roadmark-research/qa99-candidate/MANIFEST.json",
+    "roadmark-research/qa99-candidate/README.md",
+    "roadmark-research/mazda-root-visual99/root-visual-observations.json",
+    "roadmark-research/review-mazda-technical/root-visual-follow-up.md",
+    "roadmark-research/review-mazda-technical/root-visual-follow-up-pins.json"
+  ],
+  "allowedResearchDirectories": [
+    "roadmark-research/applied99/",
+    "roadmark-research/mazda-trim99-candidate/",
+    "roadmark-research/review-mazda-trim99/",
+    "roadmark-research/qa99-candidate/",
+    "roadmark-research/review-qa99/",
+    "roadmark-research/checkpoint99-save-candidate/",
+    "roadmark-research/review-checkpoint99-save/",
+    "roadmark-research/browser-mazda99/",
+    "roadmark-research/mazda-root-visual99/",
+    "roadmark-research/review-mazda-technical/",
+    "roadmark-recovery/final99-review/"
+  ],
+  "protectedEarlierLibraryIDs": [
+    "libfile_0c2af50fad3881919851f3728b506be7",
+    "libfile_1525c14a8aa4819191c095600f897d34",
+    "libfile_1ea206b403f48191825690b9b455b21e",
+    "libfile_2072ae586eb88191a3f08e3bdda2abeb",
+    "libfile_27ab5129a6788191ad8ac343b706de19",
+    "libfile_2cd9ab40f714819192cd6af94341abd8",
+    "libfile_3d5976f913dc8191ad5078a7c37f9e71",
+    "libfile_4d421f590fbc8191954f4c06a79ca634",
+    "libfile_4db08d74cdf881919c71d26ae75dc26f",
+    "libfile_4dcf0d7fcf488191b7d658547498bad4",
+    "libfile_51b7321f2b9881918fba32743baaefdb",
+    "libfile_54928bae13448191a73a50e652f309ac",
+    "libfile_5db2ea332b788191ae18182ed6505cc9",
+    "libfile_5f7ba4b42dec81918884b41998f95952",
+    "libfile_687dbaeb797081918cfc4780c7dd2acc",
+    "libfile_6c04b112e8948191abbef4a6c7c0cb56",
+    "libfile_757ef78819408191a590c5593888467b",
+    "libfile_76ea97ed49ac819192a9ae5bc0f006bb",
+    "libfile_79dc7785f4208191a4d31f1025c311b3",
+    "libfile_8089aa3d019c8191be242847f158400b",
+    "libfile_85238a65ba3c8191a33d326c66c2782d",
+    "libfile_8831c2a6a158819187e606994428ed02",
+    "libfile_88e02edffb3481918debbba3a4216c69",
+    "libfile_8d99f8dbf3688191afd4abf1e501a8d8",
+    "libfile_8e2b0cfb395c819188950e493311bd14",
+    "libfile_8f6cc6ed4ca08191864212ab3f55f4e8",
+    "libfile_9620921dd9648191b6da2a70dda71ea8",
+    "libfile_9c3c3c5746c48191866174412f1311e2",
+    "libfile_a1dbfd71d6c4819181c337efc5acc641",
+    "libfile_aa513cea2a64819191f9447d66376019",
+    "libfile_ac54bb7148388191a7c60cb486f83384",
+    "libfile_bc094b5c14d48191be4393d5195876f5",
+    "libfile_bc0b2cecd5f081919b43ef57a109d24c",
+    "libfile_ca2df87cb9088191bbeb0d487d2c5bef",
+    "libfile_cf8908bb98688191a615333a425c9474",
+    "libfile_d5f1a4f2c99c8191b0d4a51fc3170dd4",
+    "libfile_d824bfda103c8191a1d665e289931632",
+    "libfile_fb159411750c8191b16edb10fd69e5c1"
+  ],
+  "actual98LibraryIDs": [
+    "libfile_b82f96d0b88481919df95e6f92ec530e",
+    "libfile_2cb2b5fcdc448191b85888c3902af124",
+    "libfile_95fe0a804ef4819181043a66f01a98a2",
+    "libfile_adfe17d6285c819186d69adc96f59c2a",
+    "libfile_0beb9a38a4908191b1033aa2bba889d6",
+    "libfile_a129a0f06ef081919ff1c404775a0299"
+  ],
+  "totalProtectedIDs": 44,
+  "actual98IdentityEvidence": {
+    "receipt": {
+      "path": "roadmark-recovery/final98-review/correlated-save-receipt.json",
+      "sha256": "bf0eb155dcd0e44d77e0d5027657d063d0c70631c6753f74260b50d3f104e916",
+      "bytes": 5626
+    },
+    "helper": {
+      "path": "roadmark-recovery/final98-review/actual-helper-results.json",
+      "sha256": "6fd08879ea5bfe945c6b8a8716d71f1ac632cb0cdd6689b95f2901575fa32112",
+      "bytes": 2675
+    },
+    "plan": {
+      "path": "roadmark-recovery/final98-attempt1/upload-plan.json",
+      "sha256": "3bb6e2d9567b781906431cc7329fbda6bce4fe1f8fa44645c19bfd7308d8f642",
+      "bytes": 3402
+    }
+  },
+  "candidateScriptsExecutedImportedOrSyntaxChecked": false,
+  "rootOwnsAllFutureExecution": true,
+  "prior97ProtectedIdentitySource": {
+    "path": "roadmark-recovery/final97-review/correlated-save-receipt.json",
+    "sha256": "bbf2421a8885f526891b7bef6dd6654f462ffdb460449da78bba571b97cb993c",
+    "bytes": 5626
+  },
+  "staticTextComparisons": {
+    "joiner": "Byte-identical to98 after inverse99 label substitution",
+    "qaValidationFunction": "Byte-identical to98 after inverse99 label substitution and exact fallback BUILD_ID change",
+    "packagingTransportAndFinalGuards": "Byte-identical to98 after inverse99 labels and immutable fallback98-to97 label substitution",
+    "correlatorAfterPriorIdentityProtection": "Byte-identical to98 after inverse99 label substitution",
+    "candidateOrProjectExecution": false,
+    "syntaxCheck": false
+  },
+  "prior98ReviewSources": [
+    {
+      "path": "roadmark-research/review-checkpoint98-save/REVIEW.md",
+      "sha256": "c2b4393b70fcba7134d63cdf29510d9b9aed671163760ca26d2bc025e091842d",
+      "bytes": 13122
+    },
+    {
+      "path": "roadmark-research/review-checkpoint98-save/DECISION.json",
+      "sha256": "befe70bff643d499bd8138eff32210f3d4599e4f4ce7a4687a24b2eca9cdf919",
+      "bytes": 2929
+    },
+    {
+      "path": "roadmark-research/review-checkpoint98-save/FINAL-BINDING-REVIEW.md",
+      "sha256": "c1e7e1341fbc18755c5912d1fe7d58999f030a72876bce6ed62f64c11e9027e6",
+      "bytes": 8444
+    },
+    {
+      "path": "roadmark-research/review-checkpoint98-save/FINAL-BINDING-DECISION.json",
+      "sha256": "ce25aeab46a9a68da253e754abd07f84020196ea342d72adf8f6024794568114",
+      "bytes": 3036
+    }
+  ],
+  "remainingRootBindings": [
+    "Independent successor save-tooling review, including chronological lineage, distinct failed configs and baseline98 research deduplication",
+    "Actual final full serial QA and successful outer exit",
+    "Actual final scoped Mazda semantic/browser/preservation proof",
+    "Final save binding with all real failures/quick retries, root review, content audit and no concurrent writers"
+  ],
+  "routeDerivation": {
+    "expectedCars": {
+      "path": "roadmark-research/mazda-trim99-candidate/expected-cars.json",
+      "sha256": "df4ae6b09af83da26d52d07c16389bd95357c1b91a66fcc4e7e04b27056a0ac4",
+      "bytes": 148876
+    },
+    "helper": {
+      "path": "roadmark-work/roadmark/src/lib/citable.ts",
+      "sha256": "b9f8933ce1771530cd21577473977e2af3d9de642de29c59a681a8ca72156bcd",
+      "bytes": 14063
+    },
+    "method": "Static transcription of carPath template /cars/${car.family}/${car.slug}; neither helper nor app executed",
+    "routes": [
+      "/cars/mazda-cx6e-au-aug2026/e35-gt-20261012",
+      "/cars/mazda-cx6e-au-aug2026/e35-azami-20261012"
+    ]
+  },
+  "priorStaticRevision": {
+    "manifest": {
+      "path": "roadmark-research/checkpoint99-save-candidate/history/static-proposal-4/MANIFEST.json",
+      "sha256": "9eeb7e1d508b8a29c292fde4dff0414f7abfb3bac4dbcf3cb6f0daf52b508696",
+      "bytes": 46446
+    },
+    "preservedDirectory": "roadmark-research/checkpoint99-save-candidate/history/static-proposal-4",
+    "completeTreeFilesPreserved": 141
+  },
+  "candidateReviewStatus": "Final cumulative revision4 source GO and actual root application retained; whole-project quick TS/lint and single-test JS identity observations remain bounded. FullQA3 running is not a pass.",
+  "applicationReceipt": {
+    "path": "roadmark-research/applied99/application-receipt.json",
+    "sha256": "2d6b314be9484e9884697adb06faf9ab31ac0c8283b9994e70374afd8ffbf24d",
+    "bytes": 6592
+  },
+  "sourceReview": {
+    "path": "roadmark-research/review-mazda-trim99/review-pins.json",
+    "sha256": "d726a91fd934a9287a7bbe679dbbf6da26daa63f67b16a72816041c4d747cec4",
+    "bytes": 47617
+  },
+  "staticDataComparisons": {
+    "allThreeRepairStepsExactlyComposeFrozenCumulativeManifests": true,
+    "eachCumulativeMapAndQAProjectionMatchesItsOwnRows": true,
+    "baselineInputCount": 1670,
+    "finalInputCount": 1675,
+    "newFiles": 5,
+    "replacedFiles": 17,
+    "historicalPostimages": [
+      {
+        "historyPhase": "initial99",
+        "applicationPath": "tests/checkpoint84-transit-city.test.ts",
+        "path": "roadmark-research/mazda-trim99-candidate/files/tests/checkpoint84-transit-city.test.ts",
+        "sha256": "d41567ac458ee42771332302b40dc5ea02ea6803bfc22f93cc27066bfabaf4dc",
+        "bytes": 11905
+      },
+      {
+        "historyPhase": "initial99",
+        "applicationPath": "tests/checkpoint95-market.test.ts",
+        "path": "roadmark-research/mazda-trim99-candidate/files/tests/checkpoint95-market.test.ts",
+        "sha256": "81eaf8711aaea83ef66004ef28021060781e3dd1cbc69f76ffacfc96b71146b5",
+        "bytes": 9419
+      },
+      {
+        "historyPhase": "revision3",
+        "applicationPath": "tests/helpers/checkpoint99-history.ts",
+        "path": "roadmark-research/applied99/revision4/preimages/tests/helpers/checkpoint99-history.ts",
+        "sha256": "c78c7048e1d9654ddb71b6680c9441bda9c30e4e569d65e6fc9bfd8bd13d8ceb",
+        "bytes": 7150
+      }
+    ],
+    "applicationExecutionOrCurrentLiveMapRecomputed": false
+  },
+  "reviewed99Contract": {
+    "bindingsResolved": true,
+    "candidateSchema": "roadmark-checkpoint99-candidate-manifest-v1",
+    "candidatePaths": [
+      "data/buyer-identity-snapshots-2026-10-10.json",
+      "data/buyer-selling-points-2026-10-10.json",
+      "data/catalogue-additions-2026-10-10.json",
+      "data/market-inventory-2026-10-10.json",
+      "data/mazda-cx6e-technical-evidence-2026-10-12.json",
+      "qa/checkpoint99-mazda-fixture.json",
+      "tests/buyer-display-copy-render.test.ts",
+      "tests/checkpoint84-transit-city.test.ts",
+      "tests/checkpoint93-market.test.ts",
+      "tests/checkpoint95-market.test.ts",
+      "tests/checkpoint96-source-history.test.ts",
+      "tests/checkpoint99-mazda.test.ts",
+      "tests/configuration-payload.test.ts",
+      "tests/domain.test.ts",
+      "tests/helpers/checkpoint84-runtime.ts",
+      "tests/helpers/checkpoint91-history.ts",
+      "tests/helpers/checkpoint95-market-history.ts",
+      "tests/helpers/checkpoint99-history.ts",
+      "tests/research-refresh.test.ts",
+      "tests/source-citation-label92.test.ts",
+      "tests/avatar-dimension-projection.test.ts",
+      "tests/checkpoint99-history-coverage.test.ts"
+    ],
+    "expectedInputCount": 1675,
+    "detailRoutes": [
+      "/cars/mazda-cx6e-au-aug2026/e35-gt-20261012",
+      "/cars/mazda-cx6e-au-aug2026/e35-azami-20261012"
+    ],
+    "requiredResearchPaths": [
+      "roadmark-research/mazda-trim99-candidate/README.md",
+      "roadmark-research/mazda-trim99-candidate/count-deltas.json",
+      "roadmark-research/mazda-trim99-candidate/expected-cars.json",
+      "roadmark-research/mazda-trim99-candidate/data-delta.json",
+      "roadmark-research/mazda-trim99-candidate/summary-delta.json",
+      "roadmark-research/mazda-trim99-candidate/adapter-audit/static-adapter-audit.md",
+      "roadmark-research/applied99/application-receipt.json",
+      "roadmark-research/applied99/focused-attempt1.log",
+      "roadmark-research/review-mazda-trim99/review.md",
+      "roadmark-research/review-mazda-trim99/review-pins.json",
+      "roadmark-research/applied99/focused-attempt1-observation.json",
+      "roadmark-research/applied99/revision2/candidate-manifest.json",
+      "roadmark-research/applied99/revision2/qa-candidate-manifest.json",
+      "roadmark-research/applied99/revision2/expected-inputs.json",
+      "roadmark-research/mazda-trim99-candidate/manifest.json",
+      "roadmark-research/applied99/qa-candidate-manifest.json",
+      "roadmark-research/applied99/expected-inputs.json",
+      "roadmark-research/mazda-trim99-candidate/revision2/manifest.json",
+      "roadmark-research/review-mazda-trim99/revision2-review.md",
+      "roadmark-research/review-mazda-trim99/revision2-review-pins.json",
+      "roadmark-research/review-mazda-trim99/cumulative-revision2-review-pins.json",
+      "roadmark-research/review-mazda-trim99/cumulative-revision2-review.md",
+      "roadmark-research/applied99/revision2/application-receipt.json",
+      "roadmark-research/applied99/qa-attempt1-external-exit.json",
+      "roadmark-research/applied99/qa-attempt1-outer-tool-excerpts.json",
+      "roadmark-research/applied99/qa-attempt1-external-terminal.json",
+      "roadmark-research/applied99/revision3/candidate-manifest.json",
+      "roadmark-research/applied99/revision3/expected-inputs.json",
+      "roadmark-research/applied99/revision3/qa-candidate-manifest.json",
+      "roadmark-research/applied99/revision3/application-receipt.json",
+      "roadmark-research/applied99/revision3/quick-checks-observation.json",
+      "roadmark-research/applied99/revision3/typecheck-quick.log",
+      "roadmark-research/applied99/revision4/candidate-manifest.json",
+      "roadmark-research/applied99/revision4/expected-inputs.json",
+      "roadmark-research/applied99/revision4/qa-candidate-manifest.json",
+      "roadmark-research/applied99/revision4/application-receipt.json",
+      "roadmark-research/applied99/revision4/quick-checks-observation.json",
+      "roadmark-research/applied99/revision4/typecheck-quick.log",
+      "roadmark-research/applied99/revision4/lint-quick.log",
+      "roadmark-research/applied99/revision4/type-erasure-observation.json",
+      "roadmark-research/mazda-trim99-candidate/revision3/manifest.json",
+      "roadmark-research/mazda-trim99-candidate/revision4/manifest.json",
+      "roadmark-research/review-mazda-trim99/revision3-review.md",
+      "roadmark-research/review-mazda-trim99/revision3-review-pins.json",
+      "roadmark-research/review-mazda-trim99/cumulative-revision3-review.md",
+      "roadmark-research/review-mazda-trim99/cumulative-revision3-review-pins.json",
+      "roadmark-research/review-mazda-trim99/revision3-typecheck-hold.md",
+      "roadmark-research/review-mazda-trim99/revision4-review.md",
+      "roadmark-research/review-mazda-trim99/revision4-review-pins.json",
+      "roadmark-research/review-mazda-trim99/cumulative-revision4-review.md",
+      "roadmark-research/review-mazda-trim99/cumulative-revision4-review-pins.json",
+      "roadmark-research/review-mazda-trim99/revision4-root-execution-gate.md",
+      "roadmark-research/review-mazda-trim99/revision4-root-execution-gate.json",
+      "roadmark-research/applied99/qa-attempt2-external-exit.json",
+      "roadmark-research/applied99/qa-attempt2-external-terminal.json",
+      "roadmark-research/applied99/qa-attempt2-launch.stdout.log",
+      "roadmark-research/applied99/qa-attempt2-launch.stderr.log"
+    ],
+    "expectedNewFileCount": 5,
+    "expectedReplacementCount": 17,
+    "requiredFailedAttemptPaths": [
+      "roadmark-research/applied99/qa-attempt1/run-result.json",
+      "roadmark-research/applied99/qa-attempt2/run-result.json"
+    ],
+    "supersededInitial99Postimages": [
+      {
+        "applicationPath": "tests/checkpoint84-transit-city.test.ts",
+        "path": "roadmark-research/mazda-trim99-candidate/files/tests/checkpoint84-transit-city.test.ts",
+        "sha256": "d41567ac458ee42771332302b40dc5ea02ea6803bfc22f93cc27066bfabaf4dc",
+        "bytes": 11905
+      },
+      {
+        "applicationPath": "tests/checkpoint95-market.test.ts",
+        "path": "roadmark-research/mazda-trim99-candidate/files/tests/checkpoint95-market.test.ts",
+        "sha256": "81eaf8711aaea83ef66004ef28021060781e3dd1cbc69f76ffacfc96b71146b5",
+        "bytes": 9419
+      }
+    ],
+    "supersededIntermediate99Postimages": [
+      {
+        "historyPhase": "revision3",
+        "applicationPath": "tests/helpers/checkpoint99-history.ts",
+        "path": "roadmark-research/applied99/revision4/preimages/tests/helpers/checkpoint99-history.ts",
+        "sha256": "c78c7048e1d9654ddb71b6680c9441bda9c30e4e569d65e6fc9bfd8bd13d8ceb",
+        "bytes": 7150
+      }
+    ],
+    "repairSteps": [
+      {
+        "phase": "revision2",
+        "repairPin": "repairCandidate",
+        "cumulativePin": "secondSourceCandidate",
+        "expectedInputsPin": "secondExpectedInputs",
+        "qaCandidatePin": "secondQACandidate",
+        "paths": [
+          "tests/avatar-dimension-projection.test.ts",
+          "tests/checkpoint84-transit-city.test.ts",
+          "tests/checkpoint99-history-coverage.test.ts"
+        ],
+        "lineageRefs": {
+          "parentCandidate": "initialSourceCandidate",
+          "repairCandidate": "repairCandidate"
+        }
+      },
+      {
+        "phase": "revision3",
+        "repairPin": "typeRepairCandidate",
+        "cumulativePin": "thirdSourceCandidate",
+        "expectedInputsPin": "thirdExpectedInputs",
+        "qaCandidatePin": "thirdQACandidate",
+        "paths": [
+          "tests/helpers/checkpoint99-history.ts"
+        ],
+        "lineageRefs": {
+          "parentCandidate": "initialSourceCandidate",
+          "repairCandidate": "repairCandidate",
+          "typeRepairCandidate": "typeRepairCandidate",
+          "previousCumulativeCandidate": "secondSourceCandidate"
+        }
+      },
+      {
+        "phase": "revision4",
+        "repairPin": "scopedTypeRepairCandidate",
+        "cumulativePin": "sourceCandidate",
+        "expectedInputsPin": "expectedInputs",
+        "qaCandidatePin": "candidate",
+        "paths": [
+          "tests/checkpoint95-market.test.ts",
+          "tests/helpers/checkpoint99-history.ts"
+        ],
+        "lineageRefs": {
+          "parentCandidate": "initialSourceCandidate",
+          "repairCandidate": "repairCandidate",
+          "typeRepairCandidate": "typeRepairCandidate",
+          "scopedTypeRepairCandidate": "scopedTypeRepairCandidate",
+          "previousCumulativeCandidate": "thirdSourceCandidate"
+        }
+      }
+    ],
+    "requiredFailedConfigurations": {
+      "roadmark-research/applied99/qa-attempt1/run-result.json": {
+        "expectedInputsPin": "initialExpectedInputs",
+        "qaCandidatePin": "initialQACandidate"
+      },
+      "roadmark-research/applied99/qa-attempt2/run-result.json": {
+        "expectedInputsPin": "secondExpectedInputs",
+        "qaCandidatePin": "secondQACandidate"
+      }
+    },
+    "admittedFailedConfigurationPins": [
+      {
+        "expectedInputsPin": "initialExpectedInputs",
+        "qaCandidatePin": "initialQACandidate"
+      },
+      {
+        "expectedInputsPin": "secondExpectedInputs",
+        "qaCandidatePin": "secondQACandidate"
+      },
+      {
+        "expectedInputsPin": "thirdExpectedInputs",
+        "qaCandidatePin": "thirdQACandidate"
+      },
+      {
+        "expectedInputsPin": "expectedInputs",
+        "qaCandidatePin": "candidate"
+      }
+    ]
+  },
+  "focusedResultSource": {
+    "path": "roadmark-research/applied99/focused-attempt1-observation.json",
+    "sha256": "239c790bd4f3a517d596a982abbe720f13b0543f1f91c50f3f55f21ab0be8b2e",
+    "bytes": 580
+  },
+  "focusedResultBoundary": "Actual root-supplied focused observation retained; no tests executed by this author. Full serial QA remains pending.",
+  "repairDeltaReview": {
+    "path": "roadmark-research/review-mazda-trim99/revision2-review-pins.json",
+    "sha256": "838bbcc221b1e5f1526d8f26e62007700dfabeba6076d827074b7cc56d96f2b8",
+    "bytes": 1742
+  },
+  "failedAttemptAdmission": "Known QA1 requires original20-row/1674 configuration and incomplete merged outer excerpts; known QA2 requires revision2 cumulative22-row/1675 configuration and actual separate launch files. Verify each actual frozen map/request/stage digests and sealed evidence. Do not relabel either run with revision3 or final revision4 source. Quick revision3 type failure is research history only, never a nonexistent full QA run.",
+  "cumulativeSourceReview": {
+    "path": "roadmark-research/review-mazda-trim99/cumulative-revision4-review-pins.json",
+    "sha256": "50f911084cb4e1d7f986580b7a4623694a46e44581aa4866161f6916db2d2fbf",
+    "bytes": 9049
+  },
+  "repairApplicationReceipt": {
+    "path": "roadmark-research/applied99/revision4/application-receipt.json",
+    "sha256": "5a54bf0452f214945d69b95f8fba0dd11db137f8c987095fcbe6adb21e9a03ef",
+    "bytes": 1746
+  },
+  "actualFailedAttempt1": {
+    "qaResult": {
+      "path": "roadmark-research/applied99/qa-attempt1/run-result.json",
+      "sha256": "84a54ea1cee48a9ce38d2636f89d7e4a73e272c687c1aaf7bb22af22e5866d82",
+      "bytes": 4257
+    },
+    "externalRunnerObservation": {
+      "path": "roadmark-research/applied99/qa-attempt1-external-exit.json",
+      "sha256": "43b3319afe220a7bb5784dbe24a5d1762bd7c29b2c84388db2096e1b3790550e",
+      "bytes": 553
+    },
+    "launchToolExcerpts": {
+      "path": "roadmark-research/applied99/qa-attempt1-outer-tool-excerpts.json",
+      "sha256": "0dbd5cd6d3cdfe1a52b09f96b3d1a97ca4b36f5318ffcf355f39a61cc0fbffe3",
+      "bytes": 715
+    }
+  },
+  "actualFailedAttempt1Observation": {
+    "finishedAtUTC": "2026-10-12T06:31:00.573981+00:00",
+    "testSummary": {
+      "tests": 901,
+      "suites": 0,
+      "pass": 899,
+      "fail": 2,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    "testSummarySource": {
+      "path": "roadmark-research/applied99/qa-attempt1/non_http_tests.stdout.log",
+      "sha256": "341de1cec1a901c7f45d595172ff2f42d54736b01f6310fa2cd33d7f068c45b3",
+      "bytes": 209471
+    },
+    "stageStatus": {
+      "lint": "not_started",
+      "local_http_tests": "not_started",
+      "non_http_tests": "failed",
+      "portable_build": "not_started",
+      "production_build": "not_started",
+      "typecheck": "not_started",
+      "validation": "not_started"
+    },
+    "outerExitCode": 1,
+    "terminal": {
+      "path": "roadmark-research/applied99/qa-attempt1-external-terminal.json",
+      "sha256": "f4c1b8881d86f4c6338feac809b8d0ab16a704ddea65cbbe16c68ad34005f3dc",
+      "bytes": 243
+    },
+    "completeOuterStreamsRetained": false,
+    "stdoutStderrSeparated": false,
+    "resultFollowsOriginalInitial99Configuration": true,
+    "failureResultHasFrozenInputDigest": false,
+    "failedStageHasTestSummary": false
+  },
+  "baseline98MapRetentionVerified": {
+    "sourceArchive": {
+      "path": "roadmark-recovery/final98-attempt1/Roadmark-recovered-98-source.zip",
+      "sha256": "182cfb8fa457fb6f5d0acbf9e0c45cb68f31c7f9bf78cda4ff73a73577c8761e",
+      "bytes": 37370410
+    },
+    "member": "roadmark/recovery98/research/roadmark-research/applied98/expected-inputs.json",
+    "sha256": "e1f1afa40710976b5ef057264cb09b3443866764f1ef584c9ce05a5ebad875d2",
+    "bytes": 183912,
+    "new99ResearchSelection": false,
+    "reason": "Avoid redundant applied98 research admission; preserve and verify the original baseline under exact predecessor-history rules."
+  },
+  "priorCumulativeSourceReview": {
+    "path": "roadmark-research/review-mazda-trim99/cumulative-revision2-review-pins.json",
+    "sha256": "e32dc6a7ef92e31cddbbe5e458e4fcc95a7ef3b7b3fe630f79a169051dd8de50",
+    "bytes": 9464
+  },
+  "priorRepairApplicationReceipt": {
+    "path": "roadmark-research/applied99/revision2/application-receipt.json",
+    "sha256": "87e4edcb596c42315171ec34e163dc33d3542f074bc5305d653af7c8532e4e27",
+    "bytes": 1883
+  },
+  "actualFailedAttempt2": {
+    "qaResult": {
+      "path": "roadmark-research/applied99/qa-attempt2/run-result.json",
+      "sha256": "e71fac202681dafff3389ead00c14a09b700f4808b40cefd09a9c557ee74f93b",
+      "bytes": 6063
+    },
+    "externalRunnerObservation": {
+      "path": "roadmark-research/applied99/qa-attempt2-external-exit.json",
+      "sha256": "a6f48fc24bf5ca22b646b9e2c765882e03bf744cab87877223901723d1bf9a32",
+      "bytes": 553
+    },
+    "launchStdout": {
+      "path": "roadmark-research/applied99/qa-attempt2-launch.stdout.log",
+      "sha256": "20b3b3ac3e2fc1afa871fa5682454f59fbecc0f5c5f670b8f1d31988255d87ba",
+      "bytes": 246
+    },
+    "launchStderr": {
+      "path": "roadmark-research/applied99/qa-attempt2-launch.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  },
+  "actualFailedAttempt2Observation": {
+    "finishedAtUTC": "2026-10-12T06:49:44.901333+00:00",
+    "testSummaries": {
+      "non_http_tests": {
+        "tests": 903,
+        "suites": 0,
+        "pass": 903,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0
+      },
+      "local_http_tests": {
+        "tests": 1,
+        "suites": 0,
+        "pass": 1,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0
+      }
+    },
+    "stageStatus": {
+      "lint": "not_started",
+      "local_http_tests": "passed",
+      "non_http_tests": "passed",
+      "portable_build": "not_started",
+      "production_build": "not_started",
+      "typecheck": "failed",
+      "validation": "not_started"
+    },
+    "outerExitCode": 1,
+    "terminal": {
+      "path": "roadmark-research/applied99/qa-attempt2-external-terminal.json",
+      "sha256": "a6d61f7037ac903d68bb3cee3963d7150d0d55b4e340a3bea31b9533883a1d54",
+      "bytes": 456
+    },
+    "actualSeparateOuterLaunchFiles": true,
+    "outerStderrBytes": 0,
+    "resultFollowsRevision2Configuration": true
+  },
+  "quickHistory": [
+    {
+      "path": "roadmark-research/applied99/revision3/quick-checks-observation.json",
+      "sha256": "c6d82ad495e4604dadf41f4928c5829276364073de598a43bb87c5b9c73b8052",
+      "bytes": 463
+    },
+    {
+      "path": "roadmark-research/applied99/revision3/typecheck-quick.log",
+      "sha256": "6cc99121293f51bfe92eb5772f705a4113a9a2308cad19939f19972e1d6f70e1",
+      "bytes": 13327
+    },
+    {
+      "path": "roadmark-research/applied99/revision4/quick-checks-observation.json",
+      "sha256": "2ef5755917c479ac8342cba86b76c9c1036ad314add902ca0b9188c7732c3df8",
+      "bytes": 412
+    },
+    {
+      "path": "roadmark-research/applied99/revision4/typecheck-quick.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "roadmark-research/applied99/revision4/lint-quick.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "roadmark-research/applied99/revision4/type-erasure-observation.json",
+      "sha256": "770b13940bf36e821794e5a7adf7d733cf9745d381dd1057b913d7a4ccabbd42",
+      "bytes": 622
+    }
+  ],
+  "revision5Scope": "Chronological initial99 -> three-test repair -> rejected one-helper type repair -> scoped two-test repair; exact intermediate maps/projections and failures retained. Preserve initial City84/95 and rejected c78 helper bytes outside research selection. Remove redundant baseline98 research re-addition while verifying its exact prior-archive bytes. No research suffix/directory gate broadening.",
+  "historicalRevision4Scope": "Remove the one superseded City84 .ts path only from mandatory research and research starter list. Retain its exact pin, raw-byte validation and source-history copy. Research suffix and directory allowlists stay unchanged.",
+  "historicalRevision4StaticComparisons": {
+    "packagerOnlyFunctionalDifferenceFromRevision3": "One path removed from REVIEWED99.requiredResearchPaths",
+    "supersededPinAndRawByteHistoryMechanismUnchanged": true,
+    "researchDirectoryAndSuffixGatesUnchanged": true,
+    "joinerAndCorrelatorByteIdenticalToRevision3": true,
+    "allStarterResearchSuffixesAdmitted": true,
+    "completeRevision3SnapshotChecksumsVerified": true,
+    "candidateOrProjectCodeExecuted": false
+  },
+  "revision5StaticComparisons": {
+    "successfulQAValidatorUnchangedAfterLabelsAndBaselineBuildID": true,
+    "packagingTransportAndFinalGuardsUnchangedAfterLabels": true,
+    "joinerAndCorrelatorByteIdenticalToReviewedRevision4": true,
+    "researchDirectoryAndSuffixPolicyUnbroadened": true,
+    "allHistoricalTsPostimagesOutsideResearchSelection": true,
+    "knownFullFailure1And2HaveDistinctFrozenConfigurations": true,
+    "allRepairLineageSnapshotsComposedAsDataOnly": true,
+    "candidateOrProjectCodeExecuted": false,
+    "syntaxCheckPerformed": false
+  }
+}

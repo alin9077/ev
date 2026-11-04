@@ -1,0 +1,205 @@
+{
+  "manifest": {
+    "path": "roadmark-research/checkpoint99-save-candidate/MANIFEST.json",
+    "sha256": "62e631345942b43e2b4daadf85abe75cf7c6b2e674c61730190232df3aa5369d",
+    "bytes": 78997
+  },
+  "packager": {
+    "path": "roadmark-research/checkpoint99-save-candidate/package_checkpoint99.py",
+    "sha256": "47e457d74ee2bc13aceb9c09a84a7e36bf8711433cc4ca7d04181390843d9069",
+    "bytes": 64203
+  },
+  "counts": {
+    "preimages": 17,
+    "priorStaticRevisionFiles": 141,
+    "files": 22,
+    "anchors": 22,
+    "starterResearch": 71,
+    "starterResearchBytes": 1624904,
+    "checksumEntries": 283
+  },
+  "lineage": {
+    "states": [
+      {
+        "phase": "initial99",
+        "rows": 20
+      },
+      {
+        "phase": "revision2",
+        "rows": 22
+      },
+      {
+        "phase": "revision3",
+        "rows": 22
+      },
+      {
+        "phase": "revision4",
+        "rows": 22
+      }
+    ],
+    "allTriplesExact": true,
+    "allImmediateAndBaselinePreimagesExact": true,
+    "finalRows": 22,
+    "finalInputs": 1675,
+    "finalReplacements": 17,
+    "finalAdditions": 5,
+    "liveCandidatePostimagesVerified": 22,
+    "saved98PreimagesVerified": 17,
+    "historicalRawPostimages": [
+      {
+        "applicationPath": "tests/checkpoint84-transit-city.test.ts",
+        "path": "roadmark-research/mazda-trim99-candidate/files/tests/checkpoint84-transit-city.test.ts",
+        "sha256": "d41567ac458ee42771332302b40dc5ea02ea6803bfc22f93cc27066bfabaf4dc",
+        "bytes": 11905,
+        "historyPhase": "initial99"
+      },
+      {
+        "applicationPath": "tests/checkpoint95-market.test.ts",
+        "path": "roadmark-research/mazda-trim99-candidate/files/tests/checkpoint95-market.test.ts",
+        "sha256": "81eaf8711aaea83ef66004ef28021060781e3dd1cbc69f76ffacfc96b71146b5",
+        "bytes": 9419,
+        "historyPhase": "initial99"
+      },
+      {
+        "historyPhase": "revision3",
+        "applicationPath": "tests/helpers/checkpoint99-history.ts",
+        "path": "roadmark-research/applied99/revision4/preimages/tests/helpers/checkpoint99-history.ts",
+        "sha256": "c78c7048e1d9654ddb71b6680c9441bda9c30e4e569d65e6fc9bfd8bd13d8ceb",
+        "bytes": 7150
+      }
+    ],
+    "baseline98MapArchivedBytesExact": true,
+    "finalVersusRevision2ChangedInputs": [
+      "tests/checkpoint95-market.test.ts"
+    ]
+  },
+  "failures": [
+    {
+      "attempt": 1,
+      "configuration": {
+        "baselineInputs": {
+          "path": "roadmark-research/applied98/expected-inputs.json",
+          "sha256": "e1f1afa40710976b5ef057264cb09b3443866764f1ef584c9ce05a5ebad875d2"
+        },
+        "expectedInputs": {
+          "path": "roadmark-research/applied99/expected-inputs.json",
+          "sha256": "63d8ce2723a3262df3d52531e22fd81397e03ae09418068efc7362902817f25f"
+        },
+        "candidate": {
+          "path": "roadmark-research/applied99/qa-candidate-manifest.json",
+          "sha256": "a4841e51e947a55b07cabfc55592d21f8b5308a66cda9a22cfd6e82161a2095e"
+        }
+      },
+      "sealedEvidenceFiles": 10,
+      "allHashesSizesMtimesExact": true,
+      "stages": {
+        "non_http_tests": {
+          "passed": false,
+          "returnCode": 1
+        }
+      },
+      "tallies": {
+        "non_http_tests.stdout.log": {
+          "tests": 901,
+          "pass": 899,
+          "fail": 2,
+          "cancelled": 0,
+          "skipped": 0,
+          "todo": 0
+        }
+      },
+      "outerExit": 1,
+      "terminalChunk": "564025",
+      "outerCapture": "explicitly_incomplete_merged_tool_excerpts"
+    },
+    {
+      "attempt": 2,
+      "configuration": {
+        "baselineInputs": {
+          "path": "roadmark-research/applied98/expected-inputs.json",
+          "sha256": "e1f1afa40710976b5ef057264cb09b3443866764f1ef584c9ce05a5ebad875d2"
+        },
+        "expectedInputs": {
+          "path": "roadmark-research/applied99/revision2/expected-inputs.json",
+          "sha256": "8914e219a8fde52dcce4bab12ebae5b3541893e5cabdd1edc8ab3a143091cb76"
+        },
+        "candidate": {
+          "path": "roadmark-research/applied99/revision2/qa-candidate-manifest.json",
+          "sha256": "7932ada0ed98a4ee5f63ae01f7758ee713642e8eda6fc8751a3a9a6c604f5450"
+        }
+      },
+      "sealedEvidenceFiles": 20,
+      "allHashesSizesMtimesExact": true,
+      "stages": {
+        "local_http_tests": {
+          "passed": true,
+          "returnCode": 0
+        },
+        "typecheck": {
+          "passed": false,
+          "returnCode": 2
+        },
+        "non_http_tests": {
+          "passed": true,
+          "returnCode": 0
+        }
+      },
+      "tallies": {
+        "local_http_tests.stdout.log": {
+          "tests": 1,
+          "pass": 1,
+          "fail": 0,
+          "cancelled": 0,
+          "skipped": 0,
+          "todo": 0
+        },
+        "non_http_tests.stdout.log": {
+          "tests": 903,
+          "pass": 903,
+          "fail": 0,
+          "cancelled": 0,
+          "skipped": 0,
+          "todo": 0
+        }
+      },
+      "outerExit": 1,
+      "terminalChunk": "6e6761",
+      "outerCapture": "actual_separate_launch_files"
+    }
+  ],
+  "knownResearchClosure": {
+    "explicitPlusAutomaticAndBothFailedAttemptsFiles": 104,
+    "bytes": 2881457,
+    "everyPathTypeSizeAndUTF8Admitted": true,
+    "baseline98RedundantCopyAbsent": true,
+    "allThreeRawTsPostimagesExcluded": true,
+    "futureSuccessfulQAAndBrowserBindingNotIncludedInThisCount": true
+  },
+  "unchangedMechanics": {
+    "verify_qa": true,
+    "browserAcceptance": true,
+    "transportAndFinalGuards": true,
+    "researchAllowlist": true,
+    "join_recovered99_source.py": true,
+    "verify_checkpoint99_saves.py": true
+  },
+  "DERIVATION.diff": {
+    "exact": true,
+    "pairs": 20,
+    "sha256": "727a824e0af033e533f3f43734451edafa8a60a137524f5f74268ee1dc2d71a6"
+  },
+  "REVISION-5.diff": {
+    "exact": true,
+    "pairs": 6,
+    "sha256": "f27edd211c224f8cc93c15fe00aa46bebe83437155a150200eaeb6a579d5b909"
+  },
+  "boundary": {
+    "candidateExecutedImportedOrSyntaxChecked": false,
+    "applicationModified": false,
+    "fullLiveMapRecomputed": false,
+    "QA3OutcomeEstablished": false,
+    "browserAcceptanceEstablished": false,
+    "archivesCreated": false,
+    "uploadsPerformed": false
+  }
+}

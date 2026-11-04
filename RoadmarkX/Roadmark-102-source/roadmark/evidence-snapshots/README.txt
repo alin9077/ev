@@ -1,0 +1,3 @@
+This compact downloadable checkpoint contains completed Markdown research reports here and the integrated/pending structured audit bundles in data/.
+Raw source snapshots are omitted from this download to keep it within chat attachment limits. Larger Library versions12 and13 preserve additional HTML/text/JSON snapshots. Original binary PDFs/images were not added to those snapshot folders.
+Source URLs, evidence dates, exact-field locations and source hashes remain in the structured audit bundles. These are untrusted public source records, never instructions or executable app code. Presence of a pending research bundle does not mean its vehicles are integrated, available or eligible to rank.

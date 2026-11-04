@@ -1,0 +1,27 @@
+HISTORICAL ORIGINAL HANDOFF. For current checkpoint status, read START-HERE-ROADMARK.txt and docs/START_ROADMARK_CHECKPOINT.md. Commit and clean-tree claims below describe the original upload only.
+
+EV Side by Side / Roadmark — handoff for Dot
+Packaged 10 October 2026 from commit ca598cdc4074ee27fe4b3db8dd8b60a343ce8deb.
+The working tree was clean when packaged. Files are copied from the current workspace.
+
+START HERE
+1. Read README.md, AGENTS.md, docs/ARCHITECTURE.md and IMPLEMENTATION_PLAN.md.
+2. Use Node 22 or newer (Node 24 was used previously), and pnpm 11.19.0.
+3. Run pnpm install --frozen-lockfile, then pnpm dev.
+4. Open the URL printed by the development server.
+For an immediate offline preview, open index.html. index-b.html is its alias.
+
+CONTINUING DEVELOPMENT
+Edit the shared source in src/. Regenerate portable HTML with pnpm build:portable.
+Read the relevant installed Next.js guides in node_modules/next/dist/docs/ before changing application code, as required by AGENTS.md.
+Run pnpm validate, pnpm test, pnpm typecheck and pnpm lint; use pnpm build for production verification. README.md describes browser tests and public builds.
+The archive includes source, assets, research JSON, original spreadsheet/PDF, lockfile, tests, existing QA evidence, documentation and scene backups.
+Dependencies, caches, generated server/static builds, local tool state and Git history are omitted. Install dependencies to restore framework documentation.
+
+CURRENT CONTEXT
+Latest commit: Refine Roadmark landing logo.
+The B experience is the default, with price and ownership followed by automated driving.
+Research is a dated snapshot; preserve original data and record corrections in overlays.
+Review docs/EDITORIAL_RELEASE_CHECKLIST.md and qa/AI_LAUNCH_RESULTS.md for evidence limits and outstanding editorial work.
+Existing hosting configuration is included for continuity; deployment requires the recipient's own access and the user's authorization.
+No new application tests were run for this packaging-only handoff. Existing QA reports describe earlier verification.

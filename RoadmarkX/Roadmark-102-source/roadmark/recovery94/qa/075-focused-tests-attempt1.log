@@ -1,0 +1,80 @@
+✔ strict flags require both explicit local paths and no duplicate/unknown/network options (1.981355ms)
+✔ invalid arguments/requests/UTF8 and oversized stdin fail before any file open (14.613874ms)
+✔ bounded stdin supports split multi-byte sequences; UTF8/BOM failures do not silently normalize (0.356027ms)
+✔ bounded descriptor reader uses exact flags, partial reads, offset cap and always closes (0.677621ms)
+✔ unsupported protective flags fail before opening without a fallback (0.396056ms)
+✔ nonregular, oversize, growth, shrink, metadata drift, invalid JSON and invalid UTF8 all close descriptors (0.960056ms)
+✔ read denial is sanitized and does not leak path or exception text (0.434645ms)
+✔ only the explicit bound filename and history are opened, never directory enumeration or fallback (10.029588ms)
+✔ bad history and binding failures happen after both readers have closed (5.450851ms)
+✔ real fixture queue above 200 files still selects exact report and remains byte-identical across repeats (144.688162ms)
+✔ real missing, directory, symlink, malformed and oversized inputs remain unchanged; no directory creation (51.008076ms)
+✔ real denied read fails safely when effective permissions permit the fixture (2.992338ms)
+✔ actual CLI success is one JSON envelope; parse failures emit only a safe code and empty stdout (293.589661ms)
+✔ broken stdout pipe fails with one safe code and no stack or input mutation (171.66628ms)
+✔ actual final FIFO is rejected promptly with no writer and no fixture changes (144.27568ms)
+✖ importing the CLI with no command invocation does not read reports, create data, print or start a server (187.82428ms)
+✔ new runtime source has no application wiring, write primitives, network clients or catalogue/register dependency (2.835802ms)
+✔ range: needs_evidence preserves binding and pending, unsaved, unverified boundary (12.191374ms)
+✔ range: no_change_proposed preserves binding and pending, unsaved, unverified boundary (4.414891ms)
+✔ feature:heated_seats: needs_evidence preserves binding and pending, unsaved, unverified boundary (2.640888ms)
+✔ feature:heated_seats: no_change_proposed preserves binding and pending, unsaved, unverified boundary (2.580287ms)
+✔ availability:exact_version: needs_evidence preserves binding and pending, unsaved, unverified boundary (3.567694ms)
+✔ availability:exact_version: no_change_proposed preserves binding and pending, unsaved, unverified boundary (2.119503ms)
+✔ strict request keys/actions/identities reject unknown fields and path-like IDs (1.665318ms)
+✔ flat request JSON rejects duplicates, equivalent escaped keys, invalid types, extra syntax and byte overflow (0.898313ms)
+✔ request text validation preserves exact accepted text and rejects accessors/non-JSON data (0.616989ms)
+✔ unbound, projected, forged and changed raw claims fail without fallback (5.696951ms)
+✔ exact predecessor is required and full-history projection handles supersession (9.183524ms)
+✔ corrupt prefix, duplicate IDs, chain drift, invalid chronology and collisions never trim or retarget (8.562889ms)
+✔ historical correction snapshots remain immutable but new output has no approved-register label (5.017838ms)
+✔ all data and dependency functions are captured before async digest mutation; results are detached/frozen (2.888781ms)
+✔ allocate ID and timestamp once; do not allocate ID on stale intent (2.183619ms)
+✔ full label/reason survive while preview truncation is disclosed, JSON escapes terminal controls (3.896819ms)
+✔ canonical history hashes are stable under key ordering but change under significant state (7.258504ms)
+✔ history count and doubled combined context cap fail without truncating (129.047972ms)
+✔ latest event is selected by exact ID even when prior history exceeds display limit (73.261679ms)
+ℹ tests 36
+ℹ suites 0
+ℹ pass 35
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1824.036735
+
+✖ failing tests:
+
+test at tests/report-review-cli.test.ts:2:18024
+✖ importing the CLI with no command invocation does not read reports, create data, print or start a server (187.82428ms)
+  AssertionError [ERR_ASSERTION]: file:///tmp/roadmark-preview94-import-JScN7C/[eval1]:3
+        for (const key of ['open','writeFile','mkdir','rename','unlink','link','chmod']) fs[key] = () => { throw new Error('Unexpected data IO: ' + key); };
+                                                                                                                 ^
+  
+  Error: Unexpected data IO: writeFile
+      at fs.<computed> [as writeFile] (file:///tmp/roadmark-preview94-import-JScN7C/[eval1]:3:112)
+      at Er.set (file:///workspace/scratch/586427eef9f2/roadmark-work/roadmark/node_modules/.pnpm/tsx@4.23.15/node_modules/tsx/dist/index-DE3OBZuV.mjs:13:9789)
+      at transformSync (file:///workspace/scratch/586427eef9f2/roadmark-work/roadmark/node_modules/.pnpm/tsx@4.23.15/node_modules/tsx/dist/index-DE3OBZuV.mjs:14:3887)
+      at load (file:///workspace/scratch/586427eef9f2/roadmark-work/roadmark/node_modules/.pnpm/tsx@4.23.15/node_modules/tsx/dist/register-nyXW-TH3.mjs:2:6073)
+      at nextStep (node:internal/modules/customization_hooks:189:26)
+      at loadWithHooks (node:internal/modules/customization_hooks:374:18)
+      at #loadSync (node:internal/modules/esm/loader:825:16)
+      at ModuleLoader.load (node:internal/modules/esm/loader:783:26)
+      at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader:494:31)
+      at #getOrCreateModuleJobAfterResolve (node:internal/modules/esm/loader:560:36)
+  
+  Node.js v24.19.0
+  
+  
+  1 !== 0
+  
+      at TestContext.<anonymous> (/workspace/scratch/586427eef9f2/roadmark-work/roadmark/tests/report-review-cli.test.ts:252:51)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

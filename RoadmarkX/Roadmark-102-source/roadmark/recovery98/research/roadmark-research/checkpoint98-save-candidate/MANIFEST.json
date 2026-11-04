@@ -1,0 +1,203 @@
+{
+  "schemaVersion": "roadmark98.static-save-tooling.v1",
+  "status": "static_candidate_not_executed_imported_or_syntax_checked",
+  "executionOwner": "root",
+  "files": [
+    {
+      "path": "DERIVATION.diff",
+      "sha256": "4c4647e94ec5a40e19e7274e152b0479ade4678a469cfa32c1bf4d207cd0083e",
+      "bytes": 59592
+    },
+    {
+      "path": "FACT-SECTION.template.json",
+      "sha256": "36be5bfc7a627aa6d5ca55d9128a69699d0dade9a3b99f54a8684361751f881f",
+      "bytes": 140
+    },
+    {
+      "path": "FAILED-ATTEMPT.template.json",
+      "sha256": "f07d8c52926fa426e442666656d43e3cfdee78dca5a723754065e735555eb13e",
+      "bytes": 108
+    },
+    {
+      "path": "GEOMETRY-CHECK.template.json",
+      "sha256": "19e28d1b3881f38ca8a937bab1592ab0c1d3f3c2418ebd6a1c3b8ea55714cda7",
+      "bytes": 291
+    },
+    {
+      "path": "README.md",
+      "sha256": "94d975f9cc552b7573f86e0f7d8a1f72d95176f444680c3225daba7beb75e196",
+      "bytes": 6962
+    },
+    {
+      "path": "RESEARCH-FILES.template.json",
+      "sha256": "c8e187767d2fe30b08fd7490186996c41c36fdeae79e3323c7b3683ed7aa9b78",
+      "bytes": 4246
+    },
+    {
+      "path": "ROOT-ACCEPTANCE.md",
+      "sha256": "e86a1efc19d6ff83901d2a2a76c9cb85439645af6d1304c2805c40360112e945",
+      "bytes": 12293
+    },
+    {
+      "path": "ROOT-EXTERNAL-EXIT.template.json",
+      "sha256": "c6876c1f63ec1a34b4b8a27d74f0823a49f8b8d81b057144fb75ae22e22ca5f6",
+      "bytes": 224
+    },
+    {
+      "path": "ROOT-REFLOW-OBSERVATION.template.json",
+      "sha256": "e905c8e7948af2a246bf732cbcb22443b10efa4959498e16118882354dbd9ab9",
+      "bytes": 1533
+    },
+    {
+      "path": "ROOT-SAVE-INPUTS.template.json",
+      "sha256": "387c6da70462a77d65a546d8ffc836f2ae03915caf5a2fd6cc978a8ae9d8edca",
+      "bytes": 433
+    },
+    {
+      "path": "STATIC-PREPARATION.json",
+      "sha256": "0ac029deb14dc9fb7d7965cdc02174b984f4e3a5a34ef91054e6fe08a5fbe752",
+      "bytes": 3750
+    },
+    {
+      "path": "VISUAL-CHECK.template.json",
+      "sha256": "60a12956b90b21e5263f732eda0c6836edd09582b189c727371c2e61e9afd796",
+      "bytes": 330
+    },
+    {
+      "path": "join_recovered98_source.py",
+      "sha256": "727a50096f7befc724b0a1917aa1fd8f8092c44736abf80e73ba9d6d17881c1f",
+      "bytes": 4232
+    },
+    {
+      "path": "package_checkpoint98.py",
+      "sha256": "494b922b6b170a10f39701b0024e9a9a41f428b74acb554b8b0a5023ff5977d1",
+      "bytes": 39674
+    },
+    {
+      "path": "verify_checkpoint98_saves.py",
+      "sha256": "a3b21249614e82682a4b3197de0a9ebad024edf5e414766c28f462264e6df6ce",
+      "bytes": 10185
+    }
+  ],
+  "derivation": "Reviewed checkpoint97 save revision2 mechanics; exact three-file reflow98 scope, saved97 fallback/history preservation, actual geometry and visible CUA receipt instead of ten-copy-mapping contract",
+  "basePacketManifest": {
+    "path": "roadmark-research/checkpoint97-save-candidate/revision-2/MANIFEST.json",
+    "sha256": "15d0125dfe76b7c5b800359fb2ab0e8482ee9f435affa7ceed20734a1cb533af"
+  },
+  "sourceCandidateReview": {
+    "path": "roadmark-research/review-narrow-detail98/REVIEW.md",
+    "sha256": "c7c920ff65c19cba3da5bdd301bb0a14e6aa28b81246e4ffcdf5d02659e35897"
+  },
+  "anchors": {
+    "source97": {
+      "path": "roadmark-recovery/final97-attempt1/Roadmark-recovered-97-source.zip",
+      "sha256": "1e75bf0751a4d959167e5ba3ffe0a8db01441dfe69336dbe9f90ffdd406a6a31"
+    },
+    "preview97": {
+      "path": "roadmark-recovery/final97-attempt1/Roadmark-recovered-97-portable-preview.zip",
+      "sha256": "1052aa94b700d9da0280e48aaab96d47bab2c8a35b00075164e020d8ef74d9b3"
+    },
+    "saved97": {
+      "path": "roadmark-recovery/final97-review/correlated-save-receipt.json",
+      "sha256": "bbf2421a8885f526891b7bef6dd6654f462ffdb460449da78bba571b97cb993c"
+    },
+    "baselineInputs": {
+      "path": "roadmark-research/applied97/expected-inputs-revision2.json",
+      "sha256": "cc6d49660a61a4f658194c87b64330c5149f435ebc2273f9e9fe19a20f00013e"
+    },
+    "expectedInputs": {
+      "path": "roadmark-research/applied98/expected-inputs.json",
+      "sha256": "e1f1afa40710976b5ef057264cb09b3443866764f1ef584c9ce05a5ebad875d2"
+    },
+    "candidate": {
+      "path": "roadmark-research/narrow-detail98-candidate/MANIFEST.json",
+      "sha256": "1201400954d6562939644bb09c522ae2275b545ede2e68e5b3abc601ba8cb1a9"
+    },
+    "runner": {
+      "path": "roadmark-research/qa98-candidate/run_qa98.py",
+      "sha256": "cdc2fb3925fff38fd41fe5a2fad9f5ea608915ec5b31bad2448f48ba4ec6879e"
+    }
+  },
+  "baselineInputCount": 1668,
+  "finalInputCount": 1670,
+  "replacementInputCount": 1,
+  "addedInputCount": 2,
+  "runtimeCSSDeclarationDelta": 3,
+  "source97Bytes": 36797595,
+  "preview97Bytes": 16359950,
+  "source97BuildID": "HtZ4GcLoYLo7SEOB7yLVd",
+  "preservation": "All saved97 payloads retained byte-identically except current top-level manifest and stylesheet; exact preimages and actual97 correlated receipt retained under new98 history; all older failure/history payloads retained",
+  "historical97SendObservation": {
+    "path": "roadmark-recovery/final97-review/chat-delivery-observation.json",
+    "sha256": "ad0bde27a6b044edb7bd4ece9d898a0c3ef5afd3615b5cb11d0dad10a8b0bb22",
+    "messageID": "Sentinel_6b794b1d13288191b6e5036391b566f6",
+    "status": "accepted",
+    "notIndependentDeliveryProof": true
+  },
+  "protectedEarlierLibraryIDs": [
+    "libfile_0c2af50fad3881919851f3728b506be7",
+    "libfile_1ea206b403f48191825690b9b455b21e",
+    "libfile_2072ae586eb88191a3f08e3bdda2abeb",
+    "libfile_27ab5129a6788191ad8ac343b706de19",
+    "libfile_2cd9ab40f714819192cd6af94341abd8",
+    "libfile_3d5976f913dc8191ad5078a7c37f9e71",
+    "libfile_4d421f590fbc8191954f4c06a79ca634",
+    "libfile_4db08d74cdf881919c71d26ae75dc26f",
+    "libfile_4dcf0d7fcf488191b7d658547498bad4",
+    "libfile_51b7321f2b9881918fba32743baaefdb",
+    "libfile_54928bae13448191a73a50e652f309ac",
+    "libfile_5db2ea332b788191ae18182ed6505cc9",
+    "libfile_5f7ba4b42dec81918884b41998f95952",
+    "libfile_6c04b112e8948191abbef4a6c7c0cb56",
+    "libfile_79dc7785f4208191a4d31f1025c311b3",
+    "libfile_8089aa3d019c8191be242847f158400b",
+    "libfile_85238a65ba3c8191a33d326c66c2782d",
+    "libfile_8831c2a6a158819187e606994428ed02",
+    "libfile_88e02edffb3481918debbba3a4216c69",
+    "libfile_8d99f8dbf3688191afd4abf1e501a8d8",
+    "libfile_8e2b0cfb395c819188950e493311bd14",
+    "libfile_8f6cc6ed4ca08191864212ab3f55f4e8",
+    "libfile_9620921dd9648191b6da2a70dda71ea8",
+    "libfile_9c3c3c5746c48191866174412f1311e2",
+    "libfile_a1dbfd71d6c4819181c337efc5acc641",
+    "libfile_ac54bb7148388191a7c60cb486f83384",
+    "libfile_bc094b5c14d48191be4393d5195876f5",
+    "libfile_ca2df87cb9088191bbeb0d487d2c5bef",
+    "libfile_cf8908bb98688191a615333a425c9474",
+    "libfile_d5f1a4f2c99c8191b0d4a51fc3170dd4",
+    "libfile_d824bfda103c8191a1d665e289931632",
+    "libfile_fb159411750c8191b16edb10fd69e5c1"
+  ],
+  "actual97LibraryIDsAlsoProtected": [
+    "libfile_aa513cea2a64819191f9447d66376019",
+    "libfile_687dbaeb797081918cfc4780c7dd2acc",
+    "libfile_bc0b2cecd5f081919b43ef57a109d24c",
+    "libfile_76ea97ed49ac819192a9ae5bc0f006bb",
+    "libfile_1525c14a8aa4819191c095600f897d34",
+    "libfile_757ef78819408191a590c5593888467b"
+  ],
+  "protectedLibraryIDCount": 38,
+  "allLibraryOperationsNewCreates": true,
+  "localUploadPolicyBytes": 33554432,
+  "genericServerCapClaimed": false,
+  "sourcePartsAlwaysProvidedForChat": true,
+  "chunkBytes": 16777216,
+  "actualShippedJoinerSelfTestRequiredBeforeUploadPlan": true,
+  "futureQAResultsProvided": false,
+  "futureBuildIdentityProvided": false,
+  "futureBrowserResultsProvided": false,
+  "futureSaveResultsProvided": false,
+  "phoneVerified": false,
+  "acceleratedWebGLVerified": false,
+  "fullJourneyVerified": false,
+  "fullVisualPassClaimed": false,
+  "sustainedStabilityClaimed": false,
+  "fresh98PerformanceImprovementClaimed": false,
+  "automatedBrowserSuitePassed": false,
+  "publicExportRun": false,
+  "releaseApproved": false,
+  "newEvidenceIndexRestorationIncluded": false,
+  "starterResearchFileCount": 18,
+  "starterResearchBytes": 124246,
+  "known98QuickHistory": "First focused attempt failed because of wrong cwd without running tests; retry passed three static tests; root recorded successful types and lint of the two new test files. Full serial QA/build/browser results are not asserted by this packet."
+}

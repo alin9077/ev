@@ -1,0 +1,17 @@
+node:fs:622
+  return binding.open(
+                 ^
+
+Error: EEXIST: file already exists, open '/workspace/scratch/586427eef9f2/roadmark-research/mobile-performance96-assessment/measurement-candidate/revision-2/logs/accept-2026-10-12T02-33-38-515Z-8d400ab5-main.jsonl'
+    at Object.openSync (node:fs:622:18)
+    at file:///workspace/scratch/586427eef9f2/roadmark-research/mobile-performance96-assessment/measurement-candidate/revision-2/loopback-access-logger.mjs:37:18
+    at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+    at async node:internal/modules/esm/loader:643:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  errno: -17,
+  code: 'EEXIST',
+  syscall: 'open',
+  path: '/workspace/scratch/586427eef9f2/roadmark-research/mobile-performance96-assessment/measurement-candidate/revision-2/logs/accept-2026-10-12T02-33-38-515Z-8d400ab5-main.jsonl'
+}
+
+Node.js v24.19.0

@@ -1,0 +1,1092 @@
+{
+  "schemaVersion": 1,
+  "scope": "Ten held market entries; only evidence URLs, check dates, notes and limitations. No availability, trim, technical, ranking, count or completeness admission.",
+  "marketFile": "data/market-inventory-2026-10-10.json",
+  "beforeSHA256": "ea4e4f7120e7739de987405740641997c15c6bb0704082724ae3d38055b6fdfa",
+  "afterSHA256": "2469610f9bea19221ed99483b01ca23ca4f9bb62356a873398e9895c2eb838ac",
+  "beforeJSONSHA256": "f355371683ec63d2eedf1c0e6fbc37f2c872e01a3cc1715c39f01ce3d11646be",
+  "afterJSONSHA256": "2a2efcd9acb9e088e974f27b1845c15db0d650e0b1d4547636bd2f693a389023",
+  "canonicalRowHashDefinition": "SHA-256 of UTF-8 JSON with recursively sorted keys, compact separators and unescaped Unicode.",
+  "baselineSourceMap": {
+    "path": "roadmark-research/applied99/revision4/expected-inputs.json",
+    "sha256": "4a4204128daf108f35296c77d3beb4476a453c98ab571648da9d85b1b0085e86",
+    "inputCount": 1675
+  },
+  "allowedFields": [
+    "checkedAt",
+    "evidenceNote",
+    "limitations",
+    "sourceUrls"
+  ],
+  "researchPackages": {
+    "bmw": [
+      {
+        "path": "roadmark-research/bmw-market-gap-research/research-candidate.json",
+        "sha256": "8c7a14e8937f85aabed7ec30676c5a26fdc09445203166fc51b21259fbe31937"
+      },
+      {
+        "path": "roadmark-research/bmw-market-gap-research/before-objects.json",
+        "sha256": "dc3b354910e4a52d1fd34a9435d7288deff359030d4b4ec177a134e7fefa5895"
+      },
+      {
+        "path": "roadmark-research/bmw-market-gap-research/source-provenance.json",
+        "sha256": "64831fac7b3fca4bc06b9c6c9144d7d2e3545094107875d9c543b0e44dffaf65"
+      },
+      {
+        "path": "roadmark-research/bmw-market-gap-research/SHA256SUMS",
+        "sha256": "5564599b0123a88ab9d8cdec459fe3ec66ebd138050e68301bd50eba463b74a1"
+      },
+      {
+        "path": "roadmark-research/review-bmw-market-gap/review.json",
+        "sha256": "61ea93982c3fbc82f26c0989e2cc732db5fe32eff795262c593d4a6d28cbbab3"
+      },
+      {
+        "path": "roadmark-research/review-bmw-market-gap/README.md",
+        "sha256": "2cec95c92ac50296672bc97494eef4d3466c34a51f42affad641088cefd40f53"
+      }
+    ],
+    "commercial": [
+      {
+        "path": "roadmark-research/next-market-gap-research/lead-dispositions.json",
+        "sha256": "6eba755df5527d2ff860ebb23f04864e66971d401e87f6ebfc23ea6a69ca295f"
+      },
+      {
+        "path": "roadmark-research/next-market-gap-research/input-manifest.json",
+        "sha256": "3a21b3f5315e7c05f1dbfd2e2710473457b6ad04a7cead2aa546d750ebd20e7d"
+      },
+      {
+        "path": "roadmark-research/next-market-gap-research/source-provenance.json",
+        "sha256": "7f8eb04fffb8c56fb63db429834ecd959b7de3dc49fafe3bf84913ebc0163270"
+      },
+      {
+        "path": "roadmark-research/next-market-gap-research/manifest.json",
+        "sha256": "131b3ccbbc11229fc0dd21d5007da2675e09086f59c5966c8b8b4bb95eddd8a1"
+      },
+      {
+        "path": "roadmark-research/review-next-market-gap/REVIEW.json",
+        "sha256": "8b276209aec9b5587d553a9cda05d25a760653ae52b1b56c055e25547bb28df7"
+      },
+      {
+        "path": "roadmark-research/review-next-market-gap/REVIEW.md",
+        "sha256": "d0522b0f76047f149699a52d1d69a171861d08a198655e8a731b5ad1d3979257"
+      }
+    ],
+    "mercedes": [
+      {
+        "path": "roadmark-research/mercedes-market-batch-research/candidate.json",
+        "sha256": "42b92bc028673a2af0aa7730dcfb8fa24dfc84e834b1462289629a0b85a13df6"
+      },
+      {
+        "path": "roadmark-research/mercedes-market-batch-research/capture-manifest.json",
+        "sha256": "97fd9578b149199fcf71636a5ed1c511f78f92c9489a958b31caa4aa7765ba09"
+      },
+      {
+        "path": "roadmark-research/review-mercedes-market-batch/VERIFICATION.json",
+        "sha256": "523f047ae3bc174436acd746d24c7dea549c2e4f1ea9e1a1812ea20792f31d81"
+      },
+      {
+        "path": "roadmark-research/review-mercedes-market-batch/REVIEW.md",
+        "sha256": "42d3d4d44ea0587608447d1969fad09123490e5d312dd2ef24bb67bcf75b5a0d"
+      }
+    ]
+  },
+  "provenanceQualifications": [
+    "Reviewed saved sources only; this amendment preparation performs no fresh network observation.",
+    "BMW hashes identify local web-tool extraction or sparse excerpts, not publisher-origin bytes. Tool-observation windows are not certified origin-fetch times.",
+    "DFAC successful original HTML is distinguished from web extracts. Pioneer successful web extracts are distinct from later HTTP 406 failures.",
+    "Mercedes original HTTP bytes, derived extraction, cached/search extracts and request-error metadata remain separately identified in the pinned research candidate and capture manifest.",
+    "checkedAt records the 12 October 2026 evidence observation, not a manufacturer publication date, model year, accepted order or delivery date.",
+    "The i3 arrival statement is Australian and year-only; iX4 March 2027 launch is from the dated global release. M60 timing remains variant-specific.",
+    "Historical BMW sales codes and missing prior dossiers have not been reverified or restored. The selected-build permission restriction remains in place; the failed iX4 technical route was not retried.",
+    "This bounded sample does not prove nationwide unavailability or a complete Australian market or trim universe.",
+    "Research/review hashes preserve provenance without copying analysis-only publisher captures into the application or deliverable."
+  ],
+  "countsBefore": {
+    "consolidatedModelAuditRecords": 242,
+    "byVehicleClass": {
+      "bus": 28,
+      "passenger": 114,
+      "truck": 28,
+      "ute": 13,
+      "van": 19,
+      "motorcycle": 40
+    },
+    "byOrderStatus": {
+      "listed_unconfirmed": 193,
+      "accepting_orders": 36,
+      "accepting_order_requests_advertised": 7,
+      "not_current": 4,
+      "preorder": 2
+    },
+    "namedTrimConfigurationEntries": 395,
+    "exactTrimSetMissingRecords": 54,
+    "newStockListedModelRecords": 69,
+    "unresolvedLeadGroups": 143,
+    "reconciledLeadGroups": 21,
+    "peripheralRecords": 5,
+    "duplicateModelMerges": 6
+  },
+  "countsAfter": {
+    "consolidatedModelAuditRecords": 242,
+    "byVehicleClass": {
+      "bus": 28,
+      "passenger": 114,
+      "truck": 28,
+      "ute": 13,
+      "van": 19,
+      "motorcycle": 40
+    },
+    "byOrderStatus": {
+      "listed_unconfirmed": 193,
+      "accepting_orders": 36,
+      "accepting_order_requests_advertised": 7,
+      "not_current": 4,
+      "preorder": 2
+    },
+    "namedTrimConfigurationEntries": 395,
+    "exactTrimSetMissingRecords": 54,
+    "newStockListedModelRecords": 69,
+    "unresolvedLeadGroups": 143,
+    "reconciledLeadGroups": 21,
+    "peripheralRecords": 5,
+    "duplicateModelMerges": 6
+  },
+  "changes": [
+    {
+      "section": "records",
+      "index": 33,
+      "id": "bmw-i3",
+      "researchBatch": "bmw",
+      "sourceIds": [
+        "S01",
+        "S02",
+        "S03",
+        "S05",
+        "S06"
+      ],
+      "before": {
+        "id": "bmw-i3",
+        "brand": "BMW",
+        "model": "i3",
+        "trims": [
+          "50 xDrive"
+        ],
+        "trimCoverage": "partial",
+        "sourceUrls": [
+          "https://www.bmw.com.au/en/electric-cars.html"
+        ],
+        "checkedAt": "2026-10-10",
+        "orderStatus": "listed_unconfirmed",
+        "stockStatus": "unverified",
+        "evidenceNote": "Exact current AU electric model card/configuration listing; no individual stock.",
+        "limitations": [
+          "Not a complete trim/specification audit.",
+          "No specific new dealer unit or actual delivery timing verified."
+        ],
+        "rankingEligible": false,
+        "availabilityCategory": "current_listing_order_stock_unconfirmed",
+        "vehicleClass": "passenger",
+        "modelAliases": [],
+        "sourceRecordIds": [
+          "bmw-i3"
+        ],
+        "sourceArtifacts": [
+          "market-inventory.json"
+        ],
+        "evidenceHistory": [
+          {
+            "sourceArtifact": "market-inventory.json",
+            "sourceRecordId": "bmw-i3",
+            "orderStatus": "listed_unconfirmed",
+            "stockStatus": "unverified",
+            "trims": [
+              "50 xDrive"
+            ],
+            "evidenceNote": "Exact current AU electric model card/configuration listing; no individual stock.",
+            "limitations": [
+              "Not a complete trim/specification audit.",
+              "No specific new dealer unit or actual delivery timing verified."
+            ],
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/electric-cars.html"
+            ]
+          }
+        ],
+        "modelYear": null,
+        "catalogueCoverage": "market_audit_only",
+        "completeVehicleCountEligible": null,
+        "recordScope": "model_or_named_configuration_family"
+      },
+      "after": {
+        "id": "bmw-i3",
+        "brand": "BMW",
+        "model": "i3",
+        "trims": [
+          "50 xDrive"
+        ],
+        "trimCoverage": "partial",
+        "sourceUrls": [
+          "https://www.bmw.com.au/en/electric-cars.html",
+          "https://www.bmw.com.au/en/electric-cars/electric-car-range.html",
+          "https://www.bmw.com.au/en/models/3-series/sedan/bmw-i3-sedan.html",
+          "https://www.bmw.com.au/en/models/3-series/sedan/bmw-i3-sedan-technical-data.html",
+          "https://www.bmw.com.au/en/models/m-series/sedan/bmw-3-series-sedan-m-models.html"
+        ],
+        "checkedAt": "2026-10-12",
+        "orderStatus": "listed_unconfirmed",
+        "stockStatus": "unverified",
+        "evidenceNote": "BMW Australia currently markets i3 50 xDrive Sedan (NA0) with a New/Build & Price card, while its electric-range FAQ says arrival in 2027. Exact AU order acceptance, selected build/effectivity and a specific unsold New unit remain unverified. Separate 40 technical content and M60 orders-in-2027 material do not establish additional current available-to-buy grades.",
+        "limitations": [
+          "Not a complete trim/specification audit.",
+          "No specific new dealer unit or actual delivery timing verified.",
+          "The Australian arrival statement says 2027; it is not a formal model year, accepted order, delivery commitment or proof that pre-orders are closed.",
+          "The 40 xDrive technical-page reference does not establish Australian sale availability; the page includes German-market measurement and optional-equipment caveats. M60 order timing applies only to M60, not 50 xDrive.",
+          "NA0 is supported by the current Australian product-page title. Historical sales code 52JB has not been reverified for a current selected Australian build.",
+          "Marketing labels and Build & Price links do not verify accepted orders or an unsold physical New vehicle. The bounded dealer search does not establish nationwide stock absence."
+        ],
+        "rankingEligible": false,
+        "availabilityCategory": "current_listing_order_stock_unconfirmed",
+        "vehicleClass": "passenger",
+        "modelAliases": [],
+        "sourceRecordIds": [
+          "bmw-i3"
+        ],
+        "sourceArtifacts": [
+          "market-inventory.json"
+        ],
+        "evidenceHistory": [
+          {
+            "sourceArtifact": "market-inventory.json",
+            "sourceRecordId": "bmw-i3",
+            "orderStatus": "listed_unconfirmed",
+            "stockStatus": "unverified",
+            "trims": [
+              "50 xDrive"
+            ],
+            "evidenceNote": "Exact current AU electric model card/configuration listing; no individual stock.",
+            "limitations": [
+              "Not a complete trim/specification audit.",
+              "No specific new dealer unit or actual delivery timing verified."
+            ],
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/electric-cars.html"
+            ]
+          }
+        ],
+        "modelYear": null,
+        "catalogueCoverage": "market_audit_only",
+        "completeVehicleCountEligible": null,
+        "recordScope": "model_or_named_configuration_family"
+      },
+      "changedFields": [
+        "checkedAt",
+        "evidenceNote",
+        "limitations",
+        "sourceUrls"
+      ],
+      "beforeCanonicalSHA256": "80cecd64b464661a15300d994c945dabedc71846078524293130b081f4ede3e6",
+      "afterCanonicalSHA256": "4f76ece1de4010fc846fde8d13a6394dc1b5fb18e5297d57a6e361c7ef84caa9"
+    },
+    {
+      "section": "records",
+      "index": 40,
+      "id": "bmw-ix4",
+      "researchBatch": "bmw",
+      "sourceIds": [
+        "S01",
+        "S04",
+        "S07",
+        "S08"
+      ],
+      "before": {
+        "id": "bmw-ix4",
+        "brand": "BMW",
+        "model": "iX4",
+        "trims": [
+          "50 xDrive"
+        ],
+        "trimCoverage": "partial",
+        "sourceUrls": [
+          "https://www.bmw.com.au/en/electric-cars.html"
+        ],
+        "checkedAt": "2026-10-10",
+        "orderStatus": "listed_unconfirmed",
+        "stockStatus": "unverified",
+        "evidenceNote": "Exact current AU electric model card/configuration listing; no individual stock.",
+        "limitations": [
+          "Not a complete trim/specification audit.",
+          "No specific new dealer unit or actual delivery timing verified."
+        ],
+        "rankingEligible": false,
+        "availabilityCategory": "current_listing_order_stock_unconfirmed",
+        "vehicleClass": "passenger",
+        "modelAliases": [],
+        "sourceRecordIds": [
+          "bmw-ix4"
+        ],
+        "sourceArtifacts": [
+          "market-inventory.json"
+        ],
+        "evidenceHistory": [
+          {
+            "sourceArtifact": "market-inventory.json",
+            "sourceRecordId": "bmw-ix4",
+            "orderStatus": "listed_unconfirmed",
+            "stockStatus": "unverified",
+            "trims": [
+              "50 xDrive"
+            ],
+            "evidenceNote": "Exact current AU electric model card/configuration listing; no individual stock.",
+            "limitations": [
+              "Not a complete trim/specification audit.",
+              "No specific new dealer unit or actual delivery timing verified."
+            ],
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/electric-cars.html"
+            ]
+          }
+        ],
+        "modelYear": null,
+        "catalogueCoverage": "market_audit_only",
+        "completeVehicleCountEligible": null,
+        "recordScope": "model_or_named_configuration_family"
+      },
+      "after": {
+        "id": "bmw-ix4",
+        "brand": "BMW",
+        "model": "iX4",
+        "trims": [
+          "50 xDrive"
+        ],
+        "trimCoverage": "partial",
+        "sourceUrls": [
+          "https://www.bmw.com.au/en/electric-cars.html",
+          "https://www.bmw.com.au/en/models/x-series/suv/bmw-ix4.html",
+          "https://www.bmw.com.au/en/models/m-series/suv/bmw-ix4-m-models.html",
+          "https://www.press.bmwgroup.com/global/article/detail/T0461402EN/the-new-bmw-ix4"
+        ],
+        "checkedAt": "2026-10-12",
+        "orderStatus": "listed_unconfirmed",
+        "stockStatus": "unverified",
+        "evidenceNote": "BMW Australia currently markets iX4 50 xDrive (NA7) with a New/Build & Price card. Actual AU order acceptance, local launch/delivery timing, selected build/effectivity and a specific unsold New unit remain unverified. BMW global press release dated 8 October 2026 announces March 2027 launch; that timing is global, not certified Australian timing. M60 orders-in-2027 material is separate.",
+        "limitations": [
+          "Not a complete trim/specification audit.",
+          "No specific new dealer unit or actual delivery timing verified.",
+          "The 8 October 2026 BMW global release announces a March 2027 launch; no Australian launch month, accepted order or delivery commitment is established.",
+          "The global 40 xDrive reference and separate Australian M60 orders-in-2027 statement do not establish additional current Australian sale grades or the 50 xDrive order-opening date.",
+          "NA7 is supported by the current Australian product-page title. Historical sales code 22HU has not been reverified for a current selected Australian build.",
+          "Marketing labels and Build & Price links do not verify accepted orders or an unsold physical New vehicle. The bounded dealer search does not establish nationwide stock absence."
+        ],
+        "rankingEligible": false,
+        "availabilityCategory": "current_listing_order_stock_unconfirmed",
+        "vehicleClass": "passenger",
+        "modelAliases": [],
+        "sourceRecordIds": [
+          "bmw-ix4"
+        ],
+        "sourceArtifacts": [
+          "market-inventory.json"
+        ],
+        "evidenceHistory": [
+          {
+            "sourceArtifact": "market-inventory.json",
+            "sourceRecordId": "bmw-ix4",
+            "orderStatus": "listed_unconfirmed",
+            "stockStatus": "unverified",
+            "trims": [
+              "50 xDrive"
+            ],
+            "evidenceNote": "Exact current AU electric model card/configuration listing; no individual stock.",
+            "limitations": [
+              "Not a complete trim/specification audit.",
+              "No specific new dealer unit or actual delivery timing verified."
+            ],
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/electric-cars.html"
+            ]
+          }
+        ],
+        "modelYear": null,
+        "catalogueCoverage": "market_audit_only",
+        "completeVehicleCountEligible": null,
+        "recordScope": "model_or_named_configuration_family"
+      },
+      "changedFields": [
+        "checkedAt",
+        "evidenceNote",
+        "limitations",
+        "sourceUrls"
+      ],
+      "beforeCanonicalSHA256": "ec992cdd729290031adfbf6efacbc7bfa1245e2f321debed32c58c02f625ce18",
+      "afterCanonicalSHA256": "0d4481dd71bd3ea66ca66e468da766a3c1efd84109d0fb197df48ff045b9f5b0"
+    },
+    {
+      "section": "unverifiedLeads",
+      "index": 47,
+      "id": "dfac-captain-45e",
+      "researchBatch": "commercial",
+      "sourceIds": [
+        "dfac-home",
+        "dfac-captain45",
+        "dfac-contact",
+        "dfac-bunbury",
+        "dfac-old-home"
+      ],
+      "before": {
+        "familyId": "dfac-captain-45e",
+        "brand": "DFAC",
+        "canonicalBrand": "DFAC",
+        "model": "Captain 45e",
+        "canonicalModel": "Captain 45e",
+        "aliases": [],
+        "vehicleType": "truck",
+        "vehicleClass": "truck",
+        "class": "truck",
+        "trims": [],
+        "sourceUrls": [
+          "https://www.dfac-australia.com.au/home-1"
+        ],
+        "checkedAt": "2026-10-10",
+        "orderStatus": "listed_unconfirmed",
+        "stockStatus": "unverified",
+        "evidenceNote": "Australian site names this variant, but retrieved text did not establish its battery-electric specification and current sales terms.",
+        "limitations": [
+          "Nearby availability wording relates to another Captain offering and cannot safely be transferred to this electric-looking model name."
+        ],
+        "unresolvedReason": "model_named_powertrain_and_sales_unresolved",
+        "recordScope": "unverified_lead",
+        "roadRegistrationScope": "unverified",
+        "exactConfigurationStatus": "partial_or_unverified",
+        "id": "dfac-captain-45e",
+        "modelAliases": [],
+        "rankingEligible": false,
+        "sourceArtifacts": [
+          "heavy-ev-census.json"
+        ],
+        "relatedRecordIds": [],
+        "resolutionStatus": "unresolved"
+      },
+      "after": {
+        "familyId": "dfac-captain-45e",
+        "brand": "DFAC",
+        "canonicalBrand": "DFAC",
+        "model": "Captain 45e",
+        "canonicalModel": "Captain 45e",
+        "aliases": [],
+        "vehicleType": "truck",
+        "vehicleClass": "truck",
+        "class": "truck",
+        "trims": [],
+        "sourceUrls": [
+          "https://www.dfac-australia.com.au/home-1",
+          "https://www.dfac-australia.com.au/",
+          "https://www.dfac-australia.com.au/contact",
+          "https://www.dfac-australia.com.au/captain45",
+          "https://www.dfactrucksbunbury.com.au/"
+        ],
+        "checkedAt": "2026-10-12",
+        "orderStatus": "listed_unconfirmed",
+        "stockStatus": "unverified",
+        "evidenceNote": "DFAC Australia currently names Captain 45e in a joint 45 e / 85 e interest-registration section. The linked destination is a general enquiry form. Exact Australian battery-electric specification, accepted orders and New stock remain unverified. The separately priced diesel Captain 45 campaign is not evidence for this lead.",
+        "limitations": [
+          "Nearby availability wording relates to another Captain offering and cannot safely be transferred to this electric-looking model name.",
+          "The interest-registration link leads to a general contact form, not a selected electric configuration or purchase confirmation.",
+          "Exact Australian battery-electric architecture, sales/build identity, specification date, completed body and build-linked road approval remain unverified.",
+          "Diesel Captain 45 pricing, campaign dates, build year, specifications and available-now wording must not be transferred to this electric lead. Older search extracts and current pages can describe different campaigns.",
+          "The joint 45e / 85e heading and GVM claims do not establish separately orderable grades, electric specifications or completed-body payload."
+        ],
+        "unresolvedReason": "model_named_powertrain_and_sales_unresolved",
+        "recordScope": "unverified_lead",
+        "roadRegistrationScope": "unverified",
+        "exactConfigurationStatus": "partial_or_unverified",
+        "id": "dfac-captain-45e",
+        "modelAliases": [],
+        "rankingEligible": false,
+        "sourceArtifacts": [
+          "heavy-ev-census.json"
+        ],
+        "relatedRecordIds": [],
+        "resolutionStatus": "unresolved"
+      },
+      "changedFields": [
+        "checkedAt",
+        "evidenceNote",
+        "limitations",
+        "sourceUrls"
+      ],
+      "beforeCanonicalSHA256": "d7b72f1c766e9ef6d08a7a0f5b78e6b4a5f96173a54eba5bee4e3939ab117b7b",
+      "afterCanonicalSHA256": "55dfbd15ee9ae26031f9d2fa155d1a648b11e4c9e94e86dd1194ea22d294c008"
+    },
+    {
+      "section": "unverifiedLeads",
+      "index": 48,
+      "id": "dfac-captain-85e",
+      "researchBatch": "commercial",
+      "sourceIds": [
+        "dfac-home",
+        "dfac-captain45",
+        "dfac-contact",
+        "dfac-bunbury",
+        "dfac-old-home"
+      ],
+      "before": {
+        "familyId": "dfac-captain-85e",
+        "brand": "DFAC",
+        "canonicalBrand": "DFAC",
+        "model": "Captain 85e",
+        "canonicalModel": "Captain 85e",
+        "aliases": [],
+        "vehicleType": "truck",
+        "vehicleClass": "truck",
+        "class": "truck",
+        "trims": [],
+        "sourceUrls": [
+          "https://www.dfac-australia.com.au/home-1"
+        ],
+        "checkedAt": "2026-10-10",
+        "orderStatus": "listed_unconfirmed",
+        "stockStatus": "unverified",
+        "evidenceNote": "Australian site names this variant, but retrieved text did not establish its battery-electric specification and current sales terms.",
+        "limitations": [
+          "Nearby availability wording relates to another Captain offering and cannot safely be transferred to this electric-looking model name."
+        ],
+        "unresolvedReason": "model_named_powertrain_and_sales_unresolved",
+        "recordScope": "unverified_lead",
+        "roadRegistrationScope": "unverified",
+        "exactConfigurationStatus": "partial_or_unverified",
+        "id": "dfac-captain-85e",
+        "modelAliases": [],
+        "rankingEligible": false,
+        "sourceArtifacts": [
+          "heavy-ev-census.json"
+        ],
+        "relatedRecordIds": [],
+        "resolutionStatus": "unresolved"
+      },
+      "after": {
+        "familyId": "dfac-captain-85e",
+        "brand": "DFAC",
+        "canonicalBrand": "DFAC",
+        "model": "Captain 85e",
+        "canonicalModel": "Captain 85e",
+        "aliases": [],
+        "vehicleType": "truck",
+        "vehicleClass": "truck",
+        "class": "truck",
+        "trims": [],
+        "sourceUrls": [
+          "https://www.dfac-australia.com.au/home-1",
+          "https://www.dfac-australia.com.au/",
+          "https://www.dfac-australia.com.au/contact",
+          "https://www.dfac-australia.com.au/captain45",
+          "https://www.dfactrucksbunbury.com.au/"
+        ],
+        "checkedAt": "2026-10-12",
+        "orderStatus": "listed_unconfirmed",
+        "stockStatus": "unverified",
+        "evidenceNote": "DFAC Australia currently names Captain 85e in a joint 45 e / 85 e interest-registration section. The linked destination is a general enquiry form. Exact Australian battery-electric specification, accepted orders and New stock remain unverified. The separately priced diesel Captain 45 campaign is not evidence for this lead.",
+        "limitations": [
+          "Nearby availability wording relates to another Captain offering and cannot safely be transferred to this electric-looking model name.",
+          "The interest-registration link leads to a general contact form, not a selected electric configuration or purchase confirmation.",
+          "Exact Australian battery-electric architecture, sales/build identity, specification date, completed body and build-linked road approval remain unverified.",
+          "Diesel Captain 45 pricing, campaign dates, build year, specifications and available-now wording must not be transferred to this electric lead. Older search extracts and current pages can describe different campaigns.",
+          "The joint 45e / 85e heading and GVM claims do not establish separately orderable grades, electric specifications or completed-body payload."
+        ],
+        "unresolvedReason": "model_named_powertrain_and_sales_unresolved",
+        "recordScope": "unverified_lead",
+        "roadRegistrationScope": "unverified",
+        "exactConfigurationStatus": "partial_or_unverified",
+        "id": "dfac-captain-85e",
+        "modelAliases": [],
+        "rankingEligible": false,
+        "sourceArtifacts": [
+          "heavy-ev-census.json"
+        ],
+        "relatedRecordIds": [],
+        "resolutionStatus": "unresolved"
+      },
+      "changedFields": [
+        "checkedAt",
+        "evidenceNote",
+        "limitations",
+        "sourceUrls"
+      ],
+      "beforeCanonicalSHA256": "aa336591261115b73d7ef343d5087483146505342125d8a79c9b40fc3faef8f9",
+      "afterCanonicalSHA256": "7d31f092b3002c81beeb7f023e0bfd97d52f95228c442e7227f89e00da3abadb"
+    },
+    {
+      "section": "unverifiedLeads",
+      "index": 74,
+      "id": "pioneer-ev-dfsk-ec35",
+      "researchBatch": "commercial",
+      "sourceIds": [
+        "pioneer-ec35",
+        "pioneer-home",
+        "pioneer-contact",
+        "pioneer-about"
+      ],
+      "before": {
+        "brand": "Pioneer EV / DFSK",
+        "model": "EC35",
+        "id": "pioneer-ev-dfsk-ec35",
+        "overlapKeys": [],
+        "vehicleType": "van",
+        "trims": [],
+        "sourceUrls": [
+          "https://pioneerev.com/pioneer-ev-van-ec35/",
+          "https://pioneerev.com/"
+        ],
+        "checkedAt": "2026-10-10",
+        "orderStatus": "listed_unconfirmed",
+        "stockStatus": "unverified",
+        "evidenceNote": "Australian-address supplier publishes EC35 electric-van product specifications.",
+        "limitations": [
+          "No current ADR/compliance, actual order, delivery or new-stock evidence captured. Supplier brand badge and final local specification need confirmation."
+        ],
+        "vehicleClass": "van",
+        "modelAliases": [],
+        "rankingEligible": false,
+        "sourceArtifacts": [
+          "commercial-ev-census.json"
+        ],
+        "relatedRecordIds": [],
+        "resolutionStatus": "unresolved"
+      },
+      "after": {
+        "brand": "Pioneer EV / DFSK",
+        "model": "EC35",
+        "id": "pioneer-ev-dfsk-ec35",
+        "overlapKeys": [],
+        "vehicleType": "van",
+        "trims": [],
+        "sourceUrls": [
+          "https://pioneerev.com/pioneer-ev-van-ec35/",
+          "https://pioneerev.com/",
+          "https://pioneerev.com/contact/"
+        ],
+        "checkedAt": "2026-10-12",
+        "orderStatus": "listed_unconfirmed",
+        "stockStatus": "unverified",
+        "evidenceNote": "Pioneer EV lists the EC35 electric van with two- or four-seat layouts and a general enquiry route. Exact Australian sale grades, New stock, accepted orders, DFSK badge association and road approval remain unverified. Published range labels conflict between WLTP and NEDC.",
+        "limitations": [
+          "No current ADR/compliance, actual order, delivery or new-stock evidence captured. Supplier brand badge and final local specification need confirmation.",
+          "Two- and four-seat layouts are advertised layouts, not verified independently orderable Australian grades. The quote link leads to a general contact form.",
+          "No explicit New/Demo/Used condition, identifiable New unit, accepted order, delivery commitment or exact final Australian build was established.",
+          "A WLTP heading conflicts with an NEDC-labelled range value; no normalized range is verified. Battery gross/usable basis and charging interval/conditions are also undefined.",
+          "The homepage approval wording concerns chargers and does not establish vehicle road approval. The DFSK badge relationship remains unverified in the inspected text.",
+          "Successful web-tool extracts are separate from later HTTP 406 retrieval failures; no fresh successful origin HTML response or manufacturer publication date is inferred."
+        ],
+        "vehicleClass": "van",
+        "modelAliases": [],
+        "rankingEligible": false,
+        "sourceArtifacts": [
+          "commercial-ev-census.json"
+        ],
+        "relatedRecordIds": [],
+        "resolutionStatus": "unresolved"
+      },
+      "changedFields": [
+        "checkedAt",
+        "evidenceNote",
+        "limitations",
+        "sourceUrls"
+      ],
+      "beforeCanonicalSHA256": "8dd5ceaa07e6a80d35c0d4b688ffed8616129a89569659d3ef227f58cff487b1",
+      "afterCanonicalSHA256": "d387ea90253fb652b223d3bd9e66a4f6af0551d8ba958562d1d7119972f5723e"
+    },
+    {
+      "section": "unverifiedLeads",
+      "index": 137,
+      "id": "mercedes-benz-eqb",
+      "researchBatch": "mercedes",
+      "sourceIds": [
+        "official-electric",
+        "official-configurator",
+        "official-eqb",
+        "eqb-offer",
+        "dealer-eqb-toowong",
+        "dealer-eqb-city-sydney-exact"
+      ],
+      "before": {
+        "brand": "Mercedes-Benz",
+        "model": "EQB",
+        "sourceUrls": [
+          "https://www.mercedes-benz.com.au/passengercars/models/electric.html"
+        ],
+        "checkedAt": "2026-10-10",
+        "orderStatus": "listed_unconfirmed",
+        "stockStatus": "unverified",
+        "evidenceNote": "MY26 EQB250+ manufacturer offer is outgoing and condition-held: NEW_CARS versus CPO/DEMO metadata. No strict NEW unit established.",
+        "limitations": [
+          "Incomplete current-availability or trim-configuration verification."
+        ],
+        "id": "mercedes-benz-eqb",
+        "vehicleClass": "passenger",
+        "trims": [],
+        "modelAliases": [],
+        "rankingEligible": false,
+        "sourceArtifacts": [
+          "market-inventory.json",
+          "mercedes-passenger-evidence-2026-10-10.json"
+        ],
+        "relatedRecordIds": [],
+        "resolutionStatus": "unresolved",
+        "priorCombinedLeadId": "mercedes-benz-eqb-eqe-sedan-eqe-suv-eqs-suv-maybach-eqs"
+      },
+      "after": {
+        "brand": "Mercedes-Benz",
+        "model": "EQB",
+        "sourceUrls": [
+          "https://www.mercedes-benz.com.au/passengercars/models/electric.html",
+          "https://www.mercedes-benz.com.au/passengercars/models/suv/eqb/overview.html",
+          "https://www.mercedes-benz.com.au/passengercars/buy/new-car/product.html/MB2RJ6VMXC",
+          "https://autosportsgroup.com.au/0590154122-1832585-mercedesbenz-eqb-2026/",
+          "https://showroom.mbsydney.com.au/listing/2025-mercedes-benz-eqb-eqb250-city-edition-suv-w1n2436022n133613/"
+        ],
+        "checkedAt": "2026-10-12",
+        "orderStatus": "listed_unconfirmed",
+        "stockStatus": "unverified",
+        "evidenceNote": "Fresh 12 October manufacturer offer MB2RJ6VMXC identifies MY2026 EQB 250+, but NEW_CARS conflicts with CPO/DEMO stock categories. Independent EQB250+ and City Edition dealer examples are Demo or Pre-Owned. Exact current New order/stock scope remains held.",
+        "limitations": [
+          "Current exact Australian New configuration/order scope remains unverified.",
+          "No physical New stock, complete current trim universe, manufacturer list price, or numeric ranking admission is established.",
+          "Search and web-tool extraction can be stale; use the pinned fresh HTTP outcome where it differs."
+        ],
+        "id": "mercedes-benz-eqb",
+        "vehicleClass": "passenger",
+        "trims": [],
+        "modelAliases": [],
+        "rankingEligible": false,
+        "sourceArtifacts": [
+          "market-inventory.json",
+          "mercedes-passenger-evidence-2026-10-10.json"
+        ],
+        "relatedRecordIds": [],
+        "resolutionStatus": "unresolved",
+        "priorCombinedLeadId": "mercedes-benz-eqb-eqe-sedan-eqe-suv-eqs-suv-maybach-eqs"
+      },
+      "changedFields": [
+        "checkedAt",
+        "evidenceNote",
+        "limitations",
+        "sourceUrls"
+      ],
+      "beforeCanonicalSHA256": "7b21fe9999d927cbeb84b785ecdda3d884db803ad186f9209b793e7e7ae7979d",
+      "afterCanonicalSHA256": "e6a8fcacc915ffde65c011c6447e03a5527524732ed45b88677aa9c0fc860bd1"
+    },
+    {
+      "section": "unverifiedLeads",
+      "index": 138,
+      "id": "mercedes-benz-eqe-sedan",
+      "researchBatch": "mercedes",
+      "sourceIds": [
+        "official-electric",
+        "official-configurator",
+        "official-eqe-sedan",
+        "dealer-eqe-sedan-sydney",
+        "dealer-eqe-sedan-berwick-exact"
+      ],
+      "before": {
+        "brand": "Mercedes-Benz",
+        "model": "EQE Sedan",
+        "sourceUrls": [
+          "https://www.mercedes-benz.com.au/passengercars/models/electric.html"
+        ],
+        "checkedAt": "2026-10-10",
+        "orderStatus": "listed_unconfirmed",
+        "stockStatus": "unverified",
+        "evidenceNote": "Current exact Australian grade/order matrix unresolved; historical/removed listings do not establish current availability.",
+        "limitations": [
+          "Incomplete current-availability or trim-configuration verification."
+        ],
+        "id": "mercedes-benz-eqe-sedan",
+        "vehicleClass": "passenger",
+        "trims": [],
+        "modelAliases": [],
+        "rankingEligible": false,
+        "sourceArtifacts": [
+          "market-inventory.json",
+          "mercedes-passenger-evidence-2026-10-10.json"
+        ],
+        "relatedRecordIds": [],
+        "resolutionStatus": "unresolved",
+        "priorCombinedLeadId": "mercedes-benz-eqb-eqe-sedan-eqe-suv-eqs-suv-maybach-eqs"
+      },
+      "after": {
+        "brand": "Mercedes-Benz",
+        "model": "EQE Sedan",
+        "sourceUrls": [
+          "https://www.mercedes-benz.com.au/passengercars/models/electric.html",
+          "https://www.mercedes-benz.com.au/passengercars/models/saloon/eqe/overview.html",
+          "https://www.lshauto.com.au/stock/details/OAG-AD-25756419/2025-mercedes-benz-eqe300-used",
+          "https://showroom.mbberwick.com.au/listing/2023-mercedes-benz-eqe-eqe350-sedan-w1k2951122f011786/"
+        ],
+        "checkedAt": "2026-10-12",
+        "orderStatus": "listed_unconfirmed",
+        "stockStatus": "unverified",
+        "evidenceNote": "On 12 October the manufacturer EQE sedan URL still redirects to generic sedans. A fresh Berwick EQE350 4MATIC advert is Pre-Owned, and an indexed Sydney EQE300 ex-demo advert now redirects. No exact current New grade/order matrix established.",
+        "limitations": [
+          "Current exact Australian New configuration/order scope remains unverified.",
+          "No physical New stock, complete current trim universe, manufacturer list price, or numeric ranking admission is established.",
+          "Search and web-tool extraction can be stale; use the pinned fresh HTTP outcome where it differs."
+        ],
+        "id": "mercedes-benz-eqe-sedan",
+        "vehicleClass": "passenger",
+        "trims": [],
+        "modelAliases": [],
+        "rankingEligible": false,
+        "sourceArtifacts": [
+          "market-inventory.json",
+          "mercedes-passenger-evidence-2026-10-10.json"
+        ],
+        "relatedRecordIds": [],
+        "resolutionStatus": "unresolved",
+        "priorCombinedLeadId": "mercedes-benz-eqb-eqe-sedan-eqe-suv-eqs-suv-maybach-eqs"
+      },
+      "changedFields": [
+        "checkedAt",
+        "evidenceNote",
+        "limitations",
+        "sourceUrls"
+      ],
+      "beforeCanonicalSHA256": "01acee93234375f32efc0eb488838a81b2b5331e8ba7dabec48b540036754f38",
+      "afterCanonicalSHA256": "0808871f881309c51c2ae115f9acbc515d2b988e296c1f9daa2a0e677671960e"
+    },
+    {
+      "section": "unverifiedLeads",
+      "index": 139,
+      "id": "mercedes-benz-eqe-suv",
+      "researchBatch": "mercedes",
+      "sourceIds": [
+        "official-electric",
+        "official-configurator",
+        "official-eqe-suv-named",
+        "official-eqe-suv-legacy",
+        "dealer-eqe-suv-brighton",
+        "dealer-eqe-berwick-search"
+      ],
+      "before": {
+        "brand": "Mercedes-Benz",
+        "model": "EQE SUV",
+        "sourceUrls": [
+          "https://www.mercedes-benz.com.au/passengercars/models/electric.html"
+        ],
+        "checkedAt": "2026-10-10",
+        "orderStatus": "listed_unconfirmed",
+        "stockStatus": "unverified",
+        "evidenceNote": "Four August2023 exact technical rows remain historical references, not current purchasable configurations.",
+        "limitations": [
+          "Incomplete current-availability or trim-configuration verification."
+        ],
+        "id": "mercedes-benz-eqe-suv",
+        "vehicleClass": "passenger",
+        "trims": [],
+        "modelAliases": [],
+        "rankingEligible": false,
+        "sourceArtifacts": [
+          "market-inventory.json",
+          "mercedes-passenger-evidence-2026-10-10.json"
+        ],
+        "relatedRecordIds": [],
+        "resolutionStatus": "unresolved",
+        "priorCombinedLeadId": "mercedes-benz-eqb-eqe-sedan-eqe-suv-eqs-suv-maybach-eqs"
+      },
+      "after": {
+        "brand": "Mercedes-Benz",
+        "model": "EQE SUV",
+        "sourceUrls": [
+          "https://www.mercedes-benz.com.au/passengercars/models/electric.html",
+          "https://www.mercedes-benz.com.au/passengercars/models/suv/eqe-suv/overview.html",
+          "https://www.mercedes-benz.com.au/passengercars/models/suv/x294-23-1/overview.html",
+          "https://showroom.mbbrighton.com.au/listing/2023-mercedes-benz-eqe-eqe350-suv-w1n2946122a020819/",
+          "https://showroom.mbberwick.com.au/search/?model=eqe"
+        ],
+        "checkedAt": "2026-10-12",
+        "orderStatus": "listed_unconfirmed",
+        "stockStatus": "unverified",
+        "evidenceNote": "The legacy EQE SUV page remains reachable on 12 October, but its generic enquiry/Build/Buy links do not verify current exact-grade order acceptance. The named URL is 404 and the indexed Brighton EQE350 SUV advert was Pre-Owned and now redirects. August 2023 technical rows remain historical only.",
+        "limitations": [
+          "Current exact Australian New configuration/order scope remains unverified.",
+          "No physical New stock, complete current trim universe, manufacturer list price, or numeric ranking admission is established.",
+          "Search and web-tool extraction can be stale; use the pinned fresh HTTP outcome where it differs."
+        ],
+        "id": "mercedes-benz-eqe-suv",
+        "vehicleClass": "passenger",
+        "trims": [],
+        "modelAliases": [],
+        "rankingEligible": false,
+        "sourceArtifacts": [
+          "market-inventory.json",
+          "mercedes-passenger-evidence-2026-10-10.json"
+        ],
+        "relatedRecordIds": [],
+        "resolutionStatus": "unresolved",
+        "priorCombinedLeadId": "mercedes-benz-eqb-eqe-sedan-eqe-suv-eqs-suv-maybach-eqs"
+      },
+      "changedFields": [
+        "checkedAt",
+        "evidenceNote",
+        "limitations",
+        "sourceUrls"
+      ],
+      "beforeCanonicalSHA256": "7a88e36aeab053f3f46c2b5039a833a6dee9f652ce18cfd8b4d52e4a9f986c5c",
+      "afterCanonicalSHA256": "ff1758c14e66f4ac244ac3d96b1f5f34b96c8a0ee15d7316fc8af87e3800d2a3"
+    },
+    {
+      "section": "unverifiedLeads",
+      "index": 140,
+      "id": "mercedes-benz-eqs-suv",
+      "researchBatch": "mercedes",
+      "sourceIds": [
+        "official-electric",
+        "official-configurator",
+        "official-eqs-suv-named",
+        "official-eqs-suv-campaign",
+        "dealer-eqs-canberra-exact"
+      ],
+      "before": {
+        "brand": "Mercedes-Benz",
+        "model": "EQS SUV",
+        "sourceUrls": [
+          "https://www.mercedes-benz.com.au/passengercars/models/electric.html"
+        ],
+        "checkedAt": "2026-10-10",
+        "orderStatus": "listed_unconfirmed",
+        "stockStatus": "unverified",
+        "evidenceNote": "Current exact Australian trim/order matrix remains unresolved; do not inherit EQS400 sedan data.",
+        "limitations": [
+          "Incomplete current-availability or trim-configuration verification."
+        ],
+        "id": "mercedes-benz-eqs-suv",
+        "vehicleClass": "passenger",
+        "trims": [],
+        "modelAliases": [],
+        "rankingEligible": false,
+        "sourceArtifacts": [
+          "market-inventory.json",
+          "mercedes-passenger-evidence-2026-10-10.json"
+        ],
+        "relatedRecordIds": [],
+        "resolutionStatus": "unresolved",
+        "priorCombinedLeadId": "mercedes-benz-eqb-eqe-sedan-eqe-suv-eqs-suv-maybach-eqs"
+      },
+      "after": {
+        "brand": "Mercedes-Benz",
+        "model": "EQS SUV",
+        "sourceUrls": [
+          "https://www.mercedes-benz.com.au/passengercars/models/electric.html",
+          "https://www.mercedes-benz.com.au/passengercars/models/suv/eqs-suv/overview.html",
+          "https://www.mercedes-benz.com.au/passengercars/campaigns/eqs.html",
+          "https://showroom.mbcanberra.com.au/listing/2023-mercedes-benz-eqs-eqs450-suv-w1n2966242a016979/"
+        ],
+        "checkedAt": "2026-10-12",
+        "orderStatus": "listed_unconfirmed",
+        "stockStatus": "unverified",
+        "evidenceNote": "On 12 October the EQS SUV named URL is 404 and the old campaign redirects to the generic electric range. A fresh Canberra EQS450 advert is explicitly Pre-Owned. Current exact Australian New EQS SUV grade/order scope remains unresolved; no EQS400 sedan data is inherited.",
+        "limitations": [
+          "Current exact Australian New configuration/order scope remains unverified.",
+          "No physical New stock, complete current trim universe, manufacturer list price, or numeric ranking admission is established.",
+          "Search and web-tool extraction can be stale; use the pinned fresh HTTP outcome where it differs."
+        ],
+        "id": "mercedes-benz-eqs-suv",
+        "vehicleClass": "passenger",
+        "trims": [],
+        "modelAliases": [],
+        "rankingEligible": false,
+        "sourceArtifacts": [
+          "market-inventory.json",
+          "mercedes-passenger-evidence-2026-10-10.json"
+        ],
+        "relatedRecordIds": [],
+        "resolutionStatus": "unresolved",
+        "priorCombinedLeadId": "mercedes-benz-eqb-eqe-sedan-eqe-suv-eqs-suv-maybach-eqs"
+      },
+      "changedFields": [
+        "checkedAt",
+        "evidenceNote",
+        "limitations",
+        "sourceUrls"
+      ],
+      "beforeCanonicalSHA256": "b7bb40207a2579715616801ec743f95291079a6bc3dd8f6641aea92d594e6337",
+      "afterCanonicalSHA256": "0655f238a65cc9c92e69142545806628c3737bc4bad34d21901fb778de90c4e9"
+    },
+    {
+      "section": "unverifiedLeads",
+      "index": 141,
+      "id": "mercedes-benz-maybach-eqs",
+      "researchBatch": "mercedes",
+      "sourceIds": [
+        "official-electric",
+        "official-configurator",
+        "official-maybach-brand",
+        "official-maybach-campaign",
+        "dealer-maybach-sydney-exact"
+      ],
+      "before": {
+        "brand": "Mercedes-Benz",
+        "model": "Mercedes-Maybach EQS",
+        "sourceUrls": [
+          "https://www.mercedes-benz.com.au/passengercars/models/electric.html"
+        ],
+        "checkedAt": "2026-10-10",
+        "orderStatus": "listed_unconfirmed",
+        "stockStatus": "unverified",
+        "evidenceNote": "Current exact Australian EQS680 trim/order scope remains unresolved; Night Series is not an independently proved mechanical grade.",
+        "limitations": [
+          "Incomplete current-availability or trim-configuration verification."
+        ],
+        "id": "mercedes-benz-maybach-eqs",
+        "vehicleClass": "passenger",
+        "trims": [],
+        "modelAliases": [],
+        "rankingEligible": false,
+        "sourceArtifacts": [
+          "market-inventory.json",
+          "mercedes-passenger-evidence-2026-10-10.json"
+        ],
+        "relatedRecordIds": [],
+        "resolutionStatus": "unresolved",
+        "priorCombinedLeadId": "mercedes-benz-eqb-eqe-sedan-eqe-suv-eqs-suv-maybach-eqs"
+      },
+      "after": {
+        "brand": "Mercedes-Benz",
+        "model": "Mercedes-Maybach EQS",
+        "sourceUrls": [
+          "https://www.mercedes-benz.com.au/passengercars/models/electric.html",
+          "https://www.mercedes-benz.com.au/passengercars/mercedes-maybach.html",
+          "https://www.mercedes-benz.com.au/passengercars/campaigns/maybach-eqs.html",
+          "https://showroom.mbsydney.com.au/listing/2024-mercedes-benz-eqs-maybach-eqs680-suv-w1n2969552a031410/"
+        ],
+        "checkedAt": "2026-10-12",
+        "orderStatus": "listed_unconfirmed",
+        "stockStatus": "unverified",
+        "evidenceNote": "The 12 October Maybach brand page still markets EQS680/Night Series, while the campaign now redirects to generic Maybach models. A fresh Sydney EQS680 advert is Pre-Owned. Exact current Australian New order/stock scope stays held; Night Series is not independently proved as a mechanical grade.",
+        "limitations": [
+          "Current exact Australian New configuration/order scope remains unverified.",
+          "No physical New stock, complete current trim universe, manufacturer list price, or numeric ranking admission is established.",
+          "Search and web-tool extraction can be stale; use the pinned fresh HTTP outcome where it differs."
+        ],
+        "id": "mercedes-benz-maybach-eqs",
+        "vehicleClass": "passenger",
+        "trims": [],
+        "modelAliases": [],
+        "rankingEligible": false,
+        "sourceArtifacts": [
+          "market-inventory.json",
+          "mercedes-passenger-evidence-2026-10-10.json"
+        ],
+        "relatedRecordIds": [],
+        "resolutionStatus": "unresolved",
+        "priorCombinedLeadId": "mercedes-benz-eqb-eqe-sedan-eqe-suv-eqs-suv-maybach-eqs"
+      },
+      "changedFields": [
+        "checkedAt",
+        "evidenceNote",
+        "limitations",
+        "sourceUrls"
+      ],
+      "beforeCanonicalSHA256": "5dcc03791766402fb3072a07f3bf50771e27b87929563947acb9030a7eb12b0b",
+      "afterCanonicalSHA256": "ab4ec7896700483a7837fa20f066bee9483d178038116e1ae9e6140d049b1978"
+    }
+  ]
+}

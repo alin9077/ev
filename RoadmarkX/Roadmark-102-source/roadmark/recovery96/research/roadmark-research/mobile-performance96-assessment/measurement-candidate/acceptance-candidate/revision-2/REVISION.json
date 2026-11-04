@@ -1,0 +1,25 @@
+{
+  "revision": 2,
+  "status": "static_unexecuted_candidate_awaiting_independent_rereview",
+  "executed": false,
+  "syntaxChecked": false,
+  "appChanged": false,
+  "loggerChanged": false,
+  "loggerSha256": "5181ad081108ffc6c236eca5086de5b262ad0e24b7173fe3f17ac35c27f37512",
+  "preimageDirectory": "..",
+  "preimageSha256": {
+    "run-acceptance.mjs": "b7c8d3e2daeaa2932b3ab04e8be552dea6e789c6e39bce38c68a5d7f1e9a46ee",
+    "README.md": "ab11599f897eda0b11d6fe5b83fec4a959860841daa29f13b1ca577a5dd5b459"
+  },
+  "postimageSha256": {
+    "run-acceptance.mjs": "fa5e6a202ebfcc95a5f85289cc811fc0b6c9c823757d74b24859281c0480e51e",
+    "README.md": "989d1a947f3f51b3828fbed354fe163da34d524bc1c3c4393cac2e5953ae6aeb"
+  },
+  "changes": [
+    "Synchronous stopping gate on all tests and resource acquisition prevents post-cleanup launches.",
+    "Track listeners, pending acquisitions, accepted probe/fixture sockets and HTTP clients; independent eight-second cleanup deadline.",
+    "Await child close/stdio drain; preserve evidence and audit expected exits, including log-finalization failure.",
+    "Strict final JSONL completeness and exact per-request method/path record-count audit.",
+    "Explicitly retain unexercised slow-stream/backpressure stress and lifecycle meta-tests; no false claim from unexecuted cases."
+  ]
+}

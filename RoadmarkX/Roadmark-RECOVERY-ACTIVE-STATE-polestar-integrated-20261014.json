@@ -1,0 +1,2763 @@
+{
+  "schemaVersion": 7,
+  "createdAt": "2026-10-14T14:50:37.956254+00:00",
+  "status": "Completed verified Polestar-integrated recovery save; Polestar research completion, C1/C5 and M1 remain open",
+  "source": {
+    "filename": "Roadmark-recovery-source-polestar-integrated-20261014T1425.tar.xz",
+    "bytes": 8261920,
+    "sha256": "4f4913de01c471c1493399c4389ccb7acb164c89e26158c3c85694d8d9988ca4",
+    "group": "source-polestar-integrated",
+    "library_file_id": "libfile_ae4063f16c788191bc34c7fa11945e0e",
+    "version": 0,
+    "restoreOrder": 39,
+    "file_id": "file_00000000174881f79c815a57006d97a8"
+  },
+  "sourceCaptureCutoff": "2026-10-14T14:25:34.745822+00:00",
+  "qaCaptureCutoff": "2026-10-14T14:26:19.188398+00:00",
+  "researchCaptureCutoff": "2026-10-14T14:26:39.405076+00:00",
+  "archiveCount": 70,
+  "archiveBytes": 509352328,
+  "restoredFiles": 6198,
+  "restoredBytes": 2223254919,
+  "incrementalSave": {
+    "newArchiveCount": 5,
+    "newArchiveBytes": 11771960,
+    "currentSourceFiles": 648,
+    "currentQaFiles": 1749,
+    "newOrChangedQaFiles": 68,
+    "unchangedQaFiles": 1681,
+    "missingQaFiles": [],
+    "polestarResearchFiles": 173,
+    "researchExclusions": [
+      {
+        "path": "config-data-TEMP.json",
+        "bytes": 1245768,
+        "sha256": "d3d9ed8a6e331b578da327b4073df7f6f9b48cda8e3041ac41e021f4bd751e4c",
+        "action": "exclude-local-only",
+        "reason": "Exploratory unsanitized decoded runtime; local-only. Safe public extracts retained separately."
+      },
+      {
+        "path": "config-inspect.json",
+        "bytes": 383163,
+        "sha256": "59780b661e58466fbd94b40d79e2e127de0b80c152170cbb9b2821ebdc37b9d5",
+        "action": "exclude-local-only",
+        "reason": "Exploratory raw serialized runtime/scripts; local-only. Safe replacements are current/*-config-public.json with raw-response hash and transformation receipt."
+      },
+      {
+        "path": "extract-config.cjs",
+        "bytes": 812,
+        "sha256": "1b945d0afa7c20e5ee1d5f2293cb9a7ef35acc0490dd6ab1204709366717d793",
+        "action": "exclude-local-only",
+        "reason": "Superseded exploratory runtime extraction code; local-only. Reviewed public-only extractor retained."
+      },
+      {
+        "path": "original-polestar.json",
+        "bytes": 423516,
+        "sha256": "c2b204dab4216c6ad3849125f93193b455ed6994e3e638fefca4a7554fe62fcf",
+        "action": "exclude-local-only",
+        "reason": "Exploratory historic extract also includes unrelated Volvo source rows; local-only. Full original before fixtures and original source snapshot retained instead."
+      },
+      {
+        "path": "patch-normalized.py",
+        "bytes": 2986,
+        "sha256": "e907e4a3de10ae39a4e266507880c422b36fcf65578ac8c30725d824ff9c17f9",
+        "action": "exclude-local-only",
+        "reason": "Obsolete one-shot draft editing script; local-only. Current builder retained."
+      },
+      {
+        "path": "polestar2-specs.html",
+        "bytes": 361722,
+        "sha256": "f8adb8311ba73ffd24eba986750511b6e92310add1448e1f2666c9577bdd8fe2",
+        "action": "exclude-local-only",
+        "reason": "Original raw maker response with scripts/runtime; local-only. current/p2-spec.html/.txt are sanitized replacement, original-response hash retained."
+      },
+      {
+        "path": "price-browser-retry.log",
+        "bytes": 5108,
+        "sha256": "d368b8ba00d0c363f63b5b521e3e1527eb179f351477f0026d9aa2471d71535f",
+        "action": "exclude-local-only",
+        "reason": "Raw local Chromium retry transcript includes ephemeral process/profile details; local-only. Resource receipt and bounded factual summary retained."
+      },
+      {
+        "path": "price-browser.cjs",
+        "bytes": 987,
+        "sha256": "ed48ce1236d222b0a93614290bd4ec0c6ff177a8375faea5dd4a14e577b7798a",
+        "action": "exclude-local-only",
+        "reason": "Abandoned local Chromium exploration script; local-only. Supported cloud-browser attempts and outcomes are recorded in browser-price-attempts.json."
+      },
+      {
+        "path": "price-browser.log",
+        "bytes": 5750,
+        "sha256": "755367f4a83346f953d7161f5fd66b275460f1e0fab2467cdd2b58999917a395",
+        "action": "exclude-local-only",
+        "reason": "Raw local Chromium failure transcript includes ephemeral process/profile details; local-only. Resource receipt and bounded factual summary retained."
+      }
+    ],
+    "researchSelection": "Explicit173-file allowlist only; zero root-directory copies",
+    "allowlistCapture": {
+      "result": "PASS",
+      "method": "Explicit173-path allowlist copy only. Original research root was not recursively copied or passed to the snapshotter. Excluded raw content never read/copied by this capture. Prior reviewer hash records retained for exclusions.",
+      "captureStartedAt": "2026-10-14T14:26:36.263330+00:00",
+      "captureCutoff": "2026-10-14T14:26:36.707343+00:00",
+      "allowlistSHA256": "70d4841ae3e231fb4b1fdd59ebe52e9a0ac823689d867343db1ea9c1a77c4d73",
+      "retentionManifestSHA256": "3f55f4afecf87d2faffd7f5cdc39155cc65ed808ef04fc21555956d6a86a6368",
+      "files": [
+        {
+          "path": "README.md",
+          "bytes": 6190,
+          "sha256": "848367d10ee8350abc095326d4d8bc8bf770c005025ade93da453f11760e0e5a",
+          "sourceMtimeNs": 1791985434331399944
+        },
+        {
+          "path": "after.json",
+          "bytes": 1074947,
+          "sha256": "490d35e1c53fc07e4ec080acc0d8da751dd177ed52bf624496a8a04eb26c71dd",
+          "sourceMtimeNs": 1791985337999118602
+        },
+        {
+          "path": "brand-model-list-reconciliation.json",
+          "bytes": 21722,
+          "sha256": "ce1685c0c4efc84dbba88bea292558a5e45950450f581ed460bcf59175abd152",
+          "sourceMtimeNs": 1791985434331066040
+        },
+        {
+          "path": "browser-price-attempts.json",
+          "bytes": 1259,
+          "sha256": "4508dcb0d6372accdd6cee9161484fbd04f413eb64910b6e468fe47f05367137",
+          "sourceMtimeNs": 1791983951544277879
+        },
+        {
+          "path": "build-audits.py",
+          "bytes": 4321,
+          "sha256": "03929b4c7b2b90499ae86d2eaeda952bea463ae74bffca07448d976a20c5eebd",
+          "sourceMtimeNs": 1791985321588286919
+        },
+        {
+          "path": "build-normalized.py",
+          "bytes": 30421,
+          "sha256": "86cbe83720ebf99ef9d1685198bb438917aadedab15cfaf7ea7b0c40cd7fc073",
+          "sourceMtimeNs": 1791985113468362819
+        },
+        {
+          "path": "build-packet.py",
+          "bytes": 15353,
+          "sha256": "1645a0afe3a1c219458241c196e661023bd3686f266f5803ba5c28705f62e56b",
+          "sourceMtimeNs": 1791985157024852189
+        },
+        {
+          "path": "build-reconciliation.py",
+          "bytes": 4927,
+          "sha256": "6df3a109e9a9328c12577df91098049743e63d74565c8aa5ca7734c43c3bfed7",
+          "sourceMtimeNs": 1791984801262491139
+        },
+        {
+          "path": "build-retention-manifest.py",
+          "bytes": 5124,
+          "sha256": "e1ac3a8e5ee854b1924e95d1f417d2579f20ad78ed0026421dc6e8b69c30e5b9",
+          "sourceMtimeNs": 1791985434314301607
+        },
+        {
+          "path": "canonical-amendment-proof-json704-resource-usage.json",
+          "bytes": 544,
+          "sha256": "08b4f5bf6d4040d6d9ac0b77e69e2240295f6d5dfafb75a415d8fa28449b974b",
+          "sourceMtimeNs": 1791985058395944227
+        },
+        {
+          "path": "canonical-amendment-proof-json704.log",
+          "bytes": 723,
+          "sha256": "db4a87b6cb2efdf0a45796efcd02f94a0caa6c3eff4292f640b40c42ee661df8",
+          "sourceMtimeNs": 1791985058395944227
+        },
+        {
+          "path": "canonical-amendment-proof.json",
+          "bytes": 12048,
+          "sha256": "d676a77d07c0fc49806561e40b106b17e0761a1f9cbbb94afdb8eb9b1767dbab",
+          "sourceMtimeNs": 1791985058200011705
+        },
+        {
+          "path": "canonical-amendment-proof704-resource-usage.json",
+          "bytes": 529,
+          "sha256": "3cbec02d885730722c840bff5b49426b936d781e0516eabd15f6853cd167babf",
+          "sourceMtimeNs": 1791985029599123546
+        },
+        {
+          "path": "canonical-amendment-proof704.log",
+          "bytes": 102770,
+          "sha256": "341fcce866bfad04c33af7e9053cf630517bb9e261fd643022e49faa96ecbc9d",
+          "sourceMtimeNs": 1791985029599123546
+        },
+        {
+          "path": "canonical-baseline-meta-v2.json",
+          "bytes": 816,
+          "sha256": "a6cd6f73a28861cafad25e1e91c0479ee143885e5cd536ad942b4031ed568cfe",
+          "sourceMtimeNs": 1791985058220011372
+        },
+        {
+          "path": "canonical-baseline-meta.json",
+          "bytes": 587,
+          "sha256": "f52fd2613f179a07b91352c2bf89cefd3009192649c9eee5c368aec353941733",
+          "sourceMtimeNs": 1791984906750624701
+        },
+        {
+          "path": "canonical-packet-at-baseline.json",
+          "bytes": 2663498,
+          "sha256": "14a086a0059f5e67b5261000bbb1b8f568b02063d1ad58427eda103ccdf7a997",
+          "sourceMtimeNs": 1791984965525617888
+        },
+        {
+          "path": "capture-before-resource-usage.json",
+          "bytes": 506,
+          "sha256": "0f620c2a4c4cab3b61e93425a1f3da22a4dc3bce77d9cbaa4a79a699c6f12ce1",
+          "sourceMtimeNs": 1791983744493011312
+        },
+        {
+          "path": "capture-before.exit",
+          "bytes": 2,
+          "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+          "sourceMtimeNs": 1791983744506973202
+        },
+        {
+          "path": "capture-before.log",
+          "bytes": 3006,
+          "sha256": "063324a0e5fb9beeae110e0310d4a36b0730e962385227febebcc78d20b9e924",
+          "sourceMtimeNs": 1791983744493011312
+        },
+        {
+          "path": "capture-before.ts",
+          "bytes": 1643,
+          "sha256": "b293dcf752c53dc84c772820964c5331ddfa45ff0ed84f5e7a3d142e9c829019",
+          "sourceMtimeNs": 1791983539948332450
+        },
+        {
+          "path": "capture-configs.py",
+          "bytes": 510,
+          "sha256": "7a9daf1773e424fcd5d9605c19ec06e04356c3f1fbb5401ac3cd6b6e98347499",
+          "sourceMtimeNs": 1791983358093099733
+        },
+        {
+          "path": "capture-log.json",
+          "bytes": 14378,
+          "sha256": "c679b1855c1821cd015c9f8e27eda9e8b51f540cbc0850a216d012e6055fa3f0",
+          "sourceMtimeNs": 1791983624533093476
+        },
+        {
+          "path": "capture-new-baseline-resource-usage.json",
+          "bytes": 518,
+          "sha256": "6b207f402842b0e15a47d574c58de364d5cc10f45bd3188152904fc06e3ab1ec",
+          "sourceMtimeNs": 1791984810670635744
+        },
+        {
+          "path": "capture-new-baseline-retry704-resource-usage.json",
+          "bytes": 525,
+          "sha256": "a282c75958413ef118db02154f6154c855aad55133c368b65b32000cc0c65cc4",
+          "sourceMtimeNs": 1791984873928142654
+        },
+        {
+          "path": "capture-new-baseline-retry704.log",
+          "bytes": 1781,
+          "sha256": "5d75b699ee18f9fb444f99226ea7151bd12a722f85d62383d65126252a9fe605",
+          "sourceMtimeNs": 1791984873928142654
+        },
+        {
+          "path": "capture-new-baseline-valid-state704-resource-usage.json",
+          "bytes": 532,
+          "sha256": "9ff206d1d8f6d9724f31797e6e6db9776033cd653f687ced67c168c022bc2bd1",
+          "sourceMtimeNs": 1791984906868127012
+        },
+        {
+          "path": "capture-new-baseline-valid-state704.log",
+          "bytes": 670,
+          "sha256": "f0b628df578ca0b6270934ceade29aad9275230afa9702a47b26a005fc1bbbfe",
+          "sourceMtimeNs": 1791984906868127012
+        },
+        {
+          "path": "capture-new-baseline.log",
+          "bytes": 468,
+          "sha256": "3843c46ef2c8961893e315735299d871c8ab50221244fca6e1ee6520128e9e64",
+          "sourceMtimeNs": 1791984810670635744
+        },
+        {
+          "path": "capture-new-baseline.ts",
+          "bytes": 1924,
+          "sha256": "50d1d18b2b6382b71a49691e0bcbdf5e9426c03711fdfd169f7e763f97ae6855",
+          "sourceMtimeNs": 1791983539948954526
+        },
+        {
+          "path": "capture.py",
+          "bytes": 1658,
+          "sha256": "d149271162f8caa8b2a4fcceeadcc3cc4fd23abd5c6f7bb52accd79f24dd04c2",
+          "sourceMtimeNs": 1791983211660670779
+        },
+        {
+          "path": "census/build_deliverable.py",
+          "bytes": 14169,
+          "sha256": "14a6449493cddc657ddf69f3c6d2f944b4b14ed25222bc8cd64f8d60482840d3",
+          "sourceMtimeNs": 1791983780385594809
+        },
+        {
+          "path": "census/capture_sources.py",
+          "bytes": 2035,
+          "sha256": "4471b11d07d0d67df68c06eaab25412109d4a864e03b2bec31f0b1cd0214b41c",
+          "sourceMtimeNs": 1791983245801503597
+        },
+        {
+          "path": "census/finish_width_check.py",
+          "bytes": 5359,
+          "sha256": "90ddbd8cabeee76c0a6caf24fe234dea19c9320dce01ead2deb45d3ae4e7b308",
+          "sourceMtimeNs": 1791984515557030194
+        },
+        {
+          "path": "census/manifest.json",
+          "bytes": 6166,
+          "sha256": "5a89b7b5bb3af40a74556dfc82ed943c7aab31c12006a380c7a118dbb17a934b",
+          "sourceMtimeNs": 1791983780446915689
+        },
+        {
+          "path": "census/p2_inventory.capture.json",
+          "bytes": 547,
+          "sha256": "dd1bd11603b182b04d0559c7666fcd46db398fa08e8efd445e2d14060c32a58d",
+          "sourceMtimeNs": 1791983407019311311
+        },
+        {
+          "path": "census/p2_offers.capture.json",
+          "bytes": 6769,
+          "sha256": "f34544ca752b7957e1a6788f9d30bf39a91b6ab5861d7d23e5c0f4440e76a83f",
+          "sourceMtimeNs": 1791983255689131581
+        },
+        {
+          "path": "census/p3_inventory.capture.json",
+          "bytes": 547,
+          "sha256": "792b3e811670ffa90a17f2b207abb9a6c7a25a36c3d95d6d3968646667c0503e",
+          "sourceMtimeNs": 1791983407024250377
+        },
+        {
+          "path": "census/p3_offers.capture.json",
+          "bytes": 3711,
+          "sha256": "91495d739470485336e4c4a4b09c6449aad7120f4b9c27640fab0d074c263f42",
+          "sourceMtimeNs": 1791983255829357010
+        },
+        {
+          "path": "census/p4_inventory.capture.json",
+          "bytes": 559,
+          "sha256": "83ea922900cc0d376bbab8be7692a6f7843e52f5cb0fe9eb2de6cb1b9e6c27f4",
+          "sourceMtimeNs": 1791983407021447284
+        },
+        {
+          "path": "census/p4_my25_sold_listing.capture.json",
+          "bytes": 577,
+          "sha256": "194c3f6a9ba3c5d50b7e12b7ce5e026c0f5ea00ec968dd95185ab3c143b6c3a3",
+          "sourceMtimeNs": 1791983667395289412
+        },
+        {
+          "path": "census/p4_offers.capture.json",
+          "bytes": 7033,
+          "sha256": "971aad13fdcdadcd3c03cb7893d75c68a27bae1d5a285e9e8f94f19f6d84cf10",
+          "sourceMtimeNs": 1791983255678945114
+        },
+        {
+          "path": "census/p5_bto_scope.capture.json",
+          "bytes": 1849,
+          "sha256": "1c4bda006d9497e277ee9665067b7cec9350164716ba234299f7f6675de73ca9",
+          "sourceMtimeNs": 1791984515614679770
+        },
+        {
+          "path": "census/p5_car_expert_review.capture.json",
+          "bytes": 1339,
+          "sha256": "be4f5bf3c42e893746ad3b38ba61f47693af573e42819e0cd65cb6eacb7d66fe",
+          "sourceMtimeNs": 1791983665643317645
+        },
+        {
+          "path": "census/p5_carsguide_towing.capture.json",
+          "bytes": 602,
+          "sha256": "4f426b7e8cee903b1b405f17ec53940618b97fe938bdb050daf3dc98037f937d",
+          "sourceMtimeNs": 1791983666579302421
+        },
+        {
+          "path": "census/p5_config_public.capture.json",
+          "bytes": 814820,
+          "sha256": "812090f56f17543cb84d546c9e45a4951fbb8ca559336fa19f1ba93513224b2d",
+          "sourceMtimeNs": 1791983395587764059
+        },
+        {
+          "path": "census/p5_configure.capture.json",
+          "bytes": 557,
+          "sha256": "37915249ff83775943c23447782f8ae9ec413f87655659b3f666b983770a37e1",
+          "sourceMtimeNs": 1791983258709873224
+        },
+        {
+          "path": "census/p5_dimensions_manual.capture.json",
+          "bytes": 2397,
+          "sha256": "56c23b9357b8613943520f3a4c5c6fe392aaab622adc5722f5b88aad70a2a3f7",
+          "sourceMtimeNs": 1791984446336761726
+        },
+        {
+          "path": "census/p5_overview.capture.json",
+          "bytes": 6860,
+          "sha256": "20b4777336789f90d054c3d93ed25e6dca93dac41c1659bb2eee025ec0c2a18d",
+          "sourceMtimeNs": 1791983255816603650
+        },
+        {
+          "path": "census/p5_pricing_atlas.capture.json",
+          "bytes": 4006,
+          "sha256": "ff03e119726ca01214658204be28378d221ae5da5b7bebd37e9cacd805049599",
+          "sourceMtimeNs": 1791983619507270054
+        },
+        {
+          "path": "census/p5_secondary_price_excerpts.capture.json",
+          "bytes": 1770,
+          "sha256": "361947050ce821427137deca71b89de3ba450f5120f9717572951be47e6e6e2a",
+          "sourceMtimeNs": 1791983464894618128
+        },
+        {
+          "path": "census/p5_secondary_width_check.capture.json",
+          "bytes": 915,
+          "sha256": "c72a393b53dd8211a33e78fc10c0427c6e39d1c89be9adc509cc965e3a555415",
+          "sourceMtimeNs": 1791984515614808777
+        },
+        {
+          "path": "census/p5_specs.capture.json",
+          "bytes": 20178,
+          "sha256": "845d941f4acbda3258271e2ec992591a8ffe6d708cf9222a3c9ec3c07c91fb1f",
+          "sourceMtimeNs": 1791983255810200950
+        },
+        {
+          "path": "census/p5_support.capture.json",
+          "bytes": 4986,
+          "sha256": "930db4713f5ed52f51ef096d0a9b049187c8895fc6fd365d36c8f2a539dc5b9b",
+          "sourceMtimeNs": 1791983255858344151
+        },
+        {
+          "path": "census/p5_towing_manual.capture.json",
+          "bytes": 1838,
+          "sha256": "5ec091d7e101fd8f62d3e3b1eb47611c099ab8001488fe3fe1a9f4e7ed2fde56",
+          "sourceMtimeNs": 1791983562799429605
+        },
+        {
+          "path": "census/p5_width_and_bto_supplement.json",
+          "bytes": 2548,
+          "sha256": "7016afa1d4c8bd469992812fbd041f3ac10608d555c296661b3363c68fb2a066",
+          "sourceMtimeNs": 1791984515615110197
+        },
+        {
+          "path": "census/p5_width_supplement_manifest.json",
+          "bytes": 1028,
+          "sha256": "230d7582b17caf3fc8c23fdc4d44b16d6d9e3cfa3e4b66e1450af408e833ea00",
+          "sourceMtimeNs": 1791984515615185319
+        },
+        {
+          "path": "census/polestar5_normalized_rows.json",
+          "bytes": 31361,
+          "sha256": "da7feea046a18e992790b1bf4ad297154214f6a5e85482c4a8b01f17b50d7df2",
+          "sourceMtimeNs": 1791983835093052083
+        },
+        {
+          "path": "census/residual_census.json",
+          "bytes": 4912,
+          "sha256": "3d4a3921706b10e09175864655efc1befa99d7e3bdac5f790d1746e82e2960e0",
+          "sourceMtimeNs": 1791983835093505384
+        },
+        {
+          "path": "core-matrix.json",
+          "bytes": 106636,
+          "sha256": "8996ef577bb14d358d4e0cd697b4da33fadce01a039c835dc5cf926f9db5a637",
+          "sourceMtimeNs": 1791985376903549528
+        },
+        {
+          "path": "current/p2-config-public.json",
+          "bytes": 1089478,
+          "sha256": "0d4ddc81632b184591103501ad245e12adeac748d1cfaa20028220c1fe59b865",
+          "sourceMtimeNs": 1791983364424302845
+        },
+        {
+          "path": "current/p2-config.html",
+          "bytes": 7803,
+          "sha256": "fe1c0dc8ab17b741f8374abbd4f7d0df36516b253e51143a83b845149473079b",
+          "sourceMtimeNs": 1791983242734196035
+        },
+        {
+          "path": "current/p2-config.txt",
+          "bytes": 53,
+          "sha256": "b7634dfb6e83b23b36e8bbcccbd839a0476eff1834567f71db29db43433960e4",
+          "sourceMtimeNs": 1791983242734139233
+        },
+        {
+          "path": "current/p2-price-web.json",
+          "bytes": 13356,
+          "sha256": "72197bd3a2e37a60dbff2cb6648f2a91ab6119c1087ce2e8213d2a05be6bc909",
+          "sourceMtimeNs": 1791983559865048322
+        },
+        {
+          "path": "current/p2-seats.html",
+          "bytes": 76657,
+          "sha256": "a68bf886bfb786fa488d01783c5a2b24f4a36d044431d9d7b2e810ca59a06dea",
+          "sourceMtimeNs": 1791983484033497603
+        },
+        {
+          "path": "current/p2-seats.txt",
+          "bytes": 2144,
+          "sha256": "416036f5af5b25592839a02ac11115ef4bb28bfb23ebaac6e393128020e733c6",
+          "sourceMtimeNs": 1791983484033457805
+        },
+        {
+          "path": "current/p2-spec.html",
+          "bytes": 170383,
+          "sha256": "2a8aea07860601abcb0e0c09f899267a9c259ef2ef4b74f6be037952fd69c941",
+          "sourceMtimeNs": 1791983216522291347
+        },
+        {
+          "path": "current/p2-spec.lines.txt",
+          "bytes": 19990,
+          "sha256": "7ac6e80651c2767b24ca693889a3135d26e6a33163a3732272e60b0e10790825",
+          "sourceMtimeNs": 1791983385944764515
+        },
+        {
+          "path": "current/p2-spec.txt",
+          "bytes": 19271,
+          "sha256": "01d3c76b094e1ba0ee3cedb57a610167993a73790669a016757bb3248e9aac4c",
+          "sourceMtimeNs": 1791983216522236391
+        },
+        {
+          "path": "current/p2-towing.html",
+          "bytes": 78618,
+          "sha256": "efe5cbbb403cfa21f879928f6125cb3cbcdf8161bef731ba755d320fded83051",
+          "sourceMtimeNs": 1791983443941140163
+        },
+        {
+          "path": "current/p2-towing.txt",
+          "bytes": 2321,
+          "sha256": "4246e468d8348a899081c7b9faddfdfc4e1a9a624986806d3e386520dc497362",
+          "sourceMtimeNs": 1791983443941090201
+        },
+        {
+          "path": "current/p3-config-public.json",
+          "bytes": 1112191,
+          "sha256": "cd5aad58da748f0de84315ee7ab733e303872627ae6465362104a73c5d8757ce",
+          "sourceMtimeNs": 1791983370756392579
+        },
+        {
+          "path": "current/p3-config.html",
+          "bytes": 7898,
+          "sha256": "5b967e9d3fe3ccfafe09a227185babe612465ced7ef2c78851770f6d612e7e29",
+          "sourceMtimeNs": 1791983250810242761
+        },
+        {
+          "path": "current/p3-config.txt",
+          "bytes": 53,
+          "sha256": "5541f759498c039c76142db6f4f26f2de659b11cb877ff13bb743e437a6bde5f",
+          "sourceMtimeNs": 1791983250810212872
+        },
+        {
+          "path": "current/p3-current-secondary-spec-web.json",
+          "bytes": 305,
+          "sha256": "a0b8b3c513c827995cab1c1b14724e7c7a26f7942cb45763bba810b5e89c815f",
+          "sourceMtimeNs": 1791983853168222505
+        },
+        {
+          "path": "current/p3-launch-web.json",
+          "bytes": 369,
+          "sha256": "724fc20ae3873f926b359b9ba4354cf724ce6ad795cc590b373a57a0fb534f66",
+          "sourceMtimeNs": 1791983570484879783
+        },
+        {
+          "path": "current/p3-price-web.json",
+          "bytes": 10467,
+          "sha256": "407f74ffb7870008a73f4b03847ac82a13a3278788722ce36e1d102c3fb9b98f",
+          "sourceMtimeNs": 1791983563828987830
+        },
+        {
+          "path": "current/p3-review-web.json",
+          "bytes": 28003,
+          "sha256": "9da6a608121f9e4e985fd7209f884dec203f01a7be18737e8806012fadea94d9",
+          "sourceMtimeNs": 1791983622988017427
+        },
+        {
+          "path": "current/p3-seats-news.html",
+          "bytes": 90795,
+          "sha256": "fa97566a28c094ff5bc24174578b5a514225f309ae3ecba7671691567a4f2906",
+          "sourceMtimeNs": 1791983624531945641
+        },
+        {
+          "path": "current/p3-seats-news.txt",
+          "bytes": 11289,
+          "sha256": "87aad9914a8982af7a70763d961e0cd353fadf101760dab4fa1309a6955de1e5",
+          "sourceMtimeNs": 1791983624531902794
+        },
+        {
+          "path": "current/p3-spec.html",
+          "bytes": 186240,
+          "sha256": "1487d561f6e5241f255b1b652aac3501c99b2ab5913d060a4392222f60b29ee1",
+          "sourceMtimeNs": 1791983222682350265
+        },
+        {
+          "path": "current/p3-spec.lines.txt",
+          "bytes": 22700,
+          "sha256": "88cc73010ab8eb467673670a7a87f87e23c9e2a670169112ce8df7387f96fa19",
+          "sourceMtimeNs": 1791983385952933421
+        },
+        {
+          "path": "current/p3-spec.txt",
+          "bytes": 21925,
+          "sha256": "43ef6b19ef72d95c5c8fad756bb81125bd0aedd3475ea12494b7b2395e0e3971",
+          "sourceMtimeNs": 1791983222682229423
+        },
+        {
+          "path": "current/p3-support.html",
+          "bytes": 90305,
+          "sha256": "6f4a1de0f1829becc1cba2c013367c012c221814ad68a65ae63ad7c3550cdf9e",
+          "sourceMtimeNs": 1791983502239563596
+        },
+        {
+          "path": "current/p3-support.txt",
+          "bytes": 8566,
+          "sha256": "01f5071c81d2f359f000716ad9fc3cf7a806cb82401995099d393eedd264dbd2",
+          "sourceMtimeNs": 1791983502239461870
+        },
+        {
+          "path": "current/p3-towing.html",
+          "bytes": 85086,
+          "sha256": "1e03d87feb64f02872c0fc7d523b1e626dba4654023f3331a23bb80e03dbb2fc",
+          "sourceMtimeNs": 1791983451228149985
+        },
+        {
+          "path": "current/p3-towing.txt",
+          "bytes": 2379,
+          "sha256": "d2b00d29dd9eb02843aeb8fd02e4553fe170bc5d8d0c19f16ae8cc7ce50e978a",
+          "sourceMtimeNs": 1791983451228120454
+        },
+        {
+          "path": "current/p4-price-carexpert-web.json",
+          "bytes": 12652,
+          "sha256": "084f6f002e7d8169c3c0de0f5a753ee5bc4618e6da9dbedc0835b42230e619ae",
+          "sourceMtimeNs": 1791983630711890868
+        },
+        {
+          "path": "current/p4-price-web.json",
+          "bytes": 432,
+          "sha256": "ccca8a2ec666572308e61894ab8e45295ff6066e6a94755e4d3a9d34c5175e98",
+          "sourceMtimeNs": 1791983567672925457
+        },
+        {
+          "path": "current/p4-price.html",
+          "bytes": 80302,
+          "sha256": "e9a07db1934f8ed5f3cf4c244f1c98fbfd8d3ef49dd4af330f0f9f20efd8e3d8",
+          "sourceMtimeNs": 1791983611552173723
+        },
+        {
+          "path": "current/p4-price.txt",
+          "bytes": 6557,
+          "sha256": "e4c2325f1e91d97dd84c795c92c4d376fd7b0a6528eae50bc8498f0c1b59c17c",
+          "sourceMtimeNs": 1791983611552143961
+        },
+        {
+          "path": "current/p4-seats-web.json",
+          "bytes": 27516,
+          "sha256": "111881b4fb27cf5f2275d1b64b60db3c497623c919a40767ce598c482042adb3",
+          "sourceMtimeNs": 1791983810492987692
+        },
+        {
+          "path": "current/p4c-config-public.json",
+          "bytes": 1030333,
+          "sha256": "410039444f85dd368c244f1506f74619e9144111f6c3d4241860c67596565ca9",
+          "sourceMtimeNs": 1791983377713620938
+        },
+        {
+          "path": "current/p4c-config.html",
+          "bytes": 8117,
+          "sha256": "0242ad02f55002009ed4c68908216dc41f5f5491ff29206167e5e7e6c04c6903",
+          "sourceMtimeNs": 1791983258540407515
+        },
+        {
+          "path": "current/p4c-config.txt",
+          "bytes": 60,
+          "sha256": "0ee228e7df75007a06ceea92147b8fc3caf5e88950f0262a4f079c02af75ac5c",
+          "sourceMtimeNs": 1791983258540382233
+        },
+        {
+          "path": "current/p4c-dimensions.html",
+          "bytes": 99927,
+          "sha256": "811b4d70f47722dec4140ac02d0579b3aa0f9813275f2ea21ade9c216d397392",
+          "sourceMtimeNs": 1791983471448472875
+        },
+        {
+          "path": "current/p4c-dimensions.txt",
+          "bytes": 2802,
+          "sha256": "3f70ce610483b77aec0ed7894f4860ff1308d8625c03c1e334ed6d7eafe72feb",
+          "sourceMtimeNs": 1791983471448365578
+        },
+        {
+          "path": "current/p4c-redbook-web.json",
+          "bytes": 349,
+          "sha256": "5f7c41789372c9118364622ca90806ad9fa27fe513b81abf296e9e3fb383ccd7",
+          "sourceMtimeNs": 1791983619512074007
+        },
+        {
+          "path": "current/p4c-spec.html",
+          "bytes": 176771,
+          "sha256": "6087274e554a7f3da62a9fc0de814c6c0c905daef471e64535744bf7e1882104",
+          "sourceMtimeNs": 1791983228720275019
+        },
+        {
+          "path": "current/p4c-spec.lines.txt",
+          "bytes": 22711,
+          "sha256": "1cd196e82c5311efad18055bfe5ac637dd70653a24ce2d5c4da05f0fddc8ce8e",
+          "sourceMtimeNs": 1791983385959973591
+        },
+        {
+          "path": "current/p4c-spec.txt",
+          "bytes": 21965,
+          "sha256": "4d9b1137e021fb407bc130fd89496d3fa92986ce547898ae003d2985170483f4",
+          "sourceMtimeNs": 1791983228720232878
+        },
+        {
+          "path": "current/p4c-towing.html",
+          "bytes": 85126,
+          "sha256": "24246d90626996e04edab544782db6fb28e451f57db31ef93439db9de345df78",
+          "sourceMtimeNs": 1791983457775814349
+        },
+        {
+          "path": "current/p4c-towing.txt",
+          "bytes": 2396,
+          "sha256": "83ca90dad5d2ddd5ff932c0580099d0fc74f0de6c489738eb21796e71de42a05",
+          "sourceMtimeNs": 1791983457775782373
+        },
+        {
+          "path": "current/p4s-config-public.json",
+          "bytes": 1024125,
+          "sha256": "b06fb1da9c0a92ef99064ed41c76400ecec237b52c044d98eb92adb128cdeee9",
+          "sourceMtimeNs": 1791983385608111766
+        },
+        {
+          "path": "current/p4s-config.html",
+          "bytes": 7735,
+          "sha256": "229bbec7912967ace5296a3f4afdbe9e297ebd3cf7001b51a3c4447e226457fd",
+          "sourceMtimeNs": 1791983265840178952
+        },
+        {
+          "path": "current/p4s-config.txt",
+          "bytes": 57,
+          "sha256": "9806d3c9bdc8d1d374d597edcca521ea5826b36f80ec04c3f7ee7453e21ce8fb",
+          "sourceMtimeNs": 1791983265840153056
+        },
+        {
+          "path": "current/p4s-dimensions.html",
+          "bytes": 99789,
+          "sha256": "c3c4f2bb55c45f2bf26c6a69bb7d11161e3f5fbada0367c82c7cf7b9014a55a1",
+          "sourceMtimeNs": 1791983478380406089
+        },
+        {
+          "path": "current/p4s-dimensions.txt",
+          "bytes": 2792,
+          "sha256": "73373d45cb350a1f692f7f322e9f5ff8e09457abfa67af7f1bd75df59a8932e9",
+          "sourceMtimeNs": 1791983478380380371
+        },
+        {
+          "path": "current/p4s-review-web.json",
+          "bytes": 18068,
+          "sha256": "d18545bf0bf3e84d4613e3d03f0fd597390fbdcabcb6688efbcc52393f96e756",
+          "sourceMtimeNs": 1791983627443944569
+        },
+        {
+          "path": "current/p4s-spec.html",
+          "bytes": 181191,
+          "sha256": "03b9d49569a375d8a6bc7ba08014bf7ca2695dc161c47b1dca97d7b6a963d52d",
+          "sourceMtimeNs": 1791983235263696651
+        },
+        {
+          "path": "current/p4s-spec.lines.txt",
+          "bytes": 23187,
+          "sha256": "cae36a29c783f6493d4a6c2290e124214aba5c79d2b9ea432d0a22104835c239",
+          "sourceMtimeNs": 1791983385965492889
+        },
+        {
+          "path": "current/p4s-spec.txt",
+          "bytes": 22610,
+          "sha256": "6a56552b718c19875f5829e284cc42f7dfa5145c052184fdd2d5e86a7a4675aa",
+          "sourceMtimeNs": 1791983235263625936
+        },
+        {
+          "path": "current/p4s-towing.html",
+          "bytes": 84993,
+          "sha256": "eab7003e1615e91cd6f221ab197ebcff54209457bf4099773f3a6ec8cbc77b8f",
+          "sourceMtimeNs": 1791983464805820379
+        },
+        {
+          "path": "current/p4s-towing.txt",
+          "bytes": 2385,
+          "sha256": "513e05f2b79be23317d9c7673cffead9200a2a431ef1602da4248b4ff6e8d724",
+          "sourceMtimeNs": 1791983464805793932
+        },
+        {
+          "path": "current/secondary-seats-towing-search.json",
+          "bytes": 30465,
+          "sha256": "4338e7241a2d5fcb9bb076543417b24f1d09c97670bf37e36cb2c59de531304f",
+          "sourceMtimeNs": 1791983806541051496
+        },
+        {
+          "path": "current/warranty-overview.html",
+          "bytes": 74780,
+          "sha256": "d53d1d65f5753e18350eb07cf98f9ecc20bc5e7edcb530b112a6396030f09453",
+          "sourceMtimeNs": 1791983495684890923
+        },
+        {
+          "path": "current/warranty-overview.txt",
+          "bytes": 2485,
+          "sha256": "75819253365141b17c72e8641c9ee5b44eb88a87a579c2142cac9fdf2cb9a43f",
+          "sourceMtimeNs": 1791983495684829577
+        },
+        {
+          "path": "current/warranty.html",
+          "bytes": 63330,
+          "sha256": "1a326ebfece109d11417290d360829a8be973933b1e2b01ec51a5c58e15c0476",
+          "sourceMtimeNs": 1791983490388904317
+        },
+        {
+          "path": "current/warranty.txt",
+          "bytes": 2631,
+          "sha256": "d52c9042902533041ec0d8a7ce04b0e2f7a0ba741b386bf961f26e32843be6db",
+          "sourceMtimeNs": 1791983490388871256
+        },
+        {
+          "path": "evidence-completeness-audit.json",
+          "bytes": 1194,
+          "sha256": "7c0443bd4c8bacbe92f439ce11b4c5aff9792e4d7aac28d9d7ae47261ed5548a",
+          "sourceMtimeNs": 1791985377451184161
+        },
+        {
+          "path": "extract-public-config.cjs",
+          "bytes": 1852,
+          "sha256": "23eb8dbb1bfce8fae0dd34eeb006268dca8d5a7189b55e2231d58846b2ac5a95",
+          "sourceMtimeNs": 1791983358090768396
+        },
+        {
+          "path": "features-after.json",
+          "bytes": 702185,
+          "sha256": "33b75a4bd787ca7e1e26f3288f974f5253a6a676ee85937a6c6a50b929494e9e",
+          "sourceMtimeNs": 1791985338007118463
+        },
+        {
+          "path": "measure-run.py",
+          "bytes": 699,
+          "sha256": "21ef6a20f50c309df4831560d3369387ab3c92e80959ecaee107004273e99c74",
+          "sourceMtimeNs": 1791983539948830277
+        },
+        {
+          "path": "merge-p5.py",
+          "bytes": 8401,
+          "sha256": "17970c7d235bed0d5c71d739e7000010f897c1c00e68648e6437124e15e8e0f0",
+          "sourceMtimeNs": 1791985113468452617
+        },
+        {
+          "path": "new-feature-before-manifest.json",
+          "bytes": 674,
+          "sha256": "d3d9fc5140d72eb68eca160e11e5e4cde3525f6659f385a5f7f29e0945034f06",
+          "sourceMtimeNs": 1791984906750624701
+        },
+        {
+          "path": "new-feature-before-v2.json",
+          "bytes": 69205,
+          "sha256": "3f868d0e340c51db874627d85f555519699432831bf3a48e56ca017351e83773",
+          "sourceMtimeNs": 1791985058176012104
+        },
+        {
+          "path": "new-feature-before.json",
+          "bytes": 69205,
+          "sha256": "3f868d0e340c51db874627d85f555519699432831bf3a48e56ca017351e83773",
+          "sourceMtimeNs": 1791984906750624701
+        },
+        {
+          "path": "normalized-evidence.json",
+          "bytes": 462549,
+          "sha256": "ee9f14425149c7809e796cfa96a7ba5bd66729d7d6642d6e5412a7d03b756079",
+          "sourceMtimeNs": 1791985113712477679
+        },
+        {
+          "path": "polestar-2026-10-14.json",
+          "bytes": 2803513,
+          "sha256": "b5109b22542d00dae69b7ab34dc3e04f422cdd7d00ffb59bfeddea9d2d6d48cf",
+          "sourceMtimeNs": 1791985157278266546
+        },
+        {
+          "path": "polestar-effective-facts.json",
+          "bytes": 865618,
+          "sha256": "d73d3a4b0b366c9afff9dd61e58cd0e814d3096867488831e39ddcb08223f2b8",
+          "sourceMtimeNs": 1791985157299807799
+        },
+        {
+          "path": "polestar-feature-before.json",
+          "bytes": 417000,
+          "sha256": "a28e95c6af871c6107605f1d79b40999f3c93354659203428a58b2e3adffd5e8",
+          "sourceMtimeNs": 1791983671363225620
+        },
+        {
+          "path": "polestar-live-before.json",
+          "bytes": 602698,
+          "sha256": "05758fc65492774bc15ab0dd9be553c9c69bcdcbf43989507bb78f188a97d869",
+          "sourceMtimeNs": 1791983671295226732
+        },
+        {
+          "path": "polestar-models-before.json",
+          "bytes": 735,
+          "sha256": "d8099223513fe2ea2ea113e28ddc3b00f34db3c62810437f8f91cc961d1f8f18",
+          "sourceMtimeNs": 1791983671367225555
+        },
+        {
+          "path": "polestar-reconciliation-2026-10-14.json",
+          "bytes": 8302,
+          "sha256": "d875b86815f67207ef18eadef24db3118492d3c5b86d17cfb6afc4b48f308793",
+          "sourceMtimeNs": 1791985021444974419
+        },
+        {
+          "path": "polestar-source-before.json",
+          "bytes": 3007712,
+          "sha256": "fe549301277983e1e5d230ea910a3ceb3e09cde15ed47246c36d0f94fc9282fe",
+          "sourceMtimeNs": 1791983671319226340
+        },
+        {
+          "path": "polestar-variants-before.json",
+          "bytes": 18828,
+          "sha256": "3642b81314f3f8160a9a702d2fe2c57fce662a82f68f84be470099bff1376700",
+          "sourceMtimeNs": 1791983671367225555
+        },
+        {
+          "path": "price-browser-resource-usage.json",
+          "bytes": 393,
+          "sha256": "6d9b2f74936983373d2bf7139232625f67fef014ca14ebe871bd0a75084d3268",
+          "sourceMtimeNs": 1791983757072892251
+        },
+        {
+          "path": "price-browser-retry-resource-usage.json",
+          "bytes": 410,
+          "sha256": "20b6154fcc28786dafc2010bacf2eac868662d567832403cd2a0387746eaadbf",
+          "sourceMtimeNs": 1791983792265610678
+        },
+        {
+          "path": "price-browser-retry.exit",
+          "bytes": 2,
+          "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "sourceMtimeNs": 1791983792290253505
+        },
+        {
+          "path": "price-browser.exit",
+          "bytes": 2,
+          "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+          "sourceMtimeNs": 1791983757079250022
+        },
+        {
+          "path": "privacy-review.json",
+          "bytes": 8948,
+          "sha256": "faf3ee55a66c755c3b15e7cc051fe73be7b208ad57303abad87b5704b949b852",
+          "sourceMtimeNs": 1791985377450889398
+        },
+        {
+          "path": "prove-canonical-amendment.ts",
+          "bytes": 4570,
+          "sha256": "800a725b4900ea598b437d967995bc4acad9dca955808e8aec065e2b3e237a81",
+          "sourceMtimeNs": 1791985049454350744
+        },
+        {
+          "path": "read-replay-snapshot.ts",
+          "bytes": 1329,
+          "sha256": "b1fb757ab66f357d26ee542345e5f4ac6ab44fb6ebde253bf836c9bd6a38f702",
+          "sourceMtimeNs": 1791983539948458555
+        },
+        {
+          "path": "replay-provenance-manifest.json",
+          "bytes": 71280,
+          "sha256": "e44de06e4db5bf5eb2613c371d035a9d68dd2bd9e4ca4ca208054a841fdb63e9",
+          "sourceMtimeNs": 1791984608641650382
+        },
+        {
+          "path": "replay-snapshot/cars.jsonl",
+          "bytes": 64684750,
+          "sha256": "03f90c4af253bf81c2ed3a685963b48f07b46c1f361303f1df2f6d64fa6d5f3e",
+          "sourceMtimeNs": 1791983744378055215
+        },
+        {
+          "path": "replay-snapshot/research-configuration_history.jsonl",
+          "bytes": 1762,
+          "sha256": "41b06edf35bada926f8c1ee3cfe5719bf0b261bf2153d07d9dba3e818e98fc91",
+          "sourceMtimeNs": 1791983734802210713
+        },
+        {
+          "path": "replay-snapshot/research-criteria.jsonl",
+          "bytes": 13829,
+          "sha256": "efcfbbc3f61ce3b8260ba92af91948956bca003ab51ab14682759d076b1a4d22",
+          "sourceMtimeNs": 1791983671991215351
+        },
+        {
+          "path": "replay-snapshot/research-feature_evidence.jsonl",
+          "bytes": 12527524,
+          "sha256": "b1aba4ae4ec8f83ae5d661ba79c1d6e9db0a869bcf1ef63d9a293b96d827e7c6",
+          "sourceMtimeNs": 1791983733618229634
+        },
+        {
+          "path": "replay-snapshot/research-feature_evidence_variant_context.jsonl",
+          "bytes": 6386898,
+          "sha256": "d37276cc5345e30dbecb95cf63b8977f34f3628469554e1dade8670b9599498a",
+          "sourceMtimeNs": 1791983743022077017
+        },
+        {
+          "path": "replay-snapshot/research-metadata.jsonl",
+          "bytes": 1608,
+          "sha256": "193de749f4593e61369acbef6bf40e0db431176b1d9091dd6d4ee6aaa45c6f66",
+          "sourceMtimeNs": 1791983671483223658
+        },
+        {
+          "path": "replay-snapshot/research-models.jsonl",
+          "bytes": 31721,
+          "sha256": "90cb8d5d9714807b7ce2bec126740464315fcef759300fe009fe7bac652f2bfe",
+          "sourceMtimeNs": 1791983672643204689
+        },
+        {
+          "path": "replay-snapshot/research-prior_update_summary.jsonl",
+          "bytes": 12226,
+          "sha256": "7e1b4fc4335f87fdc6624fe06a93267d78c4ab5acca3cdd89bbeb6c75f09b6ea",
+          "sourceMtimeNs": 1791983742162090843
+        },
+        {
+          "path": "replay-snapshot/research-publication_issues.jsonl",
+          "bytes": 4962,
+          "sha256": "65e00861621477ae639293de6d67e6f55c7830c85cb437f65a81e9fa477a3f31",
+          "sourceMtimeNs": 1791983742058092515
+        },
+        {
+          "path": "replay-snapshot/research-schema_version.jsonl",
+          "bytes": 25,
+          "sha256": "7f4629da1be56b08c0bddf8eb88c56613e89aea67e11e6edcea53a3b9d2caf72",
+          "sourceMtimeNs": 1791983671371225490
+        },
+        {
+          "path": "replay-snapshot/research-sources.jsonl",
+          "bytes": 2681379,
+          "sha256": "d7a68e600938b5ec97991aa8ce282b3bf2ea2d7dac6ee17bc1617c159975729a",
+          "sourceMtimeNs": 1791983741950094252
+        },
+        {
+          "path": "replay-snapshot/research-trim_equipment.jsonl",
+          "bytes": 73366,
+          "sha256": "787d35cad4a954926ccd40c8e2281698819c9d5ebc493bc079884fe01a1db734",
+          "sourceMtimeNs": 1791983675115164676
+        },
+        {
+          "path": "replay-snapshot/research-update_eligibility.jsonl",
+          "bytes": 163933,
+          "sha256": "f6269a7483e8da81b72d438ba9114dfda388b0aa3a60e14d5d8167a585c08e88",
+          "sourceMtimeNs": 1791983734486215762
+        },
+        {
+          "path": "replay-snapshot/research-update_events.jsonl",
+          "bytes": 66912,
+          "sha256": "03d1ed9daedcceb1a879f56d9933b1e430ee90e54cb8a7b1cba1af816ec6dfdb",
+          "sourceMtimeNs": 1791983734702212310
+        },
+        {
+          "path": "replay-snapshot/research-variants.jsonl",
+          "bytes": 9734520,
+          "sha256": "cb80076ed00d289125dd945ec93b92c37f05e1e05846a8438383ff7897366b4a",
+          "sourceMtimeNs": 1791983673951183299
+        },
+        {
+          "path": "replay-snapshot-index.json",
+          "bytes": 1674,
+          "sha256": "bf9493eaa2536f5285b6a5e11f43a3df46bedd8756f80cecf1696ec6c0d30c53",
+          "sourceMtimeNs": 1791983744378055215
+        },
+        {
+          "path": "self-stage-fitment704-resource-usage.json",
+          "bytes": 524,
+          "sha256": "17f2ecfc528c85f79281fcc067be18259893189645517fea18db23ab15b8c67a",
+          "sourceMtimeNs": 1791985338237546881
+        },
+        {
+          "path": "self-stage-fitment704.log",
+          "bytes": 17882,
+          "sha256": "c2f90180745e22e35ea657bc4d10335ae850f3bd71dc090d49a924f47eaa9763",
+          "sourceMtimeNs": 1791985338237546881
+        },
+        {
+          "path": "self-stage704-resource-usage.json",
+          "bytes": 514,
+          "sha256": "3c22f5496a77ac87a00f52b620becbf529158d1ec4420f9480f169bf988b606c",
+          "sourceMtimeNs": 1791985124937887018
+        },
+        {
+          "path": "self-stage704.log",
+          "bytes": 1693,
+          "sha256": "59158f0b8cd73ee648e1217b6bbb4c71707ef8604faa5e17889a3f09cf8c8c3a",
+          "sourceMtimeNs": 1791985124937887018
+        },
+        {
+          "path": "source-hash-manifest.json",
+          "bytes": 7431,
+          "sha256": "9725b54d7266b47681ed019394b08ac6489989e5433e8c442a18ff946e66a7f8",
+          "sourceMtimeNs": 1791985376928309279
+        },
+        {
+          "path": "source-index.json",
+          "bytes": 14446,
+          "sha256": "cef62b6790699811443803062bf4b0e1e2b7d2ecbc39fb0e44e7dfa1f4690e2b",
+          "sourceMtimeNs": 1791985376928117200
+        },
+        {
+          "path": "stage-polestar-candidate.ts",
+          "bytes": 7562,
+          "sha256": "8a7dead64e2ba67b2ee1d315c9cc0ef3db8e4bee35e30797ee3c78593f8c9836",
+          "sourceMtimeNs": 1791985113468527561
+        },
+        {
+          "path": "staged-packs.json",
+          "bytes": 2092952,
+          "sha256": "1657291c91586af39d384c8bb979fa67d249300a5a12bdcb105aea90a2997237",
+          "sourceMtimeNs": 1791985338031118043
+        },
+        {
+          "path": "staged-report.json",
+          "bytes": 1614984,
+          "sha256": "0111218dbbf12f7af2d03cb360f5d68e0ca31b7ae59e0b70543395de253526a9",
+          "sourceMtimeNs": 1791985337987118811
+        },
+        {
+          "path": "terms-normalized.json",
+          "bytes": 1970,
+          "sha256": "ae81b264f200aec59dd1809cf2e401be35c59a67b790086e16d0ded706c80546",
+          "sourceMtimeNs": 1791985113713033799
+        },
+        {
+          "path": "retained-files.txt",
+          "bytes": 5078,
+          "sha256": "70d4841ae3e231fb4b1fdd59ebe52e9a0ac823689d867343db1ea9c1a77c4d73",
+          "sourceMtimeNs": 1791985450067159155
+        },
+        {
+          "path": "retention-manifest.json",
+          "bytes": 77607,
+          "sha256": "3f55f4afecf87d2faffd7f5cdc39155cc65ed808ef04fc21555956d6a86a6368",
+          "sourceMtimeNs": 1791985450065198220
+        },
+        {
+          "path": "retention-summary.json",
+          "bytes": 1254,
+          "sha256": "4ced24a430797e8a911af793c4756827e19787ec291d91b8cda8a0b8cee77af6",
+          "sourceMtimeNs": 1791985450067370829
+        }
+      ],
+      "excludedLocalOnly": [
+        {
+          "path": "config-data-TEMP.json",
+          "bytes": 1245768,
+          "sha256": "d3d9ed8a6e331b578da327b4073df7f6f9b48cda8e3041ac41e021f4bd751e4c",
+          "action": "exclude-local-only",
+          "reason": "Exploratory unsanitized decoded runtime; local-only. Safe public extracts retained separately."
+        },
+        {
+          "path": "config-inspect.json",
+          "bytes": 383163,
+          "sha256": "59780b661e58466fbd94b40d79e2e127de0b80c152170cbb9b2821ebdc37b9d5",
+          "action": "exclude-local-only",
+          "reason": "Exploratory raw serialized runtime/scripts; local-only. Safe replacements are current/*-config-public.json with raw-response hash and transformation receipt."
+        },
+        {
+          "path": "extract-config.cjs",
+          "bytes": 812,
+          "sha256": "1b945d0afa7c20e5ee1d5f2293cb9a7ef35acc0490dd6ab1204709366717d793",
+          "action": "exclude-local-only",
+          "reason": "Superseded exploratory runtime extraction code; local-only. Reviewed public-only extractor retained."
+        },
+        {
+          "path": "original-polestar.json",
+          "bytes": 423516,
+          "sha256": "c2b204dab4216c6ad3849125f93193b455ed6994e3e638fefca4a7554fe62fcf",
+          "action": "exclude-local-only",
+          "reason": "Exploratory historic extract also includes unrelated Volvo source rows; local-only. Full original before fixtures and original source snapshot retained instead."
+        },
+        {
+          "path": "patch-normalized.py",
+          "bytes": 2986,
+          "sha256": "e907e4a3de10ae39a4e266507880c422b36fcf65578ac8c30725d824ff9c17f9",
+          "action": "exclude-local-only",
+          "reason": "Obsolete one-shot draft editing script; local-only. Current builder retained."
+        },
+        {
+          "path": "polestar2-specs.html",
+          "bytes": 361722,
+          "sha256": "f8adb8311ba73ffd24eba986750511b6e92310add1448e1f2666c9577bdd8fe2",
+          "action": "exclude-local-only",
+          "reason": "Original raw maker response with scripts/runtime; local-only. current/p2-spec.html/.txt are sanitized replacement, original-response hash retained."
+        },
+        {
+          "path": "price-browser-retry.log",
+          "bytes": 5108,
+          "sha256": "d368b8ba00d0c363f63b5b521e3e1527eb179f351477f0026d9aa2471d71535f",
+          "action": "exclude-local-only",
+          "reason": "Raw local Chromium retry transcript includes ephemeral process/profile details; local-only. Resource receipt and bounded factual summary retained."
+        },
+        {
+          "path": "price-browser.cjs",
+          "bytes": 987,
+          "sha256": "ed48ce1236d222b0a93614290bd4ec0c6ff177a8375faea5dd4a14e577b7798a",
+          "action": "exclude-local-only",
+          "reason": "Abandoned local Chromium exploration script; local-only. Supported cloud-browser attempts and outcomes are recorded in browser-price-attempts.json."
+        },
+        {
+          "path": "price-browser.log",
+          "bytes": 5750,
+          "sha256": "755367f4a83346f953d7161f5fd66b275460f1e0fab2467cdd2b58999917a395",
+          "action": "exclude-local-only",
+          "reason": "Raw local Chromium failure transcript includes ephemeral process/profile details; local-only. Resource receipt and bounded factual summary retained."
+        }
+      ],
+      "originalExcludedFilesReadOrCopied": 0,
+      "sourceChangesDuringCapture": []
+    },
+    "newQaPaths": [
+      "roadmark-104-qa/polestar-independent-review/REVIEW.md",
+      "roadmark-104-qa/polestar-independent-review/approval.json",
+      "roadmark-104-qa/polestar-independent-review/check-retention.py",
+      "roadmark-104-qa/polestar-independent-review/independent-review-replay.json",
+      "roadmark-104-qa/polestar-independent-review/light-source-review.md",
+      "roadmark-104-qa/polestar-independent-review/privacy-and-retention-review.json",
+      "roadmark-104-qa/polestar-independent-review/registered-coverage-date-mismatch.json",
+      "roadmark-104-qa/polestar-independent-review/registered-coverage-parity.json",
+      "roadmark-104-qa/polestar-independent-review/registration-delta-review.json",
+      "roadmark-104-qa/polestar-independent-review/replay-attempt-1-resource.json",
+      "roadmark-104-qa/polestar-independent-review/replay-attempt-1.log",
+      "roadmark-104-qa/polestar-independent-review/replay-resource-usage.json",
+      "roadmark-104-qa/polestar-research-README.md",
+      "roadmark-104-qa/polestar-research-artifact-hash-manifest.json",
+      "roadmark-104-qa/polestar-research-brand-model-list-reconciliation.json",
+      "roadmark-104-qa/polestar-research-browser-price-attempts.json",
+      "roadmark-104-qa/polestar-research-canonical-amendment-proof.json",
+      "roadmark-104-qa/polestar-research-canonical-baseline-meta-v2.json",
+      "roadmark-104-qa/polestar-research-canonical-baseline-meta.json",
+      "roadmark-104-qa/polestar-research-checks/canonical-amendment-proof-json704-resource-usage.json",
+      "roadmark-104-qa/polestar-research-checks/canonical-amendment-proof704-resource-usage.json",
+      "roadmark-104-qa/polestar-research-checks/capture-before-resource-usage.json",
+      "roadmark-104-qa/polestar-research-checks/capture-new-baseline-resource-usage.json",
+      "roadmark-104-qa/polestar-research-checks/capture-new-baseline-retry704-resource-usage.json",
+      "roadmark-104-qa/polestar-research-checks/capture-new-baseline-valid-state704-resource-usage.json",
+      "roadmark-104-qa/polestar-research-checks/self-stage-fitment704-resource-usage.json",
+      "roadmark-104-qa/polestar-research-checks/self-stage704-resource-usage.json",
+      "roadmark-104-qa/polestar-research-core-matrix.json",
+      "roadmark-104-qa/polestar-research-evidence-completeness-audit.json",
+      "roadmark-104-qa/polestar-research-integration-readiness.json",
+      "roadmark-104-qa/polestar-research-new-feature-before-manifest.json",
+      "roadmark-104-qa/polestar-research-privacy-review.json",
+      "roadmark-104-qa/polestar-research-replay-provenance-manifest.json",
+      "roadmark-104-qa/polestar-research-retained-files.txt",
+      "roadmark-104-qa/polestar-research-retention-manifest.json",
+      "roadmark-104-qa/polestar-research-retention-summary.json",
+      "roadmark-104-qa/polestar-research-source-hash-manifest.json",
+      "roadmark-104-qa/polestar-research-source-index.json",
+      "roadmark-104-qa/polestar-sequential-checks/coverage-asof-2026-10-14.metrics.json",
+      "roadmark-104-qa/polestar-sequential-checks/coverage-asof-2026-10-14.stderr",
+      "roadmark-104-qa/polestar-sequential-checks/coverage-asof-2026-10-14.stdout",
+      "roadmark-104-qa/polestar-sequential-checks/coverage.metrics.json",
+      "roadmark-104-qa/polestar-sequential-checks/coverage.stderr",
+      "roadmark-104-qa/polestar-sequential-checks/coverage.stdout",
+      "roadmark-104-qa/polestar-sequential-checks/integration-attempt1-768MiB/integration.metrics.json",
+      "roadmark-104-qa/polestar-sequential-checks/integration-attempt1-768MiB/integration.stderr",
+      "roadmark-104-qa/polestar-sequential-checks/integration-attempt1-768MiB/integration.stdout",
+      "roadmark-104-qa/polestar-sequential-checks/integration-attempt1-768MiB/run-checks.py",
+      "roadmark-104-qa/polestar-sequential-checks/integration.metrics.json",
+      "roadmark-104-qa/polestar-sequential-checks/integration.stderr",
+      "roadmark-104-qa/polestar-sequential-checks/integration.stdout",
+      "roadmark-104-qa/polestar-sequential-checks/lint.metrics.json",
+      "roadmark-104-qa/polestar-sequential-checks/lint.stderr",
+      "roadmark-104-qa/polestar-sequential-checks/lint.stdout",
+      "roadmark-104-qa/polestar-sequential-checks/load.ts.before",
+      "roadmark-104-qa/polestar-sequential-checks/registry.json.before",
+      "roadmark-104-qa/polestar-sequential-checks/run-checks-704.py",
+      "roadmark-104-qa/polestar-sequential-checks/run-checks.py",
+      "roadmark-104-qa/polestar-sequential-checks/run-dated-coverage.py",
+      "roadmark-104-qa/polestar-sequential-checks/typecheck.metrics.json",
+      "roadmark-104-qa/polestar-sequential-checks/typecheck.stderr",
+      "roadmark-104-qa/polestar-sequential-checks/typecheck.stdout",
+      "roadmark-104-qa/polestar-sequential-checks/validate.metrics.json",
+      "roadmark-104-qa/polestar-sequential-checks/validate.stderr",
+      "roadmark-104-qa/polestar-sequential-checks/validate.stdout",
+      "roadmark-104-qa/review-polestar-independent.ts",
+      "roadmark-104-qa/stage-polestar-candidate.ts",
+      "roadmark-104-qa/work-status.json"
+    ],
+    "unchangedArchivesReuploaded": 0
+  },
+  "approvedPolestarPacketSHA256": {
+    "polestar-2026-10-14.json": "b5109b22542d00dae69b7ab34dc3e04f422cdd7d00ffb59bfeddea9d2d6d48cf",
+    "polestar-reconciliation-2026-10-14.json": "d875b86815f67207ef18eadef24db3118492d3c5b86d17cfb6afc4b48f308793"
+  },
+  "documents": [
+    {
+      "filename": "Roadmark-RECOVERY-INDEX-polestar-integrated-20261014.md",
+      "library_file_id": "libfile_0e718e3f8c508191866b22ef5f23cd8d",
+      "version": 0,
+      "bytes": 21882,
+      "sha256": "4727a27b6abf6484d7f1c768c499276dde57565e97e3f4fe1c90651ae6e57e24"
+    },
+    {
+      "filename": "Roadmark-RECOVERY-MANIFEST-polestar-integrated-20261014.json",
+      "library_file_id": "libfile_32d589a1a9d08191bd34f87ef1e2d629",
+      "version": 0,
+      "bytes": 1836773,
+      "sha256": "892e1c96ede3d744c9fee93a5df04cdfc24e715a79074dc65c66891cf7acd447"
+    },
+    {
+      "filename": "Roadmark-RECOVERY-VERIFICATION-polestar-integrated-20261014.json",
+      "library_file_id": "libfile_a3303b6186c881918a6cb3b79b9a2a97",
+      "version": 0,
+      "bytes": 405546,
+      "sha256": "77a383c6959bd4370307ad400f404dda294c8bcda78bcf82712746d7381bf968"
+    }
+  ],
+  "newArchives": [
+    {
+      "filename": "Roadmark-recovery-source-polestar-integrated-20261014T1425.tar.xz",
+      "bytes": 8261920,
+      "sha256": "4f4913de01c471c1493399c4389ccb7acb164c89e26158c3c85694d8d9988ca4",
+      "group": "source-polestar-integrated",
+      "library_file_id": "libfile_ae4063f16c788191bc34c7fa11945e0e",
+      "version": 0,
+      "restoreOrder": 39,
+      "file_id": "file_00000000174881f79c815a57006d97a8"
+    },
+    {
+      "filename": "Roadmark-recovery-polestar-approved-20261014T142636Z-part01of03.tar.xz",
+      "bytes": 723928,
+      "sha256": "11af0fc9e83c64bd3c8cee7e0827711798683a3772291dfc48b3281e29fa5ea4",
+      "group": "polestar-approved",
+      "library_file_id": "libfile_10699f39d5b48191851d653780e18439",
+      "version": 0,
+      "restoreOrder": 67,
+      "file_id": "file_000000009f60824688ef4233cb2e2d1e"
+    },
+    {
+      "filename": "Roadmark-recovery-polestar-approved-20261014T142636Z-part02of03.tar.xz",
+      "bytes": 1433968,
+      "sha256": "6653e3debd911e57ee05c5607652c8297f349c7e6fd89cf3c53385285460c5e7",
+      "group": "polestar-approved",
+      "library_file_id": "libfile_e1e7552633588191b3490e0d800d0b30",
+      "version": 0,
+      "restoreOrder": 68,
+      "file_id": "file_000000001d4c820e9b16a6ad5425ebfb"
+    },
+    {
+      "filename": "Roadmark-recovery-polestar-approved-20261014T142636Z-part03of03.tar.xz",
+      "bytes": 1129412,
+      "sha256": "96944564ebaa52c50de9435045ec79d5cb1d05ad3604f1830af8065d3a73906a",
+      "group": "polestar-approved",
+      "library_file_id": "libfile_2a2d76177c308191814ae5276ceff4e0",
+      "version": 0,
+      "restoreOrder": 69,
+      "file_id": "file_000000002cf8820ea9e03945b01191ad"
+    },
+    {
+      "filename": "Roadmark-recovery-qa-polestar-integrated-20261014T142611Z-part01of01.tar.xz",
+      "bytes": 222732,
+      "sha256": "2750cdadefc5b9945922f8e4015bba21d029dce3d7abd855c85659b09e22312b",
+      "group": "qa-polestar-integrated",
+      "library_file_id": "libfile_9168a6509404819190d48161957bc744",
+      "version": 0,
+      "restoreOrder": 70,
+      "file_id": "file_000000008694820e8c9ce8bb041c8edd"
+    }
+  ],
+  "verifierLibraryFileId": "libfile_ca3a7f7c6970819188bdbf0b22dd8acb",
+  "cleanupListLibraryFileId": "libfile_cb182812848c8191a3755bd1607a99cc",
+  "copyTransformations": {
+    "sourceCopies": [
+      {
+        "bytes": 732552,
+        "sha256": "fb34e31bc3bdf5a1a2e1673d33ba9ab1ba6a8c0a3c2d3fb49e7e4267789b422d",
+        "originalBytes": 733472,
+        "originalSHA256": "e6b1f6adae33871d57f0c6bd730571cf64fed06ae4166c1947aed422d97b4a7f",
+        "redactedHeaderPaths": [
+          "/sources/5/headers/set-cookie",
+          "/sources/6/headers/set-cookie",
+          "/sources/7/headers/set-cookie",
+          "/sources/19/headers/set-cookie",
+          "/sources/20/headers/set-cookie",
+          "/sources/23/headers/Set-Cookie",
+          "/sources/24/headers/set-cookie",
+          "/sources/29/headers/set-cookie",
+          "/sources/33/headers/set-cookie",
+          "/sources/35/headers/Set-Cookie"
+        ],
+        "path": "data/farizon-foton-jac-trucks-evidence.json"
+      }
+    ],
+    "reusedQaCopies": [
+      {
+        "path": "roadmark-104-qa/source-package-roundtrip/roadmark/data/farizon-foton-jac-trucks-evidence.json",
+        "bytes": 732552,
+        "sha256": "fb34e31bc3bdf5a1a2e1673d33ba9ab1ba6a8c0a3c2d3fb49e7e4267789b422d",
+        "originalBytes": 733472,
+        "originalSHA256": "e6b1f6adae33871d57f0c6bd730571cf64fed06ae4166c1947aed422d97b4a7f",
+        "redactedHeaderPaths": [
+          "/sources/5/headers/set-cookie",
+          "/sources/6/headers/set-cookie",
+          "/sources/7/headers/set-cookie",
+          "/sources/19/headers/set-cookie",
+          "/sources/20/headers/set-cookie",
+          "/sources/23/headers/Set-Cookie",
+          "/sources/24/headers/set-cookie",
+          "/sources/29/headers/set-cookie",
+          "/sources/33/headers/set-cookie",
+          "/sources/35/headers/Set-Cookie"
+        ]
+      }
+    ],
+    "newQaDeltaCopyRedactions": 0,
+    "polestarBackupCopyRedactions": 0,
+    "note": "The same ten known legacy source cookie-header locations are redacted in the new full source; matching sanitized QA roundtrip reused unchanged."
+  },
+  "upstreamPolestarCaptureFiltering": {
+    "checkedAt": "2026-10-14",
+    "method": "Value-aware public-capture scan plus source-scope review; no response headers or browser state persisted",
+    "findings": [],
+    "files": [
+      {
+        "path": "current/p3-current-secondary-spec-web.json",
+        "bytes": 305,
+        "findings": {}
+      },
+      {
+        "path": "current/p4-seats-web.json",
+        "bytes": 27516,
+        "findings": {}
+      },
+      {
+        "path": "current/secondary-seats-towing-search.json",
+        "bytes": 30465,
+        "findings": {}
+      },
+      {
+        "path": "current/p4-price-carexpert-web.json",
+        "bytes": 12652,
+        "findings": {}
+      },
+      {
+        "path": "current/p4s-review-web.json",
+        "bytes": 18068,
+        "findings": {}
+      },
+      {
+        "path": "current/p3-seats-news.html",
+        "bytes": 90795,
+        "findings": {}
+      },
+      {
+        "path": "current/p3-seats-news.txt",
+        "bytes": 11289,
+        "findings": {}
+      },
+      {
+        "path": "current/p3-review-web.json",
+        "bytes": 28003,
+        "findings": {}
+      },
+      {
+        "path": "current/p4c-redbook-web.json",
+        "bytes": 349,
+        "findings": {}
+      },
+      {
+        "path": "current/p4-price.html",
+        "bytes": 80302,
+        "findings": {}
+      },
+      {
+        "path": "current/p4-price.txt",
+        "bytes": 6557,
+        "findings": {}
+      },
+      {
+        "path": "current/p3-launch-web.json",
+        "bytes": 369,
+        "findings": {}
+      },
+      {
+        "path": "current/p4-price-web.json",
+        "bytes": 432,
+        "findings": {}
+      },
+      {
+        "path": "current/p3-price-web.json",
+        "bytes": 10467,
+        "findings": {}
+      },
+      {
+        "path": "current/p2-price-web.json",
+        "bytes": 13356,
+        "findings": {}
+      },
+      {
+        "path": "current/p3-support.html",
+        "bytes": 90305,
+        "findings": {}
+      },
+      {
+        "path": "current/p3-support.txt",
+        "bytes": 8566,
+        "findings": {}
+      },
+      {
+        "path": "current/warranty-overview.html",
+        "bytes": 74780,
+        "findings": {}
+      },
+      {
+        "path": "current/warranty-overview.txt",
+        "bytes": 2485,
+        "findings": {}
+      },
+      {
+        "path": "current/warranty.html",
+        "bytes": 63330,
+        "findings": {}
+      },
+      {
+        "path": "current/warranty.txt",
+        "bytes": 2631,
+        "findings": {}
+      },
+      {
+        "path": "current/p2-seats.html",
+        "bytes": 76657,
+        "findings": {}
+      },
+      {
+        "path": "current/p2-seats.txt",
+        "bytes": 2144,
+        "findings": {}
+      },
+      {
+        "path": "current/p4s-dimensions.html",
+        "bytes": 99789,
+        "findings": {}
+      },
+      {
+        "path": "current/p4s-dimensions.txt",
+        "bytes": 2792,
+        "findings": {}
+      },
+      {
+        "path": "current/p4c-dimensions.html",
+        "bytes": 99927,
+        "findings": {}
+      },
+      {
+        "path": "current/p4c-dimensions.txt",
+        "bytes": 2802,
+        "findings": {}
+      },
+      {
+        "path": "current/p4s-towing.html",
+        "bytes": 84993,
+        "findings": {}
+      },
+      {
+        "path": "current/p4s-towing.txt",
+        "bytes": 2385,
+        "findings": {}
+      },
+      {
+        "path": "current/p4c-towing.html",
+        "bytes": 85126,
+        "findings": {}
+      },
+      {
+        "path": "current/p4c-towing.txt",
+        "bytes": 2396,
+        "findings": {}
+      },
+      {
+        "path": "current/p3-towing.html",
+        "bytes": 85086,
+        "findings": {}
+      },
+      {
+        "path": "current/p3-towing.txt",
+        "bytes": 2379,
+        "findings": {}
+      },
+      {
+        "path": "current/p2-towing.html",
+        "bytes": 78618,
+        "findings": {}
+      },
+      {
+        "path": "current/p2-towing.txt",
+        "bytes": 2321,
+        "findings": {}
+      },
+      {
+        "path": "current/p4s-spec.lines.txt",
+        "bytes": 23187,
+        "findings": {}
+      },
+      {
+        "path": "current/p4c-spec.lines.txt",
+        "bytes": 22711,
+        "findings": {}
+      },
+      {
+        "path": "current/p3-spec.lines.txt",
+        "bytes": 22700,
+        "findings": {}
+      },
+      {
+        "path": "current/p2-spec.lines.txt",
+        "bytes": 19990,
+        "findings": {}
+      },
+      {
+        "path": "current/p4s-config-public.json",
+        "bytes": 1024125,
+        "findings": {}
+      },
+      {
+        "path": "current/p4c-config-public.json",
+        "bytes": 1030333,
+        "findings": {}
+      },
+      {
+        "path": "current/p3-config-public.json",
+        "bytes": 1112191,
+        "findings": {}
+      },
+      {
+        "path": "current/p2-config-public.json",
+        "bytes": 1089478,
+        "findings": {}
+      },
+      {
+        "path": "current/p4s-config.html",
+        "bytes": 7735,
+        "findings": {}
+      },
+      {
+        "path": "current/p4s-config.txt",
+        "bytes": 57,
+        "findings": {}
+      },
+      {
+        "path": "current/p4c-config.html",
+        "bytes": 8117,
+        "findings": {}
+      },
+      {
+        "path": "current/p4c-config.txt",
+        "bytes": 60,
+        "findings": {}
+      },
+      {
+        "path": "current/p3-config.html",
+        "bytes": 7898,
+        "findings": {}
+      },
+      {
+        "path": "current/p3-config.txt",
+        "bytes": 53,
+        "findings": {}
+      },
+      {
+        "path": "current/p2-config.html",
+        "bytes": 7803,
+        "findings": {}
+      },
+      {
+        "path": "current/p2-config.txt",
+        "bytes": 53,
+        "findings": {}
+      },
+      {
+        "path": "current/p4s-spec.html",
+        "bytes": 181191,
+        "findings": {}
+      },
+      {
+        "path": "current/p4s-spec.txt",
+        "bytes": 22610,
+        "findings": {}
+      },
+      {
+        "path": "current/p4c-spec.html",
+        "bytes": 176771,
+        "findings": {}
+      },
+      {
+        "path": "current/p4c-spec.txt",
+        "bytes": 21965,
+        "findings": {}
+      },
+      {
+        "path": "current/p3-spec.html",
+        "bytes": 186240,
+        "findings": {}
+      },
+      {
+        "path": "current/p3-spec.txt",
+        "bytes": 21925,
+        "findings": {}
+      },
+      {
+        "path": "current/p2-spec.html",
+        "bytes": 170383,
+        "findings": {}
+      },
+      {
+        "path": "current/p2-spec.txt",
+        "bytes": 19271,
+        "findings": {}
+      },
+      {
+        "path": "census/p5_width_supplement_manifest.json",
+        "bytes": 1028,
+        "findings": {}
+      },
+      {
+        "path": "census/p5_width_and_bto_supplement.json",
+        "bytes": 2548,
+        "findings": {}
+      },
+      {
+        "path": "census/p5_secondary_width_check.capture.json",
+        "bytes": 915,
+        "findings": {}
+      },
+      {
+        "path": "census/p5_bto_scope.capture.json",
+        "bytes": 1849,
+        "findings": {}
+      },
+      {
+        "path": "census/p5_dimensions_manual.capture.json",
+        "bytes": 2397,
+        "findings": {}
+      },
+      {
+        "path": "census/manifest.json",
+        "bytes": 6166,
+        "findings": {}
+      },
+      {
+        "path": "census/residual_census.json",
+        "bytes": 4912,
+        "findings": {}
+      },
+      {
+        "path": "census/polestar5_normalized_rows.json",
+        "bytes": 31361,
+        "findings": {}
+      },
+      {
+        "path": "census/p4_my25_sold_listing.capture.json",
+        "bytes": 577,
+        "findings": {}
+      },
+      {
+        "path": "census/p5_carsguide_towing.capture.json",
+        "bytes": 602,
+        "findings": {}
+      },
+      {
+        "path": "census/p5_car_expert_review.capture.json",
+        "bytes": 1339,
+        "findings": {}
+      },
+      {
+        "path": "census/p5_pricing_atlas.capture.json",
+        "bytes": 4006,
+        "findings": {}
+      },
+      {
+        "path": "census/p5_towing_manual.capture.json",
+        "bytes": 1838,
+        "findings": {}
+      },
+      {
+        "path": "census/p5_secondary_price_excerpts.capture.json",
+        "bytes": 1770,
+        "findings": {}
+      },
+      {
+        "path": "census/p3_inventory.capture.json",
+        "bytes": 547,
+        "findings": {}
+      },
+      {
+        "path": "census/p4_inventory.capture.json",
+        "bytes": 559,
+        "findings": {}
+      },
+      {
+        "path": "census/p2_inventory.capture.json",
+        "bytes": 547,
+        "findings": {}
+      },
+      {
+        "path": "census/p5_config_public.capture.json",
+        "bytes": 814820,
+        "findings": {}
+      },
+      {
+        "path": "census/p5_configure.capture.json",
+        "bytes": 557,
+        "findings": {}
+      },
+      {
+        "path": "census/p5_support.capture.json",
+        "bytes": 4986,
+        "findings": {}
+      },
+      {
+        "path": "census/p3_offers.capture.json",
+        "bytes": 3711,
+        "findings": {}
+      },
+      {
+        "path": "census/p5_overview.capture.json",
+        "bytes": 6860,
+        "findings": {}
+      },
+      {
+        "path": "census/p5_specs.capture.json",
+        "bytes": 20178,
+        "findings": {}
+      },
+      {
+        "path": "census/p2_offers.capture.json",
+        "bytes": 6769,
+        "findings": {}
+      },
+      {
+        "path": "census/p4_offers.capture.json",
+        "bytes": 7033,
+        "findings": {}
+      }
+    ],
+    "privacyDecision": "Only public manufacturer/dealer/publication pages, PDFs and factual browser-attempt summary. HTML sanitised before persistent packaging. No browser screenshots included; source PDF page renderings are technical source review.",
+    "immutableHistoricalSourcesPreserved": true
+  },
+  "privacy": "All new archive members and generated documents passed the bounded known-value/runtime-pattern scan. Zero known-value matches, primary-header candidates, unclassified runtime candidates or scan errors. All reused archives match previously audited sizes and SHA-256. Final Polestar backup payloads match exactly the173 frozen allowlisted research files. Nine raw exploratory originals stay local-only and were not copied or uploaded. Capture-time filtering and historical access/execution limits are documented. Existing source guards are unchanged; original canonical packet/fixture and explicit14-price provenance amendment are retained, with138 feature-baseline rows identical. Current-day15October coverage and separate fresh14October parity evidence are both preserved. New QA-delta files need no redaction; one legacy source file has the same ten documented header redactions reapplied. These checks are not proof of absence of every possible secret.",
+  "imageProvenance": {
+    "status": "No new image files in exact allowlist or QA delta",
+    "researchImages": [],
+    "newQaImages": [],
+    "browserScreenshotsIncluded": 0,
+    "existingExclusions": "Five prior Toyota browser screenshots remain excluded with paths/hashes in base manifest",
+    "reviewerProof": "polestar-independent-review/privacy-and-retention-review.json reports no retained screenshots or archives"
+  },
+  "priorToyotaBrowserScreenshotExclusions": {
+    "result": "Excluded before any upload",
+    "provenance": "Verified from current/build_normalized.py and REVIEW.md: official PDFs displayed in cloud Chrome and captured as browser screenshots.",
+    "files": [
+      {
+        "path": "toyota-research/current/bz4x-spec-p1.png",
+        "bytes": 94027,
+        "sha256": "2d9242f9136c653566bb169e0621106f9bafe749e465961139d45dd688b660a1",
+        "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+      },
+      {
+        "path": "toyota-research/current/bz4x-spec-p2.png",
+        "bytes": 92201,
+        "sha256": "ab1c9676f743f030ec5fc29654e6961c48ac8f31801456cd6307bc352d4e2275",
+        "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+      },
+      {
+        "path": "toyota-research/current/hilux-spec-p2.png",
+        "bytes": 91974,
+        "sha256": "08adef635b8744c02336ada1b02b674ee6b4f0e0012a3bd0fb3f2d1f1c0af368",
+        "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+      },
+      {
+        "path": "toyota-research/current/hilux-spec-p3.png",
+        "bytes": 88131,
+        "sha256": "2bf2bdd69b4c558d94b9561202fb49046211dbbb41806113b47597c4bd9495ca",
+        "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+      },
+      {
+        "path": "toyota-research/current/touring-spec-p2.png",
+        "bytes": 85836,
+        "sha256": "9525bbd89757a7ac6311fec7f82e5c5a3c0aee6d50c1ec1ff232a247ece90491",
+        "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+      }
+    ]
+  },
+  "integrity": {
+    "result": "PASS",
+    "checkedAt": "2026-10-14T14:48:39.350645+00:00",
+    "archiveCount": 70,
+    "restoredFilesVerified": 6198,
+    "restoredBytesVerified": 2223254919,
+    "newCompressedArchivesRehashedAfterUpload": 5,
+    "method": "Final manifest file/hash/order core exactly equals independently byte-verified reconstructed tree. Native IDs/versions match successful ordered receipts. New archive hashes rechecked after upload; prior complete streaming/archive/tree verification reused without redundant whole-chain reads.",
+    "manifestSHA256": "892e1c96ede3d744c9fee93a5df04cdfc24e715a79074dc65c66891cf7acd447"
+  },
+  "backupResourceConfiguration": {
+    "recordedAt": "2026-10-14T14:31:09.845495+00:00",
+    "compression": {
+      "implementation": "Python tarfile with stdlib lzma",
+      "format": "tar.xz / PAX tar",
+      "preset": 6,
+      "extreme": false,
+      "encoderScheduling": "One archive encoder at a time in each script; no multithreading or thread-pool option requested",
+      "configuredDictionary": "8 MiB; actual Polestar archive XZ metadata retained in xz-settings.txt",
+      "integrityCheck": "CRC64",
+      "researchRawGroupTargetBytes": 45000000,
+      "sourceCompressedLimitBytes": 15000000,
+      "actualPart1Streams": 1,
+      "actualPart1Blocks": 1,
+      "xzReportedDecoderMemory": "9 MiB; codec decoder requirement only, not process RSS"
+    },
+    "memoryCaveats": [
+      "Research/source packagers read individual payloads into bytes; archive hash checks also read the compressed archive into bytes.",
+      "Privacy scans read full member bytes, decode text and run nested-JSON/runtime-pattern checks; memory can exceed codec memory substantially.",
+      "Main scan/reconstruction and independent streaming verification are serialized; static data parsing paused after initial scan termination."
+    ],
+    "measuredPeakRssThisCut": {
+      "archive-scan.resources.json.primary-137": {
+        "exitCode": 1,
+        "wallSeconds": 106.856,
+        "maxRssKiB": 634148,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+      },
+      "research-capture.resources.json": {
+        "exitCode": 0,
+        "wallSeconds": 18.622,
+        "maxRssKiB": 181448,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+      },
+      "archive-part01-scan.resources.json.isolated-137": {
+        "exitCode": -9,
+        "wallSeconds": 44.497,
+        "maxRssKiB": 613052,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+      },
+      "archive-scan.resources.json": {
+        "exitCode": 0,
+        "wallSeconds": 70.449,
+        "maxRssKiB": 291804,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+      },
+      "independent-stream-verification.resources.json": {
+        "exitCode": 0,
+        "wallSeconds": 39.704,
+        "maxRssKiB": 52876,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+      },
+      "independent-static-verification.resources.json": {
+        "exitCode": 0,
+        "wallSeconds": 0.869,
+        "maxRssKiB": 52480,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+      },
+      "archive-part02-scan.resources.json": {
+        "exitCode": 0,
+        "wallSeconds": 11.024,
+        "maxRssKiB": 45648,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+      },
+      "archive-part01-scan.resources.json": {
+        "exitCode": 0,
+        "wallSeconds": 83.064,
+        "maxRssKiB": 448552,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+      },
+      "scanner-memory-revision-review.resources.json.attempt1": {
+        "exitCode": 1,
+        "wallSeconds": 0.093,
+        "maxRssKiB": 13884,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+      },
+      "archive-scan.resources.json.isolated-137": {
+        "exitCode": 1,
+        "wallSeconds": 44.57,
+        "maxRssKiB": 613052,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+      },
+      "qa-capture.resources.json": {
+        "exitCode": 0,
+        "wallSeconds": 9.074,
+        "maxRssKiB": 400836,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+      },
+      "scanner-lowercase-unicode-review.resources.json.runtime-only": {
+        "exitCode": 0,
+        "wallSeconds": 1.911,
+        "maxRssKiB": 11776,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+      },
+      "scanner-memory-revision-review.resources.json.runtime-only": {
+        "exitCode": 0,
+        "wallSeconds": 1.168,
+        "maxRssKiB": 26612,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+      },
+      "scanner-memory-revision-review.resources.json": {
+        "exitCode": 0,
+        "wallSeconds": 0.676,
+        "maxRssKiB": 27048,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+      },
+      "archive-part01-scan.resources.json.gc-137": {
+        "exitCode": -9,
+        "wallSeconds": 38.365,
+        "maxRssKiB": 630940,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+      },
+      "archive-part03-scan.resources.json": {
+        "exitCode": 0,
+        "wallSeconds": 33.311,
+        "maxRssKiB": 291804,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+      },
+      "reconstruction.resources.json": {
+        "exitCode": 0,
+        "wallSeconds": 85.042,
+        "maxRssKiB": 142520,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+      },
+      "archive-scan.resources.initial-137.json": {
+        "exitCode": -9,
+        "wallSeconds": 43.853,
+        "maxRssKiB": 562776,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+      },
+      "archive-scan.resources.json.gc-137": {
+        "exitCode": 1,
+        "wallSeconds": 38.446,
+        "maxRssKiB": 630940,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+      },
+      "archive-part05-scan.resources.json": {
+        "exitCode": 0,
+        "wallSeconds": 8.312,
+        "maxRssKiB": 45516,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+      },
+      "source-capture.resources.json": {
+        "exitCode": 0,
+        "wallSeconds": 42.102,
+        "maxRssKiB": 360624,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+      },
+      "archive-part03-scan.resources.json.primary-137": {
+        "exitCode": -9,
+        "wallSeconds": 12.56,
+        "maxRssKiB": 634148,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+      },
+      "scanner-lowercase-unicode-review.resources.json": {
+        "exitCode": 0,
+        "wallSeconds": 4.673,
+        "maxRssKiB": 13440,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+      },
+      "archive-part04-scan.resources.json": {
+        "exitCode": 0,
+        "wallSeconds": 28.533,
+        "maxRssKiB": 95864,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+      }
+    },
+    "measurementNote": "All heavy phases run sequentially. Four scanner attempts ended SIGKILL137 before full verdict and receive no coverage credit; cause is not established. Full source and allowlisted research bytes remain unchanged. Final scans use independently reviewed exact ASCII-marker lowercase-find/membership adapters and memory release, with no regex windows or matching-rule changes. Successful part reports are combined with exact archive/report/engine identities; earlier successful parts use their preserved approved runtime-only code revision.",
+    "largestPreviousSourcePayloads": [
+      {
+        "path": "data/catalogue-additions-2026-10-10.json",
+        "bytes": 74934307
+      },
+      {
+        "path": "data/buyer-identity-snapshots-2026-10-10.json",
+        "bytes": 54962382
+      },
+      {
+        "path": "data/buyer-selling-points-2026-10-10.json",
+        "bytes": 24074749
+      },
+      {
+        "path": "data/m1-brand-updates/hyundai-2026-10-14.json",
+        "bytes": 18134105
+      },
+      {
+        "path": "data/m1-evidence-regrading-2026-10-13.json",
+        "bytes": 15226769
+      }
+    ],
+    "plannedScheduling": "All capture, compression, full scan, reconstruction and independent verification are sequential. Root catalogue work resumes only after explicit release.",
+    "failedScanAttempts": [
+      {
+        "metrics": "archive-scan.resources.initial-137.json",
+        "receipt": {
+          "startedAt": "2026-10-14T14:27:39.995037+00:00",
+          "endedAt": "2026-10-14T14:28:23.848324+00:00",
+          "command": [
+            "python3",
+            "final_residual_scan.py",
+            "--archive",
+            "Roadmark-recovery-source-polestar-integrated-20261014T1425.tar.xz",
+            "--archive",
+            "Roadmark-recovery-polestar-approved-20261014T142636Z-part01of03.tar.xz",
+            "--archive",
+            "Roadmark-recovery-polestar-approved-20261014T142636Z-part02of03.tar.xz",
+            "--archive",
+            "Roadmark-recovery-polestar-approved-20261014T142636Z-part03of03.tar.xz",
+            "--archive",
+            "Roadmark-recovery-qa-polestar-integrated-20261014T142611Z-part01of01.tar.xz",
+            "--report",
+            "POLESTAR-FINAL-NEW-ARCHIVE-RESIDUAL-REPORT.json"
+          ],
+          "exitCode": -9,
+          "wallSeconds": 43.853,
+          "userSeconds": 42.115436,
+          "systemSeconds": 1.5523660000000001,
+          "maxRssKiB": 562776,
+          "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB",
+          "hostTimeBinaryAvailable": false
+        }
+      },
+      {
+        "metrics": "archive-part01-scan.resources.json.isolated-137",
+        "receipt": {
+          "startedAt": "2026-10-14T14:30:33.822740+00:00",
+          "endedAt": "2026-10-14T14:31:18.319427+00:00",
+          "command": [
+            "python3",
+            "final_residual_scan.py",
+            "--archive",
+            "Roadmark-recovery-source-polestar-integrated-20261014T1425.tar.xz",
+            "--report",
+            "POLESTAR-FINAL-NEW-ARCHIVE-PART01-RESIDUAL-REPORT.json"
+          ],
+          "exitCode": -9,
+          "wallSeconds": 44.497,
+          "userSeconds": 42.667368,
+          "systemSeconds": 1.746849,
+          "maxRssKiB": 613052,
+          "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB",
+          "hostTimeBinaryAvailable": false
+        }
+      },
+      {
+        "metrics": "archive-part01-scan.resources.json.gc-137",
+        "receipt": {
+          "startedAt": "2026-10-14T14:34:03.745795+00:00",
+          "endedAt": "2026-10-14T14:34:42.110998+00:00",
+          "command": [
+            "python3",
+            "final_residual_scan_memory_bounded.py",
+            "--archive",
+            "Roadmark-recovery-source-polestar-integrated-20261014T1425.tar.xz",
+            "--report",
+            "POLESTAR-FINAL-NEW-ARCHIVE-PART01-RESIDUAL-REPORT.json"
+          ],
+          "exitCode": -9,
+          "wallSeconds": 38.365,
+          "userSeconds": 37.168334,
+          "systemSeconds": 1.158482,
+          "maxRssKiB": 630940,
+          "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB",
+          "hostTimeBinaryAvailable": false
+        }
+      },
+      {
+        "metrics": "archive-part03-scan.resources.json.primary-137",
+        "receipt": {
+          "startedAt": "2026-10-14T14:38:41.598162+00:00",
+          "endedAt": "2026-10-14T14:38:54.157918+00:00",
+          "command": [
+            "python3",
+            "final_residual_scan_memory_bounded.py",
+            "--archive",
+            "Roadmark-recovery-polestar-approved-20261014T142636Z-part02of03.tar.xz",
+            "--report",
+            "POLESTAR-FINAL-NEW-ARCHIVE-PART03-RESIDUAL-REPORT.json"
+          ],
+          "exitCode": -9,
+          "wallSeconds": 12.56,
+          "userSeconds": 11.748567,
+          "systemSeconds": 0.7975059999999999,
+          "maxRssKiB": 634148,
+          "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB",
+          "hostTimeBinaryAvailable": false
+        }
+      }
+    ],
+    "scannerReview": "SCANNER-MEMORY-REVISION-REVIEW.json and SCANNER-LOWERCASE-UNICODE-REVIEW.json",
+    "scannerCodeIdentities": {
+      "final_residual_scan.py": "e9ab9a21df213c71e4a72e77cb5d4ce596eb8a6a7dc3c12b90f156b741e3a03a",
+      "final_residual_scan_memory_bounded.py": "db71353ba5fe98021f68cd9aeaae6eb4e1878627fb4985278b11457baf837238",
+      "chunked_lower_find.py": "6de208f633b05ef1cb894ca8e896c4a489bb093eb1339134c4b1d7158263ec1f",
+      "audit_scan.py": "54ee0827089ad8202a24c6769a4178dee28fe96b85f1fd8a627a15703c15f3b2",
+      "runtime_token_scan.py": "4ea9c6be9b292bbe126fcc2f8d7b3254a1dc941c49d78b263c9203d0025f9c46"
+    },
+    "scannerUnionReportSHA256": "ed06c0c3ea5071c966bdc14093c38c9c149c62b453d27433b89445be5fbadf88",
+    "updatedAt": "2026-10-14T14:46:20.338190+00:00"
+  },
+  "workState": {
+    "workingCheckpoint": 104,
+    "latestDeliveredCheckpoint": 103,
+    "milestone": "M1 open",
+    "latestIntegratedBrand": "Polestar",
+    "totalVersions": 397,
+    "tier1Versions": 320,
+    "onSaleVersions": 296,
+    "coreReviewNote": "Grades require an explicit sourced M1 review; legacy statuses do not earn Confirmed. 4509/5032 on-sale core cells reviewed; unsuccessful searches need two cited sources.",
+    "polestarCounts": {
+      "checkedAt": "2026-10-14",
+      "packet": "m1-polestar-2026-10-14",
+      "variantCount": 14,
+      "newVersionCount": 2,
+      "coreCells": 238,
+      "coreGradeCounts": {
+        "reported": 26,
+        "confirmed": 195,
+        "check": 17
+      },
+      "twoSourceNotPublished": [],
+      "factEdits": 816,
+      "sharedTerms": 3,
+      "featureEdits": 374,
+      "summaryPairs": 14,
+      "sources": 38,
+      "allSourceCapturesVerified": true,
+      "researchCompleted": false,
+      "unresolved": [
+        "Nationwide residual-new older Polestar2,3 and4 census",
+        "P5 current factory-order acceptance and new SUV fulfilment",
+        "Whole-market two independent published model-list reconciliation"
+      ],
+      "chargingIntegrity": "Exact10\u201380% windows; P3 800 V and400 V results separate; station rating is not silently substituted for vehicle peak.11 kW AC standard; P4 22 kW separate option.",
+      "pricingIntegrity": "Exact secondary AU before-ORC prices retained as Reported after maker-price retrieval failure. Maker offers remain separate, no tax conversion or discount deduction.",
+      "availabilityIntegrity": "Current listing, future default build delivery and provisional/order-open status remain separate; no physical-stock or accepted-order claim"
+    },
+    "researchCompleted": false,
+    "criteriaStatus": {
+      "C1": false,
+      "C2": true,
+      "C3": true,
+      "C4": true,
+      "C5": false,
+      "C6": true
+    },
+    "remainingResearchScope": [
+      "Nationwide residual-new older Polestar2,3 and4 census",
+      "P5 current factory-order acceptance and new SUV fulfilment",
+      "Whole-market two independent published model-list reconciliation"
+    ],
+    "materialCaveats": [
+      "Published secondary Australian before-on-road prices remain Reported after maker-price retrieval failed; offers remain separate.",
+      "Current listings, default future build delivery and provisional/order-open status remain distinct; no physical-stock or accepted-order claim.",
+      "Original canonical packet/fixture preserved with an explicit14-price provenance-only amendment;138 feature-baseline rows remain byte-identical."
+    ],
+    "latestRootChecks": {
+      "brand": "Polestar",
+      "researchCompleted": false,
+      "integrationTests": {
+        "passed": 171,
+        "failed": 0
+      },
+      "validateExit": 0,
+      "coverageExit": 0,
+      "typecheckExit": 0,
+      "changedFileLintExit": 0,
+      "successfulRunDirectory": "polestar-sequential-checks",
+      "packetSha256": "b5109b22542d00dae69b7ab34dc3e04f422cdd7d00ffb59bfeddea9d2d6d48cf",
+      "execution": "Serialized with 704 MiB old heap and 1 MiB semi-space for tests/validate/coverage; 768 MiB old heap and 1 MiB semi-space for TypeScript/lint. Initial file-level SIGKILL retained.",
+      "datedCoverageParityReport": "polestar-sequential-checks/coverage-asof-2026-10-14.stdout",
+      "coverageDateNote": "Current-day report is 15 October in Australia/Sydney; a separate fresh 14 October report exactly matches staged output without normalization"
+    },
+    "finalRootIntegrationReceipt": {
+      "status": "passed_and_frozen",
+      "asOf": "2026-10-14",
+      "comparison": "Complete parsed JSON equality, all397 catalogue versions and every report field; no ignored fields, filtering, date substitution or expected-fixture rewrite",
+      "registeredCoverageSha256": "32df7a272d94d6a77f38c828c05c118c458649580a767317c4a5b9fcee047300",
+      "approvedStagedCoverageSha256": "0111218dbbf12f7af2d03cb360f5d68e0ca31b7ae59e0b70543395de253526a9",
+      "currentDayCoveragePreservedSha256": "3e5cf117cb5650b3a6028a1785129779178927177526dab41f7af5773b295214",
+      "priorDateMismatchPreserved": true,
+      "packetSha256": "b5109b22542d00dae69b7ab34dc3e04f422cdd7d00ffb59bfeddea9d2d6d48cf",
+      "reconciliationSha256": "d875b86815f67207ef18eadef24db3118492d3c5b86d17cfb6afc4b48f308793",
+      "originalSourceCodeInputHashes": 459,
+      "authorizedChangesOnly": [
+        "One packet registry append",
+        "One reconciliation import and one combine entry"
+      ],
+      "allOtherOriginalHashesUnchanged": true,
+      "registrationDeltaReverified": true,
+      "integrationTests": 171,
+      "integrationFailures": 0,
+      "structuralValidation": true,
+      "typecheck": true,
+      "lint": true,
+      "metrics": {
+        "typecheck.metrics": {
+          "command": [
+            "node",
+            "node_modules/typescript/bin/tsc",
+            "--noEmit"
+          ],
+          "nodeOptions": "--max-old-space-size=768 --max-semi-space-size=1",
+          "exitCode": 0,
+          "signal": null,
+          "wallSeconds": 9.616,
+          "userSeconds": 13.745724,
+          "systemSeconds": 1.412287,
+          "maxRssKiB": 674524
+        },
+        "coverage.metrics": {
+          "command": [
+            "node",
+            "--import",
+            "tsx",
+            "scripts/report-coverage.ts",
+            "--json"
+          ],
+          "nodeOptions": "--max-old-space-size=704 --max-semi-space-size=1",
+          "exitCode": 0,
+          "signal": null,
+          "wallSeconds": 308.531,
+          "userSeconds": 320.446967,
+          "systemSeconds": 8.648655,
+          "maxRssKiB": 725068
+        },
+        "integration.metrics": {
+          "command": [
+            "node",
+            "--import",
+            "tsx",
+            "--test",
+            "--test-reporter=tap",
+            "--test-concurrency=1",
+            "tests/brand-added-detail.test.ts",
+            "tests/brand-feature-updates.test.ts",
+            "tests/brand-updates.test.ts",
+            "tests/brand-configuration-updates.test.ts",
+            "tests/price-ladder.test.ts"
+          ],
+          "nodeOptions": "--max-old-space-size=704 --max-semi-space-size=1",
+          "exitCode": 0,
+          "signal": null,
+          "wallSeconds": 472.994,
+          "userSeconds": 573.970943,
+          "systemSeconds": 18.434989,
+          "maxRssKiB": 798868
+        },
+        "lint.metrics": {
+          "command": [
+            "node",
+            "node_modules/eslint/bin/eslint.js",
+            "scripts/reporting/load.ts",
+            "src/lib/price-ladder.ts",
+            "tests/price-ladder.test.ts",
+            "tests/brand-updates.test.ts"
+          ],
+          "nodeOptions": "--max-old-space-size=768 --max-semi-space-size=1",
+          "exitCode": 0,
+          "signal": null,
+          "wallSeconds": 4.285,
+          "userSeconds": 4.412668,
+          "systemSeconds": 0.823691,
+          "maxRssKiB": 239768
+        },
+        "coverage-asof-2026-10-14.metrics": {
+          "command": [
+            "node",
+            "--import",
+            "tsx",
+            "scripts/report-coverage.ts",
+            "--json",
+            "--as-of",
+            "2026-10-14"
+          ],
+          "nodeOptions": "--max-old-space-size=704 --max-semi-space-size=4",
+          "exitCode": 0,
+          "signal": null,
+          "wallSeconds": 253.676,
+          "userSeconds": 297.674356,
+          "systemSeconds": 8.471277,
+          "maxRssKiB": 724900
+        },
+        "validate.metrics": {
+          "command": [
+            "node",
+            "--import",
+            "tsx",
+            "scripts/validate.ts"
+          ],
+          "nodeOptions": "--max-old-space-size=704 --max-semi-space-size=1",
+          "exitCode": 0,
+          "signal": null,
+          "wallSeconds": 322.351,
+          "userSeconds": 339.802887,
+          "systemSeconds": 8.924842,
+          "maxRssKiB": 765148
+        }
+      },
+      "newQaSensitiveFindings": [],
+      "researchCompleted": false,
+      "brandCriteria": {
+        "C1": false,
+        "C2": true,
+        "C3": true,
+        "C4": true,
+        "C5": false,
+        "C6": true
+      },
+      "backupRule": "Use unchanged research retained-files.txt allowlist only; freeze Polestar research and review artifacts after this receipt"
+    },
+    "currentResearchBrand": "Subaru",
+    "nextResearchBrand": "XPENG",
+    "historicalReceiptNote": "Frozen research readiness and approval retain pre-registration/pending wording at their original timestamps. Final registered coverage-parity receipt and root work-status supersede those interim statuses.",
+    "sourceChanges": "Polestar packet/reconciliation, registry and report-loader registration plus progress docs; no new runtime guards or tests changed in this brand cut. Previous source guards retained.",
+    "canonicalAmendment": {
+      "createdAt": "2026-10-14T13:37:38.183Z",
+      "reason": "Root-approved explicit provenance-only canonical amendment; original packet, fixture and hashes retained permanently.",
+      "originalCanonicalHash": "0b1eb2690af2a9f1cd796b44fe9a977c5b2b55acedc698acafa1f4ba9e2591fa",
+      "amendedCanonicalHash": "5fc7ddece637b5e8153bc3c125810f680b1dd35b705528429096d0aace88d483",
+      "originalFixture": "new-feature-before.json",
+      "amendedFixture": "new-feature-before-v2.json",
+      "originalFixtureSha256": "3f868d0e340c51db874627d85f555519699432831bf3a48e56ca017351e83773",
+      "amendedFixtureSha256": "3f868d0e340c51db874627d85f555519699432831bf3a48e56ca017351e83773",
+      "amendments": [
+        {
+          "variantId": "polestar_2_my27_long_range_single_motor__20261010",
+          "factKey": "price_aud",
+          "paths": [
+            {
+              "path": "facts[0].after.priceEvidence.basisTag",
+              "before": "Reported by GoAuto",
+              "after": "Reported before on-road costs \u00b7 GoAuto"
+            },
+            {
+              "path": "facts[0].after.priceEvidence.originalBasis",
+              "before": "Published Australian price before on-road costs; no further tax or fee inclusions inferred",
+              "after": "Published Australian price before on-road costs"
+            }
+          ],
+          "reason": "Retain explicit published before-on-road-costs label in dedicated provenance, separate from disclaimers, so contradictory comparisonBasis mutations are rejected. Amount, grade, source scope and ranking eligibility unchanged."
+        },
+        {
+          "variantId": "polestar_2_my27_long_range_dual_motor__20261010",
+          "factKey": "price_aud",
+          "paths": [
+            {
+              "path": "facts[56].after.priceEvidence.basisTag",
+              "before": "Reported by GoAuto",
+              "after": "Reported before on-road costs \u00b7 GoAuto"
+            },
+            {
+              "path": "facts[56].after.priceEvidence.originalBasis",
+              "before": "Published Australian price before on-road costs; no further tax or fee inclusions inferred",
+              "after": "Published Australian price before on-road costs"
+            }
+          ],
+          "reason": "Retain explicit published before-on-road-costs label in dedicated provenance, separate from disclaimers, so contradictory comparisonBasis mutations are rejected. Amount, grade, source scope and ranking eligibility unchanged."
+        },
+        {
+          "variantId": "polestar_2_my27_long_range_dual_motor_with_performance_pack__20261010",
+          "factKey": "price_aud",
+          "paths": [
+            {
+              "path": "facts[111].after.priceEvidence.basisTag",
+              "before": "Reported by GoAuto",
+              "after": "Reported before on-road costs \u00b7 GoAuto"
+            },
+            {
+              "path": "facts[111].after.priceEvidence.originalBasis",
+              "before": "Published Australian price before on-road costs; no further tax or fee inclusions inferred",
+              "after": "Published Australian price before on-road costs"
+            }
+          ],
+          "reason": "Retain explicit published before-on-road-costs label in dedicated provenance, separate from disclaimers, so contradictory comparisonBasis mutations are rejected. Amount, grade, source scope and ranking eligibility unchanged."
+        },
+        {
+          "variantId": "polestar_3_my27_rear_motor__20261010",
+          "factKey": "price_aud",
+          "paths": [
+            {
+              "path": "facts[166].after.priceEvidence.basisTag",
+              "before": "Reported by CarsGuide",
+              "after": "Reported before on-road costs \u00b7 CarsGuide"
+            },
+            {
+              "path": "facts[166].after.priceEvidence.originalBasis",
+              "before": "Published Australian price before on-road costs; no further tax or fee inclusions inferred",
+              "after": "Published Australian price before on-road costs"
+            }
+          ],
+          "reason": "Retain explicit published before-on-road-costs label in dedicated provenance, separate from disclaimers, so contradictory comparisonBasis mutations are rejected. Amount, grade, source scope and ranking eligibility unchanged."
+        },
+        {
+          "variantId": "polestar_3_my27_dual_motor__20261010",
+          "factKey": "price_aud",
+          "paths": [
+            {
+              "path": "facts[226].after.priceEvidence.basisTag",
+              "before": "Reported by CarsGuide",
+              "after": "Reported before on-road costs \u00b7 CarsGuide"
+            },
+            {
+              "path": "facts[226].after.priceEvidence.originalBasis",
+              "before": "Published Australian price before on-road costs; no further tax or fee inclusions inferred",
+              "after": "Published Australian price before on-road costs"
+            }
+          ],
+          "reason": "Retain explicit published before-on-road-costs label in dedicated provenance, separate from disclaimers, so contradictory comparisonBasis mutations are rejected. Amount, grade, source scope and ranking eligibility unchanged."
+        },
+        {
+          "variantId": "polestar_3_my27_performance__20261010",
+          "factKey": "price_aud",
+          "paths": [
+            {
+              "path": "facts[287].after.priceEvidence.basisTag",
+              "before": "Reported by CarsGuide",
+              "after": "Reported before on-road costs \u00b7 CarsGuide"
+            },
+            {
+              "path": "facts[287].after.priceEvidence.originalBasis",
+              "before": "Published Australian price before on-road costs; no further tax or fee inclusions inferred",
+              "after": "Published Australian price before on-road costs"
+            }
+          ],
+          "reason": "Retain explicit published before-on-road-costs label in dedicated provenance, separate from disclaimers, so contradictory comparisonBasis mutations are rejected. Amount, grade, source scope and ranking eligibility unchanged."
+        },
+        {
+          "variantId": "polestar_4_coupe_my27_rear_motor__20261010",
+          "factKey": "price_aud",
+          "paths": [
+            {
+              "path": "facts[348].after.priceEvidence.basisTag",
+              "before": "Reported by CarExpert",
+              "after": "Reported before on-road costs \u00b7 CarExpert"
+            },
+            {
+              "path": "facts[348].after.priceEvidence.originalBasis",
+              "before": "Published Australian price before on-road costs; no further tax or fee inclusions inferred",
+              "after": "Published Australian price before on-road costs"
+            }
+          ],
+          "reason": "Retain explicit published before-on-road-costs label in dedicated provenance, separate from disclaimers, so contradictory comparisonBasis mutations are rejected. Amount, grade, source scope and ranking eligibility unchanged."
+        },
+        {
+          "variantId": "polestar_4_coupe_my27_dual_motor__20261010",
+          "factKey": "price_aud",
+          "paths": [
+            {
+              "path": "facts[407].after.priceEvidence.basisTag",
+              "before": "Reported by CarExpert",
+              "after": "Reported before on-road costs \u00b7 CarExpert"
+            },
+            {
+              "path": "facts[407].after.priceEvidence.originalBasis",
+              "before": "Published Australian price before on-road costs; no further tax or fee inclusions inferred",
+              "after": "Published Australian price before on-road costs"
+            }
+          ],
+          "reason": "Retain explicit published before-on-road-costs label in dedicated provenance, separate from disclaimers, so contradictory comparisonBasis mutations are rejected. Amount, grade, source scope and ranking eligibility unchanged."
+        },
+        {
+          "variantId": "polestar_4_coupe_my27_dual_motor_with_performance_pack__20261010",
+          "factKey": "price_aud",
+          "paths": [
+            {
+              "path": "facts[466].after.priceEvidence.basisTag",
+              "before": "Reported by CarExpert",
+              "after": "Reported before on-road costs \u00b7 CarExpert"
+            },
+            {
+              "path": "facts[466].after.priceEvidence.originalBasis",
+              "before": "Published Australian price before on-road costs; no further tax or fee inclusions inferred",
+              "after": "Published Australian price before on-road costs"
+            }
+          ],
+          "reason": "Retain explicit published before-on-road-costs label in dedicated provenance, separate from disclaimers, so contradictory comparisonBasis mutations are rejected. Amount, grade, source scope and ranking eligibility unchanged."
+        },
+        {
+          "variantId": "polestar_4_suv_my27_rear_motor__20261010",
+          "factKey": "price_aud",
+          "paths": [
+            {
+              "path": "facts[524].after.priceEvidence.basisTag",
+              "before": "Reported by CarExpert",
+              "after": "Reported before on-road costs \u00b7 CarExpert"
+            },
+            {
+              "path": "facts[524].after.priceEvidence.originalBasis",
+              "before": "Published Australian price before on-road costs; no further tax or fee inclusions inferred",
+              "after": "Published Australian price before on-road costs"
+            }
+          ],
+          "reason": "Retain explicit published before-on-road-costs label in dedicated provenance, separate from disclaimers, so contradictory comparisonBasis mutations are rejected. Amount, grade, source scope and ranking eligibility unchanged."
+        },
+        {
+          "variantId": "polestar_4_suv_my27_dual_motor__20261010",
+          "factKey": "price_aud",
+          "paths": [
+            {
+              "path": "facts[586].after.priceEvidence.basisTag",
+              "before": "Reported by CarExpert",
+              "after": "Reported before on-road costs \u00b7 CarExpert"
+            },
+            {
+              "path": "facts[586].after.priceEvidence.originalBasis",
+              "before": "Published Australian price before on-road costs; no further tax or fee inclusions inferred",
+              "after": "Published Australian price before on-road costs"
+            }
+          ],
+          "reason": "Retain explicit published before-on-road-costs label in dedicated provenance, separate from disclaimers, so contradictory comparisonBasis mutations are rejected. Amount, grade, source scope and ranking eligibility unchanged."
+        },
+        {
+          "variantId": "polestar_4_suv_my27_dual_motor_with_performance_pack__20261010",
+          "factKey": "price_aud",
+          "paths": [
+            {
+              "path": "facts[648].after.priceEvidence.basisTag",
+              "before": "Reported by CarExpert",
+              "after": "Reported before on-road costs \u00b7 CarExpert"
+            },
+            {
+              "path": "facts[648].after.priceEvidence.originalBasis",
+              "before": "Published Australian price before on-road costs; no further tax or fee inclusions inferred",
+              "after": "Published Australian price before on-road costs"
+            }
+          ],
+          "reason": "Retain explicit published before-on-road-costs label in dedicated provenance, separate from disclaimers, so contradictory comparisonBasis mutations are rejected. Amount, grade, source scope and ranking eligibility unchanged."
+        },
+        {
+          "variantId": "polestar_5_my26__dual_motor_launch_edition__20261014",
+          "factKey": "price_aud",
+          "paths": [
+            {
+              "path": "facts[709].after.priceEvidence.basisTag",
+              "before": "Reported by CarExpert",
+              "after": "Reported before on-road costs \u00b7 CarExpert"
+            }
+          ],
+          "reason": "Retain explicit published before-on-road-costs label in dedicated provenance, separate from disclaimers, so contradictory comparisonBasis mutations are rejected. Amount, grade, source scope and ranking eligibility unchanged."
+        },
+        {
+          "variantId": "polestar_5_my26__performance_launch_edition__20261014",
+          "factKey": "price_aud",
+          "paths": [
+            {
+              "path": "facts[762].after.priceEvidence.basisTag",
+              "before": "Reported by CarExpert",
+              "after": "Reported before on-road costs \u00b7 CarExpert"
+            }
+          ],
+          "reason": "Retain explicit published before-on-road-costs label in dedicated provenance, separate from disclaimers, so contradictory comparisonBasis mutations are rejected. Amount, grade, source scope and ranking eligibility unchanged."
+        }
+      ],
+      "featureRows": 138,
+      "completeFeatureDiffs": [],
+      "unchangedCanonicalFieldsVerified": true,
+      "unchangedFeatureBytesVerified": true
+    },
+    "independentApproval": {
+      "status": "approved_for_registration_pending_registered_full_coverage_comparison",
+      "reviewedAt": "2026-10-14",
+      "brand": "Polestar",
+      "packetSha256": "b5109b22542d00dae69b7ab34dc3e04f422cdd7d00ffb59bfeddea9d2d6d48cf",
+      "reconciliationSha256": "d875b86815f67207ef18eadef24db3118492d3c5b86d17cfb6afc4b48f308793",
+      "stagedFullReportSha256": "0111218dbbf12f7af2d03cb360f5d68e0ca31b7ae59e0b70543395de253526a9",
+      "originalCanonicalHash": "0b1eb2690af2a9f1cd796b44fe9a977c5b2b55acedc698acafa1f4ba9e2591fa",
+      "amendedCanonicalHash": "5fc7ddece637b5e8153bc3c125810f680b1dd35b705528429096d0aace88d483",
+      "originalAndAmendedFixtureSha256": "3f868d0e340c51db874627d85f555519699432831bf3a48e56ca017351e83773",
+      "amendmentProofSha256": "d676a77d07c0fc49806561e40b106b17e0761a1f9cbbb94afdb8eb9b1767dbab",
+      "independentReplaySha256": "a11c78732a675af978050434a3ffa0dfdb6d646c44338d1aa8a90d2672fbb4f2",
+      "independentPrivacySha256": "62960fb91828b6015b62fe9a3f5bb92e2d0e322f342bcfe45d92dcdd10ddd15a",
+      "independentVerifierSha256": "49d972fd2705e1cefdc4fc1c7fcaeac1836796e66d1496f2a17efe860cf069ac",
+      "privacyVerifierSha256": "3f7c5e6d9081b4e62b91ac0648848ef6c1c3016933cb3aaff54b3243f49c03b0",
+      "resourceUsage": {
+        "exitCode": 0,
+        "elapsedSeconds": 51.50533428500057,
+        "maxRssKiB": 789136,
+        "command": [
+          "node",
+          "--expose-gc",
+          "--max-old-space-size=704",
+          "--max-semi-space-size=1",
+          "--import",
+          "tsx",
+          "../roadmark-104-qa/review-polestar-independent.ts"
+        ]
+      },
+      "counts": {
+        "beforeCatalogueVersions": 395,
+        "afterCatalogueVersions": 397,
+        "versions": 14,
+        "onSaleVersions": 9,
+        "newVersions": 2,
+        "sources": 38,
+        "captureReferences": 53,
+        "captureFiles": 53,
+        "factsChecked": 858,
+        "featuresChecked": 374,
+        "dependenciesChecked": 468,
+        "summaryDependencies": 59,
+        "notPublished": 0
+      },
+      "independentSourceAssertions": 267,
+      "coreGrades": {
+        "reported": 26,
+        "confirmed": 195,
+        "check": 17
+      },
+      "availability": {
+        "onSale": 9,
+        "orderOpenOrArriving": 3,
+        "provisionalNotConfirmed": 2
+      },
+      "negativeChecks": {
+        "negativeGuards": 14,
+        "rankingGuards": 98,
+        "secondaryGuards": 56,
+        "foreignGuards": 28,
+        "priceBasisGuards": 14
+      },
+      "retention": {
+        "retainedFiles": 170,
+        "metadataFiles": 3,
+        "localOnlyExclusions": 9,
+        "allowlistHashes": {
+          "retained-files.txt": "70d4841ae3e231fb4b1fdd59ebe52e9a0ac823689d867343db1ea9c1a77c4d73",
+          "retention-manifest.json": "3f55f4afecf87d2faffd7f5cdc39155cc65ed808ef04fc21555956d6a86a6368",
+          "retention-summary.json": "4ced24a430797e8a911af793c4756827e19787ec291d91b8cda8a0b8cee77af6"
+        }
+      },
+      "productionChangesRequired": false,
+      "researchCompleted": false,
+      "brandCriteria": {
+        "C1": false,
+        "C2": true,
+        "C3": true,
+        "C4": true,
+        "C5": false,
+        "C6": true
+      },
+      "conditions": [
+        "Register exactly these packet and reconciliation bytes only",
+        "Run final full registered coverage and compare complete JSON with the approved staged report",
+        "Backup research using retained-files.txt allowlist only; never copy the whole research root",
+        "Retain original canonical packet, original fixture/meta, explicit v2 proof, original source/input hashes and all failed-attempt receipts",
+        "Do not claim whole-brand or whole-market research closure: residual-new census and current fulfilment remain open"
+      ]
+    },
+    "coverageDateHandling": {
+      "datedAsOf": "2026-10-14",
+      "currentDayAsOf": "2026-10-15",
+      "exactParsedDatedCoverageEqualsStaged": true,
+      "currentDayReportPreserved": true,
+      "priorDateMismatchPreserved": true,
+      "note": "Current-day report crossed midnight in Australia/Sydney; a separate fresh explicit 14 October run matched the staged complete JSON without normalization, date substitution or expected-fixture rewrite."
+    },
+    "fullAggregateSuite": "Not rerun; earlier through-Hyundai aggregate remains interrupted without terminal aggregate result",
+    "productionBuild": "Not rerun for this integration"
+  },
+  "cleanup": {
+    "affectedOriginalsRetained": 12,
+    "intermediateCopiesRetained": 3,
+    "deletions": 0,
+    "replacements": 0
+  },
+  "scope": "Full Polestar-integrated source and approved research plus stable QA delta over the verified Chery chain. No provisional Polestar archive is required for restore. No later Subaru research is included."
+}

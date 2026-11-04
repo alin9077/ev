@@ -1,0 +1,103 @@
+{
+  "status": "passed_read_only_actual_runtime_and_in_memory_merge",
+  "checkedAt": "2026-10-10",
+  "policy": {
+    "asOf": "2026-10-10",
+    "maxAgeDays": 30
+  },
+  "validationMode": "new_proposal_in_memory_merge",
+  "records": 12,
+  "visibleRecords": 12,
+  "visibleClauses": 24,
+  "executableDependencies": 130,
+  "originalResearchDependencies": 621,
+  "sourceLessUnknownFacts": 42,
+  "sourceLessUnknownsGuardedNotDiscarded": true,
+  "completeEffectiveFactsGuarded": 4305,
+  "sourceSnapshots": 35,
+  "originalSourceDocumentsVerified": 70,
+  "originalSourceHashesVerified": 309,
+  "requiredVisibleConditions": 48,
+  "originalStrengthAndTradeoffCopyPreserved": true,
+  "approvedRuntimeRefinements": [
+    {
+      "field": "IONIQ6N core availability.stockStatus",
+      "value": "not_verified",
+      "reason": "Exact New ad is only sunroof child; no core badge inheritance"
+    },
+    {
+      "field": "IONIQ5N source guard membership",
+      "excludedSourceId": "r10_hy_hn_chullora_ioniq5n_new",
+      "reason": "MY/roof-held advertisement remains negative provenance, not exact-current support"
+    }
+  ],
+  "unitConversions": 0,
+  "leadValueDrift": 0,
+  "priorCarsSerializedDeepEqual": 262,
+  "actualSnapshotMatches": true,
+  "exactCompleteFactMapGuards": true,
+  "exactIdentityAvailabilityRelatedAndAcceptedSourceGuards": true,
+  "rejectedAdvertCannotCreateOrSupportEligibility": true,
+  "testsPassed": 138652,
+  "mutationTestsPassed": 137556,
+  "fullCatalogueVisibleBefore": 258,
+  "fullCatalogueVisibleAfter": 270,
+  "fullCatalogueClausesBefore": 516,
+  "fullCatalogueClausesAfter": 540,
+  "unrelatedSummariesUnchanged": true,
+  "unrelatedRowsAndSnapshotsUnchanged": true,
+  "mutationExecutionScope": "Actual buildBuyerSummaries with all own/related consumers for each car mutation; complete twelve-record source, baseline and full-catalogue merge tests",
+  "applicationEdits": 0,
+  "applicationInputs": [
+    {
+      "path": "src/lib/data.ts",
+      "sha256": "f843e6f887ad4391c4dc2577a3fad5ad8c3ca2bfb1914f89409948e944a7357e"
+    },
+    {
+      "path": "src/lib/selling-points.ts",
+      "sha256": "d44e0548b162247a3ba7b273a8210de5a647102d75f6dbc9eb00ecd6e160fc87"
+    },
+    {
+      "path": "src/lib/types.ts",
+      "sha256": "3008f6281409554d53a0717877903c9ae20643694322abab77ac0a1a49d254d9"
+    },
+    {
+      "path": "data/catalogue-additions-2026-10-10.json",
+      "sha256": "9ef55e4b05f697667ed0626157697fcb272da239720bbd34253360721f8f8115"
+    },
+    {
+      "path": "data/buyer-selling-points-2026-10-10.json",
+      "sha256": "bfc893578230fdd4d98694683d3659986e7817b05ba933f5177e667721fdae10"
+    },
+    {
+      "path": "data/approved-corrections.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "data/approved-feature-corrections.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "data/approved-availability-corrections.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "data/research-refresh-2026-10-10.json",
+      "sha256": "77dc7a1ed075e41c00788ed23cdb125f8313263738f2fd863799ea7d7a37fc38"
+    }
+  ],
+  "effectiveSnapshotSha256": "255b08efe4463efc21d6e1acbbde2fe944ccd7490dd75d5ad50b3fb25f1c033a",
+  "reproducibleCommands": [
+    "cd /workspace/scratch/586427eef9f2/roadmark-work/roadmark && node --import tsx ../../roadmark-research/capture_hyundai_runtime_snapshot.cjs",
+    "python /workspace/scratch/586427eef9f2/roadmark-research/bind_hyundai_selling_points.py",
+    "cd /workspace/scratch/586427eef9f2/roadmark-work/roadmark && node --import tsx ../../roadmark-research/validate_hyundai_selling_points.cjs"
+  ],
+  "limitations": [
+    "Read-only current-runtime verification and in-memory merge; no application writes, browser rendering, full build or whole test-suite result is claimed.",
+    "Whole effective fact-map equality is intentionally conservative. Added, removed or changed facts require copy/caveat review.",
+    "Runtime source guards cover accepted metadata exposed by research(), not downloaded webpages. Original byte/text/object/excerpt hashes are checked separately.",
+    "Failed, held and unused research leads are hashed exclusion provenance; their metadata cannot create, support, rescue or poison eligibility. Exact option-child evidence does not grant a core New badge.",
+    "Current advertised New status is not physical stock, unsold allocation, VIN inspection or guaranteed delivery. Four core records qualify; IONIQ6N advert applies only to its sunroof child, IONIQ5N MY/roof remains held.",
+    "Global source counting rules are checked at binding/validation; runtime guards explicit own/related configurations rather than unrelated future catalogue additions."
+  ]
+}

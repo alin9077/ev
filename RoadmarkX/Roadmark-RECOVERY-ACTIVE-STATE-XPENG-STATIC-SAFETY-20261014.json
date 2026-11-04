@@ -1,0 +1,1485 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-14T20:03:47.341761+00:00",
+  "status": "XPENG static research safety increment persisted; unregistered/pre-canonical at cut; TypeScript/release pending",
+  "newArchive": {
+    "restoreOrder": 92,
+    "filename": "Roadmark-recovery-XPENG-STATIC-SAFETY-20261014T1950.tar.xz",
+    "group": "XPENG-STATIC-SAFETY",
+    "bytes": 1373204,
+    "sha256": "d52752832ad6152c57019a2ccae93f5d7977f46b8be6efe27ace5b6f9d3eff5e",
+    "library_file_id": "libfile_6df8389a5f8c81918042def6a9465f2b",
+    "file_id": "file_00000000053481f4be50b00721b33312",
+    "version": 0
+  },
+  "sourceReusedUnchanged": {
+    "filename": "Roadmark-recovery-source-SUBARU-REGISTERED-WORKING-20261014T1905.tar.xz",
+    "bytes": 8308892,
+    "sha256": "ab58cf3f40f38987e405afb485f69bc211d71d5c535844f75abdc695ec304636",
+    "group": "source-SUBARU-REGISTERED-WORKING",
+    "library_file_id": "libfile_1b0f596757a08191984957ca66153acf",
+    "version": 0,
+    "restoreOrder": 39,
+    "file_id": "file_000000008b0881fd8a5fec96d14ecad8"
+  },
+  "baseRecovery": {
+    "manifestFilename": "Roadmark-RECOVERY-MANIFEST-SUBARU-REGISTERED-WORKING-20261014.json",
+    "manifestLibraryFileId": "libfile_ce54055181d8819183130b164c1dfa5b",
+    "manifestBytes": 2367250,
+    "manifestSHA256": "1a07aec690dff2692620819233a5ec4d34bcffc1d08cfdf9a679ca42877f9975",
+    "indexLibraryFileId": "libfile_c838caa6897881919cf63436f70392e0",
+    "verificationLibraryFileId": "libfile_c6f069fe31d88191afa23ff7c32eded1",
+    "activeReceiptLibraryFileId": "libfile_47955f21ef20819191e9ce83a4d17ba5",
+    "finalReceiptSHA256": "9994cb862f56ab4404997a57bcf678b9efb638e27fcb0c31b0305e2c5625e86d",
+    "source": {
+      "filename": "Roadmark-recovery-source-SUBARU-REGISTERED-WORKING-20261014T1905.tar.xz",
+      "bytes": 8308892,
+      "sha256": "ab58cf3f40f38987e405afb485f69bc211d71d5c535844f75abdc695ec304636",
+      "group": "source-SUBARU-REGISTERED-WORKING",
+      "library_file_id": "libfile_1b0f596757a08191984957ca66153acf",
+      "version": 0,
+      "restoreOrder": 39,
+      "file_id": "file_000000008b0881fd8a5fec96d14ecad8"
+    },
+    "archives": 91,
+    "files": 7053,
+    "restoredBytes": 2536177892,
+    "verificationReuse": "Exact immutable native versions and hashes from previously independently verified/persisted base. No source or whole-QA recapture; no repeated complete base scan."
+  },
+  "workState": {
+    "label": "XPENG frozen research/static candidate safety increment; source remains Subaru registered working",
+    "xpengRegistered": false,
+    "canonicalCaptureCompleted": false,
+    "stageReplayCompleted": false,
+    "cutCreatedAt": "2026-10-14T19:52:38.332687+00:00",
+    "sourceRecaptured": false,
+    "sourceChanged": false,
+    "baseSourceState": {
+      "label": "Subaru registered working; TypeScript and release pending",
+      "lastPassedIntegratedBrand": "Polestar",
+      "subaruRegistered": true,
+      "registeredAt": "2026-10-14T18:33:33.562579+00:00",
+      "registrationTransition": {
+        "at": "2026-10-14T18:33:33.562579+00:00",
+        "mode": "Working-source registration after derived-only candidate approval; standard release gates pending",
+        "before": {
+          "data/m1-brand-updates/registry.json": "94eab1295b4156d69bab28c41de3733d97715bb193e32ac798285ba87d1a49f1",
+          "scripts/reporting/load.ts": "cefd7a5c9ced542cbbae7dd926c8d32db369149b3a954430e80cb4c1a9f0e530"
+        },
+        "after": {
+          "data/m1-brand-updates/subaru-2026-10-15.json": "6a21431aacaee96d10924ec854773c855d64b59d19ab313fa20e2a22f0f39b9c",
+          "data/m1-subaru-market-reconciliation-2026-10-15.json": "a58c9d4885128539e47128d1710744a5dacf64e2ad6a2b5cb27198759110b0f4",
+          "data/m1-brand-updates/registry.json": "d28ecf27cd476ac701132599fdf60436c18a8ea4c1c25449921c941810b83c05",
+          "scripts/reporting/load.ts": "9ddc353ea30c6be3afce80b365622530312893bdf5100c49f6baeb245e66a2f9"
+        },
+        "approvalSha256": "06cdf4508b1f46daad363b831da1d2697db6c86f54a3c26523209d25052a0f03"
+      },
+      "sourceChangesSincePreviousWorkingRecovery": [
+        {
+          "path": "data/m1-subaru-market-reconciliation-2026-10-15.json",
+          "before": null,
+          "after": {
+            "bytes": 8359,
+            "sha256": "a58c9d4885128539e47128d1710744a5dacf64e2ad6a2b5cb27198759110b0f4"
+          }
+        },
+        {
+          "path": "data/m1-brand-updates/registry.json",
+          "before": {
+            "bytes": 533,
+            "sha256": "94eab1295b4156d69bab28c41de3733d97715bb193e32ac798285ba87d1a49f1"
+          },
+          "after": {
+            "bytes": 563,
+            "sha256": "d28ecf27cd476ac701132599fdf60436c18a8ea4c1c25449921c941810b83c05"
+          }
+        },
+        {
+          "path": "data/m1-brand-updates/subaru-2026-10-15.json",
+          "before": null,
+          "after": {
+            "bytes": 2082637,
+            "sha256": "6a21431aacaee96d10924ec854773c855d64b59d19ab313fa20e2a22f0f39b9c"
+          }
+        },
+        {
+          "path": "docs/M1_PROGRESS.md",
+          "before": {
+            "bytes": 36385,
+            "sha256": "8666b5593618a721f5cb63693cd2b4624807f24d5a015b25480e9971ffed49ce"
+          },
+          "after": {
+            "bytes": 40038,
+            "sha256": "8b2befcdb64dd35dd8b930652cade5c75a2e7d1fe850c08fd5bda55e3be9bb5e"
+          }
+        },
+        {
+          "path": "scripts/reporting/load.ts",
+          "before": {
+            "bytes": 4434,
+            "sha256": "cefd7a5c9ced542cbbae7dd926c8d32db369149b3a954430e80cb4c1a9f0e530"
+          },
+          "after": {
+            "bytes": 4583,
+            "sha256": "9ddc353ea30c6be3afce80b365622530312893bdf5100c49f6baeb245e66a2f9"
+          }
+        },
+        {
+          "path": "tests/brand-feature-updates.test.ts",
+          "before": {
+            "bytes": 44550,
+            "sha256": "621bc163ab584692ec78a9cb7f1e45a1e036a7de3078791231201dc60f098d2c"
+          },
+          "after": {
+            "bytes": 44521,
+            "sha256": "e517657e409c8f48f43f443f052570b875eb76bc94891cb8f4b78dfec8cf3056"
+          }
+        }
+      ],
+      "finalIndependentGateReview": {
+        "status": "passed_final_subaru_working_integration_gate_review_with_release_gates_open",
+        "checkedAt": "2026-10-14T19:06:03.347184+00:00",
+        "asOf": "2026-10-15",
+        "registeredInputManifest": {
+          "path": "/tmp/subaru-post-registration-review/registered-inputs.json",
+          "sha256": "e8b06b9a80ef79b76b60161d8103589a72464cd6d1722efdcc665a828ff913c4",
+          "bytes": 267408
+        },
+        "finalSourceInventory": {
+          "path": "/tmp/subaru-post-registration-review/final-source-inventory.json",
+          "sha256": "e1de738b9b0bf19c092dcf3bce46544b94099323b3f22845c6bacdc1270b7f4c",
+          "bytes": 88098
+        },
+        "all1235PostRegistrationPinsPreservedExceptOneReviewedTestHelper": true,
+        "completeSourceInventoryCount": 520,
+        "sourcePathsAddedOrRemovedAfterRegistration": 0,
+        "productionCodeAndDataUnchangedSinceSuccessfulFreshValidationAndReport": true,
+        "testOnlyTransition": {
+          "target": "brand-feature-updates.test.ts",
+          "before": {
+            "path": "before-brand-feature-updates.test.ts",
+            "sha256": "621bc163ab584692ec78a9cb7f1e45a1e036a7de3078791231201dc60f098d2c",
+            "bytes": 44550
+          },
+          "after": {
+            "path": "after-brand-feature-updates.test.ts",
+            "sha256": "e517657e409c8f48f43f443f052570b875eb76bc94891cb8f4b78dfec8cf3056",
+            "bytes": 44521
+          },
+          "current": {
+            "path": "brand-feature-updates.test.ts",
+            "sha256": "e517657e409c8f48f43f443f052570b875eb76bc94891cb8f4b78dfec8cf3056",
+            "bytes": 44521
+          },
+          "manifest": {
+            "path": "change-manifest.json",
+            "sha256": "57b2073de8fd58da4265441be3925d9500a068506167a65bee78be2f33f312d5",
+            "bytes": 2105
+          },
+          "independentReview": {
+            "path": "independent-review.json",
+            "sha256": "cc3151327519f6ccfb644d1b760fb32ee680555e1501c8411cbee2ecabc8343c",
+            "bytes": 2868
+          },
+          "all21TestBodiesAnd128AssertionCallsUnchanged": true
+        },
+        "gates": {
+          "freshActualStructuralValidation": "passed through unchanged validate.ts entry point with explicit post-import harness GC",
+          "normalCoverageCliAt20261015": "passed",
+          "completeFreshVersusStagedReportJsonAndBytes": "passed, 1623123 bytes, no filtering or normalization",
+          "changedFileLint": "passed for eight listed source/script/test files",
+          "relevantTests": "214 distinct tests passed across serial runs: 193 unaffected tests plus the full 21-test brand-feature file",
+          "cleanSevenFileAggregateRun": "unpassed; original combined attempt retained with one file-level SIGKILL",
+          "completeCurrentTypeScript": "unpassed; full standard tsc736 terminated signal 9 without a successful terminal",
+          "currentProductionBuild": "open",
+          "broadRegressionAggregate": "open",
+          "realDeviceMobileVerification": "open",
+          "SubaruC1C5ResearchClosure": "open"
+        },
+        "fullSuitePassClaimed": false,
+        "releaseReady": false,
+        "published": false,
+        "freshFullDataRowForRowLoaderEqualityClaimed": false,
+        "normalReportParityReceipt": {
+          "path": "/tmp/subaru-post-registration-review/fresh-registered-parity-independent-review.json",
+          "sha256": "a5fc44d6441812a5a0799ca5b8a65d0c1356950b82afbe2077519fe59c912cda",
+          "bytes": 4058
+        },
+        "fullFreshReport": {
+          "path": "stdout.log",
+          "sha256": "9b6bb08935cc7f569d5d80e1184a547a48eff7f7a4da189b898dc83ca4e0b53d",
+          "bytes": 1623123
+        },
+        "terminalEvidence": {
+          "fresh-validation": {
+            "terminal": {
+              "path": "terminal.json",
+              "sha256": "607cf8428cb85c1f3f82d75247375b2c3033aac17f79d63a77cdbb28ab1a3835",
+              "bytes": 558
+            },
+            "stdout": {
+              "path": "stdout.log",
+              "sha256": "e3a58e5097791fee68814902154b6c340e39e1730db500937fc35f7e57b54f5a",
+              "bytes": 452
+            },
+            "stderr": {
+              "path": "stderr.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "bytes": 0
+            },
+            "inputsBefore": {
+              "path": "inputs-before.json",
+              "sha256": "e5ed38a74ffe05984ff3285e028041f0010a635968306346da4c884ab5ba462c",
+              "bytes": 52710
+            },
+            "exitCode": 0,
+            "signal": null,
+            "elapsedSeconds": 238.222088098526,
+            "maxRssKiB": 534552
+          },
+          "normal-coverage-asof-2026-10-15": {
+            "terminal": {
+              "path": "terminal.json",
+              "sha256": "bdd68916af391ce632bd9f83a5b988c484ee707167858332e019dd573b9847bc",
+              "bytes": 452
+            },
+            "stdout": {
+              "path": "stdout.log",
+              "sha256": "9b6bb08935cc7f569d5d80e1184a547a48eff7f7a4da189b898dc83ca4e0b53d",
+              "bytes": 1623123
+            },
+            "stderr": {
+              "path": "stderr.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "bytes": 0
+            },
+            "inputsBefore": {
+              "path": "inputs-before.json",
+              "sha256": "e5ed38a74ffe05984ff3285e028041f0010a635968306346da4c884ab5ba462c",
+              "bytes": 52710
+            },
+            "exitCode": 0,
+            "signal": null,
+            "elapsedSeconds": 270.0223705768585,
+            "maxRssKiB": 549752
+          },
+          "typecheck-736": {
+            "terminal": {
+              "path": "terminal.json",
+              "sha256": "0fea1762782c3c31b64b5c45c91add0fb2a622b61094d1fa544cd8a12cdd2851",
+              "bytes": 398
+            },
+            "stdout": {
+              "path": "stdout.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "bytes": 0
+            },
+            "stderr": {
+              "path": "stderr.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "bytes": 0
+            },
+            "inputsBefore": {
+              "path": "inputs-before.json",
+              "sha256": "e5ed38a74ffe05984ff3285e028041f0010a635968306346da4c884ab5ba462c",
+              "bytes": 52710
+            },
+            "exitCode": -9,
+            "signal": 9,
+            "elapsedSeconds": 29.173365354537964,
+            "maxRssKiB": 762660
+          },
+          "relevant-tests": {
+            "terminal": {
+              "path": "terminal.json",
+              "sha256": "630a2343f23af27c9e2e37f616d1e40fd986a9457589ca95baed40a4cc82fbf3",
+              "bytes": 721
+            },
+            "stdout": {
+              "path": "stdout.log",
+              "sha256": "02106dd081a417ecc42cb2f4d3e791a62836f90605bdd587b9707e15ac75c83b",
+              "bytes": 48929
+            },
+            "stderr": {
+              "path": "stderr.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "bytes": 0
+            },
+            "inputsBefore": {
+              "path": "inputs-before.json",
+              "sha256": "e5ed38a74ffe05984ff3285e028041f0010a635968306346da4c884ab5ba462c",
+              "bytes": 52710
+            },
+            "exitCode": 1,
+            "signal": null,
+            "elapsedSeconds": 271.2169246673584,
+            "maxRssKiB": 750724
+          },
+          "brand-feature-isolated-640": {
+            "terminal": {
+              "path": "terminal.json",
+              "sha256": "a5cf45eb405e0c998fbbaa90b91c22b8c5c8f5cbf3e861cd04087784bef2bcc9",
+              "bytes": 483
+            },
+            "stdout": {
+              "path": "stdout.log",
+              "sha256": "0824e1670491db4f7d067ad095a0f50e2227e914cf899a3dbb38da55962dbef6",
+              "bytes": 488
+            },
+            "stderr": {
+              "path": "stderr.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "bytes": 0
+            },
+            "inputsBefore": {
+              "path": "inputs-before.json",
+              "sha256": "e5ed38a74ffe05984ff3285e028041f0010a635968306346da4c884ab5ba462c",
+              "bytes": 52710
+            },
+            "exitCode": 1,
+            "signal": null,
+            "elapsedSeconds": 243.6926393508911,
+            "maxRssKiB": 749884
+          },
+          "brand-feature-paired-640": {
+            "terminal": {
+              "path": "terminal.json",
+              "sha256": "13795fdf3570a62edadd3b542c2836c79ef073551bdefabd1b2889c7092c949b",
+              "bytes": 484
+            },
+            "stdout": {
+              "path": "stdout.log",
+              "sha256": "15a481d68e536ebfecd8188d695e755195c4a71c2175ee1cde0ff5a17d836796",
+              "bytes": 5223
+            },
+            "stderr": {
+              "path": "stderr.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "bytes": 0
+            },
+            "inputsBefore": {
+              "path": "inputs-before.json",
+              "sha256": "ec866ef1766c0eec72106f8cb4470d6bf2b4acf693de21e60310eb596d695622",
+              "bytes": 52710
+            },
+            "exitCode": 0,
+            "signal": null,
+            "elapsedSeconds": 253.57764506340027,
+            "maxRssKiB": 767344
+          },
+          "changed-file-lint": {
+            "terminal": {
+              "path": "terminal.json",
+              "sha256": "5ccb88cdedfdb6a4ee68c58fc9e92ec7ec8c3b540cb5571523eafb74e4d4c60e",
+              "bytes": 662
+            },
+            "stdout": {
+              "path": "stdout.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "bytes": 0
+            },
+            "stderr": {
+              "path": "stderr.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "bytes": 0
+            },
+            "inputsBefore": {
+              "path": "inputs-before.json",
+              "sha256": "ec866ef1766c0eec72106f8cb4470d6bf2b4acf693de21e60310eb596d695622",
+              "bytes": 52710
+            },
+            "exitCode": 0,
+            "signal": null,
+            "elapsedSeconds": 5.68903374671936,
+            "maxRssKiB": 274152
+          }
+        },
+        "priorFailedTestInterpretation": "Both earlier Node test-runner wrappers exited 1 with no wrapper signal; their brand-feature child file explicitly reported SIGKILL. These remain failed attempts, separate from the later complete 21-test pass. No cause is inferred.",
+        "passedTestTitles": {
+          "otherSixFiles": [
+            "new brand-packet versions render complete exact detail and per-claim evidence controls",
+            "explicit configuration review releases only its proven scope and preserves inputs and incomplete-record status",
+            "legacy packets and empty registries never lift a configuration hold",
+            "mixed legacy and typed holds retain exact text and release only the proven legacy alias",
+            "legacy explanations never bypass the default ranking hold or become facts",
+            "actual Ora5 legacy hold text supports same-key proof while retaining all 28 unrelated holds",
+            "configuration approval preserves independent fact measurement, grade, source and freshness exclusions",
+            "identity, exact before scope, existing-target uniqueness, brand and tier are checked independently at both stages",
+            "configuration review with typed holds rejects duplicate target at preparation and catalogue application",
+            "configuration review with typed holds rejects no reason at preparation and catalogue application",
+            "configuration review with typed holds rejects no dependencies at preparation and catalogue application",
+            "configuration review with typed holds rejects duplicate dependency at preparation and catalogue application",
+            "configuration review with typed holds rejects dependency drift at preparation and catalogue application",
+            "configuration review with typed holds rejects dependency absent from packet at preparation and catalogue application",
+            "configuration review with typed holds rejects unrelated release proof at preparation and catalogue application",
+            "configuration review with typed holds rejects missing release proof at preparation and catalogue application",
+            "configuration review with typed holds rejects missing historical boundaries at preparation and catalogue application",
+            "configuration review with typed holds rejects retained hold changed at preparation and catalogue application",
+            "configuration review with typed holds rejects no source snapshots at preparation and catalogue application",
+            "configuration review with typed holds rejects source drift at preparation and catalogue application",
+            "configuration review with typed holds rejects blocked source at preparation and catalogue application",
+            "configuration review with typed holds rejects missing cited source at preparation and catalogue application",
+            "configuration review with typed holds rejects mismatched scope sources at preparation and catalogue application",
+            "configuration review with typed holds rejects complete-record promotion at preparation and catalogue application",
+            "configuration review with typed holds rejects source identity changed at preparation and catalogue application",
+            "configuration review with typed holds rejects build options changed at preparation and catalogue application",
+            "configuration review with typed holds rejects pricing boundary changed at preparation and catalogue application",
+            "configuration review with typed holds rejects unknown added field at preparation and catalogue application",
+            "configuration review with typed holds rejects null after at preparation and catalogue application",
+            "configuration review with typed holds rejects null before at preparation and catalogue application",
+            "configuration review with typed holds rejects string ranking flag at preparation and catalogue application",
+            "configuration review with typed holds rejects string complete flag at preparation and catalogue application",
+            "configuration review with typed holds rejects empty scope at preparation and catalogue application",
+            "configuration review with typed holds rejects mistyped source IDs at preparation and catalogue application",
+            "configuration review with typed holds rejects mistyped conditions at preparation and catalogue application",
+            "configuration review with typed holds rejects mistyped counts at preparation and catalogue application",
+            "configuration review with typed holds rejects promoted counts at preparation and catalogue application",
+            "configuration review with typed holds rejects non-null hold at preparation and catalogue application",
+            "configuration review with typed holds rejects mistyped review at preparation and catalogue application",
+            "configuration review with typed holds rejects mistyped release at preparation and catalogue application",
+            "configuration review with mixed legacy holds rejects duplicate target at preparation and catalogue application",
+            "configuration review with mixed legacy holds rejects no reason at preparation and catalogue application",
+            "configuration review with mixed legacy holds rejects no dependencies at preparation and catalogue application",
+            "configuration review with mixed legacy holds rejects duplicate dependency at preparation and catalogue application",
+            "configuration review with mixed legacy holds rejects dependency drift at preparation and catalogue application",
+            "configuration review with mixed legacy holds rejects dependency absent from packet at preparation and catalogue application",
+            "configuration review with mixed legacy holds rejects unrelated release proof at preparation and catalogue application",
+            "configuration review with mixed legacy holds rejects missing release proof at preparation and catalogue application",
+            "configuration review with mixed legacy holds rejects missing historical boundaries at preparation and catalogue application",
+            "configuration review with mixed legacy holds rejects retained hold changed at preparation and catalogue application",
+            "configuration review with mixed legacy holds rejects no source snapshots at preparation and catalogue application",
+            "configuration review with mixed legacy holds rejects source drift at preparation and catalogue application",
+            "configuration review with mixed legacy holds rejects blocked source at preparation and catalogue application",
+            "configuration review with mixed legacy holds rejects missing cited source at preparation and catalogue application",
+            "configuration review with mixed legacy holds rejects mismatched scope sources at preparation and catalogue application",
+            "configuration review with mixed legacy holds rejects complete-record promotion at preparation and catalogue application",
+            "configuration review with mixed legacy holds rejects source identity changed at preparation and catalogue application",
+            "configuration review with mixed legacy holds rejects build options changed at preparation and catalogue application",
+            "configuration review with mixed legacy holds rejects pricing boundary changed at preparation and catalogue application",
+            "configuration review with mixed legacy holds rejects unknown added field at preparation and catalogue application",
+            "configuration review with mixed legacy holds rejects null after at preparation and catalogue application",
+            "configuration review with mixed legacy holds rejects null before at preparation and catalogue application",
+            "configuration review with mixed legacy holds rejects string ranking flag at preparation and catalogue application",
+            "configuration review with mixed legacy holds rejects string complete flag at preparation and catalogue application",
+            "configuration review with mixed legacy holds rejects empty scope at preparation and catalogue application",
+            "configuration review with mixed legacy holds rejects mistyped source IDs at preparation and catalogue application",
+            "configuration review with mixed legacy holds rejects mistyped conditions at preparation and catalogue application",
+            "configuration review with mixed legacy holds rejects mistyped counts at preparation and catalogue application",
+            "configuration review with mixed legacy holds rejects promoted counts at preparation and catalogue application",
+            "configuration review with mixed legacy holds rejects non-null hold at preparation and catalogue application",
+            "configuration review with mixed legacy holds rejects mistyped review at preparation and catalogue application",
+            "configuration review with mixed legacy holds rejects mistyped release at preparation and catalogue application",
+            "configuration review rejects empty string as a before legacy hold at both stages",
+            "configuration review rejects whitespace-only string as a before legacy hold at both stages",
+            "configuration review rejects boxed string as a before legacy hold at both stages",
+            "configuration review rejects string array as a before legacy hold at both stages",
+            "configuration review rejects number as a before legacy hold at both stages",
+            "configuration review rejects boolean as a before legacy hold at both stages",
+            "configuration review rejects bare null as a before legacy hold at both stages",
+            "configuration review rejects undefined as a before legacy hold at both stages",
+            "configuration review rejects reason-only object as a before legacy hold at both stages",
+            "configuration review rejects empty typed reason as a before legacy hold at both stages",
+            "configuration review rejects typed string value as a before legacy hold at both stages",
+            "configuration review rejects unexpected typed field as a before legacy hold at both stages",
+            "configuration review rejects empty string as a after legacy hold at both stages",
+            "configuration review rejects whitespace-only string as a after legacy hold at both stages",
+            "configuration review rejects boxed string as a after legacy hold at both stages",
+            "configuration review rejects string array as a after legacy hold at both stages",
+            "configuration review rejects number as a after legacy hold at both stages",
+            "configuration review rejects boolean as a after legacy hold at both stages",
+            "configuration review rejects bare null as a after legacy hold at both stages",
+            "configuration review rejects undefined as a after legacy hold at both stages",
+            "configuration review rejects reason-only object as a after legacy hold at both stages",
+            "configuration review rejects empty typed reason as a after legacy hold at both stages",
+            "configuration review rejects typed string value as a after legacy hold at both stages",
+            "configuration review rejects unexpected typed field as a after legacy hold at both stages",
+            "legacy configuration review rejects before text drift at both stages",
+            "legacy configuration review rejects retained text trimming at both stages",
+            "legacy configuration review rejects retained string normalized to typed hold at both stages",
+            "legacy configuration review rejects new legacy hold at both stages",
+            "legacy configuration review rejects removed legacy hold without proof at both stages",
+            "legacy configuration review rejects release proof for retained legacy hold at both stages",
+            "legacy configuration review rejects wrong legacy alias measurement at both stages",
+            "legacy configuration review rejects unrelated legacy hold proof at both stages",
+            "later dependent fact correction needs a renewed configuration review with an exact before state",
+            "dated fact updates target the reviewed version and preserve original sources, dates and cars",
+            "wrong identity, tier, source drift and changed fact snapshots fail closed",
+            "new versions have complete unknown rows and no fabricated update counts",
+            "new versions do not acquire unrelated catalogue equipment fields or source-derived labels",
+            "new grades require genuine search evidence and price ladder provenance",
+            "availability and current metadata changes use reviewed guards",
+            "summary freshness and correction invalidation use actual fact dependencies",
+            "public research, catalogue, packs and exact-version route enumeration share added IDs",
+            "brand terms are stored once, inherited only within reviewed scope, and project roadside into equipment",
+            "reviewed national and state driveaway facts project value, provenance and conditions into feature claims",
+            "before-on-road canonical prices preserve separately sourced driveaway feature evidence",
+            "withdrawn or incomplete canonical driveaway reviews never replace the separate feature",
+            "a separately reviewed driveaway offer updates its answer without replacing the higher-rung list price",
+            "supplemental driveaway offers require the same price provenance as canonical prices",
+            "brand price validation rejects basis flips on flexible rungs without losing legitimate reported prices",
+            "a guarded valid replacement clears its stale review marker without weakening identity, fact or source guards",
+            "confirmed paid roadside terms project optional fitment without changing evidence, conditions or other facts",
+            "explicit included roadside fitment and metadata-free legacy terms keep their intended status",
+            "malformed or misplaced explicit roadside fitment fails closed instead of becoming standard",
+            "roadside fitment is guarded in complete before snapshots and only a reviewed replacement may change it",
+            "withdrawn roadside reviews or sources cannot earn optional projection or bypass source snapshot guards",
+            "withdrawal clears a reused roadside projection while preserving separately reviewed source-row fallback",
+            "canonical roadside terms still prohibit competing manual feature edits",
+            "portable roadside facts and evidence claims preserve optional fitment, Confirmed provenance and exact conditions",
+            "request-scoped research and source builders share work across all public entry points",
+            "separate request scopes reread and rebuild current source without cross-request sharing",
+            "one fresh snapshot runs the complete loader sequence from one source read",
+            "fresh top-level calls see changed input without changing prior snapshots",
+            "source-only and effective entry points retain their separate boundaries",
+            "fresh snapshot propagates refresh-registry failure without returning partial results",
+            "fresh snapshot propagates fact-registry failure without returning partial results",
+            "fresh snapshot propagates refresh-facts failure without returning partial results",
+            "fresh snapshot propagates fact-corrections failure without returning partial results",
+            "fresh snapshot propagates refresh-availability failure without returning partial results",
+            "fresh snapshot propagates availability-corrections failure without returning partial results",
+            "fresh snapshot propagates feature-registry failure without returning partial results",
+            "fresh snapshot propagates refresh-features failure without returning partial results",
+            "fresh snapshot propagates feature-corrections failure without returning partial results",
+            "fresh snapshot propagates summaries failure without returning partial results",
+            "fresh snapshot propagates retained failure without returning partial results",
+            "fresh snapshot propagates price failure without returning partial results",
+            "fresh snapshot propagates regrade failure without returning partial results",
+            "fresh snapshot propagates prepare failure without returning partial results",
+            "fresh snapshot propagates apply failure without returning partial results",
+            "catalogue application independently rejects drift after research preparation",
+            "counts reuses supplied data and observes later caller-owned changes",
+            "report loading uses one fresh snapshot or the exact supplied data without rehydration",
+            "validation reuses the exact validated snapshot for packs and counts",
+            "validation rejects malformed issues before packs",
+            "moved consumers preserve complete output, property order, references and input immutability",
+            "export names, arities and readable values match the pre-refactor functions",
+            "default callbacks retain exact invocation and guard order",
+            "explicit snapshots and research never invoke throwing fallback callbacks",
+            "unknown IDs, null data and partial snapshots retain fallback and exception order",
+            "moved consumers preserve the first sourceResearch failure",
+            "moved consumers preserve the first research failure",
+            "moved consumers preserve the first catalogue failure",
+            "moved consumers preserve the first audit failure",
+            "moved consumers preserve the first registry failure",
+            "moved consumers preserve the first refresh failure",
+            "moved consumers preserve the first corrections failure",
+            "moved consumers preserve the first regrade failure",
+            "moved consumers preserve the first packet failure",
+            "moved consumers preserve the first terms failure",
+            "mutable explicit research is reread and Tier 1 guards remain marker-dependent",
+            "pack retains source guard precedence and URL sanitization/reference behavior",
+            "public sourceCatalogue calls the single imported row helper without consumer defaults",
+            "chooses the highest rung, not the cheapest published number",
+            "never borrows a sibling's price, applies a future offer or uses an expired offer",
+            "state prices require the exact state and do not become national quotes",
+            "unknown on-road treatment remains useful but does not invent a ranking group",
+            "flexible price rungs reject an opposite comparison basis in either retained provenance field",
+            "price provenance consistency never guesses from ambiguous wording or unrelated prose",
+            "explicit retained price bases remain usable across maker, configurator, state, reported and dealer prices",
+            "every extracted price has an exact original source pointer and unchanged published amount",
+            "applies exact-version configurator price without changing the original fact",
+            "prefers the ATTO 1 Essential national offer but never applies it to Premium",
+            "dealer and publication prices are Reported-compatible and never ranking-eligible",
+            "state tags, qualification and expiry stay visible on selected prices",
+            "no derived, expired, unbound family or option-increment amount is automatically promoted",
+            "Tier 2 and Tier 3 records remain untouched",
+            "a later price correction is never overwritten by the dated admission overlay",
+            "changed alternative facts and changed source records invalidate saved admissions",
+            "canonical state driveaway stays state-tagged and unknown price basis is never maker list",
+            "legacy citation bundles do not turn reported prices into maker prices",
+            "reapplying the ladder preserves the selected exact price provenance",
+            "Volvo's unknown configurator basis never inherits a null list-price template",
+            "all saved candidates preserve their own source price basis explicitly"
+          ],
+          "pairedSnapshotFeatureFile": [
+            "a two-source whole-row equipment search earns Not published without changing the input",
+            "whole-row missing equipment needs canonical text, status and a genuine two-source review",
+            "Not published Fact values remain null-only, including hybrid citation shapes",
+            "a whole-row search cannot use an unrelated missing fact or known brochure/numeric proxy",
+            "whole-row searches still reject exact before, source, identity and dependency drift",
+            "reviewed missing equipment and null facts never become ranking values",
+            "reviewed feature replacement preserves inputs and carries its new citations and grade",
+            "feature target, exact before metadata, version and source snapshots fail closed",
+            "feature grades require current review provenance and full matching citations",
+            "Confirmed equipment keeps explicitly reviewed optional, unavailable and not-applicable fitment",
+            "dependencies must exactly match post-packet facts",
+            "a mixed feature can cite an earned null Not published fact without weakening fact grading",
+            "later fact changes require a reviewed feature replacement and replay exact before states",
+            "canonical driveaway and roadside equipment rows cannot be manually overwritten",
+            "current metadata and availability preserve historical feature warnings through cloned and chained research",
+            "new packet versions retain their admission warning context before same-packet availability changes",
+            "current pack, citable claims and portable hydration carry the reviewed feature",
+            "Not published survives detail/evidence, citable JSON and exact portable transport",
+            "immutable Tesla source snapshots still pack while current Tesla storage uses the reviewed overlay",
+            "original source defaults and earlier registered feature packets retain their exact evidence baselines",
+            "configuration overlays retain historical feature scope and warnings instead of rebasing before guards"
+          ]
+        },
+        "documentationUpdates": {
+          "files": [
+            {
+              "path": "M1_PROGRESS.md",
+              "sha256": "8b2befcdb64dd35dd8b930652cade5c75a2e7d1fe850c08fd5bda55e3be9bb5e",
+              "bytes": 40038
+            },
+            {
+              "path": "work-status.json",
+              "sha256": "4981c864d7c663e4db15d4233e503b9bca063298818a60e2791fca45ca5da82e",
+              "bytes": 11466
+            }
+          ],
+          "historicalPinScope": "Neither docs/M1_PROGRESS.md nor QA/work-status.json was covered by the immutable 1235-entry post-registration manifest or the 520-file source/data/media/public inventory. Their authorized status-only updates are recorded here as new explicit pins, not silently treated as unchanged historical files."
+        },
+        "checkScript": {
+          "path": "/tmp/subaru-post-registration-review/final-gate-check.py",
+          "sha256": "73aef0a4a2f363c684e8af4acd50042231828d55306a09122dd4decb1a90ed94",
+          "bytes": 8101
+        }
+      },
+      "finalStatusAddendum": {
+        "status": "registered_working_integration_verified_with_full_typecheck_and_release_limits_open",
+        "recordedAt": "2026-10-14T19:07:07.456921+00:00",
+        "asOf": "2026-10-15",
+        "supersedesCurrentStateOnly": [
+          "Earlier handover registry-unchanged/current-registration-pending wording is historical staging state",
+          "The18:36registration addendum recorded validation as running at that moment; validation and normal coverage now have passing terminals"
+        ],
+        "currentWorkingRegistration": true,
+        "registeredAt": "2026-10-14T18:33:33.562579+00:00",
+        "registrationEvidence": "registration-transition.json",
+        "independentFinalGateAddendum": {
+          "path": "/tmp/subaru-post-registration-review/final-post-registration-gate-addendum.json",
+          "sha256": "95abbe0289f1ca8d4b0fe402e4722a6e965f93be31cdb191ce6b86e890590834",
+          "bytes": 34778
+        },
+        "checkReceipts": {
+          "fresh-validation": {
+            "path": "terminal.json",
+            "sha256": "607cf8428cb85c1f3f82d75247375b2c3033aac17f79d63a77cdbb28ab1a3835",
+            "bytes": 558,
+            "terminal": {
+              "command": [
+                "node",
+                "--max-old-space-size=448",
+                "--max-semi-space-size=1",
+                "--expose-gc",
+                "--import",
+                "tsx",
+                "-e",
+                "(async()=>{await import(\"./src/lib/data.ts\");global.gc();await import(\"./scripts/validate.ts\");})().catch(e=>{console.error(e);process.exitCode=1})"
+              ],
+              "exitCode": 0,
+              "signal": null,
+              "elapsedSeconds": 238.222088098526,
+              "maxRssKiB": 534552,
+              "inputCount": 492,
+              "changedInputs": [],
+              "scope": "All src/scripts/tests/data files plus package/lock/tsconfig, not installed dependency bytes"
+            }
+          },
+          "normal-coverage-asof-2026-10-15": {
+            "path": "terminal.json",
+            "sha256": "bdd68916af391ce632bd9f83a5b988c484ee707167858332e019dd573b9847bc",
+            "bytes": 452,
+            "terminal": {
+              "command": [
+                "node",
+                "--max-old-space-size=448",
+                "--max-semi-space-size=1",
+                "--import",
+                "tsx",
+                "scripts/report-coverage.ts",
+                "--as-of",
+                "2026-10-15",
+                "--json"
+              ],
+              "exitCode": 0,
+              "signal": null,
+              "elapsedSeconds": 270.0223705768585,
+              "maxRssKiB": 549752,
+              "inputCount": 492,
+              "changedInputs": [],
+              "scope": "All src/scripts/tests/data files plus package/lock/tsconfig, not installed dependency bytes"
+            }
+          },
+          "relevant-tests": {
+            "path": "terminal.json",
+            "sha256": "630a2343f23af27c9e2e37f616d1e40fd986a9457589ca95baed40a4cc82fbf3",
+            "bytes": 721,
+            "terminal": {
+              "command": [
+                "node",
+                "--max-old-space-size=704",
+                "--max-semi-space-size=1",
+                "--import",
+                "tsx",
+                "--test",
+                "--test-reporter=tap",
+                "--test-concurrency=1",
+                "tests/brand-added-detail.test.ts",
+                "tests/brand-feature-updates.test.ts",
+                "tests/brand-updates.test.ts",
+                "tests/brand-configuration-updates.test.ts",
+                "tests/price-ladder.test.ts",
+                "tests/catalogue-snapshot.test.ts",
+                "tests/evidence-consumers.test.ts"
+              ],
+              "exitCode": 1,
+              "signal": null,
+              "elapsedSeconds": 271.2169246673584,
+              "maxRssKiB": 750724,
+              "inputCount": 492,
+              "changedInputs": [],
+              "scope": "All src/scripts/tests/data files plus package/lock/tsconfig, not installed dependency bytes"
+            }
+          },
+          "brand-feature-isolated-640": {
+            "path": "terminal.json",
+            "sha256": "a5cf45eb405e0c998fbbaa90b91c22b8c5c8f5cbf3e861cd04087784bef2bcc9",
+            "bytes": 483,
+            "terminal": {
+              "command": [
+                "node",
+                "--max-old-space-size=640",
+                "--max-semi-space-size=1",
+                "--import",
+                "tsx",
+                "--test",
+                "--test-reporter=tap",
+                "--test-concurrency=1",
+                "tests/brand-feature-updates.test.ts"
+              ],
+              "exitCode": 1,
+              "signal": null,
+              "elapsedSeconds": 243.6926393508911,
+              "maxRssKiB": 749884,
+              "inputCount": 492,
+              "changedInputs": [],
+              "scope": "All src/scripts/tests/data files plus package/lock/tsconfig, not installed dependency bytes"
+            }
+          },
+          "brand-feature-paired-640": {
+            "path": "terminal.json",
+            "sha256": "13795fdf3570a62edadd3b542c2836c79ef073551bdefabd1b2889c7092c949b",
+            "bytes": 484,
+            "terminal": {
+              "command": [
+                "node",
+                "--max-old-space-size=640",
+                "--max-semi-space-size=1",
+                "--import",
+                "tsx",
+                "--test",
+                "--test-reporter=tap",
+                "--test-concurrency=1",
+                "tests/brand-feature-updates.test.ts"
+              ],
+              "exitCode": 0,
+              "signal": null,
+              "elapsedSeconds": 253.57764506340027,
+              "maxRssKiB": 767344,
+              "inputCount": 492,
+              "changedInputs": [],
+              "scope": "All src/scripts/tests/data files plus package/lock/tsconfig, not installed dependency bytes"
+            }
+          },
+          "typecheck-736": {
+            "path": "terminal.json",
+            "sha256": "0fea1762782c3c31b64b5c45c91add0fb2a622b61094d1fa544cd8a12cdd2851",
+            "bytes": 398,
+            "terminal": {
+              "command": [
+                "node",
+                "--max-old-space-size=736",
+                "--max-semi-space-size=1",
+                "node_modules/typescript/bin/tsc",
+                "--noEmit"
+              ],
+              "exitCode": -9,
+              "signal": 9,
+              "elapsedSeconds": 29.173365354537964,
+              "maxRssKiB": 762660,
+              "inputCount": 492,
+              "changedInputs": [],
+              "scope": "All src/scripts/tests/data files plus package/lock/tsconfig, not installed dependency bytes"
+            }
+          },
+          "changed-file-lint": {
+            "path": "terminal.json",
+            "sha256": "5ccb88cdedfdb6a4ee68c58fc9e92ec7ec8c3b540cb5571523eafb74e4d4c60e",
+            "bytes": 662,
+            "terminal": {
+              "command": [
+                "node",
+                "--max-old-space-size=448",
+                "--max-semi-space-size=1",
+                "node_modules/eslint/bin/eslint.js",
+                "src/lib/data.ts",
+                "src/lib/evidence-consumers.ts",
+                "scripts/validate.ts",
+                "scripts/reporting/load.ts",
+                "tests/brand-updates.test.ts",
+                "tests/brand-feature-updates.test.ts",
+                "tests/catalogue-snapshot.test.ts",
+                "tests/evidence-consumers.test.ts"
+              ],
+              "exitCode": 0,
+              "signal": null,
+              "elapsedSeconds": 5.68903374671936,
+              "maxRssKiB": 274152,
+              "inputCount": 492,
+              "changedInputs": [],
+              "scope": "All src/scripts/tests/data files plus package/lock/tsconfig, not installed dependency bytes"
+            }
+          }
+        },
+        "verificationResults": {
+          "freshRegisteredStructuralValidationPassed": true,
+          "normalDatedCoverageCLIPassed": true,
+          "completeFreshRegisteredReportExactlyEqualsStaged": true,
+          "reportBytes": 1623123,
+          "reportSha256": "9b6bb08935cc7f569d5d80e1184a547a48eff7f7a4da189b898dc83ca4e0b53d",
+          "fallbackApplicationExecuted": false,
+          "distinctRelevantTestsPassedAcrossSerialRuns": 214,
+          "unchangedOtherFileTestsPassed": 193,
+          "completeFeatureFileTestsPassed": 21,
+          "cleanAggregateTestRunPassed": false,
+          "changedFileLintPassed": true,
+          "independentCurrentPinsVerified": 1235,
+          "currentSourceInventoryFiles": 520
+        },
+        "testOnlyTransition": {
+          "scope": "One-line switch in the feature-test helper to the existing paired catalogueSnapshot() loader",
+          "all21TestsAndAssertionsPreserved": true,
+          "productionAndVehicleDataUnchanged": true,
+          "evidenceDirectory": "brand-feature-paired-snapshot-2026-10-14"
+        },
+        "failedAttemptsRemainRetained": {
+          "earlierRelevantAndIsolatedTestWrappers": "exit1, with child feature-test file reportingSIGKILL; no named assertion failure or wrapper signal9 is inferred",
+          "fullTypeScript": "Unchanged standard compiler scope attempts ended signal9 without diagnostics, including768MiB and736MiB old-heap settings; no full typecheck pass",
+          "cause": "unestablished; no fixed resource-limit cause claimed"
+        },
+        "openGates": {
+          "currentCompleteTypeScript": true,
+          "productionBuild": true,
+          "broadCleanRegressionAggregate": true,
+          "realDeviceMobile": true,
+          "SubaruC1": true,
+          "SubaruC5": true,
+          "residualAndWholeMarketClosure": true,
+          "M1Completion": true
+        },
+        "M2Started": false,
+        "lastFullyStandardCheckedBrandBeforeTheseOpenTypeScriptLimits": "Polestar",
+        "lastDeliveredMilestone": 103,
+        "sourceStatusDocuments": {
+          "progress": "M1_PROGRESS.md",
+          "workStatus": "work-status.json",
+          "rootUpdatedAt": "2026-10-14T19:04:23Z"
+        },
+        "retention": "Keep this separately dated addendum, all three earlier handover files, the immutable237-file staging allowlist, final post-registration review directory, root registration/check receipts and one-line test transition. No earlier proof or source was changed to write this addendum."
+      },
+      "passed": "Fresh structural validation; normal 2026-10-15 report complete byte/object parity;214 distinct relevant tests across serial runs; eight-file changed-file lint",
+      "testCountBoundary": "193 tests in six other files plus the later complete 21-test feature file. Original combined and isolated failed runs retained; no clean seven-file aggregate pass.",
+      "currentCompleteTypeScriptPassed": false,
+      "releaseReady": false,
+      "published": false,
+      "fullAggregateBuildMobilePass": false,
+      "freshFullDataRowForRowLoaderEqualityClaimed": false,
+      "openGates": {
+        "currentCompleteTypeScript": true,
+        "productionBuild": true,
+        "broadCleanRegressionAggregate": true,
+        "realDeviceMobile": true,
+        "SubaruC1": true,
+        "SubaruC5": true,
+        "residualAndWholeMarketClosure": true,
+        "M1Completion": true
+      },
+      "milestone": "M1 open",
+      "historicalInputPinBoundary": "The1235 execution pins are not a normal restored-file count. Three QA prefix exports are represented by exact optional reconstruction mappings and one generated.pyc remains an explicit packaging exclusion. Two previously external historical source-capture metadata files are preserved in the scanned append.",
+      "historicalStatusNote": "Earlier unregistered/validation-running statements remain historical; final dated addenda supersede only current state. Prior failed and interrupted evidence is retained without relabelling its terminal or inferring cause."
+    },
+    "typeScriptAudit": {
+      "finishedAt": "2026-10-14T19:38:16.547064+00:00",
+      "recommendation": "Stop partition exploration; meaningful semantically safe reduction not established",
+      "standardTscPassed": false,
+      "onlyCompletedCompilerActivity": "Original configuration parsing; no Program, graph, checker or emit",
+      "sourceChanges": false,
+      "heavySlotReleased": true,
+      "artifacts": [
+        {
+          "path": "audit.mjs",
+          "bytes": 27850,
+          "sha256": "a07fc534eda63b56aac9505052473921166691a7ac2fa3deac6e939d7ebb61b6"
+        },
+        {
+          "path": "PLAN.md",
+          "bytes": 11697,
+          "sha256": "a66297e2e9305f12fdc1759e0591b884cd68325415800d83b68f21a26b8153c0"
+        },
+        {
+          "path": "proposal-manifest.json",
+          "bytes": 900,
+          "sha256": "922a0414ae5bbdc74a9a34e4aaf55f096109af2ca406d83554e60628b8961f94"
+        },
+        {
+          "path": "FINAL-FEASIBILITY.md",
+          "bytes": 3560,
+          "sha256": "082674c713aaf2aede53d578689b8f4c76e9ca0d62efdcb46eb623ead537292e"
+        },
+        {
+          "path": "config-inventory.mjs",
+          "bytes": 11673,
+          "sha256": "d900664e8ac7442c777ed371a54cdd1be9ea713995858c0327011f15ab555331"
+        },
+        {
+          "path": "PLAN.md",
+          "bytes": 9007,
+          "sha256": "58d0235d3765ae65d188e8edd84d848c57d5def9a8b49f44bdca3cd72e3ae494"
+        },
+        {
+          "path": "proposal-manifest.json",
+          "bytes": 2264,
+          "sha256": "2662e17e9065297f7f418dae7249a9e08f5eca05e1deeb758fef4601f7dd2434"
+        },
+        {
+          "path": "review1-to-current.diff",
+          "bytes": 10212,
+          "sha256": "9b4c3bca55e5784e9153b95acfda8c292856e10c081e37458a520fcb47347dc5"
+        },
+        {
+          "path": "PLAN.md",
+          "bytes": 8363,
+          "sha256": "ac5c43dc5e7731e31be37fd71d2d2527a0f858a755448c653c908fc52cab8541"
+        },
+        {
+          "path": "config-inventory.mjs",
+          "bytes": 11453,
+          "sha256": "30751d3072f4ba1c20f09afd4ae19e1541eb53b8c0396d1e4d03e56774f95ba8"
+        },
+        {
+          "path": "proposal-manifest.json",
+          "bytes": 1220,
+          "sha256": "e57713fecec70ae91dc7a6975c2ab4f4af9297cd283a84066f4b2428685c7ce3"
+        },
+        {
+          "path": "config-only-measurement.json",
+          "bytes": 695,
+          "sha256": "1a5058a5e9de86a7acc33d2683da730e0b23e229da4d1c3d722fa0549d89db02"
+        },
+        {
+          "path": "config-only.exit",
+          "bytes": 2,
+          "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+        },
+        {
+          "path": "config-only.log",
+          "bytes": 89,
+          "sha256": "3bd84eaf17d5f78a87c637ec9e04868ee63454b66d0fa21c0c112558ad884df5"
+        },
+        {
+          "path": "run-inputs-after.json",
+          "bytes": 1845,
+          "sha256": "03e1a2da3ba7dfaaad2ed0018f38015e064d0cba45dadad8cb4cda3733c5b3dd"
+        },
+        {
+          "path": "run-inputs-before.json",
+          "bytes": 2722,
+          "sha256": "89eb11250b99480cf6d2ff15febcc385b461b2083c4661bb18552f6edc74b9d8"
+        },
+        {
+          "path": "run-measured.py",
+          "bytes": 785,
+          "sha256": "a89ef65da9daa5003e6ab58e259b6aa9a75cbcb211e15332f274b7f794c31c63"
+        },
+        {
+          "path": "wrapper.diff",
+          "bytes": 1273,
+          "sha256": "633f274932f7d94ab62a9e07af1831f03dc377facb47c0b24eb3e7f87389b146"
+        },
+        {
+          "path": "config-inputs.json",
+          "bytes": 757,
+          "sha256": "8033d04217865c2b663e6d227538f6d11143e441a5006eeca75ea34dab85ec2e"
+        },
+        {
+          "path": "config-inventory.json",
+          "bytes": 32558,
+          "sha256": "1be33982f05007321b85ff5d97126fd3b4d6d283e75395e32049197d8a264316"
+        },
+        {
+          "path": "execution-inputs.json",
+          "bytes": 4053,
+          "sha256": "a3285403ddcf39688950a470b48908e6c6f82860b1a35e1711c001d2b0c67420"
+        },
+        {
+          "path": "io-observations.json",
+          "bytes": 31921,
+          "sha256": "31aa315b6ed5c94c2b9b94d04ca07f7dd45438bffe0211e335d140f8c2299217"
+        },
+        {
+          "path": "terminal.json",
+          "bytes": 1210,
+          "sha256": "642816bebdfba2d2d042bf675ba5152b0890ccad793fec06c949e346d5958214"
+        }
+      ]
+    },
+    "currentCompleteTypeScriptPassed": false,
+    "releaseReady": false,
+    "published": false,
+    "milestone": "M1 open",
+    "laterWorkExcluded": "New post-cut reviews, phase manifests, canonical or registration work are not included. Earlier invalid/superseded normalizations and reviews remain historical."
+  },
+  "verificationScope": "189 new archive members and exact affected paths were freshly scanned/restored/hash-verified. The unchanged 91-archive Subaru base retains its prior independent verification;7,241 is the combined logical restore plan, not a newly repeated full-tree scan.",
+  "combinedArchiveCount": 92,
+  "combinedLogicalFileCount": 7241,
+  "freshIncrementRestoredFiles": 189,
+  "freshIncrementRestoredBytes": 10545457,
+  "documents": [
+    {
+      "filename": "Roadmark-RECOVERY-INDEX-XPENG-STATIC-SAFETY-20261014.md",
+      "library_file_id": "libfile_a23c32baeab48191a50f9dfac543d066",
+      "version": 0,
+      "bytes": 23786,
+      "sha256": "27af1627739eca491a3a16e187a83b5896261304e9295c47e7383d277a699458"
+    },
+    {
+      "filename": "Roadmark-RECOVERY-MANIFEST-XPENG-STATIC-SAFETY-20261014.json",
+      "library_file_id": "libfile_b47f391f93f08191b0a38c8b384109d6",
+      "version": 0,
+      "bytes": 1803016,
+      "sha256": "046ea9865134a9062a2915a79d2cff6d986cad907133caba3b78e8a8c9ff8e4a"
+    },
+    {
+      "filename": "Roadmark-RECOVERY-VERIFICATION-XPENG-STATIC-SAFETY-20261014.json",
+      "library_file_id": "libfile_5b54f2e17df081919ec83491711dfe74",
+      "version": 0,
+      "bytes": 244908,
+      "sha256": "4964c24c62fa859bbfab814549dba88ba27425a0cc3732c85cc05db257fa6b78"
+    }
+  ],
+  "independentIncrementVerification": {
+    "result": "PASS",
+    "base": {
+      "archives": 91,
+      "files": 7053,
+      "bytes": 2536177892,
+      "source": {
+        "filename": "Roadmark-recovery-source-SUBARU-REGISTERED-WORKING-20261014T1905.tar.xz",
+        "bytes": 8308892,
+        "sha256": "ab58cf3f40f38987e405afb485f69bc211d71d5c535844f75abdc695ec304636",
+        "group": "source-SUBARU-REGISTERED-WORKING",
+        "library_file_id": "libfile_1b0f596757a08191984957ca66153acf",
+        "version": 0,
+        "restoreOrder": 39,
+        "file_id": "file_000000008b0881fd8a5fec96d14ecad8"
+      },
+      "manifest": {
+        "filename": "Roadmark-RECOVERY-MANIFEST-SUBARU-REGISTERED-WORKING-20261014.json",
+        "bytes": 2367250,
+        "sha256": "1a07aec690dff2692620819233a5ec4d34bcffc1d08cfdf9a679ca42877f9975",
+        "library_file_id": "libfile_ce54055181d8819183130b164c1dfa5b",
+        "version": 0
+      },
+      "evidencePins": {
+        "FINAL-SUBARU-UPLOAD-RECEIPTS.json": {
+          "bytes": 113668,
+          "sha256": "9994cb862f56ab4404997a57bcf678b9efb638e27fcb0c31b0305e2c5625e86d"
+        },
+        "INDEPENDENT-FINAL-RECOVERY-VERIFICATION.json": {
+          "bytes": 82574,
+          "sha256": "40bfe433ddc4e1334c017cd7004663aae407db873493380afdea4344b86fed7d"
+        },
+        "INDEPENDENT-ACTIVE-RECEIPT-CHECK.json": {
+          "bytes": 3725,
+          "sha256": "c10a6899bd25828b3375a3a38fec048d7502397f33e48903b785ebe7c17cc320"
+        },
+        "INDEPENDENT-PERSISTED-ACTIVE-CHECK.json": {
+          "bytes": 754,
+          "sha256": "af91b9e8d682ed368743e17627e3f7764d985fb2d68de533f826e2d74026ef1d"
+        }
+      },
+      "unchangedArchiveBytesNotRead": true,
+      "unchangedRestoredTreeNotRead": true
+    },
+    "capture": {
+      "originalFiles": 186,
+      "originalBytes": 10466844,
+      "capturedPayloadFiles": 187,
+      "generatedReadmes": 1,
+      "allFrozenOriginalAndCopyHashesExact": true,
+      "independentSanitizationExact": true,
+      "newTransformations": [],
+      "allOriginalsStillFrozenAtVerification": true
+    },
+    "newArchive": {
+      "bytes": 1373204,
+      "sha256": "d52752832ad6152c57019a2ccae93f5d7977f46b8be6efe27ace5b6f9d3eff5e",
+      "filename": "Roadmark-recovery-XPENG-STATIC-SAFETY-20261014T1950.tar.xz",
+      "members": 189,
+      "uncompressedBytes": 10545457,
+      "allMemberHashesVerified": true,
+      "allMemberPathsSafe": true,
+      "primaryAndIndependentRestorationVerified": true,
+      "nativeHelperActualRestore": {
+        "result": "PASS",
+        "archivesVerified": 1,
+        "restoredFilesVerified": 189,
+        "restoredBytes": 10545457
+      }
+    },
+    "overlay": {
+      "baseArchives": 91,
+      "combinedArchives": 92,
+      "baseFiles": 7053,
+      "newMemberFiles": 189,
+      "onlyExistingPathOverlay": [
+        "roadmark-104-qa/work-status.json"
+      ],
+      "combinedLogicalFiles": 7241,
+      "combinedLogicalBytes": 2546711883,
+      "sourceUnchangedNativeVersionReused": true,
+      "wholeBaseArchiveAndTreeReadsPerformed": false,
+      "combinedTreeMaterialized": false,
+      "method": "Exact new archive restoration plus deterministic manifest overlay onto previously independently restored immutable base"
+    },
+    "privacy": {
+      "result": "PASS",
+      "scanReport": {
+        "path": "XPENG-STATIC-SAFETY-NEW-ARCHIVE-RESIDUAL-REPORT.json",
+        "bytes": 1307,
+        "sha256": "104c37e16f5556d13b9665f31e3a5517eba21964286e3e99a07f487701b5e14e"
+      },
+      "exactArchiveMembersCovered": 189,
+      "exactUncompressedBytesCovered": 10545457,
+      "knownValues": 55,
+      "forms": 373,
+      "findingsOrErrors": 0,
+      "unchangedApprovedEnginePins": {
+        "final_residual_scan_memory_bounded.py": {
+          "bytes": 9720,
+          "sha256": "db71353ba5fe98021f68cd9aeaae6eb4e1878627fb4985278b11457baf837238"
+        },
+        "chunked_lower_find.py": {
+          "bytes": 1278,
+          "sha256": "6de208f633b05ef1cb894ca8e896c4a489bb093eb1339134c4b1d7158263ec1f"
+        },
+        "audit_scan.py": {
+          "bytes": 7044,
+          "sha256": "54ee0827089ad8202a24c6769a4178dee28fe96b85f1fd8a627a15703c15f3b2"
+        },
+        "runtime_token_scan.py": {
+          "bytes": 5041,
+          "sha256": "4ea9c6be9b292bbe126fcc2f8d7b3254a1dc941c49d78b263c9203d0025f9c46"
+        }
+      },
+      "scanResources": {
+        "startedAt": "2026-10-14T19:57:18.075461+00:00",
+        "endedAt": "2026-10-14T19:57:30.222430+00:00",
+        "command": [
+          "python3",
+          "roadmark-recovery-20261014/privacy-audit-20261014T0355/final_residual_scan_memory_bounded.py",
+          "--archive",
+          "roadmark-recovery-20261014/Roadmark-recovery-XPENG-STATIC-SAFETY-20261014T1950.tar.xz",
+          "--report",
+          "roadmark-recovery-20261014/privacy-audit-20261014T0355/XPENG-STATIC-SAFETY-NEW-ARCHIVE-RESIDUAL-REPORT.json"
+        ],
+        "exitCode": 0,
+        "wallSeconds": 12.147,
+        "userSeconds": 11.831913,
+        "systemSeconds": 0.293223,
+        "maxRssKiB": 45664,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB",
+        "hostTimeBinaryAvailable": false
+      },
+      "limitations": [
+        "Does not decrypt encrypted content",
+        "Does not recursively unpack arbitrary compressed or proprietary content inside regular payloads",
+        "Standalone base64 matching is not a claim to inspect every possible base64 wrapping/alignment of a larger structure"
+      ],
+      "universalAbsenceOfSecretsClaimed": false
+    },
+    "preservedApplicationLimits": {
+      "XPENGUnregistered": true,
+      "candidateStaticFeatureFree": true,
+      "canonicalCaptureRun": false,
+      "postCutReview08AndCompositionExcluded": true,
+      "TypeScriptPassed": false,
+      "completedCompilerActivity": "Original configuration parsing; no Program, graph, checker or emit",
+      "partitionRecommendation": "Stop partition exploration; meaningful semantically safe reduction not established",
+      "sourceChangedByAudit": false,
+      "fullTypecheckBuildAggregateMobileReleasePassed": false,
+      "browserScreenshots": 0,
+      "images": [
+        {
+          "path": "xpeng-research/warranty-page-2.png",
+          "bytes": 185588,
+          "sha256": "8f17e0e03e7dd92b677be57981562b9f1df9f4a6c3cecd0e0deb22f02feffad8",
+          "provenance": "Local render of retained public warranty PDF, per frozen capture and author provenance"
+        },
+        {
+          "path": "xpeng-research/warranty-page-3.png",
+          "bytes": 324958,
+          "sha256": "279add71ce910845000089a23969afc19960e63f3a25316802924374a125d948",
+          "provenance": "Local render of retained public warranty PDF, per frozen capture and author provenance"
+        }
+      ],
+      "applicationCodeRunByVerifier": false
+    },
+    "helperSafety": {
+      "result": "PASS",
+      "helper": {
+        "path": "Roadmark-VERIFY-SAFE-RECOVERY-20261014.py",
+        "library_file_id": "libfile_ca3a7f7c6970819188bdbf0b22dd8acb",
+        "version": 0,
+        "bytes": 4821,
+        "sha256": "513fe7a49f27e8efc99ec7039a245c8e65b1b87e1bd3b0acdb1512f57d634dc7"
+      },
+      "syntheticFixtures": [
+        {
+          "test": "valid",
+          "result": "PASS",
+          "expectedSuccess": true,
+          "returncode": 0
+        },
+        {
+          "test": "traversal",
+          "result": "PASS",
+          "expectedSuccess": false,
+          "returncode": 1
+        },
+        {
+          "test": "absolute",
+          "result": "PASS",
+          "expectedSuccess": false,
+          "returncode": 1
+        },
+        {
+          "test": "backslash",
+          "result": "PASS",
+          "expectedSuccess": false,
+          "returncode": 1
+        },
+        {
+          "test": "symlink",
+          "result": "PASS",
+          "expectedSuccess": false,
+          "returncode": 1
+        },
+        {
+          "test": "hardlink",
+          "result": "PASS",
+          "expectedSuccess": false,
+          "returncode": 1
+        },
+        {
+          "test": "duplicate-member",
+          "result": "PASS",
+          "expectedSuccess": false,
+          "returncode": 1
+        },
+        {
+          "test": "existing-output",
+          "result": "PASS",
+          "expectedSuccess": false,
+          "returncode": 1
+        },
+        {
+          "test": "wrong-archive-hash",
+          "result": "PASS",
+          "expectedSuccess": false,
+          "returncode": 1
+        },
+        {
+          "test": "excluded-native-id",
+          "result": "PASS",
+          "expectedSuccess": false,
+          "returncode": 1
+        },
+        {
+          "test": "bad-restore-order",
+          "result": "PASS",
+          "expectedSuccess": false,
+          "returncode": 1
+        },
+        {
+          "test": "unexpected-member",
+          "result": "PASS",
+          "expectedSuccess": false,
+          "returncode": 1
+        },
+        {
+          "test": "duplicate-manifest",
+          "result": "PASS",
+          "expectedSuccess": false,
+          "returncode": 1
+        }
+      ],
+      "applicationSourceExecuted": false,
+      "realBaseArchivesRead": false,
+      "existingDestinationWritesPrevented": true,
+      "maliciousMemberPathsAndLinksRejectedBeforeOutputCreation": true
+    },
+    "inputPins": {
+      "CAPTURE-MANIFEST.json": {
+        "bytes": 76037,
+        "sha256": "fe708c3b85f6010ec9ef81fbf7116befd7201a8851535395eab1fcadbc1d6b97"
+      },
+      "increment-result.json": {
+        "bytes": 1870,
+        "sha256": "a9696611bed7f2a618b8aabccf34821672ff6e218c90f9e379fa118b0e9f06ed"
+      },
+      "BASE-RECOVERY-PIN.json": {
+        "bytes": 1275,
+        "sha256": "b838cf33c99836fc3e53822889a137a2aff724dedb1719f5176f408d2d110646"
+      },
+      "VERIFIED-INCREMENT.json": {
+        "bytes": 1408743,
+        "sha256": "1f54bf5f62c460e9149f569a69eaed18ee99ad2d4e49fe47018f6e40b0f799e2"
+      },
+      "QA-RETENTION-INVENTORY.json": {
+        "bytes": 44262,
+        "sha256": "7c979d0f16d9cac154fcebd64242dc8b7b457e52d3c4ae7afa54a8a968d500d5"
+      },
+      "capture_increment.py": {
+        "bytes": 8206,
+        "sha256": "a6717ce307514e993cd6f29075c22123ed38f8a8358936a2626b8bcb868c1c41"
+      },
+      "INDEPENDENT-XPENG-METADATA-PREPARATION.json": {
+        "bytes": 77095,
+        "sha256": "ee23fb0fb1111d7a684b3e68c1dc3d2c9f8af6556a87a0f0a68556c16c5a866c"
+      },
+      "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/privacy-audit-20261014T0355/XPENG-STATIC-SAFETY-NEW-ARCHIVE-RESIDUAL-REPORT.json": {
+        "bytes": 1307,
+        "sha256": "104c37e16f5556d13b9665f31e3a5517eba21964286e3e99a07f487701b5e14e"
+      }
+    },
+    "verificationScript": {
+      "bytes": 20084,
+      "sha256": "3fab61f375ca08bbe863a6bc7158713032fecc6f157b1da25f997977ce03b526"
+    },
+    "verificationScope": "Only new explicit increment independently byte-verified, safely restored and reconciled with exact immutable prior base manifest/persistence receipts; no complete base reread, recapture or application test. Final deliverable/native-ID checks remain a separate gate.",
+    "completedAt": "2026-10-14T19:59:55.637145+00:00",
+    "resources": {
+      "wallSeconds": 1.44,
+      "userSeconds": 0.46126599999999995,
+      "systemSeconds": 0.09011799999999999,
+      "maxRssKiB": 57828,
+      "parallelWorkers": 0,
+      "hashChunkBytes": 1048576
+    }
+  },
+  "preSaveDocumentVerification": {
+    "result": "PASS",
+    "documents": {
+      "Roadmark-RECOVERY-INDEX-XPENG-STATIC-SAFETY-20261014.md": {
+        "bytes": 23786,
+        "sha256": "27af1627739eca491a3a16e187a83b5896261304e9295c47e7383d277a699458"
+      },
+      "Roadmark-RECOVERY-MANIFEST-XPENG-STATIC-SAFETY-20261014.json": {
+        "bytes": 1803016,
+        "sha256": "046ea9865134a9062a2915a79d2cff6d986cad907133caba3b78e8a8c9ff8e4a"
+      },
+      "Roadmark-RECOVERY-VERIFICATION-XPENG-STATIC-SAFETY-20261014.json": {
+        "bytes": 244908,
+        "sha256": "4964c24c62fa859bbfab814549dba88ba27425a0cc3732c85cc05db257fa6b78"
+      }
+    },
+    "archiveCount": 92,
+    "newArchivePersistenceIdentitiesVerified": 1,
+    "baseArchiveNativeVersionsUnchanged": 91,
+    "combinedLogicalFiles": 7241,
+    "combinedLogicalBytes": 2546711883,
+    "sourceNativeVersionUnchanged": true,
+    "onlyStatusOverlay": true,
+    "applicationLimitsPreserved": true,
+    "independentSupportExact": true,
+    "noSyntheticFixturesOrGeneratorsIncluded": true,
+    "copyableRestoreCommandVerified": true,
+    "documentPrivacy": {
+      "result": "PASS",
+      "report": {
+        "bytes": 1302,
+        "sha256": "aca3c10317e39d4616134d02b95f8301e615b85bcd51b490bf331458254763b3"
+      },
+      "documents": 3,
+      "bytes": 2071710,
+      "knownValues": 55,
+      "forms": 373,
+      "findingsOrErrors": 0,
+      "metrics": {
+        "startedAt": "2026-10-14T20:02:10.331383+00:00",
+        "endedAt": "2026-10-14T20:02:17.829802+00:00",
+        "command": [
+          "python3",
+          "roadmark-recovery-20261014/privacy-audit-20261014T0355/final_residual_scan_memory_bounded.py",
+          "--tree",
+          "roadmark-recovery-20261014/checkpoints/xpeng-static-safety-20261014T1950/deliverables",
+          "--report",
+          "roadmark-recovery-20261014/privacy-audit-20261014T0355/XPENG-STATIC-SAFETY-DELIVERABLE-RESIDUAL-REPORT.json"
+        ],
+        "exitCode": 0,
+        "wallSeconds": 7.498,
+        "userSeconds": 7.288808,
+        "systemSeconds": 0.179301,
+        "maxRssKiB": 45532,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB",
+        "hostTimeBinaryAvailable": false
+      }
+    },
+    "baseArchivePayloadsRead": false,
+    "heavyProcessesStarted": false,
+    "activeReceiptStillPending": true,
+    "completedAt": "2026-10-14T20:02:43.586613+00:00"
+  },
+  "privacy": "Exact new-archive and document known-value/header/runtime scans clean. This does not prove every possible secret absent. Prior base verification reused by immutable identity/hash; no whole-base re-scan.",
+  "imageProvenance": {
+    "newBrowserScreenshots": 0,
+    "localPdfRenders": [
+      "xpeng-research/warranty-page-2.png",
+      "xpeng-research/warranty-page-3.png"
+    ],
+    "parentPdf": "xpeng-research/warranty-manual.pdf",
+    "ownerConfirmation": "Both are local public warranty PDF renders; browser failed before loading and no browser screenshot exists.",
+    "priorToyotaBrowserScreenshotExclusions": {
+      "result": "Excluded before any upload",
+      "provenance": "Verified from current/build_normalized.py and REVIEW.md: official PDFs displayed in cloud Chrome and captured as browser screenshots.",
+      "files": [
+        {
+          "path": "toyota-research/current/bz4x-spec-p1.png",
+          "bytes": 94027,
+          "sha256": "2d9242f9136c653566bb169e0621106f9bafe749e465961139d45dd688b660a1",
+          "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+        },
+        {
+          "path": "toyota-research/current/bz4x-spec-p2.png",
+          "bytes": 92201,
+          "sha256": "ab1c9676f743f030ec5fc29654e6961c48ac8f31801456cd6307bc352d4e2275",
+          "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+        },
+        {
+          "path": "toyota-research/current/hilux-spec-p2.png",
+          "bytes": 91974,
+          "sha256": "08adef635b8744c02336ada1b02b674ee6b4f0e0012a3bd0fb3f2d1f1c0af368",
+          "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+        },
+        {
+          "path": "toyota-research/current/hilux-spec-p3.png",
+          "bytes": 88131,
+          "sha256": "2bf2bdd69b4c558d94b9561202fb49046211dbbb41806113b47597c4bd9495ca",
+          "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+        },
+        {
+          "path": "toyota-research/current/touring-spec-p2.png",
+          "bytes": 85836,
+          "sha256": "9525bbd89757a7ac6311fec7f82e5c5a3c0aee6d50c1ec1ff232a247ece90491",
+          "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+        }
+      ]
+    }
+  },
+  "savingAnnouncementMessageId": "Sentinel_4cd0cd160c2c8191b83fcb340dbb8545",
+  "noSourceRecapture": true,
+  "noDeletionOrReplacement": true
+}

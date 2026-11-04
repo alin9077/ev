@@ -1,0 +1,26 @@
+#!/bin/bash
+set -eu
+ROOT=/workspace/scratch/586427eef9f2
+BASE="$ROOT/roadmark-restoration/measurement96"
+NODE="$ROOT/roadmark-restoration/browser92/node-runtime"
+LOGGER="$ROOT/roadmark-research/mobile-performance96-assessment/measurement-candidate/revision-2/loopback-access-logger.mjs"
+cd "$ROOT"
+python3 - <<'PY'
+import socket,pathlib,hashlib
+w=pathlib.Path('/workspace/scratch/586427eef9f2')
+assert (w/'roadmark-work/roadmark/.next/BUILD_ID').read_text().strip()=='i9nSXvDMk9qf8wSVyThUa'
+p=w/'roadmark-research/mobile-performance96-assessment/measurement-candidate/revision-2/loopback-access-logger.mjs'
+assert hashlib.sha256(p.read_bytes()).hexdigest()=='5181ad081108ffc6c236eca5086de5b262ad0e24b7173fe3f17ac35c27f37512'
+for port in (8766,18870,18871,18872,18873,18874):
+ with socket.socket() as s:s.bind(('127.0.0.1',port))
+PY
+PIDS=()
+cleanup() { for pid in "${PIDS[@]}"; do kill "$pid" 2>/dev/null || true; done; }
+trap cleanup EXIT INT TERM
+(cd "$ROOT/roadmark-work/roadmark" && exec timeout 1200 "$NODE" node_modules/next/dist/bin/next start --hostname 127.0.0.1 --port 8766) > "$BASE/next-after-attempt1.log" 2>&1 & PIDS+=("$!")
+for port in 18870 18871 18872 18873 18874; do
+ "$NODE" "$LOGGER" --port "$port" --log-name "after96-20261012-${port}-after1.jsonl" > "$BASE/logger-${port}-after1.out" 2> "$BASE/logger-${port}-after1.err" & PIDS+=("$!")
+done
+printf 'Own VM Roadmark96 measurement; fixed localhost ports 8766/18870-18874; at most 20 minutes\n'
+printf 'Owned processes: %s\n' "${PIDS[*]}"
+wait -n

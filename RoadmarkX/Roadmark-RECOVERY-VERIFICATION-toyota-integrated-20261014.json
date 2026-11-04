@@ -1,0 +1,672 @@
+{
+  "createdAt": "2026-10-14T06:56:02.170840+00:00",
+  "source": {
+    "filename": "Roadmark-recovery-source-toyota-integrated-20261014T0642.tar.xz",
+    "bytes": 7941208,
+    "sha256": "6d0db9f742f88a00a9bf6e1544aae84811d26fa400fc4e2a4d251072feb34c50",
+    "group": "source-toyota-integrated",
+    "library_file_id": "libfile_9f90f6586818819186bfe11ff1cc21f7",
+    "version": 0,
+    "restoreOrder": 39,
+    "file_id": "file_000000004cc081f59ae12166fa271dc4"
+  },
+  "verification": {
+    "result": "PASS",
+    "createdAt": "2026-10-14T06:52:39.402338+00:00",
+    "sourceCaptureCutoff": "2026-10-14T06:46:46.997287+00:00",
+    "qaCaptureCutoff": "2026-10-14T06:47:29.346016+00:00",
+    "researchCaptureCutoff": "2026-10-14T06:51:53.440195+00:00",
+    "archiveCount": 43,
+    "archiveMemberOccurrencesVerified": 4048,
+    "payloadFiles": 3924,
+    "metadataFiles": 85,
+    "allRestoredFiles": 4009,
+    "allRestoredBytes": 1532374331,
+    "currentSourceFiles": 631,
+    "currentQaFiles": 1245,
+    "unchangedResearchAndSupportFiles": 1895
+  },
+  "independentRecoveryVerification": {
+    "schemaVersion": 1,
+    "verifiedAtUtc": "2026-10-14T06:54:00Z",
+    "result": "PASS",
+    "scope": "Read-only independent verification of Toyota research, prior/new source archives, new QA delta, source inventory changes, safe QA baseline overlay, approved Toyota bytes, exclusions, and frozen test receipts. No source or QA modifications, test reruns, privacy scan, complete-chain replay, or Library actions.",
+    "inputs": {
+      "priorSafeManifest": "checkpoints/post-diagnostic-20261014T0450/deliverables/Roadmark-RECOVERY-MANIFEST-post-diagnostic-20261014.json",
+      "sourcePackage": "checkpoints/toyota-integrated-20261014T0642/source-package.json",
+      "sourceCapture": "checkpoints/toyota-integrated-20261014T0642/source-capture.json",
+      "qaDeltaResult": "checkpoints/toyota-integrated-20261014T0642/qa-delta-result.json"
+    },
+    "research": {
+      "report": "INDEPENDENT-TOYOTA-RESEARCH-VERIFICATION.json",
+      "reportSHA256": "05673e5a3578bae78f021dd409a330da3f88a7bf604edb1c740ef9462b78c4a1",
+      "result": "PASS",
+      "filesVerified": 153,
+      "membersVerified": 155,
+      "excludedFiles": 7,
+      "byteTransformations": []
+    },
+    "source": {
+      "priorArchive": "Roadmark-recovery-source-post-diagnostic-20261014T0450.tar.xz",
+      "newArchive": "Roadmark-recovery-source-toyota-integrated-20261014T0642.tar.xz",
+      "newArchiveBytes": 7941208,
+      "newArchiveSha256": "6d0db9f742f88a00a9bf6e1544aae84811d26fa400fc4e2a4d251072feb34c50",
+      "newMemberOccurrencesVerified": 632,
+      "priorPayloadFiles": 629,
+      "newPayloadFiles": 631,
+      "unchangedPayloadFiles": 623,
+      "changedPaths": [
+        "roadmark/data/m1-brand-updates/registry.json",
+        "roadmark/docs/M1_PROGRESS.md",
+        "roadmark/scripts/reporting/load.ts",
+        "roadmark/src/lib/brand-updates.ts",
+        "roadmark/src/lib/types.ts",
+        "roadmark/tests/brand-updates.test.ts"
+      ],
+      "addedPaths": [
+        "roadmark/data/m1-brand-updates/toyota-2026-10-14.json",
+        "roadmark/data/m1-toyota-market-reconciliation-2026-10-14.json"
+      ],
+      "removedPaths": [],
+      "allPriorDataFilesExceptRegistryByteIdentical": 86,
+      "allNinePriorBrandPacketsByteIdentical": [
+        "roadmark/data/m1-brand-updates/byd-2026-10-14.json",
+        "roadmark/data/m1-brand-updates/geely-2026-10-14.json",
+        "roadmark/data/m1-brand-updates/hyundai-2026-10-14.json",
+        "roadmark/data/m1-brand-updates/im-2026-10-14.json",
+        "roadmark/data/m1-brand-updates/jaecoo-2026-10-14.json",
+        "roadmark/data/m1-brand-updates/kia-2026-10-14.json",
+        "roadmark/data/m1-brand-updates/mg-2026-10-14.json",
+        "roadmark/data/m1-brand-updates/tesla-2026-10-14.json",
+        "roadmark/data/m1-brand-updates/zeekr-2026-10-14.json"
+      ],
+      "registeredPackets": 10,
+      "registryAppendPreservesPriorEntries": true,
+      "frozenSnapshotMatchesArchiveAndCapture": true,
+      "sourceChangesDuringCapture": [],
+      "liveOriginalBytesDifferencesAtVerification": [],
+      "copySanitizations": [
+        {
+          "path": "data/farizon-foton-jac-trucks-evidence.json",
+          "originalSHA256": "e6b1f6adae33871d57f0c6bd730571cf64fed06ae4166c1947aed422d97b4a7f",
+          "copySHA256": "fb34e31bc3bdf5a1a2e1673d33ba9ab1ba6a8c0a3c2d3fb49e7e4267789b422d",
+          "changedJsonPaths": [
+            "/sources/19/headers/set-cookie",
+            "/sources/20/headers/set-cookie",
+            "/sources/23/headers/Set-Cookie",
+            "/sources/24/headers/set-cookie",
+            "/sources/29/headers/set-cookie",
+            "/sources/33/headers/set-cookie",
+            "/sources/35/headers/Set-Cookie",
+            "/sources/5/headers/set-cookie",
+            "/sources/6/headers/set-cookie",
+            "/sources/7/headers/set-cookie"
+          ],
+          "matchesPriorSafeCopy": true
+        }
+      ],
+      "sourcePackagingInventoryMatchesCapture": true,
+      "sourcePackagingExcludedDirectoryTrees": [
+        {
+          "path": ".next",
+          "reason": "documented excluded tree"
+        },
+        {
+          "path": "node_modules",
+          "reason": "documented excluded tree"
+        },
+        {
+          "path": "scripts/__pycache__",
+          "reason": "documented excluded tree"
+        }
+      ],
+      "sourcePackagingExcludedFiles": [
+        {
+          "path": "tsconfig.tsbuildinfo",
+          "reason": "documented generated or log file"
+        },
+        {
+          "path": "SOURCE-FILE-MANIFEST.json",
+          "reason": "documented generated or log file"
+        },
+        {
+          "path": "qa/m1-evidence-grading-results-2026-10-13.md",
+          "reason": "inactive QA input"
+        },
+        {
+          "path": "qa/m1-grade-review-exceptions-2026-10-13.json",
+          "reason": "inactive QA input"
+        },
+        {
+          "path": "qa/m1-regrading-audit-2026-10-13.json",
+          "reason": "inactive QA input"
+        }
+      ],
+      "changeRecords": [
+        {
+          "path": "roadmark/data/m1-brand-updates/registry.json",
+          "priorSha256": "b8b10c7a361be452a80389c6e1b5f9d09b669d3852036bf98ccfd41d5f1e68f2",
+          "newSha256": "8b67ca14ce3900def5aa379efc18d125dd8d131a6ccd7c34fe4cc84d10fbc34b"
+        },
+        {
+          "path": "roadmark/docs/M1_PROGRESS.md",
+          "priorSha256": "13b357ff815c3f3d18b0aec420c13a654261dbd2495684a2aee6e58d1b1fb5b9",
+          "newSha256": "4b5399f32d9e1de6850fdeae53d224b95f8a900a3cc2284b7639e23cf069ef2d"
+        },
+        {
+          "path": "roadmark/scripts/reporting/load.ts",
+          "priorSha256": "d86731a6f3c8e3e5eed371f86c8014c6eb3d6c1345cf26acc1c09dfd9aaeae59",
+          "newSha256": "03f36376b1ee224ab0d6da82f9326d51e93f9e1515ea5f6f378964a0c1cdd9ca"
+        },
+        {
+          "path": "roadmark/src/lib/brand-updates.ts",
+          "priorSha256": "83458e4d84010fcf5eb26db1aa4306227e5a41a9eea2215cdc23ebddd2ebc630",
+          "newSha256": "aa8b4c3f30b55505064f719d911e37e274aaebc489b536e9bfe8877dc5bca44c"
+        },
+        {
+          "path": "roadmark/src/lib/types.ts",
+          "priorSha256": "9f76354ab15ba8eb0a5d5eafd6e5ded244577023bd3d172f4a1e5a67fcf77361",
+          "newSha256": "1d9285cb87bee050084590409041291140937e421f7c7c5bb8eb976416467393"
+        },
+        {
+          "path": "roadmark/tests/brand-updates.test.ts",
+          "priorSha256": "9d9cca3708c02d7fda1691acffd9e8dcdd58901eda11973fbbaf7ab9c25bf664",
+          "newSha256": "658d3cee32c5c3f9ee606df727d9fc2b5aeeabe46e0d9a5f778ac6a23e9c6ed9"
+        }
+      ]
+    },
+    "qa": {
+      "archives": [
+        {
+          "filename": "Roadmark-recovery-qa-toyota-integrated-20261014T064722Z-part01of01.tar.xz",
+          "bytes": 224880,
+          "sha256": "c069a1c64a330155a2a30d418156697134954149f63cc65c4759b7d088a90c5c",
+          "members": 54
+        }
+      ],
+      "memberOccurrencesVerified": 54,
+      "payloadFilesVerified": 52,
+      "metadataFiles": 2,
+      "baselineFiles": 1194,
+      "effectiveFiles": 1245,
+      "unchangedFiles": 1193,
+      "changedPaths": [
+        "roadmark-104-qa/work-status.json"
+      ],
+      "addedPaths": [
+        "roadmark-104-qa/capture-toyota-before.ts",
+        "roadmark-104-qa/capture-toyota-new-features.ts",
+        "roadmark-104-qa/check-toyota-facts.ts",
+        "roadmark-104-qa/m1-toyota-coverage.exit",
+        "roadmark-104-qa/m1-toyota-coverage.json",
+        "roadmark-104-qa/m1-toyota-coverage.stderr",
+        "roadmark-104-qa/m1-toyota-integration.exit",
+        "roadmark-104-qa/m1-toyota-integration.log",
+        "roadmark-104-qa/m1-toyota-lint.exit",
+        "roadmark-104-qa/m1-toyota-lint.log",
+        "roadmark-104-qa/m1-toyota-typecheck.exit",
+        "roadmark-104-qa/m1-toyota-typecheck.log",
+        "roadmark-104-qa/m1-toyota-validate.exit",
+        "roadmark-104-qa/m1-toyota-validate.log",
+        "roadmark-104-qa/optional-roadside-fitment-QA.json",
+        "roadmark-104-qa/optional-roadside-fitment-REVIEW.md",
+        "roadmark-104-qa/optional-roadside-fitment-before/src/lib/brand-updates.ts",
+        "roadmark-104-qa/optional-roadside-fitment-before/src/lib/types.ts",
+        "roadmark-104-qa/optional-roadside-fitment-before/tests/brand-updates.test.ts",
+        "roadmark-104-qa/optional-roadside-fitment-focused.exit",
+        "roadmark-104-qa/optional-roadside-fitment-focused.log",
+        "roadmark-104-qa/optional-roadside-fitment-lint.exit",
+        "roadmark-104-qa/optional-roadside-fitment-lint.log",
+        "roadmark-104-qa/optional-roadside-fitment-packets-before.sha256",
+        "roadmark-104-qa/optional-roadside-fitment-packets-check.log",
+        "roadmark-104-qa/optional-roadside-fitment-regression.exit",
+        "roadmark-104-qa/optional-roadside-fitment-regression.log",
+        "roadmark-104-qa/optional-roadside-fitment-typecheck.exit",
+        "roadmark-104-qa/optional-roadside-fitment-typecheck.log",
+        "roadmark-104-qa/optional-roadside-fitment.patch",
+        "roadmark-104-qa/review-toyota-independent.ts",
+        "roadmark-104-qa/stage-toyota-candidate.ts",
+        "roadmark-104-qa/toyota-approved-57ed2251-toyota-2026-10-14.json",
+        "roadmark-104-qa/toyota-approved-ed067827-toyota-reconciliation-2026-10-14.json",
+        "roadmark-104-qa/toyota-evidence-completeness-audit.json",
+        "roadmark-104-qa/toyota-independent-qa-audit.md",
+        "roadmark-104-qa/toyota-independent-review-replay.json",
+        "roadmark-104-qa/toyota-independent-review/INDEPENDENT-REVIEW.md",
+        "roadmark-104-qa/toyota-independent-review/independent-review-replay.exit",
+        "roadmark-104-qa/toyota-independent-review/independent-review-replay.json",
+        "roadmark-104-qa/toyota-independent-review/independent-review-replay.log",
+        "roadmark-104-qa/toyota-independent-review/independent-review-supplement.json",
+        "roadmark-104-qa/toyota-research-artifact-hash-manifest.json",
+        "roadmark-104-qa/toyota-research-brand-model-list-reconciliation.json",
+        "roadmark-104-qa/toyota-research-core-matrix.json",
+        "roadmark-104-qa/toyota-research-integration-readiness.json",
+        "roadmark-104-qa/toyota-research-review.md",
+        "roadmark-104-qa/toyota-research-source-hash-manifest.json",
+        "roadmark-104-qa/toyota-research-source-index.json",
+        "roadmark-104-qa/toyota-research-stage-report.json",
+        "roadmark-104-qa/toyota-source-capture-audit.json"
+      ],
+      "removedPaths": [],
+      "baselineMatchesPriorSafeManifest": true,
+      "effectiveOverlayMatchesFullCurrentInventory": true,
+      "liveOriginalBytesDifferencesAtVerification": [],
+      "sourceChangesDuringCapture": [],
+      "exclusions": [
+        {
+          "path": "__pycache__/review-geely-packet.cpython-312.pyc",
+          "reason": "dependency, build, cache, or runtime directory"
+        },
+        {
+          "path": "__pycache__/review-jaecoo-packet.cpython-312.pyc",
+          "reason": "dependency, build, cache, or runtime directory"
+        },
+        {
+          "path": "__pycache__/review-mg-im-packet.cpython-312.pyc",
+          "reason": "dependency, build, cache, or runtime directory"
+        },
+        {
+          "path": "feature-overlay-staging/data",
+          "reason": "symlink excluded"
+        },
+        {
+          "path": "feature-overlay-staging/node_modules",
+          "reason": "symlink excluded"
+        },
+        {
+          "path": "roadmark-104-source-trial.tar.xz",
+          "reason": "superseded opaque trial archive; its source roundtrip is separately captured with header sanitization"
+        }
+      ],
+      "capturedLiveFilesAndSymlinksAccountedFor": 1251,
+      "additionalLiveFilesOutsideFrozenCut": [
+        "stage-volkswagen-candidate.ts"
+      ],
+      "missingCapturedLivePaths": [],
+      "liveInventoryCaveat": "Live QA work has resumed after the frozen recovery cut. Additional live files are recorded separately and are not part of the saved cut.",
+      "inheritedSanitizations": [
+        {
+          "path": "roadmark-104-qa/source-package-roundtrip/roadmark/data/farizon-foton-jac-trucks-evidence.json",
+          "originalSHA256": "e6b1f6adae33871d57f0c6bd730571cf64fed06ae4166c1947aed422d97b4a7f",
+          "copySHA256": "fb34e31bc3bdf5a1a2e1673d33ba9ab1ba6a8c0a3c2d3fb49e7e4267789b422d",
+          "matchesSafeBaseline": true
+        }
+      ]
+    },
+    "approvedArtifacts": [
+      {
+        "path": "roadmark/data/m1-brand-updates/toyota-2026-10-14.json",
+        "sha256": "57ed2251d6e4f6e4bae3b5bb68390083e2f090336ef0b5f800c10c1e49f75e52",
+        "approvedSHA256": "57ed2251d6e4f6e4bae3b5bb68390083e2f090336ef0b5f800c10c1e49f75e52",
+        "matches": true
+      },
+      {
+        "path": "roadmark/data/m1-toyota-market-reconciliation-2026-10-14.json",
+        "sha256": "ed067827768e44729436205661d449af9b9ac688f02d81ed042441940d44c93d",
+        "approvedSHA256": "ed067827768e44729436205661d449af9b9ac688f02d81ed042441940d44c93d",
+        "matches": true
+      },
+      {
+        "path": "roadmark-104-qa/toyota-approved-57ed2251-toyota-2026-10-14.json",
+        "sha256": "57ed2251d6e4f6e4bae3b5bb68390083e2f090336ef0b5f800c10c1e49f75e52",
+        "approvedSHA256": "57ed2251d6e4f6e4bae3b5bb68390083e2f090336ef0b5f800c10c1e49f75e52",
+        "matches": true
+      },
+      {
+        "path": "roadmark-104-qa/toyota-approved-ed067827-toyota-reconciliation-2026-10-14.json",
+        "sha256": "ed067827768e44729436205661d449af9b9ac688f02d81ed042441940d44c93d",
+        "approvedSHA256": "ed067827768e44729436205661d449af9b9ac688f02d81ed042441940d44c93d",
+        "matches": true
+      }
+    ],
+    "receipts": {
+      "rootIntegrationCounts": {
+        "tests": 44,
+        "suites": 0,
+        "pass": 44,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0
+      },
+      "exitCodes": {
+        "integration": 0,
+        "validate": 0,
+        "coverage": 0,
+        "typecheck": 0,
+        "lint": 0
+      },
+      "validationResult": "PASS",
+      "coverageDenominators": {
+        "allCatalogueVersions": 363,
+        "tierOneVersions": 286,
+        "onSaleVersions": 280
+      },
+      "staticCheckLogsEmpty": true,
+      "optionalRoadsideFitmentChecks": [
+        {
+          "name": "focused",
+          "counts": {
+            "tests": 23,
+            "pass": 23,
+            "fail": 0,
+            "cancelled": 0,
+            "skipped": 0
+          },
+          "exitCode": 0
+        },
+        {
+          "name": "regression",
+          "counts": {
+            "tests": 56,
+            "pass": 56,
+            "fail": 0,
+            "cancelled": 0,
+            "skipped": 0
+          },
+          "exitCode": 0
+        }
+      ],
+      "optionalRoadsideFitmentBeforeAndAfterSourceHashesVerified": true,
+      "fullAggregateSuiteRerun": false,
+      "fullAggregatePassEstablished": false,
+      "productionBuildRerun": false,
+      "caveat": "Old fullTestResult and productionBuild fields in retained work-status are historical foundation-stage results. Current Toyota receipts establish focused integration and static checks only; no full-suite, production-build, or performance acceptance claim."
+    },
+    "errors": []
+  },
+  "sourceValidation": {
+    "result": "PASS",
+    "counts": {
+      "variants": 363,
+      "families": 155,
+      "generations": 160,
+      "criteria": 69,
+      "evidence": 25047,
+      "current": 338,
+      "outgoing": 24,
+      "provisional": 1
+    },
+    "sourceReferences": 3011,
+    "publicationIssues": 15,
+    "sha256": "010ded194b4d61cd7be606ce0cc332fa7e32906bba70abff2b5c38541e634657",
+    "approvedExternalAssets": 0,
+    "note": "Structural integrity, not independent factual verification."
+  },
+  "approvedToyotaPacketSHA256": {
+    "toyota-2026-10-14.json": "57ed2251d6e4f6e4bae3b5bb68390083e2f090336ef0b5f800c10c1e49f75e52",
+    "toyota-reconciliation-2026-10-14.json": "ed067827768e44729436205661d449af9b9ac688f02d81ed042441940d44c93d"
+  },
+  "privacyVerification": {
+    "unchangedBaseline": "All reused archives match the hashes from the previously verified safe chain. No affected original or intermediate Library ID is used.",
+    "priorSafeChain": {
+      "unchangedBaseline": "All reused archives match the sizes and SHA-256 hashes from the prior complete safe-chain audit. No affected original or intermediate Library ID is a restore input.",
+      "priorWholeTreeScan": {
+        "status": "clean",
+        "regularFilesScanned": 5037,
+        "bytesScanned": 1980054991,
+        "uniquePayloadsScanned": 2816,
+        "knownDistinctCapturedValues": 55,
+        "testedDistinctByteVariants": 373,
+        "recognizedBenignRuntimeCandidateCount": 609,
+        "startedAt": "2026-10-14T04:31:51.869933+00:00",
+        "completedAt": "2026-10-14T04:35:51.516096+00:00",
+        "exactValueMatches": 0,
+        "primaryHeaderCandidates": 0,
+        "unclassifiedRuntimeCandidates": 0,
+        "errors": 0,
+        "coverage": {
+          "byteSearch": "Every regular payload, regardless of extension",
+          "encodings": [
+            "literal",
+            "URL component",
+            "base64/base64url standalone value, padded and unpadded",
+            "UTF-16LE/BE",
+            "JSON string escaping",
+            "HTML entity escaping",
+            "full Unicode-escaped value in lower/upper hex"
+          ],
+          "patternSearch": "Primary nested-JSON/raw-header scanner and runtime HTML meta/input/property scanner with entity decoding and up to three nested escape levels",
+          "limitations": [
+            "Does not decrypt encrypted content",
+            "Does not recursively unpack arbitrary compressed or proprietary content inside regular payloads",
+            "Standalone base64 matching is not a claim to inspect every possible base64 wrapping/alignment of a larger structure"
+          ]
+        }
+      },
+      "newSourceAndQaArchiveScan": {
+        "startedAt": "2026-10-14T04:51:59.453917+00:00",
+        "knownDistinctCapturedValues": 55,
+        "testedDistinctByteVariants": 373,
+        "originalSeedMembersRead": 200,
+        "regularFilesScanned": 699,
+        "bytesScanned": 256234667,
+        "uniquePayloadsScanned": 670,
+        "recognizedBenignRuntimeCandidateCount": 0,
+        "coverage": {
+          "byteSearch": "Every regular payload, regardless of extension",
+          "encodings": [
+            "literal",
+            "URL component",
+            "base64/base64url standalone value, padded and unpadded",
+            "UTF-16LE/BE",
+            "JSON string escaping",
+            "HTML entity escaping",
+            "full Unicode-escaped value in lower/upper hex"
+          ],
+          "patternSearch": "Primary nested-JSON/raw-header scanner and runtime HTML meta/input/property scanner with entity decoding and up to three nested escape levels",
+          "limitations": [
+            "Does not decrypt encrypted content",
+            "Does not recursively unpack arbitrary compressed or proprietary content inside regular payloads",
+            "Standalone base64 matching is not a claim to inspect every possible base64 wrapping/alignment of a larger structure"
+          ]
+        },
+        "completedAt": "2026-10-14T04:52:54.527003+00:00",
+        "status": "clean",
+        "exactValueMatches": 0,
+        "primaryHeaderCandidates": 0,
+        "unclassifiedRuntimeCandidates": 0,
+        "errors": 0
+      }
+    },
+    "newSourceToyotaResearchAndQaScan": {
+      "startedAt": "2026-10-14T06:52:37.131519+00:00",
+      "knownDistinctCapturedValues": 55,
+      "testedDistinctByteVariants": 373,
+      "originalSeedMembersRead": 200,
+      "regularFilesScanned": 841,
+      "bytesScanned": 277302341,
+      "uniquePayloadsScanned": 795,
+      "recognizedBenignRuntimeCandidateCount": 0,
+      "coverage": {
+        "byteSearch": "Every regular payload, regardless of extension",
+        "encodings": [
+          "literal",
+          "URL component",
+          "base64/base64url standalone value, padded and unpadded",
+          "UTF-16LE/BE",
+          "JSON string escaping",
+          "HTML entity escaping",
+          "full Unicode-escaped value in lower/upper hex"
+        ],
+        "patternSearch": "Primary nested-JSON/raw-header scanner and runtime HTML meta/input/property scanner with entity decoding and up to three nested escape levels",
+        "limitations": [
+          "Does not decrypt encrypted content",
+          "Does not recursively unpack arbitrary compressed or proprietary content inside regular payloads",
+          "Standalone base64 matching is not a claim to inspect every possible base64 wrapping/alignment of a larger structure"
+        ]
+      },
+      "completedAt": "2026-10-14T06:53:42.001149+00:00",
+      "status": "clean",
+      "exactValueMatches": 0,
+      "primaryHeaderCandidates": 0,
+      "unclassifiedRuntimeCandidates": 0,
+      "errors": 0
+    }
+  },
+  "incrementalSave": {
+    "newArchiveCount": 3,
+    "newArchiveBytes": 9139708,
+    "currentSourceFiles": 631,
+    "currentQaFiles": 1245,
+    "newOrChangedQaFiles": 52,
+    "unchangedQaFiles": 1193,
+    "missingQaFiles": [],
+    "includedToyotaResearchFiles": 153,
+    "researchExclusions": [
+      {
+        "path": "__pycache__/build-packet.cpython-312.pyc",
+        "reason": "dependency, build, cache, or runtime directory"
+      },
+      {
+        "path": "__pycache__/merge-evidence.cpython-312.pyc",
+        "reason": "dependency, build, cache, or runtime directory"
+      },
+      {
+        "path": "current/bz4x-spec-p1.png",
+        "reason": "Browser screenshot excluded; corresponding public document text, factual transcriptions, citations and source URLs retained"
+      },
+      {
+        "path": "current/bz4x-spec-p2.png",
+        "reason": "Browser screenshot excluded; corresponding public document text, factual transcriptions, citations and source URLs retained"
+      },
+      {
+        "path": "current/hilux-spec-p2.png",
+        "reason": "Browser screenshot excluded; corresponding public document text, factual transcriptions, citations and source URLs retained"
+      },
+      {
+        "path": "current/hilux-spec-p3.png",
+        "reason": "Browser screenshot excluded; corresponding public document text, factual transcriptions, citations and source URLs retained"
+      },
+      {
+        "path": "current/touring-spec-p2.png",
+        "reason": "Browser screenshot excluded; corresponding public document text, factual transcriptions, citations and source URLs retained"
+      }
+    ],
+    "newQaPaths": [
+      "roadmark-104-qa/capture-toyota-before.ts",
+      "roadmark-104-qa/capture-toyota-new-features.ts",
+      "roadmark-104-qa/check-toyota-facts.ts",
+      "roadmark-104-qa/m1-toyota-coverage.exit",
+      "roadmark-104-qa/m1-toyota-coverage.json",
+      "roadmark-104-qa/m1-toyota-coverage.stderr",
+      "roadmark-104-qa/m1-toyota-integration.exit",
+      "roadmark-104-qa/m1-toyota-integration.log",
+      "roadmark-104-qa/m1-toyota-lint.exit",
+      "roadmark-104-qa/m1-toyota-lint.log",
+      "roadmark-104-qa/m1-toyota-typecheck.exit",
+      "roadmark-104-qa/m1-toyota-typecheck.log",
+      "roadmark-104-qa/m1-toyota-validate.exit",
+      "roadmark-104-qa/m1-toyota-validate.log",
+      "roadmark-104-qa/optional-roadside-fitment-QA.json",
+      "roadmark-104-qa/optional-roadside-fitment-REVIEW.md",
+      "roadmark-104-qa/optional-roadside-fitment-before/src/lib/brand-updates.ts",
+      "roadmark-104-qa/optional-roadside-fitment-before/src/lib/types.ts",
+      "roadmark-104-qa/optional-roadside-fitment-before/tests/brand-updates.test.ts",
+      "roadmark-104-qa/optional-roadside-fitment-focused.exit",
+      "roadmark-104-qa/optional-roadside-fitment-focused.log",
+      "roadmark-104-qa/optional-roadside-fitment-lint.exit",
+      "roadmark-104-qa/optional-roadside-fitment-lint.log",
+      "roadmark-104-qa/optional-roadside-fitment-packets-before.sha256",
+      "roadmark-104-qa/optional-roadside-fitment-packets-check.log",
+      "roadmark-104-qa/optional-roadside-fitment-regression.exit",
+      "roadmark-104-qa/optional-roadside-fitment-regression.log",
+      "roadmark-104-qa/optional-roadside-fitment-typecheck.exit",
+      "roadmark-104-qa/optional-roadside-fitment-typecheck.log",
+      "roadmark-104-qa/optional-roadside-fitment.patch",
+      "roadmark-104-qa/review-toyota-independent.ts",
+      "roadmark-104-qa/stage-toyota-candidate.ts",
+      "roadmark-104-qa/toyota-approved-57ed2251-toyota-2026-10-14.json",
+      "roadmark-104-qa/toyota-approved-ed067827-toyota-reconciliation-2026-10-14.json",
+      "roadmark-104-qa/toyota-evidence-completeness-audit.json",
+      "roadmark-104-qa/toyota-independent-qa-audit.md",
+      "roadmark-104-qa/toyota-independent-review/INDEPENDENT-REVIEW.md",
+      "roadmark-104-qa/toyota-independent-review/independent-review-replay.exit",
+      "roadmark-104-qa/toyota-independent-review/independent-review-replay.json",
+      "roadmark-104-qa/toyota-independent-review/independent-review-replay.log",
+      "roadmark-104-qa/toyota-independent-review/independent-review-supplement.json",
+      "roadmark-104-qa/toyota-independent-review-replay.json",
+      "roadmark-104-qa/toyota-research-artifact-hash-manifest.json",
+      "roadmark-104-qa/toyota-research-brand-model-list-reconciliation.json",
+      "roadmark-104-qa/toyota-research-core-matrix.json",
+      "roadmark-104-qa/toyota-research-integration-readiness.json",
+      "roadmark-104-qa/toyota-research-review.md",
+      "roadmark-104-qa/toyota-research-source-hash-manifest.json",
+      "roadmark-104-qa/toyota-research-source-index.json",
+      "roadmark-104-qa/toyota-research-stage-report.json",
+      "roadmark-104-qa/toyota-source-capture-audit.json",
+      "roadmark-104-qa/work-status.json"
+    ],
+    "unchangedResearchReuploaded": 0
+  },
+  "browserScreenshotExclusions": {
+    "result": "Excluded before any upload",
+    "provenance": "Verified from current/build_normalized.py and REVIEW.md: official PDFs displayed in cloud Chrome and captured as browser screenshots.",
+    "files": [
+      {
+        "path": "toyota-research/current/bz4x-spec-p1.png",
+        "bytes": 94027,
+        "sha256": "2d9242f9136c653566bb169e0621106f9bafe749e465961139d45dd688b660a1",
+        "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+      },
+      {
+        "path": "toyota-research/current/bz4x-spec-p2.png",
+        "bytes": 92201,
+        "sha256": "ab1c9676f743f030ec5fc29654e6961c48ac8f31801456cd6307bc352d4e2275",
+        "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+      },
+      {
+        "path": "toyota-research/current/hilux-spec-p2.png",
+        "bytes": 91974,
+        "sha256": "08adef635b8744c02336ada1b02b674ee6b4f0e0012a3bd0fb3f2d1f1c0af368",
+        "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+      },
+      {
+        "path": "toyota-research/current/hilux-spec-p3.png",
+        "bytes": 88131,
+        "sha256": "2bf2bdd69b4c558d94b9561202fb49046211dbbb41806113b47597c4bd9495ca",
+        "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+      },
+      {
+        "path": "toyota-research/current/touring-spec-p2.png",
+        "bytes": 85836,
+        "sha256": "9525bbd89757a7ac6311fec7f82e5c5a3c0aee6d50c1ec1ff232a247ece90491",
+        "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+      }
+    ]
+  },
+  "workState": {
+    "workingCheckpoint": 104,
+    "latestDeliveredCheckpoint": 103,
+    "milestone": "M1 open",
+    "registeredPackets": 10,
+    "totalVersions": 363,
+    "tier1Versions": 286,
+    "onSaleVersions": 280,
+    "latestCompletedBrand": "Toyota",
+    "toyotaEstablishedVersions": 6,
+    "toyotaNewVersions": 0,
+    "toyotaSpecificFactEdits": 600,
+    "toyotaSharedTerms": 3,
+    "toyotaCitableFacts": 618,
+    "toyotaDirectFeatures": 339,
+    "toyotaResearchCompletion": "independently approved and integrated; strict C1/C2/C5 remain open",
+    "hyundai": "21 established versions integrated; exact six-seat MY26 IONIQ9 lead unresolved and deferred by owner",
+    "currentResearchBrand": "Volkswagen",
+    "nextResearchBrand": "Volvo",
+    "latestRootChecks": {
+      "brand": "Toyota",
+      "researchCompleted": true,
+      "integrationTests": {
+        "passed": 44,
+        "failed": 0
+      },
+      "validateExit": 0,
+      "coverageExit": 0,
+      "typecheckExit": 0,
+      "changedFileLintExit": 0
+    },
+    "fullAggregateSuite": "Not rerun for Toyota. The original through-Hyundai run remains partial/interrupted without an aggregate result.",
+    "productionBuild": "Not rerun for this integration.",
+    "servicePerformance": "Previously measured approximately 60-second eager review-service preflight remains an open issue; the test budget is not performance acceptance."
+  }
+}

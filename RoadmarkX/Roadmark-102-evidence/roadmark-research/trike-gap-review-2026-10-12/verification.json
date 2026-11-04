@@ -1,0 +1,83 @@
+{
+  "directRequests": [
+    {
+      "id": "rover",
+      "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/VTADetails/?id=073001ac-968f-f011-b4cc-000d3ad1ce22",
+      "status": 200,
+      "bytes": 2318942,
+      "sha256": "a180ef8db0a0656e01a681ed208c4f1d86078afc32b184da4fda2f10286ac4b3",
+      "observedAt": "2026-10-12T23:16:49.925666+00:00"
+    },
+    {
+      "id": "ebay",
+      "url": "https://www.ebay.com.au/itm/376747254821",
+      "status": 200,
+      "bytes": 624806,
+      "sha256": "49db587c85a9b1ee0652903d03c46dce63ae9032a62091a38cfa6eb4694e8a0b",
+      "observedAt": "2026-10-12T23:16:57.956091+00:00"
+    },
+    {
+      "id": "home",
+      "url": "https://ozetrike.com.au/",
+      "status": 200,
+      "bytes": 203664,
+      "sha256": "b2bfb62048ddb20ab7db120754bf5eb30abc02e19d44ad99e9eeb8709f4bf222",
+      "observedAt": "2026-10-12T23:17:05.354917+00:00"
+    },
+    {
+      "id": "faq",
+      "url": "https://ozetrike.com.au/faqs",
+      "status": 200,
+      "bytes": 84852,
+      "sha256": "06eba11fea95ccdec328420966e7531a91dbf0f9b7826123df94611c0e855a96",
+      "observedAt": "2026-10-12T23:17:13.111056+00:00"
+    },
+    {
+      "id": "kargo",
+      "url": "https://www.evmotoemos.com.au/cargo/ct-kargo",
+      "error": "HTTP Error 502: Bad Gateway",
+      "observedAt": "2026-10-12T23:17:20.127546+00:00"
+    },
+    {
+      "id": "kool",
+      "url": "https://www.evmotoemos.com.au/cargo/ct-kargo-kool",
+      "error": "HTTP Error 502: Bad Gateway",
+      "observedAt": "2026-10-12T23:17:27.160384+00:00"
+    },
+    {
+      "id": "kube",
+      "url": "https://www.evmotoemos.com.au/cargo/ct-kube",
+      "error": "HTTP Error 502: Bad Gateway",
+      "observedAt": "2026-10-12T23:17:34.509937+00:00"
+    }
+  ],
+  "embeddedPdfVerification": [
+    {
+      "name": "Road Vehicle Descriptor - VTA-065474 20250912.pdf",
+      "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/VTADetails/?id=073001ac-968f-f011-b4cc-000d3ad1ce22",
+      "sha256": "e95af32d9b7c2b3a1911ca4714eab4d3c05b0238ea987b4028f662c7391ceba0",
+      "bytes": 396737,
+      "packetHashMatch": true,
+      "readMethod": "pdftotext; notice page 1 and RVD page 8 visually inspected",
+      "fullCopyIncluded": false
+    },
+    {
+      "name": "Approval Notice - VTA-065474.pdf",
+      "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/VTADetails/?id=073001ac-968f-f011-b4cc-000d3ad1ce22",
+      "sha256": "7163d001ce6f24a2686adf564f83d2a45f81c24b625aebeec7fcc1d458a38bd9",
+      "bytes": 300883,
+      "packetHashMatch": true,
+      "readMethod": "pdftotext; notice page 1 and RVD page 8 visually inspected",
+      "fullCopyIncluded": false
+    }
+  ],
+  "sourceSnapshotCopiesIncluded": false,
+  "canonicalHashMatchesPacket": true,
+  "packetInputs": {
+    "summary.txt": "20e2a909c5aa9eb23ecac6f570e621b54e0a4b167debdceda0c3850186326891",
+    "evidence.json": "04a990b4a8649f783526b3fcc8b9b973d098a2ddf1aa3c79f77b0d8484ef3baf",
+    "sources.json": "fd1e1895c5b2aa31052bc002dedfc81ab95a9bb3a1aa7bee2e401ebe344fd15a",
+    "inventory-duplication-check.json": "ca92c1c3f016fa20d642d8297b5165098f23c2996176d9317942535ff5ce2557",
+    "direct-retrieval-log.json": "4295cb2b2deb272a011a27c9f8a65907fffc054cba6972c897110b50c4bf5143"
+  }
+}

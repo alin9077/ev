@@ -1,0 +1,4240 @@
+{
+  "schemaVersion": "jeep-ora.combined-market.independent-static-audit.v1",
+  "auditedAtUTC": "2026-10-10T22:25:24.622125+00:00",
+  "verdict": "PASS_STATIC_MARKET_MERGE",
+  "scope": "Read-only reconstruction of pre-application comparison using checkpoint-v57 baseline JSON independently matched to every pre-application lock hash; staged candidates and frozen plans unchanged. Initial pre-application PASS was consumed by guarded root apply. A later current-app rerun observed the intentional application transition and is separately retained. No app/producer execution, imports, tests, builds, edits or HTTP.",
+  "baselineReconstruction": {
+    "archivePath": "roadmark-recovery/checkpoint-v57-local.zip",
+    "archiveSHA256": "32f46dce9d62b7d681c5a0bc6eb4a00fff24099a570692276c17711bcc4e8f0c",
+    "extractedDirectory": "roadmark-research/audits/jeep-ora-runtime-adapters/baseline-v57",
+    "allFourLockFilesExact": true,
+    "currentAppIntentionallyNotTreatedAsBaseline": true
+  },
+  "checksPassed": 1037,
+  "checksTotal": 1037,
+  "failures": [],
+  "candidateMarketSHA256": "9789a997999a90a0a233adbe09d497c76f034a7a20f083c965c7017a8511bcb7",
+  "candidateCatalogueSHA256": "f972d90de0b929c51ce412271b1c63a8a224173d1444ac42c5ec029e305868ad",
+  "counts": {
+    "consolidatedModelAuditRecords": 234,
+    "byVehicleClass": {
+      "bus": 27,
+      "passenger": 109,
+      "truck": 27,
+      "ute": 13,
+      "van": 19,
+      "motorcycle": 39
+    },
+    "byOrderStatus": {
+      "listed_unconfirmed": 185,
+      "accepting_orders": 39,
+      "not_current": 4,
+      "preorder": 1,
+      "accepting_order_requests_advertised": 5
+    },
+    "namedTrimConfigurationEntries": 385,
+    "exactTrimSetMissingRecords": 53,
+    "newStockListedModelRecords": 66,
+    "unresolvedLeadGroups": 150,
+    "reconciledLeadGroups": 13,
+    "peripheralRecords": 5,
+    "duplicateModelMerges": 6
+  },
+  "priorEstablishedRowsUnchanged": 232,
+  "priorCatalogueRowsUnchanged": {
+    "models": 134,
+    "variants": 296,
+    "sources": 1672,
+    "facts": 26307,
+    "features": 750
+  },
+  "newCatalogueRows": {
+    "models": 2,
+    "variants": 3,
+    "sources": 32,
+    "facts": 545,
+    "features": 0
+  },
+  "inheritedCrossCollectionOverlap": {
+    "ids": [
+      "leapmotor-b03x"
+    ],
+    "unchangedFromBaseline": true,
+    "scope": "Inherited Leapmotor B03X established/unresolved overlap; no new Jeep/ORA overlap and no unrelated changes made."
+  },
+  "archiveMarkerReview": {
+    "extraMarkers": {
+      "countsAsAdditionalFamily": false,
+      "countsAsNamedConfiguration": false
+    },
+    "runtimeMarkerReferences": [],
+    "conclusion": "No marker is required by the current app: established and named totals derive exclusively from records; reconciledLeads are a separate history count. Explicit false markers are safe additive provenance and recommended for future consumers."
+  },
+  "protectedInputHashes": {
+    "roadmark-research/audits/jeep-ora-runtime-adapters/baseline-v57/market-inventory-2026-10-10.json": "7d01bcac674352dcb38dc42cc694a7f6eb1db23a44b1999e01b0f1fdc59be52a",
+    "roadmark-research/audits/jeep-ora-runtime-adapters/baseline-v57/catalogue-additions-2026-10-10.json": "71b78c79bc168e0445bb0521d549f0228bf35f4f5ff35ea8407e47389017b03b",
+    "roadmark-research/jeep-ora-merge-candidate/candidate-market-inventory.json": "9789a997999a90a0a233adbe09d497c76f034a7a20f083c965c7017a8511bcb7",
+    "roadmark-research/jeep-ora-merge-candidate/candidate-catalogue-additions.json": "f972d90de0b929c51ce412271b1c63a8a224173d1444ac42c5ec029e305868ad",
+    "roadmark-research/jeep-ora-merge-candidate/pre-application-lock.json": "ffd65df483b94f2bd541ee232cce162ffe5504a0a03310b4aa6abe77ef425833",
+    "roadmark-research/jeep-ora-merge-candidate/market-amendment.json": "a291c53c6ecd4e176f3c77f2076646664305bbb243f01604632f30e2bbd948a5",
+    "roadmark-research/jeep-longitude-runtime-candidate/adapter-candidate.json": "4b5c62492203407791cb57067924de36b68942c328ee577ca8058866c99dacb4",
+    "roadmark-research/ora5-suv-runtime-candidate/adapter-candidate.json": "8c1b8df4a2a9848d45b5b543281f6b100305e3b850ca2af59696263c96fd94e7",
+    "roadmark-research/jeep-longitude-integration-readiness/market-reconciliation-plan.json": "181b526dc971ef0ac5aced420b0954ecd8854100de2874f9d8dbf95d7282b58b",
+    "roadmark-research/ora5-suv-integration-readiness/market-reconciliation-plan.json": "9efc12ad805390662e80729704101259726851530a8422dd3c28d869060b4424",
+    "roadmark-recovery/checkpoint-v57-local.zip": "32f46dce9d62b7d681c5a0bc6eb4a00fff24099a570692276c17711bcc4e8f0c",
+    "roadmark-research/audits/jeep-ora-runtime-adapters/baseline-v57/buyer-identity-snapshots-2026-10-10.json": "0faae12d36f294e6719da855e9208699a78856d5c505029e56ff642c2f0356a9",
+    "roadmark-research/audits/jeep-ora-runtime-adapters/baseline-v57/buyer-selling-points-2026-10-10.json": "eb88180d5096402ab55fd8be7b88da4af8aeb159dbc2e124ea42867f584e3857",
+    "roadmark-work/roadmark/src/components/market-audit.tsx": "d5eb04b354844ebc2a5f5abada1e3ca375bd512693a4e4f95b25afc1903b2d92",
+    "roadmark-research/prepare_jeep_ora_market_candidate.py": "fc2ad859290fb0016987d9ab7cdda3343d41c6a70ad0e902ede545dab36bba9b"
+  },
+  "checks": [
+    {
+      "name": "pin/roadmark-research/jeep-ora-merge-candidate/candidate-market-inventory.json",
+      "passed": true
+    },
+    {
+      "name": "pin/roadmark-research/jeep-ora-merge-candidate/candidate-catalogue-additions.json",
+      "passed": true
+    },
+    {
+      "name": "pin/roadmark-research/jeep-longitude-runtime-candidate/adapter-candidate.json",
+      "passed": true
+    },
+    {
+      "name": "pin/roadmark-research/ora5-suv-runtime-candidate/adapter-candidate.json",
+      "passed": true
+    },
+    {
+      "name": "pin/roadmark-research/jeep-longitude-integration-readiness/market-reconciliation-plan.json",
+      "passed": true
+    },
+    {
+      "name": "pin/roadmark-research/ora5-suv-integration-readiness/market-reconciliation-plan.json",
+      "passed": true
+    },
+    {
+      "name": "pin/roadmark-work/roadmark/data/market-inventory-2026-10-10.json",
+      "passed": true
+    },
+    {
+      "name": "pin/roadmark-work/roadmark/data/catalogue-additions-2026-10-10.json",
+      "passed": true
+    },
+    {
+      "name": "baseline/checkpoint_v57_zip_hash",
+      "passed": true
+    },
+    {
+      "name": "preapplication/catalogue-additions-2026-10-10.json",
+      "passed": true
+    },
+    {
+      "name": "preapplication/market-inventory-2026-10-10.json",
+      "passed": true
+    },
+    {
+      "name": "preapplication/buyer-identity-snapshots-2026-10-10.json",
+      "passed": true
+    },
+    {
+      "name": "preapplication/buyer-selling-points-2026-10-10.json",
+      "passed": true
+    },
+    {
+      "name": "proof/candidate_market_hash",
+      "passed": true
+    },
+    {
+      "name": "proof/candidate_catalogue_hash",
+      "passed": true
+    },
+    {
+      "name": "proof/not_applied",
+      "passed": true
+    },
+    {
+      "name": "catalogue/models/exact_append_only",
+      "passed": true
+    },
+    {
+      "name": "catalogue/models/prior_prefix_exact",
+      "passed": true
+    },
+    {
+      "name": "catalogue/variants/exact_append_only",
+      "passed": true
+    },
+    {
+      "name": "catalogue/variants/prior_prefix_exact",
+      "passed": true
+    },
+    {
+      "name": "catalogue/sources/exact_append_only",
+      "passed": true
+    },
+    {
+      "name": "catalogue/sources/prior_prefix_exact",
+      "passed": true
+    },
+    {
+      "name": "catalogue/facts/exact_append_only",
+      "passed": true
+    },
+    {
+      "name": "catalogue/facts/prior_prefix_exact",
+      "passed": true
+    },
+    {
+      "name": "catalogue/features/exact_append_only",
+      "passed": true
+    },
+    {
+      "name": "catalogue/features/prior_prefix_exact",
+      "passed": true
+    },
+    {
+      "name": "catalogue/checkedAt/unchanged",
+      "passed": true
+    },
+    {
+      "name": "catalogue/auditNotes/unchanged",
+      "passed": true
+    },
+    {
+      "name": "catalogue/no_extra_top_keys",
+      "passed": true
+    },
+    {
+      "name": "catalogue/models/unique_ids",
+      "passed": true
+    },
+    {
+      "name": "catalogue/variants/unique_ids",
+      "passed": true
+    },
+    {
+      "name": "catalogue/sources/unique_ids",
+      "passed": true
+    },
+    {
+      "name": "catalogue/545_unique_new_pairs",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/0/jeep_avenger_my24_longitude_au__20261010/source_jeep_market",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/1/jeep_avenger_my24_longitude_au__20261010/source_jeep_model",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/2/jeep_avenger_my24_longitude_au__20261010/source_jeep_technical_epoch",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/3/jeep_avenger_my24_longitude_au__20261010/source_jeep_body_style",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/4/jeep_avenger_my24_longitude_au__20261010/source_jeep_doors",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/5/jeep_avenger_my24_longitude_au__20261010/source_jeep_seats",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/6/jeep_avenger_my24_longitude_au__20261010/source_jeep_assembly_plant",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/7/jeep_avenger_my24_longitude_au__20261010/source_jeep_powertrain",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/8/jeep_avenger_my24_longitude_au__20261010/source_jeep_motor_type",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/9/jeep_avenger_my24_longitude_au__20261010/source_jeep_drive",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/10/jeep_avenger_my24_longitude_au__20261010/source_jeep_power",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/11/jeep_avenger_my24_longitude_au__20261010/source_jeep_torque",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/12/jeep_avenger_my24_longitude_au__20261010/source_jeep_battery_chemistry",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/13/jeep_avenger_my24_longitude_au__20261010/source_jeep_battery_capacity_as_published",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/14/jeep_avenger_my24_longitude_au__20261010/source_jeep_battery_gross",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/15/jeep_avenger_my24_longitude_au__20261010/source_jeep_battery_net",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/16/jeep_avenger_my24_longitude_au__20261010/source_jeep_battery_voltage",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/17/jeep_avenger_my24_longitude_au__20261010/source_jeep_battery_thermal_management",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/18/jeep_avenger_my24_longitude_au__20261010/source_jeep_wltp_range_longitude_limited",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/19/jeep_avenger_my24_longitude_au__20261010/source_jeep_consumption_longitude_limited",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/20/jeep_avenger_my24_longitude_au__20261010/source_jeep_connector",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/21/jeep_avenger_my24_longitude_au__20261010/source_jeep_ac_onboard_longitude",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/22/jeep_avenger_my24_longitude_au__20261010/source_jeep_dc_charge_max",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/23/jeep_avenger_my24_longitude_au__20261010/source_jeep_dc_charge_time",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/24/jeep_avenger_my24_longitude_au__20261010/source_jeep_ac_charge_time_longitude",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/25/jeep_avenger_my24_longitude_au__20261010/source_jeep_charging_cable",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/26/jeep_avenger_my24_longitude_au__20261010/source_jeep_acceleration_0_100",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/27/jeep_avenger_my24_longitude_au__20261010/source_jeep_maximum_speed",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/28/jeep_avenger_my24_longitude_au__20261010/source_jeep_tare_mass",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/29/jeep_avenger_my24_longitude_au__20261010/source_jeep_boot_capacity",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/30/jeep_avenger_my24_longitude_au__20261010/source_jeep_length",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/31/jeep_avenger_my24_longitude_au__20261010/source_jeep_width_as_published",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/32/jeep_avenger_my24_longitude_au__20261010/source_jeep_height_as_published",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/33/jeep_avenger_my24_longitude_au__20261010/source_jeep_wheelbase_as_published",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/34/jeep_avenger_my24_longitude_au__20261010/source_jeep_turning_circle",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/35/jeep_avenger_my24_longitude_au__20261010/source_jeep_front_suspension",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/36/jeep_avenger_my24_longitude_au__20261010/source_jeep_rear_suspension",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/37/jeep_avenger_my24_longitude_au__20261010/source_jeep_wheels_longitude_limited",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/38/jeep_avenger_my24_longitude_au__20261010/source_jeep_vehicle_warranty",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/39/jeep_avenger_my24_longitude_au__20261010/source_jeep_battery_warranty",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/40/jeep_avenger_my24_longitude_au__20261010/source_jeep_service_interval",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/41/jeep_avenger_my24_longitude_au__20261010/source_jeep_capped_service_cost",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/42/jeep_avenger_my24_longitude_au__20261010/source_jeep_roadside_assistance",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/43/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_heated_front_seats",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/44/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_heated_windscreen",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/45/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_driver_seat_power",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/46/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_driver_seat_massage",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/47/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_sunroof",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/48/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_seat_material",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/49/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_driver_seat_adjustment",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/50/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_front_passenger_seat_adjustment",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/51/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_handsfree_power_tailgate",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/52/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_wireless_phone_charger",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/53/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_blind_spot_assist",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/54/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_lane_centering_traffic_jam_assist",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/55/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_adaptive_cruise_control",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/56/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_parking_sensors",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/57/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_rear_camera",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/58/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_aeb_vulnerable_road_users",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/59/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_airbags",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/60/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_lane_keep_assist",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/61/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_traffic_sign_recognition",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/62/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_driver_attention_assist",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/63/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_automatic_high_beam",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/64/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_touchscreen_inches",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/65/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_instrument_display_inches",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/66/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_wireless_apple_carplay",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/67/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_wireless_android_auto",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/68/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_satellite_navigation",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/69/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_audio_speakers",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/70/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_dab_radio",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/71/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_second_row_usb_c",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/72/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_connected_services",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/73/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_climate_control",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/74/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_rain_sensing_wipers",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/75/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_auto_dimming_mirror",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/76/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_terrain_modes",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/77/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_hill_descent_control",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/78/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_rear_seat_split",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/79/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_tyre_repair_kit",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/80/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_headlamps",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/81/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_taillamps",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/82/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_auto_folding_mirrors",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/83/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_heated_mirrors",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/84/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_keyless_go",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/85/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_passive_entry",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/86/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_two_tone_roof",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/87/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_privacy_glass",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/88/jeep_avenger_my24_longitude_au__20261010/equipment_jeep_front_foglamps_cornering",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/89/jeep_avenger_my24_longitude_au__20261010/source_jeep_residual_offer",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/90/jeep_avenger_my24_longitude_au__20261010/market",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/91/jeep_avenger_my24_longitude_au__20261010/manufacturer_epoch",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/92/jeep_avenger_my24_longitude_au__20261010/body_style",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/93/jeep_avenger_my24_longitude_au__20261010/doors",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/94/jeep_avenger_my24_longitude_au__20261010/seats",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/95/jeep_avenger_my24_longitude_au__20261010/assembly_plant",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/96/jeep_avenger_my24_longitude_au__20261010/powertrain",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/97/jeep_avenger_my24_longitude_au__20261010/motor_type",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/98/jeep_avenger_my24_longitude_au__20261010/drive",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/99/jeep_avenger_my24_longitude_au__20261010/power_kw",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/100/jeep_avenger_my24_longitude_au__20261010/torque_nm",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/101/jeep_avenger_my24_longitude_au__20261010/battery_chemistry",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/102/jeep_avenger_my24_longitude_au__20261010/battery_label_kwh",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/103/jeep_avenger_my24_longitude_au__20261010/battery_gross_kwh",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/104/jeep_avenger_my24_longitude_au__20261010/battery_net_kwh",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/105/jeep_avenger_my24_longitude_au__20261010/battery_rated_voltage_v",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/106/jeep_avenger_my24_longitude_au__20261010/battery_thermal_management",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/107/jeep_avenger_my24_longitude_au__20261010/range_km",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/108/jeep_avenger_my24_longitude_au__20261010/consumption_kwh_per_100km",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/109/jeep_avenger_my24_longitude_au__20261010/charging_connector_label",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/110/jeep_avenger_my24_longitude_au__20261010/ac_kw",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/111/jeep_avenger_my24_longitude_au__20261010/dc_advertised_kw",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/112/jeep_avenger_my24_longitude_au__20261010/charging_cable_included",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/113/jeep_avenger_my24_longitude_au__20261010/zero_to_100_s",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/114/jeep_avenger_my24_longitude_au__20261010/top_speed_kph",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/115/jeep_avenger_my24_longitude_au__20261010/tare_mass_kg",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/116/jeep_avenger_my24_longitude_au__20261010/boot_capacity_as_published_l",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/117/jeep_avenger_my24_longitude_au__20261010/length_mm",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/118/jeep_avenger_my24_longitude_au__20261010/turning_circle_kerb_to_kerb_m",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/119/jeep_avenger_my24_longitude_au__20261010/front_suspension",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/120/jeep_avenger_my24_longitude_au__20261010/rear_suspension",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/121/jeep_avenger_my24_longitude_au__20261010/service_interval",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/122/jeep_avenger_my24_longitude_au__20261010/capped_service_cost",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/123/jeep_avenger_my24_longitude_au__20261010/roadside_assistance",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/124/jeep_avenger_my24_longitude_au__20261010/dc_charge_time_min",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/125/jeep_avenger_my24_longitude_au__20261010/wheels",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/126/jeep_avenger_my24_longitude_au__20261010/warranty",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/127/jeep_avenger_my24_longitude_au__20261010/battery_warranty",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/128/jeep_avenger_my24_longitude_au__20261010/heated_front_seats",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/129/jeep_avenger_my24_longitude_au__20261010/heated_windscreen",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/130/jeep_avenger_my24_longitude_au__20261010/driver_seat_power",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/131/jeep_avenger_my24_longitude_au__20261010/driver_seat_massage",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/132/jeep_avenger_my24_longitude_au__20261010/sunroof",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/133/jeep_avenger_my24_longitude_au__20261010/seat_material",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/134/jeep_avenger_my24_longitude_au__20261010/driver_seat_adjustment",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/135/jeep_avenger_my24_longitude_au__20261010/front_passenger_seat_adjustment",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/136/jeep_avenger_my24_longitude_au__20261010/handsfree_power_tailgate",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/137/jeep_avenger_my24_longitude_au__20261010/wireless_phone_charger",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/138/jeep_avenger_my24_longitude_au__20261010/blind_spot_assist",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/139/jeep_avenger_my24_longitude_au__20261010/lane_centering_traffic_jam_assist",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/140/jeep_avenger_my24_longitude_au__20261010/adaptive_cruise_control",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/141/jeep_avenger_my24_longitude_au__20261010/parking_sensors",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/142/jeep_avenger_my24_longitude_au__20261010/rear_camera",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/143/jeep_avenger_my24_longitude_au__20261010/aeb_vulnerable_road_users",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/144/jeep_avenger_my24_longitude_au__20261010/airbags",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/145/jeep_avenger_my24_longitude_au__20261010/lane_keep_assist",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/146/jeep_avenger_my24_longitude_au__20261010/traffic_sign_recognition",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/147/jeep_avenger_my24_longitude_au__20261010/driver_attention_assist",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/148/jeep_avenger_my24_longitude_au__20261010/automatic_high_beam",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/149/jeep_avenger_my24_longitude_au__20261010/touchscreen_inches",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/150/jeep_avenger_my24_longitude_au__20261010/instrument_display_inches",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/151/jeep_avenger_my24_longitude_au__20261010/wireless_apple_carplay",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/152/jeep_avenger_my24_longitude_au__20261010/wireless_android_auto",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/153/jeep_avenger_my24_longitude_au__20261010/satellite_navigation",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/154/jeep_avenger_my24_longitude_au__20261010/audio_speakers",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/155/jeep_avenger_my24_longitude_au__20261010/dab_radio",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/156/jeep_avenger_my24_longitude_au__20261010/second_row_usb_c",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/157/jeep_avenger_my24_longitude_au__20261010/connected_services",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/158/jeep_avenger_my24_longitude_au__20261010/climate_control",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/159/jeep_avenger_my24_longitude_au__20261010/rain_sensing_wipers",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/160/jeep_avenger_my24_longitude_au__20261010/auto_dimming_mirror",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/161/jeep_avenger_my24_longitude_au__20261010/terrain_modes",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/162/jeep_avenger_my24_longitude_au__20261010/hill_descent_control",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/163/jeep_avenger_my24_longitude_au__20261010/rear_seat_split",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/164/jeep_avenger_my24_longitude_au__20261010/tyre_repair_kit",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/165/jeep_avenger_my24_longitude_au__20261010/headlamps",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/166/jeep_avenger_my24_longitude_au__20261010/taillamps",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/167/jeep_avenger_my24_longitude_au__20261010/auto_folding_mirrors",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/168/jeep_avenger_my24_longitude_au__20261010/heated_mirrors",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/169/jeep_avenger_my24_longitude_au__20261010/two_tone_roof",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/170/jeep_avenger_my24_longitude_au__20261010/price_aud",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/171/jeep_avenger_my24_longitude_au__20261010/current_manufacturer_base_price_aud",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/172/jeep_avenger_my24_longitude_au__20261010/current_manufacturer_driveaway_price_aud",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/173/jeep_avenger_my24_longitude_au__20261010/current_national_price_aud",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/174/jeep_avenger_my24_longitude_au__20261010/current_rrp_aud",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/175/jeep_avenger_my24_longitude_au__20261010/exact_new_vehicle_price_aud",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/176/jeep_avenger_my24_longitude_au__20261010/offer_start_date",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/177/jeep_avenger_my24_longitude_au__20261010/offer_end_date",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/178/jeep_avenger_my24_longitude_au__20261010/accepted_factory_order",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/179/jeep_avenger_my24_longitude_au__20261010/physical_new_stock",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/180/jeep_avenger_my24_longitude_au__20261010/new_stock_count",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/181/jeep_avenger_my24_longitude_au__20261010/delivery_timing",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/182/jeep_avenger_my24_longitude_au__20261010/vin",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/183/jeep_avenger_my24_longitude_au__20261010/build_date",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/184/jeep_avenger_my24_longitude_au__20261010/factory_production_availability",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/185/jeep_avenger_my24_longitude_au__20261010/current_production_model_year",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/186/jeep_avenger_my24_longitude_au__20261010/ac_charge_time_min",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/187/jeep_avenger_my24_longitude_au__20261010/ac_charge_time_hours",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/188/jeep_avenger_my24_longitude_au__20261010/ac_0_100_time_hours",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/189/jeep_avenger_my24_longitude_au__20261010/width_mm",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/190/jeep_avenger_my24_longitude_au__20261010/height_mm",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/191/jeep_avenger_my24_longitude_au__20261010/wheelbase_mm",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/192/jeep_avenger_my24_longitude_au__20261010/ground_clearance_mm",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/193/jeep_avenger_my24_longitude_au__20261010/keyless_go",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/194/jeep_avenger_my24_longitude_au__20261010/passive_entry",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/195/jeep_avenger_my24_longitude_au__20261010/privacy_glass",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/196/jeep_avenger_my24_longitude_au__20261010/front_foglamps_cornering",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/197/jeep_avenger_my24_longitude_au__20261010/battery_kwh",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/198/jeep_avenger_my24_longitude_au__20261010/battery_usable_kwh",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/199/jeep_avenger_my24_longitude_au__20261010/ac_peak_kw",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/200/jeep_avenger_my24_longitude_au__20261010/dc_peak_kw",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/201/jeep_avenger_my24_longitude_au__20261010/dc_sustained_kw",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/202/jeep_avenger_my24_longitude_au__20261010/dc_average_kw",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/203/jeep_avenger_my24_longitude_au__20261010/dc_10_80_time_min",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/204/jeep_avenger_my24_longitude_au__20261010/ac_phases",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/205/jeep_avenger_my24_longitude_au__20261010/ac_inlet",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/206/jeep_avenger_my24_longitude_au__20261010/dc_inlet",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/207/jeep_avenger_my24_longitude_au__20261010/portable_evse_included",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/208/jeep_avenger_my24_longitude_au__20261010/boot_l",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/209/jeep_avenger_my24_longitude_au__20261010/max_total_cargo_l",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/210/jeep_avenger_my24_longitude_au__20261010/kerb_weight_kg",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/211/jeep_avenger_my24_longitude_au__20261010/gvm_kg",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/212/jeep_avenger_my24_longitude_au__20261010/payload_kg",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/213/jeep_avenger_my24_longitude_au__20261010/frunk_l",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/214/jeep_avenger_my24_longitude_au__20261010/towing_braked_kg",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/215/jeep_avenger_my24_longitude_au__20261010/towing_unbraked_kg",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/216/jeep_avenger_my24_longitude_au__20261010/heat_pump",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/217/jeep_avenger_my24_longitude_au__20261010/v2l",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/218/jeep_avenger_my24_longitude_au__20261010/battery_warranty_retention_percent",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/219/jeep_avenger_my24_longitude_au__20261010/full_charge_curve",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/220/jeep_avenger_my24_longitude_au__20261010/real_world_range_km",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/221/jeep_avenger_my24_longitude_au__20261010/motor_count",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/222/jeep_avenger_my24_longitude_au__20261010/motor_continuous_power_kw",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/223/jeep_avenger_my24_longitude_au__20261010/motor_peak_duration_seconds",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/224/jeep_avenger_my24_longitude_au__20261010/camera_360",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/225/jeep_avenger_my24_longitude_au__20261010/warranty_remaining_months",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/226/jeep_avenger_my24_longitude_au__20261010/battery_warranty_remaining_months",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/227/gwm_ora5_suv_lux_au__20261010/source_ora5_powertrain",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/228/gwm_ora5_suv_lux_au__20261010/source_ora5_battery_capacity_stated",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/229/gwm_ora5_suv_lux_au__20261010/source_ora5_battery_chemistry",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/230/gwm_ora5_suv_lux_au__20261010/source_ora5_driven_axle",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/231/gwm_ora5_suv_lux_au__20261010/source_ora5_motor_count",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/232/gwm_ora5_suv_lux_au__20261010/source_ora5_motor_power",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/233/gwm_ora5_suv_lux_au__20261010/source_ora5_motor_torque",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/234/gwm_ora5_suv_lux_au__20261010/source_ora5_range",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/235/gwm_ora5_suv_lux_au__20261010/source_ora5_consumption",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/236/gwm_ora5_suv_lux_au__20261010/source_ora5_acceleration_0_100",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/237/gwm_ora5_suv_lux_au__20261010/source_ora5_charge_socket",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/238/gwm_ora5_suv_lux_au__20261010/source_ora5_ac_charging_rate_stated",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/239/gwm_ora5_suv_lux_au__20261010/source_ora5_ac_charge_time",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/240/gwm_ora5_suv_lux_au__20261010/source_ora5_dc_charge_time",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/241/gwm_ora5_suv_lux_au__20261010/source_ora5_dc_charger_rating_for_time",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/242/gwm_ora5_suv_lux_au__20261010/source_ora5_dc_charge_time_alternative_window",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/243/gwm_ora5_suv_lux_au__20261010/source_ora5_v2l_output_stated_max",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/244/gwm_ora5_suv_lux_au__20261010/source_ora5_scheduled_charging",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/245/gwm_ora5_suv_lux_au__20261010/source_ora5_length",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/246/gwm_ora5_suv_lux_au__20261010/source_ora5_width",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/247/gwm_ora5_suv_lux_au__20261010/source_ora5_height",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/248/gwm_ora5_suv_lux_au__20261010/source_ora5_wheelbase",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/249/gwm_ora5_suv_lux_au__20261010/source_ora5_minimum_ground_clearance",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/250/gwm_ora5_suv_lux_au__20261010/source_ora5_wheel_diameter",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/251/gwm_ora5_suv_lux_au__20261010/source_ora5_wheel_type",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/252/gwm_ora5_suv_lux_au__20261010/source_ora5_wheel_rim",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/253/gwm_ora5_suv_lux_au__20261010/source_ora5_tyres",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/254/gwm_ora5_suv_lux_au__20261010/source_ora5_spare_wheel",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/255/gwm_ora5_suv_lux_au__20261010/source_ora5_kerb_weight",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/256/gwm_ora5_suv_lux_au__20261010/source_ora5_tare_weight",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/257/gwm_ora5_suv_lux_au__20261010/source_ora5_gvm",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/258/gwm_ora5_suv_lux_au__20261010/source_ora5_seat_count",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/259/gwm_ora5_suv_lux_au__20261010/source_ora5_towing_capacity_stated",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/260/gwm_ora5_suv_lux_au__20261010/source_ora5_luggage_minimum",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/261/gwm_ora5_suv_lux_au__20261010/source_ora5_luggage_maximum",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/262/gwm_ora5_suv_lux_au__20261010/source_ora5_front_suspension",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/263/gwm_ora5_suv_lux_au__20261010/source_ora5_rear_suspension",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/264/gwm_ora5_suv_lux_au__20261010/source_ora5_turning_circle",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/265/gwm_ora5_suv_lux_au__20261010/source_ora5_roof_rails",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/266/gwm_ora5_suv_lux_au__20261010/source_ora5_equipment_heat_pump_air_conditioning",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/267/gwm_ora5_suv_lux_au__20261010/source_ora5_equipment_14_6_inch_infotainment_display",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/268/gwm_ora5_suv_lux_au__20261010/source_ora5_equipment_10_25_inch_instrument_display",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/269/gwm_ora5_suv_lux_au__20261010/source_ora5_equipment_wireless_apple_carplay",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/270/gwm_ora5_suv_lux_au__20261010/source_ora5_equipment_wireless_android_auto",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/271/gwm_ora5_suv_lux_au__20261010/source_ora5_equipment_gwm_app_telematics",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/272/gwm_ora5_suv_lux_au__20261010/source_ora5_equipment_rear_privacy_glass",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/273/gwm_ora5_suv_lux_au__20261010/source_ora5_equipment_led_headlights_and_tail_lights",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/274/gwm_ora5_suv_lux_au__20261010/source_ora5_equipment_rain_sensing_wipers",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/275/gwm_ora5_suv_lux_au__20261010/source_ora5_equipment_60_40_split_rear_seat",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/276/gwm_ora5_suv_lux_au__20261010/source_ora5_equipment_keyless_driver_entry",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/277/gwm_ora5_suv_lux_au__20261010/source_ora5_equipment_360_degree_camera_with_transparent_view",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/278/gwm_ora5_suv_lux_au__20261010/source_ora5_equipment_adaptive_cruise_control_with_stop_and_go",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/279/gwm_ora5_suv_lux_au__20261010/source_ora5_equipment_aeb_pedestrian_cyclist_crossing",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/280/gwm_ora5_suv_lux_au__20261010/source_ora5_equipment_blind_spot_detection",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/281/gwm_ora5_suv_lux_au__20261010/source_ora5_equipment_rear_cross_traffic_alert_and_braking",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/282/gwm_ora5_suv_lux_au__20261010/source_ora5_equipment_front_cross_traffic_alert_and_braking",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/283/gwm_ora5_suv_lux_au__20261010/source_ora5_equipment_7_srs_airbags",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/284/gwm_ora5_suv_lux_au__20261010/source_ora5_equipment_2_isofix_points",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/285/gwm_ora5_suv_lux_au__20261010/source_ora5_equipment_three_regenerative_braking_levels",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/286/gwm_ora5_suv_lux_au__20261010/source_ora5_seat_trim",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/287/gwm_ora5_suv_lux_au__20261010/source_ora5_driver_seat",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/288/gwm_ora5_suv_lux_au__20261010/source_ora5_passenger_seat",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/289/gwm_ora5_suv_lux_au__20261010/source_ora5_audio_speakers",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/290/gwm_ora5_suv_lux_au__20261010/source_ora5_tailgate",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/291/gwm_ora5_suv_lux_au__20261010/source_ora5_panoramic_roof",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/292/gwm_ora5_suv_lux_au__20261010/source_ora5_heated_steering_wheel",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/293/gwm_ora5_suv_lux_au__20261010/source_ora5_wireless_phone_charger_50w",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/294/gwm_ora5_suv_lux_au__20261010/source_ora5_driver_memory",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/295/gwm_ora5_suv_lux_au__20261010/source_ora5_front_seat_heat_ventilation",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/296/gwm_ora5_suv_lux_au__20261010/source_ora5_ambient_lighting",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/297/gwm_ora5_suv_lux_au__20261010/source_ora5_advertised_driveaway_from",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/298/gwm_ora5_suv_lux_au__20261010/source_ora5_premium_paint_surcharge",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/299/gwm_ora5_suv_ultra_au__20261010/source_ora5_powertrain",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/300/gwm_ora5_suv_ultra_au__20261010/source_ora5_battery_capacity_stated",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/301/gwm_ora5_suv_ultra_au__20261010/source_ora5_battery_chemistry",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/302/gwm_ora5_suv_ultra_au__20261010/source_ora5_driven_axle",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/303/gwm_ora5_suv_ultra_au__20261010/source_ora5_motor_count",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/304/gwm_ora5_suv_ultra_au__20261010/source_ora5_motor_power",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/305/gwm_ora5_suv_ultra_au__20261010/source_ora5_motor_torque",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/306/gwm_ora5_suv_ultra_au__20261010/source_ora5_range",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/307/gwm_ora5_suv_ultra_au__20261010/source_ora5_consumption",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/308/gwm_ora5_suv_ultra_au__20261010/source_ora5_acceleration_0_100",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/309/gwm_ora5_suv_ultra_au__20261010/source_ora5_charge_socket",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/310/gwm_ora5_suv_ultra_au__20261010/source_ora5_ac_charging_rate_stated",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/311/gwm_ora5_suv_ultra_au__20261010/source_ora5_ac_charge_time",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/312/gwm_ora5_suv_ultra_au__20261010/source_ora5_dc_charge_time",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/313/gwm_ora5_suv_ultra_au__20261010/source_ora5_dc_charger_rating_for_time",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/314/gwm_ora5_suv_ultra_au__20261010/source_ora5_dc_charge_time_alternative_window",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/315/gwm_ora5_suv_ultra_au__20261010/source_ora5_v2l_output_stated_max",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/316/gwm_ora5_suv_ultra_au__20261010/source_ora5_scheduled_charging",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/317/gwm_ora5_suv_ultra_au__20261010/source_ora5_length",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/318/gwm_ora5_suv_ultra_au__20261010/source_ora5_width",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/319/gwm_ora5_suv_ultra_au__20261010/source_ora5_height",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/320/gwm_ora5_suv_ultra_au__20261010/source_ora5_wheelbase",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/321/gwm_ora5_suv_ultra_au__20261010/source_ora5_minimum_ground_clearance",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/322/gwm_ora5_suv_ultra_au__20261010/source_ora5_wheel_diameter",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/323/gwm_ora5_suv_ultra_au__20261010/source_ora5_wheel_type",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/324/gwm_ora5_suv_ultra_au__20261010/source_ora5_wheel_rim",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/325/gwm_ora5_suv_ultra_au__20261010/source_ora5_tyres",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/326/gwm_ora5_suv_ultra_au__20261010/source_ora5_spare_wheel",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/327/gwm_ora5_suv_ultra_au__20261010/source_ora5_kerb_weight",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/328/gwm_ora5_suv_ultra_au__20261010/source_ora5_tare_weight",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/329/gwm_ora5_suv_ultra_au__20261010/source_ora5_gvm",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/330/gwm_ora5_suv_ultra_au__20261010/source_ora5_seat_count",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/331/gwm_ora5_suv_ultra_au__20261010/source_ora5_towing_capacity_stated",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/332/gwm_ora5_suv_ultra_au__20261010/source_ora5_luggage_minimum",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/333/gwm_ora5_suv_ultra_au__20261010/source_ora5_luggage_maximum",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/334/gwm_ora5_suv_ultra_au__20261010/source_ora5_front_suspension",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/335/gwm_ora5_suv_ultra_au__20261010/source_ora5_rear_suspension",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/336/gwm_ora5_suv_ultra_au__20261010/source_ora5_turning_circle",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/337/gwm_ora5_suv_ultra_au__20261010/source_ora5_roof_rails",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/338/gwm_ora5_suv_ultra_au__20261010/source_ora5_equipment_heat_pump_air_conditioning",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/339/gwm_ora5_suv_ultra_au__20261010/source_ora5_equipment_14_6_inch_infotainment_display",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/340/gwm_ora5_suv_ultra_au__20261010/source_ora5_equipment_10_25_inch_instrument_display",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/341/gwm_ora5_suv_ultra_au__20261010/source_ora5_equipment_wireless_apple_carplay",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/342/gwm_ora5_suv_ultra_au__20261010/source_ora5_equipment_wireless_android_auto",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/343/gwm_ora5_suv_ultra_au__20261010/source_ora5_equipment_gwm_app_telematics",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/344/gwm_ora5_suv_ultra_au__20261010/source_ora5_equipment_rear_privacy_glass",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/345/gwm_ora5_suv_ultra_au__20261010/source_ora5_equipment_led_headlights_and_tail_lights",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/346/gwm_ora5_suv_ultra_au__20261010/source_ora5_equipment_rain_sensing_wipers",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/347/gwm_ora5_suv_ultra_au__20261010/source_ora5_equipment_60_40_split_rear_seat",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/348/gwm_ora5_suv_ultra_au__20261010/source_ora5_equipment_keyless_driver_entry",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/349/gwm_ora5_suv_ultra_au__20261010/source_ora5_equipment_360_degree_camera_with_transparent_view",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/350/gwm_ora5_suv_ultra_au__20261010/source_ora5_equipment_adaptive_cruise_control_with_stop_and_go",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/351/gwm_ora5_suv_ultra_au__20261010/source_ora5_equipment_aeb_pedestrian_cyclist_crossing",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/352/gwm_ora5_suv_ultra_au__20261010/source_ora5_equipment_blind_spot_detection",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/353/gwm_ora5_suv_ultra_au__20261010/source_ora5_equipment_rear_cross_traffic_alert_and_braking",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/354/gwm_ora5_suv_ultra_au__20261010/source_ora5_equipment_front_cross_traffic_alert_and_braking",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/355/gwm_ora5_suv_ultra_au__20261010/source_ora5_equipment_7_srs_airbags",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/356/gwm_ora5_suv_ultra_au__20261010/source_ora5_equipment_2_isofix_points",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/357/gwm_ora5_suv_ultra_au__20261010/source_ora5_equipment_three_regenerative_braking_levels",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/358/gwm_ora5_suv_ultra_au__20261010/source_ora5_seat_trim",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/359/gwm_ora5_suv_ultra_au__20261010/source_ora5_driver_seat",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/360/gwm_ora5_suv_ultra_au__20261010/source_ora5_passenger_seat",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/361/gwm_ora5_suv_ultra_au__20261010/source_ora5_audio_speakers",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/362/gwm_ora5_suv_ultra_au__20261010/source_ora5_tailgate",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/363/gwm_ora5_suv_ultra_au__20261010/source_ora5_panoramic_roof",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/364/gwm_ora5_suv_ultra_au__20261010/source_ora5_heated_steering_wheel",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/365/gwm_ora5_suv_ultra_au__20261010/source_ora5_wireless_phone_charger_50w",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/366/gwm_ora5_suv_ultra_au__20261010/source_ora5_driver_memory",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/367/gwm_ora5_suv_ultra_au__20261010/source_ora5_front_seat_heat_ventilation",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/368/gwm_ora5_suv_ultra_au__20261010/source_ora5_ambient_lighting",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/369/gwm_ora5_suv_ultra_au__20261010/source_ora5_advertised_driveaway_from",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/370/gwm_ora5_suv_ultra_au__20261010/source_ora5_premium_paint_surcharge",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/371/gwm_ora5_suv_lux_au__20261010/source_ora5_promotion",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/372/gwm_ora5_suv_lux_au__20261010/source_ora5_warranty",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/373/gwm_ora5_suv_ultra_au__20261010/source_ora5_promotion",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/374/gwm_ora5_suv_ultra_au__20261010/source_ora5_warranty",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/375/gwm_ora5_suv_lux_au__20261010/source_ora5_sos_eta",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/376/gwm_ora5_suv_lux_au__20261010/source_ora5_roadside_label",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/377/gwm_ora5_suv_lux_au__20261010/source_ora5_offers_stale_footer",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/378/gwm_ora5_suv_ultra_au__20261010/source_ora5_sos_eta",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/379/gwm_ora5_suv_ultra_au__20261010/source_ora5_roadside_label",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/380/gwm_ora5_suv_ultra_au__20261010/source_ora5_offers_stale_footer",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/381/gwm_ora5_suv_lux_au__20261010/source_ora5_warranty_conditions",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/382/gwm_ora5_suv_ultra_au__20261010/source_ora5_warranty_conditions",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/383/gwm_ora5_suv_lux_au__20261010/range_km",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/384/gwm_ora5_suv_lux_au__20261010/zero_to_100_s",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/385/gwm_ora5_suv_lux_au__20261010/length_mm",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/386/gwm_ora5_suv_lux_au__20261010/width_mm",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/387/gwm_ora5_suv_lux_au__20261010/height_mm",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/388/gwm_ora5_suv_lux_au__20261010/wheelbase_mm",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/389/gwm_ora5_suv_lux_au__20261010/seats",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/390/gwm_ora5_suv_lux_au__20261010/dc_charge_time_min",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/391/gwm_ora5_suv_lux_au__20261010/power_kw",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/392/gwm_ora5_suv_lux_au__20261010/torque_nm",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/393/gwm_ora5_suv_lux_au__20261010/motor_count",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/394/gwm_ora5_suv_lux_au__20261010/battery_chemistry",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/395/gwm_ora5_suv_lux_au__20261010/charging_socket",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/396/gwm_ora5_suv_lux_au__20261010/turning_circle_m",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/397/gwm_ora5_suv_lux_au__20261010/ground_clearance_mm",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/398/gwm_ora5_suv_lux_au__20261010/equipment_ora5_heat_pump_air_conditioning",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/399/gwm_ora5_suv_lux_au__20261010/equipment_ora5_14_6_inch_infotainment_display",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/400/gwm_ora5_suv_lux_au__20261010/equipment_ora5_10_25_inch_instrument_display",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/401/gwm_ora5_suv_lux_au__20261010/equipment_ora5_wireless_apple_carplay",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/402/gwm_ora5_suv_lux_au__20261010/equipment_ora5_wireless_android_auto",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/403/gwm_ora5_suv_lux_au__20261010/equipment_ora5_gwm_app_telematics",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/404/gwm_ora5_suv_lux_au__20261010/equipment_ora5_rear_privacy_glass",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/405/gwm_ora5_suv_lux_au__20261010/equipment_ora5_led_headlights_and_tail_lights",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/406/gwm_ora5_suv_lux_au__20261010/equipment_ora5_rain_sensing_wipers",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/407/gwm_ora5_suv_lux_au__20261010/equipment_ora5_60_40_split_rear_seat",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/408/gwm_ora5_suv_lux_au__20261010/equipment_ora5_keyless_driver_entry",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/409/gwm_ora5_suv_lux_au__20261010/equipment_ora5_360_degree_camera_with_transparent_view",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/410/gwm_ora5_suv_lux_au__20261010/equipment_ora5_adaptive_cruise_control_with_stop_and_go",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/411/gwm_ora5_suv_lux_au__20261010/equipment_ora5_aeb_pedestrian_cyclist_crossing",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/412/gwm_ora5_suv_lux_au__20261010/equipment_ora5_blind_spot_detection",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/413/gwm_ora5_suv_lux_au__20261010/equipment_ora5_rear_cross_traffic_alert_and_braking",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/414/gwm_ora5_suv_lux_au__20261010/equipment_ora5_front_cross_traffic_alert_and_braking",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/415/gwm_ora5_suv_lux_au__20261010/equipment_ora5_7_srs_airbags",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/416/gwm_ora5_suv_lux_au__20261010/equipment_ora5_2_isofix_points",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/417/gwm_ora5_suv_lux_au__20261010/equipment_ora5_three_regenerative_braking_levels",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/418/gwm_ora5_suv_lux_au__20261010/equipment_ora5_roof_rails",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/419/gwm_ora5_suv_lux_au__20261010/equipment_ora5_spare_wheel",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/420/gwm_ora5_suv_lux_au__20261010/equipment_ora5_wheel_diameter",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/421/gwm_ora5_suv_lux_au__20261010/equipment_ora5_wheel_type",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/422/gwm_ora5_suv_lux_au__20261010/equipment_ora5_tyres",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/423/gwm_ora5_suv_lux_au__20261010/equipment_ora5_seat_trim",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/424/gwm_ora5_suv_lux_au__20261010/equipment_ora5_driver_seat",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/425/gwm_ora5_suv_lux_au__20261010/equipment_ora5_passenger_seat",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/426/gwm_ora5_suv_lux_au__20261010/equipment_ora5_audio_speakers",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/427/gwm_ora5_suv_lux_au__20261010/equipment_ora5_tailgate",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/428/gwm_ora5_suv_lux_au__20261010/equipment_ora5_panoramic_roof",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/429/gwm_ora5_suv_lux_au__20261010/equipment_ora5_heated_steering_wheel",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/430/gwm_ora5_suv_lux_au__20261010/equipment_ora5_wireless_phone_charger_50w",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/431/gwm_ora5_suv_lux_au__20261010/equipment_ora5_driver_memory",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/432/gwm_ora5_suv_lux_au__20261010/equipment_ora5_front_seat_heat_ventilation",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/433/gwm_ora5_suv_lux_au__20261010/equipment_ora5_ambient_lighting",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/434/gwm_ora5_suv_ultra_au__20261010/range_km",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/435/gwm_ora5_suv_ultra_au__20261010/zero_to_100_s",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/436/gwm_ora5_suv_ultra_au__20261010/length_mm",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/437/gwm_ora5_suv_ultra_au__20261010/width_mm",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/438/gwm_ora5_suv_ultra_au__20261010/height_mm",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/439/gwm_ora5_suv_ultra_au__20261010/wheelbase_mm",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/440/gwm_ora5_suv_ultra_au__20261010/seats",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/441/gwm_ora5_suv_ultra_au__20261010/dc_charge_time_min",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/442/gwm_ora5_suv_ultra_au__20261010/power_kw",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/443/gwm_ora5_suv_ultra_au__20261010/torque_nm",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/444/gwm_ora5_suv_ultra_au__20261010/motor_count",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/445/gwm_ora5_suv_ultra_au__20261010/battery_chemistry",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/446/gwm_ora5_suv_ultra_au__20261010/charging_socket",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/447/gwm_ora5_suv_ultra_au__20261010/turning_circle_m",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/448/gwm_ora5_suv_ultra_au__20261010/ground_clearance_mm",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/449/gwm_ora5_suv_ultra_au__20261010/equipment_ora5_heat_pump_air_conditioning",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/450/gwm_ora5_suv_ultra_au__20261010/equipment_ora5_14_6_inch_infotainment_display",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/451/gwm_ora5_suv_ultra_au__20261010/equipment_ora5_10_25_inch_instrument_display",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/452/gwm_ora5_suv_ultra_au__20261010/equipment_ora5_wireless_apple_carplay",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/453/gwm_ora5_suv_ultra_au__20261010/equipment_ora5_wireless_android_auto",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/454/gwm_ora5_suv_ultra_au__20261010/equipment_ora5_gwm_app_telematics",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/455/gwm_ora5_suv_ultra_au__20261010/equipment_ora5_rear_privacy_glass",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/456/gwm_ora5_suv_ultra_au__20261010/equipment_ora5_led_headlights_and_tail_lights",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/457/gwm_ora5_suv_ultra_au__20261010/equipment_ora5_rain_sensing_wipers",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/458/gwm_ora5_suv_ultra_au__20261010/equipment_ora5_60_40_split_rear_seat",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/459/gwm_ora5_suv_ultra_au__20261010/equipment_ora5_keyless_driver_entry",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/460/gwm_ora5_suv_ultra_au__20261010/equipment_ora5_360_degree_camera_with_transparent_view",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/461/gwm_ora5_suv_ultra_au__20261010/equipment_ora5_adaptive_cruise_control_with_stop_and_go",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/462/gwm_ora5_suv_ultra_au__20261010/equipment_ora5_aeb_pedestrian_cyclist_crossing",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/463/gwm_ora5_suv_ultra_au__20261010/equipment_ora5_blind_spot_detection",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/464/gwm_ora5_suv_ultra_au__20261010/equipment_ora5_rear_cross_traffic_alert_and_braking",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/465/gwm_ora5_suv_ultra_au__20261010/equipment_ora5_front_cross_traffic_alert_and_braking",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/466/gwm_ora5_suv_ultra_au__20261010/equipment_ora5_7_srs_airbags",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/467/gwm_ora5_suv_ultra_au__20261010/equipment_ora5_2_isofix_points",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/468/gwm_ora5_suv_ultra_au__20261010/equipment_ora5_three_regenerative_braking_levels",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/469/gwm_ora5_suv_ultra_au__20261010/equipment_ora5_roof_rails",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/470/gwm_ora5_suv_ultra_au__20261010/equipment_ora5_spare_wheel",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/471/gwm_ora5_suv_ultra_au__20261010/equipment_ora5_wheel_diameter",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/472/gwm_ora5_suv_ultra_au__20261010/equipment_ora5_wheel_type",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/473/gwm_ora5_suv_ultra_au__20261010/equipment_ora5_tyres",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/474/gwm_ora5_suv_ultra_au__20261010/equipment_ora5_seat_trim",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/475/gwm_ora5_suv_ultra_au__20261010/equipment_ora5_driver_seat",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/476/gwm_ora5_suv_ultra_au__20261010/equipment_ora5_passenger_seat",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/477/gwm_ora5_suv_ultra_au__20261010/equipment_ora5_audio_speakers",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/478/gwm_ora5_suv_ultra_au__20261010/equipment_ora5_tailgate",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/479/gwm_ora5_suv_ultra_au__20261010/equipment_ora5_panoramic_roof",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/480/gwm_ora5_suv_ultra_au__20261010/equipment_ora5_heated_steering_wheel",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/481/gwm_ora5_suv_ultra_au__20261010/equipment_ora5_wireless_phone_charger_50w",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/482/gwm_ora5_suv_ultra_au__20261010/equipment_ora5_driver_memory",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/483/gwm_ora5_suv_ultra_au__20261010/equipment_ora5_front_seat_heat_ventilation",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/484/gwm_ora5_suv_ultra_au__20261010/equipment_ora5_ambient_lighting",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/485/gwm_ora5_suv_lux_au__20261010/model_year",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/486/gwm_ora5_suv_lux_au__20261010/price_aud",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/487/gwm_ora5_suv_lux_au__20261010/battery_kwh",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/488/gwm_ora5_suv_lux_au__20261010/battery_gross_kwh",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/489/gwm_ora5_suv_lux_au__20261010/battery_usable_kwh",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/490/gwm_ora5_suv_lux_au__20261010/range_wltp_km",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/491/gwm_ora5_suv_lux_au__20261010/ac_kw",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/492/gwm_ora5_suv_lux_au__20261010/ac_peak_kw",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/493/gwm_ora5_suv_lux_au__20261010/dc_peak_kw",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/494/gwm_ora5_suv_lux_au__20261010/boot_l",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/495/gwm_ora5_suv_lux_au__20261010/max_total_cargo_l",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/496/gwm_ora5_suv_lux_au__20261010/frunk_l",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/497/gwm_ora5_suv_lux_au__20261010/towing_braked_kg",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/498/gwm_ora5_suv_lux_au__20261010/towing_unbraked_kg",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/499/gwm_ora5_suv_lux_au__20261010/payload_kg",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/500/gwm_ora5_suv_lux_au__20261010/gcm_kg",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/501/gwm_ora5_suv_lux_au__20261010/sos_active",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/502/gwm_ora5_suv_lux_au__20261010/warranty",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/503/gwm_ora5_suv_lux_au__20261010/battery_warranty",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/504/gwm_ora5_suv_lux_au__20261010/battery_warranty_retention_percent",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/505/gwm_ora5_suv_lux_au__20261010/factory_build_code",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/506/gwm_ora5_suv_lux_au__20261010/vin",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/507/gwm_ora5_suv_lux_au__20261010/factory_orderability",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/508/gwm_ora5_suv_lux_au__20261010/physical_new_stock_quantity",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/509/gwm_ora5_suv_lux_au__20261010/individual_delivery_date",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/510/gwm_ora5_suv_lux_au__20261010/motor_continuous_power_kw",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/511/gwm_ora5_suv_lux_au__20261010/motor_peak_duration_seconds",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/512/gwm_ora5_suv_lux_au__20261010/v2l_adaptor_included",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/513/gwm_ora5_suv_lux_au__20261010/charging_cable_included",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/514/gwm_ora5_suv_lux_au__20261010/ac_phases",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/515/gwm_ora5_suv_ultra_au__20261010/model_year",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/516/gwm_ora5_suv_ultra_au__20261010/price_aud",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/517/gwm_ora5_suv_ultra_au__20261010/battery_kwh",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/518/gwm_ora5_suv_ultra_au__20261010/battery_gross_kwh",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/519/gwm_ora5_suv_ultra_au__20261010/battery_usable_kwh",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/520/gwm_ora5_suv_ultra_au__20261010/range_wltp_km",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/521/gwm_ora5_suv_ultra_au__20261010/ac_kw",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/522/gwm_ora5_suv_ultra_au__20261010/ac_peak_kw",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/523/gwm_ora5_suv_ultra_au__20261010/dc_peak_kw",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/524/gwm_ora5_suv_ultra_au__20261010/boot_l",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/525/gwm_ora5_suv_ultra_au__20261010/max_total_cargo_l",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/526/gwm_ora5_suv_ultra_au__20261010/frunk_l",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/527/gwm_ora5_suv_ultra_au__20261010/towing_braked_kg",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/528/gwm_ora5_suv_ultra_au__20261010/towing_unbraked_kg",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/529/gwm_ora5_suv_ultra_au__20261010/payload_kg",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/530/gwm_ora5_suv_ultra_au__20261010/gcm_kg",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/531/gwm_ora5_suv_ultra_au__20261010/sos_active",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/532/gwm_ora5_suv_ultra_au__20261010/warranty",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/533/gwm_ora5_suv_ultra_au__20261010/battery_warranty",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/534/gwm_ora5_suv_ultra_au__20261010/battery_warranty_retention_percent",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/535/gwm_ora5_suv_ultra_au__20261010/factory_build_code",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/536/gwm_ora5_suv_ultra_au__20261010/vin",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/537/gwm_ora5_suv_ultra_au__20261010/factory_orderability",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/538/gwm_ora5_suv_ultra_au__20261010/physical_new_stock_quantity",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/539/gwm_ora5_suv_ultra_au__20261010/individual_delivery_date",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/540/gwm_ora5_suv_ultra_au__20261010/motor_continuous_power_kw",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/541/gwm_ora5_suv_ultra_au__20261010/motor_peak_duration_seconds",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/542/gwm_ora5_suv_ultra_au__20261010/v2l_adaptor_included",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/543/gwm_ora5_suv_ultra_au__20261010/charging_cable_included",
+      "passed": true
+    },
+    {
+      "name": "catalogue/new_fact/544/gwm_ora5_suv_ultra_au__20261010/ac_phases",
+      "passed": true
+    },
+    {
+      "name": "catalogue/variant/jeep_avenger_my24_longitude_au__20261010/conservative",
+      "passed": true
+    },
+    {
+      "name": "catalogue/variant/gwm_ora5_suv_lux_au__20261010/conservative",
+      "passed": true
+    },
+    {
+      "name": "catalogue/variant/gwm_ora5_suv_ultra_au__20261010/conservative",
+      "passed": true
+    },
+    {
+      "name": "market/exact_old_established_prefix",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/arcc-longreach-electric",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/bci-citirider-14-5-e",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/bci-citirider-d-e",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/bci-citirider-ev",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/bci-classmaster-ev",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/bci-mini-bus-ev",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/bci-proma-low-floor-ev",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/byd-b70",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/byd-bc12b1",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/challenger-electric-low-floor",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/custom-denning-element",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/foton-bj6189-evca",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/foton-bj6123evca",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/king-long-evolution-high-floor",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/king-long-evolution-low-floor",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/king-long-evolution-midi",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/nexport-ze-b",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/nexport-ze-b-75",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/nexport-ze-c",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/scania-k-high-floor-bev",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/scania-k-low-entry-bev",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/volvo-bzl-electric",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/volvo-bzr-low-entry-electric",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/yutong-c12e",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/yutong-d7e",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/yutong-e12",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/yutong-e7s",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/alfa-romeo-junior",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/audi-e-tron-gt",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/audi-q4-e-tron",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/audi-q4-sportback-e-tron",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/audi-q6-e-tron",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/audi-q6-sportback-e-tron",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/bmw-i3",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/bmw-i4",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/bmw-i5",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/bmw-ix",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/bmw-ix1",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/bmw-ix2",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/bmw-ix3",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/bmw-ix4",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/byd-atto-1",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/byd-dolphin",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/byd-seal",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/cadillac-lyriq",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/cadillac-optiq",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/cadillac-vistiq",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/chery-e5",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/cupra-tavascan",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/deepal-e07",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/deepal-s07",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/denza-d9",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/ford-mustang-mach-e",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/gac-aion-ut",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/gac-aion-v",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/geely-ex2",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/genesis-electrified-g80",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/genesis-electrified-gv70",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/genesis-gv60",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/genesis-gv60-magma",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/gmc-hummer-ev-suv",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/hyundai-elexio",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/hyundai-inster",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/hyundai-ioniq-5",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/hyundai-ioniq-5-n",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/hyundai-ioniq-6-n",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/hyundai-ioniq-9",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/hyundai-kona-electric",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/im-im5",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/im-im6",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/kgm-torres-evx",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/kia-ev4",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/kia-ev6",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/kia-ev9",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/ldv-mifa-9",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/leapmotor-b05",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/leapmotor-b10-bev",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/leapmotor-c10-bev",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/lexus-rz",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/mercedes-benz-cla-electric",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/mercedes-benz-eqa",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/mercedes-benz-eqs",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/mercedes-benz-eqv",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/mercedes-benz-evito-tourer",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/mercedes-benz-g-class-electric",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/mercedes-benz-glb-electric",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/mg-cyberster",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/mg-mg4-ev",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/mg-mg4-ev-urban",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/mg-mgs5-ev",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/mg-mgs6-ev",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/mini-aceman",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/mini-cooper",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/mini-countryman",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/nissan-ariya",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/polestar-2",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/polestar-3",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/polestar-4-coup",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/polestar-4-suv",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/polestar-5",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/porsche-cayenne-coup-electric",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/porsche-cayenne-electric",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/porsche-macan-electric",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/porsche-taycan",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/porsche-taycan-cross-turismo",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/renault-megane-e-tech",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/renault-scenic-e-tech",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/skoda-elroq",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/skoda-enyaq-coupe",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/skoda-enyaq-suv",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/smart-1",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/smart-3",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/smart-5",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/subaru-trailseeker",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/subaru-uncharted",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/suzuki-e-vitara",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/volkswagen-id-buzz",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/volkswagen-id-4",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/volkswagen-id-5",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/volvo-es90",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/volvo-ex30",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/volvo-ex40",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/volvo-ex60",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/xpeng-x9",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/zeekr-009",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/zeekr-x",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/farizon-f3e",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/farizon-h9e",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/foton-eauman-c",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/foton-eauman-d",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/foton-eaumark-s",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/foton-t5",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/fuso-ecanter",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/hyundai-mighty-electric",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/jac-n55-ev",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/jac-n75-ev",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/jac-n90-ev",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/mercedes-benz-eactros-300",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/mercedes-benz-eeconic",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/sany-6x4-prime-mover",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/sany-8x4-cab-chassis",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/sany-light-truck",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/scania-battery-electric-truck",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/sitrak-c9h-ev",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/sitrak-tx-6x4",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/sitrak-tx-8x4",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/volvo-fe-electric",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/volvo-fh-aero-electric",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/volvo-fh-electric",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/volvo-fl-electric",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/volvo-fm-electric",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/volvo-fmx-electric",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/windrose-e700",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/ace-ev-yewt",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/chevrolet-silverado-ev",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/ford-f-150-lightning",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/gmc-hummer-ev-pickup",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/gmc-sierra-ev",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/jac-t9-ev",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/kgm-musso-ev",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/ldv-et60",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/ldv-eterron-9",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/mg-mgu9-ev",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/roev-hilux-electric-conversion",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/tembo-tusker",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/toyota-hilux-bev",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/farizon-sv",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/farizon-v7e",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/ford-e-transit",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/ford-e-transit-custom",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/ford-transit-city",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/hyundai-staria-load-electric",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/kia-pv5-cargo",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/ldv-edeliver-5",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/ldv-edeliver-7",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/ldv-edeliver-9",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/mercedes-benz-esprinter-panel-van",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/mercedes-benz-evito-panel-van",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/peugeot-e-expert",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/peugeot-e-partner",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/renault-kangoo-e-tech",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/renault-master-van-e-tech",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/skywell-ec11-e-cargo",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/volkswagen-e-transporter",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/volkswagen-id-buzz-cargo",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/benzina-zero-city",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/benzina-zero-duo",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/benzina-zero-duo-plus",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/benzina-zero-sport",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/benzina-zero-vasto",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/bmw-ce04-au-listed",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/canam-origin-au-announced",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/canam-pulse-au-announced",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/energica-eva-ribelle-au-listed",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/energica-experia-au-listed",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/fonz-arthur-7",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/fonz-nkd",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/fonz-z-series",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/ftn-motion-streetdog-50",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/ftn-motion-streetdog-xr",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/honda-wn7-au-subscription-eoi",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/kawasaki-ninja-e1-au-my26",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/kawasaki-z-e1-au-my26",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/ktm-freeride-e",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/leki-e1-bolt",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/leki-e1-surge",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/savic-c-series",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/segway-e125s-au",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/segway-e300se-au",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/stark-varg-ex",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/stark-varg-sm",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/surron-ultra-bee-hp",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/talaria-komodo-l3e",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/talaria-sting-pro-l1e",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/ubco-2x2-road",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/ubco-duty",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/zeeho-ae4-au",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/zeeho-ae6-plus-au",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/zeeho-ae8-plus-au",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/zero-ds-au-listed",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/zero-dsrx-au-listed",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/zero-ls1-au-my26",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/zero-s-au-listed",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/zero-srf-au-listed",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/subaru-solterra",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/toyota-bz4x",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/toyota-bz4x-touring",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/volvo-ex90",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/lexus-es-bev",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/xpeng-g6",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/leapmotor-b03x",
+      "passed": true
+    },
+    {
+      "name": "market/prior_row/mazda-6e",
+      "passed": true
+    },
+    {
+      "name": "market/exact_two_additions",
+      "passed": true
+    },
+    {
+      "name": "market/jeep_lead_original_matches",
+      "passed": true
+    },
+    {
+      "name": "market/ora_lead_original_matches",
+      "passed": true
+    },
+    {
+      "name": "market/ora_expected_lead_hash",
+      "passed": true
+    },
+    {
+      "name": "market/unverified_exact",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/bci-fleetmaster-ev",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/blk-city-star",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/blk-city-star-midi",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/blk-president-2",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/blk-president-3",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/byd-b10a01",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/byd-b15",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/byd-bc12a02dd",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/byd-bc12b2",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/byd-bc18b2",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/byd-d8ur",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/byd-d9rc",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/bustech-zdi-450",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/challenger-callibar-electric",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/challenger-v12-electric",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/ebusco-2-2",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/ebusco-3-0",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/hino-poncho-z-ev",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/nexport-ze-b-106",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/nexport-ze-b-125",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/nexport-ze-b-86",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/volvo-buses-bzl-electric-articulated",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/zemtec-zero-ebus-e-city-volt-gt-e-series",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/ace-ev-cargo-yewt-v1-transformer",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/iveco-edaily",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/rivian-r1t-r1s",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/abarth-500e",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/audi-a6-s6-e-tron",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/audi-my27-q6-sq6-suv-and-sportback",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/audi-q8-e-tron",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/bmw-additional-performance-and-body-variants",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/bmw-i7",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/cupra-born",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/deepal-s05",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/denza-z9gt",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/fiat-500e",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/honda-super-one",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/hyundai-ioniq-6-non-n",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/jaguar-i-pace",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/leapmotor-b03x",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/lexus-rz-600e-f-sport-performance",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/lotus-eletre-emeya",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/maserati-grecale-folgore-granturismo-folgore-grancabrio-folgore",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/mazda-cx-6e",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/mercedes-benz-c-class-electric-gla-electric-amg-gt-4-door-electric-vle",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/mercedes-benz-glc-electric",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/volvo-ec40-c40",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/xpeng-new-g6",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/zeekr-7gt",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/daf-xb-electric",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/daf-xd-electric",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/daf-xf-electric",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/dfac-captain-45e",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/dfac-captain-85e",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/hino-dutro-z-ev-300-series-z-ev",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/isuzu-n-series-ev",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/man-etgs",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/man-etgx",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/mercedes-benz-eactros-400",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/mercedes-benz-eactros-600",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/sea-electric-sea-300-45",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/sea-electric-sea-300-85",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/sea-electric-sea-500-140",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/sea-electric-sea-500-225",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/scania-25p",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/scania-bev-crewcab-cp31",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/victory-automotive-ec1-light-truck",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/windrose-mega-960",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/xcmg-e700",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/geely-riddara-rd6-bev",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/isuzu-d-max-ev",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/ldv-et60-purported-22-km-wa-new-stock",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/tembo-euv-toyota-hilux-landcruiser-conversions",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/tesla-cybertruck",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/voltra-ecruiser",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/zero-automotive-zed70-ti-v2",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/byd-t3",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/fiat-professional-e-ducato",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/foton-eview",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/pioneer-ev-dfsk-ec35",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/victory-automotive-ec1-van",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-major-01",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-major-02",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-major-03",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-major-04",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-major-06",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-major-07",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-major-08",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-major-09",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-major-10",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-major-11",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-major-12",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-major-13",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-scooter-01",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-scooter-02",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-scooter-03",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-scooter-04",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-scooter-05",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-scooter-06",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-scooter-07",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-scooter-08",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-scooter-09",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-scooter-10",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-scooter-11",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-scooter-12",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-scooter-13",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-scooter-14",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-scooter-15",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-scooter-16",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-scooter-17",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-scooter-18",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-scooter-19",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-scooter-20",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-local-01",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-local-02",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-local-03",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-local-04",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-local-05",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-local-06",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-local-07",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-local-08",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-local-09",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-local-10",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-local-11",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-local-12",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-local-13",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-local-14",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-local-15",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-local-16",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-local-17",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-local-18",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-local-19",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-local-20",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-local-21",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-local-22",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-local-23",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-local-24",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-enduro-01",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-enduro-02",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-enduro-03",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-enduro-04",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-enduro-05",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-enduro-06",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/moto-lead-enduro-07",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/mercedes-benz-eqb",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/mercedes-benz-eqe-sedan",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/mercedes-benz-eqe-suv",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/mercedes-benz-eqs-suv",
+      "passed": true
+    },
+    {
+      "name": "market/prior_unresolved/mercedes-benz-maybach-eqs",
+      "passed": true
+    },
+    {
+      "name": "market/prior_reconciliations_exact",
+      "passed": true
+    },
+    {
+      "name": "market/one_jeep_archive",
+      "passed": true
+    },
+    {
+      "name": "market/archive_frozen_content_exact",
+      "passed": true
+    },
+    {
+      "name": "market/archive_only_safe_additional_markers",
+      "passed": true
+    },
+    {
+      "name": "market/archive_original_exact",
+      "passed": true
+    },
+    {
+      "name": "market/no_new_active_identity_overlap",
+      "passed": true
+    },
+    {
+      "name": "market/records/unique_ids",
+      "passed": true
+    },
+    {
+      "name": "market/unverifiedLeads/unique_ids",
+      "passed": true
+    },
+    {
+      "name": "market/reconciledLeads/unique_ids",
+      "passed": true
+    },
+    {
+      "name": "market/title/unchanged",
+      "passed": true
+    },
+    {
+      "name": "market/checkedAt/unchanged",
+      "passed": true
+    },
+    {
+      "name": "market/complete/unchanged",
+      "passed": true
+    },
+    {
+      "name": "market/coverageStatus/unchanged",
+      "passed": true
+    },
+    {
+      "name": "market/scope/unchanged",
+      "passed": true
+    },
+    {
+      "name": "market/notes/unchanged",
+      "passed": true
+    },
+    {
+      "name": "market/reportPath/unchanged",
+      "passed": true
+    },
+    {
+      "name": "market/existingFamiliesExcluded/unchanged",
+      "passed": true
+    },
+    {
+      "name": "market/statusDefinitions/unchanged",
+      "passed": true
+    },
+    {
+      "name": "market/unresolvedMarketUniverse/unchanged",
+      "passed": true
+    },
+    {
+      "name": "market/benchmark/unchanged",
+      "passed": true
+    },
+    {
+      "name": "market/validation/unchanged",
+      "passed": true
+    },
+    {
+      "name": "market/scopeClarification/unchanged",
+      "passed": true
+    },
+    {
+      "name": "market/schemaVersion/unchanged",
+      "passed": true
+    },
+    {
+      "name": "market/peripheralRecords/unchanged",
+      "passed": true
+    },
+    {
+      "name": "market/deduplicationLog/unchanged",
+      "passed": true
+    },
+    {
+      "name": "market/sourceArtifacts/unchanged",
+      "passed": true
+    },
+    {
+      "name": "market/countQualifications/unchanged",
+      "passed": true
+    },
+    {
+      "name": "market/comparisonRules/unchanged",
+      "passed": true
+    },
+    {
+      "name": "market/coverageGaps/unchanged",
+      "passed": true
+    },
+    {
+      "name": "market/motorcycleExclusions/unchanged",
+      "passed": true
+    },
+    {
+      "name": "market/historicalAmendedNarratives/unchanged",
+      "passed": true
+    },
+    {
+      "name": "market/historicalScopeClarification/unchanged",
+      "passed": true
+    },
+    {
+      "name": "market/historicalCoverageGaps/unchanged",
+      "passed": true
+    },
+    {
+      "name": "market/no_extra_top_keys",
+      "passed": true
+    },
+    {
+      "name": "market/context_only_intended_delta",
+      "passed": true
+    },
+    {
+      "name": "market/unclosed_audit",
+      "passed": true
+    },
+    {
+      "name": "market/all_counts_recalculated",
+      "passed": true
+    },
+    {
+      "name": "market/required_count_tuple",
+      "passed": true
+    },
+    {
+      "name": "market/stock_order_counts_not_promoted",
+      "passed": true
+    },
+    {
+      "name": "market/jeep-avenger/availability_full",
+      "passed": true
+    },
+    {
+      "name": "market/jeep-avenger/no_eligibility_promotion",
+      "passed": true
+    },
+    {
+      "name": "market/jeep-avenger/variant_references",
+      "passed": true
+    },
+    {
+      "name": "market/gwm-ora5-suv/availability_full",
+      "passed": true
+    },
+    {
+      "name": "market/gwm-ora5-suv/no_eligibility_promotion",
+      "passed": true
+    },
+    {
+      "name": "market/gwm-ora5-suv/variant_references",
+      "passed": true
+    },
+    {
+      "name": "market/jeep_residual_only",
+      "passed": true
+    },
+    {
+      "name": "market/limited_summit_held",
+      "passed": true
+    },
+    {
+      "name": "market/ora_suv_two_grades",
+      "passed": true
+    },
+    {
+      "name": "market/hatch_active_narrowed",
+      "passed": true
+    },
+    {
+      "name": "market/ora_original_history_retained",
+      "passed": true
+    },
+    {
+      "name": "market/no_hatch_reconciled_archive",
+      "passed": true
+    },
+    {
+      "name": "market/brochure_hatch_no_grade_creation",
+      "passed": true
+    },
+    {
+      "name": "consumer/market_counts_records_only",
+      "passed": true
+    },
+    {
+      "name": "consumer/no_reconciliation_marker_runtime_reads",
+      "passed": true
+    },
+    {
+      "name": "unchanged/roadmark-research/audits/jeep-ora-runtime-adapters/baseline-v57/market-inventory-2026-10-10.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged/roadmark-research/audits/jeep-ora-runtime-adapters/baseline-v57/catalogue-additions-2026-10-10.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged/roadmark-research/jeep-ora-merge-candidate/candidate-market-inventory.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged/roadmark-research/jeep-ora-merge-candidate/candidate-catalogue-additions.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged/roadmark-research/jeep-ora-merge-candidate/pre-application-lock.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged/roadmark-research/jeep-ora-merge-candidate/market-amendment.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged/roadmark-research/jeep-longitude-runtime-candidate/adapter-candidate.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged/roadmark-research/ora5-suv-runtime-candidate/adapter-candidate.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged/roadmark-research/jeep-longitude-integration-readiness/market-reconciliation-plan.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged/roadmark-research/ora5-suv-integration-readiness/market-reconciliation-plan.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged/roadmark-recovery/checkpoint-v57-local.zip",
+      "passed": true
+    },
+    {
+      "name": "unchanged/roadmark-research/audits/jeep-ora-runtime-adapters/baseline-v57/buyer-identity-snapshots-2026-10-10.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged/roadmark-research/audits/jeep-ora-runtime-adapters/baseline-v57/buyer-selling-points-2026-10-10.json",
+      "passed": true
+    },
+    {
+      "name": "unchanged/roadmark-work/roadmark/src/components/market-audit.tsx",
+      "passed": true
+    },
+    {
+      "name": "unchanged/roadmark-research/prepare_jeep_ora_market_candidate.py",
+      "passed": true
+    }
+  ]
+}

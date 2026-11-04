@@ -1,0 +1,242 @@
+{
+  "proposalOnly": true,
+  "appEdited": false,
+  "targetFile": "data/market-inventory-2026-10-10.json",
+  "baseFileSHA256": "96d518229b971bb0539ced668e6dd286be16f81fc25cf4b041d5b6dd0dbb6e39",
+  "selection": "mazda-cx-6e only",
+  "originalLead": {
+    "brand": "Mazda",
+    "model": "CX-6e",
+    "sourceUrls": [
+      "https://www.mazda.com.au/cars/cx-6e/"
+    ],
+    "checkedAt": "2026-10-10",
+    "orderStatus": "preorder",
+    "stockStatus": "unverified",
+    "evidenceNote": "GT/Azami are explicitly preorder on current AU product page. Earlier forecast delivery date is not actual delivery proof.",
+    "limitations": [
+      "Incomplete exact-trim or current-availability audit."
+    ],
+    "id": "mazda-cx-6e",
+    "vehicleClass": "passenger",
+    "trims": [],
+    "modelAliases": [],
+    "rankingEligible": false,
+    "sourceArtifacts": [
+      "market-inventory.json"
+    ],
+    "relatedRecordIds": [],
+    "resolutionStatus": "unresolved"
+  },
+  "originalLeadSHA256": "c04445cb1695a970f853920f45fd1f2ec251c173c917884eb118af7f53ebd8bc",
+  "recommendedAction": "Proposal only. After root approval, remove exactly lead mazda-cx-6e at its verified position; append this one audited family record, one historical reconciled entry and this reviewed evidence artifact; recalculate only the specified dependent counts. Preserve every unrelated row, order, source artifact and metadata value. Do not import the technical candidate.",
+  "appendRecord": {
+    "id": "mazda-cx-6e",
+    "brand": "Mazda",
+    "model": "CX-6e",
+    "vehicleClass": "passenger",
+    "bodyStyle": "SUV",
+    "propulsion": "BEV",
+    "trims": [
+      "GT",
+      "Azami"
+    ],
+    "trimCoverage": "verified_named_configurations",
+    "sourceUrls": [
+      "https://www.mazda.com.au/cars/cx-6e/",
+      "https://www.mazda.com.au/build/cx-6e/pre-order/?model=mazda-cx-6e",
+      "https://www.mazda.com.au/offers/driveaway/electric/",
+      "https://www.melvillemazda.com.au/cars/new-aero-grey-2026-mazda-cx-6e-11397703"
+    ],
+    "checkedAt": "2026-10-12",
+    "orderStatus": "preorder",
+    "stockStatus": "new_stock_listed",
+    "evidenceNote": "Current Mazda Australia HTML names GT and Azami. The manufacturer retains preorder/almost-here advertising and links to dealer enquiry. Its current driveaway offer separately identifies E35 GT. Melville Mazda advertises one New E35 Azami GR, stock 11397703/VIN LVRHDCEK6TN551337, with public in_stock/reserved=false/preorder=false metadata last updated 6 October 2026. These seller fields do not establish present unsold physical availability. No detailed specification or brochure-to-VIN applicability is admitted.",
+    "limitations": [
+      "GT and Azami are manufacturer HTML grade names observed on 12 October 2026. This is not a complete closed build/configuration universe. E35 GT occurs in manufacturer offer HTML; E35 Azami GR is the exact seller label, not independent manufacturer-to-VIN specification verification.",
+      "Manufacturer preorder advertising links to dealer enquiry. Accepted orders, production, allocation and completed deliveries remain unverified; the earlier September delivery forecast is not proof of fulfilment.",
+      "Seller New/in_stock, reserved=false, preorder=false and sold_date=null are published claims for one advertisement. The record was last updated on 6 October; retrieval on 12 October does not guarantee same-day inventory freshness, unsold physical stock or any GT stock.",
+      "Formal manufacturer model year and exact build applicability remain unverified. Seller year/model_year 2026 and build/compliance dates are not promoted into manufacturer model year.",
+      "PDF table visual verification remains blocked. The August 2026 publication/code and detailed technical candidate are extraction-only research; no technical epoch or specification is admitted by this market record.",
+      "Cargo remains an unresolved attributed conflict: PDF extraction says 363 L VDA seats-up to tray/seatback including underfloor; model HTML advertises 468 L without a measurement protocol. Preserve both; no normalized seats-up value or ranking.",
+      "GT advertised driveaway-from pricing, historical April manufacturer-list pricing and the seller enquiry-only price have distinct bases. No final customer price or free vehicle is established.",
+      "Ranking and complete-current-vehicle eligibility remain false. This changes one existing lead disposition; it does not close the wider market audit or add a detailed catalogue variant."
+    ],
+    "rankingEligible": false,
+    "completeVehicleCountEligible": false,
+    "availabilityCategory": "current_listing_order_stock_unconfirmed",
+    "modelYear": null,
+    "modelAliases": [],
+    "sourceRecordIds": [
+      "mazda-cx-6e"
+    ],
+    "sourceArtifacts": [
+      "market-inventory.json",
+      "market-mazda-cx6e-lead-evidence-2026-10-12.json"
+    ],
+    "catalogueCoverage": "audit_only_html_grade_identity_technical_candidate_not_integrated",
+    "recordScope": "model_or_named_configuration_family",
+    "factoryOrderAcceptanceVerified": false,
+    "physicalStockVerified": false,
+    "sourceTechnicalEpoch": null,
+    "resolutionStatus": "source_bound_grades_and_new_advertisement_accepted_orders_unverified",
+    "evidenceHistory": [
+      {
+        "sourceArtifact": "market-inventory.json",
+        "checkedAt": "2026-10-10",
+        "note": "GT/Azami are explicitly preorder on current AU product page. Earlier forecast delivery date is not actual delivery proof."
+      },
+      {
+        "sourceArtifact": "market-mazda-cx6e-lead-evidence-2026-10-12.json",
+        "checkedAt": "2026-10-12",
+        "note": "One existing lead proposed for promotion as one non-ranking, HTML-supported GT/Azami family audit. Technical brochure claims and detailed catalogue integration remain held."
+      }
+    ]
+  },
+  "appendReconciledLead": {
+    "id": "mazda-cx-6e",
+    "brand": "Mazda",
+    "model": "CX-6e",
+    "vehicleClass": "passenger",
+    "resolutionStatus": "represented_in_consolidated_record",
+    "resolvedAt": "2026-10-12",
+    "relatedRecordIds": [
+      "mazda-cx-6e"
+    ],
+    "originalRecord": {
+      "brand": "Mazda",
+      "model": "CX-6e",
+      "sourceUrls": [
+        "https://www.mazda.com.au/cars/cx-6e/"
+      ],
+      "checkedAt": "2026-10-10",
+      "orderStatus": "preorder",
+      "stockStatus": "unverified",
+      "evidenceNote": "GT/Azami are explicitly preorder on current AU product page. Earlier forecast delivery date is not actual delivery proof.",
+      "limitations": [
+        "Incomplete exact-trim or current-availability audit."
+      ],
+      "id": "mazda-cx-6e",
+      "vehicleClass": "passenger",
+      "trims": [],
+      "modelAliases": [],
+      "rankingEligible": false,
+      "sourceArtifacts": [
+        "market-inventory.json"
+      ],
+      "relatedRecordIds": [],
+      "resolutionStatus": "unresolved"
+    },
+    "originalRecordSHA256": "c04445cb1695a970f853920f45fd1f2ec251c173c917884eb118af7f53ebd8bc",
+    "originalRecordHashMethod": "SHA256 of UTF-8 JSON with sorted keys, compact separators and ensure_ascii=False",
+    "catalogueVariantIds": [],
+    "resolutionNote": "Lead disposition is reconciled into one audited family record using current manufacturer HTML grade names and one exact seller New advertisement. Accepted orders, physical stock, delivered build applicability and detailed catalogue integration remain unresolved.",
+    "rankingEligible": false,
+    "completeVehicleCountEligible": false,
+    "countsAsAdditionalFamily": false,
+    "countsAsNamedConfiguration": false,
+    "previousCollection": "unverifiedLeads",
+    "historicalOnly": true,
+    "sourceArtifacts": [
+      "market-mazda-cx6e-lead-evidence-2026-10-12.json"
+    ]
+  },
+  "countsBefore": {
+    "records": 241,
+    "unverifiedLeads": 144,
+    "reconciledLeads": 20,
+    "peripheralRecords": 5
+  },
+  "countsAfter": {
+    "records": 242,
+    "unverifiedLeads": 143,
+    "reconciledLeads": 21,
+    "peripheralRecords": 5
+  },
+  "countMeaning": "Collection records only, not current buyable vehicles or canonical market totals. All untouched eligibility/rank states unchanged.",
+  "detailedCatalogueVariantDelta": 0,
+  "heroVariantDelta": 0,
+  "fullMarketAuditComplete": false,
+  "reviewDisposition": "approved_narrowed_html_grade_identity_only_pending_root_integration_review",
+  "reviewedAt": "2026-10-12",
+  "sourceProposalSHA256": "eb492f58e9cd78e3ce0d8952c93d5d8defeee7304110c3f03c06f6f4ad10592f",
+  "baseCanonicalSHA256": "1f1c0cd52a18794ea249f4295b94b2d0b1981c42d570cd68070f0cb4cb243be2",
+  "appendSourceArtifact": {
+    "path": "market-mazda-cx6e-lead-evidence-2026-10-12.json",
+    "sha256": "747bcfd6c8914780157c4eaf47eb0952abbbde55505121a28216eb2ead9153a8",
+    "checkedAt": "2026-10-12",
+    "scope": "One existing Mazda CX-6e passenger lead promoted to an HTML-supported GT/Azami audited family with one exact seller New advertisement. Accepted orders, physical stock, brochure-to-VIN applicability and technical/ranking admission remain held."
+  },
+  "countsObjectBefore": {
+    "consolidatedModelAuditRecords": 241,
+    "byVehicleClass": {
+      "bus": 28,
+      "passenger": 113,
+      "truck": 28,
+      "ute": 13,
+      "van": 19,
+      "motorcycle": 40
+    },
+    "byOrderStatus": {
+      "listed_unconfirmed": 193,
+      "accepting_orders": 36,
+      "accepting_order_requests_advertised": 7,
+      "not_current": 4,
+      "preorder": 1
+    },
+    "namedTrimConfigurationEntries": 393,
+    "exactTrimSetMissingRecords": 54,
+    "newStockListedModelRecords": 68,
+    "unresolvedLeadGroups": 144,
+    "reconciledLeadGroups": 20,
+    "peripheralRecords": 5,
+    "duplicateModelMerges": 6
+  },
+  "countsObjectAfter": {
+    "consolidatedModelAuditRecords": 242,
+    "byVehicleClass": {
+      "bus": 28,
+      "passenger": 114,
+      "truck": 28,
+      "ute": 13,
+      "van": 19,
+      "motorcycle": 40
+    },
+    "byOrderStatus": {
+      "listed_unconfirmed": 193,
+      "accepting_orders": 36,
+      "accepting_order_requests_advertised": 7,
+      "not_current": 4,
+      "preorder": 2
+    },
+    "namedTrimConfigurationEntries": 395,
+    "exactTrimSetMissingRecords": 54,
+    "newStockListedModelRecords": 69,
+    "unresolvedLeadGroups": 143,
+    "reconciledLeadGroups": 21,
+    "peripheralRecords": 5,
+    "duplicateModelMerges": 6
+  },
+  "sourceArtifactCounts": {
+    "before": 18,
+    "after": 19
+  },
+  "allowedChangedTopLevelFields": [
+    "counts",
+    "records",
+    "reconciledLeads",
+    "sourceArtifacts",
+    "unverifiedLeads"
+  ],
+  "applicationConstraints": {
+    "globalCheckedAtUnchanged": "2026-10-10",
+    "completeUnchanged": false,
+    "detailedVariantCountUnchanged": 343,
+    "detailedFamilyCountUnchanged": 149,
+    "catalogueSourceCountUnchanged": 2196,
+    "heroVariantCountUnchanged": 9,
+    "technicalCandidateImported": false,
+    "priorCheckpointPinsMustRemainUnchanged": true
+  },
+  "expectedProposedCanonicalSHA256": "c8c0f448262984b39df49b777c6c2b3220dca550667eec3c0ec67444416a3641"
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": "roadmark98.independent-static-save-tooling-review.v1",
+  "decision": "accept_for_root_owned_verification_and_execution_after_actual_evidence_gates",
+  "blockingFindings": [],
+  "packetManifest": {
+    "path": "roadmark-research/checkpoint98-save-candidate/MANIFEST.json",
+    "sha256": "87dc2c0c2aefb194befeefd4ba7c05003492a768f6de59bae40c46de5646b293"
+  },
+  "approvedScripts": {
+    "package_checkpoint98.py": {
+      "sha256": "494b922b6b170a10f39701b0024e9a9a41f428b74acb554b8b0a5023ff5977d1",
+      "bytes": 39674
+    },
+    "join_recovered98_source.py": {
+      "sha256": "727a50096f7befc724b0a1917aa1fd8f8092c44736abf80e73ba9d6d17881c1f",
+      "bytes": 4232
+    },
+    "verify_checkpoint98_saves.py": {
+      "sha256": "a3b21249614e82682a4b3197de0a9ebad024edf5e414766c28f462264e6df6ce",
+      "bytes": 10185
+    }
+  },
+  "packetChecksumSHA256": "9afacda564ee779a74fe1d29fd57a1aff5bdd1a8524f951a784d1f193b9a1a1d",
+  "verifiedPacketChecksumEntries": 16,
+  "actualScriptDiffsMatchDerivation": true,
+  "verifiedAnchorCount": 7,
+  "verifiedStarterResearchHashes": 18,
+  "declaredStarterResearchBytes": 124246,
+  "baselineInputCount": 1668,
+  "finalInputCount": 1670,
+  "inputMapDelta": {
+    "modified": ["src/app/globals.css"],
+    "added": ["tests/detail-responsive.test.ts", "tests/e2e/detail-reflow.spec.ts"],
+    "runtimeCSSDeclarationDelta": 3
+  },
+  "protectedPriorLibraryIDCount": 38,
+  "actual333CSSPixelGeometryRequiredBothSurfaces": true,
+  "actualFullTokenReportAndNoClippingVisibleChecksRequiredForRetention": true,
+  "actualExternalQAExitRequired": true,
+  "actualShippedJoinerSelfTestRequired": true,
+  "newCreatesOnly": true,
+  "offlineCorrelationOnly": true,
+  "reviewerCandidateExecutionCount": 0,
+  "reviewerCandidateImportCount": 0,
+  "reviewerCandidateSyntaxCheckCount": 0,
+  "reviewerAppMutationCount": 0,
+  "reviewerTestsRun": 0,
+  "reviewerBrowserChecks": 0,
+  "reviewerUploads": 0,
+  "current98QAResultEstablishedByReview": false,
+  "current98BrowserAcceptanceEstablishedByReview": false,
+  "current98SaveEstablishedByReview": false,
+  "releaseApproved": false,
+  "nonBlockingCaveats": [
+    "Root must establish genuine external runner completion separately from runner pre-exit JSON",
+    "Root completeness and browser observation provenance are reviewed factual assertions, not automatic discovery",
+    "Selected research text still requires content-level secret and relevance review",
+    "DERIVATION.diff is a local review aid and is not allowed in packaged research by suffix",
+    "Actual root execution, archive inspection and shipped-joiner self-test remain pending",
+    "Local helper and xattr correlation does not establish independent server bytes or chat delivery",
+    "No phone, full journey, sustained performance, full visual, automated browser suite, publication or release approval"
+  ],
+  "report": "roadmark-research/review-checkpoint98-save/REVIEW.md"
+}

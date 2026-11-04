@@ -1,0 +1,202 @@
+{
+  "method": "Independent static data/hash/JSON/ZIP review only; no candidate/app execution, import, syntaxcheck or browser",
+  "qaResult": {
+    "path": "roadmark-research/applied100/qa-attempt1/run-result.json",
+    "sha256": "7acd6287167a3e880888d8f37c232f3f7929d3fe1d4e6f5f846ca973d41bb110",
+    "bytes": 11782
+  },
+  "sealedEvidenceEntries": 42,
+  "sealedMembershipHashesSizesMtimesExact": true,
+  "currentInputMapExact": 1678,
+  "currentArtifactCount": 8,
+  "freshBuildID": "lBzNgnFnu62t8Fg0e4IQ5",
+  "stages": [
+    {
+      "stage": "non_http_tests",
+      "exitCode": 0,
+      "startedAtUTC": "2026-10-12T08:09:30.945109+00:00",
+      "finishedAtUTC": "2026-10-12T08:24:16.416100+00:00",
+      "processId": 7,
+      "testCounts": {
+        "tests": 984,
+        "suites": 0,
+        "pass": 984,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0
+      }
+    },
+    {
+      "stage": "local_http_tests",
+      "exitCode": 0,
+      "startedAtUTC": "2026-10-12T08:24:17.233824+00:00",
+      "finishedAtUTC": "2026-10-12T08:24:22.678060+00:00",
+      "processId": 1148,
+      "testCounts": {
+        "tests": 1,
+        "suites": 0,
+        "pass": 1,
+        "fail": 0,
+        "cancelled": 0,
+        "skipped": 0,
+        "todo": 0
+      }
+    },
+    {
+      "stage": "typecheck",
+      "exitCode": 0,
+      "startedAtUTC": "2026-10-12T08:24:23.416186+00:00",
+      "finishedAtUTC": "2026-10-12T08:24:26.408005+00:00",
+      "processId": 1179
+    },
+    {
+      "stage": "lint",
+      "exitCode": 0,
+      "startedAtUTC": "2026-10-12T08:24:27.166403+00:00",
+      "finishedAtUTC": "2026-10-12T08:24:36.748559+00:00",
+      "processId": 1187
+    },
+    {
+      "stage": "validation",
+      "exitCode": 0,
+      "startedAtUTC": "2026-10-12T08:24:37.475301+00:00",
+      "finishedAtUTC": "2026-10-12T08:24:41.909081+00:00",
+      "processId": 1199
+    },
+    {
+      "stage": "production_build",
+      "exitCode": 0,
+      "startedAtUTC": "2026-10-12T08:24:42.716793+00:00",
+      "finishedAtUTC": "2026-10-12T08:32:32.437741+00:00",
+      "processId": 1207
+    },
+    {
+      "stage": "portable_build",
+      "exitCode": 0,
+      "startedAtUTC": "2026-10-12T08:32:33.293815+00:00",
+      "finishedAtUTC": "2026-10-12T08:32:41.109407+00:00",
+      "processId": 1269
+    }
+  ],
+  "actualOuterTerminal": {
+    "path": "roadmark-research/applied100/qa-attempt1-external-terminal.json",
+    "sha256": "370777337d3abad253771161e7d9f5136c646859d1b1973d22591b460093e740",
+    "bytes": 666
+  },
+  "actualOuterExit": 0,
+  "portableProof": {
+    "path": "roadmark-research/applied100/portable-proof-attempt1.stdout.json",
+    "sha256": "db7581e2d43a9051aa6a27750fe9b424dfd295b408f23261bfa5c910a3cbde04",
+    "bytes": 4788
+  },
+  "portableTerminal": {
+    "path": "roadmark-research/applied100/portable-proof-attempt1-terminal.json",
+    "sha256": "d90d42cd62f4c7061770f10186c5a83dc605eb69aef5f09722365985e4070f7e",
+    "bytes": 5199
+  },
+  "independentlyDecodedCurrentPayloadExactOnlyTenAmendments": true,
+  "outsideEvDataBytesExact": true,
+  "browserServedCurrentAndBaselineCopiesExact": true,
+  "browserCases": [
+    {
+      "path": "roadmark-research/applied100/browser-observations/01-production-narrow-market.json",
+      "sha256": "ce25986d63f4590ce3ac163b27e60124b8ba8e5f22f2118905ba8df4e909b815",
+      "bytes": 1444,
+      "case": [
+        "production",
+        "narrow",
+        "market"
+      ],
+      "viewportCSSWidth": 333,
+      "documentScrollWidth": 323
+    },
+    {
+      "path": "roadmark-research/applied100/browser-observations/02-portable-narrow-market.json",
+      "sha256": "dd252aeaae5551579df893ec337107eaab9e0a5bd003d4e0f5f4715af7e1fe3f",
+      "bytes": 1466,
+      "case": [
+        "portable",
+        "narrow",
+        "market"
+      ],
+      "viewportCSSWidth": 333,
+      "documentScrollWidth": 323
+    },
+    {
+      "path": "roadmark-research/applied100/browser-observations/03-production-narrow-hero.json",
+      "sha256": "0f8255122d675a97af458cbf242df71165dfe75b6e1b530d8e5aa63cbbdb71c7",
+      "bytes": 1123,
+      "case": [
+        "production",
+        "narrow",
+        "original_hero"
+      ],
+      "viewportCSSWidth": 333,
+      "documentScrollWidth": 323
+    },
+    {
+      "path": "roadmark-research/applied100/browser-observations/04-portable-narrow-hero.json",
+      "sha256": "9b73ab0a2c93bb1b5b11313ecd801acb123c02c2e1c13e92d0c52071f87095c1",
+      "bytes": 1134,
+      "case": [
+        "portable",
+        "narrow",
+        "original_hero"
+      ],
+      "viewportCSSWidth": 333,
+      "documentScrollWidth": 323
+    },
+    {
+      "path": "roadmark-research/applied100/browser-observations/05-production-desktop-hero.json",
+      "sha256": "b6a0705364e64c17e09015162a8ad57bdbc36b5d8d22b315d6ee3a949e556773",
+      "bytes": 986,
+      "case": [
+        "production",
+        "desktop",
+        "original_hero"
+      ],
+      "viewportCSSWidth": 1180,
+      "documentScrollWidth": 1165
+    },
+    {
+      "path": "roadmark-research/applied100/browser-observations/06-portable-desktop-hero.json",
+      "sha256": "9cdba53a3b61b56ac123f992227132bc0ab25397f2f1ca08e03f8eb6a49e1ed3",
+      "bytes": 997,
+      "case": [
+        "portable",
+        "desktop",
+        "original_hero"
+      ],
+      "viewportCSSWidth": 1180,
+      "documentScrollWidth": 1165
+    },
+    {
+      "path": "roadmark-research/applied100/browser-observations/07-production-desktop-market.json",
+      "sha256": "406663746270881c54697969427dd2a240c52df2ff3d193a517fc76ff1c64b00",
+      "bytes": 1370,
+      "case": [
+        "production",
+        "desktop",
+        "market"
+      ],
+      "viewportCSSWidth": 1180,
+      "documentScrollWidth": 1165
+    },
+    {
+      "path": "roadmark-research/applied100/browser-observations/08-portable-desktop-market.json",
+      "sha256": "60a4cb0c1f7b85c9039fc6fbc8d60a3bb53f5a991e25147d429ccfb061b1c09f",
+      "bytes": 1392,
+      "case": [
+        "portable",
+        "desktop",
+        "market"
+      ],
+      "viewportCSSWidth": 1180,
+      "documentScrollWidth": 1165
+    }
+  ],
+  "browserCaseCount": 8,
+  "noReviewerBrowserExecution": true,
+  "limits": "Actual CUA inspection is root-provided evidence, not repeated by reviewer; canonical string-table layout, full production graph, real phones and release are not proved."
+}

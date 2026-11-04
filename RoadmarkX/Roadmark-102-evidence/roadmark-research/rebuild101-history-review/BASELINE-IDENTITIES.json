@@ -1,0 +1,156 @@
+{
+  "scope": "Read-only source100 ZIP/manifest inspection; current live app may be changing during rebuild",
+  "source100Archive": {
+    "path": "roadmark-recovery/reassembled100/Roadmark-recovered-100-source.zip",
+    "bytes": 48765019,
+    "sha256": "0ab0172a49def161e9d6aab1f00ea0d866e919c5a14dd83ee61c9852cb6a4e74"
+  },
+  "source100Manifest": {
+    "member": "roadmark/CHECKPOINT-SOURCE-MANIFEST.json",
+    "bytes": 586143,
+    "sha256": "b1155c2b6a2c18f10733215a52758cc17ffe200a12049a49df572037c39a8f55"
+  },
+  "baselineFiles": [
+    {
+      "path": "package.json",
+      "bytes": 1450,
+      "sha256": "7ee2046d8b28707c5d182f09f2288e8c61b19bb51d03fd42a212e055622f6754"
+    },
+    {
+      "path": "scripts/build-portable.ts",
+      "bytes": 3712,
+      "sha256": "0abc4b2dd3da0170d2d40ea4d7e6817bfdf4ab21198971210eb0780082868239"
+    },
+    {
+      "path": "src/components/market-audit.tsx",
+      "bytes": 8469,
+      "sha256": "6062cb777b0943c09aeed8bb457b279ac9ab510509e39773d3aa77c34ecacfc1"
+    },
+    {
+      "path": "tests/market-audit-interactions.test.ts",
+      "bytes": 6896,
+      "sha256": "09e777468fbbdb67e555279584c66a1548ac8ceaddc5795d159d4b83228c1c4f"
+    },
+    {
+      "path": "tests/buyer-display-copy-render.test.ts",
+      "bytes": 9723,
+      "sha256": "dc7c94589c23d409ae64b9e7299d893950f75454ee4901d3eab9b1de2b868867"
+    },
+    {
+      "path": "tests/checkpoint97-source-history.test.ts",
+      "bytes": 7072,
+      "sha256": "965c9a81052c0223c569a56fc23682398e728a0e78b16d26f459a2f24277d66b"
+    },
+    {
+      "path": "tests/checkpoint96-source-history.test.ts",
+      "bytes": 8420,
+      "sha256": "a5f8861eaeb9041f1e90d997baa5a2fbf432790cf663d91f376e6f8f986f6cc2"
+    },
+    {
+      "path": "tests/helpers/checkpoint91-history.ts",
+      "bytes": 2879,
+      "sha256": "c11e975627315ad55bfe80cfe34e0307f877c231579fd7538364526977f4c01b"
+    },
+    {
+      "path": "tests/helpers/checkpoint97-source-history.ts",
+      "bytes": 4998,
+      "sha256": "838dd04e58cf9185bb483294d5cf3614f08d0e31f23a1914ce485152cedca44e"
+    },
+    {
+      "path": "tests/helpers/checkpoint96-source-history.ts",
+      "bytes": 4172,
+      "sha256": "fe9d9db20d712e71971c4a7458762cfd3653c6addc5cb019b42372be4b0c6d16"
+    },
+    {
+      "path": "tests/helpers/checkpoint99-history.ts",
+      "bytes": 7157,
+      "sha256": "4493739f161f9838ffd571f85aff34daa97b032d9e87c83b9bd5d20b36d9e1ed"
+    },
+    {
+      "path": "tests/helpers/checkpoint100-market-history.ts",
+      "bytes": 3010,
+      "sha256": "a388c1bc6f141ca96cb4175711089500f8f8388146125720e7144152376063f2"
+    },
+    {
+      "path": "qa/checkpoint91/before-app-input-hashes.json",
+      "bytes": 11397,
+      "sha256": "7e164c30217b8eff2180c1cdaefccea9effa95a2c9cce283cec01dfbe5768fb9"
+    },
+    {
+      "path": "qa/checkpoint91/fixture-pins.json",
+      "bytes": 1029,
+      "sha256": "4ff8ac8e267fd2952d5dab7cd9948d64c26927706bfd727a14909f7d4113a1b8"
+    },
+    {
+      "path": "src/lib/market-inventory-data.ts",
+      "bytes": 144,
+      "sha256": "1df809ae0521e986e99929dc18fe7958dd797cf0246266082f26bb567affd999"
+    },
+    {
+      "path": "src/portable/market-inventory-data.ts",
+      "bytes": 141,
+      "sha256": "6f69cb9c54d9f78e5009eb7044bec9a4af6074a337d48db05cb6c5519589c62d"
+    },
+    {
+      "path": "src/portable/data.ts",
+      "bytes": 1230,
+      "sha256": "2e02649463f35015752cde5228c0359e52cdccab086c7ca46f910abc5a835f7d"
+    },
+    {
+      "path": "tests/portable-market-data.test.ts",
+      "bytes": 3619,
+      "sha256": "21cb840f3e31f3196a0b4873159e1285f3d61860be38d54224e4447700e6d852"
+    },
+    {
+      "path": "tests/portable-string-codec.test.ts",
+      "bytes": 10548,
+      "sha256": "293fe755b38df21e67add1994e9fd8406c017f47569b9d0b283755597af870f7"
+    },
+    {
+      "path": "data/market-inventory-2026-10-10.json",
+      "bytes": 1653304,
+      "sha256": "2469610f9bea19221ed99483b01ca23ca4f9bb62356a873398e9895c2eb838ac"
+    }
+  ],
+  "checkpoint91PinnedPaths": [
+    "data/au_ev_all_variants_2026-10-06.json",
+    "data/catalogue-additions-2026-10-10.json",
+    "data/buyer-selling-points-2026-10-10.json",
+    "data/buyer-identity-snapshots-2026-10-10.json",
+    "data/approved-corrections.json",
+    "data/approved-availability-corrections.json",
+    "data/approved-feature-corrections.json",
+    "data/research-refresh-2026-10-10.json",
+    "data/research-refinement-2026-10-06.json",
+    "data/research-usability-2026-10-06.json",
+    "data/research-sales-2026-10-06.json",
+    "data/research-completion-2026-10-07.json",
+    "data/research-editorial-2026-10-07.json",
+    "data/research-buyer-2026-10-07.json",
+    "data/source-audit-2026-10-08.json",
+    "src/lib/data.ts",
+    "src/lib/catalogue-additions.ts",
+    "src/lib/buyer-proposal.ts",
+    "src/lib/buyer-proposal-storage.ts",
+    "src/lib/selling-points.ts",
+    "src/lib/discovery.ts",
+    "src/lib/research-refresh.ts",
+    "src/lib/availability-corrections.ts",
+    "src/lib/corrections.ts",
+    "src/lib/launch-evidence.ts",
+    "src/lib/fact-validity.ts",
+    "src/lib/evidence-date.ts",
+    "src/lib/buyer-summary-timing.ts",
+    "src/lib/types.ts",
+    "src/lib/portable-string-codec.ts",
+    "src/lib/portable-packs.ts",
+    "src/components/buyer-summary.tsx",
+    "src/components/discovery.tsx",
+    "src/components/evidence-conditions.tsx"
+  ],
+  "checkpoint91PinCount": 34,
+  "checkpoint91PinsPackageBuilderOrMarketComponent": false,
+  "candidate101PostimagePinsComputed": false,
+  "candidateExecuted": false,
+  "testsExecuted": false
+}

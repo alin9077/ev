@@ -1,0 +1,31 @@
+{
+  "schema": "roadmark-checkpoint99-static-revision3-v1",
+  "scope": "Type-only correction to historical market adapter; no runtime statement, guard, assertion, data or hash changes",
+  "parentManifestSHA256": "089238cd78a3d7712cca9e691f78b9d91f7f46d292b30890086628edb4cf7c42",
+  "revision2ManifestSHA256": "5a68f63bad07833c31a173689616c06bc3dd6dd4b2044c7768aaa70d0fe0d46b",
+  "applicationModified": false,
+  "executionPerformed": false,
+  "candidateFiles": [
+    {
+      "path": "tests/helpers/checkpoint99-history.ts",
+      "beforeSHA256": "80ef31bac488635dbf69fdac7b7d4dbd2812ae53a6a08f3e8b68de7d2efe71d7",
+      "beforeBytes": 6551,
+      "afterSHA256": "c78c7048e1d9654ddb71b6680c9441bda9c30e4e569d65e6fc9bfd8bd13d8ceb",
+      "afterBytes": 7150,
+      "checkpoint98BeforeSHA256": null
+    }
+  ],
+  "typeReference": {
+    "path": "qa/checkpoint95-market-fixture.json",
+    "sha256": "be8fc1fb14600253d57ecdcd2ec27927208c66abf853f03fcb34b5ff706259e2",
+    "property": "appendedRecord",
+    "runtimeImport": false
+  },
+  "reason": "Returning generic T incorrectly preserves current record shape after restoration of the historical Mazda record. Node assert.equal of the historical null sourceTechnicalEpoch narrows the current string-typed row to never. Include the exact pinned historical record shape in returned records while preserving other top-level inferred fields.",
+  "verificationRequired": [
+    "Whole-project typecheck",
+    "Whole-project lint",
+    "Unchanged903 non-HTTP tests plus1 HTTP test and remaining fullQA stages"
+  ],
+  "priorObservedExecution": "Root reported903 non-HTTP and1 HTTP tests passing in fullQA attempt2; then five TypeScript TS2339 errors at tests/checkpoint95-market.test.ts lines44–48. No execution claimed for this revision."
+}

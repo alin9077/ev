@@ -1,0 +1,394 @@
+{
+  "acceleratedWebGLVerified": false,
+  "automatedBrowserSuitePassed": false,
+  "availabilityVerified": false,
+  "baselinePreviewSHA256": "0ababbe0d9e9c16aea35f1cb3f427e20d5536d1d0b3b4e11a0a3a88ab78e993a",
+  "baselineSourceSHA256": "7514bab9524cdb08af0b9fb8b7b1f001435f61526590c929f069d03c8b7f4fd1",
+  "browser": "own VM Chromium",
+  "candidateManifestSHA256": "52061d869f2e1cab0ca3cec6252a57200f251bb4b7317337dd3f9cf168ebaa66",
+  "checkpoint": 100,
+  "checks": [
+    {
+      "documentScrollWidth": 323,
+      "evidence": {
+        "bytes": 1444,
+        "path": "roadmark-research/applied100/browser-observations/01-production-narrow-market.json",
+        "sha256": "ce25986d63f4590ce3ac163b27e60124b8ba8e5f22f2118905ba8df4e909b815"
+      },
+      "kind": "market",
+      "limitations": [
+        "Own VM Chromium only, scoped views and search/disclosure actions; not a real phone or full journey.",
+        "Eight amended unverifiedLeads are static audit data, not displayed or claimed as visible market cards.",
+        "Source link destinations read from DOM; publisher pages not revisited."
+      ],
+      "location": "http://127.0.0.1:8766/market",
+      "measurementKind": "actual_browser_geometry",
+      "method": "CUA_visible_inspection",
+      "observed": [
+        "Searched BMW i3 and BMW iX4 separately; each returned one exact family with 50 xDrive alone, partial coverage, checked12October and ordering/stock unverified.",
+        "Keyboard Enter expanded both Evidence & limitations disclosures. Read complete DOM card text and actual source hrefs; did not navigate external sources.",
+        "Native visible note, disclosure, source and limitation views wrap within the narrow viewport. AU2027 arrival versus globalMarch2027 and separate M60/40 qualifications remain explicit. No horizontal clipping observed in inspected views."
+      ],
+      "observedAtUTC": "2026-10-12T08:38:17.571658+00:00",
+      "route": "/market",
+      "sampledHeldIds": [
+        "bmw-i3",
+        "bmw-ix4"
+      ],
+      "supportsScopedRetention": true,
+      "surface": "production",
+      "viewportCSSWidth": 333,
+      "viewportClass": "narrow",
+      "viewportDescription": "Resized own-VM Chromium window; 333 CSS pixel viewport, not a real phone."
+    },
+    {
+      "documentScrollWidth": 323,
+      "evidence": {
+        "bytes": 1466,
+        "path": "roadmark-research/applied100/browser-observations/02-portable-narrow-market.json",
+        "sha256": "dd252aeaae5551579df893ec337107eaab9e0a5bd003d4e0f5f4715af7e1fe3f"
+      },
+      "kind": "market",
+      "limitations": [
+        "Own VM Chromium only, scoped views and search/disclosure actions; not a real phone or full journey.",
+        "Eight amended unverifiedLeads are static audit data, not displayed or claimed as visible market cards.",
+        "Source link destinations read from DOM; publisher pages not revisited."
+      ],
+      "location": "http://127.0.0.1:8765/current100.html?page=%2Fmarket",
+      "measurementKind": "actual_browser_geometry",
+      "method": "CUA_visible_inspection",
+      "observed": [
+        "Searched BMW i3 and BMW iX4 separately; each returned one exact family with 50 xDrive alone, partial coverage, checked12October and ordering/stock unverified.",
+        "Keyboard Enter expanded both Evidence & limitations disclosures. Read complete DOM card text and actual source hrefs; did not navigate external sources.",
+        "Native visible note, disclosure, source and limitation views wrap within the narrow viewport. AU2027 arrival versus globalMarch2027 and separate M60/40 qualifications remain explicit. No horizontal clipping observed in inspected views."
+      ],
+      "observedAtUTC": "2026-10-12T08:39:20.479068+00:00",
+      "route": "/market",
+      "sampledHeldIds": [
+        "bmw-i3",
+        "bmw-ix4"
+      ],
+      "supportsScopedRetention": true,
+      "surface": "portable",
+      "viewportCSSWidth": 333,
+      "viewportClass": "narrow",
+      "viewportDescription": "Resized own-VM Chromium window; 333 CSS pixel viewport, not a real phone."
+    },
+    {
+      "documentScrollWidth": 323,
+      "evidence": {
+        "bytes": 1123,
+        "path": "roadmark-research/applied100/browser-observations/03-production-narrow-hero.json",
+        "sha256": "0f8255122d675a97af458cbf242df71165dfe75b6e1b530d8e5aa63cbbdb71c7"
+      },
+      "kind": "original_hero",
+      "limitations": [
+        "Own VM Chromium resized viewport, not a real phone. Static hero/row comparison only; no full animation, accelerated WebGL or complete journey claim."
+      ],
+      "location": "http://127.0.0.1:8766/b",
+      "measurementKind": "actual_browser_geometry",
+      "method": "CUA_visible_inspection",
+      "observed": [
+        "Compared actual production100 and portable100 original hero against saved99 baseline at same333CSS viewport. Native top/middle/bottom views show all9selling-point blocks, logo, typography, icons, spacing and wrapping retained.",
+        "All9DOM text/href/target-existence objects equal between production100, portable100 and saved99. All targets exist.",
+        "No horizontal clipping observed in inspected hero views."
+      ],
+      "observedAtUTC": "2026-10-12T08:41:35.343350+00:00",
+      "route": "/b",
+      "sampledHeldIds": [],
+      "supportsScopedRetention": true,
+      "surface": "production",
+      "viewportCSSWidth": 333,
+      "viewportClass": "narrow",
+      "viewportDescription": "Resized own-VM Chromium window; 333 CSS pixel viewport, not a real phone."
+    },
+    {
+      "documentScrollWidth": 323,
+      "evidence": {
+        "bytes": 1134,
+        "path": "roadmark-research/applied100/browser-observations/04-portable-narrow-hero.json",
+        "sha256": "9b73ab0a2c93bb1b5b11313ecd801acb123c02c2e1c13e92d0c52071f87095c1"
+      },
+      "kind": "original_hero",
+      "limitations": [
+        "Own VM Chromium resized viewport, not a real phone. Static hero/row comparison only; no full animation, accelerated WebGL or complete journey claim."
+      ],
+      "location": "http://127.0.0.1:8765/current100.html",
+      "measurementKind": "actual_browser_geometry",
+      "method": "CUA_visible_inspection",
+      "observed": [
+        "Compared actual production100 and portable100 original hero against saved99 baseline at same333CSS viewport. Native top/middle/bottom views show all9selling-point blocks, logo, typography, icons, spacing and wrapping retained.",
+        "All9DOM text/href/target-existence objects equal between production100, portable100 and saved99. All targets exist.",
+        "No horizontal clipping observed in inspected hero views."
+      ],
+      "observedAtUTC": "2026-10-12T08:41:35.343350+00:00",
+      "route": "/",
+      "sampledHeldIds": [],
+      "supportsScopedRetention": true,
+      "surface": "portable",
+      "viewportCSSWidth": 333,
+      "viewportClass": "narrow",
+      "viewportDescription": "Resized own-VM Chromium window; 333 CSS pixel viewport, not a real phone."
+    },
+    {
+      "documentScrollWidth": 1165,
+      "evidence": {
+        "bytes": 986,
+        "path": "roadmark-research/applied100/browser-observations/05-production-desktop-hero.json",
+        "sha256": "b6a0705364e64c17e09015162a8ad57bdbc36b5d8d22b315d6ee3a949e556773"
+      },
+      "kind": "original_hero",
+      "limitations": [
+        "Own VM Chromium resized viewport, not a real phone. Static hero/row comparison only; no full animation, accelerated WebGL or complete journey claim."
+      ],
+      "location": "http://127.0.0.1:8766/b",
+      "measurementKind": "actual_browser_geometry",
+      "method": "CUA_visible_inspection",
+      "observed": [
+        "Compared original production100 and portable100 hero against saved99 at same1180CSS viewport. All9rows visible together; original logo, typography, icons, spacing, copy and geometry retained.",
+        "All9text/href/target-existence objects equal saved99; all targets exist. No horizontal clipping observed."
+      ],
+      "observedAtUTC": "2026-10-12T08:43:37.833642+00:00",
+      "route": "/b",
+      "sampledHeldIds": [],
+      "supportsScopedRetention": true,
+      "surface": "production",
+      "viewportCSSWidth": 1180,
+      "viewportClass": "desktop",
+      "viewportDescription": "Own-VM Chromium at100% zoom,1180CSS width."
+    },
+    {
+      "documentScrollWidth": 1165,
+      "evidence": {
+        "bytes": 997,
+        "path": "roadmark-research/applied100/browser-observations/06-portable-desktop-hero.json",
+        "sha256": "9cdba53a3b61b56ac123f992227132bc0ab25397f2f1ca08e03f8eb6a49e1ed3"
+      },
+      "kind": "original_hero",
+      "limitations": [
+        "Own VM Chromium resized viewport, not a real phone. Static hero/row comparison only; no full animation, accelerated WebGL or complete journey claim."
+      ],
+      "location": "http://127.0.0.1:8765/current100.html",
+      "measurementKind": "actual_browser_geometry",
+      "method": "CUA_visible_inspection",
+      "observed": [
+        "Compared original production100 and portable100 hero against saved99 at same1180CSS viewport. All9rows visible together; original logo, typography, icons, spacing, copy and geometry retained.",
+        "All9text/href/target-existence objects equal saved99; all targets exist. No horizontal clipping observed."
+      ],
+      "observedAtUTC": "2026-10-12T08:43:37.833642+00:00",
+      "route": "/",
+      "sampledHeldIds": [],
+      "supportsScopedRetention": true,
+      "surface": "portable",
+      "viewportCSSWidth": 1180,
+      "viewportClass": "desktop",
+      "viewportDescription": "Own-VM Chromium at100% zoom,1180CSS width."
+    },
+    {
+      "documentScrollWidth": 1165,
+      "evidence": {
+        "bytes": 1370,
+        "path": "roadmark-research/applied100/browser-observations/07-production-desktop-market.json",
+        "sha256": "406663746270881c54697969427dd2a240c52df2ff3d193a517fc76ff1c64b00"
+      },
+      "kind": "market",
+      "limitations": [
+        "Own VM Chromium only, scoped views and search/disclosure actions; not a real phone or full journey.",
+        "Eight amended unverifiedLeads are static audit data, not displayed or claimed as visible market cards.",
+        "Source link destinations read from DOM; publisher pages not revisited."
+      ],
+      "location": "http://127.0.0.1:8766/market",
+      "measurementKind": "actual_browser_geometry",
+      "method": "CUA_visible_inspection",
+      "observed": [
+        "Searched BMW i3 and BMW iX4 separately; each returned one exact family with 50 xDrive alone, partial coverage, checked12October and ordering/stock unverified.",
+        "Keyboard Enter expanded both Evidence & limitations disclosures. Read complete DOM card text and actual source hrefs; did not navigate external sources.",
+        "Native card/disclosure/source/limitation views fit desktop layout. AU2027 arrival versus globalMarch2027 and separate M60/40 qualifications remain explicit. No horizontal clipping observed."
+      ],
+      "observedAtUTC": "2026-10-12T08:45:02.538018+00:00",
+      "route": "/market",
+      "sampledHeldIds": [
+        "bmw-i3",
+        "bmw-ix4"
+      ],
+      "supportsScopedRetention": true,
+      "surface": "production",
+      "viewportCSSWidth": 1180,
+      "viewportClass": "desktop",
+      "viewportDescription": "Own-VM Chromium at100% zoom,1180CSS width."
+    },
+    {
+      "documentScrollWidth": 1165,
+      "evidence": {
+        "bytes": 1392,
+        "path": "roadmark-research/applied100/browser-observations/08-portable-desktop-market.json",
+        "sha256": "60a4cb0c1f7b85c9039fc6fbc8d60a3bb53f5a991e25147d429ccfb061b1c09f"
+      },
+      "kind": "market",
+      "limitations": [
+        "Own VM Chromium only, scoped views and search/disclosure actions; not a real phone or full journey.",
+        "Eight amended unverifiedLeads are static audit data, not displayed or claimed as visible market cards.",
+        "Source link destinations read from DOM; publisher pages not revisited."
+      ],
+      "location": "http://127.0.0.1:8765/current100.html?page=%2Fmarket",
+      "measurementKind": "actual_browser_geometry",
+      "method": "CUA_visible_inspection",
+      "observed": [
+        "Searched BMW i3 and BMW iX4 separately; each returned one exact family with 50 xDrive alone, partial coverage, checked12October and ordering/stock unverified.",
+        "Keyboard Enter expanded both Evidence & limitations disclosures. Read complete DOM card text and actual source hrefs; did not navigate external sources.",
+        "Native card/disclosure/source/limitation views fit desktop layout. AU2027 arrival versus globalMarch2027 and separate M60/40 qualifications remain explicit. No horizontal clipping observed."
+      ],
+      "observedAtUTC": "2026-10-12T08:45:36.611557+00:00",
+      "route": "/market",
+      "sampledHeldIds": [
+        "bmw-i3",
+        "bmw-ix4"
+      ],
+      "supportsScopedRetention": true,
+      "surface": "portable",
+      "viewportCSSWidth": 1180,
+      "viewportClass": "desktop",
+      "viewportDescription": "Own-VM Chromium at100% zoom,1180CSS width."
+    }
+  ],
+  "expectedInputsSHA256": "39caa8ae30cf2c6bc09026d0dd87b6fd42811fd8ddb2d632c5d3d18092818225",
+  "fresh100PerformanceImprovementClaimed": false,
+  "fullJourneyVerified": false,
+  "fullVisualPassClaimed": false,
+  "independentServerByteVerificationPerformed": false,
+  "integrationDisposition": {
+    "checksSupportRetention": true,
+    "decision": "retain_scoped",
+    "reason": "Root accepts these ten held market evidence amendments after exact source and artifact comparison, full QA and eight scoped market/hero browser checks. Existing availability, ranking and completeness holds remain. Only two revised BMW records are visible on the market page; eight unresolved leads remain static audit data. This is not release approval."
+  },
+  "limitations": [
+    "Root accepted the bounded evidence amendment for scoped retention. All listed verification exclusions remain; resized desktop checks do not establish real-phone or full-journey completion.",
+    "Visible market scope is the BMW i3 and BMW iX4 records only. The eight amended commercial/Mercedes unresolved leads are static audit data and are not displayed by the existing market UI.",
+    "Own VM Chromium at two resized CSS widths; no real-phone, complete-journey, full-animation, accelerated-WebGL, sustained-stability or release claim.",
+    "Source-link destinations were inspected from the DOM. Publisher pages were not revisited during these browser checks.",
+    "Prior99 Mazda and other earlier QA/performance evidence remain historical. The unchanged QA runner uses its schema99 mechanics label with actual100 inputs and output evidence.",
+    "The portable checker does not establish browser runtime behavior, the whole Next production module graph, source-tree/build provenance, canonical string-table layout or unused dictionary entries, claim truth/freshness, full market coverage or publisher-origin bytes."
+  ],
+  "newEvidenceIndexRestorationIncluded": false,
+  "newVehicleOrTrimAdmissionClaimed": false,
+  "observations": [
+    "Eight root-authored actual browser observations are normalized below with unchanged contents and references to their exact original JSON files.",
+    "Production and portable market views were checked for the two amended visible BMW records at 333 CSS pixels and 1,180 CSS pixels; observed document widths were 323 and 1,165 respectively.",
+    "Production and portable original hero views were compared with saved99 at both widths. The original nine selling-point text/link/target objects, layout and wrapping were reported retained in the root observations.",
+    "The actual portable verifier reported exactly ten held-row/four-field amendments, unchanged HTML outside the embedded payload and unchanged other decoded values. This is static artifact evidence, separate from visible browser evidence.",
+    "Root preservation review reports the exact 1,678-input map and five-path delta, all 42 sealed QA evidence entries and eight current artifact identities/mtimes, all ten fixture after-objects/four fields, unchanged original hero source, and native preview shutdown with a returned prompt."
+  ],
+  "observedAtUTC": "2026-10-12T08:45:36.611557+00:00",
+  "phoneVerified": false,
+  "portableBytes": 37020751,
+  "portableSHA256": "cb4fe95ff34b375fe139b7ef81e959c7ae000a1cb4b44ed74ad340a662f4e39b",
+  "prior99EvidenceIsHistoricalOnly": true,
+  "productionBuildID": "lBzNgnFnu62t8Fg0e4IQ5",
+  "publicExportRun": false,
+  "qaCandidateManifestSHA256": "7d85b68eb8b73d6b3dcdca3c6df7f882cf494686c610c5820d5222253fe6784d",
+  "releaseApproved": false,
+  "schemaVersion": "roadmark100.scoped-market-observation.v1",
+  "semanticReview": {
+    "allOtherBaselineInputsByteIdentical": true,
+    "changedFields": [
+      "checkedAt",
+      "evidenceNote",
+      "limitations",
+      "sourceUrls"
+    ],
+    "eightUnresolvedLeadsAreStaticAuditDataNotVisibleUI": true,
+    "evidence": [
+      {
+        "bytes": 4425,
+        "path": "roadmark-research/review-market100/DECISION.json",
+        "sha256": "ff08ea1eb44d828136bc5da242c776ad98752ebd859519ac9653a68675a01c64"
+      },
+      {
+        "bytes": 4630,
+        "path": "roadmark-research/review-market100/candidate-data-review.json",
+        "sha256": "e7f998078feb86379dc187b0695a3da6a9fb1c32e91db324352a36d41b0765e6"
+      },
+      {
+        "bytes": 3573,
+        "path": "roadmark-research/review-market100/research-integrity-check.json",
+        "sha256": "cd319c59ab508d8a33570ec691a161870a0a4a4a9c905476048e20d2a70824ba"
+      },
+      {
+        "bytes": 1848,
+        "path": "roadmark-research/applied100/application-receipt.json",
+        "sha256": "adb675fb91e8b7382f6dc49a9f93f6c006c72736bbe75b7a7026bb51a8d176bf"
+      },
+      {
+        "bytes": 4788,
+        "path": "roadmark-research/applied100/portable-proof-attempt1.stdout.json",
+        "sha256": "db7581e2d43a9051aa6a27750fe9b424dfd295b408f23261bfa5c910a3cbde04"
+      },
+      {
+        "bytes": 1444,
+        "path": "roadmark-research/applied100/browser-observations/01-production-narrow-market.json",
+        "sha256": "ce25986d63f4590ce3ac163b27e60124b8ba8e5f22f2118905ba8df4e909b815"
+      },
+      {
+        "bytes": 1466,
+        "path": "roadmark-research/applied100/browser-observations/02-portable-narrow-market.json",
+        "sha256": "dd252aeaae5551579df893ec337107eaab9e0a5bd003d4e0f5f4715af7e1fe3f"
+      },
+      {
+        "bytes": 1123,
+        "path": "roadmark-research/applied100/browser-observations/03-production-narrow-hero.json",
+        "sha256": "0f8255122d675a97af458cbf242df71165dfe75b6e1b530d8e5aa63cbbdb71c7"
+      },
+      {
+        "bytes": 1134,
+        "path": "roadmark-research/applied100/browser-observations/04-portable-narrow-hero.json",
+        "sha256": "9b73ab0a2c93bb1b5b11313ecd801acb123c02c2e1c13e92d0c52071f87095c1"
+      },
+      {
+        "bytes": 986,
+        "path": "roadmark-research/applied100/browser-observations/05-production-desktop-hero.json",
+        "sha256": "b6a0705364e64c17e09015162a8ad57bdbc36b5d8d22b315d6ee3a949e556773"
+      },
+      {
+        "bytes": 997,
+        "path": "roadmark-research/applied100/browser-observations/06-portable-desktop-hero.json",
+        "sha256": "9cdba53a3b61b56ac123f992227132bc0ab25397f2f1ca08e03f8eb6a49e1ed3"
+      },
+      {
+        "bytes": 1370,
+        "path": "roadmark-research/applied100/browser-observations/07-production-desktop-market.json",
+        "sha256": "406663746270881c54697969427dd2a240c52df2ff3d193a517fc76ff1c64b00"
+      },
+      {
+        "bytes": 1392,
+        "path": "roadmark-research/applied100/browser-observations/08-portable-desktop-market.json",
+        "sha256": "60a4cb0c1f7b85c9039fc6fbc8d60a3bb53f5a991e25147d429ccfb061b1c09f"
+      },
+      {
+        "bytes": 1158,
+        "path": "roadmark-research/applied100/root-preservation-review.json",
+        "sha256": "25284cc513ce3ef3c8263e5e99d2b43c3e6eb54945d240ce70ec439fa3275f69"
+      }
+    ],
+    "globalAustralianVariantTimingSeparated": true,
+    "heldIds": [
+      "bmw-i3",
+      "bmw-ix4",
+      "dfac-captain-45e",
+      "dfac-captain-85e",
+      "pioneer-ev-dfsk-ec35",
+      "mercedes-benz-eqb",
+      "mercedes-benz-eqe-sedan",
+      "mercedes-benz-eqe-suv",
+      "mercedes-benz-eqs-suv",
+      "mercedes-benz-maybach-eqs"
+    ],
+    "noVehicleTrimTechnicalRankingCountOrCompletenessAdmission": true,
+    "orderAndStockUnknownsRetained": true,
+    "originalModelYHeroAndNineSellingPointsUnchanged": true,
+    "researchProvenanceQualificationsRetained": true,
+    "tenHeldEntriesOnly": true
+  },
+  "sourceRevisionReviewSHA256": "ff08ea1eb44d828136bc5da242c776ad98752ebd859519ac9653a68675a01c64",
+  "sustainedStabilityClaimed": false,
+  "wholeProductionRuntimeGraphEquivalenceClaimed": false
+}

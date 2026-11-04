@@ -1,0 +1,1611 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-14T22:03:22.172652+00:00",
+  "status": "Research preservation verified; pre-assembly/pre-canonical/unregistered; original raw replay limitations explicit",
+  "sourceReusedUnchanged": {
+    "filename": "Roadmark-recovery-source-XPENG-REGISTERED-WORKING-20261014T2030.tar.xz",
+    "bytes": 8337940,
+    "sha256": "958ab268995fb3b59c64b1fd177e3faceec38ad74bb145b94f77004c4ec9aed5",
+    "group": "source-XPENG-REGISTERED-WORKING",
+    "library_file_id": "libfile_664dd42cadcc8191b19f977c66ec71c2",
+    "version": 0,
+    "new": true,
+    "restoreOrder": 39,
+    "file_id": "file_00000000022081f89a675f232edcbc4c"
+  },
+  "newArchives": [
+    {
+      "restoreOrder": 98,
+      "filename": "Roadmark-recovery-MERCEDES-RESEARCH-SAFETY-20261014T2145-part01of02.tar.xz",
+      "group": "MERCEDES-RESEARCH-SAFETY",
+      "bytes": 6744000,
+      "sha256": "51837b39b8088c66ff8302d4b8c7dadb86626b409bcd997f29053f9b0baaa5cc",
+      "library_file_id": "libfile_aa0248d57178819194f692b09966cdab",
+      "file_id": "file_000000007e6081f588327cb41983ff20",
+      "version": 0
+    },
+    {
+      "restoreOrder": 99,
+      "filename": "Roadmark-recovery-MERCEDES-RESEARCH-SAFETY-20261014T2145-part02of02.tar.xz",
+      "group": "MERCEDES-RESEARCH-SAFETY",
+      "bytes": 836444,
+      "sha256": "ee6379ff651f400c09acc449d63e2becedab3480b6fa746d6e965f67ea06e57f",
+      "library_file_id": "libfile_f38f42f505708191ae85e0cbfda11d64",
+      "file_id": "file_000000007da081f68e1b3b3ce7343e9a",
+      "version": 0
+    }
+  ],
+  "baseRecovery": {
+    "manifestFilename": "Roadmark-RECOVERY-MANIFEST-XPENG-REGISTERED-WORKING-20261014.json",
+    "manifestLibraryFileId": "libfile_1c10376e5b088191b53f61ec8fcbc370",
+    "manifestBytes": 3165732,
+    "manifestSHA256": "fcd01995d63af48d6e0746f6bf9fab844735a42ac0754f74cce382d3ab4d8d24",
+    "finalReceiptFilename": "FINAL-XPENG-REGISTERED-UPLOAD-RECEIPTS.json",
+    "finalReceiptSHA256": "35cdb462eab8a2fdd6e1ef8be154ec361716ba00a1ccef46764d5492442e7f93",
+    "source": {
+      "filename": "Roadmark-recovery-source-XPENG-REGISTERED-WORKING-20261014T2030.tar.xz",
+      "bytes": 8337940,
+      "sha256": "958ab268995fb3b59c64b1fd177e3faceec38ad74bb145b94f77004c4ec9aed5",
+      "group": "source-XPENG-REGISTERED-WORKING",
+      "library_file_id": "libfile_664dd42cadcc8191b19f977c66ec71c2",
+      "version": 0,
+      "new": true,
+      "restoreOrder": 39,
+      "file_id": "file_00000000022081f89a675f232edcbc4c"
+    },
+    "indexLibraryFileId": "libfile_8abf6755216c81918039ab9826356d81",
+    "activeReceiptLibraryFileId": "libfile_881929df607881918f133f0440fa404e",
+    "archives": 97,
+    "logicalFiles": 7483
+  },
+  "workState": {
+    "label": "Mercedes research/static safety cut: pre-assembly, pre-canonical and unregistered",
+    "captureCutoff": "2026-10-14T21:50:36.173517+00:00",
+    "candidateRegistered": false,
+    "packetAssembled": false,
+    "canonicalCaptureCompleted": false,
+    "stageReplayCompleted": false,
+    "researchV6Accepted": true,
+    "correctedBaselineV2Accepted": true,
+    "originalBaselineV1FailurePreserved": true,
+    "staticAssemblyReviewAtCut": "Pending; later versioned fixes, review and execution are outside this frozen cut",
+    "sourceRecaptured": false,
+    "sourceChanged": false,
+    "sourceState": {
+      "label": "XPENG registered working checkpoint; TypeScript and release pending",
+      "xpengRegistered": true,
+      "registeredAt": "2026-10-14T20:27:20.680875+00:00",
+      "sourceStatusFreezeAt": "2026-10-14T20:46:32.922035+00:00",
+      "freshValidation": {
+        "passed": true,
+        "variants": 405,
+        "evidenceRecords": 27945
+      },
+      "normalCoverage": {
+        "passed": true,
+        "completeStdoutBytes": 1627583,
+        "byteIdenticalToStagedReport": true,
+        "review": {
+          "path": "xpeng-post-registration-review/fresh-registered-parity-independent-review-v1.json",
+          "sha256": "c3beb75720a7ef94c98a2dbb9ccdac3c9c789eddca73ce819e4fa5993ca0e6f5",
+          "bytes": 3135
+        }
+      },
+      "relevantTests": {
+        "passed": 214,
+        "run": "One seven-file run, all passed",
+        "wholeProjectSuiteClaim": false
+      },
+      "changedFileLintPassed": true,
+      "currentCompleteTypeScriptPassed": false,
+      "typeScriptRerunForThisCut": false,
+      "fullProjectSuitePassed": false,
+      "currentBuildPassed": false,
+      "currentMobilePassed": false,
+      "releaseReady": false,
+      "published": false,
+      "milestone": "M1 open",
+      "historicalWorkingAttempts": "All prior failed and superseded attempts retained in the unchanged base and admitted proof paths; no unexplained failure converted into a pass.",
+      "currentReview": {
+        "status": "accepted_registered_xpeng_m1_working_checkpoint_not_release",
+        "checkedAt": "2026-10-14T20:46:36.233407+00:00",
+        "registeredPacket": {
+          "path": "roadmark/data/m1-brand-updates/xpeng-2026-10-15.json",
+          "sha256": "b3ee8ff670a503c5197004bc973b7a8e020081e4547648f4974f907504e7198d",
+          "bytes": 1181206
+        },
+        "registeredReconciliation": {
+          "path": "roadmark/data/m1-xpeng-market-reconciliation-2026-10-15.json",
+          "sha256": "9f1f1342daf6fc6c27ab12600e2358ffe1c0bfdc4d24033dec45dc86fa42d11b",
+          "bytes": 8625
+        },
+        "stagedCandidateGate": {
+          "path": "xpeng-staging-plan/reviews/final-candidate-gate-v1.json",
+          "sha256": "abff075886449d99c0e7d47afe307cfb83f16714f96d72022f0bc90cdf16c0de",
+          "bytes": 8749
+        },
+        "postRegistrationReviews": [
+          {
+            "path": "xpeng-post-registration-review/registration-transition-review-v1.json",
+            "sha256": "f370be34987add3c555eee4a112177d8abef6f561243e6c098d9cddfe4b2df31",
+            "bytes": 2379
+          },
+          {
+            "path": "xpeng-post-registration-review/fresh-validation-review-v1.json",
+            "sha256": "aa4ffac619cea1ac1f0f810ef707f9b3c5803baf3df33164f3f55f713248f4c2",
+            "bytes": 2759
+          },
+          {
+            "path": "xpeng-post-registration-review/fresh-registered-parity-independent-review-v1.json",
+            "sha256": "c3beb75720a7ef94c98a2dbb9ccdac3c9c789eddca73ce819e4fa5993ca0e6f5",
+            "bytes": 3135
+          }
+        ],
+        "currentTestAndLintEvidence": {
+          "relevant-tests-640": {
+            "terminal": {
+              "command": [
+                "node",
+                "--max-old-space-size=640",
+                "--max-semi-space-size=1",
+                "--import",
+                "tsx",
+                "--test",
+                "--test-reporter=tap",
+                "--test-concurrency=1",
+                "tests/brand-added-detail.test.ts",
+                "tests/brand-feature-updates.test.ts",
+                "tests/brand-updates.test.ts",
+                "tests/brand-configuration-updates.test.ts",
+                "tests/price-ladder.test.ts",
+                "tests/catalogue-snapshot.test.ts",
+                "tests/evidence-consumers.test.ts"
+              ],
+              "exitCode": 0,
+              "signal": null,
+              "elapsedSeconds": 390.71338152885437,
+              "maxRssKiB": 751060,
+              "inputCount": 494,
+              "changedInputs": [],
+              "scope": "All src/scripts/tests/data files plus package/lock/tsconfig, not installed dependency bytes"
+            },
+            "artifacts": {
+              "terminal.json": {
+                "path": "roadmark-104-qa/xpeng-sequential-checks/relevant-tests-640/terminal.json",
+                "sha256": "5c4554f1b79325100001a783618b6d98e6d118e987f63013e06731bd28484d79",
+                "bytes": 722
+              },
+              "stdout.log": {
+                "path": "roadmark-104-qa/xpeng-sequential-checks/relevant-tests-640/stdout.log",
+                "sha256": "9fa571fce9cf6499df593f4ada383faf1c53468e01978a24ad2d18b822d354a0",
+                "bytes": 53676
+              },
+              "stderr.log": {
+                "path": "roadmark-104-qa/xpeng-sequential-checks/relevant-tests-640/stderr.log",
+                "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "bytes": 0
+              },
+              "inputs-before.json": {
+                "path": "roadmark-104-qa/xpeng-sequential-checks/relevant-tests-640/inputs-before.json",
+                "sha256": "0ce0375459920bb5c0643eb18c4a5b1cca5f46afa3c5fcd214171b4d50cad948",
+                "bytes": 52952
+              }
+            }
+          },
+          "changed-file-lint": {
+            "terminal": {
+              "command": [
+                "node",
+                "--max-old-space-size=448",
+                "--max-semi-space-size=1",
+                "node_modules/eslint/bin/eslint.js",
+                "scripts/reporting/load.ts"
+              ],
+              "exitCode": 0,
+              "signal": null,
+              "elapsedSeconds": 3.4217779636383057,
+              "maxRssKiB": 214384,
+              "inputCount": 494,
+              "changedInputs": [],
+              "scope": "All src/scripts/tests/data files plus package/lock/tsconfig, not installed dependency bytes"
+            },
+            "artifacts": {
+              "terminal.json": {
+                "path": "roadmark-104-qa/xpeng-sequential-checks/changed-file-lint/terminal.json",
+                "sha256": "a660ae5200d3b8a7939eaa562b53497711d9ea01ade9dd5b94e09ebf4df579fb",
+                "bytes": 419
+              },
+              "stdout.log": {
+                "path": "roadmark-104-qa/xpeng-sequential-checks/changed-file-lint/stdout.log",
+                "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "bytes": 0
+              },
+              "stderr.log": {
+                "path": "roadmark-104-qa/xpeng-sequential-checks/changed-file-lint/stderr.log",
+                "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "bytes": 0
+              },
+              "inputs-before.json": {
+                "path": "roadmark-104-qa/xpeng-sequential-checks/changed-file-lint/inputs-before.json",
+                "sha256": "0ce0375459920bb5c0643eb18c4a5b1cca5f46afa3c5fcd214171b4d50cad948",
+                "bytes": 52952
+              }
+            }
+          }
+        },
+        "tests": {
+          "files": 7,
+          "passed": 214,
+          "failed": 0,
+          "cancelled": 0,
+          "skipped": 0,
+          "todo": 0,
+          "oneCleanSerialCommand": true,
+          "all494CodeDataPinsEqualIndependentlyReviewedRegisteredInventory": true
+        },
+        "lintScope": "Changed scripts/reporting/load.ts only; not a new whole-repository lint claim.",
+        "registeredWholeReport": {
+          "sha256": "4d9fe8be0107c236d9eb005757f293fd78f41b3481315fdb9c8cd719f61b19f4",
+          "bytes": 1627583,
+          "entireOriginalStagedBytesAndJsonExactlyEqual": true,
+          "normalizationOrFiltering": false
+        },
+        "scope": {
+          "registeredPackets": 19,
+          "catalogue": 405,
+          "tierOne": 328,
+          "onSale": 301,
+          "xpengTotal": 11,
+          "xpengOnSale": 8,
+          "onSaleCoreReviewed": 4642,
+          "onSaleCoreTotal": 5117,
+          "xpengCoreReviewed": 136,
+          "xpengCoreFilled": 135,
+          "xpengPricesFilled": 7,
+          "xpengPricesTotal": 8
+        },
+        "sourceTransition": {
+          "changedFiles": 2,
+          "addedFiles": 2,
+          "allOtherOriginalFilesByteIdentical": 518,
+          "original18PacketPrefixPreserved": true,
+          "originalModelYHeroAndUIUnchanged": true,
+          "docsStatusAppendOutsideCodePins": "Root-owned subsequent handover/documentation work; not represented as a code test change."
+        },
+        "sourceCaveatsRemainBinding": [
+          "Only New G6 MY26 and X9 have formal exact official current-version reviews; bounded residual ads and arriving L03 do not prove market closure, physical stock or accepted orders.",
+          "G6 configurator price basis remains unknown and unranked; Patrick POA is a real current-price gap.",
+          "X9 FWD categorical no-towing answer stays unranked; L03 method/source conditions and Reported limits remain visible.",
+          "Three residual cohorts stay excluded from unproven current-importer shared terms; unsold VIN warranty eligibility unresolved.",
+          "C1/C2/C5 and XPENG research completion remain false. No completed-brand or market-best claim."
+        ],
+        "openReleaseGates": [
+          "Current whole-project TypeScript is unverified after prior failed attempts; no new successful typecheck and no inferred termination cause.",
+          "Current production build, whole-project aggregate test/release suite and mobile release/browser checks remain unverified.",
+          "Structural validation passes but still reports 15 publication issues; it is not independent factual verification.",
+          "M1 census/research closure and remaining brands are incomplete.",
+          "No M2, live publication or deployment performed."
+        ],
+        "registered": true,
+        "freshRegisteredValidationPassed": true,
+        "freshNormalCoverageEntireJsonAndBytesPassed": true,
+        "relevantTestsPassed": true,
+        "changedFileLintPassed": true,
+        "releaseReady": false,
+        "m2Started": false,
+        "published": false
+      },
+      "informationalFreezeAddendum": {
+        "status": "accepted_additive_informational_status_freeze_after_registered_checkpoint",
+        "checkedAt": "2026-10-14T20:47:28.396840+00:00",
+        "finalPostRegistrationGate": {
+          "path": "xpeng-post-registration-review/final-post-registration-gate-v1.json",
+          "sha256": "25f9c6b5c9149f34bbe460ec0e0e040c80a6b637e879542be199456e8169a3b2",
+          "bytes": 7986
+        },
+        "currentInformationalFiles": [
+          {
+            "path": "roadmark/docs/M1_PROGRESS.md",
+            "sha256": "ca8bb30fb5e3f6e909ceb76a3e7736d72cabfa6f729c065542398f424398da9e",
+            "bytes": 42821
+          },
+          {
+            "path": "roadmark-104-qa/work-status.json",
+            "sha256": "e0da69a32c0efd4f709187f196d60330825f96d810da19367f00ae5c0c7f188a",
+            "bytes": 12913
+          }
+        ],
+        "retainedTransitionArtifacts": [
+          {
+            "path": "roadmark-104-qa/status-transitions/xpeng-registered-checked-20261014T2046/M1_PROGRESS.before.md",
+            "sha256": "8b2befcdb64dd35dd8b930652cade5c75a2e7d1fe850c08fd5bda55e3be9bb5e",
+            "bytes": 40038
+          },
+          {
+            "path": "roadmark-104-qa/status-transitions/xpeng-registered-checked-20261014T2046/work-status.before.json",
+            "sha256": "cd3372e52d7bc2b6da82bcf14d93d6bd646d84221e3508975cc45d64c6d1f871",
+            "bytes": 11859
+          },
+          {
+            "path": "roadmark-104-qa/status-transitions/xpeng-registered-checked-20261014T2046/work-status.after.json",
+            "sha256": "e0da69a32c0efd4f709187f196d60330825f96d810da19367f00ae5c0c7f188a",
+            "bytes": 12913
+          },
+          {
+            "path": "roadmark-104-qa/status-transitions/xpeng-registered-checked-20261014T2046/transition.json",
+            "sha256": "22ba22725e3f29f7ba970f62be4b1becacb46eb6ea919a1c29d4601ecefd68a9",
+            "bytes": 225
+          }
+        ],
+        "checks": {
+          "entirePreviousProgressDocumentPreservedAsExactPrefix": true,
+          "currentStatusBytesEqualRetainedAfter": true,
+          "statusBeforeAndAfterHashesMatchTransition": true,
+          "publishedCoveragePercentagesMatchEntireAcceptedReport": true,
+          "214RelevantTestsNotMislabelledWholeProjectSuite": true,
+          "lastFullyCheckedPolestarHistoricalScopeRetained": true,
+          "latestFullProjectTypeScriptNotRerunAndStillUnverified": true,
+          "noM2OrPublicationOrBuildMobilePassClaim": true
+        },
+        "scope": "Documentation and QA informational bytes only, outside the prior 494 code/data input pins and 522 source-inventory scope. Original gate remains immutable; this addendum does not expand test coverage or revise source/canonical evidence.",
+        "rootDeclaredSourceFreezeAt": "2026-10-14T20:46:32.922035+00:00",
+        "sourceStatusForBackup": "Registered working checkpoint, with the exact source transition and current informational bytes retained separately from earlier research-only recovery.",
+        "releaseReady": false
+      }
+    },
+    "currentCompleteTypeScriptPassed": false,
+    "fullProjectSuitePassed": false,
+    "currentBuildPassed": false,
+    "currentMobilePassed": false,
+    "releaseReady": false,
+    "published": false,
+    "milestone": "M1 open",
+    "missingHistoricalRawCaptures": 45
+  },
+  "verificationScope": "384 new members /54,858,836 bytes freshly scanned, restored and hashed. The 97 unchanged XPENG recovery archives retain their exact prior independent verification. The combined 99-archive /7,866-file plan is logical, not a repeated whole-base scan.",
+  "combinedArchiveCount": 99,
+  "combinedLogicalFileCount": 7866,
+  "freshRestoredFiles": 384,
+  "freshRestoredBytes": 54858836,
+  "documents": [
+    {
+      "filename": "Roadmark-RECOVERY-INDEX-MERCEDES-RESEARCH-SAFETY-20261014.md",
+      "library_file_id": "libfile_29a2027044e88191b77661ef4ba70f7a",
+      "version": 0,
+      "bytes": 26310,
+      "sha256": "4115135db066f56bf743d8aec15224cc214c237316efe097dd2b1b2d37bd092b"
+    },
+    {
+      "filename": "Roadmark-RECOVERY-MANIFEST-MERCEDES-RESEARCH-SAFETY-20261014.json",
+      "library_file_id": "libfile_11550c2965408191a67cf959bd2e6afa",
+      "version": 0,
+      "bytes": 2487240,
+      "sha256": "1f6691e57bc5323e39bbb8eef12531e46bc9dec5c69c379caf634e31682a2be7"
+    },
+    {
+      "filename": "Roadmark-RECOVERY-VERIFICATION-MERCEDES-RESEARCH-SAFETY-20261014.json",
+      "library_file_id": "libfile_64be48d7a8a08191b3d458602c26880f",
+      "version": 0,
+      "bytes": 644704,
+      "sha256": "12acf8934d672fdb6a53c06286de07d1f00e673b823c009cceebfa1a91a21756"
+    }
+  ],
+  "independentIncrementVerification": {
+    "result": "PASS",
+    "base": {
+      "checkpoint": "xpeng-registered-working-20261014T2030",
+      "manifest": {
+        "filename": "Roadmark-RECOVERY-MANIFEST-XPENG-REGISTERED-WORKING-20261014.json",
+        "bytes": 3165732,
+        "sha256": "fcd01995d63af48d6e0746f6bf9fab844735a42ac0754f74cce382d3ab4d8d24",
+        "library_file_id": "libfile_1c10376e5b088191b53f61ec8fcbc370",
+        "version": 0
+      },
+      "finalReceipt": {
+        "bytes": 48078,
+        "sha256": "35cdb462eab8a2fdd6e1ef8be154ec361716ba00a1ccef46764d5492442e7f93"
+      },
+      "archives": 97,
+      "logicalFiles": 7483,
+      "logicalBytes": 2663327848,
+      "source": {
+        "filename": "Roadmark-recovery-source-XPENG-REGISTERED-WORKING-20261014T2030.tar.xz",
+        "bytes": 8337940,
+        "sha256": "958ab268995fb3b59c64b1fd177e3faceec38ad74bb145b94f77004c4ec9aed5",
+        "group": "source-XPENG-REGISTERED-WORKING",
+        "library_file_id": "libfile_664dd42cadcc8191b19f977c66ec71c2",
+        "version": 0,
+        "new": true,
+        "restoreOrder": 39,
+        "file_id": "file_00000000022081f89a675f232edcbc4c"
+      }
+    },
+    "capture": {
+      "originalFiles": 377,
+      "originalBytes": 54523137,
+      "capturedPayloadFiles": 380,
+      "generatedSupportFiles": 3,
+      "allOriginalHashesReverified": true,
+      "frozenKnownHashesCompared": 181,
+      "newOriginalHashesCompared": 191,
+      "allOriginalCaptureIdentitiesUnchanged": true,
+      "independentTransformReplayExact": true,
+      "changedRawCopies": 8,
+      "redactionLocations": 51,
+      "factualNormalizedEvidenceUnchanged": true
+    },
+    "archives": [
+      {
+        "filename": "Roadmark-recovery-MERCEDES-RESEARCH-SAFETY-20261014T2145-part01of02.tar.xz",
+        "bytes": 6744000,
+        "sha256": "51837b39b8088c66ff8302d4b8c7dadb86626b409bcd997f29053f9b0baaa5cc",
+        "members": 286,
+        "payloadMembers": 284,
+        "uncompressedBytes": 44807444,
+        "allMembersSafeAndRehashed": true,
+        "rawScannerReport": {
+          "filename": "MERCEDES-RESEARCH-SAFETY-PART01-RAW-RESIDUAL-REPORT.json",
+          "bytes": 1308,
+          "sha256": "8dc20348eb22dd2db319dc3c722ebd7540f928e0d50abc5f83c7f66114e4de5c"
+        },
+        "classifiedScannerReport": {
+          "filename": "MERCEDES-RESEARCH-SAFETY-PART01-CLASSIFIED-RESIDUAL-REPORT.json",
+          "bytes": 1635,
+          "sha256": "ee284b99fcc1bb80bca5f6c386a872c20c02f44c913264550ad3ebeb678a3967"
+        },
+        "scanMetrics": {
+          "startedAt": "2026-10-14T21:55:47.287103+00:00",
+          "endedAt": "2026-10-14T21:56:09.136273+00:00",
+          "command": [
+            "python3",
+            "final_residual_scan_memory_bounded.py",
+            "--archive",
+            "Roadmark-recovery-MERCEDES-RESEARCH-SAFETY-20261014T2145-part01of02.tar.xz",
+            "--report",
+            "MERCEDES-RESEARCH-SAFETY-PART01-RAW-RESIDUAL-REPORT.json"
+          ],
+          "exitCode": 0,
+          "wallSeconds": 21.849,
+          "userSeconds": 21.264299,
+          "systemSeconds": 0.560591,
+          "maxRssKiB": 73016,
+          "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB",
+          "hostTimeBinaryAvailable": false
+        }
+      },
+      {
+        "filename": "Roadmark-recovery-MERCEDES-RESEARCH-SAFETY-20261014T2145-part02of02.tar.xz",
+        "bytes": 836444,
+        "sha256": "ee6379ff651f400c09acc449d63e2becedab3480b6fa746d6e965f67ea06e57f",
+        "members": 98,
+        "payloadMembers": 96,
+        "uncompressedBytes": 10051392,
+        "allMembersSafeAndRehashed": true,
+        "rawScannerReport": {
+          "filename": "MERCEDES-RESEARCH-SAFETY-PART02-RAW-RESIDUAL-REPORT.json",
+          "bytes": 1704,
+          "sha256": "5f35ed97ba34af1cbed32bdf81b28476b4d9ea552afc68c1402acff091c0c950"
+        },
+        "classifiedScannerReport": {
+          "filename": "MERCEDES-RESEARCH-SAFETY-PART02-CLASSIFIED-RESIDUAL-REPORT.json",
+          "bytes": 2663,
+          "sha256": "216cc08898b79096e4b010c5b6f056b63d2e6f221d06356fc590aca5ae6c289e"
+        },
+        "scanMetrics": {
+          "startedAt": "2026-10-14T21:56:09.194577+00:00",
+          "endedAt": "2026-10-14T21:56:23.605690+00:00",
+          "command": [
+            "python3",
+            "final_residual_scan_memory_bounded.py",
+            "--archive",
+            "Roadmark-recovery-MERCEDES-RESEARCH-SAFETY-20261014T2145-part02of02.tar.xz",
+            "--report",
+            "MERCEDES-RESEARCH-SAFETY-PART02-RAW-RESIDUAL-REPORT.json"
+          ],
+          "exitCode": 0,
+          "wallSeconds": 14.412,
+          "userSeconds": 14.178829,
+          "systemSeconds": 0.22347499999999998,
+          "maxRssKiB": 45664,
+          "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB",
+          "hostTimeBinaryAvailable": false
+        }
+      }
+    ],
+    "overlay": {
+      "baseArchives": 97,
+      "combinedArchives": 99,
+      "baseLogicalFiles": 7483,
+      "newMemberFiles": 384,
+      "onlyExistingPathOverlay": [
+        "roadmark-104-qa/work-status.json"
+      ],
+      "combinedLogicalFiles": 7866,
+      "combinedLogicalBytes": 2718173771,
+      "sourceUnchangedNativeVersionReused": true,
+      "wholeBaseArchiveAndTreeReadsPerformed": false,
+      "combinedTreeMaterialized": false
+    },
+    "nativeHelperRestore": {
+      "result": "PASS",
+      "archivesVerified": 2,
+      "restoredFilesVerified": 384,
+      "restoredBytes": 54858836
+    },
+    "helperSafetyProofReused": {
+      "result": "PASS",
+      "helper": {
+        "path": "Roadmark-VERIFY-SAFE-RECOVERY-20261014.py",
+        "library_file_id": "libfile_ca3a7f7c6970819188bdbf0b22dd8acb",
+        "version": 0,
+        "bytes": 4821,
+        "sha256": "513fe7a49f27e8efc99ec7039a245c8e65b1b87e1bd3b0acdb1512f57d634dc7"
+      },
+      "syntheticFixtures": [
+        {
+          "test": "valid",
+          "result": "PASS",
+          "expectedSuccess": true,
+          "returncode": 0
+        },
+        {
+          "test": "traversal",
+          "result": "PASS",
+          "expectedSuccess": false,
+          "returncode": 1
+        },
+        {
+          "test": "absolute",
+          "result": "PASS",
+          "expectedSuccess": false,
+          "returncode": 1
+        },
+        {
+          "test": "backslash",
+          "result": "PASS",
+          "expectedSuccess": false,
+          "returncode": 1
+        },
+        {
+          "test": "symlink",
+          "result": "PASS",
+          "expectedSuccess": false,
+          "returncode": 1
+        },
+        {
+          "test": "hardlink",
+          "result": "PASS",
+          "expectedSuccess": false,
+          "returncode": 1
+        },
+        {
+          "test": "duplicate-member",
+          "result": "PASS",
+          "expectedSuccess": false,
+          "returncode": 1
+        },
+        {
+          "test": "existing-output",
+          "result": "PASS",
+          "expectedSuccess": false,
+          "returncode": 1
+        },
+        {
+          "test": "wrong-archive-hash",
+          "result": "PASS",
+          "expectedSuccess": false,
+          "returncode": 1
+        },
+        {
+          "test": "excluded-native-id",
+          "result": "PASS",
+          "expectedSuccess": false,
+          "returncode": 1
+        },
+        {
+          "test": "bad-restore-order",
+          "result": "PASS",
+          "expectedSuccess": false,
+          "returncode": 1
+        },
+        {
+          "test": "unexpected-member",
+          "result": "PASS",
+          "expectedSuccess": false,
+          "returncode": 1
+        },
+        {
+          "test": "duplicate-manifest",
+          "result": "PASS",
+          "expectedSuccess": false,
+          "returncode": 1
+        }
+      ],
+      "applicationSourceExecuted": false,
+      "realBaseArchivesRead": false,
+      "existingDestinationWritesPrevented": true,
+      "maliciousMemberPathsAndLinksRejectedBeforeOutputCreation": true
+    },
+    "privacy": {
+      "result": "PASS_WITH_ONE_EXACT_BENIGN_CLASSIFICATION",
+      "members": 384,
+      "bytes": 54858836,
+      "knownHistoricalValues": 55,
+      "knownHistoricalForms": 373,
+      "newRuntimeValues": 20,
+      "newRuntimeForms": 128,
+      "newValueResidualMatchesAcrossAllArchiveMembers": 0,
+      "rawPrimaryCandidates": 1,
+      "reviewedBenignPrimaryCandidates": 1,
+      "unclassifiedFindingsOrErrors": 0,
+      "scannerEnginesUnchanged": true,
+      "enginePins": {
+        "final_residual_scan_memory_bounded.py": {
+          "bytes": 9720,
+          "sha256": "db71353ba5fe98021f68cd9aeaae6eb4e1878627fb4985278b11457baf837238"
+        },
+        "chunked_lower_find.py": {
+          "bytes": 1278,
+          "sha256": "6de208f633b05ef1cb894ca8e896c4a489bb093eb1339134c4b1d7158263ec1f"
+        },
+        "audit_scan.py": {
+          "bytes": 7044,
+          "sha256": "54ee0827089ad8202a24c6769a4178dee28fe96b85f1fd8a627a15703c15f3b2"
+        },
+        "runtime_token_scan.py": {
+          "bytes": 5041,
+          "sha256": "4ea9c6be9b292bbe126fcc2f8d7b3254a1dc941c49d78b263c9203d0025f9c46"
+        }
+      },
+      "limitations": [
+        "Does not decrypt encrypted content",
+        "Does not recursively unpack arbitrary compressed or proprietary content inside regular payloads",
+        "Standalone base64 matching is not a claim to inspect every possible base64 wrapping/alignment of a larger structure"
+      ],
+      "universalAbsenceOfSecretsClaimed": false
+    },
+    "sourcePinCompatibility": {
+      "changedRawCopies": 8,
+      "withRetainedOriginalHashReferences": 7,
+      "finalV6SourceManifestAffectedCopies": [
+        "mercedes-research/technical/city-ringwood.raw.html",
+        "mercedes-research/technical/eqa-choice.raw.html",
+        "mercedes-research/technical/glb-whichcar.raw.html",
+        "mercedes-research/technical/glc-whichcar.raw.html"
+      ],
+      "mappingRestorePath": "mercedes-safety-support/RUNTIME-SANITATION-REPORT.json",
+      "originalExpectedHashesPreserved": true,
+      "sanitizedHashesMaySatisfyOriginalPins": false,
+      "entries": [
+        {
+          "path": "mercedes-research/people-movers/evans-2023-au-maker-brochure-mirror.error.raw",
+          "originalBytes": 6093,
+          "originalSHA256": "43e73052950b1e4f0f1cf1f1c17e33f1353cfb5bf68b0b8e153f77f7bb1bca94",
+          "sanitizedBytes": 3963,
+          "sanitizedSHA256": "723ccd8d4cb44ed7262105731e949c39955fa9e02c728b5b898acecfdb834d4f",
+          "retainedOriginalHashReferences": [
+            "mercedes-research/normalized-evidence-draft-v2.json",
+            "mercedes-research/normalized-evidence-draft-v3.json",
+            "mercedes-research/normalized-evidence-draft-v4.json",
+            "mercedes-research/normalized-evidence-v1.json",
+            "mercedes-research/normalized-evidence-v2.json",
+            "mercedes-research/normalized-evidence-v3.json",
+            "mercedes-research/normalized-evidence-v4.json",
+            "mercedes-research/normalized-evidence-v5.json",
+            "mercedes-research/normalized-evidence-v6.json",
+            "mercedes-research/people-movers/capture-manifest.json",
+            "mercedes-research/people-movers/normalized-facts.json",
+            "mercedes-research/people-movers/sources.json",
+            "mercedes-staging-plan/recovery-cut/frozen-research-allowlist-v1.json"
+          ],
+          "originalCapturePinMatchesRestoredCopy": false,
+          "originalByteStatusInThisRecovery": "unavailable: privacy-sanitized copy only; original local working file was not modified",
+          "sanitizedRecoveryManifestPinMatches": true
+        },
+        {
+          "path": "mercedes-research/people-movers/evito-redbook-2026.error.raw",
+          "originalBytes": 773,
+          "originalSHA256": "ef91352335721e0d690c83085a0d6fb525163a4a122697b01e05a6bc646d4c10",
+          "sanitizedBytes": 616,
+          "sanitizedSHA256": "1eb23b46f90872f70a39fa5e5918edf889a2bbb6ba86908837cea6a300d75893",
+          "retainedOriginalHashReferences": [
+            "mercedes-research/normalized-evidence-draft-v2.json",
+            "mercedes-research/normalized-evidence-draft-v3.json",
+            "mercedes-research/normalized-evidence-draft-v4.json",
+            "mercedes-research/normalized-evidence-v1.json",
+            "mercedes-research/normalized-evidence-v2.json",
+            "mercedes-research/normalized-evidence-v3.json",
+            "mercedes-research/normalized-evidence-v4.json",
+            "mercedes-research/normalized-evidence-v5.json",
+            "mercedes-research/normalized-evidence-v6.json",
+            "mercedes-research/people-movers/capture-manifest-extra.json",
+            "mercedes-research/people-movers/normalized-facts.json",
+            "mercedes-research/people-movers/sources.json",
+            "mercedes-staging-plan/recovery-cut/frozen-research-allowlist-v1.json"
+          ],
+          "originalCapturePinMatchesRestoredCopy": false,
+          "originalByteStatusInThisRecovery": "unavailable: privacy-sanitized copy only; original local working file was not modified",
+          "sanitizedRecoveryManifestPinMatches": true
+        },
+        {
+          "path": "mercedes-research/technical/city-ringwood.raw.html",
+          "originalBytes": 127678,
+          "originalSHA256": "90bbd08d40adbd8a5d813859f2366924973a7b9d54ae060b42162daa9f236110",
+          "sanitizedBytes": 127747,
+          "sanitizedSHA256": "a82fc8fb0f398c7da19ee807010fab0d5ef0f9749c5db54d7a69e79ef40a7c4b",
+          "retainedOriginalHashReferences": [
+            "mercedes-research/city-editions/normalized-city-editions.json",
+            "mercedes-research/city-editions/sources.json",
+            "mercedes-research/normalized-evidence-draft-v4.json",
+            "mercedes-research/normalized-evidence-v1.json",
+            "mercedes-research/normalized-evidence-v2.json",
+            "mercedes-research/normalized-evidence-v3.json",
+            "mercedes-research/normalized-evidence-v4.json",
+            "mercedes-research/normalized-evidence-v5.json",
+            "mercedes-research/normalized-evidence-v6.json",
+            "mercedes-research/technical/extra1-capture-manifest.json",
+            "mercedes-staging-plan/packet-preparation/source-capture-manifest-v4.json",
+            "mercedes-staging-plan/packet-preparation/source-capture-manifest-v6.json",
+            "mercedes-staging-plan/recovery-cut/frozen-research-allowlist-v1.json"
+          ],
+          "originalCapturePinMatchesRestoredCopy": false,
+          "originalByteStatusInThisRecovery": "unavailable: privacy-sanitized copy only; original local working file was not modified",
+          "sanitizedRecoveryManifestPinMatches": true
+        },
+        {
+          "path": "mercedes-research/technical/eqa-choice.raw.html",
+          "originalBytes": 538630,
+          "originalSHA256": "306e6986a4149505818d86bbd8d8591519032c76378af45cb7ef7e1f0b20756e",
+          "sanitizedBytes": 538699,
+          "sanitizedSHA256": "5362b17c79d6deba116ab21c1feb26a123d6887cc384a3f21f1e6dc2f3d15b90",
+          "retainedOriginalHashReferences": [
+            "mercedes-research/normalized-evidence-draft-v2.json",
+            "mercedes-research/normalized-evidence-draft-v3.json",
+            "mercedes-research/normalized-evidence-draft-v4.json",
+            "mercedes-research/normalized-evidence-v1.json",
+            "mercedes-research/normalized-evidence-v2.json",
+            "mercedes-research/normalized-evidence-v3.json",
+            "mercedes-research/normalized-evidence-v4.json",
+            "mercedes-research/normalized-evidence-v5.json",
+            "mercedes-research/normalized-evidence-v6.json",
+            "mercedes-research/normalized-passenger-draft-v1.json",
+            "mercedes-research/technical/extra5-capture-manifest.json",
+            "mercedes-staging-plan/packet-preparation/source-capture-manifest-v4.json",
+            "mercedes-staging-plan/packet-preparation/source-capture-manifest-v6.json",
+            "mercedes-staging-plan/recovery-cut/frozen-research-allowlist-v1.json"
+          ],
+          "originalCapturePinMatchesRestoredCopy": false,
+          "originalByteStatusInThisRecovery": "unavailable: privacy-sanitized copy only; original local working file was not modified",
+          "sanitizedRecoveryManifestPinMatches": true
+        },
+        {
+          "path": "mercedes-research/technical/eqa-stock-current.raw.html",
+          "originalBytes": 467018,
+          "originalSHA256": "04f9d556013be49932c42fbd05c90da51a2e8fca59bf62c1bd2d66330c23c8c6",
+          "sanitizedBytes": 466976,
+          "sanitizedSHA256": "d02f2b156999b98c8a4b55ec28a39c2942e90fc8133f8c275c77e1cb7f16a743",
+          "retainedOriginalHashReferences": [
+            "mercedes-research/technical/more-capture-manifest-v1.json",
+            "mercedes-staging-plan/recovery-cut/frozen-research-allowlist-v1.json"
+          ],
+          "originalCapturePinMatchesRestoredCopy": false,
+          "originalByteStatusInThisRecovery": "unavailable: privacy-sanitized copy only; original local working file was not modified",
+          "sanitizedRecoveryManifestPinMatches": true
+        },
+        {
+          "path": "mercedes-research/technical/eqa-stock-current.ssr.json",
+          "originalBytes": 290318,
+          "originalSHA256": "e2e2011b0e674bf6f32dacf45ccd6cb803a912bf5109fe608c6e27379408fde4",
+          "sanitizedBytes": 290276,
+          "sanitizedSHA256": "99aa956a00c6414bd0720f4834cc1c5b28fc0cbfddf6a02998ef1c06df8fba6e",
+          "retainedOriginalHashReferences": [],
+          "originalCapturePinMatchesRestoredCopy": false,
+          "originalByteStatusInThisRecovery": "unavailable: privacy-sanitized copy only; original local working file was not modified",
+          "sanitizedRecoveryManifestPinMatches": true
+        },
+        {
+          "path": "mercedes-research/technical/glb-whichcar.raw.html",
+          "originalBytes": 165001,
+          "originalSHA256": "b54ca183b859ee18fa291195db74b7c584ff9b59bf361bf774fc0ae26f42df51",
+          "sanitizedBytes": 165024,
+          "sanitizedSHA256": "84d9a54dab043f194d3e3201928c79dcdef34590d23fea5d7e99391cf0c84c42",
+          "retainedOriginalHashReferences": [
+            "mercedes-research/normalized-evidence-draft-v2.json",
+            "mercedes-research/normalized-evidence-draft-v3.json",
+            "mercedes-research/normalized-evidence-draft-v4.json",
+            "mercedes-research/normalized-evidence-v1.json",
+            "mercedes-research/normalized-evidence-v2.json",
+            "mercedes-research/normalized-evidence-v3.json",
+            "mercedes-research/normalized-evidence-v4.json",
+            "mercedes-research/normalized-evidence-v5.json",
+            "mercedes-research/normalized-evidence-v6.json",
+            "mercedes-research/normalized-passenger-draft-v1.json",
+            "mercedes-research/technical/extra5-capture-manifest.json",
+            "mercedes-staging-plan/packet-preparation/source-capture-manifest-v4.json",
+            "mercedes-staging-plan/packet-preparation/source-capture-manifest-v6.json",
+            "mercedes-staging-plan/recovery-cut/frozen-research-allowlist-v1.json"
+          ],
+          "originalCapturePinMatchesRestoredCopy": false,
+          "originalByteStatusInThisRecovery": "unavailable: privacy-sanitized copy only; original local working file was not modified",
+          "sanitizedRecoveryManifestPinMatches": true
+        },
+        {
+          "path": "mercedes-research/technical/glc-whichcar.raw.html",
+          "originalBytes": 169461,
+          "originalSHA256": "d9eafe061ffc46c9814a7ca6e8f9e958e0b0d1e9279789e5b7522b66b10274ba",
+          "sanitizedBytes": 169484,
+          "sanitizedSHA256": "314207d7cf569680cd7873a99d7f0d9fc737d6f533fc3253fda1777affcbea02",
+          "retainedOriginalHashReferences": [
+            "mercedes-research/normalized-evidence-draft-v2.json",
+            "mercedes-research/normalized-evidence-draft-v3.json",
+            "mercedes-research/normalized-evidence-draft-v4.json",
+            "mercedes-research/normalized-evidence-v1.json",
+            "mercedes-research/normalized-evidence-v2.json",
+            "mercedes-research/normalized-evidence-v3.json",
+            "mercedes-research/normalized-evidence-v4.json",
+            "mercedes-research/normalized-evidence-v5.json",
+            "mercedes-research/normalized-evidence-v6.json",
+            "mercedes-research/normalized-passenger-draft-v1.json",
+            "mercedes-research/technical/more-capture-manifest-v1.json",
+            "mercedes-staging-plan/packet-preparation/source-capture-manifest-v4.json",
+            "mercedes-staging-plan/packet-preparation/source-capture-manifest-v6.json",
+            "mercedes-staging-plan/recovery-cut/frozen-research-allowlist-v1.json"
+          ],
+          "originalCapturePinMatchesRestoredCopy": false,
+          "originalByteStatusInThisRecovery": "unavailable: privacy-sanitized copy only; original local working file was not modified",
+          "sanitizedRecoveryManifestPinMatches": true
+        }
+      ]
+    },
+    "preservedApplicationLimits": {
+      "preAssembly": true,
+      "preCanonical": true,
+      "MercedesRegistered": false,
+      "researchV6AndCorrectedBaselineV2AcceptedAsOfFrozenCut": true,
+      "baselineV1FailedAndPreserved": true,
+      "historicalMissingMercedesRawCaptures": 45,
+      "historicalOriginalsReconstructed": false,
+      "currentFullTypeScriptBuildAggregateMobileReleasePassed": false,
+      "newImagesOrScreenshots": 0,
+      "applicationCodeExecutedByVerifier": false,
+      "baselineV1Terminal": {
+        "startedAt": "2026-10-14T21:15:36.349378+00:00",
+        "cwd": "roadmark-104",
+        "command": [
+          "/usr/bin/timeout",
+          "--signal=TERM",
+          "--kill-after=10s",
+          "180s",
+          "node",
+          "--expose-gc",
+          "--max-old-space-size=448",
+          "--max-semi-space-size=1",
+          "--import",
+          "tsx",
+          "mercedes-staging-plan/baseline-preparation/extract-reviewed-baseline.mjs",
+          "--manifest",
+          "mercedes-staging-plan/baseline-preparation/baseline-manifest-v1.json",
+          "--manifest-sha256",
+          "bdcedddcbac5e2090efe423fc640a97975dcd3746ab10db916244ea7d5b7230d",
+          "--review",
+          "mercedes-staging-plan/baseline-preparation/reviews/baseline-v1.json",
+          "--review-sha256",
+          "be0384588bbfadb4479e074bda866556b8de072a3ea9da4b7087e98b107313ff"
+        ],
+        "timeoutSeconds": 180,
+        "newProcessGroup": true,
+        "completedAt": "2026-10-14T21:15:48.670468+00:00",
+        "returncode": 1,
+        "signal": null,
+        "timeoutReported": false,
+        "elapsedSeconds": 12.321139867999591,
+        "maxRssKiB": 429216,
+        "userSeconds": 18.279815,
+        "systemSeconds": 3.2893499999999998,
+        "receiptWrittenAfterExit": true
+      },
+      "baselineV2Terminal": {
+        "startedAt": "2026-10-14T21:23:32.883123+00:00",
+        "cwd": "roadmark-104",
+        "command": [
+          "/usr/bin/timeout",
+          "--signal=TERM",
+          "--kill-after=10s",
+          "180s",
+          "node",
+          "--expose-gc",
+          "--max-old-space-size=448",
+          "--max-semi-space-size=1",
+          "--import",
+          "tsx",
+          "mercedes-staging-plan/baseline-preparation/extract-reviewed-baseline-v2.mjs",
+          "--manifest",
+          "mercedes-staging-plan/baseline-preparation/baseline-manifest-v2.json",
+          "--manifest-sha256",
+          "536815e286386fb3907056c4936d156e1eb232424c64485bfeff4a50648dbf06",
+          "--review",
+          "mercedes-staging-plan/baseline-preparation/reviews/baseline-v2.json",
+          "--review-sha256",
+          "09abaa6cbc818ca7fe28f48d3f582f51b04603e1d889af471747901520b2e2cf"
+        ],
+        "timeoutSeconds": 180,
+        "newProcessGroup": true,
+        "completedAt": "2026-10-14T21:23:52.624134+00:00",
+        "returncode": 0,
+        "signal": null,
+        "timeoutReported": false,
+        "elapsedSeconds": 19.74103569299041,
+        "maxRssKiB": 427304,
+        "userSeconds": 38.867314,
+        "systemSeconds": 3.316642,
+        "receiptWrittenAfterExit": true
+      }
+    },
+    "inputPins": {
+      "CAPTURE-MANIFEST.json": {
+        "bytes": 278713,
+        "sha256": "baecf1621633c72baad63c41757b6c805fde9bd7bc9ab6719e788d5846758339"
+      },
+      "increment-result.json": {
+        "bytes": 1540,
+        "sha256": "8717acb76fcc15ffc41d9ed78b8a740e7b9768d2e1599cb7341895fef8fb98cd"
+      },
+      "BASE-RECOVERY-PIN.json": {
+        "bytes": 1074,
+        "sha256": "c73262c901df3e574acda9b63857f932eb4a2b1acea50237154da773dd1e1cd1"
+      },
+      "RUNTIME-SANITATION-REPORT.json": {
+        "bytes": 51410,
+        "sha256": "d2783deea56dc69a68e33166c97a235942333fd7afad2c228223bc1e591a7971"
+      },
+      "BENIGN-PRIMARY-CLASSIFICATION.json": {
+        "bytes": 535,
+        "sha256": "014d17f95dc06fcf706044d2697dd3e6b5de1510d7f8807e0156a5b48efc7251"
+      },
+      "INDEPENDENT-MERCEDES-METADATA-PREPARATION.json": {
+        "bytes": 192390,
+        "sha256": "19d731a5336e79244a851afb28c079881bf17c612a492415109fadaac74c49bd"
+      },
+      "INDEPENDENT-BOUNDED-PRIVACY-CLASSIFICATION.json": {
+        "bytes": 4656,
+        "sha256": "e2d3c52ce7a0e125ebf0b2d94b86da58debf7ab5da9a2bdfacef41ba3379655a"
+      },
+      "INDEPENDENT-VERIFIED-INCREMENT.json": {
+        "bytes": 1566735,
+        "sha256": "0ccd9aca36c02542d1826df29759979411a3cbcfc81ada9903611726848c6601"
+      }
+    },
+    "verificationScript": {
+      "bytes": 21202,
+      "sha256": "42fd2d59731844c5c49b1e74d2ae63683c0a5dacb08bdb18e50f6ef09f0445e6"
+    },
+    "verificationScope": "Only new explicit increment independently byte-verified, safely restored and reconciled with exact immutable prior base proofs. Final deliverable/native persistence checks remain a separate gate.",
+    "completedAt": "2026-10-14T21:58:42.211656+00:00",
+    "resources": {
+      "wallSeconds": 3.213,
+      "userSeconds": 2.106783,
+      "systemSeconds": 0.168491,
+      "maxRssKiB": 47060,
+      "parallelWorkers": 0,
+      "hashChunkBytes": 1048576
+    },
+    "finalMetadataBinding": {
+      "result": "PASS",
+      "heavyPassReceipt": {
+        "filename": "INDEPENDENT-MERCEDES-HEAVY-PASS.json",
+        "bytes": 25749,
+        "sha256": "7c9cab8f47c5a4f1cff2beca9011722171b150a5fd3fe23b868a9d305ed8298e"
+      },
+      "primaryAndAcceptedEvidenceCheck": {
+        "filename": "INDEPENDENT-PRIMARY-AND-ACCEPTED-EVIDENCE-CHECK.json",
+        "bytes": 5978,
+        "sha256": "74c440c189e976f17cbd5d148858662e90e9d1a9d1fdfdfd332a99d1410859d8"
+      },
+      "factualPreservationReview": {
+        "filename": "MERCEDES-SANITIZED-FACTUAL-PASSAGE-REVIEW.json",
+        "bytes": 14275,
+        "sha256": "6db9661dc7ebbf4461ae5fd969bb731309d225c7e2c4b4dce3132680c87afc1b",
+        "result": "PASS",
+        "status": "accepted_bounded_factual_preservation_of_sanitized_backup_copies",
+        "fourFinalManifestCaptureMappingsExact": true,
+        "scope": "Preserves City advertisement naming/currently-available wording and copyright scope; public 2025 CHOICE drive/acceleration/cargo/categorical towing; exact GLB WLTP grades and third-row-folded/front-cargo scope; GLC exact price exclusion, range, drivetrain, acceleration and cargo seating scope. This is preservation review, not an evidence regrade or new current-supply attestation.",
+        "limitations": [
+          "Sanitized files have different bytes and SHA256 values; they cannot satisfy original capture pins.",
+          "The original research, source-capture manifest and working originals are unchanged. This receipt does not amend them.",
+          "Future restoration replay requires the unavailable original bytes or a separately reviewed replacement manifest and provenance review; no silent original-hash equivalence.",
+          "This bounded check does not attest residual credential scanning, archive/upload integrity or other backup members; those remain the backup verifier scope.",
+          "No original removed nonce/runtime value is included in this receipt."
+        ]
+      },
+      "supplementalVerifierSchemaCorrection": {
+        "filename": "INDEPENDENT-CROSSCHECK-SCHEMA-CORRECTION.json",
+        "bytes": 748,
+        "sha256": "54aa204c55d8d57efc1f991ceab73094cb29f4d4a400c05ba54316e1f1a7cc06"
+      },
+      "newArchiveUploadGateReady": true,
+      "documentAndNativeActiveReceiptChecksRemainPending": true,
+      "completedAt": "2026-10-14T22:00:33.848954+00:00"
+    }
+  },
+  "preSaveDocumentVerification": {
+    "result": "PASS",
+    "documents": {
+      "Roadmark-RECOVERY-INDEX-MERCEDES-RESEARCH-SAFETY-20261014.md": {
+        "bytes": 26310,
+        "sha256": "4115135db066f56bf743d8aec15224cc214c237316efe097dd2b1b2d37bd092b"
+      },
+      "Roadmark-RECOVERY-MANIFEST-MERCEDES-RESEARCH-SAFETY-20261014.json": {
+        "bytes": 2487240,
+        "sha256": "1f6691e57bc5323e39bbb8eef12531e46bc9dec5c69c379caf634e31682a2be7"
+      },
+      "Roadmark-RECOVERY-VERIFICATION-MERCEDES-RESEARCH-SAFETY-20261014.json": {
+        "bytes": 644704,
+        "sha256": "12acf8934d672fdb6a53c06286de07d1f00e673b823c009cceebfa1a91a21756"
+      }
+    },
+    "archiveCount": 99,
+    "newArchivePersistenceIdentitiesVerified": 2,
+    "baseArchiveNativeVersionsUnchanged": 97,
+    "combinedLogicalFiles": 7866,
+    "combinedLogicalBytes": 2718173771,
+    "freshRestoredFiles": 384,
+    "freshRestoredBytes": 54858836,
+    "sourceNativeId": "libfile_664dd42cadcc8191b19f977c66ec71c2",
+    "sourceNativeVersion": 0,
+    "sourceStrictUnder15DecimalMB": true,
+    "sourceRecapturedOrUploaded": false,
+    "independentSupportExact": true,
+    "failedSupplementalVerifierAttemptAndCorrectionPreserved": true,
+    "originalCapturePinAndSanitizedRecoveryPinDistinctionExplicit": true,
+    "factualReviewFourCaptureMappingsExact": true,
+    "rawPrivacyCandidateOneExactBenignOnly": true,
+    "applicationLimitsPreserved": true,
+    "copyableRestoreCommandVerified": true,
+    "documentPrivacy": {
+      "result": "PASS",
+      "report": {
+        "bytes": 1302,
+        "sha256": "9bb84dbcb2d420f63eeb4059e73939c1528ee50e6ffc23c8691f67032fa4a5a7"
+      },
+      "documents": 3,
+      "bytes": 3158254,
+      "knownValues": 55,
+      "forms": 373,
+      "findingsOrErrors": 0,
+      "metrics": {
+        "startedAt": "2026-10-14T22:01:07.938361+00:00",
+        "endedAt": "2026-10-14T22:01:18.022393+00:00",
+        "command": [
+          "python3",
+          "roadmark-recovery-20261014/privacy-audit-20261014T0355/final_residual_scan_memory_bounded.py",
+          "--tree",
+          "roadmark-recovery-20261014/checkpoints/mercedes-research-safety-20261014T2145/deliverables",
+          "--report",
+          "roadmark-recovery-20261014/privacy-audit-20261014T0355/MERCEDES-RESEARCH-SAFETY-DELIVERABLE-RESIDUAL-REPORT.json"
+        ],
+        "exitCode": 0,
+        "wallSeconds": 10.084,
+        "userSeconds": 9.860359,
+        "systemSeconds": 0.217747,
+        "maxRssKiB": 45660,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB",
+        "hostTimeBinaryAvailable": false
+      }
+    },
+    "archivePayloadReads": false,
+    "applicationExecution": false,
+    "heavyProcessesStarted": false,
+    "activeReceiptStillPending": true,
+    "completedAt": "2026-10-14T22:02:32.798575+00:00"
+  },
+  "privacy": {
+    "rawCopiesSanitized": 8,
+    "redactionLocations": 51,
+    "reviewedBenignPrimary": 1,
+    "unclassifiedResiduals": 0,
+    "limitations": "Bounded specified scans only, not universal secret-free assurance"
+  },
+  "originalRawCaptureReplayCompatibility": {
+    "sanitizedRawCopies": 8,
+    "withRetainedOriginalHashReferences": 7,
+    "pinnedByFinalV6SourceManifest": 4,
+    "mappingRestorePath": "mercedes-safety-support/RUNTIME-SANITATION-REPORT.json",
+    "files": [
+      {
+        "path": "mercedes-research/people-movers/evans-2023-au-maker-brochure-mirror.error.raw",
+        "originalBytes": 6093,
+        "originalSHA256": "43e73052950b1e4f0f1cf1f1c17e33f1353cfb5bf68b0b8e153f77f7bb1bca94",
+        "sanitizedBytes": 3963,
+        "sanitizedSHA256": "723ccd8d4cb44ed7262105731e949c39955fa9e02c728b5b898acecfdb834d4f",
+        "originalHashReferencedByRetainedMetadata": true,
+        "referencedByFinalV6SourceManifest": false,
+        "referenceFiles": [
+          "mercedes-research/normalized-evidence-draft-v3.json",
+          "mercedes-research/normalized-evidence-draft-v4.json",
+          "mercedes-research/normalized-evidence-v1.json",
+          "mercedes-research/normalized-evidence-v2.json",
+          "mercedes-research/normalized-evidence-v3.json",
+          "mercedes-research/normalized-evidence-v4.json",
+          "mercedes-research/normalized-evidence-v5.json",
+          "mercedes-research/normalized-evidence-v6.json"
+        ]
+      },
+      {
+        "path": "mercedes-research/people-movers/evito-redbook-2026.error.raw",
+        "originalBytes": 773,
+        "originalSHA256": "ef91352335721e0d690c83085a0d6fb525163a4a122697b01e05a6bc646d4c10",
+        "sanitizedBytes": 616,
+        "sanitizedSHA256": "1eb23b46f90872f70a39fa5e5918edf889a2bbb6ba86908837cea6a300d75893",
+        "originalHashReferencedByRetainedMetadata": true,
+        "referencedByFinalV6SourceManifest": false,
+        "referenceFiles": [
+          "mercedes-research/normalized-evidence-draft-v3.json",
+          "mercedes-research/normalized-evidence-draft-v4.json",
+          "mercedes-research/normalized-evidence-v1.json",
+          "mercedes-research/normalized-evidence-v2.json",
+          "mercedes-research/normalized-evidence-v3.json",
+          "mercedes-research/normalized-evidence-v4.json",
+          "mercedes-research/normalized-evidence-v5.json",
+          "mercedes-research/normalized-evidence-v6.json"
+        ]
+      },
+      {
+        "path": "mercedes-research/technical/city-ringwood.raw.html",
+        "originalBytes": 127678,
+        "originalSHA256": "90bbd08d40adbd8a5d813859f2366924973a7b9d54ae060b42162daa9f236110",
+        "sanitizedBytes": 127747,
+        "sanitizedSHA256": "a82fc8fb0f398c7da19ee807010fab0d5ef0f9749c5db54d7a69e79ef40a7c4b",
+        "originalHashReferencedByRetainedMetadata": true,
+        "referencedByFinalV6SourceManifest": true,
+        "referenceFiles": [
+          "mercedes-research/city-editions/normalized-city-editions.json",
+          "mercedes-research/city-editions/sources.json",
+          "mercedes-research/normalized-evidence-draft-v4.json",
+          "mercedes-research/normalized-evidence-v1.json",
+          "mercedes-research/normalized-evidence-v2.json",
+          "mercedes-research/normalized-evidence-v3.json",
+          "mercedes-research/normalized-evidence-v4.json",
+          "mercedes-research/normalized-evidence-v5.json",
+          "mercedes-research/normalized-evidence-v6.json",
+          "mercedes-research/technical/extra1-capture-manifest.json",
+          "mercedes-staging-plan/packet-preparation/source-capture-manifest-v4.json",
+          "mercedes-staging-plan/packet-preparation/source-capture-manifest-v6.json"
+        ]
+      },
+      {
+        "path": "mercedes-research/technical/eqa-choice.raw.html",
+        "originalBytes": 538630,
+        "originalSHA256": "306e6986a4149505818d86bbd8d8591519032c76378af45cb7ef7e1f0b20756e",
+        "sanitizedBytes": 538699,
+        "sanitizedSHA256": "5362b17c79d6deba116ab21c1feb26a123d6887cc384a3f21f1e6dc2f3d15b90",
+        "originalHashReferencedByRetainedMetadata": true,
+        "referencedByFinalV6SourceManifest": true,
+        "referenceFiles": [
+          "mercedes-research/normalized-evidence-draft-v2.json",
+          "mercedes-research/normalized-evidence-draft-v3.json",
+          "mercedes-research/normalized-evidence-draft-v4.json",
+          "mercedes-research/normalized-evidence-v1.json",
+          "mercedes-research/normalized-evidence-v2.json",
+          "mercedes-research/normalized-evidence-v3.json",
+          "mercedes-research/normalized-evidence-v4.json",
+          "mercedes-research/normalized-evidence-v5.json",
+          "mercedes-research/normalized-evidence-v6.json",
+          "mercedes-research/normalized-passenger-draft-v1.json",
+          "mercedes-research/technical/extra5-capture-manifest.json",
+          "mercedes-staging-plan/packet-preparation/source-capture-manifest-v4.json",
+          "mercedes-staging-plan/packet-preparation/source-capture-manifest-v6.json"
+        ]
+      },
+      {
+        "path": "mercedes-research/technical/eqa-stock-current.raw.html",
+        "originalBytes": 467018,
+        "originalSHA256": "04f9d556013be49932c42fbd05c90da51a2e8fca59bf62c1bd2d66330c23c8c6",
+        "sanitizedBytes": 466976,
+        "sanitizedSHA256": "d02f2b156999b98c8a4b55ec28a39c2942e90fc8133f8c275c77e1cb7f16a743",
+        "originalHashReferencedByRetainedMetadata": true,
+        "referencedByFinalV6SourceManifest": false,
+        "referenceFiles": [
+          "mercedes-research/technical/more-capture-manifest-v1.json"
+        ]
+      },
+      {
+        "path": "mercedes-research/technical/eqa-stock-current.ssr.json",
+        "originalBytes": 290318,
+        "originalSHA256": "e2e2011b0e674bf6f32dacf45ccd6cb803a912bf5109fe608c6e27379408fde4",
+        "sanitizedBytes": 290276,
+        "sanitizedSHA256": "99aa956a00c6414bd0720f4834cc1c5b28fc0cbfddf6a02998ef1c06df8fba6e",
+        "originalHashReferencedByRetainedMetadata": false,
+        "referencedByFinalV6SourceManifest": false,
+        "referenceFiles": []
+      },
+      {
+        "path": "mercedes-research/technical/glb-whichcar.raw.html",
+        "originalBytes": 165001,
+        "originalSHA256": "b54ca183b859ee18fa291195db74b7c584ff9b59bf361bf774fc0ae26f42df51",
+        "sanitizedBytes": 165024,
+        "sanitizedSHA256": "84d9a54dab043f194d3e3201928c79dcdef34590d23fea5d7e99391cf0c84c42",
+        "originalHashReferencedByRetainedMetadata": true,
+        "referencedByFinalV6SourceManifest": true,
+        "referenceFiles": [
+          "mercedes-research/normalized-evidence-draft-v2.json",
+          "mercedes-research/normalized-evidence-draft-v3.json",
+          "mercedes-research/normalized-evidence-draft-v4.json",
+          "mercedes-research/normalized-evidence-v1.json",
+          "mercedes-research/normalized-evidence-v2.json",
+          "mercedes-research/normalized-evidence-v3.json",
+          "mercedes-research/normalized-evidence-v4.json",
+          "mercedes-research/normalized-evidence-v5.json",
+          "mercedes-research/normalized-evidence-v6.json",
+          "mercedes-research/normalized-passenger-draft-v1.json",
+          "mercedes-research/technical/extra5-capture-manifest.json",
+          "mercedes-staging-plan/packet-preparation/source-capture-manifest-v4.json",
+          "mercedes-staging-plan/packet-preparation/source-capture-manifest-v6.json"
+        ]
+      },
+      {
+        "path": "mercedes-research/technical/glc-whichcar.raw.html",
+        "originalBytes": 169461,
+        "originalSHA256": "d9eafe061ffc46c9814a7ca6e8f9e958e0b0d1e9279789e5b7522b66b10274ba",
+        "sanitizedBytes": 169484,
+        "sanitizedSHA256": "314207d7cf569680cd7873a99d7f0d9fc737d6f533fc3253fda1777affcbea02",
+        "originalHashReferencedByRetainedMetadata": true,
+        "referencedByFinalV6SourceManifest": true,
+        "referenceFiles": [
+          "mercedes-research/normalized-evidence-draft-v2.json",
+          "mercedes-research/normalized-evidence-draft-v3.json",
+          "mercedes-research/normalized-evidence-draft-v4.json",
+          "mercedes-research/normalized-evidence-v1.json",
+          "mercedes-research/normalized-evidence-v2.json",
+          "mercedes-research/normalized-evidence-v3.json",
+          "mercedes-research/normalized-evidence-v4.json",
+          "mercedes-research/normalized-evidence-v5.json",
+          "mercedes-research/normalized-evidence-v6.json",
+          "mercedes-research/normalized-passenger-draft-v1.json",
+          "mercedes-research/technical/more-capture-manifest-v1.json",
+          "mercedes-staging-plan/packet-preparation/source-capture-manifest-v4.json",
+          "mercedes-staging-plan/packet-preparation/source-capture-manifest-v6.json"
+        ]
+      }
+    ],
+    "originalExpectedHashesUnchanged": true,
+    "originalRawBytesAvailableInThisRecoveryCopy": false,
+    "replayRule": "The recovery manifest verifies sanitized copies. An original raw-capture pin check must report those original bytes unavailable, never substitute the sanitized digest. Replaying those raw pins requires intact original bytes or a separately reviewed new manifest. Current working originals remain untouched.",
+    "factualPassageReview": {
+      "schemaVersion": 1,
+      "status": "accepted_bounded_factual_preservation_of_sanitized_backup_copies",
+      "reviewedAt": "2026-10-14",
+      "runtimeSanitationReport": {
+        "path": "RUNTIME-SANITATION-REPORT.json",
+        "bytes": 51410,
+        "sha256": "d2783deea56dc69a68e33166c97a235942333fd7afad2c228223bc1e591a7971"
+      },
+      "originalSourceCaptureManifest": {
+        "path": "mercedes-staging-plan/packet-preparation/source-capture-manifest-v6.json",
+        "bytes": 18041,
+        "sha256": "3e18f87b18dd36a39a64dfdc3394cd46e84297ea00edd257ae07cbc105e86300"
+      },
+      "files": [
+        {
+          "sourceKey": "city-ringwood",
+          "original": {
+            "path": "mercedes-research/technical/city-ringwood.raw.html",
+            "bytes": 127678,
+            "sha256": "90bbd08d40adbd8a5d813859f2366924973a7b9d54ae060b42162daa9f236110"
+          },
+          "sanitizedCopy": {
+            "path": "city-ringwood.raw.html",
+            "bytes": 127747,
+            "sha256": "a82fc8fb0f398c7da19ee807010fab0d5ef0f9749c5db54d7a69e79ef40a7c4b"
+          },
+          "restoredCopy": {
+            "path": "city-ringwood.raw.html",
+            "bytes": 127747,
+            "sha256": "a82fc8fb0f398c7da19ee807010fab0d5ef0f9749c5db54d7a69e79ef40a7c4b"
+          },
+          "redactionLocations": [
+            {
+              "originalByteStart": 73911,
+              "originalByteEndExclusive": 73921,
+              "sanitizedByteStart": 73911,
+              "sanitizedByteEndExclusive": 73944,
+              "encoding": "literal",
+              "sourceFields": [
+                {
+                  "member": "mercedes-research/technical/city-ringwood.raw.html",
+                  "field": "nonce",
+                  "classification": "Captured nonce/form value or public-site API capability; not factual vehicle evidence"
+                }
+              ]
+            },
+            {
+              "originalByteStart": 122606,
+              "originalByteEndExclusive": 122616,
+              "sanitizedByteStart": 122629,
+              "sanitizedByteEndExclusive": 122662,
+              "encoding": "literal",
+              "sourceFields": [
+                {
+                  "member": "mercedes-research/technical/city-ringwood.raw.html",
+                  "field": "nonce",
+                  "classification": "Captured nonce/form value or public-site API capability; not factual vehicle evidence"
+                }
+              ]
+            },
+            {
+              "originalByteStart": 123255,
+              "originalByteEndExclusive": 123265,
+              "sanitizedByteStart": 123301,
+              "sanitizedByteEndExclusive": 123334,
+              "encoding": "literal",
+              "sourceFields": [
+                {
+                  "member": "mercedes-research/technical/city-ringwood.raw.html",
+                  "field": "nonce",
+                  "classification": "Captured nonce/form value or public-site API capability; not factual vehicle evidence"
+                }
+              ]
+            }
+          ],
+          "unchangedBytesOutsideDeclaredRanges": true,
+          "entireExtractedNonScriptStyleTextEqual": true,
+          "visibleTextSha256": "58d06dc66f8aaa4e0f16195d24271b5b654e6b36c4aeeaa1c261c8c7c1f484a4",
+          "restoredBytesEqualSanitizedCopy": true,
+          "originalStillMatchesAcceptedSourceCaptureManifest": true,
+          "factualWitnessChecks": [
+            {
+              "text": "EQA and EQB 250+ City Edition",
+              "preserved": true
+            },
+            {
+              "text": "Currently available",
+              "preserved": true
+            },
+            {
+              "text": "Copyright \u00a9 2025",
+              "preserved": true
+            }
+          ]
+        },
+        {
+          "sourceKey": "eqa-choice",
+          "original": {
+            "path": "mercedes-research/technical/eqa-choice.raw.html",
+            "bytes": 538630,
+            "sha256": "306e6986a4149505818d86bbd8d8591519032c76378af45cb7ef7e1f0b20756e"
+          },
+          "sanitizedCopy": {
+            "path": "eqa-choice.raw.html",
+            "bytes": 538699,
+            "sha256": "5362b17c79d6deba116ab21c1feb26a123d6887cc384a3f21f1e6dc2f3d15b90"
+          },
+          "restoredCopy": {
+            "path": "eqa-choice.raw.html",
+            "bytes": 538699,
+            "sha256": "5362b17c79d6deba116ab21c1feb26a123d6887cc384a3f21f1e6dc2f3d15b90"
+          },
+          "redactionLocations": [
+            {
+              "originalByteStart": 533949,
+              "originalByteEndExclusive": 533959,
+              "sanitizedByteStart": 533949,
+              "sanitizedByteEndExclusive": 533982,
+              "encoding": "literal",
+              "sourceFields": [
+                {
+                  "member": "mercedes-research/technical/eqa-choice.raw.html",
+                  "field": "nonce",
+                  "classification": "Captured nonce/form value or public-site API capability; not factual vehicle evidence"
+                }
+              ]
+            },
+            {
+              "originalByteStart": 534278,
+              "originalByteEndExclusive": 534288,
+              "sanitizedByteStart": 534301,
+              "sanitizedByteEndExclusive": 534334,
+              "encoding": "literal",
+              "sourceFields": [
+                {
+                  "member": "mercedes-research/technical/eqa-choice.raw.html",
+                  "field": "nonce",
+                  "classification": "Captured nonce/form value or public-site API capability; not factual vehicle evidence"
+                }
+              ]
+            },
+            {
+              "originalByteStart": 534380,
+              "originalByteEndExclusive": 534390,
+              "sanitizedByteStart": 534426,
+              "sanitizedByteEndExclusive": 534459,
+              "encoding": "literal",
+              "sourceFields": [
+                {
+                  "member": "mercedes-research/technical/eqa-choice.raw.html",
+                  "field": "nonce",
+                  "classification": "Captured nonce/form value or public-site API capability; not factual vehicle evidence"
+                }
+              ]
+            }
+          ],
+          "unchangedBytesOutsideDeclaredRanges": true,
+          "entireExtractedNonScriptStyleTextEqual": true,
+          "visibleTextSha256": "85300132f792fb8d7bf720e1755f9bb3610569921b4f4c7bd1cbc5ebfe31a9eb",
+          "restoredBytesEqualSanitizedCopy": true,
+          "originalStillMatchesAcceptedSourceCaptureManifest": true,
+          "factualWitnessChecks": [
+            {
+              "text": "2025 model",
+              "preserved": true
+            },
+            {
+              "text": "Powertrain ? FWD",
+              "preserved": true
+            },
+            {
+              "text": "Acceleration 0-100 (km/h, sec) ? 8.6",
+              "preserved": true
+            },
+            {
+              "text": "Cargo volume with seats up (L) ? 340",
+              "preserved": true
+            },
+            {
+              "text": "Braked towing capacity (kg) ? No Towing",
+              "preserved": true
+            }
+          ]
+        },
+        {
+          "sourceKey": "glb-whichcar",
+          "original": {
+            "path": "mercedes-research/technical/glb-whichcar.raw.html",
+            "bytes": 165001,
+            "sha256": "b54ca183b859ee18fa291195db74b7c584ff9b59bf361bf774fc0ae26f42df51"
+          },
+          "sanitizedCopy": {
+            "path": "glb-whichcar.raw.html",
+            "bytes": 165024,
+            "sha256": "84d9a54dab043f194d3e3201928c79dcdef34590d23fea5d7e99391cf0c84c42"
+          },
+          "restoredCopy": {
+            "path": "glb-whichcar.raw.html",
+            "bytes": 165024,
+            "sha256": "84d9a54dab043f194d3e3201928c79dcdef34590d23fea5d7e99391cf0c84c42"
+          },
+          "redactionLocations": [
+            {
+              "originalByteStart": 103597,
+              "originalByteEndExclusive": 103607,
+              "sanitizedByteStart": 103597,
+              "sanitizedByteEndExclusive": 103630,
+              "encoding": "literal",
+              "sourceFields": [
+                {
+                  "member": "mercedes-research/technical/glb-whichcar.raw.html",
+                  "field": "_wpnonce",
+                  "classification": "Captured nonce/form value or public-site API capability; not factual vehicle evidence"
+                },
+                {
+                  "member": "mercedes-research/technical/glc-whichcar.raw.html",
+                  "field": "_wpnonce",
+                  "classification": "Captured nonce/form value or public-site API capability; not factual vehicle evidence"
+                }
+              ]
+            }
+          ],
+          "unchangedBytesOutsideDeclaredRanges": true,
+          "entireExtractedNonScriptStyleTextEqual": true,
+          "visibleTextSha256": "fdbe51c47688d8b5062940858410122dd95770409787c157723512ae23efafc8",
+          "restoredBytesEqualSanitizedCopy": true,
+          "originalStillMatchesAcceptedSourceCaptureManifest": true,
+          "factualWitnessChecks": [
+            {
+              "text": "570km (250+) or 554km (350 4Matic) of WLTP-rated range",
+              "preserved": true
+            },
+            {
+              "text": "Folding the third row provides 480 litres",
+              "preserved": true
+            },
+            {
+              "text": "127-litre front boot",
+              "preserved": true
+            }
+          ]
+        },
+        {
+          "sourceKey": "glc-whichcar",
+          "original": {
+            "path": "mercedes-research/technical/glc-whichcar.raw.html",
+            "bytes": 169461,
+            "sha256": "d9eafe061ffc46c9814a7ca6e8f9e958e0b0d1e9279789e5b7522b66b10274ba"
+          },
+          "sanitizedCopy": {
+            "path": "glc-whichcar.raw.html",
+            "bytes": 169484,
+            "sha256": "314207d7cf569680cd7873a99d7f0d9fc737d6f533fc3253fda1777affcbea02"
+          },
+          "restoredCopy": {
+            "path": "glc-whichcar.raw.html",
+            "bytes": 169484,
+            "sha256": "314207d7cf569680cd7873a99d7f0d9fc737d6f533fc3253fda1777affcbea02"
+          },
+          "redactionLocations": [
+            {
+              "originalByteStart": 107753,
+              "originalByteEndExclusive": 107763,
+              "sanitizedByteStart": 107753,
+              "sanitizedByteEndExclusive": 107786,
+              "encoding": "literal",
+              "sourceFields": [
+                {
+                  "member": "mercedes-research/technical/glb-whichcar.raw.html",
+                  "field": "_wpnonce",
+                  "classification": "Captured nonce/form value or public-site API capability; not factual vehicle evidence"
+                },
+                {
+                  "member": "mercedes-research/technical/glc-whichcar.raw.html",
+                  "field": "_wpnonce",
+                  "classification": "Captured nonce/form value or public-site API capability; not factual vehicle evidence"
+                }
+              ]
+            }
+          ],
+          "unchangedBytesOutsideDeclaredRanges": true,
+          "entireExtractedNonScriptStyleTextEqual": true,
+          "visibleTextSha256": "e46127b7cdcb3ca885f16c2ad2a807c7bd9f2f4e71404c5a466ee4ec09ca5462",
+          "restoredBytesEqualSanitizedCopy": true,
+          "originalStillMatchesAcceptedSourceCaptureManifest": true,
+          "factualWitnessChecks": [
+            {
+              "text": "pricing (excluding on-road costs)",
+              "preserved": true
+            },
+            {
+              "text": "GLC 400 4Matic $112,200",
+              "preserved": true
+            },
+            {
+              "text": "WLTP-rated range of 630km",
+              "preserved": true
+            },
+            {
+              "text": "dual-motor electric drivetrain",
+              "preserved": true
+            },
+            {
+              "text": "4.3 seconds",
+              "preserved": true
+            },
+            {
+              "text": "570 (rear seats up)",
+              "preserved": true
+            },
+            {
+              "text": "128-litre front boot",
+              "preserved": true
+            }
+          ]
+        }
+      ],
+      "method": "Read only the four named original, selected and restored HTML files. Verified exact original/sanitized hash mappings, byte equality of every segment outside all eight declared nonce/_wpnonce replacement ranges, full decoded text equality excluding script/style bodies, selected factual witnesses, and exact restored-copy equality. No capture-tree scan or production execution.",
+      "factualScope": "Preserves City advertisement naming/currently-available wording and copyright scope; public 2025 CHOICE drive/acceleration/cargo/categorical towing; exact GLB WLTP grades and third-row-folded/front-cargo scope; GLC exact price exclusion, range, drivetrain, acceleration and cargo seating scope. This is preservation review, not an evidence regrade or new current-supply attestation.",
+      "limitations": [
+        "Sanitized files have different bytes and SHA256 values; they cannot satisfy original capture pins.",
+        "The original research, source-capture manifest and working originals are unchanged. This receipt does not amend them.",
+        "Future restoration replay requires the unavailable original bytes or a separately reviewed replacement manifest and provenance review; no silent original-hash equivalence.",
+        "This bounded check does not attest residual credential scanning, archive/upload integrity or other backup members; those remain the backup verifier scope.",
+        "No original removed nonce/runtime value is included in this receipt."
+      ],
+      "result": "PASS",
+      "priorReviewArtifact": {
+        "path": "FOUR-SANITIZED-CAPTURES-FACTUAL-REVIEW.json",
+        "bytes": 13953,
+        "sha256": "ba5d3c698257ce28f1598ae02efac059d38e78e1a3714ad17003ea0c72eb065c"
+      }
+    }
+  },
+  "savingAnnouncementMessageId": "Sentinel_5aabd20aa35c81918ab20c7a5a3f1012",
+  "noSourceRecapture": true,
+  "noDeletionOrReplacement": true
+}

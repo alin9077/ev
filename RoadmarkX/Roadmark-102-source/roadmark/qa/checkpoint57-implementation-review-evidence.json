@@ -1,0 +1,45 @@
+{
+  "reviewDateUTC": "2026-10-10",
+  "reviewType": "Static read-only application review; no app imports/builds/tests or browser/HTTP",
+  "reviewedFileSHA256": {
+    "src/lib/portable-string-codec.ts": "5558a213166a5e697f072eb1cf79818cb21f533bcf267337d7f54d3316b76505",
+    "scripts/build-portable.ts": "771b2ccb305948e9bc6103f949bb9408f1eccc60bbd60f410cccf9063f794c1a",
+    "src/portable/data.ts": "0985748b9e03b1719f1235f2441da3abe918083b66b8beebf198cf6ed4dbc483",
+    "tests/portable-string-codec.test.ts": "db4379b0f4244d74a01d8ac1122ae4b41ba7c24d457c6ed396cd5d32764d9a07",
+    "tests/portable-packs.test.ts": "8fee3afd01f5f7a261ba2a53aa74866e11591f499a5c89a656cdf1be6aafb630"
+  },
+  "source56SHA256Verified": "f9ee126c82e7269be1a446c09055656ca8d44006d8d476e3eb53bcd1f4cff854",
+  "initialArchiveComparison": {
+    "unchangedSavedEntries": 823,
+    "changedSavedEntries": [
+      "qa/current-work-status.json",
+      "scripts/build-portable.ts",
+      "src/portable/data.ts"
+    ],
+    "archiveOnlyEntries": [
+      "OPEN-THIS-CHECKPOINT.txt",
+      "CHECKPOINT-SOURCE-MANIFEST.json"
+    ],
+    "additionalScopedFiles": {
+      "src": [
+        "src/lib/portable-string-codec.ts"
+      ],
+      "tests": [
+        "tests/portable-string-codec.test.ts"
+      ],
+      "scripts": [],
+      "data": [],
+      "public": [
+        "public/index.html",
+        "public/index-b.html"
+      ]
+    }
+  },
+  "rootProofReviewedOnly": {
+    "roadmark-research/audits/portable-string-codec/actual-app57-portable-proof.json": "9f1454afeccfa61474d283153c2dd2525687592c82f0a4119b6b5cf9f91af439",
+    "roadmark-research/verify_portable_codec_actual.cjs": "b080c262cd2357d1aaff0c7e09e6910a2254e7367ec582151169b174b833ccec"
+  },
+  "finalTestBatchStatusAtReview": "Running according to root; not executed or independently certified by reviewer",
+  "canonicalReportPath": "roadmark-research/audits/portable-string-codec/implementation-review.md",
+  "revisedProofStaticReview": "Hero-flag checks, independent paired-container/descriptor audit and precise accessor-output flag reviewed; initial result JSON still predates these assertions"
+}

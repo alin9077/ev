@@ -1,0 +1,120 @@
+{
+  "status": "PASS",
+  "capturedAt": "2026-10-10T16:11:25.762629+00:00",
+  "scope": "Independent JSON/source-only audit of root-authored candidate binding; no app imports, writes, runtime execution, build, or payload regeneration.",
+  "checks": 1326,
+  "checksByCategory": {
+    "frozen_inputs": 4,
+    "root_proof": 8,
+    "scope": 5,
+    "source_guards": 14,
+    "source_bytes": 58,
+    "source_provenance": 90,
+    "copy_exact": 21,
+    "identity_guard": 10,
+    "availability_guard": 10,
+    "source_identity": 15,
+    "source_availability": 10,
+    "dependencies": 79,
+    "dependency_provenance": 48,
+    "model_year": 10,
+    "fact_scope": 452,
+    "dependency_fields": 464,
+    "critical_boundaries": 11,
+    "runtime_source_inspection": 9,
+    "read_only_stability": 8
+  },
+  "failures": [],
+  "records": 5,
+  "copyPairs": 5,
+  "conditions": 15,
+  "dependencies": 29,
+  "effectiveFactsGuarded": 451,
+  "stagedFacts": 448,
+  "loaderOnlyUnknowns": [
+    {
+      "variantId": "renault_scenic_my26_techno_ev60_fwd__20261010",
+      "key": "ground_clearance_mm"
+    },
+    {
+      "variantId": "renault_scenic_my26_techno_long_range_ev87_fwd__20261010",
+      "key": "ground_clearance_mm"
+    },
+    {
+      "variantId": "renault_scenic_my26_esprit_alpine_ev87_fwd__20261010",
+      "key": "ground_clearance_mm"
+    }
+  ],
+  "acceptedSnapshots": 17,
+  "executableGuardSources": 16,
+  "acceptedMetadataOnlySource": "r10_rk_megane_new_col_crawford",
+  "heldMetadataOnlySources": [
+    "r10_rk_megane_buckby_demo",
+    "r10_rk_megane_buckby_old_new",
+    "r10_rk_megane_norris_residual",
+    "r10_rk_renault_megane_brochure",
+    "r10_rk_renault_megane_data",
+    "r10_rk_renault_scenic_data",
+    "r10_rk_renault_warranty",
+    "r10_rk_scenic_all_new_chatswood",
+    "r10_rk_scenic_alpine_aag",
+    "r10_rk_scenic_lr_auto_retail",
+    "r10_rk_scenic_lr_demo_chatswood",
+    "r10_rk_scenic_techno_new_rockingham",
+    "r10_rk_torres_new_cricks"
+  ],
+  "rootProofChecks": 676,
+  "inputHashes": {
+    "bind_renault_kgm_runtime_copy.py": "6f182c594f0dc65d88131f94597e1fd75f9bf0bbb88d6daf0e4f94f98dc095e9",
+    "renault-kgm-runtime-copy-payload.json": "3668fd987ba0b3714dc46cfb814fe3c83edee58e0842b649f72dd1b46a045683",
+    "renault-kgm-runtime-source-copy-proof.json": "bc0791a4e539f85b0a0e633809a600b1e726ef083f5123cbf5ab006725855462",
+    "renault-kgm-binding-effective-snapshot.json": "b2d19910eea3af65651b462598fefdfa29d555a33a3d9efe18fb8f0549387b9e",
+    "renault-kgm-buyer-copy-source-proposal.json": "e250b9309cd433fd405ed3ef9eb3d4231074b711f9f56d8e5c36b1160bbf7db9",
+    "renault-kgm-staged-delta.json": "727151bdc5874296d8413a37088f961475b7b60b705a6b159ad32d6b9d924f7b",
+    "renault-kgm-evidence.json": "6d0ae07040bb0dc5df2c7e43973527e45875939941478ba1452ad68ca97516d0",
+    "renault-kgm-integration-boundaries.json": "a837530aad596f1ef10b1a3b8fc64ad443ffdf5c5da95ddd44b58f2573ae2f6c"
+  },
+  "runtimeVerification": "Not run here; root owns executable mutation tests, normalized-storage application, and rendered UI checks.",
+  "finalHarnessReview": {
+    "status": "PASS",
+    "reviewedAt": "2026-10-10T16:11:26.054924+00:00",
+    "method": "Source inspection, JSON/hash checks and count arithmetic only; no execution or application imports. These follow-up checks are separate from the 1,326 independent binding checks.",
+    "verification": {
+      "stableTargetIdentity": true,
+      "nonVacuousSourceCardinality": true,
+      "ExactUnchangedUnaffectedSummaries": true,
+      "priorProposalAndLedgerResolved": true,
+      "noCurrentMergedProposalImport": true,
+      "normalizedPriorSchemas": true,
+      "priorProposalExcludesFiveNewIds": true,
+      "actualVersusExpectedIsolation": true,
+      "wholeFactMapRemovalRestoration": true,
+      "rootResultPassed": true,
+      "rootResultMatchesAuditedPayload": true,
+      "rootCountsMatchHarnessStructure": true,
+      "rootPerRecordCountsMatchStructure": true
+    },
+    "resolvedFindings": [
+      "Identity-id deletion now checks stable record.variantId, removing the vacuous has(undefined) probe.",
+      "Source probes now assert five minus affected count and exact unchanged output for every unaffected ID, including all five summaries for the unused MY24 source.",
+      "Harness resolves the frozen pre-Renault normalized proposal and identity ledger, preserving the 284-active-summary preflight baseline after application."
+    ],
+    "rootExecutionObserved": {
+      "executedBy": "root; not rerun by this independent reviewer",
+      "reportedAt": "2026-10-10T16:10:07.129Z",
+      "passed": true,
+      "checks": 8165,
+      "mutations": 7103,
+      "priorCarsUnchanged": 291,
+      "priorSummariesUnchanged": 284,
+      "expectedSummariesAfterAppend": 289
+    },
+    "reviewedHashes": {
+      "verify_renault_runtime_copy.cjs": "44e5a1e7c497d35ae373414dca2d2602865675d8de5c8ff2d03d00621aa97ef4",
+      "renault-kgm-runtime-copy-validation.json": "d2d048f2944e13d308f72e68086e3fd20dfe01fae5ac160d5421f55f7b1ec0b7",
+      "pre-renault-buyer-selling-points-2026-10-10.json": "08afe6dcf5b9bf720fb4b8933306e204d11cef2747342f136420b0b77307f212",
+      "pre-renault-buyer-identity-snapshots-2026-10-10.json": "afe66c77d3b132bce3500c051d3a229441009402a0fb57eb3d554eb928061a08"
+    },
+    "coverageLimit": "Own-fact-field mutation, not an exhaustive nested-string matrix; rendered UI was not inspected here."
+  }
+}

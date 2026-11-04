@@ -1,0 +1,12 @@
+PROOF FAILED: AssertionError: Expected one complete TAP tests summary in local_http_tests
+Traceback (most recent call last):
+  File "/workspace/scratch/586427eef9f2/roadmark-research/restored92-proof-candidate/verify_restored92.py", line 270, in <module>
+    main()
+  File "/workspace/scratch/586427eef9f2/roadmark-research/restored92-proof-candidate/verify_restored92.py", line 182, in main
+    qa_result = validate_qa(workspace, seal, frozen_digest)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/586427eef9f2/roadmark-research/restored92-proof-candidate/verify_restored92.py", line 125, in validate_qa
+    expect(len(found) == 1, f"Expected one complete TAP {metric} summary in {name}")
+  File "/workspace/scratch/586427eef9f2/roadmark-research/restored92-proof-candidate/verify_restored92.py", line 32, in expect
+    raise AssertionError(why)
+AssertionError: Expected one complete TAP tests summary in local_http_tests

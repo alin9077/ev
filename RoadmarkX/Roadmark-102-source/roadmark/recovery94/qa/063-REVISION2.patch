@@ -1,0 +1,25 @@
+--- a/tests/report-review-cli.test.ts
++++ b/tests/report-review-cli.test.ts
+@@ -247,7 +247,7 @@
+       syncBuiltinESMExports(); await import(${JSON.stringify(cli)});`;
+     const before = await tree(root);
+     const result = spawnSync(process.execPath, ["--import", loader, "--input-type=module", "-e", source], {
+-      cwd: root, encoding: "utf8", timeout: 10000, env: { ...process.env, NEXT_PUBLIC_SITE_URL: "https://example.invalid" },
++      cwd: root, encoding: "utf8", timeout: 10000, env: { ...process.env, TSX_DISABLE_CACHE: "1", NEXT_PUBLIC_SITE_URL: "https://example.invalid" },
+     });
+     assert.equal(result.error, undefined); assert.equal(result.status, 0, result.stderr);
+     assert.equal(result.stdout, ""); assert.equal(result.stderr, ""); assert.deepEqual(await tree(root), before);
+--- a/tests/helpers/report-preview-fixture.ts
++++ b/tests/helpers/report-preview-fixture.ts
+@@ -19,9 +19,9 @@
+   const claim: Fact = {
+     key, label: "Synthetic claim", value: 420, unit: "km", basis: "WLTP", comparisonBasis: "WLTP",
+     status: "standard", sourceIds: ["synthetic-a", "synthetic-b"], date: "2026-10-10", market: "AU",
+-    scope: "Exact synthetic version", qualifications: ["Synthetic only"], issues: [], conditionExplanation: null,
++    scope: "Exact synthetic version", qualifications: ["Synthetic only"], issues: [],
+   };
+-  Object.assign(claim, { fixtureMetadata: { b: ["first", "second"], a: null } });
++  Object.assign(claim, { conditionExplanation: null, fixtureMetadata: { b: ["first", "second"], a: null } });
+   const raw: BoundIssueReport = {
+     ...makeIssueDraft("synthetic-car", claim, "Synthetic reporter text must stay private.", createdAt, uuid(n)),
+     observedClaim: claim, submissionProtocol: REPORT_SUBMISSION_PROTOCOL,

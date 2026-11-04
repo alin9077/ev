@@ -1,0 +1,20 @@
+$ node scripts/generate-market-view.mjs --check && node --import tsx scripts/validate.ts
+Market view verified without writing
+{
+  "result": "PASS",
+  "counts": {
+    "variants": 345,
+    "families": 150,
+    "generations": 154,
+    "criteria": 69,
+    "evidence": 23805,
+    "current": 329,
+    "outgoing": 11,
+    "provisional": 5
+  },
+  "sourceReferences": 2202,
+  "publicationIssues": 15,
+  "sha256": "010ded194b4d61cd7be606ce0cc332fa7e32906bba70abff2b5c38541e634657",
+  "approvedExternalAssets": 0,
+  "note": "Structural integrity, not independent factual verification."
+}

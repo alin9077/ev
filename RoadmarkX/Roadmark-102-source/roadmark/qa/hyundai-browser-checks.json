@@ -1,0 +1,120 @@
+{
+  "checkedAtUTC": "2026-10-10T13:07:45Z",
+  "environment": "dot own cloud browser, portable local preview; desktop zoom only",
+  "phase": "pre-summary integration",
+  "checks": [
+    {
+      "name": "Expanded portable discovery",
+      "result": "pass",
+      "families": 112,
+      "configurations": 274
+    },
+    {
+      "name": "Hyundai New-stock filter",
+      "result": "pass",
+      "visible": 8,
+      "existing": 4,
+      "newCore": 4,
+      "heldNewNRows": [
+        "IONIQ 5 N",
+        "IONIQ 6 N"
+      ],
+      "boundary": "IONIQ 6 N sunroof-only ad retained as option evidence, not base-grade stock badge"
+    },
+    {
+      "name": "Four KONA grades/battery configurations",
+      "result": "pass",
+      "total": 4,
+      "exactNewAds": 2
+    },
+    {
+      "name": "KONA Extended Range versus Elite selection and comparison",
+      "result": "pass",
+      "range": [
+        505,
+        444
+      ],
+      "rangeUnit": "km WLTP",
+      "wheelInches": [
+        17,
+        19
+      ],
+      "chargeWindow": "10\u201380%",
+      "chargeMin": [
+        43,
+        43
+      ],
+      "stationKw": 350,
+      "dcPeak": "unknown",
+      "cargoNormalized": "unknown; raw VDA minimum/maximum separately qualified"
+    },
+    {
+      "name": "Narrow comparison no horizontal document overflow",
+      "result": "pass",
+      "viewportCSS": 393,
+      "documentCSS": 388,
+      "tableWidth": 348,
+      "containerWidth": 388
+    },
+    {
+      "name": "Compact index-b launcher preserves route and query",
+      "result": "pass",
+      "testedAtUTC": "2026-10-10T13:23:17Z",
+      "request": "?page=/discover&q=ELEXIO",
+      "observed": "Discovery route and ELEXIO query retained; two exact cards"
+    }
+  ],
+  "remaining": [
+    "Final guarded summary render and exact-trim evidence navigation",
+    "Final production build/hero and narrow discovery checks",
+    "Real iPhone/Safari and Android/Chrome journeys not tested",
+    "Secondary feature text still includes structured source labels; further editorial refinement pending"
+  ],
+  "preMergeHeroRecheck": {
+    "checkedAt": "2026-10-10T13:36:51Z",
+    "surface": "dot own cloud Chrome, desktop zoom narrow layout; not a real phone",
+    "viewportCSSWidth": 393,
+    "documentCSSWidth": 388,
+    "mainCount": 1,
+    "h1Count": 1,
+    "heroSellingPointLinks": 9,
+    "allHeroTargetsExist": true,
+    "originalHeroAboveDiscovery": true,
+    "limitation": "Twelve Hyundai buyer summaries are still pending; final merged browser verification remains required"
+  },
+  "finalMergedCheck": {
+    "checkedAt": "2026-10-10T14:02:00Z",
+    "browser": "dot own cloud Chrome",
+    "build": "320-page production and 26.89 MB portable",
+    "summaries": 270,
+    "elexioPairsRendered": 2,
+    "caveatDisclosureExpanded": true,
+    "manufacturerAndDealerFootnotesVerified": true,
+    "selectedExactTrims": 2,
+    "comparisonRangeKm": [
+      562,
+      546
+    ],
+    "comparisonChargingMinutes10To80": [
+      38,
+      38
+    ],
+    "noMarketBestBadge": true,
+    "narrowViewport": 393,
+    "narrowDocumentWidth": 388,
+    "comparisonTableWidth": 348,
+    "comparisonContainerWidth": 388,
+    "selectionControlHeights": [
+      44,
+      47
+    ],
+    "desktopViewport": 1180,
+    "desktopDocumentWidth": 1165,
+    "heroH1Count": 1,
+    "mainCount": 1,
+    "heroSellingPointTargets": 9,
+    "originalHeroAboveDiscovery": true,
+    "actualPhoneTesting": false,
+    "fullChangedScreenReviewComplete": false
+  }
+}

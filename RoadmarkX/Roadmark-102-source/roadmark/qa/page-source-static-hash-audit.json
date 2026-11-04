@@ -1,0 +1,1895 @@
+{
+  "scope": "Static file-byte comparison only, no application execution",
+  "baselineZip": "/workspace/scratch/586427eef9f2/roadmark-recovery/roadmark-checkpoint-2026-10-10(1).zip",
+  "baselineZipSHA256": "59554f8dc9020c6e8f88e27bc212f0897a07fccf43e87731269b8f0439b25fba",
+  "filesCompared": 312,
+  "changed": [
+    "src/app/b/page.tsx",
+    "src/app/discover/page.tsx",
+    "src/app/page.tsx"
+  ],
+  "added": [
+    {
+      "path": "src/lib/page-evidence.ts",
+      "sha256": "aa527b202333fb3064bf08658d58f7916b622df9a34515d312a25f3271614ec0"
+    },
+    {
+      "path": "tests/page-evidence.test.ts",
+      "sha256": "d9465a3062d72fc20188799efbc5b329d31df66792f612ca6493caa22666f67a"
+    }
+  ],
+  "checks": [
+    {
+      "path": "data/RESEARCH_DATA_DICTIONARY.md",
+      "baselineSHA256": "2cd4f25d68f03fd8fd06aaeb88ec50457ae7842e92139a911a6bb9024509af9c",
+      "currentSHA256": "2cd4f25d68f03fd8fd06aaeb88ec50457ae7842e92139a911a6bb9024509af9c",
+      "equal": true
+    },
+    {
+      "path": "data/approved-availability-corrections.json",
+      "baselineSHA256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "currentSHA256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "equal": true
+    },
+    {
+      "path": "data/approved-corrections.json",
+      "baselineSHA256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "currentSHA256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "equal": true
+    },
+    {
+      "path": "data/approved-feature-corrections.json",
+      "baselineSHA256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "currentSHA256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "equal": true
+    },
+    {
+      "path": "data/atto1-evidence-2026-10-10.json",
+      "baselineSHA256": "8e49a81e79f609d3a8a3be4bdde44943b3d0afa7105ffcd161cc4a81e0812441",
+      "currentSHA256": "8e49a81e79f609d3a8a3be4bdde44943b3d0afa7105ffcd161cc4a81e0812441",
+      "equal": true
+    },
+    {
+      "path": "data/au_ev_all_variants_2026-10-06.json",
+      "baselineSHA256": "010ded194b4d61cd7be606ce0cc332fa7e32906bba70abff2b5c38541e634657",
+      "currentSHA256": "010ded194b4d61cd7be606ce0cc332fa7e32906bba70abff2b5c38541e634657",
+      "equal": true
+    },
+    {
+      "path": "data/audi-porsche-evidence-2026-10-10.json",
+      "baselineSHA256": "d7b6f96f4798531a816f1abe28291540273ef3cba1c61521f469c9e4ee3010c2",
+      "currentSHA256": "d7b6f96f4798531a816f1abe28291540273ef3cba1c61521f469c9e4ee3010c2",
+      "equal": true
+    },
+    {
+      "path": "data/bmw-mini-evidence-2026-10-10.json",
+      "baselineSHA256": "625616e6b0472d6a53a45821275a05c9f4c5bcaedd2b990ae90a7fd721e5b2c5",
+      "currentSHA256": "625616e6b0472d6a53a45821275a05c9f4c5bcaedd2b990ae90a7fd721e5b2c5",
+      "equal": true
+    },
+    {
+      "path": "data/buyer-identity-snapshots-2026-10-10.json",
+      "baselineSHA256": "64eacdece197e09c7abc26a5890228831090307ecb5566a91e33e299ee7bb42f",
+      "currentSHA256": "64eacdece197e09c7abc26a5890228831090307ecb5566a91e33e299ee7bb42f",
+      "equal": true
+    },
+    {
+      "path": "data/buyer-selling-points-2026-10-10.json",
+      "baselineSHA256": "dbe8a092e74e9346531c42a8390373d2d3eb554539db65ed16202c7b79b5f5e1",
+      "currentSHA256": "dbe8a092e74e9346531c42a8390373d2d3eb554539db65ed16202c7b79b5f5e1",
+      "equal": true
+    },
+    {
+      "path": "data/byd-seal-dolphin-evidence-2026-10-10.json",
+      "baselineSHA256": "cd04012e5a5e3485ec5e62c2de50064eacfeeb9ffa3833af54455c3c8e571653",
+      "currentSHA256": "cd04012e5a5e3485ec5e62c2de50064eacfeeb9ffa3833af54455c3c8e571653",
+      "equal": true
+    },
+    {
+      "path": "data/catalogue-additions-2026-10-10.json",
+      "baselineSHA256": "dd08cfe91509824ceaca32e9f9f3e926f9c641b3cb09eefa03e5a6418abac473",
+      "currentSHA256": "dd08cfe91509824ceaca32e9f9f3e926f9c641b3cb09eefa03e5a6418abac473",
+      "equal": true
+    },
+    {
+      "path": "data/catalogue-scope-label-audit.json",
+      "baselineSHA256": "674139a6fc5973661c54b1353a498ea034f0eb639cf54384ca9d8a1266951c5f",
+      "currentSHA256": "674139a6fc5973661c54b1353a498ea034f0eb639cf54384ca9d8a1266951c5f",
+      "equal": true
+    },
+    {
+      "path": "data/deepal-evidence.json",
+      "baselineSHA256": "aa59e9b63de72ce04b17455313339b4ff431768b7dce981bbcc998bb9b153253",
+      "currentSHA256": "aa59e9b63de72ce04b17455313339b4ff431768b7dce981bbcc998bb9b153253",
+      "equal": true
+    },
+    {
+      "path": "data/electric-truck-selling-points-proposal.json",
+      "baselineSHA256": "877742bca07bc265071a54a5eedb5e1a7b17af536fa5c6b36e5d807fdd7eb347",
+      "currentSHA256": "877742bca07bc265071a54a5eedb5e1a7b17af536fa5c6b36e5d807fdd7eb347",
+      "equal": true
+    },
+    {
+      "path": "data/electric-truck-selling-points-source-proposal.json",
+      "baselineSHA256": "a4fdf674db62657d9f3e244348a7919d1fe910a2ac5d0164ce0e0d7305920e78",
+      "currentSHA256": "a4fdf674db62657d9f3e244348a7919d1fe910a2ac5d0164ce0e0d7305920e78",
+      "equal": true
+    },
+    {
+      "path": "data/electric-vans-evidence-2026-10-10.json",
+      "baselineSHA256": "81802013a61175c5478323239c1a388a614fb648f3d3d6b700b703ae58166f42",
+      "currentSHA256": "81802013a61175c5478323239c1a388a614fb648f3d3d6b700b703ae58166f42",
+      "equal": true
+    },
+    {
+      "path": "data/existing-trim-refresh-integration-subset.json",
+      "baselineSHA256": "43dc2d9644e2b85d361d5a1026ffecd82ecd061a324c3a01679bfc5f1020b533",
+      "currentSHA256": "43dc2d9644e2b85d361d5a1026ffecd82ecd061a324c3a01679bfc5f1020b533",
+      "equal": true
+    },
+    {
+      "path": "data/farizon-foton-jac-trucks-evidence.json",
+      "baselineSHA256": "e6b1f6adae33871d57f0c6bd730571cf64fed06ae4166c1947aed422d97b4a7f",
+      "currentSHA256": "e6b1f6adae33871d57f0c6bd730571cf64fed06ae4166c1947aed422d97b4a7f",
+      "equal": true
+    },
+    {
+      "path": "data/fuso-hyundai-trucks-evidence.json",
+      "baselineSHA256": "f72ef6a37581a4c43ed5bdfd3e745d9cabac0c48d05cf81a19f37729c1e071db",
+      "currentSHA256": "f72ef6a37581a4c43ed5bdfd3e745d9cabac0c48d05cf81a19f37729c1e071db",
+      "equal": true
+    },
+    {
+      "path": "data/geely-group-effective-mapping-validation.json",
+      "baselineSHA256": "54c68a11416af6adbd39d27d25f280dcfb71d1f84be8208911ca49e3716c9417",
+      "currentSHA256": "54c68a11416af6adbd39d27d25f280dcfb71d1f84be8208911ca49e3716c9417",
+      "equal": true
+    },
+    {
+      "path": "data/geely-zeekr-xpeng-deliverables-manifest.json",
+      "baselineSHA256": "a752c73e7615b31791beb7b1e7a2ab43ddf0c320a2484dbe40742afb11608db3",
+      "currentSHA256": "a752c73e7615b31791beb7b1e7a2ab43ddf0c320a2484dbe40742afb11608db3",
+      "equal": true
+    },
+    {
+      "path": "data/geely-zeekr-xpeng-evidence.json",
+      "baselineSHA256": "60bd246dfaa6a8b359610df7c6f9016eabaf4046e9eaa87e63352054dfcd70b7",
+      "currentSHA256": "60bd246dfaa6a8b359610df7c6f9016eabaf4046e9eaa87e63352054dfcd70b7",
+      "equal": true
+    },
+    {
+      "path": "data/geely-zeekr-xpeng-selling-points-manifest.json",
+      "baselineSHA256": "ecc299687535fa8bf5afa155e4d4c3d5ae4766fb63b039da4386db78b62d1d26",
+      "currentSHA256": "ecc299687535fa8bf5afa155e4d4c3d5ae4766fb63b039da4386db78b62d1d26",
+      "equal": true
+    },
+    {
+      "path": "data/geely-zeekr-xpeng-selling-points-proposal.json",
+      "baselineSHA256": "e1908ba7b9a7a35faaf58f32b8409cc33a33e44d307c5da3fca39a5a5c04a7eb",
+      "currentSHA256": "e1908ba7b9a7a35faaf58f32b8409cc33a33e44d307c5da3fca39a5a5c04a7eb",
+      "equal": true
+    },
+    {
+      "path": "data/geely-zeekr-xpeng-selling-points-validation.json",
+      "baselineSHA256": "bd0099fc0772a25bbfbdc6e7d3b79556a68a8544bc590b57cb21c874edeff915",
+      "currentSHA256": "bd0099fc0772a25bbfbdc6e7d3b79556a68a8544bc590b57cb21c874edeff915",
+      "equal": true
+    },
+    {
+      "path": "data/hyundai-evidence-2026-10-10.json",
+      "baselineSHA256": "206b72c9491fefaf36e9b6d7a8f3452a30426936c8773ff5b0dc26ec38ba2391",
+      "currentSHA256": "206b72c9491fefaf36e9b6d7a8f3452a30426936c8773ff5b0dc26ec38ba2391",
+      "equal": true
+    },
+    {
+      "path": "data/kia-ev6-ev9-evidence-2026-10-10.json",
+      "baselineSHA256": "1f5a898c08dd16a904e9330c1c3ae658c0bef1313ec1ecbe40311278ab9f6371",
+      "currentSHA256": "1f5a898c08dd16a904e9330c1c3ae658c0bef1313ec1ecbe40311278ab9f6371",
+      "equal": true
+    },
+    {
+      "path": "data/leapmotor-evidence.json",
+      "baselineSHA256": "0bc0cfc07318b6e31318474a0fe511967520e977b54ec08fbdfde3fce4cfb765",
+      "currentSHA256": "0bc0cfc07318b6e31318474a0fe511967520e977b54ec08fbdfde3fce4cfb765",
+      "equal": true
+    },
+    {
+      "path": "data/lexus-nissan-genesis-evidence-2026-10-10.json",
+      "baselineSHA256": "8ed580851b782813c5600e34725e8de8a20fa6606a5622e00564d45e5282d9df",
+      "currentSHA256": "8ed580851b782813c5600e34725e8de8a20fa6606a5622e00564d45e5282d9df",
+      "equal": true
+    },
+    {
+      "path": "data/lexus-nissan-genesis-selling-points-proposal.json",
+      "baselineSHA256": "9054a6422c16e78f186c85cd28237d17028c97fcb39e0078f9207e16744ce4f1",
+      "currentSHA256": "9054a6422c16e78f186c85cd28237d17028c97fcb39e0078f9207e16744ce4f1",
+      "equal": true
+    },
+    {
+      "path": "data/market-inventory-2026-10-10.json",
+      "baselineSHA256": "52ba84873b1b148a58c2531fe5c31b92ebb0367af30ca4544659855e90da2dc5",
+      "currentSHA256": "52ba84873b1b148a58c2531fe5c31b92ebb0367af30ca4544659855e90da2dc5",
+      "equal": true
+    },
+    {
+      "path": "data/mercedes-passenger-evidence-2026-10-10.json",
+      "baselineSHA256": "575efd4e101fbb50bc04497517cd623833ac66b8691ff4b5ce20dda7264c2ac8",
+      "currentSHA256": "575efd4e101fbb50bc04497517cd623833ac66b8691ff4b5ce20dda7264c2ac8",
+      "equal": true
+    },
+    {
+      "path": "data/mg-remaining-evidence-2026-10-10.json",
+      "baselineSHA256": "977a3dff5d051f14b306ac7ee33076044c4cc47d52fd8adc16d77a12bf37dfb5",
+      "currentSHA256": "977a3dff5d051f14b306ac7ee33076044c4cc47d52fd8adc16d77a12bf37dfb5",
+      "equal": true
+    },
+    {
+      "path": "data/mg4-evidence-2026-10-10.json",
+      "baselineSHA256": "d3caab127d7d2f3ffd23a4928b9a4bd3caf75f5cf1ab9db6070842931556fb37",
+      "currentSHA256": "d3caab127d7d2f3ffd23a4928b9a4bd3caf75f5cf1ab9db6070842931556fb37",
+      "equal": true
+    },
+    {
+      "path": "data/motorcycle-ev-census.json",
+      "baselineSHA256": "c51ba137a9924db8836310c0949b608b40ac63a2413e86df9fc2510008133ed6",
+      "currentSHA256": "c51ba137a9924db8836310c0949b608b40ac63a2413e86df9fc2510008133ed6",
+      "equal": true
+    },
+    {
+      "path": "data/next-vans-evidence-2026-10-10.json",
+      "baselineSHA256": "c156e626b03ec3c929baaa4caa487db964995a06f8d6dd1f07918d14fd318017",
+      "currentSHA256": "c156e626b03ec3c929baaa4caa487db964995a06f8d6dd1f07918d14fd318017",
+      "equal": true
+    },
+    {
+      "path": "data/omoda-jaecoo-evidence.json",
+      "baselineSHA256": "c36969258e4e71bc9d1665353ade268172de22a086098f75dc2d288a563e00cb",
+      "currentSHA256": "c36969258e4e71bc9d1665353ade268172de22a086098f75dc2d288a563e00cb",
+      "equal": true
+    },
+    {
+      "path": "data/refreshed-trim-selling-points-proposal.json",
+      "baselineSHA256": "0b313ea51ce62efffdb354a09f36f53da1ba63c747ac60c041b5f7e742b9e35d",
+      "currentSHA256": "0b313ea51ce62efffdb354a09f36f53da1ba63c747ac60c041b5f7e742b9e35d",
+      "equal": true
+    },
+    {
+      "path": "data/refreshed-trim-selling-points-validation.json",
+      "baselineSHA256": "37744a60042ab1deac53c7063e6354dc78bdc62ee44ab2da192cf3aeef61e8cd",
+      "currentSHA256": "37744a60042ab1deac53c7063e6354dc78bdc62ee44ab2da192cf3aeef61e8cd",
+      "equal": true
+    },
+    {
+      "path": "data/remaining-chinese-passenger-selling-points-manifest.json",
+      "baselineSHA256": "77c58d577aecd4d2231d11df5dcf687879116d1c69dbba931e93f13711701257",
+      "currentSHA256": "77c58d577aecd4d2231d11df5dcf687879116d1c69dbba931e93f13711701257",
+      "equal": true
+    },
+    {
+      "path": "data/remaining-chinese-passenger-selling-points-proposal.json",
+      "baselineSHA256": "ef2ab7f867d7f66ec750042a4cf64a945eff0b587062c5f68a88a2cb805c4240",
+      "currentSHA256": "ef2ab7f867d7f66ec750042a4cf64a945eff0b587062c5f68a88a2cb805c4240",
+      "equal": true
+    },
+    {
+      "path": "data/remaining-chinese-passenger-selling-points-validation.json",
+      "baselineSHA256": "03226d2631c4416dd48045bfd1fd7cf98101438ad894d71427da7e3b2b796a66",
+      "currentSHA256": "03226d2631c4416dd48045bfd1fd7cf98101438ad894d71427da7e3b2b796a66",
+      "equal": true
+    },
+    {
+      "path": "data/remaining-electric-vans-evidence.json",
+      "baselineSHA256": "31a6b0af54dc4d17d518c00bdea60cf55e175640d94404efde080fcc2464b40e",
+      "currentSHA256": "31a6b0af54dc4d17d518c00bdea60cf55e175640d94404efde080fcc2464b40e",
+      "equal": true
+    },
+    {
+      "path": "data/remaining-electric-vans-manifest.json",
+      "baselineSHA256": "ab0df9a18818fd1703df0488e21003fc7abcc5ea23dfb600c6e99c82ca1da2b3",
+      "currentSHA256": "ab0df9a18818fd1703df0488e21003fc7abcc5ea23dfb600c6e99c82ca1da2b3",
+      "equal": true
+    },
+    {
+      "path": "data/remaining-electric-vans-selling-points-manifest.json",
+      "baselineSHA256": "42f0bbf4f6803de0e053d606801789a14ffeca3acb699c0df46f9258835efde1",
+      "currentSHA256": "42f0bbf4f6803de0e053d606801789a14ffeca3acb699c0df46f9258835efde1",
+      "equal": true
+    },
+    {
+      "path": "data/remaining-electric-vans-selling-points-proposal.json",
+      "baselineSHA256": "a2ecf28c2f6e27a1e923e06221b2ec43c213cc1c88f347df4e48af66e19dca27",
+      "currentSHA256": "a2ecf28c2f6e27a1e923e06221b2ec43c213cc1c88f347df4e48af66e19dca27",
+      "equal": true
+    },
+    {
+      "path": "data/remaining-electric-vans-selling-points-validation.json",
+      "baselineSHA256": "0651b74be4d29d40a91a73cab7f1a3f0527f49ffe7978aeca294baa7034db55f",
+      "currentSHA256": "0651b74be4d29d40a91a73cab7f1a3f0527f49ffe7978aeca294baa7034db55f",
+      "equal": true
+    },
+    {
+      "path": "data/remaining-electric-vans-validation.json",
+      "baselineSHA256": "f49eb8b09a08b185cf0cd7a256e10c183119224b51992da4767b54bbc1992cfb",
+      "currentSHA256": "f49eb8b09a08b185cf0cd7a256e10c183119224b51992da4767b54bbc1992cfb",
+      "equal": true
+    },
+    {
+      "path": "data/remaining-hyundai-evidence.json",
+      "baselineSHA256": "583ce8eef94314a10003be3c48f346e67c432a6dfa827872543d677daa3f5e4d",
+      "currentSHA256": "583ce8eef94314a10003be3c48f346e67c432a6dfa827872543d677daa3f5e4d",
+      "equal": true
+    },
+    {
+      "path": "data/remaining-hyundai-validation.json",
+      "baselineSHA256": "82598f85847d3660547f19355a498678d343141c91a40a843a98a14bfed7a6fa",
+      "currentSHA256": "82598f85847d3660547f19355a498678d343141c91a40a843a98a14bfed7a6fa",
+      "equal": true
+    },
+    {
+      "path": "data/remaining-utes-vans-evidence.json",
+      "baselineSHA256": "8208fbc69eb295c59bb5b5dcb8102d4493d3d31182af59a49186742eba85b857",
+      "currentSHA256": "8208fbc69eb295c59bb5b5dcb8102d4493d3d31182af59a49186742eba85b857",
+      "equal": true
+    },
+    {
+      "path": "data/remaining-utes-vans-selling-points-proposal.json",
+      "baselineSHA256": "cfeff45e8d73f26d2dab8c3ccf9b0937487b544b56f22e502badc0859406360b",
+      "currentSHA256": "cfeff45e8d73f26d2dab8c3ccf9b0937487b544b56f22e502badc0859406360b",
+      "equal": true
+    },
+    {
+      "path": "data/remaining-utes-vans-validation.json",
+      "baselineSHA256": "c7519840eb8647b8e5a1ab16f5723b876c554c6c1900895d1ada47ba392a4c60",
+      "currentSHA256": "c7519840eb8647b8e5a1ab16f5723b876c554c6c1900895d1ada47ba392a4c60",
+      "equal": true
+    },
+    {
+      "path": "data/research-buyer-2026-10-07.json",
+      "baselineSHA256": "d482fb76421213be584923be3109263161885c9a48ba83c0b28cacb596b76c1d",
+      "currentSHA256": "d482fb76421213be584923be3109263161885c9a48ba83c0b28cacb596b76c1d",
+      "equal": true
+    },
+    {
+      "path": "data/research-completion-2026-10-07.json",
+      "baselineSHA256": "c56cfe19c0e22882aae77c340f4576df077b2574ee7c603363f87f65f32737e5",
+      "currentSHA256": "c56cfe19c0e22882aae77c340f4576df077b2574ee7c603363f87f65f32737e5",
+      "equal": true
+    },
+    {
+      "path": "data/research-editorial-2026-10-07.json",
+      "baselineSHA256": "cc1b71f5a65e173fe274c61cc1069ad129978ab6402bc12a886e98481b77f95b",
+      "currentSHA256": "cc1b71f5a65e173fe274c61cc1069ad129978ab6402bc12a886e98481b77f95b",
+      "equal": true
+    },
+    {
+      "path": "data/research-pending/README.md",
+      "baselineSHA256": "9979208e5088d6ad4588138dbd5884df3665b2c1aedc186ca801b05991f861e1",
+      "currentSHA256": "9979208e5088d6ad4588138dbd5884df3665b2c1aedc186ca801b05991f861e1",
+      "equal": true
+    },
+    {
+      "path": "data/research-pending/audi-porsche-evidence.json",
+      "baselineSHA256": "d7b6f96f4798531a816f1abe28291540273ef3cba1c61521f469c9e4ee3010c2",
+      "currentSHA256": "d7b6f96f4798531a816f1abe28291540273ef3cba1c61521f469c9e4ee3010c2",
+      "equal": true
+    },
+    {
+      "path": "data/research-pending/audi-porsche-validation.json",
+      "baselineSHA256": "b18b923ff5ec59f53112b872569ba065b8919e71cf6c01294669e4d185a39f4a",
+      "currentSHA256": "b18b923ff5ec59f53112b872569ba065b8919e71cf6c01294669e4d185a39f4a",
+      "equal": true
+    },
+    {
+      "path": "data/research-pending/bmw-mini-evidence.json",
+      "baselineSHA256": "625616e6b0472d6a53a45821275a05c9f4c5bcaedd2b990ae90a7fd721e5b2c5",
+      "currentSHA256": "625616e6b0472d6a53a45821275a05c9f4c5bcaedd2b990ae90a7fd721e5b2c5",
+      "equal": true
+    },
+    {
+      "path": "data/research-pending/bus-integration-boundaries.json",
+      "baselineSHA256": "d56f13d3af71897e5d1696b6e6d9bb2da472ab41a9a0d9b81670cb186feba6e0",
+      "currentSHA256": "d56f13d3af71897e5d1696b6e6d9bb2da472ab41a9a0d9b81670cb186feba6e0",
+      "equal": true
+    },
+    {
+      "path": "data/research-pending/bus-integration-staged-delta.json",
+      "baselineSHA256": "23fbdb61b4fcd61cacbed5a2fa5a2af7465212b23524b80ea4398b491d02eb5f",
+      "currentSHA256": "23fbdb61b4fcd61cacbed5a2fa5a2af7465212b23524b80ea4398b491d02eb5f",
+      "equal": true
+    },
+    {
+      "path": "data/research-pending/bus-selling-points-proposal.json",
+      "baselineSHA256": "0109d62004a691e9514be80d50ac64fe309055ea2a4fa324926d217fb15b3678",
+      "currentSHA256": "0109d62004a691e9514be80d50ac64fe309055ea2a4fa324926d217fb15b3678",
+      "equal": true
+    },
+    {
+      "path": "data/research-pending/bus-selling-points-validation.json",
+      "baselineSHA256": "fd28d471df283ed10821103e6b03a62af7d91e611a55b40235b1d88befc639e7",
+      "currentSHA256": "fd28d471df283ed10821103e6b03a62af7d91e611a55b40235b1d88befc639e7",
+      "equal": true
+    },
+    {
+      "path": "data/research-pending/byd-remaining-evidence.json",
+      "baselineSHA256": "4db561950bc63b409667f830a6420957a8570c088bdc0499ce999e0f1748ae46",
+      "currentSHA256": "4db561950bc63b409667f830a6420957a8570c088bdc0499ce999e0f1748ae46",
+      "equal": true
+    },
+    {
+      "path": "data/research-pending/deepal-evidence.json",
+      "baselineSHA256": "aa59e9b63de72ce04b17455313339b4ff431768b7dce981bbcc998bb9b153253",
+      "currentSHA256": "aa59e9b63de72ce04b17455313339b4ff431768b7dce981bbcc998bb9b153253",
+      "equal": true
+    },
+    {
+      "path": "data/research-pending/geely-zeekr-xpeng-evidence.json",
+      "baselineSHA256": "60bd246dfaa6a8b359610df7c6f9016eabaf4046e9eaa87e63352054dfcd70b7",
+      "currentSHA256": "60bd246dfaa6a8b359610df7c6f9016eabaf4046e9eaa87e63352054dfcd70b7",
+      "equal": true
+    },
+    {
+      "path": "data/research-pending/genesis-worker-evidence.json",
+      "baselineSHA256": "8fbfc59436b8f34db99f00e3b24e2f3636a0be726e934a294e1f619fe4659f76",
+      "currentSHA256": "8fbfc59436b8f34db99f00e3b24e2f3636a0be726e934a294e1f619fe4659f76",
+      "equal": true
+    },
+    {
+      "path": "data/research-pending/kia-cadillac-staged-delta.json",
+      "baselineSHA256": "99e3ae7c37cb1481d75b4eadc7f01e8e7f20480c84f95d20bb4b3023eb2e90cb",
+      "currentSHA256": "99e3ae7c37cb1481d75b4eadc7f01e8e7f20480c84f95d20bb4b3023eb2e90cb",
+      "equal": true
+    },
+    {
+      "path": "data/research-pending/leapmotor-evidence.json",
+      "baselineSHA256": "0bc0cfc07318b6e31318474a0fe511967520e977b54ec08fbdfde3fce4cfb765",
+      "currentSHA256": "0bc0cfc07318b6e31318474a0fe511967520e977b54ec08fbdfde3fce4cfb765",
+      "equal": true
+    },
+    {
+      "path": "data/research-pending/leapmotor-validation.json",
+      "baselineSHA256": "cff252e89a0fe58b1fefaa64024f40096f753d0a6b33c00bd54ed925dfe26178",
+      "currentSHA256": "cff252e89a0fe58b1fefaa64024f40096f753d0a6b33c00bd54ed925dfe26178",
+      "equal": true
+    },
+    {
+      "path": "data/research-pending/lexus-nissan-genesis-evidence.json",
+      "baselineSHA256": "8ed580851b782813c5600e34725e8de8a20fa6606a5622e00564d45e5282d9df",
+      "currentSHA256": "8ed580851b782813c5600e34725e8de8a20fa6606a5622e00564d45e5282d9df",
+      "equal": true
+    },
+    {
+      "path": "data/research-pending/lexus-nissan-genesis-manifest.json",
+      "baselineSHA256": "7e52751b3901e50682a3b026678ddbcc12e262df0ab55fbde6aa4d126ad8cf86",
+      "currentSHA256": "7e52751b3901e50682a3b026678ddbcc12e262df0ab55fbde6aa4d126ad8cf86",
+      "equal": true
+    },
+    {
+      "path": "data/research-pending/lexus-nissan-genesis-validation.json",
+      "baselineSHA256": "db6644d94c7698d15584316b1a05e0f49fd23e283c9d51303538b160ec726f74",
+      "currentSHA256": "db6644d94c7698d15584316b1a05e0f49fd23e283c9d51303538b160ec726f74",
+      "equal": true
+    },
+    {
+      "path": "data/research-pending/lexus-worker-evidence.json",
+      "baselineSHA256": "74dba6edbd0e532e1ff001b704f24e9508b242541b81590560a69b0c4dd168e9",
+      "currentSHA256": "74dba6edbd0e532e1ff001b704f24e9508b242541b81590560a69b0c4dd168e9",
+      "equal": true
+    },
+    {
+      "path": "data/research-pending/mercedes-passenger-evidence.json",
+      "baselineSHA256": "575efd4e101fbb50bc04497517cd623833ac66b8691ff4b5ce20dda7264c2ac8",
+      "currentSHA256": "575efd4e101fbb50bc04497517cd623833ac66b8691ff4b5ce20dda7264c2ac8",
+      "equal": true
+    },
+    {
+      "path": "data/research-pending/mg-remaining-evidence.json",
+      "baselineSHA256": "977a3dff5d051f14b306ac7ee33076044c4cc47d52fd8adc16d77a12bf37dfb5",
+      "currentSHA256": "977a3dff5d051f14b306ac7ee33076044c4cc47d52fd8adc16d77a12bf37dfb5",
+      "equal": true
+    },
+    {
+      "path": "data/research-pending/mg-remaining-residual-evidence.json",
+      "baselineSHA256": "7e780816d5c796cf3d397aeabcec42d2073d6ce6464ee53fb7c515d3df0e3b54",
+      "currentSHA256": "7e780816d5c796cf3d397aeabcec42d2073d6ce6464ee53fb7c515d3df0e3b54",
+      "equal": true
+    },
+    {
+      "path": "data/research-pending/mg-remaining-residual-validation.json",
+      "baselineSHA256": "a56e01a5fe34f453c95fe766beffe738d6647880f3accfdde2a4c4584e518708",
+      "currentSHA256": "a56e01a5fe34f453c95fe766beffe738d6647880f3accfdde2a4c4584e518708",
+      "equal": true
+    },
+    {
+      "path": "data/research-pending/mg-remaining-validation.json",
+      "baselineSHA256": "dbf25e2227e3dac3e4ee145e06302b3738352beca893a4e70b25856d82ea3786",
+      "currentSHA256": "dbf25e2227e3dac3e4ee145e06302b3738352beca893a4e70b25856d82ea3786",
+      "equal": true
+    },
+    {
+      "path": "data/research-pending/nissan-worker-evidence.json",
+      "baselineSHA256": "a3803684d6163ecd1cb4da476cf9c47f26d99acfabfabc071f8d3bee14d5e7ad",
+      "currentSHA256": "a3803684d6163ecd1cb4da476cf9c47f26d99acfabfabc071f8d3bee14d5e7ad",
+      "equal": true
+    },
+    {
+      "path": "data/research-pending/omoda-jaecoo-evidence.json",
+      "baselineSHA256": "c36969258e4e71bc9d1665353ade268172de22a086098f75dc2d288a563e00cb",
+      "currentSHA256": "c36969258e4e71bc9d1665353ade268172de22a086098f75dc2d288a563e00cb",
+      "equal": true
+    },
+    {
+      "path": "data/research-pending/remaining-chinese-passenger-evidence-index.json",
+      "baselineSHA256": "36dd42e4e23049d302064236dc4fb2344485907a7888a1ab74db9f0ca95c5d8f",
+      "currentSHA256": "36dd42e4e23049d302064236dc4fb2344485907a7888a1ab74db9f0ca95c5d8f",
+      "equal": true
+    },
+    {
+      "path": "data/research-pending/remaining-hyundai-selling-points-proposal.json",
+      "baselineSHA256": "87addee8dcd5dffc87a35ece14850e90524fdc86bb0e84ae45080358fe0c162f",
+      "currentSHA256": "87addee8dcd5dffc87a35ece14850e90524fdc86bb0e84ae45080358fe0c162f",
+      "equal": true
+    },
+    {
+      "path": "data/research-pending/remaining-hyundai-selling-points-source-validation.json",
+      "baselineSHA256": "b8251f349fa78e2cabaf554d8ea5464cb276fd8e725def98099ba8efe3f73fec",
+      "currentSHA256": "b8251f349fa78e2cabaf554d8ea5464cb276fd8e725def98099ba8efe3f73fec",
+      "equal": true
+    },
+    {
+      "path": "data/research-pending/remaining-market-reconciliation-2026-10-10.json",
+      "baselineSHA256": "dc45f9f8c4fb6fa36d53538a66e4693346dee74b52e8aa4fb7647b8eafb1854e",
+      "currentSHA256": "dc45f9f8c4fb6fa36d53538a66e4693346dee74b52e8aa4fb7647b8eafb1854e",
+      "equal": true
+    },
+    {
+      "path": "data/research-pending/remaining-market-reconciliation-2026-10-10.md",
+      "baselineSHA256": "b668e7308007e01204f51a928bcd7d7b8fd781688531e193d5564c526b307912",
+      "currentSHA256": "b668e7308007e01204f51a928bcd7d7b8fd781688531e193d5564c526b307912",
+      "equal": true
+    },
+    {
+      "path": "data/research-pending/renault-kgm-staged-delta.json",
+      "baselineSHA256": "727151bdc5874296d8413a37088f961475b7b60b705a6b159ad32d6b9d924f7b",
+      "currentSHA256": "727151bdc5874296d8413a37088f961475b7b60b705a6b159ad32d6b9d924f7b",
+      "equal": true
+    },
+    {
+      "path": "data/research-pending/vw-skoda-cupra-evidence.json",
+      "baselineSHA256": "8895fa3b3910cdcdd63240df59786e6b2403a281c72d6568c7831d1798005e9f",
+      "currentSHA256": "8895fa3b3910cdcdd63240df59786e6b2403a281c72d6568c7831d1798005e9f",
+      "equal": true
+    },
+    {
+      "path": "data/research-pending/yutong-bci-electric-buses-evidence.json",
+      "baselineSHA256": "e843b9941b25b9384245b8403c3e0fe8925f1384d731df1886bed34494650874",
+      "currentSHA256": "e843b9941b25b9384245b8403c3e0fe8925f1384d731df1886bed34494650874",
+      "equal": true
+    },
+    {
+      "path": "data/research-refinement-2026-10-06.json",
+      "baselineSHA256": "e6a3d9c9aff6e91f91ccc0984b4104e3e46f099730dcfdcec2c6f369fdaf3891",
+      "currentSHA256": "e6a3d9c9aff6e91f91ccc0984b4104e3e46f099730dcfdcec2c6f369fdaf3891",
+      "equal": true
+    },
+    {
+      "path": "data/research-refresh-2026-10-10.json",
+      "baselineSHA256": "77dc7a1ed075e41c00788ed23cdb125f8313263738f2fd863799ea7d7a37fc38",
+      "currentSHA256": "77dc7a1ed075e41c00788ed23cdb125f8313263738f2fd863799ea7d7a37fc38",
+      "equal": true
+    },
+    {
+      "path": "data/research-sales-2026-10-06.json",
+      "baselineSHA256": "76736027cbfa0ab90d993312516d03411cfbd358c053bd589200f342ac49ad14",
+      "currentSHA256": "76736027cbfa0ab90d993312516d03411cfbd358c053bd589200f342ac49ad14",
+      "equal": true
+    },
+    {
+      "path": "data/research-schema.json",
+      "baselineSHA256": "2f683f1d3b8585fbfef7b126bd75a77c3220533a35d2c09db6d5a75b19d9f50a",
+      "currentSHA256": "2f683f1d3b8585fbfef7b126bd75a77c3220533a35d2c09db6d5a75b19d9f50a",
+      "equal": true
+    },
+    {
+      "path": "data/research-usability-2026-10-06.json",
+      "baselineSHA256": "24bb0701d5b328404bd8af06168ff0a5c226283a3c535ef9c75553b06fab7a81",
+      "currentSHA256": "24bb0701d5b328404bd8af06168ff0a5c226283a3c535ef9c75553b06fab7a81",
+      "equal": true
+    },
+    {
+      "path": "data/road-scooter-runtime-selling-points-proposal.json",
+      "baselineSHA256": "c32dfe3c588cac0c6cd83649ff10925d6c72b3cbd19ff247a38becd9dccd2a24",
+      "currentSHA256": "c32dfe3c588cac0c6cd83649ff10925d6c72b3cbd19ff247a38becd9dccd2a24",
+      "equal": true
+    },
+    {
+      "path": "data/road-scooter-selling-points-proposal.json",
+      "baselineSHA256": "4835fe6e5fafa2c742b3c49d8cbb00ebd34a47832854c2d7270a5bdb06f7bb3a",
+      "currentSHA256": "4835fe6e5fafa2c742b3c49d8cbb00ebd34a47832854c2d7270a5bdb06f7bb3a",
+      "equal": true
+    },
+    {
+      "path": "data/segway-zeeho-road-scooters-evidence.json",
+      "baselineSHA256": "a5ffeac42bdda7b264963ba3047b39b66eb84d2dda9a7259f5304e560dc09f51",
+      "currentSHA256": "a5ffeac42bdda7b264963ba3047b39b66eb84d2dda9a7259f5304e560dc09f51",
+      "equal": true
+    },
+    {
+      "path": "data/segway-zeeho-road-scooters-validation.json",
+      "baselineSHA256": "8bc7b1b330a29b62c70457dbf240e5b89929f0fd1b50dc05059f907ef4eee0e5",
+      "currentSHA256": "8bc7b1b330a29b62c70457dbf240e5b89929f0fd1b50dc05059f907ef4eee0e5",
+      "equal": true
+    },
+    {
+      "path": "data/source-audit-2026-10-08.json",
+      "baselineSHA256": "8c04d15c9f700a30804f2fcf0cb71a970640aebf738746ec14cbdc5b79a9376e",
+      "currentSHA256": "8c04d15c9f700a30804f2fcf0cb71a970640aebf738746ec14cbdc5b79a9376e",
+      "equal": true
+    },
+    {
+      "path": "data/toyota-subaru-evidence-2026-10-10.json",
+      "baselineSHA256": "67a98c802c5089ecf61d7911e89f802ebe0538f4c4363d03e8df7ac2be260eb7",
+      "currentSHA256": "67a98c802c5089ecf61d7911e89f802ebe0538f4c4363d03e8df7ac2be260eb7",
+      "equal": true
+    },
+    {
+      "path": "data/ute-van-runtime-selling-points-merge-payload.json",
+      "baselineSHA256": "354c8b200cefe6666f36386d5f077310e6fa6aa7d5347c55fe832804e78078f0",
+      "currentSHA256": "354c8b200cefe6666f36386d5f077310e6fa6aa7d5347c55fe832804e78078f0",
+      "equal": true
+    },
+    {
+      "path": "data/volvo-polestar-evidence-2026-10-10.json",
+      "baselineSHA256": "aa05a42d47e44a21215598a463524f79a0095cfc9afb186916f1d36d8ddb172b",
+      "currentSHA256": "aa05a42d47e44a21215598a463524f79a0095cfc9afb186916f1d36d8ddb172b",
+      "equal": true
+    },
+    {
+      "path": "data/vw-skoda-cupra-evidence-2026-10-10.json",
+      "baselineSHA256": "8895fa3b3910cdcdd63240df59786e6b2403a281c72d6568c7831d1798005e9f",
+      "currentSHA256": "8895fa3b3910cdcdd63240df59786e6b2403a281c72d6568c7831d1798005e9f",
+      "equal": true
+    },
+    {
+      "path": "next.config.ts",
+      "baselineSHA256": "1b35e4432cc709a8413b35f4f633cc1a55d74a3d5b6944950b38ab83d5bdc371",
+      "currentSHA256": "1b35e4432cc709a8413b35f4f633cc1a55d74a3d5b6944950b38ab83d5bdc371",
+      "equal": true
+    },
+    {
+      "path": "package.json",
+      "baselineSHA256": "7ee2046d8b28707c5d182f09f2288e8c61b19bb51d03fd42a212e055622f6754",
+      "currentSHA256": "7ee2046d8b28707c5d182f09f2288e8c61b19bb51d03fd42a212e055622f6754",
+      "equal": true
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "baselineSHA256": "636941d08fa47ce568b6bb8ec03adcb9872ac94e81603330a83e7f92eceebe1b",
+      "currentSHA256": "636941d08fa47ce568b6bb8ec03adcb9872ac94e81603330a83e7f92eceebe1b",
+      "equal": true
+    },
+    {
+      "path": "scripts/audit-completeness.ts",
+      "baselineSHA256": "c27fc2192d589c94f8b5c385da5c61424a53828e1e7bc308dd6b06ca615809c5",
+      "currentSHA256": "c27fc2192d589c94f8b5c385da5c61424a53828e1e7bc308dd6b06ca615809c5",
+      "equal": true
+    },
+    {
+      "path": "scripts/benchmark-discovery.ts",
+      "baselineSHA256": "0e2fc4ccbfc70e259e58533a4d9b3cd484e9fe0570f53e41cdc11e6bcc800693",
+      "currentSHA256": "0e2fc4ccbfc70e259e58533a4d9b3cd484e9fe0570f53e41cdc11e6bcc800693",
+      "equal": true
+    },
+    {
+      "path": "scripts/benchmark-production-response.mjs",
+      "baselineSHA256": "3503d07c091a4331b83513cd5ee2467c950fc5f8424145a11bb7c208fa83e2bf",
+      "currentSHA256": "3503d07c091a4331b83513cd5ee2467c950fc5f8424145a11bb7c208fa83e2bf",
+      "equal": true
+    },
+    {
+      "path": "scripts/build-buyer-overlay.py",
+      "baselineSHA256": "7ee5f2ba228c9573d4b5cd897b94f042559472c5eed52abdc8e330f2db8b0756",
+      "currentSHA256": "7ee5f2ba228c9573d4b5cd897b94f042559472c5eed52abdc8e330f2db8b0756",
+      "equal": true
+    },
+    {
+      "path": "scripts/build-chapter-art.ts",
+      "baselineSHA256": "40e76a0dd224b39df94db7052394c5209b20165008a8aca20a3f3f38cbba83bb",
+      "currentSHA256": "40e76a0dd224b39df94db7052394c5209b20165008a8aca20a3f3f38cbba83bb",
+      "equal": true
+    },
+    {
+      "path": "scripts/build-completion-overlay.py",
+      "baselineSHA256": "1404599d79b29ff14fb7e20770d48e3f62564a492651cdae22db89bc403c4b8c",
+      "currentSHA256": "1404599d79b29ff14fb7e20770d48e3f62564a492651cdae22db89bc403c4b8c",
+      "equal": true
+    },
+    {
+      "path": "scripts/build-editorial-overlay.py",
+      "baselineSHA256": "2b00b77281d3f01795a1e6400ed5a527df5acd0fc778e6eedfae5702089277a5",
+      "currentSHA256": "2b00b77281d3f01795a1e6400ed5a527df5acd0fc778e6eedfae5702089277a5",
+      "equal": true
+    },
+    {
+      "path": "scripts/build-portable.ts",
+      "baselineSHA256": "01492e85dcb7083c0a7f0e16a499e20d02da1fea877504796f7137d8726fc461",
+      "currentSHA256": "01492e85dcb7083c0a7f0e16a499e20d02da1fea877504796f7137d8726fc461",
+      "equal": true
+    },
+    {
+      "path": "scripts/build-public.mjs",
+      "baselineSHA256": "3a93dba17d36f531eff866a859f90f3772945dd346e1388061bec35d0e602400",
+      "currentSHA256": "3a93dba17d36f531eff866a859f90f3772945dd346e1388061bec35d0e602400",
+      "equal": true
+    },
+    {
+      "path": "scripts/buyer_rows.py",
+      "baselineSHA256": "9c015fe011d4f42ba41d3acc2a9b4b4c3a10e01089fcb60ceae5c2c5459ea11d",
+      "currentSHA256": "9c015fe011d4f42ba41d3acc2a9b4b4c3a10e01089fcb60ceae5c2c5459ea11d",
+      "equal": true
+    },
+    {
+      "path": "scripts/buyer_rows_2.py",
+      "baselineSHA256": "050b0658f16eaf2eb133001f29c8b639a39d8fa716529a532e4ae3251ea682a7",
+      "currentSHA256": "050b0658f16eaf2eb133001f29c8b639a39d8fa716529a532e4ae3251ea682a7",
+      "equal": true
+    },
+    {
+      "path": "scripts/chapter-art-driving.ts",
+      "baselineSHA256": "5bdd0be860c3b7e838259277e3ae31b029b0d7b52c6f43bd5be82d23bc4f1f61",
+      "currentSHA256": "5bdd0be860c3b7e838259277e3ae31b029b0d7b52c6f43bd5be82d23bc4f1f61",
+      "equal": true
+    },
+    {
+      "path": "scripts/chapter-art-kit.ts",
+      "baselineSHA256": "e710193ce5587015c8d865ea4230196181708f8224ae22905d7927f62dc00e8e",
+      "currentSHA256": "e710193ce5587015c8d865ea4230196181708f8224ae22905d7927f62dc00e8e",
+      "equal": true
+    },
+    {
+      "path": "scripts/normalize-buyer-identities.ts",
+      "baselineSHA256": "467391c04dbf72414e99acd3bb5fbf048c7bb19cefa06d01e643a6ed1a0ab4ea",
+      "currentSHA256": "467391c04dbf72414e99acd3bb5fbf048c7bb19cefa06d01e643a6ed1a0ab4ea",
+      "equal": true
+    },
+    {
+      "path": "scripts/qa-extra.mjs",
+      "baselineSHA256": "3e2ec8f618d63733592b2c9ae7fec4bf832c30b394985bdcba6682dbd150424a",
+      "currentSHA256": "3e2ec8f618d63733592b2c9ae7fec4bf832c30b394985bdcba6682dbd150424a",
+      "equal": true
+    },
+    {
+      "path": "scripts/serve-roadmark.ts",
+      "baselineSHA256": "0dc4c2481711d4071f8533a9cc7aff34d5596f690a8bfd32341c668985104e1f",
+      "currentSHA256": "0dc4c2481711d4071f8533a9cc7aff34d5596f690a8bfd32341c668985104e1f",
+      "equal": true
+    },
+    {
+      "path": "scripts/serve-static.mjs",
+      "baselineSHA256": "552730cf8e22eb023ca1154cfd6767dbccedcdbc699f9b9837b204e92a72407c",
+      "currentSHA256": "552730cf8e22eb023ca1154cfd6767dbccedcdbc699f9b9837b204e92a72407c",
+      "equal": true
+    },
+    {
+      "path": "scripts/validate.ts",
+      "baselineSHA256": "1081d95d788ae7f6a5501de7df44c088a2735dcceb4ed335be1f3855b76857e7",
+      "currentSHA256": "1081d95d788ae7f6a5501de7df44c088a2735dcceb4ed335be1f3855b76857e7",
+      "equal": true
+    },
+    {
+      "path": "src/app/b/page.tsx",
+      "baselineSHA256": "dc21b5328e2eb4e438f9767e1b21cf550c1ae7f0ae309308c3ac122a226a761d",
+      "currentSHA256": "a34be83feccdbe4a22ac895d5a926b8a684e0a07c7b8e8dfa19aa11ce5a08185",
+      "equal": false
+    },
+    {
+      "path": "src/app/cars/[family]/[variant]/page.tsx",
+      "baselineSHA256": "3a17bac14e82ddce8bee9ce2264fe94fd01721fca88bc8e09c7899f3aa72e2fd",
+      "currentSHA256": "3a17bac14e82ddce8bee9ce2264fe94fd01721fca88bc8e09c7899f3aa72e2fd",
+      "equal": true
+    },
+    {
+      "path": "src/app/cars/page.tsx",
+      "baselineSHA256": "07e37f20d9c38e3e09a7f87344f62f1ea7f927da1cf4f8aa07a3b7382eb5903e",
+      "currentSHA256": "07e37f20d9c38e3e09a7f87344f62f1ea7f927da1cf4f8aa07a3b7382eb5903e",
+      "equal": true
+    },
+    {
+      "path": "src/app/compare/[pair]/comparison.json/route.ts",
+      "baselineSHA256": "14b1d3d39afa4a83fc00158534101848a55a881ed0c486e7c7b7d350ff8286a3",
+      "currentSHA256": "14b1d3d39afa4a83fc00158534101848a55a881ed0c486e7c7b7d350ff8286a3",
+      "equal": true
+    },
+    {
+      "path": "src/app/compare/[pair]/comparison.md/route.ts",
+      "baselineSHA256": "54dc331f312a8ce69fb41538b2cbea2348bafbd2e01fb0380e8eb60162a0a23f",
+      "currentSHA256": "54dc331f312a8ce69fb41538b2cbea2348bafbd2e01fb0380e8eb60162a0a23f",
+      "equal": true
+    },
+    {
+      "path": "src/app/compare/[pair]/page.tsx",
+      "baselineSHA256": "9f2254b67381fba390687da0d9a3ed2ca8f7a641339db5bb9a9f4c248901019a",
+      "currentSHA256": "9f2254b67381fba390687da0d9a3ed2ca8f7a641339db5bb9a9f4c248901019a",
+      "equal": true
+    },
+    {
+      "path": "src/app/compare/page.tsx",
+      "baselineSHA256": "96c999e95daf24ca718f2225ab0311608c159eebfad643b932837cb99ae06728",
+      "currentSHA256": "96c999e95daf24ca718f2225ab0311608c159eebfad643b932837cb99ae06728",
+      "equal": true
+    },
+    {
+      "path": "src/app/comparisons/page.tsx",
+      "baselineSHA256": "4f94829be89e9f6b80ae939d39ae11c67aad5641c8cb3a28aa5df1c050b4b62d",
+      "currentSHA256": "4f94829be89e9f6b80ae939d39ae11c67aad5641c8cb3a28aa5df1c050b4b62d",
+      "equal": true
+    },
+    {
+      "path": "src/app/discover/page.tsx",
+      "baselineSHA256": "54493628a139d906c81f12024c37407dfe6aef559439bd2bc3e841a6bcf04631",
+      "currentSHA256": "4799f370524a77b27436f6fa03dc552e3fcf5747db18509a38d810a2e1bb5829",
+      "equal": false
+    },
+    {
+      "path": "src/app/error.tsx",
+      "baselineSHA256": "6b190b134099cfbf86546eb4592ba23e42a207bef188c9932d44870aa6ae82bc",
+      "currentSHA256": "6b190b134099cfbf86546eb4592ba23e42a207bef188c9932d44870aa6ae82bc",
+      "equal": true
+    },
+    {
+      "path": "src/app/globals.css",
+      "baselineSHA256": "ea6e51f6c49abd4e3905da8108ae80229cf0f716083370afe334d8f3e7571bfa",
+      "currentSHA256": "ea6e51f6c49abd4e3905da8108ae80229cf0f716083370afe334d8f3e7571bfa",
+      "equal": true
+    },
+    {
+      "path": "src/app/glossary/page.tsx",
+      "baselineSHA256": "2d1961b928af52e94bbaf7be754be9c76493324d79e963de3d96a9b37d8e1c38",
+      "currentSHA256": "2d1961b928af52e94bbaf7be754be9c76493324d79e963de3d96a9b37d8e1c38",
+      "equal": true
+    },
+    {
+      "path": "src/app/icon.svg",
+      "baselineSHA256": "8051b48b20ddb674a6b30d47db65ee4dbe6f7af5552a80d8e284f9aab36c5c29",
+      "currentSHA256": "8051b48b20ddb674a6b30d47db65ee4dbe6f7af5552a80d8e284f9aab36c5c29",
+      "equal": true
+    },
+    {
+      "path": "src/app/layout.tsx",
+      "baselineSHA256": "86c839eff0fc22fa1c9a01225c3188004da9d027a76aa6cdaf815e7bb7d3119c",
+      "currentSHA256": "86c839eff0fc22fa1c9a01225c3188004da9d027a76aa6cdaf815e7bb7d3119c",
+      "equal": true
+    },
+    {
+      "path": "src/app/llms.txt/route.ts",
+      "baselineSHA256": "a996e2f017655808e04ac3497d5cd8765040fbf0e8d3fe662f5c5f9dcbbc25db",
+      "currentSHA256": "a996e2f017655808e04ac3497d5cd8765040fbf0e8d3fe662f5c5f9dcbbc25db",
+      "equal": true
+    },
+    {
+      "path": "src/app/market/page.tsx",
+      "baselineSHA256": "b52174e9dede2a7fadc867ef8517e9f26e2b4885a005345af87c3050a184eb57",
+      "currentSHA256": "b52174e9dede2a7fadc867ef8517e9f26e2b4885a005345af87c3050a184eb57",
+      "equal": true
+    },
+    {
+      "path": "src/app/methodology/page.tsx",
+      "baselineSHA256": "02cc70867799aaf0709f3ce067f854afe4ad4079ed74fe9c91d3575b92b801fb",
+      "currentSHA256": "02cc70867799aaf0709f3ce067f854afe4ad4079ed74fe9c91d3575b92b801fb",
+      "equal": true
+    },
+    {
+      "path": "src/app/model-y/page.tsx",
+      "baselineSHA256": "2f4fcac5921205e54c488beda18cb036e2f6378c4331acfa437c782bd7491c30",
+      "currentSHA256": "2f4fcac5921205e54c488beda18cb036e2f6378c4331acfa437c782bd7491c30",
+      "equal": true
+    },
+    {
+      "path": "src/app/not-found.tsx",
+      "baselineSHA256": "c9b8ee59daa59dbedc2b3837f48614896bc112f596aa374c507cb082ba449ecf",
+      "currentSHA256": "c9b8ee59daa59dbedc2b3837f48614896bc112f596aa374c507cb082ba449ecf",
+      "equal": true
+    },
+    {
+      "path": "src/app/page.tsx",
+      "baselineSHA256": "a59c4195d17b2938e9ddd9585e86e1f84c2d463219d70b9801005ec51e5096c2",
+      "currentSHA256": "94d32047c3253b6417e336a585330f63d4aaa320be02038f5437cf08f867269f",
+      "equal": false
+    },
+    {
+      "path": "src/app/review/page.tsx",
+      "baselineSHA256": "cc279b320392ccce3bd94772d903be5718b82a16ff9a05163a570485f2912514",
+      "currentSHA256": "cc279b320392ccce3bd94772d903be5718b82a16ff9a05163a570485f2912514",
+      "equal": true
+    },
+    {
+      "path": "src/app/robots.ts",
+      "baselineSHA256": "3215e5e2ac8797ae338e6281e24f5cdc1f20114a0c9dec5aba98e0da8a32f78b",
+      "currentSHA256": "3215e5e2ac8797ae338e6281e24f5cdc1f20114a0c9dec5aba98e0da8a32f78b",
+      "equal": true
+    },
+    {
+      "path": "src/app/sitemap.ts",
+      "baselineSHA256": "96c837dc08cd73fc292e02138d0bdf3e05cae7134a9b66939df4ac304737fd8e",
+      "currentSHA256": "96c837dc08cd73fc292e02138d0bdf3e05cae7134a9b66939df4ac304737fd8e",
+      "equal": true
+    },
+    {
+      "path": "src/app/software/page.tsx",
+      "baselineSHA256": "4fb47d12d65d295ede153159b182c2396d7b3e1f16068af666a57cb7939b649e",
+      "currentSHA256": "4fb47d12d65d295ede153159b182c2396d7b3e1f16068af666a57cb7939b649e",
+      "equal": true
+    },
+    {
+      "path": "src/app/sources/page.tsx",
+      "baselineSHA256": "b37217edbe14af0b2905fbe167fc6c9110d1bfe2612626c3b51d007b5008ce57",
+      "currentSHA256": "b37217edbe14af0b2905fbe167fc6c9110d1bfe2612626c3b51d007b5008ce57",
+      "equal": true
+    },
+    {
+      "path": "src/components/buyer-summary.tsx",
+      "baselineSHA256": "5027a6e137cdc309eeee948712173cc4482c013a29461163766150b0601c7d14",
+      "currentSHA256": "5027a6e137cdc309eeee948712173cc4482c013a29461163766150b0601c7d14",
+      "equal": true
+    },
+    {
+      "path": "src/components/car-avatar.tsx",
+      "baselineSHA256": "0aab6d7f98f1a9f33184c809a540f3fa03335f6fb90b5b7a8d6b73be63a2d852",
+      "currentSHA256": "0aab6d7f98f1a9f33184c809a540f3fa03335f6fb90b5b7a8d6b73be63a2d852",
+      "equal": true
+    },
+    {
+      "path": "src/components/chapter-art.tsx",
+      "baselineSHA256": "f70189a09e601315e3843976632ed3215f6a17badf04807370959aa926eada91",
+      "currentSHA256": "f70189a09e601315e3843976632ed3215f6a17badf04807370959aa926eada91",
+      "equal": true
+    },
+    {
+      "path": "src/components/citable-report.tsx",
+      "baselineSHA256": "1fd3a842b17690aa9be587032a32ba54dafdb34013fe306a89009dc90f37f961",
+      "currentSHA256": "1fd3a842b17690aa9be587032a32ba54dafdb34013fe306a89009dc90f37f961",
+      "equal": true
+    },
+    {
+      "path": "src/components/claim-report.tsx",
+      "baselineSHA256": "1a4f23f4c735c787f621257987f2674bb8c2ead48dd6b49164359e5fea22ec46",
+      "currentSHA256": "1a4f23f4c735c787f621257987f2674bb8c2ead48dd6b49164359e5fea22ec46",
+      "equal": true
+    },
+    {
+      "path": "src/components/comparison-symbol.tsx",
+      "baselineSHA256": "3cddc36f9fa8a2c199cf092e8de88e250328f093a072229968db0432742f734c",
+      "currentSHA256": "3cddc36f9fa8a2c199cf092e8de88e250328f093a072229968db0432742f734c",
+      "equal": true
+    },
+    {
+      "path": "src/components/copy-for-ai.tsx",
+      "baselineSHA256": "d171920d7813268c785cac19149b1080bdef09e14b2c368af8f63add687cddf2",
+      "currentSHA256": "d171920d7813268c785cac19149b1080bdef09e14b2c368af8f63add687cddf2",
+      "equal": true
+    },
+    {
+      "path": "src/components/correction-history.tsx",
+      "baselineSHA256": "92a62f4bb7888fa65f894afa5f25577b7001e0f0d61e1344b8c31867710f6edb",
+      "currentSHA256": "92a62f4bb7888fa65f894afa5f25577b7001e0f0d61e1344b8c31867710f6edb",
+      "equal": true
+    },
+    {
+      "path": "src/components/detail.tsx",
+      "baselineSHA256": "f352d4031899beef50658e36a5f40bd1aa5a8c1f51ecdeab137868d6407038ce",
+      "currentSHA256": "f352d4031899beef50658e36a5f40bd1aa5a8c1f51ecdeab137868d6407038ce",
+      "equal": true
+    },
+    {
+      "path": "src/components/discovery.tsx",
+      "baselineSHA256": "4101e60cdcfe116b5ebf8b54ffe2255ef9505059aca6b8084c2b7c521487bfce",
+      "currentSHA256": "4101e60cdcfe116b5ebf8b54ffe2255ef9505059aca6b8084c2b7c521487bfce",
+      "equal": true
+    },
+    {
+      "path": "src/components/evidence-conditions.tsx",
+      "baselineSHA256": "c09249a1528f93b5cac37c13b949e23ba75b40835da0d3a177838a92e4743eba",
+      "currentSHA256": "c09249a1528f93b5cac37c13b949e23ba75b40835da0d3a177838a92e4743eba",
+      "equal": true
+    },
+    {
+      "path": "src/components/experience.tsx",
+      "baselineSHA256": "070f05ffec9be82fb4e2072a4c5b417cc8fbc2cbbc8e94bf130daa78e7961471",
+      "currentSHA256": "070f05ffec9be82fb4e2072a4c5b417cc8fbc2cbbc8e94bf130daa78e7961471",
+      "equal": true
+    },
+    {
+      "path": "src/components/explorer.tsx",
+      "baselineSHA256": "89c4b8d8224b14918d1d207a1c348169093f03c9053fc15a11275f86132600e4",
+      "currentSHA256": "89c4b8d8224b14918d1d207a1c348169093f03c9053fc15a11275f86132600e4",
+      "equal": true
+    },
+    {
+      "path": "src/components/fleet-experience.tsx",
+      "baselineSHA256": "27946f6db66d0b60a621b163e7b902bb2d98f98c99410ae8dd53d8ae39b305e0",
+      "currentSHA256": "27946f6db66d0b60a621b163e7b902bb2d98f98c99410ae8dd53d8ae39b305e0",
+      "equal": true
+    },
+    {
+      "path": "src/components/fleet-swipe.tsx",
+      "baselineSHA256": "454cfd0de9e35bcffbfd3bc912955f40418fde34945d00b651c9a97852f81010",
+      "currentSHA256": "454cfd0de9e35bcffbfd3bc912955f40418fde34945d00b651c9a97852f81010",
+      "equal": true
+    },
+    {
+      "path": "src/components/footnotes.tsx",
+      "baselineSHA256": "9fd3e6d1febb1335050483a78e3be8bcf230ec2835f3c90924707daf160a1de4",
+      "currentSHA256": "9fd3e6d1febb1335050483a78e3be8bcf230ec2835f3c90924707daf160a1de4",
+      "equal": true
+    },
+    {
+      "path": "src/components/market-audit.tsx",
+      "baselineSHA256": "137f957d0a7de706eb03a29fa0ac10aa3f9d68ffcadf88286173e58d7b40fff4",
+      "currentSHA256": "137f957d0a7de706eb03a29fa0ac10aa3f9d68ffcadf88286173e58d7b40fff4",
+      "equal": true
+    },
+    {
+      "path": "src/components/model-y-verdict.tsx",
+      "baselineSHA256": "c01f95e4b6738184609b9b50adc9c77b2cadece144038929f1dae885573693b4",
+      "currentSHA256": "c01f95e4b6738184609b9b50adc9c77b2cadece144038929f1dae885573693b4",
+      "equal": true
+    },
+    {
+      "path": "src/components/picker.tsx",
+      "baselineSHA256": "1f88355837790f69182315876ab3cb6d13937c118a5bf64dfaa452321c38e58b",
+      "currentSHA256": "1f88355837790f69182315876ab3cb6d13937c118a5bf64dfaa452321c38e58b",
+      "equal": true
+    },
+    {
+      "path": "src/components/review-queue.tsx",
+      "baselineSHA256": "f74dd0b66ea608230432bc9bb313563174ed97bc07130c4f547a00894948c91c",
+      "currentSHA256": "f74dd0b66ea608230432bc9bb313563174ed97bc07130c4f547a00894948c91c",
+      "equal": true
+    },
+    {
+      "path": "src/components/roadmark-error.tsx",
+      "baselineSHA256": "64b3f6209e66489f450b092a010dce7f1a153704bd397c6f9ab61fbb577df2c3",
+      "currentSHA256": "64b3f6209e66489f450b092a010dce7f1a153704bd397c6f9ab61fbb577df2c3",
+      "equal": true
+    },
+    {
+      "path": "src/components/roadmark-logo.tsx",
+      "baselineSHA256": "a60f9bee01195bccd4d201053edf07fdb58078a189d4d73e033a598e03c6889a",
+      "currentSHA256": "a60f9bee01195bccd4d201053edf07fdb58078a189d4d73e033a598e03c6889a",
+      "equal": true
+    },
+    {
+      "path": "src/components/scene-canvas.tsx",
+      "baselineSHA256": "d5847b8cbb796fdcd2c1b7e757559d14b7163f9dea25de6a2e98c369feaa1848",
+      "currentSHA256": "d5847b8cbb796fdcd2c1b7e757559d14b7163f9dea25de6a2e98c369feaa1848",
+      "equal": true
+    },
+    {
+      "path": "src/components/selected-copy.tsx",
+      "baselineSHA256": "ba14b26c9cd66e1785d48e26e7ff4379f09b2c7c02bd5fed0e6125c099fd7cb9",
+      "currentSHA256": "ba14b26c9cd66e1785d48e26e7ff4379f09b2c7c02bd5fed0e6125c099fd7cb9",
+      "equal": true
+    },
+    {
+      "path": "src/components/site-shell.tsx",
+      "baselineSHA256": "d38752aa0f75e93043466048c53556310fa6b49a01ad498043cfa321978d839a",
+      "currentSHA256": "d38752aa0f75e93043466048c53556310fa6b49a01ad498043cfa321978d839a",
+      "equal": true
+    },
+    {
+      "path": "src/components/software.tsx",
+      "baselineSHA256": "61178d443a93a1bc8f6d1ae7a8f151e76c5ed70de5ea3aa510eacfb3d56da8bd",
+      "currentSHA256": "61178d443a93a1bc8f6d1ae7a8f151e76c5ed70de5ea3aa510eacfb3d56da8bd",
+      "equal": true
+    },
+    {
+      "path": "src/components/source-registry.tsx",
+      "baselineSHA256": "a1de13b92b6f2d7f015113548eb582b80f63688978d8ca468640ba851a93b032",
+      "currentSHA256": "a1de13b92b6f2d7f015113548eb582b80f63688978d8ca468640ba851a93b032",
+      "equal": true
+    },
+    {
+      "path": "src/components/static-comparison.tsx",
+      "baselineSHA256": "3596d553cb5029627d7684f3a776ac17ad2a9ce7e29a995bfe7bc022c0c030aa",
+      "currentSHA256": "3596d553cb5029627d7684f3a776ac17ad2a9ce7e29a995bfe7bc022c0c030aa",
+      "equal": true
+    },
+    {
+      "path": "src/components/ui.tsx",
+      "baselineSHA256": "27958704625148e04149d572f97e6c1301c44631295b7f8cd80cc1fc232af526",
+      "currentSHA256": "27958704625148e04149d572f97e6c1301c44631295b7f8cd80cc1fc232af526",
+      "equal": true
+    },
+    {
+      "path": "src/components/verdict-pictogram.tsx",
+      "baselineSHA256": "8bc88e89f8d433c2811ed4e5058669432554db36022fc96f8cf4bb41fb39ff0c",
+      "currentSHA256": "8bc88e89f8d433c2811ed4e5058669432554db36022fc96f8cf4bb41fb39ff0c",
+      "equal": true
+    },
+    {
+      "path": "src/components/with-evidence.tsx",
+      "baselineSHA256": "53bad778aab02e4d14b793445ff53ca76f9d98675760e06cf00027ab650dbc8f",
+      "currentSHA256": "53bad778aab02e4d14b793445ff53ca76f9d98675760e06cf00027ab650dbc8f",
+      "equal": true
+    },
+    {
+      "path": "src/lib/availability-corrections.ts",
+      "baselineSHA256": "f0b225b0bb662b381268f10926af3fdca2084bf4212ffb11b52d97c6533cceba",
+      "currentSHA256": "f0b225b0bb662b381268f10926af3fdca2084bf4212ffb11b52d97c6533cceba",
+      "equal": true
+    },
+    {
+      "path": "src/lib/buyer-proposal-storage.ts",
+      "baselineSHA256": "2febace11633321f2c103a0b3db4c4632df8e3601195922c4b83fce6354f7f7c",
+      "currentSHA256": "2febace11633321f2c103a0b3db4c4632df8e3601195922c4b83fce6354f7f7c",
+      "equal": true
+    },
+    {
+      "path": "src/lib/buyer-proposal.ts",
+      "baselineSHA256": "588c5e79b694e63ecb785a80f6cef902544505a8d8fdf0492c355254ccf21b6a",
+      "currentSHA256": "588c5e79b694e63ecb785a80f6cef902544505a8d8fdf0492c355254ccf21b6a",
+      "equal": true
+    },
+    {
+      "path": "src/lib/buyer-summary-timing.ts",
+      "baselineSHA256": "2de13a52761a352987a13f539d57d4824036cde20775ae994b7db92f4c3e9ec6",
+      "currentSHA256": "2de13a52761a352987a13f539d57d4824036cde20775ae994b7db92f4c3e9ec6",
+      "equal": true
+    },
+    {
+      "path": "src/lib/chapter-art-src.ts",
+      "baselineSHA256": "53e1de5a975d096775f2c2dd4674f3bff1bb4594f3e50d76a38ab823fa01a70f",
+      "currentSHA256": "53e1de5a975d096775f2c2dd4674f3bff1bb4594f3e50d76a38ab823fa01a70f",
+      "equal": true
+    },
+    {
+      "path": "src/lib/chapter-art.ts",
+      "baselineSHA256": "e7ea3580fc5f5f22a140da6d3a5a22d70b46469a956f46ceb8aee0feb698912a",
+      "currentSHA256": "e7ea3580fc5f5f22a140da6d3a5a22d70b46469a956f46ceb8aee0feb698912a",
+      "equal": true
+    },
+    {
+      "path": "src/lib/chapter-scenes.ts",
+      "baselineSHA256": "42b9bf2933afb595481b6bea1e46ecfc7e35d92bc1f38be2ea032b9092a00647",
+      "currentSHA256": "42b9bf2933afb595481b6bea1e46ecfc7e35d92bc1f38be2ea032b9092a00647",
+      "equal": true
+    },
+    {
+      "path": "src/lib/chapters.ts",
+      "baselineSHA256": "69b51024f414263e8827030e1a086034177d334e5dd069ec9ed71802524bc75a",
+      "currentSHA256": "69b51024f414263e8827030e1a086034177d334e5dd069ec9ed71802524bc75a",
+      "equal": true
+    },
+    {
+      "path": "src/lib/citable.ts",
+      "baselineSHA256": "6e549bda5512e251674a1c852511526572e7df67048c667580a70d9e342914d6",
+      "currentSHA256": "6e549bda5512e251674a1c852511526572e7df67048c667580a70d9e342914d6",
+      "equal": true
+    },
+    {
+      "path": "src/lib/compare.ts",
+      "baselineSHA256": "8f8980113c28997046067081f17084f9bf4ee025351d165e432e2f964131a835",
+      "currentSHA256": "8f8980113c28997046067081f17084f9bf4ee025351d165e432e2f964131a835",
+      "equal": true
+    },
+    {
+      "path": "src/lib/comparison-context.ts",
+      "baselineSHA256": "bcff166e26c80c4e1f1af9c386c995a9f7a3cbe8540252973f21788fd08d7583",
+      "currentSHA256": "bcff166e26c80c4e1f1af9c386c995a9f7a3cbe8540252973f21788fd08d7583",
+      "equal": true
+    },
+    {
+      "path": "src/lib/config.ts",
+      "baselineSHA256": "6f3507757cc703272faf172881d3f265d1512b883c0cb6e4808d8062ef61936b",
+      "currentSHA256": "6f3507757cc703272faf172881d3f265d1512b883c0cb6e4808d8062ef61936b",
+      "equal": true
+    },
+    {
+      "path": "src/lib/corrections.ts",
+      "baselineSHA256": "01224d222c867e196d58ccd56102ef52c398d9d88f02c3d4e4df09af4b1fc546",
+      "currentSHA256": "01224d222c867e196d58ccd56102ef52c398d9d88f02c3d4e4df09af4b1fc546",
+      "equal": true
+    },
+    {
+      "path": "src/lib/data.ts",
+      "baselineSHA256": "c00670a9d2c398f6031fc5d788c52c65a74202fd606bb25612b736bb3d28aa7f",
+      "currentSHA256": "c00670a9d2c398f6031fc5d788c52c65a74202fd606bb25612b736bb3d28aa7f",
+      "equal": true
+    },
+    {
+      "path": "src/lib/discovery.ts",
+      "baselineSHA256": "1e571fe9603e26e561ed1a27bdf16503559a574936f5a9c1ccf8e52f8ed3e536",
+      "currentSHA256": "1e571fe9603e26e561ed1a27bdf16503559a574936f5a9c1ccf8e52f8ed3e536",
+      "equal": true
+    },
+    {
+      "path": "src/lib/driving-sim.ts",
+      "baselineSHA256": "ca6c104caf0e7274a253b266ed09cdf6028b5e1fbbd05f9be7df5fc9ba1ee6b1",
+      "currentSHA256": "ca6c104caf0e7274a253b266ed09cdf6028b5e1fbbd05f9be7df5fc9ba1ee6b1",
+      "equal": true
+    },
+    {
+      "path": "src/lib/evidence-date.ts",
+      "baselineSHA256": "8330e4c20317150c4c1e4ab9039b16562972741cdf0d4d1df2b86ea655574753",
+      "currentSHA256": "8330e4c20317150c4c1e4ab9039b16562972741cdf0d4d1df2b86ea655574753",
+      "equal": true
+    },
+    {
+      "path": "src/lib/fact-validity.ts",
+      "baselineSHA256": "6ca1ba756a420d61700db62c7fb58b4ec8b89f632f124a4da4de5eed95373eb5",
+      "currentSHA256": "6ca1ba756a420d61700db62c7fb58b4ec8b89f632f124a4da4de5eed95373eb5",
+      "equal": true
+    },
+    {
+      "path": "src/lib/feature-corrections.ts",
+      "baselineSHA256": "26f158b3ef8d9e34b1c3a88d197d9771b6f907cda3c02bcf1ae13881a943b008",
+      "currentSHA256": "26f158b3ef8d9e34b1c3a88d197d9771b6f907cda3c02bcf1ae13881a943b008",
+      "equal": true
+    },
+    {
+      "path": "src/lib/fleet.ts",
+      "baselineSHA256": "a703995220cd37d667c7a3d0a3304e0103ff5165fce38d3222dacebca1f37469",
+      "currentSHA256": "a703995220cd37d667c7a3d0a3304e0103ff5165fce38d3222dacebca1f37469",
+      "equal": true
+    },
+    {
+      "path": "src/lib/launch-evidence.ts",
+      "baselineSHA256": "4d017cf74835569b2d3fedb2ca68e4c5a5d8b07369ae814b62a66443f7b79e51",
+      "currentSHA256": "4d017cf74835569b2d3fedb2ca68e4c5a5d8b07369ae814b62a66443f7b79e51",
+      "equal": true
+    },
+    {
+      "path": "src/lib/media.ts",
+      "baselineSHA256": "64df39ac3c8d655ab458dff1623d9855b856ee408d18a8bcf5c53c1c1585944b",
+      "currentSHA256": "64df39ac3c8d655ab458dff1623d9855b856ee408d18a8bcf5c53c1c1585944b",
+      "equal": true
+    },
+    {
+      "path": "src/lib/page-props.ts",
+      "baselineSHA256": "e724d9974f5675530e172236ee47415a7248e8e65553fbc0de5336618d096048",
+      "currentSHA256": "e724d9974f5675530e172236ee47415a7248e8e65553fbc0de5336618d096048",
+      "equal": true
+    },
+    {
+      "path": "src/lib/pair-pages.ts",
+      "baselineSHA256": "d4790479c72c9c07d88270f52215be9fd6f071b1eecc9b318285d79e688b84d9",
+      "currentSHA256": "d4790479c72c9c07d88270f52215be9fd6f071b1eecc9b318285d79e688b84d9",
+      "equal": true
+    },
+    {
+      "path": "src/lib/picker-car.ts",
+      "baselineSHA256": "993265afe5d8f63631194f52035a1c46c98774bb6f9540c248b600d1839157c4",
+      "currentSHA256": "993265afe5d8f63631194f52035a1c46c98774bb6f9540c248b600d1839157c4",
+      "equal": true
+    },
+    {
+      "path": "src/lib/portable-packs.ts",
+      "baselineSHA256": "6b4303fe0da00581769ae9dcc2118891999c90c5edde1486cee7021cda474771",
+      "currentSHA256": "6b4303fe0da00581769ae9dcc2118891999c90c5edde1486cee7021cda474771",
+      "equal": true
+    },
+    {
+      "path": "src/lib/research-refresh.ts",
+      "baselineSHA256": "69d8dd8d9a6b7ae804445119d9bb4211dfe7142765534f28de675a9eefa99a1f",
+      "currentSHA256": "69d8dd8d9a6b7ae804445119d9bb4211dfe7142765534f28de675a9eefa99a1f",
+      "equal": true
+    },
+    {
+      "path": "src/lib/scene-loaders.ts",
+      "baselineSHA256": "7ec5810c58193e496e2484d75045d716bf53c87089527a85d8ab335dbeadc3da",
+      "currentSHA256": "7ec5810c58193e496e2484d75045d716bf53c87089527a85d8ab335dbeadc3da",
+      "equal": true
+    },
+    {
+      "path": "src/lib/scene-readout.ts",
+      "baselineSHA256": "e68d25cfabed601f3ddb8e3680f2c27dd88a4e01a588855684f4a82ae08b15a7",
+      "currentSHA256": "e68d25cfabed601f3ddb8e3680f2c27dd88a4e01a588855684f4a82ae08b15a7",
+      "equal": true
+    },
+    {
+      "path": "src/lib/scenes/b/car.ts",
+      "baselineSHA256": "1104f281b7d13e49f00278d516e8a18731e999f3dd86f17a106a83852be17bff",
+      "currentSHA256": "1104f281b7d13e49f00278d516e8a18731e999f3dd86f17a106a83852be17bff",
+      "equal": true
+    },
+    {
+      "path": "src/lib/scenes/b/comfort.ts",
+      "baselineSHA256": "192490c9f5d380fec73c0692f3e85f1d3cb4717853af6eb2181e6bfa09843e98",
+      "currentSHA256": "192490c9f5d380fec73c0692f3e85f1d3cb4717853af6eb2181e6bfa09843e98",
+      "equal": true
+    },
+    {
+      "path": "src/lib/scenes/b/common.ts",
+      "baselineSHA256": "b6ddf9b824cad77c1fad57746d96f1f6d3abcfe66f7162a571119dfd8c8cbc1f",
+      "currentSHA256": "b6ddf9b824cad77c1fad57746d96f1f6d3abcfe66f7162a571119dfd8c8cbc1f",
+      "equal": true
+    },
+    {
+      "path": "src/lib/scenes/b/convenience.ts",
+      "baselineSHA256": "68862ced5e356a83a53e6bfdd2a457d5ddc8f24464c07a22aedf7c0baa039ee9",
+      "currentSHA256": "68862ced5e356a83a53e6bfdd2a457d5ddc8f24464c07a22aedf7c0baa039ee9",
+      "equal": true
+    },
+    {
+      "path": "src/lib/scenes/b/drive.ts",
+      "baselineSHA256": "cceb4b318345af95760ff7f4492ddead685bb7eac13bf014e8934c15cdd54d01",
+      "currentSHA256": "cceb4b318345af95760ff7f4492ddead685bb7eac13bf014e8934c15cdd54d01",
+      "equal": true
+    },
+    {
+      "path": "src/lib/scenes/b/flat.ts",
+      "baselineSHA256": "d161f3a3191cc9011e817d42725ff95faa5379d98184d8f68fcc6f91d378a766",
+      "currentSHA256": "d161f3a3191cc9011e817d42725ff95faa5379d98184d8f68fcc6f91d378a766",
+      "equal": true
+    },
+    {
+      "path": "src/lib/scenes/b/gl.ts",
+      "baselineSHA256": "e0f05bd0ff9d5a7444c8bc076a9ff110756c38f61ba0c447ac5b7907d378c9bb",
+      "currentSHA256": "e0f05bd0ff9d5a7444c8bc076a9ff110756c38f61ba0c447ac5b7907d378c9bb",
+      "equal": true
+    },
+    {
+      "path": "src/lib/scenes/b/home.ts",
+      "baselineSHA256": "03d876d4e2ca6c68cb285634f33a9b542e20f3a0df4eaab7fa4f24eabf802a5c",
+      "currentSHA256": "03d876d4e2ca6c68cb285634f33a9b542e20f3a0df4eaab7fa4f24eabf802a5c",
+      "equal": true
+    },
+    {
+      "path": "src/lib/scenes/b/index.ts",
+      "baselineSHA256": "18e4a7fc4067a402f0f4b2370aa63d843e089d522770f5c03c292a6ea5641c17",
+      "currentSHA256": "18e4a7fc4067a402f0f4b2370aa63d843e089d522770f5c03c292a6ea5641c17",
+      "equal": true
+    },
+    {
+      "path": "src/lib/scenes/b/math.ts",
+      "baselineSHA256": "e4ea4b45da5789be3fd1e5e56997b52d4cdc8ebb396c149ba4cb03600b1e9022",
+      "currentSHA256": "e4ea4b45da5789be3fd1e5e56997b52d4cdc8ebb396c149ba4cb03600b1e9022",
+      "equal": true
+    },
+    {
+      "path": "src/lib/scenes/b/mesh.ts",
+      "baselineSHA256": "a56aa3ce122c464dc6d37353e0534541a3878814205d8782eeff08f704595cb0",
+      "currentSHA256": "a56aa3ce122c464dc6d37353e0534541a3878814205d8782eeff08f704595cb0",
+      "equal": true
+    },
+    {
+      "path": "src/lib/scenes/b/overlay.ts",
+      "baselineSHA256": "b6c18b5c857ed23c5a5251fe178a3933a7c44d4d196b58e3f5207d11a43af3f3",
+      "currentSHA256": "b6c18b5c857ed23c5a5251fe178a3933a7c44d4d196b58e3f5207d11a43af3f3",
+      "equal": true
+    },
+    {
+      "path": "src/lib/scenes/b/price.ts",
+      "baselineSHA256": "02c8099f9c3565f7585a0bffce23684163b7bf9c3335027b34200f90d682ef30",
+      "currentSHA256": "02c8099f9c3565f7585a0bffce23684163b7bf9c3335027b34200f90d682ef30",
+      "equal": true
+    },
+    {
+      "path": "src/lib/scenes/b/props.ts",
+      "baselineSHA256": "91fa2bce7bfd872ff548e7fe969a31c6c1722ed4ea43e1655a9b1f110ec34000",
+      "currentSHA256": "91fa2bce7bfd872ff548e7fe969a31c6c1722ed4ea43e1655a9b1f110ec34000",
+      "equal": true
+    },
+    {
+      "path": "src/lib/scenes/b/range.ts",
+      "baselineSHA256": "0de7054204955ed71ce70c88b1744bbe69ed8f5ffa5bbcd8b09b22b918273edb",
+      "currentSHA256": "0de7054204955ed71ce70c88b1744bbe69ed8f5ffa5bbcd8b09b22b918273edb",
+      "equal": true
+    },
+    {
+      "path": "src/lib/scenes/b/software.ts",
+      "baselineSHA256": "9bd2670cf616def7b7a23ae6937e089ed2861e988ee0512c5302e6599520c164",
+      "currentSHA256": "9bd2670cf616def7b7a23ae6937e089ed2861e988ee0512c5302e6599520c164",
+      "equal": true
+    },
+    {
+      "path": "src/lib/scenes/b/space.ts",
+      "baselineSHA256": "7caff62112859ffbf7bcd05eea213c66d1af16dc1b6a7f132fe4f83326de80e9",
+      "currentSHA256": "7caff62112859ffbf7bcd05eea213c66d1af16dc1b6a7f132fe4f83326de80e9",
+      "equal": true
+    },
+    {
+      "path": "src/lib/scenes/b/stage.ts",
+      "baselineSHA256": "8e6a6192ed25d73ce8514944f863f5410a6ccfc4e172adf77786c7e8a7d4cd11",
+      "currentSHA256": "8e6a6192ed25d73ce8514944f863f5410a6ccfc4e172adf77786c7e8a7d4cd11",
+      "equal": true
+    },
+    {
+      "path": "src/lib/scenes/b/town.ts",
+      "baselineSHA256": "a4506ece572600a2f63974caa558043b4400c44d46cb93d19212200ac8cec300",
+      "currentSHA256": "a4506ece572600a2f63974caa558043b4400c44d46cb93d19212200ac8cec300",
+      "equal": true
+    },
+    {
+      "path": "src/lib/scenes/b/world.ts",
+      "baselineSHA256": "fbd0361330f77aff812269ba64b36a61901a76dd83b5d6a5af7d7705c3c1c98e",
+      "currentSHA256": "fbd0361330f77aff812269ba64b36a61901a76dd83b5d6a5af7d7705c3c1c98e",
+      "equal": true
+    },
+    {
+      "path": "src/lib/scenes/comfort.ts",
+      "baselineSHA256": "1a93432de0c3833e125a12938a58b6fc4b7a4aa2fd3edbe6c5b4fc35f9809d9e",
+      "currentSHA256": "1a93432de0c3833e125a12938a58b6fc4b7a4aa2fd3edbe6c5b4fc35f9809d9e",
+      "equal": true
+    },
+    {
+      "path": "src/lib/scenes/convenience.ts",
+      "baselineSHA256": "c2040cf1a9f5a491ae2bb66583d38baf3fc11d51d583ed1f761d755f28019690",
+      "currentSHA256": "c2040cf1a9f5a491ae2bb66583d38baf3fc11d51d583ed1f761d755f28019690",
+      "equal": true
+    },
+    {
+      "path": "src/lib/scenes/drive.ts",
+      "baselineSHA256": "a5279e1f709d41aaea902ad01bcd8377fa9b88b462f4691e7f4db9aacbd27cad",
+      "currentSHA256": "a5279e1f709d41aaea902ad01bcd8377fa9b88b462f4691e7f4db9aacbd27cad",
+      "equal": true
+    },
+    {
+      "path": "src/lib/scenes/figure.ts",
+      "baselineSHA256": "0f9478db6691b49a5d04de67ea74376acf0064d82b7e1b2507ca7ce936bd40d4",
+      "currentSHA256": "0f9478db6691b49a5d04de67ea74376acf0064d82b7e1b2507ca7ce936bd40d4",
+      "equal": true
+    },
+    {
+      "path": "src/lib/scenes/kit.ts",
+      "baselineSHA256": "19b2d89e1766a2db21a7b8203e7ffd3322a2004eca29e865797893b7bf6abda0",
+      "currentSHA256": "19b2d89e1766a2db21a7b8203e7ffd3322a2004eca29e865797893b7bf6abda0",
+      "equal": true
+    },
+    {
+      "path": "src/lib/scenes/model-y.ts",
+      "baselineSHA256": "18da39f88913310d2cd7b91cc686bbdc8a3049a911e9f01b4a151a88fe58d0bc",
+      "currentSHA256": "18da39f88913310d2cd7b91cc686bbdc8a3049a911e9f01b4a151a88fe58d0bc",
+      "equal": true
+    },
+    {
+      "path": "src/lib/scenes/price.ts",
+      "baselineSHA256": "29c411f4e497ffb1233bec82363ac4be2703f9f398767071e72f9b8132ebe27a",
+      "currentSHA256": "29c411f4e497ffb1233bec82363ac4be2703f9f398767071e72f9b8132ebe27a",
+      "equal": true
+    },
+    {
+      "path": "src/lib/scenes/props.ts",
+      "baselineSHA256": "d7fd52470bd1b55a9e69ab644b1d3dbbf9e1e7becb4b029be380cbc196d060a2",
+      "currentSHA256": "d7fd52470bd1b55a9e69ab644b1d3dbbf9e1e7becb4b029be380cbc196d060a2",
+      "equal": true
+    },
+    {
+      "path": "src/lib/scenes/range.ts",
+      "baselineSHA256": "8e6db67dd4a02a54cc29e0a65112ebc6251f5c58098b91ffcbb01adf5d97ab96",
+      "currentSHA256": "8e6db67dd4a02a54cc29e0a65112ebc6251f5c58098b91ffcbb01adf5d97ab96",
+      "equal": true
+    },
+    {
+      "path": "src/lib/scenes/software.ts",
+      "baselineSHA256": "8e3b91780292fcd4c0df4063713e21d442acbfb646ea87b5e3e4c482b09d9e8f",
+      "currentSHA256": "8e3b91780292fcd4c0df4063713e21d442acbfb646ea87b5e3e4c482b09d9e8f",
+      "equal": true
+    },
+    {
+      "path": "src/lib/scenes/space.ts",
+      "baselineSHA256": "29ffefe0acc6cb3cdb7737d946da4d143c7deca8c19deacd9434fb9f8fe9c90a",
+      "currentSHA256": "29ffefe0acc6cb3cdb7737d946da4d143c7deca8c19deacd9434fb9f8fe9c90a",
+      "equal": true
+    },
+    {
+      "path": "src/lib/search.ts",
+      "baselineSHA256": "1cc767f7a3f1a36cf9cd4b2b9d4b55bdc905da058bdf6bc52691464939707274",
+      "currentSHA256": "1cc767f7a3f1a36cf9cd4b2b9d4b55bdc905da058bdf6bc52691464939707274",
+      "equal": true
+    },
+    {
+      "path": "src/lib/selling-points.ts",
+      "baselineSHA256": "6bc95a324b3f0490950ac58a745d7f299554ad0a9fe98d203ff9e9ee7ff9dcb2",
+      "currentSHA256": "6bc95a324b3f0490950ac58a745d7f299554ad0a9fe98d203ff9e9ee7ff9dcb2",
+      "equal": true
+    },
+    {
+      "path": "src/lib/types.ts",
+      "baselineSHA256": "3008f6281409554d53a0717877903c9ae20643694322abab77ac0a1a49d254d9",
+      "currentSHA256": "3008f6281409554d53a0717877903c9ae20643694322abab77ac0a1a49d254d9",
+      "equal": true
+    },
+    {
+      "path": "src/lib/validate.ts",
+      "baselineSHA256": "5f0fab1d3827b4ba8220f49f08fbcdf78707f6e949b14726bf94a5122c7c919f",
+      "currentSHA256": "5f0fab1d3827b4ba8220f49f08fbcdf78707f6e949b14726bf94a5122c7c919f",
+      "equal": true
+    },
+    {
+      "path": "src/portable/chapter-art-src.ts",
+      "baselineSHA256": "8bb65e84021c892607eba7890b1a28ca0ee0944d812ff4cada6877d27a88be63",
+      "currentSHA256": "8bb65e84021c892607eba7890b1a28ca0ee0944d812ff4cada6877d27a88be63",
+      "equal": true
+    },
+    {
+      "path": "src/portable/data.ts",
+      "baselineSHA256": "56e1e33cb728a114ec0715506f0f529126fe99ceae7a1ba8da984c16cba453cc",
+      "currentSHA256": "56e1e33cb728a114ec0715506f0f529126fe99ceae7a1ba8da984c16cba453cc",
+      "equal": true
+    },
+    {
+      "path": "src/portable/entry.tsx",
+      "baselineSHA256": "0bdaab7d974e6b4da5a0580ed18002de87996e141e49e406652db52dfd5187c9",
+      "currentSHA256": "0bdaab7d974e6b4da5a0580ed18002de87996e141e49e406652db52dfd5187c9",
+      "equal": true
+    },
+    {
+      "path": "src/portable/image.tsx",
+      "baselineSHA256": "7cb6995f4f0920141c67c20eff62f4785aaf9fd0e079e6c02167722f3d91f4f2",
+      "currentSHA256": "7cb6995f4f0920141c67c20eff62f4785aaf9fd0e079e6c02167722f3d91f4f2",
+      "equal": true
+    },
+    {
+      "path": "src/portable/link.tsx",
+      "baselineSHA256": "0add93ac8b2209b4cba733f805d3bfb7f9252fd3d33bd0d9b3da65c95a8ecfe6",
+      "currentSHA256": "0add93ac8b2209b4cba733f805d3bfb7f9252fd3d33bd0d9b3da65c95a8ecfe6",
+      "equal": true
+    },
+    {
+      "path": "src/portable/navigation.ts",
+      "baselineSHA256": "e5af0074795673341ddabb8d7ef408420c9c4ef109e9b81b37e0e311071dcac8",
+      "currentSHA256": "e5af0074795673341ddabb8d7ef408420c9c4ef109e9b81b37e0e311071dcac8",
+      "equal": true
+    },
+    {
+      "path": "tests/atto1-additions.test.ts",
+      "baselineSHA256": "633f284f135ee0a7600c9c7cb55f46d12bfd8fd0b3c437b1e9641775ee02a162",
+      "currentSHA256": "633f284f135ee0a7600c9c7cb55f46d12bfd8fd0b3c437b1e9641775ee02a162",
+      "equal": true
+    },
+    {
+      "path": "tests/audi-porsche-catalogue.test.ts",
+      "baselineSHA256": "0727fd2ac3ee431843404c948f97ac1322b1fd56fb1f2ebd2057b489b2f1106c",
+      "currentSHA256": "0727fd2ac3ee431843404c948f97ac1322b1fd56fb1f2ebd2057b489b2f1106c",
+      "equal": true
+    },
+    {
+      "path": "tests/availability-corrections.test.ts",
+      "baselineSHA256": "403a683d89a9ddbf715ea510c770f86b81c9c47cddc0bdc3552f401352dce2f9",
+      "currentSHA256": "403a683d89a9ddbf715ea510c770f86b81c9c47cddc0bdc3552f401352dce2f9",
+      "equal": true
+    },
+    {
+      "path": "tests/bmw-mini-catalogue.test.ts",
+      "baselineSHA256": "9a695eda5ed9860a19408e313b64d2ba410e2f5a947e84b61dce15953e293f2a",
+      "currentSHA256": "9a695eda5ed9860a19408e313b64d2ba410e2f5a947e84b61dce15953e293f2a",
+      "equal": true
+    },
+    {
+      "path": "tests/bus-integration.test.ts",
+      "baselineSHA256": "a37ebddf0530ecef5f272e358f02db07a79039e160c46b675af4fe82d07359a7",
+      "currentSHA256": "a37ebddf0530ecef5f272e358f02db07a79039e160c46b675af4fe82d07359a7",
+      "equal": true
+    },
+    {
+      "path": "tests/bus-report-boundaries.test.ts",
+      "baselineSHA256": "95859ed7ba4f21892271f95413544b054633679a77ed6780d457dc7df0271653",
+      "currentSHA256": "95859ed7ba4f21892271f95413544b054633679a77ed6780d457dc7df0271653",
+      "equal": true
+    },
+    {
+      "path": "tests/buyer-proposal-storage.test.ts",
+      "baselineSHA256": "05a2950e2c8a055cee4367a1bbcd4401ff23c1c6d4de9882454dc907eedddac6",
+      "currentSHA256": "05a2950e2c8a055cee4367a1bbcd4401ff23c1c6d4de9882454dc907eedddac6",
+      "equal": true
+    },
+    {
+      "path": "tests/buyer-summary-timing.test.ts",
+      "baselineSHA256": "d8b8af160e12043715459060eb3778d7564a008b89d96d65085bc960785e6fb8",
+      "currentSHA256": "d8b8af160e12043715459060eb3778d7564a008b89d96d65085bc960785e6fb8",
+      "equal": true
+    },
+    {
+      "path": "tests/cached-summary-ssr.test.ts",
+      "baselineSHA256": "2de8e585eee12bbb76d67a180b319b19edfb1597ec7c5bc82732ff67111b8ace",
+      "currentSHA256": "2de8e585eee12bbb76d67a180b319b19edfb1597ec7c5bc82732ff67111b8ace",
+      "equal": true
+    },
+    {
+      "path": "tests/catalogue-additions.test.ts",
+      "baselineSHA256": "090e3d0ecef1d34db227e23c9e8796cffe911c8c892a2b3af23ccf3049e0f8f0",
+      "currentSHA256": "090e3d0ecef1d34db227e23c9e8796cffe911c8c892a2b3af23ccf3049e0f8f0",
+      "equal": true
+    },
+    {
+      "path": "tests/citable.test.ts",
+      "baselineSHA256": "0165b88fbdb1ced59ad7bb3cd2f7f5a5fcebc1150a6338e28ea433e1f34514e3",
+      "currentSHA256": "0165b88fbdb1ced59ad7bb3cd2f7f5a5fcebc1150a6338e28ea433e1f34514e3",
+      "equal": true
+    },
+    {
+      "path": "tests/comparison-context.test.ts",
+      "baselineSHA256": "33430f5c2e144a5ade4fe3a76f97d3196671d54d588b8224c7a9833c82db46c5",
+      "currentSHA256": "33430f5c2e144a5ade4fe3a76f97d3196671d54d588b8224c7a9833c82db46c5",
+      "equal": true
+    },
+    {
+      "path": "tests/comparison-picker.test.ts",
+      "baselineSHA256": "8b64a8d910ed2557c0bce93dccf881ebae38749c19bf670aa4d99ea93897324f",
+      "currentSHA256": "8b64a8d910ed2557c0bce93dccf881ebae38749c19bf670aa4d99ea93897324f",
+      "equal": true
+    },
+    {
+      "path": "tests/corrections.test.ts",
+      "baselineSHA256": "213c0745cb4a0d390328408fcc2e0d891b50990cdb48c18d3500fd7544bcf687",
+      "currentSHA256": "213c0745cb4a0d390328408fcc2e0d891b50990cdb48c18d3500fd7544bcf687",
+      "equal": true
+    },
+    {
+      "path": "tests/denza-gac-smart-integration.test.ts",
+      "baselineSHA256": "fe572fa09b980874480b8b6a5c5c1cda5dc3d44908711980dd0bb4833a3fe292",
+      "currentSHA256": "fe572fa09b980874480b8b6a5c5c1cda5dc3d44908711980dd0bb4833a3fe292",
+      "equal": true
+    },
+    {
+      "path": "tests/detail-discovery.test.ts",
+      "baselineSHA256": "63eba289be81449c954be912ffa8b9ac8afa87b795607a2a4945cad1051a922e",
+      "currentSHA256": "63eba289be81449c954be912ffa8b9ac8afa87b795607a2a4945cad1051a922e",
+      "equal": true
+    },
+    {
+      "path": "tests/detail-evidence-layout.test.ts",
+      "baselineSHA256": "d5b67391a17974e118a54ecd14aba7887024e85a652370f4285c6536d24829b5",
+      "currentSHA256": "d5b67391a17974e118a54ecd14aba7887024e85a652370f4285c6536d24829b5",
+      "equal": true
+    },
+    {
+      "path": "tests/discovery.test.ts",
+      "baselineSHA256": "2e75953d96c254c5e65c18c9fc7ead01cd0d8a3b69b472cdc160ae7126b46546",
+      "currentSHA256": "2e75953d96c254c5e65c18c9fc7ead01cd0d8a3b69b472cdc160ae7126b46546",
+      "equal": true
+    },
+    {
+      "path": "tests/domain.test.ts",
+      "baselineSHA256": "ad03a8aafcbe2ffc2ef2bd78fb8ca05964209f451202e67a3846228f44f3dee1",
+      "currentSHA256": "ad03a8aafcbe2ffc2ef2bd78fb8ca05964209f451202e67a3846228f44f3dee1",
+      "equal": true
+    },
+    {
+      "path": "tests/e2e/citable.spec.ts",
+      "baselineSHA256": "63d53fa4eddc9b5c85ef22015a851694bcf30d495f42232577dd3757b6aae6ae",
+      "currentSHA256": "63d53fa4eddc9b5c85ef22015a851694bcf30d495f42232577dd3757b6aae6ae",
+      "equal": true
+    },
+    {
+      "path": "tests/e2e/fleet.spec.ts",
+      "baselineSHA256": "0ba0687d186cc8d5f56ec408618489f4c716d86d515f597c383a1600fea9233e",
+      "currentSHA256": "0ba0687d186cc8d5f56ec408618489f4c716d86d515f597c383a1600fea9233e",
+      "equal": true
+    },
+    {
+      "path": "tests/e2e/journeys.spec.ts",
+      "baselineSHA256": "69f8f01e8448d942ac16f436a65c09df778f8048c53b2894591b72e7cc9f6d70",
+      "currentSHA256": "69f8f01e8448d942ac16f436a65c09df778f8048c53b2894591b72e7cc9f6d70",
+      "equal": true
+    },
+    {
+      "path": "tests/e2e/portable.spec.ts",
+      "baselineSHA256": "89f70be75bf1a0d5de3049d9753e22300d0aab2eef2c28025edf4353380bf9e7",
+      "currentSHA256": "89f70be75bf1a0d5de3049d9753e22300d0aab2eef2c28025edf4353380bf9e7",
+      "equal": true
+    },
+    {
+      "path": "tests/e2e/scene-loading.spec.ts",
+      "baselineSHA256": "8450ad70b97c8871da841909b47b6436801e253656fea87a88a90bde352ce880",
+      "currentSHA256": "8450ad70b97c8871da841909b47b6436801e253656fea87a88a90bde352ce880",
+      "equal": true
+    },
+    {
+      "path": "tests/electric-trucks-catalogue.test.ts",
+      "baselineSHA256": "ae74475d8126e8db0c9691854cacec7237b6b2c91c505fb5de214fd86644051a",
+      "currentSHA256": "ae74475d8126e8db0c9691854cacec7237b6b2c91c505fb5de214fd86644051a",
+      "equal": true
+    },
+    {
+      "path": "tests/evidence-conditions.test.ts",
+      "baselineSHA256": "17825cbad9d97eda4fb7ddbfc47f625ef89fc3099dc6ff7b4b9db9c9373fa255",
+      "currentSHA256": "17825cbad9d97eda4fb7ddbfc47f625ef89fc3099dc6ff7b4b9db9c9373fa255",
+      "equal": true
+    },
+    {
+      "path": "tests/evidence-date.test.ts",
+      "baselineSHA256": "5f2418870cfc7cba6b8d229ebe20b43d941643f624dd169a687dfb948c50d845",
+      "currentSHA256": "5f2418870cfc7cba6b8d229ebe20b43d941643f624dd169a687dfb948c50d845",
+      "equal": true
+    },
+    {
+      "path": "tests/fact-condition-presentation.test.ts",
+      "baselineSHA256": "ec19e2819f213d35baa874d24c9f26f2e6dc66a48a399a97c36d90bad7564c44",
+      "currentSHA256": "ec19e2819f213d35baa874d24c9f26f2e6dc66a48a399a97c36d90bad7564c44",
+      "equal": true
+    },
+    {
+      "path": "tests/fact-validity.test.ts",
+      "baselineSHA256": "082fe49b84abefa32ee5b5bb6069fe8d07f8f1b9ef3d37da6728229041a16ae8",
+      "currentSHA256": "082fe49b84abefa32ee5b5bb6069fe8d07f8f1b9ef3d37da6728229041a16ae8",
+      "equal": true
+    },
+    {
+      "path": "tests/feature-corrections.test.ts",
+      "baselineSHA256": "e06f4334d28ee8d601b5ab8a2909740c7fe15bc78d7654e494cd4ed3344124b7",
+      "currentSHA256": "e06f4334d28ee8d601b5ab8a2909740c7fe15bc78d7654e494cd4ed3344124b7",
+      "equal": true
+    },
+    {
+      "path": "tests/fixtures/cached-summary-ssr.mjs",
+      "baselineSHA256": "33ef8218d5816582df13362807d948a03126fc043e58e8b85d7794bf6c294566",
+      "currentSHA256": "33ef8218d5816582df13362807d948a03126fc043e58e8b85d7794bf6c294566",
+      "equal": true
+    },
+    {
+      "path": "tests/geely-zeekr-xpeng-catalogue.test.ts",
+      "baselineSHA256": "0fbd71c2abd16f3128156d3028b1595b2dc50f97b4117907ebb07f178e0e3906",
+      "currentSHA256": "0fbd71c2abd16f3128156d3028b1595b2dc50f97b4117907ebb07f178e0e3906",
+      "equal": true
+    },
+    {
+      "path": "tests/home-hero.test.ts",
+      "baselineSHA256": "97cfdfd2a4f6de7a65aa907a9359e08df303053d8166ad456cf0ea68d6279308",
+      "currentSHA256": "97cfdfd2a4f6de7a65aa907a9359e08df303053d8166ad456cf0ea68d6279308",
+      "equal": true
+    },
+    {
+      "path": "tests/home-payload.test.ts",
+      "baselineSHA256": "1f1f8ec4f9a57a54758d8932897d5dfe41c4cd647414929abc83ce29fb0197d3",
+      "currentSHA256": "1f1f8ec4f9a57a54758d8932897d5dfe41c4cd647414929abc83ce29fb0197d3",
+      "equal": true
+    },
+    {
+      "path": "tests/hyundai-additions.test.ts",
+      "baselineSHA256": "f4c333dad287bef4f61ea2052a6d613e7aaa7e1978b18f8cec1316ac7665d5a9",
+      "currentSHA256": "f4c333dad287bef4f61ea2052a6d613e7aaa7e1978b18f8cec1316ac7665d5a9",
+      "equal": true
+    },
+    {
+      "path": "tests/kia-additions.test.ts",
+      "baselineSHA256": "9fc482408fc2613edc38dde63b5b771072b982d9c2922b6e00834d15831f2d44",
+      "currentSHA256": "9fc482408fc2613edc38dde63b5b771072b982d9c2922b6e00834d15831f2d44",
+      "equal": true
+    },
+    {
+      "path": "tests/kia-cadillac-integration.test.ts",
+      "baselineSHA256": "ef369a42e302439b3079dd20b66aa0ae94fc7fead7c5d8152e5db9db723ae305",
+      "currentSHA256": "ef369a42e302439b3079dd20b66aa0ae94fc7fead7c5d8152e5db9db723ae305",
+      "equal": true
+    },
+    {
+      "path": "tests/ldv-van-additions.test.ts",
+      "baselineSHA256": "0f9da9b0570e171391c5402b8d42a78a54dc34c6494c5ae7eea5f131b1d81d10",
+      "currentSHA256": "0f9da9b0570e171391c5402b8d42a78a54dc34c6494c5ae7eea5f131b1d81d10",
+      "equal": true
+    },
+    {
+      "path": "tests/lexus-nissan-genesis-catalogue.test.ts",
+      "baselineSHA256": "3f84ef89ed0ef3b1f1a9320e18a4225f6b78d0cbf6f7b0b22d6b8294b52739aa",
+      "currentSHA256": "3f84ef89ed0ef3b1f1a9320e18a4225f6b78d0cbf6f7b0b22d6b8294b52739aa",
+      "equal": true
+    },
+    {
+      "path": "tests/local-review.test.ts",
+      "baselineSHA256": "70d5c716277eb7173ef7c8c5b17949c0dafe559f716a51ec6cc21e48c0d648c1",
+      "currentSHA256": "70d5c716277eb7173ef7c8c5b17949c0dafe559f716a51ec6cc21e48c0d648c1",
+      "equal": true
+    },
+    {
+      "path": "tests/market-audit.test.ts",
+      "baselineSHA256": "d55ac0f40a7f2d619964fc827a8575ca0e1f9340468954537d64338409ce11ff",
+      "currentSHA256": "d55ac0f40a7f2d619964fc827a8575ca0e1f9340468954537d64338409ce11ff",
+      "equal": true
+    },
+    {
+      "path": "tests/mercedes-passenger-catalogue.test.ts",
+      "baselineSHA256": "81c0941138194821ad4b8c6ac8770801ddbbad6f1072f887926e5bbd11771206",
+      "currentSHA256": "81c0941138194821ad4b8c6ac8770801ddbbad6f1072f887926e5bbd11771206",
+      "equal": true
+    },
+    {
+      "path": "tests/mg-remaining-catalogue.test.ts",
+      "baselineSHA256": "723d157c21721e80fe471902b2d159339168db607de0d7fce9d8b1b42a994e1c",
+      "currentSHA256": "723d157c21721e80fe471902b2d159339168db607de0d7fce9d8b1b42a994e1c",
+      "equal": true
+    },
+    {
+      "path": "tests/mg4-additions.test.ts",
+      "baselineSHA256": "03242082a253e62db0d2233da44ee5cc38413ebebdd953b172db4aa79e38b546",
+      "currentSHA256": "03242082a253e62db0d2233da44ee5cc38413ebebdd953b172db4aa79e38b546",
+      "equal": true
+    },
+    {
+      "path": "tests/next-van-additions.test.ts",
+      "baselineSHA256": "cda4c990d784aa37d0f4de5edd5ecbb8851a4968ab72ae4766fe3eea1a21bdd0",
+      "currentSHA256": "cda4c990d784aa37d0f4de5edd5ecbb8851a4968ab72ae4766fe3eea1a21bdd0",
+      "equal": true
+    },
+    {
+      "path": "tests/portable-packs.test.ts",
+      "baselineSHA256": "5018cf277e24b5fb0c991262f27cfeaa134bfa209b45723b9aad467d61127a22",
+      "currentSHA256": "5018cf277e24b5fb0c991262f27cfeaa134bfa209b45723b9aad467d61127a22",
+      "equal": true
+    },
+    {
+      "path": "tests/remaining-electric-vans-catalogue.test.ts",
+      "baselineSHA256": "c25cf88b156bbdace3f147c055e9a63b78e1affbdc34a56aa8db3eb1e084c422",
+      "currentSHA256": "c25cf88b156bbdace3f147c055e9a63b78e1affbdc34a56aa8db3eb1e084c422",
+      "equal": true
+    },
+    {
+      "path": "tests/remaining-hyundai.test.ts",
+      "baselineSHA256": "bebc7d3745fe481904e0fa5cb970dafbc1c8c46c5969893271df1c9b9f1cdabb",
+      "currentSHA256": "bebc7d3745fe481904e0fa5cb970dafbc1c8c46c5969893271df1c9b9f1cdabb",
+      "equal": true
+    },
+    {
+      "path": "tests/remaining-passenger-catalogue.test.ts",
+      "baselineSHA256": "897e11613548220d0bedffdfaadbb453289feb34d82034aa6e7be2f28e8976f8",
+      "currentSHA256": "897e11613548220d0bedffdfaadbb453289feb34d82034aa6e7be2f28e8976f8",
+      "equal": true
+    },
+    {
+      "path": "tests/remaining-utes-vans.test.ts",
+      "baselineSHA256": "92a38cf84d258384431327ff81a7922d396ce160259e4b361ca10d7d4ab3700f",
+      "currentSHA256": "92a38cf84d258384431327ff81a7922d396ce160259e4b361ca10d7d4ab3700f",
+      "equal": true
+    },
+    {
+      "path": "tests/renault-kgm-integration.test.ts",
+      "baselineSHA256": "eaec2ae0fb7efc62f5cf57869c78ad62a3cad5f1ff48e13b08f3047e99d8c297",
+      "currentSHA256": "eaec2ae0fb7efc62f5cf57869c78ad62a3cad5f1ff48e13b08f3047e99d8c297",
+      "equal": true
+    },
+    {
+      "path": "tests/research-refresh.test.ts",
+      "baselineSHA256": "8d92297e36a9ef7cd4bdaa9a9034bd62b7b86ce3af5dfc06a01dcfeba5720bf4",
+      "currentSHA256": "8d92297e36a9ef7cd4bdaa9a9034bd62b7b86ce3af5dfc06a01dcfeba5720bf4",
+      "equal": true
+    },
+    {
+      "path": "tests/road-scooters-catalogue.test.ts",
+      "baselineSHA256": "922794b791732b9372101095ac2051743ef52501b3f2f63af5fa8689b2db6844",
+      "currentSHA256": "922794b791732b9372101095ac2051743ef52501b3f2f63af5fa8689b2db6844",
+      "equal": true
+    },
+    {
+      "path": "tests/scenes.test.ts",
+      "baselineSHA256": "a780189fe4e4278cf8f7e1d4970c22ab9c68f89304310198b8a57a1cd46afe66",
+      "currentSHA256": "a780189fe4e4278cf8f7e1d4970c22ab9c68f89304310198b8a57a1cd46afe66",
+      "equal": true
+    },
+    {
+      "path": "tests/search.test.ts",
+      "baselineSHA256": "84d8963de5ca0bbd7a2a36f8d5f418b431422bfb9f430f983f461388e76f28a8",
+      "currentSHA256": "84d8963de5ca0bbd7a2a36f8d5f418b431422bfb9f430f983f461388e76f28a8",
+      "equal": true
+    },
+    {
+      "path": "tests/selling-points.test.ts",
+      "baselineSHA256": "a732e9f66f4de5aa378476ae46c7fff7a06b01cb96c579de72aad0e5b61891b2",
+      "currentSHA256": "a732e9f66f4de5aa378476ae46c7fff7a06b01cb96c579de72aad0e5b61891b2",
+      "equal": true
+    },
+    {
+      "path": "tests/structured-facts.test.ts",
+      "baselineSHA256": "6a5c43a07c9579772f4b23cbe5ea6b02e62e593cc14ed14d6986477b4daefb5d",
+      "currentSHA256": "6a5c43a07c9579772f4b23cbe5ea6b02e62e593cc14ed14d6986477b4daefb5d",
+      "equal": true
+    },
+    {
+      "path": "tests/toyota-subaru-additions.test.ts",
+      "baselineSHA256": "5c2b4491c00588518613a33ea7380c3ccb5a941850a7f7e733d24f304cbd41a8",
+      "currentSHA256": "5c2b4491c00588518613a33ea7380c3ccb5a941850a7f7e733d24f304cbd41a8",
+      "equal": true
+    },
+    {
+      "path": "tests/volvo-polestar-catalogue.test.ts",
+      "baselineSHA256": "900bdc7d7897356630bdeeed6b0f9a625d0a814eb3b5f053151611087b88ede2",
+      "currentSHA256": "900bdc7d7897356630bdeeed6b0f9a625d0a814eb3b5f053151611087b88ede2",
+      "equal": true
+    },
+    {
+      "path": "tests/vw-skoda-catalogue.test.ts",
+      "baselineSHA256": "cfe6a891f2ac311297276e0ad14a0df7762c8240fca00f2ab27dd7d876f88ee9",
+      "currentSHA256": "cfe6a891f2ac311297276e0ad14a0df7762c8240fca00f2ab27dd7d876f88ee9",
+      "equal": true
+    }
+  ]
+}

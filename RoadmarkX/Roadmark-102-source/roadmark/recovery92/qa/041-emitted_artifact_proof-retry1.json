@@ -1,0 +1,43 @@
+{
+  "applicationChangesBetweenAttempts": false,
+  "checkpoint": 92,
+  "command": [
+    "python3",
+    "/workspace/scratch/586427eef9f2/roadmark-research/restored92-proof-candidate/verify_restored92.py",
+    "--workspace",
+    "/workspace/scratch/586427eef9f2",
+    "--seal",
+    "roadmark-research/restored92-application/final-proof-seal-retry1.json",
+    "--seal-sha256",
+    "b284279dd4c3ae7e459513296cad7e45f3a53071e77c2b48fba90c9df4003af0",
+    "--output",
+    "/workspace/scratch/586427eef9f2/roadmark-research/restored92-application/emitted-proof-retry1"
+  ],
+  "cwd": "/workspace/scratch/586427eef9f2",
+  "exitCode": 0,
+  "finishedAtUTC": "2026-10-11T23:45:45.153758+00:00",
+  "frozenInputDigestAfter": "e2f65cfcaa38729bd2b8116b7a7c6fa20bb3726c0105c267d45560453c78426d",
+  "frozenInputDigestBefore": "e2f65cfcaa38729bd2b8116b7a7c6fa20bb3726c0105c267d45560453c78426d",
+  "frozenInputManifestSHA256": "d834fc9c6f58cd20a7d6fac7a3f504fe2428ccb4b879d6d96d51a8d6c66b306a",
+  "fullQaRerun": false,
+  "log": {
+    "bytes": 5220,
+    "path": "roadmark-restoration/qa92/emitted_artifact_proof-retry1.log",
+    "sha256": "d90b705ffe8a830cf194e56e1c8e093cfc320ce03212b6674bd1c4b37b278ef8"
+  },
+  "priorFailedTerminal": {
+    "path": "roadmark-restoration/qa92/emitted_artifact_proof-first.json",
+    "sha256": "0ac79b4f825aabc710c122be8d65eac095bb2c8a1a6e426a54435bcfad38fccd"
+  },
+  "proof": {
+    "path": "roadmark-research/restored92-application/emitted-proof-retry1/proof.json",
+    "sha256": "d90b705ffe8a830cf194e56e1c8e093cfc320ce03212b6674bd1c4b37b278ef8"
+  },
+  "proofSeal": {
+    "path": "roadmark-research/restored92-application/final-proof-seal-retry1.json",
+    "sha256": "b284279dd4c3ae7e459513296cad7e45f3a53071e77c2b48fba90c9df4003af0"
+  },
+  "schema": "roadmark-stage92-receipt-v1",
+  "stage": "emitted_artifact_proof",
+  "startedAtUTC": "2026-10-11T23:43:07.628562+00:00"
+}

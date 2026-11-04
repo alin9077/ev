@@ -1,0 +1,828 @@
+{
+  "title": "BYD SEAL and DOLPHIN Australian integration evidence",
+  "checkedAt": "2026-10-10",
+  "scope": "Four exact trims currently presented by Australian manufacturer; no assertion of all residual new-stock trims.",
+  "completeForRequestedFields": false,
+  "publicationStatus": "source_evidence_with_explicit_unknowns",
+  "sources": {
+    "seal_product": {
+      "url": "https://bydautomotive.com.au/seal",
+      "retrievedAt": "2026-10-10",
+      "type": "Australian manufacturer product page",
+      "scope": "Current comparison table: Premium and Performance",
+      "sourceDate": null
+    },
+    "seal_brochure": {
+      "url": "https://bydautomotive.com.au/brochures/BYD-SEAL-2026.pdf",
+      "retrievedAt": "2026-10-10",
+      "type": "Currently linked Australian manufacturer PDF",
+      "scope": "Premium and Performance; specifications page 2",
+      "sourceDate": null,
+      "documentTitle": "MY25-BYD-SEAL-EV-260625",
+      "printedVersion": "260625",
+      "qualification": "URL filename says 2026, metadata says MY25. Neither establishes current build/model year. Downloaded and visually inspected both pages because extracted text was garbled."
+    },
+    "seal_configurator": {
+      "url": "https://bydautomotive.com.au/configurator/byd-seal",
+      "resolvedUrl": "https://evdealergroup-byd.com.au/configurator/byd-seal",
+      "retrievedAt": "2026-10-10",
+      "type": "Manufacturer-linked Australian retail order configurator",
+      "scope": "Premium and Performance model selections",
+      "sourceDate": null,
+      "qualification": "Contains stale February/March 2025 ETA and dynamic/default inventory messages. No location submitted, order placed or specific stock established."
+    },
+    "seal_handbook_unresolved": {
+      "url": "https://bydautomotive.com.au/brochures/BYD-SEAL-Owners-Handbook-2025.pdf",
+      "retrievedAt": null,
+      "linkObservedAt": "2026-10-10",
+      "type": "Handbook currently linked from AU product page",
+      "scope": "Full handbook not retrieved in this check",
+      "qualification": "Browser extraction exceeded size limit; attempted local download received cancelled approval review and was not retried. No numeric towing capacity adopted."
+    },
+    "dolphin_product": {
+      "url": "https://bydautomotive.com.au/dolphin",
+      "retrievedAt": "2026-10-10",
+      "type": "Australian manufacturer product page",
+      "scope": "Current comparison table: Essential and Premium",
+      "sourceDate": null
+    },
+    "dolphin_brochure": {
+      "url": "https://bydautomotive.com.au/brochures/BYD-DOLPHIN-2025.pdf",
+      "retrievedAt": "2026-10-10",
+      "type": "Currently linked Australian manufacturer PDF",
+      "scope": "Essential and Premium; specifications page 2",
+      "sourceDate": null,
+      "documentTitle": "2025 BYD Dolphin Spec Sheet_02.1C",
+      "printedVersion": "02.1C",
+      "qualification": "Filename/document title references 2025; current build/model year not established."
+    },
+    "dolphin_configurator": {
+      "url": "https://bydautomotive.com.au/configurator/byd-dolphin",
+      "resolvedUrl": "https://evdealergroup-byd.com.au/configurator/byd-dolphin",
+      "retrievedAt": "2026-10-10",
+      "type": "Manufacturer-linked Australian retail order configurator",
+      "scope": "Essential and Premium model selections",
+      "sourceDate": null,
+      "qualification": "Stale February/March 2025 ETA excluded. No submitted postcode/quote or order; stock unverified."
+    },
+    "dolphin_handbook": {
+      "url": "https://bydautomotive.com.au/brochures/BYD-DOLPHIN-Owners-Handbook-2023.pdf",
+      "retrievedAt": "2026-10-10",
+      "type": "Handbook linked from current Australian product page",
+      "scope": "Towing guidance, PDF and printed page 85",
+      "sourceDate": null,
+      "qualification": "Older 2023 filename. Warning about towing other vehicles does not provide current trim-specific numeric braked/unbraked ratings."
+    },
+    "offers": {
+      "url": "https://bydautomotive.com.au/offers",
+      "retrievedAt": "2026-10-10",
+      "type": "Current Australian manufacturer offer terms",
+      "scope": "DOLPHIN Essential driveaway campaign and current trim order campaigns",
+      "sourceDate": null
+    }
+  },
+  "records": [
+    {
+      "id": "byd-seal-premium",
+      "brand": "BYD",
+      "model": "SEAL",
+      "trim": "Premium",
+      "exactTrimLabel": "BYD SEAL Premium",
+      "market": "AU",
+      "vehicleType": "passenger_sedan",
+      "powertrain": "BEV",
+      "drivetrain": "RWD",
+      "modelYear": null,
+      "buildYear": null,
+      "checkedAt": "2026-10-10",
+      "availability": {
+        "orderStatus": "accepting_orders",
+        "orderQualification": "Order requests available; vehicle allocation subject to availability and subsequent confirmation. This is not a guarantee of a completed purchase contract or delivery.",
+        "stockStatus": "unverified",
+        "stockEvidence": null,
+        "deliveryEstimate": null,
+        "sourceIds": [
+          "seal_product",
+          "seal_configurator",
+          "offers"
+        ]
+      },
+      "pricing": {
+        "configuratorBaseAmount": {
+          "value": 52990,
+          "unit": "AUD",
+          "sourceIds": [
+            "seal_configurator"
+          ],
+          "basis": "model_selection_base_amount",
+          "formalMLPVerified": false,
+          "includesOnRoadCosts": false,
+          "basisQualification": "Amount displayed beside trim selection, separate from location-dependent driveaway calculation. Not expressly labelled manufacturer list price in retrieved text; do not rename it formal MLP."
+        },
+        "formalMLP": {
+          "value": null,
+          "unit": "AUD",
+          "sourceIds": [
+            "seal_configurator"
+          ],
+          "reason": "No explicit formal manufacturer-list-price label verified."
+        },
+        "ordinaryDriveaway": {
+          "value": null,
+          "unit": "AUD",
+          "sourceIds": [
+            "seal_configurator"
+          ],
+          "reason": "No postcode-specific complete driveaway quote obtained."
+        },
+        "promotionalDriveaway": null
+      },
+      "range": {
+        "wltpCombined": {
+          "value": 570,
+          "unit": "km",
+          "sourceIds": [
+            "seal_brochure",
+            "seal_product"
+          ],
+          "measurementCycle": "WLTP",
+          "testScope": "combined",
+          "status": "manufacturer_claim",
+          "wheelScope": "235/45 R19",
+          "qualification": "Claimed laboratory range; real-world range varies."
+        },
+        "nedcCombined": {
+          "value": 650,
+          "unit": "km",
+          "sourceIds": [
+            "seal_brochure",
+            "seal_product"
+          ],
+          "measurementCycle": "NEDC",
+          "testScope": "combined",
+          "rankingCompatibleWithWLTP": false
+        }
+      },
+      "seating": {
+        "value": 5,
+        "unit": "persons",
+        "sourceIds": [
+          "seal_brochure"
+        ]
+      },
+      "batteryCapacity": {
+        "value": 82.56,
+        "unit": "kWh",
+        "sourceIds": [
+          "seal_brochure"
+        ],
+        "capacityBasis": null,
+        "qualification": "Manufacturer battery capacity; gross versus usable basis not stated."
+      },
+      "towing": {
+        "braked": {
+          "value": null,
+          "unit": "kg",
+          "sourceIds": [
+            "seal_brochure"
+          ],
+          "reason": "No current AU trim-specific numeric rating verified."
+        },
+        "unbraked": {
+          "value": null,
+          "unit": "kg",
+          "sourceIds": [
+            "seal_brochure"
+          ],
+          "reason": "No current AU trim-specific numeric rating verified."
+        },
+        "towBallDownload": {
+          "value": null,
+          "unit": "kg",
+          "sourceIds": [],
+          "reason": "Unverified."
+        },
+        "status": "unverified",
+        "rankingEligible": false
+      },
+      "cargo": {
+        "rearCargo": {
+          "value": 400,
+          "unit": "L",
+          "sourceIds": [
+            "seal_brochure"
+          ],
+          "sourceLabel": "Rear cargo capacity",
+          "seatPosition": null,
+          "measurementStandard": null,
+          "loadingBoundary": null,
+          "floorPosition": null,
+          "status": "quoted_value_basis_unspecified",
+          "rankingEligible": false
+        },
+        "frontCargo": {
+          "value": 53,
+          "unit": "L",
+          "sourceIds": [
+            "seal_brochure"
+          ],
+          "sourceLabel": "Front cargo capacity",
+          "measurementStandard": null,
+          "status": "quoted_value_basis_unspecified",
+          "rankingEligible": false
+        },
+        "maximumRearCargo": {
+          "value": null,
+          "unit": "L",
+          "sourceIds": [],
+          "reason": "No maximum folded-seat volume verified."
+        }
+      },
+      "rankingCompatibility": {
+        "wltpCombined": true,
+        "seating": true,
+        "priceFormalMLP": false,
+        "cargoVDA": false,
+        "towing": false,
+        "batteryUsableCapacity": false
+      },
+      "qualifications": [
+        "Premium and Performance are the only current comparison/configurator choices. Product narrative still mentions Essential; historical Dynamic/Essential are not established current orderable trims.",
+        "Do not treat brochure filename year or stale configurator ETA as current model year.",
+        "Tow bar accessory is listed in configurator, but accessory existence does not establish kg rating.",
+        "Current offer cards advertise a SEAL novated-lease offer, but the general eligibility list omits SEAL; eligibility unresolved and no discount applied to price."
+      ]
+    },
+    {
+      "id": "byd-seal-performance",
+      "brand": "BYD",
+      "model": "SEAL",
+      "trim": "Performance",
+      "exactTrimLabel": "BYD SEAL Performance",
+      "market": "AU",
+      "vehicleType": "passenger_sedan",
+      "powertrain": "BEV",
+      "drivetrain": "AWD",
+      "modelYear": null,
+      "buildYear": null,
+      "checkedAt": "2026-10-10",
+      "availability": {
+        "orderStatus": "accepting_orders",
+        "orderQualification": "Order requests available; vehicle allocation subject to availability and subsequent confirmation. This is not a guarantee of a completed purchase contract or delivery.",
+        "stockStatus": "unverified",
+        "stockEvidence": null,
+        "deliveryEstimate": null,
+        "sourceIds": [
+          "seal_product",
+          "seal_configurator",
+          "offers"
+        ]
+      },
+      "pricing": {
+        "configuratorBaseAmount": {
+          "value": 61990,
+          "unit": "AUD",
+          "sourceIds": [
+            "seal_configurator"
+          ],
+          "basis": "model_selection_base_amount",
+          "formalMLPVerified": false,
+          "includesOnRoadCosts": false,
+          "basisQualification": "Amount displayed beside trim selection, separate from location-dependent driveaway calculation. Not expressly labelled manufacturer list price in retrieved text; do not rename it formal MLP."
+        },
+        "formalMLP": {
+          "value": null,
+          "unit": "AUD",
+          "sourceIds": [
+            "seal_configurator"
+          ],
+          "reason": "No explicit formal manufacturer-list-price label verified."
+        },
+        "ordinaryDriveaway": {
+          "value": null,
+          "unit": "AUD",
+          "sourceIds": [
+            "seal_configurator"
+          ],
+          "reason": "No postcode-specific complete driveaway quote obtained."
+        },
+        "promotionalDriveaway": null
+      },
+      "range": {
+        "wltpCombined": {
+          "value": 520,
+          "unit": "km",
+          "sourceIds": [
+            "seal_brochure",
+            "seal_product"
+          ],
+          "measurementCycle": "WLTP",
+          "testScope": "combined",
+          "status": "manufacturer_claim",
+          "wheelScope": "235/45 R19",
+          "qualification": "Claimed laboratory range; real-world range varies."
+        },
+        "nedcCombined": {
+          "value": 580,
+          "unit": "km",
+          "sourceIds": [
+            "seal_brochure",
+            "seal_product"
+          ],
+          "measurementCycle": "NEDC",
+          "testScope": "combined",
+          "rankingCompatibleWithWLTP": false
+        }
+      },
+      "seating": {
+        "value": 5,
+        "unit": "persons",
+        "sourceIds": [
+          "seal_brochure"
+        ]
+      },
+      "batteryCapacity": {
+        "value": 82.56,
+        "unit": "kWh",
+        "sourceIds": [
+          "seal_brochure"
+        ],
+        "capacityBasis": null,
+        "qualification": "Manufacturer battery capacity; gross versus usable basis not stated."
+      },
+      "towing": {
+        "braked": {
+          "value": null,
+          "unit": "kg",
+          "sourceIds": [
+            "seal_brochure"
+          ],
+          "reason": "No current AU trim-specific numeric rating verified."
+        },
+        "unbraked": {
+          "value": null,
+          "unit": "kg",
+          "sourceIds": [
+            "seal_brochure"
+          ],
+          "reason": "No current AU trim-specific numeric rating verified."
+        },
+        "towBallDownload": {
+          "value": null,
+          "unit": "kg",
+          "sourceIds": [],
+          "reason": "Unverified."
+        },
+        "status": "unverified",
+        "rankingEligible": false
+      },
+      "cargo": {
+        "rearCargo": {
+          "value": 400,
+          "unit": "L",
+          "sourceIds": [
+            "seal_brochure"
+          ],
+          "sourceLabel": "Rear cargo capacity",
+          "seatPosition": null,
+          "measurementStandard": null,
+          "loadingBoundary": null,
+          "floorPosition": null,
+          "status": "quoted_value_basis_unspecified",
+          "rankingEligible": false
+        },
+        "frontCargo": {
+          "value": 53,
+          "unit": "L",
+          "sourceIds": [
+            "seal_brochure"
+          ],
+          "sourceLabel": "Front cargo capacity",
+          "measurementStandard": null,
+          "status": "quoted_value_basis_unspecified",
+          "rankingEligible": false
+        },
+        "maximumRearCargo": {
+          "value": null,
+          "unit": "L",
+          "sourceIds": [],
+          "reason": "No maximum folded-seat volume verified."
+        }
+      },
+      "rankingCompatibility": {
+        "wltpCombined": true,
+        "seating": true,
+        "priceFormalMLP": false,
+        "cargoVDA": false,
+        "towing": false,
+        "batteryUsableCapacity": false
+      },
+      "qualifications": [
+        "Premium and Performance are the only current comparison/configurator choices. Product narrative still mentions Essential; historical Dynamic/Essential are not established current orderable trims.",
+        "Do not treat brochure filename year or stale configurator ETA as current model year.",
+        "Tow bar accessory is listed in configurator, but accessory existence does not establish kg rating.",
+        "Current offer cards advertise a SEAL novated-lease offer, but the general eligibility list omits SEAL; eligibility unresolved and no discount applied to price."
+      ]
+    },
+    {
+      "id": "byd-dolphin-essential",
+      "brand": "BYD",
+      "model": "DOLPHIN",
+      "trim": "Essential",
+      "exactTrimLabel": "BYD DOLPHIN Essential",
+      "market": "AU",
+      "vehicleType": "passenger_hatchback",
+      "powertrain": "BEV",
+      "drivetrain": "FWD",
+      "modelYear": null,
+      "buildYear": null,
+      "checkedAt": "2026-10-10",
+      "availability": {
+        "orderStatus": "accepting_orders",
+        "orderQualification": "Order requests available; vehicle allocation subject to availability and subsequent confirmation. This is not a guarantee of a completed purchase contract or delivery.",
+        "stockStatus": "unverified",
+        "stockEvidence": null,
+        "deliveryEstimate": null,
+        "sourceIds": [
+          "dolphin_product",
+          "dolphin_configurator",
+          "offers"
+        ]
+      },
+      "pricing": {
+        "configuratorBaseAmount": {
+          "value": 29990,
+          "unit": "AUD",
+          "sourceIds": [
+            "dolphin_configurator"
+          ],
+          "basis": "model_selection_base_amount",
+          "formalMLPVerified": false,
+          "includesOnRoadCosts": false,
+          "basisQualification": "Amount displayed beside trim selection, separate from location-dependent driveaway calculation. Not expressly labelled manufacturer list price in retrieved text; do not rename it formal MLP."
+        },
+        "formalMLP": {
+          "value": null,
+          "unit": "AUD",
+          "sourceIds": [
+            "dolphin_configurator"
+          ],
+          "reason": "No explicit formal manufacturer-list-price label verified."
+        },
+        "ordinaryDriveaway": {
+          "value": null,
+          "unit": "AUD",
+          "sourceIds": [
+            "dolphin_configurator"
+          ],
+          "reason": "No postcode-specific complete driveaway quote obtained."
+        },
+        "promotionalDriveaway": {
+          "value": 28888,
+          "unit": "AUD",
+          "sourceIds": [
+            "offers"
+          ],
+          "basis": "promotional_driveaway",
+          "orderFrom": "2026-09-15",
+          "orderThrough": "2026-12-15",
+          "deliveryBy": "2026-12-31",
+          "customers": "retail",
+          "excludes": [
+            "metallic paint extra",
+            "demonstrator vehicles",
+            "additional promotional offers/discounts"
+          ],
+          "qualification": "Allocation and delivery conditional; manufacturer cannot guarantee delivery during campaign. Offer eligibility is not guaranteed until delivery. Do not substitute for base configurator amount or formal MLP."
+        }
+      },
+      "range": {
+        "wltpCombined": {
+          "value": 340,
+          "unit": "km",
+          "sourceIds": [
+            "dolphin_brochure"
+          ],
+          "measurementCycle": "WLTP",
+          "testScope": "combined",
+          "status": "manufacturer_claim",
+          "wheelScope": null,
+          "qualification": "Claimed laboratory range; real-world range varies."
+        },
+        "nedcCombined": {
+          "value": 410,
+          "unit": "km",
+          "sourceIds": [
+            "dolphin_brochure",
+            "dolphin_product"
+          ],
+          "measurementCycle": "NEDC",
+          "testScope": "combined",
+          "rankingCompatibleWithWLTP": false
+        }
+      },
+      "seating": {
+        "value": 5,
+        "unit": "persons",
+        "sourceIds": [
+          "dolphin_brochure"
+        ]
+      },
+      "batteryCapacity": {
+        "value": 44.9,
+        "unit": "kWh",
+        "sourceIds": [
+          "dolphin_brochure"
+        ],
+        "capacityBasis": null,
+        "qualification": "Manufacturer battery capacity; gross versus usable basis not stated."
+      },
+      "towing": {
+        "braked": {
+          "value": null,
+          "unit": "kg",
+          "sourceIds": [
+            "dolphin_brochure"
+          ],
+          "reason": "No current AU trim-specific numeric rating verified."
+        },
+        "unbraked": {
+          "value": null,
+          "unit": "kg",
+          "sourceIds": [
+            "dolphin_brochure"
+          ],
+          "reason": "No current AU trim-specific numeric rating verified."
+        },
+        "towBallDownload": {
+          "value": null,
+          "unit": "kg",
+          "sourceIds": [],
+          "reason": "Unverified."
+        },
+        "status": "unverified",
+        "rankingEligible": false,
+        "sourceIds": [
+          "dolphin_brochure",
+          "dolphin_handbook"
+        ],
+        "qualification": "No numeric rating in current brochure. Linked older handbook cautions about towing other vehicles; do not translate this to zero kg or verified trailer approval."
+      },
+      "cargo": {
+        "minimumLuggage": {
+          "value": 345,
+          "unit": "L",
+          "sourceIds": [
+            "dolphin_brochure"
+          ],
+          "sourceLabel": "Luggage volume minimum",
+          "seatPosition": null,
+          "measurementStandard": null,
+          "loadingBoundary": null,
+          "floorPosition": null,
+          "status": "quoted_value_basis_partly_unspecified",
+          "rankingEligible": false
+        },
+        "maximumLuggage": {
+          "value": 1310,
+          "unit": "L",
+          "sourceIds": [
+            "dolphin_brochure",
+            "dolphin_product"
+          ],
+          "sourceLabel": "Luggage volume maximum",
+          "seatPosition": "rear_seats_folded",
+          "measurementStandard": null,
+          "loadingBoundary": null,
+          "floorPosition": null,
+          "status": "quoted_value_basis_partly_unspecified",
+          "rankingEligible": false
+        },
+        "frontCargo": {
+          "value": null,
+          "unit": "L",
+          "sourceIds": [],
+          "reason": "No front cargo volume verified."
+        }
+      },
+      "rankingCompatibility": {
+        "wltpCombined": true,
+        "seating": true,
+        "priceFormalMLP": false,
+        "cargoVDA": false,
+        "towing": false,
+        "batteryUsableCapacity": false
+      },
+      "qualifications": [
+        "Product cards use NEDC 410/490km; brochure WLTP 340/427km is a separate measurement cycle, not a contradiction.",
+        "Brochure minimum/maximum luggage volumes do not establish VDA/SAE or loading height. Only the maximum is explicitly associated with folded rear seats.",
+        "Configurator landing metadata calls DOLPHIN SUV; product page identifies hatchback, which is retained here.",
+        "Current Dynamic or other historical trims not established by current exact selector."
+      ]
+    },
+    {
+      "id": "byd-dolphin-premium",
+      "brand": "BYD",
+      "model": "DOLPHIN",
+      "trim": "Premium",
+      "exactTrimLabel": "BYD DOLPHIN Premium",
+      "market": "AU",
+      "vehicleType": "passenger_hatchback",
+      "powertrain": "BEV",
+      "drivetrain": "FWD",
+      "modelYear": null,
+      "buildYear": null,
+      "checkedAt": "2026-10-10",
+      "availability": {
+        "orderStatus": "accepting_orders",
+        "orderQualification": "Order requests available; vehicle allocation subject to availability and subsequent confirmation. This is not a guarantee of a completed purchase contract or delivery.",
+        "stockStatus": "unverified",
+        "stockEvidence": null,
+        "deliveryEstimate": null,
+        "sourceIds": [
+          "dolphin_product",
+          "dolphin_configurator",
+          "offers"
+        ]
+      },
+      "pricing": {
+        "configuratorBaseAmount": {
+          "value": 36990,
+          "unit": "AUD",
+          "sourceIds": [
+            "dolphin_configurator"
+          ],
+          "basis": "model_selection_base_amount",
+          "formalMLPVerified": false,
+          "includesOnRoadCosts": false,
+          "basisQualification": "Amount displayed beside trim selection, separate from location-dependent driveaway calculation. Not expressly labelled manufacturer list price in retrieved text; do not rename it formal MLP."
+        },
+        "formalMLP": {
+          "value": null,
+          "unit": "AUD",
+          "sourceIds": [
+            "dolphin_configurator"
+          ],
+          "reason": "No explicit formal manufacturer-list-price label verified."
+        },
+        "ordinaryDriveaway": {
+          "value": null,
+          "unit": "AUD",
+          "sourceIds": [
+            "dolphin_configurator"
+          ],
+          "reason": "No postcode-specific complete driveaway quote obtained."
+        },
+        "promotionalDriveaway": null
+      },
+      "range": {
+        "wltpCombined": {
+          "value": 427,
+          "unit": "km",
+          "sourceIds": [
+            "dolphin_brochure"
+          ],
+          "measurementCycle": "WLTP",
+          "testScope": "combined",
+          "status": "manufacturer_claim",
+          "wheelScope": null,
+          "qualification": "Claimed laboratory range; real-world range varies."
+        },
+        "nedcCombined": {
+          "value": 490,
+          "unit": "km",
+          "sourceIds": [
+            "dolphin_brochure",
+            "dolphin_product"
+          ],
+          "measurementCycle": "NEDC",
+          "testScope": "combined",
+          "rankingCompatibleWithWLTP": false
+        }
+      },
+      "seating": {
+        "value": 5,
+        "unit": "persons",
+        "sourceIds": [
+          "dolphin_brochure"
+        ]
+      },
+      "batteryCapacity": {
+        "value": 60.48,
+        "unit": "kWh",
+        "sourceIds": [
+          "dolphin_brochure"
+        ],
+        "capacityBasis": null,
+        "qualification": "Manufacturer battery capacity; gross versus usable basis not stated."
+      },
+      "towing": {
+        "braked": {
+          "value": null,
+          "unit": "kg",
+          "sourceIds": [
+            "dolphin_brochure"
+          ],
+          "reason": "No current AU trim-specific numeric rating verified."
+        },
+        "unbraked": {
+          "value": null,
+          "unit": "kg",
+          "sourceIds": [
+            "dolphin_brochure"
+          ],
+          "reason": "No current AU trim-specific numeric rating verified."
+        },
+        "towBallDownload": {
+          "value": null,
+          "unit": "kg",
+          "sourceIds": [],
+          "reason": "Unverified."
+        },
+        "status": "unverified",
+        "rankingEligible": false,
+        "sourceIds": [
+          "dolphin_brochure",
+          "dolphin_handbook"
+        ],
+        "qualification": "No numeric rating in current brochure. Linked older handbook cautions about towing other vehicles; do not translate this to zero kg or verified trailer approval."
+      },
+      "cargo": {
+        "minimumLuggage": {
+          "value": 345,
+          "unit": "L",
+          "sourceIds": [
+            "dolphin_brochure"
+          ],
+          "sourceLabel": "Luggage volume minimum",
+          "seatPosition": null,
+          "measurementStandard": null,
+          "loadingBoundary": null,
+          "floorPosition": null,
+          "status": "quoted_value_basis_partly_unspecified",
+          "rankingEligible": false
+        },
+        "maximumLuggage": {
+          "value": 1310,
+          "unit": "L",
+          "sourceIds": [
+            "dolphin_brochure",
+            "dolphin_product"
+          ],
+          "sourceLabel": "Luggage volume maximum",
+          "seatPosition": "rear_seats_folded",
+          "measurementStandard": null,
+          "loadingBoundary": null,
+          "floorPosition": null,
+          "status": "quoted_value_basis_partly_unspecified",
+          "rankingEligible": false
+        },
+        "frontCargo": {
+          "value": null,
+          "unit": "L",
+          "sourceIds": [],
+          "reason": "No front cargo volume verified."
+        }
+      },
+      "rankingCompatibility": {
+        "wltpCombined": true,
+        "seating": true,
+        "priceFormalMLP": false,
+        "cargoVDA": false,
+        "towing": false,
+        "batteryUsableCapacity": false
+      },
+      "qualifications": [
+        "Product cards use NEDC 410/490km; brochure WLTP 340/427km is a separate measurement cycle, not a contradiction.",
+        "Brochure minimum/maximum luggage volumes do not establish VDA/SAE or loading height. Only the maximum is explicitly associated with folded rear seats.",
+        "Configurator landing metadata calls DOLPHIN SUV; product page identifies hatchback, which is retained here.",
+        "Current Dynamic or other historical trims not established by current exact selector."
+      ]
+    }
+  ],
+  "sourcePriority": [
+    "Current exact AU model selector/configurator for trim scope",
+    "Currently linked AU brochure for trim-specific technical measurements",
+    "Current explicit promotional terms for conditional offer price",
+    "Old handbooks used only with model/region applicability qualification"
+  ],
+  "integrationRules": [
+    "Use WLTP combined values only in same-basis range ranks.",
+    "Keep modelYear/buildYear null.",
+    "Display configurator base amounts with that exact basis; formal MLP remains null.",
+    "Store promotional driveaway separately with validity and eligibility.",
+    "Display cargo litres with basis-unverified annotation; omit from VDA/standardized boot ranks.",
+    "Keep towing numeric values null, never zero.",
+    "Order requests do not imply physically stocked units or delivery dates.",
+    "Unknown source metric basis cannot be inferred from vehicle type or from other markets."
+  ],
+  "unresolved": [
+    "Formal MLP label and full postcode-specific driveaway totals.",
+    "Current stock allocation and delivery dates.",
+    "Braked/unbraked and tow-ball ratings for current Australian variants.",
+    "Boot VDA/SAE protocol, loading height and minimum seat/floor position.",
+    "Current vehicle model/build year distinct from brochure year.",
+    "SEAL generic-body Essential mention versus exact current two-trim selector.",
+    "SEAL novated-lease card eligibility discrepancy."
+  ]
+}

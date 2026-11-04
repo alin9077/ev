@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "originalPayloadSHA256": "c6cde1ad230a7eae6bd0ffc8478b500d8c64d658bdbf9a38ae3e03e23d8e7399",
+  "amendedPayloadSHA256": "c40f5745e0152185fb61e3db28304aeff8092ab8c5ad949b28a0fa58c454cc57",
+  "oldTradeoff": {
+    "label": "Range depends on mode",
+    "text": "FONZ claims up to 130 km in Eco and around 72 km in Max Performance; no named standard range test cycle is supplied.",
+    "dependencyIds": [
+      "fonz_range_modes_km",
+      "fonz_range_conditions",
+      "fonz_range_cycle"
+    ]
+  },
+  "newTradeoff": {
+    "label": "Delivery costs extra",
+    "text": "The advertised amount excludes local dealer delivery and freight; its stated on-road inclusions apply at Sydney HQ.",
+    "dependencyIds": [
+      "fonz_tradeoff_source_sale_price_exclusions",
+      "fonz_tradeoff_source_sale_price_on_road_territory",
+      "fonz_tradeoff_source_sale_price_shipping_note"
+    ]
+  },
+  "newDependencyCount": 3,
+  "totalDependencies": 10,
+  "allOriginalDependenciesPreserved": true,
+  "allFactsSourcesExpectedIdentityAndVisibleConditionsUnchanged": true,
+  "allRangeIssueHoldsPreserved": true,
+  "evaluatorChanged": false,
+  "applicationWritten": false,
+  "reason": "Original range tradeoff was fail-closed by range-charge-conditions issues. Select separately supported scoped price exclusions; do not clear source holds or weaken runtime guard.",
+  "runtimeMutationRevalidation": "required"
+}

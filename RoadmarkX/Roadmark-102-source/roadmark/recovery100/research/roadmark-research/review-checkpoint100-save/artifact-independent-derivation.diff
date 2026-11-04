@@ -1,0 +1,497 @@
+--- roadmark-research/applied99/verify-portable-delta-final.py	2026-10-12 18:00:27.081504960 +1100
++++ roadmark-research/artifact100-candidate/verify-portable100-delta.py	2026-10-12 19:18:27.024021217 +1100
+@@ -1,48 +1,59 @@
+ #!/usr/bin/env python3
+-"""Root-only, read-only static verification of a built99 portable HTML artifact.
++"""Root-only, read-only static comparison of the actual100 portable HTML to saved99.
+ 
+-This verification candidate uses only Python's standard library. It never
+-imports application modules or evaluates HTML, JavaScript or fixture code.
++Requires an independently supplied actual100 HTML hash. Reads pinned saved99 ZIP,
++fixture, candidate manifest and market JSON. Never imports app/candidate modules,
++evaluates HTML/JavaScript, builds, runs a browser, uses network, or writes files.
+ """
+ 
+ import argparse
+ import copy
+ import hashlib
++import io
+ import json
+ import re
+ import sys
++import zipfile
+ from decimal import Decimal
+ from pathlib import Path
+ 
+ 
+-BASELINE_PATH = "roadmark-restoration/browser98/current98.html"
+-BASELINE_SHA256 = "bcfa654d4ec7df52c61dd49dd2c131e8f5d98a52b1fc83da2267f16281d787e7"
+-FIXTURE_PATH = "roadmark-work/roadmark/qa/checkpoint99-mazda-fixture.json"
+-FIXTURE_SHA256 = "405e14b6a02a771fba0fb8cdfea6f651c817f6b8e112dfb531dd94b73164e3a2"
+-CANDIDATE_PATH = "roadmark-research/applied99/revision4/candidate-manifest.json"
+-CANDIDATE_SHA256 = "c710eb25970241c720c8695024f66a31cbaaaa2e6dd4b101143b531a02ae0850"
++BASELINE_ZIP_PATH = "roadmark-recovery/final99-attempt1/Roadmark-recovered-99-portable-preview.zip"
++BASELINE_ZIP_SHA256 = "0ababbe0d9e9c16aea35f1cb3f427e20d5536d1d0b3b4e11a0a3a88ab78e993a"
++BASELINE_MEMBER = "roadmark/index.html"
++BASELINE_HTML_SHA256 = "22bbd67dcb7de6fd46598c61c34f10894ef63f2cb02eb7f58af0c7ffb1336a80"
++BASELINE_HTML_BYTES = 37013686
++FIXTURE_PATH = "roadmark-research/market100-candidate/files/qa/checkpoint100-market-fixture.json"
++FIXTURE_SHA256 = "6ca6057ef2db97fb7aa1251e307f9d419c88dadfe67d2390014ccd436f967837"
++CANDIDATE_PATH = "roadmark-research/market100-candidate/manifest.json"
++CANDIDATE_SHA256 = "52061d869f2e1cab0ca3cec6252a57200f251bb4b7317337dd3f9cf168ebaa66"
++MARKET_PATH = "roadmark-research/market100-candidate/files/data/market-inventory-2026-10-10.json"
++MARKET_SHA256 = "2469610f9bea19221ed99483b01ca23ca4f9bb62356a873398e9895c2eb838ac"
+ OPEN_TAG = b'<script id="ev-data" type="application/json">'
+ CLOSE_TAG = b"</script>"
+-NEW_IDS = [
+-    "mazda_cx6e_au_aug2026__e35_gt__20261012",
+-    "mazda_cx6e_au_aug2026__e35_azami__20261012",
++TOP_KEYS = ["marketInventory", "cars", "packs", "research", "counts", "art"]
++ALLOWED_FIELDS = ["checkedAt", "evidenceNote", "limitations", "sourceUrls"]
++TARGETS = [
++    ["records", 33, "bmw-i3"],
++    ["records", 40, "bmw-ix4"],
++    ["unverifiedLeads", 47, "dfac-captain-45e"],
++    ["unverifiedLeads", 48, "dfac-captain-85e"],
++    ["unverifiedLeads", 74, "pioneer-ev-dfsk-ec35"],
++    ["unverifiedLeads", 137, "mercedes-benz-eqb"],
++    ["unverifiedLeads", 138, "mercedes-benz-eqe-sedan"],
++    ["unverifiedLeads", 139, "mercedes-benz-eqe-suv"],
++    ["unverifiedLeads", 140, "mercedes-benz-eqs-suv"],
++    ["unverifiedLeads", 141, "mercedes-benz-maybach-eqs"],
++]
++NOT_VERIFIED = [
++    "browser_hydration_or_runtime_execution", "visual_or_mobile_rendering",
++    "whole_Next_production_module_graph", "source_tree_or_build_provenance",
++    "canonical_string_table_layout_or_unused_dictionary_entries",
++    "other_HTML_files_or_delivery_archives", "market_claim_truth_or_freshness",
++    "full_market_or_trim_universe", "publisher_origin_bytes",
+ ]
+-NEW_SOURCE_IDS = ["r99_mazda_cx6e_m" + str(n).zfill(2) for n in range(2, 8)]
+-TOP_KEYS = {"marketInventory", "cars", "packs", "research", "counts", "art"}
+-RESEARCH_KEYS = {"sources", "criteria", "publication_issues", "trim_equipment"}
+-PACK_KEYS = {"car", "features", "eligibility", "events", "configuration", "sourceIds"}
+-NOVATED_AUDIT = {
+-    "value": "Exact eligibility needs confirmation",
+-    "conditions": "The listed price alone does not establish FBT eligibility. The May 2026 announcement described proposed changes from April 2027 and April 2029; this audit has not established that those proposals are law. Confirm the current rules, acquisition conditions and taxable value with the ATO and your adviser.",
+-    "status": "not_verified",
+-    "condition_label": "Source audit",
+-    "last_evidence_date": "2026-10-08",
+-    "reviewed_date": "2026-10-08",
+-    "verification_state": "full_text_audit_2026-10-08",
+-    "usability_notes": [],
+-}
+-
+ 
++# BEGIN VERBATIM REVIEWED99 HELPERS; see DERIVATION.md and helper pins.
+ class VerificationFailure(Exception):
+     def __init__(self, detail):
+         self.detail = detail
+@@ -202,272 +213,170 @@
+     return data, stats
+ 
+ 
+-def keyed(rows, key, label):
+-    require(type(rows) is list, "expected_array", path=label)
+-    result = {}
+-    for index, row in enumerate(rows):
+-        require(type(row) is dict and type(row.get(key)) is str,
+-                "invalid_row_identity", path=pointer(label, index), key=key)
+-        identity = row[key]
+-        require(identity not in result, "duplicate_row_identity", path=label, id=identity)
+-        result[identity] = row
+-    return result
++# END VERBATIM REVIEWED99 HELPERS.
+ 
+ 
+-def validate_registry_references(packs, registry, label):
+-    for pack_id, pack in packs.items():
+-        equal(pack["car"]["id"], pack_id, pointer(label, pack_id) + "/car/id")
+-        references = pack["sourceIds"]
+-        require(type(references) is list and all(type(x) is str for x in references),
+-                "invalid_pack_source_ids", pack=pack_id)
+-        require(len(references) == len(set(references)), "duplicate_pack_source_id", pack=pack_id)
+-        require(all(x in registry for x in references), "unresolved_pack_source_id",
+-                pack=pack_id, missing=[x for x in references if x not in registry])
+-
+-
+-def expected_new_pack(car, fixture, criteria, old_packs):
+-    car_id = car["id"]
+-    rows = copy.deepcopy([r for r in fixture["researchDelta"]["feature_evidence"] if r["variant_id"] == car_id])
+-    equal([r["criterion"] for r in rows], [r["key"] for r in criteria], car_id + "/fixtureFeatureCriteria")
+-    # This single generic audit projection is present in saved98 and the
+-    # unchanged audit source. All other new feature fields remain fixture-exact.
+-    anchors = [r for p in old_packs.values() for r in p["features"]
+-               if r["criterion"] == "novated_fbt"
+-               and r.get("verification_state") == "full_text_audit_2026-10-08"]
+-    require(bool(anchors), "missing_saved98_novated_audit_anchor")
+-    for index, anchor in enumerate(anchors):
+-        equal({k: anchor.get(k) for k in NOVATED_AUDIT}, NOVATED_AUDIT,
+-              "/saved98/novatedAuditAnchor/" + str(index))
+-    for row in rows:
+-        equal(row["model_id"], car["modelId"], car_id + "/fixtureFeatureModelId")
+-        require(type(row["value"]) is str, "nonstring_fixture_feature", car=car_id, criterion=row["criterion"])
+-        if row["criterion"] == "novated_fbt":
+-            row.update(copy.deepcopy(NOVATED_AUDIT))
+-            row.pop("confirmation_needed", None)
+-        del row["variant_id"]
+-        del row["model_id"]
+-    eligibility = [r for r in fixture["researchDelta"]["update_eligibility"] if r["variant_id"] == car_id]
+-    equal(len(eligibility), 1, car_id + "/fixtureEligibilityCount")
+-    return {
+-        "car": car, "features": rows, "eligibility": eligibility[0],
+-        "events": [], "configuration": [], "sourceIds": NEW_SOURCE_IDS,
+-    }
+-
+-
+-def check_holds(car, path):
+-    equal(car["year"], None, path + "/year")
+-    evidence = car["configurationEvidence"]
+-    for key in ["rankingEligible", "completeVehicleCountEligible", "fullyClosedFactoryBuild",
+-                "brochureToVinApplicabilityVerified", "rawPdfBytesRetained"]:
+-        equal(evidence[key], False, path + "/configurationEvidence/" + key)
+-    equal(evidence["rawPdfSHA256"], None, path + "/configurationEvidence/rawPdfSHA256")
+-    equal(evidence["sourceIdentity"]["manufacturerModelYear"], None,
+-          path + "/configurationEvidence/sourceIdentity/manufacturerModelYear")
+-    equal(car["availabilityEvidence"]["orderStatus"], "preorder", path + "/availabilityEvidence/orderStatus")
+-    for key in ["physicalStockVerified", "factoryOrderAcceptanceVerified", "factoryProductionVerified",
+-                "factoryBuildSpecificationVerified", "deliveryToBuyerVerified"]:
+-        equal(car["availabilityEvidence"][key], False, path + "/availabilityEvidence/" + key)
+-    for index, conflict in enumerate(evidence["heldConflicts"]):
+-        equal(conflict["normalizedValue"], None,
+-              path + "/configurationEvidence/heldConflicts/" + str(index) + "/normalizedValue")
+-    for key, fact in car["facts"].items():
+-        equal(fact["comparisonBasis"], "", path + "/facts/" + key + "/comparisonBasis")
+-        require(fact["status"] in ["conditional", "not_verified"], "new_fact_claims_unqualified_status",
+-                path=path + "/facts/" + key + "/status", actual=fact["status"])
+-
+-
+-def aggregate(payload):
+-    cars = [p["car"] for p in payload["packs"].values()]
+-    return {
+-        "variants": len(cars),
+-        "families": len({c.get("modelFamily") or c["family"] for c in cars}),
+-        "generations": len({c["modelId"] for c in cars}),
+-        "criteria": len(payload["research"]["criteria"]),
+-        "evidence": sum(len(p["features"]) for p in payload["packs"].values()),
+-        "current": sum(c["availability"] == "current_or_order_listed" for c in cars),
+-        "outgoing": sum(c["availability"] == "outgoing" for c in cars),
+-        "provisional": sum(c["availability"] == "announced_provisional" for c in cars),
+-    }
+-
++def ordered_json_differences(actual, expected, path):
++    """All semantic differences; arrays AND object key order remain significant.
+ 
+-def summary_counts(payload):
+-    cars = [p["car"] for p in payload["packs"].values()]
+-    summaries = [c["buyerSummary"] for c in cars if c.get("buyerSummary") is not None]
+-    return {
+-        "total": len(summaries),
+-        "paired": sum(s.get("strength") is not None and s.get("tradeoff") is not None for s in summaries),
+-        "strengthOnly": sum(s.get("strength") is not None and s.get("tradeoff") is None for s in summaries),
+-        "absent": len(cars) - len(summaries),
+-    }
++    JSON numbers compare numerically (int/Decimal); booleans remain distinct.
++    No ignored paths, projection exceptions, numeric tolerance or result cap.
++    """
++    differences = []
++    pending = [(actual, expected, path)]
++    while pending:
++        actual, expected, here = pending.pop()
++        both_numbers = type(actual) in (int, Decimal) and type(expected) in (int, Decimal)
++        if type(actual) is not type(expected) and not both_numbers:
++            differences.append({"kind": "type", "path": here,
++                                "expected": describe(expected), "actual": describe(actual)})
++            continue
++        if isinstance(expected, dict):
++            if list(actual) != list(expected):
++                differences.append({"kind": "object_keys_or_order", "path": here,
++                                    "expectedKeys": list(expected), "actualKeys": list(actual),
++                                    "missing": {k: expected[k] for k in expected if k not in actual},
++                                    "unexpected": {k: actual[k] for k in actual if k not in expected}})
++            pending.extend((actual[k], expected[k], pointer(here, k))
++                           for k in reversed(expected) if k in actual)
++        elif isinstance(expected, list):
++            if len(actual) != len(expected):
++                differences.append({"kind": "array_length", "path": here,
++                                    "expectedLength": len(expected), "actualLength": len(actual),
++                                    "expectedTail": expected[len(actual):],
++                                    "actualTail": actual[len(expected):]})
++            pending.extend((actual[i], expected[i], pointer(here, i))
++                           for i in range(min(len(actual), len(expected)) - 1, -1, -1))
++        elif actual != expected:
++            differences.append({"kind": "value", "path": here,
++                                "expected": describe(expected), "actual": describe(actual)})
++    return differences
+ 
+ 
+ def verify(args):
+     workspace = args.workspace_root.resolve()
+-    target = args.html99.resolve()
+-    expected_sha = args.expected_html99_sha256
++    target = args.html100.resolve()
++    expected_sha = args.expected_html100_sha256
+     require(re.fullmatch(r"[0-9a-f]{64}", expected_sha) is not None,
+-            "expected_html99_sha256_must_be_64_lowercase_hex")
+-    require(expected_sha != BASELINE_SHA256, "saved98_cannot_be_substituted_for_built99")
+-    baseline = (workspace / BASELINE_PATH).resolve()
+-    require(target != baseline, "saved98_cannot_be_substituted_for_built99")
+-    before_bytes = read_pinned(baseline, BASELINE_SHA256, "saved98")
+-    after_bytes = read_pinned(target, expected_sha, "built99")
+-    fixture_bytes = read_pinned(workspace / FIXTURE_PATH, FIXTURE_SHA256, "reviewed99Fixture")
+-    manifest_bytes = read_pinned(workspace / CANDIDATE_PATH, CANDIDATE_SHA256, "reviewed99CandidateManifest")
+-    fixture = parse_json(fixture_bytes, "reviewed99Fixture")
+-    manifest = parse_json(manifest_bytes, "reviewed99CandidateManifest")
+-    equal(fixture["schema"], "roadmark-checkpoint99-static-candidate.v1", "/fixture/schema")
+-    equal(manifest["expectedCounts"], fixture["counts"], "/candidateManifest/expectedCounts")
+-    equal(manifest["runtimeSourceChanges"], 0, "/candidateManifest/runtimeSourceChanges")
+-    equal([c["id"] for c in fixture["expectedCars"]], NEW_IDS, "/fixture/expectedCarIds")
+-    equal([s["id"] for s in fixture["dataDelta"]["sources"]], NEW_SOURCE_IDS, "/fixture/sourceIds")
+-
+-    pre98, raw98, post98 = split_html(before_bytes, "saved98")
+-    pre99, raw99, post99 = split_html(after_bytes, "built99")
+-    drift = [
+-        outside_drift(pre99, pre98, "before_ev_data_body", 0, 0),
+-        outside_drift(post99, post98, "after_ev_data_body",
+-                      len(pre99) + len(raw99), len(pre98) + len(raw98)),
++            "expected_html100_sha256_must_be_64_lowercase_hex")
++    require(expected_sha != BASELINE_HTML_SHA256, "saved99_cannot_substitute_for_actual100")
++    archive_path = workspace / BASELINE_ZIP_PATH
++    archive_bytes = read_pinned(archive_path, BASELINE_ZIP_SHA256, "saved99ZIP")
++    with zipfile.ZipFile(io.BytesIO(archive_bytes)) as archive:
++        members = [i for i in archive.infolist() if i.filename == BASELINE_MEMBER]
++        require(len(members) == 1, "saved99_member_count", count=len(members))
++        equal(members[0].file_size, BASELINE_HTML_BYTES, "/saved99/memberBytes")
++        before_bytes = archive.read(members[0])
++    equal(len(before_bytes), BASELINE_HTML_BYTES, "/saved99/htmlBytes")
++    equal(sha(before_bytes), BASELINE_HTML_SHA256, "/saved99/htmlSHA256")
++    after_bytes = read_pinned(target, expected_sha, "actual100HTML")
++    fixture_bytes = read_pinned(workspace / FIXTURE_PATH, FIXTURE_SHA256, "reviewed100Fixture")
++    manifest_bytes = read_pinned(workspace / CANDIDATE_PATH, CANDIDATE_SHA256, "reviewed100Manifest")
++    market_bytes = read_pinned(workspace / MARKET_PATH, MARKET_SHA256, "reviewed100Market")
++    fixture = parse_json(fixture_bytes, "reviewed100Fixture")
++    manifest = parse_json(manifest_bytes, "reviewed100Manifest")
++    candidate_market = parse_json(market_bytes, "reviewed100Market")
++    equal(fixture["schemaVersion"], 1, "/fixture/schemaVersion")
++    equal(fixture["allowedFields"], ALLOWED_FIELDS, "/fixture/allowedFields")
++    equal(fixture["marketFile"], "data/market-inventory-2026-10-10.json", "/fixture/marketFile")
++    equal(fixture["afterSHA256"], MARKET_SHA256, "/fixture/afterSHA256")
++    equal(len(manifest["files"]), 5, "/manifest/fileCount")
++    by_path = {row["path"]: row for row in manifest["files"]}
++    equal(len(by_path), 5, "/manifest/uniqueFileCount")
++    equal(by_path[fixture["marketFile"]]["afterSHA256"], MARKET_SHA256, "/manifest/marketSHA256")
++    equal(by_path["qa/checkpoint100-market-fixture.json"]["afterSHA256"], FIXTURE_SHA256,
++          "/manifest/fixtureSHA256")
++    changes = fixture["changes"]
++    equal([[r["section"], r["index"], r["id"]] for r in changes], TARGETS, "/fixture/targets")
++
++    pre99, raw99, post99 = split_html(before_bytes, "saved99")
++    pre100, raw100, post100 = split_html(after_bytes, "actual100")
++    outside = [
++        outside_drift(pre100, pre99, "before_ev_data_body", 0, 0),
++        outside_drift(post100, post99, "after_ev_data_body",
++                      len(pre100) + len(raw100), len(pre99) + len(raw99)),
+     ]
+-    drift = [d for d in drift if d is not None]
+-    require(not drift, "bytes_outside_ev_data_changed", differences=drift)
+-    old, decode98 = decode_payload(raw98, "saved98")
+-    new, decode99 = decode_payload(raw99, "built99")
+-    for label, payload in [("saved98", old), ("built99", new)]:
+-        equal(sorted(payload), sorted(TOP_KEYS), "/" + label + "/keys")
+-        equal(sorted(payload["research"]), sorted(RESEARCH_KEYS), "/" + label + "/research/keys")
+-        require(type(payload["packs"]) is dict, "packs_not_object", input=label)
+-        for pack_id, pack in payload["packs"].items():
+-            equal(sorted(pack), sorted(PACK_KEYS), "/" + label + "/packs/" + pack_id + "/keys")
+-    equal(len(old["packs"]), 343, "/saved98/packCount")
+-    equal(list(new["packs"]), list(old["packs"]) + NEW_IDS, "/built99/orderedPackIds")
+-    for pack_id, pack in old["packs"].items():
+-        equal(new["packs"][pack_id], pack, "/built99/packs/" + pack_id)
+-
+-    source98 = keyed(old["research"]["sources"], "id", "/saved98/research/sources")
+-    source99 = keyed(new["research"]["sources"], "id", "/built99/research/sources")
+-    insertion = fixture["sourceInsertionIndex"]
+-    require(type(insertion) is int and 0 < insertion < len(source98), "source_insertion_not_interior")
+-    equal(insertion, 2055, "/fixture/sourceInsertionIndex")
+-    expected_sources = (old["research"]["sources"][:insertion] + fixture["dataDelta"]["sources"]
+-                        + old["research"]["sources"][insertion:])
+-    equal(new["research"]["sources"], expected_sources, "/built99/research/sources")
+-    equal(len(source98), 2196, "/saved98/sourceCount")
+-    equal(len(source99), 2202, "/built99/sourceCount")
+-    validate_registry_references(old["packs"], source98, "/saved98/packs")
+-    validate_registry_references(new["packs"], source99, "/built99/packs")
+-    for key in ["criteria", "publication_issues"]:
+-        equal(new["research"][key], old["research"][key], "/built99/research/" + key)
+-    equal(new["art"], old["art"], "/built99/art")
+-    equal(new["research"]["trim_equipment"],
+-          old["research"]["trim_equipment"] + fixture["researchDelta"]["trim_equipment"],
+-          "/built99/research/trim_equipment")
+-    equal([r["variant_id"] for r in fixture["researchDelta"]["trim_equipment"]],
+-          NEW_IDS, "/fixture/trimEquipmentIds")
+-
+-    picker98 = keyed(old["cars"], "id", "/saved98/cars")
+-    picker99 = keyed(new["cars"], "id", "/built99/cars")
+-    equal(list(picker98), list(old["packs"]), "/saved98/pickerIds")
+-    equal(list(picker99), list(picker98) + NEW_IDS, "/built99/pickerIds")
+-    for car_id, picker in picker98.items():
+-        equal(picker99[car_id], picker, "/built99/cars/" + car_id)
+-    for car in fixture["expectedCars"]:
+-        car_id = car["id"]
+-        expected_pack = expected_new_pack(car, fixture, old["research"]["criteria"], old["packs"])
+-        equal(new["packs"][car_id], expected_pack, "/built99/packs/" + car_id)
+-        # Only new rows use the narrowly inspected picker projection; old rows
+-        # are compared whole by their baseline IDs, with no schema guessing.
+-        expected_picker = {k: v for k, v in car.items() if k != "buyerSummary"}
+-        expected_picker["facts"] = {k: car["facts"][k] for k in ["price_aud", "range_km", "seats"]}
+-        expected_picker["issues"] = []
+-        equal(picker99[car_id], expected_picker, "/built99/cars/" + car_id)
+-        check_holds(new["packs"][car_id]["car"], "/built99/packs/" + car_id + "/car")
+-        check_holds(picker99[car_id], "/built99/cars/" + car_id)
+-
+-    for version, payload in [("before", old), ("after", new)]:
+-        equal(payload["counts"], fixture["counts"][version], "/" + version + "/counts")
+-        equal(aggregate(payload), payload["counts"], "/" + version + "/independentAggregates")
+-    equal(fixture["counts"]["sources"], {"before": len(source98), "after": len(source99)}, "/sourceCounts")
+-    sums98, sums99 = summary_counts(old), summary_counts(new)
+-    sums = fixture["counts"]["summaries"]
+-    equal(sums98, {"total": sums["before"], "paired": sums["pairedBefore"],
+-                  "strengthOnly": sums["strengthOnlyBefore"], "absent": sums["absent"]}, "/saved98/summaries")
+-    equal(sums99, {"total": sums["after"], "paired": sums["pairedAfter"],
+-                  "strengthOnly": sums["strengthOnlyAfter"], "absent": sums["absent"]}, "/built99/summaries")
+-
+-    market98, market99 = old["marketInventory"], new["marketInventory"]
+-    delta = fixture["market"]
+-    equal(delta["index"], 241, "/fixture/market/index")
+-    equal(market98["records"][delta["index"]], delta["beforeRow"], "/saved98/market/targetRow")
+-    equal(market98["detailedCatalogueContext"], delta["beforeContext"], "/saved98/market/context")
+-    expected_market = copy.deepcopy(market98)
+-    expected_market["records"][delta["index"]] = delta["afterRow"]
+-    expected_market["detailedCatalogueContext"] = delta["afterContext"]
+-    expected_market["sourceArtifacts"].append(delta["appendedArtifact"])
+-    equal(market99, expected_market, "/built99/marketInventory")
+-    for label, market, artifact_count in [("saved98", market98, 19), ("built99", market99, 20)]:
+-        equal(len(market["records"]), 242, "/" + label + "/market/recordCount")
+-        equal(market["counts"]["namedTrimConfigurationEntries"], 395, "/" + label + "/market/namedEntryCount")
+-        equal(len(market["sourceArtifacts"]), artifact_count, "/" + label + "/market/artifactCount")
+-        equal(market["complete"], False, "/" + label + "/market/complete")
+-    for key in ["rankingEligible", "completeVehicleCountEligible", "physicalStockVerified",
+-                "factoryOrderAcceptanceVerified"]:
+-        equal(market99["records"][241][key], False, "/built99/market/targetRow/" + key)
+-    equal(market99["records"][241]["modelYear"], None, "/built99/market/targetRow/modelYear")
+-
+-    # No success output is constructed until every check above has succeeded.
++    outside = [row for row in outside if row is not None]
++    try:
++        old, decode99 = decode_payload(raw99, "saved99")
++        new, decode100 = decode_payload(raw100, "actual100")
++    except VerificationFailure as exc:
++        exc.detail["outsideEvDataDifferences"] = outside
++        raise
++    equal(list(old), TOP_KEYS, "/saved99/topLevelKeys")
++    expected = copy.deepcopy(old)
++    permitted_paths = []
++    for row in changes:
++        section, index, identity = row["section"], row["index"], row["id"]
++        path = "/marketInventory/" + section + "/" + str(index)
++        before, after = row["before"], row["after"]
++        equal(old["marketInventory"][section][index], before, "/saved99" + path)
++        equal(before["id"], identity, "/fixture" + path + "/before/id")
++        equal(after["id"], identity, "/fixture" + path + "/after/id")
++        equal(list(after), list(before), "/fixture" + path + "/orderedKeys")
++        equal(row["changedFields"], ALLOWED_FIELDS, "/fixture" + path + "/changedFields")
++        equal(sorted(k for k in before if before[k] != after[k]), ALLOWED_FIELDS,
++              "/fixture" + path + "/actualChangedFields")
++        for value in [before, after]:
++            equal(value["rankingEligible"], False, "/fixture" + path + "/rankingEligible")
++        expected["marketInventory"][section][index] = copy.deepcopy(after)
++        permitted_paths.extend(path + "/" + field for field in ALLOWED_FIELDS)
++    equal(old["marketInventory"]["counts"], fixture["countsBefore"], "/saved99/marketCounts")
++    equal(fixture["countsAfter"], fixture["countsBefore"], "/fixture/unchangedCounts")
++    candidate_diff = ordered_json_differences(candidate_market, expected["marketInventory"],
++                                             "/candidateMarket")
++    require(not candidate_diff, "fixture_does_not_reconstruct_candidate_market", differences=candidate_diff)
++    # Every decoded leaf, ordered array and ordered object is compared. The
++    # copied baseline already contains its generated audits; none are exempted.
++    payload_diff = ordered_json_differences(new, expected, "")
++    require(not outside and not payload_diff, "artifact_delta_mismatch",
++            outsideEvDataDifferences=outside, decodedPayloadDifferences=payload_diff,
++            note="All detected payload differences are retained; no paths are ignored.")
+     return {
+-        "schema": "roadmark-portable99-static-observation-v1",
+-        "status": "passed",
+-        "verificationScope": "static_actual_html_bytes_and_decoded_payload",
++        "schema": "roadmark-portable100-static-observation-v1", "status": "passed",
++        "checkpoint": 100, "baselineCheckpoint": 99,
++        "verificationScope": "actual_HTML_bytes_and_complete_decoded_payload",
+         "scriptSHA256": sha(Path(__file__).read_bytes()),
+         "inputs": {
+-            "saved98": {"path": str(baseline), "sha256": sha(before_bytes), "bytes": len(before_bytes)},
+-            "built99": {"path": str(target), "sha256": sha(after_bytes), "bytes": len(after_bytes),
+-                        "expectedSHA256SuppliedExternally": expected_sha},
++            "saved99ZIP": {"path": str(archive_path), "sha256": sha(archive_bytes)},
++            "saved99HTML": {"member": BASELINE_MEMBER, "sha256": sha(before_bytes), "bytes": len(before_bytes)},
++            "actual100HTML": {"path": str(target), "sha256": sha(after_bytes), "bytes": len(after_bytes),
++                              "expectedSHA256SuppliedExternally": expected_sha},
+             "reviewedFixtureSHA256": sha(fixture_bytes), "candidateManifestSHA256": sha(manifest_bytes),
++            "candidateMarketSHA256": sha(market_bytes),
+         },
+-        "outsideEvData": {"byteIdentical": True,
+-                          "prefixBytes": len(pre99), "suffixBytes": len(post99),
+-                          "prefixSHA256": sha(pre99), "suffixSHA256": sha(post99)},
+-        "decoder": {"format": "roadmark-string-table-v1", "saved98": decode98, "built99": decode99},
+-        "preserved": {"wholeOldPacks": len(old["packs"]), "wholeOldPickerRows": len(picker98),
+-                      "oldSources": len(source98), "criteria": len(old["research"]["criteria"]),
+-                      "publicationIssues": len(old["research"]["publication_issues"]),
+-                      "trimEquipment": len(old["research"]["trim_equipment"]), "artEntries": len(old["art"])},
+-        "added": {"packIds": NEW_IDS, "pickerIds": NEW_IDS, "sourceIds": NEW_SOURCE_IDS,
+-                  "sourceInsertionIndex": insertion, "trimEquipment": 2,
+-                  "featureRows": 138, "newEligibilityGuardsRemainFalse": True,
+-                  "newPacksExactAgainstFixtureWithRetainedNovatedAuditProjection": True},
+-        "counts": {"before": old["counts"], "after": new["counts"]},
+-        "summaries": {"before": sums98, "after": sums99},
+-        "market": {"records": 242, "namedEntries": 395, "sourceArtifactsBefore": 19,
+-                   "sourceArtifactsAfter": 20, "exactFixtureDeltaOnly": True, "complete": False},
+-        "notVerified": ["browser_hydration", "visual_rendering", "runtime_ranking_execution",
+-                        "full_production_module_graph", "raw_publisher_pdf_bytes"],
++        "outsideEvData": {"byteIdentical": True, "prefixBytes": len(pre100), "suffixBytes": len(post100),
++                          "prefixSHA256": sha(pre100), "suffixSHA256": sha(post100)},
++        "decoder": {"format": "roadmark-string-table-v1", "saved99": decode99, "actual100": decode100},
++        "delta": {"rows": TARGETS, "changedFieldsPerRow": ALLOWED_FIELDS, "allowedFieldPaths": permitted_paths,
++                  "fixtureExact": True, "candidateMarketExact": True, "additionalAuditExceptions": []},
++        "preserved": {"allOtherDecodedValues": True, "arrayOrder": True, "objectKeyOrder": True,
++                      "topLevelKeys": TOP_KEYS, "cataloguePickerRows": len(old["cars"]),
++                      "wholePacks": len(old["packs"]), "marketRecords": len(old["marketInventory"]["records"]),
++                      "unverifiedLeads": len(old["marketInventory"]["unverifiedLeads"])},
++        "notVerified": NOT_VERIFIED,
+     }
+ 
+ 
+ def main():
+     parser = argparse.ArgumentParser(description=__doc__)
+-    parser.add_argument("--html99", required=True, type=Path, help="Root-built actual portable HTML")
+-    parser.add_argument("--expected-html99-sha256", required=True,
+-                        help="Exact SHA256 supplied independently by the root; no built99 default exists")
++    parser.add_argument("--html100", required=True, type=Path, help="Final actual100 portable HTML built by root")
++    parser.add_argument("--expected-html100-sha256", required=True,
++                        help="Independently established actual100 SHA256; no default exists")
+     parser.add_argument("--workspace-root", type=Path, default=Path(__file__).resolve().parents[2])
+     args = parser.parse_args()
+     try:
+         report = verify(args)
+-        output = json.dumps(report, ensure_ascii=False, separators=(",", ":"), allow_nan=False)
+     except VerificationFailure as exc:
+-        print(json.dumps({"status": "failed", **exc.detail}, ensure_ascii=False,
+-                         separators=(",", ":"), default=str), file=sys.stderr)
++        print(json.dumps({"status": "failed", **exc.detail, "notVerified": NOT_VERIFIED},
++                         ensure_ascii=False, separators=(",", ":"), default=str), file=sys.stderr)
+         return 1
+     except Exception as exc:
+         print(json.dumps({"status": "failed", "check": "unexpected_verification_error",
+-                          "errorType": type(exc).__name__, "error": str(exc)},
++                          "errorType": type(exc).__name__, "error": str(exc), "notVerified": NOT_VERIFIED},
+                          ensure_ascii=False, separators=(",", ":")), file=sys.stderr)
+         return 1
+-    print(output)
++    print(json.dumps(report, ensure_ascii=False, separators=(",", ":"), allow_nan=False))
+     return 0
+ 
+ 

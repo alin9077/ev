@@ -1,0 +1,180 @@
+{
+  "anchors": [
+    {
+      "bytes": 182702,
+      "path": "roadmark-research/applied95/expected-inputs.json",
+      "sha256": "42e12fc28be57b321a7b05ce553f59cd19faed85161ee74dc0fb8122bc3b1c57"
+    },
+    {
+      "bytes": 182808,
+      "path": "roadmark-research/applied96/expected-inputs-revision2.json",
+      "sha256": "6a9c4f8301f98f4a3d481ca137768563d6274b2df0f6b3df63badb3ebf1815fa"
+    },
+    {
+      "bytes": 6433,
+      "path": "roadmark-research/discovery-prefetch96-candidate/revision-2/MANIFEST.json",
+      "sha256": "9421e8f6421df52c6aa9ede71a0b9e3d976cfb010f33f5de229f31097e91aa44"
+    },
+    {
+      "bytes": 22175,
+      "path": "roadmark-research/qa96-candidate/revision-2/run_qa96.py",
+      "sha256": "927d4bdf6318b300c4f8581fb074eb929555b902e5dd355381fcafadc4d50ff3"
+    },
+    {
+      "bytes": 6844,
+      "path": "roadmark-recovery/final95-review/correlated-save-receipt.json",
+      "sha256": "f4cee255729bfc7db2a5bfef467cc9fcaa7dedcc7cb3955f3b05f9d0c566fee0"
+    },
+    {
+      "bytes": 16057932,
+      "path": "roadmark-recovery/final95-attempt1/Roadmark-recovered-95-portable-preview.zip",
+      "sha256": "802ddbb2721f7dd9229f6c4e33c61459546cf3dcc021d7adaaa237a5b92b7b90"
+    }
+  ],
+  "candidateFiles": [
+    {
+      "beforeBytes": 26192,
+      "beforePath": "before/src/components/discovery.tsx",
+      "beforeSHA256": "c382047506d1881d4483e6478757dca41fc6d8011855e151027df027f689aa6f",
+      "bytes": 26356,
+      "candidatePath": "after/src/components/discovery.tsx",
+      "path": "src/components/discovery.tsx",
+      "sha256": "02be90e98919418e433a853ae6019adfdb833b1a0e86a7d9d2d3564da9afecb8"
+    },
+    {
+      "beforeBytes": 647,
+      "beforePath": "before/src/portable/link.tsx",
+      "beforeSHA256": "0add93ac8b2209b4cba733f805d3bfb7f9252fd3d33bd0d9b3da65c95a8ecfe6",
+      "bytes": 780,
+      "candidatePath": "after/src/portable/link.tsx",
+      "path": "src/portable/link.tsx",
+      "sha256": "31140de06908d3d089d6a0ae025e6cb37864334d4d2e642d7c39e029c506963b"
+    },
+    {
+      "beforeBytes": null,
+      "beforePath": null,
+      "beforeSHA256": null,
+      "bytes": 7494,
+      "candidatePath": "after/tests/discovery-prefetch.test.ts",
+      "path": "tests/discovery-prefetch.test.ts",
+      "sha256": "c3dfe9d0d090eda866c63730991fa83e460309912a0f6a46136a4a5007c09b07"
+    }
+  ],
+  "inputDelta": {
+    "added": [
+      "tests/discovery-prefetch.test.ts"
+    ],
+    "baselineCount": 1659,
+    "candidateDerivesExpected": true,
+    "finalCount": 1660,
+    "removed": [],
+    "replaced": [
+      "src/components/discovery.tsx",
+      "src/portable/link.tsx"
+    ]
+  },
+  "source95": {
+    "badPayloadPins": [],
+    "baselineInputMismatches": [],
+    "bytes": 34143193,
+    "excludedQABrowserRasters": [
+      {
+        "bytes": 546762,
+        "path": "qa/car-reference-match.png",
+        "reason": "QA raster/browser capture excluded from the new source archive; retained unchanged locally",
+        "sha256": "8f5434bb3f76cc49602a1c2cd3a1977c38a1b7700d59f74948f1ea73c2b4aff8"
+      },
+      {
+        "bytes": 623939,
+        "path": "qa/drive-reverse-park.png",
+        "reason": "QA raster/browser capture excluded from the new source archive; retained unchanged locally",
+        "sha256": "c7b8060d0ec3f61eaf41299e6f7bc51d24bb147aaf84c5631906614c4442cc63"
+      },
+      {
+        "bytes": 628808,
+        "path": "qa/drive-roundabout.png",
+        "reason": "QA raster/browser capture excluded from the new source archive; retained unchanged locally",
+        "sha256": "f10e1fd013c65daca65498560f9c37aad3ca33f5eb52e7bd4a8e2953bce3643b"
+      },
+      {
+        "bytes": 22612,
+        "path": "qa/roadmark-after/335px-market-filter.png",
+        "reason": "QA raster/browser capture excluded from the new source archive; retained unchanged locally",
+        "sha256": "f4af9f14f903e0cd2ca1e7ae47f7191ae0a60ae7a027e1c32f0b817a798d386a"
+      },
+      {
+        "bytes": 32197,
+        "path": "qa/roadmark-after/400px-attribute-empty.png",
+        "reason": "QA raster/browser capture excluded from the new source archive; retained unchanged locally",
+        "sha256": "f9b4cf05432dc91d63de91b9db12cad4529c0df70008785d9f8f5703fda6731f"
+      },
+      {
+        "bytes": 24825,
+        "path": "qa/roadmark-after/400px-comparison.png",
+        "reason": "QA raster/browser capture excluded from the new source archive; retained unchanged locally",
+        "sha256": "da1074d7324713b4f94c12c878faa989a084422e3cef2e104cc56aef39af6800"
+      },
+      {
+        "bytes": 31540,
+        "path": "qa/roadmark-after/400px-market-expanded.png",
+        "reason": "QA raster/browser capture excluded from the new source archive; retained unchanged locally",
+        "sha256": "8c76a52906b675998a274bd6e4af550a21991269f5c71bc87940bb3648d8d0bd"
+      },
+      {
+        "bytes": 31884,
+        "path": "qa/roadmark-after/400px-market.png",
+        "reason": "QA raster/browser capture excluded from the new source archive; retained unchanged locally",
+        "sha256": "17e61d7dc3b8efc5db3022b9fc60b4ddfeb9e91e6dcaa89f76c290664b95de27"
+      },
+      {
+        "bytes": 27203,
+        "path": "qa/roadmark-after/400px-selection.png",
+        "reason": "QA raster/browser capture excluded from the new source archive; retained unchanged locally",
+        "sha256": "6a742f2562434d4d3d5d88a396874de441803c3c40687811f0c3d847c9dca6a8"
+      },
+      {
+        "bytes": 65168,
+        "path": "qa/roadmark-after/desktop-attribute.png",
+        "reason": "QA raster/browser capture excluded from the new source archive; retained unchanged locally",
+        "sha256": "332152e1bdc47bcfc04a2a60d0005a8e04ce6828c7fe7ec3a84e9e06bbfd290b"
+      },
+      {
+        "bytes": 57053,
+        "path": "qa/roadmark-after/desktop-home.png",
+        "reason": "QA raster/browser capture excluded from the new source archive; retained unchanged locally",
+        "sha256": "cbf20259b208db2ff255615d085d9147e795d2adaf7080103778274ada3afd06"
+      },
+      {
+        "bytes": 47883,
+        "path": "qa/roadmark-after/desktop-review-queue.png",
+        "reason": "QA raster/browser capture excluded from the new source archive; retained unchanged locally",
+        "sha256": "aaec10b05f9d0de4dc1be313ed67da58d601c75004e9f2767685e14b8a354ff1"
+      },
+      {
+        "bytes": 31874,
+        "path": "qa/roadmark-baseline/400px-home.png",
+        "reason": "QA raster/browser capture excluded from the new source archive; retained unchanged locally",
+        "sha256": "617c4666db41faa275d414d8e550592b7e30ee06fb5227c830a087d102f47bb5"
+      },
+      {
+        "bytes": 79770,
+        "path": "qa/roadmark-baseline/desktop-home.png",
+        "reason": "QA raster/browser capture excluded from the new source archive; retained unchanged locally",
+        "sha256": "e470a1bebadf4b1beb046456259b08e486c8bcb85abb6eaf956e3dbc342ec3ba"
+      },
+      {
+        "bytes": 44812,
+        "path": "qa/roadmark-baseline/narrow-home.png",
+        "reason": "QA raster/browser capture excluded from the new source archive; retained unchanged locally",
+        "sha256": "6ac82ef0a4e507472ea9dfb447181771804b8f5b728f48b352d434a751bf67eb"
+      }
+    ],
+    "inventoryEntries": 1955,
+    "inventoryExact": true,
+    "pairId": "roadmark-recovered95-ef5523500169ab56-GBi2ZoKnrPlQiT3VGNxcB",
+    "path": "roadmark-recovery/final95-attempt1/Roadmark-recovered-95-source.zip",
+    "sha256": "e3a8478bc95321fecd3ad248b5f8f34c260a8124f3379bc346572b207cea4062",
+    "uniqueNames": 1956,
+    "zipEntries": 1956
+  }
+}

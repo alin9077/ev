@@ -1,0 +1,28 @@
+--- a/tests/buyer-display-copy-render.test.ts
++++ b/tests/buyer-display-copy-render.test.ts
+@@ -26,7 +26,12 @@
+ const snapshot = { cars, data };
+ const escape = (text: string) => text.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&#x27;");
+ const hash = (value: unknown) => createHash("sha256").update(JSON.stringify(value)).digest("hex");
+-const render = (node: ReactNode) => renderToStaticMarkup(createElement(WithEvidence, { sources: data.sources, children: node }));
++function render(node: ReactNode, sources: Source[] = data.sources) {
++  // createElement's types do not infer a required prop from its positional child.
++  // This test-only assertion is paired with the required node argument below.
++  const props = { sources } as Parameters<typeof WithEvidence>[0];
++  return renderToStaticMarkup(createElement(WithEvidence, props, node));
++}
+ 
+ function marketHtml(records: typeof inventory.records) {
+   const Component = compiledSource("src/components/market-audit.tsx", {
+@@ -157,10 +162,7 @@
+   };
+   const sources = [...data.sources, source];
+   assert.ok(currentBuyerSummary(car.buyerSummary, sources, { asOf: "2026-10-10", maxAgeDays: 30 })?.strength);
+-  const html = renderToStaticMarkup(createElement(WithEvidence, {
+-    sources,
+-    children: createElement(Discovery, { cars: [car], sources }),
+-  }));
++  const html = render(createElement(Discovery, { cars: [car], sources }), sources);
+   assert.ok(html.includes(escape(row.after)));
+   assert.match(html, /Comparable evidence is still incomplete/);
+   assert.doesNotMatch(html, /CLOCK-BOUND-LABEL|CLOCK-BOUND-TEXT|Checking evidence freshness/);

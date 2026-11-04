@@ -1,0 +1,52 @@
+{
+  "reviewMethod": "Static text/data/file operations only; no candidate/app execution, import, compilation or syntaxcheck",
+  "manifest": {
+    "path": "roadmark-research/checkpoint100-save-candidate/MANIFEST.json",
+    "sha256": "266808797849c231a7ba64edc976354c2685476c2d07902ae15ed4ff2a9a812b",
+    "bytes": 8095
+  },
+  "seal": {
+    "path": "roadmark-research/checkpoint100-save-candidate/SHA256SUMS",
+    "sha256": "e0659c74b3f54398be431716a545be182224778ce4832567babd0c3d0bc3d46b",
+    "bytes": 1464
+  },
+  "scripts": {
+    "join_recovered100_source.py": {
+      "bytes": 4239,
+      "path": "roadmark-research/checkpoint100-save-candidate/join_recovered100_source.py",
+      "sha256": "d6e825961fdf774e443f0fd52f9088e28140518acc060e96a87ddc05b310fe2a"
+    },
+    "package_checkpoint100.py": {
+      "bytes": 50780,
+      "path": "roadmark-research/checkpoint100-save-candidate/package_checkpoint100.py",
+      "sha256": "cb311683966b847d9c9da234c7d61908ff846d642cb16edf38c065a4db7cdf62"
+    },
+    "verify_checkpoint100_saves.py": {
+      "bytes": 11607,
+      "path": "roadmark-research/checkpoint100-save-candidate/verify_checkpoint100_saves.py",
+      "sha256": "8a784cc021b5d20db7cfc717642460682ac7f7b1d9ea3495d7faa38e0042514f"
+    }
+  },
+  "manifestRowsVerified": 15,
+  "checksumRowsVerified": 16,
+  "anchorRowsVerified": 14,
+  "derivationBaseRowsVerified": 3,
+  "starterResearchRowsVerified": 39,
+  "fullThreeScriptDerivationExact": true,
+  "qaValidatorExactlySameAfterTwoCommentAndLabelChanges": true,
+  "joinerExactlySameAfterCheckpointLabels": true,
+  "transportTailExactlySameAfterCheckpointLabels": true,
+  "closedFindings": [
+    "Correlator emits applicationCheckpoint100",
+    "Artifact result is parsed and strictly joined to pinned verifier,99 baseline,current100QA artifacts,exact fixture/delta and full preservation flags"
+  ],
+  "requiredActualEvidenceStillSeparate": [
+    "Actual seven-stageQA/outer exit and full sealed logs",
+    "Successful portable verifier stdout,stderr and process exit",
+    "Eight actual ownVM visible market/hero cases with geometry",
+    "Root semantic/preservation/selected-content and no-concurrent-writer acceptance",
+    "Exact final root save binding",
+    "Actual local archives/readbacks/shipped joiner reconstruction",
+    "Actual new-create helper outcomes/xattrs and attachment send results"
+  ]
+}

@@ -1,0 +1,338 @@
+{
+  "review": "Ford MY26.50 full-pack source transport and schema dates",
+  "reviewDate": "2026-10-10",
+  "mode": "Independent read-only source and JSON artifact inspection; audit artifacts are the only writes",
+  "verdict": "No concrete defect found in the reviewed scope",
+  "findings": [],
+  "verificationLimits": {
+    "appRuntimeImported": false,
+    "testsExecuted": false,
+    "buildExecuted": false,
+    "browserRenderedOrInspected": false,
+    "freshRuntimeCountsEstablished": false,
+    "releaseApproved": false,
+    "note": "Existing tests and actual-merge-proof are inspected evidence, not newly executed results. Rendered disclosure, exported page response, and browser interaction require the parent verification pass."
+  },
+  "staticComparisons": [
+    {
+      "name": "App retains exact adapter models",
+      "passed": true,
+      "evidence": {
+        "matchedRows": 1
+      }
+    },
+    {
+      "name": "App retains exact adapter variants",
+      "passed": true,
+      "evidence": {
+        "matchedRows": 2
+      }
+    },
+    {
+      "name": "App retains exact adapter sources",
+      "passed": true,
+      "evidence": {
+        "matchedRows": 10
+      }
+    },
+    {
+      "name": "App retains exact adapter facts",
+      "passed": true,
+      "evidence": {
+        "matchedRows": 362
+      }
+    },
+    {
+      "name": "Binding source objects exactly equal adapter sources",
+      "passed": true,
+      "evidence": {
+        "sourceCount": 10
+      }
+    },
+    {
+      "name": "ford_e_transit_custom_my26_50__trend_lwb__20261010: exact configuration boundary",
+      "passed": true,
+      "evidence": {
+        "contextIds": [
+          "r10_fordcustom_bound_ford_custom_spec",
+          "r10_fordcustom_bound_ford_custom_trend",
+          "r10_fordcustom_bound_ford_custom_sport",
+          "r10_fordcustom_bound_ford_custom_price",
+          "r10_fordcustom_bound_ford_warranty_2026",
+          "r10_fordcustom_bound_qauto_trend_tfjn",
+          "r10_fordcustom_bound_reef_trend_f502115",
+          "r10_fordcustom_bound_aag_trend_3969319",
+          "r10_fordcustom_bound_titan_sport_s6b7_new",
+          "r10_fordcustom_bound_carexpert_custom_future_update"
+        ]
+      }
+    },
+    {
+      "name": "ford_e_transit_custom_my26_50__trend_lwb__20261010: ten context sources without claim widening",
+      "passed": true,
+      "evidence": {
+        "contextOnlyClaimReferences": []
+      }
+    },
+    {
+      "name": "ford_e_transit_custom_my26_50__trend_lwb__20261010: ranking and complete-count gates false",
+      "passed": true,
+      "evidence": {}
+    },
+    {
+      "name": "ford_e_transit_custom_my26_50__trend_lwb__20261010: phase preserved and required nulls intact",
+      "passed": true,
+      "evidence": {
+        "phase": "MY26.50",
+        "requiredNulls": 70
+      }
+    },
+    {
+      "name": "ford_e_transit_custom_my26_50__trend_lwb__20261010: exact persisted buyer record",
+      "passed": true,
+      "evidence": {
+        "method": "JSON-only resolution of declared identity references; no app runtime import"
+      }
+    },
+    {
+      "name": "ford_e_transit_custom_my26_50__sport_swb__20261010: exact configuration boundary",
+      "passed": true,
+      "evidence": {
+        "contextIds": [
+          "r10_fordcustom_bound_ford_custom_spec",
+          "r10_fordcustom_bound_ford_custom_trend",
+          "r10_fordcustom_bound_ford_custom_sport",
+          "r10_fordcustom_bound_ford_custom_price",
+          "r10_fordcustom_bound_ford_warranty_2026",
+          "r10_fordcustom_bound_qauto_trend_tfjn",
+          "r10_fordcustom_bound_reef_trend_f502115",
+          "r10_fordcustom_bound_aag_trend_3969319",
+          "r10_fordcustom_bound_titan_sport_s6b7_new",
+          "r10_fordcustom_bound_carexpert_custom_future_update"
+        ]
+      }
+    },
+    {
+      "name": "ford_e_transit_custom_my26_50__sport_swb__20261010: ten context sources without claim widening",
+      "passed": true,
+      "evidence": {
+        "contextOnlyClaimReferences": []
+      }
+    },
+    {
+      "name": "ford_e_transit_custom_my26_50__sport_swb__20261010: ranking and complete-count gates false",
+      "passed": true,
+      "evidence": {}
+    },
+    {
+      "name": "ford_e_transit_custom_my26_50__sport_swb__20261010: phase preserved and required nulls intact",
+      "passed": true,
+      "evidence": {
+        "phase": "MY26.50",
+        "requiredNulls": 70
+      }
+    },
+    {
+      "name": "ford_e_transit_custom_my26_50__sport_swb__20261010: exact persisted buyer record",
+      "passed": true,
+      "evidence": {
+        "method": "JSON-only resolution of declared identity references; no app runtime import"
+      }
+    },
+    {
+      "name": "All 14 approved dependencies are exact in app",
+      "passed": true,
+      "evidence": {}
+    },
+    {
+      "name": "Six accepted source snapshots are exact in app",
+      "passed": true,
+      "evidence": {}
+    },
+    {
+      "name": "Future-update source remains held audit context",
+      "passed": true,
+      "evidence": {
+        "id": "r10_fordcustom_bound_carexpert_custom_future_update",
+        "publishedDate": null,
+        "reportedPublicationDate": "2026-09-22",
+        "publicationDateBasis": "Absolute date is upstream metadata only; retained excerpt shows relative age and does not independently reproduce that date."
+      }
+    },
+    {
+      "name": "Static raw variant count equals merge proof",
+      "passed": true,
+      "evidence": {
+        "base": 34,
+        "additions": 283
+      }
+    }
+  ],
+  "staticComparisonsAllPassed": true,
+  "rows": [
+    {
+      "id": "ford_e_transit_custom_my26_50__trend_lwb__20261010",
+      "configurationSHA256": "0267c27d049284329e497fc768180f2800e68a940779ce0cfdc44975c324d14d",
+      "factsSHA256": "7dd6dbd0de0e48cfb28b068dcb109cfb010226755bdb98b47baf7b289c389d68",
+      "hashConvention": "SHA-256 of Node JSON.stringify(snapshot value), independently recomputed using fs/crypto only; both match app QA fixture",
+      "phase": "MY26.50",
+      "fullContextSourceCount": 10,
+      "requiredNullCount": 70
+    },
+    {
+      "id": "ford_e_transit_custom_my26_50__sport_swb__20261010",
+      "configurationSHA256": "e72fecb33172492ab8c63febb31ee548ffc132639c94e07a105f0803363e5a79",
+      "factsSHA256": "c8a63d63a76e0da27bedf0e26e952d60a5d4e19b4cf2c18256e3d128ffc56c53",
+      "hashConvention": "SHA-256 of Node JSON.stringify(snapshot value), independently recomputed using fs/crypto only; both match app QA fixture",
+      "phase": "MY26.50",
+      "fullContextSourceCount": 10,
+      "requiredNullCount": 70
+    }
+  ],
+  "sourceRoles": {
+    "fullContextSourceIds": [
+      "r10_fordcustom_bound_ford_custom_spec",
+      "r10_fordcustom_bound_ford_custom_trend",
+      "r10_fordcustom_bound_ford_custom_sport",
+      "r10_fordcustom_bound_ford_custom_price",
+      "r10_fordcustom_bound_ford_warranty_2026",
+      "r10_fordcustom_bound_qauto_trend_tfjn",
+      "r10_fordcustom_bound_reef_trend_f502115",
+      "r10_fordcustom_bound_aag_trend_3969319",
+      "r10_fordcustom_bound_titan_sport_s6b7_new",
+      "r10_fordcustom_bound_carexpert_custom_future_update"
+    ],
+    "approvedSourceSnapshotIds": [
+      "r10_fordcustom_bound_ford_custom_price",
+      "r10_fordcustom_bound_ford_custom_spec",
+      "r10_fordcustom_bound_ford_custom_sport",
+      "r10_fordcustom_bound_ford_custom_trend",
+      "r10_fordcustom_bound_ford_warranty_2026",
+      "r10_fordcustom_bound_qauto_trend_tfjn"
+    ],
+    "contextOnlySourceIds": [
+      "r10_fordcustom_bound_aag_trend_3969319",
+      "r10_fordcustom_bound_carexpert_custom_future_update",
+      "r10_fordcustom_bound_reef_trend_f502115",
+      "r10_fordcustom_bound_titan_sport_s6b7_new"
+    ],
+    "heldSourceId": "r10_fordcustom_bound_carexpert_custom_future_update",
+    "sourceObjectSHA256": {
+      "r10_fordcustom_bound_ford_custom_spec": "9eb8fce2b14628cf09bb212b982aa18db82c2eae35273f284a1149f1e4be8ed0",
+      "r10_fordcustom_bound_ford_custom_trend": "73626c18b841835b2221239c47b4b47a8153bd5bd4c36edce9e5295750ff28f4",
+      "r10_fordcustom_bound_ford_custom_sport": "7bd05cb34f9434280476044830a2e2f43b06ee108b80d4c05a1dcdde989c1918",
+      "r10_fordcustom_bound_ford_custom_price": "fdda8abbc7a9e194b0104aff4e457625bccfd47fa9c75ebc5bc2afba1ebc82ab",
+      "r10_fordcustom_bound_ford_warranty_2026": "b966a50fc327e51a158c717c20616930e76fb2655b4b0e3c13788204c290858b",
+      "r10_fordcustom_bound_qauto_trend_tfjn": "a64a9bfd06e7b244af7c05fa214b55cb7c7d540ae71164662b23157ea41c5fc7",
+      "r10_fordcustom_bound_reef_trend_f502115": "b9b1f4d900da4663e235ef97da76b719198c88a5f98827b6124a6314bdc8a063",
+      "r10_fordcustom_bound_aag_trend_3969319": "2ecb0b9c0dae48f63b647e1eb1a108c3d7abe6f4bc295223a9604beee8006bd7",
+      "r10_fordcustom_bound_titan_sport_s6b7_new": "ca6ac2418fc3b702a3545f9c986db33c269fd2f3675147adae2046e921d55b1c",
+      "r10_fordcustom_bound_carexpert_custom_future_update": "816b324ab9819f8272959bf3b45709e568c19d2f2c58fc9d63e3139c7fcc57cc"
+    },
+    "sourceHashConvention": "UTF-8 JSON, ensure_ascii=False, sorted keys, compact separators, no trailing newline"
+  },
+  "codeEvidence": [
+    {
+      "claim": "Malformed/duplicate/blank context IDs fail closed; missing IDs fail when full pack/page evidence is assembled",
+      "references": [
+        "src/lib/configuration-evidence.ts:6-15",
+        "src/lib/data.ts:718-723",
+        "src/lib/page-evidence.ts:46-58"
+      ]
+    },
+    {
+      "claim": "Full-pack context transport adds IDs to source selection and preserves source fields, publication hold, and source dates; URL safety normalization is the only pack-level transform",
+      "references": [
+        "src/lib/data.ts:724-745",
+        "src/lib/page-evidence.ts:16-29",
+        "src/lib/page-evidence.ts:33-59"
+      ]
+    },
+    {
+      "claim": "Context membership does not become citable claim support: fact/feature claims use their own source lists; buyer summary sources remain dependency/availability-derived with publication-hold checks",
+      "references": [
+        "src/lib/citable.ts:191-229",
+        "src/lib/selling-points.ts:87-104",
+        "src/lib/selling-points.ts:290-337"
+      ]
+    },
+    {
+      "claim": "Discovery keeps exactly rankingEligible, completeVehicleCountEligible and projectionScope; ranking fails closed before numeric/source checks for these bounded rows",
+      "references": [
+        "src/lib/discovery.ts:61-88",
+        "src/lib/discovery.ts:118-122",
+        "src/lib/discovery.ts:159-172"
+      ]
+    },
+    {
+      "claim": "MY26.50 remains report.year and generation text; only four-digit calendar years are emitted as vehicleModelDate, so Ford Vehicle schema excludes that property",
+      "references": [
+        "src/lib/citable.ts:332-341",
+        "src/lib/citable.ts:377-393"
+      ]
+    }
+  ],
+  "testSourceCoverage": [
+    {
+      "file": "tests/configuration-evidence-transport.test.ts",
+      "lines": "13-42",
+      "covers": "Held context preservation, no car mutation, three-field discovery projection, malformed/duplicate/missing source IDs",
+      "executed": false
+    },
+    {
+      "file": "tests/citable.test.ts",
+      "lines": "112-119,213-223",
+      "covers": "Unknown/phase model year omitted from schema date while exact text is retained",
+      "executed": false
+    },
+    {
+      "file": "tests/ford-custom-integration.test.ts",
+      "lines": "12-55",
+      "covers": "Ford fact/config hashes, 140 nulls, ten context citation list entries, held source excluded from summary guards/snapshots, phase absent from schema date, exact availability flags, adversarial ranking exclusions",
+      "executed": false
+    }
+  ],
+  "existingMergeProof": {
+    "rawSHA256": "68aa27377827132c17f742bf0947c346af03b6e9680b408cdc5c2033c667a21d",
+    "reportedCounts": {
+      "variants": 317,
+      "families": 134,
+      "generations": 138,
+      "criteria": 69,
+      "evidence": 21873,
+      "current": 303,
+      "outgoing": 10,
+      "provisional": 4
+    },
+    "reportedBuyerSummaries": 310,
+    "reportedPriorCarsUnchanged": 315,
+    "reportedPriorSummariesUnchanged": 308,
+    "reportedPassed": true,
+    "reportedChecks": 29,
+    "reportedReleaseApproved": false,
+    "independentlyRerun": false
+  },
+  "rawFileSHA256": {
+    "roadmark-work/roadmark/src/lib/configuration-evidence.ts": "7ff6d81950d7ecd6697769cc01ef950d05b2e15fb4ea246a0a760559574f2aa3",
+    "roadmark-work/roadmark/src/lib/page-evidence.ts": "69d4aec9415f4d070e4f7bd12c42c8f967f7053aa838c2db6fd00980637f8629",
+    "roadmark-work/roadmark/src/lib/data.ts": "3ad2ffb8335ad1d061ffa9962d9002dd8a16b564825a905884098223d8edf5db",
+    "roadmark-work/roadmark/src/lib/types.ts": "e669bb885ff8f1a2a5565b139a9fce6b5507cfb3c99179cec061d84af091d645",
+    "roadmark-work/roadmark/src/lib/citable.ts": "c840c1ef6812f42068aef3ef0a82f54fbf475974bd45debd294a544a098779ef",
+    "roadmark-work/roadmark/src/lib/discovery.ts": "5dd8ce550c2479f763fca976f70cf398f43f2d068995c6f088c225d2a0c4aa5f",
+    "roadmark-work/roadmark/src/lib/selling-points.ts": "27709189a6ef75f38350b9dbfc464fd6e2b3dc7f7e96af4c57d2a2fcc1c355cf",
+    "roadmark-work/roadmark/src/lib/buyer-proposal-storage.ts": "2febace11633321f2c103a0b3db4c4632df8e3601195922c4b83fce6354f7f7c",
+    "roadmark-work/roadmark/src/lib/launch-evidence.ts": "4d017cf74835569b2d3fedb2ca68e4c5a5d8b07369ae814b62a66443f7b79e51",
+    "roadmark-work/roadmark/src/lib/config.ts": "6f3507757cc703272faf172881d3f265d1512b883c0cb6e4808d8062ef61936b",
+    "roadmark-work/roadmark/tests/configuration-evidence-transport.test.ts": "a0839b214137fae78a0ef04081dd3ff52c4cf2c26fbe57b1874e37d69e668c39",
+    "roadmark-work/roadmark/tests/citable.test.ts": "51fa779a238da86a53d9bd4f7f78b37c6f769600ec878c305b61edfa2f1112e5",
+    "roadmark-work/roadmark/tests/ford-custom-integration.test.ts": "d8f67aa22a4848f23a5eaac7cbfd5fb35d5570a7a7c9239384c831defbad2505",
+    "roadmark-work/roadmark/qa/ford-custom-integration-fixture.json": "b1d385f93fe3aa3fcfb66aebe9914ccbec33148e147a1102cdfb03cb3835a75b",
+    "roadmark-work/roadmark/data/catalogue-additions-2026-10-10.json": "729386711765938a3234e1df910f3a9c75379d42adff9bc13abba74314d42088",
+    "roadmark-work/roadmark/data/buyer-selling-points-2026-10-10.json": "0cc11616b78bd82a0e9a8d55362dc1e098b84ff95849d31d4fbd494f6bcb0f54",
+    "roadmark-work/roadmark/data/buyer-identity-snapshots-2026-10-10.json": "80a21fae26da4c18c85fa793a390b2477e259a0abaec073a1df6e22a369a61d1",
+    "roadmark-research/ford-custom-runtime-candidate/adapter-candidate.json": "8420b34f344ffcffbf98dd58fabe7403ac45fccbcc87e9e286aeacdf049fa07c",
+    "roadmark-research/ford-custom-runtime-candidate/binding-effective-snapshot.json": "83d96b618844ad22e73c3fec39a25e99fdd449bb91cd634d62f0431ac322a58b",
+    "roadmark-research/ford-custom-runtime-candidate/actual-merge-proof.json": "68aa27377827132c17f742bf0947c346af03b6e9680b408cdc5c2033c667a21d",
+    "roadmark-research/ford-custom-runtime-candidate/runtime-copy-payload.json": "cf33c6a931e31614ed77a3f0f3bfcfebd676500008d105c03d43652084759edc"
+  }
+}

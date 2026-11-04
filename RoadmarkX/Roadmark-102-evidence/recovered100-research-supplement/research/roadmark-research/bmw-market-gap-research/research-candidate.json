@@ -1,0 +1,151 @@
+{
+  "schema": "roadmark_bmw_market_gap_research_v1",
+  "status": "proposed_research_only_not_applied",
+  "as_of": "2026-10-12",
+  "scope": [
+    "bmw-i3",
+    "bmw-ix4"
+  ],
+  "before_input_file_sha256": "ea4e4f7120e7739de987405740641997c15c6bb0704082724ae3d38055b6fdfa",
+  "source_provenance_file": "source-provenance.json",
+  "entries": [
+    {
+      "id": "bmw-i3",
+      "before_object_sha256": "80cecd64b464661a15300d994c945dabedc71846078524293130b081f4ede3e6",
+      "before_object_file": "before-objects.json",
+      "proposed_disposition": "retain_held_market_audit_only",
+      "exact_current_AU_marketed_name": "BMW i3 50 xDrive Sedan",
+      "retained_grade": "50 xDrive",
+      "generation_identifier": {
+        "value": "NA0",
+        "source": "S03",
+        "basis": "current AU product page title"
+      },
+      "sales_model_code": {
+        "current_verified_value": null,
+        "historical_report_only_value": "52JB",
+        "current_reverification": "not established; do not promote historical bridge into current source proof"
+      },
+      "availability": {
+        "current_AU_marketing_listing": true,
+        "marketing_New_label": true,
+        "build_price_CTA_present": true,
+        "actual_AU_order_acceptance_verified": false,
+        "exact_AU_New_advertisement_verified": false,
+        "unsold_physical_New_stock_verified": false,
+        "arrival_or_launch": {
+          "scope": "Australia manufacturer website",
+          "timing": "2027",
+          "source": "S02",
+          "not_equivalent_to": "formal MY, accepted AU order, committed AU delivery or stock"
+        },
+        "market_card_caution": "A current AU marketing card is not current available-to-buy certification. Marketing New and a Build & Price CTA do not establish accepted orders or a physical unsold New unit."
+      },
+      "other_named_variants": [
+        {
+          "grade": "40 xDrive",
+          "status": "technical_page_named_only_AU_sale_unconfirmed",
+          "source": "S05",
+          "admit_current_AU_grade": false
+        },
+        {
+          "grade": "M60 xDrive",
+          "status": "AU_announced_orders_2027",
+          "source": "S06",
+          "admit_current_AU_grade": false,
+          "qualification": "Separate from the 50 xDrive card; its order date must not overwrite the 50."
+        }
+      ],
+      "retain_app_fields": {
+        "orderStatus": "listed_unconfirmed",
+        "stockStatus": "unverified",
+        "availabilityCategory": "current_listing_order_stock_unconfirmed",
+        "catalogueCoverage": "market_audit_only",
+        "rankingEligible": false,
+        "modelYear": null
+      },
+      "research_only_suggested_evidence_note": "BMW Australia currently markets i3 50 xDrive Sedan (NA0) with a New/Build & Price card, while its electric-range FAQ says arrival in 2027. Exact AU order acceptance, selected build/effectivity and a specific unsold New unit remain unverified. Separate 40 technical content and M60 orders-in-2027 material do not establish additional current available-to-buy grades.",
+      "new_normalized_specs": {},
+      "app_mutation_requested": false,
+      "new_admission_requested": false
+    },
+    {
+      "id": "bmw-ix4",
+      "before_object_sha256": "ec992cdd729290031adfbf6efacbc7bfa1245e2f321debed32c58c02f625ce18",
+      "before_object_file": "before-objects.json",
+      "proposed_disposition": "retain_held_market_audit_only",
+      "exact_current_AU_marketed_name": "BMW iX4 50 xDrive",
+      "retained_grade": "50 xDrive",
+      "generation_identifier": {
+        "value": "NA7",
+        "source": "S04",
+        "basis": "current AU product page title"
+      },
+      "sales_model_code": {
+        "current_verified_value": null,
+        "historical_report_only_value": "22HU",
+        "current_reverification": "not established; do not promote historical bridge into current source proof"
+      },
+      "availability": {
+        "current_AU_marketing_listing": true,
+        "marketing_New_label": true,
+        "build_price_CTA_present": true,
+        "actual_AU_order_acceptance_verified": false,
+        "exact_AU_New_advertisement_verified": false,
+        "unsold_physical_New_stock_verified": false,
+        "arrival_or_launch": {
+          "scope": "Global manufacturer release only",
+          "timing": "March 2027",
+          "source": "S08",
+          "not_equivalent_to": "formal MY, accepted AU order, committed AU delivery or stock"
+        },
+        "market_card_caution": "A current AU marketing card is not current available-to-buy certification. Marketing New and a Build & Price CTA do not establish accepted orders or a physical unsold New unit."
+      },
+      "other_named_variants": [
+        {
+          "grade": "40 xDrive",
+          "status": "global_release_named_only_AU_sale_unconfirmed",
+          "source": "S08",
+          "admit_current_AU_grade": false
+        },
+        {
+          "grade": "M60 xDrive",
+          "status": "AU_announced_orders_2027",
+          "source": "S07",
+          "admit_current_AU_grade": false,
+          "qualification": "Separate from the 50 xDrive card; its order date must not overwrite the 50."
+        }
+      ],
+      "retain_app_fields": {
+        "orderStatus": "listed_unconfirmed",
+        "stockStatus": "unverified",
+        "availabilityCategory": "current_listing_order_stock_unconfirmed",
+        "catalogueCoverage": "market_audit_only",
+        "rankingEligible": false,
+        "modelYear": null
+      },
+      "research_only_suggested_evidence_note": "BMW Australia currently markets iX4 50 xDrive (NA7) with a New/Build & Price card. Actual AU order acceptance, local launch/delivery timing, selected build/effectivity and a specific unsold New unit remain unverified. BMW global press release dated 8 October 2026 announces March 2027 launch; that timing is global, not certified Australian timing. M60 orders-in-2027 material is separate.",
+      "new_normalized_specs": {},
+      "app_mutation_requested": false,
+      "new_admission_requested": false
+    }
+  ],
+  "limits": [
+    "Read-only public web text extraction; no selected-build configurator retry, order simulation, contact, account or browser action.",
+    "Existing selected-build permission restriction retained; no alternate route used.",
+    "Current iX4 technical URL returned tool-access failure. Stopped that route; no HTTP status or publisher denial was exposed.",
+    "Dealer search was bounded and returned no verified exact AU New unit; this is not proof of no stock anywhere.",
+    "No normalized specs, formal MY, sale certification, ranking, count or catalogue admission.",
+    "Brochure/model publication dates and retrieval/observation dates remain distinct."
+  ],
+  "blocked_sources": [
+    {
+      "url": "https://www.bmw.com.au/en/models/x-series/suv/bmw-ix4-technical-data.html",
+      "result": "URL is not accessible via this tool",
+      "classification": "tool_access_failure_no_HTTP_status_exposed",
+      "followup": "stopped route; no alternate technical-data retrieval attempted",
+      "evidence_path": "source-extractions/bmw_tech_ix4.txt",
+      "sha256": "da9cb7fc8f558b0273e0947c260b04d1b6047806e9ba8f2d8de5f6b2363edadf"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "reviewMethod": "Independent standard-library JSON, hashes and ZIP byte reads only. No application or candidate code executed/imported/compiled/syntax-checked.",
+  "anchors": [
+    {
+      "label": "applicationReceipt",
+      "path": "roadmark-research/applied100/application-receipt.json",
+      "sha256": "adb675fb91e8b7382f6dc49a9f93f6c006c72736bbe75b7a7026bb51a8d176bf",
+      "bytes": 1848
+    },
+    {
+      "label": "baselineInputs",
+      "path": "roadmark-research/applied99/revision4/expected-inputs.json",
+      "sha256": "4a4204128daf108f35296c77d3beb4476a453c98ab571648da9d85b1b0085e86",
+      "bytes": 184478
+    },
+    {
+      "label": "candidate",
+      "path": "roadmark-research/applied100/qa-candidate-manifest.json",
+      "sha256": "7d85b68eb8b73d6b3dcdca3c6df7f882cf494686c610c5820d5222253fe6784d",
+      "bytes": 1192
+    },
+    {
+      "label": "expectedInputs",
+      "path": "roadmark-research/applied100/expected-inputs.json",
+      "sha256": "39caa8ae30cf2c6bc09026d0dd87b6fd42811fd8ddb2d632c5d3d18092818225",
+      "bytes": 184815
+    },
+    {
+      "label": "originalCandidate",
+      "path": "roadmark-research/market100-candidate/manifest.json",
+      "sha256": "52061d869f2e1cab0ca3cec6252a57200f251bb4b7317337dd3f9cf168ebaa66",
+      "bytes": 2113
+    },
+    {
+      "label": "preview99",
+      "path": "roadmark-recovery/final99-attempt1/Roadmark-recovered-99-portable-preview.zip",
+      "sha256": "0ababbe0d9e9c16aea35f1cb3f427e20d5536d1d0b3b4e11a0a3a88ab78e993a",
+      "bytes": 16423587
+    },
+    {
+      "label": "runner",
+      "path": "roadmark-research/qa99-candidate/run_qa99.py",
+      "sha256": "a043d6ac749a39d025bf452eddb55440d2ac81ba3b73be9f4d894a5055a2e10f",
+      "bytes": 22175
+    },
+    {
+      "label": "saved99",
+      "path": "roadmark-recovery/final99-review/correlated-save-receipt.json",
+      "sha256": "71f2234b1d225cec88384ae056052270de6777aad3e25e7a296d47562c43435e",
+      "bytes": 5628
+    },
+    {
+      "label": "saved99helper",
+      "path": "roadmark-recovery/final99-review/library-upload.stdout.json",
+      "sha256": "17764d775ba36041aa2424cd323efc8071320de231ab42db19a897df23d9b5ca",
+      "bytes": 2675
+    },
+    {
+      "label": "saved99plan",
+      "path": "roadmark-recovery/final99-attempt1/upload-plan.json",
+      "sha256": "319afbd9404a7444b1361678f382080e5c4d4af9dcb042177a618bdb3c937e65",
+      "bytes": 3415
+    },
+    {
+      "label": "source99",
+      "path": "roadmark-recovery/final99-attempt1/Roadmark-recovered-99-source.zip",
+      "sha256": "7514bab9524cdb08af0b9fb8b7b1f001435f61526590c929f069d03c8b7f4fd1",
+      "bytes": 47830120
+    },
+    {
+      "label": "sourceCandidate",
+      "path": "roadmark-research/applied100/candidate-manifest.json",
+      "sha256": "52061d869f2e1cab0ca3cec6252a57200f251bb4b7317337dd3f9cf168ebaa66",
+      "bytes": 2113
+    },
+    {
+      "label": "sourceReview",
+      "path": "roadmark-research/review-market100/DECISION.json",
+      "sha256": "ff08ea1eb44d828136bc5da242c776ad98752ebd859519ac9653a68675a01c64",
+      "bytes": 4425
+    }
+  ],
+  "expectedInputDelta": {
+    "baselineCount": 1675,
+    "finalCount": 1678,
+    "exactChangedPaths": [
+      "data/market-inventory-2026-10-10.json",
+      "qa/checkpoint100-market-fixture.json",
+      "tests/checkpoint100-market.test.ts",
+      "tests/helpers/checkpoint100-market-history.ts",
+      "tests/helpers/checkpoint99-history.ts"
+    ],
+    "originalAndProjectedMappingExact": true
+  },
+  "priorArchive": {
+    "source99": {
+      "bytes": 47830120,
+      "path": "roadmark-recovery/final99-attempt1/Roadmark-recovered-99-source.zip",
+      "sha256": "7514bab9524cdb08af0b9fb8b7b1f001435f61526590c929f069d03c8b7f4fd1"
+    },
+    "memberCount": 2680,
+    "inventoryRowsVerified": 2679,
+    "baselineInputRowsVerified": 1675,
+    "preimagesVerified": [
+      {
+        "path": "data/market-inventory-2026-10-10.json",
+        "sha256": "ea4e4f7120e7739de987405740641997c15c6bb0704082724ae3d38055b6fdfa",
+        "bytes": 1643818
+      },
+      {
+        "path": "tests/helpers/checkpoint99-history.ts",
+        "sha256": "80ef31bac488635dbf69fdac7b7d4dbd2812ae53a6a08f3e8b68de7d2efe71d7",
+        "bytes": 6551
+      }
+    ],
+    "additionsAbsent": 3,
+    "excludedRastersStillAbsent": 15,
+    "sourceManifestPairId": "roadmark-recovered99-22bbd67dcb7de6fd-2ATnTkC6XOpEMKXbUzc0U"
+  },
+  "protectedLibraryIdentityChain": {
+    "earlierHardcoded": 38,
+    "actual98": 6,
+    "actual99": 6,
+    "total": 50,
+    "exactCandidateSet": true,
+    "actual99HelperCorrelationChecked": true
+  }
+}

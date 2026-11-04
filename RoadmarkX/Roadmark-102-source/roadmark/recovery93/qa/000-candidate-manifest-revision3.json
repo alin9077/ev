@@ -1,0 +1,50 @@
+{
+  "status": "UNREVIEWED_TYPE_ONLY_FIX_AFTER_APPLICATION",
+  "files": [
+    {
+      "path": "data/market-deepway-star-lead-evidence-2026-10-12.json",
+      "bytes": 7171,
+      "sha256": "ae182e87a3bca47e0f642d5ffe99ebd93975f3be6f37e43fb171c0f582067ee1",
+      "beforeSHA256": null
+    },
+    {
+      "path": "data/market-inventory-2026-10-10.json",
+      "bytes": 1631295,
+      "sha256": "96d518229b971bb0539ced668e6dd286be16f81fc25cf4b041d5b6dd0dbb6e39",
+      "beforeSHA256": "1a272a4bcfb63af8d426e48e1dcfa8862a96adc4afd48c4bc2c6dd5428b810c0"
+    },
+    {
+      "path": "qa/checkpoint93-market-fixture.json",
+      "bytes": 169590,
+      "sha256": "66211370041e236b81091b0a3d12c9db60b8cb7b10fead3b7de27c73050fdc61",
+      "beforeSHA256": null
+    },
+    {
+      "path": "tests/checkpoint91-market.test.ts",
+      "bytes": 5757,
+      "sha256": "946c1eb6249aa52299d986c7494e64e3817b856bd0667ecd42d1ee75430bec52",
+      "beforeSHA256": "bbbe090ffe174341997f4168b0a323d8082d634fc30d582ba7ffb896c51ffb55"
+    },
+    {
+      "path": "tests/checkpoint93-market.test.ts",
+      "bytes": 6275,
+      "sha256": "85332fb4d43212d42b54d93775faba01add48148a993922b76985961dfd6314d",
+      "beforeSHA256": null
+    },
+    {
+      "path": "tests/helpers/checkpoint91-market-history.ts",
+      "bytes": 1683,
+      "sha256": "cf825027a6c700c2dd09fb92c8748586f961ff52bcd40899d4c427cda6f6323c",
+      "beforeSHA256": "2681aa746c3419b50960d0e4d3d56389b8d77faf5718bf01ed8cdef5567c186a"
+    },
+    {
+      "path": "tests/helpers/checkpoint93-market-history.ts",
+      "bytes": 2691,
+      "sha256": "a2c4fdabcec1e2846311c7e7be5a765650de5d7884d9f5fc9ed867c7c27e2a13",
+      "beforeSHA256": null
+    }
+  ],
+  "applicationChanged": false,
+  "scope": "One held market lead; exact history adapter and tests; no notes or runtime-source changes",
+  "reviewRevision": "Negative mutation deliberately replaces a legacy never[] trim field through Object.assign; does not loosen application types or rejection assertion."
+}

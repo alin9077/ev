@@ -1,0 +1,6359 @@
+{
+  "title": "Independent Roadmark road-scooter integration audit",
+  "auditedAt": "2026-10-10T12:00:45.797757+00:00",
+  "scope": "Read-only actual catalogue reader audit of five standard Australian configurations against captured evidence; no app edits or new web/physical-stock verification. Source publication assertions remain conditional.",
+  "summary": {
+    "configurations": 5,
+    "mappedFields": 331,
+    "mappedFieldsPassed": 331,
+    "sourceRegistryEntries": 28,
+    "sourceRegistryPassed": 28,
+    "originalTextHashes": 54,
+    "derivedSnapshotHashes": 6,
+    "hashesPassed": 60,
+    "semanticChecks": 97,
+    "semanticChecksPassed": 97,
+    "sharedFeatureRows": 345,
+    "unknownSharedFeatureRows": 330,
+    "conditionalFeatureAliases": 15,
+    "conditionalFeatureAliasesPassed": 15,
+    "numericFactsExcluded": 126,
+    "blockingErrors": 0,
+    "warnings": 1
+  },
+  "findings": [
+    {
+      "severity": "warning",
+      "code": "missing_useful_sourced_feature_aliases",
+      "detail": [
+        {
+          "recordIds": [
+            "zeeho-ae4-au",
+            "zeeho-ae6-plus-au",
+            "zeeho-ae8-plus-au"
+          ],
+          "criteria": [
+            "phone_key",
+            "app_connectivity",
+            "ota_capability_scope",
+            "screens_hud"
+          ],
+          "sourceIds": [
+            "zeeho_ae4_au",
+            "zeeho_ae6_au",
+            "zeeho_ae8_au"
+          ],
+          "detail": "All three exact AU model pages describe Bluetooth phone unlock, Ride App live vehicle stats, OTA firmware and a 5-inch display. Current shared rows stay unknown. An exact sourced alias can describe only these functions, not passive unlock, full-vehicle OTA or HUD."
+        },
+        {
+          "recordIds": [
+            "segway-e300se-au"
+          ],
+          "criteria": [
+            "phone_key",
+            "app_connectivity",
+            "ota_capability_scope",
+            "screens_hud"
+          ],
+          "sourceIds": [
+            "segway_e300se_au"
+          ],
+          "detail": "Exact E300SE AU page lists AirLock, password unlock, app vehicle information/remote control, OTA, and an LED dashboard. Current shared rows stay unknown. Verify current service/subscription limits before adding aliases."
+        },
+        {
+          "recordIds": [
+            "zeeho-ae4-au",
+            "zeeho-ae6-plus-au",
+            "zeeho-ae8-plus-au",
+            "segway-e125s-au",
+            "segway-e300se-au"
+          ],
+          "criteria": [
+            "home_charging",
+            "driveaway_price"
+          ],
+          "sourceIds": [],
+          "detail": "Conditional mapped facts already contain qualified charge times and named dealer/distributor price bases, while shared rows remain unknown. Do not infer wall AC input/included charger or a nationally comparable price."
+        }
+      ]
+    },
+    {
+      "severity": "info",
+      "code": "generic_unknown_rows_are_passenger_oriented",
+      "detail": {
+        "detail": "Shared unknown rows still include ANCAP, child seats, cabin features, boot and towing. No inherited nonnull values detected. A class-appropriate display could hide irrelevant rows; this audit does not infer these features unavailable."
+      }
+    }
+  ],
+  "checks": [
+    {
+      "check": "exact_five_standard_configurations",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unique_variant_ids",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "live_five_variants",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "five_models_and_no_e110s_or_optional_colour_splits",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "held_e110s",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "evidence_packet_exact_copy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "331_unique_field_checks",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "identity:zeeho-ae4-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "motorcycle_class:zeeho-ae4-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no_inferred_year:zeeho-ae4-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no_duplicated_variant:zeeho-ae4-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_field_coverage:zeeho-ae4-au",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "extra": []
+      }
+    },
+    {
+      "check": "unique_destination_keys:zeeho-ae4-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no_unmapped_nonnull_facts:zeeho-ae4-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "all_nonnull_conditional_or_unavailable:zeeho-ae4-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unknown_critical_fields:zeeho-ae4-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "availability_advertising_only:zeeho-ae4-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "availability_provenance:zeeho-ae4-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "availability_physical_stock_caveat:zeeho-ae4-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "licensing_scoped:zeeho-ae4-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "identity:zeeho-ae6-plus-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "motorcycle_class:zeeho-ae6-plus-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no_inferred_year:zeeho-ae6-plus-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no_duplicated_variant:zeeho-ae6-plus-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_field_coverage:zeeho-ae6-plus-au",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "extra": []
+      }
+    },
+    {
+      "check": "unique_destination_keys:zeeho-ae6-plus-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no_unmapped_nonnull_facts:zeeho-ae6-plus-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "all_nonnull_conditional_or_unavailable:zeeho-ae6-plus-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unknown_critical_fields:zeeho-ae6-plus-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "availability_advertising_only:zeeho-ae6-plus-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "availability_provenance:zeeho-ae6-plus-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "availability_physical_stock_caveat:zeeho-ae6-plus-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "licensing_scoped:zeeho-ae6-plus-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "identity:zeeho-ae8-plus-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "motorcycle_class:zeeho-ae8-plus-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no_inferred_year:zeeho-ae8-plus-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no_duplicated_variant:zeeho-ae8-plus-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_field_coverage:zeeho-ae8-plus-au",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "extra": []
+      }
+    },
+    {
+      "check": "unique_destination_keys:zeeho-ae8-plus-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no_unmapped_nonnull_facts:zeeho-ae8-plus-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "all_nonnull_conditional_or_unavailable:zeeho-ae8-plus-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unknown_critical_fields:zeeho-ae8-plus-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "availability_advertising_only:zeeho-ae8-plus-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "availability_provenance:zeeho-ae8-plus-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "availability_physical_stock_caveat:zeeho-ae8-plus-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "licensing_scoped:zeeho-ae8-plus-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "identity:segway-e125s-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "motorcycle_class:segway-e125s-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no_inferred_year:segway-e125s-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no_duplicated_variant:segway-e125s-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_field_coverage:segway-e125s-au",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "extra": []
+      }
+    },
+    {
+      "check": "unique_destination_keys:segway-e125s-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no_unmapped_nonnull_facts:segway-e125s-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "all_nonnull_conditional_or_unavailable:segway-e125s-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unknown_critical_fields:segway-e125s-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "availability_advertising_only:segway-e125s-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "availability_provenance:segway-e125s-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "availability_physical_stock_caveat:segway-e125s-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "licensing_scoped:segway-e125s-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "identity:segway-e300se-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "motorcycle_class:segway-e300se-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no_inferred_year:segway-e300se-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no_duplicated_variant:segway-e300se-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "source_field_coverage:segway-e300se-au",
+      "passed": true,
+      "detail": {
+        "missing": [],
+        "extra": []
+      }
+    },
+    {
+      "check": "unique_destination_keys:segway-e300se-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no_unmapped_nonnull_facts:segway-e300se-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "all_nonnull_conditional_or_unavailable:segway-e300se-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unknown_critical_fields:segway-e300se-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "availability_advertising_only:segway-e300se-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "availability_provenance:segway-e300se-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "availability_physical_stock_caveat:segway-e300se-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "licensing_scoped:segway-e300se-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "all_54_logged_source_hashes_exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "numeric_conflict_held:segway-e125s-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "numeric_conflict_held:segway-e300se-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unspecified_initial_soc:segway-e125s-au:charge_time_to_100_hours",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unspecified_initial_soc:segway-e125s-au:charge_time_to_80_hours",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "marketed_seats_not_approval:segway-e125s-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "charger_localisation_hold:segway-e125s-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "cycle_life_not_warranty:segway-e125s-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unspecified_initial_soc:segway-e300se-au:charge_time_to_100_hours",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "unspecified_initial_soc:segway-e300se-au:charge_time_to_80_hours",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "marketed_seats_not_approval:segway-e300se-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "charger_localisation_hold:segway-e300se-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "cycle_life_not_warranty:segway-e300se-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "zeeho_arithmetic_not_declared_capacity:zeeho-ae4-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "zeeho_charge_windows_preserved:zeeho-ae4-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "zeeho_arithmetic_not_declared_capacity:zeeho-ae6-plus-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "zeeho_charge_windows_preserved:zeeho-ae6-plus-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "zeeho_arithmetic_not_declared_capacity:zeeho-ae8-plus-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "zeeho_charge_windows_preserved:zeeho-ae8-plus-au",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "e300se_range_pack_count_conflict_qualified",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "three_visually_reviewed_pdf_sources",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "15_exact_aliases_and_330_unknown_rows",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "teammoto_conflict_ad_unused",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "126_numeric_facts_not_rankable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "seven_discovery_rankings_exclude_scooters",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "fields": [
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.batteryPackCountIncluded",
+      "key": "battery_pack_count_included",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 1,
+      "unit": "packs",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae4_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.batteryOptionalAdditionalPacks",
+      "key": "battery_optional_additional_packs",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 1,
+      "unit": "packs",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae4_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.batteryRemovable",
+      "key": "battery_removable",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": true,
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae4_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.batteryVoltageDeclared",
+      "key": "battery_voltage_declared",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 74,
+      "unit": "V",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae4_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.batteryAmpHoursPerPack",
+      "key": "battery_amp_hours_per_pack",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 27,
+      "unit": "Ah",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae4_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.batteryCapacityDeclared",
+      "key": "battery_kwh",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "kWh",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.batteryEnergyArithmetic",
+      "key": "battery_energy_arithmetic",
+      "sourceStatus": "derived_not_declared",
+      "effectiveStatus": "conditional",
+      "value": 1.998,
+      "unit": "kWh",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae4_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.batteryGross",
+      "key": "battery_gross_kwh",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "kWh",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.batteryUsable",
+      "key": "battery_usable_kwh",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "kWh",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.batteryChemistry",
+      "key": "battery_chemistry",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": "lithium-ion",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae4_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.ratedPower",
+      "key": "rated_power_kw",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 1.6,
+      "unit": "kW",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae4_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.peakPower",
+      "key": "power_kw",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 3,
+      "unit": "kW",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae4_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.maxSpeedDeclared",
+      "key": "maximum_speed_kmh",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 45,
+      "unit": "km/h",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae4_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.rangeClaim",
+      "key": "range_km",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 63,
+      "unit": "km",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae4_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.rangeTestMethod",
+      "key": "range_test_method",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": "WMTC",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae4_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.rangeTestSpeed",
+      "key": "range_test_speed",
+      "sourceStatus": "not_listed",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "km/h",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae4_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.rangeTestRiderMass",
+      "key": "range_test_rider_mass",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 75,
+      "unit": "kg",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae4_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.rangeTestAmbientTemperature",
+      "key": "range_test_ambient_temperature",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 25,
+      "unit": "°C",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae4_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.chargerPowerReferenced",
+      "key": "charger_power_referenced",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 350,
+      "unit": "W",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae4_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.chargerIncludedCount",
+      "key": "charger_included_count",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.chargerWallInputVoltage",
+      "key": "charger_ac_input_voltage_v",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "V AC",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.chargerWallInputPower",
+      "key": "charger_ac_input_w",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "W",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.chargerConnector",
+      "key": "charger_connector",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.chargeTime20to80",
+      "key": "charge_time_20_80_hours",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 4,
+      "unit": "h",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae4_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.chargeTime0to100",
+      "key": "charge_time_0_100_hours",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 7.5,
+      "unit": "h",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae4_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.seatsMarketed",
+      "key": "seats_marketed",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "persons",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.approvedSeatCount",
+      "key": "approved_seat_count",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "persons",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.pillionApproval",
+      "key": "pillion_approval",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.brakeSystem",
+      "key": "brake_system",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": "CBS with front/rear hydraulic disc brakes",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae4_au",
+        "r10_scooter_zeeho_ae4_pdf"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.abs",
+      "key": "abs",
+      "sourceStatus": "verified",
+      "effectiveStatus": "unavailable",
+      "value": false,
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae4_au",
+        "r10_scooter_zeeho_ae4_pdf"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.underSeatStorage",
+      "key": "under_seat_storage_l",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 31,
+      "unit": "L",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae4_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.dimensions",
+      "key": "dimensions",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": [
+        1910,
+        743,
+        1154
+      ],
+      "unit": "mm",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae4_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.wheelbase",
+      "key": "wheelbase_mm",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 1340,
+      "unit": "mm",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae4_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.seatHeight",
+      "key": "seat_height_mm",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 770,
+      "unit": "mm",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae4_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.groundClearance",
+      "key": "ground_clearance_mm",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 140,
+      "unit": "mm",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae4_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.curbMassDeclared",
+      "key": "curb_mass_declared_kg",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 96,
+      "unit": "kg",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae4_pdf"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.maximumPayload",
+      "key": "payload_kg",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "kg",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.vehicleWarrantyYears",
+      "key": "vehicle_warranty_years",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 2,
+      "unit": "years",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae4_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.vehicleWarrantyDistance",
+      "key": "vehicle_warranty_distance",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": "unlimited",
+      "unit": "km",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae4_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.batteryWarrantyYears",
+      "key": "battery_warranty_years",
+      "sourceStatus": "dealer_claim",
+      "effectiveStatus": "conditional",
+      "value": 2,
+      "unit": "years",
+      "sourceIds": [
+        "r10_scooter_ace_ae4"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.batteryWarrantyCycles",
+      "key": "battery_warranty_cycles",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "cycles",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.batteryWarrantyRetention",
+      "key": "battery_warranty_retention",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "%",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.batteryCycleLifeClaim",
+      "key": "battery_cycle_life_claim",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.warrantyCommercialUseLimits",
+      "key": "warranty_commercial_use_limits",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.serviceIntervalDistance",
+      "key": "service_interval_distance",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "km",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.serviceIntervalTime",
+      "key": "service_interval_time",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "months",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.roadRegistrationEvidence",
+      "key": "road_registration_evidence",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": "Australian distributor ride-away offer includes 12 months registration",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae4_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.adrApprovalNumber",
+      "key": "adr_approval_number",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.lCategoryApproval",
+      "key": "l_category_approval",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.licenceClaim",
+      "key": "licence_claim",
+      "sourceStatus": "source_claim",
+      "effectiveStatus": "conditional",
+      "value": "45 km/h restriction for moped-approved QLD and WA states",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae4_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.recommendedRideAwayPrice",
+      "key": "recommended_ride_away_price",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": {
+        "amount": 3990,
+        "currency": "AUD",
+        "registrationMonths": 12
+      },
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae4_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.motorType",
+      "key": "motor_type",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": "rear hub",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae4_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "facts.colours",
+      "key": "colours",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": [
+        "Velocity Grey",
+        "Helios Orange"
+      ],
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae4_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "normalized.dimensions.0",
+      "key": "length_mm",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 1910,
+      "unit": "mm",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae4_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "normalized.dimensions.1",
+      "key": "width_mm",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 743,
+      "unit": "mm",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae4_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "normalized.dimensions.2",
+      "key": "height_mm",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 1154,
+      "unit": "mm",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae4_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "normalized.price_aud",
+      "key": "price_aud",
+      "sourceStatus": null,
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "normalized.ac_kw",
+      "key": "ac_kw",
+      "sourceStatus": null,
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "normalized.dc_peak_kw",
+      "key": "dc_peak_kw",
+      "sourceStatus": null,
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "normalized.dc_10_80_min",
+      "key": "dc_10_80_min",
+      "sourceStatus": null,
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "normalized.kerb_weight_kg",
+      "key": "kerb_weight_kg",
+      "sourceStatus": null,
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "availability.advertisedDealerOffer",
+      "key": "advertised_dealer_offer_aud",
+      "sourceStatus": null,
+      "effectiveStatus": "conditional",
+      "value": 3990,
+      "unit": "AUD",
+      "sourceIds": [
+        "r10_scooter_everest_ae4",
+        "r10_scooter_ace_ae4"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "identity.vehicleType",
+      "key": "vehicle_type",
+      "sourceStatus": null,
+      "effectiveStatus": "conditional",
+      "value": "motor_scooter",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae4_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae4-au",
+      "variantId": "zeeho_ae4_au__20261010",
+      "sourceField": "identity.motorcycleSubtype",
+      "key": "motorcycle_subtype",
+      "sourceStatus": null,
+      "effectiveStatus": "conditional",
+      "value": "moped",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae4_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.batteryPackCountIncluded",
+      "key": "battery_pack_count_included",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 1,
+      "unit": "packs",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae6_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.batteryOptionalAdditionalPacks",
+      "key": "battery_optional_additional_packs",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 1,
+      "unit": "packs",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae6_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.batteryRemovable",
+      "key": "battery_removable",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": true,
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae6_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.batteryVoltageDeclared",
+      "key": "battery_voltage_declared",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 69,
+      "unit": "V",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae6_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.batteryAmpHoursPerPack",
+      "key": "battery_amp_hours_per_pack",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 27,
+      "unit": "Ah",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae6_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.batteryCapacityDeclared",
+      "key": "battery_kwh",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "kWh",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.batteryEnergyArithmetic",
+      "key": "battery_energy_arithmetic",
+      "sourceStatus": "derived_not_declared",
+      "effectiveStatus": "conditional",
+      "value": 1.863,
+      "unit": "kWh",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae6_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.batteryGross",
+      "key": "battery_gross_kwh",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "kWh",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.batteryUsable",
+      "key": "battery_usable_kwh",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "kWh",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.batteryChemistry",
+      "key": "battery_chemistry",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": "lithium-ion",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae6_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.ratedPower",
+      "key": "rated_power_kw",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 2.5,
+      "unit": "kW",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae6_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.peakPower",
+      "key": "power_kw",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 5.5,
+      "unit": "kW",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae6_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.maxSpeedDeclared",
+      "key": "maximum_speed_kmh",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 80,
+      "unit": "km/h",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae6_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.rangeClaim",
+      "key": "range_km",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 100,
+      "unit": "km",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae6_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.rangeTestMethod",
+      "key": "range_test_method",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": "constant speed 20 km/h",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae6_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.rangeTestSpeed",
+      "key": "range_test_speed",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 20,
+      "unit": "km/h",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae6_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.rangeTestRiderMass",
+      "key": "range_test_rider_mass",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 75,
+      "unit": "kg",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae6_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.rangeTestAmbientTemperature",
+      "key": "range_test_ambient_temperature",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 25,
+      "unit": "°C",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae6_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.chargerPowerReferenced",
+      "key": "charger_power_referenced",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 750,
+      "unit": "W",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae6_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.chargerIncludedCount",
+      "key": "charger_included_count",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.chargerWallInputVoltage",
+      "key": "charger_ac_input_voltage_v",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "V AC",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.chargerWallInputPower",
+      "key": "charger_ac_input_w",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "W",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.chargerConnector",
+      "key": "charger_connector",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.chargeTime20to80",
+      "key": "charge_time_20_80_hours",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 2,
+      "unit": "h",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae6_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.chargeTime0to100",
+      "key": "charge_time_0_100_hours",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 3.5,
+      "unit": "h",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae6_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.seatsMarketed",
+      "key": "seats_marketed",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "persons",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.approvedSeatCount",
+      "key": "approved_seat_count",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "persons",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.pillionApproval",
+      "key": "pillion_approval",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.brakeSystem",
+      "key": "brake_system",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": "CBS with front/rear hydraulic disc brakes",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae6_au",
+        "r10_scooter_zeeho_ae6_pdf"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.abs",
+      "key": "abs",
+      "sourceStatus": "verified",
+      "effectiveStatus": "unavailable",
+      "value": false,
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae6_au",
+        "r10_scooter_zeeho_ae6_pdf"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.underSeatStorage",
+      "key": "under_seat_storage_l",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "L",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.dimensions",
+      "key": "dimensions",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": [
+        1780,
+        730,
+        1090
+      ],
+      "unit": "mm",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae6_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.wheelbase",
+      "key": "wheelbase_mm",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 1260,
+      "unit": "mm",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae6_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.seatHeight",
+      "key": "seat_height_mm",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 735,
+      "unit": "mm",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae6_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.groundClearance",
+      "key": "ground_clearance_mm",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 130,
+      "unit": "mm",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae6_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.curbMassDeclared",
+      "key": "curb_mass_declared_kg",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 96,
+      "unit": "kg",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae6_pdf"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.maximumPayload",
+      "key": "payload_kg",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "kg",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.vehicleWarrantyYears",
+      "key": "vehicle_warranty_years",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 2,
+      "unit": "years",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae6_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.vehicleWarrantyDistance",
+      "key": "vehicle_warranty_distance",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": "unlimited",
+      "unit": "km",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae6_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.batteryWarrantyYears",
+      "key": "battery_warranty_years",
+      "sourceStatus": "dealer_claim",
+      "effectiveStatus": "conditional",
+      "value": 2,
+      "unit": "years",
+      "sourceIds": [
+        "r10_scooter_ace_ae6"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.batteryWarrantyCycles",
+      "key": "battery_warranty_cycles",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "cycles",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.batteryWarrantyRetention",
+      "key": "battery_warranty_retention",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "%",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.batteryCycleLifeClaim",
+      "key": "battery_cycle_life_claim",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.warrantyCommercialUseLimits",
+      "key": "warranty_commercial_use_limits",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.serviceIntervalDistance",
+      "key": "service_interval_distance",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "km",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.serviceIntervalTime",
+      "key": "service_interval_time",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "months",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.roadRegistrationEvidence",
+      "key": "road_registration_evidence",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": "Australian distributor ride-away offer includes 12 months registration",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae6_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.adrApprovalNumber",
+      "key": "adr_approval_number",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.lCategoryApproval",
+      "key": "l_category_approval",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.licenceClaim",
+      "key": "licence_claim",
+      "sourceStatus": "dealer_claim",
+      "effectiveStatus": "conditional",
+      "value": "R-E licence required",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_ace_ae6"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.recommendedRideAwayPrice",
+      "key": "recommended_ride_away_price",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": {
+        "amount": 5890,
+        "currency": "AUD",
+        "registrationMonths": 12
+      },
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae6_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.motorType",
+      "key": "motor_type",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": "side motor with integrated reducer",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae6_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "facts.colours",
+      "key": "colours",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": [
+        "Vibrant White/Neon",
+        "Slate Grey/Neon"
+      ],
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae6_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "normalized.dimensions.0",
+      "key": "length_mm",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 1780,
+      "unit": "mm",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae6_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "normalized.dimensions.1",
+      "key": "width_mm",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 730,
+      "unit": "mm",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae6_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "normalized.dimensions.2",
+      "key": "height_mm",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 1090,
+      "unit": "mm",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae6_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "normalized.price_aud",
+      "key": "price_aud",
+      "sourceStatus": null,
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "normalized.ac_kw",
+      "key": "ac_kw",
+      "sourceStatus": null,
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "normalized.dc_peak_kw",
+      "key": "dc_peak_kw",
+      "sourceStatus": null,
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "normalized.dc_10_80_min",
+      "key": "dc_10_80_min",
+      "sourceStatus": null,
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "normalized.kerb_weight_kg",
+      "key": "kerb_weight_kg",
+      "sourceStatus": null,
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "availability.advertisedDealerOffer",
+      "key": "advertised_dealer_offer_aud",
+      "sourceStatus": null,
+      "effectiveStatus": "conditional",
+      "value": 5890,
+      "unit": "AUD",
+      "sourceIds": [
+        "r10_scooter_everest_ae6",
+        "r10_scooter_ace_ae6"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "identity.vehicleType",
+      "key": "vehicle_type",
+      "sourceStatus": null,
+      "effectiveStatus": "conditional",
+      "value": "motor_scooter",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae6_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae6-plus-au",
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "sourceField": "identity.motorcycleSubtype",
+      "key": "motorcycle_subtype",
+      "sourceStatus": null,
+      "effectiveStatus": "conditional",
+      "value": "seated_motor_scooter",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae6_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.batteryPackCountIncluded",
+      "key": "battery_pack_count_included",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 2,
+      "unit": "packs",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae8_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.batteryOptionalAdditionalPacks",
+      "key": "battery_optional_additional_packs",
+      "sourceStatus": "not_listed",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "packs",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae8_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.batteryRemovable",
+      "key": "battery_removable",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": true,
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae8_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.batteryVoltageDeclared",
+      "key": "battery_voltage_declared",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 69,
+      "unit": "V",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae8_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.batteryAmpHoursPerPack",
+      "key": "battery_amp_hours_per_pack",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 27,
+      "unit": "Ah",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae8_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.batteryCapacityDeclared",
+      "key": "battery_kwh",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "kWh",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.batteryEnergyArithmetic",
+      "key": "battery_energy_arithmetic",
+      "sourceStatus": "derived_not_declared",
+      "effectiveStatus": "conditional",
+      "value": 3.726,
+      "unit": "kWh",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae8_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.batteryGross",
+      "key": "battery_gross_kwh",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "kWh",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.batteryUsable",
+      "key": "battery_usable_kwh",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "kWh",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.batteryChemistry",
+      "key": "battery_chemistry",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": "lithium-ion",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae8_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.ratedPower",
+      "key": "rated_power_kw",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 5,
+      "unit": "kW",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae8_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.peakPower",
+      "key": "power_kw",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 12.5,
+      "unit": "kW",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae8_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.maxSpeedDeclared",
+      "key": "maximum_speed_kmh",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 100,
+      "unit": "km/h",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae8_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.rangeClaim",
+      "key": "range_km",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 100,
+      "unit": "km",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae8_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.rangeTestMethod",
+      "key": "range_test_method",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": "WMTC",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae8_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.rangeTestSpeed",
+      "key": "range_test_speed",
+      "sourceStatus": "not_listed",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "km/h",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae8_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.rangeTestRiderMass",
+      "key": "range_test_rider_mass",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 75,
+      "unit": "kg",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae8_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.rangeTestAmbientTemperature",
+      "key": "range_test_ambient_temperature",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 25,
+      "unit": "°C",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae8_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.chargerPowerReferenced",
+      "key": "charger_power_referenced",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 750,
+      "unit": "W",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae8_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.chargerIncludedCount",
+      "key": "charger_included_count",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.chargerWallInputVoltage",
+      "key": "charger_ac_input_voltage_v",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "V AC",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.chargerWallInputPower",
+      "key": "charger_ac_input_w",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "W",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.chargerConnector",
+      "key": "charger_connector",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.chargeTime20to80",
+      "key": "charge_time_20_80_hours",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 3,
+      "unit": "h",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae8_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.chargeTime0to100",
+      "key": "charge_time_0_100_hours",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 4.5,
+      "unit": "h",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae8_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.seatsMarketed",
+      "key": "seats_marketed",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "persons",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.approvedSeatCount",
+      "key": "approved_seat_count",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "persons",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.pillionApproval",
+      "key": "pillion_approval",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.brakeSystem",
+      "key": "brake_system",
+      "sourceStatus": "verified_with_conflict",
+      "effectiveStatus": "conditional",
+      "value": "Bosch dual-channel ABS",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae8_au",
+        "r10_scooter_zeeho_ae8_pdf"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.abs",
+      "key": "abs",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": true,
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae8_au",
+        "r10_scooter_zeeho_ae8_pdf"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.underSeatStorage",
+      "key": "under_seat_storage_l",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "L",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.dimensions",
+      "key": "dimensions",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": [
+        1910,
+        743,
+        1154
+      ],
+      "unit": "mm",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae8_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.wheelbase",
+      "key": "wheelbase_mm",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 1380,
+      "unit": "mm",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae8_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.seatHeight",
+      "key": "seat_height_mm",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 785,
+      "unit": "mm",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae8_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.groundClearance",
+      "key": "ground_clearance_mm",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 152,
+      "unit": "mm",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae8_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.curbMassDeclared",
+      "key": "curb_mass_declared_kg",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 133,
+      "unit": "kg",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae8_pdf"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.maximumPayload",
+      "key": "payload_kg",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "kg",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.vehicleWarrantyYears",
+      "key": "vehicle_warranty_years",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 2,
+      "unit": "years",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae8_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.vehicleWarrantyDistance",
+      "key": "vehicle_warranty_distance",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": "unlimited",
+      "unit": "km",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae8_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.batteryWarrantyYears",
+      "key": "battery_warranty_years",
+      "sourceStatus": "dealer_claim",
+      "effectiveStatus": "conditional",
+      "value": 2,
+      "unit": "years",
+      "sourceIds": [
+        "r10_scooter_ace_ae8"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.batteryWarrantyCycles",
+      "key": "battery_warranty_cycles",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "cycles",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.batteryWarrantyRetention",
+      "key": "battery_warranty_retention",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "%",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.batteryCycleLifeClaim",
+      "key": "battery_cycle_life_claim",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.warrantyCommercialUseLimits",
+      "key": "warranty_commercial_use_limits",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.serviceIntervalDistance",
+      "key": "service_interval_distance",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "km",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.serviceIntervalTime",
+      "key": "service_interval_time",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "months",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.roadRegistrationEvidence",
+      "key": "road_registration_evidence",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": "Australian distributor ride-away offer includes 12 months registration",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae8_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.adrApprovalNumber",
+      "key": "adr_approval_number",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.lCategoryApproval",
+      "key": "l_category_approval",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.licenceClaim",
+      "key": "licence_claim",
+      "sourceStatus": "dealer_claim",
+      "effectiveStatus": "conditional",
+      "value": "R-E licence required",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_ace_ae8"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.recommendedRideAwayPrice",
+      "key": "recommended_ride_away_price",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": {
+        "amount": 7890,
+        "currency": "AUD",
+        "registrationMonths": 12
+      },
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae8_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.motorType",
+      "key": "motor_type",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": "Z-CORE mid motor with Continental belt final drive",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae8_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.colours",
+      "key": "colours",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": [
+        "Pearl White/Blue"
+      ],
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae8_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.rideModes",
+      "key": "ride_modes",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": [
+        "ECO",
+        "STREET",
+        "SPORT"
+      ],
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae8_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.boostConditions",
+      "key": "boost_conditions",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": {
+        "minimumSpeedKmh": 80,
+        "maximumDurationSeconds": 30
+      },
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae8_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "facts.reverseAssist",
+      "key": "reverse_assist",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": true,
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae8_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "normalized.dimensions.0",
+      "key": "length_mm",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 1910,
+      "unit": "mm",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae8_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "normalized.dimensions.1",
+      "key": "width_mm",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 743,
+      "unit": "mm",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae8_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "normalized.dimensions.2",
+      "key": "height_mm",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 1154,
+      "unit": "mm",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae8_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "normalized.price_aud",
+      "key": "price_aud",
+      "sourceStatus": null,
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "normalized.ac_kw",
+      "key": "ac_kw",
+      "sourceStatus": null,
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "normalized.dc_peak_kw",
+      "key": "dc_peak_kw",
+      "sourceStatus": null,
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "normalized.dc_10_80_min",
+      "key": "dc_10_80_min",
+      "sourceStatus": null,
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "normalized.kerb_weight_kg",
+      "key": "kerb_weight_kg",
+      "sourceStatus": null,
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "availability.advertisedDealerOffer",
+      "key": "advertised_dealer_offer_aud",
+      "sourceStatus": null,
+      "effectiveStatus": "conditional",
+      "value": 7890,
+      "unit": "AUD",
+      "sourceIds": [
+        "r10_scooter_everest_ae8",
+        "r10_scooter_ace_ae8"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "identity.vehicleType",
+      "key": "vehicle_type",
+      "sourceStatus": null,
+      "effectiveStatus": "conditional",
+      "value": "motor_scooter",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae8_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "zeeho-ae8-plus-au",
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "sourceField": "identity.motorcycleSubtype",
+      "key": "motorcycle_subtype",
+      "sourceStatus": null,
+      "effectiveStatus": "conditional",
+      "value": "seated_motor_scooter",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_zeeho_ae8_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.manufacturerWebProductCode",
+      "key": "manufacturer_web_product_code",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": "K02420-1",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_segway_compare_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.batteryPackCountIncluded",
+      "key": "battery_pack_count_included",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 2,
+      "unit": "packs",
+      "sourceIds": [
+        "r10_scooter_segway_e125s_au",
+        "r10_scooter_ace_e125s"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.batteryOptionalAdditionalPacks",
+      "key": "battery_optional_additional_packs",
+      "sourceStatus": "not_listed",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "packs",
+      "sourceIds": [
+        "r10_scooter_segway_e125s_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.batteryRemovable",
+      "key": "battery_removable",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": true,
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_segway_e125s_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.batteryVoltageDeclared",
+      "key": "battery_voltage_declared",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 48,
+      "unit": "V",
+      "sourceIds": [
+        "r10_scooter_segway_e125s_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.batteryAmpHoursPerPack",
+      "key": "battery_amp_hours_per_pack",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 30,
+      "unit": "Ah",
+      "sourceIds": [
+        "r10_scooter_segway_e125s_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.batteryCapacityDeclared",
+      "key": "battery_kwh",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 2.88,
+      "unit": "kWh",
+      "sourceIds": [
+        "r10_scooter_segway_e125s_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.batteryGross",
+      "key": "battery_gross_kwh",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "kWh",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.batteryUsable",
+      "key": "battery_usable_kwh",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "kWh",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.batteryChemistry",
+      "key": "battery_chemistry",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": "lithium-ion",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_segway_e125s_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.batteryMassPerPack",
+      "key": "battery_mass_per_pack",
+      "sourceStatus": "source_claim",
+      "effectiveStatus": "conditional",
+      "value": 11,
+      "unit": "kg",
+      "sourceIds": [
+        "r10_scooter_segway_compare_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.batteryCycleLifeClaim",
+      "key": "battery_cycle_life_claim",
+      "sourceStatus": "ambiguous_source_notation",
+      "effectiveStatus": "conditional",
+      "value": "800@80%SOC",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_segway_compare_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.batteryWarrantyRetention",
+      "key": "battery_warranty_retention",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "%",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.batteryWarrantyCycles",
+      "key": "battery_warranty_cycles",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "cycles",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.ratedPower",
+      "key": "rated_power_kw",
+      "sourceStatus": "source_claim",
+      "effectiveStatus": "conditional",
+      "value": 1,
+      "unit": "kW",
+      "sourceIds": [
+        "r10_scooter_segway_compare_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.peakPower",
+      "key": "power_kw",
+      "sourceStatus": "verified_with_conflict",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "kW",
+      "sourceIds": [
+        "r10_scooter_segway_e125s_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.maxSpeedDeclared",
+      "key": "maximum_speed_kmh",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 45,
+      "unit": "km/h",
+      "sourceIds": [
+        "r10_scooter_segway_e125s_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.rangeClaim",
+      "key": "range_km",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 108,
+      "unit": "km",
+      "sourceIds": [
+        "r10_scooter_segway_e125s_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.rangeWmtcClaim",
+      "key": "range_wmtc_km",
+      "sourceStatus": "au_table_scope_caveat",
+      "effectiveStatus": "conditional",
+      "value": 81,
+      "unit": "km",
+      "sourceIds": [
+        "r10_scooter_segway_compare_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.rangeTestMethod",
+      "key": "range_test_method",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_segway_e125s_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.rangeTestSpeed",
+      "key": "range_test_speed",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "km/h",
+      "sourceIds": [
+        "r10_scooter_segway_e125s_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.rangeTestRiderMass",
+      "key": "range_test_rider_mass",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "kg",
+      "sourceIds": [
+        "r10_scooter_segway_e125s_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.rangeTestAmbientTemperature",
+      "key": "range_test_ambient_temperature",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "°C",
+      "sourceIds": [
+        "r10_scooter_segway_e125s_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.chargerDcOutput",
+      "key": "charger_dc_output",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": {
+        "voltageV": 54.2,
+        "currentA": 20
+      },
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_segway_compare_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.chargerIncludedCount",
+      "key": "charger_included_count",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.chargerWallInputVoltage",
+      "key": "charger_ac_input_voltage_v",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "V AC",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.chargerWallInputPower",
+      "key": "charger_ac_input_w",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "W",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.chargerConnector",
+      "key": "charger_connector",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.chargeTimeTo100",
+      "key": "charge_time_to_100_hours",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 4,
+      "unit": "h",
+      "sourceIds": [
+        "r10_scooter_segway_e125s_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.chargeTimeTo80",
+      "key": "charge_time_to_80_hours",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 2.4,
+      "unit": "h",
+      "sourceIds": [
+        "r10_scooter_segway_e125s_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.seatsMarketed",
+      "key": "seats_marketed",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 2,
+      "unit": "persons",
+      "sourceIds": [
+        "r10_scooter_segway_e125s_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.approvedSeatCount",
+      "key": "approved_seat_count",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "persons",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.pillionApproval",
+      "key": "pillion_approval",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.brakeSystem",
+      "key": "brake_system",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": "dual-channel ABS + EABS, front/rear hydraulic discs",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_segway_e125s_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.abs",
+      "key": "abs",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": true,
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_segway_e125s_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.tractionControl",
+      "key": "traction_control",
+      "sourceStatus": "verified",
+      "effectiveStatus": "unavailable",
+      "value": false,
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_segway_compare_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.underSeatStorage",
+      "key": "under_seat_storage_l",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 27,
+      "unit": "L",
+      "sourceIds": [
+        "r10_scooter_segway_e125s_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.underSeatStorageWithOptionalPack",
+      "key": "under_seat_storage_optional_pack_l",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "L",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.dimensions",
+      "key": "dimensions",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": [
+        1866,
+        675,
+        1175
+      ],
+      "unit": "mm",
+      "sourceIds": [
+        "r10_scooter_segway_e125s_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.wheelbase",
+      "key": "wheelbase_mm",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 1356,
+      "unit": "mm",
+      "sourceIds": [
+        "r10_scooter_segway_compare_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.seatHeight",
+      "key": "seat_height_mm",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 770,
+      "unit": "mm",
+      "sourceIds": [
+        "r10_scooter_segway_compare_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.groundClearance",
+      "key": "ground_clearance_mm",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 132,
+      "unit": "mm",
+      "sourceIds": [
+        "r10_scooter_segway_compare_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.curbMassDeclared",
+      "key": "curb_mass_declared_kg",
+      "sourceStatus": "source_claim",
+      "effectiveStatus": "conditional",
+      "value": 113,
+      "unit": "kg",
+      "sourceIds": [
+        "r10_scooter_segway_compare_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.maximumPayload",
+      "key": "payload_kg",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "kg",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.maximumLadenMassSourceClaim",
+      "key": "maximum_laden_mass_claim_kg",
+      "sourceStatus": "source_claim",
+      "effectiveStatus": "conditional",
+      "value": 280,
+      "unit": "kg",
+      "sourceIds": [
+        "r10_scooter_segway_compare_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.vehicleWarrantyYears",
+      "key": "vehicle_warranty_years",
+      "sourceStatus": "dealer_claim",
+      "effectiveStatus": "conditional",
+      "value": 2,
+      "unit": "years",
+      "sourceIds": [
+        "r10_scooter_ace_e125s"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.vehicleWarrantyDistance",
+      "key": "vehicle_warranty_distance",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "km",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.batteryWarrantyYears",
+      "key": "battery_warranty_years",
+      "sourceStatus": "dealer_claim",
+      "effectiveStatus": "conditional",
+      "value": 2,
+      "unit": "years",
+      "sourceIds": [
+        "r10_scooter_ace_e125s"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.warrantyCommercialUseLimits",
+      "key": "warranty_commercial_use_limits",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.serviceIntervalDistance",
+      "key": "service_interval_distance",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "km",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.serviceIntervalTime",
+      "key": "service_interval_time",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "months",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.serviceNetwork",
+      "key": "service_network",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": "Segway dealer workshop servicing and fault diagnosis",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_shop_segway"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.roadRegistrationEvidence",
+      "key": "road_registration_evidence",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": "Dealer names seated road-registerable E110S, E125S and E300SE",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_shop_segway"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.adrApprovalNumber",
+      "key": "adr_approval_number",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.lCategoryApproval",
+      "key": "l_category_approval",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.licenceClaim",
+      "key": "licence_claim",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": "Named on Queensland LAM Scheme list",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_qld_lams"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "facts.chargerDealerUnconfirmedInput",
+      "key": "charger_dealer_unconfirmed_input",
+      "sourceStatus": "au_scope_unresolved",
+      "effectiveStatus": "conditional",
+      "value": "200–240 V, 50–60 Hz, 6.5 A maximum; Type F plug; 1120 W labelled rated power",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_ace_e125s"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "normalized.dimensions.0",
+      "key": "length_mm",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 1866,
+      "unit": "mm",
+      "sourceIds": [
+        "r10_scooter_segway_e125s_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "normalized.dimensions.1",
+      "key": "width_mm",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 675,
+      "unit": "mm",
+      "sourceIds": [
+        "r10_scooter_segway_e125s_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "normalized.dimensions.2",
+      "key": "height_mm",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 1175,
+      "unit": "mm",
+      "sourceIds": [
+        "r10_scooter_segway_e125s_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "normalized.price_aud",
+      "key": "price_aud",
+      "sourceStatus": null,
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "normalized.ac_kw",
+      "key": "ac_kw",
+      "sourceStatus": null,
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "normalized.dc_peak_kw",
+      "key": "dc_peak_kw",
+      "sourceStatus": null,
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "normalized.dc_10_80_min",
+      "key": "dc_10_80_min",
+      "sourceStatus": null,
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "normalized.kerb_weight_kg",
+      "key": "kerb_weight_kg",
+      "sourceStatus": null,
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "availability.advertisedDealerOffer",
+      "key": "advertised_dealer_offer_aud",
+      "sourceStatus": null,
+      "effectiveStatus": "conditional",
+      "value": 6140,
+      "unit": "AUD",
+      "sourceIds": [
+        "r10_scooter_shop_e125s",
+        "r10_scooter_ace_e125s"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "identity.vehicleType",
+      "key": "vehicle_type",
+      "sourceStatus": null,
+      "effectiveStatus": "conditional",
+      "value": "motor_scooter",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_segway_e125s_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e125s-au",
+      "variantId": "segway_e125s_au__20261010",
+      "sourceField": "identity.motorcycleSubtype",
+      "key": "motorcycle_subtype",
+      "sourceStatus": null,
+      "effectiveStatus": "conditional",
+      "value": "moped",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_segway_e125s_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.manufacturerWebProductCode",
+      "key": "manufacturer_web_product_code",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": "K02440-1",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_segway_compare_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.batteryPackCountIncluded",
+      "key": "battery_pack_count_included",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 2,
+      "unit": "packs",
+      "sourceIds": [
+        "r10_scooter_segway_e300se_au",
+        "r10_scooter_ace_e300se"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.batteryOptionalAdditionalPacks",
+      "key": "battery_optional_additional_packs",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 1,
+      "unit": "packs",
+      "sourceIds": [
+        "r10_scooter_segway_e300se_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.batteryRemovable",
+      "key": "battery_removable",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": true,
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_shop_segway"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.batteryVoltageDeclared",
+      "key": "battery_voltage_declared",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 74,
+      "unit": "V",
+      "sourceIds": [
+        "r10_scooter_segway_e300se_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.batteryAmpHoursPerPack",
+      "key": "battery_amp_hours_per_pack",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 27,
+      "unit": "Ah",
+      "sourceIds": [
+        "r10_scooter_segway_e300se_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.batteryCapacityDeclared",
+      "key": "battery_kwh",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 4,
+      "unit": "kWh",
+      "sourceIds": [
+        "r10_scooter_segway_e300se_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.batteryGross",
+      "key": "battery_gross_kwh",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "kWh",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.batteryUsable",
+      "key": "battery_usable_kwh",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "kWh",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.batteryChemistry",
+      "key": "battery_chemistry",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": "lithium-ion",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_segway_e300se_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.batteryMassPerPack",
+      "key": "battery_mass_per_pack",
+      "sourceStatus": "source_claim",
+      "effectiveStatus": "conditional",
+      "value": 13,
+      "unit": "kg",
+      "sourceIds": [
+        "r10_scooter_segway_compare_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.batteryCycleLifeClaim",
+      "key": "battery_cycle_life_claim",
+      "sourceStatus": "ambiguous_source_notation",
+      "effectiveStatus": "conditional",
+      "value": "800@80%SOC",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_segway_compare_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.batteryWarrantyRetention",
+      "key": "battery_warranty_retention",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "%",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.batteryWarrantyCycles",
+      "key": "battery_warranty_cycles",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "cycles",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.ratedPower",
+      "key": "rated_power_kw",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 7.8,
+      "unit": "kW",
+      "sourceIds": [
+        "r10_scooter_segway_e300se_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.peakPower",
+      "key": "power_kw",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 10,
+      "unit": "kW",
+      "sourceIds": [
+        "r10_scooter_segway_e300se_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.maxSpeedDeclared",
+      "key": "maximum_speed_kmh",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 105,
+      "unit": "km/h",
+      "sourceIds": [
+        "r10_scooter_segway_e300se_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.rangeClaim",
+      "key": "range_km",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 130,
+      "unit": "km",
+      "sourceIds": [
+        "r10_scooter_segway_e300se_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.rangeWmtcClaim",
+      "key": "range_wmtc_km",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 85,
+      "unit": "km",
+      "sourceIds": [
+        "r10_scooter_segway_compare_au",
+        "r10_scooter_segway_e300se_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.rangeTestMethod",
+      "key": "range_test_method",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": "constant-speed 45 km/h until no power remains",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_segway_e300se_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.rangeTestSpeed",
+      "key": "range_test_speed",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 45,
+      "unit": "km/h",
+      "sourceIds": [
+        "r10_scooter_segway_e300se_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.rangeTestRiderMass",
+      "key": "range_test_rider_mass",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 75,
+      "unit": "kg",
+      "sourceIds": [
+        "r10_scooter_segway_e300se_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.rangeTestAmbientTemperature",
+      "key": "range_test_ambient_temperature",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 25,
+      "unit": "°C",
+      "sourceIds": [
+        "r10_scooter_segway_e300se_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.chargerDcOutput",
+      "key": "charger_dc_output",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": {
+        "voltageV": 84,
+        "currentA": 12
+      },
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_segway_compare_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.chargerIncludedCount",
+      "key": "charger_included_count",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.chargerWallInputVoltage",
+      "key": "charger_ac_input_voltage_v",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "V AC",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.chargerWallInputPower",
+      "key": "charger_ac_input_w",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "W",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.chargerConnector",
+      "key": "charger_connector",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.chargeTimeTo100",
+      "key": "charge_time_to_100_hours",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 5.5,
+      "unit": "h",
+      "sourceIds": [
+        "r10_scooter_segway_e300se_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.chargeTimeTo80",
+      "key": "charge_time_to_80_hours",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 4.5,
+      "unit": "h",
+      "sourceIds": [
+        "r10_scooter_segway_e300se_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.seatsMarketed",
+      "key": "seats_marketed",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 2,
+      "unit": "persons",
+      "sourceIds": [
+        "r10_scooter_segway_e300se_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.approvedSeatCount",
+      "key": "approved_seat_count",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "persons",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.pillionApproval",
+      "key": "pillion_approval",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.brakeSystem",
+      "key": "brake_system",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": "dual-channel ABS, front/rear hydraulic discs",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_segway_e300se_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.abs",
+      "key": "abs",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": true,
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_segway_e300se_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.tractionControl",
+      "key": "traction_control",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": true,
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_segway_e300se_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.underSeatStorage",
+      "key": "under_seat_storage_l",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 34,
+      "unit": "L",
+      "sourceIds": [
+        "r10_scooter_segway_e300se_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.underSeatStorageWithOptionalPack",
+      "key": "under_seat_storage_optional_pack_l",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 17,
+      "unit": "L",
+      "sourceIds": [
+        "r10_scooter_segway_e300se_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.dimensions",
+      "key": "dimensions",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": [
+        1855,
+        680,
+        1175
+      ],
+      "unit": "mm",
+      "sourceIds": [
+        "r10_scooter_segway_e300se_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.wheelbase",
+      "key": "wheelbase_mm",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 1360,
+      "unit": "mm",
+      "sourceIds": [
+        "r10_scooter_segway_compare_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.seatHeight",
+      "key": "seat_height_mm",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 780,
+      "unit": "mm",
+      "sourceIds": [
+        "r10_scooter_segway_compare_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.groundClearance",
+      "key": "ground_clearance_mm",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 148,
+      "unit": "mm",
+      "sourceIds": [
+        "r10_scooter_segway_compare_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.curbMassDeclared",
+      "key": "curb_mass_declared_kg",
+      "sourceStatus": "verified_with_conflict",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "kg",
+      "sourceIds": [
+        "r10_scooter_segway_e300se_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.maximumPayload",
+      "key": "payload_kg",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "kg",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.maximumLadenMassSourceClaim",
+      "key": "maximum_laden_mass_claim_kg",
+      "sourceStatus": "source_claim",
+      "effectiveStatus": "conditional",
+      "value": 280,
+      "unit": "kg",
+      "sourceIds": [
+        "r10_scooter_segway_compare_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.vehicleWarrantyYears",
+      "key": "vehicle_warranty_years",
+      "sourceStatus": "dealer_claim",
+      "effectiveStatus": "conditional",
+      "value": 2,
+      "unit": "years",
+      "sourceIds": [
+        "r10_scooter_ace_e300se"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.vehicleWarrantyDistance",
+      "key": "vehicle_warranty_distance",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "km",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.batteryWarrantyYears",
+      "key": "battery_warranty_years",
+      "sourceStatus": "dealer_claim",
+      "effectiveStatus": "conditional",
+      "value": 2,
+      "unit": "years",
+      "sourceIds": [
+        "r10_scooter_ace_e300se"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.warrantyCommercialUseLimits",
+      "key": "warranty_commercial_use_limits",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.serviceIntervalDistance",
+      "key": "service_interval_distance",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "km",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.serviceIntervalTime",
+      "key": "service_interval_time",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "months",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.serviceNetwork",
+      "key": "service_network",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": "Segway dealer workshop servicing and fault diagnosis",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_shop_segway"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.roadRegistrationEvidence",
+      "key": "road_registration_evidence",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": "Dealer names seated road-registerable E110S, E125S and E300SE",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_shop_segway"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.adrApprovalNumber",
+      "key": "adr_approval_number",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.lCategoryApproval",
+      "key": "l_category_approval",
+      "sourceStatus": "unknown",
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.licenceClaim",
+      "key": "licence_claim",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": "Named on Queensland LAM Scheme list",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_qld_lams"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "facts.chargerDealerUnconfirmedInput",
+      "key": "charger_dealer_unconfirmed_input",
+      "sourceStatus": "au_scope_unresolved",
+      "effectiveStatus": "conditional",
+      "value": "100–240 V, 50 Hz; Type F plug; 1008 W labelled rated power",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_ace_e300se"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "normalized.dimensions.0",
+      "key": "length_mm",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 1855,
+      "unit": "mm",
+      "sourceIds": [
+        "r10_scooter_segway_e300se_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "normalized.dimensions.1",
+      "key": "width_mm",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 680,
+      "unit": "mm",
+      "sourceIds": [
+        "r10_scooter_segway_e300se_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "normalized.dimensions.2",
+      "key": "height_mm",
+      "sourceStatus": "verified",
+      "effectiveStatus": "conditional",
+      "value": 1175,
+      "unit": "mm",
+      "sourceIds": [
+        "r10_scooter_segway_e300se_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "normalized.price_aud",
+      "key": "price_aud",
+      "sourceStatus": null,
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "normalized.ac_kw",
+      "key": "ac_kw",
+      "sourceStatus": null,
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "normalized.dc_peak_kw",
+      "key": "dc_peak_kw",
+      "sourceStatus": null,
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "normalized.dc_10_80_min",
+      "key": "dc_10_80_min",
+      "sourceStatus": null,
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "normalized.kerb_weight_kg",
+      "key": "kerb_weight_kg",
+      "sourceStatus": null,
+      "effectiveStatus": "not_verified",
+      "value": null,
+      "unit": "",
+      "sourceIds": [],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "availability.advertisedDealerOffer",
+      "key": "advertised_dealer_offer_aud",
+      "sourceStatus": null,
+      "effectiveStatus": "conditional",
+      "value": 8140,
+      "unit": "AUD",
+      "sourceIds": [
+        "r10_scooter_shop_e300se",
+        "r10_scooter_ace_e300se"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "identity.vehicleType",
+      "key": "vehicle_type",
+      "sourceStatus": null,
+      "effectiveStatus": "conditional",
+      "value": "motor_scooter",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_segway_e300se_au"
+      ],
+      "passed": true,
+      "errors": []
+    },
+    {
+      "recordId": "segway-e300se-au",
+      "variantId": "segway_e300se_au__20261010",
+      "sourceField": "identity.motorcycleSubtype",
+      "key": "motorcycle_subtype",
+      "sourceStatus": null,
+      "effectiveStatus": "conditional",
+      "value": "seated_motor_scooter",
+      "unit": "",
+      "sourceIds": [
+        "r10_scooter_segway_e300se_au"
+      ],
+      "passed": true,
+      "errors": []
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "segway_e125s_au",
+      "effectiveSourceId": "r10_scooter_segway_e125s_au",
+      "url": "https://au.segway.com/escooter/products/e110s-and-e125s.html",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "sourceId": "segway_e300se_au",
+      "effectiveSourceId": "r10_scooter_segway_e300se_au",
+      "url": "https://au.segway.com/escooter/products/e300se.html",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "sourceId": "zeeho_ae6_au",
+      "effectiveSourceId": "r10_scooter_zeeho_ae6_au",
+      "url": "https://www.cfmoto.com.au/model/ae6",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "sourceId": "zeeho_ae8_au",
+      "effectiveSourceId": "r10_scooter_zeeho_ae8_au",
+      "url": "https://www.cfmoto.com.au/model/ae8",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "sourceId": "zeeho_ae4_au",
+      "effectiveSourceId": "r10_scooter_zeeho_ae4_au",
+      "url": "https://www.cfmoto.com.au/model/ae4",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "sourceId": "shop_e125s",
+      "effectiveSourceId": "r10_scooter_shop_e125s",
+      "url": "https://www.scootershop.com.au/inventory/scooters/bike-segway-e125s-4",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "sourceId": "shop_e300se",
+      "effectiveSourceId": "r10_scooter_shop_e300se",
+      "url": "https://www.scootershop.com.au/inventory/scooters/bike-segway-e300se-5",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "sourceId": "everest_ae6",
+      "effectiveSourceId": "r10_scooter_everest_ae6",
+      "url": "https://everestmotorcycles.com/products/zeeho-ae6-electric-scooter",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "sourceId": "everest_ae8",
+      "effectiveSourceId": "r10_scooter_everest_ae8",
+      "url": "https://everestmotorcycles.com/products/zeeho-ae8-electric-scooter",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "sourceId": "everest_ae4",
+      "effectiveSourceId": "r10_scooter_everest_ae4",
+      "url": "https://everestmotorcycles.com/products/zeeho-ae4-electric-scooter",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "sourceId": "ace_zeeho",
+      "effectiveSourceId": "r10_scooter_ace_zeeho",
+      "url": "https://acescooters.com.au/scooters/zeeho/",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "sourceId": "zeeho_ae6_pdf",
+      "effectiveSourceId": "r10_scooter_zeeho_ae6_pdf",
+      "url": "https://mojomotorcycles.s3.ap-southeast-2.amazonaws.com/articles/6/37739/d3921f9e-1948-4c05-8834-9e8eae308381.pdf",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "sourceId": "zeeho_ae8_pdf",
+      "effectiveSourceId": "r10_scooter_zeeho_ae8_pdf",
+      "url": "https://mojomotorcycles.s3.ap-southeast-2.amazonaws.com/articles/6/37740/db7d0f5d-3c43-40e6-99b9-03c738482f02.pdf",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "sourceId": "zeeho_ae4_pdf",
+      "effectiveSourceId": "r10_scooter_zeeho_ae4_pdf",
+      "url": "https://mojomotorcycles.s3.ap-southeast-2.amazonaws.com/articles/6/37742/8271cf9d-df4f-428d-bd01-19c61198793c.pdf",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "sourceId": "segway_compare_au",
+      "effectiveSourceId": "r10_scooter_segway_compare_au",
+      "url": "https://au.segway.com/escooter/comparison.html",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "sourceId": "segway_e110s_store",
+      "effectiveSourceId": "r10_scooter_segway_e110s_store",
+      "url": "https://www.segway.com.au/collections/e-motobike/products/segway-ninebot-e110s-emotobike-black",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "sourceId": "ace_ae4",
+      "effectiveSourceId": "r10_scooter_ace_ae4",
+      "url": "https://acescooters.com.au/listings/zeeho-ae4/",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "sourceId": "aemc_e300se",
+      "effectiveSourceId": "r10_scooter_aemc_e300se",
+      "url": "https://australianelectricmotorco.com/motorcycles/segway-e300se/",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "sourceId": "central_e300se_review",
+      "effectiveSourceId": "r10_scooter_central_e300se_review",
+      "url": "https://www.scootercentral.com.au/news/is-this-the-answer-for-electric-vespa-buyers/",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "sourceId": "shop_segway",
+      "effectiveSourceId": "r10_scooter_shop_segway",
+      "url": "https://www.scootershop.com.au/segway",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "sourceId": "qld_lams",
+      "effectiveSourceId": "r10_scooter_qld_lams",
+      "url": "https://www.qld.gov.au/transport/licensing/motorcycles/learner-approved",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "sourceId": "segway_au_launch",
+      "effectiveSourceId": "r10_scooter_segway_au_launch",
+      "url": "https://www.prnewswire.com/apac/news-releases/segway-ninebot-e-motorbike-series-lands-in-australia-302227250.html",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "sourceId": "ace_e125s",
+      "effectiveSourceId": "r10_scooter_ace_e125s",
+      "url": "https://acescooters.com.au/listings/segway-ninebot-e125s/",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "sourceId": "ace_e300se",
+      "effectiveSourceId": "r10_scooter_ace_e300se",
+      "url": "https://acescooters.com.au/listings/segway-ninebot-e300se/",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "sourceId": "ace_ae6",
+      "effectiveSourceId": "r10_scooter_ace_ae6",
+      "url": "https://acescooters.com.au/listings/zeeho-ae6/",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "sourceId": "ace_ae8",
+      "effectiveSourceId": "r10_scooter_ace_ae8",
+      "url": "https://acescooters.com.au/listings/zeeho-ae8/",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "sourceId": "teammoto_ae8",
+      "effectiveSourceId": "r10_scooter_teammoto_ae8",
+      "url": "https://www.teammoto.com.au/new-bikes/for-sale/cfmoto/2024-cf-moto-150cc-150-zeeho-ae8/2024/3760256",
+      "passed": true,
+      "errors": []
+    },
+    {
+      "sourceId": "zeeho_range_au",
+      "effectiveSourceId": "r10_scooter_zeeho_range_au",
+      "url": "https://www.cfmoto.com.au/zeeho",
+      "passed": true,
+      "errors": []
+    }
+  ],
+  "sourceHashes": [
+    {
+      "sourceId": "segway_e125s_au",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/segway_e125s_au.html",
+      "sha256": "6333590477943e83d65f98428adfae305a5f176c6e1b6adc3450671550859023",
+      "kind": "original",
+      "actualSha256": "6333590477943e83d65f98428adfae305a5f176c6e1b6adc3450671550859023",
+      "passed": true
+    },
+    {
+      "sourceId": "segway_e125s_au",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/segway_e125s_au.txt",
+      "sha256": "efb3158b8d3a561614cffa34c17ec052b634fec18104a1da6f05b384498e00da",
+      "kind": "text",
+      "actualSha256": "efb3158b8d3a561614cffa34c17ec052b634fec18104a1da6f05b384498e00da",
+      "passed": true
+    },
+    {
+      "sourceId": "segway_e125s_au",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/segway_e125s_au.embedded.json",
+      "sha256": "1d6e7a7dec6544b2b948af51fbfc8430005a026d6394ea2cf3f737268cbdb4ed",
+      "kind": "derived",
+      "actualSha256": "1d6e7a7dec6544b2b948af51fbfc8430005a026d6394ea2cf3f737268cbdb4ed",
+      "passed": true
+    },
+    {
+      "sourceId": "segway_e300se_au",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/segway_e300se_au.html",
+      "sha256": "816bedd33bedd67cf90c5810f49d123b908ea15d132de65b7dd7161f75bc921b",
+      "kind": "original",
+      "actualSha256": "816bedd33bedd67cf90c5810f49d123b908ea15d132de65b7dd7161f75bc921b",
+      "passed": true
+    },
+    {
+      "sourceId": "segway_e300se_au",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/segway_e300se_au.txt",
+      "sha256": "6d8c515612d4d010f9f6322afa69bb543b93f124cbc34541b8e7c51377726575",
+      "kind": "text",
+      "actualSha256": "6d8c515612d4d010f9f6322afa69bb543b93f124cbc34541b8e7c51377726575",
+      "passed": true
+    },
+    {
+      "sourceId": "segway_e300se_au",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/segway_e300se_au.embedded.json",
+      "sha256": "4b43476adbf6f42488bcc7b0bd1380a9b1e96b44729ed7c0cb55e10d8ddfa1ed",
+      "kind": "derived",
+      "actualSha256": "4b43476adbf6f42488bcc7b0bd1380a9b1e96b44729ed7c0cb55e10d8ddfa1ed",
+      "passed": true
+    },
+    {
+      "sourceId": "zeeho_ae6_au",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/zeeho_ae6_au.html",
+      "sha256": "fb6a02965e13ece19f5d09f97efb41c662d3a19ba900439443626648e9299665",
+      "kind": "original",
+      "actualSha256": "fb6a02965e13ece19f5d09f97efb41c662d3a19ba900439443626648e9299665",
+      "passed": true
+    },
+    {
+      "sourceId": "zeeho_ae6_au",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/zeeho_ae6_au.txt",
+      "sha256": "e10bda3b9956d919e1e9a18d73aec4b461ea4028ff000b956e9a9a695c8bd19a",
+      "kind": "text",
+      "actualSha256": "e10bda3b9956d919e1e9a18d73aec4b461ea4028ff000b956e9a9a695c8bd19a",
+      "passed": true
+    },
+    {
+      "sourceId": "zeeho_ae8_au",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/zeeho_ae8_au.html",
+      "sha256": "1e7d872e3774064c99005ab80403b623d164da51cff55242b3141591d9bab403",
+      "kind": "original",
+      "actualSha256": "1e7d872e3774064c99005ab80403b623d164da51cff55242b3141591d9bab403",
+      "passed": true
+    },
+    {
+      "sourceId": "zeeho_ae8_au",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/zeeho_ae8_au.txt",
+      "sha256": "dc7ecbfd8f96ca64f3edf2b9c2ca1169ac1106d65107898b30295751f222f32d",
+      "kind": "text",
+      "actualSha256": "dc7ecbfd8f96ca64f3edf2b9c2ca1169ac1106d65107898b30295751f222f32d",
+      "passed": true
+    },
+    {
+      "sourceId": "zeeho_ae4_au",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/zeeho_ae4_au.html",
+      "sha256": "e3c0f6f2c43b08d2a7eaacf0183c1f6edfba33173d061e9e94b843ad1a311b32",
+      "kind": "original",
+      "actualSha256": "e3c0f6f2c43b08d2a7eaacf0183c1f6edfba33173d061e9e94b843ad1a311b32",
+      "passed": true
+    },
+    {
+      "sourceId": "zeeho_ae4_au",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/zeeho_ae4_au.txt",
+      "sha256": "97151ea1b60a2f8ac80abf3aab5c7705043463e681658d2c10b903cb0fa57a7a",
+      "kind": "text",
+      "actualSha256": "97151ea1b60a2f8ac80abf3aab5c7705043463e681658d2c10b903cb0fa57a7a",
+      "passed": true
+    },
+    {
+      "sourceId": "shop_e125s",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/shop_e125s.html",
+      "sha256": "e0f0584caf972209f970a960fe3f6ee3351790dc7393567df560053287e00083",
+      "kind": "original",
+      "actualSha256": "e0f0584caf972209f970a960fe3f6ee3351790dc7393567df560053287e00083",
+      "passed": true
+    },
+    {
+      "sourceId": "shop_e125s",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/shop_e125s.txt",
+      "sha256": "7757d73f6a9d5c5599c7104fc0938c203e665b6de0f94f8a133bc0e0ad2e9916",
+      "kind": "text",
+      "actualSha256": "7757d73f6a9d5c5599c7104fc0938c203e665b6de0f94f8a133bc0e0ad2e9916",
+      "passed": true
+    },
+    {
+      "sourceId": "shop_e300se",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/shop_e300se.html",
+      "sha256": "fe8aca78a4a5bec6a7d82c4c1719dfd64a6a3a2ae8717d34e6d4a19e067ba820",
+      "kind": "original",
+      "actualSha256": "fe8aca78a4a5bec6a7d82c4c1719dfd64a6a3a2ae8717d34e6d4a19e067ba820",
+      "passed": true
+    },
+    {
+      "sourceId": "shop_e300se",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/shop_e300se.txt",
+      "sha256": "b632a2a9e7051254e9161796690a640c15911203fefccb76e8955a530e4d72a0",
+      "kind": "text",
+      "actualSha256": "b632a2a9e7051254e9161796690a640c15911203fefccb76e8955a530e4d72a0",
+      "passed": true
+    },
+    {
+      "sourceId": "everest_ae6",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/everest_ae6.html",
+      "sha256": "efd705dee5e7d7f70fb844400c4e058ce57a345243106b569525ce3a102e10c0",
+      "kind": "original",
+      "actualSha256": "efd705dee5e7d7f70fb844400c4e058ce57a345243106b569525ce3a102e10c0",
+      "passed": true
+    },
+    {
+      "sourceId": "everest_ae6",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/everest_ae6.txt",
+      "sha256": "909f0a0c18f1f9cf442ed06393b7cbe94210dc0eede2fb29febe20331bfefe0b",
+      "kind": "text",
+      "actualSha256": "909f0a0c18f1f9cf442ed06393b7cbe94210dc0eede2fb29febe20331bfefe0b",
+      "passed": true
+    },
+    {
+      "sourceId": "everest_ae6",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/everest_ae6.product.json",
+      "sha256": "44141d0a11ab23027aa737f082473f315e22f0c71dec2cb920881627588ff8b2",
+      "kind": "derived",
+      "actualSha256": "44141d0a11ab23027aa737f082473f315e22f0c71dec2cb920881627588ff8b2",
+      "passed": true
+    },
+    {
+      "sourceId": "everest_ae8",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/everest_ae8.html",
+      "sha256": "8b892fa98195ac1ae328c2e16b0dc06c9ad299f248cf5b31693b9a0969aac2f6",
+      "kind": "original",
+      "actualSha256": "8b892fa98195ac1ae328c2e16b0dc06c9ad299f248cf5b31693b9a0969aac2f6",
+      "passed": true
+    },
+    {
+      "sourceId": "everest_ae8",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/everest_ae8.txt",
+      "sha256": "38c0380787e26b96c8f730383615ee488c7f4714842e3c65d0632c993977b741",
+      "kind": "text",
+      "actualSha256": "38c0380787e26b96c8f730383615ee488c7f4714842e3c65d0632c993977b741",
+      "passed": true
+    },
+    {
+      "sourceId": "everest_ae8",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/everest_ae8.product.json",
+      "sha256": "755f69f8eeccd343114f897913f7b7d5a3ac1af08b3f1f9e728794cfa124052a",
+      "kind": "derived",
+      "actualSha256": "755f69f8eeccd343114f897913f7b7d5a3ac1af08b3f1f9e728794cfa124052a",
+      "passed": true
+    },
+    {
+      "sourceId": "everest_ae4",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/everest_ae4.html",
+      "sha256": "20f35e7d25bee85a8a98047de283ff8e8ffa951caf9ac5772177d5860ab2957a",
+      "kind": "original",
+      "actualSha256": "20f35e7d25bee85a8a98047de283ff8e8ffa951caf9ac5772177d5860ab2957a",
+      "passed": true
+    },
+    {
+      "sourceId": "everest_ae4",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/everest_ae4.txt",
+      "sha256": "d077884b3cf0271a346c285d8f2086abd421440c2ea49b23fe2aa6fddecfa800",
+      "kind": "text",
+      "actualSha256": "d077884b3cf0271a346c285d8f2086abd421440c2ea49b23fe2aa6fddecfa800",
+      "passed": true
+    },
+    {
+      "sourceId": "everest_ae4",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/everest_ae4.product.json",
+      "sha256": "3308c0bf084cafb44a8a1b0093dfce2a67d58d82ec031d626277fbad023afdc3",
+      "kind": "derived",
+      "actualSha256": "3308c0bf084cafb44a8a1b0093dfce2a67d58d82ec031d626277fbad023afdc3",
+      "passed": true
+    },
+    {
+      "sourceId": "ace_zeeho",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/ace_zeeho.html",
+      "sha256": "1ebdcd4cbb94c8797d4a2bf13c72aa419cf39310edace15188d621c28f2d3345",
+      "kind": "original",
+      "actualSha256": "1ebdcd4cbb94c8797d4a2bf13c72aa419cf39310edace15188d621c28f2d3345",
+      "passed": true
+    },
+    {
+      "sourceId": "ace_zeeho",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/ace_zeeho.txt",
+      "sha256": "1ad88fea50bb5112e28b4606b242222cc68e5abbe9362dafadf648a65eb86ae2",
+      "kind": "text",
+      "actualSha256": "1ad88fea50bb5112e28b4606b242222cc68e5abbe9362dafadf648a65eb86ae2",
+      "passed": true
+    },
+    {
+      "sourceId": "zeeho_ae6_pdf",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/zeeho_ae6_pdf.pdf",
+      "sha256": "d4fd89c6b94de54d0fc1903f65968a8216c7f4be1cf14a363c3bd80592660901",
+      "kind": "original",
+      "actualSha256": "d4fd89c6b94de54d0fc1903f65968a8216c7f4be1cf14a363c3bd80592660901",
+      "passed": true
+    },
+    {
+      "sourceId": "zeeho_ae6_pdf",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/zeeho_ae6_pdf.txt",
+      "sha256": "0cab1601ce2e079a27d666001cf8f5f1aa97d409f123aa056bd0ec376e14cac6",
+      "kind": "text",
+      "actualSha256": "0cab1601ce2e079a27d666001cf8f5f1aa97d409f123aa056bd0ec376e14cac6",
+      "passed": true
+    },
+    {
+      "sourceId": "zeeho_ae8_pdf",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/zeeho_ae8_pdf.pdf",
+      "sha256": "031aeaae4cf5e4587957d958a8a167bd21ed49b0ab0f041bdf5cc2b5f53ef92b",
+      "kind": "original",
+      "actualSha256": "031aeaae4cf5e4587957d958a8a167bd21ed49b0ab0f041bdf5cc2b5f53ef92b",
+      "passed": true
+    },
+    {
+      "sourceId": "zeeho_ae8_pdf",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/zeeho_ae8_pdf.txt",
+      "sha256": "3dc546196a3cac8ebe27a66b222db62c1bcd36cc0255da8684ed26d5205d6a4d",
+      "kind": "text",
+      "actualSha256": "3dc546196a3cac8ebe27a66b222db62c1bcd36cc0255da8684ed26d5205d6a4d",
+      "passed": true
+    },
+    {
+      "sourceId": "zeeho_ae4_pdf",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/zeeho_ae4_pdf.pdf",
+      "sha256": "276c3a4ab04cb8487e4170cf58b4b1b060ef79e5826a418bfbf6a6708498d6c1",
+      "kind": "original",
+      "actualSha256": "276c3a4ab04cb8487e4170cf58b4b1b060ef79e5826a418bfbf6a6708498d6c1",
+      "passed": true
+    },
+    {
+      "sourceId": "zeeho_ae4_pdf",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/zeeho_ae4_pdf.txt",
+      "sha256": "25cd6cbef1629928dfdbf73f7fe537157a3cf93cf0097f2bb7359e2112b3e4dd",
+      "kind": "text",
+      "actualSha256": "25cd6cbef1629928dfdbf73f7fe537157a3cf93cf0097f2bb7359e2112b3e4dd",
+      "passed": true
+    },
+    {
+      "sourceId": "segway_compare_au",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/segway_compare_au.html",
+      "sha256": "8df377b78d20420871f0e33a2050c939ff7df18fccd295534cb49aa899b0ed7b",
+      "kind": "original",
+      "actualSha256": "8df377b78d20420871f0e33a2050c939ff7df18fccd295534cb49aa899b0ed7b",
+      "passed": true
+    },
+    {
+      "sourceId": "segway_compare_au",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/segway_compare_au.txt",
+      "sha256": "6fc2e8726c1c5af0856e47686faf71208896efeaa90a833c4c884e2e287c90d3",
+      "kind": "text",
+      "actualSha256": "6fc2e8726c1c5af0856e47686faf71208896efeaa90a833c4c884e2e287c90d3",
+      "passed": true
+    },
+    {
+      "sourceId": "segway_compare_au",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/segway_compare_au.embedded.json",
+      "sha256": "ae6f06caf526bf84d4844e59adf1b4aea37c97968cdd5e050917ae75d653b965",
+      "kind": "derived",
+      "actualSha256": "ae6f06caf526bf84d4844e59adf1b4aea37c97968cdd5e050917ae75d653b965",
+      "passed": true
+    },
+    {
+      "sourceId": "ace_ae4",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/ace_ae4.html",
+      "sha256": "d987d5ec051a3b5c53e16bb140f581acdc5e3d2f93cb9bc70e121e292b68d6a8",
+      "kind": "original",
+      "actualSha256": "d987d5ec051a3b5c53e16bb140f581acdc5e3d2f93cb9bc70e121e292b68d6a8",
+      "passed": true
+    },
+    {
+      "sourceId": "ace_ae4",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/ace_ae4.txt",
+      "sha256": "7161ffdde9952822c8381484ecfca2bed9aef73c5e80c4ab5be9310edbf84646",
+      "kind": "text",
+      "actualSha256": "7161ffdde9952822c8381484ecfca2bed9aef73c5e80c4ab5be9310edbf84646",
+      "passed": true
+    },
+    {
+      "sourceId": "aemc_e300se",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/aemc_e300se.html",
+      "sha256": "27ecd7c9b3d6e9105ff4d22b46858b157cf770f7bb4a1d436f5ec0e130ae21b3",
+      "kind": "original",
+      "actualSha256": "27ecd7c9b3d6e9105ff4d22b46858b157cf770f7bb4a1d436f5ec0e130ae21b3",
+      "passed": true
+    },
+    {
+      "sourceId": "aemc_e300se",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/aemc_e300se.txt",
+      "sha256": "85b0fa32679ffe1ce8a1322b47593dd68a23f0ee177d5bb008b76b71952a114a",
+      "kind": "text",
+      "actualSha256": "85b0fa32679ffe1ce8a1322b47593dd68a23f0ee177d5bb008b76b71952a114a",
+      "passed": true
+    },
+    {
+      "sourceId": "central_e300se_review",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/central_e300se_review.html",
+      "sha256": "c36d1944da6bdf9b52065532ae1d35b68d5037af327afbdbe963c0b86280146a",
+      "kind": "original",
+      "actualSha256": "c36d1944da6bdf9b52065532ae1d35b68d5037af327afbdbe963c0b86280146a",
+      "passed": true
+    },
+    {
+      "sourceId": "central_e300se_review",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/central_e300se_review.txt",
+      "sha256": "30f6adecfe4518abc232bcdf84560d3f317d021d86be33ada675b1fdbf74a51a",
+      "kind": "text",
+      "actualSha256": "30f6adecfe4518abc232bcdf84560d3f317d021d86be33ada675b1fdbf74a51a",
+      "passed": true
+    },
+    {
+      "sourceId": "shop_segway",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/shop_segway.html",
+      "sha256": "a85237f10c95b8e9ba9717afa9225bf8bad899d1ee43439bd629b757546cb924",
+      "kind": "original",
+      "actualSha256": "a85237f10c95b8e9ba9717afa9225bf8bad899d1ee43439bd629b757546cb924",
+      "passed": true
+    },
+    {
+      "sourceId": "shop_segway",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/shop_segway.txt",
+      "sha256": "c7286f3c9e0096f94dea4b3c718e77193f691ef0ee7f883e0ff705342b6064d1",
+      "kind": "text",
+      "actualSha256": "c7286f3c9e0096f94dea4b3c718e77193f691ef0ee7f883e0ff705342b6064d1",
+      "passed": true
+    },
+    {
+      "sourceId": "qld_lams",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/qld_lams.html",
+      "sha256": "aa48330238707e8624501c958287adf14bf6c9c0241785471e998fccefb12cd0",
+      "kind": "original",
+      "actualSha256": "aa48330238707e8624501c958287adf14bf6c9c0241785471e998fccefb12cd0",
+      "passed": true
+    },
+    {
+      "sourceId": "qld_lams",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/qld_lams.txt",
+      "sha256": "8f1bea51e57d7e9b96a61cb3628311426d0f7e20f55bbd56dc5fcba3329ecefc",
+      "kind": "text",
+      "actualSha256": "8f1bea51e57d7e9b96a61cb3628311426d0f7e20f55bbd56dc5fcba3329ecefc",
+      "passed": true
+    },
+    {
+      "sourceId": "segway_au_launch",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/segway_au_launch.html",
+      "sha256": "88165e5b7c5d9c3b6607f835fb60bf3246f5442c754e5788343738cf9537e1da",
+      "kind": "original",
+      "actualSha256": "88165e5b7c5d9c3b6607f835fb60bf3246f5442c754e5788343738cf9537e1da",
+      "passed": true
+    },
+    {
+      "sourceId": "segway_au_launch",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/segway_au_launch.txt",
+      "sha256": "0510accf522b6d1abe28df10471308403d838f553d59f4b48d04a2fb9b7309b3",
+      "kind": "text",
+      "actualSha256": "0510accf522b6d1abe28df10471308403d838f553d59f4b48d04a2fb9b7309b3",
+      "passed": true
+    },
+    {
+      "sourceId": "ace_e125s",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/ace_e125s.html",
+      "sha256": "3136e7dcbc5369c6bde09742f6cf3f2149b51e3d9b84821d5483cd09951e4cdc",
+      "kind": "original",
+      "actualSha256": "3136e7dcbc5369c6bde09742f6cf3f2149b51e3d9b84821d5483cd09951e4cdc",
+      "passed": true
+    },
+    {
+      "sourceId": "ace_e125s",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/ace_e125s.txt",
+      "sha256": "391b66faa65eb6c00f897fcda4bd1bb545e4ff1380c33f62d4350f9589d5f222",
+      "kind": "text",
+      "actualSha256": "391b66faa65eb6c00f897fcda4bd1bb545e4ff1380c33f62d4350f9589d5f222",
+      "passed": true
+    },
+    {
+      "sourceId": "ace_e300se",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/ace_e300se.html",
+      "sha256": "8ee80be441937c6582697b209f63dc376ef45d3ac34668d0195c4c6e1852dafe",
+      "kind": "original",
+      "actualSha256": "8ee80be441937c6582697b209f63dc376ef45d3ac34668d0195c4c6e1852dafe",
+      "passed": true
+    },
+    {
+      "sourceId": "ace_e300se",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/ace_e300se.txt",
+      "sha256": "3bce391e7ccfeeb3cff182c4c97101685334882489fbdc3ed1f3c30c3b7b9594",
+      "kind": "text",
+      "actualSha256": "3bce391e7ccfeeb3cff182c4c97101685334882489fbdc3ed1f3c30c3b7b9594",
+      "passed": true
+    },
+    {
+      "sourceId": "ace_ae6",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/ace_ae6.html",
+      "sha256": "89d78d55f3d210b03e563170335565da9b806a9957878fafe59b72e3aa64058e",
+      "kind": "original",
+      "actualSha256": "89d78d55f3d210b03e563170335565da9b806a9957878fafe59b72e3aa64058e",
+      "passed": true
+    },
+    {
+      "sourceId": "ace_ae6",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/ace_ae6.txt",
+      "sha256": "b170e3bc8d7a06173c2c667943b1986145a586b25b86fc29511914886dd1c72c",
+      "kind": "text",
+      "actualSha256": "b170e3bc8d7a06173c2c667943b1986145a586b25b86fc29511914886dd1c72c",
+      "passed": true
+    },
+    {
+      "sourceId": "ace_ae8",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/ace_ae8.html",
+      "sha256": "54d222cb402696199c7c8576ff18f04dfa91615fa133521dfd539aa373ea2522",
+      "kind": "original",
+      "actualSha256": "54d222cb402696199c7c8576ff18f04dfa91615fa133521dfd539aa373ea2522",
+      "passed": true
+    },
+    {
+      "sourceId": "ace_ae8",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/ace_ae8.txt",
+      "sha256": "3656730065c8f7e4638238310dc31a96f5726c75d2fa85786bf89588c828277c",
+      "kind": "text",
+      "actualSha256": "3656730065c8f7e4638238310dc31a96f5726c75d2fa85786bf89588c828277c",
+      "passed": true
+    },
+    {
+      "sourceId": "teammoto_ae8",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/teammoto_ae8.html",
+      "sha256": "91d08947a61f7bb6998cb370aaa5926f104802c7e501f14b03c9f6ade67da053",
+      "kind": "original",
+      "actualSha256": "91d08947a61f7bb6998cb370aaa5926f104802c7e501f14b03c9f6ade67da053",
+      "passed": true
+    },
+    {
+      "sourceId": "teammoto_ae8",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/teammoto_ae8.txt",
+      "sha256": "8ec9932d19325ce046a1dd07b489360b6d9561f45c427c37148a36afa8ebd0af",
+      "kind": "text",
+      "actualSha256": "8ec9932d19325ce046a1dd07b489360b6d9561f45c427c37148a36afa8ebd0af",
+      "passed": true
+    },
+    {
+      "sourceId": "zeeho_range_au",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/zeeho_range_au.html",
+      "sha256": "bd0f6036bc10d5fcf31f3754ffa9252ed23ec973049cf08d52465b66a6460468",
+      "kind": "original",
+      "actualSha256": "bd0f6036bc10d5fcf31f3754ffa9252ed23ec973049cf08d52465b66a6460468",
+      "passed": true
+    },
+    {
+      "sourceId": "zeeho_range_au",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-sources/zeeho_range_au.txt",
+      "sha256": "f0a4ae2ee4579fdc4c81579b501fa8483a921b8b7b0580a5b2e88bbf8f2e8755",
+      "kind": "text",
+      "actualSha256": "f0a4ae2ee4579fdc4c81579b501fa8483a921b8b7b0580a5b2e88bbf8f2e8755",
+      "passed": true
+    }
+  ],
+  "rankingChecks": [
+    {
+      "key": "length_mm",
+      "rankedScooterIds": []
+    },
+    {
+      "key": "range_km",
+      "rankedScooterIds": []
+    },
+    {
+      "key": "price_aud",
+      "rankedScooterIds": []
+    },
+    {
+      "key": "dc_charge_time_min",
+      "rankedScooterIds": []
+    },
+    {
+      "key": "towing_braked_kg",
+      "rankedScooterIds": []
+    },
+    {
+      "key": "seats",
+      "rankedScooterIds": []
+    },
+    {
+      "key": "boot_l",
+      "rankedScooterIds": []
+    }
+  ],
+  "featureAliases": [
+    {
+      "variantId": "zeeho_ae4_au__20261010",
+      "criterion": "storage",
+      "passed": true,
+      "errors": [],
+      "sourceIds": [
+        "r10_scooter_zeeho_ae4_au"
+      ]
+    },
+    {
+      "variantId": "zeeho_ae4_au__20261010",
+      "criterion": "warranty_service",
+      "passed": true,
+      "errors": [],
+      "sourceIds": [
+        "r10_scooter_zeeho_ae4_au",
+        "r10_scooter_ace_ae4"
+      ]
+    },
+    {
+      "variantId": "zeeho_ae4_au__20261010",
+      "criterion": "battery_chemistry",
+      "passed": true,
+      "errors": [],
+      "sourceIds": [
+        "r10_scooter_zeeho_ae4_au"
+      ]
+    },
+    {
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "criterion": "warranty_service",
+      "passed": true,
+      "errors": [],
+      "sourceIds": [
+        "r10_scooter_zeeho_ae6_au",
+        "r10_scooter_ace_ae6"
+      ]
+    },
+    {
+      "variantId": "zeeho_ae6_plus_au__20261010",
+      "criterion": "battery_chemistry",
+      "passed": true,
+      "errors": [],
+      "sourceIds": [
+        "r10_scooter_zeeho_ae6_au"
+      ]
+    },
+    {
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "criterion": "warranty_service",
+      "passed": true,
+      "errors": [],
+      "sourceIds": [
+        "r10_scooter_zeeho_ae8_au",
+        "r10_scooter_ace_ae8"
+      ]
+    },
+    {
+      "variantId": "zeeho_ae8_plus_au__20261010",
+      "criterion": "battery_chemistry",
+      "passed": true,
+      "errors": [],
+      "sourceIds": [
+        "r10_scooter_zeeho_ae8_au"
+      ]
+    },
+    {
+      "variantId": "segway_e125s_au__20261010",
+      "criterion": "storage",
+      "passed": true,
+      "errors": [],
+      "sourceIds": [
+        "r10_scooter_segway_e125s_au"
+      ]
+    },
+    {
+      "variantId": "segway_e125s_au__20261010",
+      "criterion": "warranty_service",
+      "passed": true,
+      "errors": [],
+      "sourceIds": [
+        "r10_scooter_ace_e125s"
+      ]
+    },
+    {
+      "variantId": "segway_e125s_au__20261010",
+      "criterion": "service_network",
+      "passed": true,
+      "errors": [],
+      "sourceIds": [
+        "r10_scooter_shop_segway"
+      ]
+    },
+    {
+      "variantId": "segway_e125s_au__20261010",
+      "criterion": "battery_chemistry",
+      "passed": true,
+      "errors": [],
+      "sourceIds": [
+        "r10_scooter_segway_e125s_au"
+      ]
+    },
+    {
+      "variantId": "segway_e300se_au__20261010",
+      "criterion": "storage",
+      "passed": true,
+      "errors": [],
+      "sourceIds": [
+        "r10_scooter_segway_e300se_au"
+      ]
+    },
+    {
+      "variantId": "segway_e300se_au__20261010",
+      "criterion": "warranty_service",
+      "passed": true,
+      "errors": [],
+      "sourceIds": [
+        "r10_scooter_ace_e300se"
+      ]
+    },
+    {
+      "variantId": "segway_e300se_au__20261010",
+      "criterion": "service_network",
+      "passed": true,
+      "errors": [],
+      "sourceIds": [
+        "r10_scooter_shop_segway"
+      ]
+    },
+    {
+      "variantId": "segway_e300se_au__20261010",
+      "criterion": "battery_chemistry",
+      "passed": true,
+      "errors": [],
+      "sourceIds": [
+        "r10_scooter_segway_e300se_au"
+      ]
+    }
+  ],
+  "missingUsefulAliases": [
+    {
+      "recordIds": [
+        "zeeho-ae4-au",
+        "zeeho-ae6-plus-au",
+        "zeeho-ae8-plus-au"
+      ],
+      "criteria": [
+        "phone_key",
+        "app_connectivity",
+        "ota_capability_scope",
+        "screens_hud"
+      ],
+      "sourceIds": [
+        "zeeho_ae4_au",
+        "zeeho_ae6_au",
+        "zeeho_ae8_au"
+      ],
+      "detail": "All three exact AU model pages describe Bluetooth phone unlock, Ride App live vehicle stats, OTA firmware and a 5-inch display. Current shared rows stay unknown. An exact sourced alias can describe only these functions, not passive unlock, full-vehicle OTA or HUD."
+    },
+    {
+      "recordIds": [
+        "segway-e300se-au"
+      ],
+      "criteria": [
+        "phone_key",
+        "app_connectivity",
+        "ota_capability_scope",
+        "screens_hud"
+      ],
+      "sourceIds": [
+        "segway_e300se_au"
+      ],
+      "detail": "Exact E300SE AU page lists AirLock, password unlock, app vehicle information/remote control, OTA, and an LED dashboard. Current shared rows stay unknown. Verify current service/subscription limits before adding aliases."
+    },
+    {
+      "recordIds": [
+        "zeeho-ae4-au",
+        "zeeho-ae6-plus-au",
+        "zeeho-ae8-plus-au",
+        "segway-e125s-au",
+        "segway-e300se-au"
+      ],
+      "criteria": [
+        "home_charging",
+        "driveaway_price"
+      ],
+      "sourceIds": [],
+      "detail": "Conditional mapped facts already contain qualified charge times and named dealer/distributor price bases, while shared rows remain unknown. Do not infer wall AC input/included charger or a nationally comparable price."
+    }
+  ],
+  "inputHashes": [
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/segway-zeeho-road-scooters-evidence.json",
+      "sha256": "a5ffeac42bdda7b264963ba3047b39b66eb84d2dda9a7259f5304e560dc09f51"
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/road-scooter-integrated-ids.json",
+      "sha256": "5959a8554257514b081370cb8fd4f47def3582095feddbb861b5dcc4c2a200a9"
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/road-scooter-field-map.json",
+      "sha256": "51b20611344e3544f763be1f2d1ffd7d36a443b8fc1d3bb958e552ec06cd37e7"
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/road-scooter-integration-checks.json",
+      "sha256": "9a07ee775597943722f3d8759e2fe0f418aa3daeae907e20a1a3d7c1ee80882d"
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/road-scooter-effective-snapshot.json",
+      "sha256": "857beb84a0e582b3b6e3cfd5a297f43c1897ce219be701e08bf67b0a71c0f9d6"
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/road-scooter-audit-live-snapshot.json",
+      "sha256": "f0c8c43e932949201bf9a79452abbb739a174a3736822d33805c05e1e606a7f6"
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/road-scooter-feature-aliases.json",
+      "sha256": "2c01ffda9f759ba08a59345228661176ea3369fc83b26c8541338d01376d0e42"
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-work/roadmark/data/catalogue-additions-2026-10-10.json",
+      "sha256": "57cc314e97a3bfc4fdfdbfc1e023072901f3f85f66728d11767ddaf2b8e09cf2"
+    }
+  ],
+  "liveReaderInputs": [
+    {
+      "path": "src/lib/data.ts",
+      "sha256": "f843e6f887ad4391c4dc2577a3fad5ad8c3ca2bfb1914f89409948e944a7357e"
+    },
+    {
+      "path": "src/lib/discovery.ts",
+      "sha256": "1e571fe9603e26e561ed1a27bdf16503559a574936f5a9c1ccf8e52f8ed3e536"
+    },
+    {
+      "path": "src/lib/compare.ts",
+      "sha256": "f8482b547a1641e34503c394465c27d2b58688aad0a240396f2e315e32b28299"
+    },
+    {
+      "path": "src/lib/selling-points.ts",
+      "sha256": "b6a561b0d7f8a053d2d6b66019f841874b865d0b9e1242887192a84d76f697ee"
+    },
+    {
+      "path": "data/catalogue-additions-2026-10-10.json",
+      "sha256": "57cc314e97a3bfc4fdfdbfc1e023072901f3f85f66728d11767ddaf2b8e09cf2"
+    },
+    {
+      "path": "data/approved-corrections.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "data/approved-feature-corrections.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "data/approved-availability-corrections.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "data/research-refresh-2026-10-10.json",
+      "sha256": "77dc7a1ed075e41c00788ed23cdb125f8313263738f2fd863799ea7d7a37fc38"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+✔ strict flags require both explicit local paths and no duplicate/unknown/network options (2.447808ms)
+✔ invalid arguments/requests/UTF8 and oversized stdin fail before any file open (13.437638ms)
+✔ bounded stdin supports split multi-byte sequences; UTF8/BOM failures do not silently normalize (0.352591ms)
+✔ bounded descriptor reader uses exact flags, partial reads, offset cap and always closes (0.593664ms)
+✔ unsupported protective flags fail before opening without a fallback (0.353062ms)
+✔ nonregular, oversize, growth, shrink, metadata drift, invalid JSON and invalid UTF8 all close descriptors (0.872384ms)
+✔ read denial is sanitized and does not leak path or exception text (0.174053ms)
+✔ only the explicit bound filename and history are opened, never directory enumeration or fallback (10.6546ms)
+✔ bad history and binding failures happen after both readers have closed (2.792466ms)
+✔ real fixture queue above 200 files still selects exact report and remains byte-identical across repeats (144.489043ms)
+✔ real missing, directory, symlink, malformed and oversized inputs remain unchanged; no directory creation (48.431222ms)
+✔ real denied read fails safely when effective permissions permit the fixture (2.993179ms)
+✔ actual CLI success is one JSON envelope; parse failures emit only a safe code and empty stdout (250.529045ms)
+✔ broken stdout pipe fails with one safe code and no stack or input mutation (131.976323ms)
+✔ actual final FIFO is rejected promptly with no writer and no fixture changes (129.802544ms)
+✔ importing the CLI with no command invocation does not read reports, create data, print or start a server (223.744164ms)
+✔ new runtime source has no application wiring, write primitives, network clients or catalogue/register dependency (1.450074ms)
+✔ range: needs_evidence preserves binding and pending, unsaved, unverified boundary (9.923949ms)
+✔ range: no_change_proposed preserves binding and pending, unsaved, unverified boundary (3.200482ms)
+✔ feature:heated_seats: needs_evidence preserves binding and pending, unsaved, unverified boundary (3.513263ms)
+✔ feature:heated_seats: no_change_proposed preserves binding and pending, unsaved, unverified boundary (2.28985ms)
+✔ availability:exact_version: needs_evidence preserves binding and pending, unsaved, unverified boundary (2.111751ms)
+✔ availability:exact_version: no_change_proposed preserves binding and pending, unsaved, unverified boundary (2.668981ms)
+✔ strict request keys/actions/identities reject unknown fields and path-like IDs (1.538708ms)
+✔ flat request JSON rejects duplicates, equivalent escaped keys, invalid types, extra syntax and byte overflow (0.786525ms)
+✔ request text validation preserves exact accepted text and rejects accessors/non-JSON data (0.623819ms)
+✔ unbound, projected, forged and changed raw claims fail without fallback (5.134214ms)
+✔ exact predecessor is required and full-history projection handles supersession (6.200821ms)
+✔ corrupt prefix, duplicate IDs, chain drift, invalid chronology and collisions never trim or retarget (6.182854ms)
+✔ historical correction snapshots remain immutable but new output has no approved-register label (3.601636ms)
+✔ all data and dependency functions are captured before async digest mutation; results are detached/frozen (3.482476ms)
+✔ allocate ID and timestamp once; do not allocate ID on stale intent (2.004609ms)
+✔ full label/reason survive while preview truncation is disclosed, JSON escapes terminal controls (2.664975ms)
+✔ canonical history hashes are stable under key ordering but change under significant state (7.525857ms)
+✔ history count and doubled combined context cap fail without truncating (145.265983ms)
+✔ latest event is selected by exact ID even when prior history exceeds display limit (76.78465ms)
+ℹ tests 36
+ℹ suites 0
+ℹ pass 36
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1665.27154

@@ -1,0 +1,467 @@
+{
+  "createdAt": "2026-10-14T04:55:38.517565+00:00",
+  "source": {
+    "filename": "Roadmark-recovery-source-post-diagnostic-20261014T0450.tar.xz",
+    "bytes": 7890012,
+    "sha256": "c4d322c606a4019360b5a29c0c97bdace96a1327ff5ed4e88813862fd41ea1c8",
+    "group": "source-post-diagnostic",
+    "library_file_id": "libfile_c3ebb7e8c2b08191b49e3cb060f38bdc",
+    "version": 0,
+    "restoreOrder": 39,
+    "file_id": "file_00000000c47482108cdab6d3e8c949e4"
+  },
+  "verification": {
+    "result": "PASS",
+    "createdAt": "2026-10-14T04:53:42.597357+00:00",
+    "sourceCaptureCutoff": "2026-10-14T04:50:54.012392+00:00",
+    "qaCaptureCutoff": "2026-10-14T04:51:43.997078+00:00",
+    "archiveCount": 41,
+    "archiveMemberOccurrencesVerified": 3837,
+    "payloadFiles": 3718,
+    "metadataFiles": 81,
+    "allRestoredFiles": 3799,
+    "allRestoredBytes": 1510628743,
+    "currentSourceFiles": 629,
+    "currentQaFiles": 1194,
+    "unchangedResearchAndSupportFiles": 1895
+  },
+  "independentSourceQaVerification": {
+    "schemaVersion": 1,
+    "verifiedAtUtc": "2026-10-14T04:54:41.266346+00:00",
+    "result": "PASS",
+    "scope": "Independent read-only verification of prior/new source archives, new QA delta, safe QA baseline overlay, and frozen test receipts. No source/QA edits, reruns, sensitive-residual scans, or Library actions. Complete 41-archive chain reconstruction and privacy scanning are handled separately.",
+    "inputs": {
+      "priorSafeManifest": "checkpoints/hyundai-integrated-closure-pending-20261014T0348/final-deliverables/Roadmark-RECOVERY-MANIFEST-hyundai-integrated-privacy-safe-20261014.json",
+      "sourcePackage": "checkpoints/post-diagnostic-20261014T0450/source-package.json",
+      "sourceCapture": "checkpoints/post-diagnostic-20261014T0450/source-capture.json",
+      "qaDeltaResult": "checkpoints/post-diagnostic-20261014T0450/qa-delta-result.json"
+    },
+    "source": {
+      "priorArchive": "Roadmark-recovery-source-hyundai-integrated-closure-pending-20261014T0348.tar.xz",
+      "newArchive": "Roadmark-recovery-source-post-diagnostic-20261014T0450.tar.xz",
+      "newArchiveBytes": 7890012,
+      "newArchiveSha256": "c4d322c606a4019360b5a29c0c97bdace96a1327ff5ed4e88813862fd41ea1c8",
+      "newMemberOccurrencesVerified": 630,
+      "priorPayloadFiles": 628,
+      "newPayloadFiles": 629,
+      "unchangedPayloadFiles": 623,
+      "changedPaths": [
+        "roadmark/docs/M1_PROGRESS.md",
+        "roadmark/src/lib/pair-pages.ts",
+        "roadmark/tests/citable.test.ts",
+        "roadmark/tests/domain.test.ts",
+        "roadmark/tests/local-review.test.ts"
+      ],
+      "addedPaths": [
+        "roadmark/tests/pair-report-snapshot.test.ts"
+      ],
+      "removedPaths": [],
+      "allDataFilesByteIdentical": 87,
+      "allOtherProductionSourceFilesByteIdentical": 170,
+      "allProductionScriptsByteIdentical": 30,
+      "protectedPaths": [
+        "roadmark/src/lib/data.ts",
+        "roadmark/src/lib/brand-updates.ts",
+        "roadmark/scripts/serve-roadmark.ts"
+      ],
+      "archiveAndCaptureManifestsMatch": true,
+      "changeRecords": [
+        {
+          "path": "roadmark/docs/M1_PROGRESS.md",
+          "priorSha256": "a363a8fdc22e322a13b22882d12b464a491d88e9a71ba49a8a8c216f73c6eb15",
+          "newSha256": "13b357ff815c3f3d18b0aec420c13a654261dbd2495684a2aee6e58d1b1fb5b9"
+        },
+        {
+          "path": "roadmark/src/lib/pair-pages.ts",
+          "priorSha256": "d1a90df377ebd59a008e52eb782d2dbf851768dc386647f7ae3187e8a4c7b823",
+          "newSha256": "d7f26fcc1e1a360471f4d1124775955834b35f62a4dd6c501b80a302b56fca16"
+        },
+        {
+          "path": "roadmark/tests/citable.test.ts",
+          "priorSha256": "51fa779a238da86a53d9bd4f7f78b37c6f769600ec878c305b61edfa2f1112e5",
+          "newSha256": "165317f020701f6f265801a7beedcf220b245f8e4613b1fa9ed38810f33f06bc"
+        },
+        {
+          "path": "roadmark/tests/domain.test.ts",
+          "priorSha256": "25258a2017cb143fe4c4a560d3a555c483023c70579835db239849803e0da53d",
+          "newSha256": "42a8d2cbc1c614a561b99f36f688efd8eb318d257c2f60dc5a3660e8338b2cb6"
+        },
+        {
+          "path": "roadmark/tests/local-review.test.ts",
+          "priorSha256": "de5c8ee39a3486837f41dafd25b97209f8a91d972da72f916a502fefb0d593ed",
+          "newSha256": "6f56cecbc85784055d536abfbb5057c88055b2f44cb0597100418e9b4a79d728"
+        }
+      ]
+    },
+    "qa": {
+      "archive": "Roadmark-recovery-qa-post-diagnostic-20261014T045130Z-part01of01.tar.xz",
+      "archiveBytes": 107632,
+      "archiveSha256": "e7a3169ee8ceb6acfd64e1f609b376b392fa007332c4d0baa49b98595fdd72bc",
+      "memberOccurrencesVerified": 69,
+      "payloadFilesVerified": 67,
+      "metadataFiles": 2,
+      "baselineFiles": 1128,
+      "effectiveFiles": 1194,
+      "unchangedFiles": 1127,
+      "changedPaths": [
+        "roadmark-104-qa/work-status.json"
+      ],
+      "addedPathCount": 66,
+      "addedPaths": [
+        "roadmark-104-qa/m1-through-hyundai-full-suite.log",
+        "roadmark-104-qa/regression-diagnosis/README.md",
+        "roadmark-104-qa/regression-diagnosis/before/src/lib/pair-pages.ts",
+        "roadmark-104-qa/regression-diagnosis/before/tests/citable.test.ts",
+        "roadmark-104-qa/regression-diagnosis/before/tests/domain.test.ts",
+        "roadmark-104-qa/regression-diagnosis/before/tests/local-review.test.ts",
+        "roadmark-104-qa/regression-diagnosis/brand-guards.exit",
+        "roadmark-104-qa/regression-diagnosis/brand-guards.resources.json",
+        "roadmark-104-qa/regression-diagnosis/brand-guards.stderr",
+        "roadmark-104-qa/regression-diagnosis/brand-guards.tap",
+        "roadmark-104-qa/regression-diagnosis/citable-snapshot.exit",
+        "roadmark-104-qa/regression-diagnosis/citable-snapshot.resources.json",
+        "roadmark-104-qa/regression-diagnosis/citable-snapshot.stderr",
+        "roadmark-104-qa/regression-diagnosis/citable-snapshot.tap",
+        "roadmark-104-qa/regression-diagnosis/domain-snapshot.exit",
+        "roadmark-104-qa/regression-diagnosis/domain-snapshot.resources.json",
+        "roadmark-104-qa/regression-diagnosis/domain-snapshot.stderr",
+        "roadmark-104-qa/regression-diagnosis/domain-snapshot.tap",
+        "roadmark-104-qa/regression-diagnosis/domain-unchanged.exit",
+        "roadmark-104-qa/regression-diagnosis/domain-unchanged.resources.json",
+        "roadmark-104-qa/regression-diagnosis/domain-unchanged.stderr",
+        "roadmark-104-qa/regression-diagnosis/domain-unchanged.tap",
+        "roadmark-104-qa/regression-diagnosis/final-summary.json",
+        "roadmark-104-qa/regression-diagnosis/independent-review-manifest.json",
+        "roadmark-104-qa/regression-diagnosis/independent-snapshot-reuse-review.md",
+        "roadmark-104-qa/regression-diagnosis/lint-final.exit",
+        "roadmark-104-qa/regression-diagnosis/lint-final.resources.json",
+        "roadmark-104-qa/regression-diagnosis/lint-final.stderr",
+        "roadmark-104-qa/regression-diagnosis/lint-final.stdout",
+        "roadmark-104-qa/regression-diagnosis/lint.exit",
+        "roadmark-104-qa/regression-diagnosis/lint.resources.json",
+        "roadmark-104-qa/regression-diagnosis/lint.stderr",
+        "roadmark-104-qa/regression-diagnosis/lint.stdout",
+        "roadmark-104-qa/regression-diagnosis/local-review-budget.exit",
+        "roadmark-104-qa/regression-diagnosis/local-review-budget.resources.json",
+        "roadmark-104-qa/regression-diagnosis/local-review-budget.stderr",
+        "roadmark-104-qa/regression-diagnosis/local-review-budget.tap",
+        "roadmark-104-qa/regression-diagnosis/local-review-startup-traced.resources.json",
+        "roadmark-104-qa/regression-diagnosis/local-review-startup-traced.stderr",
+        "roadmark-104-qa/regression-diagnosis/local-review-startup-traced.stdout",
+        "roadmark-104-qa/regression-diagnosis/local-review-unchanged.exit",
+        "roadmark-104-qa/regression-diagnosis/local-review-unchanged.resources.json",
+        "roadmark-104-qa/regression-diagnosis/local-review-unchanged.stderr",
+        "roadmark-104-qa/regression-diagnosis/local-review-unchanged.tap",
+        "roadmark-104-qa/regression-diagnosis/measure-server.py",
+        "roadmark-104-qa/regression-diagnosis/pair-report-snapshot-final.exit",
+        "roadmark-104-qa/regression-diagnosis/pair-report-snapshot-final.resources.json",
+        "roadmark-104-qa/regression-diagnosis/pair-report-snapshot-final.stderr",
+        "roadmark-104-qa/regression-diagnosis/pair-report-snapshot-final.tap",
+        "roadmark-104-qa/regression-diagnosis/pair-report-snapshot.exit",
+        "roadmark-104-qa/regression-diagnosis/pair-report-snapshot.resources.json",
+        "roadmark-104-qa/regression-diagnosis/pair-report-snapshot.stderr",
+        "roadmark-104-qa/regression-diagnosis/pair-report-snapshot.tap",
+        "roadmark-104-qa/regression-diagnosis/run-command.py",
+        "roadmark-104-qa/regression-diagnosis/run-isolated.py",
+        "roadmark-104-qa/regression-diagnosis/snapshot-reuse.patch",
+        "roadmark-104-qa/regression-diagnosis/trace-server.cjs",
+        "roadmark-104-qa/regression-diagnosis/typecheck-final.exit",
+        "roadmark-104-qa/regression-diagnosis/typecheck-final.resources.json",
+        "roadmark-104-qa/regression-diagnosis/typecheck-final.stderr",
+        "roadmark-104-qa/regression-diagnosis/typecheck-final.stdout",
+        "roadmark-104-qa/regression-diagnosis/typecheck.exit",
+        "roadmark-104-qa/regression-diagnosis/typecheck.resources.json",
+        "roadmark-104-qa/regression-diagnosis/typecheck.stderr",
+        "roadmark-104-qa/regression-diagnosis/typecheck.stdout",
+        "roadmark-104-qa/regression-diagnosis/unchanged-source.sha256"
+      ],
+      "removedPaths": [],
+      "embeddedManifestMatchesCapture": true,
+      "baselineMatchesPriorSafeManifest": true,
+      "effectiveOverlayMatchesFullCurrentInventory": true
+    },
+    "receipts": {
+      "finalSummaryPath": "roadmark-104-qa/regression-diagnosis/final-summary.json",
+      "finalSummarySha256": "054eb75a1cf2bd98f8f0e2f4853d0745e5421016bdaf11a754a9c48959d2e82b",
+      "currentSourceMatchesFinalSummaryAndIndependentReviewHashes": true,
+      "beforeCopiesAndHashesMatchPriorSafeSource": true,
+      "focusedTestsPassed": 85,
+      "distinctTestFiles": 7,
+      "runs": [
+        {
+          "name": "pair-report-snapshot-final",
+          "files": [
+            "tests/pair-report-snapshot.test.ts",
+            "tests/catalogue-reuse.test.ts"
+          ],
+          "tests": 10,
+          "passed": 10,
+          "exitCode": 0,
+          "tap": "roadmark-104-qa/regression-diagnosis/pair-report-snapshot-final.tap",
+          "resources": "roadmark-104-qa/regression-diagnosis/pair-report-snapshot-final.resources.json"
+        },
+        {
+          "name": "domain-snapshot",
+          "files": [
+            "tests/domain.test.ts"
+          ],
+          "tests": 26,
+          "passed": 26,
+          "exitCode": 0,
+          "tap": "roadmark-104-qa/regression-diagnosis/domain-snapshot.tap",
+          "resources": "roadmark-104-qa/regression-diagnosis/domain-snapshot.resources.json"
+        },
+        {
+          "name": "citable-snapshot",
+          "files": [
+            "tests/citable.test.ts"
+          ],
+          "tests": 13,
+          "passed": 13,
+          "exitCode": 0,
+          "tap": "roadmark-104-qa/regression-diagnosis/citable-snapshot.tap",
+          "resources": "roadmark-104-qa/regression-diagnosis/citable-snapshot.resources.json"
+        },
+        {
+          "name": "local-review-budget",
+          "files": [
+            "tests/local-review.test.ts"
+          ],
+          "tests": 1,
+          "passed": 1,
+          "exitCode": 0,
+          "tap": "roadmark-104-qa/regression-diagnosis/local-review-budget.tap",
+          "resources": "roadmark-104-qa/regression-diagnosis/local-review-budget.resources.json"
+        },
+        {
+          "name": "brand-guards",
+          "files": [
+            "tests/brand-updates.test.ts",
+            "tests/brand-feature-updates.test.ts"
+          ],
+          "tests": 35,
+          "passed": 35,
+          "exitCode": 0,
+          "tap": "roadmark-104-qa/regression-diagnosis/brand-guards.tap",
+          "resources": "roadmark-104-qa/regression-diagnosis/brand-guards.resources.json"
+        }
+      ],
+      "staticChecks": [
+        {
+          "name": "typecheck-final",
+          "command": [
+            "node",
+            "node_modules/typescript/bin/tsc",
+            "--noEmit",
+            "--incremental",
+            "false"
+          ],
+          "exitCode": 0,
+          "stdoutBytes": 0,
+          "stderrBytes": 0,
+          "resources": "roadmark-104-qa/regression-diagnosis/typecheck-final.resources.json"
+        },
+        {
+          "name": "lint-final",
+          "command": [
+            "node",
+            "node_modules/eslint/bin/eslint.js",
+            "src",
+            "tests",
+            "scripts"
+          ],
+          "exitCode": 0,
+          "stdoutBytes": 0,
+          "stderrBytes": 0,
+          "resources": "roadmark-104-qa/regression-diagnosis/lint-final.resources.json"
+        }
+      ],
+      "originalFullSuite": {
+        "path": "roadmark-104-qa/m1-through-hyundai-full-suite.log",
+        "bytes": 87056,
+        "sha256": "2acdf856ade22529200bffccf77ce62fb9d0812a08f11326193e421334fc92b9",
+        "state": "Included as explicitly partial/interrupted; no terminal exit or aggregate summary, no aggregate pass established",
+        "terminalCountSummaryPresent": false,
+        "rerunAfterPatch": false
+      },
+      "productionBuildRerun": false,
+      "performanceCaveat": "Approximately 60-second unchanged eager review-service startup remains open; focused passes and test allowance do not establish production performance or aggregate-suite success"
+    },
+    "errors": []
+  },
+  "privacyVerification": {
+    "unchangedBaseline": "All reused archives match the sizes and SHA-256 hashes from the prior complete safe-chain audit. No affected original or intermediate Library ID is a restore input.",
+    "priorWholeTreeScan": {
+      "status": "clean",
+      "regularFilesScanned": 5037,
+      "bytesScanned": 1980054991,
+      "uniquePayloadsScanned": 2816,
+      "knownDistinctCapturedValues": 55,
+      "testedDistinctByteVariants": 373,
+      "recognizedBenignRuntimeCandidateCount": 609,
+      "startedAt": "2026-10-14T04:31:51.869933+00:00",
+      "completedAt": "2026-10-14T04:35:51.516096+00:00",
+      "exactValueMatches": 0,
+      "primaryHeaderCandidates": 0,
+      "unclassifiedRuntimeCandidates": 0,
+      "errors": 0,
+      "coverage": {
+        "byteSearch": "Every regular payload, regardless of extension",
+        "encodings": [
+          "literal",
+          "URL component",
+          "base64/base64url standalone value, padded and unpadded",
+          "UTF-16LE/BE",
+          "JSON string escaping",
+          "HTML entity escaping",
+          "full Unicode-escaped value in lower/upper hex"
+        ],
+        "patternSearch": "Primary nested-JSON/raw-header scanner and runtime HTML meta/input/property scanner with entity decoding and up to three nested escape levels",
+        "limitations": [
+          "Does not decrypt encrypted content",
+          "Does not recursively unpack arbitrary compressed or proprietary content inside regular payloads",
+          "Standalone base64 matching is not a claim to inspect every possible base64 wrapping/alignment of a larger structure"
+        ]
+      }
+    },
+    "newSourceAndQaArchiveScan": {
+      "startedAt": "2026-10-14T04:51:59.453917+00:00",
+      "knownDistinctCapturedValues": 55,
+      "testedDistinctByteVariants": 373,
+      "originalSeedMembersRead": 200,
+      "regularFilesScanned": 699,
+      "bytesScanned": 256234667,
+      "uniquePayloadsScanned": 670,
+      "recognizedBenignRuntimeCandidateCount": 0,
+      "coverage": {
+        "byteSearch": "Every regular payload, regardless of extension",
+        "encodings": [
+          "literal",
+          "URL component",
+          "base64/base64url standalone value, padded and unpadded",
+          "UTF-16LE/BE",
+          "JSON string escaping",
+          "HTML entity escaping",
+          "full Unicode-escaped value in lower/upper hex"
+        ],
+        "patternSearch": "Primary nested-JSON/raw-header scanner and runtime HTML meta/input/property scanner with entity decoding and up to three nested escape levels",
+        "limitations": [
+          "Does not decrypt encrypted content",
+          "Does not recursively unpack arbitrary compressed or proprietary content inside regular payloads",
+          "Standalone base64 matching is not a claim to inspect every possible base64 wrapping/alignment of a larger structure"
+        ]
+      },
+      "completedAt": "2026-10-14T04:52:54.527003+00:00",
+      "status": "clean",
+      "exactValueMatches": 0,
+      "primaryHeaderCandidates": 0,
+      "unclassifiedRuntimeCandidates": 0,
+      "errors": 0
+    }
+  },
+  "incrementalSave": {
+    "newSourceFiles": 629,
+    "currentQaFiles": 1194,
+    "changedOrNewQaFiles": 67,
+    "reusedUnchangedQaFiles": 1127,
+    "missingQaFiles": [],
+    "newArchiveCount": 2,
+    "newArchiveBytes": 7997644,
+    "researchArchivesReuploaded": 0,
+    "newQaPaths": [
+      "roadmark-104-qa/m1-through-hyundai-full-suite.log",
+      "roadmark-104-qa/regression-diagnosis/README.md",
+      "roadmark-104-qa/regression-diagnosis/before/src/lib/pair-pages.ts",
+      "roadmark-104-qa/regression-diagnosis/before/tests/citable.test.ts",
+      "roadmark-104-qa/regression-diagnosis/before/tests/domain.test.ts",
+      "roadmark-104-qa/regression-diagnosis/before/tests/local-review.test.ts",
+      "roadmark-104-qa/regression-diagnosis/brand-guards.exit",
+      "roadmark-104-qa/regression-diagnosis/brand-guards.resources.json",
+      "roadmark-104-qa/regression-diagnosis/brand-guards.stderr",
+      "roadmark-104-qa/regression-diagnosis/brand-guards.tap",
+      "roadmark-104-qa/regression-diagnosis/citable-snapshot.exit",
+      "roadmark-104-qa/regression-diagnosis/citable-snapshot.resources.json",
+      "roadmark-104-qa/regression-diagnosis/citable-snapshot.stderr",
+      "roadmark-104-qa/regression-diagnosis/citable-snapshot.tap",
+      "roadmark-104-qa/regression-diagnosis/domain-snapshot.exit",
+      "roadmark-104-qa/regression-diagnosis/domain-snapshot.resources.json",
+      "roadmark-104-qa/regression-diagnosis/domain-snapshot.stderr",
+      "roadmark-104-qa/regression-diagnosis/domain-snapshot.tap",
+      "roadmark-104-qa/regression-diagnosis/domain-unchanged.exit",
+      "roadmark-104-qa/regression-diagnosis/domain-unchanged.resources.json",
+      "roadmark-104-qa/regression-diagnosis/domain-unchanged.stderr",
+      "roadmark-104-qa/regression-diagnosis/domain-unchanged.tap",
+      "roadmark-104-qa/regression-diagnosis/final-summary.json",
+      "roadmark-104-qa/regression-diagnosis/independent-review-manifest.json",
+      "roadmark-104-qa/regression-diagnosis/independent-snapshot-reuse-review.md",
+      "roadmark-104-qa/regression-diagnosis/lint-final.exit",
+      "roadmark-104-qa/regression-diagnosis/lint-final.resources.json",
+      "roadmark-104-qa/regression-diagnosis/lint-final.stderr",
+      "roadmark-104-qa/regression-diagnosis/lint-final.stdout",
+      "roadmark-104-qa/regression-diagnosis/lint.exit",
+      "roadmark-104-qa/regression-diagnosis/lint.resources.json",
+      "roadmark-104-qa/regression-diagnosis/lint.stderr",
+      "roadmark-104-qa/regression-diagnosis/lint.stdout",
+      "roadmark-104-qa/regression-diagnosis/local-review-budget.exit",
+      "roadmark-104-qa/regression-diagnosis/local-review-budget.resources.json",
+      "roadmark-104-qa/regression-diagnosis/local-review-budget.stderr",
+      "roadmark-104-qa/regression-diagnosis/local-review-budget.tap",
+      "roadmark-104-qa/regression-diagnosis/local-review-startup-traced.resources.json",
+      "roadmark-104-qa/regression-diagnosis/local-review-startup-traced.stderr",
+      "roadmark-104-qa/regression-diagnosis/local-review-startup-traced.stdout",
+      "roadmark-104-qa/regression-diagnosis/local-review-unchanged.exit",
+      "roadmark-104-qa/regression-diagnosis/local-review-unchanged.resources.json",
+      "roadmark-104-qa/regression-diagnosis/local-review-unchanged.stderr",
+      "roadmark-104-qa/regression-diagnosis/local-review-unchanged.tap",
+      "roadmark-104-qa/regression-diagnosis/measure-server.py",
+      "roadmark-104-qa/regression-diagnosis/pair-report-snapshot-final.exit",
+      "roadmark-104-qa/regression-diagnosis/pair-report-snapshot-final.resources.json",
+      "roadmark-104-qa/regression-diagnosis/pair-report-snapshot-final.stderr",
+      "roadmark-104-qa/regression-diagnosis/pair-report-snapshot-final.tap",
+      "roadmark-104-qa/regression-diagnosis/pair-report-snapshot.exit",
+      "roadmark-104-qa/regression-diagnosis/pair-report-snapshot.resources.json",
+      "roadmark-104-qa/regression-diagnosis/pair-report-snapshot.stderr",
+      "roadmark-104-qa/regression-diagnosis/pair-report-snapshot.tap",
+      "roadmark-104-qa/regression-diagnosis/run-command.py",
+      "roadmark-104-qa/regression-diagnosis/run-isolated.py",
+      "roadmark-104-qa/regression-diagnosis/snapshot-reuse.patch",
+      "roadmark-104-qa/regression-diagnosis/trace-server.cjs",
+      "roadmark-104-qa/regression-diagnosis/typecheck-final.exit",
+      "roadmark-104-qa/regression-diagnosis/typecheck-final.resources.json",
+      "roadmark-104-qa/regression-diagnosis/typecheck-final.stderr",
+      "roadmark-104-qa/regression-diagnosis/typecheck-final.stdout",
+      "roadmark-104-qa/regression-diagnosis/typecheck.exit",
+      "roadmark-104-qa/regression-diagnosis/typecheck.resources.json",
+      "roadmark-104-qa/regression-diagnosis/typecheck.stderr",
+      "roadmark-104-qa/regression-diagnosis/typecheck.stdout",
+      "roadmark-104-qa/regression-diagnosis/unchanged-source.sha256",
+      "roadmark-104-qa/work-status.json"
+    ],
+    "interruptedSuiteEvidence": "roadmark-104-qa/m1-through-hyundai-full-suite.log is partial, not a completed aggregate result; no final status is invented."
+  },
+  "workState": {
+    "workingCheckpoint": 104,
+    "latestDeliveredCheckpoint": 103,
+    "milestone": "M1 open",
+    "registeredPackets": 9,
+    "totalVersions": 363,
+    "tier1Versions": 286,
+    "onSaleVersions": 280,
+    "hyundaiEstablishedVersionsIntegrated": 21,
+    "hyundaiClosure": "pending",
+    "unresolvedLead": "Exact six-seat MY26 IONIQ9 OAG-AD-25622863; CAPTCHA approval pending at this saved cut",
+    "nextBrand": "Toyota held",
+    "fullSuite": "Original through-Hyundai run was interrupted with no final exit/status or aggregate summary. Its log is included as partial evidence; the full aggregate suite and production build were not rerun.",
+    "postDiagnosticChecks": {
+      "distinctFocusedTests": 85,
+      "distinctTestFiles": 7,
+      "failures": 0,
+      "skips": 0,
+      "cancellations": 0,
+      "fullTypeScript": "PASS",
+      "fullLint": "PASS",
+      "independentReview": "PASS"
+    },
+    "reviewStartup": "Measured about 60 seconds; production preflight unchanged. The 120-second integration-test readiness budget is not a performance acceptance result."
+  }
+}

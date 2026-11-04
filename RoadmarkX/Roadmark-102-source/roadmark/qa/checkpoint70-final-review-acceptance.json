@@ -1,0 +1,173 @@
+{
+  "passed": true,
+  "checkedAtUTC": "2026-10-11T03:29:49.361984+00:00",
+  "reviewDecision": "Exact final overlay statically accepted after B1 amendment; root runtime QA pending",
+  "candidateFiles": {
+    "src/app/globals.css": {
+      "sha256": "9964715a140f82beac51022eb942f16670d4a27c1f9f3c54cb34d69edb22b743",
+      "bytes": 113261
+    },
+    "src/components/discovery.tsx": {
+      "bytes": 25961,
+      "sha256": "7424fc73b5936a08912452b9fb102fb3691f1672ec7d599aa7d9bca57c352169"
+    },
+    "src/components/explorer.tsx": {
+      "bytes": 9578,
+      "sha256": "1f93ed039ae18cc3e1116110e5d46b20c047d70c8f35bbd8c0ffd1e4c1eb56c3"
+    },
+    "src/components/fleet-experience.tsx": {
+      "bytes": 25622,
+      "sha256": "be4db552b33d19142111b046a5cf850cb1f075952b27c2075dfac1eee160a065"
+    },
+    "src/components/visual-action-feedback.tsx": {
+      "bytes": 300,
+      "sha256": "11464bac80fd074f058f3f98930be7579c02d95b65b63a2d4d16b837b2136ecf"
+    },
+    "src/lib/explorer-state.ts": {
+      "bytes": 1397,
+      "sha256": "27637b9ed5e393e28a1a746cd48462d21d9479df339867c45657bba3d73dbd5a"
+    },
+    "tests/discovery-feedback.test.ts": {
+      "bytes": 2741,
+      "sha256": "9011450a599fd89ec05675c808370323a8bf6325242ee23c551d61e0006d99cb"
+    },
+    "tests/explorer-state.test.ts": {
+      "bytes": 4804,
+      "sha256": "57749c0a6b81cd89878d6dd65d52203272c00b4eb5cc9ba03a008234a03f9472"
+    },
+    "tests/home-hero.test.ts": {
+      "bytes": 1278,
+      "sha256": "80aa2193b930055cf8770f94206e832ae4986f13ac38816da0a2c56cc091731a"
+    },
+    "src/lib/action-feedback.ts": {
+      "bytes": 1229,
+      "sha256": "0585c13521cf12106ebb20699c14bf46e1754e1aa13a8e4f6c0afb6481368b98"
+    },
+    "tests/action-feedback.test.ts": {
+      "bytes": 4819,
+      "sha256": "beb00ccc17ce4ccc3c8d4e1ab5dad14d0a32bb76caf286ad2ec53a82c46ff093"
+    }
+  },
+  "reviewFileSHA256": {
+    "audits/mobile-journey-candidate-v70/AUDIT-MANIFEST.sha256": "ecdd05c49c471ce5239d29b8999f64eccb628f4429f65b28d85b94c96c113ef4",
+    "audits/mobile-journey-candidate-v70/README.md": "0bc708f3da3b49633f3b805cb621d71f376b4e0eb73b4791265cab6a76838be9",
+    "audits/mobile-journey-candidate-v70/REVIEWED-INPUTS.sha256": "09db008b5161d61758a9e40771d4b29c3a2a89bc31ce15366c2c8726f2c1612e",
+    "audits/mobile-journey-candidate-v70/PIN-VERIFICATION.json": "acd309dcc04684401c4f529f88908bf2d4805403f21c29356591a19ea79273e1",
+    "audits/mobile-journey-candidate-v70/STATIC-OBSERVATIONS.json": "c201833a54bb70ce541b09f8b855ef5fd6046330b50832ed3ead26187529b08e",
+    "audits/mobile-journey-candidate-v70/CANDIDATE-DIFF.patch": "6917be17c734b974d3a5bf85bcbfeb1f942069622970a70f5acf2d7d18acbf58",
+    "audits/mobile-journey-candidate-v70/reviewed-inputs/README.md": "2d552932eff74ce587ca753d9fb192e78d111e22c0bbe5a0d62b41987bd91861",
+    "audits/mobile-journey-candidate-v70/reviewed-inputs/application-context/AGENTS.md": "63f2c50380ed6303237cce215ce27af1d620d094c215e28d1b1538a3c070e3bb",
+    "audits/mobile-journey-candidate-v70/reviewed-inputs/application-context/package.json": "7ee2046d8b28707c5d182f09f2288e8c61b19bb51d03fd42a212e055622f6754",
+    "audits/mobile-journey-candidate-v70/reviewed-inputs/application-context/qa/ACCEPTANCE_TESTS.md": "7a0374ccebc9103513b56d307c550132be93faadda887d99a780e2cdb3cca3d5",
+    "audits/mobile-journey-candidate-v70/reviewed-inputs/application-context/src/app/cars/page.tsx": "07e37f20d9c38e3e09a7f87344f62f1ea7f927da1cf4f8aa07a3b7382eb5903e",
+    "audits/mobile-journey-candidate-v70/reviewed-inputs/application-context/src/app/page.tsx": "94d32047c3253b6417e336a585330f63d4aaa320be02038f5437cf08f867269f",
+    "audits/mobile-journey-candidate-v70/reviewed-inputs/application-context/src/components/model-y-verdict.tsx": "c01f95e4b6738184609b9b50adc9c77b2cadece144038929f1dae885573693b4",
+    "audits/mobile-journey-candidate-v70/reviewed-inputs/application-context/src/components/verdict-pictogram.tsx": "8bc88e89f8d433c2811ed4e5058669432554db36022fc96f8cf4bb41fb39ff0c",
+    "audits/mobile-journey-candidate-v70/reviewed-inputs/application-context/src/lib/config.ts": "6f3507757cc703272faf172881d3f265d1512b883c0cb6e4808d8062ef61936b",
+    "audits/mobile-journey-candidate-v70/reviewed-inputs/application-context/src/lib/discovery.ts": "a4391f968fda69b4f70215a6698d24606d6e32b22780e50de9e7addb9a067321",
+    "audits/mobile-journey-candidate-v70/reviewed-inputs/application-context/src/lib/fleet.ts": "a703995220cd37d667c7a3d0a3304e0103ff5165fce38d3222dacebca1f37469",
+    "audits/mobile-journey-candidate-v70/reviewed-inputs/application-context/src/lib/page-props.ts": "e724d9974f5675530e172236ee47415a7248e8e65553fbc0de5336618d096048",
+    "audits/mobile-journey-candidate-v70/reviewed-inputs/application-context/src/lib/search.ts": "1cc767f7a3f1a36cf9cd4b2b9d4b55bdc905da058bdf6bc52691464939707274",
+    "audits/mobile-journey-candidate-v70/reviewed-inputs/application-context/src/portable/entry.tsx": "0bdaab7d974e6b4da5a0580ed18002de87996e141e49e406652db52dfd5187c9",
+    "audits/mobile-journey-candidate-v70/reviewed-inputs/application-context/src/portable/navigation.ts": "e5af0074795673341ddabb8d7ef408420c9c4ef109e9b81b37e0e311071dcac8",
+    "audits/mobile-journey-candidate-v70/reviewed-inputs/application-context/tests/e2e/fleet.spec.ts": "0ba0687d186cc8d5f56ec408618489f4c716d86d515f597c383a1600fea9233e",
+    "audits/mobile-journey-candidate-v70/reviewed-inputs/application-context/tests/e2e/journeys.spec.ts": "69f8f01e8448d942ac16f436a65c09df778f8048c53b2894591b72e7cc9f6d70",
+    "audits/mobile-journey-candidate-v70/reviewed-inputs/application-context/tests/e2e/portable.spec.ts": "89f70be75bf1a0d5de3049d9753e22300d0aab2eef2c28025edf4353380bf9e7",
+    "audits/mobile-journey-candidate-v70/reviewed-inputs/application-context/tsconfig.json": "a2ead9aa51428a9c1d3f39e8d10f06ff722bd1936289d2deb240ead7a5e2a154",
+    "audits/mobile-journey-candidate-v70/reviewed-inputs/application-input-lock.json": "4cbd079251863203a18370b2b66d7c3c4dec7f32877f116079d6fed90c547416",
+    "audits/mobile-journey-candidate-v70/reviewed-inputs/before/src/app/globals.css": "7e0675e8be7538791f64262c9af15388b926cde88a36b1fe5ca70bccd7bff3be",
+    "audits/mobile-journey-candidate-v70/reviewed-inputs/before/src/components/discovery.tsx": "7c9b51b2a352b2f7e46645ba2675643857907073ddca05a5a67c57ef24343b26",
+    "audits/mobile-journey-candidate-v70/reviewed-inputs/before/src/components/explorer.tsx": "89c4b8d8224b14918d1d207a1c348169093f03c9053fc15a11275f86132600e4",
+    "audits/mobile-journey-candidate-v70/reviewed-inputs/before/src/components/fleet-experience.tsx": "27946f6db66d0b60a621b163e7b902bb2d98f98c99410ae8dd53d8ae39b305e0",
+    "audits/mobile-journey-candidate-v70/reviewed-inputs/before/tests/home-hero.test.ts": "97cfdfd2a4f6de7a65aa907a9359e08df303053d8166ad456cf0ea68d6279308",
+    "audits/mobile-journey-candidate-v70/reviewed-inputs/candidate/src/app/globals.css": "9964715a140f82beac51022eb942f16670d4a27c1f9f3c54cb34d69edb22b743",
+    "audits/mobile-journey-candidate-v70/reviewed-inputs/candidate/src/components/discovery.tsx": "bcca2b7d93ec90068ca140aa68623badfe8c6c72aed9b4cb426e5dbc6f873624",
+    "audits/mobile-journey-candidate-v70/reviewed-inputs/candidate/src/components/explorer.tsx": "1f93ed039ae18cc3e1116110e5d46b20c047d70c8f35bbd8c0ffd1e4c1eb56c3",
+    "audits/mobile-journey-candidate-v70/reviewed-inputs/candidate/src/components/fleet-experience.tsx": "be4db552b33d19142111b046a5cf850cb1f075952b27c2075dfac1eee160a065",
+    "audits/mobile-journey-candidate-v70/reviewed-inputs/candidate/src/components/visual-action-feedback.tsx": "11464bac80fd074f058f3f98930be7579c02d95b65b63a2d4d16b837b2136ecf",
+    "audits/mobile-journey-candidate-v70/reviewed-inputs/candidate/src/lib/explorer-state.ts": "27637b9ed5e393e28a1a746cd48462d21d9479df339867c45657bba3d73dbd5a",
+    "audits/mobile-journey-candidate-v70/reviewed-inputs/candidate/tests/discovery-feedback.test.ts": "9011450a599fd89ec05675c808370323a8bf6325242ee23c551d61e0006d99cb",
+    "audits/mobile-journey-candidate-v70/reviewed-inputs/candidate/tests/explorer-state.test.ts": "57749c0a6b81cd89878d6dd65d52203272c00b4eb5cc9ba03a008234a03f9472",
+    "audits/mobile-journey-candidate-v70/reviewed-inputs/candidate/tests/home-hero.test.ts": "80aa2193b930055cf8770f94206e832ae4986f13ac38816da0a2c56cc091731a",
+    "audits/mobile-journey-candidate-v70/reviewed-inputs/staging.json": "af2b85b6fa784a306d76ada332bdbedb1eec7a0c54164a6512daad696db353e0",
+    "audits/mobile-journey-candidate-v70/amendment-01/AUDIT-MANIFEST.sha256": "a35ebd98a4757bd03908823019c732e40ca7d82356a18f6d4fbd1d75e8e3af5d",
+    "audits/mobile-journey-candidate-v70/amendment-01/README.md": "b2df7b54c9775029297c959aa6073f5de2176117bc58488e38c9ef99f738f19f",
+    "audits/mobile-journey-candidate-v70/amendment-01/PIN-VERIFICATION.json": "5dd43e3b35c24a9c47bfc1553f852ab0f01233f4de59244e37983a98c4b4e659",
+    "audits/mobile-journey-candidate-v70/amendment-01/REVIEWED-INPUTS.sha256": "652f997a5e7170890e7d79af9b1b3b0da032cb46ff1dd0f83e30bf1ce515d710",
+    "audits/mobile-journey-candidate-v70/amendment-01/AMENDMENT-DIFF.patch": "300d194ac7fadb87ac1def32da6360d8557de97deaedac1eff686e7ef224d998",
+    "audits/mobile-journey-candidate-v70/amendment-01/reviewed-amendment/README.md": "c03b7f9b4aef453b1ebfd183d98d24688002a8b2be002ad8c5098c0ab7191082",
+    "audits/mobile-journey-candidate-v70/amendment-01/reviewed-amendment/amendment.json": "6155d8d7beec826eb32c3f1ffdd10f4049df985e73eb4bb9492248241d4cf8ef",
+    "audits/mobile-journey-candidate-v70/amendment-01/reviewed-amendment/candidate/src/components/discovery.tsx": "9d84e5c5def37b9e996bfd5a031f6003e47f552a0775a467d9d2894e2c23270e",
+    "audits/mobile-journey-candidate-v70/amendment-01/reviewed-amendment/candidate/src/lib/action-feedback.ts": "0585c13521cf12106ebb20699c14bf46e1754e1aa13a8e4f6c0afb6481368b98",
+    "audits/mobile-journey-candidate-v70/amendment-01/reviewed-amendment/candidate/tests/action-feedback.test.ts": "5317b094a2ede4f1e62b1f6b9a559541db8bd5aa41843512cc06ceca90940c80",
+    "audits/mobile-journey-candidate-v70/amendment-01/reviewed-amendment/protected-visual-input-pins.json": "bc0f9abe4697b8f0de7ad90f4f3b850aa6a4fa2e415621bf673fc1da066d64cb",
+    "audits/mobile-journey-candidate-v70/amendment-01/final-overlay/src/app/globals.css": "9964715a140f82beac51022eb942f16670d4a27c1f9f3c54cb34d69edb22b743",
+    "audits/mobile-journey-candidate-v70/amendment-01/final-overlay/src/components/discovery.tsx": "9d84e5c5def37b9e996bfd5a031f6003e47f552a0775a467d9d2894e2c23270e",
+    "audits/mobile-journey-candidate-v70/amendment-01/final-overlay/src/components/explorer.tsx": "1f93ed039ae18cc3e1116110e5d46b20c047d70c8f35bbd8c0ffd1e4c1eb56c3",
+    "audits/mobile-journey-candidate-v70/amendment-01/final-overlay/src/components/fleet-experience.tsx": "be4db552b33d19142111b046a5cf850cb1f075952b27c2075dfac1eee160a065",
+    "audits/mobile-journey-candidate-v70/amendment-01/final-overlay/src/components/visual-action-feedback.tsx": "11464bac80fd074f058f3f98930be7579c02d95b65b63a2d4d16b837b2136ecf",
+    "audits/mobile-journey-candidate-v70/amendment-01/final-overlay/src/lib/action-feedback.ts": "0585c13521cf12106ebb20699c14bf46e1754e1aa13a8e4f6c0afb6481368b98",
+    "audits/mobile-journey-candidate-v70/amendment-01/final-overlay/src/lib/explorer-state.ts": "27637b9ed5e393e28a1a746cd48462d21d9479df339867c45657bba3d73dbd5a",
+    "audits/mobile-journey-candidate-v70/amendment-01/final-overlay/tests/action-feedback.test.ts": "5317b094a2ede4f1e62b1f6b9a559541db8bd5aa41843512cc06ceca90940c80",
+    "audits/mobile-journey-candidate-v70/amendment-01/final-overlay/tests/discovery-feedback.test.ts": "9011450a599fd89ec05675c808370323a8bf6325242ee23c551d61e0006d99cb",
+    "audits/mobile-journey-candidate-v70/amendment-01/final-overlay/tests/explorer-state.test.ts": "57749c0a6b81cd89878d6dd65d52203272c00b4eb5cc9ba03a008234a03f9472",
+    "audits/mobile-journey-candidate-v70/amendment-01/final-overlay/tests/home-hero.test.ts": "80aa2193b930055cf8770f94206e832ae4986f13ac38816da0a2c56cc091731a"
+  },
+  "candidateInputSHA256": {
+    "mobile-journey-integration-v70/candidate/src/app/globals.css": "9964715a140f82beac51022eb942f16670d4a27c1f9f3c54cb34d69edb22b743",
+    "mobile-journey-integration-v70/candidate/src/components/discovery.tsx": "bcca2b7d93ec90068ca140aa68623badfe8c6c72aed9b4cb426e5dbc6f873624",
+    "mobile-journey-integration-v70/candidate/src/components/explorer.tsx": "1f93ed039ae18cc3e1116110e5d46b20c047d70c8f35bbd8c0ffd1e4c1eb56c3",
+    "mobile-journey-integration-v70/candidate/src/components/fleet-experience.tsx": "be4db552b33d19142111b046a5cf850cb1f075952b27c2075dfac1eee160a065",
+    "mobile-journey-integration-v70/candidate/src/components/visual-action-feedback.tsx": "11464bac80fd074f058f3f98930be7579c02d95b65b63a2d4d16b837b2136ecf",
+    "mobile-journey-integration-v70/candidate/src/lib/explorer-state.ts": "27637b9ed5e393e28a1a746cd48462d21d9479df339867c45657bba3d73dbd5a",
+    "mobile-journey-integration-v70/candidate/tests/discovery-feedback.test.ts": "9011450a599fd89ec05675c808370323a8bf6325242ee23c551d61e0006d99cb",
+    "mobile-journey-integration-v70/candidate/tests/explorer-state.test.ts": "57749c0a6b81cd89878d6dd65d52203272c00b4eb5cc9ba03a008234a03f9472",
+    "mobile-journey-integration-v70/candidate/tests/home-hero.test.ts": "80aa2193b930055cf8770f94206e832ae4986f13ac38816da0a2c56cc091731a",
+    "mobile-journey-integration-v70-amendment-01/candidate/src/components/discovery.tsx": "9d84e5c5def37b9e996bfd5a031f6003e47f552a0775a467d9d2894e2c23270e",
+    "mobile-journey-integration-v70-amendment-01/candidate/src/lib/action-feedback.ts": "0585c13521cf12106ebb20699c14bf46e1754e1aa13a8e4f6c0afb6481368b98",
+    "mobile-journey-integration-v70-amendment-01/candidate/tests/action-feedback.test.ts": "5317b094a2ede4f1e62b1f6b9a559541db8bd5aa41843512cc06ceca90940c80",
+    "mobile-journey-integration-v70/staging.json": "af2b85b6fa784a306d76ada332bdbedb1eec7a0c54164a6512daad696db353e0",
+    "mobile-journey-integration-v70/application-input-lock.json": "4cbd079251863203a18370b2b66d7c3c4dec7f32877f116079d6fed90c547416",
+    "mobile-journey-integration-v70-amendment-01/amendment.json": "6155d8d7beec826eb32c3f1ffdd10f4049df985e73eb4bb9492248241d4cf8ef",
+    "mobile-journey-integration-v70-amendment-01/protected-visual-input-pins.json": "bc0f9abe4697b8f0de7ad90f4f3b850aa6a4fa2e415621bf673fc1da066d64cb"
+  },
+  "applicationInputLocks": 340,
+  "protectedVisualInputs": 18,
+  "durableSource69Required": true,
+  "browserVerified": false,
+  "releaseApproved": false,
+  "amendment02ReviewSHA256": {
+    "audits/mobile-journey-candidate-v70/amendment-02/AUDIT-MANIFEST.sha256": "6acf4c0f0c8525888fa5f48d0eb1233183d2a8e353afaed7c7c753a9f7b4d0aa",
+    "audits/mobile-journey-candidate-v70/amendment-02/README.md": "fa58e003b219895a1a973c84e2843c880d795c961a483112f81cd1b9edbb5997",
+    "audits/mobile-journey-candidate-v70/amendment-02/PIN-VERIFICATION.json": "c04a21b7d80d2c5eb185d86754cef5c8eee5e3fbf212354dbb89be29c496df82",
+    "audits/mobile-journey-candidate-v70/amendment-02/AMENDMENT-DIFF.patch": "1f441030a7d29b41a15827af08d6230995dbf81e3cfbbc6db205cd0b78066d7b",
+    "audits/mobile-journey-candidate-v70/amendment-02/REVIEWED-INPUTS.sha256": "166407abfa98782be278819ba9d4761fc1ee7044182846fcbf6cc3166ea784e5",
+    "audits/mobile-journey-candidate-v70/amendment-02/reviewed-amendment/README.md": "a266ba9568015e98ec4177c74bced9ae310ca46a3d5967b12f4a3d27a32d79b6",
+    "audits/mobile-journey-candidate-v70/amendment-02/reviewed-amendment/amendment.json": "0335e729f991e4f9f81d6690f06881c9eb4701d690e56ba50d1d48298123d231",
+    "audits/mobile-journey-candidate-v70/amendment-02/reviewed-amendment/before/src/components/discovery.tsx": "9d84e5c5def37b9e996bfd5a031f6003e47f552a0775a467d9d2894e2c23270e",
+    "audits/mobile-journey-candidate-v70/amendment-02/reviewed-amendment/before/tests/action-feedback.test.ts": "5317b094a2ede4f1e62b1f6b9a559541db8bd5aa41843512cc06ceca90940c80",
+    "audits/mobile-journey-candidate-v70/amendment-02/reviewed-amendment/before-pins.json": "b5ba2891e59e4f287d7e7ca22cceed0788d7900680531501250dd793f4b3436e",
+    "audits/mobile-journey-candidate-v70/amendment-02/reviewed-amendment/candidate/src/components/discovery.tsx": "7424fc73b5936a08912452b9fb102fb3691f1672ec7d599aa7d9bca57c352169",
+    "audits/mobile-journey-candidate-v70/amendment-02/reviewed-amendment/candidate/tests/action-feedback.test.ts": "beb00ccc17ce4ccc3c8d4e1ab5dad14d0a32bb76caf286ad2ec53a82c46ff093",
+    "audits/mobile-journey-candidate-v70/amendment-02/final-overlay/src/app/globals.css": "9964715a140f82beac51022eb942f16670d4a27c1f9f3c54cb34d69edb22b743",
+    "audits/mobile-journey-candidate-v70/amendment-02/final-overlay/src/components/discovery.tsx": "7424fc73b5936a08912452b9fb102fb3691f1672ec7d599aa7d9bca57c352169",
+    "audits/mobile-journey-candidate-v70/amendment-02/final-overlay/src/components/explorer.tsx": "1f93ed039ae18cc3e1116110e5d46b20c047d70c8f35bbd8c0ffd1e4c1eb56c3",
+    "audits/mobile-journey-candidate-v70/amendment-02/final-overlay/src/components/fleet-experience.tsx": "be4db552b33d19142111b046a5cf850cb1f075952b27c2075dfac1eee160a065",
+    "audits/mobile-journey-candidate-v70/amendment-02/final-overlay/src/components/visual-action-feedback.tsx": "11464bac80fd074f058f3f98930be7579c02d95b65b63a2d4d16b837b2136ecf",
+    "audits/mobile-journey-candidate-v70/amendment-02/final-overlay/src/lib/action-feedback.ts": "0585c13521cf12106ebb20699c14bf46e1754e1aa13a8e4f6c0afb6481368b98",
+    "audits/mobile-journey-candidate-v70/amendment-02/final-overlay/src/lib/explorer-state.ts": "27637b9ed5e393e28a1a746cd48462d21d9479df339867c45657bba3d73dbd5a",
+    "audits/mobile-journey-candidate-v70/amendment-02/final-overlay/tests/action-feedback.test.ts": "beb00ccc17ce4ccc3c8d4e1ab5dad14d0a32bb76caf286ad2ec53a82c46ff093",
+    "audits/mobile-journey-candidate-v70/amendment-02/final-overlay/tests/discovery-feedback.test.ts": "9011450a599fd89ec05675c808370323a8bf6325242ee23c551d61e0006d99cb",
+    "audits/mobile-journey-candidate-v70/amendment-02/final-overlay/tests/explorer-state.test.ts": "57749c0a6b81cd89878d6dd65d52203272c00b4eb5cc9ba03a008234a03f9472",
+    "audits/mobile-journey-candidate-v70/amendment-02/final-overlay/tests/home-hero.test.ts": "80aa2193b930055cf8770f94206e832ae4986f13ac38816da0a2c56cc091731a",
+    "audits/mobile-journey-candidate-v70/amendment-02/prior-attempt-logs/roadmark-70-focused.log": "8ff5817ada130a8f338f4554a8ee9c185e33e121dbdf6d99205ba416538a5648",
+    "audits/mobile-journey-candidate-v70/amendment-02/prior-attempt-logs/roadmark-70-lint.log": "6a7d68a796b993d72464d333c4a6f54762989fe943e7bcffe5297455ee64c5a1",
+    "audits/mobile-journey-candidate-v70/amendment-02/prior-attempt-logs/roadmark-70-tests-no-http.log": "f0758ff0fb662f3b231cd8f0904b25c318951a98715aeef5ebf907f8307e539b",
+    "audits/mobile-journey-candidate-v70/amendment-02/prior-attempt-logs/roadmark-70-types.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "audits/mobile-journey-candidate-v70/amendment-02/protected-visual-input-pins.json": "bc0f9abe4697b8f0de7ad90f4f3b850aa6a4fa2e415621bf673fc1da066d64cb",
+    "mobile-journey-integration-v70-amendment-02/candidate/src/components/discovery.tsx": "7424fc73b5936a08912452b9fb102fb3691f1672ec7d599aa7d9bca57c352169",
+    "mobile-journey-integration-v70-amendment-02/candidate/tests/action-feedback.test.ts": "beb00ccc17ce4ccc3c8d4e1ab5dad14d0a32bb76caf286ad2ec53a82c46ff093",
+    "mobile-journey-integration-v70-amendment-02/amendment.json": "0335e729f991e4f9f81d6690f06881c9eb4701d690e56ba50d1d48298123d231"
+  },
+  "lastReviewedAtUTC": "2026-10-11T03:35:19.208586+00:00"
+}

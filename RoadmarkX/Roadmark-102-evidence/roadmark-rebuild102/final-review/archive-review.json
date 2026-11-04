@@ -1,0 +1,52 @@
+{
+  "schema": "roadmark102.independent-source-preview-archive-review.v1",
+  "reviewedAtUTC": "2026-10-13T00:14:18.669469+00:00",
+  "decision": "PASS_STANDALONE_SOURCE_AND_MATCHING_PREVIEW_INTEGRITY",
+  "archives": [
+    {
+      "archive": {
+        "name": "Roadmark-102-source.zip",
+        "bytes": 49135311,
+        "sha256": "13a9c0f32f7a35839fde6377d33c873770e7b9aadee76d7b27f8db60fa9ff09d",
+        "members": 2823
+      },
+      "CRCAllMembersPass": true,
+      "noDuplicateUnsafeSymlinkEncryptedOrDirectoryMembers": true,
+      "allManifestMembersBytesAndHashesExact": true,
+      "selfManifestExcludedOnly": true,
+      "manifestSHA256": "ee0e4ebda5fea9759297ef20c816ed72a3582cc109814b5b677fada72db81c46",
+      "qaInputCount": 2820,
+      "qaInputMapExact": true,
+      "historicalSourceManifestMatchesPreQAGuard": true,
+      "sourceRequiredMembersExact": true,
+      "hasPackageAndLockfile": true,
+      "hasEveryFrozenInputWithoutPredecessorPatchChain": true,
+      "noDependenciesBuildVCSPrivateQueueOrEnvironmentFiles": true,
+      "recoveryInstructions": "ROADMARK CHECKPOINT 102 — START HERE\nSaved 13 October 2026 UTC. Verified development checkpoint; NOT a completed public release.\n\nThis is a standalone source archive. Extract into a NEW folder. It contains all 2,820 checked source/history inputs plus the original historical CHECKPOINT-SOURCE-MANIFEST.json. No checkpoint100/101 patch chain is required. SOURCE-MANIFEST102.json is the current package authority; older README/checkpoint documents inside roadmark/ remain historical and may describe91 or a candidate stage.\n\nKeep this original ZIP unchanged. Edit a separate extracted working copy. Do not discard your previous backups. The earlier research recovery index and full lost audit history have not been restored.\n\nSTART DEVELOPMENT\nInstall Node22 or newer (tested24.19.0) and pnpm. The project declares pnpm11.19.0; the verification environment used11.25.0. From roadmark/:\npnpm install --frozen-lockfile --ignore-scripts\npnpm check:market-view\npnpm dev\nUse the local URL printed by the server. For checks: pnpm validate; pnpm test; pnpm typecheck; pnpm lint; pnpm build. Historical source fingerprints intentionally fail if protected files drift; do not casually rewrite or disable history tests.\n\nPREVIEW\nThe matching Roadmark-102-portable-preview.zip contains four generated HTML aliases under roadmark/. Merge these into this extracted roadmark/ folder if using pnpm preview:review, which serves http://127.0.0.1:3013/index.html. A standalone preview can instead be served with Python as described in that ZIP. file:// opening was not tested.\n\nVERIFIED\n1,043 tests (1,042 nonHTTP +1 localHTTP), typecheck, lint, data validation,391 production pages and portable generation passed. BuildID: SCilKbWANhL34GKoq5Td2. Scoped market and nine-point ModelY hero journeys passed production+portable HTTP at1180px and400CSSpx desktop-Chromium widths. This is NOT real iPhone/Android signoff. All four generated HTML aliases are37,037,396bytes, SHA25697e5186cacce6062d8e7c088f7c36f9cc71fe4f79a36807a7ee7cb2b7877652c.\n\nSCOPE / REMAINING\n243 audit records;148 unresolved entries;395 named audit configurations;55 records lack exact trim sets. These are not buyable-stock counts. Detailed catalogue345 configurations/150 families,333 summaries,2,202 source records. Market completeness, exact-trim/stock verification, real-phone journeys, full design/accessibility/performance signoff, operational correction workflow and deployment remain open. Original ModelY hero and nine selling points remain intact.\n\nHANDOVER\nRead Roadmark-handover-and-resume.docx for architecture, completed/remaining goal status, safe edit workflow, release gates and resumption instructions. Roadmark-102-evidence.zip contains execution/proof/browser-text/research evidence. Exclude node_modules/, .next/, secrets and private .roadmark/review-queue from anything you return. Return your modified source with a change note; your edits become the new starting point. Development is paused after this handover until you ask to resume.\n"
+    },
+    {
+      "archive": {
+        "name": "Roadmark-102-portable-preview.zip",
+        "bytes": 16435592,
+        "sha256": "a733b6778701d48f2231ffcd0d012cf9268cf49f3e11bddc6b8330539cb38d5b",
+        "members": 6
+      },
+      "CRCAllMembersPass": true,
+      "noDuplicateUnsafeSymlinkEncryptedOrDirectoryMembers": true,
+      "allManifestMembersBytesAndHashesExact": true,
+      "selfManifestExcludedOnly": true,
+      "manifestSHA256": "0d5244ca073de18db4fd5354ea96861f71d2af46332d8761b5288cc20bec2ff3",
+      "matchingSourceArchiveIdentityExact": true,
+      "aliasesExactCurrentQAProducerBytes": true,
+      "aliasCount": 4,
+      "aliasBytes": 37037396,
+      "aliasSHA256": "97e5186cacce6062d8e7c088f7c36f9cc71fe4f79a36807a7ee7cb2b7877652c",
+      "sourcePreviewRootBoth": "roadmark/",
+      "mergeCreatesNoSourceFileCollision": true,
+      "recoveryInstructions": "ROADMARK CHECKPOINT102 PORTABLE PREVIEW\nThis matches Roadmark-102-source.zip, build SCilKbWANhL34GKoq5Td2. Development preview, not public release approval.\nExtract into a new folder. From its roadmark/ directory run:\npython3 -m http.server 3013 --bind 127.0.0.1\nThen open http://127.0.0.1:3013/index.html\nMarket route: http://127.0.0.1:3013/index.html?page=%2Fmarket\nAll assets/data are embedded; four identical aliases are included for compatibility. Direct file:// use is untested. Local HTTP preview has no live shared correction backend. To run the read-only review route, merge these generated files into the extracted102 source and use pnpm preview:review. Use the source archive, not generatedHTML, for editing. Read the separate comprehensive handover DOCX and retain evidence ZIP. Real-phone signoff and full-market audit remain open.\n"
+    }
+  ],
+  "restorationBoundary": "Every archived file was read and hashed in memory; full source content and the four generated aliases can be restored together under the common roadmark/ root with no collision or predecessor patch chain. No cold install, execution, filesystem extraction, direct file:// run, dependency verification, or deployment was performed in this independent archive review. QA applies to the byte-identical original source/output evidence.",
+  "evidenceArchive": "Root will package these final review files with execution/proof/browser/research evidence. The evidence ZIP hash must be verified separately outside itself; no circular internal evidence-archive hash is claimed.",
+  "releaseApproved": false
+}

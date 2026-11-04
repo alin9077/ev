@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "roadmark99.static-semantic-binding-reference.v1",
+  "scope": "Root may use the semanticReview object after inspecting its pinned static evidence. All browser, geometry, artifact and integration-disposition fields require separate actual observations. Frozen templates remain unchanged.",
+  "candidateManifestSHA256": "c710eb25970241c720c8695024f66a31cbaaaa2e6dd4b101143b531a02ae0850",
+  "qaCandidateManifestSHA256": "51e2b73e998f80b4fd10260df54c97ba8d337642c384a4c57606e58875ee590a",
+  "expectedInputsSHA256": "4a4204128daf108f35296c77d3beb4476a453c98ab571648da9d85b1b0085e86",
+  "semanticReview": {
+    "twoSourceBoundConfigurationsOnly": true,
+    "rankingAndCompletenessRemainFalse": true,
+    "manufacturerMYVINBuildAndAvailabilityUnknownsRetained": true,
+    "batteryGrossUsableUnknownsRetained": true,
+    "cargoClimateScreenConflictsRetained": true,
+    "buyerSummaryGuardsReviewed": true,
+    "noUnreviewedSafetyColourPayloadOrDeliveryClaims": true,
+    "priorSourceEvidenceAndConflictsRetained": true,
+    "configurations": [
+      {
+        "route": "/cars/mazda-cx6e-au-aug2026/e35-gt-20261012",
+        "grade": "E35 GT",
+        "sourceBoundOnly": true,
+        "rankingEligible": false,
+        "completeCurrentVehicleEligible": false,
+        "manufacturerModelYear": null,
+        "batteryUsableKWh": null,
+        "batteryGrossKWh": null,
+        "normalizedCargoLitres": null,
+        "normalizedClimateZones": null,
+        "normalizedScreenInches": null
+      },
+      {
+        "route": "/cars/mazda-cx6e-au-aug2026/e35-azami-20261012",
+        "grade": "E35 Azami",
+        "sourceBoundOnly": true,
+        "rankingEligible": false,
+        "completeCurrentVehicleEligible": false,
+        "manufacturerModelYear": null,
+        "batteryUsableKWh": null,
+        "batteryGrossKWh": null,
+        "normalizedCargoLitres": null,
+        "normalizedClimateZones": null,
+        "normalizedScreenInches": null
+      }
+    ],
+    "evidence": [
+      {
+        "path": "roadmark-research/review-mazda-trim99/final-revision4-semantic-evidence.json",
+        "sha256": "49fdb0d720c369afc6888ce4124f1d553437aa5ba0691d2d272b618816316ad5",
+        "bytes": 95460
+      }
+    ]
+  },
+  "doNotFillFromThisReference": [
+    "observedAtUTC",
+    "productionBuildID",
+    "portableSHA256",
+    "portableBytes",
+    "observations",
+    "checks",
+    "integrationDisposition",
+    "evidencePreservation.emittedArtifactComparisonAccountsForReviewedCandidateDelta",
+    "evidencePreservation.allOtherBaselineInputsByteIdentical"
+  ],
+  "sourcePreservationEvidence": [
+    {
+      "path": "roadmark-research/review-mazda-trim99/final-revision4-semantic-evidence.json",
+      "sha256": "49fdb0d720c369afc6888ce4124f1d553437aa5ba0691d2d272b618816316ad5",
+      "bytes": 95460
+    },
+    {
+      "path": "roadmark-research/review-mazda-trim99/cumulative-revision4-review-pins.json",
+      "sha256": "50f911084cb4e1d7f986580b7a4623694a46e44581aa4866161f6916db2d2fbf",
+      "bytes": 9049
+    }
+  ]
+}

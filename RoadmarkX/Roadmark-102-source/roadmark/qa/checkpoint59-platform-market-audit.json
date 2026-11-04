@@ -1,0 +1,5885 @@
+{
+  "checkedAtUTC": "2026-10-10T22:46:05Z",
+  "status": "PASS_WITH_INTEGRATION_NOTES",
+  "scope": "Independent in-memory JSON replay, guarded failure cases, original-source spans and static schema/consumer inspection. No application imports, runtime, tests, builds, network, browser or mutations.",
+  "checksPassed": 1375,
+  "failures": [],
+  "operations": [
+    {
+      "operationId": "A-windrose-bounded-source-review",
+      "target": {
+        "id": "windrose-e700",
+        "familyId": "windrose-e700",
+        "brand": "Windrose",
+        "model": "E700"
+      },
+      "beforeCanonicalSha256": "7747fa922b8137843dd53d65221b828ae4ae2d5e3596df2f917e735d12771d9a",
+      "afterCanonicalSha256": "a67fe317945f95b3fa384c166b5cf7fb0e8766d71e47116c348dfff6b0a0005e",
+      "patchPaths": [
+        "/evidenceHistory/-",
+        "/limitations/-",
+        "/limitations/-",
+        "/limitations/-",
+        "/limitations/-",
+        "/limitations/-",
+        "/sourceUrls/-",
+        "/sourceUrls/-",
+        "/sourceUrls/-",
+        "/sourceUrls/-",
+        "/sourceUrls/-",
+        "/sourceUrls/-",
+        "/sourceArtifacts/-",
+        "/sourceArtifacts/-",
+        "/sourceArtifacts/-",
+        "/closedExactFactoryBuildCount",
+        "/boundedSourceReview"
+      ]
+    },
+    {
+      "operationId": "A-ftn-xr-bounded-source-review",
+      "target": {
+        "id": "ftn-motion-streetdog-xr",
+        "familyId": "ftn-motion-streetdog-xr",
+        "brand": "FTN Motion",
+        "model": "Streetdog XR"
+      },
+      "beforeCanonicalSha256": "8408db5822548dbe8c39db7ea3615527c25c8334d0e7fc72ca4bf2068511b22d",
+      "afterCanonicalSha256": "cdbac82088617dcf6191456ff4be700a871d92c5053a041408c6522d2d2d4433",
+      "patchPaths": [
+        "/evidenceHistory/-",
+        "/limitations/-",
+        "/limitations/-",
+        "/limitations/-",
+        "/limitations/-",
+        "/limitations/-",
+        "/limitations/-",
+        "/sourceUrls/-",
+        "/sourceUrls/-",
+        "/sourceUrls/-",
+        "/sourceUrls/-",
+        "/sourceUrls/-",
+        "/sourceUrls/-",
+        "/sourceUrls/-",
+        "/sourceArtifacts/-",
+        "/sourceArtifacts/-",
+        "/sourceArtifacts/-",
+        "/closedExactFactoryBuildCount",
+        "/boundedSourceReview"
+      ]
+    },
+    {
+      "operationId": "B-ftn-current-registration-and-delivery-wording",
+      "target": {
+        "id": "ftn-motion-streetdog-xr",
+        "familyId": "ftn-motion-streetdog-xr",
+        "brand": "FTN Motion",
+        "model": "Streetdog XR"
+      },
+      "beforeCanonicalSha256": "cdbac82088617dcf6191456ff4be700a871d92c5053a041408c6522d2d2d4433",
+      "afterCanonicalSha256": "ecbb7120e54316dba288596f05758800754e33858aff223d398aa75bcbc0c5a5",
+      "patchPaths": [
+        "/roadRegistrationStatus",
+        "/evidenceNote",
+        "/limitations/0",
+        "/limitations/2",
+        "/evidenceHistory/-"
+      ]
+    }
+  ],
+  "operationOrders": [
+    {
+      "operations": [
+        "A-windrose-bounded-source-review",
+        "A-ftn-xr-bounded-source-review",
+        "B-ftn-current-registration-and-delivery-wording"
+      ],
+      "accepted": true
+    },
+    {
+      "operations": [
+        "A-windrose-bounded-source-review",
+        "B-ftn-current-registration-and-delivery-wording",
+        "A-ftn-xr-bounded-source-review"
+      ],
+      "accepted": false
+    },
+    {
+      "operations": [
+        "A-ftn-xr-bounded-source-review",
+        "A-windrose-bounded-source-review",
+        "B-ftn-current-registration-and-delivery-wording"
+      ],
+      "accepted": true
+    },
+    {
+      "operations": [
+        "A-ftn-xr-bounded-source-review",
+        "B-ftn-current-registration-and-delivery-wording",
+        "A-windrose-bounded-source-review"
+      ],
+      "accepted": true
+    },
+    {
+      "operations": [
+        "B-ftn-current-registration-and-delivery-wording",
+        "A-windrose-bounded-source-review",
+        "A-ftn-xr-bounded-source-review"
+      ],
+      "accepted": false
+    },
+    {
+      "operations": [
+        "B-ftn-current-registration-and-delivery-wording",
+        "A-ftn-xr-bounded-source-review",
+        "A-windrose-bounded-source-review"
+      ],
+      "accepted": false
+    }
+  ],
+  "metricsBeforeAndAfter": {
+    "records": 234,
+    "uniqueIds": 234,
+    "uniqueNonNullFamilyIds": 89,
+    "namedTrimEntries": 385,
+    "recordsWithoutNamedTrims": 53,
+    "distributions": {
+      "orderStatus": {
+        "\"accepting_order_requests_advertised\"": 5,
+        "\"accepting_orders\"": 39,
+        "\"listed_unconfirmed\"": 185,
+        "\"not_current\"": 4,
+        "\"preorder\"": 1
+      },
+      "stockStatus": {
+        "\"new_stock_listed\"": 66,
+        "\"unverified\"": 168
+      },
+      "vehicleClass": {
+        "\"bus\"": 27,
+        "\"motorcycle\"": 39,
+        "\"passenger\"": 109,
+        "\"truck\"": 27,
+        "\"ute\"": 13,
+        "\"van\"": 19
+      },
+      "catalogueCoverage": {
+        "\"bounded_residual_MY24_Longitude_technical_record\"": 1,
+        "\"detailed_catalogue_integrated\"": 2,
+        "\"detailed_named_configuration_partial_equipment\"": 10,
+        "\"detailed_standard_configuration_partial_equipment\"": 5,
+        "\"exact_configuration_hold\"": 2,
+        "\"future_audit_only\"": 1,
+        "\"future_configuration_hold\"": 1,
+        "\"historical_configuration_current_availability_hold\"": 3,
+        "\"market_audit_only\"": 94,
+        "\"partial_exact_trim_facts_integrated\"": 114,
+        "\"partial_sale_offer_facts_integrated\"": 1
+      },
+      "rankingEligible": {
+        "false": 234
+      },
+      "completeVehicleCountEligible": {
+        "false": 21,
+        "null": 213
+      },
+      "trimCoverage": {
+        "\"bounded_captured_configurations_incomplete_technical_data\"": 2,
+        "\"exact_trims_unverified\"": 52,
+        "\"named_configurations_verified_options_separate\"": 10,
+        "\"one_named_residual_offer_technical_configuration_not_complete_current_grade_set\"": 1,
+        "\"partial\"": 11,
+        "\"partial_current_stock_cohort\"": 2,
+        "\"partial_order_open_only\"": 2,
+        "\"source_named_configurations\"": 41,
+        "\"standard_battery_configuration_identified_options_separate\"": 5,
+        "\"verified_named_configuration_catalogue_scope\"": 5,
+        "\"verified_named_configurations\"": 67,
+        "\"verified_named_configurations_incomplete_matrix\"": 35,
+        "\"verified_road_variants_battery_and_equipment_matrix_incomplete\"": 1
+      },
+      "exactConfigurationStatus": {
+        "\"colour_verified_trim_set_unverified\"": 2,
+        "\"exact_australian_order_configuration_unverified\"": 3,
+        "\"exact_trims_unverified\"": 7,
+        "\"four_power_labels_across_two_families_not_exhaustive_build_matrix\"": 2,
+        "\"legacy_australian_configuration_not_current_order_verified\"": 1,
+        "\"partial_or_unverified\"": 46,
+        "\"source_named_configuration_set_not_exhaustive\"": 30,
+        "\"source_named_road_variants_equipment_condition_unresolved\"": 1,
+        "null": 142
+      },
+      "modelYear": {
+        "\"\"": 1,
+        "\"2027\"": 10,
+        "\"MY2027\"": 5,
+        "\"MY25 / MY26\"": 2,
+        "\"MY25.5\"": 1,
+        "\"MY26\"": 4,
+        "\"MY26.50\"": 1,
+        "\"MY27\"": 4,
+        "2023": 2,
+        "2024": 2,
+        "2025": 5,
+        "2026": 20,
+        "2027": 7,
+        "null": 170
+      },
+      "recordScope": {
+        "\"Australian Series 1 Elettrica FWD catalogue with separate N58772 advertisement\"": 1,
+        "\"Jeep Avenger Longitude; Australian MY24 technical catalogue bound to the 10 October 2026 residual new-and-demonstrator offer\"": 1,
+        "\"Three Ford Australia 2026.00MY technical catalogue grade identities; factory build, numeric price, orders and stock unverified\"": 1,
+        "\"Two Suzuki Australia current named-grade catalogue configurations; manufacturer MY and exact builds unverified\"": 1,
+        "\"Two bounded Australian SUV catalogue grades; not complete vehicles or identified builds\"": 1,
+        "\"Two source-scoped Australian named catalogue grades; no identified factory build\"": 1,
+        "\"announced_au_model_current_supply_unconfirmed\"": 2,
+        "\"announced_subscription_eoi\"": 1,
+        "\"factory_new\"": 48,
+        "\"factory_new_chassis\"": 5,
+        "\"model_or_named_configuration_family\"": 136,
+        "\"new_road_motorcycle_offering_or_uncertain_new_supply\"": 36
+      },
+      "availabilityCategory": {
+        "\"advertised_new_order_offer_stock_separate\"": 21,
+        "\"advertised_reservation_route_order_stock_unconfirmed\"": 1,
+        "\"announced_future_delivery\"": 2,
+        "\"configuration_advertisement_order_acceptance_unverified\"": 2,
+        "\"current_listing_new_advertisement_order_acceptance_unverified\"": 4,
+        "\"current_listing_order_acceptance_unverified\"": 6,
+        "\"current_listing_order_stock_unconfirmed\"": 59,
+        "\"excluded_or_not_current_verified\"": 4,
+        "\"explicit_preorder_delivery_unverified\"": 1,
+        "\"future_or_unresolved_delivery\"": 3,
+        "\"listed_unconfirmed\"": 2,
+        "\"listing_only_current_new_supply_unconfirmed\"": 13,
+        "\"listing_only_order_stock_unconfirmed\"": 69,
+        "\"new_stock_advertised_orders_unconfirmed\"": 21,
+        "\"new_stock_listed_orders_unconfirmed\"": 1,
+        "\"new_stock_listed_orders_unverified\"": 6,
+        "\"orders_open_and_new_stock_listed\"": 1,
+        "\"orders_open_stock_unverified\"": 11,
+        "\"pre_delivery_orders_open\"": 1,
+        "\"residual_offer_new_and_demo\"": 1,
+        "\"specific_dealer_new_stock_listed\"": 4,
+        "\"subscription_expression_of_interest_only\"": 1
+      }
+    },
+    "storedCounts": {
+      "consolidatedModelAuditRecords": 234,
+      "byVehicleClass": {
+        "bus": 27,
+        "passenger": 109,
+        "truck": 27,
+        "ute": 13,
+        "van": 19,
+        "motorcycle": 39
+      },
+      "byOrderStatus": {
+        "listed_unconfirmed": 185,
+        "accepting_orders": 39,
+        "not_current": 4,
+        "preorder": 1,
+        "accepting_order_requests_advertised": 5
+      },
+      "namedTrimConfigurationEntries": 385,
+      "exactTrimSetMissingRecords": 53,
+      "newStockListedModelRecords": 66,
+      "unresolvedLeadGroups": 150,
+      "reconciledLeadGroups": 13,
+      "peripheralRecords": 5,
+      "duplicateModelMerges": 6
+    }
+  },
+  "sourceCitationCount": 163,
+  "rawSourceCount": 28,
+  "immutableSourceAndReviewFiles": 143,
+  "observedApplicationFileCount": 348,
+  "allObservedFileCount": 502,
+  "applicationMutations": 0,
+  "staticConsumerMatches": {
+    "roadRegistrationStatus": [],
+    "boundedSourceReview": [],
+    "closedExactFactoryBuildCount": [],
+    "market-inventory-2026-10-10.json": [
+      {
+        "path": "roadmark-work/roadmark/src/components/market-audit.tsx",
+        "line": 5,
+        "text": "import inventory from \"../../data/market-inventory-2026-10-10.json\";"
+      },
+      {
+        "path": "roadmark-work/roadmark/tests/bus-integration.test.ts",
+        "line": 7,
+        "text": "import market from \"../data/market-inventory-2026-10-10.json\";"
+      },
+      {
+        "path": "roadmark-work/roadmark/tests/electric-trucks-catalogue.test.ts",
+        "line": 5,
+        "text": "import audit from \"../data/market-inventory-2026-10-10.json\";"
+      },
+      {
+        "path": "roadmark-work/roadmark/tests/fonz-integration.test.ts",
+        "line": 74,
+        "text": "const inventory = (await import(\"../data/market-inventory-2026-10-10.json\")).default;"
+      },
+      {
+        "path": "roadmark-work/roadmark/tests/geely-zeekr-xpeng-catalogue.test.ts",
+        "line": 4,
+        "text": "import audit from \"../data/market-inventory-2026-10-10.json\";"
+      },
+      {
+        "path": "roadmark-work/roadmark/tests/jeep-ora-integration.test.ts",
+        "line": 106,
+        "text": "fs.readFileSync(\"data/market-inventory-2026-10-10.json\", \"utf8\"),"
+      },
+      {
+        "path": "roadmark-work/roadmark/tests/lexus-nissan-genesis-catalogue.test.ts",
+        "line": 4,
+        "text": "import audit from \"../data/market-inventory-2026-10-10.json\";"
+      },
+      {
+        "path": "roadmark-work/roadmark/tests/mache-mazda6e-integration.test.ts",
+        "line": 153,
+        "text": "fs.readFileSync(\"data/market-inventory-2026-10-10.json\", \"utf8\"),"
+      },
+      {
+        "path": "roadmark-work/roadmark/tests/market-audit.test.ts",
+        "line": 3,
+        "text": "import inventory from \"../data/market-inventory-2026-10-10.json\";"
+      },
+      {
+        "path": "roadmark-work/roadmark/tests/remaining-electric-vans-catalogue.test.ts",
+        "line": 6,
+        "text": "import audit from \"../data/market-inventory-2026-10-10.json\";"
+      },
+      {
+        "path": "roadmark-work/roadmark/tests/remaining-hyundai.test.ts",
+        "line": 7,
+        "text": "import market from \"../data/market-inventory-2026-10-10.json\";"
+      },
+      {
+        "path": "roadmark-work/roadmark/tests/remaining-passenger-catalogue.test.ts",
+        "line": 4,
+        "text": "import audit from \"../data/market-inventory-2026-10-10.json\";"
+      },
+      {
+        "path": "roadmark-work/roadmark/tests/remaining-utes-vans.test.ts",
+        "line": 15,
+        "text": "import market from \"../data/market-inventory-2026-10-10.json\";"
+      },
+      {
+        "path": "roadmark-work/roadmark/tests/road-scooters-catalogue.test.ts",
+        "line": 9,
+        "text": "import market from \"../data/market-inventory-2026-10-10.json\";"
+      }
+    ]
+  },
+  "integrationNotes": [
+    "B is required after A-FTN before describing the FTN current narrative as corrected. A alone deliberately retains the old maker-arranged text.",
+    "Reapplication fails closed on exact before-row guards; it is duplicate-safe, not a successful no-op. A future applier must distinguish already-applied from conflicting drift without appending history again.",
+    "The contract requires exactly one full identity match. Current IDs are globally unique and count invariance is verified; a future applier should also reject any concurrent duplicate stable ID/family identity, even if its other identity fields differ.",
+    "The new roadRegistrationStatus string has no enum or consuming branch in inspected app source/scripts/tests; compatibility is static metadata compatibility, not a typecheck/runtime approval.",
+    "Persisted sourceArtifacts and boundedSourceReview pointers refer to workspace research files, as existing conventions do. They are audit provenance, not verified public downloadable URLs.",
+    "Source-review completion, zero closed exact builds and availability/catalogue eligibility remain separate dimensions. Do not treat the new fields as release or ranking approval."
+  ],
+  "checks": [
+    {
+      "name": "manifest pin roadmark-work/roadmark/data/market-inventory-2026-10-10.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/audits/windrose-ftn-source-review/AMENDMENT-REVIEW.md",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/audits/windrose-ftn-source-review/amendment-check.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-work/roadmark/src/components/market-audit.tsx",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-amendments/evidence.corrected.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/source-manifest.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-amendments/evidence.corrected.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-amendments/source-manifest.corrected.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/README.md",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/evidence.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/extract_sources.py",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/packet-check.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/retained-context.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/retrieval-log.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/source-manifest.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/battery-pack-onepager.headers.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/battery-pack-onepager.html",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/battery-pack-onepager.links.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/battery-pack-onepager.text-locators.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/battery-pack-onepager.text.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/big-wheels-australia.headers.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/big-wheels-australia.html",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/big-wheels-australia.links.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/big-wheels-australia.text-locators.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/big-wheels-australia.text.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/certification.headers.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/certification.html",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/certification.links.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/certification.text-locators.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/certification.text.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/how-to-buy.headers.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/how-to-buy.html",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/how-to-buy.links.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/how-to-buy.text-locators.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/how-to-buy.text.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/how-to-service.headers.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/how-to-service.html",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/how-to-service.links.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/how-to-service.text-locators.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/how-to-service.text.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/how-to-use.headers.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/how-to-use.html",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/how-to-use.links.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/how-to-use.text-locators.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/how-to-use.text.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/site-nav-fragment.headers.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/site-nav-fragment.html",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/site-nav-fragment.links.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/site-nav-fragment.text-locators.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/site-nav-fragment.text.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/site-nav.headers.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/site-nav.js",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/specs-redirect.headers.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/specs-redirect.html",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/specs-redirect.links.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/specs-redirect.text-locators.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/specs-redirect.text.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/technology.headers.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/technology.html",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/technology.links.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/technology.text-locators.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/technology.text.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/truck.headers.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/truck.html",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/truck.links.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/truck.text-locators.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/truck.text.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/warranty-au.headers.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/warranty-au.html",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/warranty-au.links.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/warranty-au.text-locators.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/warranty-au.text.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/warranty-en.headers.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/warranty-en.html",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/warranty-en.links.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/warranty-en.text-locators.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-build-2026-10-10/sources/warranty-en.text.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/README.md",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/SHA256SUMS",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/assemble_packet.py",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/builder-options.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/capture_linked_sources.py",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/capture_sources.py",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/evidence.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/qa/order-agreement-page-1.png",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/source-manifest.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/sources/launch-retained.html",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/sources/launch-retained.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/sources/order-agreement-au.pdf",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/sources/order-agreement-au.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/sources/phantom-au.html",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/sources/phantom-au.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/sources/phantom-builder-au.builder-data.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/sources/phantom-builder-au.html",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/sources/phantom-builder-au.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/sources/phantom-xr-builder-au.builder-data.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/sources/phantom-xr-builder-au.html",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/sources/phantom-xr-builder-au.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/sources/refund-au.html",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/sources/refund-au.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/sources/refund-policy-au.pdf",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/sources/refund-policy-au.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/sources/service-au.html",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/sources/service-au.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/sources/shipping-au.html",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/sources/shipping-au.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/sources/shipping-policy-au.html",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/sources/shipping-policy-au.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/sources/shipping-retained.html",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/sources/shipping-retained.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/sources/streetdog50-crosscheck.html",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/sources/streetdog50-crosscheck.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/sources/terms-au.html",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/sources/terms-au.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/sources/xr-au.html",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/sources/xr-au.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/sources/xr-builder-au.builder-data.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/sources/xr-builder-au.html",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/sources/xr-builder-au.txt",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/validate_packet.py",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-build-2026-10-10/validation.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-amendments/README.md",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-amendments/amendment-manifest.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-amendments/evidence.corrected.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-amendments/locator-correction.diff",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-amendments/locator-correction.patch.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-amendments/original-hashes.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-amendments/verification.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/windrose-au-amendments/verify_amendment.py",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-amendments/README.md",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-amendments/SHA256SUMS",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-amendments/amendment-ledger.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-amendments/apply_amendment.py",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-amendments/evidence.corrected.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-amendments/evidence.patch.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-amendments/original-packet-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-amendments/source-hashes.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-amendments/source-manifest.corrected.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-amendments/source-manifest.patch.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/ftn-xr-au-amendments/verification.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/audits/windrose-ftn-source-review/AMENDMENT-REVIEW.md",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/audits/windrose-ftn-source-review/README.md",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/audits/windrose-ftn-source-review/SHA256SUMS",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/audits/windrose-ftn-source-review/amendment-check.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/audits/windrose-ftn-source-review/audit-checks.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/audits/windrose-ftn-source-review/audit_amendments.py",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/audits/windrose-ftn-source-review/audit_sources.py",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/audits/windrose-ftn-source-review/input-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/audits/windrose-ftn-source-review/order-agreement-original-page-1.png",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/audits/windrose-ftn-source-review/refund-policy-original-page-1.png",
+      "passed": true
+    },
+    {
+      "name": "manifest pin roadmark-research/audits/windrose-ftn-source-review/semantic-review.json",
+      "passed": true
+    },
+    {
+      "name": "proposal checksum README.md",
+      "passed": true
+    },
+    {
+      "name": "proposal checksum additive-record-proposals.json",
+      "passed": true
+    },
+    {
+      "name": "proposal checksum expected-final-records.json",
+      "passed": true
+    },
+    {
+      "name": "proposal checksum ftn-current-wording-correction.json",
+      "passed": true
+    },
+    {
+      "name": "proposal checksum input-manifest.json",
+      "passed": true
+    },
+    {
+      "name": "proposal checksum prepare_proposals.py",
+      "passed": true
+    },
+    {
+      "name": "proposal checksum proposal-integrity-check.json",
+      "passed": true
+    },
+    {
+      "name": "proposal checksum record-baseline-snapshots.json",
+      "passed": true
+    },
+    {
+      "name": "proposal checksum root-decisions.json",
+      "passed": true
+    },
+    {
+      "name": "proposal checksum source-locator-index.json",
+      "passed": true
+    },
+    {
+      "name": "baseline inventory raw pin",
+      "passed": true
+    },
+    {
+      "name": "exactly two additive and one separate correction",
+      "passed": true
+    },
+    {
+      "name": "all current record IDs unique",
+      "passed": true
+    },
+    {
+      "name": "B follows named FTN additive operation",
+      "passed": true
+    },
+    {
+      "name": "B full input is exactly A-FTN output",
+      "passed": true
+    },
+    {
+      "name": "A-windrose-bounded-source-review exact identity keys",
+      "passed": true
+    },
+    {
+      "name": "A-windrose-bounded-source-review whole-record first patch test",
+      "passed": true
+    },
+    {
+      "name": "A-windrose-bounded-source-review input canonical hash",
+      "passed": true
+    },
+    {
+      "name": "A-windrose-bounded-source-review output canonical hash",
+      "passed": true
+    },
+    {
+      "name": "A-windrose-bounded-source-review guarded row identity",
+      "passed": true
+    },
+    {
+      "name": "A-windrose-bounded-source-review independent patch replay",
+      "passed": true
+    },
+    {
+      "name": "A-windrose-bounded-source-review history preserves complete prior row",
+      "passed": true
+    },
+    {
+      "name": "A-windrose-bounded-source-review prior history prefix preserved",
+      "passed": true
+    },
+    {
+      "name": "A-ftn-xr-bounded-source-review exact identity keys",
+      "passed": true
+    },
+    {
+      "name": "A-ftn-xr-bounded-source-review whole-record first patch test",
+      "passed": true
+    },
+    {
+      "name": "A-ftn-xr-bounded-source-review input canonical hash",
+      "passed": true
+    },
+    {
+      "name": "A-ftn-xr-bounded-source-review output canonical hash",
+      "passed": true
+    },
+    {
+      "name": "A-ftn-xr-bounded-source-review guarded row identity",
+      "passed": true
+    },
+    {
+      "name": "A-ftn-xr-bounded-source-review independent patch replay",
+      "passed": true
+    },
+    {
+      "name": "A-ftn-xr-bounded-source-review history preserves complete prior row",
+      "passed": true
+    },
+    {
+      "name": "A-ftn-xr-bounded-source-review prior history prefix preserved",
+      "passed": true
+    },
+    {
+      "name": "B-ftn-current-registration-and-delivery-wording exact identity keys",
+      "passed": true
+    },
+    {
+      "name": "B-ftn-current-registration-and-delivery-wording whole-record first patch test",
+      "passed": true
+    },
+    {
+      "name": "B-ftn-current-registration-and-delivery-wording input canonical hash",
+      "passed": true
+    },
+    {
+      "name": "B-ftn-current-registration-and-delivery-wording output canonical hash",
+      "passed": true
+    },
+    {
+      "name": "B-ftn-current-registration-and-delivery-wording guarded row identity",
+      "passed": true
+    },
+    {
+      "name": "B-ftn-current-registration-and-delivery-wording independent patch replay",
+      "passed": true
+    },
+    {
+      "name": "B-ftn-current-registration-and-delivery-wording history preserves complete prior row",
+      "passed": true
+    },
+    {
+      "name": "B-ftn-current-registration-and-delivery-wording prior history prefix preserved",
+      "passed": true
+    },
+    {
+      "name": "windrose-e700 snapshot equals target baseline",
+      "passed": true
+    },
+    {
+      "name": "windrose-e700 only add/test operations",
+      "passed": true
+    },
+    {
+      "name": "windrose-e700 no existing object keys overwritten",
+      "passed": true
+    },
+    {
+      "name": "windrose-e700 original value/prefix preserved familyId",
+      "passed": true
+    },
+    {
+      "name": "windrose-e700 original value/prefix preserved brand",
+      "passed": true
+    },
+    {
+      "name": "windrose-e700 original value/prefix preserved model",
+      "passed": true
+    },
+    {
+      "name": "windrose-e700 original value/prefix preserved vehicleType",
+      "passed": true
+    },
+    {
+      "name": "windrose-e700 original value/prefix preserved class",
+      "passed": true
+    },
+    {
+      "name": "windrose-e700 original value/prefix preserved trims",
+      "passed": true
+    },
+    {
+      "name": "windrose-e700 original value/prefix preserved sourceUrls",
+      "passed": true
+    },
+    {
+      "name": "windrose-e700 original value/prefix preserved checkedAt",
+      "passed": true
+    },
+    {
+      "name": "windrose-e700 original value/prefix preserved orderStatus",
+      "passed": true
+    },
+    {
+      "name": "windrose-e700 original value/prefix preserved stockStatus",
+      "passed": true
+    },
+    {
+      "name": "windrose-e700 original value/prefix preserved evidenceNote",
+      "passed": true
+    },
+    {
+      "name": "windrose-e700 original value/prefix preserved limitations",
+      "passed": true
+    },
+    {
+      "name": "windrose-e700 original value/prefix preserved recordScope",
+      "passed": true
+    },
+    {
+      "name": "windrose-e700 original value/prefix preserved vehicleClass",
+      "passed": true
+    },
+    {
+      "name": "windrose-e700 original value/prefix preserved aliases",
+      "passed": true
+    },
+    {
+      "name": "windrose-e700 original value/prefix preserved roadRegistrationScope",
+      "passed": true
+    },
+    {
+      "name": "windrose-e700 original value/prefix preserved canonicalBrand",
+      "passed": true
+    },
+    {
+      "name": "windrose-e700 original value/prefix preserved canonicalModel",
+      "passed": true
+    },
+    {
+      "name": "windrose-e700 original value/prefix preserved exactConfigurationStatus",
+      "passed": true
+    },
+    {
+      "name": "windrose-e700 original value/prefix preserved id",
+      "passed": true
+    },
+    {
+      "name": "windrose-e700 original value/prefix preserved modelAliases",
+      "passed": true
+    },
+    {
+      "name": "windrose-e700 original value/prefix preserved sourceRecordIds",
+      "passed": true
+    },
+    {
+      "name": "windrose-e700 original value/prefix preserved sourceArtifacts",
+      "passed": true
+    },
+    {
+      "name": "windrose-e700 original value/prefix preserved rankingEligible",
+      "passed": true
+    },
+    {
+      "name": "windrose-e700 original value/prefix preserved trimCoverage",
+      "passed": true
+    },
+    {
+      "name": "windrose-e700 original value/prefix preserved evidenceHistory",
+      "passed": true
+    },
+    {
+      "name": "windrose-e700 original value/prefix preserved modelYear",
+      "passed": true
+    },
+    {
+      "name": "windrose-e700 original value/prefix preserved catalogueCoverage",
+      "passed": true
+    },
+    {
+      "name": "windrose-e700 original value/prefix preserved availabilityCategory",
+      "passed": true
+    },
+    {
+      "name": "windrose-e700 original value/prefix preserved completeVehicleCountEligible",
+      "passed": true
+    },
+    {
+      "name": "windrose-e700 no duplicate references sourceUrls",
+      "passed": true
+    },
+    {
+      "name": "windrose-e700 no duplicate references sourceArtifacts",
+      "passed": true
+    },
+    {
+      "name": "windrose-e700 no alternate same id/family identity",
+      "passed": true
+    },
+    {
+      "name": "ftn-motion-streetdog-xr snapshot equals target baseline",
+      "passed": true
+    },
+    {
+      "name": "ftn-motion-streetdog-xr only add/test operations",
+      "passed": true
+    },
+    {
+      "name": "ftn-motion-streetdog-xr no existing object keys overwritten",
+      "passed": true
+    },
+    {
+      "name": "ftn-motion-streetdog-xr original value/prefix preserved id",
+      "passed": true
+    },
+    {
+      "name": "ftn-motion-streetdog-xr original value/prefix preserved brand",
+      "passed": true
+    },
+    {
+      "name": "ftn-motion-streetdog-xr original value/prefix preserved model",
+      "passed": true
+    },
+    {
+      "name": "ftn-motion-streetdog-xr original value/prefix preserved vehicleClass",
+      "passed": true
+    },
+    {
+      "name": "ftn-motion-streetdog-xr original value/prefix preserved vehicleType",
+      "passed": true
+    },
+    {
+      "name": "ftn-motion-streetdog-xr original value/prefix preserved motorcycleSubtype",
+      "passed": true
+    },
+    {
+      "name": "ftn-motion-streetdog-xr original value/prefix preserved trims",
+      "passed": true
+    },
+    {
+      "name": "ftn-motion-streetdog-xr original value/prefix preserved modelYear",
+      "passed": true
+    },
+    {
+      "name": "ftn-motion-streetdog-xr original value/prefix preserved checkedAt",
+      "passed": true
+    },
+    {
+      "name": "ftn-motion-streetdog-xr original value/prefix preserved reverifiedAt",
+      "passed": true
+    },
+    {
+      "name": "ftn-motion-streetdog-xr original value/prefix preserved sourceUrls",
+      "passed": true
+    },
+    {
+      "name": "ftn-motion-streetdog-xr original value/prefix preserved orderStatus",
+      "passed": true
+    },
+    {
+      "name": "ftn-motion-streetdog-xr original value/prefix preserved stockStatus",
+      "passed": true
+    },
+    {
+      "name": "ftn-motion-streetdog-xr original value/prefix preserved roadRegistrationStatus",
+      "passed": true
+    },
+    {
+      "name": "ftn-motion-streetdog-xr original value/prefix preserved evidenceNote",
+      "passed": true
+    },
+    {
+      "name": "ftn-motion-streetdog-xr original value/prefix preserved limitations",
+      "passed": true
+    },
+    {
+      "name": "ftn-motion-streetdog-xr original value/prefix preserved rankingEligible",
+      "passed": true
+    },
+    {
+      "name": "ftn-motion-streetdog-xr original value/prefix preserved supplierContinuityNote",
+      "passed": true
+    },
+    {
+      "name": "ftn-motion-streetdog-xr original value/prefix preserved familyId",
+      "passed": true
+    },
+    {
+      "name": "ftn-motion-streetdog-xr original value/prefix preserved sourceRecordIds",
+      "passed": true
+    },
+    {
+      "name": "ftn-motion-streetdog-xr original value/prefix preserved sourceArtifacts",
+      "passed": true
+    },
+    {
+      "name": "ftn-motion-streetdog-xr original value/prefix preserved catalogueCoverage",
+      "passed": true
+    },
+    {
+      "name": "ftn-motion-streetdog-xr original value/prefix preserved canonicalBrand",
+      "passed": true
+    },
+    {
+      "name": "ftn-motion-streetdog-xr original value/prefix preserved canonicalModel",
+      "passed": true
+    },
+    {
+      "name": "ftn-motion-streetdog-xr original value/prefix preserved roadRegistrationScope",
+      "passed": true
+    },
+    {
+      "name": "ftn-motion-streetdog-xr original value/prefix preserved completeVehicleCountEligible",
+      "passed": true
+    },
+    {
+      "name": "ftn-motion-streetdog-xr original value/prefix preserved exactConfigurationStatus",
+      "passed": true
+    },
+    {
+      "name": "ftn-motion-streetdog-xr original value/prefix preserved trimCoverage",
+      "passed": true
+    },
+    {
+      "name": "ftn-motion-streetdog-xr original value/prefix preserved recordScope",
+      "passed": true
+    },
+    {
+      "name": "ftn-motion-streetdog-xr original value/prefix preserved evidenceHistory",
+      "passed": true
+    },
+    {
+      "name": "ftn-motion-streetdog-xr original value/prefix preserved availabilityCategory",
+      "passed": true
+    },
+    {
+      "name": "ftn-motion-streetdog-xr original value/prefix preserved motorcycleComparisonGroup",
+      "passed": true
+    },
+    {
+      "name": "ftn-motion-streetdog-xr no duplicate references sourceUrls",
+      "passed": true
+    },
+    {
+      "name": "ftn-motion-streetdog-xr no duplicate references sourceArtifacts",
+      "passed": true
+    },
+    {
+      "name": "ftn-motion-streetdog-xr no alternate same id/family identity",
+      "passed": true
+    },
+    {
+      "name": "B exactly four declared metadata replacements",
+      "passed": true
+    },
+    {
+      "name": "B unchanged other field id",
+      "passed": true
+    },
+    {
+      "name": "B unchanged other field brand",
+      "passed": true
+    },
+    {
+      "name": "B unchanged other field model",
+      "passed": true
+    },
+    {
+      "name": "B unchanged other field vehicleClass",
+      "passed": true
+    },
+    {
+      "name": "B unchanged other field vehicleType",
+      "passed": true
+    },
+    {
+      "name": "B unchanged other field motorcycleSubtype",
+      "passed": true
+    },
+    {
+      "name": "B unchanged other field trims",
+      "passed": true
+    },
+    {
+      "name": "B unchanged other field modelYear",
+      "passed": true
+    },
+    {
+      "name": "B unchanged other field checkedAt",
+      "passed": true
+    },
+    {
+      "name": "B unchanged other field reverifiedAt",
+      "passed": true
+    },
+    {
+      "name": "B unchanged other field sourceUrls",
+      "passed": true
+    },
+    {
+      "name": "B unchanged other field orderStatus",
+      "passed": true
+    },
+    {
+      "name": "B unchanged other field stockStatus",
+      "passed": true
+    },
+    {
+      "name": "B unchanged other field rankingEligible",
+      "passed": true
+    },
+    {
+      "name": "B unchanged other field supplierContinuityNote",
+      "passed": true
+    },
+    {
+      "name": "B unchanged other field familyId",
+      "passed": true
+    },
+    {
+      "name": "B unchanged other field sourceRecordIds",
+      "passed": true
+    },
+    {
+      "name": "B unchanged other field sourceArtifacts",
+      "passed": true
+    },
+    {
+      "name": "B unchanged other field catalogueCoverage",
+      "passed": true
+    },
+    {
+      "name": "B unchanged other field canonicalBrand",
+      "passed": true
+    },
+    {
+      "name": "B unchanged other field canonicalModel",
+      "passed": true
+    },
+    {
+      "name": "B unchanged other field roadRegistrationScope",
+      "passed": true
+    },
+    {
+      "name": "B unchanged other field completeVehicleCountEligible",
+      "passed": true
+    },
+    {
+      "name": "B unchanged other field exactConfigurationStatus",
+      "passed": true
+    },
+    {
+      "name": "B unchanged other field trimCoverage",
+      "passed": true
+    },
+    {
+      "name": "B unchanged other field recordScope",
+      "passed": true
+    },
+    {
+      "name": "B unchanged other field availabilityCategory",
+      "passed": true
+    },
+    {
+      "name": "B unchanged other field motorcycleComparisonGroup",
+      "passed": true
+    },
+    {
+      "name": "B unchanged other field closedExactFactoryBuildCount",
+      "passed": true
+    },
+    {
+      "name": "B unchanged other field boundedSourceReview",
+      "passed": true
+    },
+    {
+      "name": "B unchanged limitation 1",
+      "passed": true
+    },
+    {
+      "name": "B unchanged limitation 3",
+      "passed": true
+    },
+    {
+      "name": "B unchanged limitation 4",
+      "passed": true
+    },
+    {
+      "name": "B unchanged limitation 5",
+      "passed": true
+    },
+    {
+      "name": "B unchanged limitation 6",
+      "passed": true
+    },
+    {
+      "name": "B unchanged limitation 7",
+      "passed": true
+    },
+    {
+      "name": "B unchanged limitation 8",
+      "passed": true
+    },
+    {
+      "name": "B unchanged limitation 9",
+      "passed": true
+    },
+    {
+      "name": "B unchanged limitation 10",
+      "passed": true
+    },
+    {
+      "name": "B limitation length unchanged",
+      "passed": true
+    },
+    {
+      "name": "final fixture windrose-e700",
+      "passed": true
+    },
+    {
+      "name": "final fixture ftn-motion-streetdog-xr",
+      "passed": true
+    },
+    {
+      "name": "all 232 unrelated rows exactly unchanged",
+      "passed": true
+    },
+    {
+      "name": "all non-record inventory fields unchanged",
+      "passed": true
+    },
+    {
+      "name": "entire count/classification summary invariant",
+      "passed": true
+    },
+    {
+      "name": "inventory stored record total agrees with actual",
+      "passed": true
+    },
+    {
+      "name": "inventory stored trim total agrees with actual",
+      "passed": true
+    },
+    {
+      "name": "inventory order counts agree with actual",
+      "passed": true
+    },
+    {
+      "name": "inventory stock count agrees with actual",
+      "passed": true
+    },
+    {
+      "name": "operation ordering A-windrose-bounded-source-review,A-ftn-xr-bounded-source-review,B-ftn-current-registration-and-delivery-wording",
+      "passed": true
+    },
+    {
+      "name": "operation ordering A-windrose-bounded-source-review,B-ftn-current-registration-and-delivery-wording,A-ftn-xr-bounded-source-review",
+      "passed": true
+    },
+    {
+      "name": "operation ordering A-ftn-xr-bounded-source-review,A-windrose-bounded-source-review,B-ftn-current-registration-and-delivery-wording",
+      "passed": true
+    },
+    {
+      "name": "operation ordering A-ftn-xr-bounded-source-review,B-ftn-current-registration-and-delivery-wording,A-windrose-bounded-source-review",
+      "passed": true
+    },
+    {
+      "name": "operation ordering B-ftn-current-registration-and-delivery-wording,A-windrose-bounded-source-review,A-ftn-xr-bounded-source-review",
+      "passed": true
+    },
+    {
+      "name": "operation ordering B-ftn-current-registration-and-delivery-wording,A-ftn-xr-bounded-source-review,A-windrose-bounded-source-review",
+      "passed": true
+    },
+    {
+      "name": "reapplication rejects without mutation A-windrose-bounded-source-review",
+      "passed": true
+    },
+    {
+      "name": "reapplication rejects without mutation A-ftn-xr-bounded-source-review",
+      "passed": true
+    },
+    {
+      "name": "reapplication rejects without mutation B-ftn-current-registration-and-delivery-wording",
+      "passed": true
+    },
+    {
+      "name": "B before A rejects without mutation",
+      "passed": true
+    },
+    {
+      "name": "diagnostic indexes are unnecessary",
+      "passed": true
+    },
+    {
+      "name": "row-local operations preserve unrelated concurrent edit",
+      "passed": true
+    },
+    {
+      "name": "selected-row drift rejects A-windrose-bounded-source-review",
+      "passed": true
+    },
+    {
+      "name": "duplicate exact identity rejects A-windrose-bounded-source-review",
+      "passed": true
+    },
+    {
+      "name": "added-key collision rejects A-windrose-bounded-source-review",
+      "passed": true
+    },
+    {
+      "name": "selected-row drift rejects A-ftn-xr-bounded-source-review",
+      "passed": true
+    },
+    {
+      "name": "duplicate exact identity rejects A-ftn-xr-bounded-source-review",
+      "passed": true
+    },
+    {
+      "name": "added-key collision rejects A-ftn-xr-bounded-source-review",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 0",
+      "passed": true
+    },
+    {
+      "name": "citation root original 1",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 1",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/0/evidence/0",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 1",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 1",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 1",
+      "passed": true
+    },
+    {
+      "name": "citation root original 2",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 2",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/0/evidence/1",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 2",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 2",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 2",
+      "passed": true
+    },
+    {
+      "name": "citation root original 3",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 3",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/0/evidence/2",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 3",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 3",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 3",
+      "passed": true
+    },
+    {
+      "name": "citation root original 4",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 4",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/0/evidence/3",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 4",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 4",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 4",
+      "passed": true
+    },
+    {
+      "name": "citation root original 5",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 5",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/1/evidence/0",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 5",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 5",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 5",
+      "passed": true
+    },
+    {
+      "name": "citation root original 6",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 6",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/1/evidence/1",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 6",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 6",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 6",
+      "passed": true
+    },
+    {
+      "name": "citation root original 7",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 7",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/1/evidence/2",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/14/evidence/1",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 7",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 7",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 7",
+      "passed": true
+    },
+    {
+      "name": "citation root original 8",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 8",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/2/evidence/0",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/21/evidence/1",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 8",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 8",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 8",
+      "passed": true
+    },
+    {
+      "name": "citation root original 9",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 9",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/2/evidence/1",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/3/evidence/0",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 9",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 9",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 9",
+      "passed": true
+    },
+    {
+      "name": "citation root original 10",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 10",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/2/evidence/2",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 10",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 10",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 10",
+      "passed": true
+    },
+    {
+      "name": "citation root original 11",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 11",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/3/evidence/1",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/17/evidence/3",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 11",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 11",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 11",
+      "passed": true
+    },
+    {
+      "name": "citation root original 12",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 12",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/4/evidence/0",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 12",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 12",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 12",
+      "passed": true
+    },
+    {
+      "name": "citation root original 13",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 13",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/5/evidence/0",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 13",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 13",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 13",
+      "passed": true
+    },
+    {
+      "name": "citation root original 14",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 14",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/5/evidence/1",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 14",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 14",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 14",
+      "passed": true
+    },
+    {
+      "name": "citation root original 15",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 15",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/5/evidence/2",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 15",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 15",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 15",
+      "passed": true
+    },
+    {
+      "name": "citation root original 16",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 16",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/6/evidence/0",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 16",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 16",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 16",
+      "passed": true
+    },
+    {
+      "name": "citation root original 17",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 17",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/6/evidence/1",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 17",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 17",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 17",
+      "passed": true
+    },
+    {
+      "name": "citation root original 18",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 18",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/6/evidence/2",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 18",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 18",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 18",
+      "passed": true
+    },
+    {
+      "name": "citation root original 19",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 19",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/6/evidence/3",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 19",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 19",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 19",
+      "passed": true
+    },
+    {
+      "name": "citation root original 20",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 20",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/7/evidence/0",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 20",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 20",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 20",
+      "passed": true
+    },
+    {
+      "name": "citation root original 21",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 21",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/8/evidence/0",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 21",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 21",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 21",
+      "passed": true
+    },
+    {
+      "name": "citation root original 22",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 22",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/8/evidence/1",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 22",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 22",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 22",
+      "passed": true
+    },
+    {
+      "name": "citation root original 23",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 23",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/8/evidence/2",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 23",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 23",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 23",
+      "passed": true
+    },
+    {
+      "name": "citation root original 24",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 24",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/8/evidence/3",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 24",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 24",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 24",
+      "passed": true
+    },
+    {
+      "name": "citation root original 25",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 25",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/9/evidence/0",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 25",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 25",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 25",
+      "passed": true
+    },
+    {
+      "name": "citation root original 26",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 26",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/9/evidence/1",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/14/evidence/3",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 26",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 26",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 26",
+      "passed": true
+    },
+    {
+      "name": "citation root original 27",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 27",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/10/evidence/0",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 27",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 27",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 27",
+      "passed": true
+    },
+    {
+      "name": "citation root original 28",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 28",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/10/evidence/1",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 28",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 28",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 28",
+      "passed": true
+    },
+    {
+      "name": "citation root original 29",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 29",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/11/evidence/0",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 29",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 29",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 29",
+      "passed": true
+    },
+    {
+      "name": "citation root original 30",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 30",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/12/evidence/0",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 30",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 30",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 30",
+      "passed": true
+    },
+    {
+      "name": "citation root original 31",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 31",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/12/evidence/1",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 31",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 31",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 31",
+      "passed": true
+    },
+    {
+      "name": "citation root original 32",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 32",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/12/evidence/2",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 32",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 32",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 32",
+      "passed": true
+    },
+    {
+      "name": "citation root original 33",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 33",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/12/evidence/3",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 33",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 33",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 33",
+      "passed": true
+    },
+    {
+      "name": "citation root original 34",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 34",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/13/evidence/0",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 34",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 34",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 34",
+      "passed": true
+    },
+    {
+      "name": "citation root original 35",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 35",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/13/evidence/1",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 35",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 35",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 35",
+      "passed": true
+    },
+    {
+      "name": "citation root original 36",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 36",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/13/evidence/2",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 36",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 36",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 36",
+      "passed": true
+    },
+    {
+      "name": "citation root original 37",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 37",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/14/evidence/0",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 37",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 37",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 37",
+      "passed": true
+    },
+    {
+      "name": "citation root original 38",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 38",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/14/evidence/2",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 38",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 38",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 38",
+      "passed": true
+    },
+    {
+      "name": "citation root original 39",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 39",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/14/evidence/4",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 39",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 39",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 39",
+      "passed": true
+    },
+    {
+      "name": "citation root original 40",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 40",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/15/evidence/0",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 40",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 40",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 40",
+      "passed": true
+    },
+    {
+      "name": "citation root original 41",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 41",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/15/evidence/1",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 41",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 41",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 41",
+      "passed": true
+    },
+    {
+      "name": "citation root original 42",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 42",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/16/evidence/0",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 42",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 42",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 42",
+      "passed": true
+    },
+    {
+      "name": "citation root original 43",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 43",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/16/evidence/1",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 43",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 43",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 43",
+      "passed": true
+    },
+    {
+      "name": "citation root original 44",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 44",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/16/evidence/2",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 44",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 44",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 44",
+      "passed": true
+    },
+    {
+      "name": "citation root original 45",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 45",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/17/evidence/0",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 45",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 45",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 45",
+      "passed": true
+    },
+    {
+      "name": "citation root original 46",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 46",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/17/evidence/1",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 46",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 46",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 46",
+      "passed": true
+    },
+    {
+      "name": "citation root original 47",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 47",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/17/evidence/2",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 47",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 47",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 47",
+      "passed": true
+    },
+    {
+      "name": "citation root original 48",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 48",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/18/evidence/0",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 48",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 48",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 48",
+      "passed": true
+    },
+    {
+      "name": "citation root original 49",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 49",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/18/evidence/1",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 49",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 49",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 49",
+      "passed": true
+    },
+    {
+      "name": "citation root original 50",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 50",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/18/evidence/2",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 50",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 50",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 50",
+      "passed": true
+    },
+    {
+      "name": "citation root original 51",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 51",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/18/evidence/3",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 51",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 51",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 51",
+      "passed": true
+    },
+    {
+      "name": "citation root original 52",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 52",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/18/evidence/4",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 52",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 52",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 52",
+      "passed": true
+    },
+    {
+      "name": "citation root original 53",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 53",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/19/evidence/0",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 53",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 53",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 53",
+      "passed": true
+    },
+    {
+      "name": "citation root original 54",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 54",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/19/evidence/1",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 54",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 54",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 54",
+      "passed": true
+    },
+    {
+      "name": "citation root original 55",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 55",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/19/evidence/2",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 55",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 55",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 55",
+      "passed": true
+    },
+    {
+      "name": "citation root original 56",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 56",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/20/evidence/0",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 56",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 56",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 56",
+      "passed": true
+    },
+    {
+      "name": "citation root original 57",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 57",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object windrose/fieldEvidence/21/evidence/0",
+      "passed": true
+    },
+    {
+      "name": "raw citation root 57",
+      "passed": true
+    },
+    {
+      "name": "raw LF line bounds 57",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 57",
+      "passed": true
+    },
+    {
+      "name": "citation root original 58",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 58",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/identity/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 58",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 58",
+      "passed": true
+    },
+    {
+      "name": "citation root original 59",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 59",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/identity/sources/1",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 59",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 59",
+      "passed": true
+    },
+    {
+      "name": "citation root original 60",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 60",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/identity/sources/2",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/batteryIncludedCount/sources/0",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/chargerIncludedCount/sources/1",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/orderContents/sources/0",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/phantomDelta/2/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 60",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 60",
+      "passed": true
+    },
+    {
+      "name": "citation root original 61",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 61",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/topSpeed/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 61",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 61",
+      "passed": true
+    },
+    {
+      "name": "citation root original 62",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 62",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/topSpeed/sources/1",
+      "passed": true
+    },
+    {
+      "name": "JSON locator path 62",
+      "passed": true
+    },
+    {
+      "name": "JSON locator resolves 62",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 62",
+      "passed": true
+    },
+    {
+      "name": "citation root original 63",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 63",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/topSpeed/sources/2",
+      "passed": true
+    },
+    {
+      "name": "JSON locator path 63",
+      "passed": true
+    },
+    {
+      "name": "JSON locator resolves 63",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 63",
+      "passed": true
+    },
+    {
+      "name": "citation root original 64",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 64",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/nominalMotorPower/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 64",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 64",
+      "passed": true
+    },
+    {
+      "name": "citation root original 65",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 65",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/peakMotorPower/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 65",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 65",
+      "passed": true
+    },
+    {
+      "name": "citation root original 66",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 66",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/peakMotorPower/sources/1",
+      "passed": true
+    },
+    {
+      "name": "JSON locator path 66",
+      "passed": true
+    },
+    {
+      "name": "JSON locator resolves 66",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 66",
+      "passed": true
+    },
+    {
+      "name": "citation root original 67",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 67",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/peakMotorPower/sources/2",
+      "passed": true
+    },
+    {
+      "name": "JSON locator path 67",
+      "passed": true
+    },
+    {
+      "name": "JSON locator resolves 67",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 67",
+      "passed": true
+    },
+    {
+      "name": "citation root original 68",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 68",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/motorLayout/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 68",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 68",
+      "passed": true
+    },
+    {
+      "name": "citation root original 69",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 69",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/batteryCapacity/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 69",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 69",
+      "passed": true
+    },
+    {
+      "name": "citation root original 70",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 70",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/batteryVoltage/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 70",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 70",
+      "passed": true
+    },
+    {
+      "name": "citation root original 71",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 71",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/batteryType/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 71",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 71",
+      "passed": true
+    },
+    {
+      "name": "citation root original 72",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 72",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/batteryRemovable/sources/0",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/chargerIncludedCount/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 72",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 72",
+      "passed": true
+    },
+    {
+      "name": "citation root original 73",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 73",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/batteryWeight/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 73",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 73",
+      "passed": true
+    },
+    {
+      "name": "citation root original 74",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 74",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/range/sources/0",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/holds/4/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 74",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 74",
+      "passed": true
+    },
+    {
+      "name": "citation root original 75",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 75",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/range/sources/1",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/optionalExtendedRange/sources/1",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 75",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 75",
+      "passed": true
+    },
+    {
+      "name": "citation root original 76",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 76",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/optionalExtendedRange/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 76",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 76",
+      "passed": true
+    },
+    {
+      "name": "citation root original 77",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 77",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/optionalExtendedRange/sources/2",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/holds/6/sources/1",
+      "passed": true
+    },
+    {
+      "name": "JSON locator path 77",
+      "passed": true
+    },
+    {
+      "name": "JSON locator resolves 77",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 77",
+      "passed": true
+    },
+    {
+      "name": "citation root original 78",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 78",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/chargeDuration/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 78",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 78",
+      "passed": true
+    },
+    {
+      "name": "citation root original 79",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 79",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/weight/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 79",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 79",
+      "passed": true
+    },
+    {
+      "name": "citation root original 80",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 80",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/maxLoad/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 80",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 80",
+      "passed": true
+    },
+    {
+      "name": "citation root original 81",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 81",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/storageVolume/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 81",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 81",
+      "passed": true
+    },
+    {
+      "name": "citation root original 82",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 82",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/storageVolume/sources/1",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 82",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 82",
+      "passed": true
+    },
+    {
+      "name": "citation root original 83",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 83",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/wheelbase/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 83",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 83",
+      "passed": true
+    },
+    {
+      "name": "citation root original 84",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 84",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/length/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 84",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 84",
+      "passed": true
+    },
+    {
+      "name": "citation root original 85",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 85",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/height/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 85",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 85",
+      "passed": true
+    },
+    {
+      "name": "citation root original 86",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 86",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/seatHeight/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 86",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 86",
+      "passed": true
+    },
+    {
+      "name": "citation root original 87",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 87",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/handlebarHeight/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 87",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 87",
+      "passed": true
+    },
+    {
+      "name": "citation root original 88",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 88",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/handlebarWidth/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 88",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 88",
+      "passed": true
+    },
+    {
+      "name": "citation root original 89",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 89",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/frameMaterial/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 89",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 89",
+      "passed": true
+    },
+    {
+      "name": "citation root original 90",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 90",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/fairingMaterial/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 90",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 90",
+      "passed": true
+    },
+    {
+      "name": "citation root original 91",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 91",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/frontBrake/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 91",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 91",
+      "passed": true
+    },
+    {
+      "name": "citation root original 92",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 92",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/rearBrake/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 92",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 92",
+      "passed": true
+    },
+    {
+      "name": "citation root original 93",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 93",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/frontSuspension/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 93",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 93",
+      "passed": true
+    },
+    {
+      "name": "citation root original 94",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 94",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/rearSuspension/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 94",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 94",
+      "passed": true
+    },
+    {
+      "name": "citation root original 95",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 95",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/frontWheel/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 95",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 95",
+      "passed": true
+    },
+    {
+      "name": "citation root original 96",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 96",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/rearWheel/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 96",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 96",
+      "passed": true
+    },
+    {
+      "name": "citation root original 97",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 97",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/frontTyre/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 97",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 97",
+      "passed": true
+    },
+    {
+      "name": "citation root original 98",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 98",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/rearTyre/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 98",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 98",
+      "passed": true
+    },
+    {
+      "name": "citation root original 99",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 99",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/display/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 99",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 99",
+      "passed": true
+    },
+    {
+      "name": "citation root original 100",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 100",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/equipment/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 100",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 100",
+      "passed": true
+    },
+    {
+      "name": "citation root original 101",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 101",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/equipment/sources/1",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 101",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 101",
+      "passed": true
+    },
+    {
+      "name": "citation root original 102",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 102",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/technicalFields/baseSuspensionAndBars/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 102",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 102",
+      "passed": true
+    },
+    {
+      "name": "citation root original 103",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 103",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/commercial/advertisedBaseFrom/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 103",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 103",
+      "passed": true
+    },
+    {
+      "name": "citation root original 104",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 104",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/commercial/advertisedBaseFrom/sources/1",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 104",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 104",
+      "passed": true
+    },
+    {
+      "name": "citation root original 105",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 105",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/commercial/advertisedBaseFrom/sources/2",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/commercial/orcEstimate/sources/0",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/roadUse/sources/1",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/holds/1/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 105",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 105",
+      "passed": true
+    },
+    {
+      "name": "citation root original 106",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 106",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/commercial/builderBaseExclORC/sources/0",
+      "passed": true
+    },
+    {
+      "name": "JSON locator path 106",
+      "passed": true
+    },
+    {
+      "name": "JSON locator resolves 106",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 106",
+      "passed": true
+    },
+    {
+      "name": "citation root original 107",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 107",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/commercial/builderBaseExclORC/sources/1",
+      "passed": true
+    },
+    {
+      "name": "JSON locator path 107",
+      "passed": true
+    },
+    {
+      "name": "JSON locator resolves 107",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 107",
+      "passed": true
+    },
+    {
+      "name": "citation root original 108",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 108",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/commercial/builderBaseExclORC/sources/2",
+      "passed": true
+    },
+    {
+      "name": "JSON locator path 108",
+      "passed": true
+    },
+    {
+      "name": "JSON locator resolves 108",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 108",
+      "passed": true
+    },
+    {
+      "name": "citation root original 109",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 109",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/commercial/phantomAdvertisedXR/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 109",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 109",
+      "passed": true
+    },
+    {
+      "name": "citation root original 110",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 110",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/commercial/phantomAdvertisedXR/sources/1",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/phantomDelta/3/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 110",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 110",
+      "passed": true
+    },
+    {
+      "name": "citation root original 111",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 111",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/commercial/phantomBuilderExclORC/sources/0",
+      "passed": true
+    },
+    {
+      "name": "JSON locator path 111",
+      "passed": true
+    },
+    {
+      "name": "JSON locator resolves 111",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 111",
+      "passed": true
+    },
+    {
+      "name": "citation root original 112",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 112",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/commercial/phantomBuilderExclORC/sources/1",
+      "passed": true
+    },
+    {
+      "name": "JSON locator path 112",
+      "passed": true
+    },
+    {
+      "name": "JSON locator resolves 112",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 112",
+      "passed": true
+    },
+    {
+      "name": "citation root original 113",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 113",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/commercial/orcEstimate/sources/1",
+      "passed": true
+    },
+    {
+      "name": "JSON locator path 113",
+      "passed": true
+    },
+    {
+      "name": "JSON locator resolves 113",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 113",
+      "passed": true
+    },
+    {
+      "name": "citation root original 114",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 114",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/commercial/deliveryRateSources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 114",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 114",
+      "passed": true
+    },
+    {
+      "name": "citation root original 115",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 115",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/commercial/deliveryRateSources/1",
+      "passed": true
+    },
+    {
+      "name": "JSON locator path 115",
+      "passed": true
+    },
+    {
+      "name": "JSON locator resolves 115",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 115",
+      "passed": true
+    },
+    {
+      "name": "citation root original 116",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 116",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/commercial/leadTimeClaim/sources/0",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/holds/3/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 116",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 116",
+      "passed": true
+    },
+    {
+      "name": "citation root original 117",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 117",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/commercial/leadTimeClaim/sources/1",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/holds/3/sources/1",
+      "passed": true
+    },
+    {
+      "name": "JSON locator path 117",
+      "passed": true
+    },
+    {
+      "name": "JSON locator resolves 117",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 117",
+      "passed": true
+    },
+    {
+      "name": "citation root original 118",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 118",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/commercial/leadTimeClaim/sources/2",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/holds/3/sources/4",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 118",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 118",
+      "passed": true
+    },
+    {
+      "name": "citation root original 119",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 119",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/commercial/deposit/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 119",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 119",
+      "passed": true
+    },
+    {
+      "name": "citation root original 120",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 120",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/commercial/deposit/sources/1",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 120",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 120",
+      "passed": true
+    },
+    {
+      "name": "citation root original 121",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 121",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/commercial/deposit/sources/2",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 121",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 121",
+      "passed": true
+    },
+    {
+      "name": "citation root original 122",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 122",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/commercial/editionCounts/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 122",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 122",
+      "passed": true
+    },
+    {
+      "name": "citation root original 123",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 123",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/warranty/sources/0",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/holds/5/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 123",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 123",
+      "passed": true
+    },
+    {
+      "name": "citation root original 124",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 124",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/warranty/sources/1",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/holds/5/sources/1",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 124",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 124",
+      "passed": true
+    },
+    {
+      "name": "citation root original 125",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 125",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/warranty/sources/2",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/holds/5/sources/2",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 125",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 125",
+      "passed": true
+    },
+    {
+      "name": "citation root original 126",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 126",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/roadUse/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 126",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 126",
+      "passed": true
+    },
+    {
+      "name": "citation root original 127",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 127",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/phantomDelta/0/sources/0",
+      "passed": true
+    },
+    {
+      "name": "JSON locator path 127",
+      "passed": true
+    },
+    {
+      "name": "JSON locator resolves 127",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 127",
+      "passed": true
+    },
+    {
+      "name": "citation root original 128",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 128",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/phantomDelta/0/sources/1",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/phantomDelta/2/sources/3",
+      "passed": true
+    },
+    {
+      "name": "JSON locator path 128",
+      "passed": true
+    },
+    {
+      "name": "JSON locator resolves 128",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 128",
+      "passed": true
+    },
+    {
+      "name": "citation root original 129",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 129",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/phantomDelta/1/sources/0",
+      "passed": true
+    },
+    {
+      "name": "JSON locator path 129",
+      "passed": true
+    },
+    {
+      "name": "JSON locator resolves 129",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 129",
+      "passed": true
+    },
+    {
+      "name": "citation root original 130",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 130",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/phantomDelta/1/sources/1",
+      "passed": true
+    },
+    {
+      "name": "JSON locator path 130",
+      "passed": true
+    },
+    {
+      "name": "JSON locator resolves 130",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 130",
+      "passed": true
+    },
+    {
+      "name": "citation root original 131",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 131",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/phantomDelta/2/sources/1",
+      "passed": true
+    },
+    {
+      "name": "JSON locator path 131",
+      "passed": true
+    },
+    {
+      "name": "JSON locator resolves 131",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 131",
+      "passed": true
+    },
+    {
+      "name": "citation root original 132",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 132",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/phantomDelta/2/sources/2",
+      "passed": true
+    },
+    {
+      "name": "JSON locator path 132",
+      "passed": true
+    },
+    {
+      "name": "JSON locator resolves 132",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 132",
+      "passed": true
+    },
+    {
+      "name": "citation root original 133",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 133",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/phantomDelta/3/sources/1",
+      "passed": true
+    },
+    {
+      "name": "JSON locator path 133",
+      "passed": true
+    },
+    {
+      "name": "JSON locator resolves 133",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 133",
+      "passed": true
+    },
+    {
+      "name": "citation root original 134",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 134",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/phantomDelta/3/sources/2",
+      "passed": true
+    },
+    {
+      "name": "JSON locator path 134",
+      "passed": true
+    },
+    {
+      "name": "JSON locator resolves 134",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 134",
+      "passed": true
+    },
+    {
+      "name": "citation root original 135",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 135",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/phantomDelta/3/sources/3",
+      "passed": true
+    },
+    {
+      "name": "JSON locator path 135",
+      "passed": true
+    },
+    {
+      "name": "JSON locator resolves 135",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 135",
+      "passed": true
+    },
+    {
+      "name": "citation root original 136",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 136",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/phantomDelta/4/sources/0",
+      "passed": true
+    },
+    {
+      "name": "JSON locator path 136",
+      "passed": true
+    },
+    {
+      "name": "JSON locator resolves 136",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 136",
+      "passed": true
+    },
+    {
+      "name": "citation root original 137",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 137",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/phantomDelta/4/sources/1",
+      "passed": true
+    },
+    {
+      "name": "JSON locator path 137",
+      "passed": true
+    },
+    {
+      "name": "JSON locator resolves 137",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 137",
+      "passed": true
+    },
+    {
+      "name": "citation root original 138",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 138",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/phantomDelta/4/sources/2",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 138",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 138",
+      "passed": true
+    },
+    {
+      "name": "citation root original 139",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 139",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/phantomDelta/5/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 139",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 139",
+      "passed": true
+    },
+    {
+      "name": "citation root original 140",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 140",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/phantomDelta/5/sources/1",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/holds/0/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 140",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 140",
+      "passed": true
+    },
+    {
+      "name": "citation root original 141",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 141",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/phantomDelta/5/sources/2",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/holds/0/sources/1",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 141",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 141",
+      "passed": true
+    },
+    {
+      "name": "citation root original 142",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 142",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/phantomDelta/5/sources/3",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/holds/0/sources/2",
+      "passed": true
+    },
+    {
+      "name": "JSON locator path 142",
+      "passed": true
+    },
+    {
+      "name": "JSON locator resolves 142",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 142",
+      "passed": true
+    },
+    {
+      "name": "citation root original 143",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 143",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/phantomDelta/5/sources/4",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/holds/0/sources/3",
+      "passed": true
+    },
+    {
+      "name": "JSON locator path 143",
+      "passed": true
+    },
+    {
+      "name": "JSON locator resolves 143",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 143",
+      "passed": true
+    },
+    {
+      "name": "citation root original 144",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 144",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/phantomDelta/6/sources/0",
+      "passed": true
+    },
+    {
+      "name": "JSON locator path 144",
+      "passed": true
+    },
+    {
+      "name": "JSON locator resolves 144",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 144",
+      "passed": true
+    },
+    {
+      "name": "citation root original 145",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 145",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/phantomDelta/6/sources/1",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/holds/6/sources/0",
+      "passed": true
+    },
+    {
+      "name": "JSON locator path 145",
+      "passed": true
+    },
+    {
+      "name": "JSON locator resolves 145",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 145",
+      "passed": true
+    },
+    {
+      "name": "citation root original 146",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 146",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/phantomDelta/6/sources/2",
+      "passed": true
+    },
+    {
+      "name": "JSON locator path 146",
+      "passed": true
+    },
+    {
+      "name": "JSON locator resolves 146",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 146",
+      "passed": true
+    },
+    {
+      "name": "citation root original 147",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 147",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/phantomDelta/6/sources/3",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/holds/6/sources/3",
+      "passed": true
+    },
+    {
+      "name": "JSON locator path 147",
+      "passed": true
+    },
+    {
+      "name": "JSON locator resolves 147",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 147",
+      "passed": true
+    },
+    {
+      "name": "citation root original 148",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 148",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/holds/1/sources/1",
+      "passed": true
+    },
+    {
+      "name": "JSON locator path 148",
+      "passed": true
+    },
+    {
+      "name": "JSON locator resolves 148",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 148",
+      "passed": true
+    },
+    {
+      "name": "citation root original 149",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 149",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/holds/1/sources/2",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 149",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 149",
+      "passed": true
+    },
+    {
+      "name": "citation root original 150",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 150",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/holds/1/sources/3",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 150",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 150",
+      "passed": true
+    },
+    {
+      "name": "citation root original 151",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 151",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/holds/1/sources/4",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 151",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 151",
+      "passed": true
+    },
+    {
+      "name": "citation root original 152",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 152",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/holds/2/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 152",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 152",
+      "passed": true
+    },
+    {
+      "name": "citation root original 153",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 153",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/holds/2/sources/1",
+      "passed": true
+    },
+    {
+      "name": "JSON locator path 153",
+      "passed": true
+    },
+    {
+      "name": "JSON locator resolves 153",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 153",
+      "passed": true
+    },
+    {
+      "name": "citation root original 154",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 154",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/holds/2/sources/2",
+      "passed": true
+    },
+    {
+      "name": "JSON locator path 154",
+      "passed": true
+    },
+    {
+      "name": "JSON locator resolves 154",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 154",
+      "passed": true
+    },
+    {
+      "name": "citation root original 155",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 155",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/holds/3/sources/2",
+      "passed": true
+    },
+    {
+      "name": "JSON locator path 155",
+      "passed": true
+    },
+    {
+      "name": "JSON locator resolves 155",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 155",
+      "passed": true
+    },
+    {
+      "name": "citation root original 156",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 156",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/holds/3/sources/3",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 156",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 156",
+      "passed": true
+    },
+    {
+      "name": "citation root original 157",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 157",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/holds/3/sources/5",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 157",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 157",
+      "passed": true
+    },
+    {
+      "name": "citation root original 158",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 158",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/holds/6/sources/2",
+      "passed": true
+    },
+    {
+      "name": "JSON locator path 158",
+      "passed": true
+    },
+    {
+      "name": "JSON locator resolves 158",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 158",
+      "passed": true
+    },
+    {
+      "name": "citation root original 159",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 159",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/holds/7/sources/0",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 159",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 159",
+      "passed": true
+    },
+    {
+      "name": "citation root original 160",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 160",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/holds/7/sources/1",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 160",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 160",
+      "passed": true
+    },
+    {
+      "name": "citation root original 161",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 161",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/holds/7/sources/2",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 161",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 161",
+      "passed": true
+    },
+    {
+      "name": "citation root original 162",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 162",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/holds/7/sources/3",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 162",
+      "passed": true
+    },
+    {
+      "name": "citation entry unique 162",
+      "passed": true
+    },
+    {
+      "name": "citation root original 163",
+      "passed": true
+    },
+    {
+      "name": "citation file pin 163",
+      "passed": true
+    },
+    {
+      "name": "citation exact source object ftn-xr/holds/7/sources/4",
+      "passed": true
+    },
+    {
+      "name": "text locator path and LF range 163",
+      "passed": true
+    },
+    {
+      "name": "complete distinct citation and pointer conservation",
+      "passed": true
+    },
+    {
+      "name": "source capture pin windrose/how-to-buy/rawCapture",
+      "passed": true
+    },
+    {
+      "name": "source capture pin windrose/technology/rawCapture",
+      "passed": true
+    },
+    {
+      "name": "source capture pin windrose/battery-pack-onepager/rawCapture",
+      "passed": true
+    },
+    {
+      "name": "source capture pin windrose/big-wheels-australia/rawCapture",
+      "passed": true
+    },
+    {
+      "name": "source capture pin windrose/certification/rawCapture",
+      "passed": true
+    },
+    {
+      "name": "source capture pin windrose/how-to-use/rawCapture",
+      "passed": true
+    },
+    {
+      "name": "source capture pin windrose/specs-redirect/rawCapture",
+      "passed": true
+    },
+    {
+      "name": "source capture pin windrose/site-nav/rawCapture",
+      "passed": true
+    },
+    {
+      "name": "source capture pin windrose/site-nav-fragment/rawCapture",
+      "passed": true
+    },
+    {
+      "name": "source capture pin windrose/truck/rawCapture",
+      "passed": true
+    },
+    {
+      "name": "source capture pin windrose/how-to-service/rawCapture",
+      "passed": true
+    },
+    {
+      "name": "source capture pin windrose/warranty-en/rawCapture",
+      "passed": true
+    },
+    {
+      "name": "source capture pin windrose/warranty-au/rawCapture",
+      "passed": true
+    },
+    {
+      "name": "source capture pin ftn-xr/xr-au/rawCapture",
+      "passed": true
+    },
+    {
+      "name": "source capture pin ftn-xr/xr-au/textCapture",
+      "passed": true
+    },
+    {
+      "name": "source capture pin ftn-xr/launch-retained/rawCapture",
+      "passed": true
+    },
+    {
+      "name": "source capture pin ftn-xr/launch-retained/textCapture",
+      "passed": true
+    },
+    {
+      "name": "source capture pin ftn-xr/shipping-retained/rawCapture",
+      "passed": true
+    },
+    {
+      "name": "source capture pin ftn-xr/shipping-retained/textCapture",
+      "passed": true
+    },
+    {
+      "name": "source capture pin ftn-xr/streetdog50-crosscheck/rawCapture",
+      "passed": true
+    },
+    {
+      "name": "source capture pin ftn-xr/streetdog50-crosscheck/textCapture",
+      "passed": true
+    },
+    {
+      "name": "source capture pin ftn-xr/xr-builder-au/rawCapture",
+      "passed": true
+    },
+    {
+      "name": "source capture pin ftn-xr/xr-builder-au/textCapture",
+      "passed": true
+    },
+    {
+      "name": "source capture pin ftn-xr/phantom-au/rawCapture",
+      "passed": true
+    },
+    {
+      "name": "source capture pin ftn-xr/phantom-au/textCapture",
+      "passed": true
+    },
+    {
+      "name": "source capture pin ftn-xr/shipping-au/rawCapture",
+      "passed": true
+    },
+    {
+      "name": "source capture pin ftn-xr/shipping-au/textCapture",
+      "passed": true
+    },
+    {
+      "name": "source capture pin ftn-xr/terms-au/rawCapture",
+      "passed": true
+    },
+    {
+      "name": "source capture pin ftn-xr/terms-au/textCapture",
+      "passed": true
+    },
+    {
+      "name": "source capture pin ftn-xr/shipping-policy-au/rawCapture",
+      "passed": true
+    },
+    {
+      "name": "source capture pin ftn-xr/shipping-policy-au/textCapture",
+      "passed": true
+    },
+    {
+      "name": "source capture pin ftn-xr/refund-au/rawCapture",
+      "passed": true
+    },
+    {
+      "name": "source capture pin ftn-xr/refund-au/textCapture",
+      "passed": true
+    },
+    {
+      "name": "source capture pin ftn-xr/service-au/rawCapture",
+      "passed": true
+    },
+    {
+      "name": "source capture pin ftn-xr/service-au/textCapture",
+      "passed": true
+    },
+    {
+      "name": "source capture pin ftn-xr/phantom-builder-au/rawCapture",
+      "passed": true
+    },
+    {
+      "name": "source capture pin ftn-xr/phantom-builder-au/textCapture",
+      "passed": true
+    },
+    {
+      "name": "source capture pin ftn-xr/phantom-xr-builder-au/rawCapture",
+      "passed": true
+    },
+    {
+      "name": "source capture pin ftn-xr/phantom-xr-builder-au/textCapture",
+      "passed": true
+    },
+    {
+      "name": "source capture pin ftn-xr/order-agreement-au/rawCapture",
+      "passed": true
+    },
+    {
+      "name": "source capture pin ftn-xr/order-agreement-au/textCapture",
+      "passed": true
+    },
+    {
+      "name": "source capture pin ftn-xr/refund-policy-au/rawCapture",
+      "passed": true
+    },
+    {
+      "name": "source capture pin ftn-xr/refund-policy-au/textCapture",
+      "passed": true
+    },
+    {
+      "name": "windrose decision preserved",
+      "passed": true
+    },
+    {
+      "name": "windrose all holds preserved",
+      "passed": true
+    },
+    {
+      "name": "windrose stopping condition preserved",
+      "passed": true
+    },
+    {
+      "name": "windrose zero builds/rows/trims",
+      "passed": true
+    },
+    {
+      "name": "windrose no eligibility promotion",
+      "passed": true
+    },
+    {
+      "name": "windrose retained market-only/null/ranking boundary",
+      "passed": true
+    },
+    {
+      "name": "windrose embedded pin /correctedEvidence",
+      "passed": true
+    },
+    {
+      "name": "windrose embedded JSON pointer /correctedEvidence/decision",
+      "passed": true
+    },
+    {
+      "name": "windrose embedded JSON pointer /correctedEvidence/holds",
+      "passed": true
+    },
+    {
+      "name": "windrose embedded JSON pointer /correctedEvidence/stoppingCondition",
+      "passed": true
+    },
+    {
+      "name": "windrose embedded pin /sourceManifest",
+      "passed": true
+    },
+    {
+      "name": "windrose embedded pin /independentSourceReview",
+      "passed": true
+    },
+    {
+      "name": "windrose embedded pin /independentSourceReview/receipt",
+      "passed": true
+    },
+    {
+      "name": "windrose embedded pin /platformBoundary/evidence",
+      "passed": true
+    },
+    {
+      "name": "windrose embedded JSON pointer /platformBoundary/evidence/identityConfigurationMatrix/0",
+      "passed": true
+    },
+    {
+      "name": "windrose embedded JSON pointer /platformBoundary/evidence/fieldEvidence/0",
+      "passed": true
+    },
+    {
+      "name": "windrose embedded JSON pointer /platformBoundary/evidence/fieldEvidence/1",
+      "passed": true
+    },
+    {
+      "name": "windrose embedded JSON pointer /platformBoundary/evidence/fieldEvidence/17",
+      "passed": true
+    },
+    {
+      "name": "windrose embedded JSON pointer /platformBoundary/evidence/fieldEvidence/21",
+      "passed": true
+    },
+    {
+      "name": "ftn-xr decision preserved",
+      "passed": true
+    },
+    {
+      "name": "ftn-xr all holds preserved",
+      "passed": true
+    },
+    {
+      "name": "ftn-xr stopping condition preserved",
+      "passed": true
+    },
+    {
+      "name": "ftn-xr zero builds/rows/trims",
+      "passed": true
+    },
+    {
+      "name": "ftn-xr no eligibility promotion",
+      "passed": true
+    },
+    {
+      "name": "ftn-xr retained market-only/null/ranking boundary",
+      "passed": true
+    },
+    {
+      "name": "ftn-xr embedded pin /correctedEvidence",
+      "passed": true
+    },
+    {
+      "name": "ftn-xr embedded JSON pointer /correctedEvidence/decision",
+      "passed": true
+    },
+    {
+      "name": "ftn-xr embedded JSON pointer /correctedEvidence/holds",
+      "passed": true
+    },
+    {
+      "name": "ftn-xr embedded JSON pointer /correctedEvidence/finiteStoppingCondition",
+      "passed": true
+    },
+    {
+      "name": "ftn-xr embedded pin /sourceManifest",
+      "passed": true
+    },
+    {
+      "name": "ftn-xr embedded pin /independentSourceReview",
+      "passed": true
+    },
+    {
+      "name": "ftn-xr embedded pin /independentSourceReview/receipt",
+      "passed": true
+    },
+    {
+      "name": "ftn-xr embedded pin /packageBoundary/evidence",
+      "passed": true
+    },
+    {
+      "name": "ftn-xr embedded JSON pointer /packageBoundary/evidence/phantomDelta/0",
+      "passed": true
+    },
+    {
+      "name": "ftn-xr embedded JSON pointer /packageBoundary/evidence/phantomDelta/1",
+      "passed": true
+    },
+    {
+      "name": "ftn-xr embedded JSON pointer /packageBoundary/evidence/phantomDelta/2",
+      "passed": true
+    },
+    {
+      "name": "ftn-xr embedded JSON pointer /packageBoundary/evidence/holds/0",
+      "passed": true
+    },
+    {
+      "name": "ftn-xr embedded JSON pointer /packageBoundary/evidence/holds/6",
+      "passed": true
+    },
+    {
+      "name": "ftn-xr embedded JSON pointer /packageBoundary/evidence/nonTransfer",
+      "passed": true
+    },
+    {
+      "name": "Windrose corrected calculator locator retained",
+      "passed": true
+    },
+    {
+      "name": "FTN eight source holds retained",
+      "passed": true
+    },
+    {
+      "name": "FTN null collection/cancellation deadlines retained",
+      "passed": true
+    },
+    {
+      "name": "B holds are exact H2/H4",
+      "passed": true
+    },
+    {
+      "name": "FTN sibling non-transfer preserved",
+      "passed": true
+    },
+    {
+      "name": "direct shipping self-registration and invoice exclusion",
+      "passed": true
+    },
+    {
+      "name": "direct agreement invoice inclusion and partner registration",
+      "passed": true
+    },
+    {
+      "name": "rate date scoped to shipping costs in original source",
+      "passed": true
+    },
+    {
+      "name": "legacy three-month and Streetdog80 wording both retained",
+      "passed": true
+    },
+    {
+      "name": "xr-builder-au no current lead time",
+      "passed": true
+    },
+    {
+      "name": "xr-builder-au authority payment source",
+      "passed": true
+    },
+    {
+      "name": "phantom-xr-builder-au no current lead time",
+      "passed": true
+    },
+    {
+      "name": "phantom-xr-builder-au authority payment source",
+      "passed": true
+    },
+    {
+      "name": "contract estimate explicitly conditional",
+      "passed": true
+    },
+    {
+      "name": "contract contradictory collection periods remain in originals",
+      "passed": true
+    },
+    {
+      "name": "refund contradictory word/numeral periods remain in originals",
+      "passed": true
+    },
+    {
+      "name": "no static enum/consumer for roadRegistrationStatus",
+      "passed": true
+    },
+    {
+      "name": "new review/count fields have no existing static consumers",
+      "passed": true
+    },
+    {
+      "name": "existing advertised order label",
+      "passed": true
+    },
+    {
+      "name": "current narrative and limitations displayed directly",
+      "passed": true
+    },
+    {
+      "name": "status correction is string metadata",
+      "passed": true
+    },
+    {
+      "name": "research schema is distinct catalogue schema",
+      "passed": true
+    },
+    {
+      "name": "all observed app/proposal/source/audit inputs byte-identical",
+      "passed": true
+    }
+  ]
+}

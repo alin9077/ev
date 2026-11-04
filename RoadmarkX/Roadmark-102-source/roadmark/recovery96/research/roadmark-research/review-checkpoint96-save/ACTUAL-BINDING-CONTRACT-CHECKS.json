@@ -1,0 +1,127 @@
+{
+  "allMainRefsIncluded": true,
+  "browserAfterQA": true,
+  "browserFalseGates": {
+    "acceleratedWebGLVerified": true,
+    "fullJourneyVerified": true,
+    "fullVisualPassClaimed": true,
+    "independentServerByteVerificationPerformed": true,
+    "phoneVerified": true,
+    "publicExportRun": true,
+    "releaseApproved": true,
+    "sustainedStabilityClaimed": true,
+    "wholeProductionRuntimeGraphEquivalenceClaimed": true
+  },
+  "browserMatchesQA": true,
+  "failedEvidenceRecheck": [
+    {
+      "match": true,
+      "path": "execution-request.json"
+    },
+    {
+      "match": true,
+      "path": "frozen-inputs.json"
+    },
+    {
+      "match": true,
+      "path": "non_http_tests-start.json"
+    },
+    {
+      "match": true,
+      "path": "non_http_tests-terminal.json"
+    },
+    {
+      "match": true,
+      "path": "non_http_tests.json"
+    },
+    {
+      "match": true,
+      "path": "non_http_tests.stderr.log"
+    },
+    {
+      "match": true,
+      "path": "non_http_tests.stdout.log"
+    },
+    {
+      "match": true,
+      "path": "preexisting-outputs.json"
+    },
+    {
+      "match": true,
+      "path": "protected-input-comparison.json"
+    },
+    {
+      "match": true,
+      "path": "stage-plan.json"
+    }
+  ],
+  "failedMembershipExact": true,
+  "fixedAnchorChecks": [
+    {
+      "bytes": 34143193,
+      "key": "source95",
+      "match": true,
+      "path": "roadmark-recovery/final95-attempt1/Roadmark-recovered-95-source.zip",
+      "sha256": "e3a8478bc95321fecd3ad248b5f8f34c260a8124f3379bc346572b207cea4062"
+    },
+    {
+      "bytes": 16057932,
+      "key": "preview95",
+      "match": true,
+      "path": "roadmark-recovery/final95-attempt1/Roadmark-recovered-95-portable-preview.zip",
+      "sha256": "802ddbb2721f7dd9229f6c4e33c61459546cf3dcc021d7adaaa237a5b92b7b90"
+    },
+    {
+      "bytes": 6844,
+      "key": "saved95",
+      "match": true,
+      "path": "roadmark-recovery/final95-review/correlated-save-receipt.json",
+      "sha256": "f4cee255729bfc7db2a5bfef467cc9fcaa7dedcc7cb3955f3b05f9d0c566fee0"
+    },
+    {
+      "bytes": 182702,
+      "key": "baselineInputs",
+      "match": true,
+      "path": "roadmark-research/applied95/expected-inputs.json",
+      "sha256": "42e12fc28be57b321a7b05ce553f59cd19faed85161ee74dc0fb8122bc3b1c57"
+    },
+    {
+      "bytes": 183041,
+      "key": "expectedInputs",
+      "match": true,
+      "path": "roadmark-research/applied96/expected-inputs-revision3.json",
+      "sha256": "3dbb0442fcd4ac25c29ee489fa721b4bd8aa138601b0618c4256af6f37880c80"
+    },
+    {
+      "bytes": 17334,
+      "key": "candidate",
+      "match": true,
+      "path": "roadmark-research/discovery-prefetch96-candidate/revision-3/MANIFEST.json",
+      "sha256": "5af3f4bf5da3f7a7d73481d5d225b8835101f1e1b9eaa8ee01335cab2d100b60"
+    },
+    {
+      "bytes": 22175,
+      "key": "runner",
+      "match": true,
+      "path": "roadmark-research/qa96-candidate/revision-2/run_qa96.py",
+      "sha256": "927d4bdf6318b300c4f8581fb074eb929555b902e5dd355381fcafadc4d50ff3"
+    },
+    {
+      "bytes": 4319,
+      "key": "failedQA1",
+      "match": true,
+      "path": "roadmark-research/applied96/qa-attempt1/run-result.json",
+      "sha256": "e112cd3fc9f267abfd6897aaeae725d52ef54476ae359771a69c5e367d9fd60a"
+    },
+    {
+      "bytes": 863,
+      "key": "failedExit1",
+      "match": true,
+      "path": "roadmark-research/applied96/qa-attempt1-external-exit.json",
+      "sha256": "b96354acbc04a205b6703fa882bc2882ad065e56754ec20163540f3ad36324f1"
+    }
+  ],
+  "missingRequiredResearch": [],
+  "requiredResearchCount": 55,
+  "rootReviewedRemainsFalse": true
+}

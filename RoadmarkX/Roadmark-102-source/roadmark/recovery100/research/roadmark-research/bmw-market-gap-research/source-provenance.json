@@ -1,0 +1,277 @@
+{
+  "schema": "roadmark_research_source_provenance_v1",
+  "as_of": "2026-10-12",
+  "policy": "Hashes bind local web-tool extraction or sparse excerpt bytes. They are not publisher-origin-byte hashes. Keep publisher captures local; do not upload.",
+  "sources": [
+    {
+      "id": "S01",
+      "url": "https://www.bmw.com.au/en/electric-cars.html",
+      "geographic_scope": "Australia",
+      "publisher": "BMW",
+      "publisher_publication_date": null,
+      "publication_date_basis": "not exposed in inspected extraction; not inferred from crawl or model year",
+      "observed_on": "2026-10-12",
+      "observation_window_utc": {
+        "start": "2026-10-12T06:22:19Z",
+        "end": "2026-10-12T06:22:46Z"
+      },
+      "timestamp_qualification": "UTC window bounds tool observation, not certified origin fetch; web tool reports crawled today",
+      "retrieval_method": "web.run read-only public text extraction",
+      "source_format": "tool-extracted text; may be partial, cached, or omit interactive content",
+      "publisher_raw_bytes_obtained": false,
+      "publisher_raw_sha256": null,
+      "tool_extraction_path": "source-extractions/bmw_au_range_verified.txt",
+      "tool_extraction_sha256": "536c40237ffbc2f1d319cf02b769baa34ce57175f51488545b55686a8c03b8b8",
+      "sparse_path": "sparse-sources/S01.txt",
+      "sparse_sha256": "e7aafbfded01750230a215d9810be76f1ae81819e3aa023a072c3c5284165979",
+      "locators": [
+        "L291–306: iX4 50 card",
+        "L456–472: i3 50 card",
+        "L308–324 and L474–489: distinct M60 cards"
+      ],
+      "quotes": [
+        "SUV New",
+        "BMW iX4 50 xDrive",
+        "Sedan New",
+        "BMW i3 50 xDrive Sedan",
+        "Build & Price",
+        "Coming Soon"
+      ],
+      "qualifications": [
+        "New is a marketing card label, not verified New condition of a specific unit. Build & Price link presence is not proof of accepted AU orders.",
+        "No Available new vehicles link appears in either 50 card in this extraction; absence of that CTA is not proof of no stock."
+      ]
+    },
+    {
+      "id": "S02",
+      "url": "https://www.bmw.com.au/en/electric-cars/electric-car-range.html",
+      "geographic_scope": "Australia",
+      "publisher": "BMW",
+      "publisher_publication_date": null,
+      "publication_date_basis": "not exposed in inspected extraction; not inferred from crawl or model year",
+      "observed_on": "2026-10-12",
+      "observation_window_utc": {
+        "start": "2026-10-12T06:22:19Z",
+        "end": "2026-10-12T06:22:46Z"
+      },
+      "timestamp_qualification": "UTC window bounds tool observation, not certified origin fetch; web tool reports crawled today",
+      "retrieval_method": "web.run read-only public text extraction",
+      "source_format": "tool-extracted text; may be partial, cached, or omit interactive content",
+      "publisher_raw_bytes_obtained": false,
+      "publisher_raw_sha256": null,
+      "tool_extraction_path": "source-extractions/bmw_au_arrival_verified.txt",
+      "tool_extraction_sha256": "617d48bb94ea10cd069c27ee69046cd33f333251146330c6f1b4dd0651d31073",
+      "sparse_path": "sparse-sources/S02.txt",
+      "sparse_sha256": "677204a879fd3f9a97a4f4a81db2ecda5945bd873b6b508f62b0b930388b678f",
+      "locators": [
+        "FAQ: Which electric car has the longest range? L549"
+      ],
+      "quotes": [
+        "the New BMW i3 50 xDrive Sedan arriving in 2027"
+      ],
+      "qualifications": [
+        "The sentence is an AU-site arrival claim, not a formal model-year designation, committed delivery date, or proof that orders are closed."
+      ]
+    },
+    {
+      "id": "S03",
+      "url": "https://www.bmw.com.au/en/models/3-series/sedan/bmw-i3-sedan.html",
+      "geographic_scope": "Australia",
+      "publisher": "BMW",
+      "publisher_publication_date": null,
+      "publication_date_basis": "not exposed in inspected extraction; not inferred from crawl or model year",
+      "observed_on": "2026-10-12",
+      "observation_window_utc": {
+        "start": "2026-10-12T06:21:23Z",
+        "end": "2026-10-12T06:22:00Z"
+      },
+      "timestamp_qualification": "UTC window bounds tool observation, not certified origin fetch; web tool reports crawled today",
+      "retrieval_method": "web.run read-only public text extraction",
+      "source_format": "tool-extracted text; may be partial, cached, or omit interactive content",
+      "publisher_raw_bytes_obtained": false,
+      "publisher_raw_sha256": null,
+      "tool_extraction_path": "source-extractions/bmw_i3_product.txt",
+      "tool_extraction_sha256": "bf7e3053feb2d447ee553e2dbfa084390a06e9b844085acea6cfcd3005899f54",
+      "sparse_path": "sparse-sources/S03.txt",
+      "sparse_sha256": "d04a3f4634253762fc23b21b567377636209a0bd4f43041a9fe070ced7db8ba0",
+      "locators": [
+        "Document title: NA0",
+        "L301: exact marketed name",
+        "L232: local specification caveat"
+      ],
+      "quotes": [
+        "BMW i3 Sedan (NA0)",
+        "BMW i3 50 xDrive Sedan",
+        "Overseas model shown. Local specification may vary."
+      ],
+      "qualifications": [
+        "NA0 generation identity verified in current page title. Historical sales code 52JB was not independently reverified."
+      ]
+    },
+    {
+      "id": "S04",
+      "url": "https://www.bmw.com.au/en/models/x-series/suv/bmw-ix4.html",
+      "geographic_scope": "Australia",
+      "publisher": "BMW",
+      "publisher_publication_date": null,
+      "publication_date_basis": "not exposed in inspected extraction; not inferred from crawl or model year",
+      "observed_on": "2026-10-12",
+      "observation_window_utc": {
+        "start": "2026-10-12T06:21:23Z",
+        "end": "2026-10-12T06:22:00Z"
+      },
+      "timestamp_qualification": "UTC window bounds tool observation, not certified origin fetch; web tool reports crawled today",
+      "retrieval_method": "web.run read-only public text extraction",
+      "source_format": "tool-extracted text; may be partial, cached, or omit interactive content",
+      "publisher_raw_bytes_obtained": false,
+      "publisher_raw_sha256": null,
+      "tool_extraction_path": "source-extractions/bmw_ix4_product.txt",
+      "tool_extraction_sha256": "11bdc13684ce4d17b1333615d2a3a464147303357b2b8fd6b47d223f289b09a8",
+      "sparse_path": "sparse-sources/S04.txt",
+      "sparse_sha256": "3fc8e3523054ee672d3a28b94570fc5e0b98ff1f0888049f7e34cf58c681f01f",
+      "locators": [
+        "Document title: NA7",
+        "L268: marketed 50 xDrive name",
+        "L232: local specification caveat"
+      ],
+      "quotes": [
+        "BMW iX4 (NA7)",
+        "BMW iX4 50 xDrive",
+        "Overseas model shown. Local specification may vary."
+      ],
+      "qualifications": [
+        "NA7 generation identity verified in current page title. Historical sales code 22HU was not independently reverified."
+      ]
+    },
+    {
+      "id": "S05",
+      "url": "https://www.bmw.com.au/en/models/3-series/sedan/bmw-i3-sedan-technical-data.html",
+      "geographic_scope": "Australia",
+      "publisher": "BMW",
+      "publisher_publication_date": null,
+      "publication_date_basis": "not exposed in inspected extraction; not inferred from crawl or model year",
+      "observed_on": "2026-10-12",
+      "observation_window_utc": {
+        "start": "2026-10-12T06:22:19Z",
+        "end": "2026-10-12T06:22:46Z"
+      },
+      "timestamp_qualification": "UTC window bounds tool observation, not certified origin fetch; web tool reports crawled today",
+      "retrieval_method": "web.run read-only public text extraction",
+      "source_format": "tool-extracted text; may be partial, cached, or omit interactive content",
+      "publisher_raw_bytes_obtained": false,
+      "publisher_raw_sha256": null,
+      "tool_extraction_path": "source-extractions/bmw_tech_i3_verified.txt",
+      "tool_extraction_sha256": "c92d28af77248ae8bb807ce4c0858ece71f6755ce85fe3eda1a14101826702c1",
+      "sparse_path": "sparse-sources/S05.txt",
+      "sparse_sha256": "d32ca2efda1b697fda9355e88f919b1028b3b38d89773126d8e8b4a9989a596c",
+      "locators": [
+        "L263 and L309: two separately named technical variants",
+        "L324: German-market optional-equipment WLTP caveat"
+      ],
+      "quotes": [
+        "BMW i3 40 xDrive Sedan",
+        "BMW i3 50 xDrive Sedan",
+        "available on the German market in this case"
+      ],
+      "qualifications": [
+        "Technical content does not certify local sale, selected order build or availability; no technical values imported."
+      ]
+    },
+    {
+      "id": "S06",
+      "url": "https://www.bmw.com.au/en/models/m-series/sedan/bmw-3-series-sedan-m-models.html",
+      "geographic_scope": "Australia",
+      "publisher": "BMW",
+      "publisher_publication_date": null,
+      "publication_date_basis": "not exposed in inspected extraction; not inferred from crawl or model year",
+      "observed_on": "2026-10-12",
+      "observation_window_utc": {
+        "start": "2026-10-12T06:21:23Z",
+        "end": "2026-10-12T06:22:00Z"
+      },
+      "timestamp_qualification": "UTC window bounds tool observation, not certified origin fetch; web tool reports crawled today",
+      "retrieval_method": "web.run read-only public text extraction",
+      "source_format": "tool-extracted text; may be partial, cached, or omit interactive content",
+      "publisher_raw_bytes_obtained": false,
+      "publisher_raw_sha256": null,
+      "tool_extraction_path": "source-extractions/bmw_i3_m60_product.txt",
+      "tool_extraction_sha256": "31a79ed6e075a084a750d69cee633897b57e883cf14637e14e70e9d823ae1be0",
+      "sparse_path": "sparse-sources/S06.txt",
+      "sparse_sha256": "8af8e922a45ac24443fc18e3bae142abd5f7b1ff7b2de5efe1a1711a5383e9dd",
+      "locators": [
+        "L234: explicit i3 M60 order timing"
+      ],
+      "quotes": [
+        "BMW i3 M60 xDRIVE SEDAN AVAILABLE TO ORDER IN 2027."
+      ],
+      "qualifications": [
+        "Mixed 3-Series M page also contains combustion M350 content. Do not inherit M350 facts or conflate M60 with i3 50."
+      ]
+    },
+    {
+      "id": "S07",
+      "url": "https://www.bmw.com.au/en/models/m-series/suv/bmw-ix4-m-models.html",
+      "geographic_scope": "Australia",
+      "publisher": "BMW",
+      "publisher_publication_date": null,
+      "publication_date_basis": "not exposed in inspected extraction; not inferred from crawl or model year",
+      "observed_on": "2026-10-12",
+      "observation_window_utc": {
+        "start": "2026-10-12T06:21:23Z",
+        "end": "2026-10-12T06:22:00Z"
+      },
+      "timestamp_qualification": "UTC window bounds tool observation, not certified origin fetch; web tool reports crawled today",
+      "retrieval_method": "web.run read-only public text extraction",
+      "source_format": "tool-extracted text; may be partial, cached, or omit interactive content",
+      "publisher_raw_bytes_obtained": false,
+      "publisher_raw_sha256": null,
+      "tool_extraction_path": "source-extractions/bmw_ix4_m60_product.txt",
+      "tool_extraction_sha256": "6a8be62dbc31ffdca6c97217968f79fef55c559acaf9559812eb65b836037f3a",
+      "sparse_path": "sparse-sources/S07.txt",
+      "sparse_sha256": "c57fda9a760e1568330491d71fed6c8de62ee0483ff2de6fb60811fa933f0d9f",
+      "locators": [
+        "L508–510: FAQ about M60 order timing"
+      ],
+      "quotes": [
+        "The BMW iX4 M60 xDrive will be available to order in 2027."
+      ],
+      "qualifications": [
+        "M60 timing is variant-specific and must not be assigned as the 50 xDrive order-opening date."
+      ]
+    },
+    {
+      "id": "S08",
+      "url": "https://www.press.bmwgroup.com/global/article/detail/T0461402EN/the-new-bmw-ix4",
+      "geographic_scope": "Global press release, not AU-specific launch or order confirmation",
+      "publisher": "BMW",
+      "publisher_publication_date": "2026-10-08",
+      "publication_date_basis": "page displays 08.10.2026",
+      "observed_on": "2026-10-12",
+      "observation_window_utc": {
+        "start": "2026-10-12T06:22:19Z",
+        "end": "2026-10-12T06:22:46Z"
+      },
+      "timestamp_qualification": "UTC window bounds tool observation, not certified origin fetch; web tool reports crawled today",
+      "retrieval_method": "web.run read-only public text extraction",
+      "source_format": "tool-extracted text; may be partial, cached, or omit interactive content",
+      "publisher_raw_bytes_obtained": false,
+      "publisher_raw_sha256": null,
+      "tool_extraction_path": "source-extractions/bmw_global_publication_verified.txt",
+      "tool_extraction_sha256": "099336ec5f54601372d0a276bbc3509d861ffb16aafdb9d9d828cb4d5409354f",
+      "sparse_path": "sparse-sources/S08.txt",
+      "sparse_sha256": "849910a28ce900f998cd6ee09979817e218546187b96094fdf76de2a0d901691",
+      "locators": [
+        "L52: publication date",
+        "L79: global launch statement; 40/50 identified in original extraction L110–112"
+      ],
+      "quotes": [
+        "08.10.2026 Press Kit",
+        "launch in March 2027"
+      ],
+      "qualifications": [
+        "Separate full direct extraction bmw_ix4_global_release.txt L128 says equipment and consumption/CO2 figures refer to Germany.",
+        "Global timing is context only. It does not establish an AU launch month, accepted order, delivery commitment or physical stock."
+      ]
+    }
+  ]
+}

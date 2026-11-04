@@ -1,0 +1,26 @@
+ROADMARK102 - ALL-IN-ONE HANDOVER
+
+Everything is in this single download. A compact inner archive keeps the complete source, generated preview, evidence and editable Word handover together without split parts or omitted files.
+
+MAC RESTORE
+1. Double-click Roadmark-102-all-in-one.zip to open this outer ZIP.
+2. Open Terminal in the resulting folder (the folder containing Roadmark-102-complete-files.tar.xz).
+3. Run these two lines:
+mkdir Roadmark-102
+/usr/bin/tar -xf "Roadmark-102-complete-files.tar.xz" -C Roadmark-102
+
+Mac's built-in tar reads this format; no Python or separate xz installation is required on current macOS. Use a new folder rather than an existing edited project. If Roadmark-102 already exists, choose a different empty destination.
+
+INSIDE THE RESTORED FOLDER
+- roadmark/: complete editable source, with all four matching portable HTML aliases already merged in
+- Roadmark-handover-and-resume.docx: comprehensive editable handover, completed/remaining work, local run instructions and how to resume
+- evidence/: full evidence bundle contents, including actual QA, browser-text observations, research and independent reviews
+- START-HERE-ROADMARK102.txt, START-HERE-PREVIEW102.txt and manifests: original package instructions and identities
+
+The Word document and original package read-firsts describe the earlier separate-ZIP/six-file chat delivery. For THIS bundle, skip source-part joining and separate source/preview ZIP extraction: the command above restores all those files directly. No development code has changed. All 3,275 restored files were compared byte-for-byte by SHA256 and size with the verified source, preview, evidence and final Word handover. CONTENTS-MANIFEST.json records them.
+
+Keep this original download untouched. Work on a separate copy. Development remains paused while you review/edit; return your modified source and change notes when ready. This is checkpoint102, not a completed public release.
+
+Mac extraction references:
+https://support.apple.com/guide/terminal/compress-and-uncompress-file-archives-apdc52250ee-4659-4751-9a3a-8b7988150530/mac
+https://github.com/apple-oss-distributions/libarchive/blob/main/libarchive/tar/bsdtar.1

@@ -1,0 +1,3023 @@
+{
+  "inputs": {
+    "src/lib/configuration-evidence.ts": {
+      "bytes": 621,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/lib/page-evidence.ts": {
+      "bytes": 2049,
+      "imports": [
+        {
+          "path": "src/lib/configuration-evidence.ts",
+          "kind": "import-statement",
+          "original": "./configuration-evidence"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/search.ts": {
+      "bytes": 1847,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/lib/car-avatar-shapes.ts": {
+      "bytes": 5862,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/lib/fact-validity.ts": {
+      "bytes": 605,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/lib/discovery.ts": {
+      "bytes": 12250,
+      "imports": [
+        {
+          "path": "src/lib/page-evidence.ts",
+          "kind": "import-statement",
+          "original": "./page-evidence"
+        },
+        {
+          "path": "src/lib/search.ts",
+          "kind": "import-statement",
+          "original": "./search"
+        },
+        {
+          "path": "src/lib/car-avatar-shapes.ts",
+          "kind": "import-statement",
+          "original": "./car-avatar-shapes"
+        },
+        {
+          "path": "src/lib/fact-validity.ts",
+          "kind": "import-statement",
+          "original": "./fact-validity"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/.pnpm/scheduler@0.28.0/node_modules/scheduler/cjs/scheduler.production.js": {
+      "bytes": 10181,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/.pnpm/scheduler@0.28.0/node_modules/scheduler/index.js": {
+      "bytes": 194,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/scheduler@0.28.0/node_modules/scheduler/cjs/scheduler.production.js",
+          "kind": "require-call",
+          "original": "./cjs/scheduler.production.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/.pnpm/react@19.3.0/node_modules/react/cjs/react.production.js": {
+      "bytes": 18040,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/.pnpm/react@19.3.0/node_modules/react/index.js": {
+      "bytes": 186,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/cjs/react.production.js",
+          "kind": "require-call",
+          "original": "./cjs/react.production.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/.pnpm/react-dom@19.3.0_react@19.3.0/node_modules/react-dom/cjs/react-dom.production.js": {
+      "bytes": 7326,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/index.js",
+          "kind": "require-call",
+          "original": "react"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/.pnpm/react-dom@19.3.0_react@19.3.0/node_modules/react-dom/index.js": {
+      "bytes": 1359,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/react-dom@19.3.0_react@19.3.0/node_modules/react-dom/cjs/react-dom.production.js",
+          "kind": "require-call",
+          "original": "./cjs/react-dom.production.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/.pnpm/react-dom@19.3.0_react@19.3.0/node_modules/react-dom/cjs/react-dom-client.production.js": {
+      "bytes": 625168,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/scheduler@0.28.0/node_modules/scheduler/index.js",
+          "kind": "require-call",
+          "original": "scheduler"
+        },
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/index.js",
+          "kind": "require-call",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/.pnpm/react-dom@19.3.0_react@19.3.0/node_modules/react-dom/index.js",
+          "kind": "require-call",
+          "original": "react-dom"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/.pnpm/react-dom@19.3.0_react@19.3.0/node_modules/react-dom/client.js": {
+      "bytes": 1373,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/react-dom@19.3.0_react@19.3.0/node_modules/react-dom/cjs/react-dom-client.production.js",
+          "kind": "require-call",
+          "original": "./cjs/react-dom-client.production.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/.pnpm/react@19.3.0/node_modules/react/cjs/react-jsx-runtime.production.js": {
+      "bytes": 976,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/.pnpm/react@19.3.0/node_modules/react/jsx-runtime.js": {
+      "bytes": 210,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/cjs/react-jsx-runtime.production.js",
+          "kind": "require-call",
+          "original": "./cjs/react-jsx-runtime.production.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "src/components/roadmark-logo.tsx": {
+      "bytes": 8791,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/components/roadmark-error.tsx": {
+      "bytes": 1484,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "src/components/roadmark-logo.tsx",
+          "kind": "import-statement",
+          "original": "./roadmark-logo"
+        },
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/portable/navigation.ts": {
+      "bytes": 1147,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/portable/link.tsx": {
+      "bytes": 647,
+      "imports": [
+        {
+          "path": "src/portable/navigation.ts",
+          "kind": "import-statement",
+          "original": "./navigation"
+        },
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/config.ts": {
+      "bytes": 1851,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/components/footnotes.tsx": {
+      "bytes": 5478,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "src/lib/config.ts",
+          "kind": "import-statement",
+          "original": "@/lib/config"
+        },
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/components/site-shell.tsx": {
+      "bytes": 1471,
+      "imports": [
+        {
+          "path": "src/portable/link.tsx",
+          "kind": "import-statement",
+          "original": "next/link"
+        },
+        {
+          "path": "src/components/footnotes.tsx",
+          "kind": "import-statement",
+          "original": "./footnotes"
+        },
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/issue-presentation.ts": {
+      "bytes": 719,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/lib/fact-presentation.ts": {
+      "bytes": 586,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/lib/corrections.ts": {
+      "bytes": 12481,
+      "imports": [
+        {
+          "path": "src/lib/config.ts",
+          "kind": "import-statement",
+          "original": "./config"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/correction-guards.ts": {
+      "bytes": 2856,
+      "imports": [
+        {
+          "path": "src/lib/config.ts",
+          "kind": "import-statement",
+          "original": "./config"
+        },
+        {
+          "path": "src/lib/corrections.ts",
+          "kind": "import-statement",
+          "original": "./corrections"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/availability-corrections.ts": {
+      "bytes": 5610,
+      "imports": [
+        {
+          "path": "src/lib/corrections.ts",
+          "kind": "import-statement",
+          "original": "./corrections"
+        },
+        {
+          "path": "src/lib/correction-guards.ts",
+          "kind": "import-statement",
+          "original": "./correction-guards"
+        },
+        {
+          "path": "src/lib/config.ts",
+          "kind": "import-statement",
+          "original": "./config"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/evidence-date.ts": {
+      "bytes": 641,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/lib/compare.ts": {
+      "bytes": 6631,
+      "imports": [
+        {
+          "path": "src/lib/fact-presentation.ts",
+          "kind": "import-statement",
+          "original": "./fact-presentation"
+        },
+        {
+          "path": "src/lib/evidence-date.ts",
+          "kind": "import-statement",
+          "original": "./evidence-date"
+        },
+        {
+          "path": "src/lib/fact-validity.ts",
+          "kind": "import-statement",
+          "original": "./fact-validity"
+        },
+        {
+          "path": "src/lib/config.ts",
+          "kind": "import-statement",
+          "original": "./config"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/citable.ts": {
+      "bytes": 13604,
+      "imports": [
+        {
+          "path": "src/lib/fact-presentation.ts",
+          "kind": "import-statement",
+          "original": "./fact-presentation"
+        },
+        {
+          "path": "src/lib/issue-presentation.ts",
+          "kind": "import-statement",
+          "original": "./issue-presentation"
+        },
+        {
+          "path": "src/lib/corrections.ts",
+          "kind": "import-statement",
+          "original": "./corrections"
+        },
+        {
+          "path": "src/lib/availability-corrections.ts",
+          "kind": "import-statement",
+          "original": "./availability-corrections"
+        },
+        {
+          "path": "src/lib/config.ts",
+          "kind": "import-statement",
+          "original": "./config"
+        },
+        {
+          "path": "src/lib/compare.ts",
+          "kind": "import-statement",
+          "original": "./compare"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/comparison-context.ts": {
+      "bytes": 1415,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/components/copy-for-ai.tsx": {
+      "bytes": 1427,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/components/selected-copy.tsx": {
+      "bytes": 364,
+      "imports": [
+        {
+          "path": "src/lib/citable.ts",
+          "kind": "import-statement",
+          "original": "@/lib/citable"
+        },
+        {
+          "path": "src/components/copy-for-ai.tsx",
+          "kind": "import-statement",
+          "original": "./copy-for-ai"
+        },
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/portable/image.tsx": {
+      "bytes": 315,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "media/approved-assets.json": {
+      "bytes": 3,
+      "imports": []
+    },
+    "src/lib/media.ts": {
+      "bytes": 1044,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/lib/fleet.ts": {
+      "bytes": 2754,
+      "imports": [
+        {
+          "path": "src/lib/config.ts",
+          "kind": "import-statement",
+          "original": "./config"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/components/ui.tsx": {
+      "bytes": 21743,
+      "imports": [
+        {
+          "path": "src/lib/issue-presentation.ts",
+          "kind": "import-statement",
+          "original": "@/lib/issue-presentation"
+        },
+        {
+          "path": "src/lib/evidence-date.ts",
+          "kind": "import-statement",
+          "original": "@/lib/evidence-date"
+        },
+        {
+          "path": "src/portable/link.tsx",
+          "kind": "import-statement",
+          "original": "next/link"
+        },
+        {
+          "path": "src/portable/image.tsx",
+          "kind": "import-statement",
+          "original": "next/image"
+        },
+        {
+          "path": "media/approved-assets.json",
+          "kind": "import-statement",
+          "original": "../../media/approved-assets.json"
+        },
+        {
+          "path": "src/lib/media.ts",
+          "kind": "import-statement",
+          "original": "@/lib/media"
+        },
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "src/lib/config.ts",
+          "kind": "import-statement",
+          "original": "@/lib/config"
+        },
+        {
+          "path": "src/lib/compare.ts",
+          "kind": "import-statement",
+          "original": "@/lib/compare"
+        },
+        {
+          "path": "src/components/footnotes.tsx",
+          "kind": "import-statement",
+          "original": "./footnotes"
+        },
+        {
+          "path": "src/lib/fleet.ts",
+          "kind": "import-statement",
+          "original": "@/lib/fleet"
+        },
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/components/picker.tsx": {
+      "bytes": 9111,
+      "imports": [
+        {
+          "path": "src/lib/search.ts",
+          "kind": "import-statement",
+          "original": "@/lib/search"
+        },
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "src/lib/config.ts",
+          "kind": "import-statement",
+          "original": "@/lib/config"
+        },
+        {
+          "path": "src/lib/compare.ts",
+          "kind": "import-statement",
+          "original": "@/lib/compare"
+        },
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/chapters.ts": {
+      "bytes": 7932,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/components/experience.tsx": {
+      "bytes": 35575,
+      "imports": [
+        {
+          "path": "src/lib/issue-presentation.ts",
+          "kind": "import-statement",
+          "original": "@/lib/issue-presentation"
+        },
+        {
+          "path": "src/lib/search.ts",
+          "kind": "import-statement",
+          "original": "@/lib/search"
+        },
+        {
+          "path": "src/lib/citable.ts",
+          "kind": "import-statement",
+          "original": "@/lib/citable"
+        },
+        {
+          "path": "src/lib/comparison-context.ts",
+          "kind": "import-statement",
+          "original": "@/lib/comparison-context"
+        },
+        {
+          "path": "src/components/selected-copy.tsx",
+          "kind": "import-statement",
+          "original": "./selected-copy"
+        },
+        {
+          "path": "src/portable/link.tsx",
+          "kind": "import-statement",
+          "original": "next/link"
+        },
+        {
+          "path": "src/portable/navigation.ts",
+          "kind": "import-statement",
+          "original": "next/navigation"
+        },
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "src/lib/compare.ts",
+          "kind": "import-statement",
+          "original": "@/lib/compare"
+        },
+        {
+          "path": "src/lib/config.ts",
+          "kind": "import-statement",
+          "original": "@/lib/config"
+        },
+        {
+          "path": "src/components/ui.tsx",
+          "kind": "import-statement",
+          "original": "./ui"
+        },
+        {
+          "path": "src/components/picker.tsx",
+          "kind": "import-statement",
+          "original": "./picker"
+        },
+        {
+          "path": "src/lib/chapters.ts",
+          "kind": "import-statement",
+          "original": "@/lib/chapters"
+        },
+        {
+          "path": "src/components/footnotes.tsx",
+          "kind": "import-statement",
+          "original": "./footnotes"
+        },
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/components/verdict-pictogram.tsx": {
+      "bytes": 4373,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/components/model-y-verdict.tsx": {
+      "bytes": 6082,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "src/components/roadmark-logo.tsx",
+          "kind": "import-statement",
+          "original": "./roadmark-logo"
+        },
+        {
+          "path": "src/components/verdict-pictogram.tsx",
+          "kind": "import-statement",
+          "original": "./verdict-pictogram"
+        },
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/components/fleet-swipe.tsx": {
+      "bytes": 7160,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/components/comparison-symbol.tsx": {
+      "bytes": 1518,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/chapter-art.ts": {
+      "bytes": 4024,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/lib/portable-string-codec.ts": {
+      "bytes": 4412,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/lib/portable-packs.ts": {
+      "bytes": 1712,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/portable/data.ts": {
+      "bytes": 1230,
+      "imports": [
+        {
+          "path": "src/lib/portable-string-codec.ts",
+          "kind": "import-statement",
+          "original": "@/lib/portable-string-codec"
+        },
+        {
+          "path": "src/lib/portable-packs.ts",
+          "kind": "import-statement",
+          "original": "@/lib/portable-packs"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/portable/chapter-art-src.ts": {
+      "bytes": 160,
+      "imports": [
+        {
+          "path": "src/portable/data.ts",
+          "kind": "import-statement",
+          "original": "./data"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/scenes/kit.ts": {
+      "bytes": 25130,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/lib/scenes/model-y.ts": {
+      "bytes": 62039,
+      "imports": [
+        {
+          "path": "src/lib/scenes/kit.ts",
+          "kind": "import-statement",
+          "original": "./kit"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/scenes/props.ts": {
+      "bytes": 16109,
+      "imports": [
+        {
+          "path": "src/lib/scenes/kit.ts",
+          "kind": "import-statement",
+          "original": "./kit"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/scenes/price.ts": {
+      "bytes": 8692,
+      "imports": [
+        {
+          "path": "src/lib/scenes/kit.ts",
+          "kind": "import-statement",
+          "original": "./kit"
+        },
+        {
+          "path": "src/lib/scenes/model-y.ts",
+          "kind": "import-statement",
+          "original": "./model-y"
+        },
+        {
+          "path": "src/lib/scenes/props.ts",
+          "kind": "import-statement",
+          "original": "./props"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/driving-sim.ts": {
+      "bytes": 14344,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/lib/scenes/figure.ts": {
+      "bytes": 22745,
+      "imports": [
+        {
+          "path": "src/lib/scenes/kit.ts",
+          "kind": "import-statement",
+          "original": "./kit"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/scenes/drive.ts": {
+      "bytes": 19795,
+      "imports": [
+        {
+          "path": "src/lib/driving-sim.ts",
+          "kind": "import-statement",
+          "original": "../driving-sim"
+        },
+        {
+          "path": "src/lib/scenes/kit.ts",
+          "kind": "import-statement",
+          "original": "./kit"
+        },
+        {
+          "path": "src/lib/scenes/figure.ts",
+          "kind": "import-statement",
+          "original": "./figure"
+        },
+        {
+          "path": "src/lib/scenes/model-y.ts",
+          "kind": "import-statement",
+          "original": "./model-y"
+        },
+        {
+          "path": "src/lib/scenes/props.ts",
+          "kind": "import-statement",
+          "original": "./props"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/scenes/range.ts": {
+      "bytes": 10602,
+      "imports": [
+        {
+          "path": "src/lib/scenes/kit.ts",
+          "kind": "import-statement",
+          "original": "./kit"
+        },
+        {
+          "path": "src/lib/scenes/model-y.ts",
+          "kind": "import-statement",
+          "original": "./model-y"
+        },
+        {
+          "path": "src/lib/scenes/props.ts",
+          "kind": "import-statement",
+          "original": "./props"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/scenes/space.ts": {
+      "bytes": 7529,
+      "imports": [
+        {
+          "path": "src/lib/scenes/kit.ts",
+          "kind": "import-statement",
+          "original": "./kit"
+        },
+        {
+          "path": "src/lib/scenes/model-y.ts",
+          "kind": "import-statement",
+          "original": "./model-y"
+        },
+        {
+          "path": "src/lib/scenes/props.ts",
+          "kind": "import-statement",
+          "original": "./props"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/scenes/convenience.ts": {
+      "bytes": 7291,
+      "imports": [
+        {
+          "path": "src/lib/scenes/kit.ts",
+          "kind": "import-statement",
+          "original": "./kit"
+        },
+        {
+          "path": "src/lib/scenes/figure.ts",
+          "kind": "import-statement",
+          "original": "./figure"
+        },
+        {
+          "path": "src/lib/scenes/model-y.ts",
+          "kind": "import-statement",
+          "original": "./model-y"
+        },
+        {
+          "path": "src/lib/scenes/props.ts",
+          "kind": "import-statement",
+          "original": "./props"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/scenes/comfort.ts": {
+      "bytes": 9176,
+      "imports": [
+        {
+          "path": "src/lib/scenes/kit.ts",
+          "kind": "import-statement",
+          "original": "./kit"
+        },
+        {
+          "path": "src/lib/scenes/model-y.ts",
+          "kind": "import-statement",
+          "original": "./model-y"
+        },
+        {
+          "path": "src/lib/scenes/props.ts",
+          "kind": "import-statement",
+          "original": "./props"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/scenes/software.ts": {
+      "bytes": 10065,
+      "imports": [
+        {
+          "path": "src/lib/scenes/kit.ts",
+          "kind": "import-statement",
+          "original": "./kit"
+        },
+        {
+          "path": "src/lib/scenes/figure.ts",
+          "kind": "import-statement",
+          "original": "./figure"
+        },
+        {
+          "path": "src/lib/scenes/model-y.ts",
+          "kind": "import-statement",
+          "original": "./model-y"
+        },
+        {
+          "path": "src/lib/scenes/props.ts",
+          "kind": "import-statement",
+          "original": "./props"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/scenes/b/math.ts": {
+      "bytes": 9156,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/lib/scenes/b/gl.ts": {
+      "bytes": 30291,
+      "imports": [
+        {
+          "path": "src/lib/scenes/b/math.ts",
+          "kind": "import-statement",
+          "original": "./math"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/scenes/b/mesh.ts": {
+      "bytes": 10320,
+      "imports": [
+        {
+          "path": "src/lib/scenes/b/math.ts",
+          "kind": "import-statement",
+          "original": "./math"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/scenes/b/car.ts": {
+      "bytes": 30108,
+      "imports": [
+        {
+          "path": "src/lib/scenes/b/gl.ts",
+          "kind": "import-statement",
+          "original": "./gl"
+        },
+        {
+          "path": "src/lib/scenes/b/math.ts",
+          "kind": "import-statement",
+          "original": "./math"
+        },
+        {
+          "path": "src/lib/scenes/b/mesh.ts",
+          "kind": "import-statement",
+          "original": "./mesh"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/scenes/b/common.ts": {
+      "bytes": 5766,
+      "imports": [
+        {
+          "path": "src/lib/scenes/b/car.ts",
+          "kind": "import-statement",
+          "original": "./car"
+        },
+        {
+          "path": "src/lib/scenes/b/math.ts",
+          "kind": "import-statement",
+          "original": "./math"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/scenes/b/overlay.ts": {
+      "bytes": 20907,
+      "imports": [
+        {
+          "path": "src/lib/scenes/b/math.ts",
+          "kind": "import-statement",
+          "original": "./math"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/scenes/b/flat.ts": {
+      "bytes": 3047,
+      "imports": [
+        {
+          "path": "src/lib/scenes/b/gl.ts",
+          "kind": "import-statement",
+          "original": "./gl"
+        },
+        {
+          "path": "src/lib/scenes/b/math.ts",
+          "kind": "import-statement",
+          "original": "./math"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/scenes/b/stage.ts": {
+      "bytes": 6532,
+      "imports": [
+        {
+          "path": "src/lib/scenes/b/flat.ts",
+          "kind": "import-statement",
+          "original": "./flat"
+        },
+        {
+          "path": "src/lib/scenes/b/gl.ts",
+          "kind": "import-statement",
+          "original": "./gl"
+        },
+        {
+          "path": "src/lib/scenes/b/math.ts",
+          "kind": "import-statement",
+          "original": "./math"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/scenes/b/world.ts": {
+      "bytes": 17410,
+      "imports": [
+        {
+          "path": "src/lib/scenes/b/gl.ts",
+          "kind": "import-statement",
+          "original": "./gl"
+        },
+        {
+          "path": "src/lib/scenes/b/math.ts",
+          "kind": "import-statement",
+          "original": "./math"
+        },
+        {
+          "path": "src/lib/scenes/b/mesh.ts",
+          "kind": "import-statement",
+          "original": "./mesh"
+        },
+        {
+          "path": "src/lib/scenes/b/stage.ts",
+          "kind": "import-statement",
+          "original": "./stage"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/scenes/b/props.ts": {
+      "bytes": 10733,
+      "imports": [
+        {
+          "path": "src/lib/scenes/b/car.ts",
+          "kind": "import-statement",
+          "original": "./car"
+        },
+        {
+          "path": "src/lib/scenes/b/gl.ts",
+          "kind": "import-statement",
+          "original": "./gl"
+        },
+        {
+          "path": "src/lib/scenes/b/math.ts",
+          "kind": "import-statement",
+          "original": "./math"
+        },
+        {
+          "path": "src/lib/scenes/b/mesh.ts",
+          "kind": "import-statement",
+          "original": "./mesh"
+        },
+        {
+          "path": "src/lib/scenes/b/stage.ts",
+          "kind": "import-statement",
+          "original": "./stage"
+        },
+        {
+          "path": "src/lib/scenes/b/world.ts",
+          "kind": "import-statement",
+          "original": "./world"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/scenes/b/price.ts": {
+      "bytes": 13455,
+      "imports": [
+        {
+          "path": "src/lib/scenes/b/car.ts",
+          "kind": "import-statement",
+          "original": "./car"
+        },
+        {
+          "path": "src/lib/scenes/b/common.ts",
+          "kind": "import-statement",
+          "original": "./common"
+        },
+        {
+          "path": "./gl",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "src/lib/scenes/b/math.ts",
+          "kind": "import-statement",
+          "original": "./math"
+        },
+        {
+          "path": "src/lib/scenes/b/mesh.ts",
+          "kind": "import-statement",
+          "original": "./mesh"
+        },
+        {
+          "path": "src/lib/scenes/b/overlay.ts",
+          "kind": "import-statement",
+          "original": "./overlay"
+        },
+        {
+          "path": "src/lib/scenes/b/props.ts",
+          "kind": "import-statement",
+          "original": "./props"
+        },
+        {
+          "path": "src/lib/scenes/b/stage.ts",
+          "kind": "import-statement",
+          "original": "./stage"
+        },
+        {
+          "path": "src/lib/scenes/b/world.ts",
+          "kind": "import-statement",
+          "original": "./world"
+        },
+        {
+          "path": "src/lib/scenes/b/mesh.ts",
+          "kind": "import-statement",
+          "original": "./mesh"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/scenes/b/town.ts": {
+      "bytes": 13724,
+      "imports": [
+        {
+          "path": "./gl",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "src/lib/scenes/b/math.ts",
+          "kind": "import-statement",
+          "original": "./math"
+        },
+        {
+          "path": "src/lib/scenes/b/mesh.ts",
+          "kind": "import-statement",
+          "original": "./mesh"
+        },
+        {
+          "path": "src/lib/scenes/b/world.ts",
+          "kind": "import-statement",
+          "original": "./world"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/scenes/b/drive.ts": {
+      "bytes": 17619,
+      "imports": [
+        {
+          "path": "src/lib/scenes/b/car.ts",
+          "kind": "import-statement",
+          "original": "./car"
+        },
+        {
+          "path": "src/lib/scenes/b/common.ts",
+          "kind": "import-statement",
+          "original": "./common"
+        },
+        {
+          "path": "./gl",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "src/lib/scenes/b/math.ts",
+          "kind": "import-statement",
+          "original": "./math"
+        },
+        {
+          "path": "src/lib/scenes/b/overlay.ts",
+          "kind": "import-statement",
+          "original": "./overlay"
+        },
+        {
+          "path": "src/lib/scenes/b/stage.ts",
+          "kind": "import-statement",
+          "original": "./stage"
+        },
+        {
+          "path": "src/lib/scenes/b/town.ts",
+          "kind": "import-statement",
+          "original": "./town"
+        },
+        {
+          "path": "src/lib/scenes/b/world.ts",
+          "kind": "import-statement",
+          "original": "./world"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/scenes/b/home.ts": {
+      "bytes": 2978,
+      "imports": [
+        {
+          "path": "src/lib/scenes/b/car.ts",
+          "kind": "import-statement",
+          "original": "./car"
+        },
+        {
+          "path": "src/lib/scenes/b/common.ts",
+          "kind": "import-statement",
+          "original": "./common"
+        },
+        {
+          "path": "./gl",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "src/lib/scenes/b/math.ts",
+          "kind": "import-statement",
+          "original": "./math"
+        },
+        {
+          "path": "src/lib/scenes/b/world.ts",
+          "kind": "import-statement",
+          "original": "./world"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/scenes/b/range.ts": {
+      "bytes": 16284,
+      "imports": [
+        {
+          "path": "src/lib/scenes/b/car.ts",
+          "kind": "import-statement",
+          "original": "./car"
+        },
+        {
+          "path": "src/lib/scenes/b/common.ts",
+          "kind": "import-statement",
+          "original": "./common"
+        },
+        {
+          "path": "./gl",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "src/lib/scenes/b/home.ts",
+          "kind": "import-statement",
+          "original": "./home"
+        },
+        {
+          "path": "src/lib/scenes/b/math.ts",
+          "kind": "import-statement",
+          "original": "./math"
+        },
+        {
+          "path": "src/lib/scenes/b/overlay.ts",
+          "kind": "import-statement",
+          "original": "./overlay"
+        },
+        {
+          "path": "src/lib/scenes/b/props.ts",
+          "kind": "import-statement",
+          "original": "./props"
+        },
+        {
+          "path": "src/lib/scenes/b/stage.ts",
+          "kind": "import-statement",
+          "original": "./stage"
+        },
+        {
+          "path": "src/lib/scenes/b/town.ts",
+          "kind": "import-statement",
+          "original": "./town"
+        },
+        {
+          "path": "src/lib/scenes/b/world.ts",
+          "kind": "import-statement",
+          "original": "./world"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/scenes/b/space.ts": {
+      "bytes": 7434,
+      "imports": [
+        {
+          "path": "src/lib/scenes/b/car.ts",
+          "kind": "import-statement",
+          "original": "./car"
+        },
+        {
+          "path": "src/lib/scenes/b/common.ts",
+          "kind": "import-statement",
+          "original": "./common"
+        },
+        {
+          "path": "src/lib/scenes/b/home.ts",
+          "kind": "import-statement",
+          "original": "./home"
+        },
+        {
+          "path": "./gl",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "src/lib/scenes/b/math.ts",
+          "kind": "import-statement",
+          "original": "./math"
+        },
+        {
+          "path": "src/lib/scenes/b/overlay.ts",
+          "kind": "import-statement",
+          "original": "./overlay"
+        },
+        {
+          "path": "src/lib/scenes/b/props.ts",
+          "kind": "import-statement",
+          "original": "./props"
+        },
+        {
+          "path": "src/lib/scenes/b/stage.ts",
+          "kind": "import-statement",
+          "original": "./stage"
+        },
+        {
+          "path": "src/lib/scenes/b/world.ts",
+          "kind": "import-statement",
+          "original": "./world"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/scenes/b/convenience.ts": {
+      "bytes": 8010,
+      "imports": [
+        {
+          "path": "src/lib/scenes/b/car.ts",
+          "kind": "import-statement",
+          "original": "./car"
+        },
+        {
+          "path": "src/lib/scenes/b/common.ts",
+          "kind": "import-statement",
+          "original": "./common"
+        },
+        {
+          "path": "./gl",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "src/lib/scenes/b/home.ts",
+          "kind": "import-statement",
+          "original": "./home"
+        },
+        {
+          "path": "src/lib/scenes/b/math.ts",
+          "kind": "import-statement",
+          "original": "./math"
+        },
+        {
+          "path": "src/lib/scenes/b/overlay.ts",
+          "kind": "import-statement",
+          "original": "./overlay"
+        },
+        {
+          "path": "src/lib/scenes/b/props.ts",
+          "kind": "import-statement",
+          "original": "./props"
+        },
+        {
+          "path": "src/lib/scenes/b/stage.ts",
+          "kind": "import-statement",
+          "original": "./stage"
+        },
+        {
+          "path": "src/lib/scenes/b/world.ts",
+          "kind": "import-statement",
+          "original": "./world"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/scenes/b/comfort.ts": {
+      "bytes": 9907,
+      "imports": [
+        {
+          "path": "src/lib/scenes/b/car.ts",
+          "kind": "import-statement",
+          "original": "./car"
+        },
+        {
+          "path": "src/lib/scenes/b/common.ts",
+          "kind": "import-statement",
+          "original": "./common"
+        },
+        {
+          "path": "./gl",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "src/lib/scenes/b/math.ts",
+          "kind": "import-statement",
+          "original": "./math"
+        },
+        {
+          "path": "src/lib/scenes/b/overlay.ts",
+          "kind": "import-statement",
+          "original": "./overlay"
+        },
+        {
+          "path": "src/lib/scenes/b/stage.ts",
+          "kind": "import-statement",
+          "original": "./stage"
+        },
+        {
+          "path": "src/lib/scenes/b/town.ts",
+          "kind": "import-statement",
+          "original": "./town"
+        },
+        {
+          "path": "src/lib/scenes/b/world.ts",
+          "kind": "import-statement",
+          "original": "./world"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/scenes/b/software.ts": {
+      "bytes": 11574,
+      "imports": [
+        {
+          "path": "src/lib/scenes/b/car.ts",
+          "kind": "import-statement",
+          "original": "./car"
+        },
+        {
+          "path": "src/lib/scenes/b/common.ts",
+          "kind": "import-statement",
+          "original": "./common"
+        },
+        {
+          "path": "./gl",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "src/lib/scenes/b/home.ts",
+          "kind": "import-statement",
+          "original": "./home"
+        },
+        {
+          "path": "src/lib/scenes/b/math.ts",
+          "kind": "import-statement",
+          "original": "./math"
+        },
+        {
+          "path": "src/lib/scenes/b/mesh.ts",
+          "kind": "import-statement",
+          "original": "./mesh"
+        },
+        {
+          "path": "src/lib/scenes/b/overlay.ts",
+          "kind": "import-statement",
+          "original": "./overlay"
+        },
+        {
+          "path": "src/lib/scenes/b/props.ts",
+          "kind": "import-statement",
+          "original": "./props"
+        },
+        {
+          "path": "src/lib/scenes/b/stage.ts",
+          "kind": "import-statement",
+          "original": "./stage"
+        },
+        {
+          "path": "src/lib/scenes/b/world.ts",
+          "kind": "import-statement",
+          "original": "./world"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/scene-loaders.ts": {
+      "bytes": 5397,
+      "imports": [
+        {
+          "path": "src/lib/scenes/price.ts",
+          "kind": "dynamic-import",
+          "original": "./scenes/price"
+        },
+        {
+          "path": "src/lib/scenes/drive.ts",
+          "kind": "dynamic-import",
+          "original": "./scenes/drive"
+        },
+        {
+          "path": "src/lib/scenes/range.ts",
+          "kind": "dynamic-import",
+          "original": "./scenes/range"
+        },
+        {
+          "path": "src/lib/scenes/space.ts",
+          "kind": "dynamic-import",
+          "original": "./scenes/space"
+        },
+        {
+          "path": "src/lib/scenes/convenience.ts",
+          "kind": "dynamic-import",
+          "original": "./scenes/convenience"
+        },
+        {
+          "path": "src/lib/scenes/comfort.ts",
+          "kind": "dynamic-import",
+          "original": "./scenes/comfort"
+        },
+        {
+          "path": "src/lib/scenes/software.ts",
+          "kind": "dynamic-import",
+          "original": "./scenes/software"
+        },
+        {
+          "path": "src/lib/scenes/b/price.ts",
+          "kind": "dynamic-import",
+          "original": "./scenes/b/price"
+        },
+        {
+          "path": "src/lib/scenes/b/drive.ts",
+          "kind": "dynamic-import",
+          "original": "./scenes/b/drive"
+        },
+        {
+          "path": "src/lib/scenes/b/range.ts",
+          "kind": "dynamic-import",
+          "original": "./scenes/b/range"
+        },
+        {
+          "path": "src/lib/scenes/b/space.ts",
+          "kind": "dynamic-import",
+          "original": "./scenes/b/space"
+        },
+        {
+          "path": "src/lib/scenes/b/convenience.ts",
+          "kind": "dynamic-import",
+          "original": "./scenes/b/convenience"
+        },
+        {
+          "path": "src/lib/scenes/b/comfort.ts",
+          "kind": "dynamic-import",
+          "original": "./scenes/b/comfort"
+        },
+        {
+          "path": "src/lib/scenes/b/software.ts",
+          "kind": "dynamic-import",
+          "original": "./scenes/b/software"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/scene-readout.ts": {
+      "bytes": 5115,
+      "imports": [
+        {
+          "path": "src/lib/compare.ts",
+          "kind": "import-statement",
+          "original": "./compare"
+        },
+        {
+          "path": "src/lib/config.ts",
+          "kind": "import-statement",
+          "original": "./config"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/components/scene-canvas.tsx": {
+      "bytes": 9461,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "src/lib/scenes/kit.ts",
+          "kind": "import-statement",
+          "original": "@/lib/scenes/kit"
+        },
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/components/chapter-art.tsx": {
+      "bytes": 4213,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "src/lib/chapter-art.ts",
+          "kind": "import-statement",
+          "original": "@/lib/chapter-art"
+        },
+        {
+          "path": "src/portable/chapter-art-src.ts",
+          "kind": "import-statement",
+          "original": "@/lib/chapter-art-src"
+        },
+        {
+          "path": "src/lib/scene-loaders.ts",
+          "kind": "import-statement",
+          "original": "@/lib/scene-loaders"
+        },
+        {
+          "path": "src/lib/scene-readout.ts",
+          "kind": "import-statement",
+          "original": "@/lib/scene-readout"
+        },
+        {
+          "path": "src/components/scene-canvas.tsx",
+          "kind": "import-statement",
+          "original": "./scene-canvas"
+        },
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/components/car-avatar.tsx": {
+      "bytes": 5493,
+      "imports": [
+        {
+          "path": "src/lib/car-avatar-shapes.ts",
+          "kind": "import-statement",
+          "original": "@/lib/car-avatar-shapes"
+        },
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/components/fleet-experience.tsx": {
+      "bytes": 25622,
+      "imports": [
+        {
+          "path": "src/components/model-y-verdict.tsx",
+          "kind": "import-statement",
+          "original": "./model-y-verdict"
+        },
+        {
+          "path": "src/portable/link.tsx",
+          "kind": "import-statement",
+          "original": "next/link"
+        },
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "src/lib/config.ts",
+          "kind": "import-statement",
+          "original": "@/lib/config"
+        },
+        {
+          "path": "src/lib/fleet.ts",
+          "kind": "import-statement",
+          "original": "@/lib/fleet"
+        },
+        {
+          "path": "src/lib/compare.ts",
+          "kind": "import-statement",
+          "original": "@/lib/compare"
+        },
+        {
+          "path": "src/lib/chapters.ts",
+          "kind": "import-statement",
+          "original": "@/lib/chapters"
+        },
+        {
+          "path": "src/components/footnotes.tsx",
+          "kind": "import-statement",
+          "original": "./footnotes"
+        },
+        {
+          "path": "src/components/ui.tsx",
+          "kind": "import-statement",
+          "original": "./ui"
+        },
+        {
+          "path": "src/components/fleet-swipe.tsx",
+          "kind": "import-statement",
+          "original": "./fleet-swipe"
+        },
+        {
+          "path": "src/components/comparison-symbol.tsx",
+          "kind": "import-statement",
+          "original": "./comparison-symbol"
+        },
+        {
+          "path": "src/components/chapter-art.tsx",
+          "kind": "import-statement",
+          "original": "./chapter-art"
+        },
+        {
+          "path": "src/components/car-avatar.tsx",
+          "kind": "import-statement",
+          "original": "./car-avatar"
+        },
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/report-claim-shape.ts": {
+      "bytes": 1914,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/lib/report-queue-files.ts": {
+      "bytes": 796,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/lib/report-claim-binding.ts": {
+      "bytes": 6953,
+      "imports": [
+        {
+          "path": "src/lib/report-claim-shape.ts",
+          "kind": "import-statement",
+          "original": "./report-claim-shape"
+        },
+        {
+          "path": "src/lib/report-queue-files.ts",
+          "kind": "import-statement",
+          "original": "./report-queue-files"
+        },
+        {
+          "path": "src/lib/corrections.ts",
+          "kind": "import-statement",
+          "original": "./corrections"
+        },
+        {
+          "path": "src/lib/correction-guards.ts",
+          "kind": "import-statement",
+          "original": "./correction-guards"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/report-queue-projection.ts": {
+      "bytes": 7942,
+      "imports": [
+        {
+          "path": "src/lib/report-claim-shape.ts",
+          "kind": "import-statement",
+          "original": "./report-claim-shape"
+        },
+        {
+          "path": "src/lib/report-queue-files.ts",
+          "kind": "import-statement",
+          "original": "./report-queue-files"
+        },
+        {
+          "path": "src/lib/corrections.ts",
+          "kind": "import-statement",
+          "original": "./corrections"
+        },
+        {
+          "path": "src/lib/correction-guards.ts",
+          "kind": "import-statement",
+          "original": "./correction-guards"
+        },
+        {
+          "path": "src/lib/report-claim-binding.ts",
+          "kind": "import-statement",
+          "original": "./report-claim-binding"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/report-queue-reader.ts": {
+      "bytes": 4911,
+      "imports": [
+        {
+          "path": "src/lib/report-queue-projection.ts",
+          "kind": "import-statement",
+          "original": "./report-queue-projection"
+        },
+        {
+          "path": "src/lib/report-queue-files.ts",
+          "kind": "import-statement",
+          "original": "./report-queue-files"
+        },
+        {
+          "path": "src/lib/report-claim-binding.ts",
+          "kind": "import-statement",
+          "original": "./report-claim-binding"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/components/review-queue.tsx": {
+      "bytes": 7439,
+      "imports": [
+        {
+          "path": "src/lib/search.ts",
+          "kind": "import-statement",
+          "original": "@/lib/search"
+        },
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "src/portable/link.tsx",
+          "kind": "import-statement",
+          "original": "next/link"
+        },
+        {
+          "path": "src/components/roadmark-logo.tsx",
+          "kind": "import-statement",
+          "original": "./roadmark-logo"
+        },
+        {
+          "path": "src/lib/report-queue-projection.ts",
+          "kind": "import-statement",
+          "original": "@/lib/report-queue-projection"
+        },
+        {
+          "path": "src/lib/report-queue-reader.ts",
+          "kind": "import-statement",
+          "original": "@/lib/report-queue-reader"
+        },
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/portable/market-inventory-data.ts": {
+      "bytes": 141,
+      "imports": [
+        {
+          "path": "src/portable/data.ts",
+          "kind": "import-statement",
+          "original": "./data"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/components/market-audit.tsx": {
+      "bytes": 8253,
+      "imports": [
+        {
+          "path": "src/lib/search.ts",
+          "kind": "import-statement",
+          "original": "@/lib/search"
+        },
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "src/portable/link.tsx",
+          "kind": "import-statement",
+          "original": "next/link"
+        },
+        {
+          "path": "src/portable/market-inventory-data.ts",
+          "kind": "import-statement",
+          "original": "@/lib/market-inventory-data"
+        },
+        {
+          "path": "src/components/roadmark-logo.tsx",
+          "kind": "import-statement",
+          "original": "./roadmark-logo"
+        },
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/components/evidence-conditions.tsx": {
+      "bytes": 717,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/components/visual-action-feedback.tsx": {
+      "bytes": 300,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/action-feedback.ts": {
+      "bytes": 1229,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/lib/selling-points.ts": {
+      "bytes": 13892,
+      "imports": [
+        {
+          "path": "src/lib/fact-validity.ts",
+          "kind": "import-statement",
+          "original": "./fact-validity"
+        },
+        {
+          "path": "src/lib/discovery.ts",
+          "kind": "import-statement",
+          "original": "./discovery"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/buyer-summary-timing.ts": {
+      "bytes": 387,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/components/discovery.tsx": {
+      "bytes": 25961,
+      "imports": [
+        {
+          "path": "src/lib/evidence-date.ts",
+          "kind": "import-statement",
+          "original": "@/lib/evidence-date"
+        },
+        {
+          "path": "src/components/evidence-conditions.tsx",
+          "kind": "import-statement",
+          "original": "./evidence-conditions"
+        },
+        {
+          "path": "src/components/visual-action-feedback.tsx",
+          "kind": "import-statement",
+          "original": "./visual-action-feedback"
+        },
+        {
+          "path": "src/lib/action-feedback.ts",
+          "kind": "import-statement",
+          "original": "@/lib/action-feedback"
+        },
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "src/portable/link.tsx",
+          "kind": "import-statement",
+          "original": "next/link"
+        },
+        {
+          "path": "src/lib/discovery.ts",
+          "kind": "import-statement",
+          "original": "@/lib/discovery"
+        },
+        {
+          "path": "src/lib/selling-points.ts",
+          "kind": "import-statement",
+          "original": "@/lib/selling-points"
+        },
+        {
+          "path": "src/lib/buyer-summary-timing.ts",
+          "kind": "import-statement",
+          "original": "@/lib/buyer-summary-timing"
+        },
+        {
+          "path": "src/components/roadmark-logo.tsx",
+          "kind": "import-statement",
+          "original": "./roadmark-logo"
+        },
+        {
+          "path": "src/components/car-avatar.tsx",
+          "kind": "import-statement",
+          "original": "./car-avatar"
+        },
+        {
+          "path": "src/components/footnotes.tsx",
+          "kind": "import-statement",
+          "original": "./footnotes"
+        },
+        {
+          "path": "src/lib/config.ts",
+          "kind": "import-statement",
+          "original": "@/lib/config"
+        },
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/explorer-state.ts": {
+      "bytes": 1397,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/components/explorer.tsx": {
+      "bytes": 9578,
+      "imports": [
+        {
+          "path": "src/lib/search.ts",
+          "kind": "import-statement",
+          "original": "@/lib/search"
+        },
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "src/lib/explorer-state.ts",
+          "kind": "import-statement",
+          "original": "@/lib/explorer-state"
+        },
+        {
+          "path": "src/portable/navigation.ts",
+          "kind": "import-statement",
+          "original": "next/navigation"
+        },
+        {
+          "path": "src/portable/link.tsx",
+          "kind": "import-statement",
+          "original": "next/link"
+        },
+        {
+          "path": "src/lib/config.ts",
+          "kind": "import-statement",
+          "original": "@/lib/config"
+        },
+        {
+          "path": "src/components/ui.tsx",
+          "kind": "import-statement",
+          "original": "./ui"
+        },
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/detail-client-props.ts": {
+      "bytes": 849,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/components/buyer-summary.tsx": {
+      "bytes": 1953,
+      "imports": [
+        {
+          "path": "src/lib/evidence-date.ts",
+          "kind": "import-statement",
+          "original": "@/lib/evidence-date"
+        },
+        {
+          "path": "src/components/evidence-conditions.tsx",
+          "kind": "import-statement",
+          "original": "./evidence-conditions"
+        },
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "src/lib/selling-points.ts",
+          "kind": "import-statement",
+          "original": "@/lib/selling-points"
+        },
+        {
+          "path": "src/lib/buyer-summary-timing.ts",
+          "kind": "import-statement",
+          "original": "@/lib/buyer-summary-timing"
+        },
+        {
+          "path": "src/components/footnotes.tsx",
+          "kind": "import-statement",
+          "original": "./footnotes"
+        },
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/device-issue-drafts.ts": {
+      "bytes": 1234,
+      "imports": [
+        {
+          "path": "src/lib/correction-guards.ts",
+          "kind": "import-statement",
+          "original": "./correction-guards"
+        },
+        {
+          "path": "src/lib/corrections.ts",
+          "kind": "import-statement",
+          "original": "./corrections"
+        },
+        {
+          "path": "src/lib/report-claim-shape.ts",
+          "kind": "import-statement",
+          "original": "./report-claim-shape"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/lib/report-submission-state.ts": {
+      "bytes": 2210,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/lib/report-submission-client.ts": {
+      "bytes": 1568,
+      "imports": [
+        {
+          "path": "src/lib/report-claim-binding.ts",
+          "kind": "import-statement",
+          "original": "./report-claim-binding"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/components/claim-report.tsx": {
+      "bytes": 6884,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "src/lib/corrections.ts",
+          "kind": "import-statement",
+          "original": "@/lib/corrections"
+        },
+        {
+          "path": "src/lib/device-issue-drafts.ts",
+          "kind": "import-statement",
+          "original": "@/lib/device-issue-drafts"
+        },
+        {
+          "path": "src/lib/report-claim-binding.ts",
+          "kind": "import-statement",
+          "original": "@/lib/report-claim-binding"
+        },
+        {
+          "path": "src/lib/report-submission-state.ts",
+          "kind": "import-statement",
+          "original": "@/lib/report-submission-state"
+        },
+        {
+          "path": "src/lib/report-submission-client.ts",
+          "kind": "import-statement",
+          "original": "@/lib/report-submission-client"
+        },
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/components/detail.tsx": {
+      "bytes": 6759,
+      "imports": [
+        {
+          "path": "src/lib/detail-client-props.ts",
+          "kind": "import-statement",
+          "original": "@/lib/detail-client-props"
+        },
+        {
+          "path": "src/components/evidence-conditions.tsx",
+          "kind": "import-statement",
+          "original": "./evidence-conditions"
+        },
+        {
+          "path": "src/lib/availability-corrections.ts",
+          "kind": "import-statement",
+          "original": "@/lib/availability-corrections"
+        },
+        {
+          "path": "src/components/footnotes.tsx",
+          "kind": "import-statement",
+          "original": "./footnotes"
+        },
+        {
+          "path": "src/lib/corrections.ts",
+          "kind": "import-statement",
+          "original": "@/lib/corrections"
+        },
+        {
+          "path": "src/components/buyer-summary.tsx",
+          "kind": "import-statement",
+          "original": "./buyer-summary"
+        },
+        {
+          "path": "src/portable/link.tsx",
+          "kind": "import-statement",
+          "original": "next/link"
+        },
+        {
+          "path": "src/components/claim-report.tsx",
+          "kind": "import-statement",
+          "original": "./claim-report"
+        },
+        {
+          "path": "src/lib/config.ts",
+          "kind": "import-statement",
+          "original": "@/lib/config"
+        },
+        {
+          "path": "src/components/ui.tsx",
+          "kind": "import-statement",
+          "original": "./ui"
+        },
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/components/software.tsx": {
+      "bytes": 2114,
+      "imports": [
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "src/portable/navigation.ts",
+          "kind": "import-statement",
+          "original": "next/navigation"
+        },
+        {
+          "path": "src/components/ui.tsx",
+          "kind": "import-statement",
+          "original": "./ui"
+        },
+        {
+          "path": "src/components/picker.tsx",
+          "kind": "import-statement",
+          "original": "./picker"
+        },
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "data/approved-availability-corrections.json": {
+      "bytes": 3,
+      "imports": []
+    },
+    "data/approved-corrections.json": {
+      "bytes": 3,
+      "imports": []
+    },
+    "data/approved-feature-corrections.json": {
+      "bytes": 3,
+      "imports": []
+    },
+    "src/components/correction-history.tsx": {
+      "bytes": 4091,
+      "imports": [
+        {
+          "path": "src/lib/compare.ts",
+          "kind": "import-statement",
+          "original": "@/lib/compare"
+        },
+        {
+          "path": "data/approved-availability-corrections.json",
+          "kind": "import-statement",
+          "original": "../../data/approved-availability-corrections.json"
+        },
+        {
+          "path": "data/approved-corrections.json",
+          "kind": "import-statement",
+          "original": "../../data/approved-corrections.json"
+        },
+        {
+          "path": "data/approved-feature-corrections.json",
+          "kind": "import-statement",
+          "original": "../../data/approved-feature-corrections.json"
+        },
+        {
+          "path": "src/lib/corrections.ts",
+          "kind": "import-statement",
+          "original": "@/lib/corrections"
+        },
+        {
+          "path": "src/portable/link.tsx",
+          "kind": "import-statement",
+          "original": "next/link"
+        },
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/components/source-registry.tsx": {
+      "bytes": 1989,
+      "imports": [
+        {
+          "path": "src/lib/search.ts",
+          "kind": "import-statement",
+          "original": "@/lib/search"
+        },
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/index.js",
+          "kind": "import-statement",
+          "original": "react"
+        },
+        {
+          "path": "src/lib/config.ts",
+          "kind": "import-statement",
+          "original": "@/lib/config"
+        },
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/components/with-evidence.tsx": {
+      "bytes": 344,
+      "imports": [
+        {
+          "path": "src/portable/data.ts",
+          "kind": "import-statement",
+          "original": "@/lib/data"
+        },
+        {
+          "path": "src/components/footnotes.tsx",
+          "kind": "import-statement",
+          "original": "./footnotes"
+        },
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/app/model-y/page.tsx": {
+      "bytes": 2146,
+      "imports": [
+        {
+          "path": "src/components/with-evidence.tsx",
+          "kind": "import-statement",
+          "original": "@/components/with-evidence"
+        },
+        {
+          "path": "src/portable/link.tsx",
+          "kind": "import-statement",
+          "original": "next/link"
+        },
+        {
+          "path": "src/portable/data.ts",
+          "kind": "import-statement",
+          "original": "@/lib/data"
+        },
+        {
+          "path": "src/lib/config.ts",
+          "kind": "import-statement",
+          "original": "@/lib/config"
+        },
+        {
+          "path": "src/components/ui.tsx",
+          "kind": "import-statement",
+          "original": "@/components/ui"
+        },
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/app/methodology/page.tsx": {
+      "bytes": 8247,
+      "imports": [
+        {
+          "path": "src/portable/link.tsx",
+          "kind": "import-statement",
+          "original": "next/link"
+        },
+        {
+          "path": "src/portable/data.ts",
+          "kind": "import-statement",
+          "original": "@/lib/data"
+        },
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/portable/entry.tsx": {
+      "bytes": 4436,
+      "imports": [
+        {
+          "path": "src/lib/discovery.ts",
+          "kind": "import-statement",
+          "original": "@/lib/discovery"
+        },
+        {
+          "path": "node_modules/.pnpm/react-dom@19.3.0_react@19.3.0/node_modules/react-dom/client.js",
+          "kind": "import-statement",
+          "original": "react-dom/client"
+        },
+        {
+          "path": "src/components/roadmark-error.tsx",
+          "kind": "import-statement",
+          "original": "@/components/roadmark-error"
+        },
+        {
+          "path": "src/components/site-shell.tsx",
+          "kind": "import-statement",
+          "original": "@/components/site-shell"
+        },
+        {
+          "path": "src/components/experience.tsx",
+          "kind": "import-statement",
+          "original": "@/components/experience"
+        },
+        {
+          "path": "src/components/fleet-experience.tsx",
+          "kind": "import-statement",
+          "original": "@/components/fleet-experience"
+        },
+        {
+          "path": "src/lib/fleet.ts",
+          "kind": "import-statement",
+          "original": "@/lib/fleet"
+        },
+        {
+          "path": "src/components/review-queue.tsx",
+          "kind": "import-statement",
+          "original": "@/components/review-queue"
+        },
+        {
+          "path": "src/components/market-audit.tsx",
+          "kind": "import-statement",
+          "original": "@/components/market-audit"
+        },
+        {
+          "path": "src/components/discovery.tsx",
+          "kind": "import-statement",
+          "original": "@/components/discovery"
+        },
+        {
+          "path": "src/components/explorer.tsx",
+          "kind": "import-statement",
+          "original": "@/components/explorer"
+        },
+        {
+          "path": "src/components/detail.tsx",
+          "kind": "import-statement",
+          "original": "@/components/detail"
+        },
+        {
+          "path": "src/components/software.tsx",
+          "kind": "import-statement",
+          "original": "@/components/software"
+        },
+        {
+          "path": "src/components/correction-history.tsx",
+          "kind": "import-statement",
+          "original": "@/components/correction-history"
+        },
+        {
+          "path": "src/components/source-registry.tsx",
+          "kind": "import-statement",
+          "original": "@/components/source-registry"
+        },
+        {
+          "path": "src/app/model-y/page.tsx",
+          "kind": "import-statement",
+          "original": "@/app/model-y/page"
+        },
+        {
+          "path": "src/app/methodology/page.tsx",
+          "kind": "import-statement",
+          "original": "@/app/methodology/page"
+        },
+        {
+          "path": "src/portable/data.ts",
+          "kind": "import-statement",
+          "original": "./data"
+        },
+        {
+          "path": "src/lib/compare.ts",
+          "kind": "import-statement",
+          "original": "@/lib/compare"
+        },
+        {
+          "path": "src/lib/config.ts",
+          "kind": "import-statement",
+          "original": "@/lib/config"
+        },
+        {
+          "path": "src/portable/navigation.ts",
+          "kind": "import-statement",
+          "original": "./navigation"
+        },
+        {
+          "path": "node_modules/.pnpm/react@19.3.0/node_modules/react/jsx-runtime.js",
+          "kind": "import-statement",
+          "original": "react/jsx-runtime"
+        }
+      ],
+      "format": "esm"
+    }
+  },
+  "outputs": {
+    "entry.js": {
+      "imports": [],
+      "exports": [],
+      "entryPoint": "src/portable/entry.tsx",
+      "inputs": {
+        "node_modules/.pnpm/scheduler@0.28.0/node_modules/scheduler/cjs/scheduler.production.js": {
+          "bytesInOutput": 3662
+        },
+        "node_modules/.pnpm/scheduler@0.28.0/node_modules/scheduler/index.js": {
+          "bytesInOutput": 51
+        },
+        "node_modules/.pnpm/react@19.3.0/node_modules/react/cjs/react.production.js": {
+          "bytesInOutput": 8014
+        },
+        "node_modules/.pnpm/react@19.3.0/node_modules/react/index.js": {
+          "bytesInOutput": 51
+        },
+        "node_modules/.pnpm/react-dom@19.3.0_react@19.3.0/node_modules/react-dom/cjs/react-dom.production.js": {
+          "bytesInOutput": 3666
+        },
+        "node_modules/.pnpm/react-dom@19.3.0_react@19.3.0/node_modules/react-dom/index.js": {
+          "bytesInOutput": 253
+        },
+        "node_modules/.pnpm/react-dom@19.3.0_react@19.3.0/node_modules/react-dom/cjs/react-dom-client.production.js": {
+          "bytesInOutput": 205683
+        },
+        "node_modules/.pnpm/react-dom@19.3.0_react@19.3.0/node_modules/react-dom/client.js": {
+          "bytesInOutput": 253
+        },
+        "node_modules/.pnpm/react@19.3.0/node_modules/react/cjs/react-jsx-runtime.production.js": {
+          "bytesInOutput": 364
+        },
+        "node_modules/.pnpm/react@19.3.0/node_modules/react/jsx-runtime.js": {
+          "bytesInOutput": 51
+        },
+        "src/lib/scenes/kit.ts": {
+          "bytesInOutput": 8428
+        },
+        "src/lib/scenes/model-y.ts": {
+          "bytesInOutput": 22736
+        },
+        "src/lib/scenes/props.ts": {
+          "bytesInOutput": 6035
+        },
+        "src/lib/scenes/price.ts": {
+          "bytesInOutput": 3392
+        },
+        "src/lib/driving-sim.ts": {
+          "bytesInOutput": 5381
+        },
+        "src/lib/scenes/figure.ts": {
+          "bytesInOutput": 1817
+        },
+        "src/lib/scenes/drive.ts": {
+          "bytesInOutput": 8249
+        },
+        "src/lib/scenes/range.ts": {
+          "bytesInOutput": 4307
+        },
+        "src/lib/scenes/space.ts": {
+          "bytesInOutput": 2936
+        },
+        "src/lib/scenes/convenience.ts": {
+          "bytesInOutput": 2821
+        },
+        "src/lib/scenes/comfort.ts": {
+          "bytesInOutput": 3587
+        },
+        "src/lib/scenes/software.ts": {
+          "bytesInOutput": 3752
+        },
+        "src/lib/scenes/b/math.ts": {
+          "bytesInOutput": 3490
+        },
+        "src/lib/scenes/b/gl.ts": {
+          "bytesInOutput": 22677
+        },
+        "src/lib/scenes/b/mesh.ts": {
+          "bytesInOutput": 3700
+        },
+        "src/lib/scenes/b/car.ts": {
+          "bytesInOutput": 10882
+        },
+        "src/lib/scenes/b/common.ts": {
+          "bytesInOutput": 1731
+        },
+        "src/lib/scenes/b/overlay.ts": {
+          "bytesInOutput": 9353
+        },
+        "src/lib/scenes/b/flat.ts": {
+          "bytesInOutput": 1312
+        },
+        "src/lib/scenes/b/stage.ts": {
+          "bytesInOutput": 1951
+        },
+        "src/lib/scenes/b/world.ts": {
+          "bytesInOutput": 4793
+        },
+        "src/lib/scenes/b/props.ts": {
+          "bytesInOutput": 3467
+        },
+        "src/lib/scenes/b/price.ts": {
+          "bytesInOutput": 5034
+        },
+        "src/lib/scenes/b/town.ts": {
+          "bytesInOutput": 4828
+        },
+        "src/lib/scenes/b/drive.ts": {
+          "bytesInOutput": 6076
+        },
+        "src/lib/scenes/b/home.ts": {
+          "bytesInOutput": 1334
+        },
+        "src/lib/scenes/b/range.ts": {
+          "bytesInOutput": 6515
+        },
+        "src/lib/scenes/b/space.ts": {
+          "bytesInOutput": 2640
+        },
+        "src/lib/scenes/b/convenience.ts": {
+          "bytesInOutput": 2772
+        },
+        "src/lib/scenes/b/comfort.ts": {
+          "bytesInOutput": 3727
+        },
+        "src/lib/scenes/b/software.ts": {
+          "bytesInOutput": 4649
+        },
+        "src/lib/configuration-evidence.ts": {
+          "bytesInOutput": 243
+        },
+        "src/lib/page-evidence.ts": {
+          "bytesInOutput": 433
+        },
+        "src/lib/search.ts": {
+          "bytesInOutput": 695
+        },
+        "src/lib/car-avatar-shapes.ts": {
+          "bytesInOutput": 3005
+        },
+        "src/lib/fact-validity.ts": {
+          "bytesInOutput": 308
+        },
+        "src/lib/discovery.ts": {
+          "bytesInOutput": 5853
+        },
+        "src/portable/entry.tsx": {
+          "bytesInOutput": 1912
+        },
+        "src/components/roadmark-error.tsx": {
+          "bytesInOutput": 1052
+        },
+        "src/components/roadmark-logo.tsx": {
+          "bytesInOutput": 4022
+        },
+        "src/portable/navigation.ts": {
+          "bytesInOutput": 633
+        },
+        "src/portable/link.tsx": {
+          "bytesInOutput": 240
+        },
+        "src/components/footnotes.tsx": {
+          "bytesInOutput": 2795
+        },
+        "src/lib/config.ts": {
+          "bytesInOutput": 1194
+        },
+        "src/components/site-shell.tsx": {
+          "bytesInOutput": 1189
+        },
+        "src/lib/issue-presentation.ts": {
+          "bytesInOutput": 358
+        },
+        "src/lib/fact-presentation.ts": {
+          "bytesInOutput": 311
+        },
+        "src/lib/corrections.ts": {
+          "bytesInOutput": 1154
+        },
+        "src/lib/correction-guards.ts": {
+          "bytesInOutput": 802
+        },
+        "src/lib/availability-corrections.ts": {
+          "bytesInOutput": 1030
+        },
+        "src/lib/evidence-date.ts": {
+          "bytesInOutput": 282
+        },
+        "src/lib/compare.ts": {
+          "bytesInOutput": 3459
+        },
+        "src/lib/citable.ts": {
+          "bytesInOutput": 6508
+        },
+        "src/lib/comparison-context.ts": {
+          "bytesInOutput": 877
+        },
+        "src/components/copy-for-ai.tsx": {
+          "bytesInOutput": 951
+        },
+        "src/components/selected-copy.tsx": {
+          "bytesInOutput": 132
+        },
+        "src/components/experience.tsx": {
+          "bytesInOutput": 18159
+        },
+        "src/portable/image.tsx": {
+          "bytesInOutput": 94
+        },
+        "media/approved-assets.json": {
+          "bytesInOutput": 10
+        },
+        "src/lib/media.ts": {
+          "bytesInOutput": 394
+        },
+        "src/components/ui.tsx": {
+          "bytesInOutput": 12146
+        },
+        "src/lib/fleet.ts": {
+          "bytesInOutput": 1527
+        },
+        "src/components/picker.tsx": {
+          "bytesInOutput": 5262
+        },
+        "src/lib/chapters.ts": {
+          "bytesInOutput": 6037
+        },
+        "src/components/model-y-verdict.tsx": {
+          "bytesInOutput": 4664
+        },
+        "src/components/verdict-pictogram.tsx": {
+          "bytesInOutput": 3555
+        },
+        "src/components/fleet-experience.tsx": {
+          "bytesInOutput": 14791
+        },
+        "src/components/fleet-swipe.tsx": {
+          "bytesInOutput": 3551
+        },
+        "src/components/comparison-symbol.tsx": {
+          "bytesInOutput": 1376
+        },
+        "src/components/chapter-art.tsx": {
+          "bytesInOutput": 1939
+        },
+        "src/lib/chapter-art.ts": {
+          "bytesInOutput": 3358
+        },
+        "src/lib/portable-string-codec.ts": {
+          "bytesInOutput": 975
+        },
+        "src/lib/portable-packs.ts": {
+          "bytesInOutput": 351
+        },
+        "src/portable/data.ts": {
+          "bytesInOutput": 232
+        },
+        "src/portable/chapter-art-src.ts": {
+          "bytesInOutput": 18
+        },
+        "src/lib/scene-loaders.ts": {
+          "bytesInOutput": 4960
+        },
+        "src/lib/scene-readout.ts": {
+          "bytesInOutput": 2622
+        },
+        "src/components/scene-canvas.tsx": {
+          "bytesInOutput": 4115
+        },
+        "src/components/car-avatar.tsx": {
+          "bytesInOutput": 3315
+        },
+        "src/components/review-queue.tsx": {
+          "bytesInOutput": 4926
+        },
+        "src/lib/report-claim-shape.ts": {
+          "bytesInOutput": 920
+        },
+        "src/lib/report-queue-files.ts": {
+          "bytesInOutput": 272
+        },
+        "src/lib/report-claim-binding.ts": {
+          "bytesInOutput": 1285
+        },
+        "src/lib/report-queue-projection.ts": {
+          "bytesInOutput": 83
+        },
+        "src/lib/report-queue-reader.ts": {
+          "bytesInOutput": 1467
+        },
+        "src/components/market-audit.tsx": {
+          "bytesInOutput": 5818
+        },
+        "src/portable/market-inventory-data.ts": {
+          "bytesInOutput": 10
+        },
+        "src/components/evidence-conditions.tsx": {
+          "bytesInOutput": 486
+        },
+        "src/components/visual-action-feedback.tsx": {
+          "bytesInOutput": 154
+        },
+        "src/lib/action-feedback.ts": {
+          "bytesInOutput": 418
+        },
+        "src/components/discovery.tsx": {
+          "bytesInOutput": 13956
+        },
+        "src/lib/selling-points.ts": {
+          "bytesInOutput": 1200
+        },
+        "src/lib/buyer-summary-timing.ts": {
+          "bytesInOutput": 101
+        },
+        "src/components/explorer.tsx": {
+          "bytesInOutput": 5777
+        },
+        "src/lib/explorer-state.ts": {
+          "bytesInOutput": 530
+        },
+        "src/lib/detail-client-props.ts": {
+          "bytesInOutput": 239
+        },
+        "src/components/buyer-summary.tsx": {
+          "bytesInOutput": 1039
+        },
+        "src/components/claim-report.tsx": {
+          "bytesInOutput": 3471
+        },
+        "src/lib/device-issue-drafts.ts": {
+          "bytesInOutput": 388
+        },
+        "src/lib/report-submission-state.ts": {
+          "bytesInOutput": 991
+        },
+        "src/lib/report-submission-client.ts": {
+          "bytesInOutput": 643
+        },
+        "src/components/detail.tsx": {
+          "bytesInOutput": 4293
+        },
+        "src/components/software.tsx": {
+          "bytesInOutput": 1245
+        },
+        "data/approved-availability-corrections.json": {
+          "bytesInOutput": 10
+        },
+        "data/approved-corrections.json": {
+          "bytesInOutput": 10
+        },
+        "data/approved-feature-corrections.json": {
+          "bytesInOutput": 10
+        },
+        "src/components/correction-history.tsx": {
+          "bytesInOutput": 2625
+        },
+        "src/components/source-registry.tsx": {
+          "bytesInOutput": 1328
+        },
+        "src/components/with-evidence.tsx": {
+          "bytesInOutput": 108
+        },
+        "src/app/model-y/page.tsx": {
+          "bytesInOutput": 1416
+        },
+        "src/app/methodology/page.tsx": {
+          "bytesInOutput": 7468
+        }
+      },
+      "bytes": 594271
+    }
+  }
+}

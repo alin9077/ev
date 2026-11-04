@@ -1,0 +1,207 @@
+{
+  "schema": "roadmark_bmw_market_gap_independent_review_v1",
+  "reviewed_on": "2026-10-12",
+  "decision": "GO_BOUNDED_FUTURE_MARKET_EVIDENCE_AMENDMENT_ONLY",
+  "required_corrections": [],
+  "reviewed_candidate": {
+    "path": "roadmark-research/bmw-market-gap-research/research-candidate.json",
+    "sha256": "8c7a14e8937f85aabed7ec30676c5a26fdc09445203166fc51b21259fbe31937"
+  },
+  "review_scope": "Independent static truthfulness, primary-source attribution, scope, exact preimage and package-integrity review. No code admission, full BMW audit, production QA acceptance, or app amendment performed.",
+  "evidence_grade": "Locally saved web-tool text and sparse excerpts; not independently re-fetched or authenticated publisher-origin bytes.",
+  "checks": {
+    "candidate_sha256_matches": true,
+    "app_input_file_sha256": "ea4e4f7120e7739de987405740641997c15c6bb0704082724ae3d38055b6fdfa",
+    "exact_before_rows": [
+      {
+        "id": "bmw-i3",
+        "json_pointer": "/records/33",
+        "exact_before_object_equal": true,
+        "canonical_sha256": "80cecd64b464661a15300d994c945dabedc71846078524293130b081f4ede3e6",
+        "retained_fields_match": true
+      },
+      {
+        "id": "bmw-ix4",
+        "json_pointer": "/records/40",
+        "exact_before_object_equal": true,
+        "canonical_sha256": "ec992cdd729290031adfbf6efacbc7bfa1245e2f321debed32c58c02f625ce18",
+        "retained_fields_match": true
+      }
+    ],
+    "package_manifest_files_checked": 34,
+    "manifest_mismatches": [],
+    "unlisted_package_files": [],
+    "source_checks": [
+      {
+        "source_id": "S01",
+        "capture_and_sparse_hashes_match": true,
+        "exact_quotes_present": true,
+        "primary_URL_present_in_capture": true,
+        "publisher_origin_bytes_claimed": false
+      },
+      {
+        "source_id": "S02",
+        "capture_and_sparse_hashes_match": true,
+        "exact_quotes_present": true,
+        "primary_URL_present_in_capture": true,
+        "publisher_origin_bytes_claimed": false
+      },
+      {
+        "source_id": "S03",
+        "capture_and_sparse_hashes_match": true,
+        "exact_quotes_present": true,
+        "primary_URL_present_in_capture": true,
+        "publisher_origin_bytes_claimed": false
+      },
+      {
+        "source_id": "S04",
+        "capture_and_sparse_hashes_match": true,
+        "exact_quotes_present": true,
+        "primary_URL_present_in_capture": true,
+        "publisher_origin_bytes_claimed": false
+      },
+      {
+        "source_id": "S05",
+        "capture_and_sparse_hashes_match": true,
+        "exact_quotes_present": true,
+        "primary_URL_present_in_capture": true,
+        "publisher_origin_bytes_claimed": false
+      },
+      {
+        "source_id": "S06",
+        "capture_and_sparse_hashes_match": true,
+        "exact_quotes_present": true,
+        "primary_URL_present_in_capture": true,
+        "publisher_origin_bytes_claimed": false
+      },
+      {
+        "source_id": "S07",
+        "capture_and_sparse_hashes_match": true,
+        "exact_quotes_present": true,
+        "primary_URL_present_in_capture": true,
+        "publisher_origin_bytes_claimed": false
+      },
+      {
+        "source_id": "S08",
+        "capture_and_sparse_hashes_match": true,
+        "exact_quotes_present": true,
+        "primary_URL_present_in_capture": true,
+        "publisher_origin_bytes_claimed": false
+      }
+    ],
+    "input_provenance_files_checked": 3,
+    "all_input_hashes_match": true,
+    "historical_bridge_object_and_hash_match": true,
+    "historical_original_dossiers_absent": true
+  },
+  "findings": [
+    {
+      "id": "F01",
+      "result": "supported",
+      "claim": "AU marketing cards identify i3 50 xDrive and iX4 50 xDrive with New and Build & Price; no accepted order or exact New unit is established.",
+      "sources": [
+        "S01"
+      ],
+      "locators": [
+        "L291-L306",
+        "L456-L472"
+      ]
+    },
+    {
+      "id": "F02",
+      "result": "supported",
+      "claim": "BMW AU electric-range FAQ explicitly places i3 50 xDrive Sedan arrival in 2027; this is not a formal MY or evidence that orders are closed.",
+      "sources": [
+        "S02"
+      ],
+      "locators": [
+        "L547-L550, especially L549"
+      ]
+    },
+    {
+      "id": "F03",
+      "result": "supported_with_scope_limit",
+      "claim": "BMW global press release dated 8 October 2026 states March 2027 launch. No Australia-specific launch month follows from it.",
+      "sources": [
+        "S08"
+      ],
+      "locators": [
+        "L48-L52",
+        "L79",
+        "L110-L114",
+        "L128"
+      ]
+    },
+    {
+      "id": "F04",
+      "result": "supported",
+      "claim": "AU M60 order availability is in 2027 and applies only to those separately named variants.",
+      "sources": [
+        "S06",
+        "S07"
+      ],
+      "locators": [
+        "S06 L234",
+        "S07 L508-L510"
+      ]
+    },
+    {
+      "id": "F05",
+      "result": "supported_with_scope_limit",
+      "claim": "i3 40 is named in AU technical content, including image labels, alongside 50 and German-market WLTP optional-equipment caveats. iX4 40 is named in global press material. Neither establishes Australian sale admission.",
+      "sources": [
+        "S05",
+        "S08"
+      ],
+      "locators": [
+        "S05 L263-L265, L309, L324",
+        "S08 L110-L112"
+      ]
+    },
+    {
+      "id": "F06",
+      "result": "supported_with_scope_limit",
+      "claim": "Current AU product titles support NA0 and NA7 generation identifiers. Historical 52JB and 22HU sales codes remain unreverified reconstructed-report claims.",
+      "sources": [
+        "S03",
+        "S04",
+        "prior-evidence-review.json"
+      ],
+      "locators": [
+        "S03 title and L301",
+        "S04 title and L268"
+      ]
+    }
+  ],
+  "future_amendment_boundaries": [
+    "Evidence/limitations wording only for bmw-i3 and bmw-ix4, with source links and geographic/variant qualifiers retained.",
+    "Retain listed_unconfirmed order status, unverified stock, current_listing_order_stock_unconfirmed category, market_audit_only coverage, false ranking eligibility, null modelYear and null completeVehicleCountEligible; retain existing 50 xDrive trims and partial coverage.",
+    "No normalized technical specifications, 40/M60 grade expansion, accepted-order claim, stock admission, sale certification, ranking or vehicle-count expansion.",
+    "Recheck exact preimages when a separately authorized future amendment is prepared; this review is not an app-ready patch or approval to mutate the app.",
+    "Keep all existing selected-build/local effectivity/technical/market holds and historical selected-build permission restriction. No retry or alternate route without new authorization.",
+    "Keep the 8 October 2026 publisher date separate from 12 October observation windows; undated pages remain publication-date unknown."
+  ],
+  "permission_review": {
+    "historical_restriction_preserved": true,
+    "saved_capture_headers_show_selected_build_access": false,
+    "claim_limit": "Static artifact review found no selected-build invocation in saved capture source headers; this is not a complete independent execution-log audit.",
+    "ix4_technical_failure": "Saved tool-access error has no HTTP status or publisher-denial evidence. Candidate correctly says stopped; reviewer made no retry or alternate request."
+  },
+  "reviewer_actions": {
+    "app_writes": false,
+    "app_imports": false,
+    "tests": false,
+    "builds": false,
+    "git": false,
+    "browser": false,
+    "network": false,
+    "write_scope": "roadmark-research/review-bmw-market-gap"
+  },
+  "limits": [
+    "No live source re-fetch; source content reviewed through supplied captures.",
+    "Origin-byte integrity and origin fetch timestamps are not established by local hashes.",
+    "Negative dealer-search result is bounded and cannot certify national stock absence.",
+    "No whole-app unchanged claim or QA3 result claim is made.",
+    "Research author action-history assertions are not independently certified beyond the supplied artifacts."
+  ]
+}

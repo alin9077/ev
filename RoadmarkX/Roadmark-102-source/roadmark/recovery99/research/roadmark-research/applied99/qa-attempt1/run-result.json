@@ -1,0 +1,91 @@
+{
+  "boundary": "Trusted serial process evidence, not signed attestation. Inputs exclude dependencies/VCS, .next, four aliases, tsconfig.tsbuildinfo and separately guarded historical metadata. Output observation covers only four build identity/routing files and four aliases; no hydration, route/visual equivalence, full emitted graph, publication or release approval. Root must also observe this runner's actual external exit.",
+  "configuration": {
+    "baselineInputs": {
+      "path": "roadmark-research/applied98/expected-inputs.json",
+      "sha256": "e1f1afa40710976b5ef057264cb09b3443866764f1ef584c9ce05a5ebad875d2"
+    },
+    "candidate": {
+      "path": "roadmark-research/applied99/qa-candidate-manifest.json",
+      "sha256": "a4841e51e947a55b07cabfc55592d21f8b5308a66cda9a22cfd6e82161a2095e"
+    },
+    "expectedInputs": {
+      "path": "roadmark-research/applied99/expected-inputs.json",
+      "sha256": "63d8ce2723a3262df3d52531e22fd81397e03ae09418068efc7362902817f25f"
+    }
+  },
+  "error": {
+    "message": "Stage not established successful: non_http_tests",
+    "receivedSignal": null,
+    "type": "RuntimeError"
+  },
+  "evidence": {
+    "execution-request.json": {
+      "bytes": 1875,
+      "mtimeNs": 1791785842793084587,
+      "sha256": "f6461e821c81c32a2b1dca8d3bba7a8b552087d5f7fce16c1b7df8a6a0f7b8e9"
+    },
+    "frozen-inputs.json": {
+      "bytes": 184361,
+      "mtimeNs": 1791785843320125839,
+      "sha256": "63d8ce2723a3262df3d52531e22fd81397e03ae09418068efc7362902817f25f"
+    },
+    "non_http_tests-start.json": {
+      "bytes": 5796,
+      "mtimeNs": 1791785843909963959,
+      "sha256": "035e7b204a1eb94e984507c47e3ec716c9cb3429ba43c88832fda36ad8935415"
+    },
+    "non_http_tests-terminal.json": {
+      "bytes": 6335,
+      "mtimeNs": 1791786660211029208,
+      "sha256": "3544d797941b280e37313e9de14dbaa11d5ba21b47c646686fb57563dd4928aa"
+    },
+    "non_http_tests.json": {
+      "bytes": 779,
+      "mtimeNs": 1791786660571157209,
+      "sha256": "002a12a8ca48d49bff41a4864efc7ccecba39ad3f9f59e7c1da185da0809918b"
+    },
+    "non_http_tests.stderr.log": {
+      "bytes": 0,
+      "mtimeNs": 1791785843909963959,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "non_http_tests.stdout.log": {
+      "bytes": 209471,
+      "mtimeNs": 1791786660200241101,
+      "sha256": "341de1cec1a901c7f45d595172ff2f42d54736b01f6310fa2cd33d7f068c45b3"
+    },
+    "preexisting-outputs.json": {
+      "bytes": 1633,
+      "mtimeNs": 1791785843546579042,
+      "sha256": "507e8a81442b270aad43d8ba96673e38f7117034f2652059f3d01d206d8de067"
+    },
+    "protected-input-comparison.json": {
+      "bytes": 192537,
+      "mtimeNs": 1791785843321863837,
+      "sha256": "b9d38c593aeb4e8f1fdfc2586f114b6a9c3aef0bc4ed7228511e6e51d8b22bbf"
+    },
+    "stage-plan.json": {
+      "bytes": 6720,
+      "mtimeNs": 1791785843319983385,
+      "sha256": "cf60cdce21f7631ff2a7b5a8381482d98f0d911123f3729c100e978919cc8fb1"
+    }
+  },
+  "finishedAtUTC": "2026-10-12T06:31:00.573981+00:00",
+  "passed": false,
+  "publicExportRun": false,
+  "runnerSHA256": "a043d6ac749a39d025bf452eddb55440d2ac81ba3b73be9f4d894a5055a2e10f",
+  "schema": "roadmark99.serial-qa.v1",
+  "stageStatus": {
+    "lint": "not_started",
+    "local_http_tests": "not_started",
+    "non_http_tests": "failed",
+    "portable_build": "not_started",
+    "production_build": "not_started",
+    "typecheck": "not_started",
+    "validation": "not_started"
+  },
+  "startedAtUTC": "2026-10-12T06:17:22.792964+00:00",
+  "successNotEstablished": true,
+  "traceback": "Traceback (most recent call last):\n  File \"/workspace/scratch/586427eef9f2/roadmark-research/qa99-candidate/run_qa99.py\", line 372, in main\n    result = run(workspace, output, config, args.approved_runner_sha256)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/scratch/586427eef9f2/roadmark-research/qa99-candidate/run_qa99.py\", line 344, in run\n    need(result[\"passed\"], \"Stage not established successful: \" + stage)\n  File \"/workspace/scratch/586427eef9f2/roadmark-research/qa99-candidate/run_qa99.py\", line 31, in need\n    raise RuntimeError(message)\nRuntimeError: Stage not established successful: non_http_tests\n"
+}

@@ -1,0 +1,259 @@
+{
+  "runId": "2026-10-12T02-33-38-515Z-8d400ab5",
+  "finishedAt": "2026-10-12T02:34:10.554Z",
+  "status": "passed_exercised_cases",
+  "reason": null,
+  "fatal": null,
+  "passedCases": 23,
+  "failedCases": 0,
+  "cases": [
+    {
+      "name": "GET exact body parity and dechunked byte count",
+      "status": "passed",
+      "startedAt": "2026-10-12T02:33:38.603Z",
+      "elapsedMs": 19
+    },
+    {
+      "name": "HEAD has no body while preserving representation Content-Length",
+      "status": "passed",
+      "startedAt": "2026-10-12T02:33:38.623Z",
+      "elapsedMs": 4
+    },
+    {
+      "name": "Chunked response streams before completion and preserves exact bytes",
+      "status": "passed",
+      "startedAt": "2026-10-12T02:33:38.626Z",
+      "elapsedMs": 904
+    },
+    {
+      "name": "Compressed bytes, encoding and known cache metadata remain intact",
+      "status": "passed",
+      "startedAt": "2026-10-12T02:33:39.530Z",
+      "elapsedMs": 5
+    },
+    {
+      "name": "304 response has zero body and separate status/cache metadata",
+      "status": "passed",
+      "startedAt": "2026-10-12T02:33:39.536Z",
+      "elapsedMs": 2
+    },
+    {
+      "name": "Concurrent independent GET responses remain correct",
+      "status": "passed",
+      "startedAt": "2026-10-12T02:33:39.538Z",
+      "elapsedMs": 4
+    },
+    {
+      "name": "Next flags absent/0/1/2/3 forward unchanged while private sentinels never enter logs",
+      "status": "passed",
+      "startedAt": "2026-10-12T02:33:39.542Z",
+      "elapsedMs": 12
+    },
+    {
+      "name": "Connection-nominated hop headers are stripped both ways; end-to-end header stays",
+      "status": "passed",
+      "startedAt": "2026-10-12T02:33:39.555Z",
+      "elapsedMs": 3
+    },
+    {
+      "name": "Methods, bodies, targets, Host and field-count violations do not reach upstream",
+      "status": "passed",
+      "startedAt": "2026-10-12T02:33:39.557Z",
+      "elapsedMs": 7
+    },
+    {
+      "name": "Oversized header is rejected before forwarding without raw-packet logging",
+      "status": "passed",
+      "startedAt": "2026-10-12T02:33:39.564Z",
+      "elapsedMs": 2
+    },
+    {
+      "name": "Upstream partial-body abort is not reported as a successful full response",
+      "status": "passed",
+      "startedAt": "2026-10-12T02:33:39.566Z",
+      "elapsedMs": 104
+    },
+    {
+      "name": "Downstream abort is classified with partial observed-body bytes",
+      "status": "passed",
+      "startedAt": "2026-10-12T02:33:39.670Z",
+      "elapsedMs": 34
+    },
+    {
+      "name": "One real upstream idle timeout returns classified 504 after approximately 30 seconds",
+      "status": "passed",
+      "startedAt": "2026-10-12T02:33:39.703Z",
+      "elapsedMs": 30005
+    },
+    {
+      "name": "CONNECT half-open rejection and bounded owned-process shutdown",
+      "status": "passed",
+      "startedAt": "2026-10-12T02:34:09.708Z",
+      "elapsedMs": 137
+    },
+    {
+      "name": "Upgrade half-open rejection and bounded owned-process shutdown",
+      "status": "passed",
+      "startedAt": "2026-10-12T02:34:09.845Z",
+      "elapsedMs": 132
+    },
+    {
+      "name": "CONNECT immediate signal with client write side deliberately left open",
+      "status": "passed",
+      "startedAt": "2026-10-12T02:34:09.977Z",
+      "elapsedMs": 133
+    },
+    {
+      "name": "Upgrade immediate signal with client write side deliberately left open",
+      "status": "passed",
+      "startedAt": "2026-10-12T02:34:10.110Z",
+      "elapsedMs": 108
+    },
+    {
+      "name": "Signal during an active ordinary request records interruption and exits without force kill",
+      "status": "passed",
+      "startedAt": "2026-10-12T02:34:10.219Z",
+      "elapsedMs": 83
+    },
+    {
+      "name": "Duplicate log name refuses without overwriting or appending the original",
+      "status": "passed",
+      "startedAt": "2026-10-12T02:34:10.301Z",
+      "elapsedMs": 52
+    },
+    {
+      "name": "Invalid port and filename reject before any listener starts",
+      "status": "passed",
+      "startedAt": "2026-10-12T02:34:10.354Z",
+      "elapsedMs": 105
+    },
+    {
+      "name": "Occupied owned listener refuses without displacing the existing logger",
+      "status": "passed",
+      "startedAt": "2026-10-12T02:34:10.459Z",
+      "elapsedMs": 79
+    },
+    {
+      "name": "Unavailable fixed upstream produces a classified 502",
+      "status": "passed",
+      "startedAt": "2026-10-12T02:34:10.538Z",
+      "elapsedMs": 2
+    },
+    {
+      "name": "Logger remains pinned and all logger output remains sentinel-free",
+      "status": "passed",
+      "startedAt": "2026-10-12T02:34:10.540Z",
+      "elapsedMs": 0
+    }
+  ],
+  "ownedChildExits": [
+    {
+      "label": "main",
+      "bounded": true,
+      "exit": {
+        "code": 143,
+        "signal": null
+      },
+      "closed": true
+    },
+    {
+      "label": "connect",
+      "bounded": true,
+      "exit": {
+        "code": 143,
+        "signal": null
+      },
+      "closed": true
+    },
+    {
+      "label": "upgrade",
+      "bounded": true,
+      "exit": {
+        "code": 143,
+        "signal": null
+      },
+      "closed": true
+    },
+    {
+      "label": "connect-interrupt",
+      "bounded": true,
+      "exit": {
+        "code": 143,
+        "signal": null
+      },
+      "closed": true
+    },
+    {
+      "label": "upgrade-interrupt",
+      "bounded": true,
+      "exit": {
+        "code": 143,
+        "signal": null
+      },
+      "closed": true
+    },
+    {
+      "label": "interrupted",
+      "bounded": true,
+      "exit": {
+        "code": 143,
+        "signal": null
+      },
+      "closed": true
+    },
+    {
+      "label": "duplicate",
+      "bounded": true,
+      "exit": {
+        "code": 1,
+        "signal": null
+      },
+      "closed": true
+    },
+    {
+      "label": "invalid-port",
+      "bounded": true,
+      "exit": {
+        "code": 1,
+        "signal": null
+      },
+      "closed": true
+    },
+    {
+      "label": "invalid-name",
+      "bounded": true,
+      "exit": {
+        "code": 1,
+        "signal": null
+      },
+      "closed": true
+    },
+    {
+      "label": "occupied",
+      "bounded": true,
+      "exit": {
+        "code": 70,
+        "signal": null
+      },
+      "closed": true
+    }
+  ],
+  "cleanupIssues": [],
+  "evidenceIssues": [],
+  "loggerSha256": "5181ad081108ffc6c236eca5086de5b262ad0e24b7173fe3f17ac35c27f37512",
+  "notExercised": [
+    "Ninety-second total request deadline",
+    "Twenty-minute session expiry",
+    "Log-write or fsync/disk-full failures",
+    "Abrupt SIGKILL/power-loss durability",
+    "Concurrency-limit exhaustion and five-thousand-request admission limit",
+    "Overlapping slow-stream/backpressure stress; concurrent fast GETs alone do not prove this",
+    "Real Next/browser journeys, production transfer savings and cold-tap UX"
+  ],
+  "limitations": [
+    "Synthetic loopback acceptance, not application, browser, mobile or benchmark evidence",
+    "The idle-timeout case is established only if its executed case result says passed; total-deadline/session-expiry checks are outside this suite",
+    "Log-write/disk-failure paths and abrupt SIGKILL durability are not certified",
+    "Protocol cases inspect EOF and owned-process shutdown; client-side half-open TCP state alone does not prove server handle state"
+  ]
+}

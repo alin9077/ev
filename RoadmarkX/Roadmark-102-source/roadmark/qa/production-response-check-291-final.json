@@ -1,0 +1,55 @@
+{
+  "checkedAtUTC": "2026-10-10T15:43:56.196Z",
+  "catalogueVersions": 291,
+  "method": "Own VM production Next.js server, loopback requests; cold then 3 warm samples. Gzip byte counts are estimates from local compression. Not browser rendering, actual mobile, network throughput, LCP or INP.",
+  "results": [
+    {
+      "route": "/",
+      "responseBytes": 7378806,
+      "estimatedGzipBytes": 730221,
+      "coldMs": 13734.562292,
+      "warmMs": [
+        88.23009599999932,
+        66.63285999999971,
+        73.14221899999939
+      ],
+      "meanWarmMs": 76.00172499999947
+    },
+    {
+      "route": "/discover",
+      "responseBytes": 4297942,
+      "estimatedGzipBytes": 338165,
+      "coldMs": 78.9885460000005,
+      "warmMs": [
+        45.99641700000029,
+        48.61167699999896,
+        72.35054200000013
+      ],
+      "meanWarmMs": 55.65287866666646
+    },
+    {
+      "route": "/cars/geely-ex5/inspire-extended-range-2",
+      "responseBytes": 370810,
+      "estimatedGzipBytes": 50692,
+      "coldMs": 22.169271000000663,
+      "warmMs": [
+        9.673397000000477,
+        8.099208000001454,
+        8.222324999998818
+      ],
+      "meanWarmMs": 8.664976666666917
+    },
+    {
+      "route": "/compare?cars=byd_atto_3_legacy__essential_fwd__1%2Cgeely_ex5__inspire_extended_range__2",
+      "responseBytes": 505022,
+      "estimatedGzipBytes": 66384,
+      "coldMs": 4188.734238999999,
+      "warmMs": [
+        644.1699010000011,
+        655.1303450000014,
+        598.7460040000005
+      ],
+      "meanWarmMs": 632.6820833333344
+    }
+  ]
+}

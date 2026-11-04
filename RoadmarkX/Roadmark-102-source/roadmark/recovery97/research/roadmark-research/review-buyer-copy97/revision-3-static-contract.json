@@ -1,0 +1,110 @@
+{
+  "verdict": "No static contract blocker. Root owns execution.",
+  "manifest_sha256": "b81abc7d68882213eb911d039a8c7fecaece87009e1e68ea1d18c1b4248e2cad",
+  "runner_sha256": "8987a86aa9ae380211e3e6ca0765d73a2146558bd1bc754a2756d69c53ba860d",
+  "baseline_file_count": 1662,
+  "final_file_count": 1668,
+  "candidate_rows": 12,
+  "modifications": 6,
+  "additions": 6,
+  "all_addition_preimage_fields_null": true,
+  "every_primary_preimage_matches96": true,
+  "baseline_plus_primary_files_equals_entire_final_map": true,
+  "derived_serialized_like_expected_matches_bytes": true,
+  "all_current_input_files_match_final_map": true,
+  "candidate_and_before_paths_safe_coherent_and_exact": true,
+  "all_final_code_bytes_equal_reviewed_revision2": true,
+  "incremental_provenance_verified_separately": true,
+  "both_patches_exact": true,
+  "attempt2_failure_preserved": true,
+  "attempt2_all_seven_stages_not_started": true,
+  "revision3_application_delta_empty": true,
+  "candidate_delta": [
+    {
+      "path": "src/components/detail.tsx",
+      "operation": "modify",
+      "beforeSHA256": "978ab14e0eda23a2369b46348195d1d82a67bb229533a340c5051ccd735505db",
+      "sha256": "421556c025400b37aeb513411e6b319597101885fdc1bc5b7de2be87510a20ec",
+      "bytes": 6950
+    },
+    {
+      "path": "src/components/discovery.tsx",
+      "operation": "modify",
+      "beforeSHA256": "02be90e98919418e433a853ae6019adfdb833b1a0e86a7d9d2d3564da9afecb8",
+      "sha256": "5769cee0feddf21dcf532d39fe65aa752bf8d920891a0ad951e1f6adc7ce3480",
+      "bytes": 26647
+    },
+    {
+      "path": "src/components/market-audit.tsx",
+      "operation": "modify",
+      "beforeSHA256": "6b52fec78d11617b6bd1f74142765186c6b647a72fbe3dc928afdc07336401cf",
+      "sha256": "6062cb777b0943c09aeed8bb457b279ac9ab510509e39773d3aa77c34ecacfc1",
+      "bytes": 8469
+    },
+    {
+      "path": "src/lib/buyer-display-copy.ts",
+      "operation": "add",
+      "beforeSHA256": null,
+      "sha256": "2d977241a95d6f83d25cee03c58cab1eb406042d3956e5133e0670f1da4f17be",
+      "bytes": 5764
+    },
+    {
+      "path": "tests/buyer-display-copy-render.test.ts",
+      "operation": "add",
+      "beforeSHA256": null,
+      "sha256": "91dec0eda2b540660df105829858b58112a127658cd388b2ce49b836c7a4ca09",
+      "bytes": 9557
+    },
+    {
+      "path": "tests/buyer-display-copy.test.ts",
+      "operation": "add",
+      "beforeSHA256": null,
+      "sha256": "970a0da5306d06197d3fa5c01460541a69fed2c41292c6839b83c7439516b4d8",
+      "bytes": 5038
+    },
+    {
+      "path": "tests/checkpoint96-source-history.test.ts",
+      "operation": "modify",
+      "beforeSHA256": "01a5874bac96346fa1fdd45ed9cc58bc419260e2d18d487266be40ff47370347",
+      "sha256": "e33ed3b4ab06ce7841c1f57b52fe2bfb517e109277686f35e03878350917e8ac",
+      "bytes": 8277
+    },
+    {
+      "path": "tests/checkpoint97-source-history.test.ts",
+      "operation": "add",
+      "beforeSHA256": null,
+      "sha256": "965c9a81052c0223c569a56fc23682398e728a0e78b16d26f459a2f24277d66b",
+      "bytes": 7072
+    },
+    {
+      "path": "tests/detail-discovery.test.ts",
+      "operation": "modify",
+      "beforeSHA256": "821f8547ceaff4acdd816573b74ef390cea64a463da0dbd629b76448bbae666e",
+      "sha256": "7725b2863cc36994cab0161cd7f3b7ea7aea61f992d10abbcb2315bdfe10b50f",
+      "bytes": 4318
+    },
+    {
+      "path": "tests/fixtures/buyer-copy97.json",
+      "operation": "add",
+      "beforeSHA256": null,
+      "sha256": "e694e79ac39351f315923733af5255c6502a3bbcb695a1248d6b937b1ef8f617",
+      "bytes": 5387
+    },
+    {
+      "path": "tests/helpers/checkpoint91-history.ts",
+      "operation": "modify",
+      "beforeSHA256": "7c8f6c2760e30fc081cd4fd1d2e9a75f338dfb7d8a6a9fed489694de6247507d",
+      "sha256": "ffb6a4309e1107a10d62945d036cabd5142abc2663b4119182a71cc5843caaff",
+      "bytes": 2667
+    },
+    {
+      "path": "tests/helpers/checkpoint97-source-history.ts",
+      "operation": "add",
+      "beforeSHA256": null,
+      "sha256": "838dd04e58cf9185bb483294d5cf3614f08d0e31f23a1914ce485152cedca44e",
+      "bytes": 4998
+    }
+  ],
+  "application_or_runner_imported_or_executed": false,
+  "app_written": false
+}

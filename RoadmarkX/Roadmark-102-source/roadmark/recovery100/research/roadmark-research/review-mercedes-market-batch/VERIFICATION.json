@@ -1,0 +1,1417 @@
+{
+  "reviewedAtUtc": "2026-10-12T02:28:18.690371+00:00",
+  "reviewMode": "Static reads, JSON data parsing and hashing only; no application or candidate execution, imports, syntax checks, tests, builds, browser, network refetch, Git or upload.",
+  "decision": "APPROVE_EXACT_EVIDENCE_ONLY_AMENDMENTS",
+  "proposalBatchId": "mercedes-five-market-leads-2026-10-12",
+  "proposalSha256": "42b92bc028673a2af0aa7730dcfb8fa24dfc84e834b1462289629a0b85a13df6",
+  "proposalFiles": [
+    {
+      "path": "roadmark-research/mercedes-market-batch-research/candidate.json",
+      "sha256": "42b92bc028673a2af0aa7730dcfb8fa24dfc84e834b1462289629a0b85a13df6"
+    },
+    {
+      "path": "roadmark-research/mercedes-market-batch-research/capture-manifest.json",
+      "sha256": "97fd9578b149199fcf71636a5ed1c511f78f92c9489a958b31caa4aa7765ba09"
+    },
+    {
+      "path": "roadmark-research/mercedes-market-batch-research/REPORT.md",
+      "sha256": "f6704b9d6d79e0fd359f3c0332ca37471803630e157d9879cc7c6fcab7ff66ab"
+    },
+    {
+      "path": "roadmark-research/mercedes-market-batch-research/STATIC-VALIDATION.json",
+      "sha256": "3a3b27c14146dd4d0ca548dfaf6e282bcbab2c66728be43514b3d0a93e542271"
+    }
+  ],
+  "baselineFileChecks": [
+    {
+      "path": "roadmark-work/roadmark/data/market-inventory-2026-10-10.json",
+      "sha256": "64f38d5d72f75c2a5264568602d5a1eacae49b1aba8b1e8cfcf5a9708a35c023",
+      "actualSha256": "64f38d5d72f75c2a5264568602d5a1eacae49b1aba8b1e8cfcf5a9708a35c023",
+      "matches": true
+    },
+    {
+      "path": "roadmark-work/roadmark/data/mercedes-passenger-evidence-2026-10-10.json",
+      "sha256": "575efd4e101fbb50bc04497517cd623833ac66b8691ff4b5ce20dda7264c2ac8",
+      "actualSha256": "575efd4e101fbb50bc04497517cd623833ac66b8691ff4b5ce20dda7264c2ac8",
+      "matches": true
+    }
+  ],
+  "amendments": [
+    {
+      "leadId": "mercedes-benz-eqb",
+      "decision": "approve_evidence_only_held_lead_amendment",
+      "currentBeforeCanonicalSha256": "7b21fe9999d927cbeb84b785ecdda3d884db803ad186f9209b793e7e7ae7979d",
+      "declaredBeforeCanonicalSha256": "7b21fe9999d927cbeb84b785ecdda3d884db803ad186f9209b793e7e7ae7979d",
+      "beforeObjectMatches": true,
+      "beforeHashMatches": true,
+      "approvedAfterCanonicalSha256": "e6a8fcacc915ffde65c011c6447e03a5527524732ed45b88677aa9c0fc860bd1",
+      "changedFields": [
+        "checkedAt",
+        "evidenceNote",
+        "limitations",
+        "sourceUrls"
+      ],
+      "allowedFieldsOnly": true,
+      "preservedHeldState": true,
+      "supportingEvidenceIds": [
+        "official-electric",
+        "official-configurator",
+        "official-eqb",
+        "eqb-offer",
+        "dealer-eqb-toowong",
+        "dealer-eqb-city-sydney-exact"
+      ]
+    },
+    {
+      "leadId": "mercedes-benz-eqe-sedan",
+      "decision": "approve_evidence_only_held_lead_amendment",
+      "currentBeforeCanonicalSha256": "01acee93234375f32efc0eb488838a81b2b5331e8ba7dabec48b540036754f38",
+      "declaredBeforeCanonicalSha256": "01acee93234375f32efc0eb488838a81b2b5331e8ba7dabec48b540036754f38",
+      "beforeObjectMatches": true,
+      "beforeHashMatches": true,
+      "approvedAfterCanonicalSha256": "0808871f881309c51c2ae115f9acbc515d2b988e296c1f9daa2a0e677671960e",
+      "changedFields": [
+        "checkedAt",
+        "evidenceNote",
+        "limitations",
+        "sourceUrls"
+      ],
+      "allowedFieldsOnly": true,
+      "preservedHeldState": true,
+      "supportingEvidenceIds": [
+        "official-electric",
+        "official-configurator",
+        "official-eqe-sedan",
+        "dealer-eqe-sedan-sydney",
+        "dealer-eqe-sedan-berwick-exact"
+      ]
+    },
+    {
+      "leadId": "mercedes-benz-eqe-suv",
+      "decision": "approve_evidence_only_held_lead_amendment",
+      "currentBeforeCanonicalSha256": "7a88e36aeab053f3f46c2b5039a833a6dee9f652ce18cfd8b4d52e4a9f986c5c",
+      "declaredBeforeCanonicalSha256": "7a88e36aeab053f3f46c2b5039a833a6dee9f652ce18cfd8b4d52e4a9f986c5c",
+      "beforeObjectMatches": true,
+      "beforeHashMatches": true,
+      "approvedAfterCanonicalSha256": "ff1758c14e66f4ac244ac3d96b1f5f34b96c8a0ee15d7316fc8af87e3800d2a3",
+      "changedFields": [
+        "checkedAt",
+        "evidenceNote",
+        "limitations",
+        "sourceUrls"
+      ],
+      "allowedFieldsOnly": true,
+      "preservedHeldState": true,
+      "supportingEvidenceIds": [
+        "official-electric",
+        "official-configurator",
+        "official-eqe-suv-named",
+        "official-eqe-suv-legacy",
+        "dealer-eqe-suv-brighton",
+        "dealer-eqe-berwick-search"
+      ]
+    },
+    {
+      "leadId": "mercedes-benz-eqs-suv",
+      "decision": "approve_evidence_only_held_lead_amendment",
+      "currentBeforeCanonicalSha256": "b7bb40207a2579715616801ec743f95291079a6bc3dd8f6641aea92d594e6337",
+      "declaredBeforeCanonicalSha256": "b7bb40207a2579715616801ec743f95291079a6bc3dd8f6641aea92d594e6337",
+      "beforeObjectMatches": true,
+      "beforeHashMatches": true,
+      "approvedAfterCanonicalSha256": "0655f238a65cc9c92e69142545806628c3737bc4bad34d21901fb778de90c4e9",
+      "changedFields": [
+        "checkedAt",
+        "evidenceNote",
+        "limitations",
+        "sourceUrls"
+      ],
+      "allowedFieldsOnly": true,
+      "preservedHeldState": true,
+      "supportingEvidenceIds": [
+        "official-electric",
+        "official-configurator",
+        "official-eqs-suv-named",
+        "official-eqs-suv-campaign",
+        "dealer-eqs-canberra-exact"
+      ]
+    },
+    {
+      "leadId": "mercedes-benz-maybach-eqs",
+      "decision": "approve_evidence_only_held_lead_amendment",
+      "currentBeforeCanonicalSha256": "5dcc03791766402fb3072a07f3bf50771e27b87929563947acb9030a7eb12b0b",
+      "declaredBeforeCanonicalSha256": "5dcc03791766402fb3072a07f3bf50771e27b87929563947acb9030a7eb12b0b",
+      "beforeObjectMatches": true,
+      "beforeHashMatches": true,
+      "approvedAfterCanonicalSha256": "ab4ec7896700483a7837fa20f066bee9483d178038116e1ae9e6140d049b1978",
+      "changedFields": [
+        "checkedAt",
+        "evidenceNote",
+        "limitations",
+        "sourceUrls"
+      ],
+      "allowedFieldsOnly": true,
+      "preservedHeldState": true,
+      "supportingEvidenceIds": [
+        "official-electric",
+        "official-configurator",
+        "official-maybach-brand",
+        "official-maybach-campaign",
+        "dealer-maybach-sydney-exact"
+      ]
+    }
+  ],
+  "captureManifestFileCount": 97,
+  "captureFilesOnDisk": 97,
+  "captureChecks": [
+    {
+      "path": "analysis-only-source-captures/dealer-eqb-city-sydney-exact.actual-http-response.html",
+      "sha256": "fe3be56c3504c6d0c8760345853addcd22174390cb3c0f4b1da552dafe9278e9",
+      "bytes": 341154,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "actual_http_response_bytes"
+    },
+    {
+      "path": "analysis-only-source-captures/dealer-eqb-city-sydney-exact.html-to-text-extracted.txt",
+      "sha256": "56c499e803e69ed9879bc8bab84fc5b3578583db92ea7e1d1db9ef49a5d6cc2f",
+      "bytes": 8403,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "local_extractor_output_not_original_response"
+    },
+    {
+      "path": "analysis-only-source-captures/dealer-eqb-city-sydney-exact.http-request-metadata.json",
+      "sha256": "40f70293ef67916435c25396931bdae9bb4bdc92fa1d2b5a700215f9dd3f3981",
+      "bytes": 653,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "actual_http_request_metadata"
+    },
+    {
+      "path": "analysis-only-source-captures/dealer-eqb-city-sydney-exact.links-extracted.json",
+      "sha256": "6931a15f25ea6e41217bcdd64f487add84d6b0cf1a93b0da3d7e517d73cfda85",
+      "bytes": 11035,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "local_extractor_output_not_original_response"
+    },
+    {
+      "path": "analysis-only-source-captures/dealer-eqb-toowong.actual-http-response.html",
+      "sha256": "39cc441406dd8de487c33c8f9827529b944ea2b30ba1b1c9cb8c89217a5d1096",
+      "bytes": 77527,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "actual_http_response_bytes"
+    },
+    {
+      "path": "analysis-only-source-captures/dealer-eqb-toowong.html-to-text-extracted.txt",
+      "sha256": "45abdce7cb99d58457ff885fcfed81f68da1ab67ceffe3412f556dff3761fafa",
+      "bytes": 8592,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "local_extractor_output_not_original_response"
+    },
+    {
+      "path": "analysis-only-source-captures/dealer-eqb-toowong.http-request-metadata.json",
+      "sha256": "c1ae9d5e9195f0d6279f269ba4c8bb831861e9714fec0430d35e3e0a52d5792f",
+      "bytes": 564,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "actual_http_request_metadata"
+    },
+    {
+      "path": "analysis-only-source-captures/dealer-eqb-toowong.links-extracted.json",
+      "sha256": "3d4f0eed9b8143070e48df40468504945f4afa1e3bd466fd85e936d504f440a2",
+      "bytes": 11994,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "local_extractor_output_not_original_response"
+    },
+    {
+      "path": "analysis-only-source-captures/dealer-eqe-berwick-search.actual-http-response.html",
+      "sha256": "4f2391f954b00f2af9703b293281b6694b3a3db7f71bfd354c562c3d65cd0f1f",
+      "bytes": 372153,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "actual_http_response_bytes"
+    },
+    {
+      "path": "analysis-only-source-captures/dealer-eqe-berwick-search.html-to-text-extracted.txt",
+      "sha256": "33fe773f472de7349ac6f9a4ce6f186302883fb92ad59e29d44799b03a1e4665",
+      "bytes": 3411,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "local_extractor_output_not_original_response"
+    },
+    {
+      "path": "analysis-only-source-captures/dealer-eqe-berwick-search.http-request-metadata.json",
+      "sha256": "f70cefb960f155c10f8f1af57640c83338445ce277bdddb42decf3e45b12d859",
+      "bytes": 537,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "actual_http_request_metadata"
+    },
+    {
+      "path": "analysis-only-source-captures/dealer-eqe-berwick-search.links-extracted.json",
+      "sha256": "62fde04f7bdf16b2e9f6de7e870c613c7a272aee22af9dcb3cbfa38ff2d75281",
+      "bytes": 8061,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "local_extractor_output_not_original_response"
+    },
+    {
+      "path": "analysis-only-source-captures/dealer-eqe-sedan-berwick-exact.actual-http-response.html",
+      "sha256": "be995a2080875ce852c4d15ea6c68e243900bdef57b1fb6ee64c07ba7170fed8",
+      "bytes": 356500,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "actual_http_response_bytes"
+    },
+    {
+      "path": "analysis-only-source-captures/dealer-eqe-sedan-berwick-exact.html-to-text-extracted.txt",
+      "sha256": "90a56fb67f905a9c7959b6a327a989c1cf657279254cb24c506325aebba79c84",
+      "bytes": 10589,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "local_extractor_output_not_original_response"
+    },
+    {
+      "path": "analysis-only-source-captures/dealer-eqe-sedan-berwick-exact.http-request-metadata.json",
+      "sha256": "2015f563f7405e6f19b93fafb13fa94637e345269ae58128055ce19d629d4f8f",
+      "bytes": 637,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "actual_http_request_metadata"
+    },
+    {
+      "path": "analysis-only-source-captures/dealer-eqe-sedan-berwick-exact.links-extracted.json",
+      "sha256": "586c0a1fd25649d9832e86281572cfb3594ddc4b3342347269ba11caec07264f",
+      "bytes": 10868,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "local_extractor_output_not_original_response"
+    },
+    {
+      "path": "analysis-only-source-captures/dealer-eqe-sedan-sydney.actual-http-response.html",
+      "sha256": "e4989b4fd6c79345bb3312bedb2439e36caae4c7bd8071acd084afb7442cf185",
+      "bytes": 206663,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "actual_http_response_bytes"
+    },
+    {
+      "path": "analysis-only-source-captures/dealer-eqe-sedan-sydney.html-to-text-extracted.txt",
+      "sha256": "4c3794d942280c3cbf239c99554aa6eca2efeabf702b3ce8d3e2b3aa0cd5ec0a",
+      "bytes": 6851,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "local_extractor_output_not_original_response"
+    },
+    {
+      "path": "analysis-only-source-captures/dealer-eqe-sedan-sydney.http-request-metadata.json",
+      "sha256": "07a220da19ef9bce99919df0769f03b67ee714c04912a97921f69ef5f7f7f957",
+      "bytes": 550,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "actual_http_request_metadata"
+    },
+    {
+      "path": "analysis-only-source-captures/dealer-eqe-sedan-sydney.links-extracted.json",
+      "sha256": "5bc56bf54926a3de42a94484222e3f45b9dd88fc2aa7aef4ddbe4448dea0f3b7",
+      "bytes": 34980,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "local_extractor_output_not_original_response"
+    },
+    {
+      "path": "analysis-only-source-captures/dealer-eqe-suv-brighton.actual-http-response.html",
+      "sha256": "6d4996fff6ca6630563226851a07c83c5deff9374ab862115714b0405b73cf14",
+      "bytes": 612364,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "actual_http_response_bytes"
+    },
+    {
+      "path": "analysis-only-source-captures/dealer-eqe-suv-brighton.html-to-text-extracted.txt",
+      "sha256": "1570c5491aef73bc028e20963d851781f31774f46bc831ac23aeec30e4adfdc1",
+      "bytes": 11972,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "local_extractor_output_not_original_response"
+    },
+    {
+      "path": "analysis-only-source-captures/dealer-eqe-suv-brighton.http-request-metadata.json",
+      "sha256": "2b78a0da1cd4231a6e8c917b374c7da20e8832b2283a1ffcc362f1ea340d9307",
+      "bytes": 561,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "actual_http_request_metadata"
+    },
+    {
+      "path": "analysis-only-source-captures/dealer-eqe-suv-brighton.links-extracted.json",
+      "sha256": "c3f8e01c01e7309cdb28bb668cf5562fd101cfb9dcda3259e2f4979c1af9ca93",
+      "bytes": 22839,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "local_extractor_output_not_original_response"
+    },
+    {
+      "path": "analysis-only-source-captures/dealer-eqs-canberra-exact.actual-http-response.html",
+      "sha256": "34d485f71ca6e2ed6be146d74f54372d10762e962322153bab35864b35f73f60",
+      "bytes": 421686,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "actual_http_response_bytes"
+    },
+    {
+      "path": "analysis-only-source-captures/dealer-eqs-canberra-exact.html-to-text-extracted.txt",
+      "sha256": "2726e7df29a02402ba606077f907dbf08caaa7bf491e49b4809807e0ee62a12a",
+      "bytes": 9439,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "local_extractor_output_not_original_response"
+    },
+    {
+      "path": "analysis-only-source-captures/dealer-eqs-canberra-exact.http-request-metadata.json",
+      "sha256": "546fb654277be66a05c52ba88f0a2aad6407c44ef635906de0499d114cfae132",
+      "bytes": 625,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "actual_http_request_metadata"
+    },
+    {
+      "path": "analysis-only-source-captures/dealer-eqs-canberra-exact.links-extracted.json",
+      "sha256": "b0ae1e4ce714c31ff9403c28a1dc7a412d3872c6c505b1061fe0497b594f03d5",
+      "bytes": 10440,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "local_extractor_output_not_original_response"
+    },
+    {
+      "path": "analysis-only-source-captures/dealer-eqs-canberra.actual-http-response.html",
+      "sha256": "6198c6662562e7349e9fb0ae18f0e92f70034456e53595f55bffcdbbb71ec98d",
+      "bytes": 542622,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "actual_http_response_bytes"
+    },
+    {
+      "path": "analysis-only-source-captures/dealer-eqs-canberra.html-to-text-extracted.txt",
+      "sha256": "a9ac55d18867a4333c1da7eb1733900f1003d92a8511312a0c0bdc1b1ae34511",
+      "bytes": 11978,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "local_extractor_output_not_original_response"
+    },
+    {
+      "path": "analysis-only-source-captures/dealer-eqs-canberra.http-request-metadata.json",
+      "sha256": "4ccb77b28a785ecc2b5be7a6e43f4e8c116f9aecb83a52dc03ba06c3709c3767",
+      "bytes": 493,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "actual_http_request_metadata"
+    },
+    {
+      "path": "analysis-only-source-captures/dealer-eqs-canberra.links-extracted.json",
+      "sha256": "841b702e64f62869c5d52c2716a2be62268e29d331675326550b695d0ca06389",
+      "bytes": 22358,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "local_extractor_output_not_original_response"
+    },
+    {
+      "path": "analysis-only-source-captures/dealer-maybach-sydney-exact.actual-http-response.html",
+      "sha256": "f6fb0b1ed8f27d6877e94dae79cc275c84fd962cfc79cda1b477237a5906701d",
+      "bytes": 355814,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "actual_http_response_bytes"
+    },
+    {
+      "path": "analysis-only-source-captures/dealer-maybach-sydney-exact.html-to-text-extracted.txt",
+      "sha256": "7752f0877ea4a34c799295800d1586d59d58047d728466e2519f9f28fdcae62a",
+      "bytes": 8762,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "local_extractor_output_not_original_response"
+    },
+    {
+      "path": "analysis-only-source-captures/dealer-maybach-sydney-exact.http-request-metadata.json",
+      "sha256": "8c4213f2c0b67dbad32101ba983f9daa29ba301026fe75e821c608c7da8b86cc",
+      "bytes": 641,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "actual_http_request_metadata"
+    },
+    {
+      "path": "analysis-only-source-captures/dealer-maybach-sydney-exact.links-extracted.json",
+      "sha256": "d1aa40db0a4a8953171f7c4f2c578a07b1441d71c92fd60c7e29b46a611c3863",
+      "bytes": 10923,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "local_extractor_output_not_original_response"
+    },
+    {
+      "path": "analysis-only-source-captures/dealer-maybach-sydney.actual-http-response.html",
+      "sha256": "02f5d6a52dcbd56118867ec9323136a5a0699523e00c8457efc53e8cc6eb9bc1",
+      "bytes": 761860,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "actual_http_response_bytes"
+    },
+    {
+      "path": "analysis-only-source-captures/dealer-maybach-sydney.html-to-text-extracted.txt",
+      "sha256": "fb9887c691456e57a33eee875842284acb25f593e5f3af1856ab12e34ec64cb9",
+      "bytes": 17796,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "local_extractor_output_not_original_response"
+    },
+    {
+      "path": "analysis-only-source-captures/dealer-maybach-sydney.http-request-metadata.json",
+      "sha256": "17dd3cf51a7be8565fb1ccd9a909cc70af3a992e59af750b3ba444a9a8cd8558",
+      "bytes": 553,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "actual_http_request_metadata"
+    },
+    {
+      "path": "analysis-only-source-captures/dealer-maybach-sydney.links-extracted.json",
+      "sha256": "2d44371d31fd45e1be0ea71403c6c1c833ff9015b7b99926edf8f1f8aac23581",
+      "bytes": 34237,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "local_extractor_output_not_original_response"
+    },
+    {
+      "path": "analysis-only-source-captures/dealer1.web-tool-response.json",
+      "sha256": "68feca998288341c9b46c81b3027e21a2cb0513ecb70ea4fb4e8cd982eadb94a",
+      "bytes": 15383,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "web_tool_extractor_or_search_response_not_publisher_bytes"
+    },
+    {
+      "path": "analysis-only-source-captures/dealer2.web-tool-response.json",
+      "sha256": "da1a0f358d90c0ddb6f64eb60561615883eecfce07ccdf2a73760b331473cac8",
+      "bytes": 25005,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "web_tool_extractor_or_search_response_not_publisher_bytes"
+    },
+    {
+      "path": "analysis-only-source-captures/dealer3.web-tool-response.json",
+      "sha256": "9e8d04be164ee3e1633636418acb8e4469f73f992e802f5aad09481c477d6a84",
+      "bytes": 28771,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "web_tool_extractor_or_search_response_not_publisher_bytes"
+    },
+    {
+      "path": "analysis-only-source-captures/eqb-offer.actual-http-response.html",
+      "sha256": "95bf900243db74dd7635fe4a8d505df47f0cb92530af3cefbf3445f15ce95397",
+      "bytes": 925989,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "actual_http_response_bytes"
+    },
+    {
+      "path": "analysis-only-source-captures/eqb-offer.html-to-text-extracted.txt",
+      "sha256": "5c46a8e22e08358a23bdfb13fbf27f7b1645dc346b277666a5f9963133ac7458",
+      "bytes": 6757,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "local_extractor_output_not_original_response"
+    },
+    {
+      "path": "analysis-only-source-captures/eqb-offer.http-request-metadata.json",
+      "sha256": "35a1387db376615020e9f617675ffdf0f1f948b87dd757d7b0624e29591de5c8",
+      "bytes": 593,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "actual_http_request_metadata"
+    },
+    {
+      "path": "analysis-only-source-captures/eqb-offer.links-extracted.json",
+      "sha256": "0c309488ac4ac801db428ff426efb41648ec350714c0222f73723aaff58e3d54",
+      "bytes": 27680,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "local_extractor_output_not_original_response"
+    },
+    {
+      "path": "analysis-only-source-captures/eqb-offer.product-extracted.json",
+      "sha256": "b61154902c029b1b252ce65785b355239bb62d7d7754ae1563f04a1443af3f66",
+      "bytes": 706657,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "local_extractor_output_not_original_response"
+    },
+    {
+      "path": "analysis-only-source-captures/official-configurator.actual-http-response.html",
+      "sha256": "d90f1caca6730f6e2f8410287138dce0458bfb01ff83dc12a307df726d2e57aa",
+      "bytes": 2334961,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "actual_http_response_bytes"
+    },
+    {
+      "path": "analysis-only-source-captures/official-configurator.html-to-text-extracted.txt",
+      "sha256": "c0e1caea7ffb6b5e55d8e6af7790b58e58db2c845eb4d0c31ad048e97ec8f373",
+      "bytes": 8403,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "local_extractor_output_not_original_response"
+    },
+    {
+      "path": "analysis-only-source-captures/official-configurator.http-request-metadata.json",
+      "sha256": "17207b0aa0cba2c875a1fbda2905b085dbf1bdf8ad903f4c0b1ce72983799aff",
+      "bytes": 555,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "actual_http_request_metadata"
+    },
+    {
+      "path": "analysis-only-source-captures/official-configurator.links-extracted.json",
+      "sha256": "08d0b2a111733a5ca2f6657893f8a7ef8921762ddeeca4307bd990cd7d2896df",
+      "bytes": 39655,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "local_extractor_output_not_original_response"
+    },
+    {
+      "path": "analysis-only-source-captures/official-electric.actual-http-response.html",
+      "sha256": "b3a3c195fda93729d47a60523da9b3ad31341788a53fb14596949d31d34b3086",
+      "bytes": 1296029,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "actual_http_response_bytes"
+    },
+    {
+      "path": "analysis-only-source-captures/official-electric.html-to-text-extracted.txt",
+      "sha256": "7ba4bf94fae9014618cc398dd0010339e20d73fa57687f97fb3c26d27545b316",
+      "bytes": 21226,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "local_extractor_output_not_original_response"
+    },
+    {
+      "path": "analysis-only-source-captures/official-electric.http-request-metadata.json",
+      "sha256": "dd2719e74df48b659a0f302fa67c6a9ef003c0a05b01b64b2b583ba1a2ccfdfd",
+      "bytes": 553,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "actual_http_request_metadata"
+    },
+    {
+      "path": "analysis-only-source-captures/official-electric.links-extracted.json",
+      "sha256": "94836288c091e0acbdea0a74b3df1212a8118ebb2d0121ee9f4dcea58e373d21",
+      "bytes": 32787,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "local_extractor_output_not_original_response"
+    },
+    {
+      "path": "analysis-only-source-captures/official-eqb.actual-http-response.html",
+      "sha256": "e17c7828f09db354364f7c634488211c2965e06c0eaaa524f159169f6b2cae96",
+      "bytes": 643506,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "actual_http_response_bytes"
+    },
+    {
+      "path": "analysis-only-source-captures/official-eqb.html-to-text-extracted.txt",
+      "sha256": "59311e9945ccbfcbc704ff68f6d11dab6e669efe7c031388858ca19b3e130620",
+      "bytes": 4437,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "local_extractor_output_not_original_response"
+    },
+    {
+      "path": "analysis-only-source-captures/official-eqb.http-request-metadata.json",
+      "sha256": "a5f41c0540e5fe8c3d181be84dc7b3de28c9cc7cdbcdbf1290cff22dccb7114b",
+      "bytes": 545,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "actual_http_request_metadata"
+    },
+    {
+      "path": "analysis-only-source-captures/official-eqb.links-extracted.json",
+      "sha256": "b33814e4b39ee65f8194b04c5c6ce0eda24ab19117dff5b1c98d3b060486af42",
+      "bytes": 23515,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "local_extractor_output_not_original_response"
+    },
+    {
+      "path": "analysis-only-source-captures/official-eqe-sedan.actual-http-response.html",
+      "sha256": "47e6a76746542e3d43a4ba4b43097a3e72ca923deca9916a74269edd56102283",
+      "bytes": 1168134,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "actual_http_response_bytes"
+    },
+    {
+      "path": "analysis-only-source-captures/official-eqe-sedan.html-to-text-extracted.txt",
+      "sha256": "410494f2376fb8ac9bee0785b3e3390486adfe2b99e383837afd492a4331890e",
+      "bytes": 10462,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "local_extractor_output_not_original_response"
+    },
+    {
+      "path": "analysis-only-source-captures/official-eqe-sedan.http-request-metadata.json",
+      "sha256": "5fa05d5ce5b7571e4357a02bb535be5f15c01c1edb783a23353d30d487a98589",
+      "bytes": 564,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "actual_http_request_metadata"
+    },
+    {
+      "path": "analysis-only-source-captures/official-eqe-sedan.links-extracted.json",
+      "sha256": "ae326c596af9927800d0ab27852770db8703f569b32fa11ce10ce1c2a8e3fcce",
+      "bytes": 31102,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "local_extractor_output_not_original_response"
+    },
+    {
+      "path": "analysis-only-source-captures/official-eqe-suv-legacy.actual-http-response.html",
+      "sha256": "d0fbcec15190fe760e60e1982e4341aa083ba4237eb492adb962c2ade12d0bee",
+      "bytes": 862317,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "actual_http_response_bytes"
+    },
+    {
+      "path": "analysis-only-source-captures/official-eqe-suv-legacy.html-to-text-extracted.txt",
+      "sha256": "567a5077cd89a548752fffccdd8b0e06edeff1d5796411ee124eaf90243ff094",
+      "bytes": 13822,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "local_extractor_output_not_original_response"
+    },
+    {
+      "path": "analysis-only-source-captures/official-eqe-suv-legacy.http-request-metadata.json",
+      "sha256": "bc42bbd8323dce5657809e8f9d1ab14475b1258ca13c0037f4607bd56816b559",
+      "bytes": 592,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "actual_http_request_metadata"
+    },
+    {
+      "path": "analysis-only-source-captures/official-eqe-suv-legacy.links-extracted.json",
+      "sha256": "d329149ba97a1f64ee3d0570972f4508b42aa23c49e106572b961b98bf4c3aae",
+      "bytes": 30835,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "local_extractor_output_not_original_response"
+    },
+    {
+      "path": "analysis-only-source-captures/official-eqe-suv-named.http-request-metadata.json",
+      "sha256": "9f33a055888f869c96c3d3072892876a3c5f16c4049167d15306a3509b077330",
+      "bytes": 307,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "actual_http_request_metadata"
+    },
+    {
+      "path": "analysis-only-source-captures/official-eqs-suv-campaign.actual-http-response.html",
+      "sha256": "b94bcfdccda9e2e68804e6a51838559e2b567c1ca12f7a666738f2eb71f70197",
+      "bytes": 640030,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "actual_http_response_bytes"
+    },
+    {
+      "path": "analysis-only-source-captures/official-eqs-suv-campaign.html-to-text-extracted.txt",
+      "sha256": "9c5ad231a06828387b209e1f6c0d2d126c0f64812a92e981e2c969d28fdb24f3",
+      "bytes": 4446,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "local_extractor_output_not_original_response"
+    },
+    {
+      "path": "analysis-only-source-captures/official-eqs-suv-campaign.http-request-metadata.json",
+      "sha256": "2af14d4be21f9ffced3155bc2ab15ca45a9b2f842e825e08d07d101dc9f86d8a",
+      "bytes": 589,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "actual_http_request_metadata"
+    },
+    {
+      "path": "analysis-only-source-captures/official-eqs-suv-campaign.links-extracted.json",
+      "sha256": "b33814e4b39ee65f8194b04c5c6ce0eda24ab19117dff5b1c98d3b060486af42",
+      "bytes": 23515,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "local_extractor_output_not_original_response"
+    },
+    {
+      "path": "analysis-only-source-captures/official-eqs-suv-named.http-request-metadata.json",
+      "sha256": "fd575704fa1fbbc69600a91e3f909877e6391000416a0beea4bbf6c3a47894fc",
+      "bytes": 307,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "actual_http_request_metadata"
+    },
+    {
+      "path": "analysis-only-source-captures/official-maybach-brand.actual-http-response.html",
+      "sha256": "451c6a0a685cb201bc63a4336b293bc031eb0f81ca64eebcb23b6a01541cc4a5",
+      "bytes": 592683,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "actual_http_response_bytes"
+    },
+    {
+      "path": "analysis-only-source-captures/official-maybach-brand.html-to-text-extracted.txt",
+      "sha256": "1242ef6631c506d69204f91af065c40a271f2d8d025b7f742b241b4c9610ce53",
+      "bytes": 8957,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "local_extractor_output_not_original_response"
+    },
+    {
+      "path": "analysis-only-source-captures/official-maybach-brand.http-request-metadata.json",
+      "sha256": "00f6fa3cf4f85970b118734b651458bdeedb3ba379b891d6baaae997294fff37",
+      "bytes": 564,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "actual_http_request_metadata"
+    },
+    {
+      "path": "analysis-only-source-captures/official-maybach-brand.links-extracted.json",
+      "sha256": "5f468779bcc33e2c8db4a664d829947a0009839a6df6a8563b6b03a14b07a179",
+      "bytes": 33845,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "local_extractor_output_not_original_response"
+    },
+    {
+      "path": "analysis-only-source-captures/official-maybach-campaign.actual-http-response.html",
+      "sha256": "6156301d074ba25608605635518bb670e9284e68330a0f2dee8d5cedaab915ac",
+      "bytes": 2473765,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "actual_http_response_bytes"
+    },
+    {
+      "path": "analysis-only-source-captures/official-maybach-campaign.html-to-text-extracted.txt",
+      "sha256": "bd7431dbb995fb22d0273fdd8cc3df109054e95ef00d2ef3396c3824f4db2db5",
+      "bytes": 9889,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "local_extractor_output_not_original_response"
+    },
+    {
+      "path": "analysis-only-source-captures/official-maybach-campaign.http-request-metadata.json",
+      "sha256": "7bbffafd669fd4a6e0ae492febcbdcda786814c95d3761bc3a4d5ff454aca1f4",
+      "bytes": 603,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "actual_http_request_metadata"
+    },
+    {
+      "path": "analysis-only-source-captures/official-maybach-campaign.links-extracted.json",
+      "sha256": "32d706eaba86e770e0d8f99efd311482233d1717efb678edb828366b3cd68bca",
+      "bytes": 38073,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "local_extractor_output_not_original_response"
+    },
+    {
+      "path": "analysis-only-source-captures/official1.web-tool-response.json",
+      "sha256": "6ab9412717f237a76590d5b438c3cd867db2bcbf772990592e992a56c7a781f5",
+      "bytes": 31862,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "web_tool_extractor_or_search_response_not_publisher_bytes"
+    },
+    {
+      "path": "analysis-only-source-captures/official2.web-tool-response.json",
+      "sha256": "e9087289c915a248509ad24c323042fc1ca3cb2aa14f271904e5bff890a5e1e0",
+      "bytes": 30444,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "web_tool_extractor_or_search_response_not_publisher_bytes"
+    },
+    {
+      "path": "analysis-only-source-captures/official3.web-tool-response.json",
+      "sha256": "63b45b08d1ddc3f07c14b419a867e6f874b66cf4e234d7afd6936f62081a6ffc",
+      "bytes": 31790,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "web_tool_extractor_or_search_response_not_publisher_bytes"
+    },
+    {
+      "path": "analysis-only-source-captures/official4.web-tool-response.json",
+      "sha256": "2c6d9ed0a22afe19753e764ba2eacd76d72471e4a8cc4214ea8983556d1075d5",
+      "bytes": 30662,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "web_tool_extractor_or_search_response_not_publisher_bytes"
+    },
+    {
+      "path": "analysis-only-source-captures/search1.web-tool-response.json",
+      "sha256": "a64a6cfc1762631cbbf3a163dd429f96111a2f5b52ab64192cd0fd260e291857",
+      "bytes": 32959,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "web_tool_extractor_or_search_response_not_publisher_bytes"
+    },
+    {
+      "path": "analysis-only-source-captures/search10.web-tool-response.json",
+      "sha256": "6304bc098d8d914d2b71ec64e322785bea106c28b22590c65a4f5a2e79c9db52",
+      "bytes": 28528,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "web_tool_extractor_or_search_response_not_publisher_bytes"
+    },
+    {
+      "path": "analysis-only-source-captures/search11.web-tool-response.json",
+      "sha256": "35e4de9a1b67abc26ac8be4c62898db6df0358bb42e9b9febb47af6499a8df16",
+      "bytes": 28474,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "web_tool_extractor_or_search_response_not_publisher_bytes"
+    },
+    {
+      "path": "analysis-only-source-captures/search2.web-tool-response.json",
+      "sha256": "d1a3243870086026a2b4d295408fbad5bec4dc1bfb3b270248198673d68c58ba",
+      "bytes": 32750,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "web_tool_extractor_or_search_response_not_publisher_bytes"
+    },
+    {
+      "path": "analysis-only-source-captures/search3.web-tool-response.json",
+      "sha256": "1404332079ea8ef23ae707a695dfb4f87531e34ac7d4de077aa5eaea5255bdff",
+      "bytes": 28450,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "web_tool_extractor_or_search_response_not_publisher_bytes"
+    },
+    {
+      "path": "analysis-only-source-captures/search4.web-tool-response.json",
+      "sha256": "1cc009ebc75daf9ca38e3837ba45ba6daee9cabf88ef361780986ec236972ea4",
+      "bytes": 36101,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "web_tool_extractor_or_search_response_not_publisher_bytes"
+    },
+    {
+      "path": "analysis-only-source-captures/search5.web-tool-response.json",
+      "sha256": "a9de14bf1622e741733de60e11a51fc21c9902f237cd9acc75e3f3dbe4e2d636",
+      "bytes": 27745,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "web_tool_extractor_or_search_response_not_publisher_bytes"
+    },
+    {
+      "path": "analysis-only-source-captures/search6.web-tool-response.json",
+      "sha256": "1048ddaf93c0dfa7b1304db3ffef722f4a37db0018ad2c63d0062118c5d92b42",
+      "bytes": 71,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "web_tool_extractor_or_search_response_not_publisher_bytes"
+    },
+    {
+      "path": "analysis-only-source-captures/search7.web-tool-response.json",
+      "sha256": "d158bfa28d2eb53988e0bafea025c564e35c377e911e8cde9aa9c1d63d1c8046",
+      "bytes": 32529,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "web_tool_extractor_or_search_response_not_publisher_bytes"
+    },
+    {
+      "path": "analysis-only-source-captures/search8.web-tool-response.json",
+      "sha256": "46ba6788707ebcd3d97c6bff354a17926cf3494c16c59d6be45d369e5726783b",
+      "bytes": 31539,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "web_tool_extractor_or_search_response_not_publisher_bytes"
+    },
+    {
+      "path": "analysis-only-source-captures/search9.web-tool-response.json",
+      "sha256": "56ba06e3ed552d10764adfdda2005c340d2b946d47bc882cfd3c53ea62dc7685",
+      "bytes": 31896,
+      "hashMatches": true,
+      "lengthMatches": true,
+      "captureKind": "web_tool_extractor_or_search_response_not_publisher_bytes"
+    }
+  ],
+  "evidenceSourceChecks": [
+    {
+      "id": "official-electric",
+      "requestedUrl": "https://www.mercedes-benz.com.au/passengercars/models/electric.html",
+      "finalUrl": "https://www.mercedes-benz.com.au/passengercars/models/electric.html",
+      "recordedStatus": 200,
+      "recordedError": null,
+      "observationTimeMatches": true,
+      "requestedUrlMatches": true,
+      "finalUrlMatches": true,
+      "pins": [
+        {
+          "field": "metadataCapture",
+          "matches": true
+        },
+        {
+          "field": "actualResponseCapture",
+          "matches": true
+        },
+        {
+          "field": "textExtractionCapture",
+          "matches": true
+        }
+      ]
+    },
+    {
+      "id": "official-configurator",
+      "requestedUrl": "https://www.mercedes-benz.com.au/passengercars/configurator.html",
+      "finalUrl": "https://www.mercedes-benz.com.au/passengercars/configurator.html",
+      "recordedStatus": 200,
+      "recordedError": null,
+      "observationTimeMatches": true,
+      "requestedUrlMatches": true,
+      "finalUrlMatches": true,
+      "pins": [
+        {
+          "field": "metadataCapture",
+          "matches": true
+        },
+        {
+          "field": "actualResponseCapture",
+          "matches": true
+        },
+        {
+          "field": "textExtractionCapture",
+          "matches": true
+        }
+      ]
+    },
+    {
+      "id": "official-eqb",
+      "requestedUrl": "https://www.mercedes-benz.com.au/passengercars/models/suv/eqb/overview.html",
+      "finalUrl": "https://www.mercedes-benz.com.au/passengercars/models/suv.html",
+      "recordedStatus": 200,
+      "recordedError": null,
+      "observationTimeMatches": true,
+      "requestedUrlMatches": true,
+      "finalUrlMatches": true,
+      "pins": [
+        {
+          "field": "metadataCapture",
+          "matches": true
+        },
+        {
+          "field": "actualResponseCapture",
+          "matches": true
+        },
+        {
+          "field": "textExtractionCapture",
+          "matches": true
+        }
+      ]
+    },
+    {
+      "id": "eqb-offer",
+      "requestedUrl": "https://www.mercedes-benz.com.au/passengercars/buy/new-car/product.html/MB2RJ6VMXC",
+      "finalUrl": "https://www.mercedes-benz.com.au/passengercars/buy/new-car/product.html/MB2RJ6VMXC",
+      "recordedStatus": 200,
+      "recordedError": null,
+      "observationTimeMatches": true,
+      "requestedUrlMatches": true,
+      "finalUrlMatches": true,
+      "pins": [
+        {
+          "field": "metadataCapture",
+          "matches": true
+        },
+        {
+          "field": "actualResponseCapture",
+          "matches": true
+        },
+        {
+          "field": "textExtractionCapture",
+          "matches": true
+        }
+      ]
+    },
+    {
+      "id": "official-eqe-sedan",
+      "requestedUrl": "https://www.mercedes-benz.com.au/passengercars/models/saloon/eqe/overview.html",
+      "finalUrl": "https://www.mercedes-benz.com.au/passengercars/models/saloon.html",
+      "recordedStatus": 200,
+      "recordedError": null,
+      "observationTimeMatches": true,
+      "requestedUrlMatches": true,
+      "finalUrlMatches": true,
+      "pins": [
+        {
+          "field": "metadataCapture",
+          "matches": true
+        },
+        {
+          "field": "actualResponseCapture",
+          "matches": true
+        },
+        {
+          "field": "textExtractionCapture",
+          "matches": true
+        }
+      ]
+    },
+    {
+      "id": "official-eqe-suv-named",
+      "requestedUrl": "https://www.mercedes-benz.com.au/passengercars/models/suv/eqe-suv/overview.html",
+      "finalUrl": null,
+      "recordedStatus": null,
+      "recordedError": "HTTP Error 404: Not Found",
+      "observationTimeMatches": true,
+      "requestedUrlMatches": true,
+      "finalUrlMatches": true,
+      "pins": [
+        {
+          "field": "metadataCapture",
+          "matches": true
+        }
+      ]
+    },
+    {
+      "id": "official-eqe-suv-legacy",
+      "requestedUrl": "https://www.mercedes-benz.com.au/passengercars/models/suv/x294-23-1/overview.html",
+      "finalUrl": "https://www.mercedes-benz.com.au/passengercars/models/suv/x294-23-1/overview.html",
+      "recordedStatus": 200,
+      "recordedError": null,
+      "observationTimeMatches": true,
+      "requestedUrlMatches": true,
+      "finalUrlMatches": true,
+      "pins": [
+        {
+          "field": "metadataCapture",
+          "matches": true
+        },
+        {
+          "field": "actualResponseCapture",
+          "matches": true
+        },
+        {
+          "field": "textExtractionCapture",
+          "matches": true
+        }
+      ]
+    },
+    {
+      "id": "official-eqs-suv-named",
+      "requestedUrl": "https://www.mercedes-benz.com.au/passengercars/models/suv/eqs-suv/overview.html",
+      "finalUrl": null,
+      "recordedStatus": null,
+      "recordedError": "HTTP Error 404: Not Found",
+      "observationTimeMatches": true,
+      "requestedUrlMatches": true,
+      "finalUrlMatches": true,
+      "pins": [
+        {
+          "field": "metadataCapture",
+          "matches": true
+        }
+      ]
+    },
+    {
+      "id": "official-eqs-suv-campaign",
+      "requestedUrl": "https://www.mercedes-benz.com.au/passengercars/campaigns/eqs.html",
+      "finalUrl": "https://www.mercedes-benz.com.au/passengercars/models/electric.html?subgroup=all.offroader",
+      "recordedStatus": 200,
+      "recordedError": null,
+      "observationTimeMatches": true,
+      "requestedUrlMatches": true,
+      "finalUrlMatches": true,
+      "pins": [
+        {
+          "field": "metadataCapture",
+          "matches": true
+        },
+        {
+          "field": "actualResponseCapture",
+          "matches": true
+        },
+        {
+          "field": "textExtractionCapture",
+          "matches": true
+        }
+      ]
+    },
+    {
+      "id": "official-maybach-brand",
+      "requestedUrl": "https://www.mercedes-benz.com.au/passengercars/mercedes-maybach.html",
+      "finalUrl": "https://www.mercedes-benz.com.au/passengercars/mercedes-maybach.html",
+      "recordedStatus": 200,
+      "recordedError": null,
+      "observationTimeMatches": true,
+      "requestedUrlMatches": true,
+      "finalUrlMatches": true,
+      "pins": [
+        {
+          "field": "metadataCapture",
+          "matches": true
+        },
+        {
+          "field": "actualResponseCapture",
+          "matches": true
+        },
+        {
+          "field": "textExtractionCapture",
+          "matches": true
+        }
+      ]
+    },
+    {
+      "id": "official-maybach-campaign",
+      "requestedUrl": "https://www.mercedes-benz.com.au/passengercars/campaigns/maybach-eqs.html",
+      "finalUrl": "https://www.mercedes-benz.com.au/passengercars/models.html?group=maybach&subgroup=all.offroader",
+      "recordedStatus": 200,
+      "recordedError": null,
+      "observationTimeMatches": true,
+      "requestedUrlMatches": true,
+      "finalUrlMatches": true,
+      "pins": [
+        {
+          "field": "metadataCapture",
+          "matches": true
+        },
+        {
+          "field": "actualResponseCapture",
+          "matches": true
+        },
+        {
+          "field": "textExtractionCapture",
+          "matches": true
+        }
+      ]
+    },
+    {
+      "id": "dealer-eqb-toowong",
+      "requestedUrl": "https://autosportsgroup.com.au/0590154122-1832585-mercedesbenz-eqb-2026/",
+      "finalUrl": "https://autosportsgroup.com.au/0590154122-1832585-mercedesbenz-eqb-2026/",
+      "recordedStatus": 200,
+      "recordedError": null,
+      "observationTimeMatches": true,
+      "requestedUrlMatches": true,
+      "finalUrlMatches": true,
+      "pins": [
+        {
+          "field": "metadataCapture",
+          "matches": true
+        },
+        {
+          "field": "actualResponseCapture",
+          "matches": true
+        },
+        {
+          "field": "textExtractionCapture",
+          "matches": true
+        }
+      ]
+    },
+    {
+      "id": "dealer-eqb-city-sydney-exact",
+      "requestedUrl": "https://showroom.mbsydney.com.au/listing/2025-mercedes-benz-eqb-eqb250-city-edition-suv-w1n2436022n133613/",
+      "finalUrl": "https://showroom.mbsydney.com.au/listing/2025-mercedes-benz-eqb-eqb250-city-edition-suv-w1n2436022n133613/",
+      "recordedStatus": 200,
+      "recordedError": null,
+      "observationTimeMatches": true,
+      "requestedUrlMatches": true,
+      "finalUrlMatches": true,
+      "pins": [
+        {
+          "field": "metadataCapture",
+          "matches": true
+        },
+        {
+          "field": "actualResponseCapture",
+          "matches": true
+        },
+        {
+          "field": "textExtractionCapture",
+          "matches": true
+        }
+      ]
+    },
+    {
+      "id": "dealer-eqe-sedan-sydney",
+      "requestedUrl": "https://www.lshauto.com.au/stock/details/OAG-AD-25756419/2025-mercedes-benz-eqe300-used",
+      "finalUrl": "https://www.lshauto.com.au/stock",
+      "recordedStatus": 200,
+      "recordedError": null,
+      "observationTimeMatches": true,
+      "requestedUrlMatches": true,
+      "finalUrlMatches": true,
+      "pins": [
+        {
+          "field": "metadataCapture",
+          "matches": true
+        },
+        {
+          "field": "actualResponseCapture",
+          "matches": true
+        },
+        {
+          "field": "textExtractionCapture",
+          "matches": true
+        }
+      ]
+    },
+    {
+      "id": "dealer-eqe-sedan-berwick-exact",
+      "requestedUrl": "https://showroom.mbberwick.com.au/listing/2023-mercedes-benz-eqe-eqe350-sedan-w1k2951122f011786/",
+      "finalUrl": "https://showroom.mbberwick.com.au/listing/2023-mercedes-benz-eqe-eqe350-sedan-w1k2951122f011786/",
+      "recordedStatus": 200,
+      "recordedError": null,
+      "observationTimeMatches": true,
+      "requestedUrlMatches": true,
+      "finalUrlMatches": true,
+      "pins": [
+        {
+          "field": "metadataCapture",
+          "matches": true
+        },
+        {
+          "field": "actualResponseCapture",
+          "matches": true
+        },
+        {
+          "field": "textExtractionCapture",
+          "matches": true
+        }
+      ]
+    },
+    {
+      "id": "dealer-eqe-suv-brighton",
+      "requestedUrl": "https://showroom.mbbrighton.com.au/listing/2023-mercedes-benz-eqe-eqe350-suv-w1n2946122a020819/",
+      "finalUrl": "https://showroom.mbbrighton.com.au/",
+      "recordedStatus": 200,
+      "recordedError": null,
+      "observationTimeMatches": true,
+      "requestedUrlMatches": true,
+      "finalUrlMatches": true,
+      "pins": [
+        {
+          "field": "metadataCapture",
+          "matches": true
+        },
+        {
+          "field": "actualResponseCapture",
+          "matches": true
+        },
+        {
+          "field": "textExtractionCapture",
+          "matches": true
+        }
+      ]
+    },
+    {
+      "id": "dealer-eqe-berwick-search",
+      "requestedUrl": "https://showroom.mbberwick.com.au/search/?model=eqe",
+      "finalUrl": "https://showroom.mbberwick.com.au/search/?model=eqe",
+      "recordedStatus": 200,
+      "recordedError": null,
+      "observationTimeMatches": true,
+      "requestedUrlMatches": true,
+      "finalUrlMatches": true,
+      "pins": [
+        {
+          "field": "metadataCapture",
+          "matches": true
+        },
+        {
+          "field": "actualResponseCapture",
+          "matches": true
+        },
+        {
+          "field": "textExtractionCapture",
+          "matches": true
+        }
+      ]
+    },
+    {
+      "id": "dealer-eqs-canberra-exact",
+      "requestedUrl": "https://showroom.mbcanberra.com.au/listing/2023-mercedes-benz-eqs-eqs450-suv-w1n2966242a016979/",
+      "finalUrl": "https://showroom.mbcanberra.com.au/listing/2023-mercedes-benz-eqs-eqs450-suv-w1n2966242a016979/",
+      "recordedStatus": 200,
+      "recordedError": null,
+      "observationTimeMatches": true,
+      "requestedUrlMatches": true,
+      "finalUrlMatches": true,
+      "pins": [
+        {
+          "field": "metadataCapture",
+          "matches": true
+        },
+        {
+          "field": "actualResponseCapture",
+          "matches": true
+        },
+        {
+          "field": "textExtractionCapture",
+          "matches": true
+        }
+      ]
+    },
+    {
+      "id": "dealer-maybach-sydney-exact",
+      "requestedUrl": "https://showroom.mbsydney.com.au/listing/2024-mercedes-benz-eqs-maybach-eqs680-suv-w1n2969552a031410/",
+      "finalUrl": "https://showroom.mbsydney.com.au/listing/2024-mercedes-benz-eqs-maybach-eqs680-suv-w1n2969552a031410/",
+      "recordedStatus": 200,
+      "recordedError": null,
+      "observationTimeMatches": true,
+      "requestedUrlMatches": true,
+      "finalUrlMatches": true,
+      "pins": [
+        {
+          "field": "metadataCapture",
+          "matches": true
+        },
+        {
+          "field": "actualResponseCapture",
+          "matches": true
+        },
+        {
+          "field": "textExtractionCapture",
+          "matches": true
+        }
+      ]
+    }
+  ],
+  "eqbProductExtractionExactlyMatchesEmbeddedRawObject": true,
+  "newRecordsEmpty": true,
+  "zeroCountAndRankingDeltas": true,
+  "noAdmissionApproved": true,
+  "issues": [
+    {
+      "severity": "nonblocking",
+      "id": "buyer-copy-jargon",
+      "detail": "Research jargon is unsuitable for buyers if these held notes are exposed later. Current source renderer selects inventory.records rather than unverifiedLeads; no direct buyer exposure of the amended notes was found in static source or portable runtime outside embedded data."
+    },
+    {
+      "severity": "provenance-qualification",
+      "id": "saved-response-review",
+      "detail": "This review verifies saved response bytes against pins and metadata; it does not independently refetch the sites or prove the origin beyond the recorded capture provenance. The two 404 outcomes have error metadata only and no saved response body."
+    },
+    {
+      "severity": "integration-note",
+      "id": "retain-research-pins",
+      "detail": "sourceArtifacts remains unchanged and points to prior artifacts. Retain this exact candidate, manifest and review alongside any application change so the 12 October notes remain traceable."
+    }
+  ],
+  "approvedScope": "Only the five proposedAfter objects at this exact candidate hash, replacing matching unverifiedLeads before-objects; no records, active catalogue, trims, numerical specifications, availability promotion or rankings.",
+  "staticRendererFiles": [
+    {
+      "path": "roadmark-work/roadmark/src/lib/market-inventory-data.ts",
+      "sha256": "1df809ae0521e986e99929dc18fe7958dd797cf0246266082f26bb567affd999"
+    },
+    {
+      "path": "roadmark-work/roadmark/src/components/market-audit.tsx",
+      "sha256": "6b52fec78d11617b6bd1f74142765186c6b647a72fbe3dc928afdc07336401cf"
+    }
+  ]
+}

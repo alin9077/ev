@@ -1,0 +1,3972 @@
+{
+  "createdAt": "2026-10-14T07:45:48.252511+00:00",
+  "scope": "Research-only addition to the safe Toyota application/source/QA checkpoint. Subsequent configuration implementation and live QA changes are not captured here.",
+  "source": {
+    "filename": "Roadmark-recovery-source-toyota-integrated-20261014T0642.tar.xz",
+    "bytes": 7941208,
+    "sha256": "6d0db9f742f88a00a9bf6e1544aae84811d26fa400fc4e2a4d251072feb34c50",
+    "group": "source-toyota-integrated",
+    "library_file_id": "libfile_9f90f6586818819186bfe11ff1cc21f7",
+    "version": 0,
+    "restoreOrder": 39,
+    "file_id": "file_000000004cc081f59ae12166fa271dc4"
+  },
+  "provisionalResearch": {
+    "status": "PROVISIONAL; not finally approved or registered",
+    "candidateTier1Rows": 18,
+    "candidateNewIdentities": 11,
+    "candidateOnSaleRows": 13,
+    "candidateProvisionalReportedOrderOpenRows": 5,
+    "researchClosure": false,
+    "pending": "Guarded dated configuration metadata support and revised packet review",
+    "draftFiles": [
+      "volkswagen-research/configuration-updates.json",
+      "volkswagen-research/build-configuration-updates.py"
+    ],
+    "draftScope": "Preparation only; not attached to the captured candidate packet or approved",
+    "unresolvedEvidence": [
+      "MY27 ID. Buzz Australian manufacturer model list",
+      "MY26 ID.4 GTX New dealer lead not retrieved"
+    ],
+    "evidenceLimit": "Retained MY26 proof includes clearly labelled immutable-ledger excerpts. Unavailable original whole browser captures are not included or reverified."
+  },
+  "candidatePacketSHA256": {
+    "volkswagen-2026-10-14.json": "91d90cd48891812c650ee75d43d7515a2b9fd4901250b204e973e17e9a332f3a",
+    "volkswagen-reconciliation-2026-10-14.json": "a7bc64bc0c5d3be2fbf746dd17b10202a71196c5b64e7adbc67d90cd37884ecc"
+  },
+  "verification": {
+    "result": "PASS",
+    "createdAt": "2026-10-14T07:41:31.533719+00:00",
+    "sourceCaptureCutoff": "2026-10-14T06:46:46.997287+00:00",
+    "qaCaptureCutoff": "2026-10-14T06:47:29.346016+00:00",
+    "researchCaptureCutoff": "2026-10-14T07:38:56.805313+00:00",
+    "archiveCount": 45,
+    "archiveMemberOccurrencesVerified": 4268,
+    "payloadFiles": 4140,
+    "metadataFiles": 89,
+    "allRestoredFiles": 4229,
+    "allRestoredBytes": 1585320951,
+    "verificationFilesLinkedFromUnchangedPriorRestore": 3973,
+    "verificationFilesWritten": 295,
+    "currentSourceFiles": 631,
+    "currentQaFiles": 1245,
+    "unchangedResearchAndSupportFiles": 2048
+  },
+  "independentResearchVerification": {
+    "result": "PASS",
+    "verificationKind": "Independent read-only provisional research snapshot verification",
+    "verifiedAt": "2026-10-14T07:43:41.030480+00:00",
+    "checkpoint": "volkswagen-provisional-20261014T0736",
+    "scope": "Two provisional Volkswagen research archives compared to the immutable staged snapshot and captured originalSHA256/originalBytes fields. Live research, application source, QA, archives and Library were not modified. Main worker separately owns privacy scanning and full base-plus-research replay.",
+    "state": "PROVISIONAL; not finally approved or registered",
+    "captureStartedAt": "2026-10-14T07:38:56.155690+00:00",
+    "captureCutoff": "2026-10-14T07:38:56.805313+00:00",
+    "sourceChangesDuringCapture": [],
+    "fullManifest": {
+      "path": "RECOVERY-FILE-MANIFEST.json",
+      "bytes": 77559,
+      "sha256": "a8ab3db441e9de0d5144b77281eb8784cf47d39fb14d750d8f88178480e5cd4b"
+    },
+    "archiveCount": 2,
+    "archiveMemberOccurrencesVerified": 220,
+    "payloadFilesVerified": 216,
+    "payloadBytesVerified": 52865341,
+    "metadataMembersVerified": 4,
+    "allStagedFilesEqualArchivedBytes": true,
+    "allCapturedOriginalHashesEqualCopiedHashes": true,
+    "copyByteTransformationCount": 0,
+    "copyByteTransformations": [],
+    "excludedFiles": [
+      {
+        "path": "__pycache__/build-packet.cpython-312.pyc",
+        "reason": "dependency, build, cache, or runtime directory"
+      },
+      {
+        "path": "__pycache__/build-reconciliation.cpython-312.pyc",
+        "reason": "dependency, build, cache, or runtime directory"
+      },
+      {
+        "path": "__pycache__/finalize-artifacts.cpython-312.pyc",
+        "reason": "dependency, build, cache, or runtime directory"
+      },
+      {
+        "path": "__pycache__/merge-evidence.cpython-312.pyc",
+        "reason": "dependency, build, cache, or runtime directory"
+      },
+      {
+        "path": "id45/__pycache__/capture.cpython-312.pyc",
+        "reason": "dependency, build, cache, or runtime directory"
+      },
+      {
+        "path": "idbuzz/__pycache__/capture.cpython-312.pyc",
+        "reason": "dependency, build, cache, or runtime directory"
+      }
+    ],
+    "excludedFileCount": 6,
+    "cacheExclusionsAbsentFromStageAndArchives": true,
+    "candidateArtifacts": [
+      {
+        "path": "volkswagen-research/volkswagen-2026-10-14.json",
+        "bytes": 2475446,
+        "sha256": "91d90cd48891812c650ee75d43d7515a2b9fd4901250b204e973e17e9a332f3a",
+        "originalBytes": 2475446,
+        "originalSHA256": "91d90cd48891812c650ee75d43d7515a2b9fd4901250b204e973e17e9a332f3a",
+        "archiveParts": [
+          2
+        ],
+        "expectedSHA256": "91d90cd48891812c650ee75d43d7515a2b9fd4901250b204e973e17e9a332f3a"
+      },
+      {
+        "path": "volkswagen-research/volkswagen-reconciliation-2026-10-14.json",
+        "bytes": 14969,
+        "sha256": "a7bc64bc0c5d3be2fbf746dd17b10202a71196c5b64e7adbc67d90cd37884ecc",
+        "originalBytes": 14969,
+        "originalSHA256": "a7bc64bc0c5d3be2fbf746dd17b10202a71196c5b64e7adbc67d90cd37884ecc",
+        "archiveParts": [
+          2
+        ],
+        "expectedSHA256": "a7bc64bc0c5d3be2fbf746dd17b10202a71196c5b64e7adbc67d90cd37884ecc"
+      }
+    ],
+    "draftConfigurationUpdates": {
+      "status": "Draft preparation; not attached to candidate packet",
+      "draftFile": "volkswagen-research/configuration-updates.json",
+      "builderFile": "volkswagen-research/build-configuration-updates.py",
+      "draftRows": 3,
+      "candidateHasConfigurationAttachmentField": false,
+      "candidateVersionUpdateAfterKeys": [
+        "brand",
+        "drive",
+        "generation",
+        "id",
+        "model",
+        "modelId",
+        "trim",
+        "vehicleClass",
+        "year"
+      ],
+      "draftConfigurationAfterKeys": [
+        "availabilityEvidenceBoundaries",
+        "chargingBoundary",
+        "completeVehicleCountEligible",
+        "configurationReview",
+        "countContribution",
+        "historicalChargingBoundary",
+        "historicalPricingBoundary",
+        "historicalProjectionScope",
+        "historicalRequiredNulls",
+        "options",
+        "pricingBoundary",
+        "projectionContract",
+        "projectionScope",
+        "rankingEligible",
+        "releasedHistoricalNulls",
+        "requiredNulls",
+        "sourceCaptureIdentities",
+        "sourceIdentity",
+        "sourceIds",
+        "sourceRecordId"
+      ],
+      "candidateAndDraftFieldSetsDisjoint": true
+    },
+    "publicPdfPageRenderImages": {
+      "provenanceFile": "IMAGE-PROVENANCE.json",
+      "provenanceSHA256": "3ce0b5c87b348fc071051eb310680979c4aaaad31e9534018fe459c851be6d88",
+      "classificationBasis": "Existing confirmed capture provenance; each immutable stage and archive image matches the provenance SHA-256 and byte length. No claim of new visual source validation.",
+      "count": 6,
+      "images": [
+        {
+          "path": "volkswagen-research/id45/captures/id45_my25_technical_page8.png",
+          "bytes": 559525,
+          "sha256": "2d84e4a66371b7de954af48d0d923b200ed5e078aaa8910acf05def63685ce3e",
+          "classification": "Public technical/equipment PDF page render; not a browser screenshot",
+          "archiveParts": [
+            1
+          ],
+          "provenanceSHA256Matches": true
+        },
+        {
+          "path": "volkswagen-research/id45/captures/id45_my25_technical_page9.png",
+          "bytes": 118638,
+          "sha256": "cc996e97cd00e97cab142aa0186c3e74acf0f7a7f6cd013aaaf4ef8fb534b093",
+          "classification": "Public technical/equipment PDF page render; not a browser screenshot",
+          "archiveParts": [
+            1
+          ],
+          "provenanceSHA256Matches": true
+        },
+        {
+          "path": "volkswagen-research/id45/captures/id4_my27_equipment_page5.png",
+          "bytes": 290845,
+          "sha256": "58b24e7df53254ea2e115934230dc8efb301db37b8e18260545b30223ac3f51c",
+          "classification": "Public technical/equipment PDF page render; not a browser screenshot",
+          "archiveParts": [
+            1
+          ],
+          "provenanceSHA256Matches": true
+        },
+        {
+          "path": "volkswagen-research/id45/captures/id4_my27_technical_page9.png",
+          "bytes": 114060,
+          "sha256": "0293d5a45b9c5d40ed9284686f4dcfa4469f39918653b965d0490b629f1832bd",
+          "classification": "Public technical/equipment PDF page render; not a browser screenshot",
+          "archiveParts": [
+            1
+          ],
+          "provenanceSHA256Matches": true
+        },
+        {
+          "path": "volkswagen-research/id45/captures/id5_my26_equipment_page5.png",
+          "bytes": 287948,
+          "sha256": "8327074b718f18b0fed0b6a1b21a632e699a779a950ea510e961a2248ce490f2",
+          "classification": "Public technical/equipment PDF page render; not a browser screenshot",
+          "archiveParts": [
+            1
+          ],
+          "provenanceSHA256Matches": true
+        },
+        {
+          "path": "volkswagen-research/id45/captures/id5_my26_technical_page8.png",
+          "bytes": 108830,
+          "sha256": "e0323d9352eb8ab46cf99d38b931be1f9ec4c6dee452097cd4aa364d23ddaddb",
+          "classification": "Public technical/equipment PDF page render; not a browser screenshot",
+          "archiveParts": [
+            1
+          ],
+          "provenanceSHA256Matches": true
+        }
+      ]
+    },
+    "immutableStageUnchangedDuringVerification": true,
+    "liveResearchCompared": false,
+    "archives": [
+      {
+        "filename": "Roadmark-recovery-volkswagen-provisional-20261014T073856Z-part01of02.tar.xz",
+        "part": 1,
+        "parts": 2,
+        "bytes": 19591988,
+        "sha256": "4b73b3bb9ce0dd7864832e0fe39a92f1471ee95b6178904556e49e808a3258d4",
+        "members": 210,
+        "payloadFiles": 208,
+        "metadataFiles": 2,
+        "allMembers": [
+          {
+            "path": "volkswagen-research/README.md",
+            "bytes": 934,
+            "sha256": "88f3e1b7a4330788b3f8f2dbf40b95b20aa3f2940f87dc4463d454e5806c7f0f",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/REVIEW.md",
+            "bytes": 9951,
+            "sha256": "7248f88a2b661ad462276aa28788ff35678161c5330bd3a82174230dd121c3d0",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/after.json",
+            "bytes": 2515774,
+            "sha256": "c7aedfafbec9b67a499c6cfb993f0bf7c81a505dc5061d60f8fa88d56222f303",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/artifact-hash-manifest.json",
+            "bytes": 6079,
+            "sha256": "33c18441ebfd895d762154e225a782984bcb39d3f7c91e98d9e2d775340457c5",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/brand-model-list-reconciliation.json",
+            "bytes": 194731,
+            "sha256": "53262c863f83a8e1e4ac72757f9ccc6a046c8af7b72973e115ff37813938e599",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/build-configuration-updates.py",
+            "bytes": 5328,
+            "sha256": "61b7662c2554b60218f84d4cbbbb3eab47c3f9e66126b1ab4e7348882e94dd15",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/build-packet.py",
+            "bytes": 13760,
+            "sha256": "43547aaaf2c70c9af5b40bc6bcb9f7a92a26a649ca0fca07e3f606ae57e8579a",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/build-reconciliation.py",
+            "bytes": 6480,
+            "sha256": "c287b9e165611b03cb7fccc9aebd36e8e3df723841ca416fb03a3a2fad305949",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/capture-before.log",
+            "bytes": 1352,
+            "sha256": "7d064149b247aa361f37bc3398a1813a18abbf2e39b41e61352b72be6967a413",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/capture-before.ts",
+            "bytes": 1024,
+            "sha256": "0398737a5e6118ffb1869c4b5230c65588cedce98558b4d605e57c6c2a545f1b",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/capture-new-features.exit",
+            "bytes": 2,
+            "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/capture-new-features.log",
+            "bytes": 55,
+            "sha256": "4f31989ce0348971b58e4655b9d55ceefb9d9d14201e1e443002c9d15f567fdf",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/capture-new-features.ts",
+            "bytes": 752,
+            "sha256": "97ee13e61735671e11a2c2c524ea7de5ddff72dafdff3028d5f70961d579f967",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/configuration-updates.json",
+            "bytes": 584898,
+            "sha256": "61c86fd0ab6af59d2c7b5b9a33801f2c6807fb2efa52d0c516b694401c7d5323",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/core-matrix.json",
+            "bytes": 336134,
+            "sha256": "3ef386702f649499e510c5e1bf4fe3e217dab6b6fd4783e457ddfe29a1282de1",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/evidence-completeness-audit.json",
+            "bytes": 131327,
+            "sha256": "865a81a3256d9aa545f214f1428f3092ef1d7784c281dffe172465d1500ef8ab",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/features-after.json",
+            "bytes": 865735,
+            "sha256": "ec5de13b98019c459c3960b4b4eb50fdee0f8e54c66e104321f1a8899622df46",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/final-artifact-check.log",
+            "bytes": 719,
+            "sha256": "650c809386ddc5bf718f1be0198a4fce6e87b6393d4d9f94d543d174e1d16a5c",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/finalize-artifacts.py",
+            "bytes": 6200,
+            "sha256": "39d202693a9d193fa27a367787068b2da0032b85000f8997f0090a4e1f74b913",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/build_evidence.py",
+            "bytes": 24488,
+            "sha256": "f83dd163cb02772dc7e586ff002e3f94fa994c05f7831e38319de47dd3013e64",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/capture.py",
+            "bytes": 2003,
+            "sha256": "fe5ee517fb4e6c9f721cad2b7e32516726f523ad2d14815fe658f2ff6028bc87",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/carexpert_id5_review26.txt",
+            "bytes": 27688,
+            "sha256": "8c38c1cc07eabbde0da66cba027bff4ea9f7facfead6ec46811f90f06ec7163e",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/carsales_id4_pro26.txt",
+            "bytes": 11735,
+            "sha256": "b9a56dcebced52f23ea8266e54998e6ea4651477c9eba50f5c51619f27c93772",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/carsales_id4_pro_review26.txt",
+            "bytes": 20412,
+            "sha256": "b33ecc60a59f5a67e83e26654262447ea6dc31a90daa2bbdf3d3c661b59cae28",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/carsales_id5_gtx26.txt",
+            "bytes": 11297,
+            "sha256": "a061211c4fb1a17736faf0661624cf35ff2e37e4ae9561e47060f723eca49017",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/carsales_id5_pro26.txt",
+            "bytes": 11467,
+            "sha256": "423c6cf64e393e3f3316ea9cb0bff72864f947e5510adc646b687fb639303f63",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/carsguide_id4_pro27.txt",
+            "bytes": 12534,
+            "sha256": "6ff28bb908c1f4e57fd2d4e01e1cb63d15af38684b22830c7b7afeccf3961a35",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/carsguide_id5_towing26.txt",
+            "bytes": 8997,
+            "sha256": "6cbfef8fa89eefff3f057594c08e581aa4aa6b74a396551c31f8924a5f88f0da",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/dealer_id4_gtx25.txt",
+            "bytes": 3905,
+            "sha256": "eab033718bfc1a1a75a3e8e611a0d47e49da46f5dcea4781a27259eee468db43",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/dealer_id4_gtx26_alto.txt",
+            "bytes": 21142,
+            "sha256": "d6a91a9eb458c1158810c366a4524bdfe8bbab6760621511a37288c2e4f507b8",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/dealer_id4_pro25.txt",
+            "bytes": 21382,
+            "sha256": "8222012eecbc6fbd4f320b94bef66d0cc01766135cb221902873b8578dd44997",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/dealer_id4_pro25_sime.txt",
+            "bytes": 19580,
+            "sha256": "fcd8e28fb8223deb54a546004f5c804091dbfddd12c35718e7e2855fb2beeb0d",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/dealer_id4_pro26.txt",
+            "bytes": 2677,
+            "sha256": "54f7c8b136065b77398a27635171c6d2b7d2ac0c627f6708ed71055be4ee3574",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/dealer_id5_pro255.txt",
+            "bytes": 12448,
+            "sha256": "5d389ed4c92142045b78bea625f8367dd4d6531d1157e4f44cc489a55760d9bd",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/goauto_id4_my27.txt",
+            "bytes": 13633,
+            "sha256": "fced5f9d50a16cfc5706d02412c9171f8d3178d4ef14096797fe32745dcccd75",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/id45_my25_technical_page8.png",
+            "bytes": 559525,
+            "sha256": "2d84e4a66371b7de954af48d0d923b200ed5e078aaa8910acf05def63685ce3e",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/id45_my25_technical_page9.png",
+            "bytes": 118638,
+            "sha256": "cc996e97cd00e97cab142aa0186c3e74acf0f7a7f6cd013aaaf4ef8fb534b093",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/id4_my27.pdf",
+            "bytes": 587423,
+            "sha256": "231f3b8148025c480c370628dc6f4e64518918d343973be694b842b62a42d0bc",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/id4_my27_equipment_page5.png",
+            "bytes": 290845,
+            "sha256": "58b24e7df53254ea2e115934230dc8efb301db37b8e18260545b30223ac3f51c",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/id4_my27_technical_page9.png",
+            "bytes": 114060,
+            "sha256": "0293d5a45b9c5d40ed9284686f4dcfa4469f39918653b965d0490b629f1832bd",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/id4_pro27_epping.txt",
+            "bytes": 16310,
+            "sha256": "581484d6871d354cc41c144c7f895ae4925f701e1c5776f18172813d896dbccf",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/id5_gtx26_gorell.txt",
+            "bytes": 6401,
+            "sha256": "1d89a171d881dc34f354354c674b09db27c2ba7062a2f755b1f57cbe263197fe",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/id5_my26_equipment_page5.png",
+            "bytes": 287948,
+            "sha256": "8327074b718f18b0fed0b6a1b21a632e699a779a950ea510e961a2248ce490f2",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/id5_my26_technical_page8.png",
+            "bytes": 108830,
+            "sha256": "e0323d9352eb8ab46cf99d38b931be1f9ec4c6dee452097cd4aa364d23ddaddb",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/maker_config_id4pro.txt",
+            "bytes": 3786,
+            "sha256": "41d42e6262334c4d83dba9e3d803fb6012820a1fc2bd1c2a13d644f09c0b6b4d",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/redbook_search_cache.json",
+            "bytes": 33504,
+            "sha256": "a2b86c07d36783e125e4074688dac9e4b7024675fdab430d67ce3059a15d8aed",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/redbook_search_cache.txt",
+            "bytes": 31193,
+            "sha256": "345d99ebaf6a5cb605d524e0c90587d9881ec9dee4a649472c830472d0cb0ddf",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/stock_id4_gtx27.txt",
+            "bytes": 8219,
+            "sha256": "2243aadeae8924179b1cbed11603e0fe887ad3dfdade3a401d1ff03541b19d1b",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/stock_id5_gtx25.txt",
+            "bytes": 24369,
+            "sha256": "6a6ed514e5ce03a51ebbb0f6eb2b038e23c36841f9a4cb7a21dca7e9e3b3640c",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/stock_id5_pro25.txt",
+            "bytes": 9271,
+            "sha256": "e98e42853b1c67e89e8a0c0e762d76f143444706fe2d28e9dd7a0b6f5461bd0b",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/vw_ev_range.txt",
+            "bytes": 23336,
+            "sha256": "0054f9485980a9a0cf338f5df3cb311255278950a527f508e14516e67e50b720",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/vw_id4.txt",
+            "bytes": 13999,
+            "sha256": "93b239e5543898087aad08ce8f3cdba4f4a787184f946076ae2247a20c3f05ac",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/vw_id45_my25.pdf",
+            "bytes": 10924235,
+            "sha256": "a94f0e15d0d3eed92c77ba8a52e6e51fafda3201a9be4ad8fb9de151eea81990",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/vw_id45_my25.txt",
+            "bytes": 46682,
+            "sha256": "f2fa81a72668fa2cdcd4929e829197a6f3c13befce8311c338c270a9b52739c2",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/vw_id45_walkthrough.txt",
+            "bytes": 10210,
+            "sha256": "62129c0de18d30e119ca5f399521dba68dbf760007e58d09a27a35973bc022dc",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/vw_id4_gtx.txt",
+            "bytes": 14472,
+            "sha256": "e911af68b175b8ac7f9bc644f856c9de92ccb56993bb4bda400ac657c92d55a7",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/vw_id4_my255.pdf",
+            "bytes": 3311759,
+            "sha256": "c6920ef0fd0809e9afca2a0f4bacc9c89a4b7c20a5d13ff3513bee765378c2fc",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/vw_id4_my255.txt",
+            "bytes": 45826,
+            "sha256": "ec1edce52873d69201e8d6040fe7c71ada3bbda1cf635685dbca432f34479a64",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/vw_id4_my27.pdf",
+            "bytes": 587423,
+            "sha256": "231f3b8148025c480c370628dc6f4e64518918d343973be694b842b62a42d0bc",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/vw_id4_my27.txt",
+            "bytes": 48249,
+            "sha256": "39365ba65cda79820f8ad5cec8efa38c5708c7c13bd8153d15e72e56c4b3156e",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/vw_id5.txt",
+            "bytes": 14546,
+            "sha256": "75c44a6ee4ecb31538e5455742438eb09a7f4e7ab025c87cf865cd3c57e11d97",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/vw_id5_gtx.txt",
+            "bytes": 11574,
+            "sha256": "17857933f9505063ded05db4aa349afacfd5fbbae293d86697999c47fcf9272e",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/vw_id5_my26.pdf",
+            "bytes": 6837974,
+            "sha256": "d7878274533fe5b6de8d1ad357b1db9c8a33dd55665ad6622e81cf8860888b7e",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/vw_id5_my26.txt",
+            "bytes": 45044,
+            "sha256": "ef91bb3ccdf97c849c086262097c7825fc1fb7b9f57df96c722124f14cca492a",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/vw_roadside.txt",
+            "bytes": 8893,
+            "sha256": "39e7d598ed9e92e588547f0129989246f05d79dfc57433887b4c54075344e9cd",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/vw_warranty.txt",
+            "bytes": 11052,
+            "sha256": "aaa304fcb54960e4266775ec04659020a9fdcc802f6d133fc740b24ae1a65185",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/captures/vw_warranty_terms.txt",
+            "bytes": 32879,
+            "sha256": "11ff1c7625d7af44e563ced375b96075ea34b3200f0b039a2de5ef5255ab31d4",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/evidence.json",
+            "bytes": 191837,
+            "sha256": "89f098263409cc5753245996f62fb804ea3e74fcba784408e91607d454f31251",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/finalize.py",
+            "bytes": 3218,
+            "sha256": "44ca817d6030432282615063af31a32231f200a4dd478c64ef0670edb4763ddb",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/normalized-evidence.json",
+            "bytes": 191837,
+            "sha256": "89f098263409cc5753245996f62fb804ea3e74fcba784408e91607d454f31251",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/queue.json",
+            "bytes": 4935,
+            "sha256": "8dc921b176a34e0c094b7178842260cc0dfbaec7cdbfee0dac3f535b3b973c98",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/queue2.json",
+            "bytes": 398,
+            "sha256": "922f6eb4775eb68bb16fc2dbe4f836c814f8651715a7dad50d604dc8aa3e5aea",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/queue3.json",
+            "bytes": 1626,
+            "sha256": "e26299b1c362d3a67a564de0ad33e78248023d78cd4ee0ea682f84f3d47eb0cb",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/queue4.json",
+            "bytes": 1142,
+            "sha256": "ecabfbc105fcf2ffa79141198c904ec1f52d9e9ee5c72fed430ec12abe42d0f6",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/queue5.json",
+            "bytes": 402,
+            "sha256": "11b3296bf2753f20049c8fa8faf30366037e9d325296e5cc2d6dafafa9f0144c",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/redactions.json",
+            "bytes": 11288,
+            "sha256": "931a5f3034343127aedcc9ecf386ea5688ef06f4013f149c51b07c7969a97130",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/report.md",
+            "bytes": 7707,
+            "sha256": "3de46eef5673cbaf04413e633c8de2bef827febb5ced31ae289f13946f8f2595",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/source-index.json",
+            "bytes": 34593,
+            "sha256": "53f799c220b6275e9b6a5756c7000a7cd0eff038ccdac233bb32aed8c083c8eb",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/sources1.json",
+            "bytes": 15353,
+            "sha256": "51ac8c540113870fac4b6ed0ae6d4b309933a8e52ccfffdd5d0d4f0a69b91942",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/sources2.json",
+            "bytes": 2169,
+            "sha256": "0bbcc27030529ba212ac1116a7cf69d290443f8ffa7b9b8fa5fe80938db2edb7",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/sources3.json",
+            "bytes": 5978,
+            "sha256": "4dac8e33b5d191f7a447ddea383084596c035d10ea42cd69403641ffde91424d",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/sources4.json",
+            "bytes": 2202,
+            "sha256": "e23ad7844bb9cc79e1275c50c851078ed10afc0e0b3edaced0966d26acf04db7",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/sources5.json",
+            "bytes": 1120,
+            "sha256": "3f586df61aa75dddcc12dd7053acbaa9611e7e30600d90ae340eea59a4b5158c",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/sources6.json",
+            "bytes": 741,
+            "sha256": "e8f578f8faf71e9387156f333c019f2736ad3ed5c273456980f25e261513260f",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/sources7.json",
+            "bytes": 851,
+            "sha256": "c4cb0ef9493338834355f8b03140aa87c788e9f3808bd8b469022e53550b0ff2",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/id45/validation.json",
+            "bytes": 923,
+            "sha256": "019a0f07b9d91407f6b044ff5faf7b8f5b15d1022ef1e68e47e3c4529826b6de",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/batch1.json",
+            "bytes": 876,
+            "sha256": "69931a3fd5e432e8b553ab673b8be99edd21c5ee843ed85c7b1e97332d859262",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/batch2.json",
+            "bytes": 1185,
+            "sha256": "b7e32275e05c4ab4109c195c248d3628e5c12880514da1e45d6c65549afd2b7b",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/batch3.json",
+            "bytes": 1463,
+            "sha256": "b407a2f135e5bf72afd28ea78074217245f2476eb57c3cdf51b4c3682bbd2036",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/batch4.json",
+            "bytes": 3717,
+            "sha256": "29f40aa3272b4d23bd782a463c5e0c4983f9006a9add857b46275c37e6f98c57",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/batch5.json",
+            "bytes": 484,
+            "sha256": "b60c5d7f88915256c1359ac1fd513950eef6b810aa7508dff56fdd2df91e8aac",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/batch6.json",
+            "bytes": 479,
+            "sha256": "36d7f264cd9ae539f74cb0e624749ac5755afe4c847d395e4ef63bd1fe5d1352",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/build_evidence.py",
+            "bytes": 23355,
+            "sha256": "fa03fd5e390a97082ae8c798f2d5ee567b32763fa9dceb9cf401273b85846fdd",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/capture.py",
+            "bytes": 2789,
+            "sha256": "a6654bdab0a2ce5a937b02fd9b511186489d1d9e9e37da76f71621a60f544fdf",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/captures/alto_all.txt",
+            "bytes": 1373714,
+            "sha256": "e0545d2c5a31b2441129ba391e2f71195fe61463a931949d1e1c60bb0f08afdf",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/captures/alto_current_identity_web.json",
+            "bytes": 729,
+            "sha256": "f66e4a1af6309057df430851c1ca386e5562cd0b2d6facca7024fea009f7c36a",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/captures/alto_lwb25.txt",
+            "bytes": 25472,
+            "sha256": "c9962b496836e1c49724564b82b95111174f952bdc5b484eb12f196d4cf77580",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/captures/alto_lwb_26198029.txt",
+            "bytes": 18469,
+            "sha256": "cdad3deab503899a92dc865c127193e5911bfc037446ed7ee32c4bc3a1c258e6",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/captures/alto_lwb_26265754.txt",
+            "bytes": 18500,
+            "sha256": "ccd806958e428f7e61a29be19076af2304de4840d369b7d9a788051f4ec55dd4",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/captures/carexpert_pro_max_ac.txt",
+            "bytes": 37350,
+            "sha256": "7b341e8f8514072ad3aac0411ffc956d05b732d1c9feb1f06248fe2ba5628d55",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/captures/carexpert_pro_max_ac_web.txt",
+            "bytes": 284,
+            "sha256": "a23c055f4d3c8d4516c235b5e11f57c18bc193f07975ffbbd9bbd11405de74ca",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/captures/carsales_gtx25.txt",
+            "bytes": 20471,
+            "sha256": "2e4247dd92d9773786b23be95d7b086b3a86e5eea5c372ad05ed2bd12914d0dc",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/captures/carsales_my27_launch.txt",
+            "bytes": 22534,
+            "sha256": "05e37b466ae1e715e14186c69f431f13fdedefa67df7941780b344c428994a52",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/captures/carsales_plus27.txt",
+            "bytes": 20654,
+            "sha256": "fdeb4f855ba7f5153c16702774bc0943db31e07ad7c933100a1c5b1511e61786",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/captures/carsales_plus_swb27.txt",
+            "bytes": 20713,
+            "sha256": "17f3f516264b38f8c2935ea744ffede8153ad1f566eeab45c26ef39be9a6b992",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/captures/carsales_swb26.txt",
+            "bytes": 21420,
+            "sha256": "b3f33472238d190f4972de300a73d772a2402599bc56ca3964b25fcf56226b6c",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/captures/drivingenthusiast_gtx_ac_web.txt",
+            "bytes": 282,
+            "sha256": "bc7237b6187f2ff197d0d0fda60814bf2905286d09ad132376982aa9c45a1804",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/captures/goauto_my27_launch.txt",
+            "bytes": 20176,
+            "sha256": "5747aed4518f8739d3038bc712ac075ceb3ef5a69478593bd2d27170005c49e8",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/captures/gorell_lwb26.txt",
+            "bytes": 14011,
+            "sha256": "63243be343feac49f29cd3614176d92be2eb3b1e538ad23707958b6cda393d30",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/captures/gorell_swb26.txt",
+            "bytes": 13949,
+            "sha256": "ee6d92d0bc1675f1678d57db66a1bf6b3c549751ae33270391367bbee268a889",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/captures/macgregor_buzz_stock.txt",
+            "bytes": 26863,
+            "sha256": "62093ec8433989b834c78682aeda6ee23dbe536d633a1d7add0494e7f2005e84",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/captures/macgregor_gtx25.txt",
+            "bytes": 18611,
+            "sha256": "2ab2006357ddeac8ad058069afc7a78db0cc703d8be075b595d37d763cc35981",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/captures/maker_my26_gtx_prior.txt",
+            "bytes": 10985,
+            "sha256": "7356036a3db522dac5f1d3f3150875bd7abd1d6c45c3131d3b839a7358ce8ed7",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/captures/maker_my26_lwb_prior.txt",
+            "bytes": 10384,
+            "sha256": "c132a9cef53c1786368b140fd462b08052c131690e6b1a58a2d61e9a85f78c43",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/captures/maker_my26_swb_prior.txt",
+            "bytes": 10335,
+            "sha256": "8c6e9e4e9035ab10d79e027223ddb5c0f543337a0f2f28270e68837c71a8f0f5",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/captures/my27_search_gap.txt",
+            "bytes": 469,
+            "sha256": "62ebc149990863b84d01ddb5926cfb2b60bb202e0d5658de65f6ee3309f88ede",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/captures/redbook_gtx26_cache.txt",
+            "bytes": 190,
+            "sha256": "6c996e7044148eb64dc32388265994dfb6165f48c72cae97b10bf3b91542068b",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/captures/redbook_my27_search.json",
+            "bytes": 31546,
+            "sha256": "242d4512b304cbf165bb07617451c626cbd1541c4bd793046fefaac462f4aff1",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/captures/residual_late_search_notes.txt",
+            "bytes": 1142,
+            "sha256": "196efe7aaaee54a9a652754360cd0475e9e0406015a56b050fa4676fddee5d39",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/captures/residual_search_log.txt",
+            "bytes": 672,
+            "sha256": "344b9b6a8c19cc47c3a0205ce0f5d0e414ca2831634018c2f95db32664a0c2ee",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/captures/vga_newsroom.txt",
+            "bytes": 3881,
+            "sha256": "1e58783cfaca1b26e25a646829d3fd58c1b9b97783e57f39aff4c6eab919d9e9",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/captures/vw_buzz_configurator.txt",
+            "bytes": 11488,
+            "sha256": "33d720bd41df4c27adf706604f97e8dbadaa2f3c7c9dcda610116ba736651e1f",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/captures/vw_buzz_my25_pdf.pdf",
+            "bytes": 3546258,
+            "sha256": "23e2b3eb08b85353b3b5df53eac6a52b1e5fbdc8be671ffc13c0f5814606510b",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/captures/vw_buzz_my25_pdf.txt",
+            "bytes": 54913,
+            "sha256": "0f94684f1bb7f9b97294659d372da3f5f51e5c923b4f54f2b2cef580a215419d",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/captures/vw_buzz_page.txt",
+            "bytes": 30520,
+            "sha256": "d59912764407261f346ce25f189ea019edeec83824769fd59e5984b3cdbe54e7",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/captures/vw_model_launches.txt",
+            "bytes": 14781,
+            "sha256": "8ba189b8ebe3b673bcc9408682994483e7cb22f585a71d8ef304c1480612f492",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/captures/wakeling_gtx26.txt",
+            "bytes": 28063,
+            "sha256": "e18e881eed40ea500f00ee616bd3006a8cd90d3fd4cfca95f4b169b3d5557060",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/captures/wakeling_swb25.txt",
+            "bytes": 34048,
+            "sha256": "4ed469aacf85f9da2b379937dd45c67a4bc0442af7a35c422728188419424c9a",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/evidence.json",
+            "bytes": 293668,
+            "sha256": "061be904ba18f1ae17f76fe465504138f184962c3ee844959c4407a6b2143d05",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/finalize_evidence.py",
+            "bytes": 11777,
+            "sha256": "d0ada4361db7b3d4bc85153930e897b9744ceb7d8aa0bd18b2188dbf3c01ea1a",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/manifest-sha256.json",
+            "bytes": 7676,
+            "sha256": "ea3c632b82bae4e843cf4a8329285f1e8a35c0dd0325b9876c26f9f0f97caab4",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/normalized-evidence.json",
+            "bytes": 293668,
+            "sha256": "061be904ba18f1ae17f76fe465504138f184962c3ee844959c4407a6b2143d05",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/redaction-log.json",
+            "bytes": 33098,
+            "sha256": "c49c2fbadbe44cb7c57bd20c45014c81129f09eef9fac9b9b7eadc9bedad8fc5",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/report.md",
+            "bytes": 13498,
+            "sha256": "a9ab676bf4f168e051ee0fc9f89d88e19583eb862abb8c65480cb5fe62c0914d",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/retained/admitted-assertion-supplement.json",
+            "bytes": 181986,
+            "sha256": "5ba6473a99985b78200cb3844aa05a3ad4732e9c3c315e936dffa1412be17d3a",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/retained/build_supplement.py",
+            "bytes": 9251,
+            "sha256": "2fc202fa0d05d5ac9b32aed14fcf2872e44722b592e91baf2e7792235d1f1d89",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/retained/manifest-sha256.json",
+            "bytes": 1991,
+            "sha256": "21296ab0a4dc9cfca02b21f2bd6f18e3a9e90d27e9431f20fa8cf8450577477f",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/retained/r10_vw26_buzz26_gtx_equipment-admitted-excerpts.json",
+            "bytes": 49373,
+            "sha256": "ac6a700c1271860e714d4bf2332a7b88eb9f140dd346c9dc9aa154a371ba8fce",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/retained/r10_vw26_buzz26_lwb_engine-admitted-excerpts.json",
+            "bytes": 7913,
+            "sha256": "c998bdec2473a6a937db4e6b703d8dbe2fe2a975a25a6eb83d6df2e5d1494b77",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/retained/r10_vw26_buzz26_lwb_equipment-admitted-excerpts.json",
+            "bytes": 44425,
+            "sha256": "c4583018cb3d610e437d4bfff1870f29d3dee1831c66eeade19c5a60a9e239fd",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/retained/r10_vw26_buzz26_lwb_options-admitted-excerpts.json",
+            "bytes": 8960,
+            "sha256": "8d74fb5e7aa2ba82a808005553a45185e80a4b8cce8866a2aece6b3b544e4068",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/retained/r10_vw26_buzz26_pro_engine-admitted-excerpts.json",
+            "bytes": 7726,
+            "sha256": "a613a0dcc7cf14845ee3327a82050fcbac0e55f2dac61b1d4fef5f437d13ac04",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/retained/r10_vw26_buzz26_swb_equipment-admitted-excerpts.json",
+            "bytes": 46453,
+            "sha256": "018596d8b9a4dc5647c6a8ebb560747d513d6dbd334d004882843df273621e47",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/retained/r10_vw26_buzz26_swb_options-admitted-excerpts.json",
+            "bytes": 8960,
+            "sha256": "24e35e4d9276e3a03385cd70a433cc46bb75a3916d755ecd1583b2197364ef5e",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/retained/r10_vw26_buzz_gtx_engine-admitted-excerpts.json",
+            "bytes": 7885,
+            "sha256": "8ef362e0cbe488a439cc48ac64aca847b4a0e845a0054de27eb467aa1ac0c43c",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/retained/recovery-search.json",
+            "bytes": 589,
+            "sha256": "832f7b408b8758f427a006fa6b3be3c05a4322a79488ad5219c72f0ff98e6a6a",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/retained/report.md",
+            "bytes": 12604,
+            "sha256": "3f6d96231596357226d3326fd4472a8a2a730a6d7828fad9fbe8ef7c927471ee",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/source-index.json",
+            "bytes": 84659,
+            "sha256": "dbbabdf119e006f03721695ca7c8ca6f4d4f776a4dca62b8af3bf19f68856f17",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/sources.json",
+            "bytes": 55881,
+            "sha256": "f4544d4e4dda66644f76b065a43dba47f9d8bb84b6cd02a25dcfc29459d764d5",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/validation.json",
+            "bytes": 722,
+            "sha256": "17a99a833e30acc7e4789b28360ed9f4df2c47a1a5e302179c7eb00a7b02566c",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/idbuzz/write_report.py",
+            "bytes": 12694,
+            "sha256": "5b5aafc8d0585ff3e7e0d85d691adc971d0e60e4a61dc4394950fc0ff56134d8",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/immutable-data-before.json",
+            "bytes": 10250,
+            "sha256": "d5b84902d54f71aecb09682df60a4735e88e9cec999a2aec87b0e110af54ba33",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/integration-readiness.json",
+            "bytes": 1796,
+            "sha256": "80380f1d09a084c009dceef3437498cb8139bc8f94b54e13717c877cbef073ed",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/merge-evidence.py",
+            "bytes": 10062,
+            "sha256": "00567900e27abda740064625388ed0be7baf38a2c45874fe1a0bf7d9f89a52a4",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/new-feature-before.json",
+            "bytes": 394515,
+            "sha256": "5263c8a87db8184dae66cd9f6e8b914eb762f7207a39c7181ac0ae7ae38f8023",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/normalized-evidence.json",
+            "bytes": 849514,
+            "sha256": "9577ed8dcf0a844386b36baaac6ae3c40bca90a9789df7e69b95ed03e8b56c05",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/redaction-audit.json",
+            "bytes": 579,
+            "sha256": "3523aaac93deb6443807214678330e357239584a55b4495806f4def3c9a4a428",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/review-amendments.json",
+            "bytes": 2237,
+            "sha256": "c04fc32e8899e77f2db7a750a8f5a2cf47a7dd042a91ee89ca0d7ce9d40bf078",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/source-hash-manifest.json",
+            "bytes": 28952,
+            "sha256": "4222c764b72595cf7391c491392405e1a7632fe57fff62b0d8f59edec6a359b7",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/source-index.json",
+            "bytes": 150040,
+            "sha256": "ee55dee5b1cc3890a4c21a0d2f9a76f4408bf4951c0670079d2eb7637b32acbd",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/stage-before-citation-fix.log",
+            "bytes": 23941,
+            "sha256": "01cdf9c425fe80afc970b948457a60d6e6616b54805ea3bef9d9d763618ca2c5",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/stage-validation.exit",
+            "bytes": 2,
+            "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/stage-validation.log",
+            "bytes": 23941,
+            "sha256": "01cdf9c425fe80afc970b948457a60d6e6616b54805ea3bef9d9d763618ca2c5",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/staged-packs.json",
+            "bytes": 3896139,
+            "sha256": "98592faa0a8733de4d252e069e53eaa46eb7e71464f4b6385cf13ce974da3247",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/staged-report.json",
+            "bytes": 1575994,
+            "sha256": "4241a2061d1b026ec7ff5c38fc33a34b6a74c9c225978c74d23ce3a93d6744fc",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/terms/SHA256SUMS.txt",
+            "bytes": 3449,
+            "sha256": "a4ef3d58ba5518aae566ba5dbad76ca2838a793d1c7aaa166ed214e7e82fe875",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/terms/brand-model-list-reconciliation.json",
+            "bytes": 59450,
+            "sha256": "fe2ab686786d543e5d5dbff9b869da0ff7ab9a761c8046acb6527e57a2b5b020",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/terms/build_facts.py",
+            "bytes": 16854,
+            "sha256": "ad016508f85ed236a2467a14013687ce184648cae6633c98efef9cd7fffbe8a8",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/terms/capture_sources.py",
+            "bytes": 4993,
+            "sha256": "e34c4340840d6b18243b735ffddf955e24ea30f5feedffdb94b0cfcc8aa08918",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/terms/carexpert_id3.json",
+            "bytes": 18686,
+            "sha256": "cd4ba0586dfc0686bef92cec55c1bbd39249a3540025a4cc37550b66505b1fef",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/terms/carexpert_id3.txt",
+            "bytes": 8151,
+            "sha256": "5fb8026040c5d58a69d98e4bdc0bcbc4a88a9d3a8bdc5398f427f1bc7f4150bc",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/terms/carexpert_models.json",
+            "bytes": 35620,
+            "sha256": "5c2ad602b184fc4eba8396f04d0481fc1dcecc154327ebf0f2df36eda9b3722c",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/terms/carexpert_models.txt",
+            "bytes": 9484,
+            "sha256": "b5e87d911c93b8bf50081c1c26a10246eb02b51cea357e742e194fcc62593e56",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/terms/carsguide_models.json",
+            "bytes": 53947,
+            "sha256": "e3632c550847aa5e8a4a893ced258d916d2f6b78b3cccaebdaf59ea36e8a7d14",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/terms/carsguide_models.txt",
+            "bytes": 18957,
+            "sha256": "3765de9be1f2b830b61643fcbfaf11866beaa8be82de6a9edb553eb6084374c9",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/terms/enrich_reconciliation.py",
+            "bytes": 11992,
+            "sha256": "7866e23598a2d3b45ac7badd2da6f70575dd3c86f00861f0639b63f2c81029d2",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/terms/facts.json",
+            "bytes": 142092,
+            "sha256": "251d5e08b6db50592d20f1f76b8c3ea04820c4edb8a7ab427bccc1f441955c9d",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/terms/factual-excerpts.json",
+            "bytes": 9724,
+            "sha256": "388f5ac47cfe670b68ebc0467346ba6c1d795c498ad2b0e0d02b88dabeecd1bc",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/terms/report.md",
+            "bytes": 4758,
+            "sha256": "f1615a2fb1d383183cdf8c42f0089f3de0dd252af5b7d5d610a7e87fb58cbacf",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/terms/source-index.json",
+            "bytes": 17644,
+            "sha256": "d271f98ac01e994f6481960d597da63e8fed3890d635bf29e470760e792e2174",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/terms/terms-normalized.json",
+            "bytes": 141361,
+            "sha256": "eeb043df7985c67ea44ace3f6219e7e618eab33dba0490f8b0a10a8d920e77cb",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/terms/vw_amarok.json",
+            "bytes": 38583,
+            "sha256": "4ad68cca1e8a8f6f70edcbe71e5fc08e05dbf89460558b95f86b79d3c160a920",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/terms/vw_amarok.txt",
+            "bytes": 15520,
+            "sha256": "3db96918b1f9c7681a162f4b3269e974e157669549eb277bd4129002c0ede797",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/terms/vw_buzz.json",
+            "bytes": 36740,
+            "sha256": "0cb68fc5505ab337c2cc62d979521808ab53764f1419b0fc824bd81fd311f06b",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/terms/vw_buzz.txt",
+            "bytes": 14234,
+            "sha256": "7874e751599badf62d1f1a634d8f638cba567543e1d2b655e697f81bc9b783e9",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/terms/vw_buzz_cargo.json",
+            "bytes": 35682,
+            "sha256": "1bc1b6169f8d59f328c74579e999f2ddb37412a11e5f80eecbc691a981434852",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/terms/vw_buzz_cargo.txt",
+            "bytes": 13092,
+            "sha256": "e0b5e28b3ad953d8c60978c607d1a2ee1333933490f2b55ecdb3b9da293d25e7",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/terms/vw_ev_range.json",
+            "bytes": 47494,
+            "sha256": "9d502c09cd7820faf98381ddd0485cebe35b2b95a23b2dcbcfa23f5588e98c20",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/terms/vw_ev_range.txt",
+            "bytes": 23248,
+            "sha256": "740fb7fdb6a5bb8c44f643917950054fc4a5f09a95f7e440328271bd5003e73f",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/terms/vw_id3_news.json",
+            "bytes": 24365,
+            "sha256": "7789fdc46471b25bcbdcfd9403f72c968ae9450d78ce7006c190cffcf6c82eb3",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/terms/vw_id3_news.txt",
+            "bytes": 7910,
+            "sha256": "4d7939918766105b07d0e9f543725b9d23eb442bd255c3f37f7f000b4bd2a3c1",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/terms/vw_id7_news.json",
+            "bytes": 29589,
+            "sha256": "0c9416941e0cb7c816874c7a8165a2cc248f0aa555871e455aea8b0fad97a04a",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/terms/vw_id7_news.txt",
+            "bytes": 12576,
+            "sha256": "16943e180e0356011dc37a3fdd716745ff6c9fe3ffa25fd49b01fec53ffb003c",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/terms/vw_models.json",
+            "bytes": 20612,
+            "sha256": "52dcb02abbe5bf93a0fb3498c798da021baeee5f0d6ca0e795275cbebf58dcce",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/terms/vw_models.txt",
+            "bytes": 4805,
+            "sha256": "8ae6840680c95d65e00f54bc73c61c0ca4baf1d5632be8040d8b3aa35838da32",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/terms/vw_on_ev.json",
+            "bytes": 26671,
+            "sha256": "0b348ee40a0d74500daec17c6fe97c844889380e05fce2dc1ad428e2dd410ccd",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/terms/vw_on_ev.txt",
+            "bytes": 9341,
+            "sha256": "d2f44e7009bf9d106d8adb81c147128f485f2a71a80978cced5e03679f725537",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/terms/vw_roadside.json",
+            "bytes": 27056,
+            "sha256": "f1dc83e3aa5801aeef8a77bf1876b99471422d974bc3d8ed1f38ae9279f4674d",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/terms/vw_roadside.txt",
+            "bytes": 8790,
+            "sha256": "a478fcfa1e5aef4f97d6c2f55123840968963cc4dabe4ecf77d4731f63ee6429",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/terms/vw_roadside_terms.json",
+            "bytes": 51387,
+            "sha256": "61be074e0c8c1245e3454a86187e9a38a660675f0d23100b9d52b83701616779",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/terms/vw_roadside_terms.txt",
+            "bytes": 31666,
+            "sha256": "dcd48e7d8624c7aa32bed16318d638f957f690155717bd793e4d379ac3d092aa",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/terms/vw_transporter.json",
+            "bytes": 44131,
+            "sha256": "e582e7d0f90cccb90be7307c0b2b604f8d557bc2fef6d0a4333681273ef686dd",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/terms/vw_transporter.txt",
+            "bytes": 23011,
+            "sha256": "1416d35f9a922e39d7105185902718e55cb37d92198dc8775b333e97db89acb9",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/terms/vw_warranty.json",
+            "bytes": 29211,
+            "sha256": "5848190235ea1596bad2574fa89773a5bf98d67113dd95c03fe2ae3383794be8",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/terms/vw_warranty.txt",
+            "bytes": 10963,
+            "sha256": "b1c4e00217b14e9ab57127ac502af76aef5e052eb5fe8d18cacd1d83d4445800",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/terms/vw_warranty_terms.json",
+            "bytes": 51904,
+            "sha256": "1d752fe6c8511d230ec284692240a2b06d10aaa9604634e8fa852147a9a8653d",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/terms/vw_warranty_terms.txt",
+            "bytes": 32611,
+            "sha256": "8c1e78647aac4c9b30a9bd0d7c18fe983999ca199fed2c9f50dcb4b49b2bd1fc",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/terms-normalized.json",
+            "bytes": 6839,
+            "sha256": "2b3d026174b9d7e210a725a7576a733e8307054e683570af2239498695d6e6d4",
+            "type": "payload"
+          },
+          {
+            "path": "recovery-metadata/volkswagen-provisional-20261014T073856Z-part01.json",
+            "bytes": 74750,
+            "sha256": "14994c51293e3cb37b126c433672d23acb589288323d7c367dcdfb1f50512988",
+            "type": "metadata"
+          },
+          {
+            "path": "recovery-metadata/volkswagen-provisional-20261014T073856Z-part01-RESTORE.txt",
+            "bytes": 905,
+            "sha256": "66840dfa86d1b02c877f8f45c1ea3f3d6795ded0f1ed58c5a9379bf0ea3de172",
+            "type": "metadata"
+          }
+        ]
+      },
+      {
+        "filename": "Roadmark-recovery-volkswagen-provisional-20261014T073856Z-part02of02.tar.xz",
+        "part": 2,
+        "parts": 2,
+        "bytes": 339196,
+        "sha256": "2d6acaee56041b70e636878e8ebf1f787f9705fd0619e3148ad6e81bd4976b1f",
+        "members": 10,
+        "payloadFiles": 8,
+        "metadataFiles": 2,
+        "allMembers": [
+          {
+            "path": "volkswagen-research/volkswagen-2026-10-14.json",
+            "bytes": 2475446,
+            "sha256": "91d90cd48891812c650ee75d43d7515a2b9fd4901250b204e973e17e9a332f3a",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/volkswagen-effective-facts.json",
+            "bytes": 841019,
+            "sha256": "8e7e495ee7643011746567b4149da2387106c8103828ff165f919633b609c423",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/volkswagen-feature-before.json",
+            "bytes": 249224,
+            "sha256": "f6ed24c93e5c565d1f0b1e3c3ebf2d0f4e3a1d3bd7dcd941477a6c88f27c6547",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/volkswagen-live-before.json",
+            "bytes": 1748618,
+            "sha256": "17d6b2b4b56866b7702fee3ac02a61d0cc6150ea809eb64dd67dd64b7c8c40cf",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/volkswagen-models-before.json",
+            "bytes": 1383,
+            "sha256": "0a087425bf3b22b536f995b43645aa6bb80749bcfe626cc15d482c09abc69c1e",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/volkswagen-reconciliation-2026-10-14.json",
+            "bytes": 14969,
+            "sha256": "a7bc64bc0c5d3be2fbf746dd17b10202a71196c5b64e7adbc67d90cd37884ecc",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/volkswagen-source-before.json",
+            "bytes": 2654444,
+            "sha256": "e8904e94b807c83fd2ff536c18d1f62b11b9c35463b1a2b1e56fbda08e042957",
+            "type": "payload"
+          },
+          {
+            "path": "volkswagen-research/volkswagen-variants-before.json",
+            "bytes": 409983,
+            "sha256": "03d24b6efa84d1e98f2db104467b1de9748de5e14867f85ee5cb74918d57b6ab",
+            "type": "payload"
+          },
+          {
+            "path": "recovery-metadata/volkswagen-provisional-20261014T073856Z-part02.json",
+            "bytes": 4719,
+            "sha256": "673f19cb8a141bf48b05de37e7f6941de57e9791e3b8d1753144b0fe2f007716",
+            "type": "metadata"
+          },
+          {
+            "path": "recovery-metadata/volkswagen-provisional-20261014T073856Z-part02-RESTORE.txt",
+            "bytes": 905,
+            "sha256": "6828334ca919e14714d966b21ad72f00104d2bd75c7a7b11aee75e72e2206bef",
+            "type": "metadata"
+          }
+        ]
+      }
+    ],
+    "files": [
+      {
+        "path": "volkswagen-research/README.md",
+        "bytes": 934,
+        "sha256": "88f3e1b7a4330788b3f8f2dbf40b95b20aa3f2940f87dc4463d454e5806c7f0f",
+        "originalBytes": 934,
+        "originalSHA256": "88f3e1b7a4330788b3f8f2dbf40b95b20aa3f2940f87dc4463d454e5806c7f0f",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/REVIEW.md",
+        "bytes": 9951,
+        "sha256": "7248f88a2b661ad462276aa28788ff35678161c5330bd3a82174230dd121c3d0",
+        "originalBytes": 9951,
+        "originalSHA256": "7248f88a2b661ad462276aa28788ff35678161c5330bd3a82174230dd121c3d0",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/after.json",
+        "bytes": 2515774,
+        "sha256": "c7aedfafbec9b67a499c6cfb993f0bf7c81a505dc5061d60f8fa88d56222f303",
+        "originalBytes": 2515774,
+        "originalSHA256": "c7aedfafbec9b67a499c6cfb993f0bf7c81a505dc5061d60f8fa88d56222f303",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/artifact-hash-manifest.json",
+        "bytes": 6079,
+        "sha256": "33c18441ebfd895d762154e225a782984bcb39d3f7c91e98d9e2d775340457c5",
+        "originalBytes": 6079,
+        "originalSHA256": "33c18441ebfd895d762154e225a782984bcb39d3f7c91e98d9e2d775340457c5",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/brand-model-list-reconciliation.json",
+        "bytes": 194731,
+        "sha256": "53262c863f83a8e1e4ac72757f9ccc6a046c8af7b72973e115ff37813938e599",
+        "originalBytes": 194731,
+        "originalSHA256": "53262c863f83a8e1e4ac72757f9ccc6a046c8af7b72973e115ff37813938e599",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/build-configuration-updates.py",
+        "bytes": 5328,
+        "sha256": "61b7662c2554b60218f84d4cbbbb3eab47c3f9e66126b1ab4e7348882e94dd15",
+        "originalBytes": 5328,
+        "originalSHA256": "61b7662c2554b60218f84d4cbbbb3eab47c3f9e66126b1ab4e7348882e94dd15",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/build-packet.py",
+        "bytes": 13760,
+        "sha256": "43547aaaf2c70c9af5b40bc6bcb9f7a92a26a649ca0fca07e3f606ae57e8579a",
+        "originalBytes": 13760,
+        "originalSHA256": "43547aaaf2c70c9af5b40bc6bcb9f7a92a26a649ca0fca07e3f606ae57e8579a",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/build-reconciliation.py",
+        "bytes": 6480,
+        "sha256": "c287b9e165611b03cb7fccc9aebd36e8e3df723841ca416fb03a3a2fad305949",
+        "originalBytes": 6480,
+        "originalSHA256": "c287b9e165611b03cb7fccc9aebd36e8e3df723841ca416fb03a3a2fad305949",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/capture-before.log",
+        "bytes": 1352,
+        "sha256": "7d064149b247aa361f37bc3398a1813a18abbf2e39b41e61352b72be6967a413",
+        "originalBytes": 1352,
+        "originalSHA256": "7d064149b247aa361f37bc3398a1813a18abbf2e39b41e61352b72be6967a413",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/capture-before.ts",
+        "bytes": 1024,
+        "sha256": "0398737a5e6118ffb1869c4b5230c65588cedce98558b4d605e57c6c2a545f1b",
+        "originalBytes": 1024,
+        "originalSHA256": "0398737a5e6118ffb1869c4b5230c65588cedce98558b4d605e57c6c2a545f1b",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/capture-new-features.exit",
+        "bytes": 2,
+        "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "originalBytes": 2,
+        "originalSHA256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/capture-new-features.log",
+        "bytes": 55,
+        "sha256": "4f31989ce0348971b58e4655b9d55ceefb9d9d14201e1e443002c9d15f567fdf",
+        "originalBytes": 55,
+        "originalSHA256": "4f31989ce0348971b58e4655b9d55ceefb9d9d14201e1e443002c9d15f567fdf",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/capture-new-features.ts",
+        "bytes": 752,
+        "sha256": "97ee13e61735671e11a2c2c524ea7de5ddff72dafdff3028d5f70961d579f967",
+        "originalBytes": 752,
+        "originalSHA256": "97ee13e61735671e11a2c2c524ea7de5ddff72dafdff3028d5f70961d579f967",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/configuration-updates.json",
+        "bytes": 584898,
+        "sha256": "61c86fd0ab6af59d2c7b5b9a33801f2c6807fb2efa52d0c516b694401c7d5323",
+        "originalBytes": 584898,
+        "originalSHA256": "61c86fd0ab6af59d2c7b5b9a33801f2c6807fb2efa52d0c516b694401c7d5323",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/core-matrix.json",
+        "bytes": 336134,
+        "sha256": "3ef386702f649499e510c5e1bf4fe3e217dab6b6fd4783e457ddfe29a1282de1",
+        "originalBytes": 336134,
+        "originalSHA256": "3ef386702f649499e510c5e1bf4fe3e217dab6b6fd4783e457ddfe29a1282de1",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/evidence-completeness-audit.json",
+        "bytes": 131327,
+        "sha256": "865a81a3256d9aa545f214f1428f3092ef1d7784c281dffe172465d1500ef8ab",
+        "originalBytes": 131327,
+        "originalSHA256": "865a81a3256d9aa545f214f1428f3092ef1d7784c281dffe172465d1500ef8ab",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/features-after.json",
+        "bytes": 865735,
+        "sha256": "ec5de13b98019c459c3960b4b4eb50fdee0f8e54c66e104321f1a8899622df46",
+        "originalBytes": 865735,
+        "originalSHA256": "ec5de13b98019c459c3960b4b4eb50fdee0f8e54c66e104321f1a8899622df46",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/final-artifact-check.log",
+        "bytes": 719,
+        "sha256": "650c809386ddc5bf718f1be0198a4fce6e87b6393d4d9f94d543d174e1d16a5c",
+        "originalBytes": 719,
+        "originalSHA256": "650c809386ddc5bf718f1be0198a4fce6e87b6393d4d9f94d543d174e1d16a5c",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/finalize-artifacts.py",
+        "bytes": 6200,
+        "sha256": "39d202693a9d193fa27a367787068b2da0032b85000f8997f0090a4e1f74b913",
+        "originalBytes": 6200,
+        "originalSHA256": "39d202693a9d193fa27a367787068b2da0032b85000f8997f0090a4e1f74b913",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/build_evidence.py",
+        "bytes": 24488,
+        "sha256": "f83dd163cb02772dc7e586ff002e3f94fa994c05f7831e38319de47dd3013e64",
+        "originalBytes": 24488,
+        "originalSHA256": "f83dd163cb02772dc7e586ff002e3f94fa994c05f7831e38319de47dd3013e64",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/capture.py",
+        "bytes": 2003,
+        "sha256": "fe5ee517fb4e6c9f721cad2b7e32516726f523ad2d14815fe658f2ff6028bc87",
+        "originalBytes": 2003,
+        "originalSHA256": "fe5ee517fb4e6c9f721cad2b7e32516726f523ad2d14815fe658f2ff6028bc87",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/carexpert_id5_review26.txt",
+        "bytes": 27688,
+        "sha256": "8c38c1cc07eabbde0da66cba027bff4ea9f7facfead6ec46811f90f06ec7163e",
+        "originalBytes": 27688,
+        "originalSHA256": "8c38c1cc07eabbde0da66cba027bff4ea9f7facfead6ec46811f90f06ec7163e",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/carsales_id4_pro26.txt",
+        "bytes": 11735,
+        "sha256": "b9a56dcebced52f23ea8266e54998e6ea4651477c9eba50f5c51619f27c93772",
+        "originalBytes": 11735,
+        "originalSHA256": "b9a56dcebced52f23ea8266e54998e6ea4651477c9eba50f5c51619f27c93772",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/carsales_id4_pro_review26.txt",
+        "bytes": 20412,
+        "sha256": "b33ecc60a59f5a67e83e26654262447ea6dc31a90daa2bbdf3d3c661b59cae28",
+        "originalBytes": 20412,
+        "originalSHA256": "b33ecc60a59f5a67e83e26654262447ea6dc31a90daa2bbdf3d3c661b59cae28",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/carsales_id5_gtx26.txt",
+        "bytes": 11297,
+        "sha256": "a061211c4fb1a17736faf0661624cf35ff2e37e4ae9561e47060f723eca49017",
+        "originalBytes": 11297,
+        "originalSHA256": "a061211c4fb1a17736faf0661624cf35ff2e37e4ae9561e47060f723eca49017",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/carsales_id5_pro26.txt",
+        "bytes": 11467,
+        "sha256": "423c6cf64e393e3f3316ea9cb0bff72864f947e5510adc646b687fb639303f63",
+        "originalBytes": 11467,
+        "originalSHA256": "423c6cf64e393e3f3316ea9cb0bff72864f947e5510adc646b687fb639303f63",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/carsguide_id4_pro27.txt",
+        "bytes": 12534,
+        "sha256": "6ff28bb908c1f4e57fd2d4e01e1cb63d15af38684b22830c7b7afeccf3961a35",
+        "originalBytes": 12534,
+        "originalSHA256": "6ff28bb908c1f4e57fd2d4e01e1cb63d15af38684b22830c7b7afeccf3961a35",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/carsguide_id5_towing26.txt",
+        "bytes": 8997,
+        "sha256": "6cbfef8fa89eefff3f057594c08e581aa4aa6b74a396551c31f8924a5f88f0da",
+        "originalBytes": 8997,
+        "originalSHA256": "6cbfef8fa89eefff3f057594c08e581aa4aa6b74a396551c31f8924a5f88f0da",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/dealer_id4_gtx25.txt",
+        "bytes": 3905,
+        "sha256": "eab033718bfc1a1a75a3e8e611a0d47e49da46f5dcea4781a27259eee468db43",
+        "originalBytes": 3905,
+        "originalSHA256": "eab033718bfc1a1a75a3e8e611a0d47e49da46f5dcea4781a27259eee468db43",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/dealer_id4_gtx26_alto.txt",
+        "bytes": 21142,
+        "sha256": "d6a91a9eb458c1158810c366a4524bdfe8bbab6760621511a37288c2e4f507b8",
+        "originalBytes": 21142,
+        "originalSHA256": "d6a91a9eb458c1158810c366a4524bdfe8bbab6760621511a37288c2e4f507b8",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/dealer_id4_pro25.txt",
+        "bytes": 21382,
+        "sha256": "8222012eecbc6fbd4f320b94bef66d0cc01766135cb221902873b8578dd44997",
+        "originalBytes": 21382,
+        "originalSHA256": "8222012eecbc6fbd4f320b94bef66d0cc01766135cb221902873b8578dd44997",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/dealer_id4_pro25_sime.txt",
+        "bytes": 19580,
+        "sha256": "fcd8e28fb8223deb54a546004f5c804091dbfddd12c35718e7e2855fb2beeb0d",
+        "originalBytes": 19580,
+        "originalSHA256": "fcd8e28fb8223deb54a546004f5c804091dbfddd12c35718e7e2855fb2beeb0d",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/dealer_id4_pro26.txt",
+        "bytes": 2677,
+        "sha256": "54f7c8b136065b77398a27635171c6d2b7d2ac0c627f6708ed71055be4ee3574",
+        "originalBytes": 2677,
+        "originalSHA256": "54f7c8b136065b77398a27635171c6d2b7d2ac0c627f6708ed71055be4ee3574",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/dealer_id5_pro255.txt",
+        "bytes": 12448,
+        "sha256": "5d389ed4c92142045b78bea625f8367dd4d6531d1157e4f44cc489a55760d9bd",
+        "originalBytes": 12448,
+        "originalSHA256": "5d389ed4c92142045b78bea625f8367dd4d6531d1157e4f44cc489a55760d9bd",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/goauto_id4_my27.txt",
+        "bytes": 13633,
+        "sha256": "fced5f9d50a16cfc5706d02412c9171f8d3178d4ef14096797fe32745dcccd75",
+        "originalBytes": 13633,
+        "originalSHA256": "fced5f9d50a16cfc5706d02412c9171f8d3178d4ef14096797fe32745dcccd75",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/id45_my25_technical_page8.png",
+        "bytes": 559525,
+        "sha256": "2d84e4a66371b7de954af48d0d923b200ed5e078aaa8910acf05def63685ce3e",
+        "originalBytes": 559525,
+        "originalSHA256": "2d84e4a66371b7de954af48d0d923b200ed5e078aaa8910acf05def63685ce3e",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/id45_my25_technical_page9.png",
+        "bytes": 118638,
+        "sha256": "cc996e97cd00e97cab142aa0186c3e74acf0f7a7f6cd013aaaf4ef8fb534b093",
+        "originalBytes": 118638,
+        "originalSHA256": "cc996e97cd00e97cab142aa0186c3e74acf0f7a7f6cd013aaaf4ef8fb534b093",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/id4_my27.pdf",
+        "bytes": 587423,
+        "sha256": "231f3b8148025c480c370628dc6f4e64518918d343973be694b842b62a42d0bc",
+        "originalBytes": 587423,
+        "originalSHA256": "231f3b8148025c480c370628dc6f4e64518918d343973be694b842b62a42d0bc",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/id4_my27_equipment_page5.png",
+        "bytes": 290845,
+        "sha256": "58b24e7df53254ea2e115934230dc8efb301db37b8e18260545b30223ac3f51c",
+        "originalBytes": 290845,
+        "originalSHA256": "58b24e7df53254ea2e115934230dc8efb301db37b8e18260545b30223ac3f51c",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/id4_my27_technical_page9.png",
+        "bytes": 114060,
+        "sha256": "0293d5a45b9c5d40ed9284686f4dcfa4469f39918653b965d0490b629f1832bd",
+        "originalBytes": 114060,
+        "originalSHA256": "0293d5a45b9c5d40ed9284686f4dcfa4469f39918653b965d0490b629f1832bd",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/id4_pro27_epping.txt",
+        "bytes": 16310,
+        "sha256": "581484d6871d354cc41c144c7f895ae4925f701e1c5776f18172813d896dbccf",
+        "originalBytes": 16310,
+        "originalSHA256": "581484d6871d354cc41c144c7f895ae4925f701e1c5776f18172813d896dbccf",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/id5_gtx26_gorell.txt",
+        "bytes": 6401,
+        "sha256": "1d89a171d881dc34f354354c674b09db27c2ba7062a2f755b1f57cbe263197fe",
+        "originalBytes": 6401,
+        "originalSHA256": "1d89a171d881dc34f354354c674b09db27c2ba7062a2f755b1f57cbe263197fe",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/id5_my26_equipment_page5.png",
+        "bytes": 287948,
+        "sha256": "8327074b718f18b0fed0b6a1b21a632e699a779a950ea510e961a2248ce490f2",
+        "originalBytes": 287948,
+        "originalSHA256": "8327074b718f18b0fed0b6a1b21a632e699a779a950ea510e961a2248ce490f2",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/id5_my26_technical_page8.png",
+        "bytes": 108830,
+        "sha256": "e0323d9352eb8ab46cf99d38b931be1f9ec4c6dee452097cd4aa364d23ddaddb",
+        "originalBytes": 108830,
+        "originalSHA256": "e0323d9352eb8ab46cf99d38b931be1f9ec4c6dee452097cd4aa364d23ddaddb",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/maker_config_id4pro.txt",
+        "bytes": 3786,
+        "sha256": "41d42e6262334c4d83dba9e3d803fb6012820a1fc2bd1c2a13d644f09c0b6b4d",
+        "originalBytes": 3786,
+        "originalSHA256": "41d42e6262334c4d83dba9e3d803fb6012820a1fc2bd1c2a13d644f09c0b6b4d",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/redbook_search_cache.json",
+        "bytes": 33504,
+        "sha256": "a2b86c07d36783e125e4074688dac9e4b7024675fdab430d67ce3059a15d8aed",
+        "originalBytes": 33504,
+        "originalSHA256": "a2b86c07d36783e125e4074688dac9e4b7024675fdab430d67ce3059a15d8aed",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/redbook_search_cache.txt",
+        "bytes": 31193,
+        "sha256": "345d99ebaf6a5cb605d524e0c90587d9881ec9dee4a649472c830472d0cb0ddf",
+        "originalBytes": 31193,
+        "originalSHA256": "345d99ebaf6a5cb605d524e0c90587d9881ec9dee4a649472c830472d0cb0ddf",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/stock_id4_gtx27.txt",
+        "bytes": 8219,
+        "sha256": "2243aadeae8924179b1cbed11603e0fe887ad3dfdade3a401d1ff03541b19d1b",
+        "originalBytes": 8219,
+        "originalSHA256": "2243aadeae8924179b1cbed11603e0fe887ad3dfdade3a401d1ff03541b19d1b",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/stock_id5_gtx25.txt",
+        "bytes": 24369,
+        "sha256": "6a6ed514e5ce03a51ebbb0f6eb2b038e23c36841f9a4cb7a21dca7e9e3b3640c",
+        "originalBytes": 24369,
+        "originalSHA256": "6a6ed514e5ce03a51ebbb0f6eb2b038e23c36841f9a4cb7a21dca7e9e3b3640c",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/stock_id5_pro25.txt",
+        "bytes": 9271,
+        "sha256": "e98e42853b1c67e89e8a0c0e762d76f143444706fe2d28e9dd7a0b6f5461bd0b",
+        "originalBytes": 9271,
+        "originalSHA256": "e98e42853b1c67e89e8a0c0e762d76f143444706fe2d28e9dd7a0b6f5461bd0b",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/vw_ev_range.txt",
+        "bytes": 23336,
+        "sha256": "0054f9485980a9a0cf338f5df3cb311255278950a527f508e14516e67e50b720",
+        "originalBytes": 23336,
+        "originalSHA256": "0054f9485980a9a0cf338f5df3cb311255278950a527f508e14516e67e50b720",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/vw_id4.txt",
+        "bytes": 13999,
+        "sha256": "93b239e5543898087aad08ce8f3cdba4f4a787184f946076ae2247a20c3f05ac",
+        "originalBytes": 13999,
+        "originalSHA256": "93b239e5543898087aad08ce8f3cdba4f4a787184f946076ae2247a20c3f05ac",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/vw_id45_my25.pdf",
+        "bytes": 10924235,
+        "sha256": "a94f0e15d0d3eed92c77ba8a52e6e51fafda3201a9be4ad8fb9de151eea81990",
+        "originalBytes": 10924235,
+        "originalSHA256": "a94f0e15d0d3eed92c77ba8a52e6e51fafda3201a9be4ad8fb9de151eea81990",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/vw_id45_my25.txt",
+        "bytes": 46682,
+        "sha256": "f2fa81a72668fa2cdcd4929e829197a6f3c13befce8311c338c270a9b52739c2",
+        "originalBytes": 46682,
+        "originalSHA256": "f2fa81a72668fa2cdcd4929e829197a6f3c13befce8311c338c270a9b52739c2",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/vw_id45_walkthrough.txt",
+        "bytes": 10210,
+        "sha256": "62129c0de18d30e119ca5f399521dba68dbf760007e58d09a27a35973bc022dc",
+        "originalBytes": 10210,
+        "originalSHA256": "62129c0de18d30e119ca5f399521dba68dbf760007e58d09a27a35973bc022dc",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/vw_id4_gtx.txt",
+        "bytes": 14472,
+        "sha256": "e911af68b175b8ac7f9bc644f856c9de92ccb56993bb4bda400ac657c92d55a7",
+        "originalBytes": 14472,
+        "originalSHA256": "e911af68b175b8ac7f9bc644f856c9de92ccb56993bb4bda400ac657c92d55a7",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/vw_id4_my255.pdf",
+        "bytes": 3311759,
+        "sha256": "c6920ef0fd0809e9afca2a0f4bacc9c89a4b7c20a5d13ff3513bee765378c2fc",
+        "originalBytes": 3311759,
+        "originalSHA256": "c6920ef0fd0809e9afca2a0f4bacc9c89a4b7c20a5d13ff3513bee765378c2fc",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/vw_id4_my255.txt",
+        "bytes": 45826,
+        "sha256": "ec1edce52873d69201e8d6040fe7c71ada3bbda1cf635685dbca432f34479a64",
+        "originalBytes": 45826,
+        "originalSHA256": "ec1edce52873d69201e8d6040fe7c71ada3bbda1cf635685dbca432f34479a64",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/vw_id4_my27.pdf",
+        "bytes": 587423,
+        "sha256": "231f3b8148025c480c370628dc6f4e64518918d343973be694b842b62a42d0bc",
+        "originalBytes": 587423,
+        "originalSHA256": "231f3b8148025c480c370628dc6f4e64518918d343973be694b842b62a42d0bc",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/vw_id4_my27.txt",
+        "bytes": 48249,
+        "sha256": "39365ba65cda79820f8ad5cec8efa38c5708c7c13bd8153d15e72e56c4b3156e",
+        "originalBytes": 48249,
+        "originalSHA256": "39365ba65cda79820f8ad5cec8efa38c5708c7c13bd8153d15e72e56c4b3156e",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/vw_id5.txt",
+        "bytes": 14546,
+        "sha256": "75c44a6ee4ecb31538e5455742438eb09a7f4e7ab025c87cf865cd3c57e11d97",
+        "originalBytes": 14546,
+        "originalSHA256": "75c44a6ee4ecb31538e5455742438eb09a7f4e7ab025c87cf865cd3c57e11d97",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/vw_id5_gtx.txt",
+        "bytes": 11574,
+        "sha256": "17857933f9505063ded05db4aa349afacfd5fbbae293d86697999c47fcf9272e",
+        "originalBytes": 11574,
+        "originalSHA256": "17857933f9505063ded05db4aa349afacfd5fbbae293d86697999c47fcf9272e",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/vw_id5_my26.pdf",
+        "bytes": 6837974,
+        "sha256": "d7878274533fe5b6de8d1ad357b1db9c8a33dd55665ad6622e81cf8860888b7e",
+        "originalBytes": 6837974,
+        "originalSHA256": "d7878274533fe5b6de8d1ad357b1db9c8a33dd55665ad6622e81cf8860888b7e",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/vw_id5_my26.txt",
+        "bytes": 45044,
+        "sha256": "ef91bb3ccdf97c849c086262097c7825fc1fb7b9f57df96c722124f14cca492a",
+        "originalBytes": 45044,
+        "originalSHA256": "ef91bb3ccdf97c849c086262097c7825fc1fb7b9f57df96c722124f14cca492a",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/vw_roadside.txt",
+        "bytes": 8893,
+        "sha256": "39e7d598ed9e92e588547f0129989246f05d79dfc57433887b4c54075344e9cd",
+        "originalBytes": 8893,
+        "originalSHA256": "39e7d598ed9e92e588547f0129989246f05d79dfc57433887b4c54075344e9cd",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/vw_warranty.txt",
+        "bytes": 11052,
+        "sha256": "aaa304fcb54960e4266775ec04659020a9fdcc802f6d133fc740b24ae1a65185",
+        "originalBytes": 11052,
+        "originalSHA256": "aaa304fcb54960e4266775ec04659020a9fdcc802f6d133fc740b24ae1a65185",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/captures/vw_warranty_terms.txt",
+        "bytes": 32879,
+        "sha256": "11ff1c7625d7af44e563ced375b96075ea34b3200f0b039a2de5ef5255ab31d4",
+        "originalBytes": 32879,
+        "originalSHA256": "11ff1c7625d7af44e563ced375b96075ea34b3200f0b039a2de5ef5255ab31d4",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/evidence.json",
+        "bytes": 191837,
+        "sha256": "89f098263409cc5753245996f62fb804ea3e74fcba784408e91607d454f31251",
+        "originalBytes": 191837,
+        "originalSHA256": "89f098263409cc5753245996f62fb804ea3e74fcba784408e91607d454f31251",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/finalize.py",
+        "bytes": 3218,
+        "sha256": "44ca817d6030432282615063af31a32231f200a4dd478c64ef0670edb4763ddb",
+        "originalBytes": 3218,
+        "originalSHA256": "44ca817d6030432282615063af31a32231f200a4dd478c64ef0670edb4763ddb",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/normalized-evidence.json",
+        "bytes": 191837,
+        "sha256": "89f098263409cc5753245996f62fb804ea3e74fcba784408e91607d454f31251",
+        "originalBytes": 191837,
+        "originalSHA256": "89f098263409cc5753245996f62fb804ea3e74fcba784408e91607d454f31251",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/queue.json",
+        "bytes": 4935,
+        "sha256": "8dc921b176a34e0c094b7178842260cc0dfbaec7cdbfee0dac3f535b3b973c98",
+        "originalBytes": 4935,
+        "originalSHA256": "8dc921b176a34e0c094b7178842260cc0dfbaec7cdbfee0dac3f535b3b973c98",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/queue2.json",
+        "bytes": 398,
+        "sha256": "922f6eb4775eb68bb16fc2dbe4f836c814f8651715a7dad50d604dc8aa3e5aea",
+        "originalBytes": 398,
+        "originalSHA256": "922f6eb4775eb68bb16fc2dbe4f836c814f8651715a7dad50d604dc8aa3e5aea",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/queue3.json",
+        "bytes": 1626,
+        "sha256": "e26299b1c362d3a67a564de0ad33e78248023d78cd4ee0ea682f84f3d47eb0cb",
+        "originalBytes": 1626,
+        "originalSHA256": "e26299b1c362d3a67a564de0ad33e78248023d78cd4ee0ea682f84f3d47eb0cb",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/queue4.json",
+        "bytes": 1142,
+        "sha256": "ecabfbc105fcf2ffa79141198c904ec1f52d9e9ee5c72fed430ec12abe42d0f6",
+        "originalBytes": 1142,
+        "originalSHA256": "ecabfbc105fcf2ffa79141198c904ec1f52d9e9ee5c72fed430ec12abe42d0f6",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/queue5.json",
+        "bytes": 402,
+        "sha256": "11b3296bf2753f20049c8fa8faf30366037e9d325296e5cc2d6dafafa9f0144c",
+        "originalBytes": 402,
+        "originalSHA256": "11b3296bf2753f20049c8fa8faf30366037e9d325296e5cc2d6dafafa9f0144c",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/redactions.json",
+        "bytes": 11288,
+        "sha256": "931a5f3034343127aedcc9ecf386ea5688ef06f4013f149c51b07c7969a97130",
+        "originalBytes": 11288,
+        "originalSHA256": "931a5f3034343127aedcc9ecf386ea5688ef06f4013f149c51b07c7969a97130",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/report.md",
+        "bytes": 7707,
+        "sha256": "3de46eef5673cbaf04413e633c8de2bef827febb5ced31ae289f13946f8f2595",
+        "originalBytes": 7707,
+        "originalSHA256": "3de46eef5673cbaf04413e633c8de2bef827febb5ced31ae289f13946f8f2595",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/source-index.json",
+        "bytes": 34593,
+        "sha256": "53f799c220b6275e9b6a5756c7000a7cd0eff038ccdac233bb32aed8c083c8eb",
+        "originalBytes": 34593,
+        "originalSHA256": "53f799c220b6275e9b6a5756c7000a7cd0eff038ccdac233bb32aed8c083c8eb",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/sources1.json",
+        "bytes": 15353,
+        "sha256": "51ac8c540113870fac4b6ed0ae6d4b309933a8e52ccfffdd5d0d4f0a69b91942",
+        "originalBytes": 15353,
+        "originalSHA256": "51ac8c540113870fac4b6ed0ae6d4b309933a8e52ccfffdd5d0d4f0a69b91942",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/sources2.json",
+        "bytes": 2169,
+        "sha256": "0bbcc27030529ba212ac1116a7cf69d290443f8ffa7b9b8fa5fe80938db2edb7",
+        "originalBytes": 2169,
+        "originalSHA256": "0bbcc27030529ba212ac1116a7cf69d290443f8ffa7b9b8fa5fe80938db2edb7",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/sources3.json",
+        "bytes": 5978,
+        "sha256": "4dac8e33b5d191f7a447ddea383084596c035d10ea42cd69403641ffde91424d",
+        "originalBytes": 5978,
+        "originalSHA256": "4dac8e33b5d191f7a447ddea383084596c035d10ea42cd69403641ffde91424d",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/sources4.json",
+        "bytes": 2202,
+        "sha256": "e23ad7844bb9cc79e1275c50c851078ed10afc0e0b3edaced0966d26acf04db7",
+        "originalBytes": 2202,
+        "originalSHA256": "e23ad7844bb9cc79e1275c50c851078ed10afc0e0b3edaced0966d26acf04db7",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/sources5.json",
+        "bytes": 1120,
+        "sha256": "3f586df61aa75dddcc12dd7053acbaa9611e7e30600d90ae340eea59a4b5158c",
+        "originalBytes": 1120,
+        "originalSHA256": "3f586df61aa75dddcc12dd7053acbaa9611e7e30600d90ae340eea59a4b5158c",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/sources6.json",
+        "bytes": 741,
+        "sha256": "e8f578f8faf71e9387156f333c019f2736ad3ed5c273456980f25e261513260f",
+        "originalBytes": 741,
+        "originalSHA256": "e8f578f8faf71e9387156f333c019f2736ad3ed5c273456980f25e261513260f",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/sources7.json",
+        "bytes": 851,
+        "sha256": "c4cb0ef9493338834355f8b03140aa87c788e9f3808bd8b469022e53550b0ff2",
+        "originalBytes": 851,
+        "originalSHA256": "c4cb0ef9493338834355f8b03140aa87c788e9f3808bd8b469022e53550b0ff2",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/id45/validation.json",
+        "bytes": 923,
+        "sha256": "019a0f07b9d91407f6b044ff5faf7b8f5b15d1022ef1e68e47e3c4529826b6de",
+        "originalBytes": 923,
+        "originalSHA256": "019a0f07b9d91407f6b044ff5faf7b8f5b15d1022ef1e68e47e3c4529826b6de",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/batch1.json",
+        "bytes": 876,
+        "sha256": "69931a3fd5e432e8b553ab673b8be99edd21c5ee843ed85c7b1e97332d859262",
+        "originalBytes": 876,
+        "originalSHA256": "69931a3fd5e432e8b553ab673b8be99edd21c5ee843ed85c7b1e97332d859262",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/batch2.json",
+        "bytes": 1185,
+        "sha256": "b7e32275e05c4ab4109c195c248d3628e5c12880514da1e45d6c65549afd2b7b",
+        "originalBytes": 1185,
+        "originalSHA256": "b7e32275e05c4ab4109c195c248d3628e5c12880514da1e45d6c65549afd2b7b",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/batch3.json",
+        "bytes": 1463,
+        "sha256": "b407a2f135e5bf72afd28ea78074217245f2476eb57c3cdf51b4c3682bbd2036",
+        "originalBytes": 1463,
+        "originalSHA256": "b407a2f135e5bf72afd28ea78074217245f2476eb57c3cdf51b4c3682bbd2036",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/batch4.json",
+        "bytes": 3717,
+        "sha256": "29f40aa3272b4d23bd782a463c5e0c4983f9006a9add857b46275c37e6f98c57",
+        "originalBytes": 3717,
+        "originalSHA256": "29f40aa3272b4d23bd782a463c5e0c4983f9006a9add857b46275c37e6f98c57",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/batch5.json",
+        "bytes": 484,
+        "sha256": "b60c5d7f88915256c1359ac1fd513950eef6b810aa7508dff56fdd2df91e8aac",
+        "originalBytes": 484,
+        "originalSHA256": "b60c5d7f88915256c1359ac1fd513950eef6b810aa7508dff56fdd2df91e8aac",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/batch6.json",
+        "bytes": 479,
+        "sha256": "36d7f264cd9ae539f74cb0e624749ac5755afe4c847d395e4ef63bd1fe5d1352",
+        "originalBytes": 479,
+        "originalSHA256": "36d7f264cd9ae539f74cb0e624749ac5755afe4c847d395e4ef63bd1fe5d1352",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/build_evidence.py",
+        "bytes": 23355,
+        "sha256": "fa03fd5e390a97082ae8c798f2d5ee567b32763fa9dceb9cf401273b85846fdd",
+        "originalBytes": 23355,
+        "originalSHA256": "fa03fd5e390a97082ae8c798f2d5ee567b32763fa9dceb9cf401273b85846fdd",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/capture.py",
+        "bytes": 2789,
+        "sha256": "a6654bdab0a2ce5a937b02fd9b511186489d1d9e9e37da76f71621a60f544fdf",
+        "originalBytes": 2789,
+        "originalSHA256": "a6654bdab0a2ce5a937b02fd9b511186489d1d9e9e37da76f71621a60f544fdf",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/captures/alto_all.txt",
+        "bytes": 1373714,
+        "sha256": "e0545d2c5a31b2441129ba391e2f71195fe61463a931949d1e1c60bb0f08afdf",
+        "originalBytes": 1373714,
+        "originalSHA256": "e0545d2c5a31b2441129ba391e2f71195fe61463a931949d1e1c60bb0f08afdf",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/captures/alto_current_identity_web.json",
+        "bytes": 729,
+        "sha256": "f66e4a1af6309057df430851c1ca386e5562cd0b2d6facca7024fea009f7c36a",
+        "originalBytes": 729,
+        "originalSHA256": "f66e4a1af6309057df430851c1ca386e5562cd0b2d6facca7024fea009f7c36a",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/captures/alto_lwb25.txt",
+        "bytes": 25472,
+        "sha256": "c9962b496836e1c49724564b82b95111174f952bdc5b484eb12f196d4cf77580",
+        "originalBytes": 25472,
+        "originalSHA256": "c9962b496836e1c49724564b82b95111174f952bdc5b484eb12f196d4cf77580",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/captures/alto_lwb_26198029.txt",
+        "bytes": 18469,
+        "sha256": "cdad3deab503899a92dc865c127193e5911bfc037446ed7ee32c4bc3a1c258e6",
+        "originalBytes": 18469,
+        "originalSHA256": "cdad3deab503899a92dc865c127193e5911bfc037446ed7ee32c4bc3a1c258e6",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/captures/alto_lwb_26265754.txt",
+        "bytes": 18500,
+        "sha256": "ccd806958e428f7e61a29be19076af2304de4840d369b7d9a788051f4ec55dd4",
+        "originalBytes": 18500,
+        "originalSHA256": "ccd806958e428f7e61a29be19076af2304de4840d369b7d9a788051f4ec55dd4",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/captures/carexpert_pro_max_ac.txt",
+        "bytes": 37350,
+        "sha256": "7b341e8f8514072ad3aac0411ffc956d05b732d1c9feb1f06248fe2ba5628d55",
+        "originalBytes": 37350,
+        "originalSHA256": "7b341e8f8514072ad3aac0411ffc956d05b732d1c9feb1f06248fe2ba5628d55",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/captures/carexpert_pro_max_ac_web.txt",
+        "bytes": 284,
+        "sha256": "a23c055f4d3c8d4516c235b5e11f57c18bc193f07975ffbbd9bbd11405de74ca",
+        "originalBytes": 284,
+        "originalSHA256": "a23c055f4d3c8d4516c235b5e11f57c18bc193f07975ffbbd9bbd11405de74ca",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/captures/carsales_gtx25.txt",
+        "bytes": 20471,
+        "sha256": "2e4247dd92d9773786b23be95d7b086b3a86e5eea5c372ad05ed2bd12914d0dc",
+        "originalBytes": 20471,
+        "originalSHA256": "2e4247dd92d9773786b23be95d7b086b3a86e5eea5c372ad05ed2bd12914d0dc",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/captures/carsales_my27_launch.txt",
+        "bytes": 22534,
+        "sha256": "05e37b466ae1e715e14186c69f431f13fdedefa67df7941780b344c428994a52",
+        "originalBytes": 22534,
+        "originalSHA256": "05e37b466ae1e715e14186c69f431f13fdedefa67df7941780b344c428994a52",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/captures/carsales_plus27.txt",
+        "bytes": 20654,
+        "sha256": "fdeb4f855ba7f5153c16702774bc0943db31e07ad7c933100a1c5b1511e61786",
+        "originalBytes": 20654,
+        "originalSHA256": "fdeb4f855ba7f5153c16702774bc0943db31e07ad7c933100a1c5b1511e61786",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/captures/carsales_plus_swb27.txt",
+        "bytes": 20713,
+        "sha256": "17f3f516264b38f8c2935ea744ffede8153ad1f566eeab45c26ef39be9a6b992",
+        "originalBytes": 20713,
+        "originalSHA256": "17f3f516264b38f8c2935ea744ffede8153ad1f566eeab45c26ef39be9a6b992",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/captures/carsales_swb26.txt",
+        "bytes": 21420,
+        "sha256": "b3f33472238d190f4972de300a73d772a2402599bc56ca3964b25fcf56226b6c",
+        "originalBytes": 21420,
+        "originalSHA256": "b3f33472238d190f4972de300a73d772a2402599bc56ca3964b25fcf56226b6c",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/captures/drivingenthusiast_gtx_ac_web.txt",
+        "bytes": 282,
+        "sha256": "bc7237b6187f2ff197d0d0fda60814bf2905286d09ad132376982aa9c45a1804",
+        "originalBytes": 282,
+        "originalSHA256": "bc7237b6187f2ff197d0d0fda60814bf2905286d09ad132376982aa9c45a1804",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/captures/goauto_my27_launch.txt",
+        "bytes": 20176,
+        "sha256": "5747aed4518f8739d3038bc712ac075ceb3ef5a69478593bd2d27170005c49e8",
+        "originalBytes": 20176,
+        "originalSHA256": "5747aed4518f8739d3038bc712ac075ceb3ef5a69478593bd2d27170005c49e8",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/captures/gorell_lwb26.txt",
+        "bytes": 14011,
+        "sha256": "63243be343feac49f29cd3614176d92be2eb3b1e538ad23707958b6cda393d30",
+        "originalBytes": 14011,
+        "originalSHA256": "63243be343feac49f29cd3614176d92be2eb3b1e538ad23707958b6cda393d30",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/captures/gorell_swb26.txt",
+        "bytes": 13949,
+        "sha256": "ee6d92d0bc1675f1678d57db66a1bf6b3c549751ae33270391367bbee268a889",
+        "originalBytes": 13949,
+        "originalSHA256": "ee6d92d0bc1675f1678d57db66a1bf6b3c549751ae33270391367bbee268a889",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/captures/macgregor_buzz_stock.txt",
+        "bytes": 26863,
+        "sha256": "62093ec8433989b834c78682aeda6ee23dbe536d633a1d7add0494e7f2005e84",
+        "originalBytes": 26863,
+        "originalSHA256": "62093ec8433989b834c78682aeda6ee23dbe536d633a1d7add0494e7f2005e84",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/captures/macgregor_gtx25.txt",
+        "bytes": 18611,
+        "sha256": "2ab2006357ddeac8ad058069afc7a78db0cc703d8be075b595d37d763cc35981",
+        "originalBytes": 18611,
+        "originalSHA256": "2ab2006357ddeac8ad058069afc7a78db0cc703d8be075b595d37d763cc35981",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/captures/maker_my26_gtx_prior.txt",
+        "bytes": 10985,
+        "sha256": "7356036a3db522dac5f1d3f3150875bd7abd1d6c45c3131d3b839a7358ce8ed7",
+        "originalBytes": 10985,
+        "originalSHA256": "7356036a3db522dac5f1d3f3150875bd7abd1d6c45c3131d3b839a7358ce8ed7",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/captures/maker_my26_lwb_prior.txt",
+        "bytes": 10384,
+        "sha256": "c132a9cef53c1786368b140fd462b08052c131690e6b1a58a2d61e9a85f78c43",
+        "originalBytes": 10384,
+        "originalSHA256": "c132a9cef53c1786368b140fd462b08052c131690e6b1a58a2d61e9a85f78c43",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/captures/maker_my26_swb_prior.txt",
+        "bytes": 10335,
+        "sha256": "8c6e9e4e9035ab10d79e027223ddb5c0f543337a0f2f28270e68837c71a8f0f5",
+        "originalBytes": 10335,
+        "originalSHA256": "8c6e9e4e9035ab10d79e027223ddb5c0f543337a0f2f28270e68837c71a8f0f5",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/captures/my27_search_gap.txt",
+        "bytes": 469,
+        "sha256": "62ebc149990863b84d01ddb5926cfb2b60bb202e0d5658de65f6ee3309f88ede",
+        "originalBytes": 469,
+        "originalSHA256": "62ebc149990863b84d01ddb5926cfb2b60bb202e0d5658de65f6ee3309f88ede",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/captures/redbook_gtx26_cache.txt",
+        "bytes": 190,
+        "sha256": "6c996e7044148eb64dc32388265994dfb6165f48c72cae97b10bf3b91542068b",
+        "originalBytes": 190,
+        "originalSHA256": "6c996e7044148eb64dc32388265994dfb6165f48c72cae97b10bf3b91542068b",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/captures/redbook_my27_search.json",
+        "bytes": 31546,
+        "sha256": "242d4512b304cbf165bb07617451c626cbd1541c4bd793046fefaac462f4aff1",
+        "originalBytes": 31546,
+        "originalSHA256": "242d4512b304cbf165bb07617451c626cbd1541c4bd793046fefaac462f4aff1",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/captures/residual_late_search_notes.txt",
+        "bytes": 1142,
+        "sha256": "196efe7aaaee54a9a652754360cd0475e9e0406015a56b050fa4676fddee5d39",
+        "originalBytes": 1142,
+        "originalSHA256": "196efe7aaaee54a9a652754360cd0475e9e0406015a56b050fa4676fddee5d39",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/captures/residual_search_log.txt",
+        "bytes": 672,
+        "sha256": "344b9b6a8c19cc47c3a0205ce0f5d0e414ca2831634018c2f95db32664a0c2ee",
+        "originalBytes": 672,
+        "originalSHA256": "344b9b6a8c19cc47c3a0205ce0f5d0e414ca2831634018c2f95db32664a0c2ee",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/captures/vga_newsroom.txt",
+        "bytes": 3881,
+        "sha256": "1e58783cfaca1b26e25a646829d3fd58c1b9b97783e57f39aff4c6eab919d9e9",
+        "originalBytes": 3881,
+        "originalSHA256": "1e58783cfaca1b26e25a646829d3fd58c1b9b97783e57f39aff4c6eab919d9e9",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/captures/vw_buzz_configurator.txt",
+        "bytes": 11488,
+        "sha256": "33d720bd41df4c27adf706604f97e8dbadaa2f3c7c9dcda610116ba736651e1f",
+        "originalBytes": 11488,
+        "originalSHA256": "33d720bd41df4c27adf706604f97e8dbadaa2f3c7c9dcda610116ba736651e1f",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/captures/vw_buzz_my25_pdf.pdf",
+        "bytes": 3546258,
+        "sha256": "23e2b3eb08b85353b3b5df53eac6a52b1e5fbdc8be671ffc13c0f5814606510b",
+        "originalBytes": 3546258,
+        "originalSHA256": "23e2b3eb08b85353b3b5df53eac6a52b1e5fbdc8be671ffc13c0f5814606510b",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/captures/vw_buzz_my25_pdf.txt",
+        "bytes": 54913,
+        "sha256": "0f94684f1bb7f9b97294659d372da3f5f51e5c923b4f54f2b2cef580a215419d",
+        "originalBytes": 54913,
+        "originalSHA256": "0f94684f1bb7f9b97294659d372da3f5f51e5c923b4f54f2b2cef580a215419d",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/captures/vw_buzz_page.txt",
+        "bytes": 30520,
+        "sha256": "d59912764407261f346ce25f189ea019edeec83824769fd59e5984b3cdbe54e7",
+        "originalBytes": 30520,
+        "originalSHA256": "d59912764407261f346ce25f189ea019edeec83824769fd59e5984b3cdbe54e7",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/captures/vw_model_launches.txt",
+        "bytes": 14781,
+        "sha256": "8ba189b8ebe3b673bcc9408682994483e7cb22f585a71d8ef304c1480612f492",
+        "originalBytes": 14781,
+        "originalSHA256": "8ba189b8ebe3b673bcc9408682994483e7cb22f585a71d8ef304c1480612f492",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/captures/wakeling_gtx26.txt",
+        "bytes": 28063,
+        "sha256": "e18e881eed40ea500f00ee616bd3006a8cd90d3fd4cfca95f4b169b3d5557060",
+        "originalBytes": 28063,
+        "originalSHA256": "e18e881eed40ea500f00ee616bd3006a8cd90d3fd4cfca95f4b169b3d5557060",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/captures/wakeling_swb25.txt",
+        "bytes": 34048,
+        "sha256": "4ed469aacf85f9da2b379937dd45c67a4bc0442af7a35c422728188419424c9a",
+        "originalBytes": 34048,
+        "originalSHA256": "4ed469aacf85f9da2b379937dd45c67a4bc0442af7a35c422728188419424c9a",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/evidence.json",
+        "bytes": 293668,
+        "sha256": "061be904ba18f1ae17f76fe465504138f184962c3ee844959c4407a6b2143d05",
+        "originalBytes": 293668,
+        "originalSHA256": "061be904ba18f1ae17f76fe465504138f184962c3ee844959c4407a6b2143d05",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/finalize_evidence.py",
+        "bytes": 11777,
+        "sha256": "d0ada4361db7b3d4bc85153930e897b9744ceb7d8aa0bd18b2188dbf3c01ea1a",
+        "originalBytes": 11777,
+        "originalSHA256": "d0ada4361db7b3d4bc85153930e897b9744ceb7d8aa0bd18b2188dbf3c01ea1a",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/manifest-sha256.json",
+        "bytes": 7676,
+        "sha256": "ea3c632b82bae4e843cf4a8329285f1e8a35c0dd0325b9876c26f9f0f97caab4",
+        "originalBytes": 7676,
+        "originalSHA256": "ea3c632b82bae4e843cf4a8329285f1e8a35c0dd0325b9876c26f9f0f97caab4",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/normalized-evidence.json",
+        "bytes": 293668,
+        "sha256": "061be904ba18f1ae17f76fe465504138f184962c3ee844959c4407a6b2143d05",
+        "originalBytes": 293668,
+        "originalSHA256": "061be904ba18f1ae17f76fe465504138f184962c3ee844959c4407a6b2143d05",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/redaction-log.json",
+        "bytes": 33098,
+        "sha256": "c49c2fbadbe44cb7c57bd20c45014c81129f09eef9fac9b9b7eadc9bedad8fc5",
+        "originalBytes": 33098,
+        "originalSHA256": "c49c2fbadbe44cb7c57bd20c45014c81129f09eef9fac9b9b7eadc9bedad8fc5",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/report.md",
+        "bytes": 13498,
+        "sha256": "a9ab676bf4f168e051ee0fc9f89d88e19583eb862abb8c65480cb5fe62c0914d",
+        "originalBytes": 13498,
+        "originalSHA256": "a9ab676bf4f168e051ee0fc9f89d88e19583eb862abb8c65480cb5fe62c0914d",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/retained/admitted-assertion-supplement.json",
+        "bytes": 181986,
+        "sha256": "5ba6473a99985b78200cb3844aa05a3ad4732e9c3c315e936dffa1412be17d3a",
+        "originalBytes": 181986,
+        "originalSHA256": "5ba6473a99985b78200cb3844aa05a3ad4732e9c3c315e936dffa1412be17d3a",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/retained/build_supplement.py",
+        "bytes": 9251,
+        "sha256": "2fc202fa0d05d5ac9b32aed14fcf2872e44722b592e91baf2e7792235d1f1d89",
+        "originalBytes": 9251,
+        "originalSHA256": "2fc202fa0d05d5ac9b32aed14fcf2872e44722b592e91baf2e7792235d1f1d89",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/retained/manifest-sha256.json",
+        "bytes": 1991,
+        "sha256": "21296ab0a4dc9cfca02b21f2bd6f18e3a9e90d27e9431f20fa8cf8450577477f",
+        "originalBytes": 1991,
+        "originalSHA256": "21296ab0a4dc9cfca02b21f2bd6f18e3a9e90d27e9431f20fa8cf8450577477f",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/retained/r10_vw26_buzz26_gtx_equipment-admitted-excerpts.json",
+        "bytes": 49373,
+        "sha256": "ac6a700c1271860e714d4bf2332a7b88eb9f140dd346c9dc9aa154a371ba8fce",
+        "originalBytes": 49373,
+        "originalSHA256": "ac6a700c1271860e714d4bf2332a7b88eb9f140dd346c9dc9aa154a371ba8fce",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/retained/r10_vw26_buzz26_lwb_engine-admitted-excerpts.json",
+        "bytes": 7913,
+        "sha256": "c998bdec2473a6a937db4e6b703d8dbe2fe2a975a25a6eb83d6df2e5d1494b77",
+        "originalBytes": 7913,
+        "originalSHA256": "c998bdec2473a6a937db4e6b703d8dbe2fe2a975a25a6eb83d6df2e5d1494b77",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/retained/r10_vw26_buzz26_lwb_equipment-admitted-excerpts.json",
+        "bytes": 44425,
+        "sha256": "c4583018cb3d610e437d4bfff1870f29d3dee1831c66eeade19c5a60a9e239fd",
+        "originalBytes": 44425,
+        "originalSHA256": "c4583018cb3d610e437d4bfff1870f29d3dee1831c66eeade19c5a60a9e239fd",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/retained/r10_vw26_buzz26_lwb_options-admitted-excerpts.json",
+        "bytes": 8960,
+        "sha256": "8d74fb5e7aa2ba82a808005553a45185e80a4b8cce8866a2aece6b3b544e4068",
+        "originalBytes": 8960,
+        "originalSHA256": "8d74fb5e7aa2ba82a808005553a45185e80a4b8cce8866a2aece6b3b544e4068",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/retained/r10_vw26_buzz26_pro_engine-admitted-excerpts.json",
+        "bytes": 7726,
+        "sha256": "a613a0dcc7cf14845ee3327a82050fcbac0e55f2dac61b1d4fef5f437d13ac04",
+        "originalBytes": 7726,
+        "originalSHA256": "a613a0dcc7cf14845ee3327a82050fcbac0e55f2dac61b1d4fef5f437d13ac04",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/retained/r10_vw26_buzz26_swb_equipment-admitted-excerpts.json",
+        "bytes": 46453,
+        "sha256": "018596d8b9a4dc5647c6a8ebb560747d513d6dbd334d004882843df273621e47",
+        "originalBytes": 46453,
+        "originalSHA256": "018596d8b9a4dc5647c6a8ebb560747d513d6dbd334d004882843df273621e47",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/retained/r10_vw26_buzz26_swb_options-admitted-excerpts.json",
+        "bytes": 8960,
+        "sha256": "24e35e4d9276e3a03385cd70a433cc46bb75a3916d755ecd1583b2197364ef5e",
+        "originalBytes": 8960,
+        "originalSHA256": "24e35e4d9276e3a03385cd70a433cc46bb75a3916d755ecd1583b2197364ef5e",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/retained/r10_vw26_buzz_gtx_engine-admitted-excerpts.json",
+        "bytes": 7885,
+        "sha256": "8ef362e0cbe488a439cc48ac64aca847b4a0e845a0054de27eb467aa1ac0c43c",
+        "originalBytes": 7885,
+        "originalSHA256": "8ef362e0cbe488a439cc48ac64aca847b4a0e845a0054de27eb467aa1ac0c43c",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/retained/recovery-search.json",
+        "bytes": 589,
+        "sha256": "832f7b408b8758f427a006fa6b3be3c05a4322a79488ad5219c72f0ff98e6a6a",
+        "originalBytes": 589,
+        "originalSHA256": "832f7b408b8758f427a006fa6b3be3c05a4322a79488ad5219c72f0ff98e6a6a",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/retained/report.md",
+        "bytes": 12604,
+        "sha256": "3f6d96231596357226d3326fd4472a8a2a730a6d7828fad9fbe8ef7c927471ee",
+        "originalBytes": 12604,
+        "originalSHA256": "3f6d96231596357226d3326fd4472a8a2a730a6d7828fad9fbe8ef7c927471ee",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/source-index.json",
+        "bytes": 84659,
+        "sha256": "dbbabdf119e006f03721695ca7c8ca6f4d4f776a4dca62b8af3bf19f68856f17",
+        "originalBytes": 84659,
+        "originalSHA256": "dbbabdf119e006f03721695ca7c8ca6f4d4f776a4dca62b8af3bf19f68856f17",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/sources.json",
+        "bytes": 55881,
+        "sha256": "f4544d4e4dda66644f76b065a43dba47f9d8bb84b6cd02a25dcfc29459d764d5",
+        "originalBytes": 55881,
+        "originalSHA256": "f4544d4e4dda66644f76b065a43dba47f9d8bb84b6cd02a25dcfc29459d764d5",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/validation.json",
+        "bytes": 722,
+        "sha256": "17a99a833e30acc7e4789b28360ed9f4df2c47a1a5e302179c7eb00a7b02566c",
+        "originalBytes": 722,
+        "originalSHA256": "17a99a833e30acc7e4789b28360ed9f4df2c47a1a5e302179c7eb00a7b02566c",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/idbuzz/write_report.py",
+        "bytes": 12694,
+        "sha256": "5b5aafc8d0585ff3e7e0d85d691adc971d0e60e4a61dc4394950fc0ff56134d8",
+        "originalBytes": 12694,
+        "originalSHA256": "5b5aafc8d0585ff3e7e0d85d691adc971d0e60e4a61dc4394950fc0ff56134d8",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/immutable-data-before.json",
+        "bytes": 10250,
+        "sha256": "d5b84902d54f71aecb09682df60a4735e88e9cec999a2aec87b0e110af54ba33",
+        "originalBytes": 10250,
+        "originalSHA256": "d5b84902d54f71aecb09682df60a4735e88e9cec999a2aec87b0e110af54ba33",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/integration-readiness.json",
+        "bytes": 1796,
+        "sha256": "80380f1d09a084c009dceef3437498cb8139bc8f94b54e13717c877cbef073ed",
+        "originalBytes": 1796,
+        "originalSHA256": "80380f1d09a084c009dceef3437498cb8139bc8f94b54e13717c877cbef073ed",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/merge-evidence.py",
+        "bytes": 10062,
+        "sha256": "00567900e27abda740064625388ed0be7baf38a2c45874fe1a0bf7d9f89a52a4",
+        "originalBytes": 10062,
+        "originalSHA256": "00567900e27abda740064625388ed0be7baf38a2c45874fe1a0bf7d9f89a52a4",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/new-feature-before.json",
+        "bytes": 394515,
+        "sha256": "5263c8a87db8184dae66cd9f6e8b914eb762f7207a39c7181ac0ae7ae38f8023",
+        "originalBytes": 394515,
+        "originalSHA256": "5263c8a87db8184dae66cd9f6e8b914eb762f7207a39c7181ac0ae7ae38f8023",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/normalized-evidence.json",
+        "bytes": 849514,
+        "sha256": "9577ed8dcf0a844386b36baaac6ae3c40bca90a9789df7e69b95ed03e8b56c05",
+        "originalBytes": 849514,
+        "originalSHA256": "9577ed8dcf0a844386b36baaac6ae3c40bca90a9789df7e69b95ed03e8b56c05",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/redaction-audit.json",
+        "bytes": 579,
+        "sha256": "3523aaac93deb6443807214678330e357239584a55b4495806f4def3c9a4a428",
+        "originalBytes": 579,
+        "originalSHA256": "3523aaac93deb6443807214678330e357239584a55b4495806f4def3c9a4a428",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/review-amendments.json",
+        "bytes": 2237,
+        "sha256": "c04fc32e8899e77f2db7a750a8f5a2cf47a7dd042a91ee89ca0d7ce9d40bf078",
+        "originalBytes": 2237,
+        "originalSHA256": "c04fc32e8899e77f2db7a750a8f5a2cf47a7dd042a91ee89ca0d7ce9d40bf078",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/source-hash-manifest.json",
+        "bytes": 28952,
+        "sha256": "4222c764b72595cf7391c491392405e1a7632fe57fff62b0d8f59edec6a359b7",
+        "originalBytes": 28952,
+        "originalSHA256": "4222c764b72595cf7391c491392405e1a7632fe57fff62b0d8f59edec6a359b7",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/source-index.json",
+        "bytes": 150040,
+        "sha256": "ee55dee5b1cc3890a4c21a0d2f9a76f4408bf4951c0670079d2eb7637b32acbd",
+        "originalBytes": 150040,
+        "originalSHA256": "ee55dee5b1cc3890a4c21a0d2f9a76f4408bf4951c0670079d2eb7637b32acbd",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/stage-before-citation-fix.log",
+        "bytes": 23941,
+        "sha256": "01cdf9c425fe80afc970b948457a60d6e6616b54805ea3bef9d9d763618ca2c5",
+        "originalBytes": 23941,
+        "originalSHA256": "01cdf9c425fe80afc970b948457a60d6e6616b54805ea3bef9d9d763618ca2c5",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/stage-validation.exit",
+        "bytes": 2,
+        "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "originalBytes": 2,
+        "originalSHA256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/stage-validation.log",
+        "bytes": 23941,
+        "sha256": "01cdf9c425fe80afc970b948457a60d6e6616b54805ea3bef9d9d763618ca2c5",
+        "originalBytes": 23941,
+        "originalSHA256": "01cdf9c425fe80afc970b948457a60d6e6616b54805ea3bef9d9d763618ca2c5",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/staged-packs.json",
+        "bytes": 3896139,
+        "sha256": "98592faa0a8733de4d252e069e53eaa46eb7e71464f4b6385cf13ce974da3247",
+        "originalBytes": 3896139,
+        "originalSHA256": "98592faa0a8733de4d252e069e53eaa46eb7e71464f4b6385cf13ce974da3247",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/staged-report.json",
+        "bytes": 1575994,
+        "sha256": "4241a2061d1b026ec7ff5c38fc33a34b6a74c9c225978c74d23ce3a93d6744fc",
+        "originalBytes": 1575994,
+        "originalSHA256": "4241a2061d1b026ec7ff5c38fc33a34b6a74c9c225978c74d23ce3a93d6744fc",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/terms-normalized.json",
+        "bytes": 6839,
+        "sha256": "2b3d026174b9d7e210a725a7576a733e8307054e683570af2239498695d6e6d4",
+        "originalBytes": 6839,
+        "originalSHA256": "2b3d026174b9d7e210a725a7576a733e8307054e683570af2239498695d6e6d4",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/terms/SHA256SUMS.txt",
+        "bytes": 3449,
+        "sha256": "a4ef3d58ba5518aae566ba5dbad76ca2838a793d1c7aaa166ed214e7e82fe875",
+        "originalBytes": 3449,
+        "originalSHA256": "a4ef3d58ba5518aae566ba5dbad76ca2838a793d1c7aaa166ed214e7e82fe875",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/terms/brand-model-list-reconciliation.json",
+        "bytes": 59450,
+        "sha256": "fe2ab686786d543e5d5dbff9b869da0ff7ab9a761c8046acb6527e57a2b5b020",
+        "originalBytes": 59450,
+        "originalSHA256": "fe2ab686786d543e5d5dbff9b869da0ff7ab9a761c8046acb6527e57a2b5b020",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/terms/build_facts.py",
+        "bytes": 16854,
+        "sha256": "ad016508f85ed236a2467a14013687ce184648cae6633c98efef9cd7fffbe8a8",
+        "originalBytes": 16854,
+        "originalSHA256": "ad016508f85ed236a2467a14013687ce184648cae6633c98efef9cd7fffbe8a8",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/terms/capture_sources.py",
+        "bytes": 4993,
+        "sha256": "e34c4340840d6b18243b735ffddf955e24ea30f5feedffdb94b0cfcc8aa08918",
+        "originalBytes": 4993,
+        "originalSHA256": "e34c4340840d6b18243b735ffddf955e24ea30f5feedffdb94b0cfcc8aa08918",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/terms/carexpert_id3.json",
+        "bytes": 18686,
+        "sha256": "cd4ba0586dfc0686bef92cec55c1bbd39249a3540025a4cc37550b66505b1fef",
+        "originalBytes": 18686,
+        "originalSHA256": "cd4ba0586dfc0686bef92cec55c1bbd39249a3540025a4cc37550b66505b1fef",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/terms/carexpert_id3.txt",
+        "bytes": 8151,
+        "sha256": "5fb8026040c5d58a69d98e4bdc0bcbc4a88a9d3a8bdc5398f427f1bc7f4150bc",
+        "originalBytes": 8151,
+        "originalSHA256": "5fb8026040c5d58a69d98e4bdc0bcbc4a88a9d3a8bdc5398f427f1bc7f4150bc",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/terms/carexpert_models.json",
+        "bytes": 35620,
+        "sha256": "5c2ad602b184fc4eba8396f04d0481fc1dcecc154327ebf0f2df36eda9b3722c",
+        "originalBytes": 35620,
+        "originalSHA256": "5c2ad602b184fc4eba8396f04d0481fc1dcecc154327ebf0f2df36eda9b3722c",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/terms/carexpert_models.txt",
+        "bytes": 9484,
+        "sha256": "b5e87d911c93b8bf50081c1c26a10246eb02b51cea357e742e194fcc62593e56",
+        "originalBytes": 9484,
+        "originalSHA256": "b5e87d911c93b8bf50081c1c26a10246eb02b51cea357e742e194fcc62593e56",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/terms/carsguide_models.json",
+        "bytes": 53947,
+        "sha256": "e3632c550847aa5e8a4a893ced258d916d2f6b78b3cccaebdaf59ea36e8a7d14",
+        "originalBytes": 53947,
+        "originalSHA256": "e3632c550847aa5e8a4a893ced258d916d2f6b78b3cccaebdaf59ea36e8a7d14",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/terms/carsguide_models.txt",
+        "bytes": 18957,
+        "sha256": "3765de9be1f2b830b61643fcbfaf11866beaa8be82de6a9edb553eb6084374c9",
+        "originalBytes": 18957,
+        "originalSHA256": "3765de9be1f2b830b61643fcbfaf11866beaa8be82de6a9edb553eb6084374c9",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/terms/enrich_reconciliation.py",
+        "bytes": 11992,
+        "sha256": "7866e23598a2d3b45ac7badd2da6f70575dd3c86f00861f0639b63f2c81029d2",
+        "originalBytes": 11992,
+        "originalSHA256": "7866e23598a2d3b45ac7badd2da6f70575dd3c86f00861f0639b63f2c81029d2",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/terms/facts.json",
+        "bytes": 142092,
+        "sha256": "251d5e08b6db50592d20f1f76b8c3ea04820c4edb8a7ab427bccc1f441955c9d",
+        "originalBytes": 142092,
+        "originalSHA256": "251d5e08b6db50592d20f1f76b8c3ea04820c4edb8a7ab427bccc1f441955c9d",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/terms/factual-excerpts.json",
+        "bytes": 9724,
+        "sha256": "388f5ac47cfe670b68ebc0467346ba6c1d795c498ad2b0e0d02b88dabeecd1bc",
+        "originalBytes": 9724,
+        "originalSHA256": "388f5ac47cfe670b68ebc0467346ba6c1d795c498ad2b0e0d02b88dabeecd1bc",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/terms/report.md",
+        "bytes": 4758,
+        "sha256": "f1615a2fb1d383183cdf8c42f0089f3de0dd252af5b7d5d610a7e87fb58cbacf",
+        "originalBytes": 4758,
+        "originalSHA256": "f1615a2fb1d383183cdf8c42f0089f3de0dd252af5b7d5d610a7e87fb58cbacf",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/terms/source-index.json",
+        "bytes": 17644,
+        "sha256": "d271f98ac01e994f6481960d597da63e8fed3890d635bf29e470760e792e2174",
+        "originalBytes": 17644,
+        "originalSHA256": "d271f98ac01e994f6481960d597da63e8fed3890d635bf29e470760e792e2174",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/terms/terms-normalized.json",
+        "bytes": 141361,
+        "sha256": "eeb043df7985c67ea44ace3f6219e7e618eab33dba0490f8b0a10a8d920e77cb",
+        "originalBytes": 141361,
+        "originalSHA256": "eeb043df7985c67ea44ace3f6219e7e618eab33dba0490f8b0a10a8d920e77cb",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/terms/vw_amarok.json",
+        "bytes": 38583,
+        "sha256": "4ad68cca1e8a8f6f70edcbe71e5fc08e05dbf89460558b95f86b79d3c160a920",
+        "originalBytes": 38583,
+        "originalSHA256": "4ad68cca1e8a8f6f70edcbe71e5fc08e05dbf89460558b95f86b79d3c160a920",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/terms/vw_amarok.txt",
+        "bytes": 15520,
+        "sha256": "3db96918b1f9c7681a162f4b3269e974e157669549eb277bd4129002c0ede797",
+        "originalBytes": 15520,
+        "originalSHA256": "3db96918b1f9c7681a162f4b3269e974e157669549eb277bd4129002c0ede797",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/terms/vw_buzz.json",
+        "bytes": 36740,
+        "sha256": "0cb68fc5505ab337c2cc62d979521808ab53764f1419b0fc824bd81fd311f06b",
+        "originalBytes": 36740,
+        "originalSHA256": "0cb68fc5505ab337c2cc62d979521808ab53764f1419b0fc824bd81fd311f06b",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/terms/vw_buzz.txt",
+        "bytes": 14234,
+        "sha256": "7874e751599badf62d1f1a634d8f638cba567543e1d2b655e697f81bc9b783e9",
+        "originalBytes": 14234,
+        "originalSHA256": "7874e751599badf62d1f1a634d8f638cba567543e1d2b655e697f81bc9b783e9",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/terms/vw_buzz_cargo.json",
+        "bytes": 35682,
+        "sha256": "1bc1b6169f8d59f328c74579e999f2ddb37412a11e5f80eecbc691a981434852",
+        "originalBytes": 35682,
+        "originalSHA256": "1bc1b6169f8d59f328c74579e999f2ddb37412a11e5f80eecbc691a981434852",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/terms/vw_buzz_cargo.txt",
+        "bytes": 13092,
+        "sha256": "e0b5e28b3ad953d8c60978c607d1a2ee1333933490f2b55ecdb3b9da293d25e7",
+        "originalBytes": 13092,
+        "originalSHA256": "e0b5e28b3ad953d8c60978c607d1a2ee1333933490f2b55ecdb3b9da293d25e7",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/terms/vw_ev_range.json",
+        "bytes": 47494,
+        "sha256": "9d502c09cd7820faf98381ddd0485cebe35b2b95a23b2dcbcfa23f5588e98c20",
+        "originalBytes": 47494,
+        "originalSHA256": "9d502c09cd7820faf98381ddd0485cebe35b2b95a23b2dcbcfa23f5588e98c20",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/terms/vw_ev_range.txt",
+        "bytes": 23248,
+        "sha256": "740fb7fdb6a5bb8c44f643917950054fc4a5f09a95f7e440328271bd5003e73f",
+        "originalBytes": 23248,
+        "originalSHA256": "740fb7fdb6a5bb8c44f643917950054fc4a5f09a95f7e440328271bd5003e73f",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/terms/vw_id3_news.json",
+        "bytes": 24365,
+        "sha256": "7789fdc46471b25bcbdcfd9403f72c968ae9450d78ce7006c190cffcf6c82eb3",
+        "originalBytes": 24365,
+        "originalSHA256": "7789fdc46471b25bcbdcfd9403f72c968ae9450d78ce7006c190cffcf6c82eb3",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/terms/vw_id3_news.txt",
+        "bytes": 7910,
+        "sha256": "4d7939918766105b07d0e9f543725b9d23eb442bd255c3f37f7f000b4bd2a3c1",
+        "originalBytes": 7910,
+        "originalSHA256": "4d7939918766105b07d0e9f543725b9d23eb442bd255c3f37f7f000b4bd2a3c1",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/terms/vw_id7_news.json",
+        "bytes": 29589,
+        "sha256": "0c9416941e0cb7c816874c7a8165a2cc248f0aa555871e455aea8b0fad97a04a",
+        "originalBytes": 29589,
+        "originalSHA256": "0c9416941e0cb7c816874c7a8165a2cc248f0aa555871e455aea8b0fad97a04a",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/terms/vw_id7_news.txt",
+        "bytes": 12576,
+        "sha256": "16943e180e0356011dc37a3fdd716745ff6c9fe3ffa25fd49b01fec53ffb003c",
+        "originalBytes": 12576,
+        "originalSHA256": "16943e180e0356011dc37a3fdd716745ff6c9fe3ffa25fd49b01fec53ffb003c",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/terms/vw_models.json",
+        "bytes": 20612,
+        "sha256": "52dcb02abbe5bf93a0fb3498c798da021baeee5f0d6ca0e795275cbebf58dcce",
+        "originalBytes": 20612,
+        "originalSHA256": "52dcb02abbe5bf93a0fb3498c798da021baeee5f0d6ca0e795275cbebf58dcce",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/terms/vw_models.txt",
+        "bytes": 4805,
+        "sha256": "8ae6840680c95d65e00f54bc73c61c0ca4baf1d5632be8040d8b3aa35838da32",
+        "originalBytes": 4805,
+        "originalSHA256": "8ae6840680c95d65e00f54bc73c61c0ca4baf1d5632be8040d8b3aa35838da32",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/terms/vw_on_ev.json",
+        "bytes": 26671,
+        "sha256": "0b348ee40a0d74500daec17c6fe97c844889380e05fce2dc1ad428e2dd410ccd",
+        "originalBytes": 26671,
+        "originalSHA256": "0b348ee40a0d74500daec17c6fe97c844889380e05fce2dc1ad428e2dd410ccd",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/terms/vw_on_ev.txt",
+        "bytes": 9341,
+        "sha256": "d2f44e7009bf9d106d8adb81c147128f485f2a71a80978cced5e03679f725537",
+        "originalBytes": 9341,
+        "originalSHA256": "d2f44e7009bf9d106d8adb81c147128f485f2a71a80978cced5e03679f725537",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/terms/vw_roadside.json",
+        "bytes": 27056,
+        "sha256": "f1dc83e3aa5801aeef8a77bf1876b99471422d974bc3d8ed1f38ae9279f4674d",
+        "originalBytes": 27056,
+        "originalSHA256": "f1dc83e3aa5801aeef8a77bf1876b99471422d974bc3d8ed1f38ae9279f4674d",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/terms/vw_roadside.txt",
+        "bytes": 8790,
+        "sha256": "a478fcfa1e5aef4f97d6c2f55123840968963cc4dabe4ecf77d4731f63ee6429",
+        "originalBytes": 8790,
+        "originalSHA256": "a478fcfa1e5aef4f97d6c2f55123840968963cc4dabe4ecf77d4731f63ee6429",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/terms/vw_roadside_terms.json",
+        "bytes": 51387,
+        "sha256": "61be074e0c8c1245e3454a86187e9a38a660675f0d23100b9d52b83701616779",
+        "originalBytes": 51387,
+        "originalSHA256": "61be074e0c8c1245e3454a86187e9a38a660675f0d23100b9d52b83701616779",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/terms/vw_roadside_terms.txt",
+        "bytes": 31666,
+        "sha256": "dcd48e7d8624c7aa32bed16318d638f957f690155717bd793e4d379ac3d092aa",
+        "originalBytes": 31666,
+        "originalSHA256": "dcd48e7d8624c7aa32bed16318d638f957f690155717bd793e4d379ac3d092aa",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/terms/vw_transporter.json",
+        "bytes": 44131,
+        "sha256": "e582e7d0f90cccb90be7307c0b2b604f8d557bc2fef6d0a4333681273ef686dd",
+        "originalBytes": 44131,
+        "originalSHA256": "e582e7d0f90cccb90be7307c0b2b604f8d557bc2fef6d0a4333681273ef686dd",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/terms/vw_transporter.txt",
+        "bytes": 23011,
+        "sha256": "1416d35f9a922e39d7105185902718e55cb37d92198dc8775b333e97db89acb9",
+        "originalBytes": 23011,
+        "originalSHA256": "1416d35f9a922e39d7105185902718e55cb37d92198dc8775b333e97db89acb9",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/terms/vw_warranty.json",
+        "bytes": 29211,
+        "sha256": "5848190235ea1596bad2574fa89773a5bf98d67113dd95c03fe2ae3383794be8",
+        "originalBytes": 29211,
+        "originalSHA256": "5848190235ea1596bad2574fa89773a5bf98d67113dd95c03fe2ae3383794be8",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/terms/vw_warranty.txt",
+        "bytes": 10963,
+        "sha256": "b1c4e00217b14e9ab57127ac502af76aef5e052eb5fe8d18cacd1d83d4445800",
+        "originalBytes": 10963,
+        "originalSHA256": "b1c4e00217b14e9ab57127ac502af76aef5e052eb5fe8d18cacd1d83d4445800",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/terms/vw_warranty_terms.json",
+        "bytes": 51904,
+        "sha256": "1d752fe6c8511d230ec284692240a2b06d10aaa9604634e8fa852147a9a8653d",
+        "originalBytes": 51904,
+        "originalSHA256": "1d752fe6c8511d230ec284692240a2b06d10aaa9604634e8fa852147a9a8653d",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/terms/vw_warranty_terms.txt",
+        "bytes": 32611,
+        "sha256": "8c1e78647aac4c9b30a9bd0d7c18fe983999ca199fed2c9f50dcb4b49b2bd1fc",
+        "originalBytes": 32611,
+        "originalSHA256": "8c1e78647aac4c9b30a9bd0d7c18fe983999ca199fed2c9f50dcb4b49b2bd1fc",
+        "archiveParts": [
+          1
+        ]
+      },
+      {
+        "path": "volkswagen-research/volkswagen-2026-10-14.json",
+        "bytes": 2475446,
+        "sha256": "91d90cd48891812c650ee75d43d7515a2b9fd4901250b204e973e17e9a332f3a",
+        "originalBytes": 2475446,
+        "originalSHA256": "91d90cd48891812c650ee75d43d7515a2b9fd4901250b204e973e17e9a332f3a",
+        "archiveParts": [
+          2
+        ]
+      },
+      {
+        "path": "volkswagen-research/volkswagen-effective-facts.json",
+        "bytes": 841019,
+        "sha256": "8e7e495ee7643011746567b4149da2387106c8103828ff165f919633b609c423",
+        "originalBytes": 841019,
+        "originalSHA256": "8e7e495ee7643011746567b4149da2387106c8103828ff165f919633b609c423",
+        "archiveParts": [
+          2
+        ]
+      },
+      {
+        "path": "volkswagen-research/volkswagen-feature-before.json",
+        "bytes": 249224,
+        "sha256": "f6ed24c93e5c565d1f0b1e3c3ebf2d0f4e3a1d3bd7dcd941477a6c88f27c6547",
+        "originalBytes": 249224,
+        "originalSHA256": "f6ed24c93e5c565d1f0b1e3c3ebf2d0f4e3a1d3bd7dcd941477a6c88f27c6547",
+        "archiveParts": [
+          2
+        ]
+      },
+      {
+        "path": "volkswagen-research/volkswagen-live-before.json",
+        "bytes": 1748618,
+        "sha256": "17d6b2b4b56866b7702fee3ac02a61d0cc6150ea809eb64dd67dd64b7c8c40cf",
+        "originalBytes": 1748618,
+        "originalSHA256": "17d6b2b4b56866b7702fee3ac02a61d0cc6150ea809eb64dd67dd64b7c8c40cf",
+        "archiveParts": [
+          2
+        ]
+      },
+      {
+        "path": "volkswagen-research/volkswagen-models-before.json",
+        "bytes": 1383,
+        "sha256": "0a087425bf3b22b536f995b43645aa6bb80749bcfe626cc15d482c09abc69c1e",
+        "originalBytes": 1383,
+        "originalSHA256": "0a087425bf3b22b536f995b43645aa6bb80749bcfe626cc15d482c09abc69c1e",
+        "archiveParts": [
+          2
+        ]
+      },
+      {
+        "path": "volkswagen-research/volkswagen-reconciliation-2026-10-14.json",
+        "bytes": 14969,
+        "sha256": "a7bc64bc0c5d3be2fbf746dd17b10202a71196c5b64e7adbc67d90cd37884ecc",
+        "originalBytes": 14969,
+        "originalSHA256": "a7bc64bc0c5d3be2fbf746dd17b10202a71196c5b64e7adbc67d90cd37884ecc",
+        "archiveParts": [
+          2
+        ]
+      },
+      {
+        "path": "volkswagen-research/volkswagen-source-before.json",
+        "bytes": 2654444,
+        "sha256": "e8904e94b807c83fd2ff536c18d1f62b11b9c35463b1a2b1e56fbda08e042957",
+        "originalBytes": 2654444,
+        "originalSHA256": "e8904e94b807c83fd2ff536c18d1f62b11b9c35463b1a2b1e56fbda08e042957",
+        "archiveParts": [
+          2
+        ]
+      },
+      {
+        "path": "volkswagen-research/volkswagen-variants-before.json",
+        "bytes": 409983,
+        "sha256": "03d24b6efa84d1e98f2db104467b1de9748de5e14867f85ee5cb74918d57b6ab",
+        "originalBytes": 409983,
+        "originalSHA256": "03d24b6efa84d1e98f2db104467b1de9748de5e14867f85ee5cb74918d57b6ab",
+        "archiveParts": [
+          2
+        ]
+      }
+    ],
+    "failures": []
+  },
+  "privacyVerification": {
+    "unchangedBaseline": "Every reused archive matches the previous safe Toyota chain by size and SHA-256.",
+    "priorSafeChain": {
+      "unchangedBaseline": "All reused archives match the hashes from the previously verified safe chain. No affected original or intermediate Library ID is used.",
+      "priorSafeChain": {
+        "unchangedBaseline": "All reused archives match the sizes and SHA-256 hashes from the prior complete safe-chain audit. No affected original or intermediate Library ID is a restore input.",
+        "priorWholeTreeScan": {
+          "status": "clean",
+          "regularFilesScanned": 5037,
+          "bytesScanned": 1980054991,
+          "uniquePayloadsScanned": 2816,
+          "knownDistinctCapturedValues": 55,
+          "testedDistinctByteVariants": 373,
+          "recognizedBenignRuntimeCandidateCount": 609,
+          "startedAt": "2026-10-14T04:31:51.869933+00:00",
+          "completedAt": "2026-10-14T04:35:51.516096+00:00",
+          "exactValueMatches": 0,
+          "primaryHeaderCandidates": 0,
+          "unclassifiedRuntimeCandidates": 0,
+          "errors": 0,
+          "coverage": {
+            "byteSearch": "Every regular payload, regardless of extension",
+            "encodings": [
+              "literal",
+              "URL component",
+              "base64/base64url standalone value, padded and unpadded",
+              "UTF-16LE/BE",
+              "JSON string escaping",
+              "HTML entity escaping",
+              "full Unicode-escaped value in lower/upper hex"
+            ],
+            "patternSearch": "Primary nested-JSON/raw-header scanner and runtime HTML meta/input/property scanner with entity decoding and up to three nested escape levels",
+            "limitations": [
+              "Does not decrypt encrypted content",
+              "Does not recursively unpack arbitrary compressed or proprietary content inside regular payloads",
+              "Standalone base64 matching is not a claim to inspect every possible base64 wrapping/alignment of a larger structure"
+            ]
+          }
+        },
+        "newSourceAndQaArchiveScan": {
+          "startedAt": "2026-10-14T04:51:59.453917+00:00",
+          "knownDistinctCapturedValues": 55,
+          "testedDistinctByteVariants": 373,
+          "originalSeedMembersRead": 200,
+          "regularFilesScanned": 699,
+          "bytesScanned": 256234667,
+          "uniquePayloadsScanned": 670,
+          "recognizedBenignRuntimeCandidateCount": 0,
+          "coverage": {
+            "byteSearch": "Every regular payload, regardless of extension",
+            "encodings": [
+              "literal",
+              "URL component",
+              "base64/base64url standalone value, padded and unpadded",
+              "UTF-16LE/BE",
+              "JSON string escaping",
+              "HTML entity escaping",
+              "full Unicode-escaped value in lower/upper hex"
+            ],
+            "patternSearch": "Primary nested-JSON/raw-header scanner and runtime HTML meta/input/property scanner with entity decoding and up to three nested escape levels",
+            "limitations": [
+              "Does not decrypt encrypted content",
+              "Does not recursively unpack arbitrary compressed or proprietary content inside regular payloads",
+              "Standalone base64 matching is not a claim to inspect every possible base64 wrapping/alignment of a larger structure"
+            ]
+          },
+          "completedAt": "2026-10-14T04:52:54.527003+00:00",
+          "status": "clean",
+          "exactValueMatches": 0,
+          "primaryHeaderCandidates": 0,
+          "unclassifiedRuntimeCandidates": 0,
+          "errors": 0
+        }
+      },
+      "newSourceToyotaResearchAndQaScan": {
+        "startedAt": "2026-10-14T06:52:37.131519+00:00",
+        "knownDistinctCapturedValues": 55,
+        "testedDistinctByteVariants": 373,
+        "originalSeedMembersRead": 200,
+        "regularFilesScanned": 841,
+        "bytesScanned": 277302341,
+        "uniquePayloadsScanned": 795,
+        "recognizedBenignRuntimeCandidateCount": 0,
+        "coverage": {
+          "byteSearch": "Every regular payload, regardless of extension",
+          "encodings": [
+            "literal",
+            "URL component",
+            "base64/base64url standalone value, padded and unpadded",
+            "UTF-16LE/BE",
+            "JSON string escaping",
+            "HTML entity escaping",
+            "full Unicode-escaped value in lower/upper hex"
+          ],
+          "patternSearch": "Primary nested-JSON/raw-header scanner and runtime HTML meta/input/property scanner with entity decoding and up to three nested escape levels",
+          "limitations": [
+            "Does not decrypt encrypted content",
+            "Does not recursively unpack arbitrary compressed or proprietary content inside regular payloads",
+            "Standalone base64 matching is not a claim to inspect every possible base64 wrapping/alignment of a larger structure"
+          ]
+        },
+        "completedAt": "2026-10-14T06:53:42.001149+00:00",
+        "status": "clean",
+        "exactValueMatches": 0,
+        "primaryHeaderCandidates": 0,
+        "unclassifiedRuntimeCandidates": 0,
+        "errors": 0
+      }
+    },
+    "newProvisionalResearchScan": {
+      "startedAt": "2026-10-14T07:41:03.295776+00:00",
+      "knownDistinctCapturedValues": 55,
+      "testedDistinctByteVariants": 373,
+      "originalSeedMembersRead": 200,
+      "regularFilesScanned": 220,
+      "bytesScanned": 52946620,
+      "uniquePayloadsScanned": 215,
+      "recognizedBenignRuntimeCandidateCount": 0,
+      "coverage": {
+        "byteSearch": "Every regular payload, regardless of extension",
+        "encodings": [
+          "literal",
+          "URL component",
+          "base64/base64url standalone value, padded and unpadded",
+          "UTF-16LE/BE",
+          "JSON string escaping",
+          "HTML entity escaping",
+          "full Unicode-escaped value in lower/upper hex"
+        ],
+        "patternSearch": "Primary nested-JSON/raw-header scanner and runtime HTML meta/input/property scanner with entity decoding and up to three nested escape levels",
+        "limitations": [
+          "Does not decrypt encrypted content",
+          "Does not recursively unpack arbitrary compressed or proprietary content inside regular payloads",
+          "Standalone base64 matching is not a claim to inspect every possible base64 wrapping/alignment of a larger structure"
+        ]
+      },
+      "completedAt": "2026-10-14T07:41:11.971878+00:00",
+      "status": "clean",
+      "exactValueMatches": 0,
+      "primaryHeaderCandidates": 0,
+      "unclassifiedRuntimeCandidates": 0,
+      "errors": 0
+    }
+  },
+  "incrementalSave": {
+    "newResearchArchives": 2,
+    "newResearchArchiveBytes": 19931184,
+    "includedResearchFiles": 216,
+    "excludedResearchFiles": [
+      {
+        "path": "__pycache__/build-packet.cpython-312.pyc",
+        "reason": "dependency, build, cache, or runtime directory"
+      },
+      {
+        "path": "__pycache__/build-reconciliation.cpython-312.pyc",
+        "reason": "dependency, build, cache, or runtime directory"
+      },
+      {
+        "path": "__pycache__/finalize-artifacts.cpython-312.pyc",
+        "reason": "dependency, build, cache, or runtime directory"
+      },
+      {
+        "path": "__pycache__/merge-evidence.cpython-312.pyc",
+        "reason": "dependency, build, cache, or runtime directory"
+      },
+      {
+        "path": "id45/__pycache__/capture.cpython-312.pyc",
+        "reason": "dependency, build, cache, or runtime directory"
+      },
+      {
+        "path": "idbuzz/__pycache__/capture.cpython-312.pyc",
+        "reason": "dependency, build, cache, or runtime directory"
+      }
+    ],
+    "newSourceArchives": 0,
+    "newQaArchives": 0,
+    "unchangedArchivesReuploaded": 0
+  },
+  "imageProvenance": {
+    "verifiedAt": "2026-10-14T07:33:18Z",
+    "basis": "Confirmed capture provenance: public PDF page renders, not browser screenshots",
+    "images": [
+      {
+        "path": "volkswagen-research/id45/captures/id45_my25_technical_page8.png",
+        "bytes": 559525,
+        "sha256": "2d84e4a66371b7de954af48d0d923b200ed5e078aaa8910acf05def63685ce3e",
+        "classification": "Public technical/equipment PDF page render; not a browser screenshot"
+      },
+      {
+        "path": "volkswagen-research/id45/captures/id45_my25_technical_page9.png",
+        "bytes": 118638,
+        "sha256": "cc996e97cd00e97cab142aa0186c3e74acf0f7a7f6cd013aaaf4ef8fb534b093",
+        "classification": "Public technical/equipment PDF page render; not a browser screenshot"
+      },
+      {
+        "path": "volkswagen-research/id45/captures/id4_my27_equipment_page5.png",
+        "bytes": 290845,
+        "sha256": "58b24e7df53254ea2e115934230dc8efb301db37b8e18260545b30223ac3f51c",
+        "classification": "Public technical/equipment PDF page render; not a browser screenshot"
+      },
+      {
+        "path": "volkswagen-research/id45/captures/id4_my27_technical_page9.png",
+        "bytes": 114060,
+        "sha256": "0293d5a45b9c5d40ed9284686f4dcfa4469f39918653b965d0490b629f1832bd",
+        "classification": "Public technical/equipment PDF page render; not a browser screenshot"
+      },
+      {
+        "path": "volkswagen-research/id45/captures/id5_my26_equipment_page5.png",
+        "bytes": 287948,
+        "sha256": "8327074b718f18b0fed0b6a1b21a632e699a779a950ea510e961a2248ce490f2",
+        "classification": "Public technical/equipment PDF page render; not a browser screenshot"
+      },
+      {
+        "path": "volkswagen-research/id45/captures/id5_my26_technical_page8.png",
+        "bytes": 108830,
+        "sha256": "e0323d9352eb8ab46cf99d38b931be1f9ec4c6dee452097cd4aa364d23ddaddb",
+        "classification": "Public technical/equipment PDF page render; not a browser screenshot"
+      }
+    ]
+  }
+}

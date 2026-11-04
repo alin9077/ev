@@ -1,0 +1,140 @@
+{
+  "inputFile": "roadmark-work/roadmark/data/market-inventory-2026-10-10.json",
+  "inputSha256": "64f38d5d72f75c2a5264568602d5a1eacae49b1aba8b1e8cfcf5a9708a35c023",
+  "counts": {
+    "consolidatedModelAuditRecords": 242,
+    "byVehicleClass": {
+      "bus": 28,
+      "passenger": 114,
+      "truck": 28,
+      "ute": 13,
+      "van": 19,
+      "motorcycle": 40
+    },
+    "byOrderStatus": {
+      "listed_unconfirmed": 193,
+      "accepting_orders": 36,
+      "accepting_order_requests_advertised": 7,
+      "not_current": 4,
+      "preorder": 2
+    },
+    "namedTrimConfigurationEntries": 395,
+    "exactTrimSetMissingRecords": 54,
+    "newStockListedModelRecords": 69,
+    "unresolvedLeadGroups": 143,
+    "reconciledLeadGroups": 21,
+    "peripheralRecords": 5,
+    "duplicateModelMerges": 6
+  },
+  "selectedLeadIds": [
+    "dfac-captain-45e",
+    "dfac-captain-85e",
+    "pioneer-ev-dfsk-ec35"
+  ],
+  "originalLeads": [
+    {
+      "familyId": "dfac-captain-45e",
+      "brand": "DFAC",
+      "canonicalBrand": "DFAC",
+      "model": "Captain 45e",
+      "canonicalModel": "Captain 45e",
+      "aliases": [],
+      "vehicleType": "truck",
+      "vehicleClass": "truck",
+      "class": "truck",
+      "trims": [],
+      "sourceUrls": [
+        "https://www.dfac-australia.com.au/home-1"
+      ],
+      "checkedAt": "2026-10-10",
+      "orderStatus": "listed_unconfirmed",
+      "stockStatus": "unverified",
+      "evidenceNote": "Australian site names this variant, but retrieved text did not establish its battery-electric specification and current sales terms.",
+      "limitations": [
+        "Nearby availability wording relates to another Captain offering and cannot safely be transferred to this electric-looking model name."
+      ],
+      "unresolvedReason": "model_named_powertrain_and_sales_unresolved",
+      "recordScope": "unverified_lead",
+      "roadRegistrationScope": "unverified",
+      "exactConfigurationStatus": "partial_or_unverified",
+      "id": "dfac-captain-45e",
+      "modelAliases": [],
+      "rankingEligible": false,
+      "sourceArtifacts": [
+        "heavy-ev-census.json"
+      ],
+      "relatedRecordIds": [],
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "familyId": "dfac-captain-85e",
+      "brand": "DFAC",
+      "canonicalBrand": "DFAC",
+      "model": "Captain 85e",
+      "canonicalModel": "Captain 85e",
+      "aliases": [],
+      "vehicleType": "truck",
+      "vehicleClass": "truck",
+      "class": "truck",
+      "trims": [],
+      "sourceUrls": [
+        "https://www.dfac-australia.com.au/home-1"
+      ],
+      "checkedAt": "2026-10-10",
+      "orderStatus": "listed_unconfirmed",
+      "stockStatus": "unverified",
+      "evidenceNote": "Australian site names this variant, but retrieved text did not establish its battery-electric specification and current sales terms.",
+      "limitations": [
+        "Nearby availability wording relates to another Captain offering and cannot safely be transferred to this electric-looking model name."
+      ],
+      "unresolvedReason": "model_named_powertrain_and_sales_unresolved",
+      "recordScope": "unverified_lead",
+      "roadRegistrationScope": "unverified",
+      "exactConfigurationStatus": "partial_or_unverified",
+      "id": "dfac-captain-85e",
+      "modelAliases": [],
+      "rankingEligible": false,
+      "sourceArtifacts": [
+        "heavy-ev-census.json"
+      ],
+      "relatedRecordIds": [],
+      "resolutionStatus": "unresolved"
+    },
+    {
+      "brand": "Pioneer EV / DFSK",
+      "model": "EC35",
+      "id": "pioneer-ev-dfsk-ec35",
+      "overlapKeys": [],
+      "vehicleType": "van",
+      "trims": [],
+      "sourceUrls": [
+        "https://pioneerev.com/pioneer-ev-van-ec35/",
+        "https://pioneerev.com/"
+      ],
+      "checkedAt": "2026-10-10",
+      "orderStatus": "listed_unconfirmed",
+      "stockStatus": "unverified",
+      "evidenceNote": "Australian-address supplier publishes EC35 electric-van product specifications.",
+      "limitations": [
+        "No current ADR/compliance, actual order, delivery or new-stock evidence captured. Supplier brand badge and final local specification need confirmation."
+      ],
+      "vehicleClass": "van",
+      "modelAliases": [],
+      "rankingEligible": false,
+      "sourceArtifacts": [
+        "commercial-ev-census.json"
+      ],
+      "relatedRecordIds": [],
+      "resolutionStatus": "unresolved"
+    }
+  ],
+  "priorResearchReviewed": [
+    "market-gap93/REPORT.md",
+    "passenger-lead95/report.md",
+    "mercedes-market-batch-research directory scope",
+    "hyundai-evidence-2026-10-10.json",
+    "audi-porsche-evidence-2026-10-10.json",
+    "volvo-polestar-evidence-2026-10-10.json"
+  ],
+  "constraint": "research only; no app changes, imports or execution"
+}

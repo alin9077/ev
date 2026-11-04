@@ -1,0 +1,103 @@
+{
+  "status": "passed_read_only_actual_runtime_and_in_memory_merge",
+  "validationMode": "new_proposal_in_memory_merge",
+  "records": 12,
+  "visibleClauses": 24,
+  "testsPassed": 138652,
+  "mutationTestsPassed": 137556,
+  "priorCarsSerializedDeepEqual": 262,
+  "fullCatalogueVisibleBefore": 258,
+  "fullCatalogueVisibleAfter": 270,
+  "applicationEdits": 0,
+  "exactRuntimeGraphFilesLocked": 29,
+  "executableDependencies": 130,
+  "acceptedSourceSnapshots": 35,
+  "completeEffectiveFactsGuarded": 4305,
+  "sourceLessUnknownFacts": 42,
+  "requiredVisibleConditions": 48,
+  "retainedConflicts": 23,
+  "retainedHolds": 20,
+  "nonAdditiveOptionChildren": 4,
+  "coreNewStockRecords": 4,
+  "files": [
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/hyundai-runtime-selling-points-proposal.json",
+      "sha256": "defafb87beb848d69af49f5e12de713cb4039f6c4c35f2efca6b5743fd58008a",
+      "bytes": 80295207
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/hyundai-runtime-selling-points-proposal.md",
+      "sha256": "e5a051d4be00540ec97d074b7ba3ae2f8fb488c3be697c5867bf2792a2c5add5",
+      "bytes": 26821
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/hyundai-runtime-selling-points-merge-payload.json",
+      "sha256": "e27cf737bbcc6b811a8187b73b6c6fa231d67525dffb08f9405bd12beeacc77c",
+      "bytes": 16789072
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/hyundai-runtime-selling-points-validation.json",
+      "sha256": "c580624debadd084cbf6e4081f3a0d9003657e4848881b17f3271bfd9c94e02f",
+      "bytes": 24475504
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/hyundai-runtime-selling-points-validation-log.txt",
+      "sha256": "0eb61c972a6bdeaf8e8b3e4296c1711e8485f3746b7b8c37eeb516ce237ebd3f",
+      "bytes": 3748
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/hyundai-runtime-effective-snapshot.json",
+      "sha256": "255b08efe4463efc21d6e1acbbde2fe944ccd7490dd75d5ad50b3fb25f1c033a",
+      "bytes": 6583074
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/capture_hyundai_runtime_snapshot.cjs",
+      "sha256": "566fc71d28db2aa5daa974008017d37a24a48dc9a884256173441c8f65b4ef16",
+      "bytes": 2229
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/bind_hyundai_selling_points.py",
+      "sha256": "3558ffa152e8832f55e21ded7e8c2b3a7fac6a1379380c8fea9d91324b297837",
+      "bytes": 19396
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/validate_hyundai_selling_points.cjs",
+      "sha256": "120684c09e0a6fa31017f167af590d6f25aa7a6b9523427aec774f353daf69c1",
+      "bytes": 36193
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/finalize_hyundai_selling_points.py",
+      "sha256": "104ae4184ef5a60a92e8f877619b526106bed7e42b19beccc16ffefbeeb8407b",
+      "bytes": 4710
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/verify_hyundai_post_merge.cjs",
+      "sha256": "e02c1ab659e81b6e4b03e3b7544b3ad90227433cda959cf9450802d285db6c70",
+      "bytes": 13211
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/hyundai-prior-buyer-selling-points.json",
+      "sha256": "bfc893578230fdd4d98694683d3659986e7817b05ba933f5177e667721fdae10",
+      "bytes": 19998208
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/hyundai-runtime-input-lock.json",
+      "sha256": "02966d7880deb23c1e2fe104b22a44df9220a5685a063363f4b0cb218ebe4a35",
+      "bytes": 6371
+    }
+  ],
+  "integrationInstructions": [
+    "Append only 12 records, 130 dependencies and 35 accepted expectedSourceSnapshots from the minimal executable payload.",
+    "Do not regenerate/rebind any existing summary, dependency or source snapshot.",
+    "Retain complete own/related effective fact maps, identity, availability, all accepted-source guards and 48 visible conditions.",
+    "The full proposal is research provenance, not application data. Failed/held/rejected sources and four non-additive children stay in research/context; only four core configurations have exact New stock.",
+    "After the exact append-only merge, run verify_hyundai_post_merge.cjs under app tsx. It preserves this exhaustive proof and checks current 270 summaries, all 258 prior summaries/262 prior cars, exact payload/source/input hashes and representative guard mutations. It explicitly does not rerun the exhaustive matrix."
+  ],
+  "quickPostMergeCommand": "cd /workspace/scratch/586427eef9f2/roadmark-work/roadmark && node --import tsx ../../roadmark-research/verify_hyundai_post_merge.cjs",
+  "reproducibleCommands": [
+    "cd /workspace/scratch/586427eef9f2/roadmark-work/roadmark && node --import tsx ../../roadmark-research/capture_hyundai_runtime_snapshot.cjs",
+    "python /workspace/scratch/586427eef9f2/roadmark-research/bind_hyundai_selling_points.py",
+    "cd /workspace/scratch/586427eef9f2/roadmark-work/roadmark && node --import tsx ../../roadmark-research/validate_hyundai_selling_points.cjs",
+    "python /workspace/scratch/586427eef9f2/roadmark-research/finalize_hyundai_selling_points.py"
+  ]
+}

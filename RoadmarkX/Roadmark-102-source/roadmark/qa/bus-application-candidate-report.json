@@ -1,0 +1,72 @@
+{
+  "status": "prepared_not_applied",
+  "applicationWrites": 0,
+  "baselineApplicationFiles": {
+    "catalogue-additions-2026-10-10.json": "9ef55e4b05f697667ed0626157697fcb272da239720bbd34253360721f8f8115",
+    "market-inventory-2026-10-10.json": "de19dd32f801191fe141db6f14840435e042d8f0ebb2b1eb0b8f3912b438d5a9"
+  },
+  "candidateFiles": {
+    "catalogue-additions": {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/bus-candidate-catalogue-additions.json",
+      "sha256": "b351266395edc786485e8670d1f1c8487835326d4cd20f3050ddd433849bc76d"
+    },
+    "market-inventory": {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/bus-candidate-market-inventory.json",
+      "sha256": "aea248dfe4428d6be5b07a24612cc6a01805cbf04ff619ae64de22d794d1d001"
+    }
+  },
+  "newBusConfigurations": 7,
+  "newFacts": 383,
+  "newSources": 74,
+  "unchangedExistingArrays": true,
+  "marketRecordsBefore": 231,
+  "marketRecordsAfter": 231,
+  "marketChangedRecords": [
+    {
+      "familyId": "yutong-d7e",
+      "recordIndex": 24,
+      "variantId": "yutong_d7e_au_jul2026__20261010"
+    },
+    {
+      "familyId": "yutong-e7s",
+      "recordIndex": 26,
+      "variantId": "yutong_e7s_au_jul2026__20261010"
+    },
+    {
+      "familyId": "yutong-c12e",
+      "recordIndex": 23,
+      "variantId": "yutong_c12e_au_jul2026__20261010"
+    },
+    {
+      "familyId": "yutong-e12",
+      "recordIndex": 25,
+      "variantId": "yutong_e12_au_jul2026__20261010"
+    },
+    {
+      "familyId": "bci-classmaster-ev",
+      "recordIndex": 4,
+      "variantId": "bci_classmaster_ev_au_feb2025__20261010"
+    },
+    {
+      "familyId": "bci-mini-bus-ev",
+      "recordIndex": 5,
+      "variantId": "bci_mini_bus_ev_au_feb2025__20261010"
+    },
+    {
+      "familyId": "bci-proma-low-floor-ev",
+      "recordIndex": 6,
+      "variantId": "bci_proma_low_floor_ev_au_feb2025__20261010"
+    }
+  ],
+  "unverifiedLeadsUnchanged": true,
+  "mustVerifyAfterApplication": [
+    "all prior effective cars unchanged",
+    "281 total configurations and 119 families",
+    "bus-only report capacities remain separated",
+    "all seven exact detail pages render unknown comparison fields",
+    "stock filter excludes all seven",
+    "bind guarded source-copy summaries",
+    "full suite, build, mobile-layout and hero checks"
+  ],
+  "sourceStageSHA256": "e2a9fcd5f78f5141e7c519a34ec13cfadf294318c9fc5fa084880dcfb2663b55"
+}

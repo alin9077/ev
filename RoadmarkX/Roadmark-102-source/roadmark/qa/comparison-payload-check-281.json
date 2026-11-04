@@ -1,0 +1,66 @@
+{
+  "checkedAt": "2026-10-10T14:17:35.738Z",
+  "status": "Projection and prior-car parity passed; 277 buyer summaries integrated; final 272-test aggregate and rebuilt visual review running",
+  "catalogueCount": 281,
+  "existingBuyerSummaries": 277,
+  "fullPicker": {
+    "json": 937662,
+    "estimatedGzip": 62841
+  },
+  "comparisonOnlyPicker": {
+    "json": 138949,
+    "estimatedGzip": 11982
+  },
+  "factIndexParity": "Before bus summary append, all 281 serialized cars and 270 prior summaries matched pre-index capture. Actual bus merge separately preserved all 274 earlier cars and 270 earlier summaries.",
+  "limits": [
+    "No cross-request cache added",
+    "Selected evidence-bearing packs retained",
+    "All source, identity, condition and correction guards retained",
+    "JSON/gzip size is not browser or real-device performance"
+  ],
+  "files": [
+    {
+      "path": "src/lib/data.ts",
+      "sha256": "ee3088327cbbce326a86b1475e277f7c4d003c5cd994d8b2e1eac5d02fa906de"
+    },
+    {
+      "path": "src/lib/picker-car.ts",
+      "sha256": "993265afe5d8f63631194f52035a1c46c98774bb6f9540c248b600d1839157c4"
+    },
+    {
+      "path": "src/lib/page-props.ts",
+      "sha256": "e724d9974f5675530e172236ee47415a7248e8e65553fbc0de5336618d096048"
+    },
+    {
+      "path": "src/components/picker.tsx",
+      "sha256": "1f88355837790f69182315876ab3cb6d13937c118a5bf64dfaa452321c38e58b"
+    },
+    {
+      "path": "src/components/experience.tsx",
+      "sha256": "070f05ffec9be82fb4e2072a4c5b417cc8fbc2cbbc8e94bf130daa78e7961471"
+    },
+    {
+      "path": "src/portable/entry.tsx",
+      "sha256": "0bdaab7d974e6b4da5a0580ed18002de87996e141e49e406652db52dfd5187c9"
+    },
+    {
+      "path": "src/lib/compare.ts",
+      "sha256": "3cd66e9122ed97b0f6c56efb5ba067e4504d24d11b171b73c45380adf15fc9e2"
+    },
+    {
+      "path": "src/lib/fact-validity.ts",
+      "sha256": "e667ea3222130b465ff2e16267ae07097f649e1faeb926d82451f8764ca7eccf"
+    },
+    {
+      "path": "src/lib/search.ts",
+      "sha256": "1cc767f7a3f1a36cf9cd4b2b9d4b55bdc905da058bdf6bc52691464939707274"
+    },
+    {
+      "path": "tests/comparison-picker.test.ts",
+      "sha256": "8b64a8d910ed2557c0bce93dccf881ebae38749c19bf670aa4d99ea93897324f"
+    }
+  ],
+  "responseBenchmarkFile": "qa/production-response-check-281-final.json",
+  "projectionParityCheckedAt": "2026-10-10T14:17:35.738Z",
+  "updatedAt": "2026-10-10T14:43:00Z"
+}

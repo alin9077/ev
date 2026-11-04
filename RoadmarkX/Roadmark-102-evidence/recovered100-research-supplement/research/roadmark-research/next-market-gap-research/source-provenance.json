@@ -1,0 +1,291 @@
+{
+  "schema": "roadmark_research_provenance_v1",
+  "observedDate": "2026-10-12",
+  "sources": [
+    {
+      "id": "dfac-home",
+      "url": "https://www.dfac-australia.com.au/",
+      "publisherScope": "Australian distributor",
+      "webObservationWindowUtc": {
+        "start": "2026-10-12T05:35:50Z",
+        "end": "2026-10-12T05:36:02Z"
+      },
+      "webReturnedCrawlLabel": "today",
+      "publisherPublicationDate": null,
+      "webEvidenceType": "web_tool_open_extracted_text",
+      "webCapture": "analysis-only-source-captures/open01.web-tool-response.txt",
+      "locator": "lines 90–96; 103–117",
+      "shortReturnedExtracts": [
+        "Captain 45 e and 85 e",
+        "GVM - 4,500kg and 8,500kg",
+        "Register Interest"
+      ],
+      "interpretation": "Interest route is separately scoped from the diesel Captain 45 price campaign; do not apply campaign terms to electric-looking names.",
+      "originalHtmlCaptured": true,
+      "pdfUsed": false,
+      "directHttp": {
+        "url": "https://www.dfac-australia.com.au/",
+        "method": "GET",
+        "requestBody": null,
+        "credentialsUsed": false,
+        "observationClock": "UTC timestamp recorded by Python datetime at start of one unauthenticated GET; response Date header preserved separately when returned.",
+        "status": 200,
+        "finalUrl": "https://www.dfac-australia.com.au/",
+        "contentType": "text/html; charset=UTF-8",
+        "responseDate": "Mon, 12 Oct 2026 05:36:45 GMT",
+        "bytes": 1318423,
+        "sha256": "aeb7ee3ba1ece02cb2f71154e0eecf9a80d65cef30c5c76f1561aae67b82a1fe",
+        "requestStartedAtUtc": "2026-10-12T05:36:39.570376+00:00"
+      },
+      "directHttpMetadataPath": "analysis-only-source-captures/dfac-home.http-request-metadata.json",
+      "originalHtmlPath": "analysis-only-source-captures/dfac-home.actual-http-response.html",
+      "htmlTextPath": "analysis-only-source-captures/dfac-home.html-to-text-extracted.txt"
+    },
+    {
+      "id": "dfac-old-home",
+      "url": "https://www.dfac-australia.com.au/home-1",
+      "publisherScope": "Australian distributor legacy path",
+      "webObservationWindowUtc": {
+        "start": "2026-10-12T05:35:50Z",
+        "end": "2026-10-12T05:36:02Z"
+      },
+      "webReturnedCrawlLabel": "2 weeks ago",
+      "publisherPublicationDate": null,
+      "webEvidenceType": "web_tool_open_extracted_text",
+      "webCapture": "analysis-only-source-captures/open01.web-tool-response.txt",
+      "locator": "lines 89–103",
+      "shortReturnedExtracts": [
+        "Available.Now"
+      ],
+      "interpretation": "Availability wording in this returned legacy-path extraction describes Captain 45; it does not establish orders for 45e or 85e.",
+      "originalHtmlCaptured": false,
+      "pdfUsed": false
+    },
+    {
+      "id": "dfac-captain45",
+      "url": "https://www.dfac-australia.com.au/captain45",
+      "publisherScope": "Australian distributor",
+      "webObservationWindowUtc": {
+        "start": "2026-10-12T05:36:02Z",
+        "end": "2026-10-12T05:36:20Z"
+      },
+      "webReturnedCrawlLabel": "yesterday",
+      "publisherPublicationDate": null,
+      "webEvidenceType": "web_tool_open_extracted_text",
+      "webCapture": "analysis-only-source-captures/open02.web-tool-response.txt",
+      "locator": "lines 51–54",
+      "shortReturnedExtracts": [
+        "Euro 6 Cummins Engine",
+        "Trusted Cummins performance with 165hp of efficient, hard-working diesel power."
+      ],
+      "interpretation": "Diesel product only; no BEV data inherited.",
+      "originalHtmlCaptured": true,
+      "pdfUsed": false,
+      "directHttp": {
+        "url": "https://www.dfac-australia.com.au/captain45",
+        "method": "GET",
+        "requestBody": null,
+        "credentialsUsed": false,
+        "observationClock": "UTC timestamp recorded by Python datetime at start of one unauthenticated GET; response Date header preserved separately when returned.",
+        "status": 200,
+        "finalUrl": "https://www.dfac-australia.com.au/captain45",
+        "contentType": "text/html; charset=UTF-8",
+        "responseDate": "Mon, 12 Oct 2026 05:36:53 GMT",
+        "bytes": 1194697,
+        "sha256": "8290eda0ceaa9870f3321bd4b8c5c5b76ddf2a0f3ee4eabc3e26baf5d8aa42a2",
+        "requestStartedAtUtc": "2026-10-12T05:36:45.998738+00:00"
+      },
+      "directHttpMetadataPath": "analysis-only-source-captures/dfac-captain45.http-request-metadata.json",
+      "originalHtmlPath": "analysis-only-source-captures/dfac-captain45.actual-http-response.html",
+      "htmlTextPath": "analysis-only-source-captures/dfac-captain45.html-to-text-extracted.txt"
+    },
+    {
+      "id": "dfac-contact",
+      "url": "https://www.dfac-australia.com.au/contact",
+      "publisherScope": "Australian distributor",
+      "webObservationWindowUtc": {
+        "start": "2026-10-12T05:36:02Z",
+        "end": "2026-10-12T05:36:20Z"
+      },
+      "webReturnedCrawlLabel": "2 days ago",
+      "publisherPublicationDate": null,
+      "webEvidenceType": "web_tool_open_extracted_text",
+      "webCapture": "analysis-only-source-captures/open02.web-tool-response.txt",
+      "locator": "lines 32–74",
+      "shortReturnedExtracts": [
+        "Send us a message",
+        "Submit"
+      ],
+      "interpretation": "General enquiry form, not accepted order evidence. Viewed only.",
+      "originalHtmlCaptured": true,
+      "pdfUsed": false,
+      "directHttp": {
+        "url": "https://www.dfac-australia.com.au/contact",
+        "method": "GET",
+        "requestBody": null,
+        "credentialsUsed": false,
+        "observationClock": "UTC timestamp recorded by Python datetime at start of one unauthenticated GET; response Date header preserved separately when returned.",
+        "status": 200,
+        "finalUrl": "https://www.dfac-australia.com.au/contact",
+        "contentType": "text/html; charset=UTF-8",
+        "responseDate": "Mon, 12 Oct 2026 05:37:16 GMT",
+        "bytes": 1581592,
+        "sha256": "716d6917f7a5eb7db94ddaea5b3ce847d2a5dcc9e66c9f6b904ac01db6646a35",
+        "requestStartedAtUtc": "2026-10-12T05:37:09.158487+00:00"
+      },
+      "directHttpMetadataPath": "analysis-only-source-captures/dfac-contact.http-request-metadata.json",
+      "originalHtmlPath": "analysis-only-source-captures/dfac-contact.actual-http-response.html",
+      "htmlTextPath": "analysis-only-source-captures/dfac-contact.html-to-text-extracted.txt"
+    },
+    {
+      "id": "dfac-bunbury",
+      "url": "https://www.dfactrucksbunbury.com.au/",
+      "publisherScope": "Australian DFAC-branded seller page",
+      "webObservationWindowUtc": {
+        "start": "2026-10-12T05:36:52Z",
+        "end": "2026-10-12T05:37:07Z"
+      },
+      "webReturnedCrawlLabel": "today",
+      "publisherPublicationDate": null,
+      "webEvidenceType": "web_tool_open_extracted_text",
+      "webCapture": "analysis-only-source-captures/open03.web-tool-response.txt",
+      "locator": "lines 88–94",
+      "shortReturnedExtracts": [
+        "Captain 45 e and 85 e",
+        "Register Interest"
+      ],
+      "interpretation": "Direct web extraction matches current AU homepage. Earlier search06 extraction carries a superseded-looking September-ending diesel promotion; no sale/withdrawal inferred.",
+      "originalHtmlCaptured": false,
+      "pdfUsed": false
+    },
+    {
+      "id": "pioneer-ec35",
+      "url": "https://pioneerev.com/pioneer-ev-van-ec35/",
+      "publisherScope": "Australian-address supplier",
+      "webObservationWindowUtc": {
+        "start": "2026-10-12T05:35:50Z",
+        "end": "2026-10-12T05:36:02Z"
+      },
+      "webReturnedCrawlLabel": "last week",
+      "publisherPublicationDate": null,
+      "webEvidenceType": "web_tool_open_extracted_text",
+      "webCapture": "analysis-only-source-captures/open01.web-tool-response.txt",
+      "locator": "lines 39–85",
+      "shortReturnedExtracts": [
+        "Pioneer Electric Vehicle EC35",
+        "Seating Capacity  | 2/4",
+        "Max. Mileage (km) (WLTP)  | 268 (NEDC)"
+      ],
+      "interpretation": "Source names electric van and alternative seating; no named grade, condition or order/stock proof. Range protocol is internally conflicted.",
+      "originalHtmlCaptured": false,
+      "pdfUsed": false,
+      "directHttp": {
+        "url": "https://pioneerev.com/pioneer-ev-van-ec35/",
+        "method": "GET",
+        "requestBody": null,
+        "credentialsUsed": false,
+        "observationClock": "UTC timestamp recorded by Python datetime at start of one unauthenticated GET; response Date header preserved separately when returned.",
+        "error": "HTTP Error 406: Not Acceptable",
+        "requestStartedAtUtc": "2026-10-12T05:36:54.118896+00:00"
+      },
+      "directHttpMetadataPath": "analysis-only-source-captures/pioneer-ec35.http-request-metadata.json"
+    },
+    {
+      "id": "pioneer-home",
+      "url": "https://pioneerev.com/",
+      "publisherScope": "Australian-address supplier",
+      "webObservationWindowUtc": {
+        "start": "2026-10-12T05:35:50Z",
+        "end": "2026-10-12T05:36:02Z"
+      },
+      "webReturnedCrawlLabel": "today",
+      "publisherPublicationDate": null,
+      "webEvidenceType": "web_tool_open_extracted_text",
+      "webCapture": "analysis-only-source-captures/open01.web-tool-response.txt",
+      "locator": "lines 83–90; 109–111",
+      "shortReturnedExtracts": [
+        "EVC Council & Government Approved",
+        "Our chargers fully meet the requirements set out, and strive to do more."
+      ],
+      "interpretation": "Approval wording is about chargers, not the EC35 road vehicle.",
+      "originalHtmlCaptured": false,
+      "pdfUsed": false,
+      "directHttp": {
+        "url": "https://pioneerev.com/",
+        "method": "GET",
+        "requestBody": null,
+        "credentialsUsed": false,
+        "observationClock": "UTC timestamp recorded by Python datetime at start of one unauthenticated GET; response Date header preserved separately when returned.",
+        "error": "HTTP Error 406: Not Acceptable",
+        "requestStartedAtUtc": "2026-10-12T05:37:02.004390+00:00"
+      },
+      "directHttpMetadataPath": "analysis-only-source-captures/pioneer-home.http-request-metadata.json"
+    },
+    {
+      "id": "pioneer-contact",
+      "url": "https://pioneerev.com/contact/",
+      "publisherScope": "Australian-address supplier",
+      "webObservationWindowUtc": {
+        "start": "2026-10-12T05:36:02Z",
+        "end": "2026-10-12T05:36:20Z"
+      },
+      "webReturnedCrawlLabel": "3 months ago",
+      "publisherPublicationDate": null,
+      "webEvidenceType": "web_tool_open_extracted_text",
+      "webCapture": "analysis-only-source-captures/open02.web-tool-response.txt",
+      "locator": "lines 45–77",
+      "shortReturnedExtracts": [
+        "Get A Quote",
+        "Send Us A Message"
+      ],
+      "interpretation": "General contact route only. No vehicle selection or accepted order established; no submission.",
+      "originalHtmlCaptured": false,
+      "pdfUsed": false,
+      "directHttp": {
+        "url": "https://pioneerev.com/contact/",
+        "method": "GET",
+        "requestBody": null,
+        "credentialsUsed": false,
+        "observationClock": "UTC timestamp recorded by Python datetime at start of one unauthenticated GET; response Date header preserved separately when returned.",
+        "error": "HTTP Error 406: Not Acceptable",
+        "requestStartedAtUtc": "2026-10-12T05:37:17.022185+00:00"
+      },
+      "directHttpMetadataPath": "analysis-only-source-captures/pioneer-contact.http-request-metadata.json"
+    },
+    {
+      "id": "pioneer-about",
+      "url": "https://pioneerev.com/about/",
+      "publisherScope": "Australian-address supplier",
+      "webObservationWindowUtc": {
+        "start": "2026-10-12T05:36:02Z",
+        "end": "2026-10-12T05:36:20Z"
+      },
+      "webReturnedCrawlLabel": null,
+      "publisherPublicationDate": null,
+      "webEvidenceType": "web_tool_error",
+      "webCapture": "analysis-only-source-captures/open02.web-tool-response.txt",
+      "locator": "tool error",
+      "shortReturnedExtracts": [
+        "Failed to fetch https://pioneerev.com/about/: (406) Not Acceptable"
+      ],
+      "interpretation": "No about-page evidence established; no repeated access attempt.",
+      "originalHtmlCaptured": false,
+      "pdfUsed": false
+    }
+  ],
+  "searchCaptureFiles": [
+    "analysis-only-source-captures/search01.web-tool-response.txt",
+    "analysis-only-source-captures/search02.web-tool-response.txt",
+    "analysis-only-source-captures/search03.web-tool-response.txt",
+    "analysis-only-source-captures/search04.web-tool-response.txt",
+    "analysis-only-source-captures/search05.web-tool-response.txt",
+    "analysis-only-source-captures/search06.web-tool-response.txt"
+  ],
+  "searchUse": "Discovery only; unrelated search results are not evidence for the selected leads. Secondary 45e future-arrival reporting was not promoted to primary-source status or an order-opening date.",
+  "dateRules": [
+    "Observation date is not publication date, model year, sale date or source refresh date.",
+    "Original HTTP metadata records request start and server Date when returned. Web-tool observations use bounded call windows, not fabricated per-page instants.",
+    "Search06 Bunbury extract and open03 Bunbury extraction differ; both preserved without treating the indexed campaign as current."
+  ],
+  "capturePolicy": "Full web-tool responses and original HTML remain internal; do not upload or import the analysis-only-source-captures directory."
+}

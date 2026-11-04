@@ -1,0 +1,2222 @@
+{
+  "schemaVersion": 8,
+  "createdAt": "2026-10-14T17:38:15.008910+00:00",
+  "status": "WORKING safety recovery preservation verified; derived-only baseline accepted; fresh loader/full TypeScript/top-level report/Subaru integration gates open",
+  "source": {
+    "filename": "Roadmark-recovery-source-WORKING-CONSUMER-20261014T1715.tar.xz",
+    "bytes": 8276332,
+    "sha256": "9c5c2e0c1cf22bd598536cf16ea0a57e8e6011dc07c4befa19f58d905221c495",
+    "group": "source-WORKING-CONSUMER",
+    "library_file_id": "libfile_fa6916ab568481919eae7361b21d3764",
+    "version": 0,
+    "restoreOrder": 39,
+    "file_id": "file_000000006cd081f6b6850ce7e73d34a1"
+  },
+  "archiveCount": 81,
+  "restoredFiles": 6723,
+  "restoredBytes": 2444675582,
+  "documents": [
+    {
+      "filename": "Roadmark-RECOVERY-INDEX-WORKING-CONSUMER-20261014.md",
+      "library_file_id": "libfile_13d9ff22635881919d1d2abbb63b72b5",
+      "version": 0,
+      "bytes": 22437,
+      "sha256": "5c30b239f08c4a6d16717e7ef66589838d589445028a42c0a75d8d698cf3c62a"
+    },
+    {
+      "filename": "Roadmark-RECOVERY-MANIFEST-WORKING-CONSUMER-20261014.json",
+      "library_file_id": "libfile_e915126a4c2c81918d9c8c76372f4653",
+      "version": 0,
+      "bytes": 2169219,
+      "sha256": "f3788d31ca14385dcbc6479bab4883584c9786d28d9798905c3d0ffd1aa06ee1"
+    },
+    {
+      "filename": "Roadmark-RECOVERY-VERIFICATION-WORKING-CONSUMER-20261014.json",
+      "library_file_id": "libfile_3464ad2c5e308191947fb53fe95f3cfc",
+      "version": 0,
+      "bytes": 601172,
+      "sha256": "d09b7b2f635a953397551d364f596dec49c844d1c90a1bd849655f81478a1e7e"
+    }
+  ],
+  "newArchives": [
+    {
+      "filename": "Roadmark-recovery-source-WORKING-CONSUMER-20261014T1715.tar.xz",
+      "bytes": 8276332,
+      "sha256": "9c5c2e0c1cf22bd598536cf16ea0a57e8e6011dc07c4befa19f58d905221c495",
+      "group": "source-WORKING-CONSUMER",
+      "library_file_id": "libfile_fa6916ab568481919eae7361b21d3764",
+      "version": 0,
+      "restoreOrder": 39,
+      "file_id": "file_000000006cd081f6b6850ce7e73d34a1"
+    },
+    {
+      "filename": "Roadmark-recovery-derived-proof-WORKING-CONSUMER-20261014T172035Z-part01of01.tar.xz",
+      "bytes": 658464,
+      "sha256": "808d4896309e35833c7793bf057c34f7013187f2c9247fdf220075d97b9b3b8c",
+      "group": "derived-proof-WORKING-CONSUMER",
+      "library_file_id": "libfile_7906b312e0c881919d9bf46480910ecc",
+      "version": 0,
+      "restoreOrder": 78,
+      "file_id": "file_000000007b1c81fdb9d736b9ff8e47df"
+    },
+    {
+      "filename": "Roadmark-recovery-staging-plan-WORKING-CONSUMER-20261014T172038Z-part01of01.tar.xz",
+      "bytes": 17144,
+      "sha256": "fe37a7e0d7060834fc9a316c6b253c53eb4cce5f27514f2128ebcb8ae532c679",
+      "group": "staging-plan-WORKING-CONSUMER",
+      "library_file_id": "libfile_4a6996cd0e1c8191a3148aa6f0e6bbea",
+      "version": 0,
+      "restoreOrder": 79,
+      "file_id": "file_00000000506481f58f4467c4ffee15c4"
+    },
+    {
+      "filename": "Roadmark-recovery-qa-WORKING-CONSUMER-20261014T172502Z-part01of01.tar.xz",
+      "bytes": 174292,
+      "sha256": "fe6268f3c91f06600d6eabcb27a2a4d73c60aeceebd1dd412a08af2f0465edca",
+      "group": "qa-WORKING-CONSUMER",
+      "library_file_id": "libfile_e5cc6d7de9848191b9302a690ed1f681",
+      "version": 0,
+      "restoreOrder": 80,
+      "file_id": "file_00000000f0308210b009ccc73789afdb"
+    },
+    {
+      "filename": "Roadmark-recovery-support-WORKING-CONSUMER-20261014T172617Z-part01of01.tar.xz",
+      "bytes": 46736,
+      "sha256": "fc8355f3152a7def4d542a18d07704c91ae3cc12bf578d531b4e15b4aed10721",
+      "group": "support-WORKING-CONSUMER",
+      "library_file_id": "libfile_eb12dc8b181081919a27901c00ba5200",
+      "version": 0,
+      "restoreOrder": 81,
+      "file_id": "file_00000000d8f881f4a53a79d7bb7f5704"
+    }
+  ],
+  "workState": {
+    "label": "WORKING safety; application gates open",
+    "lastPassedIntegratedBrand": "Polestar",
+    "latestSourceChange": "Reviewed lightweight evidence-consumer boundary; seven exact source/test paths changed since prior working cut, no data or registry changes",
+    "focusedChecks": {
+      "completedAt": "2026-10-14T16:39:56.301006+00:00",
+      "focusedCore": {
+        "pass": 43,
+        "fail": 0,
+        "skipped": 0,
+        "existingSnapshotTests": 25,
+        "newDifferentialTests": 18,
+        "log": "focused-core-tests-frozen.log"
+      },
+      "focusedGuards": {
+        "pass": 163,
+        "fail": 0,
+        "nodeReportedSkipped": 0,
+        "explicitlyExcludedCount": 3,
+        "explicitlyExcludedTests": [
+          "public research, catalogue, packs and exact-version route enumeration share added IDs",
+          "immutable Tesla source snapshots still pack while current Tesla storage uses the reviewed overlay",
+          "original source defaults and earlier registered feature packets retain their exact evidence baselines"
+        ],
+        "reason": "Each excluded test hydrates the full real catalogue; root authorized focused-only work in this slot. Node filters these names out of its reported totals. Assertions remain unchanged.",
+        "log": "focused-guards.log"
+      },
+      "lint": {
+        "status": "PASS",
+        "files": 6,
+        "log": "focused-lint-final.log",
+        "earlierFailureRetained": "focused-lint.log: reserved module local variable in new test helper; renamed only, then full focused-core tests and lint rerun"
+      },
+      "importProbe": {
+        "finishedAt": "2026-10-14T16:37:53.665780+00:00",
+        "command": [
+          "node",
+          "--max-old-space-size=448",
+          "--max-semi-space-size=1",
+          "--import",
+          "tsx",
+          "import-probe.mjs"
+        ],
+        "cwd": "roadmark-104",
+        "environment": {
+          "TSX_DISABLE_CACHE": "1"
+        },
+        "returnCode": 0,
+        "signal": null,
+        "elapsedSeconds": 1.4333761759917252,
+        "childPeakRssKiB": 178672,
+        "inputsUnchanged": true,
+        "inputCount": 53,
+        "completedProbe": true,
+        "status": "PASS",
+        "scope": "Isolated real consumer module import and factory binding only; no catalogue hydration or full-loader verification"
+      },
+      "commands": "focused-commands.txt",
+      "fullSuitePassed": false,
+      "fullTypecheckPassed": false,
+      "freshFullLoaderPassed": false,
+      "fullValidationOrReportsRun": false,
+      "productionSourceBeyondApprovedPatchChanged": false,
+      "heavySlot": "Released after this receipt; no child process running"
+    },
+    "sourceTransition": {
+      "frozenAt": "2026-10-14T16:39:56.300202+00:00",
+      "status": "Applied exact approved production patch; focused tests/lint and isolated import probe complete; full data-consumer proof pending",
+      "approvedPatchSha256": "373340dbddb8f3dfa50cd572c2ba930a2fc70c052315a902c635bf80504f8ad0",
+      "testSupplementSha256": "dec5d479edd752b964b76bb507319a59b7127727a5930d93a1f4a9e200820ef5",
+      "independentStaticApproval": "independent-static-approval.json",
+      "files": [
+        {
+          "path": "src/lib/data.ts",
+          "beforeSha256": "5298772968b4c7e671bad630726d39f615e2e49a3aa07ecf5b629ee5c502ee24",
+          "afterSha256": "a1deee5939dd30856494d49e152c0b2f51caeaec5ccdff02275689beb70afaab",
+          "scope": "Exact independently approved boundary patch"
+        },
+        {
+          "path": "src/lib/evidence-consumers.ts",
+          "beforeSha256": null,
+          "afterSha256": "50cc11de82511d6eb2843a18c3913f0b55a62bb61147d7a635ef0b7ff0164874",
+          "scope": "Exact independently approved boundary patch"
+        },
+        {
+          "path": "tests/brand-updates.test.ts",
+          "beforeSha256": "6aa61dcd4d38e8676c36a7fe863a4e38d2194272a770b66b152cfb3f6cc7800d",
+          "afterSha256": "89c61578b01d32bf7fe4ca64f9ed087370cfb6dc9ac472bc5e01a77d4bcfd03f",
+          "scope": "Exact independently approved boundary patch"
+        },
+        {
+          "path": "tests/brand-feature-updates.test.ts",
+          "beforeSha256": "c44c6b01d41ac5912c9620d936b39ae419da2cf31403d8d7a4ceb1ddced50576",
+          "afterSha256": "621bc163ab584692ec78a9cb7f1e45a1e036a7de3078791231201dc60f098d2c",
+          "scope": "Exact independently approved boundary patch"
+        },
+        {
+          "path": "tests/catalogue-snapshot.test.ts",
+          "beforeSha256": "01aa06f88a378c329fdc9a170e9ba826e96432ed84d421f0c41753d5ea0464e9",
+          "afterSha256": "8450d8da9be86ce9ecc5f47f032a3bd14a70f19c24f124720c1b7644cf6f5fee",
+          "scope": "Exact independently approved boundary patch"
+        },
+        {
+          "path": "tests/evidence-consumers.test.ts",
+          "beforeSha256": null,
+          "afterSha256": "084e0df6a05ea26cae0f61c7c4e041b7c80ad3d0ee39138413d1531e43da117b",
+          "scope": "Authorized new differential behavior test"
+        },
+        {
+          "path": "tests/fixtures/evidence-consumers/data-before.ts.txt",
+          "beforeSha256": null,
+          "afterSha256": "5298772968b4c7e671bad630726d39f615e2e49a3aa07ecf5b629ee5c502ee24",
+          "scope": "Frozen original program used by differential test; not a byte-pin-only test"
+        }
+      ],
+      "productionFilesMatchApprovedProposal": true,
+      "newTestOracleSource": {
+        "path": "tests/fixtures/evidence-consumers/data-before.ts.txt",
+        "source": "before/src/lib/data.ts",
+        "sha256": "5298772968b4c7e671bad630726d39f615e2e49a3aa07ecf5b629ee5c502ee24",
+        "purpose": "Executes pre-refactor functions under the same small dependency fixtures as current consumers"
+      }
+    },
+    "derivedBaselineAcceptance": {
+      "status": "accepted_derived_only_baseline_for_subaru_staging",
+      "mode": "Derived-only; no fresh full-loader or full typecheck claim",
+      "asOf": "2026-10-15",
+      "timeZone": "Australia/Sydney",
+      "cars": 397,
+      "unchangedNonPolestarCars": 383,
+      "researchFields": 14,
+      "sources": 3432,
+      "originalSubaruCars": 9,
+      "proposedSubaruCars": 11,
+      "allFiveOriginalFilesMatched": true,
+      "actualPolestarPacks": 14,
+      "actualPortableExact": true,
+      "featureRows": 27393,
+      "fullReportsComparedAt": [
+        "2026-10-14",
+        "2026-10-15"
+      ],
+      "sourceFilesUnchangedAcrossConsumerPhases": 518,
+      "historicalInputPinsPreserved": 747,
+      "compositionPinsPreserved": 15,
+      "originalInterruptedRows": 20700,
+      "originalInterruptedPrefixByteEqual": true,
+      "originalInterruptedAttemptStatus": "Unrecoverable session with no terminal; unchanged partial output. ps visibility was incomplete; no signal/cause inferred.",
+      "terminals": {
+        "core": {
+          "file": "core-oracle-composed-v2-attempt1/terminal.json",
+          "sha256": "be9379dd8828211c164404ee5005a4a8f1fdb4034b65e6bb803c4798b459660b",
+          "elapsedSeconds": 67.11932826042175,
+          "maxRssKiB": 430544
+        },
+        "selectedConsumers": {
+          "file": "actual-feature-pack-consumer-v2-attempt1/terminal.json",
+          "sha256": "a63cd9d3de0e101e8274bbf5ced2f26f6ccb691b2cc3fe53f55232d959433489",
+          "elapsedSeconds": 17.757466316223145,
+          "maxRssKiB": 332912
+        },
+        "fullFeatures": {
+          "file": "complete-feature-stream-consumer-recovery-v3-attempt1/terminal.json",
+          "sha256": "1e6b04384a44cb6dbc5eff4294cd855b464363222c29131ff29060eb65bc5bf4",
+          "elapsedSeconds": 188.73948669433594,
+          "maxRssKiB": 365476
+        },
+        "completeReports": {
+          "file": "complete-report-replay-consumer-v2-attempt1/terminal.json",
+          "sha256": "9943d2b657475ca06fcbf57ca2c8ef90edde05650da010587175feb07f31c129",
+          "elapsedSeconds": 11.3324716091156,
+          "maxRssKiB": 393840
+        }
+      },
+      "inputVerificationSha256": "e3fcd8fd7f14facfc46d1110dc5c6b8bc421fff0a00331ce2a534b9adadcd2e3",
+      "consumerPhaseManifestSha256": "fd28e30e7d5af8d146a8ad412831df8fd8174c988cd4b5e8bddd3569ce3027d7",
+      "recoveryManifestSha256": "40175ea533291e4a13f7a8e983d6099254c23c0bd4fb6a2996bd6100d9790f8f",
+      "sourceTransitionReviewSha256": "469137d3313a9bc6bf953b9c50a4a89692680f33052bd52d7f0df165634c2de5",
+      "finalVerificationInputsSha256": "67cc758a2b9e1f69c894834698d1439ddad4b4e084599ee09f76bfbf3a577f24",
+      "finalSourceInventorySha256": "6ac89ff381f6ddaebaa757d31753b2e4b61dd44554e4c3b0a7e46a54ab28c7c1",
+      "processVisibilityCorrectionSha256": "7c9e5ee57c2362670356235a6084ba565f465ed763fdbe08b605e1e5bd983440",
+      "openGates": [
+        "Fresh full-loader/equality verification",
+        "Current complete TypeScript check",
+        "Normal top-level report execution",
+        "Subaru final packet review and registration"
+      ],
+      "acceptedIndexWritten": true,
+      "acceptedAt": "2026-10-14T17:16:58.690085+00:00",
+      "acceptedIndexSha256": "551c8e651e392d1768ed0ea8d81ce65357050e3c5c4ab6074e9d2bc233e78234",
+      "acceptedIndexFile": "accepted-derived-index.json",
+      "phaseReceipts": {
+        "core": {
+          "file": "core-oracle-receipt.json",
+          "sha256": "b0a57886b1118d628b994ff0864b358526242f61d4ff8afd87938a883f04e973"
+        },
+        "selectedConsumers": {
+          "file": "actual-feature-pack-receipt.json",
+          "sha256": "3db0c46cf5672fe2c841d0dc3e95d3254c98aa959a9aa6fbda287006f30be3c1"
+        },
+        "fullFeatures": {
+          "file": "baseline-effective-features-receipt.json",
+          "sha256": "61bb852afaa312324b6433f64cacab5c6aff00c6fa41fef649c5634d80b66c3c"
+        },
+        "completeReports": {
+          "file": "baseline-complete-report-receipt.json",
+          "sha256": "00981cdb53d31008f6268ce334c9f02f263b94c6c664f2e9f0bb13d5b111e724"
+        },
+        "finalVerification": {
+          "file": "final-independent-verification.json",
+          "sha256": "77a1ebfde7e047756b7b8fdd145922d2c8543811a2457dc356f4a1354e748ce5"
+        }
+      },
+      "terminalReceipts": {
+        "core": {
+          "file": "core-oracle-composed-v2-attempt1/terminal.json",
+          "sha256": "be9379dd8828211c164404ee5005a4a8f1fdb4034b65e6bb803c4798b459660b",
+          "elapsedSeconds": 67.11932826042175,
+          "maxRssKiB": 430544
+        },
+        "selectedConsumers": {
+          "file": "actual-feature-pack-consumer-v2-attempt1/terminal.json",
+          "sha256": "a63cd9d3de0e101e8274bbf5ced2f26f6ccb691b2cc3fe53f55232d959433489",
+          "elapsedSeconds": 17.757466316223145,
+          "maxRssKiB": 332912
+        },
+        "fullFeatures": {
+          "file": "complete-feature-stream-consumer-recovery-v3-attempt1/terminal.json",
+          "sha256": "1e6b04384a44cb6dbc5eff4294cd855b464363222c29131ff29060eb65bc5bf4",
+          "elapsedSeconds": 188.73948669433594,
+          "maxRssKiB": 365476
+        },
+        "completeReports": {
+          "file": "complete-report-replay-consumer-v2-attempt1/terminal.json",
+          "sha256": "9943d2b657475ca06fcbf57ca2c8ef90edde05650da010587175feb07f31c129",
+          "elapsedSeconds": 11.3324716091156,
+          "maxRssKiB": 393840
+        },
+        "finalVerification": {
+          "file": "final-independent-verification-attempt1/terminal.json",
+          "sha256": "31d856a989fa3d768a4bd9605c95636dbda7b8b4d87d0e08e5bd62e5cf19fb55"
+        }
+      },
+      "finalVerificationTerminal": {
+        "file": "final-independent-verification-attempt1/terminal.json",
+        "sha256": "31d856a989fa3d768a4bd9605c95636dbda7b8b4d87d0e08e5bd62e5cf19fb55"
+      },
+      "allowedNextStep": "Prepare and independently review a staged Subaru candidate/canonical fixture under the separately approved staging plan; no registry or publication authorization",
+      "currentFullTypecheckVerified": false,
+      "freshCurrentLoaderVerified": false,
+      "normalTopLevelReportVerified": false,
+      "subaruRegistrationAuthorized": false
+    },
+    "acceptedDerivedIndex": {
+      "schemaVersion": 2,
+      "mode": "derived_only_retained_storage",
+      "asOf": "2026-10-15",
+      "timeZone": "Australia/Sydney",
+      "cars": {
+        "anchor": "qa",
+        "file": "catalogue-snapshot-reuse/after448/cars.jsonl",
+        "rows": 397,
+        "bytes": 65021562,
+        "sha256": "33be5eb143c848b80bd9c243b7fdf21e52e1552b462fe467b32879ea6e94243d"
+      },
+      "research": {
+        "schema_version": {
+          "anchor": "research",
+          "file": "capture-phased640-original/replay-snapshot/research-schema_version.jsonl",
+          "array": false,
+          "rows": 1,
+          "bytes": 25,
+          "sha256": "7f4629da1be56b08c0bddf8eb88c56613e89aea67e11e6edcea53a3b9d2caf72"
+        },
+        "metadata": {
+          "anchor": "research",
+          "file": "capture-phased640-original/replay-snapshot/research-metadata.jsonl",
+          "array": false,
+          "rows": 1,
+          "bytes": 1633,
+          "sha256": "4db0331ddf32a93ec5022612f5dfd1a7acfe4969bda46a3bc61e29664f6d084e"
+        },
+        "criteria": {
+          "anchor": "research",
+          "file": "capture-phased640-original/replay-snapshot/research-criteria.jsonl",
+          "array": true,
+          "rows": 69,
+          "bytes": 13829,
+          "sha256": "efcfbbc3f61ce3b8260ba92af91948956bca003ab51ab14682759d076b1a4d22"
+        },
+        "models": {
+          "anchor": "research",
+          "file": "capture-phased640-original/replay-snapshot/research-models.jsonl",
+          "array": true,
+          "rows": 177,
+          "bytes": 31851,
+          "sha256": "3c5f96a9aa658047c1e0abdfa354b96a6fc7060c085bd8355ff12fd12418ab0c"
+        },
+        "variants": {
+          "anchor": "research",
+          "file": "capture-phased640-original/replay-snapshot/research-variants.jsonl",
+          "array": true,
+          "rows": 397,
+          "bytes": 9738573,
+          "sha256": "9148dc42238952d98af9b61977da0b8170e10c27c8e946a653d89ded83b72103"
+        },
+        "trim_equipment": {
+          "anchor": "research",
+          "file": "capture-phased640-original/replay-snapshot/research-trim_equipment.jsonl",
+          "array": true,
+          "rows": 397,
+          "bytes": 73641,
+          "sha256": "95dff16ba089c98bb1212db1d4da567c8289509793bfff2bfed587016e6bf795"
+        },
+        "feature_evidence": {
+          "anchor": "research",
+          "file": "capture-phased640-original/replay-snapshot/research-feature_evidence.jsonl",
+          "array": true,
+          "rows": 27393,
+          "bytes": 12583763,
+          "sha256": "60d81e2ab0d47c037fdab681485d4d67c70800d44802da823004d2ece4138fb0"
+        },
+        "update_eligibility": {
+          "anchor": "research",
+          "file": "capture-phased640-original/replay-snapshot/research-update_eligibility.jsonl",
+          "array": true,
+          "rows": 397,
+          "bytes": 164662,
+          "sha256": "fcb588442b316f4e2d3cfee210e931a5984f5bdbc18e4177e2cf92cc9c1a4d9a"
+        },
+        "update_events": {
+          "anchor": "research",
+          "file": "capture-phased640-original/replay-snapshot/research-update_events.jsonl",
+          "array": true,
+          "rows": 60,
+          "bytes": 66912,
+          "sha256": "03d1ed9daedcceb1a879f56d9933b1e430ee90e54cb8a7b1cba1af816ec6dfdb"
+        },
+        "configuration_history": {
+          "anchor": "research",
+          "file": "capture-phased640-original/replay-snapshot/research-configuration_history.jsonl",
+          "array": true,
+          "rows": 8,
+          "bytes": 1762,
+          "sha256": "41b06edf35bada926f8c1ee3cfe5719bf0b261bf2153d07d9dba3e818e98fc91"
+        },
+        "sources": {
+          "anchor": "research",
+          "file": "capture-phased640-original/replay-snapshot/research-sources.jsonl",
+          "array": true,
+          "rows": 3432,
+          "bytes": 2712080,
+          "sha256": "202be9882f213b1dc9da5f0c89cae3d6d9e2686bc78431ed9eb8278ff1578712"
+        },
+        "publication_issues": {
+          "anchor": "research",
+          "file": "capture-phased640-original/replay-snapshot/research-publication_issues.jsonl",
+          "array": true,
+          "rows": 15,
+          "bytes": 4962,
+          "sha256": "65e00861621477ae639293de6d67e6f55c7830c85cb437f65a81e9fa477a3f31"
+        },
+        "prior_update_summary": {
+          "anchor": "research",
+          "file": "capture-phased640-original/replay-snapshot/research-prior_update_summary.jsonl",
+          "array": true,
+          "rows": 11,
+          "bytes": 12226,
+          "sha256": "7e1b4fc4335f87fdc6624fe06a93267d78c4ab5acca3cdd89bbeb6c75f09b6ea"
+        },
+        "feature_evidence_variant_context": {
+          "anchor": "research",
+          "file": "capture-phased640-original/replay-snapshot/research-feature_evidence_variant_context.jsonl",
+          "array": true,
+          "rows": 397,
+          "bytes": 6387159,
+          "sha256": "5bc3cf6043d1e7ce213d6f345c91ad6da6b551231a7c997bcd90db6ab838ba3f"
+        }
+      },
+      "acceptance": "accepted_derived_only",
+      "acceptedAt": "2026-10-14T17:16:58.690085+00:00",
+      "consumerPhaseManifestSha256": "fd28e30e7d5af8d146a8ad412831df8fd8174c988cd4b5e8bddd3569ce3027d7",
+      "reviewedSourceTransitionSha256": "469137d3313a9bc6bf953b9c50a4a89692680f33052bd52d7f0df165634c2de5",
+      "recoveryManifestSha256": "40175ea533291e4a13f7a8e983d6099254c23c0bd4fb6a2996bd6100d9790f8f",
+      "phaseReceipts": {
+        "core": {
+          "file": "core-oracle-receipt.json",
+          "sha256": "b0a57886b1118d628b994ff0864b358526242f61d4ff8afd87938a883f04e973"
+        },
+        "selectedConsumers": {
+          "file": "actual-feature-pack-receipt.json",
+          "sha256": "3db0c46cf5672fe2c841d0dc3e95d3254c98aa959a9aa6fbda287006f30be3c1"
+        },
+        "fullFeatures": {
+          "file": "baseline-effective-features-receipt.json",
+          "sha256": "61bb852afaa312324b6433f64cacab5c6aff00c6fa41fef649c5634d80b66c3c"
+        },
+        "completeReports": {
+          "file": "baseline-complete-report-receipt.json",
+          "sha256": "00981cdb53d31008f6268ce334c9f02f263b94c6c664f2e9f0bb13d5b111e724"
+        },
+        "finalVerification": {
+          "file": "final-independent-verification.json",
+          "sha256": "77a1ebfde7e047756b7b8fdd145922d2c8543811a2457dc356f4a1354e748ce5"
+        }
+      },
+      "terminalReceipts": {
+        "core": {
+          "file": "core-oracle-composed-v2-attempt1/terminal.json",
+          "sha256": "be9379dd8828211c164404ee5005a4a8f1fdb4034b65e6bb803c4798b459660b",
+          "elapsedSeconds": 67.11932826042175,
+          "maxRssKiB": 430544
+        },
+        "selectedConsumers": {
+          "file": "actual-feature-pack-consumer-v2-attempt1/terminal.json",
+          "sha256": "a63cd9d3de0e101e8274bbf5ced2f26f6ccb691b2cc3fe53f55232d959433489",
+          "elapsedSeconds": 17.757466316223145,
+          "maxRssKiB": 332912
+        },
+        "fullFeatures": {
+          "file": "complete-feature-stream-consumer-recovery-v3-attempt1/terminal.json",
+          "sha256": "1e6b04384a44cb6dbc5eff4294cd855b464363222c29131ff29060eb65bc5bf4",
+          "elapsedSeconds": 188.73948669433594,
+          "maxRssKiB": 365476
+        },
+        "completeReports": {
+          "file": "complete-report-replay-consumer-v2-attempt1/terminal.json",
+          "sha256": "9943d2b657475ca06fcbf57ca2c8ef90edde05650da010587175feb07f31c129",
+          "elapsedSeconds": 11.3324716091156,
+          "maxRssKiB": 393840
+        },
+        "finalVerification": {
+          "file": "final-independent-verification-attempt1/terminal.json",
+          "sha256": "31d856a989fa3d768a4bd9605c95636dbda7b8b4d87d0e08e5bd62e5cf19fb55"
+        }
+      },
+      "fullActualFeatureIndex": {
+        "anchor": "proof",
+        "file": "baseline-effective-features-index.json",
+        "sha256": "9bf520b67d3ca170fe7c4ae8ae16a3afc09d6c4160aaddf852001ca804d02f88"
+      },
+      "completeReports": {
+        "2026-10-14": {
+          "anchor": "proof",
+          "file": "baseline-complete-report-2026-10-14.json",
+          "sha256": "32df7a272d94d6a77f38c828c05c118c458649580a767317c4a5b9fcee047300"
+        },
+        "2026-10-15": {
+          "anchor": "proof",
+          "file": "baseline-complete-report-2026-10-15.json",
+          "sha256": "3e5cf117cb5650b3a6028a1785129779178927177526dab41f7af5773b295214"
+        }
+      },
+      "allFiveOriginalSubaruFilesByteEqual": true,
+      "originalSubaruCars": 9,
+      "proposedSubaruCars": 11,
+      "unchangedNonPolestarCars": 383,
+      "freshV2Capture": false,
+      "finalLoaderEquivalence": false,
+      "currentFullTypecheckVerified": false,
+      "normalTopLevelReportVerified": false,
+      "subaruRegistrationAuthorized": false,
+      "releaseBlockers": [
+        "Fresh full-loader/equality verification",
+        "Current complete TypeScript check",
+        "Normal top-level report execution",
+        "Subaru final packet review and registration"
+      ],
+      "interruptedAttemptStatus": "Unrecoverable session with no terminal; unchanged partial output. ps visibility was incomplete; no signal/cause inferred.",
+      "processVisibilityCorrection": {
+        "file": "process-visibility-correction.json",
+        "sha256": "7c9e5ee57c2362670356235a6084ba565f465ed763fdbe08b605e1e5bd983440"
+      },
+      "sourceTimingLimitation": "No new contemporaneous full pre-application scan was made; exact per-file before/application pins and the successful prior core proof establish historical lineage. This current full scan is contemporaneous with consumer proof preparation. The original 515 inventory includes one regenerable pyc hash record, not archived cache bytes."
+    },
+    "subaruStagingAtCut": {
+      "status": "unexecuted_preparation_only",
+      "checkedAt": "2026-10-14T17:16:31.205990+00:00",
+      "asOf": "2026-10-15",
+      "candidateVersions": 11,
+      "newIdentities": 2,
+      "candidateBuilt": false,
+      "canonicalFixtureGenerated": false,
+      "packetStaged": false,
+      "registered": false,
+      "baselineAcceptanceAtCut": "pending final complete report terminal and independent review",
+      "scripts": "Draft staging architecture and source-safe builder/canonical/core harnesses; syntax checked only, independent staging review pending",
+      "residualCensusGaps": [
+        "Earlier MY24/MY25 Solterra residual-new census remains unresolved; no distinct AU MY23 version established",
+        "Exact no-roof MY26 Uncharted advertised-new supply remains unresolved",
+        "Brand-specific range lists do not establish whole-market C1 closure"
+      ],
+      "releaseGates": [
+        "Independent accepted derived baseline and explicit serialized slot release",
+        "Independent hypothetical 17-to-18 composition/harness review",
+        "Canonical once-only capture and all split staged checks",
+        "Fresh normal-loader equivalence and complete current TypeScript check",
+        "Root final registry/report integration authorization"
+      ],
+      "privacy": "Only code and human-authored status/plan files; no browser captures, cookies, credentials or screenshots",
+      "retention": "Every current regular file is included. No exclusions or omitted transient outputs exist in this staging folder."
+    },
+    "subaruIntegrated": false,
+    "openGates": [
+      "Fresh full-loader/equality verification",
+      "Current complete TypeScript check",
+      "Normal top-level report execution",
+      "Subaru final packet review and registration"
+    ],
+    "aggregateBuildMobilePublication": "No current full aggregate/build/mobile/publication pass",
+    "milestone": "M1 open",
+    "historyNote": "Historical status files keep their original wording. Final derived acceptance supersedes only earlier pending-baseline status, not staging execution or open fresh-loader/typecheck/top-level-report gates.",
+    "interruptedFeatureAttempt": "Unrecoverable session without terminal; original 20,700-row partial unchanged and retained. ps visibility incomplete; no exit signal, process death or cause inferred. Full recovery output separately completed."
+  },
+  "lastPassedRecovery": {
+    "title": "Polestar integrated, separately preserved",
+    "source": {
+      "filename": "Roadmark-recovery-source-polestar-integrated-20261014T1425.tar.xz",
+      "bytes": 8261920,
+      "sha256": "4f4913de01c471c1493399c4389ccb7acb164c89e26158c3c85694d8d9988ca4",
+      "group": "source-polestar-integrated",
+      "library_file_id": "libfile_ae4063f16c788191bc34c7fa11945e0e",
+      "version": 0,
+      "restoreOrder": 39,
+      "file_id": "file_00000000174881f79c815a57006d97a8"
+    },
+    "indexLibraryFileId": "libfile_0e718e3f8c508191866b22ef5f23cd8d",
+    "manifestLibraryFileId": "libfile_32d589a1a9d08191bd34f87ef1e2d629",
+    "verificationLibraryFileId": "libfile_a3303b6186c881918a6cb3b79b9a2a97",
+    "activeReceiptLibraryFileId": "libfile_07a1c0375c4c8191b8d7b4ae4d10b2aa"
+  },
+  "incrementalSave": {
+    "newArchiveCount": 5,
+    "newArchiveBytes": 9172968,
+    "sourceFiles": 652,
+    "qaFiles": 1924,
+    "changedQaFiles": 52,
+    "reusedQaFiles": 1872,
+    "missingQaFiles": [],
+    "proofFiles": 90,
+    "stagingFiles": 10,
+    "supportFiles": 7,
+    "proofCapture": {
+      "result": "PASS",
+      "scope": "subaru-derived-proof-plan",
+      "selection": "Explicit frozen inventory of every regular proof-root file; no omission",
+      "captureStartedAt": "2026-10-14T17:20:35.262722+00:00",
+      "captureCutoff": "2026-10-14T17:20:35.405355+00:00",
+      "files": [
+        {
+          "path": "accepted-derived-index.json",
+          "bytes": 8802,
+          "sha256": "551c8e651e392d1768ed0ea8d81ce65357050e3c5c4ab6074e9d2bc233e78234",
+          "sourceMtimeNs": 1791998218693891579
+        },
+        {
+          "path": "actual-feature-pack-consumer-v2-attempt1/stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "sourceMtimeNs": 1791996185176872009
+        },
+        {
+          "path": "actual-feature-pack-consumer-v2-attempt1/stdout.log",
+          "bytes": 408,
+          "sha256": "f108df3c8a8d44c0587e20edc9dbb1e1eecb036f58136d930f93e8a5035b77de",
+          "sourceMtimeNs": 1791996202856586666
+        },
+        {
+          "path": "actual-feature-pack-consumer-v2-attempt1/terminal.json",
+          "bytes": 593,
+          "sha256": "a63cd9d3de0e101e8274bbf5ced2f26f6ccb691b2cc3fe53f55232d959433489",
+          "sourceMtimeNs": 1791996202939595813
+        },
+        {
+          "path": "actual-feature-pack-phase-consumer-v2.mjs",
+          "bytes": 4762,
+          "sha256": "2393338f987d57d1c2fbfd333eb09ffbc1d59c18d09965163fa2ff6adbaa193f",
+          "sourceMtimeNs": 1791995442549344284
+        },
+        {
+          "path": "actual-feature-pack-phase.mjs",
+          "bytes": 4764,
+          "sha256": "5a97eab48b1c6846bfee0d7add0d69c854088c83d4b8a4849730d8741fad9388",
+          "sourceMtimeNs": 1791993847101759905
+        },
+        {
+          "path": "actual-feature-pack-receipt.json",
+          "bytes": 1414,
+          "sha256": "3db0c46cf5672fe2c841d0dc3e95d3254c98aa959a9aa6fbda287006f30be3c1",
+          "sourceMtimeNs": 1791996202856586666
+        },
+        {
+          "path": "actual-single-packet-metadata-v2.jsonl",
+          "bytes": 1288,
+          "sha256": "178a0e344770d1d81191170ec40e0456b50d9c416993bd3734b3f4259e589f80",
+          "sourceMtimeNs": 1791994813987739204
+        },
+        {
+          "path": "actual-single-packet-output-index-v2.json",
+          "bytes": 4489,
+          "sha256": "a1793c8a3e5be99636f9d49abe1d527abddf3ad6c26ac716e2cc6ec9c012c97f",
+          "sourceMtimeNs": 1791994874178745571
+        },
+        {
+          "path": "additional-report-phase-helpers.mjs",
+          "bytes": 2871,
+          "sha256": "ad651e7eb24660e657bb5c050cb9362265604768719802cb0fa473efb6f55ead",
+          "sourceMtimeNs": 1791994166188118219
+        },
+        {
+          "path": "baseline-complete-report-2026-10-14.json",
+          "bytes": 1614985,
+          "sha256": "32df7a272d94d6a77f38c828c05c118c458649580a767317c4a5b9fcee047300",
+          "sourceMtimeNs": 1791997991794266500
+        },
+        {
+          "path": "baseline-complete-report-2026-10-15.json",
+          "bytes": 1614985,
+          "sha256": "3e5cf117cb5650b3a6028a1785129779178927177526dab41f7af5773b295214",
+          "sourceMtimeNs": 1791997992702251649
+        },
+        {
+          "path": "baseline-complete-report-receipt.json",
+          "bytes": 2508,
+          "sha256": "00981cdb53d31008f6268ce334c9f02f263b94c6c664f2e9f0bb13d5b111e724",
+          "sourceMtimeNs": 1791997995994197752
+        },
+        {
+          "path": "baseline-effective-features-index.json",
+          "bytes": 131578,
+          "sha256": "9bf520b67d3ca170fe7c4ae8ae16a3afc09d6c4160aaddf852001ca804d02f88",
+          "sourceMtimeNs": 1791997935103192493
+        },
+        {
+          "path": "baseline-effective-features-receipt.json",
+          "bytes": 1493,
+          "sha256": "61bb852afaa312324b6433f64cacab5c6aff00c6fa41fef649c5634d80b66c3c",
+          "sourceMtimeNs": 1791997935107192427
+        },
+        {
+          "path": "baseline-effective-features-recovery-v3.jsonl",
+          "bytes": 15264299,
+          "sha256": "b2cf1f94e4be642f03077168bb390e3a99cd897a5707f1a4057d275a4bec6a3b",
+          "sourceMtimeNs": 1791997926727331159
+        },
+        {
+          "path": "baseline-effective-features.jsonl",
+          "bytes": 11553639,
+          "sha256": "6ca6b35c8e7bbf20d682f3683e26d662e77d0f4d80f37a75401871849181fe0f",
+          "sourceMtimeNs": 1791996325542522000
+        },
+        {
+          "path": "complete-feature-stream-consumer-recovery-v3-attempt1/stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "sourceMtimeNs": 1791997746634313721
+        },
+        {
+          "path": "complete-feature-stream-consumer-recovery-v3-attempt1/stdout.log",
+          "bytes": 2463,
+          "sha256": "a77ad46428c5f805316f0118faa30f114b4f6ecbce8ff4562af6665469759381",
+          "sourceMtimeNs": 1791997935111192362
+        },
+        {
+          "path": "complete-feature-stream-consumer-recovery-v3-attempt1/terminal.json",
+          "bytes": 613,
+          "sha256": "1e6b04384a44cb6dbc5eff4294cd855b464363222c29131ff29060eb65bc5bf4",
+          "sourceMtimeNs": 1791997935376507403
+        },
+        {
+          "path": "complete-feature-stream-consumer-v2-attempt1/interruption-observation.json",
+          "bytes": 1366,
+          "sha256": "bcb6a8a40e06c8827a73265da790d2621042dd5ef5ba18d672918da58712352c",
+          "sourceMtimeNs": 1791997571881440479
+        },
+        {
+          "path": "complete-feature-stream-consumer-v2-attempt1/stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "sourceMtimeNs": 1791996212268430219
+        },
+        {
+          "path": "complete-feature-stream-consumer-v2-attempt1/stdout.log",
+          "bytes": 1930,
+          "sha256": "c97e4ec78d72e2b3366dd752b67346a6aca33259465fe15789e8ae4ec7f249c3",
+          "sourceMtimeNs": 1791996325586521261
+        },
+        {
+          "path": "complete-report-replay-consumer-v2-attempt1/stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "sourceMtimeNs": 1791997984730380657
+        },
+        {
+          "path": "complete-report-replay-consumer-v2-attempt1/stdout.log",
+          "bytes": 206,
+          "sha256": "673bf41751ae490640110daca26cd7668cec1a82cd7a1122d4971cc936bc9894",
+          "sourceMtimeNs": 1791997995994197752
+        },
+        {
+          "path": "complete-report-replay-consumer-v2-attempt1/terminal.json",
+          "bytes": 599,
+          "sha256": "9943d2b657475ca06fcbf57ca2c8ef90edde05650da010587175feb07f31c129",
+          "sourceMtimeNs": 1791997996062196638
+        },
+        {
+          "path": "composition-rule-v2.md",
+          "bytes": 4565,
+          "sha256": "2ea35c69268e8c9aba70ccf754eddb7f804e417fc3b359ce1ffe07e5a177ae6f",
+          "sourceMtimeNs": 1791994713234286039
+        },
+        {
+          "path": "composition-transition-v2.json",
+          "bytes": 7463,
+          "sha256": "a80487946358a0856a6fad1ce170b3e01550f7cf472ee1412352db71089ab515",
+          "sourceMtimeNs": 1791994874178745571
+        },
+        {
+          "path": "composition-v2-independent-review.json",
+          "bytes": 3403,
+          "sha256": "f945618126dca7f61c8096b6ad0a7aabb851a1faebc4d3cfcb18f8d1c5dbd521",
+          "sourceMtimeNs": 1791994768974059506
+        },
+        {
+          "path": "composition-v2-inputs.json",
+          "bytes": 3413,
+          "sha256": "d5dfa1eb900fc939264083992bffa3296972f1d0bf32a8cf076aeb871dc7fa09",
+          "sourceMtimeNs": 1791994807073073151
+        },
+        {
+          "path": "consumer-current-inventory-attempt1/stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "sourceMtimeNs": 1791996095798393809
+        },
+        {
+          "path": "consumer-current-inventory-attempt1/stdout.log",
+          "bytes": 18,
+          "sha256": "4bad5a6dd7b36320d78f2fc6f648e2d03c767d22aac797d499e59534ed174348",
+          "sourceMtimeNs": 1791996096386384312
+        },
+        {
+          "path": "consumer-current-inventory-attempt1/terminal.json",
+          "bytes": 589,
+          "sha256": "c33239b47ea1989d05f4016ab606b0749dcdefbe7433e1ce654e4485ef251b3f",
+          "sourceMtimeNs": 1791996096393789215
+        },
+        {
+          "path": "consumer-current-source-inventory.json",
+          "bytes": 87729,
+          "sha256": "7befa004039cfccc6f0b04bb519847e493fa060074fe3595efa5a40993041f07",
+          "sourceMtimeNs": 1791996096386384312
+        },
+        {
+          "path": "consumer-final-inventory-attempt1/stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "sourceMtimeNs": 1791998084240766995
+        },
+        {
+          "path": "consumer-final-inventory-attempt1/stdout.log",
+          "bytes": 18,
+          "sha256": "4bad5a6dd7b36320d78f2fc6f648e2d03c767d22aac797d499e59534ed174348",
+          "sourceMtimeNs": 1791998085280420328
+        },
+        {
+          "path": "consumer-final-inventory-attempt1/terminal.json",
+          "bytes": 575,
+          "sha256": "1b63de81efe0be7cb812cafb66827d1f16aa31903f98375ab6618e1ee471f9c6",
+          "sourceMtimeNs": 1791998085289134422
+        },
+        {
+          "path": "consumer-final-source-inventory.json",
+          "bytes": 87729,
+          "sha256": "6ac89ff381f6ddaebaa757d31753b2e4b61dd44554e4c3b0a7e46a54ab28c7c1",
+          "sourceMtimeNs": 1791998085280420328
+        },
+        {
+          "path": "consumer-helper-selected-independent-review.json",
+          "bytes": 2391,
+          "sha256": "8cb60573681662b9a17b8ebc356f4ea880539bf1a155f105fc02c07b0837e629",
+          "sourceMtimeNs": 1791995826978746423
+        },
+        {
+          "path": "consumer-phase-manifest.json",
+          "bytes": 20289,
+          "sha256": "fd28e30e7d5af8d146a8ad412831df8fd8174c988cd4b5e8bddd3569ce3027d7",
+          "sourceMtimeNs": 1791996163135805998
+        },
+        {
+          "path": "consumer-proof-execution-plan.md",
+          "bytes": 3105,
+          "sha256": "91b768adfd1ca59d72221624fdc2b6c0285847e38ef391247b04c41758987319",
+          "sourceMtimeNs": 1791995771471644229
+        },
+        {
+          "path": "consumer-refactor-acceptance-plan.md",
+          "bytes": 4619,
+          "sha256": "30d10dd6e46118f6c1a7fecfce0d050d1689712a5818136cc7ba804563c6269d",
+          "sourceMtimeNs": 1791994961969350343
+        },
+        {
+          "path": "consumer-source-transition-review.json",
+          "bytes": 4162,
+          "sha256": "469137d3313a9bc6bf953b9c50a4a89692680f33052bd52d7f0df165634c2de5",
+          "sourceMtimeNs": 1791996163112387842
+        },
+        {
+          "path": "consumer-stream-report-independent-review.json",
+          "bytes": 1710,
+          "sha256": "d96b04fc20b6adbaf9cfc07b86c354f1919c3ef6e336626b1de580f021e4dab7",
+          "sourceMtimeNs": 1791995680473536069
+        },
+        {
+          "path": "consumer-transition-helpers.mjs",
+          "bytes": 5920,
+          "sha256": "5e9623fcd58980e15e8cb50acdc216dcfaaf9876c8ad671912e3c62ce17a001e",
+          "sourceMtimeNs": 1791995603829047044
+        },
+        {
+          "path": "consumer-transition-preflight-attempt1/stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "sourceMtimeNs": 1791996161645302571
+        },
+        {
+          "path": "consumer-transition-preflight-attempt1/stdout.log",
+          "bytes": 322,
+          "sha256": "3030838f0153d7b8584e94458b4257bf65e8b8fe0f8499b8b7dec52dd38ff189",
+          "sourceMtimeNs": 1791996163135805998
+        },
+        {
+          "path": "consumer-transition-preflight-attempt1/terminal.json",
+          "bytes": 478,
+          "sha256": "80047895f68c870d734978a80775836c89c538f755ab7d5ac6f295c0d87ce85b",
+          "sourceMtimeNs": 1791996163142444831
+        },
+        {
+          "path": "core-oracle-attempt1/stderr.log",
+          "bytes": 6495,
+          "sha256": "8bbab260d2e4525209cdf7ac82f75b41cb0a3183b1621a2dcaacd9b1ba1add8f",
+          "sourceMtimeNs": 1791993876059672396
+        },
+        {
+          "path": "core-oracle-attempt1/stdout.log",
+          "bytes": 381,
+          "sha256": "a624d8bad76159931cb84f1d2e2ca0f76bc6e17ffaffbcad22ae0ef4b42b02f3",
+          "sourceMtimeNs": 1791993876007673236
+        },
+        {
+          "path": "core-oracle-attempt1/terminal.json",
+          "bytes": 566,
+          "sha256": "728d3dc0fc6ff3577a62f61926ba8f1c7bacb90eeb31514e9128e29fbd8b81ef",
+          "sourceMtimeNs": 1791993876095386302
+        },
+        {
+          "path": "core-oracle-composed-v2-attempt1/stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "sourceMtimeNs": 1791994807123853479
+        },
+        {
+          "path": "core-oracle-composed-v2-attempt1/stdout.log",
+          "bytes": 1051,
+          "sha256": "09f36954a364369ee82d0b698e8beb6d08eaca02ee2fa3aefdcedddb95c72253",
+          "sourceMtimeNs": 1791994874182745505
+        },
+        {
+          "path": "core-oracle-composed-v2-attempt1/terminal.json",
+          "bytes": 580,
+          "sha256": "be9379dd8828211c164404ee5005a4a8f1fdb4034b65e6bb803c4798b459660b",
+          "sourceMtimeNs": 1791994874248664608
+        },
+        {
+          "path": "core-oracle-composed-v2.mts",
+          "bytes": 11780,
+          "sha256": "57455cfaca4c80af096f2d09a2f4e70f3f184caaba5f50268f7881234dc6b25c",
+          "sourceMtimeNs": 1791994713234196537
+        },
+        {
+          "path": "core-oracle-receipt.json",
+          "bytes": 120857,
+          "sha256": "b0a57886b1118d628b994ff0864b358526242f61d4ff8afd87938a883f04e973",
+          "sourceMtimeNs": 1791994874182745505
+        },
+        {
+          "path": "core-oracle.mts",
+          "bytes": 5929,
+          "sha256": "e5f13b5f9d5706244404da285e62681b10254bf58c57844dbae8b7e8fa156015",
+          "sourceMtimeNs": 1791993847101717471
+        },
+        {
+          "path": "derived-baseline-acceptance.json",
+          "bytes": 5716,
+          "sha256": "b8138503a61635d79dbc862f212c2a911b2051c39d1ee981ab5005483c48554b",
+          "sourceMtimeNs": 1791998218694095700
+        },
+        {
+          "path": "derived-index.awaiting-terminal-review.json",
+          "bytes": 5454,
+          "sha256": "ada9e91595b2c9a1b0028c41e53f03cc71369986bd9829a157acc6357c1478ca",
+          "sourceMtimeNs": 1791996202856586666
+        },
+        {
+          "path": "derived-storage-index.pending.json",
+          "bytes": 4493,
+          "sha256": "9f8f462bed1b33b5803ed2afad99caeeb116d06c5894584f77d07a8cd63d5706",
+          "sourceMtimeNs": 1791994874178745571
+        },
+        {
+          "path": "feature-recovery-v3-independent-review.json",
+          "bytes": 1834,
+          "sha256": "98f02ef6c8cd60ac031f8f32368a3e8c5c403500a52857309e9ba229cd64eef5",
+          "sourceMtimeNs": 1791997699360179419
+        },
+        {
+          "path": "feature-recovery-v3-inputs.json",
+          "bytes": 3268,
+          "sha256": "40175ea533291e4a13f7a8e983d6099254c23c0bd4fb6a2996bd6100d9790f8f",
+          "sourceMtimeNs": 1791997746546711839
+        },
+        {
+          "path": "feature-recovery-v3-root-review.json",
+          "bytes": 756,
+          "sha256": "36e712f667e07a33a2473b5108772a7267b79d39ac8b75d81ea56e3ccf6ff5b9",
+          "sourceMtimeNs": 1791997746512898897
+        },
+        {
+          "path": "feature-recovery-v3.patch",
+          "bytes": 6042,
+          "sha256": "ae3f61e39ed09e0aa43c43bbe65ec42a37289c31cd7d440430c13b4a82382bcb",
+          "sourceMtimeNs": 1791997628356374147
+        },
+        {
+          "path": "final-independent-verification-attempt1/stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "sourceMtimeNs": 1791998173651305809
+        },
+        {
+          "path": "final-independent-verification-attempt1/stdout.log",
+          "bytes": 2887,
+          "sha256": "77a1ebfde7e047756b7b8fdd145922d2c8543811a2457dc356f4a1354e748ce5",
+          "sourceMtimeNs": 1791998176550324588
+        },
+        {
+          "path": "final-independent-verification-attempt1/terminal.json",
+          "bytes": 477,
+          "sha256": "31d856a989fa3d768a4bd9605c95636dbda7b8b4d87d0e08e5bd62e5cf19fb55",
+          "sourceMtimeNs": 1791998176558678272
+        },
+        {
+          "path": "final-independent-verification.json",
+          "bytes": 2887,
+          "sha256": "77a1ebfde7e047756b7b8fdd145922d2c8543811a2457dc356f4a1354e748ce5",
+          "sourceMtimeNs": 1791998176550324588
+        },
+        {
+          "path": "final-verification-inputs.json",
+          "bytes": 3768,
+          "sha256": "67cc758a2b9e1f69c894834698d1439ddad4b4e084599ee09f76bfbf3a577f24",
+          "sourceMtimeNs": 1791998173596559328
+        },
+        {
+          "path": "fresh-research-attempt1/stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "sourceMtimeNs": 1791994090476183465
+        },
+        {
+          "path": "fresh-research-attempt1/stdout.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "sourceMtimeNs": 1791994090476183465
+        },
+        {
+          "path": "fresh-research-attempt1/terminal.json",
+          "bytes": 572,
+          "sha256": "14a0ec7f0c914e7623967eff73bcff3d406767e72755bea4c6fda152bdc5bfce",
+          "sourceMtimeNs": 1791994094079416955
+        },
+        {
+          "path": "fresh-research-only.mjs",
+          "bytes": 3108,
+          "sha256": "6d862579c2bda17625e9821d8d98daa1fdaf289d7a5828014eed0c9273c4c1af",
+          "sourceMtimeNs": 1791994090398499923
+        },
+        {
+          "path": "helpers.mjs",
+          "bytes": 3075,
+          "sha256": "e212cabc6b3eb6dae2d4fc4bbe96695c0b27d520dfd9993b592c91c076052edc",
+          "sourceMtimeNs": 1791993619255884902
+        },
+        {
+          "path": "input-verification.json",
+          "bytes": 173040,
+          "sha256": "e3fcd8fd7f14facfc46d1110dc5c6b8bc421fff0a00331ce2a534b9adadcd2e3",
+          "sourceMtimeNs": 1791993850164791705
+        },
+        {
+          "path": "preflight-attempt1/stderr.log",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "sourceMtimeNs": 1791993847152134800
+        },
+        {
+          "path": "preflight-attempt1/stdout.log",
+          "bytes": 30,
+          "sha256": "dfdbfd35b8f3ed090c7668f380aaf4940c8263adf86520a98f607af428dec9b7",
+          "sourceMtimeNs": 1791993850164791705
+        },
+        {
+          "path": "preflight-attempt1/terminal.json",
+          "bytes": 473,
+          "sha256": "be930bd0a7feddf65536c7b9dc0ec130b2e559e2ca0f5fb894d6c625a393dbe0",
+          "sourceMtimeNs": 1791993850176691115
+        },
+        {
+          "path": "prepare-consumer-phase-manifest.py",
+          "bytes": 8443,
+          "sha256": "840db6d4804761de550af144c59cc2a00b2606d1aa1738e1196427bf90dbeaa6",
+          "sourceMtimeNs": 1791996161609414833
+        },
+        {
+          "path": "process-visibility-correction.json",
+          "bytes": 1280,
+          "sha256": "7c9e5ee57c2362670356235a6084ba565f465ed763fdbe08b605e1e5bd983440",
+          "sourceMtimeNs": 1791997948831755416
+        },
+        {
+          "path": "replay-complete-baseline-reports-consumer-v2.mjs",
+          "bytes": 7574,
+          "sha256": "96798dd145d12b2d0d61c1fe4a971072db1cb9bc6fa1637c89734652ea7a01c9",
+          "sourceMtimeNs": 1791995618889646575
+        },
+        {
+          "path": "replay-complete-baseline-reports.mjs",
+          "bytes": 5869,
+          "sha256": "36eb5ee93006dab34cbf594e510ccb0edc1c61054a9230a647dc32bd2d8429d2",
+          "sourceMtimeNs": 1791994166188215304
+        },
+        {
+          "path": "research-phase-inputs.json",
+          "bytes": 1695,
+          "sha256": "7550dec2aaff292e604a9ebe7996a791bdb048df45cfcdbb7b47f5481a550b5a",
+          "sourceMtimeNs": 1791994090435268397
+        },
+        {
+          "path": "reviewed-phase-script-list.json",
+          "bytes": 725,
+          "sha256": "2b9da0a96da84e13d9cac7242f9260550e87d270c821b5f959fb78291a70e3b6",
+          "sourceMtimeNs": 1791993747002362507
+        },
+        {
+          "path": "run-measured.py",
+          "bytes": 1107,
+          "sha256": "fc423ccdda167275091ef6b813a50b402876acf4bcf0deb91e0df35fa43a4f9d",
+          "sourceMtimeNs": 1791993746997770184
+        },
+        {
+          "path": "stream-baseline-effective-features-consumer-recovery-v3.mjs",
+          "bytes": 7117,
+          "sha256": "868a1d3f7addb048d534d34ac2b7c0f62e325b9f7c8711dc4ad7da32ce117988",
+          "sourceMtimeNs": 1791997628345048918
+        },
+        {
+          "path": "stream-baseline-effective-features-consumer-v2.mjs",
+          "bytes": 6652,
+          "sha256": "6f38bf337a6bfce014cb2af345ad27b8b4c8d394e2f9c92a16eae556994b2a97",
+          "sourceMtimeNs": 1791995618889606905
+        },
+        {
+          "path": "stream-baseline-effective-features.mjs",
+          "bytes": 5293,
+          "sha256": "b171a273d10b075806b4645779ca2845294855dc67ea2498a9d69dba6722f339",
+          "sourceMtimeNs": 1791994166188165640
+        },
+        {
+          "path": "verify-derived-only-inputs.py",
+          "bytes": 13965,
+          "sha256": "ff14368bebb4fad1cfc905dbfe4af309fdb358a2847e38a62e6f2cc693cb0f0e",
+          "sourceMtimeNs": 1791993651820583877
+        },
+        {
+          "path": "verify-final-derived-baseline.py",
+          "bytes": 9368,
+          "sha256": "71f77729db7ba57b81146561351cdeab32dba6b2dc32a1d0316a4012489ca199",
+          "sourceMtimeNs": 1791998173561722230
+        }
+      ],
+      "originalPathsExcluded": [],
+      "sourceChangesDuringCapture": []
+    },
+    "stagingCapture": {
+      "result": "PASS",
+      "scope": "subaru-staging-plan",
+      "selection": "Explicit original staging10-file allowlist",
+      "captureStartedAt": "2026-10-14T17:20:38.500390+00:00",
+      "captureCutoff": "2026-10-14T17:20:38.503454+00:00",
+      "files": [
+        {
+          "path": "STAGING-STATUS.json",
+          "bytes": 1448,
+          "sha256": "07282db695460e7e08b4a1ae4a262db9fdac3eb805906691fbfbb0371f1e4dcf",
+          "sourceMtimeNs": 1791998191206129914
+        },
+        {
+          "path": "build-packet-derived-v2.py",
+          "bytes": 17713,
+          "sha256": "8ff15c24f942535594fd4cd33b3955bf62b7e2ad79a9f58b5766100639140651",
+          "sourceMtimeNs": 1791997901683084415
+        },
+        {
+          "path": "capture-canonical-subaru.mjs",
+          "bytes": 5461,
+          "sha256": "e669df21b4dc2771c5ae15fbce59bcbba7b6176802a35442ee0906db055483f6",
+          "sourceMtimeNs": 1791997894702490216
+        },
+        {
+          "path": "compose-subaru-research.mjs",
+          "bytes": 4652,
+          "sha256": "19eadc693f90413eab70428ecbb63ff7677dc484054ff0eb0a4d1ed887109f7b",
+          "sourceMtimeNs": 1791997775833040732
+        },
+        {
+          "path": "composition-17-to-18.md",
+          "bytes": 2245,
+          "sha256": "7c8844467d103bccac9d3eab5086c86f981e94f98b932fc72af7c8684827432f",
+          "sourceMtimeNs": 1791997775834741839
+        },
+        {
+          "path": "retained-files.txt",
+          "bytes": 229,
+          "sha256": "97a03a3f629e0daecc1e5eeec1147ecba3ca5519e4bee61860bd4b607610c9b3",
+          "sourceMtimeNs": 1791998191206170444
+        },
+        {
+          "path": "split-stage-plan.md",
+          "bytes": 6114,
+          "sha256": "205117ed48eb36bad4b44aadf2f57886bcf6f53b3ed121bfc30b38ba5dd82bdd",
+          "sourceMtimeNs": 1791995848065709033
+        },
+        {
+          "path": "stage-core-subaru.mjs",
+          "bytes": 8383,
+          "sha256": "b6ac88736b4acf089fe6cf9f742405d43441313e7d6ec13614f53d92b9382a69",
+          "sourceMtimeNs": 1791998121453200723
+        },
+        {
+          "path": "stage-proof-helpers.mjs",
+          "bytes": 4045,
+          "sha256": "e96821c8cb74aad5449d82d01643ed1068d1c0851e0dcc66e5c8d519c3bbb4ed",
+          "sourceMtimeNs": 1791997863822634482
+        },
+        {
+          "path": "stage_inputs.py",
+          "bytes": 3489,
+          "sha256": "b8c07c7ae9b1a4b07e5f070ae7004b0c040272a5fbc3e0f5c6133b63be897140",
+          "sourceMtimeNs": 1791996144029381144
+        }
+      ],
+      "originalPathsExcluded": [],
+      "sourceChangesDuringCapture": []
+    },
+    "oldSubaruResearchFilesReused": 198,
+    "unchangedArchivesReuploaded": 0,
+    "postCutoff": "Later staging/candidate files and edits are intentionally outside this frozen working cut."
+  },
+  "optionalReconstruction": {
+    "purpose": "Three byte-exact duplicate failed-run prefixes are reconstructible, outside normal restored-file count; all original terminal/status evidence retained",
+    "proof": {
+      "result": "PASS",
+      "scope": "Exact stored-byte prefix reconstruction only; not run completion, parsed row equality, complete fresh data equality, loader correctness, or typecheck",
+      "startedAt": "2026-10-14T15:49:39.633149+00:00",
+      "chunkBytes": 1048576,
+      "parallelWorkers": 0,
+      "originalsModifiedOrDeleted": false,
+      "inputs": {
+        "after448/cars.jsonl": {
+          "path": "after448/cars.jsonl",
+          "bytes": 65021562,
+          "sha256": "33be5eb143c848b80bd9c243b7fdf21e52e1552b462fe467b32879ea6e94243d",
+          "newlineBytes": 397,
+          "endsWithNewline": true,
+          "statBefore": {
+            "bytes": 65021562,
+            "mtimeNs": 1791990446445142055,
+            "ctimeNs": 1791990446445142055,
+            "inode": 932940,
+            "device": 27
+          },
+          "statAfter": {
+            "bytes": 65021562,
+            "mtimeNs": 1791990446445142055,
+            "ctimeNs": 1791990446445142055,
+            "inode": 932940,
+            "device": 27
+          },
+          "statStable": true
+        },
+        "v2-fresh-cars/cars.jsonl": {
+          "path": "v2-fresh-cars/cars.jsonl",
+          "bytes": 31203073,
+          "sha256": "98a5bca3e871259047ecb705397109edf70a935ab8793e27e01f1effee5e3201",
+          "newlineBytes": 312,
+          "endsWithNewline": true,
+          "statBefore": {
+            "bytes": 31203073,
+            "mtimeNs": 1791991423348941556,
+            "ctimeNs": 1791991423348941556,
+            "inode": 933000,
+            "device": 27
+          },
+          "statAfter": {
+            "bytes": 31203073,
+            "mtimeNs": 1791991423348941556,
+            "ctimeNs": 1791991423348941556,
+            "inode": 933000,
+            "device": 27
+          },
+          "statStable": true
+        },
+        "v2-fresh-cars-gc50/cars.jsonl": {
+          "path": "v2-fresh-cars-gc50/cars.jsonl",
+          "bytes": 41614064,
+          "sha256": "75ed5f07fd89f1cb84818fd2d412cf766277821b2ce6af2109469326a7cc156d",
+          "newlineBytes": 328,
+          "endsWithNewline": true,
+          "statBefore": {
+            "bytes": 41614064,
+            "mtimeNs": 1791991653057015956,
+            "ctimeNs": 1791991653057015956,
+            "inode": 933011,
+            "device": 27
+          },
+          "statAfter": {
+            "bytes": 41614064,
+            "mtimeNs": 1791991653057015956,
+            "ctimeNs": 1791991653057015956,
+            "inode": 933011,
+            "device": 27
+          },
+          "statStable": true
+        },
+        "v2-fresh-cars-gc50-416/cars.jsonl": {
+          "path": "v2-fresh-cars-gc50-416/cars.jsonl",
+          "bytes": 45547876,
+          "sha256": "51b9bc806e3e533c3821c0481ad8a1788b402170e956dc8748222f2a15919317",
+          "newlineBytes": 332,
+          "endsWithNewline": true,
+          "statBefore": {
+            "bytes": 45547876,
+            "mtimeNs": 1791992024742961354,
+            "ctimeNs": 1791992024742961354,
+            "inode": 933021,
+            "device": 27
+          },
+          "statAfter": {
+            "bytes": 45547876,
+            "mtimeNs": 1791992024742961354,
+            "ctimeNs": 1791992024742961354,
+            "inode": 933021,
+            "device": 27
+          },
+          "statStable": true
+        }
+      },
+      "allInputsStatStable": true,
+      "sourceFile": {
+        "path": "after448/cars.jsonl",
+        "bytes": 65021562,
+        "sha256": "33be5eb143c848b80bd9c243b7fdf21e52e1552b462fe467b32879ea6e94243d",
+        "newlineBytes": 397,
+        "endsWithNewline": true,
+        "statBefore": {
+          "bytes": 65021562,
+          "mtimeNs": 1791990446445142055,
+          "ctimeNs": 1791990446445142055,
+          "inode": 932940,
+          "device": 27
+        },
+        "statAfter": {
+          "bytes": 65021562,
+          "mtimeNs": 1791990446445142055,
+          "ctimeNs": 1791990446445142055,
+          "inode": 932940,
+          "device": 27
+        },
+        "statStable": true,
+        "restorePath": "roadmark-104-qa/catalogue-snapshot-reuse/after448/cars.jsonl"
+      },
+      "mappings": [
+        {
+          "path": "v2-fresh-cars/cars.jsonl",
+          "bytes": 31203073,
+          "sha256": "98a5bca3e871259047ecb705397109edf70a935ab8793e27e01f1effee5e3201",
+          "newlineBytes": 312,
+          "endsWithNewline": true,
+          "statBefore": {
+            "bytes": 31203073,
+            "mtimeNs": 1791991423348941556,
+            "ctimeNs": 1791991423348941556,
+            "inode": 933000,
+            "device": 27
+          },
+          "statAfter": {
+            "bytes": 31203073,
+            "mtimeNs": 1791991423348941556,
+            "ctimeNs": 1791991423348941556,
+            "inode": 933000,
+            "device": 27
+          },
+          "statStable": true,
+          "restorePath": "roadmark-104-qa/catalogue-snapshot-reuse/v2-fresh-cars/cars.jsonl",
+          "exactPrefix": true,
+          "firstDifferentByteOffset": null,
+          "retainedSourcePrefixSHA256": "98a5bca3e871259047ecb705397109edf70a935ab8793e27e01f1effee5e3201",
+          "reconstructable": true,
+          "omissionAuthorizedByProof": true,
+          "sourceByteOffset": 0,
+          "reconstructionBytes": 31203073,
+          "runCompletionEstablished": false,
+          "realDataEqualityEstablished": false,
+          "reconstructCommand": "python3 independent_reconstruct_prefix.py --mapping INDEPENDENT-PREFIX-RECONSTRUCTION-PROOF.json --restore-root /absolute/path/to/restored-tree --candidate 'v2-fresh-cars/cars.jsonl'"
+        },
+        {
+          "path": "v2-fresh-cars-gc50/cars.jsonl",
+          "bytes": 41614064,
+          "sha256": "75ed5f07fd89f1cb84818fd2d412cf766277821b2ce6af2109469326a7cc156d",
+          "newlineBytes": 328,
+          "endsWithNewline": true,
+          "statBefore": {
+            "bytes": 41614064,
+            "mtimeNs": 1791991653057015956,
+            "ctimeNs": 1791991653057015956,
+            "inode": 933011,
+            "device": 27
+          },
+          "statAfter": {
+            "bytes": 41614064,
+            "mtimeNs": 1791991653057015956,
+            "ctimeNs": 1791991653057015956,
+            "inode": 933011,
+            "device": 27
+          },
+          "statStable": true,
+          "restorePath": "roadmark-104-qa/catalogue-snapshot-reuse/v2-fresh-cars-gc50/cars.jsonl",
+          "exactPrefix": true,
+          "firstDifferentByteOffset": null,
+          "retainedSourcePrefixSHA256": "75ed5f07fd89f1cb84818fd2d412cf766277821b2ce6af2109469326a7cc156d",
+          "reconstructable": true,
+          "omissionAuthorizedByProof": true,
+          "sourceByteOffset": 0,
+          "reconstructionBytes": 41614064,
+          "runCompletionEstablished": false,
+          "realDataEqualityEstablished": false,
+          "reconstructCommand": "python3 independent_reconstruct_prefix.py --mapping INDEPENDENT-PREFIX-RECONSTRUCTION-PROOF.json --restore-root /absolute/path/to/restored-tree --candidate 'v2-fresh-cars-gc50/cars.jsonl'"
+        },
+        {
+          "path": "v2-fresh-cars-gc50-416/cars.jsonl",
+          "bytes": 45547876,
+          "sha256": "51b9bc806e3e533c3821c0481ad8a1788b402170e956dc8748222f2a15919317",
+          "newlineBytes": 332,
+          "endsWithNewline": true,
+          "statBefore": {
+            "bytes": 45547876,
+            "mtimeNs": 1791992024742961354,
+            "ctimeNs": 1791992024742961354,
+            "inode": 933021,
+            "device": 27
+          },
+          "statAfter": {
+            "bytes": 45547876,
+            "mtimeNs": 1791992024742961354,
+            "ctimeNs": 1791992024742961354,
+            "inode": 933021,
+            "device": 27
+          },
+          "statStable": true,
+          "restorePath": "roadmark-104-qa/catalogue-snapshot-reuse/v2-fresh-cars-gc50-416/cars.jsonl",
+          "exactPrefix": true,
+          "firstDifferentByteOffset": null,
+          "retainedSourcePrefixSHA256": "51b9bc806e3e533c3821c0481ad8a1788b402170e956dc8748222f2a15919317",
+          "reconstructable": true,
+          "omissionAuthorizedByProof": true,
+          "sourceByteOffset": 0,
+          "reconstructionBytes": 45547876,
+          "runCompletionEstablished": false,
+          "realDataEqualityEstablished": false,
+          "reconstructCommand": "python3 independent_reconstruct_prefix.py --mapping INDEPENDENT-PREFIX-RECONSTRUCTION-PROOF.json --restore-root /absolute/path/to/restored-tree --candidate 'v2-fresh-cars-gc50-416/cars.jsonl'"
+        }
+      ],
+      "researchPartialsMetadataOnlyInventory": [],
+      "terminalEvidenceRequiredUnchanged": [
+        {
+          "path": "after-measurement.json",
+          "bytes": 407,
+          "mtimeNs": 1791990304177411150,
+          "contentReadForThisProof": false
+        },
+        {
+          "path": "after.exit",
+          "bytes": 3,
+          "mtimeNs": 1791990304177524552,
+          "contentReadForThisProof": false
+        },
+        {
+          "path": "after.log",
+          "bytes": 129,
+          "mtimeNs": 1791990303283587455,
+          "contentReadForThisProof": false
+        },
+        {
+          "path": "after448-measurement.json",
+          "bytes": 391,
+          "mtimeNs": 1791990520874581036,
+          "contentReadForThisProof": false
+        },
+        {
+          "path": "after448.exit",
+          "bytes": 3,
+          "mtimeNs": 1791990520874746931,
+          "contentReadForThisProof": false
+        },
+        {
+          "path": "after448.log",
+          "bytes": 747,
+          "mtimeNs": 1791990519679913722,
+          "contentReadForThisProof": false
+        },
+        {
+          "path": "data-after-check.log",
+          "bytes": 4944,
+          "mtimeNs": 1791990606258497441,
+          "contentReadForThisProof": false
+        },
+        {
+          "path": "focused-lint.log",
+          "bytes": 0,
+          "mtimeNs": 1791990188557636423,
+          "contentReadForThisProof": false
+        },
+        {
+          "path": "focused-test.log",
+          "bytes": 2330,
+          "mtimeNs": 1791990411857735609,
+          "contentReadForThisProof": false
+        },
+        {
+          "path": "independent-preflight.log",
+          "bytes": 787,
+          "mtimeNs": 1791991030623658340,
+          "contentReadForThisProof": false
+        },
+        {
+          "path": "original-after-check.log",
+          "bytes": 39,
+          "mtimeNs": 1791990606266497313,
+          "contentReadForThisProof": false
+        },
+        {
+          "path": "root-typecheck-v2.metrics.json",
+          "bytes": 306,
+          "mtimeNs": 1791992129384933795,
+          "contentReadForThisProof": false
+        },
+        {
+          "path": "root-typecheck-v2.stderr",
+          "bytes": 0,
+          "mtimeNs": 1791992124037277112,
+          "contentReadForThisProof": false
+        },
+        {
+          "path": "root-typecheck-v2.stdout",
+          "bytes": 0,
+          "mtimeNs": 1791992124037277112,
+          "contentReadForThisProof": false
+        },
+        {
+          "path": "root-validation.metrics.json",
+          "bytes": 471,
+          "mtimeNs": 1791990927129336139,
+          "contentReadForThisProof": false
+        },
+        {
+          "path": "root-validation.stderr",
+          "bytes": 0,
+          "mtimeNs": 1791990734724411274,
+          "contentReadForThisProof": false
+        },
+        {
+          "path": "root-validation.stdout",
+          "bytes": 452,
+          "mtimeNs": 1791990926961316090,
+          "contentReadForThisProof": false
+        },
+        {
+          "path": "row-buffer-equivalence-measurement.json",
+          "bytes": 333,
+          "mtimeNs": 1791992724984917044,
+          "contentReadForThisProof": false
+        },
+        {
+          "path": "row-buffer-equivalence.exit",
+          "bytes": 2,
+          "mtimeNs": 1791992724985026741,
+          "contentReadForThisProof": false
+        },
+        {
+          "path": "row-buffer-equivalence.log",
+          "bytes": 1781,
+          "mtimeNs": 1791992724974957583,
+          "contentReadForThisProof": false
+        },
+        {
+          "path": "v2-focused-lint.log",
+          "bytes": 0,
+          "mtimeNs": 1791991237740367806,
+          "contentReadForThisProof": false
+        },
+        {
+          "path": "v2-focused-test.log",
+          "bytes": 2537,
+          "mtimeNs": 1791991194609056018,
+          "contentReadForThisProof": false
+        },
+        {
+          "path": "v2-fresh-car-digests/stderr.log",
+          "bytes": 0,
+          "mtimeNs": 1791992256569141913,
+          "contentReadForThisProof": false
+        },
+        {
+          "path": "v2-fresh-car-digests/stdout.log",
+          "bytes": 283,
+          "mtimeNs": 1791992317110008667,
+          "contentReadForThisProof": false
+        },
+        {
+          "path": "v2-fresh-car-digests/terminal.json",
+          "bytes": 1053,
+          "mtimeNs": 1791992319286756030,
+          "contentReadForThisProof": false
+        },
+        {
+          "path": "v2-fresh-car-digests-buffer/stderr.log",
+          "bytes": 0,
+          "mtimeNs": 1791992757989653719,
+          "contentReadForThisProof": false
+        },
+        {
+          "path": "v2-fresh-car-digests-buffer/stdout.log",
+          "bytes": 2852,
+          "mtimeNs": 1791992810921559088,
+          "contentReadForThisProof": false
+        },
+        {
+          "path": "v2-fresh-car-digests-buffer/terminal.json",
+          "bytes": 1092,
+          "mtimeNs": 1791992811855595268,
+          "contentReadForThisProof": false
+        },
+        {
+          "path": "v2-fresh-cars/stderr.log",
+          "bytes": 0,
+          "mtimeNs": 1791991369139672849,
+          "contentReadForThisProof": false
+        },
+        {
+          "path": "v2-fresh-cars/stdout.log",
+          "bytes": 283,
+          "mtimeNs": 1791991422960948505,
+          "contentReadForThisProof": false
+        },
+        {
+          "path": "v2-fresh-cars/terminal.json",
+          "bytes": 931,
+          "mtimeNs": 1791991424060224845,
+          "contentReadForThisProof": false
+        },
+        {
+          "path": "v2-fresh-cars-gc50/stderr.log",
+          "bytes": 0,
+          "mtimeNs": 1791991615696233144,
+          "contentReadForThisProof": false
+        },
+        {
+          "path": "v2-fresh-cars-gc50/stdout.log",
+          "bytes": 283,
+          "mtimeNs": 1791991651893035435,
+          "contentReadForThisProof": false
+        },
+        {
+          "path": "v2-fresh-cars-gc50/terminal.json",
+          "bytes": 937,
+          "mtimeNs": 1791991653758696374,
+          "contentReadForThisProof": false
+        },
+        {
+          "path": "v2-fresh-cars-gc50-416/stderr.log",
+          "bytes": 0,
+          "mtimeNs": 1791991955366031151,
+          "contentReadForThisProof": false
+        },
+        {
+          "path": "v2-fresh-cars-gc50-416/stdout.log",
+          "bytes": 283,
+          "mtimeNs": 1791992023178986800,
+          "contentReadForThisProof": false
+        },
+        {
+          "path": "v2-fresh-cars-gc50-416/terminal.json",
+          "bytes": 943,
+          "mtimeNs": 1791992025528414345,
+          "contentReadForThisProof": false
+        },
+        {
+          "path": "v2-typecheck.exit",
+          "bytes": 4,
+          "mtimeNs": 1791991274973508686,
+          "contentReadForThisProof": false
+        },
+        {
+          "path": "v2-typecheck.log",
+          "bytes": 762,
+          "mtimeNs": 1791991274899761220,
+          "contentReadForThisProof": false
+        }
+      ],
+      "scriptSHA256": "63a13ffbed10f7b736de462ca59ae2c549f35c19b1c6709feb0ce10af6c8b0d1",
+      "reconstructionScriptSHA256": "ee56bbc0d19f5b0fd61d5963be95fd2653de8a510f3a8c9751f910b2bdeb4b66",
+      "completedAt": "2026-10-14T15:49:40.106036+00:00",
+      "resources": {
+        "wallSeconds": 0.473,
+        "userSeconds": 0.38035399999999997,
+        "systemSeconds": 0.11984299999999999,
+        "maxRssKiB": 18560
+      }
+    },
+    "proofRestorePath": "working-safety-support/INDEPENDENT-PREFIX-RECONSTRUCTION-PROOF.json",
+    "helperRestorePath": "working-safety-support/independent_reconstruct_prefix.py",
+    "originalsDeleted": false,
+    "applicationRunSuccessInferred": false
+  },
+  "integrity": {
+    "result": "PASS",
+    "checkedAt": "2026-10-14T17:36:34.705452+00:00",
+    "archiveCount": 81,
+    "restoredFilesVerified": 6723,
+    "restoredBytesVerified": 2444675582,
+    "newCompressedArchivesRehashedAfterUpload": 5,
+    "method": "Final manifest file/hash/order core exactly equals independently byte-verified reconstructed tree. Native IDs/versions match successful ordered receipts. New archive hashes rechecked after upload; prior complete streaming/archive/tree verification reused without redundant whole-chain reads.",
+    "manifestSHA256": "f3788d31ca14385dcbc6479bab4883584c9786d28d9798905c3d0ffd1aa06ee1"
+  },
+  "privacy": "All new archive members and generated documents passed specified known-value/header/runtime checks; no claim of detecting every possible secret. Prior safe archives reused by exact SHA256. No screenshots uploaded; known legacy source headers sanitized.",
+  "imageProvenance": {
+    "newImages": [],
+    "newBrowserScreenshots": 0,
+    "priorWorkingImageProvenance": {
+      "result": "PASS",
+      "browserScreenshotsIncluded": 0,
+      "source": "Research and independent reviewer explicit provenance confirmations; corresponding retained manifests",
+      "images": [
+        {
+          "path": "subaru-research/residuals/uncharted_base_detail_0.jpg",
+          "bytes": 4321,
+          "sha256": "83a231dcc6a0ca8927279cad2ae8252a76ad61546712d6a16868ffd05fb30d44",
+          "provenance": "Downloaded public dealer listing photograph; source URL/hash provenance retained, no conclusive no-roof identification"
+        },
+        {
+          "path": "subaru-research/residuals/uncharted_base_detail_1.jpg",
+          "bytes": 7529,
+          "sha256": "4397dfeda9062b114919e0e69505fa6b427ef6558929452aaaf572531fcaa6ee",
+          "provenance": "Downloaded public dealer listing photograph; source URL/hash provenance retained, no conclusive no-roof identification"
+        },
+        {
+          "path": "subaru-research/residuals/uncharted_base_detail_10.jpg",
+          "bytes": 5591,
+          "sha256": "f2cf811425b38f43832975735ae5f0bf02518171187c5b5269a646efccaac43e",
+          "provenance": "Downloaded public dealer listing photograph; source URL/hash provenance retained, no conclusive no-roof identification"
+        },
+        {
+          "path": "subaru-research/residuals/uncharted_base_detail_2.jpg",
+          "bytes": 10489,
+          "sha256": "85de7db06b62fa0c4d1b1e71fac9d7fe7a1bcd6d39fb12ff56f6d99c7d790f56",
+          "provenance": "Downloaded public dealer listing photograph; source URL/hash provenance retained, no conclusive no-roof identification"
+        },
+        {
+          "path": "subaru-research/residuals/uncharted_base_detail_3.jpg",
+          "bytes": 7110,
+          "sha256": "cfcaf637672b03cc160b5f5e529f83de697fc7f12700cc058fc4403efcd993f0",
+          "provenance": "Downloaded public dealer listing photograph; source URL/hash provenance retained, no conclusive no-roof identification"
+        },
+        {
+          "path": "subaru-research/residuals/uncharted_base_detail_4.jpg",
+          "bytes": 7680,
+          "sha256": "f9d039d0eec66eb6702743b86938bc3b8fb8215eabe9864553a0adb19b6d7976",
+          "provenance": "Downloaded public dealer listing photograph; source URL/hash provenance retained, no conclusive no-roof identification"
+        },
+        {
+          "path": "subaru-research/residuals/uncharted_base_detail_5.jpg",
+          "bytes": 8212,
+          "sha256": "a97ba8d43b34852c4fcf58117e692b9a9fb30f4b8588b81476821660f62d6711",
+          "provenance": "Downloaded public dealer listing photograph; source URL/hash provenance retained, no conclusive no-roof identification"
+        },
+        {
+          "path": "subaru-research/residuals/uncharted_base_detail_6.jpg",
+          "bytes": 6406,
+          "sha256": "2bceec19a3bde23c098cccff3177e048cd1f199bf548515adeff216ad9c2095c",
+          "provenance": "Downloaded public dealer listing photograph; source URL/hash provenance retained, no conclusive no-roof identification"
+        },
+        {
+          "path": "subaru-research/residuals/uncharted_base_detail_7.jpg",
+          "bytes": 7179,
+          "sha256": "99652dcead986217a5f75897a484be7c6044bbaa631c399886106de2e52dcadc",
+          "provenance": "Downloaded public dealer listing photograph; source URL/hash provenance retained, no conclusive no-roof identification"
+        },
+        {
+          "path": "subaru-research/residuals/uncharted_base_detail_8.jpg",
+          "bytes": 8861,
+          "sha256": "02031dadbc4e0d16e0ea0bffc0a1e63243fb792f44508a38ad9dda270eee8526",
+          "provenance": "Downloaded public dealer listing photograph; source URL/hash provenance retained, no conclusive no-roof identification"
+        },
+        {
+          "path": "subaru-research/residuals/uncharted_base_detail_9.jpg",
+          "bytes": 7169,
+          "sha256": "5c715678da7c70301e30df2034241dec5faa72e5c6f199477b8a1c449ac3d5b1",
+          "provenance": "Downloaded public dealer listing photograph; source URL/hash provenance retained, no conclusive no-roof identification"
+        },
+        {
+          "path": "subaru-research/residuals/uncharted_base_photo_0.jpg",
+          "bytes": 80205,
+          "sha256": "c5f114d85c22fe1f3d48d31e3238957bc5134fdeee6f79522668d39cbcfaee9a",
+          "provenance": "Downloaded public dealer listing photograph; source URL/hash provenance retained, no conclusive no-roof identification"
+        },
+        {
+          "path": "subaru-research/residuals/uncharted_base_photo_1.jpg",
+          "bytes": 64431,
+          "sha256": "0147cc258bcd65fa045e52e9d087bbc6da1a818817ece119aa48914d6d9bf42b",
+          "provenance": "Downloaded public dealer listing photograph; source URL/hash provenance retained, no conclusive no-roof identification"
+        },
+        {
+          "path": "subaru-research/residuals/uncharted_base_photo_2.jpg",
+          "bytes": 53157,
+          "sha256": "f88fd1a8cfa6289f4b2acef28979eb997d49b0cdf412d2cb22af22204b7f1b62",
+          "provenance": "Downloaded public dealer listing photograph; source URL/hash provenance retained, no conclusive no-roof identification"
+        },
+        {
+          "path": "subaru-research/residuals/uncharted_base_photo_3.jpg",
+          "bytes": 67299,
+          "sha256": "5177541a38d0aa6db890b25b377dfc7dccad7f57c70e5b757705fcb93ef445ce",
+          "provenance": "Downloaded public dealer listing photograph; source URL/hash provenance retained, no conclusive no-roof identification"
+        },
+        {
+          "path": "working-safety-support/subaru-independent-review/solterra-07.png",
+          "bytes": 269802,
+          "sha256": "1bc521e91c9c686a43e1ded35fbda1edf5c8cfd8111c7f878c7c47150ed33fce",
+          "provenance": "Local public Subaru Solterra PDF page render; not a browser screenshot"
+        },
+        {
+          "path": "working-safety-support/subaru-independent-review/solterra-08.png",
+          "bytes": 201546,
+          "sha256": "56a60bfabcc56e60e187781798e77bc676124d2a2861d091283c8c53d3badf84",
+          "provenance": "Local public Subaru Solterra PDF page render; not a browser screenshot"
+        }
+      ],
+      "priorToyotaBrowserScreenshotExclusionsRetained": true
+    },
+    "note": "All newly added proof/staging/QA/support artifacts and source changes are text/code. Earlier allowed public photos/PDF renders are reused unchanged."
+  },
+  "backupResourceConfiguration": {
+    "recordedAt": "2026-10-14T17:36:09.977603+00:00",
+    "scheduling": "One heavy backup process at a time; no overlapping catalogue work. Source/QA captured before release; full independent verification follows primary scan and reconstruction.",
+    "compression": {
+      "format": "tar.xz/PAX",
+      "library": "Python tarfile/lzma",
+      "preset": 6,
+      "extreme": false,
+      "encoderThreads": 1,
+      "lzma2DictionaryBytes": 8388608,
+      "integrity": "CRC64; archive SHA256 and every member SHA256 verified",
+      "note": "Decoder memory requirement is not process RSS."
+    },
+    "metrics": {
+      "new-proof-capture.resources.json": {
+        "startedAt": "2026-10-14T17:20:35.199843+00:00",
+        "endedAt": "2026-10-14T17:20:38.559279+00:00",
+        "command": [
+          "python3",
+          "roadmark-recovery-20261014/checkpoints/working-consumer-safety-20261014T1715/capture_new_proof.py"
+        ],
+        "exitCode": 0,
+        "wallSeconds": 3.359,
+        "userSeconds": 3.157461,
+        "systemSeconds": 0.192961,
+        "maxRssKiB": 126464,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB",
+        "hostTimeBinaryAvailable": false
+      },
+      "archive-scan.resources.json": {
+        "startedAt": "2026-10-14T17:27:03.132394+00:00",
+        "endedAt": "2026-10-14T17:30:13.056462+00:00",
+        "command": [
+          "python3",
+          "roadmark-recovery-20261014/checkpoints/working-consumer-safety-20261014T1715/scan_archives_sequential.py"
+        ],
+        "exitCode": 0,
+        "wallSeconds": 189.924,
+        "userSeconds": 186.848804,
+        "systemSeconds": 2.8425599999999998,
+        "maxRssKiB": 448264,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB",
+        "hostTimeBinaryAvailable": false
+      },
+      "independent-stream-verification.resources.json": {
+        "startedAt": "2026-10-14T17:34:45.035787+00:00",
+        "endedAt": "2026-10-14T17:35:19.001071+00:00",
+        "command": [
+          "python3",
+          "roadmark-recovery-20261014/checkpoints/working-consumer-safety-20261014T1715/independent_consumer_stream_verifier.py",
+          "--heavy-slot-authorized"
+        ],
+        "exitCode": 0,
+        "wallSeconds": 33.965,
+        "userSeconds": 27.984133,
+        "systemSeconds": 2.748805,
+        "maxRssKiB": 53668,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB",
+        "hostTimeBinaryAvailable": false
+      },
+      "independent-static-verification.resources.json": {
+        "startedAt": "2026-10-14T17:35:56.409330+00:00",
+        "endedAt": "2026-10-14T17:35:56.609185+00:00",
+        "command": [
+          "python3",
+          "roadmark-recovery-20261014/checkpoints/working-consumer-safety-20261014T1715/independent_consumer_static_verifier.py"
+        ],
+        "exitCode": 0,
+        "wallSeconds": 0.2,
+        "userSeconds": 0.15411,
+        "systemSeconds": 0.027982999999999997,
+        "maxRssKiB": 29420,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB",
+        "hostTimeBinaryAvailable": false
+      },
+      "archive-part02-scan.resources.json": {
+        "startedAt": "2026-10-14T17:29:33.253815+00:00",
+        "endedAt": "2026-10-14T17:29:51.936645+00:00",
+        "command": [
+          "python3",
+          "final_residual_scan_memory_bounded.py",
+          "--archive",
+          "Roadmark-recovery-derived-proof-WORKING-CONSUMER-20261014T172035Z-part01of01.tar.xz",
+          "--report",
+          "WORKING-CONSUMER-NEW-ARCHIVE-PART02-RESIDUAL-REPORT.json"
+        ],
+        "exitCode": 0,
+        "wallSeconds": 18.683,
+        "userSeconds": 18.213541,
+        "systemSeconds": 0.409477,
+        "maxRssKiB": 109116,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB",
+        "hostTimeBinaryAvailable": false
+      },
+      "source-package.resources.json": {
+        "startedAt": "2026-10-14T17:23:23.774688+00:00",
+        "endedAt": "2026-10-14T17:24:15.539880+00:00",
+        "command": [
+          "python3",
+          "roadmark-recovery-20261014/checkpoints/working-consumer-safety-20261014T1715/package_source.py"
+        ],
+        "exitCode": 0,
+        "wallSeconds": 51.765,
+        "userSeconds": 50.688159,
+        "systemSeconds": 0.6097119999999999,
+        "maxRssKiB": 188088,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB",
+        "hostTimeBinaryAvailable": false
+      },
+      "qa-streaming-capture.resources.json": {
+        "startedAt": "2026-10-14T17:25:02.612921+00:00",
+        "endedAt": "2026-10-14T17:25:08.860213+00:00",
+        "command": [
+          "python3",
+          "roadmark-recovery-20261014/checkpoints/working-consumer-safety-20261014T1715/capture_qa_delta_streaming.py",
+          "--root",
+          "roadmark-104-qa",
+          "--baseline",
+          "roadmark-recovery-20261014/checkpoints/working-consumer-safety-20261014T1715/safe-baseline-qa-manifest.json",
+          "--prior-restore",
+          "verified-complete-restore-final",
+          "--omit",
+          "roadmark-recovery-20261014/checkpoints/working-consumer-safety-20261014T1715/qa-exact-prefix-omissions.json",
+          "--label",
+          "qa-WORKING-CONSUMER",
+          "--state",
+          "WORKING safety: reviewed evidence-consumer refactor; accepted derived-only baseline; fresh loader/typecheck/top-level report gates open and Subaru unintegrated. Exact original+prior sanitized hash verification for unchanged QA; full existing sanitation for changed/new files.",
+          "--receipt",
+          "roadmark-recovery-20261014/checkpoints/working-consumer-safety-20261014T1715/QA-STREAMING-CAPTURE-RECEIPT.json"
+        ],
+        "exitCode": 0,
+        "wallSeconds": 6.247,
+        "userSeconds": 3.335754,
+        "systemSeconds": 1.41841,
+        "maxRssKiB": 53948,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB",
+        "hostTimeBinaryAvailable": false
+      },
+      "support-capture.resources.json": {
+        "startedAt": "2026-10-14T17:26:17.724464+00:00",
+        "endedAt": "2026-10-14T17:26:17.909014+00:00",
+        "command": [
+          "python3",
+          "roadmark-recovery-20261014/checkpoints/working-consumer-safety-20261014T1715/capture_support.py"
+        ],
+        "exitCode": 0,
+        "wallSeconds": 0.185,
+        "userSeconds": 0.145653,
+        "systemSeconds": 0.034523,
+        "maxRssKiB": 36152,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB",
+        "hostTimeBinaryAvailable": false
+      },
+      "archive-part01-scan.resources.json": {
+        "startedAt": "2026-10-14T17:27:03.246750+00:00",
+        "endedAt": "2026-10-14T17:29:33.178298+00:00",
+        "command": [
+          "python3",
+          "final_residual_scan_memory_bounded.py",
+          "--archive",
+          "Roadmark-recovery-source-WORKING-CONSUMER-20261014T1715.tar.xz",
+          "--report",
+          "WORKING-CONSUMER-NEW-ARCHIVE-PART01-RESIDUAL-REPORT.json"
+        ],
+        "exitCode": 0,
+        "wallSeconds": 149.932,
+        "userSeconds": 147.876587,
+        "systemSeconds": 1.9415559999999998,
+        "maxRssKiB": 448264,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB",
+        "hostTimeBinaryAvailable": false
+      },
+      "qa-capture.resources.json": {
+        "startedAt": "2026-10-14T17:18:35.931370+00:00",
+        "endedAt": "2026-10-14T17:18:42.408658+00:00",
+        "command": [
+          "python3",
+          "roadmark-recovery-20261014/checkpoints/working-consumer-safety-20261014T1715/capture_qa_delta.py",
+          "--root",
+          "roadmark-104-qa",
+          "--baseline",
+          "roadmark-recovery-20261014/checkpoints/working-consumer-safety-20261014T1715/safe-baseline-qa-manifest.json",
+          "--omit",
+          "roadmark-recovery-20261014/checkpoints/working-consumer-safety-20261014T1715/qa-exact-prefix-omissions.json",
+          "--label",
+          "qa-WORKING-CONSUMER",
+          "--state",
+          "WORKING safety: reviewed evidence-consumer refactor and focused passes; derived-only baseline separately accepted. Fresh full-loader/typecheck/top-level-report gates open, Subaru unintegrated. All earlier failed and partial proof history retained; Polestar separately last passed."
+        ],
+        "exitCode": -9,
+        "wallSeconds": 6.477,
+        "userSeconds": 4.805702,
+        "systemSeconds": 1.22644,
+        "maxRssKiB": 400660,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB",
+        "hostTimeBinaryAvailable": false
+      },
+      "archive-part03-scan.resources.json": {
+        "startedAt": "2026-10-14T17:29:51.990965+00:00",
+        "endedAt": "2026-10-14T17:29:58.804698+00:00",
+        "command": [
+          "python3",
+          "final_residual_scan_memory_bounded.py",
+          "--archive",
+          "Roadmark-recovery-staging-plan-WORKING-CONSUMER-20261014T172038Z-part01of01.tar.xz",
+          "--report",
+          "WORKING-CONSUMER-NEW-ARCHIVE-PART03-RESIDUAL-REPORT.json"
+        ],
+        "exitCode": 0,
+        "wallSeconds": 6.814,
+        "userSeconds": 6.655933,
+        "systemSeconds": 0.14138199999999998,
+        "maxRssKiB": 45404,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB",
+        "hostTimeBinaryAvailable": false
+      },
+      "reconstruction.resources.json": {
+        "startedAt": "2026-10-14T17:33:12.600719+00:00",
+        "endedAt": "2026-10-14T17:34:30.593068+00:00",
+        "command": [
+          "python3",
+          "roadmark-recovery-20261014/checkpoints/working-consumer-safety-20261014T1715/reconstruct_consumer.py"
+        ],
+        "exitCode": 0,
+        "wallSeconds": 77.992,
+        "userSeconds": 68.304491,
+        "systemSeconds": 6.720651,
+        "maxRssKiB": 142232,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB",
+        "hostTimeBinaryAvailable": false
+      },
+      "archive-part05-scan.resources.json": {
+        "startedAt": "2026-10-14T17:30:06.988116+00:00",
+        "endedAt": "2026-10-14T17:30:12.998635+00:00",
+        "command": [
+          "python3",
+          "final_residual_scan_memory_bounded.py",
+          "--archive",
+          "Roadmark-recovery-support-WORKING-CONSUMER-20261014T172617Z-part01of01.tar.xz",
+          "--report",
+          "WORKING-CONSUMER-NEW-ARCHIVE-PART05-RESIDUAL-REPORT.json"
+        ],
+        "exitCode": 0,
+        "wallSeconds": 6.011,
+        "userSeconds": 5.880471,
+        "systemSeconds": 0.101738,
+        "maxRssKiB": 46560,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB",
+        "hostTimeBinaryAvailable": false
+      },
+      "source-capture.resources.json": {
+        "startedAt": "2026-10-14T17:18:06.587094+00:00",
+        "endedAt": "2026-10-14T17:18:13.420434+00:00",
+        "command": [
+          "python3",
+          "roadmark-recovery-20261014/checkpoints/working-consumer-safety-20261014T1715/capture_source.py"
+        ],
+        "exitCode": 0,
+        "wallSeconds": 6.833,
+        "userSeconds": 5.125167,
+        "systemSeconds": 1.318677,
+        "maxRssKiB": 360456,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB",
+        "hostTimeBinaryAvailable": false
+      },
+      "archive-part04-scan.resources.json": {
+        "startedAt": "2026-10-14T17:29:58.891017+00:00",
+        "endedAt": "2026-10-14T17:30:06.952317+00:00",
+        "command": [
+          "python3",
+          "final_residual_scan_memory_bounded.py",
+          "--archive",
+          "Roadmark-recovery-qa-WORKING-CONSUMER-20261014T172502Z-part01of01.tar.xz",
+          "--report",
+          "WORKING-CONSUMER-NEW-ARCHIVE-PART04-RESIDUAL-REPORT.json"
+        ],
+        "exitCode": 0,
+        "wallSeconds": 8.061,
+        "userSeconds": 7.910951,
+        "systemSeconds": 0.132858,
+        "maxRssKiB": 45520,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB",
+        "hostTimeBinaryAvailable": false
+      }
+    },
+    "scanner": "Same independently verified Polestar bounded-lowercase adapter. All known-value forms and original pattern/range/decoding rules retained, no approximate regex windows. Every new archive scanned sequentially.",
+    "prefixProof": {
+      "priorReceipt": "working-safety-support/INDEPENDENT-PREFIX-RECONSTRUCTION-PROOF.json",
+      "note": "Existing optional reconstruction proof is preserved and its exact authoritative source reverified; new interrupted feature stream is retained in full."
+    },
+    "hashRestore": "Full archive/member verification and hardlink-safe exact tree restoration, followed by independent streaming archive and tree checks.",
+    "deletions": 0
+  },
+  "cleanup": {
+    "affectedOriginalsRetained": 12,
+    "intermediateCopiesRetained": 3,
+    "deletions": 0,
+    "replacements": 0
+  },
+  "savingAnnouncementMessageId": "Sentinel_54f107a68b18819184666e0369a4ec64",
+  "preSaveDocumentVerification": {
+    "result": "PASS",
+    "documents": {
+      "Roadmark-RECOVERY-MANIFEST-WORKING-CONSUMER-20261014.json": {
+        "bytes": 2169219,
+        "sha256": "f3788d31ca14385dcbc6479bab4883584c9786d28d9798905c3d0ffd1aa06ee1"
+      },
+      "Roadmark-RECOVERY-INDEX-WORKING-CONSUMER-20261014.md": {
+        "bytes": 22437,
+        "sha256": "5c30b239f08c4a6d16717e7ef66589838d589445028a42c0a75d8d698cf3c62a"
+      },
+      "Roadmark-RECOVERY-VERIFICATION-WORKING-CONSUMER-20261014.json": {
+        "bytes": 601172,
+        "sha256": "d09b7b2f635a953397551d364f596dec49c844d1c90a1bd849655f81478a1e7e"
+      }
+    },
+    "archivesInExactRestoreOrder": 81,
+    "newArchiveIdsBoundToSuccessfulUploadsAndMetadataReceipts": 5,
+    "normalRestoredFiles": 6723,
+    "normalRestoredBytes": 2444675582,
+    "optionalReconstructedPaths": 3,
+    "optionalReconstructedBytes": 118365013,
+    "independentEvidenceAndSupportPreservedExactly": true,
+    "derivedOnlyAcceptanceAndOpenGatesHonest": true,
+    "lastPassedPolestarAndPreviousWorkingIdentitiesVerified": true,
+    "copyableRestoreCommandAcceptedByRetainedVerifierSchema": true,
+    "resolvedDerivedAcceptanceRestorePaths": true,
+    "documentResidualScan": {
+      "reportSHA256": "3a984b4a7533c2e50206932d0dedd6c10d43196fb12401f650d14cce376a18de",
+      "terminalMetrics": {
+        "startedAt": "2026-10-14T17:36:39.331557+00:00",
+        "endedAt": "2026-10-14T17:36:46.340468+00:00",
+        "command": [
+          "python3",
+          "roadmark-recovery-20261014/privacy-audit-20261014T0355/final_residual_scan_memory_bounded.py",
+          "--tree",
+          "roadmark-recovery-20261014/checkpoints/working-consumer-safety-20261014T1715/deliverables",
+          "--report",
+          "roadmark-recovery-20261014/privacy-audit-20261014T0355/WORKING-CONSUMER-DELIVERABLE-RESIDUAL-REPORT.json"
+        ],
+        "exitCode": 0,
+        "wallSeconds": 7.009,
+        "userSeconds": 6.845905,
+        "systemSeconds": 0.133599,
+        "maxRssKiB": 45660,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB",
+        "hostTimeBinaryAvailable": false
+      },
+      "files": 3,
+      "bytes": 2792828,
+      "status": "clean",
+      "findingsOrErrors": 0,
+      "pathByteCoverageAndPreScanTimestampsVerified": true
+    },
+    "noDeliverableModified": true,
+    "heavyProcessesStarted": false,
+    "activeReceiptNotYetChecked": true,
+    "completedAt": "2026-10-14T17:37:52.066111+00:00"
+  }
+}

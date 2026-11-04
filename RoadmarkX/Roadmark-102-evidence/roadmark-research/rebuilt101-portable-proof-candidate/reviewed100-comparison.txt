@@ -1,0 +1,36 @@
+def ordered_json_differences(actual, expected, path):
+    """All semantic differences; arrays AND object key order remain significant.
+
+    JSON numbers compare numerically (int/Decimal); booleans remain distinct.
+    No ignored paths, projection exceptions, numeric tolerance or result cap.
+    """
+    differences = []
+    pending = [(actual, expected, path)]
+    while pending:
+        actual, expected, here = pending.pop()
+        both_numbers = type(actual) in (int, Decimal) and type(expected) in (int, Decimal)
+        if type(actual) is not type(expected) and not both_numbers:
+            differences.append({"kind": "type", "path": here,
+                                "expected": describe(expected), "actual": describe(actual)})
+            continue
+        if isinstance(expected, dict):
+            if list(actual) != list(expected):
+                differences.append({"kind": "object_keys_or_order", "path": here,
+                                    "expectedKeys": list(expected), "actualKeys": list(actual),
+                                    "missing": {k: expected[k] for k in expected if k not in actual},
+                                    "unexpected": {k: actual[k] for k in actual if k not in expected}})
+            pending.extend((actual[k], expected[k], pointer(here, k))
+                           for k in reversed(expected) if k in actual)
+        elif isinstance(expected, list):
+            if len(actual) != len(expected):
+                differences.append({"kind": "array_length", "path": here,
+                                    "expectedLength": len(expected), "actualLength": len(actual),
+                                    "expectedTail": expected[len(actual):],
+                                    "actualTail": actual[len(expected):]})
+            pending.extend((actual[i], expected[i], pointer(here, i))
+                           for i in range(min(len(actual), len(expected)) - 1, -1, -1))
+        elif actual != expected:
+            differences.append({"kind": "value", "path": here,
+                                "expected": describe(expected), "actual": describe(actual)})
+    return differences
+

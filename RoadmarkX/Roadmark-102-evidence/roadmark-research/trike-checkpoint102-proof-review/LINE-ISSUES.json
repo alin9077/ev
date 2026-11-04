@@ -1,0 +1,56 @@
+[
+  {
+    "id": "OBS-01",
+    "severity": "low",
+    "blocking": false,
+    "file": "verify_checkpoint102_portable.py",
+    "lines": [
+      74,
+      82,
+      568
+    ],
+    "finding": "Checkpoint equality accepts exact JSON numeric 102.0 as well as integer 102, although README line 43 describes integer 102.",
+    "impact": "No other checkpoint value or weaker identity/provenance is admitted.",
+    "disposition": "Root authors integer 102; optional strict-type contract hardening only through independently reviewed amendment."
+  },
+  {
+    "id": "OBS-02",
+    "severity": "scope_boundary",
+    "blocking": false,
+    "file": "verify_checkpoint102_portable.py",
+    "lines": [
+      305,
+      309,
+      462,
+      470
+    ],
+    "finding": "Outer terminal shape and externally pinned bytes are checked; same-run association is supplied by genuine root observation, not authenticated by unsigned JSON.",
+    "disposition": "Root must supply and retain actual final tool result from the same QA execution; never replace it with a fabricated or unrelated zero-exit result."
+  },
+  {
+    "id": "OBS-03",
+    "severity": "scope_boundary",
+    "blocking": false,
+    "file": "verify_checkpoint102_portable.py",
+    "lines": [
+      419,
+      470
+    ],
+    "finding": "Only portable-stage receipt semantics are independently joined; seven stage summary statuses are not full QA acceptance.",
+    "disposition": "Perform separate full root QA acceptance; keep fullSevenStageQAVerified false."
+  },
+  {
+    "id": "OBS-04",
+    "severity": "scope_boundary",
+    "blocking": false,
+    "file": "verify_checkpoint102_portable.py",
+    "lines": [
+      494,
+      497,
+      541,
+      544
+    ],
+    "finding": "Changed emitted runtime is externally hash-pinned but has no semantic-preservation proof.",
+    "disposition": "Separate emitted-runtime/source and browser review remains required."
+  }
+]

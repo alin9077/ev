@@ -1,0 +1,90 @@
+{
+  "schema": "roadmark99.static-qa-runner-candidate.v1",
+  "revision": 1,
+  "status": "static-only-unexecuted-requires-independent-review",
+  "sourceRunner": {
+    "path": "roadmark-research/qa98-candidate/run_qa98.py",
+    "sha256": "cdc2fb3925fff38fd41fe5a2fad9f5ea608915ec5b31bad2448f48ba4ec6879e",
+    "bytes": 22175,
+    "mode": "0644",
+    "originalPreserved": true
+  },
+  "instructionsRead": {
+    "path": "roadmark-work/roadmark/AGENTS.md",
+    "sha256": "63f2c50380ed6303237cce215ce27af1d620d094c215e28d1b1538a3c070e3bb"
+  },
+  "change": "Checkpoint98 to checkpoint99 labels only. Two receipt-schema strings and the final success/failure markers change on three lines. All other runner bytes remain identical after inverse label substitution.",
+  "rationale": "Identify future checkpoint99 evidence without changing application paths, execution commands, permissions, exclusions, admission gates, process cleanup, output checks, or evidence semantics.",
+  "runnerSubstitutions": [
+    {
+      "before": "roadmark98.serial-qa.v1",
+      "after": "roadmark99.serial-qa.v1",
+      "occurrences": 2
+    },
+    {
+      "before": "QA98_COMPLETE",
+      "after": "QA99_COMPLETE",
+      "occurrences": 1
+    },
+    {
+      "before": "QA98_FAILED",
+      "after": "QA99_FAILED",
+      "occurrences": 1
+    }
+  ],
+  "files": [
+    {
+      "path": "run_qa99.py",
+      "sha256": "a043d6ac749a39d025bf452eddb55440d2ac81ba3b73be9f4d894a5055a2e10f",
+      "bytes": 22175,
+      "mode": "0644"
+    },
+    {
+      "path": "runner.diff",
+      "sha256": "ea484d76c807a852573987f2f69d9ed04f35241213c822e31026e2ce0dfba626",
+      "bytes": 3334
+    },
+    {
+      "path": "README.md",
+      "sha256": "0925d03bbea9d13fae2dce9a6a08492665cfd62102d38d35dd121bd6d97a0a69",
+      "bytes": 3953
+    }
+  ],
+  "baselineInputsObserved": {
+    "checkpoint": 98,
+    "path": "roadmark-research/applied98/expected-inputs.json",
+    "sha256": "e1f1afa40710976b5ef057264cb09b3443866764f1ef584c9ce05a5ebad875d2",
+    "observationOnly": true,
+    "boundary": "Static hash observation only; not a fresh application, QA, or checkpoint-acceptance verification"
+  },
+  "candidateAndFinalMap": {
+    "status": "Not constructed, applied, or pinned by this worker",
+    "rootGate": "Execute only after independent runner review, actual Mazda99 candidate review/application, complete final map preparation and approval from the checkpoint98 baseline plus exactly the reviewed candidate delta, and exclusive workspace confirmation",
+    "applicationPathPreserved": "roadmark-work/roadmark"
+  },
+  "preservedSerialStages": [
+    "non_http_tests",
+    "local_http_tests",
+    "typecheck",
+    "lint",
+    "validation",
+    "production_build",
+    "portable_build"
+  ],
+  "staticVerification": {
+    "sourceDiff": "Complete three-line unified diff in runner.diff inspected",
+    "inverseSubstitutionComparison": "Byte-for-byte equal to unchanged QA98 source using cmp",
+    "hashesAndSizes": "Measured with sha256sum, stat and wc",
+    "runnerOrProjectExecution": false,
+    "runnerSyntaxCheck": false
+  },
+  "notPerformed": [
+    "Application mutation",
+    "Runner or application imports, syntax checks, or execution",
+    "Tests, typecheck, lint, validation, or builds",
+    "Server launch or browser use",
+    "Git commands, uploads, deployment, or package installation",
+    "Checkpoint99 input-map construction or QA evidence creation"
+  ],
+  "remainingRootOwnership": "All independent reviews, application changes, executable checks, external terminal/exit evidence, Mazda semantic and CUA/browser checks, artifact packaging, checkpoint acceptance, and any publication"
+}

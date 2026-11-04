@@ -1,0 +1,834 @@
+--- a/src/components/detail.tsx
++++ b/src/components/detail.tsx
+@@ -3,6 +3,7 @@
+   softwareTimelinePack,
+ } from "@/lib/detail-client-props";
+ import { EvidenceConditions } from "./evidence-conditions";
++import { buyerDisplayCopy } from "@/lib/buyer-display-copy";
+ import {
+   availabilityReportClaim,
+   orderEvidenceText,
+@@ -68,7 +69,11 @@
+               <strong>
+                 Captured configuration · specifications incomplete.
+               </strong>{" "}
+-              {c.configurationEvidence.projectionScope}
++              {buyerDisplayCopy(
++                c.id,
++                "configurationEvidence.projectionScope",
++                c.configurationEvidence.projectionScope,
++              )}
+             </p>
+           )}
+           <Link
+--- a/src/components/discovery.tsx
++++ b/src/components/discovery.tsx
+@@ -1,5 +1,6 @@
+ "use client";
+ import { australianEvidenceDate } from "@/lib/evidence-date";
++import { buyerDisplayCopy } from "@/lib/buyer-display-copy";
+ 
+ import { EvidenceConditions } from "./evidence-conditions";
+ import { VisualActionFeedback } from "./visual-action-feedback";
+@@ -360,7 +361,13 @@
+                         <p>
+                           Captured configuration · specifications incomplete
+                         </p>
+-                        <p>{c.configurationEvidence.projectionScope}</p>
++                        <p>
++                          {buyerDisplayCopy(
++                            c.id,
++                            "configurationEvidence.projectionScope",
++                            c.configurationEvidence.projectionScope,
++                          )}
++                        </p>
+                       </div>
+                     )}
+                     <CarAvatar car={c} />
+--- a/src/components/market-audit.tsx
++++ b/src/components/market-audit.tsx
+@@ -1,5 +1,6 @@
+ "use client";
+ import { matchesSearch } from "@/lib/search";
++import { buyerDisplayCopy } from "@/lib/buyer-display-copy";
+ import { useState } from "react";
+ import Link from "next/link";
+ import inventory from "@/lib/market-inventory-data";
+@@ -154,7 +155,7 @@
+               <p className="small muted">
+                 {r.trimCoverage.replaceAll("_", " ")}
+               </p>
+-              <p>{r.evidenceNote}</p>
++              <p>{buyerDisplayCopy(r.id, "evidenceNote", r.evidenceNote)}</p>
+               <details>
+                 <summary>Evidence & limitations</summary>
+                 <ul>
+@@ -168,7 +169,7 @@
+                 </ul>
+                 <ul>
+                   {r.limitations.map((l, i) => (
+-                    <li key={i}>{l}</li>
++                    <li key={i}>{buyerDisplayCopy(r.id, `limitations[${i}]`, l)}</li>
+                   ))}
+                 </ul>
+               </details>
+--- /dev/null
++++ b/src/lib/buyer-display-copy.ts
+@@ -0,0 +1,82 @@
++/** Presentation only. Never feed these strings back into evidence or identity guards. */
++const replacements: readonly {
++  id: string;
++  field: string;
++  before: string;
++  after: string;
++}[] = [
++  {
++    "id": "fonz_z_series_sr_forza_aranciata_black_vegan__20261010",
++    "field": "configurationEvidence.projectionScope",
++    "before": "Bounded named advertised selection only; separate root admission required",
++    "after": "Only this named advertised selection is covered; further review is required before treating it as a fully verified configuration."
++  },
++  {
++    "id": "fonz_z_series_lr_forza_aranciata_black_vegan__20261010",
++    "field": "configurationEvidence.projectionScope",
++    "before": "Bounded named advertised selection only; separate root admission required",
++    "after": "Only this named advertised selection is covered; further review is required before treating it as a fully verified configuration."
++  },
++  {
++    "id": "surron_ultra_bee_hp_t_carbon_black_ebmx_19851__20261010",
++    "field": "configurationEvidence.projectionScope",
++    "before": "Bounded exact advertised New MY26 EBMX offer only, pending separate root admission",
++    "after": "Only this exact advertised New MY26 EBMX offer is covered; further review is required before treating it as a fully verified configuration."
++  },
++  {
++    "id": "surron_ultra_bee_hp_t_desert_brown_ebmx_19852__20261010",
++    "field": "configurationEvidence.projectionScope",
++    "before": "Bounded exact advertised New MY26 EBMX offer only, pending separate root admission",
++    "after": "Only this exact advertised New MY26 EBMX offer is covered; further review is required before treating it as a fully verified configuration."
++  },
++  {
++    "id": "surron_ultra_bee_hp_r_carbon_black_ebmx_19849__20261010",
++    "field": "configurationEvidence.projectionScope",
++    "before": "Bounded exact advertised New MY26 EBMX offer only, pending separate root admission",
++    "after": "Only this exact advertised New MY26 EBMX offer is covered; further review is required before treating it as a fully verified configuration."
++  },
++  {
++    "id": "kawasaki_ninja_e1_my26_nx011atfnn_brisbane_kaw_ne1_my26_1__20261010",
++    "field": "configurationEvidence.projectionScope",
++    "before": "Brisbane Motorcycles advertised New Ninja e-1 (LAMS) (MY26), NX011ATFNN, catalogue KAW-NE1-MY26_1; not a closed factory build; unpublished source-only proposal pending separate root admission",
++    "after": "Brisbane Motorcycles advertised New Ninja e-1 (LAMS) (MY26), NX011ATFNN, catalogue KAW-NE1-MY26_1. The advertisement is recorded, but a complete factory build is not verified; detailed specifications still require separate review."
++  },
++  {
++    "id": "mazda-cx-6e",
++    "field": "limitations[4]",
++    "before": "The root visually inspected brochure pages 5, 7 and 14, confirming grade table headings, cargo measurement basis and the publication footer/code. This limited visual check does not approve the separate detailed technical candidate; no technical epoch or specification is admitted by this market record.",
++    "after": "Brochure pages 5, 7 and 14 were visually checked for grade-table headings, cargo measurement basis and the publication footer/code. This limited check does not verify the detailed technical information, applicable specification version or vehicle specifications in this market record."
++  },
++  {
++    "id": "mazda-cx-6e",
++    "field": "evidenceNote",
++    "before": "Current Mazda Australia HTML names GT and Azami. The manufacturer retains preorder/almost-here advertising and links to dealer enquiry. Its current driveaway offer separately identifies E35 GT. Melville Mazda advertises one New E35 Azami GR, stock 11397703/VIN LVRHDCEK6TN551337, with public in_stock/reserved=false/preorder=false metadata last updated 6 October 2026. These seller fields do not establish present unsold physical availability. No detailed specification or brochure-to-VIN applicability is admitted.",
++    "after": "Current Mazda Australia HTML names GT and Azami. The manufacturer retains preorder/almost-here advertising and links to dealer enquiry. Its current driveaway offer separately identifies E35 GT. Melville Mazda advertises one New E35 Azami GR, stock 11397703/VIN LVRHDCEK6TN551337, with public in_stock/reserved=false/preorder=false metadata last updated 6 October 2026. These seller fields do not establish present unsold physical availability. This market record does not verify detailed specifications or whether the brochure applies to that VIN."
++  },
++  {
++    "id": "lexus-es-bev",
++    "field": "limitations[0]",
++    "before": "Newly discovered current Australian market-audit candidate: absent from starting inventory; main should add family audit and detailed configuration together without duplicating hybrids.",
++    "after": "This Australian battery-electric ES entry was added after the initial inventory. Its market and detailed configuration records cover the BEV models; hybrid ES models are separate."
++  },
++  {
++    "id": "bci-mini-bus-ev",
++    "field": "limitations[1]",
++    "before": "Admission is sales-sheet-scoped only. If the UI cannot keep this scope and the technical conflicts visible, retain the family in audit/search instead of publishing a falsely exact build.",
++    "after": "This entry is limited to the sales sheet. Unresolved technical conflicts mean it must not be treated as a verified exact build."
++  }
++];
++
++/** An unknown record, field or revised source string always keeps its original text. */
++export function buyerDisplayCopy(
++  id: string,
++  field: string,
++  original: string,
++): string {
++  return (
++    replacements.find(
++      (entry) =>
++        entry.id === id && entry.field === field && entry.before === original,
++    )?.after ?? original
++  );
++}
+--- /dev/null
++++ b/tests/buyer-display-copy-render.test.ts
+@@ -0,0 +1,178 @@
++import test from "node:test";
++import assert from "node:assert/strict";
++import { createHash } from "node:crypto";
++import { readFileSync } from "node:fs";
++import { createElement, type ReactNode } from "react";
++import { renderToStaticMarkup } from "react-dom/server";
++import Discovery from "../src/components/discovery";
++import Detail from "../src/components/detail";
++import { WithEvidence } from "../src/components/with-evidence";
++import { catalogue, pack, research } from "../src/lib/data";
++import { buyerProposal } from "../src/lib/buyer-proposal";
++import { buyerDisplayCopy } from "../src/lib/buyer-display-copy";
++import { currentBuyerSummary } from "../src/lib/selling-points";
++import inventory from "../src/lib/market-inventory-data";
++import type { Car, Source } from "../src/lib/types";
++import { compiledSource } from "./helpers/compiled-source";
++
++type Replacement = { id: string; field: string; before: string; after: string };
++const { replacements } = JSON.parse(
++  readFileSync(new URL("./fixtures/buyer-copy97.json", import.meta.url), "utf8"),
++) as { replacements: Replacement[] };
++const scopeRows = replacements.filter((r) => r.field === "configurationEvidence.projectionScope");
++const marketRows = replacements.filter((r) => r.field !== "configurationEvidence.projectionScope");
++const cars = catalogue();
++const data = research();
++const snapshot = { cars, data };
++const escape = (text: string) => text.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&#x27;");
++const hash = (value: unknown) => createHash("sha256").update(JSON.stringify(value)).digest("hex");
++const render = (node: ReactNode) => renderToStaticMarkup(createElement(WithEvidence, { sources: data.sources, children: node }));
++
++function marketHtml(records: typeof inventory.records) {
++  const Component = compiledSource("src/components/market-audit.tsx", {
++    "@/lib/market-inventory-data": { __esModule: true, default: { ...inventory, records } },
++  }).default as () => ReactNode;
++  return render(createElement(Component));
++}
++
++test("Discovery and exact detail display all six notices without changing their source objects", () => {
++  for (const row of scopeRows) {
++    const car = cars.find((c) => c.id === row.id)!;
++    assert.ok(car, row.id);
++    assert.equal(car.configurationEvidence!.projectionScope, row.before);
++    const before = hash(car);
++    const discovery = render(createElement(Discovery, { cars: [car], sources: data.sources }));
++    const detail = render(createElement(Detail, { pack: pack(car.id, snapshot), criteria: data.criteria }));
++    for (const html of [discovery, detail]) {
++      assert.ok(html.includes(escape(row.after)), row.id);
++      assert.ok(!html.includes(escape(row.before)), row.id);
++      assert.match(html, /Captured configuration · specifications incomplete/);
++    }
++    assert.equal(hash(car), before);
++    assert.equal(car.configurationEvidence!.rankingEligible, false);
++    assert.equal(car.configurationEvidence!.completeVehicleCountEligible, false);
++  }
++});
++
++test("Discovery revised and unknown records retain original copy and absent configurations stay absent", () => {
++  const row = scopeRows[0];
++  const original = cars.find((c) => c.id === row.id)!;
++  const cases = [
++    { ...original, id: `unknown-${original.id}` },
++    { ...original, configurationEvidence: { ...original.configurationEvidence!, projectionScope: row.before + " Review changed." } },
++  ];
++  for (const car of cases) {
++    const html = render(createElement(Discovery, { cars: [car], sources: data.sources }));
++    assert.ok(html.includes(escape(car.configurationEvidence!.projectionScope)));
++    assert.ok(!html.includes(escape(row.after)));
++    assert.equal(car.configurationEvidence!.rankingEligible, false);
++  }
++  const without = { ...original, configurationEvidence: undefined };
++  const html = render(createElement(Discovery, { cars: [without], sources: data.sources }));
++  assert.doesNotMatch(html, /Captured configuration · specifications incomplete/);
++  assert.ok(!html.includes(escape(row.after)));
++});
++
++test("Market renders only the four approved fields and preserves all adjacent limitations and sources", () => {
++  const records = inventory.records.filter((r) => marketRows.some((row) => row.id === r.id));
++  assert.equal(records.length, 3);
++  const before = hash(inventory);
++  for (const record of records) {
++    const html = marketHtml([record]);
++    const evidence = marketRows.find((r) => r.id === record.id && r.field === "evidenceNote");
++    assert.ok(html.includes(escape(evidence?.after ?? record.evidenceNote)), record.id);
++    for (const [i, limitation] of record.limitations.entries()) {
++      const row = marketRows.find((r) => r.id === record.id && r.field === `limitations[${i}]`);
++      if (row) {
++        assert.equal(limitation, row.before);
++        assert.ok(html.includes(escape(row.after)), row.id);
++        assert.ok(!html.includes(escape(row.before)), row.id);
++      } else assert.ok(html.includes(escape(limitation)), `${record.id} limitation ${i}`);
++    }
++    for (const url of record.sourceUrls) assert.ok(html.includes(escape(url)), url);
++    assert.ok(html.includes(record.checkedAt));
++  }
++  assert.equal(hash(inventory), before);
++});
++
++test("Market changed IDs, positions and wording retain their original unreviewed strings", () => {
++  const record = inventory.records.find((r) => r.id === "mazda-cx-6e")!;
++  const rows = marketRows.filter((r) => r.id === record.id);
++  const unknown = { ...record, id: "unknown-cx-6e" };
++  const unknownHtml = marketHtml([unknown]);
++  for (const row of rows) {
++    assert.ok(unknownHtml.includes(escape(row.before)));
++    assert.ok(!unknownHtml.includes(escape(row.after)));
++  }
++  const moved = { ...record, limitations: ["Additional warning", ...record.limitations], evidenceNote: record.evidenceNote + " Revised." };
++  const movedHtml = marketHtml([moved]);
++  for (const row of rows) {
++    assert.ok(movedHtml.includes(escape(row.before)));
++    assert.ok(!movedHtml.includes(escape(row.after)));
++  }
++  assert.equal(moved.stockStatus, record.stockStatus);
++  assert.equal(moved.orderStatus, record.orderStatus);
++});
++
++test("guarded identities, buyer summaries and freshness outcomes remain untouched by display formatting", () => {
++  const guarded = scopeRows.filter((row) => buyerProposal.records.some((r) => r.variantId === row.id));
++  assert.equal(guarded.length, 4);
++  const before = hash({ cars, proposal: buyerProposal, sources: data.sources });
++  for (const row of guarded) {
++    const car = cars.find((c) => c.id === row.id)!;
++    const approved = buyerProposal.records.find((r) => r.variantId === row.id)!;
++    assert.deepEqual(car.configurationEvidence, approved.expectedIdentity!.configurationEvidence);
++    for (const asOf of ["2026-10-12", "2026-12-31", "invalid"]) {
++      const prior = currentBuyerSummary(car.buyerSummary, data.sources, { asOf, maxAgeDays: 30 });
++      assert.equal(buyerDisplayCopy(car.id, row.field, car.configurationEvidence!.projectionScope), row.after);
++      assert.deepEqual(currentBuyerSummary(car.buyerSummary, data.sources, { asOf, maxAgeDays: 30 }), prior);
++    }
++    assert.equal(car.configurationEvidence!.projectionScope, row.before);
++  }
++  assert.equal(hash({ cars, proposal: buyerProposal, sources: data.sources }), before);
++});
++
++test("pre-clock Discovery keeps the existing evidence fallback and does not reveal buyer claims", () => {
++  const row = scopeRows[0];
++  const original = cars.find((c) => c.id === row.id)!;
++  const source: Source = {
++    id: "copy97-clock-proof",
++    url: "https://example.com/evidence",
++    title: "Clock test evidence",
++    publisher: "Test fixture",
++    source_type: "audit",
++    published_date: null,
++    accessed_date: "2026-10-10",
++    market: "AU",
++    supports: "Synthetic clock-bound display test",
++  };
++  const car: Car = {
++    ...original,
++    buyerSummary: {
++      checkedAt: "2026-10-10",
++      guardSourceIds: [source.id],
++      conditions: [],
++      strength: { label: "CLOCK-BOUND-LABEL", text: "CLOCK-BOUND-TEXT", sourceIds: [source.id] },
++    },
++  };
++  const sources = [...data.sources, source];
++  assert.ok(currentBuyerSummary(car.buyerSummary, sources, { asOf: "2026-10-10", maxAgeDays: 30 })?.strength);
++  const html = renderToStaticMarkup(createElement(WithEvidence, {
++    sources,
++    children: createElement(Discovery, { cars: [car], sources }),
++  }));
++  assert.ok(html.includes(escape(row.after)));
++  assert.match(html, /Comparable evidence is still incomplete/);
++  assert.doesNotMatch(html, /CLOCK-BOUND-LABEL|CLOCK-BOUND-TEXT|Checking evidence freshness/);
++});
++
++test("portable routes use the same component display layer without rewriting packed evidence", () => {
++  const entry = readFileSync(new URL("../src/portable/entry.tsx", import.meta.url), "utf8");
++  assert.match(entry, /import Discovery from "@\/components\/discovery"/);
++  assert.match(entry, /import MarketAudit from "@\/components\/market-audit"/);
++  const build = readFileSync(new URL("../scripts/build-portable.ts", import.meta.url), "utf8");
++  assert.doesNotMatch(build, /buyerDisplayCopy|buyer-display-copy/);
++  const projection = readFileSync(new URL("../src/lib/discovery.ts", import.meta.url), "utf8");
++  assert.match(projection, /projectionScope: car\.configurationEvidence\.projectionScope/);
++  assert.doesNotMatch(projection, /buyerDisplayCopy|buyer-display-copy/);
++});
+--- /dev/null
++++ b/tests/buyer-display-copy.test.ts
+@@ -0,0 +1,84 @@
++import test from "node:test";
++import assert from "node:assert/strict";
++import { readFileSync } from "node:fs";
++import { buyerDisplayCopy } from "../src/lib/buyer-display-copy";
++
++type Replacement = { id: string; field: string; before: string; after: string };
++const fixture = JSON.parse(
++  readFileSync(new URL("./fixtures/buyer-copy97.json", import.meta.url), "utf8"),
++) as { schemaVersion: number; replacements: Replacement[] };
++const replacements = fixture.replacements;
++
++test("ten approved display occurrences retain their independent exact before/after fixture", () => {
++  assert.equal(fixture.schemaVersion, 1);
++  assert.equal(replacements.length, 10);
++  assert.equal(new Set(replacements.map((r) => `${r.id}\0${r.field}`)).size, 10);
++  assert.equal(new Set(replacements.map((r) => r.after)).size, 7);
++  for (const row of replacements) {
++    assert.notEqual(row.before, row.after);
++    assert.equal(buyerDisplayCopy(row.id, row.field, row.before), row.after);
++    assert.equal(buyerDisplayCopy(row.id, row.field, row.after), row.after);
++  }
++});
++
++test("unknown identities and fields keep the exact input, including known jargon", () => {
++  for (const row of replacements) {
++    for (const id of ["", "unknown-record", `unknown-${row.id}`, `${row.id} `, row.id.toUpperCase(), "__proto__"])
++      assert.equal(buyerDisplayCopy(id, row.field, row.before), row.before);
++    for (const field of ["", "unknown-field", `history.${row.field}`, `${row.field} `, "__proto__"])
++      assert.equal(buyerDisplayCopy(row.id, field, row.before), row.before);
++  }
++  const market = replacements.find((r) => r.id === "mazda-cx-6e" && r.field === "limitations[4]")!;
++  assert.equal(buyerDisplayCopy(market.id, "limitations[5]", market.before), market.before);
++  assert.equal(buyerDisplayCopy(market.id, "evidenceNote", market.before), market.before);
++});
++
++test("changed, extended, shortened and differently cased source text falls back without promotion", () => {
++  for (const row of replacements) {
++    for (const changed of ["", `${row.before} `, ` ${row.before}`, `${row.before} Stock remains unverified.`, row.before.slice(1), row.before.toUpperCase(), row.before.replaceAll(" ", "  ")])
++      assert.equal(buyerDisplayCopy(row.id, row.field, changed), changed);
++  }
++});
++
++test("no general root, candidate or admission cleanup is performed", () => {
++  const text = "Pinned candidate; root admission pending; gating remains unresolved.";
++  for (const row of replacements)
++    assert.equal(buyerDisplayCopy(row.id, row.field, text), text);
++});
++
++test("replacement wording preserves each selected boundary and Mazda metadata verbatim", () => {
++  for (const row of replacements.filter((r) => r.id.startsWith("fonz_z_series_"))) {
++    assert.match(row.after, /Only this named advertised selection is covered/);
++    assert.match(row.after, /further review is required/);
++  }
++  for (const row of replacements.filter((r) => r.id.startsWith("surron_"))) {
++    assert.match(row.after, /exact advertised New MY26 EBMX offer/);
++    assert.match(row.after, /further review is required/);
++  }
++  const kawasaki = replacements.find((r) => r.id.startsWith("kawasaki_"))!;
++  for (const literal of ["Brisbane Motorcycles", "New Ninja e-1 (LAMS) (MY26)", "NX011ATFNN", "KAW-NE1-MY26_1", "complete factory build is not verified", "detailed specifications still require separate review"])
++    assert.ok(kawasaki.after.includes(literal), literal);
++  const mazdaCheck = replacements.find((r) => r.id === "mazda-cx-6e" && r.field === "limitations[4]")!;
++  for (const literal of ["pages 5, 7 and 14", "grade-table headings", "cargo measurement basis", "publication footer/code", "limited check does not verify", "applicable specification version", "vehicle specifications in this market record"])
++    assert.ok(mazdaCheck.after.includes(literal), literal);
++  const mazdaNote = replacements.find((r) => r.id === "mazda-cx-6e" && r.field === "evidenceNote")!;
++  assert.equal(
++    mazdaNote.after,
++    mazdaNote.before.replace(
++      "No detailed specification or brochure-to-VIN applicability is admitted.",
++      "This market record does not verify detailed specifications or whether the brochure applies to that VIN.",
++    ),
++  );
++  assert.match(replacements.find((r) => r.id === "lexus-es-bev")!.after, /hybrid ES models are separate/);
++  const bci = replacements.find((r) => r.id === "bci-mini-bus-ev")!;
++  assert.match(bci.after, /limited to the sales sheet/);
++  assert.match(bci.after, /Unresolved technical conflicts/);
++  assert.match(bci.after, /must not be treated as a verified exact build/);
++});
++
++test("the display function accepts only strings and has no data, clock, ranking or browser imports", () => {
++  const source = readFileSync(new URL("../src/lib/buyer-display-copy.ts", import.meta.url), "utf8");
++  assert.doesNotMatch(source, /\bimport\b|\brequire\s*\(|\bDate\b|\bwindow\b|\bdocument\b|\bfetch\s*\(/);
++  assert.match(source, /entry\.id === id && entry\.field === field && entry\.before === original/);
++  assert.match(source, /\?\.after \?\? original/);
++});
+--- a/tests/checkpoint96-source-history.test.ts
++++ b/tests/checkpoint96-source-history.test.ts
+@@ -2,6 +2,7 @@
+ import assert from "node:assert/strict";
+ import { createHash } from "node:crypto";
+ import { readFileSync } from "node:fs";
++import { createCheckpoint97SourceReader } from "./helpers/checkpoint97-source-history";
+ import {
+   createCheckpoint96SourceReader,
+   sourceBeforeCheckpoint96,
+@@ -10,7 +11,9 @@
+ const discovery = "src/components/discovery.tsx";
+ const portable = "src/portable/link.tsx";
+ const files = [discovery, portable];
+-const read = (file: string) => readFileSync(new URL("../" + file, import.meta.url));
++const read = createCheckpoint97SourceReader((file) =>
++  readFileSync(new URL("../" + file, import.meta.url)),
++);
+ const sha = (bytes: Uint8Array) =>
+   createHash("sha256").update(bytes).digest("hex");
+ const expected = [
+@@ -180,7 +183,8 @@
+     "7e164c30217b8eff2180c1cdaefccea9effa95a2c9cce283cec01dfbe5768fb9",
+   );
+   const source = read("tests/helpers/checkpoint91-history.ts").toString();
+-  assert.match(source, /createCheckpoint96SourceReader\(\(file\) =>\s*readFileSync\(new URL\("\.\.\/\.\.\/" \+ file, import.meta.url\)\),\s*\)/);
++  assert.match(source, /createCheckpoint97SourceReader\(\(file\) =>\s*readFileSync\(new URL\("\.\.\/\.\.\/" \+ file, import.meta.url\)\),\s*\)/);
++  assert.match(source, /const readSourceBefore96 = createCheckpoint96SourceReader\(readSourceBefore97\);/);
+   assert.match(source, /if \(file !== H.PROPOSAL_FILE && file !== H.LEDGER_FILE\)\s*assert.equal\(H.sha\(readSourceBefore96\(file\)\), pin.sha256, file\);/);
+   assert.ok(source.includes("const f = H.loadFixtures(dir);"));
+   assert.ok(source.includes("core.checkResearch(research(), fixture);"));
+--- /dev/null
++++ b/tests/checkpoint97-source-history.test.ts
+@@ -0,0 +1,141 @@
++import test from "node:test";
++import assert from "node:assert/strict";
++import { createHash } from "node:crypto";
++import { readFileSync } from "node:fs";
++import {
++  createCheckpoint97SourceReader,
++  sourceBeforeCheckpoint97,
++} from "./helpers/checkpoint97-source-history";
++import { createCheckpoint96SourceReader } from "./helpers/checkpoint96-source-history";
++
++const files = [
++  "src/components/discovery.tsx",
++  "src/components/detail.tsx",
++  "src/components/market-audit.tsx",
++];
++const helper = "src/lib/buyer-display-copy.ts";
++const read = (file: string) => readFileSync(new URL("../" + file, import.meta.url));
++const sha = (bytes: Uint8Array) => createHash("sha256").update(bytes).digest("hex");
++const expected = [
++  { sha256: "02be90e98919418e433a853ae6019adfdb833b1a0e86a7d9d2d3564da9afecb8", bytes: 26356 },
++  { sha256: "978ab14e0eda23a2369b46348195d1d82a67bb229533a340c5051ccd735505db", bytes: 6759 },
++  { sha256: "6b52fec78d11617b6bd1f74142765186c6b647a72fbe3dc928afdc07336401cf", bytes: 8323 },
++];
++
++test("approved97 components reconstruct exact96 bytes without mutating current inputs", () => {
++  for (const [index, file] of files.entries()) {
++    const current = read(file);
++    const original = Buffer.from(current);
++    const previous = sourceBeforeCheckpoint97(file, current);
++    assert.equal(sha(previous), expected[index].sha256, file);
++    assert.equal(previous.length, expected[index].bytes, file);
++    assert.notEqual(sha(previous), sha(current));
++    assert.deepEqual(current, original);
++  }
++});
++
++test("97 source recovery rejects previous, swapped, truncated, appended and line-ending drift", () => {
++  for (const [index, file] of files.entries()) {
++    const current = read(file);
++    const old = sourceBeforeCheckpoint97(file, current);
++    for (const mutation of [old, read(files[(index + 1) % files.length]), current.subarray(0, current.length - 1), Buffer.concat([current, Buffer.from("\n")]), Buffer.from(current.toString().replaceAll("\n", "\r\n")), Buffer.concat([Buffer.from("// unrelated change\n"), current])])
++      assert.throws(() => sourceBeforeCheckpoint97(file, mutation), /Unapproved checkpoint97 source/);
++  }
++});
++
++test("each display call and the preserved Discovery clock and prefetch policy are hash-bound", () => {
++  for (const file of files) {
++    const source = read(file).toString();
++    assert.ok(source.includes("buyerDisplayCopy("));
++    const mutation = Buffer.from(source.replace("buyerDisplayCopy(", "String("));
++    assert.throws(() => sourceBeforeCheckpoint97(file, mutation), /Unapproved checkpoint97 source/);
++  }
++  const discovery = read(files[0]).toString();
++  for (const [before, after] of [
++    ["prefetch={false}", "prefetch={true}"],
++    ["useState(false)", "useState(true)"],
++    ["Comparable evidence is still incomplete.", "Evidence is complete."],
++    ["Evidence expires after 30 days.", "Evidence expires after 90 days."],
++    ['"configurationEvidence.projectionScope"', '"evidenceNote"'],
++  ]) {
++    assert.ok(discovery.includes(before), before);
++    assert.throws(() => sourceBeforeCheckpoint97(files[0], Buffer.from(discovery.replace(before, after))), /Unapproved checkpoint97 source/);
++  }
++});
++
++test("all three97 components and the exact new helper are checked before historical reads", () => {
++  const reads: string[] = [];
++  const reader = createCheckpoint97SourceReader((file) => {
++    reads.push(file);
++    return read(file);
++  });
++  assert.deepEqual(reads, [...files, helper]);
++  assert.equal(sha(reader(files[0])), expected[0].sha256);
++  for (const changed of [...files, helper]) {
++    assert.throws(
++      () => createCheckpoint97SourceReader((file) => file === changed ? Buffer.concat([read(file), Buffer.from(" ")]) : read(file)),
++      /Unapproved checkpoint97 source/,
++      changed,
++    );
++  }
++  const helperText = read(helper).toString();
++  const changedCopy = helperText.replace("further review is required", "fully verified and available now");
++  assert.notEqual(changedCopy, helperText);
++  assert.throws(
++    () => createCheckpoint97SourceReader((file) => file === helper ? Buffer.from(changedCopy) : read(file)),
++    /Unapproved checkpoint97 source/,
++  );
++});
++
++test("mixed97 and96 component inputs are rejected for every nonempty predecessor subset", () => {
++  const previous = files.map((file) => sourceBeforeCheckpoint97(file, read(file)));
++  for (let mask = 1; mask < (1 << files.length); mask++) {
++    assert.throws(
++      () => createCheckpoint97SourceReader((file) => {
++        const index = files.indexOf(file);
++        return index >= 0 && (mask & (1 << index)) ? previous[index] : read(file);
++      }),
++      /Unapproved checkpoint97 source/,
++    );
++  }
++});
++
++test("cached predecessors are copied and an introduced helper is never supplied as historical", () => {
++  const reader = createCheckpoint97SourceReader(read);
++  for (const [index, file] of files.entries()) {
++    const first = reader(file);
++    first.fill(0);
++    const second = reader(file);
++    assert.notStrictEqual(first, second);
++    assert.equal(sha(second), expected[index].sha256);
++  }
++  assert.throws(() => reader(helper), /No checkpoint96 predecessor file/);
++  for (const file of ["./" + files[0], "/" + files[0], helper, "src/lib/discovery.ts"])
++    assert.throws(() => sourceBeforeCheckpoint97(file, read(files[0])), /No checkpoint97 source delta/);
++});
++
++test("unrelated inputs stay raw so the original outer pins still reject unapproved drift", () => {
++  const other = "src/lib/discovery.ts";
++  const raw = read(other);
++  const pins = JSON.parse(read("qa/checkpoint91/before-app-input-hashes.json").toString());
++  const reader = createCheckpoint97SourceReader(read);
++  assert.deepEqual(reader(other), raw);
++  assert.equal(sha(reader(other)), pins[other].sha256);
++  const changed = Buffer.concat([raw, Buffer.from("\n// unapproved drift\n")]);
++  const changedReader = createCheckpoint97SourceReader((file) => file === other ? changed : read(file));
++  assert.deepEqual(changedReader(other), changed);
++  assert.throws(() => assert.equal(sha(changedReader(other)), pins[other].sha256));
++});
++
++test("verified97 to96 to95 chaining preserves the sealed91 Discovery pin and96 adapter", () => {
++  assert.equal(sha(read("tests/helpers/checkpoint96-source-history.ts")), "fe9d9db20d712e71971c4a7458762cfd3653c6addc5cb019b42372be4b0c6d16");
++  assert.equal(sha(read("qa/checkpoint91/before-app-input-hashes.json")), "7e164c30217b8eff2180c1cdaefccea9effa95a2c9cce283cec01dfbe5768fb9");
++  const before97 = createCheckpoint97SourceReader(read);
++  const before96 = createCheckpoint96SourceReader(before97);
++  const pins = JSON.parse(read("qa/checkpoint91/before-app-input-hashes.json").toString());
++  assert.equal(sha(before96(files[0])), pins[files[0]].sha256);
++  assert.equal(sha(before96(files[0])), "c382047506d1881d4483e6478757dca41fc6d8011855e151027df027f689aa6f");
++  assert.equal(sha(before96("src/portable/link.tsx")), "0add93ac8b2209b4cba733f805d3bfb7f9252fd3d33bd0d9b3da65c95a8ecfe6");
++  assert.equal(sha(before96(files[1])), expected[1].sha256);
++  assert.equal(sha(before96(files[2])), expected[2].sha256);
++});
+--- a/tests/detail-discovery.test.ts
++++ b/tests/detail-discovery.test.ts
+@@ -7,6 +7,7 @@
+ import Discovery from "../src/components/discovery";
+ import { WithEvidence } from "../src/components/with-evidence";
+ import { catalogue, pack, research } from "../src/lib/data";
++import { buyerDisplayCopy } from "../src/lib/buyer-display-copy";
+ test("exact detail starts a same-class comparison with only the requested version selected", () => {
+   const van = catalogue().find((c) => c.vehicleClass === "van")!;
+   const html = renderToStaticMarkup(
+@@ -92,8 +93,11 @@
+       ),
+   ).join("");
+   for (const car of bounded) {
+-    const escaped = car
+-      .configurationEvidence!.projectionScope.replaceAll("&", "&amp;")
++    const escaped = buyerDisplayCopy(
++      car.id,
++      "configurationEvidence.projectionScope",
++      car.configurationEvidence!.projectionScope,
++    ).replaceAll("&", "&amp;")
+       .replaceAll("'", "&#x27;");
+     assert.ok(html.includes(escaped));
+   }
+--- /dev/null
++++ b/tests/fixtures/buyer-copy97.json
+@@ -0,0 +1,65 @@
++{
++  "schemaVersion": 1,
++  "replacements": [
++    {
++      "id": "fonz_z_series_sr_forza_aranciata_black_vegan__20261010",
++      "field": "configurationEvidence.projectionScope",
++      "before": "Bounded named advertised selection only; separate root admission required",
++      "after": "Only this named advertised selection is covered; further review is required before treating it as a fully verified configuration."
++    },
++    {
++      "id": "fonz_z_series_lr_forza_aranciata_black_vegan__20261010",
++      "field": "configurationEvidence.projectionScope",
++      "before": "Bounded named advertised selection only; separate root admission required",
++      "after": "Only this named advertised selection is covered; further review is required before treating it as a fully verified configuration."
++    },
++    {
++      "id": "surron_ultra_bee_hp_t_carbon_black_ebmx_19851__20261010",
++      "field": "configurationEvidence.projectionScope",
++      "before": "Bounded exact advertised New MY26 EBMX offer only, pending separate root admission",
++      "after": "Only this exact advertised New MY26 EBMX offer is covered; further review is required before treating it as a fully verified configuration."
++    },
++    {
++      "id": "surron_ultra_bee_hp_t_desert_brown_ebmx_19852__20261010",
++      "field": "configurationEvidence.projectionScope",
++      "before": "Bounded exact advertised New MY26 EBMX offer only, pending separate root admission",
++      "after": "Only this exact advertised New MY26 EBMX offer is covered; further review is required before treating it as a fully verified configuration."
++    },
++    {
++      "id": "surron_ultra_bee_hp_r_carbon_black_ebmx_19849__20261010",
++      "field": "configurationEvidence.projectionScope",
++      "before": "Bounded exact advertised New MY26 EBMX offer only, pending separate root admission",
++      "after": "Only this exact advertised New MY26 EBMX offer is covered; further review is required before treating it as a fully verified configuration."
++    },
++    {
++      "id": "kawasaki_ninja_e1_my26_nx011atfnn_brisbane_kaw_ne1_my26_1__20261010",
++      "field": "configurationEvidence.projectionScope",
++      "before": "Brisbane Motorcycles advertised New Ninja e-1 (LAMS) (MY26), NX011ATFNN, catalogue KAW-NE1-MY26_1; not a closed factory build; unpublished source-only proposal pending separate root admission",
++      "after": "Brisbane Motorcycles advertised New Ninja e-1 (LAMS) (MY26), NX011ATFNN, catalogue KAW-NE1-MY26_1. The advertisement is recorded, but a complete factory build is not verified; detailed specifications still require separate review."
++    },
++    {
++      "id": "mazda-cx-6e",
++      "field": "limitations[4]",
++      "before": "The root visually inspected brochure pages 5, 7 and 14, confirming grade table headings, cargo measurement basis and the publication footer/code. This limited visual check does not approve the separate detailed technical candidate; no technical epoch or specification is admitted by this market record.",
++      "after": "Brochure pages 5, 7 and 14 were visually checked for grade-table headings, cargo measurement basis and the publication footer/code. This limited check does not verify the detailed technical information, applicable specification version or vehicle specifications in this market record."
++    },
++    {
++      "id": "mazda-cx-6e",
++      "field": "evidenceNote",
++      "before": "Current Mazda Australia HTML names GT and Azami. The manufacturer retains preorder/almost-here advertising and links to dealer enquiry. Its current driveaway offer separately identifies E35 GT. Melville Mazda advertises one New E35 Azami GR, stock 11397703/VIN LVRHDCEK6TN551337, with public in_stock/reserved=false/preorder=false metadata last updated 6 October 2026. These seller fields do not establish present unsold physical availability. No detailed specification or brochure-to-VIN applicability is admitted.",
++      "after": "Current Mazda Australia HTML names GT and Azami. The manufacturer retains preorder/almost-here advertising and links to dealer enquiry. Its current driveaway offer separately identifies E35 GT. Melville Mazda advertises one New E35 Azami GR, stock 11397703/VIN LVRHDCEK6TN551337, with public in_stock/reserved=false/preorder=false metadata last updated 6 October 2026. These seller fields do not establish present unsold physical availability. This market record does not verify detailed specifications or whether the brochure applies to that VIN."
++    },
++    {
++      "id": "lexus-es-bev",
++      "field": "limitations[0]",
++      "before": "Newly discovered current Australian market-audit candidate: absent from starting inventory; main should add family audit and detailed configuration together without duplicating hybrids.",
++      "after": "This Australian battery-electric ES entry was added after the initial inventory. Its market and detailed configuration records cover the BEV models; hybrid ES models are separate."
++    },
++    {
++      "id": "bci-mini-bus-ev",
++      "field": "limitations[1]",
++      "before": "Admission is sales-sheet-scoped only. If the UI cannot keep this scope and the technical conflicts visible, retain the family in audit/search instead of publishing a falsely exact build.",
++      "after": "This entry is limited to the sales sheet. Unresolved technical conflicts mean it must not be treated as a verified exact build."
++    }
++  ]
++}
+--- a/tests/helpers/checkpoint91-history.ts
++++ b/tests/helpers/checkpoint91-history.ts
+@@ -1,5 +1,6 @@
+ import { createRequire } from "node:module";
+ import { createCheckpoint96SourceReader } from "./checkpoint96-source-history";
++import { createCheckpoint97SourceReader } from "./checkpoint97-source-history";
+ import { readFileSync } from "node:fs";
+ import { fileURLToPath } from "node:url";
+ import assert from "node:assert/strict";
+@@ -14,10 +15,11 @@
+ const fixture = core.readRuntimeFixture(dir);
+ const f = H.loadFixtures(dir);
+ const read = (name: string) => JSON.parse(readFileSync(new URL("../../" + name, import.meta.url), "utf8"));
+-// Verify both approved96 runtime sources before recovering their exact predecessors.
+-const readSourceBefore96 = createCheckpoint96SourceReader((file) =>
++// Verify97 first, then let the unchanged96 reader verify and recover its predecessors.
++const readSourceBefore97 = createCheckpoint97SourceReader((file) =>
+   readFileSync(new URL("../../" + file, import.meta.url)),
+ );
++const readSourceBefore96 = createCheckpoint96SourceReader(readSourceBefore97);
+ // One input verification per test module instance; never accept post91 drift as a baseline.
+ for (const [file, pin] of Object.entries(f.pins) as [string, { sha256: string }][]) {
+   if (file !== H.PROPOSAL_FILE && file !== H.LEDGER_FILE)
+--- /dev/null
++++ b/tests/helpers/checkpoint97-source-history.ts
+@@ -0,0 +1,114 @@
++import assert from "node:assert/strict";
++import { createHash } from "node:crypto";
++
++// Verify the complete reviewed display-only delta before recovering checkpoint96.
++// No fixture pins or checkpoint96 adapter semantics are changed.
++const sourceDeltas = [
++  {
++    "file": "src/components/discovery.tsx",
++    "replacements": [
++      {
++        "before": "import { australianEvidenceDate } from \"@/lib/evidence-date\";\n",
++        "after": "import { australianEvidenceDate } from \"@/lib/evidence-date\";\nimport { buyerDisplayCopy } from \"@/lib/buyer-display-copy\";\n"
++      },
++      {
++        "before": "<p>{c.configurationEvidence.projectionScope}</p>",
++        "after": "<p>\n                          {buyerDisplayCopy(\n                            c.id,\n                            \"configurationEvidence.projectionScope\",\n                            c.configurationEvidence.projectionScope,\n                          )}\n                        </p>"
++      }
++    ],
++    "approvedSHA256": "5769cee0feddf21dcf532d39fe65aa752bf8d920891a0ad951e1f6adc7ce3480",
++    "previousSHA256": "02be90e98919418e433a853ae6019adfdb833b1a0e86a7d9d2d3564da9afecb8",
++    "previousBytes": 26356
++  },
++  {
++    "file": "src/components/detail.tsx",
++    "replacements": [
++      {
++        "before": "import { EvidenceConditions } from \"./evidence-conditions\";\n",
++        "after": "import { EvidenceConditions } from \"./evidence-conditions\";\nimport { buyerDisplayCopy } from \"@/lib/buyer-display-copy\";\n"
++      },
++      {
++        "before": "{c.configurationEvidence.projectionScope}",
++        "after": "{buyerDisplayCopy(\n                c.id,\n                \"configurationEvidence.projectionScope\",\n                c.configurationEvidence.projectionScope,\n              )}"
++      }
++    ],
++    "approvedSHA256": "421556c025400b37aeb513411e6b319597101885fdc1bc5b7de2be87510a20ec",
++    "previousSHA256": "978ab14e0eda23a2369b46348195d1d82a67bb229533a340c5051ccd735505db",
++    "previousBytes": 6759
++  },
++  {
++    "file": "src/components/market-audit.tsx",
++    "replacements": [
++      {
++        "before": "import { matchesSearch } from \"@/lib/search\";\n",
++        "after": "import { matchesSearch } from \"@/lib/search\";\nimport { buyerDisplayCopy } from \"@/lib/buyer-display-copy\";\n"
++      },
++      {
++        "before": "<p>{r.evidenceNote}</p>",
++        "after": "<p>{buyerDisplayCopy(r.id, \"evidenceNote\", r.evidenceNote)}</p>"
++      },
++      {
++        "before": "<li key={i}>{l}</li>",
++        "after": "<li key={i}>{buyerDisplayCopy(r.id, `limitations[${i}]`, l)}</li>"
++      }
++    ],
++    "approvedSHA256": "6062cb777b0943c09aeed8bb457b279ac9ab510509e39773d3aa77c34ecacfc1",
++    "previousSHA256": "6b52fec78d11617b6bd1f74142765186c6b647a72fbe3dc928afdc07336401cf",
++    "previousBytes": 8323
++  }
++] as const;
++const introducedFiles = [
++  {
++    "file": "src/lib/buyer-display-copy.ts",
++    "approvedSHA256": "2d977241a95d6f83d25cee03c58cab1eb406042d3956e5133e0670f1da4f17be"
++  }
++] as const;
++const sha = (bytes: Uint8Array) =>
++  createHash("sha256").update(bytes).digest("hex");
++
++/** Recover exact bytes; reject unknown, previous, mixed or otherwise changed sources. */
++export function sourceBeforeCheckpoint97(
++  file: string,
++  current: Uint8Array,
++): Buffer {
++  const spec = sourceDeltas.find((entry) => entry.file === file);
++  assert.ok(spec, `No checkpoint97 source delta for ${file}`);
++  assert.equal(sha(current), spec.approvedSHA256, `Unapproved checkpoint97 source: ${file}`);
++  let previous = Buffer.from(current).toString("utf8");
++  for (const replacement of spec.replacements) {
++    assert.equal(
++      previous.split(replacement.after).length,
++      2,
++      `Expected exactly one reviewed source replacement: ${file}`,
++    );
++    previous = previous.replace(replacement.after, replacement.before);
++  }
++  const bytes = Buffer.from(previous, "utf8");
++  assert.equal(bytes.length, spec.previousBytes, `Predecessor length: ${file}`);
++  assert.equal(sha(bytes), spec.previousSHA256, `Exact predecessor source: ${file}`);
++  return bytes;
++}
++
++/** Check all three components and the new display helper before serving old inputs. */
++export function createCheckpoint97SourceReader(
++  readCurrent: (file: string) => Buffer,
++): (file: string) => Buffer {
++  const current = [...sourceDeltas, ...introducedFiles].map(({ file, approvedSHA256 }) => {
++    const bytes = Buffer.from(readCurrent(file));
++    assert.equal(sha(bytes), approvedSHA256, `Unapproved checkpoint97 source: ${file}`);
++    return { file, bytes };
++  });
++  const previous = new Map<string, Buffer>();
++  for (const { file, bytes } of current) {
++    if (sourceDeltas.some((entry) => entry.file === file))
++      previous.set(file, sourceBeforeCheckpoint97(file, bytes));
++  }
++  return (file) => {
++    assert.ok(
++      !introducedFiles.some((entry) => entry.file === file),
++      `No checkpoint96 predecessor file: ${file}`,
++    );
++    const bytes = previous.get(file);
++    return bytes ? Buffer.from(bytes) : readCurrent(file);
++  };
++}

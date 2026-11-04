@@ -1,0 +1,868 @@
+{
+  "schemaVersion": 7,
+  "createdAt": "2026-10-14T13:18:20.960140+00:00",
+  "status": "Completed verified Chery-integrated recovery save; Chery research completion, C1/C2/C5 and M1 remain open",
+  "source": {
+    "filename": "Roadmark-recovery-source-chery-integrated-20261014T1305.tar.xz",
+    "bytes": 8216768,
+    "sha256": "978fd3a26cda6854b31c1c7ee20f9c0c5ff6d6d5aa1f9fd81c492cfe4e6445de",
+    "group": "source-chery-integrated",
+    "library_file_id": "libfile_6e62036b5a8c8191b847bd3a0f83e881",
+    "version": 0,
+    "restoreOrder": 39,
+    "file_id": "file_00000000ce8081f48eb0917687362ed0"
+  },
+  "sourceCaptureCutoff": "2026-10-14T13:05:26.709413+00:00",
+  "qaCaptureCutoff": "2026-10-14T13:06:41.610016+00:00",
+  "researchCaptureCutoff": "2026-10-14T13:06:43.303080+00:00",
+  "archiveCount": 66,
+  "archiveBytes": 505797136,
+  "restoredFiles": 5948,
+  "restoredBytes": 2095081712,
+  "incrementalSave": {
+    "newArchiveCount": 5,
+    "newArchiveBytes": 37625684,
+    "currentSourceFiles": 646,
+    "currentQaFiles": 1682,
+    "newOrChangedQaFiles": 113,
+    "unchangedQaFiles": 1569,
+    "missingQaFiles": [],
+    "cheryResearchFiles": 124,
+    "researchExclusions": [],
+    "newQaPaths": [
+      "roadmark-104-qa/chery-independent-review/README.md",
+      "roadmark-104-qa/chery-independent-review/authorized-registration-delta.json",
+      "roadmark-104-qa/chery-independent-review/check-live-before.ts",
+      "roadmark-104-qa/chery-independent-review/evidence-findings.md",
+      "roadmark-104-qa/chery-independent-review/final-integration-receipt.json",
+      "roadmark-104-qa/chery-independent-review/independent-metadata-audit.json",
+      "roadmark-104-qa/chery-independent-review/independent-review-replay.json",
+      "roadmark-104-qa/chery-independent-review/independent-source-privacy.json",
+      "roadmark-104-qa/chery-independent-review/live-before-01-script.ts",
+      "roadmark-104-qa/chery-independent-review/live-before-01.exit",
+      "roadmark-104-qa/chery-independent-review/live-before-01.log",
+      "roadmark-104-qa/chery-independent-review/live-before-01.resource.json",
+      "roadmark-104-qa/chery-independent-review/live-before-02.exit",
+      "roadmark-104-qa/chery-independent-review/live-before-02.log",
+      "roadmark-104-qa/chery-independent-review/live-before-02.resource.json",
+      "roadmark-104-qa/chery-independent-review/live-before-equality.json",
+      "roadmark-104-qa/chery-independent-review/price-guard-independent-review.json",
+      "roadmark-104-qa/chery-independent-review/registered-coverage-parity.json",
+      "roadmark-104-qa/chery-independent-review/registration-audit-harness-note.txt",
+      "roadmark-104-qa/chery-independent-review/replay-01.exit",
+      "roadmark-104-qa/chery-independent-review/replay-01.log",
+      "roadmark-104-qa/chery-independent-review/replay-02-script.ts",
+      "roadmark-104-qa/chery-independent-review/replay-02.exit",
+      "roadmark-104-qa/chery-independent-review/replay-02.log",
+      "roadmark-104-qa/chery-independent-review/replay-02.resource.json",
+      "roadmark-104-qa/chery-independent-review/replay-03-script.ts",
+      "roadmark-104-qa/chery-independent-review/replay-03.exit",
+      "roadmark-104-qa/chery-independent-review/replay-03.log",
+      "roadmark-104-qa/chery-independent-review/replay-03.resource.json",
+      "roadmark-104-qa/chery-independent-review/replay-04.exit",
+      "roadmark-104-qa/chery-independent-review/replay-04.log",
+      "roadmark-104-qa/chery-independent-review/replay-04.resource.json",
+      "roadmark-104-qa/chery-independent-review/replay-resource-usage.json",
+      "roadmark-104-qa/chery-independent-review/review-artifact-manifest.json",
+      "roadmark-104-qa/chery-independent-review/reviewer-harness-corrections.json",
+      "roadmark-104-qa/chery-research-README.md",
+      "roadmark-104-qa/chery-research-artifact-hash-manifest.json",
+      "roadmark-104-qa/chery-research-brand-model-list-reconciliation.json",
+      "roadmark-104-qa/chery-research-browser-price-attempts.json",
+      "roadmark-104-qa/chery-research-canonical-baseline-meta.json",
+      "roadmark-104-qa/chery-research-core-matrix.json",
+      "roadmark-104-qa/chery-research-evidence-completeness-audit.json",
+      "roadmark-104-qa/chery-research-feature-wording-finalization.json",
+      "roadmark-104-qa/chery-research-integration-readiness.json",
+      "roadmark-104-qa/chery-research-new-feature-before-manifest.json",
+      "roadmark-104-qa/chery-research-privacy-review.json",
+      "roadmark-104-qa/chery-research-replay-snapshot-manifest.json",
+      "roadmark-104-qa/chery-research-source-hash-manifest.json",
+      "roadmark-104-qa/chery-research-source-index.json",
+      "roadmark-104-qa/chery-sequential-checks/coverage.metrics.json",
+      "roadmark-104-qa/chery-sequential-checks/coverage.stderr",
+      "roadmark-104-qa/chery-sequential-checks/coverage.stdout",
+      "roadmark-104-qa/chery-sequential-checks/execution-settings.json",
+      "roadmark-104-qa/chery-sequential-checks/integration.metrics.json",
+      "roadmark-104-qa/chery-sequential-checks/integration.stderr",
+      "roadmark-104-qa/chery-sequential-checks/integration.stdout",
+      "roadmark-104-qa/chery-sequential-checks/lint.metrics.json",
+      "roadmark-104-qa/chery-sequential-checks/lint.stderr",
+      "roadmark-104-qa/chery-sequential-checks/lint.stdout",
+      "roadmark-104-qa/chery-sequential-checks/load.ts.before",
+      "roadmark-104-qa/chery-sequential-checks/registry.json.before",
+      "roadmark-104-qa/chery-sequential-checks/run-checks.py",
+      "roadmark-104-qa/chery-sequential-checks/run-remaining-704.py",
+      "roadmark-104-qa/chery-sequential-checks/run-typecheck-small-young-heap.py",
+      "roadmark-104-qa/chery-sequential-checks/typecheck-attempt1-704MiB/typecheck.metrics.json",
+      "roadmark-104-qa/chery-sequential-checks/typecheck-attempt1-704MiB/typecheck.stderr",
+      "roadmark-104-qa/chery-sequential-checks/typecheck-attempt1-704MiB/typecheck.stdout",
+      "roadmark-104-qa/chery-sequential-checks/typecheck.metrics.json",
+      "roadmark-104-qa/chery-sequential-checks/typecheck.stderr",
+      "roadmark-104-qa/chery-sequential-checks/typecheck.stdout",
+      "roadmark-104-qa/chery-sequential-checks/validate-attempt1-768MiB/validate.metrics.json",
+      "roadmark-104-qa/chery-sequential-checks/validate-attempt1-768MiB/validate.stderr",
+      "roadmark-104-qa/chery-sequential-checks/validate-attempt1-768MiB/validate.stdout",
+      "roadmark-104-qa/chery-sequential-checks/validate.metrics.json",
+      "roadmark-104-qa/chery-sequential-checks/validate.stderr",
+      "roadmark-104-qa/chery-sequential-checks/validate.stdout",
+      "roadmark-104-qa/price-basis-guard/REVIEW.md",
+      "roadmark-104-qa/price-basis-guard/after-sha256.json",
+      "roadmark-104-qa/price-basis-guard/before/src/lib/price-ladder.ts",
+      "roadmark-104-qa/price-basis-guard/before/tests/brand-updates.test.ts",
+      "roadmark-104-qa/price-basis-guard/before/tests/price-ladder.test.ts",
+      "roadmark-104-qa/price-basis-guard/before-sha256.json",
+      "roadmark-104-qa/price-basis-guard/brand-tests-768-resource-usage.json",
+      "roadmark-104-qa/price-basis-guard/brand-tests-768.exit",
+      "roadmark-104-qa/price-basis-guard/brand-tests-768.log",
+      "roadmark-104-qa/price-basis-guard/check-retained-prices.ts",
+      "roadmark-104-qa/price-basis-guard/focused-tests.exit",
+      "roadmark-104-qa/price-basis-guard/focused-tests.log",
+      "roadmark-104-qa/price-basis-guard/immutable-check.json",
+      "roadmark-104-qa/price-basis-guard/lint.exit",
+      "roadmark-104-qa/price-basis-guard/lint.log",
+      "roadmark-104-qa/price-basis-guard/measure-run.py",
+      "roadmark-104-qa/price-basis-guard/original-failed-replay.log",
+      "roadmark-104-qa/price-basis-guard/original-failed-reproducer.ts",
+      "roadmark-104-qa/price-basis-guard/patch.diff",
+      "roadmark-104-qa/price-basis-guard/price-packet-tests.exit",
+      "roadmark-104-qa/price-basis-guard/price-packet-tests.log",
+      "roadmark-104-qa/price-basis-guard/price-tests-final-resource-usage.json",
+      "roadmark-104-qa/price-basis-guard/price-tests-final.exit",
+      "roadmark-104-qa/price-basis-guard/price-tests-final.log",
+      "roadmark-104-qa/price-basis-guard/red-tests.exit",
+      "roadmark-104-qa/price-basis-guard/red-tests.log",
+      "roadmark-104-qa/price-basis-guard/retained-prices-check.json",
+      "roadmark-104-qa/price-basis-guard/retained-prices-check.log",
+      "roadmark-104-qa/price-basis-guard/typecheck-640-resource-usage.json",
+      "roadmark-104-qa/price-basis-guard/typecheck-640.exit",
+      "roadmark-104-qa/price-basis-guard/typecheck-640.log",
+      "roadmark-104-qa/price-basis-guard/typecheck-768-resource-usage.json",
+      "roadmark-104-qa/price-basis-guard/typecheck-768.exit",
+      "roadmark-104-qa/price-basis-guard/typecheck-768.log",
+      "roadmark-104-qa/review-chery-independent.ts",
+      "roadmark-104-qa/stage-chery-candidate.ts",
+      "roadmark-104-qa/work-status.json"
+    ],
+    "unchangedArchivesReuploaded": 0
+  },
+  "approvedCheryPacketSHA256": {
+    "chery-2026-10-14.json": "7cf2c720143d68e868cb407322b295593db70d53be8bbc61dafe01d7896ef91c",
+    "chery-reconciliation-2026-10-14.json": "511a83fe8d5ab0ad6f180facc5265c2b53e330bda3121c5c52fc12b107a6e21c"
+  },
+  "documents": [
+    {
+      "filename": "Roadmark-RECOVERY-INDEX-chery-integrated-20261014.md",
+      "library_file_id": "libfile_2a18cccb25ac8191a9b428d13e727707",
+      "version": 0,
+      "bytes": 20279,
+      "sha256": "abbb8e6078a4402d7f9f13a55a8e979d4afe8977035d611a9080c931eed2dfec"
+    },
+    {
+      "filename": "Roadmark-RECOVERY-MANIFEST-chery-integrated-20261014.json",
+      "library_file_id": "libfile_e4a089add3e8819189495da12abc643c",
+      "version": 0,
+      "bytes": 1558930,
+      "sha256": "b1a540f663e33f0630f3d39e37c72773726fdd6d80f133ab82266b0894d881d2"
+    },
+    {
+      "filename": "Roadmark-RECOVERY-VERIFICATION-chery-integrated-20261014.json",
+      "library_file_id": "libfile_13ed71a1ea448191a519a1917c20209f",
+      "version": 0,
+      "bytes": 190972,
+      "sha256": "7a910e7fe08b2d48d968429411fa24f770d856468f3720b943d80b306544a484"
+    }
+  ],
+  "newArchives": [
+    {
+      "filename": "Roadmark-recovery-source-chery-integrated-20261014T1305.tar.xz",
+      "bytes": 8216768,
+      "sha256": "978fd3a26cda6854b31c1c7ee20f9c0c5ff6d6d5aa1f9fd81c492cfe4e6445de",
+      "group": "source-chery-integrated",
+      "library_file_id": "libfile_6e62036b5a8c8191b847bd3a0f83e881",
+      "version": 0,
+      "restoreOrder": 39,
+      "file_id": "file_00000000ce8081f48eb0917687362ed0"
+    },
+    {
+      "filename": "Roadmark-recovery-chery-approved-20261014T130642Z-part01of03.tar.xz",
+      "bytes": 26650296,
+      "sha256": "343b36e105b6eb669506ac85c17cbb401f9b2c36c512d6d641691a98afcb1e62",
+      "group": "chery-approved",
+      "library_file_id": "libfile_3cc15bfc7bfc819188d26798148a3512",
+      "version": 0,
+      "restoreOrder": 63,
+      "file_id": "file_000000002a70820b8554208736375e5e"
+    },
+    {
+      "filename": "Roadmark-recovery-chery-approved-20261014T130642Z-part02of03.tar.xz",
+      "bytes": 1426744,
+      "sha256": "253430a51d386bbb84bd44cbbb7c80778d0b684969f8bf4c843e1f76bc1634bf",
+      "group": "chery-approved",
+      "library_file_id": "libfile_0430b7c57c28819190c6e7d7dac9e974",
+      "version": 0,
+      "restoreOrder": 64,
+      "file_id": "file_00000000da6c81f6a278daaa24b7d95e"
+    },
+    {
+      "filename": "Roadmark-recovery-chery-approved-20261014T130642Z-part03of03.tar.xz",
+      "bytes": 1113508,
+      "sha256": "b33528c2491da91266a027ab669eaf1309170af79a2d0c057b0291187a2a2c6a",
+      "group": "chery-approved",
+      "library_file_id": "libfile_be6502ca6acc8191b294a201e000765d",
+      "version": 0,
+      "restoreOrder": 65,
+      "file_id": "file_000000001198820db4a6978355b1c430"
+    },
+    {
+      "filename": "Roadmark-recovery-qa-chery-integrated-20261014T130634Z-part01of01.tar.xz",
+      "bytes": 218368,
+      "sha256": "baa0700ffe3a6d71801f372a71c5b33a63e20d6c0c05a9b16c7eb0ad7dd0cd28",
+      "group": "qa-chery-integrated",
+      "library_file_id": "libfile_9d7198624da08191970fa37f69cc08ec",
+      "version": 0,
+      "restoreOrder": 66,
+      "file_id": "file_00000000f4e481f6bebd27934cf006b1"
+    }
+  ],
+  "verifierLibraryFileId": "libfile_ca3a7f7c6970819188bdbf0b22dd8acb",
+  "cleanupListLibraryFileId": "libfile_cb182812848c8191a3755bd1607a99cc",
+  "copyTransformations": {
+    "sourceCopies": [
+      {
+        "bytes": 732552,
+        "sha256": "fb34e31bc3bdf5a1a2e1673d33ba9ab1ba6a8c0a3c2d3fb49e7e4267789b422d",
+        "originalBytes": 733472,
+        "originalSHA256": "e6b1f6adae33871d57f0c6bd730571cf64fed06ae4166c1947aed422d97b4a7f",
+        "redactedHeaderPaths": [
+          "/sources/5/headers/set-cookie",
+          "/sources/6/headers/set-cookie",
+          "/sources/7/headers/set-cookie",
+          "/sources/19/headers/set-cookie",
+          "/sources/20/headers/set-cookie",
+          "/sources/23/headers/Set-Cookie",
+          "/sources/24/headers/set-cookie",
+          "/sources/29/headers/set-cookie",
+          "/sources/33/headers/set-cookie",
+          "/sources/35/headers/Set-Cookie"
+        ],
+        "path": "data/farizon-foton-jac-trucks-evidence.json"
+      }
+    ],
+    "reusedQaCopies": [
+      {
+        "path": "roadmark-104-qa/source-package-roundtrip/roadmark/data/farizon-foton-jac-trucks-evidence.json",
+        "bytes": 732552,
+        "sha256": "fb34e31bc3bdf5a1a2e1673d33ba9ab1ba6a8c0a3c2d3fb49e7e4267789b422d",
+        "originalBytes": 733472,
+        "originalSHA256": "e6b1f6adae33871d57f0c6bd730571cf64fed06ae4166c1947aed422d97b4a7f",
+        "redactedHeaderPaths": [
+          "/sources/5/headers/set-cookie",
+          "/sources/6/headers/set-cookie",
+          "/sources/7/headers/set-cookie",
+          "/sources/19/headers/set-cookie",
+          "/sources/20/headers/set-cookie",
+          "/sources/23/headers/Set-Cookie",
+          "/sources/24/headers/set-cookie",
+          "/sources/29/headers/set-cookie",
+          "/sources/33/headers/set-cookie",
+          "/sources/35/headers/Set-Cookie"
+        ]
+      }
+    ],
+    "newQaDeltaCopyRedactions": 0,
+    "cheryBackupCopyRedactions": 0,
+    "note": "The same ten known legacy source cookie-header locations are redacted in the new full source; matching sanitized QA roundtrip reused unchanged."
+  },
+  "upstreamCheryCaptureFiltering": {
+    "checkedAt": "2026-10-14",
+    "method": "Value-aware public-capture scan plus source-scope review; no response headers or browser state persisted",
+    "findings": [],
+    "files": [
+      {
+        "path": "current/service.html",
+        "bytes": 81571,
+        "findings": {}
+      },
+      {
+        "path": "current/service.txt",
+        "bytes": 10131,
+        "findings": {}
+      },
+      {
+        "path": "current/redbook-my25-5-ultimate-clean-web.json",
+        "bytes": 21809,
+        "findings": {}
+      },
+      {
+        "path": "current/redbook-my25-5-ultimate-web.json",
+        "bytes": 266,
+        "findings": {}
+      },
+      {
+        "path": "current/redbook-my25-5-urban-web.json",
+        "bytes": 21162,
+        "findings": {}
+      },
+      {
+        "path": "current/redbook-my26-web.json",
+        "bytes": 23898,
+        "findings": {}
+      },
+      {
+        "path": "current/carexpert-comparison-web.json",
+        "bytes": 20355,
+        "findings": {}
+      },
+      {
+        "path": "current/carexpert-price-specs-web.json",
+        "bytes": 16924,
+        "findings": {}
+      },
+      {
+        "path": "current/offers.html",
+        "bytes": 53143,
+        "findings": {}
+      },
+      {
+        "path": "current/offers.txt",
+        "bytes": 3208,
+        "findings": {}
+      },
+      {
+        "path": "current/e5-release.html",
+        "bytes": 58317,
+        "findings": {}
+      },
+      {
+        "path": "current/e5-release.txt",
+        "bytes": 5071,
+        "findings": {}
+      },
+      {
+        "path": "current/roadside.html",
+        "bytes": 59425,
+        "findings": {}
+      },
+      {
+        "path": "current/roadside.txt",
+        "bytes": 4817,
+        "findings": {}
+      },
+      {
+        "path": "current/battery-warranty.html",
+        "bytes": 53389,
+        "findings": {}
+      },
+      {
+        "path": "current/battery-warranty.txt",
+        "bytes": 5748,
+        "findings": {}
+      },
+      {
+        "path": "current/warranty-terms.html",
+        "bytes": 58706,
+        "findings": {}
+      },
+      {
+        "path": "current/warranty-terms.txt",
+        "bytes": 10731,
+        "findings": {}
+      },
+      {
+        "path": "current/warranty.html",
+        "bytes": 58284,
+        "findings": {}
+      },
+      {
+        "path": "current/warranty.txt",
+        "bytes": 4487,
+        "findings": {}
+      },
+      {
+        "path": "current/e5-model.html",
+        "bytes": 145879,
+        "findings": {}
+      },
+      {
+        "path": "current/e5-model.txt",
+        "bytes": 14081,
+        "findings": {}
+      },
+      {
+        "path": "census/rockhampton-ultimate-my25-5-new.txt",
+        "bytes": 6529,
+        "findings": {}
+      },
+      {
+        "path": "census/independent-web-captures.json",
+        "bytes": 30772,
+        "findings": {}
+      },
+      {
+        "path": "census/townsville-urban-new.txt",
+        "bytes": 4077,
+        "findings": {}
+      },
+      {
+        "path": "census/brisbane-ultimate-my26-new.txt",
+        "bytes": 13097,
+        "findings": {}
+      },
+      {
+        "path": "census/footscray-current.txt",
+        "bytes": 14296,
+        "findings": {}
+      },
+      {
+        "path": "census/offers-october.txt",
+        "bytes": 5714,
+        "findings": {}
+      },
+      {
+        "path": "census/bartons-urban-new.txt",
+        "bytes": 6161,
+        "findings": {}
+      },
+      {
+        "path": "census/e5-my26-spec-v115.txt",
+        "bytes": 23050,
+        "findings": {}
+      },
+      {
+        "path": "census/e5-my25-5-spec-v113.txt",
+        "bytes": 27936,
+        "findings": {}
+      },
+      {
+        "path": "census/capture_manifest.json",
+        "bytes": 13275,
+        "findings": {}
+      },
+      {
+        "path": "census/wakeling-ultimate-new-2025.txt",
+        "bytes": 25341,
+        "findings": {}
+      },
+      {
+        "path": "census/wakeling-ultimate-new-2026.txt",
+        "bytes": 25448,
+        "findings": {}
+      },
+      {
+        "path": "census/portside-urban-new.txt",
+        "bytes": 12736,
+        "findings": {}
+      },
+      {
+        "path": "census/current-e5.txt",
+        "bytes": 17707,
+        "findings": {}
+      },
+      {
+        "path": "census/my27-release.txt",
+        "bytes": 8366,
+        "findings": {}
+      },
+      {
+        "path": "census/new-e5.txt",
+        "bytes": 5601,
+        "findings": {}
+      },
+      {
+        "path": "census/my26-release.txt",
+        "bytes": 7938,
+        "findings": {}
+      },
+      {
+        "path": "census/homepage.txt",
+        "bytes": 9850,
+        "findings": {}
+      },
+      {
+        "path": "census/current-e5.html",
+        "bytes": 18060,
+        "findings": {}
+      }
+    ],
+    "privacyDecision": "Only public manufacturer/dealer/publication pages, PDFs and factual browser-attempt summary. HTML sanitised before persistent packaging. No browser screenshots included; source PDF page renderings are technical source review.",
+    "immutableHistoricalSourcesPreserved": true
+  },
+  "privacy": "All new archive members and generated documents passed the bounded known-value/runtime-pattern scan. Zero known-value matches, primary-header candidates, unclassified runtime candidates or scan errors. All reused archives match previously audited sizes and SHA-256. Final Chery backup payloads match the frozen sanitized research. Capture-time filtering and historical access/execution limits are documented. The narrow retained price-provenance consistency guard and original pre-Chery baseline are retained. New QA-delta files need no redaction; one legacy source file has the same ten documented header redactions reapplied. These checks are not proof of absence of every possible secret.",
+  "imageProvenance": {
+    "status": "eligible-public-PDF-renders",
+    "researchImages": [
+      {
+        "path": "chery-research/census/my25-5-page3.png",
+        "bytes": 445808,
+        "sha256": "fd3d5b73de951feb421c1083f0c8e22a9b475e0495a7205df29bebbb87112db1",
+        "provenance": "Local public maker PDF page render; research README explicitly identifies PDF renderings as source-review evidence",
+        "parentPDF": "chery-research/census/e5-my25-5-spec-v113.pdf",
+        "parentPDFSHA256": "ffac844e0d065672bed0d06bcae3be1b45d9cb5f3a33d86a533edf3e9f0b2879",
+        "page": 3,
+        "browserScreenshot": false
+      },
+      {
+        "path": "chery-research/census/my25-5-page6.png",
+        "bytes": 377137,
+        "sha256": "a7ce86205b944c79a6b39d403010e4d813032a4fec35ce22f34cec438c49f180",
+        "provenance": "Local public maker PDF page render; research README explicitly identifies PDF renderings as source-review evidence",
+        "parentPDF": "chery-research/census/e5-my25-5-spec-v113.pdf",
+        "parentPDFSHA256": "ffac844e0d065672bed0d06bcae3be1b45d9cb5f3a33d86a533edf3e9f0b2879",
+        "page": 6,
+        "browserScreenshot": false
+      }
+    ],
+    "newQaImages": [],
+    "browserScreenshotsIncluded": 0,
+    "existingExclusions": "Five historical Toyota browser screenshots remain excluded as recorded in the baseline manifest",
+    "ownerConfirmation": "Research owner confirmed pages3/6 of official Chery MY25.5 edition1.13/September2025 PDF; no browser screenshots, no file writes.",
+    "captureHashCaveat": "Retained HTML/text hashes identify sanitized bytes. Original-response hashes and transformation records are in census/capture_manifest.json; backup verifies retained bytes and does not claim to reverify unavailable pre-filter response bodies."
+  },
+  "priorToyotaBrowserScreenshotExclusions": {
+    "result": "Excluded before any upload",
+    "provenance": "Verified from current/build_normalized.py and REVIEW.md: official PDFs displayed in cloud Chrome and captured as browser screenshots.",
+    "files": [
+      {
+        "path": "toyota-research/current/bz4x-spec-p1.png",
+        "bytes": 94027,
+        "sha256": "2d9242f9136c653566bb169e0621106f9bafe749e465961139d45dd688b660a1",
+        "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+      },
+      {
+        "path": "toyota-research/current/bz4x-spec-p2.png",
+        "bytes": 92201,
+        "sha256": "ab1c9676f743f030ec5fc29654e6961c48ac8f31801456cd6307bc352d4e2275",
+        "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+      },
+      {
+        "path": "toyota-research/current/hilux-spec-p2.png",
+        "bytes": 91974,
+        "sha256": "08adef635b8744c02336ada1b02b674ee6b4f0e0012a3bd0fb3f2d1f1c0af368",
+        "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+      },
+      {
+        "path": "toyota-research/current/hilux-spec-p3.png",
+        "bytes": 88131,
+        "sha256": "2bf2bdd69b4c558d94b9561202fb49046211dbbb41806113b47597c4bd9495ca",
+        "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+      },
+      {
+        "path": "toyota-research/current/touring-spec-p2.png",
+        "bytes": 85836,
+        "sha256": "9525bbd89757a7ac6311fec7f82e5c5a3c0aee6d50c1ec1ff232a247ece90491",
+        "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+      }
+    ]
+  },
+  "integrity": {
+    "result": "PASS",
+    "checkedAt": "2026-10-14T13:17:46.442962+00:00",
+    "archiveCount": 66,
+    "restoredFilesVerified": 5948,
+    "restoredBytesVerified": 2095081712,
+    "newCompressedArchivesRehashedAfterUpload": 5,
+    "method": "Final manifest file/hash/order core exactly equals independently byte-verified reconstructed tree. Native IDs/versions match successful ordered receipts. New archive hashes rechecked after upload; prior complete streaming/archive/tree verification reused without redundant whole-chain reads.",
+    "manifestSHA256": "b1a540f663e33f0630f3d39e37c72773726fdd6d80f133ab82266b0894d881d2"
+  },
+  "backupResourceConfiguration": {
+    "recordedAt": "2026-10-14T13:10:42.329057+00:00",
+    "compression": {
+      "implementation": "Python tarfile with stdlib lzma",
+      "format": "tar.xz / PAX tar",
+      "preset": 6,
+      "extreme": false,
+      "encoderScheduling": "One archive encoder at a time in each script; no multithreading or thread-pool option requested",
+      "configuredDictionary": "8 MiB, confirmed from actual Chery research part1 XZ metadata",
+      "integrityCheck": "CRC64",
+      "researchRawGroupTargetBytes": 45000000,
+      "sourceCompressedLimitBytes": 15000000,
+      "actualPart1Streams": 1,
+      "actualPart1Blocks": 1,
+      "xzReportedDecoderMemory": "9 MiB; codec decoder requirement only, not process RSS"
+    },
+    "memoryCaveats": [
+      "Research/source packagers read individual payloads into bytes; archive hash checks also read the compressed archive into bytes.",
+      "Privacy scans read full member bytes, decode text and run nested-JSON/runtime-pattern checks; memory can exceed codec memory substantially.",
+      "Whole-tree verification materializes individual members and hash records; this cut schedules main reconstruction and independent streaming verification sequentially."
+    ],
+    "measuredPeakRssThisCut": {
+      "independent-final-verification.resources.json": {
+        "exitCode": 1,
+        "wallSeconds": 30.943,
+        "maxRssKiB": 51652,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+      },
+      "research-capture.resources.json": {
+        "exitCode": 0,
+        "wallSeconds": 28.352,
+        "maxRssKiB": 176500,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+      },
+      "archive-scan.resources.json": {
+        "exitCode": 0,
+        "wallSeconds": 90.964,
+        "maxRssKiB": 745988,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+      },
+      "qa-capture.resources.json": {
+        "exitCode": 0,
+        "wallSeconds": 8.19,
+        "maxRssKiB": 400612,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+      },
+      "independent-static-continuation.resources.json": {
+        "exitCode": 0,
+        "wallSeconds": 1.349,
+        "maxRssKiB": 35356,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+      },
+      "reconstruction.resources.json": {
+        "exitCode": 0,
+        "wallSeconds": 54.937,
+        "maxRssKiB": 141700,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+      },
+      "source-capture.resources.json": {
+        "exitCode": 0,
+        "wallSeconds": 45.831,
+        "maxRssKiB": 360620,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+      }
+    },
+    "measurementNote": "Each Chery heavy phase is sequential with Linux wait4 child resource accounting. No catalogue process overlaps. An initial QA wrapper failed for missing baseline captureCutoff before archive writing; corrected baseline metadata and successful recapture retained.",
+    "largestPreviousSourcePayloads": [
+      {
+        "path": "data/catalogue-additions-2026-10-10.json",
+        "bytes": 74934307
+      },
+      {
+        "path": "data/buyer-identity-snapshots-2026-10-10.json",
+        "bytes": 54962382
+      },
+      {
+        "path": "data/buyer-selling-points-2026-10-10.json",
+        "bytes": 24074749
+      },
+      {
+        "path": "data/m1-brand-updates/hyundai-2026-10-14.json",
+        "bytes": 18134105
+      },
+      {
+        "path": "data/m1-evidence-regrading-2026-10-13.json",
+        "bytes": 15226769
+      }
+    ],
+    "plannedScheduling": "All capture, compression, full scan, reconstruction and independent verification are sequential. Root catalogue work resumes only after explicit release.",
+    "updatedAt": "2026-10-14T13:17:26.946351+00:00"
+  },
+  "workState": {
+    "workingCheckpoint": 104,
+    "latestDeliveredCheckpoint": 103,
+    "milestone": "M1 open",
+    "latestIntegratedBrand": "Chery",
+    "totalVersions": 395,
+    "tier1Versions": 318,
+    "onSaleVersions": 299,
+    "coreReviewNote": "Grades require an explicit sourced M1 review; legacy statuses do not earn Confirmed. 4508/5083 on-sale core cells reviewed; unsuccessful searches need two cited sources.",
+    "cheryCounts": {
+      "versions": 3,
+      "newVersions": 2,
+      "coreCells": 51,
+      "coreConfirmed": 34,
+      "coreCheck": 3,
+      "coreReported": 11,
+      "coreNotPublished": 3,
+      "specificFactEdits": 312,
+      "sharedBrandTerms": 3,
+      "actualPackFactsChecked": 321,
+      "guardedFeatures": 72,
+      "strengthTradeoffPairs": 3,
+      "sources": 19,
+      "sourceCaptureFiles": 27
+    },
+    "researchCompleted": false,
+    "criteriaStatus": {
+      "C1": false,
+      "C2": false,
+      "C3": true,
+      "C4": true,
+      "C5": false,
+      "C6": true
+    },
+    "remainingResearchScope": [
+      "Older Omoda E5 BX/EX and pre-May MY25 residual NEW census remains unresolved; no false exclusions",
+      "MY27 E5 final Australian grade list, prices and orderability remain pending",
+      "Two independent whole-market published lists are not established by brand-only directories"
+    ],
+    "materialCaveats": [
+      "Current MY26 price is Reported rung 5 exact RedBook driveaway price-when-new guide; current maker postcode quote was unavailable",
+      "MY25.5 dealer NEW advertisements establish advertised identity and price only; physical stock and factory-order acceptance are unverified",
+      "Maker 30\u201380% duration and 130 kW charger condition do not establish a 10\u201380% duration or Confirmed vehicle acceptance power",
+      "MY26 portable charging-cable inclusion has an explicit conflict between the current model page and April specification sheet"
+    ],
+    "latestRootChecks": {
+      "brand": "Chery",
+      "researchCompleted": false,
+      "integrationTests": {
+        "passed": 171,
+        "failed": 0
+      },
+      "validateExit": 0,
+      "coverageExit": 0,
+      "typecheckExit": 0,
+      "changedFileLintExit": 0,
+      "successfulRunDirectory": "chery-sequential-checks",
+      "packetSha256": "7cf2c720143d68e868cb407322b295593db70d53be8bbc61dafe01d7896ef91c",
+      "executionSettings": "chery-sequential-checks/execution-settings.json"
+    },
+    "finalRootIntegrationReceipt": {
+      "status": "passed",
+      "checkedAt": "2026-10-14",
+      "integrationTests": {
+        "tests": 171,
+        "pass": 171,
+        "fail": 0,
+        "skipped": 0
+      },
+      "terminalMetrics": {
+        "integration": {
+          "command": [
+            "node",
+            "--import",
+            "tsx",
+            "--test",
+            "--test-reporter=tap",
+            "--test-concurrency=1",
+            "tests/brand-added-detail.test.ts",
+            "tests/brand-feature-updates.test.ts",
+            "tests/brand-updates.test.ts",
+            "tests/brand-configuration-updates.test.ts",
+            "tests/price-ladder.test.ts"
+          ],
+          "exitCode": 0,
+          "signal": null,
+          "wallSeconds": 246.959,
+          "userSeconds": 272.227937,
+          "systemSeconds": 8.307427,
+          "maxRssKiB": 920920
+        },
+        "validate": {
+          "command": [
+            "node",
+            "--import",
+            "tsx",
+            "scripts/validate.ts"
+          ],
+          "exitCode": 0,
+          "signal": null,
+          "wallSeconds": 169.281,
+          "userSeconds": 180.037265,
+          "systemSeconds": 3.081609,
+          "maxRssKiB": 941476
+        },
+        "coverage": {
+          "command": [
+            "node",
+            "--import",
+            "tsx",
+            "scripts/report-coverage.ts",
+            "--json"
+          ],
+          "exitCode": 0,
+          "signal": null,
+          "wallSeconds": 142.256,
+          "userSeconds": 200.090803,
+          "systemSeconds": 2.371124,
+          "maxRssKiB": 834388
+        },
+        "typecheck": {
+          "command": [
+            "node",
+            "node_modules/typescript/bin/tsc",
+            "--noEmit"
+          ],
+          "exitCode": 0,
+          "signal": null,
+          "wallSeconds": 34.093,
+          "userSeconds": 50.782286,
+          "systemSeconds": 2.243256,
+          "maxRssKiB": 888680
+        },
+        "lint": {
+          "command": [
+            "node",
+            "node_modules/eslint/bin/eslint.js",
+            "scripts/reporting/load.ts",
+            "src/lib/price-ladder.ts",
+            "tests/price-ladder.test.ts",
+            "tests/brand-updates.test.ts"
+          ],
+          "exitCode": 0,
+          "signal": null,
+          "wallSeconds": 3.812,
+          "userSeconds": 4.134629,
+          "systemSeconds": 0.721159,
+          "maxRssKiB": 243536
+        }
+      },
+      "heapSettings": {
+        "integration": "--max-old-space-size=768",
+        "validate": "--max-old-space-size=704",
+        "coverage": "--max-old-space-size=704",
+        "typecheckAndLint": "--max-old-space-size=768 --max-semi-space-size=1"
+      },
+      "preservedFailedAttempts": {
+        "validate-attempt1-768MiB": {
+          "command": [
+            "node",
+            "--import",
+            "tsx",
+            "scripts/validate.ts"
+          ],
+          "exitCode": -9,
+          "signal": 9,
+          "wallSeconds": 143.737,
+          "userSeconds": 153.988648,
+          "systemSeconds": 2.497853,
+          "maxRssKiB": 953012
+        },
+        "typecheck-attempt1-704MiB": {
+          "command": [
+            "node",
+            "node_modules/typescript/bin/tsc",
+            "--noEmit"
+          ],
+          "exitCode": -6,
+          "signal": 6,
+          "wallSeconds": 23.796,
+          "userSeconds": 46.070082,
+          "systemSeconds": 2.035952,
+          "maxRssKiB": 872024
+        }
+      },
+      "originalInputFinalHashCheck": {
+        "files": 102,
+        "unchanged": 100,
+        "authorizedDelta": [
+          "data/m1-brand-updates/registry.json",
+          "scripts/reporting/load.ts"
+        ]
+      },
+      "scope": "Five named integration test files, structural validation, complete coverage parity, full standard tsc --noEmit and four changed-file lint targets. No full unrelated test suite, production build, phone QA, publication or M1 completion claimed."
+    },
+    "currentResearchBrand": "Polestar",
+    "nextResearchBrand": "Subaru",
+    "historicalReceiptNote": "Frozen research readiness describes root checks pending at its original timestamp. Final root work-status and final independent integration receipt supersede that interim status.",
+    "sourceChanges": "Chery packet and registration plus a narrow retained price-provenance consistency guard and its tests. Original 393 pre-Chery vehicles and research were verified equal.",
+    "fullAggregateSuite": "Not rerun; earlier through-Hyundai aggregate remains interrupted without terminal aggregate result",
+    "productionBuild": "Not rerun for this integration"
+  },
+  "cleanup": {
+    "affectedOriginalsRetained": 12,
+    "intermediateCopiesRetained": 3,
+    "deletions": 0,
+    "replacements": 0
+  },
+  "scope": "Full Chery-integrated source and approved research plus stable QA delta over the verified BMW chain. No provisional Chery archive is required for restore. No later Polestar research is included."
+}

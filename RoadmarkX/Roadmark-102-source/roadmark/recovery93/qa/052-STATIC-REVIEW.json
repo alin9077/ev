@@ -1,0 +1,113 @@
+{
+  "reviewType": "independent_static_implementation_candidate_review",
+  "reviewedDateUtc": "2026-10-12",
+  "verdict": "approved_for_later_authorized_application_and_runtime_validation",
+  "approvedManifestPath": "roadmark-research/market-lead93-implementation/candidate-manifest-revision2.json",
+  "approvedManifestSHA256": "8be3e2a639c16fa73ab80cff6681cd74c669ad6d1e1a64a3c7481cb0e0b841e1",
+  "files": [
+    {
+      "path": "data/market-deepway-star-lead-evidence-2026-10-12.json",
+      "sha256": "ae182e87a3bca47e0f642d5ffe99ebd93975f3be6f37e43fb171c0f582067ee1",
+      "expectedHashMatches": true,
+      "byteLengthMatches": true,
+      "baselineMatches": true
+    },
+    {
+      "path": "data/market-inventory-2026-10-10.json",
+      "sha256": "96d518229b971bb0539ced668e6dd286be16f81fc25cf4b041d5b6dd0dbb6e39",
+      "expectedHashMatches": true,
+      "byteLengthMatches": true,
+      "baselineMatches": true
+    },
+    {
+      "path": "qa/checkpoint93-market-fixture.json",
+      "sha256": "66211370041e236b81091b0a3d12c9db60b8cb7b10fead3b7de27c73050fdc61",
+      "expectedHashMatches": true,
+      "byteLengthMatches": true,
+      "baselineMatches": true
+    },
+    {
+      "path": "tests/checkpoint91-market.test.ts",
+      "sha256": "946c1eb6249aa52299d986c7494e64e3817b856bd0667ecd42d1ee75430bec52",
+      "expectedHashMatches": true,
+      "byteLengthMatches": true,
+      "baselineMatches": true
+    },
+    {
+      "path": "tests/checkpoint93-market.test.ts",
+      "sha256": "a2d52b11070ae47c558d8700c8a8b286329007927cae9d56fc89067327a3f5b0",
+      "expectedHashMatches": true,
+      "byteLengthMatches": true,
+      "baselineMatches": true
+    },
+    {
+      "path": "tests/helpers/checkpoint91-market-history.ts",
+      "sha256": "cf825027a6c700c2dd09fb92c8748586f961ff52bcd40899d4c427cda6f6323c",
+      "expectedHashMatches": true,
+      "byteLengthMatches": true,
+      "baselineMatches": true
+    },
+    {
+      "path": "tests/helpers/checkpoint93-market-history.ts",
+      "sha256": "a2c4fdabcec1e2846311c7e7be5a765650de5d7884d9f5fc9ed867c7c27e2a13",
+      "expectedHashMatches": true,
+      "byteLengthMatches": true,
+      "baselineMatches": true
+    }
+  ],
+  "fixtureChecks": {
+    "rawPreimageMatches": true,
+    "beforeCanonicalMatchesIndependentStaticComputation": true,
+    "beforeCanonicalMatchesExisting91ApprovedPin": true,
+    "afterCanonicalMatchesIndependentStaticComputation": true,
+    "priorMetadataExact": true,
+    "orderedRecordHashesExact": true,
+    "orderedLeadHashesExact": true,
+    "addedLeadExact": true,
+    "addedArtifactExact": true
+  },
+  "deltaChecks": {
+    "changedTopFields": [
+      "counts",
+      "sourceArtifacts",
+      "unverifiedLeads"
+    ],
+    "recordsUnchanged": true,
+    "oldLeadsUnchanged": true,
+    "oldArtifactsUnchanged": true,
+    "countOnlyChange": true
+  },
+  "historicalImportChecks": [
+    {
+      "path": "tests/helpers/checkpoint91-market-history.ts",
+      "exactOneImportReplacement": true
+    },
+    {
+      "path": "tests/checkpoint91-market.test.ts",
+      "exactOneImportReplacement": true
+    }
+  ],
+  "previousManifestSHA256": "631883fe827507c42a80ecb66e0bcb07f8e34b7f4e1755633d84f0a7da5d835c",
+  "revisionChangedOnly": [
+    "tests/checkpoint93-market.test.ts"
+  ],
+  "resolvedStaticFindings": [
+    "Added assert.ok(lead.limitations) before join on an optional legacy field",
+    "Added last-lead binding and assert.ok(last.trims) before mutation of an optional legacy field"
+  ],
+  "sourcePrivacy": "Exact previously reviewed concise evidence sidecar; no new full-page captures or private capture paths copied into application candidate",
+  "testCoverage": {
+    "ordinaryTests": 4,
+    "marketMutants": 14,
+    "sidecarAndApprovalRegistersTest": 1,
+    "total": 19,
+    "mutationsHitWholeStateHashGateFirst": true
+  },
+  "verificationLimits": [
+    "No application or candidate TypeScript execution/imports, no tests, no compiler, no lint, no builds, no Git, no browser or fresh web retrieval.",
+    "JSON parsing, byte hashing, value comparison and independent static canonical JSON computation only.",
+    "Static approval is not a successful runtime or typecheck result."
+  ],
+  "appChangedByReview": false,
+  "testsRunByReview": false
+}

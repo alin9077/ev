@@ -1,0 +1,263 @@
+{
+  "title": "Australian battery-electric road trike gap: bounded evidence packet",
+  "checkedAt": "2026-10-12",
+  "completeMarketCensus": false,
+  "canonicalInventoryModified": false,
+  "sourcesFile": "sources.json",
+  "duplicationCheckFile": "inventory-duplication-check.json",
+  "directRetrievalFile": "direct-retrieval-log.json",
+  "summary": {
+    "targetOriginalFamilies": 3,
+    "additionalNamedFamilyCandidates": 3,
+    "additionalDerivativeLeads": 1,
+    "dispositionEntries": 7,
+    "verifiedPhysicalStockUnits": 0,
+    "newOfferAdmissionRecommendations": 1,
+    "note": "KOOL stays inside CT-KARGO family; Mate150L is a future derivative of Mate150. Six family groups considered, seven disposition entries."
+  },
+  "records": [
+    {
+      "id": "kyburz-dxp",
+      "brand": "KYBURZ",
+      "model": "DXP",
+      "namedConfigurations": [
+        "DXP 5.3 Australia"
+      ],
+      "scope": "road-going electric delivery trike candidate",
+      "recommendation": "add_unverified_lead_or_audit_only_listing; exclude_from_verified_current_new_count",
+      "orderStatus": "listed_unconfirmed",
+      "stockStatus": "unverified",
+      "newCondition": "not_explicitly_established_for_an_actual_offer",
+      "roadEvidence": "historic_Australian_fleet_operation_plus_current_manufacturer_Australian_product; exact_current_5.3_approval_unverified",
+      "rankingEligible": false,
+      "sourceIds": [
+        "kyburz-au",
+        "kyburz-au-brochure",
+        "kyburz-global-au",
+        "kyburz-global-brochure",
+        "kyburz-post-history"
+      ],
+      "limitations": [
+        "No exact current stock, factory-order acceptance, price, VIN or RAV entry.",
+        "February 2025 local DXP 5.3 2.7 kW and May 2025 generic DXP 3.5 kW sources conflict; do not create an inferred trim."
+      ]
+    },
+    {
+      "id": "emos-ct-kargo",
+      "brand": "EMoS",
+      "model": "CT-KARGO",
+      "aliases": [
+        "CT Kargo"
+      ],
+      "namedConfigurations": [
+        "CT-KARGO",
+        "CT-KARGO KOOL"
+      ],
+      "scope": "road-going electric delivery trike candidate",
+      "recommendation": "add_one_unverified_family_with_KOOL_derivative; exclude_from_verified_current_new_count",
+      "orderStatus": "listed_unconfirmed",
+      "stockStatus": "unverified",
+      "newCondition": "not_established_currently",
+      "roadEvidence": "dealer_claim_RVCS_50281_LB_not_independently_verified",
+      "rankingEligible": false,
+      "sourceIds": [
+        "kargo-dealer",
+        "kargo-kool-dealer",
+        "emos-range",
+        "emos-historical-market"
+      ],
+      "limitations": [
+        "Both dealer pages direct-fetch 502; only indexed content observed, approximately three-month crawler age.",
+        "No accepted current order or New unit offer found.",
+        "KOOL shares base claimed approval and principal dimensions/drivetrain; named refrigerated derivative, not fourth standalone original-candidate family.",
+        "Historical Australian distributor aliases Bange/RAP-SEV are leads only; no current alias join independently validated."
+      ]
+    },
+    {
+      "id": "emos-ct-kube",
+      "brand": "EMoS",
+      "model": "CT-KUBE",
+      "aliases": [
+        "CT Kube"
+      ],
+      "namedConfigurations": [
+        "CT-KUBE"
+      ],
+      "bodyOptions": [
+        "Honey Comb Panel (1) 500 L",
+        "Honey Comb Panel (2) 450 L",
+        "EPP 255 L"
+      ],
+      "scope": "road-going electric delivery trike candidate",
+      "recommendation": "add_unverified_lead; exclude_from_verified_current_new_count",
+      "orderStatus": "listed_unconfirmed",
+      "stockStatus": "unverified",
+      "newCondition": "not_established_currently",
+      "roadEvidence": "dealer_claim_RVCS_50282_LB_not_independently_verified",
+      "rankingEligible": false,
+      "sourceIds": [
+        "kube-dealer",
+        "emos-range",
+        "emos-historical-market"
+      ],
+      "limitations": [
+        "Direct-fetch 502; indexed content only.",
+        "Three cargo-body capacity options are not verified current named trims.",
+        "Historical price/LA classification from 2022 industry table is not substituted for current approval, price or stock."
+      ]
+    },
+    {
+      "id": "ozetrike-mate150",
+      "brand": "OZ eTrike",
+      "model": "Mate150",
+      "manufacturerMake": "JINPENG",
+      "homologatedModel": "JP1500DZH-B",
+      "marketingDesignation": "OZetrike",
+      "namedConfigurations": [
+        "Mate150 AGM lead-acid / hydraulic tipper"
+      ],
+      "regulatoryVariants": [
+        "Cargo 01",
+        "Cargo 02"
+      ],
+      "scope": "battery-electric road-category cargo utility trike; broader than postal delivery",
+      "recommendation": "admit_one_source_bound_market_audit_record_as_advertised_new_offer; physical_stock_and_each_VIN_unverified",
+      "orderStatus": "accepting_order_requests_advertised",
+      "stockStatus": "new_offer_advertised_not_unit_verified",
+      "newCondition": "explicit_New_public_seller_listing",
+      "roadEvidence": "type_approval_VTA-065474_In_Force; supplier_joins_Mate150_to_approval",
+      "rankingEligible": false,
+      "sourceIds": [
+        "ozetrike-home",
+        "ozetrike-products",
+        "ozetrike-faq",
+        "ozetrike-rover",
+        "ozetrike-approval-notice",
+        "ozetrike-rvd",
+        "mate150-ebay",
+        "mate150-current-flyer",
+        "mate150-old-particulars"
+      ],
+      "typeApproval": {
+        "number": "VTA-065474",
+        "status": "In Force",
+        "holder": "JNN PTY LTD",
+        "commencement": "2025-09-12",
+        "noticeStatedExpiry": "2032-09-11",
+        "class": "LB",
+        "scope": "JINPENG JP1500DZH-B; Cargo 01 and Cargo 02"
+      },
+      "pricing": [
+        {
+          "seller": "JNN / OZ eTrike",
+          "amountAUD": 6195,
+          "basis": "before on-road costs"
+        },
+        {
+          "seller": "eBay seller os54073",
+          "amountAUD": 6386.55,
+          "basis": "advertised listing price; total/on-road charges not verified"
+        }
+      ],
+      "limitations": [
+        "Type approval is not a VIN-specific RAV record or state registration. No actual VIN supplied or checked.",
+        "Cargo 01/02 are approval variants; not proved two saleable retail trims.",
+        "Supplier current flyer curb 270 kg and RVD tare 368 kg have different/unclear bases. Do not rank mass or infer payload.",
+        "No evidence of guaranteed stock count, delivery date, seller acceptance or completed sale.",
+        "eBay seller-year 2025 is offer metadata, not factory model-year certification; seller affiliation is unverified."
+      ]
+    },
+    {
+      "id": "ozetrike-mate150l",
+      "brand": "OZ eTrike",
+      "model": "Mate150L",
+      "familyLink": "ozetrike-mate150",
+      "scope": "advertised_future_lithium_cargo_trike",
+      "recommendation": "retain_preorder_derivative_lead; exclude_current_delivery_and_approved_lithium_count",
+      "orderStatus": "preorder",
+      "stockStatus": "future_batch_advertised",
+      "newCondition": "new_incoming_batch_advertised",
+      "roadEvidence": "lithium_variant_approval_unverified; do_not_inherit_base_approval",
+      "rankingEligible": false,
+      "sourceIds": [
+        "ozetrike-home",
+        "ozetrike-rvd",
+        "ozetrike-approval-notice"
+      ],
+      "advertisedPriceAUD": 7975,
+      "advertisedDepositAUD": 500,
+      "advertisedArrival": "2026-12",
+      "advertisedBatchUnits": 12,
+      "batteryClaim": {
+        "chemistry": "LiFePO4",
+        "voltageV": 76,
+        "capacityAh": 125
+      },
+      "limitations": [
+        "December 2026 and 12 units are supplier forecast/allocation wording, not verified arrival or inventory.",
+        "Current published approval RVD is lead-acid 58 Ah only. No lithium sales-to-approval join.",
+        "Do not count as a separate physical stocked unit or already available configuration."
+      ]
+    },
+    {
+      "id": "stealth-ozpod",
+      "brand": "Stealth Special Vehicles",
+      "model": "OzPOD",
+      "namedConfigurations": [
+        "OzPOD"
+      ],
+      "scope": "Australian delivery trike candidate",
+      "recommendation": "add_unverified_lead; exclude_verified_current_new_count",
+      "orderStatus": "listed_unconfirmed",
+      "stockStatus": "unverified",
+      "newCondition": "no_specific_new_offer_found",
+      "roadEvidence": "manufacturer_describes_licence_category_but_current_approval_identifier_unverified",
+      "rankingEligible": false,
+      "sourceIds": [
+        "ozpod-manufacturer"
+      ],
+      "limitations": [
+        "Fresh product page alone does not prove manufacturing/order availability or immediate delivery.",
+        "No current road-registration approval joined to exact offered configuration.",
+        "Do not import performance values from older forums or confuse MilPOD/QuadPOD/C-17 products with OzPOD."
+      ]
+    },
+    {
+      "id": "jinpeng-e-ql150",
+      "brand": "Jinpeng",
+      "model": "E-QL150",
+      "namedConfigurations": [
+        "E-QL150"
+      ],
+      "scope": "future_farm_property_cargo_trike_with_road_eligibility_unresolved",
+      "recommendation": "retain_peripheral_future_unverified_lead; exclude_current_new_road_inventory",
+      "orderStatus": "not_current",
+      "stockStatus": "unverified",
+      "newCondition": "future_launch_interest_only",
+      "roadEvidence": "unverified",
+      "rankingEligible": false,
+      "sourceIds": [
+        "jinpeng-eql150",
+        "jinpeng-eql150-specs"
+      ],
+      "limitations": [
+        "Interest registration is not preorder or purchase availability.",
+        "No current Australian type approval established for E-QL150.",
+        "No identity join to JP1500DZH-B / Mate150; brand alone is insufficient.",
+        "Promotional site manufacturer/distributor authority not independently established."
+      ]
+    }
+  ],
+  "scopeBoundary": {
+    "included": "Non-pedal road-category cargo/delivery/utility three-wheel battery vehicles, even with lead-acid chemistry",
+    "excludedFromThisPacket": "Pedal-assist cargo tricycles, mobility scooters, recreation/off-road-only machines and other Stealth models; no general micromobility census"
+  },
+  "methodsAndLimits": [
+    "Public manufacturer/distributor/dealer/regulator browsing only. No contacts, form submissions, credentials, purchases, application changes, deployment, Git or cloud tasks.",
+    "Source dates, observation dates and seller-entered model years are kept distinct.",
+    "No exact VIN or individual RAV record verified. Approval status is type-level only.",
+    "All numeric claims are source-bound and non-ranking; class/measurement comparability has not been audited.",
+    "An unsuccessful fetch is a research limitation, not proof a business/model is discontinued.",
+    "No result here closes the Australian EV universe."
+  ]
+}

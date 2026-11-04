@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "roadmark97.save-revision2-static-review.v1",
+  "status": "static_tooling_approved_conditional_on_actual_final_binding",
+  "staticBlockers": [],
+  "packetManifestSHA256": "15d0125dfe76b7c5b800359fb2ab0e8482ee9f435affa7ceed20734a1cb533af",
+  "packetSHA256SUMS": "f9c9dea6bd3a7bf92f599c0399006e60d677b27b01c82f14f1f5486dc6a12090",
+  "reviewedPacketFiles": [
+    {
+      "path": "README.md",
+      "sha256": "36f61a00c13d903f4ba5bec8f9d0aeefd2471edd5ea5c043c47cf385ecfcb70b",
+      "bytes": 6673
+    },
+    {
+      "path": "RESEARCH-FILES.template.json",
+      "sha256": "9639845e9b1e019414f239d26e1a602baf365ddc3d7861289decb49d2879781b",
+      "bytes": 8689
+    },
+    {
+      "path": "ROOT-ACCEPTANCE.md",
+      "sha256": "48aae4138ed16846e69342d94c4db64b91107fe4aabcb7c29f28bdd0d64abe73",
+      "bytes": 11315
+    },
+    {
+      "path": "ROOT-COPY-OBSERVATION.template.json",
+      "sha256": "d9c1f3fdfae5949d78e596d61d250d7ac6e5f4911587b0689ebff2d9022c518f",
+      "bytes": 1271
+    },
+    {
+      "path": "ROOT-EXTERNAL-EXIT.template.json",
+      "sha256": "35ae00bb05fd24e6c7cf32a489d55f5ffc10410814f52a371962b7b50688f34f",
+      "bytes": 224
+    },
+    {
+      "path": "ROOT-SAVE-INPUTS.template.json",
+      "sha256": "d5292ee0ab01c90d4433e5ddce6229b1151c84a4f2c0a615f235a15172e9e0ce",
+      "bytes": 2206
+    },
+    {
+      "path": "join_recovered97_source.py",
+      "sha256": "0f17d83d578dfd9ffe771c9f8a8022482657fc855588db7d938d252fd7123a61",
+      "bytes": 4232
+    },
+    {
+      "path": "package_checkpoint97.py",
+      "sha256": "be3132935839a14448d25f3f8661f569fd9ba75e504a6a2ae30048192a2b6fc4",
+      "bytes": 38836
+    },
+    {
+      "path": "verify_checkpoint97_saves.py",
+      "sha256": "90866f53c05e5f5a25af2559fc18c11806021d8e754bf3c08628db354ddbda10",
+      "bytes": 9652
+    }
+  ],
+  "allNineManifestRowsMatch": true,
+  "allTenChecksumRowsMatch": true,
+  "source": {
+    "revision": 3,
+    "baselineInputs": 1662,
+    "finalInputs": 1668,
+    "actualInputs": 1668,
+    "primaryManifestRows": 12,
+    "modifications": 6,
+    "additions": 6,
+    "allAddedPreimagesNull": true,
+    "primaryRowsExactlyDeriveFullExpectedMap": true,
+    "allCurrentHashesMatch": true,
+    "onlyDifferenceFromInitial97": [
+      "tests/buyer-display-copy-render.test.ts"
+    ],
+    "revision3ApplicationDelta": [],
+    "preLintFixTestBytes": 9382,
+    "preLintFixTestSHA256": "1b59462adae6a9afd0c6301e27703d5cea25a7954ad745f89b30efcb0d4b1035",
+    "currentTestBytes": 9557,
+    "currentTestSHA256": "91dec0eda2b540660df105829858b58112a127658cd388b2ce49b836c7a4ca09"
+  },
+  "retainedFailures": [
+    {
+      "attempt": 1,
+      "resultSHA256": "2a18bc25d3c96e83a1206ff6be54ba1e4ae5837be62f3c3c8324a5f3df7e9f7d",
+      "externalExitSHA256": "a705094bed6bb27cfd15fa37ef7afb1148219a9a22b782f501dbabab2a682802",
+      "sealedEvidenceFiles": 25,
+      "exactMembership": true,
+      "allHashesSizesAndExactNanosecondMtimesMatch": true,
+      "nonHTTPPasses": 887,
+      "HTTPPasses": 1,
+      "typecheck": "passed",
+      "lint": "failed",
+      "laterStages": "not_started",
+      "externalExitCode": 1
+    },
+    {
+      "attempt": 2,
+      "resultSHA256": "a7f960091b20b37373afd34c2274ab177fc077ec84c00a8cf4fb08b436def755",
+      "externalExitSHA256": "e8cfa45ad2f6eca8c4c6da26c195c66ba8b29f88e7c0379cbd5c3002a5ca7982",
+      "sealedEvidenceFiles": 1,
+      "exactMembership": true,
+      "allHashesSizesAndExactNanosecondMtimesMatch": true,
+      "allSevenStages": "not_started",
+      "failure": "Candidate baseline preimage mismatch: tests/buyer-display-copy-render.test.ts",
+      "externalExitCode": 1
+    }
+  ],
+  "sourceRevisionReview": {
+    "path": "roadmark-research/review-buyer-copy97/REVISION-3-REVIEW.md",
+    "sha256": "213511f7a98d83cee1cf39acbddfd1655bc7cfa5b3e17d6f4a72a4f0f6157055",
+    "bytes": 4803
+  },
+  "research": {
+    "count": 40,
+    "totalBytes": 318377,
+    "largestBytes": 45770,
+    "allHashesSizesUTF8Match": true,
+    "duplicatePaths": [],
+    "newRecoveryIndexIncluded": false
+  },
+  "unchanged": {
+    "joiner": true,
+    "offlineCorrelator": true,
+    "copyObservationTemplate": true,
+    "successfulExternalExitTemplate": true,
+    "prior96FallbackPins": true,
+    "protectedLibraryIDs": 32
+  },
+  "actualQA3ResultAvailableAtReview": false,
+  "actualQA3ConfigurationMatches": true,
+  "packagingApproved": false,
+  "executionPerformed": false,
+  "syntaxCheckPerformed": false,
+  "appWritePerformed": false,
+  "uploadPerformed": false,
+  "deliveryEstablished": false,
+  "reviewerOperationNote": "An initial failed-directory membership comparison appended run-result.json after sorting the other side; sorting both complete lists resolved that reviewer-only ordering difference. All exact memberships match. No candidate or app execution occurred."
+}

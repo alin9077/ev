@@ -1,0 +1,106 @@
+TAP version 13
+# Subtest: approved96 sources reconstruct exact checkpoint95 bytes and the original91 Discovery pin
+ok 1 - approved96 sources reconstruct exact checkpoint95 bytes and the original91 Discovery pin
+  ---
+  duration_ms: 2.176909
+  type: 'test'
+  ...
+# Subtest: source reconstruction rejects already-old, swapped, truncated, trailing and line-ending mutations
+ok 2 - source reconstruction rejects already-old, swapped, truncated, trailing and line-ending mutations
+  ---
+  duration_ms: 5.00521
+  type: 'test'
+  ...
+# Subtest: each Discovery prefetch false must remain present and false
+ok 3 - each Discovery prefetch false must remain present and false
+  ---
+  duration_ms: 2.347296
+  type: 'test'
+  ...
+# Subtest: Discovery route, evidence and unrelated prefetch mutations cannot masquerade as the reviewed delta
+ok 4 - Discovery route, evidence and unrelated prefetch mutations cannot masquerade as the reviewed delta
+  ---
+  duration_ms: 0.776259
+  type: 'test'
+  ...
+# Subtest: portable consumption and existing click-handler mutations are rejected
+ok 5 - portable consumption and existing click-handler mutations are rejected
+  ---
+  duration_ms: 0.84933
+  type: 'test'
+  ...
+# Subtest: the historical reader rejects mixed approved and predecessor pairs
+ok 6 - the historical reader rejects mixed approved and predecessor pairs
+  ---
+  duration_ms: 0.907046
+  type: 'test'
+  ...
+# Subtest: both approved files are verified before the reader can serve a historical source
+ok 7 - both approved files are verified before the reader can serve a historical source
+  ---
+  duration_ms: 1.352307
+  type: 'test'
+  ...
+# Subtest: non-target sources stay raw and retain the original outer pin rejection
+ok 8 - non-target sources stay raw and retain the original outer pin rejection
+  ---
+  duration_ms: 1.581422
+  type: 'test'
+  ...
+# Subtest: historical reader results cannot mutate cached predecessor bytes
+ok 9 - historical reader results cannot mutate cached predecessor bytes
+  ---
+  duration_ms: 0.682067
+  type: 'test'
+  ...
+# Subtest: checkpoint91 keeps its sealed fixture and original pin comparison through the verified reader
+ok 10 - checkpoint91 keeps its sealed fixture and original pin comparison through the verified reader
+  ---
+  duration_ms: 0.554145
+  type: 'test'
+  ...
+# Subtest: all four Discovery exact-trim Link sites explicitly disable prefetch
+ok 11 - all four Discovery exact-trim Link sites explicitly disable prefetch
+  ---
+  duration_ms: 31.203844
+  type: 'test'
+  ...
+# Subtest: Discovery comparison and supporting links retain their existing prefetch policy
+ok 12 - Discovery comparison and supporting links retain their existing prefetch policy
+  ---
+  duration_ms: 12.200699
+  type: 'test'
+  ...
+# Subtest: portable Link consumes every supported prefetch value without leaking a DOM prop
+ok 13 - portable Link consumes every supported prefetch value without leaking a DOM prop
+  ---
+  duration_ms: 47.39906
+  type: 'test'
+  ...
+# Subtest: portable prefetch policy preserves primary activation and callback order
+ok 14 - portable prefetch policy preserves primary activation and callback order
+  ---
+  duration_ms: 26.134337
+  type: 'test'
+  ...
+# Subtest: portable disabled prefetch preserves modifier, non-primary, external and hash activation
+ok 15 - portable disabled prefetch preserves modifier, non-primary, external and hash activation
+  ---
+  duration_ms: 28.844225
+  type: 'test'
+  ...
+# Subtest: portable disabled prefetch still honors prior and caller cancellation
+ok 16 - portable disabled prefetch still honors prior and caller cancellation
+  ---
+  duration_ms: 5.998737
+  type: 'test'
+  ...
+1..16
+# tests 16
+# suites 0
+# pass 16
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 831.539338

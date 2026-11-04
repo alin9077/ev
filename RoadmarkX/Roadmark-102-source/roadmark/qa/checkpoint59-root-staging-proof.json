@@ -1,0 +1,63 @@
+{
+  "passed": true,
+  "applicationWritten": false,
+  "marketRows": 234,
+  "namedEntries": 385,
+  "detailedCatalogueDelta": 0,
+  "unresolvedLeads": 149,
+  "reconciledLeads": 14,
+  "unchangedEstablishedRows": 232,
+  "exactChangedEstablishedIds": [
+    "windrose-e700",
+    "ftn-motion-streetdog-xr"
+  ],
+  "allOtherCollectionsPreserved": true,
+  "allEligibilityAndStatusCountsUnchanged": true,
+  "idempotentReplayPassed": true,
+  "invalidStateProbesRejected": [
+    "duplicate established target",
+    "changed Windrose scope",
+    "changed FTN status",
+    "changed B03X established row",
+    "changed B03X lead",
+    "missing B03X lead without archive",
+    "unexpected reconciliation row",
+    "stale embedded counts",
+    "partial FTN additive state",
+    "tampered completed archive",
+    "tampered completed FTN correction"
+  ],
+  "baselineSHA256": "9789a997999a90a0a233adbe09d497c76f034a7a20f083c965c7017a8511bcb7",
+  "candidateSHA256": "3941a1c68ff16e17960673a5f18f3d670bbbe893559429171c60f324563ec4de",
+  "proposalPins": {
+    "leapmotor-market-reconciliation/proposed-reconciliation.json": "b2edcafce7f734b3ea86506c4001c8fce0773d8a5b6a31fe5459514c8ffe46f9",
+    "windrose-ftn-market-readiness/additive-record-proposals.json": "b5aa80582c2f4717b66b380b55055e49d48947d1f920a44ea29b18d10cd7eb31",
+    "windrose-ftn-market-readiness/ftn-current-wording-correction.json": "0cde7d750144957452b0a4b4d26d7b8a38f069925399bfd2d2a6785acc8f83dc",
+    "windrose-ftn-market-readiness/expected-final-records.json": "d663eef62d4da28a54c55e4a54ed87547c28c6088efb915269eb33fbc3d572ab"
+  },
+  "counts": {
+    "consolidatedModelAuditRecords": 234,
+    "byVehicleClass": {
+      "bus": 27,
+      "passenger": 109,
+      "truck": 27,
+      "ute": 13,
+      "van": 19,
+      "motorcycle": 39
+    },
+    "byOrderStatus": {
+      "listed_unconfirmed": 185,
+      "accepting_orders": 39,
+      "not_current": 4,
+      "preorder": 1,
+      "accepting_order_requests_advertised": 5
+    },
+    "namedTrimConfigurationEntries": 385,
+    "exactTrimSetMissingRecords": 53,
+    "newStockListedModelRecords": 66,
+    "unresolvedLeadGroups": 149,
+    "reconciledLeadGroups": 14,
+    "peripheralRecords": 5,
+    "duplicateModelMerges": 6
+  }
+}

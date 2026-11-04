@@ -1,0 +1,216 @@
+{
+  "schema": "roadmark100-artifact-static-preparation-inspection-v1",
+  "status": "baseline_and_candidate_data_inspected_only",
+  "candidateCheckerExecuted": false,
+  "actual100ArtifactInspected": false,
+  "baselineZIP": {
+    "path": "roadmark-recovery/final99-attempt1/Roadmark-recovered-99-portable-preview.zip",
+    "bytes": 16423587,
+    "sha256": "0ababbe0d9e9c16aea35f1cb3f427e20d5536d1d0b3b4e11a0a3a88ab78e993a"
+  },
+  "baselineMember": {
+    "name": "roadmark/index.html",
+    "bytes": 37013686,
+    "sha256": "22bbd67dcb7de6fd46598c61c34f10894ef63f2cb02eb7f58af0c7ffb1336a80"
+  },
+  "htmlRegions": {
+    "openTagCount": 1,
+    "prefixBytes": 114149,
+    "prefixSHA256": "4aa3be6fd1ad3561825977ae1d72b665f39dd7b3a263edc675f32e0181a85237",
+    "payloadBytes": 36289528,
+    "payloadSHA256": "25191f0a4c487849113be6951bbff76cfafb58073b50f6a33b1db5fa4f5f6780",
+    "suffixBytes": 610009,
+    "suffixSHA256": "8640fa0429d227b68d65ceec97a7cb1b7a42609da314f846270f82b0b47ede6a"
+  },
+  "envelope": {
+    "keys": [
+      "format",
+      "strings",
+      "data"
+    ],
+    "format": "roadmark-string-table-v1",
+    "dictionaryValues": 27162,
+    "references": 446404,
+    "escapedLiterals": 40
+  },
+  "payload": {
+    "topLevelKeys": [
+      "marketInventory",
+      "cars",
+      "packs",
+      "research",
+      "counts",
+      "art"
+    ],
+    "cars": 345,
+    "packs": 345,
+    "art": 16,
+    "research": {
+      "sources": 2202,
+      "criteria": 69,
+      "publication_issues": 15,
+      "trim_equipment": 345
+    },
+    "marketRecords": 242,
+    "unverifiedLeads": 143,
+    "counts": {
+      "variants": 345,
+      "families": 150,
+      "generations": 154,
+      "criteria": 69,
+      "evidence": 23805,
+      "current": 329,
+      "outgoing": 11,
+      "provisional": 5
+    }
+  },
+  "fixtureRows": [
+    {
+      "section": "records",
+      "index": 33,
+      "id": "bmw-i3",
+      "saved99BeforeObjectEqualsFixture": true,
+      "beforeCanonicalSHA256Matches": true,
+      "afterCanonicalSHA256Matches": true,
+      "changedFields": [
+        "checkedAt",
+        "evidenceNote",
+        "limitations",
+        "sourceUrls"
+      ]
+    },
+    {
+      "section": "records",
+      "index": 40,
+      "id": "bmw-ix4",
+      "saved99BeforeObjectEqualsFixture": true,
+      "beforeCanonicalSHA256Matches": true,
+      "afterCanonicalSHA256Matches": true,
+      "changedFields": [
+        "checkedAt",
+        "evidenceNote",
+        "limitations",
+        "sourceUrls"
+      ]
+    },
+    {
+      "section": "unverifiedLeads",
+      "index": 47,
+      "id": "dfac-captain-45e",
+      "saved99BeforeObjectEqualsFixture": true,
+      "beforeCanonicalSHA256Matches": true,
+      "afterCanonicalSHA256Matches": true,
+      "changedFields": [
+        "checkedAt",
+        "evidenceNote",
+        "limitations",
+        "sourceUrls"
+      ]
+    },
+    {
+      "section": "unverifiedLeads",
+      "index": 48,
+      "id": "dfac-captain-85e",
+      "saved99BeforeObjectEqualsFixture": true,
+      "beforeCanonicalSHA256Matches": true,
+      "afterCanonicalSHA256Matches": true,
+      "changedFields": [
+        "checkedAt",
+        "evidenceNote",
+        "limitations",
+        "sourceUrls"
+      ]
+    },
+    {
+      "section": "unverifiedLeads",
+      "index": 74,
+      "id": "pioneer-ev-dfsk-ec35",
+      "saved99BeforeObjectEqualsFixture": true,
+      "beforeCanonicalSHA256Matches": true,
+      "afterCanonicalSHA256Matches": true,
+      "changedFields": [
+        "checkedAt",
+        "evidenceNote",
+        "limitations",
+        "sourceUrls"
+      ]
+    },
+    {
+      "section": "unverifiedLeads",
+      "index": 137,
+      "id": "mercedes-benz-eqb",
+      "saved99BeforeObjectEqualsFixture": true,
+      "beforeCanonicalSHA256Matches": true,
+      "afterCanonicalSHA256Matches": true,
+      "changedFields": [
+        "checkedAt",
+        "evidenceNote",
+        "limitations",
+        "sourceUrls"
+      ]
+    },
+    {
+      "section": "unverifiedLeads",
+      "index": 138,
+      "id": "mercedes-benz-eqe-sedan",
+      "saved99BeforeObjectEqualsFixture": true,
+      "beforeCanonicalSHA256Matches": true,
+      "afterCanonicalSHA256Matches": true,
+      "changedFields": [
+        "checkedAt",
+        "evidenceNote",
+        "limitations",
+        "sourceUrls"
+      ]
+    },
+    {
+      "section": "unverifiedLeads",
+      "index": 139,
+      "id": "mercedes-benz-eqe-suv",
+      "saved99BeforeObjectEqualsFixture": true,
+      "beforeCanonicalSHA256Matches": true,
+      "afterCanonicalSHA256Matches": true,
+      "changedFields": [
+        "checkedAt",
+        "evidenceNote",
+        "limitations",
+        "sourceUrls"
+      ]
+    },
+    {
+      "section": "unverifiedLeads",
+      "index": 140,
+      "id": "mercedes-benz-eqs-suv",
+      "saved99BeforeObjectEqualsFixture": true,
+      "beforeCanonicalSHA256Matches": true,
+      "afterCanonicalSHA256Matches": true,
+      "changedFields": [
+        "checkedAt",
+        "evidenceNote",
+        "limitations",
+        "sourceUrls"
+      ]
+    },
+    {
+      "section": "unverifiedLeads",
+      "index": 141,
+      "id": "mercedes-benz-maybach-eqs",
+      "saved99BeforeObjectEqualsFixture": true,
+      "beforeCanonicalSHA256Matches": true,
+      "afterCanonicalSHA256Matches": true,
+      "changedFields": [
+        "checkedAt",
+        "evidenceNote",
+        "limitations",
+        "sourceUrls"
+      ]
+    }
+  ],
+  "tenReplacementsReconstructEntireCandidateMarketIncludingObjectKeyOrder": true,
+  "auditProjectionExceptionsJustified": [],
+  "limits": [
+    "Preparation does not execute the delivered checker or establish an actual100 result.",
+    "Static payload inclusion is not proof of UI rendering.",
+    "No application import, execution, syntaxcheck, test, build, browser, network, Git or upload performed."
+  ]
+}

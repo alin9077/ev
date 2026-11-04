@@ -1,0 +1,532 @@
+{
+  "schemaVersion": 7,
+  "createdAt": "2026-10-14T10:07:50.103297+00:00",
+  "status": "Completed verified GWM-integrated recovery save; GWM census gaps and M1 remain open",
+  "source": {
+    "filename": "Roadmark-recovery-source-gwm-integrated-20261014T0935.tar.xz",
+    "bytes": 8099624,
+    "sha256": "975bcdc8e87634c06af225e7d4f7068fea8dac7f567ea84a27739f2bc16be52c",
+    "group": "source-gwm-integrated",
+    "library_file_id": "libfile_cc39402d67b88191bf4bfa0c2aef1db9",
+    "version": 0,
+    "restoreOrder": 39,
+    "file_id": "file_000000001db081f68ced339294fbbf86"
+  },
+  "sourceCaptureCutoff": "2026-10-14T09:59:17.573345+00:00",
+  "qaCaptureCutoff": "2026-10-14T10:00:14.162654+00:00",
+  "researchCaptureCutoff": "2026-10-14T09:47:06.434597+00:00",
+  "archiveCount": 53,
+  "archiveBytes": 420569384,
+  "restoredFiles": 4927,
+  "restoredBytes": 1717880117,
+  "incrementalSave": {
+    "newArchiveCount": 4,
+    "newArchiveBytes": 38110560,
+    "currentSourceFiles": 640,
+    "currentQaFiles": 1416,
+    "newOrChangedQaFiles": 70,
+    "unchangedQaFiles": 1346,
+    "missingQaFiles": [],
+    "gwmResearchFiles": 124,
+    "researchExclusions": [],
+    "newQaPaths": [
+      "roadmark-104-qa/gwm-independent-review/candidate-capture-privacy-check.json",
+      "roadmark-104-qa/gwm-independent-review/early-source-checks.json",
+      "roadmark-104-qa/gwm-independent-review/f0bf0d46-helper-projection-mismatch.exit",
+      "roadmark-104-qa/gwm-independent-review/f0bf0d46-helper-projection-mismatch.log",
+      "roadmark-104-qa/gwm-independent-review/f0bf0d46-no-configuration-fixture-isolation.exit",
+      "roadmark-104-qa/gwm-independent-review/f0bf0d46-no-configuration-fixture-isolation.log",
+      "roadmark-104-qa/gwm-independent-review/final-artifact-verification.json",
+      "roadmark-104-qa/gwm-independent-review/final-artifact-verification.log",
+      "roadmark-104-qa/gwm-independent-review/final-capture-privacy-check.json",
+      "roadmark-104-qa/gwm-independent-review/final-cleanup-delta-check.json",
+      "roadmark-104-qa/gwm-independent-review/independent-review-replay.exit",
+      "roadmark-104-qa/gwm-independent-review/independent-review-replay.json",
+      "roadmark-104-qa/gwm-independent-review/independent-review-replay.log",
+      "roadmark-104-qa/gwm-independent-review/initial-d1ee41a3-null-summary-failure.exit",
+      "roadmark-104-qa/gwm-independent-review/initial-d1ee41a3-null-summary-failure.log",
+      "roadmark-104-qa/gwm-independent-review/pre-cleanup-f0bf0d46-pass.exit",
+      "roadmark-104-qa/gwm-independent-review/pre-cleanup-f0bf0d46-pass.json",
+      "roadmark-104-qa/gwm-independent-review/pre-cleanup-f0bf0d46-pass.log",
+      "roadmark-104-qa/gwm-independent-review/registered-report-comparison.json",
+      "roadmark-104-qa/gwm-research-REVIEW.md",
+      "roadmark-104-qa/gwm-research-artifact-hash-manifest.json",
+      "roadmark-104-qa/gwm-research-brand-model-list-reconciliation.json",
+      "roadmark-104-qa/gwm-research-core-matrix.json",
+      "roadmark-104-qa/gwm-research-evidence-completeness-audit.json",
+      "roadmark-104-qa/gwm-research-final-privacy-verification.json",
+      "roadmark-104-qa/gwm-research-final-redaction-transformations.json",
+      "roadmark-104-qa/gwm-research-independent-evidence-review.md",
+      "roadmark-104-qa/gwm-research-integration-readiness.json",
+      "roadmark-104-qa/gwm-research-new-feature-before-manifest.json",
+      "roadmark-104-qa/gwm-research-redaction-audit.json",
+      "roadmark-104-qa/gwm-research-registered-immutable-audit.json",
+      "roadmark-104-qa/gwm-research-source-hash-manifest.json",
+      "roadmark-104-qa/gwm-research-source-index.json",
+      "roadmark-104-qa/gwm-research-stage-validation.exit",
+      "roadmark-104-qa/gwm-research-stage-validation.log",
+      "roadmark-104-qa/gwm-sequential-checks/coverage.metrics.json",
+      "roadmark-104-qa/gwm-sequential-checks/coverage.stderr",
+      "roadmark-104-qa/gwm-sequential-checks/coverage.stdout",
+      "roadmark-104-qa/gwm-sequential-checks/integration.metrics.json",
+      "roadmark-104-qa/gwm-sequential-checks/integration.stderr",
+      "roadmark-104-qa/gwm-sequential-checks/integration.stdout",
+      "roadmark-104-qa/gwm-sequential-checks/validate.metrics.json",
+      "roadmark-104-qa/gwm-sequential-checks/validate.stderr",
+      "roadmark-104-qa/gwm-sequential-checks/validate.stdout",
+      "roadmark-104-qa/legacy-configuration-holds-before/src/lib/brand-configuration-updates.ts",
+      "roadmark-104-qa/legacy-configuration-holds-before/tests/brand-configuration-updates.test.ts",
+      "roadmark-104-qa/legacy-configuration-holds-focused-initial.log",
+      "roadmark-104-qa/legacy-configuration-holds-focused.exit",
+      "roadmark-104-qa/legacy-configuration-holds-focused.log",
+      "roadmark-104-qa/legacy-configuration-holds-lint.exit",
+      "roadmark-104-qa/legacy-configuration-holds-lint.log",
+      "roadmark-104-qa/legacy-configuration-holds-manifest.json",
+      "roadmark-104-qa/legacy-configuration-holds-review.md",
+      "roadmark-104-qa/legacy-configuration-holds-typecheck.exit",
+      "roadmark-104-qa/legacy-configuration-holds-typecheck.log",
+      "roadmark-104-qa/legacy-configuration-holds.patch",
+      "roadmark-104-qa/m1-gwm-coverage.exit",
+      "roadmark-104-qa/m1-gwm-coverage.json",
+      "roadmark-104-qa/m1-gwm-coverage.stderr",
+      "roadmark-104-qa/m1-gwm-integration.exit",
+      "roadmark-104-qa/m1-gwm-integration.log",
+      "roadmark-104-qa/m1-gwm-lint.exit",
+      "roadmark-104-qa/m1-gwm-lint.log",
+      "roadmark-104-qa/m1-gwm-typecheck.exit",
+      "roadmark-104-qa/m1-gwm-typecheck.log",
+      "roadmark-104-qa/m1-gwm-validate.exit",
+      "roadmark-104-qa/m1-gwm-validate.log",
+      "roadmark-104-qa/review-gwm-independent.ts",
+      "roadmark-104-qa/stage-gwm-candidate.ts",
+      "roadmark-104-qa/work-status.json"
+    ],
+    "unchangedArchivesReuploaded": 0
+  },
+  "approvedGwmPacketSHA256": {
+    "gwm-2026-10-14.json": "76212ed44d9c299a8d646e647bc26ab6026ddcae5de1d5e23fe653d233f79b75",
+    "gwm-reconciliation-2026-10-14.json": "9e5c0a5bfba724b6c890a0a0b6c6bb2c9e4817bb446d1d9be37f29c1ad98f7ab"
+  },
+  "documents": [
+    {
+      "filename": "Roadmark-RECOVERY-INDEX-gwm-integrated-20261014.md",
+      "library_file_id": "libfile_1d626f53f1e481918c05e6fdcc005ac2",
+      "version": 0,
+      "bytes": 17124,
+      "sha256": "2ed8a3ec1ba8c90a86757232012c1007ce0ac5952146d70c8bda5b3bb487d170"
+    },
+    {
+      "filename": "Roadmark-RECOVERY-MANIFEST-gwm-integrated-20261014.json",
+      "library_file_id": "libfile_f92a74452efc8191b0ee0f15e3960235",
+      "version": 0,
+      "bytes": 1193104,
+      "sha256": "0dd3bf4b5052bf4cb3dfd1cf05c5161caaf4645b5d2c42e61aedab1ddb34b717"
+    },
+    {
+      "filename": "Roadmark-RECOVERY-VERIFICATION-gwm-integrated-20261014.json",
+      "library_file_id": "libfile_e1b9d5491e908191be47b852d44650df",
+      "version": 0,
+      "bytes": 64028,
+      "sha256": "7a8717e79564aa58cfe36b9255e464b46551283d5e1d10337dbef03198bae66b"
+    }
+  ],
+  "newArchives": [
+    {
+      "filename": "Roadmark-recovery-source-gwm-integrated-20261014T0935.tar.xz",
+      "bytes": 8099624,
+      "sha256": "975bcdc8e87634c06af225e7d4f7068fea8dac7f567ea84a27739f2bc16be52c",
+      "group": "source-gwm-integrated",
+      "library_file_id": "libfile_cc39402d67b88191bf4bfa0c2aef1db9",
+      "version": 0,
+      "restoreOrder": 39,
+      "file_id": "file_000000001db081f68ced339294fbbf86"
+    },
+    {
+      "filename": "Roadmark-recovery-gwm-approved-20261014T094705Z-part01of02.tar.xz",
+      "bytes": 29022356,
+      "sha256": "03eb62bcb40978adb0e6d92db44bc21f4c98cde1ff0e005cf2037ab85b0465a2",
+      "group": "gwm-approved",
+      "library_file_id": "libfile_3142248fc5248191b0452a88d8395057",
+      "version": 0,
+      "restoreOrder": 51,
+      "file_id": "file_00000000405c81f5999ff68636e1965c"
+    },
+    {
+      "filename": "Roadmark-recovery-gwm-approved-20261014T094705Z-part02of02.tar.xz",
+      "bytes": 778992,
+      "sha256": "26aa2178824f451bfa1cfa65d4d67e08e8f94ee0722bbdc54a82113db54a3243",
+      "group": "gwm-approved",
+      "library_file_id": "libfile_5fede4c48600819181a10b596a99081e",
+      "version": 0,
+      "restoreOrder": 52,
+      "file_id": "file_00000000261481f5af583f8420b29da5"
+    },
+    {
+      "filename": "Roadmark-recovery-qa-gwm-integrated-20261014T100007Z-part01of01.tar.xz",
+      "bytes": 209588,
+      "sha256": "fee3d9b09fbb1d5b41821b0465a7da5bc11f65417230bd67145013a77f0e3ca5",
+      "group": "qa-gwm-integrated",
+      "library_file_id": "libfile_e91c1d2952c081919cf53ae9f84175fa",
+      "version": 0,
+      "restoreOrder": 53,
+      "file_id": "file_00000000d98881f68a3473f5ac4b074d"
+    }
+  ],
+  "verifierLibraryFileId": "libfile_ca3a7f7c6970819188bdbf0b22dd8acb",
+  "cleanupListLibraryFileId": "libfile_cb182812848c8191a3755bd1607a99cc",
+  "copyTransformations": {
+    "sourceCopies": [
+      {
+        "bytes": 732552,
+        "sha256": "fb34e31bc3bdf5a1a2e1673d33ba9ab1ba6a8c0a3c2d3fb49e7e4267789b422d",
+        "originalBytes": 733472,
+        "originalSHA256": "e6b1f6adae33871d57f0c6bd730571cf64fed06ae4166c1947aed422d97b4a7f",
+        "redactedHeaderPaths": [
+          "/sources/5/headers/set-cookie",
+          "/sources/6/headers/set-cookie",
+          "/sources/7/headers/set-cookie",
+          "/sources/19/headers/set-cookie",
+          "/sources/20/headers/set-cookie",
+          "/sources/23/headers/Set-Cookie",
+          "/sources/24/headers/set-cookie",
+          "/sources/29/headers/set-cookie",
+          "/sources/33/headers/set-cookie",
+          "/sources/35/headers/Set-Cookie"
+        ],
+        "path": "data/farizon-foton-jac-trucks-evidence.json"
+      }
+    ],
+    "reusedQaCopies": [
+      {
+        "path": "roadmark-104-qa/source-package-roundtrip/roadmark/data/farizon-foton-jac-trucks-evidence.json",
+        "bytes": 732552,
+        "sha256": "fb34e31bc3bdf5a1a2e1673d33ba9ab1ba6a8c0a3c2d3fb49e7e4267789b422d",
+        "originalBytes": 733472,
+        "originalSHA256": "e6b1f6adae33871d57f0c6bd730571cf64fed06ae4166c1947aed422d97b4a7f",
+        "redactedHeaderPaths": [
+          "/sources/5/headers/set-cookie",
+          "/sources/6/headers/set-cookie",
+          "/sources/7/headers/set-cookie",
+          "/sources/19/headers/set-cookie",
+          "/sources/20/headers/set-cookie",
+          "/sources/23/headers/Set-Cookie",
+          "/sources/24/headers/set-cookie",
+          "/sources/29/headers/set-cookie",
+          "/sources/33/headers/set-cookie",
+          "/sources/35/headers/Set-Cookie"
+        ]
+      }
+    ],
+    "newQaDeltaCopyRedactions": 0,
+    "gwmBackupCopyRedactions": 0,
+    "note": "The same ten known legacy source cookie-header locations are redacted in the new full source; the matching sanitized QA roundtrip file is reused unchanged."
+  },
+  "upstreamGwmCaptureFiltering": {
+    "checkedAt": "2026-10-14",
+    "finalSensitiveMatches": 0,
+    "transformations": [
+      {
+        "scope": "scope/*.txt",
+        "operation": "Capture-time filtering of sensitive/challenge-marker lines before persistence",
+        "sourceRecord": "scope capture header and manifest.json",
+        "removedValueCount": null,
+        "originalRawCaptureRetained": false,
+        "reason": "Original transport/session material was not persisted; exact pre-filter counts are unavailable and are not invented."
+      },
+      {
+        "scope": "current/*-browser.txt",
+        "operation": "Visible main/configuration text extraction only; excluded scripts, headers, cookies and unrelated tracking footer links before saving",
+        "removedValueCount": null,
+        "originalRawCaptureRetained": false
+      },
+      {
+        "scope": "spec-check/*.txt",
+        "operation": "Public text extraction followed by secret-like assignment/query scan",
+        "sourceRecord": "spec-check/capture-manifest.json",
+        "detectedSecretValues": 0
+      },
+      {
+        "scope": "final persisted textual captures and before-state/packet JSON",
+        "operation": "Final assignment/query/JWT-pattern scan",
+        "detectedSecretValues": 0
+      }
+    ],
+    "unchangedFactualEvidence": "Public URLs, public site/stock identifiers and vehicle facts are preserved. No final source capture required a further redaction."
+  },
+  "privacy": "All new archive members and generated documents passed the bounded known-value/runtime-pattern scan. Zero known-value matches, primary-header candidates, unclassified runtime candidates or scan errors. All reused archives match previously audited sizes and SHA-256. Final GWM backup payloads match the frozen sanitized research; Capture-time filtering is documented without inventing unavailable raw counts. New QA-delta files need no redaction; one legacy source file has the same ten documented header redactions reapplied. These checks are not proof of absence of every possible secret.",
+  "imageProvenance": {
+    "verifiedAt": "2026-10-14T09:37:06.037983+00:00",
+    "basis": "Research owner confirmed four current images are local Poppler renders of public maker PDFs; three scope images are downloaded public dealer photos. No browser screenshots. QA delta verified to contain no new image payloads.",
+    "researchImageCount": 7,
+    "images": [
+      {
+        "path": "gwm-research/current/ora-hatch-review-17.png",
+        "bytes": 426063,
+        "sha256": "0a80be4f6c624b06f94afd73f2b005e674385cb514823b8f2aae3701bd84be38",
+        "classification": "Local Poppler render of public maker PDF; not a browser screenshot"
+      },
+      {
+        "path": "gwm-research/current/ora-hatch-review-18.png",
+        "bytes": 1194609,
+        "sha256": "25111a056021d0b7008fb3812d0e688b9361a2e8c5ed1176494f1b826be8e550",
+        "classification": "Local Poppler render of public maker PDF; not a browser screenshot"
+      },
+      {
+        "path": "gwm-research/current/ora5-equipment-p17.png",
+        "bytes": 1056045,
+        "sha256": "2a3b5517c5e3898de00ff6debb6d7fecd55171ed83c4376807da043e26b856ad",
+        "classification": "Local Poppler render of public maker PDF; not a browser screenshot"
+      },
+      {
+        "path": "gwm-research/current/ora5-specs-p16.png",
+        "bytes": 294423,
+        "sha256": "8bc7ba5eb1fbcfa09dd3e12ab01bb8c7ef7fa9a9f2d2b169a4534633b1051733",
+        "classification": "Local Poppler render of public maker PDF; not a browser screenshot"
+      },
+      {
+        "path": "gwm-research/scope/bunbury-71535-photo.jpg",
+        "bytes": 57255,
+        "sha256": "6a604e828f6cec029269539c031cb9136ff663e1172fe26e1ebda31413a5cb9a",
+        "classification": "Downloaded public dealer photograph; not a browser screenshot"
+      },
+      {
+        "path": "gwm-research/scope/phoenix-c02331-photo.png",
+        "bytes": 254350,
+        "sha256": "4a774cbbae6e126953f704d32fbc625b12095a16cb34fc88941bbeb85663bb29",
+        "classification": "Downloaded public dealer photograph; not a browser screenshot"
+      },
+      {
+        "path": "gwm-research/scope/phoenix-c44372-photo.png",
+        "bytes": 200950,
+        "sha256": "ba6f405c40e98f05c8e165a05aeb60bb89e2f504428f2323198e5f6b4f5e78c3",
+        "classification": "Downloaded public dealer photograph; not a browser screenshot"
+      }
+    ],
+    "fullOfficialPdf": {
+      "path": "gwm-research/current/ora-hatch-brochure.pdf",
+      "note": "Reviewer downloaded the full public maker PDF (approximately23.8MB) through cloud browser; the PDF itself is an eligible source document. current/ora-hatch-review-17.png and -18.png are local Poppler renders, not browser screenshots."
+    },
+    "qaDeltaImageCount": 0,
+    "qaDeltaImageVerification": "Every changed/new QA path checked by extension; no new QA image payloads"
+  },
+  "priorToyotaBrowserScreenshotExclusions": {
+    "result": "Excluded before any upload",
+    "provenance": "Verified from current/build_normalized.py and REVIEW.md: official PDFs displayed in cloud Chrome and captured as browser screenshots.",
+    "files": [
+      {
+        "path": "toyota-research/current/bz4x-spec-p1.png",
+        "bytes": 94027,
+        "sha256": "2d9242f9136c653566bb169e0621106f9bafe749e465961139d45dd688b660a1",
+        "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+      },
+      {
+        "path": "toyota-research/current/bz4x-spec-p2.png",
+        "bytes": 92201,
+        "sha256": "ab1c9676f743f030ec5fc29654e6961c48ac8f31801456cd6307bc352d4e2275",
+        "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+      },
+      {
+        "path": "toyota-research/current/hilux-spec-p2.png",
+        "bytes": 91974,
+        "sha256": "08adef635b8744c02336ada1b02b674ee6b4f0e0012a3bd0fb3f2d1f1c0af368",
+        "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+      },
+      {
+        "path": "toyota-research/current/hilux-spec-p3.png",
+        "bytes": 88131,
+        "sha256": "2bf2bdd69b4c558d94b9561202fb49046211dbbb41806113b47597c4bd9495ca",
+        "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+      },
+      {
+        "path": "toyota-research/current/touring-spec-p2.png",
+        "bytes": 85836,
+        "sha256": "9525bbd89757a7ac6311fec7f82e5c5a3c0aee6d50c1ec1ff232a247ece90491",
+        "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+      }
+    ]
+  },
+  "integrity": {
+    "result": "PASS",
+    "archivesVerified": 53,
+    "restoredFilesVerified": 4927,
+    "restoredBytes": 1717880117
+  },
+  "backupResourceConfiguration": {
+    "recordedAt": "2026-10-14T09:49:24.749999+00:00",
+    "compression": {
+      "implementation": "Python tarfile with stdlib lzma",
+      "format": "tar.xz / PAX tar",
+      "preset": 6,
+      "extreme": false,
+      "encoderScheduling": "One archive encoder at a time in each script; no multithreading or thread-pool option requested",
+      "configuredDictionary": "8 MiB, confirmed from actual GWM archive XZ filter metadata",
+      "integrityCheck": "CRC64",
+      "actualPart1Streams": 1,
+      "actualPart1Blocks": 1,
+      "xzReportedDecoderMemory": "9 MiB; codec decoder requirement only, not process RSS or encoder RSS",
+      "researchRawGroupTargetBytes": 45000000,
+      "sourceCompressedLimitBytes": 15000000
+    },
+    "memoryCaveats": [
+      "Research/source packagers read individual payloads into bytes; archive hash checks also read the compressed archive into bytes.",
+      "Privacy scans read full member bytes, decode text and run nested-JSON/runtime-pattern checks; memory can exceed codec memory substantially.",
+      "Whole-tree verification is sequential but materializes individual members and file-hash records. Concurrent independent verification previously overlapped with main scan/reconstruction."
+    ],
+    "measuredPeakRssThisCut": {
+      "byPhase": {
+        "archive-scan.resources.json": {
+          "exitCode": 0,
+          "wallSeconds": 69.433,
+          "maxRssKiB": 746596,
+          "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+        },
+        "independent-final-metadata.resources.json": {
+          "exitCode": 0,
+          "wallSeconds": 0.193,
+          "maxRssKiB": 15732,
+          "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+        },
+        "independent-final-verification.resources.json": {
+          "exitCode": 0,
+          "wallSeconds": 28.86,
+          "maxRssKiB": 52044,
+          "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+        },
+        "qa-capture.resources.json": {
+          "exitCode": 0,
+          "wallSeconds": 7.554,
+          "maxRssKiB": 400004,
+          "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+        },
+        "reconstruction.resources.json": {
+          "exitCode": 0,
+          "wallSeconds": 43.834,
+          "maxRssKiB": 145808,
+          "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+        },
+        "research-scan.resources.json": {
+          "exitCode": 0,
+          "wallSeconds": 17.522,
+          "maxRssKiB": 336884,
+          "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+        },
+        "source-capture.resources.json": {
+          "exitCode": 0,
+          "wallSeconds": 41.967,
+          "maxRssKiB": 360624,
+          "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+        }
+      },
+      "completedResearchCompression": null
+    },
+    "measurementNote": "The completed research compression has no peak-RSS measurement. Later phases use Linux wait4 child resource accounting because /usr/bin/time is absent; measurements include process peak RSS, not merely XZ codec allocation.",
+    "largestPreviousSourcePayloads": [
+      {
+        "path": "data/catalogue-additions-2026-10-10.json",
+        "bytes": 74934307
+      },
+      {
+        "path": "data/buyer-identity-snapshots-2026-10-10.json",
+        "bytes": 54962382
+      },
+      {
+        "path": "data/buyer-selling-points-2026-10-10.json",
+        "bytes": 24074749
+      },
+      {
+        "path": "data/m1-brand-updates/hyundai-2026-10-14.json",
+        "bytes": 18134105
+      },
+      {
+        "path": "data/m1-evidence-regrading-2026-10-13.json",
+        "bytes": 15226769
+      }
+    ],
+    "plannedScheduling": "Root cleared resumption after sequential catalogue checks. Backup capture/compression, privacy scan, reconstruction and independent verification now run one at a time without catalogue overlap.",
+    "updatedAt": "2026-10-14T10:06:24.601906+00:00"
+  },
+  "workState": {
+    "workingCheckpoint": 104,
+    "latestDeliveredCheckpoint": 103,
+    "milestone": "M1 open",
+    "registeredPackets": 13,
+    "totalVersions": 386,
+    "tier1Versions": 309,
+    "onSaleVersions": 296,
+    "coreReviewNote": "Grades require an explicit sourced M1 review; legacy statuses do not earn Confirmed. 4395/5032 on-sale core cells reviewed; unsuccessful searches need two cited sources.",
+    "latestIntegratedBrand": "GWM",
+    "gwmReviewedVersions": 3,
+    "gwmCoreCells": 51,
+    "gwmFactEdits": 251,
+    "gwmSharedTerms": 3,
+    "gwmReviewedCitableFacts": 260,
+    "gwmFeatures": 159,
+    "gwmConfigurationUpdates": 2,
+    "gwmScope": [
+      "Ora 5 Lux",
+      "Ora 5 Ultra",
+      "Refreshed 57.7 kWh Ora Lux hatch"
+    ],
+    "gwmResearchClosure": false,
+    "gwmOpenIssues": [
+      "Older 48/63 kWh residual grades and distinct future ORA 5 Hatch scope remain unresolved",
+      "Direct hatch 10\u201380% time is genuinely unpublished; C2/C5 gaps remain"
+    ],
+    "sharedLegacyStringHoldGuard": {
+      "focusedTestsPassed": 142,
+      "typecheckExit": 0,
+      "lintExit": 0,
+      "scope": "Guarded legacy string configuration holds; source, identity and fact checks remain enforced",
+      "sourceAndTestManifest": {
+        "src/lib/brand-configuration-updates.ts": {
+          "beforeSHA256": "acdce7c78534330e1549f43182bbeb2a8350448625651ed06f15a579adce31d2",
+          "afterSHA256": "66e65d559f71bb0ed606e67a01ebeb5ef4d6a1a5d220a280ebbdaa122b256b63",
+          "bytes": 11097
+        },
+        "tests/brand-configuration-updates.test.ts": {
+          "beforeSHA256": "d79a90d3ca55e690b73a1f3a11213b8501839552a067c6839611f430f05e3f03",
+          "afterSHA256": "c634b6ab3b3c9e7c55dc33d6ba74f6b7b45003bff770203fe1478e894f0ff74e",
+          "bytes": 28678
+        },
+        "tests/fixtures/ora5-legacy-configuration-holds.json": {
+          "beforeSHA256": null,
+          "afterSHA256": "fdc00501433b304f5db6ebd19eeb1d0af2a45e45edb5c56c5662d3d6b4b13b36",
+          "bytes": 2954
+        }
+      }
+    },
+    "criteriaStatus": {
+      "C1": false,
+      "C2": false,
+      "C5": false,
+      "researchClosure": false
+    },
+    "currentResearchBrand": "GAC",
+    "nextResearchBrand": "BMW",
+    "latestRootChecks": {
+      "brand": "GWM",
+      "researchCompleted": false,
+      "integrationTests": {
+        "passed": 149,
+        "failed": 0
+      },
+      "validateExit": 0,
+      "coverageExit": 0,
+      "typecheckExit": 0,
+      "changedFileLintExit": 0,
+      "successfulRunDirectory": "gwm-sequential-checks",
+      "initialConcurrentFailures": "validate/coverage exit 137; one file-level test termination; logs preserved",
+      "terminationCause": "not established"
+    },
+    "earlierOpenGaps": "Owner-deferred Hyundai six-seat lead, Volkswagen census issues and Volvo C1/C5 gaps remain open",
+    "fullAggregateSuite": "Not rerun; earlier through-Hyundai full-suite log remains interrupted/partial without terminal aggregate result",
+    "productionBuild": "Not rerun for this integration"
+  },
+  "cleanup": {
+    "affectedOriginalsRetained": 12,
+    "intermediateCopiesRetained": 3,
+    "deletions": 0,
+    "replacements": 0
+  },
+  "scope": "Full GWM-integrated source and approved research plus stable QA delta over the verified Volvo chain. No provisional GWM archive is required for restore. No later GAC research is included."
+}

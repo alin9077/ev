@@ -1,0 +1,59 @@
+{
+  "schema": "roadmark99-revision4-static-review-v1",
+  "verdict": "GO_SCOPED_TYPE_REPAIR_FOR_QUICK_TYPECHECK_AND_LINT",
+  "blockers": [],
+  "reviewedManifest": {
+    "path": "roadmark-research/mazda-trim99-candidate/revision4/manifest.json",
+    "sha256": "d744f716d6d5ca9c3db73bacf72390bc5315cafe4cd5575e1833e780fb3a6790",
+    "bytes": 2113
+  },
+  "candidateFiles": [
+    {
+      "path": "tests/checkpoint95-market.test.ts",
+      "beforeSHA256": "81eaf8711aaea83ef66004ef28021060781e3dd1cbc69f76ffacfc96b71146b5",
+      "beforeBytes": 9419,
+      "afterSHA256": "cfde06dd7bb9d9a44e5c3f966d1e75e4d64fa2d7d538bfa35a42e50b860768f6",
+      "afterBytes": 9795,
+      "checkpoint98BeforeSHA256": "7103187118b092244866b77d8bf023f149dacf622f099005b1af69590a35ef0a"
+    },
+    {
+      "path": "tests/helpers/checkpoint99-history.ts",
+      "beforeSHA256": "c78c7048e1d9654ddb71b6680c9441bda9c30e4e569d65e6fc9bfd8bd13d8ceb",
+      "beforeBytes": 7150,
+      "afterSHA256": "80ef31bac488635dbf69fdac7b7d4dbd2812ae53a6a08f3e8b68de7d2efe71d7",
+      "afterBytes": 6551,
+      "checkpoint98BeforeSHA256": null
+    }
+  ],
+  "typeReference": {
+    "path": "qa/checkpoint95-market-fixture.json",
+    "sha256": "be8fc1fb14600253d57ecdcd2ec27927208c66abf853f03fcb34b5ff706259e2",
+    "property": "appendedRecord",
+    "runtimeImport": false
+  },
+  "observedCurrentAppPins": [
+    {
+      "path": "tests/checkpoint95-market.test.ts",
+      "currentAppSHA256": "81eaf8711aaea83ef66004ef28021060781e3dd1cbc69f76ffacfc96b71146b5"
+    },
+    {
+      "path": "tests/helpers/checkpoint99-history.ts",
+      "currentAppSHA256": "c78c7048e1d9654ddb71b6680c9441bda9c30e4e569d65e6fc9bfd8bd13d8ceb"
+    }
+  ],
+  "checks": [
+    "Shared helper exactly restored to original approved80ef31 bytes",
+    "Only95 row gains historical fixture type after strict99/95 reconstruction",
+    "Historical fixture row equals actual recorded predecessor row",
+    "Stripping type-only import/comment/cast restores byte-identical previously approved95 test",
+    "No assertion removal, broad any, fixture/hash/data or runtime guard change",
+    "Failedrevision3 artifacts remain unchanged"
+  ],
+  "executionClaims": [],
+  "requiredRootVerification": [
+    "Whole-project typecheck",
+    "Whole-project lint",
+    "FullQA only after quick typecheck and lint pass"
+  ],
+  "revision3Disposition": "Failed whole-project typecheck; retained under execution hold"
+}

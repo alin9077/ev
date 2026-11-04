@@ -1,0 +1,68 @@
+{
+  "decision": "GO_EXACT_REBUILT_REVISION1_ROOT_EXECUTION_ONLY",
+  "blockingFindings": [],
+  "entrypoint": {
+    "path": "roadmark-research/rebuilt101-portable-proof-candidate/revision1/verify_rebuilt101_portable.py",
+    "bytes": 31916,
+    "sha256": "cafe3df97dee699e2928c19c285834f3783e4d2d2a2f8a9be561cf046d978187"
+  },
+  "manifest": {
+    "path": "roadmark-research/rebuilt101-portable-proof-candidate/revision1/manifest.json",
+    "bytes": 2188,
+    "sha256": "4a8dcc61d8481158d0bc6e69d80928654946e02e8304ace13bbe630b8e59e262"
+  },
+  "seal": {
+    "path": "roadmark-research/rebuilt101-portable-proof-candidate/revision1/SHA256SUMS",
+    "bytes": 590,
+    "sha256": "0ad6bd16d7d091dd56f5653abd2312a7f7b3f48b780afde1a1bc8ca238c6a654"
+  },
+  "report": {
+    "path": "roadmark-research/rebuilt101-portable-proof-review/REVIEW.md",
+    "bytes": 8071,
+    "sha256": "d584f920a9269bcba025dc4f009ddb6b668a5537bc6580eeb8bab680c70559ad"
+  },
+  "supportingChecks": [
+    {
+      "path": "roadmark-research/rebuilt101-portable-proof-review/ORIGINAL-STATIC-CHECKS.json",
+      "bytes": 2655,
+      "sha256": "6a16c34bc7df06a2ac126f912e8fd0a66731bb8626e200cc9cf65c8b120984c4"
+    },
+    {
+      "path": "roadmark-research/rebuilt101-portable-proof-review/REVISION1-STATIC-CHECKS.json",
+      "bytes": 1382,
+      "sha256": "fa6361c7c23ef5ba7e257fb9abe8fff4fb93d29e6eaabfca508ac5694cee050f"
+    }
+  ],
+  "closedFindings": [
+    "Independent complete test selection and all seven required command lists",
+    "Exact sealed launch request and declared environment checks",
+    "Explicit rejection of active outer session response"
+  ],
+  "sourceCounts": {
+    "baselineOriginal": 1678,
+    "finalOriginal": 1684,
+    "baselineExpandedQA": 2807,
+    "finalExpandedQA": 2813,
+    "modifications": 8,
+    "additions": 6,
+    "unchangedHistoricalExtras": 1129
+  },
+  "requirements": [
+    "Completed actual current QA",
+    "Root-supplied genuine same-run external terminal and final hashes",
+    "Quiescent trusted workspace",
+    "Actual checker exit and result retained and inspected before saving"
+  ],
+  "candidateImported": false,
+  "candidateExecuted": false,
+  "candidateSyntaxChecked": false,
+  "finalQAPassEstablished": false,
+  "finalArtifactPassEstablished": false,
+  "historical101PassReused": false,
+  "originalCandidateStatus": "NO_GO_PRESERVED_UNCHANGED",
+  "limits": [
+    "Trusted local process evidence, not cryptographically authenticated run provenance",
+    "No whole Next graph, dependency integrity or causal build attestation",
+    "No browser, phone, visual, publisher truth, archives, saving, delivery or release claim"
+  ]
+}

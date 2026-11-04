@@ -1,0 +1,2278 @@
+{
+  "schema_version": "roadmark_evidence_v1",
+  "research_scope": "Australia new BEV catalogue, Hyundai IONIQ 5 / IONIQ 6 families including N derivatives",
+  "as_of": "2026-10-10",
+  "currency": "AUD",
+  "scope_limitations": [
+    "Read-only research; no dealer contact, quote submission, account or order.",
+    "Dealer stock means an observed advertisement, not physically confirmed availability; search/open cache freshness can differ.",
+    "Current regular IONIQ 6 absence is evidence-based exclusion, not a claim that no unused example exists anywhere.",
+    "No overseas specification imported. Unknown gross/usable battery split, peak DC acceptance and unresolved N consumer MLP remain null."
+  ],
+  "catalogue_decision": {
+    "regular_ioniq5_current_grades": 3,
+    "performance_grades": [
+      "IONIQ 5 N",
+      "IONIQ 6 N"
+    ],
+    "current_ioniq6_non_n_verified": false,
+    "distinct_confirmed_calculator_configurations": 6,
+    "explanation": "Three regular IONIQ 5 records, one exposed IONIQ 5 N Vision Roof record, two IONIQ 6 N roof records. Five grades, six exposed configurations. Non-roof IONIQ 5 N catalogue/stock existence is plausible, exact present factory-orderability not fully proved."
+  },
+  "records": [
+    {
+      "id": "hyundai-ioniq5-my27-rwd",
+      "family": "IONIQ 5",
+      "grade": "IONIQ 5 84kWh RWD",
+      "model_year": "MY27",
+      "series": "NE.V7",
+      "exact_manufacturer_name": {
+        "value": "IONIQ 5 SUV 168kW 84kWh RWD",
+        "source_ids": [
+          "ioniq-5_api"
+        ],
+        "locator": "[0].variants[0].name"
+      },
+      "manufacturer_variant_id": "FFB98D6F-65F1-44A2-ACE7-F33005A9DE92",
+      "availability": {
+        "value": "current_catalogue_and_new_stock",
+        "source_ids": [
+          "i5_page",
+          "i5_spec",
+          "ioniq-5_api",
+          "stock_i5"
+        ],
+        "locator": "Current public model page + nonempty-colour enabled calculator variant + exact dealer listing",
+        "qualifier": "Advertised new stock, not physically confirmed or reserved; listing can become stale"
+      },
+      "specifications": {
+        "drive": {
+          "value": "RWD",
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "p1 electric motors"
+        },
+        "battery_capacity_kwh": {
+          "value": 84,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "p1 Battery: Capacity",
+          "basis": "manufacturer_unspecified_gross_or_usable"
+        },
+        "battery_gross_kwh": {
+          "value": null,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "Battery section",
+          "uncertainty": "Gross not explicitly labelled"
+        },
+        "battery_usable_kwh": {
+          "value": null,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "Battery section",
+          "uncertainty": "Usable not stated"
+        },
+        "power_kw": {
+          "value": 168,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "p1 maximum total motor power"
+        },
+        "torque_nm": {
+          "value": 350,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "p1 maximum total motor torque"
+        },
+        "range_km": {
+          "value": 570,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "Energy consumption / All Electric Range",
+          "cycle": "WLTP_combined"
+        },
+        "ac_charge_max_kw": {
+          "value": 10.5,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "p1 on-board AC charger"
+        },
+        "dc_charge_peak_kw": {
+          "value": null,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "p1 DC charging table",
+          "uncertainty": "350kW is charger rating for timed test, not vehicle peak; battery output kW is not charge acceptance"
+        },
+        "dc_10_80_min": {
+          "value": 18,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "p1 350kW charger 10–80%",
+          "charger_kw": 350,
+          "voltage_class": "800V ultra-rapid",
+          "qualifier": "Approximate, suitable charger and battery/environmental conditions required"
+        },
+        "ac_port": {
+          "value": "Type 2",
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "p1 charger ports"
+        },
+        "dc_port": {
+          "value": "CCS2",
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "p1 charger ports"
+        },
+        "wheel_inches": {
+          "value": 19,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "Wheels and tyres"
+        },
+        "rear_cargo_l": {
+          "value": [
+            520,
+            1580
+          ],
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "PDF p3 Dimensions > Interior > Cargo area rear - VDA (minimum / maximum), all three columns",
+          "method": "VDA",
+          "configuration": "minimum / maximum as printed",
+          "seats_up_basis_explicit": false,
+          "seats_folded_basis_explicit": false,
+          "loading_basis": "minimum/maximum only; seats-up/folded mapping not explicitly defined in current MY27 sources",
+          "uncertainty": "Do not present 520L as explicitly seats-up or 1580L as explicitly seats-folded. Current PDF p9 separately lists 60:40 split folding rear backrest, but does not link those positions to the cargo volumes."
+        },
+        "front_cargo_l": {
+          "value": 57,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "Dimensions: cargo area front",
+          "method": "VDA",
+          "uncertainty": null
+        },
+        "towing": {
+          "value": {
+            "braked_kg": 1600,
+            "unbraked_kg": 750,
+            "max_towball_kg": 100
+          },
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "Towing Capacity",
+          "qualifier": "Hyundai Genuine Accessory towbar/towball extra-cost and authorised fitting; vehicle/towbar/equipment limits apply"
+        },
+        "consumption_kwh_100km": {
+          "value": 16.04,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "p2 Energy consumption and p9 footnote [4]",
+          "cycle": "ADR_81_02_combined",
+          "uncertainty": "Table nearby mentions WLTP generally, but specific consumption footnote cites ADR81/02; do not label this a WLTP efficiency result"
+        },
+        "zero_to_100_s": {
+          "value": null,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "Current PDF",
+          "uncertainty": "Current sheet reviewed does not provide acceleration; older/model-database times not imported"
+        },
+        "dimensions_mm": {
+          "value": {
+            "length": 4655,
+            "width": 1890,
+            "height": 1605,
+            "wheelbase": 3000
+          },
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "p3 Exterior",
+          "qualifier": "Height includes shark-fin antenna; manufacturer does not specify mirrors basis for width here"
+        },
+        "heat_pump": {
+          "value": true,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "p7 heating table"
+        },
+        "battery_preconditioning": {
+          "value": true,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "p3 electric vehicle functions"
+        },
+        "v2l": {
+          "value": null,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "Current sheet",
+          "uncertainty": "MY26 PDF explicitly listed V2L; current MY27 sheet omits its dedicated row. Do not infer removal or retain a verified MY27 output without further source."
+        },
+        "seating_count": {
+          "value": 5,
+          "source_ids": [
+            "stock_i5"
+          ],
+          "locator": "Key information > Seats: 5 (retrieved text lines 93–94)",
+          "evidence_level": "explicit_exact_dealer_listing"
+        }
+      },
+      "pricing": {
+        "currency": "AUD",
+        "mlp_aud": {
+          "value": 68200.0,
+          "source_ids": [
+            "price_FFB98D6F-65F1-44A2-ACE7-F33005A9DE92"
+          ],
+          "locator": "mlp and mlpFromPIM",
+          "includes": "GST; no on-road costs or optional extras"
+        },
+        "driveaway_aud": {
+          "value": 70990.0,
+          "source_ids": [
+            "price_FFB98D6F-65F1-44A2-ACE7-F33005A9DE92"
+          ],
+          "locator": "finalDriveAwayPrice",
+          "type": "manufacturer_promotional_driveaway",
+          "postcode": "2000",
+          "options_cost": 0,
+          "expires": "2026-12-31",
+          "conditions": "Stock offer, no added options; current dealer offer excludes government/fleet/rental and combining other offers"
+        },
+        "ordinary_driveaway_before_discount_aud": {
+          "value": 74042.21,
+          "source_ids": [
+            "price_FFB98D6F-65F1-44A2-ACE7-F33005A9DE92"
+          ],
+          "locator": "MLPWithOptionsOnRoadPrice",
+          "type": "location_specific_estimate"
+        }
+      },
+      "strengths": [
+        {
+          "claim": "570km combined WLTP is the longest of the three current regular grades",
+          "source_ids": [
+            "i5_spec",
+            "ioniq-5_api"
+          ],
+          "basis": "direct equipment/range fact; utility interpretation, not comparative road-test verdict"
+        },
+        {
+          "claim": "19-inch wheels; heat pump and battery preconditioning included",
+          "source_ids": [
+            "i5_spec",
+            "ioniq-5_api"
+          ],
+          "basis": "direct equipment/range fact; utility interpretation, not comparative road-test verdict"
+        }
+      ],
+      "stock_source_ids": [
+        "stock_i5"
+      ]
+    },
+    {
+      "id": "hyundai-ioniq5-my27-elite-rwd",
+      "family": "IONIQ 5",
+      "grade": "IONIQ 5 Elite 84kWh RWD",
+      "model_year": "MY27",
+      "series": "NE.V7",
+      "exact_manufacturer_name": {
+        "value": "Elite SUV 168kW 84kWh RWD",
+        "source_ids": [
+          "ioniq-5_api"
+        ],
+        "locator": "[0].variants[1].name"
+      },
+      "manufacturer_variant_id": "1E3CB636-286A-4E71-876E-D1AE9AC0C536",
+      "availability": {
+        "value": "current_catalogue_and_new_stock",
+        "source_ids": [
+          "i5_page",
+          "i5_spec",
+          "ioniq-5_api",
+          "stock_elite"
+        ],
+        "locator": "Current public model page + nonempty-colour enabled calculator variant + exact dealer listing",
+        "qualifier": "Advertised new stock, not physically confirmed or reserved; listing can become stale"
+      },
+      "specifications": {
+        "drive": {
+          "value": "RWD",
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "p1 electric motors"
+        },
+        "battery_capacity_kwh": {
+          "value": 84,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "p1 Battery: Capacity",
+          "basis": "manufacturer_unspecified_gross_or_usable"
+        },
+        "battery_gross_kwh": {
+          "value": null,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "Battery section",
+          "uncertainty": "Gross not explicitly labelled"
+        },
+        "battery_usable_kwh": {
+          "value": null,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "Battery section",
+          "uncertainty": "Usable not stated"
+        },
+        "power_kw": {
+          "value": 168,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "p1 maximum total motor power"
+        },
+        "torque_nm": {
+          "value": 350,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "p1 maximum total motor torque"
+        },
+        "range_km": {
+          "value": 530,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "Energy consumption / All Electric Range",
+          "cycle": "WLTP_combined"
+        },
+        "ac_charge_max_kw": {
+          "value": 10.5,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "p1 on-board AC charger"
+        },
+        "dc_charge_peak_kw": {
+          "value": null,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "p1 DC charging table",
+          "uncertainty": "350kW is charger rating for timed test, not vehicle peak; battery output kW is not charge acceptance"
+        },
+        "dc_10_80_min": {
+          "value": 18,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "p1 350kW charger 10–80%",
+          "charger_kw": 350,
+          "voltage_class": "800V ultra-rapid",
+          "qualifier": "Approximate, suitable charger and battery/environmental conditions required"
+        },
+        "ac_port": {
+          "value": "Type 2",
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "p1 charger ports"
+        },
+        "dc_port": {
+          "value": "CCS2",
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "p1 charger ports"
+        },
+        "wheel_inches": {
+          "value": 20,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "Wheels and tyres"
+        },
+        "rear_cargo_l": {
+          "value": [
+            520,
+            1580
+          ],
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "PDF p3 Dimensions > Interior > Cargo area rear - VDA (minimum / maximum), all three columns",
+          "method": "VDA",
+          "configuration": "minimum / maximum as printed",
+          "seats_up_basis_explicit": false,
+          "seats_folded_basis_explicit": false,
+          "loading_basis": "minimum/maximum only; seats-up/folded mapping not explicitly defined in current MY27 sources",
+          "uncertainty": "Do not present 520L as explicitly seats-up or 1580L as explicitly seats-folded. Current PDF p9 separately lists 60:40 split folding rear backrest, but does not link those positions to the cargo volumes."
+        },
+        "front_cargo_l": {
+          "value": 57,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "Dimensions: cargo area front",
+          "method": "VDA",
+          "uncertainty": null
+        },
+        "towing": {
+          "value": {
+            "braked_kg": 1600,
+            "unbraked_kg": 750,
+            "max_towball_kg": 100
+          },
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "Towing Capacity",
+          "qualifier": "Hyundai Genuine Accessory towbar/towball extra-cost and authorised fitting; vehicle/towbar/equipment limits apply"
+        },
+        "consumption_kwh_100km": {
+          "value": 16.99,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "p2 Energy consumption and p9 footnote [4]",
+          "cycle": "ADR_81_02_combined",
+          "uncertainty": "Table nearby mentions WLTP generally, but specific consumption footnote cites ADR81/02; do not label this a WLTP efficiency result"
+        },
+        "zero_to_100_s": {
+          "value": null,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "Current PDF",
+          "uncertainty": "Current sheet reviewed does not provide acceleration; older/model-database times not imported"
+        },
+        "dimensions_mm": {
+          "value": {
+            "length": 4655,
+            "width": 1890,
+            "height": 1605,
+            "wheelbase": 3000
+          },
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "p3 Exterior",
+          "qualifier": "Height includes shark-fin antenna; manufacturer does not specify mirrors basis for width here"
+        },
+        "heat_pump": {
+          "value": true,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "p7 heating table"
+        },
+        "battery_preconditioning": {
+          "value": true,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "p3 electric vehicle functions"
+        },
+        "v2l": {
+          "value": null,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "Current sheet",
+          "uncertainty": "MY26 PDF explicitly listed V2L; current MY27 sheet omits its dedicated row. Do not infer removal or retain a verified MY27 output without further source."
+        },
+        "seating_count": {
+          "value": 5,
+          "source_ids": [
+            "stock_elite"
+          ],
+          "locator": "Key information > Seats: 5 (retrieved text lines 111–112)",
+          "evidence_level": "explicit_exact_dealer_listing"
+        }
+      },
+      "pricing": {
+        "currency": "AUD",
+        "mlp_aud": {
+          "value": 73200.0,
+          "source_ids": [
+            "price_1E3CB636-286A-4E71-876E-D1AE9AC0C536"
+          ],
+          "locator": "mlp and mlpFromPIM",
+          "includes": "GST; no on-road costs or optional extras"
+        },
+        "driveaway_aud": {
+          "value": 75990.0,
+          "source_ids": [
+            "price_1E3CB636-286A-4E71-876E-D1AE9AC0C536"
+          ],
+          "locator": "finalDriveAwayPrice",
+          "type": "manufacturer_promotional_driveaway",
+          "postcode": "2000",
+          "options_cost": 0,
+          "expires": "2026-12-31",
+          "conditions": "Stock offer, no added options; current dealer offer excludes government/fleet/rental and combining other offers"
+        },
+        "ordinary_driveaway_before_discount_aud": {
+          "value": 79292.21,
+          "source_ids": [
+            "price_1E3CB636-286A-4E71-876E-D1AE9AC0C536"
+          ],
+          "locator": "MLPWithOptionsOnRoadPrice",
+          "type": "location_specific_estimate"
+        }
+      },
+      "strengths": [
+        {
+          "claim": "HUD, Bose 8-speaker audio, heated front seats and powered tailgate",
+          "source_ids": [
+            "i5_spec",
+            "ioniq-5_api"
+          ],
+          "basis": "direct equipment/range fact; utility interpretation, not comparative road-test verdict"
+        },
+        {
+          "claim": "530km combined WLTP with the same 84kWh reported pack",
+          "source_ids": [
+            "i5_spec",
+            "ioniq-5_api"
+          ],
+          "basis": "direct equipment/range fact; utility interpretation, not comparative road-test verdict"
+        }
+      ],
+      "stock_source_ids": [
+        "stock_elite"
+      ]
+    },
+    {
+      "id": "hyundai-ioniq5-my27-premium-n-line-awd",
+      "family": "IONIQ 5",
+      "grade": "IONIQ 5 Premium N Line 84kWh AWD",
+      "model_year": "MY27",
+      "series": "NE.V7",
+      "exact_manufacturer_name": {
+        "value": "Premium N Line SUV 239kW 84kWh AWD",
+        "source_ids": [
+          "ioniq-5_api"
+        ],
+        "locator": "[0].variants[2].name"
+      },
+      "manufacturer_variant_id": "910CB538-E4A3-4DCC-8A33-6416D4EE91F7",
+      "availability": {
+        "value": "current_catalogue_and_new_stock",
+        "source_ids": [
+          "i5_page",
+          "i5_spec",
+          "ioniq-5_api",
+          "stock_premium"
+        ],
+        "locator": "Current public model page + nonempty-colour enabled calculator variant + exact dealer listing",
+        "qualifier": "Advertised new stock, not physically confirmed or reserved; listing can become stale"
+      },
+      "specifications": {
+        "drive": {
+          "value": "AWD",
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "p1 electric motors"
+        },
+        "battery_capacity_kwh": {
+          "value": 84,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "p1 Battery: Capacity",
+          "basis": "manufacturer_unspecified_gross_or_usable"
+        },
+        "battery_gross_kwh": {
+          "value": null,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "Battery section",
+          "uncertainty": "Gross not explicitly labelled"
+        },
+        "battery_usable_kwh": {
+          "value": null,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "Battery section",
+          "uncertainty": "Usable not stated"
+        },
+        "power_kw": {
+          "value": 239,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "p1 maximum total motor power"
+        },
+        "torque_nm": {
+          "value": 605,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "p1 maximum total motor torque"
+        },
+        "range_km": {
+          "value": 495,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "Energy consumption / All Electric Range",
+          "cycle": "WLTP_combined"
+        },
+        "ac_charge_max_kw": {
+          "value": 10.5,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "p1 on-board AC charger"
+        },
+        "dc_charge_peak_kw": {
+          "value": null,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "p1 DC charging table",
+          "uncertainty": "350kW is charger rating for timed test, not vehicle peak; battery output kW is not charge acceptance"
+        },
+        "dc_10_80_min": {
+          "value": 18,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "p1 350kW charger 10–80%",
+          "charger_kw": 350,
+          "voltage_class": "800V ultra-rapid",
+          "qualifier": "Approximate, suitable charger and battery/environmental conditions required"
+        },
+        "ac_port": {
+          "value": "Type 2",
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "p1 charger ports"
+        },
+        "dc_port": {
+          "value": "CCS2",
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "p1 charger ports"
+        },
+        "wheel_inches": {
+          "value": 20,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "Wheels and tyres"
+        },
+        "rear_cargo_l": {
+          "value": [
+            520,
+            1580
+          ],
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "PDF p3 Dimensions > Interior > Cargo area rear - VDA (minimum / maximum), all three columns",
+          "method": "VDA",
+          "configuration": "minimum / maximum as printed",
+          "seats_up_basis_explicit": false,
+          "seats_folded_basis_explicit": false,
+          "loading_basis": "minimum/maximum only; seats-up/folded mapping not explicitly defined in current MY27 sources",
+          "uncertainty": "Do not present 520L as explicitly seats-up or 1580L as explicitly seats-folded. Current PDF p9 separately lists 60:40 split folding rear backrest, but does not link those positions to the cargo volumes."
+        },
+        "front_cargo_l": {
+          "value": 24,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "Dimensions: cargo area front",
+          "method": "VDA",
+          "uncertainty": null
+        },
+        "towing": {
+          "value": {
+            "braked_kg": 1600,
+            "unbraked_kg": 750,
+            "max_towball_kg": 100
+          },
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "Towing Capacity",
+          "qualifier": "Hyundai Genuine Accessory towbar/towball extra-cost and authorised fitting; vehicle/towbar/equipment limits apply"
+        },
+        "consumption_kwh_100km": {
+          "value": 18.11,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "p2 Energy consumption and p9 footnote [4]",
+          "cycle": "ADR_81_02_combined",
+          "uncertainty": "Table nearby mentions WLTP generally, but specific consumption footnote cites ADR81/02; do not label this a WLTP efficiency result"
+        },
+        "zero_to_100_s": {
+          "value": null,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "Current PDF",
+          "uncertainty": "Current sheet reviewed does not provide acceleration; older/model-database times not imported"
+        },
+        "dimensions_mm": {
+          "value": {
+            "length": 4655,
+            "width": 1890,
+            "height": 1605,
+            "wheelbase": 3000
+          },
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "p3 Exterior",
+          "qualifier": "Height includes shark-fin antenna; manufacturer does not specify mirrors basis for width here"
+        },
+        "heat_pump": {
+          "value": true,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "p7 heating table"
+        },
+        "battery_preconditioning": {
+          "value": true,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "p3 electric vehicle functions"
+        },
+        "v2l": {
+          "value": null,
+          "source_ids": [
+            "i5_spec"
+          ],
+          "locator": "Current sheet",
+          "uncertainty": "MY26 PDF explicitly listed V2L; current MY27 sheet omits its dedicated row. Do not infer removal or retain a verified MY27 output without further source."
+        },
+        "seating_count": {
+          "value": 5,
+          "source_ids": [
+            "stock_premium"
+          ],
+          "locator": "Key Features: Seats 5 (line 267); Car Details > Seats: 5 (lines 337–339)",
+          "evidence_level": "explicit_exact_dealer_listing"
+        }
+      },
+      "pricing": {
+        "currency": "AUD",
+        "mlp_aud": {
+          "value": 83700.0,
+          "source_ids": [
+            "price_910CB538-E4A3-4DCC-8A33-6416D4EE91F7"
+          ],
+          "locator": "mlp and mlpFromPIM",
+          "includes": "GST; no on-road costs or optional extras"
+        },
+        "driveaway_aud": {
+          "value": 86990.0,
+          "source_ids": [
+            "price_910CB538-E4A3-4DCC-8A33-6416D4EE91F7"
+          ],
+          "locator": "finalDriveAwayPrice",
+          "type": "manufacturer_promotional_driveaway",
+          "postcode": "2000",
+          "options_cost": 0,
+          "expires": "2026-12-31",
+          "conditions": "Stock offer, no added options; current dealer offer excludes government/fleet/rental and combining other offers"
+        },
+        "ordinary_driveaway_before_discount_aud": {
+          "value": 90317.21,
+          "source_ids": [
+            "price_910CB538-E4A3-4DCC-8A33-6416D4EE91F7"
+          ],
+          "locator": "MLPWithOptionsOnRoadPrice",
+          "type": "location_specific_estimate"
+        }
+      },
+      "strengths": [
+        {
+          "claim": "239kW/605Nm AWD; heated and ventilated front seats",
+          "source_ids": [
+            "i5_spec",
+            "ioniq-5_api"
+          ],
+          "basis": "direct equipment/range fact; utility interpretation, not comparative road-test verdict"
+        },
+        {
+          "claim": "Vision roof, rear-seat heating and front-seat relaxation function",
+          "source_ids": [
+            "i5_spec",
+            "ioniq-5_api"
+          ],
+          "basis": "direct equipment/range fact; utility interpretation, not comparative road-test verdict"
+        }
+      ],
+      "stock_source_ids": [
+        "stock_premium"
+      ]
+    },
+    {
+      "id": "hyundai-ioniq-5-n",
+      "family": "IONIQ 5",
+      "grade": "IONIQ 5 N",
+      "model_year": "MY27 dealer stock; specification current-linked carryover document",
+      "availability": {
+        "value": "current_catalogue_and_new_stock",
+        "source_ids": [
+          "i5n_page",
+          "ioniq-5-n_api",
+          "stock_i5n_market"
+        ],
+        "locator": "Official current page, live enabled configuration, exact dealer ad"
+      },
+      "specifications": {
+        "drive": {
+          "value": "AWD",
+          "source_ids": [
+            "i5n_spec"
+          ],
+          "locator": "p1 electric motors"
+        },
+        "battery_capacity_kwh": {
+          "value": 84,
+          "source_ids": [
+            "i5n_spec"
+          ],
+          "locator": "p1 Battery: Capacity",
+          "basis": "manufacturer_unspecified_gross_or_usable"
+        },
+        "battery_gross_kwh": {
+          "value": null,
+          "source_ids": [
+            "i5n_spec"
+          ],
+          "locator": "Battery section",
+          "uncertainty": "Gross not explicitly labelled"
+        },
+        "battery_usable_kwh": {
+          "value": null,
+          "source_ids": [
+            "i5n_spec"
+          ],
+          "locator": "Battery section",
+          "uncertainty": "Usable not stated"
+        },
+        "power_kw": {
+          "value": 448,
+          "source_ids": [
+            "i5n_spec"
+          ],
+          "locator": "p1 maximum total motor power"
+        },
+        "torque_nm": {
+          "value": 740,
+          "source_ids": [
+            "i5n_spec"
+          ],
+          "locator": "p1 maximum total motor torque"
+        },
+        "range_km": {
+          "value": 448,
+          "source_ids": [
+            "i5n_spec"
+          ],
+          "locator": "Energy consumption / All Electric Range",
+          "cycle": "WLTP_combined"
+        },
+        "ac_charge_max_kw": {
+          "value": 10.5,
+          "source_ids": [
+            "i5n_spec"
+          ],
+          "locator": "p1 on-board AC charger"
+        },
+        "dc_charge_peak_kw": {
+          "value": null,
+          "source_ids": [
+            "i5n_spec"
+          ],
+          "locator": "p1 DC charging table",
+          "uncertainty": "350kW is charger rating for timed test, not vehicle peak; battery output kW is not charge acceptance"
+        },
+        "dc_10_80_min": {
+          "value": 18,
+          "source_ids": [
+            "i5n_spec"
+          ],
+          "locator": "p1 350kW charger 10–80%",
+          "charger_kw": 350,
+          "voltage_class": "800V ultra-rapid",
+          "qualifier": "Approximate, suitable charger and battery/environmental conditions required"
+        },
+        "ac_port": {
+          "value": "Type 2",
+          "source_ids": [
+            "i5n_spec"
+          ],
+          "locator": "p1 charger ports"
+        },
+        "dc_port": {
+          "value": "CCS2",
+          "source_ids": [
+            "i5n_spec"
+          ],
+          "locator": "p1 charger ports"
+        },
+        "wheel_inches": {
+          "value": 21,
+          "source_ids": [
+            "i5n_spec"
+          ],
+          "locator": "Wheels and tyres"
+        },
+        "rear_cargo_l": {
+          "value": [
+            480,
+            1540
+          ],
+          "source_ids": [
+            "i5n_spec"
+          ],
+          "locator": "Dimensions: cargo area rear",
+          "method": "VDA",
+          "configuration": "minimum / maximum as printed"
+        },
+        "front_cargo_l": {
+          "value": "N/A",
+          "source_ids": [
+            "i5n_spec"
+          ],
+          "locator": "Dimensions: cargo area front",
+          "method": "VDA",
+          "uncertainty": null
+        },
+        "towing": {
+          "value": "N/A",
+          "source_ids": [
+            "i5n_spec"
+          ],
+          "locator": "Towing Capacity",
+          "qualifier": "N/A is manufacturer value; do not infer a tow rating"
+        },
+        "boost_power_kw": {
+          "value": 478,
+          "source_ids": [
+            "i5n_spec"
+          ],
+          "locator": "p1 motor outputs",
+          "qualifier": "N Grin Boost; 10 seconds maximum"
+        },
+        "boost_torque_nm": {
+          "value": 770,
+          "source_ids": [
+            "i5n_spec"
+          ],
+          "locator": "p1 motor outputs",
+          "qualifier": "N Grin Boost"
+        },
+        "zero_to_100_s": {
+          "value": 3.5,
+          "source_ids": [
+            "i5n_spec"
+          ],
+          "locator": "p2 Performance"
+        },
+        "boost_or_launch_zero_to_100_s": {
+          "value": 3.4,
+          "source_ids": [
+            "i5n_spec"
+          ],
+          "locator": "p2 Performance",
+          "qualifier": "N Grin Boost"
+        },
+        "heat_pump": {
+          "value": true,
+          "source_ids": [
+            "i5n_spec"
+          ],
+          "locator": "Ventilation and heating"
+        },
+        "battery_preconditioning": {
+          "value": true,
+          "source_ids": [
+            "i5n_spec"
+          ],
+          "locator": "Driving engagement and EV functions"
+        },
+        "v2l_inside": {
+          "value": true,
+          "source_ids": [
+            "i5n_spec"
+          ],
+          "locator": "Vehicle To Load and EV functions",
+          "output": "3.6 kW / 250V / 15A as stated"
+        },
+        "consumption_kwh_100km": {
+          "value": 21.2,
+          "source_ids": [
+            "i5n_spec"
+          ],
+          "locator": "Energy consumption",
+          "cycle": "WLTP_combined",
+          "qualifier": ""
+        }
+      },
+      "pricing": {
+        "currency": "AUD",
+        "normalized_current_mlp_aud": null,
+        "reason": "Keep exact manufacturer raw fields separately until LCT/roof treatment reconciled. Historical launch $115,000 is not silently treated as current universal price.",
+        "historical_launch_mlp_aud": {
+          "value": 115000,
+          "source_ids": [
+            "n_price_secondary"
+          ],
+          "locator": "May 2026 launch report",
+          "type": "secondary_reported_historical_before_on_roads"
+        }
+      },
+      "configurations": [
+        {
+          "name": "N with Vision Roof SUV 166kW + 282kW Electric Motors - front / rear 84 kWh AWD",
+          "manufacturer_variant_id": "EDE0D33A-CDCB-43B4-A52B-010530A4B99F",
+          "source_ids": [
+            "ioniq-5-n_api",
+            "price_EDE0D33A-CDCB-43B4-A52B-010530A4B99F"
+          ],
+          "sold_out_flag": false,
+          "paint_count": 9,
+          "official_mlp_raw_aud": 109076.23,
+          "official_mlp_from_pim_raw_aud": 114383.0,
+          "official_lct_onroad_raw_aud": 5823.07,
+          "driveaway_estimate_aud": 123076.51,
+          "postcode": "2000",
+          "options_input_aud": 0,
+          "option_packs_as_returned": [
+            {
+              "optionPackId": "EF91496F-A355-4DA6-8773-ABBE8096FE2F",
+              "name": "Vision Roof",
+              "mlp": 4000.0,
+              "pricePlusOptionPackPrice": 113076.23
+            }
+          ],
+          "pricing_warning": "Do not sum or relabel raw fields as a verified consumer list price. Roof option handling requires review."
+        }
+      ],
+      "strengths": [
+        {
+          "claim": "Dual-motor AWD, electronic rear limited-slip differential and electronically controlled suspension",
+          "source_ids": [
+            "i5n_spec",
+            "ioniq-5-n_api"
+          ]
+        },
+        {
+          "claim": "N e-Shift and track battery-conditioning/race modes",
+          "source_ids": [
+            "i5n_spec"
+          ]
+        },
+        {
+          "claim": "448km WLTP combined and approximately 18-minute 10–80% fast-charge test",
+          "source_ids": [
+            "i5n_spec"
+          ]
+        }
+      ],
+      "uncertainties": [
+        "Official model list says two configurations, but the retrieved detailed API supplies only N with Vision Roof. Non-roof N remains a current grade/stock possibility, not separately proven factory-orderable here.",
+        "Current page links a 2024-named specification; detailed MY27 equipment is not fully revalidated.",
+        "Current official API mlpFromPIM is $114,383 for roof record; RedBook MY27 N price is $114,918. Do not assert a reconciled current MLP."
+      ]
+    },
+    {
+      "id": "hyundai-ioniq-6-n",
+      "family": "IONIQ 6",
+      "grade": "IONIQ 6 N",
+      "model_year": "MY26",
+      "availability": {
+        "value": "current_catalogue_and_new_stock",
+        "source_ids": [
+          "i6n_page",
+          "ioniq-6-n_api",
+          "stock_i6n"
+        ],
+        "locator": "Official current page, live enabled configuration, exact dealer ad"
+      },
+      "specifications": {
+        "drive": {
+          "value": "AWD",
+          "source_ids": [
+            "i6n_spec"
+          ],
+          "locator": "p1 electric motors"
+        },
+        "battery_capacity_kwh": {
+          "value": 84,
+          "source_ids": [
+            "i6n_spec"
+          ],
+          "locator": "p1 Battery: Capacity",
+          "basis": "manufacturer_unspecified_gross_or_usable"
+        },
+        "battery_gross_kwh": {
+          "value": null,
+          "source_ids": [
+            "i6n_spec"
+          ],
+          "locator": "Battery section",
+          "uncertainty": "Gross not explicitly labelled"
+        },
+        "battery_usable_kwh": {
+          "value": null,
+          "source_ids": [
+            "i6n_spec"
+          ],
+          "locator": "Battery section",
+          "uncertainty": "Usable not stated"
+        },
+        "power_kw": {
+          "value": 448,
+          "source_ids": [
+            "i6n_spec"
+          ],
+          "locator": "p1 maximum total motor power"
+        },
+        "torque_nm": {
+          "value": 740,
+          "source_ids": [
+            "i6n_spec"
+          ],
+          "locator": "p1 maximum total motor torque"
+        },
+        "range_km": {
+          "value": 487,
+          "source_ids": [
+            "i6n_spec"
+          ],
+          "locator": "Energy consumption / All Electric Range",
+          "cycle": "WLTP_combined"
+        },
+        "ac_charge_max_kw": {
+          "value": 10.5,
+          "source_ids": [
+            "i6n_spec"
+          ],
+          "locator": "p1 on-board AC charger"
+        },
+        "dc_charge_peak_kw": {
+          "value": null,
+          "source_ids": [
+            "i6n_spec"
+          ],
+          "locator": "p1 DC charging table",
+          "uncertainty": "350kW is charger rating for timed test, not vehicle peak; battery output kW is not charge acceptance"
+        },
+        "dc_10_80_min": {
+          "value": 18,
+          "source_ids": [
+            "i6n_spec"
+          ],
+          "locator": "p1 350kW charger 10–80%",
+          "charger_kw": 350,
+          "voltage_class": "800V ultra-rapid",
+          "qualifier": "Approximate, suitable charger and battery/environmental conditions required"
+        },
+        "ac_port": {
+          "value": "Type 2",
+          "source_ids": [
+            "i6n_spec"
+          ],
+          "locator": "p1 charger ports"
+        },
+        "dc_port": {
+          "value": "CCS2",
+          "source_ids": [
+            "i6n_spec"
+          ],
+          "locator": "p1 charger ports"
+        },
+        "wheel_inches": {
+          "value": 20,
+          "source_ids": [
+            "i6n_spec"
+          ],
+          "locator": "Wheels and tyres"
+        },
+        "rear_cargo_l": {
+          "value": 371,
+          "source_ids": [
+            "i6n_spec"
+          ],
+          "locator": "Dimensions: cargo area rear",
+          "method": "VDA",
+          "configuration": "rear cargo as printed"
+        },
+        "front_cargo_l": {
+          "value": null,
+          "source_ids": [
+            "i6n_spec"
+          ],
+          "locator": "Dimensions: cargo area front",
+          "method": "VDA",
+          "uncertainty": "Not stated"
+        },
+        "towing": {
+          "value": "N/A",
+          "source_ids": [
+            "i6n_spec"
+          ],
+          "locator": "Towing Capacity",
+          "qualifier": "N/A is manufacturer value; do not infer a tow rating"
+        },
+        "boost_power_kw": {
+          "value": 478,
+          "source_ids": [
+            "i6n_spec"
+          ],
+          "locator": "p1 motor outputs",
+          "qualifier": "N Grin Boost; 10 seconds maximum"
+        },
+        "boost_torque_nm": {
+          "value": 770,
+          "source_ids": [
+            "i6n_spec"
+          ],
+          "locator": "p1 motor outputs",
+          "qualifier": "N Grin Boost"
+        },
+        "zero_to_100_s": {
+          "value": 3.4,
+          "source_ids": [
+            "i6n_spec"
+          ],
+          "locator": "p2 Performance"
+        },
+        "boost_or_launch_zero_to_100_s": {
+          "value": 3.2,
+          "source_ids": [
+            "i6n_spec"
+          ],
+          "locator": "p2 Performance",
+          "qualifier": "N Launch Control"
+        },
+        "heat_pump": {
+          "value": true,
+          "source_ids": [
+            "i6n_spec"
+          ],
+          "locator": "Ventilation and heating"
+        },
+        "battery_preconditioning": {
+          "value": true,
+          "source_ids": [
+            "i6n_spec"
+          ],
+          "locator": "Driving engagement and EV functions"
+        },
+        "v2l_inside": {
+          "value": true,
+          "source_ids": [
+            "i6n_spec"
+          ],
+          "locator": "Vehicle To Load and EV functions",
+          "output": "250V / 16A stated; kW not independently normalised"
+        },
+        "consumption_kwh_100km": {
+          "value": 18.7,
+          "source_ids": [
+            "i6n_spec"
+          ],
+          "locator": "Energy consumption",
+          "cycle": "ADR_81_02_combined",
+          "qualifier": "IONIQ 6 N table range explicitly WLTP, but consumption footnote cites ADR81/02"
+        }
+      },
+      "pricing": {
+        "currency": "AUD",
+        "normalized_current_mlp_aud": null,
+        "reason": "Keep exact manufacturer raw fields separately until LCT/roof treatment reconciled. Historical launch $115,000 is not silently treated as current universal price.",
+        "historical_launch_mlp_aud": {
+          "value": 115000,
+          "source_ids": [
+            "n_price_secondary"
+          ],
+          "locator": "May 2026 launch report",
+          "type": "secondary_reported_historical_before_on_roads"
+        }
+      },
+      "configurations": [
+        {
+          "name": "N with Sunroof Sedan 166kW + 282kW Electric Motors - front / rear 84 kWh AWD",
+          "manufacturer_variant_id": "95CF4D5D-FD09-4F30-99FA-9A602C719AD7",
+          "source_ids": [
+            "ioniq-6-n_api",
+            "price_95CF4D5D-FD09-4F30-99FA-9A602C719AD7"
+          ],
+          "sold_out_flag": false,
+          "paint_count": 6,
+          "official_mlp_raw_aud": 109551.0,
+          "official_mlp_from_pim_raw_aud": 114918.0,
+          "official_lct_onroad_raw_aud": 5965.5,
+          "driveaway_estimate_aud": 123728.71,
+          "postcode": "2000",
+          "options_input_aud": 0,
+          "option_packs_as_returned": [],
+          "pricing_warning": "Manufacturer returns identical raw prices for sunroof and non-sunroof records; this is observed data, not a promise of a free roof."
+        },
+        {
+          "name": "N Sedan 166kW + 282kW Electric Motors - front / rear 84 kWh AWD",
+          "manufacturer_variant_id": "E515C714-EBD3-4ACD-9FA6-C073F4F664F5",
+          "source_ids": [
+            "ioniq-6-n_api",
+            "price_E515C714-EBD3-4ACD-9FA6-C073F4F664F5"
+          ],
+          "sold_out_flag": false,
+          "paint_count": 6,
+          "official_mlp_raw_aud": 109551.0,
+          "official_mlp_from_pim_raw_aud": 114918.0,
+          "official_lct_onroad_raw_aud": 5965.5,
+          "driveaway_estimate_aud": 123728.71,
+          "postcode": "2000",
+          "options_input_aud": 0,
+          "option_packs_as_returned": [],
+          "pricing_warning": "Manufacturer returns identical raw prices for sunroof and non-sunroof records; this is observed data, not a promise of a free roof."
+        }
+      ],
+      "strengths": [
+        {
+          "claim": "Dual-motor AWD, electronic rear limited-slip differential and electronically controlled suspension",
+          "source_ids": [
+            "i6n_spec",
+            "ioniq-6-n_api"
+          ]
+        },
+        {
+          "claim": "N e-Shift and track battery-conditioning/race modes",
+          "source_ids": [
+            "i6n_spec"
+          ]
+        },
+        {
+          "claim": "487km WLTP combined and approximately 18-minute 10–80% fast-charge test",
+          "source_ids": [
+            "i6n_spec"
+          ]
+        }
+      ],
+      "uncertainties": [
+        "Only one performance grade, with two roof configurations; do not count the sunroof as a different powertrain.",
+        "Spec sheet has copied-looking equipment lines; core power/range/charging supported by model page/configurator."
+      ]
+    }
+  ],
+  "dealer_stock": [
+    {
+      "source_id": "stock_i5",
+      "catalogue_id": "hyundai-ioniq5-my27-rwd",
+      "dealer": "Frankston Hyundai",
+      "location": "Seaford VIC",
+      "condition": "New (page title and new URL)",
+      "stock_id": "320476710",
+      "vin": "KMHKR81AUVU417505",
+      "odometer_km": 33,
+      "price_aud": 69990,
+      "price_type": "dealer_advertised_driveaway",
+      "model_year": "MY27",
+      "build_year": 2026,
+      "colour": "Ecotronic Grey",
+      "availability": "advertised_new_not_sold_in_retrieved_page",
+      "retrieved_on": "2026-10-10",
+      "source_url": "https://www.frankstonhyundai.com.au/cars/new-grey-2026-hyundai-ioniq-5-320476710",
+      "physical_availability_confirmed": false,
+      "seating_count": {
+        "value": 5,
+        "source_ids": [
+          "stock_i5"
+        ],
+        "locator": "Key information > Seats: 5 (retrieved text lines 93–94)",
+        "evidence_level": "explicit_exact_dealer_listing"
+      },
+      "model_year_verification": {
+        "value": true,
+        "source_ids": [
+          "stock_i5"
+        ],
+        "locator": "H1: 2026 Hyundai IONIQ 5 Auto 2WD MY27 (line 42); Key information: NE.V7 (line 76)",
+        "model_year": "MY27",
+        "series": "NE.V7",
+        "calendar_build_year": 2026,
+        "qualifier": "MY27 is explicit in the vehicle heading; 2026 is separately the build/compliance year, not evidence of an earlier model year."
+      },
+      "drivetrain_verification": {
+        "value": true,
+        "source_ids": [
+          "stock_i5",
+          "i5_spec",
+          "ioniq-5_api"
+        ],
+        "locator": "Dealer Car Summary > Drive type: Rear Wheel Drive (line 109); MY27 PDF p1 Electric motor(s), base column; calculator [0].variants[0].name",
+        "drive": "RWD",
+        "battery_kwh_explicit_in_stock_ad": null,
+        "power_kw_explicit_in_stock_ad": null,
+        "qualifier": "Exact dealer ad explicitly matches MY27 base RWD; 84kWh and 168kW are supplied by the uniquely matching current manufacturer grade, not independently printed in the retrieved dealer text. Dealer 19-inch wheels also agree with the MY27 base grade."
+      }
+    },
+    {
+      "source_id": "stock_elite",
+      "catalogue_id": "hyundai-ioniq5-my27-elite-rwd",
+      "dealer": "Maughan Thiem Hyundai",
+      "location": "Cheltenham SA",
+      "condition": "New Car",
+      "stock_id": "520117360",
+      "vin": "KMHKR81AUVU418985",
+      "odometer_km": 0,
+      "price_aud": 75990,
+      "price_type": "dealer_advertised_driveaway",
+      "model_year": "MY27",
+      "build_year": 2026,
+      "colour": "Gravity Gold",
+      "availability": "explicitly_in_stock_in_dealer_comments",
+      "retrieved_on": "2026-10-10",
+      "source_url": "https://www.maughanthiem.com.au/cars/new-gold-2026-hyundai-ioniq-5-520117360",
+      "physical_availability_confirmed": false,
+      "seating_count": {
+        "value": 5,
+        "source_ids": [
+          "stock_elite"
+        ],
+        "locator": "Key information > Seats: 5 (retrieved text lines 111–112)",
+        "evidence_level": "explicit_exact_dealer_listing"
+      },
+      "model_year_verification": {
+        "value": true,
+        "source_ids": [
+          "stock_elite"
+        ],
+        "locator": "H1: 2026 Hyundai IONIQ 5 Elite Auto 2WD MY27 (line 57); Key information: Elite NE.V7 (line 94); Dealer Comments explicitly describe MY27 Elite (line 142)",
+        "model_year": "MY27",
+        "series": "NE.V7",
+        "calendar_build_year": 2026,
+        "qualifier": "Both heading and dealer description explicitly identify MY27; build/compliance year is separately 2026."
+      },
+      "drivetrain_verification": {
+        "value": true,
+        "source_ids": [
+          "stock_elite",
+          "i5_spec",
+          "ioniq-5_api"
+        ],
+        "locator": "Key information > Drive type: Rear Wheel Drive (lines 126–127); Dealer Comments: 84kWh battery, rear-wheel drive and 530km WLTP (line 142); MY27 PDF p1 Elite column; calculator [0].variants[1].name",
+        "drive": "RWD",
+        "battery_kwh_explicit_in_stock_ad": 84,
+        "power_kw_explicit_in_stock_ad": null,
+        "qualifier": "Exact MY27 Elite RWD/84kWh match. Motor output 168kW is manufacturer-grade evidence rather than a value explicitly printed in the retrieved dealer text."
+      }
+    },
+    {
+      "source_id": "stock_premium",
+      "catalogue_id": "hyundai-ioniq5-my27-premium-n-line-awd",
+      "dealer": "Ryde Hyundai",
+      "location": "Ryde NSW",
+      "condition": "New",
+      "stock_id": "220626641",
+      "vin": "KMHKR81CRVU421873",
+      "odometer_km": 20,
+      "price_aud": 86000,
+      "price_type": "dealer_advertised_driveaway",
+      "model_year": "MY27",
+      "build_year": null,
+      "colour": "Cyber Grey",
+      "availability": "advertised_new_not_sold_in_retrieved_page",
+      "warning": "September sale wording remains on October retrieval; confirm advertised deal before relying on it",
+      "retrieved_on": "2026-10-10",
+      "source_url": "https://www.rydehyundai.com.au/new-cars/for-sale/hyundai/ioniq-5/2026/n-line-premium/ne.v7-my27-awd/4056040/",
+      "physical_availability_confirmed": false,
+      "seating_count": {
+        "value": 5,
+        "source_ids": [
+          "stock_premium"
+        ],
+        "locator": "Key Features: Seats 5 (line 267); Car Details > Seats: 5 (lines 337–339)",
+        "evidence_level": "explicit_exact_dealer_listing"
+      },
+      "model_year_verification": {
+        "value": true,
+        "source_ids": [
+          "stock_premium"
+        ],
+        "locator": "H1: 2026 Hyundai IONIQ 5 N Line Premium NE.V7 MY27 AWD (line 224); Car Details > Vehicle Description: NE.V7 MY27 AWD (lines 321–323)",
+        "model_year": "MY27",
+        "series": "NE.V7",
+        "qualifier": "Dealer heading and Vehicle Description explicitly say MY27. A generic Car Details field is labelled Model Year: 2026 (lines 317–319), so preserve this dealer-data conflict rather than silently treating that field as model year or independently verified build year. Named series MY27/NE.V7 matches current grade; no old-MY substitution is indicated."
+      },
+      "drivetrain_verification": {
+        "value": true,
+        "source_ids": [
+          "stock_premium",
+          "i5_spec",
+          "ioniq-5_api"
+        ],
+        "locator": "Key Features and Details > Drive Type AWD (line 287); H1 and Vehicle Description also say AWD; MY27 PDF p1 Premium N Line column; calculator [0].variants[2].name",
+        "drive": "AWD",
+        "battery_kwh_explicit_in_stock_ad": null,
+        "power_kw_explicit_in_stock_ad": null,
+        "qualifier": "N Line Premium is the dealer naming order for manufacturer Premium N Line. The exact ad explicitly matches MY27/NE.V7 AWD; 84kWh and 239kW come from the matching current manufacturer grade. The dealer Power field is blank, not evidence of zero power."
+      },
+      "advertised_year": 2026,
+      "build_year_qualifier": "The earlier build_year:2026 entry was based on the generic advertised year; actual build year is not separately established in retrieved dealer text."
+    },
+    {
+      "source_id": "stock_i6n",
+      "catalogue_id": "hyundai-ioniq-6-n",
+      "dealer": "Werribee Hyundai",
+      "location": "Hoppers Crossing VIC",
+      "condition": "New (page title and new URL)",
+      "stock_id": "N42285",
+      "vin": "KMHM541ERTA001408",
+      "odometer_km": 15,
+      "price_aud": 123990,
+      "price_type": "dealer_advertised_driveaway",
+      "model_year": "MY26",
+      "build_year": 2026,
+      "colour": "Blue",
+      "roof_configuration": null,
+      "availability": "advertised_new_not_sold_in_retrieved_page",
+      "retrieved_on": "2026-10-10",
+      "source_url": "https://www.werribeehyundai.com.au/cars/new-blue-2026-hyundai-ioniq-6-n42285",
+      "physical_availability_confirmed": false
+    },
+    {
+      "source_id": "stock_i5n_market",
+      "catalogue_id": "hyundai-ioniq-5-n",
+      "dealer": "Melbourne City Hyundai",
+      "location": "South Melbourne VIC",
+      "condition": "Dealer new car in stock",
+      "stock_id": "320478364",
+      "vin": null,
+      "odometer_km": 0,
+      "price_aud": null,
+      "price_type": null,
+      "model_year": "MY27",
+      "build_month": "2026-08",
+      "compliance_month": "2026-09",
+      "colour": "Abyss Black",
+      "roof_configuration": null,
+      "availability": "exact_marketplace_ad_new_stock",
+      "warning": "Dealer index separately advertises matching name/colour at $122,990 but exact index-to-stock identity not verified; do not attach that price as exact stock fact",
+      "retrieved_on": "2026-10-10",
+      "source_url": "https://www.carsales.com.au/cars/details/2026-hyundai-ioniq-5-n-auto-awd-my27/OAG-AD-26312468/",
+      "physical_availability_confirmed": false
+    }
+  ],
+  "legacy_and_excluded": [
+    {
+      "family": "IONIQ 6",
+      "exact_manufacturer_legacy_name": "EPIQ with DSM Sedan 74 kW + 165 kW Electric Motor - (F/R) 77.4 kWh AWD",
+      "manufacturer_variant_id": "C0F5B59A-1116-4C45-9AA3-0AF7B6DF82F9",
+      "source_ids": [
+        "ioniq-6_api",
+        "i6_page_redirect",
+        "range"
+      ],
+      "status": "legacy_unverified_new_availability",
+      "reason": "No public current model; model priceEnabled=false, categories empty and every legacy variant has no colours. soldOut=false is not proof of availability.",
+      "raw_price_not_for_publication": 0.0,
+      "raw_old_price_estimate_not_for_publication": 96491.42,
+      "current_orderable_verified": false,
+      "current_orderable": null
+    },
+    {
+      "family": "IONIQ 6",
+      "exact_manufacturer_legacy_name": "DYNAMIQ Sedan 74 kW + 165 kW Electric Motor - (F/R) 77.4 kWh AWD",
+      "manufacturer_variant_id": "001AF45E-369F-4DAE-A970-3F07A613BA29",
+      "source_ids": [
+        "ioniq-6_api",
+        "i6_page_redirect",
+        "range"
+      ],
+      "status": "legacy_unverified_new_availability",
+      "reason": "No public current model; model priceEnabled=false, categories empty and every legacy variant has no colours. soldOut=false is not proof of availability.",
+      "raw_price_not_for_publication": 0.0,
+      "raw_old_price_estimate_not_for_publication": 89629.02,
+      "current_orderable_verified": false,
+      "current_orderable": null
+    },
+    {
+      "family": "IONIQ 6",
+      "exact_manufacturer_legacy_name": "EPIQ Sedan 168 kW Electric Motor - (R) 77.4 kWh RWD",
+      "manufacturer_variant_id": "26671967-D3F0-4F8B-9FA7-8978746E3833",
+      "source_ids": [
+        "ioniq-6_api",
+        "i6_page_redirect",
+        "range"
+      ],
+      "status": "legacy_unverified_new_availability",
+      "reason": "No public current model; model priceEnabled=false, categories empty and every legacy variant has no colours. soldOut=false is not proof of availability.",
+      "raw_price_not_for_publication": 0.0,
+      "raw_old_price_estimate_not_for_publication": 88579.02,
+      "current_orderable_verified": false,
+      "current_orderable": null
+    },
+    {
+      "family": "IONIQ 6",
+      "exact_manufacturer_legacy_name": "EPIQ with DSM Sedan 168 kW Electric Motor - (R) 77.4 kWh RWD",
+      "manufacturer_variant_id": "906FCFF5-7BEA-4564-9BB5-A2081400881E",
+      "source_ids": [
+        "ioniq-6_api",
+        "i6_page_redirect",
+        "range"
+      ],
+      "status": "legacy_unverified_new_availability",
+      "reason": "No public current model; model priceEnabled=false, categories empty and every legacy variant has no colours. soldOut=false is not proof of availability.",
+      "raw_price_not_for_publication": 0.0,
+      "raw_old_price_estimate_not_for_publication": 91729.02,
+      "current_orderable_verified": false,
+      "current_orderable": null
+    },
+    {
+      "family": "IONIQ 6",
+      "exact_manufacturer_legacy_name": "EPIQ Sedan 74 kW + 165 kW Electric Motor - (F/R) 77.4 kWh AWD",
+      "manufacturer_variant_id": "95B9F35A-1012-4763-9E0A-ED27BF2F2C4A",
+      "source_ids": [
+        "ioniq-6_api",
+        "i6_page_redirect",
+        "range"
+      ],
+      "status": "legacy_unverified_new_availability",
+      "reason": "No public current model; model priceEnabled=false, categories empty and every legacy variant has no colours. soldOut=false is not proof of availability.",
+      "raw_price_not_for_publication": 0.0,
+      "raw_old_price_estimate_not_for_publication": 93304.02,
+      "current_orderable_verified": false,
+      "current_orderable": null
+    },
+    {
+      "family": "IONIQ 6",
+      "exact_manufacturer_legacy_name": "IONIQ 6 Sedan 111 kW Electric Motor - (R) 53.0 kWh RWD",
+      "manufacturer_variant_id": "849DA63F-61B8-4345-B34D-ED7DF4EF04C3",
+      "source_ids": [
+        "ioniq-6_api",
+        "i6_page_redirect",
+        "range"
+      ],
+      "status": "legacy_unverified_new_availability",
+      "reason": "No public current model; model priceEnabled=false, categories empty and every legacy variant has no colours. soldOut=false is not proof of availability.",
+      "raw_price_not_for_publication": 66500.0,
+      "raw_old_price_estimate_not_for_publication": 72257.21,
+      "current_orderable_verified": false,
+      "current_orderable": null
+    },
+    {
+      "family": "IONIQ 6",
+      "exact_manufacturer_legacy_name": "IONIQ 6 Sedan 168 kW Electric Motor - (R) 77.4 kWh RWD",
+      "manufacturer_variant_id": "75ECACA1-B6E7-4673-AAB4-9A18E3A6D9D6",
+      "source_ids": [
+        "ioniq-6_api",
+        "i6_page_redirect",
+        "range"
+      ],
+      "status": "legacy_unverified_new_availability",
+      "reason": "No public current model; model priceEnabled=false, categories empty and every legacy variant has no colours. soldOut=false is not proof of availability.",
+      "raw_price_not_for_publication": 72500.0,
+      "raw_old_price_estimate_not_for_publication": 78557.21,
+      "current_orderable_verified": false,
+      "current_orderable": null
+    },
+    {
+      "family": "IONIQ 6",
+      "exact_manufacturer_legacy_name": "DYNAMIQ Sedan 168 kW Electric Motor - (R) 77.4 kWh RWD",
+      "manufacturer_variant_id": "8C7A2A6D-1F33-45BC-A734-627A2440A2C5",
+      "source_ids": [
+        "ioniq-6_api",
+        "i6_page_redirect",
+        "range"
+      ],
+      "status": "legacy_unverified_new_availability",
+      "reason": "No public current model; model priceEnabled=false, categories empty and every legacy variant has no colours. soldOut=false is not proof of availability.",
+      "raw_price_not_for_publication": 78500.0,
+      "raw_old_price_estimate_not_for_publication": 84857.21,
+      "current_orderable_verified": false,
+      "current_orderable": null
+    },
+    {
+      "family": "IONIQ 6",
+      "historical_range": [
+        "MY23 Dynamiq RWD 77.4kWh",
+        "MY23 Techniq AWD 77.4kWh",
+        "MY23 Epiq AWD 77.4kWh"
+      ],
+      "source_ids": [
+        "old_i6_2023",
+        "2023-ioniq-6_api"
+      ],
+      "status": "historical",
+      "reason": "Original launch page still says order now, but the 2023 calculator has no variants. No exact unsold new regular IONIQ 6 stock verified in this pass."
+    },
+    {
+      "family": "IONIQ 5",
+      "historical_range": [
+        "63kWh base RWD",
+        "Dynamiq",
+        "Epiq",
+        "N Line option-pack variants",
+        "Digital Side Mirror option-pack variants",
+        "older Techniq and 72.6/77.4kWh configurations"
+      ],
+      "source_ids": [
+        "i5_old",
+        "i5_my26",
+        "i5_spec"
+      ],
+      "status": "superseded_not_current_orderable_without_exact_stock_proof",
+      "reason": "Current regular MY27 sheet and detailed configurator show only base 84kWh RWD, Elite 84kWh RWD, Premium N Line 84kWh AWD. Old specifications must not be combined with current grade names."
+    }
+  ],
+  "rejected_stock_evidence": [
+    {
+      "source_id": "used_i6",
+      "reason": "Used and sale pending"
+    },
+    {
+      "source_id": "used_i6b",
+      "reason": "Used; new arrival is marketing phrase"
+    },
+    {
+      "source_id": "demo_i5",
+      "reason": "Demonstrator, not new; expired cashback"
+    }
+  ],
+  "shared_warranty": {
+    "source_ids": [
+      "i5_page",
+      "i6n_page"
+    ],
+    "standard": "5 years / unlimited km",
+    "extended": "Up to 7 years / unlimited km if all scheduled services meet authorised Hyundai dealer conditions; passenger vehicles first registered from 1 June 2025",
+    "ev_drive_battery": "8 years / 160,000 km, whichever first",
+    "commercial_use": "Separate commercial-use limitations apply; do not present unconditional 7-year cover"
+  },
+  "integration_guardrails": [
+    "Retain exact grade, model-year, drive and battery keys. Premium N Line is not IONIQ 5 N.",
+    "Prices require priceType, currency, geography, options, source and expiry. Never use finance repayment, pre-LCT raw field, expired promotional headline or dealer discount as MLP.",
+    "Do not label advertised 84kWh as usable. Do not label 350kW test-station rating or 277kW battery output as vehicle DC maximum.",
+    "Cargo figures are VDA and rear versus front must remain separate. Do not call VDA volume SAE volume.",
+    "I5 consumption footnote is ADR81/02 while range is WLTP combined; preserve separate cycle labels.",
+    "Current MY27 I5 V2L is unverified because dedicated row was dropped from spec; omission alone does not prove removal.",
+    "Use spec-sheet power/torque boost distinctions; headline tiles on N pages incorrectly label unboosted 448kW/740Nm as with N Grin Boost.",
+    "N price/configuration uncertainties should be visible rather than silently imputed from $115,000 launch coverage."
+  ],
+  "sources": [
+    {
+      "id": "i5_page",
+      "title": "Hyundai Australia current IONIQ 5 page",
+      "url": "https://www.hyundai.com/au/en/cars/eco/ioniq5",
+      "retrieved_on": "2026-10-10",
+      "kind": "official_manufacturer",
+      "snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/hyundai-sources/ioniq5-page.html",
+      "sha256": "f7ebd26f005578670eb9854d3c46b28de2b44072b485cb4f0741b0db3d9adedf"
+    },
+    {
+      "id": "i5_spec",
+      "title": "Hyundai Australia MY27 IONIQ 5 specification sheet",
+      "url": "https://www.hyundai.com/content/dam/hyundai/au/en/models/ioniq5/docs/MY27_Specification_Sheet_IONIQ5_Electric.pdf",
+      "retrieved_on": "2026-10-10",
+      "kind": "official_manufacturer",
+      "snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/hyundai-sources/ioniq5-my27.pdf",
+      "sha256": "b44c47e4d0825f392ed11959e2049552c68b1be0485ebee60413a9eb7779b6ff",
+      "note": "Linked from the current model page on retrieval; MY27 in filename, not an inferred calendar year."
+    },
+    {
+      "id": "i5_my26",
+      "title": "Hyundai Australia 2026 IONIQ 5 specification sheet",
+      "url": "https://www.hyundai.com/content/dam/hyundai/au/en/models/ioniq5/docs/2026-IONIQ-5-Specification-Sheet.pdf",
+      "retrieved_on": "2026-10-10",
+      "kind": "official_manufacturer",
+      "note": "Superseded document still indexed. Do not use instead of current MY27 sheet."
+    },
+    {
+      "id": "i5_old",
+      "title": "Hyundai Australia legacy IONIQ 5 specification sheet",
+      "url": "https://www.hyundai.com/content/dam/hyundai/au/en/models/ioniq5/docs/Specification_Sheet_IONIQ5.pdf",
+      "retrieved_on": "2026-10-10",
+      "kind": "official_manufacturer",
+      "note": "Legacy Dynamiq/Epiq era; not current regular trim evidence."
+    },
+    {
+      "id": "i5n_page",
+      "title": "Hyundai Australia current IONIQ 5 N page",
+      "url": "https://www.hyundai.com/au/en/cars/eco/ioniq5n",
+      "retrieved_on": "2026-10-10",
+      "kind": "official_manufacturer"
+    },
+    {
+      "id": "i5n_spec",
+      "title": "IONIQ 5 N currently linked AU specification PDF",
+      "url": "https://www.hyundai.com/content/dam/hyundai/au/en/models/ioniq5n/images/Hyundai_2024_IONIQ_5N_Specifications.pdf",
+      "retrieved_on": "2026-10-10",
+      "kind": "official_manufacturer",
+      "snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/hyundai-sources/ioniq5n-linked.pdf",
+      "sha256": "0c13b747f5dc6c84ab2a531809e366d4716f242b92b70409e4c0e6f674964ff0",
+      "note": "Current page still links a 2024-named PDF; carryover specification, not proof of every MY27 equipment item."
+    },
+    {
+      "id": "i6_page_redirect",
+      "title": "Former regular IONIQ 6 Australian model URL",
+      "url": "https://www.hyundai.com/au/en/cars/eco/ioniq6",
+      "retrieved_on": "2026-10-10",
+      "kind": "official_manufacturer",
+      "note": "Redirected to https://www.hyundai.com/au/en/cars/eco on retrieval."
+    },
+    {
+      "id": "i6n_page",
+      "title": "Hyundai Australia current IONIQ 6 N page",
+      "url": "https://www.hyundai.com/au/en/cars/eco/ioniq6n",
+      "retrieved_on": "2026-10-10",
+      "kind": "official_manufacturer",
+      "snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/hyundai-sources/ioniq6n-page.html",
+      "sha256": "abbdecd7916c54bea4ac3d436d0143d8786fdd237303cc54951c53e8f6a81c53"
+    },
+    {
+      "id": "i6n_spec",
+      "title": "2026 Hyundai IONIQ 6 N Australian specification sheet",
+      "url": "https://www.hyundai.com/content/dam/hyundai/au/en/models/ioniq-6-n/docs/IONIQ-6N-Specification-Sheet.pdf",
+      "retrieved_on": "2026-10-10",
+      "kind": "official_manufacturer",
+      "snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/hyundai-sources/ioniq6n-linked.pdf",
+      "sha256": "87cca74f50db7d3abfff80c3c75310daf72428d5cf444a8bd44b744bcf63c53e",
+      "note": "Current page link; footer says accurate as of 26 November 2025. Some apparent copied boilerplate (e.g. IONIQ 5 lettering) requires caution on detailed equipment."
+    },
+    {
+      "id": "range",
+      "title": "Hyundai Australia current model range",
+      "url": "https://www.hyundai.com/au/en/cars",
+      "retrieved_on": "2026-10-10",
+      "kind": "official_manufacturer"
+    },
+    {
+      "id": "models_api",
+      "title": "Public Australian calculator model catalogue",
+      "url": "https://www.hyundai.com/content/api/au/hyundai/v3/carpricecalculator/models",
+      "retrieved_on": "2026-10-10",
+      "kind": "official_manufacturer",
+      "snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/hyundai-sources/models.json",
+      "sha256": "cf499b0c5f21c892929e0edf38cb98b34cbe6ffa539342bece0e25b79c884a77",
+      "note": "Public GET endpoint used by Hyundai calculator. Contains hidden legacy records as well as current range; mere presence is not orderability."
+    },
+    {
+      "id": "ioniq-5_api",
+      "title": "Official calculator configuration: ioniq-5",
+      "url": "https://www.hyundai.com/content/api/au/hyundai/v3/carpricecalculator?postcode=2000&displaypowertrain=true&modelname=ioniq-5",
+      "retrieved_on": "2026-10-10",
+      "kind": "official_manufacturer",
+      "snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/hyundai-sources/ioniq-5.json",
+      "sha256": "37b0a190910b8efa328b6f3287be12a6dd5e12f235373cc87210a100eade8835",
+      "note": "Read-only GET from endpoint used by Hyundai public calculator; postcode 2000 is an illustrative research location, not the user location. No quote/contact/order submitted."
+    },
+    {
+      "id": "ioniq-5-n_api",
+      "title": "Official calculator configuration: ioniq-5-n",
+      "url": "https://www.hyundai.com/content/api/au/hyundai/v3/carpricecalculator?postcode=2000&displaypowertrain=true&modelname=ioniq-5-n",
+      "retrieved_on": "2026-10-10",
+      "kind": "official_manufacturer",
+      "snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/hyundai-sources/ioniq-5-n.json",
+      "sha256": "9db554b7020574a8913ca2aa9435c2af0925d945a29f6ae26976b59698ae79d6",
+      "note": "Read-only GET from endpoint used by Hyundai public calculator; postcode 2000 is an illustrative research location, not the user location. No quote/contact/order submitted."
+    },
+    {
+      "id": "ioniq-6-n_api",
+      "title": "Official calculator configuration: ioniq-6-n",
+      "url": "https://www.hyundai.com/content/api/au/hyundai/v3/carpricecalculator?postcode=2000&displaypowertrain=true&modelname=ioniq-6-n",
+      "retrieved_on": "2026-10-10",
+      "kind": "official_manufacturer",
+      "snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/hyundai-sources/ioniq-6-n.json",
+      "sha256": "f4a5a1a65aed79b3143ea22385a8435a91823a4345411efc61ec5408acde2d9c",
+      "note": "Read-only GET from endpoint used by Hyundai public calculator; postcode 2000 is an illustrative research location, not the user location. No quote/contact/order submitted."
+    },
+    {
+      "id": "ioniq-6_api",
+      "title": "Official calculator configuration: ioniq-6",
+      "url": "https://www.hyundai.com/content/api/au/hyundai/v3/carpricecalculator?postcode=2000&displaypowertrain=true&modelname=ioniq-6",
+      "retrieved_on": "2026-10-10",
+      "kind": "official_manufacturer",
+      "snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/hyundai-sources/ioniq-6.json",
+      "sha256": "760154a3ee9559475e8abfbd2a6245bced90a39215e9aa5a4b1bde1259ec7666",
+      "note": "Read-only GET from endpoint used by Hyundai public calculator; postcode 2000 is an illustrative research location, not the user location. No quote/contact/order submitted."
+    },
+    {
+      "id": "2023-ioniq-6_api",
+      "title": "Official calculator configuration: 2023-ioniq-6",
+      "url": "https://www.hyundai.com/content/api/au/hyundai/v3/carpricecalculator?postcode=2000&displaypowertrain=true&modelname=2023-ioniq-6",
+      "retrieved_on": "2026-10-10",
+      "kind": "official_manufacturer",
+      "snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/hyundai-sources/2023-ioniq-6.json",
+      "sha256": "43d7ea06b40c537d856055cf81be4a048f4ccb0e7bb81663b80bbcd4bf2c7dc6",
+      "note": "Read-only GET from endpoint used by Hyundai public calculator; postcode 2000 is an illustrative research location, not the user location. No quote/contact/order submitted."
+    },
+    {
+      "id": "price_FFB98D6F-65F1-44A2-ACE7-F33005A9DE92",
+      "title": "Official calculator price breakdown: IONIQ 5 SUV 168kW 84kWh RWD",
+      "url": "https://www.hyundai.com/content/api/au/hyundai/v3/variantpricecalculator?variantId=FFB98D6F-65F1-44A2-ACE7-F33005A9DE92&optionCost=0&postcode=2000",
+      "retrieved_on": "2026-10-10",
+      "kind": "official_manufacturer",
+      "snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/hyundai-sources/price-ioniq-5-FFB98D6F-65F1-44A2-ACE7-F33005A9DE92.json",
+      "sha256": "d3cb4cd1c897494aebd22bedcafbf9dc6e96e1ac2bfd9b7c2a7cfb470bdbd749",
+      "note": "No options, NSW postcode 2000; on-road estimate is location-dependent. N records have distinct mlp and mlpFromPIM values; preserve both."
+    },
+    {
+      "id": "price_1E3CB636-286A-4E71-876E-D1AE9AC0C536",
+      "title": "Official calculator price breakdown: Elite SUV 168kW 84kWh RWD",
+      "url": "https://www.hyundai.com/content/api/au/hyundai/v3/variantpricecalculator?variantId=1E3CB636-286A-4E71-876E-D1AE9AC0C536&optionCost=0&postcode=2000",
+      "retrieved_on": "2026-10-10",
+      "kind": "official_manufacturer",
+      "snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/hyundai-sources/price-ioniq-5-1E3CB636-286A-4E71-876E-D1AE9AC0C536.json",
+      "sha256": "6891a7b9f6dcb22980506a09d036b4d46b75118a8c4c2796c2c6d5e622829d96",
+      "note": "No options, NSW postcode 2000; on-road estimate is location-dependent. N records have distinct mlp and mlpFromPIM values; preserve both."
+    },
+    {
+      "id": "price_910CB538-E4A3-4DCC-8A33-6416D4EE91F7",
+      "title": "Official calculator price breakdown: Premium N Line SUV 239kW 84kWh AWD",
+      "url": "https://www.hyundai.com/content/api/au/hyundai/v3/variantpricecalculator?variantId=910CB538-E4A3-4DCC-8A33-6416D4EE91F7&optionCost=0&postcode=2000",
+      "retrieved_on": "2026-10-10",
+      "kind": "official_manufacturer",
+      "snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/hyundai-sources/price-ioniq-5-910CB538-E4A3-4DCC-8A33-6416D4EE91F7.json",
+      "sha256": "7f06d586307f3210bd3765b7deaf96f910a7a05b2bb94f21e4f7abfdaebf7d97",
+      "note": "No options, NSW postcode 2000; on-road estimate is location-dependent. N records have distinct mlp and mlpFromPIM values; preserve both."
+    },
+    {
+      "id": "price_EDE0D33A-CDCB-43B4-A52B-010530A4B99F",
+      "title": "Official calculator price breakdown: N with Vision Roof SUV 166kW + 282kW Electric Motors - front / rear 84 kWh AWD",
+      "url": "https://www.hyundai.com/content/api/au/hyundai/v3/variantpricecalculator?variantId=EDE0D33A-CDCB-43B4-A52B-010530A4B99F&optionCost=0&postcode=2000",
+      "retrieved_on": "2026-10-10",
+      "kind": "official_manufacturer",
+      "snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/hyundai-sources/price-ioniq-5-n-EDE0D33A-CDCB-43B4-A52B-010530A4B99F.json",
+      "sha256": "db5b91b3f313d3b8d4dfbe7cd5c3fb1c380546dce1625c02f1177a44a4a818b0",
+      "note": "No options, NSW postcode 2000; on-road estimate is location-dependent. N records have distinct mlp and mlpFromPIM values; preserve both."
+    },
+    {
+      "id": "price_95CF4D5D-FD09-4F30-99FA-9A602C719AD7",
+      "title": "Official calculator price breakdown: N with Sunroof Sedan 166kW + 282kW Electric Motors - front / rear 84 kWh AWD",
+      "url": "https://www.hyundai.com/content/api/au/hyundai/v3/variantpricecalculator?variantId=95CF4D5D-FD09-4F30-99FA-9A602C719AD7&optionCost=0&postcode=2000",
+      "retrieved_on": "2026-10-10",
+      "kind": "official_manufacturer",
+      "snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/hyundai-sources/price-ioniq-6-n-95CF4D5D-FD09-4F30-99FA-9A602C719AD7.json",
+      "sha256": "02b026240a42f72561fb1ea3557cfca1b38cd265f69d84c1f2549764eaa38a24",
+      "note": "No options, NSW postcode 2000; on-road estimate is location-dependent. N records have distinct mlp and mlpFromPIM values; preserve both."
+    },
+    {
+      "id": "price_E515C714-EBD3-4ACD-9FA6-C073F4F664F5",
+      "title": "Official calculator price breakdown: N Sedan 166kW + 282kW Electric Motors - front / rear 84 kWh AWD",
+      "url": "https://www.hyundai.com/content/api/au/hyundai/v3/variantpricecalculator?variantId=E515C714-EBD3-4ACD-9FA6-C073F4F664F5&optionCost=0&postcode=2000",
+      "retrieved_on": "2026-10-10",
+      "kind": "official_manufacturer",
+      "snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/hyundai-sources/price-ioniq-6-n-E515C714-EBD3-4ACD-9FA6-C073F4F664F5.json",
+      "sha256": "b187408b7f97e39a3b1c4883ca5a2d7cbbfffaea53946fb734dcef875b01b1e2",
+      "note": "No options, NSW postcode 2000; on-road estimate is location-dependent. N records have distinct mlp and mlpFromPIM values; preserve both."
+    },
+    {
+      "id": "stock_i5",
+      "title": "Frankston Hyundai exact new MY27 IONIQ 5",
+      "url": "https://www.frankstonhyundai.com.au/cars/new-grey-2026-hyundai-ioniq-5-320476710",
+      "retrieved_on": "2026-10-10",
+      "kind": "official_dealer_listing"
+    },
+    {
+      "id": "stock_elite",
+      "title": "Maughan Thiem exact new MY27 Elite",
+      "url": "https://www.maughanthiem.com.au/cars/new-gold-2026-hyundai-ioniq-5-520117360",
+      "retrieved_on": "2026-10-10",
+      "kind": "official_dealer_listing"
+    },
+    {
+      "id": "stock_premium",
+      "title": "Ryde Hyundai exact new MY27 N Line Premium",
+      "url": "https://www.rydehyundai.com.au/new-cars/for-sale/hyundai/ioniq-5/2026/n-line-premium/ne.v7-my27-awd/4056040/",
+      "retrieved_on": "2026-10-10",
+      "kind": "official_dealer_listing",
+      "note": "Live opened page retains September sale wording; price is dealer advertisement, not universal list price."
+    },
+    {
+      "id": "stock_i6n",
+      "title": "Werribee Hyundai exact new MY26 IONIQ 6 N",
+      "url": "https://www.werribeehyundai.com.au/cars/new-blue-2026-hyundai-ioniq-6-n42285",
+      "retrieved_on": "2026-10-10",
+      "kind": "official_dealer_listing"
+    },
+    {
+      "id": "stock_i5n_market",
+      "title": "Dealer-listed MY27 IONIQ 5 N exact stock on carsales",
+      "url": "https://www.carsales.com.au/cars/details/2026-hyundai-ioniq-5-n-auto-awd-my27/OAG-AD-26312468/",
+      "retrieved_on": "2026-10-10",
+      "kind": "dealer_ad_on_marketplace",
+      "note": "Exact dealer stock ID readable; VIN not exposed in retrieved page. Roof configuration not established."
+    },
+    {
+      "id": "stock_i5n_dealer",
+      "title": "Melbourne City Hyundai stock catalogue",
+      "url": "https://www.melbournecityhyundai.com.au/all-stock/list/category/Hatchbacks",
+      "retrieved_on": "2026-10-10",
+      "kind": "official_dealer_listing",
+      "note": "Opened listing labels Abyss Black MY27 N as NEW VEHICLE at $122,990; another grey N is demonstrator. Individual stock URL failed to open; no inferred exact link."
+    },
+    {
+      "id": "offer_dealer",
+      "title": "Northside Hyundai current manufacturer offers",
+      "url": "https://northsidehyundai.com.au/offers/",
+      "retrieved_on": "2026-10-10",
+      "kind": "official_dealer_offer",
+      "note": "October–December 2026 stock offer conditions; new-car cash driveaway is distinct from new/demo finance terms."
+    },
+    {
+      "id": "bad_offer",
+      "title": "Adrian Brien Hyundai offers",
+      "url": "https://www.adrianbrienhyundai.com.au/hyundai-latest-offers-saint-marys",
+      "retrieved_on": "2026-10-10",
+      "kind": "official_dealer_offer",
+      "note": "Search extract advertised new Q4 prices; opened page showed old $69,990 with contradictory October headings and July–September fine print. Do not use as sole current price evidence."
+    },
+    {
+      "id": "old_i6_2024",
+      "title": "Hyundai Australia 2024 IONIQ 6 announcement",
+      "url": "https://www.hyundai.com/au/en/news/vehicles/2024-ioniq-6-tomorrow-looks-good",
+      "retrieved_on": "2026-10-10",
+      "kind": "official_manufacturer",
+      "note": "Historical launch information, not 2026 orderability."
+    },
+    {
+      "id": "old_i6_2023",
+      "title": "Hyundai Australia IONIQ 6 original launch announcement",
+      "url": "https://www.hyundai.com/au/en/news/press-room/ioniq-6-prophecy-realised",
+      "retrieved_on": "2026-10-10",
+      "kind": "official_manufacturer",
+      "note": "Historical Dynamiq/Techniq/Epiq launch, not current availability."
+    },
+    {
+      "id": "i6_removed",
+      "title": "CarsGuide report of Hyundai Australia spokesperson, 6 May 2026",
+      "url": "https://www.carsguide.com.au/car-news/work-to-do-standard-hyundai-ioniq-6-electric-car-pulled-from-sale-as-new-high-performance",
+      "retrieved_on": "2026-10-10",
+      "kind": "secondary_report",
+      "note": "Corroborates public removal; not used for technical specifications."
+    },
+    {
+      "id": "n_price_secondary",
+      "title": "CarExpert IONIQ 6 N launch price, 4 May 2026",
+      "url": "https://www.carexpert.com.au/car-news/2026-hyundai-ioniq-6-n-price-and-specs",
+      "retrieved_on": "2026-10-10",
+      "kind": "secondary_report",
+      "note": "Historical $115,000 before on-roads for IONIQ 6 N and same-price IONIQ 5 N. Technical charging maximum in article is not adopted."
+    },
+    {
+      "id": "n_price_redbook",
+      "title": "RedBook MY27 IONIQ 5 N price guide",
+      "url": "https://www.redbook.com.au/cars/details/2026-hyundai-ioniq-5-n-auto-awd-my27/SPOT-ITM-694970?Cr=89",
+      "retrieved_on": "2026-10-10",
+      "kind": "secondary_database",
+      "note": "Current $114,918 price-when-new conflicts with vision-roof official calculator mlpFromPIM $114,383; not resolved into a false single exact number."
+    },
+    {
+      "id": "used_i6",
+      "title": "Westside Auto used/sale-pending IONIQ 6 Epiq",
+      "url": "https://www.westsideauto.com.au/cars/2024-Hyundai-IONIQ-6-EPIQ-AWD-77-4kWh-224575",
+      "retrieved_on": "2026-10-10",
+      "kind": "dealer_listing_excluded",
+      "note": "Used MY24, 12,441km, sale pending; not evidence of new availability."
+    },
+    {
+      "id": "used_i6b",
+      "title": "Xcite used IONIQ 6 MY23 Epiq",
+      "url": "https://xcitedemo.com.au/cars/hyundai-ioniq-6-cev1-my23-B246743750",
+      "retrieved_on": "2026-10-10",
+      "kind": "dealer_listing_excluded",
+      "note": "Used 9,577km. New arrival wording does not mean a new car; unregistered label does not override Used condition."
+    },
+    {
+      "id": "demo_i5",
+      "title": "Col Crawford MY27 IONIQ 5 demonstrator on CarsGuide",
+      "url": "https://www.carsguide.com.au/car/15249956/hyundai/ioniq-5/nsw/brookvale/suv",
+      "retrieved_on": "2026-10-10",
+      "kind": "dealer_ad_excluded",
+      "note": "Dealer Demo, registration GER20N; advertised price includes cashback expired 30 September 2026. Not a new-stock proof."
+    }
+  ],
+  "addenda": [
+    {
+      "id": "my27_regular_i5_seating_stock_cargo_addendum",
+      "retrieved_on": "2026-10-10",
+      "scope": "Only the three regular MY27 IONIQ 5 grades; N evidence unchanged",
+      "stock_and_seating_checks": [
+        {
+          "catalogue_id": "hyundai-ioniq5-my27-rwd",
+          "source_id": "stock_i5",
+          "stock_id": "320476710",
+          "vin": "KMHKR81AUVU417505",
+          "seating_count": {
+            "value": 5,
+            "source_ids": [
+              "stock_i5"
+            ],
+            "locator": "Key information > Seats: 5 (retrieved text lines 93–94)",
+            "evidence_level": "explicit_exact_dealer_listing"
+          },
+          "model_year_match": {
+            "value": true,
+            "source_ids": [
+              "stock_i5"
+            ],
+            "locator": "H1: 2026 Hyundai IONIQ 5 Auto 2WD MY27 (line 42); Key information: NE.V7 (line 76)",
+            "model_year": "MY27",
+            "series": "NE.V7",
+            "calendar_build_year": 2026,
+            "qualifier": "MY27 is explicit in the vehicle heading; 2026 is separately the build/compliance year, not evidence of an earlier model year."
+          },
+          "drivetrain_match": {
+            "value": true,
+            "source_ids": [
+              "stock_i5",
+              "i5_spec",
+              "ioniq-5_api"
+            ],
+            "locator": "Dealer Car Summary > Drive type: Rear Wheel Drive (line 109); MY27 PDF p1 Electric motor(s), base column; calculator [0].variants[0].name",
+            "drive": "RWD",
+            "battery_kwh_explicit_in_stock_ad": null,
+            "power_kw_explicit_in_stock_ad": null,
+            "qualifier": "Exact dealer ad explicitly matches MY27 base RWD; 84kWh and 168kW are supplied by the uniquely matching current manufacturer grade, not independently printed in the retrieved dealer text. Dealer 19-inch wheels also agree with the MY27 base grade."
+          }
+        },
+        {
+          "catalogue_id": "hyundai-ioniq5-my27-elite-rwd",
+          "source_id": "stock_elite",
+          "stock_id": "520117360",
+          "vin": "KMHKR81AUVU418985",
+          "seating_count": {
+            "value": 5,
+            "source_ids": [
+              "stock_elite"
+            ],
+            "locator": "Key information > Seats: 5 (retrieved text lines 111–112)",
+            "evidence_level": "explicit_exact_dealer_listing"
+          },
+          "model_year_match": {
+            "value": true,
+            "source_ids": [
+              "stock_elite"
+            ],
+            "locator": "H1: 2026 Hyundai IONIQ 5 Elite Auto 2WD MY27 (line 57); Key information: Elite NE.V7 (line 94); Dealer Comments explicitly describe MY27 Elite (line 142)",
+            "model_year": "MY27",
+            "series": "NE.V7",
+            "calendar_build_year": 2026,
+            "qualifier": "Both heading and dealer description explicitly identify MY27; build/compliance year is separately 2026."
+          },
+          "drivetrain_match": {
+            "value": true,
+            "source_ids": [
+              "stock_elite",
+              "i5_spec",
+              "ioniq-5_api"
+            ],
+            "locator": "Key information > Drive type: Rear Wheel Drive (lines 126–127); Dealer Comments: 84kWh battery, rear-wheel drive and 530km WLTP (line 142); MY27 PDF p1 Elite column; calculator [0].variants[1].name",
+            "drive": "RWD",
+            "battery_kwh_explicit_in_stock_ad": 84,
+            "power_kw_explicit_in_stock_ad": null,
+            "qualifier": "Exact MY27 Elite RWD/84kWh match. Motor output 168kW is manufacturer-grade evidence rather than a value explicitly printed in the retrieved dealer text."
+          }
+        },
+        {
+          "catalogue_id": "hyundai-ioniq5-my27-premium-n-line-awd",
+          "source_id": "stock_premium",
+          "stock_id": "220626641",
+          "vin": "KMHKR81CRVU421873",
+          "seating_count": {
+            "value": 5,
+            "source_ids": [
+              "stock_premium"
+            ],
+            "locator": "Key Features: Seats 5 (line 267); Car Details > Seats: 5 (lines 337–339)",
+            "evidence_level": "explicit_exact_dealer_listing"
+          },
+          "model_year_match": {
+            "value": true,
+            "source_ids": [
+              "stock_premium"
+            ],
+            "locator": "H1: 2026 Hyundai IONIQ 5 N Line Premium NE.V7 MY27 AWD (line 224); Car Details > Vehicle Description: NE.V7 MY27 AWD (lines 321–323)",
+            "model_year": "MY27",
+            "series": "NE.V7",
+            "qualifier": "Dealer heading and Vehicle Description explicitly say MY27. A generic Car Details field is labelled Model Year: 2026 (lines 317–319), so preserve this dealer-data conflict rather than silently treating that field as model year or independently verified build year. Named series MY27/NE.V7 matches current grade; no old-MY substitution is indicated."
+          },
+          "drivetrain_match": {
+            "value": true,
+            "source_ids": [
+              "stock_premium",
+              "i5_spec",
+              "ioniq-5_api"
+            ],
+            "locator": "Key Features and Details > Drive Type AWD (line 287); H1 and Vehicle Description also say AWD; MY27 PDF p1 Premium N Line column; calculator [0].variants[2].name",
+            "drive": "AWD",
+            "battery_kwh_explicit_in_stock_ad": null,
+            "power_kw_explicit_in_stock_ad": null,
+            "qualifier": "N Line Premium is the dealer naming order for manufacturer Premium N Line. The exact ad explicitly matches MY27/NE.V7 AWD; 84kWh and 239kW come from the matching current manufacturer grade. The dealer Power field is blank, not evidence of zero power."
+          }
+        }
+      ],
+      "manufacturer_seating_evidence": {
+        "source_ids": [
+          "i5_spec",
+          "i5_page"
+        ],
+        "locator": "MY27 PDF p5 Passive safety > Seating; p6 Occupant comfort & convenience; full current model page",
+        "explicit_total_seat_count_found": false,
+        "qualifier": "The current manufacturer PDF describes front/rear seating and three rear top-tether anchors, but the checked material does not explicitly print a total seating count. The value 5 is supported separately by each exact official-dealer listing, not attributed to the manufacturer PDF."
+      },
+      "cargo_loading_basis": {
+        "source_ids": [
+          "i5_spec",
+          "i5_page"
+        ],
+        "locator": "MY27 PDF p3 Dimensions > Interior: Cargo area rear - VDA (minimum / maximum); PDF p9 Storage solutions > Rear seats > Split folding backrest - 60:40; current model page full text",
+        "rear_minimum_l": 520,
+        "rear_maximum_l": 1580,
+        "method": "VDA",
+        "explicit_seats_up_folding_mapping_found": false,
+        "seats_up_l": null,
+        "seats_folded_l": null,
+        "qualifier": "Retain 520/1580L VDA minimum/maximum exactly. Current PDF does not define the seat, sliding position, parcel shelf or roof loading basis for either figure. The current model page does not supply the 520/1580 figures or resolve that mapping. Do not import a loading definition from an older model year."
+      }
+    }
+  ]
+}

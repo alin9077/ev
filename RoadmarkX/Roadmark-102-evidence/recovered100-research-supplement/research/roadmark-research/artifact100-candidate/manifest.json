@@ -1,0 +1,57 @@
+{
+  "schema": "roadmark100-static-artifact-checker-candidate-v1",
+  "status": "prepared_only_for_independent_static_review_and_root_execution",
+  "entrypoint": "roadmark-research/artifact100-candidate/verify-portable100-delta.py",
+  "entrypointSHA256": "aa431a1114e942b9100d680cc7df35cfacb9bdc8487be023eef0ccbec9dafd3e",
+  "candidateCodeImported": false,
+  "candidateCodeExecuted": false,
+  "candidateCodeSyntaxChecked": false,
+  "actual100HashDefault": null,
+  "requiredCLI": [
+    "--html100",
+    "--expected-html100-sha256"
+  ],
+  "passResultSchema": "roadmark-portable100-static-observation-v1",
+  "files": [
+    {
+      "path": "roadmark-research/artifact100-candidate/BASELINE-STATIC-INSPECTION.json",
+      "bytes": 5794,
+      "sha256": "112001887f1690d53d70f5337c29925c1d6c228da416b9eafbd2fcdf6490fa6a"
+    },
+    {
+      "path": "roadmark-research/artifact100-candidate/DERIVATION.md",
+      "bytes": 8619,
+      "sha256": "9800f9bb3919682af1b64f379082625067420f807aeff1b7aadac0fe58aa61b2"
+    },
+    {
+      "path": "roadmark-research/artifact100-candidate/INPUT-PINS.json",
+      "bytes": 2747,
+      "sha256": "559abbdaccb024b8936e956818077f326fb5700c47c75d3f313cdf0b98e1c032"
+    },
+    {
+      "path": "roadmark-research/artifact100-candidate/derivation.diff",
+      "bytes": 31091,
+      "sha256": "bdc9aed6b2379ca1d6dee78e0f85a7fa2cbfa1c6d9737b88eef92218ced66dae"
+    },
+    {
+      "path": "roadmark-research/artifact100-candidate/reviewed99-helpers.txt",
+      "bytes": 6403,
+      "sha256": "40c1451483253439817efd761b4edd3be480060219327ced4c9d3eef461d860d"
+    },
+    {
+      "path": "roadmark-research/artifact100-candidate/verify-portable100-delta.py",
+      "bytes": 19342,
+      "sha256": "aa431a1114e942b9100d680cc7df35cfacb9bdc8487be023eef0ccbec9dafd3e"
+    }
+  ],
+  "unresolved": [
+    "Independent static review pending.",
+    "Root final QA/build and independently supplied actual100 HTML hash required before execution.",
+    "No actual100 artifact comparison has been performed."
+  ],
+  "scopeLimits": [
+    "Static portable bytes and full decoded payload only.",
+    "No visual/mobile/whole-Next-graph/source-build-provenance proof.",
+    "No extra generated audit projection exception."
+  ]
+}

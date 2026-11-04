@@ -1,0 +1,49 @@
+{
+  "reviewType": "independent_static_revision3_test_fix",
+  "approvedManifestSHA256": "23c7857372a56d9eb2492e924d61bf7bc1294762734bc6a800d31bdce948a22f",
+  "approvedManifest": "roadmark-research/market-lead93-implementation/candidate-manifest-revision3.json",
+  "verdict": "approved_one_line_negative_fixture_construction_fix",
+  "changedFile": "tests/checkpoint93-market.test.ts",
+  "changedCandidateFileSHA256": "85332fb4d43212d42b54d93775faba01add48148a993922b76985961dfd6314d",
+  "allCandidateFilePinsMatch": true,
+  "fileChecks": [
+    {
+      "path": "data/market-deepway-star-lead-evidence-2026-10-12.json",
+      "candidateHashMatches": true,
+      "matchesAppliedRevision2": true
+    },
+    {
+      "path": "data/market-inventory-2026-10-10.json",
+      "candidateHashMatches": true,
+      "matchesAppliedRevision2": true
+    },
+    {
+      "path": "qa/checkpoint93-market-fixture.json",
+      "candidateHashMatches": true,
+      "matchesAppliedRevision2": true
+    },
+    {
+      "path": "tests/checkpoint91-market.test.ts",
+      "candidateHashMatches": true,
+      "matchesAppliedRevision2": true
+    },
+    {
+      "path": "tests/checkpoint93-market.test.ts",
+      "candidateHashMatches": true,
+      "matchesAppliedRevision2": true
+    },
+    {
+      "path": "tests/helpers/checkpoint91-market-history.ts",
+      "candidateHashMatches": true,
+      "matchesAppliedRevision2": true
+    },
+    {
+      "path": "tests/helpers/checkpoint93-market-history.ts",
+      "candidateHashMatches": true,
+      "matchesAppliedRevision2": true
+    }
+  ],
+  "reason": "The invalid fixture replaces trims through Object.assign instead of calling push on an inferred never[]; it mutates only the structured clone before the existing rejection assertion.",
+  "remainingVerification": "Parent must rerun typecheck and relevant tests; reviewer executed none.",
+  "manifestApplicationChangedQualification": "The manifest carries applicationChanged false from candidate preparation; this must not be cited as proof the app is unmodified overall. Revision2 is already applied according to parent and six files are observed equal to it."
+}

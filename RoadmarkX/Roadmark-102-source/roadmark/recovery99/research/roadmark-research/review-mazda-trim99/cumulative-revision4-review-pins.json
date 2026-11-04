@@ -1,0 +1,222 @@
+{
+  "schema": "roadmark99-cumulative-revision4-static-review-v1",
+  "verdict": "GO_STATIC_CUMULATIVE_COMPOSITION_PENDING_ROOT_TYPECHECK_LINT",
+  "blockers": [],
+  "inputPins": [
+    {
+      "path": "roadmark-research/applied99/revision4/candidate-manifest.json",
+      "sha256": "c710eb25970241c720c8695024f66a31cbaaaa2e6dd4b101143b531a02ae0850",
+      "bytes": 47262
+    },
+    {
+      "path": "roadmark-research/applied99/revision4/expected-inputs.json",
+      "sha256": "4a4204128daf108f35296c77d3beb4476a453c98ab571648da9d85b1b0085e86",
+      "bytes": 184478
+    },
+    {
+      "path": "roadmark-research/applied99/revision4/qa-candidate-manifest.json",
+      "sha256": "51e2b73e998f80b4fd10260df54c97ba8d337642c384a4c57606e58875ee590a",
+      "bytes": 5748
+    },
+    {
+      "path": "roadmark-research/applied99/revision3/candidate-manifest.json",
+      "sha256": "d5e4a096ad701c4c575fcef2841a068d761477b38224ac0aa6b9299d89192afa",
+      "bytes": 47056
+    },
+    {
+      "path": "roadmark-research/applied99/revision3/expected-inputs.json",
+      "sha256": "29bcb7fca21d126b996fb506dd755dfac1d743710e07d265346b060d26fe7d7e",
+      "bytes": 184478
+    },
+    {
+      "path": "roadmark-research/applied99/revision3/qa-candidate-manifest.json",
+      "sha256": "89010ff70bac7d72a3084718e1eaf71d37b5a5fcdf037be4c00075aad427b72b",
+      "bytes": 5748
+    },
+    {
+      "path": "roadmark-research/mazda-trim99-candidate/revision4/manifest.json",
+      "sha256": "d744f716d6d5ca9c3db73bacf72390bc5315cafe4cd5575e1833e780fb3a6790",
+      "bytes": 2113
+    }
+  ],
+  "candidateFiles": [
+    {
+      "path": "data/buyer-identity-snapshots-2026-10-10.json",
+      "beforeSHA256": "e33ddb85e2f84b84dbf1de00b8ae2eae9940ac88e9b787837275666fc7505677",
+      "beforeBytes": 54828497,
+      "afterSHA256": "053d096af4e282e76474164be49aca3a78afa26112441b1201ce1e752374f5b8",
+      "afterBytes": 54962382
+    },
+    {
+      "path": "data/buyer-selling-points-2026-10-10.json",
+      "beforeSHA256": "fb674e43f2905858ff81a20dd59bf121874a395d61c7602a6816c8a0b884e633",
+      "beforeBytes": 24016596,
+      "afterSHA256": "f6204684f66a23150ee44619e301feb14dc8cb8514f49544efa1b145d66fb90b",
+      "afterBytes": 24074749
+    },
+    {
+      "path": "data/catalogue-additions-2026-10-10.json",
+      "beforeSHA256": "ef6322d7e2dd416d209954e6049ba5821a252748ffb83a62fa521a557eb0752e",
+      "beforeBytes": 74780507,
+      "afterSHA256": "de469dc3ee5ce872f2a22b6528fd01cb1d3dc59f76594cb2298e7c2af16988e9",
+      "afterBytes": 74934307
+    },
+    {
+      "path": "data/market-inventory-2026-10-10.json",
+      "beforeSHA256": "64f38d5d72f75c2a5264568602d5a1eacae49b1aba8b1e8cfcf5a9708a35c023",
+      "beforeBytes": 1637572,
+      "afterSHA256": "ea4e4f7120e7739de987405740641997c15c6bb0704082724ae3d38055b6fdfa",
+      "afterBytes": 1643818
+    },
+    {
+      "path": "data/mazda-cx6e-technical-evidence-2026-10-12.json",
+      "beforeSHA256": null,
+      "beforeBytes": null,
+      "afterSHA256": "cd1e678a01e47da763b78b58c6eb01c5e69670b7cd59fbce86fdbdfb9c2765cc",
+      "afterBytes": 18379
+    },
+    {
+      "path": "qa/checkpoint99-mazda-fixture.json",
+      "beforeSHA256": null,
+      "beforeBytes": null,
+      "afterSHA256": "405e14b6a02a771fba0fb8cdfea6f651c817f6b8e112dfb531dd94b73164e3a2",
+      "afterBytes": 879588
+    },
+    {
+      "path": "tests/avatar-dimension-projection.test.ts",
+      "beforeSHA256": "263b7c4c654662e8e6d05b9d3050e5c530b2b27a14be584f2191d997630fb155",
+      "beforeBytes": 4188,
+      "afterSHA256": "6faac1dceae201cef475b271c6b3241437e943f780d3b98dd9b7f68193d63da1",
+      "afterBytes": 4448
+    },
+    {
+      "path": "tests/buyer-display-copy-render.test.ts",
+      "beforeSHA256": "91dec0eda2b540660df105829858b58112a127658cd388b2ce49b836c7a4ca09",
+      "beforeBytes": 9557,
+      "afterSHA256": "dc7c94589c23d409ae64b9e7299d893950f75454ee4901d3eab9b1de2b868867",
+      "afterBytes": 9723
+    },
+    {
+      "path": "tests/checkpoint84-transit-city.test.ts",
+      "beforeSHA256": "3997d51cd233b8aa4308a837b6cb85d620455a65256c3bb871de7a33269dd095",
+      "beforeBytes": 11754,
+      "afterSHA256": "f44d54d9b5948f9112eea1066afcdfb1cfd0d8fcc44bc299ee1ea336563845ed",
+      "afterBytes": 12061
+    },
+    {
+      "path": "tests/checkpoint93-market.test.ts",
+      "beforeSHA256": "f9d9714327f56a117e17e390b260fb3b65086a68f1557d4fe87ea50da5e0525b",
+      "beforeBytes": 6304,
+      "afterSHA256": "33d6d182c4ba7916e0abb8e95598cad22ef41ac25163d785339481d22916b687",
+      "afterBytes": 6457
+    },
+    {
+      "path": "tests/checkpoint95-market.test.ts",
+      "beforeSHA256": "7103187118b092244866b77d8bf023f149dacf622f099005b1af69590a35ef0a",
+      "beforeBytes": 9161,
+      "afterSHA256": "cfde06dd7bb9d9a44e5c3f966d1e75e4d64fa2d7d538bfa35a42e50b860768f6",
+      "afterBytes": 9795
+    },
+    {
+      "path": "tests/checkpoint96-source-history.test.ts",
+      "beforeSHA256": "e33ed3b4ab06ce7841c1f57b52fe2bfb517e109277686f35e03878350917e8ac",
+      "beforeBytes": 8277,
+      "afterSHA256": "a5f8861eaeb9041f1e90d997baa5a2fbf432790cf663d91f376e6f8f986f6cc2",
+      "afterBytes": 8420
+    },
+    {
+      "path": "tests/checkpoint99-history-coverage.test.ts",
+      "beforeSHA256": null,
+      "beforeBytes": null,
+      "afterSHA256": "89f686e3b54df193129f0edd1ff4d48ce84dbc9f8c4848afb021ab4cc5a7b8c4",
+      "afterBytes": 2995
+    },
+    {
+      "path": "tests/checkpoint99-mazda.test.ts",
+      "beforeSHA256": null,
+      "beforeBytes": null,
+      "afterSHA256": "ee528d984c33868d837b32884b7b13e132ec30615b6deaca3e3ae4b7da41d7e2",
+      "afterBytes": 14149
+    },
+    {
+      "path": "tests/configuration-payload.test.ts",
+      "beforeSHA256": "a71b31c4d5501570a50782364cee7052842d56975a718fc4c5aae337469621df",
+      "beforeBytes": 7775,
+      "afterSHA256": "8111db11f6b2095ab79d93424b3fbc6d3559373c9960bd5d205c92ed28d32153",
+      "afterBytes": 7910
+    },
+    {
+      "path": "tests/domain.test.ts",
+      "beforeSHA256": "86bd3a6ca9b591f8e1b12a9167bc1151ab3f1fbd38fbd2f0ced94147fcdb6182",
+      "beforeBytes": 14878,
+      "afterSHA256": "e7962229551d1090279f55a392f4f7c29813e31cdeeadfba7409109afb872fa8",
+      "afterBytes": 14980
+    },
+    {
+      "path": "tests/helpers/checkpoint84-runtime.ts",
+      "beforeSHA256": "3b96a28473396e0ed6bc99952169fbdde8871a8f1b913df81d0ec54a6b355132",
+      "beforeBytes": 3449,
+      "afterSHA256": "01ccc8f0d56b4b821302c74b1926e55ec01a6d032f7702c2d26777d62f4bb159",
+      "afterBytes": 3579
+    },
+    {
+      "path": "tests/helpers/checkpoint91-history.ts",
+      "beforeSHA256": "ffb6a4309e1107a10d62945d036cabd5142abc2663b4119182a71cc5843caaff",
+      "beforeBytes": 2667,
+      "afterSHA256": "c11e975627315ad55bfe80cfe34e0307f877c231579fd7538364526977f4c01b",
+      "afterBytes": 2879
+    },
+    {
+      "path": "tests/helpers/checkpoint95-market-history.ts",
+      "beforeSHA256": "e8ba3100743ef068e863291913e53f8dadbb13ec92558178e0d17e3fa10459e3",
+      "beforeBytes": 3666,
+      "afterSHA256": "c1e5d60375d263d548f384ac69b98b509f9673e5883588dec3491fdff29eee75",
+      "afterBytes": 3812
+    },
+    {
+      "path": "tests/helpers/checkpoint99-history.ts",
+      "beforeSHA256": null,
+      "beforeBytes": null,
+      "afterSHA256": "80ef31bac488635dbf69fdac7b7d4dbd2812ae53a6a08f3e8b68de7d2efe71d7",
+      "afterBytes": 6551
+    },
+    {
+      "path": "tests/research-refresh.test.ts",
+      "beforeSHA256": "ed690884990fde3f97d9335235e78d79c61eb664ca10f442c29a67bbfa5da2c4",
+      "beforeBytes": 8303,
+      "afterSHA256": "1f8da6cf7cbe60bc45838c09d2ce3d09711e0221704c4e961f20921f115b6026",
+      "afterBytes": 8400
+    },
+    {
+      "path": "tests/source-citation-label92.test.ts",
+      "beforeSHA256": "ab2a3f22c2a74aa91cd9ef932ae960b017caa03a8de17e108ae7e76a05b8d91a",
+      "beforeBytes": 14076,
+      "afterSHA256": "3ce13e5e8222e1458838f7180c8b0f25513836972005155355d0ae583204e621",
+      "afterBytes": 14242
+    }
+  ],
+  "verifiedCounts": {
+    "checkpoint98InputPaths": 1670,
+    "cumulativeCandidatePaths": 22,
+    "replacements": 17,
+    "newPaths": 5,
+    "expectedInputPaths": 1675,
+    "unchangedCheckpoint98InputPaths": 1653
+  },
+  "changedFromRevision3": [
+    "tests/checkpoint95-market.test.ts",
+    "tests/helpers/checkpoint99-history.ts"
+  ],
+  "onlyChangedPathFromRevision2": "tests/checkpoint95-market.test.ts",
+  "checks": [
+    "Final22-file composition exactly overlays reviewed revision4 on retained revision3",
+    "All original98 before hashes preserved; all applied22 after bytes match",
+    "Full1675 expected-input map exactly reconstructs from98 with22 reviewed deltas",
+    "Shared helper restores exact initial80ef31 bytes",
+    "QA projection matches final22 rows and candidate hash",
+    "Initial/repair/type-repair lineage preserved with scoped repair and prior failed cumulative references",
+    "Failedrevision3 candidate/map/projection remain unchanged"
+  ],
+  "executionClaims": [],
+  "executionGate": "Whole-project typecheck and lint must succeed before fullQA; failedrevision3 is retained history, not accepted execution"
+}

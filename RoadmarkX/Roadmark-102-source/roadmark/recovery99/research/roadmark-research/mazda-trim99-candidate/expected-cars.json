@@ -1,0 +1,2997 @@
+[
+  {
+    "id": "mazda_cx6e_au_aug2026__e35_gt__20261012",
+    "configurationEvidence": {
+      "sourceIds": [
+        "r99_mazda_cx6e_m02",
+        "r99_mazda_cx6e_m03",
+        "r99_mazda_cx6e_m04",
+        "r99_mazda_cx6e_m05",
+        "r99_mazda_cx6e_m06",
+        "r99_mazda_cx6e_m07"
+      ],
+      "requiredBuyerVisibleConditions": [
+        "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+        "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+        "WLTP combined laboratory figures; actual range and energy use vary with driving and conditions.",
+        "Both grades list heated and ventilated front seats and a panoramic sunroof with an electric sunshade. Apple CarPlay and Android Auto are listed with wireless and USB support. Not every device or feature is supported; check your specific device with the dealer.",
+        "Manufacturer pre-order advertising links to dealer enquiry. Accepted orders, production, unsold physical stock, delivery timing and brochure-to-VIN applicability remain unverified.",
+        "Cargo, climate-zone and central-screen claims conflict across sources; normalized values and all market rankings remain held."
+      ],
+      "rankingEligible": false,
+      "completeVehicleCountEligible": false,
+      "projectionScope": "E35 GT specifications from the August 2026 Australian brochure. Manufacturer MY and exact delivered specification are unverified; stock and accepted orders need confirmation.",
+      "sourceIdentity": {
+        "brand": "Mazda",
+        "model": "CX-6e",
+        "grade": "E35 GT",
+        "market": "AU",
+        "manufacturerModelYear": null,
+        "technicalEpoch": "August 2026 Australian brochure AU41-P00008813"
+      },
+      "fullyClosedFactoryBuild": false,
+      "brochureToVinApplicabilityVerified": false,
+      "heldConflicts": [
+        {
+          "id": "CX6E95-CARGO",
+          "field": "normalizedSeatsUpBootLitres",
+          "normalizedValue": null,
+          "observations": [
+            {
+              "sourceId": "r99_mazda_cx6e_m02",
+              "locator": "PDF p7 cargo row1",
+              "value": 363,
+              "unit": "L",
+              "basis": "VDA; seats up; to tray/seatback; underfloor included"
+            },
+            {
+              "sourceId": "r99_mazda_cx6e_m03",
+              "locator": "Design / Versatile Boot Space",
+              "value": 468,
+              "unit": "L",
+              "basis": "unspecified"
+            }
+          ],
+          "action": "Keep both attributed; hold cross-model numeric comparison until protocol/variant discrepancy is resolved."
+        },
+        {
+          "id": "CX6E95-CLIMATE",
+          "field": "normalizedClimateZones",
+          "normalizedValue": null,
+          "observations": [
+            {
+              "sourceId": "r99_mazda_cx6e_m02",
+              "locator": "PDF p2 GT feature list",
+              "value": 2
+            },
+            {
+              "sourceId": "r99_mazda_cx6e_m07",
+              "locator": "GT feature list",
+              "value": 3
+            }
+          ],
+          "action": "Preserve the August brochure dual-zone observation and earlier conflicting April tri-zone claim. No formal correction or supersession is established; normalized value remains unknown."
+        },
+        {
+          "id": "CX6E95-SCREEN",
+          "field": "normalizedCentralScreenInches",
+          "normalizedValue": null,
+          "observations": [
+            {
+              "sourceId": "r99_mazda_cx6e_m02",
+              "locator": "PDF p2 and p11 display row",
+              "value": 26.45
+            },
+            {
+              "sourceId": "r99_mazda_cx6e_m07",
+              "locator": "GT feature list",
+              "value": 45
+            }
+          ],
+          "action": "Preserve the August 26.45-inch brochure observation and earlier conflicting April 45-inch central-screen claim. No formal correction or supersession is established; normalized value remains unknown."
+        },
+        {
+          "id": "CX6E95-STATUS",
+          "field": "fulfilledLaunchAndOrderAcceptance",
+          "normalizedValue": null,
+          "observations": [
+            {
+              "sourceId": "r99_mazda_cx6e_m03",
+              "locator": "intro and preorder CTA",
+              "value": "almost-here/preorder advertising"
+            },
+            {
+              "sourceId": "r99_mazda_cx6e_m04",
+              "locator": "pageheading and form",
+              "value": "dealer enquiry"
+            },
+            {
+              "sourceId": "r99_mazda_cx6e_m06",
+              "locator": "carSSR status/condition",
+              "value": "one new in_stock advertisement"
+            }
+          ],
+          "action": "Separate manufacturer advertised preorder from actual acceptance and seller advertised unit. No completed delivery inference."
+        }
+      ],
+      "rawPdfBytesRetained": false,
+      "rawPdfSHA256": null,
+      "captureLimitations": "Manufacturer hashes identify retained web-extractor results, not raw PDF/HTML bytes. The specified official PDF rows were visually checked; no screenshot files or original PDF bytes were retained.",
+      "specificNewAdvertisements": [],
+      "priceObservations": [
+        {
+          "sourceId": "r99_mazda_cx6e_m05",
+          "grade": "E35 GT",
+          "amountAud": 56990,
+          "basis": "driveaway from; premium paint excluded; includes listed on-road/dealer/administration charges; personal circumstances can vary; offer amendable and non-combinable",
+          "currentObservationDate": "2026-10-12"
+        },
+        {
+          "sourceId": "r99_mazda_cx6e_m07",
+          "grade": "GT",
+          "amountAud": 53990,
+          "basis": "MLP historical announcement 8 April 2026, not current final customer quote"
+        }
+      ]
+    },
+    "researchStage": "partial",
+    "modelId": "mazda_cx6e_au_aug2026",
+    "modelFamily": "mazda-cx-6e",
+    "vehicleClass": "passenger",
+    "family": "mazda-cx6e-au-aug2026",
+    "slug": "e35-gt-20261012",
+    "brand": "Mazda",
+    "model": "CX-6e",
+    "trim": "E35 GT",
+    "generation": "Australian E35 grades · August 2026 brochure; manufacturer MY unverified",
+    "year": null,
+    "availability": "current_or_order_listed",
+    "availabilityEvidence": {
+      "checkedAt": "2026-10-12",
+      "orderStatus": "preorder",
+      "stockStatus": "unverified",
+      "sourceIds": [
+        "r99_mazda_cx6e_m03",
+        "r99_mazda_cx6e_m04"
+      ],
+      "physicalStockVerified": false,
+      "factoryOrderAcceptanceVerified": false,
+      "factoryProductionVerified": false,
+      "factoryBuildSpecificationVerified": false,
+      "deliveryToBuyerVerified": false,
+      "qualifications": [
+        "Manufacturer pre-order advertising leads to a dealer-enquiry form, not an accepted order, allocation or completed delivery.",
+        "No exact GT stock advertisement is admitted here; this does not establish that GT stock is unavailable nationally.",
+        "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified."
+      ]
+    },
+    "drive": "RWD",
+    "facts": {
+      "price_aud": {
+        "key": "price_aud",
+        "label": "Listed price",
+        "value": null,
+        "unit": "AUD",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering."
+        ],
+        "issues": []
+      },
+      "range_km": {
+        "key": "range_km",
+        "label": "Claimed range",
+        "value": 484,
+        "unit": "km",
+        "basis": "Manufacturer WLTP combined laboratory claim",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "WLTP combined laboratory figures; actual range and energy use vary with driving and conditions.",
+          "PDF p5 range row; exact E35 grade column"
+        ],
+        "issues": []
+      },
+      "seats": {
+        "key": "seats",
+        "label": "Seats",
+        "value": null,
+        "unit": "",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering."
+        ],
+        "issues": []
+      },
+      "dc_charge_time_min": {
+        "key": "dc_charge_time_min",
+        "label": "Approximate DC 10–80% time",
+        "value": 24,
+        "unit": "min",
+        "basis": "Approximate manufacturer DC 10–80% claim",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "Approximate charging time depends on charger capacity, battery temperature, ambient temperature and other factors; maximum charging rate is not the session average.",
+          "PDF p5 DC 10–80% row and charging footnote"
+        ],
+        "issues": []
+      },
+      "ac_kw": {
+        "key": "ac_kw",
+        "label": "On-board charger maximum capacity",
+        "value": 11,
+        "unit": "kW",
+        "basis": "Advertised on-board charger maximum capacity",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "PDF p5; not measured charging input or guaranteed delivered power at every AC outlet"
+        ],
+        "issues": []
+      },
+      "dc_peak_kw": {
+        "key": "dc_peak_kw",
+        "label": "Maximum DC charging rate",
+        "value": 194,
+        "unit": "kW",
+        "basis": "Advertised maximum DC charging rate",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "PDF p5; maximum capability is not a session average, charging curve or guaranteed observed rate"
+        ],
+        "issues": []
+      },
+      "battery_kwh": {
+        "key": "battery_kwh",
+        "label": "Advertised battery capacity",
+        "value": 78,
+        "unit": "kWh",
+        "basis": "Advertised capacity; gross/usable basis undefined",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "PDF p5 capacity row; neither gross nor usable capacity is defined"
+        ],
+        "issues": []
+      },
+      "boot_l": {
+        "key": "boot_l",
+        "label": "Cargo behind occupied seats",
+        "value": null,
+        "unit": "L",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02",
+          "r99_mazda_cx6e_m03"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "CX6E95-CARGO: brochure 363 L VDA to tray/seatback including underfloor conflicts with model-page 468 L of unspecified basis. Normalized value held."
+        ],
+        "issues": []
+      },
+      "frunk_l": {
+        "key": "frunk_l",
+        "label": "Advertised front storage",
+        "value": 83,
+        "unit": "L",
+        "basis": "Advertised frunk volume; measurement protocol unspecified",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "PDF p7; not labelled VDA and not silently added to boot volume"
+        ],
+        "issues": []
+      },
+      "max_total_cargo_l": {
+        "key": "max_total_cargo_l",
+        "label": "Folded cargo to ceiling",
+        "value": 1434,
+        "unit": "L",
+        "basis": "VDA; second row folded; to ceiling; includes underfloor",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "PDF p7 third cargo row; not comparable with seats-up or to-tray measurements"
+        ],
+        "issues": []
+      },
+      "zero_to_100_s": {
+        "key": "zero_to_100_s",
+        "label": "0–100 km/h",
+        "value": null,
+        "unit": "s",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering."
+        ],
+        "issues": []
+      },
+      "length_mm": {
+        "key": "length_mm",
+        "label": "Length",
+        "value": null,
+        "unit": "mm",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering."
+        ],
+        "issues": []
+      },
+      "width_mm": {
+        "key": "width_mm",
+        "label": "Width",
+        "value": null,
+        "unit": "mm",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering."
+        ],
+        "issues": []
+      },
+      "height_mm": {
+        "key": "height_mm",
+        "label": "Height",
+        "value": null,
+        "unit": "mm",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering."
+        ],
+        "issues": []
+      },
+      "wheelbase_mm": {
+        "key": "wheelbase_mm",
+        "label": "Wheelbase",
+        "value": null,
+        "unit": "mm",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering."
+        ],
+        "issues": []
+      },
+      "towing_braked_kg": {
+        "key": "towing_braked_kg",
+        "label": "Braked towing",
+        "value": 1500,
+        "unit": "kg",
+        "basis": "Manufacturer towing-capacity claim",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "Requires a Mazda Genuine Towing Kit and compliance with State/Territory regulations; this does not establish suitability or legality of a particular loaded combination.",
+          "PDF p7 braked towing row and footnote"
+        ],
+        "issues": []
+      },
+      "warranty": {
+        "key": "warranty",
+        "label": "Vehicle warranty",
+        "value": null,
+        "unit": "",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering."
+        ],
+        "issues": []
+      },
+      "battery_warranty": {
+        "key": "battery_warranty",
+        "label": "Battery warranty",
+        "value": null,
+        "unit": "",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering."
+        ],
+        "issues": []
+      },
+      "ground_clearance_mm": {
+        "key": "ground_clearance_mm",
+        "label": "Ground clearance",
+        "value": null,
+        "unit": "mm",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering."
+        ],
+        "issues": []
+      },
+      "turning_circle_m": {
+        "key": "turning_circle_m",
+        "label": "Turning circle",
+        "value": null,
+        "unit": "m",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering."
+        ],
+        "issues": []
+      },
+      "kerb_weight_kg": {
+        "key": "kerb_weight_kg",
+        "label": "Kerb weight",
+        "value": null,
+        "unit": "kg",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering."
+        ],
+        "issues": []
+      },
+      "towing_unbraked_kg": {
+        "key": "towing_unbraked_kg",
+        "label": "Unbraked towing",
+        "value": null,
+        "unit": "kg",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering."
+        ],
+        "issues": []
+      },
+      "energy_consumption_kwh_100km": {
+        "key": "energy_consumption_kwh_100km",
+        "label": "Claimed energy consumption",
+        "value": 18.9,
+        "unit": "kWh/100km",
+        "basis": "Manufacturer WLTP combined laboratory claim",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "WLTP combined laboratory figures; actual range and energy use vary with driving and conditions.",
+          "PDF p5 consumption row; exact E35 grade column"
+        ],
+        "issues": []
+      },
+      "maximum_power_kw": {
+        "key": "maximum_power_kw",
+        "label": "Advertised maximum power",
+        "value": 190,
+        "unit": "kW",
+        "basis": "Manufacturer advertised maximum, not measured sustained or wheel power",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "PDF p5 maximum power row"
+        ],
+        "issues": []
+      },
+      "maximum_torque_nm": {
+        "key": "maximum_torque_nm",
+        "label": "Advertised maximum torque",
+        "value": 290,
+        "unit": "Nm",
+        "basis": "Manufacturer maximum torque claim, not measured output",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "PDF p5 maximum torque row"
+        ],
+        "issues": []
+      },
+      "battery_gross_kwh": {
+        "key": "battery_gross_kwh",
+        "label": "Gross battery capacity",
+        "value": null,
+        "unit": "kWh",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "The advertised 78 kWh does not define gross capacity."
+        ],
+        "issues": []
+      },
+      "battery_usable_kwh": {
+        "key": "battery_usable_kwh",
+        "label": "Usable battery capacity",
+        "value": null,
+        "unit": "kWh",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "The advertised 78 kWh does not define usable capacity."
+        ],
+        "issues": []
+      },
+      "battery_chemistry": {
+        "key": "battery_chemistry",
+        "label": "Battery chemistry",
+        "value": "LFP",
+        "unit": "",
+        "basis": "Manufacturer battery-type declaration",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "PDF p5 battery type; no battery-life or safety-superiority inference"
+        ],
+        "issues": []
+      },
+      "dc_30_to_80_min": {
+        "key": "dc_30_to_80_min",
+        "label": "Approximate DC 30–80% time",
+        "value": 15,
+        "unit": "min",
+        "basis": "Approximate manufacturer DC 30–80% claim",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "Approximate charging time depends on charger capacity, battery temperature, ambient temperature and other factors; maximum charging rate is not the session average.",
+          "PDF p5 DC 30–80% row; distinct from 10–80%"
+        ],
+        "issues": []
+      },
+      "v2l_max_kw": {
+        "key": "v2l_max_kw",
+        "label": "V2L maximum output via adaptor",
+        "value": 3.5,
+        "unit": "kW",
+        "basis": "Manufacturer V2L via adaptor maximum",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "PDF p5; adaptor required; inclusion, purchase price and accessory availability unverified; no V2H/V2G inference"
+        ],
+        "issues": []
+      },
+      "source_brochure_boot_l": {
+        "key": "source_brochure_boot_l",
+        "label": "Brochure seats-up cargo observation",
+        "value": 363,
+        "unit": "L",
+        "basis": "VDA; seats up to rear package tray or seatback; includes underfloor",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "PDF p7; CX6E95-CARGO remains unresolved; not a normalized cargo comparison"
+        ],
+        "issues": []
+      },
+      "source_model_page_boot_l": {
+        "key": "source_model_page_boot_l",
+        "label": "Model-page boot observation",
+        "value": 468,
+        "unit": "L",
+        "basis": "Advertised boot volume; measurement protocol unspecified",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m03"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "CX6E95-CARGO; retained alongside brochure 363 L; do not add or average"
+        ],
+        "issues": []
+      },
+      "towball_max_kg": {
+        "key": "towball_max_kg",
+        "label": "Maximum towball load",
+        "value": 75,
+        "unit": "kg",
+        "basis": "Manufacturer maximum towball-load claim",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "Requires a Mazda Genuine Towing Kit and compliance with State/Territory regulations; this does not establish suitability or legality of a particular loaded combination.",
+          "PDF p7 towball row; no payload or towing-combination calculation"
+        ],
+        "issues": []
+      },
+      "wheel_diameter_in": {
+        "key": "wheel_diameter_in",
+        "label": "Wheel diameter",
+        "value": 19,
+        "unit": "inch",
+        "basis": "Brochure wheel specification",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "PDF p6; size alone does not establish better ride, handling or performance"
+        ],
+        "issues": []
+      },
+      "tyres": {
+        "key": "tyres",
+        "label": "Specified tyre size",
+        "value": "235/55 R19",
+        "unit": "",
+        "basis": "Brochure tyre-size specification",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "PDF p6; tyre brand, load index, speed rating and current fitted tyres unverified"
+        ],
+        "issues": []
+      },
+      "equipment_exterior_mirrors": {
+        "key": "equipment_exterior_mirrors",
+        "label": "Exterior mirrors",
+        "value": "Standard exterior mirrors",
+        "unit": "",
+        "basis": "Brochure exterior-mirror equipment row",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "PDF p8 standard/digital rows and legend; no visibility or suitability superiority claim"
+        ],
+        "issues": []
+      },
+      "equipment_interior_mirror": {
+        "key": "equipment_interior_mirror",
+        "label": "Interior mirror",
+        "value": "Standard interior mirror",
+        "unit": "",
+        "basis": "Brochure interior-mirror equipment row",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "PDF p10 standard/digital rows and legend; standard does not mean no auto-dimming"
+        ],
+        "issues": []
+      },
+      "equipment_front_seat_heating": {
+        "key": "equipment_front_seat_heating",
+        "label": "Front-seat heating",
+        "value": true,
+        "unit": "",
+        "basis": "Listed standard front-seat equipment",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "PDF p9 front-seat group and Heating row; no rear-seat claim"
+        ],
+        "issues": []
+      },
+      "equipment_front_seat_ventilation": {
+        "key": "equipment_front_seat_ventilation",
+        "label": "Front-seat ventilation",
+        "value": true,
+        "unit": "",
+        "basis": "Listed standard front-seat equipment",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "PDF p9 front-seat group and Ventilation row; no rear-seat or comfort-superiority claim"
+        ],
+        "issues": []
+      },
+      "equipment_roof_sunshade": {
+        "key": "equipment_roof_sunshade",
+        "label": "Panoramic sunroof with electric sunshade",
+        "value": true,
+        "unit": "",
+        "basis": "Listed standard roof equipment",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "PDF p8; glass opening and measured thermal performance are not established"
+        ],
+        "issues": []
+      },
+      "equipment_phone_integration": {
+        "key": "equipment_phone_integration",
+        "label": "Phone integration",
+        "value": "Apple CarPlay and Android Auto: wireless and USB",
+        "unit": "",
+        "basis": "Listed standard phone integration; device support qualified",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "Apple CarPlay and Android Auto are listed with wireless and USB support. Not every device or feature is supported; check your specific device with the dealer.",
+          "PDF p11 rows and device-compatibility footnote"
+        ],
+        "issues": []
+      },
+      "equipment_speaker_count": {
+        "key": "equipment_speaker_count",
+        "label": "Listed speaker count",
+        "value": 23,
+        "unit": "speakers",
+        "basis": "Brochure premium-audio speaker count",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "PDF p11; no audio brand or sound-quality judgment"
+        ],
+        "issues": []
+      },
+      "climate_zones": {
+        "key": "climate_zones",
+        "label": "Climate-zone count",
+        "value": null,
+        "unit": "",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02",
+          "r99_mazda_cx6e_m07"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "CX6E95-CLIMATE: August brochure dual-zone versus earlier conflicting April tri-zone claim. Formal correction or supersession is not established."
+        ],
+        "issues": []
+      },
+      "central_screen_inches": {
+        "key": "central_screen_inches",
+        "label": "Central-screen size",
+        "value": null,
+        "unit": "inch",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02",
+          "r99_mazda_cx6e_m07"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "CX6E95-SCREEN: August brochure 26.45-inch versus earlier conflicting April 45-inch central-screen claim. No formal correction or supersession established; separate 50-inch active driving display is not the central screen."
+        ],
+        "issues": []
+      },
+      "source_brochure_climate_zones": {
+        "key": "source_brochure_climate_zones",
+        "label": "Brochure climate observation",
+        "value": 2,
+        "unit": "",
+        "basis": "Source-attributed dual-zone wording; normalized count held",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "PDF p2 GT feature list and p3 Azami additional-to-GT heading; CX6E95-CLIMATE remains unresolved"
+        ],
+        "issues": []
+      },
+      "source_april_climate_zones": {
+        "key": "source_april_climate_zones",
+        "label": "Earlier April GT climate claim",
+        "value": 3,
+        "unit": "",
+        "basis": "8 April 2026 source-attributed tri-zone GT wording; earlier conflicting claim",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m07"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "The article identifies GT; this is not a verified delivered-vehicle climate count for either grade. No formal correction or supersession established; normalized count held"
+        ],
+        "issues": []
+      },
+      "source_brochure_screen_inches": {
+        "key": "source_brochure_screen_inches",
+        "label": "Brochure central-screen observation",
+        "value": 26.45,
+        "unit": "inch",
+        "basis": "Source-attributed central display size; normalized size held",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "PDF p2/p11; CX6E95-SCREEN remains unresolved"
+        ],
+        "issues": []
+      },
+      "source_april_screen_inches": {
+        "key": "source_april_screen_inches",
+        "label": "Earlier April GT central-screen claim",
+        "value": 45,
+        "unit": "inch",
+        "basis": "8 April 2026 source-attributed GT central-screen wording; earlier conflicting claim",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m07"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "The article identifies GT; this is not a verified delivered-vehicle screen size for either grade. No formal correction or supersession established; not silently repaired or treated as the separate head-up/active driving display"
+        ],
+        "issues": []
+      },
+      "source_historical_mlp_aud": {
+        "key": "source_historical_mlp_aud",
+        "label": "Historical April manufacturer-list price",
+        "value": 53990,
+        "unit": "AUD",
+        "basis": "8 April 2026 historical MLP; not a current driveaway quote",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m07"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "Current exact final customer price remains unverified"
+        ],
+        "issues": []
+      },
+      "source_driveaway_from_aud": {
+        "key": "source_driveaway_from_aud",
+        "label": "Advertised GT driveaway-from observation",
+        "value": 56990,
+        "unit": "AUD",
+        "basis": "driveaway from; premium paint excluded; includes listed on-road/dealer/administration charges; personal circumstances can vary; offer amendable and non-combinable",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m05"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "Observed 12 October 2026; not a personalized quote or guarantee of ongoing availability"
+        ],
+        "issues": []
+      },
+      "manufacturer_model_year": {
+        "key": "manufacturer_model_year",
+        "label": "Manufacturer model year",
+        "value": null,
+        "unit": "",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering."
+        ],
+        "issues": []
+      },
+      "factory_production": {
+        "key": "factory_production",
+        "label": "Factory production",
+        "value": null,
+        "unit": "",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering."
+        ],
+        "issues": []
+      },
+      "factory_order_acceptance": {
+        "key": "factory_order_acceptance",
+        "label": "Accepted factory order",
+        "value": null,
+        "unit": "",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering."
+        ],
+        "issues": []
+      },
+      "actual_delivery_date": {
+        "key": "actual_delivery_date",
+        "label": "Actual delivery date",
+        "value": null,
+        "unit": "",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering."
+        ],
+        "issues": []
+      },
+      "physical_stock": {
+        "key": "physical_stock",
+        "label": "Verified physical stock",
+        "value": null,
+        "unit": "",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering."
+        ],
+        "issues": []
+      },
+      "independent_comfort": {
+        "key": "independent_comfort",
+        "label": "Independent comfort assessment",
+        "value": null,
+        "unit": "",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 GT; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering."
+        ],
+        "issues": []
+      }
+    },
+    "issues": [],
+    "buyerSummary": {
+      "checkedAt": "2026-10-12",
+      "guardSourceIds": [
+        "r99_mazda_cx6e_m02",
+        "r99_mazda_cx6e_m03",
+        "r99_mazda_cx6e_m04",
+        "r99_mazda_cx6e_m05",
+        "r99_mazda_cx6e_m06",
+        "r99_mazda_cx6e_m07"
+      ],
+      "conditions": [
+        "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+        "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+        "WLTP combined laboratory figures; actual range and energy use vary with driving and conditions.",
+        "Both grades list heated and ventilated front seats and a panoramic sunroof with an electric sunshade. Apple CarPlay and Android Auto are listed with wireless and USB support. Not every device or feature is supported; check your specific device with the dealer.",
+        "Manufacturer pre-order advertising links to dealer enquiry. Accepted orders, production, unsold physical stock, delivery timing and brochure-to-VIN applicability remain unverified.",
+        "Cargo, climate-zone and central-screen claims conflict across sources; normalized values and all market rankings remain held."
+      ],
+      "expectedVisibleConditions": [
+        "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+        "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+        "WLTP combined laboratory figures; actual range and energy use vary with driving and conditions.",
+        "Both grades list heated and ventilated front seats and a panoramic sunroof with an electric sunshade. Apple CarPlay and Android Auto are listed with wireless and USB support. Not every device or feature is supported; check your specific device with the dealer.",
+        "Manufacturer pre-order advertising links to dealer enquiry. Accepted orders, production, unsold physical stock, delivery timing and brochure-to-VIN applicability remain unverified.",
+        "Cargo, climate-zone and central-screen claims conflict across sources; normalized values and all market rankings remain held."
+      ],
+      "expectedSourceSnapshots": [
+        {
+          "id": "r99_mazda_cx6e_m02",
+          "url": "https://www.mazda.com.au/4a4bb0/globalassets/brochures/cx-6e-digital-brochure.pdf",
+          "title": "Mazda CX-6e Australian brochure · August 2026 · AU41-P00008813",
+          "publisher": "Mazda Australia",
+          "source_type": "manufacturer_brochure",
+          "published_date": null,
+          "accessed_date": "2026-10-12",
+          "market": "AU",
+          "supports": "Australian E35 GT and E35 Azami source-bound technical and equipment claims; publication month is not manufacturer MY or VIN applicability.",
+          "publicationMonth": "2026-08",
+          "captureSHA256": "0802eecf17001a93bc03a27ff6ea8d3b812541f249dff287466ad4091b119e68",
+          "captureBytes": 21314,
+          "hashBasis": "saved web-extractor result bytes, not raw publisher HTML/PDF",
+          "rawPublisherBytesSHA256": null,
+          "observationDate": "2026-10-12",
+          "captureLimitations": "Retained source capture; observation date is not publisher refresh date. No new network retrieval during integration preparation.",
+          "documentCode": "AU41-P00008813",
+          "rawPdfBytesRetained": false,
+          "visualCheck": {
+            "observedAt": "2026-10-12T05:56:48Z",
+            "pages": [
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              14,
+              2,
+              3
+            ],
+            "scope": "Only rows listed in the retained root observation were inspected; no p4 colours or p12–13 safety admission.",
+            "screenshotsRetained": false
+          }
+        },
+        {
+          "id": "r99_mazda_cx6e_m03",
+          "url": "https://www.mazda.com.au/cars/cx-6e/",
+          "title": "Mazda CX-6e · Australian model page",
+          "publisher": "Mazda Australia",
+          "source_type": "manufacturer_page",
+          "published_date": null,
+          "accessed_date": "2026-10-12",
+          "market": "AU",
+          "supports": "Preorder/almost-here wording remains beside product marketing; seats-up cargo description conflicts with m02 measurement.",
+          "publicationMonth": null,
+          "captureSHA256": "d18b0a496d6615beb8b87cf94d5e6bddd3694477eb20655bc7ef711d790a4d05",
+          "captureBytes": 24404,
+          "hashBasis": "saved web-extractor result bytes, not raw publisher HTML/PDF",
+          "rawPublisherBytesSHA256": null,
+          "observationDate": "2026-10-12",
+          "captureLimitations": "Retained source capture; observation date is not publisher refresh date. No new network retrieval during integration preparation."
+        },
+        {
+          "id": "r99_mazda_cx6e_m04",
+          "url": "https://www.mazda.com.au/build/cx-6e/pre-order/?model=mazda-cx-6e",
+          "title": "Mazda CX-6e · Australian pre-order dealer enquiry",
+          "publisher": "Mazda Australia",
+          "source_type": "manufacturer_page",
+          "published_date": null,
+          "accessed_date": "2026-10-12",
+          "market": "AU",
+          "supports": "Rendered destination solicits a dealer callback; no accepted contract, deposit or fulfilled order established.",
+          "publicationMonth": null,
+          "captureSHA256": "c25c3b853128a7544afd64ef91b40f268468a7d2bd4f37742131e8f8e24e974b",
+          "captureBytes": 4064,
+          "hashBasis": "saved web-extractor result bytes, not raw publisher HTML/PDF",
+          "rawPublisherBytesSHA256": null,
+          "observationDate": "2026-10-12",
+          "captureLimitations": "Retained source capture; observation date is not publisher refresh date. No new network retrieval during integration preparation."
+        },
+        {
+          "id": "r99_mazda_cx6e_m05",
+          "url": "https://www.mazda.com.au/offers/driveaway/electric/",
+          "title": "Mazda electric driveaway offers · E35 GT observation",
+          "publisher": "Mazda Australia",
+          "source_type": "manufacturer_page",
+          "published_date": null,
+          "accessed_date": "2026-10-12",
+          "market": "AU",
+          "supports": "E35 GT driveaway-from AUD 56990, premium paint excluded; charges included; personal circumstances can change price; offer amendable and not combinable.",
+          "publicationMonth": null,
+          "captureSHA256": "a3bf98185d740202c8ad703a24098109c353c8baccbfadd6a738b3122acdcbc0",
+          "captureBytes": 5415,
+          "hashBasis": "saved web-extractor result bytes, not raw publisher HTML/PDF",
+          "rawPublisherBytesSHA256": null,
+          "observationDate": "2026-10-12",
+          "captureLimitations": "Retained source capture; observation date is not publisher refresh date. No new network retrieval during integration preparation."
+        },
+        {
+          "id": "r99_mazda_cx6e_m06",
+          "url": "https://www.melvillemazda.com.au/cars/new-aero-grey-2026-mazda-cx-6e-11397703",
+          "title": "Melville Mazda · advertised New CX-6e E35 Azami · stock 11397703",
+          "publisher": "Melville Mazda, Palmyra WA",
+          "source_type": "dealer_listing",
+          "published_date": null,
+          "accessed_date": "2026-10-12",
+          "market": "AU",
+          "supports": "Stock 11397703, VIN LVRHDCEK6TN551337; New/in_stock, not reserved/preorder in public data; no sold date. These are seller claims.",
+          "publicationMonth": null,
+          "captureSHA256": "a2a53b60677c5623fee0d409d0b8673fa839f1459b78e2511ce95f8ff5ed363f",
+          "captureBytes": 168540,
+          "hashBasis": "raw HTTP response bytes",
+          "rawPublisherBytesSHA256": "a2a53b60677c5623fee0d409d0b8673fa839f1459b78e2511ce95f8ff5ed363f",
+          "observationDate": "2026-10-12",
+          "captureLimitations": "Retained source capture; observation date is not publisher refresh date. No new network retrieval during integration preparation.",
+          "sellerRecordCreatedAt": "2026-10-06T03:11:29.378Z",
+          "sellerRecordUpdatedAt": "2026-10-06T22:34:05.842Z",
+          "retrievedAt": "2026-10-12T01:19:03.609010+00:00"
+        },
+        {
+          "id": "r99_mazda_cx6e_m07",
+          "url": "https://www.mazda.com.au/mazda-news/mazda-cx-6e-australia-specs-pricing-electric-suv/",
+          "title": "Mazda CX-6e Australian specifications and pricing · 8 April 2026",
+          "publisher": "Mazda Australia",
+          "source_type": "manufacturer_page",
+          "published_date": "2026-04-08",
+          "accessed_date": "2026-10-12",
+          "market": "AU",
+          "supports": "Historical April pricing and earlier conflicting climate/screen claims; September delivery forecast is not completed-delivery evidence. Formal correction or supersession is not established.",
+          "publicationMonth": null,
+          "captureSHA256": "7959c1554a2999c4d97ce9b1e8e8f0a146bc6109d58898988f157dd1bda9d59d",
+          "captureBytes": 10278,
+          "hashBasis": "saved web-extractor result bytes, not raw publisher HTML/PDF",
+          "rawPublisherBytesSHA256": null,
+          "observationDate": "2026-10-12",
+          "captureLimitations": "Retained source capture; observation date is not publisher refresh date. No new network retrieval during integration preparation."
+        }
+      ],
+      "strength": {
+        "label": "More brochure range within the CX-6e pair",
+        "text": "The August 2026 Australian brochure gives GT a 484 km WLTP combined range, compared with Azami’s 468 km, and lists 19-inch wheels with standard exterior and interior mirrors.",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ]
+      }
+    }
+  },
+  {
+    "id": "mazda_cx6e_au_aug2026__e35_azami__20261012",
+    "configurationEvidence": {
+      "sourceIds": [
+        "r99_mazda_cx6e_m02",
+        "r99_mazda_cx6e_m03",
+        "r99_mazda_cx6e_m04",
+        "r99_mazda_cx6e_m05",
+        "r99_mazda_cx6e_m06",
+        "r99_mazda_cx6e_m07"
+      ],
+      "requiredBuyerVisibleConditions": [
+        "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+        "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+        "WLTP combined laboratory figures; actual range and energy use vary with driving and conditions.",
+        "Both grades list heated and ventilated front seats and a panoramic sunroof with an electric sunshade. Apple CarPlay and Android Auto are listed with wireless and USB support. Not every device or feature is supported; check your specific device with the dealer.",
+        "Manufacturer pre-order advertising links to dealer enquiry. Accepted orders, production, unsold physical stock, delivery timing and brochure-to-VIN applicability remain unverified.",
+        "Cargo, climate-zone and central-screen claims conflict across sources; normalized values and all market rankings remain held."
+      ],
+      "rankingEligible": false,
+      "completeVehicleCountEligible": false,
+      "projectionScope": "E35 Azami specifications from the August 2026 Australian brochure. Manufacturer MY and exact delivered specification are unverified; stock and accepted orders need confirmation.",
+      "sourceIdentity": {
+        "brand": "Mazda",
+        "model": "CX-6e",
+        "grade": "E35 Azami",
+        "market": "AU",
+        "manufacturerModelYear": null,
+        "technicalEpoch": "August 2026 Australian brochure AU41-P00008813"
+      },
+      "fullyClosedFactoryBuild": false,
+      "brochureToVinApplicabilityVerified": false,
+      "heldConflicts": [
+        {
+          "id": "CX6E95-CARGO",
+          "field": "normalizedSeatsUpBootLitres",
+          "normalizedValue": null,
+          "observations": [
+            {
+              "sourceId": "r99_mazda_cx6e_m02",
+              "locator": "PDF p7 cargo row1",
+              "value": 363,
+              "unit": "L",
+              "basis": "VDA; seats up; to tray/seatback; underfloor included"
+            },
+            {
+              "sourceId": "r99_mazda_cx6e_m03",
+              "locator": "Design / Versatile Boot Space",
+              "value": 468,
+              "unit": "L",
+              "basis": "unspecified"
+            }
+          ],
+          "action": "Keep both attributed; hold cross-model numeric comparison until protocol/variant discrepancy is resolved."
+        },
+        {
+          "id": "CX6E95-CLIMATE",
+          "field": "normalizedClimateZones",
+          "normalizedValue": null,
+          "observations": [
+            {
+              "sourceId": "r99_mazda_cx6e_m02",
+              "locator": "PDF p2 GT feature list",
+              "value": 2
+            },
+            {
+              "sourceId": "r99_mazda_cx6e_m07",
+              "locator": "GT feature list",
+              "value": 3
+            }
+          ],
+          "action": "Preserve the August brochure dual-zone observation and earlier conflicting April tri-zone claim. No formal correction or supersession is established; normalized value remains unknown."
+        },
+        {
+          "id": "CX6E95-SCREEN",
+          "field": "normalizedCentralScreenInches",
+          "normalizedValue": null,
+          "observations": [
+            {
+              "sourceId": "r99_mazda_cx6e_m02",
+              "locator": "PDF p2 and p11 display row",
+              "value": 26.45
+            },
+            {
+              "sourceId": "r99_mazda_cx6e_m07",
+              "locator": "GT feature list",
+              "value": 45
+            }
+          ],
+          "action": "Preserve the August 26.45-inch brochure observation and earlier conflicting April 45-inch central-screen claim. No formal correction or supersession is established; normalized value remains unknown."
+        },
+        {
+          "id": "CX6E95-STATUS",
+          "field": "fulfilledLaunchAndOrderAcceptance",
+          "normalizedValue": null,
+          "observations": [
+            {
+              "sourceId": "r99_mazda_cx6e_m03",
+              "locator": "intro and preorder CTA",
+              "value": "almost-here/preorder advertising"
+            },
+            {
+              "sourceId": "r99_mazda_cx6e_m04",
+              "locator": "pageheading and form",
+              "value": "dealer enquiry"
+            },
+            {
+              "sourceId": "r99_mazda_cx6e_m06",
+              "locator": "carSSR status/condition",
+              "value": "one new in_stock advertisement"
+            }
+          ],
+          "action": "Separate manufacturer advertised preorder from actual acceptance and seller advertised unit. No completed delivery inference."
+        }
+      ],
+      "rawPdfBytesRetained": false,
+      "rawPdfSHA256": null,
+      "captureLimitations": "Manufacturer hashes identify retained web-extractor results, not raw PDF/HTML bytes. The specified official PDF rows were visually checked; no screenshot files or original PDF bytes were retained.",
+      "specificNewAdvertisements": [
+        {
+          "sourceId": "r99_mazda_cx6e_m06",
+          "seller": "Melville Mazda, Palmyra WA",
+          "stockNumber": "11397703",
+          "vin": "LVRHDCEK6TN551337",
+          "conditionLabel": "New",
+          "advertisedStockState": "in_stock",
+          "reservedAdvertised": false,
+          "preorderAdvertised": false,
+          "soldDateInPublicData": null,
+          "odometerKm": 4,
+          "sellerBuildDate": "2026-08-24",
+          "sellerComplianceDate": "2026-09-01",
+          "sellerYear": 2026,
+          "sellerModelYear": 2026,
+          "manufacturerModelYear": null,
+          "exterior": "Aero Grey",
+          "interior": "Warm Beige Maztex",
+          "advertisedPriceAud": null,
+          "priceBasis": "Visible Enquire for price; public zero is placeholder, not a price.",
+          "physicalStockVerified": false,
+          "independentUnsoldVerified": false,
+          "buildMatchesBrochureVerified": false,
+          "qualification": "Exact advertised identity only. Website absence of sold date and false reserved flag are not a current dealer attestation; do not infer physical unit, order allocation or delivered specification.",
+          "fullListingDesignation": "E35 Azami GR",
+          "sellerBadge": "E35 Azami",
+          "sellerSeries": "GR",
+          "sellerPublishedModelCode": "C6EAAW5E35AWB",
+          "sellerRecordUpdatedAt": "2026-10-06T22:34:05.842Z",
+          "observedAt": "2026-10-12T01:19:03.609010+00:00"
+        }
+      ],
+      "priceObservations": [
+        {
+          "sourceId": "r99_mazda_cx6e_m07",
+          "grade": "Azami",
+          "amountAud": 56990,
+          "basis": "MLP historical announcement 8 April 2026, not current driveaway quote"
+        }
+      ]
+    },
+    "researchStage": "partial",
+    "modelId": "mazda_cx6e_au_aug2026",
+    "modelFamily": "mazda-cx-6e",
+    "vehicleClass": "passenger",
+    "family": "mazda-cx6e-au-aug2026",
+    "slug": "e35-azami-20261012",
+    "brand": "Mazda",
+    "model": "CX-6e",
+    "trim": "E35 Azami",
+    "generation": "Australian E35 grades · August 2026 brochure; manufacturer MY unverified",
+    "year": null,
+    "availability": "current_or_order_listed",
+    "availabilityEvidence": {
+      "checkedAt": "2026-10-12",
+      "orderStatus": "preorder",
+      "stockStatus": "new_stock_listed",
+      "sourceIds": [
+        "r99_mazda_cx6e_m03",
+        "r99_mazda_cx6e_m04",
+        "r99_mazda_cx6e_m06"
+      ],
+      "physicalStockVerified": false,
+      "factoryOrderAcceptanceVerified": false,
+      "factoryProductionVerified": false,
+      "factoryBuildSpecificationVerified": false,
+      "deliveryToBuyerVerified": false,
+      "qualifications": [
+        "Manufacturer pre-order advertising leads to a dealer-enquiry form, not an accepted order, allocation or completed delivery.",
+        "One Melville Mazda advertisement was observed on 12 October 2026: seller badge E35 Azami, seller series GR, New/in_stock. Last updated 6 October; present unsold physical stock and brochure-to-VIN applicability remain unverified.",
+        "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified."
+      ]
+    },
+    "drive": "RWD",
+    "facts": {
+      "price_aud": {
+        "key": "price_aud",
+        "label": "Listed price",
+        "value": null,
+        "unit": "AUD",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering."
+        ],
+        "issues": []
+      },
+      "range_km": {
+        "key": "range_km",
+        "label": "Claimed range",
+        "value": 468,
+        "unit": "km",
+        "basis": "Manufacturer WLTP combined laboratory claim",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "WLTP combined laboratory figures; actual range and energy use vary with driving and conditions.",
+          "PDF p5 range row; exact E35 grade column"
+        ],
+        "issues": []
+      },
+      "seats": {
+        "key": "seats",
+        "label": "Seats",
+        "value": null,
+        "unit": "",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering."
+        ],
+        "issues": []
+      },
+      "dc_charge_time_min": {
+        "key": "dc_charge_time_min",
+        "label": "Approximate DC 10–80% time",
+        "value": 24,
+        "unit": "min",
+        "basis": "Approximate manufacturer DC 10–80% claim",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "Approximate charging time depends on charger capacity, battery temperature, ambient temperature and other factors; maximum charging rate is not the session average.",
+          "PDF p5 DC 10–80% row and charging footnote"
+        ],
+        "issues": []
+      },
+      "ac_kw": {
+        "key": "ac_kw",
+        "label": "On-board charger maximum capacity",
+        "value": 11,
+        "unit": "kW",
+        "basis": "Advertised on-board charger maximum capacity",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "PDF p5; not measured charging input or guaranteed delivered power at every AC outlet"
+        ],
+        "issues": []
+      },
+      "dc_peak_kw": {
+        "key": "dc_peak_kw",
+        "label": "Maximum DC charging rate",
+        "value": 194,
+        "unit": "kW",
+        "basis": "Advertised maximum DC charging rate",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "PDF p5; maximum capability is not a session average, charging curve or guaranteed observed rate"
+        ],
+        "issues": []
+      },
+      "battery_kwh": {
+        "key": "battery_kwh",
+        "label": "Advertised battery capacity",
+        "value": 78,
+        "unit": "kWh",
+        "basis": "Advertised capacity; gross/usable basis undefined",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "PDF p5 capacity row; neither gross nor usable capacity is defined"
+        ],
+        "issues": []
+      },
+      "boot_l": {
+        "key": "boot_l",
+        "label": "Cargo behind occupied seats",
+        "value": null,
+        "unit": "L",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02",
+          "r99_mazda_cx6e_m03"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "CX6E95-CARGO: brochure 363 L VDA to tray/seatback including underfloor conflicts with model-page 468 L of unspecified basis. Normalized value held."
+        ],
+        "issues": []
+      },
+      "frunk_l": {
+        "key": "frunk_l",
+        "label": "Advertised front storage",
+        "value": 83,
+        "unit": "L",
+        "basis": "Advertised frunk volume; measurement protocol unspecified",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "PDF p7; not labelled VDA and not silently added to boot volume"
+        ],
+        "issues": []
+      },
+      "max_total_cargo_l": {
+        "key": "max_total_cargo_l",
+        "label": "Folded cargo to ceiling",
+        "value": 1434,
+        "unit": "L",
+        "basis": "VDA; second row folded; to ceiling; includes underfloor",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "PDF p7 third cargo row; not comparable with seats-up or to-tray measurements"
+        ],
+        "issues": []
+      },
+      "zero_to_100_s": {
+        "key": "zero_to_100_s",
+        "label": "0–100 km/h",
+        "value": null,
+        "unit": "s",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering."
+        ],
+        "issues": []
+      },
+      "length_mm": {
+        "key": "length_mm",
+        "label": "Length",
+        "value": null,
+        "unit": "mm",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering."
+        ],
+        "issues": []
+      },
+      "width_mm": {
+        "key": "width_mm",
+        "label": "Width",
+        "value": null,
+        "unit": "mm",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering."
+        ],
+        "issues": []
+      },
+      "height_mm": {
+        "key": "height_mm",
+        "label": "Height",
+        "value": null,
+        "unit": "mm",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering."
+        ],
+        "issues": []
+      },
+      "wheelbase_mm": {
+        "key": "wheelbase_mm",
+        "label": "Wheelbase",
+        "value": null,
+        "unit": "mm",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering."
+        ],
+        "issues": []
+      },
+      "towing_braked_kg": {
+        "key": "towing_braked_kg",
+        "label": "Braked towing",
+        "value": 1500,
+        "unit": "kg",
+        "basis": "Manufacturer towing-capacity claim",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "Requires a Mazda Genuine Towing Kit and compliance with State/Territory regulations; this does not establish suitability or legality of a particular loaded combination.",
+          "PDF p7 braked towing row and footnote"
+        ],
+        "issues": []
+      },
+      "warranty": {
+        "key": "warranty",
+        "label": "Vehicle warranty",
+        "value": null,
+        "unit": "",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering."
+        ],
+        "issues": []
+      },
+      "battery_warranty": {
+        "key": "battery_warranty",
+        "label": "Battery warranty",
+        "value": null,
+        "unit": "",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering."
+        ],
+        "issues": []
+      },
+      "ground_clearance_mm": {
+        "key": "ground_clearance_mm",
+        "label": "Ground clearance",
+        "value": null,
+        "unit": "mm",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering."
+        ],
+        "issues": []
+      },
+      "turning_circle_m": {
+        "key": "turning_circle_m",
+        "label": "Turning circle",
+        "value": null,
+        "unit": "m",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering."
+        ],
+        "issues": []
+      },
+      "kerb_weight_kg": {
+        "key": "kerb_weight_kg",
+        "label": "Kerb weight",
+        "value": null,
+        "unit": "kg",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering."
+        ],
+        "issues": []
+      },
+      "towing_unbraked_kg": {
+        "key": "towing_unbraked_kg",
+        "label": "Unbraked towing",
+        "value": null,
+        "unit": "kg",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering."
+        ],
+        "issues": []
+      },
+      "energy_consumption_kwh_100km": {
+        "key": "energy_consumption_kwh_100km",
+        "label": "Claimed energy consumption",
+        "value": 19.4,
+        "unit": "kWh/100km",
+        "basis": "Manufacturer WLTP combined laboratory claim",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "WLTP combined laboratory figures; actual range and energy use vary with driving and conditions.",
+          "PDF p5 consumption row; exact E35 grade column"
+        ],
+        "issues": []
+      },
+      "maximum_power_kw": {
+        "key": "maximum_power_kw",
+        "label": "Advertised maximum power",
+        "value": 190,
+        "unit": "kW",
+        "basis": "Manufacturer advertised maximum, not measured sustained or wheel power",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "PDF p5 maximum power row"
+        ],
+        "issues": []
+      },
+      "maximum_torque_nm": {
+        "key": "maximum_torque_nm",
+        "label": "Advertised maximum torque",
+        "value": 290,
+        "unit": "Nm",
+        "basis": "Manufacturer maximum torque claim, not measured output",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "PDF p5 maximum torque row"
+        ],
+        "issues": []
+      },
+      "battery_gross_kwh": {
+        "key": "battery_gross_kwh",
+        "label": "Gross battery capacity",
+        "value": null,
+        "unit": "kWh",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "The advertised 78 kWh does not define gross capacity."
+        ],
+        "issues": []
+      },
+      "battery_usable_kwh": {
+        "key": "battery_usable_kwh",
+        "label": "Usable battery capacity",
+        "value": null,
+        "unit": "kWh",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "The advertised 78 kWh does not define usable capacity."
+        ],
+        "issues": []
+      },
+      "battery_chemistry": {
+        "key": "battery_chemistry",
+        "label": "Battery chemistry",
+        "value": "LFP",
+        "unit": "",
+        "basis": "Manufacturer battery-type declaration",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "PDF p5 battery type; no battery-life or safety-superiority inference"
+        ],
+        "issues": []
+      },
+      "dc_30_to_80_min": {
+        "key": "dc_30_to_80_min",
+        "label": "Approximate DC 30–80% time",
+        "value": 15,
+        "unit": "min",
+        "basis": "Approximate manufacturer DC 30–80% claim",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "Approximate charging time depends on charger capacity, battery temperature, ambient temperature and other factors; maximum charging rate is not the session average.",
+          "PDF p5 DC 30–80% row; distinct from 10–80%"
+        ],
+        "issues": []
+      },
+      "v2l_max_kw": {
+        "key": "v2l_max_kw",
+        "label": "V2L maximum output via adaptor",
+        "value": 3.5,
+        "unit": "kW",
+        "basis": "Manufacturer V2L via adaptor maximum",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "PDF p5; adaptor required; inclusion, purchase price and accessory availability unverified; no V2H/V2G inference"
+        ],
+        "issues": []
+      },
+      "source_brochure_boot_l": {
+        "key": "source_brochure_boot_l",
+        "label": "Brochure seats-up cargo observation",
+        "value": 363,
+        "unit": "L",
+        "basis": "VDA; seats up to rear package tray or seatback; includes underfloor",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "PDF p7; CX6E95-CARGO remains unresolved; not a normalized cargo comparison"
+        ],
+        "issues": []
+      },
+      "source_model_page_boot_l": {
+        "key": "source_model_page_boot_l",
+        "label": "Model-page boot observation",
+        "value": 468,
+        "unit": "L",
+        "basis": "Advertised boot volume; measurement protocol unspecified",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m03"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "CX6E95-CARGO; retained alongside brochure 363 L; do not add or average"
+        ],
+        "issues": []
+      },
+      "towball_max_kg": {
+        "key": "towball_max_kg",
+        "label": "Maximum towball load",
+        "value": 75,
+        "unit": "kg",
+        "basis": "Manufacturer maximum towball-load claim",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "Requires a Mazda Genuine Towing Kit and compliance with State/Territory regulations; this does not establish suitability or legality of a particular loaded combination.",
+          "PDF p7 towball row; no payload or towing-combination calculation"
+        ],
+        "issues": []
+      },
+      "wheel_diameter_in": {
+        "key": "wheel_diameter_in",
+        "label": "Wheel diameter",
+        "value": 21,
+        "unit": "inch",
+        "basis": "Brochure wheel specification",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "PDF p6; size alone does not establish better ride, handling or performance"
+        ],
+        "issues": []
+      },
+      "tyres": {
+        "key": "tyres",
+        "label": "Specified tyre size",
+        "value": "255/40 R21",
+        "unit": "",
+        "basis": "Brochure tyre-size specification",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "PDF p6; tyre brand, load index, speed rating and current fitted tyres unverified"
+        ],
+        "issues": []
+      },
+      "equipment_exterior_mirrors": {
+        "key": "equipment_exterior_mirrors",
+        "label": "Exterior mirrors",
+        "value": "Digital exterior mirrors",
+        "unit": "",
+        "basis": "Brochure exterior-mirror equipment row",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "PDF p8 standard/digital rows and legend; no visibility or suitability superiority claim"
+        ],
+        "issues": []
+      },
+      "equipment_interior_mirror": {
+        "key": "equipment_interior_mirror",
+        "label": "Interior mirror",
+        "value": "Digital interior mirror",
+        "unit": "",
+        "basis": "Brochure interior-mirror equipment row",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "PDF p10 standard/digital rows and legend; standard does not mean no auto-dimming"
+        ],
+        "issues": []
+      },
+      "equipment_front_seat_heating": {
+        "key": "equipment_front_seat_heating",
+        "label": "Front-seat heating",
+        "value": true,
+        "unit": "",
+        "basis": "Listed standard front-seat equipment",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "PDF p9 front-seat group and Heating row; no rear-seat claim"
+        ],
+        "issues": []
+      },
+      "equipment_front_seat_ventilation": {
+        "key": "equipment_front_seat_ventilation",
+        "label": "Front-seat ventilation",
+        "value": true,
+        "unit": "",
+        "basis": "Listed standard front-seat equipment",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "PDF p9 front-seat group and Ventilation row; no rear-seat or comfort-superiority claim"
+        ],
+        "issues": []
+      },
+      "equipment_roof_sunshade": {
+        "key": "equipment_roof_sunshade",
+        "label": "Panoramic sunroof with electric sunshade",
+        "value": true,
+        "unit": "",
+        "basis": "Listed standard roof equipment",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "PDF p8; glass opening and measured thermal performance are not established"
+        ],
+        "issues": []
+      },
+      "equipment_phone_integration": {
+        "key": "equipment_phone_integration",
+        "label": "Phone integration",
+        "value": "Apple CarPlay and Android Auto: wireless and USB",
+        "unit": "",
+        "basis": "Listed standard phone integration; device support qualified",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "Apple CarPlay and Android Auto are listed with wireless and USB support. Not every device or feature is supported; check your specific device with the dealer.",
+          "PDF p11 rows and device-compatibility footnote"
+        ],
+        "issues": []
+      },
+      "equipment_speaker_count": {
+        "key": "equipment_speaker_count",
+        "label": "Listed speaker count",
+        "value": 23,
+        "unit": "speakers",
+        "basis": "Brochure premium-audio speaker count",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "PDF p11; no audio brand or sound-quality judgment"
+        ],
+        "issues": []
+      },
+      "climate_zones": {
+        "key": "climate_zones",
+        "label": "Climate-zone count",
+        "value": null,
+        "unit": "",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02",
+          "r99_mazda_cx6e_m07"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "CX6E95-CLIMATE: August brochure dual-zone versus earlier conflicting April tri-zone claim. Formal correction or supersession is not established."
+        ],
+        "issues": []
+      },
+      "central_screen_inches": {
+        "key": "central_screen_inches",
+        "label": "Central-screen size",
+        "value": null,
+        "unit": "inch",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02",
+          "r99_mazda_cx6e_m07"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "CX6E95-SCREEN: August brochure 26.45-inch versus earlier conflicting April 45-inch central-screen claim. No formal correction or supersession established; separate 50-inch active driving display is not the central screen."
+        ],
+        "issues": []
+      },
+      "source_brochure_climate_zones": {
+        "key": "source_brochure_climate_zones",
+        "label": "Brochure climate observation",
+        "value": 2,
+        "unit": "",
+        "basis": "Source-attributed dual-zone wording; normalized count held",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "PDF p2 GT feature list and p3 Azami additional-to-GT heading; CX6E95-CLIMATE remains unresolved"
+        ],
+        "issues": []
+      },
+      "source_april_climate_zones": {
+        "key": "source_april_climate_zones",
+        "label": "Earlier April GT climate claim",
+        "value": 3,
+        "unit": "",
+        "basis": "8 April 2026 source-attributed tri-zone GT wording; earlier conflicting claim",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m07"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "The article identifies GT; this is not a verified delivered-vehicle climate count for either grade. No formal correction or supersession established; normalized count held"
+        ],
+        "issues": []
+      },
+      "source_brochure_screen_inches": {
+        "key": "source_brochure_screen_inches",
+        "label": "Brochure central-screen observation",
+        "value": 26.45,
+        "unit": "inch",
+        "basis": "Source-attributed central display size; normalized size held",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "PDF p2/p11; CX6E95-SCREEN remains unresolved"
+        ],
+        "issues": []
+      },
+      "source_april_screen_inches": {
+        "key": "source_april_screen_inches",
+        "label": "Earlier April GT central-screen claim",
+        "value": 45,
+        "unit": "inch",
+        "basis": "8 April 2026 source-attributed GT central-screen wording; earlier conflicting claim",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m07"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "The article identifies GT; this is not a verified delivered-vehicle screen size for either grade. No formal correction or supersession established; not silently repaired or treated as the separate head-up/active driving display"
+        ],
+        "issues": []
+      },
+      "source_historical_mlp_aud": {
+        "key": "source_historical_mlp_aud",
+        "label": "Historical April manufacturer-list price",
+        "value": 56990,
+        "unit": "AUD",
+        "basis": "8 April 2026 historical MLP; not a current driveaway quote",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m07"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "Current exact final customer price remains unverified"
+        ],
+        "issues": []
+      },
+      "source_seller_listing": {
+        "key": "source_seller_listing",
+        "label": "Seller advertisement observation",
+        "value": {
+          "sourceId": "r99_mazda_cx6e_m06",
+          "seller": "Melville Mazda, Palmyra WA",
+          "stockNumber": "11397703",
+          "vin": "LVRHDCEK6TN551337",
+          "conditionLabel": "New",
+          "advertisedStockState": "in_stock",
+          "reservedAdvertised": false,
+          "preorderAdvertised": false,
+          "soldDateInPublicData": null,
+          "odometerKm": 4,
+          "sellerBuildDate": "2026-08-24",
+          "sellerComplianceDate": "2026-09-01",
+          "sellerYear": 2026,
+          "sellerModelYear": 2026,
+          "manufacturerModelYear": null,
+          "exterior": "Aero Grey",
+          "interior": "Warm Beige Maztex",
+          "advertisedPriceAud": null,
+          "priceBasis": "Visible Enquire for price; public zero is placeholder, not a price.",
+          "physicalStockVerified": false,
+          "independentUnsoldVerified": false,
+          "buildMatchesBrochureVerified": false,
+          "qualification": "Exact advertised identity only. Website absence of sold date and false reserved flag are not a current dealer attestation; do not infer physical unit, order allocation or delivered specification.",
+          "fullListingDesignation": "E35 Azami GR",
+          "sellerBadge": "E35 Azami",
+          "sellerSeries": "GR",
+          "sellerPublishedModelCode": "C6EAAW5E35AWB",
+          "sellerRecordUpdatedAt": "2026-10-06T22:34:05.842Z",
+          "observedAt": "2026-10-12T01:19:03.609010+00:00"
+        },
+        "unit": "",
+        "basis": "One retained New advertisement; not inspected physical inventory",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "r99_mazda_cx6e_m06"
+        ],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+          "Exact advertised identity only. Website absence of sold date and false reserved flag are not a current dealer attestation; do not infer physical unit, order allocation or delivered specification."
+        ],
+        "issues": []
+      },
+      "manufacturer_model_year": {
+        "key": "manufacturer_model_year",
+        "label": "Manufacturer model year",
+        "value": null,
+        "unit": "",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering."
+        ],
+        "issues": []
+      },
+      "factory_production": {
+        "key": "factory_production",
+        "label": "Factory production",
+        "value": null,
+        "unit": "",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering."
+        ],
+        "issues": []
+      },
+      "factory_order_acceptance": {
+        "key": "factory_order_acceptance",
+        "label": "Accepted factory order",
+        "value": null,
+        "unit": "",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering."
+        ],
+        "issues": []
+      },
+      "actual_delivery_date": {
+        "key": "actual_delivery_date",
+        "label": "Actual delivery date",
+        "value": null,
+        "unit": "",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering."
+        ],
+        "issues": []
+      },
+      "physical_stock": {
+        "key": "physical_stock",
+        "label": "Verified physical stock",
+        "value": null,
+        "unit": "",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering."
+        ],
+        "issues": []
+      },
+      "independent_comfort": {
+        "key": "independent_comfort",
+        "label": "Independent comfort assessment",
+        "value": null,
+        "unit": "",
+        "basis": "Exact-grade value not established by this reviewed packet",
+        "comparisonBasis": "",
+        "status": "not_verified",
+        "sourceIds": [],
+        "date": "2026-10-12",
+        "market": "AU",
+        "scope": "Mazda CX-6e E35 Azami; August 2026 Australian brochure AU41-P00008813; not VIN/build-certified",
+        "qualifications": [
+          "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+          "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering."
+        ],
+        "issues": []
+      }
+    },
+    "issues": [],
+    "buyerSummary": {
+      "checkedAt": "2026-10-12",
+      "guardSourceIds": [
+        "r99_mazda_cx6e_m02",
+        "r99_mazda_cx6e_m03",
+        "r99_mazda_cx6e_m04",
+        "r99_mazda_cx6e_m05",
+        "r99_mazda_cx6e_m06",
+        "r99_mazda_cx6e_m07"
+      ],
+      "conditions": [
+        "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+        "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+        "WLTP combined laboratory figures; actual range and energy use vary with driving and conditions.",
+        "Both grades list heated and ventilated front seats and a panoramic sunroof with an electric sunshade. Apple CarPlay and Android Auto are listed with wireless and USB support. Not every device or feature is supported; check your specific device with the dealer.",
+        "Manufacturer pre-order advertising links to dealer enquiry. Accepted orders, production, unsold physical stock, delivery timing and brochure-to-VIN applicability remain unverified.",
+        "Cargo, climate-zone and central-screen claims conflict across sources; normalized values and all market rankings remain held."
+      ],
+      "expectedVisibleConditions": [
+        "August 2026 Australian brochure claim; formal manufacturer model year and applicability to a particular VIN or delivered build are unverified.",
+        "Specifications, features and availability may vary by state and change without notice. Confirm current information with Mazda or the dealer before ordering.",
+        "WLTP combined laboratory figures; actual range and energy use vary with driving and conditions.",
+        "Both grades list heated and ventilated front seats and a panoramic sunroof with an electric sunshade. Apple CarPlay and Android Auto are listed with wireless and USB support. Not every device or feature is supported; check your specific device with the dealer.",
+        "Manufacturer pre-order advertising links to dealer enquiry. Accepted orders, production, unsold physical stock, delivery timing and brochure-to-VIN applicability remain unverified.",
+        "Cargo, climate-zone and central-screen claims conflict across sources; normalized values and all market rankings remain held."
+      ],
+      "expectedSourceSnapshots": [
+        {
+          "id": "r99_mazda_cx6e_m02",
+          "url": "https://www.mazda.com.au/4a4bb0/globalassets/brochures/cx-6e-digital-brochure.pdf",
+          "title": "Mazda CX-6e Australian brochure · August 2026 · AU41-P00008813",
+          "publisher": "Mazda Australia",
+          "source_type": "manufacturer_brochure",
+          "published_date": null,
+          "accessed_date": "2026-10-12",
+          "market": "AU",
+          "supports": "Australian E35 GT and E35 Azami source-bound technical and equipment claims; publication month is not manufacturer MY or VIN applicability.",
+          "publicationMonth": "2026-08",
+          "captureSHA256": "0802eecf17001a93bc03a27ff6ea8d3b812541f249dff287466ad4091b119e68",
+          "captureBytes": 21314,
+          "hashBasis": "saved web-extractor result bytes, not raw publisher HTML/PDF",
+          "rawPublisherBytesSHA256": null,
+          "observationDate": "2026-10-12",
+          "captureLimitations": "Retained source capture; observation date is not publisher refresh date. No new network retrieval during integration preparation.",
+          "documentCode": "AU41-P00008813",
+          "rawPdfBytesRetained": false,
+          "visualCheck": {
+            "observedAt": "2026-10-12T05:56:48Z",
+            "pages": [
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              14,
+              2,
+              3
+            ],
+            "scope": "Only rows listed in the retained root observation were inspected; no p4 colours or p12–13 safety admission.",
+            "screenshotsRetained": false
+          }
+        },
+        {
+          "id": "r99_mazda_cx6e_m03",
+          "url": "https://www.mazda.com.au/cars/cx-6e/",
+          "title": "Mazda CX-6e · Australian model page",
+          "publisher": "Mazda Australia",
+          "source_type": "manufacturer_page",
+          "published_date": null,
+          "accessed_date": "2026-10-12",
+          "market": "AU",
+          "supports": "Preorder/almost-here wording remains beside product marketing; seats-up cargo description conflicts with m02 measurement.",
+          "publicationMonth": null,
+          "captureSHA256": "d18b0a496d6615beb8b87cf94d5e6bddd3694477eb20655bc7ef711d790a4d05",
+          "captureBytes": 24404,
+          "hashBasis": "saved web-extractor result bytes, not raw publisher HTML/PDF",
+          "rawPublisherBytesSHA256": null,
+          "observationDate": "2026-10-12",
+          "captureLimitations": "Retained source capture; observation date is not publisher refresh date. No new network retrieval during integration preparation."
+        },
+        {
+          "id": "r99_mazda_cx6e_m04",
+          "url": "https://www.mazda.com.au/build/cx-6e/pre-order/?model=mazda-cx-6e",
+          "title": "Mazda CX-6e · Australian pre-order dealer enquiry",
+          "publisher": "Mazda Australia",
+          "source_type": "manufacturer_page",
+          "published_date": null,
+          "accessed_date": "2026-10-12",
+          "market": "AU",
+          "supports": "Rendered destination solicits a dealer callback; no accepted contract, deposit or fulfilled order established.",
+          "publicationMonth": null,
+          "captureSHA256": "c25c3b853128a7544afd64ef91b40f268468a7d2bd4f37742131e8f8e24e974b",
+          "captureBytes": 4064,
+          "hashBasis": "saved web-extractor result bytes, not raw publisher HTML/PDF",
+          "rawPublisherBytesSHA256": null,
+          "observationDate": "2026-10-12",
+          "captureLimitations": "Retained source capture; observation date is not publisher refresh date. No new network retrieval during integration preparation."
+        },
+        {
+          "id": "r99_mazda_cx6e_m05",
+          "url": "https://www.mazda.com.au/offers/driveaway/electric/",
+          "title": "Mazda electric driveaway offers · E35 GT observation",
+          "publisher": "Mazda Australia",
+          "source_type": "manufacturer_page",
+          "published_date": null,
+          "accessed_date": "2026-10-12",
+          "market": "AU",
+          "supports": "E35 GT driveaway-from AUD 56990, premium paint excluded; charges included; personal circumstances can change price; offer amendable and not combinable.",
+          "publicationMonth": null,
+          "captureSHA256": "a3bf98185d740202c8ad703a24098109c353c8baccbfadd6a738b3122acdcbc0",
+          "captureBytes": 5415,
+          "hashBasis": "saved web-extractor result bytes, not raw publisher HTML/PDF",
+          "rawPublisherBytesSHA256": null,
+          "observationDate": "2026-10-12",
+          "captureLimitations": "Retained source capture; observation date is not publisher refresh date. No new network retrieval during integration preparation."
+        },
+        {
+          "id": "r99_mazda_cx6e_m06",
+          "url": "https://www.melvillemazda.com.au/cars/new-aero-grey-2026-mazda-cx-6e-11397703",
+          "title": "Melville Mazda · advertised New CX-6e E35 Azami · stock 11397703",
+          "publisher": "Melville Mazda, Palmyra WA",
+          "source_type": "dealer_listing",
+          "published_date": null,
+          "accessed_date": "2026-10-12",
+          "market": "AU",
+          "supports": "Stock 11397703, VIN LVRHDCEK6TN551337; New/in_stock, not reserved/preorder in public data; no sold date. These are seller claims.",
+          "publicationMonth": null,
+          "captureSHA256": "a2a53b60677c5623fee0d409d0b8673fa839f1459b78e2511ce95f8ff5ed363f",
+          "captureBytes": 168540,
+          "hashBasis": "raw HTTP response bytes",
+          "rawPublisherBytesSHA256": "a2a53b60677c5623fee0d409d0b8673fa839f1459b78e2511ce95f8ff5ed363f",
+          "observationDate": "2026-10-12",
+          "captureLimitations": "Retained source capture; observation date is not publisher refresh date. No new network retrieval during integration preparation.",
+          "sellerRecordCreatedAt": "2026-10-06T03:11:29.378Z",
+          "sellerRecordUpdatedAt": "2026-10-06T22:34:05.842Z",
+          "retrievedAt": "2026-10-12T01:19:03.609010+00:00"
+        },
+        {
+          "id": "r99_mazda_cx6e_m07",
+          "url": "https://www.mazda.com.au/mazda-news/mazda-cx-6e-australia-specs-pricing-electric-suv/",
+          "title": "Mazda CX-6e Australian specifications and pricing · 8 April 2026",
+          "publisher": "Mazda Australia",
+          "source_type": "manufacturer_page",
+          "published_date": "2026-04-08",
+          "accessed_date": "2026-10-12",
+          "market": "AU",
+          "supports": "Historical April pricing and earlier conflicting climate/screen claims; September delivery forecast is not completed-delivery evidence. Formal correction or supersession is not established.",
+          "publicationMonth": null,
+          "captureSHA256": "7959c1554a2999c4d97ce9b1e8e8f0a146bc6109d58898988f157dd1bda9d59d",
+          "captureBytes": 10278,
+          "hashBasis": "saved web-extractor result bytes, not raw publisher HTML/PDF",
+          "rawPublisherBytesSHA256": null,
+          "observationDate": "2026-10-12",
+          "captureLimitations": "Retained source capture; observation date is not publisher refresh date. No new network retrieval during integration preparation."
+        }
+      ],
+      "strength": {
+        "label": "Digital mirrors and 21-inch wheels",
+        "text": "The August 2026 Australian brochure lists Azami with 21-inch wheels and digital exterior and interior mirrors.",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ]
+      },
+      "tradeoff": {
+        "label": "Lower brochure range than GT",
+        "text": "Azami’s WLTP combined figures are 468 km and 19.4 kWh/100 km, versus GT’s 484 km and 18.9. Actual results vary; the brochure does not establish that wheels alone explain the difference.",
+        "sourceIds": [
+          "r99_mazda_cx6e_m02"
+        ]
+      }
+    }
+  }
+]

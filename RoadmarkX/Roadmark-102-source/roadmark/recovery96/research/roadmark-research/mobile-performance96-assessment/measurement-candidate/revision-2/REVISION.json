@@ -1,0 +1,23 @@
+{
+  "revision": 2,
+  "status": "static_unexecuted_candidate_awaiting_independent_rereview",
+  "applicationChanged": false,
+  "executed": false,
+  "syntaxChecked": false,
+  "tested": false,
+  "preimageDirectory": "..",
+  "preimageSha256": {
+    "loopback-access-logger.mjs": "1cc71ea356357ffe2907a4272cd247dbdac3055f746fdd94695270c0d38eba83",
+    "README.md": "a09e807556831bf47b1de8c3fd9422ae167d210cc6e6ae4bffb876b899fca620"
+  },
+  "postimageSha256": {
+    "loopback-access-logger.mjs": "5181ad081108ffc6c236eca5086de5b262ad0e24b7173fe3f17ac35c27f37512",
+    "README.md": "c9d0a290b158384fbad7de10214a63dc7cc17662325f09ff2fa91926e21915b4"
+  },
+  "changes": [
+    "Track every accepted socket; explicitly destroy rejected CONNECT/Upgrade sockets after write flush or a 250 ms timeout and destroy all tracked sockets on shutdown.",
+    "Preserve finite Next-Router-Prefetch values 0, 1, 2 and 3.",
+    "Add half-open rejected-protocol teardown, signal interruption and 1/2/3 forwarding/logging acceptance cases; document marker absence carefully."
+  ],
+  "reviewRequirement": "Independent read-only re-review followed by root syntax, fixture, launch and browser checks after checkpoint 95 is saved."
+}

@@ -1,0 +1,316 @@
+{
+  "method": "Independent inert byte/text/JSON inspection only. No candidate/app/historical verifier import, execution, syntax check, tests, build, browser or Git.",
+  "candidateFiles": {
+    "COPIED-HELPERS.txt": {
+      "bytes": 10046,
+      "sha256": "831ad709e6b8a863b55e62f84e3ae2071bb7168d74e0bdc570687356c5b457b2"
+    },
+    "INPUT-PINS.json": {
+      "bytes": 2628,
+      "sha256": "3a2010df65a774d23a2ac633dd6495df3dacb493dcf544dd6432697ed69a984d"
+    },
+    "README.md": {
+      "bytes": 10348,
+      "sha256": "4752f78248af75a0291efc0635717f392d8dd8d0f77ea6fa3ea306ecb9039632"
+    },
+    "STATIC-PREPARATION.json": {
+      "bytes": 789,
+      "sha256": "668c95c88907e18a996e48489fcbc49b7cc890147c5176a2e80f7b29999de978"
+    },
+    "verify_checkpoint102_portable.py": {
+      "bytes": 31981,
+      "sha256": "609f3387cfdb5c1729b5acc83f7b3992c56c1902199e193d16bb4a1678c73557"
+    },
+    "BASELINE-BOUNDARIES.json": {
+      "bytes": 908,
+      "sha256": "b83ff1fd31be4c5a89250c615db49f04de6f955273db3c39e50351439daef400"
+    }
+  },
+  "baselinePins": {
+    "reviewedDecoder": {
+      "path": "roadmark-research/rebuilt101-portable-proof-candidate/revision1/verify_rebuilt101_portable.py",
+      "bytes": 31916,
+      "sha256": "cafe3df97dee699e2928c19c285834f3783e4d2d2a2f8a9be561cf046d978187"
+    },
+    "decoderReview": {
+      "path": "roadmark-research/rebuilt101-portable-proof-review/REVIEW.md",
+      "bytes": 8071,
+      "sha256": "d584f920a9269bcba025dc4f009ddb6b668a5537bc6580eeb8bab680c70559ad"
+    },
+    "verified101Proof": {
+      "path": "roadmark-rebuild101/portable-proof-attempt1.stdout.json",
+      "bytes": 16570,
+      "sha256": "21ba05f943819bc3cae389695228d236c940ae85aee3d98f19f06978c846779c"
+    },
+    "verified101ProofTerminal": {
+      "path": "roadmark-rebuild101/portable-proof-attempt1-terminal.json",
+      "bytes": 105,
+      "sha256": "a1e7845afca0136a29cd40aa4dc1b0e4de3238b8a51c0a8b39c059582889926d"
+    },
+    "baselineHTML": {
+      "path": "roadmark-preview100/roadmark/index.html",
+      "bytes": 37020751,
+      "sha256": "cb4fe95ff34b375fe139b7ef81e959c7ae000a1cb4b44ed74ad340a662f4e39b"
+    },
+    "baselineInputs": {
+      "path": "roadmark-rebuild101/qa-expected-inputs.json",
+      "bytes": 356770,
+      "sha256": "0777404050e976a91d2e87e1cb8e64c78d51cffc075e709abbc530cd341bf8aa"
+    },
+    "plan": {
+      "path": "roadmark-research/trike-integration-plan-2026-10-12/PLAN.md",
+      "bytes": 26866,
+      "sha256": "ba2c39a5b0656643b0590417a0dbfa38c9197a4e40c83b09d80b8ced4eb98592"
+    },
+    "plannedChangeMap": {
+      "path": "roadmark-research/trike-integration-plan-2026-10-12/planned-change-map.json",
+      "bytes": 11222,
+      "sha256": "1ab12f7c6bd82de94f58697d70636e332bf88311c1bfef506b5e50a724bc5b8d"
+    },
+    "plannedCounts": {
+      "path": "roadmark-research/trike-integration-plan-2026-10-12/planned-counts.json",
+      "bytes": 1141,
+      "sha256": "75ef4d9ab35c66ea599a0fb29f39db2b99d7be14fc8dfd565cc4db336897b789"
+    },
+    "runner": {
+      "path": "roadmark-rebuild101/run_qa99.py",
+      "bytes": 22175,
+      "sha256": "a043d6ac749a39d025bf452eddb55440d2ac81ba3b73be9f4d894a5055a2e10f"
+    }
+  },
+  "helperSlices": {
+    "copiedHelperBlock": {
+      "bytes": 8558,
+      "sha256": "09eff14ed182e9d054268c241454e952293ffa9036a92df0b5564f37fed95616",
+      "literalOccurrencesInCandidate": 1
+    },
+    "copiedReadBlock": {
+      "bytes": 1488,
+      "sha256": "271f85cd39580896ca099588aa39f2242ade7f0268d738b3ad1dad1d57690a90",
+      "literalOccurrencesInCandidate": 1
+    }
+  },
+  "manifest": {
+    "bytes": 1328,
+    "sha256": "7626e055c9485bf60ed610d3c7c10940f97a23cfc79d90fae1a56e80559e8dbc"
+  },
+  "sha256Sums": {
+    "bytes": 603,
+    "sha256": "b27438e50602ed72d2b9d0b9e0aaa7c73cd1665d2ab22c0a3efebb49b2e56bce"
+  },
+  "checksumEntries": 7,
+  "copiedHelperFileIsExactConcatenation": true,
+  "verified101ProofKeys": [
+    "schema",
+    "status",
+    "checkpoint",
+    "baselineCheckpoint",
+    "historical101PassReused",
+    "scriptSHA256",
+    "sourceScope",
+    "qaBinding",
+    "artifactPreservation",
+    "notVerified"
+  ],
+  "verified101ProofSourceScope": {
+    "source100": {
+      "path": "roadmark-recovery/reassembled100/Roadmark-recovered-100-source.zip",
+      "sha256": "0ab0172a49def161e9d6aab1f00ea0d866e919c5a14dd83ee61c9852cb6a4e74",
+      "bytes": 48765019
+    },
+    "source100CanonicalMember": {
+      "member": "roadmark/data/market-inventory-2026-10-10.json",
+      "sha256": "2469610f9bea19221ed99483b01ca23ca4f9bb62356a873398e9895c2eb838ac",
+      "bytes": 1653304
+    },
+    "candidate": {
+      "path": "roadmark-rebuild101/qa-candidate.json",
+      "sha256": "34651bac29fc721eb9021fa3f4859b01928fbcef3fadfda6869d216ce78c3d06",
+      "bytes": 3304
+    },
+    "finalAuthoredInputs": {
+      "path": "roadmark-rebuild101/final-authored-inputs.json",
+      "sha256": "6aad76783cc1787f64667b4fb6ef1fd71e7321c6e10ce35cc7f78441716362d5",
+      "bytes": 185459
+    },
+    "qaBaselineInputs": {
+      "path": "roadmark-rebuild101/qa-baseline-inputs.json",
+      "sha256": "a849da057146300c8525598d3b251c3e4b182096ca6d183e51a1d1ab6574ad0d",
+      "bytes": 356126
+    },
+    "qaExpectedInputs": {
+      "path": "roadmark-rebuild101/qa-expected-inputs.json",
+      "sha256": "0777404050e976a91d2e87e1cb8e64c78d51cffc075e709abbc530cd341bf8aa",
+      "bytes": 356770
+    },
+    "actualDeltaPaths": 14,
+    "modifiedPaths": 8,
+    "addedPaths": 6,
+    "originalAppInputCounts": [
+      1678,
+      1684
+    ],
+    "expandedQAInputCounts": [
+      2807,
+      2813
+    ],
+    "unchangedAdditionalHistoricalInputs": 1129,
+    "currentEnumeratedInputHashesVerified": 2813,
+    "earlierAuthoredExpectedMapIsFinal": false,
+    "earlierAuthoredMapMismatches": [
+      {
+        "path": "tests/helpers/checkpoint101-source-history.ts",
+        "earlierSHA256": "e2c105baefe4ee35965810b5d4316eff3627d68c76f5e312af9f03057ebc2105",
+        "finalSHA256": "714bedc3eec27366a4421f15846d71b05cc99fbd7fd2a128fa08ee461b72cb62"
+      },
+      {
+        "path": "tests/market-view.test.ts",
+        "earlierSHA256": "582b13c594a9617abd750eb981c1bda94329c883d5275ccd8d8d0278447135e7",
+        "finalSHA256": "780a48f76359be6c97fe058e651b51a4f59a3a01bbf4fa8b8bfe980940b5e242"
+      }
+    ],
+    "delta": [
+      {
+        "beforeSHA256": "7ee2046d8b28707c5d182f09f2288e8c61b19bb51d03fd42a212e055622f6754",
+        "bytes": 1748,
+        "path": "package.json",
+        "sha256": "42d9b1885ca6b7bebcaca1549b48db700fb0dfee96ea0db998d8eda3fafda1fc"
+      },
+      {
+        "beforeSHA256": null,
+        "bytes": 172,
+        "path": "src/lib/market-view-data.ts",
+        "sha256": "5f31c96353a5274c49befbd5e2716ce2c8644429a418299b41d186a5af0f1fd2"
+      },
+      {
+        "beforeSHA256": "6062cb777b0943c09aeed8bb457b279ac9ab510509e39773d3aa77c34ecacfc1",
+        "bytes": 8464,
+        "path": "src/components/market-audit.tsx",
+        "sha256": "d2f3999b1e3099e1026aa67e302fd4494a75d19642a49a4bd639f48ebe7024c9"
+      },
+      {
+        "beforeSHA256": null,
+        "bytes": 2825,
+        "path": "scripts/generate-market-view.mjs",
+        "sha256": "467a83f5e774e23faf0eeca2fba4d9c33dbbce7077719f2432c80cae14d95961"
+      },
+      {
+        "beforeSHA256": "0abc4b2dd3da0170d2d40ea4d7e6817bfdf4ab21198971210eb0780082868239",
+        "bytes": 3802,
+        "path": "scripts/build-portable.ts",
+        "sha256": "93972a317c513acf9121a62390974c9487ba39e2a916a8f8764090c11fda3ebd"
+      },
+      {
+        "beforeSHA256": null,
+        "bytes": 446265,
+        "path": "data/market-view.generated.json",
+        "sha256": "e9324e71479402b0e8d3c2e832c6cc0ed6b4be4f0097b6603214474804faed6e"
+      },
+      {
+        "beforeSHA256": "965c9a81052c0223c569a56fc23682398e728a0e78b16d26f459a2f24277d66b",
+        "bytes": 7195,
+        "path": "tests/checkpoint97-source-history.test.ts",
+        "sha256": "1eaefb9bba7189a38a3f3718d0ca304bad2386aa86df20625d9a89a81b64dc23"
+      },
+      {
+        "beforeSHA256": "a5f8861eaeb9041f1e90d997baa5a2fbf432790cf663d91f376e6f8f986f6cc2",
+        "bytes": 8543,
+        "path": "tests/checkpoint96-source-history.test.ts",
+        "sha256": "75b933afece18645247b9b3f43ccdfea937c887db177d1b246ef6ddf53958a5b"
+      },
+      {
+        "beforeSHA256": "09e777468fbbdb67e555279584c66a1548ac8ceaddc5795d159d4b83228c1c4f",
+        "bytes": 6891,
+        "path": "tests/market-audit-interactions.test.ts",
+        "sha256": "1d38fc08c2167e3e038cc7fc317fe2452deca13783a20d013ee799c121825cee"
+      },
+      {
+        "beforeSHA256": null,
+        "bytes": 4191,
+        "path": "tests/market-view.test.ts",
+        "sha256": "780a48f76359be6c97fe058e651b51a4f59a3a01bbf4fa8b8bfe980940b5e242"
+      },
+      {
+        "beforeSHA256": "dc7c94589c23d409ae64b9e7299d893950f75454ee4901d3eab9b1de2b868867",
+        "bytes": 9718,
+        "path": "tests/buyer-display-copy-render.test.ts",
+        "sha256": "68798d4a27a771ccd32a23f061e65192a371acfd22a5dd86ef9f0ce43c9fa9a3"
+      },
+      {
+        "beforeSHA256": null,
+        "bytes": 1748,
+        "path": "tests/helpers/checkpoint101-source-history.ts",
+        "sha256": "714bedc3eec27366a4421f15846d71b05cc99fbd7fd2a128fa08ee461b72cb62"
+      },
+      {
+        "beforeSHA256": "c11e975627315ad55bfe80cfe34e0307f877c231579fd7538364526977f4c01b",
+        "bytes": 2994,
+        "path": "tests/helpers/checkpoint91-history.ts",
+        "sha256": "092dc014b751033c0e6544f84dd3400224037ca3cccce64cb9bfe0566ac545e9"
+      },
+      {
+        "beforeSHA256": null,
+        "bytes": 53838,
+        "path": "tests/fixtures/checkpoint101-source.json",
+        "sha256": "0a00252acf24358b9fa8551b08f90d04744487b45b14c194ac861485b7dabddb"
+      }
+    ],
+    "canonicalAuditSourceUnchanged": true,
+    "historical100ManifestUnchanged": true,
+    "scopeBoundary": "Enumerated map plus historical manifest; QA runner separately checks full input inventory under documented exclusions"
+  },
+  "sourcePlan": {
+    "baselineExpandedMapCount": 2813,
+    "modifiedExistingPaths": [
+      "data/market-inventory-2026-10-10.json",
+      "data/market-view.generated.json",
+      "src/components/market-audit.tsx",
+      "tests/helpers/checkpoint99-history.ts",
+      "tests/helpers/checkpoint91-history.ts",
+      "tests/checkpoint96-source-history.test.ts",
+      "tests/checkpoint97-source-history.test.ts",
+      "tests/market-view.test.ts",
+      "tests/checkpoint99-mazda.test.ts",
+      "tests/checkpoint100-market.test.ts",
+      "tests/market-audit.test.ts"
+    ],
+    "introducedPaths": [
+      "data/market-road-trikes-evidence-2026-10-12.json",
+      "tests/helpers/checkpoint102-market-history.ts",
+      "tests/helpers/checkpoint102-source-history.ts",
+      "tests/fixtures/checkpoint102-trikes.json",
+      "tests/checkpoint102-trikes.test.ts",
+      "tests/checkpoint102-history.test.ts",
+      "docs/TRIKE_MARKET_INTEGRATION_2026-10-12.md"
+    ],
+    "expectedFinalExpandedMapCount": 2820,
+    "plannedPreimageAndPreservationRowsMatchBaselineMap": true
+  },
+  "baselineBoundaries": {
+    "html": {
+      "bytes": 37020751,
+      "sha256": "cb4fe95ff34b375fe139b7ef81e959c7ae000a1cb4b44ed74ad340a662f4e39b"
+    },
+    "prefix": {
+      "bytes": 114149,
+      "sha256": "4aa3be6fd1ad3561825977ae1d72b665f39dd7b3a263edc675f32e0181a85237"
+    },
+    "encodedPayload": {
+      "bytes": 36296593,
+      "sha256": "cba259134b34689cb1a51bc1d72f8850a16ecb5cb0d542fefc79e251ee721fe3"
+    },
+    "runtime": {
+      "bytes": 609969,
+      "sha256": "471570af0618253be2bdcef13c31dd0779709db576481eac6b6a48ded825b880"
+    },
+    "inlineCSS": {
+      "bytes": 113757,
+      "sha256": "11eeef2b51b61ebba20d91051d3059bdde177b1cb25dc4eac1466073d6a0b2d4"
+    },
+    "inlineCSSEqualsPinned101SourceHash": true,
+    "exactSuffixWrappers": true,
+    "originalHeroFlag": true
+  },
+  "scope": "Static candidate approval only; no future102 inputs or successful run exist in this packet.",
+  "pinned101ProofFinalExpandedMapIdentityEqualsPinnedBaselineMap": true
+}

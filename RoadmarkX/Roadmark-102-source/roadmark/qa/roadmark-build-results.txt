@@ -1,0 +1,63 @@
+▲ Next.js 16.3.8 (Turbopack)
+✓ Running next.config.ts took 26ms
+- Experiments (use with caution):
+  · cpus: 2
+  · staticGenerationMaxConcurrency: 2
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 1145ms
+  Running TypeScript ...
+  Finished TypeScript in 3.3s ...
+  Collecting page data using 2 workers ...
+  Generating static pages using 2 workers (0/272) ...
+  Generating static pages using 2 workers (68/272) 
+  Generating static pages using 2 workers (136/272) 
+  Generating static pages using 2 workers (204/272) 
+✓ Generating static pages using 2 workers (272/272) in 93s
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ƒ /b
+├ ƒ /cars
+├   /cars/[family]/[variant]
+│ ├ ● /cars/tesla-model-y/premium-long-range-awd-1
+│ ├ ● /cars/tesla-model-y/premium-rwd-2
+│ ├ ● /cars/tesla-model-y/l-premium-awd-4
+│ └ ● [+223 more paths]
+├ ƒ /compare
+├   /compare/[pair]
+│ ├ ● /compare/model-y-vs-sealion-7
+│ ├ ● /compare/model-y-vs-geely-ex5
+│ ├ ● /compare/model-y-vs-zeekr-7x
+│ └ ● [+6 more paths]
+├   /compare/[pair]/comparison.json
+│ ├ ● /compare/model-y-vs-sealion-7/comparison.json
+│ ├ ● /compare/model-y-vs-geely-ex5/comparison.json
+│ ├ ● /compare/model-y-vs-zeekr-7x/comparison.json
+│ └ ● [+6 more paths]
+├   /compare/[pair]/comparison.md
+│ ├ ● /compare/model-y-vs-sealion-7/comparison.md
+│ ├ ● /compare/model-y-vs-geely-ex5/comparison.md
+│ ├ ● /compare/model-y-vs-zeekr-7x/comparison.md
+│ └ ● [+6 more paths]
+├ ○ /comparisons
+├ ○ /discover
+├ ○ /glossary
+├ ○ /icon.svg
+├ ○ /llms.txt
+├ ○ /market
+├ ○ /methodology
+├ ○ /model-y
+├ ○ /review
+├ ○ /robots.txt
+├ ○ /sitemap.xml
+├ ƒ /software
+└ ƒ /sources
+
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+

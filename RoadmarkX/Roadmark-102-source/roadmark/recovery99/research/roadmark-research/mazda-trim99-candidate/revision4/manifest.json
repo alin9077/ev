@@ -1,0 +1,44 @@
+{
+  "schema": "roadmark-checkpoint99-static-revision4-v1",
+  "scope": "Restore exact initial99 helper and confine historical type to the single validated Mazda row in checkpoint95-market.test.ts",
+  "rejectedRevision3ManifestSHA256": "ef550abc42ab248b26170b9b54c1121cf5e0d5aecead6d2f311d164072853a2f",
+  "applicationModified": false,
+  "executionPerformed": false,
+  "candidateFiles": [
+    {
+      "path": "tests/checkpoint95-market.test.ts",
+      "beforeSHA256": "81eaf8711aaea83ef66004ef28021060781e3dd1cbc69f76ffacfc96b71146b5",
+      "beforeBytes": 9419,
+      "afterSHA256": "cfde06dd7bb9d9a44e5c3f966d1e75e4d64fa2d7d538bfa35a42e50b860768f6",
+      "afterBytes": 9795,
+      "checkpoint98BeforeSHA256": "7103187118b092244866b77d8bf023f149dacf622f099005b1af69590a35ef0a"
+    },
+    {
+      "path": "tests/helpers/checkpoint99-history.ts",
+      "beforeSHA256": "c78c7048e1d9654ddb71b6680c9441bda9c30e4e569d65e6fc9bfd8bd13d8ceb",
+      "beforeBytes": 7150,
+      "afterSHA256": "80ef31bac488635dbf69fdac7b7d4dbd2812ae53a6a08f3e8b68de7d2efe71d7",
+      "afterBytes": 6551,
+      "checkpoint98BeforeSHA256": null
+    }
+  ],
+  "typeReference": {
+    "path": "qa/checkpoint95-market-fixture.json",
+    "sha256": "be8fc1fb14600253d57ecdcd2ec27927208c66abf853f03fcb34b5ff706259e2",
+    "property": "appendedRecord",
+    "runtimeImport": false
+  },
+  "unchanged": [
+    "All runtime statements and guards",
+    "Every existing test assertion",
+    "All data and evidence",
+    "All historical numeric and hash expectations",
+    "Initial candidate,revision2 and failedrevision3 artifacts"
+  ],
+  "reason": "Revision3 global union caused unrelated historical row property/narrowing errors. This restores the original helper return contract and explicitly types only the validated restored Mazda row, whose historical null epoch and missing later fields differ from current99 JSON inference. Both99 whole-market and95 exact-row guards execute before this local cast.",
+  "verificationRequired": [
+    "Whole-project typecheck",
+    "Whole-project lint",
+    "FullQA only after quick typecheck and lint succeed"
+  ]
+}

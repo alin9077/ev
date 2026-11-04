@@ -1,0 +1,71 @@
+{
+  "schema": "roadmark-rebuilt101-portable-proof-static-candidate-v1",
+  "status": "prepared_only_for_independent_review_and_root_execution",
+  "entrypoint": "roadmark-research/rebuilt101-portable-proof-candidate/verify_rebuilt101_portable.py",
+  "entrypointSHA256": "8b8404dd1ca644c8a42a1e5633b7b2a6a40d685f9e30799faccb406540a8cdd8",
+  "inputPinsSHA256": "005906c3a3833e6bf34ece22a82b00fa2fa23df1a10bafb58e96ae35317d38eb",
+  "candidateImported": false,
+  "candidateExecuted": false,
+  "candidateSyntaxChecked": false,
+  "appOrQAOutputsEdited": false,
+  "historical101PassReused": false,
+  "requiredFinalInputs": [
+    "--qa-result",
+    "--qa-result-sha256",
+    "--outer-terminal",
+    "--outer-terminal-sha256",
+    "--expected-html101-sha256"
+  ],
+  "expectedFinalWholeHTML": {
+    "sha256": "cb4fe95ff34b375fe139b7ef81e959c7ae000a1cb4b44ed74ad340a662f4e39b",
+    "bytes": 37020751,
+    "allFourAliasesMustMatch": true
+  },
+  "sourceScope": {
+    "actualDeltaPaths": 14,
+    "modifiedPaths": 8,
+    "addedPaths": 6,
+    "originalAppInputs": [
+      1678,
+      1684
+    ],
+    "expandedQAInputs": [
+      2807,
+      2813
+    ],
+    "additionalUnchangedHistoricalInputs": 1129,
+    "historicalWIP2ExpectedMapIsNotFinal": true
+  },
+  "files": [
+    {
+      "path": "roadmark-research/rebuilt101-portable-proof-candidate/INPUT-PINS.json",
+      "bytes": 2599,
+      "sha256": "005906c3a3833e6bf34ece22a82b00fa2fa23df1a10bafb58e96ae35317d38eb"
+    },
+    {
+      "path": "roadmark-research/rebuilt101-portable-proof-candidate/PLAN-AND-DERIVATION.md",
+      "bytes": 7820,
+      "sha256": "3aefdb0bbb2cab060b6c56ca87e2063eb4aa357e926ababc843b334716739da6"
+    },
+    {
+      "path": "roadmark-research/rebuilt101-portable-proof-candidate/SOURCE-SCOPE.json",
+      "bytes": 4401,
+      "sha256": "91b89a8a3da7eeb4d005264a86860e06a55ae0375c58ac408238c1f81fee195d"
+    },
+    {
+      "path": "roadmark-research/rebuilt101-portable-proof-candidate/reviewed100-comparison.txt",
+      "bytes": 2154,
+      "sha256": "99cd1bb8816109ed6de6cb9342c634322a6fc96434910fbfaa9253b523fc8f64"
+    },
+    {
+      "path": "roadmark-research/rebuilt101-portable-proof-candidate/reviewed100-helpers.txt",
+      "bytes": 6403,
+      "sha256": "40c1451483253439817efd761b4edd3be480060219327ced4c9d3eef461d860d"
+    },
+    {
+      "path": "roadmark-research/rebuilt101-portable-proof-candidate/verify_rebuilt101_portable.py",
+      "bytes": 28377,
+      "sha256": "8b8404dd1ca644c8a42a1e5633b7b2a6a40d685f9e30799faccb406540a8cdd8"
+    }
+  ]
+}

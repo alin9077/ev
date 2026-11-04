@@ -1,0 +1,13 @@
+{
+  "observedAtUTC": "2026-10-12T02:35:15.572437+00:00",
+  "reportPath": "roadmark-research/mobile-performance96-assessment/measurement-candidate/acceptance-candidate/revision-2/runs/2026-10-12T02-34-33-076Z-5720a396/report.json",
+  "interruptionReported": true,
+  "onlyMainChildCreated": true,
+  "cleanupIssues": [],
+  "evidenceIssues": [],
+  "portProbeNote": "First non-reuse bind probe errored EADDRINUSE after the harness exited; retained as wrapper failure. Subsequent SO_REUSEADDR bind/listen probes for 8766 and 18850 through 18855 all succeeded. No existing process was displaced.",
+  "limitations": [
+    "The wrapper failed before persisting actual harness process exit code; no exact exit code is asserted here.",
+    "Listener-acquisition race and forced child-exit/disk-failure simulations not exercised."
+  ]
+}

@@ -1,0 +1,386 @@
+{
+  "title": "Catalogue scope-label audit",
+  "checkedAt": "2026-10-10T10:13:22Z",
+  "mode": "Read-only application audit; only this report and temporary read-only snapshots written",
+  "scope": [
+    "Shared model generation/epoch copied from first trim",
+    "parking_cameras unavailable despite explicit rear camera/sensors",
+    "Compound units overwritten by suffix inference"
+  ],
+  "summary": {
+    "models": 95,
+    "multiTrimModels": 74,
+    "variants": 226,
+    "factCells": 10370,
+    "populatedFactCells": 7601,
+    "parkingStatusCounts": {
+      "standard": 67,
+      "conditional": 19,
+      "not_verified": 140
+    },
+    "populatedEnergyConsumptionFacts": 38,
+    "newOpenFindings": 0,
+    "resolvedDuringAudit": 1,
+    "priorFixControlsPassed": 4
+  },
+  "findings": [
+    {
+      "id": "UNIT-01",
+      "class": "Compound-unit loss, adjacent to suffix-override class",
+      "status": "resolved_verified",
+      "severity": "medium",
+      "modelId": "chery_e5_my26",
+      "variantId": "chery_e5_my26__ultimate_fwd_my26__20261010",
+      "factKey": "energy_consumption_nedc_whkm",
+      "catalogueLocation": "data/catalogue-additions-2026-10-10.json facts[variantId=chery_e5_my26__ultimate_fwd_my26__20261010, key=energy_consumption_nedc_whkm]",
+      "before": {
+        "value": 132,
+        "unit": "",
+        "label": "Energy consumption nedc whkm",
+        "basis": "Exact published energy consumption nedc whkm"
+      },
+      "after": {
+        "value": 132,
+        "unit": "Wh/km",
+        "label": "NEDC energy consumption",
+        "basis": "NEDC laboratory energy consumption",
+        "comparisonBasis": "NEDC laboratory energy consumption"
+      },
+      "evidence": {
+        "packet": "data/omoda-jaecoo-evidence.json",
+        "packetRecordId": "chery_e5__ultimate_fwd_my26__1",
+        "packetField": "energy_consumption_nedc_whkm",
+        "packetValue": 132,
+        "appSourceId": "r10_ldc_chery_e5_brochure",
+        "sourceUrl": "https://cherymotor.com.au/sites/default/files/2026-04/233_25_Chery_E5_Spec_Sheet_2025_Rebrand_v115%20%282%29%20%281%29.pdf",
+        "sourceLocator": "MY26 specification PDF p.3; Energy Consumption – NEDC (Wh/km), 132",
+        "textSnapshot": "/workspace/scratch/586427eef9f2/roadmark-research/chinese-passenger-sources/chery_e5_brochure.txt",
+        "textLine": 75,
+        "sourcePdfSha256Verified": "7674645389b8d3bb402103223313e2cf9f68f86b60e5d6c3343b753c6e4fc2a6",
+        "visualSnapshot": "roadmark-research/remaining-passenger-editorial-qa/chery_e5_brochure-p3.png"
+      },
+      "conservativeCorrection": "Preserve 132 and NEDC; unit Wh/km. Do not convert to a WLTP value or change range.",
+      "resolution": "Parent applied unit, label and NEDC basis correction; freshly evaluated catalogue() verified the corrected effective fact. No app changes by audit worker."
+    }
+  ],
+  "controls": [
+    {
+      "class": "Shared generation",
+      "status": "pass",
+      "modelId": "leapmotor_c10_current",
+      "variantIds": [
+        "leapmotor_c10_current__style_69_9kwh__20261010",
+        "leapmotor_c10_current__design_lr_81_9kwh__20261010"
+      ],
+      "effectiveGeneration": "June 2026 current Australian C10 guide; formal MY unprinted",
+      "evidencePacket": "data/leapmotor-evidence.json",
+      "evidenceRecordIds": [
+        "leapmotor_c10__style_69_9",
+        "leapmotor_c10__design_lr_81_9"
+      ],
+      "sourceId": "r10_ldc_leap_c10_regular_brochure_new",
+      "reason": "Both records use the June current guide; Style prior-MY25 hardware evidence and Design LR unit-level MY26 stock identity are not promoted into a shared formal model year."
+    },
+    {
+      "class": "Broad parking availability",
+      "status": "pass",
+      "variantId": "nissan_ariya_my25__engage_2wd_63kwh__20261010",
+      "criterion": "parking_cameras",
+      "effectiveStatus": "standard",
+      "evidencePacket": "data/lexus-nissan-genesis-evidence-2026-10-10.json",
+      "researchId": "nissan_ariya_engage_63_my25",
+      "sourceId": "r10_lng_nissan_ariya_spec_r2",
+      "sourceLocator": "PDF pp.2–4 exact Engage equipment column",
+      "packetEvidence": {
+        "surround_camera": false,
+        "rear_camera": true,
+        "front_rear_parking_sensors": true
+      }
+    },
+    {
+      "class": "Broad parking availability",
+      "status": "pass",
+      "variantId": "geely_ex2_launch__complete__20261010",
+      "criterion": "parking_cameras",
+      "effectiveStatus": "standard",
+      "evidencePacket": "data/geely-zeekr-xpeng-evidence.json",
+      "researchId": "geely_ex2_complete_au_launch_2026",
+      "sourceId": "r10_gzx_geely_ex2_brochure_1",
+      "sourceLocator": "PDF pp.2–4 exact Complete equipment column",
+      "packetEvidence": {
+        "surround_camera": false,
+        "standalone_rear_view_camera": true,
+        "rear_parking_sensors": true
+      }
+    },
+    {
+      "class": "Explicit compound unit",
+      "status": "pass",
+      "variantId": "deepal_s07_current__s07_rwd__20261010",
+      "factKey": "wltp_energy_consumption_kwh_per100_km",
+      "effectiveValue": 18.6,
+      "effectiveUnit": "kWh/100km",
+      "evidencePacket": "data/deepal-evidence.json",
+      "packetRecordId": "deepal-s07-rwd-current-20261010",
+      "packetPath": "technicalFacts.wltpEnergyConsumptionKWhPer100Km",
+      "packetValue": 18.6,
+      "packetUnit": "kWh/100km",
+      "sourceId": "r10_ldc_deepal_s07_brochure_1"
+    }
+  ],
+  "unitScreen": [
+    {
+      "variantId": "lexus_rz_2026_revision__500e_luxury_awd__20261010",
+      "key": "consumption_kwh_100km",
+      "value": 18,
+      "unit": "kWh/100 km"
+    },
+    {
+      "variantId": "lexus_rz_2026_revision__500e_sports_luxury_awd__20261010",
+      "key": "consumption_kwh_100km",
+      "value": 18,
+      "unit": "kWh/100 km"
+    },
+    {
+      "variantId": "lexus_rz_2026_revision__550e_f_sport_awd__20261010",
+      "key": "consumption_kwh_100km",
+      "value": 18.86,
+      "unit": "kWh/100 km"
+    },
+    {
+      "variantId": "lexus_es_bev_2026_launch__350e_sports_luxury_fwd__20261010",
+      "key": "consumption_kwh_100km",
+      "value": 16.4,
+      "unit": "kWh/100 km"
+    },
+    {
+      "variantId": "lexus_es_bev_2026_launch__500e_sports_luxury_awd__20261010",
+      "key": "consumption_kwh_100km",
+      "value": 17.9,
+      "unit": "kWh/100 km"
+    },
+    {
+      "variantId": "nissan_ariya_my25__engage_2wd_63kwh__20261010",
+      "key": "consumption_wh_km",
+      "value": 184,
+      "unit": "Wh/km"
+    },
+    {
+      "variantId": "nissan_ariya_my25__engage_2wd_63kwh__20261010",
+      "key": "consumption_kwh_100km",
+      "value": 18.4,
+      "unit": "kWh/100 km"
+    },
+    {
+      "variantId": "nissan_ariya_my25__advance_2wd_63kwh__20261010",
+      "key": "consumption_wh_km",
+      "value": 184,
+      "unit": "Wh/km"
+    },
+    {
+      "variantId": "nissan_ariya_my25__advance_2wd_63kwh__20261010",
+      "key": "consumption_kwh_100km",
+      "value": 18.4,
+      "unit": "kWh/100 km"
+    },
+    {
+      "variantId": "nissan_ariya_my25__advance_2wd_87kwh__20261010",
+      "key": "consumption_wh_km",
+      "value": 191,
+      "unit": "Wh/km"
+    },
+    {
+      "variantId": "nissan_ariya_my25__advance_2wd_87kwh__20261010",
+      "key": "consumption_kwh_100km",
+      "value": 19.1,
+      "unit": "kWh/100 km"
+    },
+    {
+      "variantId": "nissan_ariya_my25__evolve_e_4orce_87kwh__20261010",
+      "key": "consumption_wh_km",
+      "value": 208,
+      "unit": "Wh/km"
+    },
+    {
+      "variantId": "nissan_ariya_my25__evolve_e_4orce_87kwh__20261010",
+      "key": "consumption_kwh_100km",
+      "value": 20.8,
+      "unit": "kWh/100 km"
+    },
+    {
+      "variantId": "genesis_gv60_2027__advanced_rwd__20261010",
+      "key": "consumption_wh_km",
+      "value": 167,
+      "unit": "Wh/km"
+    },
+    {
+      "variantId": "genesis_gv60_2027__advanced_rwd__20261010",
+      "key": "consumption_kwh_100km",
+      "value": 16.7,
+      "unit": "kWh/100 km"
+    },
+    {
+      "variantId": "genesis_gv60magma_2027__magma_performance_awd__20261010",
+      "key": "consumption_wh_km",
+      "value": 215,
+      "unit": "Wh/km"
+    },
+    {
+      "variantId": "genesis_gv60magma_2027__magma_performance_awd__20261010",
+      "key": "consumption_kwh_100km",
+      "value": 21.5,
+      "unit": "kWh/100 km"
+    },
+    {
+      "variantId": "genesis_g80ev_2026__signature_awd__20261010",
+      "key": "consumption_wh_km",
+      "value": 181,
+      "unit": "Wh/km"
+    },
+    {
+      "variantId": "genesis_g80ev_2026__signature_awd__20261010",
+      "key": "consumption_kwh_100km",
+      "value": 18.1,
+      "unit": "kWh/100 km"
+    },
+    {
+      "variantId": "genesis_gv70ev_2025__signature_performance_awd__20261010",
+      "key": "consumption_wh_km",
+      "value": 200,
+      "unit": "Wh/km"
+    },
+    {
+      "variantId": "genesis_gv70ev_2025__signature_performance_awd__20261010",
+      "key": "consumption_kwh_100km",
+      "value": 20,
+      "unit": "kWh/100 km"
+    },
+    {
+      "variantId": "renault_kangoo_current__swb_ev45_90kw__20261010",
+      "key": "consumption_wh_per_km",
+      "value": 175,
+      "unit": "Wh/km"
+    },
+    {
+      "variantId": "renault_kangoo_current__lwb_ev45_90kw__20261010",
+      "key": "consumption_wh_per_km",
+      "value": 175,
+      "unit": "Wh/km"
+    },
+    {
+      "variantId": "geely_ex2_launch__complete__20261010",
+      "key": "consumption_kwh_100km",
+      "value": 15.9,
+      "unit": "kWh/100km"
+    },
+    {
+      "variantId": "geely_ex2_launch__inspire__20261010",
+      "key": "consumption_kwh_100km",
+      "value": 15.5,
+      "unit": "kWh/100km"
+    },
+    {
+      "variantId": "zeekr_009_116__7_seat_fwd__20261010",
+      "key": "consumption_kwh_100km",
+      "value": 21.4,
+      "unit": "kWh/100km"
+    },
+    {
+      "variantId": "zeekr_009_116__7_seat_awd__20261010",
+      "key": "consumption_kwh_100km",
+      "value": 23.5,
+      "unit": "kWh/100km"
+    },
+    {
+      "variantId": "zeekr_009_116__6_seat_awd__20261010",
+      "key": "consumption_kwh_100km",
+      "value": 23.5,
+      "unit": "kWh/100km"
+    },
+    {
+      "variantId": "xpeng_g6_my26__rwd_standard_range__20261010",
+      "key": "consumption_kwh_100km",
+      "value": 16.6,
+      "unit": "kWh/100km"
+    },
+    {
+      "variantId": "xpeng_g6_my26__rwd_long_range__20261010",
+      "key": "consumption_kwh_100km",
+      "value": 17.9,
+      "unit": "kWh/100km"
+    },
+    {
+      "variantId": "xpeng_g6_my26__awd_performance__20261010",
+      "key": "consumption_kwh_100km",
+      "value": 18.4,
+      "unit": "kWh/100km"
+    },
+    {
+      "variantId": "leapmotor_b05_my26__style__20261010",
+      "key": "wltp_energy_wh_km",
+      "value": 158,
+      "unit": "Wh/km"
+    },
+    {
+      "variantId": "leapmotor_b05_my26__design_lr__20261010",
+      "key": "wltp_energy_wh_km",
+      "value": 159,
+      "unit": "Wh/km"
+    },
+    {
+      "variantId": "leapmotor_b10_my26__style__20261010",
+      "key": "wltp_energy_wh_km",
+      "value": 172,
+      "unit": "Wh/km"
+    },
+    {
+      "variantId": "leapmotor_b10_my26__design_lr__20261010",
+      "key": "wltp_energy_wh_km",
+      "value": 173,
+      "unit": "Wh/km"
+    },
+    {
+      "variantId": "leapmotor_c10_current__style_69_9kwh__20261010",
+      "key": "wltp_energy_wh_km",
+      "value": 185,
+      "unit": "Wh/km"
+    },
+    {
+      "variantId": "chery_e5_my26__ultimate_fwd_my26__20261010",
+      "key": "energy_consumption_nedc_whkm",
+      "value": 132,
+      "unit": "Wh/km"
+    },
+    {
+      "variantId": "deepal_s07_current__s07_rwd__20261010",
+      "key": "wltp_energy_consumption_kwh_per100_km",
+      "value": 18.6,
+      "unit": "kWh/100km"
+    }
+  ],
+  "methodology": [
+    "Evaluated current research(), catalogue() and effectiveFeatures() via the existing tsx runtime; reviewed actual effective values rather than relying only on raw source rows.",
+    "Screened all model generation labels alongside their member trims/model years, and inspected multi-trim scope candidates. No additional unambiguous first-trim-only generation leak found.",
+    "Screened every effective parking_cameras status and wording. Zero unavailable or not_applicable rows remained; not_verified rows were left untouched.",
+    "Screened populated fact units for scalar-suffix leakage and energy-consumption composite-unit loss. All 38 populated energy-consumption facts have compound units after the Chery fix.",
+    "Compared each reported/control finding with its existing linked evidence packet. For Chery, also verified the retained PDF hash, text row and page image."
+  ],
+  "limitations": [
+    "This is a focused integration audit, not a new market/specification verification or a completeness audit.",
+    "No app, UI, editorial proposal or active worker artifact was changed.",
+    "No claim that unknown equipment is absent; no added trims, new source research, broad copy rewrites, or extrapolation of model year from stock listings.",
+    "No new unambiguous repeat of the three narrow error classes remains in the final snapshot; this is not a claim that every catalogue fact is independently validated."
+  ],
+  "finalInputSha256": {
+    "src/lib/data.ts": "e0923a1cf1ab8ce2dafb8b84ac3eaedc33a285cc4cdcbdc3d9751dccdd2b1461",
+    "src/lib/types.ts": "3008f6281409554d53a0717877903c9ae20643694322abab77ac0a1a49d254d9",
+    "data/au_ev_all_variants_2026-10-06.json": "010ded194b4d61cd7be606ce0cc332fa7e32906bba70abff2b5c38541e634657",
+    "data/catalogue-additions-2026-10-10.json": "eb28ff82a993abb24c933b7a064454215c2099e50bea8dc9bbcbd34e63899cae",
+    "data/approved-feature-corrections.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "data/omoda-jaecoo-evidence.json": "c36969258e4e71bc9d1665353ade268172de22a086098f75dc2d288a563e00cb",
+    "data/deepal-evidence.json": "aa59e9b63de72ce04b17455313339b4ff431768b7dce981bbcc998bb9b153253",
+    "data/leapmotor-evidence.json": "0bc0cfc07318b6e31318474a0fe511967520e977b54ec08fbdfde3fce4cfb765",
+    "data/geely-zeekr-xpeng-evidence.json": "60bd246dfaa6a8b359610df7c6f9016eabaf4046e9eaa87e63352054dfcd70b7",
+    "data/lexus-nissan-genesis-evidence-2026-10-10.json": "8ed580851b782813c5600e34725e8de8a20fa6606a5622e00564d45e5282d9df"
+  }
+}

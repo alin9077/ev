@@ -1,0 +1,47 @@
+{
+  "recordCount": 32,
+  "strengthCount": 32,
+  "tradeoffCount": 32,
+  "uniqueVariantCount": 32,
+  "makeCounts": {
+    "Audi": 7,
+    "Porsche": 25
+  },
+  "taycanModelRows": 14,
+  "optionalTaycanBranchesAddedAsRows": 0,
+  "dependencyCount": 631,
+  "usedPrimarySourceCount": 95,
+  "sourceSnapshotHashesVerified": 95,
+  "allPricesNull": true,
+  "noStrictNewStockPromoted": true,
+  "allEquipmentAlreadyParentApplied": true,
+  "noNewCriteria": true,
+  "noDefaultOptionsListUsed": true,
+  "runtimeReaderCheck": "Passed read-only invocation against final effective facts and 22 parent-approved equipment rows",
+  "runtimeValidation": {
+    "passed": true,
+    "summaryCount": 32,
+    "clauseCount": 64,
+    "isolatedDependencyMutations": 567,
+    "comparisonBasisMarketScopeMutations": 1536,
+    "mandatoryContextMutations": 160,
+    "requiredSourceCount": 95,
+    "sourceMutationCases": 475,
+    "checks": [
+      "All 32 summaries and 64 clauses render against the actual catalogue(), effectiveFeatures() and research().sources.",
+      "All 631 full dependency snapshots match effective facts/features, identity and source eligibility, including comparison basis, market and scope.",
+      "Every 567 clause-used dependency independently value-mutation-tested; only dependent clauses disappear.",
+      "All 1536 comparisonBasis/market/scope mutations fail closed for each clause-used fact.",
+      "All 160 range qualification, battery basis, charging window, model-code and current-availability cases suppress the affected complete summary.",
+      "All clause-used equipment conditions fail closed when changed; all 22 approved rows use existing criteria and no broad options list.",
+      "All seven Audi production-revision guards reject an earlier applicability date; formal MY remains 2026/2027, separate from build/publication dates.",
+      "All prices can change/expire without suppressing independent technical clauses; all copy expires beyond the 30-day evidence window.",
+      "All 95 identity/clause sources tested missing, stale, held, conflicted and access-limited (475 cases), including the second reader stage.",
+      "The 70 kg DIN-weight derivation validates exact same-measure operands; a changed result suppresses only that strength.",
+      "Exactly 7 Audi + 25 Porsche rows / 14 Taycan models / 32 routes; all prices null and stock unverified; Weissach two seats and AU 5KA Coup\u00e9 five-seat condition retained."
+    ]
+  },
+  "distinctStrengthTexts": 32,
+  "distinctTradeoffTexts": 32,
+  "noWholeRecordRankingPromotion": true
+}

@@ -1,0 +1,46 @@
+{
+  "schema": "roadmark98.narrow-detail-reflow-candidate.v1",
+  "status": "static-only-unexecuted-requires-independent-review",
+  "appRoot": "roadmark-work/roadmark",
+  "applicationRoot": "/workspace/scratch/586427eef9f2/roadmark-work/roadmark",
+  "baseline": "Current checkpoint97 application observed read-only; reported defect also reproduces on baseline96",
+  "runtimeScope": "Only three declaration changes in two existing exact-detail CSS rules; no markup, copy, research, data, hero, asset or behavior changes",
+  "files": [
+    {
+      "path": "src/app/globals.css",
+      "beforeSHA256": "18bd4641d0b37f32dea2f54c9ed3d8a6169e6a7d4503cb62d37e1cb96343d74e",
+      "sha256": "11eeef2b51b61ebba20d91051d3059bdde177b1cb25dc4eac1466073d6a0b2d4",
+      "bytes": 113757
+    },
+    {
+      "path": "tests/detail-responsive.test.ts",
+      "beforeSHA256": null,
+      "sha256": "3daaa34d3d0b278ee4115a0e83168ea0ab7a86061e1b72473d5232ebb55f01f4",
+      "bytes": 2500
+    },
+    {
+      "path": "tests/e2e/detail-reflow.spec.ts",
+      "beforeSHA256": null,
+      "sha256": "f5a7cd3d9fafe24515a9f055e7edd899dbec879674f882f8b3a87876e23981b9",
+      "bytes": 5138
+    }
+  ],
+  "declaredNewNodeTests": 3,
+  "declaredNewBrowserTests": 6,
+  "configuredBrowserProjects": 3,
+  "observedTestRuns": 0,
+  "historicalReaderChanges": [],
+  "artifacts": [
+    {
+      "path": "candidate.patch",
+      "sha256": "3b0b1bc7d5c2ef36273e8e740ea1007abe80eb171ba91a916e8e189a2d1b6312",
+      "bytes": 8390
+    },
+    {
+      "path": "REPORT.md",
+      "sha256": "d26ed6c398d55d88b8549699f6324274c9a4dc5db49a01127d134d326bbc1e2e",
+      "bytes": 7819
+    }
+  ],
+  "rootOwns": "Independent review, application, executable checks, rebuilt-artifact verification, browser and visual QA, checkpoint packaging and acceptance"
+}

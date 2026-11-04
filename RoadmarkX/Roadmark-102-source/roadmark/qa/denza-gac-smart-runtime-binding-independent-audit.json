@@ -1,0 +1,233 @@
+{
+  "status": "PASS",
+  "capturedAt": "2026-10-10T16:36:23.876203+00:00",
+  "scope": "Independent research-only source/JSON audit. No app/producer imports, app changes, runtime execution, builds, or binder regeneration.",
+  "checks": 14621,
+  "checksByCategory": {
+    "frozen_inputs": 5,
+    "immutable_inputs": 9,
+    "root_proof": 6,
+    "scope": 7,
+    "source_registry": 4,
+    "source_wrapper": 86,
+    "source_wrapper_hash": 86,
+    "source_eligibility": 86,
+    "source_identity": 86,
+    "source_projection": 52,
+    "source_bytes": 149,
+    "source_sizes": 149,
+    "source_snapshot_policy": 149,
+    "copy_exact": 60,
+    "identity_guard": 15,
+    "availability_guard": 15,
+    "identity_projection": 165,
+    "cross_grade_closure": 62,
+    "source_record_identity": 32,
+    "source_record_hash": 32,
+    "source_identity_fields": 224,
+    "source_variant_projection": 32,
+    "source_availability_projection": 32,
+    "guard_source_wrapper": 32,
+    "guard_source_hash": 32,
+    "guard_source_boundary": 32,
+    "guard_source_projection": 32,
+    "related_identity_guard": 17,
+    "related_availability_guard": 17,
+    "guard_source_closure": 31,
+    "dependency_closure": 31,
+    "clause_attribution": 30,
+    "dependency_wrapper": 106,
+    "dependency_wrapper_hash": 106,
+    "projected_dependency_hash": 106,
+    "dependency_projection": 212,
+    "dependency_locators": 106,
+    "model_year": 30,
+    "effective_fact_exact": 3121,
+    "effective_fact_key": 3136,
+    "all_fact_source_closure": 3136,
+    "loader_only_unknown": 15,
+    "required_null_holds": 498,
+    "availability_boundaries": 33,
+    "copy_boundaries": 54,
+    "exact_dependency_schema": 117,
+    "dependency_fields": 1872,
+    "executable_dependency_eligibility": 117,
+    "unknown_year_identity_anchor": 21,
+    "totals": 4,
+    "held_boundaries": 1,
+    "expiry_scope": 1,
+    "runtime_source_inspection": 22,
+    "expiry_source_inspection": 2,
+    "read_only_input_stability": 8
+  },
+  "failures": [],
+  "copyPairs": 15,
+  "executableDependencies": 121,
+  "originalDependencyBindings": 106,
+  "visibleConditions": 103,
+  "relatedIdentityGuards": 17,
+  "effectiveOwnFactsGuarded": 3136,
+  "stagedFacts": 3121,
+  "loaderOnlyUnknowns": [
+    {
+      "variantId": "denza_d9_fwd_my26_au__20261010",
+      "key": "ground_clearance_mm"
+    },
+    {
+      "variantId": "denza_d9_awd_my26_au__20261010",
+      "key": "ground_clearance_mm"
+    },
+    {
+      "variantId": "gac_aion_ut_premium_fwd_current_au__20261010",
+      "key": "ground_clearance_mm"
+    },
+    {
+      "variantId": "gac_aion_ut_luxury_fwd_current_au__20261010",
+      "key": "ground_clearance_mm"
+    },
+    {
+      "variantId": "gac_aion_v_premium_fwd_current_au__20261010",
+      "key": "ground_clearance_mm"
+    },
+    {
+      "variantId": "gac_aion_v_luxury_fwd_current_au__20261010",
+      "key": "ground_clearance_mm"
+    },
+    {
+      "variantId": "smart_1_pro_plus_current_au__20261010",
+      "key": "ground_clearance_mm"
+    },
+    {
+      "variantId": "smart_1_premium_current_au__20261010",
+      "key": "ground_clearance_mm"
+    },
+    {
+      "variantId": "smart_1_brabus_current_au__20261010",
+      "key": "ground_clearance_mm"
+    },
+    {
+      "variantId": "smart_3_pro_plus_current_au__20261010",
+      "key": "ground_clearance_mm"
+    },
+    {
+      "variantId": "smart_3_premium_current_au__20261010",
+      "key": "ground_clearance_mm"
+    },
+    {
+      "variantId": "smart_3_brabus_current_au__20261010",
+      "key": "ground_clearance_mm"
+    },
+    {
+      "variantId": "smart_5_pro_plus_current_au__20261010",
+      "key": "ground_clearance_mm"
+    },
+    {
+      "variantId": "smart_5_premium_current_au__20261010",
+      "key": "ground_clearance_mm"
+    },
+    {
+      "variantId": "smart_5_brabus_current_au__20261010",
+      "key": "ground_clearance_mm"
+    }
+  ],
+  "acceptedSourceSnapshots": 26,
+  "sourceRegistryWrappers": 86,
+  "researchOnlyExcludedSources": [
+    "r10_dgs_alto_ut_premium",
+    "r10_dgs_alto_v_luxury",
+    "r10_dgs_alto_v_premium",
+    "r10_dgs_bayside_ut_luxury",
+    "r10_dgs_carsales_web_discovery",
+    "r10_dgs_configurator_modelList",
+    "r10_dgs_denza_brisbane_new",
+    "r10_dgs_denza_canberra_new",
+    "r10_dgs_denza_d9_my26_spec",
+    "r10_dgs_denza_goldcoast_new",
+    "r10_dgs_denza_melbourne_awd_sold",
+    "r10_dgs_denza_melbourne_config",
+    "r10_dgs_denza_melbourne_fwd_new",
+    "r10_dgs_denza_melbourne_fwd_sold",
+    "r10_dgs_denza_melbourne_model",
+    "r10_dgs_denza_melbourne_new",
+    "r10_dgs_denza_melbourne_warranty",
+    "r10_dgs_denza_offers",
+    "r10_dgs_denza_parramatta_new",
+    "r10_dgs_denza_sunshine_demo",
+    "r10_dgs_denza_support",
+    "r10_dgs_denza_sydney_new",
+    "r10_dgs_denza_terms",
+    "r10_dgs_gac_cached_web_extract",
+    "r10_dgs_gac_home",
+    "r10_dgs_gac_manual_index",
+    "r10_dgs_gac_ut_first600_pdf",
+    "r10_dgs_gac_ut_model_image_2",
+    "r10_dgs_gac_ut_model_image_3",
+    "r10_dgs_gac_ut_offer",
+    "r10_dgs_gac_ut_offer_image_0",
+    "r10_dgs_gac_ut_price",
+    "r10_dgs_gac_v_model_image_4",
+    "r10_dgs_gac_v_model_image_5",
+    "r10_dgs_gac_v_offer",
+    "r10_dgs_gac_v_offer_image_1",
+    "r10_dgs_gac_v_price",
+    "r10_dgs_lsh_home",
+    "r10_dgs_lsh_make_filter",
+    "r10_dgs_lsh_stock",
+    "r10_dgs_lsh_stock_js",
+    "r10_dgs_lsh_stock_smart",
+    "r10_dgs_lsh_stock_smart_keyword",
+    "r10_dgs_norris_ut_ambiguous",
+    "r10_dgs_preston_ut_luxury",
+    "r10_dgs_preston_v_premium_demo",
+    "r10_dgs_preston_v_premium_residual",
+    "r10_dgs_smart_1_3_launch",
+    "r10_dgs_smart_1_comparison_browser",
+    "r10_dgs_smart_1_docx_tables",
+    "r10_dgs_smart_3_brochure_commented",
+    "r10_dgs_smart_3_comparison_browser",
+    "r10_dgs_smart_3_docx_tables",
+    "r10_dgs_smart_5_comparison_browser",
+    "r10_dgs_smart_brochure_form",
+    "r10_dgs_smart_compare_js",
+    "r10_dgs_smart_home",
+    "r10_dgs_smart_manuals",
+    "r10_dgs_smart_special_offers",
+    "r10_dgs_smart_warranty"
+  ],
+  "frozenSourceSnapshots": 149,
+  "rootProofChecks": 4026,
+  "inputHashes": {
+    "bind_denza_gac_smart_runtime_copy.py": "eed95ed5d7569f1498277867c336d05d8c34ce26ea76bf92947c6ea48e68b86c",
+    "denza-gac-smart-runtime-copy-payload.json": "591794fae0f18c87f7e3dc41ca9904c374cc3dc5058754a9c476fa195d7d07f3",
+    "denza-gac-smart-runtime-source-copy-proof.json": "99d8219224d3bcf467e8306620cb971e8bd7657a4013711b2d9603a5bea2b8f4",
+    "denza-gac-smart-binding-effective-snapshot.json": "ead44e34d8a90aec3fb4c21357920e6f5a7b0d666cf64d06c565ebdf248c5878",
+    "denza-gac-smart-buyer-copy-source-proposal.json": "87e895ac6ab1f4a524a33df056c4559438d598b0c81755fce7f9675b99aa6073",
+    "denza-gac-smart-staged-delta.json": "cbfd0267eb25a5f8a34cb6209d75dce6e222a0a097bc07558446b0a0d9f3e2b2",
+    "remaining-denza-gac-smart/evidence.json": "d9619c65f8bcde5a8a927735e67ed9f0f0a6632704529f4918626704672f1053",
+    "denza-gac-smart-integration-boundaries.json": "6264edf752b2c473f6f3f2336363e5937370a73601ae7bfd8c1bdf59ea50dd1b"
+  },
+  "runtimeSourceHashes": {
+    "selling-points.ts": "6bc95a324b3f0490950ac58a745d7f299554ad0a9fe98d203ff9e9ee7ff9dcb2",
+    "discovery.ts": "1e571fe9603e26e561ed1a27bdf16503559a574936f5a9c1ccf8e52f8ed3e536",
+    "fact-validity.ts": "6ca1ba756a420d61700db62c7fb58b4ec8b89f632f124a4da4de5eed95373eb5"
+  },
+  "observations": [
+    "All runtime source snapshots are admitted. The root excludedSources=[] is scoped to those 26 sources; 60 original registry sources remain research-only and are not executable.",
+    "The 15 extra effective facts are ground_clearance_mm=null/not_verified with no citations. They are fully identity-guarded.",
+    "All 106 original claim dependencies and 11 sourced model-year dependencies are exact complete fact snapshots. The other four GAC model-year dependencies use the existing variant_property guard with expectedValue=null, anchored only to their own admitted primary-manufacturer configuration source. The complete null/not_verified/sourceIds=[] facts remain unchanged and fully identity-guarded. No manufacturer model year or MY fact provenance is invented.",
+    "No buyer clause uses a limited-time offer price or availability guarantee. Promotional order dates/first-60/delivery uncertainty remain exact availability qualifications; no validUntil fact exists, so buyer-copy expiry relies on evidence-age freshness. Explicit offer-deadline expiry is not separately encoded for the advertised-order status."
+  ],
+  "resolvedInitialBlocker": {
+    "code": "GAC_UNKNOWN_MODEL_YEAR_SOURCELESS_DEPENDENCY",
+    "initialFailedChecks": 4,
+    "resolution": "Four narrow existing variant_property identity guards; frozen model-year facts, their empty citations and car.year=null unchanged.",
+    "variantIds": [
+      "gac_aion_ut_premium_fwd_current_au__20261010",
+      "gac_aion_ut_luxury_fwd_current_au__20261010",
+      "gac_aion_v_premium_fwd_current_au__20261010",
+      "gac_aion_v_luxury_fwd_current_au__20261010"
+    ]
+  },
+  "blockers": [],
+  "runtimeVerification": "Pending root executable mutation/date-expiry tests and rendered UI verification. Static source token checks do not establish runtime behavior or 296/289 preservation independently."
+}

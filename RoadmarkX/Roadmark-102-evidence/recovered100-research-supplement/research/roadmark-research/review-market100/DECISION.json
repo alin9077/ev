@@ -1,0 +1,126 @@
+{
+  "decision": "GO_EXACT_CANDIDATE_ROOT_APPLICATION_AND_EXECUTION_ONLY",
+  "blockingFindings": [],
+  "candidateManifest": {
+    "path": "roadmark-research/market100-candidate/manifest.json",
+    "sha256": "52061d869f2e1cab0ca3cec6252a57200f251bb4b7317337dd3f9cf168ebaa66"
+  },
+  "patch": {
+    "path": "roadmark-research/market100-candidate/changes.patch",
+    "sha256": "318c9dd458bf913dc1b2bd5fa039b7691dc4553c842c136a1969e54888f44379"
+  },
+  "stagedFiles": [
+    {
+      "path": "data/market-inventory-2026-10-10.json",
+      "operation": "replace",
+      "beforeSHA256": "ea4e4f7120e7739de987405740641997c15c6bb0704082724ae3d38055b6fdfa",
+      "afterSHA256": "2469610f9bea19221ed99483b01ca23ca4f9bb62356a873398e9895c2eb838ac",
+      "exactManifestMatch": true
+    },
+    {
+      "path": "qa/checkpoint100-market-fixture.json",
+      "operation": "add",
+      "beforeSHA256": null,
+      "afterSHA256": "6ca6057ef2db97fb7aa1251e307f9d419c88dadfe67d2390014ccd436f967837",
+      "exactManifestMatch": true
+    },
+    {
+      "path": "tests/checkpoint100-market.test.ts",
+      "operation": "add",
+      "beforeSHA256": null,
+      "afterSHA256": "6775f4db0d4f78753527e266634d25aa1a10339489f25fa89b7daa002319fd78",
+      "exactManifestMatch": true
+    },
+    {
+      "path": "tests/helpers/checkpoint100-market-history.ts",
+      "operation": "add",
+      "beforeSHA256": null,
+      "afterSHA256": "a388c1bc6f141ca96cb4175711089500f8f8388146125720e7144152376063f2",
+      "exactManifestMatch": true
+    },
+    {
+      "path": "tests/helpers/checkpoint99-history.ts",
+      "operation": "replace",
+      "beforeSHA256": "80ef31bac488635dbf69fdac7b7d4dbd2812ae53a6a08f3e8b68de7d2efe71d7",
+      "afterSHA256": "4493739f161f9838ffd571f85aff34daa97b032d9e87c83b9bd5d20b36d9e1ed",
+      "exactManifestMatch": true
+    }
+  ],
+  "exactHeldObjects": 10,
+  "changedFieldsEach": [
+    "checkedAt",
+    "evidenceNote",
+    "limitations",
+    "sourceUrls"
+  ],
+  "all1675Saved99InputPinsMatch": true,
+  "exactSaved99InventoryBytesRestored": true,
+  "existing99AssertionsAndPinsPreserved": true,
+  "rawPublisherPayloadDelivery": false,
+  "runtimeOrTestPassClaimed": false,
+  "notRun": [
+    "application/candidate imports",
+    "application/candidate execution",
+    "syntax checks",
+    "focused tests",
+    "full tests",
+    "typecheck",
+    "lint",
+    "validation",
+    "production build",
+    "portable rebuild/parity",
+    "browser QA"
+  ],
+  "reviewArtifacts": [
+    {
+      "path": "roadmark-research/review-market100/INITIAL-RESEARCH-REVIEW.md",
+      "sha256": "c30d306dd8bfd1230dfea268c6b49203c4d2b665c0c7e19c84908b47f38ab028",
+      "bytes": 3470
+    },
+    {
+      "path": "roadmark-research/review-market100/REVIEW.md",
+      "sha256": "802b28fb30d187a065d481cfb4d13c101ff71e70f0909e080d83da4fd6f5c015",
+      "bytes": 6101
+    },
+    {
+      "path": "roadmark-research/review-market100/bmw-source-scope-check.json",
+      "sha256": "b3e5f940e1bdbba17bf31678071eab6c1bf8cc1b5f27355dd9be1b205ee61ea1",
+      "bytes": 1603
+    },
+    {
+      "path": "roadmark-research/review-market100/candidate-code-and-packet-review.json",
+      "sha256": "8f6637b1a5c76362d4fa297bda62a20d8af78e8ceb001c5fb1deb3d34463ba85",
+      "bytes": 1957
+    },
+    {
+      "path": "roadmark-research/review-market100/candidate-data-review.json",
+      "sha256": "e7f998078feb86379dc187b0695a3da6a9fb1c32e91db324352a36d41b0765e6",
+      "bytes": 4630
+    },
+    {
+      "path": "roadmark-research/review-market100/initial-baseline-check.json",
+      "sha256": "b9d4c33cadc7960062db79186890659ba9b5bb196de1a299bf4a5da0e9556991",
+      "bytes": 14945
+    },
+    {
+      "path": "roadmark-research/review-market100/inventory.diff",
+      "sha256": "087813606df0f6b9d2e72aa3214da9f92d7b8e77cc80f2e83a0c8a73a18e3513",
+      "bytes": 20620
+    },
+    {
+      "path": "roadmark-research/review-market100/research-integrity-check.json",
+      "sha256": "cd319c59ab508d8a33570ec691a161870a0a4a4a9c905476048e20d2a70824ba",
+      "bytes": 3573
+    },
+    {
+      "path": "roadmark-research/review-market100/final-packet-seal-check.json",
+      "sha256": "1fe31efa8ffc4a6104e04cf342449b049f0fa212fac390246ee4e6502fd50084",
+      "bytes": 1944
+    }
+  ],
+  "candidatePackageSeal": {
+    "path": "roadmark-research/market100-candidate/SHA256SUMS",
+    "sha256": "eeb4e4a0bdf0b8484a1f2e507ec39144aaa08105157c3ad1754c2bb6c9a808c4",
+    "verifiedMembers": 10
+  }
+}

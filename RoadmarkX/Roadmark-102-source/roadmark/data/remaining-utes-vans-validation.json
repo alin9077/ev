@@ -1,0 +1,1976 @@
+{
+  "schemaVersion": "roadmark.remaining-utes-vans-validation.v1",
+  "checkedAt": "2026-10-10",
+  "evidencePath": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-evidence.json",
+  "evidenceSha256": "8208fbc69eb295c59bb5b5dcb8102d4493d3d31182af59a49186742eba85b857",
+  "pass": true,
+  "recordCount": 7,
+  "familyCount": 4,
+  "recommendedRecordCount": 7,
+  "factCount": 817,
+  "factStatusCounts": {
+    "verified": 681,
+    "not_fitted": 2,
+    "unknown": 102,
+    "conflicted": 1,
+    "conflicting_source_declaration": 4,
+    "not_applicable_to_available_assessment": 1,
+    "verified_dealer_supported": 4,
+    "dealer_claim_official_count_not_found": 2,
+    "calculated_not_quoted": 2,
+    "manufacturer_claim": 4,
+    "held": 6,
+    "source_scope_caveat": 2,
+    "dealer_supported": 2,
+    "not_applicable": 2,
+    "source_data": 2
+  },
+  "nullFactCount": 114,
+  "evidenceReferenceCount": 760,
+  "pdfEvidenceReferenceCount": 652,
+  "uniqueUsedPdfPages": 21,
+  "usedPdfPages": [
+    {
+      "sourceId": "farizon_v7e_pdf",
+      "pdfPage": 6
+    },
+    {
+      "sourceId": "farizon_v7e_pdf",
+      "pdfPage": 12
+    },
+    {
+      "sourceId": "farizon_v7e_pdf",
+      "pdfPage": 13
+    },
+    {
+      "sourceId": "kgm_musso_ev_my26_specs",
+      "pdfPage": 1
+    },
+    {
+      "sourceId": "kgm_musso_ev_my26_specs",
+      "pdfPage": 2
+    },
+    {
+      "sourceId": "kgm_musso_ev_my26_specs",
+      "pdfPage": 3
+    },
+    {
+      "sourceId": "pv5_brochure",
+      "pdfPage": 2
+    },
+    {
+      "sourceId": "pv5_brochure",
+      "pdfPage": 3
+    },
+    {
+      "sourceId": "pv5_brochure",
+      "pdfPage": 4
+    },
+    {
+      "sourceId": "pv5_warranty_terms",
+      "pdfPage": 3
+    },
+    {
+      "sourceId": "pv5_warranty_terms",
+      "pdfPage": 4
+    },
+    {
+      "sourceId": "staria_ancap",
+      "pdfPage": 1
+    },
+    {
+      "sourceId": "staria_specs",
+      "pdfPage": 7
+    },
+    {
+      "sourceId": "staria_specs",
+      "pdfPage": 8
+    },
+    {
+      "sourceId": "staria_specs",
+      "pdfPage": 9
+    },
+    {
+      "sourceId": "staria_specs",
+      "pdfPage": 10
+    },
+    {
+      "sourceId": "staria_specs",
+      "pdfPage": 11
+    },
+    {
+      "sourceId": "staria_specs",
+      "pdfPage": 12
+    },
+    {
+      "sourceId": "staria_specs",
+      "pdfPage": 13
+    },
+    {
+      "sourceId": "staria_warranty_terms",
+      "pdfPage": 1
+    },
+    {
+      "sourceId": "staria_warranty_terms",
+      "pdfPage": 5
+    }
+  ],
+  "sourceCount": 49,
+  "sourceGuardedWrapperCount": 1170,
+  "additionalEquipmentAndConfigurationWrapperCount": 353,
+  "fullSourceManifestFileCount": 201,
+  "fullSourceManifestAllHashesMatch": true,
+  "hashCheckCount": 181,
+  "checks": [
+    {
+      "check": "unique_record_ids",
+      "pass": true
+    },
+    {
+      "check": "unique_source_ids",
+      "pass": true
+    },
+    {
+      "check": "all_non_null_facts_source_guarded",
+      "pass": true
+    },
+    {
+      "check": "all_pdf_evidence_has_reviewed_page",
+      "pass": true
+    },
+    {
+      "check": "all_registered_original_and_text_hashes_match",
+      "pass": true
+    },
+    {
+      "check": "no_physical_stock_claim",
+      "pass": true
+    },
+    {
+      "check": "automatic_ranking_disabled",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "warnings": [],
+  "snapshotChecks": [
+    {
+      "sourceId": "kgm_musso_ev",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/kgm_musso_ev.html",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "kgm_musso_ev",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/kgm_musso_ev.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "kgm_musso_ev",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/kgm_musso_ev.flight.txt",
+      "kind": "derived",
+      "pass": true
+    },
+    {
+      "sourceId": "kgm_musso_ev",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/kgm_musso_ev.modelData.json",
+      "kind": "derived",
+      "pass": true
+    },
+    {
+      "sourceId": "kgm_musso_ev_my26_specs",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/kgm_musso_ev_my26_specs.pdf",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "kgm_musso_ev_my26_specs",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/kgm_musso_ev_my26_specs.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "kgm_warranty",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/kgm_warranty.html",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "kgm_warranty",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/kgm_warranty.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "kgm_musso_ev_launch",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/kgm_musso_ev_launch.html",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "kgm_musso_ev_launch",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/kgm_musso_ev_launch.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "kgm_offers",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/kgm_offers.html",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "kgm_offers",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/kgm_offers.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "ancap_musso_safety_alert",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/ancap_musso_safety_alert.html",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "ancap_musso_safety_alert",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/ancap_musso_safety_alert.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "geelong_new_2wd_3877576",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/geelong_new_2wd_3877576.html",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "geelong_new_2wd_3877576",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/geelong_new_2wd_3877576.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "village_new_blackedge_3947630",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/village_new_blackedge_3947630.html",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "village_new_blackedge_3947630",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/village_new_blackedge_3947630.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "kgm_warranty_terms",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/kgm_warranty_terms.html",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "kgm_warranty_terms",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/kgm_warranty_terms.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "geelong_new_awd_4035651",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/geelong_new_awd_4035651.html",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "geelong_new_awd_4035651",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/geelong_new_awd_4035651.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "pv5_brochure",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_brochure.pdf",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "pv5_brochure",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_brochure.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "pv5_brochure",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_brochure-2.png",
+      "kind": "derived",
+      "pass": true
+    },
+    {
+      "sourceId": "pv5_brochure",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_brochure-3.png",
+      "kind": "derived",
+      "pass": true
+    },
+    {
+      "sourceId": "pv5_brochure",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_brochure-4.png",
+      "kind": "derived",
+      "pass": true
+    },
+    {
+      "sourceId": "pv5_brochure",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_brochure-pdfinfo.txt",
+      "kind": "derived",
+      "pass": true
+    },
+    {
+      "sourceId": "pv5_au",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_au.html",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "pv5_au",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_au.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "pv5_warranty",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_warranty.html",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "pv5_warranty",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_warranty.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "pv5_configurator",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_configurator.html",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "pv5_configurator",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_configurator.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "pv5_macarthur_new",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_macarthur_new.html",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "pv5_macarthur_new",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_macarthur_new.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "pv5_toowong_new",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_toowong_new.html",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "pv5_toowong_new",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_toowong_new.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "pv5_city_redirect",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_city_redirect.html",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "pv5_city_redirect",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_city_redirect.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "pv5_midland_redirect",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_midland_redirect.html",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "pv5_midland_redirect",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_midland_redirect.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "pv5_warranty_terms",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_warranty_terms.pdf",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "pv5_warranty_terms",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_warranty_terms.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "pv5_warranty_terms",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_warranty_terms-01.png",
+      "kind": "derived",
+      "pass": true
+    },
+    {
+      "sourceId": "pv5_warranty_terms",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_warranty_terms-02.png",
+      "kind": "derived",
+      "pass": true
+    },
+    {
+      "sourceId": "pv5_warranty_terms",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_warranty_terms-03.png",
+      "kind": "derived",
+      "pass": true
+    },
+    {
+      "sourceId": "pv5_warranty_terms",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_warranty_terms-04.png",
+      "kind": "derived",
+      "pass": true
+    },
+    {
+      "sourceId": "pv5_warranty_terms",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_warranty_terms-pdfinfo.txt",
+      "kind": "derived",
+      "pass": true
+    },
+    {
+      "sourceId": "pv5_ancap",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_ancap.html",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "pv5_ancap",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_ancap.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "farizon_v7e",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_v7e.html",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "farizon_v7e",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_v7e.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "farizon_home",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_home.html",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "farizon_home",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_home.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "farizon_bartons",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_bartons.html",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "farizon_bartons",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_bartons.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "farizon_servicing",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_servicing.html",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "farizon_servicing",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_servicing.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "farizon_ownership",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_ownership.html",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "farizon_ownership",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_ownership.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "farizon_offers",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_offers.html",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "farizon_offers",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_offers.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "farizon_bartons_range",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_bartons_range.html",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "farizon_bartons_range",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_bartons_range.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "farizon_bartons_stock",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_bartons_stock.html",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "farizon_bartons_stock",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_bartons_stock.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "farizon_v7e_pdf",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_v7e_pdf.pdf",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "farizon_v7e_pdf",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_v7e_pdf.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "farizon_v7e_bartons_pdf",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_v7e_bartons_pdf.pdf",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "farizon_v7e_bartons_pdf",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_v7e_bartons_pdf.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "farizon_bartons_er_541534",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_bartons_er_541534.html",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "farizon_bartons_er_541534",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_bartons_er_541534.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "farizon_bartons_sr_540814",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_bartons_sr_540814.html",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "farizon_bartons_sr_540814",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_bartons_sr_540814.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "farizon_bartons_er_541533",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_bartons_er_541533.html",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "farizon_bartons_er_541533",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_bartons_er_541533.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "farizon_eastcoast_demo_39435",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_eastcoast_demo_39435.html",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "farizon_eastcoast_demo_39435",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_eastcoast_demo_39435.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "farizon_configurator",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_configurator.html",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "farizon_configurator",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_configurator.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "farizon_eastcoast_range",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_eastcoast_range.html",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "farizon_eastcoast_range",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_eastcoast_range.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "farizon_stock_39435_web",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/countrycars_web_tool.json",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "farizon_stock_39435_web",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/countrycars_web_tool.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "staria_product",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_product.html",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "staria_product",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_product.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "staria_specs",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_specs.pdf",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "staria_specs",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_specs.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "staria_offers",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_offers.html",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "staria_offers",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_offers.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "staria_offers",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_offers.embedded.json",
+      "kind": "derived",
+      "pass": true
+    },
+    {
+      "sourceId": "staria_suttons_autotrader",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_suttons_autotrader.html",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "staria_suttons_autotrader",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_suttons_autotrader.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "staria_col_432486",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_col_432486.html",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "staria_col_432486",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_col_432486.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "staria_col_autotrader",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_col_autotrader.html",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "staria_col_autotrader",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_col_autotrader.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "staria_warranty_current",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_warranty_current.html",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "staria_warranty_current",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_warranty_current.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "staria_warranty_terms",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_warranty_terms.pdf",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "staria_warranty_terms",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_warranty_terms.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "staria_battery_terms",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_battery_terms.pdf",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "staria_battery_terms",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_battery_terms.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "staria_ancap",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_ancap.pdf",
+      "kind": "snapshot_path",
+      "pass": true
+    },
+    {
+      "sourceId": "staria_ancap",
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_ancap.txt",
+      "kind": "text_snapshot_path",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/kgm_musso_ev.flight.txt",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/kgm_musso_ev.modelData.json",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/kgm_musso_ev_my26_specs.p1.txt",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/kgm_musso_ev_my26_specs.p2.txt",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/kgm_musso_ev_my26_specs.p3.txt",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/rendered/kgm_musso_ev_my26_specs-1.png",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/rendered/kgm_musso_ev_my26_specs-2.png",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/rendered/kgm_musso_ev_my26_specs-3.png",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_brochure-2.png",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_brochure-3.png",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_brochure-4.png",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_brochure-pdfinfo.txt",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_warranty_terms-01.png",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_warranty_terms-02.png",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_warranty_terms-03.png",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_warranty_terms-04.png",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_warranty_terms-pdfinfo.txt",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-01.png",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-02.png",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-03.png",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-04.png",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-05.png",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-06.png",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-07.png",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-08.png",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-09.png",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-10.png",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-11.png",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-12.png",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-13.png",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-hi-12.png",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-hi-13.png",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/bartons-hi-12.png",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/bartons-hi-13.png",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_specs.p1.txt",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_specs.p2.txt",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_specs.p3.txt",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_specs.p4.txt",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_specs.p5.txt",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_specs.p6.txt",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_specs.p7.txt",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_specs.p8.txt",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_specs.p9.txt",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_specs.p10.txt",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_specs.p11.txt",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_specs.p12.txt",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_specs.p13.txt",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/spec_page-07.png",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/spec_page-08.png",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/spec_page-09.png",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/spec_page-10.png",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/spec_page-11.png",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/spec_page-12.png",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/spec_page-13.png",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_offers.embedded.json",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_warranty_terms.p1.txt",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_warranty_terms.p2.txt",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_warranty_terms.p3.txt",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_warranty_terms.p4.txt",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_warranty_terms.p5.txt",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_warranty_terms.p6.txt",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_warranty_terms.p7.txt",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_warranty_terms.p8.txt",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/warranty_page-1.png",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/warranty_page-5.png",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_battery_terms.p1.txt",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_battery_terms.p2.txt",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_battery_terms.p3.txt",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_ancap.p1.txt",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_ancap.p2.txt",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_ancap.p3.txt",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_ancap.p4.txt",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_ancap.p5.txt",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_ancap.p6.txt",
+      "kind": "nested_source_artifact",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/ancap_page-1.png",
+      "kind": "nested_source_artifact",
+      "pass": true
+    }
+  ],
+  "fullSourceManifestChecks": [
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/bartons-hi-12.png",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/bartons-hi-13.png",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/build_farizon.py",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/countrycars_web_tool.json",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/countrycars_web_tool.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_bartons.html",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_bartons.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_bartons_er_541533.html",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_bartons_er_541533.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_bartons_er_541534.html",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_bartons_er_541534.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_bartons_range.html",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_bartons_range.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_bartons_sr_540814.html",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_bartons_sr_540814.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_bartons_stock.html",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_bartons_stock.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_configurator.html",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_configurator.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_eastcoast_demo_39435.html",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_eastcoast_demo_39435.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_eastcoast_range.html",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_eastcoast_range.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_home.html",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_home.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_offers.html",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_offers.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_ownership.html",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_ownership.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_servicing.html",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_servicing.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_v7e.html",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_v7e.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_v7e_bartons_pdf.pdf",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_v7e_bartons_pdf.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_v7e_pdf.pdf",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/farizon_v7e_pdf.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/fetch.py",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/manifest.json",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-01.ocr.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-01.png",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-02.ocr.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-02.png",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-03.ocr.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-03.png",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-04.ocr.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-04.png",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-05.ocr.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-05.png",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-06.ocr.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-06.png",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-07.ocr.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-07.png",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-08.ocr.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-08.png",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-09.ocr.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-09.png",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-10.ocr.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-10.png",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-11.ocr.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-11.png",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-12.ocr.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-12.png",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-13.ocr.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-13.png",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-hi-12.ocr.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-hi-12.png",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-hi-13.ocr.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/farizon/official-hi-13.png",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/ancap_musso_safety_alert.html",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/ancap_musso_safety_alert.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/geelong_new_2wd_3877576.html",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/geelong_new_2wd_3877576.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/geelong_new_awd_4035651.html",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/geelong_new_awd_4035651.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/kgm_musso_ev.flight.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/kgm_musso_ev.html",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/kgm_musso_ev.modelData.json",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/kgm_musso_ev.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/kgm_musso_ev_launch.html",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/kgm_musso_ev_launch.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/kgm_musso_ev_my26_specs.p1.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/kgm_musso_ev_my26_specs.p2.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/kgm_musso_ev_my26_specs.p3.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/kgm_musso_ev_my26_specs.pdf",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/kgm_musso_ev_my26_specs.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/kgm_offers.html",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/kgm_offers.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/kgm_warranty.html",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/kgm_warranty.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/kgm_warranty_terms.html",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/kgm_warranty_terms.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/manifest.json",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/rendered/kgm_musso_ev_my26_specs-1.png",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/rendered/kgm_musso_ev_my26_specs-2.png",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/rendered/kgm_musso_ev_my26_specs-3.png",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/village_new_blackedge_3947630.html",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/musso/village_new_blackedge_3947630.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/manifest.json",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_ancap.html",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_ancap.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_au.html",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_au.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_brochure-2.png",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_brochure-3.png",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_brochure-4.png",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_brochure-pdfinfo.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_brochure.pdf",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_brochure.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_city_redirect.html",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_city_redirect.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_configurator.html",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_configurator.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_macarthur_new.html",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_macarthur_new.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_midland_redirect.html",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_midland_redirect.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_toowong_new.html",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_toowong_new.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_warranty.html",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_warranty.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_warranty_terms-01.png",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_warranty_terms-02.png",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_warranty_terms-03.png",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_warranty_terms-04.png",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_warranty_terms-pdfinfo.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_warranty_terms.pdf",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/pv5/pv5_warranty_terms.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/ancap_page-1.png",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/registry-extra.json",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/registry.json",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/spec_page-07.png",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/spec_page-08.png",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/spec_page-09.png",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/spec_page-10.png",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/spec_page-11.png",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/spec_page-12.png",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/spec_page-13.png",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_ancap.p1.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_ancap.p2.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_ancap.p3.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_ancap.p4.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_ancap.p5.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_ancap.p6.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_ancap.pdf",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_ancap.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_battery_terms.p1.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_battery_terms.p2.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_battery_terms.p3.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_battery_terms.pdf",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_battery_terms.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_col_432486.html",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_col_432486.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_col_autotrader.html",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_col_autotrader.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_col_autotrader_search.html",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_col_autotrader_search.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_col_search.html",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_col_search.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_col_stock.html",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_offers.embedded.json",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_offers.html",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_offers.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_product.html",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_product.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_specs.p1.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_specs.p10.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_specs.p11.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_specs.p12.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_specs.p13.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_specs.p2.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_specs.p3.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_specs.p4.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_specs.p5.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_specs.p6.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_specs.p7.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_specs.p8.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_specs.p9.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_specs.pdf",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_specs.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_suttons_autotrader.html",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_suttons_autotrader.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_warranty.html",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_warranty.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_warranty_current.html",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_warranty_current.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_warranty_terms.p1.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_warranty_terms.p2.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_warranty_terms.p3.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_warranty_terms.p4.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_warranty_terms.p5.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_warranty_terms.p6.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_warranty_terms.p7.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_warranty_terms.p8.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_warranty_terms.pdf",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/staria_warranty_terms.txt",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/warranty_page-1.png",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/warranty_page-2.png",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/warranty_page-3.png",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/warranty_page-4.png",
+      "pass": true
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/remaining-utes-vans-sources/staria/warranty_page-5.png",
+      "pass": true
+    }
+  ],
+  "scopeNote": "Validates evidence proposal only. Application was not edited by this research. This does not authorize automatic integration, certify type approval, verify physical stock or certify independent manufacturer claims."
+}

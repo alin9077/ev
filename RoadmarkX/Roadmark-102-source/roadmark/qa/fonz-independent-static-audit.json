@@ -1,0 +1,5579 @@
+{
+  "result": "PASS_STATIC_WITH_EXISTING_HOLDS",
+  "checkedAtUTC": "2026-10-10T20:38:14.813736+00:00",
+  "scope": "Supplemental independent static Fact/Issue schema and evidence-preservation audit. Supersedes the initial gate at the Issue-shape boundary; the earlier audit missed raw hold-ID strings where Issue objects were required. No application imports, runtime, tests, browser or app writes by auditor.",
+  "summary": {
+    "checks": 1358,
+    "passed": 1358,
+    "failed": 0,
+    "factsSchemaChecked": 159,
+    "structuredIssueOccurrences": 63,
+    "affectedFacts": 59,
+    "distinctReferencedHolds": 7,
+    "allSourceHolds": 11,
+    "rehashedAliasBoundaries": 8
+  },
+  "pinnedInputs": {
+    "roadmark-research/fonz-runtime-candidate/audit/static-audit.json": "12f6be1a12c884d74e8fc0514421febf6953cf0116e702b4bf2d40e301194fe7",
+    "roadmark-research/fonz-runtime-candidate/adapter-candidate-before-issue-shape-fix.json": "279f7fb461b6c5f64c2cee5ca68811c0b461c8e6ff695a8ec80e646a9a753153",
+    "roadmark-research/fonz-runtime-candidate/adapter-candidate.json": "529e769fabb86834e394780dac5ee7c2542a0175db2202c84ad66a2af0911360",
+    "roadmark-research/fonz-runtime-candidate/runtime-copy-payload-before-issue-shape-fix.json": "c40f5745e0152185fb61e3db28304aeff8092ab8c5ad949b28a0fa58c454cc57",
+    "roadmark-research/fonz-runtime-candidate/runtime-copy-payload.json": "2fcffef23f4802923b122df57565e15012cff6fc1bbebd88ad2b63894ddc8800",
+    "roadmark-research/fonz-runtime-candidate/binding-effective-snapshot.json": "563c47615bde44525456ed4dfb01f6edbc6f88e31fb880d5ebc04bfa20351402",
+    "roadmark-research/fonz-runtime-candidate/candidate-catalogue-additions.json": "f645bcdb902d43ce5bc69676ebc1633b7a7e0a0280fde4735b5d884605bf7980",
+    "roadmark-research/fonz-runtime-candidate/candidate-market-inventory-2026-10-10.json": "edb74132d4f9ec5d81ba3c6143060cfe182f1f743bdb544b7bd67de49ad2fb43",
+    "roadmark-research/fonz-runtime-candidate/candidate-motorcycle-ev-census.json": "b1676b7486125acc81046106db97e226a8670e5c26bddf028b9230be65c5222d",
+    "roadmark-research/fonz-runtime-candidate/runtime-copy-validation.json": "4515d303b50e695311baa9609933367cbc4dc5a7eee5549f115bf6addb579c37",
+    "roadmark-research/fonz-runtime-candidate/pre-application-lock.json": "eda05bf3ae57503d52c85995db7518df3d3aa3521e629b6422497ed5e48ba003",
+    "roadmark-research/fonz-runtime-candidate/issue-shape-amendment.json": "d0c668a79a475c625f122c9be1e03c28f6d81f68e2a464acdc508e0e8e6366a9",
+    "roadmark-research/fonz-runtime-candidate/runtime-binding-proof.json": "0ef9f64507d5d3c5187ba48faff4fe74878b4fc5822e3d077e55532269438abf",
+    "roadmark-research/fonz-runtime-candidate/adapter-validation.json": "f31d9bcb47c17535092859533a0541bf059ed3aedc942a6509d028b56b5cabb0",
+    "roadmark-research/fonz-runtime-candidate/candidate-runtime-proof.json": "971ebce665e497e4a2c7c03f5279e8b4de5d7249c58ecbbedca9a92762e46681",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/candidate-facts.json": "099510a514b730a5a5638adaf422a6b0e7893a11cc3672df8c03e74d9cc46739",
+    "roadmark-research/fonz-arthur-amendments/corrected-candidate-facts.json": "859adfe0f13d87498aac817db8e8058861762f8d9ba845cc91105b5ec111306f",
+    "roadmark-research/fonz-arthur-amendments/amendment-proof.json": "0fd0921aba08e519f789362995a7eed60abe353c2b67c740c0bdf2f27a343300",
+    "roadmark-research/fonz-integration-readiness/readiness.json": "5228a74ff900706078bbbf8441dbb055cb06952ab20296c7a8c3b0f1c5b98d5a",
+    "roadmark-research/fonz-integration-readiness/buyer-copy-proposal.json": "1505949ca0f3a31dbefa30ecfa2716fac9e5adf0665a95c7a7e4206b0b93703e",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/manifest.json": "a60aeabc17441592adf58d52ecc92ccefe93ec35803a0137d5fe08cc410ecc8f",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/README.md": "fddccbfd4a089aef65cbfea515602f41f7e404c51b3a95cbf23b28b1e7ccd5f4",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/build_packet.py": "c7efbb8af80f74a42a47ce59c19019eaae89327e56bba3b7bdefc9490bb9fe18",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/capture_sources.py": "ba1c51bcb3ccfe2b84ac406daedd64d8a048e33424ae7a31b6517f2e16792018",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/extracts/charging-guide-links.json": "bb7ebf940d892e76035760d0c9d7b1a30cc42a9b4b62929f5905ad2e033d2a41",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/extracts/charging-guide.txt": "f82aa23e4cc2782d44b1a1b1d8565bb429e23040f78ce937125af60a119e73f8",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/extracts/digital-display-links.json": "bb7ebf940d892e76035760d0c9d7b1a30cc42a9b4b62929f5905ad2e033d2a41",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/extracts/digital-display.txt": "976ca0a071a87f1725218b0d029409c0e88bb299a711bc63bc775c5cba9c2637",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/extracts/knowledge-links.json": "5a5f5dbcc9f9d72021e031e6d017494d27e45cafc0bdbf0c594e3b8f312868f0",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/extracts/knowledge.txt": "090b2ff6200dbb90692c8436b01bf5d4f5fdfd5345ae9ba0bdb02e29c5525ac1",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/extracts/manual-index-links.json": "70e081086bee7faaee6870305f75fbb2ad941697d07b6debde00b5aada4bcaf0",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/extracts/manual-index.txt": "4ef88f81849dd0febad214229a3a32845da1f93457e7f26d6440db651ee494d0",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/extracts/manual-layout.txt": "a06e35a51fd6b28c547782331740d98be20f6e84c2a24c545aba8914f15d0aa5",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/extracts/manual-pages.txt": "df45972e949118e326fc230cfb6f9f7e3f7f59c7bd0443c3fb4519234a9987b8",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/extracts/manual.txt": "450a957b2afddae3829b8d58d0b857851736b3ee1804a69ea14ba6ad13005239",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/extracts/overview-blocks.txt": "70239b2b74089dabc58341391bf7ed4a9e8a9c4f8092168bba9841e871e8c2cf",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/extracts/overview-links.json": "f45cdd5485a534a6b854fdb3c3bf2059a08d8e03fb4cd247027567db4f216db1",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/extracts/overview.txt": "d11f1a98286d1816e493eb0ba8ce3fb1f8490000ce5b8c0cf3867d4592fa4023",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/extracts/owners-guide-links.json": "6c07ed6b964718b7e9bb3150351652005f5ce6dae4c582668a2e8cc8040f0227",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/extracts/owners-guide.txt": "08c67a38ffb147ddf433e4f24ffda661ddb183f9ab842325064e5302be39476e",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/extracts/sale-blocks.txt": "adbcb1c148dcd32d417ffe5bea46a555a7eab78e7a0b57ad9a5b793ab678e0c1",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/extracts/sale-key-locators.json": "7e3cda001eeff7d9a10ba7d6b76a49252fedf171e1e0b9e1a4ebd51b95472b3d",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/extracts/sale-links.json": "eaf354134f0efd6ba27a87d5ef47e8927a59743d6420d02506dcc52c2349ccdc",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/extracts/sale-product-embedded.json": "222c848289ba7954f1200a03e6d194fba8d7e9962d918a11842bdc65ee11196d",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/extracts/sale-product-schema.json": "7cf3094d2d288cba08fbf17140e0d03741b6f366ed8a3e345a1b33a16517a9e6",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/extracts/sale-selected-blocks.txt": "adbcb1c148dcd32d417ffe5bea46a555a7eab78e7a0b57ad9a5b793ab678e0c1",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/extracts/sale-selected-links.json": "eaf354134f0efd6ba27a87d5ef47e8927a59743d6420d02506dcc52c2349ccdc",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/extracts/sale-selected.txt": "f3c40c172cf70bfb2214b33a6e85667a0e88acd832d7c8fc1b4ef186215e118b",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/extracts/sale.txt": "f3c40c172cf70bfb2214b33a6e85667a0e88acd832d7c8fc1b4ef186215e118b",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/extracts/selected-offer-dom-fragments.html": "42af4261e62d6e63d49837b73a9ca919b4034defa9278e6d6e38595225a5bf03",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/extracts/specs-blocks.txt": "5f51bb91ee1cfaff7c9052a72095eea866cdbce3b3184789c76947a2c7f7add5",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/extracts/specs-links.json": "844fb4ee76ad86adb39ed842fef17dfb666f0eea43aad2c0012be6c07482d1bb",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/extracts/specs.txt": "b309a90a000fc6dc2ef6e37e359752070ee9d34e009a1c799fbcb5f0567338c4",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/extracts/warranty-claim-links.json": "7919aa47f3751909aceafb4b1f543a654da6187336457704d026ed918bbfc4a7",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/extracts/warranty-claim.txt": "b21e6e54096d12e0f9f3fedc4fb011f04b399ed2184494c23fb956e7f4d75e14",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/extracts/warranty-overview-links.json": "b416f98815d9794f8ffcfd094d86c95e068c11ae910c6fbd15edf2438d5a0fad",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/extracts/warranty-overview.txt": "f90b1b2b4b539a3d35098a7399ad90c3640ebc5002030f94cfbac8e5ee407fd1",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/extracts/warranty-policy-layout.txt": "25fb8af2c593cb15feb054342409d537f6e9fe076f63dee3f0743d357ffbbe9b",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/extracts/warranty-policy-pages.txt": "ed51577cce008a19fc459db6ac1e72a3d2fc8c0caaccce59501f421d65c7be0e",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/extracts/warranty-policy.txt": "8d6421c2cffdd2366de2deed217645feb29db96e18e0d090ea22c3b0640c792f",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/input-record-snapshots.json": "fda85b5e4a5f57a959472a42aba48d42c19a087d9a7129095900770b09b5a367",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/sources/charging-guide.html": "a90d93f860b9f2f49d586dee75078c33a12c5e6590130bdaa2d555d79ee46b98",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/sources/digital-display.html": "4f957810ed9c2fa388f4babc8c66a91378f0002b368b720d34516094365109e9",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/sources/knowledge.html": "e28044b0a08b7e844067edf0f8083382f6eef8c8c78832ce32d18421baaed10e",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/sources/manual-index.html": "6e950a83a4e9b13cb0dcf137de7f73c432a59ec51192c15d0b5bcc145d0557b7",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/sources/manual.pdf": "23ea579ffae01b6f360436168016fcd7da86c08d40c93cd9fb3ff8ed0a1f5c04",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/sources/overview.html": "5001f43dfb2574222a292f4cdbbff7bece5f238928b4d5e2317c1d6e5bacd561",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/sources/owners-guide.html": "3d6986d09107e946d700a186a8465b1c7fbe12aa2a58ea70d96a6be521ef20eb",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/sources/sale-selected.html": "9d8938f51e4fcdbed934c8de1911323690d8c28413e49ae103ea781467d812dd",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/sources/sale.html": "0cf333a26b3f57bff439b7338162270f5dd0d2bccf3810ba16a3c16ad2788c5f",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/sources/specs.html": "7bb53e768deabcf3deda6fba16e92240500a3c1a2050dfd4ad97da722635f84e",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/sources/warranty-claim.html": "9cbaa30eeb009113b24e0d234657fe335b1e741a332fa6427ba152d46354459f",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/sources/warranty-overview.html": "ee6f914ef1cf6801016e89cd53172fea07f70c68aefe22d6cc34261e3ff7197f",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/sources/warranty-policy.pdf": "e7482ded8d6387455a32b82c2c1b3035e55017b8dfb319f569274791a1ae1f7b",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/sources-additional.json": "25957a172799db94a6fe88daa7b65478a104dc8ff617423538c5d69217f92ae6",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/sources-initial.json": "10462de1dc64dd9824241b781921cd41c21677b0a975b511c8d4d5f9618247e4",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/sources.json": "02322c558062a34aa3c37bcf661825f29155ad7ecdd0919706304f659779081c",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/visuals/manual-p26.png": "da49e12aa4a4e820a9a99c93b826d20c9e8cc3cf55f01022f7edd37b3bae145b",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/visuals/manual-p27.png": "0845e394bb2b0087c0eb011d495adcd93ddc9b9103b6d55f1890669d5e5e68b8",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/visuals/manual-p33.png": "9d353b89aeab2b3fef77f1c9f429313d21ba21159444775a1e57eb8f048962a1",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/visuals/warranty-p1.png": "205a57380b6e5e2be0fd55db6c1957411cf8a8321b1aeb4e028eb461dfa89af3",
+    "roadmark-research/fonz-arthur-identity-2026-10-10/visuals/warranty-p3.png": "df56a96cbb6de1769d6eea203fa15e808ec070f92dbc682dc92a476c4da25d31",
+    "roadmark-work/roadmark/data/catalogue-additions-2026-10-10.json": "f5ee5e537c1c9cfbff5d359adc364aba6e69a1347cfdb2ef53259e1ea4519387",
+    "roadmark-work/roadmark/data/market-inventory-2026-10-10.json": "df62e86af2462bed3b9e11a48099b8add702b01bdb8f74db4b375ecabc495c76",
+    "roadmark-work/roadmark/data/motorcycle-ev-census.json": "ddb527e2bc69120f860eaf88df815c39789ff8fbf0e8d88903b52556249ccead",
+    "roadmark-work/roadmark/src/lib/selling-points.ts": "27709189a6ef75f38350b9dbfc464fd6e2b3dc7f7e96af4c57d2a2fcc1c355cf",
+    "roadmark-work/roadmark/data/buyer-identity-snapshots-2026-10-10.json": "ef3889a4b1232f03dfce82f7346459fc70ed43fee3b2b0ff507105775b9b37ca",
+    "roadmark-work/roadmark/data/buyer-selling-points-2026-10-10.json": "d5d8015d5bc93101c376d68c67be73b407c21482054661285ccc964e788d79de",
+    "roadmark-work/roadmark/src/lib/types.ts": "e669bb885ff8f1a2a5565b139a9fce6b5507cfb3c99179cec061d84af091d645",
+    "roadmark-work/roadmark/src/lib/issue-presentation.ts": "98ddde091cc0f99f7b4e1bc95cbb50c5c1d4cccf5b669e85eff128ef554f973c",
+    "roadmark-work/roadmark/src/lib/citable.ts": "31c8b9091e1f42ddef502202dcb2400c297a30205bd95d7b5947dbaf3541852e",
+    "roadmark-work/roadmark/src/lib/compare.ts": "2628493eadd12228e96233dc272d19a571359c6612197c62873d9b6deef86d39",
+    "roadmark-work/roadmark/src/lib/corrections.ts": "01224d222c867e196d58ccd56102ef52c398d9d88f02c3d4e4df09af4b1fc546",
+    "roadmark-work/roadmark/src/lib/discovery.ts": "d7dffb44cba59a9e9d3f8792870863ad5611cc3faeeecb59e28e759b7ca0fe80",
+    "roadmark-work/roadmark/src/components/ui.tsx": "74e0d661ce3439ae6ad459fe24747048addc38b04f138cf73c32494db6464100",
+    "roadmark-research/verify_fonz_runtime_copy.cjs": "146916b96c04000acd05df5e27fe4e4148392d6d18b383d95bc5fd9ccb3e21b8"
+  },
+  "holdOccurrenceCounts": {
+    "motor-basis": 5,
+    "technical-epoch": 9,
+    "battery-rated-unit": 5,
+    "range-charge-conditions": 18,
+    "dimensions-fitment": 6,
+    "warranty-cover": 4,
+    "availability-template": 16
+  },
+  "rootRuntimeProof": {
+    "independentlyExecutedByAuditor": false,
+    "checkedAtUTC": "2026-10-10T20:36:45.327Z",
+    "passed": true,
+    "checks": 3944,
+    "mutations": 3158,
+    "failures": [],
+    "method": "Every own fact top-level field/removal and identity key in isolated record proposals; every related fact value and identity key; representative full one-record explicitly cited fact controls and source metadata/date controls. All configuration top-level fields, option top-level fields and amendment contract fields also mutated. Not exhaustive nested-string or full-payload matrix.",
+    "records": [
+      {
+        "variantId": "fonz_arthur_7_my26_lr_performance_moon_blue_black_vegan__20261010",
+        "mutations": 3064
+      }
+    ],
+    "totalConfigurations": 325,
+    "priorCarsUnchanged": 324,
+    "priorSummariesUnchanged": 317,
+    "expectedSummariesAfterAppend": 318,
+    "expectedClausesAfterAppend": 636,
+    "applicationWritten": false,
+    "payloadSHA256": "2fcffef23f4802923b122df57565e15012cff6fc1bbebd88ad2b63894ddc8800"
+  },
+  "checks": [
+    {
+      "name": "prior_adapter_archived_exactly",
+      "passed": true
+    },
+    {
+      "name": "prior_final_copy_archived_exactly",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/candidate-facts.json",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-amendments/corrected-candidate-facts.json",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-amendments/amendment-proof.json",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-integration-readiness/readiness.json",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-integration-readiness/buyer-copy-proposal.json",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/manifest.json",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/README.md",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/build_packet.py",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/capture_sources.py",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/extracts/charging-guide-links.json",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/extracts/charging-guide.txt",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/extracts/digital-display-links.json",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/extracts/digital-display.txt",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/extracts/knowledge-links.json",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/extracts/knowledge.txt",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/extracts/manual-index-links.json",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/extracts/manual-index.txt",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/extracts/manual-layout.txt",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/extracts/manual-pages.txt",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/extracts/manual.txt",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/extracts/overview-blocks.txt",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/extracts/overview-links.json",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/extracts/overview.txt",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/extracts/owners-guide-links.json",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/extracts/owners-guide.txt",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/extracts/sale-blocks.txt",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/extracts/sale-key-locators.json",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/extracts/sale-links.json",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/extracts/sale-product-embedded.json",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/extracts/sale-product-schema.json",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/extracts/sale-selected-blocks.txt",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/extracts/sale-selected-links.json",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/extracts/sale-selected.txt",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/extracts/sale.txt",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/extracts/selected-offer-dom-fragments.html",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/extracts/specs-blocks.txt",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/extracts/specs-links.json",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/extracts/specs.txt",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/extracts/warranty-claim-links.json",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/extracts/warranty-claim.txt",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/extracts/warranty-overview-links.json",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/extracts/warranty-overview.txt",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/extracts/warranty-policy-layout.txt",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/extracts/warranty-policy-pages.txt",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/extracts/warranty-policy.txt",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/input-record-snapshots.json",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/sources/charging-guide.html",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/sources/digital-display.html",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/sources/knowledge.html",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/sources/manual-index.html",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/sources/manual.pdf",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/sources/overview.html",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/sources/owners-guide.html",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/sources/sale-selected.html",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/sources/sale.html",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/sources/specs.html",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/sources/warranty-claim.html",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/sources/warranty-overview.html",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/sources/warranty-policy.pdf",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/sources-additional.json",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/sources-initial.json",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/sources.json",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/visuals/manual-p26.png",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/visuals/manual-p27.png",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/visuals/manual-p33.png",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/visuals/warranty-p1.png",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-research/fonz-arthur-identity-2026-10-10/visuals/warranty-p3.png",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-work/roadmark/data/catalogue-additions-2026-10-10.json",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-work/roadmark/data/market-inventory-2026-10-10.json",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-work/roadmark/data/motorcycle-ev-census.json",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-work/roadmark/src/lib/selling-points.ts",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-work/roadmark/data/buyer-identity-snapshots-2026-10-10.json",
+      "passed": true
+    },
+    {
+      "name": "prior_frozen_source_and_baseline_unchanged:roadmark-work/roadmark/data/buyer-selling-points-2026-10-10.json",
+      "passed": true
+    },
+    {
+      "name": "all_non_fact_adapter_data_exact",
+      "passed": true
+    },
+    {
+      "name": "all_159_fact_keys_and_order_exact",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_top_speed_kmh:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_top_speed_kmh:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_top_speed_kmh:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_top_speed_kmh:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_top_speed_kmh:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_top_speed_kmh:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_acceleration0_to50_seconds:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_acceleration0_to50_seconds:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_acceleration0_to50_seconds:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_acceleration0_to50_seconds:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_acceleration0_to50_seconds:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_acceleration0_to50_seconds:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_motor_output_kw:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_motor_output_kw:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_motor_output_kw:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_motor_output_kw:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_motor_output_kw:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_motor_output_kw:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_motor_output_kw:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_motor_output_kw:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_motor_output_kw:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_motor_output_kw:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_motor_rated_kw:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_motor_rated_kw:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_motor_rated_kw:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_motor_rated_kw:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_motor_rated_kw:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_motor_rated_kw:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_motor_rated_kw:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_motor_rated_kw:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_motor_rated_kw:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_motor_rated_kw:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_motor_peak_kw:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_motor_peak_kw:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_motor_peak_kw:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_motor_peak_kw:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_motor_peak_kw:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_motor_peak_kw:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_motor_peak_kw:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_motor_peak_kw:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_motor_peak_kw:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_motor_peak_kw:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_technical_motor_architecture:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_technical_motor_architecture:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_technical_motor_architecture:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_technical_motor_architecture:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_technical_motor_architecture:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_technical_motor_architecture:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_technical_motor_architecture:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_technical_motor_architecture:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_technical_motor_architecture:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_technical_motor_architecture:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_motor_torque_nm:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_motor_torque_nm:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_motor_torque_nm:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_motor_torque_nm:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_motor_torque_nm:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_motor_torque_nm:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_motor_torque_nm:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_motor_torque_nm:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_motor_torque_nm:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_motor_torque_nm:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_count:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_count:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_count:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_count:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_count:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_count:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_removable:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_removable:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_removable:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_removable:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_removable:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_removable:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_mass_each_kg:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_mass_each_kg:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_mass_each_kg:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_mass_each_kg:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_mass_each_kg:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_mass_each_kg:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_rated_raw:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_rated_raw:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_rated_raw:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_rated_raw:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_rated_raw:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_rated_raw:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_rated_raw:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_rated_raw:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_rated_raw:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_rated_raw:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_technical_battery_maximum_claim_kwh:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_technical_battery_maximum_claim_kwh:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_technical_battery_maximum_claim_kwh:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_technical_battery_maximum_claim_kwh:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_technical_battery_maximum_claim_kwh:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_technical_battery_maximum_claim_kwh:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_technical_battery_maximum_claim_kwh:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_technical_battery_maximum_claim_kwh:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_technical_battery_maximum_claim_kwh:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_technical_battery_maximum_claim_kwh:issue:1:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_technical_battery_maximum_claim_kwh:issue:1:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_technical_battery_maximum_claim_kwh:issue:1:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_technical_battery_maximum_claim_kwh:issue:1:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_technical_battery_maximum_claim_kwh:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_nominal_kwh:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_nominal_kwh:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_nominal_kwh:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_nominal_kwh:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_nominal_kwh:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_nominal_kwh:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_nominal_kwh:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_nominal_kwh:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_nominal_kwh:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_nominal_kwh:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_usable_kwh:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_usable_kwh:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_usable_kwh:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_usable_kwh:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_usable_kwh:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_usable_kwh:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_usable_kwh:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_usable_kwh:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_usable_kwh:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_usable_kwh:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_gross_kwh:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_gross_kwh:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_gross_kwh:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_gross_kwh:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_gross_kwh:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_gross_kwh:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_gross_kwh:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_gross_kwh:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_gross_kwh:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_gross_kwh:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_battery_chemistry:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_battery_chemistry:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_battery_chemistry:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_battery_chemistry:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_battery_chemistry:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_battery_chemistry:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_battery_chemistry:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_battery_chemistry:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_battery_chemistry:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_battery_chemistry:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_range_modes_km:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_range_modes_km:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_range_modes_km:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_range_modes_km:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_range_modes_km:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_range_modes_km:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_range_modes_km:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_range_modes_km:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_range_modes_km:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_range_modes_km:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_range_conditions:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_range_conditions:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_range_conditions:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_range_conditions:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_range_conditions:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_range_conditions:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_range_conditions:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_range_conditions:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_range_conditions:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_range_conditions:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_range_cycle:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_range_cycle:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_range_cycle:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_range_cycle:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_range_cycle:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_range_cycle:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_range_cycle:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_range_cycle:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_range_cycle:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_range_cycle:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_hardware:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_hardware:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_hardware:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_hardware:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_hardware:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_hardware:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_hardware:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_hardware:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_hardware:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_hardware:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charger_included_exact:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charger_included_exact:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charger_included_exact:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charger_included_exact:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charger_included_exact:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charger_included_exact:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charger_included_exact:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charger_included_exact:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charger_included_exact:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charger_included_exact:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_full_hours:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_full_hours:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_full_hours:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_full_hours:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_full_hours:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_full_hours:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_full_hours:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_full_hours:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_full_hours:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_full_hours:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_start_soc_percent:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_start_soc_percent:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_start_soc_percent:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_start_soc_percent:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_start_soc_percent:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_start_soc_percent:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_start_soc_percent:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_start_soc_percent:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_start_soc_percent:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_start_soc_percent:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_end_soc_percent:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_end_soc_percent:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_end_soc_percent:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_end_soc_percent:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_end_soc_percent:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_end_soc_percent:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_end_soc_percent:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_end_soc_percent:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_end_soc_percent:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_end_soc_percent:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_range_replenishment:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_range_replenishment:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_range_replenishment:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_range_replenishment:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_range_replenishment:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_range_replenishment:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_range_replenishment:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_range_replenishment:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_range_replenishment:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_charge_range_replenishment:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_type2_charging:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_type2_charging:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_type2_charging:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_type2_charging:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_type2_charging:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_type2_charging:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_type2_charging:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_type2_charging:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_type2_charging:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_type2_charging:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_ac_power_kw:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_ac_power_kw:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_ac_power_kw:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_ac_power_kw:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_ac_power_kw:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_ac_power_kw:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_ac_power_kw:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_ac_power_kw:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_ac_power_kw:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_ac_power_kw:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_dc_charging_kw:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_dc_charging_kw:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_dc_charging_kw:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_dc_charging_kw:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_dc_charging_kw:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_dc_charging_kw:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_dc_charging_kw:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_dc_charging_kw:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_dc_charging_kw:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_dc_charging_kw:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_seat_height_mm:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_seat_height_mm:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_seat_height_mm:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_seat_height_mm:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_seat_height_mm:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_seat_height_mm:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_seat_height_mm:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_seat_height_mm:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_seat_height_mm:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_seat_height_mm:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_vehicle_kerb_weight_kg:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_vehicle_kerb_weight_kg:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_vehicle_kerb_weight_kg:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_vehicle_kerb_weight_kg:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_vehicle_kerb_weight_kg:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_vehicle_kerb_weight_kg:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_vehicle_kerb_weight_kg:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_vehicle_kerb_weight_kg:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_vehicle_kerb_weight_kg:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_vehicle_kerb_weight_kg:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_vehicle_dry_weight_kg:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_vehicle_dry_weight_kg:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_vehicle_dry_weight_kg:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_vehicle_dry_weight_kg:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_vehicle_dry_weight_kg:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_vehicle_dry_weight_kg:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_vehicle_dry_weight_kg:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_vehicle_dry_weight_kg:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_vehicle_dry_weight_kg:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_vehicle_dry_weight_kg:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_maximum_combined_load_kg:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_maximum_combined_load_kg:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_maximum_combined_load_kg:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_maximum_combined_load_kg:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_maximum_combined_load_kg:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_maximum_combined_load_kg:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_maximum_combined_load_kg:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_maximum_combined_load_kg:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_maximum_combined_load_kg:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_maximum_combined_load_kg:issue:1:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_maximum_combined_load_kg:issue:1:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_maximum_combined_load_kg:issue:1:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_maximum_combined_load_kg:issue:1:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_maximum_combined_load_kg:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_seating_claim:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_seating_claim:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_seating_claim:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_seating_claim:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_seating_claim:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_seating_claim:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_seating_claim:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_seating_claim:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_seating_claim:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_seating_claim:issue:1:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_seating_claim:issue:1:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_seating_claim:issue:1:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_seating_claim:issue:1:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_seating_claim:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_tyres:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_tyres:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_tyres:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_tyres:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_tyres:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_tyres:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_tyres:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_tyres:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_tyres:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_tyres:issue:1:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_tyres:issue:1:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_tyres:issue:1:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_tyres:issue:1:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_manual_technical_tyres:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_vehicle_warranty:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_vehicle_warranty:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_vehicle_warranty:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_vehicle_warranty:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_vehicle_warranty:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_vehicle_warranty:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_vehicle_warranty:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_vehicle_warranty:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_vehicle_warranty:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_vehicle_warranty:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_retention_percent:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_retention_percent:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_retention_percent:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_retention_percent:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_retention_percent:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_retention_percent:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_retention_percent:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_retention_percent:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_retention_percent:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_battery_retention_percent:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_external_charger_warranty:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_external_charger_warranty:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_external_charger_warranty:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_external_charger_warranty:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_external_charger_warranty:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_external_charger_warranty:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_external_charger_warranty:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_external_charger_warranty:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_external_charger_warranty:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_technical_external_charger_warranty:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_offer_title:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_offer_title:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_offer_title:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_offer_title:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_offer_title:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_offer_title:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_seller:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_seller:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_seller:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_seller:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_seller:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_seller:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_shopify_product_id:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_shopify_product_id:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_shopify_product_id:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_shopify_product_id:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_shopify_product_id:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_shopify_product_id:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_shopify_variant_id:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_shopify_variant_id:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_shopify_variant_id:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_shopify_variant_id:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_shopify_variant_id:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_shopify_variant_id:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_selected_body_color:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_selected_body_color:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_selected_body_color:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_selected_body_color:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_selected_body_color:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_selected_body_color:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_selected_saddle_trim:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_selected_saddle_trim:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_selected_saddle_trim:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_selected_saddle_trim:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_selected_saddle_trim:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_selected_saddle_trim:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_selected_url:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_selected_url:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_selected_url:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_selected_url:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_selected_url:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_selected_url:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_selector_binding:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_selector_binding:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_selector_binding:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_selector_binding:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_selector_binding:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_selector_binding:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_physical_unit_vin:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_physical_unit_vin:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_physical_unit_vin:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_physical_unit_vin:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_physical_unit_vin:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_physical_unit_vin:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_stock_number:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_stock_number:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_stock_number:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_stock_number:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_stock_number:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_stock_number:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_exact_factory_build_closed:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_exact_factory_build_closed:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_exact_factory_build_closed:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_exact_factory_build_closed:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_exact_factory_build_closed:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_exact_factory_build_closed:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_technical_binding:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_technical_binding:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_technical_binding:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_technical_binding:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_technical_binding:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_technical_binding:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_condition:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_condition:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_condition:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_condition:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_condition:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_condition:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_condition:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_condition:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_condition:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_condition:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_advertised_reservation:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_advertised_reservation:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_advertised_reservation:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_advertised_reservation:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_advertised_reservation:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_advertised_reservation:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_advertised_reservation:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_advertised_reservation:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_advertised_reservation:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_advertised_reservation:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_deposit_percent:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_deposit_percent:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_deposit_percent:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_deposit_percent:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_deposit_percent:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_deposit_percent:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_deposit_percent:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_deposit_percent:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_deposit_percent:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_deposit_percent:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_deposit_amount_aud:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_deposit_amount_aud:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_deposit_amount_aud:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_deposit_amount_aud:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_deposit_amount_aud:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_deposit_amount_aud:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_deposit_amount_aud:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_deposit_amount_aud:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_deposit_amount_aud:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_deposit_amount_aud:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_reservation_meaning:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_reservation_meaning:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_reservation_meaning:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_reservation_meaning:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_reservation_meaning:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_reservation_meaning:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_reservation_meaning:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_reservation_meaning:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_reservation_meaning:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_reservation_meaning:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_selected_embedded_available:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_selected_embedded_available:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_selected_embedded_available:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_selected_embedded_available:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_selected_embedded_available:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_selected_embedded_available:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_selected_embedded_available:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_selected_embedded_available:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_selected_embedded_available:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_selected_embedded_available:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_selected_schema_availability:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_selected_schema_availability:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_selected_schema_availability:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_selected_schema_availability:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_selected_schema_availability:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_selected_schema_availability:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_selected_schema_availability:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_selected_schema_availability:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_selected_schema_availability:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_selected_schema_availability:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_inventory_management:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_inventory_management:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_inventory_management:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_inventory_management:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_inventory_management:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_inventory_management:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_inventory_management:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_inventory_management:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_inventory_management:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_inventory_management:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_template_text:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_template_text:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_template_text:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_template_text:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_template_text:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_template_text:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_template_text:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_template_text:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_template_text:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_template_text:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_order_status_recommended:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_order_status_recommended:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_order_status_recommended:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_order_status_recommended:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_order_status_recommended:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_order_status_recommended:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_order_status_recommended:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_order_status_recommended:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_order_status_recommended:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_order_status_recommended:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_stock_status:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_stock_status:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_stock_status:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_stock_status:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_stock_status:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_stock_status:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_stock_status:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_stock_status:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_stock_status:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_stock_status:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_physical_stock_verified:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_physical_stock_verified:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_physical_stock_verified:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_physical_stock_verified:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_physical_stock_verified:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_physical_stock_verified:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_physical_stock_verified:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_physical_stock_verified:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_physical_stock_verified:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_physical_stock_verified:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_allocated_new_unit_verified:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_allocated_new_unit_verified:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_allocated_new_unit_verified:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_allocated_new_unit_verified:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_allocated_new_unit_verified:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_allocated_new_unit_verified:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_allocated_new_unit_verified:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_allocated_new_unit_verified:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_allocated_new_unit_verified:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_allocated_new_unit_verified:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_lead_time_weeks:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_lead_time_weeks:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_lead_time_weeks:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_lead_time_weeks:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_lead_time_weeks:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_lead_time_weeks:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_lead_time_weeks:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_lead_time_weeks:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_lead_time_weeks:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_lead_time_weeks:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_fulfilment_region:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_fulfilment_region:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_fulfilment_region:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_fulfilment_region:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_fulfilment_region:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_fulfilment_region:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_fulfilment_region:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_fulfilment_region:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_fulfilment_region:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_fulfilment_region:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_website_interaction_limit:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_website_interaction_limit:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_website_interaction_limit:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_website_interaction_limit:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_website_interaction_limit:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_website_interaction_limit:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_website_interaction_limit:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_website_interaction_limit:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_website_interaction_limit:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_availability_website_interaction_limit:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_amount_aud:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_amount_aud:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_amount_aud:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_amount_aud:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_amount_aud:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_amount_aud:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_currency:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_currency:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_currency:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_currency:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_currency:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_currency:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_basis:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_basis:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_basis:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_basis:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_basis:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_basis:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_tax_included:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_tax_included:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_tax_included:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_tax_included:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_tax_included:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_tax_included:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_on_road_inclusions:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_on_road_inclusions:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_on_road_inclusions:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_on_road_inclusions:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_on_road_inclusions:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_on_road_inclusions:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_on_road_territory:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_on_road_territory:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_on_road_territory:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_on_road_territory:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_on_road_territory:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_on_road_territory:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_exclusions:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_exclusions:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_exclusions:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_exclusions:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_exclusions:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_exclusions:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_shipping_note:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_shipping_note:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_shipping_note:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_shipping_note:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_shipping_note:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_shipping_note:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_national_driveaway_aud:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_national_driveaway_aud:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_national_driveaway_aud:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_national_driveaway_aud:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_national_driveaway_aud:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_national_driveaway_aud:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_comparison_footer_excluded:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_comparison_footer_excluded:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_comparison_footer_excluded:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_comparison_footer_excluded:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_comparison_footer_excluded:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_price_comparison_footer_excluded:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_model_year:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_model_year:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_model_year:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_model_year:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_model_year:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_model_year:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_model_year_scope:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_model_year_scope:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_model_year_scope:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_model_year_scope:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_model_year_scope:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_identity_model_year_scope:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_sale_item_1:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_sale_item_1:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_sale_item_1:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_sale_item_1:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_sale_item_1:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_sale_item_1:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_sale_item_2:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_sale_item_2:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_sale_item_2:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_sale_item_2:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_sale_item_2:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_sale_item_2:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_sale_item_3:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_sale_item_3:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_sale_item_3:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_sale_item_3:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_sale_item_3:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_sale_item_3:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_sale_item_4:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_sale_item_4:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_sale_item_4:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_sale_item_4:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_sale_item_4:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_sale_item_4:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_sale_item_5:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_sale_item_5:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_sale_item_5:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_sale_item_5:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_sale_item_5:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_sale_item_5:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_sale_item_6:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_sale_item_6:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_sale_item_6:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_sale_item_6:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_sale_item_6:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_sale_item_6:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_equipment_matching_trim_item_1:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_equipment_matching_trim_item_1:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_equipment_matching_trim_item_1:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_equipment_matching_trim_item_1:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_equipment_matching_trim_item_1:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_equipment_matching_trim_item_1:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_equipment_matching_trim_item_1:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_equipment_matching_trim_item_1:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_equipment_matching_trim_item_1:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_equipment_matching_trim_item_1:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_equipment_matching_trim_item_2:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_equipment_matching_trim_item_2:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_equipment_matching_trim_item_2:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_equipment_matching_trim_item_2:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_equipment_matching_trim_item_2:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_equipment_matching_trim_item_2:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_equipment_matching_trim_item_2:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_equipment_matching_trim_item_2:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_equipment_matching_trim_item_2:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_equipment_matching_trim_item_2:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_equipment_matching_trim_item_3:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_equipment_matching_trim_item_3:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_equipment_matching_trim_item_3:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_equipment_matching_trim_item_3:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_equipment_matching_trim_item_3:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_equipment_matching_trim_item_3:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_equipment_matching_trim_item_3:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_equipment_matching_trim_item_3:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_equipment_matching_trim_item_3:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "source_matching_trim_equipment_matching_trim_item_3:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_selected_finish:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_selected_finish:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_selected_finish:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_selected_finish:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_selected_finish:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_selected_finish:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_optional_not_included_in_selected_identity:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_optional_not_included_in_selected_identity:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_optional_not_included_in_selected_identity:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_optional_not_included_in_selected_identity:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_optional_not_included_in_selected_identity:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_optional_not_included_in_selected_identity:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_not_inferred:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_not_inferred:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_not_inferred:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_not_inferred:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_not_inferred:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_equipment_not_inferred:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_legal_road_legal:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_legal_road_legal:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_legal_road_legal:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_legal_road_legal:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_legal_road_legal:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_legal_road_legal:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_battery_rated_unit:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_battery_rated_unit:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_battery_rated_unit:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_battery_rated_unit:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_battery_rated_unit:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_battery_rated_unit:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_availability_template:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_availability_template:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_availability_template:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_availability_template:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_availability_template:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_availability_template:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_technical_epoch:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_technical_epoch:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_technical_epoch:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_technical_epoch:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_technical_epoch:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_technical_epoch:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_motor_basis:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_motor_basis:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_motor_basis:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_motor_basis:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_motor_basis:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_motor_basis:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_mode_names:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_mode_names:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_mode_names:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_mode_names:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_mode_names:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_mode_names:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_regen_trigger:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_regen_trigger:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_regen_trigger:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_regen_trigger:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_regen_trigger:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_regen_trigger:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_warranty_cover:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_warranty_cover:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_warranty_cover:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_warranty_cover:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_warranty_cover:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_warranty_cover:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_manual_template:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_manual_template:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_manual_template:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_manual_template:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_manual_template:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_manual_template:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_family_footers:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_family_footers:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_family_footers:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_family_footers:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_family_footers:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_family_footers:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_range_charge_conditions:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_range_charge_conditions:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_range_charge_conditions:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_range_charge_conditions:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_range_charge_conditions:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_range_charge_conditions:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_dimensions_fitment:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_dimensions_fitment:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_dimensions_fitment:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_dimensions_fitment:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_dimensions_fitment:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "source_sale_holds_dimensions_fitment:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "maximum_speed_kmh:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "maximum_speed_kmh:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "maximum_speed_kmh:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "maximum_speed_kmh:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "maximum_speed_kmh:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "maximum_speed_kmh:alias_digest_matches_normalized_source_fact",
+      "passed": true
+    },
+    {
+      "name": "maximum_speed_kmh:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "zero_to_50_s:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "zero_to_50_s:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "zero_to_50_s:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "zero_to_50_s:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "zero_to_50_s:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "zero_to_50_s:alias_digest_matches_normalized_source_fact",
+      "passed": true
+    },
+    {
+      "name": "zero_to_50_s:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "advertised_motor_output_kw:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "advertised_motor_output_kw:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "advertised_motor_output_kw:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "advertised_motor_output_kw:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "advertised_motor_output_kw:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "advertised_motor_output_kw:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "advertised_motor_output_kw:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "advertised_motor_output_kw:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "advertised_motor_output_kw:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "advertised_motor_output_kw:alias_digest_matches_normalized_source_fact",
+      "passed": true
+    },
+    {
+      "name": "advertised_motor_output_kw:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "advertised_battery_count:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "advertised_battery_count:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "advertised_battery_count:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "advertised_battery_count:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "advertised_battery_count:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "advertised_battery_count:alias_digest_matches_normalized_source_fact",
+      "passed": true
+    },
+    {
+      "name": "advertised_battery_count:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "advertised_battery_removable:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "advertised_battery_removable:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "advertised_battery_removable:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "advertised_battery_removable:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "advertised_battery_removable:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "advertised_battery_removable:alias_digest_matches_normalized_source_fact",
+      "passed": true
+    },
+    {
+      "name": "advertised_battery_removable:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "advertised_battery_module_weight_kg:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "advertised_battery_module_weight_kg:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "advertised_battery_module_weight_kg:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "advertised_battery_module_weight_kg:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "advertised_battery_module_weight_kg:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "advertised_battery_module_weight_kg:alias_digest_matches_normalized_source_fact",
+      "passed": true
+    },
+    {
+      "name": "advertised_battery_module_weight_kg:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "advertised_eco_range_km:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "advertised_eco_range_km:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "advertised_eco_range_km:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "advertised_eco_range_km:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "advertised_eco_range_km:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "advertised_eco_range_km:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "advertised_eco_range_km:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "advertised_eco_range_km:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "advertised_eco_range_km:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "advertised_eco_range_km:alias_digest_matches_normalized_source_fact",
+      "passed": true
+    },
+    {
+      "name": "advertised_eco_range_km:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "advertised_street_range_km:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "advertised_street_range_km:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "advertised_street_range_km:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "advertised_street_range_km:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "advertised_street_range_km:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "advertised_street_range_km:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "advertised_street_range_km:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "advertised_street_range_km:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "advertised_street_range_km:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "advertised_street_range_km:alias_digest_matches_normalized_source_fact",
+      "passed": true
+    },
+    {
+      "name": "advertised_street_range_km:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "advertised_max_performance_range_km:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "advertised_max_performance_range_km:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "advertised_max_performance_range_km:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "advertised_max_performance_range_km:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "advertised_max_performance_range_km:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "advertised_max_performance_range_km:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "advertised_max_performance_range_km:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "advertised_max_performance_range_km:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "advertised_max_performance_range_km:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "advertised_max_performance_range_km:alias_digest_matches_normalized_source_fact",
+      "passed": true
+    },
+    {
+      "name": "advertised_max_performance_range_km:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "advertised_full_charge_hours:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "advertised_full_charge_hours:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "advertised_full_charge_hours:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "advertised_full_charge_hours:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "advertised_full_charge_hours:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "advertised_full_charge_hours:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "advertised_full_charge_hours:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "advertised_full_charge_hours:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "advertised_full_charge_hours:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "advertised_full_charge_hours:alias_digest_matches_normalized_source_fact",
+      "passed": true
+    },
+    {
+      "name": "advertised_full_charge_hours:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "advertised_charge_hardware:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "advertised_charge_hardware:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "advertised_charge_hardware:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "advertised_charge_hardware:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "advertised_charge_hardware:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "advertised_charge_hardware:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "advertised_charge_hardware:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "advertised_charge_hardware:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "advertised_charge_hardware:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "advertised_charge_hardware:alias_digest_matches_normalized_source_fact",
+      "passed": true
+    },
+    {
+      "name": "advertised_charge_hardware:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "advertised_type2_option:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "advertised_type2_option:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "advertised_type2_option:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "advertised_type2_option:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "advertised_type2_option:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "advertised_type2_option:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "advertised_type2_option:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "advertised_type2_option:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "advertised_type2_option:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "advertised_type2_option:alias_digest_matches_normalized_source_fact",
+      "passed": true
+    },
+    {
+      "name": "advertised_type2_option:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "warranty:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "warranty:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "warranty:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "warranty:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "warranty:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "warranty:issue:0:six_field_schema",
+      "passed": true
+    },
+    {
+      "name": "warranty:issue:0:exact_model_and_sources",
+      "passed": true
+    },
+    {
+      "name": "warranty:issue:0:full_hold_semantics_preserved",
+      "passed": true
+    },
+    {
+      "name": "warranty:issue:0:display_and_citable_strings",
+      "passed": true
+    },
+    {
+      "name": "warranty:alias_digest_matches_normalized_source_fact",
+      "passed": true
+    },
+    {
+      "name": "warranty:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "advertised_equipment_1:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "advertised_equipment_1:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "advertised_equipment_1:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "advertised_equipment_1:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "advertised_equipment_1:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "advertised_equipment_1:alias_digest_matches_normalized_source_fact",
+      "passed": true
+    },
+    {
+      "name": "advertised_equipment_1:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "advertised_equipment_2:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "advertised_equipment_2:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "advertised_equipment_2:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "advertised_equipment_2:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "advertised_equipment_2:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "advertised_equipment_2:alias_digest_matches_normalized_source_fact",
+      "passed": true
+    },
+    {
+      "name": "advertised_equipment_2:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "advertised_equipment_3:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "advertised_equipment_3:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "advertised_equipment_3:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "advertised_equipment_3:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "advertised_equipment_3:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "advertised_equipment_3:alias_digest_matches_normalized_source_fact",
+      "passed": true
+    },
+    {
+      "name": "advertised_equipment_3:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "advertised_equipment_4:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "advertised_equipment_4:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "advertised_equipment_4:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "advertised_equipment_4:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "advertised_equipment_4:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "advertised_equipment_4:alias_digest_matches_normalized_source_fact",
+      "passed": true
+    },
+    {
+      "name": "advertised_equipment_4:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "advertised_equipment_5:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "advertised_equipment_5:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "advertised_equipment_5:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "advertised_equipment_5:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "advertised_equipment_5:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "advertised_equipment_5:alias_digest_matches_normalized_source_fact",
+      "passed": true
+    },
+    {
+      "name": "advertised_equipment_5:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "advertised_equipment_6:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "advertised_equipment_6:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "advertised_equipment_6:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "advertised_equipment_6:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "advertised_equipment_6:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "advertised_equipment_6:alias_digest_matches_normalized_source_fact",
+      "passed": true
+    },
+    {
+      "name": "advertised_equipment_6:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "advertised_selected_finish:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "advertised_selected_finish:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "advertised_selected_finish:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "advertised_selected_finish:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "advertised_selected_finish:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "advertised_selected_finish:alias_digest_matches_normalized_source_fact",
+      "passed": true
+    },
+    {
+      "name": "advertised_selected_finish:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "price_aud:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "price_aud:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "price_aud:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "price_aud:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "price_aud:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "price_aud:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "current_manufacturer_base_price_aud:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "current_manufacturer_base_price_aud:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "current_manufacturer_base_price_aud:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "current_manufacturer_base_price_aud:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "current_manufacturer_base_price_aud:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "current_manufacturer_base_price_aud:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "current_manufacturer_driveaway_price_aud:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "current_manufacturer_driveaway_price_aud:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "current_manufacturer_driveaway_price_aud:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "current_manufacturer_driveaway_price_aud:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "current_manufacturer_driveaway_price_aud:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "current_manufacturer_driveaway_price_aud:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "reservation_deposit_aud:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "reservation_deposit_aud:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "reservation_deposit_aud:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "reservation_deposit_aud:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "reservation_deposit_aud:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "reservation_deposit_aud:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "range_km:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "range_km:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "range_km:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "range_km:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "range_km:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "range_km:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "range_cycle:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "range_cycle:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "range_cycle:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "range_cycle:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "range_cycle:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "range_cycle:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "real_world_range_km:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "real_world_range_km:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "real_world_range_km:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "real_world_range_km:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "real_world_range_km:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "real_world_range_km:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "power_kw:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "power_kw:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "power_kw:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "power_kw:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "power_kw:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "power_kw:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "motor_rated_power_kw:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "motor_rated_power_kw:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "motor_rated_power_kw:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "motor_rated_power_kw:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "motor_rated_power_kw:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "motor_rated_power_kw:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "motor_continuous_power_kw:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "motor_continuous_power_kw:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "motor_continuous_power_kw:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "motor_continuous_power_kw:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "motor_continuous_power_kw:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "motor_continuous_power_kw:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "motor_peak_power_kw:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "motor_peak_power_kw:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "motor_peak_power_kw:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "motor_peak_power_kw:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "motor_peak_power_kw:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "motor_peak_power_kw:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "torque_nm:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "torque_nm:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "torque_nm:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "torque_nm:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "torque_nm:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "torque_nm:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "battery_kwh:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "battery_kwh:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "battery_kwh:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "battery_kwh:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "battery_kwh:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "battery_kwh:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "battery_usable_kwh:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "battery_usable_kwh:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "battery_usable_kwh:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "battery_usable_kwh:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "battery_usable_kwh:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "battery_usable_kwh:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "battery_gross_kwh:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "battery_gross_kwh:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "battery_gross_kwh:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "battery_gross_kwh:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "battery_gross_kwh:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "battery_gross_kwh:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "battery_nominal_kwh:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "battery_nominal_kwh:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "battery_nominal_kwh:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "battery_nominal_kwh:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "battery_nominal_kwh:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "battery_nominal_kwh:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "battery_rated_kwh:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "battery_rated_kwh:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "battery_rated_kwh:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "battery_rated_kwh:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "battery_rated_kwh:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "battery_rated_kwh:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "ac_kw:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "ac_kw:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "ac_kw:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "ac_kw:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "ac_kw:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "ac_kw:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "dc_peak_kw:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "dc_peak_kw:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "dc_peak_kw:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "dc_peak_kw:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "dc_peak_kw:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "dc_peak_kw:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "ac_charge_time_min:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "ac_charge_time_min:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "ac_charge_time_min:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "ac_charge_time_min:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "ac_charge_time_min:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "ac_charge_time_min:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "dc_charge_time_min:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "dc_charge_time_min:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "dc_charge_time_min:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "dc_charge_time_min:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "dc_charge_time_min:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "dc_charge_time_min:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "dc_charge_10_80_min:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "dc_charge_10_80_min:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "dc_charge_10_80_min:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "dc_charge_10_80_min:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "dc_charge_10_80_min:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "dc_charge_10_80_min:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "charge_start_soc_percent:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "charge_start_soc_percent:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "charge_start_soc_percent:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "charge_start_soc_percent:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "charge_start_soc_percent:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "charge_start_soc_percent:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "charge_end_soc_percent:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "charge_end_soc_percent:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "charge_end_soc_percent:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "charge_end_soc_percent:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "charge_end_soc_percent:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "charge_end_soc_percent:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "charger_included:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "charger_included:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "charger_included:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "charger_included:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "charger_included:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "charger_included:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "charger_count:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "charger_count:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "charger_count:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "charger_count:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "charger_count:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "charger_count:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "seats:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "seats:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "seats:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "seats:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "seats:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "seats:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "payload_kg:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "payload_kg:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "payload_kg:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "payload_kg:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "payload_kg:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "payload_kg:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "tyres:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "tyres:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "tyres:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "tyres:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "tyres:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "tyres:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "seat_height_mm:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "seat_height_mm:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "seat_height_mm:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "seat_height_mm:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "seat_height_mm:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "seat_height_mm:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "kerb_weight_kg:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "kerb_weight_kg:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "kerb_weight_kg:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "kerb_weight_kg:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "kerb_weight_kg:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "kerb_weight_kg:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "dry_weight_kg:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "dry_weight_kg:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "dry_weight_kg:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "dry_weight_kg:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "dry_weight_kg:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "dry_weight_kg:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "battery_warranty_retention_percent:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "battery_warranty_retention_percent:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "battery_warranty_retention_percent:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "battery_warranty_retention_percent:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "battery_warranty_retention_percent:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "battery_warranty_retention_percent:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "external_charger_warranty:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "external_charger_warranty:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "external_charger_warranty:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "external_charger_warranty:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "external_charger_warranty:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "external_charger_warranty:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "vehicle_warranty_start_date:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "vehicle_warranty_start_date:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "vehicle_warranty_start_date:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "vehicle_warranty_start_date:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "vehicle_warranty_start_date:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "vehicle_warranty_start_date:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "factory_certified_model_year:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "factory_certified_model_year:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "factory_certified_model_year:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "factory_certified_model_year:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "factory_certified_model_year:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "factory_certified_model_year:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "production_effective_from:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "production_effective_from:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "production_effective_from:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "production_effective_from:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "production_effective_from:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "production_effective_from:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "production_effective_to:required_fact_strings",
+      "passed": true
+    },
+    {
+      "name": "production_effective_to:required_fact_values_and_arrays",
+      "passed": true
+    },
+    {
+      "name": "production_effective_to:valid_status_and_optional_fields",
+      "passed": true
+    },
+    {
+      "name": "production_effective_to:source_resolution",
+      "passed": true
+    },
+    {
+      "name": "production_effective_to:exact_original_hold_ids_and_order",
+      "passed": true
+    },
+    {
+      "name": "production_effective_to:no_other_fact_mutation",
+      "passed": true
+    },
+    {
+      "name": "63_issue_occurrences_59_affected_facts_7_distinct_ids",
+      "passed": true
+    },
+    {
+      "name": "eight_alias_digests_rebound",
+      "passed": true
+    },
+    {
+      "name": "all_eleven_original_source_holds_exact",
+      "passed": true
+    },
+    {
+      "name": "range_issues_still_nonempty_and_null_cycle_retained",
+      "passed": true
+    },
+    {
+      "name": "catalogue_top_level_shape_exact",
+      "passed": true
+    },
+    {
+      "name": "catalogue_exact_append:checkedAt",
+      "passed": true
+    },
+    {
+      "name": "catalogue_exact_append:models",
+      "passed": true
+    },
+    {
+      "name": "catalogue_exact_append:variants",
+      "passed": true
+    },
+    {
+      "name": "catalogue_exact_append:sources",
+      "passed": true
+    },
+    {
+      "name": "catalogue_exact_append:facts",
+      "passed": true
+    },
+    {
+      "name": "catalogue_exact_append:features",
+      "passed": true
+    },
+    {
+      "name": "catalogue_exact_append:auditNotes",
+      "passed": true
+    },
+    {
+      "name": "market-inventory-2026-10-10.json:all_other_rows_unchanged",
+      "passed": true
+    },
+    {
+      "name": "market-inventory-2026-10-10.json:prior_record_and_named_configurations_preserved",
+      "passed": true
+    },
+    {
+      "name": "market-inventory-2026-10-10.json:bounded_offer_and_existing_holds",
+      "passed": true
+    },
+    {
+      "name": "market-inventory-2026-10-10.json:recomputed_counts_and_no_new_family",
+      "passed": true
+    },
+    {
+      "name": "market-inventory-2026-10-10.json:unchanged_unrelated_document_fields",
+      "passed": true
+    },
+    {
+      "name": "motorcycle-ev-census.json:all_other_rows_unchanged",
+      "passed": true
+    },
+    {
+      "name": "motorcycle-ev-census.json:prior_record_and_named_configurations_preserved",
+      "passed": true
+    },
+    {
+      "name": "motorcycle-ev-census.json:bounded_offer_and_existing_holds",
+      "passed": true
+    },
+    {
+      "name": "motorcycle-ev-census.json:recomputed_counts_and_no_new_family",
+      "passed": true
+    },
+    {
+      "name": "motorcycle-ev-census.json:unchanged_unrelated_document_fields",
+      "passed": true
+    },
+    {
+      "name": "detailed_catalogue_context_325_139",
+      "passed": true
+    },
+    {
+      "name": "single_effective_offer_and_copy_record",
+      "passed": true
+    },
+    {
+      "name": "effective_normalized_facts_exact",
+      "passed": true
+    },
+    {
+      "name": "effective_configuration_and_availability_exact",
+      "passed": true
+    },
+    {
+      "name": "expected_identity_full_exact",
+      "passed": true
+    },
+    {
+      "name": "copy_text_conditions_guards_availability_all_unchanged",
+      "passed": true
+    },
+    {
+      "name": "identity_only_normalized_facts_changed",
+      "passed": true
+    },
+    {
+      "name": "source_snapshots_all_unchanged",
+      "passed": true
+    },
+    {
+      "name": "all_ten_dependency_ids_order_unchanged",
+      "passed": true
+    },
+    {
+      "name": "dependency_only_effective_fact_rebound:fonz_battery_count",
+      "passed": true
+    },
+    {
+      "name": "dependency_only_effective_fact_rebound:fonz_battery_removable",
+      "passed": true
+    },
+    {
+      "name": "dependency_only_effective_fact_rebound:fonz_battery_mass_each_kg",
+      "passed": true
+    },
+    {
+      "name": "dependency_only_effective_fact_rebound:fonz_range_modes_km",
+      "passed": true
+    },
+    {
+      "name": "dependency_only_effective_fact_rebound:fonz_range_conditions",
+      "passed": true
+    },
+    {
+      "name": "dependency_only_effective_fact_rebound:fonz_range_cycle",
+      "passed": true
+    },
+    {
+      "name": "dependency_only_effective_fact_rebound:fonz_model_year",
+      "passed": true
+    },
+    {
+      "name": "dependency_only_effective_fact_rebound:fonz_tradeoff_source_sale_price_exclusions",
+      "passed": true
+    },
+    {
+      "name": "dependency_only_effective_fact_rebound:fonz_tradeoff_source_sale_price_on_road_territory",
+      "passed": true
+    },
+    {
+      "name": "dependency_only_effective_fact_rebound:fonz_tradeoff_source_sale_price_shipping_note",
+      "passed": true
+    },
+    {
+      "name": "strength:unheld_dependencies_remain_unheld",
+      "passed": true
+    },
+    {
+      "name": "tradeoff:unheld_dependencies_remain_unheld",
+      "passed": true
+    },
+    {
+      "name": "runtime_proof_updated_for_current_payload",
+      "passed": true
+    },
+    {
+      "name": "schema_amendment_matches_current_inputs",
+      "passed": true
+    },
+    {
+      "name": "current_adapter_and_candidate_proofs_match",
+      "passed": true
+    },
+    {
+      "name": "current_binding_proof_matches_final_inputs",
+      "passed": true
+    },
+    {
+      "name": "current_binding_runtime_revalidation_confirmed",
+      "passed": true
+    },
+    {
+      "name": "binding_proof_pins_current_runtime_validation",
+      "passed": true
+    },
+    {
+      "name": "restored_324_baseline_lock:catalogue-additions-2026-10-10.json",
+      "passed": true
+    },
+    {
+      "name": "restored_324_baseline_lock:market-inventory-2026-10-10.json",
+      "passed": true
+    },
+    {
+      "name": "restored_324_baseline_lock:motorcycle-ev-census.json",
+      "passed": true
+    },
+    {
+      "name": "restored_324_baseline_lock:buyer-identity-snapshots-2026-10-10.json",
+      "passed": true
+    },
+    {
+      "name": "restored_324_baseline_lock:buyer-selling-points-2026-10-10.json",
+      "passed": true
+    },
+    {
+      "name": "all_pinned_inputs_stable_at_completion",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,1416 @@
+{
+  "timestamp": "2026-10-10T17:51:46.223Z",
+  "carCount": 315,
+  "summaryCount": 308,
+  "sourceHash": {
+    "data/au_ev_all_variants_2026-10-06.json": "010ded194b4d61cd7be606ce0cc332fa7e32906bba70abff2b5c38541e634657",
+    "data/buyer-selling-points-2026-10-10.json": "ba7224c691c8ba8a214d36042a6882b49a81ffb26e46bf0ae6fabfb8a5479c50",
+    "data/buyer-identity-snapshots-2026-10-10.json": "d99fb214c6b8e5e47a7844931fd14fb8800af9076b8d0326a519ed78bbbef0d6"
+  },
+  "issue": {
+    "issue_id": "V2-13",
+    "priority": "medium",
+    "model_ids": [
+      "all"
+    ],
+    "title": "Charging windows and supply ratings differ",
+    "publication_action": "A 350 kW supply used in a Kia test does not establish a 350 kW vehicle peak.",
+    "source_ids": [
+      "kia_ev3_spec",
+      "kia_ev5_spec",
+      "geely_brochure_er"
+    ]
+  },
+  "issueFacts": [
+    {
+      "id": "tesla_model_y__premium_long_range_awd__1",
+      "brand": "Tesla",
+      "key": "dc_charge_time_min",
+      "value": 27,
+      "status": "conditional",
+      "sourceIds": [
+        "r7_evdb_model_y_lr_awd"
+      ]
+    },
+    {
+      "id": "tesla_model_y__premium_long_range_awd__1",
+      "brand": "Tesla",
+      "key": "dc_peak_kw",
+      "value": 250,
+      "status": "standard",
+      "sourceIds": [
+        "tesla_y_product",
+        "tesla_y_config",
+        "tesla_y_manual",
+        "tesla_y_cargo",
+        "tesla_y_tow",
+        "tesla_ac",
+        "tesla_warranty",
+        "v2_tesla_y_dimensions",
+        "v2_tesla_y_suspension",
+        "v2_tesla_y_ancap"
+      ]
+    },
+    {
+      "id": "tesla_model_y__premium_rwd__2",
+      "brand": "Tesla",
+      "key": "dc_charge_time_min",
+      "value": 24,
+      "status": "conditional",
+      "sourceIds": [
+        "r7_evdb_model_y_rwd"
+      ]
+    },
+    {
+      "id": "tesla_model_y__premium_rwd__2",
+      "brand": "Tesla",
+      "key": "dc_peak_kw",
+      "value": 175,
+      "status": "standard",
+      "sourceIds": [
+        "tesla_y_product",
+        "tesla_y_config",
+        "tesla_y_manual",
+        "tesla_y_cargo",
+        "tesla_y_tow",
+        "tesla_ac",
+        "tesla_warranty",
+        "v2_tesla_y_dimensions",
+        "v2_tesla_y_suspension",
+        "v2_tesla_y_ancap"
+      ]
+    },
+    {
+      "id": "tesla_model_y__l_premium_awd__4",
+      "brand": "Tesla",
+      "key": "dc_charge_time_min",
+      "value": "24–28 min",
+      "status": "conditional",
+      "sourceIds": [
+        "r6_evdb_tesla"
+      ]
+    },
+    {
+      "id": "tesla_model_y__l_premium_awd__4",
+      "brand": "Tesla",
+      "key": "dc_peak_kw",
+      "value": 250,
+      "status": "standard",
+      "sourceIds": [
+        "v2_tesla_y_l_seats",
+        "v2_tesla_y_dimensions",
+        "v2_tesla_y_suspension",
+        "v2_tesla_y_l_ancap",
+        "v2_tesla_l_current_report",
+        "v2_tesla_outlet",
+        "v2_tesla_l_launch_au_report",
+        "v2_tesla_l_fsd_validation_report"
+      ]
+    },
+    {
+      "id": "tesla_model_y__performance_awd__3",
+      "brand": "Tesla",
+      "key": "dc_charge_time_min",
+      "value": "24–28 min",
+      "status": "conditional",
+      "sourceIds": [
+        "r6_evdb_tesla"
+      ]
+    },
+    {
+      "id": "tesla_model_y__performance_awd__3",
+      "brand": "Tesla",
+      "key": "dc_peak_kw",
+      "value": 250,
+      "status": "standard",
+      "sourceIds": [
+        "tesla_y_product",
+        "tesla_y_config",
+        "tesla_y_manual",
+        "tesla_y_cargo",
+        "tesla_y_tow",
+        "tesla_ac",
+        "tesla_warranty",
+        "tesla_my27_announcement",
+        "v2_tesla_y_dimensions",
+        "v2_tesla_y_suspension",
+        "v2_tesla_y_ancap"
+      ]
+    },
+    {
+      "id": "byd_sealion_7__premium_rwd__1",
+      "brand": "BYD",
+      "key": "dc_charge_time_min",
+      "value": 32,
+      "status": "standard",
+      "sourceIds": [
+        "byd_sealion_spec",
+        "byd_sealion_price",
+        "byd_sealion_manual",
+        "byd_sealion_launch",
+        "byd_warranty"
+      ]
+    },
+    {
+      "id": "byd_sealion_7__premium_rwd__1",
+      "brand": "BYD",
+      "key": "dc_peak_kw",
+      "value": 150,
+      "status": "standard",
+      "sourceIds": [
+        "byd_sealion_spec",
+        "byd_sealion_price",
+        "byd_sealion_manual",
+        "byd_sealion_launch",
+        "byd_warranty"
+      ]
+    },
+    {
+      "id": "byd_sealion_7__performance_awd__2",
+      "brand": "BYD",
+      "key": "dc_charge_time_min",
+      "value": 32,
+      "status": "standard",
+      "sourceIds": [
+        "byd_sealion_spec",
+        "byd_sealion_price",
+        "byd_sealion_manual",
+        "byd_sealion_launch",
+        "byd_warranty"
+      ]
+    },
+    {
+      "id": "byd_sealion_7__performance_awd__2",
+      "brand": "BYD",
+      "key": "dc_peak_kw",
+      "value": 150,
+      "status": "standard",
+      "sourceIds": [
+        "byd_sealion_spec",
+        "byd_sealion_price",
+        "byd_sealion_manual",
+        "byd_sealion_launch",
+        "byd_warranty"
+      ]
+    },
+    {
+      "id": "geely_ex5__complete_extended_range__1",
+      "brand": "Geely",
+      "key": "dc_charge_time_min",
+      "value": 20,
+      "status": "standard",
+      "sourceIds": [
+        "geely_brochure_er",
+        "geely_price_change",
+        "geely_warranty",
+        "geely_rvd"
+      ]
+    },
+    {
+      "id": "geely_ex5__complete_extended_range__1",
+      "brand": "Geely",
+      "key": "dc_peak_kw",
+      "value": 100,
+      "status": "standard",
+      "sourceIds": [
+        "geely_brochure_er",
+        "geely_price_change",
+        "geely_warranty",
+        "geely_rvd"
+      ]
+    },
+    {
+      "id": "geely_ex5__inspire_extended_range__2",
+      "brand": "Geely",
+      "key": "dc_charge_time_min",
+      "value": 20,
+      "status": "standard",
+      "sourceIds": [
+        "geely_brochure_er",
+        "geely_price_change",
+        "geely_warranty",
+        "geely_rvd"
+      ]
+    },
+    {
+      "id": "geely_ex5__inspire_extended_range__2",
+      "brand": "Geely",
+      "key": "dc_peak_kw",
+      "value": 100,
+      "status": "standard",
+      "sourceIds": [
+        "geely_brochure_er",
+        "geely_price_change",
+        "geely_warranty",
+        "geely_rvd"
+      ]
+    },
+    {
+      "id": "geely_ex5__complete__3",
+      "brand": "Geely",
+      "key": "dc_charge_time_min",
+      "value": 20,
+      "status": "standard",
+      "sourceIds": [
+        "geely_brochure_old",
+        "geely_price_change",
+        "geely_warranty",
+        "geely_rvd"
+      ]
+    },
+    {
+      "id": "geely_ex5__complete__3",
+      "brand": "Geely",
+      "key": "dc_peak_kw",
+      "value": 100,
+      "status": "standard",
+      "sourceIds": [
+        "geely_brochure_old",
+        "geely_price_change",
+        "geely_warranty",
+        "geely_rvd"
+      ]
+    },
+    {
+      "id": "geely_ex5__inspire__4",
+      "brand": "Geely",
+      "key": "dc_charge_time_min",
+      "value": 20,
+      "status": "standard",
+      "sourceIds": [
+        "geely_brochure_old",
+        "geely_price_change",
+        "geely_warranty",
+        "geely_rvd"
+      ]
+    },
+    {
+      "id": "geely_ex5__inspire__4",
+      "brand": "Geely",
+      "key": "dc_peak_kw",
+      "value": 100,
+      "status": "standard",
+      "sourceIds": [
+        "geely_brochure_old",
+        "geely_price_change",
+        "geely_warranty",
+        "geely_rvd"
+      ]
+    },
+    {
+      "id": "zeekr_7x__rwd__1",
+      "brand": "Zeekr",
+      "key": "dc_charge_time_min",
+      "value": 13,
+      "status": "standard",
+      "sourceIds": [
+        "zeekr_au_brochure_20250820",
+        "zeekr_au_model",
+        "zeekr_au_price_20250808",
+        "zeekr_au_price_20260507",
+        "zeekr_aeva_fact_sheet",
+        "zeekr_au_warranty",
+        "zeekr_au_service"
+      ]
+    },
+    {
+      "id": "zeekr_7x__rwd__1",
+      "brand": "Zeekr",
+      "key": "dc_peak_kw",
+      "value": 450,
+      "status": "standard",
+      "sourceIds": [
+        "zeekr_au_brochure_20250820",
+        "zeekr_au_model",
+        "zeekr_au_price_20250808",
+        "zeekr_au_price_20260507",
+        "zeekr_aeva_fact_sheet",
+        "zeekr_au_warranty",
+        "zeekr_au_service"
+      ]
+    },
+    {
+      "id": "zeekr_7x__long_range_rwd__2",
+      "brand": "Zeekr",
+      "key": "dc_charge_time_min",
+      "value": 16,
+      "status": "standard",
+      "sourceIds": [
+        "zeekr_au_brochure_20250820",
+        "zeekr_au_model",
+        "zeekr_au_price_20250808",
+        "zeekr_au_price_20260507",
+        "zeekr_aeva_fact_sheet",
+        "zeekr_au_warranty",
+        "zeekr_au_service"
+      ]
+    },
+    {
+      "id": "zeekr_7x__long_range_rwd__2",
+      "brand": "Zeekr",
+      "key": "dc_peak_kw",
+      "value": 420,
+      "status": "standard",
+      "sourceIds": [
+        "zeekr_au_brochure_20250820",
+        "zeekr_au_model",
+        "zeekr_au_price_20250808",
+        "zeekr_au_price_20260507",
+        "zeekr_aeva_fact_sheet",
+        "zeekr_au_warranty",
+        "zeekr_au_service"
+      ]
+    },
+    {
+      "id": "zeekr_7x__performance_awd__3",
+      "brand": "Zeekr",
+      "key": "dc_charge_time_min",
+      "value": 16,
+      "status": "standard",
+      "sourceIds": [
+        "zeekr_au_brochure_20250820",
+        "zeekr_au_model",
+        "zeekr_au_price_20250808",
+        "zeekr_au_price_20260507",
+        "zeekr_aeva_fact_sheet",
+        "zeekr_au_warranty",
+        "zeekr_au_service"
+      ]
+    },
+    {
+      "id": "zeekr_7x__performance_awd__3",
+      "brand": "Zeekr",
+      "key": "dc_peak_kw",
+      "value": 420,
+      "status": "standard",
+      "sourceIds": [
+        "zeekr_au_brochure_20250820",
+        "zeekr_au_model",
+        "zeekr_au_price_20250808",
+        "zeekr_au_price_20260507",
+        "zeekr_aeva_fact_sheet",
+        "zeekr_au_warranty",
+        "zeekr_au_service"
+      ]
+    },
+    {
+      "id": "zeekr_7x__black_special_edition_awd__4",
+      "brand": "Zeekr",
+      "key": "dc_charge_time_min",
+      "value": 16,
+      "status": "standard",
+      "sourceIds": [
+        "v2_zeekr_black_primary",
+        "v2_zeekr_black_price",
+        "zeekr_au_brochure_20250820"
+      ]
+    },
+    {
+      "id": "zeekr_7x__black_special_edition_awd__4",
+      "brand": "Zeekr",
+      "key": "dc_peak_kw",
+      "value": 420,
+      "status": "standard",
+      "sourceIds": [
+        "v2_zeekr_black_primary",
+        "v2_zeekr_black_price",
+        "zeekr_au_brochure_20250820"
+      ]
+    },
+    {
+      "id": "jaecoo_j5_ev__ev_summit__1",
+      "brand": "Jaecoo",
+      "key": "dc_charge_time_min",
+      "value": 28,
+      "status": "standard",
+      "sourceIds": [
+        "jaecoo_spec_apr2026",
+        "jaecoo_offers_oct2026",
+        "jaecoo_carexpert_aug2026",
+        "jaecoo_racv_specs",
+        "jaecoo_warranty_vehicle",
+        "jaecoo_warranty_battery"
+      ]
+    },
+    {
+      "id": "jaecoo_j5_ev__ev_summit__1",
+      "brand": "Jaecoo",
+      "key": "dc_peak_kw",
+      "value": 130,
+      "status": "standard",
+      "sourceIds": [
+        "jaecoo_spec_apr2026",
+        "jaecoo_offers_oct2026",
+        "jaecoo_carexpert_aug2026",
+        "jaecoo_racv_specs",
+        "jaecoo_warranty_vehicle",
+        "jaecoo_warranty_battery"
+      ]
+    },
+    {
+      "id": "byd_atto_2__dynamic__1",
+      "brand": "BYD",
+      "key": "dc_charge_time_min",
+      "value": 38.6,
+      "status": "standard",
+      "sourceIds": [
+        "byd_atto2_spec",
+        "byd_atto2_price",
+        "byd_warranty"
+      ]
+    },
+    {
+      "id": "byd_atto_2__dynamic__1",
+      "brand": "BYD",
+      "key": "dc_peak_kw",
+      "value": 82,
+      "status": "standard",
+      "sourceIds": [
+        "byd_atto2_spec",
+        "byd_atto2_price",
+        "byd_warranty"
+      ]
+    },
+    {
+      "id": "byd_atto_2__premium__2",
+      "brand": "BYD",
+      "key": "dc_charge_time_min",
+      "value": 38.6,
+      "status": "standard",
+      "sourceIds": [
+        "byd_atto2_spec",
+        "byd_atto2_price",
+        "byd_warranty"
+      ]
+    },
+    {
+      "id": "byd_atto_2__premium__2",
+      "brand": "BYD",
+      "key": "dc_peak_kw",
+      "value": 82,
+      "status": "standard",
+      "sourceIds": [
+        "byd_atto2_spec",
+        "byd_atto2_price",
+        "byd_warranty"
+      ]
+    },
+    {
+      "id": "tesla_model_3__premium_long_range_rwd__1",
+      "brand": "Tesla",
+      "key": "dc_charge_time_min",
+      "value": "24–28 min",
+      "status": "conditional",
+      "sourceIds": [
+        "r6_evdb_tesla"
+      ]
+    },
+    {
+      "id": "tesla_model_3__premium_long_range_rwd__1",
+      "brand": "Tesla",
+      "key": "dc_peak_kw",
+      "value": 250,
+      "status": "standard",
+      "sourceIds": [
+        "tesla_3_product",
+        "tesla_3_config",
+        "tesla_3_manual",
+        "tesla_3_tow",
+        "tesla_ac",
+        "tesla_warranty"
+      ]
+    },
+    {
+      "id": "tesla_model_3__premium_rwd__2",
+      "brand": "Tesla",
+      "key": "dc_charge_time_min",
+      "value": "24–28 min",
+      "status": "conditional",
+      "sourceIds": [
+        "r6_evdb_tesla"
+      ]
+    },
+    {
+      "id": "tesla_model_3__premium_rwd__2",
+      "brand": "Tesla",
+      "key": "dc_peak_kw",
+      "value": 250,
+      "status": "conditional",
+      "sourceIds": [
+        "r6_tesla_3_battery"
+      ]
+    },
+    {
+      "id": "tesla_model_3__rear_wheel_drive__3",
+      "brand": "Tesla",
+      "key": "dc_charge_time_min",
+      "value": 24,
+      "status": "conditional",
+      "sourceIds": [
+        "r7_evdb_model_3_rwd"
+      ]
+    },
+    {
+      "id": "tesla_model_3__rear_wheel_drive__3",
+      "brand": "Tesla",
+      "key": "dc_peak_kw",
+      "value": 175,
+      "status": "conditional",
+      "sourceIds": [
+        "r7_evdb_model_3_rwd"
+      ]
+    },
+    {
+      "id": "tesla_model_3__performance_awd__4",
+      "brand": "Tesla",
+      "key": "dc_charge_time_min",
+      "value": "24–28 min",
+      "status": "conditional",
+      "sourceIds": [
+        "r6_evdb_tesla"
+      ]
+    },
+    {
+      "id": "tesla_model_3__performance_awd__4",
+      "brand": "Tesla",
+      "key": "dc_peak_kw",
+      "value": 250,
+      "status": "standard",
+      "sourceIds": [
+        "tesla_3_product",
+        "tesla_3_config",
+        "tesla_3_manual",
+        "tesla_3_tow",
+        "tesla_ac",
+        "tesla_warranty",
+        "tesla_my27_announcement"
+      ]
+    },
+    {
+      "id": "kia_ev5__air_2wd_standard_range__1",
+      "brand": "Kia",
+      "key": "dc_charge_time_min",
+      "value": 36,
+      "status": "standard",
+      "sourceIds": [
+        "kia_ev5_spec",
+        "kia_ev5_price_review",
+        "kia_warranty"
+      ]
+    },
+    {
+      "id": "kia_ev5__air_2wd_standard_range__1",
+      "brand": "Kia",
+      "key": "dc_peak_kw",
+      "value": "Not published by Kia",
+      "status": "conditional",
+      "sourceIds": [
+        "r6_kia_ev5_spec"
+      ]
+    },
+    {
+      "id": "kia_ev5__air_2wd_long_range__2",
+      "brand": "Kia",
+      "key": "dc_charge_time_min",
+      "value": 38,
+      "status": "standard",
+      "sourceIds": [
+        "kia_ev5_spec",
+        "kia_ev5_price_review",
+        "kia_warranty"
+      ]
+    },
+    {
+      "id": "kia_ev5__air_2wd_long_range__2",
+      "brand": "Kia",
+      "key": "dc_peak_kw",
+      "value": 140,
+      "status": "conditional",
+      "sourceIds": [
+        "r6_carexpert_ev5"
+      ]
+    },
+    {
+      "id": "kia_ev5__earth_awd_long_range__3",
+      "brand": "Kia",
+      "key": "dc_charge_time_min",
+      "value": 38,
+      "status": "standard",
+      "sourceIds": [
+        "kia_ev5_spec",
+        "kia_ev5_price_review",
+        "kia_warranty"
+      ]
+    },
+    {
+      "id": "kia_ev5__earth_awd_long_range__3",
+      "brand": "Kia",
+      "key": "dc_peak_kw",
+      "value": 140,
+      "status": "conditional",
+      "sourceIds": [
+        "r6_carexpert_ev5"
+      ]
+    },
+    {
+      "id": "kia_ev5__gt_line_awd_long_range__4",
+      "brand": "Kia",
+      "key": "dc_charge_time_min",
+      "value": 38,
+      "status": "standard",
+      "sourceIds": [
+        "kia_ev5_spec",
+        "kia_ev5_price_review",
+        "kia_warranty"
+      ]
+    },
+    {
+      "id": "kia_ev5__gt_line_awd_long_range__4",
+      "brand": "Kia",
+      "key": "dc_peak_kw",
+      "value": 140,
+      "status": "conditional",
+      "sourceIds": [
+        "r6_carexpert_ev5"
+      ]
+    },
+    {
+      "id": "kia_ev3__air_2wd_standard_range__1",
+      "brand": "Kia",
+      "key": "dc_charge_time_min",
+      "value": 29,
+      "status": "standard",
+      "sourceIds": [
+        "kia_ev3_spec",
+        "kia_ev3_price_news",
+        "kia_warranty"
+      ]
+    },
+    {
+      "id": "kia_ev3__air_2wd_standard_range__1",
+      "brand": "Kia",
+      "key": "dc_peak_kw",
+      "value": 100,
+      "status": "conditional",
+      "sourceIds": [
+        "r6_evdb_ev3_sr"
+      ]
+    },
+    {
+      "id": "kia_ev3__air_2wd_long_range__2",
+      "brand": "Kia",
+      "key": "dc_charge_time_min",
+      "value": 31,
+      "status": "standard",
+      "sourceIds": [
+        "kia_ev3_spec",
+        "kia_ev3_price_news",
+        "kia_warranty"
+      ]
+    },
+    {
+      "id": "kia_ev3__air_2wd_long_range__2",
+      "brand": "Kia",
+      "key": "dc_peak_kw",
+      "value": 135,
+      "status": "conditional",
+      "sourceIds": [
+        "r6_evdb_ev3_lr"
+      ]
+    },
+    {
+      "id": "kia_ev3__earth_2wd_long_range__3",
+      "brand": "Kia",
+      "key": "dc_charge_time_min",
+      "value": 31,
+      "status": "standard",
+      "sourceIds": [
+        "kia_ev3_spec",
+        "kia_ev3_price_news",
+        "kia_warranty"
+      ]
+    },
+    {
+      "id": "kia_ev3__earth_2wd_long_range__3",
+      "brand": "Kia",
+      "key": "dc_peak_kw",
+      "value": 135,
+      "status": "conditional",
+      "sourceIds": [
+        "r6_evdb_ev3_lr"
+      ]
+    },
+    {
+      "id": "kia_ev3__gt_line_2wd_long_range__4",
+      "brand": "Kia",
+      "key": "dc_charge_time_min",
+      "value": 31,
+      "status": "standard",
+      "sourceIds": [
+        "kia_ev3_spec",
+        "kia_ev3_price_news",
+        "kia_warranty"
+      ]
+    },
+    {
+      "id": "kia_ev3__gt_line_2wd_long_range__4",
+      "brand": "Kia",
+      "key": "dc_peak_kw",
+      "value": 135,
+      "status": "conditional",
+      "sourceIds": [
+        "r6_evdb_ev3_lr"
+      ]
+    },
+    {
+      "id": "kia_ev3__gt_line_awd_long_range__5",
+      "brand": "Kia",
+      "key": "dc_charge_time_min",
+      "value": 31,
+      "status": "conditional",
+      "sourceIds": [
+        "r6_kia_ev3_spec",
+        "r6_kia_ev3_awd_goauto",
+        "r6_evspec_ev3_awd"
+      ]
+    },
+    {
+      "id": "kia_ev3__gt_line_awd_long_range__5",
+      "brand": "Kia",
+      "key": "dc_peak_kw",
+      "value": 135,
+      "status": "conditional",
+      "sourceIds": [
+        "r6_evdb_ev3_lr"
+      ]
+    },
+    {
+      "id": "byd_atto_3_evo__dynamic_fwd__1",
+      "brand": "BYD",
+      "key": "dc_charge_time_min",
+      "value": 41,
+      "status": "standard",
+      "sourceIds": [
+        "r3_evo_spec"
+      ]
+    },
+    {
+      "id": "byd_atto_3_evo__dynamic_fwd__1",
+      "brand": "BYD",
+      "key": "dc_peak_kw",
+      "value": 110,
+      "status": "standard",
+      "sourceIds": [
+        "r3_evo_spec"
+      ]
+    },
+    {
+      "id": "byd_atto_3_evo__premium_rwd__2",
+      "brand": "BYD",
+      "key": "dc_charge_time_min",
+      "value": 30,
+      "status": "standard",
+      "sourceIds": [
+        "r3_evo_spec"
+      ]
+    },
+    {
+      "id": "byd_atto_3_evo__premium_rwd__2",
+      "brand": "BYD",
+      "key": "dc_peak_kw",
+      "value": 220,
+      "status": "standard",
+      "sourceIds": [
+        "r3_evo_spec"
+      ]
+    },
+    {
+      "id": "byd_atto_3_legacy__essential_fwd__1",
+      "brand": "BYD",
+      "key": "dc_charge_time_min",
+      "value": "Not published by BYD Australia",
+      "status": "conditional",
+      "sourceIds": [
+        "r6_atto3_spec"
+      ]
+    },
+    {
+      "id": "byd_atto_3_legacy__essential_fwd__1",
+      "brand": "BYD",
+      "key": "dc_peak_kw",
+      "value": 70,
+      "status": "standard",
+      "sourceIds": [
+        "byd_atto3_spec",
+        "byd_atto3_price",
+        "byd_showcase",
+        "byd_warranty"
+      ]
+    },
+    {
+      "id": "byd_atto_3_legacy__premium_fwd__2",
+      "brand": "BYD",
+      "key": "dc_charge_time_min",
+      "value": 29,
+      "status": "conditional",
+      "sourceIds": [
+        "r6_byd_charging_guide"
+      ]
+    },
+    {
+      "id": "byd_atto_3_legacy__premium_fwd__2",
+      "brand": "BYD",
+      "key": "dc_peak_kw",
+      "value": 88,
+      "status": "standard",
+      "sourceIds": [
+        "byd_atto3_spec",
+        "byd_atto3_price",
+        "byd_showcase",
+        "byd_warranty"
+      ]
+    },
+    {
+      "id": "byd_seal__premium_rwd__20261010",
+      "brand": "BYD",
+      "key": "dc_charge_time_min",
+      "value": null,
+      "status": "not_verified",
+      "sourceIds": []
+    },
+    {
+      "id": "byd_seal__premium_rwd__20261010",
+      "brand": "BYD",
+      "key": "dc_peak_kw",
+      "value": null,
+      "status": "not_verified",
+      "sourceIds": []
+    },
+    {
+      "id": "byd_seal__performance_awd__20261010",
+      "brand": "BYD",
+      "key": "dc_charge_time_min",
+      "value": null,
+      "status": "not_verified",
+      "sourceIds": []
+    },
+    {
+      "id": "byd_seal__performance_awd__20261010",
+      "brand": "BYD",
+      "key": "dc_peak_kw",
+      "value": null,
+      "status": "not_verified",
+      "sourceIds": []
+    },
+    {
+      "id": "byd_dolphin__essential_fwd__20261010",
+      "brand": "BYD",
+      "key": "dc_charge_time_min",
+      "value": null,
+      "status": "not_verified",
+      "sourceIds": []
+    },
+    {
+      "id": "byd_dolphin__essential_fwd__20261010",
+      "brand": "BYD",
+      "key": "dc_peak_kw",
+      "value": null,
+      "status": "not_verified",
+      "sourceIds": []
+    },
+    {
+      "id": "byd_dolphin__premium_fwd__20261010",
+      "brand": "BYD",
+      "key": "dc_charge_time_min",
+      "value": null,
+      "status": "not_verified",
+      "sourceIds": []
+    },
+    {
+      "id": "byd_dolphin__premium_fwd__20261010",
+      "brand": "BYD",
+      "key": "dc_peak_kw",
+      "value": null,
+      "status": "not_verified",
+      "sourceIds": []
+    },
+    {
+      "id": "mg4_ev_my26__essence_64_rwd__20261010",
+      "brand": "MG",
+      "key": "dc_charge_time_min",
+      "value": null,
+      "status": "not_verified",
+      "sourceIds": []
+    },
+    {
+      "id": "mg4_ev_my26__xpower_awd__20261010",
+      "brand": "MG",
+      "key": "dc_charge_time_min",
+      "value": null,
+      "status": "not_verified",
+      "sourceIds": []
+    },
+    {
+      "id": "mg4_ev_urban_my26__essence_43_fwd__20261010",
+      "brand": "MG",
+      "key": "dc_charge_time_min",
+      "value": null,
+      "status": "not_verified",
+      "sourceIds": []
+    },
+    {
+      "id": "mg4_ev_urban_my26__essence_54_fwd__20261010",
+      "brand": "MG",
+      "key": "dc_charge_time_min",
+      "value": null,
+      "status": "not_verified",
+      "sourceIds": []
+    },
+    {
+      "id": "fuso_ecanter_feavkbrcsfad__20261010",
+      "brand": "Fuso",
+      "key": "dc_charge_time_min",
+      "value": null,
+      "status": "not_verified",
+      "sourceIds": []
+    },
+    {
+      "id": "fuso_ecanter_feavkcrcsfad__20261010",
+      "brand": "Fuso",
+      "key": "dc_charge_time_min",
+      "value": null,
+      "status": "not_verified",
+      "sourceIds": []
+    },
+    {
+      "id": "fuso_ecanter_feavkercsfad__20261010",
+      "brand": "Fuso",
+      "key": "dc_charge_time_min",
+      "value": null,
+      "status": "not_verified",
+      "sourceIds": []
+    },
+    {
+      "id": "fuso_ecanter_febvkercsfad__20261010",
+      "brand": "Fuso",
+      "key": "dc_charge_time_min",
+      "value": null,
+      "status": "not_verified",
+      "sourceIds": []
+    },
+    {
+      "id": "fuso_ecanter_feavkerdsfab__20261010",
+      "brand": "Fuso",
+      "key": "dc_charge_time_min",
+      "value": null,
+      "status": "not_verified",
+      "sourceIds": []
+    },
+    {
+      "id": "fuso_ecanter_febvkerdsfab__20261010",
+      "brand": "Fuso",
+      "key": "dc_charge_time_min",
+      "value": null,
+      "status": "not_verified",
+      "sourceIds": []
+    },
+    {
+      "id": "fuso_ecanter_febvkgrdsfab__20261010",
+      "brand": "Fuso",
+      "key": "dc_charge_time_min",
+      "value": null,
+      "status": "not_verified",
+      "sourceIds": []
+    },
+    {
+      "id": "fuso_ecanter_feb7kerdsfac__20261010",
+      "brand": "Fuso",
+      "key": "dc_charge_time_min",
+      "value": null,
+      "status": "not_verified",
+      "sourceIds": []
+    },
+    {
+      "id": "fuso_ecanter_feb7kgrdsfac__20261010",
+      "brand": "Fuso",
+      "key": "dc_charge_time_min",
+      "value": null,
+      "status": "not_verified",
+      "sourceIds": []
+    },
+    {
+      "id": "fuso_ecanter_fecxkgrdsfac__20261010",
+      "brand": "Fuso",
+      "key": "dc_charge_time_min",
+      "value": null,
+      "status": "not_verified",
+      "sourceIds": []
+    },
+    {
+      "id": "fuso_ecanter_fecxkhrdsfac__20261010",
+      "brand": "Fuso",
+      "key": "dc_charge_time_min",
+      "value": null,
+      "status": "not_verified",
+      "sourceIds": []
+    },
+    {
+      "id": "fuso_ecanter_fecxkkrdsfac__20261010",
+      "brand": "Fuso",
+      "key": "dc_charge_time_min",
+      "value": null,
+      "status": "not_verified",
+      "sourceIds": []
+    },
+    {
+      "id": "fuso_ecanter_fecxkhresfac__20261010",
+      "brand": "Fuso",
+      "key": "dc_charge_time_min",
+      "value": null,
+      "status": "not_verified",
+      "sourceIds": []
+    },
+    {
+      "id": "fuso_ecanter_fecxkkresfac__20261010",
+      "brand": "Fuso",
+      "key": "dc_charge_time_min",
+      "value": null,
+      "status": "not_verified",
+      "sourceIds": []
+    },
+    {
+      "id": "foton_t5_4495_81_14kwh__20261010",
+      "brand": "Foton",
+      "key": "dc_charge_time_min",
+      "value": null,
+      "status": "not_verified",
+      "sourceIds": []
+    },
+    {
+      "id": "foton_t5_6000_81_14kwh__20261010",
+      "brand": "Foton",
+      "key": "dc_charge_time_min",
+      "value": null,
+      "status": "not_verified",
+      "sourceIds": []
+    },
+    {
+      "id": "zeeho_ae4_au__20261010",
+      "brand": "ZEEHO",
+      "key": "dc_charge_time_min",
+      "value": null,
+      "status": "not_verified",
+      "sourceIds": []
+    },
+    {
+      "id": "zeeho_ae6_plus_au__20261010",
+      "brand": "ZEEHO",
+      "key": "dc_charge_time_min",
+      "value": null,
+      "status": "not_verified",
+      "sourceIds": []
+    },
+    {
+      "id": "zeeho_ae8_plus_au__20261010",
+      "brand": "ZEEHO",
+      "key": "dc_charge_time_min",
+      "value": null,
+      "status": "not_verified",
+      "sourceIds": []
+    },
+    {
+      "id": "segway_e125s_au__20261010",
+      "brand": "Segway",
+      "key": "dc_charge_time_min",
+      "value": null,
+      "status": "not_verified",
+      "sourceIds": []
+    },
+    {
+      "id": "segway_e300se_au__20261010",
+      "brand": "Segway",
+      "key": "dc_charge_time_min",
+      "value": null,
+      "status": "not_verified",
+      "sourceIds": []
+    },
+    {
+      "id": "volkswagen_idbuzz_my26_pro_swb__20261010",
+      "brand": "Volkswagen",
+      "key": "dc_charge_time_min",
+      "value": null,
+      "status": "not_verified",
+      "sourceIds": []
+    },
+    {
+      "id": "volkswagen_idbuzz_my26_pro_swb__20261010",
+      "brand": "Volkswagen",
+      "key": "dc_peak_kw",
+      "value": null,
+      "status": "not_verified",
+      "sourceIds": []
+    },
+    {
+      "id": "volkswagen_idbuzz_my26_pro_lwb__20261010",
+      "brand": "Volkswagen",
+      "key": "dc_charge_time_min",
+      "value": null,
+      "status": "not_verified",
+      "sourceIds": []
+    },
+    {
+      "id": "volkswagen_idbuzz_my26_pro_lwb__20261010",
+      "brand": "Volkswagen",
+      "key": "dc_peak_kw",
+      "value": null,
+      "status": "not_verified",
+      "sourceIds": []
+    },
+    {
+      "id": "volkswagen_idbuzz_my26_gtx_lwb__20261010",
+      "brand": "Volkswagen",
+      "key": "dc_charge_time_min",
+      "value": null,
+      "status": "not_verified",
+      "sourceIds": []
+    },
+    {
+      "id": "volkswagen_idbuzz_my26_gtx_lwb__20261010",
+      "brand": "Volkswagen",
+      "key": "dc_peak_kw",
+      "value": null,
+      "status": "not_verified",
+      "sourceIds": []
+    },
+    {
+      "id": "volkswagen_idbuzzcargo_my26_swb__20261010",
+      "brand": "Volkswagen",
+      "key": "dc_charge_time_min",
+      "value": null,
+      "status": "not_verified",
+      "sourceIds": []
+    },
+    {
+      "id": "volkswagen_idbuzzcargo_my26_swb__20261010",
+      "brand": "Volkswagen",
+      "key": "dc_peak_kw",
+      "value": null,
+      "status": "not_verified",
+      "sourceIds": []
+    }
+  ],
+  "affectedCars": 67,
+  "affectedByBrand": {
+    "Tesla": 8,
+    "BYD": 12,
+    "Geely": 4,
+    "Zeekr": 4,
+    "Jaecoo": 1,
+    "Kia": 9,
+    "MG": 4,
+    "Fuso": 14,
+    "Foton": 2,
+    "ZEEHO": 3,
+    "Segway": 2,
+    "Volkswagen": 4
+  },
+  "identitySnapshotsWithIssue": [
+    {
+      "ref": "i_d6983740363e54b94cf8f65728ff3f34b6013e98050d4b2499551f878cd77f09",
+      "id": "segway_e125s_au__20261010"
+    },
+    {
+      "ref": "i_f7de69c0870c9ef2bef774e9f699ea2d5712dc7731a835845968505d402e7107",
+      "id": "segway_e300se_au__20261010"
+    },
+    {
+      "ref": "i_0fff2b720495876ced8c50d64eb454934dc1834ddbdb6ee916862df725e25a58",
+      "id": "zeeho_ae4_au__20261010"
+    },
+    {
+      "ref": "i_d9b6d198f7e509f1590f2aeb1a8462a82ba30949cae37fd1c681a96fe427cfe0",
+      "id": "zeeho_ae6_plus_au__20261010"
+    },
+    {
+      "ref": "i_587ef36467d65e48c99fbce3cd31ba45366527e809f36301416584492eb9acd8",
+      "id": "zeeho_ae8_plus_au__20261010"
+    },
+    {
+      "ref": "i_69d9e745e47ff7143c5f4a5d6d4629c1d12d01867f0ca50a2dba1fff9851d9de",
+      "id": "volkswagen_idbuzz_my26_pro_swb__20261010"
+    },
+    {
+      "ref": "i_b3e8e58fa949ff4363ac957195083e7667fb5aa1bcb36776df36416d80f72e51",
+      "id": "volkswagen_idbuzz_my26_pro_lwb__20261010"
+    },
+    {
+      "ref": "i_a4232f5abe045755336059ac9d4d774b8ab7a9f6761364c7a02819b811b1975e",
+      "id": "volkswagen_idbuzz_my26_gtx_lwb__20261010"
+    },
+    {
+      "ref": "i_23f7b538d4dbdd0cb5125f6e92179a628a5a6c61d58e85ee4c04d3a7488febd9",
+      "id": "volkswagen_idbuzzcargo_my26_swb__20261010"
+    }
+  ],
+  "ownIdentityRecordsWithIssue": [
+    "segway_e125s_au__20261010",
+    "segway_e300se_au__20261010",
+    "zeeho_ae4_au__20261010",
+    "zeeho_ae6_plus_au__20261010",
+    "zeeho_ae8_plus_au__20261010",
+    "volkswagen_idbuzz_my26_pro_swb__20261010",
+    "volkswagen_idbuzz_my26_pro_lwb__20261010",
+    "volkswagen_idbuzz_my26_gtx_lwb__20261010",
+    "volkswagen_idbuzzcargo_my26_swb__20261010"
+  ],
+  "relatedIdentityRecordsWithIssue": [
+    "zeeho_ae4_au__20261010",
+    "zeeho_ae8_plus_au__20261010",
+    "volkswagen_idbuzz_my26_pro_swb__20261010"
+  ],
+  "simulations": [
+    {
+      "kind": "remove_non_kia",
+      "before": 308,
+      "after": 299,
+      "lost": [
+        "segway_e125s_au__20261010",
+        "segway_e300se_au__20261010",
+        "zeeho_ae4_au__20261010",
+        "zeeho_ae6_plus_au__20261010",
+        "zeeho_ae8_plus_au__20261010",
+        "volkswagen_idbuzz_my26_pro_swb__20261010",
+        "volkswagen_idbuzz_my26_pro_lwb__20261010",
+        "volkswagen_idbuzz_my26_gtx_lwb__20261010",
+        "volkswagen_idbuzzcargo_my26_swb__20261010"
+      ],
+      "gained": []
+    },
+    {
+      "kind": "reword_all",
+      "before": 308,
+      "after": 299,
+      "lost": [
+        "segway_e125s_au__20261010",
+        "segway_e300se_au__20261010",
+        "zeeho_ae4_au__20261010",
+        "zeeho_ae6_plus_au__20261010",
+        "zeeho_ae8_plus_au__20261010",
+        "volkswagen_idbuzz_my26_pro_swb__20261010",
+        "volkswagen_idbuzz_my26_pro_lwb__20261010",
+        "volkswagen_idbuzz_my26_gtx_lwb__20261010",
+        "volkswagen_idbuzzcargo_my26_swb__20261010"
+      ],
+      "gained": []
+    }
+  ],
+  "vw": {
+    "id": "volkswagen_idbuzz_my26_pro_swb__20261010",
+    "factsHash": "c0cc5084611b302ab8d3deb32885c9b5f671009669eeea186b1e4ac1cc2fc3a2",
+    "configurationHash": "f1e67a406d691de322802347a76b85b0cb4b14419ab165f1a4cf44c128bbedeb",
+    "dcTime": {
+      "key": "dc_charge_time_min",
+      "label": "DC charging time",
+      "value": null,
+      "unit": "min",
+      "basis": "Exact-trim research pending",
+      "comparisonBasis": "",
+      "status": "not_verified",
+      "sourceIds": [],
+      "date": "2026-10-10",
+      "market": "AU",
+      "scope": "Volkswagen ID. Buzz Pro SWB · 2026",
+      "qualifications": [
+        "No exact-trim measurement verified yet."
+      ],
+      "issues": [
+        {
+          "issue_id": "V2-13",
+          "priority": "medium",
+          "model_ids": [
+            "all"
+          ],
+          "title": "Charging windows and supply ratings differ",
+          "publication_action": "A 350 kW supply used in a Kia test does not establish a 350 kW vehicle peak.",
+          "source_ids": [
+            "kia_ev3_spec",
+            "kia_ev5_spec",
+            "geely_brochure_er"
+          ]
+        }
+      ]
+    },
+    "dcPeak": {
+      "key": "dc_peak_kw",
+      "label": "Peak DC acceptance",
+      "value": null,
+      "unit": "kW",
+      "basis": "Exact-trim research pending",
+      "comparisonBasis": "",
+      "status": "not_verified",
+      "sourceIds": [],
+      "date": "2026-10-10",
+      "market": "AU",
+      "scope": "Volkswagen ID. Buzz Pro SWB · 2026",
+      "qualifications": [
+        "No exact-trim measurement verified yet."
+      ],
+      "issues": [
+        {
+          "issue_id": "V2-13",
+          "priority": "medium",
+          "model_ids": [
+            "all"
+          ],
+          "title": "Charging windows and supply ratings differ",
+          "publication_action": "A 350 kW supply used in a Kia test does not establish a 350 kW vehicle peak.",
+          "source_ids": [
+            "kia_ev3_spec",
+            "kia_ev5_spec",
+            "geely_brochure_er"
+          ]
+        }
+      ]
+    },
+    "timeClaim": {
+      "key": "dc_charge_time_min",
+      "label": "DC charging time",
+      "value": "Needs confirmation",
+      "basis": "Exact-trim research pending",
+      "evidenceDate": "2026-10-10",
+      "status": "not_verified",
+      "sources": [],
+      "qualifications": [
+        "No exact-trim measurement verified yet.",
+        "A 350 kW supply used in a Kia test does not establish a 350 kW vehicle peak."
+      ],
+      "car": "Volkswagen ID. Buzz Pro SWB",
+      "carId": "volkswagen_idbuzz_my26_pro_swb__20261010",
+      "sentence": "Volkswagen ID. Buzz Pro SWB: dc charging time — Needs confirmation; basis: Exact-trim research pending; evidence checked 2026-10-10; needs confirmation. No exact-trim measurement verified yet. A 350 kW supply used in a Kia test does not establish a 350 kW vehicle peak."
+    },
+    "peakClaim": {
+      "key": "dc_peak_kw",
+      "label": "Peak DC acceptance",
+      "value": "Needs confirmation",
+      "basis": "Exact-trim research pending",
+      "evidenceDate": "2026-10-10",
+      "status": "not_verified",
+      "sources": [],
+      "qualifications": [
+        "No exact-trim measurement verified yet.",
+        "A 350 kW supply used in a Kia test does not establish a 350 kW vehicle peak."
+      ],
+      "car": "Volkswagen ID. Buzz Pro SWB",
+      "carId": "volkswagen_idbuzz_my26_pro_swb__20261010",
+      "sentence": "Volkswagen ID. Buzz Pro SWB: peak dc acceptance — Needs confirmation; basis: Exact-trim research pending; evidence checked 2026-10-10; needs confirmation. No exact-trim measurement verified yet. A 350 kW supply used in a Kia test does not establish a 350 kW vehicle peak."
+    },
+    "keyFactKeys": [
+      "price_aud",
+      "range_km",
+      "dc_charge_time_min",
+      "boot_l",
+      "towing_braked_kg",
+      "warranty"
+    ]
+  }
+}

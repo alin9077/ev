@@ -1,0 +1,2908 @@
+{
+  "status": "passed_read_only_actual_shared_reader_and_in_memory_merge",
+  "policy": {
+    "asOf": "2026-10-10",
+    "maxAgeDays": 30
+  },
+  "recordsAudited": 16,
+  "dependenciesIncluded": 80,
+  "changedRecords": 13,
+  "changedDependencies": 1,
+  "unchangedDependencyCount": 79,
+  "recordAndDependencyCheckedDatesPreserved": true,
+  "researchRefreshActionsVerified": 57,
+  "affectedVisibleBefore": 1,
+  "affectedVisibleAfter": 13,
+  "affectedVisibleClausesAfter": 26,
+  "fullCatalogueVisibleBefore": 210,
+  "fullCatalogueVisibleAfter": 222,
+  "fullCatalogueVisibleClausesAfter": 444,
+  "suppressedIds": [
+    "geely_ex5__complete__3",
+    "geely_ex5__inspire__4",
+    "byd_atto_3_legacy__premium_fwd__2"
+  ],
+  "blackUnchanged": true,
+  "unrelatedSummariesUnchanged": true,
+  "actualPackFeatureAgreementCount": 16,
+  "applicationInputsStableDuringValidation": true,
+  "effectiveSnapshotStillMatches": true,
+  "applicationInputChangesSinceCapture": [
+    {
+      "path": "src/lib/data.ts",
+      "capturedSha256": "6532305170b45af40984a7f290ad3cbf4793c33ea7a240a80790423e06a455c8",
+      "currentSha256": "e32294056e887c2e2b8e9dbf599862144c7209e2f45b741fe5575b62fab6abbb"
+    },
+    {
+      "path": "src/lib/research-refresh.ts",
+      "capturedSha256": "bf84d5311efc856e764da52fa5f69e03a7ad895462e898024676727f279056f3",
+      "currentSha256": "dc56e875e0ed47a0c35ee979008f552bf2d4fee47bf6ebb5ad0deb62d3c33ce3"
+    }
+  ],
+  "validationApplicationInputs": [
+    {
+      "path": "src/lib/data.ts",
+      "sha256": "e32294056e887c2e2b8e9dbf599862144c7209e2f45b741fe5575b62fab6abbb"
+    },
+    {
+      "path": "src/lib/selling-points.ts",
+      "sha256": "2ca05c7c2a23b75789d2848c27b0cfc58cbde7202e5ac956e8fcc7312612899a"
+    },
+    {
+      "path": "src/lib/research-refresh.ts",
+      "sha256": "dc56e875e0ed47a0c35ee979008f552bf2d4fee47bf6ebb5ad0deb62d3c33ce3"
+    },
+    {
+      "path": "data/research-refresh-2026-10-10.json",
+      "sha256": "4b71c0a87ff1917777767e4eb43e69d6f5af8d515197c43bdc5dbaf3d5df94ec"
+    },
+    {
+      "path": "data/buyer-selling-points-2026-10-10.json",
+      "sha256": "6af7a35d28d04e7cb8a20de693d923dac0401ac56c84f5a8c7c5676121d37ddd"
+    }
+  ],
+  "applicationEditMade": false,
+  "mutationTestsPassed": 667,
+  "visibleDependenciesMutationTested": 69,
+  "sourceIdsMutationTested": 10,
+  "tests": [
+    {
+      "name": "feature:byd_sealion_7__premium_rwd__1:front_ventilated_seats | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_sealion_7__premium_rwd__1:front_ventilated_seats | changed feature value",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_sealion_7__premium_rwd__1:front_ventilated_seats | changed feature status",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_sealion_7__premium_rwd__1:front_ventilated_seats | changed feature conditions",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_sealion_7__premium_rwd__1:front_ventilated_seats | removed feature source membership",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_sealion_7__premium_rwd__1:front_ventilated_seats | stale feature date",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_sealion_7__premium_rwd__1:screens_hud | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_sealion_7__premium_rwd__1:screens_hud | changed feature value",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_sealion_7__premium_rwd__1:screens_hud | changed feature status",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_sealion_7__premium_rwd__1:screens_hud | changed feature conditions",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_sealion_7__premium_rwd__1:screens_hud | removed feature source membership",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_sealion_7__premium_rwd__1:screens_hud | stale feature date",
+      "passed": true
+    },
+    {
+      "name": "variant:byd_sealion_7__premium_rwd__1:drive | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "variant:byd_sealion_7__premium_rwd__1:drive | changed exact variant property",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__premium_rwd__1:towing_braked_kg | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__premium_rwd__1:towing_braked_kg | changed fact value",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__premium_rwd__1:towing_braked_kg | changed fact status",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__premium_rwd__1:towing_braked_kg | changed fact unit",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__premium_rwd__1:towing_braked_kg | changed fact basis",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__premium_rwd__1:towing_braked_kg | changed fact comparisonBasis",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__premium_rwd__1:towing_braked_kg | changed fact market",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__premium_rwd__1:towing_braked_kg | changed fact scope",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__premium_rwd__1:towing_braked_kg | changed fact qualifications",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__premium_rwd__1:towing_braked_kg | changed fact conditionExplanation",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__premium_rwd__1:towing_braked_kg | new blocking fact issue",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__premium_rwd__1:towing_braked_kg | removed fact source membership",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__premium_rwd__1:towing_braked_kg | stale fact date",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__performance_awd__2:towing_braked_kg | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__performance_awd__2:towing_braked_kg | changed fact value",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__performance_awd__2:towing_braked_kg | changed fact status",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__performance_awd__2:towing_braked_kg | changed fact unit",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__performance_awd__2:towing_braked_kg | changed fact basis",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__performance_awd__2:towing_braked_kg | changed fact comparisonBasis",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__performance_awd__2:towing_braked_kg | changed fact market",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__performance_awd__2:towing_braked_kg | changed fact scope",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__performance_awd__2:towing_braked_kg | changed fact qualifications",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__performance_awd__2:towing_braked_kg | changed fact conditionExplanation",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__performance_awd__2:towing_braked_kg | new blocking fact issue",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__performance_awd__2:towing_braked_kg | removed fact source membership",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__performance_awd__2:towing_braked_kg | stale fact date",
+      "passed": true
+    },
+    {
+      "name": "variant:byd_sealion_7__premium_rwd__1:model_year | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "variant:byd_sealion_7__premium_rwd__1:model_year | changed exact variant property",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__premium_rwd__1:range_km | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__premium_rwd__1:range_km | changed fact value",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__premium_rwd__1:range_km | changed fact status",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__premium_rwd__1:range_km | changed fact unit",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__premium_rwd__1:range_km | changed fact basis",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__premium_rwd__1:range_km | changed fact comparisonBasis",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__premium_rwd__1:range_km | changed fact market",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__premium_rwd__1:range_km | changed fact scope",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__premium_rwd__1:range_km | changed fact qualifications",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__premium_rwd__1:range_km | changed fact conditionExplanation",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__premium_rwd__1:range_km | new blocking fact issue",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__premium_rwd__1:range_km | removed fact source membership",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__premium_rwd__1:range_km | stale fact date",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__performance_awd__2:range_km | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__performance_awd__2:range_km | changed fact value",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__performance_awd__2:range_km | changed fact status",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__performance_awd__2:range_km | changed fact unit",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__performance_awd__2:range_km | changed fact basis",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__performance_awd__2:range_km | changed fact comparisonBasis",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__performance_awd__2:range_km | changed fact market",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__performance_awd__2:range_km | changed fact scope",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__performance_awd__2:range_km | changed fact qualifications",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__performance_awd__2:range_km | changed fact conditionExplanation",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__performance_awd__2:range_km | new blocking fact issue",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__performance_awd__2:range_km | removed fact source membership",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__performance_awd__2:range_km | stale fact date",
+      "passed": true
+    },
+    {
+      "name": "variant:byd_sealion_7__performance_awd__2:drive | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "variant:byd_sealion_7__performance_awd__2:drive | changed exact variant property",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__performance_awd__2:zero_to_100_s | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__performance_awd__2:zero_to_100_s | changed fact value",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__performance_awd__2:zero_to_100_s | changed fact status",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__performance_awd__2:zero_to_100_s | changed fact unit",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__performance_awd__2:zero_to_100_s | changed fact basis",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__performance_awd__2:zero_to_100_s | changed fact comparisonBasis",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__performance_awd__2:zero_to_100_s | changed fact market",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__performance_awd__2:zero_to_100_s | changed fact scope",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__performance_awd__2:zero_to_100_s | changed fact qualifications",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__performance_awd__2:zero_to_100_s | changed fact conditionExplanation",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__performance_awd__2:zero_to_100_s | new blocking fact issue",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__performance_awd__2:zero_to_100_s | removed fact source membership",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_sealion_7__performance_awd__2:zero_to_100_s | stale fact date",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_sealion_7__performance_awd__2:rear_heated_seats | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_sealion_7__performance_awd__2:rear_heated_seats | changed feature value",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_sealion_7__performance_awd__2:rear_heated_seats | changed feature status",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_sealion_7__performance_awd__2:rear_heated_seats | changed feature conditions",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_sealion_7__performance_awd__2:rear_heated_seats | removed feature source membership",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_sealion_7__performance_awd__2:rear_heated_seats | stale feature date",
+      "passed": true
+    },
+    {
+      "name": "variant:byd_sealion_7__performance_awd__2:model_year | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "variant:byd_sealion_7__performance_awd__2:model_year | changed exact variant property",
+      "passed": true
+    },
+    {
+      "name": "fact:geely_ex5__complete_extended_range__1:range_km | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "fact:geely_ex5__complete_extended_range__1:range_km | changed fact value",
+      "passed": true
+    },
+    {
+      "name": "fact:geely_ex5__complete_extended_range__1:range_km | changed fact status",
+      "passed": true
+    },
+    {
+      "name": "fact:geely_ex5__complete_extended_range__1:range_km | changed fact unit",
+      "passed": true
+    },
+    {
+      "name": "fact:geely_ex5__complete_extended_range__1:range_km | changed fact basis",
+      "passed": true
+    },
+    {
+      "name": "fact:geely_ex5__complete_extended_range__1:range_km | changed fact comparisonBasis",
+      "passed": true
+    },
+    {
+      "name": "fact:geely_ex5__complete_extended_range__1:range_km | changed fact market",
+      "passed": true
+    },
+    {
+      "name": "fact:geely_ex5__complete_extended_range__1:range_km | changed fact scope",
+      "passed": true
+    },
+    {
+      "name": "fact:geely_ex5__complete_extended_range__1:range_km | changed fact qualifications",
+      "passed": true
+    },
+    {
+      "name": "fact:geely_ex5__complete_extended_range__1:range_km | changed fact conditionExplanation",
+      "passed": true
+    },
+    {
+      "name": "fact:geely_ex5__complete_extended_range__1:range_km | new blocking fact issue",
+      "passed": true
+    },
+    {
+      "name": "fact:geely_ex5__complete_extended_range__1:range_km | removed fact source membership",
+      "passed": true
+    },
+    {
+      "name": "fact:geely_ex5__complete_extended_range__1:range_km | stale fact date",
+      "passed": true
+    },
+    {
+      "name": "feature:geely_ex5__complete_extended_range__1:front_heated_seats | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "feature:geely_ex5__complete_extended_range__1:front_heated_seats | changed feature value",
+      "passed": true
+    },
+    {
+      "name": "feature:geely_ex5__complete_extended_range__1:front_heated_seats | changed feature status",
+      "passed": true
+    },
+    {
+      "name": "feature:geely_ex5__complete_extended_range__1:front_heated_seats | changed feature conditions",
+      "passed": true
+    },
+    {
+      "name": "feature:geely_ex5__complete_extended_range__1:front_heated_seats | removed feature source membership",
+      "passed": true
+    },
+    {
+      "name": "feature:geely_ex5__complete_extended_range__1:front_heated_seats | stale feature date",
+      "passed": true
+    },
+    {
+      "name": "feature:geely_ex5__complete_extended_range__1:front_ventilated_seats | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "feature:geely_ex5__complete_extended_range__1:front_ventilated_seats | changed feature value",
+      "passed": true
+    },
+    {
+      "name": "feature:geely_ex5__complete_extended_range__1:front_ventilated_seats | changed feature status",
+      "passed": true
+    },
+    {
+      "name": "feature:geely_ex5__complete_extended_range__1:front_ventilated_seats | changed feature conditions",
+      "passed": true
+    },
+    {
+      "name": "feature:geely_ex5__complete_extended_range__1:front_ventilated_seats | removed feature source membership",
+      "passed": true
+    },
+    {
+      "name": "feature:geely_ex5__complete_extended_range__1:front_ventilated_seats | stale feature date",
+      "passed": true
+    },
+    {
+      "name": "feature:geely_ex5__complete_extended_range__1:power_tailgate | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "feature:geely_ex5__complete_extended_range__1:power_tailgate | changed feature value",
+      "passed": true
+    },
+    {
+      "name": "feature:geely_ex5__complete_extended_range__1:power_tailgate | changed feature status",
+      "passed": true
+    },
+    {
+      "name": "feature:geely_ex5__complete_extended_range__1:power_tailgate | changed feature conditions",
+      "passed": true
+    },
+    {
+      "name": "feature:geely_ex5__complete_extended_range__1:power_tailgate | removed feature source membership",
+      "passed": true
+    },
+    {
+      "name": "feature:geely_ex5__complete_extended_range__1:power_tailgate | stale feature date",
+      "passed": true
+    },
+    {
+      "name": "variant:geely_ex5__complete_extended_range__1:model_year | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "variant:geely_ex5__complete_extended_range__1:model_year | changed exact variant property",
+      "passed": true
+    },
+    {
+      "name": "fact:geely_ex5__inspire_extended_range__2:range_km | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "fact:geely_ex5__inspire_extended_range__2:range_km | changed fact value",
+      "passed": true
+    },
+    {
+      "name": "fact:geely_ex5__inspire_extended_range__2:range_km | changed fact status",
+      "passed": true
+    },
+    {
+      "name": "fact:geely_ex5__inspire_extended_range__2:range_km | changed fact unit",
+      "passed": true
+    },
+    {
+      "name": "fact:geely_ex5__inspire_extended_range__2:range_km | changed fact basis",
+      "passed": true
+    },
+    {
+      "name": "fact:geely_ex5__inspire_extended_range__2:range_km | changed fact comparisonBasis",
+      "passed": true
+    },
+    {
+      "name": "fact:geely_ex5__inspire_extended_range__2:range_km | changed fact market",
+      "passed": true
+    },
+    {
+      "name": "fact:geely_ex5__inspire_extended_range__2:range_km | changed fact scope",
+      "passed": true
+    },
+    {
+      "name": "fact:geely_ex5__inspire_extended_range__2:range_km | changed fact qualifications",
+      "passed": true
+    },
+    {
+      "name": "fact:geely_ex5__inspire_extended_range__2:range_km | changed fact conditionExplanation",
+      "passed": true
+    },
+    {
+      "name": "fact:geely_ex5__inspire_extended_range__2:range_km | new blocking fact issue",
+      "passed": true
+    },
+    {
+      "name": "fact:geely_ex5__inspire_extended_range__2:range_km | removed fact source membership",
+      "passed": true
+    },
+    {
+      "name": "fact:geely_ex5__inspire_extended_range__2:range_km | stale fact date",
+      "passed": true
+    },
+    {
+      "name": "feature:geely_ex5__inspire_extended_range__2:front_ventilated_seats | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "feature:geely_ex5__inspire_extended_range__2:front_ventilated_seats | changed feature value",
+      "passed": true
+    },
+    {
+      "name": "feature:geely_ex5__inspire_extended_range__2:front_ventilated_seats | changed feature status",
+      "passed": true
+    },
+    {
+      "name": "feature:geely_ex5__inspire_extended_range__2:front_ventilated_seats | changed feature conditions",
+      "passed": true
+    },
+    {
+      "name": "feature:geely_ex5__inspire_extended_range__2:front_ventilated_seats | removed feature source membership",
+      "passed": true
+    },
+    {
+      "name": "feature:geely_ex5__inspire_extended_range__2:front_ventilated_seats | stale feature date",
+      "passed": true
+    },
+    {
+      "name": "feature:geely_ex5__inspire_extended_range__2:screens_hud | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "feature:geely_ex5__inspire_extended_range__2:screens_hud | changed feature value",
+      "passed": true
+    },
+    {
+      "name": "feature:geely_ex5__inspire_extended_range__2:screens_hud | changed feature status",
+      "passed": true
+    },
+    {
+      "name": "feature:geely_ex5__inspire_extended_range__2:screens_hud | changed feature conditions",
+      "passed": true
+    },
+    {
+      "name": "feature:geely_ex5__inspire_extended_range__2:screens_hud | removed feature source membership",
+      "passed": true
+    },
+    {
+      "name": "feature:geely_ex5__inspire_extended_range__2:screens_hud | stale feature date",
+      "passed": true
+    },
+    {
+      "name": "feature:geely_ex5__inspire_extended_range__2:glass_roof | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "feature:geely_ex5__inspire_extended_range__2:glass_roof | changed feature value",
+      "passed": true
+    },
+    {
+      "name": "feature:geely_ex5__inspire_extended_range__2:glass_roof | changed feature status",
+      "passed": true
+    },
+    {
+      "name": "feature:geely_ex5__inspire_extended_range__2:glass_roof | changed feature conditions",
+      "passed": true
+    },
+    {
+      "name": "feature:geely_ex5__inspire_extended_range__2:glass_roof | removed feature source membership",
+      "passed": true
+    },
+    {
+      "name": "feature:geely_ex5__inspire_extended_range__2:glass_roof | stale feature date",
+      "passed": true
+    },
+    {
+      "name": "variant:geely_ex5__inspire_extended_range__2:model_year | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "variant:geely_ex5__inspire_extended_range__2:model_year | changed exact variant property",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__rwd__1:ac_kw | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__rwd__1:ac_kw | changed fact value",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__rwd__1:ac_kw | changed fact status",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__rwd__1:ac_kw | changed fact unit",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__rwd__1:ac_kw | changed fact basis",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__rwd__1:ac_kw | changed fact comparisonBasis",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__rwd__1:ac_kw | changed fact market",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__rwd__1:ac_kw | changed fact scope",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__rwd__1:ac_kw | changed fact qualifications",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__rwd__1:ac_kw | changed fact conditionExplanation",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__rwd__1:ac_kw | new blocking fact issue",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__rwd__1:ac_kw | removed fact source membership",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__rwd__1:ac_kw | stale fact date",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__rwd__1:range_km | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__rwd__1:range_km | changed fact value",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__rwd__1:range_km | changed fact status",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__rwd__1:range_km | changed fact unit",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__rwd__1:range_km | changed fact basis",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__rwd__1:range_km | changed fact comparisonBasis",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__rwd__1:range_km | changed fact market",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__rwd__1:range_km | changed fact scope",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__rwd__1:range_km | changed fact qualifications",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__rwd__1:range_km | changed fact conditionExplanation",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__rwd__1:range_km | new blocking fact issue",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__rwd__1:range_km | removed fact source membership",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__rwd__1:range_km | stale fact date",
+      "passed": true
+    },
+    {
+      "name": "feature:zeekr_7x__rwd__1:front_ventilated_seats | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "feature:zeekr_7x__rwd__1:front_ventilated_seats | changed feature value",
+      "passed": true
+    },
+    {
+      "name": "feature:zeekr_7x__rwd__1:front_ventilated_seats | changed feature status",
+      "passed": true
+    },
+    {
+      "name": "feature:zeekr_7x__rwd__1:front_ventilated_seats | changed feature conditions",
+      "passed": true
+    },
+    {
+      "name": "feature:zeekr_7x__rwd__1:front_ventilated_seats | removed feature source membership",
+      "passed": true
+    },
+    {
+      "name": "feature:zeekr_7x__rwd__1:front_ventilated_seats | stale feature date",
+      "passed": true
+    },
+    {
+      "name": "feature:zeekr_7x__rwd__1:screens_hud | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "feature:zeekr_7x__rwd__1:screens_hud | changed feature value",
+      "passed": true
+    },
+    {
+      "name": "feature:zeekr_7x__rwd__1:screens_hud | changed feature status",
+      "passed": true
+    },
+    {
+      "name": "feature:zeekr_7x__rwd__1:screens_hud | changed feature conditions",
+      "passed": true
+    },
+    {
+      "name": "feature:zeekr_7x__rwd__1:screens_hud | removed feature source membership",
+      "passed": true
+    },
+    {
+      "name": "feature:zeekr_7x__rwd__1:screens_hud | stale feature date",
+      "passed": true
+    },
+    {
+      "name": "variant:zeekr_7x__rwd__1:model_year | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "variant:zeekr_7x__rwd__1:model_year | changed exact variant property",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__long_range_rwd__2:range_km | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__long_range_rwd__2:range_km | changed fact value",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__long_range_rwd__2:range_km | changed fact status",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__long_range_rwd__2:range_km | changed fact unit",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__long_range_rwd__2:range_km | changed fact basis",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__long_range_rwd__2:range_km | changed fact comparisonBasis",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__long_range_rwd__2:range_km | changed fact market",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__long_range_rwd__2:range_km | changed fact scope",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__long_range_rwd__2:range_km | changed fact qualifications",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__long_range_rwd__2:range_km | changed fact conditionExplanation",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__long_range_rwd__2:range_km | new blocking fact issue",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__long_range_rwd__2:range_km | removed fact source membership",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__long_range_rwd__2:range_km | stale fact date",
+      "passed": true
+    },
+    {
+      "name": "feature:zeekr_7x__long_range_rwd__2:front_ventilated_seats | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "feature:zeekr_7x__long_range_rwd__2:front_ventilated_seats | changed feature value",
+      "passed": true
+    },
+    {
+      "name": "feature:zeekr_7x__long_range_rwd__2:front_ventilated_seats | changed feature status",
+      "passed": true
+    },
+    {
+      "name": "feature:zeekr_7x__long_range_rwd__2:front_ventilated_seats | changed feature conditions",
+      "passed": true
+    },
+    {
+      "name": "feature:zeekr_7x__long_range_rwd__2:front_ventilated_seats | removed feature source membership",
+      "passed": true
+    },
+    {
+      "name": "feature:zeekr_7x__long_range_rwd__2:front_ventilated_seats | stale feature date",
+      "passed": true
+    },
+    {
+      "name": "variant:zeekr_7x__long_range_rwd__2:drive | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "variant:zeekr_7x__long_range_rwd__2:drive | changed exact variant property",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__long_range_rwd__2:zero_to_100_s | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__long_range_rwd__2:zero_to_100_s | changed fact value",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__long_range_rwd__2:zero_to_100_s | changed fact status",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__long_range_rwd__2:zero_to_100_s | changed fact unit",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__long_range_rwd__2:zero_to_100_s | changed fact basis",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__long_range_rwd__2:zero_to_100_s | changed fact comparisonBasis",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__long_range_rwd__2:zero_to_100_s | changed fact market",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__long_range_rwd__2:zero_to_100_s | changed fact scope",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__long_range_rwd__2:zero_to_100_s | changed fact qualifications",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__long_range_rwd__2:zero_to_100_s | changed fact conditionExplanation",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__long_range_rwd__2:zero_to_100_s | new blocking fact issue",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__long_range_rwd__2:zero_to_100_s | removed fact source membership",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__long_range_rwd__2:zero_to_100_s | stale fact date",
+      "passed": true
+    },
+    {
+      "name": "variant:zeekr_7x__performance_awd__3:drive | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "variant:zeekr_7x__performance_awd__3:drive | changed exact variant property",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__performance_awd__3:zero_to_100_s | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__performance_awd__3:zero_to_100_s | changed fact value",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__performance_awd__3:zero_to_100_s | changed fact status",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__performance_awd__3:zero_to_100_s | changed fact unit",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__performance_awd__3:zero_to_100_s | changed fact basis",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__performance_awd__3:zero_to_100_s | changed fact comparisonBasis",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__performance_awd__3:zero_to_100_s | changed fact market",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__performance_awd__3:zero_to_100_s | changed fact scope",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__performance_awd__3:zero_to_100_s | changed fact qualifications",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__performance_awd__3:zero_to_100_s | changed fact conditionExplanation",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__performance_awd__3:zero_to_100_s | new blocking fact issue",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__performance_awd__3:zero_to_100_s | removed fact source membership",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__performance_awd__3:zero_to_100_s | stale fact date",
+      "passed": true
+    },
+    {
+      "name": "variant:zeekr_7x__long_range_rwd__2:model_year | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "variant:zeekr_7x__long_range_rwd__2:model_year | changed exact variant property",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__performance_awd__3:suspension_hardware | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__performance_awd__3:suspension_hardware | changed fact value",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__performance_awd__3:suspension_hardware | changed fact status",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__performance_awd__3:suspension_hardware | changed fact unit",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__performance_awd__3:suspension_hardware | changed fact basis",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__performance_awd__3:suspension_hardware | changed fact comparisonBasis",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__performance_awd__3:suspension_hardware | changed fact market",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__performance_awd__3:suspension_hardware | changed fact scope",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__performance_awd__3:suspension_hardware | changed fact qualifications",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__performance_awd__3:suspension_hardware | changed fact conditionExplanation",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__performance_awd__3:suspension_hardware | new blocking fact issue",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__performance_awd__3:suspension_hardware | removed fact source membership",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__performance_awd__3:suspension_hardware | stale fact date",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__performance_awd__3:range_km | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__performance_awd__3:range_km | changed fact value",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__performance_awd__3:range_km | changed fact status",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__performance_awd__3:range_km | changed fact unit",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__performance_awd__3:range_km | changed fact basis",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__performance_awd__3:range_km | changed fact comparisonBasis",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__performance_awd__3:range_km | changed fact market",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__performance_awd__3:range_km | changed fact scope",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__performance_awd__3:range_km | changed fact qualifications",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__performance_awd__3:range_km | changed fact conditionExplanation",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__performance_awd__3:range_km | new blocking fact issue",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__performance_awd__3:range_km | removed fact source membership",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__performance_awd__3:range_km | stale fact date",
+      "passed": true
+    },
+    {
+      "name": "variant:zeekr_7x__performance_awd__3:model_year | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "variant:zeekr_7x__performance_awd__3:model_year | changed exact variant property",
+      "passed": true
+    },
+    {
+      "name": "variant:zeekr_7x__black_special_edition_awd__4:drive | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "variant:zeekr_7x__black_special_edition_awd__4:drive | changed exact variant property",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__black_special_edition_awd__4:zero_to_100_s | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__black_special_edition_awd__4:zero_to_100_s | changed fact value",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__black_special_edition_awd__4:zero_to_100_s | changed fact status",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__black_special_edition_awd__4:zero_to_100_s | changed fact unit",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__black_special_edition_awd__4:zero_to_100_s | changed fact basis",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__black_special_edition_awd__4:zero_to_100_s | changed fact comparisonBasis",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__black_special_edition_awd__4:zero_to_100_s | changed fact market",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__black_special_edition_awd__4:zero_to_100_s | changed fact scope",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__black_special_edition_awd__4:zero_to_100_s | changed fact qualifications",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__black_special_edition_awd__4:zero_to_100_s | changed fact conditionExplanation",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__black_special_edition_awd__4:zero_to_100_s | new blocking fact issue",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__black_special_edition_awd__4:zero_to_100_s | removed fact source membership",
+      "passed": true
+    },
+    {
+      "name": "fact:zeekr_7x__black_special_edition_awd__4:zero_to_100_s | stale fact date",
+      "passed": true
+    },
+    {
+      "name": "feature:zeekr_7x__black_special_edition_awd__4:screens_hud | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "feature:zeekr_7x__black_special_edition_awd__4:screens_hud | changed feature value",
+      "passed": true
+    },
+    {
+      "name": "feature:zeekr_7x__black_special_edition_awd__4:screens_hud | changed feature status",
+      "passed": true
+    },
+    {
+      "name": "feature:zeekr_7x__black_special_edition_awd__4:screens_hud | changed feature conditions",
+      "passed": true
+    },
+    {
+      "name": "feature:zeekr_7x__black_special_edition_awd__4:screens_hud | removed feature source membership",
+      "passed": true
+    },
+    {
+      "name": "feature:zeekr_7x__black_special_edition_awd__4:screens_hud | stale feature date",
+      "passed": true
+    },
+    {
+      "name": "feature:zeekr_7x__black_special_edition_awd__4:power_tailgate | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "feature:zeekr_7x__black_special_edition_awd__4:power_tailgate | changed feature value",
+      "passed": true
+    },
+    {
+      "name": "feature:zeekr_7x__black_special_edition_awd__4:power_tailgate | changed feature status",
+      "passed": true
+    },
+    {
+      "name": "feature:zeekr_7x__black_special_edition_awd__4:power_tailgate | changed feature conditions",
+      "passed": true
+    },
+    {
+      "name": "feature:zeekr_7x__black_special_edition_awd__4:power_tailgate | removed feature source membership",
+      "passed": true
+    },
+    {
+      "name": "feature:zeekr_7x__black_special_edition_awd__4:power_tailgate | stale feature date",
+      "passed": true
+    },
+    {
+      "name": "variant:zeekr_7x__black_special_edition_awd__4:model_year | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "variant:zeekr_7x__black_special_edition_awd__4:model_year | changed exact variant property",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__dynamic__1:seats | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__dynamic__1:seats | changed fact value",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__dynamic__1:seats | changed fact status",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__dynamic__1:seats | changed fact unit",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__dynamic__1:seats | changed fact basis",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__dynamic__1:seats | changed fact comparisonBasis",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__dynamic__1:seats | changed fact market",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__dynamic__1:seats | changed fact scope",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__dynamic__1:seats | changed fact qualifications",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__dynamic__1:seats | changed fact conditionExplanation",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__dynamic__1:seats | new blocking fact issue",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__dynamic__1:seats | removed fact source membership",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__dynamic__1:seats | stale fact date",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__dynamic__1:range_km | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__dynamic__1:range_km | changed fact value",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__dynamic__1:range_km | changed fact status",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__dynamic__1:range_km | changed fact unit",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__dynamic__1:range_km | changed fact basis",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__dynamic__1:range_km | changed fact comparisonBasis",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__dynamic__1:range_km | changed fact market",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__dynamic__1:range_km | changed fact scope",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__dynamic__1:range_km | changed fact qualifications",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__dynamic__1:range_km | changed fact conditionExplanation",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__dynamic__1:range_km | new blocking fact issue",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__dynamic__1:range_km | removed fact source membership",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__dynamic__1:range_km | stale fact date",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__dynamic__1:length_mm | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__dynamic__1:length_mm | changed fact value",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__dynamic__1:length_mm | changed fact status",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__dynamic__1:length_mm | changed fact unit",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__dynamic__1:length_mm | changed fact basis",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__dynamic__1:length_mm | changed fact comparisonBasis",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__dynamic__1:length_mm | changed fact market",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__dynamic__1:length_mm | changed fact scope",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__dynamic__1:length_mm | changed fact qualifications",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__dynamic__1:length_mm | changed fact conditionExplanation",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__dynamic__1:length_mm | new blocking fact issue",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__dynamic__1:length_mm | removed fact source membership",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__dynamic__1:length_mm | stale fact date",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_atto_2__dynamic__1:front_heated_seats | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_atto_2__dynamic__1:front_heated_seats | changed feature value",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_atto_2__dynamic__1:front_heated_seats | changed feature status",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_atto_2__dynamic__1:front_heated_seats | changed feature conditions",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_atto_2__dynamic__1:front_heated_seats | removed feature source membership",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_atto_2__dynamic__1:front_heated_seats | stale feature date",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_atto_2__dynamic__1:front_ventilated_seats | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_atto_2__dynamic__1:front_ventilated_seats | changed feature value",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_atto_2__dynamic__1:front_ventilated_seats | changed feature status",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_atto_2__dynamic__1:front_ventilated_seats | changed feature conditions",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_atto_2__dynamic__1:front_ventilated_seats | removed feature source membership",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_atto_2__dynamic__1:front_ventilated_seats | stale feature date",
+      "passed": true
+    },
+    {
+      "name": "variant:byd_atto_2__dynamic__1:model_year | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "variant:byd_atto_2__dynamic__1:model_year | changed exact variant property",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_atto_2__premium__2:front_heated_seats | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_atto_2__premium__2:front_heated_seats | changed feature value",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_atto_2__premium__2:front_heated_seats | changed feature status",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_atto_2__premium__2:front_heated_seats | changed feature conditions",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_atto_2__premium__2:front_heated_seats | removed feature source membership",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_atto_2__premium__2:front_heated_seats | stale feature date",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_atto_2__premium__2:front_ventilated_seats | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_atto_2__premium__2:front_ventilated_seats | changed feature value",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_atto_2__premium__2:front_ventilated_seats | changed feature status",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_atto_2__premium__2:front_ventilated_seats | changed feature conditions",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_atto_2__premium__2:front_ventilated_seats | removed feature source membership",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_atto_2__premium__2:front_ventilated_seats | stale feature date",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_atto_2__premium__2:glass_roof | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_atto_2__premium__2:glass_roof | changed feature value",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_atto_2__premium__2:glass_roof | changed feature status",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_atto_2__premium__2:glass_roof | changed feature conditions",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_atto_2__premium__2:glass_roof | removed feature source membership",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_atto_2__premium__2:glass_roof | stale feature date",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__premium__2:range_km | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__premium__2:range_km | changed fact value",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__premium__2:range_km | changed fact status",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__premium__2:range_km | changed fact unit",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__premium__2:range_km | changed fact basis",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__premium__2:range_km | changed fact comparisonBasis",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__premium__2:range_km | changed fact market",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__premium__2:range_km | changed fact scope",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__premium__2:range_km | changed fact qualifications",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__premium__2:range_km | changed fact conditionExplanation",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__premium__2:range_km | new blocking fact issue",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__premium__2:range_km | removed fact source membership",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_2__premium__2:range_km | stale fact date",
+      "passed": true
+    },
+    {
+      "name": "variant:byd_atto_2__premium__2:model_year | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "variant:byd_atto_2__premium__2:model_year | changed exact variant property",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:seats | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:seats | changed fact value",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:seats | changed fact status",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:seats | changed fact unit",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:seats | changed fact basis",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:seats | changed fact comparisonBasis",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:seats | changed fact market",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:seats | changed fact scope",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:seats | changed fact qualifications",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:seats | changed fact conditionExplanation",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:seats | new blocking fact issue",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:seats | removed fact source membership",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:seats | stale fact date",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:range_km | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:range_km | changed fact value",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:range_km | changed fact status",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:range_km | changed fact unit",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:range_km | changed fact basis",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:range_km | changed fact comparisonBasis",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:range_km | changed fact market",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:range_km | changed fact scope",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:range_km | changed fact qualifications",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:range_km | changed fact conditionExplanation",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:range_km | new blocking fact issue",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:range_km | removed fact source membership",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:range_km | stale fact date",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:boot_l | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:boot_l | changed fact value",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:boot_l | changed fact status",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:boot_l | changed fact unit",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:boot_l | changed fact basis",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:boot_l | changed fact comparisonBasis",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:boot_l | changed fact market",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:boot_l | changed fact scope",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:boot_l | changed fact qualifications",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:boot_l | changed fact conditionExplanation",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:boot_l | new blocking fact issue",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:boot_l | removed fact source membership",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:boot_l | stale fact date",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:ac_kw | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:ac_kw | changed fact value",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:ac_kw | changed fact status",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:ac_kw | changed fact unit",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:ac_kw | changed fact basis",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:ac_kw | changed fact comparisonBasis",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:ac_kw | changed fact market",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:ac_kw | changed fact scope",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:ac_kw | changed fact qualifications",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:ac_kw | changed fact conditionExplanation",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:ac_kw | new blocking fact issue",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:ac_kw | removed fact source membership",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:ac_kw | stale fact date",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:towing_braked_kg | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:towing_braked_kg | changed fact value",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:towing_braked_kg | changed fact status",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:towing_braked_kg | changed fact unit",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:towing_braked_kg | changed fact basis",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:towing_braked_kg | changed fact comparisonBasis",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:towing_braked_kg | changed fact market",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:towing_braked_kg | changed fact scope",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:towing_braked_kg | changed fact qualifications",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:towing_braked_kg | changed fact conditionExplanation",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:towing_braked_kg | new blocking fact issue",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:towing_braked_kg | removed fact source membership",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__dynamic_fwd__1:towing_braked_kg | stale fact date",
+      "passed": true
+    },
+    {
+      "name": "variant:byd_atto_3_evo__dynamic_fwd__1:model_year | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "variant:byd_atto_3_evo__dynamic_fwd__1:model_year | changed exact variant property",
+      "passed": true
+    },
+    {
+      "name": "variant:byd_atto_3_evo__premium_rwd__2:drive | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "variant:byd_atto_3_evo__premium_rwd__2:drive | changed exact variant property",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__premium_rwd__2:range_km | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__premium_rwd__2:range_km | changed fact value",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__premium_rwd__2:range_km | changed fact status",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__premium_rwd__2:range_km | changed fact unit",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__premium_rwd__2:range_km | changed fact basis",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__premium_rwd__2:range_km | changed fact comparisonBasis",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__premium_rwd__2:range_km | changed fact market",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__premium_rwd__2:range_km | changed fact scope",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__premium_rwd__2:range_km | changed fact qualifications",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__premium_rwd__2:range_km | changed fact conditionExplanation",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__premium_rwd__2:range_km | new blocking fact issue",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__premium_rwd__2:range_km | removed fact source membership",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__premium_rwd__2:range_km | stale fact date",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__premium_rwd__2:towing_braked_kg | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__premium_rwd__2:towing_braked_kg | changed fact value",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__premium_rwd__2:towing_braked_kg | changed fact status",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__premium_rwd__2:towing_braked_kg | changed fact unit",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__premium_rwd__2:towing_braked_kg | changed fact basis",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__premium_rwd__2:towing_braked_kg | changed fact comparisonBasis",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__premium_rwd__2:towing_braked_kg | changed fact market",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__premium_rwd__2:towing_braked_kg | changed fact scope",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__premium_rwd__2:towing_braked_kg | changed fact qualifications",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__premium_rwd__2:towing_braked_kg | changed fact conditionExplanation",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__premium_rwd__2:towing_braked_kg | new blocking fact issue",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__premium_rwd__2:towing_braked_kg | removed fact source membership",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__premium_rwd__2:towing_braked_kg | stale fact date",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__premium_rwd__2:boot_l | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__premium_rwd__2:boot_l | changed fact value",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__premium_rwd__2:boot_l | changed fact status",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__premium_rwd__2:boot_l | changed fact unit",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__premium_rwd__2:boot_l | changed fact basis",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__premium_rwd__2:boot_l | changed fact comparisonBasis",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__premium_rwd__2:boot_l | changed fact market",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__premium_rwd__2:boot_l | changed fact scope",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__premium_rwd__2:boot_l | changed fact qualifications",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__premium_rwd__2:boot_l | changed fact conditionExplanation",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__premium_rwd__2:boot_l | new blocking fact issue",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__premium_rwd__2:boot_l | removed fact source membership",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_evo__premium_rwd__2:boot_l | stale fact date",
+      "passed": true
+    },
+    {
+      "name": "variant:byd_atto_3_evo__premium_rwd__2:model_year | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "variant:byd_atto_3_evo__premium_rwd__2:model_year | changed exact variant property",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_legacy__premium_fwd__2:range_km | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_legacy__premium_fwd__2:range_km | changed fact value",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_legacy__premium_fwd__2:range_km | changed fact status",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_legacy__premium_fwd__2:range_km | changed fact unit",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_legacy__premium_fwd__2:range_km | changed fact basis",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_legacy__premium_fwd__2:range_km | changed fact comparisonBasis",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_legacy__premium_fwd__2:range_km | changed fact market",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_legacy__premium_fwd__2:range_km | changed fact scope",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_legacy__premium_fwd__2:range_km | changed fact qualifications",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_legacy__premium_fwd__2:range_km | changed fact conditionExplanation",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_legacy__premium_fwd__2:range_km | new blocking fact issue",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_legacy__premium_fwd__2:range_km | removed fact source membership",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_legacy__premium_fwd__2:range_km | stale fact date",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_legacy__essential_fwd__1:range_km | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_legacy__essential_fwd__1:range_km | changed fact value",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_legacy__essential_fwd__1:range_km | changed fact status",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_legacy__essential_fwd__1:range_km | changed fact unit",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_legacy__essential_fwd__1:range_km | changed fact basis",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_legacy__essential_fwd__1:range_km | changed fact comparisonBasis",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_legacy__essential_fwd__1:range_km | changed fact market",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_legacy__essential_fwd__1:range_km | changed fact scope",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_legacy__essential_fwd__1:range_km | changed fact qualifications",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_legacy__essential_fwd__1:range_km | changed fact conditionExplanation",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_legacy__essential_fwd__1:range_km | new blocking fact issue",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_legacy__essential_fwd__1:range_km | removed fact source membership",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_legacy__essential_fwd__1:range_km | stale fact date",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_atto_3_legacy__essential_fwd__1:dashcam | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_atto_3_legacy__essential_fwd__1:dashcam | changed feature value",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_atto_3_legacy__essential_fwd__1:dashcam | changed feature status",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_atto_3_legacy__essential_fwd__1:dashcam | changed feature conditions",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_atto_3_legacy__essential_fwd__1:dashcam | removed feature source membership",
+      "passed": true
+    },
+    {
+      "name": "feature:byd_atto_3_legacy__essential_fwd__1:dashcam | stale feature date",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_legacy__essential_fwd__1:boot_l | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_legacy__essential_fwd__1:boot_l | changed fact value",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_legacy__essential_fwd__1:boot_l | changed fact status",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_legacy__essential_fwd__1:boot_l | changed fact unit",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_legacy__essential_fwd__1:boot_l | changed fact basis",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_legacy__essential_fwd__1:boot_l | changed fact comparisonBasis",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_legacy__essential_fwd__1:boot_l | changed fact market",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_legacy__essential_fwd__1:boot_l | changed fact scope",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_legacy__essential_fwd__1:boot_l | changed fact qualifications",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_legacy__essential_fwd__1:boot_l | changed fact conditionExplanation",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_legacy__essential_fwd__1:boot_l | new blocking fact issue",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_legacy__essential_fwd__1:boot_l | removed fact source membership",
+      "passed": true
+    },
+    {
+      "name": "fact:byd_atto_3_legacy__essential_fwd__1:boot_l | stale fact date",
+      "passed": true
+    },
+    {
+      "name": "variant:byd_atto_3_legacy__essential_fwd__1:model_year | stale dependency review",
+      "passed": true
+    },
+    {
+      "name": "variant:byd_atto_3_legacy__essential_fwd__1:model_year | changed exact variant property",
+      "passed": true
+    },
+    {
+      "name": "byd_sealion_spec | source accessed_date",
+      "passed": true
+    },
+    {
+      "name": "byd_sealion_spec | source url",
+      "passed": true
+    },
+    {
+      "name": "byd_sealion_spec | source publication_hold",
+      "passed": true
+    },
+    {
+      "name": "byd_sealion_spec | source access_limitation",
+      "passed": true
+    },
+    {
+      "name": "byd_sealion_spec | source conflict",
+      "passed": true
+    },
+    {
+      "name": "byd_sealion_spec | missing source",
+      "passed": true
+    },
+    {
+      "name": "geely_brochure_er | source accessed_date",
+      "passed": true
+    },
+    {
+      "name": "geely_brochure_er | source url",
+      "passed": true
+    },
+    {
+      "name": "geely_brochure_er | source publication_hold",
+      "passed": true
+    },
+    {
+      "name": "geely_brochure_er | source access_limitation",
+      "passed": true
+    },
+    {
+      "name": "geely_brochure_er | source conflict",
+      "passed": true
+    },
+    {
+      "name": "geely_brochure_er | missing source",
+      "passed": true
+    },
+    {
+      "name": "r6_geely_spec | source accessed_date",
+      "passed": true
+    },
+    {
+      "name": "r6_geely_spec | source url",
+      "passed": true
+    },
+    {
+      "name": "r6_geely_spec | source publication_hold",
+      "passed": true
+    },
+    {
+      "name": "r6_geely_spec | source access_limitation",
+      "passed": true
+    },
+    {
+      "name": "r6_geely_spec | source conflict",
+      "passed": true
+    },
+    {
+      "name": "r6_geely_spec | missing source",
+      "passed": true
+    },
+    {
+      "name": "r10_gzx_geely_ex5_er_brochure | source accessed_date",
+      "passed": true
+    },
+    {
+      "name": "r10_gzx_geely_ex5_er_brochure | source url",
+      "passed": true
+    },
+    {
+      "name": "r10_gzx_geely_ex5_er_brochure | source publication_hold",
+      "passed": true
+    },
+    {
+      "name": "r10_gzx_geely_ex5_er_brochure | source access_limitation",
+      "passed": true
+    },
+    {
+      "name": "r10_gzx_geely_ex5_er_brochure | source conflict",
+      "passed": true
+    },
+    {
+      "name": "r10_gzx_geely_ex5_er_brochure | missing source",
+      "passed": true
+    },
+    {
+      "name": "zeekr_au_brochure_20250820 | source accessed_date",
+      "passed": true
+    },
+    {
+      "name": "zeekr_au_brochure_20250820 | source url",
+      "passed": true
+    },
+    {
+      "name": "zeekr_au_brochure_20250820 | source publication_hold",
+      "passed": true
+    },
+    {
+      "name": "zeekr_au_brochure_20250820 | source access_limitation",
+      "passed": true
+    },
+    {
+      "name": "zeekr_au_brochure_20250820 | source conflict",
+      "passed": true
+    },
+    {
+      "name": "zeekr_au_brochure_20250820 | missing source",
+      "passed": true
+    },
+    {
+      "name": "v2_zeekr_black_primary | source accessed_date",
+      "passed": true
+    },
+    {
+      "name": "v2_zeekr_black_primary | source url",
+      "passed": true
+    },
+    {
+      "name": "v2_zeekr_black_primary | source publication_hold",
+      "passed": true
+    },
+    {
+      "name": "v2_zeekr_black_primary | source access_limitation",
+      "passed": true
+    },
+    {
+      "name": "v2_zeekr_black_primary | source conflict",
+      "passed": true
+    },
+    {
+      "name": "v2_zeekr_black_primary | missing source",
+      "passed": true
+    },
+    {
+      "name": "byd_atto2_spec | source accessed_date",
+      "passed": true
+    },
+    {
+      "name": "byd_atto2_spec | source url",
+      "passed": true
+    },
+    {
+      "name": "byd_atto2_spec | source publication_hold",
+      "passed": true
+    },
+    {
+      "name": "byd_atto2_spec | source access_limitation",
+      "passed": true
+    },
+    {
+      "name": "byd_atto2_spec | source conflict",
+      "passed": true
+    },
+    {
+      "name": "byd_atto2_spec | missing source",
+      "passed": true
+    },
+    {
+      "name": "r6_atto2_spec | source accessed_date",
+      "passed": true
+    },
+    {
+      "name": "r6_atto2_spec | source url",
+      "passed": true
+    },
+    {
+      "name": "r6_atto2_spec | source publication_hold",
+      "passed": true
+    },
+    {
+      "name": "r6_atto2_spec | source access_limitation",
+      "passed": true
+    },
+    {
+      "name": "r6_atto2_spec | source conflict",
+      "passed": true
+    },
+    {
+      "name": "r6_atto2_spec | missing source",
+      "passed": true
+    },
+    {
+      "name": "r3_evo_spec | source accessed_date",
+      "passed": true
+    },
+    {
+      "name": "r3_evo_spec | source url",
+      "passed": true
+    },
+    {
+      "name": "r3_evo_spec | source publication_hold",
+      "passed": true
+    },
+    {
+      "name": "r3_evo_spec | source access_limitation",
+      "passed": true
+    },
+    {
+      "name": "r3_evo_spec | source conflict",
+      "passed": true
+    },
+    {
+      "name": "r3_evo_spec | missing source",
+      "passed": true
+    },
+    {
+      "name": "byd_atto3_spec | source accessed_date",
+      "passed": true
+    },
+    {
+      "name": "byd_atto3_spec | source url",
+      "passed": true
+    },
+    {
+      "name": "byd_atto3_spec | source publication_hold",
+      "passed": true
+    },
+    {
+      "name": "byd_atto3_spec | source access_limitation",
+      "passed": true
+    },
+    {
+      "name": "byd_atto3_spec | source conflict",
+      "passed": true
+    },
+    {
+      "name": "byd_atto3_spec | missing source",
+      "passed": true
+    },
+    {
+      "name": "byd_sealion_7__premium_rwd__1 | mismatched availability revision",
+      "passed": true
+    },
+    {
+      "name": "byd_sealion_7__premium_rwd__1 | provisional availability",
+      "passed": true
+    },
+    {
+      "name": "byd_sealion_7__premium_rwd__1 | expired editorial record",
+      "passed": true
+    },
+    {
+      "name": "byd_sealion_7__premium_rwd__1 | rendered summary conditions and sources",
+      "passed": true
+    },
+    {
+      "name": "byd_sealion_7__performance_awd__2 | mismatched availability revision",
+      "passed": true
+    },
+    {
+      "name": "byd_sealion_7__performance_awd__2 | provisional availability",
+      "passed": true
+    },
+    {
+      "name": "byd_sealion_7__performance_awd__2 | expired editorial record",
+      "passed": true
+    },
+    {
+      "name": "byd_sealion_7__performance_awd__2 | rendered summary conditions and sources",
+      "passed": true
+    },
+    {
+      "name": "geely_ex5__complete_extended_range__1 | mismatched availability revision",
+      "passed": true
+    },
+    {
+      "name": "geely_ex5__complete_extended_range__1 | provisional availability",
+      "passed": true
+    },
+    {
+      "name": "geely_ex5__complete_extended_range__1 | expired editorial record",
+      "passed": true
+    },
+    {
+      "name": "geely_ex5__complete_extended_range__1 | rendered summary conditions and sources",
+      "passed": true
+    },
+    {
+      "name": "geely_ex5__inspire_extended_range__2 | mismatched availability revision",
+      "passed": true
+    },
+    {
+      "name": "geely_ex5__inspire_extended_range__2 | provisional availability",
+      "passed": true
+    },
+    {
+      "name": "geely_ex5__inspire_extended_range__2 | expired editorial record",
+      "passed": true
+    },
+    {
+      "name": "geely_ex5__inspire_extended_range__2 | rendered summary conditions and sources",
+      "passed": true
+    },
+    {
+      "name": "zeekr_7x__rwd__1 | mismatched availability revision",
+      "passed": true
+    },
+    {
+      "name": "zeekr_7x__rwd__1 | provisional availability",
+      "passed": true
+    },
+    {
+      "name": "zeekr_7x__rwd__1 | expired editorial record",
+      "passed": true
+    },
+    {
+      "name": "zeekr_7x__rwd__1 | rendered summary conditions and sources",
+      "passed": true
+    },
+    {
+      "name": "zeekr_7x__long_range_rwd__2 | mismatched availability revision",
+      "passed": true
+    },
+    {
+      "name": "zeekr_7x__long_range_rwd__2 | provisional availability",
+      "passed": true
+    },
+    {
+      "name": "zeekr_7x__long_range_rwd__2 | expired editorial record",
+      "passed": true
+    },
+    {
+      "name": "zeekr_7x__long_range_rwd__2 | rendered summary conditions and sources",
+      "passed": true
+    },
+    {
+      "name": "zeekr_7x__performance_awd__3 | mismatched availability revision",
+      "passed": true
+    },
+    {
+      "name": "zeekr_7x__performance_awd__3 | provisional availability",
+      "passed": true
+    },
+    {
+      "name": "zeekr_7x__performance_awd__3 | expired editorial record",
+      "passed": true
+    },
+    {
+      "name": "zeekr_7x__performance_awd__3 | rendered summary conditions and sources",
+      "passed": true
+    },
+    {
+      "name": "zeekr_7x__black_special_edition_awd__4 | mismatched availability revision",
+      "passed": true
+    },
+    {
+      "name": "zeekr_7x__black_special_edition_awd__4 | provisional availability",
+      "passed": true
+    },
+    {
+      "name": "zeekr_7x__black_special_edition_awd__4 | expired editorial record",
+      "passed": true
+    },
+    {
+      "name": "zeekr_7x__black_special_edition_awd__4 | rendered summary conditions and sources",
+      "passed": true
+    },
+    {
+      "name": "byd_atto_2__dynamic__1 | mismatched availability revision",
+      "passed": true
+    },
+    {
+      "name": "byd_atto_2__dynamic__1 | provisional availability",
+      "passed": true
+    },
+    {
+      "name": "byd_atto_2__dynamic__1 | expired editorial record",
+      "passed": true
+    },
+    {
+      "name": "byd_atto_2__dynamic__1 | rendered summary conditions and sources",
+      "passed": true
+    },
+    {
+      "name": "byd_atto_2__premium__2 | mismatched availability revision",
+      "passed": true
+    },
+    {
+      "name": "byd_atto_2__premium__2 | provisional availability",
+      "passed": true
+    },
+    {
+      "name": "byd_atto_2__premium__2 | expired editorial record",
+      "passed": true
+    },
+    {
+      "name": "byd_atto_2__premium__2 | rendered summary conditions and sources",
+      "passed": true
+    },
+    {
+      "name": "byd_atto_3_evo__dynamic_fwd__1 | mismatched availability revision",
+      "passed": true
+    },
+    {
+      "name": "byd_atto_3_evo__dynamic_fwd__1 | provisional availability",
+      "passed": true
+    },
+    {
+      "name": "byd_atto_3_evo__dynamic_fwd__1 | expired editorial record",
+      "passed": true
+    },
+    {
+      "name": "byd_atto_3_evo__dynamic_fwd__1 | rendered summary conditions and sources",
+      "passed": true
+    },
+    {
+      "name": "byd_atto_3_evo__premium_rwd__2 | mismatched availability revision",
+      "passed": true
+    },
+    {
+      "name": "byd_atto_3_evo__premium_rwd__2 | provisional availability",
+      "passed": true
+    },
+    {
+      "name": "byd_atto_3_evo__premium_rwd__2 | expired editorial record",
+      "passed": true
+    },
+    {
+      "name": "byd_atto_3_evo__premium_rwd__2 | rendered summary conditions and sources",
+      "passed": true
+    },
+    {
+      "name": "byd_atto_3_legacy__essential_fwd__1 | mismatched availability revision",
+      "passed": true
+    },
+    {
+      "name": "byd_atto_3_legacy__essential_fwd__1 | provisional availability",
+      "passed": true
+    },
+    {
+      "name": "byd_atto_3_legacy__essential_fwd__1 | expired editorial record",
+      "passed": true
+    },
+    {
+      "name": "byd_atto_3_legacy__essential_fwd__1 | rendered summary conditions and sources",
+      "passed": true
+    },
+    {
+      "name": "geely_ex5__complete__3 | still requires new-stock proof",
+      "passed": true
+    },
+    {
+      "name": "geely_ex5__inspire__4 | still requires new-stock proof",
+      "passed": true
+    },
+    {
+      "name": "byd_atto_3_legacy__premium_fwd__2 | still requires new-stock proof",
+      "passed": true
+    },
+    {
+      "name": "byd_sealion_7__performance_awd__2 | tradeoff arithmetic 0",
+      "passed": true
+    },
+    {
+      "name": "geely_ex5__inspire_extended_range__2 | tradeoff arithmetic 0",
+      "passed": true
+    },
+    {
+      "name": "zeekr_7x__performance_awd__3 | tradeoff arithmetic 0",
+      "passed": true
+    },
+    {
+      "name": "byd_atto_3_legacy__essential_fwd__1 | tradeoff arithmetic 0",
+      "passed": true
+    }
+  ],
+  "before": [
+    {
+      "variantId": "byd_sealion_7__premium_rwd__1",
+      "strength": false,
+      "tradeoff": false
+    },
+    {
+      "variantId": "byd_sealion_7__performance_awd__2",
+      "strength": false,
+      "tradeoff": false
+    },
+    {
+      "variantId": "geely_ex5__complete_extended_range__1",
+      "strength": false,
+      "tradeoff": false
+    },
+    {
+      "variantId": "geely_ex5__inspire_extended_range__2",
+      "strength": false,
+      "tradeoff": false
+    },
+    {
+      "variantId": "geely_ex5__complete__3",
+      "strength": false,
+      "tradeoff": false
+    },
+    {
+      "variantId": "geely_ex5__inspire__4",
+      "strength": false,
+      "tradeoff": false
+    },
+    {
+      "variantId": "zeekr_7x__rwd__1",
+      "strength": false,
+      "tradeoff": false
+    },
+    {
+      "variantId": "zeekr_7x__long_range_rwd__2",
+      "strength": false,
+      "tradeoff": false
+    },
+    {
+      "variantId": "zeekr_7x__performance_awd__3",
+      "strength": false,
+      "tradeoff": false
+    },
+    {
+      "variantId": "zeekr_7x__black_special_edition_awd__4",
+      "strength": true,
+      "tradeoff": true
+    },
+    {
+      "variantId": "byd_atto_2__dynamic__1",
+      "strength": false,
+      "tradeoff": false
+    },
+    {
+      "variantId": "byd_atto_2__premium__2",
+      "strength": false,
+      "tradeoff": false
+    },
+    {
+      "variantId": "byd_atto_3_evo__dynamic_fwd__1",
+      "strength": false,
+      "tradeoff": false
+    },
+    {
+      "variantId": "byd_atto_3_evo__premium_rwd__2",
+      "strength": false,
+      "tradeoff": false
+    },
+    {
+      "variantId": "byd_atto_3_legacy__essential_fwd__1",
+      "strength": false,
+      "tradeoff": false
+    },
+    {
+      "variantId": "byd_atto_3_legacy__premium_fwd__2",
+      "strength": false,
+      "tradeoff": false
+    }
+  ],
+  "after": [
+    {
+      "variantId": "byd_sealion_7__premium_rwd__1",
+      "strength": true,
+      "tradeoff": true
+    },
+    {
+      "variantId": "byd_sealion_7__performance_awd__2",
+      "strength": true,
+      "tradeoff": true
+    },
+    {
+      "variantId": "geely_ex5__complete_extended_range__1",
+      "strength": true,
+      "tradeoff": true
+    },
+    {
+      "variantId": "geely_ex5__inspire_extended_range__2",
+      "strength": true,
+      "tradeoff": true
+    },
+    {
+      "variantId": "geely_ex5__complete__3",
+      "strength": false,
+      "tradeoff": false
+    },
+    {
+      "variantId": "geely_ex5__inspire__4",
+      "strength": false,
+      "tradeoff": false
+    },
+    {
+      "variantId": "zeekr_7x__rwd__1",
+      "strength": true,
+      "tradeoff": true
+    },
+    {
+      "variantId": "zeekr_7x__long_range_rwd__2",
+      "strength": true,
+      "tradeoff": true
+    },
+    {
+      "variantId": "zeekr_7x__performance_awd__3",
+      "strength": true,
+      "tradeoff": true
+    },
+    {
+      "variantId": "zeekr_7x__black_special_edition_awd__4",
+      "strength": true,
+      "tradeoff": true
+    },
+    {
+      "variantId": "byd_atto_2__dynamic__1",
+      "strength": true,
+      "tradeoff": true
+    },
+    {
+      "variantId": "byd_atto_2__premium__2",
+      "strength": true,
+      "tradeoff": true
+    },
+    {
+      "variantId": "byd_atto_3_evo__dynamic_fwd__1",
+      "strength": true,
+      "tradeoff": true
+    },
+    {
+      "variantId": "byd_atto_3_evo__premium_rwd__2",
+      "strength": true,
+      "tradeoff": true
+    },
+    {
+      "variantId": "byd_atto_3_legacy__essential_fwd__1",
+      "strength": true,
+      "tradeoff": true
+    },
+    {
+      "variantId": "byd_atto_3_legacy__premium_fwd__2",
+      "strength": false,
+      "tradeoff": false
+    }
+  ],
+  "limitations": [
+    "This is in-memory proposal validation, not an applied app change, full build, browser QA or complete test-suite pass.",
+    "Current-record availability uses the existing revision token guard; future availability evidence edits must receive a new revision token. No stronger guard or code behavior is claimed.",
+    "The original source dates remain unchanged except the evidence metadata of the one actually refreshed HUD dependency; the review does not extend evidence freshness.",
+    "Exact-NEW-stock-positive controls are synthetic memory-only tests; no stock status was changed or asserted in application data."
+  ]
+}

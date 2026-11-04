@@ -1,0 +1,119 @@
+{
+  "actualFinalBindingApproved": false,
+  "applicationExecuted": false,
+  "approvedPacket": [
+    {
+      "bytes": 2769,
+      "path": "roadmark-research/checkpoint96-save-candidate/revision-3/MANIFEST.json",
+      "sha256": "373bb7c984601d44e9aeb98881e62ac6bb596185baa3c1abc2f58fc379e7dee2"
+    },
+    {
+      "bytes": 7443,
+      "path": "roadmark-research/checkpoint96-save-candidate/revision-3/README.md",
+      "sha256": "d5a8565a8b2fa6f81c53186653fda72c65abda177d8fc62adfb6b6a73d64f5d5"
+    },
+    {
+      "bytes": 16619,
+      "path": "roadmark-research/checkpoint96-save-candidate/revision-3/RESEARCH-FILES.template.json",
+      "sha256": "f3203313477cc2d60cc53631383417d1e17c99fecd24e23cfc51efa7f4a5f7d9"
+    },
+    {
+      "bytes": 10086,
+      "path": "roadmark-research/checkpoint96-save-candidate/revision-3/ROOT-ACCEPTANCE.md",
+      "sha256": "344874607ff39cc3fe4926895480fd69a5b996cfd171716ee41fe518596a4917"
+    },
+    {
+      "bytes": 807,
+      "path": "roadmark-research/checkpoint96-save-candidate/revision-3/ROOT-BROWSER-MEASUREMENT.template.json",
+      "sha256": "740b82759967feed0851fda8ef7630aa3954b3c2506e7be83717120c47e1b5b9"
+    },
+    {
+      "bytes": 224,
+      "path": "roadmark-research/checkpoint96-save-candidate/revision-3/ROOT-EXTERNAL-EXIT.template.json",
+      "sha256": "05e73e385193ea4ed538f16e86585dab36c9fd6f5ee166ce0204efab270f0582"
+    },
+    {
+      "bytes": 273,
+      "path": "roadmark-research/checkpoint96-save-candidate/revision-3/ROOT-SAVE-INPUTS.template.json",
+      "sha256": "5f562c06b670627043b7be6042fbc832d43886780b239194508bed4fab5a2038"
+    },
+    {
+      "bytes": 915,
+      "path": "roadmark-research/checkpoint96-save-candidate/revision-3/SHA256SUMS",
+      "sha256": "4f993d8b61b1c6d52a80436d15c5bfcb233d23b6a7988873c1a4719e3b8bca1d"
+    },
+    {
+      "bytes": 4232,
+      "path": "roadmark-research/checkpoint96-save-candidate/revision-3/join_recovered96_source.py",
+      "sha256": "54ef53c385f52ed180e5837d10fa3262c38b82e68e2eaac27fb5a0f4dee251ec"
+    },
+    {
+      "bytes": 35326,
+      "path": "roadmark-research/checkpoint96-save-candidate/revision-3/package_checkpoint96.py",
+      "sha256": "c12516918b4df43012494f6136a106a4f73e8c0697e76b257e1a64ea31926cdb"
+    },
+    {
+      "bytes": 9335,
+      "path": "roadmark-research/checkpoint96-save-candidate/revision-3/verify_checkpoint96_saves.py",
+      "sha256": "885e70076a538f96c724ee471d0c294d479d1ad0f37a756520f515406545dd10"
+    }
+  ],
+  "blockingStaticIssues": [],
+  "candidateExecuted": false,
+  "candidateSyntaxChecked": false,
+  "chatDeliveryEstablished": false,
+  "executionApprovedNow": false,
+  "failedQA1Retained": true,
+  "fullQARetryStatusAtReviewFinalization": "running",
+  "historicalRetryPassed": true,
+  "joinerExecutionEstablished": false,
+  "librarySavesEstablished": false,
+  "oldPacketAndReviewUnchanged": true,
+  "packagingEstablished": false,
+  "pendingRequiredResearch": [
+    "roadmark-research/applied96/historical-retry-attempt1.log"
+  ],
+  "releaseApproved": false,
+  "report": {
+    "bytes": 11796,
+    "path": "roadmark-research/review-checkpoint96-save/REVISION-3-REVIEW.md",
+    "sha256": "0283a7a622939f265a79949b914b2f8c58671040d51e3b5ba57f69bf3835a15b"
+  },
+  "requiredFinalBindingAdditions": [
+    {
+      "bytes": 29585,
+      "path": "roadmark-research/applied96/historical-retry-attempt1.log",
+      "sha256": "3828f5f9a377245406d2d59822cd28978cb987d16648f073706805e1dc79144d"
+    },
+    {
+      "bytes": 680,
+      "path": "roadmark-research/applied96/revision3-quick-checks-observation.json",
+      "sha256": "44892870329ca148bf6472b1e0b57407d091fefb575c70b16c8bac6137704167"
+    }
+  ],
+  "researchStarterBytes": 1220097,
+  "researchStarterFiles": 84,
+  "revision": 3,
+  "schemaVersion": "roadmark96.static-save-review.v1",
+  "sourceScope": {
+    "actual": 1662,
+    "additions": [
+      "tests/checkpoint96-source-history.test.ts",
+      "tests/discovery-prefetch.test.ts",
+      "tests/helpers/checkpoint96-source-history.ts"
+    ],
+    "baseline": 1659,
+    "candidateExactlyDerivesMap": true,
+    "currentExactlyMatchesMap": true,
+    "expected": 1662,
+    "removed": [],
+    "replacements": [
+      "src/components/discovery.tsx",
+      "src/portable/link.tsx",
+      "tests/helpers/checkpoint91-history.ts"
+    ],
+    "symlinks": []
+  },
+  "status": "static_tooling_approved_conditional_on_successful_qa_measurements_and_separate_final_binding_review",
+  "successfulFullQARetryEstablished": false
+}

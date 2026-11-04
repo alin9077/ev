@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "roadmark.market93-output-check-candidate.v2",
+  "status": "REVISED_VERIFIER_STATIC_AUTHORSHIP_ONLY_UNEXECUTED_UNREVIEWED",
+  "applicationChanged": false,
+  "applicationImportedByAuthor": false,
+  "verifierExecutedOrImportedByAuthor": false,
+  "syntheticTestsExecutedByAuthor": false,
+  "checkpoint93OutputBoundByAuthor": false,
+  "priorCandidateRetainedAt": "history/revision1",
+  "observerStatus": "Independently reviewed and root-started during production, using actual root prebuild capture; completion is not asserted by this manifest",
+  "files": [
+    {
+      "path": "verify_market93.py",
+      "bytes": 41106,
+      "sha256": "f5f3e793f7db9d2cc3db244f805db63d7b90b0db4ff76d2dd2dfec8d17894a83"
+    },
+    {
+      "path": "test_verifier.py",
+      "bytes": 8512,
+      "sha256": "094969ebf6f5cce80ad2e2106d4f95598309cf1497e7837df9ca36927f9e6240"
+    },
+    {
+      "path": "README.md",
+      "bytes": 11452,
+      "sha256": "694283da0caf85fb9387bbd284fb36af0da810934d4219458afe0764ae54b002"
+    },
+    {
+      "path": "observe_market93_build.py",
+      "bytes": 13047,
+      "sha256": "af483048ca73c957fdb4553a01a534e265f9a885d2db161c3bd14a5ded798ff6"
+    }
+  ],
+  "rootExecutionOnly": true,
+  "requiredInputManifestSHA256": "e8161ffb02c560a482c4dbf4fbde2fd3d908a0cd8e9f47585e092fc22411d5ad",
+  "requiredRevision3ManifestSHA256": "23c7857372a56d9eb2492e924d61bf7bc1294762734bc6a800d31bdce948a22f",
+  "requiredBaseline92PortableSHA256": "afbf227614232924ec771319c771552d1080e7e88fb5aca2a3650f414b6e6563",
+  "requiredActualRootPrebuildObservationSHA256": "bf829f1b96b6113d9a0641faa0c5688d8bea006e3da0d34436c59425fefb76cf",
+  "requiredActualRootObserverWrapperSHA256": "97a9683bb61f737764861e618bc75505731827d8ed6b53378594068ec2feb34a",
+  "successProofSchema": "roadmark.market93-emitted-output-proof.v1",
+  "scope": "Revision2 requires genuine externally pinned observer terminal and bound postbuild outputs; validates actual validation JSON and exact all-nongenerated-file membership; exact92 routing manifest; retains portable/static-production proof boundary.",
+  "releaseApproved": false
+}

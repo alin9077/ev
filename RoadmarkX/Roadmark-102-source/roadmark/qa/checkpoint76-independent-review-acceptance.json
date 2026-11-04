@@ -1,0 +1,53 @@
+{
+  "accepted": true,
+  "acceptanceType": "static source/test/script review with root staged-preflight evidence; root application and final QA still required",
+  "reviewedAtUTC": "2026-10-11T09:09:31.772773+00:00",
+  "sourceCheckpoint": 75,
+  "workingCheckpoint": 76,
+  "manifestSHA256": "497c3fc3ee073f71b785ccca85fcc4ddf9ee5c276fb665ff429c96007c69d184",
+  "candidateFiles": 5,
+  "applicationInputLockEntries": 374,
+  "reviewPins": {
+    "audits/checkpoint76-device-draft/REVIEW.md": "722380f2b352ab492ba4d06f9a64591b044082cac29a64d2c79641dd2d04e2be",
+    "audits/checkpoint76-device-draft/STATIC-INPUT-VERIFICATION.json": "3f010c069f7215984fb1a06b4cdf7089af287a7bb1db618d32994dcd0354e8af",
+    "audits/checkpoint76-device-draft/INITIAL_STATIC_FINDINGS.md": "a0916a4f0f96cc3601ba1aeabec77b8af5735b0449ad1a7df974492b313a74e8",
+    "audits/checkpoint76-device-draft/STATIC_REVISION_REVIEW.md": "1fc64b2c78e8e771ecf3838dae75d51120a0b00d9668279ca8296b94feb8ebef",
+    "audits/checkpoint76-device-draft/root-scripts/apply-roadmark76.py": "ffe7649e469dc2bdc717223823a38ae670ba12923040d35ca949994b5807f9d4",
+    "audits/checkpoint76-device-draft/root-scripts/run-roadmark76-qa.sh": "08aba9ca2b62fd8b4684db24fe8234442e91e2935c1dde70b6011f805a0a3add",
+    "audits/checkpoint76-device-draft/root-scripts/verify_checkpoint76_portable.cjs": "dbb5cbd0e4159afda0a11d536f46e20f2cbb965ca6919dcfc754ad8997e193f0",
+    "checkpoint76-candidate/application-input-lock.json": "c87c74c63c30ef9383c15f34b60aae5644291b8983f92ff21f867a065b1bb3ae",
+    "checkpoint76-planning/roadmark-76-staged-tests.log": "609dbc551836d57fc4e53b66136b392f404851866b071367cb61517b335505e5",
+    "checkpoint76-planning/roadmark-76-overlay-check.log": "55c6496b0bd98cad427544e40dcc3ac9794afc0bd42342b21e15276ceb48f3f1",
+    "checkpoint76-planning/probe-roadmark76-staged-tests.cjs": "289b28a4f7949ca59b3afe8423dcceb38fa9ec2f51f14156cbe84864d231357f",
+    "checkpoint76-planning/check-roadmark76-overlay.cjs": "a540e71ec7ddfa397972d11bd9ba1e6f32745dfe04b9fcf5d136b039305e11b4",
+    "device-draft-design-source75/design.md": "2aac63ffa28a7b4e32ffa6aaa69a692d57bcc1ce8fe284c83f509f133b04f084",
+    "ranking-availability-gap-v74/reproduction-and-baseline.json": "dda02a792521a2c0c1ab26a3bd8c4de1bbcc3b226e9f69ed271ce38682ad2e93",
+    "mobile-journey-integration-v70-amendment-01/protected-visual-input-pins.json": "bc0f9abe4697b8f0de7ad90f4f3b850aa6a4fa2e415621bf673fc1da066d64cb",
+    "checkpoint75-application/final-verification.json": "40d1731d248b031a8e7190d86e3cf881162bd3bae41972b79ddbc7fd896ac1f2",
+    "../roadmark-recovery/checkpoint-v75-pair-library-receipt.json": "3e627efe9c0ba6213ba688f2582b43f00107fd5c1a44a36eb4f34133a0ce7210"
+  },
+  "runtimeScriptPins": {
+    "/tmp/apply-roadmark76.py": "ffe7649e469dc2bdc717223823a38ae670ba12923040d35ca949994b5807f9d4",
+    "/tmp/run-roadmark76-qa.sh": "08aba9ca2b62fd8b4684db24fe8234442e91e2935c1dde70b6011f805a0a3add",
+    "/tmp/verify_checkpoint76_portable.cjs": "dbb5cbd0e4159afda0a11d536f46e20f2cbb965ca6919dcfc754ad8997e193f0"
+  },
+  "expectedRootQa": {
+    "focusedTests": 41,
+    "nonHttpTests": 565,
+    "productionPages": 388,
+    "portablePacks": 342,
+    "buyerSummaries": 329,
+    "sources": 2196
+  },
+  "resolvedReviewFindings": [
+    "Strengthened crypto/fetch independence test",
+    "Actual feature and availability adapter fixtures",
+    "Read, write, and capture failure cases",
+    "Safely pinned partial new-file application and backup/temp reuse"
+  ],
+  "applicationFilesChangedByReviewer": 0,
+  "applicationCodeExecutedByReviewer": false,
+  "browserTested": false,
+  "realPhonesTested": false,
+  "releaseApproved": false
+}

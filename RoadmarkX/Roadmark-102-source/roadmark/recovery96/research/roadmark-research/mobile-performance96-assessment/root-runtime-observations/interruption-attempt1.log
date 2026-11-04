@@ -1,0 +1,13 @@
+PASS GET exact body parity and dechunked byte count
+PASS HEAD has no body while preserving representation Content-Length
+PASS Chunked response streams before completion and preserves exact bytes
+PASS Compressed bytes, encoding and known cache metadata remain intact
+PASS 304 response has zero body and separate status/cache metadata
+PASS Concurrent independent GET responses remain correct
+PASS Next flags absent/0/1/2/3 forward unchanged while private sentinels never enter logs
+PASS Connection-nominated hop headers are stripped both ways; end-to-end header stays
+PASS Methods, bodies, targets, Host and field-count violations do not reach upstream
+PASS Oversized header is rejected before forwarding without raw-packet logging
+PASS Upstream partial-body abort is not reported as a successful full response
+PASS Downstream abort is classified with partial observed-body bytes
+Acceptance run incomplete; evidence directory: /workspace/scratch/586427eef9f2/roadmark-research/mobile-performance96-assessment/measurement-candidate/acceptance-candidate/revision-2/runs/2026-10-12T02-34-33-076Z-5720a396

@@ -1,0 +1,56 @@
+{
+  "schema": "roadmark99-revision3-static-review-v1",
+  "verdict": "GO_TYPE_ONLY_REPAIR",
+  "blockers": [],
+  "reviewedManifest": {
+    "path": "roadmark-research/mazda-trim99-candidate/revision3/manifest.json",
+    "sha256": "ef550abc42ab248b26170b9b54c1121cf5e0d5aecead6d2f311d164072853a2f",
+    "bytes": 1776
+  },
+  "candidateFiles": [
+    {
+      "path": "tests/helpers/checkpoint99-history.ts",
+      "beforeSHA256": "80ef31bac488635dbf69fdac7b7d4dbd2812ae53a6a08f3e8b68de7d2efe71d7",
+      "beforeBytes": 6551,
+      "afterSHA256": "c78c7048e1d9654ddb71b6680c9441bda9c30e4e569d65e6fc9bfd8bd13d8ceb",
+      "afterBytes": 7150,
+      "checkpoint98BeforeSHA256": null
+    }
+  ],
+  "typeReference": {
+    "path": "qa/checkpoint95-market-fixture.json",
+    "sha256": "be8fc1fb14600253d57ecdcd2ec27927208c66abf853f03fcb34b5ff706259e2",
+    "property": "appendedRecord",
+    "runtimeImport": false
+  },
+  "retainedManifestPins": [
+    {
+      "path": "roadmark-research/mazda-trim99-candidate/manifest.json",
+      "sha256": "089238cd78a3d7712cca9e691f78b9d91f7f46d292b30890086628edb4cf7c42",
+      "bytes": 45702
+    },
+    {
+      "path": "roadmark-research/mazda-trim99-candidate/revision2/manifest.json",
+      "sha256": "5a68f63bad07833c31a173689616c06bc3dd6dd4b2044c7768aaa70d0fe0d46b",
+      "bytes": 1856
+    }
+  ],
+  "checks": [
+    "All candidate and retained predecessor byte/hash pins match",
+    "Root-applied current helper equals reviewed revision3 after-image",
+    "Pinned95 appendedRecord equals99 fixture market.beforeRow exactly",
+    "Removing only the new type import, type alias/comment and signature/cast changes yields byte-identical original helper",
+    "No runtime statement, assertion, guard, hash, fixture, data or production source change"
+  ],
+  "executionClaims": [],
+  "requiredRootVerification": [
+    "Whole-project typecheck",
+    "Whole-project lint",
+    "Remaining full QA against final cumulative inputs"
+  ],
+  "expectedCumulativePathCountsUnchanged": {
+    "candidatePaths": 22,
+    "newPaths": 5,
+    "expectedInputs": 1675
+  }
+}

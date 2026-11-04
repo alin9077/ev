@@ -1,0 +1,15 @@
+# Bus integration and comparison verification — 10 October 2026, 14:50 UTC
+
+- 281 configurations / 119 families / 122 generation records; 277 complete guarded summaries / 554 clauses
+- Seven Yutong/BCI published layouts integrated; all model years unverified, all accepted orders and physical stock unconfirmed. Seating, standing and driver capacities remain separate. No extra Fleetmaster, option matrix or wheelchair arithmetic inflated the catalogue
+- Exhaustive proof: 22,708 checks including 22,491 executed runtime mutations. Actual exact-append proof: 466 checks including 215 representative mutations. All 274 earlier cars and 270 earlier summaries remain unchanged; every prior executable row is preserved
+- All 310 required visible conditions, 428 effective facts and 42 related-record guards retained. Complete raw proof and prior states are backed up in bus evidence pack 4 version 1
+- Browser review found repetitive inline conditions. 194 explanations now present fact-specific context; complete qualifiers, source locators, values/statuses and source methods are preserved. Bus comparison introduction distinguishes capacities rather than applying passenger-car seat totals
+- Comparison-only picker projection: 937,662 to 138,949 JSON bytes. Selected packs keep their complete evidence. Immutable fact indexes preserve prior data and avoid repeated full-array scans
+- Latest actual loopback comparison response: 498,873 raw bytes / estimated gzip 65,933; warm mean 467 ms. Earlier 274-configuration baseline: 1,296,258 / 112,610 bytes, warm mean 644 ms. Different catalogue sizes and noisy VM timing; this is not real-device speed or network delivery. Current home cold response is still 5.4 seconds and remains a performance concern
+- Final suite: 272/272 in 153,421 ms; TypeScript, ESLint and structural validation pass. 327-page production build and 27.91 MB portable output pass. One overlapping test/build attempt was terminated with SIGKILL; the serial build retry passed. Do not infer a code error or precise termination cause from that event
+- Own-browser final checks: all seven bus card pairs render; no-stock filter returns zero buses; two bus selections persist into exact comparison; source links present; capacities and singular driver wording correct; concise primary explanations visually checked
+- Narrow desktop zoom: viewport 393 CSS px / document 388 px, comparison table 348 px. Prior picker check: 369 px wide, no internal horizontal overflow, Close target 48 px. This is not phone testing
+- Final desktop hero: one main / one h1, nine original selling-point links with all targets present, above discovery; document 1165 px inside 1180 px viewport
+- Next: ten Kia/Cadillac configurations (staging independently checked), then five Renault/KGM current technical grades. Provisional MY27 EV4 remains separate from MY26 New advertisements. Megane MY24 New stock cannot supply current unspecified-epoch facts
+- Release gates remain open: complete eligible market audit, complete changed-screen visual/accessibility review, actual phones, real-device loading/interaction performance, and production issue-report review service

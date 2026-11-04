@@ -1,0 +1,65 @@
+{
+  "scope": "Read-only cached buyer-summary expiry and SSR clock audit; no full build, app-data import, or frozen-proof edit",
+  "repository": "/workspace/scratch/586427eef9f2/roadmark-work/roadmark",
+  "findings": [
+    {
+      "id": "EXP-1",
+      "severity": "medium",
+      "status": "fixed by parent and independently rechecked",
+      "location": "src/lib/selling-points.ts:261-269",
+      "issue": "Fact-kind modelYearDependency is a whole-record validity gate but its explicit expiry is not projected into either cached clause.",
+      "proof": "Synthetic model-year fact expires 2026-10-12. Both cached clauses survive currentBuyerSummary on 2026-10-13, while buildBuyerSummaries at that date returns no record.",
+      "current_data_exposure": "0 fact-kind model-year dependencies in aggregate proposal"
+    },
+    {
+      "id": "EXP-2",
+      "severity": "medium",
+      "status": "fixed by parent and independently rechecked",
+      "location": "src/lib/fact-validity.ts:4 and src/lib/selling-points.ts:268",
+      "issue": "Falsy malformed effective-fact deadlines pass offerExpired and disappear during projection, bypassing cached-clause malformed-field rejection.",
+      "proof": "Separate synthetic facts with validUntil empty string, null, false, or 0 all produce a surviving untimed clause. Invalid nonempty date 2026-02-30 correctly suppresses the clause.",
+      "recommendation": "Treat only undefined as absent and reject explicit nonstring or empty deadlines before projection"
+    },
+    {
+      "id": "EXP-3",
+      "severity": "medium",
+      "status": "fixed by parent and independently rechecked",
+      "location": "src/components/discovery.tsx:281-289, 345-353, 380-389",
+      "issue": "Suppressing a clock-dependent buyer summary can reveal a clock-dependent best/tradeoff ranking fallback in static HTML.",
+      "proof": "Actual Discovery renderToStaticMarkup with two synthetic cars hides timed buyer text but displays 39,991 AUD / #1 of 2 for price_aud validUntil 2026-10-12 using initial 2026-10-10 policy. That cached no-JS HTML remains an amount claim after the deadline.",
+      "recommendation": "Exclude timed ranking inputs before the browser clock is ready; account for timed competitors influencing other ranks"
+    }
+  ],
+  "passed_checks": [
+    "Actual BuyerSummary React SSR renders untimed text but emits empty markup for valid, empty, null, and numeric explicit deadlines",
+    "Earliest valid date across own and related consumed fact dependencies is projected",
+    "Earlier unconsumed fact deadline does not expire unrelated copy",
+    "Deadline day remains inclusive; following day removes affected clause",
+    "Independent unexpired tradeoff and required visible conditions survive strength expiry",
+    "Source publication hold and expected-source snapshot mutation still suppress the summary",
+    "Existing generated Nissan Ariya detail static HTML shows Checking offer validity rather than timed offer amount",
+    "Fact-kind model-year deadline now propagates to both clauses and expires entire cached summary when due",
+    "Falsy malformed effective-fact deadlines now suppress affected clauses before projection",
+    "Actual Discovery SSR now withholds timed amount and its numerical rank fallback",
+    "Sydney summer and winter midnight boundaries and invalid-Date input verified"
+  ],
+  "aggregate_proposal_observation": {
+    "record_count": 280,
+    "fact_kind_model_year_guards": 0,
+    "expected_facts_with_validUntil": 10,
+    "these_timed_facts_consumed_by_clauses": 0,
+    "notes": "Observed directly from JSON without importing src/lib/data. All ten explicit deadlines are 2026-12-31 driveaway-price facts. Parent reports 277 current serialized summaries; this audit did not rerun catalogue generation."
+  },
+  "timezone_assessment": "Australia/Sydney is a defensible documented conservative mainland-AU calendar-date fallback when source timezone is unavailable. Explicit source-local deadlines and closing-time terms should take precedence when known. Keep UTC-roundtrip validation/date arithmetic separate from choosing the current evidence date. A minute timer can update up to about one minute after a date boundary in an active tab; background throttling may extend this.",
+  "boundaries": "Conditions are retained as a whole when one clause expires; current dated conditions examined are limiting historical/source terms, but future affirmative timed amount claims in conditions need their own dependency/expiry association. Whole-model freshness and source snapshot guards were inspected; this is not a complete application security or catalogue audit.",
+  "regression": {
+    "path": "/tmp/roadmark-cached-summary-audit/regression.mjs",
+    "command": "node --import tsx --test /tmp/roadmark-cached-summary-audit/regression.mjs",
+    "run_from": "/workspace/scratch/586427eef9f2/roadmark-work/roadmark",
+    "tests": 10,
+    "pass": 10,
+    "fail": 0,
+    "duration_ms": 429.539195
+  },
+  "post_fix_result": "No remaining actionable blocker found within the requested cached-summary deadline/SSR scope. All three reproduced gaps are closed. Discovery withholds all numerical rank fallback before browser clock readiness; untimed editorial summaries remain server-rendered."
+}

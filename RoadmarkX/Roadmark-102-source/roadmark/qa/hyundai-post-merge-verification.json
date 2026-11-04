@@ -1,0 +1,3082 @@
+{
+  "status": "passed_quick_post_merge_verification_with_preserved_exhaustive_proof",
+  "checkedAt": "2026-10-10",
+  "verifiedAt": "2026-10-10T13:53:16.918Z",
+  "dryRun": false,
+  "scope": "Exact append-only runtime merge, current catalogue/source/input hashes, prior-car/summary preservation, and representative guards. The complete 130k+ matrix was NOT rerun; its original report and exact executable inputs are preserved and hash-verified.",
+  "records": 12,
+  "completeSummaries": 270,
+  "clauses": 540,
+  "priorSummariesUnchanged": 258,
+  "priorCarsUnchanged": 262,
+  "executableDependencies": 130,
+  "acceptedSourceSnapshots": 35,
+  "coreNewStockRecords": 4,
+  "sourceFilesReverified": 309,
+  "exactRuntimeGraphFilesLocked": 29,
+  "testsPassed": 732,
+  "representativeMutationTestsPassed": 358,
+  "exhaustiveProof": {
+    "path": "/workspace/scratch/586427eef9f2/roadmark-research/hyundai-runtime-selling-points-validation.json",
+    "sha256": "c580624debadd084cbf6e4081f3a0d9003657e4848881b17f3271bfd9c94e02f",
+    "testsPassed": 138652,
+    "mutationTestsPassed": 137556
+  },
+  "preservedManifest": {
+    "path": "/workspace/scratch/586427eef9f2/roadmark-research/hyundai-runtime-selling-points-manifest.json",
+    "sha256": "b415c3d7100a2b2c187730d12305eedd5e2969e229b3dabfdb7cc4a287bcf28e"
+  },
+  "payloadSha256": "e27cf737bbcc6b811a8187b73b6c6fa231d67525dffb08f9405bd12beeacc77c",
+  "priorEditorialSha256": "bfc893578230fdd4d98694683d3659986e7817b05ba933f5177e667721fdae10",
+  "actualMergedEditorialSha256": "a94e1a14ecc81ec44e25786baaa09a3cb7d28d538f80e12652ebcddb5e177f77",
+  "physicalEditorialSha256": "a94e1a14ecc81ec44e25786baaa09a3cb7d28d538f80e12652ebcddb5e177f77",
+  "applicationInputs": [
+    {
+      "path": "data/approved-availability-corrections.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "data/approved-corrections.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "data/approved-feature-corrections.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "data/au_ev_all_variants_2026-10-06.json",
+      "sha256": "010ded194b4d61cd7be606ce0cc332fa7e32906bba70abff2b5c38541e634657"
+    },
+    {
+      "path": "data/buyer-selling-points-2026-10-10.json",
+      "sha256": "a94e1a14ecc81ec44e25786baaa09a3cb7d28d538f80e12652ebcddb5e177f77"
+    },
+    {
+      "path": "data/catalogue-additions-2026-10-10.json",
+      "sha256": "9ef55e4b05f697667ed0626157697fcb272da239720bbd34253360721f8f8115"
+    },
+    {
+      "path": "data/research-buyer-2026-10-07.json",
+      "sha256": "d482fb76421213be584923be3109263161885c9a48ba83c0b28cacb596b76c1d"
+    },
+    {
+      "path": "data/research-completion-2026-10-07.json",
+      "sha256": "c56cfe19c0e22882aae77c340f4576df077b2574ee7c603363f87f65f32737e5"
+    },
+    {
+      "path": "data/research-editorial-2026-10-07.json",
+      "sha256": "cc1b71f5a65e173fe274c61cc1069ad129978ab6402bc12a886e98481b77f95b"
+    },
+    {
+      "path": "data/research-refinement-2026-10-06.json",
+      "sha256": "e6a3d9c9aff6e91f91ccc0984b4104e3e46f099730dcfdcec2c6f369fdaf3891"
+    },
+    {
+      "path": "data/research-refresh-2026-10-10.json",
+      "sha256": "77dc7a1ed075e41c00788ed23cdb125f8313263738f2fd863799ea7d7a37fc38"
+    },
+    {
+      "path": "data/research-sales-2026-10-06.json",
+      "sha256": "76736027cbfa0ab90d993312516d03411cfbd358c053bd589200f342ac49ad14"
+    },
+    {
+      "path": "data/research-usability-2026-10-06.json",
+      "sha256": "24bb0701d5b328404bd8af06168ff0a5c226283a3c535ef9c75553b06fab7a81"
+    },
+    {
+      "path": "data/source-audit-2026-10-08.json",
+      "sha256": "8c04d15c9f700a30804f2fcf0cb71a970640aebf738746ec14cbdc5b79a9376e"
+    },
+    {
+      "path": "package.json",
+      "sha256": "7ee2046d8b28707c5d182f09f2288e8c61b19bb51d03fd42a212e055622f6754"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "sha256": "636941d08fa47ce568b6bb8ec03adcb9872ac94e81603330a83e7f92eceebe1b"
+    },
+    {
+      "path": "src/lib/availability-corrections.ts",
+      "sha256": "f0b225b0bb662b381268f10926af3fdca2084bf4212ffb11b52d97c6533cceba"
+    },
+    {
+      "path": "src/lib/config.ts",
+      "sha256": "6f3507757cc703272faf172881d3f265d1512b883c0cb6e4808d8062ef61936b"
+    },
+    {
+      "path": "src/lib/corrections.ts",
+      "sha256": "01224d222c867e196d58ccd56102ef52c398d9d88f02c3d4e4df09af4b1fc546"
+    },
+    {
+      "path": "src/lib/data.ts",
+      "sha256": "f843e6f887ad4391c4dc2577a3fad5ad8c3ca2bfb1914f89409948e944a7357e"
+    },
+    {
+      "path": "src/lib/discovery.ts",
+      "sha256": "1e571fe9603e26e561ed1a27bdf16503559a574936f5a9c1ccf8e52f8ed3e536"
+    },
+    {
+      "path": "src/lib/fact-validity.ts",
+      "sha256": "1c883174999c74060c23560c233768f989f3a3097e8cd2d754162fcc0813d9f6"
+    },
+    {
+      "path": "src/lib/feature-corrections.ts",
+      "sha256": "26f158b3ef8d9e34b1c3a88d197d9771b6f907cda3c02bcf1ae13881a943b008"
+    },
+    {
+      "path": "src/lib/launch-evidence.ts",
+      "sha256": "4d017cf74835569b2d3fedb2ca68e4c5a5d8b07369ae814b62a66443f7b79e51"
+    },
+    {
+      "path": "src/lib/research-refresh.ts",
+      "sha256": "69d8dd8d9a6b7ae804445119d9bb4211dfe7142765534f28de675a9eefa99a1f"
+    },
+    {
+      "path": "src/lib/search.ts",
+      "sha256": "a7a7ace820fd8a75c7c8cf0583b396e2a7c5c911b59a08ec26a632879eb0a546"
+    },
+    {
+      "path": "src/lib/selling-points.ts",
+      "sha256": "d44e0548b162247a3ba7b273a8210de5a647102d75f6dbc9eb00ecd6e160fc87"
+    },
+    {
+      "path": "src/lib/types.ts",
+      "sha256": "3008f6281409554d53a0717877903c9ae20643694322abab77ac0a1a49d254d9"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "a2ead9aa51428a9c1d3f39e8d10f06ff722bd1936289d2deb240ead7a5e2a154"
+    }
+  ],
+  "applicationEdits": 0,
+  "tests": [
+    {
+      "name": "preserved exhaustive artifact hash: hyundai-runtime-selling-points-proposal.json",
+      "passed": true
+    },
+    {
+      "name": "preserved exhaustive artifact hash: hyundai-runtime-selling-points-proposal.md",
+      "passed": true
+    },
+    {
+      "name": "preserved exhaustive artifact hash: hyundai-runtime-selling-points-merge-payload.json",
+      "passed": true
+    },
+    {
+      "name": "preserved exhaustive artifact hash: hyundai-runtime-selling-points-validation.json",
+      "passed": true
+    },
+    {
+      "name": "preserved exhaustive artifact hash: hyundai-runtime-selling-points-validation-log.txt",
+      "passed": true
+    },
+    {
+      "name": "preserved exhaustive artifact hash: hyundai-runtime-effective-snapshot.json",
+      "passed": true
+    },
+    {
+      "name": "preserved exhaustive artifact hash: capture_hyundai_runtime_snapshot.cjs",
+      "passed": true
+    },
+    {
+      "name": "preserved exhaustive artifact hash: bind_hyundai_selling_points.py",
+      "passed": true
+    },
+    {
+      "name": "preserved exhaustive artifact hash: validate_hyundai_selling_points.cjs",
+      "passed": true
+    },
+    {
+      "name": "preserved exhaustive artifact hash: finalize_hyundai_selling_points.py",
+      "passed": true
+    },
+    {
+      "name": "preserved exhaustive artifact hash: verify_hyundai_post_merge.cjs",
+      "passed": true
+    },
+    {
+      "name": "preserved exhaustive artifact hash: hyundai-prior-buyer-selling-points.json",
+      "passed": true
+    },
+    {
+      "name": "preserved exhaustive artifact hash: hyundai-runtime-input-lock.json",
+      "passed": true
+    },
+    {
+      "name": "frozen pre-merge editorial bytes equal exhaustive proof input",
+      "passed": true
+    },
+    {
+      "name": "full proven runtime graph input: data/approved-availability-corrections.json",
+      "passed": true
+    },
+    {
+      "name": "full proven runtime graph input: data/approved-corrections.json",
+      "passed": true
+    },
+    {
+      "name": "full proven runtime graph input: data/approved-feature-corrections.json",
+      "passed": true
+    },
+    {
+      "name": "full proven runtime graph input: data/au_ev_all_variants_2026-10-06.json",
+      "passed": true
+    },
+    {
+      "name": "full proven runtime graph input: data/catalogue-additions-2026-10-10.json",
+      "passed": true
+    },
+    {
+      "name": "full proven runtime graph input: data/research-buyer-2026-10-07.json",
+      "passed": true
+    },
+    {
+      "name": "full proven runtime graph input: data/research-completion-2026-10-07.json",
+      "passed": true
+    },
+    {
+      "name": "full proven runtime graph input: data/research-editorial-2026-10-07.json",
+      "passed": true
+    },
+    {
+      "name": "full proven runtime graph input: data/research-refinement-2026-10-06.json",
+      "passed": true
+    },
+    {
+      "name": "full proven runtime graph input: data/research-refresh-2026-10-10.json",
+      "passed": true
+    },
+    {
+      "name": "full proven runtime graph input: data/research-sales-2026-10-06.json",
+      "passed": true
+    },
+    {
+      "name": "full proven runtime graph input: data/research-usability-2026-10-06.json",
+      "passed": true
+    },
+    {
+      "name": "full proven runtime graph input: data/source-audit-2026-10-08.json",
+      "passed": true
+    },
+    {
+      "name": "full proven runtime graph input: package.json",
+      "passed": true
+    },
+    {
+      "name": "full proven runtime graph input: pnpm-lock.yaml",
+      "passed": true
+    },
+    {
+      "name": "full proven runtime graph input: src/lib/availability-corrections.ts",
+      "passed": true
+    },
+    {
+      "name": "full proven runtime graph input: src/lib/config.ts",
+      "passed": true
+    },
+    {
+      "name": "full proven runtime graph input: src/lib/corrections.ts",
+      "passed": true
+    },
+    {
+      "name": "full proven runtime graph input: src/lib/data.ts",
+      "passed": true
+    },
+    {
+      "name": "full proven runtime graph input: src/lib/discovery.ts",
+      "passed": true
+    },
+    {
+      "name": "full proven runtime graph input: src/lib/fact-validity.ts",
+      "passed": true
+    },
+    {
+      "name": "full proven runtime graph input: src/lib/feature-corrections.ts",
+      "passed": true
+    },
+    {
+      "name": "full proven runtime graph input: src/lib/launch-evidence.ts",
+      "passed": true
+    },
+    {
+      "name": "full proven runtime graph input: src/lib/research-refresh.ts",
+      "passed": true
+    },
+    {
+      "name": "full proven runtime graph input: src/lib/search.ts",
+      "passed": true
+    },
+    {
+      "name": "full proven runtime graph input: src/lib/selling-points.ts",
+      "passed": true
+    },
+    {
+      "name": "full proven runtime graph input: src/lib/types.ts",
+      "passed": true
+    },
+    {
+      "name": "full proven runtime graph input: tsconfig.json",
+      "passed": true
+    },
+    {
+      "name": "exact proven application input: src/lib/data.ts",
+      "passed": true
+    },
+    {
+      "name": "exact proven application input: src/lib/selling-points.ts",
+      "passed": true
+    },
+    {
+      "name": "exact proven application input: src/lib/types.ts",
+      "passed": true
+    },
+    {
+      "name": "exact proven application input: data/catalogue-additions-2026-10-10.json",
+      "passed": true
+    },
+    {
+      "name": "exact proven application input: data/approved-corrections.json",
+      "passed": true
+    },
+    {
+      "name": "exact proven application input: data/approved-feature-corrections.json",
+      "passed": true
+    },
+    {
+      "name": "exact proven application input: data/approved-availability-corrections.json",
+      "passed": true
+    },
+    {
+      "name": "exact proven application input: data/research-refresh-2026-10-10.json",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: elexio_page.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: elexio_page.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: elexio_specs.pdf",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: elexio_specs.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: elexio_specs-1.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: elexio_specs-2.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: elexio_specs-3.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: elexio_specs-4.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: elexio_specs-5.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: elexio_specs-6.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: elexio_specs.equipment-rows.json",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ioniq9_page.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ioniq9_page.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ioniq9_specs_my27.pdf",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ioniq9_specs_my27.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ioniq9_specs_my27-1.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ioniq9_specs_my27-2.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ioniq9_specs_my27-3.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ioniq9_specs_my27-4.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ioniq9_specs_my27-5.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ioniq9_specs_my27-6.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ioniq9_specs_my27-7.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ioniq9_specs_my27-8.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ioniq9_specs_my27.equipment-rows.json",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_warranty_terms.pdf",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_warranty_terms.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_warranty_terms-1.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_warranty_terms-2.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_warranty_terms-3.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_warranty_terms-4.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_warranty_terms-5.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: elexio_configurator.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: elexio_configurator.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ioniq9_configurator.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ioniq9_configurator.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: elexio_mackay_elite.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: elexio_mackay_elite.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: elexio_keema_model.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: elexio_keema_model.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ioniq9_werribee_old6.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ioniq9_werribee_old6.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: elexio_brochure.pdf",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: elexio_brochure.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: elexio_brochure-02.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: elexio_keema_base.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: elexio_keema_base.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: elexio_keema_base.embedded-summary.json",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: elexio_keema_elite.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: elexio_keema_elite.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: elexio_keema_elite.embedded-summary.json",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ioniq9_werribee_model.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ioniq9_werribee_model.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ioniq9_mackay_index.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ioniq9_mackay_index.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ioniq9_mackay_new_list.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ioniq9_mackay_new_list.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: elexio_ancap.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: elexio_ancap.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: elexio_ancap_release.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: elexio_ancap_release.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ioniq9_ancap.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ioniq9_ancap.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ioniq9_ancap_release.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ioniq9_ancap_release.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ioniq9_essendon_demo.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ioniq9_essendon_demo.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ioniq9_philgilbert_my26.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ioniq9_philgilbert_my26.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_page.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_page.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_specs_aug2026.pdf",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_specs_aug2026.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_specs_aug2026.equipment-rows.json",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster-01.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster-02.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster-03.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster-04.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster-05.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster-06.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster-07.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster-08.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster-09.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster-10.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_specs_aug2026.p1.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_specs_aug2026.p2.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_specs_aug2026.p3.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_specs_aug2026.p4.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_specs_aug2026.p5.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_specs_aug2026.p6.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_specs_aug2026.p7.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_specs_aug2026.p8.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_specs_aug2026.p9.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_specs_aug2026.p10.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_brochure_aug2026.pdf",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_brochure_aug2026.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster-brochure-06.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster-brochure-07.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_brochure_aug2026.p1.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_brochure_aug2026.p2.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_brochure_aug2026.p3.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_brochure_aug2026.p4.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_brochure_aug2026.p5.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_brochure_aug2026.p6.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_brochure_aug2026.p7.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_brochure_aug2026.p8.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_brochure_aug2026.p9.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_brochure_aug2026.p10.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_brochure_aug2026.p11.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_brochure_aug2026.p12.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_brochure_aug2026.p13.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_brochure_aug2026.p14.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_brochure_aug2026.p15.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_brochure_aug2026.p16.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_brochure_aug2026.p17.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_brochure_aug2026.p18.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_brochure_aug2026.p19.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_page.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_page.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_specs_my27.pdf",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_specs_my27.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_specs_my27.equipment-rows.json",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona-1.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona-2.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona-3.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona-4.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona-5.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona-6.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona-7.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona-8.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona-9.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_specs_my27.p1.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_specs_my27.p2.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_specs_my27.p3.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_specs_my27.p4.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_specs_my27.p5.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_specs_my27.p6.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_specs_my27.p7.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_specs_my27.p8.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_specs_my27.p9.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_offers.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_offers.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_warranty.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_warranty.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_elite_new_melville.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_elite_new_melville.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_base_new_bathurst.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_base_new_bathurst.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_elite_new_maughan.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_elite_new_maughan.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_base_new_country.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_base_new_country.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_premium_new_alan.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_premium_new_alan.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_new_phil_index.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_new_phil_index.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_warranty_terms.pdf",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_warranty_terms.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: warranty-1.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: warranty-2.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: warranty-5.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_warranty_terms.p1.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_warranty_terms.p2.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_warranty_terms.p3.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_warranty_terms.p4.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_warranty_terms.p5.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_warranty_terms.p6.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_warranty_terms.p7.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_warranty_terms.p8.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_sr_new_phil.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_sr_new_phil.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_er_new_phil.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_er_new_phil.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: melville_inster_index.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: melville_inster_index.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_cross_v2_new_john.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_cross_v2_new_john.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_v2_new_melville.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_v2_new_melville.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_ancap.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_ancap.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_ancap_pdf.pdf",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_ancap_pdf.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster-ancap-01.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_ancap_pdf.p1.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_ancap_pdf.p2.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_ancap_pdf.p3.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_ancap_pdf.p4.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_ancap_pdf.p5.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_ancap_pdf.p6.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_ancap_pdf.p7.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_ancap_pdf.p8.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_ancap_pdf.p9.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_ancap_pdf.p10.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_ancap.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_ancap.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_ancap_current_pdf.pdf",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_ancap_current_pdf.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona-ancap-current-01.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_ancap_current_pdf.p1.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_ancap_current_pdf.p2.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_ancap_current_pdf.p3.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_ancap_current_pdf.p4.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_ancap_current_pdf.p5.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_ancap_current_pdf.p6.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_ancap_current_pdf.p7.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_ancap_current_pdf.p8.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_ancap_current_pdf.p9.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: kona_ancap_current_pdf.p10.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_cross_essendon_v1.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_cross_essendon_v1.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_midland_index.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_midland_index.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_midland_new_620265048.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_midland_new_620265048.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_midland_new_620261783.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_midland_new_620261783.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_specs_legacy_my26.pdf",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: inster_specs_legacy_my26.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq5n_page.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq5n_page.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq6n_page.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq6n_page.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq6n_specs.pdf",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq6n_specs.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq6n_specs-1.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq6n_specs-2.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq6n_specs-3.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq6n_specs-4.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq6n_specs-5.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq6n_specs-6.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq6n_specs-7.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq6n_specs-8.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq6n_specs-9.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq6n_specs.p1.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq6n_specs.p2.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq6n_specs.p3.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq6n_specs.p4.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq6n_specs.p5.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq6n_specs.p6.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq6n_specs.p7.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq6n_specs.p8.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq6n_specs.p9.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: werribee_ioniq6n_new.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: werribee_ioniq6n_new.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: werribee_ioniq6n_new.flight.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: werribee_ioniq6n_new.car.json",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: chullora_new_inventory.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: chullora_new_inventory.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq5n_specs.pdf",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq5n_specs.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq5n_specs-1.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq5n_specs-2.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq5n_specs-3.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq5n_specs-4.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq5n_specs-5.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq5n_specs-6.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq5n_specs-7.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq5n_specs-8.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq5n_specs.p1.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq5n_specs.p2.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq5n_specs.p3.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq5n_specs.p4.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq5n_specs.p5.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq5n_specs.p6.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq5n_specs.p7.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq5n_specs.p8.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_warranty_terms.pdf",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_warranty_terms.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_warranty_terms-1.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_warranty_terms-2.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_warranty_terms-5.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_warranty_terms-7.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_warranty_terms.p1.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_warranty_terms.p2.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_warranty_terms.p3.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_warranty_terms.p4.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_warranty_terms.p5.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_warranty_terms.p6.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_warranty_terms.p7.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_warranty_terms.p8.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq5n_2025_page.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq5n_2025_page.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: chullora_ioniq5n_new.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: chullora_ioniq5n_new.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: chullora_ioniq5n_new.flight.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: chullora_ioniq5n_new.car.json",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_warranty_page.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_warranty_page.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq5n_calculator.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq5n_calculator.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq5n_calculator.json",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq6n_calculator.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq6n_calculator.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: hyundai_ioniq6n_calculator.json",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ancap_ioniq5.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ancap_ioniq5.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ancap_ioniq6.html",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ancap_ioniq6.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ancap_ioniq6_report.pdf",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ancap_ioniq6_report.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ancap_ioniq6_report-1.png",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ancap_ioniq6_report.p1.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ancap_ioniq6_report.p2.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ancap_ioniq6_report.p3.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ancap_ioniq6_report.p4.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ancap_ioniq6_report.p5.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ancap_ioniq6_report.p6.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ancap_ioniq6_report.p7.txt",
+      "passed": true
+    },
+    {
+      "name": "source capture remains unchanged: ancap_ioniq6_report.p8.txt",
+      "passed": true
+    },
+    {
+      "name": "exact append-only executable array: records",
+      "passed": true
+    },
+    {
+      "name": "exact append-only executable array: dependencies",
+      "passed": true
+    },
+    {
+      "name": "exact append-only executable array: expectedSourceSnapshots",
+      "passed": true
+    },
+    {
+      "name": "all 262 prior serialized cars and buyer summaries unchanged",
+      "passed": true
+    },
+    {
+      "name": "all new identities, complete fact maps and availability exactly match exhaustive capture",
+      "passed": true
+    },
+    {
+      "name": "new effective feature aliases match exhaustive capture",
+      "passed": true
+    },
+    {
+      "name": "all 35 accepted runtime source snapshots match",
+      "passed": true
+    },
+    {
+      "name": "actual full-catalogue merge has 270 summaries and 540 clauses",
+      "passed": true
+    },
+    {
+      "name": "all 258 prior eligible summaries remain serialized byte-equivalent",
+      "passed": true
+    },
+    {
+      "name": "four new core stock rows; both N cores held; INSTER and IONIQ5N MY remain unknown",
+      "passed": true
+    },
+    {
+      "name": "all 12 minimal-payload summaries equal actual merged runtime summaries",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_base_fwd__20261010 | representative guard: missing entire fact map",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_base_fwd__20261010 | representative guard: null entire fact map",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_base_fwd__20261010 | representative guard: empty entire fact map",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_base_fwd__20261010 | representative guard: changed lead value",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_base_fwd__20261010 | representative guard: deleted lead fact",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_base_fwd__20261010 | representative guard: changed lead basis",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_base_fwd__20261010 | representative guard: changed lead units",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_base_fwd__20261010 | representative guard: resolved source-less unknown",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_base_fwd__20261010 | representative guard: removed source-less unknown",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_base_fwd__20261010 | representative guard: new fact added",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_base_fwd__20261010 | representative guard: changed identity",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_base_fwd__20261010 | representative guard: changed model year",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_base_fwd__20261010 | representative guard: changed stock scope",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_base_fwd__20261010 | representative guard: missing availability",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_base_fwd__20261010 | representative guard: stale availability",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_base_fwd__20261010 | representative guard: issues null",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_base_fwd__20261010 | representative guard: issues wrong type",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_base_fwd__20261010 | representative guard: sourceIds null",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_base_fwd__20261010 | representative guard: sourceIds wrong type",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_base_fwd__20261010 | representative guard: qualifications null",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_base_fwd__20261010 | representative guard: qualifications wrong type",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_base_fwd__20261010 | representative guard: missing issues",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_base_fwd__20261010 | representative guard: missing sourceIds",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_base_fwd__20261010 | representative guard: missing qualifications",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_elite_fwd__20261010 | representative guard: missing entire fact map",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_elite_fwd__20261010 | representative guard: null entire fact map",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_elite_fwd__20261010 | representative guard: empty entire fact map",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_elite_fwd__20261010 | representative guard: changed lead value",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_elite_fwd__20261010 | representative guard: deleted lead fact",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_elite_fwd__20261010 | representative guard: changed lead basis",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_elite_fwd__20261010 | representative guard: changed lead units",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_elite_fwd__20261010 | representative guard: resolved source-less unknown",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_elite_fwd__20261010 | representative guard: removed source-less unknown",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_elite_fwd__20261010 | representative guard: new fact added",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_elite_fwd__20261010 | representative guard: changed identity",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_elite_fwd__20261010 | representative guard: changed model year",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_elite_fwd__20261010 | representative guard: changed stock scope",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_elite_fwd__20261010 | representative guard: missing availability",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_elite_fwd__20261010 | representative guard: stale availability",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_elite_fwd__20261010 | representative guard: issues null",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_elite_fwd__20261010 | representative guard: issues wrong type",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_elite_fwd__20261010 | representative guard: sourceIds null",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_elite_fwd__20261010 | representative guard: sourceIds wrong type",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_elite_fwd__20261010 | representative guard: qualifications null",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_elite_fwd__20261010 | representative guard: qualifications wrong type",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_elite_fwd__20261010 | representative guard: missing issues",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_elite_fwd__20261010 | representative guard: missing sourceIds",
+      "passed": true
+    },
+    {
+      "name": "hyundai_elexio_my26_elite_fwd__20261010 | representative guard: missing qualifications",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_7_seat__20261010 | representative guard: missing entire fact map",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_7_seat__20261010 | representative guard: null entire fact map",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_7_seat__20261010 | representative guard: empty entire fact map",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_7_seat__20261010 | representative guard: changed lead value",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_7_seat__20261010 | representative guard: deleted lead fact",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_7_seat__20261010 | representative guard: changed lead basis",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_7_seat__20261010 | representative guard: changed lead units",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_7_seat__20261010 | representative guard: resolved source-less unknown",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_7_seat__20261010 | representative guard: removed source-less unknown",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_7_seat__20261010 | representative guard: new fact added",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_7_seat__20261010 | representative guard: changed identity",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_7_seat__20261010 | representative guard: changed model year",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_7_seat__20261010 | representative guard: changed stock scope",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_7_seat__20261010 | representative guard: missing availability",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_7_seat__20261010 | representative guard: stale availability",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_7_seat__20261010 | representative guard: issues null",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_7_seat__20261010 | representative guard: issues wrong type",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_7_seat__20261010 | representative guard: sourceIds null",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_7_seat__20261010 | representative guard: sourceIds wrong type",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_7_seat__20261010 | representative guard: qualifications null",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_7_seat__20261010 | representative guard: qualifications wrong type",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_7_seat__20261010 | representative guard: missing issues",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_7_seat__20261010 | representative guard: missing sourceIds",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_7_seat__20261010 | representative guard: missing qualifications",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_6_seat__20261010 | representative guard: missing entire fact map",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_6_seat__20261010 | representative guard: null entire fact map",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_6_seat__20261010 | representative guard: empty entire fact map",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_6_seat__20261010 | representative guard: changed lead value",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_6_seat__20261010 | representative guard: deleted lead fact",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_6_seat__20261010 | representative guard: changed lead basis",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_6_seat__20261010 | representative guard: changed lead units",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_6_seat__20261010 | representative guard: resolved source-less unknown",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_6_seat__20261010 | representative guard: removed source-less unknown",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_6_seat__20261010 | representative guard: new fact added",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_6_seat__20261010 | representative guard: changed identity",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_6_seat__20261010 | representative guard: changed model year",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_6_seat__20261010 | representative guard: changed stock scope",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_6_seat__20261010 | representative guard: missing availability",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_6_seat__20261010 | representative guard: stale availability",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_6_seat__20261010 | representative guard: issues null",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_6_seat__20261010 | representative guard: issues wrong type",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_6_seat__20261010 | representative guard: sourceIds null",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_6_seat__20261010 | representative guard: sourceIds wrong type",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_6_seat__20261010 | representative guard: qualifications null",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_6_seat__20261010 | representative guard: qualifications wrong type",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_6_seat__20261010 | representative guard: missing issues",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_6_seat__20261010 | representative guard: missing sourceIds",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_9_my27_calligraphy_awd_6_seat__20261010 | representative guard: missing qualifications",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_standard_range_42_fwd__20261010 | representative guard: missing entire fact map",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_standard_range_42_fwd__20261010 | representative guard: null entire fact map",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_standard_range_42_fwd__20261010 | representative guard: empty entire fact map",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_standard_range_42_fwd__20261010 | representative guard: changed lead value",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_standard_range_42_fwd__20261010 | representative guard: deleted lead fact",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_standard_range_42_fwd__20261010 | representative guard: changed lead basis",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_standard_range_42_fwd__20261010 | representative guard: changed lead units",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_standard_range_42_fwd__20261010 | representative guard: resolved source-less unknown",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_standard_range_42_fwd__20261010 | representative guard: removed source-less unknown",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_standard_range_42_fwd__20261010 | representative guard: new fact added",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_standard_range_42_fwd__20261010 | representative guard: changed identity",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_standard_range_42_fwd__20261010 | representative guard: changed model year",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_standard_range_42_fwd__20261010 | representative guard: changed stock scope",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_standard_range_42_fwd__20261010 | representative guard: missing availability",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_standard_range_42_fwd__20261010 | representative guard: stale availability",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_standard_range_42_fwd__20261010 | representative guard: issues null",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_standard_range_42_fwd__20261010 | representative guard: issues wrong type",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_standard_range_42_fwd__20261010 | representative guard: sourceIds null",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_standard_range_42_fwd__20261010 | representative guard: sourceIds wrong type",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_standard_range_42_fwd__20261010 | representative guard: qualifications null",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_standard_range_42_fwd__20261010 | representative guard: qualifications wrong type",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_standard_range_42_fwd__20261010 | representative guard: missing issues",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_standard_range_42_fwd__20261010 | representative guard: missing sourceIds",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_standard_range_42_fwd__20261010 | representative guard: missing qualifications",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_cross_49_fwd_sunroof__20261010 | representative guard: missing entire fact map",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_cross_49_fwd_sunroof__20261010 | representative guard: null entire fact map",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_cross_49_fwd_sunroof__20261010 | representative guard: empty entire fact map",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_cross_49_fwd_sunroof__20261010 | representative guard: changed lead value",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_cross_49_fwd_sunroof__20261010 | representative guard: deleted lead fact",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_cross_49_fwd_sunroof__20261010 | representative guard: changed lead basis",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_cross_49_fwd_sunroof__20261010 | representative guard: changed lead units",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_cross_49_fwd_sunroof__20261010 | representative guard: resolved source-less unknown",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_cross_49_fwd_sunroof__20261010 | representative guard: removed source-less unknown",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_cross_49_fwd_sunroof__20261010 | representative guard: new fact added",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_cross_49_fwd_sunroof__20261010 | representative guard: changed identity",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_cross_49_fwd_sunroof__20261010 | representative guard: changed model year",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_cross_49_fwd_sunroof__20261010 | representative guard: changed stock scope",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_cross_49_fwd_sunroof__20261010 | representative guard: missing availability",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_cross_49_fwd_sunroof__20261010 | representative guard: stale availability",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_cross_49_fwd_sunroof__20261010 | representative guard: issues null",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_cross_49_fwd_sunroof__20261010 | representative guard: issues wrong type",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_cross_49_fwd_sunroof__20261010 | representative guard: sourceIds null",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_cross_49_fwd_sunroof__20261010 | representative guard: sourceIds wrong type",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_cross_49_fwd_sunroof__20261010 | representative guard: qualifications null",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_cross_49_fwd_sunroof__20261010 | representative guard: qualifications wrong type",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_cross_49_fwd_sunroof__20261010 | representative guard: missing issues",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_cross_49_fwd_sunroof__20261010 | representative guard: missing sourceIds",
+      "passed": true
+    },
+    {
+      "name": "hyundai_inster_202608_cross_49_fwd_sunroof__20261010 | representative guard: missing qualifications",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_standard_range_48_6_fwd__20261010 | representative guard: missing entire fact map",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_standard_range_48_6_fwd__20261010 | representative guard: null entire fact map",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_standard_range_48_6_fwd__20261010 | representative guard: empty entire fact map",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_standard_range_48_6_fwd__20261010 | representative guard: changed lead value",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_standard_range_48_6_fwd__20261010 | representative guard: deleted lead fact",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_standard_range_48_6_fwd__20261010 | representative guard: changed lead basis",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_standard_range_48_6_fwd__20261010 | representative guard: changed lead units",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_standard_range_48_6_fwd__20261010 | representative guard: resolved source-less unknown",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_standard_range_48_6_fwd__20261010 | representative guard: removed source-less unknown",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_standard_range_48_6_fwd__20261010 | representative guard: new fact added",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_standard_range_48_6_fwd__20261010 | representative guard: changed identity",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_standard_range_48_6_fwd__20261010 | representative guard: changed model year",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_standard_range_48_6_fwd__20261010 | representative guard: changed stock scope",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_standard_range_48_6_fwd__20261010 | representative guard: missing availability",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_standard_range_48_6_fwd__20261010 | representative guard: stale availability",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_standard_range_48_6_fwd__20261010 | representative guard: issues null",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_standard_range_48_6_fwd__20261010 | representative guard: issues wrong type",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_standard_range_48_6_fwd__20261010 | representative guard: sourceIds null",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_standard_range_48_6_fwd__20261010 | representative guard: sourceIds wrong type",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_standard_range_48_6_fwd__20261010 | representative guard: qualifications null",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_standard_range_48_6_fwd__20261010 | representative guard: qualifications wrong type",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_standard_range_48_6_fwd__20261010 | representative guard: missing issues",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_standard_range_48_6_fwd__20261010 | representative guard: missing sourceIds",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_standard_range_48_6_fwd__20261010 | representative guard: missing qualifications",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_extended_range_64_8_fwd__20261010 | representative guard: missing entire fact map",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_extended_range_64_8_fwd__20261010 | representative guard: null entire fact map",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_extended_range_64_8_fwd__20261010 | representative guard: empty entire fact map",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_extended_range_64_8_fwd__20261010 | representative guard: changed lead value",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_extended_range_64_8_fwd__20261010 | representative guard: deleted lead fact",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_extended_range_64_8_fwd__20261010 | representative guard: changed lead basis",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_extended_range_64_8_fwd__20261010 | representative guard: changed lead units",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_extended_range_64_8_fwd__20261010 | representative guard: resolved source-less unknown",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_extended_range_64_8_fwd__20261010 | representative guard: removed source-less unknown",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_extended_range_64_8_fwd__20261010 | representative guard: new fact added",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_extended_range_64_8_fwd__20261010 | representative guard: changed identity",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_extended_range_64_8_fwd__20261010 | representative guard: changed model year",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_extended_range_64_8_fwd__20261010 | representative guard: changed stock scope",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_extended_range_64_8_fwd__20261010 | representative guard: missing availability",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_extended_range_64_8_fwd__20261010 | representative guard: stale availability",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_extended_range_64_8_fwd__20261010 | representative guard: issues null",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_extended_range_64_8_fwd__20261010 | representative guard: issues wrong type",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_extended_range_64_8_fwd__20261010 | representative guard: sourceIds null",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_extended_range_64_8_fwd__20261010 | representative guard: sourceIds wrong type",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_extended_range_64_8_fwd__20261010 | representative guard: qualifications null",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_extended_range_64_8_fwd__20261010 | representative guard: qualifications wrong type",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_extended_range_64_8_fwd__20261010 | representative guard: missing issues",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_extended_range_64_8_fwd__20261010 | representative guard: missing sourceIds",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_kona_extended_range_64_8_fwd__20261010 | representative guard: missing qualifications",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_elite_extended_range_64_8_fwd__20261010 | representative guard: missing entire fact map",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_elite_extended_range_64_8_fwd__20261010 | representative guard: null entire fact map",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_elite_extended_range_64_8_fwd__20261010 | representative guard: empty entire fact map",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_elite_extended_range_64_8_fwd__20261010 | representative guard: changed lead value",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_elite_extended_range_64_8_fwd__20261010 | representative guard: deleted lead fact",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_elite_extended_range_64_8_fwd__20261010 | representative guard: changed lead basis",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_elite_extended_range_64_8_fwd__20261010 | representative guard: changed lead units",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_elite_extended_range_64_8_fwd__20261010 | representative guard: resolved source-less unknown",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_elite_extended_range_64_8_fwd__20261010 | representative guard: removed source-less unknown",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_elite_extended_range_64_8_fwd__20261010 | representative guard: new fact added",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_elite_extended_range_64_8_fwd__20261010 | representative guard: changed identity",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_elite_extended_range_64_8_fwd__20261010 | representative guard: changed model year",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_elite_extended_range_64_8_fwd__20261010 | representative guard: changed stock scope",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_elite_extended_range_64_8_fwd__20261010 | representative guard: missing availability",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_elite_extended_range_64_8_fwd__20261010 | representative guard: stale availability",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_elite_extended_range_64_8_fwd__20261010 | representative guard: issues null",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_elite_extended_range_64_8_fwd__20261010 | representative guard: issues wrong type",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_elite_extended_range_64_8_fwd__20261010 | representative guard: sourceIds null",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_elite_extended_range_64_8_fwd__20261010 | representative guard: sourceIds wrong type",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_elite_extended_range_64_8_fwd__20261010 | representative guard: qualifications null",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_elite_extended_range_64_8_fwd__20261010 | representative guard: qualifications wrong type",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_elite_extended_range_64_8_fwd__20261010 | representative guard: missing issues",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_elite_extended_range_64_8_fwd__20261010 | representative guard: missing sourceIds",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_elite_extended_range_64_8_fwd__20261010 | representative guard: missing qualifications",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_premium_extended_range_64_8_fwd__20261010 | representative guard: missing entire fact map",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_premium_extended_range_64_8_fwd__20261010 | representative guard: null entire fact map",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_premium_extended_range_64_8_fwd__20261010 | representative guard: empty entire fact map",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_premium_extended_range_64_8_fwd__20261010 | representative guard: changed lead value",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_premium_extended_range_64_8_fwd__20261010 | representative guard: deleted lead fact",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_premium_extended_range_64_8_fwd__20261010 | representative guard: changed lead basis",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_premium_extended_range_64_8_fwd__20261010 | representative guard: changed lead units",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_premium_extended_range_64_8_fwd__20261010 | representative guard: resolved source-less unknown",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_premium_extended_range_64_8_fwd__20261010 | representative guard: removed source-less unknown",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_premium_extended_range_64_8_fwd__20261010 | representative guard: new fact added",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_premium_extended_range_64_8_fwd__20261010 | representative guard: changed identity",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_premium_extended_range_64_8_fwd__20261010 | representative guard: changed model year",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_premium_extended_range_64_8_fwd__20261010 | representative guard: changed stock scope",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_premium_extended_range_64_8_fwd__20261010 | representative guard: missing availability",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_premium_extended_range_64_8_fwd__20261010 | representative guard: stale availability",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_premium_extended_range_64_8_fwd__20261010 | representative guard: issues null",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_premium_extended_range_64_8_fwd__20261010 | representative guard: issues wrong type",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_premium_extended_range_64_8_fwd__20261010 | representative guard: sourceIds null",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_premium_extended_range_64_8_fwd__20261010 | representative guard: sourceIds wrong type",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_premium_extended_range_64_8_fwd__20261010 | representative guard: qualifications null",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_premium_extended_range_64_8_fwd__20261010 | representative guard: qualifications wrong type",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_premium_extended_range_64_8_fwd__20261010 | representative guard: missing issues",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_premium_extended_range_64_8_fwd__20261010 | representative guard: missing sourceIds",
+      "passed": true
+    },
+    {
+      "name": "hyundai_kona_electric_my27_premium_extended_range_64_8_fwd__20261010 | representative guard: missing qualifications",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_5_n_84_awd__20261010 | representative guard: missing entire fact map",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_5_n_84_awd__20261010 | representative guard: null entire fact map",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_5_n_84_awd__20261010 | representative guard: empty entire fact map",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_5_n_84_awd__20261010 | representative guard: changed lead value",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_5_n_84_awd__20261010 | representative guard: deleted lead fact",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_5_n_84_awd__20261010 | representative guard: changed lead basis",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_5_n_84_awd__20261010 | representative guard: changed lead units",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_5_n_84_awd__20261010 | representative guard: resolved source-less unknown",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_5_n_84_awd__20261010 | representative guard: removed source-less unknown",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_5_n_84_awd__20261010 | representative guard: new fact added",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_5_n_84_awd__20261010 | representative guard: changed identity",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_5_n_84_awd__20261010 | representative guard: changed model year",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_5_n_84_awd__20261010 | representative guard: changed stock scope",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_5_n_84_awd__20261010 | representative guard: missing availability",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_5_n_84_awd__20261010 | representative guard: stale availability",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_5_n_84_awd__20261010 | representative guard: issues null",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_5_n_84_awd__20261010 | representative guard: issues wrong type",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_5_n_84_awd__20261010 | representative guard: sourceIds null",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_5_n_84_awd__20261010 | representative guard: sourceIds wrong type",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_5_n_84_awd__20261010 | representative guard: qualifications null",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_5_n_84_awd__20261010 | representative guard: qualifications wrong type",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_5_n_84_awd__20261010 | representative guard: missing issues",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_5_n_84_awd__20261010 | representative guard: missing sourceIds",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_5_n_84_awd__20261010 | representative guard: missing qualifications",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_6_n_84_awd__20261010 | representative guard: missing entire fact map",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_6_n_84_awd__20261010 | representative guard: null entire fact map",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_6_n_84_awd__20261010 | representative guard: empty entire fact map",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_6_n_84_awd__20261010 | representative guard: changed lead value",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_6_n_84_awd__20261010 | representative guard: deleted lead fact",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_6_n_84_awd__20261010 | representative guard: changed lead basis",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_6_n_84_awd__20261010 | representative guard: changed lead units",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_6_n_84_awd__20261010 | representative guard: resolved source-less unknown",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_6_n_84_awd__20261010 | representative guard: removed source-less unknown",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_6_n_84_awd__20261010 | representative guard: new fact added",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_6_n_84_awd__20261010 | representative guard: changed identity",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_6_n_84_awd__20261010 | representative guard: changed model year",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_6_n_84_awd__20261010 | representative guard: changed stock scope",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_6_n_84_awd__20261010 | representative guard: missing availability",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_6_n_84_awd__20261010 | representative guard: stale availability",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_6_n_84_awd__20261010 | representative guard: issues null",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_6_n_84_awd__20261010 | representative guard: issues wrong type",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_6_n_84_awd__20261010 | representative guard: sourceIds null",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_6_n_84_awd__20261010 | representative guard: sourceIds wrong type",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_6_n_84_awd__20261010 | representative guard: qualifications null",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_6_n_84_awd__20261010 | representative guard: qualifications wrong type",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_6_n_84_awd__20261010 | representative guard: missing issues",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_6_n_84_awd__20261010 | representative guard: missing sourceIds",
+      "passed": true
+    },
+    {
+      "name": "hyundai_ioniq_6_n_84_awd__20261010 | representative guard: missing qualifications",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_elexio_page | representative source guard: removed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_elexio_page | representative source guard: metadata changed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_elexio_specs | representative source guard: removed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_elexio_specs | representative source guard: metadata changed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_ioniq9_page | representative source guard: removed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_ioniq9_page | representative source guard: metadata changed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_ioniq9_specs_my27 | representative source guard: removed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_ioniq9_specs_my27 | representative source guard: metadata changed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_hyundai_warranty_terms | representative source guard: removed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_hyundai_warranty_terms | representative source guard: metadata changed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_elexio_configurator | representative source guard: removed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_elexio_configurator | representative source guard: metadata changed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_ioniq9_configurator | representative source guard: removed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_ioniq9_configurator | representative source guard: metadata changed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_elexio_keema_base | representative source guard: removed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_elexio_keema_base | representative source guard: metadata changed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_elexio_keema_elite | representative source guard: removed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_elexio_keema_elite | representative source guard: metadata changed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_elexio_ancap | representative source guard: removed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_elexio_ancap | representative source guard: metadata changed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_elexio_ancap_release | representative source guard: removed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_elexio_ancap_release | representative source guard: metadata changed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_ioniq9_ancap | representative source guard: removed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_ioniq9_ancap | representative source guard: metadata changed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_ioniq9_ancap_release | representative source guard: removed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_ioniq9_ancap_release | representative source guard: metadata changed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_inster_page | representative source guard: removed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_inster_page | representative source guard: metadata changed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_inster_specs_aug2026 | representative source guard: removed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_inster_specs_aug2026 | representative source guard: metadata changed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_inster_brochure_aug2026 | representative source guard: removed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_inster_brochure_aug2026 | representative source guard: metadata changed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_kona_specs_my27 | representative source guard: removed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_kona_specs_my27 | representative source guard: metadata changed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_kona_offers | representative source guard: removed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_kona_offers | representative source guard: metadata changed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_kona_elite_new_melville | representative source guard: removed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_kona_elite_new_melville | representative source guard: metadata changed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_kona_elite_new_maughan | representative source guard: removed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_kona_elite_new_maughan | representative source guard: metadata changed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_kona_premium_new_alan | representative source guard: removed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_kona_premium_new_alan | representative source guard: metadata changed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_hk_hyundai_warranty_terms | representative source guard: removed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_hk_hyundai_warranty_terms | representative source guard: metadata changed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_inster_ancap_pdf | representative source guard: removed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_inster_ancap_pdf | representative source guard: metadata changed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_kona_ancap_current_pdf | representative source guard: removed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_kona_ancap_current_pdf | representative source guard: metadata changed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_hn_hyundai_ioniq5n_page | representative source guard: removed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_hn_hyundai_ioniq5n_page | representative source guard: metadata changed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_hn_hyundai_ioniq6n_page | representative source guard: removed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_hn_hyundai_ioniq6n_page | representative source guard: metadata changed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_hn_hyundai_ioniq6n_specs | representative source guard: removed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_hn_hyundai_ioniq6n_specs | representative source guard: metadata changed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_hn_werribee_ioniq6n_new | representative source guard: removed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_hn_werribee_ioniq6n_new | representative source guard: metadata changed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_hn_hyundai_ioniq5n_specs | representative source guard: removed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_hn_hyundai_ioniq5n_specs | representative source guard: metadata changed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_hn_hyundai_warranty_terms | representative source guard: removed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_hn_hyundai_warranty_terms | representative source guard: metadata changed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_hn_hyundai_warranty_page | representative source guard: removed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_hn_hyundai_warranty_page | representative source guard: metadata changed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_hn_hyundai_ioniq5n_calculator | representative source guard: removed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_hn_hyundai_ioniq5n_calculator | representative source guard: metadata changed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_hn_hyundai_ioniq6n_calculator | representative source guard: removed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_hn_hyundai_ioniq6n_calculator | representative source guard: metadata changed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_hn_ancap_ioniq5 | representative source guard: removed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_hn_ancap_ioniq5 | representative source guard: metadata changed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_hn_ancap_ioniq6_report | representative source guard: removed",
+      "passed": true
+    },
+    {
+      "name": "r10_hy_hn_ancap_ioniq6_report | representative source guard: metadata changed",
+      "passed": true
+    },
+    {
+      "name": "all twelve summaries expire after review window",
+      "passed": true
+    },
+    {
+      "name": "rejected/failed/held lead metadata cannot create or poison summaries",
+      "passed": true
+    },
+    {
+      "name": "application bytes stable during quick verification",
+      "passed": true
+    },
+    {
+      "name": "exhaustive proof remains unchanged",
+      "passed": true
+    }
+  ]
+}

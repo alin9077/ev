@@ -1,0 +1,397 @@
+{
+  "schemaVersion": 7,
+  "createdAt": "2026-10-14T08:07:42.856154+00:00",
+  "status": "Completed verified Volkswagen-integrated recovery save; two Volkswagen census issues and M1 remain open",
+  "source": {
+    "filename": "Roadmark-recovery-source-volkswagen-integrated-20261014T0752.tar.xz",
+    "bytes": 8008056,
+    "sha256": "a40daa85dda903738685dac397df6f25efd00d3316767f0d6c850b302d0bf95c",
+    "group": "source-volkswagen-integrated",
+    "library_file_id": "libfile_4f65ce69d4408191bfa1ba8ebce150d9",
+    "version": 0,
+    "restoreOrder": 39,
+    "file_id": "file_00000000380c822fb18bc633b00665f6"
+  },
+  "sourceCaptureCutoff": "2026-10-14T07:57:28.714153+00:00",
+  "qaCaptureCutoff": "2026-10-14T07:58:15.016016+00:00",
+  "researchCaptureCutoff": "2026-10-14T07:54:16.983640+00:00",
+  "archiveCount": 47,
+  "archiveBytes": 382764348,
+  "restoredFiles": 4297,
+  "restoredBytes": 1592882021,
+  "incrementalSave": {
+    "newArchiveCount": 3,
+    "newArchiveBytes": 9082620,
+    "currentSourceFiles": 635,
+    "currentQaFiles": 1297,
+    "newOrChangedQaFiles": 53,
+    "unchangedQaFiles": 1244,
+    "missingQaFiles": [],
+    "currentVolkswagenResearchFiles": 224,
+    "newOrChangedResearchFiles": 26,
+    "unchangedResearchFiles": 198,
+    "missingResearchFiles": [],
+    "researchExclusions": [
+      {
+        "path": "__pycache__/build-packet.cpython-312.pyc",
+        "reason": "dependency, build, cache, or runtime directory"
+      },
+      {
+        "path": "__pycache__/build-reconciliation.cpython-312.pyc",
+        "reason": "dependency, build, cache, or runtime directory"
+      },
+      {
+        "path": "__pycache__/finalize-artifacts.cpython-312.pyc",
+        "reason": "dependency, build, cache, or runtime directory"
+      },
+      {
+        "path": "__pycache__/merge-evidence.cpython-312.pyc",
+        "reason": "dependency, build, cache, or runtime directory"
+      },
+      {
+        "path": "id45/__pycache__/capture.cpython-312.pyc",
+        "reason": "dependency, build, cache, or runtime directory"
+      },
+      {
+        "path": "idbuzz/__pycache__/capture.cpython-312.pyc",
+        "reason": "dependency, build, cache, or runtime directory"
+      }
+    ],
+    "newQaPaths": [
+      "roadmark-104-qa/configuration-scope-focused.log",
+      "roadmark-104-qa/configuration-scope-guard-before/brand-feature-updates.test.ts",
+      "roadmark-104-qa/configuration-scope-guard-before/src/lib/brand-updates.ts",
+      "roadmark-104-qa/configuration-scope-guard-before/src/lib/data.ts",
+      "roadmark-104-qa/configuration-scope-guard-before/src/lib/types.ts",
+      "roadmark-104-qa/configuration-scope-guard-manifest.json",
+      "roadmark-104-qa/configuration-scope-guard-review.md",
+      "roadmark-104-qa/configuration-scope-guard.patch",
+      "roadmark-104-qa/configuration-scope-historical-feature.log",
+      "roadmark-104-qa/configuration-scope-lint.log",
+      "roadmark-104-qa/configuration-scope-regression.log",
+      "roadmark-104-qa/configuration-scope-typecheck.log",
+      "roadmark-104-qa/m1-volkswagen-coverage.exit",
+      "roadmark-104-qa/m1-volkswagen-coverage.json",
+      "roadmark-104-qa/m1-volkswagen-coverage.stderr",
+      "roadmark-104-qa/m1-volkswagen-integration.exit",
+      "roadmark-104-qa/m1-volkswagen-integration.log",
+      "roadmark-104-qa/m1-volkswagen-lint.exit",
+      "roadmark-104-qa/m1-volkswagen-lint.log",
+      "roadmark-104-qa/m1-volkswagen-typecheck.exit",
+      "roadmark-104-qa/m1-volkswagen-typecheck.log",
+      "roadmark-104-qa/m1-volkswagen-validate.exit",
+      "roadmark-104-qa/m1-volkswagen-validate.log",
+      "roadmark-104-qa/review-volkswagen-independent.ts",
+      "roadmark-104-qa/stage-volkswagen-candidate.ts",
+      "roadmark-104-qa/volkswagen-independent-review/configuration-revision-static-check.json",
+      "roadmark-104-qa/volkswagen-independent-review/evidence-review.md",
+      "roadmark-104-qa/volkswagen-independent-review/final-bundle-manifest-check.json",
+      "roadmark-104-qa/volkswagen-independent-review/id4-09.png",
+      "roadmark-104-qa/volkswagen-independent-review/id4-10.png",
+      "roadmark-104-qa/volkswagen-independent-review/idbuzz-14.png",
+      "roadmark-104-qa/volkswagen-independent-review/idbuzz-15.png",
+      "roadmark-104-qa/volkswagen-independent-review/independent-review-replay.exit",
+      "roadmark-104-qa/volkswagen-independent-review/independent-review-replay.json",
+      "roadmark-104-qa/volkswagen-independent-review/independent-review-replay.log",
+      "roadmark-104-qa/volkswagen-independent-review/initial-91d90cd4-replay.json",
+      "roadmark-104-qa/volkswagen-independent-review/initial-91d90cd4-replay.log",
+      "roadmark-104-qa/volkswagen-independent-review/retained-ledger-independent-check.json",
+      "roadmark-104-qa/volkswagen-research-REVIEW.md",
+      "roadmark-104-qa/volkswagen-research-artifact-hash-manifest.json",
+      "roadmark-104-qa/volkswagen-research-brand-model-list-reconciliation.json",
+      "roadmark-104-qa/volkswagen-research-configuration-static-audit.json",
+      "roadmark-104-qa/volkswagen-research-core-matrix.json",
+      "roadmark-104-qa/volkswagen-research-evidence-completeness-audit.json",
+      "roadmark-104-qa/volkswagen-research-independent-evidence-review.md",
+      "roadmark-104-qa/volkswagen-research-independent-review-replay.json",
+      "roadmark-104-qa/volkswagen-research-integration-readiness.json",
+      "roadmark-104-qa/volkswagen-research-redaction-audit.json",
+      "roadmark-104-qa/volkswagen-research-source-hash-manifest.json",
+      "roadmark-104-qa/volkswagen-research-source-index.json",
+      "roadmark-104-qa/volkswagen-research-stage-validation.exit",
+      "roadmark-104-qa/volkswagen-research-stage-validation.log",
+      "roadmark-104-qa/work-status.json"
+    ],
+    "unchangedArchivesReuploaded": 0
+  },
+  "approvedVolkswagenPacketSHA256": {
+    "volkswagen-2026-10-14.json": "208581fcff2c9e0dcd8a54ca0d11faff9423db1cb635211156722815d9e61513",
+    "volkswagen-reconciliation-2026-10-14.json": "1f91c72014f4120cc907a62937da0fd9be3431e89f74d7088cef3ba12f218b33"
+  },
+  "documents": [
+    {
+      "filename": "Roadmark-RECOVERY-INDEX-volkswagen-integrated-20261014.md",
+      "library_file_id": "libfile_75f63cf2488c8191b91c739344ad1624",
+      "version": 0,
+      "bytes": 16022,
+      "sha256": "88a68f85f7f065604f7b5bbd86a76cd506e09a5e9e1d1b5605fed4309c4d3e5a"
+    },
+    {
+      "filename": "Roadmark-RECOVERY-MANIFEST-volkswagen-integrated-20261014.json",
+      "library_file_id": "libfile_4c5696396b3c8191ae87aca23f631175",
+      "version": 0,
+      "bytes": 1077910,
+      "sha256": "341c1ae834fda1936eda64949de9b9bfb79c9aa21778363d7629691b2e348cab"
+    },
+    {
+      "filename": "Roadmark-RECOVERY-VERIFICATION-volkswagen-integrated-20261014.json",
+      "library_file_id": "libfile_e50dfd4c24fc819185496c091da0865d",
+      "version": 0,
+      "bytes": 84034,
+      "sha256": "76deafda1f6d9be56a88ed9a6fb9aedd3309e275559ab34a63275faba3b1ce12"
+    }
+  ],
+  "newArchives": [
+    {
+      "filename": "Roadmark-recovery-source-volkswagen-integrated-20261014T0752.tar.xz",
+      "bytes": 8008056,
+      "sha256": "a40daa85dda903738685dac397df6f25efd00d3316767f0d6c850b302d0bf95c",
+      "group": "source-volkswagen-integrated",
+      "library_file_id": "libfile_4f65ce69d4408191bfa1ba8ebce150d9",
+      "version": 0,
+      "restoreOrder": 39,
+      "file_id": "file_00000000380c822fb18bc633b00665f6"
+    },
+    {
+      "filename": "Roadmark-recovery-volkswagen-final-delta-20261014T075416Z-part01of01.tar.xz",
+      "bytes": 266468,
+      "sha256": "f7f0c71936bcee9abe9d77517c5075209e7e890017c4c020f2fba8ffb73e9474",
+      "group": "volkswagen-final-delta",
+      "library_file_id": "libfile_ad0add5497948191a6a8d4cb34e5289c",
+      "version": 0,
+      "restoreOrder": 46,
+      "file_id": "file_000000007a0c81f79a65008df191ca76"
+    },
+    {
+      "filename": "Roadmark-recovery-qa-volkswagen-integrated-20261014T075807Z-part01of01.tar.xz",
+      "bytes": 808096,
+      "sha256": "116748dc05f6eeea05184157f4c2429064ff7bd18c459ec2a3f4ae15fe3063d1",
+      "group": "qa-volkswagen-integrated",
+      "library_file_id": "libfile_576c084ce7088191ad02229093e0be02",
+      "version": 0,
+      "restoreOrder": 47,
+      "file_id": "file_000000007ee081f9a473faa30eb8f0c8"
+    }
+  ],
+  "verifierLibraryFileId": "libfile_ca3a7f7c6970819188bdbf0b22dd8acb",
+  "cleanupListLibraryFileId": "libfile_cb182812848c8191a3755bd1607a99cc",
+  "copyTransformations": {
+    "sourceCopies": [
+      {
+        "bytes": 732552,
+        "sha256": "fb34e31bc3bdf5a1a2e1673d33ba9ab1ba6a8c0a3c2d3fb49e7e4267789b422d",
+        "originalBytes": 733472,
+        "originalSHA256": "e6b1f6adae33871d57f0c6bd730571cf64fed06ae4166c1947aed422d97b4a7f",
+        "redactedHeaderPaths": [
+          "/sources/5/headers/set-cookie",
+          "/sources/6/headers/set-cookie",
+          "/sources/7/headers/set-cookie",
+          "/sources/19/headers/set-cookie",
+          "/sources/20/headers/set-cookie",
+          "/sources/23/headers/Set-Cookie",
+          "/sources/24/headers/set-cookie",
+          "/sources/29/headers/set-cookie",
+          "/sources/33/headers/set-cookie",
+          "/sources/35/headers/Set-Cookie"
+        ],
+        "path": "data/farizon-foton-jac-trucks-evidence.json"
+      }
+    ],
+    "reusedQaCopies": [
+      {
+        "path": "roadmark-104-qa/source-package-roundtrip/roadmark/data/farizon-foton-jac-trucks-evidence.json",
+        "bytes": 732552,
+        "sha256": "fb34e31bc3bdf5a1a2e1673d33ba9ab1ba6a8c0a3c2d3fb49e7e4267789b422d",
+        "originalBytes": 733472,
+        "originalSHA256": "e6b1f6adae33871d57f0c6bd730571cf64fed06ae4166c1947aed422d97b4a7f",
+        "redactedHeaderPaths": [
+          "/sources/5/headers/set-cookie",
+          "/sources/6/headers/set-cookie",
+          "/sources/7/headers/set-cookie",
+          "/sources/19/headers/set-cookie",
+          "/sources/20/headers/set-cookie",
+          "/sources/23/headers/Set-Cookie",
+          "/sources/24/headers/set-cookie",
+          "/sources/29/headers/set-cookie",
+          "/sources/33/headers/set-cookie",
+          "/sources/35/headers/Set-Cookie"
+        ]
+      }
+    ],
+    "newQaDeltaCopyRedactions": 0,
+    "finalResearchCopyRedactions": 0,
+    "note": "The same ten known legacy cookie-header locations are redacted again in the new full source; the QA roundtrip counterpart is unchanged from the already sanitized baseline and is not reuploaded in this delta. Approved factual packet hashes remain exact."
+  },
+  "privacy": "All new archive members and generated documents passed the bounded known-value/runtime-pattern scan. Zero known-value matches, primary-header candidates, unclassified runtime candidates or scan errors. All reused archives match previously audited sizes and SHA-256. Final Volkswagen research and new QA-delta files need no redaction; one legacy source file has the same ten documented header redactions reapplied. These checks are not proof of absence of every possible secret.",
+  "imageProvenance": {
+    "verifiedAt": "2026-10-14T07:33:18Z",
+    "basis": "Confirmed capture provenance: public PDF page renders, not browser screenshots",
+    "images": [
+      {
+        "path": "volkswagen-research/id45/captures/id45_my25_technical_page8.png",
+        "bytes": 559525,
+        "sha256": "2d84e4a66371b7de954af48d0d923b200ed5e078aaa8910acf05def63685ce3e",
+        "classification": "Public technical/equipment PDF page render; not a browser screenshot"
+      },
+      {
+        "path": "volkswagen-research/id45/captures/id45_my25_technical_page9.png",
+        "bytes": 118638,
+        "sha256": "cc996e97cd00e97cab142aa0186c3e74acf0f7a7f6cd013aaaf4ef8fb534b093",
+        "classification": "Public technical/equipment PDF page render; not a browser screenshot"
+      },
+      {
+        "path": "volkswagen-research/id45/captures/id4_my27_equipment_page5.png",
+        "bytes": 290845,
+        "sha256": "58b24e7df53254ea2e115934230dc8efb301db37b8e18260545b30223ac3f51c",
+        "classification": "Public technical/equipment PDF page render; not a browser screenshot"
+      },
+      {
+        "path": "volkswagen-research/id45/captures/id4_my27_technical_page9.png",
+        "bytes": 114060,
+        "sha256": "0293d5a45b9c5d40ed9284686f4dcfa4469f39918653b965d0490b629f1832bd",
+        "classification": "Public technical/equipment PDF page render; not a browser screenshot"
+      },
+      {
+        "path": "volkswagen-research/id45/captures/id5_my26_equipment_page5.png",
+        "bytes": 287948,
+        "sha256": "8327074b718f18b0fed0b6a1b21a632e699a779a950ea510e961a2248ce490f2",
+        "classification": "Public technical/equipment PDF page render; not a browser screenshot"
+      },
+      {
+        "path": "volkswagen-research/id45/captures/id5_my26_technical_page8.png",
+        "bytes": 108830,
+        "sha256": "e0323d9352eb8ab46cf99d38b931be1f9ec4c6dee452097cd4aa364d23ddaddb",
+        "classification": "Public technical/equipment PDF page render; not a browser screenshot"
+      }
+    ],
+    "qaImages": [
+      {
+        "path": "roadmark-104-qa/volkswagen-independent-review/id4-09.png",
+        "bytes": 131989,
+        "sha256": "fdf68149205458bd5e506ea3af294f84fea9b160c601f73ea7b7a56f940e2b21",
+        "classification": "Public technical/equipment PDF page render; not a browser screenshot",
+        "provenance": "Research owner confirmed ID.4 pages 9-10 and ID. Buzz pages 14-15 are public PDF page renders, with no browser UI or private screen capture."
+      },
+      {
+        "path": "roadmark-104-qa/volkswagen-independent-review/id4-10.png",
+        "bytes": 150476,
+        "sha256": "2f99ae311105f485f4ff3805b5409a7eef546b1732b3b89646ba86bd29d74087",
+        "classification": "Public technical/equipment PDF page render; not a browser screenshot",
+        "provenance": "Research owner confirmed ID.4 pages 9-10 and ID. Buzz pages 14-15 are public PDF page renders, with no browser UI or private screen capture."
+      },
+      {
+        "path": "roadmark-104-qa/volkswagen-independent-review/idbuzz-14.png",
+        "bytes": 194729,
+        "sha256": "b8a15eca7931980196087455f6d5e409d8184b66cc4714160dbf45593fbe6b9a",
+        "classification": "Public technical/equipment PDF page render; not a browser screenshot",
+        "provenance": "Research owner confirmed ID.4 pages 9-10 and ID. Buzz pages 14-15 are public PDF page renders, with no browser UI or private screen capture."
+      },
+      {
+        "path": "roadmark-104-qa/volkswagen-independent-review/idbuzz-15.png",
+        "bytes": 207289,
+        "sha256": "180f6908a8f49b7aa786f865ce4c8e60a127c6f5118d8868ab9507984234affd",
+        "classification": "Public technical/equipment PDF page render; not a browser screenshot",
+        "provenance": "Research owner confirmed ID.4 pages 9-10 and ID. Buzz pages 14-15 are public PDF page renders, with no browser UI or private screen capture."
+      }
+    ],
+    "qaImageCount": 4,
+    "researchImageCount": 6,
+    "totalImageCount": 10
+  },
+  "priorToyotaBrowserScreenshotExclusions": {
+    "result": "Excluded before any upload",
+    "provenance": "Verified from current/build_normalized.py and REVIEW.md: official PDFs displayed in cloud Chrome and captured as browser screenshots.",
+    "files": [
+      {
+        "path": "toyota-research/current/bz4x-spec-p1.png",
+        "bytes": 94027,
+        "sha256": "2d9242f9136c653566bb169e0621106f9bafe749e465961139d45dd688b660a1",
+        "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+      },
+      {
+        "path": "toyota-research/current/bz4x-spec-p2.png",
+        "bytes": 92201,
+        "sha256": "ab1c9676f743f030ec5fc29654e6961c48ac8f31801456cd6307bc352d4e2275",
+        "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+      },
+      {
+        "path": "toyota-research/current/hilux-spec-p2.png",
+        "bytes": 91974,
+        "sha256": "08adef635b8744c02336ada1b02b674ee6b4f0e0012a3bd0fb3f2d1f1c0af368",
+        "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+      },
+      {
+        "path": "toyota-research/current/hilux-spec-p3.png",
+        "bytes": 88131,
+        "sha256": "2bf2bdd69b4c558d94b9561202fb49046211dbbb41806113b47597c4bd9495ca",
+        "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+      },
+      {
+        "path": "toyota-research/current/touring-spec-p2.png",
+        "bytes": 85836,
+        "sha256": "9525bbd89757a7ac6311fec7f82e5c5a3c0aee6d50c1ec1ff232a247ece90491",
+        "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+      }
+    ]
+  },
+  "evidenceLimit": "Retained MY26 Volkswagen proof includes clearly labelled immutable admitted-ledger excerpts. Unavailable original whole browser captures are not included, and their original archived hashes are not claimed reverified.",
+  "integrity": {
+    "result": "PASS",
+    "archivesVerified": 47,
+    "restoredFilesVerified": 4297,
+    "restoredBytes": 1592882021
+  },
+  "workState": {
+    "workingCheckpoint": 104,
+    "latestDeliveredCheckpoint": 103,
+    "milestone": "M1 open",
+    "registeredPackets": 11,
+    "totalVersions": 374,
+    "tier1Versions": 297,
+    "onSaleVersions": 286,
+    "reviewedOnSaleCoreCells": 4181,
+    "onSaleCoreCellDenominator": 4862,
+    "latestIntegratedBrand": "Volkswagen",
+    "volkswagenTier1Records": 18,
+    "volkswagenOnSaleRecords": 13,
+    "volkswagenProvisionalReportedOrderOpenRecords": 5,
+    "volkswagenNewIdentities": 11,
+    "volkswagenResearchClosure": false,
+    "volkswagenOpenIssues": [
+      "MY27 ID. Buzz official current-version confirmation missing; five named variants remain provisional reported order-open",
+      "Indexed MY26 ID.4 GTX New stock lead could not be retrieved live; not excluded as unorderable"
+    ],
+    "sharedConfigurationGuard": {
+      "focusedTestsPassed": 81,
+      "namedInvalidUpdateCases": 32,
+      "broaderGuardCases": 6,
+      "independentVolkswagenReplayNegativeCategories": 26,
+      "scope": "Dated guarded updates to existing bounded configuration metadata; three obsolete MY26 Buzz configuration holds cleared; immutable source identity/build metadata and historical feature context retained."
+    },
+    "hyundai": "21 established versions integrated; exact six-seat MY26 IONIQ9 lead unresolved and deferred by owner",
+    "currentResearchBrand": "Volvo",
+    "nextResearchBrand": "GWM",
+    "latestRootChecks": {
+      "brand": "Volkswagen",
+      "researchCompleted": false,
+      "integrationTests": {
+        "passed": 82,
+        "failed": 0
+      },
+      "validateExit": 0,
+      "coverageExit": 0,
+      "typecheckExit": 0,
+      "changedFileLintExit": 0
+    },
+    "fullAggregateSuite": "Not rerun for this integration. Original through-Hyundai run remains partial/interrupted without a terminal aggregate result.",
+    "productionBuild": "Not rerun for this integration.",
+    "servicePerformance": "Previously measured approximately 60-second eager review-service preflight remains an open issue; test budget is not performance acceptance."
+  },
+  "cleanup": {
+    "affectedOriginalsRetained": 12,
+    "intermediateCopiesRetained": 3,
+    "deletions": 0,
+    "replacements": 0
+  },
+  "scope": "Full final Volkswagen-integrated source plus final research and stable QA deltas over the previously verified safe provisional chain. Previous provisional packet and draft configuration files are superseded in the restored tree by approved final bytes. No later Volvo research is included."
+}

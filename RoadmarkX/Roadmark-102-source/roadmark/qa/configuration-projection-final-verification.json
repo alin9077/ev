@@ -1,0 +1,67 @@
+{
+  "checkedAtUTC": "2026-10-10T18:04:58Z",
+  "status": "337 tests, types, lint, validation,361-page single-worker production build and portable build passed; scoped own-VM browser checks pass",
+  "configurationRecords": 315,
+  "runtimeFamilies": 133,
+  "buyerSummaries": 308,
+  "dataParity": "105 data files byte-identical to saved46; no evidence/identity/eligibility changes",
+  "portable": {
+    "bytes": 41219581,
+    "sha256": "85f46b3213ec9965ab6afdac78b39e98c4d46ecf0a99d312877dc75ddf1fcf57"
+  },
+  "responseMeasurementScope": "Own VM production Next.js server, loopback requests; cold then 3 warm samples. Gzip byte counts are estimates from local compression. Not browser rendering, actual mobile, network throughput, LCP or INP.",
+  "productionResponses": [
+    {
+      "route": "/",
+      "beforeBytes": 7540846,
+      "afterBytes": 7276754,
+      "rawChangePercent": -3.502,
+      "beforeEstimatedGzipBytes": 763031,
+      "afterEstimatedGzipBytes": 724904
+    },
+    {
+      "route": "/discover",
+      "beforeBytes": 4287481,
+      "afterBytes": 4023389,
+      "rawChangePercent": -6.16,
+      "beforeEstimatedGzipBytes": 340281,
+      "afterEstimatedGzipBytes": 302100
+    },
+    {
+      "route": "/cars/geely-ex5/inspire-extended-range-2",
+      "beforeBytes": 370825,
+      "afterBytes": 371252,
+      "rawChangePercent": 0.115,
+      "beforeEstimatedGzipBytes": 50693,
+      "afterEstimatedGzipBytes": 50847
+    },
+    {
+      "route": "/compare?cars=byd_atto_3_legacy__essential_fwd__1%2Cgeely_ex5__inspire_extended_range__2",
+      "beforeBytes": 519606,
+      "afterBytes": 519606,
+      "rawChangePercent": 0.0,
+      "beforeEstimatedGzipBytes": 67490,
+      "afterEstimatedGzipBytes": 67492
+    }
+  ],
+  "browser": {
+    "environment": "Own-VM Chrome,1165px desktop and388px CSS width at300% desktop zoom;not actual phones",
+    "passed": [
+      "All four MY26 VW scope paragraphs remain visible with conditions closed after3fieldprojection",
+      "ID.Buzz search returns5records;fresh-stock returns3",
+      "Picker full300-current-results internal scroll/client widths now362/362; results322/322;previous364/362 and344/322",
+      "Denza D9 FWD/AWD long generation text wraps beside fixed price without clipping or horizontal scrollbar",
+      "Picker Escape closes dialog and restores trigger focus",
+      "VW detail unknown DC time remains unknown with generic charging-window/station-rating caution and no Kia test implication",
+      "Original Model Y hero and all nine navigation reasons preserved above discovery;1165px document has no horizontal overflow"
+    ]
+  },
+  "releaseApproved": false,
+  "remainingGates": [
+    "Complete Australian market audit",
+    "Full changed-screen visual/accessibility review",
+    "Real iPhone/Safari and Android/Chrome journeys",
+    "Actual mobile loading/interaction measurement",
+    "Public reporting and release approval"
+  ]
+}

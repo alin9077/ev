@@ -1,0 +1,679 @@
+{
+  "schemaVersion": 8,
+  "createdAt": "2026-10-15T14:25:58.603320+00:00",
+  "status": "Registered MINI 27 working cut; 151 scoped tests (144 behavioural plus 7 safety), full-project cold TypeScript with 361 roots, structural validation and one actual normal report with strict saved-report comparison independently passed. Selected-preflight-v2 failure, held unexecuted v1 preparations, superseded v3 success and current v4/full-stage-v2/comparator-v2 proof remain retained. No helper or test changes in this cut. Full aggregate suite, production build, MINI browser/device visual verification, strict M1 closure and release remain open.",
+  "source": {
+    "filename": "Roadmark-recovery-source-MINI-WORKING-20261015T1330.tar.xz",
+    "bytes": 8519116,
+    "sha256": "81a41b43c590a7682c594a2b174a9ab9605df930029b777788fde08bb9ed662d",
+    "members": 692,
+    "group": "source-MINI-WORKING-20261015T1330",
+    "new": true,
+    "restoreOrder": 39,
+    "library_file_id": "libfile_93eb98621c888191b9bd75dd08a7c263",
+    "file_id": "file_00000000942881f5866d58c01f77779c",
+    "version": 0
+  },
+  "newArchives": [
+    {
+      "filename": "Roadmark-recovery-source-MINI-WORKING-20261015T1330.tar.xz",
+      "bytes": 8519116,
+      "sha256": "81a41b43c590a7682c594a2b174a9ab9605df930029b777788fde08bb9ed662d",
+      "members": 692,
+      "group": "source-MINI-WORKING-20261015T1330",
+      "new": true,
+      "restoreOrder": 39,
+      "library_file_id": "libfile_93eb98621c888191b9bd75dd08a7c263",
+      "file_id": "file_00000000942881f5866d58c01f77779c",
+      "version": 0
+    },
+    {
+      "filename": "Roadmark-recovery-MINI-WORKING-20261015T1330-part01of03.tar.xz",
+      "bytes": 649180,
+      "sha256": "0e4e2cb39309878170b046c68e5331cbe9b18559d7416055248d62c33bc56070",
+      "members": 323,
+      "group": "MINI-WORKING-20261015T1330",
+      "new": true,
+      "restoreOrder": 130,
+      "library_file_id": "libfile_5d25767761f881918eaa17ece5fe6aa2",
+      "file_id": "file_00000000db2c81f7a2c50e43f1693f34",
+      "version": 0
+    },
+    {
+      "filename": "Roadmark-recovery-MINI-WORKING-20261015T1330-part02of03.tar.xz",
+      "bytes": 12896172,
+      "sha256": "9bd25e220e6f755c084b71bf263ae930fceefe89a260446e968d8c35999a4caa",
+      "members": 84,
+      "group": "MINI-WORKING-20261015T1330",
+      "new": true,
+      "restoreOrder": 131,
+      "library_file_id": "libfile_32bc2ad33a30819186e27d71b6ad245c",
+      "file_id": "file_000000003ef08211aefd3166651b7a78",
+      "version": 0
+    },
+    {
+      "filename": "Roadmark-recovery-MINI-WORKING-20261015T1330-part03of03.tar.xz",
+      "bytes": 17740512,
+      "sha256": "658020ff67daa92367b6626800d7be36af0f9c678f46ce23fadcaf89b011e2a5",
+      "members": 122,
+      "group": "MINI-WORKING-20261015T1330",
+      "new": true,
+      "restoreOrder": 132,
+      "library_file_id": "libfile_c537dd36b6e88191987fcfe4c33c99f7",
+      "file_id": "file_00000000cf88822f8677a68a9be87a62",
+      "version": 0
+    },
+    {
+      "filename": "Roadmark-recovery-MINI-WORKING-20261015T1330-support.tar.xz",
+      "bytes": 247240,
+      "sha256": "fc4cde65f6f3a48e4e4dcb92395be5d4c2720291740308052cd304c4208d5cc6",
+      "members": 174,
+      "group": "MINI-WORKING-20261015T1330",
+      "new": true,
+      "restoreOrder": 133,
+      "library_file_id": "libfile_1546a21315e881918af25093951115c6",
+      "file_id": "file_00000000872481fda326fb541bdbe6e7",
+      "version": 0
+    }
+  ],
+  "baseRecovery": {
+    "manifest": {
+      "library_file_id": "libfile_d5df877700788191953e2a523308897d",
+      "bytes": 3072311,
+      "sha256": "66775e32af7363d434c290ac3b0f6ff55639d61f4aae2ae7c7f1d4a509372ce6"
+    },
+    "manifestLibraryFileId": "libfile_d5df877700788191953e2a523308897d",
+    "indexLibraryFileId": "libfile_b3494b6477cc819190235c41666fb2c0",
+    "activeReceiptLibraryFileId": "libfile_1ea75a20c1ec8191983c170954315533",
+    "terminalReceiptPin": {
+      "bytes": 17317,
+      "sha256": "489d718c7c9e6c9d2f7d2e32d03252ce07559b262dd539ba6d4e9b571d1bb18c"
+    },
+    "terminalClosurePin": {
+      "bytes": 12585,
+      "sha256": "1b49feeda037c2e9fbd485e0c82979e4355177193cd11eef71901d4911d4ec9d"
+    },
+    "archives": 129,
+    "logicalFiles": 12076,
+    "unchangedArchivesReused": 128,
+    "priorSource": {
+      "filename": "Roadmark-recovery-source-DEEPAL-WORKING-20261015T1110.tar.xz",
+      "bytes": 8499812,
+      "sha256": "23640b6270f770e40fe91ac1d366c60832919aa1980314a8b6ac9f540077a19b",
+      "members": 689,
+      "group": "source-DEEPAL-WORKING-20261015T1110",
+      "new": true,
+      "restoreOrder": 39,
+      "library_file_id": "libfile_62a42759e614819197e3b65bb6d47e01",
+      "file_id": "file_00000000055c81f4940e924c28a694b3",
+      "version": 0
+    },
+    "priorRecoverySeparatelyPreserved": true
+  },
+  "workState": {
+    "label": "Registered MINI 27 working cut; 151 scoped tests (144 behavioural plus 7 safety), full-project cold TypeScript with 361 roots, structural validation and one actual normal report with strict saved-report comparison independently passed. Selected-preflight-v2 failure, held unexecuted v1 preparations, superseded v3 success and current v4/full-stage-v2/comparator-v2 proof remain retained. No helper or test changes in this cut. Full aggregate suite, production build, MINI browser/device visual verification, strict M1 closure and release remain open.",
+    "registered": true,
+    "integrationIndependentlyAccepted": true,
+    "catalogue": 427,
+    "tierOne": 350,
+    "onSale": 309,
+    "registeredPackets": 27,
+    "selectedVersions": 10,
+    "scopedTests": 151,
+    "relevantTests": 144,
+    "isolatedSafetyTests": 7,
+    "fullProjectTypeScriptRoots": 361,
+    "normalReportRuns": 1,
+    "executedFailure": "selected-preflight-v2",
+    "supersededSuccess": "selected-preflight-v3",
+    "currentSelected": "selected-preflight-v4",
+    "currentFullStage": "full-stage-v2",
+    "currentReportComparator": "report-comparison-v2",
+    "heldUnexecuted": [
+      "selected-preflight-v1",
+      "full-stage-v1",
+      "report-comparison-v1"
+    ],
+    "globalCriteriaOpen": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "MINICriteriaOpen": [
+      "C1",
+      "C2",
+      "C5"
+    ],
+    "MINIVisualQAPassed": false,
+    "productionBuildPassed": false,
+    "retainedExecutedFailureBoundaries": 1,
+    "previewScreenshots": 0,
+    "mobilePassClaimed": false,
+    "targetedCountsNotClaimedDisjoint": true,
+    "fullProjectTypeScriptPassed": true,
+    "structuralValidationPassed": true,
+    "strictSavedReportComparisonPassed": true,
+    "currentCounts": {
+      "catalogue": 427,
+      "tier1": 350,
+      "onSale": 309,
+      "packets": 27
+    },
+    "historicalDeepalPreview": {
+      "compactReceipts": 6,
+      "browserOutcome": "Cloud-browser loopback reachability refused",
+      "notMINIVisualQA": true
+    },
+    "miniVisualQAPassed": false,
+    "otherAttemptHistory": {
+      "selectedV1": "Prepared only; static immutability gaps fixed in v2 before execution.",
+      "selectedV3": "Technical pass on candidate v2, superseded by separately reviewed ten-fact grade correction and accepted candidate v3/v4 run; all artifacts retained.",
+      "selectedV4": "Accepted current selected run, including all 690 selected feature claims and live/written optional ownership.",
+      "fullStageV1": "Prepared only; static duplicate binding, representation and proof-boundary findings corrected in v2; no failed runtime is claimed.",
+      "fullStageV2": "Accepted one bounded full-stage run; exact Deepal26 baseline and 417 unchanged peers.",
+      "reportComparatorV1": "Prepared only; independent complete-array-order proof added in v2; no failed runtime is claimed.",
+      "reportComparatorV2": "One accepted actual production normal report and one accepted saved-report comparator; all core explanation reasons and unrelated output order proved.",
+      "freshValidation": "151 scoped behavioural/safety tests, lint, market-view, structural validation and original-config cold full-project TypeScript passed. No fresh full-suite, production-build, phone or MINI visual QA claim."
+    },
+    "fullProjectSuitePassed": false,
+    "buildPassed": false,
+    "mobilePassed": false,
+    "releaseReady": false,
+    "published": false,
+    "milestone": "M1 open",
+    "authorFreezeAt": "2026-10-15T13:45:28.041739+00:00",
+    "sourceCaptureCutoff": "2026-10-15T13:54:21.903383+00:00",
+    "captureIsFrozenHistoricalCut": true,
+    "failedAttempts": [
+      {
+        "name": "Selected preflight v2: inherited Countryman inventory alias did not resolve",
+        "terminal": {
+          "path": "/tmp/mini-packet/selected-preflight-v2/run/terminal.json",
+          "bytes": 423,
+          "sha256": "0d01e743a12ba227e2a1a9e794f132add940a7110b0b9d1352729331c6067102"
+        },
+        "diagnosis": {
+          "path": "/tmp/mini-review/preflight-v2-failure-diagnosis.json",
+          "bytes": 5823,
+          "sha256": "244d67fd4d920eea2f56c70563208e618e491c1e2eaf054204f4445e12f4911f"
+        },
+        "disposition": "Preserved; exact sourced publishedModelAliases correction reviewed before separately granted v3 run. Three-model expectation retained."
+      }
+    ],
+    "openGates": [
+      "M1 strict closure",
+      "Full-project aggregate suite",
+      "Production build",
+      "MINI browser UI and real-device mobile verification",
+      "Release/M2"
+    ]
+  },
+  "counts": {
+    "archiveCount": 133,
+    "logicalFiles": 12781,
+    "logicalBytes": 3347620315,
+    "freshFiles": 1395,
+    "freshBytes": 347973947,
+    "fullSourceFiles": 691,
+    "baseArchivesReused": 128
+  },
+  "documents": [
+    {
+      "filename": "Roadmark-RECOVERY-INDEX-MINI-WORKING-20261015.md",
+      "library_file_id": "libfile_c79d4dc26df08191ba1638e2076138c5",
+      "file_id": "file_000000007f2881f690af0c6c48666b41",
+      "version": 0,
+      "bytes": 36128,
+      "sha256": "033102cd3622638d2db5df3da50f20738e4ebbf9dab893126bad0063d5b54628"
+    },
+    {
+      "filename": "Roadmark-RECOVERY-MANIFEST-MINI-WORKING-20261015.json",
+      "library_file_id": "libfile_904b487a0e1c8191845b6229260fbd6c",
+      "file_id": "file_00000000a4f8823093e782700d45231f",
+      "version": 0,
+      "bytes": 3110386,
+      "sha256": "1564e57d37227ff2635d65e85c91fe7a851ccf8f92f08cce290e511bd9335f7c"
+    },
+    {
+      "filename": "Roadmark-RECOVERY-VERIFICATION-MINI-WORKING-20261015.json",
+      "library_file_id": "libfile_e308c818be888191a6aa34729a880268",
+      "file_id": "file_00000000b1a4820e8a10bcb8e5f81b5e",
+      "version": 0,
+      "bytes": 162989,
+      "sha256": "ba18e47267e4dea64f66f37e6153db66adf52c268ac418b756ad3f19b14c81ef"
+    },
+    {
+      "filename": "Roadmark-MINI-M1-UPDATE-20261015.md",
+      "library_file_id": "libfile_8c60055e121081918163b145dd8fd2e8",
+      "file_id": "file_00000000a0f481f5abd439c411d49de2",
+      "version": 0,
+      "bytes": 5601,
+      "sha256": "2b9edee6cfc1ee6a46245e9a73e50488c2b2512746fb8890ffe46615bf7010c2"
+    }
+  ],
+  "manifest": {
+    "filename": "Roadmark-RECOVERY-MANIFEST-MINI-WORKING-20261015.json",
+    "library_file_id": "libfile_904b487a0e1c8191845b6229260fbd6c",
+    "file_id": "file_00000000a4f8823093e782700d45231f",
+    "version": 0,
+    "bytes": 3110386,
+    "sha256": "1564e57d37227ff2635d65e85c91fe7a851ccf8f92f08cce290e511bd9335f7c"
+  },
+  "verificationDocument": {
+    "filename": "Roadmark-RECOVERY-VERIFICATION-MINI-WORKING-20261015.json",
+    "library_file_id": "libfile_e308c818be888191a6aa34729a880268",
+    "file_id": "file_00000000b1a4820e8a10bcb8e5f81b5e",
+    "version": 0,
+    "bytes": 162989,
+    "sha256": "ba18e47267e4dea64f66f37e6153db66adf52c268ac418b756ad3f19b14c81ef"
+  },
+  "recoverablePostSealReceiptPointers": [
+    "/postSealReceipts/0",
+    "/postSealReceipts/1",
+    "/postSealReceipts/2"
+  ],
+  "verificationScope": "Every fresh source, proof and support member verified through XZ EOF. Exact inherited terminal identities and final overlay reused; no full base restore or privacy rescan.",
+  "independentVerification": {
+    "result": "PASS",
+    "receipt": {
+      "path": "INDEPENDENT-MINI-RECOVERY-VERIFICATION-v1.json",
+      "bytes": 58233,
+      "sha256": "e36fa2f5e7986208b1774255b545b8b5c646df643d9f3c20cc92459166472f89"
+    },
+    "recoverableReceipt": {
+      "document": "Roadmark-RECOVERY-VERIFICATION-MINI-WORKING-20261015.json",
+      "jsonPointer": "/postSealReceipts/0"
+    },
+    "inputManifest": {
+      "path": "INDEPENDENT-MINI-REPLAY-INPUTS-v1.json",
+      "bytes": 45610,
+      "sha256": "c86f4386603912cd4f3adeefe1e19c278d862a38ee38cac6dfd6a511b6f8a8cb"
+    },
+    "recoverableInputManifest": {
+      "document": "Roadmark-RECOVERY-VERIFICATION-MINI-WORKING-20261015.json",
+      "jsonPointer": "/postSealReceipts/2"
+    },
+    "memberReplayManifest": {
+      "path": "INDEPENDENT-NEW-MEMBER-REPLAY-MANIFEST-v1.json",
+      "bytes": 258112,
+      "sha256": "a78b75f5d86ec2e7e8a5778db4f8584ee00b856206c2c53e15c01fdb4e68000b"
+    },
+    "applicationContract": {
+      "path": "APPLICATION-ASSERTION-CONTRACT.json",
+      "bytes": 101246,
+      "sha256": "e710ce96458d5fb75b7e093d1310a264a21123685e42c514b7a1525e02378a62"
+    },
+    "applicationAssertionCount": 187,
+    "applicationAssertionScope": {
+      "totalAssertions": 187,
+      "freshArchiveAssertions": 183,
+      "exactInheritedAssertions": 4,
+      "mandatoryRetainedPins": 149,
+      "inheritedAssertionContract": {
+        "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/deepal-working-20261015T1110/APPLICATION-ASSERTION-CONTRACT.json",
+        "bytes": 49243,
+        "sha256": "9b32dc6a763f27c08cd450bdf39ab04dd9deff5d7bea4819f9d1a98cd9753134"
+      },
+      "inheritedAssertionReplay": {
+        "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/deepal-working-20261015T1110/INDEPENDENT-DEEPAL-RECOVERY-VERIFICATION-v1.json",
+        "bytes": 65044,
+        "sha256": "c8738baae2cb2b29ca4cf300d5e39934f64db17ebdb7ac4ca01cf5c5cb6191de"
+      },
+      "inheritedPayloadReadsByIndependentVerifier": 0,
+      "qualification": "Four historical Deepal visual-blocker assertions reuse the exact prior accepted contract, PASS replay and unchanged retained member hash. They are not fresh MINI visual assertions."
+    },
+    "mandatoryRetainedPins": 149,
+    "freshArchiveCount": 5,
+    "freshMembers": 1395,
+    "freshBytes": 347973947,
+    "archiveStreamsVerifiedThroughXZEOF": true,
+    "retention": "Exact data-only final receipt is reconstructable from the verification document using its declared serialization"
+  },
+  "preSaveDocumentVerification": {
+    "result": "PASS",
+    "receipt": {
+      "path": "INDEPENDENT-DELIVERY-DOCUMENT-CHECK.json",
+      "bytes": 10550,
+      "sha256": "34b31e201bda4b04a6514885e0acfd688d3e1eb6952d005a24d61e4075b8d4ab"
+    }
+  },
+  "documentPrivacyGate": {
+    "result": "PASS",
+    "receipt": {
+      "path": "DELIVERABLE-PRIVACY-GATE.json",
+      "bytes": 3126,
+      "sha256": "9d1512a11403a3db831045b8cb51236a34f1f41b99cc3c07134624082ed18b1c"
+    }
+  },
+  "archivePrivacyGate": {
+    "result": "PASS",
+    "receipt": {
+      "path": "ALL-ARCHIVE-PRIVACY-GATE.json",
+      "bytes": 11580,
+      "sha256": "04f6b12019526ce1772d3f725af92b4fbee5ec8a1acfe966fccae2cdb0338fdf"
+    },
+    "recoverableReceipt": {
+      "document": "Roadmark-RECOVERY-VERIFICATION-MINI-WORKING-20261015.json",
+      "jsonPointer": "/postSealReceipts/1"
+    },
+    "freshMembers": 1395,
+    "freshBytes": 347973947,
+    "unclassifiedFindings": 0,
+    "errors": 0,
+    "scope": "Complete unchanged header/runtime patterns and current known-value searches; exact prior-source pattern cache only",
+    "noUniversalSecretFreeClaim": true,
+    "rawArchiveOutcomes": [
+      {
+        "archive": "Roadmark-recovery-source-MINI-WORKING-20261015T1330.tar.xz",
+        "rawScannerStatus": "clean",
+        "classifiedPublicLexicalCollisions": 66952,
+        "classifiedExactCodeHeaderCandidates": 0,
+        "classifiedExactTemplateRuntimeCandidates": 0
+      },
+      {
+        "archive": "Roadmark-recovery-MINI-WORKING-20261015T1330-part01of03.tar.xz",
+        "rawScannerStatus": "clean",
+        "classifiedPublicLexicalCollisions": 11875,
+        "classifiedExactCodeHeaderCandidates": 0,
+        "classifiedExactTemplateRuntimeCandidates": 0
+      },
+      {
+        "archive": "Roadmark-recovery-MINI-WORKING-20261015T1330-part02of03.tar.xz",
+        "rawScannerStatus": "clean",
+        "classifiedPublicLexicalCollisions": 2224,
+        "classifiedExactCodeHeaderCandidates": 0,
+        "classifiedExactTemplateRuntimeCandidates": 0
+      },
+      {
+        "archive": "Roadmark-recovery-MINI-WORKING-20261015T1330-part03of03.tar.xz",
+        "rawScannerStatus": "clean",
+        "classifiedPublicLexicalCollisions": 466,
+        "classifiedExactCodeHeaderCandidates": 0,
+        "classifiedExactTemplateRuntimeCandidates": 0
+      },
+      {
+        "archive": "Roadmark-recovery-MINI-WORKING-20261015T1330-support.tar.xz",
+        "rawScannerStatus": "clean",
+        "classifiedPublicLexicalCollisions": 541,
+        "classifiedExactCodeHeaderCandidates": 2,
+        "classifiedExactTemplateRuntimeCandidates": 0
+      }
+    ],
+    "rawScannerResultsModified": false,
+    "supportOnlySyntaxClassification": {
+      "contract": {
+        "path": "MINI-SUPPORT-PRIVACY-CONTRACT-v1.json",
+        "bytes": 1878,
+        "sha256": "2b18078429aa03a7034a468729ab4f12a6addf2f41382d4df20baddc82b3f280"
+      },
+      "supportEngine": {
+        "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mini-working-20261015T1330/privacy_v6_support.py",
+        "bytes": 15470,
+        "sha256": "1ee709cda11e810931c0839357bfad47729e718e12d3bbcd16a0841944e4b4be"
+      },
+      "supportSyntaxHandler": {
+        "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mini-working-20261015T1330/mini_support_classifications_v2.py",
+        "bytes": 2032,
+        "sha256": "8637803933bfc7c35935538245c8088268d43761541c84aec895b5f8449304d4"
+      },
+      "supportSyntaxApproval": {
+        "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mini-working-20261015T1330/APPROVED-MINI-SUPPORT-SYNTAX.json",
+        "bytes": 487,
+        "sha256": "6a26cc5f80ef5374006708e338d516ee3f3901114fceaf4ff608ab58cf7d1642"
+      },
+      "classification": {
+        "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mini-working-20261015T1330/INDEPENDENT-MINI-SUPPORT-SYNTAX-CLASSIFICATION-v1.json",
+        "bytes": 5561,
+        "sha256": "ea6372b3f27bd1f5959c9332daec49a52e3f56d76f89979b82970cb9432a3fa4"
+      },
+      "baseEngine": {
+        "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mini-working-20261015T1330/privacy_v4.py",
+        "bytes": 15310,
+        "sha256": "687d7652ca3c7770b57c56d840c3b8ffee4c551a6aed0b3c14e653b2000b9336"
+      },
+      "independentReview": {
+        "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mini-working-20261015T1330/INDEPENDENT-MINI-SUPPORT-ADAPTER-REVIEW-v1.json",
+        "bytes": 3989,
+        "sha256": "883bd5606225e5a2edbf28960e315d5186697940dd38e08e4c8f34b6cf6b789f"
+      },
+      "scanReport": {
+        "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mini-working-20261015T1330/scan-fresh-05.json",
+        "bytes": 67853,
+        "sha256": "aa89c05a478fc0e0e93035749841045f31eda5c2fd67394b280190553148f3fa"
+      },
+      "exactApprovedSyntaxCandidates": 2,
+      "unresolvedCandidates": 0,
+      "scope": "Only two AST-bound noncredential syntax findings in the exact MINI capture_v2.py support member",
+      "rawFindingsAndCountsRetained": true,
+      "payloadRedactions": 0,
+      "documentScannerUnchanged": true,
+      "fileExtensionExemption": false,
+      "unexpectedMissingOrDuplicateFindingsBlock": true
+    },
+    "classificationCounts": {
+      "classifiedPublicLexicalCollisions": 82058,
+      "classifiedExactCodeHeaderCandidates": 2,
+      "classifiedExactTemplateRuntimeCandidates": 0
+    }
+  },
+  "supportArchive": {
+    "filename": "Roadmark-recovery-MINI-WORKING-20261015T1330-support.tar.xz",
+    "bytes": 247240,
+    "sha256": "fc4cde65f6f3a48e4e4dcb92395be5d4c2720291740308052cd304c4208d5cc6",
+    "members": 174,
+    "group": "MINI-WORKING-20261015T1330",
+    "new": true,
+    "restoreOrder": 133,
+    "library_file_id": "libfile_1546a21315e881918af25093951115c6",
+    "file_id": "file_00000000872481fda326fb541bdbe6e7",
+    "version": 0
+  },
+  "inheritedDependencyReconstruction": {
+    "receipt": {
+      "path": "INHERITED-DEPENDENCY-RECONSTRUCTION-v1.json",
+      "bytes": 120847,
+      "sha256": "c9dc5c96bce050942bb5b0dd8a458aaaf921435f92648d0b6d9555be84eb490a"
+    },
+    "count": 164,
+    "relocatedMemberPointers": 0,
+    "newRecords": 45
+  },
+  "seedReadExecutionsAsOfBuild": {
+    "historical": {
+      "asOf": "2026-10-15T14:24:07.342241+00:00",
+      "completedInvocations": 6,
+      "receiptReferences": [
+        {
+          "path": "seed-read-invocations/11-1792072889432727502.json",
+          "bytes": 420,
+          "sha256": "d45b94d1dcca4170b14fbb8b6fb7f2101499168fe4bccc195032a5da05b483cf",
+          "completedAt": "2026-10-15T14:01:29.432544+00:00",
+          "processId": 11
+        },
+        {
+          "path": "seed-read-invocations/13-1792072921638425212.json",
+          "bytes": 420,
+          "sha256": "29f8692fd5679c67ad46199923dd15c150791aac27fb998fdecfe0513aa3ad08",
+          "completedAt": "2026-10-15T14:02:01.637578+00:00",
+          "processId": 13
+        },
+        {
+          "path": "seed-read-invocations/15-1792072946709900382.json",
+          "bytes": 420,
+          "sha256": "2eb4dfc0bdce93c69093e14478201661c015fc362be57e2c2215d58fbd8e91ae",
+          "completedAt": "2026-10-15T14:02:26.709655+00:00",
+          "processId": 15
+        },
+        {
+          "path": "seed-read-invocations/6-1792074029109166203.json",
+          "bytes": 419,
+          "sha256": "38082f48c0f882fc3bff135fb80535158a68b75704579393cd472aa87858498f",
+          "completedAt": "2026-10-15T14:20:29.108993+00:00",
+          "processId": 6
+        },
+        {
+          "path": "seed-read-invocations/6-1792074247342396720.json",
+          "bytes": 419,
+          "sha256": "d51c7ec8055ab4a2080158f8d0ffa829fe888959f275374ff0e650f05ddbaa44",
+          "completedAt": "2026-10-15T14:24:07.342241+00:00",
+          "processId": 6
+        },
+        {
+          "path": "seed-read-invocations/9-1792072754718012845.json",
+          "bytes": 419,
+          "sha256": "23689e5429b21887e741eebd6c28bbc049ba7bf7c3bfe17c0183f4408ee70921",
+          "completedAt": "2026-10-15T13:59:14.717785+00:00",
+          "processId": 9
+        }
+      ],
+      "noExtractedValuesOrValueDigests": true,
+      "uniquePinnedMembers": 200,
+      "uniqueHistoricalArchives": 21,
+      "targetedPinnedMemberReads": 1200
+    },
+    "audi": {
+      "asOf": "2026-10-15T14:24:07.400229+00:00",
+      "completedInvocations": 6,
+      "receiptReferences": [
+        {
+          "path": "audi-seed-read-invocations/11-1792072889579095672.json",
+          "bytes": 2499,
+          "sha256": "ca8419ec5e49116564cc017bde3794d1464f3382307d459a980814c22b933ea0",
+          "completedAt": "2026-10-15T14:01:29.579069+00:00",
+          "processId": 11
+        },
+        {
+          "path": "audi-seed-read-invocations/13-1792072921698601281.json",
+          "bytes": 2499,
+          "sha256": "7af8ab11bd724ef4a93aa24386912d20f033e3f6b10356397112d8b2f83c79af",
+          "completedAt": "2026-10-15T14:02:01.698577+00:00",
+          "processId": 13
+        },
+        {
+          "path": "audi-seed-read-invocations/15-1792072946786140382.json",
+          "bytes": 2499,
+          "sha256": "da3eba4dac212cdcdfd4f4586ed2f6c2824128234d2067dcbf1c69951fe8554f",
+          "completedAt": "2026-10-15T14:02:26.786114+00:00",
+          "processId": 15
+        },
+        {
+          "path": "audi-seed-read-invocations/6-1792074029202298330.json",
+          "bytes": 2498,
+          "sha256": "62a903d1cb23d0756864a37c751093b4085742a0dc2d7a8e37576020f4d44eee",
+          "completedAt": "2026-10-15T14:20:29.202273+00:00",
+          "processId": 6
+        },
+        {
+          "path": "audi-seed-read-invocations/6-1792074247400252039.json",
+          "bytes": 2498,
+          "sha256": "e82af0c4ba17c094cb3ac901ff97bd294d106191d75cbc42b7e6d51d1c7d1e4f",
+          "completedAt": "2026-10-15T14:24:07.400229+00:00",
+          "processId": 6
+        },
+        {
+          "path": "audi-seed-read-invocations/9-1792072754820640976.json",
+          "bytes": 2498,
+          "sha256": "3312280d9c41a1f01155208d2aacc00c927fc857b7945aa4f7243769fab4b14e",
+          "completedAt": "2026-10-15T13:59:14.820614+00:00",
+          "processId": 9
+        }
+      ],
+      "noExtractedValuesOrValueDigests": true,
+      "distinctValues": 6,
+      "variantForms": 37,
+      "uniqueOriginalFiles": 4,
+      "payloadReadOperations": 36
+    },
+    "inheritedLocal": {
+      "specification": {
+        "path": "INHERITED-LOCAL-SEED-READ-SCOPE.json",
+        "bytes": 19206,
+        "sha256": "ec7ca6740a680ec669b8b0b79cdc49d278863ec3c33216c25e6977df8162ea17"
+      },
+      "completedInvocations": 6,
+      "uniqueOriginalFiles": 48,
+      "payloadValueReads": 288,
+      "streamingIntegrityReads": 288,
+      "accountingMethod": "Derived from reviewed selector control flow and paired seed completion ledgers; not separate per-file instrumentation",
+      "noValuesOrValueDigestsPersisted": true
+    },
+    "deepal": {
+      "asOf": "2026-10-15T14:24:07.405043+00:00",
+      "completedInvocations": 6,
+      "receiptReferences": [
+        {
+          "path": "deepal-seed-read-invocations/11-1792072889584927228.json",
+          "bytes": 2437,
+          "sha256": "f1869074885e731b0a56240a9a6dbb478c913cf061d9d93883d99d536c3d4e30",
+          "completedAt": "2026-10-15T14:01:29.584907+00:00",
+          "processId": 11
+        },
+        {
+          "path": "deepal-seed-read-invocations/13-1792072921702895927.json",
+          "bytes": 2437,
+          "sha256": "af474142c58f2a1fcb83c687bdf6adadf09662e3054a7f54a136f877f16b433d",
+          "completedAt": "2026-10-15T14:02:01.702879+00:00",
+          "processId": 13
+        },
+        {
+          "path": "deepal-seed-read-invocations/15-1792072946792479345.json",
+          "bytes": 2437,
+          "sha256": "3457bf606bf3596bf5ddb5b072f5773534496eec9abde362a0055ab2762feba0",
+          "completedAt": "2026-10-15T14:02:26.792460+00:00",
+          "processId": 15
+        },
+        {
+          "path": "deepal-seed-read-invocations/6-1792074029210685353.json",
+          "bytes": 2436,
+          "sha256": "fc10f6317c58d19ff17ef70fcb3d38a7ded42d5eef5426428e60e8e3449edf48",
+          "completedAt": "2026-10-15T14:20:29.210663+00:00",
+          "processId": 6
+        },
+        {
+          "path": "deepal-seed-read-invocations/6-1792074247405060659.json",
+          "bytes": 2436,
+          "sha256": "45068a980e49ae9c70c8e0bb3f1eb2ed3cff9f29f73d44c9b0d8fe86771127cb",
+          "completedAt": "2026-10-15T14:24:07.405043+00:00",
+          "processId": 6
+        },
+        {
+          "path": "deepal-seed-read-invocations/9-1792072754833605392.json",
+          "bytes": 2436,
+          "sha256": "d2143607be4af75e68e39ece50ea841fef19c38f74adf1c1e99aca099e0fcedc",
+          "completedAt": "2026-10-15T13:59:14.833580+00:00",
+          "processId": 9
+        }
+      ],
+      "classification": {
+        "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/deepal-working-20261015T1110/INDEPENDENT-DEEPAL-RUNTIME-CLASSIFICATION-v3.json",
+        "bytes": 52667,
+        "sha256": "b448315960f3e54d72ff0133ca296094bc7ab9503bbc8233ea455a8cd6f2484d"
+      },
+      "adapterContract": {
+        "path": "MINI-PRIVACY-ADAPTER-CONTRACT.json",
+        "bytes": 3200,
+        "sha256": "a72617c4d3ff02081707e0f8a03c44f2034ba3b8e18f5111cdcf14973af6e121"
+      },
+      "distinctValues": 6,
+      "variantForms": 41,
+      "uniqueOriginalFiles": 5,
+      "payloadReadOperations": 30,
+      "noValuesOrValueDigestsPersisted": true,
+      "rawDeepalApiManagerOriginalRead": false,
+      "earlierV1ScansCountedSeparately": true
+    }
+  },
+  "savingAnnouncement": {
+    "path": "SAVING-ANNOUNCEMENT.json",
+    "bytes": 228,
+    "sha256": "5afffc36fa58c22fe1c95947048e659b4be7e7b4e4c1b5b3c30a73dd38f35aa7"
+  },
+  "rawDeepalOriginalReadRecoveryRefetchForbidden": true,
+  "allInheritedSanitationExclusionsPreservedInManifest": true,
+  "noSourceOrStatusMutationByBackup": true,
+  "noDeletionOrReplacement": true,
+  "noExecutableSourceTextEmbedded": true,
+  "remotePayloadRedownloadPerformed": false
+}

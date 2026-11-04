@@ -1,0 +1,35 @@
+{
+  "decision": "GO_EXACT_ARTIFACT_VERIFIER_ROOT_EXECUTION_ONLY",
+  "blockingFindings": [],
+  "entrypoint": {
+    "path": "roadmark-research/artifact100-candidate/verify-portable100-delta.py",
+    "sha256": "aa431a1114e942b9100d680cc7df35cfacb9bdc8487be023eef0ccbec9dafd3e",
+    "bytes": 19342
+  },
+  "manifest": {
+    "path": "roadmark-research/artifact100-candidate/manifest.json",
+    "sha256": "c63408ceec8c4c8047735e9bf2b3ccb0723b408fa7f623dc52d433ebf6856357",
+    "bytes": 2228
+  },
+  "seal": {
+    "path": "roadmark-research/artifact100-candidate/SHA256SUMS",
+    "sha256": "863f615576a6cb64268d647502f773a24a365da454e6e891d1947e2a86c2bd14",
+    "bytes": 605
+  },
+  "manifestRowsVerified": 6,
+  "checksumRowsVerified": 7,
+  "inputRowsVerified": 11,
+  "fullDerivationDiffExact": true,
+  "helpersFromActualFinal99Exact": true,
+  "limitations": [
+    "Static code review only; no actual100 checker execution or artifact pass established here.",
+    "Canonical string-table encoding and unused dictionary entries are outside the decoded-value identity claim.",
+    "Requires independently identified actual100 hash and genuine QA/output/source-map binding.",
+    "No full production graph, browser, visual, real-phone, archive, upload, delivery or release claim."
+  ],
+  "supportingDataChecks": {
+    "path": "roadmark-research/review-checkpoint100-save/ARTIFACT-BASELINE-STATIC-CHECKS.json",
+    "sha256": "e44af590792a8b404a87e58bc3c8a11953cef05276ed394fc49b0bc00b922462",
+    "bytes": 3393
+  }
+}

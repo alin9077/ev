@@ -1,0 +1,29 @@
+{
+  "appliedAtUTC": "2026-10-12T06:54:34.887951+00:00",
+  "typeRepairCandidate": {
+    "path": "roadmark-research/mazda-trim99-candidate/revision3/manifest.json",
+    "sha256": "ef550abc42ab248b26170b9b54c1121cf5e0d5aecead6d2f311d164072853a2f"
+  },
+  "previousCumulativeCandidate": {
+    "path": "roadmark-research/applied99/revision2/candidate-manifest.json",
+    "sha256": "c3ec1f62102a55a4721641fca61c56547a5193b011e659938ea7fbff87006c8c"
+  },
+  "previousExpectedMapSHA256": "8914e219a8fde52dcce4bab12ebae5b3541893e5cabdd1edc8ab3a143091cb76",
+  "expectedInputsSHA256": "29bcb7fca21d126b996fb506dd755dfac1d743710e07d265346b060d26fe7d7e",
+  "cumulativeManifestSHA256": "d5e4a096ad701c4c575fcef2841a068d761477b38224ac0aa6b9299d89192afa",
+  "changedFiles": [
+    {
+      "path": "tests/helpers/checkpoint99-history.ts",
+      "beforeSHA256": "80ef31bac488635dbf69fdac7b7d4dbd2812ae53a6a08f3e8b68de7d2efe71d7",
+      "beforeBytes": 6551,
+      "afterSHA256": "c78c7048e1d9654ddb71b6680c9441bda9c30e4e569d65e6fc9bfd8bd13d8ceb",
+      "afterBytes": 7150,
+      "checkpoint98BeforeSHA256": null
+    }
+  ],
+  "all1675InputsMatched": true,
+  "dataOrRuntimeChanges": false,
+  "fullQA2ActualOuterExitCode": 1,
+  "fullQA2TerminalChunk": "6e6761",
+  "nextChecks": "Whole-project typecheck and lint before another full QA"
+}

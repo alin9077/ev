@@ -1,0 +1,767 @@
+{
+  "date": "2026-10-06",
+  "sources": [
+    {
+      "id": "r3_tesla_fsd",
+      "url": "https://www.tesla.com/en_au/support/fsd",
+      "title": "Tesla AU \u2014 FSD and upcoming Summon",
+      "publisher": "Tesla",
+      "source_type": "manufacturer_primary",
+      "published_date": null,
+      "accessed_date": "2026-10-06",
+      "market": "AU",
+      "supports": "FSD requires active driver supervision. Dumb Summon and Actually Smart Summon remain listed as upcoming; eligibility varies by build and software.",
+      "fresh_check": true
+    },
+    {
+      "id": "r3_tesla_subscription",
+      "url": "https://www.tesla.com/en_au/support/full-self-driving-subscriptions",
+      "title": "Tesla AU \u2014 FSD subscription eligibility",
+      "publisher": "Tesla",
+      "source_type": "manufacturer_primary",
+      "published_date": null,
+      "accessed_date": "2026-10-06",
+      "market": "AU",
+      "supports": "A$149/month from Basic Autopilot; A$75/month from Enhanced Autopilot. Package subscription eligibility includes HW3/HW4, but the FSD feature rollout starts with HW4; HW3 timing is unconfirmed.",
+      "fresh_check": true
+    },
+    {
+      "id": "r3_tesla_v2l",
+      "url": "https://shop.tesla.com/en_au/product/tesla-outlet-adapter",
+      "title": "Tesla AU \u2014 Outlet Adapter compatibility",
+      "publisher": "Tesla",
+      "source_type": "manufacturer_primary",
+      "published_date": null,
+      "accessed_date": "2026-10-06",
+      "market": "AU",
+      "supports": "A$145 adapter; shop explicitly limits current compatibility to Model Y L. Rated 3.45 kW at 15 A or 2.3 kW at 10 A. Listed out of stock at this check.",
+      "fresh_check": true
+    },
+    {
+      "id": "r3_tesla_power",
+      "url": "https://www.tesla.com/ownersmanual/modely/en_au/GUID-B76759EE-C3EA-436E-886C-C89476898254.html",
+      "title": "Model Y AU manual \u2014 external power",
+      "publisher": "Tesla",
+      "source_type": "manufacturer_primary",
+      "published_date": null,
+      "accessed_date": "2026-10-06",
+      "market": "AU",
+      "supports": "The current manual makes power export dependent on region and vehicle configuration. It describes standalone and Gen 3 Mobile Connector adapters; it no longer establishes an L-only manual restriction. The AU shop restriction remains.",
+      "fresh_check": true
+    },
+    {
+      "id": "r3_tesla_grok",
+      "url": "https://www.tesla.com/en_au/support/grok",
+      "title": "Tesla AU \u2014 Grok requirements",
+      "publisher": "Tesla",
+      "source_type": "manufacturer_primary",
+      "published_date": null,
+      "accessed_date": "2026-10-06",
+      "market": "AU",
+      "supports": "Beta availability requires an AMD processor, software 2026.2.6 or later and Premium Connectivity or Wi-Fi. The AU support page now describes vehicle commands as well as navigation; exact installed command support can vary.",
+      "fresh_check": true
+    },
+    {
+      "id": "r3_tesla_garage",
+      "url": "https://www.tesla.com/ownersmanual/modely/en_au/GUID-48B8F8C3-E7E0-4F7F-ABB6-E04FE7527628.html",
+      "title": "Model Y AU manual \u2014 Smart Garage",
+      "publisher": "Tesla",
+      "source_type": "manufacturer_primary",
+      "published_date": null,
+      "accessed_date": "2026-10-06",
+      "market": "AU",
+      "supports": "The Australian manual documents optional HomeLink. No myQ section was present in the retrieved AU manual; this does not establish Australian myQ support.",
+      "fresh_check": true
+    },
+    {
+      "id": "r3_myq",
+      "url": "https://www.myq.com/auto/tesla",
+      "title": "myQ \u2014 Tesla connected garage",
+      "publisher": "Chamberlain / myQ",
+      "source_type": "manufacturer_primary",
+      "published_date": null,
+      "accessed_date": "2026-10-06",
+      "market": "US/CA \u2014 scope check only",
+      "supports": "The partner page is labelled for the US and Canada. It does not establish Australian in-car myQ availability. Australian phone-app garage operation is a different product capability.",
+      "fresh_check": true
+    },
+    {
+      "id": "r3_sealion_spec",
+      "url": "https://bydautomotive.com.au/brochures/BYD-SEALION-7-2026.pdf",
+      "title": "Sealion 7 AU \u2014 2026 specification, pp. 1\u20132",
+      "publisher": "BYD Australia",
+      "source_type": "manufacturer_primary",
+      "published_date": null,
+      "accessed_date": "2026-10-06",
+      "market": "AU",
+      "supports": "Re-fetched official specification. It lists compatible iOS/Android digital keys with device checks; Premium/Performance rear motors are each 230 kW/380 Nm. Performance combined output is 390 kW. A digital key listing does not prove passive phone entry or buttonless start.",
+      "fresh_check": true
+    },
+    {
+      "id": "r3_evo_spec",
+      "url": "https://bydautomotive.com.au/brochures/BYD-ATTO-3-EVO.pdf?v=3",
+      "title": "ATTO 3 EVO AU \u2014 specification, pp. 2\u20133",
+      "publisher": "BYD Australia",
+      "source_type": "manufacturer_primary",
+      "published_date": null,
+      "accessed_date": "2026-10-06",
+      "market": "AU",
+      "supports": "Fresh PDF retrieval resolves the previous document-access hold for the numeric fields checked. Dynamic/Premium: 420/510 km WLTP, 60.48/74.88 kWh, 7/11 kW AC, 110/220 kW DC, 41/30 min 0\u201380%, 434/490 L boot, 750/1500 kg braked towing. Battery usable/gross and cargo test protocol remain unspecified; this is not ANCAP evidence.",
+      "fresh_check": true
+    }
+  ],
+  "features": [
+    {
+      "variant_id": "tesla_model_y__premium_long_range_awd__1",
+      "criterion": "voice_assistant",
+      "status": "conditional",
+      "value": "Voice commands and Grok (Beta)",
+      "conditions": "Grok: AMD infotainment, software 2026.2.6+ and Premium Connectivity or Wi-Fi. Current AU support describes vehicle controls as well as navigation; check the installed build. Older manual descriptions may differ.",
+      "source_ids": [
+        "r3_tesla_grok"
+      ],
+      "evidence_scope": "AU_primary_source_recheck; hardware_and_build_conditions_retained",
+      "last_evidence_date": "2026-10-06",
+      "reviewed_date": "2026-10-06",
+      "verification_state": "primary_source_rechecked"
+    },
+    {
+      "variant_id": "tesla_model_y__premium_rwd__2",
+      "criterion": "voice_assistant",
+      "status": "conditional",
+      "value": "Voice commands and Grok (Beta)",
+      "conditions": "Grok: AMD infotainment, software 2026.2.6+ and Premium Connectivity or Wi-Fi. Current AU support describes vehicle controls as well as navigation; check the installed build. Older manual descriptions may differ.",
+      "source_ids": [
+        "r3_tesla_grok"
+      ],
+      "evidence_scope": "AU_primary_source_recheck; hardware_and_build_conditions_retained",
+      "last_evidence_date": "2026-10-06",
+      "reviewed_date": "2026-10-06",
+      "verification_state": "primary_source_rechecked"
+    },
+    {
+      "variant_id": "tesla_model_y__l_premium_awd__4",
+      "criterion": "voice_assistant",
+      "status": "conditional",
+      "value": "Voice commands and Grok (Beta)",
+      "conditions": "Grok: AMD infotainment, software 2026.2.6+ and Premium Connectivity or Wi-Fi. Current AU support describes vehicle controls as well as navigation; check the installed build. Older manual descriptions may differ.",
+      "source_ids": [
+        "r3_tesla_grok"
+      ],
+      "evidence_scope": "AU_primary_source_recheck; hardware_and_build_conditions_retained",
+      "last_evidence_date": "2026-10-06",
+      "reviewed_date": "2026-10-06",
+      "verification_state": "primary_source_rechecked"
+    },
+    {
+      "variant_id": "tesla_model_y__performance_awd__3",
+      "criterion": "voice_assistant",
+      "status": "conditional",
+      "value": "Voice commands and Grok (Beta)",
+      "conditions": "Grok: AMD infotainment, software 2026.2.6+ and Premium Connectivity or Wi-Fi. Current AU support describes vehicle controls as well as navigation; check the installed build. Older manual descriptions may differ.",
+      "source_ids": [
+        "r3_tesla_grok"
+      ],
+      "evidence_scope": "AU_primary_source_recheck; hardware_and_build_conditions_retained",
+      "last_evidence_date": "2026-10-06",
+      "reviewed_date": "2026-10-06",
+      "verification_state": "primary_source_rechecked"
+    },
+    {
+      "variant_id": "tesla_model_y__premium_long_range_awd__1",
+      "criterion": "remote_summon",
+      "status": "not_verified",
+      "value": "Upcoming in Australia",
+      "conditions": "Tesla AU still lists both Dumb Summon and Actually Smart Summon as upcoming. Do not treat the screenshot as confirmation on an ordered Australian vehicle.",
+      "source_ids": [
+        "r3_tesla_fsd"
+      ],
+      "evidence_scope": "AU_primary_source_recheck; hardware_and_build_conditions_retained",
+      "last_evidence_date": "2026-10-06",
+      "reviewed_date": "2026-10-06",
+      "verification_state": "primary_source_rechecked"
+    },
+    {
+      "variant_id": "tesla_model_y__premium_rwd__2",
+      "criterion": "remote_summon",
+      "status": "not_verified",
+      "value": "Upcoming in Australia",
+      "conditions": "Tesla AU still lists both Dumb Summon and Actually Smart Summon as upcoming. Do not treat the screenshot as confirmation on an ordered Australian vehicle.",
+      "source_ids": [
+        "r3_tesla_fsd"
+      ],
+      "evidence_scope": "AU_primary_source_recheck; hardware_and_build_conditions_retained",
+      "last_evidence_date": "2026-10-06",
+      "reviewed_date": "2026-10-06",
+      "verification_state": "primary_source_rechecked"
+    },
+    {
+      "variant_id": "tesla_model_y__l_premium_awd__4",
+      "criterion": "remote_summon",
+      "status": "not_verified",
+      "value": "Upcoming in Australia",
+      "conditions": "Tesla AU still lists both Dumb Summon and Actually Smart Summon as upcoming. Do not treat the screenshot as confirmation on an ordered Australian vehicle.",
+      "source_ids": [
+        "r3_tesla_fsd"
+      ],
+      "evidence_scope": "AU_primary_source_recheck; hardware_and_build_conditions_retained",
+      "last_evidence_date": "2026-10-06",
+      "reviewed_date": "2026-10-06",
+      "verification_state": "primary_source_rechecked"
+    },
+    {
+      "variant_id": "tesla_model_y__performance_awd__3",
+      "criterion": "remote_summon",
+      "status": "not_verified",
+      "value": "Upcoming in Australia",
+      "conditions": "Tesla AU still lists both Dumb Summon and Actually Smart Summon as upcoming. Do not treat the screenshot as confirmation on an ordered Australian vehicle.",
+      "source_ids": [
+        "r3_tesla_fsd"
+      ],
+      "evidence_scope": "AU_primary_source_recheck; hardware_and_build_conditions_retained",
+      "last_evidence_date": "2026-10-06",
+      "reviewed_date": "2026-10-06",
+      "verification_state": "primary_source_rechecked"
+    },
+    {
+      "variant_id": "tesla_model_y__premium_long_range_awd__1",
+      "criterion": "adas_optional",
+      "status": "optional",
+      "value": "FSD (Supervised) \u00b7 A$149/month from Basic Autopilot",
+      "conditions": "Requires an attentive driver. The FSD feature is currently HW4-only; compatible software may arrive after delivery. Eligibility to subscribe on HW3 is not feature availability. Enhanced Autopilot upgrade price: A$75/month.",
+      "source_ids": [
+        "r3_tesla_subscription",
+        "r3_tesla_fsd"
+      ],
+      "evidence_scope": "AU_primary_source_recheck; hardware_and_build_conditions_retained",
+      "last_evidence_date": "2026-10-06",
+      "reviewed_date": "2026-10-06",
+      "verification_state": "primary_source_rechecked"
+    },
+    {
+      "variant_id": "tesla_model_y__premium_rwd__2",
+      "criterion": "adas_optional",
+      "status": "optional",
+      "value": "FSD (Supervised) \u00b7 A$149/month from Basic Autopilot",
+      "conditions": "Requires an attentive driver. The FSD feature is currently HW4-only; compatible software may arrive after delivery. Eligibility to subscribe on HW3 is not feature availability. Enhanced Autopilot upgrade price: A$75/month.",
+      "source_ids": [
+        "r3_tesla_subscription",
+        "r3_tesla_fsd"
+      ],
+      "evidence_scope": "AU_primary_source_recheck; hardware_and_build_conditions_retained",
+      "last_evidence_date": "2026-10-06",
+      "reviewed_date": "2026-10-06",
+      "verification_state": "primary_source_rechecked"
+    },
+    {
+      "variant_id": "tesla_model_y__l_premium_awd__4",
+      "criterion": "adas_optional",
+      "status": "optional",
+      "value": "FSD (Supervised) \u00b7 A$149/month from Basic Autopilot",
+      "conditions": "Requires an attentive driver. The FSD feature is currently HW4-only; compatible software may arrive after delivery. Eligibility to subscribe on HW3 is not feature availability. Enhanced Autopilot upgrade price: A$75/month.",
+      "source_ids": [
+        "r3_tesla_subscription",
+        "r3_tesla_fsd"
+      ],
+      "evidence_scope": "AU_primary_source_recheck; hardware_and_build_conditions_retained",
+      "last_evidence_date": "2026-10-06",
+      "reviewed_date": "2026-10-06",
+      "verification_state": "primary_source_rechecked"
+    },
+    {
+      "variant_id": "tesla_model_y__performance_awd__3",
+      "criterion": "adas_optional",
+      "status": "optional",
+      "value": "FSD (Supervised) \u00b7 A$149/month from Basic Autopilot",
+      "conditions": "Requires an attentive driver. The FSD feature is currently HW4-only; compatible software may arrive after delivery. Eligibility to subscribe on HW3 is not feature availability. Enhanced Autopilot upgrade price: A$75/month.",
+      "source_ids": [
+        "r3_tesla_subscription",
+        "r3_tesla_fsd"
+      ],
+      "evidence_scope": "AU_primary_source_recheck; hardware_and_build_conditions_retained",
+      "last_evidence_date": "2026-10-06",
+      "reviewed_date": "2026-10-06",
+      "verification_state": "primary_source_rechecked"
+    },
+    {
+      "variant_id": "tesla_model_y__premium_long_range_awd__1",
+      "criterion": "garage_integration",
+      "status": "optional",
+      "value": "Optional HomeLink; Australian myQ not established",
+      "conditions": "Compatible opener and HomeLink hardware required. The AU manual documents HomeLink; the myQ partner page is labelled US/Canada. Do not count myQ as included Australian equipment.",
+      "source_ids": [
+        "r3_tesla_garage",
+        "r3_myq"
+      ],
+      "evidence_scope": "AU_primary_source_recheck; hardware_and_build_conditions_retained",
+      "last_evidence_date": "2026-10-06",
+      "reviewed_date": "2026-10-06",
+      "verification_state": "primary_source_rechecked"
+    },
+    {
+      "variant_id": "tesla_model_y__premium_rwd__2",
+      "criterion": "garage_integration",
+      "status": "optional",
+      "value": "Optional HomeLink; Australian myQ not established",
+      "conditions": "Compatible opener and HomeLink hardware required. The AU manual documents HomeLink; the myQ partner page is labelled US/Canada. Do not count myQ as included Australian equipment.",
+      "source_ids": [
+        "r3_tesla_garage",
+        "r3_myq"
+      ],
+      "evidence_scope": "AU_primary_source_recheck; hardware_and_build_conditions_retained",
+      "last_evidence_date": "2026-10-06",
+      "reviewed_date": "2026-10-06",
+      "verification_state": "primary_source_rechecked"
+    },
+    {
+      "variant_id": "tesla_model_y__l_premium_awd__4",
+      "criterion": "garage_integration",
+      "status": "optional",
+      "value": "Optional HomeLink; Australian myQ not established",
+      "conditions": "Compatible opener and HomeLink hardware required. The AU manual documents HomeLink; the myQ partner page is labelled US/Canada. Do not count myQ as included Australian equipment.",
+      "source_ids": [
+        "r3_tesla_garage",
+        "r3_myq"
+      ],
+      "evidence_scope": "AU_primary_source_recheck; hardware_and_build_conditions_retained",
+      "last_evidence_date": "2026-10-06",
+      "reviewed_date": "2026-10-06",
+      "verification_state": "primary_source_rechecked"
+    },
+    {
+      "variant_id": "tesla_model_y__performance_awd__3",
+      "criterion": "garage_integration",
+      "status": "optional",
+      "value": "Optional HomeLink; Australian myQ not established",
+      "conditions": "Compatible opener and HomeLink hardware required. The AU manual documents HomeLink; the myQ partner page is labelled US/Canada. Do not count myQ as included Australian equipment.",
+      "source_ids": [
+        "r3_tesla_garage",
+        "r3_myq"
+      ],
+      "evidence_scope": "AU_primary_source_recheck; hardware_and_build_conditions_retained",
+      "last_evidence_date": "2026-10-06",
+      "reviewed_date": "2026-10-06",
+      "verification_state": "primary_source_rechecked"
+    },
+    {
+      "variant_id": "tesla_model_y__premium_long_range_awd__1",
+      "criterion": "v2l",
+      "status": "conditional",
+      "value": "Five-seat V2L needs build and adapter confirmation",
+      "conditions": "The current manual is configuration-dependent; the AU shop still lists its adapter for Model Y L only. The broader current-order claim does not resolve compatibility for this five-seat variant. Confirm the ordered VIN/build and compatible adapter.",
+      "source_ids": [
+        "r3_tesla_v2l",
+        "r3_tesla_power",
+        "tesla_y_config"
+      ],
+      "evidence_scope": "AU_primary_source_recheck; hardware_and_build_conditions_retained",
+      "last_evidence_date": "2026-10-06",
+      "reviewed_date": "2026-10-06",
+      "verification_state": "primary_source_rechecked"
+    },
+    {
+      "variant_id": "tesla_model_y__premium_rwd__2",
+      "criterion": "v2l",
+      "status": "conditional",
+      "value": "Five-seat V2L needs build and adapter confirmation",
+      "conditions": "The current manual is configuration-dependent; the AU shop still lists its adapter for Model Y L only. The broader current-order claim does not resolve compatibility for this five-seat variant. Confirm the ordered VIN/build and compatible adapter.",
+      "source_ids": [
+        "r3_tesla_v2l",
+        "r3_tesla_power",
+        "tesla_y_config"
+      ],
+      "evidence_scope": "AU_primary_source_recheck; hardware_and_build_conditions_retained",
+      "last_evidence_date": "2026-10-06",
+      "reviewed_date": "2026-10-06",
+      "verification_state": "primary_source_rechecked"
+    },
+    {
+      "variant_id": "tesla_model_y__performance_awd__3",
+      "criterion": "v2l",
+      "status": "conditional",
+      "value": "Five-seat V2L needs build and adapter confirmation",
+      "conditions": "The current manual is configuration-dependent; the AU shop still lists its adapter for Model Y L only. The broader current-order claim does not resolve compatibility for this five-seat variant. Confirm the ordered VIN/build and compatible adapter.",
+      "source_ids": [
+        "r3_tesla_v2l",
+        "r3_tesla_power",
+        "tesla_y_config"
+      ],
+      "evidence_scope": "AU_primary_source_recheck; hardware_and_build_conditions_retained",
+      "last_evidence_date": "2026-10-06",
+      "reviewed_date": "2026-10-06",
+      "verification_state": "primary_source_rechecked"
+    },
+    {
+      "variant_id": "tesla_model_y__l_premium_awd__4",
+      "criterion": "v2l",
+      "status": "optional",
+      "value": "Model Y L supported \u00b7 adapter A$145",
+      "conditions": "Tesla AU shop specifically lists Model Y L compatibility. 3.45 kW at 15 A or 2.3 kW at 10 A; adapter was out of stock at this check. This is appliance power, not household grid export.",
+      "source_ids": [
+        "r3_tesla_v2l",
+        "r3_tesla_power"
+      ],
+      "evidence_scope": "direct_AU_accessory_compatibility",
+      "last_evidence_date": "2026-10-06",
+      "reviewed_date": "2026-10-06",
+      "verification_state": "primary_source_rechecked"
+    },
+    {
+      "variant_id": "byd_sealion_7__premium_rwd__1",
+      "criterion": "phone_key",
+      "status": "conditional",
+      "value": "Compatible smartphone digital key",
+      "conditions": "Fresh AU specification lists iPhone, Samsung Galaxy and Google Pixel compatibility; check the supported-device list in the BYD app or car. Setup and device support apply. Passive pocket unlock and automatic start are separate checks.",
+      "source_ids": [
+        "r3_sealion_spec"
+      ],
+      "evidence_scope": "AU_primary_source_recheck; hardware_and_build_conditions_retained",
+      "last_evidence_date": "2026-10-06",
+      "reviewed_date": "2026-10-06",
+      "verification_state": "primary_source_rechecked"
+    },
+    {
+      "variant_id": "byd_sealion_7__performance_awd__2",
+      "criterion": "phone_key",
+      "status": "conditional",
+      "value": "Compatible smartphone digital key",
+      "conditions": "Fresh AU specification lists iPhone, Samsung Galaxy and Google Pixel compatibility; check the supported-device list in the BYD app or car. Setup and device support apply. Passive pocket unlock and automatic start are separate checks.",
+      "source_ids": [
+        "r3_sealion_spec"
+      ],
+      "evidence_scope": "AU_primary_source_recheck; hardware_and_build_conditions_retained",
+      "last_evidence_date": "2026-10-06",
+      "reviewed_date": "2026-10-06",
+      "verification_state": "primary_source_rechecked"
+    },
+    {
+      "variant_id": "byd_sealion_7__premium_rwd__1",
+      "criterion": "performance_rear_motor",
+      "status": "standard",
+      "value": "Rear motor: 230 kW / 380 Nm",
+      "conditions": "Both AU trims list this rear motor output. Performance adds a 160 kW front motor and lists 390 kW combined output; combined output is not rear-only power.",
+      "source_ids": [
+        "r3_sealion_spec"
+      ],
+      "evidence_scope": "AU_primary_source_recheck; hardware_and_build_conditions_retained",
+      "last_evidence_date": "2026-10-06",
+      "reviewed_date": "2026-10-06",
+      "verification_state": "primary_source_rechecked"
+    },
+    {
+      "variant_id": "byd_sealion_7__performance_awd__2",
+      "criterion": "performance_rear_motor",
+      "status": "standard",
+      "value": "Rear motor: 230 kW / 380 Nm",
+      "conditions": "Both AU trims list this rear motor output. Performance adds a 160 kW front motor and lists 390 kW combined output; combined output is not rear-only power.",
+      "source_ids": [
+        "r3_sealion_spec"
+      ],
+      "evidence_scope": "AU_primary_source_recheck; hardware_and_build_conditions_retained",
+      "last_evidence_date": "2026-10-06",
+      "reviewed_date": "2026-10-06",
+      "verification_state": "primary_source_rechecked"
+    }
+  ],
+  "facts": [
+    {
+      "variant_id": "byd_atto_3_evo__dynamic_fwd__1",
+      "key": "range_km",
+      "value": 420,
+      "status": "standard",
+      "date": "2026-10-06",
+      "sourceIds": [
+        "r3_evo_spec"
+      ]
+    },
+    {
+      "variant_id": "byd_atto_3_evo__dynamic_fwd__1",
+      "key": "battery_kwh",
+      "value": 60.48,
+      "status": "standard",
+      "date": "2026-10-06",
+      "sourceIds": [
+        "r3_evo_spec"
+      ]
+    },
+    {
+      "variant_id": "byd_atto_3_evo__dynamic_fwd__1",
+      "key": "ac_kw",
+      "value": 7,
+      "status": "standard",
+      "date": "2026-10-06",
+      "sourceIds": [
+        "r3_evo_spec"
+      ]
+    },
+    {
+      "variant_id": "byd_atto_3_evo__dynamic_fwd__1",
+      "key": "dc_peak_kw",
+      "value": 110,
+      "status": "standard",
+      "date": "2026-10-06",
+      "sourceIds": [
+        "r3_evo_spec"
+      ]
+    },
+    {
+      "variant_id": "byd_atto_3_evo__dynamic_fwd__1",
+      "key": "dc_charge_time_min",
+      "value": 41,
+      "status": "standard",
+      "date": "2026-10-06",
+      "sourceIds": [
+        "r3_evo_spec"
+      ]
+    },
+    {
+      "variant_id": "byd_atto_3_evo__dynamic_fwd__1",
+      "key": "boot_l",
+      "value": 434,
+      "status": "standard",
+      "date": "2026-10-06",
+      "sourceIds": [
+        "r3_evo_spec"
+      ]
+    },
+    {
+      "variant_id": "byd_atto_3_evo__dynamic_fwd__1",
+      "key": "frunk_l",
+      "value": 0,
+      "status": "standard",
+      "date": "2026-10-06",
+      "sourceIds": [
+        "r3_evo_spec"
+      ]
+    },
+    {
+      "variant_id": "byd_atto_3_evo__dynamic_fwd__1",
+      "key": "towing_braked_kg",
+      "value": 750,
+      "status": "standard",
+      "date": "2026-10-06",
+      "sourceIds": [
+        "r3_evo_spec"
+      ]
+    },
+    {
+      "variant_id": "byd_atto_3_evo__dynamic_fwd__1",
+      "key": "seats",
+      "value": 5,
+      "status": "standard",
+      "date": "2026-10-06",
+      "sourceIds": [
+        "r3_evo_spec"
+      ]
+    },
+    {
+      "variant_id": "byd_atto_3_evo__dynamic_fwd__1",
+      "key": "length_mm",
+      "value": 4455,
+      "status": "standard",
+      "date": "2026-10-06",
+      "sourceIds": [
+        "r3_evo_spec"
+      ]
+    },
+    {
+      "variant_id": "byd_atto_3_evo__dynamic_fwd__1",
+      "key": "width_mm",
+      "value": 1875,
+      "status": "standard",
+      "date": "2026-10-06",
+      "sourceIds": [
+        "r3_evo_spec"
+      ]
+    },
+    {
+      "variant_id": "byd_atto_3_evo__dynamic_fwd__1",
+      "key": "height_mm",
+      "value": 1615,
+      "status": "standard",
+      "date": "2026-10-06",
+      "sourceIds": [
+        "r3_evo_spec"
+      ]
+    },
+    {
+      "variant_id": "byd_atto_3_evo__dynamic_fwd__1",
+      "key": "wheelbase_mm",
+      "value": 2720,
+      "status": "standard",
+      "date": "2026-10-06",
+      "sourceIds": [
+        "r3_evo_spec"
+      ]
+    },
+    {
+      "variant_id": "byd_atto_3_evo__dynamic_fwd__1",
+      "key": "zero_to_100_s",
+      "value": 7.3,
+      "status": "conditional",
+      "date": "2026-10-06",
+      "sourceIds": [
+        "r3_evo_spec"
+      ]
+    },
+    {
+      "variant_id": "byd_atto_3_evo__premium_rwd__2",
+      "key": "range_km",
+      "value": 510,
+      "status": "standard",
+      "date": "2026-10-06",
+      "sourceIds": [
+        "r3_evo_spec"
+      ]
+    },
+    {
+      "variant_id": "byd_atto_3_evo__premium_rwd__2",
+      "key": "battery_kwh",
+      "value": 74.88,
+      "status": "standard",
+      "date": "2026-10-06",
+      "sourceIds": [
+        "r3_evo_spec"
+      ]
+    },
+    {
+      "variant_id": "byd_atto_3_evo__premium_rwd__2",
+      "key": "ac_kw",
+      "value": 11,
+      "status": "standard",
+      "date": "2026-10-06",
+      "sourceIds": [
+        "r3_evo_spec"
+      ]
+    },
+    {
+      "variant_id": "byd_atto_3_evo__premium_rwd__2",
+      "key": "dc_peak_kw",
+      "value": 220,
+      "status": "standard",
+      "date": "2026-10-06",
+      "sourceIds": [
+        "r3_evo_spec"
+      ]
+    },
+    {
+      "variant_id": "byd_atto_3_evo__premium_rwd__2",
+      "key": "dc_charge_time_min",
+      "value": 30,
+      "status": "standard",
+      "date": "2026-10-06",
+      "sourceIds": [
+        "r3_evo_spec"
+      ]
+    },
+    {
+      "variant_id": "byd_atto_3_evo__premium_rwd__2",
+      "key": "boot_l",
+      "value": 490,
+      "status": "standard",
+      "date": "2026-10-06",
+      "sourceIds": [
+        "r3_evo_spec"
+      ]
+    },
+    {
+      "variant_id": "byd_atto_3_evo__premium_rwd__2",
+      "key": "frunk_l",
+      "value": 101,
+      "status": "standard",
+      "date": "2026-10-06",
+      "sourceIds": [
+        "r3_evo_spec"
+      ]
+    },
+    {
+      "variant_id": "byd_atto_3_evo__premium_rwd__2",
+      "key": "towing_braked_kg",
+      "value": 1500,
+      "status": "standard",
+      "date": "2026-10-06",
+      "sourceIds": [
+        "r3_evo_spec"
+      ]
+    },
+    {
+      "variant_id": "byd_atto_3_evo__premium_rwd__2",
+      "key": "seats",
+      "value": 5,
+      "status": "standard",
+      "date": "2026-10-06",
+      "sourceIds": [
+        "r3_evo_spec"
+      ]
+    },
+    {
+      "variant_id": "byd_atto_3_evo__premium_rwd__2",
+      "key": "length_mm",
+      "value": 4455,
+      "status": "standard",
+      "date": "2026-10-06",
+      "sourceIds": [
+        "r3_evo_spec"
+      ]
+    },
+    {
+      "variant_id": "byd_atto_3_evo__premium_rwd__2",
+      "key": "width_mm",
+      "value": 1875,
+      "status": "standard",
+      "date": "2026-10-06",
+      "sourceIds": [
+        "r3_evo_spec"
+      ]
+    },
+    {
+      "variant_id": "byd_atto_3_evo__premium_rwd__2",
+      "key": "height_mm",
+      "value": 1615,
+      "status": "standard",
+      "date": "2026-10-06",
+      "sourceIds": [
+        "r3_evo_spec"
+      ]
+    },
+    {
+      "variant_id": "byd_atto_3_evo__premium_rwd__2",
+      "key": "wheelbase_mm",
+      "value": 2720,
+      "status": "standard",
+      "date": "2026-10-06",
+      "sourceIds": [
+        "r3_evo_spec"
+      ]
+    },
+    {
+      "variant_id": "byd_atto_3_evo__premium_rwd__2",
+      "key": "zero_to_100_s",
+      "value": 5.5,
+      "status": "conditional",
+      "date": "2026-10-06",
+      "sourceIds": [
+        "r3_evo_spec"
+      ]
+    }
+  ],
+  "issues": [
+    {
+      "issue_id": "V2-04",
+      "publication_action": "The current AU manual is configuration-dependent, while the AU shop still restricts its adapter to Model Y L. Five-seat V2L needs VIN/build and adapter confirmation.",
+      "source_ids": [
+        "tesla_y_config",
+        "r3_tesla_v2l",
+        "r3_tesla_power"
+      ]
+    },
+    {
+      "issue_id": "V2-07",
+      "title": "ATTO 3 EVO document rechecked; remaining limits",
+      "publication_action": "The official AU specification PDF was retrieved on 6 October and the displayed numeric technical fields rechecked. Price, unreviewed equipment and ANCAP applicability remain separate checks; no legacy rating is inherited.",
+      "source_ids": [
+        "r3_evo_spec"
+      ]
+    }
+  ]
+}

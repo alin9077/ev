@@ -1,0 +1,159 @@
+class VerificationFailure(Exception):
+    def __init__(self, detail):
+        self.detail = detail
+        super().__init__(str(detail))
+
+
+def fail(check, **detail):
+    raise VerificationFailure({"check": check, **detail})
+
+
+def require(condition, check, **detail):
+    if not condition:
+        fail(check, **detail)
+
+
+def sha(data):
+    return hashlib.sha256(data).hexdigest()
+
+
+def describe(value):
+    if isinstance(value, dict):
+        return {"type": "object", "keys": list(value)}
+    if isinstance(value, list):
+        return {"type": "array", "length": len(value)}
+    if isinstance(value, Decimal):
+        return {"type": "number", "value": str(value)}
+    return value
+
+
+def pointer(path, key):
+    return path + "/" + str(key).replace("~", "~0").replace("/", "~1")
+
+
+def equal(actual, expected, path):
+    """JSON equality with ordered arrays and distinct boolean/number types."""
+    pending = [(actual, expected, path)]
+    while pending:
+        actual, expected, here = pending.pop()
+        number_types = (int, Decimal)
+        same_number_type = type(actual) in number_types and type(expected) in number_types
+        if type(actual) is not type(expected) and not same_number_type:
+            fail("json_type_drift", path=here, expected=describe(expected), actual=describe(actual))
+        if isinstance(expected, dict):
+            if set(actual) != set(expected):
+                fail("json_keys_drift", path=here,
+                     missing=sorted(set(expected) - set(actual)),
+                     unexpected=sorted(set(actual) - set(expected)))
+            pending.extend((actual[k], expected[k], pointer(here, k)) for k in reversed(expected))
+        elif isinstance(expected, list):
+            if len(actual) != len(expected):
+                fail("json_length_drift", path=here, expected=len(expected), actual=len(actual))
+            pending.extend((actual[i], expected[i], pointer(here, i)) for i in range(len(expected) - 1, -1, -1))
+        elif actual != expected:
+            fail("json_value_drift", path=here, expected=describe(expected), actual=describe(actual))
+
+
+def strict_object(pairs):
+    result = {}
+    for key, value in pairs:
+        require(key not in result, "duplicate_json_key", key=key)
+        result[key] = value
+    return result
+
+
+def reject_constant(value):
+    fail("non_json_numeric_constant", value=value)
+
+
+def parse_json(data, label):
+    try:
+        return json.loads(data.decode("utf-8"), object_pairs_hook=strict_object,
+                          parse_float=Decimal, parse_constant=reject_constant)
+    except (UnicodeError, json.JSONDecodeError) as exc:
+        fail("invalid_json", input=label, error=str(exc))
+
+
+def read_pinned(path, expected_sha, label):
+    data = path.read_bytes()
+    actual_sha = sha(data)
+    require(actual_sha == expected_sha, "input_sha256_mismatch", input=label,
+            path=str(path), expected=expected_sha, actual=actual_sha)
+    return data
+
+
+def split_html(data, label):
+    require(data.count(OPEN_TAG) == 1, "ev_data_open_tag_count", input=label,
+            actual=data.count(OPEN_TAG))
+    start = data.index(OPEN_TAG) + len(OPEN_TAG)
+    end = data.find(CLOSE_TAG, start)
+    require(end >= start, "missing_ev_data_close_tag", input=label)
+    # Tags remain in the compared regions. Only the JSON body is excluded.
+    return data[:start], data[start:end], data[end:]
+
+
+def outside_drift(actual, expected, segment, actual_origin, expected_origin):
+    if actual == expected:
+        return None
+    limit = min(len(actual), len(expected))
+    first = next((i for i in range(limit) if actual[i] != expected[i]), limit)
+    common_tail = 0
+    while common_tail < limit - first and actual[-1 - common_tail] == expected[-1 - common_tail]:
+        common_tail += 1
+    a_end, e_end = len(actual) - common_tail, len(expected) - common_tail
+    return {
+        "segment": segment,
+        "expectedBytes": len(expected), "actualBytes": len(actual),
+        "expectedSHA256": sha(expected), "actualSHA256": sha(actual),
+        "firstDifferingSegmentOffset": first,
+        "firstDifferingExpectedFileOffset": expected_origin + first,
+        "firstDifferingActualFileOffset": actual_origin + first,
+        "expectedChangedSpan": [first, e_end], "actualChangedSpan": [first, a_end],
+        "expectedChangedSpanSHA256": sha(expected[first:e_end]),
+        "actualChangedSpanSHA256": sha(actual[first:a_end]),
+        "expectedNext64BytesHex": expected[first:first + 64].hex(),
+        "actualNext64BytesHex": actual[first:first + 64].hex(),
+    }
+
+
+def decode_payload(raw, label):
+    envelope = parse_json(raw, label)
+    require(type(envelope) is dict, "invalid_envelope_object", input=label)
+    equal(sorted(envelope), ["data", "format", "strings"], label + "/envelopeKeys")
+    equal(envelope["format"], "roadmark-string-table-v1", label + "/format")
+    strings = envelope["strings"]
+    require(type(strings) is list and all(type(s) is str for s in strings),
+            "invalid_dictionary", input=label)
+    stats = {"dictionaryValues": len(strings), "references": 0, "escapedLiterals": 0}
+
+    def decode_string(value, path):
+        if not value.startswith("~"):
+            return value
+        if value.startswith("~~"):
+            stats["escapedLiterals"] += 1
+            return value[1:]
+        require(re.fullmatch(r"~(?:0|[1-9a-z][0-9a-z]*)", value) is not None,
+                "invalid_dictionary_token", input=label, path=path, token=value)
+        index = int(value[1:], 36)
+        require(index < len(strings), "dictionary_index_out_of_range",
+                input=label, path=path, token=value, dictionaryValues=len(strings))
+        stats["references"] += 1
+        # Dictionary values are original literals, never recursively decoded.
+        return strings[index]
+
+    data = envelope["data"]
+    require(type(data) is dict, "invalid_payload_object", input=label)
+    pending = [(data, label)]
+    while pending:
+        container, path = pending.pop()
+        keys = list(container) if isinstance(container, dict) else range(len(container))
+        for key in keys:
+            value = container[key]
+            here = pointer(path, key)
+            if isinstance(value, str):
+                container[key] = decode_string(value, here)
+            elif isinstance(value, (dict, list)):
+                pending.append((value, here))
+    return data, stats
+
+

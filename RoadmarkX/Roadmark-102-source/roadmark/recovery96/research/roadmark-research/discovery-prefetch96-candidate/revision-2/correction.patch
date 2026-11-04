@@ -1,0 +1,11 @@
+--- revision-1/tests/discovery-prefetch.test.ts
++++ revision-2/tests/discovery-prefetch.test.ts
+@@ -111,7 +111,7 @@
+     shiftKey: false,
+     altKey: false,
+     button: 0,
+-    preventDefault() {
++    preventDefault(this: { defaultPrevented: boolean }) {
+       this.defaultPrevented = true;
+     },
+     ...overrides,

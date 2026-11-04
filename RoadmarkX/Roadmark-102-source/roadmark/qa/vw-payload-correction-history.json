@@ -1,0 +1,208 @@
+{
+  "reason": "Generator catch-all matched payload_kg via load_ after its explicit kg mapping. No evidence of deliberate override.",
+  "variantId": "volkswagen_id_buzz_cargo_my25__swb__20261010",
+  "key": "payload_kg",
+  "retainedRow": {
+    "variantId": "volkswagen_id_buzz_cargo_my25__swb__20261010",
+    "key": "payload_kg",
+    "label": "Payload",
+    "value": 774,
+    "unit": "kg",
+    "basis": "Manufacturer payload",
+    "comparisonBasis": "",
+    "status": "conditional",
+    "sourceIds": [
+      "r10_vag_vw_cargo_spec"
+    ],
+    "date": "2026-10-10",
+    "market": "AU",
+    "scope": "Australian Volkswagen ID. Buzz Cargo SWB · MY2025",
+    "qualifications": [
+      "Base vehicle maximum; configuration-specific final payload requires weighing"
+    ],
+    "issues": [],
+    "conditionExplanation": "Base vehicle maximum; configuration-specific final payload requires weighing"
+  },
+  "removedDuplicateRow": {
+    "variantId": "volkswagen_id_buzz_cargo_my25__swb__20261010",
+    "key": "payload_kg",
+    "label": "Payload kg",
+    "value": 774,
+    "unit": "",
+    "basis": "Exact MY25 commercial loading specification",
+    "comparisonBasis": "",
+    "status": "conditional",
+    "sourceIds": [
+      "r10_vag_vw_cargo_spec"
+    ],
+    "date": "2026-10-10",
+    "market": "AU",
+    "scope": "Australian Volkswagen ID. Buzz Cargo SWB · MY2025",
+    "qualifications": [
+      "Base vehicle maximum; configuration-specific final payload requires weighing"
+    ],
+    "issues": [],
+    "conditionExplanation": "Base vehicle maximum; configuration-specific final payload requires weighing"
+  },
+  "originalIndexes": [
+    2546,
+    2559
+  ],
+  "previousDependency": {
+    "id": "fact:volkswagen_id_buzz_cargo_my25__swb__20261010:payload_kg",
+    "kind": "fact",
+    "variantId": "volkswagen_id_buzz_cargo_my25__swb__20261010",
+    "key": "payload_kg",
+    "expectedValue": 774,
+    "expectedStatus": "conditional",
+    "expectedUnit": "",
+    "expectedBasis": "Exact MY25 commercial loading specification",
+    "expectedComparisonBasis": "",
+    "expectedQualifications": [
+      "Base vehicle maximum; configuration-specific final payload requires weighing"
+    ],
+    "expectedConditionExplanation": "Base vehicle maximum; configuration-specific final payload requires weighing",
+    "expectedIssues": [],
+    "expectedMarket": "AU",
+    "expectedScope": "Australian Volkswagen ID. Buzz Cargo SWB · MY2025",
+    "expectedValidUntil": null,
+    "expectedFactDate": "2026-10-10",
+    "sourceIds": [
+      "r10_vag_vw_cargo_spec"
+    ],
+    "checkedAt": "2026-10-10",
+    "evidenceDate": "2026-10-10",
+    "requiresSuggestedPatch": false,
+    "effectivePipeline": "catalogue(): effective facts after overlays, launch audit and approved corrections",
+    "evidenceRecordId": "volkswagen-idbuzzcargo-my25-swb",
+    "evidenceField": "specifications.payload_kg",
+    "evidenceLocator": "PDF pp11–12 SWB exact column",
+    "fieldProvenance": {
+      "snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/vw-skoda-cupra-sources/vw_cargo_spec.txt",
+      "line_1based": 402,
+      "character_start_0based": 43106,
+      "character_end_exclusive": 43197,
+      "exact_text": "Payload maximum², kg                                                                    774"
+    },
+    "negativeEvidence": false,
+    "expectedEffectiveFact": {
+      "key": "payload_kg",
+      "label": "Payload kg",
+      "value": 774,
+      "unit": "",
+      "basis": "Exact MY25 commercial loading specification",
+      "comparisonBasis": "",
+      "status": "conditional",
+      "sourceIds": [
+        "r10_vag_vw_cargo_spec"
+      ],
+      "date": "2026-10-10",
+      "market": "AU",
+      "scope": "Australian Volkswagen ID. Buzz Cargo SWB · MY2025",
+      "qualifications": [
+        "Base vehicle maximum; configuration-specific final payload requires weighing"
+      ],
+      "issues": [],
+      "conditionExplanation": "Base vehicle maximum; configuration-specific final payload requires weighing"
+    },
+    "sourceEvidenceDates": {
+      "r10_vag_vw_cargo_spec": "2026-10-10"
+    },
+    "sourcePublicationDates": {
+      "r10_vag_vw_cargo_spec": null
+    },
+    "expectedSourceEligibility": {
+      "r10_vag_vw_cargo_spec": {
+        "accessed_date": "2026-10-10",
+        "published_date": null,
+        "url": "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/pdfs/showroom-brochures-live/VW_CV_ID_Buzz%20Cargo_BrochureSpec_Sep25.pdf",
+        "market": "AU",
+        "access_limitation": null,
+        "conflict": null,
+        "publication_hold": null,
+        "qualifications": "Field-specific model-year, configuration and source limitations apply."
+      }
+    }
+  },
+  "correctedDependency": {
+    "id": "fact:volkswagen_id_buzz_cargo_my25__swb__20261010:payload_kg",
+    "kind": "fact",
+    "variantId": "volkswagen_id_buzz_cargo_my25__swb__20261010",
+    "key": "payload_kg",
+    "expectedValue": 774,
+    "expectedStatus": "conditional",
+    "expectedUnit": "kg",
+    "expectedBasis": "Manufacturer payload",
+    "expectedComparisonBasis": "",
+    "expectedQualifications": [
+      "Base vehicle maximum; configuration-specific final payload requires weighing"
+    ],
+    "expectedConditionExplanation": "Base vehicle maximum; configuration-specific final payload requires weighing",
+    "expectedIssues": [],
+    "expectedMarket": "AU",
+    "expectedScope": "Australian Volkswagen ID. Buzz Cargo SWB · MY2025",
+    "expectedValidUntil": null,
+    "expectedFactDate": "2026-10-10",
+    "sourceIds": [
+      "r10_vag_vw_cargo_spec"
+    ],
+    "checkedAt": "2026-10-10",
+    "evidenceDate": "2026-10-10",
+    "requiresSuggestedPatch": false,
+    "effectivePipeline": "catalogue(): effective facts after overlays, launch audit and approved corrections",
+    "evidenceRecordId": "volkswagen-idbuzzcargo-my25-swb",
+    "evidenceField": "specifications.payload_kg",
+    "evidenceLocator": "PDF pp11–12 SWB exact column",
+    "fieldProvenance": {
+      "snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/vw-skoda-cupra-sources/vw_cargo_spec.txt",
+      "line_1based": 402,
+      "character_start_0based": 43106,
+      "character_end_exclusive": 43197,
+      "exact_text": "Payload maximum², kg                                                                    774"
+    },
+    "negativeEvidence": false,
+    "expectedEffectiveFact": {
+      "key": "payload_kg",
+      "label": "Payload",
+      "value": 774,
+      "unit": "kg",
+      "basis": "Manufacturer payload",
+      "comparisonBasis": "",
+      "status": "conditional",
+      "sourceIds": [
+        "r10_vag_vw_cargo_spec"
+      ],
+      "date": "2026-10-10",
+      "market": "AU",
+      "scope": "Australian Volkswagen ID. Buzz Cargo SWB · MY2025",
+      "qualifications": [
+        "Base vehicle maximum; configuration-specific final payload requires weighing"
+      ],
+      "issues": [],
+      "conditionExplanation": "Base vehicle maximum; configuration-specific final payload requires weighing"
+    },
+    "sourceEvidenceDates": {
+      "r10_vag_vw_cargo_spec": "2026-10-10"
+    },
+    "sourcePublicationDates": {
+      "r10_vag_vw_cargo_spec": null
+    },
+    "expectedSourceEligibility": {
+      "r10_vag_vw_cargo_spec": {
+        "accessed_date": "2026-10-10",
+        "published_date": null,
+        "url": "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/pdfs/showroom-brochures-live/VW_CV_ID_Buzz%20Cargo_BrochureSpec_Sep25.pdf",
+        "market": "AU",
+        "access_limitation": null,
+        "conflict": null,
+        "publication_hold": null,
+        "qualifications": "Field-specific model-year, configuration and source limitations apply."
+      }
+    }
+  },
+  "sourceEvidenceUnchanged": true,
+  "applicationWritten": false,
+  "independentAuditPendingFinal": false,
+  "independentAuditResult": "MATCH: 10/10 checks",
+  "runtimeCandidateResult": "All335 summary states, all rankings and334 other cars unchanged"
+}

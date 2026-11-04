@@ -1,0 +1,65 @@
+{
+  "inputs": {
+    "source100": {
+      "path": "roadmark-recovery/reassembled100/Roadmark-recovered-100-source.zip",
+      "sha256": "0ab0172a49def161e9d6aab1f00ea0d866e919c5a14dd83ee61c9852cb6a4e74",
+      "bytes": 48765019
+    },
+    "preview100Archive": {
+      "path": "roadmark-recovery/attached100/Roadmark-recovered-100-portable-preview(1).zip",
+      "sha256": "caa9eae87f66c4c22ea047d66c77ba49aa93acaf97dae574a35617423e069aa8",
+      "bytes": 16424700
+    },
+    "preview100HTML": {
+      "path": "roadmark-preview100/roadmark/index.html",
+      "sha256": "cb4fe95ff34b375fe139b7ef81e959c7ae000a1cb4b44ed74ad340a662f4e39b",
+      "bytes": 37020751
+    },
+    "baselineInputs": {
+      "path": "roadmark-rebuild101/baseline-inputs.json",
+      "sha256": "39caa8ae30cf2c6bc09026d0dd87b6fd42811fd8ddb2d632c5d3d18092818225",
+      "bytes": 184815
+    },
+    "expectedInputs": {
+      "path": "roadmark-rebuild101/expected-inputs.json",
+      "sha256": "dbf36bd51a5900aaedacfadb1c602baae0c56355581511c059084bed3332695c",
+      "bytes": 185459
+    },
+    "qaBaselineInputs": {
+      "path": "roadmark-rebuild101/qa-baseline-inputs.json",
+      "sha256": "a849da057146300c8525598d3b251c3e4b182096ca6d183e51a1d1ab6574ad0d",
+      "bytes": 356126
+    },
+    "qaExpectedInputs": {
+      "path": "roadmark-rebuild101/qa-expected-inputs.json",
+      "sha256": "0777404050e976a91d2e87e1cb8e64c78d51cffc075e709abbc530cd341bf8aa",
+      "bytes": 356770
+    },
+    "candidate": {
+      "path": "roadmark-rebuild101/qa-candidate.json",
+      "sha256": "34651bac29fc721eb9021fa3f4859b01928fbcef3fadfda6869d216ce78c3d06",
+      "bytes": 3304
+    },
+    "runner": {
+      "path": "roadmark-rebuild101/run_qa99.py",
+      "sha256": "a043d6ac749a39d025bf452eddb55440d2ac81ba3b73be9f4d894a5055a2e10f",
+      "bytes": 22175
+    },
+    "historical100Supplement": {
+      "path": "roadmark-recovery/attached100/Roadmark-100-recovery-research-supplement(1).zip",
+      "sha256": "19b2dd1ed1096aa347285cbe96c7a341b06775b2e1d7d5d0fd42ccd1f2dabd38",
+      "bytes": 543775
+    },
+    "historical100VerifierMember": {
+      "member": "research/roadmark-research/artifact100-candidate/verify-portable100-delta.py",
+      "sha256": "aa431a1114e942b9100d680cc7df35cfacb9bdc8487be023eef0ccbec9dafd3e",
+      "bytes": 19342,
+      "usage": "strict decoder/comparator source only; no historical pass reused"
+    },
+    "finalAuthoredInputs": {
+      "path": "roadmark-rebuild101/final-authored-inputs.json",
+      "sha256": "6aad76783cc1787f64667b4fb6ef1fd71e7321c6e10ce35cc7f78441716362d5",
+      "bytes": 185459
+    }
+  }
+}

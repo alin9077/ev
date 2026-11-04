@@ -1,0 +1,585 @@
+{
+  "schemaVersion": 7,
+  "createdAt": "2026-10-14T09:09:47.770103+00:00",
+  "status": "Completed verified Volvo-integrated recovery save; Volvo census gaps and M1 remain open",
+  "source": {
+    "filename": "Roadmark-recovery-source-volvo-integrated-20261014T0838.tar.xz",
+    "bytes": 8062616,
+    "sha256": "09865bef91db2dccdd52dcd1726afc0aa6433df6485417e83f95b7850209b51b",
+    "group": "source-volvo-integrated",
+    "library_file_id": "libfile_cfe4cf0e39708191a70edacb980c447c",
+    "version": 0,
+    "restoreOrder": 39,
+    "file_id": "file_000000005ab0822f8aca4dbefc34ee6e"
+  },
+  "sourceCaptureCutoff": "2026-10-14T09:00:17.659082+00:00",
+  "qaCaptureCutoff": "2026-10-14T09:01:03.663589+00:00",
+  "researchCaptureCutoff": "2026-10-14T08:57:29.650360+00:00",
+  "archiveCount": 50,
+  "archiveBytes": 390521440,
+  "restoredFiles": 4725,
+  "restoredBytes": 1660922779,
+  "incrementalSave": {
+    "newArchiveCount": 4,
+    "newArchiveBytes": 15765148,
+    "currentSourceFiles": 637,
+    "currentQaFiles": 1347,
+    "newOrChangedQaFiles": 51,
+    "unchangedQaFiles": 1296,
+    "missingQaFiles": [],
+    "volvoResearchFiles": 370,
+    "researchExclusions": [
+      {
+        "path": "__pycache__/build-ex60.cpython-312.pyc",
+        "reason": "dependency, build, cache, or runtime directory"
+      },
+      {
+        "path": "__pycache__/build-packet.cpython-312.pyc",
+        "reason": "dependency, build, cache, or runtime directory"
+      },
+      {
+        "path": "__pycache__/capture.cpython-312.pyc",
+        "reason": "dependency, build, cache, or runtime directory"
+      }
+    ],
+    "newQaPaths": [
+      "roadmark-104-qa/m1-volvo-coverage.exit",
+      "roadmark-104-qa/m1-volvo-coverage.json",
+      "roadmark-104-qa/m1-volvo-coverage.stderr",
+      "roadmark-104-qa/m1-volvo-integration.exit",
+      "roadmark-104-qa/m1-volvo-integration.log",
+      "roadmark-104-qa/m1-volvo-lint.exit",
+      "roadmark-104-qa/m1-volvo-lint.log",
+      "roadmark-104-qa/m1-volvo-typecheck.exit",
+      "roadmark-104-qa/m1-volvo-typecheck.log",
+      "roadmark-104-qa/m1-volvo-validate.exit",
+      "roadmark-104-qa/m1-volvo-validate.log",
+      "roadmark-104-qa/review-volvo-independent.ts",
+      "roadmark-104-qa/review-volvo-reconciliation.ts",
+      "roadmark-104-qa/stage-volvo-candidate.ts",
+      "roadmark-104-qa/verify-volvo-final-artifacts.py",
+      "roadmark-104-qa/volvo-independent-review/candidate-f2dccd64-packet.json",
+      "roadmark-104-qa/volvo-independent-review/early-source-checks.json",
+      "roadmark-104-qa/volvo-independent-review/es90-my26-global-page1.png",
+      "roadmark-104-qa/volvo-independent-review/es90-my26-global-page2.png",
+      "roadmark-104-qa/volvo-independent-review/es90-my27-dk-page1.png",
+      "roadmark-104-qa/volvo-independent-review/es90-my27-it-page21.png",
+      "roadmark-104-qa/volvo-independent-review/ex60-my27-global-page1.png",
+      "roadmark-104-qa/volvo-independent-review/ex90-my27-dk-page1.png",
+      "roadmark-104-qa/volvo-independent-review/f2dccd64-projection-baseline-harness.log",
+      "roadmark-104-qa/volvo-independent-review/final-artifact-verification.json",
+      "roadmark-104-qa/volvo-independent-review/final-artifact-verification.log",
+      "roadmark-104-qa/volvo-independent-review/independent-reconciliation-replay.exit",
+      "roadmark-104-qa/volvo-independent-review/independent-reconciliation-replay.log",
+      "roadmark-104-qa/volvo-independent-review/independent-review-replay.exit",
+      "roadmark-104-qa/volvo-independent-review/independent-review-replay.json",
+      "roadmark-104-qa/volvo-independent-review/independent-review-replay.log",
+      "roadmark-104-qa/volvo-independent-review/initial-e84368a9-enum-failure.exit",
+      "roadmark-104-qa/volvo-independent-review/initial-e84368a9-enum-failure.log",
+      "roadmark-104-qa/volvo-independent-review/pre-final-canonical-projection-pass.json",
+      "roadmark-104-qa/volvo-independent-review/qa-copy-verification.json",
+      "roadmark-104-qa/volvo-independent-review/registered-report-comparison.json",
+      "roadmark-104-qa/volvo-research-REVIEW.md",
+      "roadmark-104-qa/volvo-research-artifact-hash-manifest.json",
+      "roadmark-104-qa/volvo-research-brand-model-list-reconciliation.json",
+      "roadmark-104-qa/volvo-research-core-matrix.json",
+      "roadmark-104-qa/volvo-research-evidence-completeness-audit.json",
+      "roadmark-104-qa/volvo-research-final-redaction-transformations.json",
+      "roadmark-104-qa/volvo-research-independent-evidence-review.md",
+      "roadmark-104-qa/volvo-research-independent-review-replay.json",
+      "roadmark-104-qa/volvo-research-integration-readiness.json",
+      "roadmark-104-qa/volvo-research-redaction-audit.json",
+      "roadmark-104-qa/volvo-research-source-hash-manifest.json",
+      "roadmark-104-qa/volvo-research-source-index.json",
+      "roadmark-104-qa/volvo-research-stage-validation.exit",
+      "roadmark-104-qa/volvo-research-stage-validation.log",
+      "roadmark-104-qa/work-status.json"
+    ],
+    "unchangedArchivesReuploaded": 0,
+    "provisionalVolvoArchivesUploaded": 0
+  },
+  "approvedVolvoPacketSHA256": {
+    "volvo-2026-10-14.json": "f2dccd648ad2f8ebaa6637d6f76e9991dcffc4288704599e4a3482d6e1bfedd6",
+    "volvo-reconciliation-2026-10-14.json": "667edab8cac2e588397f780ed4b4524c735fd7452162c8d2286fd7927dfefb8a"
+  },
+  "documents": [
+    {
+      "filename": "Roadmark-RECOVERY-INDEX-volvo-integrated-20261014.md",
+      "library_file_id": "libfile_5ca68e70bc8c819184fe687d72a130bb",
+      "version": 0,
+      "bytes": 16478,
+      "sha256": "432fbb92cb014ea8fb4349e852f3e8fd5988fa354a500ab868a39165e8fe88e9"
+    },
+    {
+      "filename": "Roadmark-RECOVERY-MANIFEST-volvo-integrated-20261014.json",
+      "library_file_id": "libfile_c5cd12a4c1308191964a1264f9867ce3",
+      "version": 0,
+      "bytes": 2485797,
+      "sha256": "8dfa74c34884b8358a587cd3b3e2c5f1ecd042a43f0a91d579d8a814ac2be494"
+    },
+    {
+      "filename": "Roadmark-RECOVERY-VERIFICATION-volvo-integrated-20261014.json",
+      "library_file_id": "libfile_673558d9e2a88191a336d6135a40f518",
+      "version": 0,
+      "bytes": 1396971,
+      "sha256": "9b08864846268a9059c683ceb9e56141b848458822746c0ea0c6cb0550f0c387"
+    }
+  ],
+  "newArchives": [
+    {
+      "filename": "Roadmark-recovery-source-volvo-integrated-20261014T0838.tar.xz",
+      "bytes": 8062616,
+      "sha256": "09865bef91db2dccdd52dcd1726afc0aa6433df6485417e83f95b7850209b51b",
+      "group": "source-volvo-integrated",
+      "library_file_id": "libfile_cfe4cf0e39708191a70edacb980c447c",
+      "version": 0,
+      "restoreOrder": 39,
+      "file_id": "file_000000005ab0822f8aca4dbefc34ee6e"
+    },
+    {
+      "filename": "Roadmark-recovery-volvo-approved-20261014T085728Z-part01of02.tar.xz",
+      "bytes": 5349952,
+      "sha256": "a666c8b813da5bf3db40f1b420b5b951a8946c8a40dca2390ce7514103633f5c",
+      "group": "volvo-approved",
+      "library_file_id": "libfile_071825002a408191affabd8c6713724d",
+      "version": 0,
+      "restoreOrder": 48,
+      "file_id": "file_000000001de481f5aa88a87d3a78f169"
+    },
+    {
+      "filename": "Roadmark-recovery-volvo-approved-20261014T085728Z-part02of02.tar.xz",
+      "bytes": 576148,
+      "sha256": "3f036128215962d43460efa1a4ccf25e65413fd73dfde7643f0e560865700d7b",
+      "group": "volvo-approved",
+      "library_file_id": "libfile_1971ec1a56f48191840d42211fce390c",
+      "version": 0,
+      "restoreOrder": 49,
+      "file_id": "file_00000000c55481f6b2e90b9471fe5e35"
+    },
+    {
+      "filename": "Roadmark-recovery-qa-volvo-integrated-20261014T090054Z-part01of01.tar.xz",
+      "bytes": 1776432,
+      "sha256": "cd09003f191d5fa57d479f83b7f668beeb7715a024f4a1234579594e61f06035",
+      "group": "qa-volvo-integrated",
+      "library_file_id": "libfile_7aa9d7c3d74881919bd3e17b0ef31bd5",
+      "version": 0,
+      "restoreOrder": 50,
+      "file_id": "file_00000000895c82309d408d682f8b5f99"
+    }
+  ],
+  "verifierLibraryFileId": "libfile_ca3a7f7c6970819188bdbf0b22dd8acb",
+  "cleanupListLibraryFileId": "libfile_cb182812848c8191a3755bd1607a99cc",
+  "copyTransformations": {
+    "sourceCopies": [
+      {
+        "bytes": 732552,
+        "sha256": "fb34e31bc3bdf5a1a2e1673d33ba9ab1ba6a8c0a3c2d3fb49e7e4267789b422d",
+        "originalBytes": 733472,
+        "originalSHA256": "e6b1f6adae33871d57f0c6bd730571cf64fed06ae4166c1947aed422d97b4a7f",
+        "redactedHeaderPaths": [
+          "/sources/5/headers/set-cookie",
+          "/sources/6/headers/set-cookie",
+          "/sources/7/headers/set-cookie",
+          "/sources/19/headers/set-cookie",
+          "/sources/20/headers/set-cookie",
+          "/sources/23/headers/Set-Cookie",
+          "/sources/24/headers/set-cookie",
+          "/sources/29/headers/set-cookie",
+          "/sources/33/headers/set-cookie",
+          "/sources/35/headers/Set-Cookie"
+        ],
+        "path": "data/farizon-foton-jac-trucks-evidence.json"
+      }
+    ],
+    "reusedQaCopies": [
+      {
+        "path": "roadmark-104-qa/source-package-roundtrip/roadmark/data/farizon-foton-jac-trucks-evidence.json",
+        "bytes": 732552,
+        "sha256": "fb34e31bc3bdf5a1a2e1673d33ba9ab1ba6a8c0a3c2d3fb49e7e4267789b422d",
+        "originalBytes": 733472,
+        "originalSHA256": "e6b1f6adae33871d57f0c6bd730571cf64fed06ae4166c1947aed422d97b4a7f",
+        "redactedHeaderPaths": [
+          "/sources/5/headers/set-cookie",
+          "/sources/6/headers/set-cookie",
+          "/sources/7/headers/set-cookie",
+          "/sources/19/headers/set-cookie",
+          "/sources/20/headers/set-cookie",
+          "/sources/23/headers/Set-Cookie",
+          "/sources/24/headers/set-cookie",
+          "/sources/29/headers/set-cookie",
+          "/sources/33/headers/set-cookie",
+          "/sources/35/headers/Set-Cookie"
+        ]
+      }
+    ],
+    "newQaDeltaCopyRedactions": 0,
+    "volvoBackupCopyRedactions": 0,
+    "note": "The same ten known legacy source cookie-header locations are redacted again in the new full source; the matching sanitized QA roundtrip file is reused unchanged."
+  },
+  "upstreamVolvoSanitization": {
+    "checkedAt": "2026-10-14",
+    "changes": [
+      {
+        "path": "large/ex90-summary.html",
+        "priorSha256": "0644f4904b57f421c3f4cb0a7f6a4189a749793a350a5a59ea70acb0572276fa",
+        "sanitizedSha256": "a1b75efb76d76c44f79365975e3aa158da093deecc023bee0e41f3b486c474e1",
+        "transformations": {
+          "configuration-runtime-attribute": 1,
+          "escaped-configuration-runtime-attribute": 0
+        },
+        "reason": "Remove ephemeral runtime configuration identifiers or anti-bot cookie/challenge script; no vehicle facts, public source URL or ordinary configuration/stock ID removed."
+      },
+      {
+        "path": "large/ex90-ultra-summary.html",
+        "priorSha256": "c35cf129bbcfed5bb7d2b73166bec17a240e81ccea306b4bb0b3d3bc5f795adb",
+        "sanitizedSha256": "64dcb5b6805dff8299a04fd1eb8b41e42b421d302b9c7f66fe39e2e11652895b",
+        "transformations": {
+          "configuration-runtime-attribute": 1,
+          "escaped-configuration-runtime-attribute": 0
+        },
+        "reason": "Remove ephemeral runtime configuration identifiers or anti-bot cookie/challenge script; no vehicle facts, public source URL or ordinary configuration/stock ID removed."
+      },
+      {
+        "path": "large/es90-ultra-summary.html",
+        "priorSha256": "a75665dc5c3bce8e04f483fa69dafcb70b9ed52cd005a98334de7e067810ab55",
+        "sanitizedSha256": "aa6c48b597ad30820d1ebc907087ff65aa3c466166793e4a6fbc803ba03fdf79",
+        "transformations": {
+          "configuration-runtime-attribute": 1,
+          "escaped-configuration-runtime-attribute": 0
+        },
+        "reason": "Remove ephemeral runtime configuration identifiers or anti-bot cookie/challenge script; no vehicle facts, public source URL or ordinary configuration/stock ID removed."
+      },
+      {
+        "path": "large/es90-summary.html",
+        "priorSha256": "17543519f97f2760c124397eed77589b1488a66c5611e194c80900405e0cb822",
+        "sanitizedSha256": "ce5f08edc21e3eb616a92fd780718401f15f47048092f91ca80d7c788d3a791a",
+        "transformations": {
+          "configuration-runtime-attribute": 1,
+          "escaped-configuration-runtime-attribute": 0
+        },
+        "reason": "Remove ephemeral runtime configuration identifiers or anti-bot cookie/challenge script; no vehicle facts, public source URL or ordinary configuration/stock ID removed."
+      },
+      {
+        "path": "large/es90-ultra-my26-new.html",
+        "priorSha256": "c481d5527b89b45562cb9516f2c0d443eca9425962d64004c59487d09dd4d004",
+        "sanitizedSha256": "d6a07f01018db39d38dc8bbcb2a73a36862c5d8782163c53e11c50b63a094e30",
+        "transformations": {
+          "configuration-runtime-attribute": 0,
+          "escaped-configuration-runtime-attribute": 0,
+          "anti-bot-script": 2
+        },
+        "reason": "Remove ephemeral runtime configuration identifiers or anti-bot cookie/challenge script; no vehicle facts, public source URL or ordinary configuration/stock ID removed."
+      },
+      {
+        "path": "large/es90-plus-my26-new.html",
+        "priorSha256": "2445b078bd4577a462dd08a91d0f6f9b02963e9a864090672a675991bdb67f18",
+        "sanitizedSha256": "d6a07f01018db39d38dc8bbcb2a73a36862c5d8782163c53e11c50b63a094e30",
+        "transformations": {
+          "configuration-runtime-attribute": 0,
+          "escaped-configuration-runtime-attribute": 0,
+          "anti-bot-script": 2
+        },
+        "reason": "Remove ephemeral runtime configuration identifiers or anti-bot cookie/challenge script; no vehicle facts, public source URL or ordinary configuration/stock ID removed."
+      },
+      {
+        "path": "large/es90-ultra-config.html",
+        "priorSha256": "bde5bd43b741711225596a1f9afc313943c93fb3f6621245f884498dc882e7d1",
+        "sanitizedSha256": "11c4ce926c7545a1aab763cff466f93324d02a1aab224e23a612307853ca5821",
+        "transformations": {
+          "configuration-runtime-attribute": 1,
+          "escaped-configuration-runtime-attribute": 0
+        },
+        "reason": "Remove ephemeral runtime configuration identifiers or anti-bot cookie/challenge script; no vehicle facts, public source URL or ordinary configuration/stock ID removed."
+      },
+      {
+        "path": "large/ex90-ultra-config.html",
+        "priorSha256": "09b64ef5078815cb05c940d7ccede278d2d29fec4c7097321b32e706a7b3aa78",
+        "sanitizedSha256": "aea6f8ed63061fe6385c88dacb20525bc0bdb917cd2460e87518252b532933ba",
+        "transformations": {
+          "configuration-runtime-attribute": 1,
+          "escaped-configuration-runtime-attribute": 0
+        },
+        "reason": "Remove ephemeral runtime configuration identifiers or anti-bot cookie/challenge script; no vehicle facts, public source URL or ordinary configuration/stock ID removed."
+      },
+      {
+        "path": "large/es90-levels.html",
+        "priorSha256": "1a7f6967d6765dda69d3ea5f50bad87876ade88eb0e39361d690c7112e9e3a68",
+        "sanitizedSha256": "6e85f621ceaee84633fd66917f2ca1571c4a5dc9684a6a4145685f98a663b707",
+        "transformations": {
+          "configuration-runtime-attribute": 1,
+          "escaped-configuration-runtime-attribute": 0
+        },
+        "reason": "Remove ephemeral runtime configuration identifiers or anti-bot cookie/challenge script; no vehicle facts, public source URL or ordinary configuration/stock ID removed."
+      },
+      {
+        "path": "large/ex90-levels.html",
+        "priorSha256": "64bee5326f7346c0cc42786d84d738e6e297fdc0e88b6012667d9d85f663ff9b",
+        "sanitizedSha256": "609f45ed4858738450dd1c9a0c223523561e1f787c66f2d12acc83c217d41b29",
+        "transformations": {
+          "configuration-runtime-attribute": 1,
+          "escaped-configuration-runtime-attribute": 0
+        },
+        "reason": "Remove ephemeral runtime configuration identifiers or anti-bot cookie/challenge script; no vehicle facts, public source URL or ordinary configuration/stock ID removed."
+      },
+      {
+        "path": "large/es90-config.html",
+        "priorSha256": "b468bb9b13a8a2bad801c505c0df7cc83c77303c37a7a6e435fafa63058ff5b0",
+        "sanitizedSha256": "63a9ae9ff778bd75d1e831d7ff0fb3a22a6316caa1c6ea5d84e044704529c2ef",
+        "transformations": {
+          "configuration-runtime-attribute": 1,
+          "escaped-configuration-runtime-attribute": 0
+        },
+        "reason": "Remove ephemeral runtime configuration identifiers or anti-bot cookie/challenge script; no vehicle facts, public source URL or ordinary configuration/stock ID removed."
+      },
+      {
+        "path": "large/ex90-config.html",
+        "priorSha256": "3d1f4edef96297bb5203bb5459c1e7dc9f8b299b3a3d14f6ce049146b33893d2",
+        "sanitizedSha256": "be1c7a9c516122cdc7229703960ab681e91688773545ec5fff256601ccb5807c",
+        "transformations": {
+          "configuration-runtime-attribute": 1,
+          "escaped-configuration-runtime-attribute": 0
+        },
+        "reason": "Remove ephemeral runtime configuration identifiers or anti-bot cookie/challenge script; no vehicle facts, public source URL or ordinary configuration/stock ID removed."
+      },
+      {
+        "path": "current/ex60-p10-equipment.html",
+        "priorSha256": "3d9d1d2577c374c38a7f8248028948f7452b219b747a3e36cc6de8fd78969dd3",
+        "sanitizedSha256": "43a476634f47f13a16f42e7f28480c419b0ec559c5a8eafd30b8120d88c03230",
+        "transformations": {
+          "configuration-runtime-attribute": 1,
+          "escaped-configuration-runtime-attribute": 0
+        },
+        "reason": "Remove ephemeral runtime configuration identifiers or anti-bot cookie/challenge script; no vehicle facts, public source URL or ordinary configuration/stock ID removed."
+      },
+      {
+        "path": "current/ex60-p6-equipment.html",
+        "priorSha256": "1099c2a821c425357159391e91b9e4cd7035d8d69e0270e19839e2b4702331d8",
+        "sanitizedSha256": "126f1c346c6fd29f8f26ce1e346affe9dbc9d9f702874af3179f43480fd2da84",
+        "transformations": {
+          "configuration-runtime-attribute": 1,
+          "escaped-configuration-runtime-attribute": 0
+        },
+        "reason": "Remove ephemeral runtime configuration identifiers or anti-bot cookie/challenge script; no vehicle facts, public source URL or ordinary configuration/stock ID removed."
+      },
+      {
+        "path": "current/ex60-powertrain-comparison.html",
+        "priorSha256": "e733b3eaf4f630d55277dc1cbf99a2bc08f1f5ded6844137dd015e10e9782f44",
+        "sanitizedSha256": "a2d503d4d9e97e27cd8676b386061d1f68b70655c185a7e9b8121a46f6d3a852",
+        "transformations": {
+          "configuration-runtime-attribute": 1,
+          "escaped-configuration-runtime-attribute": 0
+        },
+        "reason": "Remove ephemeral runtime configuration identifiers or anti-bot cookie/challenge script; no vehicle facts, public source URL or ordinary configuration/stock ID removed."
+      },
+      {
+        "path": "current/ex60-p10-config.html",
+        "priorSha256": "af90a1f194a168c77dfaf83d96d7e89fd1742d168775ff494443c29896109d96",
+        "sanitizedSha256": "f21e25984cdcdf8e29774b55b98359fdd6c4fb46ae822ddbef0a0100c1c61a63",
+        "transformations": {
+          "configuration-runtime-attribute": 1,
+          "escaped-configuration-runtime-attribute": 0
+        },
+        "reason": "Remove ephemeral runtime configuration identifiers or anti-bot cookie/challenge script; no vehicle facts, public source URL or ordinary configuration/stock ID removed."
+      },
+      {
+        "path": "current/ex60-config.html",
+        "priorSha256": "a7c9fbf77492897bf51bd7a78dd205a2142ce64d0de436d1be8f130f93390673",
+        "sanitizedSha256": "12f8b9b2d45b1d44d0e750f9a969be608966e6798f750324f6a5622d929fcc20",
+        "transformations": {
+          "configuration-runtime-attribute": 1,
+          "escaped-configuration-runtime-attribute": 0
+        },
+        "reason": "Remove ephemeral runtime configuration identifiers or anti-bot cookie/challenge script; no vehicle facts, public source URL or ordinary configuration/stock ID removed."
+      },
+      {
+        "path": "compact/ex40-twin-selected.html",
+        "priorSha256": "71c8f72bd2c5d86cfde77a63f17b4eb66d64def8fb6cb4b4ea9e02a5787e4722",
+        "sanitizedSha256": "28c472c66bc4f089e469374a77f5b9c194259c605bb34a02c743e02f58776780",
+        "transformations": {
+          "configuration-runtime-attribute": 1,
+          "escaped-configuration-runtime-attribute": 0
+        },
+        "reason": "Remove ephemeral runtime configuration identifiers or anti-bot cookie/challenge script; no vehicle facts, public source URL or ordinary configuration/stock ID removed."
+      },
+      {
+        "path": "compact/ex30-ultra-selected.html",
+        "priorSha256": "405b532749d5de655e046f39d9eb116d2062fa0dbb6ee13aed7da8589a7b0d49",
+        "sanitizedSha256": "43147c393fe04eed16f36b0f000258b0b72857083dc47109e3cac43abcd2c06d",
+        "transformations": {
+          "configuration-runtime-attribute": 1,
+          "escaped-configuration-runtime-attribute": 0
+        },
+        "reason": "Remove ephemeral runtime configuration identifiers or anti-bot cookie/challenge script; no vehicle facts, public source URL or ordinary configuration/stock ID removed."
+      }
+    ],
+    "rawValuesLogged": false
+  },
+  "privacy": "All new archive members and generated documents passed the bounded known-value/runtime-pattern scan. Zero known-value matches, primary-header candidates, unclassified runtime candidates or scan errors. All reused archives match previously audited sizes and SHA-256. Final Volvo backup payloads match the frozen sanitized research; 19 upstream runtime-value transformations are documented. New QA-delta files need no redaction; one legacy source file has the same ten documented header redactions reapplied. These checks are not proof of absence of every possible secret.",
+  "imageProvenance": {
+    "verifiedAt": "2026-10-14T08:44:56.179775+00:00",
+    "basis": "Research owner confirmed the only saved image is a local pdftoppm render from the adjacent public Volvo technical PDF, used to verify table columns. No browser screenshots saved or requested.",
+    "images": [
+      {
+        "path": "volvo-research/current/ex60-global-my27-page1.png",
+        "bytes": 316275,
+        "sha256": "eb7b4a9cb60f22a0cefd8c19a8f35562a34fc9219d32f394d51f85becd5a4181",
+        "classification": "Local public PDF page render; not a browser screenshot"
+      }
+    ],
+    "qaImages": [
+      {
+        "path": "roadmark-104-qa/volvo-independent-review/es90-my26-global-page1.png",
+        "bytes": 359788,
+        "sha256": "75890ad3c8923c3241fddf0fdaced806730e164a0ffc3f5fef694635e5fab7a0",
+        "classification": "Local public technical-PDF page render; not a browser screenshot",
+        "provenance": "Research owner confirmed reviewer EX90/ES90/EX60 technical PDF page images were rendered locally from named public PDFs; no browser screenshots."
+      },
+      {
+        "path": "roadmark-104-qa/volvo-independent-review/es90-my26-global-page2.png",
+        "bytes": 392293,
+        "sha256": "f2ff5eaedf94bd1d4c8b8106ed059f9f5f06dd26cb3b3d66c037c4a669a9f25f",
+        "classification": "Local public technical-PDF page render; not a browser screenshot",
+        "provenance": "Research owner confirmed reviewer EX90/ES90/EX60 technical PDF page images were rendered locally from named public PDFs; no browser screenshots."
+      },
+      {
+        "path": "roadmark-104-qa/volvo-independent-review/es90-my27-dk-page1.png",
+        "bytes": 199657,
+        "sha256": "1264d64c98db123d43bb42c71afadbd40d806138755adeebd5e216dda7c83d06",
+        "classification": "Local public technical-PDF page render; not a browser screenshot",
+        "provenance": "Research owner confirmed reviewer EX90/ES90/EX60 technical PDF page images were rendered locally from named public PDFs; no browser screenshots."
+      },
+      {
+        "path": "roadmark-104-qa/volvo-independent-review/es90-my27-it-page21.png",
+        "bytes": 343584,
+        "sha256": "cda2e1ea7baa81295ef901a8cb1d7d0df743c5cb3bcaddd2ffaa0a6818347723",
+        "classification": "Local public technical-PDF page render; not a browser screenshot",
+        "provenance": "Research owner confirmed reviewer EX90/ES90/EX60 technical PDF page images were rendered locally from named public PDFs; no browser screenshots."
+      },
+      {
+        "path": "roadmark-104-qa/volvo-independent-review/ex60-my27-global-page1.png",
+        "bytes": 297774,
+        "sha256": "28bbe6a1417948a27119ff23e1266fe2c2a45b28204801cb4c7f2a1ebee44ff0",
+        "classification": "Local public technical-PDF page render; not a browser screenshot",
+        "provenance": "Research owner confirmed reviewer EX90/ES90/EX60 technical PDF page images were rendered locally from named public PDFs; no browser screenshots."
+      },
+      {
+        "path": "roadmark-104-qa/volvo-independent-review/ex90-my27-dk-page1.png",
+        "bytes": 205534,
+        "sha256": "20b0137a68c95067fd310fa0388f46d27bd62fec24a1504ab88fa1145d9cd1c6",
+        "classification": "Local public technical-PDF page render; not a browser screenshot",
+        "provenance": "Research owner confirmed reviewer EX90/ES90/EX60 technical PDF page images were rendered locally from named public PDFs; no browser screenshots."
+      }
+    ],
+    "qaImageCount": 6,
+    "researchImageCount": 1,
+    "totalImageCount": 7
+  },
+  "priorToyotaBrowserScreenshotExclusions": {
+    "result": "Excluded before any upload",
+    "provenance": "Verified from current/build_normalized.py and REVIEW.md: official PDFs displayed in cloud Chrome and captured as browser screenshots.",
+    "files": [
+      {
+        "path": "toyota-research/current/bz4x-spec-p1.png",
+        "bytes": 94027,
+        "sha256": "2d9242f9136c653566bb169e0621106f9bafe749e465961139d45dd688b660a1",
+        "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+      },
+      {
+        "path": "toyota-research/current/bz4x-spec-p2.png",
+        "bytes": 92201,
+        "sha256": "ab1c9676f743f030ec5fc29654e6961c48ac8f31801456cd6307bc352d4e2275",
+        "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+      },
+      {
+        "path": "toyota-research/current/hilux-spec-p2.png",
+        "bytes": 91974,
+        "sha256": "08adef635b8744c02336ada1b02b674ee6b4f0e0012a3bd0fb3f2d1f1c0af368",
+        "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+      },
+      {
+        "path": "toyota-research/current/hilux-spec-p3.png",
+        "bytes": 88131,
+        "sha256": "2bf2bdd69b4c558d94b9561202fb49046211dbbb41806113b47597c4bd9495ca",
+        "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+      },
+      {
+        "path": "toyota-research/current/touring-spec-p2.png",
+        "bytes": 85836,
+        "sha256": "9525bbd89757a7ac6311fec7f82e5c5a3c0aee6d50c1ec1ff232a247ece90491",
+        "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+      }
+    ]
+  },
+  "integrity": {
+    "result": "PASS",
+    "archivesVerified": 50,
+    "restoredFilesVerified": 4725,
+    "restoredBytes": 1660922779
+  },
+  "workState": {
+    "workingCheckpoint": 104,
+    "latestDeliveredCheckpoint": 103,
+    "milestone": "M1 open",
+    "registeredPackets": 12,
+    "totalVersions": 385,
+    "tier1Versions": 308,
+    "onSaleVersions": 295,
+    "coreReviewNote": "Grades require an explicit sourced M1 review; legacy statuses do not earn Confirmed. 4368/5015 on-sale core cells reviewed; unsuccessful searches need two cited sources.",
+    "latestIntegratedBrand": "Volvo",
+    "volvoVersions": 20,
+    "volvoCurrentMY27": 9,
+    "volvoAdvertisedNewMY26": 9,
+    "volvoProvisionalEX60": 2,
+    "volvoOnSaleVersions": 18,
+    "volvoNewIdentities": 11,
+    "volvoCoreCells": 340,
+    "volvoFactEdits": 647,
+    "volvoSharedTerms": 3,
+    "volvoCitableFacts": 707,
+    "volvoFeatures": 224,
+    "volvoResearchClosure": false,
+    "volvoOpenIssues": [
+      "Six current-version or known model/lead dispositions remain open; no false census closure",
+      "C5 ranking coverage remains below target; sourced Reported values stay visible and unranked"
+    ],
+    "passingVolvoCriteria": [
+      "C2",
+      "C3",
+      "C4",
+      "C6"
+    ],
+    "openVolvoCriteria": [
+      "C1",
+      "C5"
+    ],
+    "criteriaStatus": "C1/C5 census/evidence gaps remain; no strict completion claim",
+    "sharedApplicationRuntimeAndTestsChanged": false,
+    "reportingLoaderRegistrationChanged": true,
+    "reportingLoaderChange": "Two-line Volvo reconciliation import and combineM1Reconciliations registration; shared src/ and tests/ unchanged",
+    "currentResearchBrand": "GWM",
+    "nextResearchBrand": "GAC",
+    "latestRootChecks": {
+      "brand": "Volvo",
+      "researchCompleted": false,
+      "integrationTests": {
+        "passed": 82,
+        "failed": 0
+      },
+      "validateExit": 0,
+      "coverageExit": 0,
+      "typecheckExit": 0,
+      "changedFileLintExit": 0
+    },
+    "hyundai": "Deferred six-seat lead remains unresolved",
+    "volkswagen": "Two explicit census issues remain unresolved",
+    "fullAggregateSuite": "Not rerun; earlier through-Hyundai full-suite log remains interrupted/partial without terminal aggregate result",
+    "productionBuild": "Not rerun for this integration"
+  },
+  "cleanup": {
+    "affectedOriginalsRetained": 12,
+    "intermediateCopiesRetained": 3,
+    "deletions": 0,
+    "replacements": 0
+  },
+  "scope": "Full Volvo-integrated source and approved research plus stable QA delta over the verified Volkswagen chain. Local provisional Volvo archives were never uploaded and are not required for restore. No later GWM research is included."
+}

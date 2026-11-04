@@ -1,0 +1,128 @@
+{
+  "schemaVersion": "roadmark97.static-save-review.v1",
+  "status": "static_tooling_approved_conditional_on_actual_final_binding",
+  "staticBlockers": [],
+  "packetManifestSHA256": "8b0c79fbe68ec92ef1b16ee73d596197c76f0e6b1832f8695efe4922c4309287",
+  "packetSHA256SUMS": "fb1c349fd490e4885482ee4c4e5b256c9c025ca59c0a5843e2b91c35ec19fa32",
+  "reviewedPacketFiles": [
+    {
+      "path": "README.md",
+      "sha256": "1b972ae44e171a81a7ab73737d85c35b1085781dac8b1304c108b9775fbc9854",
+      "bytes": 5653
+    },
+    {
+      "path": "RESEARCH-FILES.template.json",
+      "sha256": "256410d0685f4f9e90f612a5703715aada822e2539142a797756929bcd66a674",
+      "bytes": 4105
+    },
+    {
+      "path": "ROOT-ACCEPTANCE.md",
+      "sha256": "e7e98ad35c1f3e41a471d1b928b2229e98ed5548ca30d6c4562405f0aac6ddef",
+      "bytes": 10040
+    },
+    {
+      "path": "ROOT-COPY-OBSERVATION.template.json",
+      "sha256": "d9c1f3fdfae5949d78e596d61d250d7ac6e5f4911587b0689ebff2d9022c518f",
+      "bytes": 1271
+    },
+    {
+      "path": "ROOT-EXTERNAL-EXIT.template.json",
+      "sha256": "35ae00bb05fd24e6c7cf32a489d55f5ffc10410814f52a371962b7b50688f34f",
+      "bytes": 224
+    },
+    {
+      "path": "ROOT-SAVE-INPUTS.template.json",
+      "sha256": "c51b1302f8ff7299d317638b6b96868c49a2413e9037fea2895dd706c7573ffd",
+      "bytes": 399
+    },
+    {
+      "path": "join_recovered97_source.py",
+      "sha256": "0f17d83d578dfd9ffe771c9f8a8022482657fc855588db7d938d252fd7123a61",
+      "bytes": 4232
+    },
+    {
+      "path": "package_checkpoint97.py",
+      "sha256": "adc1c204d5e75c0235cefde5ce1ee373d4500ae85a50c3f1c18047f1f303c2b3",
+      "bytes": 34574
+    },
+    {
+      "path": "verify_checkpoint97_saves.py",
+      "sha256": "90866f53c05e5f5a25af2559fc18c11806021d8e754bf3c08628db354ddbda10",
+      "bytes": 9652
+    }
+  ],
+  "allNineManifestPinsMatch": true,
+  "allTenChecksumRowsMatch": true,
+  "sourceScope": {
+    "baselineInputs": 1662,
+    "expectedInputs": 1668,
+    "actualInputs": 1668,
+    "candidateRows": 12,
+    "modifications": 6,
+    "additions": 6,
+    "deletedInputs": 0,
+    "deltaExactlyDerivesExpected": true,
+    "allCurrentExpectedHashesMatch": true,
+    "includedSymlinks": []
+  },
+  "priorSource": {
+    "bytes": 35980957,
+    "sha256": "07c72f00d60d88ea06d9bb0e88739af928940efb5b4def11a516edc84bff2e8b",
+    "inventoriedPayloads": 2215,
+    "zipEntries": 2216,
+    "exactMembership": true,
+    "zipReadCRCCheckPassed": true,
+    "allBaselineHashesMatchInventory": true,
+    "allSixPreimagesIndependentlyMatch": true,
+    "new97HistoryCollision": false,
+    "priorManifestExcludedQARasters": 15
+  },
+  "research": {
+    "count": 19,
+    "totalBytes": 196201,
+    "largestBytes": 45593,
+    "allHashesAndSizesMatch": true,
+    "allUTF8": true,
+    "targetedPrivateRawSignalScanFound": [],
+    "futureEvidenceNeedsIndependentReview": true
+  },
+  "protectedLibraryIDs": 32,
+  "performed": {
+    "staticReads": true,
+    "hashes": true,
+    "jsonZipComparisons": true,
+    "reviewFileWrites": true,
+    "candidateExecution": false,
+    "candidateImport": false,
+    "candidateSyntaxCheck": false,
+    "appWrite": false,
+    "tests": false,
+    "builds": false,
+    "browser": false,
+    "git": false,
+    "codexTask": false,
+    "uploads": false
+  },
+  "established": {
+    "successfulFullQA97": false,
+    "actualExternalExit97": false,
+    "currentBrowserCopyDisposition": false,
+    "finalBindingApproval": false,
+    "packagingApproval": false,
+    "newArchives": false,
+    "newJoinerExecution": false,
+    "newLibrarySaves": false,
+    "attachmentDelivery": false,
+    "releaseApproval": false
+  },
+  "conditions": [
+    "Actual complete successful current QA97 plus actual outer exit and retained launch logs",
+    "Truthful scoped current browser/copy and evidence-preservation receipt",
+    "All failed/retry/incomplete evidence retained honestly",
+    "Independently reviewed final save-input binding and research union",
+    "Root-only approved-pins syntax/execution in a new directory",
+    "Genuine shipped-kit reconstruction before any upload plan",
+    "Current supported create-only helper and offline real-result/xattr correlation",
+    "Separate actual native attachment-send results"
+  ]
+}

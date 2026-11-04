@@ -1,0 +1,1582 @@
+{
+  "createdAt": "2026-10-14T08:06:27.345035+00:00",
+  "source": {
+    "filename": "Roadmark-recovery-source-volkswagen-integrated-20261014T0752.tar.xz",
+    "bytes": 8008056,
+    "sha256": "a40daa85dda903738685dac397df6f25efd00d3316767f0d6c850b302d0bf95c",
+    "group": "source-volkswagen-integrated",
+    "library_file_id": "libfile_4f65ce69d4408191bfa1ba8ebce150d9",
+    "version": 0,
+    "restoreOrder": 39,
+    "file_id": "file_00000000380c822fb18bc633b00665f6"
+  },
+  "verification": {
+    "result": "PASS",
+    "createdAt": "2026-10-14T08:00:33.462712+00:00",
+    "sourceCaptureCutoff": "2026-10-14T07:57:28.714153+00:00",
+    "qaCaptureCutoff": "2026-10-14T07:58:15.016016+00:00",
+    "researchCaptureCutoff": "2026-10-14T07:54:16.983640+00:00",
+    "archiveCount": 47,
+    "archiveMemberOccurrencesVerified": 4355,
+    "payloadFiles": 4204,
+    "metadataFiles": 93,
+    "allRestoredFiles": 4297,
+    "allRestoredBytes": 1592882021,
+    "verificationFilesLinkedFromUnchangedPriorRestore": 4185,
+    "verificationFilesWritten": 170,
+    "currentSourceFiles": 635,
+    "currentQaFiles": 1297,
+    "unchangedResearchAndSupportFiles": 2048
+  },
+  "independentRecoveryVerification": {
+    "verifiedAt": "2026-10-14T08:04:56.966793+00:00",
+    "result": "PASS",
+    "scope": "Independent archive/staging/original-byte verification and complete restored tree verification against safe provisional baseline and new archive payloads. Read-only except this report; no application tests run.",
+    "checks": {
+      "newArchiveAllBytesAndMetadata_source": true,
+      "newArchiveAllBytesAndMetadata_research": true,
+      "newArchiveAllBytesAndMetadata_qa": true,
+      "source635FilesAnd8008056ArchiveBytes": true,
+      "sourceCaptureNoChanges": true,
+      "allCapturedOriginalBytesAndHashesMatchLive": true,
+      "allSourceQaResearchCopiedBytesMatchManifest": true,
+      "only2ExpectedCookieSanitizedCopies": true,
+      "qa53Changed1244Reused1297Current": true,
+      "qaNoMissingBaselineOrCaptureChanges": true,
+      "qaStageExact53ChangedFiles": true,
+      "qaAllExcludedPathsAccounted": true,
+      "approvedPacketHashesAcrossSourceResearchRestore": true,
+      "root82TestsExactPassLogAndZeroExit": true,
+      "shared81Checks80Plus1ExactPassLogs": true,
+      "sharedChecksDistinctAndIncludedInRoot82": true,
+      "sharedSource32NamedInvalidUpdateCasesAtBothStages": true,
+      "sharedSource6BroaderGuardCases": true,
+      "independentVolkswagenReplay26Categories": true,
+      "independentReplayCodeHashesMatchFrozenSource": true,
+      "independentReplayApprovedHashesMatch": true,
+      "rootValidationCoverageTypecheckLintExitZero": true,
+      "workStatusPreservesClosureFalseAndInterruptedAggregate": true,
+      "all10PublicPdfRendersMatchProvenance": true,
+      "archiveSelectionSafe45ReplaceOneSourceAppend2Deltas": true,
+      "44ReusedArchivesRetainLibraryIdentityHash": true,
+      "noExcludedCleanupArchivesSelected": true,
+      "all47SelectedArchiveBytesAndHashes": true,
+      "safeBaselineDeliverableEqualsVerifiedPriorFiles": true,
+      "independentlyExpected1297QaAnd224Research": true,
+      "wholeRestoreExact4297FileList": true,
+      "wholeRestoreEveryFileHashMatchesIndependentExpected": true,
+      "wholeRestoreByteCount1592882021": true,
+      "noRestoredSymlinks": true,
+      "2048OtherResearchSupportFilesUnchanged": true,
+      "allExistingArchivesUnchangedDuringVerification": true,
+      "capturedLiveSourceQaResearchUnchangedDuringVerification": true,
+      "sourceStageExactCapturedMembershipExcludingGeneratedPythonCache": true
+    },
+    "failures": [],
+    "warnings": [
+      "The frozen QA state text says 26 negative guard categories; those are the independent Volkswagen replay categories. The shared source file contains 32 named invalid-update cases plus six broader guard cases."
+    ],
+    "newArchives": [
+      {
+        "file": "Roadmark-recovery-source-volkswagen-integrated-20261014T0752.tar.xz",
+        "kind": "source",
+        "bytes": 8008056,
+        "sha256": "a40daa85dda903738685dac397df6f25efd00d3316767f0d6c850b302d0bf95c",
+        "payloadFiles": 635,
+        "metadataFiles": 1,
+        "mismatches": [],
+        "passed": true
+      },
+      {
+        "file": "Roadmark-recovery-volkswagen-final-delta-20261014T075416Z-part01of01.tar.xz",
+        "kind": "research",
+        "bytes": 266468,
+        "sha256": "f7f0c71936bcee9abe9d77517c5075209e7e890017c4c020f2fba8ffb73e9474",
+        "payloadFiles": 26,
+        "metadataFiles": 2,
+        "mismatches": [],
+        "passed": true
+      },
+      {
+        "file": "Roadmark-recovery-qa-volkswagen-integrated-20261014T075807Z-part01of01.tar.xz",
+        "kind": "qa",
+        "bytes": 808096,
+        "sha256": "116748dc05f6eeea05184157f4c2429064ff7bd18c459ec2a3f4ae15fe3063d1",
+        "payloadFiles": 53,
+        "metadataFiles": 2,
+        "mismatches": [],
+        "passed": true
+      }
+    ],
+    "source": {
+      "files": 635,
+      "archiveBytes": 8008056,
+      "captureCutoff": "2026-10-14T07:57:28.714153+00:00",
+      "sanitizedCopies": [
+        {
+          "scope": "source",
+          "path": "data/farizon-foton-jac-trucks-evidence.json",
+          "redactedHeaderCount": 10,
+          "exactSanitizedBytesMatch": true
+        }
+      ],
+      "stagingOnlyExcludedFiles": [
+        "scripts/__pycache__/package-source.cpython-312.pyc"
+      ],
+      "stagingOnlyExclusionReason": "Generated Python bytecode from importing the source packager; absent from captured source manifest, archive, and restored source. All 635 source payload paths are accounted for."
+    },
+    "qa": {
+      "baselineFiles": 1245,
+      "currentFiles": 1297,
+      "changedFiles": 53,
+      "unchangedFiles": 1244,
+      "addedFiles": 52,
+      "modifiedFiles": 1,
+      "missingPaths": [],
+      "captureCutoff": "2026-10-14T07:58:15.016016+00:00",
+      "exclusions": [
+        {
+          "path": "__pycache__/review-geely-packet.cpython-312.pyc",
+          "reason": "dependency, build, cache, or runtime directory"
+        },
+        {
+          "path": "__pycache__/review-jaecoo-packet.cpython-312.pyc",
+          "reason": "dependency, build, cache, or runtime directory"
+        },
+        {
+          "path": "__pycache__/review-mg-im-packet.cpython-312.pyc",
+          "reason": "dependency, build, cache, or runtime directory"
+        },
+        {
+          "path": "feature-overlay-staging/data",
+          "reason": "symlink excluded"
+        },
+        {
+          "path": "feature-overlay-staging/node_modules",
+          "reason": "symlink excluded"
+        },
+        {
+          "path": "roadmark-104-source-trial.tar.xz",
+          "reason": "superseded opaque trial archive; its source roundtrip is separately captured with header sanitization"
+        }
+      ],
+      "sanitizedCopies": [
+        {
+          "scope": "qa",
+          "path": "roadmark-104-qa/source-package-roundtrip/roadmark/data/farizon-foton-jac-trucks-evidence.json",
+          "redactedHeaderCount": 10,
+          "exactSanitizedBytesMatch": true
+        }
+      ]
+    },
+    "approvedArtifacts": {
+      "volkswagen-2026-10-14.json": {
+        "sha256": "208581fcff2c9e0dcd8a54ca0d11faff9423db1cb635211156722815d9e61513",
+        "sourcePath": "data/m1-brand-updates/volkswagen-2026-10-14.json",
+        "matchesSourceResearchAndRestore": true
+      },
+      "volkswagen-reconciliation-2026-10-14.json": {
+        "sha256": "1f91c72014f4120cc907a62937da0fd9be3431e89f74d7088cef3ba12f218b33",
+        "sourcePath": "data/m1-volkswagen-market-reconciliation-2026-10-14.json",
+        "matchesSourceResearchAndRestore": true
+      }
+    },
+    "testEvidence": {
+      "rootIntegration": {
+        "path": "roadmark-104-qa/m1-volkswagen-integration.log",
+        "sha256": "d28772009fdebc92615716a64830eb862d4d630a60efc675c6a3be8b31b2984b",
+        "summary": {
+          "tests": 82,
+          "pass": 82,
+          "fail": 0,
+          "cancelled": 0,
+          "skipped": 0,
+          "todo": 0
+        },
+        "passingTestNames": [
+          "new brand-packet versions render complete exact detail and per-claim evidence controls",
+          "explicit configuration review releases only its proven scope and preserves inputs and incomplete-record status",
+          "legacy packets and empty registries never lift a configuration hold",
+          "configuration approval preserves independent fact measurement, grade, source and freshness exclusions",
+          "identity, exact before scope, existing-target uniqueness, brand and tier are checked independently at both stages",
+          "configuration review rejects duplicate target at preparation and catalogue application",
+          "configuration review rejects no reason at preparation and catalogue application",
+          "configuration review rejects no dependencies at preparation and catalogue application",
+          "configuration review rejects duplicate dependency at preparation and catalogue application",
+          "configuration review rejects dependency drift at preparation and catalogue application",
+          "configuration review rejects dependency absent from packet at preparation and catalogue application",
+          "configuration review rejects unrelated release proof at preparation and catalogue application",
+          "configuration review rejects missing release proof at preparation and catalogue application",
+          "configuration review rejects missing historical boundaries at preparation and catalogue application",
+          "configuration review rejects retained hold changed at preparation and catalogue application",
+          "configuration review rejects no source snapshots at preparation and catalogue application",
+          "configuration review rejects source drift at preparation and catalogue application",
+          "configuration review rejects blocked source at preparation and catalogue application",
+          "configuration review rejects missing cited source at preparation and catalogue application",
+          "configuration review rejects mismatched scope sources at preparation and catalogue application",
+          "configuration review rejects complete-record promotion at preparation and catalogue application",
+          "configuration review rejects source identity changed at preparation and catalogue application",
+          "configuration review rejects build options changed at preparation and catalogue application",
+          "configuration review rejects pricing boundary changed at preparation and catalogue application",
+          "configuration review rejects unknown added field at preparation and catalogue application",
+          "configuration review rejects null after at preparation and catalogue application",
+          "configuration review rejects null before at preparation and catalogue application",
+          "configuration review rejects string ranking flag at preparation and catalogue application",
+          "configuration review rejects string complete flag at preparation and catalogue application",
+          "configuration review rejects empty scope at preparation and catalogue application",
+          "configuration review rejects mistyped source IDs at preparation and catalogue application",
+          "configuration review rejects mistyped conditions at preparation and catalogue application",
+          "configuration review rejects mistyped counts at preparation and catalogue application",
+          "configuration review rejects promoted counts at preparation and catalogue application",
+          "configuration review rejects non-null hold at preparation and catalogue application",
+          "configuration review rejects mistyped review at preparation and catalogue application",
+          "configuration review rejects mistyped release at preparation and catalogue application",
+          "later dependent fact correction needs a renewed configuration review with an exact before state",
+          "a two-source whole-row equipment search earns Not published without changing the input",
+          "whole-row missing equipment needs canonical text, status and a genuine two-source review",
+          "Not published Fact values remain null-only, including hybrid citation shapes",
+          "a whole-row search cannot use an unrelated missing fact or known brochure/numeric proxy",
+          "whole-row searches still reject exact before, source, identity and dependency drift",
+          "reviewed missing equipment and null facts never become ranking values",
+          "reviewed feature replacement preserves inputs and carries its new citations and grade",
+          "feature target, exact before metadata, version and source snapshots fail closed",
+          "feature grades require current review provenance and full matching citations",
+          "Confirmed equipment keeps explicitly reviewed optional, unavailable and not-applicable fitment",
+          "dependencies must exactly match post-packet facts",
+          "a mixed feature can cite an earned null Not published fact without weakening fact grading",
+          "later fact changes require a reviewed feature replacement and replay exact before states",
+          "canonical driveaway and roadside equipment rows cannot be manually overwritten",
+          "current metadata and availability preserve historical feature warnings through cloned and chained research",
+          "new packet versions retain their admission warning context before same-packet availability changes",
+          "current pack, citable claims and portable hydration carry the reviewed feature",
+          "Not published survives detail/evidence, citable JSON and exact portable transport",
+          "immutable Tesla source snapshots still pack while current Tesla storage uses the reviewed overlay",
+          "original source defaults and earlier registered feature packets retain their exact evidence baselines",
+          "configuration overlays retain historical feature scope and warnings instead of rebasing before guards",
+          "dated fact updates target the reviewed version and preserve original sources, dates and cars",
+          "wrong identity, tier, source drift and changed fact snapshots fail closed",
+          "new versions have complete unknown rows and no fabricated update counts",
+          "new versions do not acquire unrelated catalogue equipment fields or source-derived labels",
+          "new grades require genuine search evidence and price ladder provenance",
+          "availability and current metadata changes use reviewed guards",
+          "summary freshness and correction invalidation use actual fact dependencies",
+          "public research, catalogue, packs and exact-version route enumeration share added IDs",
+          "brand terms are stored once, inherited only within reviewed scope, and project roadside into equipment",
+          "reviewed national and state driveaway facts project value, provenance and conditions into feature claims",
+          "before-on-road canonical prices preserve separately sourced driveaway feature evidence",
+          "withdrawn or incomplete canonical driveaway reviews never replace the separate feature",
+          "a separately reviewed driveaway offer updates its answer without replacing the higher-rung list price",
+          "supplemental driveaway offers require the same price provenance as canonical prices",
+          "a guarded valid replacement clears its stale review marker without weakening identity, fact or source guards",
+          "confirmed paid roadside terms project optional fitment without changing evidence, conditions or other facts",
+          "explicit included roadside fitment and metadata-free legacy terms keep their intended status",
+          "malformed or misplaced explicit roadside fitment fails closed instead of becoming standard",
+          "roadside fitment is guarded in complete before snapshots and only a reviewed replacement may change it",
+          "withdrawn roadside reviews or sources cannot earn optional projection or bypass source snapshot guards",
+          "withdrawal clears a reused roadside projection while preserving separately reviewed source-row fallback",
+          "canonical roadside terms still prohibit competing manual feature edits",
+          "portable roadside facts and evidence claims preserve optional fitment, Confirmed provenance and exact conditions"
+        ]
+      },
+      "sharedRegression": {
+        "path": "roadmark-104-qa/configuration-scope-regression.log",
+        "sha256": "9b9741611f1e12e2de42462144176f59b3495c6cd930a81fd2ca3e2d1c6151cc",
+        "summary": {
+          "tests": 80,
+          "pass": 80,
+          "fail": 0,
+          "cancelled": 0,
+          "skipped": 0,
+          "todo": 0
+        },
+        "passingTestNames": [
+          "explicit configuration review releases only its proven scope and preserves inputs and incomplete-record status",
+          "legacy packets and empty registries never lift a configuration hold",
+          "configuration approval preserves independent fact measurement, grade, source and freshness exclusions",
+          "identity, exact before scope, existing-target uniqueness, brand and tier are checked independently at both stages",
+          "configuration review rejects duplicate target at preparation and catalogue application",
+          "configuration review rejects no reason at preparation and catalogue application",
+          "configuration review rejects no dependencies at preparation and catalogue application",
+          "configuration review rejects duplicate dependency at preparation and catalogue application",
+          "configuration review rejects dependency drift at preparation and catalogue application",
+          "configuration review rejects dependency absent from packet at preparation and catalogue application",
+          "configuration review rejects unrelated release proof at preparation and catalogue application",
+          "configuration review rejects missing release proof at preparation and catalogue application",
+          "configuration review rejects missing historical boundaries at preparation and catalogue application",
+          "configuration review rejects retained hold changed at preparation and catalogue application",
+          "configuration review rejects no source snapshots at preparation and catalogue application",
+          "configuration review rejects source drift at preparation and catalogue application",
+          "configuration review rejects blocked source at preparation and catalogue application",
+          "configuration review rejects missing cited source at preparation and catalogue application",
+          "configuration review rejects mismatched scope sources at preparation and catalogue application",
+          "configuration review rejects complete-record promotion at preparation and catalogue application",
+          "configuration review rejects source identity changed at preparation and catalogue application",
+          "configuration review rejects build options changed at preparation and catalogue application",
+          "configuration review rejects pricing boundary changed at preparation and catalogue application",
+          "configuration review rejects unknown added field at preparation and catalogue application",
+          "configuration review rejects null after at preparation and catalogue application",
+          "configuration review rejects null before at preparation and catalogue application",
+          "configuration review rejects string ranking flag at preparation and catalogue application",
+          "configuration review rejects string complete flag at preparation and catalogue application",
+          "configuration review rejects empty scope at preparation and catalogue application",
+          "configuration review rejects mistyped source IDs at preparation and catalogue application",
+          "configuration review rejects mistyped conditions at preparation and catalogue application",
+          "configuration review rejects mistyped counts at preparation and catalogue application",
+          "configuration review rejects promoted counts at preparation and catalogue application",
+          "configuration review rejects non-null hold at preparation and catalogue application",
+          "configuration review rejects mistyped review at preparation and catalogue application",
+          "configuration review rejects mistyped release at preparation and catalogue application",
+          "later dependent fact correction needs a renewed configuration review with an exact before state",
+          "a two-source whole-row equipment search earns Not published without changing the input",
+          "whole-row missing equipment needs canonical text, status and a genuine two-source review",
+          "Not published Fact values remain null-only, including hybrid citation shapes",
+          "a whole-row search cannot use an unrelated missing fact or known brochure/numeric proxy",
+          "whole-row searches still reject exact before, source, identity and dependency drift",
+          "reviewed missing equipment and null facts never become ranking values",
+          "reviewed feature replacement preserves inputs and carries its new citations and grade",
+          "feature target, exact before metadata, version and source snapshots fail closed",
+          "feature grades require current review provenance and full matching citations",
+          "Confirmed equipment keeps explicitly reviewed optional, unavailable and not-applicable fitment",
+          "dependencies must exactly match post-packet facts",
+          "a mixed feature can cite an earned null Not published fact without weakening fact grading",
+          "later fact changes require a reviewed feature replacement and replay exact before states",
+          "canonical driveaway and roadside equipment rows cannot be manually overwritten",
+          "current metadata and availability preserve historical feature warnings through cloned and chained research",
+          "new packet versions retain their admission warning context before same-packet availability changes",
+          "current pack, citable claims and portable hydration carry the reviewed feature",
+          "Not published survives detail/evidence, citable JSON and exact portable transport",
+          "immutable Tesla source snapshots still pack while current Tesla storage uses the reviewed overlay",
+          "original source defaults and earlier registered feature packets retain their exact evidence baselines",
+          "dated fact updates target the reviewed version and preserve original sources, dates and cars",
+          "wrong identity, tier, source drift and changed fact snapshots fail closed",
+          "new versions have complete unknown rows and no fabricated update counts",
+          "new versions do not acquire unrelated catalogue equipment fields or source-derived labels",
+          "new grades require genuine search evidence and price ladder provenance",
+          "availability and current metadata changes use reviewed guards",
+          "summary freshness and correction invalidation use actual fact dependencies",
+          "public research, catalogue, packs and exact-version route enumeration share added IDs",
+          "brand terms are stored once, inherited only within reviewed scope, and project roadside into equipment",
+          "reviewed national and state driveaway facts project value, provenance and conditions into feature claims",
+          "before-on-road canonical prices preserve separately sourced driveaway feature evidence",
+          "withdrawn or incomplete canonical driveaway reviews never replace the separate feature",
+          "a separately reviewed driveaway offer updates its answer without replacing the higher-rung list price",
+          "supplemental driveaway offers require the same price provenance as canonical prices",
+          "a guarded valid replacement clears its stale review marker without weakening identity, fact or source guards",
+          "confirmed paid roadside terms project optional fitment without changing evidence, conditions or other facts",
+          "explicit included roadside fitment and metadata-free legacy terms keep their intended status",
+          "malformed or misplaced explicit roadside fitment fails closed instead of becoming standard",
+          "roadside fitment is guarded in complete before snapshots and only a reviewed replacement may change it",
+          "withdrawn roadside reviews or sources cannot earn optional projection or bypass source snapshot guards",
+          "withdrawal clears a reused roadside projection while preserving separately reviewed source-row fallback",
+          "canonical roadside terms still prohibit competing manual feature edits",
+          "portable roadside facts and evidence claims preserve optional fitment, Confirmed provenance and exact conditions"
+        ]
+      },
+      "sharedHistoricalFeature": {
+        "path": "roadmark-104-qa/configuration-scope-historical-feature.log",
+        "sha256": "fd18466f0335d960b8d6666b0e0f1d64752e2d2d956266baf1ce400fb6c4c723",
+        "summary": {
+          "tests": 1,
+          "pass": 1,
+          "fail": 0,
+          "cancelled": 0,
+          "skipped": 0,
+          "todo": 0
+        },
+        "passingTestNames": [
+          "configuration overlays retain historical feature scope and warnings instead of rebasing before guards"
+        ]
+      },
+      "historicalFailedFocusedRun": {
+        "path": "roadmark-104-qa/configuration-scope-focused.log",
+        "sha256": "2ff63c194fd0e7038320d4b9737a4a4ec183355eb0cf607f5755d330a0c030e5",
+        "summary": {
+          "tests": 37,
+          "pass": 34,
+          "fail": 3,
+          "cancelled": 0,
+          "skipped": 0,
+          "todo": 0
+        },
+        "passingTestNames": [
+          "explicit configuration review releases only its proven scope and preserves inputs and incomplete-record status",
+          "legacy packets and empty registries never lift a configuration hold",
+          "configuration approval preserves independent fact measurement, grade, source and freshness exclusions",
+          "identity, exact before scope, existing-target uniqueness, brand and tier are checked independently at both stages",
+          "configuration review rejects duplicate target at preparation and catalogue application",
+          "configuration review rejects no reason at preparation and catalogue application",
+          "configuration review rejects no dependencies at preparation and catalogue application",
+          "configuration review rejects duplicate dependency at preparation and catalogue application",
+          "configuration review rejects dependency absent from packet at preparation and catalogue application",
+          "configuration review rejects unrelated release proof at preparation and catalogue application",
+          "configuration review rejects missing release proof at preparation and catalogue application",
+          "configuration review rejects missing historical boundaries at preparation and catalogue application",
+          "configuration review rejects retained hold changed at preparation and catalogue application",
+          "configuration review rejects no source snapshots at preparation and catalogue application",
+          "configuration review rejects blocked source at preparation and catalogue application",
+          "configuration review rejects missing cited source at preparation and catalogue application",
+          "configuration review rejects mismatched scope sources at preparation and catalogue application",
+          "configuration review rejects complete-record promotion at preparation and catalogue application",
+          "configuration review rejects source identity changed at preparation and catalogue application",
+          "configuration review rejects build options changed at preparation and catalogue application",
+          "configuration review rejects pricing boundary changed at preparation and catalogue application",
+          "configuration review rejects unknown added field at preparation and catalogue application",
+          "configuration review rejects null after at preparation and catalogue application",
+          "configuration review rejects null before at preparation and catalogue application",
+          "configuration review rejects string ranking flag at preparation and catalogue application",
+          "configuration review rejects string complete flag at preparation and catalogue application",
+          "configuration review rejects empty scope at preparation and catalogue application",
+          "configuration review rejects mistyped source IDs at preparation and catalogue application",
+          "configuration review rejects mistyped conditions at preparation and catalogue application",
+          "configuration review rejects mistyped counts at preparation and catalogue application",
+          "configuration review rejects promoted counts at preparation and catalogue application",
+          "configuration review rejects non-null hold at preparation and catalogue application",
+          "configuration review rejects mistyped review at preparation and catalogue application",
+          "configuration review rejects mistyped release at preparation and catalogue application"
+        ],
+        "status": "Historical failed pre-fix run; superseded by the later 80+1 shared checks and 82 root tests, not a current failure"
+      },
+      "sourceInvalidUpdates": {
+        "path": "roadmark/tests/brand-configuration-updates.test.ts",
+        "sha256": "d79a90d3ca55e690b73a1f3a11213b8501839552a067c6839611f430f05e3f03",
+        "namedCaseCount": 32,
+        "namedCases": [
+          "duplicate target",
+          "no reason",
+          "no dependencies",
+          "duplicate dependency",
+          "dependency drift",
+          "dependency absent from packet",
+          "unrelated release proof",
+          "missing release proof",
+          "missing historical boundaries",
+          "retained hold changed",
+          "no source snapshots",
+          "source drift",
+          "blocked source",
+          "missing cited source",
+          "mismatched scope sources",
+          "complete-record promotion",
+          "source identity changed",
+          "build options changed",
+          "pricing boundary changed",
+          "unknown added field",
+          "null after",
+          "null before",
+          "string ranking flag",
+          "string complete flag",
+          "empty scope",
+          "mistyped source IDs",
+          "mistyped conditions",
+          "mistyped counts",
+          "promoted counts",
+          "non-null hold",
+          "mistyped review",
+          "mistyped release"
+        ],
+        "bothPreparationAndApplicationAssertThrows": true,
+        "broaderGuardCount": 6,
+        "broaderGuards": [
+          "identity",
+          "before",
+          "brand",
+          "tier",
+          "duplicate",
+          "unguarded"
+        ]
+      },
+      "independentVolkswagenReplay": {
+        "path": "roadmark-104-qa/volkswagen-independent-review/independent-review-replay.json",
+        "sha256": "d8908361b9ef91956628e9ed18d163de4545ba3d8ffd5b899e9a9470670c660b",
+        "status": "passed",
+        "negativeCategoryCount": 26,
+        "negativeCategories": [
+          "version before snapshot",
+          "fact before snapshot",
+          "brand term complete version scope",
+          "feature before snapshot",
+          "feature post-fact dependency",
+          "summary dependency",
+          "availability before snapshot",
+          "price ladder basis",
+          "roadside invalid enum",
+          "roadside metadata on unrelated fact",
+          "existing source collision",
+          "new version Tier 2 collision",
+          "configuration full before snapshot (both stages)",
+          "configuration protected source identity (both stages)",
+          "configuration protected build options (both stages)",
+          "configuration historical price boundary (both stages)",
+          "configuration complete-record promotion (both stages)",
+          "configuration complete count promotion (both stages)",
+          "configuration dependency drift (both stages)",
+          "configuration explicit source (both stages)",
+          "configuration null scope erasure (both stages)",
+          "configuration missing release proof (both stages)",
+          "configuration wrong scalar alias (both stages)",
+          "configuration changed retained hold (both stages)",
+          "configuration duplicate target (both stages)",
+          "configuration unguarded target (both stages)"
+        ],
+        "codeHashes": {
+          "src/lib/brand-configuration-updates.ts": "acdce7c78534330e1549f43182bbeb2a8350448625651ed06f15a579adce31d2",
+          "src/lib/brand-updates.ts": "9643e36a459d369852a87ac4bad2df8c06ca594cfd6d4d9d9aa855ec719363c7",
+          "src/lib/types.ts": "1756db9183e1c60c88ade175010e1f6f73467ec11eb69c71e7e6502f715f0ab7",
+          "src/lib/data.ts": "4bfd441463413bdfa40cf0be2a2e5273f8605a349351216cb138a7635742f82e",
+          "tests/brand-configuration-updates.test.ts": "d79a90d3ca55e690b73a1f3a11213b8501839552a067c6839611f430f05e3f03",
+          "tests/brand-feature-updates.test.ts": "b7adf5cd1fc806501460cc34b73930e63d236273a95ebedb1e5904dd26f948ca"
+        }
+      },
+      "validationExits": {
+        "validate": "0",
+        "coverage": "0",
+        "typecheck": "0",
+        "lint": "0"
+      }
+    },
+    "imageProvenance": {
+      "basis": "Confirmed capture provenance: public PDF page renders, not browser screenshots",
+      "classificationBasis": "Confirmed provenance from research owner; exact content hashes and PNG signatures independently verified. All ten are public PDF page renders, not browser screenshots.",
+      "images": [
+        {
+          "path": "volkswagen-research/id45/captures/id45_my25_technical_page8.png",
+          "bytes": 559525,
+          "sha256": "2d84e4a66371b7de954af48d0d923b200ed5e078aaa8910acf05def63685ce3e",
+          "classification": "Public technical/equipment PDF page render; not a browser screenshot",
+          "exactBytesAndPNGSignatureMatch": true
+        },
+        {
+          "path": "volkswagen-research/id45/captures/id45_my25_technical_page9.png",
+          "bytes": 118638,
+          "sha256": "cc996e97cd00e97cab142aa0186c3e74acf0f7a7f6cd013aaaf4ef8fb534b093",
+          "classification": "Public technical/equipment PDF page render; not a browser screenshot",
+          "exactBytesAndPNGSignatureMatch": true
+        },
+        {
+          "path": "volkswagen-research/id45/captures/id4_my27_equipment_page5.png",
+          "bytes": 290845,
+          "sha256": "58b24e7df53254ea2e115934230dc8efb301db37b8e18260545b30223ac3f51c",
+          "classification": "Public technical/equipment PDF page render; not a browser screenshot",
+          "exactBytesAndPNGSignatureMatch": true
+        },
+        {
+          "path": "volkswagen-research/id45/captures/id4_my27_technical_page9.png",
+          "bytes": 114060,
+          "sha256": "0293d5a45b9c5d40ed9284686f4dcfa4469f39918653b965d0490b629f1832bd",
+          "classification": "Public technical/equipment PDF page render; not a browser screenshot",
+          "exactBytesAndPNGSignatureMatch": true
+        },
+        {
+          "path": "volkswagen-research/id45/captures/id5_my26_equipment_page5.png",
+          "bytes": 287948,
+          "sha256": "8327074b718f18b0fed0b6a1b21a632e699a779a950ea510e961a2248ce490f2",
+          "classification": "Public technical/equipment PDF page render; not a browser screenshot",
+          "exactBytesAndPNGSignatureMatch": true
+        },
+        {
+          "path": "volkswagen-research/id45/captures/id5_my26_technical_page8.png",
+          "bytes": 108830,
+          "sha256": "e0323d9352eb8ab46cf99d38b931be1f9ec4c6dee452097cd4aa364d23ddaddb",
+          "classification": "Public technical/equipment PDF page render; not a browser screenshot",
+          "exactBytesAndPNGSignatureMatch": true
+        },
+        {
+          "path": "roadmark-104-qa/volkswagen-independent-review/id4-09.png",
+          "bytes": 131989,
+          "sha256": "fdf68149205458bd5e506ea3af294f84fea9b160c601f73ea7b7a56f940e2b21",
+          "classification": "Public technical/equipment PDF page render; not a browser screenshot",
+          "provenance": "Research owner confirmed ID.4 pages 9-10 and ID. Buzz pages 14-15 are public PDF page renders, with no browser UI or private screen capture.",
+          "exactBytesAndPNGSignatureMatch": true
+        },
+        {
+          "path": "roadmark-104-qa/volkswagen-independent-review/id4-10.png",
+          "bytes": 150476,
+          "sha256": "2f99ae311105f485f4ff3805b5409a7eef546b1732b3b89646ba86bd29d74087",
+          "classification": "Public technical/equipment PDF page render; not a browser screenshot",
+          "provenance": "Research owner confirmed ID.4 pages 9-10 and ID. Buzz pages 14-15 are public PDF page renders, with no browser UI or private screen capture.",
+          "exactBytesAndPNGSignatureMatch": true
+        },
+        {
+          "path": "roadmark-104-qa/volkswagen-independent-review/idbuzz-14.png",
+          "bytes": 194729,
+          "sha256": "b8a15eca7931980196087455f6d5e409d8184b66cc4714160dbf45593fbe6b9a",
+          "classification": "Public technical/equipment PDF page render; not a browser screenshot",
+          "provenance": "Research owner confirmed ID.4 pages 9-10 and ID. Buzz pages 14-15 are public PDF page renders, with no browser UI or private screen capture.",
+          "exactBytesAndPNGSignatureMatch": true
+        },
+        {
+          "path": "roadmark-104-qa/volkswagen-independent-review/idbuzz-15.png",
+          "bytes": 207289,
+          "sha256": "180f6908a8f49b7aa786f865ce4c8e60a127c6f5118d8868ab9507984234affd",
+          "classification": "Public technical/equipment PDF page render; not a browser screenshot",
+          "provenance": "Research owner confirmed ID.4 pages 9-10 and ID. Buzz pages 14-15 are public PDF page renders, with no browser UI or private screen capture.",
+          "exactBytesAndPNGSignatureMatch": true
+        }
+      ]
+    },
+    "restore": {
+      "safeBaselineArchives": 45,
+      "reusedArchives": 44,
+      "newArchives": 3,
+      "selectedArchives": 47,
+      "allRestoredFiles": 4297,
+      "allRestoredBytes": 1592882021,
+      "currentSourceFiles": 635,
+      "currentQaFiles": 1297,
+      "currentResearchFiles": 224,
+      "otherResearchSupportFilesUnchanged": 2048,
+      "archiveSelection": [
+        {
+          "filename": "Roadmark-recovery-byd-20261014T023829Z-part01of04.tar.xz",
+          "bytes": 36527796,
+          "sha256": "2bc13861afd1ecf55129f0d935872e1713f45520db9b8d68b496c37187f9aa57",
+          "group": "byd"
+        },
+        {
+          "filename": "Roadmark-recovery-byd-20261014T023829Z-part02of04.tar.xz",
+          "bytes": 32201180,
+          "sha256": "0d8dbf2abad0a774de65a77faa17621da5f1d86c3db15e7d62410b07a60b7eac",
+          "group": "byd"
+        },
+        {
+          "filename": "Roadmark-recovery-byd-20261014T023829Z-part03of04.tar.xz",
+          "bytes": 21600852,
+          "sha256": "18b00e9e136c8d280cc7a2aac89f313194d545dc38ab945cae2e48de3c5a54b6",
+          "group": "byd"
+        },
+        {
+          "filename": "Roadmark-recovery-byd-20261014T023829Z-part04of04.tar.xz",
+          "bytes": 30528644,
+          "sha256": "2dfca56de16befb9618933e9c88c5b23132b1c2b3c767165aeca2d2bef269ab7",
+          "group": "byd"
+        },
+        {
+          "filename": "Roadmark-recovery-tesla-20261014T024007Z-part01of03.tar.xz",
+          "bytes": 3407484,
+          "sha256": "a4d368ad57baf85da01e42c8353cd187ce0794e5a85d810723529a33d58049c6",
+          "group": "tesla"
+        },
+        {
+          "filename": "Roadmark-recovery-tesla-20261014T024007Z-part02of03-privacy-sanitized-20261014T0355.tar.xz",
+          "bytes": 11715404,
+          "sha256": "9c00a02c9526962e8fa0e33ee3dcba6568ac29b1301306333ee2ad5cb4b4df15",
+          "group": "tesla"
+        },
+        {
+          "filename": "Roadmark-recovery-tesla-20261014T024007Z-part03of03.tar.xz",
+          "bytes": 1599080,
+          "sha256": "4cab034f8ad897a73d70e0ba3e48490010b9117a16ca4a8e122ddfc02e8efe87",
+          "group": "tesla"
+        },
+        {
+          "filename": "Roadmark-recovery-geely-20261014T024007Z-part01of02-privacy-sanitized-final-20261014T0355.tar.xz",
+          "bytes": 9763536,
+          "sha256": "9f8c08283c6b2abf49f008a9dcc2c4195dc88df8db1ff89ed35e86ccf95f866f",
+          "group": "geely"
+        },
+        {
+          "filename": "Roadmark-recovery-geely-20261014T024007Z-part02of02.tar.xz",
+          "bytes": 2294412,
+          "sha256": "640ce596227f1482efc81c8c7e0cef9fc3a994d8fa0696dcf21ba3b4cb2c59e3",
+          "group": "geely"
+        },
+        {
+          "filename": "Roadmark-recovery-zeekr-20261014T024212Z-part01of03-privacy-sanitized-final-20261014T0355.tar.xz",
+          "bytes": 24832432,
+          "sha256": "2c0118e1a078660d8b6ea6fc5dd8dcc3b1915f54cb430b1258a843cb6eced1c4",
+          "group": "zeekr"
+        },
+        {
+          "filename": "Roadmark-recovery-zeekr-20261014T024212Z-part02of03-privacy-sanitized-final-20261014T0355.tar.xz",
+          "bytes": 2994180,
+          "sha256": "ec66d3aae0b1954155f26d225872cd4b8b6b3b8924327f39c9cd30f245050e84",
+          "group": "zeekr"
+        },
+        {
+          "filename": "Roadmark-recovery-zeekr-20261014T024212Z-part03of03.tar.xz",
+          "bytes": 12030136,
+          "sha256": "7d317f4d1aeccebc4b52ec6f0603ab704b4bef98720a61ce48fa372afedc4bb0",
+          "group": "zeekr"
+        },
+        {
+          "filename": "Roadmark-recovery-omoda-jaecoo-20261014T024008Z-part01of01-privacy-sanitized-final-20261014T0355.tar.xz",
+          "bytes": 2863228,
+          "sha256": "eda16295bb69661ed7191e6037df96c54eabf42b02845f840c510856b759446d",
+          "group": "omoda-jaecoo"
+        },
+        {
+          "filename": "Roadmark-recovery-kia-20261014T024212Z-part01of03.tar.xz",
+          "bytes": 15345208,
+          "sha256": "507b056edb60e05444371bcc103d857fc8cb29b3651e7685f2091dc35cc2a4fc",
+          "group": "kia"
+        },
+        {
+          "filename": "Roadmark-recovery-kia-20261014T024212Z-part02of03.tar.xz",
+          "bytes": 4798876,
+          "sha256": "1c59f048e7ada04fc41d1b4bfbd205e6ecc95a27db5e6f838b22204fe79495d6",
+          "group": "kia"
+        },
+        {
+          "filename": "Roadmark-recovery-kia-20261014T024212Z-part03of03.tar.xz",
+          "bytes": 1170572,
+          "sha256": "b9da514671dd846094544524a4e0234e714f59cb6ddc230893349272666d98bd",
+          "group": "kia"
+        },
+        {
+          "filename": "Roadmark-recovery-mg-im-20261014T024008Z-part01of05-privacy-sanitized-final-20261014T0355.tar.xz",
+          "bytes": 18556936,
+          "sha256": "4360f343f817fcb61296c95d63c1268943e2011b87046d001c5fb4aefb4c0dad",
+          "group": "mg-im"
+        },
+        {
+          "filename": "Roadmark-recovery-mg-im-20261014T024008Z-part02of05-privacy-sanitized-final-20261014T0355.tar.xz",
+          "bytes": 26748780,
+          "sha256": "1184479ab02bc537dd995400c7c5b975abd6b7b141b53a319bb35cebdd9cddd9",
+          "group": "mg-im"
+        },
+        {
+          "filename": "Roadmark-recovery-mg-im-20261014T024008Z-part03of05-privacy-sanitized-final-20261014T0355.tar.xz",
+          "bytes": 14181232,
+          "sha256": "458ca4474ceb9fc73394014023b6aa1825487fb06960f3ac8c186e9433b66f4b",
+          "group": "mg-im"
+        },
+        {
+          "filename": "Roadmark-recovery-mg-im-20261014T024008Z-part04of05.tar.xz",
+          "bytes": 12971164,
+          "sha256": "7fad263cad0b1e90fce87768e779d3b20fb37afa052b064990e64b741b6ad3b2",
+          "group": "mg-im"
+        },
+        {
+          "filename": "Roadmark-recovery-mg-im-20261014T024008Z-part05of05-privacy-sanitized-final-20261014T0355.tar.xz",
+          "bytes": 22334984,
+          "sha256": "94fa0d800671f2a8b64c9ec9c9412f8fc901febf7dee42820987098a7202ac0f",
+          "group": "mg-im"
+        },
+        {
+          "filename": "Roadmark-recovery-qa-through-mg-im-20261014T024343Z-part01of09.tar.xz",
+          "bytes": 36896,
+          "sha256": "c9116fd80850e29cdf37c87cf9e1ce8207def10612f14c1d51d42cad2634fda2",
+          "group": "qa-through-mg-im"
+        },
+        {
+          "filename": "Roadmark-recovery-qa-through-mg-im-20261014T024343Z-part02of09.tar.xz",
+          "bytes": 1227284,
+          "sha256": "853c236fd0c7368eae9fd8ff01d9fe64822454fcb750bfb90757dd3546332ef3",
+          "group": "qa-through-mg-im"
+        },
+        {
+          "filename": "Roadmark-recovery-qa-through-mg-im-20261014T024343Z-part03of09.tar.xz",
+          "bytes": 2657032,
+          "sha256": "b6d4a700e95624b2b46881699763ed36c56adcc3a59a603346b82786adf4aa48",
+          "group": "qa-through-mg-im"
+        },
+        {
+          "filename": "Roadmark-recovery-qa-through-mg-im-20261014T024343Z-part04of09.tar.xz",
+          "bytes": 285028,
+          "sha256": "9bdb41bc5be5d26544e6694269c18b1cea3763c1eb853f886d8a415a028b45fb",
+          "group": "qa-through-mg-im"
+        },
+        {
+          "filename": "Roadmark-recovery-qa-through-mg-im-20261014T024343Z-part05of09.tar.xz",
+          "bytes": 850508,
+          "sha256": "bc5ce407d39249aaff9364c7ad57c5a9b17a296ee497b41d6e3135c3bceabcc0",
+          "group": "qa-through-mg-im"
+        },
+        {
+          "filename": "Roadmark-recovery-qa-through-mg-im-20261014T024343Z-part06of09.tar.xz",
+          "bytes": 744364,
+          "sha256": "b10b5cd8c83f138c9e1f6601ef56694cec6d6532581fcb9b2052f6bedf4da338",
+          "group": "qa-through-mg-im"
+        },
+        {
+          "filename": "Roadmark-recovery-qa-through-mg-im-20261014T024343Z-part07of09.tar.xz",
+          "bytes": 1518912,
+          "sha256": "391e7ab5a6eeac1ce16826c400abe96e8b6a01e70a71cc8ec4e7d71b490945f0",
+          "group": "qa-through-mg-im"
+        },
+        {
+          "filename": "Roadmark-recovery-qa-through-mg-im-20261014T024343Z-part08of09.tar.xz",
+          "bytes": 2913628,
+          "sha256": "c3acafd801fe11e1103d2512bb1d724a173c7bab354c7abea024035513ad4339",
+          "group": "qa-through-mg-im"
+        },
+        {
+          "filename": "Roadmark-recovery-qa-through-mg-im-20261014T024343Z-part09of09.tar.xz",
+          "bytes": 891752,
+          "sha256": "b89734766a1e45f3218a66d4845617f76137eacb53afeabefae44d2989a517fd",
+          "group": "qa-through-mg-im"
+        },
+        {
+          "filename": "Roadmark-recovery-recovery-support-20261014T024649Z-part01of01.tar.xz",
+          "bytes": 45508,
+          "sha256": "36db17a2ff99c47cb817abb62fab3412516dd3adf1b36d2527c41cf0c514c226",
+          "group": "recovery-support"
+        },
+        {
+          "filename": "Roadmark-recovery-hyundai-provisional-20261014T031746Z-part01of03-privacy-sanitized-20261014T0355-v2.tar.xz",
+          "bytes": 16290576,
+          "sha256": "d7ea78ba1734c3bfd19f886fe41f7cc94d7762d502a45e3d6c616df80b1ae6d6",
+          "group": "hyundai-provisional"
+        },
+        {
+          "filename": "Roadmark-recovery-hyundai-provisional-20261014T031746Z-part02of03-privacy-sanitized-final-20261014T0355.tar.xz",
+          "bytes": 5869040,
+          "sha256": "3c6d0bc71154f70a60de489a6921232290f96c2de8871a52d5b918af06cb9bd5",
+          "group": "hyundai-provisional"
+        },
+        {
+          "filename": "Roadmark-recovery-hyundai-provisional-20261014T031746Z-part03of03.tar.xz",
+          "bytes": 2472728,
+          "sha256": "2136b50bef45f6df95a0777d2e8c9984075df11cfe5e9e073d78a490e758d8fd",
+          "group": "hyundai-provisional"
+        },
+        {
+          "filename": "Roadmark-recovery-qa-provisional-hyundai-delta-20261014T031908Z-part01of01.tar.xz",
+          "bytes": 5683160,
+          "sha256": "6e50be9608c49fad7f947429f144d5c33c7c0a46ea5525c633b32b58a40f9793",
+          "group": "qa-provisional-hyundai-delta"
+        },
+        {
+          "filename": "Roadmark-recovery-support-provisional-hyundai-20261014T032112Z-part01of01.tar.xz",
+          "bytes": 93188,
+          "sha256": "a796fa6c17cbe88b057d4e26e1e8804fc1f712a05c1049c764a05e05e7c5ba7c",
+          "group": "support-provisional-hyundai"
+        },
+        {
+          "filename": "Roadmark-recovery-hyundai-established-sanitized-delta-20261014T035107Z-part01of02-privacy-sanitized-20261014T0355.tar.xz",
+          "bytes": 701724,
+          "sha256": "0870119a211d1221d3be462c38b72d27145ccbd67f3dc0e90fd276aecd4358e6",
+          "group": "hyundai-established-sanitized-delta"
+        },
+        {
+          "filename": "Roadmark-recovery-hyundai-established-sanitized-delta-20261014T035107Z-part02of02.tar.xz",
+          "bytes": 246300,
+          "sha256": "9897e78916d3119badfbf7730c436cca97e2d9cfef8a27784bf26817f0c7e650",
+          "group": "hyundai-established-sanitized-delta"
+        },
+        {
+          "filename": "Roadmark-recovery-source-volkswagen-integrated-20261014T0752.tar.xz",
+          "bytes": 8008056,
+          "sha256": "a40daa85dda903738685dac397df6f25efd00d3316767f0d6c850b302d0bf95c",
+          "group": "source-volkswagen-integrated"
+        },
+        {
+          "filename": "Roadmark-recovery-qa-hyundai-integrated-delta-20261014T035653Z-part01of01.tar.xz",
+          "bytes": 1450668,
+          "sha256": "0bf3e3c61f26dfce81f61acf40a0c840528e534ecd5d7c98daaba049c2b60949",
+          "group": "qa-hyundai-integrated-delta"
+        },
+        {
+          "filename": "Roadmark-recovery-qa-post-diagnostic-20261014T045130Z-part01of01.tar.xz",
+          "bytes": 107632,
+          "sha256": "e7a3169ee8ceb6acfd64e1f609b376b392fa007332c4d0baa49b98595fdd72bc",
+          "group": "qa-post-diagnostic"
+        },
+        {
+          "filename": "Roadmark-recovery-toyota-approved-20261014T065153Z-part01of01.tar.xz",
+          "bytes": 973620,
+          "sha256": "4c0fb0de6fc61fc72f677ca40ee00fc70a3bea89e4a84a13aacfa60c81abe471",
+          "group": "toyota-approved"
+        },
+        {
+          "filename": "Roadmark-recovery-qa-toyota-integrated-20261014T064722Z-part01of01.tar.xz",
+          "bytes": 224880,
+          "sha256": "c069a1c64a330155a2a30d418156697134954149f63cc65c4759b7d088a90c5c",
+          "group": "qa-toyota-integrated"
+        },
+        {
+          "filename": "Roadmark-recovery-volkswagen-provisional-20261014T073856Z-part01of02.tar.xz",
+          "bytes": 19591988,
+          "sha256": "4b73b3bb9ce0dd7864832e0fe39a92f1471ee95b6178904556e49e808a3258d4",
+          "group": "volkswagen-provisional"
+        },
+        {
+          "filename": "Roadmark-recovery-volkswagen-provisional-20261014T073856Z-part02of02.tar.xz",
+          "bytes": 339196,
+          "sha256": "2d6acaee56041b70e636878e8ebf1f787f9705fd0619e3148ad6e81bd4976b1f",
+          "group": "volkswagen-provisional"
+        },
+        {
+          "filename": "Roadmark-recovery-volkswagen-final-delta-20261014T075416Z-part01of01.tar.xz",
+          "bytes": 266468,
+          "sha256": "f7f0c71936bcee9abe9d77517c5075209e7e890017c4c020f2fba8ffb73e9474",
+          "group": "volkswagen-final-delta"
+        },
+        {
+          "filename": "Roadmark-recovery-qa-volkswagen-integrated-20261014T075807Z-part01of01.tar.xz",
+          "bytes": 808096,
+          "sha256": "116748dc05f6eeea05184157f4c2429064ff7bd18c459ec2a3f4ae15fe3063d1",
+          "group": "qa-volkswagen-integrated"
+        }
+      ],
+      "independentExpectedInventorySHA256": "d63f1445c9d98341bd24d0a6b09c8dedc3ce1e106105f798a38b9e7e03ca3f3b",
+      "archiveHashFailures": [],
+      "restoredFileHashFailures": []
+    },
+    "mutationBoundary": {
+      "onlyWrittenFile": "INDEPENDENT-FINAL-RECOVERY-VERIFICATION.json",
+      "liveSourceQaResearchContentsChanged": [],
+      "existingArchivesChecked": 62,
+      "noArchiveSourceQaOrRestoredFileWrites": true
+    },
+    "closureStatus": {
+      "VolkswagenResearchClosure": false,
+      "M1": "open",
+      "checkpoint104": "open",
+      "latestDeliveredCheckpoint": 103,
+      "currentAggregateSuitePassClaimed": false,
+      "currentProductionBuildPassClaimed": false
+    },
+    "originalHashMismatches": [],
+    "copiedHashMismatches": []
+  },
+  "independentResearchVerification": {
+    "verifiedAt": "2026-10-14T07:58:37.434870+00:00",
+    "scope": "Independent read-only verification of frozen final Volkswagen research delta and retained provisional base; no application tests. Only this report is written. Source/QA/reconstructed whole-tree verification is pending a separate handoff.",
+    "passed": true,
+    "errors": [],
+    "checks": {
+      "uniqueManifestPaths": true,
+      "baselineManifestBytesEqualFrozenCopy": true,
+      "baselineArchive1AllBytesAndMetadata": true,
+      "baselineArchive2AllBytesAndMetadata": true,
+      "deltaArchive1AllBytesAndMetadata": true,
+      "baselineAll216Files": true,
+      "deltaAll26Files": true,
+      "deltaStageOnly26Files": true,
+      "exact26Changed198Unchanged224Current": true,
+      "noMissingBaselinePaths": true,
+      "composedAll224CopiedHashes": true,
+      "all224OriginalHashAndByteCountMatchCopies": true,
+      "all224CurrentLiveFilesMatchFrozenCopies": true,
+      "exactly6PythonCachesExcluded": true,
+      "sourceChangesDuringCaptureEmpty": true,
+      "approvedPacketAndReconciliationHashes": true,
+      "all6ProvenanceImagesMatchCopies": true,
+      "allResearchPNGsAccountedFor": true,
+      "allExistingArchiveContentsUnchangedDuringVerification": true,
+      "liveResearchContentsUnchangedDuringVerification": true,
+      "finalCountsApprovalAndOpenResearchStateMatchFrozenArtifacts": true
+    },
+    "counts": {
+      "baselineFiles": 216,
+      "newFiles": 8,
+      "modifiedFiles": 18,
+      "newOrModifiedFiles": 26,
+      "unchangedFiles": 198,
+      "finalFiles": 224,
+      "excludedPythonCaches": 6,
+      "images": 6,
+      "existingArchivesCheckedForMutation": 60
+    },
+    "manifest": "RECOVERY-FILE-MANIFEST.json",
+    "manifestSHA256": "912a04494fd8d5d2d696228f54e85c7448acee14f89e3d2c0f587ac177a59ff8",
+    "archives": [
+      {
+        "file": "Roadmark-recovery-volkswagen-provisional-20261014T073856Z-part01of02.tar.xz",
+        "verified": true,
+        "bytes": 19591988,
+        "sha256": "4b73b3bb9ce0dd7864832e0fe39a92f1471ee95b6178904556e49e808a3258d4",
+        "members": 210,
+        "payloadMembers": 208,
+        "mismatches": [],
+        "restoreTextFormat": "Verified exact baseline snapshot format from snapshot_recovery_v2.py"
+      },
+      {
+        "file": "Roadmark-recovery-volkswagen-provisional-20261014T073856Z-part02of02.tar.xz",
+        "verified": true,
+        "bytes": 339196,
+        "sha256": "2d6acaee56041b70e636878e8ebf1f787f9705fd0619e3148ad6e81bd4976b1f",
+        "members": 10,
+        "payloadMembers": 8,
+        "mismatches": [],
+        "restoreTextFormat": "Verified exact baseline snapshot format from snapshot_recovery_v2.py"
+      },
+      {
+        "file": "Roadmark-recovery-volkswagen-final-delta-20261014T075416Z-part01of01.tar.xz",
+        "verified": true,
+        "bytes": 266468,
+        "sha256": "f7f0c71936bcee9abe9d77517c5075209e7e890017c4c020f2fba8ffb73e9474",
+        "members": 28,
+        "payloadMembers": 26,
+        "mismatches": []
+      }
+    ],
+    "newPaths": [
+      "volkswagen-research/configuration-build.log",
+      "volkswagen-research/configuration-static-audit.json",
+      "volkswagen-research/finalization-summary.log",
+      "volkswagen-research/independent-evidence-review.md",
+      "volkswagen-research/independent-retained-ledger-independent-check.json",
+      "volkswagen-research/independent-review-replay.exit",
+      "volkswagen-research/independent-review-replay.json",
+      "volkswagen-research/independent-review-replay.log"
+    ],
+    "modifiedPaths": [
+      "volkswagen-research/REVIEW.md",
+      "volkswagen-research/after.json",
+      "volkswagen-research/artifact-hash-manifest.json",
+      "volkswagen-research/brand-model-list-reconciliation.json",
+      "volkswagen-research/build-configuration-updates.py",
+      "volkswagen-research/configuration-updates.json",
+      "volkswagen-research/core-matrix.json",
+      "volkswagen-research/evidence-completeness-audit.json",
+      "volkswagen-research/finalize-artifacts.py",
+      "volkswagen-research/integration-readiness.json",
+      "volkswagen-research/merge-evidence.py",
+      "volkswagen-research/normalized-evidence.json",
+      "volkswagen-research/review-amendments.json",
+      "volkswagen-research/stage-validation.log",
+      "volkswagen-research/staged-packs.json",
+      "volkswagen-research/staged-report.json",
+      "volkswagen-research/volkswagen-2026-10-14.json",
+      "volkswagen-research/volkswagen-reconciliation-2026-10-14.json"
+    ],
+    "missingBaselinePaths": [],
+    "approvedArtifacts": {
+      "volkswagen-2026-10-14.json": {
+        "expectedSHA256": "208581fcff2c9e0dcd8a54ca0d11faff9423db1cb635211156722815d9e61513",
+        "actualSHA256": "208581fcff2c9e0dcd8a54ca0d11faff9423db1cb635211156722815d9e61513",
+        "match": true
+      },
+      "volkswagen-reconciliation-2026-10-14.json": {
+        "expectedSHA256": "1f91c72014f4120cc907a62937da0fd9be3431e89f74d7088cef3ba12f218b33",
+        "actualSHA256": "1f91c72014f4120cc907a62937da0fd9be3431e89f74d7088cef3ba12f218b33",
+        "match": true
+      }
+    },
+    "imageProvenance": {
+      "basis": "Confirmed capture provenance: public PDF page renders, not browser screenshots",
+      "classificationSource": "IMAGE-PROVENANCE.json",
+      "note": "Classification is the confirmed provenance supplied for these images; this verification independently checks their exact bytes and PNG signatures. They are public PDF page renders, not browser screenshots.",
+      "images": [
+        {
+          "path": "volkswagen-research/id45/captures/id45_my25_technical_page8.png",
+          "bytes": 559525,
+          "sha256": "2d84e4a66371b7de954af48d0d923b200ed5e078aaa8910acf05def63685ce3e",
+          "classification": "Public technical/equipment PDF page render; not a browser screenshot",
+          "bytesAndHashMatch": true
+        },
+        {
+          "path": "volkswagen-research/id45/captures/id45_my25_technical_page9.png",
+          "bytes": 118638,
+          "sha256": "cc996e97cd00e97cab142aa0186c3e74acf0f7a7f6cd013aaaf4ef8fb534b093",
+          "classification": "Public technical/equipment PDF page render; not a browser screenshot",
+          "bytesAndHashMatch": true
+        },
+        {
+          "path": "volkswagen-research/id45/captures/id4_my27_equipment_page5.png",
+          "bytes": 290845,
+          "sha256": "58b24e7df53254ea2e115934230dc8efb301db37b8e18260545b30223ac3f51c",
+          "classification": "Public technical/equipment PDF page render; not a browser screenshot",
+          "bytesAndHashMatch": true
+        },
+        {
+          "path": "volkswagen-research/id45/captures/id4_my27_technical_page9.png",
+          "bytes": 114060,
+          "sha256": "0293d5a45b9c5d40ed9284686f4dcfa4469f39918653b965d0490b629f1832bd",
+          "classification": "Public technical/equipment PDF page render; not a browser screenshot",
+          "bytesAndHashMatch": true
+        },
+        {
+          "path": "volkswagen-research/id45/captures/id5_my26_equipment_page5.png",
+          "bytes": 287948,
+          "sha256": "8327074b718f18b0fed0b6a1b21a632e699a779a950ea510e961a2248ce490f2",
+          "classification": "Public technical/equipment PDF page render; not a browser screenshot",
+          "bytesAndHashMatch": true
+        },
+        {
+          "path": "volkswagen-research/id45/captures/id5_my26_technical_page8.png",
+          "bytes": 108830,
+          "sha256": "e0323d9352eb8ab46cf99d38b931be1f9ec4c6dee452097cd4aa364d23ddaddb",
+          "classification": "Public technical/equipment PDF page render; not a browser screenshot",
+          "bytesAndHashMatch": true
+        }
+      ]
+    },
+    "mutationBoundary": {
+      "writes": [
+        "INDEPENDENT-FINAL-RESEARCH-VERIFICATION.json"
+      ],
+      "liveResearchContentBeforeAfter": "identical",
+      "existingArchiveContentBeforeAfter": "identical",
+      "liveSourceOrQAWriteOperations": 0,
+      "scopeNote": "No commands mutated live research, source, QA, or any archive. Concurrent source/QA activity is not attributed to this verification."
+    },
+    "closureStatus": {
+      "researchClosure": false,
+      "M1": "open",
+      "checkpoint104": "open",
+      "finalCandidateApproved": true,
+      "recordCount": 18,
+      "onSale": 13,
+      "provisionalReportedOrderOpen": 5,
+      "newIdentities": 11,
+      "remainingResearchGaps": [
+        "MY27 ID. Buzz maker-list coverage",
+        "Unretrieved MY26 ID.4 GTX New lead"
+      ],
+      "provisionalDraft": "Superseded by final approved configuration updates in this delta",
+      "stateEvidence": "volkswagen-research/integration-readiness.json and volkswagen-research/volkswagen-2026-10-14.json",
+      "configurationUpdates": 3
+    },
+    "verificationMethodNotes": [
+      "Baseline and delta use different RESTORE text formats. Each format was verified against its own generator and embedded state, capture times, and part numbers."
+    ]
+  },
+  "sourceValidation": {
+    "result": "PASS",
+    "counts": {
+      "variants": 374,
+      "families": 155,
+      "generations": 165,
+      "criteria": 69,
+      "evidence": 25806,
+      "current": 340,
+      "outgoing": 28,
+      "provisional": 6
+    },
+    "sourceReferences": 3113,
+    "publicationIssues": 15,
+    "sha256": "010ded194b4d61cd7be606ce0cc332fa7e32906bba70abff2b5c38541e634657",
+    "approvedExternalAssets": 0,
+    "note": "Structural integrity, not independent factual verification."
+  },
+  "approvedVolkswagenPacketSHA256": {
+    "volkswagen-2026-10-14.json": "208581fcff2c9e0dcd8a54ca0d11faff9423db1cb635211156722815d9e61513",
+    "volkswagen-reconciliation-2026-10-14.json": "1f91c72014f4120cc907a62937da0fd9be3431e89f74d7088cef3ba12f218b33"
+  },
+  "privacyVerification": {
+    "unchangedBaseline": "Every reused archive matches the previously audited size and SHA-256; affected original/intermediate IDs are absent.",
+    "priorSafeChain": {
+      "unchangedBaseline": "Every reused archive matches the previous safe Toyota chain by size and SHA-256.",
+      "priorSafeChain": {
+        "unchangedBaseline": "All reused archives match the hashes from the previously verified safe chain. No affected original or intermediate Library ID is used.",
+        "priorSafeChain": {
+          "unchangedBaseline": "All reused archives match the sizes and SHA-256 hashes from the prior complete safe-chain audit. No affected original or intermediate Library ID is a restore input.",
+          "priorWholeTreeScan": {
+            "status": "clean",
+            "regularFilesScanned": 5037,
+            "bytesScanned": 1980054991,
+            "uniquePayloadsScanned": 2816,
+            "knownDistinctCapturedValues": 55,
+            "testedDistinctByteVariants": 373,
+            "recognizedBenignRuntimeCandidateCount": 609,
+            "startedAt": "2026-10-14T04:31:51.869933+00:00",
+            "completedAt": "2026-10-14T04:35:51.516096+00:00",
+            "exactValueMatches": 0,
+            "primaryHeaderCandidates": 0,
+            "unclassifiedRuntimeCandidates": 0,
+            "errors": 0,
+            "coverage": {
+              "byteSearch": "Every regular payload, regardless of extension",
+              "encodings": [
+                "literal",
+                "URL component",
+                "base64/base64url standalone value, padded and unpadded",
+                "UTF-16LE/BE",
+                "JSON string escaping",
+                "HTML entity escaping",
+                "full Unicode-escaped value in lower/upper hex"
+              ],
+              "patternSearch": "Primary nested-JSON/raw-header scanner and runtime HTML meta/input/property scanner with entity decoding and up to three nested escape levels",
+              "limitations": [
+                "Does not decrypt encrypted content",
+                "Does not recursively unpack arbitrary compressed or proprietary content inside regular payloads",
+                "Standalone base64 matching is not a claim to inspect every possible base64 wrapping/alignment of a larger structure"
+              ]
+            }
+          },
+          "newSourceAndQaArchiveScan": {
+            "startedAt": "2026-10-14T04:51:59.453917+00:00",
+            "knownDistinctCapturedValues": 55,
+            "testedDistinctByteVariants": 373,
+            "originalSeedMembersRead": 200,
+            "regularFilesScanned": 699,
+            "bytesScanned": 256234667,
+            "uniquePayloadsScanned": 670,
+            "recognizedBenignRuntimeCandidateCount": 0,
+            "coverage": {
+              "byteSearch": "Every regular payload, regardless of extension",
+              "encodings": [
+                "literal",
+                "URL component",
+                "base64/base64url standalone value, padded and unpadded",
+                "UTF-16LE/BE",
+                "JSON string escaping",
+                "HTML entity escaping",
+                "full Unicode-escaped value in lower/upper hex"
+              ],
+              "patternSearch": "Primary nested-JSON/raw-header scanner and runtime HTML meta/input/property scanner with entity decoding and up to three nested escape levels",
+              "limitations": [
+                "Does not decrypt encrypted content",
+                "Does not recursively unpack arbitrary compressed or proprietary content inside regular payloads",
+                "Standalone base64 matching is not a claim to inspect every possible base64 wrapping/alignment of a larger structure"
+              ]
+            },
+            "completedAt": "2026-10-14T04:52:54.527003+00:00",
+            "status": "clean",
+            "exactValueMatches": 0,
+            "primaryHeaderCandidates": 0,
+            "unclassifiedRuntimeCandidates": 0,
+            "errors": 0
+          }
+        },
+        "newSourceToyotaResearchAndQaScan": {
+          "startedAt": "2026-10-14T06:52:37.131519+00:00",
+          "knownDistinctCapturedValues": 55,
+          "testedDistinctByteVariants": 373,
+          "originalSeedMembersRead": 200,
+          "regularFilesScanned": 841,
+          "bytesScanned": 277302341,
+          "uniquePayloadsScanned": 795,
+          "recognizedBenignRuntimeCandidateCount": 0,
+          "coverage": {
+            "byteSearch": "Every regular payload, regardless of extension",
+            "encodings": [
+              "literal",
+              "URL component",
+              "base64/base64url standalone value, padded and unpadded",
+              "UTF-16LE/BE",
+              "JSON string escaping",
+              "HTML entity escaping",
+              "full Unicode-escaped value in lower/upper hex"
+            ],
+            "patternSearch": "Primary nested-JSON/raw-header scanner and runtime HTML meta/input/property scanner with entity decoding and up to three nested escape levels",
+            "limitations": [
+              "Does not decrypt encrypted content",
+              "Does not recursively unpack arbitrary compressed or proprietary content inside regular payloads",
+              "Standalone base64 matching is not a claim to inspect every possible base64 wrapping/alignment of a larger structure"
+            ]
+          },
+          "completedAt": "2026-10-14T06:53:42.001149+00:00",
+          "status": "clean",
+          "exactValueMatches": 0,
+          "primaryHeaderCandidates": 0,
+          "unclassifiedRuntimeCandidates": 0,
+          "errors": 0
+        }
+      },
+      "newProvisionalResearchScan": {
+        "startedAt": "2026-10-14T07:41:03.295776+00:00",
+        "knownDistinctCapturedValues": 55,
+        "testedDistinctByteVariants": 373,
+        "originalSeedMembersRead": 200,
+        "regularFilesScanned": 220,
+        "bytesScanned": 52946620,
+        "uniquePayloadsScanned": 215,
+        "recognizedBenignRuntimeCandidateCount": 0,
+        "coverage": {
+          "byteSearch": "Every regular payload, regardless of extension",
+          "encodings": [
+            "literal",
+            "URL component",
+            "base64/base64url standalone value, padded and unpadded",
+            "UTF-16LE/BE",
+            "JSON string escaping",
+            "HTML entity escaping",
+            "full Unicode-escaped value in lower/upper hex"
+          ],
+          "patternSearch": "Primary nested-JSON/raw-header scanner and runtime HTML meta/input/property scanner with entity decoding and up to three nested escape levels",
+          "limitations": [
+            "Does not decrypt encrypted content",
+            "Does not recursively unpack arbitrary compressed or proprietary content inside regular payloads",
+            "Standalone base64 matching is not a claim to inspect every possible base64 wrapping/alignment of a larger structure"
+          ]
+        },
+        "completedAt": "2026-10-14T07:41:11.971878+00:00",
+        "status": "clean",
+        "exactValueMatches": 0,
+        "primaryHeaderCandidates": 0,
+        "unclassifiedRuntimeCandidates": 0,
+        "errors": 0
+      }
+    },
+    "newSourceFinalResearchDeltaAndQaScan": {
+      "startedAt": "2026-10-14T07:59:59.011441+00:00",
+      "knownDistinctCapturedValues": 55,
+      "testedDistinctByteVariants": 373,
+      "originalSeedMembersRead": 200,
+      "regularFilesScanned": 719,
+      "bytesScanned": 278165862,
+      "uniquePayloadsScanned": 687,
+      "recognizedBenignRuntimeCandidateCount": 0,
+      "coverage": {
+        "byteSearch": "Every regular payload, regardless of extension",
+        "encodings": [
+          "literal",
+          "URL component",
+          "base64/base64url standalone value, padded and unpadded",
+          "UTF-16LE/BE",
+          "JSON string escaping",
+          "HTML entity escaping",
+          "full Unicode-escaped value in lower/upper hex"
+        ],
+        "patternSearch": "Primary nested-JSON/raw-header scanner and runtime HTML meta/input/property scanner with entity decoding and up to three nested escape levels",
+        "limitations": [
+          "Does not decrypt encrypted content",
+          "Does not recursively unpack arbitrary compressed or proprietary content inside regular payloads",
+          "Standalone base64 matching is not a claim to inspect every possible base64 wrapping/alignment of a larger structure"
+        ]
+      },
+      "completedAt": "2026-10-14T08:00:49.664053+00:00",
+      "status": "clean",
+      "exactValueMatches": 0,
+      "primaryHeaderCandidates": 0,
+      "unclassifiedRuntimeCandidates": 0,
+      "errors": 0
+    }
+  },
+  "incrementalSave": {
+    "newArchiveCount": 3,
+    "newArchiveBytes": 9082620,
+    "currentSourceFiles": 635,
+    "currentQaFiles": 1297,
+    "newOrChangedQaFiles": 53,
+    "unchangedQaFiles": 1244,
+    "missingQaFiles": [],
+    "currentVolkswagenResearchFiles": 224,
+    "newOrChangedResearchFiles": 26,
+    "unchangedResearchFiles": 198,
+    "missingResearchFiles": [],
+    "researchExclusions": [
+      {
+        "path": "__pycache__/build-packet.cpython-312.pyc",
+        "reason": "dependency, build, cache, or runtime directory"
+      },
+      {
+        "path": "__pycache__/build-reconciliation.cpython-312.pyc",
+        "reason": "dependency, build, cache, or runtime directory"
+      },
+      {
+        "path": "__pycache__/finalize-artifacts.cpython-312.pyc",
+        "reason": "dependency, build, cache, or runtime directory"
+      },
+      {
+        "path": "__pycache__/merge-evidence.cpython-312.pyc",
+        "reason": "dependency, build, cache, or runtime directory"
+      },
+      {
+        "path": "id45/__pycache__/capture.cpython-312.pyc",
+        "reason": "dependency, build, cache, or runtime directory"
+      },
+      {
+        "path": "idbuzz/__pycache__/capture.cpython-312.pyc",
+        "reason": "dependency, build, cache, or runtime directory"
+      }
+    ],
+    "newQaPaths": [
+      "roadmark-104-qa/configuration-scope-focused.log",
+      "roadmark-104-qa/configuration-scope-guard-before/brand-feature-updates.test.ts",
+      "roadmark-104-qa/configuration-scope-guard-before/src/lib/brand-updates.ts",
+      "roadmark-104-qa/configuration-scope-guard-before/src/lib/data.ts",
+      "roadmark-104-qa/configuration-scope-guard-before/src/lib/types.ts",
+      "roadmark-104-qa/configuration-scope-guard-manifest.json",
+      "roadmark-104-qa/configuration-scope-guard-review.md",
+      "roadmark-104-qa/configuration-scope-guard.patch",
+      "roadmark-104-qa/configuration-scope-historical-feature.log",
+      "roadmark-104-qa/configuration-scope-lint.log",
+      "roadmark-104-qa/configuration-scope-regression.log",
+      "roadmark-104-qa/configuration-scope-typecheck.log",
+      "roadmark-104-qa/m1-volkswagen-coverage.exit",
+      "roadmark-104-qa/m1-volkswagen-coverage.json",
+      "roadmark-104-qa/m1-volkswagen-coverage.stderr",
+      "roadmark-104-qa/m1-volkswagen-integration.exit",
+      "roadmark-104-qa/m1-volkswagen-integration.log",
+      "roadmark-104-qa/m1-volkswagen-lint.exit",
+      "roadmark-104-qa/m1-volkswagen-lint.log",
+      "roadmark-104-qa/m1-volkswagen-typecheck.exit",
+      "roadmark-104-qa/m1-volkswagen-typecheck.log",
+      "roadmark-104-qa/m1-volkswagen-validate.exit",
+      "roadmark-104-qa/m1-volkswagen-validate.log",
+      "roadmark-104-qa/review-volkswagen-independent.ts",
+      "roadmark-104-qa/stage-volkswagen-candidate.ts",
+      "roadmark-104-qa/volkswagen-independent-review/configuration-revision-static-check.json",
+      "roadmark-104-qa/volkswagen-independent-review/evidence-review.md",
+      "roadmark-104-qa/volkswagen-independent-review/final-bundle-manifest-check.json",
+      "roadmark-104-qa/volkswagen-independent-review/id4-09.png",
+      "roadmark-104-qa/volkswagen-independent-review/id4-10.png",
+      "roadmark-104-qa/volkswagen-independent-review/idbuzz-14.png",
+      "roadmark-104-qa/volkswagen-independent-review/idbuzz-15.png",
+      "roadmark-104-qa/volkswagen-independent-review/independent-review-replay.exit",
+      "roadmark-104-qa/volkswagen-independent-review/independent-review-replay.json",
+      "roadmark-104-qa/volkswagen-independent-review/independent-review-replay.log",
+      "roadmark-104-qa/volkswagen-independent-review/initial-91d90cd4-replay.json",
+      "roadmark-104-qa/volkswagen-independent-review/initial-91d90cd4-replay.log",
+      "roadmark-104-qa/volkswagen-independent-review/retained-ledger-independent-check.json",
+      "roadmark-104-qa/volkswagen-research-REVIEW.md",
+      "roadmark-104-qa/volkswagen-research-artifact-hash-manifest.json",
+      "roadmark-104-qa/volkswagen-research-brand-model-list-reconciliation.json",
+      "roadmark-104-qa/volkswagen-research-configuration-static-audit.json",
+      "roadmark-104-qa/volkswagen-research-core-matrix.json",
+      "roadmark-104-qa/volkswagen-research-evidence-completeness-audit.json",
+      "roadmark-104-qa/volkswagen-research-independent-evidence-review.md",
+      "roadmark-104-qa/volkswagen-research-independent-review-replay.json",
+      "roadmark-104-qa/volkswagen-research-integration-readiness.json",
+      "roadmark-104-qa/volkswagen-research-redaction-audit.json",
+      "roadmark-104-qa/volkswagen-research-source-hash-manifest.json",
+      "roadmark-104-qa/volkswagen-research-source-index.json",
+      "roadmark-104-qa/volkswagen-research-stage-validation.exit",
+      "roadmark-104-qa/volkswagen-research-stage-validation.log",
+      "roadmark-104-qa/work-status.json"
+    ],
+    "unchangedArchivesReuploaded": 0
+  },
+  "imageProvenance": {
+    "verifiedAt": "2026-10-14T07:33:18Z",
+    "basis": "Confirmed capture provenance: public PDF page renders, not browser screenshots",
+    "images": [
+      {
+        "path": "volkswagen-research/id45/captures/id45_my25_technical_page8.png",
+        "bytes": 559525,
+        "sha256": "2d84e4a66371b7de954af48d0d923b200ed5e078aaa8910acf05def63685ce3e",
+        "classification": "Public technical/equipment PDF page render; not a browser screenshot"
+      },
+      {
+        "path": "volkswagen-research/id45/captures/id45_my25_technical_page9.png",
+        "bytes": 118638,
+        "sha256": "cc996e97cd00e97cab142aa0186c3e74acf0f7a7f6cd013aaaf4ef8fb534b093",
+        "classification": "Public technical/equipment PDF page render; not a browser screenshot"
+      },
+      {
+        "path": "volkswagen-research/id45/captures/id4_my27_equipment_page5.png",
+        "bytes": 290845,
+        "sha256": "58b24e7df53254ea2e115934230dc8efb301db37b8e18260545b30223ac3f51c",
+        "classification": "Public technical/equipment PDF page render; not a browser screenshot"
+      },
+      {
+        "path": "volkswagen-research/id45/captures/id4_my27_technical_page9.png",
+        "bytes": 114060,
+        "sha256": "0293d5a45b9c5d40ed9284686f4dcfa4469f39918653b965d0490b629f1832bd",
+        "classification": "Public technical/equipment PDF page render; not a browser screenshot"
+      },
+      {
+        "path": "volkswagen-research/id45/captures/id5_my26_equipment_page5.png",
+        "bytes": 287948,
+        "sha256": "8327074b718f18b0fed0b6a1b21a632e699a779a950ea510e961a2248ce490f2",
+        "classification": "Public technical/equipment PDF page render; not a browser screenshot"
+      },
+      {
+        "path": "volkswagen-research/id45/captures/id5_my26_technical_page8.png",
+        "bytes": 108830,
+        "sha256": "e0323d9352eb8ab46cf99d38b931be1f9ec4c6dee452097cd4aa364d23ddaddb",
+        "classification": "Public technical/equipment PDF page render; not a browser screenshot"
+      }
+    ],
+    "qaImages": [
+      {
+        "path": "roadmark-104-qa/volkswagen-independent-review/id4-09.png",
+        "bytes": 131989,
+        "sha256": "fdf68149205458bd5e506ea3af294f84fea9b160c601f73ea7b7a56f940e2b21",
+        "classification": "Public technical/equipment PDF page render; not a browser screenshot",
+        "provenance": "Research owner confirmed ID.4 pages 9-10 and ID. Buzz pages 14-15 are public PDF page renders, with no browser UI or private screen capture."
+      },
+      {
+        "path": "roadmark-104-qa/volkswagen-independent-review/id4-10.png",
+        "bytes": 150476,
+        "sha256": "2f99ae311105f485f4ff3805b5409a7eef546b1732b3b89646ba86bd29d74087",
+        "classification": "Public technical/equipment PDF page render; not a browser screenshot",
+        "provenance": "Research owner confirmed ID.4 pages 9-10 and ID. Buzz pages 14-15 are public PDF page renders, with no browser UI or private screen capture."
+      },
+      {
+        "path": "roadmark-104-qa/volkswagen-independent-review/idbuzz-14.png",
+        "bytes": 194729,
+        "sha256": "b8a15eca7931980196087455f6d5e409d8184b66cc4714160dbf45593fbe6b9a",
+        "classification": "Public technical/equipment PDF page render; not a browser screenshot",
+        "provenance": "Research owner confirmed ID.4 pages 9-10 and ID. Buzz pages 14-15 are public PDF page renders, with no browser UI or private screen capture."
+      },
+      {
+        "path": "roadmark-104-qa/volkswagen-independent-review/idbuzz-15.png",
+        "bytes": 207289,
+        "sha256": "180f6908a8f49b7aa786f865ce4c8e60a127c6f5118d8868ab9507984234affd",
+        "classification": "Public technical/equipment PDF page render; not a browser screenshot",
+        "provenance": "Research owner confirmed ID.4 pages 9-10 and ID. Buzz pages 14-15 are public PDF page renders, with no browser UI or private screen capture."
+      }
+    ],
+    "qaImageCount": 4,
+    "researchImageCount": 6,
+    "totalImageCount": 10
+  },
+  "priorToyotaBrowserScreenshotExclusions": {
+    "result": "Excluded before any upload",
+    "provenance": "Verified from current/build_normalized.py and REVIEW.md: official PDFs displayed in cloud Chrome and captured as browser screenshots.",
+    "files": [
+      {
+        "path": "toyota-research/current/bz4x-spec-p1.png",
+        "bytes": 94027,
+        "sha256": "2d9242f9136c653566bb169e0621106f9bafe749e465961139d45dd688b660a1",
+        "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+      },
+      {
+        "path": "toyota-research/current/bz4x-spec-p2.png",
+        "bytes": 92201,
+        "sha256": "ab1c9676f743f030ec5fc29654e6961c48ac8f31801456cd6307bc352d4e2275",
+        "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+      },
+      {
+        "path": "toyota-research/current/hilux-spec-p2.png",
+        "bytes": 91974,
+        "sha256": "08adef635b8744c02336ada1b02b674ee6b4f0e0012a3bd0fb3f2d1f1c0af368",
+        "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+      },
+      {
+        "path": "toyota-research/current/hilux-spec-p3.png",
+        "bytes": 88131,
+        "sha256": "2bf2bdd69b4c558d94b9561202fb49046211dbbb41806113b47597c4bd9495ca",
+        "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+      },
+      {
+        "path": "toyota-research/current/touring-spec-p2.png",
+        "bytes": 85836,
+        "sha256": "9525bbd89757a7ac6311fec7f82e5c5a3c0aee6d50c1ec1ff232a247ece90491",
+        "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+      }
+    ]
+  },
+  "workState": {
+    "workingCheckpoint": 104,
+    "latestDeliveredCheckpoint": 103,
+    "milestone": "M1 open",
+    "registeredPackets": 11,
+    "totalVersions": 374,
+    "tier1Versions": 297,
+    "onSaleVersions": 286,
+    "reviewedOnSaleCoreCells": 4181,
+    "onSaleCoreCellDenominator": 4862,
+    "latestIntegratedBrand": "Volkswagen",
+    "volkswagenTier1Records": 18,
+    "volkswagenOnSaleRecords": 13,
+    "volkswagenProvisionalReportedOrderOpenRecords": 5,
+    "volkswagenNewIdentities": 11,
+    "volkswagenResearchClosure": false,
+    "volkswagenOpenIssues": [
+      "MY27 ID. Buzz official current-version confirmation missing; five named variants remain provisional reported order-open",
+      "Indexed MY26 ID.4 GTX New stock lead could not be retrieved live; not excluded as unorderable"
+    ],
+    "sharedConfigurationGuard": {
+      "focusedTestsPassed": 81,
+      "namedInvalidUpdateCases": 32,
+      "broaderGuardCases": 6,
+      "independentVolkswagenReplayNegativeCategories": 26,
+      "scope": "Dated guarded updates to existing bounded configuration metadata; three obsolete MY26 Buzz configuration holds cleared; immutable source identity/build metadata and historical feature context retained."
+    },
+    "hyundai": "21 established versions integrated; exact six-seat MY26 IONIQ9 lead unresolved and deferred by owner",
+    "currentResearchBrand": "Volvo",
+    "nextResearchBrand": "GWM",
+    "latestRootChecks": {
+      "brand": "Volkswagen",
+      "researchCompleted": false,
+      "integrationTests": {
+        "passed": 82,
+        "failed": 0
+      },
+      "validateExit": 0,
+      "coverageExit": 0,
+      "typecheckExit": 0,
+      "changedFileLintExit": 0
+    },
+    "fullAggregateSuite": "Not rerun for this integration. Original through-Hyundai run remains partial/interrupted without a terminal aggregate result.",
+    "productionBuild": "Not rerun for this integration.",
+    "servicePerformance": "Previously measured approximately 60-second eager review-service preflight remains an open issue; test budget is not performance acceptance."
+  }
+}

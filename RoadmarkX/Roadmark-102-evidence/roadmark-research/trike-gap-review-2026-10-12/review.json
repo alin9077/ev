@@ -1,0 +1,197 @@
+{
+  "title": "Independent admission review: Australian electric road trikes",
+  "checkedAt": "2026-10-12",
+  "verdict": "GO_BOUNDED_MARKET_AUDIT_ONLY",
+  "scope": "Static files and read-only public source verification; no app execution, application edits, Git, cloud tasks, contacts or transactions.",
+  "canonical": {
+    "path": "roadmark-work/roadmark/data/market-inventory-2026-10-10.json",
+    "sha256": "2469610f9bea19221ed99483b01ca23ca4f9bb62356a873398e9895c2eb838ac",
+    "records": 242,
+    "unresolvedLeads": 143,
+    "reconciledLeads": 21,
+    "peripheralRecords": 5,
+    "modified": false
+  },
+  "mate150": {
+    "auditAdmissionEligible": true,
+    "auditRecordDeltaIfSeparatelyIntegrated": 1,
+    "admissionBoundary": "Advertised Australian New offer plus exact supplier-to-current-type-approval join. Not an identified physical unit or verified available complete vehicle.",
+    "recommendedCanonicalFields": {
+      "orderStatus": "accepting_order_requests_advertised",
+      "stockStatus": "unverified",
+      "physicalStockVerified": false,
+      "physicalStockQuantity": null,
+      "modelYear": null,
+      "rankingEligible": false,
+      "catalogueCoverage": "market_audit_only",
+      "completeVehicleCountEligible": null
+    },
+    "offer": {
+      "supplierPriceAUD": 6195,
+      "supplierPriceBasis": "before on-road costs",
+      "supplierUrl": "https://ozetrike.com.au/",
+      "marketplacePriceAUD": 6386.55,
+      "marketplaceUrl": "https://www.ebay.com.au/itm/376747254821",
+      "seller": "os54073",
+      "sellerAffiliationVerified": false,
+      "condition": "New",
+      "buyItNowConfirmedInFreshHTML": true,
+      "embeddedListingStatus": "ACTIVE",
+      "embeddedAvailability": "https://schema.org/InStock",
+      "embeddedStatusIsAdvertisingNotPhysicalVerification": true,
+      "genericConnectionErrorAlsoDisplayed": true,
+      "acceptedOrderVerified": false,
+      "deliveryVerified": false,
+      "completeTotalVerified": false
+    },
+    "join": {
+      "supplierFaq": "https://ozetrike.com.au/faqs",
+      "regulator": "https://www.rover.infrastructure.gov.au/PublishedApprovals/VTADetails/?id=073001ac-968f-f011-b4cc-000d3ad1ce22",
+      "approval": "VTA-065474",
+      "approvalHolder": "JNN PTY LTD",
+      "make": "JINPENG",
+      "model": "JP1500DZH-B",
+      "marketingDesignation": "OZetrike",
+      "category": "LB",
+      "statusObserved": "In Force",
+      "noticeEffectiveDate": "2025-09-12",
+      "noticeStatedExpiry": "2032-09-11 unless revoked earlier",
+      "variants": [
+        "Cargo 01",
+        "Cargo 02"
+      ],
+      "bothVariantBatteries": "58 Ah lead-acid",
+      "ravEntryVerified": false,
+      "unitVinVerified": false,
+      "stateRegistrationVerified": false
+    },
+    "restrictions": [
+      "No lithium approval inherited by Mate150L; published RVD establishes no lithium option, not the absence of every possible separate approval.",
+      "Cargo 01/02 are regulatory variants, not two verified marketed trims. AGM/hydraulic-tipper wording is descriptive configuration wording, not proof of a separately named grade.",
+      "RVD data is applicant supplied and expressly not department-verified specification data.",
+      "Supplier curb 270 kg and RVD tare 368 kg are not harmonized. Do not derive payload or numeric ranks.",
+      "Retain original supplier rated/max and RVD net power labels. Do not combine older range/payload claims with current flyer.",
+      "Marketplace model year 2025 remains seller metadata, not verified manufacturer model year."
+    ]
+  },
+  "candidateDispositions": [
+    {
+      "candidate": "Mate150",
+      "verdict": "GO",
+      "eligibleStatus": "one market-audit advertised-New-offer record only"
+    },
+    {
+      "candidate": "Mate150L",
+      "verdict": "NO_GO_CURRENT_APPROVED_NEW_DELIVERY",
+      "eligibleStatus": "future preorder derivative under Mate150",
+      "reason": "Supplier December 2026/12-unit batch and deposit wording is forecast; lithium approval unresolved."
+    },
+    {
+      "candidate": "KYBURZ DXP / DXP 5.3 Australia",
+      "verdict": "GO_UNRESOLVED_LEAD_ONLY",
+      "eligibleStatus": "listed_unconfirmed",
+      "reason": "Australian subsidiary inquiry page and parent provenance verified; exact current New supply/order acceptance/current approval unresolved. 2.7 versus 3.5 kW conflict cannot create a trim."
+    },
+    {
+      "candidate": "EMoS CT-KARGO / CT-KARGO KOOL",
+      "verdict": "GO_ONE_UNRESOLVED_FAMILY_ONLY",
+      "eligibleStatus": "listed_unconfirmed",
+      "reason": "KOOL is a named refrigeration derivative. Shared dealer-claimed 50281 approval/common base supports one catalogue family, not verified homologated derivative scope. Both direct pages 502."
+    },
+    {
+      "candidate": "EMoS CT-KUBE",
+      "verdict": "GO_UNRESOLVED_LEAD_ONLY",
+      "eligibleStatus": "listed_unconfirmed",
+      "reason": "50282 LB remains dealer claim. Three capacity/body options are not three verified current retail trims. Direct page 502."
+    },
+    {
+      "candidate": "Stealth OzPOD",
+      "verdict": "GO_UNRESOLVED_LEAD_ONLY",
+      "eligibleStatus": "listed_unconfirmed",
+      "reason": "Manufacturer product supports identity; no current priced New offer, accepted order or exact approval join established."
+    },
+    {
+      "candidate": "Jinpeng E-QL150",
+      "verdict": "GO_PERIPHERAL_FUTURE_LEAD_ONLY",
+      "eligibleStatus": "not_current",
+      "reason": "Australian launch/interest promotion only; road eligibility, supply and supplier authority unresolved. No identity join to Mate150/JP1500DZH-B."
+    }
+  ],
+  "deduplication": {
+    "method": "Case/punctuation-normalized searches of individual identity/name/alias field values across four canonical sections. Wider record scans reviewed for incidental matches.",
+    "identityMatches": [],
+    "families": 6,
+    "dispositionEntries": 7,
+    "notAdditionalFamilies": [
+      "CT-KARGO KOOL",
+      "Mate150L",
+      "Cargo 01 / Cargo 02 regulatory variants"
+    ],
+    "existingRelatedLeadsPreserved": [
+      "EMoS iTango",
+      "EMoS iTank",
+      "EMoS EH7",
+      "WYLD",
+      "Horwin"
+    ],
+    "limit": "No recorded candidate name collision found; OEM identity uniqueness is not proven globally."
+  },
+  "freshness": {
+    "freshDirectChecks": [
+      "ROVER HTML and two embedded PDFs",
+      "eBay listing",
+      "OZ eTrike home",
+      "OZ eTrike FAQ"
+    ],
+    "currentDirect502": [
+      "CT-KARGO",
+      "CT-KARGO KOOL",
+      "CT-KUBE"
+    ],
+    "webCrawlAge": {
+      "EMoS KOOL": "three months",
+      "EMoS KUBE": "three months",
+      "eBay web extractor": "two months, superseded for offer-existence evidence by independent fresh HTTP retrieval",
+      "KYBURZ local product": "two weeks",
+      "OzPOD": "four weeks",
+      "Jinpeng home": "today"
+    },
+    "interpretation": "Publication date, observation date, crawl age and seller year remain distinct. HTTP 200 is not stock proof; 502 is not discontinuation proof.",
+    "reviewLimits": [
+      "The local 28 MB KYBURZ PDF exceeded web extraction size; February 2025 printed date/hash remains packet-reported. Local 2.7 kW page and global May 2025 3.5 kW brochure independently read.",
+      "Historical 2022 price table and 2023 fleet submission were not revalidated or used to establish current admission.",
+      "Current Mate150 flyer was not re-rendered; specification conflicts conservatively retained from packet, with no numeric promotion."
+    ]
+  },
+  "integrationRequirements": [
+    "Use canonical stockStatus=unverified and positive advertising evidence separately, rather than adding the packet descriptive stockStatus as a new enum.",
+    "One audit record only; no verified stock, exact detailed configuration, complete-vehicle or ranking count promotion.",
+    "Keep Mate150L separate as a future derivative with approval unresolved.",
+    "No application integration performed or authorized by this review."
+  ],
+  "censusComplete": false,
+  "sources": {
+    "kyburz-au": "https://kyburz-webshop.com.au/kyburz-dxp-5-3-australian-electric-vehicle/",
+    "kyburz-au-brochure": "https://kyburz-webshop.com.au/wp-content/uploads/2025/05/Kyburz-DXP-5.3-Australian.pdf",
+    "kyburz-global-au": "https://kyburz-switzerland.ch/en/australia",
+    "kyburz-global-brochure": "https://kyburz-switzerland.ch/library/Aus_DXP_EN_20250506_web2_321e.pdf",
+    "kyburz-post-history": "https://www.infrastructure.gov.au/sites/default/files/documents/post2023-submission-no-72-kyburz-pty-ltd.pdf",
+    "kargo-dealer": "https://www.evmotoemos.com.au/cargo/ct-kargo",
+    "kargo-kool-dealer": "https://www.evmotoemos.com.au/cargo/ct-kargo-kool",
+    "kube-dealer": "https://www.evmotoemos.com.au/cargo/ct-kube",
+    "emos-range": "https://www.evmotoemos.com.au/",
+    "emos-historical-market": "https://electricvehiclecouncil.com.au/wp-content/uploads/2022/10/State-of-EVs-October-2022.pdf",
+    "ozetrike-home": "https://ozetrike.com.au/",
+    "ozetrike-products": "https://ozetrike.com.au/products",
+    "ozetrike-faq": "https://ozetrike.com.au/faqs",
+    "ozetrike-rover": "https://www.rover.infrastructure.gov.au/PublishedApprovals/VTADetails/?id=073001ac-968f-f011-b4cc-000d3ad1ce22",
+    "ozetrike-approval-notice": "https://www.rover.infrastructure.gov.au/PublishedApprovals/VTADetails/?id=073001ac-968f-f011-b4cc-000d3ad1ce22",
+    "ozetrike-rvd": "https://www.rover.infrastructure.gov.au/PublishedApprovals/VTADetails/?id=073001ac-968f-f011-b4cc-000d3ad1ce22",
+    "mate150-ebay": "https://www.ebay.com.au/itm/376747254821",
+    "mate150-current-flyer": "https://img1.wsimg.com/blobby/go/33dbd470-bcb9-4a28-aeba-aa82c6b61530/6%2C195%20Flyer-OZ%20eTrike%20Mate150.pdf",
+    "mate150-old-particulars": "https://img1.wsimg.com/blobby/go/33dbd470-bcb9-4a28-aeba-aa82c6b61530/OZetrike%20Mate150-%20Particulars-a848987.pdf",
+    "ozpod-manufacturer": "https://www.stealthspecialvehicles.com/ozpod",
+    "jinpeng-eql150": "https://jinpeng.com.au/",
+    "jinpeng-eql150-specs": "https://jinpeng.com.au/specs"
+  }
+}

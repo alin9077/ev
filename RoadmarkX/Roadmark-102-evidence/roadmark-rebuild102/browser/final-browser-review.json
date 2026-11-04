@@ -1,0 +1,55 @@
+{
+  "checkpoint": 102,
+  "observedAtUTC": "2026-10-13T00:11:00Z",
+  "environment": "dot own VM, desktop Chromium; no real mobile devices",
+  "testedSurfaces": [
+    "production HTTP8766",
+    "portable HTTP8765"
+  ],
+  "viewports": [
+    {
+      "cssWidth": 1180,
+      "dpr": 1
+    },
+    {
+      "cssWidth": 400,
+      "dpr": 1.25
+    }
+  ],
+  "journeyFiles": [
+    "portable-desktop-journey.json",
+    "portable-narrow-journey.json",
+    "production-desktop-journey.json",
+    "production-narrow-journey.json"
+  ],
+  "trikeFiles": [
+    "portable-desktop-trikes.json",
+    "portable-narrow-trikes.json",
+    "production-desktop-trikes.json",
+    "production-narrow-trikes.json"
+  ],
+  "canonical243OrderedModelsAndSourceURLsExact": true,
+  "allPaginationCounts": [
+    24,
+    48,
+    72,
+    96,
+    120,
+    144,
+    168,
+    192,
+    216,
+    240,
+    243
+  ],
+  "originalHeroPoints": 9,
+  "visualReview": "Transient native screenshots inspected for both102 heroes at desktop and narrow width, compared with saved100 hero. Desktop market headers match between production and portable; narrow trike labels and expanded evidence wrap within viewport. No screenshots persisted. Original typography, colours, logo and nine-point hero presentation remain. Scoped visual review only.",
+  "limitations": [
+    "No real iPhone/Safari or Android/Chrome run",
+    "No complete-site mobile journey, accessibility, reduced-motion or performance signoff",
+    "Existing browser graphics stability issue remains unresolved; native renderer briefly retained stale narrow paint after expanding window. Reload restored correct desktop presentation on both surfaces; DOM width reported1180. Do not claim sustained stability fixed.",
+    "Initial stale CDP tab5 unavailable after context recovery; fresh tab on same browser succeeded",
+    "DXP search matches an existing MG4 EV record; no KYBURZ DXP card admitted. Search covers evidence/source content."
+  ],
+  "sourceCodeChangedDuringBrowserQA": false
+}

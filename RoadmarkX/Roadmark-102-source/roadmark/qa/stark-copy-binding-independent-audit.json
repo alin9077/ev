@@ -1,0 +1,128 @@
+{
+  "passed": true,
+  "scope": "Independent static copy/source/identity audit of research artifacts only; no application writes, application imports, runtime tests or browser actions. Runtime mutation validation remains a separate root gate.",
+  "checks": 609,
+  "errors": [],
+  "adapterSHA256": "0c1af402e78d4ddfee85d392d85caaddddf3f7ad9822ad694f8a40f7ee1e39ab",
+  "payloadSHA256": "22061bf9bbe07b26d92cde0129725807c41c59bbb4ad7a340c5e014e8609a972",
+  "bindingSnapshotSHA256": "eb4a7f94828c2190d1b26d83b380684928760e2f3334c4ceb5e4796ab71f12bb",
+  "readinessSHA256": "3ded7a2e243888ed289b0cd228f2a0050db4045758f2f41f30701a455d513c89",
+  "proposalSHA256": "8f30982c6c752454450d6b83ef4827a31c3ee6a2a40e6c9f44896b14ec806251",
+  "records": [
+    {
+      "variantId": "stark_varg_ex_standard_60hp_au__20261010",
+      "strength": "The Standard manual column lists 44 kW maximum output and 70 Nm motor torque. Stark lists adjustable KYB suspension with 300 mm front and 303 mm rear travel.",
+      "tradeoff": "Stark gives a 990 mm fully extended seat height, or 966 mm at static sag. Trail riding time is an up-to-six-hour claim depending on rider and trail conditions; road-distance range remains unverified.",
+      "strengthFactCount": 4,
+      "tradeoffFactCount": 2,
+      "nullPremises": 49,
+      "holds": 10,
+      "guardSourceCount": 8
+    },
+    {
+      "variantId": "stark_varg_ex_alpha_80hp_au__20261010",
+      "strength": "The Alpha manual column lists 60 kW maximum output and 90 Nm motor torque. Stark lists adjustable KYB suspension with 300 mm front and 303 mm rear travel.",
+      "tradeoff": "Stark gives a 990 mm fully extended seat height, or 966 mm at static sag. Trail riding time is an up-to-six-hour claim depending on rider and trail conditions; road-distance range remains unverified.",
+      "strengthFactCount": 4,
+      "tradeoffFactCount": 2,
+      "nullPremises": 49,
+      "holds": 10,
+      "guardSourceCount": 8
+    },
+    {
+      "variantId": "stark_varg_sm_standard_60hp_au__20261010",
+      "strength": "The Standard manual column lists 44 kW maximum output and 70 Nm motor torque. Stark lists an included 3.3 kW charger in a portable, backpack-sized form.",
+      "tradeoff": "The SM page gives a 935 mm seat height without a measurement state. Its manual lists 81 km WMTC; exact delivered-vehicle applicability and your route range still need confirmation.",
+      "strengthFactCount": 5,
+      "tradeoffFactCount": 2,
+      "nullPremises": 49,
+      "holds": 10,
+      "guardSourceCount": 8
+    },
+    {
+      "variantId": "stark_varg_sm_alpha_80hp_au__20261010",
+      "strength": "The Alpha manual column lists 60 kW maximum output and 90 Nm motor torque. Stark lists an included 3.3 kW charger in a portable, backpack-sized form.",
+      "tradeoff": "The SM page gives a 935 mm seat height without a measurement state. Its manual lists 81 km WMTC; exact delivered-vehicle applicability and your route range still need confirmation.",
+      "strengthFactCount": 5,
+      "tradeoffFactCount": 2,
+      "nullPremises": 49,
+      "holds": 10,
+      "guardSourceCount": 8
+    }
+  ],
+  "textAmendments": [
+    {
+      "variantId": "stark_varg_ex_standard_60hp_au__20261010",
+      "part": "tradeoff",
+      "before": "Stark gives a 990 mm fully extended seat height, or 966 mm at static sag. Trail riding time is an up-to-six-hour claim; road-distance range remains unverified.",
+      "after": "Stark gives a 990 mm fully extended seat height, or 966 mm at static sag. Trail riding time is an up-to-six-hour claim depending on rider and trail conditions; road-distance range remains unverified.",
+      "reason": "Retains source dependence on rider ability and trail conditions.",
+      "evidence": "stark-au-sources/ex-product.txt:304"
+    },
+    {
+      "variantId": "stark_varg_ex_alpha_80hp_au__20261010",
+      "part": "tradeoff",
+      "before": "Stark gives a 990 mm fully extended seat height, or 966 mm at static sag. Trail riding time is an up-to-six-hour claim; road-distance range remains unverified.",
+      "after": "Stark gives a 990 mm fully extended seat height, or 966 mm at static sag. Trail riding time is an up-to-six-hour claim depending on rider and trail conditions; road-distance range remains unverified.",
+      "reason": "Retains source dependence on rider ability and trail conditions.",
+      "evidence": "stark-au-sources/ex-product.txt:304"
+    }
+  ],
+  "acceptedSourceIds": [
+    "r10_stark_au_dealer_directory",
+    "r10_stark_au_stock_search",
+    "r10_stark_au_technical",
+    "r10_stark_au_warranty",
+    "r10_stark_banks_feed",
+    "r10_stark_ex_manual",
+    "r10_stark_ex_manual_index",
+    "r10_stark_ex_product",
+    "r10_stark_sm_manual",
+    "r10_stark_sm_manual_index",
+    "r10_stark_sm_product"
+  ],
+  "excludedHeldSourceIds": [
+    "r10_stark_banks_ex_80hp_cached_advertisement",
+    "r10_stark_banks_ex_alpha_marketplace_context",
+    "r10_stark_banks_home_cached_context",
+    "r10_stark_banks_home_html_shell",
+    "r10_stark_banks_range_cached_context",
+    "r10_stark_banks_sm_80hp_cached_advertisement",
+    "r10_stark_banks_stark_range_html_shell",
+    "r10_stark_banks_varg_ex_80hp_html_shell",
+    "r10_stark_banks_varg_sm_80hp_html_shell",
+    "r10_stark_skoll"
+  ],
+  "sourceSemanticsReview": [
+    {
+      "scope": "Both EX and SM named power configurations",
+      "finding": "44/60 kW and 70/90 Nm are direct Standard/Alpha manual column values. No horsepower conversion, continuous road-certified output, wheel torque, licence eligibility or road-legal power entitlement is claimed.",
+      "evidence": [
+        "stark-au-sources/ex-manual.txt, printed pages 38–39",
+        "stark-au-sources/sm-manual.txt, printed pages 38–39"
+      ]
+    },
+    {
+      "scope": "Both EX clauses",
+      "finding": "KYB adjustability and 300 mm front/303 mm rear travel preserved; 990 mm extended and 966 mm static-sag seat states stay separate. Up to six hours retains rider/trail qualifications and is not converted into road distance. EX range null reasons, canonical null fact and video hold are in the full guarded identity.",
+      "evidence": [
+        "stark-au-sources/ex-product.txt:249–253",
+        "stark-au-sources/ex-product.txt:274–278",
+        "stark-au-sources/ex-product.txt:304",
+        "stark-au-sources/ex-product.txt:326–332"
+      ]
+    },
+    {
+      "scope": "Both SM clauses",
+      "finding": "Included 3.3 kW portable backpack-ready charger claim preserved; no EX transfer or charging-time inference. 935 mm seat height explicitly lacks a measurement state. 81 km remains an attributed manual WMTC claim with delivered-vehicle and route-range uncertainty, not canonical range.",
+      "evidence": [
+        "stark-au-sources/sm-product.txt:91–92",
+        "stark-au-sources/sm-product.txt:201–205",
+        "stark-au-sources/sm-product.txt:237–238",
+        "stark-au-sources/sm-product.txt:304–305",
+        "stark-au-sources/sm-manual.txt, printed page 39"
+      ]
+    }
+  ],
+  "applicationWritten": false
+}

@@ -1,0 +1,67 @@
+▲ Next.js 16.3.8 (Turbopack)
+✓ Running next.config.ts took 32ms
+- Experiments (use with caution):
+  · cpus: 1
+  · staticGenerationMaxConcurrency: 1
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 3.5s
+  Running TypeScript ...
+  Finished TypeScript in 19.3s ...
+  Collecting page data using 1 worker ...
+  Generating static pages using 1 worker (0/391) ...
+  Generating static pages using 1 worker (61/391) 
+  Generating static pages using 1 worker (97/391) 
+  Generating static pages using 1 worker (156/391) 
+  Generating static pages using 1 worker (195/391) 
+  Generating static pages using 1 worker (252/391) 
+  Generating static pages using 1 worker (293/391) 
+  Generating static pages using 1 worker (347/391) 
+✓ Generating static pages using 1 worker (391/391) in 7.1min
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ƒ /b
+├ ƒ /cars
+├   /cars/[family]/[variant]
+│ ├ ● /cars/tesla-model-y/premium-long-range-awd-1
+│ ├ ● /cars/tesla-model-y/premium-rwd-2
+│ ├ ● /cars/tesla-model-y/l-premium-awd-4
+│ └ ● [+342 more paths]
+├ ƒ /compare
+├   /compare/[pair]
+│ ├ ● /compare/model-y-vs-sealion-7
+│ ├ ● /compare/model-y-vs-geely-ex5
+│ ├ ● /compare/model-y-vs-zeekr-7x
+│ └ ● [+6 more paths]
+├   /compare/[pair]/comparison.json
+│ ├ ● /compare/model-y-vs-sealion-7/comparison.json
+│ ├ ● /compare/model-y-vs-geely-ex5/comparison.json
+│ ├ ● /compare/model-y-vs-zeekr-7x/comparison.json
+│ └ ● [+6 more paths]
+├   /compare/[pair]/comparison.md
+│ ├ ● /compare/model-y-vs-sealion-7/comparison.md
+│ ├ ● /compare/model-y-vs-geely-ex5/comparison.md
+│ ├ ● /compare/model-y-vs-zeekr-7x/comparison.md
+│ └ ● [+6 more paths]
+├ ○ /comparisons
+├ ○ /discover
+├ ○ /glossary
+├ ○ /icon.svg
+├ ○ /llms.txt
+├ ○ /market
+├ ○ /methodology
+├ ○ /model-y
+├ ○ /review
+├ ○ /robots.txt
+├ ○ /sitemap.xml
+├ ƒ /software
+└ ƒ /sources
+
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+

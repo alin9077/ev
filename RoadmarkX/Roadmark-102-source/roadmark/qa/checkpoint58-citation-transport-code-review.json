@@ -1,0 +1,59 @@
+{
+  "verdict": "PASS_STATIC_CODE_REVIEW",
+  "scope": "Read-only review of four changed application modules against verified checkpoint v57. No app imports, execution, tests, builds or changes by this auditor.",
+  "baselineArchiveSHA256": "32f46dce9d62b7d681c5a0bc6eb4a00fff24099a570692276c17711bcc4e8f0c",
+  "modules": [
+    {
+      "path": "roadmark-work/roadmark/src/lib/data.ts",
+      "baselineSHA256": "3ad2ffb8335ad1d061ffa9962d9002dd8a16b564825a905884098223d8edf5db",
+      "reviewedSHA256": "ce2d02f7b0c70a3744eb4cc0d776735bf074bbce2b3e30f62e2a17df8b727e62",
+      "changed": true
+    },
+    {
+      "path": "roadmark-work/roadmark/src/lib/discovery.ts",
+      "baselineSHA256": "d7dffb44cba59a9e9d3f8792870863ad5611cc3faeeecb59e28e759b7ca0fe80",
+      "reviewedSHA256": "a4391f968fda69b4f70215a6698d24606d6e32b22780e50de9e7addb9a067321",
+      "changed": true
+    },
+    {
+      "path": "roadmark-work/roadmark/src/lib/page-evidence.ts",
+      "baselineSHA256": "69d4aec9415f4d070e4f7bd12c42c8f967f7053aa838c2db6fd00980637f8629",
+      "reviewedSHA256": "f1d11a021e2865e6eff1f41ee976e1bb7ab9bf4e3e423f55a33639f99b2e0377",
+      "changed": true
+    },
+    {
+      "path": "roadmark-work/roadmark/src/lib/types.ts",
+      "baselineSHA256": "e669bb885ff8f1a2a5565b139a9fce6b5507cfb3c99179cec061d84af091d645",
+      "reviewedSHA256": "a13fd87008489eefd347367a61245140238dad5093d5d464f9ac7a6524be253c",
+      "changed": true
+    }
+  ],
+  "runtimeImportGraph": {
+    "discovery": [
+      "./page-evidence",
+      "./search",
+      "./car-avatar-shapes",
+      "./fact-validity"
+    ],
+    "page-evidence": [
+      "./configuration-evidence"
+    ],
+    "configuration-evidence": []
+  },
+  "findings": [],
+  "resolvedFinding": "pack-issue-source-selection-finding.json",
+  "review": {
+    "packClosure": "Every attached Fact Issue source ID joins the existing selected source union. All selected IDs are checked for registration before filtering. Source records/holds remain unmodified except existing safe URL sanitization. Uncited navigation-only sources need not appear in every pack.",
+    "discoveryMeaning": "All seven attribute Facts remain exact references. Bespoke-avatar height/wheelbase Facts remain as before. For omitted generic-avatar dimensions, only unique citation IDs from their direct and Issue sources are carried; facts/claims are not restored. The three-field configuration projection, original identity, ranking gate and buyer summary stay unchanged.",
+    "mutationAndIdempotence": "New projected car/config/facts/set objects are created. Existing projected IDs are preserved without appending duplicates already seen by carEvidenceIds. Projecting an already projected car preserves the result. No original Fact or source object is mutated.",
+    "cycles": "discovery imports page-evidence, which imports configuration-evidence; configuration-evidence imports Car type only. page-evidence imports Car/Pack/Source as types only. No new runtime back-edge into discovery/data/selling-points.",
+    "performance": "Static complexity remains linear: pack adds one pass over Fact Issue citations and Set membership checks; discovery inspects retained citation lists plus two omitted dimension Facts. No network, deep-cloning, recursion, repeated catalogue construction or nested registry scans were added. No timing benchmark was run.",
+    "callerScope": "Inspected current app and portable call sites use full catalogue cars for pack(); discovery projections are used for discovery/page-evidence transport. Passing a projected car directly into pack() is not a current call path and is not certified by this review."
+  },
+  "focusedTestsReadOnly": [
+    "tests/jeep-ora-integration.test.ts",
+    "tests/avatar-dimension-projection.test.ts",
+    "tests/configuration-evidence-transport.test.ts"
+  ],
+  "runtimeValidation": "Parent owns focused/full QA; test source was read but not run by this auditor."
+}

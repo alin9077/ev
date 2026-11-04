@@ -1,0 +1,141 @@
+{
+  "schemaVersion": "1.0",
+  "id": "market-deepway-star-lead-evidence-2026-10-12",
+  "status": "research_only_integration_proposal",
+  "checkedAt": "2026-10-12",
+  "subject": {
+    "brand": "Deepway",
+    "model": "Star",
+    "proposedLeadId": "deepway-star",
+    "vehicleClass": "truck"
+  },
+  "applicationScope": {
+    "targetCollection": "unverifiedLeads",
+    "appendOnly": true,
+    "existingRecordsChanged": 0,
+    "existingLeadsChanged": 0,
+    "wholeMarketReverified": false,
+    "exactDetailedConfigurationProposalApproved": false,
+    "numericalFactsPromoted": false,
+    "rankingEligibilityPromoted": false,
+    "appChanged": false
+  },
+  "proposedLeadArtifact": {
+    "name": "deepway-star-lead.candidate.json",
+    "sha256": "9011182498c4ca3db9145477a1201d4b224a5d9999f9dfdb62a08de4bbd45f40",
+    "hashSemantics": "Exact UTF-8 proposal file bytes; not an origin-source hash"
+  },
+  "baseline": {
+    "marketFile": "data/market-inventory-2026-10-10.json",
+    "rawFileSHA256": "1a272a4bcfb63af8d426e48e1dcfa8862a96adc4afd48c4bc2c6dd5428b810c0",
+    "recordCount": 241,
+    "activeLeadCount": 143,
+    "marketSourceArtifactCount": 17,
+    "matchingFamilyRecords": 0,
+    "matchingActiveLeads": 0,
+    "identityCheckQualification": "Static bounded name search; not every possible unknown alias"
+  },
+  "sources": [
+    {
+      "id": "deepway-dealer-family",
+      "url": "https://www.deepwayevtrucks.com.au/",
+      "publisher": "Deepway EV Trucks",
+      "publisherType": "Australian_dealer_self_described_authorised",
+      "observedDateUtc": "2026-10-12",
+      "publicationDate": null,
+      "retrieval": "direct_web_open_success",
+      "httpStatus": null,
+      "authorityIndependentlyVerified": false,
+      "observation": "Australian dealer page markets the Star battery-electric prime mover and sales, fleet-quotation and test-drive routes. The page does not bind the live family offer to an exact axle/code/epoch, accepted order, identifiable unsold New unit or selected-build road approval.",
+      "capture": {
+        "kind": "web_tool_response_text",
+        "wrapperSHA256": "eabb3f82d3ca5d4c444743b64548297c5e488d252b9f3345f97eff4aa7382ba5",
+        "responseBlockSHA256": "2435c3acccacc503cf5e9b6f7209d9f55415b7d8d0500888cab5c512a7bcd8bd",
+        "originHTMLRetained": false,
+        "rawCaptureIncludedInThisSidecar": false
+      }
+    },
+    {
+      "id": "deepway-yarraville-indexed",
+      "url": "https://deepway.com.au/news/deepway-star-yarraville-electric-truck-showcase",
+      "publisher": "Deepway Australia",
+      "publisherType": "Australian_supplier_self_description_in_search_index",
+      "observedDateUtc": "2026-10-12",
+      "publicationDate": "2026-04-15",
+      "eventDate": "2026-04-14",
+      "retrieval": "search_index_text_available_direct_web_open_404",
+      "toolReportedHTTPStatus": 404,
+      "observation": "Indexed supplier article claims Australian availability and ADR compliance. It mentions paired historical model/layout scopes, but does not establish current order acceptance or verify registration for the current dealer offer.",
+      "indexedIdentityMentions": [
+        "4x2 513H",
+        "4x2 600 kWh",
+        "generic 4x2/6x4 and 513/600 kWh options"
+      ],
+      "identityQualification": "Historical indexed mentions only; do not construct a configuration matrix, infer a 6x4 513 variant or promote numeric facts.",
+      "capture": {
+        "kind": "indexed_web_tool_response_text_plus_direct_error",
+        "indexWrapperSHA256": "b78d44d1ed1d4669abf9bea755d50a01403d1808204bfc6ad500b5ef7cffa3a0",
+        "indexResponseBlockSHA256": "1ddc253e0ca94067069e0f35110892e28d4d79c2f1e429d347d079ff472b3214",
+        "errorWrapperSHA256": "49dd9804961c5b1b719b30e0543c3350713c4bf243949f318f7cb7b98747af2a",
+        "errorResponseBlockSHA256": "7c8f2ea337baf207b79eb1cbf8679258e69bfd194dc3954198f79f757c09353c",
+        "rawCaptureIncludedInThisSidecar": false
+      }
+    },
+    {
+      "id": "deepway-truckshowx-indexed",
+      "url": "https://deepway.com.au/news/deepway-australia-makes-its-national-industry-debut-at-truckshowx-2026",
+      "publisher": "Deepway Australia",
+      "publisherType": "Australian_distributor_self_description_in_search_index",
+      "observedDateUtc": "2026-10-12",
+      "publicationDate": "2026-04-27",
+      "announcedEventDates": [
+        "2026-05-18",
+        "2026-05-19"
+      ],
+      "retrieval": "search_index_text_available_direct_web_open_404",
+      "toolReportedHTTPStatus": 404,
+      "observation": "Indexed announcement identifies DeepWay Star 6x4-600C for a planned Australian demonstration. It describes a Rowville-based authorised distributor. This does not establish current stock, event completion, current factory orders, or continuity with the separately named Dandenong dealer.",
+      "indexedIdentityMentions": [
+        "DeepWay Star 6x4-600C"
+      ],
+      "identityQualification": "Exact indexed exhibition code only; no proven current dealer-offer join or detailed-trim admission.",
+      "capture": {
+        "kind": "indexed_web_tool_response_text_plus_direct_error",
+        "indexWrapperSHA256": "b78d44d1ed1d4669abf9bea755d50a01403d1808204bfc6ad500b5ef7cffa3a0",
+        "indexResponseBlockSHA256": "1ddc253e0ca94067069e0f35110892e28d4d79c2f1e429d347d079ff472b3214",
+        "errorWrapperSHA256": "49dd9804961c5b1b719b30e0543c3350713c4bf243949f318f7cb7b98747af2a",
+        "errorResponseBlockSHA256": "7c8f2ea337baf207b79eb1cbf8679258e69bfd194dc3954198f79f757c09353c",
+        "rawCaptureIncludedInThisSidecar": false
+      }
+    }
+  ],
+  "holds": {
+    "exactCurrentAustralianConfiguration": false,
+    "acceptedFactoryOrderVerified": false,
+    "physicalUnsoldNewStockVerified": false,
+    "selectedBuildRoadApprovalVerified": false,
+    "manufacturerImporterDealerAuthorityChainVerified": false,
+    "priceOrWarrantyPromoted": false,
+    "technicalFactsPromoted": false,
+    "rankingEligible": false
+  },
+  "proposedCountEffect": {
+    "activeLeadGroups": 1,
+    "marketSourceArtifactReferences": 1,
+    "marketRecords": 0,
+    "namedTrimEntries": 0,
+    "detailedConfigurations": 0,
+    "detailedFamilies": 0,
+    "catalogueSourceRecords": 0,
+    "reconciledLeadGroups": 0,
+    "peripheralRecords": 0,
+    "verifiedAvailableVehicles": 0
+  },
+  "qualifications": [
+    "Fresh observation date is 12 October 2026 UTC. Indexed article dates and announced event dates are separate; no model year or current order-opening date is inferred.",
+    "Current website marketing is evidence of a sales/enquiry route, not a selected-build order acceptance or a physically available New unit.",
+    "HTTP failures are web-tool reports, not saved origin headers or visible-browser verification; they do not prove national unavailability or business cessation.",
+    "Capture hashes identify retained tool-response text, including retrieval metadata, not raw origin HTML or factual accuracy. Full captures remain research-only and are not embedded here.",
+    "No historical missing dossier was restored. No new fetch, supplier contact, app import, test, build or application mutation was performed while preparing this proposal."
+  ]
+}

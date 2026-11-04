@@ -1,0 +1,63 @@
+{
+  "schema": "roadmark98.static-qa-runner-candidate.v1",
+  "revision": 1,
+  "status": "static-only-unexecuted-requires-independent-review",
+  "sourceRunner": {
+    "path": "roadmark-research/qa97-candidate/run_qa97.py",
+    "sha256": "8987a86aa9ae380211e3e6ca0765d73a2146558bd1bc754a2756d69c53ba860d",
+    "originalPreserved": true
+  },
+  "change": "Minimal checkpoint98 rename only: two receipt schema occurrences and two console marker strings. All admission, stage, evidence, output and bounded process-group interruption-cleanup logic preserved. Supporting documentation updates observed baseline and task context only.",
+  "files": [
+    {
+      "path": "run_qa98.py",
+      "sha256": "cdc2fb3925fff38fd41fe5a2fad9f5ea608915ec5b31bad2448f48ba4ec6879e",
+      "bytes": 22175
+    },
+    {
+      "path": "README.md",
+      "sha256": "f205b68dc1589616bd8e5f9a76a219e38e0dc78dd7949038166c0cdeb19fc033",
+      "bytes": 16292
+    }
+  ],
+  "baselineInputsObserved": {
+    "checkpoint": 97,
+    "path": "roadmark-research/applied97/expected-inputs-revision2.json",
+    "sha256": "cc6d49660a61a4f658194c87b64330c5149f435ebc2273f9e9fe19a20f00013e",
+    "files": 1668,
+    "predecessorSaveStatusAtPreparation": "Checkpoint97 save/packaging still pending in parent task; baseline observation does not establish a completed save or checkpoint acceptance"
+  },
+  "candidatePreparationContext": {
+    "pathObserved": "roadmark-research/narrow-detail98-candidate/MANIFEST.json",
+    "statusAtPreparation": "Unapplied candidate awaiting independent review or revision",
+    "declaredFilesAtPreparation": 3,
+    "declaredRuntimeScopeAtPreparation": "Three CSS declaration changes in two existing exact-detail CSS rules",
+    "declaredNewNodeTestsAtPreparation": 3,
+    "declaredNewBrowserTestsAtPreparation": 6,
+    "notAnApprovedFinalInventoryOrObservedTestResult": true,
+    "finalCandidateManifestAndHash": "Required at runtime from the actual independently reviewed revision; intentionally not pinned here",
+    "finalExpectedInputMapAndHash": "Required at runtime from root; must equal pinned checkpoint97 baseline plus exactly the actual reviewed candidate delta"
+  },
+  "preservedSerialStages": [
+    "non_http_tests",
+    "local_http_tests",
+    "typecheck",
+    "lint",
+    "validation",
+    "production_build",
+    "portable_build"
+  ],
+  "preservedNodeOptions": "--max-old-space-size=1280 --max-semi-space-size=8",
+  "browserBoundary": "E2E sources remain frozen inputs. Browser *.spec.ts files are excluded by the existing Node *.test.ts selection. Browser scripts are retained unexecuted; CUA is the sole actual browser route for this task and remains root-owned.",
+  "staticVerification": "Exact source diff inspected; inverse checkpoint label substitutions compared byte-for-byte with the unchanged source runner; source, baseline and deliverable hashes/sizes measured using shell utilities; baseline map membership counted as JSON. No runner syntax or execution check.",
+  "cleanupBoundary": "Exception cleanup preserves bounded independent owned-group probing and verified unreaped leader identity before signals. Ordinary child returns do not trigger cleanup. Root independently confirms no surviving writers after every failed attempt before retry. Escaped groups and inconclusive probes are not claimed cleaned.",
+  "rootExecutionAndAcceptance": "Independent review, predecessor-save gates, actual candidate application, final map preparation, all executable checks, external terminal/exit evidence, narrow-detail semantic and CUA browser checks, artifact acceptance and any publication remain root-owned.",
+  "notRunByThisWorker": [
+    "Runner import, execution or syntax check",
+    "Application code import or mutation",
+    "Tests, typecheck, lint, validation or builds",
+    "Browser, uploads or deployment",
+    "Git or Codex tasks",
+    "Package installation"
+  ]
+}

@@ -1,0 +1,628 @@
+{
+  "schemaVersion": 7,
+  "createdAt": "2026-10-14T10:39:08.913795+00:00",
+  "status": "Completed verified GAC-integrated recovery save; GAC research pass completed; strict criteria and M1 remain open",
+  "source": {
+    "filename": "Roadmark-recovery-source-gac-integrated-20261014T1020.tar.xz",
+    "bytes": 8138892,
+    "sha256": "e64f8d95c00a014fc90e83525ddc18596e4e2f9c0f0d4e274e0e9637d2a3a2de",
+    "group": "source-gac-integrated",
+    "library_file_id": "libfile_89cfe61030308191ba87aba3ef8bc4df",
+    "version": 0,
+    "restoreOrder": 39,
+    "file_id": "file_00000000d75481fbb0486de1d98769e4"
+  },
+  "sourceCaptureCutoff": "2026-10-14T10:32:23.315994+00:00",
+  "qaCaptureCutoff": "2026-10-14T10:33:01.899520+00:00",
+  "researchCaptureCutoff": "2026-10-14T10:31:21.590401+00:00",
+  "archiveCount": 56,
+  "archiveBytes": 447295232,
+  "restoredFiles": 5147,
+  "restoredBytes": 1786353544,
+  "incrementalSave": {
+    "newArchiveCount": 4,
+    "newArchiveBytes": 34825472,
+    "currentSourceFiles": 642,
+    "currentQaFiles": 1458,
+    "newOrChangedQaFiles": 43,
+    "unchangedQaFiles": 1415,
+    "missingQaFiles": [],
+    "gacResearchFiles": 170,
+    "researchExclusions": [],
+    "newQaPaths": [
+      "roadmark-104-qa/gac-independent-review/final-artifact-verification.json",
+      "roadmark-104-qa/gac-independent-review/immutable-harness-shape-error.log",
+      "roadmark-104-qa/gac-independent-review/independent-review-replay.json",
+      "roadmark-104-qa/gac-independent-review/pnpm-launch-error.log",
+      "roadmark-104-qa/gac-independent-review/post-integration-artifact-verification.json",
+      "roadmark-104-qa/gac-independent-review/registered-coverage-parity.json",
+      "roadmark-104-qa/gac-independent-review/replay.exit",
+      "roadmark-104-qa/gac-independent-review/replay.log",
+      "roadmark-104-qa/gac-independent-review/source-review.md",
+      "roadmark-104-qa/gac-independent-review/tsx-cli-ipc-error.log",
+      "roadmark-104-qa/gac-independent-review/verify-final-artifacts.py",
+      "roadmark-104-qa/gac-research-REVIEW.md",
+      "roadmark-104-qa/gac-research-artifact-hash-manifest.json",
+      "roadmark-104-qa/gac-research-brand-model-list-reconciliation.json",
+      "roadmark-104-qa/gac-research-core-matrix.json",
+      "roadmark-104-qa/gac-research-evidence-completeness-audit.json",
+      "roadmark-104-qa/gac-research-final-value-privacy-audit.json",
+      "roadmark-104-qa/gac-research-finalization-changes.json",
+      "roadmark-104-qa/gac-research-independent-evidence-review.md",
+      "roadmark-104-qa/gac-research-integration-readiness.json",
+      "roadmark-104-qa/gac-research-redaction-audit.json",
+      "roadmark-104-qa/gac-research-redaction-transformations.json",
+      "roadmark-104-qa/gac-research-registered-immutable-audit.json",
+      "roadmark-104-qa/gac-research-source-hash-manifest.json",
+      "roadmark-104-qa/gac-research-source-index.json",
+      "roadmark-104-qa/gac-sequential-checks/coverage.metrics.json",
+      "roadmark-104-qa/gac-sequential-checks/coverage.stderr",
+      "roadmark-104-qa/gac-sequential-checks/coverage.stdout",
+      "roadmark-104-qa/gac-sequential-checks/integration.metrics.json",
+      "roadmark-104-qa/gac-sequential-checks/integration.stderr",
+      "roadmark-104-qa/gac-sequential-checks/integration.stdout",
+      "roadmark-104-qa/gac-sequential-checks/lint.metrics.json",
+      "roadmark-104-qa/gac-sequential-checks/lint.stderr",
+      "roadmark-104-qa/gac-sequential-checks/lint.stdout",
+      "roadmark-104-qa/gac-sequential-checks/typecheck.metrics.json",
+      "roadmark-104-qa/gac-sequential-checks/typecheck.stderr",
+      "roadmark-104-qa/gac-sequential-checks/typecheck.stdout",
+      "roadmark-104-qa/gac-sequential-checks/validate.metrics.json",
+      "roadmark-104-qa/gac-sequential-checks/validate.stderr",
+      "roadmark-104-qa/gac-sequential-checks/validate.stdout",
+      "roadmark-104-qa/review-gac-independent.ts",
+      "roadmark-104-qa/stage-gac-candidate.ts",
+      "roadmark-104-qa/work-status.json"
+    ],
+    "unchangedArchivesReuploaded": 0
+  },
+  "approvedGacPacketSHA256": {
+    "gac-2026-10-14.json": "911c2bda506e72f0b6623eea86be4485634da1eaf96830105919e8f833eb6516",
+    "gac-reconciliation-2026-10-14.json": "30f801da9ff639a595b6575e322aa05070a828ecd37231011781665abacb1ae6"
+  },
+  "documents": [
+    {
+      "filename": "Roadmark-RECOVERY-INDEX-gac-integrated-20261014.md",
+      "library_file_id": "libfile_1d0e05e349b081919547878fa0a66cf4",
+      "version": 0,
+      "bytes": 17484,
+      "sha256": "f87f2cce6bda7d56ea241024bdb4e5cf88318f655b8b9646d12eb9f5928e4365"
+    },
+    {
+      "filename": "Roadmark-RECOVERY-MANIFEST-gac-integrated-20261014.json",
+      "library_file_id": "libfile_d7eb41e4eca481918415a55b919820b8",
+      "version": 0,
+      "bytes": 1250380,
+      "sha256": "2f8cfc8f1380a0205ff0486e30fc8a81c7df227310c7503e3fc67c8969562b0a"
+    },
+    {
+      "filename": "Roadmark-RECOVERY-VERIFICATION-gac-integrated-20261014.json",
+      "library_file_id": "libfile_4aebd0692c4881919e9081bbfe06a717",
+      "version": 0,
+      "bytes": 69074,
+      "sha256": "aa6743e6ebe0cdc6354e43b7ae71ca1f9095974e1db1633aab5862bf3ce901c2"
+    }
+  ],
+  "newArchives": [
+    {
+      "filename": "Roadmark-recovery-source-gac-integrated-20261014T1020.tar.xz",
+      "bytes": 8138892,
+      "sha256": "e64f8d95c00a014fc90e83525ddc18596e4e2f9c0f0d4e274e0e9637d2a3a2de",
+      "group": "source-gac-integrated",
+      "library_file_id": "libfile_89cfe61030308191ba87aba3ef8bc4df",
+      "version": 0,
+      "restoreOrder": 39,
+      "file_id": "file_00000000d75481fbb0486de1d98769e4"
+    },
+    {
+      "filename": "Roadmark-recovery-gac-approved-20261014T103121Z-part01of02.tar.xz",
+      "bytes": 21700764,
+      "sha256": "d64e66fc9480d114ba0b6e99da0b77696158f29246aaaee7f80ac532f22501c2",
+      "group": "gac-approved",
+      "library_file_id": "libfile_498b71f0d9b8819188e1f472eb9d2d17",
+      "version": 0,
+      "restoreOrder": 54,
+      "file_id": "file_0000000011b881f5a2d2c6f2256623ce"
+    },
+    {
+      "filename": "Roadmark-recovery-gac-approved-20261014T103121Z-part02of02.tar.xz",
+      "bytes": 4772676,
+      "sha256": "f4398c00d554cf380e199ad4263ea3a2562c6354998e622ac6a68fb58d8bb475",
+      "group": "gac-approved",
+      "library_file_id": "libfile_cad2df2cecfc8191a0f05552f01f34b1",
+      "version": 0,
+      "restoreOrder": 55,
+      "file_id": "file_0000000022b0822f8de17ede599fd9c7"
+    },
+    {
+      "filename": "Roadmark-recovery-qa-gac-integrated-20261014T103254Z-part01of01.tar.xz",
+      "bytes": 213140,
+      "sha256": "5435179366ddd16f18667d8e9b6ed8ace8f35abe9eaaeaeee087f61ee15a82b9",
+      "group": "qa-gac-integrated",
+      "library_file_id": "libfile_0a21c000a9d8819187ea66ae9b863ef2",
+      "version": 0,
+      "restoreOrder": 56,
+      "file_id": "file_00000000ecc08210a94571f0c6a446f7"
+    }
+  ],
+  "verifierLibraryFileId": "libfile_ca3a7f7c6970819188bdbf0b22dd8acb",
+  "cleanupListLibraryFileId": "libfile_cb182812848c8191a3755bd1607a99cc",
+  "copyTransformations": {
+    "sourceCopies": [
+      {
+        "bytes": 732552,
+        "sha256": "fb34e31bc3bdf5a1a2e1673d33ba9ab1ba6a8c0a3c2d3fb49e7e4267789b422d",
+        "originalBytes": 733472,
+        "originalSHA256": "e6b1f6adae33871d57f0c6bd730571cf64fed06ae4166c1947aed422d97b4a7f",
+        "redactedHeaderPaths": [
+          "/sources/5/headers/set-cookie",
+          "/sources/6/headers/set-cookie",
+          "/sources/7/headers/set-cookie",
+          "/sources/19/headers/set-cookie",
+          "/sources/20/headers/set-cookie",
+          "/sources/23/headers/Set-Cookie",
+          "/sources/24/headers/set-cookie",
+          "/sources/29/headers/set-cookie",
+          "/sources/33/headers/set-cookie",
+          "/sources/35/headers/Set-Cookie"
+        ],
+        "path": "data/farizon-foton-jac-trucks-evidence.json"
+      }
+    ],
+    "reusedQaCopies": [
+      {
+        "path": "roadmark-104-qa/source-package-roundtrip/roadmark/data/farizon-foton-jac-trucks-evidence.json",
+        "bytes": 732552,
+        "sha256": "fb34e31bc3bdf5a1a2e1673d33ba9ab1ba6a8c0a3c2d3fb49e7e4267789b422d",
+        "originalBytes": 733472,
+        "originalSHA256": "e6b1f6adae33871d57f0c6bd730571cf64fed06ae4166c1947aed422d97b4a7f",
+        "redactedHeaderPaths": [
+          "/sources/5/headers/set-cookie",
+          "/sources/6/headers/set-cookie",
+          "/sources/7/headers/set-cookie",
+          "/sources/19/headers/set-cookie",
+          "/sources/20/headers/set-cookie",
+          "/sources/23/headers/Set-Cookie",
+          "/sources/24/headers/set-cookie",
+          "/sources/29/headers/set-cookie",
+          "/sources/33/headers/set-cookie",
+          "/sources/35/headers/Set-Cookie"
+        ]
+      }
+    ],
+    "newQaDeltaCopyRedactions": 0,
+    "gacBackupCopyRedactions": 0,
+    "note": "The same ten known legacy source cookie-header locations are redacted in the new full source; the matching sanitized QA roundtrip file is reused unchanged."
+  },
+  "upstreamGacCaptureFiltering": {
+    "transformations": [
+      {
+        "file": "current/ut-towing-guide.html",
+        "operation": "Removed executable page scripts; retained rendered factual HTML and separate visible-text extraction.",
+        "scriptsRemoved": 25,
+        "beforeSha256": "c7e345adaf23292a51d988ba188c5bed12889dba116cb99c4bb9e0921031e960",
+        "afterSha256": "e39de7b5c38fe1c55e3b564889f673b8772a713ba07a22152f0a4327d7f49f6a",
+        "reason": "Public page included authentication-variable code; no session credential value was observed. Script code is irrelevant to towing-table evidence."
+      },
+      {
+        "file": "current/v-towing-guide.html",
+        "operation": "Removed executable page scripts; retained rendered factual HTML and separate visible-text extraction.",
+        "scriptsRemoved": 25,
+        "beforeSha256": "2715aaeda9f69db3bfe153130824dcb0585bfa53282936b2d7f9525de5260558",
+        "afterSha256": "bf16ab21e01940982924e0ae54a70fbe5a0bf7afbe03a88911d17682fe2c2295",
+        "reason": "Public page included authentication-variable code; no session credential value was observed. Script code is irrelevant to towing-table evidence."
+      }
+    ],
+    "audit": {
+      "checkedAt": "2026-10-14",
+      "scannedFiles": 125,
+      "scannedPaths": [
+        "before-populated-facts.json",
+        "core-matrix.json",
+        "pre-final-stage-validation.log",
+        "staged-packs.json",
+        "features-after.json",
+        "after.json",
+        "staged-report.json",
+        "value-privacy-scan-candidates.json",
+        "immutable-data-before.json",
+        "redaction-transformations.json",
+        "stage-validation.log",
+        "gac-effective-facts.json",
+        "gac-2026-10-14.json",
+        "privacy-scan-candidates.json",
+        "gac-variants-before.json",
+        "gac-models-before.json",
+        "gac-feature-before.json",
+        "gac-source-before.json",
+        "gac-live-before.json",
+        "terms-normalized.json",
+        "capture-before.log",
+        "terms-worker.md",
+        "brand-model-list-reconciliation.json",
+        "gac-reconciliation-2026-10-14.json",
+        "normalized-evidence.json",
+        "census-worker.md",
+        "census/census_new_premium_close.json",
+        "census/census_other_luxury_candidate.json",
+        "census/census_upcoming_dated.json",
+        "census/census_close_queries.json",
+        "census/census_future_leads.json",
+        "census/census_residual_search_close.json",
+        "census/census_luxury_id_results.json",
+        "census/rockingham-2025-luxury-demo.metadata.json",
+        "census/rockingham-2025-luxury-demo.txt",
+        "census/rockingham-2025-luxury-demo.html",
+        "census/rockingham-2025-premium-new.metadata.json",
+        "census/rockingham-2025-premium-new.txt",
+        "census/rockingham-2025-premium-new.html",
+        "census/rockingham-dealer-stock.txt",
+        "census/carsales-residual-v-premium.metadata.json",
+        "census/carsales-residual-v-luxury.metadata.json",
+        "census/rockingham-dealer-stock.metadata.json",
+        "census/rockingham-dealer-stock.html",
+        "census/carsguide-au-range.metadata.json",
+        "census/carsguide-au-range.html",
+        "census/official-v-spec.metadata.json",
+        "census/official-v-spec.html",
+        "census/official-ut-spec.metadata.json",
+        "census/official-ut-spec.html",
+        "census/official-au-home.metadata.json",
+        "census/official-au-home.html",
+        "census/carexpert-au-range.metadata.json",
+        "census/carexpert-au-range.html",
+        "census/census_direct_luxury_result.json",
+        "census/census_luxury_dealer_results.json",
+        "census/census_luxury_year_results.json",
+        "census/census_residual_results.json",
+        "census/census_year_results.json",
+        "census/census_latest_results.json",
+        "census/census_list_results.json",
+        "current/secondary-supplement-web.txt",
+        "current/ut-owner.txt",
+        "current/ut-ancap-news.txt",
+        "current/ut-ancap-news.html",
+        "current/v-towing-guide.txt",
+        "current/v-towing-guide.html",
+        "current/ancap-ratings-web.txt",
+        "current/ancap-primary-news-web.txt",
+        "current/ut-towing-guide.txt",
+        "current/ut-towing-guide.html",
+        "current/ut-racv.txt",
+        "current/ut-racv.html",
+        "current/ut-spec-rows.json",
+        "current/v-spec-rows.json",
+        "current/v-owner.txt",
+        "current/ut-zecar.txt",
+        "current/ut-zecar.html",
+        "current/tow-safety-search-web.txt",
+        "current/secondary-web.txt",
+        "current/user-manual.txt",
+        "current/user-manual.html",
+        "current/ut-page.txt",
+        "current/ut-page.html",
+        "current/supplemental-search-web.txt",
+        "current/specifications-web.txt",
+        "current/v-page.txt",
+        "current/v-page.html",
+        "current/ut-spec.txt",
+        "current/ut-spec.html",
+        "current/v-spec.txt",
+        "current/v-spec.html",
+        "terms/maker-price-browser-provenance.json",
+        "terms/aion-ut-luxury-price-browser.txt",
+        "terms/aion-ut-premium-price-browser.txt",
+        "terms/aion-v-luxury-price-browser.txt",
+        "terms/aion-v-premium-price-browser.txt",
+        "terms/price-configurator-limitation.txt",
+        "terms/source-manifest.json",
+        "terms/launch-2025-assets.json",
+        "terms/launch-2025-visible.txt",
+        "terms/aion-v-assets.json",
+        "terms/aion-v-visible.txt",
+        "terms/our-service-assets.json",
+        "terms/our-service-visible.txt",
+        "terms/aion-v-price-assets.json",
+        "terms/aion-v-price-visible.txt",
+        "terms/aion-ut-offer-assets.json",
+        "terms/aion-ut-offer-visible.txt",
+        "terms/aion-ut-assets.json",
+        "terms/aion-ut-visible.txt",
+        "terms/aion-v-offer-assets.json",
+        "terms/aion-v-offer-visible.txt",
+        "terms/secondary-web-captures.json",
+        "terms/launch-2025.html",
+        "terms/ut-first-600-expired.txt",
+        "terms/roadside.txt",
+        "terms/warranty-current.txt",
+        "terms/urls.json",
+        "terms/aion-ut.html",
+        "terms/aion-v-price.html",
+        "terms/aion-ut-offer.html",
+        "terms/our-service.html",
+        "terms/aion-v-offer.html",
+        "terms/aion-v.html"
+      ],
+      "sensitiveValueMatches": [],
+      "transformationFile": "redaction-transformations.json",
+      "notes": [
+        "No request or response cookie headers, browser storage, credentials, bearer tokens or CSRF values were captured.",
+        "Terms worker removed raw client JavaScript and unsuccessful appid-invalid response rather than retaining credential-like constants; those files are not sources for prices. Normal browser UI supplied all four prices later.",
+        "Two CarsGuide captures had executable scripts removed, with pre/post hashes recorded; rendered towing text is unchanged.",
+        "Historical before-state source records include benign prose describing earlier client-secret redactions; they are immutable and contain no credential values.",
+        "Public site/model/dealer stock identifiers and factual URLs remain. Warranty PNG is a local PDF render; WEBP files are downloaded public offer assets, not browser screenshots."
+      ]
+    },
+    "valueScanCandidates": []
+  },
+  "privacy": "All new archive members and generated documents passed the bounded known-value/runtime-pattern scan. Zero known-value matches, primary-header candidates, unclassified runtime candidates or scan errors. All reused archives match previously audited sizes and SHA-256. Final GAC backup payloads match the frozen sanitized research. Two HTML script-removal after-hashes are verified; unavailable original bytes are not claimed rehashed. Omitted raw JavaScript and unsuccessful API-response content are documented. New QA-delta files need no redaction; one legacy source file has the same ten documented header redactions reapplied. These checks are not proof of absence of every possible secret.",
+  "imageProvenance": {
+    "recordedAt": "2026-10-14T10:26:20.197879+00:00",
+    "basis": "Owner confirmed six downloaded public maker assets and one local warranty-PDF page 3 render, with no browser screenshots. Independent final verification matched all seven image identities and parent-PDF provenance across frozen originals, snapshot and archive payloads.",
+    "researchImageCount": 7,
+    "images": [
+      {
+        "path": "gac-research/terms/aion-ut-offer-image.webp",
+        "bytes": 81006,
+        "sha256": "1d7332371aa0c04d01ed71c20f9e7ded19e0fd5692aebf4fa69a9d5ff03094be",
+        "kind": "public downloaded maker offer/website image",
+        "sourceUrls": [],
+        "browserScreenshot": false
+      },
+      {
+        "path": "gac-research/terms/aion-v-image.webp",
+        "bytes": 309416,
+        "sha256": "0cab3d441f295f49883ccea43748178aaf80a299d60ef28384902aa0c0a7ca92",
+        "kind": "public downloaded maker offer/website image",
+        "sourceUrls": [],
+        "browserScreenshot": false
+      },
+      {
+        "path": "gac-research/terms/aion-v-offer-image.webp",
+        "bytes": 427308,
+        "sha256": "89843224732aeeecf8a99aaaa0b5fbf719b005019d8288968fba2e6c31bcf383",
+        "kind": "public downloaded maker offer/website image",
+        "sourceUrls": [],
+        "browserScreenshot": false
+      },
+      {
+        "path": "gac-research/terms/launch-price-image.webp",
+        "bytes": 544320,
+        "sha256": "ad4f7e66891ad2b16747b2d0c3046de7a4453feb2a1cb68253e0ee012ef9d788",
+        "kind": "public downloaded maker offer/website image",
+        "sourceUrls": [],
+        "browserScreenshot": false
+      },
+      {
+        "path": "gac-research/terms/launch-v-image.webp",
+        "bytes": 649060,
+        "sha256": "4ea4f6b040aaac615cb43566511710ff19192042807bd667f56a0edc6d920114",
+        "kind": "public downloaded maker offer/website image",
+        "sourceUrls": [],
+        "browserScreenshot": false
+      },
+      {
+        "path": "gac-research/terms/our-service-image.webp",
+        "bytes": 671126,
+        "sha256": "a7f5e1c5a938552a3c888036fd02ff143f22c3a20ec45605552c76777ad7d673",
+        "kind": "public downloaded maker offer/website image",
+        "sourceUrls": [],
+        "browserScreenshot": false
+      },
+      {
+        "path": "gac-research/terms/warranty-table.png",
+        "bytes": 377509,
+        "sha256": "a45bfcbe99f14a411ecad7fe016aa65127c6290523fa09245874006999263df2",
+        "kind": "local PDF render",
+        "sourceUrls": [],
+        "browserScreenshot": false,
+        "parentPdf": "terms/warranty-current.pdf",
+        "pdfPageNumberOneBased": 3,
+        "method": "Local PDF render visually checked by researcher and independent reviewer"
+      }
+    ],
+    "qaDeltaImageStatus": "Every new/changed QA path checked; no new image payloads",
+    "qaDeltaImageCount": 0,
+    "verifiedAt": "2026-10-14T10:38:06.591989+00:00"
+  },
+  "priorToyotaBrowserScreenshotExclusions": {
+    "result": "Excluded before any upload",
+    "provenance": "Verified from current/build_normalized.py and REVIEW.md: official PDFs displayed in cloud Chrome and captured as browser screenshots.",
+    "files": [
+      {
+        "path": "toyota-research/current/bz4x-spec-p1.png",
+        "bytes": 94027,
+        "sha256": "2d9242f9136c653566bb169e0621106f9bafe749e465961139d45dd688b660a1",
+        "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+      },
+      {
+        "path": "toyota-research/current/bz4x-spec-p2.png",
+        "bytes": 92201,
+        "sha256": "ab1c9676f743f030ec5fc29654e6961c48ac8f31801456cd6307bc352d4e2275",
+        "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+      },
+      {
+        "path": "toyota-research/current/hilux-spec-p2.png",
+        "bytes": 91974,
+        "sha256": "08adef635b8744c02336ada1b02b674ee6b4f0e0012a3bd0fb3f2d1f1c0af368",
+        "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+      },
+      {
+        "path": "toyota-research/current/hilux-spec-p3.png",
+        "bytes": 88131,
+        "sha256": "2bf2bdd69b4c558d94b9561202fb49046211dbbb41806113b47597c4bd9495ca",
+        "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+      },
+      {
+        "path": "toyota-research/current/touring-spec-p2.png",
+        "bytes": 85836,
+        "sha256": "9525bbd89757a7ac6311fec7f82e5c5a3c0aee6d50c1ec1ff232a247ece90491",
+        "reason": "Browser screenshot of public specification PDF; not requested as a screenshot deliverable. Original retained locally; text/transcription and source URLs preserved."
+      }
+    ]
+  },
+  "integrity": {
+    "result": "PASS",
+    "archivesVerified": 56,
+    "restoredFilesVerified": 5147,
+    "restoredBytes": 1786353544
+  },
+  "backupResourceConfiguration": {
+    "recordedAt": "2026-10-14T10:23:23.955627+00:00",
+    "compression": {
+      "implementation": "Python tarfile with stdlib lzma",
+      "format": "tar.xz / PAX tar",
+      "preset": 6,
+      "extreme": false,
+      "encoderScheduling": "One archive encoder at a time in each script; no multithreading or thread-pool option requested",
+      "configuredDictionary": "8 MiB, confirmed from actual GAC research archive XZ filter metadata",
+      "integrityCheck": "CRC64",
+      "researchRawGroupTargetBytes": 45000000,
+      "sourceCompressedLimitBytes": 15000000,
+      "actualPart1Streams": 1,
+      "actualPart1Blocks": 1,
+      "xzReportedDecoderMemory": "9 MiB; codec decoder requirement only, not process RSS"
+    },
+    "memoryCaveats": [
+      "Research/source packagers read individual payloads into bytes; archive hash checks also read the compressed archive into bytes.",
+      "Privacy scans read full member bytes, decode text and run nested-JSON/runtime-pattern checks; memory can exceed codec memory substantially.",
+      "Whole-tree verification is sequential but materializes individual members and file-hash records. Concurrent independent verification previously overlapped with main scan/reconstruction."
+    ],
+    "measuredPeakRssThisCut": {
+      "archive-scan.resources.json": {
+        "exitCode": 0,
+        "wallSeconds": 70.542,
+        "maxRssKiB": 746212,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+      },
+      "independent-final-verification.resources.json": {
+        "exitCode": 0,
+        "wallSeconds": 24.745,
+        "maxRssKiB": 52980,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+      },
+      "qa-capture.resources.json": {
+        "exitCode": 0,
+        "wallSeconds": 8.414,
+        "maxRssKiB": 400092,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+      },
+      "reconstruction.resources.json": {
+        "exitCode": 0,
+        "wallSeconds": 42.033,
+        "maxRssKiB": 143336,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+      },
+      "research-capture.resources.json": {
+        "exitCode": 0,
+        "wallSeconds": 16.756,
+        "maxRssKiB": 141596,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+      },
+      "research-scan.resources.json": {
+        "exitCode": 0,
+        "wallSeconds": 18.85,
+        "maxRssKiB": 391128,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+      },
+      "source-capture.resources.json": {
+        "exitCode": 0,
+        "wallSeconds": 35.68,
+        "maxRssKiB": 360636,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB"
+      }
+    },
+    "measurementNote": "Every GAC heavy phase uses Linux wait4 child resource accounting, one process at a time. No GNU time binary is installed.",
+    "largestPreviousSourcePayloads": [
+      {
+        "path": "data/catalogue-additions-2026-10-10.json",
+        "bytes": 74934307
+      },
+      {
+        "path": "data/buyer-identity-snapshots-2026-10-10.json",
+        "bytes": 54962382
+      },
+      {
+        "path": "data/buyer-selling-points-2026-10-10.json",
+        "bytes": 24074749
+      },
+      {
+        "path": "data/m1-brand-updates/hyundai-2026-10-14.json",
+        "bytes": 18134105
+      },
+      {
+        "path": "data/m1-evidence-regrading-2026-10-13.json",
+        "bytes": 15226769
+      }
+    ],
+    "plannedScheduling": "Root cleared the sole heavy slot after sequential GAC catalogue checks. Captures, full scan, reconstruction and independent verification execute sequentially; no catalogue overlap.",
+    "updatedAt": "2026-10-14T10:38:06.588449+00:00"
+  },
+  "workState": {
+    "workingCheckpoint": 104,
+    "latestDeliveredCheckpoint": 103,
+    "milestone": "M1 open",
+    "registeredPackets": 14,
+    "totalVersions": 386,
+    "tier1Versions": 309,
+    "onSaleVersions": 296,
+    "coreReviewNote": "Grades require an explicit sourced M1 review; legacy statuses do not earn Confirmed. 4415/5032 on-sale core cells reviewed; unsuccessful searches need two cited sources.",
+    "latestIntegratedBrand": "GAC",
+    "gacReviewedVersions": 4,
+    "gacNewVersions": 0,
+    "gacCoreCells": 68,
+    "gacCoreGrades": {
+      "confirmed": 60,
+      "reported": 4,
+      "not_published": 4
+    },
+    "gacFactEdits": 704,
+    "gacSharedTerms": 3,
+    "gacFeatures": 114,
+    "gacScope": [
+      "AION UT Premium",
+      "AION UT Luxury",
+      "AION V Premium",
+      "AION V Luxury"
+    ],
+    "gacResearchCompleted": true,
+    "gacStrictCompletion": false,
+    "gacOpenIssues": [
+      "Strict C1/C2/C5 remain open; GAC brand-level reconciliation does not establish whole-market C1.",
+      "Four core towing cells remain Not published; Reported values are not promoted to Confirmed."
+    ],
+    "criteriaStatus": {
+      "C1": false,
+      "C2": false,
+      "C3": true,
+      "C4": true,
+      "C5": false,
+      "C6": true
+    },
+    "currentResearchBrand": "BMW",
+    "nextResearchBrand": "Chery",
+    "latestRootChecks": {
+      "brand": "GAC",
+      "researchCompleted": true,
+      "integrationTests": {
+        "passed": 149,
+        "failed": 0
+      },
+      "validateExit": 0,
+      "coverageExit": 0,
+      "typecheckExit": 0,
+      "changedFileLintExit": 0,
+      "successfulRunDirectory": "gac-sequential-checks"
+    },
+    "earlierOpenGaps": "Owner-deferred Hyundai six-seat lead, Volkswagen census issues, Volvo C1/C5 and GWM C1/C2/C5 gaps remain open",
+    "fullAggregateSuite": "Not rerun; earlier through-Hyundai full-suite log remains interrupted/partial without terminal aggregate result",
+    "productionBuild": "Not rerun for this integration"
+  },
+  "cleanup": {
+    "affectedOriginalsRetained": 12,
+    "intermediateCopiesRetained": 3,
+    "deletions": 0,
+    "replacements": 0
+  },
+  "scope": "Full GAC-integrated source and approved research plus stable QA delta over the verified GWM chain. No provisional GAC archive is required for restore. No later BMW research is included."
+}

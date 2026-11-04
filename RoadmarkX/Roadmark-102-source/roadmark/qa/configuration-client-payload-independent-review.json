@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-10-10",
+  "repository": "/workspace/scratch/586427eef9f2/roadmark-work/roadmark",
+  "reviewType": "Read-only static implementation review; no runtime imports, tests, builds or browser activity",
+  "decision": "No blocking security, evidence, source-closure or fail-closed regression found in inspected implementation.",
+  "projection": {
+    "path": "src/lib/discovery.ts",
+    "fields": [
+      "rankingEligible",
+      "completeVehicleCountEligible",
+      "projectionScope"
+    ],
+    "downstreamOfFullSummaryValidation": true,
+    "nestedObjectNew": true,
+    "absentMarkersPreserved": true,
+    "eligibilityCopiedWithoutCoercionOrFallback": true,
+    "remainingCarPropertiesPreserved": true,
+    "factProjectionUnchanged": true,
+    "fullPacksAndPortableResearchUntouched": true
+  },
+  "rawDataHashParity": {
+    "data/catalogue-additions-2026-10-10.json": true,
+    "data/buyer-identity-snapshots-2026-10-10.json": true,
+    "data/buyer-selling-points-2026-10-10.json": true
+  },
+  "guardModuleHashParity": {
+    "src/lib/selling-points.ts": true,
+    "src/lib/page-evidence.ts": true,
+    "src/lib/buyer-summary-timing.ts": true,
+    "src/lib/buyer-proposal.ts": true,
+    "src/lib/buyer-proposal-storage.ts": true
+  },
+  "testCoverageReviewed": [
+    "Exact configuration allowlist, full/nonconfiguration identity, absent-marker parity and new nested object in home-payload",
+    "Nonmutation hashes, full pack configuration/options, fact/summary/availability/issue references and size bound in configuration-payload",
+    "All seven rank/strength/exclusion parity across six date states",
+    "Explicit false/undefined/true eligibility cases with otherwise rankable facts",
+    "Cached source/date parity and source closure/order/identity",
+    "Existing independent exact VW snapshot hashes, option/amendment mutation guards, source guards, malformed deadlines and clock-gated SSR tests"
+  ],
+  "nonBlockingTestImprovements": [
+    {
+      "id": "projected_scope_ssr",
+      "location": "tests/detail-discovery.test.ts captured build scope case",
+      "gap": "Renders full bounded cars, not discoveryCars(bounded). Existing independent projection-value and rendering assertions compose correctly, but a direct projected render would cover the integrated boundary.",
+      "severity": "Optional hardening; no inspected code defect."
+    },
+    {
+      "id": "absolute_source_suppression",
+      "location": "tests/configuration-payload.test.ts cached summary source drift case",
+      "gap": "Asserts full/projected equality but not undefined for all mutated guard-source cases. Existing source tests independently assert suppression and summary references are preserved.",
+      "severity": "Optional hardening; no blocker."
+    }
+  ],
+  "adjacentChanges": {
+    "alwaysVisibleScope": "Exact scope is plain React text outside collapsed summary conditions and independent of summary/clock readiness; retains existing badge.",
+    "issueReaderText": "Pure exact ID plus exact text substitution; changed/additional warnings pass through unchanged. Rendering/citable/print consume display text without mutating raw Issue objects or ranking holds.",
+    "pickerWrapping": "min-width:0 and overflow-wrap:anywhere restricted to first picker span; fixed price column remains. Static inspection only; phone/browser layout unverified."
+  },
+  "limitations": [
+    "Worker did not run tests, runtime imports, builds or browser checks. Root owns serial aggregate verification.",
+    "File hashes reflect persistence time; root may subsequently change files.",
+    "Existing test coverage was inspected, not claimed as a current passing aggregate.",
+    "Earlier 249461-byte field-level saving remains an offline estimate, not a new route transfer measurement."
+  ],
+  "fileHashes": [
+    {
+      "path": "src/lib/discovery.ts",
+      "sha256": "5dd8ce550c2479f763fca976f70cf398f43f2d068995c6f088c225d2a0c4aa5f",
+      "bytes": 11054,
+      "matchesPriorAuditHash": false
+    },
+    {
+      "path": "src/lib/data.ts",
+      "sha256": "bde5271a0a467e834c521e512ac1ac212cc420465ea02ea1bc0008dd878aeec2",
+      "bytes": 28933,
+      "matchesPriorAuditHash": true
+    },
+    {
+      "path": "src/lib/types.ts",
+      "sha256": "cbd8a24af0bbf1a6d014cd6199066e57d4331ae0fbba1273da9cb56f59061141",
+      "bytes": 5065,
+      "matchesPriorAuditHash": true
+    },
+    {
+      "path": "src/lib/selling-points.ts",
+      "sha256": "aa81a9960f4439bb316c6d6d209f0f13c53ee56a51a7622b01ac9a176cafb0ee",
+      "bytes": 12776,
+      "matchesPriorAuditHash": true
+    },
+    {
+      "path": "src/lib/page-evidence.ts",
+      "sha256": "aa527b202333fb3064bf08658d58f7916b622df9a34515d312a25f3271614ec0",
+      "bytes": 1903,
+      "matchesPriorAuditHash": true
+    },
+    {
+      "path": "src/lib/buyer-summary-timing.ts",
+      "sha256": "2de13a52761a352987a13f539d57d4824036cde20775ae994b7db92f4c3e9ec6",
+      "bytes": 387,
+      "matchesPriorAuditHash": true
+    },
+    {
+      "path": "src/lib/buyer-proposal.ts",
+      "sha256": "588c5e79b694e63ecb785a80f6cef902544505a8d8fdf0492c355254ccf21b6a",
+      "bytes": 744,
+      "matchesPriorAuditHash": true
+    },
+    {
+      "path": "src/lib/buyer-proposal-storage.ts",
+      "sha256": "2febace11633321f2c103a0b3db4c4632df8e3601195922c4b83fce6354f7f7c",
+      "bytes": 4108,
+      "matchesPriorAuditHash": true
+    },
+    {
+      "path": "src/lib/portable-packs.ts",
+      "sha256": "6b4303fe0da00581769ae9dcc2118891999c90c5edde1486cee7021cda474771",
+      "bytes": 1712,
+      "matchesPriorAuditHash": true
+    },
+    {
+      "path": "src/components/discovery.tsx",
+      "sha256": "5028e13c715dd7509fb25b33a8da1f5f1675840fe552b6175c1bd390bdb3ced6",
+      "bytes": 23873,
+      "matchesPriorAuditHash": true
+    },
+    {
+      "path": "src/components/detail.tsx",
+      "sha256": "298ac9622a22d72f7aad200ab179223f5b118a160b97a26d09792bf0401a36cf",
+      "bytes": 6583,
+      "matchesPriorAuditHash": true
+    },
+    {
+      "path": "src/app/page.tsx",
+      "sha256": "94d32047c3253b6417e336a585330f63d4aaa320be02038f5437cf08f867269f",
+      "bytes": 1246,
+      "matchesPriorAuditHash": true
+    },
+    {
+      "path": "src/app/discover/page.tsx",
+      "sha256": "4799f370524a77b27436f6fa03dc552e3fcf5747db18509a38d810a2e1bb5829",
+      "bytes": 650,
+      "matchesPriorAuditHash": true
+    },
+    {
+      "path": "src/portable/entry.tsx",
+      "sha256": "0bdaab7d974e6b4da5a0580ed18002de87996e141e49e406652db52dfd5187c9",
+      "bytes": 4436,
+      "matchesPriorAuditHash": true
+    },
+    {
+      "path": "src/portable/data.ts",
+      "sha256": "56e1e33cb728a114ec0715506f0f529126fe99ceae7a1ba8da984c16cba453cc",
+      "bytes": 999,
+      "matchesPriorAuditHash": true
+    },
+    {
+      "path": "scripts/build-portable.ts",
+      "sha256": "01492e85dcb7083c0a7f0e16a499e20d02da1fea877504796f7137d8726fc461",
+      "bytes": 3235,
+      "matchesPriorAuditHash": true
+    },
+    {
+      "path": "tests/configuration-payload.test.ts",
+      "sha256": "5b44811aff2d18d1f048ffc7551e90fb2d609757fb756df885d1031563455a62",
+      "bytes": 6080
+    },
+    {
+      "path": "tests/home-payload.test.ts",
+      "sha256": "58dd2502f2e97dc96565f43b08bc56dbe35fe4ee6f626639cf8b4716c610362a",
+      "bytes": 7241,
+      "matchesPriorAuditHash": false
+    },
+    {
+      "path": "tests/detail-discovery.test.ts",
+      "sha256": "01c5533c3eac85062cc26bdf028c974bf856d01a0d0e565ef688e27d06630fce",
+      "bytes": 2832
+    },
+    {
+      "path": "tests/configuration-option.test.ts",
+      "sha256": "359e0c97dad629ecb70dc0bf6da64d668e3f9efa0916e5ec18e5c649dc8937a0",
+      "bytes": 2799,
+      "matchesPriorAuditHash": true
+    },
+    {
+      "path": "tests/remaining-volkswagen-integration.test.ts",
+      "sha256": "38a0d3c2f7bb0427166e5d84cd783f1ace648bccd962bd92cef4e81c6b3e67fe",
+      "bytes": 4381,
+      "matchesPriorAuditHash": true
+    },
+    {
+      "path": "tests/discovery.test.ts",
+      "sha256": "c490f9b7cfe2fa7278a4eb6134799588c21bb49ef2175dd695293b1e845cded6",
+      "bytes": 7526,
+      "matchesPriorAuditHash": true
+    },
+    {
+      "path": "tests/selling-points.test.ts",
+      "sha256": "b7abf4b962ab816e2c179344cbf463160e7c9eaa58c91707ec0c954c994fdc5e",
+      "bytes": 17106
+    },
+    {
+      "path": "tests/page-evidence.test.ts",
+      "sha256": "123fdd30cfc8572ea37479a02d51835480d4e17b787b1f532eafb2d6ab8564c6",
+      "bytes": 4710,
+      "matchesPriorAuditHash": true
+    },
+    {
+      "path": "tests/cached-summary-ssr.test.ts",
+      "sha256": "2de8e585eee12bbb76d67a180b319b19edfb1597ec7c5bc82732ff67111b8ace",
+      "bytes": 44,
+      "matchesPriorAuditHash": true
+    },
+    {
+      "path": "tests/fixtures/cached-summary-ssr.mjs",
+      "sha256": "33ef8218d5816582df13362807d948a03126fc043e58e8b85d7794bf6c294566",
+      "bytes": 9040,
+      "matchesPriorAuditHash": true
+    },
+    {
+      "path": "tests/portable-packs.test.ts",
+      "sha256": "5018cf277e24b5fb0c991262f27cfeaa134bfa209b45723b9aad467d61127a22",
+      "bytes": 2152,
+      "matchesPriorAuditHash": true
+    },
+    {
+      "path": "src/lib/issue-presentation.ts",
+      "sha256": "98ddde091cc0f99f7b4e1bc95cbb50c5c1d4cccf5b669e85eff128ef554f973c",
+      "bytes": 719
+    },
+    {
+      "path": "src/lib/citable.ts",
+      "sha256": "d7da30b5d64d753b34401846cbad09841f9b03f69d4331e456dc7f01ff1fade5",
+      "bytes": 13397,
+      "matchesPriorAuditHash": false
+    },
+    {
+      "path": "src/components/ui.tsx",
+      "sha256": "74e0d661ce3439ae6ad459fe24747048addc38b04f138cf73c32494db6464100",
+      "bytes": 21656,
+      "matchesPriorAuditHash": false
+    },
+    {
+      "path": "src/components/experience.tsx",
+      "sha256": "dea96ce79217d199d3b9b4de6de05d43aef4b79120b87ee91f2c2e3675210d61",
+      "bytes": 35496,
+      "matchesPriorAuditHash": false
+    },
+    {
+      "path": "src/app/globals.css",
+      "sha256": "7e0675e8be7538791f64262c9af15388b926cde88a36b1fe5ca70bccd7bff3be",
+      "bytes": 113041
+    },
+    {
+      "path": "tests/issue-presentation.test.ts",
+      "sha256": "739016c8cf445ff6d3b32e42bbd0226c8378552f99efdf74446a151c733e7da5",
+      "bytes": 1642
+    },
+    {
+      "path": "data/catalogue-additions-2026-10-10.json",
+      "sha256": "4d2c88d72a97f4831906b92457259270e76e8bdce655100d41f3fe7c59ab1488",
+      "bytes": 33847686,
+      "matchesPriorAuditHash": true
+    },
+    {
+      "path": "data/buyer-identity-snapshots-2026-10-10.json",
+      "sha256": "d99fb214c6b8e5e47a7844931fd14fb8800af9076b8d0326a519ed78bbbef0d6",
+      "bytes": 26938477,
+      "matchesPriorAuditHash": true
+    },
+    {
+      "path": "data/buyer-selling-points-2026-10-10.json",
+      "sha256": "ba7224c691c8ba8a214d36042a6882b49a81ffb26e46bf0ae6fabfb8a5479c50",
+      "bytes": 22401073,
+      "matchesPriorAuditHash": true
+    },
+    {
+      "path": "qa/remaining-volkswagen-integration-fixture.json",
+      "sha256": "7ec5cd2e95fdba9fa975a285f45308d8095645625155b05203d9f4e6e39c6fe4",
+      "bytes": 10827,
+      "matchesPriorAuditHash": true
+    }
+  ]
+}

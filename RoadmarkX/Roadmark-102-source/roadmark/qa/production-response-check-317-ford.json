@@ -1,0 +1,91 @@
+{
+  "checkedAtUTC": "2026-10-10T18:43:34.566Z",
+  "catalogueVersions": 317,
+  "method": "Own VM production Next.js server, loopback requests; cold then 3 warm samples. Gzip byte counts are estimates from local compression. Not browser rendering, actual mobile, network throughput, LCP or INP.",
+  "results": [
+    {
+      "route": "/cars/ford-e-transit-custom-my26-50/trend-lwb-20261010",
+      "responseBytes": 1673457,
+      "estimatedGzipBytes": 112614,
+      "coldMs": 4329.4275689999995,
+      "warmMs": [
+        23.259438999999475,
+        23.559492999999748,
+        34.13714699999946
+      ],
+      "meanWarmMs": 26.985359666666227
+    },
+    {
+      "route": "/cars/ford-e-transit-custom-my26-50/sport-swb-20261010",
+      "responseBytes": 1605848,
+      "estimatedGzipBytes": 107536,
+      "coldMs": 33.4706470000001,
+      "warmMs": [
+        20.436776999999893,
+        18.546470999999656,
+        21.53922599999987
+      ],
+      "meanWarmMs": 20.174157999999807
+    },
+    {
+      "route": "/compare?cars=ford_e_transit_custom_my26_50__trend_lwb__20261010%2Cford_e_transit_custom_my26_50__sport_swb__20261010",
+      "responseBytes": 2335612,
+      "estimatedGzipBytes": 164171,
+      "coldMs": 2285.914688,
+      "warmMs": [
+        843.6990610000003,
+        750.2054669999998,
+        779.1313310000005
+      ],
+      "meanWarmMs": 791.0119530000002
+    },
+    {
+      "route": "/",
+      "responseBytes": 7390939,
+      "estimatedGzipBytes": 737233,
+      "coldMs": 128.7994720000006,
+      "warmMs": [
+        59.96477099999902,
+        61.01581500000066,
+        56.911385999999766
+      ],
+      "meanWarmMs": 59.29732399999981
+    },
+    {
+      "route": "/discover",
+      "responseBytes": 4137552,
+      "estimatedGzipBytes": 314685,
+      "coldMs": 66.77706399999988,
+      "warmMs": [
+        35.76483499999995,
+        31.401207999999315,
+        32.228761999998824
+      ],
+      "meanWarmMs": 33.13160166666603
+    },
+    {
+      "route": "/cars/geely-ex5/inspire-extended-range-2",
+      "responseBytes": 371091,
+      "estimatedGzipBytes": 50751,
+      "coldMs": 37.95959500000026,
+      "warmMs": [
+        5.967989000000671,
+        5.724082999999155,
+        5.407484999999724
+      ],
+      "meanWarmMs": 5.699852333333183
+    },
+    {
+      "route": "/compare?cars=byd_atto_3_legacy__essential_fwd__1%2Cgeely_ex5__inspire_extended_range__2",
+      "responseBytes": 521038,
+      "estimatedGzipBytes": 67682,
+      "coldMs": 769.5613169999997,
+      "warmMs": [
+        726.5135950000004,
+        700.770437000001,
+        717.5209410000007
+      ],
+      "meanWarmMs": 714.9349910000007
+    }
+  ]
+}

@@ -1,0 +1,1484 @@
+{
+  "createdAt": "2026-10-15T00:48:05.071655+00:00",
+  "status": "Recovery integrity verified; registered correction accepted; broader release gates remain open",
+  "workState": {
+    "label": "Registered Mercedes corrected working recovery",
+    "registered": true,
+    "correctionIndependentlyAccepted": true,
+    "freshValidationPassed": true,
+    "preCorrectionNormalReportByteParityPassed": true,
+    "correctionCompleteReportDeltaAccepted": true,
+    "preCorrectionRelevantTestsPassed": 214,
+    "postCorrectionRelevantTestsPassed": 98,
+    "changedFileLintPassed": true,
+    "completeStandardTypeScriptPassed": false,
+    "fullProjectSuitePassed": false,
+    "buildPassed": false,
+    "mobilePassed": false,
+    "releaseReady": false,
+    "published": false,
+    "milestone": "M1 open",
+    "originalValidationAttempt": "Outcome unknown; original logs/inputs retained and no terminal invented. Later successful retry is separate.",
+    "failedTestAttempts": "Original resource failures, including OOM/SIGKILL, retained. Passing serial runs do not erase failures.",
+    "factualSummarySource": {
+      "restoredPath": "roadmark/docs/MERCEDES_M1_UPDATE.md",
+      "bytes": 3856,
+      "sha256": "2aee8d298481c3f566efc21c0949b2ff25edd2a64f8fc274e31d80b4477265f9"
+    },
+    "latestStandardCheckedRecovery": "Polestar"
+  },
+  "source": {
+    "filename": "Roadmark-recovery-source-MERCEDES-CORRECTED-WORKING-20261015T0035.tar.xz",
+    "group": "source-MERCEDES-CORRECTED-WORKING-20261015T0035",
+    "bytes": 8367776,
+    "sha256": "e3dbaa09342529d61cdd0609d34a8440952e9c1970458f3d9ee215ef40eaaf75",
+    "restoreOrder": 39,
+    "library_file_id": "libfile_feaba9cd77908191aedfad4ce3eaa2d2",
+    "file_id": "file_00000000033c81f5acbdbdd16a6d1e31",
+    "version": 0,
+    "new": true
+  },
+  "baseRecovery": {
+    "manifestLibraryFileId": "libfile_2b5d04d742cc81919da3cbd8733582d0",
+    "indexLibraryFileId": "libfile_f52cc73a66388191a9c2b9c22bafde58",
+    "activeReceiptLibraryFileId": "libfile_ef89e4c6ecd88191a59140b274e0b787",
+    "manifestPin": {
+      "bytes": 2719852,
+      "sha256": "54f85061d3bacff32b39abaa78340a579efed0cee37a33b4a81566f386236f80"
+    },
+    "finalReceiptPin": {
+      "bytes": 46788,
+      "sha256": "068ce44428f364ab12407303fce9116c29bade610e9e03fe93ea4e8e54f69228"
+    },
+    "archives": 103,
+    "logicalFiles": 8281,
+    "priorSource": {
+      "filename": "Roadmark-recovery-source-MERCEDES-REGISTERED-PROVISIONAL-20261014T2325.tar.xz",
+      "group": "source-MERCEDES-REGISTERED-PROVISIONAL-20261014T2325",
+      "bytes": 8363664,
+      "sha256": "16e14cbde52246dc28fd60b659fc159b7388adf4bbaac97a836c50ee5f37ab65",
+      "restoreOrder": 39,
+      "library_file_id": "libfile_8b19e18f60108191898701cacb6f1255",
+      "file_id": "file_00000000aaf0820d8bfa59ca10c4710c",
+      "version": 0,
+      "new": true
+    },
+    "reuse": "102 exact unchanged archive versions reused; prior full source and every old recovery remain separately preserved."
+  },
+  "newArchives": [
+    {
+      "filename": "Roadmark-recovery-source-MERCEDES-CORRECTED-WORKING-20261015T0035.tar.xz",
+      "group": "source-MERCEDES-CORRECTED-WORKING-20261015T0035",
+      "bytes": 8367776,
+      "sha256": "e3dbaa09342529d61cdd0609d34a8440952e9c1970458f3d9ee215ef40eaaf75",
+      "restoreOrder": 39,
+      "library_file_id": "libfile_feaba9cd77908191aedfad4ce3eaa2d2",
+      "file_id": "file_00000000033c81f5acbdbdd16a6d1e31",
+      "version": 0,
+      "new": true
+    },
+    {
+      "filename": "Roadmark-recovery-MERCEDES-CORRECTED-WORKING-20261015T0035-METADATA-R1-part01of01.tar.xz",
+      "group": "MERCEDES-CORRECTED-WORKING-20261015T0035-METADATA-R1",
+      "bytes": 248264,
+      "sha256": "38552d6b5a3ace2f4d62fb08c401260066da919df461ba515f563918ff8e35a5",
+      "restoreOrder": 104,
+      "library_file_id": "libfile_3ab9fefef8e881918ea5324da97ad50b",
+      "file_id": "file_00000000152481f58b91ca823e8325e4",
+      "version": 0,
+      "new": true
+    }
+  ],
+  "incrementalVerification": {
+    "archiveCount": 104,
+    "logicalFiles": 8435,
+    "logicalBytes": 2814350652,
+    "freshFiles": 814,
+    "freshBytes": 283194009,
+    "fullSourceFiles": 660,
+    "sourceChangedPaths": [
+      "data/m1-brand-updates/mercedes-benz-towing-basis-2026-10-15.json",
+      "data/m1-brand-updates/registry.json",
+      "docs/M1_PROGRESS.md",
+      "docs/MERCEDES_M1_UPDATE.md",
+      "scripts/reporting/reports.ts",
+      "src/lib/evidence-grading.ts",
+      "tests/brand-updates.test.ts",
+      "tests/m1-coverage-tracking.test.ts"
+    ],
+    "baseArchivesReused": 102,
+    "scopeOriginalFiles": 165
+  },
+  "verificationScope": "814 new source/proof/QA archive members and 283194009 bytes freshly decompressed and hash-verified by an independent streaming replay. No new restore tree was materialized. Full current patterns cover changed/generated members, exact prior content/rule proofs cover unchanged source patterns, and current known-value byte searches cover every new archive member. The 102 unchanged base archive versions reuse earlier independent proofs without another whole-base scan or copy.",
+  "independentVerification": {
+    "result": "PASS",
+    "verificationScope": "New archives fully decompressed in 64 KiB reads, regular safe unique members and exact frozen/base-derived hashes verified, XZ footer exhausted, complete logical overlay derived; no unchanged base archive/payload scan or disk restore clone.",
+    "source": {
+      "files": 660,
+      "exactPriorReuse": 652,
+      "changedPaths": [
+        "data/m1-brand-updates/mercedes-benz-towing-basis-2026-10-15.json",
+        "data/m1-brand-updates/registry.json",
+        "docs/M1_PROGRESS.md",
+        "docs/MERCEDES_M1_UPDATE.md",
+        "scripts/reporting/reports.ts",
+        "src/lib/evidence-grading.ts",
+        "tests/brand-updates.test.ts",
+        "tests/m1-coverage-tracking.test.ts"
+      ],
+      "strictCompressedUnder15000000": true,
+      "archive": {
+        "filename": "Roadmark-recovery-source-MERCEDES-CORRECTED-WORKING-20261015T0035.tar.xz",
+        "bytes": 8367776,
+        "sha256": "e3dbaa09342529d61cdd0609d34a8440952e9c1970458f3d9ee215ef40eaaf75",
+        "members": 661,
+        "uncompressedBytes": 276725000
+      }
+    },
+    "proof": {
+      "selectedOriginalFiles": 165,
+      "sourceCovered": 8,
+      "reusedBaseMembers": 5,
+      "newDeltaFiles": 152,
+      "allFrozenHashesAndCurrentOriginalIdentitiesVerified": true,
+      "newSanitationChanges": 0,
+      "benignAuthorizationProsePreservedExactly": true
+    },
+    "newArchives": [
+      {
+        "filename": "Roadmark-recovery-source-MERCEDES-CORRECTED-WORKING-20261015T0035.tar.xz",
+        "bytes": 8367776,
+        "sha256": "e3dbaa09342529d61cdd0609d34a8440952e9c1970458f3d9ee215ef40eaaf75",
+        "members": 661,
+        "uncompressedBytes": 276725000
+      },
+      {
+        "filename": "Roadmark-recovery-MERCEDES-CORRECTED-WORKING-20261015T0035-METADATA-R1-part01of01.tar.xz",
+        "bytes": 248264,
+        "sha256": "38552d6b5a3ace2f4d62fb08c401260066da919df461ba515f563918ff8e35a5",
+        "members": 153,
+        "uncompressedBytes": 6469009
+      }
+    ],
+    "phaseTerminals": {
+      "capture-source": {
+        "receipt": {
+          "bytes": 599,
+          "sha256": "242f96b9e3d67548741c767c1dc1db35dda8a06fda5bcd683625ee6e09a885c8"
+        },
+        "command": [
+          "python3",
+          "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/stream_capture_v2.py",
+          "source"
+        ],
+        "exitCode": 0,
+        "maxRssKiB": 15240,
+        "wallSeconds": 1.706
+      },
+      "capture-proof": {
+        "receipt": {
+          "bytes": 598,
+          "sha256": "58003099d61220003d9b95316f071f95554ce79a117cdf254a55283fbc9f64d9"
+        },
+        "command": [
+          "python3",
+          "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/stream_capture_v2.py",
+          "proof"
+        ],
+        "exitCode": 0,
+        "maxRssKiB": 21132,
+        "wallSeconds": 0.302
+      },
+      "package-source": {
+        "receipt": {
+          "bytes": 601,
+          "sha256": "e97f3c7fb539480265578c0689a60995136c22d685cd83362c036fb11debe4f6"
+        },
+        "command": [
+          "python3",
+          "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/stream_package_v2.py",
+          "source"
+        ],
+        "exitCode": 0,
+        "maxRssKiB": 108960,
+        "wallSeconds": 36.866
+      },
+      "package-proof": {
+        "receipt": {
+          "bytes": 598,
+          "sha256": "5077156234f6a3131d20f8f1af52eba07f48e047cd1e002428cf6b78d1a54a03"
+        },
+        "command": [
+          "python3",
+          "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/stream_package_v2.py",
+          "proof"
+        ],
+        "exitCode": 0,
+        "maxRssKiB": 87748,
+        "wallSeconds": 1.403
+      },
+      "derive-plan": {
+        "receipt": {
+          "bytes": 588,
+          "sha256": "dc6574133877a30eb62e277f417974ab31df0600d7998a8864f16854e05ecba5"
+        },
+        "command": [
+          "python3",
+          "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/derive_restore_plan.py"
+        ],
+        "exitCode": 0,
+        "maxRssKiB": 20528,
+        "wallSeconds": 0.202
+      },
+      "package-proof-metadata-v2": {
+        "receipt": {
+          "bytes": 607,
+          "sha256": "c300f821e2ca6667a68361b83d6b5950c2460c376b48a48d94efd634b592f920"
+        },
+        "command": [
+          "python3",
+          "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/stream_package_metadata_v2.py",
+          "proof"
+        ],
+        "exitCode": 0,
+        "maxRssKiB": 87744,
+        "wallSeconds": 1.504
+      },
+      "derive-plan-v2": {
+        "receipt": {
+          "bytes": 590,
+          "sha256": "91a7a7f67e8859413d06da4400c2a21d906cd50dbb8aac5bc7d9b519fbd9a12e"
+        },
+        "command": [
+          "python3",
+          "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/derive_restore_plan_v2.py"
+        ],
+        "exitCode": 0,
+        "maxRssKiB": 20532,
+        "wallSeconds": 0.202
+      }
+    },
+    "privacy": {
+      "result": "PASS",
+      "reports": [
+        {
+          "archive": "Roadmark-recovery-source-MERCEDES-CORRECTED-WORKING-20261015T0035.tar.xz",
+          "report": {
+            "bytes": 154616,
+            "sha256": "59825e8fef1f57a128c0adab65759dc3ab89e2a1264f2fdf4a75ab22c417f816"
+          },
+          "terminal": {
+            "receipt": {
+              "bytes": 858,
+              "sha256": "fa5ea27d35b414879fae2eb8192075b261ccc4c8775f0a444ed1cc2b0c5fd132"
+            },
+            "command": [
+              "python3",
+              "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/stream_privacy_v4.py",
+              "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/Roadmark-recovery-source-MERCEDES-CORRECTED-WORKING-20261015T0035.tar.xz",
+              "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/scan-01.json"
+            ],
+            "exitCode": 0,
+            "maxRssKiB": 48456,
+            "wallSeconds": 30.759
+          },
+          "members": 661,
+          "bytes": 276725000,
+          "cachedPatternMembers": 647
+        },
+        {
+          "archive": "Roadmark-recovery-MERCEDES-CORRECTED-WORKING-20261015T0035-METADATA-R1-part01of01.tar.xz",
+          "report": {
+            "bytes": 42808,
+            "sha256": "689d3de570e73b43801991951a24a337118b8d1db59725df0165194d2aa11d30"
+          },
+          "terminal": {
+            "receipt": {
+              "bytes": 873,
+              "sha256": "376eac1a75d4bcc00aa8d61e8ef2e90ee1f64c9469ebafd4b7680cb58b5de373"
+            },
+            "command": [
+              "python3",
+              "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/stream_privacy_v4.py",
+              "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/Roadmark-recovery-MERCEDES-CORRECTED-WORKING-20261015T0035-METADATA-R1-part01of01.tar.xz",
+              "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/scan-02.json"
+            ],
+            "exitCode": 2,
+            "maxRssKiB": 48856,
+            "wallSeconds": 9.221
+          },
+          "members": 153,
+          "bytes": 6469009,
+          "cachedPatternMembers": 0
+        }
+      ],
+      "everyMemberCurrentKnownValueSearchVerified": true,
+      "knownHistoricalValues": 55,
+      "knownHistoricalForms": 373,
+      "mercedesValues": 20,
+      "mercedesForms": 128,
+      "seedMembers": 200,
+      "unclassifiedFindingsOrErrorsAfterAdjudication": 0,
+      "rawPrimaryCandidates": 1,
+      "rawProofScanStatus": "review-required",
+      "rawProofScanExitCode": 2,
+      "exactBenignAdjudication": {
+        "bytes": 2372,
+        "sha256": "e64499342cd6083d766c18807e222e1249b04216f26cf4ec8a9b8c769debc8bd"
+      },
+      "rawValuesRecorded": false,
+      "exactHistoricalSourcePatternCacheOnly": true
+    },
+    "replay": {
+      "manifest": {
+        "bytes": 150142,
+        "sha256": "c7eee28f6d8dab9d1c9dfa8bbfc70ca30a29474649ec3f2b84f59631303863ce"
+      },
+      "newDiskExtractedTreeCreated": false,
+      "priorNativeHelperSafetyFixtureProofReused": true
+    },
+    "overlay": {
+      "baseArchiveCount": 103,
+      "unchangedBaseArchivesReused": 102,
+      "combinedArchiveCount": 104,
+      "freshFiles": 814,
+      "freshBytes": 283194009,
+      "combinedLogicalFiles": 8435,
+      "combinedLogicalBytes": 2814350652,
+      "onlyNonSourceExistingPathOverlay": "roadmark-104-qa/work-status.json",
+      "basePayloadReadsPerformed": false,
+      "wholeBaseMaterialized": false
+    },
+    "inheritedSanitation": {
+      "unchangedRawCaptureMappings": 8,
+      "unchangedRedactionLocations": 51,
+      "unchangedSourceHeaderRedactions": 10,
+      "originalPinsDistinctFromSanitizedPins": true
+    },
+    "state": {
+      "workingState": "Registered Mercedes corrected working recovery. Fresh validation and normal registered report completed; pre-correction report matched staged bytes. The six-path towing/reporting correction and exact report delta are independently accepted. 214 pre-correction relevant tests and 98 correction-relevant split tests passed, plus changed-file lint. Mercedes core coverage is 158/170 filled, with 170 reviewed cells and 12 explicit gaps; C3 true, C1/C2/C5 remain open. Full standard TypeScript, full aggregate suite, build, mobile and release remain open. Original unknown validation, test OOM/SIGKILL and all retained failures remain historical. No new release or publication claim.\n",
+      "originalFirstValidationOutcome": "unknown; no invented terminal",
+      "laterCorrectionValidationReportAccepted": true,
+      "relevantSplitTests": 98,
+      "fullTypeScriptBuildMobileAggregateReleaseGatesOpen": true,
+      "historicalOomSigkillPreserved": true,
+      "applicationExecuted": false
+    },
+    "inputPins": {
+      "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/source-capture-v2.json": {
+        "bytes": 528403,
+        "sha256": "26b1b4322dbb058ea5d5f9e67d9a9042303e8923a89604526a1151d502ae8955"
+      },
+      "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/proof-capture-v2.json": {
+        "bytes": 329038,
+        "sha256": "16656f7359cf784eb2f2a6c4c1d529d1be94b7740e5673d6b1e31835de58d218"
+      },
+      "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/source-package.json": {
+        "bytes": 118466,
+        "sha256": "1f5a489b2e25e51e90a441d8b12d265c2884cd899d7d07742bbd4b1bd45e6c38"
+      },
+      "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/proof-packages-v2.json": {
+        "bytes": 35073,
+        "sha256": "852ea9155bc030dea59c0875adb00dce82865a55695101350d9872404061ba7d"
+      },
+      "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/RESTORE-PLAN-v2.json": {
+        "bytes": 2266800,
+        "sha256": "a190069fef5114b38cfaa9bcacc5020cd3555fd1d49ae84094f2085a54c6b8e7"
+      },
+      "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/ARCHIVE-PLAN-v2.json": {
+        "bytes": 166861,
+        "sha256": "f12328d8040bb063ac0cf45b48b633d82516869d406af6615a81bc73c91c05b2"
+      },
+      "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/ALL-ARCHIVE-PRIVACY-GATE.json": {
+        "bytes": 6432,
+        "sha256": "92710c533eba675f0c3328b2e097f91183ab659858e2ec7b3b2e051787d00c64"
+      },
+      "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/SUMMARY-STATE-CORRECTION-v2.json": {
+        "bytes": 5121,
+        "sha256": "456468b8cacecd5fb1044e9d2e74b1068aec21b207a2e8a75050e539c1f46f9a"
+      },
+      "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/INDEPENDENT-SUMMARY-STATE-CORRECTION-v2-REVIEW.json": {
+        "bytes": 5610,
+        "sha256": "a71fdaad99c6ffb2704adb90a5040d6c2db78c0678683377d43add32b45ae710"
+      },
+      "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/INDEPENDENT-EXACT-BENIGN-PRIMARY-ADJUDICATION-v1.json": {
+        "bytes": 2372,
+        "sha256": "e64499342cd6083d766c18807e222e1249b04216f26cf4ec8a9b8c769debc8bd"
+      }
+    },
+    "verifierScript": {
+      "bytes": 19905,
+      "sha256": "e2b4b1284b2f69ca6ccd80071f84c2110271670eda39922d5bce8b8fefca55b3"
+    },
+    "archivePlanPin": {
+      "bytes": 166861,
+      "sha256": "f12328d8040bb063ac0cf45b48b633d82516869d406af6615a81bc73c91c05b2"
+    },
+    "restorePlanPin": {
+      "bytes": 2266800,
+      "sha256": "a190069fef5114b38cfaa9bcacc5020cd3555fd1d49ae84094f2085a54c6b8e7"
+    },
+    "summaryCorrectionReceipt": {
+      "bytes": 5121,
+      "sha256": "456468b8cacecd5fb1044e9d2e74b1068aec21b207a2e8a75050e539c1f46f9a"
+    },
+    "noUploadsOrDeletion": true,
+    "resources": {
+      "wallSeconds": 1.238,
+      "maxRssKiB": 42576,
+      "chunkBytes": 65536,
+      "addressSpaceLimitBytes": 268435456,
+      "applicationExecution": false,
+      "noRestoreClone": true
+    },
+    "completedAt": "2026-10-15T00:47:06.386152+00:00"
+  },
+  "privacyVerification": {
+    "result": "PASS",
+    "completedAt": "2026-10-15T00:46:45.068690+00:00",
+    "archives": [
+      {
+        "archive": "Roadmark-recovery-source-MERCEDES-CORRECTED-WORKING-20261015T0035.tar.xz",
+        "report": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/scan-01.json",
+        "reportPin": {
+          "bytes": 154616,
+          "sha256": "59825e8fef1f57a128c0adab65759dc3ab89e2a1264f2fdf4a75ab22c417f816"
+        },
+        "terminal": {
+          "startedAt": "2026-10-15T00:44:47.248254+00:00",
+          "endedAt": "2026-10-15T00:45:18.007033+00:00",
+          "command": [
+            "python3",
+            "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/stream_privacy_v4.py",
+            "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/Roadmark-recovery-source-MERCEDES-CORRECTED-WORKING-20261015T0035.tar.xz",
+            "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/scan-01.json"
+          ],
+          "exitCode": 0,
+          "timedOut": false,
+          "wallSeconds": 30.759,
+          "maxRssKiB": 48456,
+          "addressSpaceLimitBytes": 268435456,
+          "wallLimitSeconds": 600,
+          "childPid": 12,
+          "unknownPriorValidationProcessMayOverlap": true,
+          "metricMethod": "POSIX wait4, Linux KiB",
+          "missingTerminalMeansOutcomeUnknown": true
+        },
+        "rawScannerStatus": "clean",
+        "members": 661,
+        "bytes": 276725000,
+        "cachedPatternMembers": 647,
+        "adjudicatedPrimaryCandidates": 0
+      },
+      {
+        "archive": "Roadmark-recovery-MERCEDES-CORRECTED-WORKING-20261015T0035-METADATA-R1-part01of01.tar.xz",
+        "report": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/scan-02.json",
+        "reportPin": {
+          "bytes": 42808,
+          "sha256": "689d3de570e73b43801991951a24a337118b8d1db59725df0165194d2aa11d30"
+        },
+        "terminal": {
+          "startedAt": "2026-10-15T00:45:18.048493+00:00",
+          "endedAt": "2026-10-15T00:45:27.269012+00:00",
+          "command": [
+            "python3",
+            "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/stream_privacy_v4.py",
+            "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/Roadmark-recovery-MERCEDES-CORRECTED-WORKING-20261015T0035-METADATA-R1-part01of01.tar.xz",
+            "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/scan-02.json"
+          ],
+          "exitCode": 2,
+          "timedOut": false,
+          "wallSeconds": 9.221,
+          "maxRssKiB": 48856,
+          "addressSpaceLimitBytes": 268435456,
+          "wallLimitSeconds": 600,
+          "childPid": 14,
+          "unknownPriorValidationProcessMayOverlap": true,
+          "metricMethod": "POSIX wait4, Linux KiB",
+          "missingTerminalMeansOutcomeUnknown": true
+        },
+        "rawScannerStatus": "review-required",
+        "members": 153,
+        "bytes": 6469009,
+        "cachedPatternMembers": 0,
+        "adjudicatedPrimaryCandidates": 1
+      }
+    ],
+    "freshMembers": 814,
+    "freshBytes": 283194009,
+    "currentKnownValuesAcrossAllMembers": true,
+    "exactCachedPatternVerdictsOnly": true,
+    "knownHistoricalValues": 55,
+    "knownHistoricalForms": 373,
+    "mercedesRuntimeValues": 20,
+    "mercedesRuntimeForms": 128,
+    "rawPrimaryCandidates": 1,
+    "independentlyAdjudicatedBenignPrimaryCandidates": 1,
+    "unclassifiedFindings": 0,
+    "errors": 0,
+    "adjudication": {
+      "schemaVersion": 1,
+      "result": "PASS_EXACT_BENIGN_PRIMARY_CANDIDATE_ADJUDICATION",
+      "reviewedAt": "2026-10-15T00:46:09.732018+00:00",
+      "classificationReceipt": {
+        "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/EXACT-BENIGN-JSON-SANITIZER-CLASSIFICATIONS.json",
+        "bytes": 722,
+        "sha256": "222074010fa3ac58c51c73d4383fab3272f8736a95f4904702ab317eb77829e8"
+      },
+      "originalMember": {
+        "path": "mercedes-review/towing-correction-v2-retained-witnesses-review.json",
+        "bytes": 15515,
+        "sha256": "365baa293d5658f48fca7b3191aa810ed037c2651b11e99320394e26e69160e5"
+      },
+      "exactCandidate": {
+        "member": "mercedes-review/towing-correction-v2-retained-witnesses-review.json",
+        "kind": "json-header",
+        "location": {
+          "pointer": "/authorization"
+        },
+        "confidence": "captured",
+        "header": "authorization",
+        "valueType": "str",
+        "valueLength": 154
+      },
+      "valueSha256": "850b1dbda79b13f8365680ad5acfcb44f070593c2cceaa84b8d41130cee41140",
+      "classification": "Exact reviewed human-authored scope prose describing a bounded read. It is not an HTTP header value, credential, token, or personal secret. Original bytes are preserved.",
+      "rawScanReport": {
+        "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/scan-02.json",
+        "bytes": 42808,
+        "sha256": "689d3de570e73b43801991951a24a337118b8d1db59725df0165194d2aa11d30"
+      },
+      "rawTerminal": {
+        "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/scan-02.resources.json",
+        "bytes": 873,
+        "sha256": "376eac1a75d4bcc00aa8d61e8ef2e90ee1f64c9469ebafd4b7680cb58b5de373"
+      },
+      "rawStatus": "review-required",
+      "rawExitCode": 2,
+      "rawStatusAndTerminalPreserved": true,
+      "completePatternsAndKnownValueSearchExecuted": true,
+      "onlyPrimaryCandidate": true,
+      "knownValueMatches": 0,
+      "runtimeCandidates": 0,
+      "scanErrors": 0,
+      "unclassifiedFindingsAfterAdjudication": 0,
+      "scannerCodeChanged": false,
+      "rescanPerformed": false,
+      "archivePayloadReadByThisMetadataAdjudication": false,
+      "remainingCondition": "Independent streaming verification must bind this exact member hash and every raw scanned member to the produced proof archive before promotion."
+    },
+    "adjudicationPin": {
+      "bytes": 2372,
+      "sha256": "e64499342cd6083d766c18807e222e1249b04216f26cf4ec8a9b8c769debc8bd"
+    },
+    "rawReportsAndFailedPromotionPreserved": true,
+    "noScannerRuleOrCoverageChanges": true,
+    "limitations": "Specified complete scans plus one exact benign-prose classification; no universal absence guarantee."
+  },
+  "sourceSanitation": {
+    "changedCopiedSourceFiles": 1,
+    "inheritedHeaderRedactions": 10,
+    "newSourceSanitationChanges": 0,
+    "files": [
+      {
+        "path": "roadmark/data/farizon-foton-jac-trucks-evidence.json",
+        "originalBytes": 733472,
+        "originalSHA256": "e6b1f6adae33871d57f0c6bd730571cf64fed06ae4166c1947aed422d97b4a7f",
+        "sanitizedBytes": 732552,
+        "sanitizedSHA256": "fb34e31bc3bdf5a1a2e1673d33ba9ab1ba6a8c0a3c2d3fb49e7e4267789b422d",
+        "redactedHeaderPaths": [
+          "/sources/5/headers/set-cookie",
+          "/sources/6/headers/set-cookie",
+          "/sources/7/headers/set-cookie",
+          "/sources/19/headers/set-cookie",
+          "/sources/20/headers/set-cookie",
+          "/sources/23/headers/Set-Cookie",
+          "/sources/24/headers/set-cookie",
+          "/sources/29/headers/set-cookie",
+          "/sources/33/headers/set-cookie",
+          "/sources/35/headers/Set-Cookie"
+        ]
+      }
+    ],
+    "scope": "Exact previously sanitized source copy reused. Ten captured Set-Cookie header values remain redacted; original live source stays untouched. This copied file is verified by the sanitized hash and cannot satisfy its original byte hash. No approved packet or factual content was changed by this backup."
+  },
+  "originalRawCaptureReplayCompatibility": {
+    "sanitizedRawCopies": 8,
+    "withRetainedOriginalHashReferences": 7,
+    "pinnedByFinalV6SourceManifest": 4,
+    "mappingRestorePath": "mercedes-safety-support/RUNTIME-SANITATION-REPORT.json",
+    "files": [
+      {
+        "path": "mercedes-research/people-movers/evans-2023-au-maker-brochure-mirror.error.raw",
+        "originalBytes": 6093,
+        "originalSHA256": "43e73052950b1e4f0f1cf1f1c17e33f1353cfb5bf68b0b8e153f77f7bb1bca94",
+        "sanitizedBytes": 3963,
+        "sanitizedSHA256": "723ccd8d4cb44ed7262105731e949c39955fa9e02c728b5b898acecfdb834d4f",
+        "originalHashReferencedByRetainedMetadata": true,
+        "referencedByFinalV6SourceManifest": false,
+        "referenceFiles": [
+          "mercedes-research/normalized-evidence-draft-v3.json",
+          "mercedes-research/normalized-evidence-draft-v4.json",
+          "mercedes-research/normalized-evidence-v1.json",
+          "mercedes-research/normalized-evidence-v2.json",
+          "mercedes-research/normalized-evidence-v3.json",
+          "mercedes-research/normalized-evidence-v4.json",
+          "mercedes-research/normalized-evidence-v5.json",
+          "mercedes-research/normalized-evidence-v6.json"
+        ]
+      },
+      {
+        "path": "mercedes-research/people-movers/evito-redbook-2026.error.raw",
+        "originalBytes": 773,
+        "originalSHA256": "ef91352335721e0d690c83085a0d6fb525163a4a122697b01e05a6bc646d4c10",
+        "sanitizedBytes": 616,
+        "sanitizedSHA256": "1eb23b46f90872f70a39fa5e5918edf889a2bbb6ba86908837cea6a300d75893",
+        "originalHashReferencedByRetainedMetadata": true,
+        "referencedByFinalV6SourceManifest": false,
+        "referenceFiles": [
+          "mercedes-research/normalized-evidence-draft-v3.json",
+          "mercedes-research/normalized-evidence-draft-v4.json",
+          "mercedes-research/normalized-evidence-v1.json",
+          "mercedes-research/normalized-evidence-v2.json",
+          "mercedes-research/normalized-evidence-v3.json",
+          "mercedes-research/normalized-evidence-v4.json",
+          "mercedes-research/normalized-evidence-v5.json",
+          "mercedes-research/normalized-evidence-v6.json"
+        ]
+      },
+      {
+        "path": "mercedes-research/technical/city-ringwood.raw.html",
+        "originalBytes": 127678,
+        "originalSHA256": "90bbd08d40adbd8a5d813859f2366924973a7b9d54ae060b42162daa9f236110",
+        "sanitizedBytes": 127747,
+        "sanitizedSHA256": "a82fc8fb0f398c7da19ee807010fab0d5ef0f9749c5db54d7a69e79ef40a7c4b",
+        "originalHashReferencedByRetainedMetadata": true,
+        "referencedByFinalV6SourceManifest": true,
+        "referenceFiles": [
+          "mercedes-research/city-editions/normalized-city-editions.json",
+          "mercedes-research/city-editions/sources.json",
+          "mercedes-research/normalized-evidence-draft-v4.json",
+          "mercedes-research/normalized-evidence-v1.json",
+          "mercedes-research/normalized-evidence-v2.json",
+          "mercedes-research/normalized-evidence-v3.json",
+          "mercedes-research/normalized-evidence-v4.json",
+          "mercedes-research/normalized-evidence-v5.json",
+          "mercedes-research/normalized-evidence-v6.json",
+          "mercedes-research/technical/extra1-capture-manifest.json",
+          "mercedes-staging-plan/packet-preparation/source-capture-manifest-v4.json",
+          "mercedes-staging-plan/packet-preparation/source-capture-manifest-v6.json"
+        ]
+      },
+      {
+        "path": "mercedes-research/technical/eqa-choice.raw.html",
+        "originalBytes": 538630,
+        "originalSHA256": "306e6986a4149505818d86bbd8d8591519032c76378af45cb7ef7e1f0b20756e",
+        "sanitizedBytes": 538699,
+        "sanitizedSHA256": "5362b17c79d6deba116ab21c1feb26a123d6887cc384a3f21f1e6dc2f3d15b90",
+        "originalHashReferencedByRetainedMetadata": true,
+        "referencedByFinalV6SourceManifest": true,
+        "referenceFiles": [
+          "mercedes-research/normalized-evidence-draft-v2.json",
+          "mercedes-research/normalized-evidence-draft-v3.json",
+          "mercedes-research/normalized-evidence-draft-v4.json",
+          "mercedes-research/normalized-evidence-v1.json",
+          "mercedes-research/normalized-evidence-v2.json",
+          "mercedes-research/normalized-evidence-v3.json",
+          "mercedes-research/normalized-evidence-v4.json",
+          "mercedes-research/normalized-evidence-v5.json",
+          "mercedes-research/normalized-evidence-v6.json",
+          "mercedes-research/normalized-passenger-draft-v1.json",
+          "mercedes-research/technical/extra5-capture-manifest.json",
+          "mercedes-staging-plan/packet-preparation/source-capture-manifest-v4.json",
+          "mercedes-staging-plan/packet-preparation/source-capture-manifest-v6.json"
+        ]
+      },
+      {
+        "path": "mercedes-research/technical/eqa-stock-current.raw.html",
+        "originalBytes": 467018,
+        "originalSHA256": "04f9d556013be49932c42fbd05c90da51a2e8fca59bf62c1bd2d66330c23c8c6",
+        "sanitizedBytes": 466976,
+        "sanitizedSHA256": "d02f2b156999b98c8a4b55ec28a39c2942e90fc8133f8c275c77e1cb7f16a743",
+        "originalHashReferencedByRetainedMetadata": true,
+        "referencedByFinalV6SourceManifest": false,
+        "referenceFiles": [
+          "mercedes-research/technical/more-capture-manifest-v1.json"
+        ]
+      },
+      {
+        "path": "mercedes-research/technical/eqa-stock-current.ssr.json",
+        "originalBytes": 290318,
+        "originalSHA256": "e2e2011b0e674bf6f32dacf45ccd6cb803a912bf5109fe608c6e27379408fde4",
+        "sanitizedBytes": 290276,
+        "sanitizedSHA256": "99aa956a00c6414bd0720f4834cc1c5b28fc0cbfddf6a02998ef1c06df8fba6e",
+        "originalHashReferencedByRetainedMetadata": false,
+        "referencedByFinalV6SourceManifest": false,
+        "referenceFiles": []
+      },
+      {
+        "path": "mercedes-research/technical/glb-whichcar.raw.html",
+        "originalBytes": 165001,
+        "originalSHA256": "b54ca183b859ee18fa291195db74b7c584ff9b59bf361bf774fc0ae26f42df51",
+        "sanitizedBytes": 165024,
+        "sanitizedSHA256": "84d9a54dab043f194d3e3201928c79dcdef34590d23fea5d7e99391cf0c84c42",
+        "originalHashReferencedByRetainedMetadata": true,
+        "referencedByFinalV6SourceManifest": true,
+        "referenceFiles": [
+          "mercedes-research/normalized-evidence-draft-v2.json",
+          "mercedes-research/normalized-evidence-draft-v3.json",
+          "mercedes-research/normalized-evidence-draft-v4.json",
+          "mercedes-research/normalized-evidence-v1.json",
+          "mercedes-research/normalized-evidence-v2.json",
+          "mercedes-research/normalized-evidence-v3.json",
+          "mercedes-research/normalized-evidence-v4.json",
+          "mercedes-research/normalized-evidence-v5.json",
+          "mercedes-research/normalized-evidence-v6.json",
+          "mercedes-research/normalized-passenger-draft-v1.json",
+          "mercedes-research/technical/extra5-capture-manifest.json",
+          "mercedes-staging-plan/packet-preparation/source-capture-manifest-v4.json",
+          "mercedes-staging-plan/packet-preparation/source-capture-manifest-v6.json"
+        ]
+      },
+      {
+        "path": "mercedes-research/technical/glc-whichcar.raw.html",
+        "originalBytes": 169461,
+        "originalSHA256": "d9eafe061ffc46c9814a7ca6e8f9e958e0b0d1e9279789e5b7522b66b10274ba",
+        "sanitizedBytes": 169484,
+        "sanitizedSHA256": "314207d7cf569680cd7873a99d7f0d9fc737d6f533fc3253fda1777affcbea02",
+        "originalHashReferencedByRetainedMetadata": true,
+        "referencedByFinalV6SourceManifest": true,
+        "referenceFiles": [
+          "mercedes-research/normalized-evidence-draft-v2.json",
+          "mercedes-research/normalized-evidence-draft-v3.json",
+          "mercedes-research/normalized-evidence-draft-v4.json",
+          "mercedes-research/normalized-evidence-v1.json",
+          "mercedes-research/normalized-evidence-v2.json",
+          "mercedes-research/normalized-evidence-v3.json",
+          "mercedes-research/normalized-evidence-v4.json",
+          "mercedes-research/normalized-evidence-v5.json",
+          "mercedes-research/normalized-evidence-v6.json",
+          "mercedes-research/normalized-passenger-draft-v1.json",
+          "mercedes-research/technical/more-capture-manifest-v1.json",
+          "mercedes-staging-plan/packet-preparation/source-capture-manifest-v4.json",
+          "mercedes-staging-plan/packet-preparation/source-capture-manifest-v6.json"
+        ]
+      }
+    ],
+    "originalExpectedHashesUnchanged": true,
+    "originalRawBytesAvailableInThisRecoveryCopy": false,
+    "replayRule": "The recovery manifest verifies sanitized copies. An original raw-capture pin check must report those original bytes unavailable, never substitute the sanitized digest. Replaying those raw pins requires intact original bytes or a separately reviewed new manifest. Current working originals remain untouched.",
+    "factualPassageReview": {
+      "schemaVersion": 1,
+      "status": "accepted_bounded_factual_preservation_of_sanitized_backup_copies",
+      "reviewedAt": "2026-10-14",
+      "runtimeSanitationReport": {
+        "path": "RUNTIME-SANITATION-REPORT.json",
+        "bytes": 51410,
+        "sha256": "d2783deea56dc69a68e33166c97a235942333fd7afad2c228223bc1e591a7971"
+      },
+      "originalSourceCaptureManifest": {
+        "path": "mercedes-staging-plan/packet-preparation/source-capture-manifest-v6.json",
+        "bytes": 18041,
+        "sha256": "3e18f87b18dd36a39a64dfdc3394cd46e84297ea00edd257ae07cbc105e86300"
+      },
+      "files": [
+        {
+          "sourceKey": "city-ringwood",
+          "original": {
+            "path": "mercedes-research/technical/city-ringwood.raw.html",
+            "bytes": 127678,
+            "sha256": "90bbd08d40adbd8a5d813859f2366924973a7b9d54ae060b42162daa9f236110"
+          },
+          "sanitizedCopy": {
+            "path": "city-ringwood.raw.html",
+            "bytes": 127747,
+            "sha256": "a82fc8fb0f398c7da19ee807010fab0d5ef0f9749c5db54d7a69e79ef40a7c4b"
+          },
+          "restoredCopy": {
+            "path": "city-ringwood.raw.html",
+            "bytes": 127747,
+            "sha256": "a82fc8fb0f398c7da19ee807010fab0d5ef0f9749c5db54d7a69e79ef40a7c4b"
+          },
+          "redactionLocations": [
+            {
+              "originalByteStart": 73911,
+              "originalByteEndExclusive": 73921,
+              "sanitizedByteStart": 73911,
+              "sanitizedByteEndExclusive": 73944,
+              "encoding": "literal",
+              "sourceFields": [
+                {
+                  "member": "mercedes-research/technical/city-ringwood.raw.html",
+                  "field": "nonce",
+                  "classification": "Captured nonce/form value or public-site API capability; not factual vehicle evidence"
+                }
+              ]
+            },
+            {
+              "originalByteStart": 122606,
+              "originalByteEndExclusive": 122616,
+              "sanitizedByteStart": 122629,
+              "sanitizedByteEndExclusive": 122662,
+              "encoding": "literal",
+              "sourceFields": [
+                {
+                  "member": "mercedes-research/technical/city-ringwood.raw.html",
+                  "field": "nonce",
+                  "classification": "Captured nonce/form value or public-site API capability; not factual vehicle evidence"
+                }
+              ]
+            },
+            {
+              "originalByteStart": 123255,
+              "originalByteEndExclusive": 123265,
+              "sanitizedByteStart": 123301,
+              "sanitizedByteEndExclusive": 123334,
+              "encoding": "literal",
+              "sourceFields": [
+                {
+                  "member": "mercedes-research/technical/city-ringwood.raw.html",
+                  "field": "nonce",
+                  "classification": "Captured nonce/form value or public-site API capability; not factual vehicle evidence"
+                }
+              ]
+            }
+          ],
+          "unchangedBytesOutsideDeclaredRanges": true,
+          "entireExtractedNonScriptStyleTextEqual": true,
+          "visibleTextSha256": "58d06dc66f8aaa4e0f16195d24271b5b654e6b36c4aeeaa1c261c8c7c1f484a4",
+          "restoredBytesEqualSanitizedCopy": true,
+          "originalStillMatchesAcceptedSourceCaptureManifest": true,
+          "factualWitnessChecks": [
+            {
+              "text": "EQA and EQB 250+ City Edition",
+              "preserved": true
+            },
+            {
+              "text": "Currently available",
+              "preserved": true
+            },
+            {
+              "text": "Copyright \u00a9 2025",
+              "preserved": true
+            }
+          ]
+        },
+        {
+          "sourceKey": "eqa-choice",
+          "original": {
+            "path": "mercedes-research/technical/eqa-choice.raw.html",
+            "bytes": 538630,
+            "sha256": "306e6986a4149505818d86bbd8d8591519032c76378af45cb7ef7e1f0b20756e"
+          },
+          "sanitizedCopy": {
+            "path": "eqa-choice.raw.html",
+            "bytes": 538699,
+            "sha256": "5362b17c79d6deba116ab21c1feb26a123d6887cc384a3f21f1e6dc2f3d15b90"
+          },
+          "restoredCopy": {
+            "path": "eqa-choice.raw.html",
+            "bytes": 538699,
+            "sha256": "5362b17c79d6deba116ab21c1feb26a123d6887cc384a3f21f1e6dc2f3d15b90"
+          },
+          "redactionLocations": [
+            {
+              "originalByteStart": 533949,
+              "originalByteEndExclusive": 533959,
+              "sanitizedByteStart": 533949,
+              "sanitizedByteEndExclusive": 533982,
+              "encoding": "literal",
+              "sourceFields": [
+                {
+                  "member": "mercedes-research/technical/eqa-choice.raw.html",
+                  "field": "nonce",
+                  "classification": "Captured nonce/form value or public-site API capability; not factual vehicle evidence"
+                }
+              ]
+            },
+            {
+              "originalByteStart": 534278,
+              "originalByteEndExclusive": 534288,
+              "sanitizedByteStart": 534301,
+              "sanitizedByteEndExclusive": 534334,
+              "encoding": "literal",
+              "sourceFields": [
+                {
+                  "member": "mercedes-research/technical/eqa-choice.raw.html",
+                  "field": "nonce",
+                  "classification": "Captured nonce/form value or public-site API capability; not factual vehicle evidence"
+                }
+              ]
+            },
+            {
+              "originalByteStart": 534380,
+              "originalByteEndExclusive": 534390,
+              "sanitizedByteStart": 534426,
+              "sanitizedByteEndExclusive": 534459,
+              "encoding": "literal",
+              "sourceFields": [
+                {
+                  "member": "mercedes-research/technical/eqa-choice.raw.html",
+                  "field": "nonce",
+                  "classification": "Captured nonce/form value or public-site API capability; not factual vehicle evidence"
+                }
+              ]
+            }
+          ],
+          "unchangedBytesOutsideDeclaredRanges": true,
+          "entireExtractedNonScriptStyleTextEqual": true,
+          "visibleTextSha256": "85300132f792fb8d7bf720e1755f9bb3610569921b4f4c7bd1cbc5ebfe31a9eb",
+          "restoredBytesEqualSanitizedCopy": true,
+          "originalStillMatchesAcceptedSourceCaptureManifest": true,
+          "factualWitnessChecks": [
+            {
+              "text": "2025 model",
+              "preserved": true
+            },
+            {
+              "text": "Powertrain ? FWD",
+              "preserved": true
+            },
+            {
+              "text": "Acceleration 0-100 (km/h, sec) ? 8.6",
+              "preserved": true
+            },
+            {
+              "text": "Cargo volume with seats up (L) ? 340",
+              "preserved": true
+            },
+            {
+              "text": "Braked towing capacity (kg) ? No Towing",
+              "preserved": true
+            }
+          ]
+        },
+        {
+          "sourceKey": "glb-whichcar",
+          "original": {
+            "path": "mercedes-research/technical/glb-whichcar.raw.html",
+            "bytes": 165001,
+            "sha256": "b54ca183b859ee18fa291195db74b7c584ff9b59bf361bf774fc0ae26f42df51"
+          },
+          "sanitizedCopy": {
+            "path": "glb-whichcar.raw.html",
+            "bytes": 165024,
+            "sha256": "84d9a54dab043f194d3e3201928c79dcdef34590d23fea5d7e99391cf0c84c42"
+          },
+          "restoredCopy": {
+            "path": "glb-whichcar.raw.html",
+            "bytes": 165024,
+            "sha256": "84d9a54dab043f194d3e3201928c79dcdef34590d23fea5d7e99391cf0c84c42"
+          },
+          "redactionLocations": [
+            {
+              "originalByteStart": 103597,
+              "originalByteEndExclusive": 103607,
+              "sanitizedByteStart": 103597,
+              "sanitizedByteEndExclusive": 103630,
+              "encoding": "literal",
+              "sourceFields": [
+                {
+                  "member": "mercedes-research/technical/glb-whichcar.raw.html",
+                  "field": "_wpnonce",
+                  "classification": "Captured nonce/form value or public-site API capability; not factual vehicle evidence"
+                },
+                {
+                  "member": "mercedes-research/technical/glc-whichcar.raw.html",
+                  "field": "_wpnonce",
+                  "classification": "Captured nonce/form value or public-site API capability; not factual vehicle evidence"
+                }
+              ]
+            }
+          ],
+          "unchangedBytesOutsideDeclaredRanges": true,
+          "entireExtractedNonScriptStyleTextEqual": true,
+          "visibleTextSha256": "fdbe51c47688d8b5062940858410122dd95770409787c157723512ae23efafc8",
+          "restoredBytesEqualSanitizedCopy": true,
+          "originalStillMatchesAcceptedSourceCaptureManifest": true,
+          "factualWitnessChecks": [
+            {
+              "text": "570km (250+) or 554km (350 4Matic) of WLTP-rated range",
+              "preserved": true
+            },
+            {
+              "text": "Folding the third row provides 480 litres",
+              "preserved": true
+            },
+            {
+              "text": "127-litre front boot",
+              "preserved": true
+            }
+          ]
+        },
+        {
+          "sourceKey": "glc-whichcar",
+          "original": {
+            "path": "mercedes-research/technical/glc-whichcar.raw.html",
+            "bytes": 169461,
+            "sha256": "d9eafe061ffc46c9814a7ca6e8f9e958e0b0d1e9279789e5b7522b66b10274ba"
+          },
+          "sanitizedCopy": {
+            "path": "glc-whichcar.raw.html",
+            "bytes": 169484,
+            "sha256": "314207d7cf569680cd7873a99d7f0d9fc737d6f533fc3253fda1777affcbea02"
+          },
+          "restoredCopy": {
+            "path": "glc-whichcar.raw.html",
+            "bytes": 169484,
+            "sha256": "314207d7cf569680cd7873a99d7f0d9fc737d6f533fc3253fda1777affcbea02"
+          },
+          "redactionLocations": [
+            {
+              "originalByteStart": 107753,
+              "originalByteEndExclusive": 107763,
+              "sanitizedByteStart": 107753,
+              "sanitizedByteEndExclusive": 107786,
+              "encoding": "literal",
+              "sourceFields": [
+                {
+                  "member": "mercedes-research/technical/glb-whichcar.raw.html",
+                  "field": "_wpnonce",
+                  "classification": "Captured nonce/form value or public-site API capability; not factual vehicle evidence"
+                },
+                {
+                  "member": "mercedes-research/technical/glc-whichcar.raw.html",
+                  "field": "_wpnonce",
+                  "classification": "Captured nonce/form value or public-site API capability; not factual vehicle evidence"
+                }
+              ]
+            }
+          ],
+          "unchangedBytesOutsideDeclaredRanges": true,
+          "entireExtractedNonScriptStyleTextEqual": true,
+          "visibleTextSha256": "e46127b7cdcb3ca885f16c2ad2a807c7bd9f2f4e71404c5a466ee4ec09ca5462",
+          "restoredBytesEqualSanitizedCopy": true,
+          "originalStillMatchesAcceptedSourceCaptureManifest": true,
+          "factualWitnessChecks": [
+            {
+              "text": "pricing (excluding on-road costs)",
+              "preserved": true
+            },
+            {
+              "text": "GLC 400 4Matic $112,200",
+              "preserved": true
+            },
+            {
+              "text": "WLTP-rated range of 630km",
+              "preserved": true
+            },
+            {
+              "text": "dual-motor electric drivetrain",
+              "preserved": true
+            },
+            {
+              "text": "4.3 seconds",
+              "preserved": true
+            },
+            {
+              "text": "570 (rear seats up)",
+              "preserved": true
+            },
+            {
+              "text": "128-litre front boot",
+              "preserved": true
+            }
+          ]
+        }
+      ],
+      "method": "Read only the four named original, selected and restored HTML files. Verified exact original/sanitized hash mappings, byte equality of every segment outside all eight declared nonce/_wpnonce replacement ranges, full decoded text equality excluding script/style bodies, selected factual witnesses, and exact restored-copy equality. No capture-tree scan or production execution.",
+      "factualScope": "Preserves City advertisement naming/currently-available wording and copyright scope; public 2025 CHOICE drive/acceleration/cargo/categorical towing; exact GLB WLTP grades and third-row-folded/front-cargo scope; GLC exact price exclusion, range, drivetrain, acceleration and cargo seating scope. This is preservation review, not an evidence regrade or new current-supply attestation.",
+      "limitations": [
+        "Sanitized files have different bytes and SHA256 values; they cannot satisfy original capture pins.",
+        "The original research, source-capture manifest and working originals are unchanged. This receipt does not amend them.",
+        "Future restoration replay requires the unavailable original bytes or a separately reviewed replacement manifest and provenance review; no silent original-hash equivalence.",
+        "This bounded check does not attest residual credential scanning, archive/upload integrity or other backup members; those remain the backup verifier scope.",
+        "No original removed nonce/runtime value is included in this receipt."
+      ],
+      "result": "PASS",
+      "priorReviewArtifact": {
+        "path": "FOUR-SANITIZED-CAPTURES-FACTUAL-REVIEW.json",
+        "bytes": 13953,
+        "sha256": "ba5d3c698257ce28f1598ae02efac059d38e78e1a3714ad17003ea0c72eb065c"
+      }
+    }
+  },
+  "backupResourceConfiguration": {
+    "localComputeAddressSpaceLimitBytes": 268435456,
+    "chunkBytes": 65536,
+    "encoderThreads": 1,
+    "xzPreset": 6,
+    "dictionaryBytes": 8388608,
+    "phaseWallLimitSeconds": 600,
+    "networkRoute": "Previously authorized unchanged official prepared helper without RLIMIT_AS; no local computation cap increase.",
+    "noGlobalProcessTerminationInference": true,
+    "measurements": {
+      "capture-proof.resources.json": {
+        "startedAt": "2026-10-15T00:41:42.342348+00:00",
+        "endedAt": "2026-10-15T00:41:42.644605+00:00",
+        "command": [
+          "python3",
+          "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/stream_capture_v2.py",
+          "proof"
+        ],
+        "exitCode": 0,
+        "timedOut": false,
+        "wallSeconds": 0.302,
+        "maxRssKiB": 21132,
+        "addressSpaceLimitBytes": 268435456,
+        "wallLimitSeconds": 600,
+        "childPid": 9,
+        "unknownPriorValidationProcessMayOverlap": true,
+        "metricMethod": "POSIX wait4, Linux KiB",
+        "missingTerminalMeansOutcomeUnknown": true
+      },
+      "capture-source.resources.json": {
+        "startedAt": "2026-10-15T00:41:40.594499+00:00",
+        "endedAt": "2026-10-15T00:41:42.300168+00:00",
+        "command": [
+          "python3",
+          "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/stream_capture_v2.py",
+          "source"
+        ],
+        "exitCode": 0,
+        "timedOut": false,
+        "wallSeconds": 1.706,
+        "maxRssKiB": 15240,
+        "addressSpaceLimitBytes": 268435456,
+        "wallLimitSeconds": 600,
+        "childPid": 7,
+        "unknownPriorValidationProcessMayOverlap": true,
+        "metricMethod": "POSIX wait4, Linux KiB",
+        "missingTerminalMeansOutcomeUnknown": true
+      },
+      "derive-plan-v2.resources.json": {
+        "startedAt": "2026-10-15T00:44:46.965401+00:00",
+        "endedAt": "2026-10-15T00:44:47.167355+00:00",
+        "command": [
+          "python3",
+          "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/derive_restore_plan_v2.py"
+        ],
+        "exitCode": 0,
+        "timedOut": false,
+        "wallSeconds": 0.202,
+        "maxRssKiB": 20532,
+        "addressSpaceLimitBytes": 268435456,
+        "wallLimitSeconds": 600,
+        "childPid": 9,
+        "unknownPriorValidationProcessMayOverlap": true,
+        "metricMethod": "POSIX wait4, Linux KiB",
+        "missingTerminalMeansOutcomeUnknown": true
+      },
+      "derive-plan.resources.json": {
+        "startedAt": "2026-10-15T00:42:31.714909+00:00",
+        "endedAt": "2026-10-15T00:42:31.916452+00:00",
+        "command": [
+          "python3",
+          "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/derive_restore_plan.py"
+        ],
+        "exitCode": 0,
+        "timedOut": false,
+        "wallSeconds": 0.202,
+        "maxRssKiB": 20528,
+        "addressSpaceLimitBytes": 268435456,
+        "wallLimitSeconds": 600,
+        "childPid": 11,
+        "unknownPriorValidationProcessMayOverlap": true,
+        "metricMethod": "POSIX wait4, Linux KiB",
+        "missingTerminalMeansOutcomeUnknown": true
+      },
+      "independent-corrected-recovery-v1.resources.json": {
+        "startedAt": "2026-10-15T00:47:05.099837+00:00",
+        "endedAt": "2026-10-15T00:47:06.402922+00:00",
+        "command": [
+          "python3",
+          "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/independent_corrected_recovery_v1.py",
+          "--sole-child-slot-authorized"
+        ],
+        "exitCode": 0,
+        "timedOut": false,
+        "wallSeconds": 1.303,
+        "maxRssKiB": 42576,
+        "addressSpaceLimitBytes": 268435456,
+        "wallLimitSeconds": 600,
+        "childPid": 7,
+        "unknownPriorValidationProcessMayOverlap": true,
+        "metricMethod": "POSIX wait4, Linux KiB",
+        "missingTerminalMeansOutcomeUnknown": true
+      },
+      "package-proof-metadata-v2.resources.json": {
+        "startedAt": "2026-10-15T00:44:45.422177+00:00",
+        "endedAt": "2026-10-15T00:44:46.926070+00:00",
+        "command": [
+          "python3",
+          "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/stream_package_metadata_v2.py",
+          "proof"
+        ],
+        "exitCode": 0,
+        "timedOut": false,
+        "wallSeconds": 1.504,
+        "maxRssKiB": 87744,
+        "addressSpaceLimitBytes": 268435456,
+        "wallLimitSeconds": 600,
+        "childPid": 7,
+        "unknownPriorValidationProcessMayOverlap": true,
+        "metricMethod": "POSIX wait4, Linux KiB",
+        "missingTerminalMeansOutcomeUnknown": true
+      },
+      "package-proof.resources.json": {
+        "startedAt": "2026-10-15T00:42:30.277524+00:00",
+        "endedAt": "2026-10-15T00:42:31.680902+00:00",
+        "command": [
+          "python3",
+          "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/stream_package_v2.py",
+          "proof"
+        ],
+        "exitCode": 0,
+        "timedOut": false,
+        "wallSeconds": 1.403,
+        "maxRssKiB": 87748,
+        "addressSpaceLimitBytes": 268435456,
+        "wallLimitSeconds": 600,
+        "childPid": 9,
+        "unknownPriorValidationProcessMayOverlap": true,
+        "metricMethod": "POSIX wait4, Linux KiB",
+        "missingTerminalMeansOutcomeUnknown": true
+      },
+      "package-source.resources.json": {
+        "startedAt": "2026-10-15T00:41:53.364759+00:00",
+        "endedAt": "2026-10-15T00:42:30.230614+00:00",
+        "command": [
+          "python3",
+          "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/stream_package_v2.py",
+          "source"
+        ],
+        "exitCode": 0,
+        "timedOut": false,
+        "wallSeconds": 36.866,
+        "maxRssKiB": 108960,
+        "addressSpaceLimitBytes": 268435456,
+        "wallLimitSeconds": 600,
+        "childPid": 7,
+        "unknownPriorValidationProcessMayOverlap": true,
+        "metricMethod": "POSIX wait4, Linux KiB",
+        "missingTerminalMeansOutcomeUnknown": true
+      },
+      "scan-01.resources.json": {
+        "startedAt": "2026-10-15T00:44:47.248254+00:00",
+        "endedAt": "2026-10-15T00:45:18.007033+00:00",
+        "command": [
+          "python3",
+          "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/stream_privacy_v4.py",
+          "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/Roadmark-recovery-source-MERCEDES-CORRECTED-WORKING-20261015T0035.tar.xz",
+          "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/scan-01.json"
+        ],
+        "exitCode": 0,
+        "timedOut": false,
+        "wallSeconds": 30.759,
+        "maxRssKiB": 48456,
+        "addressSpaceLimitBytes": 268435456,
+        "wallLimitSeconds": 600,
+        "childPid": 12,
+        "unknownPriorValidationProcessMayOverlap": true,
+        "metricMethod": "POSIX wait4, Linux KiB",
+        "missingTerminalMeansOutcomeUnknown": true
+      },
+      "scan-02.resources.json": {
+        "startedAt": "2026-10-15T00:45:18.048493+00:00",
+        "endedAt": "2026-10-15T00:45:27.269012+00:00",
+        "command": [
+          "python3",
+          "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/stream_privacy_v4.py",
+          "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/Roadmark-recovery-MERCEDES-CORRECTED-WORKING-20261015T0035-METADATA-R1-part01of01.tar.xz",
+          "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/scan-02.json"
+        ],
+        "exitCode": 2,
+        "timedOut": false,
+        "wallSeconds": 9.221,
+        "maxRssKiB": 48856,
+        "addressSpaceLimitBytes": 268435456,
+        "wallLimitSeconds": 600,
+        "childPid": 14,
+        "unknownPriorValidationProcessMayOverlap": true,
+        "metricMethod": "POSIX wait4, Linux KiB",
+        "missingTerminalMeansOutcomeUnknown": true
+      },
+      "upload-archives.resources.json": {
+        "startedAt": "2026-10-15T00:47:41.623152+00:00",
+        "endedAt": "2026-10-15T00:47:48.085969+00:00",
+        "command": [
+          "python3",
+          "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/library-helper-20261014T1020/library_upload.py"
+        ],
+        "exitCode": 0,
+        "wallSeconds": 6.463,
+        "userSeconds": 1.863422,
+        "systemSeconds": 2.6344440000000002,
+        "maxRssKiB": 35712,
+        "metricMethod": "POSIX wait4 child rusage; Linux ru_maxrss in KiB",
+        "hostTimeBinaryAvailable": false
+      }
+    }
+  },
+  "verificationSupportFiles": [
+    {
+      "filename": "COMMAND-PLAN-v1.json",
+      "bytes": 10847,
+      "sha256": "dfd6324d4ff9e68d7531e8466baaf2e33672e7a97e0e53a32162be7c91cde6f7",
+      "text": "{\n  \"status\": \"FROZEN\",\n  \"inputPins\": [\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/run_bounded_v2.py\",\n      \"bytes\": 2252,\n      \"sha256\": \"d7dd7c8a9b39c94e19a0de92fe06fdeaa7e33c1b93fc5b4317cfe0be1b5f78f8\"\n    },\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/stream_capture_v2.py\",\n      \"bytes\": 6867,\n      \"sha256\": \"8f09861414114c19e8be7490ac2366fad74758d4f01b68c11d38b64383395553\"\n    },\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/stream_package_v2.py\",\n      \"bytes\": 3404,\n      \"sha256\": \"24ccbda2c16612b2f7fbb8eb4390f78a24b742d12442490d31039e046e2a4536\"\n    },\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/stream_privacy_v3.py\",\n      \"bytes\": 8766,\n      \"sha256\": \"f5285e855089414aa5f36a6a25bc35d38148cf8ba563dedc54844a2b842a403c\"\n    },\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/derive_restore_plan.py\",\n      \"bytes\": 2981,\n      \"sha256\": \"7edfb1757af3c95daa3721f90111315574e52d376438e56811d7a41efc80755d\"\n    },\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/run_scans.py\",\n      \"bytes\": 2322,\n      \"sha256\": \"4edb607505c569b8ee73620dcc290f019ab1c512ec34997faaadec166e33756c\"\n    },\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/FROZEN-CAPTURE-SCOPE.json\",\n      \"bytes\": 44579,\n      \"sha256\": \"005b02893e81f5e0e66e1f15dbfd054c661e169e15e1d0d25229e13ac9f30797\"\n    },\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/SEED-PROVENANCE.json\",\n      \"bytes\": 56058,\n      \"sha256\": \"a46652dae5a4d8b21cc49009e56b7ed5b0c0c92f1d3f8a1fc87186590e4e73dc\"\n    },\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/INDEPENDENT-SOURCE-PATTERN-CACHE-PROVENANCE-v1.json\",\n      \"bytes\": 227226,\n      \"sha256\": \"4d3387a7577b1cb2b79c327571e3ae28a3216b0b997a708a28cb11ec3186af2e\"\n    },\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/INDEPENDENT-STREAM-PRIVACY-v3-REVIEW.json\",\n      \"bytes\": 3680,\n      \"sha256\": \"dd6826fbf22b536496b85ab57b2aeadd6e4c0e039d141b0edb62a69955cef52c\"\n    },\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/EXACT-BENIGN-JSON-SANITIZER-CLASSIFICATIONS.json\",\n      \"bytes\": 722,\n      \"sha256\": \"222074010fa3ac58c51c73d4383fab3272f8736a95f4904702ab317eb77829e8\"\n    },\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/WORKING-STATE.txt\",\n      \"bytes\": 643,\n      \"sha256\": \"b8be6deadcefef42ca7f80b6e7588111e26822c07c63545958206626dcc6bf69\"\n    },\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/snapshot_recovery_v2.py\",\n      \"bytes\": 10384,\n      \"sha256\": \"cf321c73428059b8b4c2d69b284392a5e9e4c1f6238475ef10ab75a46e5c20a7\"\n    },\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-104/scripts/package-source.py\",\n      \"bytes\": 8343,\n      \"sha256\": \"1742adb876b577a9b71b477f5d8a1313595fd37ca7eb74c4969b99a26910b5e6\"\n    },\n    {\n      \"path\": \"/tmp/mercedes-review/postregistration-and-correction-reviewer-allowlist-v1.json\",\n      \"bytes\": 3650,\n      \"sha256\": \"5404bede8fe04ee7e58c51258cee4eacfd021a4f96747673b3533e1d3f555415\"\n    },\n    {\n      \"path\": \"/tmp/mercedes-review/postregistration-and-correction-reviewer-allowlist-v3.json\",\n      \"bytes\": 4694,\n      \"sha256\": \"5b004e63d0bf753abe50c0293f74022d9936c14bbc74dd1f04a69111f52af6dc\"\n    },\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-registered-provisional-20261014T2325/source-capture.json\",\n      \"bytes\": 526693,\n      \"sha256\": \"db5e5d4585a850f1d523515438ee6c5cce8c653426e57704e64e3af6f0137ba5\"\n    },\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-registered-provisional-20261014T2325/proof-capture.json\",\n      \"bytes\": 1119479,\n      \"sha256\": \"38cb45265f8ce7094ad37b9bc2b4dd4443ed40516ab4908b1024d43781fa1261\"\n    },\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-registered-provisional-20261014T2325/FINAL-MERCEDES-REGISTERED-UPLOAD-RECEIPTS.json\",\n      \"bytes\": 46788,\n      \"sha256\": \"068ce44428f364ab12407303fce9116c29bade610e9e03fe93ea4e8e54f69228\"\n    }\n  ],\n  \"fixedPhases\": [\n    {\n      \"phase\": \"capture-source\",\n      \"argv\": [\n        \"python3\",\n        \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/run_bounded_v2.py\",\n        \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/capture-source.resources.json\",\n        \"python3\",\n        \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/stream_capture_v2.py\",\n        \"source\"\n      ],\n      \"stdout\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/capture-source.log\",\n      \"stderr\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/capture-source.err\",\n      \"requires\": \"Fresh terminal exit0, no timeout, exact expected output; stop on failure without cap raise.\"\n    },\n    {\n      \"phase\": \"capture-proof\",\n      \"argv\": [\n        \"python3\",\n        \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/run_bounded_v2.py\",\n        \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/capture-proof.resources.json\",\n        \"python3\",\n        \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/stream_capture_v2.py\",\n        \"proof\"\n      ],\n      \"stdout\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/capture-proof.log\",\n      \"stderr\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/capture-proof.err\",\n      \"requires\": \"Fresh terminal exit0, no timeout, exact expected output; stop on failure without cap raise.\"\n    },\n    {\n      \"phase\": \"package-source\",\n      \"argv\": [\n        \"python3\",\n        \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/run_bounded_v2.py\",\n        \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/package-source.resources.json\",\n        \"python3\",\n        \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/stream_package_v2.py\",\n        \"source\"\n      ],\n      \"stdout\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/package-source.log\",\n      \"stderr\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/package-source.err\",\n      \"requires\": \"Fresh terminal exit0, no timeout, exact expected output; stop on failure without cap raise.\"\n    },\n    {\n      \"phase\": \"package-proof\",\n      \"argv\": [\n        \"python3\",\n        \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/run_bounded_v2.py\",\n        \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/package-proof.resources.json\",\n        \"python3\",\n        \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/stream_package_v2.py\",\n        \"proof\"\n      ],\n      \"stdout\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/package-proof.log\",\n      \"stderr\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/package-proof.err\",\n      \"requires\": \"Fresh terminal exit0, no timeout, exact expected output; stop on failure without cap raise.\"\n    },\n    {\n      \"phase\": \"derive-plan\",\n      \"argv\": [\n        \"python3\",\n        \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/run_bounded_v2.py\",\n        \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/derive-plan.resources.json\",\n        \"python3\",\n        \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/derive_restore_plan.py\"\n      ],\n      \"stdout\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/derive-plan.log\",\n      \"stderr\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/derive-plan.err\",\n      \"requires\": \"Fresh terminal exit0, no timeout, exact expected output; stop on failure without cap raise.\"\n    }\n  ],\n  \"scannerCommand\": [\n    \"python3\",\n    \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/run_scans.py\"\n  ],\n  \"scannerGate\": \"Every produced archive, exact member/bytes/hash union, clean complete report with no findings/errors, current known values across all, full unchanged patterns or exact inherited source/rule proof; no silent skip.\",\n  \"resourceBounds\": {\n    \"childAddressSpaceBytes\": 268435456,\n    \"chunkBytes\": 65536,\n    \"threads\": 1,\n    \"xzPreset\": 6,\n    \"dictionaryBytes\": 8388608,\n    \"phaseWallSeconds\": 600,\n    \"networkHelper\": \"Established official prepared helper route without RLIMIT_AS; no retry on uncertainty.\"\n  },\n  \"restoreGate\": \"Independent fresh-member exact streaming restore and logical overlay against103-archive base;102 base archives reused; no full base rescan or restoration.\",\n  \"scope\": {\n    \"files\": 165,\n    \"bytes\": 6660343\n  },\n  \"noDeletion\": true\n}\n"
+    },
+    {
+      "filename": "INDEPENDENT-CORRECTED-PLAN-REVIEW-v1.json",
+      "bytes": 8625,
+      "sha256": "52063d7e9c39bc7700566093f5e1ad9f3d684b04ff04e7b07e25100de627fd22",
+      "text": "{\n  \"schemaVersion\": 1,\n  \"result\": \"PASS_STATIC_METADATA_PLAN_REVIEW\",\n  \"reviewedAt\": \"2026-10-15T00:41:28.231234+00:00\",\n  \"commandPlan\": {\n    \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/COMMAND-PLAN-v1.json\",\n    \"bytes\": 10847,\n    \"sha256\": \"dfd6324d4ff9e68d7531e8466baaf2e33672e7a97e0e53a32162be7c91cde6f7\"\n  },\n  \"reviewedInputPins\": [\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/run_bounded_v2.py\",\n      \"bytes\": 2252,\n      \"sha256\": \"d7dd7c8a9b39c94e19a0de92fe06fdeaa7e33c1b93fc5b4317cfe0be1b5f78f8\"\n    },\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/stream_capture_v2.py\",\n      \"bytes\": 6867,\n      \"sha256\": \"8f09861414114c19e8be7490ac2366fad74758d4f01b68c11d38b64383395553\"\n    },\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/stream_package_v2.py\",\n      \"bytes\": 3404,\n      \"sha256\": \"24ccbda2c16612b2f7fbb8eb4390f78a24b742d12442490d31039e046e2a4536\"\n    },\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/stream_privacy_v3.py\",\n      \"bytes\": 8766,\n      \"sha256\": \"f5285e855089414aa5f36a6a25bc35d38148cf8ba563dedc54844a2b842a403c\"\n    },\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/derive_restore_plan.py\",\n      \"bytes\": 2981,\n      \"sha256\": \"7edfb1757af3c95daa3721f90111315574e52d376438e56811d7a41efc80755d\"\n    },\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/run_scans.py\",\n      \"bytes\": 2322,\n      \"sha256\": \"4edb607505c569b8ee73620dcc290f019ab1c512ec34997faaadec166e33756c\"\n    },\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/FROZEN-CAPTURE-SCOPE.json\",\n      \"bytes\": 44579,\n      \"sha256\": \"005b02893e81f5e0e66e1f15dbfd054c661e169e15e1d0d25229e13ac9f30797\"\n    },\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/SEED-PROVENANCE.json\",\n      \"bytes\": 56058,\n      \"sha256\": \"a46652dae5a4d8b21cc49009e56b7ed5b0c0c92f1d3f8a1fc87186590e4e73dc\"\n    },\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/INDEPENDENT-SOURCE-PATTERN-CACHE-PROVENANCE-v1.json\",\n      \"bytes\": 227226,\n      \"sha256\": \"4d3387a7577b1cb2b79c327571e3ae28a3216b0b997a708a28cb11ec3186af2e\"\n    },\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/INDEPENDENT-STREAM-PRIVACY-v3-REVIEW.json\",\n      \"bytes\": 3680,\n      \"sha256\": \"dd6826fbf22b536496b85ab57b2aeadd6e4c0e039d141b0edb62a69955cef52c\"\n    },\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/EXACT-BENIGN-JSON-SANITIZER-CLASSIFICATIONS.json\",\n      \"bytes\": 722,\n      \"sha256\": \"222074010fa3ac58c51c73d4383fab3272f8736a95f4904702ab317eb77829e8\"\n    },\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/WORKING-STATE.txt\",\n      \"bytes\": 643,\n      \"sha256\": \"b8be6deadcefef42ca7f80b6e7588111e26822c07c63545958206626dcc6bf69\"\n    },\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/snapshot_recovery_v2.py\",\n      \"bytes\": 10384,\n      \"sha256\": \"cf321c73428059b8b4c2d69b284392a5e9e4c1f6238475ef10ab75a46e5c20a7\"\n    },\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-104/scripts/package-source.py\",\n      \"bytes\": 8343,\n      \"sha256\": \"1742adb876b577a9b71b477f5d8a1313595fd37ca7eb74c4969b99a26910b5e6\"\n    },\n    {\n      \"path\": \"/tmp/mercedes-review/postregistration-and-correction-reviewer-allowlist-v1.json\",\n      \"bytes\": 3650,\n      \"sha256\": \"5404bede8fe04ee7e58c51258cee4eacfd021a4f96747673b3533e1d3f555415\"\n    },\n    {\n      \"path\": \"/tmp/mercedes-review/postregistration-and-correction-reviewer-allowlist-v3.json\",\n      \"bytes\": 4694,\n      \"sha256\": \"5b004e63d0bf753abe50c0293f74022d9936c14bbc74dd1f04a69111f52af6dc\"\n    },\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-registered-provisional-20261014T2325/source-capture.json\",\n      \"bytes\": 526693,\n      \"sha256\": \"db5e5d4585a850f1d523515438ee6c5cce8c653426e57704e64e3af6f0137ba5\"\n    },\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-registered-provisional-20261014T2325/proof-capture.json\",\n      \"bytes\": 1119479,\n      \"sha256\": \"38cb45265f8ce7094ad37b9bc2b4dd4443ed40516ab4908b1024d43781fa1261\"\n    },\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-registered-provisional-20261014T2325/FINAL-MERCEDES-REGISTERED-UPLOAD-RECEIPTS.json\",\n      \"bytes\": 46788,\n      \"sha256\": \"068ce44428f364ab12407303fce9116c29bade610e9e03fe93ea4e8e54f69228\"\n    }\n  ],\n  \"checks\": {\n    \"scopeUnionExact\": true,\n    \"scopeFiles\": 165,\n    \"scopeBytes\": 6660343,\n    \"allNineteenCommandInputPinsMatch\": true,\n    \"allFrozenRowsHaveExactHash\": true,\n    \"fullSourceExpected\": 660,\n    \"priorSourceCount\": 658,\n    \"changedOrNewSourcePaths\": [\n      \"data/m1-brand-updates/mercedes-benz-towing-basis-2026-10-15.json\",\n      \"data/m1-brand-updates/registry.json\",\n      \"docs/M1_PROGRESS.md\",\n      \"docs/MERCEDES_M1_UPDATE.md\",\n      \"scripts/reporting/reports.ts\",\n      \"src/lib/evidence-grading.ts\",\n      \"tests/brand-updates.test.ts\",\n      \"tests/m1-coverage-tracking.test.ts\"\n    ],\n    \"priorCombinedArchives\": 103,\n    \"priorCombinedFiles\": 8281,\n    \"unchangedBaseArchivesReused\": 102,\n    \"onlyExpectedNonSourceOverlay\": \"roadmark-104-qa/work-status.json\",\n    \"fullSourceStrictlyLessThan15000000\": true,\n    \"priorEightRawSanitationMappings51LocationsRetained\": true,\n    \"priorSourceTenHeaderMappingRetained\": true,\n    \"privacyCoreASTUnchanged\": true,\n    \"newSourceAndGeneratedMetadataFullPatterns\": true,\n    \"allMembersCurrentKnownValueSearch\": true,\n    \"exactBenignAuthorizationProseClassificationOnly\": true,\n    \"classificationNotPrivacyExemption\": true,\n    \"standaloneUserDocFinalFrozenPin\": {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-104/docs/MERCEDES_M1_UPDATE.md\",\n      \"bytes\": 3856,\n      \"sha256\": \"2aee8d298481c3f566efc21c0949b2ff25edd2a64f8fc274e31d80b4477265f9\"\n    },\n    \"supervisorAndScanDriverUnchanged\": true,\n    \"freshInvocationAndTerminalRequired\": true,\n    \"singleBoundedChild\": true,\n    \"perChildAddressSpaceBytes\": 268435456,\n    \"chunkBytes\": 65536,\n    \"xzSingleThreadPreset6DictionaryBytes\": 8388608,\n    \"noPayloadScanCompressionOrRestoreByThisReview\": true\n  },\n  \"requiredExecutionConditions\": [\n    \"Recheck all exact command pins before execution and preserve any failed or outcome-unknown attempt. No automatic retry, cap raise, omitted member, shortened pattern semantics, hydration or broad base scan.\",\n    \"Capture must verify every actual source/proof hash and exact eight-path change set. Every phase requires durable completed exit0/no-timeout receipt.\",\n    \"Require clean privacy report for every new archive with exact member maps and archive pin, complete current-known-value coverage, full unchanged patterns for new/changed/generated members and exact inherited cache provenance only.\",\n    \"Independent new-member streaming integrity/restore and logical-overlay proof is required before upload. Final documents and native persistence require separate gates.\",\n    \"Preserve original outcome-unknown validation and OOM/SIGKILL attempts; separate later validation/report and split-test passes from still-open full TypeScript/build/mobile/aggregate/release gates.\"\n  ],\n  \"limitations\": [\n    \"Metadata-only review, not payload verification or application test execution.\",\n    \"The 256 MiB limit is per new child; earlier unknown process history is not retroactively resolved.\",\n    \"Prior source privacy cache remains bound to historical exact source/rule proof; this review does not claim fresh whole-source pattern scanning.\"\n  ],\n  \"productionExecutionByReviewer\": false,\n  \"rootGrantReportedByParent\": true\n}\n"
+    },
+    {
+      "filename": "SUMMARY-STATE-CORRECTION-v2.json",
+      "bytes": 5121,
+      "sha256": "456468b8cacecd5fb1044e9d2e74b1068aec21b207a2e8a75050e539c1f46f9a",
+      "text": "{\n  \"status\": \"CORRECTED_BEFORE_SCAN_OR_UPLOAD\",\n  \"issue\": \"Backup-only summary used an incorrect denominator. Approved source, source manifest and user report were already correct.\",\n  \"correction\": \"158/170 core cells filled, 170 reviewed, 12 explicit gaps\",\n  \"captureMetadataTransitions\": [\n    {\n      \"before\": {\n        \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/source-capture.json\",\n        \"bytes\": 528366,\n        \"sha256\": \"02c5370308fa8806465b531e86c94cd0890692c5f5bf0b9ad42397afad3e3371\"\n      },\n      \"after\": {\n        \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/source-capture-v2.json\",\n        \"bytes\": 528403,\n        \"sha256\": \"26b1b4322dbb058ea5d5f9e67d9a9042303e8923a89604526a1151d502ae8955\"\n      },\n      \"onlyChangedField\": \"state\"\n    },\n    {\n      \"before\": {\n        \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/proof-capture.json\",\n        \"bytes\": 329001,\n        \"sha256\": \"f3c2d645d8af3daefc37c88a4ee689820e6a59d247561d4f0171bf12eb174183\"\n      },\n      \"after\": {\n        \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/proof-capture-v2.json\",\n        \"bytes\": 329038,\n        \"sha256\": \"16656f7359cf784eb2f2a6c4c1d529d1be94b7740e5673d6b1e31835de58d218\"\n      },\n      \"onlyChangedField\": \"state\"\n    }\n  ],\n  \"originalArchiveAndReceiptsPreserved\": true,\n  \"sourceArchiveUnchanged\": {\n    \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/Roadmark-recovery-source-MERCEDES-CORRECTED-WORKING-20261015T0035.tar.xz\",\n    \"bytes\": 8367776,\n    \"sha256\": \"e3dbaa09342529d61cdd0609d34a8440952e9c1970458f3d9ee215ef40eaaf75\"\n  },\n  \"newPackageScope\": \"Proof archive metadata only; payload file sets and bytes unchanged\",\n  \"inputPins\": [\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/WORKING-STATE-v2.txt\",\n      \"bytes\": 680,\n      \"sha256\": \"f09115dfa58a72f87ce58e507f8c1f1c825ab2bc4bbf2fec8992eec2b781c7cc\"\n    },\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/stream_package_metadata_v2.py\",\n      \"bytes\": 3422,\n      \"sha256\": \"e6dac2c32e9a7682461b9dd4fcfee76385796224d93b5985e2d6ee00fbe15ede\"\n    },\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/derive_restore_plan_v2.py\",\n      \"bytes\": 2999,\n      \"sha256\": \"1d51b87ea853c324881c568802603e9113156723dcff912e0044da10a827046b\"\n    },\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/stream_privacy_v4.py\",\n      \"bytes\": 8769,\n      \"sha256\": \"f171fb5a298b9ccdfdca17cb2763e7aeccffe19d41b0aad4ad08164b1f95e2f5\"\n    },\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/run_scans_v2.py\",\n      \"bytes\": 2325,\n      \"sha256\": \"fec036ddc27c1eae199db6403a6d42155099357bc07f0b302161514100624013\"\n    }\n  ],\n  \"commands\": [\n    {\n      \"phase\": \"package-proof-metadata-v2\",\n      \"argv\": [\n        \"python3\",\n        \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/run_bounded_v2.py\",\n        \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/package-proof-metadata-v2.resources.json\",\n        \"python3\",\n        \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/stream_package_metadata_v2.py\",\n        \"proof\"\n      ],\n      \"stdout\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/package-proof-metadata-v2.log\",\n      \"stderr\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/package-proof-metadata-v2.err\"\n    },\n    {\n      \"phase\": \"derive-plan-v2\",\n      \"argv\": [\n        \"python3\",\n        \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/run_bounded_v2.py\",\n        \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/derive-plan-v2.resources.json\",\n        \"python3\",\n        \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/derive_restore_plan_v2.py\"\n      ],\n      \"stdout\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/derive-plan-v2.log\",\n      \"stderr\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/derive-plan-v2.err\"\n    }\n  ]\n}\n"
+    },
+    {
+      "filename": "EXACT-BENIGN-JSON-SANITIZER-CLASSIFICATIONS.json",
+      "bytes": 722,
+      "sha256": "222074010fa3ac58c51c73d4383fab3272f8736a95f4904702ab317eb77829e8",
+      "text": "{\n  \"files\": [\n    {\n      \"restorePath\": \"mercedes-review/towing-correction-v2-retained-witnesses-review.json\",\n      \"bytes\": 15515,\n      \"sha256\": \"365baa293d5658f48fca7b3191aa810ed037c2651b11e99320394e26e69160e5\",\n      \"pointers\": [\n        \"/authorization\"\n      ],\n      \"valueSha256\": \"850b1dbda79b13f8365680ad5acfcb44f070593c2cceaa84b8d41130cee41140\",\n      \"classification\": \"Reviewer scope prose, not HTTP header or credential; exact original bytes retained. No primary/runtime scan exemption.\"\n    }\n  ],\n  \"reviewerAllowlist\": \"/tmp/mercedes-review/postregistration-and-correction-reviewer-allowlist-v1.json\",\n  \"reviewerAllowlistSha256\": \"5404bede8fe04ee7e58c51258cee4eacfd021a4f96747673b3533e1d3f555415\"\n}\n"
+    },
+    {
+      "filename": "INDEPENDENT-STREAM-PRIVACY-v3-REVIEW.json",
+      "bytes": 3680,
+      "sha256": "dd6826fbf22b536496b85ab57b2aeadd6e4c0e039d141b0edb62a69955cef52c",
+      "text": "{\n  \"schemaVersion\": 1,\n  \"result\": \"PASS_STATIC_AND_INHERITED_SYNTHETIC_EQUIVALENCE\",\n  \"createdAt\": \"2026-10-14T23:30:57.433595+00:00\",\n  \"approvedPrivacyAdapter\": {\n    \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-registered-provisional-20261014T2325/stream_privacy_v3.py\",\n    \"bytes\": 8755,\n    \"sha256\": \"cfabaa6701d51627d1b5a5f6e8decf426726406468deab4739fe8dfbbd820e00\"\n  },\n  \"previousTestedPrivacyAdapter\": {\n    \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-registered-provisional-20261014T2325/stream_privacy_v2.py\",\n    \"bytes\": 7849,\n    \"sha256\": \"aa8f21acfbda995a6d8c775c607b3ec029daff4fb46c0642ccbc832e86a522c4\"\n  },\n  \"fixtureReceipt\": {\n    \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-registered-provisional-20261014T2325/INDEPENDENT-STREAM-PRIVACY-FIXTURES-v1.json\",\n    \"bytes\": 3153,\n    \"sha256\": \"ac07dbcc07779ce995300c5515558130649247e154c152aa13408d3fa7e84e74\"\n  },\n  \"fixtureTerminal\": {\n    \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-registered-provisional-20261014T2325/stream-privacy-fixtures-v1.resources.json\",\n    \"bytes\": 574,\n    \"sha256\": \"58ff4a44073d7f88162c1a3b202abd12b3ac83f3b9cabe376ffa7bd5ecc152c6\"\n  },\n  \"cacheProvenance\": {\n    \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-registered-provisional-20261014T2325/INDEPENDENT-SOURCE-PATTERN-CACHE-PROVENANCE-v1.json\",\n    \"bytes\": 227226,\n    \"sha256\": \"4d3387a7577b1cb2b79c327571e3ae28a3216b0b997a708a28cb11ec3186af2e\"\n  },\n  \"seedProvenance\": {\n    \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-registered-provisional-20261014T2325/SEED-PROVENANCE.json\",\n    \"bytes\": 56058,\n    \"sha256\": \"a46652dae5a4d8b21cc49009e56b7ed5b0c0c92f1d3f8a1fc87186590e4e73dc\"\n  },\n  \"unchangedAstBodies\": [\n    \"ByteSearch\",\n    \"scan_patterns\",\n    \"main\"\n  ],\n  \"byteSearchComparisonsInherited\": 5451,\n  \"patternFixtureCountInherited\": 30,\n  \"patternFixtureBytes\": 429606,\n  \"newProductionCodeExecutedByThisAddendum\": false,\n  \"staticFixesVerified\": {\n    \"generatedSourceManifestExcludedFromCache\": true,\n    \"cacheEligiblePayloads\": 656,\n    \"sixMetadataPinsCurrentlyMatch\": true,\n    \"uniqueHistoricalSeedMemberPins\": 200,\n    \"allSeedMembersRecheckedDuringExistingExtraction\": true,\n    \"completeSeenSetRequired\": true,\n    \"loaderAstExactAfterRemovingOnlyVerifySeedCall\": true\n  },\n  \"memoryAndCoverage\": {\n    \"bufferBytes\": 65536,\n    \"addressSpaceLimitBytes\": 268435456,\n    \"exactSearchEveryNewArchiveMemberIncludingCachedSourceAndMetadata\": true,\n    \"fullPatternScanForChangedNewMembersAndGeneratedMetadata\": true,\n    \"cacheRequiresExactContentAndFourRuleHashes\": true,\n    \"knownValueCountsAreNotUsedAsOnlySeedProvenance\": true,\n    \"privacyRawValuesOrTokenDigestsPersisted\": false\n  },\n  \"remainingConditions\": [\n    \"Root reviewer must approve capture/package/supervisor and frozen command/metadata pins.\",\n    \"Real execution must verify all current hashes and seed member identities; each archive requires terminal exit 0 and complete clean report.\",\n    \"A memory limit or any other error blocks completion and upload; never skip a member or increase the cap automatically.\",\n    \"Unchanged source pattern decisions are cached prior exact verdicts, not a claim of fresh whole-pattern scanning.\",\n    \"The 256 MiB limit is per child; root explicitly accepted unknown preexisting validation-process concurrency.\"\n  ],\n  \"noPayloadsRead\": true,\n  \"noApplicationTestsRun\": true,\n  \"noCompressionRestoreUploadDeletion\": true\n}\n"
+    },
+    {
+      "filename": "INDEPENDENT-STREAM-PRIVACY-FIXTURES-v1.json",
+      "bytes": 3153,
+      "sha256": "ac07dbcc07779ce995300c5515558130649247e154c152aa13408d3fa7e84e74",
+      "text": "{\n  \"result\": \"PASS_SYNTHETIC_EQUIVALENCE_ONLY\",\n  \"startedAt\": \"2026-10-14T23:29:58.393244+00:00\",\n  \"syntheticOnly\": true,\n  \"realPayloadsRead\": false,\n  \"bufferBytes\": 65536,\n  \"coverage\": {\n    \"exhaustiveSmallBinaryFixedChunks\": 4599,\n    \"allSingleSplitPositions\": 545,\n    \"real64KiBBoundariesAndLongNeedles\": 305,\n    \"allByteValues\": 1\n  },\n  \"byteSearchComparisons\": 5451,\n  \"nonOverlapSemantics\": \"Exact set of [start,end) pairs from original per-needle .find, advancing by len(needle), including overlaps between distinct needles and duplicate-input deduplication\",\n  \"patternFixtureCount\": 30,\n  \"patternFixtureBytes\": 429606,\n  \"fixtureNames\": [\n    \"empty\",\n    \"plain\",\n    \"json-header\",\n    \"raw-header\",\n    \"har\",\n    \"header-list\",\n    \"nested-json\",\n    \"nested-raw\",\n    \"generic\",\n    \"placeholder\",\n    \"invalid-utf8\",\n    \"null-binary\",\n    \"utf16\",\n    \"meta\",\n    \"input\",\n    \"property\",\n    \"html-entities\",\n    \"escaped\",\n    \"fully-escaped-field\",\n    \"benign-runtime\",\n    \"benign-escaped\",\n    \"known-encodings\",\n    \"all-bytes\",\n    \"deep-json-1\",\n    \"deep-json-3\",\n    \"deep-json-12\",\n    \"deep-json-14\",\n    \"unicode-or-block-32\",\n    \"unicode-or-block-64\",\n    \"unicode-or-block-262140\"\n  ],\n  \"primaryCandidateCount\": 10,\n  \"runtimeCandidateCount\": 11,\n  \"benignRuntimeCandidateCount\": 2,\n  \"exactMatchCount\": 31,\n  \"oldWholeScannerReport\": {\n    \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-registered-provisional-20261014T2325/SYNTHETIC-ORIGINAL-SCANNER-REPORT-v1.json\",\n    \"bytes\": 15703,\n    \"sha256\": \"67f985c1688bd777e7eb250574c06ba040879b1713e61f9f48a93dd4ee7bcbb1\"\n  },\n  \"testedScript\": {\n    \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-registered-provisional-20261014T2325/stream_privacy_v2.py\",\n    \"bytes\": 7849,\n    \"sha256\": \"aa8f21acfbda995a6d8c775c607b3ec029daff4fb46c0642ccbc832e86a522c4\"\n  },\n  \"referenceScript\": {\n    \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/privacy-audit-20261014T0355/final_residual_scan.py\",\n    \"bytes\": 8854,\n    \"sha256\": \"e9ab9a21df213c71e4a72e77cb5d4ce596eb8a6a7dc3c12b90f156b741e3a03a\"\n  },\n  \"requiredProductionFixes\": [\n    \"Exclude generated roadmark/SOURCE-FILE-MANIFEST.json from source pattern-cache eligibility; currently v2 returns all 657 source rows instead of the provenance-approved 656 payload rows.\"\n  ],\n  \"scopeLimitations\": [\n    \"No actual source, archived recovery payload, raw capture or known secret value read\",\n    \"Production seed loader and real capture not executed\",\n    \"No compression, restoration, upload or deletion\",\n    \"Synthetic equivalence does not establish universal secret absence\",\n    \"New source/capture/package/supervisor static review remains separate\"\n  ],\n  \"completedAt\": \"2026-10-14T23:29:59.302062+00:00\",\n  \"reviewScript\": {\n    \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-registered-provisional-20261014T2325/review_stream_privacy_fixtures_v1.py\",\n    \"bytes\": 8972,\n    \"sha256\": \"646e4a0eea897087e84b7aac95b711c47635d781f9d41d16adfa6c212442eaa4\"\n  }\n}\n"
+    },
+    {
+      "filename": "SEED-PROVENANCE.json",
+      "bytes": 56058,
+      "sha256": "a46652dae5a4d8b21cc49009e56b7ed5b0c0c92f1d3f8a1fc87186590e4e73dc",
+      "text": "{\n  \"metadataPins\": [\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/privacy-audit-20261014T0355/inventory.json\",\n      \"bytes\": 17653,\n      \"sha256\": \"afccfbf3b520321dfdc66e18767ec6d9c826babfc89b81e0079d01944656da1e\"\n    },\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/privacy-audit-20261014T0355/scan-report.json\",\n      \"bytes\": 1556678,\n      \"sha256\": \"49cbf9969aec80776ad006c533de9b01d730fe721c24498fc4d389c056947b22\"\n    },\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/privacy-audit-20261014T0355/confirmed-extra-redactions.json\",\n      \"bytes\": 44958,\n      \"sha256\": \"5161378179993d4a277ea970058300d273e07ce7cbc38bdc06c83682cb604d60\"\n    },\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/privacy-audit-20261014T0355/runtime-token-report.json\",\n      \"bytes\": 398031,\n      \"sha256\": \"62b4ef652a8731381e72dc9350c3c860121db42280ed1dbece1ad391265b05c0\"\n    },\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/privacy-audit-20261014T0355/MERCEDES-RESEARCH-SAFETY-PRELIMINARY-TREE-REPORT.json\",\n      \"bytes\": 20950,\n      \"sha256\": \"295a4507148d65dbedace62ddffe4336f46bc41f3d626f58f47106ecc919eade\"\n    },\n    {\n      \"path\": \"/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-research-safety-20261014T2145/RUNTIME-SANITATION-REPORT.json\",\n      \"bytes\": 51410,\n      \"sha256\": \"d2783deea56dc69a68e33166c97a235942333fd7afad2c228223bc1e591a7971\"\n    }\n  ],\n  \"historicalSeedMembers\": [\n    {\n      \"archive\": \"Roadmark-recovery-tesla-20261014T024007Z-part01of03.tar.xz\",\n      \"member\": \"tesla-research/model-y/carexpert-model-y-l-launch.html\",\n      \"bytes\": 468503,\n      \"sha256\": \"7a5b94f6baded1088f72d65eeb299f8921b85f45e9c2f2a972237fd2858599d7\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-tesla-20261014T024007Z-part01of03.tar.xz\",\n      \"member\": \"tesla-research/model-y/carexpert-model-y-l.html\",\n      \"bytes\": 505449,\n      \"sha256\": \"7b3e4d630e77500712aecdce29df7f65b7b068ddb6a0e11bd8dd602d117f1f0e\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-tesla-20261014T024007Z-part01of03.tar.xz\",\n      \"member\": \"tesla-research/model-y/carexpert-model-y-my27.html\",\n      \"bytes\": 439752,\n      \"sha256\": \"6c1507e5aebfdd8c9c5e80314a9060b9ace200ee88bd7bf1bcc8effbf2275430\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-tesla-20261014T024007Z-part01of03.tar.xz\",\n      \"member\": \"tesla-research/model-y/carexpert-model-y.html\",\n      \"bytes\": 493671,\n      \"sha256\": \"60f550974aead9ea68d23011266ce49a1eb0ed76f22c2dd8da2e279fe6602b15\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-tesla-20261014T024007Z-part01of03.tar.xz\",\n      \"member\": \"tesla-research/model-y/manual-dimensions.html\",\n      \"bytes\": 86020,\n      \"sha256\": \"9af37ffe8e42197a763998bdda2a0abc6efe5b32d302282c81424e6d61af26f2\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-tesla-20261014T024007Z-part01of03.tar.xz\",\n      \"member\": \"tesla-research/model-y/manual-subsystems.html\",\n      \"bytes\": 59825,\n      \"sha256\": \"5d28d7ac38bf830559b05c3c807fb2a09b11d6c6e5e235daf259b71611d04456\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-tesla-20261014T024007Z-part01of03.tar.xz\",\n      \"member\": \"tesla-research/model-y/manual-towing.html\",\n      \"bytes\": 95854,\n      \"sha256\": \"21dbdea3aa1355353767e9a0f5d4d81dff254b494a9725a30ebbefaeb845b2db\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-tesla-20261014T024007Z-part01of03.tar.xz\",\n      \"member\": \"tesla-research/model3/carexpert-lr.html\",\n      \"bytes\": 987630,\n      \"sha256\": \"10ff7ba0eabcdd755ebe921de83aa7840ac1d77be9b16f2ddc38b14d5b5b5125\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-tesla-20261014T024007Z-part01of03.tar.xz\",\n      \"member\": \"tesla-research/model3/carexpert-my27.html\",\n      \"bytes\": 450736,\n      \"sha256\": \"a6bebb1c009b2d4cc24999a95c0901dc6df9b6db94d89acc0b47e81ba37d8255\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-tesla-20261014T024007Z-part01of03.tar.xz\",\n      \"member\": \"tesla-research/model3/carexpert-premium.html\",\n      \"bytes\": 974340,\n      \"sha256\": \"a2926c5663c677524b33f7b58c81bb45117beaaaf4890cccd472dd150b7dcf0b\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-tesla-20261014T024007Z-part02of03.tar.xz\",\n      \"member\": \"tesla-research/model3/redbook-rwd.html\",\n      \"bytes\": 773,\n      \"sha256\": \"31c97b6c6c744cbd2cbd800b0a3599ec3c76861c3cbb5501a601f07a954133c2\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-tesla-20261014T024007Z-part03of03.tar.xz\",\n      \"member\": \"tesla-research/terms/carexpert-range.html\",\n      \"bytes\": 623448,\n      \"sha256\": \"05abb2cec3ae409ece8ff0d52f2cbb6dc403466d089d0b6ee746098fe9765704\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-tesla-20261014T024007Z-part03of03.tar.xz\",\n      \"member\": \"tesla-research/terms/carexpert-roadster.html\",\n      \"bytes\": 433690,\n      \"sha256\": \"b1239c91e47355c07cc51650d44152e648bf5869ca607d5a0bd56faec4d26e9d\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-geely-20261014T024007Z-part01of02.tar.xz\",\n      \"member\": \"geely-research/riddara/drivingenthusiast-rd6-exclusion.html\",\n      \"bytes\": 112927,\n      \"sha256\": \"6a7c8ca7f809e40203e5345abd4f2b9fe3d1c0a26c9d4e470f54a844f59b7d9d\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-zeekr-20261014T024212Z-part01of03.tar.xz\",\n      \"member\": \"zeekr-research/009/carexpert-awd6-spec.html\",\n      \"bytes\": 899842,\n      \"sha256\": \"25cd419b1a98cf2af3f24fec5139634be496bedf4a9b994aa870884791fa382b\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-zeekr-20261014T024212Z-part01of03.tar.xz\",\n      \"member\": \"zeekr-research/009/carexpert-awd7-spec.html\",\n      \"bytes\": 900698,\n      \"sha256\": \"d44ec8a255b0ae63af14cb9f4903890400aaccda9d4c596d5599844c6ff650cf\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-zeekr-20261014T024212Z-part01of03.tar.xz\",\n      \"member\": \"zeekr-research/009/carexpert-fwd-launch.html\",\n      \"bytes\": 439747,\n      \"sha256\": \"7399f4f3206e6c02708f127f46f86f062f097121bdc88d6d5c85c3723f75c062\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-zeekr-20261014T024212Z-part01of03.tar.xz\",\n      \"member\": \"zeekr-research/009/carexpert-fwd-spec.html\",\n      \"bytes\": 900049,\n      \"sha256\": \"055c7310f77a902e0512f3be1b531a21423b98ff739a7f9ff7706e7c9f408544\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-zeekr-20261014T024212Z-part01of03.tar.xz\",\n      \"member\": \"zeekr-research/009/carexpert-review-2026.html\",\n      \"bytes\": 962049,\n      \"sha256\": \"1d74c63a597e615f90e4f47f10a1aae693195d8ee279d1a40526f5d6ed9f7082\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-zeekr-20261014T024212Z-part01of03.tar.xz\",\n      \"member\": \"zeekr-research/009/choice-6-seat-2025.html\",\n      \"bytes\": 567792,\n      \"sha256\": \"611c8aaf993f7452bc84e2a0c6af09f1b63a67c960ce83663d1695e8e82141c5\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-zeekr-20261014T024212Z-part01of03.tar.xz\",\n      \"member\": \"zeekr-research/7x/black-carexpert.html\",\n      \"bytes\": 448227,\n      \"sha256\": \"6635e4d56509c9289e3cb3acf487c7edab9e4f6e4573a576dba3dff031adb57c\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-zeekr-20261014T024212Z-part01of03.tar.xz\",\n      \"member\": \"zeekr-research/7x/black-maker-linkedin.html\",\n      \"bytes\": 95085,\n      \"sha256\": \"d72b262ad3955862de844beb65a0bdfdefada7d9f6eef1a70beac49dfdb4aa28\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-zeekr-20261014T024212Z-part01of03.tar.xz\",\n      \"member\": \"zeekr-research/7x/black-mct-used.html\",\n      \"bytes\": 357288,\n      \"sha256\": \"6ca69048452b281f05ff24af316186775c07e5019b7c00169905c2ca595d8f6f\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-zeekr-20261014T024212Z-part01of03.tar.xz\",\n      \"member\": \"zeekr-research/7x/black-whichcar.html\",\n      \"bytes\": 152351,\n      \"sha256\": \"f933b262cab7026cba20be76e3590478bae7f03f0fbf287d5fa6c40f67337e25\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-zeekr-20261014T024212Z-part01of03.tar.xz\",\n      \"member\": \"zeekr-research/7x/carexpert-current.html\",\n      \"bytes\": 1025869,\n      \"sha256\": \"39efdffe9cc1fbcaac6713024b382f6ad5ca6546a877571f3ac380117bf5ab5b\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-zeekr-20261014T024212Z-part01of03.tar.xz\",\n      \"member\": \"zeekr-research/7x/carexpert-pricing.html\",\n      \"bytes\": 504792,\n      \"sha256\": \"f1634815d001441ec05bbabe42e01375f6235ecd4bd6e9b2df1bc110a948e1fa\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-zeekr-20261014T024212Z-part01of03.tar.xz\",\n      \"member\": \"zeekr-research/7x/dealer-essendon-black-performance.html\",\n      \"bytes\": 179323,\n      \"sha256\": \"cfac61e201043785252371e3603582beeec6e63314e3af9c2ba5e92b7c66b8ff\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-zeekr-20261014T024212Z-part01of03.tar.xz\",\n      \"member\": \"zeekr-research/7x/dealer-solitaire-news.html\",\n      \"bytes\": 145019,\n      \"sha256\": \"cb59db8ec2717a44747a154de1adb4cefe11d5bf3b2d0cc9d94ee9e05a2478fc\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-zeekr-20261014T024212Z-part01of03.tar.xz\",\n      \"member\": \"zeekr-research/7x/maker-pricing-prnewswire.html\",\n      \"bytes\": 185096,\n      \"sha256\": \"4f349c88e8d4569fb87fe7f31d5860afe20557a8615b5ea37543e0595ecbc306\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-zeekr-20261014T024212Z-part02of03.tar.xz\",\n      \"member\": \"zeekr-research/7x/whichcar-20260507.html\",\n      \"bytes\": 150889,\n      \"sha256\": \"3a9722c8141ee03e06d9fe4fd579b7795b078c0567995bc8c0972be4718c7c5b\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-zeekr-20261014T024212Z-part03of03.tar.xz\",\n      \"member\": \"zeekr-research/x/outgoing-essendon-awd.html\",\n      \"bytes\": 172119,\n      \"sha256\": \"dcb8ded2b3b71dc9096b4eba8195d2f8178af8f2a56fb121a9dd9d6d60357e30\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-zeekr-20261014T024212Z-part03of03.tar.xz\",\n      \"member\": \"zeekr-research/x/outgoing-essendon-rwd.html\",\n      \"bytes\": 165290,\n      \"sha256\": \"63920ec409336da002df6aa5b9cd2200e063fe21839c5ce7c27f883c14178671\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-zeekr-20261014T024212Z-part03of03.tar.xz\",\n      \"member\": \"zeekr-research/x/outgoing-perth-awd.html\",\n      \"bytes\": 187254,\n      \"sha256\": \"889b74fc73dd8f3779f0c32983507da8d7b47bde00b7fe76e15e6276fbe165fd\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-zeekr-20261014T024212Z-part03of03.tar.xz\",\n      \"member\": \"zeekr-research/x/perth-new-list.html\",\n      \"bytes\": 85830,\n      \"sha256\": \"8a0b56acfc7e2edb60de233d098caa9a10ced24975fbdaa4fb6531cffd1ab63f\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-zeekr-20261014T024212Z-part03of03.tar.xz\",\n      \"member\": \"zeekr-research/x/perth-old-model.html\",\n      \"bytes\": 64644,\n      \"sha256\": \"8f13a9a426dd550e8181f1e869e31f87faaf651f23f31b40a1836d28a8760619\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-omoda-jaecoo-20261014T024008Z-part01of01.tar.xz\",\n      \"member\": \"omoda-jaecoo-research/reconciliation/sources/carexpert-brand-list.html\",\n      \"bytes\": 546501,\n      \"sha256\": \"fbcf85450f7c497e6449c8a8f8f21fbb56e9748c36d120342341c6b30555ba78\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-omoda-jaecoo-20261014T024008Z-part01of01.tar.xz\",\n      \"member\": \"omoda-jaecoo-research/reconciliation/sources/carexpert-future-omoda4-7.html\",\n      \"bytes\": 463071,\n      \"sha256\": \"4b1f23fdd9b2b2f26739233479290f8f99f4253670951c692ebd882dcd30c9da\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-omoda-jaecoo-20261014T024008Z-part01of01.tar.xz\",\n      \"member\": \"omoda-jaecoo-research/reconciliation/sources/carexpert-j5.html\",\n      \"bytes\": 1009994,\n      \"sha256\": \"ced889c71b6b55f89bd4e406651b54a69af9e4b6ae746810d4e6fe7a67b9192e\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-omoda-jaecoo-20261014T024008Z-part01of01.tar.xz\",\n      \"member\": \"omoda-jaecoo-research/reconciliation/sources/carexpert-j6-not-slated.html\",\n      \"bytes\": 493682,\n      \"sha256\": \"f701bb70e81eebba995954a8c6c3ac3a0234b348c9fc7a22fa6dc073c0460ff8\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-omoda-jaecoo-20261014T024008Z-part01of01.tar.xz\",\n      \"member\": \"omoda-jaecoo-research/reconciliation/sources/carlyst-j6-false-positive.html\",\n      \"bytes\": 111470,\n      \"sha256\": \"550beb51ec17d6404f3c87bed7b3aec6140fba5b6c7bfbce3928e579291246b9\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-omoda-jaecoo-20261014T024008Z-part01of01.tar.xz\",\n      \"member\": \"omoda-jaecoo-research/reconciliation/sources/chery-current-e5-identity.html\",\n      \"bytes\": 170537,\n      \"sha256\": \"3f55b1f0e30d4163578a6cba98cd236fcd404677eee1c89741e521703bab0ba8\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-omoda-jaecoo-20261014T024008Z-part01of01.tar.xz\",\n      \"member\": \"omoda-jaecoo-research/reconciliation/sources/official-future-omoda4-7.html\",\n      \"bytes\": 213577,\n      \"sha256\": \"2723724e677ef95995e8acfadf6c64410e60de28def4baeb7f542bae2dea9a18\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-omoda-jaecoo-20261014T024008Z-part01of01.tar.xz\",\n      \"member\": \"omoda-jaecoo-research/reconciliation/sources/official-uk-omoda-e5.html\",\n      \"bytes\": 174197,\n      \"sha256\": \"6a1e1c72c4b81e569deadd7631901cd194a46456fd45619c5d75ad24d7f01ffc\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part01of03.tar.xz\",\n      \"member\": \"kia-research/ev3-ev4/ccnc/kia_connect.html\",\n      \"bytes\": 134039,\n      \"sha256\": \"03095d7761ab48767c3bb886cbb9887dbd16d969ae693588e6ba12de2fbee1cf\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part01of03.tar.xz\",\n      \"member\": \"kia-research/ev3-ev4/sources/awd_kia_offers.html\",\n      \"bytes\": 177533,\n      \"sha256\": \"3cc457ecaa747ce7f97a426bae247152b24760c91c134ec130548aa2637f1c79\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part01of03.tar.xz\",\n      \"member\": \"kia-research/ev3-ev4/sources/awd_kia_ota_index.html\",\n      \"bytes\": 84397,\n      \"sha256\": \"5f8815d40b9045233c2b6fe76bc5cac22a32a41a6f4502e23f191000f96ef73b\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part01of03.tar.xz\",\n      \"member\": \"kia-research/ev3-ev4/sources/awd_kia_service.html\",\n      \"bytes\": 57864,\n      \"sha256\": \"7937f6248498bff0ebbc33a99a6c8ccbc8bd1dcf7d59d27b4866bf90e9526b4a\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part01of03.tar.xz\",\n      \"member\": \"kia-research/ev3-ev4/sources/ev3-accessories.html\",\n      \"bytes\": 164553,\n      \"sha256\": \"69404b8195547775f8238ccd05e0f22d352995a7f39eac63830f32aff1eed9f7\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part01of03.tar.xz\",\n      \"member\": \"kia-research/ev3-ev4/sources/ev3-awd-color-nsw.html\",\n      \"bytes\": 139862,\n      \"sha256\": \"8ef37d875e5c8fe16eb600fd3e21648715afdcf1206ce56d2552bb49dfcbacf8\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part01of03.tar.xz\",\n      \"member\": \"kia-research/ev3-ev4/sources/ev3-ce-2027-dimensions.html\",\n      \"bytes\": 427778,\n      \"sha256\": \"4b43b9733c460885b806d8e1e13e7f7ea437cea50e7a8271f405c9f95ae1a892\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part01of03.tar.xz\",\n      \"member\": \"kia-research/ev3-ev4/sources/ev3-ce-awd.html\",\n      \"bytes\": 456584,\n      \"sha256\": \"7ff221dbdb57e1e14664f94a1abb2e21c0febf53faf18067e78d9887fed520db\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part01of03.tar.xz\",\n      \"member\": \"kia-research/ev3-ev4/sources/ev3-ce-review.html\",\n      \"bytes\": 1075532,\n      \"sha256\": \"e01932b689d8d2482f926eb2b840bf9d0be64e979735d8ca1d8ded96fa4bbd57\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part01of03.tar.xz\",\n      \"member\": \"kia-research/ev3-ev4/sources/ev3-config-nsw.html\",\n      \"bytes\": 137459,\n      \"sha256\": \"cd40ce1bbcd19d19860a2dbf04f6fe1f31972be6e01d7adbd8db9f25b1fd0845\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part01of03.tar.xz\",\n      \"member\": \"kia-research/ev3-ev4/sources/ev3-config.html\",\n      \"bytes\": 138203,\n      \"sha256\": \"8904094e8226e849fbfe6f00cdfc95158b4e2afa23cac24f97a3eae7d2e21b0a\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part01of03.tar.xz\",\n      \"member\": \"kia-research/ev3-ev4/sources/ev3-features.html\",\n      \"bytes\": 330505,\n      \"sha256\": \"2ebd9f563566a2fa5b345b8a2e0b9606617785b708daedbeed049f200fbb9a94\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part01of03.tar.xz\",\n      \"member\": \"kia-research/ev3-ev4/sources/ev3-offers.html\",\n      \"bytes\": 124315,\n      \"sha256\": \"ebf9a695896dc5ad31582fafc995227e982e20455005434c25d9b010427e7227\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part01of03.tar.xz\",\n      \"member\": \"kia-research/ev3-ev4/sources/ev4-accessories.html\",\n      \"bytes\": 161323,\n      \"sha256\": \"1de37c4c787b40c325a1ee7afa2379ffb4c7e92e33ba425c3d3c590e5cc96453\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part01of03.tar.xz\",\n      \"member\": \"kia-research/ev3-ev4/sources/ev4-ce-hatch.html\",\n      \"bytes\": 427828,\n      \"sha256\": \"3a617825f47f70025bffccc8e67c4f613cf6b2fa7f53203324bf00c749b48f1d\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part01of03.tar.xz\",\n      \"member\": \"kia-research/ev3-ev4/sources/ev4-ce-review.html\",\n      \"bytes\": 983495,\n      \"sha256\": \"eb2559a07fbb6d639ea11ccab15f5ef179cd86a97cbc32feddf4bfe99806c1e4\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part01of03.tar.xz\",\n      \"member\": \"kia-research/ev3-ev4/sources/ev4-config.html\",\n      \"bytes\": 135401,\n      \"sha256\": \"8d255c65fb430d5fb9fcf5b425cb349c1a1e51e93b433b3a4dd89395405d72ac\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part01of03.tar.xz\",\n      \"member\": \"kia-research/ev3-ev4/sources/ev4-features.html\",\n      \"bytes\": 313632,\n      \"sha256\": \"4ae957b29c94fff36fdb20f69fbbbf01714cae10c92cabb56dba059b54fd489c\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part01of03.tar.xz\",\n      \"member\": \"kia-research/ev3-ev4/sources/ev4-offers.html\",\n      \"bytes\": 118637,\n      \"sha256\": \"b4233745307be4cf763d85d64dbec2cbb99dadc564314c52afcf3a41f1963855\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part01of03.tar.xz\",\n      \"member\": \"kia-research/ev5-niro/sources/ev5-maker-configurator.html\",\n      \"bytes\": 138377,\n      \"sha256\": \"b179b8d6520bac1b60e1027fdc5ce1d0d3534c13c2334b7ed326fe571dc9cc33\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part02of03.tar.xz\",\n      \"member\": \"kia-research/ev5-niro/sources/ev5-maker-features.html\",\n      \"bytes\": 336394,\n      \"sha256\": \"1dc12920f181601936a04fdf02cbd553f2c944999a3287e7673393ee6d5d28b2\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part02of03.tar.xz\",\n      \"member\": \"kia-research/ev5-niro/sources/ev5-maker-offers.html\",\n      \"bytes\": 123093,\n      \"sha256\": \"134b3f8572d6a0c6340a4b56a889b3a3fa483f89f7666b75d2f3a3f97ccf6e34\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part02of03.tar.xz\",\n      \"member\": \"kia-research/ev5-niro/sources/maker-model-list.html\",\n      \"bytes\": 135093,\n      \"sha256\": \"7a89beab30221b7cbd295cfaee356a17d36d4f1d946a7677e29f5ed89b16dde8\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part02of03.tar.xz\",\n      \"member\": \"kia-research/ev5-niro/sources/niro-maker-configurator.html\",\n      \"bytes\": 134152,\n      \"sha256\": \"5b3a7f885c7dfab986087ad1c8d6409444a1dfcd7b29e17bc6de34ab02da5d05\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part02of03.tar.xz\",\n      \"member\": \"kia-research/ev6-ev9/residual-check/ev6-my26-offer-search.html\",\n      \"bytes\": 177533,\n      \"sha256\": \"3cc457ecaa747ce7f97a426bae247152b24760c91c134ec130548aa2637f1c79\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part02of03.tar.xz\",\n      \"member\": \"kia-research/ev6-ev9/residual-check/my26-rejected_stock_4.html\",\n      \"bytes\": 207812,\n      \"sha256\": \"8781f737a509058c363a7d7ce18c4a2aa4f914fe5b9cfacbf7ea632589412bc0\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part02of03.tar.xz\",\n      \"member\": \"kia-research/ev6-ev9/sources/ev6-config.html\",\n      \"bytes\": 135093,\n      \"sha256\": \"7a89beab30221b7cbd295cfaee356a17d36d4f1d946a7677e29f5ed89b16dde8\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part02of03.tar.xz\",\n      \"member\": \"kia-research/ev6-ev9/sources/ev6-features.html\",\n      \"bytes\": 319355,\n      \"sha256\": \"d471d52a738f1c1a40ee2ab04a0734461a05158ce732c4f1d4d00c2838a12925\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part02of03.tar.xz\",\n      \"member\": \"kia-research/ev6-ev9/sources/ev6_AIR_SR_colour.html\",\n      \"bytes\": 136881,\n      \"sha256\": \"01a63e7c89280790474f5fa85556aa2c1b0e77b5d66ec98363854473863a2c52\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part02of03.tar.xz\",\n      \"member\": \"kia-research/ev6-ev9/sources/ev6_GTL_AWD_colour.html\",\n      \"bytes\": 135792,\n      \"sha256\": \"401656d3f67eac13ce732786e985797ee68fadb2af603b72a8666fdf72a824b6\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part02of03.tar.xz\",\n      \"member\": \"kia-research/ev6-ev9/sources/ev6_GTL_RWD_colour.html\",\n      \"bytes\": 135792,\n      \"sha256\": \"5c01af021c63b8cdddbf426372f90ef93aca4d16de992e3eee2b513a35423694\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part02of03.tar.xz\",\n      \"member\": \"kia-research/ev6-ev9/sources/ev6_GT_AWD_colour.html\",\n      \"bytes\": 135750,\n      \"sha256\": \"7e6396660dc6022ffba82387c655758ec85328acfedc82548b131c5920899c20\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part02of03.tar.xz\",\n      \"member\": \"kia-research/ev6-ev9/sources/ev6_build.html\",\n      \"bytes\": 136843,\n      \"sha256\": \"d42bd1d886f31988c93259d4b972f1a8f362c297c1454403b164a932fb03d40f\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part02of03.tar.xz\",\n      \"member\": \"kia-research/ev6-ev9/sources/ev9-config.html\",\n      \"bytes\": 135093,\n      \"sha256\": \"7a89beab30221b7cbd295cfaee356a17d36d4f1d946a7677e29f5ed89b16dde8\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part02of03.tar.xz\",\n      \"member\": \"kia-research/ev6-ev9/sources/ev9-features.html\",\n      \"bytes\": 342605,\n      \"sha256\": \"140b1654891b3a40e4d613879a28c170219ee6e1de715677461fa9472a7baf29\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part02of03.tar.xz\",\n      \"member\": \"kia-research/ev6-ev9/sources/ev9_AIR_colour.html\",\n      \"bytes\": 138185,\n      \"sha256\": \"fc3336890024b46ec8c6e7780df9b76e0280ac2c7f5c7b18cd834d66e76a1458\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part02of03.tar.xz\",\n      \"member\": \"kia-research/ev6-ev9/sources/ev9_EARTH_colour.html\",\n      \"bytes\": 138249,\n      \"sha256\": \"3ed22e4844644df229dc75f46d4a0e85e97ae1153b425016cbb3212269a3b662\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part02of03.tar.xz\",\n      \"member\": \"kia-research/ev6-ev9/sources/ev9_GTLINE_colour.html\",\n      \"bytes\": 139703,\n      \"sha256\": \"d1c482fd8ae93bc2c407f2d8c690e6aeb6333e9bb63b59cdda0010bede4f3a21\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part02of03.tar.xz\",\n      \"member\": \"kia-research/ev6-ev9/sources/ev9_GT_colour.html\",\n      \"bytes\": 139570,\n      \"sha256\": \"7f1a41235828cca6505339b18447593a362c877fb560540d9e4cd7cd0e4c41a7\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part02of03.tar.xz\",\n      \"member\": \"kia-research/ev6-ev9/sources/ev9_build.html\",\n      \"bytes\": 136849,\n      \"sha256\": \"7e1a09991ffa0b624469c8db4bd7c11c9e5ee7a351dc5d7dff87f76632069454\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part03of03.tar.xz\",\n      \"member\": \"kia-research/sources/build-range.html\",\n      \"bytes\": 135093,\n      \"sha256\": \"7a89beab30221b7cbd295cfaee356a17d36d4f1d946a7677e29f5ed89b16dde8\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part03of03.tar.xz\",\n      \"member\": \"kia-research/sources/electric-range.html\",\n      \"bytes\": 153062,\n      \"sha256\": \"58df9b1a3c25ebea892e3540b186f58125d08ab8d864b488d4257058864560d9\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part03of03.tar.xz\",\n      \"member\": \"kia-research/sources/roadside.html\",\n      \"bytes\": 30426,\n      \"sha256\": \"268ec5ac98d26899d461ef8397723f5901052e3a55f8f8d5adfa7d769c49a063\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-kia-20261014T024212Z-part03of03.tar.xz\",\n      \"member\": \"kia-research/sources/warranty.html\",\n      \"bytes\": 52300,\n      \"sha256\": \"5456c48dad77664a64aceb0fd577b714578cad2cf25d2dbda0064f567c6e19ea\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part01of05.tar.xz\",\n      \"member\": \"mg-im-research/im/sources/im5-config.html\",\n      \"bytes\": 150177,\n      \"sha256\": \"948d3dbf85efb651c07b33d2713901044ac6a3e1bf8e9214c87e56d9bbc25e09\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part01of05.tar.xz\",\n      \"member\": \"mg-im-research/im/sources/im5-config.txt\",\n      \"bytes\": 12977,\n      \"sha256\": \"8103be8d35442f94347d24dd5e157a594b0174d7087a78009f1d63d299ff4ea1\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part01of05.tar.xz\",\n      \"member\": \"mg-im-research/im/sources/im5-model.html\",\n      \"bytes\": 380697,\n      \"sha256\": \"5e923d0e4eaec34667ef5965e3001cb4ed3324d0c6b59a6e1650547858035af0\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part01of05.tar.xz\",\n      \"member\": \"mg-im-research/im/sources/im6-config.html\",\n      \"bytes\": 157993,\n      \"sha256\": \"55d11c05ea63e46579a6536689bcf90e52989619c45500ddaa7273fc66b2cb83\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part01of05.tar.xz\",\n      \"member\": \"mg-im-research/im/sources/im6-config.txt\",\n      \"bytes\": 13024,\n      \"sha256\": \"8512a92685dd0c4c3b92ac824d0e04356eced45df13e1761f66d194bef10b376\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part01of05.tar.xz\",\n      \"member\": \"mg-im-research/im/sources/im6-model.html\",\n      \"bytes\": 380687,\n      \"sha256\": \"494e611481df2c0049a8d7818d7d134c2ab4f38f32071bc54c5cc1ddae40b1c1\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part01of05.tar.xz\",\n      \"member\": \"mg-im-research/im/sources/mg-home.html\",\n      \"bytes\": 363060,\n      \"sha256\": \"f4252d9365245f09042c81d31790c86a33376af256f375bc0e74df89c756af05\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part01of05.tar.xz\",\n      \"member\": \"mg-im-research/im/sources/mg-offers.html\",\n      \"bytes\": 364117,\n      \"sha256\": \"5461cacc142a817941419633d82d7ce4830bddefef75c3fe6d968121c6c458ca\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part02of05.tar.xz\",\n      \"member\": \"mg-im-research/mg4/sources/ce-current.html\",\n      \"bytes\": 531810,\n      \"sha256\": \"9dc3418412fb43a67167414edc2a88097a83727a49f6092a021371e3a48b0a8d\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part02of05.tar.xz\",\n      \"member\": \"mg-im-research/mg4/sources/ce-my23-64-latest-price.html\",\n      \"bytes\": 847719,\n      \"sha256\": \"950c652eb94a4c1b60563eb74f9a11c04b35261899bab9acc99b87b8f968b519\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part02of05.tar.xz\",\n      \"member\": \"mg-im-research/mg4/sources/ce-my23-64-price.html\",\n      \"bytes\": 847750,\n      \"sha256\": \"e2a19e65d619e4ef0690fc96292d3be831855a109f3d0e9fa1ce53d73db67441\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part02of05.tar.xz\",\n      \"member\": \"mg-im-research/mg4/sources/ce-my23-prices.html\",\n      \"bytes\": 317428,\n      \"sha256\": \"3804ae83de83eb4543fba5c44daf3df23956b5c965391d3ded3eb01fada05d65\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part02of05.tar.xz\",\n      \"member\": \"mg-im-research/mg4/sources/ce-my25-51-price.html\",\n      \"bytes\": 847041,\n      \"sha256\": \"20c20b51366ce50b2bad33cbfa3d6cb39cb25bcd218d060c8c4d58e0f7dfc50a\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part02of05.tar.xz\",\n      \"member\": \"mg-im-research/mg4/sources/ce-my25-historic-news.html\",\n      \"bytes\": 434854,\n      \"sha256\": \"dd2ab1697fb7381676e04f3712ae4761c1a44fc97033beaadb3ff86035089a11\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part02of05.tar.xz\",\n      \"member\": \"mg-im-research/mg4/sources/ce-my25-prices.html\",\n      \"bytes\": 300062,\n      \"sha256\": \"a182c422c361fb5ee5b42bd32ae81675dea0080adeb78809bad5b65e5d56aeb1\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part02of05.tar.xz\",\n      \"member\": \"mg-im-research/mg4/sources/ce-urban.html\",\n      \"bytes\": 493934,\n      \"sha256\": \"8cc7d17c4dbb994f3404eed9e8b4e39eb660f10b401e99ccab071eba3a5fe05c\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part02of05.tar.xz\",\n      \"member\": \"mg-im-research/mg4/sources/config.html\",\n      \"bytes\": 84654,\n      \"sha256\": \"70b0d04fb2fb71a656f763f85ce17211aa46a66741ae491967f129e0d9497638\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part02of05.tar.xz\",\n      \"member\": \"mg-im-research/mg4/sources/config.txt\",\n      \"bytes\": 9356,\n      \"sha256\": \"c6e3a9a0856b013df8453d19bb88228fee68a1ccf7d0860c9e66a5f669946e3c\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part02of05.tar.xz\",\n      \"member\": \"mg-im-research/mg4/sources/cs-new.html\",\n      \"bytes\": 775,\n      \"sha256\": \"4a8e0edfd69427f2cd4dedc5305f8848054d682b9d0c9c94af35e706b62f3da7\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part02of05.tar.xz\",\n      \"member\": \"mg-im-research/mg4/sources/maker-historic-offers.html\",\n      \"bytes\": 318042,\n      \"sha256\": \"c65cb5dc71a4dad3ae7b7f2423d4ccc8fb432d6e4aa67fe41f6a63bf29a411cb\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part02of05.tar.xz\",\n      \"member\": \"mg-im-research/mg4/sources/offers.html\",\n      \"bytes\": 364117,\n      \"sha256\": \"5461cacc142a817941419633d82d7ce4830bddefef75c3fe6d968121c6c458ca\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part02of05.tar.xz\",\n      \"member\": \"mg-im-research/mg4/sources/product.html\",\n      \"bytes\": 369148,\n      \"sha256\": \"6fd8c20b543ba189c9a7181ae1249621ecc2dbe19fe86baf2a67665e0ce77ff7\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part02of05.tar.xz\",\n      \"member\": \"mg-im-research/mg4/sources/range-config.html\",\n      \"bytes\": 363060,\n      \"sha256\": \"f4252d9365245f09042c81d31790c86a33376af256f375bc0e74df89c756af05\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part02of05.tar.xz\",\n      \"member\": \"mg-im-research/mg4/sources/urban-config.html\",\n      \"bytes\": 86502,\n      \"sha256\": \"cace959a14d1ada57a022b618c87736f1982a122b95e3b9ef1634e8b16219610\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part02of05.tar.xz\",\n      \"member\": \"mg-im-research/mg4/sources/urban-config.txt\",\n      \"bytes\": 10856,\n      \"sha256\": \"e1fb5d4d66a1efa73d99e7a2c2fd68f8d5a4df3a3552820fcd951cf18dd7b669\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part02of05.tar.xz\",\n      \"member\": \"mg-im-research/mg4/sources/urban-product.html\",\n      \"bytes\": 370326,\n      \"sha256\": \"f0c11207198cab56a0a936c25be3876fb2c029bf8e40387f67ec75ce939af539\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part02of05.tar.xz\",\n      \"member\": \"mg-im-research/mgs/sources/offers.html\",\n      \"bytes\": 364117,\n      \"sha256\": \"f5ba998b56887b5a1c8ba056352a0e263351e064b21924f53b8764e148077a88\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part03of05.tar.xz\",\n      \"member\": \"mg-im-research/mgs/sources/s5-ce-review.html\",\n      \"bytes\": 1035733,\n      \"sha256\": \"9556ebb3d0b3b0c55849be2b01dd5d953df885df7594d08ecc69f0490898001e\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part03of05.tar.xz\",\n      \"member\": \"mg-im-research/mgs/sources/s5-ce-update.html\",\n      \"bytes\": 443149,\n      \"sha256\": \"040094a5b2fa71308bc5a543cd9bbcfb87bcc67f09a9a35f560eb1719d83a34c\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part03of05.tar.xz\",\n      \"member\": \"mg-im-research/mgs/sources/s5-config.html\",\n      \"bytes\": 93370,\n      \"sha256\": \"676d6a243fc440670793fbcf1407ab61f1297902ce0578999bdffd7d0bc03c75\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part03of05.tar.xz\",\n      \"member\": \"mg-im-research/mgs/sources/s5-config.txt\",\n      \"bytes\": 11292,\n      \"sha256\": \"e46d2ac1ca6ff5b0d7901f31e58ab04ce1c974dfac7611e370dec546a932357e\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part03of05.tar.xz\",\n      \"member\": \"mg-im-research/mgs/sources/s5-inherited-excite62-xcite.html\",\n      \"bytes\": 76505,\n      \"sha256\": \"0362b11af0a8d03acc51126cddb9bd23de601bc26b7a82857f50d3813a2beb81\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part03of05.tar.xz\",\n      \"member\": \"mg-im-research/mgs/sources/s5-model.html\",\n      \"bytes\": 373193,\n      \"sha256\": \"3c02449fe4234c1c58c924c00b079862a36b26b6b7b63c45a5e2254c9204d133\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part03of05.tar.xz\",\n      \"member\": \"mg-im-research/mgs/sources/s6-ce-review.html\",\n      \"bytes\": 915740,\n      \"sha256\": \"f304271569421daa641d07298d773e07617e5fa8451d8559aaacb5f026b76d84\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part03of05.tar.xz\",\n      \"member\": \"mg-im-research/mgs/sources/s6-config.html\",\n      \"bytes\": 87446,\n      \"sha256\": \"c8dd83993b2991985f25071383fe20f6ec6ad88cedff9d04b76e59944043575e\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part03of05.tar.xz\",\n      \"member\": \"mg-im-research/mgs/sources/s6-config.txt\",\n      \"bytes\": 9725,\n      \"sha256\": \"8274f696939e2f16a5dcdf5cfb70196a245ef5e396b5a7a243fdc997dfe26178\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part03of05.tar.xz\",\n      \"member\": \"mg-im-research/mgs/sources/s6-drivingenthusiast.html\",\n      \"bytes\": 117384,\n      \"sha256\": \"1880df858e3393e3347d51f7862fa4a6519a1ce7b53f87fb30592fc140068ea9\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part03of05.tar.xz\",\n      \"member\": \"mg-im-research/mgs/sources/s6-model.html\",\n      \"bytes\": 372838,\n      \"sha256\": \"085742e18377ffcd5365cecaeebe6e8705ec5ff0835dc714efd8d1db0d1fd225\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part04of05.tar.xz\",\n      \"member\": \"mg-im-research/residuals/sources/archive-zs-maw.html\",\n      \"bytes\": 51415,\n      \"sha256\": \"05a633e81484af202676d9da51cb643b03812fcb30de5ec118b036dcda6c3c31\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part05of05.tar.xz\",\n      \"member\": \"mg-im-research/residuals/sources/mg-range.html\",\n      \"bytes\": 325022,\n      \"sha256\": \"4eb858e2e4f5c54523bcf9c5e519561733fd02e7a99e049e2b82e3a2b723e96d\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part05of05.tar.xz\",\n      \"member\": \"mg-im-research/residuals/sources/ringwood-new-demo.html\",\n      \"bytes\": 509016,\n      \"sha256\": \"6c98d0be8177301cd5e18d8f471218b68f883b4717a504da7f82e27c1578d31e\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part05of05.tar.xz\",\n      \"member\": \"mg-im-research/residuals/sources/ringwood-published-data.txt\",\n      \"bytes\": 223928,\n      \"sha256\": \"9c3302f1e08e0c69983473bed68c307bc3f3d263b8663719c07e65fbe92c2908\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part05of05.tar.xz\",\n      \"member\": \"mg-im-research/sources/all-vehicles.html\",\n      \"bytes\": 330676,\n      \"sha256\": \"1dc85088216d9cef20532219de684b0b76af7fbe625f189754152bdfd02578b1\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part05of05.tar.xz\",\n      \"member\": \"mg-im-research/sources/cyberster-config.html\",\n      \"bytes\": 80220,\n      \"sha256\": \"01bbb70d752c867996a3a84c577583c4d7cb6f824a5f3a0c779dfdd0f249a5a2\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part05of05.tar.xz\",\n      \"member\": \"mg-im-research/sources/cyberster-config.txt\",\n      \"bytes\": 9910,\n      \"sha256\": \"79bf249804a086de33fd23d2fc140f99c54658ece5108d9e3bd5bbf412c898da\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part05of05.tar.xz\",\n      \"member\": \"mg-im-research/sources/cyberster-page.html\",\n      \"bytes\": 358726,\n      \"sha256\": \"6879537222edb7d17edc781bdc6e765e1f2dd28bbf85284f9c629c0eae90bb75\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part05of05.tar.xz\",\n      \"member\": \"mg-im-research/sources/electric-range.html\",\n      \"bytes\": 325022,\n      \"sha256\": \"4eb858e2e4f5c54523bcf9c5e519561733fd02e7a99e049e2b82e3a2b723e96d\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part05of05.tar.xz\",\n      \"member\": \"mg-im-research/sources/im-specific-warranty.html\",\n      \"bytes\": 375035,\n      \"sha256\": \"c53a3302a61f5bc1d0d7efcf0f5c1223c3120deda96f3e01127bbb93715badd7\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part05of05.tar.xz\",\n      \"member\": \"mg-im-research/sources/im-warranty.html\",\n      \"bytes\": 303103,\n      \"sha256\": \"4c19cf4590502471e241af6ce9d948b9556ce30309cc3c4eb5c38933bdaec142\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part05of05.tar.xz\",\n      \"member\": \"mg-im-research/sources/mgu9ev-config.html\",\n      \"bytes\": 62388,\n      \"sha256\": \"763fe49ea62cde92929df478fe6128b7017b11b0e464b5618e9b2e0bbe8bf50b\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part05of05.tar.xz\",\n      \"member\": \"mg-im-research/sources/mgu9ev-config.txt\",\n      \"bytes\": 7218,\n      \"sha256\": \"4bdee6ed350009d20f337ab5822811e2f7fa97e5a2eb4469961aef1f860502d8\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part05of05.tar.xz\",\n      \"member\": \"mg-im-research/sources/mgu9ev-page.html\",\n      \"bytes\": 326311,\n      \"sha256\": \"91a6e2a3b1813464cbfbf056d29de8092de167a0b921af3f75a0a03145d7c90f\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part05of05.tar.xz\",\n      \"member\": \"mg-im-research/sources/offers.html\",\n      \"bytes\": 364117,\n      \"sha256\": \"5461cacc142a817941419633d82d7ce4830bddefef75c3fe6d968121c6c458ca\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part05of05.tar.xz\",\n      \"member\": \"mg-im-research/sources/roadside-current.html\",\n      \"bytes\": 330607,\n      \"sha256\": \"65b737a692a3cb7eff9785362bc5994ee13478d405318c5d42cfc9de25b5c949\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part05of05.tar.xz\",\n      \"member\": \"mg-im-research/sources/roadside.html\",\n      \"bytes\": 296228,\n      \"sha256\": \"4315803ce7e863d51b8163d99baa661aa3c231da82150cb3f3a1e3f60968e1fb\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-mg-im-20261014T024008Z-part05of05.tar.xz\",\n      \"member\": \"mg-im-research/sources/warranty.html\",\n      \"bytes\": 338944,\n      \"sha256\": \"07746fc2de57c30cdedc768c87f1b243e7a5beacf6389d4ba16e29c75483aace\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-qa-through-mg-im-20261014T024343Z-part09of09.tar.xz\",\n      \"member\": \"roadmark-104-qa/zeekr-perth-0247.html\",\n      \"bytes\": 187255,\n      \"sha256\": \"163185491252a2f0c378036c4c01db01c6fa69287ec24cd4fac8fafb1811bbb0\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part01of03.tar.xz\",\n      \"member\": \"hyundai-research/elexio-ioniq9/sources/elexio_brochure.headers\",\n      \"bytes\": 1137,\n      \"sha256\": \"bdffeb400e65a4e1d5142d61f3d3ec8ef067898d6c2ebdea40d47e3cfb0913f6\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part01of03.tar.xz\",\n      \"member\": \"hyundai-research/elexio-ioniq9/sources/elexio_carexpert.html\",\n      \"bytes\": 903573,\n      \"sha256\": \"b24945e0915574e40b05e3406bfae40d00b51afd0484e85b53afc3447fd6bac6\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part01of03.tar.xz\",\n      \"member\": \"hyundai-research/elexio-ioniq9/sources/elexio_carsales_review.headers\",\n      \"bytes\": 841,\n      \"sha256\": \"41503a5fd2da98d7ec9acc4d953459f01d49067e6b86ccf72ede45172f70871a\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part01of03.tar.xz\",\n      \"member\": \"hyundai-research/elexio-ioniq9/sources/elexio_configurator.headers\",\n      \"bytes\": 996,\n      \"sha256\": \"eb1ad5ed7a86c085ffd26454c5ae7ee392ad6d510caaeb622682538a38c177a6\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part01of03.tar.xz\",\n      \"member\": \"hyundai-research/elexio-ioniq9/sources/elexio_page.headers\",\n      \"bytes\": 937,\n      \"sha256\": \"fd4336b6ab4eb37a7edd7b59b12e0a999fceead4b40a0418c6ed6154b9d87903\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part01of03.tar.xz\",\n      \"member\": \"hyundai-research/elexio-ioniq9/sources/elexio_price_0.headers\",\n      \"bytes\": 982,\n      \"sha256\": \"8cbbb32dc9c5a4c6cfc1937c208fd8707ac43731b0c4311da0eb6de303e5b4b3\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part01of03.tar.xz\",\n      \"member\": \"hyundai-research/elexio-ioniq9/sources/elexio_price_1.headers\",\n      \"bytes\": 982,\n      \"sha256\": \"9600782105ab9955dfdb1ffe36e21861baa720efc415a155b7d4d166884d7786\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part01of03.tar.xz\",\n      \"member\": \"hyundai-research/elexio-ioniq9/sources/elexio_specs.headers\",\n      \"bytes\": 1162,\n      \"sha256\": \"2917317d78a0bdb6fdb2c889a1d32613586f6161570db19a7fff823745032eea\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part01of03.tar.xz\",\n      \"member\": \"hyundai-research/elexio-ioniq9/sources/ioniq9_carexpert.html\",\n      \"bytes\": 875747,\n      \"sha256\": \"b9d31f07624b9b1ef94aa2031f450ffcee86ed7a1f6cae48009c3e28d0499104\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part01of03.tar.xz\",\n      \"member\": \"hyundai-research/elexio-ioniq9/sources/ioniq9_carsales_25622863.headers\",\n      \"bytes\": 1230,\n      \"sha256\": \"05f99d33cd841a35bab31932dc7f258bcb4dd1b0920ab805457f4914e249e044\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part01of03.tar.xz\",\n      \"member\": \"hyundai-research/elexio-ioniq9/sources/ioniq9_carsales_25622863.html\",\n      \"bytes\": 775,\n      \"sha256\": \"435052ce6dfcd5ebc11fdc9cfdae681a1c264cb1a965dce38027e7a26ae6ccac\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part01of03.tar.xz\",\n      \"member\": \"hyundai-research/elexio-ioniq9/sources/ioniq9_carsales_26041433.headers\",\n      \"bytes\": 1230,\n      \"sha256\": \"41718c13fc7e8d55936f5c763c2c9e9e0621184a975942f33a0eb9573e3ccc66\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part01of03.tar.xz\",\n      \"member\": \"hyundai-research/elexio-ioniq9/sources/ioniq9_carsales_26041433.html\",\n      \"bytes\": 775,\n      \"sha256\": \"59ae1b63a75eb4ceee6721e25b7317bcf59d853f7c2b168b4a054c5c8c05beea\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part01of03.tar.xz\",\n      \"member\": \"hyundai-research/elexio-ioniq9/sources/ioniq9_configurator.headers\",\n      \"bytes\": 997,\n      \"sha256\": \"81139c0a5e3226c4a9bccffa47cfbab3e30e9df1c2ff9ef37a2f90306d5d8878\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part01of03.tar.xz\",\n      \"member\": \"hyundai-research/elexio-ioniq9/sources/ioniq9_page.headers\",\n      \"bytes\": 937,\n      \"sha256\": \"a1f3c7f0f5a8661e0568cf99c2dbd89d26cff2df7f38683c755fdf0c307fb72a\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part01of03.tar.xz\",\n      \"member\": \"hyundai-research/elexio-ioniq9/sources/ioniq9_price_0.headers\",\n      \"bytes\": 983,\n      \"sha256\": \"794baff2f734099ac75ed9ee2f71815715707c7692a9d347f4c3aff34e8b351a\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part01of03.tar.xz\",\n      \"member\": \"hyundai-research/elexio-ioniq9/sources/ioniq9_price_1.headers\",\n      \"bytes\": 983,\n      \"sha256\": \"2ba1c92af1968a1afa05b2421ee05cf1b612f293afc9b879fb2141edf6a317b9\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part01of03.tar.xz\",\n      \"member\": \"hyundai-research/elexio-ioniq9/sources/ioniq9_redbook_my27.headers\",\n      \"bytes\": 1230,\n      \"sha256\": \"d4e4eb2e307da74716cdcd705a5f5501fe00cbbed4322f3bb717c11be40faca5\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part01of03.tar.xz\",\n      \"member\": \"hyundai-research/elexio-ioniq9/sources/ioniq9_redbook_my27.html\",\n      \"bytes\": 773,\n      \"sha256\": \"f25d63604526f859340da07e914deb6cbb20dbdc1e6d9f58c4fada4602b707b3\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part01of03.tar.xz\",\n      \"member\": \"hyundai-research/elexio-ioniq9/sources/ioniq9_specs_my26.headers\",\n      \"bytes\": 1218,\n      \"sha256\": \"d258352ed60dae12e89714752e670ba6e8a44308a173d966ed675f56265deb8f\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part01of03.tar.xz\",\n      \"member\": \"hyundai-research/elexio-ioniq9/sources/ioniq9_specs_my27.headers\",\n      \"bytes\": 1172,\n      \"sha256\": \"bbd3b698188f158e894ab40db0be1869215d2b46b52f230c34006945f0355f11\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part01of03.tar.xz\",\n      \"member\": \"hyundai-research/inster-kona/sources/inster_2025_launch_ce.html\",\n      \"bytes\": 507123,\n      \"sha256\": \"5f50ec4c47046e5bb321b189e7479be710e86c17ffc21993cf70779eb25d918c\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part01of03.tar.xz\",\n      \"member\": \"hyundai-research/inster-kona/sources/inster_2027_news.html\",\n      \"bytes\": 442373,\n      \"sha256\": \"08bc5c77c1653603c9edf841b2e777bb158c3d004510e1467cd59a8fb67bb3e4\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part01of03.tar.xz\",\n      \"member\": \"hyundai-research/inster-kona/sources/inster_midland_index.html\",\n      \"bytes\": 2144905,\n      \"sha256\": \"b9b17a04f7987e6ea34498e1bc8b9ceacd3a335e622448cf246af76f26bae2b5\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part01of03.tar.xz\",\n      \"member\": \"hyundai-research/inster-kona/sources/inster_midland_new_620261783.html\",\n      \"bytes\": 236701,\n      \"sha256\": \"eaf32f97bae6791af6491d39754aed1d36df629aa0c9d7f636c59eda9efc69df\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part01of03.tar.xz\",\n      \"member\": \"hyundai-research/inster-kona/sources/inster_midland_new_620265048.html\",\n      \"bytes\": 153145,\n      \"sha256\": \"954f45a00425d45bfd62c6d5c19080eed24ccdb8e359a636576ea498b4687cce\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part01of03.tar.xz\",\n      \"member\": \"hyundai-research/inster-kona/sources/inster_page.html\",\n      \"bytes\": 192041,\n      \"sha256\": \"bc03ec4f51e9421f334b01a1023dd0cafa7315df2f0ee972b7b815e9efe62012\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part02of03.tar.xz\",\n      \"member\": \"hyundai-research/inster-kona/sources/kona_ce_2027.html\",\n      \"bytes\": 684585,\n      \"sha256\": \"e154429a6f11eb439b0f3317f2d53356f63bd0cff2986873e87a0db7c32fd524\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part02of03.tar.xz\",\n      \"member\": \"hyundai-research/inster-kona/sources/kona_offers.html\",\n      \"bytes\": 84361,\n      \"sha256\": \"8fcddfe002818108be2a385d0b7de3368a56fdcf312b2682ccadea121d5cd115\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part02of03.tar.xz\",\n      \"member\": \"hyundai-research/inster-kona/sources/kona_page.html\",\n      \"bytes\": 403148,\n      \"sha256\": \"9aa32db702c84dcf3066bfa77b7fa962d948bda96b753e80e1745922554f5b92\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part02of03.tar.xz\",\n      \"member\": \"hyundai-research/inster-kona/sources/kona_premium_new_alan.html\",\n      \"bytes\": 220210,\n      \"sha256\": \"cdc8aef0e6002934fcce0c892d1df716f4ea1f646d1388d87f3cfdbfc663854c\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part02of03.tar.xz\",\n      \"member\": \"hyundai-research/inster-kona/sources/kona_spec_html.html\",\n      \"bytes\": 79063,\n      \"sha256\": \"61dc295ee1c2b09af2239303225edddb749104e4c9cfc65a95f398c61ad18917\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part02of03.tar.xz\",\n      \"member\": \"hyundai-research/ioniq5-6/sources/ce-my26.html\",\n      \"bytes\": 497335,\n      \"sha256\": \"19e3cc07163a7e4dace16b8c7b13e93f1233b3d201bcef232b5e20f7356099e5\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part02of03.tar.xz\",\n      \"member\": \"hyundai-research/ioniq5-6/sources/i5-old-nline-page.html\",\n      \"bytes\": 357868,\n      \"sha256\": \"4a74ac774f2926c5c6f0c250f094324ebd58c2a278985a9dc8baa728c398786f\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part02of03.tar.xz\",\n      \"member\": \"hyundai-research/ioniq5-6/sources/i5-page.html\",\n      \"bytes\": 207009,\n      \"sha256\": \"13db0d075f5f269ff411ff1805522b9979c1ca91d4d2631a7e1826d1bdeaa582\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part02of03.tar.xz\",\n      \"member\": \"hyundai-research/ioniq5-6/sources/i5n-page.html\",\n      \"bytes\": 163387,\n      \"sha256\": \"cf8870d65d08c7b7ee22aa5d6572edae382fef7cb24f100388276c7ab767d527\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part02of03.tar.xz\",\n      \"member\": \"hyundai-research/ioniq5-6/sources/i6_page_redirect.html\",\n      \"bytes\": 158157,\n      \"sha256\": \"8daf0080ee26ec2fdcbdadde8d0add5f8df6b2e914b325ad723bfc9e9ed5d845\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part02of03.tar.xz\",\n      \"member\": \"hyundai-research/ioniq5-6/sources/i6n-page.html\",\n      \"bytes\": 187108,\n      \"sha256\": \"bd04545fe3a40e7dd7a967c2a2c06a5cb5e79febc87acaec64e2140bc17ffa2f\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part02of03.tar.xz\",\n      \"member\": \"hyundai-research/ioniq5-6/sources/n_price_secondary.html\",\n      \"bytes\": 502218,\n      \"sha256\": \"cbadd781a1e3c5b9a530037bac853bf44bd7c3a9e9e1d2c7d6b51bb830ff4a64\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part02of03.tar.xz\",\n      \"member\": \"hyundai-research/ioniq5-6/sources/old_i6_2023.html\",\n      \"bytes\": 137985,\n      \"sha256\": \"2251d4bd8721b5d54f675938c3f1dc6810123aad3cadb4cd8111fa303e6ad5d5\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part02of03.tar.xz\",\n      \"member\": \"hyundai-research/ioniq5-6/sources/old_i6_2024.html\",\n      \"bytes\": 87557,\n      \"sha256\": \"dbc91036ea1323e6f3649d5039a690d829cf0576563ca4efabb44382b71f6dec\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part02of03.tar.xz\",\n      \"member\": \"hyundai-research/ioniq5-6/sources/range.html\",\n      \"bytes\": 217161,\n      \"sha256\": \"ebd8b7463e867dab43b4ed776cd5d1ba98f1b09fcb9941f2a7c2c37bf57ab261\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part02of03.tar.xz\",\n      \"member\": \"hyundai-research/ioniq5-6/sources/used_i6.html\",\n      \"bytes\": 916316,\n      \"sha256\": \"24c4f30e14b8c8cf3359306ca8fe38c357340e3917cd9e188f840c761c5ae7cb\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part02of03.tar.xz\",\n      \"member\": \"hyundai-research/ioniq9-sixseat-lead/sources/ioniq9_carsales_25622863.headers\",\n      \"bytes\": 1230,\n      \"sha256\": \"05f99d33cd841a35bab31932dc7f258bcb4dd1b0920ab805457f4914e249e044\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part02of03.tar.xz\",\n      \"member\": \"hyundai-research/ioniq9-sixseat-lead/sources/ioniq9_carsales_25622863.html\",\n      \"bytes\": 775,\n      \"sha256\": \"435052ce6dfcd5ebc11fdc9cfdae681a1c264cb1a965dce38027e7a26ae6ccac\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part03of03.tar.xz\",\n      \"member\": \"hyundai-research/sources/all-models.html\",\n      \"bytes\": 217161,\n      \"sha256\": \"ebd8b7463e867dab43b4ed776cd5d1ba98f1b09fcb9941f2a7c2c37bf57ab261\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part03of03.tar.xz\",\n      \"member\": \"hyundai-research/sources/electric-range.html\",\n      \"bytes\": 158157,\n      \"sha256\": \"8daf0080ee26ec2fdcbdadde8d0add5f8df6b2e914b325ad723bfc9e9ed5d845\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part03of03.tar.xz\",\n      \"member\": \"hyundai-research/sources/n-track-warranty.html\",\n      \"bytes\": 110446,\n      \"sha256\": \"95bc74c31bac6c811b80a047e8c538638132c028e8300fd552c3f63484d9d65e\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part03of03.tar.xz\",\n      \"member\": \"hyundai-research/sources/offers-current.html\",\n      \"bytes\": 189445,\n      \"sha256\": \"72b1f50d0bcf7f9644be44f069dc832e57c81457a3b2594760bdcc9bf7be13d2\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part03of03.tar.xz\",\n      \"member\": \"hyundai-research/sources/roadside.html\",\n      \"bytes\": 102996,\n      \"sha256\": \"3d628e914c50f2f67ffec28cafd1ab986bf6bc5dd5745f5f8e37896c60221536\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part03of03.tar.xz\",\n      \"member\": \"hyundai-research/sources/staria-page.html\",\n      \"bytes\": 196804,\n      \"sha256\": \"672dbc898c4cfbb57d506a2159cbdc9c333aa8359d4b5e5b3ab8645a8ee319e8\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-provisional-20261014T031746Z-part03of03.tar.xz\",\n      \"member\": \"hyundai-research/sources/warranty.html\",\n      \"bytes\": 110483,\n      \"sha256\": \"a3aec99413116b8d7659b221853b0e6eac10e5c55a001e01e770cb501c165792\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-established-sanitized-delta-20261014T035107Z-part01of02.tar.xz\",\n      \"member\": \"hyundai-research/elexio-ioniq9/sources/ioniq9_carsales_25622863.headers\",\n      \"bytes\": 1075,\n      \"sha256\": \"0b4eb0fe964bb6a911255029dfd69c9c4dc883cc56bf6a09189285af94e9f105\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-established-sanitized-delta-20261014T035107Z-part01of02.tar.xz\",\n      \"member\": \"hyundai-research/elexio-ioniq9/sources/ioniq9_carsales_26041433.headers\",\n      \"bytes\": 1075,\n      \"sha256\": \"1b7f103818a6d46dfee4429158f86d1e15cf3778750cd1abe31a21c9d8f244ea\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-established-sanitized-delta-20261014T035107Z-part01of02.tar.xz\",\n      \"member\": \"hyundai-research/elexio-ioniq9/sources/ioniq9_redbook_my27.headers\",\n      \"bytes\": 1076,\n      \"sha256\": \"b6f455e798d364bf9f6e61b1a0ae36812cdfe4657305b2651260f688ecf4a66f\"\n    },\n    {\n      \"archive\": \"Roadmark-recovery-hyundai-established-sanitized-delta-20261014T035107Z-part01of02.tar.xz\",\n      \"member\": \"hyundai-research/ioniq9-sixseat-lead/sources/ioniq9_carsales_25622863.headers\",\n      \"bytes\": 1075,\n      \"sha256\": \"0b4eb0fe964bb6a911255029dfd69c9c4dc883cc56bf6a09189285af94e9f105\"\n    }\n  ],\n  \"selectedMemberCount\": 200,\n  \"scope\": \"Exact original member bytes pinned by the original archived scan; no token values or token hashes persisted. Current extraction rechecks these member hashes in the existing read pass.\"\n}\n"
+    },
+    {
+      "filename": "run_bounded_v2.py",
+      "bytes": 2252,
+      "sha256": "d7dd7c8a9b39c94e19a0de92fe06fdeaa7e33c1b93fc5b4317cfe0be1b5f78f8",
+      "text": "#!/usr/bin/env python3\n\"\"\"One measured child, fixed address-space ceiling, durable invocation/terminal receipts.\"\"\"\nimport os,sys,time,json,resource,signal,datetime,pathlib\nP=pathlib.Path\nLIMIT=256*1024*1024\n\ndef write_new(p,d):\n with p.open('x') as f: json.dump(d,f,indent=2);f.write('\\n');f.flush();os.fsync(f.fileno())\ndef main():\n receipt=P(sys.argv[1]);cmd=sys.argv[2:];assert cmd and not receipt.exists()\n invocation=receipt.with_name(receipt.stem+'.invocation.json');started=datetime.datetime.now(datetime.timezone.utc).isoformat();t=time.monotonic();readfd,writefd=os.pipe();pid=os.fork()\n if pid==0:\n  os.close(writefd);os.setsid();resource.setrlimit(resource.RLIMIT_AS,(LIMIT,LIMIT));os.environ.update(PYTHONDONTWRITEBYTECODE='1',OMP_NUM_THREADS='1',OPENBLAS_NUM_THREADS='1',MKL_NUM_THREADS='1');grant=os.read(readfd,1);os.close(readfd)\n  if grant!=b'1':os._exit(125)\n  os.execvp(cmd[0],cmd)\n os.close(readfd)\n try: write_new(invocation,{'startedAt':started,'command':cmd,'childPid':pid,'processGroup':pid,'addressSpaceLimitBytes':LIMIT,'wallLimitSeconds':600,'unknownPriorValidationProcessMayOverlap':True,'processSerializationEstablished':False})\n except BaseException:\n  os.kill(pid,signal.SIGKILL);os.close(writefd);os.waitpid(pid,0);raise\n os.write(writefd,b'1');os.close(writefd);timedout=False;term_at=None\n while True:\n  done,status,r=os.wait4(pid,os.WNOHANG)\n  if done:break\n  elapsed=time.monotonic()-t\n  if elapsed>600 and term_at is None:\n   timedout=True;term_at=time.monotonic()\n   try:os.killpg(pid,signal.SIGTERM)\n   except ProcessLookupError:pass\n  if term_at is not None and time.monotonic()-term_at>5:\n   try:os.killpg(pid,signal.SIGKILL)\n   except ProcessLookupError:pass\n  time.sleep(.1)\n code=os.waitstatus_to_exitcode(status);write_new(receipt,{'startedAt':started,'endedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'command':cmd,'exitCode':code,'timedOut':timedout,'wallSeconds':round(time.monotonic()-t,3),'maxRssKiB':r.ru_maxrss,'addressSpaceLimitBytes':LIMIT,'wallLimitSeconds':600,'childPid':pid,'unknownPriorValidationProcessMayOverlap':True,'metricMethod':'POSIX wait4, Linux KiB','missingTerminalMeansOutcomeUnknown':True});sys.exit(code if code>=0 else 128-code)\nif __name__=='__main__':main()\n"
+    },
+    {
+      "filename": "stream_capture_v2.py",
+      "bytes": 6867,
+      "sha256": "8f09861414114c19e8be7490ac2366fad74758d4f01b68c11d38b64383395553",
+      "text": "#!/usr/bin/env python3\n\"\"\"Explicit selected proof/QA + full source, exact hash reuse, no full source clone.\"\"\"\nimport pathlib,json,hashlib,datetime,importlib.util,stat,sys,os\nsys.dont_write_bytecode=True\nP=pathlib.Path;C=P(__file__).resolve().parent;R=C.parents[1];W=R.parent;OLD=C.parent/'xpeng-registered-working-20261014T2030';BASE=C.parent/'mercedes-registered-provisional-20261014T2325';SANBASE=C.parent/'mercedes-research-safety-20261014T2145';CHUNK=65536\n\ndef load(p):return json.loads(P(p).read_text())\ndef dump(p,d):\n with P(p).open('x') as f:json.dump(d,f,indent=2);f.write('\\n')\ndef sha(b):return hashlib.sha256(b).hexdigest()\ndef identity(p):\n z=p.lstat();assert stat.S_ISREG(z.st_mode) and not any(q.is_symlink() for q in p.parents),str(p);return [z.st_size,z.st_mtime_ns,z.st_ctime_ns,z.st_ino,z.st_dev]\ndef pin(p):\n h=hashlib.sha256();n=0\n with P(p).open('rb') as f:\n  while b:=f.read(CHUNK):h.update(b);n+=len(b)\n return {'bytes':n,'sha256':h.hexdigest()}\ndef check(p,expected):\n a=identity(p);got=pin(p);assert identity(p)==a and got['bytes']==a[0],str(p)\n for k in ('bytes','sha256'):\n  if expected.get(k) is not None:assert got[k]==expected[k],str(p)+' '+k\n return got,a\ndef module(name,p):\n s=importlib.util.spec_from_file_location(name,p);m=importlib.util.module_from_spec(s);s.loader.exec_module(m);return m\nS=module('snapshot',R/'snapshot_recovery_v2.py')\ndef safe(n):\n p=P(n);assert n and not p.is_absolute() and '..' not in p.parts and str(p)==n and '\\\\' not in n;return n\ndef restpath(p):\n p=P(p)\n if p.is_relative_to('/tmp'):return safe(p.relative_to('/tmp').as_posix())\n if p.is_relative_to(W/'roadmark-104'):return 'roadmark/'+safe(p.relative_to(W/'roadmark-104').as_posix())\n if p.is_relative_to(W/'roadmark-104-qa'):return safe(p.relative_to(W).as_posix())\n if p==BASE/'FINAL-MERCEDES-REGISTERED-UPLOAD-RECEIPTS.json':return 'mercedes-correction-support/prior-final-registered-upload-receipt.json'\n raise ValueError('Unexpected selected root: '+str(p))\ndef capture(p,n,old,prior,out,expected):\n original,ident=check(p,expected)\n if old and original=={'bytes':old['originalBytes'],'sha256':old['originalSHA256']}:\n  check(prior,old);rec={k:v for k,v in old.items() if k not in ('path','sourceMtimeNs','sourceIdentity')};payload=prior;method='exact-original-and-prior-sanitized-hashes'\n else:\n  payload=out/n;payload.parent.mkdir(parents=True,exist_ok=True)\n  if p.suffix=='.json' or p.suffix.lower()=='.headers':\n   b=p.read_bytes();assert identity(p)==ident and len(b)==original['bytes'] and sha(b)==original['sha256'];red=[]\n   if p.suffix=='.json':\n    original_json=b;b,red=S.sanitize_json(b)\n    if red:\n     classes=load(C/'EXACT-BENIGN-JSON-SANITIZER-CLASSIFICATIONS.json')['files'];match=[e for e in classes if e['restorePath']==n and e['bytes']==original['bytes'] and e['sha256']==original['sha256'] and e['pointers']==red]\n     if match:\n      assert len(match)==1 and red==['/authorization'] and sha(json.loads(original_json)['authorization'].encode())==match[0]['valueSha256'];b=original_json;red=[]\n   else:b,red=S.sanitize_headers(b)\n   if red:raise RuntimeError('New sanitizer candidate requires review: '+n+' pointers='+str(red))\n   with payload.open('xb') as f:f.write(b)\n  else:\n   h=hashlib.sha256();size=0\n   with p.open('rb') as src,payload.open('xb') as dst:\n    while b:=src.read(CHUNK):dst.write(b);h.update(b);size+=len(b)\n   assert (size,h.hexdigest())==(original['bytes'],original['sha256'])\n  rec={**original,'originalBytes':original['bytes'],'originalSHA256':original['sha256']};method='unchanged-full-sanitizer'\n assert identity(p)==ident\n return {'path':n,**rec,'originalPath':str(p),'sourceIdentity':ident,'payloadPath':str(payload),'captureMethod':method}\ndef source():\n start=datetime.datetime.now(datetime.timezone.utc).isoformat();oldcap=load(BASE/'source-capture.json');old={r['path']:r for r in oldcap['files']};pack=module('packager',W/'roadmark-104/scripts/package-source.py');files=list(pack.source_files(W/'roadmark-104'));out=C/'selected-source-changes';out.mkdir(exist_ok=False);rows=[]\n for rel,p in files:\n  n=rel.as_posix();r=capture(p,n,old.get(n),P(old[n]['payloadPath']) if n in old else None,out,{});rows.append(r)\n assert [r.as_posix() for r,p in pack.source_files(W/'roadmark-104')]==[r['path'] for r in rows]\n for r in rows:assert identity(P(r['originalPath']))==r['sourceIdentity']\n dump(C/'source-capture.json',{'kind':'streaming-source','captureStartedAt':start,'captureCutoff':datetime.datetime.now(datetime.timezone.utc).isoformat(),'state':(C/'WORKING-STATE.txt').read_text(),'files':rows,'sourceChangesDuringCapture':[],'priorSourceManifest':str(BASE/'source-capture.json'),'fullSourceTreeCloned':False,'chunkBytes':CHUNK})\n print(json.dumps({'sourceFiles':len(rows),'reused':sum(r['captureMethod'].startswith('exact-') for r in rows),'changed':sum(not r['captureMethod'].startswith('exact-') for r in rows)}))\ndef proof():\n scope=load(C/'FROZEN-CAPTURE-SCOPE.json');origcap=load(BASE/'proof-capture.json');old={r['path']:r for r in origcap['files'] if 'originalSHA256' in r};basefiles={r['path']:r for r in load(BASE/'deliverables/Roadmark-RECOVERY-MANIFEST-MERCEDES-REGISTERED-PROVISIONAL-20261014.json')['files']};sources={r['path']:r for r in load(C/'source-capture.json')['files']};out=C/'selected-proof-changes';out.mkdir(exist_ok=False);rows=[];changed=[];seen=set();start=datetime.datetime.now(datetime.timezone.utc).isoformat()\n for f in scope['files']:\n  p=P(f['path']);n=restpath(p);assert n not in seen;seen.add(n);expected={'bytes':f['bytes'],'sha256':f.get('sha256') or f.get('knownSha256')};got,ident=check(p,expected)\n  if f.get('mtimeNsAtFreeze') is not None:assert ident[1]==f['mtimeNsAtFreeze'],n\n  if n.startswith('roadmark/'):\n   r=sources[n.removeprefix('roadmark/')];assert got=={'bytes':r['originalBytes'],'sha256':r['originalSHA256']};rows.append({**r,'path':n,'captureMethod':'covered-by-full-source'});continue\n  r=capture(p,n,old.get(n),P(old[n]['payloadPath']) if n in old else None,out,expected)\n  if n in basefiles and {'bytes':r['bytes'],'sha256':r['sha256']}=={k:basefiles[n][k] for k in ['bytes','sha256']}:r['archiveAction']='reuse-exact-base-member'\n  else:r['archiveAction']='new-delta-member';changed.append(r)\n  rows.append(r)\n for r in rows:assert identity(P(r['originalPath']))==r['sourceIdentity'],r['path']\n dump(C/'proof-capture.json',{'kind':'explicit-proof-qa-delta','captureStartedAt':start,'captureCutoff':datetime.datetime.now(datetime.timezone.utc).isoformat(),'state':(C/'WORKING-STATE.txt').read_text(),'files':rows,'changedFiles':changed,'sourceChangesDuringCapture':[],'scope':scope,'chunkBytes':CHUNK,'noBroadQaTraversal':True})\n print(json.dumps({'selectedFiles':len(rows),'newDeltaFiles':len(changed),'newBytes':sum(r['bytes'] for r in changed)}))\nif __name__=='__main__':{'source':source,'proof':proof}[sys.argv[1]]()\n"
+    },
+    {
+      "filename": "stream_package_metadata_v2.py",
+      "bytes": 3422,
+      "sha256": "e6dac2c32e9a7682461b9dd4fcfee76385796224d93b5985e2d6ee00fbe15ede",
+      "text": "#!/usr/bin/env python3\n\"\"\"Single-thread preset-6 XZ; file-object tar members and bounded verification.\"\"\"\nimport pathlib,json,hashlib,tarfile,lzma,io,sys,datetime\nfrom stream_capture_v2 import C,R,pin,load,dump,check,identity,CHUNK,safe\nLABEL='MERCEDES-CORRECTED-WORKING-20261015T0035-METADATA-R1'\ndef add_file(t,name,p,rec):\n safe(name);check(p,rec);before=identity(p);info=tarfile.TarInfo(name);info.size=rec['bytes'];info.mode=0o644;info.mtime=0\n with p.open('rb') as f:t.addfile(info,f)\n assert identity(p)==before\n # Exact hash after the read prevents a changed payload from being promoted.\n check(p,rec)\ndef add_bytes(t,name,b):\n info=tarfile.TarInfo(name);info.size=len(b);info.mode=0o644;info.mtime=0;t.addfile(info,io.BytesIO(b));return {'path':name,'bytes':len(b),'sha256':hashlib.sha256(b).hexdigest()}\ndef verify(path,want):\n seen=set()\n with lzma.open(path,'rb') as stream:\n  with tarfile.open(fileobj=stream,mode='r|') as t:\n   for m in t:\n    safe(m.name);assert m.isfile() and m.name not in seen and m.name in want;seen.add(m.name);h=hashlib.sha256();n=0\n    with t.extractfile(m) as f:\n     while b:=f.read(CHUNK):h.update(b);n+=len(b)\n    assert (n,h.hexdigest())==(want[m.name]['bytes'],want[m.name]['sha256']),m.name\n  while stream.read(CHUNK):pass\n assert seen==set(want)\n return {'file':str(path),'filename':path.name,**pin(path),'members':len(seen),'memberFiles':list(want.values()),'allMembersVerified':True}\ndef pack(path,rows,meta,source=False):\n assert not path.exists();want={}\n with tarfile.open(path,'w:xz',format=tarfile.PAX_FORMAT,preset=6) as t:\n  for r in rows:\n   n=('roadmark/' if source else '')+r['path'];add_file(t,n,pathlib.Path(r['payloadPath']),r);want[n]={'path':n,'bytes':r['bytes'],'sha256':r['sha256']}\n  for n,b in meta.items():want[n]=add_bytes(t,n,b)\n if source:assert path.stat().st_size<15000000,'source exceeds strict 15,000,000 bytes'\n a=verify(path,want);a.update(group='source-'+LABEL if source else LABEL,new=True);return a\ndef main():\n if sys.argv[1]=='source':\n  cap=load(C/'source-capture.json');manifest={'schemaVersion':1,'root':'roadmark','files':[{k:r[k] for k in ['path','bytes','sha256']} for r in cap['files']]};a=pack(R/f'Roadmark-recovery-source-{LABEL}.tar.xz',cap['files'],{'roadmark/SOURCE-FILE-MANIFEST.json':(json.dumps(manifest,indent=2)+'\\n').encode()},True);dump(C/'source-package.json',a)\n else:\n  cap=load(C/'proof-capture-v2.json');rows=cap['changedFiles'];groups=[];cur=[];size=0\n  for r in rows:\n   if cur and size+r['bytes']>24000000:groups.append(cur);cur=[];size=0\n   cur.append(r);size+=r['bytes']\n  if cur:groups.append(cur)\n  ars=[]\n  for i,g in enumerate(groups,1):\n   meta={'schemaVersion':1,'label':LABEL,'part':i,'parts':len(groups),'state':cap['state'],'files':[{k:r[k] for k in ['path','bytes','sha256','originalBytes','originalSHA256']} for r in g],'restore':'Overlay after the exact 103-archive prior registered Mercedes chain, replacing its source archive with this full corrected working source. Original raw-capture expected hashes and sanitation mapping remain unchanged.'};a=pack(R/f'Roadmark-recovery-{LABEL}-part{i:02d}of{len(groups):02d}.tar.xz',g,{f'recovery-metadata/{LABEL}-part{i:02d}.json':(json.dumps(meta,indent=2)+'\\n').encode()});ars.append(a);print(json.dumps({'part':i,'members':a['members'],'bytes':a['bytes']}),flush=True)\n  dump(C/'proof-packages-v2.json',{'archives':ars})\nif __name__=='__main__':main()\n"
+    },
+    {
+      "filename": "stream_privacy_v4.py",
+      "bytes": 8769,
+      "sha256": "f171fb5a298b9ccdfdca17cb2763e7aeccffe19d41b0aad4ad08164b1f95e2f5",
+      "text": "#!/usr/bin/env python3\n\"\"\"Exact whole-file pattern semantics for new members; proven content/rule cache for old source.\"\"\"\nimport sys,pathlib,json,hashlib,importlib.util,lzma,tarfile,re,datetime,inspect\nfrom stream_capture_v2 import C,R,BASE,OLD,SANBASE,load,dump,pin,check,safe,CHUNK\nA=R/'privacy-audit-20261014T0355';sys.path.insert(0,str(A))\nspec=importlib.util.spec_from_file_location('residual',A/'final_residual_scan_memory_bounded.py');scan=importlib.util.module_from_spec(spec);spec.loader.exec_module(scan)\nENGINE_PINS={'final_residual_scan_memory_bounded.py':'db71353ba5fe98021f68cd9aeaae6eb4e1878627fb4985278b11457baf837238','chunked_lower_find.py':'6de208f633b05ef1cb894ca8e896c4a489bb093eb1339134c4b1d7158263ec1f','audit_scan.py':'54ee0827089ad8202a24c6769a4178dee28fe96b85f1fd8a627a15703c15f3b2','runtime_token_scan.py':'4ea9c6be9b292bbe126fcc2f8d7b3254a1dc941c49d78b263c9203d0025f9c46'}\nclass ByteSearch:\n def __init__(self,values):\n  self.values=list(values);assert all(self.values);self.tail=b'';self.total=0;self.keep=max(map(len,self.values))-1;self.next=[0]*len(self.values);self.matches=set()\n def feed(self,b):\n  data=self.tail+b;base=self.total-len(self.tail)\n  for i,v in enumerate(self.values):\n   pos=max(0,self.next[i]-base)\n   while True:\n    q=data.find(v,pos)\n    if q<0:break\n    end=base+q+len(v)\n    if end>self.total:self.matches.add((base+q,end))\n    self.next[i]=end;pos=q+len(v)\n  self.total+=len(b);self.tail=data[-self.keep:] if self.keep else b''\ndef verified_seed_values():\n provenance=load(C/'SEED-PROVENANCE.json')\n for r in provenance['metadataPins']:check(pathlib.Path(r['path']),r)\n want={(r['archive'],r['member']):r for r in provenance['historicalSeedMembers']};seen=set()\n def verify_seed(a,m,b):\n  key=(a['filename'],m.name);assert key not in seen;seen.add(key);r=want[key];assert len(b)==r['bytes'] and hashlib.sha256(b).hexdigest()==r['sha256']\n code=inspect.getsource(scan.source_values);needle='b=t.extractfile(m).read();s=b.decode'\n assert code.count(needle)==1\n code=code.replace(needle,'b=t.extractfile(m).read();verify_seed(a,m,b);s=b.decode')\n scope=dict(scan.__dict__);scope['verify_seed']=verify_seed;exec(compile(code,str(A/'final_residual_scan_memory_bounded.py'),'exec'),scope)\n result=scope['source_values']();assert seen==set(want);return result\n\ndef current_variants():\n known,benign,seeds,errors=verified_seed_values();assert not errors;historical=scan.variants_for(known);assert len(known)==55 and len(historical)==373\n san=load(SANBASE/'RUNTIME-SANITATION-REPORT.json');sensitive={}\n for r in san['files']:\n  p=pathlib.Path('/tmp')/r['path'];check(p,{'bytes':r['originalBytes'],'sha256':r['originalSHA256']});sensitive[r['path']]=p.read_bytes()\n preliminary=load(A/'MERCEDES-RESEARCH-SAFETY-PRELIMINARY-TREE-REPORT.json');values=set()\n for f in preliminary['unclassifiedRuntimeCandidates']:\n  assert f['layer']=='plain' and f['field'] in {'nonce','_wpnonce','apiKey'};s=sensitive[f['member']].decode();v=s[f['valueCharStart']:f['valueCharEnd']];assert len(v)==f['valueLength'];values.add(v.encode())\n extra={'mercedes-research/people-movers/evito-redbook-2026.error.raw':{'cookie','cid','e'},'mercedes-research/people-movers/evans-2023-au-maker-brochure-mirror.error.raw':{'cN','cH','cRay','md','mdrd'}}\n for n,fields in extra.items():\n  s=sensitive[n].decode()\n  for field in fields:\n   ms=list(re.finditer(r'''[\"']?'''+re.escape(field)+r'''[\"']?\\s*:\\s*([\"'])(.*?)\\1''',s));assert ms\n   for m in ms:values.add(m[2].encode())\n  for m in re.finditer(r'''__cf_chl_(?:f_|rt_)?tk=([^&#\"'\\\\\\s<>]+)''',s):values.add(m[1].encode())\n forms=scan.variants_for({v:[] for v in values});assert len(values)==20 and len(forms)==128\n return set(historical)|set(forms),benign,{'historicalValues':55,'historicalForms':373,'mercedesValues':20,'mercedesForms':128,'originalSeedMembers':seeds}\ndef source_cache():\n for name,h in ENGINE_PINS.items():assert pin(A/name)['sha256']==h,name\n paths={'source-capture.json':'e19d8591f50488582baffc52257e48fac0c7e842a09c5061fff286c09ff6fef9','INDEPENDENT-STREAM-HASH-RECEIPT.json':'390be1d1f11df5315a6ff780c776bf8e5fba1d086b5c4de90198afa6d1e330a5','INDEPENDENT-XPENG-REGISTERED-VERIFICATION.json':'2281e2a468d0b1dbc336ebf3ef686116ab1111300f252e7ae5f27b6702ccb86a'}\n for n,h in paths.items():assert pin(OLD/n)['sha256']==h,n\n v=load(OLD/'INDEPENDENT-XPENG-REGISTERED-VERIFICATION.json');part=v['privacyVerification']['parts'][0];rp=A/'XPENG-REGISTERED-WORKING-NEW-ARCHIVE-PART01-RESIDUAL-REPORT.json';assert pin(rp)==part['report'];raw=load(rp);assert raw['status']=='clean' and raw['regularFilesScanned']==657 and raw['recognizedBenignRuntimeCandidateCount']==0\n assert not any(raw[k] for k in ['exactValueMatches','primaryHeaderCandidates','unclassifiedRuntimeCandidates','errors']);assert part['archiveSHA256']=='958ab268995fb3b59c64b1fd177e3faceec38ad74bb145b94f77004c4ec9aed5' and part['resources']['exitCode']==0 and '--no-patterns' not in part['resources']['command']\n rows={r['path']:r for r in load(OLD/'INDEPENDENT-STREAM-HASH-RECEIPT.json')['newFiles'] if r['path'].startswith('roadmark/')};assert len(rows)==657\n for r in load(OLD/'source-capture.json')['files']:assert rows['roadmark/'+r['path']]=={'path':'roadmark/'+r['path'],'bytes':r['bytes'],'sha256':r['sha256']}\n rows.pop('roadmark/SOURCE-FILE-MANIFEST.json');assert len(rows)==656\n return rows,{'priorInputPins':paths,'rulePins':ENGINE_PINS,'priorReport':pin(rp),'priorSourceArchiveSHA256':part['archiveSHA256'],'priorBenignRuntimeExceptions':0,'key':'exact archive member path + bytes + SHA256 + complete unchanged engine/rules; new known values always scanned'}\ndef scan_patterns(b,name,primary,runtime,benign):\n ps,_,_=primary(b,name);scan.release_memory();us=[];bc=0\n if b.startswith((b'\\xff\\xfe',b'\\xfe\\xff')):s=b.decode('utf-16',errors='replace')\n elif b[:1024].count(b'\\x00')>len(b[:1024])//5:s=None\n else:s=b.decode('utf8',errors='replace')\n if s is not None:\n  candidates=runtime(s)\n  for f in candidates:\n   if f['layer']=='plain':\n    v=s[f['valueCharStart']:f['valueCharEnd']]\n    if v in benign:bc+=1;continue\n   elif any(g['layer']=='plain' and g['field']==f['field'] for g in candidates):continue\n   us.append(f)\n return ps,us,bc\n\ndef main():\n ap=pathlib.Path(sys.argv[1]);report=pathlib.Path(sys.argv[2]);assert not report.exists();plan=load(C/'ARCHIVE-PLAN-v2.json');a=next(r for r in plan['archives'] if r['file']==str(ap));check(ap,a);expected={r['path']:r for r in a['memberFiles']};cache,provenance=source_cache();forms,benign,counts=current_variants();primary,runtime=scan.patterns();scan.release_memory();rows=[];findings=[];prim=[];rt=[];bc=0;seen=set()\n with lzma.open(ap,'rb') as stream:\n  with tarfile.open(fileobj=stream,mode='r|') as t:\n   for m in t:\n    safe(m.name);assert m.isfile() and m.name not in seen and m.name in expected;seen.add(m.name);e=expected[m.name];cached=cache.get(m.name)==e;h=hashlib.sha256();search=ByteSearch(forms);parts=[] if not cached else None\n    with t.extractfile(m) as f:\n     while b:=f.read(CHUNK):h.update(b);search.feed(b);parts.append(b) if parts is not None else None\n    actual={'path':m.name,'bytes':search.total,'sha256':h.hexdigest()};assert actual==e\n    for start,end in sorted(search.matches):findings.append({'member':m.name,'byteStart':start,'byteEndExclusive':end})\n    if not cached:\n     data=b''.join(parts);del parts;ps,us,bcount=scan_patterns(data,m.name,primary,runtime,benign);del data;prim.extend({'member':m.name,**r} for r in ps);rt.extend({'member':m.name,**r} for r in us);bc+=bcount\n    rows.append({**actual,'patternVerdict':'exact-prior-source-cache' if cached else 'current-full-unchanged-scanner'});scan.release_memory()\n  while stream.read(CHUNK):pass\n assert seen==set(expected);result={'status':'clean' if not(findings or prim or rt) else 'review-required','completedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'archive':ap.name,'archivePin':pin(ap),'members':rows,'regularFilesScanned':len(rows),'bytesScanned':sum(r['bytes'] for r in rows),'currentByteSearchForEveryMember':True,'chunkBytes':CHUNK,'patternCacheProvenance':provenance,**counts,'exactValueMatches':findings,'primaryHeaderCandidates':prim,'unclassifiedRuntimeCandidates':rt,'recognizedBenignRuntimeCandidateCount':bc,'errors':[],'limitations':['No decryption','No recursive unpacking of embedded compressed/proprietary content','Standalone base64 variants do not cover arbitrary wrapping/alignment','No universal secret-free claim']};dump(report,result);print(json.dumps({'status':result['status'],'members':len(rows),'cachedPatterns':sum(r['patternVerdict']=='exact-prior-source-cache' for r in rows),'findings':len(findings)+len(prim)+len(rt)}));sys.exit(0 if result['status']=='clean' else 2)\nif __name__=='__main__':main()\n"
+    }
+  ],
+  "backupSummaryCorrection": {
+    "status": "CORRECTED_BEFORE_SCAN_OR_UPLOAD",
+    "issue": "Backup-only summary used an incorrect denominator. Approved source, source manifest and user report were already correct.",
+    "correction": "158/170 core cells filled, 170 reviewed, 12 explicit gaps",
+    "captureMetadataTransitions": [
+      {
+        "before": {
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/source-capture.json",
+          "bytes": 528366,
+          "sha256": "02c5370308fa8806465b531e86c94cd0890692c5f5bf0b9ad42397afad3e3371"
+        },
+        "after": {
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/source-capture-v2.json",
+          "bytes": 528403,
+          "sha256": "26b1b4322dbb058ea5d5f9e67d9a9042303e8923a89604526a1151d502ae8955"
+        },
+        "onlyChangedField": "state"
+      },
+      {
+        "before": {
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/proof-capture.json",
+          "bytes": 329001,
+          "sha256": "f3c2d645d8af3daefc37c88a4ee689820e6a59d247561d4f0171bf12eb174183"
+        },
+        "after": {
+          "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/proof-capture-v2.json",
+          "bytes": 329038,
+          "sha256": "16656f7359cf784eb2f2a6c4c1d529d1be94b7740e5673d6b1e31835de58d218"
+        },
+        "onlyChangedField": "state"
+      }
+    ],
+    "originalArchiveAndReceiptsPreserved": true,
+    "sourceArchiveUnchanged": {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/Roadmark-recovery-source-MERCEDES-CORRECTED-WORKING-20261015T0035.tar.xz",
+      "bytes": 8367776,
+      "sha256": "e3dbaa09342529d61cdd0609d34a8440952e9c1970458f3d9ee215ef40eaaf75"
+    },
+    "newPackageScope": "Proof archive metadata only; payload file sets and bytes unchanged",
+    "inputPins": [
+      {
+        "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/WORKING-STATE-v2.txt",
+        "bytes": 680,
+        "sha256": "f09115dfa58a72f87ce58e507f8c1f1c825ab2bc4bbf2fec8992eec2b781c7cc"
+      },
+      {
+        "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/stream_package_metadata_v2.py",
+        "bytes": 3422,
+        "sha256": "e6dac2c32e9a7682461b9dd4fcfee76385796224d93b5985e2d6ee00fbe15ede"
+      },
+      {
+        "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/derive_restore_plan_v2.py",
+        "bytes": 2999,
+        "sha256": "1d51b87ea853c324881c568802603e9113156723dcff912e0044da10a827046b"
+      },
+      {
+        "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/stream_privacy_v4.py",
+        "bytes": 8769,
+        "sha256": "f171fb5a298b9ccdfdca17cb2763e7aeccffe19d41b0aad4ad08164b1f95e2f5"
+      },
+      {
+        "path": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/run_scans_v2.py",
+        "bytes": 2325,
+        "sha256": "fec036ddc27c1eae199db6403a6d42155099357bc07f0b302161514100624013"
+      }
+    ],
+    "commands": [
+      {
+        "phase": "package-proof-metadata-v2",
+        "argv": [
+          "python3",
+          "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/run_bounded_v2.py",
+          "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/package-proof-metadata-v2.resources.json",
+          "python3",
+          "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/stream_package_metadata_v2.py",
+          "proof"
+        ],
+        "stdout": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/package-proof-metadata-v2.log",
+        "stderr": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/package-proof-metadata-v2.err"
+      },
+      {
+        "phase": "derive-plan-v2",
+        "argv": [
+          "python3",
+          "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/run_bounded_v2.py",
+          "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/derive-plan-v2.resources.json",
+          "python3",
+          "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/derive_restore_plan_v2.py"
+        ],
+        "stdout": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/derive-plan-v2.log",
+        "stderr": "/workspace/scratch/586427eef9f2/roadmark-recovery-20261014/checkpoints/mercedes-corrected-working-20261015T0035/derive-plan-v2.err"
+      }
+    ]
+  }
+}

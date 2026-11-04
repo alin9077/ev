@@ -1,0 +1,143 @@
+{
+  "auditType": "read_only_packaging_options",
+  "observedAtUTC": "2026-10-10T18:42:39Z",
+  "scope": "Analyze saved WIP48 ZIP only. No app edits, builds, imports, tests, archive construction, file deletion, split implementation or uploads. Only these requested audit deliverables were written.",
+  "status": "proposal_only_no_new_library_save",
+  "basis": {
+    "checkpointPath": "/workspace/scratch/586427eef9f2/roadmark-recovery/roadmark-checkpoint-2026-10-10(1).zip",
+    "checkpointLabel": "WIP48",
+    "bytes": 20809107,
+    "sha256": "51c08fe5c1bc29567c41464022df8e3fcb2489ddf2267776237edf1c4c09f788",
+    "zipMembers": 756,
+    "attachmentBudgetBytes": 20971520,
+    "headroomBytes": 162413,
+    "previewCatalogueRecords": 315,
+    "previewFamilies": 133,
+    "sourceCatalogueRecordsReportedByCheckpointGuide": 317,
+    "sourceFamiliesReportedByCheckpointGuide": 134,
+    "sourcePreviewParity": "WIP48 deliberately contains newer Ford source with the older 315-record preview. It must not be labeled a verified matching pair."
+  },
+  "recommendation": "For continuing catalogue growth, use a source-checkpoint ZIP plus a separate complete portable-preview ZIP. Preserve byte-identical app payloads, original hero and all existing source, assets and QA. Reserve scene-reel archival only for a tiny immediate overage after durable recovery is verified.",
+  "previewMembers": [
+    {
+      "path": "roadmark/index.html",
+      "uncompressedBytes": 41219581,
+      "compressedBytes": 3534982,
+      "zipHeaderBytes": 114,
+      "totalContributionBytes": 3535096,
+      "sha256": "85f46b3213ec9965ab6afdac78b39e98c4d46ecf0a99d312877dc75ddf1fcf57"
+    },
+    {
+      "path": "roadmark/index-b.html",
+      "uncompressedBytes": 329,
+      "compressedBytes": 210,
+      "zipHeaderBytes": 118,
+      "totalContributionBytes": 328,
+      "sha256": "f813c7f8d63c0332e86bb02b3533bd89c7bebfaa43245db2198c0d266dd93a16"
+    }
+  ],
+  "splitMeasurements": {
+    "sourceMemberRule": "Every WIP48 member except roadmark/index.html and roadmark/index-b.html; retain source, data, original baselines/backups, runtime assets and all remaining QA",
+    "sourceMembersBeforeNewMetadata": 754,
+    "sourceZipBytesBeforeNewMetadataAssumingUnchangedCompression": 17273683,
+    "sourceHeadroomBytesBeforeNewMetadata": 3697837,
+    "sourceMiB": 16.47346782684326,
+    "portableZipMembersBeforeNewMetadata": 2,
+    "portableZipBytesBeforeNewMetadataAssumingUnchangedCompression": 3535446,
+    "portableZipHeadroomBytesBeforeNewMetadata": 17436074,
+    "portableZipMiB": 3.371664047241211,
+    "rawHtmlExceedsAttachmentBudget": true,
+    "measurementQualification": "Analytical member removal/addition accounting from the saved ZIP, including ASCII local/central headers and a new 22-byte end-of-central-directory record. Not a produced archive. New manifests, README text, Ford output and compression differences change final sizes. Removing only index.html while keeping its launcher in source would leave 17,274,011 bytes but a broken source-only launcher, so move the launcher with the preview."
+  },
+  "standaloneEvidence": {
+    "inlineCSS": true,
+    "externalStaticSrcHrefTags": 0,
+    "cssUrlReferences": 0,
+    "embeddedSvgCount": 16,
+    "allChapterSvgDataUrls": true,
+    "externalReferencesInsideEmbeddedSvgs": 0,
+    "approvedAssetManifestEntries": 0,
+    "dynamicImportExpressionsInBuiltBundle": 0,
+    "heroTextPresentInBuiltBundle": true,
+    "nineReasonSourceFile": "roadmark/src/components/model-y-verdict.tsx",
+    "heroPlacementSourceFile": "roadmark/src/portable/entry.tsx",
+    "builder": "roadmark/scripts/build-portable.ts",
+    "method": "Static ZIP/content inspection only; no browser or runtime claim is made",
+    "futureAssetWarning": "Current media/approved-assets.json is empty. If approved photos or external resource paths are introduced later, repeat dependency verification; the present builder inlines chapter SVGs but its portable Image component can retain a local /media path."
+  },
+  "proposedArtifactLayout": {
+    "sourceArchiveName": "roadmark-source-checkpoint-<pair-id>.zip",
+    "sourceContains": "All baseline checkpoint members except the two generated root preview members, plus source-specific manifest and opening/restore guide",
+    "portableArchiveName": "roadmark-portable-preview-<pair-id>.zip",
+    "portableContains": [
+      "roadmark/index.html",
+      "roadmark/index-b.html",
+      "roadmark/OPEN-PORTABLE.txt",
+      "roadmark/PACKAGING/portable-manifest.json"
+    ],
+    "sourceMetadata": [
+      "roadmark/PACKAGING/source-manifest.json",
+      "updated source START-HERE-ROADMARK.txt and docs/START_ROADMARK_CHECKPOINT.md"
+    ],
+    "extraction": "Both ZIPs use the same roadmark/ root. Portable alone opens independently. For full restoration, merge both into one roadmark/ directory without nested roadmark/roadmark or automatically renamed sibling folders. Payload paths do not collide. Do not alter existing local files during packaging.",
+    "unchangedExistingExclusions": "Do not re-add generated public/index.html or public/index-b.html duplicates, runtime caches/binaries, local reports or already externally archived historical material. Keep all existing recovery references."
+  },
+  "manifestRequirements": [
+    "Shared schema version, pair ID and explicit artifact role; actual creation/build timestamps and verification status, including not release approved.",
+    "Enumerate every payload path, uncompressed byte length and SHA-256; preserve a deterministic source-payload manifest digest excluding packaging metadata.",
+    "Bind both manifests to that source-payload digest and the exact portable index.html digest. Record actual record/family counts, source checks, preview checks and any explicit mismatch.",
+    "List companion filename, extraction root, required-for purpose, generated aliases omitted and their exact regeneration method. Include external recovery archive identities/versions/checksums already verified.",
+    "Avoid cyclic archive hashes: per-archive manifests bind payload hashes; a separately saved pair receipt/recovery index records both completed ZIP hashes, byte sizes and actual Library IDs/versions only after saves succeed.",
+    "Use versioned names and preserve existing Library identities when appropriate. Do not invent a portable Library ID or imply that either proposed artifact has been saved.",
+    "Record that original Model Y hero, all nine reasons, source assets, original baseline/backups and current QA proofs are unchanged, supported by byte-level preservation checks."
+  ],
+  "restorationAndOpening": {
+    "previewOnly": [
+      "Download and fully extract the portable-preview ZIP. Do not open HTML inside an archive viewer.",
+      "Open roadmark/index.html in a desktop browser with JavaScript enabled. index-b.html remains an optional alias preserving query parameters and anchors.",
+      "Local screens use the bundled data and art; external evidence links require internet. On file URLs, reporting is browser-local drafts where storage is supported. The durable review inbox needs the local service."
+    ],
+    "fullSourceRestore": [
+      "Download matching source and preview archives and verify both against the saved pair receipt.",
+      "Extract/merge both roadmark/ roots into one directory; retain manifests and validate payload hashes before relying on recovery.",
+      "For development, use Node 22+ and pinned pnpm 11.19.0; install with pnpm install --frozen-lockfile, then pnpm dev. Installation may need internet.",
+      "To regenerate root/public preview aliases, run pnpm build:portable from roadmark/ after dependencies are installed. It writes index.html, index-b.html, public/index.html and public/index-b.html. pnpm build also invokes it. Regeneration from changed source may not reproduce a saved preview hash.",
+      "For a durable local review queue, use the matched root preview and run pnpm preview:review; open http://127.0.0.1:3013/index.html. The review screen is ?page=/review. This service binds loopback and keeps reports locally."
+    ],
+    "sourceOnly": [
+      "Source ZIP alone supports development/build restoration after dependency installation, but cannot be described as containing an immediately openable portable preview.",
+      "Point source opening instructions to the companion ZIP or the regeneration command; avoid a dangling index-b launcher."
+    ]
+  },
+  "requiredBeforeFutureImplementation": [
+    "Wait for the Ford portable build and current verification to finish; freeze matching source/preview inputs and measure the actual new files. WIP48 metrics use its older preview.",
+    "Prove source and portable counts/identities match; keep all current QA logs and proofs. Packaging alone does not add verification or release approval.",
+    "Compare the union of source/portable payload paths and hashes against the unsplit baseline, allowing only explicitly documented new packaging metadata and generated duplicate omissions already in force.",
+    "Verify original baseline/assets and Model Y hero preservation; confirm standalone opening and no missing resource loads using the normal authorized QA workflow.",
+    "Verify extraction/merge restoration, alias behavior and local review-service root-index dependency. Keep external evidence recovery independently versioned.",
+    "Measure both completed ZIPs below 20 MiB with a useful growth margin, then save and verify both artifacts before changing delivered instructions or claiming a durable split."
+  ],
+  "smallOverageAlternative": {
+    "candidate": {
+      "path": "roadmark/qa/scene-reel.html",
+      "uncompressedBytes": 84420,
+      "compressedBytes": 33307,
+      "zipHeaderBytes": 130,
+      "totalContributionBytes": 33437,
+      "sha256": "5c91b202ce3e5fe1d14e3aaea82b4736ed91205e415d692e98d4891b5abebbdc"
+    },
+    "checkpointBytesAfterRemovalOnly": 20775670,
+    "headroomBytesAfterRemovalOnly": 195850,
+    "maxAdditionalPayloadBudgetComparedWithUnchangedWIP48": 33437,
+    "archiveProposal": "Append scene-reel.html to a new verified version of the existing historical visual-QA archive, retaining its current 12 payload files; update its manifest, restore instructions and source checkpoint reference. Preserve local scene-reel.html. No archive update is authorized or performed here.",
+    "referenceWarning": "qa/TEST_RESULTS.md explicitly cites scene-reel.html as the self-contained seven-scene visual evidence. If archived, make this historical evidence reference resolvable through the external recovery archive.",
+    "decisionBoundary": "Reasonable only if the final measured overage plus new documentation fits within the actual 33,437-byte saving. It buys little future growth; prefer the two-artifact design if repeated catalogue expansion is expected."
+  },
+  "warnings": [
+    "Splitting changes download packaging, not the 41,219,581-byte current HTML load size, browser memory demand or mobile performance.",
+    "The current source-only estimate remains under 20 MiB by about 3.53 MiB, but future catalogue/evidence growth can consume that space. Measure per artifact at each checkpoint.",
+    "No original hero, app source, runtime asset, baseline or current QA image should be removed to achieve this split.",
+    "Existing WIP48 source/preview mismatch and ongoing verification must be stated until a matching verified pair is produced.",
+    "No new ZIP or Library file/version was created by this audit."
+  ]
+}

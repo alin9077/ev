@@ -1,0 +1,123 @@
+{
+  "schema": "roadmark.independent-static-review95.v1",
+  "reviewedAt": "2026-10-12T01:42:56.968984+00:00",
+  "decision": "STATIC_APPROVED_PENDING_ROOT_APPLICATION_AND_EXECUTABLE_QA",
+  "manifestSHA256": "2b8f983e5da1524d0517aa0e400231c651a179fd524b71359cebb707516499ed",
+  "visualStatusDeltaSHA256": "ff3092b151e6879cc7793b250e4dd8f6f87973c7de6de1cabccde339df8e1868",
+  "fileChecks": [
+    {
+      "path": "data/market-inventory-2026-10-10.json",
+      "stagedSHA256": "64f38d5d72f75c2a5264568602d5a1eacae49b1aba8b1e8cfcf5a9708a35c023",
+      "manifestSHA256": "64f38d5d72f75c2a5264568602d5a1eacae49b1aba8b1e8cfcf5a9708a35c023",
+      "bytesMatch": true,
+      "postimageMatches": true,
+      "preimageMatchesOrNewTargetAbsent": true
+    },
+    {
+      "path": "data/market-mazda-cx6e-lead-evidence-2026-10-12.json",
+      "stagedSHA256": "370449ee44a832977f99952ec6fc764fe38180c5c4aa10128fc4187856863c68",
+      "manifestSHA256": "370449ee44a832977f99952ec6fc764fe38180c5c4aa10128fc4187856863c68",
+      "bytesMatch": true,
+      "postimageMatches": true,
+      "preimageMatchesOrNewTargetAbsent": true
+    },
+    {
+      "path": "qa/checkpoint95-market-fixture.json",
+      "stagedSHA256": "be8fc1fb14600253d57ecdcd2ec27927208c66abf853f03fcb34b5ff706259e2",
+      "manifestSHA256": "be8fc1fb14600253d57ecdcd2ec27927208c66abf853f03fcb34b5ff706259e2",
+      "bytesMatch": true,
+      "postimageMatches": true,
+      "preimageMatchesOrNewTargetAbsent": true
+    },
+    {
+      "path": "tests/checkpoint93-market.test.ts",
+      "stagedSHA256": "f9d9714327f56a117e17e390b260fb3b65086a68f1557d4fe87ea50da5e0525b",
+      "manifestSHA256": "f9d9714327f56a117e17e390b260fb3b65086a68f1557d4fe87ea50da5e0525b",
+      "bytesMatch": true,
+      "postimageMatches": true,
+      "preimageMatchesOrNewTargetAbsent": true
+    },
+    {
+      "path": "tests/checkpoint95-market.test.ts",
+      "stagedSHA256": "7103187118b092244866b77d8bf023f149dacf622f099005b1af69590a35ef0a",
+      "manifestSHA256": "7103187118b092244866b77d8bf023f149dacf622f099005b1af69590a35ef0a",
+      "bytesMatch": true,
+      "postimageMatches": true,
+      "preimageMatchesOrNewTargetAbsent": true
+    },
+    {
+      "path": "tests/helpers/checkpoint93-market-history.ts",
+      "stagedSHA256": "fa560c77c9979bddab813dc5d46f5456c8fc1e3b5a74f86a1ee0e02ae3151977",
+      "manifestSHA256": "fa560c77c9979bddab813dc5d46f5456c8fc1e3b5a74f86a1ee0e02ae3151977",
+      "bytesMatch": true,
+      "postimageMatches": true,
+      "preimageMatchesOrNewTargetAbsent": true
+    },
+    {
+      "path": "tests/helpers/checkpoint95-market-history.ts",
+      "stagedSHA256": "e8ba3100743ef068e863291913e53f8dadbb13ec92558178e0d17e3fa10459e3",
+      "manifestSHA256": "e8ba3100743ef068e863291913e53f8dadbb13ec92558178e0d17e3fa10459e3",
+      "bytesMatch": true,
+      "postimageMatches": true,
+      "preimageMatchesOrNewTargetAbsent": true
+    }
+  ],
+  "staticDataChecks": {
+    "allSevenPostimagesAndPreimagesMatch": true,
+    "candidateContainsOnlyManifestFiles": true,
+    "exactBaselineRawAndCanonical": true,
+    "exactSuccessorRawAndCanonical": true,
+    "onlyFiveAllowedTopLevelFieldsChange": true,
+    "allPriorRecordsAndOrderPreserved": true,
+    "onlyExactLeadRemovedAtOriginalPosition": true,
+    "allPriorHistoryAndOrderPreserved": true,
+    "allPriorArtifactsAndOrderPreserved": true,
+    "peripheralAndOtherMetadataUnchanged": true,
+    "archiveIsReviewedExactValue": true,
+    "soleRecordDeltaIsAuthorizedVisualStatus": true,
+    "onlyEnumeratedSidecarVisualStatusChanges": true,
+    "rootVisualObservationAndAddendumPinsMatch": true,
+    "evidenceFixtureAndArtifactHashesCoherent": true,
+    "fixtureMirrorsExactDisposition": true,
+    "staticJSONReconstructionIsExactPredecessor": true,
+    "everyDerivedCountMatches": true,
+    "checkpoint93ChangesAreExactlyTwoImportLines": true,
+    "allHistoricalAndDetailedPinsStillMatch": true,
+    "helperLiteralsMatchFixtureAndWholeStates": true,
+    "allCandidatesFailClosed": true
+  },
+  "allStaticDataChecksPassed": true,
+  "changedTopLevelFields": [
+    "counts",
+    "reconciledLeads",
+    "records",
+    "sourceArtifacts",
+    "unverifiedLeads"
+  ],
+  "predecessorCanonicalSHA256": "1f1c0cd52a18794ea249f4295b94b2d0b1981c42d570cd68070f0cb4cb243be2",
+  "successorCanonicalSHA256": "29b406b2179013a99100771ab9ccec20f21f6736bc06ad39295a5bce017f5576",
+  "staticReconstructedPredecessorCanonicalSHA256": "1f1c0cd52a18794ea249f4295b94b2d0b1981c42d570cd68070f0cb4cb243be2",
+  "sourceReview": "The prior independent evidence review and separately pinned root visual-observation addendum remain intact. The staged correction is limited to visual status. No new source research was needed or performed.",
+  "helperReview": "Whole successor, fixture bytes and sidecar bytes are hard-pinned. Exactly one last record, archive and artifact are removed; exact original lead restored at index40; predecessor whole-state hash required before unchanged checkpoint93. No imports of staged application code or execution performed.",
+  "testReview": "New tests cover exact collection/count preservation, HTML-only scope and false eligibility, seller identity/freshness, PDF limited scope/cargo conflict, chained historical hash, detailed catalogue exclusion, 23 whole-state negative mutations and sidecar byte drift. Existing checkpoint93 assertions/pins unchanged. Execution still required.",
+  "rootPreconditions": [
+    "Save checkpoint94 and release its freeze",
+    "Verify all seven source postimages and app preimages/new-file absence immediately before applying",
+    "Apply only the seven reviewed files; omit source captures and larger technical candidate",
+    "Run required validation/typecheck/lint/tests/build and inspect buyer-visible market result after application"
+  ],
+  "notRun": [
+    "staged TypeScript/application code",
+    "app imports",
+    "tests",
+    "validation",
+    "typecheck",
+    "lint",
+    "build",
+    "browser",
+    "uploads",
+    "Git"
+  ],
+  "appEdited": false,
+  "releaseApproved": false
+}

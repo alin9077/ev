@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "scope": "Independent static data, provenance, source-byte and application-schema audit only. No application import, execution, tests, builds, network or browser.",
+  "adapterSHA256": "83a7538eeed8f246530524293f5809e17559a36161a8313b639fe2ab949d6c07",
+  "readinessSHA256": "a6a52d452b35f95777b5fe92f866e60f5d13c97006d1ccf6304389773e3778c2",
+  "buyerPlanSHA256": "29e417c174681e9cc5db18117547e12f7572f1aedf8a1e52fa2735d687eb77b6",
+  "checks": 11834,
+  "checkGroups": {
+    "pins": 5,
+    "immutable_inputs": 188,
+    "counts": 8,
+    "corrected_source": 2,
+    "core_fact_fields": 4440,
+    "promotion": 298,
+    "sources": 76,
+    "locators": 739,
+    "observations": 952,
+    "context_only": 15,
+    "aliases": 425,
+    "nulls": 812,
+    "schema": 2664,
+    "source_closure": 298,
+    "issue_closure": 794,
+    "variants": 74,
+    "buyer_block": 5,
+    "holds": 17,
+    "identity": 6,
+    "availability": 4,
+    "static_application_contract": 5,
+    "static_collisions": 6,
+    "worker_boundaries": 1
+  },
+  "failures": [],
+  "counts": {
+    "models": 1,
+    "variants": 2,
+    "fullFacts": 296,
+    "observations": 136,
+    "qualifiedAliases": 54,
+    "aliasObservationDependencies": 155,
+    "explicitCanonicalNulls": 106,
+    "sources": 19,
+    "locatorsPerConfiguration": 146,
+    "holdsPerConfiguration": 15,
+    "contextOnlyObservations": 14,
+    "closedFactoryBuilds": 0
+  },
+  "locatorTypes": {
+    "json_pointer": 7,
+    "preserved_selected_dom": 2,
+    "numbered_extract_lines": 102,
+    "physical_pdf_page_layout_lines": 35
+  },
+  "initialCandidateReview": {
+    "adapterSHA256": "f3359c5684d9c3af108fba1da9c6a9fff4105fade79ec6eb442b19ecf5d1c3f7",
+    "gap": "Eight S.E./inventory full locator anchors absent from candidate transport",
+    "resolution": "Final reviewed configuration_evidence.fullSourceAnchorRegistry contains all 146 exact frozen anchors for both variants"
+  },
+  "staticApplicationFiles": {
+    "roadmark-work/roadmark/src/lib/types.ts": "a13fd87008489eefd347367a61245140238dad5093d5d464f9ac7a6524be253c",
+    "roadmark-work/roadmark/src/lib/data.ts": "ce2d02f7b0c70a3744eb4cc0d776735bf074bbce2b3e30f62e2a17df8b727e62",
+    "roadmark-work/roadmark/src/lib/configuration-evidence.ts": "7ff6d81950d7ecd6697769cc01ef950d05b2e15fb4ea246a0a760559574f2aa3",
+    "roadmark-work/roadmark/src/lib/validate-catalogue-issues.ts": "0340aca0cdcd85071cd107bc8a700a96206ae775db444f99ef155e91ffa79a2f",
+    "roadmark-work/roadmark/data/catalogue-additions-2026-10-10.json": "f972d90de0b929c51ce412271b1c63a8a224173d1444ac42c5ec029e305868ad",
+    "roadmark-work/roadmark/data/au_ev_all_variants_2026-10-06.json": "010ded194b4d61cd7be606ce0cc332fa7e32906bba70abff2b5c38541e634657"
+  },
+  "buyerCopyPublicationBlocked": true,
+  "runtimeBindingVerifiedByThisReviewer": false,
+  "remainingGate": "Root must verify actual effective runtime binding and fail-closed mutation guards before any buyer-copy publication; this static audit is not runtime validation or approval to publish.",
+  "applicationModifiedByThisReviewer": false,
+  "filesWrittenByThisReviewer": [
+    "roadmark-research/audits/fonz-z-runtime-review/audit_adapter.py",
+    "roadmark-research/audits/fonz-z-runtime-review/independent-static-audit.json",
+    "roadmark-research/audits/fonz-z-runtime-review/independent-static-audit.md"
+  ]
+}

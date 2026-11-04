@@ -1,0 +1,54 @@
+{
+  "observedAtUTC": "2026-10-12T02:47:55.347624+00:00",
+  "buildID": "GBi2ZoKnrPlQiT3VGNxcB",
+  "applicationChanged": false,
+  "viewport": "500 x757 CSS;100%zoom",
+  "runs": [
+    {
+      "port": 18863,
+      "noClickDetailRequests": 13,
+      "noClickUniqueDetails": 12,
+      "noClickFinishedDetailBodyBytes": 401024,
+      "completeLogSHA256": "f06a66c58f0088b6deb51fbf3845ffdcc122f0645ae6c4c36d380b0b17d2abdf",
+      "completeLogCompletionCounts": {
+        "finished": 55
+      }
+    },
+    {
+      "port": 18864,
+      "noClickDetailRequests": 13,
+      "noClickUniqueDetails": 12,
+      "noClickFinishedDetailBodyBytes": 401024,
+      "completeLogSHA256": "ddbc8af868f13a483a0fc721a2a2154c939d58b62072da77d15d5a1fd4737f99",
+      "completeLogCompletionCounts": {
+        "finished": 51
+      }
+    }
+  ],
+  "cardSweepRepeatConclusion": "All three fresh-origin no-click12card sweeps requested13 detail responses for12 unique destinations,401024 gzip encoded body bytes each. Scroll geometry/timing varied slightly; exact observed positions retained.",
+  "largePageSamples": [
+    {
+      "origin": 18864,
+      "target": "/cars/fonz-z-series/fonz-z-series-lr-forza-aranciata-black-vegan--20261010",
+      "classification": "warm; target prefetch began02:46:34.958 before activation",
+      "actionStartUTC": "2026-10-12T02:46:47.107Z",
+      "verifiedUTC": "2026-10-12T02:46:47.340Z",
+      "observationBoundMs": 233
+    },
+    {
+      "origin": 18863,
+      "target": "/cars/fonz-z-series/fonz-z-series-lr-forza-aranciata-black-vegan--20261010",
+      "classification": "cold selected destination; first target request02:47:18.460 after activation, marker null",
+      "actionStartUTC": "2026-10-12T02:47:18.423Z",
+      "verifiedUTC": "2026-10-12T02:47:18.726Z",
+      "observationBoundMs": 303,
+      "responseBodyBytes": 171642
+    }
+  ],
+  "cleanup": "Created browser tabs closed. Native owned launch interrupted; shell prompt returned; both logger stderr report signal_interrupt with no log-failure notice. Exact native child exit codes not captured.",
+  "limitations": [
+    "Timing bounds include tool overhead; no real-phone, precise paint or controlled network latency claim.",
+    "No after-change measurements or savings yet.",
+    "Whole homepage-to-discovery route not measured."
+  ]
+}

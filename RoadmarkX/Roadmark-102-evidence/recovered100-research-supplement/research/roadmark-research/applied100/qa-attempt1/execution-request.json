@@ -1,0 +1,47 @@
+{
+  "argv": [
+    "roadmark-research/qa99-candidate/run_qa99.py",
+    "--workspace",
+    "/workspace/scratch/586427eef9f2",
+    "--output",
+    "roadmark-research/applied100/qa-attempt1",
+    "--baseline-inputs",
+    "roadmark-research/applied99/revision4/expected-inputs.json",
+    "--baseline-inputs-sha256",
+    "4a4204128daf108f35296c77d3beb4476a453c98ab571648da9d85b1b0085e86",
+    "--expected-inputs",
+    "roadmark-research/applied100/expected-inputs.json",
+    "--expected-inputs-sha256",
+    "39caa8ae30cf2c6bc09026d0dd87b6fd42811fd8ddb2d632c5d3d18092818225",
+    "--candidate-manifest",
+    "roadmark-research/applied100/qa-candidate-manifest.json",
+    "--candidate-manifest-sha256",
+    "7d85b68eb8b73d6b3dcdca3c6df7f882cf494686c610c5820d5222253fe6784d",
+    "--approved-runner-sha256",
+    "a043d6ac749a39d025bf452eddb55440d2ac81ba3b73be9f4d894a5055a2e10f",
+    "--exclusive-workspace"
+  ],
+  "configuration": {
+    "baselineInputs": {
+      "path": "roadmark-research/applied99/revision4/expected-inputs.json",
+      "sha256": "4a4204128daf108f35296c77d3beb4476a453c98ab571648da9d85b1b0085e86"
+    },
+    "candidate": {
+      "path": "roadmark-research/applied100/qa-candidate-manifest.json",
+      "sha256": "7d85b68eb8b73d6b3dcdca3c6df7f882cf494686c610c5820d5222253fe6784d"
+    },
+    "expectedInputs": {
+      "path": "roadmark-research/applied100/expected-inputs.json",
+      "sha256": "39caa8ae30cf2c6bc09026d0dd87b6fd42811fd8ddb2d632c5d3d18092818225"
+    }
+  },
+  "environmentOverrides": {
+    "NEXT_TELEMETRY_DISABLED": "1",
+    "NODE_OPTIONS": "--max-old-space-size=1280 --max-semi-space-size=8"
+  },
+  "exclusiveWorkspaceConfirmedByRoot": true,
+  "removedInheritedEnvironmentNames": [],
+  "runnerSHA256": "a043d6ac749a39d025bf452eddb55440d2ac81ba3b73be9f4d894a5055a2e10f",
+  "schema": "roadmark99.serial-qa.v1",
+  "startedAtUTC": "2026-10-12T08:09:29.819698+00:00"
+}

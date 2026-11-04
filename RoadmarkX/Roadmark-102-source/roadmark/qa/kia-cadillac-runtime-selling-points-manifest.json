@@ -1,0 +1,176 @@
+{
+  "status": "passed_read_only_actual_runtime_and_in_memory_merge",
+  "validationMode": "exhaustive_compositional_guards_with_full_payload_integration_and_representative_mutations",
+  "records": 7,
+  "visibleClauses": 14,
+  "executableDependencies": 673,
+  "sourceSnapshots": 26,
+  "sourceArtifactsVerified": 147,
+  "referencedResearchDependencies": 751,
+  "eligibleReferencedResearchDependencies": 674,
+  "preservedResearchDependencies": 769,
+  "requiredVisibleConditions": 102,
+  "allSourceVisibleConditions": 143,
+  "completeEffectiveFactsGuarded": 2993,
+  "sourceLessUnknownFacts": 10,
+  "sourcedUnknownFacts": 477,
+  "relatedRecordPairs": 27,
+  "testsPassed": 122002,
+  "mutationTestsPassed": 117913,
+  "priorCarsSerializedDeepEqual": 281,
+  "fullCatalogueVisibleBefore": 277,
+  "fullCatalogueVisibleAfter": 284,
+  "fullCatalogueClausesBefore": 554,
+  "fullCatalogueClausesAfter": 568,
+  "applicationEdits": 0,
+  "provisionalAvailabilityPredicateTests": 21,
+  "composition": {
+    "isolatedCalls": 116204,
+    "fullPayloadCalls": 2449,
+    "baselineEquivalenceGroups": 3849,
+    "exactOmittedFactInvariantChecks": 114732,
+    "exactOmittedIdentityInvariantChecks": 1472
+  },
+  "elapsedSeconds": 502,
+  "mutationCategories": {
+    "dependency": 1353,
+    "explicit_fact": 21762,
+    "complete_fact_map": 92267,
+    "source_dependency_route": 751,
+    "source": 676,
+    "rendered_source": 52,
+    "identity_related": 310,
+    "availability_related": 140,
+    "availability": 10,
+    "expiry": 15,
+    "outgoing_related_boundary": 21,
+    "outgoing_boundary": 3,
+    "offer_expiry": 2,
+    "malformed_fact": 90,
+    "cached_clause_expiry": 154,
+    "full_payload_representative": 190,
+    "full_payload_composite": 36,
+    "full_payload_related_edge": 81
+  },
+  "executionMethod": "Exhaustive isolated/compositional guards plus full-payload baseline, integration, source/expiry matrices and representative/composite mutations; not 117k full-payload runs",
+  "runtimeGraphFiles": 31,
+  "excludedProvisionalPairs": 3,
+  "offerExpiryAmendedFacts": 6,
+  "integrationInstructions": [
+    "Append only 7 records, 673 dependencies and 26 source snapshots from kia-cadillac-runtime-selling-points-merge-payload.json to the same three arrays in data/buyer-selling-points-2026-10-10.json.",
+    "Keep every existing array row in its existing order and byte-equivalent serialized content. Preserve every other top-level field. Do not merge the research proposal itself.",
+    "Do not install the three excluded provisional MY27 EV4 source records as buyer-summary records. Keep announced_provisional, outgoing/new_stock_listed and current_or_order_listed/unverified states unchanged.",
+    "Do not drop related identities, exact related availability objects, expected effective fact maps, source snapshots, source freshness checks, outgoing_new_stock scope, nulls or any of the 102 required visible conditions.",
+    "Do not overwrite any frozen input, amendment, runtime proof, validation log, manifest or source-copy file.",
+    "Verify source and executable hashes before merging; a changed effective fact, identity, availability, source or guard executable requires rebinding/revalidation rather than altering this frozen proof.",
+    "After the exact append, run the quick post-merge verifier below. It checks exact append, all hashes, old-car and old-summary preservation plus representative mutations; it preserves and does not rerun or replace the exhaustive matrix."
+  ],
+  "quickPostMergeCommand": "cd /workspace/scratch/586427eef9f2/roadmark-work/roadmark && node --import tsx ../../roadmark-research/verify_kia_cadillac_post_merge.cjs",
+  "files": [
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/kia-cadillac-runtime-selling-points-merge-payload.json",
+      "sha256": "e01f93535a942c63a15fdc6b53ae959b94cd6bab35e2adb5edaf11a500c93d08",
+      "bytes": 27258286
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/kia-cadillac-runtime-selling-points-proposal.json",
+      "sha256": "04a8e647182842866f17bfcf96c4d7816266738465c19300689f0e6a877080a7",
+      "bytes": 39187074
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/kia-cadillac-runtime-selling-points-proposal.md",
+      "sha256": "dc2e09be859be1986d8028c0658a743426ec605800894d85d9fbb1cbe95ac63a",
+      "bytes": 42772
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/kia-cadillac-runtime-selling-points-validation.json",
+      "sha256": "8fcf9840b08da3f85686bef8a13cf789b551cc0a50edb71789798d821b944b63",
+      "bytes": 24672195
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/kia-cadillac-runtime-selling-points-validation-log.txt",
+      "sha256": "52c0fd57e71f3c808c79e77f8a3ff71c6d5be6d80543a9ca0a1f299c877491e5",
+      "bytes": 12474
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/kia-cadillac-runtime-source-copy-match.json",
+      "sha256": "8990606897e38578b1b8b900fd5d72d14a6df4ac00a64f1459d45c439846383d",
+      "bytes": 1193133
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/kia-cadillac-binding-effective-snapshot.json",
+      "sha256": "8f181c84ce592f5a9bfbcceb0b7fb74d1f65f4a456b0c44f9357b9101b5c6072",
+      "bytes": 7202534
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/kia-cadillac-runtime-input-lock.json",
+      "sha256": "ba113427d2ef0c52cad18d6b5a48e7e5e20f98cc8a1322f45909e366cc26fed9",
+      "bytes": 4726
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/kia-cadillac-prior-buyer-selling-points.json",
+      "sha256": "f95ea55c45e63585ad6205a2832950311ae835c8a8a3d055799f48b76edccc15",
+      "bytes": 42998234
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/capture_kia_cadillac_runtime_snapshot.cjs",
+      "sha256": "c5d3dd29e165af29ca0a77b6aad0984b5b2b263d5c8a0a5c610192a17b011955",
+      "bytes": 3724
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/bind_kia_cadillac_selling_points.py",
+      "sha256": "672d0eab42ac571493c711450ef4b8bb463e4906f016a1c071297b72944910f2",
+      "bytes": 16956
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/validate_kia_cadillac_selling_points.cjs",
+      "sha256": "1f4b505c545fdec9abe0f531a79fe6ec889562eff3ae2d3d179e408d2f8f2c87",
+      "bytes": 37455
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/verify_kia_cadillac_post_merge.cjs",
+      "sha256": "a93b4ae444f70ee3facd0ee14f685e8133dab1ef263def16f5e713d90b86c957",
+      "bytes": 9971
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/finalize_kia_cadillac_selling_points.py",
+      "sha256": "2c9c681b7b75afca2a738a3245a4536b20ea84899ebf2145f561670b01d19aa0",
+      "bytes": 8242
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/kia-cadillac-offer-expiry-amendment.json",
+      "sha256": "1e08e9e8409a744b0f2dcb88e4535028957070ff9f03e59dbae866f1ed7ec378",
+      "bytes": 18164
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/probe_kia_cadillac_provisional_guard.cjs",
+      "sha256": "ecb68deab1a0683ea3be2fd01bf330f9b51bf8670f0ca726bc9d17825a4253ac",
+      "bytes": 3727
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/kia-cadillac-provisional-guard-probes.json",
+      "sha256": "07a14e5e0a86c6bca5d17898286091d2e8a40d7441a3dc1cf073554fe56ea6f4",
+      "bytes": 4989
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/kia-cadillac-compositional-proof-method.md",
+      "sha256": "5c8103c18129479f2fbc4003072aacc47db4cf2fef57a049b9e004d236ab5f9b",
+      "bytes": 3093
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/validate_kia_cadillac_selling_points_original_full_matrix.cjs",
+      "sha256": "1874beac651db589499b7450d2a27575b88b0700e4beb0a35158888a1cd4dc0a",
+      "bytes": 28366
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/kia-cadillac-runtime-selling-points-interrupted-full-payload-log.txt",
+      "sha256": "502378ca76a95c9759ae504652e4fa9100fdaa094531a5f6e332d899be0ad373",
+      "bytes": 96
+    },
+    {
+      "path": "/workspace/scratch/586427eef9f2/roadmark-research/kia-cadillac-runtime-selling-points-interrupted-pre-expiry-render-guard-log.txt",
+      "sha256": "8290396c1b67323b23e3a401835ef99bc824aa58176759dc3175374b7a315b54",
+      "bytes": 59
+    }
+  ]
+}

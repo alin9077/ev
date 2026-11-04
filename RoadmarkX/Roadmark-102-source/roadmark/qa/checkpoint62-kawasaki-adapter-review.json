@@ -1,0 +1,108 @@
+{
+  "status": "PASS_WITH_TRANSPORT_PRECISION_NOTE",
+  "scope": "Static research-data and adapter-source audit only; no application import, execution, tests, build, browser or network; candidate not applied.",
+  "counts": {
+    "independentChecks": 14039,
+    "failures": 0,
+    "models": 1,
+    "variants": 1,
+    "facts": 210,
+    "nullFacts": 125,
+    "researchHoldIssues": 49,
+    "uniqueIssueIDsOnFacts": 47,
+    "issueOccurrencesOnFacts": 729,
+    "sourceRows": 14,
+    "sourceAnchors": 98,
+    "unicodeSpans": 64,
+    "historicalMY24XPaths": 34,
+    "nonASCIISpans": 14,
+    "spansWithDifferentDecodedCharacterAndByteStart": 64,
+    "frozenManifestFiles": 22,
+    "baselineFiles": 89,
+    "endUnchangedFiles": 103
+  },
+  "pinnedInputs": {
+    "roadmark-research/kawasaki-my26-integration-readiness/manifest.json": "5ebe8be7a5a0ef0fc9f55eab416f0f169adef942a1280db21c4a2a80c3453d3a",
+    "roadmark-research/kawasaki-my26-integration-readiness/readiness.json": "9878ea0b13c49ddb7a1532a8b260d14a93d5d3258dd4c00e08c1531031afb2b7",
+    "roadmark-research/kawasaki-my26-runtime-candidate/adapter-candidate.json": "41cc7aac319263a43f810f18e4b33e608d94df4002cfa0db52e24690c59b6ad2"
+  },
+  "factPreservation": "All original fields, nested Issue objects, nulls, sourceIds, qualifications, conditionExplanation, basis, status and exact scalar types preserved. Only sourceBoundary, rankingPromotionApproved=false and currentBuildCertified=false added.",
+  "variantExistingPathChanges": [
+    {
+      "path": "/variants/0/configuration_evidence/sourceIds",
+      "kind": "list_changed",
+      "old": [
+        "r10_kawasaki_my26_dealer_my26_web",
+        "r10_kawasaki_my26_discovery_web_02",
+        "r10_kawasaki_my26_manufacturer_my24"
+      ],
+      "new": [
+        "r10_kawasaki_my26_dealer_my26_web",
+        "r10_kawasaki_my26_discovery_web_02",
+        "r10_kawasaki_my26_manufacturer_my24",
+        "r10_kawasaki_my26_dealer_springwood_my26",
+        "r10_kawasaki_my26_manufacturer_comparison",
+        "r10_kawasaki_my26_manufacturer_overview",
+        "r10_kawasaki_my26_manufacturer_warranty",
+        "r10_kawasaki_my26_manufacturer_warranty_ninja",
+        "r10_kawasaki_my26_dealer_conditions_web_07",
+        "r10_kawasaki_my26_dealer_web_extraction_01",
+        "r10_kawasaki_my26_discovery_web_03",
+        "r10_kawasaki_my26_discovery_web_04",
+        "r10_kawasaki_my26_discovery_web_05",
+        "r10_kawasaki_my26_warranty_ninja_web_06"
+      ]
+    }
+  ],
+  "variantAddedPaths": [
+    "/variants/0/configuration_evidence/frozenReadinessVariant",
+    "/variants/0/configuration_evidence/fullCorrectedFacts",
+    "/variants/0/configuration_evidence/fullCorrectedOfferIdentity",
+    "/variants/0/configuration_evidence/fullOriginalConflictsAndHolds",
+    "/variants/0/configuration_evidence/fullSourceAnchorRegistry",
+    "/variants/0/configuration_evidence/readinessSourceIds",
+    "/variants/0/configuration_evidence/requiredNulls",
+    "/variants/0/configuration_evidence/researchHoldMappings",
+    "/variants/0/configuration_evidence/runtimeAdapterContract"
+  ],
+  "transportPrecisionNote": "configuration_evidence.sourceIds intentionally expands from 3 to 14 registered evidence/context sources. Original sourceIds remain exact in readinessSourceIds and frozenReadinessVariant. Other original variant values are unchanged. Parent confirmed this intended transport augmentation.",
+  "registryOnlyIssueIDs": [
+    "R10-KAWASAKI-MY26-SPRINGWOOD-INDEX-REDIRECT",
+    "R10-KAWASAKI-MY26-PRICE-FINANCE"
+  ],
+  "registryOnlyIssueNote": "49 complete Issue-shaped holds are retained in configuration researchHoldMappings. Facts contain 47 distinct Issue IDs across 729 exact occurrences; Springwood index redirect and price-finance holds are registry-only, unchanged from readiness. No assertion is made that all 49 are individually attached to Facts.",
+  "buyerCopy": "Entirely withheld: no features, no variant buyer copy, null summary and empty strengths/tradeoffs; publication flag true.",
+  "boundaries": {
+    "manufacturerMY24CannotFillMY26": true,
+    "all53ManufacturerMY26ConfirmationsNull": true,
+    "dry140RawRetainedButValidatedDryNull": true,
+    "curb140DealerConditionalOnly": true,
+    "originDealerHTMLUnavailable": true,
+    "separatelyHashedExtractionNotOriginBytes": true,
+    "enquiryNotAcceptedOrderOrPhysicalStock": true,
+    "roadApprovalUnverified": true,
+    "rankingAndClosedBuildNotPromoted": true,
+    "quarantinedArithmeticNotGrossUsableEnergy": true
+  },
+  "marketWordingNote": "Both frozen market proposedAfter records retain a legacy disclaimer beginning Accepting_orders; both canonical orderStatus fields are accepting_order_requests_advertised. The inherited sentence explicitly rejects a completed transaction/confirmation/allocation, and newer qualifications reject accepted orders and verified stock. Non-blocking inherited wording, not evidence of order acceptance.",
+  "adapterSourceInspection": {
+    "imports": [
+      "pathlib",
+      "json,copy,hashlib",
+      "lxml"
+    ],
+    "writeCalls": [
+      "O.mkdir(exist_ok=True)",
+      "p.write_text(json.dumps(adapter, indent=2, ensure_ascii=False) + '\\n')",
+      "(O / 'adapter-validation.json').write_text(json.dumps(proof, indent=2) + '\\n')"
+    ],
+    "adapterWasExecuted": false
+  },
+  "limitations": [
+    "This does not validate runtime consumption, display, filtering, ranking implementation, or aggregate app regressions.",
+    "Historical frozen captures only. No live current offer, stock, order acceptance, MY26 manufacturer or road-approval verification.",
+    "The 1,715 producer checks are reported in the existing validation file; this audit did not execute that producer.",
+    "No claim that the current app or Surron staging was revalidated; neither was executed or modified."
+  ],
+  "failures": []
+}

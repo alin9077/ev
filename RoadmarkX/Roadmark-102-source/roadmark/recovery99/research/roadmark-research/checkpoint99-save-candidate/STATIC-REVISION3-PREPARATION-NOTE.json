@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "roadmark99.static-preparation-note.v1",
+  "scope": "Only the author generic JSON/text/hash preparation script, not candidate or project code",
+  "actualPreparationError": {
+    "toolChunk": "9749db",
+    "exitCode": 1,
+    "error": "KeyError: 'testSummary'",
+    "cause": "The genuine failed stage receipt lacks testSummary because TAP validation raised before that success-only value was assigned."
+  },
+  "resolution": "Read the actual sealed TAP stdout as text; preserved the failed stage/result unchanged and recorded its real 901/899/2 totals. No test result, output stream or process terminal was fabricated.",
+  "candidateOrProjectCodeExecuted": false
+}

@@ -1,0 +1,15 @@
+{
+  "recordedAtUTC": "2026-10-11T23:22:04.589891+00:00",
+  "observedAtUTC": "2026-10-11T23:12:48Z",
+  "source": "Returned exec tool output for write_stdin session66430, chunk bbd313; no separate original logfile was written",
+  "command": "pnpm typecheck && pnpm lint",
+  "exitCode": 1,
+  "typecheckCompleted": true,
+  "lintPassed": false,
+  "output": "$ eslint src tests scripts\n\n/workspace/scratch/586427eef9f2/roadmark-work/roadmark/tests/source-citation-label92.test.ts\n  193:3  error  Do not assign to the variable `module`. See: https://nextjs.org/docs/messages/no-assign-module-variable  @next/next/no-assign-module-variable\n  214:5  error  Do not assign to the variable `module`. See: https://nextjs.org/docs/messages/no-assign-module-variable  @next/next/no-assign-module-variable\n\n\u2716 2 problems (2 errors, 0 warnings)\n\n[ELIFECYCLE] Command failed with exit code 1.",
+  "remediationReceipt": "roadmark-research/restored92-application/citation-lint-local-rename.json",
+  "retryLintLog": "roadmark-restoration/citation-lint-retry.log",
+  "retryFocusedLog": "roadmark-restoration/citation-focused-renamed.log",
+  "isOriginalProcessLogFile": false,
+  "releaseApproved": false
+}

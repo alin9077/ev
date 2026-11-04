@@ -1,0 +1,66 @@
+{
+  "schema": "roadmark-static-candidate-v1",
+  "status": "unexecuted_static_candidate",
+  "applicationFrozen": true,
+  "sourceRoot": "roadmark-work/roadmark",
+  "designRoot": "roadmark-research/report-adapter93",
+  "scope": "Read-only local unsaved proposal preview; no application wiring",
+  "changes": [
+    {
+      "target": "docs/REVIEW_WORKFLOW.md",
+      "operation": "replace_exact_preimage",
+      "preimageSha256": "8cf28ee6fcf2ebe54fd23549c49947deaf726a4a2cba72b057417729ad4e822b",
+      "preimageFile": "preimages/docs/REVIEW_WORKFLOW.md",
+      "postimageSha256": "d0bde7c41757787b4578cbebe52d7ddfda03e5ad38becf1369caa3abc8da7b07",
+      "candidateFile": "files/docs/REVIEW_WORKFLOW.md"
+    },
+    {
+      "target": "scripts/preview-report-review.ts",
+      "operation": "create_only_if_absent",
+      "preimageSha256": null,
+      "preimageFile": null,
+      "postimageSha256": "d01375f8cecf89fa034de48cff7dc3ec68d336386b578612db83462338027241",
+      "candidateFile": "files/scripts/preview-report-review.ts"
+    },
+    {
+      "target": "src/lib/report-review-dry-run.ts",
+      "operation": "create_only_if_absent",
+      "preimageSha256": null,
+      "preimageFile": null,
+      "postimageSha256": "3aa9b6817764ad53f58ec4598c5a914e81c404f4f88ab750a4f667eafb0aad82",
+      "candidateFile": "files/src/lib/report-review-dry-run.ts"
+    },
+    {
+      "target": "tests/helpers/report-preview-fixture.ts",
+      "operation": "create_only_if_absent",
+      "preimageSha256": null,
+      "preimageFile": null,
+      "postimageSha256": "b5a4eab60c7a2cdfc8c780410948363b9a622105eeb577e8a86d0ccf34275972",
+      "candidateFile": "files/tests/helpers/report-preview-fixture.ts"
+    },
+    {
+      "target": "tests/report-review-cli.test.ts",
+      "operation": "create_only_if_absent",
+      "preimageSha256": null,
+      "preimageFile": null,
+      "postimageSha256": "5cc424f9413da060469ef0bcbfed5d6426f983ea7aad3572542ba17cab78f77c",
+      "candidateFile": "files/tests/report-review-cli.test.ts"
+    },
+    {
+      "target": "tests/report-review-dry-run.test.ts",
+      "operation": "create_only_if_absent",
+      "preimageSha256": null,
+      "preimageFile": null,
+      "postimageSha256": "90264499c2bfb05741e6c56eb594681afb405748201daf76bddf0a494bb6783b",
+      "candidateFile": "files/tests/report-review-dry-run.test.ts"
+    }
+  ],
+  "executedCandidateOrAppCode": false,
+  "acceptanceOwner": "root after independent review and checkpoint93 save",
+  "limitations": [
+    "Transitive public NEXT_PUBLIC_SITE_URL read in unchanged config.ts",
+    "No transactional stdout guarantee on transport failure",
+    "Operator-controlled paths; no malicious parent-directory replacement defense",
+    "Stdin EOF required; no wall-clock IO deadline"
+  ]
+}

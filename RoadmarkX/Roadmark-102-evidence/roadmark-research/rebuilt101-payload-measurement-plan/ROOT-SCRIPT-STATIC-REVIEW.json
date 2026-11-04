@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "roadmark101-rebuilt.route-measurement-script-static-review.v1",
+  "decision": "GO_FOR_CONTROLLED_STATIC_ASSET_ACCOUNTING_AFTER_BASELINE_BUILD_SUCCESS",
+  "reviewedScript": {
+    "path": "roadmark-measurement101/measure_route_assets.py",
+    "sha256": "2ed9277d4f47ba881cf4e9e196bbbdbdc0975e2791d630d8f542dd0c247599da",
+    "bytes": 2433
+  },
+  "scriptExecutedImportedOrSyntaxCompiledByReviewer": false,
+  "blockingFindings": [],
+  "methodFindings": [
+    "HTMLParser lowercases attribute names, so noModule is correctly detected as nomodule by presence.",
+    "Distinct complete external script URLs are counted once in each modern/legacy group. Each listed file is read and hashed; no raw chunk contents are embedded.",
+    "CSS is taken from stylesheet links and kept separate; noModule bytes are excluded from modern total.",
+    "HTML bytes include inline script/Flight exactly once. No standalone RSC response is added.",
+    "The helper writes only its result to stdout; it does not execute Next/application code or mutate the app.",
+    "Before/current production command and environment receipts match; dependency parity is a root-produced35730-entry receipt, not independently replayed by this script reviewer."
+  ],
+  "scope": "Only HTML-listed initial modern script and stylesheet artifact raw bytes plus HTML. Not all runtime or async/prefetched resources, compressed response bytes, browser consumption, wire traffic or speed.",
+  "conditionsBeforeRootAcceptsResult": [
+    "Wait for the actual successful baseline build terminal and no concurrent build/source writers; do not measure partial .next output.",
+    "Run from the workspace root because both app paths are hardcoded relative.",
+    "Confirm baseline build identity is new and current101 BUILD_ID remains oWIsGbFiaYgzVUEyU5Zrg. Retain current build seals.",
+    "Inspect the newly built baseline HTML for query/fragment aliases or script preloads absent from script tags. The exact-URL method can double-charge one emitted file if different query URLs map to it; script preloads alone are outside its script-tag enumeration. These patterns are absent in inspected current101.",
+    "Label the before side freshly rebuilt100 using copied current dependencies; do not reuse the lost-VM31.7% result.",
+    "Retain the measurement tool identity, both source/build/dependency provenance and actual root result/terminal. Rehash current artifact pins after measurement to guard accidental mutation."
+  ],
+  "current101HTMLShapeCheck": {
+    "modernExternalScripts": 9,
+    "legacyExternalScripts": 1,
+    "stylesheetLinks": 1,
+    "queryOrFragmentAliases": [],
+    "scriptPreloadsAbsentFromScriptTags": [],
+    "singleScriptPreloadAlsoCounted": "/_next/static/chunks/0iner2fvyfs3r.js",
+    "html": {
+      "path": "roadmark-work/roadmark/.next/server/app/market.html",
+      "sha256": "79f02a6ac3b36faa175d62e1f1116e9730a3463d3057ca42350bf9eb33d8f79a",
+      "bytes": 100926
+    }
+  },
+  "evidence": [
+    {
+      "path": "roadmark-measurement101/baseline-build-start.json",
+      "sha256": "d2a426ce811384787d0da9f641d1c188b596bf56ecb637cce93017b17c535538",
+      "bytes": 663
+    },
+    {
+      "path": "roadmark-measurement101/dependency-parity.json",
+      "sha256": "3a5bae5ccfd518489f481aef6d7e8303f06e06e8c5bff982f717a9d529dad71d",
+      "bytes": 251
+    },
+    {
+      "path": "roadmark-rebuild101/qa-attempt1/production_build-start.json",
+      "sha256": "05d7c6512f98abf120cddaf94ea5c514b00483b46ba11ab8a3bd2618f6fa48be",
+      "bytes": 473
+    },
+    {
+      "path": "roadmark-rebuild101/qa-attempt1/production_build.json",
+      "sha256": "3eaf41aeced444985000c55d1c96e41fd0d938932080e6484be40f62c20ad3ed",
+      "bytes": 767
+    }
+  ],
+  "limits": [
+    "The ongoing baseline build was not polled, executed or accepted by this reviewer.",
+    "The script is adequate for controlled generated Next assets; it is not a general untrusted HTML/file sandbox.",
+    "No user-perceived performance acceptance or final root signoff is supplied."
+  ]
+}

@@ -1,0 +1,116 @@
+--- roadmark-research/rebuilt101-portable-proof-candidate/verify_rebuilt101_portable.py
++++ roadmark-research/rebuilt101-portable-proof-candidate/revision1/verify_rebuilt101_portable.py
+@@ -25,6 +25,8 @@
+ ALIASES = ['index.html', 'index-b.html', 'public/index.html', 'public/index-b.html']
+ PRODUCTION = ['.next/BUILD_ID', '.next/prerender-manifest.json', '.next/routes-manifest.json', '.next/server/app-paths-manifest.json']
+ STAGES = ['non_http_tests', 'local_http_tests', 'typecheck', 'lint', 'validation', 'production_build', 'portable_build']
++ENVIRONMENT = {'NODE_OPTIONS': '--max-old-space-size=1280 --max-semi-space-size=8', 'NEXT_TELEMETRY_DISABLED': '1'}
++REMOVED_ENVIRONMENT = ['SITE_STATIC_EXPORT', 'NEXT_PUBLIC_SITE_URL', 'NODE_ENV']
+ OPEN_TAG = b'<script id="ev-data" type="application/json">'
+ CLOSE_TAG = b'</script>'
+ NOT_VERIFIED = ['browser_hydration_or_interactions', 'real_phone_performance', 'whole_Next_module_graph',
+@@ -338,6 +340,44 @@
+     }
+ 
+ 
++def required_commands(expected):
++    """Derive all test paths from final frozen inputs, independently of QA's plan."""
++    http = 'tests/local-review.test.ts'
++    tests = sorted(p for p in expected if re.fullmatch(r'tests/.+\.test\.ts', p) and p != http)
++    require(http in expected and tests, 'missing_required_frozen_tests')
++    test = ['node', '--import', 'tsx', '--test', '--test-reporter=tap', '--test-concurrency=1']
++    return {
++        'non_http_tests': [*test, *tests],
++        'local_http_tests': [*test, http],
++        'typecheck': ['node', 'node_modules/typescript/bin/tsc', '--noEmit'],
++        'lint': ['node', 'node_modules/eslint/bin/eslint.js', 'src', 'tests', 'scripts'],
++        'validation': ['node', '--import', 'tsx', 'scripts/validate.ts'],
++        'production_build': ['node', 'node_modules/next/dist/bin/next', 'build'],
++        'portable_build': ['node', '--import', 'tsx', 'scripts/build-portable.ts'],
++    }
++
++
++def verify_execution_request(raw, root, directory, refs, qa):
++    request = parse_json(raw, 'executionRequest')
++    expected_argv = [refs['runner']['path'], '--workspace', str(root), '--output', directory.relative_to(root).as_posix()]
++    for name, refkey in [('baseline-inputs', 'qaBaselineInputs'), ('expected-inputs', 'qaExpectedInputs'),
++                         ('candidate-manifest', 'candidate')]:
++        expected_argv.extend(['--' + name, refs[refkey]['path'], '--' + name + '-sha256', refs[refkey]['sha256']])
++    expected_argv.extend(['--approved-runner-sha256', refs['runner']['sha256'], '--exclusive-workspace-confirmed'])
++    equal(request['argv'], expected_argv, '/qa/executionRequest/argv')
++    equal(request['schema'], 'roadmark99.serial-qa.v1', '/qa/executionRequest/schema')
++    equal(request['configuration'], qa['configuration'], '/qa/executionRequest/configuration')
++    equal(request['runnerSHA256'], refs['runner']['sha256'], '/qa/executionRequest/runner')
++    equal(request['startedAtUTC'], qa['startedAtUTC'], '/qa/executionRequest/start')
++    require(request['exclusiveWorkspaceConfirmedByRoot'] is True, 'exclusive_workspace_confirmation_missing')
++    equal(request['environmentOverrides'], ENVIRONMENT, '/qa/executionRequest/environment')
++    removed = request['removedInheritedEnvironmentNames']
++    require(type(removed) is list and removed == [name for name in REMOVED_ENVIRONMENT if name in removed],
++            'unexpected_removed_inherited_environment_names')
++    return {'exactRequestValidated': True, 'environmentOverrides': ENVIRONMENT,
++            'removedInheritedEnvironmentNames': removed}
++
++
+ def verify_qa(root, args, refs, expected):
+     qa_ref = {'path': args.qa_result, 'sha256': args.qa_result_sha256}
+     qa_raw = pin(root, qa_ref)
+@@ -360,8 +400,11 @@
+     frozen = parse_json(sealed['frozen-inputs.json'], 'frozenInputs')
+     equal(frozen, expected, '/qa/exactParsedMap')
+     equal(canonical_digest(frozen), digest, '/qa/frozenCanonicalDigest')
++    request_observation = verify_execution_request(sealed['execution-request.json'], root, directory, refs, qa)
++    expected_commands = required_commands(expected)
+     plan = parse_json(sealed['stage-plan.json'], 'stagePlan')
+     equal(plan['serialOrder'], STAGES, '/qa/serialOrder')
++    equal(plan['commands'], expected_commands, '/qa/independentlyDerivedStageCommands')
+     equal(set(qa['stageStatus']), set(STAGES), '/qa/stageStatusKeys')
+     equal(set(qa['stageReceipts']), set(STAGES), '/qa/stageReceiptKeys')
+     previous_finish = 0
+@@ -372,6 +415,8 @@
+         receipt_raw = pin(directory, ref)
+         require(sealed.get(ref['path']) == receipt_raw, 'stage_receipt_not_sealed', stage=stage)
+         receipt = parse_json(receipt_raw, stage)
++        equal(receipt['environmentOverrides'], ENVIRONMENT, '/qa/stageEnvironment/' + stage)
++        equal(receipt['removedEnvironmentNames'], REMOVED_ENVIRONMENT, '/qa/stageRemovedEnvironment/' + stage)
+         require(receipt['stage'] == stage and receipt['passed'] is True and
+                 receipt['inputDigestBefore'] == receipt['inputDigestAfter'] == digest and
+                 receipt['sourceError'] is None and receipt['outputOrTestError'] is None, 'stage_receipt_invalid', stage=stage)
+@@ -384,7 +429,7 @@
+                 'stage_not_clean_zero_exit', stage=stage)
+         require(terminal['cwd'] == str(app) and type(terminal['processId']) is int and terminal['processId'] > 0 and
+                 previous_finish <= terminal['startedEpochNs'] <= terminal['finishedEpochNs'], 'stage_launch_or_timing_invalid', stage=stage)
+-        equal(terminal['command'], plan['commands'][stage], '/qa/command/' + stage)
++        equal(terminal['command'], expected_commands[stage], '/qa/command/' + stage)
+         previous_finish = terminal['finishedEpochNs']
+         for stream in ('stdout', 'stderr'):
+             stream_raw = pin(directory, terminal[stream])
+@@ -420,14 +465,18 @@
+     outer_ref = {'path': args.outer_terminal, 'sha256': args.outer_terminal_sha256}
+     outer_raw = pin(root, outer_ref)
+     outer = parse_json(outer_raw, 'rootExternalTerminal')
+-    require(type(outer) is dict and type(outer['exit_code']) is int and outer['exit_code'] == 0 and
+-            type(outer['output']) is str and outer['chunk_id'], 'root_external_terminal_not_zero_exit')
++    require(type(outer) is dict and outer.get('session_id') is None and
++            type(outer['exit_code']) is int and outer['exit_code'] == 0 and
++            type(outer['output']) is str and outer['chunk_id'], 'root_external_terminal_not_completed_zero_exit')
+     return outputs, {
+         'qaResult': {**qa_ref, 'bytes': len(qa_raw)}, 'rootSuppliedExternalTerminal': {**outer_ref, 'bytes': len(outer_raw)},
+         'frozenInputs': {'path': str(directory / 'frozen-inputs.json'), **qa['evidence']['frozen-inputs.json'],
+                          'canonicalDigest': digest, 'exactParsedMapEqualsFinalQAInputs': True},
+         'producerStages': stage_refs, 'testTallies': tallies, 'actualBuildID': build_id,
+         'artifacts': qa['artifacts'], 'allSevenStageReceiptsValidated': True,
++        'allStageCommandsIndependentlyDerived': True, 'executionRequest': request_observation,
++        'selectedFrozenTestPaths': expected_commands['non_http_tests'][6:] + ['tests/local-review.test.ts'],
++        'outerTerminalHasNoActiveSession': True,
+         'actualRunBoundary': 'Root-supplied genuine terminal and locally sealed producer evidence; not signed attestation',
+     }
+ 
+@@ -480,7 +529,7 @@
+ 
+ def main():
+     parser = argparse.ArgumentParser(description=__doc__)
+-    parser.add_argument('--workspace-root', type=Path, default=Path(__file__).resolve().parents[2])
++    parser.add_argument('--workspace-root', type=Path, default=Path(__file__).resolve().parents[3])
+     for name in ('qa-result', 'qa-result-sha256', 'outer-terminal', 'outer-terminal-sha256', 'expected-html101-sha256'):
+         parser.add_argument('--' + name, required=True)
+     args = parser.parse_args()

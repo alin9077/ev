@@ -1,0 +1,52 @@
+{
+  "appliedAtUTC": "2026-10-12T08:07:56.121767+00:00",
+  "rootApplied": true,
+  "baselineInputs": 1675,
+  "finalInputs": 1678,
+  "candidateSHA256": "52061d869f2e1cab0ca3cec6252a57200f251bb4b7317337dd3f9cf168ebaa66",
+  "reviewSHA256": "ff08ea1eb44d828136bc5da242c776ad98752ebd859519ac9653a68675a01c64",
+  "files": [
+    {
+      "path": "data/market-inventory-2026-10-10.json",
+      "operation": "replace",
+      "beforeSHA256": "ea4e4f7120e7739de987405740641997c15c6bb0704082724ae3d38055b6fdfa",
+      "beforeBytes": 1643818,
+      "afterSHA256": "2469610f9bea19221ed99483b01ca23ca4f9bb62356a873398e9895c2eb838ac",
+      "afterBytes": 1653304
+    },
+    {
+      "path": "qa/checkpoint100-market-fixture.json",
+      "operation": "add",
+      "beforeSHA256": null,
+      "beforeBytes": null,
+      "afterSHA256": "6ca6057ef2db97fb7aa1251e307f9d419c88dadfe67d2390014ccd436f967837",
+      "afterBytes": 47786
+    },
+    {
+      "path": "tests/checkpoint100-market.test.ts",
+      "operation": "add",
+      "beforeSHA256": null,
+      "beforeBytes": null,
+      "afterSHA256": "6775f4db0d4f78753527e266634d25aa1a10339489f25fa89b7daa002319fd78",
+      "afterBytes": 10000
+    },
+    {
+      "path": "tests/helpers/checkpoint100-market-history.ts",
+      "operation": "add",
+      "beforeSHA256": null,
+      "beforeBytes": null,
+      "afterSHA256": "a388c1bc6f141ca96cb4175711089500f8f8388146125720e7144152376063f2",
+      "afterBytes": 3010
+    },
+    {
+      "path": "tests/helpers/checkpoint99-history.ts",
+      "operation": "replace",
+      "beforeSHA256": "80ef31bac488635dbf69fdac7b7d4dbd2812ae53a6a08f3e8b68de7d2efe71d7",
+      "beforeBytes": 6551,
+      "afterSHA256": "4493739f161f9838ffd571f85aff34daa97b032d9e87c83b9bd5d20b36d9e1ed",
+      "afterBytes": 7157
+    }
+  ],
+  "testsRun": false,
+  "generatedArtifactsStillCheckpoint99": true
+}
