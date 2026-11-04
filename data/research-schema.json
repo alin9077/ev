@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "EV research structural schema (reconstructed from supplied snapshot)",
+  "title": "EV research structural schema (reconstructed from supplied snapshot; extended by the 2026-10-16 research import)",
   "type": "object",
   "required": [
     "schema_version",
@@ -63,7 +63,36 @@
           "range_km",
           "record_state",
           "source_ids"
-        ]
+        ],
+        "properties": {
+          "vehicle_class": {
+            "enum": [
+              "passenger",
+              "ute",
+              "van",
+              "truck",
+              "bus",
+              "motorcycle"
+            ],
+            "description": "Added by the 2026-10-16 research import; absent in the supplied base file (treated as passenger)."
+          },
+          "record_state": {
+            "enum": [
+              "current_or_order_listed",
+              "outgoing",
+              "announced_provisional"
+            ]
+          },
+          "drive": {
+            "enum": [
+              "FWD",
+              "RWD",
+              "AWD",
+              "Unknown"
+            ],
+            "description": "Imported variants use this enum; the supplied records already did."
+          }
+        }
       }
     },
     "trim_equipment": {
@@ -84,7 +113,23 @@
           "value",
           "conditions",
           "source_ids"
-        ]
+        ],
+        "properties": {
+          "status": {
+            "enum": [
+              "standard",
+              "conditional",
+              "not_verified",
+              "subjective",
+              "unavailable",
+              "optional",
+              "not_applicable"
+            ]
+          },
+          "grade": {
+            "$ref": "#/$defs/grade"
+          }
+        }
       }
     },
     "update_eligibility": {
@@ -148,5 +193,78 @@
       }
     }
   },
-  "additionalProperties": true
+  "additionalProperties": true,
+  "$defs": {
+    "grade": {
+      "enum": [
+        "confirmed",
+        "reported",
+        "established",
+        "check",
+        "not_published",
+        "unrated"
+      ],
+      "description": "Per-fact verification grade added by the 2026-10-16 research import. Visible (isVerifiedFact in src/lib/verification.ts) = a value with grade confirmed, reported or established."
+    },
+    "researchImport": {
+      "description": "data/research-import-2026-10-16.json, written by scripts/import-dot-research.ts and read by src/lib/data.ts as an overlay.",
+      "type": "object",
+      "required": [
+        "schema_version",
+        "import_id",
+        "as_of",
+        "models",
+        "variants",
+        "variant_patches",
+        "trim_equipment",
+        "eligibility",
+        "feature_defaults",
+        "features",
+        "feature_patches",
+        "facts",
+        "sources"
+      ],
+      "properties": {
+        "models": {
+          "type": "array",
+          "description": "New model/generation records: id, brand, model, optional generation."
+        },
+        "variants": {
+          "type": "array",
+          "description": "New variants in the Variant schema plus vehicle_class, availability_scope and specification_evidence_date (the defaults for their facts)."
+        },
+        "variant_patches": {
+          "type": "object",
+          "description": "Variant id -> sourced updates to an original variant record (record_state, empty scalar fields)."
+        },
+        "trim_equipment": {
+          "type": "array"
+        },
+        "eligibility": {
+          "type": "array",
+          "description": "Only software-update records that hold content; others expand to the 'Research pending' default."
+        },
+        "feature_defaults": {
+          "type": "object",
+          "description": "Variant id -> the 'Needs confirmation' equipment row that unstored criteria expand to."
+        },
+        "features": {
+          "type": "object",
+          "description": "New variants: variant id -> stored equipment rows (feature_evidence minus variant_id/model_id), each with grade."
+        },
+        "feature_patches": {
+          "type": "object",
+          "description": "Original variants: variant id -> criterion -> fields that grade or replace the existing row."
+        },
+        "facts": {
+          "type": "object",
+          "description": "Variant id -> fact key (the 22 slots) -> fields of the fact. grade is always present; scope, date, comparisonBasis and market are omitted when they equal the variant/basis defaults."
+        },
+        "sources": {
+          "type": "array",
+          "description": "New sources in the Source schema, deduplicated by URL."
+        }
+      }
+    }
+  }
 }
