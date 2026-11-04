@@ -1,7 +1,83 @@
 import type { Car, Fact, Feature } from "./types";
 import { BASELINE } from "./config";
 
-/** One current representative per existing family; this is not a sales ranking. */
+/** The vehicle-type filter. Utes sit with passenger cars: there are only a few and their figures are graded. */
+export const vehicleTypes = [
+  {
+    value: "cars",
+    label: "Passenger cars & utes",
+    classes: ["passenger", "ute"],
+  },
+  { value: "van", label: "Vans", classes: ["van"] },
+  { value: "truck", label: "Trucks", classes: ["truck"] },
+  { value: "bus", label: "Buses", classes: ["bus"] },
+  { value: "motorcycle", label: "Motorcycles", classes: ["motorcycle"] },
+  { value: "all", label: "All vehicles", classes: [] as string[] },
+] as const;
+export const DEFAULT_TYPE = "cars";
+export function vehicleType(value: string | null | undefined) {
+  return (
+    vehicleTypes.find((t) => t.value === value) ??
+    vehicleTypes.find((t) => t.value === DEFAULT_TYPE)!
+  );
+}
+export function inVehicleType(car: Pick<Car, "vehicleClass">, type: string) {
+  const t = vehicleType(type);
+  return (
+    !t.classes.length || (t.classes as string[]).includes(car.vehicleClass)
+  );
+}
+/** The ten best-selling EVs the guide began with come first; every other family follows by brand. */
+const FEATURED_FAMILIES = [
+  "byd-sealion-7",
+  "geely-ex5",
+  "zeekr-7x",
+  "jaecoo-j5-ev",
+  "byd-atto-2",
+  "tesla-model-3",
+  "kia-ev5",
+  "kia-ev3",
+  "byd-atto-3",
+  "byd-atto-1",
+];
+export function isFeatured(family: string) {
+  return FEATURED_FAMILIES.includes(family);
+}
+/** Every family except the Model Y baseline, featured first, then by brand and model. */
+export function familyOrder(
+  cars: Pick<Car, "family" | "modelId" | "brand" | "model">[],
+) {
+  const first = new Map<string, Pick<Car, "brand" | "model">>();
+  for (const c of cars)
+    if (c.modelId !== "tesla_model_y" && !first.has(c.family))
+      first.set(c.family, c);
+  const rank = (family: string) => {
+    const i = FEATURED_FAMILIES.indexOf(family);
+    return i < 0 ? FEATURED_FAMILIES.length : i;
+  };
+  return [...first.keys()].sort((a, b) => {
+    const [x, y] = [first.get(a)!, first.get(b)!];
+    return (
+      rank(a) - rank(b) ||
+      (rank(a) < FEATURED_FAMILIES.length
+        ? 0
+        : x.brand.localeCompare(y.brand, "en") ||
+          x.model.localeCompare(y.model, "en", { numeric: true }))
+    );
+  });
+}
+/** The lowest-priced current trim of a family, by verified prices only; unconfirmed prices rank last. */
+export function defaultTrim(group: Car[]) {
+  const current = group.filter(
+    (c) => c.availability === "current_or_order_listed",
+  );
+  return [...(current.length ? current : group)].sort(
+    (a, b) =>
+      Number(a.facts.price_aud?.value ?? Infinity) -
+      Number(b.facts.price_aud?.value ?? Infinity),
+  )[0];
+}
+/** One current representative per family; this is not a sales ranking. */
 export function fleetSelection(cars: Car[], query: URLSearchParams) {
   const baseline =
     cars.find(
@@ -13,35 +89,76 @@ export function fleetSelection(cars: Car[], query: URLSearchParams) {
         c.modelId === "tesla_model_y",
     )?.id ||
     BASELINE;
-  const families = [
-    ...new Set(
-      cars.filter((c) => c.modelId !== "tesla_model_y").map((c) => c.family),
-    ),
-  ];
-  const requested = (query.get("fleet") || query.get("cars") || "").split(",");
-  const alternatives = families.map((family) => {
-    const group = cars.filter((c) => c.family === family);
-    const selected = group.find((c) => requested.includes(c.id));
-    const current = group.filter(
-      (c) => c.availability === "current_or_order_listed",
-    );
-    return (
-      selected ||
-      [...(current.length ? current : group)].sort(
-        (a, b) =>
-          Number(a.facts.price_aud.value ?? Infinity) -
-          Number(b.facts.price_aud.value ?? Infinity),
-      )[0]
-    );
-  });
-  const current = alternatives.findIndex(
-    (c) => c.family === query.get("focus") || c.id === query.get("active"),
+  const groups = new Map<string, Car[]>();
+  for (const c of cars)
+    if (c.modelId !== "tesla_model_y") {
+      const group = groups.get(c.family);
+      if (group) group.push(c);
+      else groups.set(c.family, [c]);
+    }
+  const requested = new Set(
+    (query.get("fleet") || query.get("cars") || "").split(","),
   );
-  return {
+  const ids = familyOrder(cars).map((family) => {
+    const group = groups.get(family)!;
+    return (group.find((c) => requested.has(c.id)) ?? defaultTrim(group)).id;
+  });
+  const byId = new Map(cars.map((c) => [c.id, c]));
+  const focusFamily = query.get("focus"),
+    active = query.get("active");
+  const focus = ids.find(
+    (id) => byId.get(id)!.family === focusFamily || id === active,
+  );
+  // A link to a family outside the default filter opens on that family's type.
+  const type = query.get("type")
+    ? vehicleType(query.get("type")).value
+    : focus && !inVehicleType(byId.get(focus)!, DEFAULT_TYPE)
+      ? ((
+          vehicleTypes.find((t) =>
+            (t.classes as string[]).includes(byId.get(focus)!.vehicleClass),
+          ) ?? vehicleTypes[0]
+        ).value as string)
+      : DEFAULT_TYPE;
+  const q = (query.get("q") || "").slice(0, 60);
+  const state = {
     baseline,
-    ids: alternatives.map((c) => c.id),
-    index: Math.max(0, current),
+    ids,
+    index: 0,
     priority: query.get("priority") || "",
+    type,
+    q,
+  };
+  const shown = fleetView(cars, state).ids;
+  return {
+    ...state,
+    index: Math.max(
+      0,
+      shown.findIndex((id) => id === focus),
+    ),
+  };
+}
+export type FleetSelection = ReturnType<typeof fleetSelection>;
+/** The alternatives a type and search show; a search with no match leaves the type's list whole. */
+export function fleetView(
+  cars: Pick<Car, "id" | "brand" | "model" | "vehicleClass">[],
+  state: { ids: string[]; type: string; q: string },
+) {
+  const byId = new Map(cars.map((c) => [c.id, c]));
+  const typed = state.ids.filter((id) =>
+    inVehicleType(byId.get(id)!, state.type),
+  );
+  const words = state.q.toLowerCase().split(/\s+/).filter(Boolean);
+  const matched = words.length
+    ? typed.filter((id) => {
+        const c = byId.get(id)!;
+        const text = `${c.brand} ${c.model}`.toLowerCase();
+        return words.every((w) => text.includes(w));
+      })
+    : typed;
+  return {
+    ids: matched.length ? matched : typed,
+    noMatch: words.length > 0 && !matched.length,
+    total: typed.length,
   };
 }
 export function featureCondition(f: Feature) {
@@ -67,4 +184,29 @@ export function factCondition(f: Fact) {
   if (f.key === "range_km")
     return "Reported for this version; not yet confirmed on the maker's Australian sheet.";
   return "Carried over from a closely related version; not yet confirmed for this one.";
+}
+/** How many cars either side of the one in view are drawn and fetched. */
+export const WINDOW = 4;
+const groupCache = new WeakMap<readonly Car[], Map<string, Car[]>>();
+/** Variants grouped by family, in catalogue order. */
+export function familyGroups(cars: readonly Car[]) {
+  let groups = groupCache.get(cars);
+  if (!groups) {
+    groups = new Map();
+    for (const c of cars) {
+      const group = groups.get(c.family);
+      if (group) group.push(c);
+      else groups.set(c.family, [c]);
+    }
+    groupCache.set(cars, groups);
+  }
+  return groups;
+}
+/** The picked trims that differ from their family's default: all a shared link needs to keep. */
+export function changedTrims(cars: readonly Car[], ids: string[]) {
+  const byId = new Map(cars.map((c) => [c.id, c]));
+  const groups = familyGroups(cars);
+  return ids.filter(
+    (id) => defaultTrim(groups.get(byId.get(id)!.family)!).id !== id,
+  );
 }

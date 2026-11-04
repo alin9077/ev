@@ -17,9 +17,20 @@ const Context = createContext<{
   groups: Record<string, Group>;
   register: (key: string, delta: number) => void;
   remember: (number: number, el: HTMLElement) => void;
-}>({ prefix: "notes", groups: {}, register: () => {}, remember: () => {} });
+  addSources: (sources: Source[]) => void;
+}>({
+  prefix: "notes",
+  groups: {},
+  register: () => {},
+  remember: () => {},
+  addSources: () => {},
+});
+/** Lets a page that loads cars later add the sources those cars cite. */
+export function useAddSources() {
+  return useContext(Context).addSources;
+}
 export function FootnoteProvider({
-  sources,
+  sources: initialSources,
   children,
   prefix = "notes",
 }: {
@@ -28,6 +39,20 @@ export function FootnoteProvider({
   prefix?: string;
 }) {
   const [groups, setGroups] = useState<Record<string, Group>>({});
+  const [extra, setExtra] = useState<Source[]>([]);
+  const sources = useMemo(
+    () => (extra.length ? [...initialSources, ...extra] : initialSources),
+    [initialSources, extra],
+  );
+  const addSources = useCallback(
+    (list: Source[]) =>
+      setExtra((old) => {
+        const known = new Set(old.map((s) => s.id));
+        const fresh = list.filter((s) => !known.has(s.id));
+        return fresh.length ? [...old, ...fresh] : old;
+      }),
+    [],
+  );
   const origins = useRef(new Map<number, HTMLElement>());
   const register = useCallback(
     (key: string, delta: number) =>
@@ -51,8 +76,8 @@ export function FootnoteProvider({
     origins.current.set(number, el);
   }, []);
   const context = useMemo(
-    () => ({ prefix, groups, register, remember }),
-    [prefix, groups, register, remember],
+    () => ({ prefix, groups, register, remember, addSources }),
+    [prefix, groups, register, remember, addSources],
   );
   const active = Object.values(groups)
     .filter((g) => g.count > 0)

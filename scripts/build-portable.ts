@@ -1,12 +1,16 @@
 import fs from "node:fs";
 import path from "node:path";
 import { build } from "esbuild";
+import { toWire } from "../src/lib/pack-wire";
 import {
   catalogue,
   pickerCatalogue,
-  pack,
+  publicPack,
+  publicSources,
   research,
-  counts,
+  publicCounts,
+  publicEquipment,
+  verificationCounts,
 } from "../src/lib/data";
 async function main() {
   const root = process.cwd();
@@ -27,6 +31,7 @@ async function main() {
       "next/image": path.join(root, "src/portable/image.tsx"),
       "next/navigation": path.join(root, "src/portable/navigation.ts"),
       "@/lib/data": path.join(root, "src/portable/data.ts"),
+      "@/lib/pack-source": path.join(root, "src/portable/pack-source.ts"),
       "@/lib/chapter-art-src": path.join(
         root,
         "src/portable/chapter-art-src.ts",
@@ -36,14 +41,17 @@ async function main() {
   const d = research();
   const data = {
     cars: pickerCatalogue(),
-    packs: Object.fromEntries(catalogue().map((c) => [c.id, pack(c.id)])),
+    packs: Object.fromEntries(
+      catalogue().map((c) => [c.id, toWire(publicPack(c.id))]),
+    ),
     research: {
-      sources: d.sources,
+      sources: publicSources(),
       criteria: d.criteria,
       publication_issues: d.publication_issues,
-      trim_equipment: d.trim_equipment,
     },
-    counts: counts(),
+    equipment: publicEquipment(),
+    verification: verificationCounts(),
+    counts: publicCounts(),
     art: Object.fromEntries(
       fs
         .readdirSync("public/media/chapters")

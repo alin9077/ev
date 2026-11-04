@@ -3,6 +3,12 @@ import { useEffect, useRef, useState } from "react";
 import type { Car } from "@/lib/types";
 import { availabilityLabels } from "@/lib/config";
 import { formatFact } from "@/lib/compare";
+import {
+  DEFAULT_TYPE,
+  inVehicleType,
+  vehicleType,
+  vehicleTypes,
+} from "@/lib/fleet";
 export function VariantPicker({
   cars,
   selected,
@@ -20,6 +26,8 @@ export function VariantPicker({
 }) {
   const [open, setOpen] = useState(false),
     [q, setQ] = useState(""),
+    [type, setType] = useState<string>(DEFAULT_TYPE),
+    [brand, setBrand] = useState("all"),
     [availability, setAvailability] = useState("current_or_order_listed"),
     [drive, setDrive] = useState("all"),
     [budget, setBudget] = useState(""),
@@ -40,27 +48,42 @@ export function VariantPicker({
     setOpen(false);
     requestAnimationFrame(() => trigger.current?.focus());
   };
-  const filtered = cars.filter(
-    (c) =>
-      (!baseline || c.modelId === "tesla_model_y") &&
-      !exclude.includes(c.id) &&
-      `${c.brand} ${c.model} ${c.trim} ${c.generation}`
-        .toLowerCase()
-        .includes(q.toLowerCase()) &&
-      (availability === "all" || c.availability === availability) &&
-      (drive === "all" || c.drive === drive) &&
-      (seats === "all" || c.facts.seats.value === Number(seats)) &&
-      (!budget ||
-        c.facts.price_aud.value === null ||
-        Number(c.facts.price_aud.value) <= Number(budget)) &&
-      (!range ||
-        c.facts.range_km.value === null ||
-        Number(c.facts.range_km.value) >= Number(range)) &&
-      (basis === "all" ||
-        (basis === "reported"
-          ? c.facts.price_aud.basis.toLowerCase().includes("reported")
-          : !c.facts.price_aud.basis.toLowerCase().includes("reported"))),
+  // The baseline picker only ever offers Model Y; every other picker spans the whole catalogue.
+  const typed = baseline ? cars : cars.filter((c) => inVehicleType(c, type));
+  const brands = [...new Set(typed.map((c) => c.brand))].sort((a, b) =>
+    a.localeCompare(b, "en"),
   );
+  const brandFilter = brands.includes(brand) ? brand : "all";
+  const filtered = typed
+    .filter(
+      (c) =>
+        (!baseline || c.modelId === "tesla_model_y") &&
+        (brandFilter === "all" || c.brand === brandFilter) &&
+        !exclude.includes(c.id) &&
+        `${c.brand} ${c.model} ${c.trim} ${c.generation}`
+          .toLowerCase()
+          .includes(q.toLowerCase()) &&
+        (availability === "all" || c.availability === availability) &&
+        (drive === "all" || c.drive === drive) &&
+        (seats === "all" || c.facts.seats.value === Number(seats)) &&
+        (!budget ||
+          c.facts.price_aud.value === null ||
+          Number(c.facts.price_aud.value) <= Number(budget)) &&
+        (!range ||
+          c.facts.range_km.value === null ||
+          Number(c.facts.range_km.value) >= Number(range)) &&
+        (basis === "all" ||
+          (basis === "reported"
+            ? c.facts.price_aud.basis.toLowerCase().includes("reported")
+            : !c.facts.price_aud.basis.toLowerCase().includes("reported"))),
+    )
+    // Brands sit together, A to Z, with the model families inside each.
+    .sort(
+      (a, b) =>
+        a.brand.localeCompare(b.brand, "en") ||
+        a.model.localeCompare(b.model, "en", { numeric: true }) ||
+        a.family.localeCompare(b.family),
+    );
   const groups = [...new Set(filtered.map((c) => c.family))];
   return (
     <>
@@ -116,6 +139,34 @@ export function VariantPicker({
             />
           </label>
           <div className="picker-filters">
+            {!baseline && (
+              <label>
+                Vehicle type
+                <select value={type} onChange={(e) => setType(e.target.value)}>
+                  {vehicleTypes.map((t) => (
+                    <option value={t.value} key={t.value}>
+                      {t.label}
+                    </option>
+                  ))}
+                </select>
+              </label>
+            )}
+            {!baseline && (
+              <label>
+                Brand
+                <select
+                  value={brandFilter}
+                  onChange={(e) => setBrand(e.target.value)}
+                >
+                  <option value="all">All brands ({brands.length})</option>
+                  {brands.map((b) => (
+                    <option value={b} key={b}>
+                      {b}
+                    </option>
+                  ))}
+                </select>
+              </label>
+            )}
             <label>
               Availability
               <select
@@ -189,6 +240,8 @@ export function VariantPicker({
               className="text-button"
               onClick={() => {
                 setQ("");
+                setType(DEFAULT_TYPE);
+                setBrand("all");
                 setAvailability("all");
                 setDrive("all");
                 setBudget("");
@@ -224,13 +277,16 @@ export function VariantPicker({
                         <strong>{c.trim}</strong>
                         <span className="small">{c.generation}</span>
                         <span className="small">
-                          {availabilityLabels[c.availability]} · {c.drive} ·{" "}
-                          {c.facts.seats.value} seats
+                          {availabilityLabels[c.availability]} · {c.drive}
+                          {typeof c.facts.seats.value === "number" &&
+                            ` · ${c.facts.seats.value} seats`}
                         </span>
                       </span>
                       <span>
                         {formatFact(c.facts.price_aud)}
-                        <span className="small">Dated list/base</span>
+                        {c.facts.price_aud.value !== null && (
+                          <span className="small">Dated list/base</span>
+                        )}
                         {c.facts.price_aud.status === "conditional" && (
                           <span className="small">Needs confirmation</span>
                         )}
@@ -240,7 +296,12 @@ export function VariantPicker({
               </section>
             ))}
             {!filtered.length && (
-              <p>No matching variants. Try widening your filters.</p>
+              <p>
+                No matching variants
+                {!baseline && type !== "all"
+                  ? ` in ${vehicleType(type).label.toLowerCase()}. Try “All vehicles” or widen your filters.`
+                  : ". Try widening your filters."}
+              </p>
             )}
           </div>
         </dialog>

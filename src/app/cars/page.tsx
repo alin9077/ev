@@ -1,6 +1,6 @@
 import { WithEvidence } from "@/components/with-evidence";
 import Explorer from "@/components/explorer";
-import { pickerCatalogue, research } from "@/lib/data";
+import { pickerCatalogue, publicEquipment } from "@/lib/data";
 import type { Query } from "@/lib/page-props";
 export const metadata = {
   title: "Explore the Australian EV shortlist",
@@ -16,22 +16,12 @@ export default async function Cars({
   const initial = Object.fromEntries(
     Object.entries(query).filter(([, v]) => typeof v === "string"),
   ) as Record<string, string>;
-  const equipment = Object.fromEntries(
-    research().trim_equipment.map((e) => [
-      e.variant_id,
-      Object.fromEntries(
-        ["front_ventilated", "hud", "adaptive_damping", "power_roof_shade"].map(
-          (k) => [k, typeof e[k] === "boolean" ? e[k] : null],
-        ),
-      ),
-    ]),
-  );
   return (
-    <WithEvidence>
+    <WithEvidence sources={[]}>
       <Explorer
         cars={pickerCatalogue()}
         initial={initial}
-        equipment={equipment}
+        equipment={publicEquipment()}
       />
     </WithEvidence>
   );

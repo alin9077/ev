@@ -4,6 +4,7 @@ import {
   useCallback,
   useContext,
   useEffect,
+  useLayoutEffect,
   useRef,
   useState,
 } from "react";
@@ -15,6 +16,29 @@ type Swipe = {
   move: (index: number, origin?: HTMLDivElement) => void;
 };
 const Context = createContext<Swipe | null>(null);
+/**
+ * The distance between neighbouring cards in a track, from two drawn ones (or one and the gap).
+ * Zero where cards are not laid out in a row, as in print.
+ */
+function stepOf(el: HTMLElement) {
+  const cards = el.querySelectorAll<HTMLElement>(":scope > .swipe-card");
+  if (!cards.length) return 0;
+  const [first, second] = [cards[0].getBoundingClientRect(), cards[1]];
+  if (second) return second.getBoundingClientRect().left - first.left;
+  return first.width + (parseFloat(getComputedStyle(el).columnGap) || 0);
+}
+/** A run of undrawn cards: it takes the room they would, gaps included. */
+function Spacer({ cards }: { cards: number }) {
+  return (
+    <div
+      className="swipe-spacer"
+      aria-hidden="true"
+      style={{
+        flex: `0 0 calc(${cards} * (var(--swipe-card-width) + var(--swipe-gap)) - var(--swipe-gap))`,
+      }}
+    />
+  );
+}
 export function SwipeProvider({
   children,
   count,
@@ -33,40 +57,64 @@ export function SwipeProvider({
   useEffect(() => {
     change.current = onChange;
   }, [onChange]);
-  const align = useCallback((el: HTMLDivElement, next: number) => {
-    const card = el.children[next] as HTMLElement | undefined;
-    if (card) {
-      const target =
-        card.offsetLeft - (el.firstElementChild as HTMLElement).offsetLeft;
-      if (Math.abs(el.scrollLeft - target) > 1) el.scrollLeft = target;
-    }
-  }, []);
+  // A track draws only the cards near the reader and stands spacers in for the rest, so a card is
+  // found by arithmetic (its index times the step), not by looking it up among the children.
+  const align = useCallback(
+    (els: Iterable<HTMLDivElement>, next: number, except?: HTMLDivElement) => {
+      // Every track is measured before any is moved: with dozens of rows, interleaving the two
+      // would lay the page out again for each one.
+      const steps = [...els]
+        .filter((el) => el !== except)
+        .map((el) => [el, stepOf(el)] as const);
+      for (const [el, step] of steps)
+        if (step > 0 && Math.abs(el.scrollLeft - next * step) > 1)
+          el.scrollLeft = next * step;
+    },
+    [],
+  );
+  const origin = useRef<HTMLDivElement | undefined>(undefined);
   const move = useCallback(
-    (next: number, origin?: HTMLDivElement) => {
+    (next: number, from?: HTMLDivElement) => {
       if (!Number.isFinite(next)) return;
       next = Math.max(0, Math.min(count - 1, next));
       const changed = current.current !== next;
-      if (!changed && origin) return;
+      if (!changed && from) return;
       current.current = next;
       if (changed) {
+        origin.current = from;
         setIndex(next);
         change.current(next);
-      }
-      tracks.current.forEach((el) => {
-        if (el !== origin) align(el, next);
-      });
+      } else align(tracks.current, next, from);
     },
     [align, count],
   );
+  // The other tracks follow once the cards around the new place are drawn: a jump far from the old
+  // place would otherwise land on a spacer, which scroll snapping would pull to the nearest card.
+  useLayoutEffect(() => {
+    const from = origin.current;
+    origin.current = undefined;
+    align(tracks.current, index, from);
+  }, [index, align]);
+  // A new list (the type or search changed) starts every track at its opening place at once. Left to
+  // an effect, the browser first clamps each track's old offset to the shorter list and reports that.
+  const listLength = useRef(count);
+  useLayoutEffect(() => {
+    if (listLength.current === count) return;
+    listLength.current = count;
+    current.current = initialIndex;
+    origin.current = undefined;
+    setIndex(initialIndex);
+    align(tracks.current, initialIndex);
+  }, [count, initialIndex, align]);
   const register = useCallback(
     (el: HTMLDivElement) => {
       tracks.current.add(el);
-      align(el, current.current);
+      align([el], current.current);
       let width = el.clientWidth;
       const resize = new ResizeObserver(() => {
         if (el.clientWidth !== width) {
           width = el.clientWidth;
-          align(el, current.current);
+          align([el], current.current);
         }
       });
       resize.observe(el);
@@ -108,18 +156,15 @@ export function SwipeTrack({
     const el = ref.current;
     if (!el) return;
     const resize = new ResizeObserver(() => {
-      const first = el.children[0] as HTMLElement;
-      const second = el.children[1] as HTMLElement;
-      const step = second.offsetLeft - first.offsetLeft;
-      if (step) setVisibleCount(Math.max(1, Math.ceil(el.clientWidth / step)));
+      const step = stepOf(el);
+      if (step > 0)
+        setVisibleCount(Math.max(1, Math.ceil(el.clientWidth / step)));
     });
     resize.observe(el);
     return () => resize.disconnect();
   }, []);
   function nearest(el: HTMLDivElement) {
-    const first = el.children[0] as HTMLElement,
-      second = el.children[1] as HTMLElement;
-    const step = second.offsetLeft - first.offsetLeft;
+    const step = stepOf(el);
     // Print lays every card vertically, so there is no horizontal step.
     if (step <= 0) return index;
     return Math.max(
@@ -216,7 +261,7 @@ export function SwipeTrack({
           if (drag.current?.moved) e.preventDefault();
         }}
       >
-        {children.map((child, i) => (
+        {slots(children, (child, i) => (
           <div
             className="swipe-card"
             key={i}
@@ -234,4 +279,20 @@ export function SwipeTrack({
       </div>
     </div>
   );
+}
+/** Draws the cards that have content and one spacer for each run of those that do not. */
+function slots(
+  children: React.ReactNode[],
+  card: (child: React.ReactNode, i: number) => React.ReactNode,
+) {
+  const out: React.ReactNode[] = [];
+  for (let i = 0; i < children.length;) {
+    if (children[i]) out.push(card(children[i], i++));
+    else {
+      const from = i;
+      while (i < children.length && !children[i]) i++;
+      out.push(<Spacer key={`gap-${from}`} cards={i - from} />);
+    }
+  }
+  return out;
 }

@@ -1,8 +1,7 @@
 import { WithEvidence } from "@/components/with-evidence";
 import FleetExperience from "@/components/fleet-experience";
 import type { Query } from "@/lib/page-props";
-import { catalogue, pack, research } from "@/lib/data";
-import { fleetSelection } from "@/lib/fleet";
+import { fleetProps } from "@/lib/fleet-props";
 /** The B version of the homepage: the same comparison in the second look. */
 export const metadata = {
   title: "Tesla Model Y vs Australia’s leading EVs. (B)",
@@ -21,14 +20,10 @@ export default async function HomeB({
       (e): e is [string, string] => typeof e[1] === "string",
     ),
   );
+  const { sources, ...props } = fleetProps(query);
   return (
-    <WithEvidence>
-      <FleetExperience
-        allPacks={catalogue().map((c) => pack(c.id))}
-        initial={fleetSelection(catalogue(), query)}
-        criteria={research().criteria}
-        version="b"
-      />
+    <WithEvidence sources={sources}>
+      <FleetExperience {...props} version="b" />
     </WithEvidence>
   );
 }

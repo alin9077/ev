@@ -4,19 +4,22 @@ import { useRouter } from "next/navigation";
 import type { Car, Pack } from "@/lib/types";
 import { EvidenceDrawer, Notice, SoftwareTimeline, type Evidence } from "./ui";
 import { VariantPicker } from "./picker";
+import { usePacks } from "./use-packs";
 export default function Software({
   cars,
   pack: initialPack,
-  allPacks,
+  local = false,
 }: {
   cars: Car[];
   pack: Pack;
-  allPacks?: Pack[];
+  /** A static page cannot render a chosen car on the server, so it fetches the pack and updates the link itself. */
+  local?: boolean;
 }) {
   const [selected, setSelected] = useState(initialPack.car.id);
-  const pack = allPacks?.find((p) => p.car.id === selected) || initialPack;
+  const { packs, want } = usePacks([initialPack]);
+  const pack = (local && packs.get(selected)) || initialPack;
   useEffect(() => {
-    if (!allPacks) return;
+    if (!local) return;
     const restore = () =>
       setSelected(
         new URLSearchParams(location.search).get("car") || initialPack.car.id,
@@ -24,7 +27,10 @@ export default function Software({
     queueMicrotask(restore);
     window.addEventListener("popstate", restore);
     return () => window.removeEventListener("popstate", restore);
-  }, [allPacks, initialPack.car.id]);
+  }, [local, initialPack.car.id]);
+  useEffect(() => {
+    if (local) want([selected]);
+  }, [local, want, selected]);
   const router = useRouter();
   const [evidence, setEvidence] = useState<Evidence | null>(null);
   return (
@@ -45,7 +51,7 @@ export default function Software({
         selected={pack.car.id}
         label="Choose a variant for eligibility"
         onSelect={(id) => {
-          if (allPacks) {
+          if (local) {
             history.pushState(history.state, "", `/software?car=${id}`);
             setSelected(id);
           } else router.push(`/software?car=${id}`, { scroll: false });

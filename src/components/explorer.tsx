@@ -4,7 +4,15 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import type { Car } from "@/lib/types";
 import { BASELINE, CHALLENGER, site, availabilityLabels } from "@/lib/config";
+import {
+  DEFAULT_TYPE,
+  inVehicleType,
+  vehicleType,
+  vehicleTypes,
+} from "@/lib/fleet";
 import { Notice, VehicleCard } from "./ui";
+/** Cards drawn at a time: the catalogue is hundreds of variants. */
+const PAGE = 48;
 export default function Explorer({
   cars,
   initial,
@@ -17,6 +25,10 @@ export default function Explorer({
   const router = useRouter();
   const [filters, setFilters] = useState({
     q: initial.q || "",
+    // A link to one family should show it whatever its type.
+    type: (initial.type || initial.family
+      ? vehicleType(initial.type || "all").value
+      : DEFAULT_TYPE) as string,
     family: initial.family || "all",
     availability: initial.availability || "current_or_order_listed",
     budget: initial.budget || "",
@@ -40,10 +52,12 @@ export default function Explorer({
     return () => window.removeEventListener("popstate", restore);
   }, []);
   const [selected, setSelected] = useState<string[]>([BASELINE]),
-    [message, setMessage] = useState("");
+    [message, setMessage] = useState(""),
+    [limit, setLimit] = useState(PAGE);
   function change(k: string, v: string) {
     const f = { ...filters, [k]: v };
     setFilters(f);
+    setLimit(PAGE);
     const q = new URLSearchParams(f);
     window.history.replaceState(
       null,
@@ -56,6 +70,7 @@ export default function Explorer({
   }
   const filtered = cars.filter(
     (c) =>
+      inVehicleType(c, filters.type) &&
       (filters.family === "all" || c.family === filters.family) &&
       `${c.brand} ${c.model} ${c.trim}`
         .toLowerCase()
@@ -74,6 +89,25 @@ export default function Explorer({
       (filters.equipment === "all" ||
         equipment[c.id]?.[filters.equipment] !== false),
   );
+  // The family menu follows the vehicle type, grouped by brand.
+  const families = [
+    ...new Map(
+      cars
+        .filter((c) => inVehicleType(c, filters.type))
+        .map((c) => [c.family, c]),
+    ).values(),
+  ]
+    .sort(
+      (a, b) =>
+        a.brand.localeCompare(b.brand, "en") ||
+        a.model.localeCompare(b.model, "en", { numeric: true }),
+    )
+    .reduce<[string, Car[]][]>((groups, c) => {
+      const last = groups[groups.length - 1];
+      if (last?.[0] === c.brand) last[1].push(c);
+      else groups.push([c.brand, [c]]);
+      return groups;
+    }, []);
   function add(id: string) {
     if (selected.includes(id)) {
       if (id !== selected[0]) setSelected(selected.filter((x) => x !== id));
@@ -93,8 +127,10 @@ export default function Explorer({
       <p className="eyebrow">Our researched shortlist</p>
       <h1>Explore cars</h1>
       <p className="lede">
-        Ten model families, including Model Y. Explore current records, outgoing
-        generations and announced variants.
+        {new Set(cars.map((c) => c.family)).size} model families and{" "}
+        {cars.length} variants, including Model Y. Explore current records,
+        outgoing generations and announced variants. Figures that are not yet
+        confirmed read “Needs confirmation”.
       </p>
       <Notice />
       <div className="explorer-filters">
@@ -108,19 +144,34 @@ export default function Explorer({
           />
         </label>
         <label>
+          Vehicle type
+          <select
+            value={filters.type}
+            onChange={(e) => change("type", e.target.value)}
+          >
+            {vehicleTypes.map((t) => (
+              <option key={t.value} value={t.value}>
+                {t.label}
+              </option>
+            ))}
+          </select>
+        </label>
+        <label>
           Model family
           <select
             value={filters.family}
             onChange={(e) => change("family", e.target.value)}
           >
             <option value="all">All families</option>
-            {Array.from(new Map(cars.map((c) => [c.family, c])).values()).map(
-              (c) => (
-                <option key={c.family} value={c.family}>
-                  {c.brand} {c.family === "byd-atto-3" ? "Atto 3" : c.model}
-                </option>
-              ),
-            )}
+            {families.map(([brand, list]) => (
+              <optgroup key={brand} label={brand}>
+                {list.map((c) => (
+                  <option key={c.family} value={c.family}>
+                    {c.brand} {c.family === "byd-atto-3" ? "Atto 3" : c.model}
+                  </option>
+                ))}
+              </optgroup>
+            ))}
           </select>
         </label>
         <label>
@@ -207,6 +258,7 @@ export default function Explorer({
           onClick={() => {
             setFilters({
               q: "",
+              type: DEFAULT_TYPE,
               family: "all",
               availability: "all",
               budget: "",
@@ -246,7 +298,7 @@ export default function Explorer({
         {message}
       </p>
       <div className="vehicle-grid three">
-        {filtered.map((c) => (
+        {filtered.slice(0, limit).map((c) => (
           <VehicleCard
             key={c.id}
             car={c}
@@ -276,6 +328,17 @@ export default function Explorer({
           />
         ))}
       </div>
+      {filtered.length > limit && (
+        <p>
+          <button
+            className="button secondary"
+            onClick={() => setLimit(limit + PAGE)}
+          >
+            Show {Math.min(PAGE, filtered.length - limit)} more of{" "}
+            {filtered.length - limit} remaining
+          </button>
+        </p>
+      )}
       {!filtered.length && (
         <Notice>No matching records. Broaden your filters to continue.</Notice>
       )}

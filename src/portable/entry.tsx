@@ -9,12 +9,21 @@ import Software from "@/components/software";
 import SourceRegistry from "@/components/source-registry";
 import ModelY from "@/app/model-y/page";
 import Methodology from "@/app/methodology/page";
-import { research, pickerCatalogue, catalogue, pack, counts } from "./data";
+import {
+  research,
+  pickerCatalogue,
+  catalogue,
+  pack,
+  counts,
+  publicEquipment,
+} from "./data";
 import { parseSelection } from "@/lib/compare";
 import { BASELINE } from "@/lib/config";
 import { useLocation } from "./navigation";
 /** The B build sets this before the bundle runs: the same page, with the B scenes. */
 const B = (window as unknown as { __EV_B?: boolean }).__EV_B;
+// The offline file embeds every pack, so the fleet never has to fetch one.
+const allPacks = catalogue().map((c) => pack(c.id));
 function App() {
   const query = new URLSearchParams(useLocation()),
     path = query.get("page") || "/";
@@ -23,24 +32,11 @@ function App() {
   const state = parseSelection(query, cars);
   let content;
   if (path === "/cars") {
-    const equipment = Object.fromEntries(
-      d.trim_equipment.map((e) => [
-        e.variant_id,
-        Object.fromEntries(
-          [
-            "front_ventilated",
-            "hud",
-            "adaptive_damping",
-            "power_roof_shade",
-          ].map((k) => [k, typeof e[k] === "boolean" ? e[k] : null]),
-        ),
-      ]),
-    );
     content = (
       <Explorer
         cars={cars}
         initial={Object.fromEntries(query)}
-        equipment={equipment}
+        equipment={publicEquipment()}
       />
     );
   } else if (path.startsWith("/cars/")) {
@@ -71,8 +67,9 @@ function App() {
   else if (!path.startsWith("/compare"))
     content = (
       <FleetExperience
-        allPacks={catalogue().map((c) => pack(c.id))}
-        initial={fleetSelection(catalogue(), query)}
+        cars={cars}
+        initialPacks={allPacks}
+        initial={fleetSelection(cars, query)}
         criteria={d.criteria}
         version={B ? "b" : undefined}
       />

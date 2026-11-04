@@ -1,6 +1,6 @@
 import { WithEvidence } from "@/components/with-evidence";
 import Link from "next/link";
-import { catalogue } from "@/lib/data";
+import { publicPack, publicCatalogue } from "@/lib/data";
 import { CHALLENGER, site } from "@/lib/config";
 import { Notice, VehicleCard } from "@/components/ui";
 export const metadata = {
@@ -8,9 +8,10 @@ export const metadata = {
   alternates: { canonical: "/model-y" },
 };
 export default function ModelY() {
-  const cars = catalogue().filter((c) => c.modelId === "tesla_model_y");
+  const cars = publicCatalogue().filter((c) => c.modelId === "tesla_model_y");
+  const sources = cars.flatMap((c) => publicPack(c.id).sources);
   return (
-    <WithEvidence>
+    <WithEvidence sources={sources}>
       <main id="main" className="container editorial-page">
         <p className="eyebrow">The Model Y range</p>
         <h1>Model Y range</h1>

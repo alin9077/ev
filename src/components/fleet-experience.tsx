@@ -6,13 +6,26 @@ import {
   useCallback,
   useEffect,
   useLayoutEffect,
+  useMemo,
   useRef,
   useState,
 } from "react";
-import type { Fact, Pack, Research } from "@/lib/types";
+import type { Car, Fact, Pack, Research } from "@/lib/types";
 import { availabilityLabels, priorities } from "@/lib/config";
-import { fleetSelection } from "@/lib/fleet";
-import { compareFacts } from "@/lib/compare";
+import {
+  fleetSelection,
+  fleetView,
+  isFeatured,
+  vehicleTypes,
+  vehicleType,
+  inVehicleType,
+  changedTrims,
+  familyGroups,
+  WINDOW,
+  type FleetSelection,
+} from "@/lib/fleet";
+import { compareFacts, formatYear } from "@/lib/compare";
+import { featureFor } from "@/lib/verification";
 import {
   chapters,
   orderChapters,
@@ -27,15 +40,20 @@ import { SwipeProvider, SwipeTrack, useSwipe } from "./fleet-swipe";
 import { ComparisonSymbol } from "./comparison-symbol";
 import { ChapterArt } from "./chapter-art";
 import { CarAvatar } from "./car-avatar";
+import { usePacks } from "./use-packs";
 
-type Selection = ReturnType<typeof fleetSelection>;
+type Selection = FleetSelection;
 export default function FleetExperience({
-  allPacks,
+  cars,
+  initialPacks,
   initial,
   criteria,
   version,
 }: {
-  allPacks: Pack[];
+  /** Every variant, reduced to what the pickers and trim menus need. */
+  cars: Car[];
+  /** The baseline and the cars around the opening position; the rest load as the reader moves. */
+  initialPacks: Pack[];
   initial: Selection;
   criteria: Research["criteria"];
   /** The B site: the same comparison in the second look, with its own scenes. */
@@ -43,24 +61,40 @@ export default function FleetExperience({
 }) {
   const [selected, setSelected] = useState(initial);
   const [restored, setRestored] = useState(false);
+  const { packs, want } = usePacks(initialPacks);
+  const byId = useMemo(() => new Map(cars.map((c) => [c.id, c])), [cars]);
   useEffect(() => {
     queueMicrotask(() => {
-      setSelected(
-        fleetSelection(
-          allPacks.map((p) => p.car),
-          new URLSearchParams(location.search),
-        ),
-      );
+      setSelected(fleetSelection(cars, new URLSearchParams(location.search)));
       setRestored(true);
     });
-  }, [allPacks]);
-  const find = (id: string) => allPacks.find((p) => p.car.id === id)!;
-  const baseline = find(selected.baseline),
-    alternatives = selected.ids.map(find);
+  }, [cars]);
+  // The alternatives the vehicle type and search leave, and the opening position within them.
+  const view = useMemo(() => fleetView(cars, selected), [cars, selected]);
+  const index = Math.min(selected.index, view.ids.length - 1);
+  // Only cars near the reader's place are drawn and fetched; the rest are empty slots in the track.
+  const near = (i: number) => Math.abs(i - index) <= WINDOW;
+  const baselineCar = byId.get(selected.baseline)!;
+  const baseline =
+    packs.get(selected.baseline) ?? packs.get(initialPacks[0].car.id)!;
+  const alternatives = view.ids.map((id) => ({
+    car: byId.get(id)!,
+    pack: packs.get(id),
+  }));
+  const rival = alternatives[index]?.pack;
+  useEffect(() => {
+    want([
+      selected.baseline,
+      ...view.ids.filter((_, i) => Math.abs(i - index) <= WINDOW),
+    ]);
+  }, [want, selected.baseline, view.ids, index]);
   const ordered = orderChapters(selected.priority);
+  const typeCars = cars.filter((c) => inVehicleType(c, selected.type));
+  const typeFamilies = new Set(typeCars.map((c) => c.family)).size,
+    typeVariants = typeCars.length;
   // Phones show one rival, so rows change height with it; hold the reader's place.
   const anchor = useRef<{ el: Element; top: number } | null>(null);
-  const changeIndex = useCallback((index: number) => {
+  const changeIndex = useCallback((next: number) => {
     if (matchMedia("(max-width: 767px)").matches) {
       const bar =
         document.querySelector(".fleet-controls")?.getBoundingClientRect()
@@ -70,7 +104,7 @@ export default function FleetExperience({
       );
       anchor.current = el ? { el, top: el.getBoundingClientRect().top } : null;
     }
-    setSelected((s) => (s.index === index ? s : { ...s, index }));
+    setSelected((s) => (s.index === next ? s : { ...s, index: next }));
   }, []);
   useLayoutEffect(() => {
     const held = anchor.current;
@@ -85,32 +119,48 @@ export default function FleetExperience({
     if (!restored) return;
     const url = new URL(location.href);
     url.searchParams.set("baseline", selected.baseline);
-    url.searchParams.set("fleet", selected.ids.join(","));
-    url.searchParams.set(
-      "focus",
-      allPacks.find((p) => p.car.id === selected.ids[selected.index])!.car
-        .family,
-    );
+    // Only trims that differ from each family's default are kept in the link.
+    const picks = changedTrims(cars, selected.ids);
+    if (picks.length) url.searchParams.set("fleet", picks.join(","));
+    else url.searchParams.delete("fleet");
+    url.searchParams.delete("cars");
+    url.searchParams.delete("active");
+    const focus = byId.get(view.ids[index] ?? "");
+    if (focus) url.searchParams.set("focus", focus.family);
     if (selected.priority) url.searchParams.set("priority", selected.priority);
     else url.searchParams.delete("priority");
+    if (selected.type !== vehicleTypes[0].value)
+      url.searchParams.set("type", selected.type);
+    else url.searchParams.delete("type");
+    if (selected.q) url.searchParams.set("q", selected.q);
+    else url.searchParams.delete("q");
     history.replaceState(history.state, "", url);
-  }, [selected, allPacks, restored]);
+  }, [selected, cars, restored, byId, view.ids, index]);
   useEffect(() => {
     const restore = () =>
-      setSelected(
-        fleetSelection(
-          allPacks.map((p) => p.car),
-          new URLSearchParams(location.search),
-        ),
-      );
+      setSelected(fleetSelection(cars, new URLSearchParams(location.search)));
     window.addEventListener("popstate", restore);
     return () => window.removeEventListener("popstate", restore);
-  }, [allPacks]);
-  function trim(id: string, index?: number) {
+  }, [cars]);
+  /** Changing the type or search keeps the family in view when it is still listed. */
+  function filter(patch: Partial<Pick<Selection, "type" | "q">>) {
+    setSelected((s) => {
+      const next = { ...s, ...patch };
+      const stay = view.ids[index];
+      const ids = fleetView(cars, next).ids;
+      return { ...next, index: Math.max(0, ids.indexOf(stay)) };
+    });
+  }
+  function trim(id: string, family?: string) {
     setSelected((s) =>
-      index === undefined
+      family === undefined
         ? { ...s, baseline: id }
-        : { ...s, ids: s.ids.map((old, i) => (i === index ? id : old)) },
+        : {
+            ...s,
+            ids: s.ids.map((old) =>
+              byId.get(old)!.family === family ? id : old,
+            ),
+          },
     );
   }
   const overview = (
@@ -125,69 +175,81 @@ export default function FleetExperience({
             <span className="baseline-badge">Fixed baseline</span>
             <span aria-hidden="true">Y</span>
           </div>
-          <VehicleHeading pack={baseline} />
+          <VehicleHeading car={baselineCar} />
           <label className="fleet-trim">
             Tesla baseline
             <select
-              value={baseline.car.id}
+              value={selected.baseline}
               onChange={(e) => trim(e.target.value)}
             >
-              {allPacks
-                .filter((p) => p.car.modelId === "tesla_model_y")
-                .map((p) => (
-                  <option key={p.car.id} value={p.car.id}>
-                    {p.car.trim}
+              {cars
+                .filter((c) => c.modelId === "tesla_model_y")
+                .map((c) => (
+                  <option key={c.id} value={c.id}>
+                    {c.trim}
                   </option>
                 ))}
             </select>
           </label>
           <div className="fleet-overview-summary">
-            <FactValue fact={baseline.car.facts.price_aud} />
+            <FactValue
+              fact={factOf({ car: baselineCar, pack: baseline }, "price_aud")}
+            />
           </div>
         </article>
         <SwipeTrack label="EV family cards">
-          {alternatives.map((p, i) => (
-            <article key={p.car.id} className="fleet-vehicle-card">
-              <div className="fleet-vehicle-index">
-                <span>Alternative</span>
-                <span aria-hidden="true">{String(i + 1).padStart(2, "0")}</span>
-              </div>
-              <VehicleHeading pack={p} />
-              <label className="fleet-trim">
-                {p.car.brand} {p.car.model} trim
-                <select
-                  value={p.car.id}
-                  onChange={(e) => trim(e.target.value, i)}
-                >
-                  {allPacks
-                    .filter((c) => c.car.family === p.car.family)
-                    .map((c) => (
-                      <option key={c.car.id} value={c.car.id}>
-                        {c.car.trim}
-                        {c.car.availability === "current_or_order_listed"
-                          ? ""
-                          : ` · ${availabilityLabels[c.car.availability]}`}
-                      </option>
-                    ))}
-                </select>
-              </label>
-              <div className="fleet-overview-summary">
-                <FactValue fact={p.car.facts.price_aud} />
-                <FactDelta
-                  fact={p.car.facts.price_aud}
-                  against={baseline.car.facts.price_aud}
-                />
-              </div>
-            </article>
-          ))}
+          {alternatives.map((p, i) =>
+            near(i) ? (
+              <article key={p.car.id} className="fleet-vehicle-card">
+                <div className="fleet-vehicle-index">
+                  <span>Alternative</span>
+                  <span aria-hidden="true">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                </div>
+                <VehicleHeading car={p.pack?.car ?? p.car} />
+                <label className="fleet-trim">
+                  {p.car.brand} {p.car.model} trim
+                  <select
+                    value={p.car.id}
+                    onChange={(e) => trim(e.target.value, p.car.family)}
+                  >
+                    {familyGroups(cars)
+                      .get(p.car.family)!
+                      .map((c) => (
+                        <option key={c.id} value={c.id}>
+                          {c.trim}
+                          {c.availability === "current_or_order_listed"
+                            ? ""
+                            : ` · ${availabilityLabels[c.availability]}`}
+                        </option>
+                      ))}
+                  </select>
+                </label>
+                <div className="fleet-overview-summary">
+                  <FactValue fact={factOf(p, "price_aud")} />
+                  <FactDelta
+                    fact={factOf(p, "price_aud")}
+                    against={factOf(
+                      { car: baselineCar, pack: baseline },
+                      "price_aud",
+                    )}
+                  />
+                </div>
+              </article>
+            ) : null,
+          )}
         </SwipeTrack>
       </div>
       <div className="fleet-research-note">
         <p className="small muted">
-          Starts with the lowest listed current trim in each alternative family.
-          The catalogue covers nine of Australia’s ten best-selling EVs for
-          January–September 2026, plus the BYD Atto 3. The tenth-ranked Atto 1
-          is not yet included.
+          Starts with the lowest listed current trim in each alternative family,
+          ranked on confirmed prices only. The catalogue covers all ten of
+          Australia’s best-selling EVs for January–September 2026, plus the BYD
+          Atto 3 and{" "}
+          {cars.length ? new Set(cars.map((c) => c.family)).size - 11 : 0} other
+          model families. Figures that have not been confirmed read “Needs
+          confirmation”.
           <FootnoteRefs ids={["r5_au_ev_sales_sep2026"]} />
           <span className="fleet-swipe-hint">
             Swiping any row moves every chapter together.
@@ -237,7 +299,7 @@ export default function FleetExperience({
               chapter={ch.n}
               eager={ch.n === "01"}
               baseline={baseline}
-              rival={alternatives[selected.index] ?? alternatives[0]}
+              rival={rival}
               version={version}
             />
           </div>
@@ -258,16 +320,24 @@ export default function FleetExperience({
                     </p>
                   )}
                   <div className="fleet-row">
-                    <DetailCard pack={baseline} criterion={key} baseline />
+                    <DetailCard
+                      entry={{ car: baselineCar, pack: baseline }}
+                      criterion={key}
+                      isFact={!!baseline.car.facts[key]}
+                      baseline
+                    />
                     <SwipeTrack label={`${label}: alternatives`}>
-                      {alternatives.map((p) => (
-                        <DetailCard
-                          key={p.car.id}
-                          pack={p}
-                          criterion={key}
-                          against={baseline.car.facts[key]}
-                        />
-                      ))}
+                      {alternatives.map((p, i) =>
+                        near(i) ? (
+                          <DetailCard
+                            key={p.car.id}
+                            entry={p}
+                            criterion={key}
+                            isFact={!!baseline.car.facts[key]}
+                            against={baseline.car.facts[key]}
+                          />
+                        ) : null,
+                      )}
                     </SwipeTrack>
                   </div>
                 </DetailSection>
@@ -284,11 +354,17 @@ export default function FleetExperience({
                   <SoftwareTimeline pack={baseline} />
                 </div>
                 <SwipeTrack label="Software update history: alternatives">
-                  {alternatives.map((p) => (
-                    <div key={p.car.id} className="fleet-history-card">
-                      <SoftwareTimeline pack={p} />
-                    </div>
-                  ))}
+                  {alternatives.map((p, i) =>
+                    near(i) ? (
+                      <div key={p.car.id} className="fleet-history-card">
+                        {p.pack ? (
+                          <SoftwareTimeline pack={p.pack} />
+                        ) : (
+                          <Loading />
+                        )}
+                      </div>
+                    ) : null,
+                  )}
                 </SwipeTrack>
               </div>
             </section>
@@ -300,7 +376,7 @@ export default function FleetExperience({
   return (
     <SwipeProvider
       count={alternatives.length}
-      initialIndex={selected.index}
+      initialIndex={index}
       onChange={changeIndex}
     >
       <main id="main" className="fleet-page" data-version={version}>
@@ -309,19 +385,28 @@ export default function FleetExperience({
             <ModelYVerdict />
             <div className="fleet-intro-footer">
               <p>
-                Nine of Australia’s top ten EVs by sales · Jan–Sep 2026.
+                All ten of Australia’s top-selling EVs · Jan–Sep 2026.
                 <FootnoteRefs ids={["r5_au_ev_sales_sep2026"]} />
               </p>
               <span>
-                10 families <i /> 34 variants <i />{" "}
+                <b>{typeFamilies}</b> families <i /> <b>{typeVariants}</b>{" "}
+                variants <i />{" "}
                 <a href="#chapters">All {chapters.length} chapters ↓</a>
               </span>
             </div>
           </div>
         </header>
+        <FleetFilters
+          selected={selected}
+          shown={view.ids.length}
+          noMatch={view.noMatch}
+          cars={cars}
+          onChange={filter}
+        />
         <FleetControls
-          baseline={baseline}
+          baseline={{ car: baselineCar, pack: baseline }}
           alternatives={alternatives}
+          index={index}
           chapters={ordered}
         />
         {renderChapter(ordered[0])}
@@ -377,7 +462,7 @@ export default function FleetExperience({
         <section className="container fleet-end">
           <h2>Find your next EV.</h2>
           <Link className="button secondary" href="/cars">
-            Explore all 34 variants
+            Explore all {cars.length} variants
           </Link>
           <Link className="text-link" href="/methodology">
             How this guide is researched
@@ -435,76 +520,164 @@ function FactDelta({ fact, against }: { fact: Fact; against: Fact }) {
     </span>
   );
 }
-function VehicleHeading({ pack }: { pack: Pack }) {
+/** A variant as the fleet knows it: its summary, and its full pack once that has loaded. */
+type Entry = { car: Car; pack?: Pack };
+const factOf = (entry: Entry, key: string) =>
+  entry.pack?.car.facts[key] ?? entry.car.facts[key];
+function Loading() {
+  return (
+    <p className="small muted fleet-loading" role="status">
+      Loading…
+    </p>
+  );
+}
+function VehicleHeading({ car }: { car: Car }) {
   return (
     <div className="fleet-vehicle-heading">
-      <span className="small">{pack.car.brand}</span>
-      <h2>{pack.car.model}</h2>
-      <p>{pack.car.trim}</p>
+      <span className="small">{car.brand}</span>
+      <h2>{car.model}</h2>
+      <p>{car.trim}</p>
       <span className="small muted">
-        {pack.car.year} · {pack.car.drive}
+        {formatYear(car.year)} · {car.drive}
       </span>
     </div>
   );
 }
 const DetailCard = memo(function DetailCard({
-  pack,
+  entry,
   criterion,
+  isFact,
   baseline = false,
   against,
 }: {
-  pack: Pack;
+  entry: Entry;
   criterion: string;
+  /** Whether the row is a measurement (a fact) rather than an equipment answer. */
+  isFact: boolean;
   baseline?: boolean;
   against?: Fact;
 }) {
+  const { car, pack } = entry;
+  const fact = isFact ? pack?.car.facts[criterion] : undefined;
   return (
     <article
       className={
         baseline ? "baseline-card fleet-detail-card" : "fleet-detail-card"
       }
-      data-vehicle={pack.car.id}
+      data-vehicle={car.id}
     >
       {/* The sticky bar names each column; this stays for print and readers. */}
       <p className="fleet-card-identity">
         {baseline && <span className="baseline-badge">Baseline</span>}
         <strong>
-          {pack.car.brand} {pack.car.model}
+          {car.brand} {car.model}
         </strong>
-        <span>{pack.car.trim}</span>
+        <span>{car.trim}</span>
       </p>
-      {pack.car.facts[criterion] ? (
+      {!pack ? (
+        <Loading />
+      ) : fact ? (
         <>
-          <FactValue fact={pack.car.facts[criterion]} />
-          {against && (
-            <FactDelta fact={pack.car.facts[criterion]} against={against} />
-          )}
+          <FactValue fact={fact} />
+          {against && <FactDelta fact={fact} against={against} />}
         </>
       ) : (
-        <FeatureValue
-          feature={pack.features.find((f) => f.criterion === criterion)!}
-        />
+        <FeatureValue feature={featureFor(pack, criterion)} />
       )}
     </article>
   );
 });
+/** Narrow the fleet by vehicle type and search by brand or model. */
+function FleetFilters({
+  selected,
+  shown,
+  noMatch,
+  cars,
+  onChange,
+}: {
+  selected: Selection;
+  shown: number;
+  noMatch: boolean;
+  cars: Car[];
+  onChange: (patch: Partial<Pick<Selection, "type" | "q">>) => void;
+}) {
+  const counts = vehicleTypes.map((t) => ({
+    ...t,
+    families: new Set(
+      cars
+        .filter(
+          (c) => c.modelId !== "tesla_model_y" && inVehicleType(c, t.value),
+        )
+        .map((c) => c.family),
+    ).size,
+  }));
+  return (
+    <div className="fleet-filters">
+      <div className="container fleet-filters-inner">
+        <label>
+          Vehicle type
+          <select
+            value={selected.type}
+            onChange={(e) => onChange({ type: e.target.value })}
+          >
+            {counts
+              .filter((t) => t.families > 0)
+              .map((t) => (
+                <option key={t.value} value={t.value}>
+                  {t.label} ({t.families})
+                </option>
+              ))}
+          </select>
+        </label>
+        <label>
+          Find a brand or model
+          <input
+            type="search"
+            value={selected.q}
+            placeholder="Try Porsche, Volvo or Polestar"
+            onChange={(e) => onChange({ q: e.target.value })}
+          />
+        </label>
+        <p className="small muted" role="status">
+          {noMatch
+            ? `No ${vehicleType(selected.type).label.toLowerCase()} match “${selected.q}”. Showing all ${shown}.`
+            : `${shown} ${shown === 1 ? "family" : "families"} beside Model Y.`}
+          {selected.type !== "cars" && selected.type !== "all" && (
+            <> Figures for these vehicles are still being confirmed.</>
+          )}
+        </p>
+      </div>
+    </div>
+  );
+}
 function FleetControls({
   baseline,
   alternatives,
+  index,
   chapters: ordered,
 }: {
-  baseline: Pack;
-  alternatives: Pack[];
+  baseline: Entry;
+  alternatives: Entry[];
+  index: number;
   chapters: Chapter[];
 }) {
-  const { index, move, count } = useSwipe();
+  const { move, count } = useSwipe();
   const active = alternatives[index];
+  const brands = [...new Set(alternatives.map((a) => a.car.brand))];
+  const featured = alternatives
+    .map((a, i) => ({ ...a, i }))
+    .filter((a) => isFeatured(a.car.family));
+  const option = (a: Entry, i: number) => (
+    <option key={a.car.family} value={i}>
+      {a.car.brand} {a.car.model}
+    </option>
+  );
   return (
     <div className="fleet-controls">
       <ChapterNav chapters={ordered} />
       <div className="container fleet-controls-inner">
         <div className="fleet-anchor-label fleet-identity">
-          <CarAvatar car={baseline.car} />
+          <CarAvatar car={baseline.pack?.car ?? baseline.car} />
           <strong>Tesla {baseline.car.model}</strong>
           <span className="small">{baseline.car.trim}</span>
         </div>
@@ -514,7 +687,7 @@ function FleetControls({
         <SwipeTrack label="EV names">
           {alternatives.map((p) => (
             <div key={p.car.id} className="fleet-identity">
-              <CarAvatar car={p.car} />
+              <CarAvatar car={p.pack?.car ?? p.car} />
               <strong>
                 {p.car.brand} {p.car.model}
               </strong>
@@ -529,11 +702,23 @@ function FleetControls({
               value={index}
               onChange={(e) => move(Number(e.target.value))}
             >
-              {alternatives.map((p, i) => (
-                <option key={p.car.family} value={i}>
-                  {i + 1}. {p.car.brand} {p.car.model}
-                </option>
-              ))}
+              {featured.length > 0 && (
+                <optgroup label="Top sellers">
+                  {featured.map((a) => option(a, a.i))}
+                </optgroup>
+              )}
+              {brands.map((brand) => {
+                const group = alternatives
+                  .map((a, i) => ({ ...a, i }))
+                  .filter(
+                    (a) => a.car.brand === brand && !isFeatured(a.car.family),
+                  );
+                return group.length ? (
+                  <optgroup key={brand} label={brand}>
+                    {group.map((a) => option(a, a.i))}
+                  </optgroup>
+                ) : null;
+              })}
             </select>
           </label>
           <div className="fleet-arrows">

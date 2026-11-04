@@ -1,6 +1,6 @@
 import { WithEvidence } from "@/components/with-evidence";
 import Software from "@/components/software";
-import { catalogue, pickerCatalogue, pack } from "@/lib/data";
+import { catalogue, pickerCatalogue, publicPack } from "@/lib/data";
 import { BASELINE } from "@/lib/config";
 import type { Query } from "@/lib/page-props";
 export const metadata = {
@@ -14,16 +14,13 @@ export default async function SoftwarePage({
 }) {
   const q = process.env.SITE_STATIC_EXPORT === "1" ? {} : await searchParams;
   const c = catalogue().find((c) => c.id === q.car);
+  const pack = publicPack(c?.id || BASELINE);
   return (
-    <WithEvidence>
+    <WithEvidence sources={pack.sources}>
       <Software
         cars={pickerCatalogue()}
-        pack={pack(c?.id || BASELINE)}
-        allPacks={
-          process.env.SITE_STATIC_EXPORT === "1"
-            ? catalogue().map((c) => pack(c.id))
-            : undefined
-        }
+        pack={pack}
+        local={process.env.SITE_STATIC_EXPORT === "1"}
       />
     </WithEvidence>
   );
