@@ -1,5 +1,7 @@
 import type { Fact, Feature, Selection, Car } from "./types";
 import { BASELINE, CHALLENGER, site, priorities } from "./config";
+import { formatValue } from "./format";
+import { NOT_CONFIRMED } from "./verification";
 export function compareFacts(
   a: Fact,
   b: Fact,
@@ -129,7 +131,13 @@ export function selectionUrl(state: Selection, path = "/compare") {
   return `${path}?${q}`;
 }
 export function formatFact(f: Fact) {
-  if (f.value === null) return "Needs confirmation";
-  if (f.unit === "AUD") return `A$${Number(f.value).toLocaleString("en-AU")}`;
-  return `${typeof f.value === "number" ? f.value.toLocaleString("en-AU") : f.value}${f.unit ? ` ${f.unit}` : ""}`;
+  if (f.value === null || f.value === undefined) return NOT_CONFIRMED;
+  const text =
+    f.unit === "AUD" && typeof f.value === "number"
+      ? `A$${f.value.toLocaleString("en-AU")}`
+      : formatValue(f.value);
+  return f.unit && f.unit !== "AUD" && text !== NOT_CONFIRMED
+    ? `${text} ${f.unit}`
+    : text;
 }
+export { formatYear } from "./format";

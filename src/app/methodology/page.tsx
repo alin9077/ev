@@ -1,11 +1,12 @@
 import Link from "next/link";
-import { counts, research } from "@/lib/data";
+import { publicCounts, verificationCounts, research } from "@/lib/data";
 export const metadata = {
   title: "Methodology & limitations",
   alternates: { canonical: "/methodology" },
 };
 export default function Methodology() {
-  const c = counts();
+  const c = publicCounts();
+  const v = verificationCounts();
   return (
     <main id="main" className="container editorial-page">
       <p className="eyebrow">How to read the evidence</p>
@@ -37,8 +38,8 @@ export default function Methodology() {
           {c.variants} Australian variant records across {c.families} model
           families and {c.generations} generation-level records. {c.current} are
           current/order-listed in the snapshot, {c.outgoing} are outgoing and{" "}
-          {c.provisional} is announced/provisional. Outgoing Atto 3 and Atto 3
-          EVO remain distinct.
+          {c.provisional} {c.provisional === 1 ? "is" : "are"}{" "}
+          announced/provisional. Outgoing Atto 3 and Atto 3 EVO remain distinct.
         </p>
         <p>
           “Australia’s leading EVs” describes our researched shortlist. It is
@@ -106,10 +107,24 @@ export default function Methodology() {
         </p>
         <p>
           {c.evidence.toLocaleString()} feature evidence rows across{" "}
-          {c.criteria} criteria are not {c.evidence.toLocaleString()}{" "}
-          independent tests. Some evidence is inherited from a model-wide manual
-          and may need trim or build confirmation. Detail cards retain the
-          scope; numbered footnotes link to original sources.
+          {c.criteria} criteria are shown. They are not{" "}
+          {c.evidence.toLocaleString()} independent tests. Some evidence is
+          inherited from a model-wide manual and may need trim or build
+          confirmation. Detail cards retain the scope; numbered footnotes link
+          to original sources.
+        </p>
+        <h2>What is not shown</h2>
+        <p>
+          A figure or equipment row appears only when it is confirmed by the
+          maker or reported by a named Australian publication or dealer for the
+          exact version, or is one of the original values supplied with this
+          guide that later research did not contradict. Anything else reads{" "}
+          <strong>Needs confirmation</strong> and never carries a value, a date
+          or a source. Currently {v.factsShown.toLocaleString()} of{" "}
+          {v.facts.toLocaleString()} researched figures and{" "}
+          {v.rowsShown.toLocaleString()} of {v.rows.toLocaleString()} equipment
+          rows pass that test. Hidden figures also stay out of rankings, default
+          trims, comparisons and exports.
         </p>
         <h2>Software scope</h2>
         <p>

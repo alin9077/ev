@@ -8,6 +8,7 @@ import { formatFact } from "./compare";
 import { statusLabels } from "./config";
 import type { SceneCar, SceneSpec } from "./scenes/kit";
 import type { Pack } from "./types";
+import { featureFor } from "./verification";
 
 /** Per chapter: the facts to quote, then features as [criterion, short label]. */
 const SHOWN: Record<string, { facts: string[]; features: [string, string][] }> =
@@ -82,8 +83,8 @@ export function readoutFor(
       ...shown.features.map(([key, label]) => ({
         label,
         values: both((p) => {
-          const feature = p.features.find((f) => f.criterion === key);
-          return feature ? statusLabels[feature.status] : "–";
+          // A row without verified evidence reads as unconfirmed, never as a value.
+          return statusLabels[featureFor(p, key).status];
         }),
       })),
     ],

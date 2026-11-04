@@ -1,4 +1,4 @@
-import { pickerCatalogue, counts, pack, research } from "./data";
+import { pickerCatalogue, publicCounts, publicPack, research } from "./data";
 import { parseSelection } from "./compare";
 export type Query = Record<string, string | string[] | undefined>;
 export function experienceProps(query: Query) {
@@ -10,9 +10,9 @@ export function experienceProps(query: Query) {
   const state = parseSelection(q, cars);
   return {
     cars,
-    packs: state.ids.map(pack),
+    packs: state.ids.map(publicPack),
     state,
     criteria: research().criteria,
-    counts: counts(),
+    counts: publicCounts(),
   };
 }

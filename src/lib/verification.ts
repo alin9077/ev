@@ -47,6 +47,73 @@ export function isHiddenFact(item: Gradable): boolean {
     item.value !== null && item.value !== undefined && !isVerifiedFact(item)
   );
 }
+/** The wording an unconfirmed fact or equipment row shows: the app's existing empty state. */
+export const NOT_CONFIRMED = "Needs confirmation";
+/**
+ * What a visitor sees for a fact that fails isVerifiedFact: no value, basis, dates, sources or
+ * qualifications (any of them could repeat the withheld value). Done on the server, so the value never
+ * reaches a page, a client component or an export.
+ */
+export function maskFact(f: Fact): Fact {
+  if (isVerifiedFact(f)) return f;
+  return {
+    key: f.key,
+    label: f.label,
+    value: null,
+    unit: "",
+    basis: "",
+    comparisonBasis: "",
+    status: "not_verified",
+    sourceIds: [],
+    date: "",
+    market: f.market,
+    scope: "",
+    qualifications: [],
+    issues: [],
+    grade: f.grade,
+  };
+}
+/** A car whose unverified facts are masked. */
+export function maskCar(car: Car): Car {
+  return {
+    ...car,
+    facts: Object.fromEntries(
+      Object.entries(car.facts).map(([key, f]) => [key, maskFact(f)]),
+    ),
+  };
+}
+/** The row shown for an equipment criterion that has no verified evidence. */
+export function neutralFeature(
+  car: Pick<Car, "id" | "modelId">,
+  criterion: string,
+): Feature {
+  return {
+    variant_id: car.id,
+    model_id: car.modelId,
+    criterion,
+    status: "not_verified",
+    value: NOT_CONFIRMED,
+    conditions: "",
+    source_ids: [],
+    evidence_scope: "",
+    last_evidence_date: "",
+    reviewed_date: "",
+    verification_state: "",
+  };
+}
+/**
+ * The equipment row for a criterion. A public pack stores only verified rows, so a missing row is an
+ * unconfirmed one and reads as the neutral empty state.
+ */
+export function featureFor(
+  pack: { car: Pick<Car, "id" | "modelId">; features: Feature[] },
+  criterion: string,
+): Feature {
+  return (
+    pack.features.find((f) => f.criterion === criterion) ??
+    neutralFeature(pack.car, criterion)
+  );
+}
 export function verifiedFacts(car: Pick<Car, "facts">): Record<string, Fact> {
   return Object.fromEntries(
     Object.entries(car.facts).filter(([, f]) => isVerifiedFact(f)),

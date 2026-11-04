@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Query } from "@/lib/page-props";
-import { research } from "@/lib/data";
+import { publicSources } from "@/lib/data";
 import SourceRegistry from "@/components/source-registry";
 import audit from "../../../data/source-audit-2026-10-08.json";
 export const metadata = {
@@ -16,8 +16,8 @@ export default async function Sources({
     process.env.SITE_STATIC_EXPORT === "1" ? {} : await searchParams;
   const ids = typeof query.ids === "string" ? query.ids.split(",") : [];
   const sources = ids.length
-    ? research().sources.filter((s) => ids.includes(s.id))
-    : research().sources;
+    ? publicSources().filter((s) => ids.includes(s.id))
+    : publicSources();
   return (
     <main id="main" className="container editorial-page">
       <p className="eyebrow">Follow the claim to its source</p>

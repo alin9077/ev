@@ -1,7 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { pairPages, pairReport } from "../src/lib/pair-pages";
-import { catalogue, pack } from "../src/lib/data";
+import { pack, publicCatalogue } from "../src/lib/data";
 import {
   carName,
   claimText,
@@ -22,7 +22,7 @@ test("nine permanent pairs describe two exact, distinct current families", () =>
       report.cars.map((c) => c.id),
       [BASELINE, p.rival],
     );
-    const rival = catalogue().find((c) => c.id === p.rival)!;
+    const rival = publicCatalogue().find((c) => c.id === p.rival)!;
     assert.equal(rival.availability, "current_or_order_listed");
     families.add(rival.family);
     assert.equal(report.keyFacts.length, 12);
@@ -31,6 +31,13 @@ test("nine permanent pairs describe two exact, distinct current families", () =>
       ...report.questions.flatMap((q) => q.claims),
     ]) {
       assert.ok(c.sentence.startsWith(c.car));
+      if (!c.confirmed) {
+        // A withheld figure states that and nothing else: no value, basis, date or source.
+        assert.equal(c.value, "Needs confirmation");
+        assert.match(c.sentence, /not yet confirmed/);
+        assert.deepEqual([c.basis, c.evidenceDate, c.sources], ["", "", []]);
+        continue;
+      }
       assert.match(c.evidenceDate, /^\d{4}-\d{2}-\d{2}$/);
       assert.ok(c.basis && c.sources.length);
       for (const s of c.sources) {

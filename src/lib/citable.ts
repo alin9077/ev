@@ -1,6 +1,8 @@
 import type { Car, Fact, Pack, Source, Status } from "./types";
 import { safeUrl, site, statusLabels } from "./config";
 import { formatFact } from "./compare";
+import { formatValue, formatYear, hasYear } from "./format";
+import { NOT_CONFIRMED, featureFor } from "./verification";
 
 export const PAGE_UPDATED = "2026-10-08";
 export const keyMeasurements = [
@@ -29,6 +31,8 @@ export type Claim = {
   carId: string;
   car: string;
   value: string;
+  /** False when no verified figure is published: the value reads "Needs confirmation" and no basis, date or source is attached. */
+  confirmed: boolean;
   basis: string;
   evidenceDate: string;
   status: Status;
@@ -98,14 +102,26 @@ function clean(text: string) {
 }
 function finish(
   pack: Pack,
-  claim: Omit<Claim, "sentence" | "car" | "carId">,
+  claim: Omit<Claim, "sentence" | "car" | "carId" | "confirmed">,
 ): Claim {
   const name = carName(pack.car);
-  const qualifications = [
-    ...new Set(claim.qualifications.map(clean).filter(Boolean)),
-  ];
-  const sentence = `${name}: ${claim.label.toLowerCase()} — ${claim.value}; basis: ${clean(claim.basis)}; evidence checked ${claim.evidenceDate}; ${statusLabels[claim.status].toLowerCase()}.${qualifications.length ? ` ${qualifications.join(" ")}` : ""}`;
-  return { ...claim, car: name, carId: pack.car.id, qualifications, sentence };
+  const confirmed = claim.value !== NOT_CONFIRMED;
+  // An unconfirmed claim states only that: no figure, basis, date or qualification is repeated.
+  const qualifications = confirmed
+    ? [...new Set(claim.qualifications.map(clean).filter(Boolean))]
+    : [];
+  const sentence = confirmed
+    ? `${name}: ${claim.label.toLowerCase()} — ${claim.value}; basis: ${clean(claim.basis)}; evidence checked ${claim.evidenceDate}; ${statusLabels[claim.status].toLowerCase()}.${qualifications.length ? ` ${qualifications.join(" ")}` : ""}`
+    : `${name}: ${claim.label.toLowerCase()} — not yet confirmed; no verified figure is published.`;
+  return {
+    ...claim,
+    confirmed,
+    car: name,
+    carId: pack.car.id,
+    qualifications,
+    sentence,
+    ...(confirmed ? {} : { basis: "", evidenceDate: "", sources: [] }),
+  };
 }
 export function factClaim(pack: Pack, fact: Fact): Claim {
   return finish(pack, {
@@ -127,12 +143,11 @@ export function featureClaim(
   key: string,
   label: string,
 ): Claim | undefined {
-  const feature = pack.features.find((f) => f.criterion === key);
-  if (!feature) return undefined;
+  const feature = featureFor(pack, key);
   return finish(pack, {
     key,
     label,
-    value: String(feature.value),
+    value: formatValue(feature.value),
     basis:
       feature.condition_label || "Australian variant research; see conditions",
     evidenceDate: feature.last_evidence_date,
@@ -212,15 +227,18 @@ export function makeReport(packs: Pack[], path: string): CitableReport {
       answer:
         q.answer ||
         claims
-          .map(
-            (c) =>
-              `${c.car}: ${c.value} (${statusLabels[c.status].toLowerCase()})`,
+          .map((c) =>
+            c.confirmed
+              ? `${c.car}: ${c.value} (${statusLabels[c.status].toLowerCase()})`
+              : `${c.car}: not yet confirmed`,
           )
           .join("; ") + ".",
       claims,
     };
   });
-  const dates = [...new Set(keyFacts.map((c) => c.evidenceDate))].sort();
+  const dates = [
+    ...new Set(keyFacts.map((c) => c.evidenceDate).filter(Boolean)),
+  ].sort();
   return {
     title,
     path,
@@ -232,11 +250,11 @@ export function makeReport(packs: Pack[], path: string): CitableReport {
       brand: c.brand,
       model: c.model,
       trim: c.trim,
-      year: String(c.year),
+      year: formatYear(c.year),
       generation: c.generation,
       url: `${site.origin}${carPath(c)}`,
     })),
-    summary: `${title}, Australian specifications. The six figures below cover listed price, claimed range, DC charging time, cargo space, braked towing and vehicle warranty. Evidence checked ${dates.join(" / ")}; measurement bases and conditions are shown beside each figure.`,
+    summary: `${title}, Australian specifications. The six figures below cover listed price, claimed range, DC charging time, cargo space, braked towing and vehicle warranty. ${dates.length ? `Evidence checked ${dates.join(" / ")}; measurement bases and conditions are shown beside each figure.` : "No figure here is verified yet."} Figures that are not verified read "Needs confirmation" and carry no value.`,
     keyFacts,
     questions: rows,
   };
@@ -272,7 +290,7 @@ export function reportSchema(report: CitableReport) {
         brand: { "@type": "Brand", name: c.brand },
         model: c.model,
         vehicleConfiguration: `${c.trim}; ${c.generation}`,
-        vehicleModelDate: c.year,
+        ...(hasYear(c.year) ? { vehicleModelDate: c.year } : {}),
         url: c.url,
       })),
       {

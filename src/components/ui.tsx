@@ -6,7 +6,8 @@ import { resolveAsset, type ApprovedAsset } from "@/lib/media";
 import { useEffect, useRef, useState } from "react";
 import type { Car, Fact, Feature, Issue, Pack, Source } from "@/lib/types";
 import { availabilityLabels, safeUrl, site, statusLabels } from "@/lib/config";
-import { formatFact } from "@/lib/compare";
+import { formatFact, formatYear } from "@/lib/compare";
+import { formatValue, seatsOf } from "@/lib/format";
 import { FootnoteRefs } from "./footnotes";
 import { featureCondition, factCondition } from "@/lib/fleet";
 
@@ -54,7 +55,7 @@ export function FeatureValue({ feature: f }: { feature: Feature }) {
             : f.condition_label
         }
       />
-      <p className="feature-answer">{f.value}</p>
+      <p className="feature-answer">{formatValue(f.value)}</p>
       {f.status === "conditional" ? (
         <div className="conditional-context">
           <strong>Why conditional</strong>
@@ -75,10 +76,12 @@ export function FeatureValue({ feature: f }: { feature: Feature }) {
           <strong>Still to confirm:</strong> {f.confirmation_needed}
         </p>
       )}
-      <p className="feature-source small muted">
-        Checked {shortDate(f.last_evidence_date)}
-        <FootnoteRefs ids={f.source_ids} />
-      </p>
+      {f.last_evidence_date && (
+        <p className="feature-source small muted">
+          Checked {shortDate(f.last_evidence_date)}
+          <FootnoteRefs ids={f.source_ids} />
+        </p>
+      )}
     </div>
   );
 }
@@ -140,7 +143,7 @@ export function featureEvidence(
 ): Evidence {
   return {
     title: label,
-    value: f.value,
+    value: formatValue(f.value),
     conditions: f.conditions,
     scope: `AU · ${f.evidence_scope} · ${f.verification_state}`,
     date: f.last_evidence_date,
@@ -287,9 +290,13 @@ export function FactValue({
           <p>{factCondition(fact)}</p>
         </div>
       )}
-      <span className="fact-basis">
-        {fact.basis} · {shortDate(fact.date)}
-      </span>
+      {(fact.basis || fact.date) && (
+        <span className="fact-basis">
+          {[fact.basis, fact.date && shortDate(fact.date)]
+            .filter(Boolean)
+            .join(" · ")}
+        </span>
+      )}
       {!compact &&
         fact.qualifications.map((q) => (
           <span className="qualification" key={q}>
@@ -300,14 +307,19 @@ export function FactValue({
     </div>
   );
 }
-export function SeatingDiagram({ seats }: { seats: number }) {
-  const rows = seats === 6 ? [2, 2, 2] : [2, 3];
+export function SeatingDiagram({ seats }: { seats?: number }) {
+  // An unconfirmed count draws the cabin outline only: no invented seats.
+  const rows = !seats ? [] : seats === 6 ? [2, 2, 2] : [2, 3];
   return (
     <svg
       className="seating"
       viewBox="0 0 160 160"
       role="img"
-      aria-label={`${seats} seating positions. Schematic only, not dimensions or child-seat suitability.`}
+      aria-label={
+        seats
+          ? `${seats} seating positions. Schematic only, not dimensions or child-seat suitability.`
+          : "Seating positions not yet confirmed. Schematic only."
+      }
     >
       <rect
         x="25"
@@ -353,7 +365,7 @@ export function MediaRenderer({
     car.modelId,
   );
   if (!asset || failedSrc === asset.src)
-    return <SeatingDiagram seats={Number(car.facts.seats.value)} />;
+    return <SeatingDiagram seats={seatsOf(car)} />;
   return (
     <figure className="approved-media">
       <Image
@@ -381,7 +393,7 @@ export function VehicleCard({
     <article className="vehicle-card">
       <div className="card-top">
         <span className="eyebrow">{car.brand}</span>
-        <span className="small">{car.year}</span>
+        <span className="small">{formatYear(car.year)}</span>
       </div>
       <div className="vehicle-title">
         <h3>{car.model}</h3>
@@ -401,7 +413,11 @@ export function VehicleCard({
           />
         </div>
         <div>
-          <span className="small">{car.facts.range_km.basis} claim</span>
+          <span className="small">
+            {car.facts.range_km.basis
+              ? `${car.facts.range_km.basis} claim`
+              : "Claimed range"}
+          </span>
           <FactValue
             fact={car.facts.range_km}
             compact

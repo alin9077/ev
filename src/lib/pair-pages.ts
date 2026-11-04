@@ -1,4 +1,4 @@
-import { catalogue, pack } from "./data";
+import { publicCatalogue, publicPack } from "./data";
 import { BASELINE } from "./config";
 import { makeReport } from "./citable";
 
@@ -20,12 +20,15 @@ export const pairPages = [
 export function pairReport(slug: string) {
   const pair = pairPages.find((p) => p.slug === slug);
   return pair
-    ? makeReport([pack(BASELINE), pack(pair.rival)], `/compare/${pair.slug}`)
+    ? makeReport(
+        [publicPack(BASELINE), publicPack(pair.rival)],
+        `/compare/${pair.slug}`,
+      )
     : undefined;
 }
 export function pairLinks() {
   return pairPages.map((p) => {
-    const car = catalogue().find((c) => c.id === p.rival)!;
+    const car = publicCatalogue().find((c) => c.id === p.rival)!;
     return {
       ...p,
       href: `/compare/${p.slug}`,

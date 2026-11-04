@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { pairPages, pairReport, pairLinks } from "@/lib/pair-pages";
-import { catalogue } from "@/lib/data";
+import { publicCatalogue } from "@/lib/data";
 import { carName, carPath } from "@/lib/citable";
 import { CitableReportContent } from "@/components/citable-report";
 export const dynamicParams = false;
@@ -31,7 +31,7 @@ export default async function PairPage({
   const { pair } = await params;
   const report = pairReport(pair);
   if (!report) notFound();
-  const families = catalogue()
+  const families = publicCatalogue()
     .filter((c) => report.cars.some((r) => r.id === c.id))
     .map((c) => c.family);
   return (
@@ -52,7 +52,7 @@ export default async function PairPage({
           Open the interactive comparison
         </Link>
         <ul>
-          {catalogue()
+          {publicCatalogue()
             .filter((c) => families.includes(c.family))
             .map((c) => (
               <li key={c.id}>

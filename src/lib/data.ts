@@ -1,6 +1,14 @@
 import fs from "node:fs";
 import path from "node:path";
-import type { Research, Car, Fact, Feature, Pack, Variant } from "./types";
+import type {
+  Research,
+  Car,
+  Fact,
+  Feature,
+  Pack,
+  Source,
+  Variant,
+} from "./types";
 import { safeUrl } from "./config";
 import refinement from "../../data/research-refinement-2026-10-06.json";
 import usability from "../../data/research-usability-2026-10-06.json";
@@ -10,6 +18,7 @@ import editorial from "../../data/research-editorial-2026-10-07.json";
 import buyer from "../../data/research-buyer-2026-10-07.json";
 import { auditedSource, auditedFact, auditedFeature } from "./launch-evidence";
 import { loadImport } from "./research-import";
+import { isVerifiedFact, maskCar } from "./verification";
 /**
  * The data is static, so each loader runs once per process. React's cache() only memoises inside a
  * request, which made every CLI call (validate, tests) rebuild the whole catalogue.
@@ -507,6 +516,20 @@ const lookups = once(() => {
     imported: new Set(loadImport()?.variants.map((v) => v.id)),
   };
 });
+/** The sources a pack cites: its facts, equipment rows, software records, issues and configuration history. */
+function sourcesFor(p: Omit<Pack, "sources">): Source[] {
+  const ids = new Set([
+    ...Object.values(p.car.facts).flatMap((f) => f.sourceIds),
+    ...p.features.flatMap((f) => f.source_ids),
+    ...p.eligibility.source_ids,
+    ...p.events.flatMap((e) => e.source_ids),
+    ...p.car.issues.flatMap((i) => i.source_ids),
+    ...p.configuration.flatMap((c) => c.source_ids),
+  ]);
+  return research()
+    .sources.filter((s) => ids.has(s.id))
+    .map((s) => ({ ...s, url: safeUrl(s.url) || "" }));
+}
 export function pack(id: string): Pack {
   const d = research();
   const lookup = lookups();
@@ -615,17 +638,13 @@ export function pack(id: string): Pack {
   const configuration = d.configuration_history
     .map((c, i) => ({ ...c, ...editorial.configuration[i] }))
     .filter((c) => c.model_id === car.modelId);
-  const sourceIds = new Set([
-    ...Object.values(car.facts).flatMap((f) => f.sourceIds),
-    ...features.flatMap((f) => f.source_ids),
-    ...eligibility.source_ids,
-    ...events.flatMap((e) => e.source_ids),
-    ...car.issues.flatMap((i) => i.source_ids),
-    ...configuration.flatMap((c) => c.source_ids),
-  ]);
-  const sources = d.sources
-    .filter((s) => sourceIds.has(s.id))
-    .map((s) => ({ ...s, url: safeUrl(s.url) || "" }));
+  const sources = sourcesFor({
+    car,
+    features,
+    eligibility,
+    events,
+    configuration,
+  });
   return { car, features, eligibility, events, configuration, sources };
 }
 export function counts() {
@@ -646,13 +665,151 @@ export function counts() {
   };
 }
 
-// Selection controls need identity and three filter facts, not the full specifications.
-export function pickerCatalogue(): Car[] {
-  return catalogue().map((car) => ({
+/**
+ * What visitors may see. `catalogue()` and `pack()` hold every fact, graded; the public versions below
+ * apply isVerifiedFact once, on the server: unverified facts lose their value, basis, date and sources, and
+ * unverified equipment rows are dropped (readers get the neutral "Needs confirmation" row). Pages,
+ * components, exports and the portable build use these; only validation, audit and tests read the raw data.
+ */
+export const publicCatalogue = once((): Car[] => catalogue().map(maskCar));
+const publicPacks = new Map<string, Pack>();
+export function publicPack(id: string): Pack {
+  const cached = publicPacks.get(id);
+  if (cached) return cached;
+  const raw = pack(id);
+  const rest = {
+    car: maskCar(raw.car),
+    features: raw.features.filter((f) => isVerifiedFact(f)),
+    eligibility: raw.eligibility,
+    events: raw.events,
+    configuration: raw.configuration,
+  };
+  const masked: Pack = { ...rest, sources: sourcesFor(rest) };
+  publicPacks.set(id, masked);
+  return masked;
+}
+/** Sources cited by static page copy, which no pack carries. */
+const PAGE_SOURCES = ["r5_au_ev_sales_sep2026", "r3_tesla_fsd"];
+/**
+ * The source registry for visitors: a source that is cited only by facts or equipment rows that are
+ * hidden stays out, because its summary can restate the withheld value.
+ */
+export const publicSources = once((): Source[] => {
+  const shown = new Set<string>(PAGE_SOURCES);
+  const withheld = new Set<string>();
+  for (const c of catalogue()) {
+    const raw = pack(c.id);
+    for (const f of Object.values(raw.car.facts))
+      for (const id of f.sourceIds)
+        (isVerifiedFact(f) ? shown : withheld).add(id);
+    for (const f of raw.features)
+      for (const id of f.source_ids)
+        (isVerifiedFact(f) ? shown : withheld).add(id);
+    for (const s of publicPack(c.id).sources) shown.add(s.id);
+  }
+  return research()
+    .sources.filter((s) => shown.has(s.id) || !withheld.has(s.id))
+    .map((s) => ({ ...s, url: safeUrl(s.url) || "" }));
+});
+/** The public sources with these ids, for pages that cite a fixed few. */
+export function publicSourcesById(ids: string[]): Source[] {
+  const wanted = new Set(ids);
+  return publicSources().filter((s) => wanted.has(s.id));
+}
+const SUMMARY_FACTS = ["price_aud", "range_km", "seats"];
+/** A fact reduced to what a selection control shows. */
+function summaryFact(f: Fact): Fact {
+  return {
+    key: f.key,
+    label: f.label,
+    value: f.value,
+    unit: f.unit,
+    // The picker only asks whether a price is a reported one; the range basis labels a card.
+    basis:
+      f.key === "range_km"
+        ? f.basis
+        : f.key === "price_aud" && /reported/i.test(f.basis)
+          ? "Reported"
+          : "",
+    comparisonBasis: "",
+    status: f.status,
+    sourceIds: [],
+    date: "",
+    market: "",
+    scope: "",
+    qualifications: [],
+    issues: [],
+  };
+}
+// Selection controls need identity and three filter facts, not the full specifications. Public values only.
+export const pickerCatalogue = once((): Car[] =>
+  publicCatalogue().map((car) => ({
     ...car,
     facts: Object.fromEntries(
-      ["price_aud", "range_km", "seats"].map((key) => [key, car.facts[key]]),
+      SUMMARY_FACTS.map((key) => [key, summaryFact(car.facts[key])]),
     ),
     issues: [],
-  }));
+  })),
+);
+/** How much of the research visitors can see: the figures and equipment rows that pass isVerifiedFact. */
+export const verificationCounts = once(() => {
+  let facts = 0,
+    factsShown = 0,
+    rows = 0,
+    rowsShown = 0;
+  for (const c of catalogue()) {
+    const raw = pack(c.id);
+    for (const f of Object.values(raw.car.facts))
+      if (f.value !== null && f.value !== undefined) {
+        facts++;
+        if (isVerifiedFact(f)) factsShown++;
+      }
+    for (const f of raw.features) {
+      rows++;
+      if (isVerifiedFact(f)) rowsShown++;
+    }
+  }
+  return {
+    facts,
+    factsShown,
+    factsHidden: facts - factsShown,
+    rows,
+    rowsShown,
+    rowsHidden: rows - rowsShown,
+  };
+});
+/** counts() with the evidence figure restricted to the rows visitors can see. */
+export function publicCounts() {
+  return { ...counts(), evidence: verificationCounts().rowsShown };
 }
+const EXPLORER_EQUIPMENT = [
+  "front_ventilated",
+  "hud",
+  "adaptive_damping",
+  "power_roof_shade",
+];
+/**
+ * Yes/no equipment for the explorer filter. These trim records carry no grade; only the supplied
+ * (established) variants have them, so imported variants, graded fact by fact, contribute none.
+ * Variants with no recorded answer are left out: the filter keeps unknowns visible.
+ */
+export const publicEquipment = once(() => {
+  const imported = lookups().imported;
+  return Object.fromEntries(
+    research()
+      .trim_equipment.filter(
+        (e) =>
+          !imported.has(e.variant_id) &&
+          EXPLORER_EQUIPMENT.some((k) => typeof e[k] === "boolean"),
+      )
+      .map((e) => [
+        e.variant_id,
+        Object.fromEntries(
+          EXPLORER_EQUIPMENT.map((k) => [
+            k,
+            typeof e[k] === "boolean" ? e[k] : null,
+          ]),
+        ),
+      ]),
+  ) as Record<string, Record<string, boolean | null>>;
+});

@@ -6,6 +6,7 @@ import { useEffect, useOptimistic, useState, useTransition } from "react";
 import type { Car, Pack, Research, Selection } from "@/lib/types";
 import {
   formatFact,
+  formatYear,
   selectionUrl,
   factsDiffer,
   featuresDiffer,
@@ -23,6 +24,8 @@ import {
 } from "./ui";
 import { VariantPicker } from "./picker";
 import { orderChapters, type Chapter } from "@/lib/chapters";
+import { featureFor } from "@/lib/verification";
+import { seatsOf } from "@/lib/format";
 import { FootnoteRefs } from "./footnotes";
 
 type Props = {
@@ -110,25 +113,20 @@ export default function Experience({
       (state.category === "All categories" || c.group === state.category) &&
       `${c.label} ${c.definition} ${packs
         .flatMap((p) => {
-          const f = p.features.find((f) => f.criterion === c.key);
-          return f
-            ? [
-                f.value,
-                f.status,
-                f.conditions,
-                f.condition_label || "",
-                ...(f.usability_notes || []),
-                f.confirmation_needed || "",
-              ]
-            : [];
+          const f = featureFor(p, c.key);
+          return [
+            f.value,
+            f.status,
+            f.conditions,
+            f.condition_label || "",
+            ...(f.usability_notes || []),
+            f.confirmation_needed || "",
+          ];
         })
         .join(" ")}`
         .toLowerCase()
         .includes(state.q.toLowerCase()) &&
-      (!state.diff ||
-        featuresDiffer(
-          packs.map((p) => p.features.find((f) => f.criterion === c.key)!),
-        )),
+      (!state.diff || featuresDiffer(packs.map((p) => featureFor(p, c.key)))),
   );
   function save() {
     try {
@@ -195,7 +193,7 @@ export default function Experience({
                         : "A researched alternative"}
                     </span>
                     <span className="small">
-                      {p.car.year} · {p.car.drive}
+                      {formatYear(p.car.year)} · {p.car.drive}
                     </span>
                   </div>
                   <div className="stage-identity">
@@ -224,15 +222,13 @@ export default function Experience({
                         </button>
                         <FootnoteRefs ids={p.car.facts[key].sourceIds} />
                         <span className="small muted">
-                          {key === "price_aud"
-                            ? "Dated base/list · not driveaway"
-                            : key === "range_km"
-                              ? p.car.facts[key].basis
+                          {p.car.facts[key].value === null
+                            ? "Not yet confirmed"
+                            : key === "price_aud"
+                              ? "Dated base/list · not driveaway"
                               : key === "seats"
                                 ? "Occupied positions"
-                                : p.car.facts[key].value === null
-                                  ? "Comparable window not supplied"
-                                  : p.car.facts[key].basis}
+                                : p.car.facts[key].basis}
                         </span>
                         {p.car.facts[key].status === "conditional" && (
                           <span className="small">Needs confirmation</span>
@@ -402,12 +398,11 @@ export default function Experience({
                     {comparedRange.state === "comparable" &&
                     comparedRange.delta !== 0
                       ? `${Math.abs(comparedRange.delta!)} km difference in the WLTP claims. Check the wheel and variant conditions below.`
-                      : "Range needs a closer look at the applicable conditions."}{" "}
-                    {pair[0].car.facts.seats.value !==
-                    pair[1].car.facts.seats.value
-                      ? `${pair[0].car.facts.seats.value} seats versus ${pair[1].car.facts.seats.value}.`
-                      : `Both selected vehicles have ${pair[0].car.facts.seats.value} seats.`}{" "}
-                    No overall winner score.
+                      : comparedRange.state === "unknown"
+                        ? "A comparable range has not been confirmed for one of these vehicles."
+                        : "Range needs a closer look at the applicable conditions."}{" "}
+                    {seatSummary(pair[0].car, pair[1].car)} No overall winner
+                    score.
                   </p>
                 </div>
                 <ChapterLinks chapters={orderedChapters} />
@@ -497,9 +492,7 @@ export default function Experience({
                             key: c.key,
                             label: c.label,
                             cells: packs.map((p) => {
-                              const f = p.features.find(
-                                (f) => f.criterion === c.key,
-                              )!;
+                              const f = featureFor(p, c.key);
                               return (
                                 <FeatureValue key={p.car.id} feature={f} />
                               );
@@ -784,6 +777,14 @@ function ChapterLinks({ chapters: ordered }: { chapters: Chapter[] }) {
     </nav>
   );
 }
+function seatSummary(a: Car, b: Car) {
+  const [x, y] = [seatsOf(a), seatsOf(b)];
+  if (x === undefined || y === undefined)
+    return "Seat counts are not yet confirmed for one of these vehicles.";
+  return x !== y
+    ? `${x} seats versus ${y}.`
+    : `Both selected vehicles have ${x} seats.`;
+}
 function InlineChapters({
   chapters: ordered,
   packs,
@@ -805,11 +806,7 @@ function InlineChapters({
             !differences ||
             (packs[0].car.facts[key]
               ? factsDiffer(packs.map((p) => p.car.facts[key]))
-              : featuresDiffer(
-                  packs.map((p) =>
-                    p.features.find((f) => f.criterion === key)!,
-                  ),
-                )),
+              : featuresDiffer(packs.map((p) => featureFor(p, key)))),
         );
         return (
           <section
@@ -850,7 +847,7 @@ function InlineChapters({
                       ) : (
                         <FeatureValue
                           key={p.car.id}
-                          feature={p.features.find((f) => f.criterion === key)!}
+                          feature={featureFor(p, key)}
                         />
                       ),
                     ),

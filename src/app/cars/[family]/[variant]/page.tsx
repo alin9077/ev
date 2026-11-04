@@ -4,7 +4,7 @@ import { makeReport, carPath } from "@/lib/citable";
 export const dynamicParams = false;
 import { notFound } from "next/navigation";
 import Detail from "@/components/detail";
-import { catalogue, pack, research } from "@/lib/data";
+import { catalogue, publicPack, research } from "@/lib/data";
 export function generateStaticParams() {
   return catalogue().map((c) => ({ family: c.family, variant: c.slug }));
 }
@@ -35,7 +35,7 @@ export default async function VariantPage({
     (c) => c.family === p.family && c.slug === p.variant,
   );
   if (!c) notFound();
-  const record = pack(c.id);
+  const record = publicPack(c.id);
   return (
     <FootnoteProvider sources={record.sources}>
       <Detail pack={record} criteria={research().criteria}>
