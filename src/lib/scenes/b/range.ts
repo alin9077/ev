@@ -266,12 +266,18 @@ export const rangeSceneB = scene({
     const homeGlass = span(0.8, 4.3, t, 0.8) * 0.85;
 
     // The stop: both cars' 10–80% times, each at its own pace.
+    const unpaced = !!spec?.incomparable?.includes("dc_charge_time_min");
     const minutes = [base, rival].map(
       (car) => numberIn(car.facts.dc_charge_time_min) ?? 0,
     );
     const slowest = Math.max(minutes[0], minutes[1], 1);
+    // Times over different charge windows are not raced against each other: both bars fill at one pace.
     const level = (m: number) =>
-      m ? 0.1 + 0.7 * ramp(14.4, 14.4 + 2.9 * (m / slowest), t, (v) => v) : 0.1;
+      m
+        ? 0.1 +
+          0.7 *
+            ramp(14.4, 14.4 + 2.9 * (unpaced ? 1 : m / slowest), t, (v) => v)
+        : 0.1;
     const sitePort = onCar(model, BAY, 4.5, 0.83, 1.07);
     const siteHolster = chargerHolster(POST, 90 * DEG);
     const plugged =
@@ -533,7 +539,9 @@ export const rangeSceneB = scene({
             ? `${m} min`
             : "Not stated";
       };
-      pill(plate, over, base.name, `10–80% in ${time(base, minutes[0])}`, {
+      const claim = (car: typeof base, m: number) =>
+        `${car.bases?.dc_charge_time_min ?? "Charge window not stated"} in ${time(car, m)}`;
+      pill(plate, over, base.name, claim(base, minutes[0]), {
         tone: "dark",
         alpha: charging,
         dy: -92,
@@ -541,7 +549,7 @@ export const rangeSceneB = scene({
         bar: GREEN_CSS,
         tie: over,
       });
-      pill(plate, over, rival.name, `10–80% in ${time(rival, minutes[1])}`, {
+      pill(plate, over, rival.name, claim(rival, minutes[1]), {
         alpha: charging,
         dy: -57,
         level: (level(minutes[1]) - 0.1) / 0.7,

@@ -293,6 +293,33 @@ test("B scenes state the conditions the brief asks for", () => {
   assert.doesNotMatch(said("07", 4.9), /CarPlay|Android Auto/);
 });
 
+test("B scenes show each figure's basis and say when two prices are not comparable", () => {
+  const withBases = (price: string, window: string) => ({
+    ...carB("Model Y", 58900, 5.9),
+    bases: { price_aud: price, dc_charge_time_min: window },
+  });
+  const mixed = {
+    ...specB,
+    incomparable: ["price_aud", "dc_charge_time_min"],
+    cars: [
+      withBases("List", "10–80%"),
+      { ...withBases("Driveaway", "30–80%"), name: "Inster" },
+    ] as unknown as typeof specB.cars,
+  };
+  const said = (n: string, time: number) => {
+    const { ctx, seen } = counter();
+    chapterScenesB[n].scene.draw(ctx, 2400, 1028, time, 2, mixed);
+    return seen.text.join(" | ");
+  };
+  const price = said("01", 3.9);
+  assert.match(price, /A\$58,900 · List/);
+  assert.match(price, /A\$58,900 · Driveaway/);
+  assert.match(price, /not directly comparable/);
+  const charge = said("03", 16.5);
+  assert.match(charge, /10–80% in 24 min/);
+  assert.match(charge, /30–80% in 24 min/);
+});
+
 test("the B drive is driven calmly: no sharp turns, hard braking or jumps", () => {
   const dt = 1 / 60;
   let before = drivePose(0),

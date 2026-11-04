@@ -176,6 +176,8 @@ export type Car = {
   generation: string;
   year: number | string;
   vehicleClass: VehicleClass;
+  /** Set on selection-list entries whose specifications are all unverified (see coverage.ts). */
+  unverified?: boolean;
   availability: string;
   drive: string;
   facts: Record<string, Fact>;

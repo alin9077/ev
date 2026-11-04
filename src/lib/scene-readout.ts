@@ -9,6 +9,12 @@ import { statusLabels } from "./config";
 import type { SceneCar, SceneSpec } from "./scenes/kit";
 import type { Pack } from "./types";
 import { featureFor } from "./verification";
+import {
+  BASIS_KEYS,
+  basisTag,
+  compareBases,
+  numericValue,
+} from "./comparison-basis";
 
 /** Per chapter: the facts to quote, then features as [criterion, short label]. */
 const SHOWN: Record<string, { facts: string[]; features: [string, string][] }> =
@@ -70,14 +76,18 @@ export function readoutFor(
     cars: both((p) => `${p.car.model} ${p.car.trim}`),
     rows: [
       ...shown.facts.map((key) => ({
-        label: baseline.car.facts[key]?.label ?? key,
+        label:
+          (baseline.car.facts[key]?.label ?? key) +
+          (compareBases([baseline.car.facts[key], rival.car.facts[key]])
+            .comparable
+            ? ""
+            : " (not directly comparable)"),
         values: both((p) => {
           const fact = p.car.facts[key];
           if (!fact) return "–";
           const text = formatFact(fact);
-          return key === "range_km" && fact.basis
-            ? `${text} ${fact.basis}`
-            : text;
+          const tag = basisTag(fact);
+          return tag ? `${text} · ${tag}` : text;
         }),
       })),
       ...shown.features.map(([key, label]) => ({
@@ -91,10 +101,7 @@ export function readoutFor(
   };
 }
 
-const numberOf = (pack: Pack, key: string) => {
-  const value = pack.car.facts[key]?.value;
-  return typeof value === "number" ? value : undefined;
-};
+const numberOf = (pack: Pack, key: string) => numericValue(pack.car.facts[key]);
 /** The feature answers the B scenes quote in their labels. */
 const QUOTED = [
   "driveaway_price",
@@ -134,6 +141,9 @@ const sceneCar = (pack: Pack): SceneCar => ({
         : undefined,
     ]),
   ),
+  bases: Object.fromEntries(
+    BASIS_KEYS.map((key) => [key, basisTag(pack.car.facts[key])]),
+  ),
   features: Object.fromEntries(
     QUOTED.map((key) => {
       const feature = pack.features.find((f) => f.criterion === key);
@@ -163,12 +173,22 @@ const sceneCar = (pack: Pack): SceneCar => ({
   ],
 });
 /** The figures a scene is drawn from. */
-export const specFor = (baseline: Pack, rival: Pack): SceneSpec => ({
-  cars: [sceneCar(baseline), sceneCar(rival)],
-  seats: numberOf(baseline, "seats"),
-  rangeKm: numberOf(baseline, "range_km"),
-  rivalRangeKm: numberOf(rival, "range_km"),
-  priceAud: numberOf(baseline, "price_aud"),
-  bootL: numberOf(baseline, "boot_l"),
-  dcPeakKw: numberOf(baseline, "dc_peak_kw"),
-});
+export const specFor = (baseline: Pack, rival: Pack): SceneSpec => {
+  const incomparable = BASIS_KEYS.filter(
+    (key) =>
+      !compareBases([baseline.car.facts[key], rival.car.facts[key]]).comparable,
+  );
+  return {
+    cars: [sceneCar(baseline), sceneCar(rival)],
+    incomparable,
+    seats: numberOf(baseline, "seats"),
+    rangeKm: numberOf(baseline, "range_km"),
+    // A ring drawn beside the baseline's would compare them: only when both ranges share a cycle.
+    rivalRangeKm: incomparable.includes("range_km")
+      ? undefined
+      : numberOf(rival, "range_km"),
+    priceAud: numberOf(baseline, "price_aud"),
+    bootL: numberOf(baseline, "boot_l"),
+    dcPeakKw: numberOf(baseline, "dc_peak_kw"),
+  };
+};

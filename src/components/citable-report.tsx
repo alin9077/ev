@@ -77,8 +77,9 @@ export function CitableReportContent({
       <section aria-labelledby="key-facts">
         <h2 id="key-facts">Key facts</h2>
         <p className="small muted">
-          Six useful differences to check. Charging windows and cargo methods
-          may differ; these are not automatically comparable.
+          Six useful differences to check. Each price, range and charging time
+          names its basis; where the bases differ the row says so and no
+          difference is calculated. Cargo methods may also differ.
         </p>
         {[...new Set(report.keyFacts.map((f) => f.key))].map((key) => (
           <section className="answer-row" id={`fact-${key}`} key={key}>
@@ -93,6 +94,15 @@ export function CitableReportContent({
                 </>
               )}
             </h3>
+            {report.comparisons.find((c) => c.key === key && !c.comparable) && (
+              <p className="small">
+                <span className="basis-marker" role="note">
+                  <span aria-hidden="true">≠</span>{" "}
+                  {report.comparisons.find((c) => c.key === key)!.note}. No
+                  difference is calculated.
+                </span>
+              </p>
+            )}
             <div
               className={`answer-columns ${report.cars.length === 1 ? "single" : ""}`}
             >

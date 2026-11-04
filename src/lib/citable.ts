@@ -3,6 +3,7 @@ import { safeUrl, site, statusLabels } from "./config";
 import { formatFact } from "./compare";
 import { formatValue, formatYear, hasYear } from "./format";
 import { NOT_CONFIRMED, featureFor } from "./verification";
+import { basisTag, compareBases, isBasisKey } from "./comparison-basis";
 
 export const PAGE_UPDATED = "2026-10-08";
 export const keyMeasurements = [
@@ -33,12 +34,23 @@ export type Claim = {
   value: string;
   /** False when no verified figure is published: the value reads "Needs confirmation" and no basis, date or source is attached. */
   confirmed: boolean;
+  /** The normalised basis of price, range, battery or charging figures ("Driveaway", "NEDC", "30–80%"). */
+  basisTag?: string;
   basis: string;
   evidenceDate: string;
   status: Status;
   sentence: string;
   qualifications: string[];
   sources: Citation[];
+};
+/** Whether one measurement is quoted on the same basis for every car in the report. */
+export type BasisComparison = {
+  key: string;
+  label: string;
+  comparable: boolean;
+  /** Empty when comparable; otherwise "Not directly comparable: Driveaway vs List". */
+  note: string;
+  bases: { carId: string; car: string; tag: string }[];
 };
 export type Question = {
   id: string;
@@ -63,6 +75,8 @@ export type CitableReport = {
   }[];
   summary: string;
   keyFacts: Claim[];
+  /** One entry per key measurement that has a tracked basis. Figures on different bases are never ranked or subtracted. */
+  comparisons: BasisComparison[];
   questions: Question[];
 };
 
@@ -111,7 +125,7 @@ function finish(
     ? [...new Set(claim.qualifications.map(clean).filter(Boolean))]
     : [];
   const sentence = confirmed
-    ? `${name}: ${claim.label.toLowerCase()} — ${claim.value}; basis: ${clean(claim.basis)}; evidence checked ${claim.evidenceDate}; ${statusLabels[claim.status].toLowerCase()}.${qualifications.length ? ` ${qualifications.join(" ")}` : ""}`
+    ? `${name}: ${claim.label.toLowerCase()} — ${claim.value}${claim.basisTag ? ` (${claim.basisTag})` : ""}; basis: ${clean(claim.basis)}; evidence checked ${claim.evidenceDate}; ${statusLabels[claim.status].toLowerCase()}.${qualifications.length ? ` ${qualifications.join(" ")}` : ""}`
     : `${name}: ${claim.label.toLowerCase()} — not yet confirmed; no verified figure is published.`;
   return {
     ...claim,
@@ -120,7 +134,9 @@ function finish(
     carId: pack.car.id,
     qualifications,
     sentence,
-    ...(confirmed ? {} : { basis: "", evidenceDate: "", sources: [] }),
+    ...(confirmed
+      ? {}
+      : { basis: "", basisTag: undefined, evidenceDate: "", sources: [] }),
   };
 }
 export function factClaim(pack: Pack, fact: Fact): Claim {
@@ -128,6 +144,7 @@ export function factClaim(pack: Pack, fact: Fact): Claim {
     key: fact.key,
     label: fact.label,
     value: formatFact(fact),
+    basisTag: basisTag(fact),
     basis: fact.basis,
     evidenceDate: fact.date,
     status: fact.status,
@@ -213,6 +230,30 @@ export function makeReport(packs: Pack[], path: string): CitableReport {
   const keyFacts = keyMeasurements.flatMap((key) =>
     packs.map((p) => factClaim(p, p.car.facts[key])),
   );
+  const comparisons = keyMeasurements
+    .filter(isBasisKey)
+    .map((key): BasisComparison => {
+      const facts = packs.map((p) => p.car.facts[key]);
+      const row = compareBases(facts);
+      return {
+        key,
+        label: facts[0]?.label ?? key,
+        comparable: row.comparable,
+        note: row.note,
+        bases: packs.flatMap((p, i) =>
+          row.bases[i]
+            ? [
+                {
+                  carId: p.car.id,
+                  car: carName(p.car),
+                  tag: row.bases[i]!.tag,
+                },
+              ]
+            : [],
+        ),
+      };
+    });
+  const mixed = comparisons.filter((c) => !c.comparable);
   const names = packs.map((p) => `${p.car.brand} ${p.car.model}`).join(" or ");
   const rows = questions.map((q): Question => {
     const claims = packs
@@ -254,8 +295,9 @@ export function makeReport(packs: Pack[], path: string): CitableReport {
       generation: c.generation,
       url: `${site.origin}${carPath(c)}`,
     })),
-    summary: `${title}, Australian specifications. The six figures below cover listed price, claimed range, DC charging time, cargo space, braked towing and vehicle warranty. ${dates.length ? `Evidence checked ${dates.join(" / ")}; measurement bases and conditions are shown beside each figure.` : "No figure here is verified yet."} Figures that are not verified read "Needs confirmation" and carry no value.`,
+    summary: `${title}, Australian specifications. The six figures below cover listed price, claimed range, DC charging time, cargo space, braked towing and vehicle warranty. ${dates.length ? `Evidence checked ${dates.join(" / ")}; measurement bases and conditions are shown beside each figure.` : "No figure here is verified yet."} Figures that are not verified read "Needs confirmation" and carry no value.${mixed.length ? ` Not directly comparable here: ${mixed.map((c) => `${c.label.toLowerCase()} (${[...new Set(c.bases.map((b) => b.tag))].join(" vs ")})`).join("; ")}. Figures quoted on different bases are not ranked or subtracted.` : ""}`,
     keyFacts,
+    comparisons,
     questions: rows,
   };
 }
@@ -265,9 +307,20 @@ export function citationText(source: Citation) {
 export function claimText(claim: Claim) {
   return `${claim.sentence}\nSource: ${claim.sources.map(citationText).join(" | ")}`;
 }
+/** Which key measurements are quoted on different bases, so a reader or an AI does not subtract them. */
+function comparabilityMarkdown(report: CitableReport) {
+  const mixed = report.comparisons.filter((c) => !c.comparable);
+  if (!mixed.length) return "";
+  return `\n\n### Not directly comparable\n\n${mixed
+    .map(
+      (c) =>
+        `- ${c.label}: ${c.bases.map((b) => `${b.car} (${b.tag})`).join("; ")}. ${c.note}. No difference is calculated.`,
+    )
+    .join("\n")}`;
+}
 export function reportMarkdown(report: CitableReport) {
   const origin = new URL(report.url).origin;
-  return `# ${report.title}\n\n${report.url}\nPage updated: ${report.dateModified}. Individual evidence dates below are retained.\n\n${report.summary}\n\n## Key facts\n\n${report.keyFacts.map(claimText).join("\n\n")}\n\n${report.questions.map((q) => `## ${q.question}\n\n${q.answer}\n\n${q.claims.map(claimText).join("\n\n")}`).join("\n\n")}\n\nMethodology: ${origin}/methodology\nGlossary: ${origin}/glossary\n`;
+  return `# ${report.title}\n\n${report.url}\nPage updated: ${report.dateModified}. Individual evidence dates below are retained.\n\n${report.summary}\n\n## Key facts\n\n${report.keyFacts.map(claimText).join("\n\n")}${comparabilityMarkdown(report)}\n\n${report.questions.map((q) => `## ${q.question}\n\n${q.answer}\n\n${q.claims.map(claimText).join("\n\n")}`).join("\n\n")}\n\nMethodology: ${origin}/methodology\nGlossary: ${origin}/glossary\n`;
 }
 export function reportSchema(report: CitableReport) {
   return {

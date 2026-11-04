@@ -727,6 +727,8 @@ export type SceneSpec = {
   priceAud?: number;
   bootL?: number;
   dcPeakKw?: number;
+  /** Fact keys whose figures for the two cars use different bases (list vs driveaway, WLTP vs NEDC, ...). */
+  incomparable?: string[];
   /** For the B scenes: the baseline, then the alternative, in full. */
   cars?: [SceneCar, SceneCar];
 };
@@ -734,6 +736,8 @@ export type SceneSpec = {
 export type SceneCar = {
   name: string;
   facts: Record<string, number | string | undefined>;
+  /** The basis tag of price, range, battery and charging figures ("Driveaway", "NEDC", "30–80%"). */
+  bases?: Record<string, string | undefined>;
   features: Record<string, { status: string; value: string } | undefined>;
   /**
    * Documented Australian software releases in the research window, oldest

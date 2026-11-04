@@ -1,5 +1,6 @@
 import type { Car, Fact, Feature } from "./types";
 import { BASELINE } from "./config";
+import { basisTag, rankableIndices } from "./comparison-basis";
 
 /** The vehicle-type filter. Utes sit with passenger cars: there are only a few and their figures are graded. */
 export const vehicleTypes = [
@@ -26,6 +27,21 @@ export function inVehicleType(car: Pick<Car, "vehicleClass">, type: string) {
   return (
     !t.classes.length || (t.classes as string[]).includes(car.vehicleClass)
   );
+}
+/**
+ * How many variants of a type have no verified specification (the `unverified` flag of pickerCars()), as a
+ * suffix for a menu label: "" when all are verified, " · unverified" when none is, " · 3 unverified" otherwise.
+ */
+export function unverifiedSuffix(
+  cars: readonly Pick<Car, "vehicleClass" | "unverified">[],
+  type: string,
+) {
+  const inType = cars.filter((c) => inVehicleType(c, type));
+  const unverified = inType.filter((c) => c.unverified).length;
+  if (!unverified) return "";
+  return unverified === inType.length
+    ? " · unverified"
+    : ` · ${unverified} unverified`;
 }
 /** The ten best-selling EVs the guide began with come first; every other family follows by brand. */
 const FEATURED_FAMILIES = [
@@ -66,15 +82,23 @@ export function familyOrder(
     );
   });
 }
-/** The lowest-priced current trim of a family, by verified prices only; unconfirmed prices rank last. */
+/**
+ * The lowest-priced current trim of a family, by verified prices only. Only prices on the family's shared basis
+ * compete (a driveaway offer is not "cheaper" than a list price); trims on another basis, or with no verified
+ * price, rank after them. If no two prices share a basis the plain price order stands.
+ */
 export function defaultTrim(group: Car[]) {
   const current = group.filter(
     (c) => c.availability === "current_or_order_listed",
   );
-  return [...(current.length ? current : group)].sort(
+  const pool = current.length ? current : group;
+  const ranked = new Set(rankableIndices(pool.map((c) => c.facts.price_aud)));
+  const order = new Map(pool.map((c, i) => [c, ranked.has(i) ? 0 : 1]));
+  return [...pool].sort(
     (a, b) =>
+      order.get(a)! - order.get(b)! ||
       Number(a.facts.price_aud?.value ?? Infinity) -
-      Number(b.facts.price_aud?.value ?? Infinity),
+        Number(b.facts.price_aud?.value ?? Infinity),
   )[0];
 }
 /** One current representative per family; this is not a sales ranking. */
@@ -178,7 +202,9 @@ export function factCondition(f: Fact) {
   if (f.resolvedElsewhere)
     return "Not from the maker's Australian specification for this exact version. The source is named below.";
   if (f.key === "price_aud")
-    return "This dated figure is not a driveaway quote. Confirm it on a current order sheet.";
+    return basisTag(f) === "Driveaway"
+      ? "This dated driveaway figure is an advertised offer. Confirm it with the dealer before relying on it."
+      : "This dated figure is not a driveaway quote. Confirm it on a current order sheet.";
   if (f.key === "zero_to_100_s")
     return "The figure has changed since launch or is reported, not confirmed for this build.";
   if (f.key === "range_km")

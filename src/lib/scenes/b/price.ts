@@ -334,7 +334,9 @@ export const priceSceneB = scene({
           plate,
           roof,
           car.name,
-          prices[row] ? dollars(prices[row]!) : "Price not stated",
+          prices[row]
+            ? `${dollars(prices[row]!)}${car.bases?.price_aud ? ` · ${car.bases.price_aud}` : ""}`
+            : "Price not stated",
           {
             tone: row ? "light" : "dark",
             alpha: priced,
@@ -345,7 +347,9 @@ export const priceSceneB = scene({
       });
       caption(
         plate,
-        "Listed retail price for the selected version, before on-road costs. Each tile is A$10,000.",
+        spec?.incomparable?.includes("price_aud")
+          ? `These prices are quoted on different bases (${base.bases?.price_aud ?? "unclear"} vs ${rival.bases?.price_aud ?? "unclear"}), so they are not directly comparable. Each tile is A$10,000.`
+          : "Price for the selected version on the basis shown, before on-road costs unless marked Driveaway. Each tile is A$10,000.",
         priced,
       );
 

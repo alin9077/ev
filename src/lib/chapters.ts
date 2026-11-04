@@ -182,7 +182,8 @@ export const rowNotes: Record<string, string> = {
     "Private-use terms; whichever limit comes first. Component exclusions apply.",
   battery_warranty:
     "Every maker here guarantees at least 70% of the original capacity within the term.",
-  range_km: "Laboratory figures on the WLTP cycle, not real-world range.",
+  range_km:
+    "Laboratory-cycle figures, not real-world range. Most are WLTP; ADR, NEDC and WLTC figures are tagged and are not compared with WLTP.",
   driveaway_price:
     "Sydney figures. Stamp duty, registration and delivery differ by state and dealer; get a written quote.",
   novated_fbt:

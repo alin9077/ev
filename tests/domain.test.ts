@@ -86,12 +86,23 @@ test("validator rejects broken source lineage and duplicate criterion", () => {
   assert.ok(validateResearch(d).length >= 2);
 });
 test("numeric deltas require matching measurement basis", () => {
+  // Both prices are list prices before on-road costs, and both ranges WLTP: the wording differs, the basis does not.
+  const price = compareFacts(y.car.facts.price_aud, s.car.facts.price_aud);
+  assert.equal(price.state, "comparable");
   assert.equal(
-    compareFacts(y.car.facts.price_aud, s.car.facts.price_aud).state,
-    "different_basis",
+    price.delta,
+    Number(s.car.facts.price_aud.value) - Number(y.car.facts.price_aud.value),
   );
   assert.equal(
     compareFacts(y.car.facts.range_km, s.car.facts.range_km).state,
+    "comparable",
+  );
+  // A driveaway price and a list price are never subtracted.
+  assert.equal(
+    compareFacts(
+      { ...y.car.facts.price_aud, comparisonBasis: "Driveaway price" },
+      s.car.facts.price_aud,
+    ).state,
     "different_basis",
   );
   assert.equal(

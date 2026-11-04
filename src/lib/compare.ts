@@ -2,6 +2,7 @@ import type { Fact, Feature, Selection, Car } from "./types";
 import { BASELINE, CHALLENGER, site, priorities } from "./config";
 import { formatValue } from "./format";
 import { NOT_CONFIRMED } from "./verification";
+import { compareBases, isBasisKey } from "./comparison-basis";
 export function compareFacts(
   a: Fact,
   b: Fact,
@@ -28,7 +29,15 @@ export function compareFacts(
       state: "conditional",
       reason: "Build, evidence or equipment conditions require confirmation.",
     };
-  if (a.unit !== b.unit || a.comparisonBasis !== b.comparisonBasis)
+  // Price, range, battery and charging window are normalised by the basis helper, not by string equality.
+  if (isBasisKey(a.key) || isBasisKey(b.key)) {
+    const row = compareBases([a, b]);
+    if (!row.comparable || a.unit !== b.unit)
+      return {
+        state: "different_basis",
+        reason: row.note || "Different units; no direct delta.",
+      };
+  } else if (a.unit !== b.unit || a.comparisonBasis !== b.comparisonBasis)
     return {
       state: "different_basis",
       reason: "Different measurement or quotation bases; no direct delta.",
