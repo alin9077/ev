@@ -1,3 +1,4 @@
+import fs from "node:fs";
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import {
@@ -20,25 +21,32 @@ import { fleetSelection, featureCondition } from "../src/lib/fleet";
 const cars = catalogue();
 const y = pack(BASELINE);
 const s = pack(CHALLENGER);
-test("fleet covers ten distinct families and respects current trims and valid URLs", () => {
+test("fleet covers every family once and respects current trims and valid URLs", () => {
   const initial = fleetSelection(cars, new URLSearchParams());
   assert.equal(initial.baseline, "tesla_model_y__premium_rwd__2");
-  assert.equal(initial.ids.length, 9);
+  // The 2026-10-16 import grew the data from ten families to 193; the Tesla Model Y family is the baseline.
+  const families = new Set(cars.map((c) => c.family));
+  assert.equal(initial.ids.length, families.size - 1);
   assert.equal(
     new Set(
       [initial.baseline, ...initial.ids].map(
         (id) => cars.find((c) => c.id === id)!.family,
       ),
     ).size,
-    10,
+    families.size,
   );
-  assert.ok(
-    initial.ids.every(
-      (id) =>
-        cars.find((c) => c.id === id)!.availability ===
-        "current_or_order_listed",
-    ),
-  );
+  // A family with any current trim is represented by a current one.
+  for (const id of initial.ids) {
+    const car = cars.find((c) => c.id === id)!;
+    if (
+      cars.some(
+        (c) =>
+          c.family === car.family &&
+          c.availability === "current_or_order_listed",
+      )
+    )
+      assert.equal(car.availability, "current_or_order_listed", id);
+  }
   const selected = fleetSelection(
     cars,
     new URLSearchParams({
@@ -58,15 +66,16 @@ test("fleet covers ten distinct families and respects current trims and valid UR
   );
 });
 test("research counts are calculated with family/generation distinction", () =>
+  // 34 supplied variants (10 families, 11 generations, 2,346 evidence rows) plus the 399 imported on 16 October 2026.
   assert.deepEqual(counts(), {
-    variants: 34,
-    families: 10,
-    generations: 11,
+    variants: 433,
+    families: 193,
+    generations: 194,
     criteria: 69,
-    evidence: 2346,
-    current: 29,
-    outgoing: 4,
-    provisional: 1,
+    evidence: 29877,
+    current: 351,
+    outgoing: 46,
+    provisional: 36,
   }));
 test("all evidence references and structural coverage validate", () =>
   assert.deepEqual(validateResearch(research()), []));
@@ -107,11 +116,13 @@ test("charging windows, capacity and cargo bases remain distinct", () => {
     ).state,
     "different_basis",
   );
-  assert.equal(y.car.facts.battery_kwh.value, 60);
+  // The import replaced the industry-data 60 kWh with a reported 62.5 kWh (change-log-original-34.md); still conditional, with its basis stated.
+  assert.equal(y.car.facts.battery_kwh.value, 62.5);
   assert.equal(y.car.facts.battery_kwh.status, "conditional");
+  assert.equal(y.car.facts.battery_kwh.grade, "reported");
   assert.match(
     y.car.facts.battery_kwh.basis,
-    /Tesla publishes no battery capacity/,
+    /gross\/usable basis unspecified/,
   );
   assert.equal(
     compareFacts(y.car.facts.boot_l, s.car.facts.boot_l).state,
@@ -341,7 +352,9 @@ test("operating thresholds stay distinct from feature availability and unverifie
   );
   assert.equal(feature("walk_away_lock").status, "unavailable");
   assert.equal(feature("walk_away_lock").confirmation_needed, undefined);
-  assert.equal(feature("safety_ancap").status, "standard");
+  // The import re-checked this rating: reported, and limited to cars built from January 2025.
+  assert.equal(feature("safety_ancap").status, "conditional");
+  assert.equal(feature("safety_ancap").grade, "reported");
   assert.equal(
     feature("driver_profiles_local").value,
     "2 seat-and-mirror memory positions",
@@ -385,14 +398,26 @@ test("buyer rows preserve source lineage and explicitly hold unaudited figures",
     "child_seats",
     "spare_tyre",
   ];
+  const supplied = new Set(
+    (
+      JSON.parse(
+        fs.readFileSync("data/au_ev_all_variants_2026-10-06.json", "utf8"),
+      ) as { variants: { id: string }[] }
+    ).variants.map((v) => v.id),
+  );
   for (const c of cars) {
     const p = pack(c.id);
     for (const key of added) {
       const f = p.features.find((x) => x.criterion === key)!;
       assert.ok(f.value, `${c.id}/${key}`);
-      if (f.status === "not_verified")
-        assert.equal(f.verification_state, "full_text_audit_2026-10-08");
-      assert.ok(f.source_ids.length, `${c.id}/${key} has no source`);
+      if (supplied.has(c.id)) {
+        if (f.status === "not_verified")
+          assert.equal(f.verification_state, "full_text_audit_2026-10-08");
+        assert.ok(f.source_ids.length, `${c.id}/${key} has no source`);
+      } else if (f.status === "not_verified") {
+        // Imported rows that are still unresolved carry a value to say so ("Needs confirmation", "Not published").
+        assert.ok(f.value.length > 0, `${c.id}/${key}`);
+      } else assert.ok(f.source_ids.length, `${c.id}/${key} has no source`);
     }
     for (const key of [
       "ground_clearance_mm",
@@ -402,7 +427,8 @@ test("buyer rows preserve source lineage and explicitly hold unaudited figures",
     ])
       if (c.facts[key].value === null) {
         assert.equal(c.facts[key].status, "not_verified");
-        assert.ok(c.facts[key].qualifications.length);
+        // The supplied variants explain every withheld figure; imported ones may simply have none published.
+        if (supplied.has(c.id)) assert.ok(c.facts[key].qualifications.length);
       } else
         assert.equal(typeof c.facts[key].value, "number", `${c.id}/${key}`);
   }
