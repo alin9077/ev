@@ -1,10 +1,17 @@
 import { test, expect } from "@playwright/test";
+import {
+  openingAlternatives as N,
+  familiesOfType,
+  familiesMatching,
+  firstConditional,
+} from "./fleet-data";
+import { WINDOW } from "../../src/lib/fleet";
 
-test("all ten families share swipe position, keep Tesla fixed and preserve trims", async ({
+test("every family shares swipe position, keep Tesla fixed and preserve trims", async ({
   page,
 }) => {
-  // Retained traces of all ten cars add substantial per-action overhead in WebKit.
-  test.setTimeout(90_000);
+  // Retained traces of every car add substantial per-action overhead in WebKit.
+  test.setTimeout(240_000);
   await page.setViewportSize({ width: 1440, height: 1000 });
   await page.goto("/");
   await expect(
@@ -13,7 +20,9 @@ test("all ten families share swipe position, keep Tesla fixed and preserve trims
   const hero = page.locator(".fleet-hero-row"),
     track = hero.locator(".swipe-track");
   await expect(hero.locator(".baseline-card")).toHaveCount(1);
-  await expect(track.locator(".swipe-card")).toHaveCount(9);
+  // Only the cars near the reader are drawn; spacers hold the rest of the track.
+  await expect(track.locator(".swipe-card")).toHaveCount(WINDOW + 1);
+  await expect(page.locator(".fleet-position")).toHaveText(`1 / ${N}`);
   await expect(page.locator(".fleet-detail")).toHaveCount(90);
   await expect(
     page.getByRole("button", { name: "Previous EV", exact: true }),
@@ -34,11 +43,11 @@ test("all ten families share swipe position, keep Tesla fixed and preserve trims
       profiles.locator(".swipe-track").evaluate((el) => el.scrollLeft),
     )
     .toBeGreaterThan(300);
-  await page.getByLabel("Jump to EV").selectOption("8");
+  await page.getByLabel("Jump to EV").selectOption(String(N - 1));
   await expect(
     page.getByRole("button", { name: "Next EV", exact: true }),
   ).toBeDisabled();
-  await expect(page.locator(".fleet-position")).toHaveText("9 / 9");
+  await expect(page.locator(".fleet-position")).toHaveText(`${N} / ${N}`);
   await track.focus();
   await page.keyboard.press("Home");
   await expect(page.getByLabel("Jump to EV")).toHaveValue("0");
@@ -61,7 +70,7 @@ test("all ten families share swipe position, keep Tesla fixed and preserve trims
   ).toHaveValue("tesla_model_y__l_premium_awd__4");
   await page.setViewportSize({ width: 390, height: 844 });
   await page.getByLabel("Jump to EV").selectOption("7");
-  await expect(page.locator(".fleet-position")).toHaveText("8 / 9");
+  await expect(page.locator(".fleet-position")).toHaveText(`8 / ${N}`);
   expect(
     await page.evaluate(
       () => document.documentElement.scrollWidth <= innerWidth,
@@ -88,23 +97,32 @@ test("conditional features explain dependencies beside the label", async ({
   await expect(
     v2l.locator(".baseline-card .conditional-context"),
   ).toContainText("VIN");
+  // Unverified answers read "Needs confirmation", so look for the first one that is conditional.
+  const conditional = firstConditional("supercharger_access");
+  expect(conditional.index).toBeGreaterThanOrEqual(0);
+  await page.getByLabel("Jump to EV").selectOption(String(conditional.index));
   const phone = page
     .locator(".fleet-detail")
     .filter({ has: page.locator("#detail-supercharger_access") });
   await expect(
-    phone.locator('.swipe-card[data-index="0"] .conditional-context'),
-  ).toContainText("Tesla app");
+    phone.locator(
+      `.swipe-card[data-index="${conditional.index}"] .conditional-context`,
+    ),
+  ).toContainText("Why conditional");
   await expect(
     page.locator(
       ".feature-value:has(> .status.conditional):not(:has(.conditional-context))",
     ),
   ).toHaveCount(0);
-  await page.getByLabel("Jump to EV").selectOption("8");
+  // A price whose basis is conditional says so beside the figure.
+  const price = firstConditional("price_aud", "fact");
+  expect(price.index).toBeGreaterThanOrEqual(0);
+  await page.getByLabel("Jump to EV").selectOption(String(price.index));
   await expect(
     page
       .locator(".fleet-detail")
       .filter({ has: page.locator("#detail-price_aud") })
-      .locator('.swipe-card[data-index="8"] .conditional-context'),
+      .locator(`.swipe-card[data-index="${price.index}"] .conditional-context`),
   ).toContainText("driveaway quote");
 });
 
@@ -132,16 +150,19 @@ test("phones show one rival beside Model Y in the offline file", async ({
   await expect(range.locator(".fact-basis").first()).toBeVisible();
   const track = range.locator(".swipe-track");
   async function swipe(dx: number, dy = 0) {
-    await track.evaluate((el, { dx, dy }) => {
-      const start = new Event("touchstart", { bubbles: true });
-      Object.assign(start, { touches: [{ clientX: 180, clientY: 300 }] });
-      el.dispatchEvent(start);
-      const end = new Event("touchend", { bubbles: true });
-      Object.assign(end, {
-        changedTouches: [{ clientX: 180 + dx, clientY: 300 + dy }],
-      });
-      el.dispatchEvent(end);
-    }, { dx, dy });
+    await track.evaluate(
+      (el, { dx, dy }) => {
+        const start = new Event("touchstart", { bubbles: true });
+        Object.assign(start, { touches: [{ clientX: 180, clientY: 300 }] });
+        el.dispatchEvent(start);
+        const end = new Event("touchend", { bubbles: true });
+        Object.assign(end, {
+          changedTouches: [{ clientX: 180 + dx, clientY: 300 + dy }],
+        });
+        el.dispatchEvent(end);
+      },
+      { dx, dy },
+    );
   }
   await swipe(-100);
   await expect(page.getByLabel("Jump to EV")).toHaveValue("1");
@@ -157,7 +178,7 @@ test("phones show one rival beside Model Y in the offline file", async ({
   await page.getByRole("button", { name: "Next EV", exact: true }).click();
   await expect(page.getByLabel("Jump to EV")).toHaveValue("1");
   await page.getByLabel("Jump to EV").selectOption("5");
-  await expect(page.locator(".fleet-position")).toHaveText("6 / 9");
+  await expect(page.locator(".fleet-position")).toHaveText(`6 / ${N}`);
   await expect(page.locator(".fleet-anchor-label")).toContainText("Model Y");
   expect(
     await page.evaluate(
@@ -209,7 +230,59 @@ test("the chapter row in the sticky bar jumps, steps and marks the chapter in vi
   const price = page
     .locator(".fleet-detail")
     .filter({ has: page.locator("#detail-driveaway_price") });
+  // Model Y's driveaway figure is not verified, so the row says so rather than quoting it.
   await expect(price.locator(".baseline-card")).toContainText(
-    "A$63,963 in Sydney",
+    "Needs confirmation",
   );
+  await expect(price.locator(".baseline-card")).not.toContainText("A$63,963");
+});
+
+test("vehicle type and search narrow the fleet, and unconfirmed vehicles show no figures", async ({
+  page,
+}) => {
+  const vans = familiesOfType("van"),
+    porsche = familiesMatching("porsche");
+  expect(vans).toBeGreaterThan(0);
+  expect(porsche).toBeGreaterThan(0);
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  await page.goto("/");
+  const type = page.getByLabel("Vehicle type");
+  await expect(type).toHaveValue("cars");
+  await expect(page.locator(".fleet-intro-footer")).toContainText("families");
+  await page.getByLabel("Find a brand or model").fill("porsche");
+  await expect(page.locator(".fleet-position")).toHaveText(`1 / ${porsche}`);
+  await expect(page).toHaveURL(/q=porsche/);
+  await expect(page.getByLabel("Jump to EV").locator("option")).toHaveCount(
+    porsche,
+  );
+  await page.getByLabel("Find a brand or model").fill("");
+  await type.selectOption("van");
+  await expect(page.locator(".fleet-position")).toHaveText(`1 / ${vans}`);
+  await expect(page).toHaveURL(/type=van/);
+  // No van figure has been verified: every card reads the empty state, none quotes a value.
+  const price = page
+    .locator(".fleet-detail")
+    .filter({ has: page.locator("#detail-price_aud") });
+  await expect(price.locator('.swipe-card[data-index="0"]')).toContainText(
+    "Needs confirmation",
+  );
+  await expect(price.locator('.swipe-card[data-index="0"]')).not.toContainText(
+    "A$",
+  );
+  await page.reload();
+  await expect(page.getByLabel("Vehicle type")).toHaveValue("van");
+  await expect(page.locator(".fleet-position")).toHaveText(`1 / ${vans}`);
+  // A search with no match leaves the type's list whole and says so.
+  await page.getByLabel("Find a brand or model").fill("zzzz");
+  await expect(
+    page.getByRole("status").filter({ hasText: "No vans" }),
+  ).toBeVisible();
+  await expect(page.locator(".fleet-position")).toHaveText(`1 / ${vans}`);
+  // Phones: the controls fit the width.
+  await page.setViewportSize({ width: 375, height: 800 });
+  expect(
+    await page.evaluate(
+      () => document.documentElement.scrollWidth <= innerWidth,
+    ),
+  ).toBe(true);
 });

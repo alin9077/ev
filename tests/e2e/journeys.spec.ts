@@ -1,5 +1,6 @@
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
+import { openingAlternatives as N } from "./fleet-data";
 const baseline = "tesla_model_y__premium_long_range_awd__1",
   challenger = "byd_sealion_7__premium_rwd__1",
   third = "kia_ev3__air_2wd_standard_range__1";
@@ -11,13 +12,14 @@ test("homepage offers an actionable comparison in the first phone viewport", asy
   page.on("pageerror", (e) => errors.push(e.message));
   await page.goto("/");
   await expect(page.getByRole("heading", { level: 1 })).toContainText(
-    "Tesla Model Y vs.",
+    "Tesla Model Y is the EV car of the year",
   );
-  // On phones the home page is the one-to-one comparison: both names and the picker lead.
+  // On phones the comparison bar names both cars and holds the picker; it sticks once the verdict is read.
+  await page.locator(".fleet-anchor-label").scrollIntoViewIfNeeded();
   await expect(page.locator(".fleet-anchor-label")).toBeInViewport();
   await expect(page.getByLabel("Jump to EV")).toBeInViewport();
   await page.getByRole("button", { name: "Next EV", exact: true }).click();
-  await expect(page.locator(".fleet-position")).toHaveText("2 / 9");
+  await expect(page.locator(".fleet-position")).toHaveText(`2 / ${N}`);
   expect(errors).toEqual([]);
 });
 test("all four Model Ys update data, L scope stays separate, picker focus returns", async ({
@@ -154,6 +156,7 @@ test("URL handles duplicates, unknown IDs and dated shared context", async ({
 test("all chapter details are inline with usable anchors, evidence and specific conditions", async ({
   page,
 }) => {
+  test.setTimeout(180_000);
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/");
   await expect(page.locator(".inline-chapter")).toHaveCount(7);
@@ -191,10 +194,16 @@ test("all chapter details are inline with usable anchors, evidence and specific 
   const v2l = page
     .locator(".fleet-detail")
     .filter({ has: page.locator("#detail-v2l") });
-  await expect(v2l).toContainText("3.3 kW V2L · at least 15% charge to start");
+  // Sealion 7's V2L answer is not verified, so it reads "Needs confirmation"; Geely EX5's is.
+  await expect(v2l.locator('.swipe-card[data-index="0"]')).toContainText(
+    "Needs confirmation",
+  );
+  await expect(v2l.locator('.swipe-card[data-index="1"]')).toContainText(
+    "3.3 kW",
+  );
   await v2l.getByRole("button", { name: "Details: Vehicle-to-load" }).click();
   const ref = v2l
-    .locator('.swipe-card[data-index="0"] .footnote-refs a')
+    .locator('.swipe-card[data-index="1"] .footnote-refs a')
     .first();
   const target = await ref.getAttribute("href");
   await ref.click();

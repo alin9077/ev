@@ -19,7 +19,7 @@ test("standalone index works offline with selection, history, details and footno
   });
   await page.goto(file);
   await expect(page.getByRole("heading", { level: 1 })).toContainText(
-    "Tesla Model Y vs.",
+    "Tesla Model Y is the EV car of the year",
   );
   await page.getByRole("link", { name: "Compare these cars" }).click();
   await page.getByRole("button", { name: /Challenger 1/ }).click();
@@ -38,7 +38,9 @@ test("standalone index works offline with selection, history, details and footno
   await expect(
     page.getByRole("button", { name: "Overview", exact: true }),
   ).toHaveAttribute("aria-pressed", "true");
-  await page.getByRole("link", { name: "EV Side by Side home" }).click();
+  await page
+    .getByRole("link", { name: "EV Side by Side", exact: true })
+    .click();
   await expect(page.locator(".fleet-detail")).toHaveCount(90);
   const v2l = page
     .locator(".fleet-detail")
@@ -48,7 +50,7 @@ test("standalone index works offline with selection, history, details and footno
   const target = await ref.getAttribute("href");
   await ref.click();
   await expect(page.locator(target!)).toBeFocused();
-  await page.getByRole("link", { name: "Explore cars", exact: true }).click();
+  await page.getByRole("link", { name: /^Explore all \d+ variants$/ }).click();
   await expect(page.getByRole("heading", { level: 1 })).toHaveText(
     "Explore cars",
   );
@@ -72,7 +74,7 @@ test("served index loads as a self-contained page and passes automated accessibi
   await page.setViewportSize({ width: 320, height: 844 });
   await page.goto("/index.html");
   await expect(page.getByRole("heading", { level: 1 })).toContainText(
-    "Tesla Model Y vs.",
+    "Tesla Model Y is the EV car of the year",
   );
   await expect(page.locator(".inline-chapter")).toHaveCount(7);
   expect(

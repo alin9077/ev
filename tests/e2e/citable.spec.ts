@@ -1,6 +1,7 @@
 import { test, expect } from "@playwright/test";
 import { pairPages, pairReport } from "../../src/lib/pair-pages";
-import { catalogue } from "../../src/lib/data";
+import { publicCatalogue } from "../../src/lib/data";
+import { variantCount } from "./fleet-data";
 import { reportMarkdown } from "../../src/lib/citable";
 
 test("all nine comparisons expose dated claims, links and schema without JavaScript", async ({
@@ -62,26 +63,48 @@ test("all nine comparisons expose dated claims, links and schema without JavaScr
   expect(unknown?.status()).toBe(404);
   await context.close();
 });
-test("all 34 variant pages have a key-facts block before JavaScript", async ({
+test("every variant page has a key-facts block before JavaScript", async ({
   browser,
   baseURL,
 }) => {
+  test.setTimeout(300_000);
   const context = await browser.newContext({
     javaScriptEnabled: false,
     baseURL,
   });
   const page = await context.newPage();
-  for (const car of catalogue()) {
+  const cars = publicCatalogue();
+  expect(cars).toHaveLength(variantCount);
+  let confirmed = 0,
+    withheld = 0;
+  for (const car of cars) {
     const response = await page.goto(`/cars/${car.family}/${car.slug}`);
     expect(response?.status()).toBe(200);
     await expect(page.locator("#key-facts")).toBeVisible();
     await expect(page.locator("#fact-price_aud")).toContainText(
       `${car.brand} ${car.model} ${car.trim}`,
     );
-    expect(
-      await page.locator("#fact-price_aud .claim-sources a").count(),
-    ).toBeGreaterThan(0);
+    if (car.facts.price_aud.value === null) {
+      // An unconfirmed price names no figure and cites no source.
+      withheld++;
+      await expect(page.locator("#fact-price_aud")).toContainText(
+        "not yet confirmed",
+      );
+      expect(
+        await page.locator("#fact-price_aud .claim-sources a").count(),
+      ).toBe(0);
+      expect(await page.locator("#fact-price_aud").innerText()).not.toMatch(
+        /A\$\d/,
+      );
+    } else {
+      confirmed++;
+      expect(
+        await page.locator("#fact-price_aud .claim-sources a").count(),
+      ).toBeGreaterThan(0);
+    }
   }
+  expect(confirmed).toBeGreaterThan(100);
+  expect(withheld).toBeGreaterThan(0);
   await context.close();
 });
 test("copy includes exact dates/sources and offers a selectable fallback", async ({
