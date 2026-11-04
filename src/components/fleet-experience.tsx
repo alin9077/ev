@@ -21,10 +21,12 @@ import {
   inVehicleType,
   changedTrims,
   familyGroups,
+  unverifiedSuffix,
   WINDOW,
   type FleetSelection,
 } from "@/lib/fleet";
 import { compareFacts, formatYear } from "@/lib/compare";
+import { basisOf } from "@/lib/comparison-basis";
 import { featureFor } from "@/lib/verification";
 import {
   chapters,
@@ -35,7 +37,15 @@ import {
   type Chapter,
 } from "@/lib/chapters";
 import { FootnoteRefs } from "./footnotes";
-import { FactValue, FeatureValue, Notice, SoftwareTimeline } from "./ui";
+import {
+  BasisMarker,
+  FactValue,
+  FeatureValue,
+  Notice,
+  SoftwareTimeline,
+  UnverifiedBadge,
+  basisNote,
+} from "./ui";
 import { SwipeProvider, SwipeTrack, useSwipe } from "./fleet-swipe";
 import { ComparisonSymbol } from "./comparison-symbol";
 import { ChapterArt } from "./chapter-art";
@@ -207,7 +217,10 @@ export default function FleetExperience({
                     {String(i + 1).padStart(2, "0")}
                   </span>
                 </div>
-                <VehicleHeading car={p.pack?.car ?? p.car} />
+                <VehicleHeading
+                  car={p.pack?.car ?? p.car}
+                  unverified={p.car.unverified}
+                />
                 <label className="fleet-trim">
                   {p.car.brand} {p.car.model} trim
                   <select
@@ -256,8 +269,9 @@ export default function FleetExperience({
           </span>
         </p>
         <Notice>
-          Prices are dated Australian list or base figures, not driveaway
-          quotes. Check delivery fees, options and state on-road costs.
+          Prices are dated Australian figures on the basis tagged beside each
+          (mostly list or base, a few driveaway). Check delivery fees, options
+          and state on-road costs.
         </Notice>
       </div>
     </DetailSection>
@@ -506,9 +520,22 @@ function DetailSection({
     </section>
   );
 }
-/** Shown only where both figures share a unit and basis and neither is conditional. */
+/**
+ * The difference from Model Y, only where both figures share a unit and basis and neither is conditional.
+ * Where they are tracked measurements on different bases, the marker takes its place.
+ */
 function FactDelta({ fact, against }: { fact: Fact; against: Fact }) {
-  const { delta } = compareFacts(against, fact);
+  const { delta, state } = compareFacts(against, fact);
+  if (state === "different_basis") {
+    const tags = [basisOf(against)?.tag, basisOf(fact)?.tag];
+    return basisNote([against, fact]) ? (
+      <span className="fleet-basis-marker">
+        <BasisMarker
+          note={`Not directly comparable with Model Y: ${tags[0]} vs ${tags[1]}`}
+        />
+      </span>
+    ) : null;
+  }
   if (!delta) return null;
   const size = Number(Math.abs(delta).toFixed(2)).toLocaleString("en-AU");
   return (
@@ -531,12 +558,21 @@ function Loading() {
     </p>
   );
 }
-function VehicleHeading({ car }: { car: Car }) {
+function VehicleHeading({
+  car,
+  unverified = false,
+}: {
+  car: Car;
+  unverified?: boolean;
+}) {
   return (
     <div className="fleet-vehicle-heading">
       <span className="small">{car.brand}</span>
       <h2>{car.model}</h2>
-      <p>{car.trim}</p>
+      <p>
+        {car.trim}
+        {unverified && <UnverifiedBadge />}
+      </p>
       <span className="small muted">
         {formatYear(car.year)} · {car.drive}
       </span>
@@ -624,7 +660,7 @@ function FleetFilters({
               .filter((t) => t.families > 0)
               .map((t) => (
                 <option key={t.value} value={t.value}>
-                  {t.label} ({t.families})
+                  {t.label} ({t.families}){unverifiedSuffix(cars, t.value)}
                 </option>
               ))}
           </select>
@@ -642,8 +678,13 @@ function FleetFilters({
           {noMatch
             ? `No ${vehicleType(selected.type).label.toLowerCase()} match “${selected.q}”. Showing all ${shown}.`
             : `${shown} ${shown === 1 ? "family" : "families"} beside Model Y.`}
-          {selected.type !== "cars" && selected.type !== "all" && (
-            <> Figures for these vehicles are still being confirmed.</>
+          {unverifiedSuffix(cars, selected.type) && (
+            <>
+              {" "}
+              {unverifiedSuffix(cars, selected.type) === " · unverified"
+                ? "Specifications for these vehicles haven’t been verified yet."
+                : "Some of these vehicles’ specifications haven’t been verified yet."}
+            </>
           )}
         </p>
       </div>

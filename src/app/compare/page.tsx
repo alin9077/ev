@@ -1,13 +1,9 @@
 import { StaticComparison } from "@/components/static-comparison";
 import { WithEvidence } from "@/components/with-evidence";
-import {
-  pickerCatalogue,
-  publicCounts,
-  publicPack,
-  research,
-} from "@/lib/data";
+import { publicCounts, publicPack, research } from "@/lib/data";
 import Experience from "@/components/experience";
 import { parseSelection } from "@/lib/compare";
+import { pickerCars } from "@/lib/picker-cars";
 import { experienceProps, type Query } from "@/lib/page-props";
 export const metadata = {
   title: "Compare exact Australian variants",
@@ -20,7 +16,7 @@ export default async function Compare({
 }) {
   if (process.env.SITE_STATIC_EXPORT === "1") {
     // A static page cannot read the link, so it opens on the default pair and fetches the rest.
-    const cars = pickerCatalogue();
+    const cars = pickerCars();
     const initial = parseSelection(new URLSearchParams(), cars).ids.map(
       publicPack,
     );

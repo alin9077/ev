@@ -21,7 +21,14 @@ import {
   SoftwareTimeline,
   FeatureValue,
   VehicleCard,
+  BasisMarker,
+  BasisNotes,
+  BasisTag,
+  UnverifiedBadge,
+  basisNote,
 } from "./ui";
+import { UNVERIFIED_NOTICE, isUnverifiedVehicle } from "@/lib/coverage";
+import { basisTag } from "@/lib/comparison-basis";
 import { VariantPicker } from "./picker";
 import { orderChapters, type Chapter } from "@/lib/chapters";
 import { featureFor } from "@/lib/verification";
@@ -220,12 +227,15 @@ export default function Experience({
                         >
                           {formatFact(p.car.facts[key])}
                         </button>
+                        <BasisTag fact={p.car.facts[key]} />
                         <FootnoteRefs ids={p.car.facts[key].sourceIds} />
                         <span className="small muted">
                           {p.car.facts[key].value === null
                             ? "Not yet confirmed"
                             : key === "price_aud"
-                              ? "Dated base/list · not driveaway"
+                              ? basisTag(p.car.facts[key]) === "List"
+                                ? "Dated base/list · not driveaway"
+                                : "Dated price, quoted as shown"
                               : key === "seats"
                                 ? "Occupied positions"
                                 : p.car.facts[key].basis}
@@ -239,6 +249,10 @@ export default function Experience({
                 </div>
               ))}
             </div>
+            <BasisNotes
+              packs={pair}
+              keys={["price_aud", "range_km", "dc_charge_time_min"]}
+            />
             <div className="hero-footnote">
               <span>
                 Original seating schematics · not to scale or child-seat
@@ -383,13 +397,25 @@ export default function Experience({
                   <strong>
                     {p.car.brand} {p.car.model}
                   </strong>
-                  <span>{p.car.trim}</span>
+                  <span>
+                    {p.car.trim}
+                    {isUnverifiedVehicle(p.car) && <UnverifiedBadge />}
+                  </span>
                   <span className="small">
                     {availabilityLabels[p.car.availability]}
                   </span>
                 </div>
               ))}
             </div>
+            {packs.some((p) => isUnverifiedVehicle(p.car)) && (
+              <p role="status" className="notice">
+                {packs
+                  .filter((p) => isUnverifiedVehicle(p.car))
+                  .map((p) => `${p.car.brand} ${p.car.model} ${p.car.trim}`)
+                  .join("; ")}
+                : {UNVERIFIED_NOTICE.toLowerCase()}
+              </p>
+            )}
             {state.section === "overview" && (
               <>
                 <div className="difference-summary">
@@ -397,10 +423,12 @@ export default function Experience({
                   <p>
                     {comparedRange.state === "comparable" &&
                     comparedRange.delta !== 0
-                      ? `${Math.abs(comparedRange.delta!)} km difference in the WLTP claims. Check the wheel and variant conditions below.`
+                      ? `${Math.abs(comparedRange.delta!)} km difference in the ${basisTag(pair[0].car.facts.range_km) ?? "claimed"} figures. Check the wheel and variant conditions below.`
                       : comparedRange.state === "unknown"
                         ? "A comparable range has not been confirmed for one of these vehicles."
-                        : "Range needs a closer look at the applicable conditions."}{" "}
+                        : comparedRange.state === "different_basis"
+                          ? `Range is quoted on different bases (${[basisTag(pair[0].car.facts.range_km), basisTag(pair[1].car.facts.range_km)].filter(Boolean).join(" vs ")}), so no difference is calculated.`
+                          : "Range needs a closer look at the applicable conditions."}{" "}
                     {seatSummary(pair[0].car, pair[1].car)} No overall winner
                     score.
                   </p>
@@ -426,6 +454,7 @@ export default function Experience({
                     .map((key) => ({
                       key,
                       label: packs[0].car.facts[key].label,
+                      note: basisNote(packs.map((p) => p.car.facts[key])),
                       cells: packs.map((p) => (
                         <FactValue
                           key={p.car.id}
@@ -711,7 +740,13 @@ function ComparisonTable({
 }: {
   packs: Pack[];
   active: string;
-  rows: { key: string; label: string; cells: React.ReactNode[] }[];
+  rows: {
+    key: string;
+    label: string;
+    /** Set when the row's figures use different bases; shown under the label. */
+    note?: string;
+    cells: React.ReactNode[];
+  }[];
   id: string;
   visibleHead?: boolean;
   columnId?: string;
@@ -740,6 +775,7 @@ function ComparisonTable({
           <tr key={row.key}>
             <th scope="row" tabIndex={-1} id={`${id}-${row.key}`}>
               {row.label}
+              {row.note && <BasisMarker note={row.note} />}
             </th>
             {row.cells.map((cell, i) => (
               <td
@@ -841,6 +877,9 @@ function InlineChapters({
                       packs[0].car.facts[key]?.label ||
                       criteria.find((c) => c.key === key)?.label ||
                       key,
+                    note: packs[0].car.facts[key]
+                      ? basisNote(packs.map((p) => p.car.facts[key]))
+                      : "",
                     cells: packs.map((p) =>
                       p.car.facts[key] ? (
                         <FactValue key={p.car.id} fact={p.car.facts[key]} />

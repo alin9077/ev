@@ -1,6 +1,7 @@
 import { WithEvidence } from "@/components/with-evidence";
 import Software from "@/components/software";
-import { catalogue, pickerCatalogue, publicPack } from "@/lib/data";
+import { catalogue, publicPack } from "@/lib/data";
+import { pickerCars } from "@/lib/picker-cars";
 import { BASELINE } from "@/lib/config";
 import type { Query } from "@/lib/page-props";
 export const metadata = {
@@ -18,7 +19,7 @@ export default async function SoftwarePage({
   return (
     <WithEvidence sources={pack.sources}>
       <Software
-        cars={pickerCatalogue()}
+        cars={pickerCars()}
         pack={pack}
         local={process.env.SITE_STATIC_EXPORT === "1"}
       />

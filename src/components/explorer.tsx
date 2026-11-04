@@ -7,6 +7,7 @@ import { BASELINE, CHALLENGER, site, availabilityLabels } from "@/lib/config";
 import {
   DEFAULT_TYPE,
   inVehicleType,
+  unverifiedSuffix,
   vehicleType,
   vehicleTypes,
 } from "@/lib/fleet";
@@ -152,6 +153,7 @@ export default function Explorer({
             {vehicleTypes.map((t) => (
               <option key={t.value} value={t.value}>
                 {t.label}
+                {unverifiedSuffix(cars, t.value)}
               </option>
             ))}
           </select>

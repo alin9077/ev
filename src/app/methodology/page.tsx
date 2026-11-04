@@ -66,12 +66,21 @@ export default function Methodology() {
         <p>
           The variant review is dated 6 October 2026. Many specifications and
           prices retain evidence from 5 October 2026 or earlier. A rebuild never
-          changes verification dates. Prices are base/list or reported figures,
-          not postcode-specific driveaway quotes; fees, options and on-road
-          costs can differ.
+          changes verification dates. Prices are mostly base/list or reported
+          figures, not postcode-specific driveaway quotes; a small number are
+          dealer driveaway offers, and each price is tagged with its basis.
+          Fees, options and on-road costs can differ.
         </p>
         <h2>Measurement basis</h2>
         <ul>
+          <li>
+            Every price, range, battery capacity and DC charging time carries a
+            short basis tag beside it (List, Driveaway, WLTP, NEDC, Usable,
+            Gross, 10–80%, 30–80%). Where the figures in one row use different
+            bases the row is marked “Not directly comparable”: no difference is
+            calculated, and those figures are left out of any cheapest, longest
+            or default-trim ranking. Only like is compared with like.
+          </li>
           <li>
             Range claims retain their WLTP, EPA or NEDC basis, variant and wheel
             conditions. They are not our road tests.

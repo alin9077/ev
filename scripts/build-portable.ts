@@ -2,9 +2,9 @@ import fs from "node:fs";
 import path from "node:path";
 import { build } from "esbuild";
 import { toWire } from "../src/lib/pack-wire";
+import { pickerCars } from "../src/lib/picker-cars";
 import {
   catalogue,
-  pickerCatalogue,
   publicPack,
   publicSources,
   research,
@@ -40,7 +40,7 @@ async function main() {
   });
   const d = research();
   const data = {
-    cars: pickerCatalogue(),
+    cars: pickerCars(),
     packs: Object.fromEntries(
       catalogue().map((c) => [c.id, toWire(publicPack(c.id))]),
     ),

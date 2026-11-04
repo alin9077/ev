@@ -10,6 +10,8 @@ import { formatFact, formatYear } from "@/lib/compare";
 import { formatValue, seatsOf } from "@/lib/format";
 import { FootnoteRefs } from "./footnotes";
 import { featureCondition, factCondition } from "@/lib/fleet";
+import { basisOf, compareBases } from "@/lib/comparison-basis";
+import { UNVERIFIED_BADGE } from "@/lib/coverage";
 
 export function Status({
   status,
@@ -91,7 +93,8 @@ export function Notice({ children }: { children?: React.ReactNode }) {
       {children || (
         <>
           Dated Australian research · {site.dateLabel}. Manufacturer claims,
-          with conditions. Prices are not driveaway quotes.{" "}
+          with conditions. Each price shows its basis; most are list prices, not
+          driveaway quotes.{" "}
           <Link href="/methodology">How to read this comparison</Link>
         </>
       )}
@@ -272,6 +275,58 @@ export function EvidenceDrawer({
     </dialog>
   );
 }
+/** The basis a price, range, battery or charging figure is quoted on, as a short tag beside the value. */
+export function BasisTag({ fact }: { fact: Fact }) {
+  const basis = basisOf(fact);
+  if (!basis) return null;
+  return (
+    <span
+      className={basis.determinate ? "basis-tag" : "basis-tag is-unclear"}
+      title={basis.label}
+    >
+      <span className="sr-only">Basis: </span>
+      {basis.tag}
+    </span>
+  );
+}
+/** The row-level warning: these figures use different bases, so none is ranked or subtracted. */
+export function BasisMarker({ note }: { note: string }) {
+  if (!note) return null;
+  return (
+    <span className="basis-marker" role="note">
+      <span aria-hidden="true">≠</span> {note}
+    </span>
+  );
+}
+/** The note for a row of figures, one per selected car; empty when they share a basis. */
+export function basisNote(facts: (Fact | undefined)[]) {
+  return compareBases(facts).note;
+}
+/** Lists every compared measurement whose figures use different bases; renders nothing when none do. */
+export function BasisNotes({ packs, keys }: { packs: Pack[]; keys: string[] }) {
+  const mixed = keys.flatMap((key) => {
+    const facts = packs.map((p) => p.car.facts[key]);
+    const note = basisNote(facts);
+    return note ? [{ key, label: facts[0]?.label ?? key, note }] : [];
+  });
+  if (!mixed.length) return null;
+  return (
+    <ul
+      className="basis-notes"
+      aria-label="Figures that are not directly comparable"
+    >
+      {mixed.map((m) => (
+        <li key={m.key}>
+          <strong>{m.label}</strong> <BasisMarker note={m.note} />
+        </li>
+      ))}
+    </ul>
+  );
+}
+/** A small badge for a vehicle with no verified specification. */
+export function UnverifiedBadge() {
+  return <span className="unverified-badge">{UNVERIFIED_BADGE}</span>;
+}
 export function FactValue({
   fact,
   compact = false,
@@ -282,7 +337,10 @@ export function FactValue({
 }) {
   return (
     <div className="fact-value">
-      <strong>{formatFact(fact)}</strong>
+      <span className="fact-headline">
+        <strong>{formatFact(fact)}</strong>
+        <BasisTag fact={fact} />
+      </span>
       {fact.status !== "standard" && <Status status={fact.status} />}
       {fact.status === "conditional" && (
         <div className="conditional-context">
@@ -399,11 +457,18 @@ export function VehicleCard({
         <h3>{car.model}</h3>
         <MediaRenderer car={car} />
       </div>
-      <p className="trim">{car.trim}</p>
+      <p className="trim">
+        {car.trim}
+        {car.unverified && <UnverifiedBadge />}
+      </p>
       <p className="small muted">{availabilityLabels[car.availability]}</p>
       <div className="card-facts">
         <div>
-          <span className="small">Dated listed price</span>
+          <span className="small">
+            {basisOf(car.facts.price_aud)?.id === "driveaway"
+              ? "Dated driveaway price"
+              : "Dated listed price"}
+          </span>
           <FactValue
             fact={car.facts.price_aud}
             compact

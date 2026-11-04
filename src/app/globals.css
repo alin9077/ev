@@ -5107,3 +5107,22 @@ html:has(.fleet-chapter-nav) {
 @media (max-width: 479px) {
   .fleet-filters-inner { grid-template-columns: 1fr; }
 }
+
+/* Comparison bases: the basis beside every compared value, and a marker where a row mixes them. */
+.fact-headline { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 8px; min-width: 0; }
+.basis-tag { display: inline-flex; align-items: center; padding: 1px 7px; border: 1px solid #7f9aa6; border-radius: 999px; background: #eef4f6; color: #214a5b; font-size: 11px; font-weight: 600; line-height: 1.6; letter-spacing: 0; white-space: nowrap; font-variant-numeric: normal; }
+.basis-tag.is-unclear { border-style: dashed; background: #f6f2e6; border-color: #a58a45; color: #6a5217; }
+.basis-marker { display: inline-flex; align-items: baseline; gap: 5px; padding: 2px 8px; border-radius: 5px; background: #f3ebd8; color: #6a470f; font-size: 12px; font-weight: 600; line-height: 1.45; letter-spacing: 0; text-transform: none; }
+.comparison-table th[scope="row"] .basis-marker { display: flex; margin-top: 6px; font-weight: 600; }
+.basis-notes { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 6px; font-size: 14px; }
+.basis-notes li { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; }
+.fleet-basis-marker { margin-top: 8px; }
+.unverified-badge { display: inline-block; margin-left: 6px; padding: 0 6px; border: 1px solid #a8a8a0; border-radius: 4px; background: #eeeeea; color: #4b5256; font-size: 11px; font-weight: 600; line-height: 1.6; vertical-align: middle; white-space: nowrap; }
+.unverified-notice { margin: 18px 0 8px; padding: 14px 16px; border-left: 3px solid #a58a45; background: #f6f2e6; }
+.unverified-notice strong { display: block; font-size: 17px; }
+.unverified-notice p { margin: 4px 0 0; font-size: 14px; color: var(--muted); max-width: 62ch; }
+.unverified-tab { color: var(--muted); font-size: 12px; }
+@media (max-width: 767px) {
+  .basis-marker { font-size: 11.5px; }
+  .comparison-table th[scope="row"] .basis-marker { margin-top: 4px; }
+}

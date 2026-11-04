@@ -123,7 +123,7 @@ test("conditional features explain dependencies beside the label", async ({
       .locator(".fleet-detail")
       .filter({ has: page.locator("#detail-price_aud") })
       .locator(`.swipe-card[data-index="${price.index}"] .conditional-context`),
-  ).toContainText("driveaway quote");
+  ).toContainText(/driveaway (quote|figure)/);
 });
 
 test("phones show one rival beside Model Y in the offline file", async ({

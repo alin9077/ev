@@ -1,9 +1,5 @@
-import {
-  pickerCatalogue,
-  publicPack,
-  publicSourcesById,
-  research,
-} from "./data";
+import { publicPack, publicSourcesById, research } from "./data";
+import { pickerCars } from "./picker-cars";
 import { fleetSelection, fleetView, WINDOW } from "./fleet";
 
 /** Sources the fleet page cites in its own copy; each car's sources arrive with the car. */
@@ -13,7 +9,7 @@ const FLEET_SOURCES = ["r5_au_ev_sales_sep2026", "r3_tesla_fsd"];
  * around the opening position. The rest are fetched as the reader moves along (see use-packs.ts).
  */
 export function fleetProps(query: URLSearchParams) {
-  const cars = pickerCatalogue();
+  const cars = pickerCars();
   const initial = fleetSelection(cars, query);
   const shown = fleetView(cars, initial).ids;
   const ids = [

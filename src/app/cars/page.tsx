@@ -1,6 +1,7 @@
 import { WithEvidence } from "@/components/with-evidence";
 import Explorer from "@/components/explorer";
-import { pickerCatalogue, publicEquipment } from "@/lib/data";
+import { publicEquipment } from "@/lib/data";
+import { pickerCars } from "@/lib/picker-cars";
 import type { Query } from "@/lib/page-props";
 export const metadata = {
   title: "Explore the Australian EV shortlist",
@@ -19,7 +20,7 @@ export default async function Cars({
   return (
     <WithEvidence sources={[]}>
       <Explorer
-        cars={pickerCatalogue()}
+        cars={pickerCars()}
         initial={initial}
         equipment={publicEquipment()}
       />

@@ -3,12 +3,15 @@ import { useEffect, useRef, useState } from "react";
 import type { Car } from "@/lib/types";
 import { availabilityLabels } from "@/lib/config";
 import { formatFact } from "@/lib/compare";
+import { basisTag } from "@/lib/comparison-basis";
 import {
   DEFAULT_TYPE,
   inVehicleType,
+  unverifiedSuffix,
   vehicleType,
   vehicleTypes,
 } from "@/lib/fleet";
+import { UnverifiedBadge } from "./ui";
 export function VariantPicker({
   cars,
   selected,
@@ -146,6 +149,7 @@ export function VariantPicker({
                   {vehicleTypes.map((t) => (
                     <option value={t.value} key={t.value}>
                       {t.label}
+                      {unverifiedSuffix(cars, t.value)}
                     </option>
                   ))}
                 </select>
@@ -231,8 +235,9 @@ export function VariantPicker({
             </label>
           </div>
           <p className="small muted">
-            Budget uses dated base/list prices, not driveaway quotes. Unknown
-            numeric values stay in results for review.
+            Budget compares prices as quoted: most are dated base/list prices, a
+            few are driveaway offers, and each is tagged. Unknown numeric values
+            stay in results for review.
           </p>
           <div className="picker-result-count">
             <p aria-live="polite">{filtered.length} variants</p>
@@ -274,7 +279,10 @@ export function VariantPicker({
                       }}
                     >
                       <span>
-                        <strong>{c.trim}</strong>
+                        <strong>
+                          {c.trim}
+                          {c.unverified && <UnverifiedBadge />}
+                        </strong>
                         <span className="small">{c.generation}</span>
                         <span className="small">
                           {availabilityLabels[c.availability]} · {c.drive}
@@ -285,7 +293,9 @@ export function VariantPicker({
                       <span>
                         {formatFact(c.facts.price_aud)}
                         {c.facts.price_aud.value !== null && (
-                          <span className="small">Dated list/base</span>
+                          <span className="small">
+                            {basisTag(c.facts.price_aud) ?? "Price"} · dated
+                          </span>
                         )}
                         {c.facts.price_aud.status === "conditional" && (
                           <span className="small">Needs confirmation</span>
