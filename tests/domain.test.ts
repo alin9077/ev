@@ -73,8 +73,8 @@ test("research counts are calculated with family/generation distinction", () =>
     generations: 194,
     criteria: 69,
     evidence: 29877,
-    current: 351,
-    outgoing: 46,
+    current: 346,
+    outgoing: 51,
     provisional: 36,
   }));
 test("all evidence references and structural coverage validate", () =>

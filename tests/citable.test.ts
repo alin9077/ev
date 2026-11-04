@@ -79,7 +79,7 @@ test("audit covers every summary-only buyer source and withholds unsupported cla
   assert.equal(audit.sources.length, 32);
   assert.equal(
     audit.sources.filter((s) => s.status === "unavailable").length,
-    10,
+    9, // commit 62ca4d2 re-checked one source, moving it from unavailable to checked
   );
   const zeekr = pack("zeekr_7x__rwd__1");
   assert.equal(
