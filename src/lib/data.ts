@@ -19,6 +19,8 @@ import buyer from "../../data/research-buyer-2026-10-07.json";
 import { auditedSource, auditedFact, auditedFeature } from "./launch-evidence";
 import { loadImport } from "./research-import";
 import { isVerifiedFact, maskCar } from "./verification";
+import { readableLabel } from "./reader-text";
+import { normaliseSourceType } from "./source-types";
 /**
  * The data is static, so each loader runs once per process. React's cache() only memoises inside a
  * request, which made every CLI call (validate, tests) rebuild the whole catalogue.
@@ -64,7 +66,10 @@ export const research = once((): Research => {
     ...editorial.sources,
     ...buyer.sources,
   );
-  d.sources = d.sources.map(auditedSource);
+  d.sources = d.sources.map(auditedSource).map((s) => ({
+    ...s,
+    source_type: normaliseSourceType(s.source_type, s.url),
+  }));
   // The warranty terms have their own rows, so this row covers servicing only.
   d.criteria = d.criteria.map((c) =>
     c.key === "warranty_service"
@@ -186,6 +191,12 @@ const descriptors = [
   ["warranty", "Vehicle warranty", "", ""],
   ["battery_warranty", "Battery warranty", "", ""],
 ];
+/** The scope a fact states for itself: the variant's own, else its generation, else nothing - never a placeholder word. */
+function scopeOf(v: Variant, model: { generation?: unknown }): string {
+  return (
+    readableLabel(v.availability_scope) || readableLabel(model.generation) || ""
+  );
+}
 function applies(issueId: string, key: string, v: Variant) {
   // These two rules were written for single Tesla/Zeekr records; the id patterns must not catch imported trims.
   const tesla = v.model_id === "tesla_model_y";
@@ -294,7 +305,7 @@ export const catalogue = once((): Car[] => {
           fieldReview?.[key]?.date ||
           String(v.specification_evidence_date || v.variant_review_date),
         market: "AU",
-        scope: String(v.availability_scope || model.generation),
+        scope: scopeOf(v, model),
         qualifications,
         issues: fieldIssues,
       };
@@ -377,7 +388,7 @@ export const catalogue = once((): Car[] => {
         ...fact,
         comparisonBasis: fact.basis,
         market: "AU",
-        scope: String(v.availability_scope || model.generation),
+        scope: scopeOf(v, model),
         issues: [],
       };
     }
@@ -395,7 +406,7 @@ export const catalogue = once((): Car[] => {
         sourceIds: [],
         date: String(v.variant_review_date),
         market: "AU",
-        scope: String(v.availability_scope || model.generation || ""),
+        scope: scopeOf(v, model),
         qualifications: [],
         issues: [],
       };
@@ -407,6 +418,7 @@ export const catalogue = once((): Car[] => {
     if (imp)
       for (const f of Object.values(facts))
         f.grade ??= v.vehicle_class ? "unrated" : "established";
+    for (const f of Object.values(facts)) f.scope = readableLabel(f.scope);
     return {
       id: v.id,
       modelId: v.model_id,

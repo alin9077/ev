@@ -8,7 +8,8 @@ import type { Car, Fact, Feature, Grade, VehicleClass } from "./types";
  *   - reported     : a named Australian publication or dealer for the exact version, or
  *   - established  : one of the original 34 variants' values supplied with the app that the
  *                    research import did not contradict with a sourced conflict.
- * check, not_published and unrated facts stay in the data but are excluded here.
+ * check, not_published and unrated facts stay in the data but are excluded here, and so is an offer row
+ * whose valid_until date has passed.
  */
 export const VERIFIED_GRADES: readonly Grade[] = [
   "confirmed",
@@ -35,10 +36,28 @@ type Gradable = {
   grade?: Grade;
   value?: unknown;
   status?: string;
+  valid_until?: string;
 };
+/**
+ * An offer row whose end date has passed (valid_until is YYYY-MM-DD, inclusive). `today` defaults to the
+ * current date in Australia/Sydney; pass a date to make a check repeatable.
+ */
+export function isExpiredOffer(
+  item: { valid_until?: string },
+  today?: string,
+): boolean {
+  if (!item.valid_until) return false;
+  const now =
+    today ??
+    new Intl.DateTimeFormat("en-CA", { timeZone: "Australia/Sydney" }).format(
+      new Date(),
+    );
+  return item.valid_until < now;
+}
 export function isVerifiedFact(item: Gradable): boolean {
   if (item.value === null || item.value === undefined) return false;
   if (item.status === "not_verified") return false;
+  if (item.valid_until && isExpiredOffer(item)) return false;
   return !!item.grade && VERIFIED_GRADES.includes(item.grade);
 }
 /** A fact that carries a value but fails isVerifiedFact (what "hide unverified" removes). */

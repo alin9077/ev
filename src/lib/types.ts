@@ -57,6 +57,8 @@ export type Feature = {
   condition_label?: string;
   usability_notes?: string[];
   confirmation_needed?: string;
+  /** Last day an offer holds (YYYY-MM-DD); after it the row stops counting as verified (see isExpiredOffer). */
+  valid_until?: string;
   /** Verification grade; see isVerifiedFact in verification.ts. */
   grade?: Grade;
 };
