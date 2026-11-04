@@ -1,0 +1,171 @@
+{
+  "about": "Hand-checked corrections applied by scripts/import-dot-research.ts on top of Dot's data (before the original-34 comparison, so the change log and the grades stay consistent). Each entry names the variant, the field, the value or grade it ends with, the reason and the sources it rests on. Checked 4 November 2026 against Australian press coverage; the manufacturer pages themselves could not be opened from the research environment, so corrected values are graded 'reported'.",
+  "checked": "2026-11-04",
+  "sources": [
+    {
+      "id": "fix_chasingcars_ev3_gt_line_awd",
+      "url": "https://www.chasingcars.com.au/news/new-car-prices/popular-electric-car-goes-awd-ev3-gt-line-awd-2026-joins-range-as-all-paw-byd-atto-3-mg-s5-megane-e-tech-rival/",
+      "title": "Popular electric car goes AWD: EV3 GT-Line AWD 2026 joins range",
+      "publisher": "Chasing Cars",
+      "source_type": "industry_reporting",
+      "published_date": null,
+      "supports": "Kia EV3 GT-Line AWD price from $66,490 plus on-road costs, $2,500 above the GT-Line FWD."
+    },
+    {
+      "id": "fix_carexpert_ev3_awd_flagship",
+      "url": "https://www.carexpert.com.au/car-news/2027-kia-ev3-to-add-awd-flagship-in-australia",
+      "title": "2027 Kia EV3 to add AWD flagship in Australia",
+      "publisher": "CarExpert",
+      "source_type": "industry_reporting",
+      "published_date": null,
+      "supports": "Kia EV3 GT-Line AWD priced from $66,490 plus on-road costs, arriving from September 2026."
+    },
+    {
+      "id": "fix_carexpert_ev3_gt_line_towing",
+      "url": "https://www.carexpert.com.au/kia/ev3/2027/gt-line/towing-and-off-road-capacity",
+      "title": "Kia EV3 2027 GT-Line towing and off-road capacity",
+      "publisher": "CarExpert",
+      "source_type": "industry_reporting",
+      "published_date": null,
+      "supports": "CarExpert lists braked towing of 500-1,000 kg across the 2027 EV3 range; the highest figure is 1,000 kg."
+    },
+    {
+      "id": "fix_thebeep_model3_rwd_572",
+      "url": "https://thebeep.com.au/car-news/2027-tesla-model-3-rwd-price-australia",
+      "title": "2027 Tesla Model 3 RWD becomes the cheapest Tesla ever sold in Australia",
+      "publisher": "The Beep",
+      "source_type": "industry_reporting",
+      "published_date": null,
+      "supports": "The $45,900 Model 3 RWD uses the same 62.5 kWh LFP pack as the Premium RWD; its 572 km WLTP range is attributed to 18-inch wheels and low-rolling-resistance tyres, against 520 km for the Premium RWD."
+    },
+    {
+      "id": "fix_carexpert_model3_performance_dimensions",
+      "url": "https://www.carexpert.com.au/tesla/model-3/2026/performance/exterior-and-dimensions",
+      "title": "Tesla Model 3 2026 Performance exterior and dimensions",
+      "publisher": "CarExpert",
+      "source_type": "industry_reporting",
+      "published_date": null,
+      "supports": "Ground clearance 115 mm for the Model 3 Performance; the Model 3 family spans 115-138 mm."
+    },
+    {
+      "id": "fix_carsales_model3_rwd_overview",
+      "url": "https://www.carsales.com.au/research/tesla/model-3/2026/rear-wheel-drive",
+      "title": "Tesla Model 3 2026 Rear-Wheel Drive overview",
+      "publisher": "carsales",
+      "source_type": "industry_reporting",
+      "published_date": null,
+      "supports": "Ground clearance 138 mm for the Model 3 Rear-Wheel Drive; 1,000 kg braked towing."
+    },
+    {
+      "id": "fix_cars24_id5_discontinued",
+      "url": "https://www.cars24.com.au/car-news/volkswagen-id5-australia-discontinued/",
+      "title": "Volkswagen ID.5 discontinued in Australia after short run",
+      "publisher": "Cars24",
+      "source_type": "industry_reporting",
+      "published_date": "2026-10-19",
+      "supports": "Volkswagen Australia has ended the ID.5; it is sold out with MY26 stock and then leaves the range. The ID.4 stays on sale."
+    }
+  ],
+  "corrections": [
+    {
+      "id": "ev3-awd-price",
+      "variant": "kia_ev3__gt_line_awd_long_range__5",
+      "field": "price_aud",
+      "value": 66490,
+      "grade": "reported",
+      "status": "standard",
+      "sources": ["fix_chasingcars_ev3_gt_line_awd", "fix_carexpert_ev3_awd_flagship"],
+      "qualification": "Kia Australia's announced price is $66,490 plus on-road costs, $2,500 above the GT-Line FWD. An earlier configurator capture showed $63,950, which neither report supports.",
+      "reason": "The audit found Dot's 63,950 (confirmed) contradicted by two Australian reports; the app's original 66,490 was right."
+    },
+    {
+      "id": "ev3-awd-towing",
+      "variant": "kia_ev3__gt_line_awd_long_range__5",
+      "field": "towing_braked_kg",
+      "value": 1000,
+      "grade": "reported",
+      "status": "standard",
+      "sources": ["fix_carexpert_ev3_gt_line_towing"],
+      "qualification": "CarExpert lists braked towing of 500-1,000 kg across the EV3 range. A 1,500 kg figure appears only on a third-party database.",
+      "reason": "Dot's 1,500 kg (confirmed) has no Australian source; the highest published EV3 braked rating is 1,000 kg."
+    },
+    {
+      "id": "m3-premium-rwd-dc-peak",
+      "variant": "tesla_model_3__premium_rwd__2",
+      "field": "dc_peak_kw",
+      "grade": "reported",
+      "qualification": "Tesla does not publish a DC peak for this version; 175 kW is a third-party figure (about 170 kW is estimated for the earlier RWD).",
+      "reason": "Graded confirmed from a Tesla page that does not state the figure."
+    },
+    {
+      "id": "m3-performance-ground-clearance",
+      "variant": "tesla_model_3__performance_awd__4",
+      "field": "ground_clearance_mm",
+      "value": 115,
+      "grade": "reported",
+      "status": "standard",
+      "sources": ["fix_carexpert_model3_performance_dimensions"],
+      "qualification": "CarExpert, carsales and Carsguide list 115 mm for the Performance. A Tesla page capture read 128 mm; no Australian source supports that figure.",
+      "reason": "Dot adopted 128 mm (confirmed); three Australian outlets give 115 mm, the app's original value."
+    },
+    {
+      "id": "m3-rwd-ground-clearance-premium-lr",
+      "variant": "tesla_model_3__premium_long_range_rwd__1",
+      "field": "ground_clearance_mm",
+      "grade": "reported",
+      "sources": ["fix_carsales_model3_rwd_overview"],
+      "qualification": "The 138 mm figure comes from CarExpert and carsales listings, not from Tesla.",
+      "reason": "Graded confirmed from a secondary listing."
+    },
+    {
+      "id": "m3-rwd-ground-clearance-premium",
+      "variant": "tesla_model_3__premium_rwd__2",
+      "field": "ground_clearance_mm",
+      "grade": "reported",
+      "sources": ["fix_carsales_model3_rwd_overview"],
+      "qualification": "The 138 mm figure comes from CarExpert and carsales listings, not from Tesla.",
+      "reason": "Graded confirmed from a secondary listing."
+    },
+    {
+      "id": "m3-rwd-ground-clearance-base",
+      "variant": "tesla_model_3__rear_wheel_drive__3",
+      "field": "ground_clearance_mm",
+      "grade": "reported",
+      "sources": ["fix_carsales_model3_rwd_overview"],
+      "qualification": "The 138 mm figure comes from CarExpert and carsales listings, not from Tesla.",
+      "reason": "Graded confirmed from a secondary listing."
+    },
+    {
+      "id": "m3-premium-rwd-range-note",
+      "variant": "tesla_model_3__premium_rwd__2",
+      "field": "range_km",
+      "sources": ["fix_thebeep_model3_rwd_572"],
+      "qualification": "The base Model 3 RWD, on the same 62.5 kWh pack, is rated 572 km because of its 18-inch wheels and low-rolling-resistance tyres.",
+      "reason": "Same battery and motor as the base RWD but 520 vs 572 km: explained by the wheel and tyre package, so both ranges stay and each notes the other."
+    },
+    {
+      "id": "m3-rwd-range-note",
+      "variant": "tesla_model_3__rear_wheel_drive__3",
+      "field": "range_km",
+      "sources": ["fix_thebeep_model3_rwd_572"],
+      "qualification": "The Premium RWD, on the same 62.5 kWh pack, is rated 520 km; this version's 572 km is attributed to its 18-inch wheels and low-rolling-resistance tyres.",
+      "reason": "See m3-premium-rwd-range-note."
+    },
+    {
+      "id": "id5-pro-outgoing",
+      "variant": "volkswagen_id_5_my26__pro__1",
+      "field": "record_state",
+      "value": "outgoing",
+      "sources": ["fix_cars24_id5_discontinued"],
+      "reason": "Volkswagen Australia has ended the ID.5; MY26 stock is being sold off (Cars24, 19 October 2026)."
+    },
+    {
+      "id": "id5-gtx-outgoing",
+      "variant": "volkswagen_id_5_my26__gtx__2",
+      "field": "record_state",
+      "value": "outgoing",
+      "sources": ["fix_cars24_id5_discontinued"],
+      "reason": "Volkswagen Australia has ended the ID.5; MY26 stock is being sold off (Cars24, 19 October 2026)."
+    }
+  ]
+}

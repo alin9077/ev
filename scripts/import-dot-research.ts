@@ -38,6 +38,16 @@ import {
   type ResearchImport,
 } from "../src/lib/research-import";
 import {
+  CONFIRMING_SOURCE_TYPES,
+  normaliseSourceType,
+} from "../src/lib/source-types";
+import {
+  cleanReaderText,
+  limitQualification,
+  readableLabel,
+  type TextCleanupReport,
+} from "../src/lib/reader-text";
+import {
   GRADE_LABELS,
   VEHICLE_CLASSES,
   isHiddenFact,
@@ -263,7 +273,15 @@ const log = {
   warrantyComplex: 0,
   keyDisposition: new Map<string, { count: number; disposition: string }>(),
   sourceTypeMap: new Map<string, string>(),
+  confirmedDowngrades: [] as {
+    variant: string;
+    key: string;
+    sourceTypes: string[];
+  }[],
+  priceLabelled: [] as { variant: string; kind: string }[],
 };
+/** Sections of the mapping log filled in by main(). */
+const extraLog: Record<string, unknown> = {};
 const bump = (m: Map<string, number>, k: string, by = 1) =>
   m.set(k, (m.get(k) ?? 0) + by);
 
@@ -293,7 +311,119 @@ function slugify(text: string, max = 56): string {
     (s.length > max ? s.slice(0, max).replace(/_[^_]*$/, "") : s) || "trim"
   );
 }
-function cleanText(text: unknown): string {
+
+/* ------------------------------------------------------------------ */
+/* Names                                                                */
+/* ------------------------------------------------------------------ */
+const MONTHS =
+  "January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec";
+/**
+ * The trim a reader sees. Dot's trim strings carry the advertisement or sheet they were read from
+ * ("· MY25 residual New advertising", "· July 2026 AU sheet", "(advertised MY26 offer)"), a repeat of the model name
+ * ("Taycan 4S" under Taycan) or nothing but the model ("Taycan" under Taycan). The model year lives in `model_year`.
+ * Ids and slugs are built from Dot's raw trim, so they do not change.
+ */
+function cleanTrim(
+  raw: string,
+  model: string,
+  drive: string,
+): { trim: string; changed: string[] } {
+  const changed: string[] = [];
+  let t = raw.replace(/\s+/g, " ").trim();
+  const step = (why: string, next: string) => {
+    if (next !== t) changed.push(why);
+    t = next.trim();
+  };
+  step(
+    "sheet or advertisement source",
+    t
+      .replace(
+        new RegExp(
+          `\\s*[·—–-]\\s*(?:${MONTHS})\\s+\\d{4}(?:\\s+AU)?\\s+sheet\\s*$`,
+          "i",
+        ),
+        "",
+      )
+      .replace(/\s*[·—–-]\s*[A-Za-z ]*advertised offer\s*$/i, "")
+      .replace(/\s*\((?:[^)]*\b)?advertised[^)]*\)/gi, "")
+      .replace(
+        /\s*[·(—–-]*\s*\(?\s*MY\s?\d{2}(?:\.\d+)?\s+residual(?:\s+new)?(?:\s+advertising)?\s*\)?(?=\s|$)/gi,
+        " ",
+      )
+      .replace(/\s*[—–-]\s*provisional(?:\s*\/\s*pre-delivery)?/gi, "")
+      .replace(/;\s*driver inclusion and powertrain unresolved/i, "")
+      .replace(/^(?:Listed|Advertised)\s+/i, ""),
+  );
+  step(
+    "model year (kept in the model_year field)",
+    t
+      .replace(/\s*·\s*MY\s?\d{2}(?:\.\d+)?(?=\s*(?:·|$))/gi, "")
+      .replace(/^MY\s?\d{2}(?:\.\d+)?\s+/i, "")
+      .replace(/\s+MY\s?\d{2}(?:\.\d+)?$/i, "")
+      .replace(/\s*\(MY\s?\d{2}(?:\.\d+)?\)\s*$/i, ""),
+  );
+  step(
+    "leftover separator",
+    t
+      .replace(/^[·—–\-\s]+|[·—–\-\s]+$/g, "")
+      .replace(/\s*·\s*·\s*/g, " · ")
+      .replace(/\s{2,}/g, " "),
+  );
+  // The model name repeated at the front of the trim.
+  const repeat = new RegExp(
+    `^${model.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\s+(.+)$`,
+    "i",
+  );
+  const m = t.match(repeat);
+  if (m) {
+    let rest = m[1].trim();
+    const unwrapped = rest.match(/^\(([^()]+)\)$/);
+    if (unwrapped) rest = unwrapped[1];
+    step("model name repeated in the trim", rest);
+    if (/^[a-z]/.test(t))
+      step("capital first letter", t[0].toUpperCase() + t.slice(1));
+  }
+  step("kWh spacing", t.replace(/(\d)kWh\b/g, "$1 kWh"));
+  if (!t || t.toLowerCase() === model.toLowerCase()) {
+    step(
+      "trim was only the model name",
+      /^(FWD|RWD|AWD)$/.test(drive) ? `Base ${drive}` : "Base",
+    );
+  }
+  return { trim: t, changed };
+}
+/** Model spellings the maker does not use. Everything else keeps the maker's Australian styling (BYD ATTO/DOLPHIN/SEAL, Hyundai IONIQ/KONA, smart #1, Cadillac LYRIQ). */
+const MODEL_SPELLING: Record<string, string> = {
+  "GLC electric": "GLC Electric",
+};
+const fixModelName = (model: string) => MODEL_SPELLING[model] ?? model;
+/** "2027" -> 2027, "2025.5" -> 2025.5, "MY27" -> 2027, from the year field or the model id (my26, my25_5). */
+function yearOf(year: number | string | null, ids: string[]): number | null {
+  const n = typeof year === "number" ? year : Number(year);
+  if (Number.isFinite(n) && n > 1990) return n;
+  const my = String(year ?? "").match(/MY\s?(\d{2})(?:\.(\d+))?/i);
+  if (my) return 2000 + Number(my[1]) + (my[2] ? Number(`0.${my[2]}`) : 0);
+  for (const id of ids) {
+    const x = id.match(/_my(\d{2})(?:_(\d+))?(?:_|$)/);
+    if (x) return 2000 + Number(x[1]) + (x[2] ? Number(`0.${x[2]}`) : 0);
+  }
+  return null;
+}
+const myLabel = (y: number) =>
+  `MY${String(Math.floor(y) % 100).padStart(2, "0")}${y % 1 ? `.${String(y).split(".")[1]}` : ""}`;
+
+/** What the reader-text rules removed or rewrote, by rule (written to the mapping log). */
+const textCleanup = new Map<string, { count: number; examples: string[] }>();
+const reportText: TextCleanupReport = (kind, before, after) => {
+  const e = textCleanup.get(kind) ?? { count: 0, examples: [] };
+  e.count++;
+  if (e.examples.length < 3)
+    e.examples.push(
+      `${before.slice(0, 140)}${before.length > 140 ? "…" : ""} -> ${after ? after.slice(0, 100) : "(dropped)"}`,
+    );
+  textCleanup.set(kind, e);
+};
+function cleanText(text: unknown, kind: "basis" | "sentence" = "sentence") {
   const s = String(text ?? "")
     .replace(/\s+/g, " ")
     .trim();
@@ -302,11 +432,23 @@ function cleanText(text: unknown): string {
     log.droppedText++;
     return "";
   }
-  return s;
+  return cleanReaderText(s, { kind, report: reportText });
 }
-function cleanList(list: unknown): string[] {
+/** A qualification that only repeats the field's label ("Wheelbase", the basis, an API path's label) says nothing. */
+function labelsIn(list: unknown[], basis: string[]): Set<string> {
+  const labels = new Set(basis.map((b) => b.toLowerCase()).filter(Boolean));
+  for (const item of list) {
+    const raw = String(item ?? "");
+    if (raw.includes("categories[id="))
+      labels.add(raw.split(/;\s+/).slice(1).join("; ").trim().toLowerCase());
+  }
+  labels.delete("");
+  return labels;
+}
+function cleanList(list: unknown, basis: string[] = []): string[] {
   if (!Array.isArray(list)) return [];
   const out: string[] = [];
+  const labels = labelsIn(list, basis);
   for (const item of list) {
     const raw = String(item ?? "")
       .replace(/\s+/g, " ")
@@ -316,7 +458,12 @@ function cleanList(list: unknown): string[] {
       log.droppedQualifications++;
       continue;
     }
-    if (!out.includes(raw)) out.push(raw);
+    if (labels.has(raw.toLowerCase())) continue;
+    const text = limitQualification(
+      cleanReaderText(raw, { kind: "sentence", report: reportText }),
+      reportText,
+    );
+    if (text && !out.includes(text)) out.push(text);
   }
   return out;
 }
@@ -350,28 +497,8 @@ function normUrl(u: string): string {
     return u;
   }
 }
-function sourceType(raw: string): string {
-  const t = raw.toLowerCase();
-  let out = "other";
-  if (/owner/.test(t)) out = "firsthand_owner_report";
-  else if (/government|regulat|recall/.test(t)) out = "regulator";
-  else if (/ancap|crash|safety|independent_test|test_authority|_test\b/.test(t))
-    out = "independent_test";
-  else if (/dealer|retailer|stock/.test(t)) out = "authorised_dealer";
-  else if (
-    /manufactur|official|importer|oem|brand|configurator|brochure|distributor|press/.test(
-      t,
-    )
-  )
-    out = "manufacturer";
-  else if (/database|specification|spec\b/.test(t))
-    out = "independent_database";
-  else if (
-    /secondary|publication|reporting|news|review|motoring|media|price_guide|reputable|industry/.test(
-      t,
-    )
-  )
-    out = "industry_reporting";
+function sourceType(raw: string, url?: string, title?: string): string {
+  const out = normaliseSourceType(raw, url, title);
   log.sourceTypeMap.set(raw, out);
   return out;
 }
@@ -386,7 +513,11 @@ function normaliseSource(s: DotSource): Source {
     url: String(s.url ?? ""),
     title: String(s.title ?? ""),
     publisher: String(s.publisher ?? ""),
-    source_type: sourceType(String(s.source_type ?? "")),
+    source_type: sourceType(
+      String(s.source_type ?? ""),
+      String(s.url ?? ""),
+      String(s.title ?? ""),
+    ),
     published_date: (s.published_date as string | null) ?? null,
     accessed_date: String(s.accessed_date ?? AS_OF),
     market: /^(AU|Australia)\b/i.test(market) ? "AU" : market,
@@ -572,7 +703,7 @@ function normaliseGroundClearance(d: DotFact): Norm {
 /** Canonical comparison bases: only where Dot's wording is a recognisable spelling of the app's own label. */
 function comparisonBasisFor(slot: string, d: DotFact, basis: string): string {
   const raw = `${d.comparisonBasis ?? ""} ${d.basis ?? ""}`;
-  const fromDot = cleanText(d.comparisonBasis);
+  const fromDot = cleanText(d.comparisonBasis, "basis");
   switch (slot) {
     case "price_aud":
       if (/driveaway|drive-away|ride-?away/i.test(fromDot))
@@ -645,14 +776,18 @@ function normaliseFact(
   else if (status === "not_verified") status = "conditional";
   if (slot === "towing_braked_kg" && n.value === 0 && status === "unavailable")
     status = "standard";
-  const basisText = cleanText(dot.basis) || cleanText(dot.comparisonBasis);
+  const basisText =
+    cleanText(dot.basis, "basis") || cleanText(dot.comparisonBasis, "basis");
   const basis =
     basisText || (n.value === null ? "Not established" : "Basis not stated");
   const [lo, hi] = BOUNDS[slot] ?? [-Infinity, Infinity];
   if (typeof n.value === "number" && (n.value < lo || n.value > hi))
     log.warnings.push(`Out-of-range ${slot}=${n.value} (${lo}..${hi})`);
   const dotGrade = dot.buyerGrade ?? null;
-  const qualifications = cleanList(dot.qualifications);
+  const qualifications = cleanList(dot.qualifications, [
+    String(dot.basis ?? ""),
+    String(dot.comparisonBasis ?? ""),
+  ]);
   for (const q of n.extraQualifications)
     if (!qualifications.includes(q)) qualifications.push(q);
   const patch: FactPatch = {
@@ -665,7 +800,7 @@ function normaliseFact(
     sourceIds: uniq(dot.sourceIds ?? []),
     date: dot.date ?? fallbackDate,
     market: "AU",
-    scope: cleanText(dot.scope) || fallbackScope,
+    scope: readableLabel(cleanText(dot.scope)) || fallbackScope,
     qualifications,
     grade: gradeOf(dotGrade, n.value === null ? "not_published" : "unrated"),
   };
@@ -780,6 +915,15 @@ async function main() {
   const src = (ids: string[] | undefined) =>
     uniq((ids ?? []).map((i) => sourceAlias.get(i) ?? i));
 
+  const baseSourceType = new Map(
+    baseResearch.sources.map((x) => [
+      x.id,
+      normaliseSourceType(x.source_type, x.url),
+    ]),
+  );
+  const typeOfSource = (id: string) =>
+    keptById.get(id)?.source_type ?? baseSourceType.get(id);
+
   /* ---- ids ---- */
   const idMap = new Map<string, string>(); // dot id -> app id
   const usedSlugs = new Map<string, Set<string>>(); // family -> slugs
@@ -824,6 +968,207 @@ async function main() {
   }
   if (new Set(idMap.values()).size !== dot.variants.length)
     throw new Error("Duplicate variant ids");
+
+  /* ---- manual corrections (data/manual-corrections.json) ---- */
+  type Correction = {
+    id: string;
+    variant: string;
+    field: string;
+    value?: unknown;
+    grade?: Grade;
+    status?: Status;
+    sources?: string[];
+    qualification?: string;
+    reason: string;
+  };
+  const fixFile = readJson<{
+    checked: string;
+    sources: (Partial<Source> & { id: string; url: string })[];
+    corrections: Correction[];
+  }>("data/manual-corrections.json");
+  const fixSourceId = new Map<string, string>();
+  for (const fsrc of fixFile.sources) {
+    const k = normUrl(fsrc.url);
+    const canon = canonByUrl.get(k);
+    if (canon) {
+      fixSourceId.set(fsrc.id, canon);
+      continue;
+    }
+    const rec: Source = {
+      id: fsrc.id,
+      url: fsrc.url,
+      title: fsrc.title ?? "",
+      publisher: fsrc.publisher ?? "",
+      source_type: normaliseSourceType(fsrc.source_type ?? "other", fsrc.url),
+      published_date: fsrc.published_date ?? null,
+      accessed_date: fixFile.checked,
+      market: "AU",
+      supports: fsrc.supports ?? "",
+    };
+    canonByUrl.set(k, rec.id);
+    keptSources.push(rec);
+    keptById.set(rec.id, rec);
+    fixSourceId.set(fsrc.id, rec.id);
+  }
+  const appIds = new Set(idMap.values());
+  const fixesFor = new Map<string, Correction[]>();
+  for (const c of fixFile.corrections) {
+    if (!appIds.has(c.variant))
+      throw new Error(`Correction ${c.id}: unknown variant ${c.variant}`);
+    for (const sid of c.sources ?? [])
+      if (!fixSourceId.has(sid))
+        throw new Error(`Correction ${c.id}: unknown source ${sid}`);
+    const list = fixesFor.get(c.variant) ?? [];
+    list.push(c);
+    fixesFor.set(c.variant, list);
+  }
+  const appliedFixes: {
+    id: string;
+    variant: string;
+    field: string;
+    before: unknown;
+    after: unknown;
+    grade?: string;
+    sources: string[];
+    reason: string;
+  }[] = [];
+  const fixSources = (c: Correction) =>
+    (c.sources ?? []).map((i) => fixSourceId.get(i)!);
+
+  /* ---- record state: corrections, then superseded model years ---- */
+  const byDotId = new Map(dot.variants.map((v) => [v.id, v]));
+  const appToDot = new Map([...idMap].map(([d, a]) => [a, d]));
+  const stateDecisions: {
+    variant: string;
+    from: string;
+    to: string;
+    kind: "correction" | "superseded_model_year";
+    reason: string;
+  }[] = [];
+  for (const c of fixFile.corrections) {
+    if (c.field !== "record_state") continue;
+    const dv = byDotId.get(appToDot.get(c.variant)!)!;
+    stateDecisions.push({
+      variant: c.variant,
+      from: dv.availability,
+      to: String(c.value),
+      kind: "correction",
+      reason: c.reason,
+    });
+    dv.availability = String(c.value);
+    appliedFixes.push({
+      id: c.id,
+      variant: c.variant,
+      field: c.field,
+      before: stateDecisions[stateDecisions.length - 1].from,
+      after: c.value,
+      sources: fixSources(c),
+      reason: c.reason,
+    });
+  }
+  // Display names (see cleanTrim); the originals keep the app's own.
+  const trimOf = new Map<string, string>();
+  const nameLog: Record<
+    string,
+    { variant: string; from: string; to: string }[]
+  > = {};
+  for (const dv of dot.variants) {
+    const id = idMap.get(dv.id)!;
+    if (baseVariants.has(id)) {
+      trimOf.set(dv.id, dv.trim);
+      continue;
+    }
+    const { trim, changed } = cleanTrim(
+      dv.trim,
+      dv.model,
+      normaliseDrive(dv.drive),
+    );
+    trimOf.set(dv.id, trim);
+    for (const why of changed)
+      (nameLog[why] ??= []).push({ variant: id, from: dv.trim, to: trim });
+  }
+  const nameKey = (dv: DotVariant) =>
+    [dv.brand, fixModelName(dv.model), trimOf.get(dv.id)!]
+      .join("|")
+      .toLowerCase()
+      .replace(/[^a-z0-9|]+/g, "");
+  const nameGroups = new Map<string, DotVariant[]>();
+  for (const dv of dot.variants) {
+    const k = nameKey(dv);
+    nameGroups.set(k, [...(nameGroups.get(k) ?? []), dv]);
+  }
+  // A trim that states its own model year ("MY23.75 residual") is more exact than the year field.
+  const rawMy = new Map<string, number>();
+  for (const dv of dot.variants) {
+    const m = dv.trim.match(/\bMY\s?(\d{2}(?:\.\d+)?)/i);
+    if (m) rawMy.set(idMap.get(dv.id)!, 2000 + Number(m[1]));
+  }
+  const yearByDot = new Map(
+    dot.variants.map((v) => [v.id, yearOf(v.year, [v.modelId, v.id])]),
+  );
+  const soldNew = (dv: DotVariant) => {
+    const a = dv.availabilityEvidence as
+      | {
+          stockStatus?: string;
+          qualifications?: string[];
+          sourceIds?: string[];
+        }
+      | undefined;
+    if (!a) return false;
+    if (a.stockStatus === "new_stock_listed") return true;
+    return (
+      (a.sourceIds?.length ?? 0) > 0 &&
+      (a.qualifications ?? []).some((q) =>
+        /dealer[- ](?:advert|listing)|advertised[- ]new|new dealer advert/i.test(
+          q,
+        ),
+      )
+    );
+  };
+  const namedPairs: {
+    group: string;
+    members: { variant: string; year: number | null; state: string }[];
+    decision: string;
+  }[] = [];
+  for (const [key, members] of nameGroups) {
+    if (members.length < 2) continue;
+    const decisions: string[] = [];
+    for (const m of members) {
+      const my = yearByDot.get(m.id);
+      if (baseVariants.has(idMap.get(m.id)!)) continue;
+      if (my == null || m.availability !== "current_or_order_listed") continue;
+      const newer = members.some(
+        (n) =>
+          n !== m &&
+          n.availability === "current_or_order_listed" &&
+          (yearByDot.get(n.id) ?? -1) > my,
+      );
+      if (!newer) continue;
+      const id = idMap.get(m.id)!;
+      if (soldNew(m)) {
+        decisions.push(`${id}: stays current, dealer-advertised as new stock`);
+        continue;
+      }
+      stateDecisions.push({
+        variant: id,
+        from: m.availability,
+        to: "outgoing",
+        kind: "superseded_model_year",
+        reason: `A newer model year of the same trim is current and no source shows this ${myLabel(my)} version still sold new.`,
+      });
+      m.availability = "outgoing";
+      decisions.push(`${id}: set outgoing`);
+    }
+    namedPairs.push({
+      group: key,
+      members: members.map((m) => ({
+        variant: idMap.get(m.id)!,
+        year: yearByDot.get(m.id) ?? null,
+        state: m.availability,
+      })),
+      decision: decisions.join("; ") || "no change",
+    });
+  }
 
   /* ---- per-variant normalisation ---- */
   const out: ResearchImport = {
@@ -905,6 +1250,7 @@ async function main() {
   };
   const referencedBySlots = new Set<string>(); // source ids used by app-visible content
   const referencedByArchive = new Set<string>();
+  const expiryRows: { id: string; criterion: string; until: string }[] = [];
 
   for (const dv of dot.variants) {
     const id = must(idMap.get(dv.id), "id");
@@ -916,7 +1262,31 @@ async function main() {
     ) as VehicleClass;
     const baseCar = baseCars.get(id);
     const fallbackDate = dv.facts.price_aud?.date ?? AS_OF;
-    const fallbackScope = `${dv.brand} ${dv.model} ${dv.trim}`;
+    const displayTrim = trimOf.get(dv.id)!;
+    const displayModel = fixModelName(dv.model);
+    const fallbackScope = `${dv.brand} ${displayModel} ${displayTrim}`;
+    // Hand-checked corrections go in before anything is compared with the app's own record.
+    for (const c of fixesFor.get(id) ?? []) {
+      if (c.field === "record_state") continue;
+      const slotFact = (dv.facts[c.field] ??= { value: null });
+      const before = slotFact.value;
+      if (c.value !== undefined) {
+        slotFact.value = c.value;
+        slotFact.sourceIds = fixSources(c);
+        if (c.status) slotFact.status = c.status;
+      }
+      if (c.grade) slotFact.buyerGrade = c.grade;
+      appliedFixes.push({
+        id: c.id,
+        variant: id,
+        field: c.field,
+        before,
+        after: c.value ?? before,
+        grade: c.grade,
+        sources: fixSources(c),
+        reason: c.reason,
+      });
+    }
     usedModels.add(dv.modelId);
 
     /* facts ----------------------------------------------------- */
@@ -1026,6 +1396,78 @@ async function main() {
       if (nf.extras.priceEvidence && slot === "price_aud")
         archive.priceEvidence[id] = nf.extras.priceEvidence;
     }
+    // Corrections: the qualification, sources and status that the "same value" path above would otherwise drop.
+    for (const c of fixesFor.get(id) ?? []) {
+      if (c.field === "record_state") continue;
+      const patch = factPatches[c.field];
+      const baseFact = baseCar?.facts[c.field];
+      if (c.qualification)
+        patch.qualifications = uniq([
+          ...(patch.qualifications ?? baseFact?.qualifications ?? []),
+          c.qualification,
+        ]);
+      if (c.value !== undefined && c.status) patch.status = c.status;
+      const add = fixSources(c);
+      if (add.length) {
+        patch.sourceIds = uniq([
+          ...(patch.sourceIds ?? baseFact?.sourceIds ?? []),
+          ...add,
+        ]);
+        add.forEach((sid) => referencedBySlots.add(sid));
+      }
+    }
+    // "Confirmed" means maker or regulator material (see verification.ts); anything else is Reported.
+    for (const slot of SLOTS) {
+      const patch = factPatches[slot];
+      if (patch.grade !== "confirmed") continue;
+      const baseFact = baseCar?.facts[slot];
+      const ids = patch.sourceIds ?? baseFact?.sourceIds ?? [];
+      const types = uniq(ids.map(typeOfSource).filter(Boolean) as string[]);
+      if (
+        !types.length ||
+        types.some((t) =>
+          (CONFIRMING_SOURCE_TYPES as readonly string[]).includes(t),
+        )
+      )
+        continue;
+      patch.grade = "reported";
+      patch.qualifications = uniq([
+        ...(patch.qualifications ?? baseFact?.qualifications ?? []),
+        "The sources are retailer, database or press material rather than the maker or a regulator, so this is graded Reported.",
+      ]);
+      log.confirmedDowngrades.push({
+        variant: id,
+        key: slot,
+        sourceTypes: types,
+      });
+    }
+    // A price on a version that is not on sale yet, or is on its way out with no sign of stock, is not a current offer.
+    {
+      const patch = factPatches.price_aud;
+      const baseFact = baseCar?.facts.price_aud;
+      const priced = (patch.value ?? baseFact?.value ?? null) !== null;
+      const kind =
+        dv.availability === "announced_provisional"
+          ? "announced"
+          : dv.availability === "outgoing" &&
+              dv.buyerAvailability === "not_confirmed"
+            ? "last_listed"
+            : null;
+      if (priced && kind) {
+        const before =
+          patch.basis ?? baseFact?.basis ?? "Price basis not stated";
+        const label = kind === "announced" ? "Announced" : "Last listed";
+        patch.comparisonBasis ??= baseFact?.comparisonBasis ?? before;
+        patch.basis = `${label} · ${before}`;
+        patch.qualifications = uniq([
+          ...(patch.qualifications ?? baseFact?.qualifications ?? []),
+          kind === "announced"
+            ? "Announced price: this version is not on sale yet, so it is not a current offer and may change before orders open."
+            : "Last listed price: this version is outgoing and no source confirms it can still be ordered, so it is not a current offer.",
+        ]);
+        log.priceLabelled.push({ variant: id, kind });
+      }
+    }
     // New variants: facts that share the variant's scope/date are stored without them (data.ts defaults to the variant record).
     let modeScope = fallbackScope;
     let modeDate = fallbackDate;
@@ -1123,7 +1565,7 @@ async function main() {
       extraFacts[key] = [
         f.value as Json,
         f.unit ?? "",
-        str(cleanText(f.basis) || undefined),
+        str(cleanText(f.basis, "basis") || undefined),
         f.status ?? "",
         gradeOf(
           f.buyerGrade,
@@ -1184,6 +1626,11 @@ async function main() {
       if (Object.keys(extra).length)
         (archive.featureExtras[id] ??= {})[f.criterion] = extra;
     }
+    expiryRows.push(
+      ...rows
+        .filter((f) => f.validUntil)
+        .map((f) => ({ id, criterion: f.criterion, until: f.validUntil! })),
+    );
     if (original) {
       // Grade the app's own rows; replace one only when Dot's is confirmed/reported, sourced and different in substance.
       const patches: Record<string, Partial<Feature>> = {};
@@ -1397,8 +1844,8 @@ async function main() {
         id,
         model_id: dv.modelId,
         brand: dv.brand,
-        model: dv.model,
-        trim: dv.trim,
+        model: displayModel,
+        trim: displayTrim,
         vehicle_class: cls,
         model_year: dv.year ?? "Model year unverified",
         record_state: dv.availability,
@@ -1463,10 +1910,90 @@ async function main() {
       brand: string;
       model: string;
       generation?: string;
-    } = { id: m.id, brand: m.brand, model: m.model };
+    } = { id: m.id, brand: m.brand, model: fixModelName(m.model) };
     if (m.generation) rec.generation = m.generation;
     out.models.push(rec);
   }
+
+  /* ---- offers that carry an end date: the row records it, and the data layer stops counting it after that day ---- */
+  for (const e of expiryRows) {
+    const row =
+      out.features[e.id]?.find((r) => r.criterion === e.criterion) ??
+      out.feature_patches[e.id]?.[e.criterion];
+    if (row) row.valid_until = e.until;
+  }
+
+  /* ---- names that are still identical: the model year tells them apart ---- */
+  const sameName = new Map<string, Variant[]>();
+  const nameOf = (v: { brand: string; model: string; trim: string }) =>
+    [v.brand, v.model, v.trim]
+      .join("|")
+      .toLowerCase()
+      .replace(/[^a-z0-9|]+/g, "");
+  for (const v of baseResearch.variants)
+    sameName.set(nameOf(v), [...(sameName.get(nameOf(v)) ?? []), v]);
+  for (const v of out.variants)
+    sameName.set(nameOf(v), [...(sameName.get(nameOf(v)) ?? []), v]);
+  const renamedByYear: { variant: string; from: string; to: string }[] = [];
+  for (const members of sameName.values()) {
+    if (members.length < 2) continue;
+    for (const v of members) {
+      if (baseVariants.has(v.id)) continue;
+      const y = rawMy.get(v.id) ?? yearOf(v.model_year, [v.model_id]);
+      if (y == null) continue;
+      const to = `${v.trim} (${myLabel(y)})`;
+      renamedByYear.push({ variant: v.id, from: v.trim, to });
+      v.trim = to;
+    }
+  }
+
+  const countBy = <T>(xs: T[], f: (x: T) => string) =>
+    Object.fromEntries(
+      Object.entries(
+        xs.reduce<Record<string, number>>((m, x) => {
+          m[f(x)] = (m[f(x)] ?? 0) + 1;
+          return m;
+        }, {}),
+      ).sort((a, b) => b[1] - a[1]),
+    );
+  extraLog.naming = {
+    rule: "Trims lose the advertisement or sheet text they were read from, a repeat of the model name, and a model year that the model_year field already holds; a trim that was only the model name becomes 'Base' plus the drive. Model names keep the maker's Australian styling (BYD ATTO / DOLPHIN / SEAL, Hyundai IONIQ / KONA, Cadillac LYRIQ, smart #1); the original 34 keep their own spelling (e.g. Sealion 7). Only 'GLC electric' was respelled. Trims that are still identical for the same brand and model get '(MYnn)' from their model year. Ids and slugs are built from Dot's raw trim and do not change.",
+    modelRespelled: MODEL_SPELLING,
+    trimChanges: Object.fromEntries(
+      Object.entries(nameLog).map(([why, rows]) => [
+        why,
+        { count: rows.length, examples: rows.slice(0, 5) },
+      ]),
+    ),
+    renamedByModelYear: renamedByYear,
+  };
+  extraLog.recordStateDecisions = {
+    rule: "A current version is set outgoing when a newer model year of the same brand, model and trim is current and nothing shows the older one still sold new (stockStatus new_stock_listed or a sourced dealer advertisement). Otherwise it stays current and the names carry the model year.",
+    changed: stateDecisions,
+    duplicateNameGroups: namedPairs,
+  };
+  extraLog.manualCorrections = {
+    file: "data/manual-corrections.json",
+    applied: appliedFixes,
+  };
+  extraLog.confirmedGradeRule = {
+    rule: "Confirmed needs a maker, regulator or independent test-authority source (src/lib/source-types.ts CONFIRMING_SOURCE_TYPES); other confirmed facts become Reported.",
+    downgraded: log.confirmedDowngrades.length,
+    bySourceTypes: countBy(log.confirmedDowngrades, (d) =>
+      d.sourceTypes.join("+"),
+    ),
+    facts: log.confirmedDowngrades,
+  };
+  extraLog.priceLabelled = {
+    rule: "Prices on announced (not yet on sale) versions and on outgoing versions with no order confirmation say 'Announced' or 'Last listed' in their basis and carry a qualification.",
+    count: log.priceLabelled.length,
+    byKind: countBy(log.priceLabelled, (d) => d.kind),
+    variants: log.priceLabelled,
+  };
+  extraLog.offersWithEndDate = {
+    rule: "Rows with a validUntil date store it as valid_until; src/lib/verification.ts isExpiredOffer hides them from that date.",
+    rows: expiryRows,
+  };
 
   /* ---- sources: app vs archive ---- */
   out.sources = keptSources.filter((s) => referencedBySlots.has(s.id));
@@ -1850,6 +2377,12 @@ function buildSummary(a: {
       basisOrConditions: log.droppedText,
       qualifications: log.droppedQualifications,
     },
+    ...extraLog,
+    readerTextCleanup: {
+      about:
+        "Text removed or rewritten by src/lib/reader-text.ts (locators, API paths, JSON, snake_case field names, researcher instructions, long qualifications). Counts are occurrences processed, including archive text; examples are before -> after.",
+      byRule: Object.fromEntries(textCleanup),
+    },
     warnings: log.warnings,
     sourceTypeMap: Object.fromEntries([...log.sourceTypeMap].sort()),
     keyDisposition: Object.fromEntries(
@@ -1918,7 +2451,8 @@ Everything from the 2026-10-16 research import that has no slot in the app, plus
 | \`IMPORT-REPORT.md\` | Slot mapping table, counts, change log summary, hidden-fact statistics, open gaps. Start here. |
 | \`change-log-original-34.md\` / \`.json\` | Every divergence on the original 34 variants (old -> new, grade, sources, decision). |
 | \`hidden-facts.json\` | Facts with a value that the verification helper hides, by class, and the original 34 variants' hidden facts. |
-| \`mapping-log.json\` | Unit conversions, text clean-up counts, warnings, source type mapping, disposition of every unmapped fact key. |
+| \`mapping-log.json\` | Unit conversions, text clean-up counts, warnings, source type mapping, naming, record-state and grade decisions, applied corrections, disposition of every unmapped fact key. |
+| \`../manual-corrections.json\` | Hand-checked corrections applied by the importer (variant, field, value or grade, sources, reason). Not generated. |
 | \`id-map.json\` | Dot id -> app id for variants; merged source ids -> canonical id. |
 | \`extra-facts.json\` | Fact keys with no app slot (dimensions variants, equipment flags, charging detail, ...), per variant, graded, with sources. Tuple layout described inside the file. |
 | \`feature-extras.json\`, \`variant-meta.json\`, \`price-evidence.json\`, \`configuration-evidence.json\` | Evidence locators, availability evidence and strength/trade-off text, the price ladder choice per variant, configuration identity. |
@@ -1937,6 +2471,15 @@ function reportMarkdown(
   archiveOnlySources: number,
 ): string {
   const c = s.counts;
+  const ml = s.mappingLog as unknown as {
+    readerTextCleanup: { byRule: Record<string, { count: number }> };
+    naming: { rule: string };
+    recordStateDecisions: { rule: string };
+    manualCorrections: { applied: unknown[] };
+    confirmedGradeRule: { rule: string; downgraded: number };
+    priceLabelled: { rule: string; count: number };
+    offersWithEndDate: { rule: string };
+  };
   const classRows = Object.entries(s.hidden.perClass)
     .sort((x, y) => y[1].variants - x[1].variants)
     .map(
@@ -1974,7 +2517,7 @@ Generated by \`scripts/import-dot-research.ts\` from \`${path.basename(exportDir
 - ${c.variantsTotal} variants: the original ${c.variantsOriginal} plus ${c.variantsNew} new, in ${c.modelsNew} new model/generation records. The app's ids, slugs and routes are unchanged for the original 34; new ids follow \`<model_id>__<trim_slug>__<n>\` (Dot's date-suffixed and two-part ids are rewritten; the old ids are in \`id-map.json\`). No (family, slug) route repeats.
 - ${c.factsStoredForSlots} facts in the app's 22 fact slots (every variant has all 22; unknown is null, never zero).
 - ${c.equipmentRowsStored} stored equipment rows for the new variants; ${c.equipmentRowsDefaulted} rows that are still "needs confirmation" are not stored and expand from a per-variant default. Every variant has all 69 criteria.
-- ${c.sourcesInApp} new sources in the app (deduplicated by URL: ${c.sourcesMergedByUrl} duplicate ids merged), ${c.sourcesInArchive} more in \`sources-archive.json\` (cited only by archived content). The original 424 sources are unchanged.
+- ${c.sourcesInApp} new sources in the app (deduplicated by URL: ${c.sourcesMergedByUrl} duplicate ids merged), ${c.sourcesInArchive} more in \`sources-archive.json\` (cited only by archived content). The original 424 sources are unchanged apart from \`source_type\`, which \`data.ts\` maps onto the eight-value vocabulary of \`src/lib/source-types.ts\`.
 - ${c.extraFactsArchived} facts under ${c.extraFactKeys} further fact keys went to \`extra-facts.json\`; ${c.slotFilledFromAliases} of them also filled an empty slot, ${c.scalarFieldsFilled} filled an existing variant-record field.
 
 ## New slots (only two)
@@ -2084,6 +2627,23 @@ Equipment rows (all variants) by grade: ${Object.entries(
   )
     .map(([g, n]) => `${g} ${n}`)
     .join(", ")}.
+
+## Data-quality pass (4 November 2026)
+
+Applied by the importer, so a re-run reproduces it. Details and examples are in \`mapping-log.json\`.
+
+- **Reader text.** \`src/lib/reader-text.ts\` drops source locators, API paths, JSON/dict text, snake_case field names and researcher instructions from basis, comparison basis, scope and qualifications, rewrites a few recoverable ones into plain sentences, and cuts qualifications to 400 characters at a sentence boundary. Rule counts: ${Object.entries(
+    ml.readerTextCleanup.byRule,
+  )
+    .map(([k, v]) => `${k.replaceAll("_", " ")} ${v.count}`)
+    .join(", ")}.
+- **Scope.** A fact without its own scope now falls back to the variant's scope, then the model generation, then nothing; the words "undefined" and "null" never reach a page.
+- **Names.** ${ml.naming.rule}
+- **Model years.** ${ml.recordStateDecisions.rule}
+- **Corrections.** ${ml.manualCorrections.applied.length} entries from \`data/manual-corrections.json\` (EV3 GT-Line AWD price and towing, Model 3 grades and clearance, ID.5 outgoing).
+- **Grades and source types.** Source types use eight values. ${ml.confirmedGradeRule.rule} ${ml.confirmedGradeRule.downgraded} facts were downgraded.
+- **Labelled prices.** ${ml.priceLabelled.rule} ${ml.priceLabelled.count} prices are labelled.
+- **Expired offers.** ${ml.offersWithEndDate.rule}
 
 ## Open data gaps
 
