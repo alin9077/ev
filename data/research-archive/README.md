@@ -7,7 +7,8 @@ Everything from the 2026-10-16 research import that has no slot in the app, plus
 | `IMPORT-REPORT.md` | Slot mapping table, counts, change log summary, hidden-fact statistics, open gaps. Start here. |
 | `change-log-original-34.md` / `.json` | Every divergence on the original 34 variants (old -> new, grade, sources, decision). |
 | `hidden-facts.json` | Facts with a value that the verification helper hides, by class, and the original 34 variants' hidden facts. |
-| `mapping-log.json` | Unit conversions, text clean-up counts, warnings, source type mapping, disposition of every unmapped fact key. |
+| `mapping-log.json` | Unit conversions, text clean-up counts, warnings, source type mapping, naming, record-state and grade decisions, applied corrections, disposition of every unmapped fact key. |
+| `../manual-corrections.json` | Hand-checked corrections applied by the importer (variant, field, value or grade, sources, reason). Not generated. |
 | `id-map.json` | Dot id -> app id for variants; merged source ids -> canonical id. |
 | `extra-facts.json` | Fact keys with no app slot (dimensions variants, equipment flags, charging detail, ...), per variant, graded, with sources. Tuple layout described inside the file. |
 | `feature-extras.json`, `variant-meta.json`, `price-evidence.json`, `configuration-evidence.json` | Evidence locators, availability evidence and strength/trade-off text, the price ladder choice per variant, configuration identity. |
