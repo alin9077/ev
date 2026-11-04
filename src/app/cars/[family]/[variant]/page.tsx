@@ -5,6 +5,7 @@ export const dynamicParams = false;
 import { notFound } from "next/navigation";
 import Detail from "@/components/detail";
 import { catalogue, publicPack, research } from "@/lib/data";
+import { isUnverifiedVehicle } from "@/lib/coverage";
 export function generateStaticParams() {
   return catalogue().map((c) => ({ family: c.family, variant: c.slug }));
 }
@@ -22,6 +23,10 @@ export async function generateMetadata({
         title: `${c.brand} ${c.model} ${c.trim}`,
         description: `Dated Australian research for ${c.brand} ${c.model} ${c.trim}. Specifications, conditions, software eligibility and original evidence.`,
         alternates: { canonical: `/cars/${c.family}/${c.slug}` },
+        // No verified specification: the page stays reachable but is not offered to search engines.
+        ...(isUnverifiedVehicle(publicPack(c.id).car)
+          ? { robots: { index: false, follow: true } }
+          : {}),
       }
     : {};
 }
@@ -39,7 +44,9 @@ export default async function VariantPage({
   return (
     <FootnoteProvider sources={record.sources}>
       <Detail pack={record} criteria={research().criteria}>
-        <CitableReportContent report={makeReport([record], carPath(c))} />
+        {!isUnverifiedVehicle(record.car) && (
+          <CitableReportContent report={makeReport([record], carPath(c))} />
+        )}
       </Detail>
     </FootnoteProvider>
   );

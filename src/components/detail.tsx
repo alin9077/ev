@@ -3,6 +3,11 @@ import type { Pack, Research } from "@/lib/types";
 import { formatYear } from "@/lib/compare";
 import { seatsOf } from "@/lib/format";
 import { featureFor } from "@/lib/verification";
+import {
+  UNVERIFIED_DETAIL,
+  UNVERIFIED_NOTICE,
+  isUnverifiedVehicle,
+} from "@/lib/coverage";
 import { BASELINE, CHALLENGER, site, availabilityLabels } from "@/lib/config";
 import {
   FactValue,
@@ -22,6 +27,7 @@ export default function Detail({
   children?: React.ReactNode;
 }) {
   const c = pack.car;
+  const unverified = isUnverifiedVehicle(c);
   return (
     <main id="main" className="container editorial-page">
       <p className="eyebrow">{c.brand} / Australian variant record</p>
@@ -43,6 +49,34 @@ export default function Detail({
         </div>
         <SeatingDiagram seats={seatsOf(c)} />
       </div>
+      {unverified ? (
+        <aside className="unverified-notice" role="note">
+          <strong>{UNVERIFIED_NOTICE}</strong>
+          <p>{UNVERIFIED_DETAIL}</p>
+          <p>
+            <Link href="/methodology">How figures are verified</Link>
+          </p>
+        </aside>
+      ) : (
+        <DetailBody pack={pack} criteria={criteria}>
+          {children}
+        </DetailBody>
+      )}
+    </main>
+  );
+}
+function DetailBody({
+  pack,
+  criteria,
+  children,
+}: {
+  pack: Pack;
+  criteria: Research["criteria"];
+  children?: React.ReactNode;
+}) {
+  const c = pack.car;
+  return (
+    <>
       {children}
       <Notice />
       <Issues issues={c.issues} />
@@ -68,6 +102,6 @@ export default function Detail({
         })}
       </div>
       <SoftwareTimeline pack={pack} />
-    </main>
+    </>
   );
 }

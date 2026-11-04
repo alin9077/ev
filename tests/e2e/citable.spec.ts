@@ -1,6 +1,7 @@
 import { test, expect } from "@playwright/test";
 import { pairPages, pairReport } from "../../src/lib/pair-pages";
 import { publicCatalogue } from "../../src/lib/data";
+import { isUnverifiedVehicle } from "../../src/lib/coverage";
 import { variantCount } from "./fleet-data";
 import { reportMarkdown } from "../../src/lib/citable";
 
@@ -76,10 +77,23 @@ test("every variant page has a key-facts block before JavaScript", async ({
   const cars = publicCatalogue();
   expect(cars).toHaveLength(variantCount);
   let confirmed = 0,
-    withheld = 0;
+    withheld = 0,
+    unverified = 0;
   for (const car of cars) {
     const response = await page.goto(`/cars/${car.family}/${car.slug}`);
     expect(response?.status()).toBe(200);
+    const robots = page.locator('meta[name="robots"]');
+    if (isUnverifiedVehicle(car)) {
+      // No verified specification: a short notice instead of a wall of empty answers, and noindex.
+      unverified++;
+      await expect(robots).toHaveAttribute("content", /noindex/);
+      await expect(page.locator(".unverified-notice")).toContainText(
+        "Specifications for this vehicle haven't been verified yet",
+      );
+      await expect(page.locator("#key-facts")).toHaveCount(0);
+      await expect(page.getByText("Needs confirmation")).toHaveCount(0);
+      continue;
+    }
     await expect(page.locator("#key-facts")).toBeVisible();
     await expect(page.locator("#fact-price_aud")).toContainText(
       `${car.brand} ${car.model} ${car.trim}`,
@@ -105,6 +119,7 @@ test("every variant page has a key-facts block before JavaScript", async ({
   }
   expect(confirmed).toBeGreaterThan(100);
   expect(withheld).toBeGreaterThan(0);
+  expect(unverified).toBeGreaterThan(0);
   await context.close();
 });
 test("copy includes exact dates/sources and offers a selectable fallback", async ({
