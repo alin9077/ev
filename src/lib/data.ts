@@ -1,6 +1,5 @@
 import fs from "node:fs";
 import path from "node:path";
-import { cache } from "react";
 import type { Research, Car, Fact, Feature, Pack, Variant } from "./types";
 import { safeUrl } from "./config";
 import refinement from "../../data/research-refinement-2026-10-06.json";
@@ -10,9 +9,38 @@ import completion from "../../data/research-completion-2026-10-07.json";
 import editorial from "../../data/research-editorial-2026-10-07.json";
 import buyer from "../../data/research-buyer-2026-10-07.json";
 import { auditedSource, auditedFact, auditedFeature } from "./launch-evidence";
+import { loadImport } from "./research-import";
+/**
+ * The data is static, so each loader runs once per process. React's cache() only memoises inside a
+ * request, which made every CLI call (validate, tests) rebuild the whole catalogue.
+ */
+function once<T>(fn: () => T): () => T {
+  let done = false;
+  let value: T;
+  return () => {
+    if (!done) {
+      value = fn();
+      done = true;
+    }
+    return value;
+  };
+}
+/** Group overlay rows by variant once, so each variant only walks its own rows. */
+function byVariant<T extends { variant_id: string }>(rows: readonly T[]) {
+  const m = new Map<string, T[]>();
+  for (const r of rows) {
+    const g = m.get(r.variant_id);
+    if (g) g.push(r);
+    else m.set(r.variant_id, [r]);
+  }
+  return m;
+}
+const refinementFacts = byVariant(refinement.facts);
+const editorialFacts = byVariant(editorial.facts);
+const buyerFacts = byVariant(buyer.facts);
 /** Rows added for buyer questions the supplied criteria did not cover. */
 const buyerKeys = new Set(buyer.criteria.map((c) => c.key));
-export const research = cache((): Research => {
+export const research = once((): Research => {
   const d: Research = JSON.parse(
     fs.readFileSync(
       path.join(process.cwd(), "data/au_ev_all_variants_2026-10-06.json"),
@@ -46,6 +74,66 @@ export const research = cache((): Research => {
     added_criterion_count: buyer.criteria.length,
     added_feature_row_count: buyer.features.length,
   };
+  // 16 October research import: more variants in the same schema, graded fact by fact.
+  const imp = loadImport();
+  if (imp) {
+    d.models.push(...imp.models);
+    d.variants.push(...imp.variants);
+    for (const v of d.variants) Object.assign(v, imp.variant_patches[v.id]);
+    d.trim_equipment.push(...imp.trim_equipment);
+    d.sources.push(...imp.sources);
+    const eligible = new Map(imp.eligibility.map((e) => [e.variant_id, e]));
+    const rows: Feature[] = [];
+    for (const v of imp.variants) {
+      const date = imp.feature_defaults[v.id]?.date ?? v.variant_review_date;
+      d.update_eligibility.push(
+        eligible.get(v.id) ?? {
+          variant_id: v.id,
+          model_id: v.model_id,
+          documented_family_minimum: null,
+          exact_total_known: false,
+          exact_total: null,
+          scope: "No exact-trim software-update history established.",
+          meaning: "Research pending",
+          source_ids: [],
+          observation_window_start: date,
+          observation_window_end: date,
+        },
+      );
+      const stored = new Map(
+        (imp.features[v.id] ?? []).map((r) => [r.criterion, r]),
+      );
+      const fallback = imp.feature_defaults[v.id];
+      for (const c of d.criteria) {
+        const r = stored.get(c.key);
+        rows.push({
+          variant_id: v.id,
+          model_id: v.model_id,
+          ...(r ?? {
+            criterion: c.key,
+            status: "not_verified",
+            value: fallback.value,
+            conditions: fallback.conditions,
+            source_ids: [],
+            evidence_scope: fallback.evidence_scope,
+            last_evidence_date: fallback.date,
+            reviewed_date: fallback.date,
+            verification_state: fallback.verification_state,
+            grade: "not_published",
+          }),
+        } as Feature);
+      }
+    }
+    d.feature_evidence.push(...rows);
+    d.metadata = {
+      ...d.metadata,
+      record_count: d.variants.length,
+      supplied_record_count: d.metadata.record_count,
+      imported_variant_count: imp.variants.length,
+      added_feature_row_count:
+        Number(d.metadata.added_feature_row_count) + rows.length,
+    };
+  }
   d.publication_issues = d.publication_issues
     .map((issue) => ({
       ...issue,
@@ -62,6 +150,13 @@ export const research = cache((): Research => {
     }));
   return d;
 });
+/** Labels of the four measurements the buyer pass added; the import re-uses them. */
+const extraLabels: Record<string, string> = {
+  ground_clearance_mm: "Ground clearance",
+  turning_circle_m: "Turning circle",
+  kerb_weight_kg: "Kerb weight",
+  towing_unbraked_kg: "Unbraked towing",
+};
 const descriptors = [
   ["price_aud", "Listed price", "AUD", "price_basis"],
   ["range_km", "Claimed range", "km", "range_cycle"],
@@ -83,6 +178,9 @@ const descriptors = [
   ["battery_warranty", "Battery warranty", "", ""],
 ];
 function applies(issueId: string, key: string, v: Variant) {
+  // These two rules were written for single Tesla/Zeekr records; the id patterns must not catch imported trims.
+  const tesla = v.model_id === "tesla_model_y";
+  const zeekr7x = v.model_id === "zeekr_7x";
   const map: Record<string, string[]> = {
     "V2-01": ["safety_ancap"],
     "V2-02": ["zero_to_100_s"],
@@ -100,10 +198,11 @@ function applies(issueId: string, key: string, v: Variant) {
     "V2-14": ["battery_kwh", "software"],
     "V2-15": ["subjective"],
   };
-  if (issueId === "V2-02" && !v.id.includes("__l_")) return false;
+  if (issueId === "V2-02" && !(tesla && v.id.includes("__l_"))) return false;
   if (issueId === "V2-06" && v.record_state !== "announced_provisional")
     return false;
-  if (issueId === "V2-09" && !v.id.includes("black_special")) return false;
+  if (issueId === "V2-09" && !(zeekr7x && v.id.includes("black_special")))
+    return false;
   // This issue's driving qualification concerns Model Y L activation;
   // its general software-history caveat is not an ADAS limit on other cars.
   if (
@@ -114,10 +213,12 @@ function applies(issueId: string, key: string, v: Variant) {
     return false;
   return map[issueId]?.some((x) => x === "all" || x === key);
 }
-export const catalogue = cache((): Car[] => {
+export const catalogue = once((): Car[] => {
   const d = research();
+  const imp = loadImport();
+  const models = new Map(d.models.map((m) => [m.id, m]));
   return d.variants.map((v) => {
-    const model = d.models.find((m) => m.id === v.model_id)!;
+    const model = models.get(v.model_id)!;
     const issues = d.publication_issues.filter(
       (i) => i.model_ids.includes(v.model_id) || i.model_ids.includes("all"),
     );
@@ -158,9 +259,12 @@ export const catalogue = cache((): Car[] => {
       if (
         v.record_state === "announced_provisional" ||
         (v.model_id === "byd_atto_3_evo" && key === "price_aud") ||
-        (v.id.includes("black_special") &&
+        (v.model_id === "zeekr_7x" &&
+          v.id.includes("black_special") &&
           ["price_aud", "range_km"].includes(key)) ||
-        (v.id.includes("__l_") && key === "zero_to_100_s")
+        (v.model_id === "tesla_model_y" &&
+          v.id.includes("__l_") &&
+          key === "zero_to_100_s")
       )
         status = value === null ? "not_verified" : "conditional";
       let comparisonBasis = basis;
@@ -186,7 +290,7 @@ export const catalogue = cache((): Car[] => {
         issues: fieldIssues,
       };
     }
-    for (const patch of refinement.facts.filter((f) => f.variant_id === v.id)) {
+    for (const patch of refinementFacts.get(v.id) ?? []) {
       const f = facts[patch.key];
       if (f)
         Object.assign(f, {
@@ -233,7 +337,8 @@ export const catalogue = cache((): Car[] => {
       f.basis = labels[f.basis] ?? f.basis;
       f.comparisonBasis = labels[f.comparisonBasis] ?? f.comparisonBasis;
     }
-    for (const { variant_id, key, ...patch } of editorial.facts as ({
+    for (const { variant_id, key, ...patch } of (editorialFacts.get(v.id) ??
+      []) as ({
       variant_id: string;
       key: string;
     } & Partial<Fact>)[]) {
@@ -244,7 +349,7 @@ export const catalogue = cache((): Car[] => {
       if (patch.status === "conditional") facts[key].resolvedElsewhere = true;
     }
     // 7 October buyer pass: measurements the supplied variant records did not carry.
-    for (const { variant_id, ...fact } of buyer.facts as ({
+    for (const { variant_id, ...fact } of (buyerFacts.get(v.id) ?? []) as ({
       variant_id: string;
     } & Pick<
       Fact,
@@ -268,18 +373,51 @@ export const catalogue = cache((): Car[] => {
       };
     }
     for (const key of Object.keys(facts)) facts[key] = auditedFact(facts[key]);
+    // 16 October research import: final values and the verification grade of every fact.
+    for (const [key, patch] of Object.entries(imp?.facts[v.id] ?? {})) {
+      const empty: Fact = {
+        key,
+        label: extraLabels[key] ?? key,
+        value: null,
+        unit: "",
+        basis: "",
+        comparisonBasis: "",
+        status: "not_verified",
+        sourceIds: [],
+        date: String(v.variant_review_date),
+        market: "AU",
+        scope: String(v.availability_scope || model.generation || ""),
+        qualifications: [],
+        issues: [],
+      };
+      facts[key] = { ...empty, ...facts[key], ...patch };
+      // A comparison basis equal to the basis is stored once.
+      if (patch.basis !== undefined && patch.comparisonBasis === undefined)
+        facts[key].comparisonBasis = patch.basis;
+    }
+    if (imp)
+      for (const f of Object.values(facts))
+        f.grade ??= v.vehicle_class ? "unrated" : "established";
     return {
       id: v.id,
       modelId: v.model_id,
       family: v.model_id.startsWith("byd_atto_3")
         ? "byd-atto-3"
         : v.model_id.replaceAll("_", "-"),
-      slug: v.id.split("__").slice(1).join("-").replaceAll("_", "-"),
+      // Ids with fewer than three "__" parts use the whole id, so (family, slug) routes never collide.
+      slug: (v.id.split("__").length >= 3
+        ? v.id.split("__").slice(1).join("-")
+        : v.id
+      ).replaceAll("_", "-"),
       brand: v.brand,
       model: v.model,
       trim: v.trim,
-      generation: model.generation,
+      generation:
+        (v.generation as string | undefined) ||
+        model.generation ||
+        "Generation details not verified",
       year: v.model_year,
+      vehicleClass: v.vehicle_class ?? "passenger",
       availability: v.record_state,
       drive: String(v.drive || "Unknown"),
       facts,
@@ -360,63 +498,72 @@ export function readableValue(value: unknown): string {
       .join("; ");
   return String(value);
 }
+const lookups = once(() => {
+  const d = research();
+  return {
+    cars: new Map(catalogue().map((c) => [c.id, c])),
+    variants: new Map(d.variants.map((v) => [v.id, v])),
+    rows: byVariant(d.feature_evidence),
+    imported: new Set(loadImport()?.variants.map((v) => v.id)),
+  };
+});
 export function pack(id: string): Pack {
   const d = research();
-  const car = catalogue().find((c) => c.id === id);
+  const lookup = lookups();
+  const car = lookup.cars.get(id);
   if (!car) throw new Error("Unknown variant");
-  const variant = d.variants.find((v) => v.id === id)!;
-  const features = d.feature_evidence
-    .filter((f) => f.variant_id === id)
-    .map((f) => {
-      // Buyer rows are written for readers already; no inherited qualifications apply.
-      if (buyerKeys.has(f.criterion)) return f;
-      const fresh =
-        completion.features.find(
-          (p) => p.variant_id === id && p.criterion === f.criterion,
-        ) ||
-        usability.features.find(
-          (p) => p.variant_id === id && p.criterion === f.criterion,
-        ) ||
-        refinement.features.find(
-          (p) => p.variant_id === id && p.criterion === f.criterion,
-        );
-      if (fresh) return { ...f, ...fresh } as typeof f;
-      const warnings = d.publication_issues.filter(
-        (i) =>
-          (i.model_ids.includes(car.modelId) || i.model_ids.includes("all")) &&
-          (applies(i.issue_id, f.criterion, variant) ||
-            applies(
-              i.issue_id,
-              f.criterion === "performance_rear_motor"
-                ? "zero_to_100_s"
-                : f.criterion,
-              variant,
-            )),
+  const variant = lookup.variants.get(id)!;
+  const imported = lookup.imported.has(id);
+  const features = (lookup.rows.get(id) ?? []).map((f) => {
+    // Imported rows are already final: they carry their own conditions, sources and grade.
+    if (imported) return { ...f };
+    // Buyer rows are written for readers already; no inherited qualifications apply.
+    if (buyerKeys.has(f.criterion)) return f;
+    const fresh =
+      completion.features.find(
+        (p) => p.variant_id === id && p.criterion === f.criterion,
+      ) ||
+      usability.features.find(
+        (p) => p.variant_id === id && p.criterion === f.criterion,
+      ) ||
+      refinement.features.find(
+        (p) => p.variant_id === id && p.criterion === f.criterion,
       );
-      const blocked = f.status === "not_verified";
-      return {
-        ...f,
-        value: blocked
-          ? "Needs confirmation"
-          : typeof f.value === "boolean"
-            ? f.value
-              ? "Included"
-              : "Not available in this specification"
-            : readableValue(f.value),
-        conditions: [
-          f.conditions,
-          ...warnings.map((i) => i.publication_action),
-        ].join(" "),
-        source_ids: [
-          ...new Set([
-            ...f.source_ids,
-            ...warnings.flatMap((i) => i.source_ids),
-          ]),
-        ],
-      };
-    });
+    if (fresh) return { ...f, ...fresh } as typeof f;
+    const warnings = d.publication_issues.filter(
+      (i) =>
+        (i.model_ids.includes(car.modelId) || i.model_ids.includes("all")) &&
+        (applies(i.issue_id, f.criterion, variant) ||
+          applies(
+            i.issue_id,
+            f.criterion === "performance_rear_motor"
+              ? "zero_to_100_s"
+              : f.criterion,
+            variant,
+          )),
+    );
+    const blocked = f.status === "not_verified";
+    return {
+      ...f,
+      value: blocked
+        ? "Needs confirmation"
+        : typeof f.value === "boolean"
+          ? f.value
+            ? "Included"
+            : "Not available in this specification"
+          : readableValue(f.value),
+      conditions: [
+        f.conditions,
+        ...warnings.map((i) => i.publication_action),
+      ].join(" "),
+      source_ids: [
+        ...new Set([...f.source_ids, ...warnings.flatMap((i) => i.source_ids)]),
+      ],
+    };
+  });
   // The editorial pass rewrote every cell; it keeps the evidence trail of the row it replaces.
   for (const [i, f] of features.entries()) {
+    if (imported) break;
     const edit = editorial.features.find(
       (p) => p.variant_id === id && p.criterion === f.criterion,
     );
@@ -430,8 +577,16 @@ export function pack(id: string): Pack {
       source_ids: [...new Set([...f.source_ids, ...add_source_ids])],
     } as typeof f;
   }
-  for (const [i, feature] of features.entries())
-    features[i] = auditedFeature(feature);
+  if (!imported)
+    for (const [i, feature] of features.entries())
+      features[i] = auditedFeature(feature);
+  // Research import: grades for the original rows, and replacement rows where the import is better graded.
+  const gradePatches = loadImport()?.feature_patches[id];
+  if (gradePatches)
+    for (const [i, f] of features.entries()) {
+      const patch = gradePatches[f.criterion];
+      if (patch) features[i] = { ...f, ...patch };
+    }
   const eligibility = {
     ...d.update_eligibility.find((e) => e.variant_id === id)!,
   };

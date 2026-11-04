@@ -6,6 +6,22 @@ export type Status =
   | "unavailable"
   | "optional"
   | "not_applicable";
+/** Vehicle class: passenger cars are the original scope; the others arrive with the 2026-10-16 research import. */
+export type VehicleClass =
+  "passenger" | "ute" | "van" | "truck" | "bus" | "motorcycle";
+/**
+ * Per-fact verification grade.
+ * confirmed / reported / check / not_published come from the importer's evidence grading;
+ * established marks the original 34-variant values that were supplied with the app and not contradicted;
+ * unrated marks facts that were never graded (hidden, like check and not_published).
+ */
+export type Grade =
+  | "confirmed"
+  | "reported"
+  | "established"
+  | "check"
+  | "not_published"
+  | "unrated";
 export type Source = {
   id: string;
   url: string;
@@ -41,6 +57,8 @@ export type Feature = {
   condition_label?: string;
   usability_notes?: string[];
   confirmation_needed?: string;
+  /** Verification grade; see isVerifiedFact in verification.ts. */
+  grade?: Grade;
 };
 export type Variant = {
   id: string;
@@ -49,6 +67,8 @@ export type Variant = {
   model: string;
   trim: string;
   model_year: number | string;
+  /** Present on every variant after the research import; absent only in the immutable base file. */
+  vehicle_class?: VehicleClass;
   record_state: string;
   price_aud: number | null;
   price_basis: string;
@@ -102,7 +122,7 @@ export type Research = {
     [key: string]: unknown;
   };
   criteria: { key: string; label: string; group: string; definition: string }[];
-  models: { id: string; brand: string; model: string; generation: string }[];
+  models: { id: string; brand: string; model: string; generation?: string }[];
   variants: Variant[];
   trim_equipment: {
     variant_id: string;
@@ -140,6 +160,8 @@ export type Fact = {
   issues: Issue[];
   /** Value resolved from a source other than the maker's Australian specification for this version. */
   resolvedElsewhere?: boolean;
+  /** Verification grade; see isVerifiedFact in verification.ts. */
+  grade?: Grade;
 };
 export type Car = {
   id: string;
@@ -151,6 +173,7 @@ export type Car = {
   trim: string;
   generation: string;
   year: number | string;
+  vehicleClass: VehicleClass;
   availability: string;
   drive: string;
   facts: Record<string, Fact>;
