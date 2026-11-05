@@ -1,0 +1,2781 @@
+{
+  "schema": "roadmark-refresh-findings-v1",
+  "brand": "BMW",
+  "asOf": "2026-11-05",
+  "reviewedAt": "2026-11-05",
+  "reviewedBy": "Roadmark WS2 refresh (Claude Code worker), BMW",
+  "sources": [
+    {
+      "id": "refresh-bmw-2026-11-05-sport-collection",
+      "url": "https://www.bmw.com.au/en/offers-and-services/promotions/sport-collection.html",
+      "title": "The BMW Sport Collection (BMW Australia)",
+      "publisher": "BMW Australia",
+      "source_type": "manufacturer_au_offer",
+      "published_date": null,
+      "accessed_date": "2026-11-05",
+      "market": "AU",
+      "supports": "Opened 2026-11-05 with the Disclaimer section expanded. 'The BMW iX1 xDrive30 Sport Collection from $79,900**' drive away. Disclaimer: Manufacturer's Recommended Drive Away Price (MRDP) for a new BMW iX1 xDrive30 Sport Collection (Alpine White, no enhancement pack or extras) delivered by 31.03.27; MRDP includes GST, stamp duty and other taxes and duties, CTP, registration and manufacturer's recommended dealer delivery charges; ordered production available and stock may vary between dealers; participating dealers while stocks last or production slots are available; not combinable with other offers; excludes fleet, government and rental buyers."
+    }
+  ],
+  "versions": [
+    {
+      "variantId": "bmw_ix1_current__22hm_xdrive30_m_sport__20261010",
+      "vehicle": "BMW iX1 xDrive30 M Sport",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "new_stock_listed",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://media.adtorqueedge.com/new-cars/bmw-aus/brochures/BMW%20iX1.pdf",
+            "https://virtual.bmw.com.au/details/OAG-AD-WBY22HM0105779888/2026-bmw-ix1-xdrive30-new"
+          ]
+        },
+        "outcome": "unavailable",
+        "note": "BMW's configurator (configure.bmw.com.au) opens on a 'Confirm your location' postcode form that must be filled before any price shows; no postcode was entered, and the page body is otherwise empty. Not rechecked; value retained, date unchanged."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "85,362 AUD",
+            "basis": "Manufacturer recommended drive-away price, Victoria postcode 3000, standard white, no selected paid options",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://configure.bmw.com.au/en_AU/configure/U11/22HM/FKTNL,P0300,S01EK,S0212,S0230,S02VB,S02VD,S02VF,S0322,S0337,S03MC,S0428,S0430,S0431,S0459,S0481,S0494,S04H2,S04NW,S04T2,S04T3,S04U6,S04U9,S04V1,S0548,S0552,S05AC,S05AU,S05AV,S05DN,S05YG,S0610,S0654,S06AC,S06AE,S06NX,S06PA,S06U3,S0710,S0760,S0775,S07CK,S07EW,S0810,S0825,S0853,S088K,S08R9,S08SL,S08SM,S08SX,S08TF,S08TG,S0925,S0962,S09T1,S09T2/SI0R07CK"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "BMW's configurator (configure.bmw.com.au) opens on a 'Confirm your location' postcode form that must be filled before any price shows; no postcode was entered, and the page body is otherwise empty. Not rechecked; value retained, date unchanged."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "410 km",
+            "basis": "ADR81/02",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://media.adtorqueedge.com/new-cars/bmw-aus/brochures/BMW%20iX1.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "67 kWh",
+            "basis": "Published capacity; gross/usable not stated",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://media.adtorqueedge.com/new-cars/bmw-aus/brochures/BMW%20iX1.pdf",
+              "https://www.bmw.com.au/en/models/bmw-i/ix1/bmw-ix1-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "130 kW",
+            "basis": "Vehicle maximum DC intake",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/ix1/bmw-ix1-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "29 min",
+            "basis": "DC 10–80%",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/ix1/bmw-ix1-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "22 kW",
+            "basis": "Standard included AC Charging Professional onboard charger, selected/disabled in exact default Australian 22HM configuration",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://configure.bmw.com.au/en_AU/configure/U11/22HM/FKTNL,P0300,S01EK,S0212,S0230,S02VB,S02VD,S02VF,S0322,S0337,S03MC,S0428,S0430,S0431,S0459,S0481,S0494,S04H2,S04NW,S04T2,S04T3,S04U6,S04U9,S04V1,S0548,S0552,S05AC,S05AU,S05AV,S05DN,S05YG,S0610,S0654,S06AC,S06AE,S06NX,S06PA,S06U3,S0710,S0760,S0775,S07CK,S07EW,S0810,S0825,S0853,S088K,S08R9,S08SL,S08SM,S08SX,S08TF,S08TG,S0925,S0962,S09T1,S09T2/SI0R07CK"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/ix1/bmw-ix1-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "490 L",
+            "basis": "Maker luggage capacity, rear seats in place; volume method not stated",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/ix1/bmw-ix1-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "5.6 s",
+            "basis": "0–100 km/h",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/ix1/bmw-ix1-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "230 kW",
+            "basis": "Peak temporary output",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/ix1/bmw-ix1-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "AWD",
+            "basis": "Drivetrain",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/ix1/bmw-ix1-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,500 mm",
+            "basis": "Body length",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/ix1/bmw-ix1-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,845 mm",
+            "basis": "Body width, excluding mirrors",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/ix1/bmw-ix1-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,616 mm",
+            "basis": "Body height",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/ix1/bmw-ix1-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,200 kg",
+            "basis": "Braked trailer load",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/ix1/bmw-ix1-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km for private use; 5 years / 200,000 km for hire/reward, self-drive hire or instruction",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/content/dam/bmw/marketAU/bmw_com/topics/offers-and-services/service_parts/PDF/BMW_Supplementary_Warranty_Nov2022.pdf.asset.1667558576125.pdf.coredownload.pdf",
+              "https://www.bmw.com.au/en/service-portal.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/content/dam/bmw/marketAU/bmw_com/topics/offers-and-services/service_parts/PDF/BMW_Supplementary_Warranty_Nov2022.pdf.asset.1667558576125.pdf.coredownload.pdf",
+              "https://www.bmw.com.au/en/service-portal.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "driveaway_price_aud",
+          "label": "Manufacturer driveaway price",
+          "due": true,
+          "current": {
+            "value": "85,362 AUD",
+            "basis": "Manufacturer recommended drive-away price, Victoria postcode 3000, standard white, no selected paid options",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://configure.bmw.com.au/en_AU/configure/U11/22HM/FKTNL,P0300,S01EK,S0212,S0230,S02VB,S02VD,S02VF,S0322,S0337,S03MC,S0428,S0430,S0431,S0459,S0481,S0494,S04H2,S04NW,S04T2,S04T3,S04U6,S04U9,S04V1,S0548,S0552,S05AC,S05AU,S05AV,S05DN,S05YG,S0610,S0654,S06AC,S06AE,S06NX,S06PA,S06U3,S0710,S0760,S0775,S07CK,S07EW,S0810,S0825,S0853,S088K,S08R9,S08SL,S08SM,S08SX,S08TF,S08TG,S0925,S0962,S09T1,S09T2/SI0R07CK"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "BMW's configurator (configure.bmw.com.au) opens on a 'Confirm your location' postcode form that must be filled before any price shows; no postcode was entered, and the page body is otherwise empty. Not rechecked; value retained, date unchanged."
+        },
+        {
+          "key": "reported_list_price_aud",
+          "label": "Reported list price aud",
+          "due": true,
+          "current": {
+            "value": "77,900",
+            "basis": "Reported Australian list price before on-road costs",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://evcentral.com.au/bmw-chops-ev-pricing-ix1-and-ix2-are-now-cheaper-new-entry-level-ix1-added/",
+              "https://www.goauto.com.au/new-models/bmw/ix1/bmw-slashes-prices-of-electric-ix1-and-ix2/2026-04-02/98895.html"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "BMW's configurator (configure.bmw.com.au) opens on a 'Confirm your location' postcode form that must be filled before any price shows; no postcode was entered, and the page body is otherwise empty. Not rechecked; value retained, date unchanged."
+        }
+      ]
+    },
+    {
+      "variantId": "bmw_ix2_current__82gn_xdrive30_m_sport__20261010",
+      "vehicle": "BMW iX2 xDrive30 M Sport",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "new_stock_listed",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://media.adtorqueedge.com/new-cars/bmw-aus/brochures/BMW%20iX2.pdf",
+            "https://virtual.bmw.com.au/details/OAG-AD-WBY82GN0405781119/2026-bmw-ix2-xdrive30-new"
+          ]
+        },
+        "outcome": "unavailable",
+        "note": "BMW's configurator (configure.bmw.com.au) opens on a 'Confirm your location' postcode form that must be filled before any price shows; no postcode was entered, and the page body is otherwise empty. Not rechecked; value retained, date unchanged."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "87,446 AUD",
+            "basis": "Manufacturer recommended drive-away price, Victoria postcode 3000, standard white, no selected paid options",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://configure.bmw.com.au/en_AU/configure/U10/82GN/FKTNL,P0300,S01EK,S0212,S0230,S02VB,S02VD,S02VF,S0313,S0322,S0337,S03DN,S03KA,S0428,S0430,S0431,S0459,S0481,S0494,S04H2,S04NW,S04T2,S04T3,S04U6,S04U9,S04V1,S0548,S0552,S05AC,S05AU,S05AV,S05DN,S05YG,S0610,S0654,S06AC,S06AE,S06NX,S06PA,S06U3,S0710,S0760,S0775,S07CK,S07EW,S0810,S0825,S0853,S088K,S08R9,S08SL,S08SM,S08SX,S08TF,S08TG,S0925,S0962,S09T1,S09T2/SI0R07CK"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "BMW's configurator (configure.bmw.com.au) opens on a 'Confirm your location' postcode form that must be filled before any price shows; no postcode was entered, and the page body is otherwise empty. Not rechecked; value retained, date unchanged."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "410 km",
+            "basis": "WLTP",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/bmw-ix2-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "67 kWh",
+            "basis": "Published capacity; gross/usable not stated",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://media.adtorqueedge.com/new-cars/bmw-aus/brochures/BMW%20iX2.pdf",
+              "https://www.bmw.com.au/en/models/bmw-i/bmw-ix2-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "130 kW",
+            "basis": "Vehicle maximum DC intake",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/bmw-ix2-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "29 min",
+            "basis": "DC 10–80%",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/bmw-ix2-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "22 kW",
+            "basis": "Maximum AC onboard charge power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://media.adtorqueedge.com/new-cars/bmw-aus/brochures/BMW%20iX2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/bmw-ix2-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "525 L",
+            "basis": "Maker luggage capacity, rear seats in place; volume method not stated",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/bmw-ix2-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "5.6 s",
+            "basis": "0–100 km/h",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/bmw-ix2-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "230 kW",
+            "basis": "Peak temporary output",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/bmw-ix2-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "AWD",
+            "basis": "Drivetrain",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/bmw-ix2-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,554 mm",
+            "basis": "Body length",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/bmw-ix2-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,845 mm",
+            "basis": "Body width, excluding mirrors",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/bmw-ix2-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,560 mm",
+            "basis": "Body height",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/bmw-ix2-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,200 kg",
+            "basis": "Braked trailer load",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/bmw-ix2-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km for private use; 5 years / 200,000 km for hire/reward, self-drive hire or instruction",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/content/dam/bmw/marketAU/bmw_com/topics/offers-and-services/service_parts/PDF/BMW_Supplementary_Warranty_Nov2022.pdf.asset.1667558576125.pdf.coredownload.pdf",
+              "https://www.bmw.com.au/en/service-portal.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/content/dam/bmw/marketAU/bmw_com/topics/offers-and-services/service_parts/PDF/BMW_Supplementary_Warranty_Nov2022.pdf.asset.1667558576125.pdf.coredownload.pdf",
+              "https://www.bmw.com.au/en/service-portal.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "driveaway_price_aud",
+          "label": "Manufacturer driveaway price",
+          "due": true,
+          "current": {
+            "value": "87,446 AUD",
+            "basis": "Manufacturer recommended drive-away price, Victoria postcode 3000, standard white, no selected paid options",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://configure.bmw.com.au/en_AU/configure/U10/82GN/FKTNL,P0300,S01EK,S0212,S0230,S02VB,S02VD,S02VF,S0313,S0322,S0337,S03DN,S03KA,S0428,S0430,S0431,S0459,S0481,S0494,S04H2,S04NW,S04T2,S04T3,S04U6,S04U9,S04V1,S0548,S0552,S05AC,S05AU,S05AV,S05DN,S05YG,S0610,S0654,S06AC,S06AE,S06NX,S06PA,S06U3,S0710,S0760,S0775,S07CK,S07EW,S0810,S0825,S0853,S088K,S08R9,S08SL,S08SM,S08SX,S08TF,S08TG,S0925,S0962,S09T1,S09T2/SI0R07CK"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "BMW's configurator (configure.bmw.com.au) opens on a 'Confirm your location' postcode form that must be filled before any price shows; no postcode was entered, and the page body is otherwise empty. Not rechecked; value retained, date unchanged."
+        },
+        {
+          "key": "reported_list_price_aud",
+          "label": "Reported list price aud",
+          "due": true,
+          "current": {
+            "value": "79,900",
+            "basis": "Reported Australian list price before on-road costs",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://evcentral.com.au/bmw-chops-ev-pricing-ix1-and-ix2-are-now-cheaper-new-entry-level-ix1-added/",
+              "https://www.goauto.com.au/new-models/bmw/ix1/bmw-slashes-prices-of-electric-ix1-and-ix2/2026-04-02/98895.html"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "BMW's configurator (configure.bmw.com.au) opens on a 'Confirm your location' postcode form that must be filled before any price shows; no postcode was entered, and the page body is otherwise empty. Not rechecked; value retained, date unchanged."
+        }
+      ]
+    },
+    {
+      "variantId": "bmw_i4_current__52hd_edrive35_m_sport_package__20261010",
+      "vehicle": "BMW i4 eDrive35 M Sport Package",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://configure.bmw.com.au/en_AU/configure/G26/52HD",
+            "https://www.bmw.com.au/en/models/bmw-i/i4/bmw-i4-gran-coupe-technical-data.html",
+            "https://media.adtorqueedge.com/new-cars/bmw-aus/brochures/BMW%20i4.pdf"
+          ]
+        },
+        "outcome": "unavailable",
+        "note": "BMW's configurator (configure.bmw.com.au) opens on a 'Confirm your location' postcode form that must be filled before any price shows; no postcode was entered, and the page body is otherwise empty. Not rechecked; value retained, date unchanged."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "96,896 AUD",
+            "basis": "Maker Victoria recommended driveaway price; selected options $0",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://configure.bmw.com.au/en_AU/configure/G26/52HD"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "BMW's configurator (configure.bmw.com.au) opens on a 'Confirm your location' postcode form that must be filled before any price shows; no postcode was entered, and the page body is otherwise empty. Not rechecked; value retained, date unchanged."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "448 km",
+            "basis": "ADR81/02",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://media.adtorqueedge.com/new-cars/bmw-aus/brochures/BMW%20i4.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "66.4 kWh",
+            "basis": "Net usable",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://media.adtorqueedge.com/new-cars/bmw-aus/brochures/BMW%20i4.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "180 kW",
+            "basis": "Peak DC input",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/i4/bmw-i4-gran-coupe-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "32 min",
+            "basis": "Manufacturer minimum DC 10–80% time",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/i4/bmw-i4-gran-coupe-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maximum onboard AC acceptance",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://media.adtorqueedge.com/new-cars/bmw-aus/brochures/BMW%20i4.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://configure.bmw.com.au/en_AU/configure/G26/52HD"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "470 L",
+            "basis": "Manufacturer luggage capacity; VDA/SAE and loading-line method not stated",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/i4/bmw-i4-gran-coupe-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "6 s",
+            "basis": "0–100 km/h",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/i4/bmw-i4-gran-coupe-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "210 kW",
+            "basis": "Motor output",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/i4/bmw-i4-gran-coupe-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Drivetrain",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/i4/bmw-i4-gran-coupe-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,783 mm",
+            "basis": "Published exterior dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/i4/bmw-i4-gran-coupe-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,852 mm",
+            "basis": "Body width excluding mirrors",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/i4/bmw-i4-gran-coupe-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,448 mm",
+            "basis": "Published exterior dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/i4/bmw-i4-gran-coupe-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,600 kg",
+            "basis": "Braked trailer load at up to 12% gradient",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://configure.bmw.com.au/en_AU/configure/G26/52HD"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km for private use; 5 years / 200,000 km for hire/reward, self-drive hire or instruction",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/content/dam/bmw/marketAU/bmw_com/topics/offers-and-services/service_parts/PDF/BMW_Supplementary_Warranty_Nov2022.pdf.asset.1667558576125.pdf.coredownload.pdf",
+              "https://www.bmw.com.au/en/service-portal.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/content/dam/bmw/marketAU/bmw_com/topics/offers-and-services/service_parts/PDF/BMW_Supplementary_Warranty_Nov2022.pdf.asset.1667558576125.pdf.coredownload.pdf",
+              "https://www.bmw.com.au/en/service-portal.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dealer_advertised_driveaway_aud",
+          "label": "Dealer advertised driveaway aud",
+          "due": true,
+          "current": {
+            "value": "104,034",
+            "basis": "Canberra BMW exact NEW-advertised VIN WBY52HD050FX08944; 0 km",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://virtual.bmw.com.au/details/OAG-AD-WBY52HD050FX08944/2026-bmw-i4-edrive35-gran-coup-new"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "BMW's configurator (configure.bmw.com.au) opens on a 'Confirm your location' postcode form that must be filled before any price shows; no postcode was entered, and the page body is otherwise empty. Not rechecked; value retained, date unchanged."
+        },
+        {
+          "key": "price_reported_list_aud",
+          "label": "Price reported list aud",
+          "due": true,
+          "current": {
+            "value": "88,900",
+            "basis": "Reported list price before on-road costs",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/bmw/i4/2026/edrive35/"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "BMW's configurator (configure.bmw.com.au) opens on a 'Confirm your location' postcode form that must be filled before any price shows; no postcode was entered, and the page body is otherwise empty. Not rechecked; value retained, date unchanged."
+        }
+      ]
+    },
+    {
+      "variantId": "bmw_ix_current__42cf_xdrive45_m_sport__20261010",
+      "vehicle": "BMW iX xDrive45 M Sport",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "new_stock_listed",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://media.adtorqueedge.com/new-cars/bmw-aus/brochures/BMW%20iX.pdf",
+            "https://configure.bmw.com.au/en_AU/configure/I20/42CF",
+            "https://virtual.bmw.com.au/details/OAG-AD-WBY42CF090CY37329/2026-bmw-ix-xdrive45-new"
+          ]
+        },
+        "outcome": "unavailable",
+        "note": "BMW's configurator (configure.bmw.com.au) opens on a 'Confirm your location' postcode form that must be filled before any price shows; no postcode was entered, and the page body is otherwise empty. Not rechecked; value retained, date unchanged."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "155,978 AUD",
+            "basis": "Manufacturer recommended driveaway; Victoria example postcode 3000, zero selected options",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://configure.bmw.com.au/en_AU/configure/I20/42CF"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "BMW's configurator (configure.bmw.com.au) opens on a 'Confirm your location' postcode form that must be filled before any price shows; no postcode was entered, and the page body is otherwise empty. Not rechecked; value retained, date unchanged."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "522 km",
+            "basis": "ADR81/02 combined",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://media.adtorqueedge.com/new-cars/bmw-aus/brochures/BMW%20iX.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "94.8 kWh",
+            "basis": "Net battery capacity in Australian42CF guide",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://media.adtorqueedge.com/new-cars/bmw-aus/brochures/BMW%20iX.pdf",
+              "https://www.bmw.com.au/en/models/bmw-i/ix/bmw-ix-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "175 kW",
+            "basis": "Peak DC input",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/ix/bmw-ix-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "34 min",
+            "basis": "DC10–80% minimum charging time",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/ix/bmw-ix-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "22 kW",
+            "basis": "Included AC Charging Professional 22 kW in Australian M Sport configuration",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://configure.bmw.com.au/en_AU/configure/I20/42CF",
+              "https://www.bmw.com.au/en/models/bmw-i/ix/bmw-ix-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/ix/bmw-ix-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "500 L",
+            "basis": "Published rear luggage standard volume; measurement method/load line unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://media.adtorqueedge.com/new-cars/bmw-aus/brochures/BMW%20iX.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "5.1 s",
+            "basis": "0–100 km/h",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://media.adtorqueedge.com/new-cars/bmw-aus/brochures/BMW%20iX.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "300 kW",
+            "basis": "Motor output",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://media.adtorqueedge.com/new-cars/bmw-aus/brochures/BMW%20iX.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "AWD",
+            "basis": "Drivetrain",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://media.adtorqueedge.com/new-cars/bmw-aus/brochures/BMW%20iX.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,965 mm",
+            "basis": "length mm",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/ix/bmw-ix-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,970 mm",
+            "basis": "Body width excluding mirrors",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/ix/bmw-ix-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,695 mm",
+            "basis": "height mm",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/ix/bmw-ix-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "2,500 kg",
+            "basis": "Braked trailer up to 12% gradient",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/ix/bmw-ix-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km for private use; 5 years / 200,000 km for hire/reward, self-drive hire or instruction",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/content/dam/bmw/marketAU/bmw_com/topics/offers-and-services/service_parts/PDF/BMW_Supplementary_Warranty_Nov2022.pdf.asset.1667558576125.pdf.coredownload.pdf",
+              "https://www.bmw.com.au/en/service-portal.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/content/dam/bmw/marketAU/bmw_com/topics/offers-and-services/service_parts/PDF/BMW_Supplementary_Warranty_Nov2022.pdf.asset.1667558576125.pdf.coredownload.pdf",
+              "https://www.bmw.com.au/en/service-portal.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "reported_list_price_aud",
+          "label": "Reported list price aud",
+          "due": true,
+          "current": {
+            "value": "142,900 AUD",
+            "basis": "GoAuto reported launch before-on-road-costs price",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.goauto.com.au/new-models/bmw/ix/bmw-confirms-ix-local-price-and-spec/2025-02-20/95735.html"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "BMW's configurator (configure.bmw.com.au) opens on a 'Confirm your location' postcode form that must be filled before any price shows; no postcode was entered, and the page body is otherwise empty. Not rechecked; value retained, date unchanged."
+        }
+      ]
+    },
+    {
+      "variantId": "bmw_ix3_na5__32hr_50_xdrive_m_sport_package__20261010",
+      "vehicle": "BMW iX3 50 xDrive M Sport Package",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "new_stock_listed",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://media.adtorqueedge.com/new-cars/bmw-aus/brochures/BMW%20iX3.pdf",
+            "https://virtual.bmw.com.au/details/OAG-AD-WBA32HR070DA28380/2026-bmw-ix3-50-xdrive-new"
+          ]
+        },
+        "outcome": "unavailable",
+        "note": "BMW's configurator (configure.bmw.com.au) opens on a 'Confirm your location' postcode form that must be filled before any price shows; no postcode was entered, and the page body is otherwise empty. Not rechecked; value retained, date unchanged."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "122,358 AUD",
+            "basis": "Manufacturer recommended drive-away price, Victoria postcode 3000, Alpine White and no selected paid options",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://configure.bmw.com.au/en_AU/configure/NA5/32HR/FSGSW,P0300,S0230,S0248,S02VB,S02VD,S02XH,S0302,S0337,S03DP,S03M1,S03PE,S0408,S0413,S0420,S0428,S0494,S04FM,S04T2,S04T5,S04U6,S04UR,S0534,S0548,S05AT,S05AV,S05DN,S05YG,S0617,S061B,S0654,S0674,S06AC,S06AE,S06D5,S06NX,S07CK,S07EW,S0810,S0825,S0853,S088K,S08SM,S08SX,S08TG,S0925,S09T1,S09T2/SI0R07CK"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "BMW's configurator (configure.bmw.com.au) opens on a 'Confirm your location' postcode form that must be filled before any price shows; no postcode was entered, and the page body is otherwise empty. Not rechecked; value retained, date unchanged."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "805 km",
+            "basis": "WLTP maximum; published interval 678–805 km",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/x-series/ix3/bmw-ix3-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "108.7 kWh",
+            "basis": "Net / usable",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://media.adtorqueedge.com/new-cars/bmw-aus/brochures/BMW%20iX3.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "400 kW",
+            "basis": "Vehicle maximum DC intake",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://configure.bmw.com.au/en_AU/configure/NA5/32HR/FSGSW,P0300,S0230,S0248,S02VB,S02VD,S02XH,S0302,S0337,S03DP,S03M1,S03PE,S0408,S0413,S0420,S0428,S0494,S04FM,S04T2,S04T5,S04U6,S04UR,S0534,S0548,S05AT,S05AV,S05DN,S05YG,S0617,S061B,S0654,S0674,S06AC,S06AE,S06D5,S06NX,S07CK,S07EW,S0810,S0825,S0853,S088K,S08SM,S08SX,S08TG,S0925,S09T1,S09T2/SI0R07CK",
+              "https://www.bmw.com.au/en/models/x-series/ix3/bmw-ix3-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "21 min",
+            "basis": "DC 10–80%",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://configure.bmw.com.au/en_AU/configure/NA5/32HR/FSGSW,P0300,S0230,S0248,S02VB,S02VD,S02XH,S0302,S0337,S03DP,S03M1,S03PE,S0408,S0413,S0420,S0428,S0494,S04FM,S04T2,S04T5,S04U6,S04UR,S0534,S0548,S05AT,S05AV,S05DN,S05YG,S0617,S061B,S0654,S0674,S06AC,S06AE,S06D5,S06NX,S07CK,S07EW,S0810,S0825,S0853,S088K,S08SM,S08SX,S08TG,S0925,S09T1,S09T2/SI0R07CK",
+              "https://www.bmw.com.au/en/models/x-series/ix3/bmw-ix3-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "22 kW",
+            "basis": "Maximum AC onboard charge power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://configure.bmw.com.au/en_AU/configure/NA5/32HR/FSGSW,P0300,S0230,S0248,S02VB,S02VD,S02XH,S0302,S0337,S03DP,S03M1,S03PE,S0408,S0413,S0420,S0428,S0494,S04FM,S04T2,S04T5,S04U6,S04UR,S0534,S0548,S05AT,S05AV,S05DN,S05YG,S0617,S061B,S0654,S0674,S06AC,S06AE,S06D5,S06NX,S07CK,S07EW,S0810,S0825,S0853,S088K,S08SM,S08SX,S08TG,S0925,S09T1,S09T2/SI0R07CK",
+              "https://www.bmw.com.au/en/models/x-series/ix3/bmw-ix3-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://configure.bmw.com.au/en_AU/configure/NA5/32HR/FSGSW,P0300,S0230,S0248,S02VB,S02VD,S02XH,S0302,S0337,S03DP,S03M1,S03PE,S0408,S0413,S0420,S0428,S0494,S04FM,S04T2,S04T5,S04U6,S04UR,S0534,S0548,S05AT,S05AV,S05DN,S05YG,S0617,S061B,S0654,S0674,S06AC,S06AE,S06D5,S06NX,S07CK,S07EW,S0810,S0825,S0853,S088K,S08SM,S08SX,S08TG,S0925,S09T1,S09T2/SI0R07CK",
+              "https://www.bmw.com.au/en/models/x-series/ix3/bmw-ix3-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "520 L",
+            "basis": "Maker luggage capacity, rear seats in place; volume method not stated",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://configure.bmw.com.au/en_AU/configure/NA5/32HR/FSGSW,P0300,S0230,S0248,S02VB,S02VD,S02XH,S0302,S0337,S03DP,S03M1,S03PE,S0408,S0413,S0420,S0428,S0494,S04FM,S04T2,S04T5,S04U6,S04UR,S0534,S0548,S05AT,S05AV,S05DN,S05YG,S0617,S061B,S0654,S0674,S06AC,S06AE,S06D5,S06NX,S07CK,S07EW,S0810,S0825,S0853,S088K,S08SM,S08SX,S08TG,S0925,S09T1,S09T2/SI0R07CK",
+              "https://www.bmw.com.au/en/models/x-series/ix3/bmw-ix3-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "4.9 s",
+            "basis": "0–100 km/h",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/x-series/ix3/bmw-ix3-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "345 kW",
+            "basis": "Maximum system output",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/x-series/ix3/bmw-ix3-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "AWD",
+            "basis": "Drivetrain",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/x-series/ix3/bmw-ix3-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,782 mm",
+            "basis": "Body length",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://configure.bmw.com.au/en_AU/configure/NA5/32HR/FSGSW,P0300,S0230,S0248,S02VB,S02VD,S02XH,S0302,S0337,S03DP,S03M1,S03PE,S0408,S0413,S0420,S0428,S0494,S04FM,S04T2,S04T5,S04U6,S04UR,S0534,S0548,S05AT,S05AV,S05DN,S05YG,S0617,S061B,S0654,S0674,S06AC,S06AE,S06D5,S06NX,S07CK,S07EW,S0810,S0825,S0853,S088K,S08SM,S08SX,S08TG,S0925,S09T1,S09T2/SI0R07CK",
+              "https://www.bmw.com.au/en/models/x-series/ix3/bmw-ix3-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,895 mm",
+            "basis": "Body width, excluding mirrors",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://configure.bmw.com.au/en_AU/configure/NA5/32HR/FSGSW,P0300,S0230,S0248,S02VB,S02VD,S02XH,S0302,S0337,S03DP,S03M1,S03PE,S0408,S0413,S0420,S0428,S0494,S04FM,S04T2,S04T5,S04U6,S04UR,S0534,S0548,S05AT,S05AV,S05DN,S05YG,S0617,S061B,S0654,S0674,S06AC,S06AE,S06D5,S06NX,S07CK,S07EW,S0810,S0825,S0853,S088K,S08SM,S08SX,S08TG,S0925,S09T1,S09T2/SI0R07CK",
+              "https://www.bmw.com.au/en/models/x-series/ix3/bmw-ix3-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,635 mm",
+            "basis": "Body height",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://configure.bmw.com.au/en_AU/configure/NA5/32HR/FSGSW,P0300,S0230,S0248,S02VB,S02VD,S02XH,S0302,S0337,S03DP,S03M1,S03PE,S0408,S0413,S0420,S0428,S0494,S04FM,S04T2,S04T5,S04U6,S04UR,S0534,S0548,S05AT,S05AV,S05DN,S05YG,S0617,S061B,S0654,S0674,S06AC,S06AE,S06D5,S06NX,S07CK,S07EW,S0810,S0825,S0853,S088K,S08SM,S08SX,S08TG,S0925,S09T1,S09T2/SI0R07CK",
+              "https://www.bmw.com.au/en/models/x-series/ix3/bmw-ix3-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "2,000 kg",
+            "basis": "Braked trailer load",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://configure.bmw.com.au/en_AU/configure/NA5/32HR/FSGSW,P0300,S0230,S0248,S02VB,S02VD,S02XH,S0302,S0337,S03DP,S03M1,S03PE,S0408,S0413,S0420,S0428,S0494,S04FM,S04T2,S04T5,S04U6,S04UR,S0534,S0548,S05AT,S05AV,S05DN,S05YG,S0617,S061B,S0654,S0674,S06AC,S06AE,S06D5,S06NX,S07CK,S07EW,S0810,S0825,S0853,S088K,S08SM,S08SX,S08TG,S0925,S09T1,S09T2/SI0R07CK",
+              "https://media.adtorqueedge.com/new-cars/bmw-aus/brochures/BMW%20iX3.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km for private use; 5 years / 200,000 km for hire/reward, self-drive hire or instruction",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/content/dam/bmw/marketAU/bmw_com/topics/offers-and-services/service_parts/PDF/BMW_Supplementary_Warranty_Nov2022.pdf.asset.1667558576125.pdf.coredownload.pdf",
+              "https://www.bmw.com.au/en/service-portal.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/content/dam/bmw/marketAU/bmw_com/topics/offers-and-services/service_parts/PDF/BMW_Supplementary_Warranty_Nov2022.pdf.asset.1667558576125.pdf.coredownload.pdf",
+              "https://www.bmw.com.au/en/service-portal.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "driveaway_price_aud",
+          "label": "Manufacturer driveaway price",
+          "due": true,
+          "current": {
+            "value": "122,358 AUD",
+            "basis": "Manufacturer recommended drive-away price, Victoria postcode 3000, Alpine White and no selected paid options",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://configure.bmw.com.au/en_AU/configure/NA5/32HR/FSGSW,P0300,S0230,S0248,S02VB,S02VD,S02XH,S0302,S0337,S03DP,S03M1,S03PE,S0408,S0413,S0420,S0428,S0494,S04FM,S04T2,S04T5,S04U6,S04UR,S0534,S0548,S05AT,S05AV,S05DN,S05YG,S0617,S061B,S0654,S0674,S06AC,S06AE,S06D5,S06NX,S07CK,S07EW,S0810,S0825,S0853,S088K,S08SM,S08SX,S08TG,S0925,S09T1,S09T2/SI0R07CK"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "BMW's configurator (configure.bmw.com.au) opens on a 'Confirm your location' postcode form that must be filled before any price shows; no postcode was entered, and the page body is otherwise empty. Not rechecked; value retained, date unchanged."
+        },
+        {
+          "key": "reported_list_price_aud",
+          "label": "Reported list price aud",
+          "due": true,
+          "current": {
+            "value": "109,900",
+            "basis": "Reported Australian list price before on-road costs",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-reviews/2026-bmw-ix3-review"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "BMW's configurator (configure.bmw.com.au) opens on a 'Confirm your location' postcode form that must be filled before any price shows; no postcode was entered, and the page body is otherwise empty. Not rechecked; value retained, date unchanged."
+        }
+      ]
+    },
+    {
+      "variantId": "bmw_i5_sedan_current__62hg_edrive40__prod_202607",
+      "vehicle": "BMW i5 Sedan eDrive40",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.bmw.com.au/en/models/bmw-i/i5/bmw-i5-technical-data.html",
+            "https://media.adtorqueedge.com/new-cars/bmw-aus/brochures/BMW%205%20Series%20Sedan.pdf",
+            "https://usedcars.bmw.com.au/details/OAG-AD-WBY62HG0X0CY87239/2026-bmw-i5-edrive40-new"
+          ]
+        },
+        "outcome": "unavailable",
+        "note": "BMW's configurator (configure.bmw.com.au) opens on a 'Confirm your location' postcode form that must be filled before any price shows; no postcode was entered, and the page body is otherwise empty. Not rechecked; value retained, date unchanged."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "155,900 AUD",
+            "basis": "Reported list price before on-road costs",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/bmw/i5/2026/edrive40-m-sport/"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "BMW's configurator (configure.bmw.com.au) opens on a 'Confirm your location' postcode form that must be filled before any price shows; no postcode was entered, and the page body is otherwise empty. Not rechecked; value retained, date unchanged."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "550 km",
+            "basis": "ADR81/02",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://media.adtorqueedge.com/new-cars/bmw-aus/brochures/BMW%205%20Series%20Sedan.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "81.2 kWh",
+            "basis": "Net usable",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://media.adtorqueedge.com/new-cars/bmw-aus/brochures/BMW%205%20Series%20Sedan.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "205 kW",
+            "basis": "Peak DC input",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/i5/bmw-i5-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "30 min",
+            "basis": "Manufacturer minimum DC 10–80% time",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/i5/bmw-i5-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "22 kW",
+            "basis": "Maximum onboard AC acceptance",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://media.adtorqueedge.com/new-cars/bmw-aus/brochures/BMW%205%20Series%20Sedan.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/i5/bmw-i5-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "490 L",
+            "basis": "Manufacturer luggage capacity; VDA/SAE and loading-line method not stated",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/i5/bmw-i5-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "6 s",
+            "basis": "0–100 km/h",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/i5/bmw-i5-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "250 kW",
+            "basis": "Motor output",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/i5/bmw-i5-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Drivetrain",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/i5/bmw-i5-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "5,060 mm",
+            "basis": "Published exterior dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/i5/bmw-i5-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,900 mm",
+            "basis": "Body width excluding mirrors",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/i5/bmw-i5-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,515 mm",
+            "basis": "Published exterior dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/i5/bmw-i5-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,500 kg",
+            "basis": "Braked trailer load at up to 12% gradient",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/i5/bmw-i5-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km for private use; 5 years / 200,000 km for hire/reward, self-drive hire or instruction",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/content/dam/bmw/marketAU/bmw_com/topics/offers-and-services/service_parts/PDF/BMW_Supplementary_Warranty_Nov2022.pdf.asset.1667558576125.pdf.coredownload.pdf",
+              "https://www.bmw.com.au/en/service-portal.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/content/dam/bmw/marketAU/bmw_com/topics/offers-and-services/service_parts/PDF/BMW_Supplementary_Warranty_Nov2022.pdf.asset.1667558576125.pdf.coredownload.pdf",
+              "https://www.bmw.com.au/en/service-portal.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dealer_advertised_driveaway_aud",
+          "label": "Dealer advertised driveaway aud",
+          "due": true,
+          "current": {
+            "value": "179,900",
+            "basis": "Melbourne BMW exact NEW-advertised VIN WBY62HG0X0CY87239; 0 km",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://usedcars.bmw.com.au/details/OAG-AD-WBY62HG0X0CY87239/2026-bmw-i5-edrive40-new"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "BMW's configurator (configure.bmw.com.au) opens on a 'Confirm your location' postcode form that must be filled before any price shows; no postcode was entered, and the page body is otherwise empty. Not rechecked; value retained, date unchanged."
+        }
+      ]
+    },
+    {
+      "variantId": "bmw_i5_sedan_current__42hg_m60_xdrive__prod_202607",
+      "vehicle": "BMW i5 Sedan M60 xDrive",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.bmw.com.au/en/models/bmw-i/i5/bmw-i5-technical-data.html",
+            "https://media.adtorqueedge.com/new-cars/bmw-aus/brochures/BMW%205%20Series%20Sedan.pdf"
+          ]
+        },
+        "outcome": "unavailable",
+        "note": "BMW's configurator (configure.bmw.com.au) opens on a 'Confirm your location' postcode form that must be filled before any price shows; no postcode was entered, and the page body is otherwise empty. Not rechecked; value retained, date unchanged."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "215,900 AUD",
+            "basis": "Reported list price before on-road costs",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/bmw/i5/2026/m60-xdrive/d411e139-ebd6-4101-a3d1-b24c7df003cf/"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "BMW's configurator (configure.bmw.com.au) opens on a 'Confirm your location' postcode form that must be filled before any price shows; no postcode was entered, and the page body is otherwise empty. Not rechecked; value retained, date unchanged."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "506 km",
+            "basis": "ADR81/02",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://media.adtorqueedge.com/new-cars/bmw-aus/brochures/BMW%205%20Series%20Sedan.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "81.2 kWh",
+            "basis": "Net usable",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://media.adtorqueedge.com/new-cars/bmw-aus/brochures/BMW%205%20Series%20Sedan.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "205 kW",
+            "basis": "Peak DC input",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/i5/bmw-i5-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "30 min",
+            "basis": "Manufacturer minimum DC 10–80% time",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/i5/bmw-i5-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "22 kW",
+            "basis": "Maximum onboard AC acceptance",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://media.adtorqueedge.com/new-cars/bmw-aus/brochures/BMW%205%20Series%20Sedan.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/i5/bmw-i5-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "490 L",
+            "basis": "Manufacturer luggage capacity; VDA/SAE and loading-line method not stated",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/i5/bmw-i5-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "3.8 s",
+            "basis": "0–100 km/h",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/i5/bmw-i5-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "442 kW",
+            "basis": "Motor output",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/i5/bmw-i5-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "AWD",
+            "basis": "Drivetrain",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/i5/bmw-i5-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "5,060 mm",
+            "basis": "Published exterior dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/i5/bmw-i5-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,900 mm",
+            "basis": "Body width excluding mirrors",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/i5/bmw-i5-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,505 mm",
+            "basis": "Published exterior dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/i5/bmw-i5-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "2,000 kg",
+            "basis": "Braked trailer load at up to 12% gradient",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/i5/bmw-i5-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km for private use; 5 years / 200,000 km for hire/reward, self-drive hire or instruction",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/content/dam/bmw/marketAU/bmw_com/topics/offers-and-services/service_parts/PDF/BMW_Supplementary_Warranty_Nov2022.pdf.asset.1667558576125.pdf.coredownload.pdf",
+              "https://www.bmw.com.au/en/service-portal.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/content/dam/bmw/marketAU/bmw_com/topics/offers-and-services/service_parts/PDF/BMW_Supplementary_Warranty_Nov2022.pdf.asset.1667558576125.pdf.coredownload.pdf",
+              "https://www.bmw.com.au/en/service-portal.html"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "bmw_ix1_current__xdrive30_sport_collection__20261014",
+      "vehicle": "BMW iX1 xDrive30 Sport Collection",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.bmw.com.au/en/offers-and-services/promotions/sport-collection.html"
+          ]
+        },
+        "outcome": "unchanged",
+        "note": "Page offers Search Available Stock and Test Drive; ordered production available, stock may vary.",
+        "sourceIds": [
+          "refresh-bmw-2026-11-05-sport-collection"
+        ]
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "79,900 AUD",
+            "basis": "Manufacturer recommended national drive-away promotional price",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/offers-and-services/promotions/sport-collection.html"
+            ]
+          },
+          "outcome": "unchanged",
+          "note": "BMW's offer page still states from $79,900 drive away (delivered by 31.03.27).",
+          "sourceIds": [
+            "refresh-bmw-2026-11-05-sport-collection"
+          ]
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "410 km",
+            "basis": "ADR81/02",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://media.adtorqueedge.com/new-cars/bmw-aus/brochures/BMW%20iX1.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "67 kWh",
+            "basis": "Published capacity; gross/usable not stated",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://media.adtorqueedge.com/new-cars/bmw-aus/brochures/BMW%20iX1.pdf",
+              "https://www.bmw.com.au/en/models/bmw-i/ix1/bmw-ix1-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "130 kW",
+            "basis": "Vehicle maximum DC intake",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/ix1/bmw-ix1-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "29 min",
+            "basis": "DC 10–80%",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/ix1/bmw-ix1-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "22 kW",
+            "basis": "Sport Collection 22 kW maximum AC, reported by CarExpert",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://front-router.red.prod-syd.carexpert.com.au/bmw/ix1/2026/sport-collection/powertrain-and-performance"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/ix1/bmw-ix1-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "490 L",
+            "basis": "Maker luggage capacity, rear seats in place; volume method not stated",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/ix1/bmw-ix1-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "5.6 s",
+            "basis": "0–100 km/h",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/ix1/bmw-ix1-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "230 kW",
+            "basis": "Maker-advertised peak output for the named offer",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/offers-and-services/promotions/sport-collection.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "AWD",
+            "basis": "Drivetrain",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/offers-and-services/promotions/sport-collection.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,500 mm",
+            "basis": "Body length",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/ix1/bmw-ix1-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,845 mm",
+            "basis": "Body width, excluding mirrors",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/ix1/bmw-ix1-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,616 mm",
+            "basis": "Body height",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/ix1/bmw-ix1-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,200 kg",
+            "basis": "Braked trailer load",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/bmw-i/ix1/bmw-ix1-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km for private use; 5 years / 200,000 km for hire/reward, self-drive hire or instruction",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/content/dam/bmw/marketAU/bmw_com/topics/offers-and-services/service_parts/PDF/BMW_Supplementary_Warranty_Nov2022.pdf.asset.1667558576125.pdf.coredownload.pdf",
+              "https://www.bmw.com.au/en/service-portal.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/content/dam/bmw/marketAU/bmw_com/topics/offers-and-services/service_parts/PDF/BMW_Supplementary_Warranty_Nov2022.pdf.asset.1667558576125.pdf.coredownload.pdf",
+              "https://www.bmw.com.au/en/service-portal.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "driveaway_price_aud",
+          "label": "Driveaway price aud",
+          "due": true,
+          "current": {
+            "value": "79,900",
+            "basis": "Manufacturer recommended national drive-away promotional price",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/offers-and-services/promotions/sport-collection.html"
+            ]
+          },
+          "outcome": "unchanged",
+          "note": "BMW's offer page still states from $79,900 drive away (delivered by 31.03.27).",
+          "sourceIds": [
+            "refresh-bmw-2026-11-05-sport-collection"
+          ]
+        },
+        {
+          "key": "equipment_offer_excludes_enhancement",
+          "label": "Headline offer excludes Enhancement package and extras",
+          "due": true,
+          "current": {
+            "value": "true",
+            "basis": "Exact named Sport Collection offer",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/offers-and-services/promotions/sport-collection.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "equipment_offer_paint",
+          "label": "Headline-price paint",
+          "due": true,
+          "current": {
+            "value": "Alpine White",
+            "basis": "Exact named Sport Collection offer",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/offers-and-services/promotions/sport-collection.html"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "bmw_i5_touring_current__32hh_m60_xdrive__20261014",
+      "vehicle": "BMW i5 Touring M60 xDrive",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://configure.bmw.com.au/en_AU/configure/G61/32HH"
+          ]
+        },
+        "outcome": "unavailable",
+        "note": "BMW's configurator (configure.bmw.com.au) opens on a 'Confirm your location' postcode form that must be filled before any price shows; no postcode was entered, and the page body is otherwise empty. Not rechecked; value retained, date unchanged."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "236,211 AUD",
+            "basis": "Maker VIC 3000 recommended driveaway price; selected options $0",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://configure.bmw.com.au/en_AU/configure/G61/32HH"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "BMW's configurator (configure.bmw.com.au) opens on a 'Confirm your location' postcode form that must be filled before any price shows; no postcode was entered, and the page body is otherwise empty. Not rechecked; value retained, date unchanged."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "503 km",
+            "basis": "WLTP as labelled on technical page",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/m-series/i5-m60/bmw-i5-touring-m60-xdrive-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "81.2 kWh",
+            "basis": "Maker capacity, gross/net not stated",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/m-series/i5-m60/bmw-i5-touring-m60-xdrive-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "205 kW",
+            "basis": "Peak DC input",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://configure.bmw.com.au/en_AU/configure/G61/32HH"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "30 min",
+            "basis": "Manufacturer minimum DC 10–80% time",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://configure.bmw.com.au/en_AU/configure/G61/32HH"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "22 kW",
+            "basis": "Maximum onboard AC acceptance",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://configure.bmw.com.au/en_AU/configure/G61/32HH"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://configure.bmw.com.au/en_AU/configure/G61/32HH"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "570 L",
+            "basis": "Manufacturer luggage capacity; VDA/SAE and loading-line method not stated",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://configure.bmw.com.au/en_AU/configure/G61/32HH"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "3.9 s",
+            "basis": "0–100 km/h",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://configure.bmw.com.au/en_AU/configure/G61/32HH"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "442 kW",
+            "basis": "Motor output",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://configure.bmw.com.au/en_AU/configure/G61/32HH"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "AWD",
+            "basis": "Drivetrain",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/en/models/m-series/i5-m60/bmw-i5-touring-m60-xdrive-technical-data.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "5,060 mm",
+            "basis": "Published exterior dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://configure.bmw.com.au/en_AU/configure/G61/32HH"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,900 mm",
+            "basis": "Body width excluding mirrors",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://configure.bmw.com.au/en_AU/configure/G61/32HH"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,505 mm",
+            "basis": "Published exterior dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://configure.bmw.com.au/en_AU/configure/G61/32HH"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "2,000 kg",
+            "basis": "Braked trailer load at up to 12% gradient",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://configure.bmw.com.au/en_AU/configure/G61/32HH"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km for private use; 5 years / 200,000 km for hire/reward, self-drive hire or instruction",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/content/dam/bmw/marketAU/bmw_com/topics/offers-and-services/service_parts/PDF/BMW_Supplementary_Warranty_Nov2022.pdf.asset.1667558576125.pdf.coredownload.pdf",
+              "https://www.bmw.com.au/en/service-portal.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.bmw.com.au/content/dam/bmw/marketAU/bmw_com/topics/offers-and-services/service_parts/PDF/BMW_Supplementary_Warranty_Nov2022.pdf.asset.1667558576125.pdf.coredownload.pdf",
+              "https://www.bmw.com.au/en/service-portal.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "price_reported_list_aud",
+          "label": "Price reported list aud",
+          "due": true,
+          "current": {
+            "value": "219,900",
+            "basis": "Reported price before on-road costs",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-reviews/2026-bmw-i5-touring-review"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "BMW's configurator (configure.bmw.com.au) opens on a 'Confirm your location' postcode form that must be filled before any price shows; no postcode was entered, and the page body is otherwise empty. Not rechecked; value retained, date unchanged."
+        }
+      ]
+    }
+  ]
+}
