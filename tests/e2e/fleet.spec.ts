@@ -213,3 +213,12 @@ test("the chapter row in the sticky bar jumps, steps and marks the chapter in vi
     "A$63,963 in Sydney",
   );
 });
+
+test("the homepage sales footnote dates the prices and says a refresh is scheduled", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await expect(page.getByTestId("price-date-note")).toHaveText(
+    "Prices are as at 6 October 2026; a refresh is scheduled.",
+  );
+});

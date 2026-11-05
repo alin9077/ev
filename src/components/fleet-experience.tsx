@@ -10,7 +10,7 @@ import {
   useState,
 } from "react";
 import type { Fact, Pack, Research } from "@/lib/types";
-import { availabilityLabels, priorities } from "@/lib/config";
+import { availabilityLabels, priorities, site } from "@/lib/config";
 import { fleetSelection } from "@/lib/fleet";
 import { compareFacts } from "@/lib/compare";
 import {
@@ -188,7 +188,10 @@ export default function FleetExperience({
           The catalogue covers nine of Australia’s ten best-selling EVs for
           January–September 2026, plus the BYD Atto 3. The tenth-ranked Atto 1
           is not yet included.
-          <FootnoteRefs ids={["r5_au_ev_sales_sep2026"]} />
+          <FootnoteRefs ids={["r5_au_ev_sales_sep2026"]} />{" "}
+          <span data-testid="price-date-note">
+            Prices are as at {site.dateLabel}; a refresh is scheduled.
+          </span>
           <span className="fleet-swipe-hint">
             Swiping any row moves every chapter together.
           </span>
