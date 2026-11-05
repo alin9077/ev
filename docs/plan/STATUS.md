@@ -192,7 +192,7 @@ The one failure is `selling-points` (Cadillac, owner decision D0.3), inherited f
 `pnpm typecheck`, `pnpm lint`: pass. `pnpm validate`: pass after every packet.
 
 **Acceptance (WS2):**
-- `report:stale --as-of 2026-12-01` shows zero stale Tier 1 price claims for the 14 brands: **FAIL.** Of 147 on-sale versions in the 15 refreshed brands, 74 `price_aud` facts are stale (Volvo 16 of 18, MG 9 of 17, Hyundai 10 of 21, VW 8 of 13, BMW 8 of 9, Kia 7 of 27, IM 6 of 6, GAC 4 of 4, GWM 3 of 3, Zeekr 2 of 8, Jaecoo 1 of 1; BYD, Tesla, Geely, Toyota 0). Counting all price-like claims incl. equipment `driveaway_price` rows: 310.
+- `report:stale --as-of 2026-12-01` shows zero stale Tier 1 price claims for the 14 brands: **FAIL.** Of 158 on-sale versions in the 15 refreshed brands, 74 `price_aud` facts are stale (Volvo 16 of 18, MG 9 of 17, Hyundai 10 of 21, VW 8 of 13, BMW 8 of 9, Kia 7 of 27, IM 6 of 6, GAC 4 of 4, GWM 3 of 3, Zeekr 2 of 8, Jaecoo 1 of 1; BYD, Tesla, Geely, Toyota 0). Counting all price-like claims incl. equipment `driveaway_price` rows: 310.
 - `data/changes/2026-11.json` exists, validates against `data/changes/schema.json`, produced by `diff.ts`: **PASS** (test re-derives it from the committed snapshots).
 - `/changes` renders in Next, static and portable builds with the same entries: **Not yet verified** (build and e2e below).
 - Behavioural tests per change type; rechecked-unchanged gives no entry but moves the date: **PASS** (`tests/refresh-diff.test.ts`).
