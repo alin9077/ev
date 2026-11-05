@@ -1,0 +1,200 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-11-05",
+  "notes": [
+    "Every value was read from the cited primary page on checked_at (2026-11-05). Nothing is from memory, news or dealer pages.",
+    "status is one of: retrieved, not retrieved. A row marked not retrieved has null values; source_url is the page that was attempted and retrieval_note says why it failed. Pages behind a Cloudflare challenge were not bypassed.",
+    "Incentive status is the status the page itself states: open, closed, or unconfirmed (the page retrieved does not say whether the scheme is still running).",
+    "This file is dated reference data only. It never contains or implies a personal tax outcome."
+  ],
+  "fbt_exempt_price_cap": {
+    "status": "retrieved",
+    "value": 91661,
+    "currency": "AUD",
+    "basis": "Luxury car tax threshold for fuel-efficient vehicles; GST-inclusive LCT value, not a drive-away or on-road figure",
+    "financial_year": "2026-27",
+    "source_url": "https://www.ato.gov.au/tax-rates-and-codes/luxury-car-tax-rate-and-thresholds",
+    "rule_source_url": "https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/fringe-benefits-tax/types-of-fringe-benefits/fbt-on-cars-other-vehicles-parking-and-tolls/electric-cars-exemption",
+    "rule_note": "The ATO electric cars exemption page states the car's value must be below the LCT threshold for fuel efficient vehicles at first retail sale and any later sale; the value of the cap is the 2026-27 fuel-efficient figure on the ATO LCT page.",
+    "checked_at": "2026-11-05"
+  },
+  "lct_threshold_fuel_efficient": {
+    "status": "retrieved",
+    "value": 91661,
+    "currency": "AUD",
+    "financial_year": "2026-27",
+    "source_url": "https://www.ato.gov.au/tax-rates-and-codes/luxury-car-tax-rate-and-thresholds",
+    "checked_at": "2026-11-05"
+  },
+  "lct_threshold_other": {
+    "status": "retrieved",
+    "value": 80809,
+    "currency": "AUD",
+    "financial_year": "2026-27",
+    "source_url": "https://www.ato.gov.au/tax-rates-and-codes/luxury-car-tax-rate-and-thresholds",
+    "checked_at": "2026-11-05"
+  },
+  "fbt_exemption_rules": {
+    "status": "retrieved",
+    "summary": "Private use of an eligible electric car is exempt from FBT if the car is a battery electric or hydrogen fuel cell car designed to carry under one tonne and fewer than 9 passengers, was first both held and used on or after 1 July 2022, is used by a current employee or their associates, and luxury car tax has never been payable on it. Plug-in hybrids stopped counting as zero or low emissions vehicles from 1 April 2025, with limited continuing cases. The benefit is still reportable.",
+    "source_url": "https://www.ato.gov.au/businesses-and-organisations/hiring-and-paying-your-workers/fringe-benefits-tax/types-of-fringe-benefits/fbt-on-cars-other-vehicles-parking-and-tolls/electric-cars-exemption",
+    "page_last_updated": "2026-04-01",
+    "checked_at": "2026-11-05"
+  },
+  "state_incentives": [
+    {
+      "state": "NSW",
+      "name": "Electric Vehicle Rebate",
+      "type": "rebate",
+      "status": "closed",
+      "amount_or_rule": "$3,000 rebate for full battery electric and hydrogen fuel cell vehicles. The page says the rebate ends on 1 January 2024; buyers who purchased or placed a deposit before that date and were awaiting delivery remain eligible.",
+      "eligibility_price_cap": null,
+      "start": null,
+      "end": "2024-01-01",
+      "source_url": "https://www.revenue.nsw.gov.au/grants-schemes/electric-vehicle-rebate",
+      "checked_at": "2026-11-05",
+      "retrieval_note": "Start date is not stated on this page (it says only 'released in 2021'); the price cap is not stated on this page."
+    },
+    {
+      "state": "NSW",
+      "name": "Electric Vehicle Stamp Duty Refund",
+      "type": "stamp duty",
+      "status": "closed",
+      "amount_or_rule": "Refund of stamp duty paid on new or used full battery and hydrogen fuel cell electric vehicles with a dutiable value up to and including $78,000. The page says the refund ends on 1 January 2024, with the same deposit-before-that-date transition as the rebate.",
+      "eligibility_price_cap": 78000,
+      "start": "2021-09-01",
+      "end": "2024-01-01",
+      "source_url": "https://www.revenue.nsw.gov.au/grants-schemes/electric-vehicle-stamp-duty-refund",
+      "checked_at": "2026-11-05"
+    },
+    {
+      "state": "VIC",
+      "name": "Zero Emissions Vehicle (ZEV) Subsidy",
+      "type": "rebate",
+      "status": "unconfirmed",
+      "amount_or_rule": "$3,000 subsidy for new zero emissions vehicles, for more than 20,000 purchases from 2 May 2021 in stages. The page retrieved does not say whether the scheme is still open or has closed.",
+      "eligibility_price_cap": null,
+      "start": "2021-05-02",
+      "end": null,
+      "source_url": "https://www.solar.vic.gov.au/zero-emissions-vehicle-zev-subsidy",
+      "checked_at": "2026-11-05",
+      "retrieval_note": "Page was retrieved (marked updated 8 December 2025) but contains launch text only; no end date, closure notice or price cap. Treated as not applying until a page confirms it is open."
+    },
+    {
+      "state": "VIC",
+      "name": "Zero and low emission vehicle road user charge",
+      "type": "road user charge",
+      "status": "not retrieved",
+      "amount_or_rule": null,
+      "eligibility_price_cap": null,
+      "start": null,
+      "end": null,
+      "source_url": "https://www.vicroads.vic.gov.au/registrations/fees-and-charges/motor-vehicle-duty-fee",
+      "checked_at": "2026-11-05",
+      "retrieval_note": "VicRoads page returned HTTP 403 with a Cloudflare challenge (not bypassed). https://www.vic.gov.au/zero-and-low-emission-vehicle-road-user-charge returned 404. No current-year rate retrieved from a Victorian government page."
+    },
+    {
+      "state": "QLD",
+      "name": "Lower vehicle registration duty rate for electric vehicles",
+      "type": "stamp duty",
+      "status": "open",
+      "amount_or_rule": "Light electric vehicles (and hybrids of any cylinder count) pay vehicle registration duty at $2 for each $100 or part of $100 up to $100,000, and $4 for each $100 or part of $100 above $100,000. Dutiable value is the list price for a new vehicle. This is a lower rate in the duty table, not a rebate.",
+      "eligibility_price_cap": null,
+      "start": null,
+      "end": "open",
+      "source_url": "https://www.qld.gov.au/transport/registration/fees/duty/rates",
+      "checked_at": "2026-11-05",
+      "retrieval_note": "Page last updated 22 March 2023, last reviewed 14 August 2026. Start date not stated."
+    },
+    {
+      "state": "WA",
+      "name": "Zero Emission Vehicle (ZEV) Rebate",
+      "type": "rebate",
+      "status": "closed",
+      "amount_or_rule": "$3,500 rebate for zero emission vehicles powered solely by batteries or hydrogen fuel cells. The page says the scheme closed at midnight on Saturday 10 May 2025 and applications are no longer accepted.",
+      "eligibility_price_cap": null,
+      "start": "2022-05",
+      "end": "2025-05-10",
+      "source_url": "https://www.transport.wa.gov.au/projects-planning/electric-vehicles/zero-emission-rebate",
+      "checked_at": "2026-11-05",
+      "retrieval_note": "Page updated 22 August 2025. The page text retrieved does not state a dutiable-value cap, so none is recorded."
+    },
+    {
+      "state": "SA",
+      "name": "South Australian electric vehicle incentives",
+      "type": "rebate",
+      "status": "not retrieved",
+      "amount_or_rule": null,
+      "eligibility_price_cap": null,
+      "start": null,
+      "end": null,
+      "source_url": "https://treasury.sa.gov.au/Growing-South-Australia/incentives-for-electric-vehicles",
+      "checked_at": "2026-11-05",
+      "retrieval_note": "treasury.sa.gov.au, revenuesa.sa.gov.au (stamp-duty-vehicles, rates) and sa.gov.au registration-and-licence-concessions all returned HTTP 403 with a Cloudflare challenge (not bypassed)."
+    },
+    {
+      "state": "TAS",
+      "name": "Duty exemption for electric and hydrogen fuel-cell vehicles",
+      "type": "stamp duty",
+      "status": "closed",
+      "amount_or_rule": "Duty exemption for light electric or hydrogen fuel-cell vehicles applied from 1 July 2021 to 30 June 2023, and from 1 July 2023 but before 1 January 2024 only for new vehicles whose contract for sale was entered into before 25 May 2023.",
+      "eligibility_price_cap": null,
+      "start": "2021-07-01",
+      "end": "2024-01-01",
+      "source_url": "https://www.sro.tas.gov.au/motor-vehicle-duty/exemptions/electric-and-hydrogen-fuel-cell-vehicles",
+      "checked_at": "2026-11-05",
+      "retrieval_note": "End date is exclusive ('before 1 January 2024'). Page last published 12/07/2023."
+    },
+    {
+      "state": "ACT",
+      "name": "Lower motor vehicle duty for lower-emissions vehicles",
+      "type": "stamp duty",
+      "status": "open",
+      "amount_or_rule": "The ACT Government page lists 'lower motor vehicle duty (also known as stamp duty) for lower-emissions vehicles' as a ZEV purchase incentive, and says stamp duty charges for the purchase of new and used ZEVs come into effect from 1 September 2025. The amount is not stated on this page.",
+      "eligibility_price_cap": null,
+      "start": null,
+      "end": "open",
+      "source_url": "https://www.climatechoices.act.gov.au/transport-and-travel/zero-emissions-vehicles",
+      "checked_at": "2026-11-05",
+      "retrieval_note": "Rate not on this page; it points to a separate motor vehicle duty page that was not retrieved. Treat the amount as unknown."
+    },
+    {
+      "state": "ACT",
+      "name": "Emissions-based registration",
+      "type": "registration",
+      "status": "open",
+      "amount_or_rule": "Lower registration fees for lower-emissions vehicles through the ACT's emissions-based registration. The amount is not stated on this page.",
+      "eligibility_price_cap": null,
+      "start": null,
+      "end": "open",
+      "source_url": "https://www.climatechoices.act.gov.au/transport-and-travel/zero-emissions-vehicles",
+      "checked_at": "2026-11-05"
+    },
+    {
+      "state": "ACT",
+      "name": "Sustainable Household Scheme low-interest loan",
+      "type": "loan",
+      "status": "open",
+      "amount_or_rule": "Up to $20,000 low-interest loans to buy a ZEV under the Sustainable Household Scheme, eligible households only.",
+      "eligibility_price_cap": null,
+      "start": null,
+      "end": "open",
+      "source_url": "https://www.climatechoices.act.gov.au/transport-and-travel/zero-emissions-vehicles",
+      "checked_at": "2026-11-05",
+      "retrieval_note": "Type 'loan' is outside the four types named in the plan (rebate, stamp duty, registration, road user charge); recorded because the ACT page lists it as a purchase incentive."
+    },
+    {
+      "state": "NT",
+      "name": "Northern Territory electric vehicle registration and stamp duty concessions",
+      "type": "stamp duty",
+      "status": "not retrieved",
+      "amount_or_rule": null,
+      "eligibility_price_cap": null,
+      "start": null,
+      "end": null,
+      "source_url": "https://nt.gov.au/driving/rego/getting-an-nt-registration/get-electric-vehicle-registration-and-stamp-duty-concessions",
+      "checked_at": "2026-11-05",
+      "retrieval_note": "nt.gov.au returned HTTP 403 with a Cloudflare challenge; treasury.nt.gov.au/dtf/territory-revenue-office/stamp-duty and its 'Stamp duty concession on electric vehicles' page returned the same challenge (not bypassed)."
+    }
+  ]
+}
