@@ -1,0 +1,1204 @@
+{
+  "schema": "roadmark-refresh-findings-v1",
+  "brand": "Geely",
+  "asOf": "2026-11-05",
+  "reviewedAt": "2026-11-05",
+  "reviewedBy": "Roadmark WS2 refresh (Claude Code worker), Geely",
+  "sources": [
+    {
+      "id": "refresh-geely-2026-11-05-build-ex2",
+      "url": "https://www.geely.com.au/build/geely-ex2?model=starray-em-i",
+      "title": "Build Your Geely EX2 (Geely Australia)",
+      "publisher": "Geely Australia",
+      "source_type": "official_configurator",
+      "published_date": null,
+      "accessed_date": "2026-11-05",
+      "market": "AU",
+      "supports": "Opened 2026-11-05. Choose your variant: EX2 Complete $26,490, EX2 Inspire $30,990. The build page does not itself state whether the figures are before or after on-road costs; it offers Book a Test Drive and Request a Quote, not an order. Offer banner: 0.68% p.a. comparison rate finance, ends 30 November 2026."
+    },
+    {
+      "id": "refresh-geely-2026-11-05-build-ex5",
+      "url": "https://www.geely.com.au/build/geely-ex5?model=geely-ex5",
+      "title": "Build Your Geely EX5 (Geely Australia)",
+      "publisher": "Geely Australia",
+      "source_type": "official_configurator",
+      "published_date": null,
+      "accessed_date": "2026-11-05",
+      "market": "AU",
+      "supports": "Opened 2026-11-05. Choose your variant: EX5 Complete $41,990, EX5 Inspire $45,990. The build page does not itself state the price basis; it offers Book a Test Drive and Request a Quote, not an order."
+    },
+    {
+      "id": "refresh-geely-2026-11-05-ex2-release",
+      "url": "https://www.geelyessendon.com.au/news/geely-ex2-adds-five-star-ancap-safety-rating-to-its-credentials/",
+      "title": "Geely EX2 adds five-star ANCAP safety rating (media release as republished)",
+      "publisher": "Geely Australia (media release republished by Geely Essendon)",
+      "source_type": "primary_manufacturer_content_mirror",
+      "published_date": null,
+      "accessed_date": "2026-11-05",
+      "market": "AU",
+      "supports": "Re-opened 2026-11-05. States the EX2 is priced from $26,490 plus on-road costs in the Complete grade and from $30,990 plus on-road costs in the Inspire grade, with a table showing $26,490 RRP and $30,990 RRP."
+    }
+  ],
+  "versions": [
+    {
+      "variantId": "geely_ex5__complete_extended_range__1",
+      "vehicle": "Geely EX5 Complete Extended Range",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "new_stock_listed",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.geelyorange.com.au/models/ex5",
+            "https://www.geelyblacktown.com.au/stock/details/OAG-AD-26066439/2026-geely-ex5-new"
+          ]
+        },
+        "outcome": "unchanged",
+        "sourceIds": [
+          "refresh-geely-2026-11-05-build-ex5"
+        ],
+        "note": "Variant still listed on the build page with test-drive and quote requests only; order acceptance and delivery remain unconfirmed."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "41,990 AUD",
+            "basis": "Reported by CarExpert · before on-road costs",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-news/2026-geely-ex5-price-and-specs-mid-size-electric-suv-gets-bigger-battery"
+            ]
+          },
+          "outcome": "unchanged",
+          "sourceIds": [
+            "refresh-geely-2026-11-05-build-ex5",
+            "m1-geely-2026-10-14-ex5_price_current"
+          ],
+          "note": "Geely's own build page shows the same figure with no stated basis, so the grade stays Reported on the basis recorded from CarExpert.",
+          "reason": "Rechecked 2026-11-05: Geely's build page shows the same figure; it states no price basis, so the grade and the CarExpert 'before on-road costs' basis are carried forward unchanged."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "475 km",
+            "basis": "WLTP",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://tddashboard.s3.ap-southeast-2.amazonaws.com/1773386427-geely-ex5-brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "68.39 kWh",
+            "basis": "Maker battery capacity; gross/usable not specified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://tddashboard.s3.ap-southeast-2.amazonaws.com/1773386427-geely-ex5-brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "DC peak charging",
+          "due": false,
+          "current": {
+            "value": "100 kW",
+            "basis": "Maximum DC charging capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://tddashboard.s3.ap-southeast-2.amazonaws.com/1773386427-geely-ex5-brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "10–80%",
+            "grade": "not_published",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://tddashboard.s3.ap-southeast-2.amazonaws.com/1773386427-geely-ex5-brochure.pdf",
+              "https://evcentral.com.au/cars/geely/ex5/",
+              "https://evcentral.com.au/how-long-does-it-take-to-drive-1000km-in-an-ev-every-electric-car-ranked-for-road-trips/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maximum AC charging capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://tddashboard.s3.ap-southeast-2.amazonaws.com/1773386427-geely-ex5-brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating positions",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsguide.com.au/geely/ex5/price/2026/complete-extended-range"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot volume",
+          "due": false,
+          "current": {
+            "value": "302 L",
+            "basis": "Maker luggage volume, second row up; VDA/SAE method unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://tddashboard.s3.ap-southeast-2.amazonaws.com/1773386427-geely-ex5-brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "7.4 s",
+            "basis": "Manufacturer 0–100 km/h claim",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://tddashboard.s3.ap-southeast-2.amazonaws.com/1773386427-geely-ex5-brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "160 kW",
+            "basis": "Maximum electric motor power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://tddashboard.s3.ap-southeast-2.amazonaws.com/1773386427-geely-ex5-brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "FWD",
+            "basis": "Driven wheels",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://tddashboard.s3.ap-southeast-2.amazonaws.com/1773386427-geely-ex5-brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,615 mm",
+            "basis": "Manufacturer body length",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://tddashboard.s3.ap-southeast-2.amazonaws.com/1773386427-geely-ex5-brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,901 mm",
+            "basis": "Body width excluding mirrors, maker dimensional drawing",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://tddashboard.s3.ap-southeast-2.amazonaws.com/1773386427-geely-ex5-brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,670 mm",
+            "basis": "Manufacturer body height",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://tddashboard.s3.ap-southeast-2.amazonaws.com/1773386427-geely-ex5-brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "0 kg",
+            "basis": "Published Australian braked towing limit",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://zecar.com/reviews/geely-ex5-750kg-tow-rating-new-variant",
+              "https://www.carsguide.com.au/geely/ex5/towing-capacity"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "7 years / unlimited kilometres (private use)",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://cdn.mattaki.com/geely/page-builder/content-pieces/ff71d841-5e73-4aa1-85d4-16d9d8acac15/42d864f3-9729-4141-bbbe-918f6d9d428b.pdf",
+              "https://www.geelyessendon.com.au/service/m/warranty/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / unlimited kilometres (private use); 70% capacity threshold",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://cdn.mattaki.com/geely/page-builder/content-pieces/ff71d841-5e73-4aa1-85d4-16d9d8acac15/42d864f3-9729-4141-bbbe-918f6d9d428b.pdf",
+              "https://www.geelyessendon.com.au/service/m/warranty/"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "geely_ex5__inspire_extended_range__2",
+      "vehicle": "Geely EX5 Inspire Extended Range",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "new_stock_listed",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.geelyorange.com.au/models/ex5",
+            "https://www.altogroup.com.au/stock/details/OAG-AD-26373016/2026-geely-ex5-new"
+          ]
+        },
+        "outcome": "unchanged",
+        "sourceIds": [
+          "refresh-geely-2026-11-05-build-ex5"
+        ],
+        "note": "Variant still listed on the build page with test-drive and quote requests only; order acceptance and delivery remain unconfirmed."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "45,990 AUD",
+            "basis": "Reported by CarExpert · before on-road costs",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-news/2026-geely-ex5-price-and-specs-mid-size-electric-suv-gets-bigger-battery"
+            ]
+          },
+          "outcome": "unchanged",
+          "sourceIds": [
+            "refresh-geely-2026-11-05-build-ex5",
+            "m1-geely-2026-10-14-ex5_price_current"
+          ],
+          "note": "Geely's own build page shows the same figure with no stated basis, so the grade stays Reported on the basis recorded from CarExpert.",
+          "reason": "Rechecked 2026-11-05: Geely's build page shows the same figure; it states no price basis, so the grade and the CarExpert 'before on-road costs' basis are carried forward unchanged."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "450 km",
+            "basis": "WLTP",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://tddashboard.s3.ap-southeast-2.amazonaws.com/1773386427-geely-ex5-brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "68.39 kWh",
+            "basis": "Maker battery capacity; gross/usable not specified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://tddashboard.s3.ap-southeast-2.amazonaws.com/1773386427-geely-ex5-brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "DC peak charging",
+          "due": false,
+          "current": {
+            "value": "100 kW",
+            "basis": "Maximum DC charging capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://tddashboard.s3.ap-southeast-2.amazonaws.com/1773386427-geely-ex5-brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "10–80%",
+            "grade": "not_published",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://tddashboard.s3.ap-southeast-2.amazonaws.com/1773386427-geely-ex5-brochure.pdf",
+              "https://evcentral.com.au/cars/geely/ex5/",
+              "https://evcentral.com.au/how-long-does-it-take-to-drive-1000km-in-an-ev-every-electric-car-ranked-for-road-trips/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maximum AC charging capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://tddashboard.s3.ap-southeast-2.amazonaws.com/1773386427-geely-ex5-brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating positions",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsguide.com.au/geely/ex5/price/2026/complete-extended-range"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot volume",
+          "due": false,
+          "current": {
+            "value": "302 L",
+            "basis": "Maker luggage volume, second row up; VDA/SAE method unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://tddashboard.s3.ap-southeast-2.amazonaws.com/1773386427-geely-ex5-brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "7.6 s",
+            "basis": "Manufacturer 0–100 km/h claim",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://tddashboard.s3.ap-southeast-2.amazonaws.com/1773386427-geely-ex5-brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "160 kW",
+            "basis": "Maximum electric motor power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://tddashboard.s3.ap-southeast-2.amazonaws.com/1773386427-geely-ex5-brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "FWD",
+            "basis": "Driven wheels",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://tddashboard.s3.ap-southeast-2.amazonaws.com/1773386427-geely-ex5-brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,615 mm",
+            "basis": "Manufacturer body length",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://tddashboard.s3.ap-southeast-2.amazonaws.com/1773386427-geely-ex5-brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,901 mm",
+            "basis": "Body width excluding mirrors, maker dimensional drawing",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://tddashboard.s3.ap-southeast-2.amazonaws.com/1773386427-geely-ex5-brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,670 mm",
+            "basis": "Manufacturer body height",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://tddashboard.s3.ap-southeast-2.amazonaws.com/1773386427-geely-ex5-brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "0 kg",
+            "basis": "Published Australian braked towing limit",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://zecar.com/reviews/geely-ex5-750kg-tow-rating-new-variant",
+              "https://www.carsguide.com.au/geely/ex5/towing-capacity"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "7 years / unlimited kilometres (private use)",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://cdn.mattaki.com/geely/page-builder/content-pieces/ff71d841-5e73-4aa1-85d4-16d9d8acac15/42d864f3-9729-4141-bbbe-918f6d9d428b.pdf",
+              "https://www.geelyessendon.com.au/service/m/warranty/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / unlimited kilometres (private use); 70% capacity threshold",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://cdn.mattaki.com/geely/page-builder/content-pieces/ff71d841-5e73-4aa1-85d4-16d9d8acac15/42d864f3-9729-4141-bbbe-918f6d9d428b.pdf",
+              "https://www.geelyessendon.com.au/service/m/warranty/"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "geely_ex2_launch__complete__20261010",
+      "vehicle": "Geely EX2 Complete",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://geelyfrankston.com.au/models/ex2"
+          ]
+        },
+        "outcome": "unchanged",
+        "sourceIds": [
+          "refresh-geely-2026-11-05-build-ex2"
+        ],
+        "note": "Variant still listed on the build page with test-drive and quote requests only; order acceptance and delivery remain unconfirmed."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "26,490 AUD",
+            "basis": "Manufacturer RRP before on-road costs",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.geelyessendon.com.au/news/geely-ex2-adds-five-star-ancap-safety-rating-to-its-credentials/"
+            ]
+          },
+          "outcome": "unchanged",
+          "sourceIds": [
+            "refresh-geely-2026-11-05-build-ex2",
+            "refresh-geely-2026-11-05-ex2-release"
+          ],
+          "note": "Geely's build page shows the same figure; the republished media release still states it is plus on-road costs (RRP)."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "252 km",
+            "basis": "WLTP",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://a-ap.storyblok.com/f/3000753/x/42e212dc2c/ex2-spec-sheet-20260717.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "35.35 kWh",
+            "basis": "Maker battery capacity; gross/usable not specified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://a-ap.storyblok.com/f/3000753/x/42e212dc2c/ex2-spec-sheet-20260717.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "DC peak charging",
+          "due": false,
+          "current": {
+            "value": "60 kW",
+            "basis": "Maximum DC charging capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://a-ap.storyblok.com/f/3000753/x/42e212dc2c/ex2-spec-sheet-20260717.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "10–80%",
+            "grade": "not_published",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://a-ap.storyblok.com/f/3000753/x/42e212dc2c/ex2-spec-sheet-20260717.pdf",
+              "https://www.chasingcars.com.au/reviews/small-cars/geely-ex2-inspire-2026-review/",
+              "https://evcentral.com.au/cars/geely/ex2/",
+              "https://evcentral.com.au/how-long-does-it-take-to-drive-1000km-in-an-ev-every-electric-car-ranked-for-road-trips/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "6.6 kW",
+            "basis": "Maximum AC charging capacity",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://a-ap.storyblok.com/f/3000753/x/42e212dc2c/ex2-spec-sheet-20260717.pdf",
+              "https://www.geelyessendon.com.au/news/geely-ex2-adds-five-star-ancap-safety-rating-to-its-credentials/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating positions",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-news/2026-geely-ex2-price-and-specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot volume",
+          "due": false,
+          "current": {
+            "value": "375 L",
+            "basis": "Maker luggage volume, second row up; VDA/SAE method unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://a-ap.storyblok.com/f/3000753/x/42e212dc2c/ex2-spec-sheet-20260717.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "14.2 s",
+            "basis": "Manufacturer 0–100 km/h claim",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://a-ap.storyblok.com/f/3000753/x/42e212dc2c/ex2-spec-sheet-20260717.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "60 kW",
+            "basis": "Maximum electric motor power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://a-ap.storyblok.com/f/3000753/x/42e212dc2c/ex2-spec-sheet-20260717.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Driven wheels",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://a-ap.storyblok.com/f/3000753/x/42e212dc2c/ex2-spec-sheet-20260717.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,135 mm",
+            "basis": "Manufacturer body length",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://a-ap.storyblok.com/f/3000753/x/42e212dc2c/ex2-spec-sheet-20260717.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,805 mm",
+            "basis": "Body width excluding mirrors, maker dimensional drawing",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://a-ap.storyblok.com/f/3000753/x/42e212dc2c/ex2-spec-sheet-20260717.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,580 mm",
+            "basis": "Manufacturer body height",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://a-ap.storyblok.com/f/3000753/x/42e212dc2c/ex2-spec-sheet-20260717.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "0 kg",
+            "basis": "Published Australian braked towing limit",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://thedriven.io/2026/06/21/geelys-best-selling-ex2-electric-hatchback-approved-in-australia-ahead-of-local-launch/",
+              "https://www.carsguide.com.au/geely/ex2"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "7 years / unlimited kilometres (private use)",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://cdn.mattaki.com/geely/page-builder/content-pieces/ff71d841-5e73-4aa1-85d4-16d9d8acac15/42d864f3-9729-4141-bbbe-918f6d9d428b.pdf",
+              "https://www.geelyessendon.com.au/service/m/warranty/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / unlimited kilometres (private use); 70% capacity threshold",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://cdn.mattaki.com/geely/page-builder/content-pieces/ff71d841-5e73-4aa1-85d4-16d9d8acac15/42d864f3-9729-4141-bbbe-918f6d9d428b.pdf",
+              "https://www.geelyessendon.com.au/service/m/warranty/"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "geely_ex2_launch__inspire__20261010",
+      "vehicle": "Geely EX2 Inspire",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "new_stock_listed",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://geelyfrankston.com.au/models/ex2"
+          ]
+        },
+        "outcome": "unchanged",
+        "sourceIds": [
+          "refresh-geely-2026-11-05-build-ex2"
+        ],
+        "note": "Variant still listed on the build page with test-drive and quote requests only; order acceptance and delivery remain unconfirmed."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "30,990 AUD",
+            "basis": "Manufacturer RRP before on-road costs",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.geelyessendon.com.au/news/geely-ex2-adds-five-star-ancap-safety-rating-to-its-credentials/"
+            ]
+          },
+          "outcome": "unchanged",
+          "sourceIds": [
+            "refresh-geely-2026-11-05-build-ex2",
+            "refresh-geely-2026-11-05-ex2-release"
+          ],
+          "note": "Geely's build page shows the same figure; the republished media release still states it is plus on-road costs (RRP)."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "345 km",
+            "basis": "WLTP",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://a-ap.storyblok.com/f/3000753/x/42e212dc2c/ex2-spec-sheet-20260717.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "47.14 kWh",
+            "basis": "Maker battery capacity; gross/usable not specified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://a-ap.storyblok.com/f/3000753/x/42e212dc2c/ex2-spec-sheet-20260717.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "DC peak charging",
+          "due": false,
+          "current": {
+            "value": "80 kW",
+            "basis": "Maximum DC charging capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://a-ap.storyblok.com/f/3000753/x/42e212dc2c/ex2-spec-sheet-20260717.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "10–80%",
+            "grade": "not_published",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://a-ap.storyblok.com/f/3000753/x/42e212dc2c/ex2-spec-sheet-20260717.pdf",
+              "https://www.chasingcars.com.au/reviews/small-cars/geely-ex2-inspire-2026-review/",
+              "https://evcentral.com.au/cars/geely/ex2/",
+              "https://evcentral.com.au/how-long-does-it-take-to-drive-1000km-in-an-ev-every-electric-car-ranked-for-road-trips/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "6.6 kW",
+            "basis": "Maximum AC charging capacity",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://a-ap.storyblok.com/f/3000753/x/42e212dc2c/ex2-spec-sheet-20260717.pdf",
+              "https://www.geelyessendon.com.au/news/geely-ex2-adds-five-star-ancap-safety-rating-to-its-credentials/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating positions",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-news/2026-geely-ex2-price-and-specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot volume",
+          "due": false,
+          "current": {
+            "value": "375 L",
+            "basis": "Maker luggage volume, second row up; VDA/SAE method unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://a-ap.storyblok.com/f/3000753/x/42e212dc2c/ex2-spec-sheet-20260717.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "11.5 s",
+            "basis": "Manufacturer 0–100 km/h claim",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://a-ap.storyblok.com/f/3000753/x/42e212dc2c/ex2-spec-sheet-20260717.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "85 kW",
+            "basis": "Maximum electric motor power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://a-ap.storyblok.com/f/3000753/x/42e212dc2c/ex2-spec-sheet-20260717.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Driven wheels",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://a-ap.storyblok.com/f/3000753/x/42e212dc2c/ex2-spec-sheet-20260717.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,135 mm",
+            "basis": "Manufacturer body length",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://a-ap.storyblok.com/f/3000753/x/42e212dc2c/ex2-spec-sheet-20260717.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,805 mm",
+            "basis": "Body width excluding mirrors, maker dimensional drawing",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://a-ap.storyblok.com/f/3000753/x/42e212dc2c/ex2-spec-sheet-20260717.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,580 mm",
+            "basis": "Manufacturer body height",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://a-ap.storyblok.com/f/3000753/x/42e212dc2c/ex2-spec-sheet-20260717.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "0 kg",
+            "basis": "Published Australian braked towing limit",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://thedriven.io/2026/06/21/geelys-best-selling-ex2-electric-hatchback-approved-in-australia-ahead-of-local-launch/",
+              "https://www.carsguide.com.au/geely/ex2"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "7 years / unlimited kilometres (private use)",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://cdn.mattaki.com/geely/page-builder/content-pieces/ff71d841-5e73-4aa1-85d4-16d9d8acac15/42d864f3-9729-4141-bbbe-918f6d9d428b.pdf",
+              "https://www.geelyessendon.com.au/service/m/warranty/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / unlimited kilometres (private use); 70% capacity threshold",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://cdn.mattaki.com/geely/page-builder/content-pieces/ff71d841-5e73-4aa1-85d4-16d9d8acac15/42d864f3-9729-4141-bbbe-918f6d9d428b.pdf",
+              "https://www.geelyessendon.com.au/service/m/warranty/"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    }
+  ]
+}

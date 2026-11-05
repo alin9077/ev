@@ -1,0 +1,785 @@
+{
+  "schemaVersion": 1,
+  "id": "refresh-geely-2026-11-05",
+  "brand": "Geely",
+  "reviewedAt": "2026-11-05",
+  "reviewedBy": "Roadmark WS2 refresh (Claude Code worker), Geely",
+  "sources": [
+    {
+      "id": "refresh-geely-2026-11-05-build-ex2",
+      "url": "https://www.geely.com.au/build/geely-ex2?model=starray-em-i",
+      "title": "Build Your Geely EX2 (Geely Australia)",
+      "publisher": "Geely Australia",
+      "source_type": "official_configurator",
+      "published_date": null,
+      "accessed_date": "2026-11-05",
+      "market": "AU",
+      "supports": "Opened 2026-11-05. Choose your variant: EX2 Complete $26,490, EX2 Inspire $30,990. The build page does not itself state whether the figures are before or after on-road costs; it offers Book a Test Drive and Request a Quote, not an order. Offer banner: 0.68% p.a. comparison rate finance, ends 30 November 2026."
+    },
+    {
+      "id": "refresh-geely-2026-11-05-build-ex5",
+      "url": "https://www.geely.com.au/build/geely-ex5?model=geely-ex5",
+      "title": "Build Your Geely EX5 (Geely Australia)",
+      "publisher": "Geely Australia",
+      "source_type": "official_configurator",
+      "published_date": null,
+      "accessed_date": "2026-11-05",
+      "market": "AU",
+      "supports": "Opened 2026-11-05. Choose your variant: EX5 Complete $41,990, EX5 Inspire $45,990. The build page does not itself state the price basis; it offers Book a Test Drive and Request a Quote, not an order."
+    },
+    {
+      "id": "refresh-geely-2026-11-05-ex2-release",
+      "url": "https://www.geelyessendon.com.au/news/geely-ex2-adds-five-star-ancap-safety-rating-to-its-credentials/",
+      "title": "Geely EX2 adds five-star ANCAP safety rating (media release as republished)",
+      "publisher": "Geely Australia (media release republished by Geely Essendon)",
+      "source_type": "primary_manufacturer_content_mirror",
+      "published_date": null,
+      "accessed_date": "2026-11-05",
+      "market": "AU",
+      "supports": "Re-opened 2026-11-05. States the EX2 is priced from $26,490 plus on-road costs in the Complete grade and from $30,990 plus on-road costs in the Inspire grade, with a table showing $26,490 RRP and $30,990 RRP."
+    },
+    {
+      "id": "m1-geely-2026-10-14-ex2_guide",
+      "url": "https://a-ap.storyblok.com/f/3000753/x/42e212dc2c/ex2-spec-sheet-20260717.pdf",
+      "title": "EX2 Specification Guide, 17 July 2026",
+      "publisher": "Geely Auto Australia",
+      "source_type": "primary_manufacturer_specification",
+      "published_date": null,
+      "accessed_date": "2026-10-14",
+      "market": "AU",
+      "supports": "Source carries July 2026 footer; precise batteries 35.35/47.14 and AC 6.6. No DC charge-time, seat-count or towing-limit row. Gross/net battery and VDA/SAE boot method not specified.",
+      "capture_sha256": "6e22e1b1bef27ad5ab922f1c93fe8dd062141a36d87bf5161f0ff1c12d043862",
+      "capture_locator": "sources/ex2-20260717-maker-guide.pdf"
+    },
+    {
+      "id": "m1-geely-2026-10-14-ex5_price_current",
+      "url": "https://www.carexpert.com.au/car-news/2026-geely-ex5-price-and-specs-mid-size-electric-suv-gets-bigger-battery",
+      "title": "2026 Geely EX5 price and specs: Mid-size electric SUV gets bigger battery, 2 March 2026",
+      "publisher": "CarExpert",
+      "source_type": "reputable_au_motoring_publication",
+      "published_date": null,
+      "accessed_date": "2026-10-14",
+      "market": "AU",
+      "supports": "Explicit current prices 41990/45990 before on-roads; headline and table establish 68.39 kWh update, despite typo 2025 in Inspire price row. Maker price site 403 in web and own cloud browser; no readable maker current MLP found.",
+      "capture_sha256": "658b6778fb7e3675dc6d70a138f0850980330745b0b4f260f92bcbf99a8c7749",
+      "capture_locator": "sources/ex5_price_current-web.txt"
+    }
+  ],
+  "models": [],
+  "variants": [],
+  "versionGuards": [
+    {
+      "variantId": "geely_ex2_launch__complete__20261010",
+      "before": {
+        "id": "geely_ex2_launch__complete__20261010",
+        "modelId": "geely_ex2_launch",
+        "brand": "Geely",
+        "model": "EX2",
+        "trim": "Complete",
+        "year": null,
+        "generation": "AU launch / July 2026 specification guide",
+        "vehicleClass": "passenger",
+        "drive": "RWD"
+      }
+    },
+    {
+      "variantId": "geely_ex2_launch__inspire__20261010",
+      "before": {
+        "id": "geely_ex2_launch__inspire__20261010",
+        "modelId": "geely_ex2_launch",
+        "brand": "Geely",
+        "model": "EX2",
+        "trim": "Inspire",
+        "year": null,
+        "generation": "AU launch / July 2026 specification guide",
+        "vehicleClass": "passenger",
+        "drive": "RWD"
+      }
+    },
+    {
+      "variantId": "geely_ex5__complete_extended_range__1",
+      "before": {
+        "id": "geely_ex5__complete_extended_range__1",
+        "modelId": "geely_ex5",
+        "brand": "Geely",
+        "model": "EX5",
+        "trim": "Complete Extended Range",
+        "year": null,
+        "generation": "Australian 68.39 kWh Extended Range specification",
+        "vehicleClass": "passenger",
+        "drive": "FWD"
+      }
+    },
+    {
+      "variantId": "geely_ex5__inspire_extended_range__2",
+      "before": {
+        "id": "geely_ex5__inspire_extended_range__2",
+        "modelId": "geely_ex5",
+        "brand": "Geely",
+        "model": "EX5",
+        "trim": "Inspire Extended Range",
+        "year": null,
+        "generation": "Australian 68.39 kWh Extended Range specification",
+        "vehicleClass": "passenger",
+        "drive": "FWD"
+      }
+    }
+  ],
+  "versionUpdates": [],
+  "facts": [
+    {
+      "variantId": "geely_ex5__complete_extended_range__1",
+      "before": {
+        "key": "price_aud",
+        "label": "Price",
+        "value": 41990,
+        "unit": "AUD",
+        "basis": "Reported by CarExpert · before on-road costs",
+        "comparisonBasis": "Before on-road costs",
+        "status": "conditional",
+        "sourceIds": [
+          "m1-geely-2026-10-14-ex5_price_current"
+        ],
+        "date": "2026-10-14",
+        "market": "AU",
+        "scope": "Geely EX5 Complete Extended Range",
+        "qualifications": [
+          "AUD advertised list price excluding on-road costs; registration, stamp duty, compulsory insurance, delivery/dealer fees and options must be confirmed in a written quote. No discount, finance offer or stock saving has been applied."
+        ],
+        "issues": [],
+        "buyerGrade": "reported",
+        "gradeReview": {
+          "reviewedAt": "2026-10-14",
+          "overlayId": "m1-geely-2026-10-14",
+          "reason": "Freshly checked reputable Australian CarExpert report gives current Extended Range list prices. Maker list/national driveaway/configurator/state-driveaway rungs were sought but no readable current maker price was established; maker site returns 403. Lower-rung dealer advertisements are not substituted.",
+          "evidenceScope": "secondary_or_sibling",
+          "sourceIds": [
+            "m1-geely-2026-10-14-ex5_price_current"
+          ],
+          "sourceLabel": "CarExpert"
+        },
+        "resolvedElsewhere": true,
+        "priceEvidence": {
+          "rung": 5,
+          "basisTag": "Reported by CarExpert · before on-road costs",
+          "sourceKey": "price_aud",
+          "sourcePointer": "https://www.carexpert.com.au/car-news/2026-geely-ex5-price-and-specs-mid-size-electric-suv-gets-bigger-battery",
+          "originalBasis": "Reported by CarExpert · before on-road costs",
+          "rankingEligible": false,
+          "publisher": "CarExpert"
+        }
+      },
+      "after": {
+        "key": "price_aud",
+        "label": "Price",
+        "value": 41990,
+        "unit": "AUD",
+        "basis": "Reported by CarExpert · before on-road costs",
+        "comparisonBasis": "Before on-road costs",
+        "status": "conditional",
+        "sourceIds": [
+          "refresh-geely-2026-11-05-build-ex5",
+          "m1-geely-2026-10-14-ex5_price_current"
+        ],
+        "date": "2026-11-05",
+        "market": "AU",
+        "scope": "Geely EX5 Complete Extended Range",
+        "qualifications": [
+          "AUD advertised list price excluding on-road costs; registration, stamp duty, compulsory insurance, delivery/dealer fees and options must be confirmed in a written quote. No discount, finance offer or stock saving has been applied."
+        ],
+        "issues": [],
+        "buyerGrade": "reported",
+        "gradeReview": {
+          "reviewedAt": "2026-11-05",
+          "overlayId": "refresh-geely-2026-11-05",
+          "reason": "Rechecked 2026-11-05: Geely's build page shows the same figure; it states no price basis, so the grade and the CarExpert 'before on-road costs' basis are carried forward unchanged.",
+          "evidenceScope": "secondary_or_sibling",
+          "sourceIds": [
+            "refresh-geely-2026-11-05-build-ex5",
+            "m1-geely-2026-10-14-ex5_price_current"
+          ],
+          "sourceLabel": "Geely Australia"
+        },
+        "resolvedElsewhere": true,
+        "priceEvidence": {
+          "rung": 5,
+          "basisTag": "Reported by CarExpert · before on-road costs",
+          "sourceKey": "price_aud",
+          "sourcePointer": "https://www.geely.com.au/build/geely-ex5?model=geely-ex5",
+          "originalBasis": "Reported by CarExpert · before on-road costs",
+          "rankingEligible": false,
+          "publisher": "CarExpert"
+        }
+      }
+    },
+    {
+      "variantId": "geely_ex5__inspire_extended_range__2",
+      "before": {
+        "key": "price_aud",
+        "label": "Price",
+        "value": 45990,
+        "unit": "AUD",
+        "basis": "Reported by CarExpert · before on-road costs",
+        "comparisonBasis": "Before on-road costs",
+        "status": "conditional",
+        "sourceIds": [
+          "m1-geely-2026-10-14-ex5_price_current"
+        ],
+        "date": "2026-10-14",
+        "market": "AU",
+        "scope": "Geely EX5 Inspire Extended Range",
+        "qualifications": [
+          "AUD advertised list price excluding on-road costs; registration, stamp duty, compulsory insurance, delivery/dealer fees and options must be confirmed in a written quote. No discount, finance offer or stock saving has been applied."
+        ],
+        "issues": [],
+        "buyerGrade": "reported",
+        "gradeReview": {
+          "reviewedAt": "2026-10-14",
+          "overlayId": "m1-geely-2026-10-14",
+          "reason": "Freshly checked reputable Australian CarExpert report gives current Extended Range list prices. Maker list/national driveaway/configurator/state-driveaway rungs were sought but no readable current maker price was established; maker site returns 403. Lower-rung dealer advertisements are not substituted.",
+          "evidenceScope": "secondary_or_sibling",
+          "sourceIds": [
+            "m1-geely-2026-10-14-ex5_price_current"
+          ],
+          "sourceLabel": "CarExpert"
+        },
+        "resolvedElsewhere": true,
+        "priceEvidence": {
+          "rung": 5,
+          "basisTag": "Reported by CarExpert · before on-road costs",
+          "sourceKey": "price_aud",
+          "sourcePointer": "https://www.carexpert.com.au/car-news/2026-geely-ex5-price-and-specs-mid-size-electric-suv-gets-bigger-battery",
+          "originalBasis": "Reported by CarExpert · before on-road costs",
+          "rankingEligible": false,
+          "publisher": "CarExpert"
+        }
+      },
+      "after": {
+        "key": "price_aud",
+        "label": "Price",
+        "value": 45990,
+        "unit": "AUD",
+        "basis": "Reported by CarExpert · before on-road costs",
+        "comparisonBasis": "Before on-road costs",
+        "status": "conditional",
+        "sourceIds": [
+          "refresh-geely-2026-11-05-build-ex5",
+          "m1-geely-2026-10-14-ex5_price_current"
+        ],
+        "date": "2026-11-05",
+        "market": "AU",
+        "scope": "Geely EX5 Inspire Extended Range",
+        "qualifications": [
+          "AUD advertised list price excluding on-road costs; registration, stamp duty, compulsory insurance, delivery/dealer fees and options must be confirmed in a written quote. No discount, finance offer or stock saving has been applied."
+        ],
+        "issues": [],
+        "buyerGrade": "reported",
+        "gradeReview": {
+          "reviewedAt": "2026-11-05",
+          "overlayId": "refresh-geely-2026-11-05",
+          "reason": "Rechecked 2026-11-05: Geely's build page shows the same figure; it states no price basis, so the grade and the CarExpert 'before on-road costs' basis are carried forward unchanged.",
+          "evidenceScope": "secondary_or_sibling",
+          "sourceIds": [
+            "refresh-geely-2026-11-05-build-ex5",
+            "m1-geely-2026-10-14-ex5_price_current"
+          ],
+          "sourceLabel": "Geely Australia"
+        },
+        "resolvedElsewhere": true,
+        "priceEvidence": {
+          "rung": 5,
+          "basisTag": "Reported by CarExpert · before on-road costs",
+          "sourceKey": "price_aud",
+          "sourcePointer": "https://www.geely.com.au/build/geely-ex5?model=geely-ex5",
+          "originalBasis": "Reported by CarExpert · before on-road costs",
+          "rankingEligible": false,
+          "publisher": "CarExpert"
+        }
+      }
+    },
+    {
+      "variantId": "geely_ex2_launch__complete__20261010",
+      "before": {
+        "key": "price_aud",
+        "label": "Price",
+        "value": 26490,
+        "unit": "AUD",
+        "basis": "Manufacturer RRP before on-road costs",
+        "comparisonBasis": "Before on-road costs",
+        "status": "standard",
+        "sourceIds": [
+          "m1-geely-2026-10-14-ex2_press_price"
+        ],
+        "date": "2026-10-14",
+        "market": "AU",
+        "scope": "Geely EX2 Complete",
+        "qualifications": [
+          "AUD advertised list price excluding on-road costs; registration, stamp duty, compulsory insurance, delivery/dealer fees and options must be confirmed in a written quote. No discount, finance offer or stock saving has been applied."
+        ],
+        "issues": [],
+        "buyerGrade": "confirmed",
+        "gradeReview": {
+          "reviewedAt": "2026-10-14",
+          "overlayId": "m1-geely-2026-10-14",
+          "reason": "Geely Auto Australia media-release reproduction on the authorised Essendon dealer website explicitly gives RRP for both named EX2 grades before on-road costs. This is manufacturer editorial pricing, not a dealer unit advertisement.",
+          "evidenceScope": "exact_au_version",
+          "sourceIds": [
+            "m1-geely-2026-10-14-ex2_press_price"
+          ],
+          "sourceLabel": "Geely Auto Australia release, authorised dealer Geely Essendon mirror"
+        },
+        "priceEvidence": {
+          "rung": 1,
+          "basisTag": "Maker’s RRP · before on-road costs",
+          "sourceKey": "price_aud",
+          "sourcePointer": "https://www.geelyessendon.com.au/news/geely-ex2-adds-five-star-ancap-safety-rating-to-its-credentials/",
+          "originalBasis": "Manufacturer RRP before on-road costs",
+          "rankingEligible": true
+        }
+      },
+      "after": {
+        "key": "price_aud",
+        "label": "Price",
+        "value": 26490,
+        "unit": "AUD",
+        "basis": "Manufacturer RRP before on-road costs",
+        "comparisonBasis": "Before on-road costs",
+        "status": "standard",
+        "sourceIds": [
+          "refresh-geely-2026-11-05-build-ex2",
+          "refresh-geely-2026-11-05-ex2-release"
+        ],
+        "date": "2026-11-05",
+        "market": "AU",
+        "scope": "Geely EX2 Complete",
+        "qualifications": [
+          "AUD advertised list price excluding on-road costs; registration, stamp duty, compulsory insurance, delivery/dealer fees and options must be confirmed in a written quote. No discount, finance offer or stock saving has been applied."
+        ],
+        "issues": [],
+        "buyerGrade": "confirmed",
+        "gradeReview": {
+          "reviewedAt": "2026-11-05",
+          "overlayId": "refresh-geely-2026-11-05",
+          "reason": "Rechecked 2026-11-05 against the cited page: unchanged. Geely's build page shows the same figure; the republished media release still states it is plus on-road costs (RRP).",
+          "evidenceScope": "exact_au_version",
+          "sourceIds": [
+            "refresh-geely-2026-11-05-build-ex2",
+            "refresh-geely-2026-11-05-ex2-release"
+          ],
+          "sourceLabel": "Geely Australia"
+        },
+        "priceEvidence": {
+          "rung": 1,
+          "basisTag": "Maker’s RRP · before on-road costs",
+          "sourceKey": "price_aud",
+          "sourcePointer": "https://www.geely.com.au/build/geely-ex2?model=starray-em-i",
+          "originalBasis": "Manufacturer RRP before on-road costs",
+          "rankingEligible": true
+        }
+      }
+    },
+    {
+      "variantId": "geely_ex2_launch__inspire__20261010",
+      "before": {
+        "key": "price_aud",
+        "label": "Price",
+        "value": 30990,
+        "unit": "AUD",
+        "basis": "Manufacturer RRP before on-road costs",
+        "comparisonBasis": "Before on-road costs",
+        "status": "standard",
+        "sourceIds": [
+          "m1-geely-2026-10-14-ex2_press_price"
+        ],
+        "date": "2026-10-14",
+        "market": "AU",
+        "scope": "Geely EX2 Inspire",
+        "qualifications": [
+          "AUD advertised list price excluding on-road costs; registration, stamp duty, compulsory insurance, delivery/dealer fees and options must be confirmed in a written quote. No discount, finance offer or stock saving has been applied."
+        ],
+        "issues": [],
+        "buyerGrade": "confirmed",
+        "gradeReview": {
+          "reviewedAt": "2026-10-14",
+          "overlayId": "m1-geely-2026-10-14",
+          "reason": "Geely Auto Australia media-release reproduction on the authorised Essendon dealer website explicitly gives RRP for both named EX2 grades before on-road costs. This is manufacturer editorial pricing, not a dealer unit advertisement.",
+          "evidenceScope": "exact_au_version",
+          "sourceIds": [
+            "m1-geely-2026-10-14-ex2_press_price"
+          ],
+          "sourceLabel": "Geely Auto Australia release, authorised dealer Geely Essendon mirror"
+        },
+        "priceEvidence": {
+          "rung": 1,
+          "basisTag": "Maker’s RRP · before on-road costs",
+          "sourceKey": "price_aud",
+          "sourcePointer": "https://www.geelyessendon.com.au/news/geely-ex2-adds-five-star-ancap-safety-rating-to-its-credentials/",
+          "originalBasis": "Manufacturer RRP before on-road costs",
+          "rankingEligible": true
+        }
+      },
+      "after": {
+        "key": "price_aud",
+        "label": "Price",
+        "value": 30990,
+        "unit": "AUD",
+        "basis": "Manufacturer RRP before on-road costs",
+        "comparisonBasis": "Before on-road costs",
+        "status": "standard",
+        "sourceIds": [
+          "refresh-geely-2026-11-05-build-ex2",
+          "refresh-geely-2026-11-05-ex2-release"
+        ],
+        "date": "2026-11-05",
+        "market": "AU",
+        "scope": "Geely EX2 Inspire",
+        "qualifications": [
+          "AUD advertised list price excluding on-road costs; registration, stamp duty, compulsory insurance, delivery/dealer fees and options must be confirmed in a written quote. No discount, finance offer or stock saving has been applied."
+        ],
+        "issues": [],
+        "buyerGrade": "confirmed",
+        "gradeReview": {
+          "reviewedAt": "2026-11-05",
+          "overlayId": "refresh-geely-2026-11-05",
+          "reason": "Rechecked 2026-11-05 against the cited page: unchanged. Geely's build page shows the same figure; the republished media release still states it is plus on-road costs (RRP).",
+          "evidenceScope": "exact_au_version",
+          "sourceIds": [
+            "refresh-geely-2026-11-05-build-ex2",
+            "refresh-geely-2026-11-05-ex2-release"
+          ],
+          "sourceLabel": "Geely Australia"
+        },
+        "priceEvidence": {
+          "rung": 1,
+          "basisTag": "Maker’s RRP · before on-road costs",
+          "sourceKey": "price_aud",
+          "sourcePointer": "https://www.geely.com.au/build/geely-ex2?model=starray-em-i",
+          "originalBasis": "Manufacturer RRP before on-road costs",
+          "rankingEligible": true
+        }
+      }
+    }
+  ],
+  "availability": [
+    {
+      "id": "refresh-geely-2026-11-05-availability-geely_ex5__complete_extended_range__1",
+      "variantId": "geely_ex5__complete_extended_range__1",
+      "before": {
+        "availability": "current_or_order_listed",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "new_stock_listed",
+          "sourceIds": [
+            "m1-geely-2026-10-14-ex5_current_dealer",
+            "m1-geely-2026-10-14-ex5_er_complete_new"
+          ],
+          "physicalStockVerified": false,
+          "factoryOrderAcceptanceVerified": false,
+          "qualifications": [
+            "Current Australian named version is on the authorised dealer model list and advertised as new. No physical stock inspection, accepted factory allocation, order or delivery date was verified."
+          ]
+        }
+      },
+      "after": {
+        "availability": "current_or_order_listed",
+        "evidence": {
+          "checkedAt": "2026-11-05",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "new_stock_listed",
+          "sourceIds": [
+            "refresh-geely-2026-11-05-build-ex5"
+          ],
+          "physicalStockVerified": false,
+          "factoryOrderAcceptanceVerified": false,
+          "qualifications": [
+            "Current Australian named version is on the authorised dealer model list and advertised as new. No physical stock inspection, accepted factory allocation, order or delivery date was verified."
+          ]
+        }
+      },
+      "status": "approved",
+      "reviewedBy": "Roadmark WS2 refresh (Claude Code worker), Geely",
+      "reviewedAt": "2026-11-05",
+      "evidenceDate": "2026-11-05",
+      "reason": "Rechecked 2026-11-05: availability unchanged"
+    },
+    {
+      "id": "refresh-geely-2026-11-05-availability-geely_ex5__inspire_extended_range__2",
+      "variantId": "geely_ex5__inspire_extended_range__2",
+      "before": {
+        "availability": "current_or_order_listed",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "new_stock_listed",
+          "sourceIds": [
+            "m1-geely-2026-10-14-ex5_current_dealer",
+            "m1-geely-2026-10-14-ex5_er_inspire_new"
+          ],
+          "physicalStockVerified": false,
+          "factoryOrderAcceptanceVerified": false,
+          "qualifications": [
+            "Current Australian named version is on the authorised dealer model list and advertised as new. No physical stock inspection, accepted factory allocation, order or delivery date was verified."
+          ]
+        }
+      },
+      "after": {
+        "availability": "current_or_order_listed",
+        "evidence": {
+          "checkedAt": "2026-11-05",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "new_stock_listed",
+          "sourceIds": [
+            "refresh-geely-2026-11-05-build-ex5"
+          ],
+          "physicalStockVerified": false,
+          "factoryOrderAcceptanceVerified": false,
+          "qualifications": [
+            "Current Australian named version is on the authorised dealer model list and advertised as new. No physical stock inspection, accepted factory allocation, order or delivery date was verified."
+          ]
+        }
+      },
+      "status": "approved",
+      "reviewedBy": "Roadmark WS2 refresh (Claude Code worker), Geely",
+      "reviewedAt": "2026-11-05",
+      "evidenceDate": "2026-11-05",
+      "reason": "Rechecked 2026-11-05: availability unchanged"
+    },
+    {
+      "id": "refresh-geely-2026-11-05-availability-geely_ex2_launch__complete__20261010",
+      "variantId": "geely_ex2_launch__complete__20261010",
+      "before": {
+        "availability": "current_or_order_listed",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "sourceIds": [
+            "m1-geely-2026-10-14-ex2_current_dealer"
+          ],
+          "physicalStockVerified": false,
+          "factoryOrderAcceptanceVerified": false,
+          "qualifications": [
+            "Current Australian Complete version is on the authorised dealer model/quote list. The page’s captured NEW unit advertisements are Inspire, so exact Complete new stock is unverified. No factory-order acceptance or delivery date was verified."
+          ]
+        }
+      },
+      "after": {
+        "availability": "current_or_order_listed",
+        "evidence": {
+          "checkedAt": "2026-11-05",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "sourceIds": [
+            "refresh-geely-2026-11-05-build-ex2"
+          ],
+          "physicalStockVerified": false,
+          "factoryOrderAcceptanceVerified": false,
+          "qualifications": [
+            "Current Australian Complete version is on the authorised dealer model/quote list. The page’s captured NEW unit advertisements are Inspire, so exact Complete new stock is unverified. No factory-order acceptance or delivery date was verified."
+          ]
+        }
+      },
+      "status": "approved",
+      "reviewedBy": "Roadmark WS2 refresh (Claude Code worker), Geely",
+      "reviewedAt": "2026-11-05",
+      "evidenceDate": "2026-11-05",
+      "reason": "Rechecked 2026-11-05: availability unchanged"
+    },
+    {
+      "id": "refresh-geely-2026-11-05-availability-geely_ex2_launch__inspire__20261010",
+      "variantId": "geely_ex2_launch__inspire__20261010",
+      "before": {
+        "availability": "current_or_order_listed",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "new_stock_listed",
+          "sourceIds": [
+            "m1-geely-2026-10-14-ex2_current_dealer"
+          ],
+          "physicalStockVerified": false,
+          "factoryOrderAcceptanceVerified": false,
+          "qualifications": [
+            "Current Australian named version is on the authorised dealer model list and advertised as new. No physical stock inspection, accepted factory allocation, order or delivery date was verified."
+          ]
+        }
+      },
+      "after": {
+        "availability": "current_or_order_listed",
+        "evidence": {
+          "checkedAt": "2026-11-05",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "new_stock_listed",
+          "sourceIds": [
+            "refresh-geely-2026-11-05-build-ex2"
+          ],
+          "physicalStockVerified": false,
+          "factoryOrderAcceptanceVerified": false,
+          "qualifications": [
+            "Current Australian named version is on the authorised dealer model list and advertised as new. No physical stock inspection, accepted factory allocation, order or delivery date was verified."
+          ]
+        }
+      },
+      "status": "approved",
+      "reviewedBy": "Roadmark WS2 refresh (Claude Code worker), Geely",
+      "reviewedAt": "2026-11-05",
+      "evidenceDate": "2026-11-05",
+      "reason": "Rechecked 2026-11-05: availability unchanged"
+    }
+  ],
+  "summaries": [
+    {
+      "variantId": "geely_ex2_launch__complete__20261010",
+      "conditions": [],
+      "strength": {
+        "label": "Low entry price",
+        "text": "A$26,490 RRP before on-road costs gives an accessible entry to this rear-drive hatchback.",
+        "dependencies": [
+          {
+            "key": "price_aud",
+            "expected": {
+              "key": "price_aud",
+              "label": "Price",
+              "value": 26490,
+              "unit": "AUD",
+              "basis": "Manufacturer RRP before on-road costs",
+              "comparisonBasis": "Before on-road costs",
+              "status": "standard",
+              "sourceIds": [
+                "refresh-geely-2026-11-05-build-ex2",
+                "refresh-geely-2026-11-05-ex2-release"
+              ],
+              "date": "2026-11-05",
+              "market": "AU",
+              "scope": "Geely EX2 Complete",
+              "qualifications": [
+                "AUD advertised list price excluding on-road costs; registration, stamp duty, compulsory insurance, delivery/dealer fees and options must be confirmed in a written quote. No discount, finance offer or stock saving has been applied."
+              ],
+              "issues": [],
+              "buyerGrade": "confirmed",
+              "gradeReview": {
+                "reviewedAt": "2026-11-05",
+                "overlayId": "refresh-geely-2026-11-05",
+                "reason": "Rechecked 2026-11-05 against the cited page: unchanged. Geely's build page shows the same figure; the republished media release still states it is plus on-road costs (RRP).",
+                "evidenceScope": "exact_au_version",
+                "sourceIds": [
+                  "refresh-geely-2026-11-05-build-ex2",
+                  "refresh-geely-2026-11-05-ex2-release"
+                ],
+                "sourceLabel": "Geely Australia"
+              },
+              "priceEvidence": {
+                "rung": 1,
+                "basisTag": "Maker’s RRP · before on-road costs",
+                "sourceKey": "price_aud",
+                "sourcePointer": "https://www.geely.com.au/build/geely-ex2?model=starray-em-i",
+                "originalBasis": "Manufacturer RRP before on-road costs",
+                "rankingEligible": true
+              }
+            }
+          },
+          {
+            "key": "drive",
+            "expected": {
+              "key": "drive",
+              "label": "Drive type",
+              "value": "RWD",
+              "unit": "",
+              "basis": "Driven wheels",
+              "comparisonBasis": "Drivetrain",
+              "status": "standard",
+              "sourceIds": [
+                "m1-geely-2026-10-14-ex2_guide"
+              ],
+              "date": "2026-10-14",
+              "market": "AU",
+              "scope": "Geely EX2 Complete",
+              "qualifications": [],
+              "issues": [],
+              "buyerGrade": "confirmed",
+              "gradeReview": {
+                "reviewedAt": "2026-10-14",
+                "overlayId": "m1-geely-2026-10-14",
+                "reason": "Current Australian maker material explicitly establishes this figure for the named version.",
+                "evidenceScope": "exact_au_version",
+                "sourceIds": [
+                  "m1-geely-2026-10-14-ex2_guide"
+                ],
+                "sourceLabel": "Geely Auto Australia"
+              }
+            }
+          },
+          {
+            "key": "body_style",
+            "expected": {
+              "key": "body_style",
+              "label": "Body style",
+              "value": "Hatchback",
+              "unit": "",
+              "basis": "Body style",
+              "comparisonBasis": "Body style",
+              "status": "standard",
+              "sourceIds": [
+                "m1-geely-2026-10-14-ex2_guide"
+              ],
+              "date": "2026-10-14",
+              "market": "AU",
+              "scope": "Geely EX2 Complete",
+              "qualifications": [],
+              "issues": [],
+              "buyerGrade": "confirmed",
+              "gradeReview": {
+                "reviewedAt": "2026-10-14",
+                "overlayId": "m1-geely-2026-10-14",
+                "reason": "Exact Australian maker specification guide establishes the body configuration reviewed here.",
+                "evidenceScope": "explicit_au_range",
+                "sourceIds": [
+                  "m1-geely-2026-10-14-ex2_guide"
+                ],
+                "sourceLabel": "Geely Auto Australia"
+              }
+            }
+          }
+        ]
+      },
+      "tradeoff": {
+        "label": "Shorter trip range",
+        "text": "The 252 km WLTP claim makes regular charging access important for longer trips.",
+        "dependencies": [
+          {
+            "key": "range_km",
+            "expected": {
+              "key": "range_km",
+              "label": "Range",
+              "value": 252,
+              "unit": "km",
+              "basis": "WLTP",
+              "comparisonBasis": "WLTP",
+              "status": "standard",
+              "sourceIds": [
+                "m1-geely-2026-10-14-ex2_guide"
+              ],
+              "date": "2026-10-14",
+              "market": "AU",
+              "scope": "Geely EX2 Complete",
+              "qualifications": [],
+              "issues": [],
+              "buyerGrade": "confirmed",
+              "gradeReview": {
+                "reviewedAt": "2026-10-14",
+                "overlayId": "m1-geely-2026-10-14",
+                "reason": "Current Australian maker material explicitly establishes this figure for the named version.",
+                "evidenceScope": "exact_au_version",
+                "sourceIds": [
+                  "m1-geely-2026-10-14-ex2_guide"
+                ],
+                "sourceLabel": "Geely Auto Australia"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
