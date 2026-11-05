@@ -47,6 +47,10 @@ export const REASON_NEEDS_LIST_PRICE = "needs maker list price";
 export const REASON_CLOSE_TO_CAP =
   "close to cap; options and delivery change the outcome";
 export const REASON_THRESHOLD_NOT_RETRIEVED = "threshold not retrieved";
+export const REASON_UTE_PAYLOAD_NOT_CHECKED =
+  "utes qualify only if designed to carry under one tonne; payload not checked";
+/** The exemption needs a car designed to carry a load of less than one tonne. */
+export const UTE_PAYLOAD_LIMIT_KG = 1000;
 export const FBT_NOT_TAX_ADVICE =
   "Whether you can use the exemption depends on your employer and lease; this is not tax advice.";
 /** A price within this share of a threshold is too close to call. */
@@ -57,10 +61,12 @@ export const THRESHOLD_WINDOW_DAYS = 45;
 export type Tri = true | false | "unknown";
 /** The slice of a version this module reads. */
 export type ThresholdVersion = {
+  vehicleClass?: string;
   facts: Record<
     string,
     | {
         value: unknown;
+        sourceIds?: readonly string[];
         comparisonBasis?: string;
         priceEvidence?: { rung: number };
       }
@@ -151,7 +157,23 @@ export function assessThresholds(
   options: { asOf: string; state?: string | null },
 ): ThresholdResult {
   const price = rungOneListPrice(version);
-  const fbt = against(price, limitOf(thresholds.fbt_exempt_price_cap), true);
+  let fbt = against(price, limitOf(thresholds.fbt_exempt_price_cap), true);
+  if (version.vehicleClass === "ute") {
+    // Only a sourced catalogue payload can settle the one-tonne condition; never invented.
+    const payload = version.facts.payload_kg;
+    const known =
+      payload &&
+      typeof payload.value === "number" &&
+      Number.isFinite(payload.value) &&
+      payload.value > 0 &&
+      (payload.sourceIds?.length ?? 0) > 0
+        ? payload.value
+        : null;
+    if (known === null)
+      fbt = { result: "unknown", reason: REASON_UTE_PAYLOAD_NOT_CHECKED };
+    else if (known >= UTE_PAYLOAD_LIMIT_KG)
+      fbt = { result: false, reason: null };
+  }
   const lct = against(
     price,
     limitOf(thresholds.lct_threshold_fuel_efficient),

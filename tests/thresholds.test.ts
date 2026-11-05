@@ -10,6 +10,7 @@ import {
   REASON_CLOSE_TO_CAP,
   REASON_NEEDS_LIST_PRICE,
   REASON_THRESHOLD_NOT_RETRIEVED,
+  REASON_UTE_PAYLOAD_NOT_CHECKED,
   rungOneListPrice,
   thresholdFreshness,
   type AuThresholds,
@@ -418,4 +419,65 @@ test("loadThresholds returns the newest dated file", () => {
   const loaded = loadThresholds();
   assert.ok(loaded);
   assert.match(loaded.as_of, /^\d{4}-\d{2}-\d{2}$/);
+});
+
+test("utes: unknown unless a sourced payload settles the one-tonne condition", () => {
+  const ute = (
+    price: number,
+    payload?: { value: unknown; sourceIds?: string[] },
+  ) =>
+    ({
+      vehicleClass: "ute",
+      facts: {
+        ...version(price).facts,
+        ...(payload ? { payload_kg: payload } : {}),
+      },
+    }) as ThresholdVersion;
+  const under = CAP * 0.5;
+  // No payload fact, null, unsourced or unusable payload: unknown, never true.
+  for (const payload of [
+    undefined,
+    { value: null, sourceIds: ["s"] },
+    { value: 800, sourceIds: [] },
+    { value: 800 },
+    { value: "800", sourceIds: ["s"] },
+    { value: 0, sourceIds: ["s"] },
+  ]) {
+    const r = run(ute(under, payload));
+    assert.equal(r.underFbtCap, "unknown");
+    assert.equal(r.fbtReason, REASON_UTE_PAYLOAD_NOT_CHECKED);
+    assert.equal(
+      formatFbtRow(r).answer,
+      "Can't tell (utes qualify only if designed to carry under one tonne; payload not checked)",
+    );
+  }
+  assert.equal(
+    REASON_UTE_PAYLOAD_NOT_CHECKED,
+    "utes qualify only if designed to carry under one tonne; payload not checked",
+  );
+  // Sourced payload under one tonne: normal price rules apply.
+  const ok = { value: 905, sourceIds: ["s"] };
+  assert.equal(run(ute(under, ok)).underFbtCap, true);
+  assert.equal(run(ute(CAP * 2, ok)).underFbtCap, false);
+  assert.equal(run(ute(CAP, ok)).fbtReason, REASON_CLOSE_TO_CAP);
+  assert.equal(
+    run(ute(10_000, { value: 999, sourceIds: ["s"] })).underFbtCap,
+    true,
+  );
+  // Sourced payload of one tonne or more cannot qualify, whatever the price.
+  assert.equal(
+    run(ute(under, { value: 1000, sourceIds: ["s"] })).underFbtCap,
+    false,
+  );
+  assert.equal(
+    run(ute(under, { value: 1100, sourceIds: ["s"] })).underFbtCap,
+    false,
+  );
+  // A ute without a rung-1 price is still unknown for the price reason too (payload is checked first).
+  assert.equal(run(ute(under, ok)).lctApplies, false);
+  // Non-ute classes are unaffected by payload.
+  assert.equal(
+    run({ vehicleClass: "passenger", facts: version(under).facts }).underFbtCap,
+    true,
+  );
 });

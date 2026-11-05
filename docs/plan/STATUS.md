@@ -112,24 +112,28 @@ Cloudflare-challenged pages were not bypassed. The ACT stamp duty amount is not 
 **Gaps (WS4), measured over all 356 Tier 1 versions (matches the coverage report's 356), as at 2026-11-05.**
 | Outcome | FBT cap | LCT |
 |---|---|---|
-| Yes / no (resolved) | 76 under, 10 over | 76 not applicable, 10 applies |
+| Yes / no (resolved) | 74 under, 10 over | 76 not applicable, 10 applies |
 | unknown: needs maker list price | 265 | 265 |
 | unknown: close to cap; options and delivery change the outcome | 5 | 5 |
+| unknown: utes qualify only if designed to carry under one tonne; payload not checked | 2 | n/a (LCT unaffected) |
 | unknown: threshold not retrieved | 0 | 0 |
 
-Of the 265 "needs maker list price": 31 are rung 2, 66 rung 3, 29 rung 4, 83 rung 5, 23 rung 6, and 33 have a price fact with no recorded ladder rung (legacy), which is treated strictly as not rung 1. 91 versions have a rung-1 price; of these 86 are resolved and 5 fall in the 2% band. States whose incentive pages could not be retrieved: SA, NT; and the VIC road user charge row.
+Of the 265 "needs maker list price": 31 are rung 2, 66 rung 3, 29 rung 4, 83 rung 5, 23 rung 6, and 33 have a price fact with no recorded ladder rung (legacy), which is treated strictly as not rung 1. 91 versions have a rung-1 price; of these 84 are resolved, 5 fall in the 2% band and 2 are utes with no sourced payload. The catalogue has 5 utes; 3 carry a sourced `payload_kg` (855, 905, 805 kg, all under one tonne, so price rules apply) and 2 Hilux BEV versions have none (reported as unknown). States whose incentive pages could not be retrieved: SA, NT; and the VIC road user charge row.
 
 **Acceptance (WS4).**
-- Unit tests for each branch of W4.2 including the 2% band and every non-rung-1 price: PASS.
+- Unit tests for each branch of W4.2 including the 2% band, every non-rung-1 price and the ute payload branch: PASS.
 - Every value has a non-null `source_url` on an ato.gov.au or state government domain and a `checked_at` within 45 days of the commit: PASS (rows not retrieved carry null values and the attempted URL; asserted by test).
 - `/answers/under-fbt-threshold` driven from this data: DEFERRED (WS3 page does not exist yet).
 - W4.3 display (row, state picker): DEFERRED (after WS1).
 - Rule 5 checks: validate/typecheck/lint PASS; test 1307 pass / 8 fail (the inherited 8 only); build and e2e not run (no UI change).
 
 
+**Review fix 2026-11-05 (orchestrator).** Ute payload branch added to `assessThresholds`. validate, typecheck, lint exit 0; scoped `tests/thresholds.test.ts` + `tests/coverage-reports.test.ts`: 27 tests, 27 pass, 0 fail. Full suite not rerun (per orchestrator); last full run above (1307 pass / 8 inherited fail) predates this change.
+
 ## Ambiguities found
 
-- WS4: ATO ties the FBT cap to the LCT *value* (GST-inclusive, includes dealer delivery), while the catalogue holds the maker list price before on-road costs; hence the 2% "close to cap" band. Utes must also be designed to carry under one tonne to qualify; the function tests price only and does not assess load rating.
+- WS4: ATO ties the FBT cap to the LCT *value* (GST-inclusive, includes dealer delivery), while the catalogue holds the maker list price before on-road costs; hence the 2% "close to cap" band. Utes must also be designed to carry under one tonne to qualify: a ute returns `unknown` ("utes qualify only if designed to carry under one tonne; payload not checked") unless the catalogue holds a sourced `payload_kg`; a sourced payload of 1,000 kg or more returns false.
 - WS4: 33 Tier 1 price facts have no ladder rung; read strictly as not rung 1.
 
 (A worker who hits a case the definitions in section 1 of the plan do not cover writes it here, with the stricter reading they chose.)
+
