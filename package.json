@@ -21,7 +21,12 @@
     "generate:market-view": "node scripts/generate-market-view.mjs --write",
     "check:market-view": "node scripts/generate-market-view.mjs --check",
     "report:coverage": "node --import tsx scripts/report-coverage.ts",
-    "report:stale": "node --import tsx scripts/report-stale.ts"
+    "report:stale": "node --import tsx scripts/report-stale.ts",
+    "refresh:plan": "node --import tsx scripts/refresh/plan.ts",
+    "refresh:scaffold": "node --import tsx scripts/refresh/scaffold.ts",
+    "refresh:build": "node --import tsx scripts/refresh/build.ts",
+    "refresh:snapshot": "node --import tsx scripts/refresh/snapshot.ts",
+    "refresh:diff": "node --import tsx scripts/refresh/diff.ts"
   },
   "dependencies": {
     "next": "16.3.8",
