@@ -1,0 +1,2421 @@
+{
+  "schema": "roadmark-refresh-findings-v1",
+  "brand": "Zeekr",
+  "asOf": "2026-11-05",
+  "reviewedAt": "2026-11-05",
+  "reviewedBy": "Roadmark WS2 refresh (Claude Code worker), Zeekr",
+  "sources": [
+    {
+      "id": "refresh-zeekr-2026-11-05-cfg-7x",
+      "url": "https://conf.zeekrlife.com/en-au/",
+      "title": "Zeekr Australia online configurator (default model: Zeekr 7X)",
+      "publisher": "Zeekr Australia",
+      "source_type": "official_configurator",
+      "published_date": null,
+      "accessed_date": "2026-11-05",
+      "market": "AU",
+      "supports": "Opened 2026-11-05. Zeekr 7X: Standard RWD $57,900; Long Range RWD $63,900; Performance AWD $72,900; Performance AWD Black Edition $75,900. Page states: Manufacturer's List Price (MLP) includes GST and excludes on-road costs (dealer delivery, stamp duty, registration, CTP insurance) and options; prices correct as at 01/11/2026 and subject to change. The Black Edition price is for a version this refresh did not scaffold."
+    },
+    {
+      "id": "refresh-zeekr-2026-11-05-cfg-009",
+      "url": "https://conf.zeekrlife.com/en-au/?linkCode=1037",
+      "title": "Zeekr Australia online configurator, Zeekr 009",
+      "publisher": "Zeekr Australia",
+      "source_type": "official_configurator",
+      "published_date": null,
+      "accessed_date": "2026-11-05",
+      "market": "AU",
+      "supports": "Opened 2026-11-05. Zeekr 009: 7 Seater FWD $115,900; 7 Seater AWD $135,900; 6 Seater AWD $139,900. This page states no price basis (before or after on-road costs)."
+    },
+    {
+      "id": "refresh-zeekr-2026-11-05-offers",
+      "url": "https://www.zeekrlife.com/en-au/offers",
+      "title": "Zeekr Australia offers",
+      "publisher": "Zeekr Australia",
+      "source_type": "manufacturer_au_offer",
+      "published_date": null,
+      "accessed_date": "2026-11-05",
+      "market": "AU",
+      "supports": "Opened 2026-11-05. MY27 Zeekr 7X launch offer, 1 November to 31 December 2026: complimentary premium paint, interior selection, two scheduled services, home wall charger, 5000 Z-Points and gift package for customers who purchase or place an order with deposit through an authorised dealer. No price change stated."
+    }
+  ],
+  "versions": [
+    {
+      "variantId": "zeekr_7x__rwd__1",
+      "vehicle": "Zeekr 7X RWD",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.zeekrlife.com/en-au/models/zeekr-7x/",
+            "https://www.zeekrlife.com/en-au/posts/zeekr-7x-crowned-2026-carsguide-best-medium-suv-under-60k/",
+            "https://www.prnewswire.com/apac/news-releases/from-the-studio-to-the-front-seat-zeekr-australia-appoints-cody-simpson-as-brand-ambassador-for-the-all-electric-zeekr-7x-302622518.html"
+          ]
+        },
+        "outcome": "unchanged",
+        "note": "Still listed with a Build & Price route; the MY27 launch offer refers to orders with deposit through dealers, but allocation, factory-order acceptance and delivery are not stated. Order status left as listed, unconfirmed.",
+        "sourceIds": [
+          "refresh-zeekr-2026-11-05-cfg-7x",
+          "refresh-zeekr-2026-11-05-offers"
+        ]
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "57,900 AUD",
+            "basis": "Before on-road costs",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.prnewswire.com/apac/news-releases/from-the-studio-to-the-front-seat-zeekr-australia-appoints-cody-simpson-as-brand-ambassador-for-the-all-electric-zeekr-7x-302622518.html"
+            ]
+          },
+          "outcome": "unchanged",
+          "note": "Configurator shows the same maker list price (MLP, excludes on-road costs), correct as at 01/11/2026.",
+          "sourceIds": [
+            "refresh-zeekr-2026-11-05-cfg-7x"
+          ]
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "480 km",
+            "basis": "WLTP target range published by Zeekr Australia",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.datocms-assets.com/130529/1755670382-au-7x-brochure-200825-web.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "75 kWh",
+            "basis": "Published battery capacity; gross/usable not defined by maker",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.datocms-assets.com/130529/1755670382-au-7x-brochure-200825-web.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "DC peak charging",
+          "due": false,
+          "current": {
+            "value": "450 kW",
+            "basis": "Manufacturer maximum vehicle DC charging capability",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.datocms-assets.com/130529/1755670382-au-7x-brochure-200825-web.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "13 min",
+            "basis": "DC 10–80% on V3 460 kW test charger at room temperature",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/zeekr-7x/",
+              "https://www.zeekrlife.com/en-au/posts/energy-booster-how-the-zeekr-7x-is-rapid-charging-a-new-era-in-electric-efficiency/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "22 kW",
+            "basis": "Maximum AC onboard charging power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.datocms-assets.com/130529/1755670382-au-7x-brochure-200825-web.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Five seats; maker AU range",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.datocms-assets.com/130529/1755670382-au-7x-brochure-200825-web.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot volume",
+          "due": false,
+          "current": {
+            "value": "539 L",
+            "basis": "Rear cargo behind occupied second-row seats; manufacturer standard capacity; measurement method unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/zeekr-7x/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "6 s",
+            "basis": "Manufacturer 0–100 km/h claim",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.datocms-assets.com/130529/1755670382-au-7x-brochure-200825-web.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "310 kW",
+            "basis": "Published total vehicle motor peak power; not motor sum",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.datocms-assets.com/130529/1755670382-au-7x-brochure-200825-web.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Rear-wheel drive, single motor",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.datocms-assets.com/130529/1755670382-au-7x-brochure-200825-web.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,787 mm",
+            "basis": "Manufacturer Australian body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.datocms-assets.com/130529/1755670382-au-7x-brochure-200825-web.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,930 mm",
+            "basis": "Manufacturer Australian body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.datocms-assets.com/130529/1755670382-au-7x-brochure-200825-web.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,650 mm",
+            "basis": "Manufacturer Australian body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.datocms-assets.com/130529/1755670382-au-7x-brochure-200825-web.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "2,000 kg",
+            "basis": "Australian reported braked towing limit",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/zeekr/7x/2026/no-badge/676246fd-a96c-4033-8014-356868a16da4/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km (private use)",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://zcms.zeekrlife.com/published/assets/69db768999ef6f7067b88de5729fc40de340be85193f2813f0cc4d4dcce3eac4/Australian-Warranty-Policy.pdf",
+              "https://www.zeekrlife.com/en-au/service/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; 70% capacity retention (private use)",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://zcms.zeekrlife.com/published/assets/69db768999ef6f7067b88de5729fc40de340be85193f2813f0cc4d4dcce3eac4/Australian-Warranty-Policy.pdf",
+              "https://www.zeekrlife.com/en-au/service/"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "zeekr_7x__long_range_rwd__2",
+      "vehicle": "Zeekr 7X Long Range RWD",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.zeekrlife.com/en-au/models/zeekr-7x/",
+            "https://www.zeekrlife.com/en-au/posts/zeekr-7x-crowned-2026-carsguide-best-medium-suv-under-60k/",
+            "https://www.prnewswire.com/apac/news-releases/from-the-studio-to-the-front-seat-zeekr-australia-appoints-cody-simpson-as-brand-ambassador-for-the-all-electric-zeekr-7x-302622518.html"
+          ]
+        },
+        "outcome": "unchanged",
+        "note": "Still listed with a Build & Price route; the MY27 launch offer refers to orders with deposit through dealers, but allocation, factory-order acceptance and delivery are not stated. Order status left as listed, unconfirmed.",
+        "sourceIds": [
+          "refresh-zeekr-2026-11-05-cfg-7x",
+          "refresh-zeekr-2026-11-05-offers"
+        ]
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "63,900 AUD",
+            "basis": "Before on-road costs",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.prnewswire.com/apac/news-releases/from-the-studio-to-the-front-seat-zeekr-australia-appoints-cody-simpson-as-brand-ambassador-for-the-all-electric-zeekr-7x-302622518.html"
+            ]
+          },
+          "outcome": "unchanged",
+          "note": "Configurator shows the same maker list price (MLP, excludes on-road costs), correct as at 01/11/2026.",
+          "sourceIds": [
+            "refresh-zeekr-2026-11-05-cfg-7x"
+          ]
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "615 km",
+            "basis": "WLTP target range published by Zeekr Australia",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.datocms-assets.com/130529/1755670382-au-7x-brochure-200825-web.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "100 kWh",
+            "basis": "Published battery capacity; gross/usable not defined by maker",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.datocms-assets.com/130529/1755670382-au-7x-brochure-200825-web.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "DC peak charging",
+          "due": false,
+          "current": {
+            "value": "420 kW",
+            "basis": "Manufacturer maximum vehicle DC charging capability",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.datocms-assets.com/130529/1755670382-au-7x-brochure-200825-web.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "16 min",
+            "basis": "DC 10–80% manufacturer claim",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/zeekr-7x/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "22 kW",
+            "basis": "Maximum AC onboard charging power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.datocms-assets.com/130529/1755670382-au-7x-brochure-200825-web.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Five seats; maker AU range",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.datocms-assets.com/130529/1755670382-au-7x-brochure-200825-web.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot volume",
+          "due": false,
+          "current": {
+            "value": "539 L",
+            "basis": "Rear cargo behind occupied second-row seats; manufacturer standard capacity; measurement method unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/zeekr-7x/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "6 s",
+            "basis": "Manufacturer 0–100 km/h claim",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.datocms-assets.com/130529/1755670382-au-7x-brochure-200825-web.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "310 kW",
+            "basis": "Published total vehicle motor peak power; not motor sum",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.datocms-assets.com/130529/1755670382-au-7x-brochure-200825-web.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Rear-wheel drive, single motor",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.datocms-assets.com/130529/1755670382-au-7x-brochure-200825-web.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,787 mm",
+            "basis": "Manufacturer Australian body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.datocms-assets.com/130529/1755670382-au-7x-brochure-200825-web.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,930 mm",
+            "basis": "Manufacturer Australian body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.datocms-assets.com/130529/1755670382-au-7x-brochure-200825-web.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,650 mm",
+            "basis": "Manufacturer Australian body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.datocms-assets.com/130529/1755670382-au-7x-brochure-200825-web.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "2,000 kg",
+            "basis": "Australian reported braked towing limit",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/zeekr/7x/2026/long-range/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km (private use)",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://zcms.zeekrlife.com/published/assets/69db768999ef6f7067b88de5729fc40de340be85193f2813f0cc4d4dcce3eac4/Australian-Warranty-Policy.pdf",
+              "https://www.zeekrlife.com/en-au/service/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; 70% capacity retention (private use)",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://zcms.zeekrlife.com/published/assets/69db768999ef6f7067b88de5729fc40de340be85193f2813f0cc4d4dcce3eac4/Australian-Warranty-Policy.pdf",
+              "https://www.zeekrlife.com/en-au/service/"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "zeekr_7x__performance_awd__3",
+      "vehicle": "Zeekr 7X Performance AWD",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.zeekrlife.com/en-au/models/zeekr-7x/",
+            "https://www.zeekrlife.com/en-au/posts/zeekr-7x-crowned-2026-carsguide-best-medium-suv-under-60k/",
+            "https://www.prnewswire.com/apac/news-releases/from-the-studio-to-the-front-seat-zeekr-australia-appoints-cody-simpson-as-brand-ambassador-for-the-all-electric-zeekr-7x-302622518.html"
+          ]
+        },
+        "outcome": "unchanged",
+        "note": "Still listed with a Build & Price route; the MY27 launch offer refers to orders with deposit through dealers, but allocation, factory-order acceptance and delivery are not stated. Order status left as listed, unconfirmed.",
+        "sourceIds": [
+          "refresh-zeekr-2026-11-05-cfg-7x",
+          "refresh-zeekr-2026-11-05-offers"
+        ]
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "72,900 AUD",
+            "basis": "Before on-road costs",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.prnewswire.com/apac/news-releases/from-the-studio-to-the-front-seat-zeekr-australia-appoints-cody-simpson-as-brand-ambassador-for-the-all-electric-zeekr-7x-302622518.html"
+            ]
+          },
+          "outcome": "unchanged",
+          "note": "Configurator shows the same maker list price (MLP, excludes on-road costs), correct as at 01/11/2026.",
+          "sourceIds": [
+            "refresh-zeekr-2026-11-05-cfg-7x"
+          ]
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "543 km",
+            "basis": "WLTP target range published by Zeekr Australia",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.datocms-assets.com/130529/1755670382-au-7x-brochure-200825-web.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "100 kWh",
+            "basis": "Published battery capacity; gross/usable not defined by maker",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.datocms-assets.com/130529/1755670382-au-7x-brochure-200825-web.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "DC peak charging",
+          "due": false,
+          "current": {
+            "value": "420 kW",
+            "basis": "Manufacturer maximum vehicle DC charging capability",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.datocms-assets.com/130529/1755670382-au-7x-brochure-200825-web.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "16 min",
+            "basis": "DC 10–80% manufacturer claim",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/zeekr-7x/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "22 kW",
+            "basis": "Maximum AC onboard charging power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.datocms-assets.com/130529/1755670382-au-7x-brochure-200825-web.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Five seats; maker AU range",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.datocms-assets.com/130529/1755670382-au-7x-brochure-200825-web.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot volume",
+          "due": false,
+          "current": {
+            "value": "539 L",
+            "basis": "Rear cargo behind occupied second-row seats; manufacturer standard capacity; measurement method unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/zeekr-7x/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "3.8 s",
+            "basis": "Manufacturer 0–100 km/h claim",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.datocms-assets.com/130529/1755670382-au-7x-brochure-200825-web.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "475 kW",
+            "basis": "Published total vehicle motor peak power; not motor sum",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.datocms-assets.com/130529/1755670382-au-7x-brochure-200825-web.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "AWD",
+            "basis": "All-wheel drive, dual motor",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.datocms-assets.com/130529/1755670382-au-7x-brochure-200825-web.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,787 mm",
+            "basis": "Manufacturer Australian body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.datocms-assets.com/130529/1755670382-au-7x-brochure-200825-web.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,930 mm",
+            "basis": "Manufacturer Australian body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.datocms-assets.com/130529/1755670382-au-7x-brochure-200825-web.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,650 mm",
+            "basis": "Manufacturer Australian body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.datocms-assets.com/130529/1755670382-au-7x-brochure-200825-web.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "2,000 kg",
+            "basis": "Australian reported braked towing limit",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/zeekr/7x/2026/performance/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km (private use)",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://zcms.zeekrlife.com/published/assets/69db768999ef6f7067b88de5729fc40de340be85193f2813f0cc4d4dcce3eac4/Australian-Warranty-Policy.pdf",
+              "https://www.zeekrlife.com/en-au/service/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; 70% capacity retention (private use)",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://zcms.zeekrlife.com/published/assets/69db768999ef6f7067b88de5729fc40de340be85193f2813f0cc4d4dcce3eac4/Australian-Warranty-Policy.pdf",
+              "https://www.zeekrlife.com/en-au/service/"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "zeekr_x_my26__rwd__20261010",
+      "vehicle": "Zeekr X RWD",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "accepting_orders_advertised",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.zeekrlife.com/en-au/models/new-zeekr-x/",
+            "https://www.zeekrlife.com/en-au/"
+          ]
+        },
+        "outcome": "unavailable",
+        "note": "Zeekr X model page (zeekrlife.com/en-au/models/new-zeekr-x) lists no order status or price; not rechecked."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "48,900 AUD",
+            "basis": "National driveaway price reported by CarExpert",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-news/2026-zeekr-x-price-and-specs-updated-ev-gets-massive-price-cuts-1"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Zeekr X Build & Price opens the 7X configurator; switching model sits behind a delivery-ZIP dialog and the X page lists no price. Not rechecked."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "405 km",
+            "basis": "WLTP",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/new-zeekr-x/",
+              "https://www.datocms-assets.com/130529/1775779067-australia-brochure-zeekr-x-my26.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "61 kWh",
+            "basis": "Manufacturer battery capacity; gross/net unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/new-zeekr-x/",
+              "https://www.datocms-assets.com/130529/1775779067-australia-brochure-zeekr-x-my26.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "DC peak charging",
+          "due": false,
+          "current": {
+            "value": "230 kW",
+            "basis": "Vehicle maximum DC charging power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/new-zeekr-x/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "18 min",
+            "basis": "DC 10–80% state of charge",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-news/2026-zeekr-x-price-and-specs-updated-ev-gets-massive-price-cuts-1",
+              "https://zecar.com/reviews/2026-zeekr-x-price-specs-australia-cheaper-more-power"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maximum AC charging power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/new-zeekr-x/",
+              "https://www.datocms-assets.com/130529/1775779067-australia-brochure-zeekr-x-my26.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seats",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.datocms-assets.com/130529/1775779067-australia-brochure-zeekr-x-my26.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot volume",
+          "due": false,
+          "current": {
+            "value": "404 L",
+            "basis": "Rear boot with rear seats in place; measurement standard unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/new-zeekr-x/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "5.6 s",
+            "basis": "Manufacturer 0–100 km/h acceleration",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/new-zeekr-x/",
+              "https://www.datocms-assets.com/130529/1775779067-australia-brochure-zeekr-x-my26.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "250 kW",
+            "basis": "Peak vehicle power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/new-zeekr-x/",
+              "https://www.datocms-assets.com/130529/1775779067-australia-brochure-zeekr-x-my26.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Driven wheels",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/new-zeekr-x/",
+              "https://www.datocms-assets.com/130529/1775779067-australia-brochure-zeekr-x-my26.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,432 mm",
+            "basis": "Body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/new-zeekr-x/",
+              "https://www.datocms-assets.com/130529/1775779067-australia-brochure-zeekr-x-my26.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,836 mm",
+            "basis": "Body dimension; width excludes mirrors",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/new-zeekr-x/",
+              "https://www.datocms-assets.com/130529/1775779067-australia-brochure-zeekr-x-my26.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,566 mm",
+            "basis": "Body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/new-zeekr-x/",
+              "https://www.datocms-assets.com/130529/1775779067-australia-brochure-zeekr-x-my26.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,600 kg",
+            "basis": "Braked trailer towing capacity",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.redbook.com.au/cars/details/2026-zeekr-x-rwd-auto-my26/SPOT-ITM-692000/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km (private use)",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://zcms.zeekrlife.com/published/assets/69db768999ef6f7067b88de5729fc40de340be85193f2813f0cc4d4dcce3eac4/Australian-Warranty-Policy.pdf",
+              "https://www.zeekrlife.com/en-au/service/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; 70% capacity retention (private use)",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://zcms.zeekrlife.com/published/assets/69db768999ef6f7067b88de5729fc40de340be85193f2813f0cc4d4dcce3eac4/Australian-Warranty-Policy.pdf",
+              "https://www.zeekrlife.com/en-au/service/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "advertised_driveaway_aud",
+          "label": "Advertised from-driveaway offer",
+          "due": true,
+          "current": {
+            "value": "48,900 AUD",
+            "basis": "Manufacturer starting driveaway campaign; full eligibility unverified",
+            "grade": "check",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Same as above; no Zeekr X price on any page read."
+        }
+      ]
+    },
+    {
+      "variantId": "zeekr_x_my26__awd__20261010",
+      "vehicle": "Zeekr X AWD",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "accepting_orders_advertised",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.zeekrlife.com/en-au/models/new-zeekr-x/",
+            "https://www.zeekrlife.com/en-au/"
+          ]
+        },
+        "outcome": "unavailable",
+        "note": "Zeekr X model page (zeekrlife.com/en-au/models/new-zeekr-x) lists no order status or price; not rechecked."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "57,900 AUD",
+            "basis": "National driveaway price reported by CarExpert",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-news/2026-zeekr-x-price-and-specs-updated-ev-gets-massive-price-cuts-1"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Zeekr X Build & Price opens the 7X configurator; switching model sits behind a delivery-ZIP dialog and the X page lists no price. Not rechecked."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "415 km",
+            "basis": "WLTP",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/new-zeekr-x/",
+              "https://www.datocms-assets.com/130529/1775779067-australia-brochure-zeekr-x-my26.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "66 kWh",
+            "basis": "Manufacturer battery capacity; gross/net unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/new-zeekr-x/",
+              "https://www.datocms-assets.com/130529/1775779067-australia-brochure-zeekr-x-my26.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "DC peak charging",
+          "due": false,
+          "current": {
+            "value": "150 kW",
+            "basis": "Vehicle maximum DC charging power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/new-zeekr-x/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "30 min",
+            "basis": "DC 10–80% state of charge",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://zecar.com/reviews/2026-zeekr-x-price-specs-australia-cheaper-more-power"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "22 kW",
+            "basis": "Maximum AC charging power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/new-zeekr-x/",
+              "https://www.datocms-assets.com/130529/1775779067-australia-brochure-zeekr-x-my26.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seats",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.datocms-assets.com/130529/1775779067-australia-brochure-zeekr-x-my26.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot volume",
+          "due": false,
+          "current": {
+            "value": "404 L",
+            "basis": "Rear boot with rear seats in place; measurement standard unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/new-zeekr-x/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "3.7 s",
+            "basis": "Manufacturer 0–100 km/h acceleration",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/new-zeekr-x/",
+              "https://www.datocms-assets.com/130529/1775779067-australia-brochure-zeekr-x-my26.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "365 kW",
+            "basis": "Peak vehicle power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/new-zeekr-x/",
+              "https://www.datocms-assets.com/130529/1775779067-australia-brochure-zeekr-x-my26.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "AWD",
+            "basis": "Driven wheels",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/new-zeekr-x/",
+              "https://www.datocms-assets.com/130529/1775779067-australia-brochure-zeekr-x-my26.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,432 mm",
+            "basis": "Body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/new-zeekr-x/",
+              "https://www.datocms-assets.com/130529/1775779067-australia-brochure-zeekr-x-my26.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,836 mm",
+            "basis": "Body dimension; width excludes mirrors",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/new-zeekr-x/",
+              "https://www.datocms-assets.com/130529/1775779067-australia-brochure-zeekr-x-my26.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,566 mm",
+            "basis": "Body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/new-zeekr-x/",
+              "https://www.datocms-assets.com/130529/1775779067-australia-brochure-zeekr-x-my26.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,600 kg",
+            "basis": "Braked trailer towing capacity",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.redbook.com.au/cars/details/2026-zeekr-x-awd-auto-awd-my26/SPOT-ITM-692001/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km (private use)",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://zcms.zeekrlife.com/published/assets/69db768999ef6f7067b88de5729fc40de340be85193f2813f0cc4d4dcce3eac4/Australian-Warranty-Policy.pdf",
+              "https://www.zeekrlife.com/en-au/service/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; 70% capacity retention (private use)",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://zcms.zeekrlife.com/published/assets/69db768999ef6f7067b88de5729fc40de340be85193f2813f0cc4d4dcce3eac4/Australian-Warranty-Policy.pdf",
+              "https://www.zeekrlife.com/en-au/service/"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "zeekr_009_116__7_seat_fwd__20261010",
+      "vehicle": "Zeekr 009 7-seat FWD",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.zeekrlife.com/en-au/models/009/",
+            "https://www.carexpert.com.au/car-news/2026-zeekr-009-luxury-ev-people-mover-gets-more-affordable"
+          ]
+        },
+        "outcome": "unchanged",
+        "note": "Still listed on the configurator; order acceptance and delivery not stated.",
+        "sourceIds": [
+          "refresh-zeekr-2026-11-05-cfg-009"
+        ]
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "115,900 AUD",
+            "basis": "Reported by CarExpert; before on-road costs",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-reviews/2026-zeekr-009-review",
+              "https://www.carexpert.com.au/car-news/2026-zeekr-009-luxury-ev-people-mover-gets-more-affordable"
+            ]
+          },
+          "outcome": "unchanged",
+          "note": "Zeekr's own configurator shows the same figures with no stated basis, so the grade stays Reported on the basis recorded from CarExpert.",
+          "sourceIds": [
+            "refresh-zeekr-2026-11-05-cfg-009",
+            "m1-zeekr-2026-10-14-009_ce_review",
+            "m1-zeekr-2026-10-14-009_ce_launch"
+          ],
+          "reason": "Rechecked 2026-11-05: Zeekr's configurator shows the same figure; it states no price basis, so the grade and the CarExpert 'before on-road costs' basis are carried forward unchanged."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "604 km",
+            "basis": "WLTP",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/009/",
+              "https://www.datocms-assets.com/130529/1771919710-zeekr-009-brochure_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "116 kWh",
+            "basis": "Maker published capacity @1C; gross/net unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.datocms-assets.com/130529/1771919710-zeekr-009-brochure_2026.pdf",
+              "https://tddashboard.s3.ap-southeast-2.amazonaws.com/1788760937-zeekr-009-brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "DC peak charging",
+          "due": false,
+          "current": {
+            "value": "205 (CarExpert editorial); 206 (JATO data) kW",
+            "basis": "Published secondary maximum DC claims remain unresolved",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-reviews/2026-zeekr-009-review",
+              "https://www.carexpert.com.au/zeekr/009/2026-base-mpv-fwd-electric-jska5wga20260318"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "30 min",
+            "basis": "10–80% SOC; maker publishes 150 kW and 205 kW charger conditions",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/009/",
+              "https://www.datocms-assets.com/130529/1771919710-zeekr-009-brochure_2026.pdf",
+              "https://tddashboard.s3.ap-southeast-2.amazonaws.com/1788760937-zeekr-009-brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maker advertised AC charging power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.datocms-assets.com/130529/1771919710-zeekr-009-brochure_2026.pdf",
+              "https://tddashboard.s3.ap-southeast-2.amazonaws.com/1788760937-zeekr-009-brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "7",
+            "basis": "Factory seating layout 2+2+3",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/009/",
+              "https://www.datocms-assets.com/130529/1771919710-zeekr-009-brochure_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot volume",
+          "due": false,
+          "current": {
+            "value": "574 L",
+            "basis": "Rear luggage volume with all seats in use; maker declared",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/posts/zeekr-009-fwd-delivers-best-in-range-efficiency-without-compromising-luxury/",
+              "https://www.datocms-assets.com/130529/1771919710-zeekr-009-brochure_2026.pdf",
+              "https://tddashboard.s3.ap-southeast-2.amazonaws.com/1788760937-zeekr-009-brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "7.9 s",
+            "basis": "Maker claimed 0–100 km/h",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/009/",
+              "https://www.datocms-assets.com/130529/1771919710-zeekr-009-brochure_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "250 kW",
+            "basis": "Maker total peak motor output",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/009/",
+              "https://www.datocms-assets.com/130529/1771919710-zeekr-009-brochure_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "FWD",
+            "basis": "Maker drivetrain",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/009/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "5,209 mm",
+            "basis": "Maker body length",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/009/",
+              "https://www.datocms-assets.com/130529/1771919710-zeekr-009-brochure_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "2,024 mm",
+            "basis": "Maker published body width",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/009/",
+              "https://www.datocms-assets.com/130529/1771919710-zeekr-009-brochure_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,812 mm",
+            "basis": "Maker published body height",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/009/",
+              "https://www.datocms-assets.com/130529/1771919710-zeekr-009-brochure_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "0 kg",
+            "basis": "Reported braked towing: not permitted to tow (NRMA)",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://jss.sitecore.prod.svc.mynrma.com.au/open-road/car-reviews/car-comparisons/zeekr-009-vs-vw-id-buzz-vs-merc-eqv-people-movers-comparison-review",
+              "https://www.choice.com.au/products/transport/cars/eco-friendly/zeekr-009-6-seater",
+              "https://www.carsguide.com.au/zeekr/009/towing-capacity"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km (private use)",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://zcms.zeekrlife.com/published/assets/69db768999ef6f7067b88de5729fc40de340be85193f2813f0cc4d4dcce3eac4/Australian-Warranty-Policy.pdf",
+              "https://www.zeekrlife.com/en-au/service/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; 70% capacity retention (private use)",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://zcms.zeekrlife.com/published/assets/69db768999ef6f7067b88de5729fc40de340be85193f2813f0cc4d4dcce3eac4/Australian-Warranty-Policy.pdf",
+              "https://www.zeekrlife.com/en-au/service/"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "zeekr_009_116__7_seat_awd__20261010",
+      "vehicle": "Zeekr 009 7-seat AWD",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.zeekrlife.com/en-au/models/009/",
+            "https://www.carexpert.com.au/car-news/2026-zeekr-009-luxury-ev-people-mover-gets-more-affordable"
+          ]
+        },
+        "outcome": "unchanged",
+        "note": "Still listed on the configurator; order acceptance and delivery not stated.",
+        "sourceIds": [
+          "refresh-zeekr-2026-11-05-cfg-009"
+        ]
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "135,900 AUD",
+            "basis": "Reported by CarExpert; before on-road costs",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-reviews/2026-zeekr-009-review",
+              "https://www.carexpert.com.au/car-news/2026-zeekr-009-luxury-ev-people-mover-gets-more-affordable"
+            ]
+          },
+          "outcome": "unchanged",
+          "note": "Zeekr's own configurator shows the same figures with no stated basis, so the grade stays Reported on the basis recorded from CarExpert.",
+          "sourceIds": [
+            "refresh-zeekr-2026-11-05-cfg-009",
+            "m1-zeekr-2026-10-14-009_ce_review",
+            "m1-zeekr-2026-10-14-009_ce_launch"
+          ],
+          "reason": "Rechecked 2026-11-05: Zeekr's configurator shows the same figure; it states no price basis, so the grade and the CarExpert 'before on-road costs' basis are carried forward unchanged."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "582 km",
+            "basis": "WLTP",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/009/",
+              "https://www.datocms-assets.com/130529/1771919710-zeekr-009-brochure_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "116 kWh",
+            "basis": "Maker published capacity @1C; gross/net unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.datocms-assets.com/130529/1771919710-zeekr-009-brochure_2026.pdf",
+              "https://tddashboard.s3.ap-southeast-2.amazonaws.com/1788760937-zeekr-009-brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "DC peak charging",
+          "due": false,
+          "current": {
+            "value": "205 (CarExpert editorial); 206 (JATO data) kW",
+            "basis": "Published secondary maximum DC claims remain unresolved",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-reviews/2026-zeekr-009-review",
+              "https://www.carexpert.com.au/zeekr/009/2026-mpv-4x4-electric-jsgkos8820241112"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "30 min",
+            "basis": "10–80% SOC; maker publishes 150 kW and 205 kW charger conditions",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/009/",
+              "https://www.datocms-assets.com/130529/1771919710-zeekr-009-brochure_2026.pdf",
+              "https://tddashboard.s3.ap-southeast-2.amazonaws.com/1788760937-zeekr-009-brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maker advertised AC charging power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.datocms-assets.com/130529/1771919710-zeekr-009-brochure_2026.pdf",
+              "https://tddashboard.s3.ap-southeast-2.amazonaws.com/1788760937-zeekr-009-brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "7",
+            "basis": "Factory seating layout 2+2+3",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/009/",
+              "https://www.datocms-assets.com/130529/1771919710-zeekr-009-brochure_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot volume",
+          "due": false,
+          "current": {
+            "value": "574 L",
+            "basis": "Rear luggage volume with all seats in use; maker declared",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/posts/zeekr-009-fwd-delivers-best-in-range-efficiency-without-compromising-luxury/",
+              "https://www.datocms-assets.com/130529/1771919710-zeekr-009-brochure_2026.pdf",
+              "https://tddashboard.s3.ap-southeast-2.amazonaws.com/1788760937-zeekr-009-brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "4.5 s",
+            "basis": "Maker claimed 0–100 km/h",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/009/",
+              "https://www.datocms-assets.com/130529/1771919710-zeekr-009-brochure_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "450 kW",
+            "basis": "Maker total peak motor output",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/009/",
+              "https://www.datocms-assets.com/130529/1771919710-zeekr-009-brochure_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "AWD",
+            "basis": "Maker drivetrain",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/009/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "5,209 mm",
+            "basis": "Maker body length",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/009/",
+              "https://www.datocms-assets.com/130529/1771919710-zeekr-009-brochure_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "2,024 mm",
+            "basis": "Maker published body width",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/009/",
+              "https://www.datocms-assets.com/130529/1771919710-zeekr-009-brochure_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,812 mm",
+            "basis": "Maker published body height",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/009/",
+              "https://www.datocms-assets.com/130529/1771919710-zeekr-009-brochure_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "0 kg",
+            "basis": "Reported braked towing: not permitted to tow (NRMA)",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://jss.sitecore.prod.svc.mynrma.com.au/open-road/car-reviews/car-comparisons/zeekr-009-vs-vw-id-buzz-vs-merc-eqv-people-movers-comparison-review",
+              "https://www.choice.com.au/products/transport/cars/eco-friendly/zeekr-009-6-seater",
+              "https://www.carsguide.com.au/zeekr/009/towing-capacity"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km (private use)",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://zcms.zeekrlife.com/published/assets/69db768999ef6f7067b88de5729fc40de340be85193f2813f0cc4d4dcce3eac4/Australian-Warranty-Policy.pdf",
+              "https://www.zeekrlife.com/en-au/service/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; 70% capacity retention (private use)",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://zcms.zeekrlife.com/published/assets/69db768999ef6f7067b88de5729fc40de340be85193f2813f0cc4d4dcce3eac4/Australian-Warranty-Policy.pdf",
+              "https://www.zeekrlife.com/en-au/service/"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "zeekr_009_116__6_seat_awd__20261010",
+      "vehicle": "Zeekr 009 6-seat AWD",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.zeekrlife.com/en-au/models/009/",
+            "https://www.carexpert.com.au/car-news/2026-zeekr-009-luxury-ev-people-mover-gets-more-affordable"
+          ]
+        },
+        "outcome": "unchanged",
+        "note": "Still listed on the configurator; order acceptance and delivery not stated.",
+        "sourceIds": [
+          "refresh-zeekr-2026-11-05-cfg-009"
+        ]
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "139,900 AUD",
+            "basis": "Reported by CarExpert; before on-road costs",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-reviews/2026-zeekr-009-review",
+              "https://www.carexpert.com.au/car-news/2026-zeekr-009-luxury-ev-people-mover-gets-more-affordable"
+            ]
+          },
+          "outcome": "unchanged",
+          "note": "Zeekr's own configurator shows the same figures with no stated basis, so the grade stays Reported on the basis recorded from CarExpert.",
+          "sourceIds": [
+            "refresh-zeekr-2026-11-05-cfg-009",
+            "m1-zeekr-2026-10-14-009_ce_review",
+            "m1-zeekr-2026-10-14-009_ce_launch"
+          ],
+          "reason": "Rechecked 2026-11-05: Zeekr's configurator shows the same figure; it states no price basis, so the grade and the CarExpert 'before on-road costs' basis are carried forward unchanged."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "582 km",
+            "basis": "WLTP",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/009/",
+              "https://www.datocms-assets.com/130529/1771919710-zeekr-009-brochure_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "116 kWh",
+            "basis": "Maker published capacity @1C; gross/net unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.datocms-assets.com/130529/1771919710-zeekr-009-brochure_2026.pdf",
+              "https://tddashboard.s3.ap-southeast-2.amazonaws.com/1788760937-zeekr-009-brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "DC peak charging",
+          "due": false,
+          "current": {
+            "value": "205 (CarExpert editorial); 206 (JATO data) kW",
+            "basis": "Published secondary maximum DC claims remain unresolved",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-reviews/2026-zeekr-009-review",
+              "https://www.carexpert.com.au/zeekr/009/2026-mpv-4x4-electric-jsgkos8a20241112"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "30 min",
+            "basis": "10–80% SOC; maker publishes 150 kW and 205 kW charger conditions",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/009/",
+              "https://www.datocms-assets.com/130529/1771919710-zeekr-009-brochure_2026.pdf",
+              "https://tddashboard.s3.ap-southeast-2.amazonaws.com/1788760937-zeekr-009-brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maker advertised AC charging power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.datocms-assets.com/130529/1771919710-zeekr-009-brochure_2026.pdf",
+              "https://tddashboard.s3.ap-southeast-2.amazonaws.com/1788760937-zeekr-009-brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "6",
+            "basis": "Factory seating layout 2+2+2",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/009/",
+              "https://www.datocms-assets.com/130529/1771919710-zeekr-009-brochure_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot volume",
+          "due": false,
+          "current": {
+            "value": "574 L",
+            "basis": "Rear luggage volume with all seats in use; maker declared",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/posts/zeekr-009-fwd-delivers-best-in-range-efficiency-without-compromising-luxury/",
+              "https://www.datocms-assets.com/130529/1771919710-zeekr-009-brochure_2026.pdf",
+              "https://tddashboard.s3.ap-southeast-2.amazonaws.com/1788760937-zeekr-009-brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "4.5 s",
+            "basis": "Maker claimed 0–100 km/h",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/009/",
+              "https://www.datocms-assets.com/130529/1771919710-zeekr-009-brochure_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "450 kW",
+            "basis": "Maker total peak motor output",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/009/",
+              "https://www.datocms-assets.com/130529/1771919710-zeekr-009-brochure_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "AWD",
+            "basis": "Maker drivetrain",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/009/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "5,209 mm",
+            "basis": "Maker body length",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/009/",
+              "https://www.datocms-assets.com/130529/1771919710-zeekr-009-brochure_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "2,024 mm",
+            "basis": "Maker published body width",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/009/",
+              "https://www.datocms-assets.com/130529/1771919710-zeekr-009-brochure_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,812 mm",
+            "basis": "Maker published body height",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.zeekrlife.com/en-au/models/009/",
+              "https://www.datocms-assets.com/130529/1771919710-zeekr-009-brochure_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "0 kg",
+            "basis": "Reported braked towing: not permitted to tow (NRMA)",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://jss.sitecore.prod.svc.mynrma.com.au/open-road/car-reviews/car-comparisons/zeekr-009-vs-vw-id-buzz-vs-merc-eqv-people-movers-comparison-review",
+              "https://www.choice.com.au/products/transport/cars/eco-friendly/zeekr-009-6-seater",
+              "https://www.carsguide.com.au/zeekr/009/towing-capacity"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km (private use)",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://zcms.zeekrlife.com/published/assets/69db768999ef6f7067b88de5729fc40de340be85193f2813f0cc4d4dcce3eac4/Australian-Warranty-Policy.pdf",
+              "https://www.zeekrlife.com/en-au/service/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; 70% capacity retention (private use)",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://zcms.zeekrlife.com/published/assets/69db768999ef6f7067b88de5729fc40de340be85193f2813f0cc4d4dcce3eac4/Australian-Warranty-Policy.pdf",
+              "https://www.zeekrlife.com/en-au/service/"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    }
+  ],
+  "newVersions": [
+    {
+      "name": "Zeekr 7X Performance AWD Black Edition (catalogue id zeekr_7x__black_special_edition_awd__4)",
+      "url": "https://conf.zeekrlife.com/en-au/",
+      "note": "Configurator lists it at $75,900 MLP on 2026-11-05. The catalogue holds this version as not on sale, so its price and availability were not rechecked here; it needs a normal brand-update review."
+    }
+  ]
+}

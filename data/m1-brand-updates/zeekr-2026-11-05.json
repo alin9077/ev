@@ -1,0 +1,912 @@
+{
+  "schemaVersion": 1,
+  "id": "refresh-zeekr-2026-11-05",
+  "brand": "Zeekr",
+  "reviewedAt": "2026-11-05",
+  "reviewedBy": "Roadmark WS2 refresh (Claude Code worker), Zeekr",
+  "sources": [
+    {
+      "id": "refresh-zeekr-2026-11-05-cfg-7x",
+      "url": "https://conf.zeekrlife.com/en-au/",
+      "title": "Zeekr Australia online configurator (default model: Zeekr 7X)",
+      "publisher": "Zeekr Australia",
+      "source_type": "official_configurator",
+      "published_date": null,
+      "accessed_date": "2026-11-05",
+      "market": "AU",
+      "supports": "Opened 2026-11-05. Zeekr 7X: Standard RWD $57,900; Long Range RWD $63,900; Performance AWD $72,900; Performance AWD Black Edition $75,900. Page states: Manufacturer's List Price (MLP) includes GST and excludes on-road costs (dealer delivery, stamp duty, registration, CTP insurance) and options; prices correct as at 01/11/2026 and subject to change. The Black Edition price is for a version this refresh did not scaffold."
+    },
+    {
+      "id": "refresh-zeekr-2026-11-05-cfg-009",
+      "url": "https://conf.zeekrlife.com/en-au/?linkCode=1037",
+      "title": "Zeekr Australia online configurator, Zeekr 009",
+      "publisher": "Zeekr Australia",
+      "source_type": "official_configurator",
+      "published_date": null,
+      "accessed_date": "2026-11-05",
+      "market": "AU",
+      "supports": "Opened 2026-11-05. Zeekr 009: 7 Seater FWD $115,900; 7 Seater AWD $135,900; 6 Seater AWD $139,900. This page states no price basis (before or after on-road costs)."
+    },
+    {
+      "id": "refresh-zeekr-2026-11-05-offers",
+      "url": "https://www.zeekrlife.com/en-au/offers",
+      "title": "Zeekr Australia offers",
+      "publisher": "Zeekr Australia",
+      "source_type": "manufacturer_au_offer",
+      "published_date": null,
+      "accessed_date": "2026-11-05",
+      "market": "AU",
+      "supports": "Opened 2026-11-05. MY27 Zeekr 7X launch offer, 1 November to 31 December 2026: complimentary premium paint, interior selection, two scheduled services, home wall charger, 5000 Z-Points and gift package for customers who purchase or place an order with deposit through an authorised dealer. No price change stated."
+    },
+    {
+      "id": "m1-zeekr-2026-10-14-009_ce_launch",
+      "url": "https://www.carexpert.com.au/car-news/2026-zeekr-009-luxury-ev-people-mover-gets-more-affordable",
+      "title": "2026 Zeekr 009: Luxury EV people mover gets more affordable",
+      "publisher": "CarExpert",
+      "source_type": "australian_secondary_report",
+      "published_date": "2025-11-14",
+      "accessed_date": "2026-10-14",
+      "market": "AU",
+      "supports": "Second three-trim before-on-road price list. FWD was available to order from 14 November 2025.",
+      "capture_sha256": "7399f4f3206e6c02708f127f46f86f062f097121bdc88d6d5c85c3723f75c062",
+      "capture_locator": "009/carexpert-fwd-launch.html"
+    },
+    {
+      "id": "m1-zeekr-2026-10-14-009_ce_review",
+      "url": "https://www.carexpert.com.au/car-reviews/2026-zeekr-009-review",
+      "title": "2026 Zeekr 009 review",
+      "publisher": "CarExpert",
+      "source_type": "australian_secondary_report",
+      "published_date": "2026-02-02",
+      "accessed_date": "2026-10-14",
+      "market": "AU",
+      "supports": "Exact three-trim before-on-road price table. The AWD editorial table separately reports maximum AC 11 kW and maximum DC 205 kW. The embedded JATO block reports DC 206 kW. The six-seat review reports 574 L behind the third row and 29 L under the bonnet.",
+      "capture_sha256": "1d74c63a597e615f90e4f47f10a1aae693195d8ee279d1a40526f5d6ed9f7082",
+      "capture_locator": "009/carexpert-review-2026.html"
+    }
+  ],
+  "models": [],
+  "variants": [],
+  "versionGuards": [
+    {
+      "variantId": "zeekr_009_116__6_seat_awd__20261010",
+      "before": {
+        "id": "zeekr_009_116__6_seat_awd__20261010",
+        "modelId": "zeekr_009_116",
+        "brand": "Zeekr",
+        "model": "009",
+        "trim": "6-seat AWD",
+        "year": null,
+        "generation": "Australian 116 kWh specification; current six- and seven-seat range",
+        "vehicleClass": "passenger",
+        "drive": "AWD"
+      }
+    },
+    {
+      "variantId": "zeekr_009_116__7_seat_awd__20261010",
+      "before": {
+        "id": "zeekr_009_116__7_seat_awd__20261010",
+        "modelId": "zeekr_009_116",
+        "brand": "Zeekr",
+        "model": "009",
+        "trim": "7-seat AWD",
+        "year": null,
+        "generation": "Australian 116 kWh specification; current six- and seven-seat range",
+        "vehicleClass": "passenger",
+        "drive": "AWD"
+      }
+    },
+    {
+      "variantId": "zeekr_009_116__7_seat_fwd__20261010",
+      "before": {
+        "id": "zeekr_009_116__7_seat_fwd__20261010",
+        "modelId": "zeekr_009_116",
+        "brand": "Zeekr",
+        "model": "009",
+        "trim": "7-seat FWD",
+        "year": null,
+        "generation": "Australian 116 kWh specification; current six- and seven-seat range",
+        "vehicleClass": "passenger",
+        "drive": "FWD"
+      }
+    },
+    {
+      "variantId": "zeekr_7x__long_range_rwd__2",
+      "before": {
+        "id": "zeekr_7x__long_range_rwd__2",
+        "modelId": "zeekr_7x",
+        "brand": "Zeekr",
+        "model": "7X",
+        "trim": "Long Range RWD",
+        "year": null,
+        "generation": "Australian 75/100 kWh 800 V specification",
+        "vehicleClass": "passenger",
+        "drive": "RWD"
+      }
+    },
+    {
+      "variantId": "zeekr_7x__performance_awd__3",
+      "before": {
+        "id": "zeekr_7x__performance_awd__3",
+        "modelId": "zeekr_7x",
+        "brand": "Zeekr",
+        "model": "7X",
+        "trim": "Performance AWD",
+        "year": null,
+        "generation": "Australian 75/100 kWh 800 V specification",
+        "vehicleClass": "passenger",
+        "drive": "AWD"
+      }
+    },
+    {
+      "variantId": "zeekr_7x__rwd__1",
+      "before": {
+        "id": "zeekr_7x__rwd__1",
+        "modelId": "zeekr_7x",
+        "brand": "Zeekr",
+        "model": "7X",
+        "trim": "RWD",
+        "year": null,
+        "generation": "Australian 75/100 kWh 800 V specification",
+        "vehicleClass": "passenger",
+        "drive": "RWD"
+      }
+    }
+  ],
+  "versionUpdates": [],
+  "facts": [
+    {
+      "variantId": "zeekr_7x__rwd__1",
+      "before": {
+        "key": "price_aud",
+        "label": "Price",
+        "value": 57900,
+        "unit": "AUD",
+        "basis": "Before on-road costs",
+        "comparisonBasis": "Before on-road costs",
+        "status": "standard",
+        "sourceIds": [
+          "m1-zeekr-2026-10-14-7x_price_maker"
+        ],
+        "date": "2026-10-14",
+        "market": "AU",
+        "scope": "Zeekr 7X RWD",
+        "qualifications": [],
+        "issues": [],
+        "buyerGrade": "confirmed",
+        "gradeReview": {
+          "reviewedAt": "2026-10-14",
+          "overlayId": "m1-zeekr-2026-10-14",
+          "reason": "Zeekr-issued release supplies exact trim price before on-road costs; 2026 AU published price list corroborates unchanged amounts.",
+          "evidenceScope": "exact_au_version",
+          "sourceIds": [
+            "m1-zeekr-2026-10-14-7x_price_maker"
+          ],
+          "sourceLabel": "Zeekr (release distributed via PR Newswire)"
+        },
+        "priceEvidence": {
+          "rung": 1,
+          "basisTag": "Maker’s RRP · before on-road costs",
+          "sourceKey": "price_aud",
+          "sourcePointer": "https://www.prnewswire.com/apac/news-releases/from-the-studio-to-the-front-seat-zeekr-australia-appoints-cody-simpson-as-brand-ambassador-for-the-all-electric-zeekr-7x-302622518.html",
+          "originalBasis": "Before on-road costs",
+          "rankingEligible": true
+        }
+      },
+      "after": {
+        "key": "price_aud",
+        "label": "Price",
+        "value": 57900,
+        "unit": "AUD",
+        "basis": "Before on-road costs",
+        "comparisonBasis": "Before on-road costs",
+        "status": "standard",
+        "sourceIds": [
+          "refresh-zeekr-2026-11-05-cfg-7x"
+        ],
+        "date": "2026-11-05",
+        "market": "AU",
+        "scope": "Zeekr 7X RWD",
+        "qualifications": [],
+        "issues": [],
+        "buyerGrade": "confirmed",
+        "gradeReview": {
+          "reviewedAt": "2026-11-05",
+          "overlayId": "refresh-zeekr-2026-11-05",
+          "reason": "Rechecked 2026-11-05 against the cited page: unchanged. Configurator shows the same maker list price (MLP, excludes on-road costs), correct as at 01/11/2026.",
+          "evidenceScope": "exact_au_version",
+          "sourceIds": [
+            "refresh-zeekr-2026-11-05-cfg-7x"
+          ],
+          "sourceLabel": "Zeekr Australia"
+        },
+        "priceEvidence": {
+          "rung": 1,
+          "basisTag": "Maker’s RRP · before on-road costs",
+          "sourceKey": "price_aud",
+          "sourcePointer": "https://conf.zeekrlife.com/en-au/",
+          "originalBasis": "Before on-road costs",
+          "rankingEligible": true
+        }
+      }
+    },
+    {
+      "variantId": "zeekr_7x__long_range_rwd__2",
+      "before": {
+        "key": "price_aud",
+        "label": "Price",
+        "value": 63900,
+        "unit": "AUD",
+        "basis": "Before on-road costs",
+        "comparisonBasis": "Before on-road costs",
+        "status": "standard",
+        "sourceIds": [
+          "m1-zeekr-2026-10-14-7x_price_maker"
+        ],
+        "date": "2026-10-14",
+        "market": "AU",
+        "scope": "Zeekr 7X Long Range RWD",
+        "qualifications": [],
+        "issues": [],
+        "buyerGrade": "confirmed",
+        "gradeReview": {
+          "reviewedAt": "2026-10-14",
+          "overlayId": "m1-zeekr-2026-10-14",
+          "reason": "Zeekr-issued release supplies exact trim price before on-road costs; 2026 AU published price list corroborates unchanged amounts.",
+          "evidenceScope": "exact_au_version",
+          "sourceIds": [
+            "m1-zeekr-2026-10-14-7x_price_maker"
+          ],
+          "sourceLabel": "Zeekr (release distributed via PR Newswire)"
+        },
+        "priceEvidence": {
+          "rung": 1,
+          "basisTag": "Maker’s RRP · before on-road costs",
+          "sourceKey": "price_aud",
+          "sourcePointer": "https://www.prnewswire.com/apac/news-releases/from-the-studio-to-the-front-seat-zeekr-australia-appoints-cody-simpson-as-brand-ambassador-for-the-all-electric-zeekr-7x-302622518.html",
+          "originalBasis": "Before on-road costs",
+          "rankingEligible": true
+        }
+      },
+      "after": {
+        "key": "price_aud",
+        "label": "Price",
+        "value": 63900,
+        "unit": "AUD",
+        "basis": "Before on-road costs",
+        "comparisonBasis": "Before on-road costs",
+        "status": "standard",
+        "sourceIds": [
+          "refresh-zeekr-2026-11-05-cfg-7x"
+        ],
+        "date": "2026-11-05",
+        "market": "AU",
+        "scope": "Zeekr 7X Long Range RWD",
+        "qualifications": [],
+        "issues": [],
+        "buyerGrade": "confirmed",
+        "gradeReview": {
+          "reviewedAt": "2026-11-05",
+          "overlayId": "refresh-zeekr-2026-11-05",
+          "reason": "Rechecked 2026-11-05 against the cited page: unchanged. Configurator shows the same maker list price (MLP, excludes on-road costs), correct as at 01/11/2026.",
+          "evidenceScope": "exact_au_version",
+          "sourceIds": [
+            "refresh-zeekr-2026-11-05-cfg-7x"
+          ],
+          "sourceLabel": "Zeekr Australia"
+        },
+        "priceEvidence": {
+          "rung": 1,
+          "basisTag": "Maker’s RRP · before on-road costs",
+          "sourceKey": "price_aud",
+          "sourcePointer": "https://conf.zeekrlife.com/en-au/",
+          "originalBasis": "Before on-road costs",
+          "rankingEligible": true
+        }
+      }
+    },
+    {
+      "variantId": "zeekr_7x__performance_awd__3",
+      "before": {
+        "key": "price_aud",
+        "label": "Price",
+        "value": 72900,
+        "unit": "AUD",
+        "basis": "Before on-road costs",
+        "comparisonBasis": "Before on-road costs",
+        "status": "standard",
+        "sourceIds": [
+          "m1-zeekr-2026-10-14-7x_price_maker"
+        ],
+        "date": "2026-10-14",
+        "market": "AU",
+        "scope": "Zeekr 7X Performance AWD",
+        "qualifications": [],
+        "issues": [],
+        "buyerGrade": "confirmed",
+        "gradeReview": {
+          "reviewedAt": "2026-10-14",
+          "overlayId": "m1-zeekr-2026-10-14",
+          "reason": "Zeekr-issued release supplies exact trim price before on-road costs; 2026 AU published price list corroborates unchanged amounts.",
+          "evidenceScope": "exact_au_version",
+          "sourceIds": [
+            "m1-zeekr-2026-10-14-7x_price_maker"
+          ],
+          "sourceLabel": "Zeekr (release distributed via PR Newswire)"
+        },
+        "priceEvidence": {
+          "rung": 1,
+          "basisTag": "Maker’s RRP · before on-road costs",
+          "sourceKey": "price_aud",
+          "sourcePointer": "https://www.prnewswire.com/apac/news-releases/from-the-studio-to-the-front-seat-zeekr-australia-appoints-cody-simpson-as-brand-ambassador-for-the-all-electric-zeekr-7x-302622518.html",
+          "originalBasis": "Before on-road costs",
+          "rankingEligible": true
+        }
+      },
+      "after": {
+        "key": "price_aud",
+        "label": "Price",
+        "value": 72900,
+        "unit": "AUD",
+        "basis": "Before on-road costs",
+        "comparisonBasis": "Before on-road costs",
+        "status": "standard",
+        "sourceIds": [
+          "refresh-zeekr-2026-11-05-cfg-7x"
+        ],
+        "date": "2026-11-05",
+        "market": "AU",
+        "scope": "Zeekr 7X Performance AWD",
+        "qualifications": [],
+        "issues": [],
+        "buyerGrade": "confirmed",
+        "gradeReview": {
+          "reviewedAt": "2026-11-05",
+          "overlayId": "refresh-zeekr-2026-11-05",
+          "reason": "Rechecked 2026-11-05 against the cited page: unchanged. Configurator shows the same maker list price (MLP, excludes on-road costs), correct as at 01/11/2026.",
+          "evidenceScope": "exact_au_version",
+          "sourceIds": [
+            "refresh-zeekr-2026-11-05-cfg-7x"
+          ],
+          "sourceLabel": "Zeekr Australia"
+        },
+        "priceEvidence": {
+          "rung": 1,
+          "basisTag": "Maker’s RRP · before on-road costs",
+          "sourceKey": "price_aud",
+          "sourcePointer": "https://conf.zeekrlife.com/en-au/",
+          "originalBasis": "Before on-road costs",
+          "rankingEligible": true
+        }
+      }
+    },
+    {
+      "variantId": "zeekr_009_116__7_seat_fwd__20261010",
+      "before": {
+        "key": "price_aud",
+        "label": "Price",
+        "value": 115900,
+        "unit": "AUD",
+        "basis": "Reported by CarExpert; before on-road costs",
+        "comparisonBasis": "Before on-road costs",
+        "status": "conditional",
+        "sourceIds": [
+          "m1-zeekr-2026-10-14-009_ce_review",
+          "m1-zeekr-2026-10-14-009_ce_launch"
+        ],
+        "date": "2026-10-14",
+        "market": "AU",
+        "scope": "Zeekr 009 7-seat FWD",
+        "qualifications": [],
+        "issues": [],
+        "buyerGrade": "reported",
+        "gradeReview": {
+          "reviewedAt": "2026-10-14",
+          "overlayId": "m1-zeekr-2026-10-14",
+          "reason": "The exact named-trim before-on-road price is published in Australian editorial tables. Current maker page and FWD release omit prices; the linked public configurator exposes only its shell and cloud browser execution was unavailable. Targeted maker release searches produced no higher-rung exact price.",
+          "evidenceScope": "secondary_or_sibling",
+          "sourceIds": [
+            "m1-zeekr-2026-10-14-009_ce_review",
+            "m1-zeekr-2026-10-14-009_ce_launch"
+          ],
+          "sourceLabel": "CarExpert"
+        },
+        "resolvedElsewhere": true,
+        "priceEvidence": {
+          "rung": 5,
+          "basisTag": "Reported by CarExpert · before on-road costs",
+          "sourceKey": "price_aud",
+          "sourcePointer": "https://www.carexpert.com.au/car-reviews/2026-zeekr-009-review",
+          "originalBasis": "Reported by CarExpert; before on-road costs",
+          "rankingEligible": false,
+          "publisher": "CarExpert"
+        }
+      },
+      "after": {
+        "key": "price_aud",
+        "label": "Price",
+        "value": 115900,
+        "unit": "AUD",
+        "basis": "Reported by CarExpert; before on-road costs",
+        "comparisonBasis": "Before on-road costs",
+        "status": "conditional",
+        "sourceIds": [
+          "refresh-zeekr-2026-11-05-cfg-009",
+          "m1-zeekr-2026-10-14-009_ce_review",
+          "m1-zeekr-2026-10-14-009_ce_launch"
+        ],
+        "date": "2026-11-05",
+        "market": "AU",
+        "scope": "Zeekr 009 7-seat FWD",
+        "qualifications": [],
+        "issues": [],
+        "buyerGrade": "reported",
+        "gradeReview": {
+          "reviewedAt": "2026-11-05",
+          "overlayId": "refresh-zeekr-2026-11-05",
+          "reason": "Rechecked 2026-11-05: Zeekr's configurator shows the same figure; it states no price basis, so the grade and the CarExpert 'before on-road costs' basis are carried forward unchanged.",
+          "evidenceScope": "secondary_or_sibling",
+          "sourceIds": [
+            "refresh-zeekr-2026-11-05-cfg-009",
+            "m1-zeekr-2026-10-14-009_ce_review",
+            "m1-zeekr-2026-10-14-009_ce_launch"
+          ],
+          "sourceLabel": "Zeekr Australia"
+        },
+        "resolvedElsewhere": true,
+        "priceEvidence": {
+          "rung": 5,
+          "basisTag": "Reported by CarExpert · before on-road costs",
+          "sourceKey": "price_aud",
+          "sourcePointer": "https://conf.zeekrlife.com/en-au/?linkCode=1037",
+          "originalBasis": "Reported by CarExpert; before on-road costs",
+          "rankingEligible": false,
+          "publisher": "CarExpert"
+        }
+      }
+    },
+    {
+      "variantId": "zeekr_009_116__7_seat_awd__20261010",
+      "before": {
+        "key": "price_aud",
+        "label": "Price",
+        "value": 135900,
+        "unit": "AUD",
+        "basis": "Reported by CarExpert; before on-road costs",
+        "comparisonBasis": "Before on-road costs",
+        "status": "conditional",
+        "sourceIds": [
+          "m1-zeekr-2026-10-14-009_ce_review",
+          "m1-zeekr-2026-10-14-009_ce_launch"
+        ],
+        "date": "2026-10-14",
+        "market": "AU",
+        "scope": "Zeekr 009 7-seat AWD",
+        "qualifications": [],
+        "issues": [],
+        "buyerGrade": "reported",
+        "gradeReview": {
+          "reviewedAt": "2026-10-14",
+          "overlayId": "m1-zeekr-2026-10-14",
+          "reason": "The exact named-trim before-on-road price is published in Australian editorial tables. Current maker page and FWD release omit prices; the linked public configurator exposes only its shell and cloud browser execution was unavailable. Targeted maker release searches produced no higher-rung exact price.",
+          "evidenceScope": "secondary_or_sibling",
+          "sourceIds": [
+            "m1-zeekr-2026-10-14-009_ce_review",
+            "m1-zeekr-2026-10-14-009_ce_launch"
+          ],
+          "sourceLabel": "CarExpert"
+        },
+        "resolvedElsewhere": true,
+        "priceEvidence": {
+          "rung": 5,
+          "basisTag": "Reported by CarExpert · before on-road costs",
+          "sourceKey": "price_aud",
+          "sourcePointer": "https://www.carexpert.com.au/car-reviews/2026-zeekr-009-review",
+          "originalBasis": "Reported by CarExpert; before on-road costs",
+          "rankingEligible": false,
+          "publisher": "CarExpert"
+        }
+      },
+      "after": {
+        "key": "price_aud",
+        "label": "Price",
+        "value": 135900,
+        "unit": "AUD",
+        "basis": "Reported by CarExpert; before on-road costs",
+        "comparisonBasis": "Before on-road costs",
+        "status": "conditional",
+        "sourceIds": [
+          "refresh-zeekr-2026-11-05-cfg-009",
+          "m1-zeekr-2026-10-14-009_ce_review",
+          "m1-zeekr-2026-10-14-009_ce_launch"
+        ],
+        "date": "2026-11-05",
+        "market": "AU",
+        "scope": "Zeekr 009 7-seat AWD",
+        "qualifications": [],
+        "issues": [],
+        "buyerGrade": "reported",
+        "gradeReview": {
+          "reviewedAt": "2026-11-05",
+          "overlayId": "refresh-zeekr-2026-11-05",
+          "reason": "Rechecked 2026-11-05: Zeekr's configurator shows the same figure; it states no price basis, so the grade and the CarExpert 'before on-road costs' basis are carried forward unchanged.",
+          "evidenceScope": "secondary_or_sibling",
+          "sourceIds": [
+            "refresh-zeekr-2026-11-05-cfg-009",
+            "m1-zeekr-2026-10-14-009_ce_review",
+            "m1-zeekr-2026-10-14-009_ce_launch"
+          ],
+          "sourceLabel": "Zeekr Australia"
+        },
+        "resolvedElsewhere": true,
+        "priceEvidence": {
+          "rung": 5,
+          "basisTag": "Reported by CarExpert · before on-road costs",
+          "sourceKey": "price_aud",
+          "sourcePointer": "https://conf.zeekrlife.com/en-au/?linkCode=1037",
+          "originalBasis": "Reported by CarExpert; before on-road costs",
+          "rankingEligible": false,
+          "publisher": "CarExpert"
+        }
+      }
+    },
+    {
+      "variantId": "zeekr_009_116__6_seat_awd__20261010",
+      "before": {
+        "key": "price_aud",
+        "label": "Price",
+        "value": 139900,
+        "unit": "AUD",
+        "basis": "Reported by CarExpert; before on-road costs",
+        "comparisonBasis": "Before on-road costs",
+        "status": "conditional",
+        "sourceIds": [
+          "m1-zeekr-2026-10-14-009_ce_review",
+          "m1-zeekr-2026-10-14-009_ce_launch"
+        ],
+        "date": "2026-10-14",
+        "market": "AU",
+        "scope": "Zeekr 009 6-seat AWD",
+        "qualifications": [],
+        "issues": [],
+        "buyerGrade": "reported",
+        "gradeReview": {
+          "reviewedAt": "2026-10-14",
+          "overlayId": "m1-zeekr-2026-10-14",
+          "reason": "The exact named-trim before-on-road price is published in Australian editorial tables. Current maker page and FWD release omit prices; the linked public configurator exposes only its shell and cloud browser execution was unavailable. Targeted maker release searches produced no higher-rung exact price.",
+          "evidenceScope": "secondary_or_sibling",
+          "sourceIds": [
+            "m1-zeekr-2026-10-14-009_ce_review",
+            "m1-zeekr-2026-10-14-009_ce_launch"
+          ],
+          "sourceLabel": "CarExpert"
+        },
+        "resolvedElsewhere": true,
+        "priceEvidence": {
+          "rung": 5,
+          "basisTag": "Reported by CarExpert · before on-road costs",
+          "sourceKey": "price_aud",
+          "sourcePointer": "https://www.carexpert.com.au/car-reviews/2026-zeekr-009-review",
+          "originalBasis": "Reported by CarExpert; before on-road costs",
+          "rankingEligible": false,
+          "publisher": "CarExpert"
+        }
+      },
+      "after": {
+        "key": "price_aud",
+        "label": "Price",
+        "value": 139900,
+        "unit": "AUD",
+        "basis": "Reported by CarExpert; before on-road costs",
+        "comparisonBasis": "Before on-road costs",
+        "status": "conditional",
+        "sourceIds": [
+          "refresh-zeekr-2026-11-05-cfg-009",
+          "m1-zeekr-2026-10-14-009_ce_review",
+          "m1-zeekr-2026-10-14-009_ce_launch"
+        ],
+        "date": "2026-11-05",
+        "market": "AU",
+        "scope": "Zeekr 009 6-seat AWD",
+        "qualifications": [],
+        "issues": [],
+        "buyerGrade": "reported",
+        "gradeReview": {
+          "reviewedAt": "2026-11-05",
+          "overlayId": "refresh-zeekr-2026-11-05",
+          "reason": "Rechecked 2026-11-05: Zeekr's configurator shows the same figure; it states no price basis, so the grade and the CarExpert 'before on-road costs' basis are carried forward unchanged.",
+          "evidenceScope": "secondary_or_sibling",
+          "sourceIds": [
+            "refresh-zeekr-2026-11-05-cfg-009",
+            "m1-zeekr-2026-10-14-009_ce_review",
+            "m1-zeekr-2026-10-14-009_ce_launch"
+          ],
+          "sourceLabel": "Zeekr Australia"
+        },
+        "resolvedElsewhere": true,
+        "priceEvidence": {
+          "rung": 5,
+          "basisTag": "Reported by CarExpert · before on-road costs",
+          "sourceKey": "price_aud",
+          "sourcePointer": "https://conf.zeekrlife.com/en-au/?linkCode=1037",
+          "originalBasis": "Reported by CarExpert; before on-road costs",
+          "rankingEligible": false,
+          "publisher": "CarExpert"
+        }
+      }
+    }
+  ],
+  "availability": [
+    {
+      "id": "refresh-zeekr-2026-11-05-availability-zeekr_7x__rwd__1",
+      "variantId": "zeekr_7x__rwd__1",
+      "before": {
+        "availability": "current_or_order_listed",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "sourceIds": [
+            "m1-zeekr-2026-10-14-7x_model",
+            "m1-zeekr-2026-10-14-7x_onsale",
+            "m1-zeekr-2026-10-14-7x_price_maker"
+          ],
+          "physicalStockVerified": false,
+          "factoryOrderAcceptanceVerified": false,
+          "qualifications": [
+            "Named trim appears on current AU maker model page with Build & Price pathway; maker says family available nationally. No dealer enquiry, order submission or physical stock claim.",
+            "No physical stock inspection, accepted individual order, factory allocation or delivery date was verified."
+          ]
+        }
+      },
+      "after": {
+        "availability": "current_or_order_listed",
+        "evidence": {
+          "checkedAt": "2026-11-05",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "sourceIds": [
+            "refresh-zeekr-2026-11-05-cfg-7x",
+            "refresh-zeekr-2026-11-05-offers"
+          ],
+          "physicalStockVerified": false,
+          "factoryOrderAcceptanceVerified": false,
+          "qualifications": [
+            "Named trim appears on current AU maker model page with Build & Price pathway; maker says family available nationally. No dealer enquiry, order submission or physical stock claim.",
+            "No physical stock inspection, accepted individual order, factory allocation or delivery date was verified."
+          ]
+        }
+      },
+      "status": "approved",
+      "reviewedBy": "Roadmark WS2 refresh (Claude Code worker), Zeekr",
+      "reviewedAt": "2026-11-05",
+      "evidenceDate": "2026-11-05",
+      "reason": "Rechecked 2026-11-05: availability unchanged"
+    },
+    {
+      "id": "refresh-zeekr-2026-11-05-availability-zeekr_7x__long_range_rwd__2",
+      "variantId": "zeekr_7x__long_range_rwd__2",
+      "before": {
+        "availability": "current_or_order_listed",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "sourceIds": [
+            "m1-zeekr-2026-10-14-7x_model",
+            "m1-zeekr-2026-10-14-7x_onsale",
+            "m1-zeekr-2026-10-14-7x_price_maker"
+          ],
+          "physicalStockVerified": false,
+          "factoryOrderAcceptanceVerified": false,
+          "qualifications": [
+            "Named trim appears on current AU maker model page with Build & Price pathway; maker says family available nationally. No dealer enquiry, order submission or physical stock claim.",
+            "No physical stock inspection, accepted individual order, factory allocation or delivery date was verified."
+          ]
+        }
+      },
+      "after": {
+        "availability": "current_or_order_listed",
+        "evidence": {
+          "checkedAt": "2026-11-05",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "sourceIds": [
+            "refresh-zeekr-2026-11-05-cfg-7x",
+            "refresh-zeekr-2026-11-05-offers"
+          ],
+          "physicalStockVerified": false,
+          "factoryOrderAcceptanceVerified": false,
+          "qualifications": [
+            "Named trim appears on current AU maker model page with Build & Price pathway; maker says family available nationally. No dealer enquiry, order submission or physical stock claim.",
+            "No physical stock inspection, accepted individual order, factory allocation or delivery date was verified."
+          ]
+        }
+      },
+      "status": "approved",
+      "reviewedBy": "Roadmark WS2 refresh (Claude Code worker), Zeekr",
+      "reviewedAt": "2026-11-05",
+      "evidenceDate": "2026-11-05",
+      "reason": "Rechecked 2026-11-05: availability unchanged"
+    },
+    {
+      "id": "refresh-zeekr-2026-11-05-availability-zeekr_7x__performance_awd__3",
+      "variantId": "zeekr_7x__performance_awd__3",
+      "before": {
+        "availability": "current_or_order_listed",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "sourceIds": [
+            "m1-zeekr-2026-10-14-7x_model",
+            "m1-zeekr-2026-10-14-7x_onsale",
+            "m1-zeekr-2026-10-14-7x_price_maker"
+          ],
+          "physicalStockVerified": false,
+          "factoryOrderAcceptanceVerified": false,
+          "qualifications": [
+            "Named trim appears on current AU maker model page with Build & Price pathway; maker says family available nationally. No dealer enquiry, order submission or physical stock claim.",
+            "No physical stock inspection, accepted individual order, factory allocation or delivery date was verified."
+          ]
+        }
+      },
+      "after": {
+        "availability": "current_or_order_listed",
+        "evidence": {
+          "checkedAt": "2026-11-05",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "sourceIds": [
+            "refresh-zeekr-2026-11-05-cfg-7x",
+            "refresh-zeekr-2026-11-05-offers"
+          ],
+          "physicalStockVerified": false,
+          "factoryOrderAcceptanceVerified": false,
+          "qualifications": [
+            "Named trim appears on current AU maker model page with Build & Price pathway; maker says family available nationally. No dealer enquiry, order submission or physical stock claim.",
+            "No physical stock inspection, accepted individual order, factory allocation or delivery date was verified."
+          ]
+        }
+      },
+      "status": "approved",
+      "reviewedBy": "Roadmark WS2 refresh (Claude Code worker), Zeekr",
+      "reviewedAt": "2026-11-05",
+      "evidenceDate": "2026-11-05",
+      "reason": "Rechecked 2026-11-05: availability unchanged"
+    },
+    {
+      "id": "refresh-zeekr-2026-11-05-availability-zeekr_009_116__7_seat_fwd__20261010",
+      "variantId": "zeekr_009_116__7_seat_fwd__20261010",
+      "before": {
+        "availability": "current_or_order_listed",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "sourceIds": [
+            "m1-zeekr-2026-10-14-009_model",
+            "m1-zeekr-2026-10-14-009_ce_launch"
+          ],
+          "physicalStockVerified": false,
+          "factoryOrderAcceptanceVerified": false,
+          "qualifications": [
+            "The current maker Australian model page explicitly lists this exact version with a Build & Price link. Independent Australian publications confirm the three-version range. Order acceptance, physical stock and delivery timing remain unverified.",
+            "No physical stock inspection, accepted individual order, factory allocation or delivery date was verified."
+          ]
+        }
+      },
+      "after": {
+        "availability": "current_or_order_listed",
+        "evidence": {
+          "checkedAt": "2026-11-05",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "sourceIds": [
+            "refresh-zeekr-2026-11-05-cfg-009"
+          ],
+          "physicalStockVerified": false,
+          "factoryOrderAcceptanceVerified": false,
+          "qualifications": [
+            "The current maker Australian model page explicitly lists this exact version with a Build & Price link. Independent Australian publications confirm the three-version range. Order acceptance, physical stock and delivery timing remain unverified.",
+            "No physical stock inspection, accepted individual order, factory allocation or delivery date was verified."
+          ]
+        }
+      },
+      "status": "approved",
+      "reviewedBy": "Roadmark WS2 refresh (Claude Code worker), Zeekr",
+      "reviewedAt": "2026-11-05",
+      "evidenceDate": "2026-11-05",
+      "reason": "Rechecked 2026-11-05: availability unchanged"
+    },
+    {
+      "id": "refresh-zeekr-2026-11-05-availability-zeekr_009_116__7_seat_awd__20261010",
+      "variantId": "zeekr_009_116__7_seat_awd__20261010",
+      "before": {
+        "availability": "current_or_order_listed",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "sourceIds": [
+            "m1-zeekr-2026-10-14-009_model",
+            "m1-zeekr-2026-10-14-009_ce_launch"
+          ],
+          "physicalStockVerified": false,
+          "factoryOrderAcceptanceVerified": false,
+          "qualifications": [
+            "The current maker Australian model page explicitly lists this exact version with a Build & Price link. Independent Australian publications confirm the three-version range. Order acceptance, physical stock and delivery timing remain unverified.",
+            "No physical stock inspection, accepted individual order, factory allocation or delivery date was verified."
+          ]
+        }
+      },
+      "after": {
+        "availability": "current_or_order_listed",
+        "evidence": {
+          "checkedAt": "2026-11-05",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "sourceIds": [
+            "refresh-zeekr-2026-11-05-cfg-009"
+          ],
+          "physicalStockVerified": false,
+          "factoryOrderAcceptanceVerified": false,
+          "qualifications": [
+            "The current maker Australian model page explicitly lists this exact version with a Build & Price link. Independent Australian publications confirm the three-version range. Order acceptance, physical stock and delivery timing remain unverified.",
+            "No physical stock inspection, accepted individual order, factory allocation or delivery date was verified."
+          ]
+        }
+      },
+      "status": "approved",
+      "reviewedBy": "Roadmark WS2 refresh (Claude Code worker), Zeekr",
+      "reviewedAt": "2026-11-05",
+      "evidenceDate": "2026-11-05",
+      "reason": "Rechecked 2026-11-05: availability unchanged"
+    },
+    {
+      "id": "refresh-zeekr-2026-11-05-availability-zeekr_009_116__6_seat_awd__20261010",
+      "variantId": "zeekr_009_116__6_seat_awd__20261010",
+      "before": {
+        "availability": "current_or_order_listed",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "sourceIds": [
+            "m1-zeekr-2026-10-14-009_model",
+            "m1-zeekr-2026-10-14-009_ce_launch"
+          ],
+          "physicalStockVerified": false,
+          "factoryOrderAcceptanceVerified": false,
+          "qualifications": [
+            "The current maker Australian model page explicitly lists this exact version with a Build & Price link. Independent Australian publications confirm the three-version range. Order acceptance, physical stock and delivery timing remain unverified.",
+            "No physical stock inspection, accepted individual order, factory allocation or delivery date was verified."
+          ]
+        }
+      },
+      "after": {
+        "availability": "current_or_order_listed",
+        "evidence": {
+          "checkedAt": "2026-11-05",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "sourceIds": [
+            "refresh-zeekr-2026-11-05-cfg-009"
+          ],
+          "physicalStockVerified": false,
+          "factoryOrderAcceptanceVerified": false,
+          "qualifications": [
+            "The current maker Australian model page explicitly lists this exact version with a Build & Price link. Independent Australian publications confirm the three-version range. Order acceptance, physical stock and delivery timing remain unverified.",
+            "No physical stock inspection, accepted individual order, factory allocation or delivery date was verified."
+          ]
+        }
+      },
+      "status": "approved",
+      "reviewedBy": "Roadmark WS2 refresh (Claude Code worker), Zeekr",
+      "reviewedAt": "2026-11-05",
+      "evidenceDate": "2026-11-05",
+      "reason": "Rechecked 2026-11-05: availability unchanged"
+    }
+  ],
+  "summaries": []
+}
