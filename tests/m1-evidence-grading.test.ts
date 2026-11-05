@@ -342,7 +342,12 @@ test("initial grades preserve source summaries while reviewed brand packets repl
   // An actual retained standard claim must not regain its old ranking after review drift.
   const sourceRows = research().sources;
   const originallyStandard = rankAttribute(effective, sourceRows, "range_km", {
-    asOf: "2026-10-13",
+    // Rank at the date of the newest reviewed packet; claims dated after an
+    // earlier as-of are not rankable, which left no Tier 1 candidate.
+    asOf: brandUpdatePackets
+      .map((packet) => packet.reviewedAt)
+      .sort()
+      .at(-1)!,
   })
     .groups.flatMap((group) => group.entries)
     .find((entry) => {
