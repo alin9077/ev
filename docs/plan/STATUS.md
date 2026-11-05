@@ -16,7 +16,7 @@ Update this file whenever a workstream starts, pauses or finishes. Newest entry 
 
 | WS | State | Branch | Last commit | Worker | Updated |
 |---|---|---|---|---|---|
-| WS0 Consolidate Roadmark | not started | | | | |
+| WS0 Consolidate Roadmark | in progress | claude/ws0-roadmark-source-938862 | | Sonnet worker (Claude Code) | 2026-11-05 |
 | WS1 Public beta (M2) | not started | | | | |
 | WS2 Refresh loop + changes page | not started | | | | |
 | WS3 Answer pages + any-pair | not started | | | | |
@@ -52,6 +52,10 @@ Repository hygiene:
 ## Entries
 
 (Workers append below. Format: `### YYYY-MM-DD WS<N> — <state>` then the check output, gaps, decisions, failures.)
+
+### 2026-11-05 WS0 — in progress
+
+Branch: `claude/ws0-roadmark-source-938862` (the plan names `ws0-roadmark-source`; the harness-assigned worktree branch is used instead). W0.4 external step requires owner approval (see below).
 
 ## Ambiguities found
 
