@@ -70,9 +70,23 @@ test("copy reflects the selected trims rather than the default pair", () => {
 });
 test("audit covers every summary-only buyer source and withholds unsupported claims", () => {
   assert.equal(audit.sources.length, 32);
-  assert.equal(
-    audit.sources.filter((s) => s.status === "unavailable").length,
-    10,
+  // Assert the exact list, not a bare count, so a changed outcome is visible.
+  assert.deepEqual(
+    audit.sources
+      .filter((s) => s.status === "unavailable")
+      .map((s) => s.source_id)
+      .sort(),
+    [
+      "b7_ato_lct",
+      "b7_byd_network",
+      "b7_geely_driven",
+      "b7_geely_launch",
+      "b7_gridly_cable",
+      "b7_gridly_chem",
+      "b7_kia_adas",
+      "b7_kia_isla",
+      "b7_tesla_mobile",
+    ],
   );
   const zeekr = pack("zeekr_7x__rwd__1");
   assert.equal(

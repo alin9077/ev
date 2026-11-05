@@ -2,6 +2,8 @@ import Link from "next/link";
 import type { Query } from "@/lib/page-props";
 import { research } from "@/lib/data";
 import SourceRegistry from "@/components/source-registry";
+import CorrectionLink from "@/components/correction-link";
+import { correctionMailto } from "@/lib/correction-contact";
 import audit from "../../../data/source-audit-2026-10-08.json";
 export const metadata = {
   title: "Sources & corrections",
@@ -64,10 +66,12 @@ export default async function Sources({
         <h2>Corrections</h2>
         <p>
           A useful correction identifies the exact variant, claim, dated
-          original source and Australian build applicability. A public
-          correction inbox has not yet been provided; no contact form collects
-          data.
+          original source and Australian build applicability.
+          {correctionMailto(process.env.NEXT_PUBLIC_CORRECTION_EMAIL)
+            ? " No contact form collects data."
+            : " A public correction inbox has not yet been provided; no contact form collects data."}
         </p>
+        <CorrectionLink />
         <h3>Correction log</h3>
         <p>
           8 October 2026 — Added dated source checks and corrected unsupported

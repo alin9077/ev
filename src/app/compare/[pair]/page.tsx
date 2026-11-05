@@ -4,6 +4,7 @@ import { pairPages, pairReport, pairLinks } from "@/lib/pair-pages";
 import { catalogue } from "@/lib/data";
 import { carName, carPath } from "@/lib/citable";
 import { CitableReportContent } from "@/components/citable-report";
+import CorrectionLink from "@/components/correction-link";
 export const dynamicParams = false;
 export function generateStaticParams() {
   return pairPages.map((p) => ({ pair: p.slug }));
@@ -77,6 +78,7 @@ export default async function PairPage({
         Read the <Link href="/methodology">methodology and limitations</Link> or{" "}
         <Link href="/sources">sources and corrections</Link>.
       </p>
+      <CorrectionLink />
     </main>
   );
 }

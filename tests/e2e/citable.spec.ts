@@ -2,6 +2,7 @@ import { test, expect } from "@playwright/test";
 import { pairPages, pairReport } from "../../src/lib/pair-pages";
 import { catalogue } from "../../src/lib/data";
 import { reportMarkdown } from "../../src/lib/citable";
+import { correctionMailto } from "../../src/lib/correction-contact";
 
 test("all nine comparisons expose dated claims, links and schema without JavaScript", async ({
   browser,
@@ -147,4 +148,23 @@ test("glossary anchors and discovery files resolve", async ({
     expect(sitemap).toContain(pair.slug);
   }
   expect(sitemap).toContain("<lastmod>2026-10-08");
+});
+
+test("correction mailto appears on /sources and every pair page only when configured", async ({
+  page,
+}) => {
+  // The server was built with the same NEXT_PUBLIC_CORRECTION_EMAIL as this
+  // process sees; unset (the default) means no mailto link anywhere.
+  const contact = correctionMailto(process.env.NEXT_PUBLIC_CORRECTION_EMAIL);
+  const paths = ["/sources", ...pairPages.map((p) => `/compare/${p.slug}`)];
+  for (const path of paths) {
+    await page.goto(path);
+    const links = page.locator('a[href^="mailto:"]');
+    if (contact) {
+      await expect(links).toHaveCount(1);
+      await expect(links).toHaveAttribute("href", contact.href);
+    } else {
+      await expect(links).toHaveCount(0);
+    }
+  }
 });
