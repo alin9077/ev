@@ -82,7 +82,7 @@ function version(
     },
   };
 }
-const run = (v: ThresholdVersion, t = thresholds(), state?: string) =>
+const run = (v: ThresholdVersion, t = thresholds(), state?: string | null) =>
   assessThresholds(v, t, { asOf: ASOF, state });
 
 test("rung-1 price clearly under the cap: under FBT cap true, LCT does not apply", () => {
