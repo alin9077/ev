@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { site, publishedOrigin } from "@/lib/config";
+import { site, indexable, previewNoindex } from "@/lib/config";
 export const dynamic = "force-static";
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -16,9 +16,10 @@ export default function robots(): MetadataRoute.Robots {
       "Google-Extended",
     ].map((userAgent) => ({
       userAgent,
-      allow: publishedOrigin ? "/" : undefined,
-      disallow: publishedOrigin ? ["/*?"] : ["/"],
+      allow: indexable ? "/" : undefined,
+      disallow: indexable ? ["/*?"] : ["/"],
     })),
-    sitemap: `${site.origin}/sitemap.xml`,
+    // A preview does not advertise a sitemap.
+    ...(!previewNoindex ? { sitemap: `${site.origin}/sitemap.xml` } : {}),
   };
 }

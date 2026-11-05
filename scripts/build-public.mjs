@@ -26,16 +26,17 @@ const result = spawnSync(
   { stdio: "inherit", env: { ...process.env, SITE_STATIC_EXPORT: "1" } },
 );
 if (result.status !== 0) process.exit(result.status || 1);
+const preview = process.env.NEXT_PUBLIC_PREVIEW_NOINDEX === "1";
 const html = readFileSync("out/index.html", "utf8");
-if (
-  !html.includes('id="main"') ||
-  html.includes('name="robots" content="noindex')
-)
+const noindexed = html.includes('name="robots" content="noindex');
+if (!html.includes('id="main"') || noindexed === !preview)
   throw new Error(
-    "Public homepage must contain rendered HTML and allow indexing.",
+    preview
+      ? "Preview homepage must contain rendered HTML and be marked noindex."
+      : "Public homepage must contain rendered HTML and allow indexing.",
   );
 writeFileSync(
   "out/_headers",
-  `/*\n  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'\n  Referrer-Policy: strict-origin-when-cross-origin\n  X-Content-Type-Options: nosniff\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n`,
+  `/*\n${preview ? "  X-Robots-Tag: noindex, nofollow\n" : ""}  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'\n  Referrer-Policy: strict-origin-when-cross-origin\n  X-Content-Type-Options: nosniff\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n`,
 );
 console.log(`Public static HTML built for ${origin}`);

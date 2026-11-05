@@ -19,6 +19,9 @@ export function publicOrigin(value: string | undefined) {
   }
 }
 export const publishedOrigin = publicOrigin(process.env.NEXT_PUBLIC_SITE_URL);
+/** A phone-test preview: published at its own address but never indexed. */
+export const previewNoindex = process.env.NEXT_PUBLIC_PREVIEW_NOINDEX === "1";
+export const indexable = !!publishedOrigin && !previewNoindex;
 export const site = {
   name: "Roadmark",
   description:
