@@ -1,0 +1,5 @@
+# Source70 mobile journey correction
+
+WORKING CHECKPOINT 70. Explorer filter reset/reload/history now use deterministic shared state and preserve portable file routes. Discovery shows action feedback beside its originating control, with guarded asynchronous clipboard feedback. Existing hero chapter destinations support programmatic keyboard focus; all nine reasons, hero wording and artwork remain intact. All catalogue, market, evidence and reporting data are unchanged. QA pending; source69 is the latest durable checkpoint. Browser and real-phone release verification remain pending.
+
+The original candidate was statically reviewed and its asynchronous feedback race was corrected in a separate immutable amendment. Latest-attempt identity and current-URL checks prevent old clipboard success/failure from overwriting newer actions; selection, URL updates, history restoration and cleanup invalidate pending feedback. Nineteen pure/markup tests and the strengthened hero target test are included. These do not replace browser, accessibility-assistive-technology or physical-device verification.

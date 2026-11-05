@@ -92,6 +92,17 @@ export function auditedFeature(feature: Feature): Feature {
       "The previous third-party estimate is withheld pending a manufacturer source or permission to reuse the licensed industry data. Ask for a written quote naming the state, delivery fees, registration, compulsory insurance and stamp duty.",
       "not_verified",
     );
+  // A bounded offer that was explicitly not assessed must not inherit a
+  // generic earlier tax audit or its review date. This does not bypass any
+  // supported/positive feature claim or other audit criterion.
+  if (
+    f.criterion === "novated_fbt" &&
+    f.verification_state === "exact_offer_unverified" &&
+    f.status === "not_verified" &&
+    f.source_ids.length === 0 &&
+    f.conditions.trim().length > 0
+  )
+    return f;
   if (f.criterion === "novated_fbt")
     return patch(
       "Exact eligibility needs confirmation",

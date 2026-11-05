@@ -7,6 +7,8 @@ export const dynamic = "force-static";
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     "",
+    "/market",
+    "/discover",
     "/model-y",
     "/cars",
     "/software",
@@ -14,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/sources",
     "/comparisons",
     "/glossary",
+    "/changes",
     ...pairPages.map((p) => `/compare/${p.slug}`),
     ...catalogue().map((c) => `/cars/${c.family}/${c.slug}`),
   ].map((path) => ({

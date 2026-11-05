@@ -1,0 +1,272 @@
+{
+  "schemaVersion": "1.0",
+  "checkedAt": "2026-10-12",
+  "title": "Mazda CX-6e bounded HTML grade and New-advertisement audit",
+  "marketRecordId": "mazda-cx-6e",
+  "scope": "One existing passenger lead, GT/Azami family identity only; no detailed specifications or closed-market claim",
+  "appEdited": false,
+  "originalLead": {
+    "brand": "Mazda",
+    "model": "CX-6e",
+    "sourceUrls": [
+      "https://www.mazda.com.au/cars/cx-6e/"
+    ],
+    "checkedAt": "2026-10-10",
+    "orderStatus": "preorder",
+    "stockStatus": "unverified",
+    "evidenceNote": "GT/Azami are explicitly preorder on current AU product page. Earlier forecast delivery date is not actual delivery proof.",
+    "limitations": [
+      "Incomplete exact-trim or current-availability audit."
+    ],
+    "id": "mazda-cx-6e",
+    "vehicleClass": "passenger",
+    "trims": [],
+    "modelAliases": [],
+    "rankingEligible": false,
+    "sourceArtifacts": [
+      "market-inventory.json"
+    ],
+    "relatedRecordIds": [],
+    "resolutionStatus": "unresolved"
+  },
+  "originalLeadSHA256": "c04445cb1695a970f853920f45fd1f2ec251c173c917884eb118af7f53ebd8bc",
+  "auditedGrades": [
+    "GT",
+    "Azami"
+  ],
+  "formalManufacturerModelYear": null,
+  "sourceTechnicalEpoch": null,
+  "orderStatus": "preorder",
+  "orderStatusQualification": "Manufacturer advertised preorder; linked destination is dealer enquiry. Acceptance and delivery unverified.",
+  "specificNewAdvertisement": {
+    "sourceId": "m06",
+    "seller": "Melville Mazda, Palmyra WA",
+    "exactAdvertisedGrade": "E35 Azami GR",
+    "stockNumber": "11397703",
+    "vin": "LVRHDCEK6TN551337",
+    "conditionLabel": "New",
+    "advertisedStockState": "in_stock",
+    "reservedAdvertised": false,
+    "preorderAdvertised": false,
+    "soldDateInPublicData": null,
+    "sellerModelYear": 2026,
+    "sellerBuildDate": "2026-08-24",
+    "sellerComplianceDate": "2026-09-01",
+    "sellerRecordUpdatedAt": "2026-10-06T22:34:05.842Z",
+    "advertisedPriceAud": null,
+    "priceQualification": "Visible price enquiry; embedded zero is a placeholder",
+    "physicalStockVerified": false,
+    "independentUnsoldVerified": false,
+    "buildMatchesBrochureVerified": false
+  },
+  "priceObservations": [
+    {
+      "sourceId": "m05",
+      "grade": "E35 GT",
+      "amountAud": 56990,
+      "basis": "Driveaway from; premium paint excluded. Registration, CTP and listed statutory/dealer fees included. Personal circumstances can change price; offer amendable and not combinable.",
+      "observationDate": "2026-10-12"
+    },
+    {
+      "sourceId": "m07",
+      "grades": [
+        "GT",
+        "Azami"
+      ],
+      "amountsAud": [
+        53990,
+        56990
+      ],
+      "basis": "Historical MLP in article posted 8 April 2026; neither a current driveaway quote nor fulfilment proof"
+    }
+  ],
+  "heldConflicts": [
+    {
+      "id": "CX6E95-CARGO",
+      "field": "normalizedSeatsUpBootLitres",
+      "normalizedValue": null,
+      "observations": [
+        {
+          "sourceId": "m02",
+          "locator": "PDF p7 cargo row1",
+          "value": 363,
+          "unit": "L",
+          "basis": "VDA; seats up; to tray/seatback; underfloor included"
+        },
+        {
+          "sourceId": "m03",
+          "locator": "Design / Versatile Boot Space",
+          "value": 468,
+          "unit": "L",
+          "basis": "unspecified"
+        }
+      ],
+      "action": "Keep both attributed; hold cross-model numeric comparison until protocol/variant discrepancy is resolved."
+    },
+    {
+      "id": "CX6E95-CLIMATE",
+      "field": "normalizedClimateZones",
+      "normalizedValue": null,
+      "observations": [
+        {
+          "sourceId": "m02",
+          "locator": "PDF p2 GT feature list",
+          "value": 2
+        },
+        {
+          "sourceId": "m07",
+          "locator": "GT feature list",
+          "value": 3
+        }
+      ],
+      "action": "Later brochure dual-zone is retained as current attributed wording; no silent deletion of older tri-zone claim."
+    },
+    {
+      "id": "CX6E95-SCREEN",
+      "field": "normalizedCentralScreenInches",
+      "normalizedValue": null,
+      "observations": [
+        {
+          "sourceId": "m02",
+          "locator": "PDF p2 and p11 display row",
+          "value": 26.45
+        },
+        {
+          "sourceId": "m07",
+          "locator": "GT feature list",
+          "value": 45
+        }
+      ],
+      "action": "Current brochure and model page agree 26.45; older article 45 is discrepant and not silently repaired. Hold normalized ranking field."
+    },
+    {
+      "id": "CX6E95-STATUS",
+      "field": "fulfilledLaunchAndOrderAcceptance",
+      "normalizedValue": null,
+      "observations": [
+        {
+          "sourceId": "m03",
+          "locator": "intro and preorder CTA",
+          "value": "almost-here/preorder advertising"
+        },
+        {
+          "sourceId": "m04",
+          "locator": "pageheading and form",
+          "value": "dealer enquiry"
+        },
+        {
+          "sourceId": "m06",
+          "locator": "carSSR status/condition",
+          "value": "one new in_stock advertisement"
+        }
+      ],
+      "action": "Separate manufacturer advertised preorder from actual acceptance and seller advertised unit. No completed delivery inference."
+    }
+  ],
+  "pdfVerification": {
+    "url": "https://www.mazda.com.au/4a4bb0/globalassets/brochures/cx-6e-digital-brochure.pdf",
+    "extractedPublicationDate": "2026-08",
+    "extractedDocumentCode": "AU41-P00008813",
+    "visuallyVerified": true,
+    "rawPublisherBytesSHA256": null,
+    "requiredPrintedPages": [
+      5,
+      7,
+      14
+    ],
+    "reason": "The earlier screenshot retrieval blocker was superseded by the root's limited visual inspection of printed pages 5, 7 and 14. Grade table headings, cargo measurement basis and publication footer/code were checked; other technical fields and complete candidate admission remain unreviewed. Cargo conflict remains unresolved.",
+    "visuallyVerifiedPrintedPages": [
+      5,
+      7,
+      14
+    ],
+    "visualInspectionPerformedBy": "root",
+    "visualObservationAt": "2026-10-12T01:33:09.328717+00:00",
+    "visualObservationRecordSHA256": "ac1162c0666668c02c72fb0b871c250563a1c254b63e44446e78d706441b3688",
+    "reviewAddendumSHA256": "dd307c157004bf572b2a0de5fd6fbff2ede996b7efb0b647052126729f94ace7",
+    "fullTechnicalCandidateVisuallyVerified": false
+  },
+  "sources": [
+    {
+      "id": "m03",
+      "url": "https://www.mazda.com.au/cars/cx-6e/",
+      "publisher": "Mazda Australia",
+      "publicationDate": null,
+      "observationDate": "2026-10-12",
+      "retrieval": "web extraction; tool reported crawled today",
+      "finding": "Current model page independently names GT/Azami and retains preorder/almost-here copy. Cargo marketing gives 468 L without a protocol."
+    },
+    {
+      "id": "m04",
+      "url": "https://www.mazda.com.au/build/cx-6e/pre-order/?model=mazda-cx-6e",
+      "publisher": "Mazda Australia",
+      "publicationDate": null,
+      "observationDate": "2026-10-12",
+      "retrieval": "web extraction; tool reported crawled 3 weeks ago",
+      "finding": "Linked destination is dealer enquiry. No form submitted, order accepted or live purchase flow established."
+    },
+    {
+      "id": "m05",
+      "url": "https://www.mazda.com.au/offers/driveaway/electric/",
+      "publisher": "Mazda Australia",
+      "publicationDate": null,
+      "observationDate": "2026-10-12",
+      "retrieval": "web extraction; tool reported crawled today",
+      "finding": "E35 GT driveaway-from AUD 56,990; price conditions recorded separately."
+    },
+    {
+      "id": "m06",
+      "url": "https://www.melvillemazda.com.au/cars/new-aero-grey-2026-mazda-cx-6e-11397703",
+      "publisher": "Melville Mazda",
+      "publicationDate": null,
+      "observationDate": "2026-10-12",
+      "retrievedAt": "2026-10-12T01:26:44.405986+00:00",
+      "httpStatus": 200,
+      "rawPublisherBytesSHA256": "a2a53b60677c5623fee0d409d0b8673fa839f1459b78e2511ce95f8ff5ed363f",
+      "sellerRecordCreatedAt": "2026-10-06T03:11:29.378Z",
+      "sellerRecordUpdatedAt": "2026-10-06T22:34:05.842Z",
+      "retrieval": "Direct public HTML; public Next Flight row 19/0/3/carSSR",
+      "finding": "Exact New Azami identity and advertised metadata only. Raw capture remains analysis-only; not included here."
+    },
+    {
+      "id": "m02",
+      "url": "https://www.mazda.com.au/4a4bb0/globalassets/brochures/cx-6e-digital-brochure.pdf",
+      "publisher": "Mazda Australia",
+      "publicationDate": "2026-08",
+      "observationDate": "2026-10-12",
+      "retrieval": "Official current brochure link and PDF text extraction, followed by root visual inspection of printed pages 5, 7 and 14",
+      "visuallyVerified": true,
+      "rawPublisherBytesSHA256": null,
+      "finding": "The root visually confirmed grade headings, cargo measurement basis and publication footer/code on the stated pages. Detailed technical admission remains withheld; the cargo conflict is unresolved.",
+      "visuallyVerifiedPrintedPages": [
+        5,
+        7,
+        14
+      ]
+    },
+    {
+      "id": "m07",
+      "url": "https://www.mazda.com.au/mazda-news/mazda-cx-6e-australia-specs-pricing-electric-suv/",
+      "publisher": "Mazda Australia",
+      "publicationDate": "2026-04-08",
+      "observationDate": "2026-10-12",
+      "retrieval": "web extraction; tool reported crawled today",
+      "finding": "Historical GT/Azami launch/price announcement with anticipated September deliveries and conflicting technical wording; forecast is not fulfilment."
+    }
+  ],
+  "limitations": [
+    "GT and Azami are manufacturer HTML grade names observed on 12 October 2026. This is not a complete closed build/configuration universe. E35 GT occurs in manufacturer offer HTML; E35 Azami GR is the exact seller label, not independent manufacturer-to-VIN specification verification.",
+    "Manufacturer preorder advertising links to dealer enquiry. Accepted orders, production, allocation and completed deliveries remain unverified; the earlier September delivery forecast is not proof of fulfilment.",
+    "Seller New/in_stock, reserved=false, preorder=false and sold_date=null are published claims for one advertisement. The record was last updated on 6 October; retrieval on 12 October does not guarantee same-day inventory freshness, unsold physical stock or any GT stock.",
+    "Formal manufacturer model year and exact build applicability remain unverified. Seller year/model_year 2026 and build/compliance dates are not promoted into manufacturer model year.",
+    "The root visually inspected brochure pages 5, 7 and 14, confirming grade table headings, cargo measurement basis and the publication footer/code. This limited visual check does not approve the separate detailed technical candidate; no technical epoch or specification is admitted by this market record.",
+    "Cargo remains an unresolved attributed conflict: PDF extraction says 363 L VDA seats-up to tray/seatback including underfloor; model HTML advertises 468 L without a measurement protocol. Preserve both; no normalized seats-up value or ranking.",
+    "GT advertised driveaway-from pricing, historical April manufacturer-list pricing and the seller enquiry-only price have distinct bases. No final customer price or free vehicle is established.",
+    "Ranking and complete-current-vehicle eligibility remain false. This changes one existing lead disposition; it does not close the wider market audit or add a detailed catalogue variant."
+  ],
+  "rankingEligible": false,
+  "completeVehicleCountEligible": false,
+  "completeMarketAudit": false,
+  "detailedCatalogueVariantDelta": 0,
+  "technicalCandidateDisposition": "Separate research only; not approved for import. Limited root visual inspection of printed pages 5, 7 and 14 is recorded; full technical-candidate review and source conflicts remain held."
+}

@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-15",
+  "notes": [
+    "Current KGM maker-list review only; two independent whole-market lists remain unprovided.",
+    "All exact existing identities and model years remain unchanged.",
+    "Listing does not establish physical New stock, factory-order acceptance, delivery timing or national stock exhaustion.",
+    "Black Edge remains separately visible as a 2WD styling package; generic embedded variant relationship does not authorize an AWD Black Edge addition."
+  ],
+  "publishedLists": [],
+  "currentVersionReviews": [
+    {
+      "id": "m1-kgm-2026-10-15-musso-ev",
+      "modelId": "kgm_musso_ev_current",
+      "brand": "KGM",
+      "model": "Musso EV",
+      "bodyStyle": "dual-cab ute",
+      "vehicleClass": "ute",
+      "checkedAt": "2026-10-15",
+      "officialSourceUrls": [
+        "https://kgm.com.au/",
+        "https://kgm.com.au/models/musso-ev",
+        "https://kgm-rebuild-nextjs-postgres-assets-s3.s3.ap-southeast-2.amazonaws.com/KGM_Musso-EV-MY26_Specs%20and%20Features.pdf"
+      ],
+      "reason": "Current full Australian maker model menu, exact grade payload and linked MY26 technical sheet establish the complete current BEV family list. Black Edge is a priced optional 2WD styling pack, not a third core grade.",
+      "versions": [
+        {
+          "carId": "kgm_musso_ev_my26_2wd__20261010",
+          "model": "Musso EV",
+          "trim": "MY26 2WD 80.6 kWh dual-cab ute",
+          "modelYear": 2026
+        },
+        {
+          "carId": "kgm_musso_ev_my26_awd__20261010",
+          "model": "Musso EV",
+          "trim": "MY26 AWD 80.6 kWh dual-cab ute",
+          "modelYear": 2026
+        }
+      ]
+    },
+    {
+      "id": "m1-kgm-2026-10-15-torres-evx",
+      "modelId": "kgm_torres_evx_current",
+      "brand": "KGM",
+      "model": "Torres EVX",
+      "bodyStyle": "SUV",
+      "vehicleClass": "passenger",
+      "checkedAt": "2026-10-15",
+      "officialSourceUrls": [
+        "https://kgm.com.au/",
+        "https://kgm.com.au/models/torres",
+        "https://kgm-rebuild-nextjs-postgres-assets-s3.s3.ap-southeast-2.amazonaws.com/KGM-MY26-Torres-EVX_Specs-and-Features.pdf"
+      ],
+      "reason": "Combined Torres page has one Australian battery-electric grade, EVX FWD MY26. K30/K40 are hybrids and Ultimate is petrol; parent petrol MY25 metadata is not applied to EVX.",
+      "versions": [
+        {
+          "carId": "kgm_torres_evx_my26_fwd__20261010",
+          "model": "Torres EVX",
+          "trim": "EVX FWD",
+          "modelYear": 2026
+        }
+      ]
+    }
+  ],
+  "listResolutions": [],
+  "catalogueOnlyDifferences": [],
+  "inventoryResolutions": [
+    {
+      "kind": "record",
+      "inventoryId": "kgm-torres-evx",
+      "reviewedAt": "2026-10-15",
+      "outcome": "included",
+      "modelReviewId": "m1-kgm-2026-10-15-torres-evx",
+      "reason": "Entire inherited model-family record is covered by the complete current maker grade list; historical ads remain dated and optional package distinctions remain explicit.",
+      "sourceUrls": [
+        "https://kgm.com.au/",
+        "https://kgm.com.au/models/torres",
+        "https://kgm-rebuild-nextjs-postgres-assets-s3.s3.ap-southeast-2.amazonaws.com/KGM-MY26-Torres-EVX_Specs-and-Features.pdf"
+      ]
+    },
+    {
+      "kind": "record",
+      "inventoryId": "kgm-musso-ev",
+      "reviewedAt": "2026-10-15",
+      "outcome": "included",
+      "modelReviewId": "m1-kgm-2026-10-15-musso-ev",
+      "reason": "Entire inherited model-family record is covered by the complete current maker grade list; historical ads remain dated and optional package distinctions remain explicit.",
+      "sourceUrls": [
+        "https://kgm.com.au/",
+        "https://kgm.com.au/models/musso-ev",
+        "https://kgm-rebuild-nextjs-postgres-assets-s3.s3.ap-southeast-2.amazonaws.com/KGM_Musso-EV-MY26_Specs%20and%20Features.pdf"
+      ]
+    }
+  ]
+}

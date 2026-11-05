@@ -1,0 +1,1072 @@
+{
+  "id": "custom-denning-element22-epoch-reconciliation-20261011",
+  "checkedAt": "2026-10-11",
+  "checkedAtQualification": "Observation date of the sealed primary-source packet, not a fresh network check during proposal preparation. Historical source dates are retained separately.",
+  "scope": "Australian Custom Denning Element 2.2 published technical epoch and two manufacturer length options within the existing Element market family; evidence only",
+  "decision": "bounded_market_evidence_amendment",
+  "exactDetailedConfigurationProposalApproved": false,
+  "readiness": "Reviewable research proposal only. No application amendment, detailed configuration, family/generation admission, selected procurement build, order/stock promotion or ranking admission is authorized by this artifact.",
+  "familyId": "custom-denning-element",
+  "sourceIds": [
+    "element22-spec",
+    "element22-brochure",
+    "denning-element",
+    "denning-home",
+    "denning-public-script",
+    "denning-element-script",
+    "denning-historical-element-news",
+    "forsee-element2-20250324"
+  ],
+  "researchPacket": {
+    "path": "roadmark-research/next-market-gap-after84",
+    "sealPath": "roadmark-research/next-market-gap-after84/SHA256SUMS.txt",
+    "sealSHA256": "c45402c96a7463709c839358a93f2eb4f526b6bb629e52793bcb0553bea5968e",
+    "sealedEntryCount": 46,
+    "originalMatrixPath": "roadmark-research/next-market-gap-after84/facts-and-holds.json",
+    "originalMatrixSHA256": "9968fb607f1500bd93d9506e0b0c3e49cc72cd698250613e25044abe66c98ff7",
+    "originalMatrixFieldCount": 29,
+    "independentReviewPath": "roadmark-research/element22-independent-review84/REVIEW.md",
+    "independentReviewSHA256": "618eac8ae5ae755d00bbfb92f9415ff7c14c5d7bd7ec62b244e479c4756e404f",
+    "independentReviewVerifiedAtUTC": "2026-10-11T17:31:54.896409+00:00",
+    "sourceBytesReFetchedDuringProposal": false,
+    "sourceScriptsExecuted": false
+  },
+  "publishedCompleteVehicleScope": {
+    "manufacturer": "Custom Denning",
+    "sourceId": "element22-spec",
+    "sourceLocation": "PDF page 1, Powered by Australians paragraph",
+    "declaration": "Manufacturer describes end-to-end chassis/body engineering, electrical integration and assembly of the complete vehicle in Western Sydney.",
+    "chassisOnlyListing": false,
+    "completedBuildSelected": false,
+    "vin": null,
+    "auApprovalIdentity": null,
+    "qualification": "Complete-vehicle manufacturing evidence does not establish a delivered unit, accepted order, New stock, per-build approval or count eligibility."
+  },
+  "technicalEpoch": {
+    "label": "Element 2.2",
+    "currentSourceIds": [
+      "element22-spec",
+      "element22-brochure",
+      "denning-element-script"
+    ],
+    "batteryTechnology": "CATL LFP",
+    "driveMotor": "Driventic VEDS 1.5 HD",
+    "visibleIssueDate": null,
+    "formalModelYear": null,
+    "productionDate": null,
+    "currentlyLinkedFromAustraliaPage": true,
+    "currentLinkageObservedAt": "2026-10-11",
+    "pdfMetadata": [
+      {
+        "sourceId": "element22-spec",
+        "title": "Element 2.2 12m_AU_FINAL",
+        "creationDate": "2026-09-08T10:41:58+10:00",
+        "modificationDate": "2026-09-08T10:41:58+10:00",
+        "originalTimezone": "AEST",
+        "visibleTechnicalIssueDate": null,
+        "pages": 2
+      },
+      {
+        "sourceId": "element22-brochure",
+        "title": "Element 2.2_Brochure_AUS",
+        "creationDate": "2026-09-18T13:42:01+10:00",
+        "modificationDate": "2026-09-18T13:42:01+10:00",
+        "originalTimezone": "AEST",
+        "visibleTechnicalIssueDate": null,
+        "pages": 8
+      }
+    ],
+    "conditions": [
+      "PDF metadata dates are neither visible technical issue dates, production dates nor model years.",
+      "The specification metadata title mentions 12 m, but its visible page 2 table and labeled sample layouts contain both lengths.",
+      "Current route-to-PDF linkage establishes observed manufacturer publication, not unchanged delivered specification or a selected procurement build.",
+      "Shared technical-table claims are not independently verified for every length/door/layout combination.",
+      "Current ZF AV133/RL82A axles and ZF telematics do not change the specified Driventic motor into historical ZF CeTrax."
+    ]
+  },
+  "historicalEpochs": [
+    {
+      "label": "Original Element",
+      "batteryTechnology": "LMP",
+      "driveMotor": "Actia",
+      "sourceIds": [
+        "denning-historical-element-news"
+      ],
+      "sourceLocation": "12 March 2025 manufacturer article, Evolution and standout-differences paragraphs, preserved in public asset; news slug custom-denning-announces-the-100th-element-2-bus-milestone-a-vision-for-the-future-of-public-transport",
+      "current22TechnicalApplicability": false,
+      "qualification": "Historical comparison only; no new detailed generation is proposed."
+    },
+    {
+      "label": "Earlier Element 2",
+      "batteryTechnology": "NMC",
+      "driveMotor": "ZF CeTrax",
+      "sourceIds": [
+        "denning-historical-element-news",
+        "forsee-element2-20250324"
+      ],
+      "datedManufacturerArticle": "2025-03-12",
+      "datedSupplierRelease": "2025-03-24",
+      "historicalManufacturerDeclarations": {
+        "lengthOptionsM": [
+          10.5,
+          12
+        ],
+        "energyOptionsKWh": [
+          383,
+          462
+        ],
+        "motorPowerKW": 300,
+        "motorTorqueNm": 4500,
+        "maximumPlugInChargingKW": 150,
+        "maximumPantographChargingKW": 450
+      },
+      "historicalSupplierDeclarations": {
+        "batterySystem": "FORSEE ZEN PLUS NMC",
+        "onboardEnergyKWh": 462,
+        "deploymentGeography": "Australia",
+        "supplierClaimedDeployment": "More than 150 buses",
+        "pantographDeploymentClaim": "13 Element 2 buses in the preceding month"
+      },
+      "current22TechnicalApplicability": false,
+      "qualification": "Earlier deployments, packs, range, charge-time and pantograph claims do not establish 2.2 specifications or availability. Earlier 10.5 m is not assumed to be the current 10.9 m build. No historic deployment count becomes current stock or admitted complete-vehicle count."
+    }
+  ],
+  "originalConflictingDeclarations": {
+    "energyUnit": {
+      "specPage1": {
+        "numericValue": 411.5,
+        "literalUnit": "kW",
+        "fieldLabel": "BATTERY SYSTEM USABLE ENERGY",
+        "sourceId": "element22-spec",
+        "page": 1
+      },
+      "specPage2": {
+        "literalValue": "411.5 kW",
+        "fieldLabel": "Traction Battery Capacity",
+        "sourceId": "element22-spec",
+        "page": 2
+      },
+      "brochurePage2": {
+        "numericValue": 411.5,
+        "literalUnit": "KWH",
+        "fieldLabel": "BATTERY CAPACITY USABLE ENERGY",
+        "sourceId": "element22-brochure",
+        "page": 2
+      },
+      "productAsset": {
+        "numericValue": 411.5,
+        "literalUnit": "kWh",
+        "note": "Usable Energy",
+        "sourceId": "denning-element-script",
+        "locator": "stats.items id battery"
+      },
+      "sourceScopedUsableEnergyKWh": 411.5,
+      "normalizationBasis": "Explicit brochure/page usable-energy label only; the literal specification defect is not silently repaired.",
+      "grossEnergyKWh": null,
+      "tractionPackCount": null,
+      "tractionVoltageV": null,
+      "separatelyValidatedPerLengthBatteryBuilds": false
+    },
+    "longBusOccupancy": {
+      "specPage2": {
+        "sourceId": "element22-spec",
+        "page": 2,
+        "seated": 39,
+        "standingUpTo": 26,
+        "totalUpTo": 65,
+        "seatsWithOneWheelchair": 36,
+        "seatsWithTwoWheelchairs": 33
+      },
+      "brochurePage5": {
+        "sourceId": "element22-brochure",
+        "page": 5,
+        "explicitLengthScopeM": 12.0,
+        "seated": 43,
+        "standing": 26,
+        "total": 69
+      },
+      "productAsset": {
+        "sourceId": "denning-element-script",
+        "claim": "39 passengers with asterisk and flexible-layout wording",
+        "locator": "passenger stat and seating/layout copy"
+      },
+      "normalizedSeatedPassengers": null,
+      "normalizedTotalCapacity": null,
+      "driverCountBasis": null,
+      "selectedLayout": null,
+      "resolution": "Unresolved. Neither PDF metadata recency nor door/wheelchair/driver arithmetic proves which build explains the disagreement."
+    },
+    "shortBusSampleLayout": {
+      "sourceId": "element22-spec",
+      "page": 2,
+      "lengthScopeM": 10.9,
+      "seated": 37,
+      "standingUpTo": 23,
+      "totalUpTo": 60,
+      "seatsWithOneWheelchair": 33,
+      "seatsWithTwoWheelchairs": 29,
+      "status": "published_sample_layout_not_closed_build",
+      "selectedLayout": null,
+      "driverCountBasis": null
+    },
+    "doorAdvertising": {
+      "sourceId": "element22-brochure",
+      "page": 5,
+      "literalClaim": "Available in one or two door configuration",
+      "selectedDoorCount": null,
+      "crossJoinedWithLengthsOrWheelchairLayouts": false
+    },
+    "testEfficiency": {
+      "brochurePage2": {
+        "sourceId": "element22-brochure",
+        "page": 2,
+        "value": 0.72,
+        "unit": "kWh/km"
+      },
+      "productAsset": {
+        "sourceId": "denning-element-script",
+        "locator": "stats.items id sort1",
+        "value": 72.01,
+        "unit": "kWh/100 km"
+      },
+      "sameMeasurementOrPrecisionBridgeEstablished": false
+    },
+    "warranty": {
+      "specPage1": {
+        "sourceId": "element22-spec",
+        "page": 1,
+        "claim": "Up to 15 years / 1.5 million km"
+      },
+      "brochurePage3": {
+        "sourceId": "element22-brochure",
+        "page": 3,
+        "claim": "Up to 15 years",
+        "supportsMillionKmClaim": false
+      },
+      "normalizedContractCoverage": null,
+      "batteryRetentionThresholdPercent": null,
+      "exactBuildApplicability": null,
+      "qualification": "Qualified marketing headlines only; no full terms, exclusions, retention threshold or unconditional 15-year coverage established."
+    }
+  },
+  "normalizationHolds": {
+    "selectedLengthOption": null,
+    "selectedLayout": null,
+    "selectedDoorCount": null,
+    "formalModelYear": null,
+    "visibleTechnicalIssueDate": null,
+    "productionDate": null,
+    "batteryGrossEnergyKWh": null,
+    "tractionPackCount": null,
+    "tractionVoltageV": null,
+    "longBusSeatedPassengers": null,
+    "longBusTotalCapacity": null,
+    "selectedBuildSeatedPassengers": null,
+    "selectedBuildStandingPassengers": null,
+    "selectedBuildWheelchairPositions": null,
+    "selectedBuildTotalCapacity": null,
+    "driverCountBasis": null,
+    "independentlyValidatedRangeKm": null,
+    "passengerWLTPRangeKm": null,
+    "chargeTimeMinutes": null,
+    "chargeSOCStartPercent": null,
+    "chargeSOCEndPercent": null,
+    "chargeCurve": null,
+    "acChargingKW": null,
+    "pantographChargingKW": null,
+    "verifiedBatteryWarrantyContract": null,
+    "warrantyBatteryRetentionPercent": null,
+    "acceptedProcurementBuild": null,
+    "acceptedOrder": null,
+    "newStockUnit": null,
+    "vin": null,
+    "stockNumber": null,
+    "allocation": null,
+    "priceAUD": null,
+    "leadTimeDays": null,
+    "deliveryDate": null,
+    "auApprovalIdentity": null,
+    "independentRoadApproval": null,
+    "completeVehicleCountEligible": null,
+    "fullyClosedFactoryBuild": false,
+    "rankingEligible": false,
+    "qualification": "Nulls are unresolved/unverified, not zero or absence. Published shared-table facts and sample layouts remain in the field ledger; none fills a selected-build hold."
+  },
+  "matrixCorrections": [
+    {
+      "field": "battery_warranty",
+      "originalAttribution": "The combined up-to-15-years / 1.5-million-km value listed spec page 1 and brochure page 3 without separating their support.",
+      "correctedAttribution": "Spec page 1 supports the combined headline; brochure page 3 supports up to 15 years only. Each source carries its own claim in the corrected ledger."
+    },
+    {
+      "field": "availability",
+      "originalAttribution": "Brochure page 3 appeared alongside the product route/asset for the combined consultation/download claim.",
+      "correctedAttribution": "Brochure page 3 supports length choices, already cited in named_length_options. Consultation belongs to the product route/shared public asset; downloads are explicitly named by the Element page asset. Brochure page 3 is removed from availability sources."
+    }
+  ],
+  "sourceScreenLimits": [
+    "No network, browser, form submission, seller contact or application execution occurred during proposal preparation.",
+    "The independent reviewer verified all 46 sealed packet hashes and visually inspected specification pages 1–2 and brochure pages 2, 3 and 5; this proposal inherits that documented primary-source review rather than claiming a new visual inspection.",
+    "Product route HTML is a JavaScript shell. Route and PDF applicability use the explicit HTML-to-index-to-Element asset linkage, not inferred filenames or empty web extraction.",
+    "The Forsee item is a preserved web-tool extraction, not original HTML/PDF bytes; its artifact hash pins the capture, not a fetched supplier page body.",
+    "The 2025 manufacturer article is preserved public-asset text; its original publish date and current observation are separate.",
+    "No field is admitted to runtime detailed specifications by this evidence ledger."
+  ],
+  "countEffect": {
+    "detailedConfigurations": 0,
+    "families": 0,
+    "generations": 0,
+    "summaries": 0,
+    "detailedSources": 0,
+    "marketRecords": 0,
+    "namedTrimEntries": 0,
+    "exactTrimSetMissingRecords": 0,
+    "stockPromotions": 0,
+    "orderPromotions": 0,
+    "rankingAdmissions": 0,
+    "completeVehicleAdmissions": 0,
+    "qualification": "Exactly two evidence-only length options are not trims, closed builds, admitted generations or vehicle counts. Sidecar references are not detailed-source records."
+  },
+  "baselineCounts": {
+    "detailedConfigurations": 343,
+    "families": 149,
+    "generations": 153,
+    "summaries": 330,
+    "detailedSources": 2196,
+    "marketRecords": 240,
+    "namedTrimEntries": 393,
+    "exactTrimSetMissingRecords": 53,
+    "qualification": "Detailed counts are the independent review's source84 baseline supplied by the parent, not recalculated through application imports. Market counts are the sealed baseline. No count change is proposed."
+  },
+  "previousRecord": {
+    "familyId": "custom-denning-element",
+    "brand": "Custom Denning",
+    "model": "Element",
+    "vehicleType": "city_bus",
+    "vehicleClass": "bus",
+    "class": "city_bus",
+    "trims": [],
+    "aliases": [
+      "Element 2"
+    ],
+    "sourceUrls": [
+      "https://www.customdenning.com.au/element-electric-bus",
+      "https://www.customdenning.com.au/",
+      "https://www.customdenning.com.au/post/custom-denning-celebrates-milestone-with-the-delivery-of-its-150th-electric-bus"
+    ],
+    "checkedAt": "2026-10-10",
+    "orderStatus": "listed_unconfirmed",
+    "stockStatus": "unverified",
+    "evidenceNote": "Current manufacturer product page markets Element; manufacturer news identifies the second-generation Element 2. Kept as one model family.",
+    "limitations": [
+      "Generation, battery chemistry and pack-count configurations must be quoted against the current build specification. Do not turn the historical Element and Element 2 names into two independent model families. Open orders and stock unverified."
+    ],
+    "recordScope": "factory_new",
+    "roadRegistrationScope": "road_vehicle_offering_registration_not_independently_verified",
+    "canonicalBrand": "Custom Denning",
+    "canonicalModel": "Element",
+    "exactConfigurationStatus": "partial_or_unverified",
+    "id": "custom-denning-element",
+    "modelAliases": [
+      "Element 2"
+    ],
+    "sourceRecordIds": [
+      "custom-denning-element"
+    ],
+    "sourceArtifacts": [
+      "heavy-ev-census.json"
+    ],
+    "rankingEligible": false,
+    "trimCoverage": "exact_trims_unverified",
+    "evidenceHistory": [
+      {
+        "sourceArtifact": "heavy-ev-census.json",
+        "sourceRecordId": "custom-denning-element",
+        "orderStatus": "listed_unconfirmed",
+        "stockStatus": "unverified",
+        "trims": [],
+        "evidenceNote": "Current manufacturer product page markets Element; manufacturer news identifies the second-generation Element 2. Kept as one model family.",
+        "limitations": [
+          "Generation, battery chemistry and pack-count configurations must be quoted against the current build specification. Do not turn the historical Element and Element 2 names into two independent model families. Open orders and stock unverified."
+        ],
+        "sourceUrls": [
+          "https://www.customdenning.com.au/element-electric-bus",
+          "https://www.customdenning.com.au/",
+          "https://www.customdenning.com.au/post/custom-denning-celebrates-milestone-with-the-delivery-of-its-150th-electric-bus"
+        ]
+      }
+    ],
+    "modelYear": null,
+    "catalogueCoverage": "market_audit_only",
+    "availabilityCategory": "listing_only_order_stock_unconfirmed",
+    "completeVehicleCountEligible": null
+  },
+  "publishedLengthOptions": [
+    {
+      "label": "Element 2.2 12.0 m",
+      "advertisedLengthM": 12.0,
+      "lengthMm": 12055,
+      "wheelbaseMm": 6580
+    },
+    {
+      "label": "Element 2.2 10.9 m",
+      "advertisedLengthM": 10.9,
+      "lengthMm": 10900,
+      "wheelbaseMm": 5425
+    }
+  ],
+  "lengthOptionQualification": "Published advertised lengths with paired specification dimensions only; no selected length, closed exact build or length/door/wheelchair cross-join. Shared technical declarations and sample layouts remain source-scoped; long-bus seated/total capacity conflicts are unresolved.",
+  "linkageProof": {
+    "htmlEvidence": {
+      "sourceId": "denning-element",
+      "locator": "HTML script src /assets/index-BbrV-MD0.js",
+      "htmlSHA256": "a78bd0ded4e0925de880e99460ca4a919dc6fe724b56d3454d2fc1123592aa42"
+    },
+    "preservedOffsetMatches": [
+      {
+        "source": "raw/denning-public-script.txt",
+        "needle": "to:\"/element-electric-bus\"",
+        "characterOffset": 291675,
+        "context": "ngKey:\"nav.technology\",links:[{label:\"Electric Low-Floor\",labelKey:\"nav.electricLowFloor\",to:\"/element-electric-bus\"},{label:\"Electric Chassis\",labelKey:\"nav.electricChassis\",to:\"#\",comingSoon:!0},{label:\"Electric High-Floor\",labelKey:\"nav.electricHighFloor\",to:\"#\",comingSoon:!0},{label:\"Battery & Charging\",labelKey:\"nav.battery"
+      },
+      {
+        "source": "raw/denning-public-script.txt",
+        "needle": "path:\"element-electric-bus\"",
+        "characterOffset": 1201365,
+        "context": "D.jsx(SH,{})}),D.jsx(Dt,{path:\"news-press-release/:slug\",element:D.jsx(IH,{})}),D.jsx(Dt,{path:\"element-electric-bus\",element:D.jsx(RH,{})}),D.jsx(Dt,{path:\"contact\",element:D.jsx(NH,{})}),D.jsx(Dt,{path:\"privacy-policy\",element:D.jsx(OH,{})}),D.jsx(Dt,{path:\"terms\",element:D.jsx(LH,{})}),D.jsx(Dt,{path:\"sustainability\",element:"
+      },
+      {
+        "source": "raw/denning-public-script.txt",
+        "needle": "./ElementPage-COq6v51H.js",
+        "characterOffset": 1199549,
+        "context": "rt(\"./NewsArticlePage-B8_V5Xy2.js\"),__vite__mapDeps([8,7]))),RH=V.lazy(()=>Bn(()=>import(\"./ElementPage-COq6v51H.js\"),__vite__mapDeps([9,10,1,11,12]))),xH=V.lazy(()=>Bn(()=>import(\"./ElectricChassisPage-Cmvo1y9j.js\"),__vite__mapDeps([13,10,1,11]))),NH=V.lazy(()=>Bn(()=>import(\"./ContactPage-CFbCuvRK.js\"),__vite__mapDeps([14,5]))"
+      },
+      {
+        "source": "raw/denning-element-script.txt",
+        "needle": "/brochure/Element2.2-Brochure-Download.pdf",
+        "characterOffset": 11099,
+        "context": "row sm:items-center sm:gap-3\",children:[e.jsx(C,{brochure:\"Element\",label:\"Download Brochure\",file:\"/brochure/Element2.2-Brochure-Download.pdf\",downloadName:\"Custom-Denning-Element-2.2-Brochure.pdf\",notifyEmail:!1,flush:!0,compact:!0}),e.jsx(C,{brochure:\"Element Spec Sheet\",label:\"Download Spec Sheet\",modalTitle:\"Download Spec Sheet\",file:\"/brochure/Element2"
+      },
+      {
+        "source": "raw/denning-element-script.txt",
+        "needle": "/brochure/Element2.2-Spec-Sheet.pdf",
+        "characterOffset": 11341,
+        "context": "C,{brochure:\"Element Spec Sheet\",label:\"Download Spec Sheet\",modalTitle:\"Download Spec Sheet\",file:\"/brochure/Element2.2-Spec-Sheet.pdf\",downloadName:\"Custom-Denning-Element-2.2-Spec-Sheet.pdf\",notifyEmail:!1,flush:!0,compact:!0})]})})]})})})}function k(t,a=4){return String(t).padStart(a,\"0\")}function K(){const t=\"https://cdbatteryanim.pages.dev\",a=[];for(le"
+      },
+      {
+        "source": "raw/denning-element-script.txt",
+        "needle": "value:411.5",
+        "characterOffset": 14173,
+        "context": "ue:72.01,decimals:2,unit:\"kWh\",note:\"per 100 km\",icon:\"gauge\"},{id:\"battery\",label:\"Battery System\",value:411.5,decimals:1,unit:\"kWh\",note:\"Usable Energy\",icon:\"battery\"},{id:\"real-world\",label:\"Real World Efficiency\",value:80.2,decimals:1,unit:\"kWh\",note:\"per 100 km\",icon:\"globe\"}]}},{id:\"warranty\",title:\"Warranty\",theme:\"dark\",trackVh:820,trackClassName:\"b"
+      }
+    ],
+    "qualification": "Six offsets are from sealed source text and were verified by independent review84; scripts were never executed."
+  },
+  "stableSourceFieldLedger": [
+    {
+      "field": "identity",
+      "value": "Element 2.2",
+      "scope": "Current Australian completed city-bus offering, within existing Custom Denning Element family",
+      "sources": [
+        {
+          "url": "https://www.customdenning.com.au/brochure/Element2.2-Spec-Sheet.pdf",
+          "page": 1,
+          "sourceId": "element22-spec"
+        },
+        {
+          "url": "https://www.customdenning.com.au/brochure/Element2.2-Brochure-Download.pdf",
+          "page": 2,
+          "sourceId": "element22-brochure"
+        }
+      ],
+      "status": "published_manufacturer_offering",
+      "runtimeImportProposed": false
+    },
+    {
+      "field": "named_length_options",
+      "value": [
+        "12.0 m",
+        "10.9 m"
+      ],
+      "sources": [
+        {
+          "url": "https://www.customdenning.com.au/brochure/Element2.2-Brochure-Download.pdf",
+          "page": 3,
+          "sourceId": "element22-brochure"
+        },
+        {
+          "url": "https://www.customdenning.com.au/brochure/Element2.2-Spec-Sheet.pdf",
+          "page": 2,
+          "sourceId": "element22-spec"
+        }
+      ],
+      "status": "named_options_not_complete_factory_builds",
+      "runtimeImportProposed": false
+    },
+    {
+      "field": "length_mm",
+      "values": {
+        "12m": 12055,
+        "10.9m": 10900
+      },
+      "sources": [
+        {
+          "url": "https://www.customdenning.com.au/brochure/Element2.2-Spec-Sheet.pdf",
+          "page": 2,
+          "sourceId": "element22-spec"
+        }
+      ],
+      "status": "source_scoped",
+      "runtimeImportProposed": false
+    },
+    {
+      "field": "wheelbase_mm",
+      "values": {
+        "12m": 6580,
+        "10.9m": 5425
+      },
+      "sources": [
+        {
+          "url": "https://www.customdenning.com.au/brochure/Element2.2-Spec-Sheet.pdf",
+          "page": 2,
+          "sourceId": "element22-spec"
+        }
+      ],
+      "status": "source_scoped",
+      "runtimeImportProposed": false
+    },
+    {
+      "field": "width_mm",
+      "value": 2490,
+      "sources": [
+        {
+          "url": "https://www.customdenning.com.au/brochure/Element2.2-Spec-Sheet.pdf",
+          "page": 2,
+          "sourceId": "element22-spec"
+        }
+      ],
+      "status": "shared_table_not_unit_specific",
+      "runtimeImportProposed": false
+    },
+    {
+      "field": "height_mm",
+      "value": 3370,
+      "sources": [
+        {
+          "url": "https://www.customdenning.com.au/brochure/Element2.2-Spec-Sheet.pdf",
+          "page": 2,
+          "sourceId": "element22-spec"
+        }
+      ],
+      "status": "shared_table_not_unit_specific",
+      "runtimeImportProposed": false
+    },
+    {
+      "field": "gvw_kg",
+      "value": 18000,
+      "sources": [
+        {
+          "url": "https://www.customdenning.com.au/brochure/Element2.2-Spec-Sheet.pdf",
+          "page": 2,
+          "sourceId": "element22-spec"
+        }
+      ],
+      "status": "manufacturer_rating_not_permitted_route_mass",
+      "runtimeImportProposed": false
+    },
+    {
+      "field": "battery_technology",
+      "value": "CATL LFP",
+      "sources": [
+        {
+          "url": "https://www.customdenning.com.au/brochure/Element2.2-Spec-Sheet.pdf",
+          "page": 2,
+          "sourceId": "element22-spec"
+        }
+      ],
+      "status": "current22_only_do_not_inherit_legacy_NMC",
+      "runtimeImportProposed": false
+    },
+    {
+      "field": "battery_usable_energy_kWh",
+      "value": 411.5,
+      "sources": [
+        {
+          "url": "https://www.customdenning.com.au/brochure/Element2.2-Brochure-Download.pdf",
+          "page": 2,
+          "sourceId": "element22-brochure"
+        },
+        {
+          "url": "https://www.customdenning.com.au/assets/ElementPage-COq6v51H.js",
+          "locator": "stats.items id battery, unit kWh, note Usable Energy",
+          "sourceId": "denning-element-script"
+        }
+      ],
+      "status": "explicit_brochure_and_page_claim",
+      "qualification": "Spec sheet prints kW for this energy field on both pages; retain that source error, do not silently correct its quotation. Gross capacity and pack count not specified.",
+      "runtimeImportProposed": false
+    },
+    {
+      "field": "drive_motor",
+      "value": "Driventic VEDS 1.5 HD",
+      "sources": [
+        {
+          "url": "https://www.customdenning.com.au/brochure/Element2.2-Spec-Sheet.pdf",
+          "page": 2,
+          "sourceId": "element22-spec"
+        }
+      ],
+      "status": "current22_only_do_not_inherit_legacy_ZF_CeTrax",
+      "runtimeImportProposed": false
+    },
+    {
+      "field": "motor_peak_kW",
+      "value": 390,
+      "sources": [
+        {
+          "url": "https://www.customdenning.com.au/brochure/Element2.2-Spec-Sheet.pdf",
+          "page": 2,
+          "sourceId": "element22-spec"
+        }
+      ],
+      "status": "source_scoped",
+      "runtimeImportProposed": false
+    },
+    {
+      "field": "motor_continuous_kW",
+      "value": 320,
+      "sources": [
+        {
+          "url": "https://www.customdenning.com.au/brochure/Element2.2-Spec-Sheet.pdf",
+          "page": 2,
+          "sourceId": "element22-spec"
+        }
+      ],
+      "status": "source_scoped",
+      "runtimeImportProposed": false
+    },
+    {
+      "field": "motor_torque_Nm",
+      "value": 3100,
+      "sources": [
+        {
+          "url": "https://www.customdenning.com.au/brochure/Element2.2-Spec-Sheet.pdf",
+          "page": 2,
+          "sourceId": "element22-spec"
+        }
+      ],
+      "status": "source_scoped_no_peak_continuous_basis_given",
+      "runtimeImportProposed": false
+    },
+    {
+      "field": "max_dc_kW",
+      "value": 300,
+      "sources": [
+        {
+          "url": "https://www.customdenning.com.au/brochure/Element2.2-Spec-Sheet.pdf",
+          "page": 2,
+          "sourceId": "element22-spec"
+        }
+      ],
+      "status": "manufacturer_peak_no_SOC_duration_curve",
+      "runtimeImportProposed": false
+    },
+    {
+      "field": "charge_ports",
+      "value": "Nearside and offside CCS2.0 DC",
+      "sources": [
+        {
+          "url": "https://www.customdenning.com.au/brochure/Element2.2-Spec-Sheet.pdf",
+          "page": 2,
+          "sourceId": "element22-spec"
+        }
+      ],
+      "status": "source_scoped_no_AC_or_pantograph_inheritance",
+      "runtimeImportProposed": false
+    },
+    {
+      "field": "auxiliary_battery",
+      "value": "24 V lithium",
+      "sources": [
+        {
+          "url": "https://www.customdenning.com.au/brochure/Element2.2-Spec-Sheet.pdf",
+          "page": 2,
+          "sourceId": "element22-spec"
+        }
+      ],
+      "status": "auxiliary_not_traction_voltage",
+      "runtimeImportProposed": false
+    },
+    {
+      "field": "seated_passengers_12m",
+      "value": null,
+      "sources": [
+        {
+          "url": "https://www.customdenning.com.au/brochure/Element2.2-Spec-Sheet.pdf",
+          "page": 2,
+          "claim": 39,
+          "sourceId": "element22-spec"
+        },
+        {
+          "url": "https://www.customdenning.com.au/brochure/Element2.2-Brochure-Download.pdf",
+          "page": 5,
+          "claim": 43,
+          "sourceId": "element22-brochure"
+        },
+        {
+          "url": "https://www.customdenning.com.au/assets/ElementPage-COq6v51H.js",
+          "claim": "39 passengers with asterisk and flexible-layout wording",
+          "sourceId": "denning-element-script"
+        }
+      ],
+      "status": "unresolved_layout_conflict",
+      "runtimeImportProposed": false
+    },
+    {
+      "field": "total_capacity_12m",
+      "value": null,
+      "sources": [
+        {
+          "url": "https://www.customdenning.com.au/brochure/Element2.2-Spec-Sheet.pdf",
+          "page": 2,
+          "claim": "up to 65",
+          "sourceId": "element22-spec"
+        },
+        {
+          "url": "https://www.customdenning.com.au/brochure/Element2.2-Brochure-Download.pdf",
+          "page": 5,
+          "claim": 69,
+          "sourceId": "element22-brochure"
+        }
+      ],
+      "status": "unresolved_layout_conflict_no_driver_inference",
+      "runtimeImportProposed": false
+    },
+    {
+      "field": "short_layout",
+      "value": {
+        "seats": 37,
+        "total_up_to": 60,
+        "standing_up_to": 23,
+        "seats_with_one_wheelchair": 33,
+        "seats_with_two_wheelchairs": 29
+      },
+      "sources": [
+        {
+          "url": "https://www.customdenning.com.au/brochure/Element2.2-Spec-Sheet.pdf",
+          "page": 2,
+          "sourceId": "element22-spec"
+        }
+      ],
+      "status": "published_sample_layout_not_closed_build",
+      "runtimeImportProposed": false
+    },
+    {
+      "field": "long_accessible_layout",
+      "value": {
+        "seats_with_one_wheelchair": 36,
+        "seats_with_two_wheelchairs": 33,
+        "standing_up_to": 26
+      },
+      "sources": [
+        {
+          "url": "https://www.customdenning.com.au/brochure/Element2.2-Spec-Sheet.pdf",
+          "page": 2,
+          "sourceId": "element22-spec"
+        }
+      ],
+      "status": "published_sample_layout_not_closed_build",
+      "runtimeImportProposed": false
+    },
+    {
+      "field": "door_options",
+      "value": "One or two doors",
+      "sources": [
+        {
+          "url": "https://www.customdenning.com.au/brochure/Element2.2-Brochure-Download.pdf",
+          "page": 5,
+          "sourceId": "element22-brochure"
+        }
+      ],
+      "status": "not_cross_joined_with_lengths_or_layouts",
+      "runtimeImportProposed": false
+    },
+    {
+      "field": "certified_range_claim_km",
+      "value": 500,
+      "sources": [
+        {
+          "url": "https://www.customdenning.com.au/brochure/Element2.2-Spec-Sheet.pdf",
+          "page": 2,
+          "sourceId": "element22-spec"
+        }
+      ],
+      "status": "up_to_duty_cycle_dependent_manufacturer_claim",
+      "qualification": "Adjacent cycle named SORT 1 - Urban / ZEMO; exact tested length/layout, certification report, load, SOC and usable-energy applicability unbound. Not passenger WLTP.",
+      "runtimeImportProposed": false
+    },
+    {
+      "field": "test_efficiency",
+      "value": {
+        "page_asset_kWh_per_100km": 72.01,
+        "brochure_kWh_per_km": 0.72
+      },
+      "sources": [
+        {
+          "url": "https://www.customdenning.com.au/assets/ElementPage-COq6v51H.js",
+          "locator": "stats.items id sort1",
+          "sourceId": "denning-element-script"
+        },
+        {
+          "url": "https://www.customdenning.com.au/brochure/Element2.2-Brochure-Download.pdf",
+          "page": 2,
+          "sourceId": "element22-brochure"
+        }
+      ],
+      "status": "separate_source_scoped_values_no_assumed_precision_bridge",
+      "runtimeImportProposed": false
+    },
+    {
+      "field": "real_world_efficiency_kWh_per_100km",
+      "value": 80.2,
+      "sources": [
+        {
+          "url": "https://www.customdenning.com.au/brochure/Element2.2-Spec-Sheet.pdf",
+          "page": 2,
+          "sourceId": "element22-spec"
+        },
+        {
+          "url": "https://www.customdenning.com.au/assets/ElementPage-COq6v51H.js",
+          "locator": "stats.items id real-world",
+          "sourceId": "denning-element-script"
+        }
+      ],
+      "status": "manufacturer_label_no_independent_route_or_load_evidence",
+      "runtimeImportProposed": false
+    },
+    {
+      "field": "battery_warranty",
+      "value": "Up to 15 years / 1.5 million km",
+      "sources": [
+        {
+          "url": "https://www.customdenning.com.au/brochure/Element2.2-Spec-Sheet.pdf",
+          "page": 1,
+          "claim": "Up to 15 years / 1.5 million km",
+          "sourceId": "element22-spec"
+        },
+        {
+          "url": "https://www.customdenning.com.au/brochure/Element2.2-Brochure-Download.pdf",
+          "page": 3,
+          "claim": "Up to 15 years",
+          "supportsMillionKmClaim": false,
+          "sourceId": "element22-brochure"
+        }
+      ],
+      "status": "headline_only_qualifications_contract_unverified",
+      "qualification": "Combined headline is supported by specification page 1 only; brochure page 3 supports the years headline but not the mileage. Full contract coverage and exact-build applicability remain unverified.",
+      "runtimeImportProposed": false
+    },
+    {
+      "field": "structure",
+      "value": "Custom Denning monocoque; EN 1.4003 stainless steel; full-length low floor",
+      "sources": [
+        {
+          "url": "https://www.customdenning.com.au/brochure/Element2.2-Spec-Sheet.pdf",
+          "page": 2,
+          "sourceId": "element22-spec"
+        }
+      ],
+      "status": "source_scoped",
+      "runtimeImportProposed": false
+    },
+    {
+      "field": "equipment_boundaries",
+      "value": "Destination display, CCTV and passenger-information system are pre-wired; equipment choice, PA, fire suppression and Wi-Fi are optional",
+      "sources": [
+        {
+          "url": "https://www.customdenning.com.au/brochure/Element2.2-Spec-Sheet.pdf",
+          "page": 2,
+          "sourceId": "element22-spec"
+        }
+      ],
+      "status": "do_not_promote_to_standard",
+      "runtimeImportProposed": false
+    },
+    {
+      "field": "road_eligibility",
+      "value": null,
+      "sources": [
+        {
+          "url": "https://www.customdenning.com.au/brochure/Element2.2-Brochure-Download.pdf",
+          "page": 2,
+          "sourceId": "element22-brochure"
+        }
+      ],
+      "status": "AU_city_bus_product_claim_not_independent_RAV_or_per_build_approval",
+      "runtimeImportProposed": false
+    },
+    {
+      "field": "availability",
+      "value": "Current named manufacturer offering with consultation/download route",
+      "sources": [
+        {
+          "url": "https://www.customdenning.com.au/element-electric-bus",
+          "locator": "Current manufacturer product route; HTML shell linked to public assets",
+          "sourceId": "denning-element"
+        },
+        {
+          "url": "https://www.customdenning.com.au/assets/index-BbrV-MD0.js",
+          "locator": "Route binding and English shared footerBanner.cta Request a Consultation",
+          "sourceId": "denning-public-script"
+        },
+        {
+          "url": "https://www.customdenning.com.au/assets/ElementPage-COq6v51H.js",
+          "locator": "Download Brochure and Download Spec Sheet file declarations",
+          "sourceId": "denning-element-script"
+        }
+      ],
+      "status": "listed_unconfirmed_stock_unverified",
+      "qualification": "Consultation is product-route/shared-public-asset evidence; downloads are declared by the Element page asset. Brochure page 3 supports lengths, not consultation. No specific New unit, VIN, stock number, price, accepted order, lead time or delivery commitment verified.",
+      "runtimeImportProposed": false
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.customdenning.com.au/assets/ElementPage-COq6v51H.js",
+      "status": 200,
+      "finalUrl": "https://www.customdenning.com.au/assets/ElementPage-COq6v51H.js",
+      "observedAtUTC": "2026-10-11T17:20:57.683837+00:00",
+      "bytes": 15521,
+      "sha256": "2172662409db91dd9bccb2844580e1b44d47262d5d22df868fe53f8d70efee19",
+      "use": "Read as public source text; never executed",
+      "metadataPath": "roadmark-research/next-market-gap-after84/raw/denning-element-script.metadata.json",
+      "id": "denning-element-script",
+      "publisher": "Custom Denning",
+      "path": "roadmark-research/next-market-gap-after84/raw/denning-element-script.txt",
+      "evidenceLocations": [
+        "PDF file declarations at retained offsets 11099 and 11341",
+        "stats.items battery, sort1 and real-world",
+        "39-passenger/flexible-layout copy"
+      ]
+    },
+    {
+      "id": "denning-element",
+      "url": "https://www.customdenning.com.au/element-electric-bus",
+      "finalUrl": "https://www.customdenning.com.au/element-electric-bus",
+      "status": 200,
+      "observedAtUTC": "2026-10-11T17:19:58.917802+00:00",
+      "sha256": "a78bd0ded4e0925de880e99460ca4a919dc6fe724b56d3454d2fc1123592aa42",
+      "bytes": 2303,
+      "metadataPath": "roadmark-research/next-market-gap-after84/raw/denning-element.metadata.json",
+      "publisher": "Custom Denning",
+      "path": "roadmark-research/next-market-gap-after84/raw/denning-element.html",
+      "evidenceLocations": [
+        "script src /assets/index-BbrV-MD0.js"
+      ],
+      "qualification": "HTML shell alone contains no complete product specification; use explicit public-asset linkage."
+    },
+    {
+      "id": "denning-home",
+      "url": "https://www.customdenning.com.au/",
+      "finalUrl": "https://www.customdenning.com.au/",
+      "status": 200,
+      "observedAtUTC": "2026-10-11T17:19:52.120481+00:00",
+      "sha256": "a78bd0ded4e0925de880e99460ca4a919dc6fe724b56d3454d2fc1123592aa42",
+      "bytes": 2303,
+      "metadataPath": "roadmark-research/next-market-gap-after84/raw/denning-home.metadata.json",
+      "publisher": "Custom Denning",
+      "path": "roadmark-research/next-market-gap-after84/raw/denning-home.html",
+      "evidenceLocations": [
+        "script src /assets/index-BbrV-MD0.js"
+      ],
+      "qualification": "HTML shell alone contains no complete product specification; use explicit public-asset linkage."
+    },
+    {
+      "url": "https://www.customdenning.com.au/assets/index-BbrV-MD0.js",
+      "status": 200,
+      "finalUrl": "https://www.customdenning.com.au/assets/index-BbrV-MD0.js",
+      "observedAtUTC": "2026-10-11T17:20:43.476341+00:00",
+      "bytes": 1222009,
+      "sha256": "65fe24c6b65a3a5cc6150881c81bd1b5000d4f9eb4607a422b9a719ddba86d6b",
+      "use": "Read as public source text; never executed",
+      "metadataPath": "roadmark-research/next-market-gap-after84/raw/denning-public-script.metadata.json",
+      "id": "denning-public-script",
+      "publisher": "Custom Denning",
+      "path": "roadmark-research/next-market-gap-after84/raw/denning-public-script.txt",
+      "evidenceLocations": [
+        "element-electric-bus route and ElementPage lazy asset linkage",
+        "English footerBanner.cta Request a Consultation",
+        "Historical article body and publishDate 2025-03-12"
+      ]
+    },
+    {
+      "id": "element22-brochure",
+      "url": "https://www.customdenning.com.au/brochure/Element2.2-Brochure-Download.pdf",
+      "finalUrl": "https://www.customdenning.com.au/brochure/Element2.2-Brochure-Download.pdf",
+      "status": 200,
+      "contentType": "application/pdf",
+      "observedAtUTC": "2026-10-11T17:21:50.181363+00:00",
+      "bytes": 1685922,
+      "sha256": "47af4c656c8c9aca287bcf8dda6516ab6f91d28c4a9b5fc178fa4dfde29f8e4f",
+      "metadataPath": "roadmark-research/next-market-gap-after84/raw/element22-brochure.metadata.json",
+      "publisher": "Custom Denning",
+      "path": "roadmark-research/next-market-gap-after84/raw/element22-brochure.pdf",
+      "pages": 8,
+      "evidenceLocations": [
+        "p2 identity, 411.5 kWh usable energy, consumption",
+        "p3 advertised lengths and up-to-15-years headline only",
+        "p5 explicitly 12.0 m occupancy and one/two-door advertising"
+      ]
+    },
+    {
+      "id": "element22-spec",
+      "url": "https://www.customdenning.com.au/brochure/Element2.2-Spec-Sheet.pdf",
+      "finalUrl": "https://www.customdenning.com.au/brochure/Element2.2-Spec-Sheet.pdf",
+      "status": 200,
+      "contentType": "application/pdf",
+      "observedAtUTC": "2026-10-11T17:21:41.944863+00:00",
+      "bytes": 4805413,
+      "sha256": "de041ec112a5fc8f4594b9cbe8710e5040517e9618c60a3f2e86a3a31dfe561a",
+      "metadataPath": "roadmark-research/next-market-gap-after84/raw/element22-spec.metadata.json",
+      "publisher": "Custom Denning",
+      "path": "roadmark-research/next-market-gap-after84/raw/element22-spec.pdf",
+      "pages": 2,
+      "evidenceLocations": [
+        "p1 complete-vehicle manufacturing, usable-energy label/unit defect, battery warranty",
+        "p2 dimensions, energy/driveline, shared technical table, sample layouts, range/charging/equipment"
+      ]
+    },
+    {
+      "id": "denning-historical-element-news",
+      "url": "https://www.customdenning.com.au/post/custom-denning-announces-the-100th-element-2-bus-milestone-a-vision-for-the-future-of-public-transport",
+      "publisher": "Custom Denning",
+      "publicationDate": "2025-03-12",
+      "observedAtUTC": "2026-10-11T17:20:43.476341+00:00",
+      "captureKind": "Manufacturer news content preserved inside public JavaScript asset, read as source text only",
+      "captureUrl": "https://www.customdenning.com.au/assets/index-BbrV-MD0.js",
+      "path": "roadmark-research/next-market-gap-after84/raw/denning-public-script.txt",
+      "sha256": "65fe24c6b65a3a5cc6150881c81bd1b5000d4f9eb4607a422b9a719ddba86d6b",
+      "extractPath": "roadmark-research/next-market-gap-after84/extracts/denning-current-news-matches.json",
+      "extractSHA256": "9c8470b107a185e30d7dd273043389926099eb5c94994316090b15ca8f12df17",
+      "evidenceLocation": "Article slug custom-denning-announces-the-100th-element-2-bus-milestone-a-vision-for-the-future-of-public-transport; retained extract query 100th-element-2 at character offsets 1035304 and 1035467",
+      "role": "Historical original Element LMP/Actia versus earlier Element 2 NMC/ZF CeTrax separation; old 10.5 m, 383/462 kWh and pantograph declarations are not current 2.2 evidence"
+    },
+    {
+      "id": "forsee-element2-20250324",
+      "url": "https://www.forseepower.com/press-release/custom-denning-accelerates-orders-to-electrify-its-buses-with-forsee-power-batteries/",
+      "publisher": "Forsee Power",
+      "publicationDate": "2025-03-24",
+      "captureDate": "2026-10-11",
+      "observedAtUTC": null,
+      "captureKind": "Preserved web-tool text extraction; original HTML bytes not captured",
+      "path": "roadmark-research/next-market-gap-after84/raw/denning-sources.web.json",
+      "sha256": "8198ff00b7e6735b0a4e78ea559a0015d7a2bbcad52bde223062c2f456049ddd",
+      "evidenceLocation": "Supplier release portion, retained page lines 146–166; Element 2 deployment at 156, energy at 161, NMC at 165, pantograph at 166",
+      "role": "Earlier Australian Element 2 deployment and NMC/462 kWh corroboration only; no 2.2 specification, stock, order or approval transfer",
+      "dateQualification": "Exact original extraction timestamp is not stated in the sealed file. Retain capture date only; publication date is explicit in source text."
+    }
+  ],
+  "previousRecordCanonicalSHA256": "e21196bbd9281eede9a90614ee86274acac2961234351eed64e946aa50d4d252",
+  "previousRecordCanonicalHashMethod": "SHA-256 of jq -S -c JSON serialization with one trailing LF",
+  "targetMarketInputSHA256": "7444e6d6a7c6d9f55df4a990d7eecb66229734fcc3e0bb3fc17898f1d4a941e4"
+}

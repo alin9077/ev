@@ -3,8 +3,14 @@ import { localUrl, navigate } from "./navigation";
 export default function Link({
   href,
   onClick,
+  prefetch,
   ...props
-}: ComponentProps<"a"> & { href: string }) {
+}: ComponentProps<"a"> & {
+  href: string;
+  prefetch?: boolean | "auto" | null;
+}) {
+  // The self-contained portable app has no route prefetching.
+  void prefetch;
   return (
     <a
       {...props}

@@ -1,0 +1,351 @@
+{
+  "schema": "roadmark-refresh-findings-v1",
+  "brand": "Jaecoo",
+  "asOf": "2026-11-05",
+  "reviewedAt": "2026-11-05",
+  "reviewedBy": "Roadmark WS2 refresh (Claude Code worker), Jaecoo",
+  "sources": [
+    {
+      "id": "refresh-jaecoo-2026-11-05-offers",
+      "url": "https://www.omodajaecoo.com.au/buying/offers",
+      "title": "Black Friday Car Deals 2026 (Omoda Jaecoo Australia)",
+      "publisher": "Omoda Jaecoo Australia",
+      "source_type": "manufacturer_au_price_offer",
+      "published_date": null,
+      "accessed_date": "2026-11-05",
+      "market": "AU",
+      "supports": "Opened 2026-11-05. Jaecoo J5 EV Summit: driveaway offer from $36,990. Disclaimer: $36,990 is the driveaway offer price for the Jaecoo J5 EV Summit with no metallic paint or options, available on new stock vehicles ordered from participating dealers between 1/11/2026 and 30/11/2026, while stocks last. The page no longer shows the $35,990 recommended retail price."
+    },
+    {
+      "id": "refresh-jaecoo-2026-11-05-model",
+      "url": "https://www.omodajaecoo.com.au/models/jaecoo-j5-bev",
+      "title": "JAECOO J5 EV (model page)",
+      "publisher": "Omoda Jaecoo Australia",
+      "source_type": "manufacturer_au_specification",
+      "published_date": null,
+      "accessed_date": "2026-11-05",
+      "market": "AU",
+      "supports": "Opened 2026-11-05. J5 EV: 402 km WLTP range, From $36,990 driveaway. No recommended retail price shown."
+    },
+    {
+      "id": "refresh-jaecoo-2026-11-05-build",
+      "url": "https://www.omodajaecoo.com.au/j5-build-your-own",
+      "title": "J5 Build Your Own (J5 EV)",
+      "publisher": "Omoda Jaecoo Australia",
+      "source_type": "official_configurator",
+      "published_date": null,
+      "accessed_date": "2026-11-05",
+      "market": "AU",
+      "supports": "Opened 2026-11-05. JAECOO J5 EV SUMMIT, driveaway from $36,990, 'Available now'; the $36,990 total includes delivery fee, CTP, stamp duty and registration under the Driveaway Offer. Location is needed for a personalised estimate."
+    }
+  ],
+  "versions": [
+    {
+      "variantId": "jaecoo_j5_ev__ev_summit__1",
+      "vehicle": "Jaecoo J5 EV EV Summit",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "accepting_order_requests_advertised",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.omodajaecoo.com.au/models/jaecoo-j5-bev",
+            "https://www.omodajaecoo.com.au/buying/offers",
+            "https://www.omodajaecoo.com.au/j5-build-your-own"
+          ]
+        },
+        "outcome": "unchanged",
+        "sourceIds": [
+          "refresh-jaecoo-2026-11-05-build",
+          "refresh-jaecoo-2026-11-05-model"
+        ],
+        "note": "Build page says 'Available now' with an order/quote route; allocation, physical stock and delivery not verified."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "35,990 AUD",
+            "basis": "Manufacturer recommended retail price; excludes registration, CTP, stamp duty and dealer delivery",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.omodajaecoo.com.au/buying/offers"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "The $35,990 recommended retail price is not shown on the offers, model or build pages read on 2026-11-05; only the driveaway offer is displayed."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "402 km",
+            "basis": "WLTP",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.omodajaecoo.com.au/sites/default/files/2026-05/Spec25_Jaecoo_J5_Spec_Sheet_AU_BEV_v101_compressed_compressed.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "58.9 kWh",
+            "basis": "Battery capacity; gross/usable unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.omodajaecoo.com.au/sites/default/files/2026-05/Spec25_Jaecoo_J5_Spec_Sheet_AU_BEV_v101_compressed_compressed.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "DC peak charging",
+          "due": false,
+          "current": {
+            "value": "130 kW",
+            "basis": "Maximum vehicle DC acceptance",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.omodajaecoo.com.au/sites/default/files/2026-05/Spec25_Jaecoo_J5_Spec_Sheet_AU_BEV_v101_compressed_compressed.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "10–80%",
+            "grade": "not_published",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.omodajaecoo.com.au/sites/default/files/2026-05/Spec25_Jaecoo_J5_Spec_Sheet_AU_BEV_v101_compressed_compressed.pdf",
+              "https://www.racv.com.au/royalauto/transport/electric-vehicles/2026-jaecoo-j5-ev-price-specs-release-date.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "Maximum AC charging power",
+          "due": false,
+          "current": {
+            "value": "10.3 kW",
+            "basis": "Maximum AC input; three phase",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.omodajaecoo.com.au/sites/default/files/2026-05/Spec25_Jaecoo_J5_Spec_Sheet_AU_BEV_v101_compressed_compressed.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.omodajaecoo.com.au/sites/default/files/2026-05/Spec25_Jaecoo_J5_Spec_Sheet_AU_BEV_v101_compressed_compressed.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot volume to cargo cover",
+          "due": false,
+          "current": {
+            "value": "384 L",
+            "basis": "VDA; seats up; to cargo cover",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.omodajaecoo.com.au/sites/default/files/2026-05/Spec25_Jaecoo_J5_Spec_Sheet_AU_BEV_v101_compressed_compressed.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "7.7 s",
+            "basis": "0–100 km/h; reported manufacturer claim",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.racv.com.au/royalauto/transport/electric-vehicles/2026-jaecoo-j5-ev-price-specs-release-date.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "155 kW",
+            "basis": "Maximum net motor power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.omodajaecoo.com.au/sites/default/files/2026-05/Spec25_Jaecoo_J5_Spec_Sheet_AU_BEV_v101_compressed_compressed.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "FWD",
+            "basis": "Drivetrain",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.omodajaecoo.com.au/ev-technology"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,380 mm",
+            "basis": "Overall length",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.omodajaecoo.com.au/sites/default/files/2026-05/Spec25_Jaecoo_J5_Spec_Sheet_AU_BEV_v101_compressed_compressed.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,860 mm",
+            "basis": "Overall width; mirror treatment unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.omodajaecoo.com.au/sites/default/files/2026-05/Spec25_Jaecoo_J5_Spec_Sheet_AU_BEV_v101_compressed_compressed.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,650 mm",
+            "basis": "Overall height",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.omodajaecoo.com.au/sites/default/files/2026-05/Spec25_Jaecoo_J5_Spec_Sheet_AU_BEV_v101_compressed_compressed.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,250 kg",
+            "basis": "Maximum braked towing",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.omodajaecoo.com.au/sites/default/files/2026-05/Spec25_Jaecoo_J5_Spec_Sheet_AU_BEV_v101_compressed_compressed.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / unlimited km",
+            "basis": "Australian new-vehicle warranty; private use",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.omodajaecoo.com.au/legal/owners/vehicle-warranty-terms-and-conditions"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / unlimited km; 70% capacity threshold",
+            "basis": "Australian traction-battery warranty; private use",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.omodajaecoo.com.au/legal/owners/8-yearunlimited-kilometre-high-voltage-battery-warranty-terms-and-conditions",
+              "https://www.omodajaecoo.com.au/legal/owners/vehicle-warranty-terms-and-conditions"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "promotional_driveaway_aud",
+          "label": "October driveaway offer",
+          "due": true,
+          "current": {
+            "value": "36,990 AUD",
+            "basis": "Maker national driveaway offer",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.omodajaecoo.com.au/buying/offers"
+            ]
+          },
+          "outcome": "changed",
+          "value": 36990,
+          "sourceIds": [
+            "refresh-jaecoo-2026-11-05-offers",
+            "refresh-jaecoo-2026-11-05-build"
+          ],
+          "conditionExplanation": "New stock J5 EV Summit without metallic paint or options, ordered through participating dealers between 1 and 30 November 2026, while stocks last.",
+          "validUntil": "2026-11-30",
+          "note": "Same $36,990 national driveaway price, now under the Black Friday offer: orders 1 to 30 November 2026 (the October offer window ended 31 October)."
+        }
+      ]
+    }
+  ]
+}

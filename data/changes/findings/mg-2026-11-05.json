@@ -1,0 +1,5162 @@
+{
+  "schema": "roadmark-refresh-findings-v1",
+  "brand": "MG",
+  "asOf": "2026-11-05",
+  "reviewedAt": "2026-11-05",
+  "reviewedBy": "Roadmark WS2 refresh (Claude Code worker), MG",
+  "sources": [
+    {
+      "id": "refresh-mg-2026-11-05-offers",
+      "url": "https://mgmotor.com.au/offers",
+      "title": "MG current offers",
+      "publisher": "MG Motor Australia (SAIC Motor Australia)",
+      "source_type": "manufacturer_au_offer",
+      "published_date": null,
+      "accessed_date": "2026-11-05",
+      "market": "AU",
+      "supports": "Opened 2026-11-05. Current offers, prices in the order standard driveaway then driveaway after cashback: MG4 EV Urban Essence 43 $31,990 / $29,990 ($2,000 cashback); MG4 EV Urban Essence 54 $34,990 / $32,990 ($2,000); MG4 EV Essence 64 Drive Away Offer $39,990; MG4 EV XPOWER Drive Away Offer $47,990; MGS5 EV Essence 49kWh $41,990 / $39,990 ($2,000); MGS5 EV Essence 62kWh $46,990 / $44,990 ($2,000); MGS6 EV Essence RWD $49,990 / $48,990 ($1,000); MGS6 EV Essence AWD $56,990 / $55,990 ($1,000); IM5 and IM6 Premium $60,990 / $57,990, Platinum $67,990 / $64,990, Performance $77,990 / $74,990 ($3,000 cashback plus $500 accessories; card says offer ends 30 November). Other cards say offer ends 31 December. Terms expanded on the page: '*' prices are driveaway without options (12 months registration and CTP, maximum dealer delivery and estimated stamp duty); offers at participating MG dealers sold and delivered between 01 Nov and 31 Dec 2026, while stocks last; excludes fleet, government and rental buyers. Cashback is redeemed at point of sale as a deduction from the purchase price and is not combinable with other offers (IM5 and IM6 cashback combines with the $500 EV Accessories Bonus)."
+    },
+    {
+      "id": "refresh-mg-2026-11-05-cyberster",
+      "url": "https://mgmotor.com.au/configurator/cyberster",
+      "title": "Build & Price Your CYBERSTER & Order Online",
+      "publisher": "MG Motor Australia (SAIC Motor Australia)",
+      "source_type": "official_configurator",
+      "published_date": null,
+      "accessed_date": "2026-11-05",
+      "market": "AU",
+      "supports": "Opened 2026-11-05. CYBERSTER 77kWh RWD $99,900 + On-Road Costs; CYBERSTER 77kWh AWD $115,000 + On-Road Costs. The page's own terms still describe an offer sold and delivered 01/10/2026 to 31/10/26, so the offer window on this page has ended. Order Online route; stock not stated."
+    }
+  ],
+  "versions": [
+    {
+      "variantId": "mg4_ev_my26__essence_64_rwd__20261010",
+      "vehicle": "MG MG4 EV Essence 64 RWD",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "accepting_orders_advertised",
+          "stockStatus": "new_stock_listed",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://mgmotor.com.au/brochures/MG4_EV_2026_V2.pdf",
+            "https://mgmotor.com.au/vehicles/mg4-ev",
+            "https://mgmotor.com.au/configurator/mg4-ev",
+            "https://mgmotor.com.au/offers",
+            "https://www.qautomotive.com.au/cars/new-iris-2026-mg-mg4-m073433"
+          ]
+        },
+        "outcome": "unchanged",
+        "sourceIds": [
+          "refresh-mg-2026-11-05-offers"
+        ],
+        "note": "Variant is on the offers page with Build & Price and test-drive routes; same order status as 14 October. Stock not verified."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "39,990 AUD",
+            "basis": "Driveaway",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/offers"
+            ]
+          },
+          "outcome": "changed",
+          "value": 39990,
+          "sourceIds": [
+            "refresh-mg-2026-11-05-offers"
+          ],
+          "conditionExplanation": "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Sold and delivered at participating MG dealers between 1 November and 31 December 2026, while stocks last; excludes fleet, government and rental buyers. Drive Away Offer price; no cashback shown on the offers page.",
+          "qualifications": [
+            "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Sold and delivered at participating MG dealers between 1 November and 31 December 2026, while stocks last; excludes fleet, government and rental buyers. Drive Away Offer price; no cashback shown on the offers page."
+          ],
+          "validUntil": "2026-12-31",
+          "note": "Offers page (terms expanded) shows $39,990; offer now runs to 2026-12-31."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "452 km",
+            "basis": "WLTP combined laboratory range",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_2026_V2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "64 kWh",
+            "basis": "Maker declared capacity; gross/usable unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_2026_V2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "DC peak charging",
+          "due": false,
+          "current": {
+            "value": "154 kW",
+            "basis": "Maximum DC charging power accepted by vehicle",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_2026_V2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "25 min",
+            "basis": "Estimated CCS 10–80% charge at 25°C",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_2026_V2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "6.6 kW",
+            "basis": "Maximum on-board AC charging power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_2026_V2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Two front seats and three rear seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_2026_V2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot volume",
+          "due": false,
+          "current": {
+            "value": "350 L",
+            "basis": "Rear boot with seats in place; maker litres, method unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_2026_V2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "7.5 s",
+            "basis": "Manufacturer 0–100 km/h claim",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_2026_V2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "140 kW",
+            "basis": "Maker total vehicle maximum power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_2026_V2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Driven-wheel layout",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_2026_V2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,287 mm",
+            "basis": "Overall length",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_2026_V2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,836 mm",
+            "basis": "Body width excluding mirrors",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_2026_V2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,516 mm",
+            "basis": "Overall height",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_2026_V2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "500 kg",
+            "basis": "Braked trailer maximum",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_2026_V2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "7 years / unlimited km",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/warranty"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "7 years / 150,000 km; 70% capacity floor",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/warranty"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "driveaway_price_aud",
+          "label": "Current advertised driveaway offer",
+          "due": true,
+          "current": {
+            "value": "39,990 AUD",
+            "basis": "Driveaway",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/offers"
+            ]
+          },
+          "outcome": "changed",
+          "value": 39990,
+          "sourceIds": [
+            "refresh-mg-2026-11-05-offers"
+          ],
+          "conditionExplanation": "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Sold and delivered at participating MG dealers between 1 November and 31 December 2026, while stocks last; excludes fleet, government and rental buyers. Drive Away Offer price; no cashback shown on the offers page.",
+          "qualifications": [
+            "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Sold and delivered at participating MG dealers between 1 November and 31 December 2026, while stocks last; excludes fleet, government and rental buyers. Drive Away Offer price; no cashback shown on the offers page."
+          ],
+          "validUntil": "2026-12-31",
+          "note": "Offers page (terms expanded) shows $39,990; offer now runs to 2026-12-31."
+        }
+      ]
+    },
+    {
+      "variantId": "mg4_ev_my26__xpower_awd__20261010",
+      "vehicle": "MG MG4 EV XPOWER AWD",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "accepting_orders_advertised",
+          "stockStatus": "new_stock_listed",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://mgmotor.com.au/brochures/MG4_EV_2026_V2.pdf",
+            "https://mgmotor.com.au/vehicles/mg4-ev",
+            "https://mgmotor.com.au/configurator/mg4-ev",
+            "https://mgmotor.com.au/offers",
+            "https://www.qautomotive.com.au/cars/new-red-2026-mg-mg4-m068854"
+          ]
+        },
+        "outcome": "unchanged",
+        "sourceIds": [
+          "refresh-mg-2026-11-05-offers"
+        ],
+        "note": "Variant is on the offers page with Build & Price and test-drive routes; same order status as 14 October. Stock not verified."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "47,990 AUD",
+            "basis": "Driveaway",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/offers"
+            ]
+          },
+          "outcome": "changed",
+          "value": 47990,
+          "sourceIds": [
+            "refresh-mg-2026-11-05-offers"
+          ],
+          "conditionExplanation": "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Sold and delivered at participating MG dealers between 1 November and 31 December 2026, while stocks last; excludes fleet, government and rental buyers. Drive Away Offer price; no cashback shown on the offers page.",
+          "qualifications": [
+            "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Sold and delivered at participating MG dealers between 1 November and 31 December 2026, while stocks last; excludes fleet, government and rental buyers. Drive Away Offer price; no cashback shown on the offers page."
+          ],
+          "validUntil": "2026-12-31",
+          "note": "Offers page (terms expanded) shows $47,990; offer now runs to 2026-12-31."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "405 km",
+            "basis": "WLTP combined laboratory range",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_2026_V2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "64 kWh",
+            "basis": "Maker declared capacity; gross/usable unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_2026_V2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "DC peak charging",
+          "due": false,
+          "current": {
+            "value": "140 kW",
+            "basis": "Maximum DC charging power accepted by vehicle",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_2026_V2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "30 min",
+            "basis": "Estimated CCS 10–80% charge at 25°C",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_2026_V2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "6.6 kW",
+            "basis": "Maximum on-board AC charging power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_2026_V2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Two front seats and three rear seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_2026_V2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot volume",
+          "due": false,
+          "current": {
+            "value": "350 L",
+            "basis": "Rear boot with seats in place; maker litres, method unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_2026_V2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "3.8 s",
+            "basis": "Manufacturer 0–100 km/h claim",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_2026_V2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "320 kW",
+            "basis": "Maker total vehicle maximum power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/vehicles/mg4-ev"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "AWD",
+            "basis": "Driven-wheel layout",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_2026_V2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,287 mm",
+            "basis": "Overall length",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_2026_V2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,836 mm",
+            "basis": "Body width excluding mirrors",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_2026_V2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,516 mm",
+            "basis": "Overall height",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_2026_V2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "500 kg",
+            "basis": "Braked trailer maximum",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_2026_V2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "7 years / unlimited km",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/warranty"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "7 years / 150,000 km; 70% capacity floor",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/warranty"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "driveaway_price_aud",
+          "label": "Current advertised driveaway offer",
+          "due": true,
+          "current": {
+            "value": "47,990 AUD",
+            "basis": "Driveaway",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/offers"
+            ]
+          },
+          "outcome": "changed",
+          "value": 47990,
+          "sourceIds": [
+            "refresh-mg-2026-11-05-offers"
+          ],
+          "conditionExplanation": "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Sold and delivered at participating MG dealers between 1 November and 31 December 2026, while stocks last; excludes fleet, government and rental buyers. Drive Away Offer price; no cashback shown on the offers page.",
+          "qualifications": [
+            "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Sold and delivered at participating MG dealers between 1 November and 31 December 2026, while stocks last; excludes fleet, government and rental buyers. Drive Away Offer price; no cashback shown on the offers page."
+          ],
+          "validUntil": "2026-12-31",
+          "note": "Offers page (terms expanded) shows $47,990; offer now runs to 2026-12-31."
+        }
+      ]
+    },
+    {
+      "variantId": "mg4_ev_urban_my26__essence_43_fwd__20261010",
+      "vehicle": "MG MG4 EV Urban Essence 43 FWD",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "accepting_orders_advertised",
+          "stockStatus": "new_stock_listed",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://mgmotor.com.au/brochures/MG4_EV_URBAN_2026.pdf",
+            "https://mgmotor.com.au/vehicles/mg4-ev-urban",
+            "https://mgmotor.com.au/configurator/mg4-ev-urban",
+            "https://mgmotor.com.au/offers",
+            "https://www.westpointautos.com.au/cars/new-green-2026-mg-mg4-ev-urban-b213515"
+          ]
+        },
+        "outcome": "unchanged",
+        "sourceIds": [
+          "refresh-mg-2026-11-05-offers"
+        ],
+        "note": "Variant is on the offers page with Build & Price and test-drive routes; same order status as 14 October. Stock not verified."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "29,990 AUD",
+            "basis": "Driveaway",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/offers"
+            ]
+          },
+          "outcome": "changed",
+          "value": 29990,
+          "sourceIds": [
+            "refresh-mg-2026-11-05-offers"
+          ],
+          "conditionExplanation": "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Sold and delivered at participating MG dealers between 1 November and 31 December 2026, while stocks last; excludes fleet, government and rental buyers. Includes the displayed $2,000 cashback, redeemed at point of sale and not combinable with other offers.",
+          "qualifications": [
+            "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Sold and delivered at participating MG dealers between 1 November and 31 December 2026, while stocks last; excludes fleet, government and rental buyers. Includes the displayed $2,000 cashback, redeemed at point of sale and not combinable with other offers."
+          ],
+          "validUntil": "2026-12-31",
+          "note": "Offers page (terms expanded) shows $29,990 after a $2,000 cashback; offer now runs to 2026-12-31."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "316 km",
+            "basis": "WLTP combined laboratory range",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_URBAN_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "43 kWh",
+            "basis": "Maker declared capacity; gross/usable unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_URBAN_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "DC peak charging",
+          "due": false,
+          "current": {
+            "value": "82 kW",
+            "basis": "Maximum DC charging power accepted by vehicle",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_URBAN_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "28 min",
+            "basis": "Estimated CCS 10–80% charge at 25°C",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_URBAN_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "6.6 kW",
+            "basis": "Maximum on-board AC charging power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_URBAN_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Two front seats and three rear seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_URBAN_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot volume",
+          "due": false,
+          "current": {
+            "value": "382 L",
+            "basis": "Rear boot with seats in place; maker litres, method unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_URBAN_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "9 s",
+            "basis": "Manufacturer 0–100 km/h claim",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_URBAN_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "110 kW",
+            "basis": "Maker total vehicle maximum power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_URBAN_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "FWD",
+            "basis": "Driven-wheel layout",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_URBAN_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,395 mm",
+            "basis": "Overall length",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_URBAN_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,842 mm",
+            "basis": "Body width excluding mirrors",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_URBAN_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,549 mm",
+            "basis": "Overall height",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_URBAN_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "500 kg",
+            "basis": "Braked trailer maximum",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://origin.carexpert.com.au/car-news/2026-mg-4-ev-urban-price-and-specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "7 years / unlimited km",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/warranty"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "7 years / 150,000 km; 70% capacity floor",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/warranty"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "driveaway_price_aud",
+          "label": "Current advertised driveaway offer",
+          "due": true,
+          "current": {
+            "value": "29,990 AUD",
+            "basis": "Driveaway",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/offers"
+            ]
+          },
+          "outcome": "changed",
+          "value": 29990,
+          "sourceIds": [
+            "refresh-mg-2026-11-05-offers"
+          ],
+          "conditionExplanation": "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Sold and delivered at participating MG dealers between 1 November and 31 December 2026, while stocks last; excludes fleet, government and rental buyers. Includes the displayed $2,000 cashback, redeemed at point of sale and not combinable with other offers.",
+          "qualifications": [
+            "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Sold and delivered at participating MG dealers between 1 November and 31 December 2026, while stocks last; excludes fleet, government and rental buyers. Includes the displayed $2,000 cashback, redeemed at point of sale and not combinable with other offers."
+          ],
+          "validUntil": "2026-12-31",
+          "note": "Offers page (terms expanded) shows $29,990 after a $2,000 cashback; offer now runs to 2026-12-31."
+        }
+      ]
+    },
+    {
+      "variantId": "mg4_ev_urban_my26__essence_54_fwd__20261010",
+      "vehicle": "MG MG4 EV Urban Essence 54 FWD",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "accepting_orders_advertised",
+          "stockStatus": "new_stock_listed",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://mgmotor.com.au/brochures/MG4_EV_URBAN_2026.pdf",
+            "https://mgmotor.com.au/vehicles/mg4-ev-urban",
+            "https://mgmotor.com.au/configurator/mg4-ev-urban",
+            "https://mgmotor.com.au/offers",
+            "https://www.westpointautos.com.au/cars/new-white-2026-mg-mg4-ev-urban-b199549"
+          ]
+        },
+        "outcome": "unchanged",
+        "sourceIds": [
+          "refresh-mg-2026-11-05-offers"
+        ],
+        "note": "Variant is on the offers page with Build & Price and test-drive routes; same order status as 14 October. Stock not verified."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "32,990 AUD",
+            "basis": "Driveaway",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/offers"
+            ]
+          },
+          "outcome": "changed",
+          "value": 32990,
+          "sourceIds": [
+            "refresh-mg-2026-11-05-offers"
+          ],
+          "conditionExplanation": "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Sold and delivered at participating MG dealers between 1 November and 31 December 2026, while stocks last; excludes fleet, government and rental buyers. Includes the displayed $2,000 cashback, redeemed at point of sale and not combinable with other offers.",
+          "qualifications": [
+            "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Sold and delivered at participating MG dealers between 1 November and 31 December 2026, while stocks last; excludes fleet, government and rental buyers. Includes the displayed $2,000 cashback, redeemed at point of sale and not combinable with other offers."
+          ],
+          "validUntil": "2026-12-31",
+          "note": "Offers page (terms expanded) shows $32,990 after a $2,000 cashback; offer now runs to 2026-12-31."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "405 km",
+            "basis": "WLTP combined laboratory range",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_URBAN_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "54 kWh",
+            "basis": "Maker declared capacity; gross/usable unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_URBAN_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "DC peak charging",
+          "due": false,
+          "current": {
+            "value": "87 kW",
+            "basis": "Maximum DC charging power accepted by vehicle",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_URBAN_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "30 min",
+            "basis": "Estimated CCS 10–80% charge at 25°C",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_URBAN_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "6.6 kW",
+            "basis": "Maximum on-board AC charging power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_URBAN_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Two front seats and three rear seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_URBAN_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot volume",
+          "due": false,
+          "current": {
+            "value": "382 L",
+            "basis": "Rear boot with seats in place; maker litres, method unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_URBAN_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "8.7 s",
+            "basis": "Manufacturer 0–100 km/h claim",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_URBAN_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "118 kW",
+            "basis": "Maker total vehicle maximum power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_URBAN_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "FWD",
+            "basis": "Driven-wheel layout",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_URBAN_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,395 mm",
+            "basis": "Overall length",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_URBAN_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,842 mm",
+            "basis": "Body width excluding mirrors",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_URBAN_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,549 mm",
+            "basis": "Overall height",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG4_EV_URBAN_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "500 kg",
+            "basis": "Braked trailer maximum",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://origin.carexpert.com.au/car-news/2026-mg-4-ev-urban-price-and-specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "7 years / unlimited km",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/warranty"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "7 years / 150,000 km; 70% capacity floor",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/warranty"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "driveaway_price_aud",
+          "label": "Current advertised driveaway offer",
+          "due": true,
+          "current": {
+            "value": "32,990 AUD",
+            "basis": "Driveaway",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/offers"
+            ]
+          },
+          "outcome": "changed",
+          "value": 32990,
+          "sourceIds": [
+            "refresh-mg-2026-11-05-offers"
+          ],
+          "conditionExplanation": "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Sold and delivered at participating MG dealers between 1 November and 31 December 2026, while stocks last; excludes fleet, government and rental buyers. Includes the displayed $2,000 cashback, redeemed at point of sale and not combinable with other offers.",
+          "qualifications": [
+            "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Sold and delivered at participating MG dealers between 1 November and 31 December 2026, while stocks last; excludes fleet, government and rental buyers. Includes the displayed $2,000 cashback, redeemed at point of sale and not combinable with other offers."
+          ],
+          "validUntil": "2026-12-31",
+          "note": "Offers page (terms expanded) shows $32,990 after a $2,000 cashback; offer now runs to 2026-12-31."
+        }
+      ]
+    },
+    {
+      "variantId": "mg_mgs5_current__essence_49kwh_rwd__20261010",
+      "vehicle": "MG MGS5 EV Essence 49kWh RWD",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "accepting_order_requests_advertised",
+          "stockStatus": "new_stock_listed",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.hamiltonautomotivegroup.com.au/new-cars/for-sale/mg/mgs5-ev/2026/essence-49/zs3em-my26/3963781/",
+            "https://mgmotor.com.au/brochures/MGS5_EV_2026.pdf",
+            "https://mgmotor.com.au/configurator/mgs5-ev"
+          ]
+        },
+        "outcome": "unchanged",
+        "sourceIds": [
+          "refresh-mg-2026-11-05-offers"
+        ],
+        "note": "Variant is on the offers page with Build & Price and test-drive routes; same order status as 14 October. Stock not verified."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "39,990 AUD",
+            "basis": "National manufacturer driveaway offer",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/offers"
+            ]
+          },
+          "outcome": "changed",
+          "value": 39990,
+          "sourceIds": [
+            "refresh-mg-2026-11-05-offers"
+          ],
+          "conditionExplanation": "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Sold and delivered at participating MG dealers between 1 November and 31 December 2026, while stocks last; excludes fleet, government and rental buyers. Includes the displayed $2,000 cashback, redeemed at point of sale and not combinable with other offers.",
+          "qualifications": [
+            "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Sold and delivered at participating MG dealers between 1 November and 31 December 2026, while stocks last; excludes fleet, government and rental buyers. Includes the displayed $2,000 cashback, redeemed at point of sale and not combinable with other offers."
+          ],
+          "validUntil": "2026-12-31",
+          "note": "Offers page (terms expanded) shows $39,990 after a $2,000 cashback; offer now runs to 2026-12-31."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "335 km",
+            "basis": "WLTP combined laboratory range",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS5_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "49 kWh",
+            "basis": "Manufacturer declared battery capacity; gross/usable unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS5_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "DC peak charging",
+          "due": false,
+          "current": {
+            "value": "120 kW",
+            "basis": "Maximum DC charging power accepted by vehicle",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS5_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "10–80%",
+            "grade": "not_published",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS5_EV_2026.pdf",
+              "https://mgmotor.com.au/vehicles/mgs5-ev"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "6.6 kW",
+            "basis": "Maximum onboard AC charging power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS5_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Five belted seating positions: two front, rear left/right and rear centre",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS5_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot volume",
+          "due": false,
+          "current": {
+            "value": "453 L",
+            "basis": "Rear cargo with all 5 seats in place; measurement method VDA/SAE unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS5_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "8.2 s",
+            "basis": "Manufacturer 0–100 km/h claim",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS5_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "125 kW",
+            "basis": "Published total vehicle motor output",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS5_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Australian exact-version driven wheels",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS5_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,476 mm",
+            "basis": "Maker body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS5_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,849 mm",
+            "basis": "Maker body dimension; width mirror treatment unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS5_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,621 mm",
+            "basis": "Maker body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS5_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "750 kg",
+            "basis": "Maximum braked trailer mass",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS5_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "7 years / unlimited km",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/warranty"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "7 years / 150,000 km; 70% capacity floor",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/warranty"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "advertised_driveaway_aud",
+          "label": "Current advertised driveaway offer",
+          "due": true,
+          "current": {
+            "value": "39,990 AUD",
+            "basis": "National manufacturer driveaway offer",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/offers"
+            ]
+          },
+          "outcome": "changed",
+          "value": 39990,
+          "sourceIds": [
+            "refresh-mg-2026-11-05-offers"
+          ],
+          "conditionExplanation": "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Sold and delivered at participating MG dealers between 1 November and 31 December 2026, while stocks last; excludes fleet, government and rental buyers. Includes the displayed $2,000 cashback, redeemed at point of sale and not combinable with other offers.",
+          "qualifications": [
+            "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Sold and delivered at participating MG dealers between 1 November and 31 December 2026, while stocks last; excludes fleet, government and rental buyers. Includes the displayed $2,000 cashback, redeemed at point of sale and not combinable with other offers."
+          ],
+          "validUntil": "2026-12-31",
+          "note": "Offers page (terms expanded) shows $39,990 after a $2,000 cashback; offer now runs to 2026-12-31."
+        }
+      ]
+    },
+    {
+      "variantId": "mg_mgs5_current__essence_62kwh_rwd__20261010",
+      "vehicle": "MG MGS5 EV Essence 62kWh RWD",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "accepting_order_requests_advertised",
+          "stockStatus": "new_stock_listed",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://colcrawfordmg.com.au/431220-1888658-mg-mgs5ev-2026/",
+            "https://mgmotor.com.au/brochures/MGS5_EV_2026.pdf",
+            "https://mgmotor.com.au/configurator/mgs5-ev"
+          ]
+        },
+        "outcome": "unchanged",
+        "sourceIds": [
+          "refresh-mg-2026-11-05-offers"
+        ],
+        "note": "Variant is on the offers page with Build & Price and test-drive routes; same order status as 14 October. Stock not verified."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "44,990 AUD",
+            "basis": "National manufacturer driveaway offer",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/offers"
+            ]
+          },
+          "outcome": "changed",
+          "value": 44990,
+          "sourceIds": [
+            "refresh-mg-2026-11-05-offers"
+          ],
+          "conditionExplanation": "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Sold and delivered at participating MG dealers between 1 November and 31 December 2026, while stocks last; excludes fleet, government and rental buyers. Includes the displayed $2,000 cashback, redeemed at point of sale and not combinable with other offers.",
+          "qualifications": [
+            "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Sold and delivered at participating MG dealers between 1 November and 31 December 2026, while stocks last; excludes fleet, government and rental buyers. Includes the displayed $2,000 cashback, redeemed at point of sale and not combinable with other offers."
+          ],
+          "validUntil": "2026-12-31",
+          "note": "Offers page (terms expanded) shows $44,990 after a $2,000 cashback; offer now runs to 2026-12-31."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "450 km",
+            "basis": "WLTP combined laboratory range",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS5_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "62 kWh",
+            "basis": "Manufacturer declared battery capacity; gross/usable unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS5_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "DC peak charging",
+          "due": false,
+          "current": {
+            "value": "150 kW",
+            "basis": "Maximum DC charging power accepted by vehicle",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS5_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "10–80%",
+            "grade": "not_published",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS5_EV_2026.pdf",
+              "https://mgmotor.com.au/vehicles/mgs5-ev"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "6.6 kW",
+            "basis": "Maximum onboard AC charging power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS5_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Five belted seating positions: two front, rear left/right and rear centre",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS5_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot volume",
+          "due": false,
+          "current": {
+            "value": "453 L",
+            "basis": "Rear cargo with all 5 seats in place; measurement method VDA/SAE unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS5_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "7 s",
+            "basis": "Manufacturer 0–100 km/h claim",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS5_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "150 kW",
+            "basis": "Published total vehicle motor output",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS5_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Australian exact-version driven wheels",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS5_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,476 mm",
+            "basis": "Maker body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS5_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,849 mm",
+            "basis": "Maker body dimension; width mirror treatment unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS5_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,621 mm",
+            "basis": "Maker body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS5_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "750 kg",
+            "basis": "Maximum braked trailer mass",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS5_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "7 years / unlimited km",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/warranty"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "7 years / 150,000 km; 70% capacity floor",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/warranty"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "advertised_driveaway_aud",
+          "label": "Current advertised driveaway offer",
+          "due": true,
+          "current": {
+            "value": "44,990 AUD",
+            "basis": "National manufacturer driveaway offer",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/offers"
+            ]
+          },
+          "outcome": "changed",
+          "value": 44990,
+          "sourceIds": [
+            "refresh-mg-2026-11-05-offers"
+          ],
+          "conditionExplanation": "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Sold and delivered at participating MG dealers between 1 November and 31 December 2026, while stocks last; excludes fleet, government and rental buyers. Includes the displayed $2,000 cashback, redeemed at point of sale and not combinable with other offers.",
+          "qualifications": [
+            "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Sold and delivered at participating MG dealers between 1 November and 31 December 2026, while stocks last; excludes fleet, government and rental buyers. Includes the displayed $2,000 cashback, redeemed at point of sale and not combinable with other offers."
+          ],
+          "validUntil": "2026-12-31",
+          "note": "Offers page (terms expanded) shows $44,990 after a $2,000 cashback; offer now runs to 2026-12-31."
+        }
+      ]
+    },
+    {
+      "variantId": "mg_mgs6_current__essence_rwd__20261010",
+      "vehicle": "MG MGS6 EV Essence RWD",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "accepting_order_requests_advertised",
+          "stockStatus": "new_stock_listed",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://orangemg.com.au/4817-1893777-mg-mgs6ev-2026/",
+            "https://mgmotor.com.au/brochures/MGS6_EV_2026.pdf",
+            "https://mgmotor.com.au/configurator/mgs6-ev"
+          ]
+        },
+        "outcome": "unchanged",
+        "sourceIds": [
+          "refresh-mg-2026-11-05-offers"
+        ],
+        "note": "Variant is on the offers page with Build & Price and test-drive routes; same order status as 14 October. Stock not verified."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "49,990 AUD",
+            "basis": "National manufacturer driveaway offer",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/offers"
+            ]
+          },
+          "outcome": "changed",
+          "value": 48990,
+          "sourceIds": [
+            "refresh-mg-2026-11-05-offers"
+          ],
+          "conditionExplanation": "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Sold and delivered at participating MG dealers between 1 November and 31 December 2026, while stocks last; excludes fleet, government and rental buyers. Includes the displayed $1,000 cashback, redeemed at point of sale and not combinable with other offers.",
+          "qualifications": [
+            "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Sold and delivered at participating MG dealers between 1 November and 31 December 2026, while stocks last; excludes fleet, government and rental buyers. Includes the displayed $1,000 cashback, redeemed at point of sale and not combinable with other offers."
+          ],
+          "validUntil": "2026-12-31",
+          "note": "Offers page (terms expanded) shows $48,990 after a $1,000 cashback; offer now runs to 2026-12-31."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "530 km",
+            "basis": "WLTP combined laboratory range",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS6_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "77 kWh",
+            "basis": "Manufacturer declared battery capacity; gross/usable unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS6_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "DC peak charging",
+          "due": false,
+          "current": {
+            "value": "144 kW",
+            "basis": "Maximum DC charging power accepted by vehicle",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS6_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "38 min",
+            "basis": "DC 10–80% estimate at 25 °C",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS6_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maximum onboard AC charging power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS6_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Five belted seating positions: two front, rear left/right and rear centre",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS6_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot volume",
+          "due": false,
+          "current": {
+            "value": "581 L",
+            "basis": "Rear cargo with all 5 seats in place; measurement method VDA/SAE unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS6_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "7.5 s",
+            "basis": "Manufacturer 0–100 km/h brochure claim; conflicting maker webpage",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS6_EV_2026.pdf",
+              "https://mgmotor.com.au/vehicles/mgs6-ev"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "180 kW",
+            "basis": "Published total vehicle motor output",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS6_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Australian exact-version driven wheels",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS6_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,708 mm",
+            "basis": "Maker body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS6_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,912 mm",
+            "basis": "Maker body dimension; width mirror treatment unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS6_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,664 mm",
+            "basis": "Maker body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS6_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,500 kg",
+            "basis": "Maximum braked trailer mass",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS6_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "7 years / unlimited km",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/warranty"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "7 years / 150,000 km; 70% capacity floor",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/warranty"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "advertised_driveaway_aud",
+          "label": "Current advertised driveaway offer",
+          "due": true,
+          "current": {
+            "value": "49,990 AUD",
+            "basis": "National manufacturer driveaway offer",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/offers"
+            ]
+          },
+          "outcome": "changed",
+          "value": 48990,
+          "sourceIds": [
+            "refresh-mg-2026-11-05-offers"
+          ],
+          "conditionExplanation": "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Sold and delivered at participating MG dealers between 1 November and 31 December 2026, while stocks last; excludes fleet, government and rental buyers. Includes the displayed $1,000 cashback, redeemed at point of sale and not combinable with other offers.",
+          "qualifications": [
+            "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Sold and delivered at participating MG dealers between 1 November and 31 December 2026, while stocks last; excludes fleet, government and rental buyers. Includes the displayed $1,000 cashback, redeemed at point of sale and not combinable with other offers."
+          ],
+          "validUntil": "2026-12-31",
+          "note": "Offers page (terms expanded) shows $48,990 after a $1,000 cashback; offer now runs to 2026-12-31."
+        }
+      ]
+    },
+    {
+      "variantId": "mg_mgs6_current__essence_awd__20261010",
+      "vehicle": "MG MGS6 EV Essence AWD",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "accepting_order_requests_advertised",
+          "stockStatus": "new_stock_listed",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://nmg.com.au/mg056828-1889734-mg-mgs6ev-2026/",
+            "https://mgmotor.com.au/brochures/MGS6_EV_2026.pdf",
+            "https://mgmotor.com.au/configurator/mgs6-ev"
+          ]
+        },
+        "outcome": "unchanged",
+        "sourceIds": [
+          "refresh-mg-2026-11-05-offers"
+        ],
+        "note": "Variant is on the offers page with Build & Price and test-drive routes; same order status as 14 October. Stock not verified."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "56,990 AUD",
+            "basis": "National manufacturer driveaway offer",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/offers"
+            ]
+          },
+          "outcome": "changed",
+          "value": 55990,
+          "sourceIds": [
+            "refresh-mg-2026-11-05-offers"
+          ],
+          "conditionExplanation": "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Sold and delivered at participating MG dealers between 1 November and 31 December 2026, while stocks last; excludes fleet, government and rental buyers. Includes the displayed $1,000 cashback, redeemed at point of sale and not combinable with other offers.",
+          "qualifications": [
+            "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Sold and delivered at participating MG dealers between 1 November and 31 December 2026, while stocks last; excludes fleet, government and rental buyers. Includes the displayed $1,000 cashback, redeemed at point of sale and not combinable with other offers."
+          ],
+          "validUntil": "2026-12-31",
+          "note": "Offers page (terms expanded) shows $55,990 after a $1,000 cashback; offer now runs to 2026-12-31."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "485 km",
+            "basis": "WLTP combined laboratory range",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS6_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "77 kWh",
+            "basis": "Manufacturer declared battery capacity; gross/usable unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS6_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "DC peak charging",
+          "due": false,
+          "current": {
+            "value": "144 kW",
+            "basis": "Maximum DC charging power accepted by vehicle",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS6_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "38 min",
+            "basis": "DC 10–80% estimate at 25 °C",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS6_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maximum onboard AC charging power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS6_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Five belted seating positions: two front, rear left/right and rear centre",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS6_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot volume",
+          "due": false,
+          "current": {
+            "value": "581 L",
+            "basis": "Rear cargo with all 5 seats in place; measurement method VDA/SAE unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS6_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "5.1 s",
+            "basis": "Manufacturer 0–100 km/h claim",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS6_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "266 kW",
+            "basis": "Published total vehicle motor output",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS6_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "AWD",
+            "basis": "Australian exact-version driven wheels",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS6_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,708 mm",
+            "basis": "Maker body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS6_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,912 mm",
+            "basis": "Maker body dimension; width mirror treatment unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS6_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,664 mm",
+            "basis": "Maker body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS6_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,500 kg",
+            "basis": "Maximum braked trailer mass",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS6_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "7 years / unlimited km",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/warranty"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "7 years / 150,000 km; 70% capacity floor",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/warranty"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "advertised_driveaway_aud",
+          "label": "Current advertised driveaway offer",
+          "due": true,
+          "current": {
+            "value": "56,990 AUD",
+            "basis": "National manufacturer driveaway offer",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/offers"
+            ]
+          },
+          "outcome": "changed",
+          "value": 55990,
+          "sourceIds": [
+            "refresh-mg-2026-11-05-offers"
+          ],
+          "conditionExplanation": "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Sold and delivered at participating MG dealers between 1 November and 31 December 2026, while stocks last; excludes fleet, government and rental buyers. Includes the displayed $1,000 cashback, redeemed at point of sale and not combinable with other offers.",
+          "qualifications": [
+            "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Sold and delivered at participating MG dealers between 1 November and 31 December 2026, while stocks last; excludes fleet, government and rental buyers. Includes the displayed $1,000 cashback, redeemed at point of sale and not combinable with other offers."
+          ],
+          "validUntil": "2026-12-31",
+          "note": "Offers page (terms expanded) shows $55,990 after a $1,000 cashback; offer now runs to 2026-12-31."
+        }
+      ]
+    },
+    {
+      "variantId": "mg_cyberster_current__77kwh_rwd__20261010",
+      "vehicle": "MG Cyberster 77kWh RWD",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://mgmotor.com.au/vehicles/cyberster",
+            "https://mgmotor.com.au/configurator/cyberster"
+          ]
+        },
+        "outcome": "unchanged",
+        "sourceIds": [
+          "refresh-mg-2026-11-05-cyberster"
+        ],
+        "note": "Configurator offers an Order Online route; order acceptance and stock not stated."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "99,900 AUD",
+            "basis": "Maker configurator named-trim amount; on-road basis unconfirmed",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/configurator/cyberster"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Configurator still shows $99,900 and $115,000 '+ On-Road Costs', but its own terms still describe an offer sold and delivered 1 to 31 October 2026 (ended). The price and its offer deadline were not changed; value retained, date unchanged."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "507 km",
+            "basis": "WLTP combined laboratory range",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_CYBERSTER_2026_v2.pdf",
+              "https://mgmotor.com.au/vehicles/cyberster"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "77 kWh",
+            "basis": "Maker declared battery capacity; gross/usable unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_CYBERSTER_2026_v2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "DC peak charging",
+          "due": false,
+          "current": {
+            "value": "144 kW",
+            "basis": "Maximum vehicle DC charging acceptance",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_CYBERSTER_2026_v2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "40 min",
+            "basis": "DC 10–80% at 150 kW station; carried from Australian AWD sibling",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_CYBERSTER_2026_v2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "On-board AC charging unit maximum",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_CYBERSTER_2026_v2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "2",
+            "basis": "Australian exact-trim secondary seating specification",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsguide.com.au/mg/cyberster/price/2026/77kwh-rwd?id=2IDOShEM"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot volume",
+          "due": false,
+          "current": {
+            "value": "249 L",
+            "basis": "Rear boot; measurement method and roof position unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_CYBERSTER_2026_v2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "5.2 s",
+            "basis": "Manufacturer 0–100 km/h claim",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_CYBERSTER_2026_v2.pdf",
+              "https://mgmotor.com.au/vehicles/cyberster"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "250 kW",
+            "basis": "Rear motor output",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_CYBERSTER_2026_v2.pdf",
+              "https://mgmotor.com.au/vehicles/cyberster"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Drivetrain",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/vehicles/cyberster"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,535 mm",
+            "basis": "Manufacturer body measurement",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_CYBERSTER_2026_v2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,913 mm",
+            "basis": "Manufacturer body measurement; width mirror treatment unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_CYBERSTER_2026_v2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,329 mm",
+            "basis": "Manufacturer body measurement",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_CYBERSTER_2026_v2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "0 kg",
+            "basis": "Secondary guide: no braked towing capacity",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsguide.com.au/mg/cyberster/2026"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "7 years / unlimited km",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/warranty"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "7 years / 150,000 km; 70% capacity floor",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/warranty"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "mg_cyberster_current__77kwh_awd__20261010",
+      "vehicle": "MG Cyberster 77kWh AWD",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "new_stock_listed",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://mgmotor.com.au/vehicles/cyberster",
+            "https://mgmotor.com.au/configurator/cyberster",
+            "https://hampsteadgardensmg.com.au/mg079184-1703290-mg-cyberster-2025/",
+            "https://www.newspot.com.au/all-stock/view/2025-MG-Cyberster/33992962"
+          ]
+        },
+        "outcome": "unchanged",
+        "sourceIds": [
+          "refresh-mg-2026-11-05-cyberster"
+        ],
+        "note": "Configurator offers an Order Online route; order acceptance and stock not stated."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "115,000 AUD",
+            "basis": "Maker configurator named-trim amount; on-road basis unconfirmed",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/configurator/cyberster"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Configurator still shows $99,900 and $115,000 '+ On-Road Costs', but its own terms still describe an offer sold and delivered 1 to 31 October 2026 (ended). The price and its offer deadline were not changed; value retained, date unchanged."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "443 km",
+            "basis": "WLTP combined laboratory range",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_CYBERSTER_2026_v2.pdf",
+              "https://mgmotor.com.au/vehicles/cyberster"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "77 kWh",
+            "basis": "Maker declared battery capacity; gross/usable unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_CYBERSTER_2026_v2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "DC peak charging",
+          "due": false,
+          "current": {
+            "value": "144 kW",
+            "basis": "Maximum vehicle DC charging acceptance",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_CYBERSTER_2026_v2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "40 min",
+            "basis": "DC 10–80% at 150 kW station; maker AWD passage",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_CYBERSTER_2026_v2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "On-board AC charging unit maximum",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_CYBERSTER_2026_v2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "2",
+            "basis": "Australian exact-trim secondary seating specification",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsguide.com.au/mg/cyberster/price/2026/77kwh-awd?id=2IzNShEM"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot volume",
+          "due": false,
+          "current": {
+            "value": "249 L",
+            "basis": "Rear boot; measurement method and roof position unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_CYBERSTER_2026_v2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "3.2 s",
+            "basis": "Manufacturer 0–100 km/h claim",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_CYBERSTER_2026_v2.pdf",
+              "https://mgmotor.com.au/vehicles/cyberster"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "375 kW",
+            "basis": "Explicit combined motor output",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_CYBERSTER_2026_v2.pdf",
+              "https://mgmotor.com.au/vehicles/cyberster"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "AWD",
+            "basis": "Drivetrain",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/vehicles/cyberster"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,535 mm",
+            "basis": "Manufacturer body measurement",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_CYBERSTER_2026_v2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,913 mm",
+            "basis": "Manufacturer body measurement; width mirror treatment unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_CYBERSTER_2026_v2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,329 mm",
+            "basis": "Manufacturer body measurement",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_CYBERSTER_2026_v2.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "0 kg",
+            "basis": "Secondary guide: no braked towing capacity",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsguide.com.au/mg/cyberster/2026"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "7 years / unlimited km",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/warranty"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "7 years / 150,000 km; 70% capacity floor",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/warranty"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "mg4_ev_pre_my26__excite_64_rwd_my23__20261014",
+      "vehicle": "MG MG4 EV (pre-MY26) Excite 64 RWD · MY23 residual New advertising",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "outgoing",
+          "orderStatus": "not_accepting_orders",
+          "stockStatus": "new_stock_listed",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.carsales.com.au/cars/details/2023-mg-mg4-excite-64-auto-my23/OAG-AD-22668237/",
+            "https://origin.carexpert.com.au/car-news/2026-mg-4-ev-price-and-specs",
+            "https://mgmotor.com.au/configurator/mg4-ev"
+          ]
+        },
+        "outcome": "unavailable",
+        "note": "Outgoing stock listing; not on MG's current offers page. Not rechecked."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "41,690 AUD",
+            "basis": "Driveaway",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/cars/details/2023-mg-mg4-excite-64-auto-my23/OAG-AD-22668237/"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Reported or dealer-advertised price for outgoing stock; dealer and secondary pages are not rechecked as sources. Not rechecked."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "450 km",
+            "basis": "WLTP combined laboratory range",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgoem.b-cdn.net/files/2023/08/MG4-Product-Brochure-2023_v12_WEB_adme_37_37.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "64 kWh",
+            "basis": "Nominal battery energy",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgoem.b-cdn.net/files/2023/08/MG4-Product-Brochure-2023_v12_WEB_adme_37_37.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "DC peak charging",
+          "due": false,
+          "current": {
+            "value": "140 kW",
+            "basis": "Vehicle maximum on 150 kW CCS charging station",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgoem.b-cdn.net/files/2023/08/MG4-Product-Brochure-2023_v12_WEB_adme_37_37.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "28 min",
+            "basis": "10–80% on 150 kW CCS station",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgoem.b-cdn.net/files/2023/08/MG4-Product-Brochure-2023_v12_WEB_adme_37_37.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "6.6 kW",
+            "basis": "Single-phase onboard AC maximum",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgoem.b-cdn.net/files/2023/08/MG4-Product-Brochure-2023_v12_WEB_adme_37_37.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Five-seat body",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/cars/details/2023-mg-mg4-excite-64-auto-my23/OAG-AD-22668237/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot volume",
+          "due": false,
+          "current": {
+            "value": "363 L",
+            "basis": "Rear boot with seats in place; maker litres, method unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgoem.b-cdn.net/files/2023/08/MG4-Product-Brochure-2023_v12_WEB_adme_37_37.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "7.2 s",
+            "basis": "Manufacturer 0–100 km/h claim",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgoem.b-cdn.net/files/2023/08/MG4-Product-Brochure-2023_v12_WEB_adme_37_37.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "150 kW",
+            "basis": "Single rear motor maximum power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgoem.b-cdn.net/files/2023/08/MG4-Product-Brochure-2023_v12_WEB_adme_37_37.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Driven-wheel layout",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgoem.b-cdn.net/files/2023/08/MG4-Product-Brochure-2023_v12_WEB_adme_37_37.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,287 mm",
+            "basis": "Overall length",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgoem.b-cdn.net/files/2023/08/MG4-Product-Brochure-2023_v12_WEB_adme_37_37.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,836 mm",
+            "basis": "Body width excluding mirrors",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgoem.b-cdn.net/files/2023/08/MG4-Product-Brochure-2023_v12_WEB_adme_37_37.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,504 mm",
+            "basis": "Overall height",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgoem.b-cdn.net/files/2023/08/MG4-Product-Brochure-2023_v12_WEB_adme_37_37.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "500 kg",
+            "basis": "Braked trailer maximum",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgoem.b-cdn.net/files/2023/08/MG4-Product-Brochure-2023_v12_WEB_adme_37_37.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "7 years / unlimited km",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/warranty"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "7 years / 150,000 km; 70% capacity floor",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/warranty"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "mg4_ev_pre_my26__excite_51_rwd_my25__20261014",
+      "vehicle": "MG MG4 EV (pre-MY26) Excite 51 RWD · MY25 residual New advertising",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "outgoing",
+          "orderStatus": "not_accepting_orders",
+          "stockStatus": "new_stock_listed",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.carsales.com.au/cars/details/2025-mg-mg4-excite-51-125kw-auto-my25/OAG-AD-25252017/",
+            "https://origin.carexpert.com.au/car-news/2026-mg-4-ev-price-and-specs",
+            "https://mgmotor.com.au/configurator/mg4-ev"
+          ]
+        },
+        "outcome": "unavailable",
+        "note": "Outgoing stock listing; not on MG's current offers page. Not rechecked."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "36,990 AUD",
+            "basis": "CarExpert exact 2025 Excite 51 kWh/125 kW guide price before on-road costs",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://origin.carexpert.com.au/mg/mg4/2025-excite-hatchback-rwd-electric-jsfomgmf20250701"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Reported or dealer-advertised price for outgoing stock; dealer and secondary pages are not rechecked as sources. Not rechecked."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "350 km",
+            "basis": "WLTP combined laboratory range",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgoem.b-cdn.net/files/2023/08/MG4-Product-Brochure-2023_v12_WEB_adme_37_37.pdf",
+              "https://www.carsales.com.au/cars/details/2025-mg-mg4-excite-51-125kw-auto-my25/OAG-AD-25252017/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "51 kWh",
+            "basis": "Nominal battery energy",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgoem.b-cdn.net/files/2023/08/MG4-Product-Brochure-2023_v12_WEB_adme_37_37.pdf",
+              "https://www.carsales.com.au/cars/details/2025-mg-mg4-excite-51-125kw-auto-my25/OAG-AD-25252017/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "DC peak charging",
+          "due": false,
+          "current": {
+            "value": "88 kW",
+            "basis": "Vehicle maximum on 150 kW CCS charging station",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgoem.b-cdn.net/files/2023/08/MG4-Product-Brochure-2023_v12_WEB_adme_37_37.pdf",
+              "https://www.carsales.com.au/cars/details/2025-mg-mg4-excite-51-125kw-auto-my25/OAG-AD-25252017/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "37 min",
+            "basis": "10–80% on 150 kW CCS station",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgoem.b-cdn.net/files/2023/08/MG4-Product-Brochure-2023_v12_WEB_adme_37_37.pdf",
+              "https://www.carsales.com.au/cars/details/2025-mg-mg4-excite-51-125kw-auto-my25/OAG-AD-25252017/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "6.6 kW",
+            "basis": "Single-phase onboard AC maximum",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgoem.b-cdn.net/files/2023/08/MG4-Product-Brochure-2023_v12_WEB_adme_37_37.pdf",
+              "https://www.carsales.com.au/cars/details/2025-mg-mg4-excite-51-125kw-auto-my25/OAG-AD-25252017/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Five-seat body",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/cars/details/2025-mg-mg4-excite-51-125kw-auto-my25/OAG-AD-25252017/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot volume",
+          "due": false,
+          "current": {
+            "value": "363 L",
+            "basis": "Rear boot with seats in place; maker litres, method unspecified",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgoem.b-cdn.net/files/2023/08/MG4-Product-Brochure-2023_v12_WEB_adme_37_37.pdf",
+              "https://www.carsales.com.au/cars/details/2025-mg-mg4-excite-51-125kw-auto-my25/OAG-AD-25252017/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "7.7 s",
+            "basis": "Manufacturer 0–100 km/h claim",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgoem.b-cdn.net/files/2023/08/MG4-Product-Brochure-2023_v12_WEB_adme_37_37.pdf",
+              "https://www.carsales.com.au/cars/details/2025-mg-mg4-excite-51-125kw-auto-my25/OAG-AD-25252017/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "125 kW",
+            "basis": "Single rear motor maximum power",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgoem.b-cdn.net/files/2023/08/MG4-Product-Brochure-2023_v12_WEB_adme_37_37.pdf",
+              "https://www.carsales.com.au/cars/details/2025-mg-mg4-excite-51-125kw-auto-my25/OAG-AD-25252017/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Driven-wheel layout",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgoem.b-cdn.net/files/2023/08/MG4-Product-Brochure-2023_v12_WEB_adme_37_37.pdf",
+              "https://www.carsales.com.au/cars/details/2025-mg-mg4-excite-51-125kw-auto-my25/OAG-AD-25252017/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,287 mm",
+            "basis": "Overall length",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgoem.b-cdn.net/files/2023/08/MG4-Product-Brochure-2023_v12_WEB_adme_37_37.pdf",
+              "https://www.carsales.com.au/cars/details/2025-mg-mg4-excite-51-125kw-auto-my25/OAG-AD-25252017/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,836 mm",
+            "basis": "Body width excluding mirrors",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgoem.b-cdn.net/files/2023/08/MG4-Product-Brochure-2023_v12_WEB_adme_37_37.pdf",
+              "https://www.carsales.com.au/cars/details/2025-mg-mg4-excite-51-125kw-auto-my25/OAG-AD-25252017/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,504 mm",
+            "basis": "Overall height",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgoem.b-cdn.net/files/2023/08/MG4-Product-Brochure-2023_v12_WEB_adme_37_37.pdf",
+              "https://www.carsales.com.au/cars/details/2025-mg-mg4-excite-51-125kw-auto-my25/OAG-AD-25252017/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "500 kg",
+            "basis": "Braked trailer maximum",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgoem.b-cdn.net/files/2023/08/MG4-Product-Brochure-2023_v12_WEB_adme_37_37.pdf",
+              "https://www.carsales.com.au/cars/details/2025-mg-mg4-excite-51-125kw-auto-my25/OAG-AD-25252017/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "7 years / unlimited km",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/warranty"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "7 years / 150,000 km; 70% capacity floor",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/warranty"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "mg_mgs5_my25_excite_49_rwd__20261014",
+      "vehicle": "MG MGS5 EV Excite 49kWh RWD · MY25 residual New advertising",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "outgoing",
+          "orderStatus": "not_accepting_orders",
+          "stockStatus": "new_stock_listed",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.motoramamg.com.au/cars/new-dover-white-2025-mg-mgs5-ev-a2604100964",
+            "https://mgs5ev.mgmotor.com.au/",
+            "https://origin.carexpert.com.au/car-news/2026-mg-s5-ev-prices-electric-suv-gets-more-power-longer-range",
+            "https://www.westpointautos.com.au/cars/new-silver-2025-mg-mgs5-ev-4106082"
+          ]
+        },
+        "outcome": "unavailable",
+        "note": "Outgoing stock listing; not on MG's current offers page. Not rechecked."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "36,550 AUD",
+            "basis": "Dealer-advertised driveaway",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.motoramamg.com.au/cars/new-dover-white-2025-mg-mgs5-ev-a2604100964"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Reported or dealer-advertised price for outgoing stock; dealer and secondary pages are not rechecked as sources. Not rechecked."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "340 km",
+            "basis": "WLTP combined laboratory range",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "49 kWh",
+            "basis": "Manufacturer declared battery capacity; gross/usable unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "DC peak charging",
+          "due": false,
+          "current": {
+            "value": "120 kW",
+            "basis": "Maximum DC charging power accepted by vehicle",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "10–80%",
+            "grade": "not_published",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://origin.carexpert.com.au/car-reviews/2026-mg-s5-ev-review"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "6.6 kW",
+            "basis": "Maximum onboard AC charging power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Five belted seating positions: two front, rear left/right and rear centre",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot volume",
+          "due": false,
+          "current": {
+            "value": "453 L",
+            "basis": "Rear cargo with all 5 seats in place; measurement method VDA/SAE unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "8 s",
+            "basis": "Manufacturer 0–100 km/h claim",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "125 kW",
+            "basis": "Published total vehicle motor output",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Australian exact-version driven wheels",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,476 mm",
+            "basis": "Maker body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,849 mm",
+            "basis": "Maker body dimension; width mirror treatment unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,621 mm",
+            "basis": "Maker body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "750 kg",
+            "basis": "Maximum braked trailer mass",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "7 years / unlimited km",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/warranty"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "7 years / 150,000 km; 70% capacity floor",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/warranty"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "mg_mgs5_my25_excite_62_rwd__20261014",
+      "vehicle": "MG MGS5 EV Excite 62kWh RWD · MY25 residual New advertising",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "outgoing",
+          "orderStatus": "not_accepting_orders",
+          "stockStatus": "new_stock_listed",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://vonbibra.com.au/stock/details/OAG-AD-25753589/2025-mg-mgs5-ev-new",
+            "https://mgs5ev.mgmotor.com.au/",
+            "https://origin.carexpert.com.au/car-news/2026-mg-s5-ev-prices-electric-suv-gets-more-power-longer-range",
+            "https://www.westpointautos.com.au/cars/new-black-2025-mg-mgs5-ev-4106079"
+          ]
+        },
+        "outcome": "unavailable",
+        "note": "Outgoing stock listing; not on MG's current offers page. Not rechecked."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "37,800 AUD",
+            "basis": "Dealer-advertised driveaway",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://vonbibra.com.au/stock/details/OAG-AD-25753589/2025-mg-mgs5-ev-new"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Reported or dealer-advertised price for outgoing stock; dealer and secondary pages are not rechecked as sources. Not rechecked."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "430 km",
+            "basis": "WLTP combined laboratory range",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "62 kWh",
+            "basis": "Manufacturer declared battery capacity; gross/usable unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "DC peak charging",
+          "due": false,
+          "current": {
+            "value": "150 kW",
+            "basis": "Maximum DC charging power accepted by vehicle",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "10–80%",
+            "grade": "not_published",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://origin.carexpert.com.au/car-reviews/2026-mg-s5-ev-review"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "6.6 kW",
+            "basis": "Maximum onboard AC charging power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Five belted seating positions: two front, rear left/right and rear centre",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot volume",
+          "due": false,
+          "current": {
+            "value": "453 L",
+            "basis": "Rear cargo with all 5 seats in place; measurement method VDA/SAE unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "8.2 s",
+            "basis": "Manufacturer 0–100 km/h claim",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "125 kW",
+            "basis": "Published total vehicle motor output",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Australian exact-version driven wheels",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,476 mm",
+            "basis": "Maker body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,849 mm",
+            "basis": "Maker body dimension; width mirror treatment unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,621 mm",
+            "basis": "Maker body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "750 kg",
+            "basis": "Maximum braked trailer mass",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "7 years / unlimited km",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/warranty"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "7 years / 150,000 km; 70% capacity floor",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/warranty"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "mg_mgs5_my25_essence_49_rwd__20261014",
+      "vehicle": "MG MGS5 EV Essence 49kWh RWD · MY25 residual New advertising",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "outgoing",
+          "orderStatus": "not_accepting_orders",
+          "stockStatus": "new_stock_listed",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.buckbymotors.com.au/new-cars/for-sale/mg/mgs5-ev/2025/essence-49/zs3em-my25/3927841/",
+            "https://mgs5ev.mgmotor.com.au/",
+            "https://origin.carexpert.com.au/car-news/2026-mg-s5-ev-prices-electric-suv-gets-more-power-longer-range"
+          ]
+        },
+        "outcome": "unavailable",
+        "note": "Outgoing stock listing; not on MG's current offers page. Not rechecked."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "38,990 AUD",
+            "basis": "Dealer-advertised driveaway",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.buckbymotors.com.au/new-cars/for-sale/mg/mgs5-ev/2025/essence-49/zs3em-my25/3927841/"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Reported or dealer-advertised price for outgoing stock; dealer and secondary pages are not rechecked as sources. Not rechecked."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "335 km",
+            "basis": "WLTP combined laboratory range",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "49 kWh",
+            "basis": "Manufacturer declared battery capacity; gross/usable unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "DC peak charging",
+          "due": false,
+          "current": {
+            "value": "120 kW",
+            "basis": "Maximum DC charging power accepted by vehicle",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "10–80%",
+            "grade": "not_published",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://origin.carexpert.com.au/car-reviews/2026-mg-s5-ev-review"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "6.6 kW",
+            "basis": "Maximum onboard AC charging power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Five belted seating positions: two front, rear left/right and rear centre",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot volume",
+          "due": false,
+          "current": {
+            "value": "453 L",
+            "basis": "Rear cargo with all 5 seats in place; measurement method VDA/SAE unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "8.2 s",
+            "basis": "Manufacturer 0–100 km/h claim",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "125 kW",
+            "basis": "Published total vehicle motor output",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Australian exact-version driven wheels",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,476 mm",
+            "basis": "Maker body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,849 mm",
+            "basis": "Maker body dimension; width mirror treatment unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,621 mm",
+            "basis": "Maker body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "750 kg",
+            "basis": "Maximum braked trailer mass",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "7 years / unlimited km",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/warranty"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "7 years / 150,000 km; 70% capacity floor",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/warranty"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "mg_mgs5_my25_essence_62_rwd__20261014",
+      "vehicle": "MG MGS5 EV Essence 62kWh RWD · MY25 residual New advertising · 125 kW",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "outgoing",
+          "orderStatus": "not_accepting_orders",
+          "stockStatus": "new_stock_listed",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.allanmackayautos.com.au/stock/details/OAG-AD-25987646/2025-mg-mgs5-ev-new",
+            "https://mgs5ev.mgmotor.com.au/",
+            "https://origin.carexpert.com.au/car-news/2026-mg-s5-ev-prices-electric-suv-gets-more-power-longer-range"
+          ]
+        },
+        "outcome": "unavailable",
+        "note": "Outgoing stock listing; not on MG's current offers page. Not rechecked."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "42,990 AUD",
+            "basis": "Dealer-advertised driveaway",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.allanmackayautos.com.au/stock/details/OAG-AD-25987646/2025-mg-mgs5-ev-new"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Reported or dealer-advertised price for outgoing stock; dealer and secondary pages are not rechecked as sources. Not rechecked."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "425 km",
+            "basis": "WLTP combined laboratory range",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "62 kWh",
+            "basis": "Manufacturer declared battery capacity; gross/usable unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "DC peak charging",
+          "due": false,
+          "current": {
+            "value": "150 kW",
+            "basis": "Maximum DC charging power accepted by vehicle",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "10–80%",
+            "grade": "not_published",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://origin.carexpert.com.au/car-reviews/2026-mg-s5-ev-review"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "6.6 kW",
+            "basis": "Maximum onboard AC charging power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Five belted seating positions: two front, rear left/right and rear centre",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot volume",
+          "due": false,
+          "current": {
+            "value": "453 L",
+            "basis": "Rear cargo with all 5 seats in place; measurement method VDA/SAE unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "8.6 s",
+            "basis": "Manufacturer 0–100 km/h claim",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "125 kW",
+            "basis": "Published total vehicle motor output",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Australian exact-version driven wheels",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,476 mm",
+            "basis": "Maker body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,849 mm",
+            "basis": "Maker body dimension; width mirror treatment unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,621 mm",
+            "basis": "Maker body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "750 kg",
+            "basis": "Maximum braked trailer mass",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://resource.digitaldealer.com.au/pdf/203412621682d706636225150406480.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "7 years / unlimited km",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/warranty"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "7 years / 150,000 km; 70% capacity floor",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/warranty"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "mg_mgs5_my26_excite_49_rwd__20261014",
+      "vehicle": "MG MGS5 EV Excite 49kWh RWD · MY26 residual New advertising",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "outgoing",
+          "orderStatus": "not_accepting_orders",
+          "stockStatus": "new_stock_listed",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://hobartmg.com.au/2604150358-1874460-mg-mgs5ev-2026/",
+            "https://origin.carexpert.com.au/car-news/2026-mg-s5-ev-prices-electric-suv-gets-more-power-longer-range",
+            "https://mgmotor.com.au/vehicles/mgs5-ev"
+          ]
+        },
+        "outcome": "unavailable",
+        "note": "Outgoing stock listing; not on MG's current offers page. Not rechecked."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "40,690 AUD",
+            "basis": "Dealer-advertised driveaway",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://hobartmg.com.au/2604150358-1874460-mg-mgs5ev-2026/"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Reported or dealer-advertised price for outgoing stock; dealer and secondary pages are not rechecked as sources. Not rechecked."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "340 km",
+            "basis": "WLTP combined laboratory range",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://hobartmg.com.au/2604150358-1874460-mg-mgs5ev-2026/",
+              "https://www.carsguide.com.au/mg/mgs5-ev/price/2026/excite-49?id=2IDWCdEM"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "49 kWh",
+            "basis": "Manufacturer declared battery capacity; gross/usable unspecified",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://hobartmg.com.au/2604150358-1874460-mg-mgs5ev-2026/",
+              "https://www.carsguide.com.au/mg/mgs5-ev/price/2026/excite-49?id=2IDWCdEM"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "DC peak charging",
+          "due": false,
+          "current": {
+            "value": "120 kW",
+            "basis": "Maximum DC charging power accepted by vehicle",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://hobartmg.com.au/2604150358-1874460-mg-mgs5ev-2026/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "10–80%",
+            "grade": "not_published",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MGS5_EV_2026.pdf",
+              "https://hobartmg.com.au/2604150358-1874460-mg-mgs5ev-2026/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "6.6 kW",
+            "basis": "Maximum onboard AC charging power",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://hobartmg.com.au/2604150358-1874460-mg-mgs5ev-2026/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Five belted seating positions: two front, rear left/right and rear centre",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://hobartmg.com.au/2604150358-1874460-mg-mgs5ev-2026/",
+              "https://www.carsguide.com.au/mg/mgs5-ev/price/2026/excite-49?id=2IDWCdEM"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot volume",
+          "due": false,
+          "current": {
+            "value": "453 L",
+            "basis": "Rear cargo with all 5 seats in place; measurement method VDA/SAE unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://mgmotor.com.au/brochures/MGS5_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "8 s",
+            "basis": "Manufacturer 0–100 km/h claim",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://hobartmg.com.au/2604150358-1874460-mg-mgs5ev-2026/",
+              "https://www.carsguide.com.au/mg/mgs5-ev/price/2026/excite-49?id=2IDWCdEM"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "125 kW",
+            "basis": "Published total vehicle motor output",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://hobartmg.com.au/2604150358-1874460-mg-mgs5ev-2026/",
+              "https://www.carsguide.com.au/mg/mgs5-ev/price/2026/excite-49?id=2IDWCdEM"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Australian exact-version driven wheels",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://hobartmg.com.au/2604150358-1874460-mg-mgs5ev-2026/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,476 mm",
+            "basis": "Maker body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://mgmotor.com.au/brochures/MGS5_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,849 mm",
+            "basis": "Maker body dimension; width mirror treatment unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://mgmotor.com.au/brochures/MGS5_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,621 mm",
+            "basis": "Maker body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgs5ev.mgmotor.com.au/",
+              "https://mgmotor.com.au/brochures/MGS5_EV_2026.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "750 kg",
+            "basis": "Maximum braked trailer mass",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://hobartmg.com.au/2604150358-1874460-mg-mgs5ev-2026/",
+              "https://www.carsguide.com.au/mg/mgs5-ev/price/2026/excite-49?id=2IDWCdEM"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "7 years / unlimited km",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/warranty"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "7 years / 150,000 km; 70% capacity floor",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/warranty"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    }
+  ]
+}

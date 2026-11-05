@@ -1,0 +1,433 @@
+{
+  "schema": "roadmark-changes-v1",
+  "month": "2026-11",
+  "generator": "scripts/refresh/diff.ts",
+  "before": {
+    "asOf": "2026-10-15",
+    "sha256": "5be1af4167e05db09a4fd91bffe17714ab5d79ca09f6f23736030fd14ac38968"
+  },
+  "after": {
+    "asOf": "2026-11-05",
+    "sha256": "184b2e0a1cf6bc57db5c8ea7915657ed9b06f76998dcf84c0e182c44dc95dbe5"
+  },
+  "counts": {
+    "price_changed": 14,
+    "price_added": 0,
+    "price_removed": 0,
+    "version_added": 0,
+    "version_withdrawn": 0,
+    "availability_changed": 0,
+    "range_changed": 0,
+    "warranty_changed": 0
+  },
+  "sources": [
+    {
+      "id": "refresh-hyundai-2026-11-05-api-inster",
+      "url": "https://www.hyundai.com/content/api/au/hyundai/v3/carpricecalculator?postcode=2000&displaypowertrain=true&modelname=inster",
+      "title": "Hyundai price calculator service, INSTER (postcode 2000)",
+      "publisher": "Hyundai Australia",
+      "accessed_date": "2026-11-05"
+    },
+    {
+      "id": "refresh-hyundai-2026-11-05-api-ioniq-5",
+      "url": "https://www.hyundai.com/content/api/au/hyundai/v3/carpricecalculator?postcode=2000&displaypowertrain=true&modelname=ioniq-5",
+      "title": "Hyundai price calculator service, IONIQ 5 (postcode 2000)",
+      "publisher": "Hyundai Australia",
+      "accessed_date": "2026-11-05"
+    },
+    {
+      "id": "refresh-hyundai-2026-11-05-api-ioniq-5-n",
+      "url": "https://www.hyundai.com/content/api/au/hyundai/v3/carpricecalculator?postcode=2000&displaypowertrain=true&modelname=ioniq-5-n",
+      "title": "Hyundai price calculator service, IONIQ 5 N (postcode 2000)",
+      "publisher": "Hyundai Australia",
+      "accessed_date": "2026-11-05"
+    },
+    {
+      "id": "refresh-hyundai-2026-11-05-api-ioniq-6-n",
+      "url": "https://www.hyundai.com/content/api/au/hyundai/v3/carpricecalculator?postcode=2000&displaypowertrain=true&modelname=ioniq-6-n",
+      "title": "Hyundai price calculator service, IONIQ 6 N (postcode 2000)",
+      "publisher": "Hyundai Australia",
+      "accessed_date": "2026-11-05"
+    },
+    {
+      "id": "refresh-hyundai-2026-11-05-api-ioniq-9",
+      "url": "https://www.hyundai.com/content/api/au/hyundai/v3/carpricecalculator?postcode=2000&displaypowertrain=true&modelname=ioniq-9",
+      "title": "Hyundai price calculator service, IONIQ 9 (postcode 2000)",
+      "publisher": "Hyundai Australia",
+      "accessed_date": "2026-11-05"
+    },
+    {
+      "id": "refresh-hyundai-2026-11-05-api-kona",
+      "url": "https://www.hyundai.com/content/api/au/hyundai/v3/carpricecalculator?postcode=2000&displaypowertrain=true&modelname=kona",
+      "title": "Hyundai price calculator service, KONA incl. KONA Electric (postcode 2000)",
+      "publisher": "Hyundai Australia",
+      "accessed_date": "2026-11-05"
+    },
+    {
+      "id": "refresh-hyundai-2026-11-05-offer-ioniq5",
+      "url": "https://www.hyundai.com/au/en/offers/ioniq-5/offer-detail?variantId=1621",
+      "title": "IONIQ 5 offers (Hyundai Australia)",
+      "publisher": "Hyundai Australia",
+      "accessed_date": "2026-11-05"
+    },
+    {
+      "id": "refresh-hyundai-2026-11-05-offer-kona",
+      "url": "https://www.hyundai.com/au/en/offers/kona.html/offer-detail?variantId=1571",
+      "title": "KONA offers (Hyundai Australia)",
+      "publisher": "Hyundai Australia",
+      "accessed_date": "2026-11-05"
+    },
+    {
+      "id": "refresh-mg-2026-11-05-offers",
+      "url": "https://mgmotor.com.au/offers",
+      "title": "MG current offers",
+      "publisher": "MG Motor Australia (SAIC Motor Australia)",
+      "accessed_date": "2026-11-05"
+    }
+  ],
+  "changes": [
+    {
+      "type": "price_changed",
+      "versionId": "hyundai_inster_202608_cross_49_fwd_sunroof__20261010",
+      "brand": "Hyundai",
+      "vehicle": "Hyundai INSTER Cross 49 kWh FWD with sunroof",
+      "family": "hyundai-inster-current",
+      "slug": "hyundai-inster-202608-cross-49-fwd-sunroof--20261010",
+      "field": "price_aud",
+      "before": {
+        "value": 43500,
+        "unit": "AUD",
+        "basis": "Before on-road costs"
+      },
+      "after": {
+        "value": 43499.99,
+        "unit": "AUD",
+        "basis": "Before on-road costs"
+      },
+      "beforeDate": "2026-10-14",
+      "afterDate": "2026-11-05",
+      "sourceIds": [
+        "refresh-hyundai-2026-11-05-api-inster"
+      ]
+    },
+    {
+      "type": "price_changed",
+      "versionId": "hyundai_ioniq_5_my27__84kwh_rwd__20261010",
+      "brand": "Hyundai",
+      "vehicle": "Hyundai IONIQ 5 84kWh RWD",
+      "family": "hyundai-ioniq-5-my27",
+      "slug": "84kwh-rwd-20261010",
+      "field": "promotional_driveaway_aud",
+      "before": {
+        "value": 70990,
+        "unit": "AUD",
+        "basis": "Driveaway"
+      },
+      "after": {
+        "value": 69990,
+        "unit": "AUD",
+        "basis": "Driveaway"
+      },
+      "beforeDate": "2026-10-14",
+      "afterDate": "2026-11-05",
+      "sourceIds": [
+        "refresh-hyundai-2026-11-05-api-ioniq-5",
+        "refresh-hyundai-2026-11-05-offer-ioniq5"
+      ]
+    },
+    {
+      "type": "price_changed",
+      "versionId": "hyundai_ioniq_5_my27__elite_84kwh_rwd__20261010",
+      "brand": "Hyundai",
+      "vehicle": "Hyundai IONIQ 5 Elite 84kWh RWD",
+      "family": "hyundai-ioniq-5-my27",
+      "slug": "elite-84kwh-rwd-20261010",
+      "field": "promotional_driveaway_aud",
+      "before": {
+        "value": 75990,
+        "unit": "AUD",
+        "basis": "Driveaway"
+      },
+      "after": {
+        "value": 74990,
+        "unit": "AUD",
+        "basis": "Driveaway"
+      },
+      "beforeDate": "2026-10-14",
+      "afterDate": "2026-11-05",
+      "sourceIds": [
+        "refresh-hyundai-2026-11-05-api-ioniq-5",
+        "refresh-hyundai-2026-11-05-offer-ioniq5"
+      ]
+    },
+    {
+      "type": "price_changed",
+      "versionId": "hyundai_ioniq_5_my27__premium_n_line_84kwh_awd__20261010",
+      "brand": "Hyundai",
+      "vehicle": "Hyundai IONIQ 5 Premium N Line 84kWh AWD",
+      "family": "hyundai-ioniq-5-my27",
+      "slug": "premium-n-line-84kwh-awd-20261010",
+      "field": "promotional_driveaway_aud",
+      "before": {
+        "value": 86990,
+        "unit": "AUD",
+        "basis": "Driveaway"
+      },
+      "after": {
+        "value": 85490,
+        "unit": "AUD",
+        "basis": "Driveaway"
+      },
+      "beforeDate": "2026-10-14",
+      "afterDate": "2026-11-05",
+      "sourceIds": [
+        "refresh-hyundai-2026-11-05-api-ioniq-5",
+        "refresh-hyundai-2026-11-05-offer-ioniq5"
+      ]
+    },
+    {
+      "type": "price_changed",
+      "versionId": "hyundai_ioniq_5_n_84_awd__20261010",
+      "brand": "Hyundai",
+      "vehicle": "Hyundai IONIQ 5 N N 84 kWh AWD with Vision Roof",
+      "family": "hyundai-ioniq-5-n-current",
+      "slug": "hyundai-ioniq-5-n-84-awd--20261010",
+      "field": "price_aud",
+      "before": {
+        "value": 123076.51,
+        "unit": "AUD",
+        "basis": "Driveaway"
+      },
+      "after": {
+        "value": 123075.51,
+        "unit": "AUD",
+        "basis": "Driveaway"
+      },
+      "beforeDate": "2026-10-14",
+      "afterDate": "2026-11-05",
+      "sourceIds": [
+        "refresh-hyundai-2026-11-05-api-ioniq-5-n"
+      ]
+    },
+    {
+      "type": "price_changed",
+      "versionId": "hyundai_ioniq_6_n_84_awd__20261010",
+      "brand": "Hyundai",
+      "vehicle": "Hyundai IONIQ 6 N N 84 kWh AWD",
+      "family": "hyundai-ioniq-6-n-current",
+      "slug": "hyundai-ioniq-6-n-84-awd--20261010",
+      "field": "price_aud",
+      "before": {
+        "value": 123728.71,
+        "unit": "AUD",
+        "basis": "Driveaway"
+      },
+      "after": {
+        "value": 123727.71,
+        "unit": "AUD",
+        "basis": "Driveaway"
+      },
+      "beforeDate": "2026-10-14",
+      "afterDate": "2026-11-05",
+      "sourceIds": [
+        "refresh-hyundai-2026-11-05-api-ioniq-6-n"
+      ]
+    },
+    {
+      "type": "price_changed",
+      "versionId": "hyundai_ioniq_9_my27_calligraphy_awd_6_seat__20261010",
+      "brand": "Hyundai",
+      "vehicle": "Hyundai IONIQ 9 Calligraphy AWD 6-seat 110.3 kWh",
+      "family": "hyundai-ioniq-9-current",
+      "slug": "hyundai-ioniq-9-my27-calligraphy-awd-6-seat--20261010",
+      "field": "promotional_driveaway_aud",
+      "before": {
+        "value": 131077.71,
+        "unit": "AUD",
+        "basis": "Driveaway"
+      },
+      "after": {
+        "value": 131076.71,
+        "unit": "AUD",
+        "basis": "Driveaway"
+      },
+      "beforeDate": "2026-10-14",
+      "afterDate": "2026-11-05",
+      "sourceIds": [
+        "refresh-hyundai-2026-11-05-api-ioniq-9"
+      ]
+    },
+    {
+      "type": "price_changed",
+      "versionId": "hyundai_ioniq_9_my27_calligraphy_awd_7_seat__20261010",
+      "brand": "Hyundai",
+      "vehicle": "Hyundai IONIQ 9 Calligraphy AWD 7-seat 110.3 kWh",
+      "family": "hyundai-ioniq-9-current",
+      "slug": "hyundai-ioniq-9-my27-calligraphy-awd-7-seat--20261010",
+      "field": "promotional_driveaway_aud",
+      "before": {
+        "value": 128977.72,
+        "unit": "AUD",
+        "basis": "Driveaway"
+      },
+      "after": {
+        "value": 128976.72,
+        "unit": "AUD",
+        "basis": "Driveaway"
+      },
+      "beforeDate": "2026-10-14",
+      "afterDate": "2026-11-05",
+      "sourceIds": [
+        "refresh-hyundai-2026-11-05-api-ioniq-9"
+      ]
+    },
+    {
+      "type": "price_changed",
+      "versionId": "hyundai_kona_electric_my27_elite_extended_range_64_8_fwd__20261010",
+      "brand": "Hyundai",
+      "vehicle": "Hyundai KONA Electric Elite Extended Range 64.8 kWh FWD",
+      "family": "hyundai-kona-electric-current",
+      "slug": "hyundai-kona-electric-my27-elite-extended-range-64-8-fwd--20261010",
+      "field": "promotional_driveaway_aud",
+      "before": {
+        "value": 54990,
+        "unit": "AUD",
+        "basis": "Driveaway"
+      },
+      "after": {
+        "value": 50990,
+        "unit": "AUD",
+        "basis": "Driveaway"
+      },
+      "beforeDate": "2026-10-14",
+      "afterDate": "2026-11-05",
+      "sourceIds": [
+        "refresh-hyundai-2026-11-05-offer-kona",
+        "refresh-hyundai-2026-11-05-api-kona"
+      ]
+    },
+    {
+      "type": "price_changed",
+      "versionId": "hyundai_kona_electric_my27_kona_extended_range_64_8_fwd__20261010",
+      "brand": "Hyundai",
+      "vehicle": "Hyundai KONA Electric KONA Extended Range 64.8 kWh FWD",
+      "family": "hyundai-kona-electric-current",
+      "slug": "hyundai-kona-electric-my27-kona-extended-range-64-8-fwd--20261010",
+      "field": "promotional_driveaway_aud",
+      "before": {
+        "value": 51990,
+        "unit": "AUD",
+        "basis": "Driveaway"
+      },
+      "after": {
+        "value": 47990,
+        "unit": "AUD",
+        "basis": "Driveaway"
+      },
+      "beforeDate": "2026-10-14",
+      "afterDate": "2026-11-05",
+      "sourceIds": [
+        "refresh-hyundai-2026-11-05-offer-kona",
+        "refresh-hyundai-2026-11-05-api-kona"
+      ]
+    },
+    {
+      "type": "price_changed",
+      "versionId": "hyundai_kona_electric_my27_kona_standard_range_48_6_fwd__20261010",
+      "brand": "Hyundai",
+      "vehicle": "Hyundai KONA Electric KONA Standard Range 48.6 kWh FWD",
+      "family": "hyundai-kona-electric-current",
+      "slug": "hyundai-kona-electric-my27-kona-standard-range-48-6-fwd--20261010",
+      "field": "promotional_driveaway_aud",
+      "before": {
+        "value": 47990,
+        "unit": "AUD",
+        "basis": "Driveaway"
+      },
+      "after": {
+        "value": 43990,
+        "unit": "AUD",
+        "basis": "Driveaway"
+      },
+      "beforeDate": "2026-10-14",
+      "afterDate": "2026-11-05",
+      "sourceIds": [
+        "refresh-hyundai-2026-11-05-offer-kona",
+        "refresh-hyundai-2026-11-05-api-kona"
+      ]
+    },
+    {
+      "type": "price_changed",
+      "versionId": "hyundai_kona_electric_my27_premium_extended_range_64_8_fwd__20261010",
+      "brand": "Hyundai",
+      "vehicle": "Hyundai KONA Electric Premium Extended Range 64.8 kWh FWD",
+      "family": "hyundai-kona-electric-current",
+      "slug": "hyundai-kona-electric-my27-premium-extended-range-64-8-fwd--20261010",
+      "field": "promotional_driveaway_aud",
+      "before": {
+        "value": 62990,
+        "unit": "AUD",
+        "basis": "Driveaway"
+      },
+      "after": {
+        "value": 57990,
+        "unit": "AUD",
+        "basis": "Driveaway"
+      },
+      "beforeDate": "2026-10-14",
+      "afterDate": "2026-11-05",
+      "sourceIds": [
+        "refresh-hyundai-2026-11-05-offer-kona",
+        "refresh-hyundai-2026-11-05-api-kona"
+      ]
+    },
+    {
+      "type": "price_changed",
+      "versionId": "mg_mgs6_current__essence_awd__20261010",
+      "brand": "MG",
+      "vehicle": "MG MGS6 EV Essence AWD",
+      "family": "mg-mgs6-current",
+      "slug": "essence-awd-20261010",
+      "field": "price_aud",
+      "before": {
+        "value": 56990,
+        "unit": "AUD",
+        "basis": "Driveaway"
+      },
+      "after": {
+        "value": 55990,
+        "unit": "AUD",
+        "basis": "Driveaway"
+      },
+      "beforeDate": "2026-10-14",
+      "afterDate": "2026-11-05",
+      "sourceIds": [
+        "refresh-mg-2026-11-05-offers"
+      ]
+    },
+    {
+      "type": "price_changed",
+      "versionId": "mg_mgs6_current__essence_rwd__20261010",
+      "brand": "MG",
+      "vehicle": "MG MGS6 EV Essence RWD",
+      "family": "mg-mgs6-current",
+      "slug": "essence-rwd-20261010",
+      "field": "price_aud",
+      "before": {
+        "value": 49990,
+        "unit": "AUD",
+        "basis": "Driveaway"
+      },
+      "after": {
+        "value": 48990,
+        "unit": "AUD",
+        "basis": "Driveaway"
+      },
+      "beforeDate": "2026-10-14",
+      "afterDate": "2026-11-05",
+      "sourceIds": [
+        "refresh-mg-2026-11-05-offers"
+      ]
+    }
+  ]
+}

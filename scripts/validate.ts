@@ -1,10 +1,12 @@
 import fs from "node:fs";
 import crypto from "node:crypto";
-import { research, counts, pack, catalogue } from "../src/lib/data";
+import { catalogueSnapshot, counts, pack } from "../src/lib/data";
 import { safeUrl } from "../src/lib/config";
 import { resolveAsset, type ApprovedAsset } from "../src/lib/media";
 import { validateResearch } from "../src/lib/validate";
-const d = research();
+import { validateCatalogueIssues } from "../src/lib/validate-catalogue-issues";
+const snapshot = catalogueSnapshot();
+const d = snapshot.data;
 const errors = validateResearch(d);
 const original = fs.readFileSync("au_ev_all_variants_2026-10-06.json");
 const copied = fs.readFileSync("data/au_ev_all_variants_2026-10-06.json");
@@ -25,8 +27,14 @@ for (const a of assets) {
 }
 for (const s of d.sources)
   if (!safeUrl(s.url)) errors.push(`Unsafe source URL ${s.id}`);
-for (const c of catalogue()) {
-  const p = pack(c.id);
+errors.push(...validateCatalogueIssues(snapshot.cars));
+// Stop before pack/export consumers can dereference malformed issue objects.
+if (errors.length) {
+  console.error(errors.join("\n"));
+  process.exit(1);
+}
+for (const c of snapshot.cars) {
+  const p = pack(c.id, snapshot);
   if (p.features.some((f) => typeof f.value !== "string"))
     errors.push(`Unsafe display value ${c.id}`);
   for (const f of p.features) {
@@ -44,7 +52,7 @@ console.log(
   JSON.stringify(
     {
       result: "PASS",
-      counts: counts(),
+      counts: counts(snapshot),
       sourceReferences: d.sources.length,
       publicationIssues: d.publication_issues.length,
       sha256: crypto.createHash("sha256").update(copied).digest("hex"),

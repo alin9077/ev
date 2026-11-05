@@ -1,0 +1,5357 @@
+{
+  "schema": "roadmark-refresh-findings-v1",
+  "brand": "Volvo",
+  "asOf": "2026-11-05",
+  "reviewedAt": "2026-11-05",
+  "reviewedBy": "Roadmark WS2 refresh (Claude Code worker), Volvo",
+  "sources": [
+    {
+      "id": "refresh-volvo-2026-11-05-ex30-build",
+      "url": "https://www.volvocars.com/au/build/ex30-electric/",
+      "title": "Design your EX30 (Volvo Cars Australia build page)",
+      "publisher": "Volvo Car Australia",
+      "source_type": "official_configurator",
+      "published_date": null,
+      "accessed_date": "2026-11-05",
+      "market": "AU",
+      "supports": "Opened 2026-11-05. EX30 Plus P5 Long Range Electric: Manufacturer's Recommended List Price (incl GST) $49,990 and Manufacturer's Recommended Drive Away Price $49,990 as displayed with no location entered (an estimate that varies with the device's postcode); version cards: EX30 From $49,990; EX30 Cross Country From $62,990. Banner: 'The fully electric EX30 from just $55,990 driveaway'. The page offers Request a quote and Book a Test Drive, not an order."
+    }
+  ],
+  "versions": [
+    {
+      "variantId": "volvo_ex30_my27_plus_p5_long_range_electric__20261010",
+      "vehicle": "Volvo EX30 Plus P5 Long Range Electric",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.volvocars.com/au/build/ex30-electric/",
+            "https://www.volvocars.com/au/cars/ex30-electric/",
+            "https://volvocarsberwick.com.au/13628155-1900218-volvo-ex30-2026/"
+          ]
+        },
+        "outcome": "unchanged",
+        "note": "Build page offers Request a quote and Book a Test Drive; order status and stock not stated.",
+        "sourceIds": [
+          "refresh-volvo-2026-11-05-ex30-build"
+        ]
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "49,990 AUD",
+            "basis": "Manufacturer recommended list price including GST; before on-road costs",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/build/ex30-electric/"
+            ]
+          },
+          "outcome": "unchanged",
+          "note": "Build page shows Manufacturer's Recommended List Price (incl GST) $49,990.",
+          "sourceIds": [
+            "refresh-volvo-2026-11-05-ex30-build"
+          ]
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "462 km",
+            "basis": "WLTP combined maker estimate",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/",
+              "https://www.volvocars.com/au/cars/ex30-electric/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "69 kWh",
+            "basis": "Manufacturer nominal capacity, not usable",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "134 kW",
+            "basis": "Maximum vehicle DC acceptance",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/volvo/ex30/2027-plus-suv-rwd-electric-jsfokff820260605"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "28 min",
+            "basis": "10–80% SOC; 150 kW DC station",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maximum onboard AC",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "318 L",
+            "basis": "Rear seats upright, maker open volume; distinct max volume",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "5.3 s",
+            "basis": "0–100 km/h",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "200 kW",
+            "basis": "Maximum system motor power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Drivetrain",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,233 mm",
+            "basis": "Maker width excludes mirrors; height at kerb weight plus one person",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,838 mm",
+            "basis": "Maker width excludes mirrors; height at kerb weight plus one person",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,550 mm",
+            "basis": "Maker width excludes mirrors; height at kerb weight plus one person",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,600 kg",
+            "basis": "Braked trailer maximum",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/volvo/ex30/2027-ultra-suv-rwd-electric-jsfokffa20260605"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km",
+            "basis": "Australian new passenger vehicle warranty; ordinary private-use baseline",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/l/warranty/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; below 70% capacity threshold",
+            "basis": "Australian BEV high-voltage lithium-ion battery warranty; original specified capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/l/warranty/",
+              "https://www.volvocars.com/au/cars/electrification/battery/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "promotional_driveaway_aud",
+          "label": "Illustrative driveaway estimate",
+          "due": true,
+          "current": {
+            "value": "55,972 AUD",
+            "basis": "Manufacturer estimated driveaway, Sydney NSW 2000",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/build/ex30-electric/"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "NSW driveaway estimate depends on the postcode of the viewing device and none was set. Not rechecked."
+        }
+      ]
+    },
+    {
+      "variantId": "volvo_ex30_my27_ultra_p5_long_range_electric__20261010",
+      "vehicle": "Volvo EX30 Ultra P5 Long Range Electric",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.volvocars.com/au/build/ex30-electric/",
+            "https://www.volvocars.com/au/cars/ex30-electric/",
+            "https://volvocarsberwick.com.au/13628156-1900219-volvo-ex30-2026/"
+          ]
+        },
+        "outcome": "pending"
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "54,990 AUD",
+            "basis": "Manufacturer recommended list price including GST; before on-road costs",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/build/ex30-electric/?ccid=bH4wLmxldmVsLTQtYmV2X2xlfjAu"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Volvo's build page asks for a configuration for each version; only the EX30 Plus and Cross Country prices were read on 2026-11-05. Not rechecked; value retained, date unchanged."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "462 km",
+            "basis": "WLTP combined maker estimate",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/",
+              "https://www.volvocars.com/au/cars/ex30-electric/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "69 kWh",
+            "basis": "Manufacturer nominal capacity, not usable",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "153 kW",
+            "basis": "Maximum vehicle DC acceptance",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/news/electrification/2023-june-small-package/",
+              "https://www.carexpert.com.au/volvo/ex30/2027-ultra-suv-rwd-electric-jsfokffa20260605"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "28 min",
+            "basis": "10–80% SOC; 150 kW DC station",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maximum onboard AC",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "318 L",
+            "basis": "Rear seats upright, maker open volume; distinct max volume",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "5.3 s",
+            "basis": "0–100 km/h",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "200 kW",
+            "basis": "Maximum system motor power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Drivetrain",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,233 mm",
+            "basis": "Maker width excludes mirrors; height at kerb weight plus one person",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,838 mm",
+            "basis": "Maker width excludes mirrors; height at kerb weight plus one person",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,550 mm",
+            "basis": "Maker width excludes mirrors; height at kerb weight plus one person",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,600 kg",
+            "basis": "Braked trailer maximum",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/volvo/ex30/2027-ultra-suv-rwd-electric-jsfokffa20260605"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km",
+            "basis": "Australian new passenger vehicle warranty; ordinary private-use baseline",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/l/warranty/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; below 70% capacity threshold",
+            "basis": "Australian BEV high-voltage lithium-ion battery warranty; original specified capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/l/warranty/",
+              "https://www.volvocars.com/au/cars/electrification/battery/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "promotional_driveaway_aud",
+          "label": "Illustrative driveaway estimate",
+          "due": true,
+          "current": {
+            "value": "61,222 AUD",
+            "basis": "Manufacturer estimated driveaway, Sydney NSW 2000",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/build/ex30-electric/?ccid=bH4wLmxldmVsLTQtYmV2X2xlfjAu"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Volvo's build page asks for a configuration for each version; only the EX30 Plus and Cross Country prices were read on 2026-11-05. Not rechecked; value retained, date unchanged."
+        }
+      ]
+    },
+    {
+      "variantId": "volvo_ex30_my27_cross_country_p8_awd_electric__20261010",
+      "vehicle": "Volvo EX30 Cross Country P8 AWD Electric",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.volvocars.com/au/build/ex30-electric/",
+            "https://www.volvocars.com/au/cars/ex30-electric/",
+            "https://volvocarsberwick.com.au/13702724-1900222-volvo-ex30crosscountry-2026/"
+          ]
+        },
+        "outcome": "unchanged",
+        "note": "Build page offers Request a quote and Book a Test Drive; order status and stock not stated.",
+        "sourceIds": [
+          "refresh-volvo-2026-11-05-ex30-build"
+        ]
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "62,990 AUD",
+            "basis": "Manufacturer recommended list price including GST; before on-road costs",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/build/ex30-electric/?ccid=bH4wLmxldmVsLTQtYmV2X2xlfjAuX2V%2BMC5jcm9zcy1jb3VudHJ5"
+            ]
+          },
+          "outcome": "unchanged",
+          "note": "Build page shows EX30 Cross Country From $62,990.",
+          "sourceIds": [
+            "refresh-volvo-2026-11-05-ex30-build"
+          ]
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "417 km",
+            "basis": "WLTP combined maker estimate",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/",
+              "https://www.volvocars.com/au/cars/ex30-electric/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "69 kWh",
+            "basis": "Manufacturer nominal capacity, not usable",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "153 kW",
+            "basis": "Maximum vehicle DC acceptance",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/news/electrification/2023-june-small-package/",
+              "https://www.carexpert.com.au/volvo/ex30/2027-ultra-suv-rwd-electric-jsfokffa20260605",
+              "https://www.carsales.com.au/research/volvo/ex30-cross-country/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "28 min",
+            "basis": "10–80% SOC; 150 kW DC station",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maximum onboard AC",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "318 L",
+            "basis": "Rear seats upright, maker shared open luggage-volume specification",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "3.7 s",
+            "basis": "0–100 km/h",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "315 kW",
+            "basis": "Maximum system motor power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "AWD",
+            "basis": "Drivetrain",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,233 mm",
+            "basis": "Maker width excludes mirrors; height at kerb weight plus one person",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/support/car/ex30-cross-country/article/0ed816eed33d98cac0a8cc377bc12bc7-e6a7973b2bf222b2c0a8b09757c97ec8-8664b2fa77a7e089c0a8296870d1a409/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,850 mm",
+            "basis": "Maker width excludes mirrors; height at kerb weight plus one person",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/support/car/ex30-cross-country/article/0ed816eed33d98cac0a8cc377bc12bc7-e6a7973b2bf222b2c0a8b09757c97ec8-8664b2fa77a7e089c0a8296870d1a409/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,567 mm",
+            "basis": "Maker width excludes mirrors; height at kerb weight plus one person",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/support/car/ex30-cross-country/article/0ed816eed33d98cac0a8cc377bc12bc7-e6a7973b2bf222b2c0a8b09757c97ec8-8664b2fa77a7e089c0a8296870d1a409/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,600 kg",
+            "basis": "Braked trailer maximum",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/support/car/ex30-cross-country/article/0ed816eed33d98cac0a8cc377bc12bc7-70bede2dc073ca71c0a8b0975b1e6fa3-8664b2fa77a7e089c0a8296870d1a409/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km",
+            "basis": "Australian new passenger vehicle warranty; ordinary private-use baseline",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/l/warranty/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; below 70% capacity threshold",
+            "basis": "Australian BEV high-voltage lithium-ion battery warranty; original specified capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/l/warranty/",
+              "https://www.volvocars.com/au/cars/electrification/battery/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "promotional_driveaway_aud",
+          "label": "Illustrative driveaway estimate",
+          "due": true,
+          "current": {
+            "value": "69,622 AUD",
+            "basis": "Manufacturer estimated driveaway, Sydney NSW 2000",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/build/ex30-electric/?ccid=bH4wLmxldmVsLTQtYmV2X2xlfjAuX2V%2BMC5jcm9zcy1jb3VudHJ5"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "NSW driveaway estimate depends on the postcode of the viewing device and none was set. Not rechecked."
+        }
+      ]
+    },
+    {
+      "variantId": "volvo_ex40_my27_ultra_single_motor_extended_range__20261010",
+      "vehicle": "Volvo EX40 Ultra Single Motor Extended Range",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.volvocars.com/au/build/ex40-electric/",
+            "https://www.volvocars.com/au/cars/ex40-electric/"
+          ]
+        },
+        "outcome": "pending"
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "69,990 AUD",
+            "basis": "Manufacturer recommended list price including GST; before on-road costs",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/build/ex40-electric/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "520 km",
+            "basis": "WLTP combined maker estimate",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex40-electric/specifications/",
+              "https://www.volvocars.com/au/cars/ex40-electric/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "82 kWh",
+            "basis": "Manufacturer nominal capacity, not usable",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex40-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "200 kW",
+            "basis": "Maximum vehicle DC acceptance",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/volvo/ex40/2027-ultra-suv-rwd-electric-jsf5fogs20260701"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "28 min",
+            "basis": "10–80% SOC; 200 kW DC station",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex40-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maximum onboard AC",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/support/car/ex40/article/0ed816eed33d98cac0a8cc377bc12bc7-83c0c849d91ad5fac0a8cc3751bbe62b-8664b2fa77a7e089c0a8296870d1a409/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex40-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "410 L",
+            "basis": "Rear seats upright, maker open volume; distinct max volume",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex40-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "7.3 s",
+            "basis": "0–100 km/h",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex40-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "185 kW",
+            "basis": "Maximum system motor power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex40-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Drivetrain",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex40-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,440 mm",
+            "basis": "Maker width excludes mirrors; height at kerb weight plus one person",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex40-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,873 mm",
+            "basis": "Maker width excludes mirrors; height at kerb weight plus one person",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex40-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,647 mm",
+            "basis": "Maker width excludes mirrors; height at kerb weight plus one person",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex40-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,500 kg",
+            "basis": "Braked trailer maximum",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/support/car/ex40/article/0ed816eed33d98cac0a8cc377bc12bc7-70bede2dc073ca71c0a8b0975b1e6fa3-8664b2fa77a7e089c0a8296870d1a409/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km",
+            "basis": "Australian new passenger vehicle warranty; ordinary private-use baseline",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/l/warranty/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; below 70% capacity threshold",
+            "basis": "Australian BEV high-voltage lithium-ion battery warranty; original specified capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/l/warranty/",
+              "https://www.volvocars.com/au/cars/electrification/battery/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "promotional_driveaway_aud",
+          "label": "Illustrative driveaway estimate",
+          "due": true,
+          "current": {
+            "value": "76,972 AUD",
+            "basis": "Manufacturer estimated driveaway, Sydney NSW 2000",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/build/ex40-electric/"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "volvo_ex40_my27_ultra_twin_motor__20261010",
+      "vehicle": "Volvo EX40 Ultra Twin Motor",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.volvocars.com/au/build/ex40-electric/",
+            "https://www.volvocars.com/au/cars/ex40-electric/"
+          ]
+        },
+        "outcome": "pending"
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "74,990 AUD",
+            "basis": "Manufacturer recommended list price including GST; before on-road costs",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/build/ex40-electric/?ccid=cH4wLkVSLUU="
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "485 km",
+            "basis": "WLTP combined maker estimate",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex40-electric/specifications/",
+              "https://www.volvocars.com/au/cars/ex40-electric/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "82 kWh",
+            "basis": "Manufacturer nominal capacity, not usable",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex40-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "200 kW",
+            "basis": "Maximum vehicle DC acceptance",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/volvo/ex40/2027-ultra-suv-4x4-electric-jsfmwwag20260701"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "28 min",
+            "basis": "10–80% SOC; 200 kW DC station",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex40-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maximum onboard AC",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/support/car/ex40/article/0ed816eed33d98cac0a8cc377bc12bc7-83c0c849d91ad5fac0a8cc3751bbe62b-8664b2fa77a7e089c0a8296870d1a409/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex40-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "410 L",
+            "basis": "Rear seats upright, maker open volume; distinct max volume",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex40-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "4.8 s",
+            "basis": "0–100 km/h",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex40-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "300 kW",
+            "basis": "Maximum system motor power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex40-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "AWD",
+            "basis": "Drivetrain",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex40-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,440 mm",
+            "basis": "Maker width excludes mirrors; height at kerb weight plus one person",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex40-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,873 mm",
+            "basis": "Maker width excludes mirrors; height at kerb weight plus one person",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex40-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,647 mm",
+            "basis": "Maker width excludes mirrors; height at kerb weight plus one person",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex40-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,800 kg",
+            "basis": "Braked trailer maximum",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/volvo/ex40/2027-ultra-suv-4x4-electric-jsfmwwag20260701"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km",
+            "basis": "Australian new passenger vehicle warranty; ordinary private-use baseline",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/l/warranty/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; below 70% capacity threshold",
+            "basis": "Australian BEV high-voltage lithium-ion battery warranty; original specified capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/l/warranty/",
+              "https://www.volvocars.com/au/cars/electrification/battery/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "promotional_driveaway_aud",
+          "label": "Illustrative driveaway estimate",
+          "due": true,
+          "current": {
+            "value": "82,222 AUD",
+            "basis": "Manufacturer estimated driveaway, Sydney NSW 2000",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/build/ex40-electric/?ccid=cH4wLkVSLUU="
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "volvo_ex90_my27_plus_single_motor__20261010",
+      "vehicle": "Volvo EX90 Plus Single Motor",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.volvocars.com/au/build/ex90-electric/",
+            "https://www.volvocars.com/au/cars/ex90-electric/",
+            "https://www.volvocars.com/au/l/offers/october-showcase-event/"
+          ]
+        },
+        "outcome": "pending"
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "103,453 AUD",
+            "basis": "Maker selected-configuration MLP including GST, excluding separately itemised LCT/on-road costs",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/build/ex90-electric/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "479 km",
+            "basis": "Up to WLTP combined",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex90-electric/specifications/",
+              "https://www.volvocars.com/au/cars/ex90-electric/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "92 kWh",
+            "basis": "Battery energy (nominal), as labelled; not relabelled usable or gross",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex90-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "310 kW",
+            "basis": "Vehicle DC capability at 800 V, exact-MY27 overseas sibling",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://azure-eu-assets.contentstack.com/v3/assets/blt84e01a6904dbd2e8/bltd7bbace678231e4b/6acc9781496c1b18161a2a7c/MY27_EX90_Oktober-26_27-priser_DEL-1.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "24 min",
+            "basis": "10–80% at 300 kW DC charging station",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex90-electric/specifications/",
+              "https://www.volvocars.com/au/cars/ex90-electric/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "11 kW onboard AC charger",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex90-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "7",
+            "basis": "Seating capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex90-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "324 L",
+            "basis": "Open luggage capacity, third row up",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex90-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "6.8 s",
+            "basis": "0–100 km/h",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex90-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "245 kW",
+            "basis": "Combined maximum motor output",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex90-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Driven wheels",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex90-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "5,037 mm",
+            "basis": "Vehicle length",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex90-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,964 mm",
+            "basis": "Body width excluding mirrors; separate folded/extended dimensions published",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex90-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,744 mm",
+            "basis": "Height at curb weight with one person",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex90-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,500 kg",
+            "basis": "Explicit braked towing capacity, exact AU MY27 secondary",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/volvo/ex90/2027-plus-suv-rwd-electric-jskf58af20260701"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km",
+            "basis": "Australian new passenger vehicle warranty; ordinary private-use baseline",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/l/warranty/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; below 70% capacity threshold",
+            "basis": "Australian BEV high-voltage lithium-ion battery warranty; original specified capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/l/warranty/",
+              "https://www.volvocars.com/au/cars/electrification/battery/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "promotional_driveaway_aud",
+          "label": "Illustrative driveaway estimate",
+          "due": true,
+          "current": {
+            "value": "121,125 AUD",
+            "basis": "Manufacturer estimated driveaway for Sydney NSW2000 reference postcode",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/build/ex90-electric/"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "volvo_ex90_my27_ultra_twin_motor_performance__20261010",
+      "vehicle": "Volvo EX90 Ultra Twin Motor Performance",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.volvocars.com/au/build/ex90-electric/?ccid=bH4wLmxldmVsLTQtYmV2X2xlfjAu",
+            "https://www.volvocars.com/au/cars/ex90-electric/",
+            "https://www.volvocars.com/au/l/offers/october-showcase-event/"
+          ]
+        },
+        "outcome": "pending"
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "124,991 AUD",
+            "basis": "Maker selected-configuration MLP including GST, excluding separately itemised LCT/on-road costs",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/build/ex90-electric/?ccid=bH4wLmxldmVsLTQtYmV2X2xlfjAu"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "521 km",
+            "basis": "Up to WLTP combined",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex90-electric/specifications/",
+              "https://www.volvocars.com/au/cars/ex90-electric/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "106 kWh",
+            "basis": "Battery energy (nominal), as labelled; not relabelled usable or gross",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex90-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "350 kW",
+            "basis": "Vehicle DC capability at 800 V, exact-MY27 overseas sibling",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://azure-eu-assets.contentstack.com/v3/assets/blt84e01a6904dbd2e8/bltd7bbace678231e4b/6acc9781496c1b18161a2a7c/MY27_EX90_Oktober-26_27-priser_DEL-1.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "24 min",
+            "basis": "10–80% at 300 kW DC charging station",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex90-electric/specifications/",
+              "https://www.volvocars.com/au/cars/ex90-electric/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "11 kW onboard AC charger",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex90-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "7",
+            "basis": "Seating capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex90-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "324 L",
+            "basis": "Open luggage capacity, third row up",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex90-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "4.2 s",
+            "basis": "0–100 km/h",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex90-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "500 kW",
+            "basis": "Combined maximum motor output",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex90-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "AWD",
+            "basis": "Driven wheels",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex90-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "5,037 mm",
+            "basis": "Vehicle length",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex90-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,964 mm",
+            "basis": "Body width excluding mirrors; separate folded/extended dimensions published",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex90-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,744 mm",
+            "basis": "Height at curb weight with one person",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/ex90-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "2,200 kg",
+            "basis": "Explicit braked towing capacity, exact AU MY27 secondary",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/volvo/ex90/2027-ultra-suv-4x4-electric-jsgo5w8m20260701"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km",
+            "basis": "Australian new passenger vehicle warranty; ordinary private-use baseline",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/l/warranty/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; below 70% capacity threshold",
+            "basis": "Australian BEV high-voltage lithium-ion battery warranty; original specified capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/l/warranty/",
+              "https://www.volvocars.com/au/cars/electrification/battery/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "promotional_driveaway_aud",
+          "label": "Illustrative driveaway estimate",
+          "due": true,
+          "current": {
+            "value": "150,525 AUD",
+            "basis": "Manufacturer estimated driveaway for Sydney NSW2000 reference postcode",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/build/ex90-electric/?ccid=bH4wLmxldmVsLTQtYmV2X2xlfjAu"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "volvo_es90_my27_plus_single_motor_extended_range__20261010",
+      "vehicle": "Volvo ES90 Plus Single Motor Extended Range",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.volvocars.com/au/build/es90-electric/",
+            "https://www.volvocars.com/au/cars/es90-electric/",
+            "https://www.volvocars.com/au/l/offers/october-showcase-event/"
+          ]
+        },
+        "outcome": "pending"
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "88,880 AUD",
+            "basis": "Manufacturer's Recommended List Price including GST, before on-road costs",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/build/es90-electric/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "554 km",
+            "basis": "Up to WLTP combined",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/es90-electric/specifications/",
+              "https://www.volvocars.com/au/cars/es90-electric/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "92 kWh",
+            "basis": "Battery energy (nominal), as labelled; not relabelled usable or gross",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/es90-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "310 kW",
+            "basis": "Vehicle DC capability at 800 V, exact-MY27 overseas sibling",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://azure-eu-assets.contentstack.com/v3/assets/blt84e01a6904dbd2e8/bltaaaa646304b66314/6ac4ed5d496c1b62dc19d17a/MY27_ES90_Oktober-26_27-priser_KUN_Ultra_DEL-1.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "22 min",
+            "basis": "10–80% at 300 kW DC charging station",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/es90-electric/specifications/",
+              "https://www.volvocars.com/au/cars/es90-electric/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "11 kW onboard AC charger",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/es90-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/es90-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "442 L",
+            "basis": "Open luggage capacity, second row up",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/es90-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "6.6 s",
+            "basis": "0–100 km/h",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/es90-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "245 kW",
+            "basis": "Combined maximum motor output",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/es90-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Driven wheels",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/es90-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "5,000 mm",
+            "basis": "Vehicle length",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/es90-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,942 mm",
+            "basis": "Body width excluding mirrors; separate folded/extended dimensions published",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/es90-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,549 mm",
+            "basis": "Height at curb weight with one person",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/es90-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,600 kg",
+            "basis": "Explicit braked towing capacity, matched overseas MY27 sibling",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://asset.moto.it/pricelist/auto/f264770a8981f3c719abf7b5d50c77c3/listino-apr-26.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km",
+            "basis": "Australian new passenger vehicle warranty; ordinary private-use baseline",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/l/warranty/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; below 70% capacity threshold",
+            "basis": "Australian BEV high-voltage lithium-ion battery warranty; original specified capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/l/warranty/",
+              "https://www.volvocars.com/au/cars/electrification/battery/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "promotional_driveaway_aud",
+          "label": "Illustrative driveaway estimate",
+          "due": true,
+          "current": {
+            "value": "96,282 AUD",
+            "basis": "Manufacturer estimated driveaway for Sydney NSW2000 reference postcode",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/build/es90-electric/"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "volvo_es90_my27_ultra_single_motor_extended_range__20261010",
+      "vehicle": "Volvo ES90 Ultra Single Motor Extended Range",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.volvocars.com/au/build/es90-electric/?ccid=bH4wLmxldmVsLTQtYmV2X2xlfjAu",
+            "https://www.volvocars.com/au/cars/es90-electric/",
+            "https://www.volvocars.com/au/l/offers/october-showcase-event/"
+          ]
+        },
+        "outcome": "pending"
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "104,222 AUD",
+            "basis": "Maker selected-configuration MLP including GST, excluding separately itemised LCT/on-road costs",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/build/es90-electric/?ccid=bH4wLmxldmVsLTQtYmV2X2xlfjAu"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "554 km",
+            "basis": "Up to WLTP combined",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/es90-electric/specifications/",
+              "https://www.volvocars.com/au/cars/es90-electric/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "92 kWh",
+            "basis": "Battery energy (nominal), as labelled; not relabelled usable or gross",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/es90-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "310 kW",
+            "basis": "Vehicle DC capability at 800 V, exact-MY27 overseas sibling",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://azure-eu-assets.contentstack.com/v3/assets/blt84e01a6904dbd2e8/bltaaaa646304b66314/6ac4ed5d496c1b62dc19d17a/MY27_ES90_Oktober-26_27-priser_KUN_Ultra_DEL-1.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "22 min",
+            "basis": "10–80% at 300 kW DC charging station",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/es90-electric/specifications/",
+              "https://www.volvocars.com/au/cars/es90-electric/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "11 kW onboard AC charger",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/es90-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/es90-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "442 L",
+            "basis": "Open luggage capacity, second row up",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/es90-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "6.6 s",
+            "basis": "0–100 km/h",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/es90-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "245 kW",
+            "basis": "Combined maximum motor output",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/es90-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Driven wheels",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/es90-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "5,000 mm",
+            "basis": "Vehicle length",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/es90-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,942 mm",
+            "basis": "Body width excluding mirrors; separate folded/extended dimensions published",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/es90-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,549 mm",
+            "basis": "Height at curb weight with one person",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/cars/es90-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,600 kg",
+            "basis": "Explicit braked towing capacity, matched overseas MY27 sibling",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://asset.moto.it/pricelist/auto/f264770a8981f3c719abf7b5d50c77c3/listino-apr-26.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km",
+            "basis": "Australian new passenger vehicle warranty; ordinary private-use baseline",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/l/warranty/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; below 70% capacity threshold",
+            "basis": "Australian BEV high-voltage lithium-ion battery warranty; original specified capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/l/warranty/",
+              "https://www.volvocars.com/au/cars/electrification/battery/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "promotional_driveaway_aud",
+          "label": "Illustrative driveaway estimate",
+          "due": true,
+          "current": {
+            "value": "120,546 AUD",
+            "basis": "Manufacturer estimated driveaway for Sydney NSW2000 reference postcode",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/build/es90-electric/?ccid=bH4wLmxldmVsLTQtYmV2X2xlfjAu"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "volvo_ex30_my26_plus_single_motor_extended_range__20261014",
+      "vehicle": "Volvo EX30 Plus Single Motor Extended Range",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "outgoing",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "new_stock_listed",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://volvocarsberwick.com.au/13702716-1900220-volvo-ex30-2026/"
+          ]
+        },
+        "outcome": "pending"
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "55,990 AUD",
+            "basis": "Maker's national driveaway from",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/l/offers/ex30-swedish-dream-driveaway/"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "MY26 EX30 'national driveaway from' comes from a Volvo offers page that was not opened; the build page banner states $55,990 but does not say which model year it covers. Not rechecked."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "480 km",
+            "basis": "WLTP combined secondary",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex30/2026/single-motor-extended-range-plus/",
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/",
+              "https://www.volvocars.com/au/cars/ex30-electric/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "69 kWh",
+            "basis": "Manufacturer nominal capacity, not usable",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex30/2026/single-motor-extended-range-plus/",
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "153 kW",
+            "basis": "Maximum vehicle DC acceptance",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex30/2026/single-motor-extended-range-plus/",
+              "https://www.volvocars.com/au/news/electrification/2023-june-small-package/",
+              "https://www.carexpert.com.au/volvo/ex30/2027-ultra-suv-rwd-electric-jsfokffa20260605"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "28 min",
+            "basis": "10–80% SOC; 150 kW DC station",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex30/2026/single-motor-extended-range-plus/",
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maximum onboard AC",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex30/2026/single-motor-extended-range-plus/",
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating positions",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex30/2026/single-motor-extended-range-plus/",
+              "https://volvocarsberwick.com.au/13702716-1900220-volvo-ex30-2026/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "318 L",
+            "basis": "Rear seats upright, maker open volume; distinct max volume",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex30/2026/single-motor-extended-range-plus/",
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "5.3 s",
+            "basis": "0–100 km/h",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex30/2026/single-motor-extended-range-plus/",
+              "https://volvocarsberwick.com.au/13702716-1900220-volvo-ex30-2026/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "200 kW",
+            "basis": "Maximum system motor power",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex30/2026/single-motor-extended-range-plus/",
+              "https://volvocarsberwick.com.au/13702716-1900220-volvo-ex30-2026/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Drivetrain",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex30/2026/single-motor-extended-range-plus/",
+              "https://volvocarsberwick.com.au/13702716-1900220-volvo-ex30-2026/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,233 mm",
+            "basis": "Maker width excludes mirrors; height at kerb weight plus one person",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex30/2026/single-motor-extended-range-plus/",
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,838 mm",
+            "basis": "Maker width excludes mirrors; height at kerb weight plus one person",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex30/2026/single-motor-extended-range-plus/",
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,550 mm",
+            "basis": "Maker width excludes mirrors; height at kerb weight plus one person",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex30/2026/single-motor-extended-range-plus/",
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,600 kg",
+            "basis": "Braked trailer maximum",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex30/2026/single-motor-extended-range-plus/",
+              "https://volvocarsberwick.com.au/13702716-1900220-volvo-ex30-2026/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km",
+            "basis": "Australian new passenger vehicle warranty; ordinary private-use baseline",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/l/warranty/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; below 70% capacity threshold",
+            "basis": "Australian BEV high-voltage lithium-ion battery warranty; original specified capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/l/warranty/",
+              "https://www.volvocars.com/au/cars/electrification/battery/"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "volvo_ex40_my26_ultra_single_motor_extended_range__20261014",
+      "vehicle": "Volvo EX40 Ultra Single Motor Extended Range",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "outgoing",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "new_stock_listed",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://volvocarsperth.com.au/6095v-1743032-volvo-ex40-2025/"
+          ]
+        },
+        "outcome": "pending"
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "69,990 AUD",
+            "basis": "Reported base price inclGST/LCT beforeORC",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex40/2026/ultra-single-motor-extended-range/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "520 km",
+            "basis": "WLTP combined maker estimate",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex40/2026/ultra-single-motor-extended-range/",
+              "https://www.volvocars.com/au/cars/ex40-electric/specifications/",
+              "https://www.volvocars.com/au/cars/ex40-electric/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "82 kWh",
+            "basis": "Manufacturer nominal capacity, not usable",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex40/2026/ultra-single-motor-extended-range/",
+              "https://www.volvocars.com/au/cars/ex40-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "200 kW",
+            "basis": "Maximum vehicle DC acceptance",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex40/2026/ultra-single-motor-extended-range/",
+              "https://www.carexpert.com.au/volvo/ex40/2027-ultra-suv-rwd-electric-jsf5fogs20260701"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "28 min",
+            "basis": "10–80% SOC; 200 kW DC station",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex40/2026/ultra-single-motor-extended-range/",
+              "https://www.volvocars.com/au/cars/ex40-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maximum onboard AC",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex40/2026/ultra-single-motor-extended-range/",
+              "https://www.volvocars.com/au/support/car/ex40/article/0ed816eed33d98cac0a8cc377bc12bc7-83c0c849d91ad5fac0a8cc3751bbe62b-8664b2fa77a7e089c0a8296870d1a409/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating positions",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex40/2026/ultra-single-motor-extended-range/",
+              "https://volvocarsperth.com.au/6095v-1743032-volvo-ex40-2025/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "410 L",
+            "basis": "Rear seats upright, maker open volume; distinct max volume",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex40/2026/ultra-single-motor-extended-range/",
+              "https://www.volvocars.com/au/cars/ex40-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "7.3 s",
+            "basis": "0–100 km/h",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex40/2026/ultra-single-motor-extended-range/",
+              "https://volvocarsperth.com.au/6095v-1743032-volvo-ex40-2025/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "185 kW",
+            "basis": "Maximum system motor power",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex40/2026/ultra-single-motor-extended-range/",
+              "https://volvocarsperth.com.au/6095v-1743032-volvo-ex40-2025/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Drivetrain",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex40/2026/ultra-single-motor-extended-range/",
+              "https://volvocarsperth.com.au/6095v-1743032-volvo-ex40-2025/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,440 mm",
+            "basis": "Maker width excludes mirrors; height at kerb weight plus one person",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex40/2026/ultra-single-motor-extended-range/",
+              "https://www.volvocars.com/au/cars/ex40-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,873 mm",
+            "basis": "Maker width excludes mirrors; height at kerb weight plus one person",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex40/2026/ultra-single-motor-extended-range/",
+              "https://www.volvocars.com/au/cars/ex40-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,647 mm",
+            "basis": "Maker width excludes mirrors; height at kerb weight plus one person",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex40/2026/ultra-single-motor-extended-range/",
+              "https://www.volvocars.com/au/cars/ex40-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,500 kg",
+            "basis": "Braked trailer maximum",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex40/2026/ultra-single-motor-extended-range/",
+              "https://volvocarsperth.com.au/6095v-1743032-volvo-ex40-2025/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km",
+            "basis": "Australian new passenger vehicle warranty; ordinary private-use baseline",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/l/warranty/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; below 70% capacity threshold",
+            "basis": "Australian BEV high-voltage lithium-ion battery warranty; original specified capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/l/warranty/",
+              "https://www.volvocars.com/au/cars/electrification/battery/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "promotional_driveaway_aud",
+          "label": "Advertised dealer driveaway",
+          "due": true,
+          "current": {
+            "value": "87,157 AUD",
+            "basis": "Dealer advertised driveaway WA, stock6095V",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://volvocarsperth.com.au/6095v-1743032-volvo-ex40-2025/"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "volvo_ex40_my26_ultra_twin_motor_performance__20261014",
+      "vehicle": "Volvo EX40 Ultra Twin Motor Performance",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "outgoing",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "new_stock_listed",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://volvocarsdoncaster.com.au/13294744-1852787-volvo-ex40-2026/"
+          ]
+        },
+        "outcome": "pending"
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "74,990 AUD",
+            "basis": "Reported base price inclGST/LCT beforeORC",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex40/2026/ultra-twin-motor-performance/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "485 km",
+            "basis": "WLTP combined maker estimate",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex40/2026/ultra-twin-motor-performance/",
+              "https://www.volvocars.com/au/cars/ex40-electric/specifications/",
+              "https://www.volvocars.com/au/cars/ex40-electric/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "82 kWh",
+            "basis": "Manufacturer nominal capacity, not usable",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex40/2026/ultra-twin-motor-performance/",
+              "https://www.volvocars.com/au/cars/ex40-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "200 kW",
+            "basis": "Maximum vehicle DC acceptance",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex40/2026/ultra-twin-motor-performance/",
+              "https://www.carexpert.com.au/volvo/ex40/2027-ultra-suv-4x4-electric-jsfmwwag20260701"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "28 min",
+            "basis": "10–80% SOC; 200 kW DC station",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex40/2026/ultra-twin-motor-performance/",
+              "https://www.volvocars.com/au/cars/ex40-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maximum onboard AC",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex40/2026/ultra-twin-motor-performance/",
+              "https://www.volvocars.com/au/support/car/ex40/article/0ed816eed33d98cac0a8cc377bc12bc7-83c0c849d91ad5fac0a8cc3751bbe62b-8664b2fa77a7e089c0a8296870d1a409/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating positions",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex40/2026/ultra-twin-motor-performance/",
+              "https://volvocarsdoncaster.com.au/13294744-1852787-volvo-ex40-2026/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "410 L",
+            "basis": "Rear seats upright, maker open volume; distinct max volume",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex40/2026/ultra-twin-motor-performance/",
+              "https://www.volvocars.com/au/cars/ex40-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "4.8 s",
+            "basis": "0–100 km/h",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex40/2026/ultra-twin-motor-performance/",
+              "https://volvocarsdoncaster.com.au/13294744-1852787-volvo-ex40-2026/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "300 kW",
+            "basis": "Maximum system motor power",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex40/2026/ultra-twin-motor-performance/",
+              "https://volvocarsdoncaster.com.au/13294744-1852787-volvo-ex40-2026/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "AWD",
+            "basis": "Drivetrain",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex40/2026/ultra-twin-motor-performance/",
+              "https://volvocarsdoncaster.com.au/13294744-1852787-volvo-ex40-2026/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,440 mm",
+            "basis": "Maker width excludes mirrors; height at kerb weight plus one person",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex40/2026/ultra-twin-motor-performance/",
+              "https://www.volvocars.com/au/cars/ex40-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,873 mm",
+            "basis": "Maker width excludes mirrors; height at kerb weight plus one person",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex40/2026/ultra-twin-motor-performance/",
+              "https://www.volvocars.com/au/cars/ex40-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,647 mm",
+            "basis": "Maker width excludes mirrors; height at kerb weight plus one person",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex40/2026/ultra-twin-motor-performance/",
+              "https://www.volvocars.com/au/cars/ex40-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,800 kg",
+            "basis": "Braked trailer maximum",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex40/2026/ultra-twin-motor-performance/",
+              "https://volvocarsdoncaster.com.au/13294744-1852787-volvo-ex40-2026/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km",
+            "basis": "Australian new passenger vehicle warranty; ordinary private-use baseline",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/l/warranty/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; below 70% capacity threshold",
+            "basis": "Australian BEV high-voltage lithium-ion battery warranty; original specified capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/l/warranty/",
+              "https://www.volvocars.com/au/cars/electrification/battery/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "promotional_driveaway_aud",
+          "label": "Advertised dealer driveaway",
+          "due": true,
+          "current": {
+            "value": "82,231 AUD",
+            "basis": "Dealer advertised driveaway VIC, stock13294744",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://volvocarsdoncaster.com.au/13294744-1852787-volvo-ex40-2026/"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "volvo_ex30_my26_single_motor_extended_range_ultra__20261014",
+      "vehicle": "Volvo EX30 Single Motor Extended Range Ultra",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "outgoing",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "new_stock_listed",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://volvocarsdoncaster.com.au/12974600-1852405-volvo-ex30-2026/"
+          ]
+        },
+        "outcome": "pending"
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "54,990 AUD",
+            "basis": "Reported MY26 before on-road costs",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex30/2026/single-motor-extended-range-ultra/",
+              "https://www.carexpert.com.au/car-news/volvo-slashes-pricing-of-ex30-and-ex40-electric-suvs"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "MY26 EX30 'national driveaway from' comes from a Volvo offers page that was not opened; the build page banner states $55,990 but does not say which model year it covers. Not rechecked."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "480 km",
+            "basis": "WLTP combined secondary",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex30/2026/single-motor-extended-range-ultra/",
+              "https://www.carexpert.com.au/volvo/ex30/2026-ultra-suv-rwd-electric-jsfokffa20250905"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "69 kWh",
+            "basis": "Manufacturer nominal capacity, not usable",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://volvocarsdoncaster.com.au/12974600-1852405-volvo-ex30-2026/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "153 kW",
+            "basis": "Maximum vehicle DC acceptance",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/volvo/ex30/2026-ultra-suv-rwd-electric-jsfokffa20250905"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "28 min",
+            "basis": "10–80% SOC; 150 kW DC station",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex30/2026/single-motor-extended-range-ultra/",
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maximum onboard AC",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/volvo/ex30/2026-ultra-suv-rwd-electric-jsfokffa20250905"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating positions",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://volvocarsdoncaster.com.au/12974600-1852405-volvo-ex30-2026/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "318 L",
+            "basis": "Rear seats upright to lower window, ISO as secondary explicitly labels",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/volvo/ex30/2026-ultra-suv-rwd-electric-jsfokffa20250905"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "5.3 s",
+            "basis": "0–100 km/h",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://volvocarsdoncaster.com.au/12974600-1852405-volvo-ex30-2026/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "200 kW",
+            "basis": "Maximum system motor power",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://volvocarsdoncaster.com.au/12974600-1852405-volvo-ex30-2026/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Drivetrain",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://volvocarsdoncaster.com.au/12974600-1852405-volvo-ex30-2026/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,233 mm",
+            "basis": "Maker width excludes mirrors; height at kerb weight plus one person",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/volvo/ex30/2026-ultra-suv-rwd-electric-jsfokffa20250905"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,838 mm",
+            "basis": "Maker width excludes mirrors; height at kerb weight plus one person",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/volvo/ex30/2026-ultra-suv-rwd-electric-jsfokffa20250905"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,550 mm",
+            "basis": "Maker width excludes mirrors; height at kerb weight plus one person",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/volvo/ex30/2026-ultra-suv-rwd-electric-jsfokffa20250905"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,600 kg",
+            "basis": "Braked trailer maximum",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://volvocarsdoncaster.com.au/12974600-1852405-volvo-ex30-2026/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km",
+            "basis": "Australian new passenger vehicle warranty; ordinary private-use baseline",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/l/warranty/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; below 70% capacity threshold",
+            "basis": "Australian BEV high-voltage lithium-ion battery warranty; original specified capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/l/warranty/",
+              "https://www.volvocars.com/au/cars/electrification/battery/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "promotional_driveaway_aud",
+          "label": "Advertised dealer driveaway",
+          "due": true,
+          "current": {
+            "value": "61,391 AUD",
+            "basis": "Dealer driveawayVIC exactstock",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://volvocarsdoncaster.com.au/12974600-1852405-volvo-ex30-2026/"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "volvo_ex30_my26_cross_country_ultra_twin_motor_performance__20261014",
+      "vehicle": "Volvo EX30 Cross Country Ultra Twin Motor Performance",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "outgoing",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "new_stock_listed",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://volvocarsspringwood.com.au/new-cars/?fuels=Electric",
+            "https://www.carsales.com.au/cars/details/2025-volvo-ex30-cross-country-auto-awd-my26/OAG-AD-25759439/"
+          ]
+        },
+        "outcome": "pending"
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "62,990 AUD",
+            "basis": "Reported MY26 before on-road costs",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex30-cross-country/2026/no-badge/",
+              "https://www.carexpert.com.au/car-news/volvo-slashes-pricing-of-ex30-and-ex40-electric-suvs"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "MY26 EX30 'national driveaway from' comes from a Volvo offers page that was not opened; the build page banner states $55,990 but does not say which model year it covers. Not rechecked."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "417 km",
+            "basis": "WLTP combined maker estimate",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex30-cross-country/2026/no-badge/",
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/",
+              "https://www.volvocars.com/au/cars/ex30-electric/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "69 kWh",
+            "basis": "Manufacturer nominal capacity, not usable",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex30-cross-country/2026/no-badge/",
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "153 kW",
+            "basis": "Maximum vehicle DC acceptance",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex30-cross-country/2026/no-badge/",
+              "https://www.volvocars.com/au/news/electrification/2023-june-small-package/",
+              "https://www.carexpert.com.au/volvo/ex30/2027-ultra-suv-rwd-electric-jsfokffa20260605",
+              "https://www.carsales.com.au/research/volvo/ex30-cross-country/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "28 min",
+            "basis": "10–80% SOC; 150 kW DC station",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex30-cross-country/2026/no-badge/",
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maximum onboard AC",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex30-cross-country/2026/no-badge/",
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/",
+              "https://www.carsales.com.au/research/volvo/ex30-cross-country/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating positions",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex30-cross-country/2026/no-badge/",
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "318 L",
+            "basis": "Rear seats upright, minimum; exact protocol not stated",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex30-cross-country/2026/no-badge/",
+              "https://www.carsales.com.au/research/volvo/ex30-cross-country/2026/p8/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "3.7 s",
+            "basis": "0–100 km/h",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex30-cross-country/2026/no-badge/",
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "315 kW",
+            "basis": "Maximum system motor power",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex30-cross-country/2026/no-badge/",
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "AWD",
+            "basis": "Drivetrain",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex30-cross-country/2026/no-badge/",
+              "https://www.volvocars.com/au/cars/ex30-electric/specifications/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,233 mm",
+            "basis": "Maker width excludes mirrors; height at kerb weight plus one person",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex30-cross-country/2026/no-badge/",
+              "https://www.volvocars.com/au/support/car/ex30-cross-country/article/0ed816eed33d98cac0a8cc377bc12bc7-e6a7973b2bf222b2c0a8b09757c97ec8-8664b2fa77a7e089c0a8296870d1a409/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,850 mm",
+            "basis": "Maker width excludes mirrors; height at kerb weight plus one person",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex30-cross-country/2026/no-badge/",
+              "https://www.volvocars.com/au/support/car/ex30-cross-country/article/0ed816eed33d98cac0a8cc377bc12bc7-e6a7973b2bf222b2c0a8b09757c97ec8-8664b2fa77a7e089c0a8296870d1a409/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,567 mm",
+            "basis": "Maker width excludes mirrors; height at kerb weight plus one person",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex30-cross-country/2026/no-badge/",
+              "https://www.volvocars.com/au/support/car/ex30-cross-country/article/0ed816eed33d98cac0a8cc377bc12bc7-e6a7973b2bf222b2c0a8b09757c97ec8-8664b2fa77a7e089c0a8296870d1a409/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,600 kg",
+            "basis": "Braked trailer maximum",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex30-cross-country/2026/no-badge/",
+              "https://www.volvocars.com/au/support/car/ex30-cross-country/article/0ed816eed33d98cac0a8cc377bc12bc7-70bede2dc073ca71c0a8b0975b1e6fa3-8664b2fa77a7e089c0a8296870d1a409/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km",
+            "basis": "Australian new passenger vehicle warranty; ordinary private-use baseline",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/l/warranty/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; below 70% capacity threshold",
+            "basis": "Australian BEV high-voltage lithium-ion battery warranty; original specified capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/l/warranty/",
+              "https://www.volvocars.com/au/cars/electrification/battery/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "promotional_driveaway_aud",
+          "label": "Advertised dealer driveaway",
+          "due": true,
+          "current": {
+            "value": "67,490 AUD",
+            "basis": "Dealer driveawayQLD exactstockHL2495",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://volvocarsspringwood.com.au/new-cars/?fuels=Electric"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "volvo_ex90_my26_plus_twin_motor__20261014",
+      "vehicle": "Volvo EX90 Plus Twin Motor",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "outgoing",
+          "orderStatus": "unverified",
+          "stockStatus": "new_stock_listed",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://volvocarscastlehill.com.au/v060279-1832821-volvo-ex90-2026/"
+          ]
+        },
+        "outcome": "pending"
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "124,990 AUD",
+            "basis": "Australian publication reported price before on-road costs",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-news/2027-volvo-ex90-ev-base-price-slashed-by-dollar18000"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "521 km",
+            "basis": "WLTP combined",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex90/2026/plus-twin-motor/b5ec61ce-a29e-491f-b568-9f13c70b69e8/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "106 kWh",
+            "basis": "Published battery capacity; nominal from matched maker technical architecture",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex90/2026/plus-twin-motor/b5ec61ce-a29e-491f-b568-9f13c70b69e8/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "350 kW",
+            "basis": "Vehicle DC peak, 800 V matched MY26 overseas sibling",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/de/media/press-releases/D0BCB7A458E25271/",
+              "https://www.carexpert.com.au/car-news/2027-volvo-ex90-ev-base-price-slashed-by-dollar18000"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "22 min",
+            "basis": "10–80% at a compatible 350 kW high-voltage DC station, battery approximately35°C",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/support/car/ex90/25w46/article/47d2c97fd33effd3c0a8cc3718c999b7-a27aa276ce5ec813c0a8b04a2b2eb5e5-8664b2fa77a7e089c0a8296870d1a409/47d2c97fd33effd3c0a8cc3718c999b7-1b7fb6d0ce5f8953c0a8b04a77d5ba32-8664b2fa77a7e089c0a8296870d1a409/0ed816eed33d98cac0a8cc377bc12bc7-83c0c849d91ad5fac0a8cc3751bbe62b-8664b2fa77a7e089c0a8296870d1a409/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maximum AC onboard charging",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/support/car/ex90/25w46/article/47d2c97fd33effd3c0a8cc3718c999b7-a27aa276ce5ec813c0a8b04a2b2eb5e5-8664b2fa77a7e089c0a8296870d1a409/47d2c97fd33effd3c0a8cc3718c999b7-1b7fb6d0ce5f8953c0a8b04a77d5ba32-8664b2fa77a7e089c0a8296870d1a409/0ed816eed33d98cac0a8cc377bc12bc7-83c0c849d91ad5fac0a8cc3751bbe62b-8664b2fa77a7e089c0a8296870d1a409/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "7",
+            "basis": "Seating capacity",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex90/2026/plus-twin-motor/b5ec61ce-a29e-491f-b568-9f13c70b69e8/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "384 L",
+            "basis": "Minimum rear luggage capacity in AU exact-version database; standard not named",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex90/2026/plus-twin-motor/b5ec61ce-a29e-491f-b568-9f13c70b69e8/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "5.5 s",
+            "basis": "0–100 km/h",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-news/2027-volvo-ex90-ev-base-price-slashed-by-dollar18000"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "330 kW",
+            "basis": "Combined maximum motor output",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex90/2026/plus-twin-motor/b5ec61ce-a29e-491f-b568-9f13c70b69e8/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "AWD",
+            "basis": "Driven wheels",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex90/2026/plus-twin-motor/b5ec61ce-a29e-491f-b568-9f13c70b69e8/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "5,037 mm",
+            "basis": "Vehicle length",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex90/2026/plus-twin-motor/b5ec61ce-a29e-491f-b568-9f13c70b69e8/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,964 mm",
+            "basis": "Body width excluding mirrors",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex90/2026/plus-twin-motor/b5ec61ce-a29e-491f-b568-9f13c70b69e8/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,744 mm",
+            "basis": "Published MY26 height",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex90/2026/plus-twin-motor/b5ec61ce-a29e-491f-b568-9f13c70b69e8/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "2,200 kg",
+            "basis": "Explicit braked towing capacity",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volvo/ex90/2026/plus-twin-motor/b5ec61ce-a29e-491f-b568-9f13c70b69e8/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km",
+            "basis": "Australian new passenger vehicle warranty; ordinary private-use baseline",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/l/warranty/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; below 70% capacity threshold",
+            "basis": "Australian BEV high-voltage lithium-ion battery warranty; original specified capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/l/warranty/",
+              "https://www.volvocars.com/au/cars/electrification/battery/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "promotional_driveaway_aud",
+          "label": "Advertised dealer driveaway",
+          "due": true,
+          "current": {
+            "value": "133,990 AUD",
+            "basis": "Named dealer advertised driveaway, Volvo Cars Castle Hill, NSW",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://volvocarscastlehill.com.au/v060279-1832821-volvo-ex90-2026/"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "volvo_ex90_my26_ultra_twin_motor_performance__20261014",
+      "vehicle": "Volvo EX90 Ultra Twin Motor Performance",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "outgoing",
+          "orderStatus": "unverified",
+          "stockStatus": "new_stock_listed",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.carsales.com.au/cars/details/2026-volvo-ex90-ultra-twin-motor-performance-auto-awd-my26/OAG-AD-26082007/"
+          ]
+        },
+        "outcome": "pending"
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "134,990 AUD",
+            "basis": "Australian publication reported price before on-road costs",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-news/2027-volvo-ex90-ev-base-price-slashed-by-dollar18000"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "521 km",
+            "basis": "WLTP combined",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/cars/details/2026-volvo-ex90-ultra-twin-motor-performance-auto-awd-my26/OAG-AD-26082007/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "106 kWh",
+            "basis": "Published battery capacity; nominal from matched maker technical architecture",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/cars/details/2026-volvo-ex90-ultra-twin-motor-performance-auto-awd-my26/OAG-AD-26082007/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "350 kW",
+            "basis": "Vehicle DC peak, 800 V matched MY26 overseas sibling",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/de/media/press-releases/D0BCB7A458E25271/",
+              "https://www.carexpert.com.au/car-news/2027-volvo-ex90-ev-base-price-slashed-by-dollar18000"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "22 min",
+            "basis": "10–80% at a compatible 350 kW high-voltage DC station, battery approximately35°C",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/support/car/ex90/25w46/article/47d2c97fd33effd3c0a8cc3718c999b7-a27aa276ce5ec813c0a8b04a2b2eb5e5-8664b2fa77a7e089c0a8296870d1a409/47d2c97fd33effd3c0a8cc3718c999b7-1b7fb6d0ce5f8953c0a8b04a77d5ba32-8664b2fa77a7e089c0a8296870d1a409/0ed816eed33d98cac0a8cc377bc12bc7-83c0c849d91ad5fac0a8cc3751bbe62b-8664b2fa77a7e089c0a8296870d1a409/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maximum AC onboard charging",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/support/car/ex90/25w46/article/47d2c97fd33effd3c0a8cc3718c999b7-a27aa276ce5ec813c0a8b04a2b2eb5e5-8664b2fa77a7e089c0a8296870d1a409/47d2c97fd33effd3c0a8cc3718c999b7-1b7fb6d0ce5f8953c0a8b04a77d5ba32-8664b2fa77a7e089c0a8296870d1a409/0ed816eed33d98cac0a8cc377bc12bc7-83c0c849d91ad5fac0a8cc3751bbe62b-8664b2fa77a7e089c0a8296870d1a409/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "7",
+            "basis": "Seating capacity",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/cars/details/2026-volvo-ex90-ultra-twin-motor-performance-auto-awd-my26/OAG-AD-26082007/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "384 L",
+            "basis": "Minimum rear luggage capacity in AU exact-version database; standard not named",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/cars/details/2026-volvo-ex90-ultra-twin-motor-performance-auto-awd-my26/OAG-AD-26082007/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "4.2 s",
+            "basis": "0–100 km/h",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/cars/details/2026-volvo-ex90-ultra-twin-motor-performance-auto-awd-my26/OAG-AD-26082007/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "500 kW",
+            "basis": "Combined maximum motor output",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/cars/details/2026-volvo-ex90-ultra-twin-motor-performance-auto-awd-my26/OAG-AD-26082007/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "AWD",
+            "basis": "Driven wheels",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/cars/details/2026-volvo-ex90-ultra-twin-motor-performance-auto-awd-my26/OAG-AD-26082007/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "5,037 mm",
+            "basis": "Vehicle length",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/cars/details/2026-volvo-ex90-ultra-twin-motor-performance-auto-awd-my26/OAG-AD-26082007/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,964 mm",
+            "basis": "Body width excluding mirrors",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/cars/details/2026-volvo-ex90-ultra-twin-motor-performance-auto-awd-my26/OAG-AD-26082007/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,744 mm",
+            "basis": "Published MY26 height",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/cars/details/2026-volvo-ex90-ultra-twin-motor-performance-auto-awd-my26/OAG-AD-26082007/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "2,200 kg",
+            "basis": "Explicit braked towing capacity",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/cars/details/2026-volvo-ex90-ultra-twin-motor-performance-auto-awd-my26/OAG-AD-26082007/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km",
+            "basis": "Australian new passenger vehicle warranty; ordinary private-use baseline",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/l/warranty/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; below 70% capacity threshold",
+            "basis": "Australian BEV high-voltage lithium-ion battery warranty; original specified capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/l/warranty/",
+              "https://www.volvocars.com/au/cars/electrification/battery/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "promotional_driveaway_aud",
+          "label": "Advertised dealer driveaway",
+          "due": true,
+          "current": {
+            "value": "147,990 AUD",
+            "basis": "Named dealer advertised driveaway, Cricks Highway, QLD",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/cars/details/2026-volvo-ex90-ultra-twin-motor-performance-auto-awd-my26/OAG-AD-26082007/"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "volvo_es90_my26_plus_single_motor__20261014",
+      "vehicle": "Volvo ES90 Plus Single Motor",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "outgoing",
+          "orderStatus": "unverified",
+          "stockStatus": "new_stock_listed",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.carsales.com.au/cars/details/2026-volvo-es90-plus-single-motor-auto-my26/OAG-AD-25853559/"
+          ]
+        },
+        "outcome": "pending"
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "88,880 AUD",
+            "basis": "Australian publication reported price before on-road costs",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-news/2026-volvo-es90-price-and-specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "554 km",
+            "basis": "WLTP combined",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-news/2026-volvo-es90-price-and-specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "92 kWh",
+            "basis": "Published battery capacity; nominal from matched maker technical architecture",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-news/2026-volvo-es90-price-and-specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "310 kW",
+            "basis": "Vehicle DC peak, 800 V matched MY26 overseas sibling",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://cdn.motor1.com/pdf-files/tech-spec-volvo-es90-my26.pdf",
+              "https://www.carexpert.com.au/car-news/2026-volvo-es90-price-and-specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "22 min",
+            "basis": "10–80% at a compatible 350 kW high-voltage DC station, battery approximately35°C",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/support/car/es90/25w36/article/47d2c97fd33effd3c0a8cc3718c999b7-a27aa276ce5ec813c0a8b04a2b2eb5e5-8664b2fa77a7e089c0a8296870d1a409/47d2c97fd33effd3c0a8cc3718c999b7-1b7fb6d0ce5f8953c0a8b04a77d5ba32-8664b2fa77a7e089c0a8296870d1a409/0ed816eed33d98cac0a8cc377bc12bc7-83c0c849d91ad5fac0a8cc3751bbe62b-8664b2fa77a7e089c0a8296870d1a409/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maximum AC onboard charging",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-news/2026-volvo-es90-price-and-specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating capacity",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/cars/details/2026-volvo-es90-plus-single-motor-auto-my26/OAG-AD-25853559/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "424 L",
+            "basis": "Minimum rear luggage capacity in AU exact-version database; standard not named",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/cars/details/2026-volvo-es90-plus-single-motor-auto-my26/OAG-AD-25853559/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "6.6 s",
+            "basis": "0–100 km/h",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-news/2026-volvo-es90-price-and-specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "245 kW",
+            "basis": "Combined maximum motor output",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-news/2026-volvo-es90-price-and-specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Driven wheels",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/cars/details/2026-volvo-es90-plus-single-motor-auto-my26/OAG-AD-25853559/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "5,000 mm",
+            "basis": "Vehicle length",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/cars/details/2026-volvo-es90-plus-single-motor-auto-my26/OAG-AD-25853559/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,942 mm",
+            "basis": "Body width excluding mirrors",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-news/2026-volvo-es90-price-and-specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,554 mm",
+            "basis": "Published MY26 Australian secondary height; matches overseas RWD coil at curb weight",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/cars/details/2026-volvo-es90-plus-single-motor-auto-my26/OAG-AD-25853559/",
+              "https://cdn.motor1.com/pdf-files/tech-spec-volvo-es90-my26.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,600 kg",
+            "basis": "Explicit braked towing capacity",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/cars/details/2026-volvo-es90-plus-single-motor-auto-my26/OAG-AD-25853559/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km",
+            "basis": "Australian new passenger vehicle warranty; ordinary private-use baseline",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/l/warranty/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; below 70% capacity threshold",
+            "basis": "Australian BEV high-voltage lithium-ion battery warranty; original specified capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/l/warranty/",
+              "https://www.volvocars.com/au/cars/electrification/battery/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "promotional_driveaway_aud",
+          "label": "Advertised dealer driveaway",
+          "due": true,
+          "current": {
+            "value": "88,890 AUD",
+            "basis": "Named dealer advertised driveaway, Castle Hill Autos, NSW",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/cars/details/2026-volvo-es90-plus-single-motor-auto-my26/OAG-AD-25853559/"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "volvo_es90_my26_ultra_single_motor__20261014",
+      "vehicle": "Volvo ES90 Ultra Single Motor",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "outgoing",
+          "orderStatus": "unverified",
+          "stockStatus": "new_stock_listed",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.carsales.com.au/cars/details/2026-volvo-es90-ultra-single-motor-auto-my26/OAG-AD-25626574/"
+          ]
+        },
+        "outcome": "pending"
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "107,990 AUD",
+            "basis": "Australian publication reported price before on-road costs",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-news/2026-volvo-es90-price-and-specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "554 km",
+            "basis": "WLTP combined",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-news/2026-volvo-es90-price-and-specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "92 kWh",
+            "basis": "Published battery capacity; nominal from matched maker technical architecture",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-news/2026-volvo-es90-price-and-specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "310 kW",
+            "basis": "Vehicle DC peak, 800 V matched MY26 overseas sibling",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://cdn.motor1.com/pdf-files/tech-spec-volvo-es90-my26.pdf",
+              "https://www.carexpert.com.au/car-news/2026-volvo-es90-price-and-specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "22 min",
+            "basis": "10–80% at a compatible 350 kW high-voltage DC station, battery approximately35°C",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/support/car/es90/25w36/article/47d2c97fd33effd3c0a8cc3718c999b7-a27aa276ce5ec813c0a8b04a2b2eb5e5-8664b2fa77a7e089c0a8296870d1a409/47d2c97fd33effd3c0a8cc3718c999b7-1b7fb6d0ce5f8953c0a8b04a77d5ba32-8664b2fa77a7e089c0a8296870d1a409/0ed816eed33d98cac0a8cc377bc12bc7-83c0c849d91ad5fac0a8cc3751bbe62b-8664b2fa77a7e089c0a8296870d1a409/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maximum AC onboard charging",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-news/2026-volvo-es90-price-and-specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating capacity",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/cars/details/2026-volvo-es90-ultra-single-motor-auto-my26/OAG-AD-25626574/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "424 L",
+            "basis": "Minimum rear luggage capacity in AU exact-version database; standard not named",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/cars/details/2026-volvo-es90-ultra-single-motor-auto-my26/OAG-AD-25626574/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "6.6 s",
+            "basis": "0–100 km/h",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-news/2026-volvo-es90-price-and-specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "245 kW",
+            "basis": "Combined maximum motor output",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-news/2026-volvo-es90-price-and-specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Driven wheels",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/cars/details/2026-volvo-es90-ultra-single-motor-auto-my26/OAG-AD-25626574/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "5,000 mm",
+            "basis": "Vehicle length",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/cars/details/2026-volvo-es90-ultra-single-motor-auto-my26/OAG-AD-25626574/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,942 mm",
+            "basis": "Body width excluding mirrors",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-news/2026-volvo-es90-price-and-specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,554 mm",
+            "basis": "1554mm Australian secondary listing; suspension/loading classification disputed",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/cars/details/2026-volvo-es90-ultra-single-motor-auto-my26/OAG-AD-25626574/",
+              "https://cdn.motor1.com/pdf-files/tech-spec-volvo-es90-my26.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,600 kg",
+            "basis": "Explicit braked towing capacity",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/cars/details/2026-volvo-es90-ultra-single-motor-auto-my26/OAG-AD-25626574/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km",
+            "basis": "Australian new passenger vehicle warranty; ordinary private-use baseline",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/l/warranty/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; below 70% capacity threshold",
+            "basis": "Australian BEV high-voltage lithium-ion battery warranty; original specified capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volvocars.com/au/l/warranty/",
+              "https://www.volvocars.com/au/cars/electrification/battery/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "promotional_driveaway_aud",
+          "label": "Advertised dealer driveaway",
+          "due": true,
+          "current": {
+            "value": "116,888 AUD",
+            "basis": "Named dealer advertised driveaway, Volvo Cars Parramatta, NSW",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/cars/new/volvo/es90/"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    }
+  ]
+}

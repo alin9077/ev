@@ -1,0 +1,499 @@
+{
+  "schemaVersion": 1,
+  "id": "refresh-bmw-2026-11-05",
+  "brand": "BMW",
+  "reviewedAt": "2026-11-05",
+  "reviewedBy": "Roadmark WS2 refresh (Claude Code worker), BMW",
+  "sources": [
+    {
+      "id": "refresh-bmw-2026-11-05-sport-collection",
+      "url": "https://www.bmw.com.au/en/offers-and-services/promotions/sport-collection.html",
+      "title": "The BMW Sport Collection (BMW Australia)",
+      "publisher": "BMW Australia",
+      "source_type": "manufacturer_au_offer",
+      "published_date": null,
+      "accessed_date": "2026-11-05",
+      "market": "AU",
+      "supports": "Opened 2026-11-05 with the Disclaimer section expanded. 'The BMW iX1 xDrive30 Sport Collection from $79,900**' drive away. Disclaimer: Manufacturer's Recommended Drive Away Price (MRDP) for a new BMW iX1 xDrive30 Sport Collection (Alpine White, no enhancement pack or extras) delivered by 31.03.27; MRDP includes GST, stamp duty and other taxes and duties, CTP, registration and manufacturer's recommended dealer delivery charges; ordered production available and stock may vary between dealers; participating dealers while stocks last or production slots are available; not combinable with other offers; excludes fleet, government and rental buyers."
+    },
+    {
+      "id": "m1-bmw-2026-10-14-sport-collection",
+      "url": "https://www.bmw.com.au/en/offers-and-services/promotions/sport-collection.html",
+      "title": "sport-collection",
+      "publisher": "BMW Australia",
+      "source_type": "manufacturer_au_specification",
+      "published_date": null,
+      "accessed_date": "2026-10-14",
+      "market": "AU",
+      "supports": "sport-collection",
+      "retrieval": "HTTP read, not browser screenshot",
+      "capture_locator": "compact/sport-collection.html",
+      "capture_sha256": "f3be1b0235a72ab3ee4a9d03ddf87aed83f5cac5911a37cba4e1f61d66088476"
+    }
+  ],
+  "models": [],
+  "variants": [],
+  "versionGuards": [
+    {
+      "variantId": "bmw_ix1_current__xdrive30_sport_collection__20261014",
+      "before": {
+        "id": "bmw_ix1_current__xdrive30_sport_collection__20261014",
+        "modelId": "bmw_ix1_current",
+        "brand": "BMW",
+        "model": "iX1",
+        "trim": "xDrive30 Sport Collection",
+        "year": null,
+        "generation": "U11; current Australian Sport Collection marketing configuration; exact model code unverified",
+        "vehicleClass": "passenger",
+        "drive": "AWD"
+      }
+    }
+  ],
+  "versionUpdates": [],
+  "facts": [
+    {
+      "variantId": "bmw_ix1_current__xdrive30_sport_collection__20261014",
+      "before": {
+        "key": "price_aud",
+        "label": "Price",
+        "value": 79900,
+        "unit": "AUD",
+        "basis": "Manufacturer recommended national drive-away promotional price",
+        "comparisonBasis": "Driveaway",
+        "status": "conditional",
+        "sourceIds": [
+          "m1-bmw-2026-10-14-sport-collection"
+        ],
+        "date": "2026-10-14",
+        "market": "AU",
+        "scope": "BMW iX1 xDrive30 Sport Collection",
+        "qualifications": [],
+        "issues": [],
+        "buyerGrade": "check",
+        "gradeReview": {
+          "reviewedAt": "2026-10-14",
+          "overlayId": "m1-bmw-2026-10-14",
+          "reason": "Current Australian maker claim has this specific configuration or measurement condition: New iX1 xDrive30 Sport Collection in Alpine White, no Enhancement package or extras, delivered by 31 March 2027; participating dealers; excludes fleet, government and rental; no rainchecks; availability varies",
+          "evidenceScope": "exact_au_version",
+          "sourceIds": [
+            "m1-bmw-2026-10-14-sport-collection"
+          ],
+          "sourceLabel": "BMW Australia"
+        },
+        "conditionExplanation": "New iX1 xDrive30 Sport Collection in Alpine White, no Enhancement package or extras, delivered by 31 March 2027; participating dealers; excludes fleet, government and rental; no rainchecks; availability varies",
+        "validUntil": "2027-03-31",
+        "priceEvidence": {
+          "rung": 2,
+          "basisTag": "Maker national driveaway offer",
+          "sourceKey": "price_aud",
+          "sourcePointer": "https://www.bmw.com.au/en/offers-and-services/promotions/sport-collection.html",
+          "originalBasis": "Manufacturer recommended national drive-away promotional price",
+          "rankingEligible": true
+        }
+      },
+      "after": {
+        "key": "price_aud",
+        "label": "Price",
+        "value": 79900,
+        "unit": "AUD",
+        "basis": "Manufacturer recommended national drive-away promotional price",
+        "comparisonBasis": "Driveaway",
+        "status": "conditional",
+        "sourceIds": [
+          "refresh-bmw-2026-11-05-sport-collection"
+        ],
+        "date": "2026-11-05",
+        "market": "AU",
+        "scope": "BMW iX1 xDrive30 Sport Collection",
+        "qualifications": [],
+        "issues": [],
+        "buyerGrade": "check",
+        "gradeReview": {
+          "reviewedAt": "2026-11-05",
+          "overlayId": "refresh-bmw-2026-11-05",
+          "reason": "Rechecked 2026-11-05 against the cited page: unchanged. BMW's offer page still states from $79,900 drive away (delivered by 31.03.27).",
+          "evidenceScope": "exact_au_version",
+          "sourceIds": [
+            "refresh-bmw-2026-11-05-sport-collection"
+          ],
+          "sourceLabel": "BMW Australia"
+        },
+        "conditionExplanation": "New iX1 xDrive30 Sport Collection in Alpine White, no Enhancement package or extras, delivered by 31 March 2027; participating dealers; excludes fleet, government and rental; no rainchecks; availability varies",
+        "validUntil": "2027-03-31",
+        "priceEvidence": {
+          "rung": 2,
+          "basisTag": "Maker national driveaway offer",
+          "sourceKey": "price_aud",
+          "sourcePointer": "https://www.bmw.com.au/en/offers-and-services/promotions/sport-collection.html",
+          "originalBasis": "Manufacturer recommended national drive-away promotional price",
+          "rankingEligible": true
+        }
+      }
+    },
+    {
+      "variantId": "bmw_ix1_current__xdrive30_sport_collection__20261014",
+      "before": {
+        "key": "driveaway_price_aud",
+        "label": "Driveaway price aud",
+        "value": 79900,
+        "unit": "",
+        "basis": "Manufacturer recommended national drive-away promotional price",
+        "comparisonBasis": "Driveaway",
+        "status": "conditional",
+        "sourceIds": [
+          "m1-bmw-2026-10-14-sport-collection"
+        ],
+        "date": "2026-10-14",
+        "market": "AU",
+        "scope": "BMW iX1 xDrive30 Sport Collection",
+        "qualifications": [],
+        "issues": [],
+        "buyerGrade": "check",
+        "gradeReview": {
+          "reviewedAt": "2026-10-14",
+          "overlayId": "m1-bmw-2026-10-14",
+          "reason": "Current Australian maker claim has this specific configuration or measurement condition: New iX1 xDrive30 Sport Collection in Alpine White, no Enhancement package or extras, delivered by 31 March 2027; participating dealers; excludes fleet, government and rental; no rainchecks; availability varies",
+          "evidenceScope": "exact_au_version",
+          "sourceIds": [
+            "m1-bmw-2026-10-14-sport-collection"
+          ],
+          "sourceLabel": "BMW Australia"
+        },
+        "conditionExplanation": "New iX1 xDrive30 Sport Collection in Alpine White, no Enhancement package or extras, delivered by 31 March 2027; participating dealers; excludes fleet, government and rental; no rainchecks; availability varies",
+        "validUntil": "2027-03-31"
+      },
+      "after": {
+        "key": "driveaway_price_aud",
+        "label": "Driveaway price aud",
+        "value": 79900,
+        "unit": "",
+        "basis": "Manufacturer recommended national drive-away promotional price",
+        "comparisonBasis": "Driveaway",
+        "status": "conditional",
+        "sourceIds": [
+          "refresh-bmw-2026-11-05-sport-collection"
+        ],
+        "date": "2026-11-05",
+        "market": "AU",
+        "scope": "BMW iX1 xDrive30 Sport Collection",
+        "qualifications": [],
+        "issues": [],
+        "buyerGrade": "check",
+        "gradeReview": {
+          "reviewedAt": "2026-11-05",
+          "overlayId": "refresh-bmw-2026-11-05",
+          "reason": "Rechecked 2026-11-05 against the cited page: unchanged. BMW's offer page still states from $79,900 drive away (delivered by 31.03.27).",
+          "evidenceScope": "exact_au_version",
+          "sourceIds": [
+            "refresh-bmw-2026-11-05-sport-collection"
+          ],
+          "sourceLabel": "BMW Australia"
+        },
+        "conditionExplanation": "New iX1 xDrive30 Sport Collection in Alpine White, no Enhancement package or extras, delivered by 31 March 2027; participating dealers; excludes fleet, government and rental; no rainchecks; availability varies",
+        "validUntil": "2027-03-31"
+      }
+    }
+  ],
+  "availability": [
+    {
+      "id": "refresh-bmw-2026-11-05-availability-bmw_ix1_current__xdrive30_sport_collection__20261014",
+      "variantId": "bmw_ix1_current__xdrive30_sport_collection__20261014",
+      "before": {
+        "availability": "current_or_order_listed",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "sourceIds": [
+            "m1-bmw-2026-10-14-sport-collection"
+          ],
+          "physicalStockVerified": false,
+          "factoryOrderAcceptanceVerified": false,
+          "qualifications": [
+            "Maker national promotional offer, with ordered production available, delivered by 31 March 2027",
+            "Physical unsold stock and factory-order acceptance have not been verified."
+          ]
+        }
+      },
+      "after": {
+        "availability": "current_or_order_listed",
+        "evidence": {
+          "checkedAt": "2026-11-05",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "sourceIds": [
+            "refresh-bmw-2026-11-05-sport-collection"
+          ],
+          "physicalStockVerified": false,
+          "factoryOrderAcceptanceVerified": false,
+          "qualifications": [
+            "Maker national promotional offer, with ordered production available, delivered by 31 March 2027",
+            "Physical unsold stock and factory-order acceptance have not been verified."
+          ]
+        }
+      },
+      "status": "approved",
+      "reviewedBy": "Roadmark WS2 refresh (Claude Code worker), BMW",
+      "reviewedAt": "2026-11-05",
+      "evidenceDate": "2026-11-05",
+      "reason": "Rechecked 2026-11-05: availability unchanged"
+    }
+  ],
+  "summaries": [
+    {
+      "variantId": "bmw_ix1_current__xdrive30_sport_collection__20261014",
+      "conditions": [
+        "New iX1 xDrive30 Sport Collection in Alpine White, no Enhancement package or extras, delivered by 31 March 2027; participating dealers; excludes fleet, government and rental; no rainchecks; availability varies"
+      ],
+      "strength": {
+        "label": "AWD at a national drive-away price",
+        "text": "Dual-motor AWD and heated front seats for an advertised A$79,900 drive-away.",
+        "dependencies": [
+          {
+            "key": "drive",
+            "expected": {
+              "key": "drive",
+              "label": "Drive type",
+              "value": "AWD",
+              "unit": "",
+              "basis": "Drivetrain",
+              "comparisonBasis": "Drivetrain",
+              "status": "standard",
+              "sourceIds": [
+                "m1-bmw-2026-10-14-sport-collection"
+              ],
+              "date": "2026-10-14",
+              "market": "AU",
+              "scope": "BMW iX1 xDrive30 Sport Collection",
+              "qualifications": [],
+              "issues": [],
+              "buyerGrade": "confirmed",
+              "gradeReview": {
+                "reviewedAt": "2026-10-14",
+                "overlayId": "m1-bmw-2026-10-14",
+                "reason": "Reviewed current Australian manufacturer material establishes this fact within its named version or explicit body scope.",
+                "evidenceScope": "exact_au_version",
+                "sourceIds": [
+                  "m1-bmw-2026-10-14-sport-collection"
+                ],
+                "sourceLabel": "BMW Australia"
+              }
+            }
+          },
+          {
+            "key": "equipment_front_heated_seats",
+            "expected": {
+              "key": "equipment_front_heated_seats",
+              "label": "Heated driver and front-passenger seats",
+              "value": true,
+              "unit": "",
+              "basis": "Exact named Sport Collection offer",
+              "comparisonBasis": "equipment front heated seats",
+              "status": "standard",
+              "sourceIds": [
+                "m1-bmw-2026-10-14-sport-collection"
+              ],
+              "date": "2026-10-14",
+              "market": "AU",
+              "scope": "BMW iX1 xDrive30 Sport Collection",
+              "qualifications": [],
+              "issues": [],
+              "buyerGrade": "confirmed",
+              "gradeReview": {
+                "reviewedAt": "2026-10-14",
+                "overlayId": "m1-bmw-2026-10-14",
+                "reason": "Reviewed current Australian manufacturer material establishes this fact within its named version or explicit body scope.",
+                "evidenceScope": "exact_au_version",
+                "sourceIds": [
+                  "m1-bmw-2026-10-14-sport-collection"
+                ],
+                "sourceLabel": "BMW Australia"
+              }
+            }
+          },
+          {
+            "key": "price_aud",
+            "expected": {
+              "key": "price_aud",
+              "label": "Price",
+              "value": 79900,
+              "unit": "AUD",
+              "basis": "Manufacturer recommended national drive-away promotional price",
+              "comparisonBasis": "Driveaway",
+              "status": "conditional",
+              "sourceIds": [
+                "refresh-bmw-2026-11-05-sport-collection"
+              ],
+              "date": "2026-11-05",
+              "market": "AU",
+              "scope": "BMW iX1 xDrive30 Sport Collection",
+              "qualifications": [],
+              "issues": [],
+              "buyerGrade": "check",
+              "gradeReview": {
+                "reviewedAt": "2026-11-05",
+                "overlayId": "refresh-bmw-2026-11-05",
+                "reason": "Rechecked 2026-11-05 against the cited page: unchanged. BMW's offer page still states from $79,900 drive away (delivered by 31.03.27).",
+                "evidenceScope": "exact_au_version",
+                "sourceIds": [
+                  "refresh-bmw-2026-11-05-sport-collection"
+                ],
+                "sourceLabel": "BMW Australia"
+              },
+              "conditionExplanation": "New iX1 xDrive30 Sport Collection in Alpine White, no Enhancement package or extras, delivered by 31 March 2027; participating dealers; excludes fleet, government and rental; no rainchecks; availability varies",
+              "validUntil": "2027-03-31",
+              "priceEvidence": {
+                "rung": 2,
+                "basisTag": "Maker national driveaway offer",
+                "sourceKey": "price_aud",
+                "sourcePointer": "https://www.bmw.com.au/en/offers-and-services/promotions/sport-collection.html",
+                "originalBasis": "Manufacturer recommended national drive-away promotional price",
+                "rankingEligible": true
+              }
+            }
+          },
+          {
+            "key": "motor_count",
+            "expected": {
+              "key": "motor_count",
+              "label": "Motor count",
+              "value": 2,
+              "unit": "",
+              "basis": "Exact named maker offer explicitly says dual-motor xDrive30 drivetrain",
+              "comparisonBasis": "motor count",
+              "status": "standard",
+              "sourceIds": [
+                "m1-bmw-2026-10-14-sport-collection"
+              ],
+              "date": "2026-10-14",
+              "market": "AU",
+              "scope": "BMW iX1 xDrive30 Sport Collection",
+              "qualifications": [],
+              "issues": [],
+              "buyerGrade": "confirmed",
+              "gradeReview": {
+                "reviewedAt": "2026-10-14",
+                "overlayId": "m1-bmw-2026-10-14",
+                "reason": "Reviewed current Australian manufacturer material establishes this fact within its named version or explicit body scope.",
+                "evidenceScope": "exact_au_version",
+                "sourceIds": [
+                  "m1-bmw-2026-10-14-sport-collection"
+                ],
+                "sourceLabel": "BMW Australia"
+              }
+            }
+          }
+        ]
+      },
+      "tradeoff": {
+        "label": "Headline price fixes the configuration",
+        "text": "The offer requires Alpine White and excludes Enhancement package and extras.",
+        "dependencies": [
+          {
+            "key": "price_aud",
+            "expected": {
+              "key": "price_aud",
+              "label": "Price",
+              "value": 79900,
+              "unit": "AUD",
+              "basis": "Manufacturer recommended national drive-away promotional price",
+              "comparisonBasis": "Driveaway",
+              "status": "conditional",
+              "sourceIds": [
+                "refresh-bmw-2026-11-05-sport-collection"
+              ],
+              "date": "2026-11-05",
+              "market": "AU",
+              "scope": "BMW iX1 xDrive30 Sport Collection",
+              "qualifications": [],
+              "issues": [],
+              "buyerGrade": "check",
+              "gradeReview": {
+                "reviewedAt": "2026-11-05",
+                "overlayId": "refresh-bmw-2026-11-05",
+                "reason": "Rechecked 2026-11-05 against the cited page: unchanged. BMW's offer page still states from $79,900 drive away (delivered by 31.03.27).",
+                "evidenceScope": "exact_au_version",
+                "sourceIds": [
+                  "refresh-bmw-2026-11-05-sport-collection"
+                ],
+                "sourceLabel": "BMW Australia"
+              },
+              "conditionExplanation": "New iX1 xDrive30 Sport Collection in Alpine White, no Enhancement package or extras, delivered by 31 March 2027; participating dealers; excludes fleet, government and rental; no rainchecks; availability varies",
+              "validUntil": "2027-03-31",
+              "priceEvidence": {
+                "rung": 2,
+                "basisTag": "Maker national driveaway offer",
+                "sourceKey": "price_aud",
+                "sourcePointer": "https://www.bmw.com.au/en/offers-and-services/promotions/sport-collection.html",
+                "originalBasis": "Manufacturer recommended national drive-away promotional price",
+                "rankingEligible": true
+              }
+            }
+          },
+          {
+            "key": "equipment_offer_paint",
+            "expected": {
+              "key": "equipment_offer_paint",
+              "label": "Headline-price paint",
+              "value": "Alpine White",
+              "unit": "",
+              "basis": "Exact named Sport Collection offer",
+              "comparisonBasis": "equipment offer paint",
+              "status": "standard",
+              "sourceIds": [
+                "m1-bmw-2026-10-14-sport-collection"
+              ],
+              "date": "2026-10-14",
+              "market": "AU",
+              "scope": "BMW iX1 xDrive30 Sport Collection",
+              "qualifications": [],
+              "issues": [],
+              "buyerGrade": "confirmed",
+              "gradeReview": {
+                "reviewedAt": "2026-10-14",
+                "overlayId": "m1-bmw-2026-10-14",
+                "reason": "Reviewed current Australian manufacturer material establishes this fact within its named version or explicit body scope.",
+                "evidenceScope": "exact_au_version",
+                "sourceIds": [
+                  "m1-bmw-2026-10-14-sport-collection"
+                ],
+                "sourceLabel": "BMW Australia"
+              }
+            }
+          },
+          {
+            "key": "equipment_offer_excludes_enhancement",
+            "expected": {
+              "key": "equipment_offer_excludes_enhancement",
+              "label": "Headline offer excludes Enhancement package and extras",
+              "value": true,
+              "unit": "",
+              "basis": "Exact named Sport Collection offer",
+              "comparisonBasis": "equipment offer excludes enhancement",
+              "status": "standard",
+              "sourceIds": [
+                "m1-bmw-2026-10-14-sport-collection"
+              ],
+              "date": "2026-10-14",
+              "market": "AU",
+              "scope": "BMW iX1 xDrive30 Sport Collection",
+              "qualifications": [],
+              "issues": [],
+              "buyerGrade": "confirmed",
+              "gradeReview": {
+                "reviewedAt": "2026-10-14",
+                "overlayId": "m1-bmw-2026-10-14",
+                "reason": "Reviewed current Australian manufacturer material establishes this fact within its named version or explicit body scope.",
+                "evidenceScope": "exact_au_version",
+                "sourceIds": [
+                  "m1-bmw-2026-10-14-sport-collection"
+                ],
+                "sourceLabel": "BMW Australia"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

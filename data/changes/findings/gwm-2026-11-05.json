@@ -1,0 +1,1034 @@
+{
+  "schema": "roadmark-refresh-findings-v1",
+  "brand": "GWM",
+  "asOf": "2026-11-05",
+  "reviewedAt": "2026-11-05",
+  "reviewedBy": "Roadmark WS2 refresh (Claude Code worker), GWM",
+  "sources": [
+    {
+      "id": "refresh-gwm-2026-11-05-config",
+      "url": "https://www.gwmanz.com/au/config/ora-5-suv/",
+      "title": "Configure Your ORA 5 SUV (GWM Australia)",
+      "publisher": "GWM Australia",
+      "source_type": "official_configurator",
+      "published_date": null,
+      "accessed_date": "2026-11-05",
+      "market": "AU",
+      "supports": "Opened 2026-11-05 (redirects to ...?model=Lux&colour=Pepper+White&trim=Cloth+Trim+Seats). DRIVEAWAY PRICE for a private buyer in VIC: ORA 5 SUV Lux from $33,990; Ultra from $36,990 (150 kW, 58.33kWh LFP). Current offers on the page: Offer 1 additional $1,000 off the driveaway price, ends 30 November 2026, or Offer 2 finance; the displayed driveaway price does not include that extra discount. Price applicable for 2026 build vehicle. The page offers test drive and dealer routes; no order status or stock stated."
+    },
+    {
+      "id": "refresh-gwm-2026-11-05-offers",
+      "url": "https://www.gwmanz.com/au/offers/",
+      "title": "GWM latest deals and offers",
+      "publisher": "GWM Australia",
+      "source_type": "manufacturer_au_offer",
+      "published_date": null,
+      "accessed_date": "2026-11-05",
+      "market": "AU",
+      "supports": "Opened 2026-11-05. ORA 5 SUV Lux DRIVEAWAY FROM $33,990 (private buyers in VIC), price applicable for 2026 build vehicle; Offer 1 additional $1,000 off the driveaway price, offer ends 30 November 2026, or Offer 2 0.88% p.a. finance. Offer terms exclude ORA Ultra variants. No ORA 5 Ultra card is listed."
+    }
+  ],
+  "versions": [
+    {
+      "variantId": "gwm_ora5_suv_lux_au__20261010",
+      "vehicle": "GWM ORA 5 SUV Lux",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.gwmanz.com/au/models/suv/ora-5-suv/",
+            "https://assets.gwmanz.com/f/256395/x/b36cfaf758/gwma0341-gwm-ora-brochure-au-20261014.pdf",
+            "https://www.gwmanz.com/au/config/ora-5-suv?model=Lux&colour=Pepper+White&trim=Cloth+Trim+Seats",
+            "https://www.gwmanz.com/au/offers/"
+          ]
+        },
+        "outcome": "unchanged",
+        "sourceIds": [
+          "refresh-gwm-2026-11-05-config"
+        ],
+        "note": "ORA 5 SUV still listed on the configurator with test-drive and dealer routes; order acceptance and stock not stated."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "33,990 AUD",
+            "basis": "Maker current driveaway configurator/offer for private VIC buyers; Pepper White; 2026 build; order/delivery by 31 October 2026 or while stocks last",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gwmanz.com/au/config/ora-5-suv?model=Lux&colour=Pepper+White&trim=Cloth+Trim+Seats",
+              "https://www.gwmanz.com/au/offers/"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Configurator and offers page read on 2026-11-05 still show the same VIC driveaway price (Lux $33,990, Ultra $36,990), but the offer condition recorded for it (order/delivery by 31 October 2026) has changed and the version's configuration evidence is bound to the exact price fact; re-dating it needs a configuration-update packet row, which refresh:build does not generate. Value retained, date unchanged; needs a normal brand update."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "435 km",
+            "basis": "Manufacturer range using WLTC test procedure",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://assets.gwmanz.com/f/256395/x/b36cfaf758/gwma0341-gwm-ora-brochure-au-20261014.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "58.33 kWh",
+            "basis": "Manufacturer stated battery capacity; gross/usable unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://assets.gwmanz.com/f/256395/x/b36cfaf758/gwma0341-gwm-ora-brochure-au-20261014.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "120 kW",
+            "basis": "Manufacturer maximum vehicle DC charging acceptance",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gwmanz.com/au/news/gwm-unveils-the-all-new-ora-5-suv-priced-from-just-33-990-driveaway/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "30 min",
+            "basis": "Manufacturer 10–80% time with 120 kW DC charger",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://assets.gwmanz.com/f/256395/x/b36cfaf758/gwma0341-gwm-ora-brochure-au-20261014.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "6.6 kW",
+            "basis": "Manufacturer stated AC charging power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://assets.gwmanz.com/f/256395/x/b36cfaf758/gwma0341-gwm-ora-brochure-au-20261014.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Manufacturer seating capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://assets.gwmanz.com/f/256395/x/b36cfaf758/gwma0341-gwm-ora-brochure-au-20261014.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "362 L",
+            "basis": "Manufacturer minimum luggage capacity; method/loading boundary unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://assets.gwmanz.com/f/256395/x/b36cfaf758/gwma0341-gwm-ora-brochure-au-20261014.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "8 s",
+            "basis": "Manufacturer 0–100 km/h",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://assets.gwmanz.com/f/256395/x/b36cfaf758/gwma0341-gwm-ora-brochure-au-20261014.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "150 kW",
+            "basis": "Manufacturer maximum motor output",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://assets.gwmanz.com/f/256395/x/b36cfaf758/gwma0341-gwm-ora-brochure-au-20261014.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "FWD",
+            "basis": "Manufacturer Front Wheel Drive",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://assets.gwmanz.com/f/256395/x/b36cfaf758/gwma0341-gwm-ora-brochure-au-20261014.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,471 mm",
+            "basis": "Manufacturer SUV overall length",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://assets.gwmanz.com/f/256395/x/b36cfaf758/gwma0341-gwm-ora-brochure-au-20261014.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,833 mm",
+            "basis": "Manufacturer width; mirror treatment unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://assets.gwmanz.com/f/256395/x/b36cfaf758/gwma0341-gwm-ora-brochure-au-20261014.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,641 mm",
+            "basis": "Manufacturer SUV overall height",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://assets.gwmanz.com/f/256395/x/b36cfaf758/gwma0341-gwm-ora-brochure-au-20261014.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "750 kg",
+            "basis": "Manufacturer explicitly braked towing capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gwmanz.com/au/news/gwm-unveils-the-all-new-ora-5-suv-priced-from-just-33-990-driveaway/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "7 years / unlimited km for private use",
+            "basis": "Australian new-vehicle private-use warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gwmanz.com/au/ownership/warranty/",
+              "https://a.storyblok.com/f/256395/x/b2b9f9a9f0/gwm-warranty-terms-and-conditions.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / unlimited km for private use",
+            "basis": "Australian ORA high-voltage battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gwmanz.com/au/ownership/warranty/",
+              "https://www.gwmanz.com/au/models/suv/ora-5-suv/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "charging_offer",
+          "label": "Conditional wall-charger offer",
+          "due": true,
+          "current": {
+            "value": "Complimentary 7 kW wall charger, A$599 RRP including GST; installation excluded",
+            "basis": "Conditional Australian charging offer",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gwmanz.com/au/models/suv/ora-5-suv/",
+              "https://www.gwmanz.com/au/offers/"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Not shown on the configurator or offers page read on 2026-11-05 (the complimentary charger offer is not listed there); not rechecked."
+        },
+        {
+          "key": "source_ora5_advertised_driveaway_from",
+          "label": "advertised driveaway from",
+          "due": true,
+          "current": {
+            "value": "33,990 AUD",
+            "basis": "Private buyers in Victoria; indicative from price observed 10 October 2026; no transaction quote",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.gwmanz.com/au/offers/"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Not shown on the configurator or offers page read on 2026-11-05 (the complimentary charger offer is not listed there); not rechecked."
+        },
+        {
+          "key": "source_ora5_offers_stale_footer",
+          "label": "offers stale footer",
+          "due": true,
+          "current": {
+            "value": "[object Object]",
+            "basis": "Archived manufacturer source label only",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.gwmanz.com/au/offers/"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Not shown on the configurator or offers page read on 2026-11-05 (the complimentary charger offer is not listed there); not rechecked."
+        },
+        {
+          "key": "source_ora5_promotion",
+          "label": "promotion",
+          "due": true,
+          "current": {
+            "value": "[object Object]",
+            "basis": "Exact source-bound promotion observation; not an unconditional entitlement",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.gwmanz.com/au/offers/",
+              "https://www.gwmanz.com/au/finance/novated-leasing/"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Not shown on the configurator or offers page read on 2026-11-05 (the complimentary charger offer is not listed there); not rechecked."
+        }
+      ]
+    },
+    {
+      "variantId": "gwm_ora5_suv_ultra_au__20261010",
+      "vehicle": "GWM ORA 5 SUV Ultra",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.gwmanz.com/au/models/suv/ora-5-suv/",
+            "https://assets.gwmanz.com/f/256395/x/b36cfaf758/gwma0341-gwm-ora-brochure-au-20261014.pdf",
+            "https://www.gwmanz.com/au/config/ora-5-suv/",
+            "https://www.gwmanz.com/au/offers/"
+          ]
+        },
+        "outcome": "unchanged",
+        "sourceIds": [
+          "refresh-gwm-2026-11-05-config"
+        ],
+        "note": "ORA 5 SUV still listed on the configurator with test-drive and dealer routes; order acceptance and stock not stated."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "36,990 AUD",
+            "basis": "Maker current driveaway configurator/offer for private VIC buyers; Pepper White; 2026 build; order/delivery by 31 October 2026 or while stocks last",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gwmanz.com/au/config/ora-5-suv/",
+              "https://www.gwmanz.com/au/offers/"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Configurator and offers page read on 2026-11-05 still show the same VIC driveaway price (Lux $33,990, Ultra $36,990), but the offer condition recorded for it (order/delivery by 31 October 2026) has changed and the version's configuration evidence is bound to the exact price fact; re-dating it needs a configuration-update packet row, which refresh:build does not generate. Value retained, date unchanged; needs a normal brand update."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "435 km",
+            "basis": "Manufacturer range using WLTC test procedure",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://assets.gwmanz.com/f/256395/x/b36cfaf758/gwma0341-gwm-ora-brochure-au-20261014.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "58.33 kWh",
+            "basis": "Manufacturer stated battery capacity; gross/usable unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://assets.gwmanz.com/f/256395/x/b36cfaf758/gwma0341-gwm-ora-brochure-au-20261014.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "120 kW",
+            "basis": "Manufacturer maximum vehicle DC charging acceptance",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gwmanz.com/au/news/gwm-unveils-the-all-new-ora-5-suv-priced-from-just-33-990-driveaway/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "30 min",
+            "basis": "Manufacturer 10–80% time with 120 kW DC charger",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://assets.gwmanz.com/f/256395/x/b36cfaf758/gwma0341-gwm-ora-brochure-au-20261014.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "6.6 kW",
+            "basis": "Manufacturer stated AC charging power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://assets.gwmanz.com/f/256395/x/b36cfaf758/gwma0341-gwm-ora-brochure-au-20261014.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Manufacturer seating capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://assets.gwmanz.com/f/256395/x/b36cfaf758/gwma0341-gwm-ora-brochure-au-20261014.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "362 L",
+            "basis": "Manufacturer minimum luggage capacity; method/loading boundary unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://assets.gwmanz.com/f/256395/x/b36cfaf758/gwma0341-gwm-ora-brochure-au-20261014.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "8 s",
+            "basis": "Manufacturer 0–100 km/h",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://assets.gwmanz.com/f/256395/x/b36cfaf758/gwma0341-gwm-ora-brochure-au-20261014.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "150 kW",
+            "basis": "Manufacturer maximum motor output",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://assets.gwmanz.com/f/256395/x/b36cfaf758/gwma0341-gwm-ora-brochure-au-20261014.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "FWD",
+            "basis": "Manufacturer Front Wheel Drive",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://assets.gwmanz.com/f/256395/x/b36cfaf758/gwma0341-gwm-ora-brochure-au-20261014.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,471 mm",
+            "basis": "Manufacturer SUV overall length",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://assets.gwmanz.com/f/256395/x/b36cfaf758/gwma0341-gwm-ora-brochure-au-20261014.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,833 mm",
+            "basis": "Manufacturer width; mirror treatment unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://assets.gwmanz.com/f/256395/x/b36cfaf758/gwma0341-gwm-ora-brochure-au-20261014.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,641 mm",
+            "basis": "Manufacturer SUV overall height",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://assets.gwmanz.com/f/256395/x/b36cfaf758/gwma0341-gwm-ora-brochure-au-20261014.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "750 kg",
+            "basis": "Manufacturer explicitly braked towing capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gwmanz.com/au/news/gwm-unveils-the-all-new-ora-5-suv-priced-from-just-33-990-driveaway/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "7 years / unlimited km for private use",
+            "basis": "Australian new-vehicle private-use warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gwmanz.com/au/ownership/warranty/",
+              "https://a.storyblok.com/f/256395/x/b2b9f9a9f0/gwm-warranty-terms-and-conditions.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / unlimited km for private use",
+            "basis": "Australian ORA high-voltage battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gwmanz.com/au/ownership/warranty/",
+              "https://www.gwmanz.com/au/models/suv/ora-5-suv/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "charging_offer",
+          "label": "Conditional wall-charger offer",
+          "due": true,
+          "current": {
+            "value": "Complimentary 7 kW wall charger, A$599 RRP including GST; installation excluded",
+            "basis": "Conditional Australian charging offer",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gwmanz.com/au/models/suv/ora-5-suv/",
+              "https://www.gwmanz.com/au/offers/"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Not shown on the configurator or offers page read on 2026-11-05 (the complimentary charger offer is not listed there); not rechecked."
+        },
+        {
+          "key": "source_ora5_advertised_driveaway_from",
+          "label": "advertised driveaway from",
+          "due": true,
+          "current": {
+            "value": "36,990 AUD",
+            "basis": "Private buyers in Victoria; indicative from price observed 10 October 2026; no transaction quote",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.gwmanz.com/au/offers/"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Not shown on the configurator or offers page read on 2026-11-05 (the complimentary charger offer is not listed there); not rechecked."
+        },
+        {
+          "key": "source_ora5_offers_stale_footer",
+          "label": "offers stale footer",
+          "due": true,
+          "current": {
+            "value": "[object Object]",
+            "basis": "Archived manufacturer source label only",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.gwmanz.com/au/offers/"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Not shown on the configurator or offers page read on 2026-11-05 (the complimentary charger offer is not listed there); not rechecked."
+        },
+        {
+          "key": "source_ora5_promotion",
+          "label": "promotion",
+          "due": true,
+          "current": {
+            "value": "[object Object]",
+            "basis": "Exact source-bound promotion observation; not an unconditional entitlement",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.gwmanz.com/au/offers/",
+              "https://www.gwmanz.com/au/finance/novated-leasing/"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Not shown on the configurator or offers page read on 2026-11-05 (the complimentary charger offer is not listed there); not rechecked."
+        }
+      ]
+    },
+    {
+      "variantId": "gwm_ora_hatch_lux_57_7_au__20261014",
+      "vehicle": "GWM Ora (hatchback) Lux",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "outgoing",
+          "orderStatus": "unverified",
+          "stockStatus": "new_stock_listed",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.gwmanz.com/au/models/hatchback/ora/",
+            "https://www.bunburygwm.com.au/new-cars/for-sale/gwm/ora/2025/lux/es11/3630927/"
+          ]
+        },
+        "outcome": "pending"
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "33,990 AUD",
+            "basis": "Maker retained Ora Lux driveaway-from for private buyers in Victoria",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gwmanz.com/au/models/hatchback/ora/"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Outgoing ORA hatch; only the model page was previously cited and it was not reopened. Not rechecked."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "400 km",
+            "basis": "Manufacturer refreshed Lux WLTP range",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://assets.gwmanz.com/f/256395/x/6cb11f3ef1/ora_brochure_au.pdf",
+              "https://www.gwmanz.com/au/models/hatchback/ora/"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Outgoing ORA hatch; only the model page was previously cited and it was not reopened. Not rechecked."
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "57.7 kWh",
+            "basis": "Manufacturer stated battery capacity; gross/usable unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://assets.gwmanz.com/f/256395/x/6cb11f3ef1/ora_brochure_au.pdf",
+              "https://www.gwmanz.com/au/models/hatchback/ora/"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Outgoing ORA hatch; only the model page was previously cited and it was not reopened. Not rechecked."
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "80 kW",
+            "basis": "CarExpert maximum DC power supplied to vehicle for exact 57.7 kWh Lux",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/hyundai/i30/2026-2l-hatchback-fwd-petrol-manual-jowkmosg20250610/vs/gwm/ora/2025-lux-hatchback-fwd-electric-jsfm5wfm20250825"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Outgoing ORA hatch; only the model page was previously cited and it was not reopened. Not rechecked."
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "10–80%",
+            "grade": "not_published",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://assets.gwmanz.com/f/256395/x/6cb11f3ef1/ora_brochure_au.pdf",
+              "https://www.carexpert.com.au/hyundai/i30/2026-2l-hatchback-fwd-petrol-manual-jowkmosg20250610/vs/gwm/ora/2025-lux-hatchback-fwd-electric-jsfm5wfm20250825"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Outgoing ORA hatch; only the model page was previously cited and it was not reopened. Not rechecked."
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Manufacturer stated AC charging power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://assets.gwmanz.com/f/256395/x/6cb11f3ef1/ora_brochure_au.pdf"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Outgoing ORA hatch; only the model page was previously cited and it was not reopened. Not rechecked."
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://assets.gwmanz.com/f/256395/x/6cb11f3ef1/ora_brochure_au.pdf"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Outgoing ORA hatch; only the model page was previously cited and it was not reopened. Not rechecked."
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "228 L",
+            "basis": "Manufacturer minimum luggage volume; method/loading boundary unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://assets.gwmanz.com/f/256395/x/6cb11f3ef1/ora_brochure_au.pdf"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Outgoing ORA hatch; only the model page was previously cited and it was not reopened. Not rechecked."
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "9 s",
+            "basis": "0–100 km/h",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://assets.gwmanz.com/f/256395/x/6cb11f3ef1/ora_brochure_au.pdf"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Outgoing ORA hatch; only the model page was previously cited and it was not reopened. Not rechecked."
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "126 kW",
+            "basis": "Motor output",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://assets.gwmanz.com/f/256395/x/6cb11f3ef1/ora_brochure_au.pdf",
+              "https://www.gwmanz.com/au/models/hatchback/ora/"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Outgoing ORA hatch; only the model page was previously cited and it was not reopened. Not rechecked."
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "FWD",
+            "basis": "Drivetrain",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://assets.gwmanz.com/f/256395/x/6cb11f3ef1/ora_brochure_au.pdf"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Outgoing ORA hatch; only the model page was previously cited and it was not reopened. Not rechecked."
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,235 mm",
+            "basis": "Body length",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://assets.gwmanz.com/f/256395/x/6cb11f3ef1/ora_brochure_au.pdf"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Outgoing ORA hatch; only the model page was previously cited and it was not reopened. Not rechecked."
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,825 mm",
+            "basis": "Manufacturer width; mirror inclusion unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://assets.gwmanz.com/f/256395/x/6cb11f3ef1/ora_brochure_au.pdf"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Outgoing ORA hatch; only the model page was previously cited and it was not reopened. Not rechecked."
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,603 mm",
+            "basis": "Body height",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://assets.gwmanz.com/f/256395/x/6cb11f3ef1/ora_brochure_au.pdf"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Outgoing ORA hatch; only the model page was previously cited and it was not reopened. Not rechecked."
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "0 kg",
+            "basis": "Reported braked towing capacity: 0 kg",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/hyundai/i30/2026-2l-hatchback-fwd-petrol-manual-jowkmosg20250610/vs/gwm/ora/2025-lux-hatchback-fwd-electric-jsfm5wfm20250825",
+              "https://www.carsguide.com.au/gwm/ora/engine"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Outgoing ORA hatch; only the model page was previously cited and it was not reopened. Not rechecked."
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "7 years / unlimited km for private use",
+            "basis": "Australian new-vehicle private-use warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gwmanz.com/au/ownership/warranty/",
+              "https://a.storyblok.com/f/256395/x/b2b9f9a9f0/gwm-warranty-terms-and-conditions.pdf"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Outgoing ORA hatch; only the model page was previously cited and it was not reopened. Not rechecked."
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / unlimited km for private use",
+            "basis": "Australian ORA high-voltage battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gwmanz.com/au/ownership/warranty/",
+              "https://www.gwmanz.com/au/models/suv/ora-5-suv/"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Outgoing ORA hatch; only the model page was previously cited and it was not reopened. Not rechecked."
+        }
+      ]
+    }
+  ]
+}

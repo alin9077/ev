@@ -1,5 +1,10 @@
+import marketInventory from "../src/lib/market-inventory-data";
+import { encodePortableJson } from "../src/lib/portable-string-codec";
 import fs from "node:fs";
+import { validateCatalogueIssues } from "../src/lib/validate-catalogue-issues";
+import { storePortablePacks } from "../src/lib/portable-packs";
 import path from "node:path";
+import { loadChangeMonths } from "../src/lib/changes-data";
 import { build } from "esbuild";
 import {
   catalogue,
@@ -27,6 +32,11 @@ async function main() {
       "next/image": path.join(root, "src/portable/image.tsx"),
       "next/navigation": path.join(root, "src/portable/navigation.ts"),
       "@/lib/data": path.join(root, "src/portable/data.ts"),
+      "@/lib/market-view-data": path.join(root, "src/portable/market-inventory-data.ts"),
+      "@/lib/market-inventory-data": path.join(
+        root,
+        "src/portable/market-inventory-data.ts",
+      ),
       "@/lib/chapter-art-src": path.join(
         root,
         "src/portable/chapter-art-src.ts",
@@ -34,9 +44,16 @@ async function main() {
     },
   });
   const d = research();
+  const cars = catalogue();
+  const issueErrors = validateCatalogueIssues(cars);
+  if (issueErrors.length) throw new Error(issueErrors.join("\n"));
+  const snapshot = { data: d, cars };
   const data = {
+    marketInventory,
     cars: pickerCatalogue(),
-    packs: Object.fromEntries(catalogue().map((c) => [c.id, pack(c.id)])),
+    packs: storePortablePacks(
+      Object.fromEntries(cars.map((c) => [c.id, pack(c.id, snapshot)])),
+    ),
     research: {
       sources: d.sources,
       criteria: d.criteria,
@@ -44,6 +61,7 @@ async function main() {
       trim_equipment: d.trim_equipment,
     },
     counts: counts(),
+    changes: loadChangeMonths(),
     art: Object.fromEntries(
       fs
         .readdirSync("public/media/chapters")
@@ -54,22 +72,27 @@ async function main() {
         ]),
     ),
   };
-  const json = JSON.stringify(data).replaceAll("<", "\\u003c");
+  const { json } = encodePortableJson(JSON.stringify(data), 32);
   const js = result.outputFiles[0].text.replaceAll("</script", "<\\/script");
   const css = fs.readFileSync("src/app/globals.css", "utf8");
   const page = (flag: string, title: string) =>
     `<!doctype html><html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>${title}</title><style>${css}</style></head><body><div id="root"></div><noscript>This interactive comparison needs JavaScript enabled.</noscript><script id="ev-data" type="application/json">${json}</script><script>${flag}${js}</script></body></html>`;
-  // The B experience is the default landing page; keep index-b.html as an alias.
-  const htmlB = page("window.__EV_B=true;", "EV Side by Side");
+  // Preserve the original Model Y hero above discovery; keep index-b.html as an alias.
+  const htmlB = page(
+    "window.__EV_B=true;",
+    "Roadmark · Discover your kind of electric",
+  );
   fs.writeFileSync("index.html", htmlB);
   fs.mkdirSync("public", { recursive: true });
   fs.writeFileSync("public/index.html", htmlB);
   fs.writeFileSync("index-b.html", htmlB);
   fs.writeFileSync("public/index-b.html", htmlB);
   console.log(
-    `Portable B landing page written (${(Buffer.byteLength(htmlB) / 1e6).toFixed(2)} MB).`,
+    `Portable Roadmark experience written (${(Buffer.byteLength(htmlB) / 1e6).toFixed(2)} MB).`,
   );
-  console.log("index.html and index-b.html both open the B experience.");
+  console.log(
+    "index.html and index-b.html retain the Model Y hero above discovery; the original comparison is also available at ?page=/b.",
+  );
 }
 main().catch((error) => {
   console.error(error);

@@ -1,0 +1,1406 @@
+{
+  "schemaVersion": 1,
+  "id": "refresh-tesla-2026-11-05",
+  "brand": "Tesla",
+  "reviewedAt": "2026-11-05",
+  "reviewedBy": "Roadmark WS2 refresh (Claude Code worker), Tesla",
+  "sources": [
+    {
+      "id": "refresh-tesla-2026-11-05-m3-design",
+      "url": "https://www.tesla.com/en_au/model3/design",
+      "title": "Design Your Model 3 (Tesla Australia)",
+      "publisher": "Tesla Australia",
+      "source_type": "official_configurator",
+      "published_date": null,
+      "accessed_date": "2026-11-05",
+      "market": "AU",
+      "supports": "Opened 2026-11-05. Model 3 $45,900 Rear-Wheel Drive; Model 3 Premium $54,900 Rear-Wheel Drive; Model 3 Premium $61,900 Long Range Rear-Wheel Drive; Model 3 Performance $80,900 All-Wheel Drive. Shows 'Est. Delivery: Nov 2026 - Jan 2027' and an Order Now button; a driveaway estimate needs the buyer's state. Allocation and physical stock are not stated."
+    },
+    {
+      "id": "refresh-tesla-2026-11-05-my-design",
+      "url": "https://www.tesla.com/en_au/modely/design?redirect=no",
+      "title": "Design Your Model Y (Tesla Australia)",
+      "publisher": "Tesla Australia",
+      "source_type": "official_configurator",
+      "published_date": null,
+      "accessed_date": "2026-11-05",
+      "market": "AU",
+      "supports": "Opened 2026-11-05. Model Y Premium $58,900 Rear-Wheel Drive; Model Y Premium $68,900 Long Range All-Wheel Drive; Model Y L Premium $74,900 All-Wheel Drive; Model Y Performance $84,900 All-Wheel Drive. Shows 'Est. Delivery: Nov 2026 - Jan 2027' and an Order Now button. Allocation and physical stock are not stated."
+    },
+    {
+      "id": "m1-tesla-2026-10-14-m3-product",
+      "url": "https://www.tesla.com/en_au/model3",
+      "title": "Tesla Model 3 Australian current product specifications",
+      "publisher": "Tesla Australia",
+      "source_type": "manufacturer_au_specification",
+      "published_date": null,
+      "accessed_date": "2026-10-14",
+      "market": "AU",
+      "supports": "Current complete Australian RWD, Premium RWD, Premium Long Range RWD and Performance list; exact range, acceleration, DC peak, seats and dimensions. Performance 343 kW appears in product performance section; acceleration excludes rollout. Captured JSON specs-table-1040/1041/987 plus exact named headings.",
+      "capture_sha256": "8611b14ae2485e7baf6677898d44c49e18efc7cbf18497a551356cdd16427fe2",
+      "capture_locator": "model3/model3.html"
+    },
+    {
+      "id": "m1-tesla-2026-10-14-my-config",
+      "url": "https://www.tesla.com/en_au/modely/design?redirect=no",
+      "title": "Tesla Australia Model Y configurator",
+      "publisher": "Tesla Australia",
+      "source_type": "official_configurator",
+      "published_date": null,
+      "accessed_date": "2026-10-14",
+      "market": "AU",
+      "supports": "Exact current trim option records extracted in official-configurator-trims. json. $MTY 46 RWD, $MTY 90 LR AWD, $MTY 93 L AWD, $MTY 53 Performance. Embedded update timestamp 2026-10-13. Examined fields: price_aud, range_km, zero_to_100_s, drive",
+      "capture_section": "tesla-configurator.html",
+      "capture_sha256": "9bfbd2fce458dd95dad390295caa56a85f53d1cc23fb8f4134232b9e79cd2d1f",
+      "capture_locator": "model-y/tesla-configurator.html"
+    },
+    {
+      "id": "m1-tesla-2026-10-14-my-product",
+      "url": "https://www.tesla.com/en_au/modely",
+      "title": "Tesla Australia Model Y current product and complete spec blocks",
+      "publisher": "Tesla Australia",
+      "source_type": "manufacturer_au_specification",
+      "published_date": null,
+      "accessed_date": "2026-10-14",
+      "market": "AU",
+      "supports": "Public HTML downloaded 2026-10-13 23:27 UTC; dynamic JSON contains all four exact AU versions. Extracted in official-spec-blocks. json. Raw current HTML wins over stale search-index copies. Examined fields: range_km, battery_kwh, dc_peak_kw, dc_charge_time_min, seats, zero_to_100_s, drive, length_mm, height_mm, warranty, battery_warranty",
+      "capture_section": "tesla-model-y.html",
+      "capture_sha256": "9425b32c56d4ad29d290be9a8a449e1730f660d107834c84b6fcbb4a9e6cd7da",
+      "capture_locator": "model-y/tesla-model-y.html"
+    }
+  ],
+  "models": [],
+  "variants": [],
+  "versionGuards": [
+    {
+      "variantId": "tesla_model_3__performance_awd__4",
+      "before": {
+        "id": "tesla_model_3__performance_awd__4",
+        "modelId": "tesla_model_3",
+        "brand": "Tesla",
+        "model": "Model 3",
+        "trim": "Performance AWD",
+        "year": 2027,
+        "generation": "2024+ Highland; current MY27 changes flagged",
+        "vehicleClass": "passenger",
+        "drive": "AWD"
+      }
+    },
+    {
+      "variantId": "tesla_model_3__premium_long_range_rwd__1",
+      "before": {
+        "id": "tesla_model_3__premium_long_range_rwd__1",
+        "modelId": "tesla_model_3",
+        "brand": "Tesla",
+        "model": "Model 3",
+        "trim": "Premium Long Range RWD",
+        "year": 2027,
+        "generation": "2024+ Highland; current MY27 changes flagged",
+        "vehicleClass": "passenger",
+        "drive": "RWD"
+      }
+    },
+    {
+      "variantId": "tesla_model_3__premium_rwd__2",
+      "before": {
+        "id": "tesla_model_3__premium_rwd__2",
+        "modelId": "tesla_model_3",
+        "brand": "Tesla",
+        "model": "Model 3",
+        "trim": "Premium RWD",
+        "year": 2027,
+        "generation": "2024+ Highland; current MY27 changes flagged",
+        "vehicleClass": "passenger",
+        "drive": "RWD"
+      }
+    },
+    {
+      "variantId": "tesla_model_3__rear_wheel_drive__3",
+      "before": {
+        "id": "tesla_model_3__rear_wheel_drive__3",
+        "modelId": "tesla_model_3",
+        "brand": "Tesla",
+        "model": "Model 3",
+        "trim": "Rear-Wheel Drive",
+        "year": 2027,
+        "generation": "2024+ Highland; current MY27 changes flagged",
+        "vehicleClass": "passenger",
+        "drive": "RWD"
+      }
+    },
+    {
+      "variantId": "tesla_model_y__l_premium_awd__4",
+      "before": {
+        "id": "tesla_model_y__l_premium_awd__4",
+        "modelId": "tesla_model_y",
+        "brand": "Tesla",
+        "model": "Model Y L",
+        "trim": "Premium AWD (six-seat)",
+        "year": 2027,
+        "generation": "Long-wheelbase six-seat Model Y L; current Australian MY27 specification",
+        "vehicleClass": "passenger",
+        "drive": "AWD"
+      }
+    },
+    {
+      "variantId": "tesla_model_y__performance_awd__3",
+      "before": {
+        "id": "tesla_model_y__performance_awd__3",
+        "modelId": "tesla_model_y",
+        "brand": "Tesla",
+        "model": "Model Y",
+        "trim": "Performance AWD",
+        "year": 2027,
+        "generation": "2025 refresh / Juniper, with current orderable MY27 detail changes flagged",
+        "vehicleClass": "passenger",
+        "drive": "AWD"
+      }
+    },
+    {
+      "variantId": "tesla_model_y__premium_long_range_awd__1",
+      "before": {
+        "id": "tesla_model_y__premium_long_range_awd__1",
+        "modelId": "tesla_model_y",
+        "brand": "Tesla",
+        "model": "Model Y",
+        "trim": "Premium Long Range AWD",
+        "year": 2027,
+        "generation": "2025 refresh / Juniper, with current orderable MY27 detail changes flagged",
+        "vehicleClass": "passenger",
+        "drive": "AWD"
+      }
+    },
+    {
+      "variantId": "tesla_model_y__premium_rwd__2",
+      "before": {
+        "id": "tesla_model_y__premium_rwd__2",
+        "modelId": "tesla_model_y",
+        "brand": "Tesla",
+        "model": "Model Y",
+        "trim": "Premium RWD",
+        "year": 2027,
+        "generation": "2025 refresh / Juniper, with current orderable MY27 detail changes flagged",
+        "vehicleClass": "passenger",
+        "drive": "RWD"
+      }
+    }
+  ],
+  "versionUpdates": [],
+  "facts": [
+    {
+      "variantId": "tesla_model_y__premium_long_range_awd__1",
+      "before": {
+        "key": "price_aud",
+        "label": "Published price",
+        "value": 68900,
+        "unit": "AUD",
+        "basis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+        "comparisonBasis": "Before on-road costs",
+        "status": "standard",
+        "sourceIds": [
+          "m1-tesla-2026-10-14-my-config"
+        ],
+        "date": "2026-10-14",
+        "market": "AU",
+        "scope": "Tesla Model Y Premium Long Range AWD",
+        "qualifications": [
+          "A$1,400 delivery fee and A$400 order fee are additional; government on-road costs and optional equipment are extra."
+        ],
+        "issues": [],
+        "buyerGrade": "confirmed",
+        "gradeReview": {
+          "reviewedAt": "2026-10-14",
+          "overlayId": "m1-tesla-2026-10-14",
+          "reason": "Exact named Australian configurator base price; higher maker list/national driveaway rung not found. Mandatory fees are disclosed separately without changing the published base number.",
+          "evidenceScope": "exact_au_version",
+          "sourceIds": [
+            "m1-tesla-2026-10-14-my-config"
+          ],
+          "sourceLabel": "Tesla Australia"
+        },
+        "conditionExplanation": "A$1,400 delivery fee and A$400 order fee are additional; government on-road costs and optional equipment are extra.",
+        "priceEvidence": {
+          "rung": 3,
+          "basisTag": "Maker’s configurator · before on-road costs",
+          "sourceKey": "price_aud",
+          "sourcePointer": "https://www.tesla.com/en_au/modely/design?redirect=no",
+          "originalBasis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+          "rankingEligible": true
+        }
+      },
+      "after": {
+        "key": "price_aud",
+        "label": "Published price",
+        "value": 68900,
+        "unit": "AUD",
+        "basis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+        "comparisonBasis": "Before on-road costs",
+        "status": "standard",
+        "sourceIds": [
+          "refresh-tesla-2026-11-05-my-design"
+        ],
+        "date": "2026-11-05",
+        "market": "AU",
+        "scope": "Tesla Model Y Premium Long Range AWD",
+        "qualifications": [
+          "A$1,400 delivery fee and A$400 order fee are additional; government on-road costs and optional equipment are extra."
+        ],
+        "issues": [],
+        "buyerGrade": "confirmed",
+        "gradeReview": {
+          "reviewedAt": "2026-11-05",
+          "overlayId": "refresh-tesla-2026-11-05",
+          "reason": "Rechecked 2026-11-05 against the cited page: unchanged. Design page shows the same price as 14 October.",
+          "evidenceScope": "exact_au_version",
+          "sourceIds": [
+            "refresh-tesla-2026-11-05-my-design"
+          ],
+          "sourceLabel": "Tesla Australia"
+        },
+        "priceEvidence": {
+          "rung": 3,
+          "basisTag": "Maker’s configurator · before on-road costs",
+          "sourceKey": "price_aud",
+          "sourcePointer": "https://www.tesla.com/en_au/modely/design?redirect=no",
+          "originalBasis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+          "rankingEligible": true
+        }
+      }
+    },
+    {
+      "variantId": "tesla_model_y__premium_rwd__2",
+      "before": {
+        "key": "price_aud",
+        "label": "Published price",
+        "value": 58900,
+        "unit": "AUD",
+        "basis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+        "comparisonBasis": "Before on-road costs",
+        "status": "standard",
+        "sourceIds": [
+          "m1-tesla-2026-10-14-my-config"
+        ],
+        "date": "2026-10-14",
+        "market": "AU",
+        "scope": "Tesla Model Y Premium RWD",
+        "qualifications": [
+          "A$1,400 delivery fee and A$400 order fee are additional; government on-road costs and optional equipment are extra."
+        ],
+        "issues": [],
+        "buyerGrade": "confirmed",
+        "gradeReview": {
+          "reviewedAt": "2026-10-14",
+          "overlayId": "m1-tesla-2026-10-14",
+          "reason": "Exact named Australian configurator base price; higher maker list/national driveaway rung not found. Mandatory fees are disclosed separately without changing the published base number.",
+          "evidenceScope": "exact_au_version",
+          "sourceIds": [
+            "m1-tesla-2026-10-14-my-config"
+          ],
+          "sourceLabel": "Tesla Australia"
+        },
+        "conditionExplanation": "A$1,400 delivery fee and A$400 order fee are additional; government on-road costs and optional equipment are extra.",
+        "priceEvidence": {
+          "rung": 3,
+          "basisTag": "Maker’s configurator · before on-road costs",
+          "sourceKey": "price_aud",
+          "sourcePointer": "https://www.tesla.com/en_au/modely/design?redirect=no",
+          "originalBasis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+          "rankingEligible": true
+        }
+      },
+      "after": {
+        "key": "price_aud",
+        "label": "Published price",
+        "value": 58900,
+        "unit": "AUD",
+        "basis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+        "comparisonBasis": "Before on-road costs",
+        "status": "standard",
+        "sourceIds": [
+          "refresh-tesla-2026-11-05-my-design"
+        ],
+        "date": "2026-11-05",
+        "market": "AU",
+        "scope": "Tesla Model Y Premium RWD",
+        "qualifications": [
+          "A$1,400 delivery fee and A$400 order fee are additional; government on-road costs and optional equipment are extra."
+        ],
+        "issues": [],
+        "buyerGrade": "confirmed",
+        "gradeReview": {
+          "reviewedAt": "2026-11-05",
+          "overlayId": "refresh-tesla-2026-11-05",
+          "reason": "Rechecked 2026-11-05 against the cited page: unchanged. Design page shows the same price as 14 October.",
+          "evidenceScope": "exact_au_version",
+          "sourceIds": [
+            "refresh-tesla-2026-11-05-my-design"
+          ],
+          "sourceLabel": "Tesla Australia"
+        },
+        "priceEvidence": {
+          "rung": 3,
+          "basisTag": "Maker’s configurator · before on-road costs",
+          "sourceKey": "price_aud",
+          "sourcePointer": "https://www.tesla.com/en_au/modely/design?redirect=no",
+          "originalBasis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+          "rankingEligible": true
+        }
+      }
+    },
+    {
+      "variantId": "tesla_model_y__l_premium_awd__4",
+      "before": {
+        "key": "price_aud",
+        "label": "Published price",
+        "value": 74900,
+        "unit": "AUD",
+        "basis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+        "comparisonBasis": "Before on-road costs",
+        "status": "standard",
+        "sourceIds": [
+          "m1-tesla-2026-10-14-my-config"
+        ],
+        "date": "2026-10-14",
+        "market": "AU",
+        "scope": "Tesla Model Y L Premium AWD (six-seat)",
+        "qualifications": [
+          "A$1,400 delivery fee and A$400 order fee are additional; government on-road costs and optional equipment are extra."
+        ],
+        "issues": [],
+        "buyerGrade": "confirmed",
+        "gradeReview": {
+          "reviewedAt": "2026-10-14",
+          "overlayId": "m1-tesla-2026-10-14",
+          "reason": "Exact named Australian configurator base price; higher maker list/national driveaway rung not found. Mandatory fees are disclosed separately without changing the published base number.",
+          "evidenceScope": "exact_au_version",
+          "sourceIds": [
+            "m1-tesla-2026-10-14-my-config"
+          ],
+          "sourceLabel": "Tesla Australia"
+        },
+        "conditionExplanation": "A$1,400 delivery fee and A$400 order fee are additional; government on-road costs and optional equipment are extra.",
+        "priceEvidence": {
+          "rung": 3,
+          "basisTag": "Maker’s configurator · before on-road costs",
+          "sourceKey": "price_aud",
+          "sourcePointer": "https://www.tesla.com/en_au/modely/design?redirect=no",
+          "originalBasis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+          "rankingEligible": true
+        }
+      },
+      "after": {
+        "key": "price_aud",
+        "label": "Published price",
+        "value": 74900,
+        "unit": "AUD",
+        "basis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+        "comparisonBasis": "Before on-road costs",
+        "status": "standard",
+        "sourceIds": [
+          "refresh-tesla-2026-11-05-my-design"
+        ],
+        "date": "2026-11-05",
+        "market": "AU",
+        "scope": "Tesla Model Y L Premium AWD (six-seat)",
+        "qualifications": [
+          "A$1,400 delivery fee and A$400 order fee are additional; government on-road costs and optional equipment are extra."
+        ],
+        "issues": [],
+        "buyerGrade": "confirmed",
+        "gradeReview": {
+          "reviewedAt": "2026-11-05",
+          "overlayId": "refresh-tesla-2026-11-05",
+          "reason": "Rechecked 2026-11-05 against the cited page: unchanged. Design page shows the same price as 14 October.",
+          "evidenceScope": "exact_au_version",
+          "sourceIds": [
+            "refresh-tesla-2026-11-05-my-design"
+          ],
+          "sourceLabel": "Tesla Australia"
+        },
+        "priceEvidence": {
+          "rung": 3,
+          "basisTag": "Maker’s configurator · before on-road costs",
+          "sourceKey": "price_aud",
+          "sourcePointer": "https://www.tesla.com/en_au/modely/design?redirect=no",
+          "originalBasis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+          "rankingEligible": true
+        }
+      }
+    },
+    {
+      "variantId": "tesla_model_y__performance_awd__3",
+      "before": {
+        "key": "price_aud",
+        "label": "Published price",
+        "value": 84900,
+        "unit": "AUD",
+        "basis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+        "comparisonBasis": "Before on-road costs",
+        "status": "standard",
+        "sourceIds": [
+          "m1-tesla-2026-10-14-my-config"
+        ],
+        "date": "2026-10-14",
+        "market": "AU",
+        "scope": "Tesla Model Y Performance AWD",
+        "qualifications": [
+          "A$1,400 delivery fee and A$400 order fee are additional; government on-road costs and optional equipment are extra."
+        ],
+        "issues": [],
+        "buyerGrade": "confirmed",
+        "gradeReview": {
+          "reviewedAt": "2026-10-14",
+          "overlayId": "m1-tesla-2026-10-14",
+          "reason": "Exact named Australian configurator base price; higher maker list/national driveaway rung not found. Mandatory fees are disclosed separately without changing the published base number.",
+          "evidenceScope": "exact_au_version",
+          "sourceIds": [
+            "m1-tesla-2026-10-14-my-config"
+          ],
+          "sourceLabel": "Tesla Australia"
+        },
+        "conditionExplanation": "A$1,400 delivery fee and A$400 order fee are additional; government on-road costs and optional equipment are extra.",
+        "priceEvidence": {
+          "rung": 3,
+          "basisTag": "Maker’s configurator · before on-road costs",
+          "sourceKey": "price_aud",
+          "sourcePointer": "https://www.tesla.com/en_au/modely/design?redirect=no",
+          "originalBasis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+          "rankingEligible": true
+        }
+      },
+      "after": {
+        "key": "price_aud",
+        "label": "Published price",
+        "value": 84900,
+        "unit": "AUD",
+        "basis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+        "comparisonBasis": "Before on-road costs",
+        "status": "standard",
+        "sourceIds": [
+          "refresh-tesla-2026-11-05-my-design"
+        ],
+        "date": "2026-11-05",
+        "market": "AU",
+        "scope": "Tesla Model Y Performance AWD",
+        "qualifications": [
+          "A$1,400 delivery fee and A$400 order fee are additional; government on-road costs and optional equipment are extra."
+        ],
+        "issues": [],
+        "buyerGrade": "confirmed",
+        "gradeReview": {
+          "reviewedAt": "2026-11-05",
+          "overlayId": "refresh-tesla-2026-11-05",
+          "reason": "Rechecked 2026-11-05 against the cited page: unchanged. Design page shows the same price as 14 October.",
+          "evidenceScope": "exact_au_version",
+          "sourceIds": [
+            "refresh-tesla-2026-11-05-my-design"
+          ],
+          "sourceLabel": "Tesla Australia"
+        },
+        "priceEvidence": {
+          "rung": 3,
+          "basisTag": "Maker’s configurator · before on-road costs",
+          "sourceKey": "price_aud",
+          "sourcePointer": "https://www.tesla.com/en_au/modely/design?redirect=no",
+          "originalBasis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+          "rankingEligible": true
+        }
+      }
+    },
+    {
+      "variantId": "tesla_model_3__premium_long_range_rwd__1",
+      "before": {
+        "key": "price_aud",
+        "label": "Published price",
+        "value": 61900,
+        "unit": "AUD",
+        "basis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+        "comparisonBasis": "Before on-road costs",
+        "status": "standard",
+        "sourceIds": [
+          "m1-tesla-2026-10-14-m3-config"
+        ],
+        "date": "2026-10-14",
+        "market": "AU",
+        "scope": "Tesla Model 3 Premium Long Range RWD",
+        "qualifications": [
+          "A$1,400 delivery fee and A$400 order fee are additional; government on-road costs and optional equipment are extra. No inventory discount, trade-in bonus, petrol saving or financing assumption applied."
+        ],
+        "issues": [],
+        "buyerGrade": "confirmed",
+        "gradeReview": {
+          "reviewedAt": "2026-10-14",
+          "overlayId": "m1-tesla-2026-10-14",
+          "reason": "Exact named Australian configurator base price; higher maker list/national driveaway rung not found. Mandatory fees are disclosed separately without changing the published base number.",
+          "evidenceScope": "exact_au_version",
+          "sourceIds": [
+            "m1-tesla-2026-10-14-m3-config"
+          ],
+          "sourceLabel": "Tesla Australia"
+        },
+        "priceEvidence": {
+          "rung": 3,
+          "basisTag": "Maker’s configurator · before on-road costs",
+          "sourceKey": "price_aud",
+          "sourcePointer": "https://www.tesla.com/en_au/model3/design",
+          "originalBasis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+          "rankingEligible": true
+        }
+      },
+      "after": {
+        "key": "price_aud",
+        "label": "Published price",
+        "value": 61900,
+        "unit": "AUD",
+        "basis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+        "comparisonBasis": "Before on-road costs",
+        "status": "standard",
+        "sourceIds": [
+          "refresh-tesla-2026-11-05-m3-design"
+        ],
+        "date": "2026-11-05",
+        "market": "AU",
+        "scope": "Tesla Model 3 Premium Long Range RWD",
+        "qualifications": [
+          "A$1,400 delivery fee and A$400 order fee are additional; government on-road costs and optional equipment are extra. No inventory discount, trade-in bonus, petrol saving or financing assumption applied."
+        ],
+        "issues": [],
+        "buyerGrade": "confirmed",
+        "gradeReview": {
+          "reviewedAt": "2026-11-05",
+          "overlayId": "refresh-tesla-2026-11-05",
+          "reason": "Rechecked 2026-11-05 against the cited page: unchanged. Design page shows the same price as 14 October.",
+          "evidenceScope": "exact_au_version",
+          "sourceIds": [
+            "refresh-tesla-2026-11-05-m3-design"
+          ],
+          "sourceLabel": "Tesla Australia"
+        },
+        "priceEvidence": {
+          "rung": 3,
+          "basisTag": "Maker’s configurator · before on-road costs",
+          "sourceKey": "price_aud",
+          "sourcePointer": "https://www.tesla.com/en_au/model3/design",
+          "originalBasis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+          "rankingEligible": true
+        }
+      }
+    },
+    {
+      "variantId": "tesla_model_3__premium_rwd__2",
+      "before": {
+        "key": "price_aud",
+        "label": "Published price",
+        "value": 54900,
+        "unit": "AUD",
+        "basis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+        "comparisonBasis": "Before on-road costs",
+        "status": "standard",
+        "sourceIds": [
+          "m1-tesla-2026-10-14-m3-config"
+        ],
+        "date": "2026-10-14",
+        "market": "AU",
+        "scope": "Tesla Model 3 Premium RWD",
+        "qualifications": [
+          "A$1,400 delivery fee and A$400 order fee are additional; government on-road costs and optional equipment are extra. No inventory discount, trade-in bonus, petrol saving or financing assumption applied."
+        ],
+        "issues": [],
+        "buyerGrade": "confirmed",
+        "gradeReview": {
+          "reviewedAt": "2026-10-14",
+          "overlayId": "m1-tesla-2026-10-14",
+          "reason": "Exact named Australian configurator base price; higher maker list/national driveaway rung not found. Mandatory fees are disclosed separately without changing the published base number.",
+          "evidenceScope": "exact_au_version",
+          "sourceIds": [
+            "m1-tesla-2026-10-14-m3-config"
+          ],
+          "sourceLabel": "Tesla Australia"
+        },
+        "priceEvidence": {
+          "rung": 3,
+          "basisTag": "Maker’s configurator · before on-road costs",
+          "sourceKey": "price_aud",
+          "sourcePointer": "https://www.tesla.com/en_au/model3/design",
+          "originalBasis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+          "rankingEligible": true
+        }
+      },
+      "after": {
+        "key": "price_aud",
+        "label": "Published price",
+        "value": 54900,
+        "unit": "AUD",
+        "basis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+        "comparisonBasis": "Before on-road costs",
+        "status": "standard",
+        "sourceIds": [
+          "refresh-tesla-2026-11-05-m3-design"
+        ],
+        "date": "2026-11-05",
+        "market": "AU",
+        "scope": "Tesla Model 3 Premium RWD",
+        "qualifications": [
+          "A$1,400 delivery fee and A$400 order fee are additional; government on-road costs and optional equipment are extra. No inventory discount, trade-in bonus, petrol saving or financing assumption applied."
+        ],
+        "issues": [],
+        "buyerGrade": "confirmed",
+        "gradeReview": {
+          "reviewedAt": "2026-11-05",
+          "overlayId": "refresh-tesla-2026-11-05",
+          "reason": "Rechecked 2026-11-05 against the cited page: unchanged. Design page shows the same price as 14 October.",
+          "evidenceScope": "exact_au_version",
+          "sourceIds": [
+            "refresh-tesla-2026-11-05-m3-design"
+          ],
+          "sourceLabel": "Tesla Australia"
+        },
+        "priceEvidence": {
+          "rung": 3,
+          "basisTag": "Maker’s configurator · before on-road costs",
+          "sourceKey": "price_aud",
+          "sourcePointer": "https://www.tesla.com/en_au/model3/design",
+          "originalBasis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+          "rankingEligible": true
+        }
+      }
+    },
+    {
+      "variantId": "tesla_model_3__rear_wheel_drive__3",
+      "before": {
+        "key": "price_aud",
+        "label": "Published price",
+        "value": 45900,
+        "unit": "AUD",
+        "basis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+        "comparisonBasis": "Before on-road costs",
+        "status": "standard",
+        "sourceIds": [
+          "m1-tesla-2026-10-14-m3-config"
+        ],
+        "date": "2026-10-14",
+        "market": "AU",
+        "scope": "Tesla Model 3 Rear-Wheel Drive",
+        "qualifications": [
+          "A$1,400 delivery fee and A$400 order fee are additional; government on-road costs and optional equipment are extra. No inventory discount, trade-in bonus, petrol saving or financing assumption applied."
+        ],
+        "issues": [],
+        "buyerGrade": "confirmed",
+        "gradeReview": {
+          "reviewedAt": "2026-10-14",
+          "overlayId": "m1-tesla-2026-10-14",
+          "reason": "Exact named Australian configurator base price; higher maker list/national driveaway rung not found. Mandatory fees are disclosed separately without changing the published base number.",
+          "evidenceScope": "exact_au_version",
+          "sourceIds": [
+            "m1-tesla-2026-10-14-m3-config"
+          ],
+          "sourceLabel": "Tesla Australia"
+        },
+        "priceEvidence": {
+          "rung": 3,
+          "basisTag": "Maker’s configurator · before on-road costs",
+          "sourceKey": "price_aud",
+          "sourcePointer": "https://www.tesla.com/en_au/model3/design",
+          "originalBasis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+          "rankingEligible": true
+        }
+      },
+      "after": {
+        "key": "price_aud",
+        "label": "Published price",
+        "value": 45900,
+        "unit": "AUD",
+        "basis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+        "comparisonBasis": "Before on-road costs",
+        "status": "standard",
+        "sourceIds": [
+          "refresh-tesla-2026-11-05-m3-design"
+        ],
+        "date": "2026-11-05",
+        "market": "AU",
+        "scope": "Tesla Model 3 Rear-Wheel Drive",
+        "qualifications": [
+          "A$1,400 delivery fee and A$400 order fee are additional; government on-road costs and optional equipment are extra. No inventory discount, trade-in bonus, petrol saving or financing assumption applied."
+        ],
+        "issues": [],
+        "buyerGrade": "confirmed",
+        "gradeReview": {
+          "reviewedAt": "2026-11-05",
+          "overlayId": "refresh-tesla-2026-11-05",
+          "reason": "Rechecked 2026-11-05 against the cited page: unchanged. Design page shows the same price as 14 October.",
+          "evidenceScope": "exact_au_version",
+          "sourceIds": [
+            "refresh-tesla-2026-11-05-m3-design"
+          ],
+          "sourceLabel": "Tesla Australia"
+        },
+        "priceEvidence": {
+          "rung": 3,
+          "basisTag": "Maker’s configurator · before on-road costs",
+          "sourceKey": "price_aud",
+          "sourcePointer": "https://www.tesla.com/en_au/model3/design",
+          "originalBasis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+          "rankingEligible": true
+        }
+      }
+    },
+    {
+      "variantId": "tesla_model_3__performance_awd__4",
+      "before": {
+        "key": "price_aud",
+        "label": "Published price",
+        "value": 80900,
+        "unit": "AUD",
+        "basis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+        "comparisonBasis": "Before on-road costs",
+        "status": "standard",
+        "sourceIds": [
+          "m1-tesla-2026-10-14-m3-config"
+        ],
+        "date": "2026-10-14",
+        "market": "AU",
+        "scope": "Tesla Model 3 Performance AWD",
+        "qualifications": [
+          "A$1,400 delivery fee and A$400 order fee are additional; government on-road costs and optional equipment are extra. No inventory discount, trade-in bonus, petrol saving or financing assumption applied."
+        ],
+        "issues": [],
+        "buyerGrade": "confirmed",
+        "gradeReview": {
+          "reviewedAt": "2026-10-14",
+          "overlayId": "m1-tesla-2026-10-14",
+          "reason": "Exact named Australian configurator base price; higher maker list/national driveaway rung not found. Mandatory fees are disclosed separately without changing the published base number.",
+          "evidenceScope": "exact_au_version",
+          "sourceIds": [
+            "m1-tesla-2026-10-14-m3-config"
+          ],
+          "sourceLabel": "Tesla Australia"
+        },
+        "priceEvidence": {
+          "rung": 3,
+          "basisTag": "Maker’s configurator · before on-road costs",
+          "sourceKey": "price_aud",
+          "sourcePointer": "https://www.tesla.com/en_au/model3/design",
+          "originalBasis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+          "rankingEligible": true
+        }
+      },
+      "after": {
+        "key": "price_aud",
+        "label": "Published price",
+        "value": 80900,
+        "unit": "AUD",
+        "basis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+        "comparisonBasis": "Before on-road costs",
+        "status": "standard",
+        "sourceIds": [
+          "refresh-tesla-2026-11-05-m3-design"
+        ],
+        "date": "2026-11-05",
+        "market": "AU",
+        "scope": "Tesla Model 3 Performance AWD",
+        "qualifications": [
+          "A$1,400 delivery fee and A$400 order fee are additional; government on-road costs and optional equipment are extra. No inventory discount, trade-in bonus, petrol saving or financing assumption applied."
+        ],
+        "issues": [],
+        "buyerGrade": "confirmed",
+        "gradeReview": {
+          "reviewedAt": "2026-11-05",
+          "overlayId": "refresh-tesla-2026-11-05",
+          "reason": "Rechecked 2026-11-05 against the cited page: unchanged. Design page shows the same price as 14 October.",
+          "evidenceScope": "exact_au_version",
+          "sourceIds": [
+            "refresh-tesla-2026-11-05-m3-design"
+          ],
+          "sourceLabel": "Tesla Australia"
+        },
+        "priceEvidence": {
+          "rung": 3,
+          "basisTag": "Maker’s configurator · before on-road costs",
+          "sourceKey": "price_aud",
+          "sourcePointer": "https://www.tesla.com/en_au/model3/design",
+          "originalBasis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+          "rankingEligible": true
+        }
+      }
+    }
+  ],
+  "availability": [
+    {
+      "id": "refresh-tesla-2026-11-05-availability-tesla_model_y__premium_long_range_awd__1",
+      "variantId": "tesla_model_y__premium_long_range_awd__1",
+      "before": {
+        "availability": "current_or_order_listed",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "orderStatus": "accepting_orders_advertised",
+          "stockStatus": "no_new_stock_verified",
+          "sourceIds": [
+            "m1-tesla-2026-10-14-my-config"
+          ],
+          "physicalStockVerified": false,
+          "factoryOrderAcceptanceVerified": false,
+          "qualifications": [
+            "Exact named version is selectable in Tesla Australia’s new-vehicle configurator. No order was submitted; accepted factory allocation, delivery timing and physical stock remain unverified."
+          ]
+        }
+      },
+      "after": {
+        "availability": "current_or_order_listed",
+        "evidence": {
+          "checkedAt": "2026-11-05",
+          "orderStatus": "accepting_orders_advertised",
+          "stockStatus": "no_new_stock_verified",
+          "sourceIds": [
+            "refresh-tesla-2026-11-05-my-design"
+          ],
+          "physicalStockVerified": false,
+          "factoryOrderAcceptanceVerified": false,
+          "qualifications": [
+            "Exact named version is selectable in Tesla Australia’s new-vehicle configurator. No order was submitted; accepted factory allocation, delivery timing and physical stock remain unverified."
+          ]
+        }
+      },
+      "status": "approved",
+      "reviewedBy": "Roadmark WS2 refresh (Claude Code worker), Tesla",
+      "reviewedAt": "2026-11-05",
+      "evidenceDate": "2026-11-05",
+      "reason": "Rechecked 2026-11-05: availability unchanged"
+    },
+    {
+      "id": "refresh-tesla-2026-11-05-availability-tesla_model_y__premium_rwd__2",
+      "variantId": "tesla_model_y__premium_rwd__2",
+      "before": {
+        "availability": "current_or_order_listed",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "orderStatus": "accepting_orders_advertised",
+          "stockStatus": "no_new_stock_verified",
+          "sourceIds": [
+            "m1-tesla-2026-10-14-my-config"
+          ],
+          "physicalStockVerified": false,
+          "factoryOrderAcceptanceVerified": false,
+          "qualifications": [
+            "Exact named version is selectable in Tesla Australia’s new-vehicle configurator. No order was submitted; accepted factory allocation, delivery timing and physical stock remain unverified."
+          ]
+        }
+      },
+      "after": {
+        "availability": "current_or_order_listed",
+        "evidence": {
+          "checkedAt": "2026-11-05",
+          "orderStatus": "accepting_orders_advertised",
+          "stockStatus": "no_new_stock_verified",
+          "sourceIds": [
+            "refresh-tesla-2026-11-05-my-design"
+          ],
+          "physicalStockVerified": false,
+          "factoryOrderAcceptanceVerified": false,
+          "qualifications": [
+            "Exact named version is selectable in Tesla Australia’s new-vehicle configurator. No order was submitted; accepted factory allocation, delivery timing and physical stock remain unverified."
+          ]
+        }
+      },
+      "status": "approved",
+      "reviewedBy": "Roadmark WS2 refresh (Claude Code worker), Tesla",
+      "reviewedAt": "2026-11-05",
+      "evidenceDate": "2026-11-05",
+      "reason": "Rechecked 2026-11-05: availability unchanged"
+    },
+    {
+      "id": "refresh-tesla-2026-11-05-availability-tesla_model_y__l_premium_awd__4",
+      "variantId": "tesla_model_y__l_premium_awd__4",
+      "before": {
+        "availability": "current_or_order_listed",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "orderStatus": "accepting_orders_advertised",
+          "stockStatus": "no_new_stock_verified",
+          "sourceIds": [
+            "m1-tesla-2026-10-14-my-config"
+          ],
+          "physicalStockVerified": false,
+          "factoryOrderAcceptanceVerified": false,
+          "qualifications": [
+            "Exact named version is selectable in Tesla Australia’s new-vehicle configurator. No order was submitted; accepted factory allocation, delivery timing and physical stock remain unverified."
+          ]
+        }
+      },
+      "after": {
+        "availability": "current_or_order_listed",
+        "evidence": {
+          "checkedAt": "2026-11-05",
+          "orderStatus": "accepting_orders_advertised",
+          "stockStatus": "no_new_stock_verified",
+          "sourceIds": [
+            "refresh-tesla-2026-11-05-my-design"
+          ],
+          "physicalStockVerified": false,
+          "factoryOrderAcceptanceVerified": false,
+          "qualifications": [
+            "Exact named version is selectable in Tesla Australia’s new-vehicle configurator. No order was submitted; accepted factory allocation, delivery timing and physical stock remain unverified."
+          ]
+        }
+      },
+      "status": "approved",
+      "reviewedBy": "Roadmark WS2 refresh (Claude Code worker), Tesla",
+      "reviewedAt": "2026-11-05",
+      "evidenceDate": "2026-11-05",
+      "reason": "Rechecked 2026-11-05: availability unchanged"
+    },
+    {
+      "id": "refresh-tesla-2026-11-05-availability-tesla_model_y__performance_awd__3",
+      "variantId": "tesla_model_y__performance_awd__3",
+      "before": {
+        "availability": "current_or_order_listed",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "orderStatus": "accepting_orders_advertised",
+          "stockStatus": "no_new_stock_verified",
+          "sourceIds": [
+            "m1-tesla-2026-10-14-my-config"
+          ],
+          "physicalStockVerified": false,
+          "factoryOrderAcceptanceVerified": false,
+          "qualifications": [
+            "Exact named version is selectable in Tesla Australia’s new-vehicle configurator. No order was submitted; accepted factory allocation, delivery timing and physical stock remain unverified."
+          ]
+        }
+      },
+      "after": {
+        "availability": "current_or_order_listed",
+        "evidence": {
+          "checkedAt": "2026-11-05",
+          "orderStatus": "accepting_orders_advertised",
+          "stockStatus": "no_new_stock_verified",
+          "sourceIds": [
+            "refresh-tesla-2026-11-05-my-design"
+          ],
+          "physicalStockVerified": false,
+          "factoryOrderAcceptanceVerified": false,
+          "qualifications": [
+            "Exact named version is selectable in Tesla Australia’s new-vehicle configurator. No order was submitted; accepted factory allocation, delivery timing and physical stock remain unverified."
+          ]
+        }
+      },
+      "status": "approved",
+      "reviewedBy": "Roadmark WS2 refresh (Claude Code worker), Tesla",
+      "reviewedAt": "2026-11-05",
+      "evidenceDate": "2026-11-05",
+      "reason": "Rechecked 2026-11-05: availability unchanged"
+    },
+    {
+      "id": "refresh-tesla-2026-11-05-availability-tesla_model_3__premium_long_range_rwd__1",
+      "variantId": "tesla_model_3__premium_long_range_rwd__1",
+      "before": {
+        "availability": "current_or_order_listed",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "orderStatus": "accepting_orders_advertised",
+          "stockStatus": "no_new_stock_verified",
+          "sourceIds": [
+            "m1-tesla-2026-10-14-m3-config"
+          ],
+          "physicalStockVerified": false,
+          "factoryOrderAcceptanceVerified": false,
+          "qualifications": [
+            "Exact named version is selectable in Tesla Australia’s new-vehicle configurator. No order was submitted; accepted factory allocation, delivery timing and physical stock remain unverified."
+          ]
+        }
+      },
+      "after": {
+        "availability": "current_or_order_listed",
+        "evidence": {
+          "checkedAt": "2026-11-05",
+          "orderStatus": "accepting_orders_advertised",
+          "stockStatus": "no_new_stock_verified",
+          "sourceIds": [
+            "refresh-tesla-2026-11-05-m3-design"
+          ],
+          "physicalStockVerified": false,
+          "factoryOrderAcceptanceVerified": false,
+          "qualifications": [
+            "Exact named version is selectable in Tesla Australia’s new-vehicle configurator. No order was submitted; accepted factory allocation, delivery timing and physical stock remain unverified."
+          ]
+        }
+      },
+      "status": "approved",
+      "reviewedBy": "Roadmark WS2 refresh (Claude Code worker), Tesla",
+      "reviewedAt": "2026-11-05",
+      "evidenceDate": "2026-11-05",
+      "reason": "Rechecked 2026-11-05: availability unchanged"
+    },
+    {
+      "id": "refresh-tesla-2026-11-05-availability-tesla_model_3__premium_rwd__2",
+      "variantId": "tesla_model_3__premium_rwd__2",
+      "before": {
+        "availability": "current_or_order_listed",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "orderStatus": "accepting_orders_advertised",
+          "stockStatus": "no_new_stock_verified",
+          "sourceIds": [
+            "m1-tesla-2026-10-14-m3-config"
+          ],
+          "physicalStockVerified": false,
+          "factoryOrderAcceptanceVerified": false,
+          "qualifications": [
+            "Exact named version is selectable in Tesla Australia’s new-vehicle configurator. No order was submitted; accepted factory allocation, delivery timing and physical stock remain unverified."
+          ]
+        }
+      },
+      "after": {
+        "availability": "current_or_order_listed",
+        "evidence": {
+          "checkedAt": "2026-11-05",
+          "orderStatus": "accepting_orders_advertised",
+          "stockStatus": "no_new_stock_verified",
+          "sourceIds": [
+            "refresh-tesla-2026-11-05-m3-design"
+          ],
+          "physicalStockVerified": false,
+          "factoryOrderAcceptanceVerified": false,
+          "qualifications": [
+            "Exact named version is selectable in Tesla Australia’s new-vehicle configurator. No order was submitted; accepted factory allocation, delivery timing and physical stock remain unverified."
+          ]
+        }
+      },
+      "status": "approved",
+      "reviewedBy": "Roadmark WS2 refresh (Claude Code worker), Tesla",
+      "reviewedAt": "2026-11-05",
+      "evidenceDate": "2026-11-05",
+      "reason": "Rechecked 2026-11-05: availability unchanged"
+    },
+    {
+      "id": "refresh-tesla-2026-11-05-availability-tesla_model_3__rear_wheel_drive__3",
+      "variantId": "tesla_model_3__rear_wheel_drive__3",
+      "before": {
+        "availability": "current_or_order_listed",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "orderStatus": "accepting_orders_advertised",
+          "stockStatus": "no_new_stock_verified",
+          "sourceIds": [
+            "m1-tesla-2026-10-14-m3-config"
+          ],
+          "physicalStockVerified": false,
+          "factoryOrderAcceptanceVerified": false,
+          "qualifications": [
+            "Exact named version is selectable in Tesla Australia’s new-vehicle configurator. No order was submitted; accepted factory allocation, delivery timing and physical stock remain unverified."
+          ]
+        }
+      },
+      "after": {
+        "availability": "current_or_order_listed",
+        "evidence": {
+          "checkedAt": "2026-11-05",
+          "orderStatus": "accepting_orders_advertised",
+          "stockStatus": "no_new_stock_verified",
+          "sourceIds": [
+            "refresh-tesla-2026-11-05-m3-design"
+          ],
+          "physicalStockVerified": false,
+          "factoryOrderAcceptanceVerified": false,
+          "qualifications": [
+            "Exact named version is selectable in Tesla Australia’s new-vehicle configurator. No order was submitted; accepted factory allocation, delivery timing and physical stock remain unverified."
+          ]
+        }
+      },
+      "status": "approved",
+      "reviewedBy": "Roadmark WS2 refresh (Claude Code worker), Tesla",
+      "reviewedAt": "2026-11-05",
+      "evidenceDate": "2026-11-05",
+      "reason": "Rechecked 2026-11-05: availability unchanged"
+    },
+    {
+      "id": "refresh-tesla-2026-11-05-availability-tesla_model_3__performance_awd__4",
+      "variantId": "tesla_model_3__performance_awd__4",
+      "before": {
+        "availability": "current_or_order_listed",
+        "evidence": {
+          "checkedAt": "2026-10-14",
+          "orderStatus": "accepting_orders_advertised",
+          "stockStatus": "no_new_stock_verified",
+          "sourceIds": [
+            "m1-tesla-2026-10-14-m3-config"
+          ],
+          "physicalStockVerified": false,
+          "factoryOrderAcceptanceVerified": false,
+          "qualifications": [
+            "Exact named version is selectable in Tesla Australia’s new-vehicle configurator. No order was submitted; accepted factory allocation, delivery timing and physical stock remain unverified."
+          ]
+        }
+      },
+      "after": {
+        "availability": "current_or_order_listed",
+        "evidence": {
+          "checkedAt": "2026-11-05",
+          "orderStatus": "accepting_orders_advertised",
+          "stockStatus": "no_new_stock_verified",
+          "sourceIds": [
+            "refresh-tesla-2026-11-05-m3-design"
+          ],
+          "physicalStockVerified": false,
+          "factoryOrderAcceptanceVerified": false,
+          "qualifications": [
+            "Exact named version is selectable in Tesla Australia’s new-vehicle configurator. No order was submitted; accepted factory allocation, delivery timing and physical stock remain unverified."
+          ]
+        }
+      },
+      "status": "approved",
+      "reviewedBy": "Roadmark WS2 refresh (Claude Code worker), Tesla",
+      "reviewedAt": "2026-11-05",
+      "evidenceDate": "2026-11-05",
+      "reason": "Rechecked 2026-11-05: availability unchanged"
+    }
+  ],
+  "summaries": [
+    {
+      "variantId": "tesla_model_y__performance_awd__3",
+      "conditions": [
+        "The acceleration claim subtracts rollout."
+      ],
+      "strength": {
+        "label": "Quick all-wheel-drive SUV",
+        "text": "Tesla claims 3.5 seconds to 100 km/h with rollout subtracted, paired with all-wheel drive.",
+        "dependencies": [
+          {
+            "key": "zero_to_100_s",
+            "expected": {
+              "key": "zero_to_100_s",
+              "label": "0–100 km/h",
+              "value": 3.5,
+              "unit": "s",
+              "basis": "0–100 km/h with rollout subtracted",
+              "comparisonBasis": "0–100 km/h with rollout subtracted",
+              "status": "conditional",
+              "sourceIds": [
+                "m1-tesla-2026-10-14-my-product",
+                "m1-tesla-2026-10-14-my-config"
+              ],
+              "date": "2026-10-14",
+              "market": "AU",
+              "scope": "Tesla Model Y Performance AWD",
+              "qualifications": [
+                "Tesla’s 3.5-second claim subtracts rollout."
+              ],
+              "issues": [],
+              "buyerGrade": "check",
+              "gradeReview": {
+                "reviewedAt": "2026-10-14",
+                "overlayId": "m1-tesla-2026-10-14",
+                "reason": "Performance rollout subtraction must remain visible.",
+                "evidenceScope": "exact_au_version",
+                "sourceIds": [
+                  "m1-tesla-2026-10-14-my-product",
+                  "m1-tesla-2026-10-14-my-config"
+                ],
+                "sourceLabel": "Tesla Australia"
+              },
+              "conditionExplanation": "Tesla’s 3.5-second claim subtracts rollout."
+            }
+          },
+          {
+            "key": "drive",
+            "expected": {
+              "key": "drive",
+              "label": "Drive type",
+              "value": "AWD",
+              "unit": "",
+              "basis": "Dual-motor all-wheel drive",
+              "comparisonBasis": "Driven wheels",
+              "status": "standard",
+              "sourceIds": [
+                "m1-tesla-2026-10-14-my-product",
+                "m1-tesla-2026-10-14-my-config"
+              ],
+              "date": "2026-10-14",
+              "market": "AU",
+              "scope": "Tesla Model Y Performance AWD",
+              "qualifications": [],
+              "issues": [],
+              "buyerGrade": "confirmed",
+              "gradeReview": {
+                "reviewedAt": "2026-10-14",
+                "overlayId": "m1-tesla-2026-10-14",
+                "reason": "Directly published for the current Australian version in the cited maker source.",
+                "evidenceScope": "exact_au_version",
+                "sourceIds": [
+                  "m1-tesla-2026-10-14-my-product",
+                  "m1-tesla-2026-10-14-my-config"
+                ],
+                "sourceLabel": "Tesla Australia"
+              }
+            }
+          }
+        ]
+      },
+      "tradeoff": {
+        "label": "Higher purchase budget",
+        "text": "The A$84,900 base price also needs A$1,400 delivery, A$400 order fee and government on-roads.",
+        "dependencies": [
+          {
+            "key": "price_aud",
+            "expected": {
+              "key": "price_aud",
+              "label": "Published price",
+              "value": 84900,
+              "unit": "AUD",
+              "basis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+              "comparisonBasis": "Before on-road costs",
+              "status": "standard",
+              "sourceIds": [
+                "refresh-tesla-2026-11-05-my-design"
+              ],
+              "date": "2026-11-05",
+              "market": "AU",
+              "scope": "Tesla Model Y Performance AWD",
+              "qualifications": [
+                "A$1,400 delivery fee and A$400 order fee are additional; government on-road costs and optional equipment are extra."
+              ],
+              "issues": [],
+              "buyerGrade": "confirmed",
+              "gradeReview": {
+                "reviewedAt": "2026-11-05",
+                "overlayId": "refresh-tesla-2026-11-05",
+                "reason": "Rechecked 2026-11-05 against the cited page: unchanged. Design page shows the same price as 14 October.",
+                "evidenceScope": "exact_au_version",
+                "sourceIds": [
+                  "refresh-tesla-2026-11-05-my-design"
+                ],
+                "sourceLabel": "Tesla Australia"
+              },
+              "priceEvidence": {
+                "rung": 3,
+                "basisTag": "Maker’s configurator · before on-road costs",
+                "sourceKey": "price_aud",
+                "sourcePointer": "https://www.tesla.com/en_au/modely/design?redirect=no",
+                "originalBasis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+                "rankingEligible": true
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "variantId": "tesla_model_3__rear_wheel_drive__3",
+      "conditions": [],
+      "strength": {
+        "label": "Entry price and range",
+        "text": "A$45,900 base price pairs with 572 km WLTP range; A$1,400 delivery, A$400 order fee and on-roads are extra.",
+        "dependencies": [
+          {
+            "key": "price_aud",
+            "expected": {
+              "key": "price_aud",
+              "label": "Published price",
+              "value": 45900,
+              "unit": "AUD",
+              "basis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+              "comparisonBasis": "Before on-road costs",
+              "status": "standard",
+              "sourceIds": [
+                "refresh-tesla-2026-11-05-m3-design"
+              ],
+              "date": "2026-11-05",
+              "market": "AU",
+              "scope": "Tesla Model 3 Rear-Wheel Drive",
+              "qualifications": [
+                "A$1,400 delivery fee and A$400 order fee are additional; government on-road costs and optional equipment are extra. No inventory discount, trade-in bonus, petrol saving or financing assumption applied."
+              ],
+              "issues": [],
+              "buyerGrade": "confirmed",
+              "gradeReview": {
+                "reviewedAt": "2026-11-05",
+                "overlayId": "refresh-tesla-2026-11-05",
+                "reason": "Rechecked 2026-11-05 against the cited page: unchanged. Design page shows the same price as 14 October.",
+                "evidenceScope": "exact_au_version",
+                "sourceIds": [
+                  "refresh-tesla-2026-11-05-m3-design"
+                ],
+                "sourceLabel": "Tesla Australia"
+              },
+              "priceEvidence": {
+                "rung": 3,
+                "basisTag": "Maker’s configurator · before on-road costs",
+                "sourceKey": "price_aud",
+                "sourcePointer": "https://www.tesla.com/en_au/model3/design",
+                "originalBasis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+                "rankingEligible": true
+              }
+            }
+          },
+          {
+            "key": "range_km",
+            "expected": {
+              "key": "range_km",
+              "label": "Claimed range",
+              "value": 572,
+              "unit": "km",
+              "basis": "WLTP combined",
+              "comparisonBasis": "WLTP combined",
+              "status": "standard",
+              "sourceIds": [
+                "m1-tesla-2026-10-14-m3-product"
+              ],
+              "date": "2026-10-14",
+              "market": "AU",
+              "scope": "Tesla Model 3 Rear-Wheel Drive",
+              "qualifications": [],
+              "issues": [],
+              "buyerGrade": "confirmed",
+              "gradeReview": {
+                "reviewedAt": "2026-10-14",
+                "overlayId": "m1-tesla-2026-10-14",
+                "reason": "Current Australian maker material explicitly establishes this figure for the named version.",
+                "evidenceScope": "exact_au_version",
+                "sourceIds": [
+                  "m1-tesla-2026-10-14-m3-product"
+                ],
+                "sourceLabel": "Tesla Australia"
+              }
+            }
+          }
+        ]
+      },
+      "tradeoff": {
+        "label": "Lower charging ceiling",
+        "text": "The 175 kW DC peak limits the available fast-charging power.",
+        "dependencies": [
+          {
+            "key": "dc_peak_kw",
+            "expected": {
+              "key": "dc_peak_kw",
+              "label": "Peak DC charging power",
+              "value": 175,
+              "unit": "kW",
+              "basis": "Vehicle DC peak",
+              "comparisonBasis": "Vehicle DC peak",
+              "status": "standard",
+              "sourceIds": [
+                "m1-tesla-2026-10-14-m3-product"
+              ],
+              "date": "2026-10-14",
+              "market": "AU",
+              "scope": "Tesla Model 3 Rear-Wheel Drive",
+              "qualifications": [],
+              "issues": [],
+              "buyerGrade": "confirmed",
+              "gradeReview": {
+                "reviewedAt": "2026-10-14",
+                "overlayId": "m1-tesla-2026-10-14",
+                "reason": "Current Australian maker material explicitly establishes this figure for the named version.",
+                "evidenceScope": "exact_au_version",
+                "sourceIds": [
+                  "m1-tesla-2026-10-14-m3-product"
+                ],
+                "sourceLabel": "Tesla Australia"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

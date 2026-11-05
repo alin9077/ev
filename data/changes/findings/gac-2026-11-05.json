@@ -1,0 +1,1479 @@
+{
+  "schema": "roadmark-refresh-findings-v1",
+  "brand": "GAC",
+  "asOf": "2026-11-05",
+  "reviewedAt": "2026-11-05",
+  "reviewedBy": "Roadmark WS2 refresh (Claude Code worker), GAC",
+  "sources": [
+    {
+      "id": "refresh-gac-2026-11-05-ut-price",
+      "url": "https://www.gacgroup.com/en-au/price/AION%20UT/2025",
+      "title": "Price Details: AION UT (GAC Australia)",
+      "publisher": "GAC Australia",
+      "source_type": "official_configurator",
+      "published_date": null,
+      "accessed_date": "2026-11-05",
+      "market": "AU",
+      "supports": "Opened 2026-11-05. Choose Model: Premium $31,990.00; Luxury $35,990.00; then a postcode field. The page does not say whether these are before or after on-road costs."
+    },
+    {
+      "id": "refresh-gac-2026-11-05-ut-page",
+      "url": "https://www.gacgroup.com/en-au/hatchback/aion-ut",
+      "title": "AION UT (GAC Australia)",
+      "publisher": "GAC Australia",
+      "source_type": "manufacturer_au_specification",
+      "published_date": null,
+      "accessed_date": "2026-11-05",
+      "market": "AU",
+      "supports": "Opened 2026-11-05. 'Drive Away Price: from $31,990 AUD, Exclusive for Q4 2026 Orders'; footnote: the national drive away offer is available to orders placed between 1 October 2026 and 31 December 2026, unless otherwise extended; a $1,000 deposit is required. WLTP 430 km."
+    },
+    {
+      "id": "refresh-gac-2026-11-05-v-price",
+      "url": "https://www.gacgroup.com/en-au/price/aion-v/2025",
+      "title": "Price Details: AION V (GAC Australia)",
+      "publisher": "GAC Australia",
+      "source_type": "official_configurator",
+      "published_date": null,
+      "accessed_date": "2026-11-05",
+      "market": "AU",
+      "supports": "Opened 2026-11-05. Choose Model: Premium $42,590.00; Luxury $44,590.00; then a postcode field. The page does not say whether these are before or after on-road costs."
+    },
+    {
+      "id": "refresh-gac-2026-11-05-v-page",
+      "url": "https://www.gacgroup.com/en-au/suv/aion-v",
+      "title": "AION V (GAC Australia)",
+      "publisher": "GAC Australia",
+      "source_type": "manufacturer_au_specification",
+      "published_date": null,
+      "accessed_date": "2026-11-05",
+      "market": "AU",
+      "supports": "Opened 2026-11-05. Cashback Offer footnote: only for customers who place an order for the AION V and take delivery by 30 November 2026, minimum deposit $1,000, applied at point of sale as a reduction to the vehicle price. The amount and the price basis were not visible in the text read."
+    }
+  ],
+  "versions": [
+    {
+      "variantId": "gac_aion_ut_premium_fwd_current_au__20261010",
+      "vehicle": "GAC AION UT Premium",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "accepting_orders_advertised",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.gacgroup.com/en-au/configuration/AION%20UT/2025",
+            "https://www.gacgroup.com/en-au/hatchback/aion-ut"
+          ]
+        },
+        "outcome": "unchanged",
+        "sourceIds": [
+          "refresh-gac-2026-11-05-ut-page"
+        ],
+        "note": "Page invites orders placed 1 October to 31 December 2026 with a $1,000 deposit; allocation, stock and delivery not stated."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "31,990 AUD",
+            "basis": "Maker base/MSRP before on-road costs",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/price/AION%20UT/2025"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "GAC's AION UT page describes $31,990 as a national drive away offer price for orders 1 October to 31 December 2026, while the catalogue records the figure as MSRP before on-road costs. The price pages state no basis. The basis conflict is unresolved, so the value and date are retained unchanged."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "430 km",
+            "basis": "WLTP",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/AION%20UT/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "60 kWh",
+            "basis": "Published battery capacity; gross/usable not distinguished",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/AION%20UT/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "87 kW",
+            "basis": "Peak DC input",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/AION%20UT/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "34 min",
+            "basis": "Reported approximate DC 10–80% duration",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://zecar.com/reviews/2026-gac-aion-ut-review",
+              "https://www.racv.com.au/royalauto/transport/electric-vehicles/2026-gac-aion-ut-price-specs-release-date.html",
+              "https://www.gacgroup.com/en-au/configuration/AION%20UT/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maximum AC input",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/AION%20UT/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/AION%20UT/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "321 L",
+            "basis": "Published standard trunk volume by standard volume block method",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/AION%20UT/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "7.3 s",
+            "basis": "0–100 km/h",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/AION%20UT/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "150 kW",
+            "basis": "Motor output",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/AION%20UT/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "FWD",
+            "basis": "Drivetrain",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/AION%20UT/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,270 mm",
+            "basis": "Body length",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/AION%20UT/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,850 mm",
+            "basis": "Published body width; mirror treatment not stated",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/AION%20UT/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,575 mm",
+            "basis": "Body height",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/AION%20UT/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "Maximum braked towing",
+            "grade": "not_published",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/AION%20UT/2025",
+              "https://www.carsguide.com.au/gac/aion-ut/towing-capacity/2026",
+              "https://eu-www-resouce-cdn.gacgroup.com/static/AU/platform/language/common/202604/1777273688000-AY2-G_AIONUT_Owners_Manual.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "Private use: 8 years / unlimited kilometres",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://eu-www-resouce-cdn.gacgroup.com/static/AU/tenant/cms/material/202608/1787037645132-Warranty-Terms-and-Conditions-FINAL-.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "Private use: 8 years / 200,000 km, whichever occurs first",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://eu-www-resouce-cdn.gacgroup.com/static/AU/tenant/cms/material/202608/1787037645132-Warranty-Terms-and-Conditions-FINAL-.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "charging_offer",
+          "label": "Charging benefit",
+          "due": true,
+          "current": {
+            "value": "Complimentary 22 kW wall charger; installation excluded",
+            "basis": "Conditional maker charger benefit",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/hatchback/aion-ut"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Offer text did not render on the offers pages read (cookie-consent layer left alone); not rechecked."
+        },
+        {
+          "key": "msrp_aud",
+          "label": "Maker base/MSRP",
+          "due": true,
+          "current": {
+            "value": "31,990 AUD",
+            "basis": "Maker base/MSRP before on-road costs",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/price/AION%20UT/2025"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "GAC's AION UT page describes $31,990 as a national drive away offer price for orders 1 October to 31 December 2026, while the catalogue records the figure as MSRP before on-road costs. The price pages state no basis. The basis conflict is unresolved, so the value and date are retained unchanged."
+        },
+        {
+          "key": "portable_charger_offer",
+          "label": "Portable charger offer",
+          "due": true,
+          "current": {
+            "value": "Complimentary portable EV charger; confirm delivery timing",
+            "basis": "Current maker model-page charging benefit",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/hatchback/aion-ut"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Offer text did not render on the offers pages read (cookie-consent layer left alone); not rechecked."
+        },
+        {
+          "key": "promotional_driveaway_aud",
+          "label": "Driveaway offer",
+          "due": true,
+          "current": {
+            "value": "31,990 AUD",
+            "basis": "Maker VIC 3000 Personal driveaway estimate",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/price/AION%20UT/2025"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Offer text did not render on the offers pages read (cookie-consent layer left alone); not rechecked."
+        }
+      ]
+    },
+    {
+      "variantId": "gac_aion_ut_luxury_fwd_current_au__20261010",
+      "vehicle": "GAC AION UT Luxury",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "accepting_orders_advertised",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.gacgroup.com/en-au/configuration/AION%20UT/2025",
+            "https://www.gacgroup.com/en-au/hatchback/aion-ut"
+          ]
+        },
+        "outcome": "unchanged",
+        "sourceIds": [
+          "refresh-gac-2026-11-05-ut-page"
+        ],
+        "note": "Page invites orders placed 1 October to 31 December 2026 with a $1,000 deposit; allocation, stock and delivery not stated."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "35,990 AUD",
+            "basis": "Maker base/MSRP before on-road costs",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/price/AION%20UT/2025"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "GAC's AION UT page describes $31,990 as a national drive away offer price for orders 1 October to 31 December 2026, while the catalogue records the figure as MSRP before on-road costs. The price pages state no basis. The basis conflict is unresolved, so the value and date are retained unchanged."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "430 km",
+            "basis": "WLTP",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/AION%20UT/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "60 kWh",
+            "basis": "Published battery capacity; gross/usable not distinguished",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/AION%20UT/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "87 kW",
+            "basis": "Peak DC input",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/AION%20UT/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "34 min",
+            "basis": "Reported approximate DC 10–80% duration",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://zecar.com/reviews/2026-gac-aion-ut-review",
+              "https://www.racv.com.au/royalauto/transport/electric-vehicles/2026-gac-aion-ut-price-specs-release-date.html",
+              "https://www.gacgroup.com/en-au/configuration/AION%20UT/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maximum AC input",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/AION%20UT/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/AION%20UT/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "321 L",
+            "basis": "Published standard trunk volume by standard volume block method",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/AION%20UT/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "7.3 s",
+            "basis": "0–100 km/h",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/AION%20UT/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "150 kW",
+            "basis": "Motor output",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/AION%20UT/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "FWD",
+            "basis": "Drivetrain",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/AION%20UT/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,270 mm",
+            "basis": "Body length",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/AION%20UT/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,850 mm",
+            "basis": "Published body width; mirror treatment not stated",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/AION%20UT/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,575 mm",
+            "basis": "Body height",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/AION%20UT/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "Maximum braked towing",
+            "grade": "not_published",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/AION%20UT/2025",
+              "https://www.carsguide.com.au/gac/aion-ut/towing-capacity/2026",
+              "https://eu-www-resouce-cdn.gacgroup.com/static/AU/platform/language/common/202604/1777273688000-AY2-G_AIONUT_Owners_Manual.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "Private use: 8 years / unlimited kilometres",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://eu-www-resouce-cdn.gacgroup.com/static/AU/tenant/cms/material/202608/1787037645132-Warranty-Terms-and-Conditions-FINAL-.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "Private use: 8 years / 200,000 km, whichever occurs first",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://eu-www-resouce-cdn.gacgroup.com/static/AU/tenant/cms/material/202608/1787037645132-Warranty-Terms-and-Conditions-FINAL-.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "charging_offer",
+          "label": "Charging benefit",
+          "due": true,
+          "current": {
+            "value": "Complimentary 22 kW wall charger; installation excluded",
+            "basis": "Conditional maker charger benefit",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/hatchback/aion-ut"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Offer text did not render on the offers pages read (cookie-consent layer left alone); not rechecked."
+        },
+        {
+          "key": "msrp_aud",
+          "label": "Maker base/MSRP",
+          "due": true,
+          "current": {
+            "value": "35,990 AUD",
+            "basis": "Maker base/MSRP before on-road costs",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/price/AION%20UT/2025"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "GAC's AION UT page describes $31,990 as a national drive away offer price for orders 1 October to 31 December 2026, while the catalogue records the figure as MSRP before on-road costs. The price pages state no basis. The basis conflict is unresolved, so the value and date are retained unchanged."
+        },
+        {
+          "key": "portable_charger_offer",
+          "label": "Portable charger offer",
+          "due": true,
+          "current": {
+            "value": "Complimentary portable EV charger; confirm delivery timing",
+            "basis": "Current maker model-page charging benefit",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/hatchback/aion-ut"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Offer text did not render on the offers pages read (cookie-consent layer left alone); not rechecked."
+        },
+        {
+          "key": "promotional_driveaway_aud",
+          "label": "Driveaway offer",
+          "due": true,
+          "current": {
+            "value": "35,990 AUD",
+            "basis": "Maker VIC 3000 Personal driveaway estimate",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/price/AION%20UT/2025"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Offer text did not render on the offers pages read (cookie-consent layer left alone); not rechecked."
+        }
+      ]
+    },
+    {
+      "variantId": "gac_aion_v_premium_fwd_current_au__20261010",
+      "vehicle": "GAC AION V Premium",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "accepting_orders_advertised",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.gacgroup.com/en-au/configuration/aion-v/2025",
+            "https://www.gacgroup.com/en-au/suv/aion-v"
+          ]
+        },
+        "outcome": "unchanged",
+        "sourceIds": [
+          "refresh-gac-2026-11-05-v-page"
+        ],
+        "note": "Page refers to customers who place an order and take delivery by 30 November 2026; allocation, stock and delivery not stated."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "42,590 AUD",
+            "basis": "Maker base/MSRP before on-road costs",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/price/aion-v/2025"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "GAC's price page lists the same figures ($42,590 / $44,590) but states no basis, and the sister AION UT page describes its listed price as drive away. The basis is not re-established, so the value and date are retained unchanged."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "510 km",
+            "basis": "WLTP",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/aion-v/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "75.26 kWh",
+            "basis": "Published battery capacity; gross/usable not distinguished",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/aion-v/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "180 kW",
+            "basis": "Peak DC input",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/aion-v/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "24 min",
+            "basis": "DC 10–80% charging",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/aion-v/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maximum AC input",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/aion-v/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/aion-v/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "427 L",
+            "basis": "Published lower rear trunk volume",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/aion-v/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "7.9 s",
+            "basis": "CarExpert-reported 0–100 km/h",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/gac/aion-v/2026/features-and-specs",
+              "https://www.gacgroup.com/en-au/configuration/aion-v/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "150 kW",
+            "basis": "Motor output",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/aion-v/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "FWD",
+            "basis": "Drivetrain",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/aion-v/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,605 mm",
+            "basis": "Body length",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/aion-v/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,854 mm",
+            "basis": "Published body width; mirror treatment not stated",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/aion-v/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,686 mm",
+            "basis": "Body height",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/aion-v/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "Maximum braked towing",
+            "grade": "not_published",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/aion-v/2025",
+              "https://www.carsguide.com.au/gac/aion-v/towing-capacity/2026",
+              "https://eu-www-resouce-cdn.gacgroup.com/static/AU/platform/language/common/202510/1760513393034-AION_V_Owners_manual.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "Private use: 8 years / unlimited kilometres",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://eu-www-resouce-cdn.gacgroup.com/static/AU/tenant/cms/material/202608/1787037645132-Warranty-Terms-and-Conditions-FINAL-.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "Private use: 8 years / 200,000 km, whichever occurs first",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://eu-www-resouce-cdn.gacgroup.com/static/AU/tenant/cms/material/202608/1787037645132-Warranty-Terms-and-Conditions-FINAL-.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "cashback_offer_aud",
+          "label": "Cashback offer aud",
+          "due": true,
+          "current": {
+            "value": "2,000 AUD",
+            "basis": "Conditional maker point-of-sale cashback; not a net vehicle price",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/suv/aion-v/View%20Offer",
+              "https://www.gacgroup.com/en-au/suv/aion-v"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Offer text did not render on the offers pages read (cookie-consent layer left alone); not rechecked."
+        },
+        {
+          "key": "charging_offer",
+          "label": "Charging benefit",
+          "due": true,
+          "current": {
+            "value": "Complimentary 22 kW wall charger; installation excluded",
+            "basis": "Conditional maker charger benefit",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/suv/aion-v"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Offer text did not render on the offers pages read (cookie-consent layer left alone); not rechecked."
+        },
+        {
+          "key": "msrp_aud",
+          "label": "Maker base/MSRP",
+          "due": true,
+          "current": {
+            "value": "42,590 AUD",
+            "basis": "Maker base/MSRP before on-road costs",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/price/aion-v/2025"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "GAC's price page lists the same figures ($42,590 / $44,590) but states no basis, and the sister AION UT page describes its listed price as drive away. The basis is not re-established, so the value and date are retained unchanged."
+        },
+        {
+          "key": "portable_charger_offer",
+          "label": "Portable charger offer",
+          "due": true,
+          "current": {
+            "value": "Complimentary portable EV charger; confirm delivery timing",
+            "basis": "Current maker model-page charging benefit",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/suv/aion-v"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Offer text did not render on the offers pages read (cookie-consent layer left alone); not rechecked."
+        },
+        {
+          "key": "promotional_driveaway_aud",
+          "label": "Driveaway offer",
+          "due": true,
+          "current": {
+            "value": "46,180 AUD",
+            "basis": "Maker VIC 3000 Personal driveaway estimate",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/price/aion-v/2025"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Offer text did not render on the offers pages read (cookie-consent layer left alone); not rechecked."
+        }
+      ]
+    },
+    {
+      "variantId": "gac_aion_v_luxury_fwd_current_au__20261010",
+      "vehicle": "GAC AION V Luxury",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "accepting_orders_advertised",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.gacgroup.com/en-au/configuration/aion-v/2025",
+            "https://www.gacgroup.com/en-au/suv/aion-v"
+          ]
+        },
+        "outcome": "unchanged",
+        "sourceIds": [
+          "refresh-gac-2026-11-05-v-page"
+        ],
+        "note": "Page refers to customers who place an order and take delivery by 30 November 2026; allocation, stock and delivery not stated."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "44,590 AUD",
+            "basis": "Maker base/MSRP before on-road costs",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/price/aion-v/2025"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "GAC's price page lists the same figures ($42,590 / $44,590) but states no basis, and the sister AION UT page describes its listed price as drive away. The basis is not re-established, so the value and date are retained unchanged."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "510 km",
+            "basis": "WLTP",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/aion-v/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "75.26 kWh",
+            "basis": "Published battery capacity; gross/usable not distinguished",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/aion-v/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "180 kW",
+            "basis": "Peak DC input",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/aion-v/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "24 min",
+            "basis": "DC 10–80% charging",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/aion-v/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maximum AC input",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/aion-v/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/aion-v/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "427 L",
+            "basis": "Published lower rear trunk volume",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/aion-v/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "7.9 s",
+            "basis": "CarExpert-reported 0–100 km/h",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/gac/aion-v/2026/features-and-specs",
+              "https://www.gacgroup.com/en-au/configuration/aion-v/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "150 kW",
+            "basis": "Motor output",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/aion-v/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "FWD",
+            "basis": "Drivetrain",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/aion-v/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,605 mm",
+            "basis": "Body length",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/aion-v/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,854 mm",
+            "basis": "Published body width; mirror treatment not stated",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/aion-v/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,686 mm",
+            "basis": "Body height",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/aion-v/2025"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "Maximum braked towing",
+            "grade": "not_published",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/configuration/aion-v/2025",
+              "https://www.carsguide.com.au/gac/aion-v/towing-capacity/2026",
+              "https://eu-www-resouce-cdn.gacgroup.com/static/AU/platform/language/common/202510/1760513393034-AION_V_Owners_manual.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "Private use: 8 years / unlimited kilometres",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://eu-www-resouce-cdn.gacgroup.com/static/AU/tenant/cms/material/202608/1787037645132-Warranty-Terms-and-Conditions-FINAL-.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "Private use: 8 years / 200,000 km, whichever occurs first",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://eu-www-resouce-cdn.gacgroup.com/static/AU/tenant/cms/material/202608/1787037645132-Warranty-Terms-and-Conditions-FINAL-.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "cashback_offer_aud",
+          "label": "Cashback offer aud",
+          "due": true,
+          "current": {
+            "value": "2,000 AUD",
+            "basis": "Conditional maker point-of-sale cashback; not a net vehicle price",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/suv/aion-v/View%20Offer",
+              "https://www.gacgroup.com/en-au/suv/aion-v"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Offer text did not render on the offers pages read (cookie-consent layer left alone); not rechecked."
+        },
+        {
+          "key": "charging_offer",
+          "label": "Charging benefit",
+          "due": true,
+          "current": {
+            "value": "Complimentary 22 kW wall charger; installation excluded",
+            "basis": "Conditional maker charger benefit",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/suv/aion-v"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Offer text did not render on the offers pages read (cookie-consent layer left alone); not rechecked."
+        },
+        {
+          "key": "msrp_aud",
+          "label": "Maker base/MSRP",
+          "due": true,
+          "current": {
+            "value": "44,590 AUD",
+            "basis": "Maker base/MSRP before on-road costs",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/price/aion-v/2025"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "GAC's price page lists the same figures ($42,590 / $44,590) but states no basis, and the sister AION UT page describes its listed price as drive away. The basis is not re-established, so the value and date are retained unchanged."
+        },
+        {
+          "key": "portable_charger_offer",
+          "label": "Portable charger offer",
+          "due": true,
+          "current": {
+            "value": "Complimentary portable EV charger; confirm delivery timing",
+            "basis": "Current maker model-page charging benefit",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/suv/aion-v"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Offer text did not render on the offers pages read (cookie-consent layer left alone); not rechecked."
+        },
+        {
+          "key": "promotional_driveaway_aud",
+          "label": "Driveaway offer",
+          "due": true,
+          "current": {
+            "value": "48,270 AUD",
+            "basis": "Maker VIC 3000 Personal driveaway estimate",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.gacgroup.com/en-au/price/aion-v/2025"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Offer text did not render on the offers pages read (cookie-consent layer left alone); not rechecked."
+        }
+      ]
+    }
+  ]
+}

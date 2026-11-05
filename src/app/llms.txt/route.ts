@@ -4,14 +4,15 @@ import { carName, carPath, PAGE_UPDATED } from "@/lib/citable";
 import { site } from "@/lib/config";
 export const dynamic = "force-static";
 export function GET() {
-  const text = `# ${site.name}\n\n> Independent Australian EV comparisons for exact variants. Page update: ${PAGE_UPDATED}. Original research: 6 October 2026, with dated overlays. Every claim retains its evidence date, basis, conditions and sources.\n\nUse the small pair pages below for questions about two cars. The interactive homepage contains the full fleet. Unknown and conditional figures are not confirmed specifications. No ranking or personal insurance/finance recommendation is implied.\n\n## Comparisons\n\n${pairLinks()
+  const cars = catalogue();
+  const text = `# ${site.name}\n\n> Independent Australian EV comparisons for exact variants. Page update: ${PAGE_UPDATED}. Original research: 6 October 2026, with dated overlays. Every claim retains its evidence date, basis, conditions and sources.\n\nUse the small pair pages below for questions about two cars. The interactive homepage contains the full fleet. Unknown and conditional figures are not confirmed specifications. No ranking or personal insurance/finance recommendation is implied.\n\n## Comparisons\n\n${pairLinks(cars)
     .map(
       (p) =>
         `- [${p.label}](${site.origin}${p.href})\n  - [Markdown](${site.origin}${p.href}/comparison.md)\n  - [JSON](${site.origin}${p.href}/comparison.json)`,
     )
     .join(
       "\n",
-    )}\n\n## Reference\n\n- [Glossary](${site.origin}/glossary)\n- [Methodology](${site.origin}/methodology)\n- [Sources and corrections](${site.origin}/sources)\n\n## Exact variants\n\n${catalogue()
+    )}\n\n## Reference\n\n- [What changed each month](${site.origin}/changes): price moves, arrivals and withdrawals ([JSON](${site.origin}/changes.json), [RSS](${site.origin}/changes/feed.xml))\n- [Glossary](${site.origin}/glossary)\n- [Methodology](${site.origin}/methodology)\n- [Sources and corrections](${site.origin}/sources)\n\n## Exact variants\n\n${cars
     .map((c) => `- [${carName(c)}](${site.origin}${carPath(c)})`)
     .join("\n")}\n`;
   return new Response(text, {
