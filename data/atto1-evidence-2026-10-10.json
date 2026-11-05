@@ -1,0 +1,1107 @@
+{
+  "schemaVersion": "1.1",
+  "title": "Australian BYD ATTO 1 current-trim evidence",
+  "checkedAt": "2026-10-10",
+  "completedAt": "2026-10-10T05:33:42.872245+00:00",
+  "market": "Australia",
+  "currency": "AUD",
+  "scope": "Current official Australian ATTO 1 BEV order trims plus exact new-stock evidence; no code or Codex task work",
+  "currentVerifiedTrimCount": 2,
+  "currentVerifiedTrimCoverage": "Complete for the two named current official AU trims. Exact MY applicability and Essential current new-stock availability remain unresolved.",
+  "records": [
+    {
+      "id": "byd-atto1-current-essential-fwd",
+      "brand": "BYD",
+      "model": "ATTO 1",
+      "exactMarketingTrim": "Essential",
+      "exactManufacturerName": "BYD ATTO 1 Essential",
+      "normalizedPowertrainLabel": "Essential FWD",
+      "manufacturerVariantId": "2826",
+      "modelYear": null,
+      "modelYearEvidence": {
+        "status": "not_verified_for_current_order_or_live_stock",
+        "sourceId": "atto1-brochure",
+        "documentExplicitModelYear": 2025,
+        "documentLabel": "MY25 BYD ATTO 1_Spec Sheet_122506",
+        "basis": "The currently linked brochure has explicit MY25 Title metadata. Current product page and order form do not state MY. Live inventory calendar labels 2025 Model and 2026 Model are retained separately and do not establish MY25/MY26. Matching trim names/specifications are not treated as proof of exact MY applicability."
+      },
+      "buildYear": null,
+      "productPartition": "current_au_atto1_order_trim_model_year_unverified",
+      "seriesCode": null,
+      "checkedAt": "2026-10-10",
+      "bodyStyle": "hatchback",
+      "propulsion": "BEV",
+      "battery": {
+        "advertisedCapacityKWh": 30,
+        "grossKWh": null,
+        "usableKWh": null,
+        "chemistry": "LFP",
+        "brandName": "BYD Blade Battery",
+        "capacityBasis": "Manufacturer advertised battery capacity; gross versus usable not stated",
+        "sourceId": "atto1-brochure",
+        "chemistrySourceId": "atto1-handbook",
+        "chemistryLocator": "p172 High-Voltage Battery: EQEAX and EQEBX each lithium iron phosphate; p171 motor powers match Essential/Premium",
+        "qualification": "Do not import smaller non-Australian ATTO 1/Seagull battery capacities."
+      },
+      "powertrain": {
+        "drivenWheels": "FWD",
+        "maximumPowerKW": 65,
+        "maximumTorqueNm": 175,
+        "motorPowerComponentsKW": null,
+        "motorType": "Permanent magnet synchronous",
+        "sourceIds": [
+          "atto1-product",
+          "atto1-brochure"
+        ],
+        "acceleration0To100Seconds": 11.1
+      },
+      "range": {
+        "km": 220,
+        "cycle": "WLTP combined",
+        "sourceId": "atto1-product",
+        "locator": "Technical Specifications modal, Essential tab > Driveline > Combined range WLTP",
+        "qualification": "Laboratory claim, not real-world range. Brochure table also labels WLTP; its generic notice separately cites ADR 81/02, so retain the explicit current-product combined-WLTP label rather than infer another test cycle."
+      },
+      "seats": {
+        "count": 4,
+        "sourceId": "atto1-brochure",
+        "locator": "PDF p2 Dimensions > Seating capacity, shared value across both exact trims",
+        "corroboratingSourceId": "atto1-handbook",
+        "corroboratingLocator": "p171 Number of occupants: 4 for EQEAX and EQEBX",
+        "claimScope": "Both named Australian brochure trims; exact current-product seating supported by matching Australian handbook"
+      },
+      "cargo": {
+        "seatsUpLitres": 308,
+        "seatsFoldedLitres": 1037,
+        "underfloorLitres": null,
+        "totalIncludingUnderfloorLitres": null,
+        "measurementStandard": null,
+        "loadingHeight": null,
+        "sourceIds": [
+          "atto1-product",
+          "atto1-brochure"
+        ],
+        "locator": "Product Clever storage solutions; brochure p2 Boot/Load Space Min/Max",
+        "measurementBasis": "Manufacturer boot capacity with rear seats in use; expands when rear seats folded",
+        "qualification": "VDA/SAE method, underfloor inclusion, parcel-shelf versus roof loading height and front trunk capacity not verified. Do not standardize or rank cross-brand cargo volumes as equivalent."
+      },
+      "towing": {
+        "brakedKg": null,
+        "unbrakedKg": null,
+        "sourceId": "atto1-handbook",
+        "locator": "p88 Trailer Towing",
+        "status": "manufacturer_warns_against_towing_numeric_rating_unverified",
+        "qualification": "Handbook instructs not to use vehicle to tow other vehicles and says trailer-towing damage/malfunction is outside warranty. No numeric Australian braked/unbraked rating verified. Keep null, not 0 kg.",
+        "dealerReported": null
+      },
+      "charging": {
+        "maximumDCPowerKW": 65,
+        "ACOnboardPowerKW": 11,
+        "ACConnector": "Type 2",
+        "DCConnector": "CCS2",
+        "sourceId": "atto1-brochure",
+        "corroboratingSourceId": "atto1-showcase",
+        "locator": "Brochure p2 New Energy: AC Charging Port Type 2 / DC Charging Port CCS2; showcase ATTO 1 Charging Information",
+        "ratingScope": "Manufacturer vehicle charging acceptance/port rating, not external station output",
+        "ACChargeTime": {
+          "fromSOCPercent": 0,
+          "toSOCPercent": 100,
+          "hours": 3.5,
+          "sourceId": "atto1-brochure",
+          "sourcePowerKW": null,
+          "testConditions": null,
+          "qualification": "Published time, charger/test conditions not expressly specified in the time row. Do not promise this on a household outlet or optional 7 kW home charger."
+        },
+        "DCChargeTime": {
+          "fromSOCPercent": 10,
+          "toSOCPercent": 80,
+          "minutes": 30,
+          "sourceId": "atto1-brochure",
+          "sourcePowerKW": null,
+          "testConditions": null,
+          "qualification": "Manufacturer published time for both variants; not an observed real-world test or guaranteed flat-rate charging curve."
+        },
+        "otherPublishedDCClaim": {
+          "fromSOCPercent": 30,
+          "toSOCPercent": 100,
+          "minutes": 25,
+          "sourceId": "atto1-brochure",
+          "locator": "p2 New Energy row explicitly printed DC Charging Time (30%-100%)",
+          "status": "preserved_but_not_used_for_comparison",
+          "qualification": "Unexplained alternate window; do not silently relabel it as 30-80%. It is shorter than the brochure 10-80% time; no reconciliation verified."
+        },
+        "V2L": {
+          "supported": true,
+          "maximumPowerKW": null,
+          "sourceId": "atto1-brochure",
+          "locator": "p2 New Energy > V2L Function"
+        },
+        "qualification": "The optional 7 kW BYD home charger in configurator is an accessory/station rating and does not replace the 11 kW vehicle AC rating."
+      },
+      "dimensions": {
+        "lengthMM": 3990,
+        "widthMM": 1720,
+        "heightMM": 1590,
+        "wheelbaseMM": 2500,
+        "minimumTurningRadiusM": 4.95,
+        "kerbWeightKg": 1294,
+        "sourceId": "atto1-brochure",
+        "locator": "p2 Dimensions",
+        "widthQualification": "Handbook p170 labels width excluding side mirrors"
+      },
+      "price": {
+        "currency": "AUD",
+        "formalListPriceExOnRoads": null,
+        "formalListPriceStatus": "not_explicitly_verified_as_manufacturer_list_price",
+        "configuratorBaseVehiclePriceAUD": 23990,
+        "configuratorBasePriceStatus": "verified_manufacturer_linked_retailer_variant_price",
+        "configuratorBasePriceBasis": "Exact variant-level price field includes GST (price/11 GST field); options and on-road amounts calculated separately. No explicit MLP/MSRP label or official manufacturer price list found. Do not silently promote it to formal MLP.",
+        "advertisedDriveaway": 19990,
+        "advertisedDriveawayType": "manufacturer_promotional_driveaway",
+        "cashbackIncluded": null,
+        "optionsBasis": "Apricity White, standard wheels and Black + Grey interior; optional paint is A$500 base before any applicable on-road effect",
+        "registrationScope": "Promo is current Australian retail driveaway campaign. Configurator defaults to NSW private registration but no personalized driveaway calculation performed. Premium exact unit prices are under availability.",
+        "termsIds": [
+          "atto1_essential_driveaway"
+        ],
+        "separateConditionalOffers": [
+          "atto1_6percent_novated_lease"
+        ],
+        "sourceIds": [
+          "atto1-config-essential",
+          "atto1-offers"
+        ],
+        "doNotUse": [
+          "Uninitialized configurator Drive Away Price $0",
+          "Expired Feb/Mar 2025 estimated-delivery template",
+          "6% lease discount as a universal cash-purchase discount"
+        ]
+      },
+      "availability": {
+        "orderStatus": "accepting_order_requests_advertised",
+        "orderEvidence": {
+          "sourceId": "atto1-config-essential",
+          "basis": "Exact variants appear in manufacturer-linked retailer configuration; form presents a fully refundable A$1,000 order fee and explicitly says submission is an order request subject to vehicle allocation. No transaction attempted."
+        },
+        "stockStatus": "exact_new_stock_not_verified",
+        "specificNewUnits": [],
+        "deliveryDate": null,
+        "unreliableDeliveryLabel": "Est. Delivery Feb. / Mar. 2025",
+        "unreliableDeliveryLabelStatus": "stale_generic_template_not_a_current_estimate",
+        "stockEvidenceNote": "Zero Essential cards in fresh manufacturer-linked new-inventory HTML; search snippets for older units proved stale, sold, removed or demo. This does not prove no dealer anywhere has new stock.",
+        "qualification": "Order-request availability is distinct from stock and actual delivery. Manufacturer cannot guarantee campaign-period delivery."
+      },
+      "ranking": {
+        "wltpComparable": true,
+        "listPriceComparable": false,
+        "configuratorBasePriceComparableWithCaveat": true,
+        "driveawayComparableOnlyWithinDateAndBuyerScope": true,
+        "bootStandardizedComparable": false,
+        "towingManufacturerVerified": false,
+        "numericTowingUnknown": true,
+        "exactModelYearVerified": false
+      },
+      "sourceUrls": [
+        "https://bydautomotive.com.au/atto-1",
+        "https://bydautomotive.com.au/brochures/BYD-ATTO-1-2025.pdf",
+        "https://evdealergroup-byd.com.au/configurator/byd-atto-1?ref=website&spec=2826",
+        "https://bydautomotive.com.au/offers",
+        "https://bydautomotive.com.au/brochures/BYD-ATTO-1-Owners-Handbook-2025.pdf"
+      ],
+      "strengths": [
+        {
+          "claim": "Compact 3,990 mm body and 4.95 m minimum turning radius support urban maneuverability",
+          "sourceIds": [
+            "atto1-brochure"
+          ],
+          "basis": "Inferred use case from specified dimensions; not a tested parking ranking"
+        },
+        {
+          "claim": "11 kW AC charging and V2L capability standard across both trims",
+          "sourceIds": [
+            "atto1-brochure",
+            "atto1-showcase"
+          ],
+          "basis": "Exact AU equipment/rating tables"
+        },
+        {
+          "claim": "A$19,990 current manufacturer retail driveaway campaign subject to dates, stock and paint conditions",
+          "sourceIds": [
+            "atto1-offers"
+          ],
+          "basis": "No Australia-wide cheapest/best claim made"
+        }
+      ],
+      "tradeOffs": [
+        {
+          "claim": "Four-seat limit rules out carrying five occupants",
+          "sourceIds": [
+            "atto1-brochure",
+            "atto1-handbook"
+          ]
+        },
+        {
+          "claim": "Numeric towing capacity not verified; handbook warns against towing",
+          "sourceIds": [
+            "atto1-handbook"
+          ]
+        },
+        {
+          "claim": "308 L seats-up / 1,037 L folded boot needs its loading-method caveat",
+          "sourceIds": [
+            "atto1-product",
+            "atto1-brochure"
+          ]
+        },
+        {
+          "claim": "220 km WLTP and 65 kW peak motor output versus Premium 310 km and 115 kW",
+          "sourceIds": [
+            "atto1-product"
+          ]
+        },
+        {
+          "claim": "Halogen headlights, 15-inch steel wheels and rear-view camera; no heated front seats, 360-degree camera or wireless phone charging",
+          "sourceIds": [
+            "atto1-brochure"
+          ],
+          "basis": "p2 wheel and p3 Essential equipment columns"
+        },
+        {
+          "claim": "Exact current new-stock unit not verified",
+          "sourceIds": [
+            "atto1-inventory-new"
+          ],
+          "basis": "Scoped availability finding, not proof of nationwide stockout"
+        }
+      ]
+    },
+    {
+      "id": "byd-atto1-current-premium-fwd",
+      "brand": "BYD",
+      "model": "ATTO 1",
+      "exactMarketingTrim": "Premium",
+      "exactManufacturerName": "BYD ATTO 1 Premium",
+      "normalizedPowertrainLabel": "Premium FWD",
+      "manufacturerVariantId": "2827",
+      "modelYear": null,
+      "modelYearEvidence": {
+        "status": "not_verified_for_current_order_or_live_stock",
+        "sourceId": "atto1-brochure",
+        "documentExplicitModelYear": 2025,
+        "documentLabel": "MY25 BYD ATTO 1_Spec Sheet_122506",
+        "basis": "The currently linked brochure has explicit MY25 Title metadata. Current product page and order form do not state MY. Live inventory calendar labels 2025 Model and 2026 Model are retained separately and do not establish MY25/MY26. Matching trim names/specifications are not treated as proof of exact MY applicability."
+      },
+      "buildYear": null,
+      "productPartition": "current_au_atto1_order_trim_model_year_unverified",
+      "seriesCode": null,
+      "checkedAt": "2026-10-10",
+      "bodyStyle": "hatchback",
+      "propulsion": "BEV",
+      "battery": {
+        "advertisedCapacityKWh": 43.2,
+        "grossKWh": null,
+        "usableKWh": null,
+        "chemistry": "LFP",
+        "brandName": "BYD Blade Battery",
+        "capacityBasis": "Manufacturer advertised battery capacity; gross versus usable not stated",
+        "sourceId": "atto1-brochure",
+        "chemistrySourceId": "atto1-handbook",
+        "chemistryLocator": "p172 High-Voltage Battery: EQEAX and EQEBX each lithium iron phosphate; p171 motor powers match Essential/Premium",
+        "qualification": "Do not import smaller non-Australian ATTO 1/Seagull battery capacities."
+      },
+      "powertrain": {
+        "drivenWheels": "FWD",
+        "maximumPowerKW": 115,
+        "maximumTorqueNm": 220,
+        "motorPowerComponentsKW": null,
+        "motorType": "Permanent magnet synchronous",
+        "sourceIds": [
+          "atto1-product",
+          "atto1-brochure"
+        ],
+        "acceleration0To100Seconds": 9.1
+      },
+      "range": {
+        "km": 310,
+        "cycle": "WLTP combined",
+        "sourceId": "atto1-product",
+        "locator": "Technical Specifications modal, Premium tab > Driveline > Combined range WLTP",
+        "qualification": "Laboratory claim, not real-world range. Brochure table also labels WLTP; its generic notice separately cites ADR 81/02, so retain the explicit current-product combined-WLTP label rather than infer another test cycle."
+      },
+      "seats": {
+        "count": 4,
+        "sourceId": "atto1-brochure",
+        "locator": "PDF p2 Dimensions > Seating capacity, shared value across both exact trims",
+        "corroboratingSourceId": "atto1-handbook",
+        "corroboratingLocator": "p171 Number of occupants: 4 for EQEAX and EQEBX",
+        "claimScope": "Both named Australian brochure trims; exact current-product seating supported by matching Australian handbook"
+      },
+      "cargo": {
+        "seatsUpLitres": 308,
+        "seatsFoldedLitres": 1037,
+        "underfloorLitres": null,
+        "totalIncludingUnderfloorLitres": null,
+        "measurementStandard": null,
+        "loadingHeight": null,
+        "sourceIds": [
+          "atto1-product",
+          "atto1-brochure"
+        ],
+        "locator": "Product Clever storage solutions; brochure p2 Boot/Load Space Min/Max",
+        "measurementBasis": "Manufacturer boot capacity with rear seats in use; expands when rear seats folded",
+        "qualification": "VDA/SAE method, underfloor inclusion, parcel-shelf versus roof loading height and front trunk capacity not verified. Do not standardize or rank cross-brand cargo volumes as equivalent."
+      },
+      "towing": {
+        "brakedKg": null,
+        "unbrakedKg": null,
+        "sourceId": "atto1-handbook",
+        "locator": "p88 Trailer Towing",
+        "status": "manufacturer_warns_against_towing_numeric_rating_unverified",
+        "qualification": "Handbook instructs not to use vehicle to tow other vehicles and says trailer-towing damage/malfunction is outside warranty. No numeric Australian braked/unbraked rating verified. Keep null, not 0 kg.",
+        "dealerReported": null
+      },
+      "charging": {
+        "maximumDCPowerKW": 85,
+        "ACOnboardPowerKW": 11,
+        "ACConnector": "Type 2",
+        "DCConnector": "CCS2",
+        "sourceId": "atto1-brochure",
+        "corroboratingSourceId": "atto1-showcase",
+        "locator": "Brochure p2 New Energy: AC Charging Port Type 2 / DC Charging Port CCS2; showcase ATTO 1 Charging Information",
+        "ratingScope": "Manufacturer vehicle charging acceptance/port rating, not external station output",
+        "ACChargeTime": {
+          "fromSOCPercent": 0,
+          "toSOCPercent": 100,
+          "hours": 5,
+          "sourceId": "atto1-brochure",
+          "sourcePowerKW": null,
+          "testConditions": null,
+          "qualification": "Published time, charger/test conditions not expressly specified in the time row. Do not promise this on a household outlet or optional 7 kW home charger."
+        },
+        "DCChargeTime": {
+          "fromSOCPercent": 10,
+          "toSOCPercent": 80,
+          "minutes": 30,
+          "sourceId": "atto1-brochure",
+          "sourcePowerKW": null,
+          "testConditions": null,
+          "qualification": "Manufacturer published time for both variants; not an observed real-world test or guaranteed flat-rate charging curve."
+        },
+        "otherPublishedDCClaim": {
+          "fromSOCPercent": 30,
+          "toSOCPercent": 100,
+          "minutes": 22,
+          "sourceId": "atto1-brochure",
+          "locator": "p2 New Energy row explicitly printed DC Charging Time (30%-100%)",
+          "status": "preserved_but_not_used_for_comparison",
+          "qualification": "Unexplained alternate window; do not silently relabel it as 30-80%. It is shorter than the brochure 10-80% time; no reconciliation verified."
+        },
+        "V2L": {
+          "supported": true,
+          "maximumPowerKW": null,
+          "sourceId": "atto1-brochure",
+          "locator": "p2 New Energy > V2L Function"
+        },
+        "qualification": "The optional 7 kW BYD home charger in configurator is an accessory/station rating and does not replace the 11 kW vehicle AC rating."
+      },
+      "dimensions": {
+        "lengthMM": 3990,
+        "widthMM": 1720,
+        "heightMM": 1590,
+        "wheelbaseMM": 2500,
+        "minimumTurningRadiusM": 4.95,
+        "kerbWeightKg": 1390,
+        "sourceId": "atto1-brochure",
+        "locator": "p2 Dimensions",
+        "widthQualification": "Handbook p170 labels width excluding side mirrors"
+      },
+      "price": {
+        "currency": "AUD",
+        "formalListPriceExOnRoads": null,
+        "formalListPriceStatus": "not_explicitly_verified_as_manufacturer_list_price",
+        "configuratorBaseVehiclePriceAUD": 27990,
+        "configuratorBasePriceStatus": "verified_manufacturer_linked_retailer_variant_price",
+        "configuratorBasePriceBasis": "Exact variant-level price field includes GST (price/11 GST field); options and on-road amounts calculated separately. No explicit MLP/MSRP label or official manufacturer price list found. Do not silently promote it to formal MLP.",
+        "advertisedDriveaway": null,
+        "advertisedDriveawayType": null,
+        "cashbackIncluded": null,
+        "optionsBasis": "Apricity White, standard wheels and Black + Grey interior; optional paint is A$500 base before any applicable on-road effect",
+        "registrationScope": "Promo is current Australian retail driveaway campaign. Configurator defaults to NSW private registration but no personalized driveaway calculation performed. Premium exact unit prices are under availability.",
+        "termsIds": [],
+        "separateConditionalOffers": [
+          "atto1_6percent_novated_lease"
+        ],
+        "sourceIds": [
+          "atto1-config-premium",
+          "atto1-offers"
+        ],
+        "doNotUse": [
+          "Uninitialized configurator Drive Away Price $0",
+          "Expired Feb/Mar 2025 estimated-delivery template",
+          "6% lease discount as a universal cash-purchase discount"
+        ]
+      },
+      "availability": {
+        "orderStatus": "accepting_order_requests_advertised",
+        "orderEvidence": {
+          "sourceId": "atto1-config-premium",
+          "basis": "Exact variants appear in manufacturer-linked retailer configuration; form presents a fully refundable A$1,000 order fee and explicitly says submission is an order request subject to vehicle allocation. No transaction attempted."
+        },
+        "stockStatus": "specific_new_units_advertised_available_now",
+        "specificNewUnits": [
+          {
+            "sourceId": "atto1-inventory-new",
+            "confirmationSourceId": "atto1-stock-premium-8047108",
+            "url": "https://evdealergroup-byd.com.au/configurator/yumq_IJ_NC20jiX_Dh6dE9JxPZalUyvl5f9kcHfZLlp1BqgJsOeodXPa3Id_zQqVD10JqJjmTtxWo6y5zRhlEQ",
+            "dealer": "BYD Alexandria",
+            "location": "Pickup from BYD Alexandria with NSW registration",
+            "stockNumber": "8047108",
+            "vin": null,
+            "condition": "new",
+            "conditionEvidence": "Inventory card is do-n; Type filter exposes New; exact linked configurator displays In-Stock and NEW",
+            "publishedAvailability": "Available Now",
+            "odometerKm": null,
+            "modelYear": null,
+            "advertisedCalendarYear": 2025,
+            "advertisedCalendarYearSourceLabel": "2025 Model",
+            "buildYear": null,
+            "complianceYear": null,
+            "colour": "Apricity White",
+            "advertisedDriveawayAUD": 31114,
+            "priceScope": "Exact inventory-card price with named state registration. Not a national price or confirmed transaction quote. Lease-offer badge appears separately; price not assumed to include it.",
+            "retrievedAt": "2026-10-10T05:29:06.445489+00:00",
+            "configurationRecheckedAt": "2026-10-10T05:30:46.489995+00:00",
+            "snapshotLocator": "carousel756484",
+            "qualification": "Public new-stock advertisement only; no contact made and no confirmation of physical possession, unallocated status or immediate handover."
+          },
+          {
+            "sourceId": "atto1-inventory-new",
+            "confirmationSourceId": "atto1-stock-premium-8060393",
+            "url": "https://evdealergroup-byd.com.au/configurator/yumq_IJ_NC20jiX_Dh6dE9JxPZalUyvl5f9kcHfZLlp1BqgJsOeodXPa3Id_zQqVtdmYFCdruAaSi2KsZ6MyaA",
+            "dealer": "BYD Darwin",
+            "location": "Pickup from BYD Darwin with NT registration",
+            "stockNumber": "8060393",
+            "vin": null,
+            "condition": "new",
+            "conditionEvidence": "Inventory card is do-n; Type filter exposes New; exact linked configurator displays In-Stock and NEW",
+            "publishedAvailability": "Available Now",
+            "odometerKm": null,
+            "modelYear": null,
+            "advertisedCalendarYear": 2026,
+            "advertisedCalendarYearSourceLabel": "2026 Model",
+            "buildYear": null,
+            "complianceYear": null,
+            "colour": "Arctic Blue",
+            "advertisedDriveawayAUD": 30263,
+            "priceScope": "Exact inventory-card price with named state registration. Not a national price or confirmed transaction quote. Lease-offer badge appears separately; price not assumed to include it.",
+            "retrievedAt": "2026-10-10T05:29:06.445489+00:00",
+            "configurationRecheckedAt": "2026-10-10T05:30:46.305498+00:00",
+            "snapshotLocator": "carousel800715",
+            "qualification": "Public new-stock advertisement only; no contact made and no confirmation of physical possession, unallocated status or immediate handover."
+          },
+          {
+            "sourceId": "atto1-inventory-new",
+            "confirmationSourceId": "atto1-stock-premium-8076412",
+            "url": "https://evdealergroup-byd.com.au/configurator/yumq_IJ_NC20jiX_Dh6dE9JxPZalUyvl5f9kcHfZLlp1BqgJsOeodXPa3Id_zQqV3nrzj_uWBz9j1zpmIWnhXA",
+            "dealer": "BYD Devonport",
+            "location": "Pickup from BYD Devonport with TAS registration",
+            "stockNumber": "8076412",
+            "vin": null,
+            "condition": "new",
+            "conditionEvidence": "Inventory card is do-n; Type filter exposes New; exact linked configurator displays In-Stock and NEW",
+            "publishedAvailability": "Available Now",
+            "odometerKm": null,
+            "modelYear": null,
+            "advertisedCalendarYear": 2026,
+            "advertisedCalendarYearSourceLabel": "2026 Model",
+            "buildYear": null,
+            "complianceYear": null,
+            "colour": "Cosmos Black",
+            "advertisedDriveawayAUD": 31148,
+            "priceScope": "Exact inventory-card price with named state registration. Not a national price or confirmed transaction quote. Lease-offer badge appears separately; price not assumed to include it.",
+            "retrievedAt": "2026-10-10T05:29:06.445489+00:00",
+            "configurationRecheckedAt": "2026-10-10T05:30:46.743792+00:00",
+            "snapshotLocator": "carousel834061",
+            "qualification": "Public new-stock advertisement only; no contact made and no confirmation of physical possession, unallocated status or immediate handover."
+          }
+        ],
+        "deliveryDate": null,
+        "unreliableDeliveryLabel": "Est. Delivery Feb. / Mar. 2025",
+        "unreliableDeliveryLabelStatus": "stale_generic_template_not_a_current_estimate",
+        "stockEvidenceNote": "99 unique Premium new-stock cards marked Available Now in fresh inventory HTML; three exact linked stock configurations re-fetched.",
+        "qualification": "Order-request availability is distinct from stock and actual delivery. Manufacturer cannot guarantee campaign-period delivery."
+      },
+      "ranking": {
+        "wltpComparable": true,
+        "listPriceComparable": false,
+        "configuratorBasePriceComparableWithCaveat": true,
+        "driveawayComparableOnlyWithinDateAndBuyerScope": false,
+        "bootStandardizedComparable": false,
+        "towingManufacturerVerified": false,
+        "numericTowingUnknown": true,
+        "exactModelYearVerified": false
+      },
+      "sourceUrls": [
+        "https://bydautomotive.com.au/atto-1",
+        "https://bydautomotive.com.au/brochures/BYD-ATTO-1-2025.pdf",
+        "https://evdealergroup-byd.com.au/configurator/byd-atto-1?ref=website&spec=2827",
+        "https://bydautomotive.com.au/offers",
+        "https://bydautomotive.com.au/brochures/BYD-ATTO-1-Owners-Handbook-2025.pdf"
+      ],
+      "strengths": [
+        {
+          "claim": "Compact 3,990 mm body and 4.95 m minimum turning radius support urban maneuverability",
+          "sourceIds": [
+            "atto1-brochure"
+          ],
+          "basis": "Inferred use case from specified dimensions; not a tested parking ranking"
+        },
+        {
+          "claim": "11 kW AC charging and V2L capability standard across both trims",
+          "sourceIds": [
+            "atto1-brochure",
+            "atto1-showcase"
+          ],
+          "basis": "Exact AU equipment/rating tables"
+        },
+        {
+          "claim": "90 km greater WLTP range and 50 kW greater peak motor power than Essential",
+          "sourceIds": [
+            "atto1-product"
+          ],
+          "basis": "Within-range arithmetic: 310-220 km; 115-65 kW"
+        },
+        {
+          "claim": "360-degree camera, LED headlights, heated/power-adjustable front seats and wireless phone charging",
+          "sourceIds": [
+            "atto1-brochure"
+          ],
+          "basis": "p3 Premium equipment column"
+        }
+      ],
+      "tradeOffs": [
+        {
+          "claim": "Four-seat limit rules out carrying five occupants",
+          "sourceIds": [
+            "atto1-brochure",
+            "atto1-handbook"
+          ]
+        },
+        {
+          "claim": "Numeric towing capacity not verified; handbook warns against towing",
+          "sourceIds": [
+            "atto1-handbook"
+          ]
+        },
+        {
+          "claim": "308 L seats-up / 1,037 L folded boot needs its loading-method caveat",
+          "sourceIds": [
+            "atto1-product",
+            "atto1-brochure"
+          ]
+        },
+        {
+          "claim": "A$4,000 higher configurator base vehicle price than Essential; current A$19,990 driveaway offer is Essential-only",
+          "sourceIds": [
+            "atto1-config-essential",
+            "atto1-config-premium",
+            "atto1-offers"
+          ]
+        },
+        {
+          "claim": "Same four seats and quoted cargo capacity as Essential despite higher price",
+          "sourceIds": [
+            "atto1-brochure"
+          ]
+        }
+      ]
+    }
+  ],
+  "priceTerms": [
+    {
+      "id": "atto1_essential_driveaway",
+      "sourceId": "atto1-offers",
+      "amountAUD": 19990,
+      "appliesTo": [
+        "Essential"
+      ],
+      "orderFrom": "2026-09-15",
+      "orderBy": "2026-12-15",
+      "deliverBy": "2026-12-31",
+      "customerScope": "retail",
+      "paint": "Metallic/optional paint extra",
+      "excluded": [
+        "demonstrators",
+        "transactions with additional promotions/discounts"
+      ],
+      "allocationSubjectToAvailability": true,
+      "deliveryGuaranteed": false,
+      "qualification": "Eligibility not guaranteed until delivered. BYD may review cases missing delivery cutoff; extension is discretionary, not assumed."
+    },
+    {
+      "id": "atto1_6percent_novated_lease",
+      "sourceId": "atto1-offers",
+      "discountPercent": 6,
+      "appliesTo": [
+        "Essential",
+        "Premium"
+      ],
+      "orderFrom": "2026-10-01",
+      "orderBy": "2026-12-21",
+      "deliverBy": "2027-01-31",
+      "customerScope": "eligible novated lease clients through approved FMO",
+      "discountBasis": "base vehicle list price; excludes registration, CTP, stamp duty, dealer delivery and statutory charges",
+      "excluded": [
+        "fleet customers",
+        "demonstrators/service loan vehicles",
+        "transactions with other promotions/discounts"
+      ],
+      "rankingUse": "Not universal retail/cash price; do not stack with Essential driveaway campaign"
+    }
+  ],
+  "rejectedStockEvidence": [
+    {
+      "sourceId": "atto1-stock-premium-booran",
+      "stockNumber": "8078406",
+      "trim": "Premium",
+      "url": "https://www.booran.com.au/cars/new-2026-byd-atto-1-8078406",
+      "checkedAt": "2026-10-10T05:29:03.713040+00:00",
+      "reason": "Live direct HTML title/og:title says SOLD; web search/open cache still appeared available. Reject the cached new-stock claim.",
+      "legacyDetails": {
+        "advertisedCalendarYear": 2026,
+        "buildYear": 2026,
+        "complianceYear": 2026,
+        "vin": "LGXCE4CB0T2168266",
+        "odometerKm": 10,
+        "explicitVehicleDescriptionModelYear": "EQE MY25 Premium"
+      },
+      "doNotUse": "Not active stock and not proof of MY for current available units"
+    },
+    {
+      "sourceId": "atto1-rejected-essential-removed",
+      "stockNumber": "B8073917",
+      "trim": "Essential",
+      "url": "https://www.carsguide.com.au/car/15172817/byd/atto-1/nsw/muswellbrook/hatchback",
+      "checkedAt": "2026-10-10T05:30:57.313428+00:00",
+      "reason": "Direct live URL redirects to buy-a-car?removed=true; reject the old 2026 new-in-stock snippet",
+      "legacyVin": "LGXCE4CC4T2162219"
+    },
+    {
+      "sourceId": "atto1-rejected-essential-demo",
+      "stockNumber": "10492",
+      "trim": "Essential",
+      "url": "https://www.parramattamotorgroup.com.au/cars/demo-green-2026-byd-atto-1-10492",
+      "checkedAt": "2026-10-10T05:30:44.585850+00:00",
+      "reason": "Explicit Demo Car, registered GEB91H; schema UsedCondition. One kilometre is not proof of a new vehicle.",
+      "vin": "LGXCE4CC8T2126534",
+      "liveAdvertisedDriveawayAUD": 20505
+    },
+    {
+      "sourceId": null,
+      "stockNumber": "8059745",
+      "trim": "Essential",
+      "url": "https://www.booran.com.au/cars/new-2026-byd-atto-1-8059745",
+      "checkedAt": "2026-10-10",
+      "reason": "Search result expressly SOLD; direct read returned HTTP 404.",
+      "httpStatus": 404
+    },
+    {
+      "sourceId": null,
+      "stockNumber": null,
+      "trim": "Essential",
+      "url": "https://www.carsales.com.au/cars/details/2026-byd-atto-1-essential-auto-my25/OAG-AD-26091993/",
+      "checkedAt": "2026-10-10",
+      "reason": "Search result explicitly On hold; cannot use as presently purchasable stock. Not independently fetched as active stock."
+    }
+  ],
+  "stockSnapshotSummary": {
+    "sourceId": "atto1-inventory-new",
+    "freshDownloadAt": "2026-10-10T05:29:06.445489+00:00",
+    "atto1PremiumUniqueNewCardsAvailableNow": 99,
+    "atto1EssentialCards": 0,
+    "threeExactPremiumStockConfigurationsRechecked": true,
+    "fullExtractPath": "/workspace/scratch/586427eef9f2/roadmark-research/atto1-sources/inventory-atto1-cards.json",
+    "caveat": "A snapshot of this retailer network; not a complete Australian dealer census or independently verified dealer inventory."
+  },
+  "sources": [
+    {
+      "id": "atto1-product",
+      "title": "BYD Australia ATTO 1 current model page",
+      "url": "https://bydautomotive.com.au/atto-1",
+      "finalUrl": "https://bydautomotive.com.au/atto-1",
+      "retrievedAt": "2026-10-10T05:28:10.782448+00:00",
+      "retrievedDate": "2026-10-10",
+      "httpStatus": 200,
+      "bytes": 503614,
+      "sha256": "803816522c174f60a3b49f832e329b598cf390325ece81c07484ac2c29ce53a2",
+      "snapshot": "/workspace/scratch/586427eef9f2/roadmark-research/atto1-sources/product.html",
+      "retrievalMethod": "direct_public_https_read",
+      "kind": "official_manufacturer",
+      "locators": [
+        "Compare Models: Essential and Premium",
+        "Technical Specifications modal > Essential/Premium > Driveline: Combined range WLTP",
+        "Clever storage solutions"
+      ]
+    },
+    {
+      "id": "atto1-offers",
+      "title": "BYD Australia current offers and campaign terms",
+      "url": "https://bydautomotive.com.au/offers",
+      "finalUrl": "https://bydautomotive.com.au/offers",
+      "retrievedAt": "2026-10-10T05:28:18.924741+00:00",
+      "retrievedDate": "2026-10-10",
+      "httpStatus": 200,
+      "bytes": 529658,
+      "sha256": "cd7a236cf20c580fc21e2365b35112eee29a03965d33ddf285125e753d286f5c",
+      "snapshot": "/workspace/scratch/586427eef9f2/roadmark-research/atto1-sources/offers.html",
+      "retrievalMethod": "direct_public_https_read",
+      "kind": "official_manufacturer",
+      "locators": [
+        "BYD ATTO 1 Essential Driveaway Campaign",
+        "Terms & conditions > BYD ATTO 1 Pricing Offer",
+        "Terms & conditions > 6% Novated Lease Discount"
+      ]
+    },
+    {
+      "id": "atto1-brochure",
+      "title": "BYD Australia ATTO 1 specification brochure, Version 122506",
+      "url": "https://bydautomotive.com.au/brochures/BYD-ATTO-1-2025.pdf",
+      "finalUrl": "https://bydautomotive.com.au/brochures/BYD-ATTO-1-2025.pdf",
+      "retrievedAt": "2026-10-10T05:28:28.436344+00:00",
+      "retrievedDate": "2026-10-10",
+      "httpStatus": 200,
+      "bytes": 16408082,
+      "sha256": "542af47cdf667030da94a897473357ceab2f6714a00a9986a54347181d96f061",
+      "snapshot": "/workspace/scratch/586427eef9f2/roadmark-research/atto1-sources/brochure.pdf",
+      "retrievalMethod": "direct_public_https_read",
+      "kind": "official_manufacturer",
+      "locators": [
+        "PDF Title metadata: MY25 BYD ATTO 1_Spec Sheet_122506",
+        "PDF page 2: Dimensions, Traction Motor, Performance, New Energy",
+        "PDF page 3: Equipment and Colours",
+        "PDF page 4: Version 122506"
+      ],
+      "documentTitleMetadata": "MY25 BYD ATTO 1_Spec Sheet_122506",
+      "documentVersion": "122506",
+      "modelYearScopeNote": "Title explicitly says MY25. Neither filename nor creation year establishes the MY of an order or currently advertised stock.",
+      "textExtractionNote": "Embedded font encoding corrupted pdftotext output; key specification and equipment pages visually rendered and checked.",
+      "cacheWarning": "Search extraction showed older Title version 112503; fresh downloaded PDF Title is 122506 and the visually checked page 4 prints Version 122506. Live snapshot takes precedence."
+    },
+    {
+      "id": "atto1-showcase",
+      "title": "BYD Australia Melbourne Motor Show vehicle specifications",
+      "url": "https://bydautomotive.com.au/byd-showcase",
+      "finalUrl": "https://bydautomotive.com.au/byd-showcase",
+      "retrievedAt": "2026-10-10T05:28:36.469255+00:00",
+      "retrievedDate": "2026-10-10",
+      "httpStatus": 200,
+      "bytes": 478249,
+      "sha256": "2f0899b613e4758dd326b9dd7ab82c3bdf516025118f04e0854acc2e01d61a64",
+      "snapshot": "/workspace/scratch/586427eef9f2/roadmark-research/atto1-sources/showcase.html",
+      "retrievalMethod": "direct_public_https_read",
+      "kind": "official_manufacturer",
+      "locators": [
+        "BYD ATTO 1 > Charging Information"
+      ]
+    },
+    {
+      "id": "atto1-config-essential",
+      "title": "Manufacturer-linked ATTO 1 configurator, Essential deep link",
+      "url": "https://evdealergroup-byd.com.au/configurator/byd-atto-1?ref=website&spec=2826",
+      "finalUrl": "https://evdealergroup-byd.com.au/configurator/byd-atto-1?ref=website&spec=2826",
+      "retrievedAt": "2026-10-10T05:29:16.587468+00:00",
+      "retrievedDate": "2026-10-10",
+      "httpStatus": 200,
+      "bytes": 136835,
+      "sha256": "21b975b174f009e8c1127d174c6e1037da34d6289390be5dd131ea67da407bf5",
+      "snapshot": "/workspace/scratch/586427eef9f2/roadmark-research/atto1-sources/config-essential.html",
+      "retrievalMethod": "direct_public_https_read",
+      "kind": "manufacturer_linked_official_retailer",
+      "locators": [
+        "input[name=variant] values 2826 and 2827; corresponding label[data-option] JSON price, gst, and learnMoreModal",
+        "Your model / Choose your model; currentEstDeliveryLabel; order fee and allocation terms"
+      ],
+      "manufacturerEntryPointUrl": "https://bydautomotive.com.au/configurator/byd-atto-1?ref=website&spec=2826",
+      "entryPointEvidence": "Exact Order Now data-href from current official manufacturer product page; HTTP redirect to EVDealer Group."
+    },
+    {
+      "id": "atto1-config-premium",
+      "title": "Manufacturer-linked ATTO 1 configurator, Premium deep link",
+      "url": "https://evdealergroup-byd.com.au/configurator/byd-atto-1?ref=website&spec=2827",
+      "finalUrl": "https://evdealergroup-byd.com.au/configurator/byd-atto-1?ref=website&spec=2827",
+      "retrievedAt": "2026-10-10T05:29:16.449411+00:00",
+      "retrievedDate": "2026-10-10",
+      "httpStatus": 200,
+      "bytes": 136835,
+      "sha256": "6b0af0ff507d57955b447dcaa91c10f4756ae0d83f57e97fc49dfd851dc77c0d",
+      "snapshot": "/workspace/scratch/586427eef9f2/roadmark-research/atto1-sources/config-premium.html",
+      "retrievalMethod": "direct_public_https_read",
+      "kind": "manufacturer_linked_official_retailer",
+      "locators": [
+        "input[name=variant] values 2826 and 2827; corresponding label[data-option] JSON price, gst, and learnMoreModal",
+        "Current order-request form"
+      ],
+      "manufacturerEntryPointUrl": "https://bydautomotive.com.au/configurator/byd-atto-1?ref=website&spec=2827",
+      "entryPointEvidence": "Exact Order Now data-href from current official manufacturer product page; HTTP redirect to EVDealer Group."
+    },
+    {
+      "id": "atto1-stock-premium-booran",
+      "title": "Booran ATTO 1 Premium stock 8078406 (now SOLD)",
+      "url": "https://www.booran.com.au/cars/new-2026-byd-atto-1-8078406",
+      "finalUrl": "https://www.booran.com.au/cars/new-2026-byd-atto-1-8078406",
+      "retrievedAt": "2026-10-10T05:29:03.713040+00:00",
+      "retrievedDate": "2026-10-10",
+      "httpStatus": 200,
+      "bytes": 116435,
+      "sha256": "e43cc2b25e5d22a59b5d9e81672917361b0d086af064ee15b67aff1a7c1a32f9",
+      "snapshot": "/workspace/scratch/586427eef9f2/roadmark-research/atto1-sources/stock-premium-booran.html",
+      "retrievalMethod": "direct_public_https_read",
+      "kind": "dealer_or_marketplace",
+      "locators": [
+        "HTML title and og:title begin SOLD",
+        "Main title, stock 8078406, stored vehicle description EQE MY25 Premium"
+      ]
+    },
+    {
+      "id": "atto1-inventory-new",
+      "title": "EVDealer Group new inventory, ATTO 1 filter",
+      "url": "https://evdealergroup-byd.com.au/inventory?model=atto-1&type=n",
+      "finalUrl": "https://evdealergroup-byd.com.au/inventory?model=atto-1&type=n",
+      "retrievedAt": "2026-10-10T05:29:06.445489+00:00",
+      "retrievedDate": "2026-10-10",
+      "httpStatus": 200,
+      "bytes": 10595905,
+      "sha256": "4f382213a3fddf3f6d0f894506bb202d0d83c44e8832baff5a2c2bc597212650",
+      "snapshot": "/workspace/scratch/586427eef9f2/roadmark-research/atto1-sources/inventory-new.html",
+      "retrievalMethod": "direct_public_https_read",
+      "kind": "manufacturer_linked_official_retailer",
+      "locators": [
+        "div.col.vehicle.do-n.do-atto-1, each exact stock number and carousel ID",
+        "99 distinct Premium stock cards, 0 Essential stock cards in downloaded HTML"
+      ]
+    },
+    {
+      "id": "atto1-handbook",
+      "title": "BYD Australia ATTO 1 owner handbook",
+      "url": "https://bydautomotive.com.au/brochures/BYD-ATTO-1-Owners-Handbook-2025.pdf",
+      "finalUrl": "https://bydautomotive.com.au/brochures/BYD-ATTO-1-Owners-Handbook-2025.pdf",
+      "retrievedAt": "2026-10-10T05:29:11.993123+00:00",
+      "retrievedDate": "2026-10-10",
+      "httpStatus": 200,
+      "bytes": 39077833,
+      "sha256": "49e5ef218014fb0007c609aa08ab9df9372a49510ab45bb395d949b558ec377a",
+      "snapshot": "/workspace/scratch/586427eef9f2/roadmark-research/atto1-sources/handbook.pdf",
+      "retrievalMethod": "direct_public_https_read",
+      "kind": "official_manufacturer",
+      "locators": [
+        "Printed/PDF page 88: Trailer Towing",
+        "Printed/PDF page 171: occupants and motor specifications",
+        "Printed/PDF page 172: High-Voltage Battery"
+      ]
+    },
+    {
+      "id": "atto1-stock-premium-8047108",
+      "title": "stock premium 8047108",
+      "url": "https://evdealergroup-byd.com.au/configurator/yumq_IJ_NC20jiX_Dh6dE9JxPZalUyvl5f9kcHfZLlp1BqgJsOeodXPa3Id_zQqVD10JqJjmTtxWo6y5zRhlEQ",
+      "finalUrl": "https://evdealergroup-byd.com.au/configurator/yumq_IJ_NC20jiX_Dh6dE9JxPZalUyvl5f9kcHfZLlp1BqgJsOeodXPa3Id_zQqVD10JqJjmTtxWo6y5zRhlEQ",
+      "retrievedAt": "2026-10-10T05:30:46.489995+00:00",
+      "retrievedDate": "2026-10-10",
+      "httpStatus": 200,
+      "bytes": 136924,
+      "sha256": "9440dc5c5a8c53822cc05f41cc504a24a2b08113a0652a0ec34470e61ce40af0",
+      "snapshot": "/workspace/scratch/586427eef9f2/roadmark-research/atto1-sources/stock-premium-8047108.html",
+      "retrievalMethod": "direct_public_https_read",
+      "kind": "manufacturer_linked_official_retailer",
+      "locators": [
+        "Exact stock configuration or ad linked in source URL"
+      ]
+    },
+    {
+      "id": "atto1-stock-premium-8060393",
+      "title": "stock premium 8060393",
+      "url": "https://evdealergroup-byd.com.au/configurator/yumq_IJ_NC20jiX_Dh6dE9JxPZalUyvl5f9kcHfZLlp1BqgJsOeodXPa3Id_zQqVtdmYFCdruAaSi2KsZ6MyaA",
+      "finalUrl": "https://evdealergroup-byd.com.au/configurator/yumq_IJ_NC20jiX_Dh6dE9JxPZalUyvl5f9kcHfZLlp1BqgJsOeodXPa3Id_zQqVtdmYFCdruAaSi2KsZ6MyaA",
+      "retrievedAt": "2026-10-10T05:30:46.305498+00:00",
+      "retrievedDate": "2026-10-10",
+      "httpStatus": 200,
+      "bytes": 136916,
+      "sha256": "9ed83b07e123511afd61e0f24e8a7f3ebfa565437af201fd863d38dc6647000e",
+      "snapshot": "/workspace/scratch/586427eef9f2/roadmark-research/atto1-sources/stock-premium-8060393.html",
+      "retrievalMethod": "direct_public_https_read",
+      "kind": "manufacturer_linked_official_retailer",
+      "locators": [
+        "Exact stock configuration or ad linked in source URL"
+      ]
+    },
+    {
+      "id": "atto1-stock-premium-8076412",
+      "title": "stock premium 8076412",
+      "url": "https://evdealergroup-byd.com.au/configurator/yumq_IJ_NC20jiX_Dh6dE9JxPZalUyvl5f9kcHfZLlp1BqgJsOeodXPa3Id_zQqV3nrzj_uWBz9j1zpmIWnhXA",
+      "finalUrl": "https://evdealergroup-byd.com.au/configurator/yumq_IJ_NC20jiX_Dh6dE9JxPZalUyvl5f9kcHfZLlp1BqgJsOeodXPa3Id_zQqV3nrzj_uWBz9j1zpmIWnhXA",
+      "retrievedAt": "2026-10-10T05:30:46.743792+00:00",
+      "retrievedDate": "2026-10-10",
+      "httpStatus": 200,
+      "bytes": 136918,
+      "sha256": "f02ca5cce980ce640fb24a55b5ed7f4253b296e34a70714ade5b34b50271cd64",
+      "snapshot": "/workspace/scratch/586427eef9f2/roadmark-research/atto1-sources/stock-premium-8076412.html",
+      "retrievalMethod": "direct_public_https_read",
+      "kind": "manufacturer_linked_official_retailer",
+      "locators": [
+        "Exact stock configuration or ad linked in source URL"
+      ]
+    },
+    {
+      "id": "atto1-rejected-essential-demo",
+      "title": "rejected essential demo",
+      "url": "https://www.parramattamotorgroup.com.au/cars/demo-green-2026-byd-atto-1-10492",
+      "finalUrl": "https://www.parramattamotorgroup.com.au/cars/demo-green-2026-byd-atto-1-10492",
+      "retrievedAt": "2026-10-10T05:30:44.585850+00:00",
+      "retrievedDate": "2026-10-10",
+      "httpStatus": 200,
+      "bytes": 151141,
+      "sha256": "95a49d6d8774a5048a9b758ebae3911d50ae143284f6fec2e35689c0db0ccb60",
+      "snapshot": "/workspace/scratch/586427eef9f2/roadmark-research/atto1-sources/rejected-essential-demo.html",
+      "retrievalMethod": "direct_public_https_read",
+      "kind": "dealer_or_marketplace",
+      "locators": [
+        "Exact stock configuration or ad linked in source URL"
+      ]
+    },
+    {
+      "id": "atto1-rejected-essential-removed",
+      "title": "rejected essential removed",
+      "url": "https://www.carsguide.com.au/car/15172817/byd/atto-1/nsw/muswellbrook/hatchback",
+      "finalUrl": "https://www.carsguide.com.au/buy-a-car?removed=true",
+      "retrievedAt": "2026-10-10T05:30:57.313428+00:00",
+      "retrievedDate": "2026-10-10",
+      "httpStatus": 200,
+      "bytes": 745970,
+      "sha256": "fe472ecd283b5238a4020b524467c9ebff118e78a4bf9b79b1e6019b8e0a29c4",
+      "snapshot": "/workspace/scratch/586427eef9f2/roadmark-research/atto1-sources/rejected-essential-removed.html",
+      "retrievalMethod": "direct_public_https_read",
+      "kind": "dealer_or_marketplace",
+      "locators": [
+        "Exact stock configuration or ad linked in source URL"
+      ]
+    }
+  ],
+  "limitations": [
+    "No dealer contacted and no order/purchase attempted.",
+    "Formal manufacturer MLP remains null. Current manufacturer-linked retailer base prices are separately retained; national/promotional driveaway and exact-stock driveaway prices are different fields.",
+    "Exact current-order and live-stock model year is null; MY25 applies explicitly to brochure Title metadata only. Advertised 2025/2026 calendar labels are separate.",
+    "Gross/usable battery split, boot measurement/loading protocol, maximum V2L output and numeric towing rating not verified.",
+    "Essential current exact new stock unverified; 99 live retailer Premium cards do not imply nationwide stock completeness.",
+    "No global best/cheapest claim made; every advantage has named source scope.",
+    "Charging times are manufacturer claims with undisclosed test conditions, and the unusual 30-100% row is preserved without relabelling."
+  ],
+  "retrievalLog": [
+    {
+      "id": "product",
+      "status": 200,
+      "length": 503614,
+      "url": "https://bydautomotive.com.au/atto-1",
+      "retrievedAt": "2026-10-10T05:28:10.782448+00:00"
+    },
+    {
+      "id": "offers",
+      "status": 200,
+      "length": 529658,
+      "url": "https://bydautomotive.com.au/offers",
+      "retrievedAt": "2026-10-10T05:28:18.924741+00:00"
+    },
+    {
+      "id": "brochure",
+      "status": 200,
+      "length": 16408082,
+      "url": "https://bydautomotive.com.au/brochures/BYD-ATTO-1-2025.pdf",
+      "retrievedAt": "2026-10-10T05:28:28.436344+00:00"
+    },
+    {
+      "id": "showcase",
+      "status": 200,
+      "length": 478249,
+      "url": "https://bydautomotive.com.au/byd-showcase",
+      "retrievedAt": "2026-10-10T05:28:36.469255+00:00"
+    },
+    {
+      "id": "config-essential",
+      "status": 200,
+      "length": 136835,
+      "url": "https://evdealergroup-byd.com.au/configurator/byd-atto-1?ref=website&spec=2826",
+      "retrievedAt": "2026-10-10T05:29:16.587468+00:00"
+    },
+    {
+      "id": "config-premium",
+      "status": 200,
+      "length": 136835,
+      "url": "https://evdealergroup-byd.com.au/configurator/byd-atto-1?ref=website&spec=2827",
+      "retrievedAt": "2026-10-10T05:29:16.449411+00:00"
+    },
+    {
+      "id": "stock-premium-booran",
+      "status": 200,
+      "length": 116435,
+      "url": "https://www.booran.com.au/cars/new-2026-byd-atto-1-8078406",
+      "retrievedAt": "2026-10-10T05:29:03.713040+00:00"
+    },
+    {
+      "id": "inventory-new",
+      "status": 200,
+      "length": 10595905,
+      "url": "https://evdealergroup-byd.com.au/inventory?model=atto-1&type=n",
+      "retrievedAt": "2026-10-10T05:29:06.445489+00:00"
+    },
+    {
+      "id": "handbook",
+      "status": 200,
+      "length": 39077833,
+      "url": "https://bydautomotive.com.au/brochures/BYD-ATTO-1-Owners-Handbook-2025.pdf",
+      "retrievedAt": "2026-10-10T05:29:11.993123+00:00"
+    },
+    {
+      "id": "stock-premium-8047108",
+      "originalUrl": "https://evdealergroup-byd.com.au/configurator/yumq_IJ_NC20jiX_Dh6dE9JxPZalUyvl5f9kcHfZLlp1BqgJsOeodXPa3Id_zQqVD10JqJjmTtxWo6y5zRhlEQ",
+      "url": "https://evdealergroup-byd.com.au/configurator/yumq_IJ_NC20jiX_Dh6dE9JxPZalUyvl5f9kcHfZLlp1BqgJsOeodXPa3Id_zQqVD10JqJjmTtxWo6y5zRhlEQ",
+      "status": 200,
+      "length": 136924,
+      "retrievedAt": "2026-10-10T05:30:46.489995+00:00"
+    },
+    {
+      "id": "stock-premium-8060393",
+      "originalUrl": "https://evdealergroup-byd.com.au/configurator/yumq_IJ_NC20jiX_Dh6dE9JxPZalUyvl5f9kcHfZLlp1BqgJsOeodXPa3Id_zQqVtdmYFCdruAaSi2KsZ6MyaA",
+      "url": "https://evdealergroup-byd.com.au/configurator/yumq_IJ_NC20jiX_Dh6dE9JxPZalUyvl5f9kcHfZLlp1BqgJsOeodXPa3Id_zQqVtdmYFCdruAaSi2KsZ6MyaA",
+      "status": 200,
+      "length": 136916,
+      "retrievedAt": "2026-10-10T05:30:46.305498+00:00"
+    },
+    {
+      "id": "stock-premium-8076412",
+      "originalUrl": "https://evdealergroup-byd.com.au/configurator/yumq_IJ_NC20jiX_Dh6dE9JxPZalUyvl5f9kcHfZLlp1BqgJsOeodXPa3Id_zQqV3nrzj_uWBz9j1zpmIWnhXA",
+      "url": "https://evdealergroup-byd.com.au/configurator/yumq_IJ_NC20jiX_Dh6dE9JxPZalUyvl5f9kcHfZLlp1BqgJsOeodXPa3Id_zQqV3nrzj_uWBz9j1zpmIWnhXA",
+      "status": 200,
+      "length": 136918,
+      "retrievedAt": "2026-10-10T05:30:46.743792+00:00"
+    },
+    {
+      "id": "rejected-essential-demo",
+      "originalUrl": "https://www.parramattamotorgroup.com.au/cars/demo-green-2026-byd-atto-1-10492",
+      "url": "https://www.parramattamotorgroup.com.au/cars/demo-green-2026-byd-atto-1-10492",
+      "status": 200,
+      "length": 151141,
+      "retrievedAt": "2026-10-10T05:30:44.585850+00:00"
+    },
+    {
+      "id": "rejected-essential-removed",
+      "originalUrl": "https://www.carsguide.com.au/car/15172817/byd/atto-1/nsw/muswellbrook/hatchback",
+      "url": "https://www.carsguide.com.au/buy-a-car?removed=true",
+      "status": 200,
+      "length": 745970,
+      "retrievedAt": "2026-10-10T05:30:57.313428+00:00"
+    },
+    {
+      "id": "rejected-essential-sold",
+      "url": "https://www.booran.com.au/cars/new-2026-byd-atto-1-8059745",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ]
+}

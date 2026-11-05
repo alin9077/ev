@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { site } from "@/lib/config";
 import type { Source } from "@/lib/types";
 import { FootnoteProvider } from "./footnotes";
+import { SiteNav } from "./site-nav";
 export function SiteShell({
   sources = [],
   children,
@@ -14,6 +14,7 @@ export function SiteShell({
       <a className="skip-link" href="#main">
         Skip to content
       </a>
+      <SiteNav />
       {sources.length ? (
         <FootnoteProvider sources={sources}>{children}</FootnoteProvider>
       ) : (
@@ -22,7 +23,7 @@ export function SiteShell({
       <footer className="site-footer container">
         <div>
           <Link className="brand" href="/">
-            EV Side by Side
+            Roadmark
           </Link>
           <p>
             An independent Australian EV comparison.
@@ -31,15 +32,17 @@ export function SiteShell({
           </p>
         </div>
         <div>
+          <Link href="/">Discover strengths</Link>
+          <Link href="/market">Market coverage</Link>
           <Link href="/methodology">Methodology</Link>
           <Link href="/sources">Sources & corrections</Link>
           <Link href="/comparisons">Nine Model Y comparisons</Link>
           <Link href="/glossary">EV glossary</Link>
         </div>
         <p className="footer-note">
-          Research snapshot: {site.dateLabel}. Prices and availability need
-          confirmation. Working brand, subject to name clearance. No behavioural
-          analytics or vehicle data collection.
+          Dated research: check each claim’s verification date. Prices and
+          availability need confirmation. Working brand, subject to name
+          clearance. No behavioural analytics or vehicle data collection.
         </p>
       </footer>
     </>

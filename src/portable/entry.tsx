@@ -1,11 +1,17 @@
+import { discoveryCars } from "@/lib/discovery";
 import { createRoot } from "react-dom/client";
+import { RoadmarkErrorBoundary } from "@/components/roadmark-error";
 import { SiteShell } from "@/components/site-shell";
 import Experience from "@/components/experience";
 import FleetExperience from "@/components/fleet-experience";
-import { fleetSelection } from "@/lib/fleet";
+import { fleetSelection, curatedFleetCars } from "@/lib/fleet";
+import ReviewQueue from "@/components/review-queue";
+import MarketAudit from "@/components/market-audit";
+import Discovery from "@/components/discovery";
 import Explorer from "@/components/explorer";
 import Detail from "@/components/detail";
 import Software from "@/components/software";
+import { CorrectionHistory } from "@/components/correction-history";
 import SourceRegistry from "@/components/source-registry";
 import ModelY from "@/app/model-y/page";
 import Methodology from "@/app/methodology/page";
@@ -22,7 +28,33 @@ function App() {
     d = research();
   const state = parseSelection(query, cars);
   let content;
-  if (path === "/cars") {
+  if (path === "/") {
+    content = (
+      <FleetExperience
+        allPacks={curatedFleetCars(catalogue()).map((c) => pack(c.id))}
+        totalCatalogueCount={cars.length}
+        initial={fleetSelection(catalogue(), query)}
+        criteria={d.criteria}
+        version="b"
+        collapseComparison
+        afterHero={
+          <Discovery
+            cars={discoveryCars(catalogue())}
+            sources={d.sources}
+            embedded
+          />
+        }
+      />
+    );
+  } else if (path === "/discover") {
+    content = (
+      <Discovery cars={discoveryCars(catalogue())} sources={d.sources} />
+    );
+  } else if (path === "/review") {
+    content = <ReviewQueue />;
+  } else if (path === "/market") {
+    content = <MarketAudit />;
+  } else if (path === "/cars") {
     const equipment = Object.fromEntries(
       d.trim_equipment.map((e) => [
         e.variant_id,
@@ -66,12 +98,14 @@ function App() {
       <main id="main" className="container editorial-page">
         <h1>Sources</h1>
         <SourceRegistry sources={d.sources} />
+        <CorrectionHistory />
       </main>
     );
   else if (!path.startsWith("/compare"))
     content = (
       <FleetExperience
-        allPacks={catalogue().map((c) => pack(c.id))}
+        allPacks={curatedFleetCars(catalogue()).map((c) => pack(c.id))}
+        totalCatalogueCount={cars.length}
         initial={fleetSelection(catalogue(), query)}
         criteria={d.criteria}
         version={B ? "b" : undefined}
@@ -80,12 +114,13 @@ function App() {
   else
     content = (
       <Experience
-        cars={cars}
+        {...(path.startsWith("/compare")
+          ? { mode: "compare" as const, cars }
+          : { mode: "home" as const, cars })}
         packs={state.ids.map(pack)}
         state={state}
         criteria={d.criteria}
         counts={counts()}
-        mode={path.startsWith("/compare") ? "compare" : "home"}
       />
     );
   return (
@@ -94,4 +129,8 @@ function App() {
     </SiteShell>
   );
 }
-createRoot(document.getElementById("root")!).render(<App />);
+createRoot(document.getElementById("root")!).render(
+  <RoadmarkErrorBoundary>
+    <App />
+  </RoadmarkErrorBoundary>,
+);

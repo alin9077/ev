@@ -10,7 +10,8 @@ import {
   useState,
 } from "react";
 import type { Fact, Pack, Research } from "@/lib/types";
-import { availabilityLabels, priorities } from "@/lib/config";
+import { priorities } from "@/lib/config";
+import { buyerAvailabilityText } from "@/lib/buyer-availability";
 import { fleetSelection } from "@/lib/fleet";
 import { compareFacts } from "@/lib/compare";
 import {
@@ -34,12 +35,19 @@ export default function FleetExperience({
   initial,
   criteria,
   version,
+  afterHero,
+  collapseComparison = false,
+  totalCatalogueCount = allPacks.length,
 }: {
   allPacks: Pack[];
   initial: Selection;
   criteria: Research["criteria"];
   /** The B site: the same comparison in the second look, with its own scenes. */
   version?: "b";
+  afterHero?: React.ReactNode;
+  /** Home page: keep the long Model Y comparison closed until asked for or linked to. */
+  collapseComparison?: boolean;
+  totalCatalogueCount?: number;
 }) {
   const [selected, setSelected] = useState(initial);
   const [restored, setRestored] = useState(false);
@@ -54,6 +62,39 @@ export default function FleetExperience({
       setRestored(true);
     });
   }, [allPacks]);
+  // Links into the closed comparison (the hero's nine reasons, "All chapters")
+  // open it first, so every in-page target keeps working.
+  useEffect(() => {
+    if (!collapseComparison) return;
+    const reveal = (id: string, scroll = false) => {
+      if (!id) return;
+      const target = document.getElementById(id);
+      const box = target?.closest<HTMLDetailsElement>(
+        "details.fleet-full-comparison",
+      );
+      if (!box || box.open) return;
+      box.open = true;
+      // A page opened at #target has nothing else to bring the target into view.
+      if (scroll)
+        target?.scrollIntoView({ block: "start", behavior: "instant" });
+    };
+    const onClick = (event: MouseEvent) => {
+      const link =
+        event.target instanceof Element
+          ? event.target.closest<HTMLAnchorElement>('a[href^="#"]')
+          : null;
+      if (link) reveal(decodeURIComponent(link.hash.slice(1)));
+    };
+    const onHash = () =>
+      reveal(decodeURIComponent(location.hash.slice(1)), true);
+    onHash();
+    document.addEventListener("click", onClick, true);
+    window.addEventListener("hashchange", onHash);
+    return () => {
+      document.removeEventListener("click", onClick, true);
+      window.removeEventListener("hashchange", onHash);
+    };
+  }, [collapseComparison]);
   const find = (id: string) => allPacks.find((p) => p.car.id === id)!;
   const baseline = find(selected.baseline),
     alternatives = selected.ids.map(find);
@@ -166,7 +207,7 @@ export default function FleetExperience({
                         {c.car.trim}
                         {c.car.availability === "current_or_order_listed"
                           ? ""
-                          : ` · ${availabilityLabels[c.car.availability]}`}
+                          : ` · ${buyerAvailabilityText(c.car)}`}
                       </option>
                     ))}
                 </select>
@@ -187,7 +228,7 @@ export default function FleetExperience({
           Starts with the lowest listed current trim in each alternative family.
           The catalogue covers nine of Australia’s ten best-selling EVs for
           January–September 2026, plus the BYD Atto 3. The tenth-ranked Atto 1
-          is not yet included.
+          is covered in discovery, outside this original ten-family comparison.
           <FootnoteRefs ids={["r5_au_ev_sales_sep2026"]} />
           <span className="fleet-swipe-hint">
             Swiping any row moves every chapter together.
@@ -205,6 +246,7 @@ export default function FleetExperience({
       <section
         key={ch.n}
         id={`chapter-${ch.n}`}
+        tabIndex={-1}
         className={`inline-chapter fleet-chapter${ch.n === "01" ? " fleet-lead-chapter" : ""}`}
         data-chapter={ch.n}
         aria-labelledby={`chapter-title-${ch.n}`}
@@ -297,6 +339,65 @@ export default function FleetExperience({
       </section>
     );
   }
+  const comparison = (
+    <>
+      <FleetControls
+        baseline={baseline}
+        alternatives={alternatives}
+        chapters={ordered}
+      />
+      {renderChapter(ordered[0])}
+      <section id="chapters" className="container fleet-priorities">
+        <div className="fleet-section-heading">
+          <h2>The full picture.</h2>
+          <p>Price, automated driving and everyday ownership.</p>
+        </div>
+        <div className="fleet-priority-bar">
+          <span>Prioritise the remaining topics</span>
+          <div className="chips">
+            {priorities
+              .filter((p) => p !== "Price")
+              .map((p) => (
+                <button
+                  key={p}
+                  aria-pressed={selected.priority === p}
+                  onClick={() =>
+                    setSelected((s) => ({
+                      ...s,
+                      priority: s.priority === p ? "" : p,
+                    }))
+                  }
+                >
+                  {p}
+                </button>
+              ))}
+          </div>
+        </div>
+        <nav className="comparison-chapters" aria-label="Comparison chapters">
+          {ordered.map((ch) => (
+            <a
+              key={ch.n}
+              className="chapter-wayfinding"
+              data-chapter={ch.n}
+              href={`#chapter-${ch.n}`}
+            >
+              <span className="chapter-wayfinding-sign" aria-hidden="true">
+                <span>{String.fromCharCode(64 + Number(ch.n))}</span>
+                <ComparisonSymbol chapter={ch.n} />
+              </span>
+              <span className="chapter-wayfinding-title">
+                {ch.title}
+                <span aria-hidden="true">↓</span>
+              </span>
+            </a>
+          ))}
+        </nav>
+      </section>
+      <div className="fleet-chapters">
+        {ordered.slice(1).map(renderChapter)}
+      </div>
+    </>
+  );
   return (
     <SwipeProvider
       count={alternatives.length}
@@ -319,65 +420,21 @@ export default function FleetExperience({
             </div>
           </div>
         </header>
-        <FleetControls
-          baseline={baseline}
-          alternatives={alternatives}
-          chapters={ordered}
-        />
-        {renderChapter(ordered[0])}
-        <section id="chapters" className="container fleet-priorities">
-          <div className="fleet-section-heading">
-            <h2>The full picture.</h2>
-            <p>Price, automated driving and everyday ownership.</p>
-          </div>
-          <div className="fleet-priority-bar">
-            <span>Prioritise the remaining topics</span>
-            <div className="chips">
-              {priorities
-                .filter((p) => p !== "Price")
-                .map((p) => (
-                  <button
-                    key={p}
-                    aria-pressed={selected.priority === p}
-                    onClick={() =>
-                      setSelected((s) => ({
-                        ...s,
-                        priority: s.priority === p ? "" : p,
-                      }))
-                    }
-                  >
-                    {p}
-                  </button>
-                ))}
-            </div>
-          </div>
-          <nav className="comparison-chapters" aria-label="Comparison chapters">
-            {ordered.map((ch) => (
-              <a
-                key={ch.n}
-                className="chapter-wayfinding"
-                data-chapter={ch.n}
-                href={`#chapter-${ch.n}`}
-              >
-                <span className="chapter-wayfinding-sign" aria-hidden="true">
-                  <span>{String.fromCharCode(64 + Number(ch.n))}</span>
-                  <ComparisonSymbol chapter={ch.n} />
-                </span>
-                <span className="chapter-wayfinding-title">
-                  {ch.title}
-                  <span aria-hidden="true">↓</span>
-                </span>
-              </a>
-            ))}
-          </nav>
-        </section>
-        <div className="fleet-chapters">
-          {ordered.slice(1).map(renderChapter)}
-        </div>
+        {afterHero}
+        {collapseComparison ? (
+          <details className="fleet-full-comparison">
+            <summary>
+              <span>Model Y against the other nine: the full comparison</span>
+            </summary>
+            {comparison}
+          </details>
+        ) : (
+          comparison
+        )}
         <section className="container fleet-end">
           <h2>Find your next EV.</h2>
           <Link className="button secondary" href="/cars">
-            Explore all 34 variants
+            Explore all {totalCatalogueCount} variants
           </Link>
           <Link className="text-link" href="/methodology">
             How this guide is researched
@@ -442,7 +499,7 @@ function VehicleHeading({ pack }: { pack: Pack }) {
       <h2>{pack.car.model}</h2>
       <p>{pack.car.trim}</p>
       <span className="small muted">
-        {pack.car.year} · {pack.car.drive}
+        {pack.car.year ?? "MY unverified"} · {pack.car.drive}
       </span>
     </div>
   );

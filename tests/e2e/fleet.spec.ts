@@ -7,6 +7,7 @@ test("all ten families share swipe position, keep Tesla fixed and preserve trims
   test.setTimeout(90_000);
   await page.setViewportSize({ width: 1440, height: 1000 });
   await page.goto("/");
+  await page.locator("details.fleet-full-comparison > summary").click();
   await expect(
     page.getByRole("combobox", { name: "Tesla baseline", exact: true }),
   ).toHaveValue("tesla_model_y__premium_rwd__2");
@@ -79,6 +80,7 @@ test("conditional features explain dependencies beside the label", async ({
   page,
 }) => {
   await page.goto("/");
+  await page.locator("details.fleet-full-comparison > summary").click();
   const v2l = page
     .locator(".fleet-detail")
     .filter({ has: page.locator("#detail-v2l") });
@@ -132,16 +134,19 @@ test("phones show one rival beside Model Y in the offline file", async ({
   await expect(range.locator(".fact-basis").first()).toBeVisible();
   const track = range.locator(".swipe-track");
   async function swipe(dx: number, dy = 0) {
-    await track.evaluate((el, { dx, dy }) => {
-      const start = new Event("touchstart", { bubbles: true });
-      Object.assign(start, { touches: [{ clientX: 180, clientY: 300 }] });
-      el.dispatchEvent(start);
-      const end = new Event("touchend", { bubbles: true });
-      Object.assign(end, {
-        changedTouches: [{ clientX: 180 + dx, clientY: 300 + dy }],
-      });
-      el.dispatchEvent(end);
-    }, { dx, dy });
+    await track.evaluate(
+      (el, { dx, dy }) => {
+        const start = new Event("touchstart", { bubbles: true });
+        Object.assign(start, { touches: [{ clientX: 180, clientY: 300 }] });
+        el.dispatchEvent(start);
+        const end = new Event("touchend", { bubbles: true });
+        Object.assign(end, {
+          changedTouches: [{ clientX: 180 + dx, clientY: 300 + dy }],
+        });
+        el.dispatchEvent(end);
+      },
+      { dx, dy },
+    );
   }
   await swipe(-100);
   await expect(page.getByLabel("Jump to EV")).toHaveValue("1");
@@ -171,6 +176,7 @@ test("the chapter row in the sticky bar jumps, steps and marks the chapter in vi
 }) => {
   await page.setViewportSize({ width: 1280, height: 900 });
   await page.goto("/");
+  await page.locator("details.fleet-full-comparison > summary").click();
   const nav = page.getByRole("navigation", { name: "Jump to chapter" });
   const current = nav.locator('[aria-current="true"]');
   await expect(nav.locator(".fleet-chapter-chip")).toHaveCount(7);

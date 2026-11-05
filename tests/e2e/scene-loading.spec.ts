@@ -15,6 +15,9 @@ for (const source of ["/", "/b", "index.html", "index-b.html"]) {
   }) => {
     await page.setViewportSize({ width: 1280, height: 800 });
     await page.goto(url);
+    // The home comparison is closed until asked for; /b and its files are not.
+    const closed = page.locator("details.fleet-full-comparison > summary");
+    if (await closed.count()) await closed.click();
     const scene = page.locator("#chapter-07 .driving-scene");
     await expect(scene).toHaveAttribute("data-scene-state", "pending");
     expect(await scene.locator("canvas").getAttribute("width")).toBeNull();
@@ -77,6 +80,9 @@ for (const source of ["/", "/b", "index.html", "index-b.html"]) {
     await page.setViewportSize({ width: 390, height: 844 });
     await page.emulateMedia({ reducedMotion: "reduce" });
     await page.goto(url);
+    // The home comparison is closed until asked for; /b and its files are not.
+    const closed = page.locator("details.fleet-full-comparison > summary");
+    if (await closed.count()) await closed.click();
     const scene = page.locator("#chapter-02 .driving-scene");
     await scene.scrollIntoViewIfNeeded();
     await expect(scene).toHaveAttribute("data-scene-state", "ready");

@@ -1,0 +1,4385 @@
+{
+  "schemaVersion": "1.0",
+  "title": "Deepal Australian current passenger BEV trim evidence",
+  "checkedAt": "2026-10-10",
+  "market": "Australia",
+  "currency": "AUD",
+  "scope": "S07 one trim; E07 RWD and AWD Performance; S05 deferred register-interest lead",
+  "currentVerifiedTrimCount": 3,
+  "currentVerifiedTrimCoverage": "Three manufacturer-named current configurations; not a national stock census or production-epoch census",
+  "appFilesEdited": false,
+  "completeGlobalMarketAudit": false,
+  "rankingEligible": false,
+  "catalogueDeduplication": {
+    "inspectedFiles": [
+      "roadmark-work/roadmark/data/market-inventory-2026-10-10.json",
+      "roadmark-work/roadmark/data/au_ev_all_variants_2026-10-06.json",
+      "roadmark-work/roadmark/data/catalogue-additions-2026-10-10.json"
+    ],
+    "existingFamilyIds": [
+      "deepal-s07",
+      "deepal-e07"
+    ],
+    "existingExactCatalogueRecords": 0,
+    "note": "Expand existing audit families into exactly three technical records. S07 20-inch wheels are optional configuration metadata, never a new trim. S05 remains a lead."
+  },
+  "records": [
+    {
+      "id": "deepal-s07-rwd-current-20261010",
+      "brand": "Deepal",
+      "model": "S07",
+      "exactMarketingTrim": "S07",
+      "normalizedPowertrainLabel": "S07 RWD",
+      "existingFamilyId": "deepal-s07",
+      "market": "Australia",
+      "checkedAt": "2026-10-10",
+      "modelYear": null,
+      "buildYear": null,
+      "productionEpoch": null,
+      "manufacturerTechnicalScopeModelYear": 2024,
+      "documentScope": {
+        "formalModelYearLabel": "MY24",
+        "sourceId": "deepal_s07_brochure_1",
+        "evidence": [
+          {
+            "sourceId": "deepal_s07_brochure_1",
+            "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+            "checkedOn": "2026-10-10",
+            "pdfPage": 8,
+            "row": "Printed document code and publication disclaimer"
+          }
+        ],
+        "qualification": "Explicit manufacturer MY label in current specification document. Not proof of current factory production, exact build breakpoint, or the model/build year of every delivered vehicle."
+      },
+      "bodyStyle": "SUV",
+      "propulsion": "BEV",
+      "listingStatus": "current_manufacturer_AU_listing",
+      "orderStatus": "listed_unconfirmed",
+      "factoryProductionStatus": "unverified",
+      "stockStatus": "specific_new_advertisement_verified",
+      "availabilityEvidence": [
+        {
+          "sourceId": "deepal_s07",
+          "url": "https://www.deepal.com.au/vehicles/deepal/s07/",
+          "checkedOn": "2026-10-10",
+          "locator": "Current AU product page; named variant selector; contact/test-drive controls"
+        },
+        {
+          "sourceId": "deepal_offers",
+          "url": "https://www.deepal.com.au/special-offers/",
+          "checkedOn": "2026-10-10",
+          "locator": "Available for delivery now on in-stock vehicles; while stocks last"
+        }
+      ],
+      "rankingEligible": false,
+      "technicalFacts": {
+        "batteryAdvertisedKWh": {
+          "value": 79.97,
+          "unit": "kWh",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Battery Capacity",
+              "column": "DEEPAL S07"
+            }
+          ],
+          "qualification": "Gross/usable distinction unspecified"
+        },
+        "batteryChemistry": {
+          "value": "Ternary Lithium",
+          "unit": null,
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Battery Type",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "drive": {
+          "value": "RWD",
+          "unit": null,
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Rear Wheel Drive / All Wheel Drive",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "motorType": {
+          "value": "Permanent Magnet Synchronous",
+          "unit": null,
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Motor Type",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "maximumPowerKW": {
+          "value": 160,
+          "unit": "kW",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Maximum Power",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "maximumTorqueNm": {
+          "value": 320,
+          "unit": "Nm",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Maximum Torque",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "rangeWLTPCombinedKm": {
+          "value": 475,
+          "unit": "km",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Estimated WLTP Driving Range",
+              "column": "DEEPAL S07"
+            }
+          ],
+          "qualification": "Manufacturer laboratory combined-cycle claim; actual range varies"
+        },
+        "acceleration0To100KmhSeconds": {
+          "value": 7.9,
+          "unit": "s",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Acceleration 0 - 100 km/h",
+              "column": "DEEPAL S07"
+            }
+          ],
+          "qualification": "Driver only"
+        },
+        "maximumDCPowerKW": {
+          "value": 92,
+          "unit": "kW",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Maximum DC Charge Rate",
+              "column": "DEEPAL S07"
+            }
+          ],
+          "qualification": "Peak advertised rate; not a charging-curve average"
+        },
+        "onboardACPowerKW": {
+          "value": 11,
+          "unit": "kW",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Maximum AC Charge Rate",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "dcChargeTime": {
+          "value": {
+            "minutes": 35,
+            "fromSocPercent": 30,
+            "toSocPercent": 80
+          },
+          "unit": null,
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Approx. DC Charge Time (30-80%)",
+              "column": "DEEPAL S07"
+            }
+          ],
+          "qualification": "Preserve 30-80% SOC window; never relabel as 10-80%; charging varies with conditions"
+        },
+        "chargingConnector": {
+          "value": "AC Type 2 / DC CCS2",
+          "unit": null,
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Charging Connector Type",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "v2lMaximumPowerKW": {
+          "value": 3.3,
+          "unit": "kW",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Vehicle to Load (V2L) / Maximum Discharge Rate",
+              "column": "DEEPAL S07"
+            }
+          ],
+          "qualification": "Capability does not establish included adapter"
+        },
+        "v2lVoltage": {
+          "value": 220,
+          "unit": "V",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Vehicle to Load (V2L) / Maximum Voltage",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "turningCircleM": {
+          "value": 11.5,
+          "unit": "m",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Minimum Turning Circle",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "frontSuspension": {
+          "value": "MacPherson Independent",
+          "unit": null,
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Suspension / Front",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "rearSuspension": {
+          "value": "Multi-Link Independent",
+          "unit": null,
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Suspension / Rear",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "frontBrake": {
+          "value": "Ventilated Disc",
+          "unit": null,
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Brakes / Front Type",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "rearBrake": {
+          "value": "Solid Disc",
+          "unit": null,
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Brakes / Rear Type",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "lengthMm": {
+          "value": 4750,
+          "unit": "mm",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 3,
+              "row": "Overall Length",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "widthMm": {
+          "value": 1930,
+          "unit": "mm",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 3,
+              "row": "Overall Width",
+              "column": "DEEPAL S07"
+            }
+          ],
+          "qualification": "Mirror treatment unspecified"
+        },
+        "heightMm": {
+          "value": 1625,
+          "unit": "mm",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 3,
+              "row": "Overall Height",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "wheelbaseMm": {
+          "value": 2900,
+          "unit": "mm",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 3,
+              "row": "Wheelbase",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "seats": {
+          "value": 5,
+          "unit": null,
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 3,
+              "row": "Seating Capacity",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "tareMassKg": {
+          "value": 2073,
+          "unit": "kg",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 3,
+              "row": "Tare Mass",
+              "column": "DEEPAL S07"
+            }
+          ],
+          "qualification": "Source explicitly labels tare, not kerb; do not relabel. Exact vehicle weight changes with equipment"
+        },
+        "grossVehicleMassKg": {
+          "value": 2490,
+          "unit": "kg",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 3,
+              "row": "Gross Vehicle Mass (GVM)",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "bootSeatsUpLitres": {
+          "value": 445,
+          "unit": "L",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 3,
+              "row": "Trunk",
+              "column": "DEEPAL S07"
+            }
+          ],
+          "qualification": "Measurement standard unspecified"
+        },
+        "bootSeatsFoldedLitres": {
+          "value": 1385,
+          "unit": "L",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 3,
+              "row": "Trunk with Seat Folded Down",
+              "column": "DEEPAL S07"
+            }
+          ],
+          "qualification": "Measurement standard unspecified"
+        },
+        "frunkLitres": {
+          "value": 125,
+          "unit": "L",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 3,
+              "row": "Frunk",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "brakedTowingKg": {
+          "value": 1500,
+          "unit": "kg",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 3,
+              "row": "Maximum Braked Towing Capacity",
+              "column": "DEEPAL S07"
+            }
+          ],
+          "qualification": "Requires correct equipment and compliance with mass limits"
+        },
+        "unbrakedTowingKg": {
+          "value": 750,
+          "unit": "kg",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 3,
+              "row": "Maximum Unbraked Towing Capacity",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "batteryUsableKWh": {
+          "value": null,
+          "unit": "kWh",
+          "status": "unknown",
+          "reason": "Not separately stated"
+        },
+        "kerbMassKg": {
+          "value": null,
+          "unit": "kg",
+          "status": "unknown",
+          "reason": "Only Tare Mass is specified; do not substitute"
+        },
+        "dcChargeTime10To80Minutes": {
+          "value": null,
+          "unit": "minutes",
+          "status": "unknown",
+          "reason": "Only 30-80% supplied"
+        },
+        "payloadKg": {
+          "value": null,
+          "unit": "kg",
+          "status": "unknown",
+          "reason": "Do not derive a legal payload from GVM minus tare"
+        },
+        "wltpEnergyConsumptionKWhPer100Km": {
+          "value": 18.6,
+          "unit": "kWh/100km",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "WLTP Energy Consumption (kWh/100km)",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "groundClearanceMm": {
+          "value": 145,
+          "unit": "mm",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 3,
+              "row": "Minimum Ground Clearance",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "acChargeTimeHours": {
+          "value": {
+            "at11kW": 8,
+            "at7kW": 11
+          },
+          "unit": "hours",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Maximum / Minimum AC Charge Rate and AC Charge Time (Approx.)",
+              "column": "DEEPAL S07"
+            }
+          ],
+          "qualification": "SOC window not explicitly stated; do not assume 0-100%"
+        }
+      },
+      "equipment": {
+        "standardWheelSize": {
+          "value": 19,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "19 inch Alloy Wheels with Hub Cap",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "standardTyres": {
+          "value": "235/55R19 105V Giti",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Standard 19 inch Giti Tyres",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "spareWheel": {
+          "value": "Puncture repair kit",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Spare wheel",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "heatPump": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 6,
+              "row": "Heat Pump",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "touchscreenInches": {
+          "value": 15.6,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 6,
+              "row": "15.6 inch Touchscreen",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "screenTilt": {
+          "value": "Sunflower tilt",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 6,
+              "row": "Sunflower Tilt",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "audioSystem": {
+          "value": "14 Sony speakers",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 6,
+              "row": "Premium Audio Sound System with x 14 Sony Speakers",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "headUpDisplay": {
+          "value": "Augmented Reality",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 6,
+              "row": "Augmented Reality Heads-Up Display",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "heatedSteeringWheel": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 6,
+              "row": "Heated Steering Wheel Function",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "steeringWheelAdjustment": {
+          "value": "4-way manual",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 6,
+              "row": "4-way Manual Adjustable Steering Wheel",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "dualZoneClimate": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 6,
+              "row": "Dual Zone Automatic Air-Conditioning",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "wirelessCarPlay": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 6,
+              "row": "Wireless Apple CarPlay connectivity",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "wirelessAndroidAuto": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 6,
+              "row": "Wireless Android Auto connectivity",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "phoneCharging": {
+          "value": "1 x 50W ventilated wireless pad",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 7,
+              "row": "Wireless Charging Pad (1 x 50W Ventilated)",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "powerTailgate": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 6,
+              "row": "Power Tailgate",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "dashcam": {
+          "value": "Integrated panoramic-view dash camera",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 7,
+              "row": "Integrated Dash Camera with Panoramic View",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "interiorCamera": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 7,
+              "row": "Interior Camera",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "frontSideAcousticGlass": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 7,
+              "row": "Double Layer Sound Insulation Glass (Driver & Front Passenger Windows)",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "panoramicRoof": {
+          "value": "Fixed with electric sunshade",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "Panoramic Sunroof (Fixed) / Electric Sunshade",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "seatTrim": {
+          "value": "Black accented synthetic leather",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 7,
+              "row": "Black Accented Synthetic Leather Seat Trim",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "driverSeat": {
+          "value": "6-way power, 4-way lumbar, 3-stage heat and ventilation, memory",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 7,
+              "row": "Driver Seat 6-way Powered & 4-way Lumbar Adjustment / Driver Seat 3 Stage Heated, Ventilated & Memory Function",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "frontPassengerSeat": {
+          "value": "4-way power, 3-stage heat and ventilation",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 7,
+              "row": "Front Passenger 4-way Powered Seat Adjustment / 3 Stage Heated & Ventilated Seat Function",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "rearSeat": {
+          "value": "60/40 split folding, one-touch lever",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 7,
+              "row": "60/40 Split Fold Rear Seat / One Touch Folding Rear Seats Lever",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "camera360": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 4,
+              "row": "Panoramic 360 Degree View Monitor",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "parkingSensors": {
+          "value": {
+            "front": 2,
+            "rear": 4
+          },
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 4,
+              "row": "Front Parking Sensors (x 2) / Rear Parking Sensors (x 4)",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "airbagLayout": {
+          "value": "Dual front, dual side, dual full-length curtain, front-seat centre",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 4,
+              "row": "Airbags - Dual Front, Dual Side, Dual Full Length Curtain, Front Seat Centre",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "childAnchors": {
+          "value": 3,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 4,
+              "row": "Child Seat Anchor Points (x3)",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "isofixSeats": {
+          "value": 2,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 4,
+              "row": "ISOFIX Anchor Points for 2 ISOFIX Compliant Child Restraints",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "childDetection": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 4,
+              "row": "Child Detection",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "ambientLightingColours": {
+          "value": 64,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "64 colour Ambient Lighting",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "optionalWheelSize": {
+          "value": 20,
+          "fitment": "optional",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "20 inch Alloy Wheels",
+              "column": "DEEPAL S07"
+            }
+          ],
+          "qualification": "Configuration option, not a separate marketing trim"
+        },
+        "optionalTyres": {
+          "value": "255/45R20 105V Dunlop",
+          "fitment": "optional",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Optional 20 inch Dunlop Tyres",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "aebPedestrianCyclist": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "Autonomous Emergency Brake with Pedestrian & Cyclist Alert (AEB)",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "adaptiveCruise": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "Integrated Adaptive Cruise Control (IACC)",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "laneKeepAssist": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "Lane Keep Assist (LKA)",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "laneCentreControl": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "Lane Centre Control (LCC)",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "blindSpotDetection": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "Blind Spot Detection (BSD)",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "rearCrossTrafficBrake": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "Rear Cross Traffic Brake (RCTB)",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "rearCrossTrafficAlert": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "Rear Cross Traffic Alert (RCTA)",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "trafficSignRecognition": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "Traffic Sign Recognition (TSR)",
+              "column": "DEEPAL S07"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "No dealer was contacted; NEW advertisements do not establish physical availability, allocation or unsold state beyond the live advertisement",
+        "Current listing, document MY, stock calendar/build year, and factory production are separate evidence dimensions",
+        "Manufacturer technical claims are not independent real-world test results",
+        "Battery gross versus usable capacity is not defined in these current technical rows",
+        "Unlisted equipment remains unknown; no generic dealer equipment inherited"
+      ],
+      "manufacturerSafetyClaim": {
+        "ancapStars": 5,
+        "ratingYear": 2024,
+        "evidence": [
+          {
+            "sourceId": "deepal_s07_brochure_1",
+            "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+            "checkedOn": "2026-10-10",
+            "pdfPage": 4,
+            "row": "5 Star ANCAP Safety Rating / ANCAP Rating Year",
+            "column": "DEEPAL S07"
+          }
+        ],
+        "qualification": "Manufacturer claim; official ANCAP variant/VIN applicability has not been independently revalidated in this pass"
+      },
+      "warranty": {
+        "vehicle": {
+          "years": 7,
+          "kilometres": 160000,
+          "basis": "whichever occurs first; private/non-commercial usage",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 7,
+              "row": "7-year/160,000kms Vehicle Warranty",
+              "column": "DEEPAL S07"
+            },
+            {
+              "sourceId": "deepal_warranty",
+              "url": "https://www.deepal.com.au/ownership/warranty/",
+              "checkedOn": "2026-10-10",
+              "locator": "The DEEPAL New Car Warranty"
+            }
+          ]
+        },
+        "highVoltageBattery": {
+          "years": 8,
+          "kilometres": 240000,
+          "basis": "whichever occurs first; excludes fair-wear capacity degradation; maintenance and battery-health checks required; excludes commercial use",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 7,
+              "row": "8-year/240,000kms Battery Warranty and footnote",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "roadside": {
+          "months": 12,
+          "basis": "Complimentary, opt-in at delivery required",
+          "evidence": [
+            {
+              "sourceId": "deepal_s07_brochure_1",
+              "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 7,
+              "row": "12-months complimentary DEEPAL Roadside Assistance and footnote",
+              "column": "DEEPAL S07"
+            }
+          ]
+        },
+        "batteryRetentionGuarantee": null,
+        "qualification": "Full handbook terms govern; do not advertise these private-use limits for commercial use. Current warranty webpage separately prints 1 year/120,000 km commercial vehicle period; not treated as resolved commercial warranty without handbook verification."
+      },
+      "wheelConfigurations": [
+        {
+          "inches": 19,
+          "fitment": "standard"
+        },
+        {
+          "inches": 20,
+          "fitment": "optional"
+        }
+      ],
+      "advertisedOffer": {
+        "priceAUD": 47990,
+        "priceType": "from_driveaway",
+        "configuration": "S07 with optional 20-inch wheels",
+        "evidence": [
+          {
+            "sourceId": "deepal_offers",
+            "url": "https://www.deepal.com.au/special-offers/",
+            "checkedOn": "2026-10-10",
+            "locator": "Current Offers / DEEPAL S07 Offers and asterisk terms"
+          }
+        ],
+        "conditions": "Participating retailers; new in-stock vehicles while stocks last; excludes premium paint and government/fleet/rental buyers; final RDP varies by location; generally within 14 business days of settlement for in-stock vehicles; retailer confirmation required",
+        "observedAt": "2026-10-10",
+        "isBase19InchMSRP": false
+      },
+      "stockSourceIds": [
+        "deepal_s07_stock"
+      ]
+    },
+    {
+      "id": "deepal-e07-rwd-current-20261010",
+      "brand": "Deepal",
+      "model": "E07",
+      "exactMarketingTrim": "RWD",
+      "normalizedPowertrainLabel": "RWD",
+      "existingFamilyId": "deepal-e07",
+      "market": "Australia",
+      "checkedAt": "2026-10-10",
+      "modelYear": null,
+      "buildYear": null,
+      "productionEpoch": null,
+      "manufacturerTechnicalScopeModelYear": 2025,
+      "documentScope": {
+        "formalModelYearLabel": "MY25",
+        "sourceId": "deepal_e07_brochure_1",
+        "evidence": [
+          {
+            "sourceId": "deepal_e07_brochure_1",
+            "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+            "checkedOn": "2026-10-10",
+            "pdfPage": 8,
+            "row": "Printed document code and publication disclaimer"
+          }
+        ],
+        "qualification": "Explicit manufacturer MY label in current specification document. Not proof of current factory production, exact build breakpoint, or the model/build year of every delivered vehicle."
+      },
+      "bodyStyle": "SUV / transformable multitruck",
+      "propulsion": "BEV",
+      "listingStatus": "current_manufacturer_AU_listing",
+      "orderStatus": "listed_unconfirmed",
+      "factoryProductionStatus": "unverified",
+      "stockStatus": "specific_new_advertisement_verified",
+      "availabilityEvidence": [
+        {
+          "sourceId": "deepal_e07",
+          "url": "https://www.deepal.com.au/vehicles/deepal/e07/",
+          "checkedOn": "2026-10-10",
+          "locator": "Current AU product page; named variant selector; contact/test-drive controls"
+        }
+      ],
+      "rankingEligible": false,
+      "technicalFacts": {
+        "batteryAdvertisedKWh": {
+          "value": 89.98,
+          "unit": "kWh",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Battery Capacity",
+              "column": "E07 RWD"
+            }
+          ],
+          "qualification": "Gross/usable distinction unspecified"
+        },
+        "batteryChemistry": {
+          "value": "Ternary Lithium",
+          "unit": null,
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Battery Type",
+              "column": "E07 RWD"
+            }
+          ],
+          "productPageClarification": {
+            "value": "NMC",
+            "evidence": [
+              {
+                "sourceId": "deepal_e07",
+                "url": "https://www.deepal.com.au/vehicles/deepal/e07/",
+                "checkedOn": "2026-10-10",
+                "locator": "CHARGING & RANGE / 89.98kWh NMC battery"
+              }
+            ]
+          }
+        },
+        "drive": {
+          "value": "RWD",
+          "unit": null,
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Rear Wheel Drive / All Wheel Drive",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "motorType": {
+          "value": "Permanent Magnet Synchronous",
+          "unit": null,
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Motor Type",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "maximumPowerKW": {
+          "value": 252,
+          "unit": "kW",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Maximum Power",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "maximumTorqueNm": {
+          "value": 365,
+          "unit": "Nm",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Maximum Torque",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "rangeWLTPCombinedKm": {
+          "value": 550,
+          "unit": "km",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Estimated WLTP Driving Range",
+              "column": "E07 RWD"
+            }
+          ],
+          "qualification": "Manufacturer laboratory combined-cycle claim; actual range varies"
+        },
+        "acceleration0To100KmhSeconds": {
+          "value": 6.7,
+          "unit": "s",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Acceleration 0 - 100 km/h",
+              "column": "E07 RWD"
+            }
+          ],
+          "qualification": "Driver only"
+        },
+        "maximumDCPowerKW": {
+          "value": 240,
+          "unit": "kW",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Maximum DC Charge Rate",
+              "column": "E07 RWD"
+            }
+          ],
+          "qualification": "Peak advertised rate; not a charging-curve average"
+        },
+        "onboardACPowerKW": {
+          "value": 7,
+          "unit": "kW",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Maximum AC Charge Rate",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "dcChargeTime": {
+          "value": {
+            "minutes": 15,
+            "fromSocPercent": 30,
+            "toSocPercent": 80
+          },
+          "unit": null,
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "DC Charge Time (30-80%)",
+              "column": "E07 RWD"
+            }
+          ],
+          "qualification": "Preserve 30-80% SOC window; never relabel as 10-80%; charging varies with conditions"
+        },
+        "chargingConnector": {
+          "value": "AC Type 2 / DC CCS2",
+          "unit": null,
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Charging Connector Type",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "v2lMaximumPowerKW": {
+          "value": 6.6,
+          "unit": "kW",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Vehicle to Load (V2L) / Maximum Discharge Rate",
+              "column": "E07 RWD"
+            }
+          ],
+          "qualification": "Capability does not establish included adapter"
+        },
+        "v2lVoltage": {
+          "value": 220,
+          "unit": "V",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Vehicle to Load (V2L) / Maximum Voltage",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "turningCircleM": {
+          "value": 12.3,
+          "unit": "m",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Minimum Turning Circle",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "frontSuspension": {
+          "value": "Double Wishbone",
+          "unit": null,
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Suspension / Front",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "rearSuspension": {
+          "value": "Multi-Link Independent",
+          "unit": null,
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Suspension / Rear",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "frontBrake": {
+          "value": "Ventilated Disc",
+          "unit": null,
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Brakes / Front Type",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "rearBrake": {
+          "value": "Ventilated Disc",
+          "unit": null,
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Brakes / Rear Type",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "lengthMm": {
+          "value": 5045,
+          "unit": "mm",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 3,
+              "row": "Overall Length",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "widthMm": {
+          "value": 1996,
+          "unit": "mm",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 3,
+              "row": "Overall Width",
+              "column": "E07 RWD"
+            }
+          ],
+          "qualification": "Mirror treatment unspecified"
+        },
+        "heightMm": {
+          "value": 1680,
+          "unit": "mm",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 3,
+              "row": "Overall Height",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "wheelbaseMm": {
+          "value": 3120,
+          "unit": "mm",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 3,
+              "row": "Wheelbase",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "seats": {
+          "value": 5,
+          "unit": null,
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 3,
+              "row": "Seating Capacity",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "tareMassKg": {
+          "value": 2320,
+          "unit": "kg",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 3,
+              "row": "Tare Mass",
+              "column": "E07 RWD"
+            }
+          ],
+          "qualification": "Source explicitly labels tare, not kerb; do not relabel. Exact vehicle weight changes with equipment"
+        },
+        "grossVehicleMassKg": {
+          "value": 2930,
+          "unit": "kg",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 3,
+              "row": "Gross Vehicle Mass (GVM)",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "bootSeatsUpLitres": {
+          "value": 524,
+          "unit": "L",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 3,
+              "row": "Trunk",
+              "column": "E07 RWD"
+            }
+          ],
+          "qualification": "Measurement standard unspecified"
+        },
+        "bootSeatsFoldedLitres": {
+          "value": 1654,
+          "unit": "L",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 3,
+              "row": "Trunk with Seat Folded Down",
+              "column": "E07 RWD"
+            }
+          ],
+          "qualification": "Measurement standard unspecified"
+        },
+        "frunkLitres": {
+          "value": 131,
+          "unit": "L",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 3,
+              "row": "Frunk",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "brakedTowingKg": {
+          "value": 1500,
+          "unit": "kg",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 3,
+              "row": "Maximum Braked Towing Capacity",
+              "column": "E07 RWD"
+            }
+          ],
+          "qualification": "Requires correct equipment and compliance with mass limits"
+        },
+        "unbrakedTowingKg": {
+          "value": 750,
+          "unit": "kg",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 3,
+              "row": "Maximum Unbraked Towing Capacity",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "batteryUsableKWh": {
+          "value": null,
+          "unit": "kWh",
+          "status": "unknown",
+          "reason": "Not separately stated"
+        },
+        "kerbMassKg": {
+          "value": null,
+          "unit": "kg",
+          "status": "unknown",
+          "reason": "Only Tare Mass is specified; do not substitute"
+        },
+        "dcChargeTime10To80Minutes": {
+          "value": null,
+          "unit": "minutes",
+          "status": "unknown",
+          "reason": "Only 30-80% supplied"
+        },
+        "payloadKg": {
+          "value": null,
+          "unit": "kg",
+          "status": "unknown",
+          "reason": "Do not derive a legal payload from GVM minus tare"
+        },
+        "groundClearanceMm": {
+          "value": {
+            "high": 223,
+            "medium": 183,
+            "low": 133
+          },
+          "unit": "mm",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 3,
+              "row": "Ground Clearance - High / Medium / Low",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "acChargeTimeHours": {
+          "value": {
+            "hours": 13,
+            "fromSocPercent": 0,
+            "toSocPercent": 100,
+            "atKW": 7
+          },
+          "unit": "hours",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "AC Charge Time (0-100%)",
+              "column": "E07 RWD"
+            }
+          ],
+          "qualification": "Brochure 13 hours conflicts with current product-page prose approximately 16 hours; retain discrepancy"
+        },
+        "advertisedCargoLoadClaimKg": {
+          "value": {
+            "stationary": 600,
+            "moving": 300
+          },
+          "unit": "kg",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07",
+              "url": "https://www.deepal.com.au/vehicles/deepal/e07/",
+              "checkedOn": "2026-10-10",
+              "locator": "Space That Works Hard / Payload claim"
+            }
+          ],
+          "qualification": "Manufacturer marketing cargo/load claim only. Not substituted for whole-vehicle legal payload, and stationary load is not road-driving payload."
+        }
+      },
+      "equipment": {
+        "standardWheelSize": {
+          "value": 21,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "21 inch Alloy Wheels",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "standardTyres": {
+          "value": "265/45R21 108W",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Standard Tyres",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "wheelDimensions": {
+          "value": "21x9J",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Wheel Dimensions",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "spareWheel": {
+          "value": "Puncture repair kit",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Spare wheel",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "airSuspension": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 4,
+              "row": "Air Suspension",
+              "column": "E07 RWD"
+            }
+          ],
+          "qualification": "Current September 2026 brochure marks standard for both trims; AU website narrative emphasizes AWD. Confirm delivered build specification rather than retroactively applying current sheet to all older stock."
+        },
+        "suspensionHeightAdjustment": {
+          "value": "Low / Medium / High / Self Adaptation",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 4,
+              "row": "Suspension Height",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "suspensionStrengthAdjustment": {
+          "value": "Comfort / Normal / Sport",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 4,
+              "row": "Suspension Strength",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "headUpDisplay": {
+          "value": "Windshield W-HUD",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 4,
+              "row": "Heads-Up Display (W-HUD)",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "camera360": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 4,
+              "row": "Panoramic 360 Degree View Monitor",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "parkingSensors": {
+          "value": {
+            "front": 6,
+            "rear": 6
+          },
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 4,
+              "row": "Front Parking Sensors x 6 / Rear Parking Sensors x 6",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "airbagLayout": {
+          "value": "Dual front, dual side, dual full-length curtain, dual second-row side",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 4,
+              "row": "Airbags - Dual Front, Dual Side, Dual Full Length Curtain, Dual Second Row Side",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "childAnchors": {
+          "value": 3,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 4,
+              "row": "Child Seat Anchor Points (x3)",
+              "column": "E07 RWD"
+            }
+          ],
+          "qualification": "Current brochure fitment; affected 2025 SC6501 VINs require recall/rectification check. Do not infer this NEW ad is affected or rectified."
+        },
+        "isofixSeats": {
+          "value": 2,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 4,
+              "row": "ISOFIX Anchor Points for 2 ISOFIX Compliant Child Restraints",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "panoramicRoof": {
+          "value": "Fixed with electric sunshade",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "Panoramic Sunroof (Fixed) / Electric Sunshade",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "activeFrontGrille": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "Active Front Grille",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "ambientLightingColours": {
+          "value": 256,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "256 Colour Ambient Lighting",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "dualZoneClimate": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 6,
+              "row": "Dual Zone Automatic Air-Conditioning",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "heatedSteeringWheel": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 6,
+              "row": "Heated & Memory Steering Wheel",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "steeringWheelAdjustment": {
+          "value": "4-way powered",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 6,
+              "row": "4-way Powered Steering Wheel Adjustment",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "touchscreenInches": {
+          "value": 15.4,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 6,
+              "row": "15.4 inch Touchscreen",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "screenTilt": {
+          "value": "Sunflower tilt",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 6,
+              "row": "Sunflower Tilt",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "wirelessCarPlay": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 6,
+              "row": "Wireless Apple CarPlay connectivity",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "wirelessAndroidAuto": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 6,
+              "row": "Wireless Android Auto connectivity",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "audioSystem": {
+          "value": "18 speaker sound system",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 6,
+              "row": "18 Speaker Sound System",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "powerTailgate": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 6,
+              "row": "Power Tailgate",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "dashcam": {
+          "value": "Integrated dash camera",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 6,
+              "row": "Integrated Dash Camera",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "interiorCamera": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 6,
+              "row": "Interior Camera",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "phoneCharging": {
+          "value": "50W ventilated wireless pad",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 6,
+              "row": "Wireless Charging Pad (50W & Ventilated)",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "acousticGlass": {
+          "value": "Front windshield and driver/front passenger windows",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 6,
+              "row": "Double Layer Sound Insulation Glass",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "seatTrim": {
+          "value": "Black Nappa leather appointed",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 7,
+              "row": "Black Nappa Leather Seat Trim",
+              "column": "E07 RWD"
+            }
+          ],
+          "qualification": "Leather-appointed seats combine genuine and synthetic materials, not wholly leather"
+        },
+        "frontSeatAdjustment": {
+          "value": "8-way powered, 4-way lumbar, 2-way leg rest",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 7,
+              "row": "Driver & Front Passenger Seat 8-way Powered, 4-way Lumbar & 2-way Leg Rest Adjustment",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "driverSeatFunctions": {
+          "value": "Heat, ventilation, 2-profile memory, massage, zero gravity",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 7,
+              "row": "Driver Seat with Heating, Ventilation, 2 x Profile Memory, Massage & Zero Gravity functions",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "frontPassengerSeatFunctions": {
+          "value": "Heat, ventilation, 3-profile memory, massage, zero gravity",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 7,
+              "row": "Front Passenger Seat with Heating, Ventilation, 3 x Profile Memory, Massage & Zero Gravity functions",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "rearSeatFunctions": {
+          "value": "Heat, ventilation, massage, powered backrest adjustment",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 7,
+              "row": "Rear Row Passenger Seat Adjustment with Heating, Ventilation, Massage functions & Powered Backrest Adjustment",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "rearSeat": {
+          "value": "60/40 split folding",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 7,
+              "row": "60/40 Split Fold Rear Seat",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "orangeNappaSeatTrim": {
+          "value": true,
+          "fitment": "optional",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 7,
+              "row": "Orange Nappa Leather Seat Trim",
+              "column": "E07 RWD"
+            }
+          ],
+          "qualification": "Additional cost; leather-appointed seats combine genuine and synthetic materials"
+        },
+        "vehicleStabilityOffRoadAssist": {
+          "value": false,
+          "fitment": "unavailable",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 4,
+              "row": "Vehicle Stability Assist/Off Road Assist",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "heatPump": {
+          "value": null,
+          "fitment": "unknown",
+          "reason": "Not explicit in current checked AU brochure rows; no absence claim"
+        },
+        "aebPedestrianCyclist": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "Autonomous Emergency Brake with Pedestrian & Cyclist Alert (AEB)",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "adaptiveCruise": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "Integrated Adaptive Cruise Control (IACC)",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "laneKeepAssist": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "Lane Keep Assist (LKA)",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "laneCentreControl": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "Lane Centre Control (LCC)",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "blindSpotDetection": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "Blind Spot Detection (BSD)",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "rearCrossTrafficBrake": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "Rear Cross Traffic Brake (RCTB)",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "rearCrossTrafficAlert": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "Rear Cross Traffic Alert (RCTA)",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "trafficSignRecognition": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "Traffic Sign Recognition (TSR)",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "automatedParking": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "Automated Parking Assistance (APA)",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "frontCrossTrafficBrake": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "Front Cross Traffic Braking (FCTB)",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "frontCrossTrafficAlert": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "Front Cross Traffic Alert (FCTA)",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "reverseTracingAssistance": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "Reverse Tracing Assistance (RTA)",
+              "column": "E07 RWD"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "No dealer was contacted; NEW advertisements do not establish physical availability, allocation or unsold state beyond the live advertisement",
+        "Current listing, document MY, stock calendar/build year, and factory production are separate evidence dimensions",
+        "Manufacturer technical claims are not independent real-world test results",
+        "Battery gross versus usable capacity is not defined in these current technical rows",
+        "Unlisted equipment remains unknown; no generic dealer equipment inherited"
+      ],
+      "manufacturerSafetyClaim": {
+        "ancapStars": null,
+        "ratingYear": null,
+        "status": "not_verified",
+        "qualification": "No ANCAP result asserted or inferred from brochure omission"
+      },
+      "warranty": {
+        "vehicle": {
+          "years": 7,
+          "kilometres": 160000,
+          "basis": "whichever occurs first; private/non-commercial usage",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 7,
+              "row": "7-year/160,000kms Vehicle Warranty",
+              "column": "E07 RWD"
+            },
+            {
+              "sourceId": "deepal_warranty",
+              "url": "https://www.deepal.com.au/ownership/warranty/",
+              "checkedOn": "2026-10-10",
+              "locator": "The DEEPAL New Car Warranty"
+            }
+          ]
+        },
+        "highVoltageBattery": {
+          "years": 8,
+          "kilometres": 240000,
+          "basis": "whichever occurs first; excludes fair-wear capacity degradation; maintenance and battery-health checks required; excludes commercial use",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 7,
+              "row": "8-year/240,000kms Battery Warranty and footnote",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "roadside": {
+          "months": 12,
+          "basis": "Complimentary, opt-in at delivery required",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 7,
+              "row": "12-months complimentary DEEPAL Roadside Assistance and footnote",
+              "column": "E07 RWD"
+            }
+          ]
+        },
+        "batteryRetentionGuarantee": null,
+        "qualification": "Full handbook terms govern; do not advertise these private-use limits for commercial use. Current warranty webpage separately prints 1 year/120,000 km commercial vehicle period; not treated as resolved commercial warranty without handbook verification."
+      },
+      "stockSourceIds": [
+        "deepal_e07_rwd_perth_500082"
+      ]
+    },
+    {
+      "id": "deepal-e07-awd-performance-current-20261010",
+      "brand": "Deepal",
+      "model": "E07",
+      "exactMarketingTrim": "AWD Performance",
+      "normalizedPowertrainLabel": "AWD Performance",
+      "existingFamilyId": "deepal-e07",
+      "market": "Australia",
+      "checkedAt": "2026-10-10",
+      "modelYear": null,
+      "buildYear": null,
+      "productionEpoch": null,
+      "manufacturerTechnicalScopeModelYear": 2025,
+      "documentScope": {
+        "formalModelYearLabel": "MY25",
+        "sourceId": "deepal_e07_brochure_1",
+        "evidence": [
+          {
+            "sourceId": "deepal_e07_brochure_1",
+            "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+            "checkedOn": "2026-10-10",
+            "pdfPage": 8,
+            "row": "Printed document code and publication disclaimer"
+          }
+        ],
+        "qualification": "Explicit manufacturer MY label in current specification document. Not proof of current factory production, exact build breakpoint, or the model/build year of every delivered vehicle."
+      },
+      "bodyStyle": "SUV / transformable multitruck",
+      "propulsion": "BEV",
+      "listingStatus": "current_manufacturer_AU_listing",
+      "orderStatus": "listed_unconfirmed",
+      "factoryProductionStatus": "unverified",
+      "stockStatus": "specific_new_advertisement_verified",
+      "availabilityEvidence": [
+        {
+          "sourceId": "deepal_e07",
+          "url": "https://www.deepal.com.au/vehicles/deepal/e07/",
+          "checkedOn": "2026-10-10",
+          "locator": "Current AU product page; named variant selector; contact/test-drive controls"
+        }
+      ],
+      "rankingEligible": false,
+      "technicalFacts": {
+        "batteryAdvertisedKWh": {
+          "value": 89.98,
+          "unit": "kWh",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Battery Capacity",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ],
+          "qualification": "Gross/usable distinction unspecified"
+        },
+        "batteryChemistry": {
+          "value": "Ternary Lithium",
+          "unit": null,
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Battery Type",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ],
+          "productPageClarification": {
+            "value": "NMC",
+            "evidence": [
+              {
+                "sourceId": "deepal_e07",
+                "url": "https://www.deepal.com.au/vehicles/deepal/e07/",
+                "checkedOn": "2026-10-10",
+                "locator": "CHARGING & RANGE / 89.98kWh NMC battery"
+              }
+            ]
+          }
+        },
+        "drive": {
+          "value": "AWD",
+          "unit": null,
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Rear Wheel Drive / All Wheel Drive",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "motorType": {
+          "value": "Permanent Magnet Synchronous",
+          "unit": null,
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Motor Type",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "maximumPowerKW": {
+          "value": 440,
+          "unit": "kW",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Maximum Power",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "maximumTorqueNm": {
+          "value": 645,
+          "unit": "Nm",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Maximum Torque",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "rangeWLTPCombinedKm": {
+          "value": 510,
+          "unit": "km",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Estimated WLTP Driving Range",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ],
+          "qualification": "Manufacturer laboratory combined-cycle claim; actual range varies"
+        },
+        "acceleration0To100KmhSeconds": {
+          "value": 3.96,
+          "unit": "s",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Acceleration 0 - 100 km/h",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ],
+          "qualification": "Driver only"
+        },
+        "maximumDCPowerKW": {
+          "value": 240,
+          "unit": "kW",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Maximum DC Charge Rate",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ],
+          "qualification": "Peak advertised rate; not a charging-curve average"
+        },
+        "onboardACPowerKW": {
+          "value": 7,
+          "unit": "kW",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Maximum AC Charge Rate",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "dcChargeTime": {
+          "value": {
+            "minutes": 15,
+            "fromSocPercent": 30,
+            "toSocPercent": 80
+          },
+          "unit": null,
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "DC Charge Time (30-80%)",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ],
+          "qualification": "Preserve 30-80% SOC window; never relabel as 10-80%; charging varies with conditions"
+        },
+        "chargingConnector": {
+          "value": "AC Type 2 / DC CCS2",
+          "unit": null,
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Charging Connector Type",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "v2lMaximumPowerKW": {
+          "value": 6.6,
+          "unit": "kW",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Vehicle to Load (V2L) / Maximum Discharge Rate",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ],
+          "qualification": "Capability does not establish included adapter"
+        },
+        "v2lVoltage": {
+          "value": 220,
+          "unit": "V",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Vehicle to Load (V2L) / Maximum Voltage",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "turningCircleM": {
+          "value": 12.3,
+          "unit": "m",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Minimum Turning Circle",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "frontSuspension": {
+          "value": "Double Wishbone",
+          "unit": null,
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Suspension / Front",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "rearSuspension": {
+          "value": "Multi-Link Independent",
+          "unit": null,
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Suspension / Rear",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "frontBrake": {
+          "value": "Ventilated Disc",
+          "unit": null,
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Brakes / Front Type",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "rearBrake": {
+          "value": "Ventilated Disc",
+          "unit": null,
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Brakes / Rear Type",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "lengthMm": {
+          "value": 5045,
+          "unit": "mm",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 3,
+              "row": "Overall Length",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "widthMm": {
+          "value": 1996,
+          "unit": "mm",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 3,
+              "row": "Overall Width",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ],
+          "qualification": "Mirror treatment unspecified"
+        },
+        "heightMm": {
+          "value": 1680,
+          "unit": "mm",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 3,
+              "row": "Overall Height",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "wheelbaseMm": {
+          "value": 3120,
+          "unit": "mm",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 3,
+              "row": "Wheelbase",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "seats": {
+          "value": 5,
+          "unit": null,
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 3,
+              "row": "Seating Capacity",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "tareMassKg": {
+          "value": 2440,
+          "unit": "kg",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 3,
+              "row": "Tare Mass",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ],
+          "qualification": "Source explicitly labels tare, not kerb; do not relabel. Exact vehicle weight changes with equipment"
+        },
+        "grossVehicleMassKg": {
+          "value": 3050,
+          "unit": "kg",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 3,
+              "row": "Gross Vehicle Mass (GVM)",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "bootSeatsUpLitres": {
+          "value": 524,
+          "unit": "L",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 3,
+              "row": "Trunk",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ],
+          "qualification": "Measurement standard unspecified"
+        },
+        "bootSeatsFoldedLitres": {
+          "value": 1654,
+          "unit": "L",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 3,
+              "row": "Trunk with Seat Folded Down",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ],
+          "qualification": "Measurement standard unspecified"
+        },
+        "frunkLitres": {
+          "value": 131,
+          "unit": "L",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 3,
+              "row": "Frunk",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "brakedTowingKg": {
+          "value": 1500,
+          "unit": "kg",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 3,
+              "row": "Maximum Braked Towing Capacity",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ],
+          "qualification": "Requires correct equipment and compliance with mass limits"
+        },
+        "unbrakedTowingKg": {
+          "value": 750,
+          "unit": "kg",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 3,
+              "row": "Maximum Unbraked Towing Capacity",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "batteryUsableKWh": {
+          "value": null,
+          "unit": "kWh",
+          "status": "unknown",
+          "reason": "Not separately stated"
+        },
+        "kerbMassKg": {
+          "value": null,
+          "unit": "kg",
+          "status": "unknown",
+          "reason": "Only Tare Mass is specified; do not substitute"
+        },
+        "dcChargeTime10To80Minutes": {
+          "value": null,
+          "unit": "minutes",
+          "status": "unknown",
+          "reason": "Only 30-80% supplied"
+        },
+        "payloadKg": {
+          "value": null,
+          "unit": "kg",
+          "status": "unknown",
+          "reason": "Do not derive a legal payload from GVM minus tare"
+        },
+        "groundClearanceMm": {
+          "value": {
+            "high": 223,
+            "medium": 183,
+            "low": 133
+          },
+          "unit": "mm",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 3,
+              "row": "Ground Clearance - High / Medium / Low",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "acChargeTimeHours": {
+          "value": {
+            "hours": 13,
+            "fromSocPercent": 0,
+            "toSocPercent": 100,
+            "atKW": 7
+          },
+          "unit": "hours",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "AC Charge Time (0-100%)",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ],
+          "qualification": "Brochure 13 hours conflicts with current product-page prose approximately 16 hours; retain discrepancy"
+        },
+        "advertisedCargoLoadClaimKg": {
+          "value": {
+            "stationary": 600,
+            "moving": 300
+          },
+          "unit": "kg",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07",
+              "url": "https://www.deepal.com.au/vehicles/deepal/e07/",
+              "checkedOn": "2026-10-10",
+              "locator": "Space That Works Hard / Payload claim"
+            }
+          ],
+          "qualification": "Manufacturer marketing cargo/load claim only. Not substituted for whole-vehicle legal payload, and stationary load is not road-driving payload."
+        }
+      },
+      "equipment": {
+        "standardWheelSize": {
+          "value": 21,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "21 inch Alloy Wheels",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "standardTyres": {
+          "value": "265/45R21 108W",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Standard Tyres",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "wheelDimensions": {
+          "value": "21x9J",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Wheel Dimensions",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "spareWheel": {
+          "value": "Puncture repair kit",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 2,
+              "row": "Spare wheel",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "airSuspension": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 4,
+              "row": "Air Suspension",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ],
+          "qualification": "Current September 2026 brochure marks standard for both trims; AU website narrative emphasizes AWD. Confirm delivered build specification rather than retroactively applying current sheet to all older stock."
+        },
+        "suspensionHeightAdjustment": {
+          "value": "Low / Medium / High / Self Adaptation",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 4,
+              "row": "Suspension Height",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "suspensionStrengthAdjustment": {
+          "value": "Comfort / Normal / Sport",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 4,
+              "row": "Suspension Strength",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "headUpDisplay": {
+          "value": "Windshield W-HUD",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 4,
+              "row": "Heads-Up Display (W-HUD)",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "camera360": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 4,
+              "row": "Panoramic 360 Degree View Monitor",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "parkingSensors": {
+          "value": {
+            "front": 6,
+            "rear": 6
+          },
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 4,
+              "row": "Front Parking Sensors x 6 / Rear Parking Sensors x 6",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "airbagLayout": {
+          "value": "Dual front, dual side, dual full-length curtain, dual second-row side",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 4,
+              "row": "Airbags - Dual Front, Dual Side, Dual Full Length Curtain, Dual Second Row Side",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "childAnchors": {
+          "value": 3,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 4,
+              "row": "Child Seat Anchor Points (x3)",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ],
+          "qualification": "Current brochure fitment; affected 2025 SC6501 VINs require recall/rectification check. Do not infer this NEW ad is affected or rectified."
+        },
+        "isofixSeats": {
+          "value": 2,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 4,
+              "row": "ISOFIX Anchor Points for 2 ISOFIX Compliant Child Restraints",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "panoramicRoof": {
+          "value": "Fixed with electric sunshade",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "Panoramic Sunroof (Fixed) / Electric Sunshade",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "activeFrontGrille": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "Active Front Grille",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "ambientLightingColours": {
+          "value": 256,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "256 Colour Ambient Lighting",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "dualZoneClimate": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 6,
+              "row": "Dual Zone Automatic Air-Conditioning",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "heatedSteeringWheel": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 6,
+              "row": "Heated & Memory Steering Wheel",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "steeringWheelAdjustment": {
+          "value": "4-way powered",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 6,
+              "row": "4-way Powered Steering Wheel Adjustment",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "touchscreenInches": {
+          "value": 15.4,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 6,
+              "row": "15.4 inch Touchscreen",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "screenTilt": {
+          "value": "Sunflower tilt",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 6,
+              "row": "Sunflower Tilt",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "wirelessCarPlay": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 6,
+              "row": "Wireless Apple CarPlay connectivity",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "wirelessAndroidAuto": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 6,
+              "row": "Wireless Android Auto connectivity",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "audioSystem": {
+          "value": "18 speaker sound system",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 6,
+              "row": "18 Speaker Sound System",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "powerTailgate": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 6,
+              "row": "Power Tailgate",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "dashcam": {
+          "value": "Integrated dash camera",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 6,
+              "row": "Integrated Dash Camera",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "interiorCamera": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 6,
+              "row": "Interior Camera",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "phoneCharging": {
+          "value": "50W ventilated wireless pad",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 6,
+              "row": "Wireless Charging Pad (50W & Ventilated)",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "acousticGlass": {
+          "value": "Front windshield and driver/front passenger windows",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 6,
+              "row": "Double Layer Sound Insulation Glass",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "seatTrim": {
+          "value": "Black Nappa leather appointed",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 7,
+              "row": "Black Nappa Leather Seat Trim",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ],
+          "qualification": "Leather-appointed seats combine genuine and synthetic materials, not wholly leather"
+        },
+        "frontSeatAdjustment": {
+          "value": "8-way powered, 4-way lumbar, 2-way leg rest",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 7,
+              "row": "Driver & Front Passenger Seat 8-way Powered, 4-way Lumbar & 2-way Leg Rest Adjustment",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "driverSeatFunctions": {
+          "value": "Heat, ventilation, 2-profile memory, massage, zero gravity",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 7,
+              "row": "Driver Seat with Heating, Ventilation, 2 x Profile Memory, Massage & Zero Gravity functions",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "frontPassengerSeatFunctions": {
+          "value": "Heat, ventilation, 3-profile memory, massage, zero gravity",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 7,
+              "row": "Front Passenger Seat with Heating, Ventilation, 3 x Profile Memory, Massage & Zero Gravity functions",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "rearSeatFunctions": {
+          "value": "Heat, ventilation, massage, powered backrest adjustment",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 7,
+              "row": "Rear Row Passenger Seat Adjustment with Heating, Ventilation, Massage functions & Powered Backrest Adjustment",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "rearSeat": {
+          "value": "60/40 split folding",
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 7,
+              "row": "60/40 Split Fold Rear Seat",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "orangeNappaSeatTrim": {
+          "value": true,
+          "fitment": "optional",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 7,
+              "row": "Orange Nappa Leather Seat Trim",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ],
+          "qualification": "Additional cost; leather-appointed seats combine genuine and synthetic materials"
+        },
+        "vehicleStabilityOffRoadAssist": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 4,
+              "row": "Vehicle Stability Assist/Off Road Assist",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "heatPump": {
+          "value": null,
+          "fitment": "unknown",
+          "reason": "Not explicit in current checked AU brochure rows; no absence claim"
+        },
+        "aebPedestrianCyclist": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "Autonomous Emergency Brake with Pedestrian & Cyclist Alert (AEB)",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "adaptiveCruise": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "Integrated Adaptive Cruise Control (IACC)",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "laneKeepAssist": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "Lane Keep Assist (LKA)",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "laneCentreControl": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "Lane Centre Control (LCC)",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "blindSpotDetection": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "Blind Spot Detection (BSD)",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "rearCrossTrafficBrake": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "Rear Cross Traffic Brake (RCTB)",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "rearCrossTrafficAlert": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "Rear Cross Traffic Alert (RCTA)",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "trafficSignRecognition": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "Traffic Sign Recognition (TSR)",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "automatedParking": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "Automated Parking Assistance (APA)",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "frontCrossTrafficBrake": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "Front Cross Traffic Braking (FCTB)",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "frontCrossTrafficAlert": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "Front Cross Traffic Alert (FCTA)",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "reverseTracingAssistance": {
+          "value": true,
+          "fitment": "standard",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 5,
+              "row": "Reverse Tracing Assistance (RTA)",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        }
+      },
+      "limitations": [
+        "No dealer was contacted; NEW advertisements do not establish physical availability, allocation or unsold state beyond the live advertisement",
+        "Current listing, document MY, stock calendar/build year, and factory production are separate evidence dimensions",
+        "Manufacturer technical claims are not independent real-world test results",
+        "Battery gross versus usable capacity is not defined in these current technical rows",
+        "Unlisted equipment remains unknown; no generic dealer equipment inherited"
+      ],
+      "manufacturerSafetyClaim": {
+        "ancapStars": null,
+        "ratingYear": null,
+        "status": "not_verified",
+        "qualification": "No ANCAP result asserted or inferred from brochure omission"
+      },
+      "warranty": {
+        "vehicle": {
+          "years": 7,
+          "kilometres": 160000,
+          "basis": "whichever occurs first; private/non-commercial usage",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 7,
+              "row": "7-year/160,000kms Vehicle Warranty",
+              "column": "E07 AWD PERFORMANCE"
+            },
+            {
+              "sourceId": "deepal_warranty",
+              "url": "https://www.deepal.com.au/ownership/warranty/",
+              "checkedOn": "2026-10-10",
+              "locator": "The DEEPAL New Car Warranty"
+            }
+          ]
+        },
+        "highVoltageBattery": {
+          "years": 8,
+          "kilometres": 240000,
+          "basis": "whichever occurs first; excludes fair-wear capacity degradation; maintenance and battery-health checks required; excludes commercial use",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 7,
+              "row": "8-year/240,000kms Battery Warranty and footnote",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "roadside": {
+          "months": 12,
+          "basis": "Complimentary, opt-in at delivery required",
+          "evidence": [
+            {
+              "sourceId": "deepal_e07_brochure_1",
+              "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+              "checkedOn": "2026-10-10",
+              "pdfPage": 7,
+              "row": "12-months complimentary DEEPAL Roadside Assistance and footnote",
+              "column": "E07 AWD PERFORMANCE"
+            }
+          ]
+        },
+        "batteryRetentionGuarantee": null,
+        "qualification": "Full handbook terms govern; do not advertise these private-use limits for commercial use. Current warranty webpage separately prints 1 year/120,000 km commercial vehicle period; not treated as resolved commercial warranty without handbook verification."
+      },
+      "stockSourceIds": [
+        "deepal_e07_awd_stock"
+      ]
+    }
+  ],
+  "specificNewStock": [
+    {
+      "recordId": "deepal-s07-rwd-current-20261010",
+      "sourceId": "deepal_s07_stock",
+      "dealer": "Brisbane Deepal",
+      "location": "Albion QLD",
+      "stockNumber": "23863",
+      "vin": "LS6C3E0MXSF606287",
+      "advertisedCondition": "New",
+      "advertisedFormalModelYear": "MY24",
+      "advertisedYear": 2025,
+      "buildYear": null,
+      "odometerKm": 2,
+      "priceAUD": 47990,
+      "priceType": "driveaway",
+      "configuration": "S07 RWD (W20); Comet White",
+      "evidence": [
+        {
+          "sourceId": "deepal_s07_stock",
+          "url": "https://www.brisbanedeepal.com.au/new-cars/for-sale/deepal/s07-my24/2025/s07-rwd-w20/s0724/4042911/#stockDealerLocation",
+          "checkedOn": "2026-10-10",
+          "locator": "Page title / New label / Key Features and Details / VIN / Car Details"
+        }
+      ],
+      "stockStatus": "specific_new_advertisement_verified",
+      "physicalOnLotConfirmed": false,
+      "note": "Dealer generic Model Year field says 2025 while explicit title says MY24. Preserve both; no build date inferred; optional 20-inch wheel vehicle, not separate trim."
+    },
+    {
+      "recordId": "deepal-e07-awd-performance-current-20261010",
+      "sourceId": "deepal_e07_awd_stock",
+      "dealer": "Jarvis Deepal",
+      "location": "Adelaide SA",
+      "stockNumber": "C1705860",
+      "vin": "LS6C3G0Y7TK500130",
+      "advertisedCondition": "New",
+      "advertisedFormalModelYear": "MY25",
+      "advertisedYear": 2026,
+      "buildYear": null,
+      "odometerKm": null,
+      "priceAUD": 79990,
+      "priceType": "driveaway",
+      "configuration": "E07 AWD Performance; Hematite Grey Matte; black interior",
+      "evidence": [
+        {
+          "sourceId": "deepal_e07_awd_stock",
+          "url": "https://www.jarvisdeepal.com.au/new-cars/for-sale/deepal/e07/2026/performance/my25-awd/4088074/",
+          "checkedOn": "2026-10-10",
+          "locator": "Page title / New label / Key Features and Details / VIN / Car Details"
+        }
+      ],
+      "stockStatus": "specific_new_advertisement_verified",
+      "physicalOnLotConfirmed": false,
+      "note": "Dealer generic Model Year field says 2026 while title says MY25. Do not infer build year or confirmed recall completion. Optional paint price not representative of standard-paint base price."
+    },
+    {
+      "recordId": "deepal-e07-rwd-current-20261010",
+      "sourceId": "deepal_e07_rwd_perth_500082",
+      "dealer": "Perth City Auto Group",
+      "location": "Victoria Park WA",
+      "stockNumber": "500082",
+      "vin": "LS6C3E1EXTK500082",
+      "advertisedCondition": "New",
+      "advertisedFormalModelYear": "MY25",
+      "advertisedYear": 2026,
+      "buildYear": 2026,
+      "complianceYear": 2026,
+      "odometerKm": 10,
+      "priceAUD": 71995,
+      "priceType": "driveaway",
+      "configuration": "E07 RWD; grey",
+      "evidence": [
+        {
+          "sourceId": "deepal_e07_rwd_perth_500082",
+          "url": "https://www.perthcityautogroup.com.au/cars/new-grey-2026-deepal-e07-500082",
+          "checkedOn": "2026-10-10",
+          "locator": "Page title/New SUV / Key information / Car Summary / Drive type Rear Wheel Drive"
+        }
+      ],
+      "stockStatus": "specific_new_advertisement_verified",
+      "physicalOnLotConfirmed": false,
+      "note": "Explicit build and compliance year fields retained separately from title MY25; technical/equipment claims use manufacturer sources, not generic dealer specifications"
+    }
+  ],
+  "rejectedStockEvidence": [
+    {
+      "sourceId": "deepal_e07_rwd_stock",
+      "candidate": "Brisbane stock 23788",
+      "reason": "Fresh direct URL redirects to generic stock index; cached search detail is insufficient for current specific stock"
+    },
+    {
+      "sourceId": "deepal_e07_rwd_stock2",
+      "candidate": "Waverley D1094",
+      "reason": "Direct page is SOLD"
+    },
+    {
+      "sourceId": "deepal_e07_rwd_waverley_d1071",
+      "candidate": "Waverley D1071 / LS6C3E1E5TK500006",
+      "reason": "Direct page saved 2026-10-10 is SOLD, despite cached web renderer showing NEW immediate-delivery advertisement"
+    },
+    {
+      "sourceId": "deepal_e07_rwd_inchcape_de500064a",
+      "candidate": "Inchcape DE500064A / LS6C3E1E8TK500064",
+      "reason": "Direct URL redirects to generic stock index. Cached detail says storage compound and arrival 5-10 days, which would not prove on-lot availability even if live."
+    },
+    {
+      "sourceId": "deepal_e07_rwd_bundoora_de500071",
+      "candidate": "Inchcape/Bundoora DE500071",
+      "reason": "Direct source returned HTTP404; cached search result excluded"
+    }
+  ],
+  "deferredLeads": [
+    {
+      "model": "S05",
+      "sourceId": "deepal_s05",
+      "listingStatus": "register_interest",
+      "orderStatus": "not_verified",
+      "stockStatus": "unverified",
+      "exactAustralianTrims": [],
+      "evidence": [
+        {
+          "sourceId": "deepal_s05",
+          "url": "https://www.deepal.com.au/vehicles/deepal/s05/",
+          "checkedOn": "2026-10-10",
+          "locator": "BE THE FIRST TO KNOW; register your interest; form asks Are you interested in Pre-Order?"
+        }
+      ],
+      "reason": "An interest-in-preorder question is not an accepted-order flow. No current AU technical trim matrix verified; do not import global S05 variants/specifications."
+    }
+  ],
+  "conflicts": [
+    {
+      "topic": "E07 AC charge duration",
+      "preferredForExactTechnicalRows": "Current September 2026 brochure p2 says 13h 0-100% at7kW",
+      "otherClaim": "Current product-page CHARGING & RANGE prose says about16h full charge at7kW",
+      "resolution": "Preserve both as source conflict; no silent harmonization",
+      "sourceIds": [
+        "deepal_e07_brochure_1",
+        "deepal_e07"
+      ]
+    },
+    {
+      "topic": "E07 AWD acceleration precision",
+      "brochure": "3.96 seconds",
+      "websiteSummaryTiles": "3.9 seconds",
+      "resolution": "Use 3.96s from technical sheet; no inferred rounding rules",
+      "sourceIds": [
+        "deepal_e07_brochure_1",
+        "deepal_e07"
+      ]
+    },
+    {
+      "topic": "E07 air suspension scope",
+      "brochure": "Standard for RWD and AWD Performance, visually checked p4",
+      "websiteNarrative": "Emphasizes AWD front/rear continuous damping and air suspension",
+      "resolution": "Current document marks both, but delivered build must be checked; no RWD absence inference",
+      "sourceIds": [
+        "deepal_e07_brochure_1",
+        "deepal_e07"
+      ]
+    },
+    {
+      "topic": "E07 current 3-anchor fitment versus affected 2025 vehicles",
+      "currentSpecification": "3 child-seat anchors, 2 ISOFIX positions, both trims",
+      "recall": "REC-006560 / DRT-001, published 2026-03-10: 218 Deepal SC6501 vehicles year2025, all variants in affected VIN set; possible missing middle rear child-restraint anchor",
+      "resolution": "Check delivered VIN and rectification. Current brochure does not prove retrofit on earlier inventory. VIN CSV could not be downloaded; no claim that any stock VIN above is affected or cleared",
+      "sourceIds": [
+        "deepal_e07_brochure_1",
+        "deepal_e07_recall_webtool"
+      ]
+    },
+    {
+      "topic": "Dealer year labels versus formal MY",
+      "resolution": "S07 explicit MY24 title coexists with2025 year; E07 AWD explicit MY25 title coexists with2026 year. Do not normalize calendar/build fields into formal MY."
+    }
+  ],
+  "methodology": [
+    "Official current AU product pages and linked technical brochures control equipment and technical rows",
+    "PDF pages are one-indexed including cover; exact row and variant column supplied for all technical/fitment facts",
+    "Document dates and printed MY codes visually reviewed; file creation dates are not build dates",
+    "HTTP200 alone is never evidence of available NEW stock; inspect body for SOLD and final redirect target",
+    "Cached web detail that conflicts with fresh direct body is rejected for availability",
+    "NEW advertisements prove advertised condition only, not possession, immediate delivery, factory order acceptance or recall rectification",
+    "No dealer outreach, account actions, submitted forms, or app edits"
+  ],
+  "sources": [
+    {
+      "id": "deepal_s07",
+      "url": "https://www.deepal.com.au/vehicles/deepal/s07/",
+      "final_url": "https://www.deepal.com.au/vehicles/deepal/s07/",
+      "http_status": 200,
+      "kind": "manufacturer_primary_AU",
+      "checked_on": "2026-10-10",
+      "snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/chinese-passenger-sources/deepal_s07.html",
+      "sha256": "534279072ce9c9559c9f063149c79bafa3ed7c40992a2b4b7e0e0a5d1ddc20e6",
+      "text_snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/chinese-passenger-sources/deepal_s07.txt",
+      "text_snapshot_sha256": "1ffff6834153a2eb187702e9271cc23e5550fb09ef59a75487cc551b28078d52"
+    },
+    {
+      "id": "deepal_e07",
+      "url": "https://www.deepal.com.au/vehicles/deepal/e07/",
+      "final_url": "https://www.deepal.com.au/vehicles/deepal/e07/",
+      "http_status": 200,
+      "kind": "manufacturer_primary_AU",
+      "checked_on": "2026-10-10",
+      "snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/chinese-passenger-sources/deepal_e07.html",
+      "sha256": "2e017c3104d024e9340485cac393d2b13adfad47547cad9e2b045ace5e618d86",
+      "text_snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/chinese-passenger-sources/deepal_e07.txt",
+      "text_snapshot_sha256": "18f5c8d73bf35b5bc53bf9b26804358160d0e2dba875dd5326c6dc0c194077df"
+    },
+    {
+      "id": "deepal_s05",
+      "url": "https://www.deepal.com.au/vehicles/deepal/s05/",
+      "final_url": "https://www.deepal.com.au/vehicles/deepal/s05/",
+      "http_status": 200,
+      "kind": "manufacturer_primary_AU",
+      "checked_on": "2026-10-10",
+      "snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/chinese-passenger-sources/deepal_s05.html",
+      "sha256": "bef998455a2b6c895f4edd9e0a25246d2abe44975693bb0bc79428ea33f7ae84",
+      "text_snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/chinese-passenger-sources/deepal_s05.txt",
+      "text_snapshot_sha256": "e1b31a6e10badb8af3cc1ddb00bdbec6b2627b3570f2754b1ee5ce710b24c7ca"
+    },
+    {
+      "id": "deepal_s07_brochure_1",
+      "url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+      "final_url": "https://www.deepal.com.au/media/eukkp1uh/deepal_s07_spec_sheet_v2-2.pdf",
+      "http_status": 200,
+      "kind": "manufacturer_primary_AU",
+      "checked_on": "2026-10-10",
+      "snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/chinese-passenger-sources/deepal_s07_brochure_1.pdf",
+      "sha256": "a83c22ca57f2df5df1c91a2ac00ac0db200b737c2d89498ef89ba74fe6a6a2b5",
+      "text_snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/chinese-passenger-sources/deepal_s07_brochure_1.txt",
+      "text_snapshot_sha256": "30652485011d1fb6c3523ef373ac27b0edd76e1d033c43105c5f95378256c284",
+      "documentVersion": "2:2",
+      "documentDate": "2025-11",
+      "documentPrintedCode": "PCA7771 / MY24 / 11.25",
+      "manufacturerTechnicalScopeModelYear": 2024,
+      "pdfCreationDate": "2025-11-14T10:35:03+11:00",
+      "visuallyReviewedPages": [
+        8
+      ]
+    },
+    {
+      "id": "deepal_e07_brochure_1",
+      "url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+      "final_url": "https://www.deepal.com.au/media/gzupdrje/deepal_e07_spec_sheet_web.pdf",
+      "http_status": 200,
+      "kind": "manufacturer_primary_AU",
+      "checked_on": "2026-10-10",
+      "snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/chinese-passenger-sources/deepal_e07_brochure_1.pdf",
+      "sha256": "71197c6e219649645c3dfc9915e8ffe7b8c3e4db8c9b1aad132c9b04b8f09162",
+      "text_snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/chinese-passenger-sources/deepal_e07_brochure_1.txt",
+      "text_snapshot_sha256": "cd9adf585a93839caede64905e620d2b94c0cb8ea8fea4b88f5799a7541928b9",
+      "documentVersion": "1:2",
+      "documentDate": "2026-09",
+      "documentPrintedCode": "DPL7855/MY25/09.26",
+      "manufacturerTechnicalScopeModelYear": 2025,
+      "pdfCreationDate": "2026-09-11T14:40:25+10:00",
+      "visuallyReviewedPages": [
+        4,
+        8
+      ]
+    },
+    {
+      "id": "deepal_stock_index",
+      "url": "https://www.brisbanedeepal.com.au/stock/",
+      "final_url": "https://www.brisbanedeepal.com.au/stock/",
+      "http_status": 200,
+      "kind": "manufacturer_primary_AU",
+      "checked_on": "2026-10-10",
+      "snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/chinese-passenger-sources/deepal_stock_index.html",
+      "sha256": "c0f8a97810d02145c3b0f8a6eaa07fcd1a54f3aef966f4da27ec9e66dda5d606",
+      "text_snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/chinese-passenger-sources/deepal_stock_index.txt",
+      "text_snapshot_sha256": "6ce1847af5457d42a2454dd02d60d92e81f120a7c99884b88c539b83735113ed"
+    },
+    {
+      "id": "deepal_e07_rwd_stock",
+      "url": "https://www.brisbanedeepal.com.au/new-cars/for-sale/deepal/e07-my25/2026/e07-plus-rwd/e0725/4006478/",
+      "final_url": "https://www.brisbanedeepal.com.au/stock/",
+      "http_status": 200,
+      "kind": "manufacturer_primary_AU",
+      "checked_on": "2026-10-10",
+      "snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/chinese-passenger-sources/deepal_e07_rwd_stock.html",
+      "sha256": "c0f8a97810d02145c3b0f8a6eaa07fcd1a54f3aef966f4da27ec9e66dda5d606",
+      "text_snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/chinese-passenger-sources/deepal_e07_rwd_stock.txt",
+      "text_snapshot_sha256": "6ce1847af5457d42a2454dd02d60d92e81f120a7c99884b88c539b83735113ed"
+    },
+    {
+      "id": "deepal_e07_awd_stock",
+      "url": "https://www.jarvisdeepal.com.au/new-cars/for-sale/deepal/e07/2026/performance/my25-awd/4088074/",
+      "final_url": "https://www.jarvisdeepal.com.au/new-cars/for-sale/deepal/e07/2026/performance/my25-awd/4088074/",
+      "http_status": 200,
+      "kind": "manufacturer_primary_AU",
+      "checked_on": "2026-10-10",
+      "snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/chinese-passenger-sources/deepal_e07_awd_stock.html",
+      "sha256": "62615d789aafd5cc3464ffef2d8a726bfcadce015d4b30fedbce636f4213d2b7",
+      "text_snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/chinese-passenger-sources/deepal_e07_awd_stock.txt",
+      "text_snapshot_sha256": "cfb983847514f940f6f610d6bee86c688df49c3e95343cf00ddfb6f86f38d91e"
+    },
+    {
+      "id": "deepal_s07_stock",
+      "url": "https://www.brisbanedeepal.com.au/new-cars/for-sale/deepal/s07-my24/2025/s07-rwd-w20/s0724/4042911/#stockDealerLocation",
+      "final_url": "https://www.brisbanedeepal.com.au/new-cars/for-sale/deepal/s07-my24/2025/s07-rwd-w20/s0724/4042911/#stockDealerLocation",
+      "http_status": 200,
+      "kind": "manufacturer_primary_AU",
+      "checked_on": "2026-10-10",
+      "snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/chinese-passenger-sources/deepal_s07_stock.html",
+      "sha256": "99c2c5899b59a9bdb9068afab32df297ea3c376f21c9e5427028e33023c1fb6d",
+      "text_snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/chinese-passenger-sources/deepal_s07_stock.txt",
+      "text_snapshot_sha256": "ce42224bc6c7f736f3c0210c9189b9fa0da92df339b83574675ef6cf21ae8bd4"
+    },
+    {
+      "id": "deepal_e07_rwd_stock2",
+      "url": "https://www.waverleydeepal.com.au/cars/new-hematite-grey-2026-deepal-e07-d1094",
+      "final_url": "https://www.waverleydeepal.com.au/cars/new-hematite-grey-2026-deepal-e07-d1094",
+      "http_status": 200,
+      "kind": "manufacturer_primary_AU",
+      "checked_on": "2026-10-10",
+      "snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/chinese-passenger-sources/deepal_e07_rwd_stock2.html",
+      "sha256": "ce345b8ea5817d757ba3e8afdcf7d4412eebcf3c3b5f95d10c98b5750babe33d",
+      "text_snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/chinese-passenger-sources/deepal_e07_rwd_stock2.txt",
+      "text_snapshot_sha256": "961afb34279db937be64b661427fd860006482702fb99b8e0f95d1f6383fb71e"
+    },
+    {
+      "id": "deepal_e07_recall",
+      "url": "https://www.vehiclerecalls.gov.au/recalls/rec-006560",
+      "retrieval_error": "The read operation timed out",
+      "checked_on": "2026-10-10"
+    },
+    {
+      "id": "deepal_warranty",
+      "url": "https://www.deepal.com.au/ownership/warranty/",
+      "final_url": "https://www.deepal.com.au/ownership/warranty/",
+      "http_status": 200,
+      "kind": "manufacturer_primary_AU",
+      "checked_on": "2026-10-10",
+      "snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/chinese-passenger-sources/deepal_warranty.html",
+      "sha256": "d4d400860f738e4518825732ebd62b56bd10680724bf478673ffb046da17a146",
+      "text_snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/chinese-passenger-sources/deepal_warranty.txt",
+      "text_snapshot_sha256": "cd3cc048ad4e455a9a26346426dc3b0a132a0165115e094d1b84f02bc0268216"
+    },
+    {
+      "id": "deepal_offers",
+      "url": "https://www.deepal.com.au/special-offers/",
+      "final_url": "https://www.deepal.com.au/special-offers/",
+      "http_status": 200,
+      "kind": "manufacturer_primary_AU",
+      "checked_on": "2026-10-10",
+      "snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/chinese-passenger-sources/deepal_offers.html",
+      "sha256": "ebac9b055c5946d7ea774e90c0c5f3c6e33e9889b136df91263200d21adb1252",
+      "text_snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/chinese-passenger-sources/deepal_offers.txt",
+      "text_snapshot_sha256": "0a83a0b1149c8275f05b934b7ba5929982d7a6914329d52e497dd06db1e25f42"
+    },
+    {
+      "id": "deepal_e07_rwd_waverley_d1071",
+      "url": "https://www.waverleydeepal.com.au/cars/new-quartz-white-2025-deepal-e07-d1071",
+      "final_url": "https://www.waverleydeepal.com.au/cars/new-quartz-white-2025-deepal-e07-d1071",
+      "http_status": 200,
+      "kind": "Australian_dealer_specific_NEW_vehicle",
+      "checked_on": "2026-10-10",
+      "retrieved_at": "2026-10-10T08:09:30.647618+00:00",
+      "snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/deepal-new-sources/deepal_e07_rwd_waverley_d1071.html",
+      "sha256": "75ab0795367addc38500fac8f71b5b6f7b7635466a69b24b20124572d7a18381",
+      "text_snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/deepal-new-sources/deepal_e07_rwd_waverley_d1071.txt",
+      "text_snapshot_sha256": "ec17322e990b7540cd65a43e41dc52b1ea6a93c01a537042536ad7a063610f38"
+    },
+    {
+      "id": "deepal_e07_rwd_inchcape_de500064a",
+      "url": "https://www.inchcapeautomotive.com.au/new-cars/for-sale/deepal/e07/2025/my25/4100764/",
+      "final_url": "https://www.inchcapeautomotive.com.au/stock/",
+      "http_status": 200,
+      "kind": "Australian_dealer_specific_NEW_vehicle",
+      "checked_on": "2026-10-10",
+      "retrieved_at": "2026-10-10T08:09:39.014560+00:00",
+      "snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/deepal-new-sources/deepal_e07_rwd_inchcape_de500064a.html",
+      "sha256": "a158326a9f651061a4cfd39abbc467048d503f85e732a38b9d3f19da9ae299d7",
+      "text_snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/deepal-new-sources/deepal_e07_rwd_inchcape_de500064a.txt",
+      "text_snapshot_sha256": "cd2dce891694e9284de02c72314893afafff0f68df881d3619aa8340208ef4cc"
+    },
+    {
+      "id": "deepal_e07_rwd_perth_500082",
+      "url": "https://www.perthcityautogroup.com.au/cars/new-grey-2026-deepal-e07-500082",
+      "final_url": "https://www.perthcityautogroup.com.au/cars/new-grey-2026-deepal-e07-500082",
+      "http_status": 200,
+      "kind": "Australian_dealer_specific_vehicle",
+      "checked_on": "2026-10-10",
+      "retrieved_at": "2026-10-10T08:11:40.930786+00:00",
+      "snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/deepal-new-sources/deepal_e07_rwd_perth_500082.html",
+      "sha256": "864846f5ef491e316bfa23ce5dd9e4930394c31161f71e72335c34ccc0c46507",
+      "text_snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/deepal-new-sources/deepal_e07_rwd_perth_500082.txt",
+      "text_snapshot_sha256": "9ad1c993baf81c5bb321e4f4170a0d4dc6f2c032a2cb0a34a69cbf88a99e0acd"
+    },
+    {
+      "id": "deepal_e07_rwd_bundoora_de500071",
+      "url": "https://subarubundoora.com.au/new-cars/for-sale/deepal/e07/2025/my25/4031586/",
+      "error": "HTTP Error 404: Not Found",
+      "checked_on": "2026-10-10"
+    },
+    {
+      "id": "deepal_e07_recall_webtool",
+      "url": "https://www.vehiclerecalls.gov.au/recalls/rec-006560",
+      "kind": "Australian_government_regulator_primary",
+      "checked_on": "2026-10-10",
+      "published_on": "2026-03-10",
+      "snapshot_path": "/workspace/scratch/586427eef9f2/roadmark-research/deepal-new-sources/deepal_e07_recall_webtool.json",
+      "sha256": "e18cef451eaa34a7b561f9e9957556921f8c45c7675f627f84b5f27ee30d2d3c",
+      "retrieval_method": "web tool rendered official page; direct HTTP and CSV read timed out",
+      "locator": "Recall information; Identifying features; What are the defects; What should consumers do"
+    }
+  ]
+}

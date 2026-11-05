@@ -1,31 +1,35 @@
-import { WithEvidence } from "@/components/with-evidence";
+import { HERO_EVIDENCE_IDS, pageEvidenceSources } from "@/lib/page-evidence";
+import { discoveryCars } from "@/lib/discovery";
 import FleetExperience from "@/components/fleet-experience";
-import type { Query } from "@/lib/page-props";
+import { fleetSelection, curatedFleetCars } from "@/lib/fleet";
+import Discovery from "@/components/discovery";
+import { WithEvidence } from "@/components/with-evidence";
 import { catalogue, pack, research } from "@/lib/data";
-import { fleetSelection } from "@/lib/fleet";
 export const metadata = {
-  title: "Tesla Model Y vs Australia’s leading EVs.",
+  title: "Find what your next EV does best",
   alternates: { canonical: "/" },
 };
-export default async function Home({
-  searchParams,
-}: {
-  searchParams: Promise<Query>;
-}) {
-  const params =
-    process.env.SITE_STATIC_EXPORT === "1" ? {} : await searchParams;
-  const query = new URLSearchParams(
-    Object.entries(params).filter(
-      (e): e is [string, string] => typeof e[1] === "string",
-    ),
-  );
+export default function Home() {
+  const cars = catalogue();
+  const d = research();
+  const snapshot = { cars, data: d };
+  const packs = curatedFleetCars(cars).map((c) => pack(c.id, snapshot));
+  const discovery = discoveryCars(cars);
+  const sources = pageEvidenceSources(d.sources, {
+    packs,
+    extraIds: HERO_EVIDENCE_IDS,
+    cars: discovery,
+  });
   return (
-    <WithEvidence>
+    <WithEvidence sources={sources}>
       <FleetExperience
-        allPacks={catalogue().map((c) => pack(c.id))}
-        initial={fleetSelection(catalogue(), query)}
-        criteria={research().criteria}
+        allPacks={packs}
+        totalCatalogueCount={cars.length}
+        initial={fleetSelection(cars, new URLSearchParams())}
+        criteria={d.criteria}
         version="b"
+        afterHero={<Discovery cars={discovery} sources={sources} embedded />}
+        collapseComparison
       />
     </WithEvidence>
   );

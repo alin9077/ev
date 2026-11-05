@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 import { pairPages, pairReport } from "../../src/lib/pair-pages";
 import { catalogue } from "../../src/lib/data";
-import { reportMarkdown } from "../../src/lib/citable";
+import { PAGE_UPDATED, reportMarkdown } from "../../src/lib/citable";
 
 test("all nine comparisons expose dated claims, links and schema without JavaScript", async ({
   browser,
@@ -62,7 +62,7 @@ test("all nine comparisons expose dated claims, links and schema without JavaScr
   expect(unknown?.status()).toBe(404);
   await context.close();
 });
-test("all 34 variant pages have a key-facts block before JavaScript", async ({
+test("all catalogue variant pages have a key-facts block before JavaScript", async ({
   browser,
   baseURL,
 }) => {
@@ -146,5 +146,5 @@ test("glossary anchors and discovery files resolve", async ({
     expect(llms).toContain(pair.slug);
     expect(sitemap).toContain(pair.slug);
   }
-  expect(sitemap).toContain("<lastmod>2026-10-08");
+  expect(sitemap).toContain(`<lastmod>${PAGE_UPDATED}</lastmod>`);
 });

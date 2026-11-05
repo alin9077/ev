@@ -11,6 +11,7 @@ import {
 } from "react";
 import type { Source } from "@/lib/types";
 import { safeUrl } from "@/lib/config";
+import { sourcePresentation } from "@/lib/source-presentation";
 type Group = { ids: string[]; number: number; count: number };
 const Context = createContext<{
   prefix: string;
@@ -28,7 +29,19 @@ export function FootnoteProvider({
   prefix?: string;
 }) {
   const [groups, setGroups] = useState<Record<string, Group>>({});
+  const sourceIndex = useMemo(() => {
+    const index = new Map<string, Source>();
+    for (const source of sources)
+      if (!index.has(source.id)) index.set(source.id, source);
+    return index;
+  }, [sources]);
   const origins = useRef(new Map<number, HTMLElement>());
+  useEffect(() => {
+    // Keep citation numbers, but release origins removed from the document.
+    for (const [number, origin] of origins.current) {
+      if (!origin.isConnected) origins.current.delete(number);
+    }
+  }, [groups]);
   const register = useCallback(
     (key: string, delta: number) =>
       setGroups((current) => {
@@ -78,7 +91,8 @@ export function FootnoteProvider({
                 value={group.number}
               >
                 {group.ids.map((id) => {
-                  const s = sources.find((source) => source.id === id);
+                  const s = sourceIndex.get(id);
+                  const presentation = s ? sourcePresentation(s) : undefined;
                   return s ? (
                     <div className="footnote-source" key={id}>
                       <a
@@ -86,9 +100,12 @@ export function FootnoteProvider({
                         target="_blank"
                         rel="noreferrer"
                       >
-                        {s.title}
+                        {presentation?.title ?? s.title}
                         <span className="sr-only"> (new tab)</span>
                       </a>
+                      {presentation?.note && (
+                        <p className="small">{presentation.note}</p>
+                      )}
                       <p>
                         {s.publisher} · {s.market} · Checked {s.accessed_date}
                         {s.fresh_check
@@ -110,8 +127,13 @@ export function FootnoteProvider({
                   onClick={(e) => {
                     e.preventDefault();
                     const target = origins.current.get(group.number);
-                    target?.focus();
-                    target?.scrollIntoView({ block: "center" });
+                    if (!target) return;
+                    if (!target.isConnected) {
+                      origins.current.delete(group.number);
+                      return;
+                    }
+                    target.focus();
+                    target.scrollIntoView({ block: "center" });
                   }}
                 >
                   Back to reference ↑

@@ -19,10 +19,13 @@ export function publicOrigin(value: string | undefined) {
   }
 }
 export const publishedOrigin = publicOrigin(process.env.NEXT_PUBLIC_SITE_URL);
+/** A phone-test preview: published at its own address but never indexed. */
+export const previewNoindex = process.env.NEXT_PUBLIC_PREVIEW_NOINDEX === "1";
+export const indexable = !!publishedOrigin && !previewNoindex;
 export const site = {
-  name: "EV Side by Side",
+  name: "Roadmark",
   description:
-    "Compare Tesla Model Y with other EVs in Australia: prices, range, charging and features for exact Australian variants.",
+    "Discover the strengths and trade-offs of Australian electric vehicles, with exact-trim comparisons and traceable evidence.",
   date: "2026-10-06",
   dateLabel: "6 October 2026",
   origin: publishedOrigin || "http://localhost:3000",
@@ -39,8 +42,9 @@ export const statusLabels = {
   not_applicable: "Not applicable",
 };
 export const availabilityLabels: Record<string, string> = {
-  current_or_order_listed: "Current / order-listed",
-  outgoing: "Outgoing generation",
+  not_current: "Not currently available",
+  current_or_order_listed: "Current listing",
+  outgoing: "Older / outgoing version",
   announced_provisional: "Announced / provisional",
 };
 export const priorities = [

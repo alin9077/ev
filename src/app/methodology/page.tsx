@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { genericEvidenceNote } from "@/lib/evidence-display";
 import { counts, research } from "@/lib/data";
 export const metadata = {
   title: "Methodology & limitations",
@@ -50,9 +51,10 @@ export default function Methodology() {
         <p>
           On 8 October 2026, all 32 buyer sources previously marked as
           search-summary-only were attempted: 22 returned readable articles and
-          10 remained inaccessible. The source audit records corrections and
-          access failures. Unsupported claims are withheld. This was a targeted
-          audit, not a new check of every specification.{" "}
+          10 remained inaccessible. The source check logs corrections and
+          access failures. Figures without support remain unknown; supported
+          secondary figures are labelled Reported. This was a targeted audit,
+          not a new check of every specification.{" "}
           <Link href="/sources#source-audit">Read the source audit</Link>.
         </p>
         <p>
@@ -63,11 +65,42 @@ export default function Methodology() {
           <Link href="/glossary">Read the glossary</Link>.
         </p>
         <p>
-          The variant review is dated 6 October 2026. Many specifications and
-          prices retain evidence from 5 October 2026 or earlier. A rebuild never
-          changes verification dates. Prices are base/list or reported figures,
-          not postcode-specific driveaway quotes; fees, options and on-road
-          costs can differ.
+          The original catalogue review is dated 6 October 2026; later additions
+          and corrections carry their own verification dates. Some
+          specifications retain older evidence. A rebuild never changes
+          verification dates. Prices follow a source ladder: maker list price
+          before on-road costs, national driveaway, a named-version configurator
+          or from-price, state-specific driveaway, reputable Australian
+          reporting, then a dealer advertisement. State, source and conditions
+          stay attached. Before-on-road and driveaway prices are never converted
+          into one another.
+        </p>
+        <p>
+          Date-only offer deadlines are inclusive. Where a source does not state
+          a timezone, Roadmark uses the Australia/Sydney calendar as a
+          conservative mainland-Australian reference, rather than waiting for
+          UTC midnight. This is our display policy, not a claim about the
+          seller’s terms. Explicit seller closing times and conditions remain
+          authoritative. Time-limited buyer summaries wait for a current-date
+          check in your browser.
+        </p>
+        <h2>How evidence ages</h2>
+        <p>
+          Published figures and vehicle cards stay visible as they age. Prices,
+          offers and availability are fresh for 45 days. Range, battery,
+          charging, performance and equipment are fresh for 180 days.
+          Dimensions, seats, cargo volume, towing and warranty terms are fresh
+          for 365 days, or until a known model-year change.
+        </p>
+        <p>
+          Older evidence shows its checked date in amber and is left out of
+          rankings for that fact. An older availability check is labelled
+          separately; it does not remove fresh technical figures for a
+          current/order-listed version. Outgoing stock-only versions still need
+          a fresh stock check. Strengths and trade-offs stay visible while their
+          own supporting facts remain fresh; an unrelated old price does not
+          remove a range or equipment reason. Explicit offer deadlines still
+          apply.
         </p>
         <h2>Measurement basis</h2>
         <ul>
@@ -94,15 +127,28 @@ export default function Methodology() {
             protocol does not earn a numeric comparison badge.
           </li>
         </ul>
-        <h2>Status labels</h2>
+        <h2>How sure are we?</h2>
         <p>
-          <strong>Standard</strong> means the supplied record supports
-          availability with its stated scope. <strong>Conditional</strong> means
-          build, option, software or conflicting evidence matters.{" "}
-          <strong>Optional</strong> may require an extra purchase.{" "}
-          <strong>Needs confirmation</strong> is unknown, not a “no”.{" "}
-          <strong>Subjective</strong> is an impression without matched testing.
-          Unavailable and not applicable remain separate.
+          <strong>Confirmed</strong> means current Australian maker material
+          supports this version. <strong>Check</strong> means a specific option,
+          wheel choice or measurement condition matters; open the mark beside
+          the figure to read it. <strong>Reported</strong> means a secondary
+          source or a sibling version, with its source retained.
+          <strong> Not published</strong> means a documented search did not find
+          the figure. An unreviewed gap remains “Needs confirmation”.
+        </p>
+        <p>{genericEvidenceNote}</p>
+        <p>
+          A generic model-year or laboratory disclaimer does not reduce a fact’s
+          grade. Maker terms explicitly applying across a brand can be
+          inherited; range-wide dimensions, seats and boot figures can apply
+          across the stated body. Specific exclusions, dates and options still
+          matter. Regrading does not change the source’s checked date.
+        </p>
+        <p>
+          Confirmed and Check figures can rank when their measurement bases
+          match. Reported figures remain visible but unranked. Coverage is
+          incomplete, so no claim of “best in Australia” is made.
         </p>
         <p>
           {c.evidence.toLocaleString()} feature evidence rows across{" "}

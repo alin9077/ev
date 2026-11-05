@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { site, publishedOrigin } from "@/lib/config";
+import { site, indexable, previewNoindex } from "@/lib/config";
 import "./globals.css";
 import { SiteShell } from "@/components/site-shell";
 export const metadata: Metadata = {
   metadataBase: new URL(site.origin),
   title: { default: site.name, template: `%s | ${site.name}` },
   description: site.description,
-  robots: { index: !!publishedOrigin, follow: true },
+  robots: { index: indexable, follow: !previewNoindex },
   openGraph: {
     title: site.name,
     description: site.description,

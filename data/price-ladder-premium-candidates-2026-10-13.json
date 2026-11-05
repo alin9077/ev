@@ -1,0 +1,781 @@
+{
+  "schemaVersion": 1,
+  "extractedAt": "2026-10-13",
+  "sourceCheckedAt": "2026-10-10",
+  "title": "Existing premium-brand price evidence admitted under the M1 ladder",
+  "notes": [
+    "Extraction is limited to the 78 existing integrated passenger versions of BMW, MINI, Audi, Porsche, Mercedes-Benz, Volvo and Polestar. Original JSON and source records remain unchanged; no external research was performed.",
+    "All candidate amounts were observed on 10 October 2026 in the held evidence. The extraction/expiry assessment date is 13 October 2026, not a new source check.",
+    "The 9 integrated qualified_derived_price_aud MINI facts were inspected first but not promoted: they subtract dealer delivery and round. Their source IDs and variant mappings are reused with the directly published gross from-price instead.",
+    "BMW iX1 Sport Collection A$79,900 campaign is current through 31 March 2027, but there is no matching integrated Sport Collection version. It is not applied to xDrive30 M Sport.",
+    "The Volvo EX30 A$55,990 campaign uses older Single Motor Extended Range naming and does not fix MY; it is not rebound to MY27 P5. Future/older/audit-only configurations are not added to the catalogue by this extraction.",
+    "Empty comparisonBasis means the amount is useful to display but its tax/on-road basis is insufficiently comparable. Dealer prices are source-reported and unranked. No physical stock claim is inferred."
+  ],
+  "candidates": [
+    {
+      "variantId": "bmw_ix1_current__22hm_xdrive30_m_sport__20261010",
+      "value": 90814,
+      "sourceIds": [
+        "r10_bmwmini_bmw_ix1_stock_alt2"
+      ],
+      "sourceKey": "advertised_new_price_aud",
+      "sourcePointer": "data/bmw-mini-evidence-2026-10-10.json#/records/0/pricing/advertised_new_price_aud",
+      "date": "2026-10-10",
+      "rung": 6,
+      "basisTag": "Dealer ad",
+      "comparisonBasis": "Driveaway",
+      "qualifications": [
+        "Exact advertised VIN/options/colour; not base MRLP, universal price or confirmed unsold stock",
+        "North Shore BMW advertised new unit, stock 5779888; VIN WBY22HM0105779888. The figure includes the advertised vehicle's options and colour.",
+        "NEW is the dealer-advertised condition, not registration, unencumbered status, physical delivery or manufacturer exact-VIN equipment certification; BMW terms identify Specification/Standard Features as Redbook-provided templates",
+        "Advertisement checked 10 October 2026; no offer expiry was stated in the held evidence."
+      ],
+      "publisher": "North Shore BMW",
+      "rankingEligible": false,
+      "conditionExplanation": "Driveaway price for the named dealer-advertised new vehicle and its fitted options; dealer-reported and unranked.",
+      "originalBasis": "dealer_advertised_driveaway; Exact advertised VIN/options/colour; not base MRLP, universal price or confirmed unsold stock"
+    },
+    {
+      "variantId": "bmw_ix2_current__82gn_xdrive30_m_sport__20261010",
+      "value": 92668,
+      "sourceIds": [
+        "r10_bmwmini_bmw_ix2_stock"
+      ],
+      "sourceKey": "advertised_new_price_aud",
+      "sourcePointer": "data/bmw-mini-evidence-2026-10-10.json#/records/1/pricing/advertised_new_price_aud",
+      "date": "2026-10-10",
+      "rung": 6,
+      "basisTag": "Dealer ad",
+      "comparisonBasis": "Driveaway",
+      "qualifications": [
+        "Exact advertised VIN/options/colour; not base MRLP, universal price or confirmed unsold stock",
+        "North Shore BMW advertised new unit, stock 5781119; VIN WBY82GN0405781119. The figure includes the advertised vehicle's options and colour.",
+        "NEW is the dealer-advertised condition, not registration, unencumbered status, physical delivery or manufacturer exact-VIN equipment certification; BMW terms identify Specification/Standard Features as Redbook-provided templates",
+        "Advertisement checked 10 October 2026; no offer expiry was stated in the held evidence."
+      ],
+      "publisher": "North Shore BMW",
+      "rankingEligible": false,
+      "conditionExplanation": "Driveaway price for the named dealer-advertised new vehicle and its fitted options; dealer-reported and unranked.",
+      "originalBasis": "dealer_advertised_driveaway; Exact advertised VIN/options/colour; not base MRLP, universal price or confirmed unsold stock"
+    },
+    {
+      "variantId": "bmw_i4_current__52hd_edrive35_m_sport_package__20261010",
+      "value": 104034,
+      "sourceIds": [
+        "r10_bmwmini_bmw_i4_stock_alt"
+      ],
+      "sourceKey": "advertised_new_price_aud",
+      "sourcePointer": "data/bmw-mini-evidence-2026-10-10.json#/records/3/pricing/advertised_new_price_aud",
+      "date": "2026-10-10",
+      "rung": 6,
+      "basisTag": "Dealer ad",
+      "comparisonBasis": "Driveaway",
+      "qualifications": [
+        "Exact advertised VIN/options/colour; not base MRLP, universal price or confirmed unsold stock",
+        "Canberra BMW advertised new unit, stock FX08944; VIN WBY52HD050FX08944. The figure includes the advertised vehicle's options and colour.",
+        "NEW is the dealer-advertised condition, not registration, unencumbered status, physical delivery or manufacturer exact-VIN equipment certification; BMW terms identify Specification/Standard Features as Redbook-provided templates",
+        "Advertisement checked 10 October 2026; no offer expiry was stated in the held evidence."
+      ],
+      "publisher": "Canberra BMW",
+      "rankingEligible": false,
+      "conditionExplanation": "Driveaway price for the named dealer-advertised new vehicle and its fitted options; dealer-reported and unranked.",
+      "originalBasis": "dealer_advertised_driveaway; Exact advertised VIN/options/colour; not base MRLP, universal price or confirmed unsold stock"
+    },
+    {
+      "variantId": "bmw_ix_current__42cf_xdrive45_m_sport__20261010",
+      "value": 160344,
+      "sourceIds": [
+        "r10_bmwmini_bmw_ix_stock"
+      ],
+      "sourceKey": "advertised_new_price_aud",
+      "sourcePointer": "data/bmw-mini-evidence-2026-10-10.json#/records/4/pricing/advertised_new_price_aud",
+      "date": "2026-10-10",
+      "rung": 6,
+      "basisTag": "Dealer ad",
+      "comparisonBasis": "Driveaway",
+      "qualifications": [
+        "Exact advertised VIN/options/colour; not base MRLP, universal price or confirmed unsold stock",
+        "Parramatta BMW advertised new unit, stock CY37329; VIN WBY42CF090CY37329. The figure includes the advertised vehicle's options and colour.",
+        "NEW is the dealer-advertised condition, not registration, unencumbered status, physical delivery or manufacturer exact-VIN equipment certification; BMW terms identify Specification/Standard Features as Redbook-provided templates",
+        "Advertisement checked 10 October 2026; no offer expiry was stated in the held evidence."
+      ],
+      "publisher": "Parramatta BMW",
+      "rankingEligible": false,
+      "conditionExplanation": "Driveaway price for the named dealer-advertised new vehicle and its fitted options; dealer-reported and unranked.",
+      "originalBasis": "dealer_advertised_driveaway; Exact advertised VIN/options/colour; not base MRLP, universal price or confirmed unsold stock"
+    },
+    {
+      "variantId": "bmw_ix3_na5__32hr_50_xdrive_m_sport_package__20261010",
+      "value": 136900,
+      "sourceIds": [
+        "r10_bmwmini_bmw_ix3_50_stock_alt"
+      ],
+      "sourceKey": "advertised_new_price_aud",
+      "sourcePointer": "data/bmw-mini-evidence-2026-10-10.json#/records/6/pricing/advertised_new_price_aud",
+      "date": "2026-10-10",
+      "rung": 6,
+      "basisTag": "Dealer ad",
+      "comparisonBasis": "Driveaway",
+      "qualifications": [
+        "Exact advertised VIN/options/colour; not base MRLP, universal price or confirmed unsold stock",
+        "Geelong BMW advertised new unit, stock DA28380; VIN WBA32HR070DA28380. The figure includes the advertised vehicle's options and colour.",
+        "NEW is the dealer-advertised condition, not registration, unencumbered status, physical delivery or manufacturer exact-VIN equipment certification; BMW terms identify Specification/Standard Features as Redbook-provided templates",
+        "Advertisement checked 10 October 2026; no offer expiry was stated in the held evidence."
+      ],
+      "publisher": "Geelong BMW",
+      "rankingEligible": false,
+      "conditionExplanation": "Driveaway price for the named dealer-advertised new vehicle and its fitted options; dealer-reported and unranked.",
+      "originalBasis": "dealer_advertised_driveaway; Exact advertised VIN/options/colour; not base MRLP, universal price or confirmed unsold stock"
+    },
+    {
+      "variantId": "bmw_i5_sedan_current__62hg_edrive40__prod_202607",
+      "value": 179900,
+      "sourceIds": [
+        "r10_bmwmini_bmw_i5_stock"
+      ],
+      "sourceKey": "advertised_new_price_aud",
+      "sourcePointer": "data/bmw-mini-evidence-2026-10-10.json#/records/7/pricing/advertised_new_price_aud",
+      "date": "2026-10-10",
+      "rung": 6,
+      "basisTag": "Dealer ad",
+      "comparisonBasis": "Driveaway",
+      "qualifications": [
+        "Exact advertised VIN/options/colour; not base MRLP, universal price or confirmed unsold stock",
+        "Melbourne BMW advertised new unit, stock CY87239; VIN WBY62HG0X0CY87239. The figure includes the advertised vehicle's options and colour.",
+        "NEW is the dealer-advertised condition, not registration, unencumbered status, physical delivery or manufacturer exact-VIN equipment certification; BMW terms identify Specification/Standard Features as Redbook-provided templates",
+        "Advertisement checked 10 October 2026; no offer expiry was stated in the held evidence."
+      ],
+      "publisher": "Melbourne BMW",
+      "rankingEligible": false,
+      "conditionExplanation": "Driveaway price for the named dealer-advertised new vehicle and its fitted options; dealer-reported and unranked.",
+      "originalBasis": "dealer_advertised_driveaway; Exact advertised VIN/options/colour; not base MRLP, universal price or confirmed unsold stock"
+    },
+    {
+      "variantId": "mini_cooper_j01__22gc_se_favoured__prod_202609",
+      "value": 61489.7,
+      "sourceIds": [
+        "r10_bmwmini_mini_price_22gc"
+      ],
+      "sourceKey": "manufacturer_price_including_delivery_aud",
+      "sourcePointer": "data/bmw-mini-evidence-2026-10-10.json#/records/9/pricing/manufacturer_price_including_delivery_aud",
+      "date": "2026-10-10",
+      "rung": 3,
+      "basisTag": "Maker's from price incl. delivery",
+      "comparisonBasis": "",
+      "qualifications": [
+        "Published fromPrice.grossPrice for this Australian model/trim code; includes GST and A$2,500 dealer delivery, and excludes registration/state charges.",
+        "API effect date 2026-10-08 is not production date or MY. BASIC_LINE API scope does not verify the current exact style/equipment revision.",
+        "The observed gross amount is preserved exactly. No delivery subtraction, on-road conversion or rounding has been applied."
+      ],
+      "publisher": "MINI Australia",
+      "validFrom": "2026-10-08",
+      "rankingEligible": false,
+      "conditionExplanation": "Manufacturer from-price includes dealer delivery but is not a full driveaway quote; its partially inclusive price basis remains unranked. Exact style/equipment revision within the API BASIC_LINE scope needs confirmation.",
+      "originalBasis": "includes GST and $2,500 dealer delivery; excludes unprovided registration/state charges"
+    },
+    {
+      "variantId": "mini_cooper_j01__12hf_jcw_electric__prod_202609",
+      "value": 66490.3,
+      "sourceIds": [
+        "r10_bmwmini_mini_price_12hf"
+      ],
+      "sourceKey": "manufacturer_price_including_delivery_aud",
+      "sourcePointer": "data/bmw-mini-evidence-2026-10-10.json#/records/10/pricing/manufacturer_price_including_delivery_aud",
+      "date": "2026-10-10",
+      "rung": 3,
+      "basisTag": "Maker's from price incl. delivery",
+      "comparisonBasis": "",
+      "qualifications": [
+        "Published fromPrice.grossPrice for this Australian model/trim code; includes GST and A$2,500 dealer delivery, and excludes registration/state charges.",
+        "API effect date 2026-10-08 is not production date or MY. BASIC_LINE API scope does not verify the current exact style/equipment revision.",
+        "The observed gross amount is preserved exactly. No delivery subtraction, on-road conversion or rounding has been applied."
+      ],
+      "publisher": "MINI Australia",
+      "validFrom": "2026-10-08",
+      "rankingEligible": false,
+      "conditionExplanation": "Manufacturer from-price includes dealer delivery but is not a full driveaway quote; its partially inclusive price basis remains unranked. Exact style/equipment revision within the API BASIC_LINE scope needs confirmation.",
+      "originalBasis": "includes GST and $2,500 dealer delivery; excludes unprovided registration/state charges"
+    },
+    {
+      "variantId": "mini_aceman_j05__82gc_se__prod_202609",
+      "value": 63489.5,
+      "sourceIds": [
+        "r10_bmwmini_mini_price_82gc"
+      ],
+      "sourceKey": "manufacturer_price_including_delivery_aud",
+      "sourcePointer": "data/bmw-mini-evidence-2026-10-10.json#/records/12/pricing/manufacturer_price_including_delivery_aud",
+      "date": "2026-10-10",
+      "rung": 3,
+      "basisTag": "Maker's from price incl. delivery",
+      "comparisonBasis": "",
+      "qualifications": [
+        "Published fromPrice.grossPrice for this Australian model/trim code; includes GST and A$2,500 dealer delivery, and excludes registration/state charges.",
+        "API effect date 2026-10-08 is not production date or MY. BASIC_LINE API scope does not verify the current exact style/equipment revision.",
+        "The observed gross amount is preserved exactly. No delivery subtraction, on-road conversion or rounding has been applied."
+      ],
+      "publisher": "MINI Australia",
+      "validFrom": "2026-10-08",
+      "rankingEligible": false,
+      "conditionExplanation": "Manufacturer from-price includes dealer delivery but is not a full driveaway quote; its partially inclusive price basis remains unranked. Exact style/equipment revision within the API BASIC_LINE scope needs confirmation.",
+      "originalBasis": "includes GST and $2,500 dealer delivery; excludes unprovided registration/state charges"
+    },
+    {
+      "variantId": "mini_aceman_j05__22hf_jcw__prod_202609",
+      "value": 68490.1,
+      "sourceIds": [
+        "r10_bmwmini_mini_price_22hf"
+      ],
+      "sourceKey": "manufacturer_price_including_delivery_aud",
+      "sourcePointer": "data/bmw-mini-evidence-2026-10-10.json#/records/13/pricing/manufacturer_price_including_delivery_aud",
+      "date": "2026-10-10",
+      "rung": 3,
+      "basisTag": "Maker's from price incl. delivery",
+      "comparisonBasis": "",
+      "qualifications": [
+        "Published fromPrice.grossPrice for this Australian model/trim code; includes GST and A$2,500 dealer delivery, and excludes registration/state charges.",
+        "API effect date 2026-10-08 is not production date or MY. BASIC_LINE API scope does not verify the current exact style/equipment revision.",
+        "The observed gross amount is preserved exactly. No delivery subtraction, on-road conversion or rounding has been applied."
+      ],
+      "publisher": "MINI Australia",
+      "validFrom": "2026-10-08",
+      "rankingEligible": false,
+      "conditionExplanation": "Manufacturer from-price includes dealer delivery but is not a full driveaway quote; its partially inclusive price basis remains unranked. Exact style/equipment revision within the API BASIC_LINE scope needs confirmation.",
+      "originalBasis": "includes GST and $2,500 dealer delivery; excludes unprovided registration/state charges"
+    },
+    {
+      "variantId": "mini_countryman_u25_bev__82ga_e_classic__prod_202607",
+      "value": 71490.0,
+      "sourceIds": [
+        "r10_bmwmini_mini_price_82ga"
+      ],
+      "sourceKey": "manufacturer_price_including_delivery_aud",
+      "sourcePointer": "data/bmw-mini-evidence-2026-10-10.json#/records/14/pricing/manufacturer_price_including_delivery_aud",
+      "date": "2026-10-10",
+      "rung": 3,
+      "basisTag": "Maker's from price incl. delivery",
+      "comparisonBasis": "",
+      "qualifications": [
+        "Published fromPrice.grossPrice for this Australian model/trim code; includes GST and A$2,500 dealer delivery, and excludes registration/state charges.",
+        "API effect date 2026-10-08 is not production date or MY. Exact style-coded candidate, but current production/option equivalence and unconditional MRLP remain unverified.",
+        "The observed gross amount is preserved exactly. No delivery subtraction, on-road conversion or rounding has been applied."
+      ],
+      "publisher": "MINI Australia",
+      "validFrom": "2026-10-08",
+      "rankingEligible": false,
+      "conditionExplanation": "Manufacturer from-price includes dealer delivery but is not a full driveaway quote; its partially inclusive price basis remains unranked.",
+      "originalBasis": "includes GST and $2,500 dealer delivery; excludes unprovided registration/state charges"
+    },
+    {
+      "variantId": "mini_countryman_u25_bev__82ga_e_favoured__prod_202607",
+      "value": 74490.0,
+      "sourceIds": [
+        "r10_bmwmini_mini_price_82ga_s0zm3"
+      ],
+      "sourceKey": "manufacturer_price_including_delivery_aud",
+      "sourcePointer": "data/bmw-mini-evidence-2026-10-10.json#/records/15/pricing/manufacturer_price_including_delivery_aud",
+      "date": "2026-10-10",
+      "rung": 3,
+      "basisTag": "Maker's from price incl. delivery",
+      "comparisonBasis": "",
+      "qualifications": [
+        "Published fromPrice.grossPrice for this Australian model/trim code; includes GST and A$2,500 dealer delivery, and excludes registration/state charges.",
+        "API effect date 2026-10-08 is not production date or MY. Exact style-coded candidate, but current production/option equivalence and unconditional MRLP remain unverified.",
+        "The observed gross amount is preserved exactly. No delivery subtraction, on-road conversion or rounding has been applied."
+      ],
+      "publisher": "MINI Australia",
+      "validFrom": "2026-10-08",
+      "rankingEligible": false,
+      "conditionExplanation": "Manufacturer from-price includes dealer delivery but is not a full driveaway quote; its partially inclusive price basis remains unranked.",
+      "originalBasis": "includes GST and $2,500 dealer delivery; excludes unprovided registration/state charges"
+    },
+    {
+      "variantId": "mini_countryman_u25_bev__12hp_se_all4_classic__prod_202607",
+      "value": 76490.0,
+      "sourceIds": [
+        "r10_bmwmini_mini_price_12hp"
+      ],
+      "sourceKey": "manufacturer_price_including_delivery_aud",
+      "sourcePointer": "data/bmw-mini-evidence-2026-10-10.json#/records/16/pricing/manufacturer_price_including_delivery_aud",
+      "date": "2026-10-10",
+      "rung": 3,
+      "basisTag": "Maker's from price incl. delivery",
+      "comparisonBasis": "",
+      "qualifications": [
+        "Published fromPrice.grossPrice for this Australian model/trim code; includes GST and A$2,500 dealer delivery, and excludes registration/state charges.",
+        "API effect date 2026-10-08 is not production date or MY. Exact style-coded candidate, but current production/option equivalence and unconditional MRLP remain unverified.",
+        "The observed gross amount is preserved exactly. No delivery subtraction, on-road conversion or rounding has been applied."
+      ],
+      "publisher": "MINI Australia",
+      "validFrom": "2026-10-08",
+      "rankingEligible": false,
+      "conditionExplanation": "Manufacturer from-price includes dealer delivery but is not a full driveaway quote; its partially inclusive price basis remains unranked.",
+      "originalBasis": "includes GST and $2,500 dealer delivery; excludes unprovided registration/state charges"
+    },
+    {
+      "variantId": "mini_countryman_u25_bev__12hp_se_all4_favoured__prod_202607",
+      "value": 79490.0,
+      "sourceIds": [
+        "r10_bmwmini_mini_price_12hp_s0zm3"
+      ],
+      "sourceKey": "manufacturer_price_including_delivery_aud",
+      "sourcePointer": "data/bmw-mini-evidence-2026-10-10.json#/records/17/pricing/manufacturer_price_including_delivery_aud",
+      "date": "2026-10-10",
+      "rung": 3,
+      "basisTag": "Maker's from price incl. delivery",
+      "comparisonBasis": "",
+      "qualifications": [
+        "Published fromPrice.grossPrice for this Australian model/trim code; includes GST and A$2,500 dealer delivery, and excludes registration/state charges.",
+        "API effect date 2026-10-08 is not production date or MY. Exact style-coded candidate, but current production/option equivalence and unconditional MRLP remain unverified.",
+        "The observed gross amount is preserved exactly. No delivery subtraction, on-road conversion or rounding has been applied."
+      ],
+      "publisher": "MINI Australia",
+      "validFrom": "2026-10-08",
+      "rankingEligible": false,
+      "conditionExplanation": "Manufacturer from-price includes dealer delivery but is not a full driveaway quote; its partially inclusive price basis remains unranked.",
+      "originalBasis": "includes GST and $2,500 dealer delivery; excludes unprovided registration/state charges"
+    },
+    {
+      "variantId": "mini_countryman_u25_bev__12hp_se_all4_jcw_sport__prod_202607",
+      "value": 82490.01,
+      "sourceIds": [
+        "r10_bmwmini_mini_price_12hp_s0zm4"
+      ],
+      "sourceKey": "manufacturer_price_including_delivery_aud",
+      "sourcePointer": "data/bmw-mini-evidence-2026-10-10.json#/records/18/pricing/manufacturer_price_including_delivery_aud",
+      "date": "2026-10-10",
+      "rung": 3,
+      "basisTag": "Maker's from price incl. delivery",
+      "comparisonBasis": "",
+      "qualifications": [
+        "Published fromPrice.grossPrice for this Australian model/trim code; includes GST and A$2,500 dealer delivery, and excludes registration/state charges.",
+        "API effect date 2026-10-08 is not production date or MY. Exact style-coded candidate, but current production/option equivalence and unconditional MRLP remain unverified.",
+        "The observed gross amount is preserved exactly. No delivery subtraction, on-road conversion or rounding has been applied."
+      ],
+      "publisher": "MINI Australia",
+      "validFrom": "2026-10-08",
+      "rankingEligible": false,
+      "conditionExplanation": "Manufacturer from-price includes dealer delivery but is not a full driveaway quote; its partially inclusive price basis remains unranked.",
+      "originalBasis": "includes GST and $2,500 dealer delivery; excludes unprovided registration/state charges"
+    },
+    {
+      "variantId": "volvo_ex30_my27_plus_p5_long_range_electric__20261010",
+      "value": 49990,
+      "sourceIds": [
+        "r10_vp_volvo_ex30_build"
+      ],
+      "sourceKey": "observed_manufacturer_base_display",
+      "sourcePointer": "data/volvo-polestar-evidence-2026-10-10.json#/records/0/pricing/observed_manufacturer_base_display",
+      "date": "2026-10-10",
+      "rung": 3,
+      "basisTag": "Maker's configurator price",
+      "comparisonBasis": "",
+      "qualifications": [
+        "Do not sum relative grade deltas to create an unobserved price; LCT and destination-specific on-road charges unresolved",
+        "Unlocalized exact selected-grade/edition display, labelled MLP including GST; LCT and on-road treatment are not fully established. This is not a localized driveaway quote."
+      ],
+      "publisher": "Volvo Cars Australia",
+      "rankingEligible": false,
+      "conditionExplanation": "Unlocalized manufacturer display; tax/on-road interpretation remains unresolved, so the price is shown but unranked.",
+      "originalBasis": "unlocalized_display; EX30 Cross Country is edition from price; Do not sum relative grade deltas to create an unobserved price; LCT and destination-specific on-road charges unresolved"
+    },
+    {
+      "variantId": "volvo_ex30_my27_cross_country_p8_awd_electric__20261010",
+      "value": 62990,
+      "sourceIds": [
+        "r10_vp_volvo_ex30_build"
+      ],
+      "sourceKey": "observed_manufacturer_base_display",
+      "sourcePointer": "data/volvo-polestar-evidence-2026-10-10.json#/records/2/pricing/observed_manufacturer_base_display",
+      "date": "2026-10-10",
+      "rung": 3,
+      "basisTag": "Maker's configurator price",
+      "comparisonBasis": "",
+      "qualifications": [
+        "Do not sum relative grade deltas to create an unobserved price; LCT and destination-specific on-road charges unresolved",
+        "Unlocalized exact selected-grade/edition display, labelled MLP including GST; LCT and on-road treatment are not fully established. This is not a localized driveaway quote."
+      ],
+      "publisher": "Volvo Cars Australia",
+      "rankingEligible": false,
+      "conditionExplanation": "Unlocalized manufacturer display; tax/on-road interpretation remains unresolved, so the price is shown but unranked.",
+      "originalBasis": "unlocalized_display; EX30 Cross Country is edition from price; Do not sum relative grade deltas to create an unobserved price; LCT and destination-specific on-road charges unresolved"
+    },
+    {
+      "variantId": "volvo_ex40_my27_ultra_single_motor_extended_range__20261010",
+      "value": 69990,
+      "sourceIds": [
+        "r10_vp_volvo_ex40_build"
+      ],
+      "sourceKey": "observed_manufacturer_base_display",
+      "sourcePointer": "data/volvo-polestar-evidence-2026-10-10.json#/records/3/pricing/observed_manufacturer_base_display",
+      "date": "2026-10-10",
+      "rung": 3,
+      "basisTag": "Maker's configurator price",
+      "comparisonBasis": "",
+      "qualifications": [
+        "Do not sum relative grade deltas to create an unobserved price; LCT and destination-specific on-road charges unresolved",
+        "Unlocalized exact selected-grade/edition display, labelled MLP including GST; LCT and on-road treatment are not fully established. This is not a localized driveaway quote."
+      ],
+      "publisher": "Volvo Cars Australia",
+      "rankingEligible": false,
+      "conditionExplanation": "Unlocalized manufacturer display; tax/on-road interpretation remains unresolved, so the price is shown but unranked.",
+      "originalBasis": "unlocalized_display; EX30 Cross Country is edition from price; Do not sum relative grade deltas to create an unobserved price; LCT and destination-specific on-road charges unresolved"
+    },
+    {
+      "variantId": "volvo_ex90_my27_plus_single_motor__20261010",
+      "value": 103453,
+      "sourceIds": [
+        "r10_vp_volvo_ex90_build"
+      ],
+      "sourceKey": "observed_manufacturer_base_display",
+      "sourcePointer": "data/volvo-polestar-evidence-2026-10-10.json#/records/5/pricing/observed_manufacturer_base_display",
+      "date": "2026-10-10",
+      "rung": 3,
+      "basisTag": "Maker's configurator price",
+      "comparisonBasis": "",
+      "qualifications": [
+        "Do not sum relative grade deltas to create an unobserved price; LCT and destination-specific on-road charges unresolved",
+        "Unlocalized exact selected-grade/edition display, labelled MLP including GST; LCT and on-road treatment are not fully established. This is not a localized driveaway quote."
+      ],
+      "publisher": "Volvo Cars Australia",
+      "rankingEligible": false,
+      "conditionExplanation": "Unlocalized manufacturer display; tax/on-road interpretation remains unresolved, so the price is shown but unranked.",
+      "originalBasis": "unlocalized_display; EX30 Cross Country is edition from price; Do not sum relative grade deltas to create an unobserved price; LCT and destination-specific on-road charges unresolved"
+    },
+    {
+      "variantId": "volvo_es90_my27_plus_single_motor_extended_range__20261010",
+      "value": 88880,
+      "sourceIds": [
+        "r10_vp_volvo_es90_build"
+      ],
+      "sourceKey": "observed_manufacturer_base_display",
+      "sourcePointer": "data/volvo-polestar-evidence-2026-10-10.json#/records/7/pricing/observed_manufacturer_base_display",
+      "date": "2026-10-10",
+      "rung": 3,
+      "basisTag": "Maker's configurator price",
+      "comparisonBasis": "",
+      "qualifications": [
+        "Do not sum relative grade deltas to create an unobserved price; LCT and destination-specific on-road charges unresolved",
+        "Unlocalized exact selected-grade/edition display, labelled MLP including GST; LCT and on-road treatment are not fully established. This is not a localized driveaway quote."
+      ],
+      "publisher": "Volvo Cars Australia",
+      "rankingEligible": false,
+      "conditionExplanation": "Unlocalized manufacturer display; tax/on-road interpretation remains unresolved, so the price is shown but unranked.",
+      "originalBasis": "unlocalized_display; EX30 Cross Country is edition from price; Do not sum relative grade deltas to create an unobserved price; LCT and destination-specific on-road charges unresolved"
+    },
+    {
+      "variantId": "volvo_ex30_my27_ultra_p5_long_range_electric__20261010",
+      "value": 63990,
+      "sourceIds": [
+        "r10_vp_volvo_berwick_13628156"
+      ],
+      "sourceKey": "advertised_price_aud",
+      "sourcePointer": "data/volvo-polestar-evidence-2026-10-10.json#/dealer_evidence/1/advertised_price_aud",
+      "date": "2026-10-10",
+      "rung": 6,
+      "basisTag": "Dealer ad · VIC",
+      "comparisonBasis": "Driveaway",
+      "qualifications": [
+        "Exact advertised MY27 new unit, stock 13628156; VIN YV12ZEL96VS196683; Vapour Grey.",
+        "Advertised unit and availability only; no dealer contact, reservation or confirmation. Dealer disclaimer says price can vary by state and exact final price requires confirmation.",
+        "No offer expiry was stated in the held evidence."
+      ],
+      "state": "VIC",
+      "publisher": "Volvo Cars Berwick",
+      "rankingEligible": false,
+      "conditionExplanation": "State-specific price for the named dealer-advertised new unit; dealer-reported and unranked.",
+      "originalBasis": "driveaway; VIC; Advertised unit and availability only; no dealer contact, reservation or confirmation. Dealer disclaimer says price can vary by state and exact final price requires confirmation."
+    },
+    {
+      "variantId": "volvo_ex40_my27_ultra_twin_motor__20261010",
+      "value": 82320,
+      "sourceIds": [
+        "r10_vp_volvo_sy_ex40_twin_web"
+      ],
+      "sourceKey": "advertised_price_aud",
+      "sourcePointer": "data/volvo-polestar-evidence-2026-10-10.json#/dealer_evidence/4/advertised_price_aud",
+      "date": "2026-10-10",
+      "rung": 6,
+      "basisTag": "Dealer ad · VIC",
+      "comparisonBasis": "Driveaway",
+      "qualifications": [
+        "Exact advertised MY27 new unit, stock 13629327; VIN LYVXZERR7VL886423; Crystal White.",
+        "Advertised unit and availability only; no dealer contact, reservation or confirmation. Dealer disclaimer says price can vary by state and exact final price requires confirmation.",
+        "No offer expiry was stated in the held evidence."
+      ],
+      "state": "VIC",
+      "publisher": "Volvo Cars South Yarra",
+      "rankingEligible": false,
+      "conditionExplanation": "State-specific price for the named dealer-advertised new unit; dealer-reported and unranked.",
+      "originalBasis": "driveaway; VIC; Advertised unit and availability only; no dealer contact, reservation or confirmation. Dealer disclaimer says price can vary by state and exact final price requires confirmation."
+    },
+    {
+      "variantId": "polestar_2_my27_long_range_single_motor__20261010",
+      "value": 73900,
+      "sourceIds": [
+        "r10_vp_polestar_home"
+      ],
+      "sourceKey": "source",
+      "sourcePointer": "data/volvo-polestar-evidence-2026-10-10.json#/campaigns/1/source",
+      "date": "2026-10-10",
+      "rung": 4,
+      "basisTag": "Maker driveaway · WA · Plus pack",
+      "comparisonBasis": "Driveaway",
+      "qualifications": [
+        "Eligible preconfigured MY26/MY27; published quote specifically MY27 Rear motor + Plus + premium paint in WA",
+        "Includes government charges, stamp duty, 12 months registration, CTP and delivery",
+        "Other states and configurations vary",
+        "Government, rental, fleet and novated-lease exclusions apply",
+        "Not combined with other offers",
+        "Order between 2026-10-01 and 2026-12-31; take delivery by 2027-01-31.",
+        "MY27 Rear motor is documented in the held source-conflict resolution as an alias of Long range Single motor. This WA example includes Plus pack and premium paint, rather than the bare version."
+      ],
+      "state": "WA",
+      "validFrom": "2026-10-01",
+      "validUntil": "2026-12-31",
+      "publisher": "Polestar Australia",
+      "rankingEligible": true,
+      "conditionExplanation": "WA registered MY27 Long range Single motor with Plus pack and premium paint; campaign dates, eligible vehicles and buyer exclusions apply.",
+      "originalBasis": "driveaway_example_not_MLP; Eligible preconfigured MY26/MY27; published quote specifically MY27 Rear motor + Plus + premium paint in WA"
+    }
+  ],
+  "unresolved": [
+    {
+      "variantId": "volvo_ex90_my27_ultra_twin_motor_performance__20261010",
+      "reason": "Exact selected-grade total not recovered; held configurator shows relative option deltas only, which are not summed into an invented price. No accepted exact current dealer price is held."
+    },
+    {
+      "variantId": "volvo_es90_my27_ultra_single_motor_extended_range__20261010",
+      "reason": "Exact selected-grade total not recovered; held configurator shows relative option deltas only, which are not summed into an invented price. No accepted exact current dealer price is held."
+    },
+    {
+      "variantId": "polestar_2_my27_long_range_dual_motor__20261010",
+      "reason": "Exact MY27 configurator price maps are empty in the captured data, with no exact new-unit dealer price verified; finance percentages, upgrade contributions and the differently configured Polestar 2 campaign are not vehicle prices for this version."
+    },
+    {
+      "variantId": "polestar_2_my27_long_range_dual_motor_with_performance_pack__20261010",
+      "reason": "Exact MY27 configurator price maps are empty in the captured data, with no exact new-unit dealer price verified; finance percentages, upgrade contributions and the differently configured Polestar 2 campaign are not vehicle prices for this version."
+    },
+    {
+      "variantId": "polestar_3_my27_rear_motor__20261010",
+      "reason": "Exact MY27 configurator price maps are empty in the captured data, with no exact new-unit dealer price verified; finance percentages, upgrade contributions and the differently configured Polestar 2 campaign are not vehicle prices for this version."
+    },
+    {
+      "variantId": "polestar_3_my27_dual_motor__20261010",
+      "reason": "Exact MY27 configurator price maps are empty in the captured data, with no exact new-unit dealer price verified; finance percentages, upgrade contributions and the differently configured Polestar 2 campaign are not vehicle prices for this version."
+    },
+    {
+      "variantId": "polestar_3_my27_performance__20261010",
+      "reason": "Exact MY27 configurator price maps are empty in the captured data, with no exact new-unit dealer price verified; finance percentages, upgrade contributions and the differently configured Polestar 2 campaign are not vehicle prices for this version."
+    },
+    {
+      "variantId": "polestar_4_coupe_my27_rear_motor__20261010",
+      "reason": "Exact MY27 configurator price maps are empty in the captured data, with no exact new-unit dealer price verified; finance percentages, upgrade contributions and the differently configured Polestar 2 campaign are not vehicle prices for this version."
+    },
+    {
+      "variantId": "polestar_4_coupe_my27_dual_motor__20261010",
+      "reason": "Exact MY27 configurator price maps are empty in the captured data, with no exact new-unit dealer price verified; finance percentages, upgrade contributions and the differently configured Polestar 2 campaign are not vehicle prices for this version."
+    },
+    {
+      "variantId": "polestar_4_coupe_my27_dual_motor_with_performance_pack__20261010",
+      "reason": "Exact MY27 configurator price maps are empty in the captured data, with no exact new-unit dealer price verified; finance percentages, upgrade contributions and the differently configured Polestar 2 campaign are not vehicle prices for this version."
+    },
+    {
+      "variantId": "polestar_4_suv_my27_rear_motor__20261010",
+      "reason": "Exact MY27 configurator price maps are empty in the captured data, with no exact new-unit dealer price verified; finance percentages, upgrade contributions and the differently configured Polestar 2 campaign are not vehicle prices for this version."
+    },
+    {
+      "variantId": "polestar_4_suv_my27_dual_motor__20261010",
+      "reason": "Exact MY27 configurator price maps are empty in the captured data, with no exact new-unit dealer price verified; finance percentages, upgrade contributions and the differently configured Polestar 2 campaign are not vehicle prices for this version."
+    },
+    {
+      "variantId": "polestar_4_suv_my27_dual_motor_with_performance_pack__20261010",
+      "reason": "Exact MY27 configurator price maps are empty in the captured data, with no exact new-unit dealer price verified; finance percentages, upgrade contributions and the differently configured Polestar 2 campaign are not vehicle prices for this version."
+    },
+    {
+      "variantId": "bmw_ix3_na5__12hr_40_m_sport_package__20261010",
+      "reason": "No numeric exact current manufacturer price or qualifying current new-unit dealer price in the held evidence; brochure omits base pricing and captured configurator is a client-rendered shell."
+    },
+    {
+      "variantId": "bmw_i5_sedan_current__42hg_m60_xdrive__prod_202607",
+      "reason": "No numeric exact current manufacturer price or qualifying current new-unit dealer price in the held evidence; brochure omits base pricing and captured configurator is a client-rendered shell."
+    },
+    {
+      "variantId": "mini_cooper_j01__22gc_se_paul_smith_edition__prod_202607",
+      "reason": "Paul Smith edition trim request returns no fromPrice and no exact edition new dealer price is verified; standard Cooper SE pricing is not applied to this edition."
+    },
+    {
+      "variantId": "mercedes_benz_eqa_current__eqa_250_plus__20261010",
+      "reason": "No exact current-grade numerical price is held; manufacturer stock offers have null unlocalized list/discount prices and checked dealer leads are used, demonstrator, sold or not matched to this exact current version."
+    },
+    {
+      "variantId": "mercedes_benz_cla_electric_current__cla_200__20261010",
+      "reason": "No exact current-grade numerical price is held; manufacturer stock offers have null unlocalized list/discount prices and checked dealer leads are used, demonstrator, sold or not matched to this exact current version."
+    },
+    {
+      "variantId": "mercedes_benz_cla_electric_current__cla_350_4matic__20261010",
+      "reason": "No exact current-grade numerical price is held; manufacturer stock offers have null unlocalized list/discount prices and checked dealer leads are used, demonstrator, sold or not matched to this exact current version."
+    },
+    {
+      "variantId": "mercedes_benz_glb_electric_current__glb_250_plus__20261010",
+      "reason": "No exact current-grade numerical price is held; manufacturer stock offers have null unlocalized list/discount prices and checked dealer leads are used, demonstrator, sold or not matched to this exact current version."
+    },
+    {
+      "variantId": "mercedes_benz_glb_electric_current__glb_350_4matic__20261010",
+      "reason": "No exact current-grade numerical price is held; manufacturer stock offers have null unlocalized list/discount prices and checked dealer leads are used, demonstrator, sold or not matched to this exact current version."
+    },
+    {
+      "variantId": "mercedes_benz_eqs_current__eqs_400__20261010",
+      "reason": "No exact current-grade numerical price is held; manufacturer stock offers have null unlocalized list/discount prices and checked dealer leads are used, demonstrator, sold or not matched to this exact current version."
+    },
+    {
+      "variantId": "mercedes_benz_g_class_electric_current__g_580_with_eq_technology__20261010",
+      "reason": "No exact current-grade numerical price is held; manufacturer stock offers have null unlocalized list/discount prices and checked dealer leads are used, demonstrator, sold or not matched to this exact current version."
+    },
+    {
+      "variantId": "audi_q6_suv_my26__gfba1a_q6_e_tron__prod_20260226",
+      "reason": "No exact current version numerical price is held. The A$95,900 campaign names MY26 Q6 SUV e-tron sport with metallic paint, excludes WA and has conflicting scope/dates; it is not applied to ordinary Q6/SQ6 SUV or Sportback versions."
+    },
+    {
+      "variantId": "audi_q6_suv_my26__gfbs58_sq6_e_tron__prod_20260226",
+      "reason": "No exact current version numerical price is held. The A$95,900 campaign names MY26 Q6 SUV e-tron sport with metallic paint, excludes WA and has conflicting scope/dates; it is not applied to ordinary Q6/SQ6 SUV or Sportback versions."
+    },
+    {
+      "variantId": "audi_q6_sportback_my26__gfna1a_q6_sportback_e_tron__prod_20260226",
+      "reason": "No exact current version numerical price is held. The A$95,900 campaign names MY26 Q6 SUV e-tron sport with metallic paint, excludes WA and has conflicting scope/dates; it is not applied to ordinary Q6/SQ6 SUV or Sportback versions."
+    },
+    {
+      "variantId": "audi_q6_sportback_my26__gfns58_sq6_sportback_e_tron__prod_20260226",
+      "reason": "No exact current version numerical price is held. The A$95,900 campaign names MY26 Q6 SUV e-tron sport with metallic paint, excludes WA and has conflicting scope/dates; it is not applied to ordinary Q6/SQ6 SUV or Sportback versions."
+    },
+    {
+      "variantId": "audi_etron_gt_my26__s_e_tron_gt__prod_20250616",
+      "reason": "Only the 4 July 2025 launch MLP is held; the audit explicitly marks current price unverified. It is not relabelled as a current checked manufacturer price."
+    },
+    {
+      "variantId": "audi_etron_gt_my26__rs_e_tron_gt__prod_20250616",
+      "reason": "Only the 4 July 2025 launch MLP is held; the audit explicitly marks current price unverified. It is not relabelled as a current checked manufacturer price."
+    },
+    {
+      "variantId": "audi_etron_gt_my26__rs_e_tron_gt_performance__prod_20250616",
+      "reason": "Only the 4 July 2025 launch MLP is held; the audit explicitly marks current price unverified. It is not relabelled as a current checked manufacturer price."
+    },
+    {
+      "variantId": "porsche_taycan_sedan_current__y1aai1_taycan__my2027",
+      "reason": "Current MY2027 configurator A$0/A$440 figures are equipment-only placeholders, not vehicle prices. Any held launch RRP has explicitly unverified MY2027 applicability/currentness; checked exact dealer pages are pre-owned or demonstrator."
+    },
+    {
+      "variantId": "porsche_taycan_sedan_current__y1agi1_taycan_black_edition__my2027",
+      "reason": "Current MY2027 configurator A$0/A$440 figures are equipment-only placeholders, not vehicle prices. Any held launch RRP has explicitly unverified MY2027 applicability/currentness; checked exact dealer pages are pre-owned or demonstrator."
+    },
+    {
+      "variantId": "porsche_taycan_sedan_current__y1abn1_taycan_4__my2027",
+      "reason": "Current MY2027 configurator A$0/A$440 figures are equipment-only placeholders, not vehicle prices. Any held launch RRP has explicitly unverified MY2027 applicability/currentness; checked exact dealer pages are pre-owned or demonstrator."
+    },
+    {
+      "variantId": "porsche_taycan_sedan_current__y1ahn1_taycan_4_black_edition__my2027",
+      "reason": "Current MY2027 configurator A$0/A$440 figures are equipment-only placeholders, not vehicle prices. Any held launch RRP has explicitly unverified MY2027 applicability/currentness; checked exact dealer pages are pre-owned or demonstrator."
+    },
+    {
+      "variantId": "porsche_taycan_sedan_current__y1adj1_taycan_4s__my2027",
+      "reason": "Current MY2027 configurator A$0/A$440 figures are equipment-only placeholders, not vehicle prices. Any held launch RRP has explicitly unverified MY2027 applicability/currentness; checked exact dealer pages are pre-owned or demonstrator."
+    },
+    {
+      "variantId": "porsche_taycan_sedan_current__y1ajj1_taycan_4s_black_edition__my2027",
+      "reason": "Current MY2027 configurator A$0/A$440 figures are equipment-only placeholders, not vehicle prices. Any held launch RRP has explicitly unverified MY2027 applicability/currentness; checked exact dealer pages are pre-owned or demonstrator."
+    },
+    {
+      "variantId": "porsche_taycan_sedan_current__y1adk1_taycan_gts__my2027",
+      "reason": "Current MY2027 configurator A$0/A$440 figures are equipment-only placeholders, not vehicle prices. Any held launch RRP has explicitly unverified MY2027 applicability/currentness; checked exact dealer pages are pre-owned or demonstrator."
+    },
+    {
+      "variantId": "porsche_taycan_sedan_current__y1afl1_taycan_turbo__my2027",
+      "reason": "Current MY2027 configurator A$0/A$440 figures are equipment-only placeholders, not vehicle prices. Any held launch RRP has explicitly unverified MY2027 applicability/currentness; checked exact dealer pages are pre-owned or demonstrator."
+    },
+    {
+      "variantId": "porsche_taycan_sedan_current__y1afm1_taycan_turbo_s__my2027",
+      "reason": "Current MY2027 configurator A$0/A$440 figures are equipment-only placeholders, not vehicle prices. Any held launch RRP has explicitly unverified MY2027 applicability/currentness; checked exact dealer pages are pre-owned or demonstrator."
+    },
+    {
+      "variantId": "porsche_taycan_sedan_current__y1aft1_taycan_turbo_gt__my2027",
+      "reason": "Current MY2027 configurator A$0/A$440 figures are equipment-only placeholders, not vehicle prices. Any held launch RRP has explicitly unverified MY2027 applicability/currentness; checked exact dealer pages are pre-owned or demonstrator."
+    },
+    {
+      "variantId": "porsche_taycan_sedan_current__y1afp1_taycan_turbo_gt_with_weissach_package__my2027",
+      "reason": "Current MY2027 configurator A$0/A$440 figures are equipment-only placeholders, not vehicle prices. Any held launch RRP has explicitly unverified MY2027 applicability/currentness; checked exact dealer pages are pre-owned or demonstrator."
+    },
+    {
+      "variantId": "porsche_taycan_cross_turismo_current__y1bbn1_taycan_4_cross_turismo__my2027",
+      "reason": "Current MY2027 configurator A$0/A$440 figures are equipment-only placeholders, not vehicle prices. Any held launch RRP has explicitly unverified MY2027 applicability/currentness; checked exact dealer pages are pre-owned or demonstrator."
+    },
+    {
+      "variantId": "porsche_taycan_cross_turismo_current__y1bdj1_taycan_4s_cross_turismo__my2027",
+      "reason": "Current MY2027 configurator A$0/A$440 figures are equipment-only placeholders, not vehicle prices. Any held launch RRP has explicitly unverified MY2027 applicability/currentness; checked exact dealer pages are pre-owned or demonstrator."
+    },
+    {
+      "variantId": "porsche_taycan_cross_turismo_current__y1bfl1_taycan_turbo_cross_turismo__my2027",
+      "reason": "Current MY2027 configurator A$0/A$440 figures are equipment-only placeholders, not vehicle prices. Any held launch RRP has explicitly unverified MY2027 applicability/currentness; checked exact dealer pages are pre-owned or demonstrator."
+    },
+    {
+      "variantId": "porsche_macan_electric_current__xabaa1_macan_electric__my2027",
+      "reason": "Current MY2027 configurator A$0/A$440 figures are equipment-only placeholders, not vehicle prices. Any held launch RRP has explicitly unverified MY2027 applicability/currentness; checked exact dealer pages are pre-owned or demonstrator."
+    },
+    {
+      "variantId": "porsche_macan_electric_current__xabbb1_macan_4_electric__my2027",
+      "reason": "Current MY2027 configurator A$0/A$440 figures are equipment-only placeholders, not vehicle prices. Any held launch RRP has explicitly unverified MY2027 applicability/currentness; checked exact dealer pages are pre-owned or demonstrator."
+    },
+    {
+      "variantId": "porsche_macan_electric_current__xabdc1_macan_4s_electric__my2027",
+      "reason": "Current MY2027 configurator A$0/A$440 figures are equipment-only placeholders, not vehicle prices. Any held launch RRP has explicitly unverified MY2027 applicability/currentness; checked exact dealer pages are pre-owned or demonstrator."
+    },
+    {
+      "variantId": "porsche_macan_electric_current__xabde1_macan_gts__my2027",
+      "reason": "Current MY2027 configurator A$0/A$440 figures are equipment-only placeholders, not vehicle prices. Any held launch RRP has explicitly unverified MY2027 applicability/currentness; checked exact dealer pages are pre-owned or demonstrator."
+    },
+    {
+      "variantId": "porsche_macan_electric_current__xabfd1_macan_turbo_electric__my2027",
+      "reason": "Current MY2027 configurator A$0/A$440 figures are equipment-only placeholders, not vehicle prices. Any held launch RRP has explicitly unverified MY2027 applicability/currentness; checked exact dealer pages are pre-owned or demonstrator."
+    },
+    {
+      "variantId": "porsche_cayenne_electric_current__x1aaa1_cayenne_electric__my2027",
+      "reason": "Current MY2027 configurator A$0/A$440 figures are equipment-only placeholders, not vehicle prices. Any held launch RRP has explicitly unverified MY2027 applicability/currentness; checked exact dealer pages are pre-owned or demonstrator."
+    },
+    {
+      "variantId": "porsche_cayenne_electric_current__x1abb1_cayenne_s_electric__my2027",
+      "reason": "Current MY2027 configurator A$0/A$440 figures are equipment-only placeholders, not vehicle prices. Any held launch RRP has explicitly unverified MY2027 applicability/currentness; checked exact dealer pages are pre-owned or demonstrator."
+    },
+    {
+      "variantId": "porsche_cayenne_electric_current__x1acd1_cayenne_turbo_electric__my2027",
+      "reason": "Current MY2027 configurator A$0/A$440 figures are equipment-only placeholders, not vehicle prices. Any held launch RRP has explicitly unverified MY2027 applicability/currentness; checked exact dealer pages are pre-owned or demonstrator."
+    },
+    {
+      "variantId": "porsche_cayenne_coupe_electric_current__x1baa1_cayenne_coupe_electric__my2027",
+      "reason": "Current MY2027 configurator A$0/A$440 figures are equipment-only placeholders, not vehicle prices. Any held launch RRP has explicitly unverified MY2027 applicability/currentness; checked exact dealer pages are pre-owned or demonstrator."
+    },
+    {
+      "variantId": "porsche_cayenne_coupe_electric_current__x1bbb1_cayenne_s_coupe_electric__my2027",
+      "reason": "Current MY2027 configurator A$0/A$440 figures are equipment-only placeholders, not vehicle prices. Any held launch RRP has explicitly unverified MY2027 applicability/currentness; checked exact dealer pages are pre-owned or demonstrator."
+    },
+    {
+      "variantId": "porsche_cayenne_coupe_electric_current__x1bcd1_cayenne_turbo_coupe_electric__my2027",
+      "reason": "Current MY2027 configurator A$0/A$440 figures are equipment-only placeholders, not vehicle prices. Any held launch RRP has explicitly unverified MY2027 applicability/currentness; checked exact dealer pages are pre-owned or demonstrator."
+    }
+  ],
+  "sources": [],
+  "summary": {
+    "versionsReviewed": 78,
+    "candidates": 23,
+    "unresolved": 55,
+    "candidatesByBrand": {
+      "BMW": 6,
+      "MINI": 9,
+      "Volvo": 7,
+      "Polestar": 1
+    },
+    "candidatesByRung": {
+      "6": 8,
+      "3": 14,
+      "4": 1
+    },
+    "sourceRecordsAdded": 0
+  }
+}
