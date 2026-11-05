@@ -61,7 +61,7 @@ test("Urban cargo, charging and unknown manufacturer towing cannot inherit MSP d
 });
 test("older availability leaves fresh current-sale range ranked but never revives withdrawn or outgoing stock", () => {
   const current = currentCatalogue().find((car) => car.id === cars[0].id)!;
-  const policy = { asOf: "2026-10-14" };
+  const policy = { asOf: "2026-11-05" };
   assert.equal(current.buyerGradesRequired, true);
   const stale = {
     ...current,
