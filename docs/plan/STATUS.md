@@ -11,6 +11,7 @@ Update this file whenever a workstream starts, pauses or finishes. Newest entry 
 | D1.1 | Beta shows all 56 brands with grade styling | Yes, with coverage footer | | |
 | D1.2 | Replace live site after phone test | Owner decides after test | | |
 | D7.1 | Correction contact address | Link hidden until supplied | | |
+| D0.3 | `tests/selling-points.test.ts` "all eligible buyer reasons at the policy date have matching source dependencies": for 3 Cadillac versions (`cadillac_lyriq_my27_sport_awd__20261010`, `cadillac_lyriq_my27_v_awd__20261010`, `cadillac_vistiq_my27_platinum_awd_6_seat__20261010`) the summary cites `r10_kc_cadillac_offers` and `r10_kc_cadillac_optiq_offer_image` (from `availabilityGuardSourceIds` in `data/buyer-selling-points-2026-10-10.json`), which the source-level car does not carry in its fact, feature or availability sources, so the test's pack lacks them. Both sources exist in the source registry and production `pack()` adds summary source IDs, so no shipped page is missing a citation. Options: (a) trim those Cadillac guard lists to sources the cars use; (b) add the offers sources to the cars' evidence; (c) change the test oracle to build the pack with the summary applied. Needs a data-ownership call, not made. Test left failing, unmodified. | Stop on this one (W0.8 instruction) | | |
 
 ## Workstreams
 
