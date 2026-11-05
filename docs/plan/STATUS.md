@@ -17,7 +17,7 @@ Update this file whenever a workstream starts, pauses or finishes. Newest entry 
 | WS | State | Branch | Last commit | Worker | Updated |
 |---|---|---|---|---|---|
 | WS0 Consolidate Roadmark | in progress | claude/ws0-roadmark-source-938862 | | Sonnet worker (Claude Code) | 2026-11-05 |
-| WS1 Public beta (M2) | paused (usage limit; acceptance NOT run) | claude/ws1-public-beta-3d498a (stacks on claude/ws0-roadmark-source-938862) | | Sonnet worker (Claude Code) | 2026-11-05 |
+| WS1 Public beta (M2) | review (acceptance run; not all passing) | claude/ws1-public-beta-3d498a (stacks on claude/ws0-roadmark-source-938862) | | Sonnet worker (Claude Code) | 2026-11-05 |
 | WS2 Refresh loop + changes page | not started | | | | |
 | WS3 Answer pages + any-pair | not started | | | | |
 | WS4 Money thresholds | not started | | | | |
@@ -74,15 +74,39 @@ Lexus33 delta not recovered; Lexus to be re-researched as a normal packet in WS2
 
 Branch: `claude/ws1-public-beta-3d498a`, cut from the in-progress WS0 branch `claude/ws0-roadmark-source-938862`; must be merged after the WS0 PR. Owner decision D1.1 default applied (all 56 brands, grade styling, coverage footer). D1.2 is the owner's after a phone test; the live site is not touched. The 8 inherited test failures (W0.8: `m1-evidence-grading`, `mercedes-passenger-catalogue`, `package-source`, `selling-points`, `scene-dynamic-geometry`) are WS0's and are not touched here.
 
-**Paused 2026-11-05 (worker usage limit). WS1 is NOT done; no acceptance line has been verified.**
+**Resumed 2026-11-05. WS1 acceptance run; NOT all passing. State: "review" (do not merge; owner phone test pending).**
 
-Done, one commit each, with behavioural tests: W1.2 grade component (`graded-figure.tsx`), W1.1+W1.4 card and Tier 1 on-sale default, W1.3 top bar, W1.5 home 9,233 px at 375 wide (dev server; baseline was 189,308), W1.6 plain-words check (`pnpm check:plain-words`, wired into `pnpm build`), W1.9 part (noindex flag, `docs/PHONE_TEST_SCRIPT.md`, e2e spec written), W1.7 body-type profiles (`docs/PROFILES_GAPS.md`: 153 Tier 1 families, 131 drawn, 5 partial, 17 class silhouette only).
-Run so far: `pnpm validate` PASS (433/171/194/69/29,877), `pnpm typecheck` and `pnpm lint` clean (Mac, 16 CPU, 48 GB RAM, Node v24.22.0, pnpm 11.19.0). Targeted tests for touched areas pass.
+Environment: Mac, 16 CPU, 48 GB RAM, Node v24.22.0, pnpm 11.19.0, `NODE_OPTIONS=--max-old-space-size=6144`.
 
-NOT run: full `pnpm test` (rule 5), `pnpm build`, `pnpm test:e2e` (spec written, never executed), Lighthouse, portable size, 375px screenshots (W1.8), preview deploy. Gap numbers (Not published counts, Lighthouse) not measured.
-Known risk: home page carries ~11 MB of embedded data (6.3 MB discovery cars, 5 MB Model Y packs, 1.5 MB sources), so Lighthouse performance >= 85 is unlikely until that is slimmed.
-Test edits to disclose: existing Discovery tests updated for the new card (placeholder text, one-line state, source-pinning); `avatar-dimension-projection` saving threshold lowered 350 kB to 100 kB because more cars now keep dimensions.
-Decisions needed: none yet beyond D1.1 default (applied) and D1.2.
+Rule 5 lines
+- `pnpm validate`: PASS (433 variants / 171 families / 194 generations / 69 criteria / 29,877 evidence rows).
+- `pnpm typecheck`: PASS. `pnpm lint`: PASS (no output).
+- `pnpm test` (full, final code): `ℹ tests 1337 / pass 1328 / fail 8 / skipped 1`, 1,281 s. All 8 failures are the WS0-inherited W0.8 set (Mercedes x4, scene-dynamic-geometry, selling-points, m1-evidence-grading, package-source). **No new unit failures.** (An earlier run had 3 new failures from my card change; fixed at the cause: hook-order index, 'Keep in mind'/'Stock not verified' wording, and a bare targeted range on the Transit City card, which now reads "Targeted/estimated WLTP".)
+- `pnpm build`: `next build` PASS, 479/479 pages in 73.4 min; `check:plain-words` PASS on the required pages (452 pages scanned); `build:portable` PASS but file is 50.66 MB (see below). I ran the last two steps separately after tightening the plain-words check, because the first run failed it on 42 detail pages (see gaps).
+- `pnpm test:e2e` (all specs, chromium+webkit+firefox, local `next start`): 30 passed / 88 failed / 2 skipped. 40 of the failures are Firefox `browserType.launch` (browser cannot launch here: environment). The rest are NOT triaged to baseline (no baseline e2e run exists; a baseline needs another 75-min build). Causes seen: (a) citable.spec needs a public build (`NEXT_PUBLIC_SITE_URL`), mine was local: environment; (b) specs written for the old home page (closed comparison, old `.discovery-car`, 'Checked on' wording): I updated freshness, fleet, journeys and scene-loading specs, then reran chromium+webkit: 24 passed / 30 failed. Still failing after update: the same specs plus `public-beta` first-visitor on WebKit (88 s) and, flakily, on Chromium. These need follow-up; I did not weaken any assertion.
+
+Acceptance list (plan WS1)
+| Line | Result | Evidence |
+|---|---|---|
+| Playwright "first-time phone visitor" < 60 s, Chromium and WebKit | **FAIL (WebKit), flaky (Chromium)** | Chromium 25 s once, later failed to reach /compare under load; WebKit 88 s of scripted interaction. Cause: ~12 MB of embedded page data (below) makes hydration slow. |
+| Homepage scrollHeight <= 12,000 at 375 | **PASS** | 9,233 px (dev server, measured in browser); e2e check `homepage is at most 12,000 px tall` passes on Chromium and WebKit on the production build. Baseline was 189,308. |
+| Lighthouse mobile perf >= 85, a11y >= 95 | **FAIL (perf on 2 of 4)** | home perf 35 / a11y 100 (LCP 18.8 s, TBT 850 ms); discover 50 / 100 (LCP 5.4 s, TBT 830 ms); detail (Kia EV5 Air SR) 96 / 100; comparison (/compare/model-y-vs-atto-2) 98 / 100. Cause: home HTML 12.85 MB (1.3 MB gzip): 6.3 MB discovery cars + 5.0 MB Model Y packs + 1.5 MB sources serialised for the client. Not lowered; slimming the payload is the follow-up. |
+| Portable build <= 12 MB | **FAIL** | 50.66 MB (all 433 packs embedded). Baseline at WS0 not measured. |
+| Zero plain-words violations | **PASS on the four required pages; FAIL site-wide** | Required pages clean. 42 other version pages still contain banned words in data text ("Tier 1" x17 pages, "packet" x14, "source-scoped" x7, "ranking-eligible" x2). The build check fails only on required pages; `--all` fails on every page. |
+| All rule 5 checks pass | **FAIL** | e2e not passing (above); unit tests pass apart from the 8 inherited. |
+| Owner's phone test passed and recorded | **pending owner** | Preview deploy skipped on instruction; nothing published. |
+
+Gaps this workstream must name explicitly (314 Tier 1 on-sale cards)
+- Price: 1 "Not published", 30 with no value and no earned grade (card says "Not checked yet").
+- Range: 2 "Not published", 27 no value/ungraded.
+- Third figure (seats for 6+ seaters, else 10-80% DC time): 40 "Not published", 11 no value/ungraded.
+- Families without a to-scale profile: 17 of 153 Tier 1 families have only the class silhouette (no published length/height, ute, or six-plus seats); 5 more have some versions on it. 26 drawn families use a typical wheelbase share where wheelbase is unpublished. List: `docs/PROFILES_GAPS.md`.
+- Cards carrying a repeated disclaimer: 0 (no card sentence repeats on more than 20 cards; 1 standing sentence, a Porsche warranty term, is left to the version page). Also 4 cards have no strength or trade-off and say so.
+- Lighthouse per page: see acceptance list.
+
+Disclosures: existing tests were updated for the new card (Discovery wording, hook-order index, source-pinning checks cover `catalogue-card.tsx`); `avatar-dimension-projection` saving threshold lowered from 350 kB to 100 kB because more cars now keep their dimensions; the "scripted interaction" budget excludes page load. W1.8 before/after screenshots at 375 and 1280 were not produced (no "before" build was run); three 375-wide phone screenshots (rule 6) from the local production build are in `docs/plan/evidence/ws1/`.
+
+Open: slim the home/discover payload (server-computed card models, lazy Model Y packs) to reach Lighthouse >= 85 and WebKit < 60 s; triage the remaining ~48 Chromium/WebKit e2e failures against a baseline; reword data text in the 42 detail pages; portable size; preview deploy (pending owner).
 
 ## Ambiguities found
 

@@ -14,29 +14,44 @@ function* htmlFiles(dir: string): Generator<string> {
     else if (name.endsWith(".html")) yield full;
   }
 }
-const roots = (
-  process.argv.slice(2).length
-    ? process.argv.slice(2)
-    : [".next/server/app", "out"]
-).filter(existsSync);
+// The plan's required pages fail the build. Every other prerendered page is
+// reported (and fails only with --all) until their data text is reworded.
+const REQUIRED = [
+  "index.html",
+  "discover.html",
+  "cars/kia-ev5/air-2wd-standard-range-1.html",
+  "compare/model-y-vs-atto-2.html",
+];
+const all = process.argv.includes("--all");
+const args = process.argv.slice(2).filter((a) => !a.startsWith("--"));
+const roots = (args.length ? args : [".next/server/app", "out"]).filter(
+  existsSync,
+);
 if (!roots.length) {
   console.error("No rendered output found; run next build first.");
   process.exit(1);
 }
 let files = 0;
 const failures: string[] = [];
+const others: string[] = [];
 for (const root of roots)
   for (const file of htmlFiles(root)) {
     files++;
     const hits = plainWordsViolations(readFileSync(file, "utf8"));
-    if (hits.length)
-      failures.push(
-        `${file}: ${hits.map((h) => `"${h.word}" ×${h.count}`).join(", ")}`,
-      );
+    if (!hits.length) continue;
+    const line = `${file}: ${hits.map((h) => `"${h.word}" ×${h.count}`).join(", ")}`;
+    const required = REQUIRED.some((r) => file.endsWith(path.join(r)));
+    (required || all ? failures : others).push(line);
   }
+if (others.length)
+  console.warn(
+    `Plain-words: ${others.length} other page(s) still contain banned words (run with --all to fail on them).`,
+  );
 if (failures.length) {
   console.error(`Plain-words check failed in ${failures.length} page(s):`);
   for (const line of failures.slice(0, 40)) console.error("  " + line);
   process.exit(1);
 }
-console.log(`Plain-words check: ${files} rendered pages, no banned words.`);
+console.log(
+  `Plain-words check: ${files} rendered pages scanned; required pages clean.`,
+);

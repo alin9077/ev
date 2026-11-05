@@ -22,7 +22,7 @@ test("homepage preserves the original Model Y hero above mobile discovery", asyn
   await page
     .getByRole("searchbox", { name: "Find a model or exact trim" })
     .fill("HiLux");
-  await expect(page.locator(".discovery-cards article")).toHaveCount(3);
+  await expect(page.locator(".catalogue-card")).toHaveCount(3);
   expect(errors).toEqual([]);
 });
 test("all four Model Ys update data, L scope stays separate, picker focus returns", async ({
@@ -161,6 +161,7 @@ test("all chapter details are inline with usable anchors, evidence and specific 
 }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/");
+  await page.locator("details.fleet-full-comparison > summary").click();
   await expect(page.locator(".inline-chapter")).toHaveCount(7);
   await expect(page.locator(".fleet-detail")).toHaveCount(90);
   await expect(page.locator(".inline-chapter").first()).toHaveAttribute(
@@ -234,7 +235,9 @@ test("discovery, detail and sources routes are usable", async ({ page }) => {
     /ATTO 3/i,
   );
   await expect(
-    page.getByText("ANCAP applicability is unresolved", { exact: false }).first(),
+    page
+      .getByText("ANCAP applicability is unresolved", { exact: false })
+      .first(),
   ).toBeVisible();
   await page.goto("/sources");
   await page.getByLabel("Search sources").fill("v2_tesla_y_l_ancap");
@@ -292,6 +295,7 @@ test("viewport screenshots, reflow and no restricted media requests", async ({
   for (const width of [320, 375, 390, 430, 768, 1024, 1440]) {
     await page.setViewportSize({ width, height: width > 767 ? 1000 : 844 });
     await page.goto("/");
+    await page.locator("details.fleet-full-comparison > summary").click();
     await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
     expect(
       await page.evaluate(

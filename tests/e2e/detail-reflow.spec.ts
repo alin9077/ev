@@ -28,7 +28,11 @@ async function expectReflow(page: Page, columns: number) {
     const viewport = document.documentElement.clientWidth;
     const grids = [...document.querySelectorAll<HTMLElement>(".detail-facts")];
     const visible = (element: HTMLElement) => {
-      for (let parent: HTMLElement | null = element; parent; parent = parent.parentElement) {
+      for (
+        let parent: HTMLElement | null = element;
+        parent;
+        parent = parent.parentElement
+      ) {
         if (parent instanceof HTMLDetailsElement && !parent.open) return false;
       }
       return element.getClientRects().length > 0;
@@ -36,7 +40,8 @@ async function expectReflow(page: Page, columns: number) {
     return {
       viewport,
       documentWidth: document.documentElement.scrollWidth,
-      columns: getComputedStyle(grids[0]).gridTemplateColumns.split(/\s+/).length,
+      columns: getComputedStyle(grids[0]).gridTemplateColumns.split(/\s+/)
+        .length,
       overflowing: grids.flatMap((grid) =>
         [...grid.querySelectorAll<HTMLElement>("section")]
           .filter(visible)
@@ -50,7 +55,10 @@ async function expectReflow(page: Page, columns: number) {
               section.scrollWidth > section.clientWidth + 1
             );
           })
-          .map((section) => section.querySelector("h3")?.textContent || "unnamed fact"),
+          .map(
+            (section) =>
+              section.querySelector("h3")?.textContent || "unnamed fact",
+          ),
       ),
     };
   });
@@ -61,28 +69,37 @@ async function expectReflow(page: Page, columns: number) {
 
 for (const surface of ["production", "portable"] as const) {
   for (const record of records) {
-    test(`${surface}: ${record.name} reflows with evidence and report disclosures`, async ({ page }) => {
+    test(`${surface}: ${record.name} reflows with evidence and report disclosures`, async ({
+      page,
+    }) => {
       // 333 CSS px reproduces the reported layout width; this is not native zoom or real-phone QA.
       await page.setViewportSize({ width: 333, height: 844 });
       const errors: string[] = [];
       page.on("pageerror", (error) => errors.push(error.message));
-      const target = surface === "portable"
-        ? `/index.html?page=${encodeURIComponent(record.path)}`
-        : record.path;
+      const target =
+        surface === "portable"
+          ? `/index.html?page=${encodeURIComponent(record.path)}`
+          : record.path;
       await page.goto(target);
-      await expect(page.getByRole("heading", { level: 1 })).toContainText(record.model);
+      await expect(page.getByRole("heading", { level: 1 })).toContainText(
+        record.model,
+      );
       const essentials = page.locator(".detail-facts").first();
       await expect(essentials.locator("section").first()).toBeVisible();
       if (record.longSourceToken) {
         await expect(
-          essentials.locator(".fact-basis").filter({ hasText: sourceToken }).first(),
+          essentials
+            .locator(".fact-basis")
+            .filter({ hasText: sourceToken })
+            .first(),
         ).toContainText(sourceToken);
       }
 
       const report = essentials.locator(".claim-report").first();
       const summary = report.locator(":scope > summary");
       const textarea = report.getByLabel("What needs correcting?");
-      const draft = "Reflow regression draft: " + "unbroken_source_reference_".repeat(12);
+      const draft =
+        "Reflow regression draft: " + "unbroken_source_reference_".repeat(12);
       const supplementary = page.locator(".detail-supplementary > details");
       const supplementaryCount = await supplementary.count();
       for (let index = 0; index < supplementaryCount; index++) {

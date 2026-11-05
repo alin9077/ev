@@ -5,15 +5,15 @@ test("December keeps cards, buyer reasons and unranked price figures visible", a
 }) => {
   await page.clock.setFixedTime(new Date("2026-12-01T01:00:00Z"));
   await page.goto("/discover");
-  await expect(page.locator(".discovery-car")).toHaveCount(12);
+  await expect(page.locator(".catalogue-card")).toHaveCount(12);
   await expect(
-    page.locator(".discovery-state .evidence-stale").first(),
+    page.locator(".catalogue-card .evidence-stale").first(),
   ).toContainText("Checked on");
   await page
     .getByRole("searchbox", { name: "Find a model or exact trim" })
     .fill("BYD Seal");
   await expect(
-    page.locator(".discovery-car").filter({ hasText: "Premium RWD" }).first(),
+    page.locator(".catalogue-card").filter({ hasText: "Premium RWD" }).first(),
   ).toContainText("Why consider");
   await page
     .getByRole("button", { name: /Find vehicles for an attribute/ })
