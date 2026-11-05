@@ -171,11 +171,18 @@ test("detail renders all six conditions and full nested facts without inventing 
 });
 test("discovery preserves provisional targeted scope and offers no numerical winning claim", () => {
   const html = renderToStaticMarkup(
-    createElement(Discovery, { initialVehicleScope: "all", cars: [city], sources: data.sources }),
+    createElement(Discovery, {
+      initialVehicleScope: "all",
+      cars: [city],
+      sources: data.sources,
+    }),
   );
   assert.ok(html.includes("announced/provisional"));
   assert.ok(html.includes("targeted/estimated WLTP"));
-  assert.ok(html.includes("Stock not verified"));
+  assert.ok(
+    html.includes("Order open or arriving · expected from November 2026"),
+  );
+  assert.ok(!html.includes("catalogue-chip-on_sale_now"));
   assert.ok(!html.includes("A relative strength"));
   assert.ok(!html.includes(">254 km<"));
 });

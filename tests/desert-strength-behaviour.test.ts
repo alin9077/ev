@@ -170,7 +170,11 @@ test("static/no-JavaScript detail and discovery withhold age-limited Brown text"
       "",
     );
     const html = renderToStaticMarkup(
-      createElement(Discovery, { initialVehicleScope: "all", cars: [c], sources }),
+      createElement(Discovery, {
+        initialVehicleScope: "all",
+        cars: [c],
+        sources,
+      }),
     );
     assert.ok(!html.includes(h.expected.strength.text));
     assert.ok(!html.includes(h.expected.strength.label));
@@ -220,7 +224,7 @@ test("actual detail/discovery sources render Brown after clock readiness and omi
     );
     assert.equal(
       position,
-      kind === "detail" ? 2 : 12,
+      kind === "detail" ? 2 : 13,
       "Review hook fixture if component state order changes",
     );
     return output;
@@ -267,6 +271,11 @@ test("actual detail/discovery sources render Brown after clock readiness and omi
     const noSummary = { ...car, buyerSummary: undefined };
     const fallback = render(kind, noSummary, sources, "2026-10-12");
     assert.ok(!fallback.includes(h.expected.strength.text));
-    if (kind === "discovery") assert.ok(fallback.includes("Keep in mind"));
+    if (kind === "discovery")
+      assert.ok(
+        fallback.includes(
+          "No strength or trade-off written for this version yet",
+        ),
+      );
   }
 });

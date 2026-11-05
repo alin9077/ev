@@ -390,7 +390,11 @@ test("cached discovery never shows the new age-limited strength before its date 
     const car = structuredClone(target);
     car.buyerSummary!.checkedAt = checkedAt;
     const html = renderToStaticMarkup(
-      createElement(Discovery, { initialVehicleScope: "all", cars: [car], sources }),
+      createElement(Discovery, {
+        initialVehicleScope: "all",
+        cars: [car],
+        sources,
+      }),
     );
     assert.ok(!html.includes("Removable battery and adjustable regeneration"));
     assert.ok(!html.includes("The Australian MY26 model page lists"));
@@ -405,6 +409,7 @@ test("actual hydrated components show strength only, keep conditions, and suppre
     car: Car,
     asOf: string,
     ready = true,
+    available: Source[] = sources,
   ) => {
     let position = 0;
     const hooks = {
@@ -433,7 +438,9 @@ test("actual hydrated components show strength only, keep conditions, and suppre
     ) => React.ReactNode;
     return renderToStaticMarkup(
       Component(
-        kind === "detail" ? { car, sources } : { initialVehicleScope: "all", cars: [car], sources },
+        kind === "detail"
+          ? { car, sources: available }
+          : { initialVehicleScope: "all", cars: [car], sources: available },
       ),
     );
   };
@@ -476,13 +483,24 @@ test("actual hydrated components show strength only, keep conditions, and suppre
       ),
     );
   }
-  // Existing paired copy stays intact after hydration; no-summary cards retain fallback.
+  // Existing paired copy stays intact after hydration; no-summary cards say so plainly.
   const paired = cars.find(
     (c) => c.buyerSummary?.strength && c.buyerSummary.tradeoff,
   )!;
-  const pairedHtml = render("discovery", paired, "2026-10-11");
-  assert.ok(pairedHtml.includes("Keep in mind"));
+  const pairedHtml = render(
+    "discovery",
+    paired,
+    "2026-10-20",
+    true,
+    data.sources,
+  );
+  assert.ok(pairedHtml.includes("Trade-off."));
+  assert.ok(pairedHtml.includes(paired.buyerSummary!.strength!.text));
   const none = structuredClone(target);
   none.buyerSummary = undefined;
-  assert.ok(render("discovery", none, "2026-10-11").includes("Keep in mind"));
+  assert.ok(
+    render("discovery", none, "2026-10-11").includes(
+      "No strength or trade-off written for this version yet",
+    ),
+  );
 });
