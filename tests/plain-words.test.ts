@@ -2,13 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
-import {
-  catalogue,
-  counts,
-  pack,
-  pickerCatalogue,
-  research,
-} from "../src/lib/data";
+import { catalogue, pack, research } from "../src/lib/data";
 import {
   PLAIN_WORDS_BANNED,
   plainWordsViolations,
