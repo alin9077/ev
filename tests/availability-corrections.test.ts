@@ -212,7 +212,8 @@ test("a current graded BYD withdrawal reaches packs and rankings without alterin
   const data = currentResearch();
   const current = currentCars.find((car) => car.id === original.id)!;
   const currentBefore = availabilitySnapshot(current);
-  const asOf = "2026-10-14";
+  // Evaluate on the day of the catalogue's newest availability check: the fixture must not predate the evidence it withdraws.
+  const asOf = currentBefore.evidence.checkedAt;
   assert.equal(current.buyerGradesRequired, true);
   assert.ok(current.buyerSummary?.strength);
   assert.equal(

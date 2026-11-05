@@ -257,7 +257,7 @@ test("current measurement types cannot become pack voltage, turning diameter or 
       "https://www.carexpert.com.au/toyota/bz4x/2026-suv-fwd-electric-jsg5ffoo20251210",
   ));
   assert.match(
-    exclusionReason(toyota, braked, data.sources, { asOf: "2026-10-15" })!,
+    exclusionReason(toyota, braked, data.sources, { asOf: "2026-11-05" })!,
     /Reported value/,
   );
   const charging = toyota.facts.dc_charge_time_min;
@@ -272,7 +272,7 @@ test("current measurement types cannot become pack voltage, turning diameter or 
       "https://www.toyota.com.au/bz4x-ev",
   ));
   assert.match(
-    exclusionReason(toyota, charging, data.sources, { asOf: "2026-10-15" })!,
+    exclusionReason(toyota, charging, data.sources, { asOf: "2026-11-05" })!,
     /Measurement basis missing/,
   );
 });
