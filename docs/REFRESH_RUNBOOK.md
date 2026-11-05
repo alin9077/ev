@@ -95,6 +95,17 @@ pnpm refresh:diff --before data/changes/snapshots/2026-10-before.json --after da
 
 The "before" snapshot is the one taken at the end of the previous month's cycle (or, for the first cycle, taken before the first November packet was added). Keep snapshots; they are small.
 
+## Known limits of the builder (found in the first run, 5 November 2026)
+
+These are cases where `refresh:build` correctly refuses or where the claim cannot be rechecked from a page. Record them as `unavailable` with the reason; do not work round them.
+
+- **Equipment rows named `driveaway_price`** are projected from a price fact that carries a driveaway basis (`price_aud` on a Driveaway basis, `promotional_driveaway_aud` or `published_driveaway_aud`). A legacy row that reads "Request a current driveaway quote" has no such fact behind it, so rechecking the page cannot re-date it. It stays amber until a driveaway price is added through a normal brand update.
+- **Versions with configuration evidence** (GWM ORA 5 was the first) bind that evidence to the exact `price_aud` fact. Re-dating the fact breaks the binding unless the packet also carries a `configurationUpdates` row. The builder does not generate those; the loader error is "configuration dependency changed or unearned". Record `unavailable` and raise it as a normal brand update.
+- **A price that depends on a postcode or state form** (BMW, Volvo, Lexus and Toyota driveaway estimates, Zeekr model switching) is not rechecked: entering a postcode is a form submission. Re-read only what the page shows without it, and say so.
+- **An offer whose recorded window has ended** (`validUntil` in the past) is rechecked only against a page that restates the offer and its new window. Use `changed` with the same value, the new `conditionExplanation` and `validUntil`. A page that no longer shows the offer is `unavailable`.
+- **A basis the page does not state.** If the maker page shows the same figure but no longer says whether it is before or after on-road costs, do not re-affirm the recorded basis: record `unavailable` with the conflict. GAC's AION UT page, which described the listed figure as a drive away price while the catalogue holds it as an MSRP, was the first case.
+- **Dealer advertisements and secondary reports** are not rechecked: dealer pages are not an allowed source and a news article is not the maker's page.
+
 ## What to put in the work log
 
 For every refresh, record in `docs/plan/STATUS.md` (or the month's log): brands refreshed, brands not refreshed and why, every claim with outcome `unavailable` or `blocked` (version, field, URL, what you saw), and any version the maker lists that is missing from the catalogue.
