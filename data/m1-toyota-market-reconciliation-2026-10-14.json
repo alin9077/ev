@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-14",
+  "notes": [
+    "Toyota-only source-bound current Australian Tier1 reconciliation. Six existing exact configurations across three families and four model/body reviews are retained. No original 71.4 kWh residual-New version was established.",
+    "CarExpert/JATO and CarsGuide/Glass’s brand directories are transcribed and reconciled in brand-model-list-reconciliation.json. They are mixed-powertrain brand-only sources and do not populate whole-market publishedLists or claim global C1 closure.",
+    "The historical original FWD/AWD MSRPs are maker launch facts, not present new-sale eligibility. Old Ulladulla New ads now return 404; Carsales previous-model New-to-order pages explicitly are generic templates; low-kilometre used/demo/test-drive cars remain excluded.",
+    "C-HR BEV is held for stated first-half/mid-2027 arrival and Urban Cruiser is an overseas source lead with no current AU new-sale established. They have no existing inventory lead IDs, so no fabricated inventory resolutions are added.",
+    "Three Toyota inventory records exist, no Toyota unverifiedLeads exist, and the already-reconciled bZ4X / Touring umbrella lead is preserved in the evidence audit. Current physical stock and factory-order acceptance remain unverified."
+  ],
+  "publishedLists": [],
+  "currentVersionReviews": [
+    {
+      "id": "m1-toyota-2026-10-14-bz4x-current-suv",
+      "brand": "Toyota",
+      "model": "bZ4X",
+      "bodyStyle": "SUV",
+      "vehicleClass": "passenger",
+      "modelId": "toyota_bz4x_current",
+      "checkedAt": "2026-10-14",
+      "officialSourceUrls": [
+        "https://www.toyota.com.au/all-vehicles",
+        "https://www.toyota.com.au/explore/electrified/battery-electric-vehicles",
+        "https://www.toyota.com.au/bz4x-ev",
+        "https://www.toyota.com.au/bz4x-ev/range",
+        "https://www.toyota.com.au/bz4x-ev/specs",
+        "https://www.toyota.com.au/discover/news/upgraded-toyota-bz4x-battery-electric-range-arrives-in-australian-showrooms"
+      ],
+      "reason": "Current Australian factory SUV offering has 2WD and AWD with the upgraded 74.7 kWh specification. Primary formal MY is not established, so the existing literal model-year identity is retained. Two publisher directories agree on the family. Original 71.4 kWh candidates have finite dispositions in residual-new-audit.json; no live genuine residual-New version was established. No accepted-order or physical-stock claim.",
+      "versions": [
+        {
+          "carId": "toyota_bz4x_current__2wd__20261010",
+          "model": "bZ4X",
+          "trim": "2WD",
+          "modelYear": "Model year unverified"
+        },
+        {
+          "carId": "toyota_bz4x_current__awd__20261010",
+          "model": "bZ4X",
+          "trim": "AWD",
+          "modelYear": "Model year unverified"
+        }
+      ]
+    },
+    {
+      "id": "m1-toyota-2026-10-14-bz4x-touring-current-suv",
+      "brand": "Toyota",
+      "model": "bZ4X Touring",
+      "bodyStyle": "SUV",
+      "vehicleClass": "passenger",
+      "modelId": "toyota_bz4x_touring_current",
+      "checkedAt": "2026-10-14",
+      "officialSourceUrls": [
+        "https://www.toyota.com.au/all-vehicles",
+        "https://www.toyota.com.au/explore/electrified/battery-electric-vehicles",
+        "https://www.toyota.com.au/bz4x-touring",
+        "https://www.toyota.com.au/bz4x-touring/range",
+        "https://www.toyota.com.au/bz4x-touring/specs",
+        "https://www.toyota.com.au/discover/news/upgraded-toyota-bz4x-family-expanded-with-larger-more-powerful-all-new-touring-grade"
+      ],
+      "reason": "Toyota lists the longer Touring as its own product and sole AWD configuration. It is separate from the standard SUV despite both independent directories grouping it under bZ4X. Primary formal MY is unverified; no dealer calendar label is promoted into MY. No accepted-order or physical-stock claim.",
+      "versions": [
+        {
+          "carId": "toyota_bz4x_touring_current__awd__20261010",
+          "model": "bZ4X Touring",
+          "trim": "AWD",
+          "modelYear": "Model year unverified"
+        }
+      ],
+      "publishedModelAliases": [
+        {
+          "name": "bZ4X",
+          "reason": "CarExpert and CarsGuide group the longer bZ4X Touring with the ordinary bZ4X; Toyota’s current range and dedicated product page establish the distinct longer body.",
+          "sourceUrls": [
+            "https://www.carsguide.com.au/toyota/bz4x",
+            "https://www.carexpert.com.au/toyota/bz4x",
+            "https://www.toyota.com.au/all-vehicles"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m1-toyota-2026-10-14-hilux-bev-current-cab-chassis",
+      "brand": "Toyota",
+      "model": "HiLux BEV",
+      "bodyStyle": "Double-Cab Cab-Chassis",
+      "vehicleClass": "ute",
+      "modelId": "toyota_hilux_bev_current",
+      "checkedAt": "2026-10-14",
+      "officialSourceUrls": [
+        "https://www.toyota.com.au/all-vehicles",
+        "https://www.toyota.com.au/explore/electrified/battery-electric-vehicles",
+        "https://www.toyota.com.au/hilux-ev",
+        "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5",
+        "https://pressroom.toyota.com.au/PressKit?pk-code=18d15948-2ca0-49fb-9369-61c5ce492cd9",
+        "https://pressroom.toyota.com.au/PressRelease?pr-code=99a32fd3-dff8-46eb-9ba4-79cef3186202"
+      ],
+      "reason": "The current Australian OEM BEV cab-chassis has one SR Double-Cab Cab-Chassis AWD configuration. Keep its body, range and fitted-tray qualification separate from the two pickup grades. Current manufacturer retail/launch evidence establishes on-sale offering without proving unsold physical stock. Primary formal MY is unverified.",
+      "versions": [
+        {
+          "carId": "toyota_hilux_bev_current__sr_double_cab_cab_chassis__20261010",
+          "model": "HiLux BEV",
+          "trim": "SR Double-Cab Cab-Chassis",
+          "modelYear": "Model year unverified"
+        }
+      ],
+      "publishedModelAliases": [
+        {
+          "name": "HiLux",
+          "reason": "Both mixed-powertrain publisher directories group the OEM battery-electric HiLux with diesel and 48V versions; this review includes only the explicitly named BEV body configuration. Third-party conversion vehicles are separate suppliers.",
+          "sourceUrls": [
+            "https://www.carsguide.com.au/toyota/hilux",
+            "https://www.carexpert.com.au/toyota/hilux",
+            "https://www.toyota.com.au/hilux-ev"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m1-toyota-2026-10-14-hilux-bev-current-pick-up",
+      "brand": "Toyota",
+      "model": "HiLux BEV",
+      "bodyStyle": "Double-Cab Pick-Up",
+      "vehicleClass": "ute",
+      "modelId": "toyota_hilux_bev_current",
+      "checkedAt": "2026-10-14",
+      "officialSourceUrls": [
+        "https://www.toyota.com.au/all-vehicles",
+        "https://www.toyota.com.au/explore/electrified/battery-electric-vehicles",
+        "https://www.toyota.com.au/hilux-ev",
+        "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5",
+        "https://pressroom.toyota.com.au/PressKit?pk-code=18d15948-2ca0-49fb-9369-61c5ce492cd9",
+        "https://pressroom.toyota.com.au/PressRelease?pr-code=99a32fd3-dff8-46eb-9ba4-79cef3186202"
+      ],
+      "reason": "The current Australian OEM BEV pickup offering comprises SR Double-Cab Pick-Up AWD and SR5 Double-Cab Pick-Up AWD. The additional SR Double-Cab Cab-Chassis is reviewed separately in m1-toyota-2026-10-14-hilux-bev-current-cab-chassis. Diesel/48V and third-party conversions are excluded. Primary formal MY is unverified; no accepted-order or physical-stock claim.",
+      "versions": [
+        {
+          "carId": "toyota_hilux_bev_current__sr_double_cab_pick_up__20261010",
+          "model": "HiLux BEV",
+          "trim": "SR Double-Cab Pick-Up",
+          "modelYear": "Model year unverified"
+        },
+        {
+          "carId": "toyota_hilux_bev_current__sr5_double_cab_pick_up__20261010",
+          "model": "HiLux BEV",
+          "trim": "SR5 Double-Cab Pick-Up",
+          "modelYear": "Model year unverified"
+        }
+      ],
+      "publishedModelAliases": [
+        {
+          "name": "HiLux",
+          "reason": "Both mixed-powertrain publisher directories group the OEM battery-electric HiLux with diesel and 48V versions; this review includes only the explicitly named BEV body configuration. Third-party conversion vehicles are separate suppliers.",
+          "sourceUrls": [
+            "https://www.carsguide.com.au/toyota/hilux",
+            "https://www.carexpert.com.au/toyota/hilux",
+            "https://www.toyota.com.au/hilux-ev"
+          ]
+        }
+      ]
+    }
+  ],
+  "listResolutions": [],
+  "catalogueOnlyDifferences": [],
+  "inventoryResolutions": [
+    {
+      "kind": "record",
+      "inventoryId": "toyota-bz4x",
+      "outcome": "included",
+      "modelReviewId": "m1-toyota-2026-10-14-bz4x-current-suv",
+      "reviewedAt": "2026-10-14",
+      "reason": "Current bZ4X family maps to complete 2WD and AWD SUV review; original 71.4 kWh candidates are separately excluded from current new supply.",
+      "sourceUrls": [
+        "https://www.toyota.com.au/all-vehicles",
+        "https://www.toyota.com.au/explore/electrified/battery-electric-vehicles",
+        "https://www.toyota.com.au/bz4x-ev",
+        "https://www.toyota.com.au/bz4x-ev/range",
+        "https://www.toyota.com.au/bz4x-ev/specs",
+        "https://www.toyota.com.au/discover/news/upgraded-toyota-bz4x-battery-electric-range-arrives-in-australian-showrooms"
+      ]
+    },
+    {
+      "kind": "record",
+      "inventoryId": "toyota-bz4x-touring",
+      "outcome": "included",
+      "modelReviewId": "m1-toyota-2026-10-14-bz4x-touring-current-suv",
+      "reviewedAt": "2026-10-14",
+      "reason": "Current Touring family maps to the sole AWD SUV review. The bZ4X umbrella in publisher directories does not remove this distinct Toyota body.",
+      "sourceUrls": [
+        "https://www.toyota.com.au/all-vehicles",
+        "https://www.toyota.com.au/explore/electrified/battery-electric-vehicles",
+        "https://www.toyota.com.au/bz4x-touring",
+        "https://www.toyota.com.au/bz4x-touring/range",
+        "https://www.toyota.com.au/bz4x-touring/specs",
+        "https://www.toyota.com.au/discover/news/upgraded-toyota-bz4x-family-expanded-with-larger-more-powerful-all-new-touring-grade"
+      ]
+    },
+    {
+      "kind": "record",
+      "inventoryId": "toyota-hilux-bev",
+      "outcome": "included",
+      "modelReviewId": "m1-toyota-2026-10-14-hilux-bev-current-pick-up",
+      "reviewedAt": "2026-10-14",
+      "reason": "Existing HiLux BEV model record includes all three configurations: SR Double-Cab Cab-Chassis in m1-toyota-2026-10-14-hilux-bev-current-cab-chassis and SR/SR5 Double-Cab Pick-Up in m1-toyota-2026-10-14-hilux-bev-current-pick-up. This record links the pickup review while explicitly identifying the cab-chassis review.",
+      "sourceUrls": [
+        "https://www.toyota.com.au/hilux-ev",
+        "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5",
+        "https://pressroom.toyota.com.au/PressKit?pk-code=18d15948-2ca0-49fb-9369-61c5ce492cd9",
+        "https://pressroom.toyota.com.au/PressRelease?pr-code=99a32fd3-dff8-46eb-9ba4-79cef3186202"
+      ]
+    }
+  ]
+}

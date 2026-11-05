@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-14",
+  "notes": [
+    "Omoda/Jaecoo-only Australian BEV model/version review, checked 14 October 2026. One existing Jaecoo J5 EV EV Summit MY26 version is current; no current Omoda-badged Australian BEV is established.",
+    "Two independent brand-only model lists were fully transcribed in brand-model-reconciliation.json: CarExpert combined Omoda Jaecoo list and CarsGuide Jaecoo plus Omoda lists. CarExpert credits JATO on model specifications; CarsGuide credits Glass's Information Services. They are independent publisher/data families, not two whole-market BEV lists.",
+    "The existing PublishedModelList schema only accepts australian-new-tier1-bevs and requires publishedAt. These brand-only mixed-powertrain pages cannot truthfully fill that role; CarsGuide also provides no dated list publication field. Therefore publishedLists/listResolutions remain empty here. Do not claim global C1 closure from this targeted evidence.",
+    "J5 petrol and SHS-H, J7 petrol and SHS-P (including future Black Edition), J8 petrol/hybrid history and current SHS-P, and Omoda 9 SHS-P are non-BEV exclusions. Each source list difference is recorded in the companion research JSON.",
+    "Omoda 4 and 7 are official AU future/interest-only entries; September 2026 reporting places launch in 2027 with local powertrains still unconfirmed. Omoda 4 has an overseas BEV, so do not exclude it merely as non-electric. No current AU exact orderable BEV grade is verified.",
+    "Jaecoo J6 is absent from current official Australian navigation/build selection and both independent current lists. Older Australian reporting quotes the manufacturer saying it was not slated locally. A third-party J6 database placeholder does not establish official new Australian supply.",
+    "Chery Omoda E5 is a historical Chery model name; current Chery E5 remains a separate Chery catalogue identity. UK Omoda E5/5 EV names and trims are not current Australian Omoda-brand versions. Do not rename Chery, duplicate its E5, or make Chery completeness claims in this packet.",
+    "Canonical inherited inventory has zero Omoda/Jaecoo records and zero Omoda/Jaecoo unverifiedLeads; J5 EV is listed in existingFamiliesExcluded because it was already catalogued. Do not manufacture an inventoryResolution for that string. The Chery E5 audit record and historical Chery BX/EX/MY25.5/MY27 research entries remain outside this brand pass.",
+    "Current page and brochure identity evidence outweigh mixed year/body/price-guide rows. CarsGuide shows 2025/2027 electric-year rows without a new exact official grade, and CarExpert groups Track/Summit across powertrains. Neither supports another Australian BEV trim or a model-year identity change.",
+    "Official navigation labels the J5 EV grade Summit and the model page labels the same grade Jaecoo J5 EV Summit. Summit is a trim alias within the BEV MY26 context, not a new trim or model alias; retain catalogue trim EV Summit.",
+    "The 10 October historical evidence file contains two J5 NEW advertisements. They were not freshly verified in this pass and do not support a current stock assertion. The new dated availability evidence should supersede the older observation using current maker order-request evidence with stock unverified; keep the historical source records immutable."
+  ],
+  "publishedLists": [],
+  "currentVersionReviews": [
+    {
+      "id": "m1-omoda-jaecoo-2026-10-14-j5-ev-current",
+      "brand": "Jaecoo",
+      "model": "J5 EV",
+      "bodyStyle": "SUV",
+      "vehicleClass": "passenger",
+      "modelId": "jaecoo_j5_ev",
+      "checkedAt": "2026-10-14",
+      "officialSourceUrls": [
+        "https://www.omodajaecoo.com.au/",
+        "https://www.omodajaecoo.com.au/build",
+        "https://www.omodajaecoo.com.au/models/jaecoo-j5-bev",
+        "https://www.omodajaecoo.com.au/sites/default/files/2026-05/Spec25_Jaecoo_J5_Spec_Sheet_AU_BEV_v101_compressed_compressed.pdf"
+      ],
+      "reason": "The current official Australian complete model navigation and build selection show J5 EV as the only BEV family, and the model page names a single EV Summit grade. The linked Australian specification sheet explicitly identifies Model Year 2026. Preserve the existing exact version; no additional BEV grade is established.",
+      "publishedModelAliases": [
+        {
+          "name": "J5",
+          "reason": "Both independent Australian model lists group petrol, hybrid and BEV under J5. This equivalence applies only to the battery-electric branch; petrol Track/Summit and SHS-H Summit are excluded.",
+          "sourceUrls": [
+            "https://www.carexpert.com.au/omoda-jaecoo",
+            "https://www.carexpert.com.au/omoda-jaecoo/jaecoo-j5",
+            "https://www.carsguide.com.au/jaecoo",
+            "https://www.carsguide.com.au/jaecoo/j5",
+            "https://www.omodajaecoo.com.au/models/jaecoo-j5-bev"
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "carId": "jaecoo_j5_ev__ev_summit__1",
+          "model": "J5 EV",
+          "trim": "EV Summit",
+          "modelYear": 2026
+        }
+      ]
+    }
+  ],
+  "listResolutions": [],
+  "catalogueOnlyDifferences": [],
+  "inventoryResolutions": []
+}

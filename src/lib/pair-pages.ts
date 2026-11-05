@@ -1,4 +1,5 @@
 import { catalogue, pack } from "./data";
+import type { Car } from "./types";
 import { BASELINE } from "./config";
 import { makeReport } from "./citable";
 
@@ -17,15 +18,22 @@ export const pairPages = [
   { slug: "model-y-vs-kia-ev3", rival: "kia_ev3__air_2wd_standard_range__1" },
   { slug: "model-y-vs-atto-3", rival: "byd_atto_3_evo__dynamic_fwd__1" },
 ];
-export function pairReport(slug: string) {
+/** Explicit caller-scoped reuse; omitted snapshots retain fresh pack loading. */
+export function pairReport(
+  slug: string,
+  snapshot?: Parameters<typeof pack>[1],
+) {
   const pair = pairPages.find((p) => p.slug === slug);
   return pair
-    ? makeReport([pack(BASELINE), pack(pair.rival)], `/compare/${pair.slug}`)
+    ? makeReport(
+        [pack(BASELINE, snapshot), pack(pair.rival, snapshot)],
+        `/compare/${pair.slug}`,
+      )
     : undefined;
 }
-export function pairLinks() {
+export function pairLinks(cars: readonly Car[] = catalogue()) {
   return pairPages.map((p) => {
-    const car = catalogue().find((c) => c.id === p.rival)!;
+    const car = cars.find((c) => c.id === p.rival)!;
     return {
       ...p,
       href: `/compare/${p.slug}`,

@@ -5,6 +5,8 @@
  * features as the comparison below it.
  */
 import { formatFact } from "./compare";
+import { australianEvidenceDate } from "./evidence-date";
+import { offerExpired } from "./fact-validity";
 import { statusLabels } from "./config";
 import type { SceneCar, SceneSpec } from "./scenes/kit";
 import type { Pack } from "./types";
@@ -59,6 +61,7 @@ export function readoutFor(
   chapter: string,
   baseline: Pack,
   rival: Pack,
+  asOf = australianEvidenceDate(),
 ): Readout {
   const shown = SHOWN[chapter] ?? { facts: [], features: [] };
   const both = <T>(pick: (pack: Pack) => T): [T, T] => [
@@ -73,7 +76,9 @@ export function readoutFor(
         values: both((p) => {
           const fact = p.car.facts[key];
           if (!fact) return "–";
-          const text = formatFact(fact);
+          const text = formatFact(fact, asOf);
+          if (key === "price_aud")
+            return `${text} · ${fact.priceEvidence?.basisTag ?? fact.basis} · checked ${fact.date}`;
           return key === "range_km" && fact.basis
             ? `${text} ${fact.basis}`
             : text;
@@ -123,16 +128,25 @@ const QUOTED = [
   "ota_capability_scope",
   "app_connectivity",
 ];
-const sceneCar = (pack: Pack): SceneCar => ({
+const sceneCar = (pack: Pack, asOf: string): SceneCar => ({
   name: pack.car.model,
-  facts: Object.fromEntries(
-    Object.entries(pack.car.facts).map(([key, fact]) => [
-      key,
-      typeof fact.value === "number" || typeof fact.value === "string"
-        ? fact.value
+  facts: {
+    ...Object.fromEntries(
+      Object.entries(pack.car.facts).map(([key, fact]) => [
+        key,
+        key === "price_aud" && offerExpired(fact, asOf)
+          ? undefined
+          : typeof fact.value === "number" || typeof fact.value === "string"
+            ? fact.value
+            : undefined,
+      ]),
+    ),
+    price_comparison_basis: pack.car.facts.price_aud?.comparisonBasis,
+    price_offer_expired:
+      pack.car.facts.price_aud && offerExpired(pack.car.facts.price_aud, asOf)
+        ? "expired"
         : undefined,
-    ]),
-  ),
+  },
   features: Object.fromEntries(
     QUOTED.map((key) => {
       const feature = pack.features.find((f) => f.criterion === key);
@@ -162,8 +176,12 @@ const sceneCar = (pack: Pack): SceneCar => ({
   ],
 });
 /** The figures a scene is drawn from. */
-export const specFor = (baseline: Pack, rival: Pack): SceneSpec => ({
-  cars: [sceneCar(baseline), sceneCar(rival)],
+export const specFor = (
+  baseline: Pack,
+  rival: Pack,
+  asOf = australianEvidenceDate(),
+): SceneSpec => ({
+  cars: [sceneCar(baseline, asOf), sceneCar(rival, asOf)],
   seats: numberOf(baseline, "seats"),
   rangeKm: numberOf(baseline, "range_km"),
   rivalRangeKm: numberOf(rival, "range_km"),

@@ -1,0 +1,129 @@
+{
+  "capture": {
+    "schemaVersion": 1,
+    "helperSha256": "bc0b91bc3b3b1d0e8cc32e359712008403760603bcef60cd980a20a03e519c8d",
+    "inputSha256": "3fa38cd5665c233b973fae88e2af5c2a7be678f2c6785f62ccdd82109edc60ef",
+    "caseIds": [
+      "single-valid",
+      "single-invalid-model",
+      "published-list-alias"
+    ],
+    "inputUnchanged": true
+  },
+  "cases": {
+    "single-valid": {
+      "expected": {
+        "pass": false,
+        "registryCheckedAt": "2026-10-15",
+        "registryValid": true,
+        "independentListCount": 0,
+        "listCount": 0,
+        "listEntryCount": 0,
+        "settledListEntryCount": 0,
+        "reviewedModels": 1,
+        "reviewedVersions": 3,
+        "reviewedVersionIds": [
+          "audi_q6_suv_my26__gfba1a_q6_e_tron__prod_20260226",
+          "audi_q6_suv_my26__gfbs58_sq6_e_tron__prod_20260226",
+          "audi_q6_suv_my26__sport_edition__20261015"
+        ],
+        "validModelReviewIds": [
+          "m1-audi-2026-10-15-audi_q6_suv_my26"
+        ],
+        "settledInventory": [
+          "record:audi-q6-e-tron"
+        ],
+        "issues": [
+          {
+            "code": "independent_lists",
+            "reason": "At least two independently published complete model-list snapshots must be reconciled"
+          }
+        ]
+      },
+      "ownUndefinedPaths": [
+        [
+          "issues",
+          "0",
+          "brand"
+        ],
+        [
+          "issues",
+          "0",
+          "reference"
+        ]
+      ]
+    },
+    "single-invalid-model": {
+      "expected": {
+        "pass": false,
+        "registryCheckedAt": "2026-10-15",
+        "registryValid": true,
+        "independentListCount": 0,
+        "listCount": 0,
+        "listEntryCount": 0,
+        "settledListEntryCount": 0,
+        "reviewedModels": 1,
+        "reviewedVersions": 3,
+        "reviewedVersionIds": [
+          "audi_q6_suv_my26__gfba1a_q6_e_tron__prod_20260226",
+          "audi_q6_suv_my26__gfbs58_sq6_e_tron__prod_20260226",
+          "audi_q6_suv_my26__sport_edition__20261015"
+        ],
+        "validModelReviewIds": [
+          "m1-audi-2026-10-15-audi_q6_suv_my26"
+        ],
+        "settledInventory": [],
+        "issues": [
+          {
+            "code": "independent_lists",
+            "reason": "At least two independently published complete model-list snapshots must be reconciled"
+          },
+          {
+            "code": "inventory_unresolved",
+            "reason": "not a recognised exact model: inherited record still needs a sourced disposition",
+            "brand": "Audi",
+            "reference": "record:audi-q6-e-tron"
+          }
+        ]
+      },
+      "ownUndefinedPaths": [
+        [
+          "issues",
+          "0",
+          "brand"
+        ],
+        [
+          "issues",
+          "0",
+          "reference"
+        ]
+      ]
+    },
+    "published-list-alias": {
+      "expected": {
+        "pass": true,
+        "registryCheckedAt": "2026-10-15",
+        "registryValid": true,
+        "independentListCount": 2,
+        "listCount": 2,
+        "listEntryCount": 2,
+        "settledListEntryCount": 2,
+        "reviewedModels": 1,
+        "reviewedVersions": 3,
+        "reviewedVersionIds": [
+          "audi_q6_suv_my26__gfba1a_q6_e_tron__prod_20260226",
+          "audi_q6_suv_my26__gfbs58_sq6_e_tron__prod_20260226",
+          "audi_q6_suv_my26__sport_edition__20261015"
+        ],
+        "validModelReviewIds": [
+          "m1-audi-2026-10-15-audi_q6_suv_my26"
+        ],
+        "settledInventory": [
+          "record:audi-q6-e-tron"
+        ],
+        "issues": []
+      },
+      "ownUndefinedPaths": []
+    }
+  }
+}

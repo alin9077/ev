@@ -1,0 +1,15 @@
+# MG/IM integration decision — 10 October 2026
+Main integrated 12 current manufacturer-listed records across five existing families. Detailed catalogue185 configurations/70families/73generation records. Source bundle has44sources; available raw/text hashes checked. No added normalized residual MGS5 row.
+
+- Current MGS5/Cyberster formal MY remains null because official pageMY26 and linked brochureMY25 conflict. Equipment and technical claims retain source attribution and conditional applicability. MGS6MY26 and IMMY25 are explicit manufacturer scope.
+- Seven exact-grade NEW-stock joins retained. IM5Performance, IM6Premium and IM6Platinum advertised units do not resolve to the manufacturerMY25 technical epoch; their exact-version stock filter stays unverified. The ten ads remain research evidence, not ten clean same-epoch stock joins.
+- MRLP remains null for all12; configurator promotional driveaway amounts are separate conditional facts. No location-dependent final quote or order was submitted.
+- Six MG seats remain null; six IM seats explicitly5. Warranty and usable battery remain unverified; no other MG trim supplies defaults.
+- Range, DC acceptance/time, cargo, width/mirror boundary, nominal battery, towing and test conditions remain conditional. MGS5/Cyberster/IM charging windows30–80; MGS6only10–80. MGS6RWD0–100/frunk conflicts null. IM AWD separate motor ratings are not summed into combined system power/torque.
+- Exact selected equipment mappings retain row/column/page anchors. Seat memory does not imply cloud or multi-system profiles. General battery conditioning does not imply navigation-triggered operation.
+- Residual PortsideG10095 proves a NEW MY25Essence62 advertisement but not historical125kW: current June2026brochure also saysMY25/150kW. No build month or unit power appears in retained snapshot. Research handoff corrected; normalized epoch/power null. Earlier checkpoint pending research recommendation is superseded, with no erroneous residual app record created.
+- Main fixed discovered structured fact formatting: component ratings, staged warranty schedules and other structured values now render named fields instead of[object Object]. Original structured values and summary dependencies remain unchanged. Corrections compare JSON snapshots and show readable structured values in history/review. No production correction applied.
+
+Additional primary-source checks: Cyberster technical table labels only Boot Volume, so no seats-in-place boundary is inferred. Its page6 narrative beside AWD375kW/3.2s claims40min10–80% at150kWstation; preserved as a separate conditional AWD narrative observation, not inherited by RWD or merged with34min30–80%@25°C table. IM6Performance visible offer conflicts with embeddedRWDmetadata: normalized exact offer null, attributed configurator amount separately conditional.
+
+IM5 brochure p21 footnote7 restricts front ventilation to the backrest, while IM6 includes cushion and backrest. All six exact feature rows now retain their own scope; no shared generic ventilation assumption.

@@ -1,7 +1,11 @@
-import type { Car, Pack, Research } from "@/lib/types";
+import { parsePortableData } from "@/lib/portable-string-codec";
+import { hydratePortablePacks, type StoredPack } from "@/lib/portable-packs";
+import type { Car, Research } from "@/lib/types";
+import type { MarketInventory } from "@/lib/market-inventory-data";
 export type PortableData = {
+  marketInventory: MarketInventory;
   cars: Car[];
-  packs: Record<string, Pack>;
+  packs: Record<string, StoredPack>;
   research: Pick<
     Research,
     "sources" | "criteria" | "publication_issues" | "trim_equipment"
@@ -18,12 +22,14 @@ export type PortableData = {
   };
   art: Record<string, string>;
 };
-const data: PortableData = JSON.parse(
+const data = parsePortableData(
   document.getElementById("ev-data")!.textContent!,
-);
-export const catalogue = () => Object.values(data.packs).map((p) => p.car);
+) as PortableData;
+const packs = hydratePortablePacks(data.packs, data.research.sources);
+export const catalogue = () => Object.values(packs).map((p) => p.car);
 export const pickerCatalogue = () => data.cars;
-export const pack = (id: string) => data.packs[id];
+export const pack = (id: string) => packs[id];
 export const research = () => data.research;
 export const counts = () => data.counts;
 export const art = () => data.art;
+export const marketInventory = data.marketInventory;

@@ -1,0 +1,11 @@
+# Source75: availability evidence protects ranking eligibility
+
+ENGINEERING CHECKPOINT 75. Ranking eligibility now checks every explicit availability source for all configurations, including current/order-listed vehicles. Missing, empty, stale, future-dated, held, conflicted or inaccessible supporting sources fail closed under existing policy. All seven current rankings and the complete portable data payload are unchanged. All 553 non-HTTP tests, 24 focused checks, types/lint/validation, 388-page build and emitted-data verification passed. All 342 configuration packs, 329 summaries and 2196 sources are preserved. Original Model Y hero, nine selling points, protected assets, HTML shell and CSS remain unchanged. Browser/live HTTP/real-phone release verification remains pending.
+
+The original gap affected current/order-listed vehicles whose numeric evidence remained valid while separate availability sources were held, missing, stale or conflicted. The source gate now unions numeric and every explicit availability citation before checking existing source and freshness policy. An explicit empty citation list is rejected. Existing outgoing New-stock gates and the separate legacy absent-record behavior are preserved.
+
+Nine regression tests cover fresh ties, seven invalid source cases, missing/empty citations, multiple sources, absent legacy versus stale explicit records, outgoing stock behavior, derived strength removal and restoration, full/page-scoped evidence parity and source wrapper identity, and mutation safety. Existing tests, fixtures, data and all three approval registries remain unchanged.
+
+Root verified that all seven actual current rankings are exactly unchanged, and compared the entire emitted portable payload with preview25. All 342 configuration packs, 329 summaries and 2196 sources are retained. The lossless codec, complete market inventory, 18 protected visual inputs, original hero, HTML shell and CSS are unchanged. Any small JavaScript size growth comes from the additional evidence guard, not new catalogue data.
+
+No browser, localhost/HTTP test, real-phone test, seller contact, deployment or production release occurred. This is an engineering checkpoint, not release approval.

@@ -1,17 +1,27 @@
 "use client";
+import { issueReaderText } from "@/lib/issue-presentation";
+import { sourcePresentation } from "@/lib/source-presentation";
+import { matchesSearch } from "@/lib/search";
+import { comparisonOverviewKeys } from "@/lib/citable";
+import { busComparisonContext, boundedComparisonContext } from "@/lib/comparison-context";
 import { SelectedCopy } from "./selected-copy";
 import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
-import { useEffect, useOptimistic, useState, useTransition } from "react";
+import { useEffect, useOptimistic, useRef, useState, useTransition } from "react";
+import { comparisonFocusOutcome, type ComparisonFocusRequest } from "@/lib/comparison-focus";
 import type { Car, Pack, Research, Selection } from "@/lib/types";
+import type { ComparisonPickerCar } from "@/lib/picker-car";
 import {
   formatFact,
   selectionUrl,
   factsDiffer,
   featuresDiffer,
   compareFacts,
+  comparisonFactLabel,
 } from "@/lib/compare";
-import { priorities, site, availabilityLabels } from "@/lib/config";
+import { priorities, site } from "@/lib/config";
+import { buyerAvailabilityText, buyerAvailabilityCheckedAt } from "@/lib/buyer-availability";
+import { FreshnessLabel } from "./freshness-label";
 import {
   FactValue,
   Notice,
@@ -25,8 +35,7 @@ import { VariantPicker } from "./picker";
 import { orderChapters, type Chapter } from "@/lib/chapters";
 import { FootnoteRefs } from "./footnotes";
 
-type Props = {
-  cars: Car[];
+type SharedProps = {
   packs: Pack[];
   state: Selection;
   criteria: Research["criteria"];
@@ -39,9 +48,14 @@ type Props = {
     outgoing: number;
     provisional: number;
   };
-  mode: "home" | "compare";
   onLocalChange?: (state: Selection, url: string) => void;
 };
+type Props = SharedProps &
+  (
+    | { mode: "home"; cars: Car[] }
+    | { mode: "compare"; cars: (Car | ComparisonPickerCar)[] }
+  );
+
 export default function Experience({
   cars,
   packs,
@@ -61,6 +75,23 @@ export default function Experience({
   const router = useRouter(),
     pathname = usePathname();
   const [pending, startTransition] = useTransition();
+  const comparisonSelectors = useRef<HTMLDivElement>(null);
+  const requestedSelectorFocus = useRef<ComparisonFocusRequest | null>(null);
+  useEffect(() => {
+    const request = requestedSelectorFocus.current;
+    if (!request) return;
+    const outcome = comparisonFocusOutcome(request, {
+      pending, mode, committedIds: serverState.ids, selectedIds: state.ids,
+      packIds: packs.map((pack) => pack.car.id), active: state.active,
+      canRestoreFocus: !document.activeElement || document.activeElement === document.body,
+    });
+    if (outcome === "wait") return;
+    requestedSelectorFocus.current = null;
+    if (outcome === "focus") {
+      comparisonSelectors.current
+        ?.querySelectorAll<HTMLButtonElement>(".picker-trigger")[2]?.focus();
+    }
+  }, [pending, mode, serverState.ids, state.ids, state.active, packs]);
   const [saveMessage, setSaveMessage] = useState("");
   const [trayVisible, setTrayVisible] = useState(false);
   useEffect(() => {
@@ -69,7 +100,12 @@ export default function Experience({
     window.addEventListener("scroll", update, { passive: true });
     return () => window.removeEventListener("scroll", update);
   }, []);
-  function change(patch: Partial<Selection>, path = pathname) {
+  function change(patch: Partial<Selection>, path = pathname, focusThirdControl = false) {
+    const next = { ...state, ...patch };
+    // Newer navigation or selection intent cancels an earlier focus request.
+    requestedSelectorFocus.current = focusThirdControl
+      ? { ids: [...next.ids], active: next.active }
+      : null;
     startTransition(() => {
       updateOptimistic(patch);
       if (onLocalChange) {
@@ -108,23 +144,24 @@ export default function Experience({
   const filteredCriteria = criteria.filter(
     (c) =>
       (state.category === "All categories" || c.group === state.category) &&
-      `${c.label} ${c.definition} ${packs
-        .flatMap((p) => {
-          const f = p.features.find((f) => f.criterion === c.key);
-          return f
-            ? [
-                f.value,
-                f.status,
-                f.conditions,
-                f.condition_label || "",
-                ...(f.usability_notes || []),
-                f.confirmation_needed || "",
-              ]
-            : [];
-        })
-        .join(" ")}`
-        .toLowerCase()
-        .includes(state.q.toLowerCase()) &&
+      matchesSearch(
+        `${c.label} ${c.definition} ${packs
+          .flatMap((p) => {
+            const f = p.features.find((f) => f.criterion === c.key);
+            return f
+              ? [
+                  f.value,
+                  f.status,
+                  f.conditions,
+                  f.condition_label || "",
+                  ...(f.usability_notes || []),
+                  f.confirmation_needed || "",
+                ]
+              : [];
+          })
+          .join(" ")}`,
+        state.q,
+      ) &&
       (!state.diff ||
         featuresDiffer(
           packs.map((p) => p.features.find((f) => f.criterion === c.key)!),
@@ -195,7 +232,7 @@ export default function Experience({
                         : "A researched alternative"}
                     </span>
                     <span className="small">
-                      {p.car.year} · {p.car.drive}
+                      {p.car.year ?? "MY unverified"} · {p.car.drive}
                     </span>
                   </div>
                   <div className="stage-identity">
@@ -273,7 +310,7 @@ export default function Experience({
         )}
         {mode === "compare" && (
           <div className="container">
-            <div className="compare-selectors">
+            <div className="compare-selectors" ref={comparisonSelectors}>
               {packs.map((p, i) => (
                 <div
                   key={i}
@@ -285,8 +322,7 @@ export default function Experience({
                     cars={cars}
                     selected={p.car.id}
                     exclude={state.ids.filter((_, j) => i !== j)}
-                    baseline={i === 0}
-                    label={i === 0 ? "Model Y baseline" : `Challenger ${i}`}
+                    label={i === 0 ? "First vehicle" : `Vehicle ${i + 1}`}
                     onSelect={(id) => select(id, i)}
                   />
                   {i === 2 && (
@@ -297,7 +333,7 @@ export default function Experience({
                         change({
                           ids: state.ids.slice(0, 2),
                           active: state.ids[1],
-                        })
+                        }, pathname, true)
                       }
                     >
                       Remove third vehicle
@@ -311,7 +347,7 @@ export default function Experience({
                   exclude={state.ids}
                   label="Add a third vehicle"
                   onSelect={(id) =>
-                    change({ ids: [...state.ids, id], active: id })
+                    change({ ids: [...state.ids, id], active: id }, pathname, true)
                   }
                 />
               )}
@@ -389,7 +425,10 @@ export default function Experience({
                   </strong>
                   <span>{p.car.trim}</span>
                   <span className="small">
-                    {availabilityLabels[p.car.availability]}
+                    {buyerAvailabilityText(p.car)}
+                  </span>
+                  <span className="small">
+                    <FreshnessLabel checkedAt={buyerAvailabilityCheckedAt(p.car)} factKey="availability" prefix="Availability checked on" />
                   </span>
                 </div>
               ))}
@@ -399,14 +438,20 @@ export default function Experience({
                 <div className="difference-summary">
                   <span className="eyebrow">A useful starting point</span>
                   <p>
-                    {comparedRange.state === "comparable" &&
-                    comparedRange.delta !== 0
-                      ? `${Math.abs(comparedRange.delta!)} km difference in the WLTP claims. Check the wheel and variant conditions below.`
-                      : "Range needs a closer look at the applicable conditions."}{" "}
-                    {pair[0].car.facts.seats.value !==
-                    pair[1].car.facts.seats.value
-                      ? `${pair[0].car.facts.seats.value} seats versus ${pair[1].car.facts.seats.value}.`
-                      : `Both selected vehicles have ${pair[0].car.facts.seats.value} seats.`}{" "}
+                    {busComparisonContext(packs.map((p) => p.car)) || boundedComparisonContext(packs.map((p) => p.car)) || (
+                      <>
+                        {comparedRange.state === "comparable" &&
+                        comparedRange.delta !== 0
+                          ? `${Math.abs(comparedRange.delta!)} km difference in the ${pair[0].car.facts.range_km.basis} claims. Check the wheel and variant conditions below.`
+                          : "Range needs a closer look at the applicable conditions."}{" "}
+                        {pair.some((p) => p.car.facts.seats.value === null)
+                          ? "Seat count needs confirmation for one or both versions."
+                          : pair[0].car.facts.seats.value !==
+                              pair[1].car.facts.seats.value
+                            ? `${pair[0].car.facts.seats.value} seats versus ${pair[1].car.facts.seats.value}.`
+                            : `Both selected vehicles have ${pair[0].car.facts.seats.value} seats.`}{" "}
+                      </>
+                    )}{" "}
                     No overall winner score.
                   </p>
                 </div>
@@ -415,32 +460,109 @@ export default function Experience({
                   packs={packs}
                   active={state.active}
                   id="overview"
-                  rows={[
-                    "price_aud",
-                    "range_km",
-                    "seats",
-                    "dc_charge_time_min",
-                    "boot_l",
-                    "warranty",
-                  ]
+                  rows={comparisonOverviewKeys(packs.map((p) => p.car))
                     .filter(
                       (key) =>
                         !state.diff ||
-                        factsDiffer(packs.map((p) => p.car.facts[key])),
+                        new Set(
+                          packs.map((p) =>
+                            JSON.stringify(p.car.facts[key] ?? null),
+                          ),
+                        ).size > 1,
                     )
                     .map((key) => ({
                       key,
-                      label: packs[0].car.facts[key].label,
-                      cells: packs.map((p) => (
-                        <FactValue
-                          key={p.car.id}
-                          compact
-                          fact={p.car.facts[key]}
-                          onEvidence={() => showFact(p, key)}
-                        />
-                      )),
+                      label: comparisonFactLabel(
+                        key,
+                        packs.map((p) => p.car.facts[key]),
+                      ),
+                      cells: packs.map((p) =>
+                        p.car.facts[key] ? (
+                          <FactValue
+                            key={p.car.id}
+                            compact
+                            fact={p.car.facts[key]}
+                            onEvidence={() => showFact(p, key)}
+                          />
+                        ) : (
+                          <span key={p.car.id} className="muted">
+                            Not established for this configuration
+                          </span>
+                        ),
+                      ),
                     }))}
                 />
+                {packs.some(
+                  (p) =>
+                    p.car.vehicleClass && p.car.vehicleClass !== "passenger",
+                ) && (
+                  <section
+                    className="inline-chapter"
+                    aria-label="Commercial load and body details"
+                  >
+                    <header className="inline-chapter-heading">
+                      <div>
+                        <h2>Load and body details</h2>
+                        <p>
+                          Check the exact body, equipment and combined-mass
+                          limits. Published payload is not spare capacity after
+                          occupants, accessories and trailer load.
+                        </p>
+                      </div>
+                    </header>
+                    <ComparisonTable
+                      packs={packs}
+                      active={state.active}
+                      id="commercial"
+                      rows={[
+                        "body_configuration",
+                        "payload_kg",
+                        "gvm_kg",
+                        "gcm_kg",
+                        "cargo_volume_m3",
+                        "cargo_length_mm",
+                        "cargo_height_mm",
+                        "cargo_width_mm",
+                        "wheelarch_width_mm",
+                        "retail_driveaway_from_aud",
+                        "abn_driveaway_from_aud",
+                        "warranty_years",
+                        "warranty_km",
+                        "battery_warranty_years",
+                        "battery_warranty_km",
+                      ]
+                        .filter(
+                          (key) =>
+                            packs.some((p) => p.car.facts[key]) &&
+                            (!state.diff ||
+                              new Set(
+                                packs.map((p) =>
+                                  JSON.stringify(p.car.facts[key] ?? null),
+                                ),
+                              ).size > 1),
+                        )
+                        .map((key) => ({
+                          key,
+                          label: comparisonFactLabel(
+                            key,
+                            packs.map((p) => p.car.facts[key]),
+                          ),
+                          cells: packs.map((p) =>
+                            p.car.facts[key] ? (
+                              <FactValue
+                                key={p.car.id}
+                                fact={p.car.facts[key]}
+                              />
+                            ) : (
+                              <span key={p.car.id} className="muted">
+                                Not researched for this configuration
+                              </span>
+                            ),
+                          ),
+                        }))}
+                    />
+                  </section>
+                )}
                 <InlineChapters
                   chapters={orderedChapters}
                   packs={packs}
@@ -558,14 +680,18 @@ export default function Experience({
                     {p.car.brand} {p.car.model} · {p.car.trim}
                   </h3>
                   {p.car.issues.map((i) => (
-                    <p key={i.issue_id}>{i.publication_action}</p>
+                    <p key={i.issue_id}>{issueReaderText(i)}</p>
                   ))}
                   <h4>Evidence references</h4>
-                  {p.sources.map((s) => (
-                    <p key={s.id}>
-                      {s.id}: {s.title} — {s.url} (accessed {s.accessed_date})
-                    </p>
-                  ))}
+                  {p.sources.map((s) => {
+                    const presentation = sourcePresentation(s);
+                    return (
+                      <p key={s.id}>
+                        {s.id}: {presentation.title} — {s.url} (accessed {s.accessed_date})
+                        {presentation.note && <> · {presentation.note}</>}
+                      </p>
+                    );
+                  })}
                 </section>
               ))}
             </div>
@@ -708,7 +834,7 @@ export default function Experience({
     </>
   );
 }
-function ComparisonTable({
+export function ComparisonTable({
   packs,
   active,
   rows,
@@ -735,8 +861,13 @@ function ComparisonTable({
       <thead className={visibleHead ? "detail-column-heads" : "sr-only"}>
         <tr>
           <th scope="col">Criterion</th>
-          {packs.map((p) => (
-            <th scope="col" id={`${columnId}-${p.car.id}`} key={p.car.id}>
+          {packs.map((p, i) => (
+            <th
+              scope="col"
+              id={`${columnId}-${p.car.id}`}
+              key={p.car.id}
+              className={i > 0 && p.car.id !== active ? "inactive-mobile" : ""}
+            >
               {p.car.brand} {p.car.model} {p.car.trim}
             </th>
           ))}
@@ -840,10 +971,11 @@ function InlineChapters({
                   visibleHead
                   rows={keys.map((key) => ({
                     key,
-                    label:
-                      packs[0].car.facts[key]?.label ||
-                      criteria.find((c) => c.key === key)?.label ||
+                    label: comparisonFactLabel(
                       key,
+                      packs.map((p) => p.car.facts[key]),
+                      criteria.find((c) => c.key === key)?.label || key,
+                    ),
                     cells: packs.map((p) =>
                       p.car.facts[key] ? (
                         <FactValue key={p.car.id} fact={p.car.facts[key]} />

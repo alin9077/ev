@@ -1,3 +1,4 @@
+import { CorrectionHistory } from "@/components/correction-history";
 import Link from "next/link";
 import type { Query } from "@/lib/page-props";
 import { research } from "@/lib/data";
@@ -27,8 +28,9 @@ export default async function Sources({
         different evidential weight. Dates and access limitations stay attached.
       </p>
       <p>
-        Research review: 6 October 2026. This registry preserves the supplied
-        references; it does not imply every page was freshly retrieved.
+        Research dates vary by claim and source. This registry preserves
+        supplied and subsequently checked references; it does not imply every
+        page was freshly retrieved.
       </p>
       <>
         <section className="source-audit" id="source-audit">
@@ -60,6 +62,7 @@ export default async function Sources({
         )}
         <SourceRegistry sources={sources} />
       </>
+      <CorrectionHistory />
       <section className="editorial-text">
         <h2>Corrections</h2>
         <p>
