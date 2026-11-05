@@ -1,8 +1,15 @@
 import type { Car, Fact, Feature } from "./types";
 import { BASELINE } from "./config";
 
+/** The original illustrated experience covers established records only. */
+export function curatedFleetCars(cars: Car[]) {
+  return cars.filter((c) => c.researchStage !== "partial");
+}
+
 /** One current representative per existing family; this is not a sales ranking. */
 export function fleetSelection(cars: Car[], query: URLSearchParams) {
+  // This legacy illustrated route is curated; incomplete additions live in discovery.
+  cars = curatedFleetCars(cars);
   const baseline =
     cars.find(
       (c) => c.id === query.get("baseline") && c.modelId === "tesla_model_y",
@@ -58,13 +65,9 @@ export function featureCondition(f: Feature) {
   );
 }
 export function factCondition(f: Fact) {
+  if (f.conditionExplanation) return f.conditionExplanation;
   if (f.resolvedElsewhere)
     return "Not from the maker's Australian specification for this exact version. The source is named below.";
-  if (f.key === "price_aud")
-    return "This dated figure is not a driveaway quote. Confirm it on a current order sheet.";
-  if (f.key === "zero_to_100_s")
-    return "The figure has changed since launch or is reported, not confirmed for this build.";
-  if (f.key === "range_km")
-    return "Reported for this version; not yet confirmed on the maker's Australian sheet.";
-  return "Carried over from a closely related version; not yet confirmed for this one.";
+  if (f.qualifications.length) return f.qualifications.join(" ");
+  return "Source conditions apply. Check the measurement basis and exact-version details below.";
 }

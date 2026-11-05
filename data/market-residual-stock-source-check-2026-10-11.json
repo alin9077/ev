@@ -1,0 +1,446 @@
+{
+  "id": "residual-stock-source-check-2026-10-11",
+  "checkedAt": "2026-10-11",
+  "scope": "Bounded source-history findings for four residual-stock leads, with only the existing MIFA 9 evidence wording amended. No current New unit, factory order or detailed/ranking admission is established.",
+  "sourcePackets": {
+    "mifa9-wording91-candidate": "f372c1bf3c59721bb5813bb9d03ae9d0ca375f3db8c5b69b655d583be056029d",
+    "mifa9-wording91-review": "875f2a1d5e2e5169e60e098eeb84ce1414af38b5a3db10153f85a6037e9cac29",
+    "passenger-gap-triage90": "91cf77dd68f22d141997d37eadb7e73c4b87b269ee9b5cce2b4f2188946cf568",
+    "residual-stock90-independent-review": "f5c13397c72fb7959efc19ecdfd6cc91ef902c9db1bf06633023a4550793aa28"
+  },
+  "independentMifaReviewSHA256": "13db2fc9fb24dc66d9217882c32ad007b27e1483612a2c73d89c241fb38fe8c9",
+  "sources": [
+    {
+      "id": "callaghan-mifa9-model",
+      "url": "https://www.callaghanldv.com.au/models/mifa-9",
+      "finalUrl": "https://www.callaghanldv.com.au/models/mifa-9",
+      "status": 404,
+      "method": "GET",
+      "requestBody": null,
+      "credentialsUsed": false,
+      "fetchedAt": "2026-10-11T20:08:55.243499+00:00",
+      "localPath": "raw/callaghan-mifa9-model.html",
+      "metadataPath": "raw/callaghan-mifa9-model.metadata.json",
+      "sha256": "5d64064c279d1080a301be5cf888d970c5743f758725a2eecf2691ce202cd28e",
+      "bytes": 39397,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "id": "ldv-national",
+      "url": "https://www.ldvautomotive.com.au/",
+      "finalUrl": "https://www.ldvautomotive.com.au/",
+      "status": 200,
+      "method": "GET",
+      "requestBody": null,
+      "credentialsUsed": false,
+      "fetchedAt": "2026-10-11T20:07:16.100682+00:00",
+      "localPath": "raw/ldv-national.html",
+      "metadataPath": "raw/ldv-national.metadata.json",
+      "sha256": "bd1b387569fc7cda5e273f18abe8984b94df1c4d39a30d6b28cab8b71f626443",
+      "bytes": 304369,
+      "contentType": "text/html; charset=UTF-8"
+    },
+    {
+      "id": "ferntree-mifa9-model",
+      "url": "https://ftgldv.com.au/vehicle/mifa-9",
+      "finalUrl": "https://www.ferntreegullyautomotive.com.au/",
+      "status": 200,
+      "method": "GET",
+      "requestBody": null,
+      "credentialsUsed": false,
+      "fetchedAt": "2026-10-11T20:07:33.434216+00:00",
+      "localPath": "raw/ferntree-mifa9-model.html",
+      "metadataPath": "raw/ferntree-mifa9-model.metadata.json",
+      "sha256": "9bda205b22bba33ddb471710fef0ca8fedaa461ba656b4cfc7a73958f9b10c29",
+      "bytes": 355557,
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "id": "callaghan-new-demo",
+      "url": "https://www.callaghanldv.com.au/search/new-and-demo-cars",
+      "finalUrl": "https://www.callaghanldv.com.au/search/new-and-demo-cars",
+      "status": 200,
+      "method": "GET",
+      "requestBody": null,
+      "credentialsUsed": false,
+      "fetchedAt": "2026-10-11T20:07:14.748437+00:00",
+      "localPath": "raw/callaghan-new-demo.html",
+      "metadataPath": "raw/callaghan-new-demo.metadata.json",
+      "sha256": "8812d6973be31390441ecc4021fe2519d1d634e74772f33b75150288174a573e",
+      "bytes": 672321,
+      "contentType": "text/html; charset=utf-8"
+    }
+  ],
+  "reviewedResidualRecommendations": [
+    {
+      "id": "audi-q8-e-tron",
+      "collection": "unverifiedLeads",
+      "preferredAction": "no_application_change",
+      "reason": "The existing note already separates explicit manufacturer order closure from unverified residual New stock. Fresh Demo/sold/redirect exclusions do not change that disposition.",
+      "optionalDatedSourceHistoryText": "On 11 October 2026, Audi Australia still stated that Q8 e-tron and Q8 Sportback e-tron were no longer available to order. In this bounded residual-stock check, Autosports 826458 / WAUZZZGE9RB048839 was Demo; 830495 / WAUZZZGE5RB054055 was Demo and explicitly sold; Alto OAG-AD-23194775 redirected to generic stock. No exact eligible New unit was verified. Residual New stock remains unverified, not established as exhausted.",
+      "sourceURLs": [
+        "https://www.audi.com.au/en/models/q8-e-tron/q8-e-tron/",
+        "https://www.audi.com.au/en/models/q8-e-tron/q8-sportback-e-tron/",
+        "https://autosportsgroup.com.au/826458-1339856-audi-q8etron-2023/",
+        "https://autosportsgroup.com.au/830495-1387183-audi-q8etron-2024/",
+        "https://www.alto.com.au/stock/details/OAG-AD-23194775/2024-audi-q8-e-tron-demo"
+      ],
+      "preserve": {
+        "orderStatus": "not_current",
+        "stockStatus": "unverified",
+        "resolutionStatus": "unresolved",
+        "rankingEligible": false,
+        "trims": []
+      },
+      "limitsToRetain": [
+        "826458 title 2023, literal MY:23, build 12/2023; no compliance field observed. Do not infer MY24 from VIN/build.",
+        "830495 literal MY:24, build 01/2024, compliance 04/2024, Demo and sold; generic surviving enquiry form is not an available offer.",
+        "No SUV/Sportback/Launch Edition technical binding for a new eligible unit; SQ8, combustion/PHEV and pre-Q8 e-tron remain distinct.",
+        "National API prior HTTP 403 yielded no inventory response; not retried here or in packet90. Solitaire HTTP 502 body reports certificate hostname mismatch; no security bypass.",
+        "ASG one returned Q3 and Melbourne 48 received links versus 53 Results are bounded responses, not complete group/national inventories."
+      ],
+      "reopenCondition": "Fresh exact Australian New/unsold Q8 e-tron unit evidence identifying stock/VIN, exact grade/body and condition, with independent technical/MY/build applicability before any specification or eligibility admission."
+    },
+    {
+      "id": "volvo-ec40-c40",
+      "collection": "unverifiedLeads",
+      "preferredAction": "no_application_change",
+      "reason": "The existing unresolved residual-New hold is already correct. This pass rejects one exact C40 candidate and does not establish EC40 or nationwide availability.",
+      "optionalDatedSourceHistoryText": "On 11 October 2026, Berwick C40 Recharge Twin AWD stock 11048122 / VIN LYVXKERR2RL093668 had an explicit SOLD marker and sold sentence in the received page body. Its retained New label and embedded $75,990 price do not establish an unsold offer. Residual New C40/EC40 stock remains unverified; this exact-unit rejection is not a national stock-absence finding.",
+      "sourceURLs": [
+        "https://volvocarsberwick.com.au/11048122-1435015-volvo-c40-2023/",
+        "https://volvocarsberwick.com.au/new-cars/"
+      ],
+      "preserve": {
+        "orderStatus": "not_current",
+        "stockStatus": "unverified",
+        "resolutionStatus": "unresolved",
+        "rankingEligible": false,
+        "trims": []
+      },
+      "limitsToRetain": [
+        "Fresh body: C40 Recharge Twin AWD, stock/VIN, electric, five seats, 10 km, New label, explicit sold state. No browser-rendered-state claim was made.",
+        "Fresh metadata itself retains NewCondition, 75990.00 price, vehicleModelDate 2023 and a 2024/MY24 description; availability metadata says OutOfStock/SoldOut. These distinctions are not solely a stale indexing issue.",
+        "DIP906 registration, 07/2024 compliance and older MY23 comments were not verified in the fresh body. They must not be promoted from indexed text into current exact-epoch data.",
+        "The 27-vehicle Berwick response contains no standalone C40/EC40 text; it is one dealer response, not a national census."
+      ],
+      "reopenCondition": "A different fresh Australian New and unsold C40 or EC40 exact-unit advertisement, or credible new exact evidence that expressly resolves the sold state, plus independent MY/build/grade/technical identity. No reopening from the same stale snippet."
+    },
+    {
+      "id": "hyundai-ioniq-6-non-n",
+      "collection": "unverifiedLeads",
+      "preferredAction": "no_application_change",
+      "reason": "The current row already records the old product redirect and lack of current standard trim inventory. The generic calculator redirect and mislabeled dealer stock page only reinforce that hold.",
+      "optionalDatedSourceHistoryText": "On 11 October 2026, the former standard IONIQ 6 product URL redirected to Hyundai's general eco range, and its historical launch article's order link redirected to the general price calculator. The Phil Gilbert route ending /new-vehicles/ioniq-9/our-stock/ had an IONIQ 6 Stock heading but twelve returned Kona card titles. These routes did not establish a current non-N order configuration or exact New residual unit; nationwide absence was not established.",
+      "sourceURLs": [
+        "https://www.hyundai.com/au/en/cars/eco/ioniq6",
+        "https://www.hyundai.com/au/en/news/press-room/ioniq-6-prophecy-realised",
+        "https://www.hyundai.com/au/en/cars/eco/ioniq6/shop",
+        "https://www.philgilberthyundai.com.au/new-vehicles/ioniq-9/our-stock/"
+      ],
+      "preserve": {
+        "orderStatus": "not_current",
+        "stockStatus": "unverified",
+        "resolutionStatus": "unresolved",
+        "rankingEligible": false,
+        "trims": []
+      },
+      "limitsToRetain": [
+        "The literal Phil Gilbert requested/final path is ioniq-9 although the heading says IONIQ 6. Do not silently replace it with a guessed corrected URL.",
+        "The twelve titles are card p elements, not twelve IONIQ 6 vehicle offers. They include Kona hybrids and are only the returned first page.",
+        "Historical launch allocation/deposit copy has no verified current selected non-N configuration. The launch publication day is not established from its asset path.",
+        "Prior 10 October saved manufacturer JSON has disabled standard-model pricing, empty categories and variant colours; the historical 2023 response has no variants. Their stale soldOut=false flags are not current positive availability.",
+        "IONIQ 6 N, overseas facelift/N Line and prior CE epochs are separate."
+      ],
+      "reopenCondition": "A presently selected Australian non-N orderable configuration with explicit current offer terms, or a fresh exact unsold New residual unit, plus its own grade/MY/build/technical applicability."
+    },
+    {
+      "id": "ldv-mifa-9",
+      "collection": "records",
+      "preferredAction": "conditional_minimal_evidence_note_and_history_refresh",
+      "reason": "Unlike the other three, the current note makes a present-tense assertion that the cited Callaghan model page retains the grades. The saved fresh response is HTTP 404, so the assertion should be qualified as historical in a later authorized evidence-only update.",
+      "proposedEvidenceNote": "The 10 October 2026 audit recorded Mode, Executive and Luxe electric seven-seat variants from Callaghan LDV's model page. On 11 October, that cited URL returned HTTP 404 and MIFA 9 was absent from the captured LDV Australia range. Current factory ordering and residual New stock remain unverified; these bounded observations do not establish nationwide unavailability.",
+      "proposedCheckedAtIfAdopted": "2026-10-11",
+      "checkedAtMeaning": "Date of the new bounded availability/source check only, not fresh verification of grades, MY, build, specifications or stock. Preserve original 2026-10-10 before-record and original evidenceHistory unchanged.",
+      "appendOnlyEvidenceHistoryText": "11 October 2026 residual-stock source check: the cited Callaghan MIFA 9 model URL returned HTTP 404. The former Ferntree MIFA 9 URL resolved to the generic Ferntree Gully Automotive homepage. Callaghan's received New/demo page title/model facets indicated 26 vehicles across other models; its returned embedded payload contained 21 hits and no MIFA. The captured national range had no MIFA 9 entry. These source-scoped findings do not prove all Australian New stock is exhausted or that factory ordering is formally closed.",
+      "sourceURLs": [
+        "https://www.callaghanldv.com.au/models/mifa-9",
+        "https://www.ldvautomotive.com.au/",
+        "https://ftgldv.com.au/vehicle/mifa-9",
+        "https://www.callaghanldv.com.au/search/new-and-demo-cars"
+      ],
+      "preserve": {
+        "orderStatus": "listed_unconfirmed",
+        "stockStatus": "unverified",
+        "rankingEligible": false,
+        "trims": [
+          "Mode",
+          "Executive",
+          "Luxe"
+        ],
+        "trimCoverage": "verified_named_configurations_incomplete_matrix",
+        "modelYear": null,
+        "catalogueCoverage": "market_audit_only",
+        "availabilityCategory": "listing_only_order_stock_unconfirmed",
+        "completeVehicleCountEligible": null,
+        "recordScope": "model_or_named_configuration_family"
+      },
+      "limitsToRetain": [
+        "Do not move this market-only record into unverifiedLeads, delete it, create new trim rows, change counts or resolve it.",
+        "listed_unconfirmed and named-grade coverage remain historical audit classifications; the revised note must not imply a currently surviving Callaghan listing or that all three grades are now verified for sale.",
+        "404 is an HTTP status in saved capture metadata. Received Callaghan body is sparse; not-found content also occurs in embedded framework payload. No visible browser 404 screen was verified.",
+        "26 is source query/facet scope; 21 is returned embedded hit objects; the disjunctive condition facet includes used and must not be added as another inventory total.",
+        "Generic Alan Mance dealership mention has only a saved web-tool extract in this packet, not an independently saved fresh raw response; no recommendation relies on it as a live offer.",
+        "The original commercial-ev-census.json identity is preserved by the existing row and history. This review does not reconstruct or overwrite that historical evidence."
+      ],
+      "reopenCondition": "A live exact Australian unsold New MIFA 9 BEV offer identifying stock/VIN and grade, or explicit model-specific current Australian order terms, plus exact technical/epoch verification. Petrol MIFA, brochures, generic quotes and enquiry forms do not suffice."
+    }
+  ],
+  "previousRecord": {
+    "brand": "LDV",
+    "model": "MIFA 9",
+    "id": "ldv-mifa-9",
+    "overlapKeys": [
+      "ldv-mifa-9"
+    ],
+    "vehicleType": "people_mover",
+    "trims": [
+      "Mode",
+      "Executive",
+      "Luxe"
+    ],
+    "sourceUrls": [
+      "https://www.callaghanldv.com.au/models/mifa-9",
+      "https://www.ldvautomotive.com.au/"
+    ],
+    "checkedAt": "2026-10-10",
+    "orderStatus": "listed_unconfirmed",
+    "stockStatus": "unverified",
+    "evidenceNote": "Callaghan LDV's local model page retains Mode, Executive and Luxe electric seven-seat variants. MIFA 9 is absent from the national showroom range accessed on the check date.",
+    "limitations": [
+      "Treat as legacy/residual-availability candidate, not confirmed current factory order. Dealer model page alone does not verify remaining new stock. Do not confuse petrol MIFA with MIFA 9."
+    ],
+    "vehicleClass": "passenger",
+    "modelAliases": [],
+    "sourceRecordIds": [
+      "ldv-mifa-9"
+    ],
+    "sourceArtifacts": [
+      "commercial-ev-census.json"
+    ],
+    "rankingEligible": false,
+    "trimCoverage": "verified_named_configurations_incomplete_matrix",
+    "evidenceHistory": [
+      {
+        "sourceArtifact": "commercial-ev-census.json",
+        "sourceRecordId": "ldv-mifa-9",
+        "orderStatus": "listed_unconfirmed",
+        "stockStatus": "unverified",
+        "trims": [
+          "Mode",
+          "Executive",
+          "Luxe"
+        ],
+        "evidenceNote": "Callaghan LDV's local model page retains Mode, Executive and Luxe electric seven-seat variants. MIFA 9 is absent from the national showroom range accessed on the check date.",
+        "limitations": [
+          "Treat as legacy/residual-availability candidate, not confirmed current factory order. Dealer model page alone does not verify remaining new stock. Do not confuse petrol MIFA with MIFA 9."
+        ],
+        "sourceUrls": [
+          "https://www.callaghanldv.com.au/models/mifa-9",
+          "https://www.ldvautomotive.com.au/"
+        ]
+      }
+    ],
+    "modelYear": null,
+    "catalogueCoverage": "market_audit_only",
+    "availabilityCategory": "listing_only_order_stock_unconfirmed",
+    "completeVehicleCountEligible": null,
+    "recordScope": "model_or_named_configuration_family"
+  },
+  "previousRecordCanonicalSHA256": "420e6845b0ae71e445ef667fd262da49e79650e9a36033fa6cbd5c545dea4332",
+  "amendedRecord": {
+    "brand": "LDV",
+    "model": "MIFA 9",
+    "id": "ldv-mifa-9",
+    "overlapKeys": [
+      "ldv-mifa-9"
+    ],
+    "vehicleType": "people_mover",
+    "trims": [
+      "Mode",
+      "Executive",
+      "Luxe"
+    ],
+    "sourceUrls": [
+      "https://www.callaghanldv.com.au/models/mifa-9",
+      "https://www.ldvautomotive.com.au/",
+      "https://ftgldv.com.au/vehicle/mifa-9",
+      "https://www.callaghanldv.com.au/search/new-and-demo-cars"
+    ],
+    "checkedAt": "2026-10-11",
+    "orderStatus": "listed_unconfirmed",
+    "stockStatus": "unverified",
+    "evidenceNote": "The 10 October 2026 audit recorded Mode, Executive and Luxe electric seven-seat variants from Callaghan LDV's model page. On 11 October, that cited URL returned HTTP 404 and MIFA 9 was absent from the captured LDV Australia range. Current factory ordering and residual New stock remain unverified; these bounded observations do not establish nationwide unavailability.",
+    "limitations": [
+      "Treat as legacy/residual-availability candidate, not confirmed current factory order. Dealer model page alone does not verify remaining new stock. Do not confuse petrol MIFA with MIFA 9."
+    ],
+    "vehicleClass": "passenger",
+    "modelAliases": [],
+    "sourceRecordIds": [
+      "ldv-mifa-9"
+    ],
+    "sourceArtifacts": [
+      "commercial-ev-census.json",
+      "market-residual-stock-source-check-2026-10-11.json"
+    ],
+    "rankingEligible": false,
+    "trimCoverage": "verified_named_configurations_incomplete_matrix",
+    "evidenceHistory": [
+      {
+        "sourceArtifact": "commercial-ev-census.json",
+        "sourceRecordId": "ldv-mifa-9",
+        "orderStatus": "listed_unconfirmed",
+        "stockStatus": "unverified",
+        "trims": [
+          "Mode",
+          "Executive",
+          "Luxe"
+        ],
+        "evidenceNote": "Callaghan LDV's local model page retains Mode, Executive and Luxe electric seven-seat variants. MIFA 9 is absent from the national showroom range accessed on the check date.",
+        "limitations": [
+          "Treat as legacy/residual-availability candidate, not confirmed current factory order. Dealer model page alone does not verify remaining new stock. Do not confuse petrol MIFA with MIFA 9."
+        ],
+        "sourceUrls": [
+          "https://www.callaghanldv.com.au/models/mifa-9",
+          "https://www.ldvautomotive.com.au/"
+        ]
+      },
+      {
+        "sourceArtifact": "market-residual-stock-source-check-2026-10-11.json",
+        "sourceRecordId": "ldv-mifa-9",
+        "checkedAt": "2026-10-11",
+        "originalObservationDate": "2026-10-10",
+        "evidenceNote": "11 October 2026 residual-stock source check: the cited Callaghan MIFA 9 model URL returned HTTP 404. The former Ferntree MIFA 9 URL resolved to the generic Ferntree Gully Automotive homepage. Callaghan's received New/demo page title/model facets indicated 26 vehicles across other models; its returned embedded payload contained 21 hits and no MIFA. The captured national range had no MIFA 9 entry. These source-scoped findings do not prove all Australian New stock is exhausted or that factory ordering is formally closed.",
+        "sourceUrls": [
+          "https://www.callaghanldv.com.au/models/mifa-9",
+          "https://www.ldvautomotive.com.au/",
+          "https://ftgldv.com.au/vehicle/mifa-9",
+          "https://www.callaghanldv.com.au/search/new-and-demo-cars"
+        ],
+        "qualification": "Date of the new bounded availability/source check only, not fresh verification of grades, MY, build, specifications or stock. Preserve original 2026-10-10 before-record and original evidenceHistory unchanged.",
+        "orderStatus": "listed_unconfirmed",
+        "stockStatus": "unverified",
+        "trims": [
+          "Mode",
+          "Executive",
+          "Luxe"
+        ],
+        "previousRecord": {
+          "brand": "LDV",
+          "model": "MIFA 9",
+          "id": "ldv-mifa-9",
+          "overlapKeys": [
+            "ldv-mifa-9"
+          ],
+          "vehicleType": "people_mover",
+          "trims": [
+            "Mode",
+            "Executive",
+            "Luxe"
+          ],
+          "sourceUrls": [
+            "https://www.callaghanldv.com.au/models/mifa-9",
+            "https://www.ldvautomotive.com.au/"
+          ],
+          "checkedAt": "2026-10-10",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "evidenceNote": "Callaghan LDV's local model page retains Mode, Executive and Luxe electric seven-seat variants. MIFA 9 is absent from the national showroom range accessed on the check date.",
+          "limitations": [
+            "Treat as legacy/residual-availability candidate, not confirmed current factory order. Dealer model page alone does not verify remaining new stock. Do not confuse petrol MIFA with MIFA 9."
+          ],
+          "vehicleClass": "passenger",
+          "modelAliases": [],
+          "sourceRecordIds": [
+            "ldv-mifa-9"
+          ],
+          "sourceArtifacts": [
+            "commercial-ev-census.json"
+          ],
+          "rankingEligible": false,
+          "trimCoverage": "verified_named_configurations_incomplete_matrix",
+          "evidenceHistory": [
+            {
+              "sourceArtifact": "commercial-ev-census.json",
+              "sourceRecordId": "ldv-mifa-9",
+              "orderStatus": "listed_unconfirmed",
+              "stockStatus": "unverified",
+              "trims": [
+                "Mode",
+                "Executive",
+                "Luxe"
+              ],
+              "evidenceNote": "Callaghan LDV's local model page retains Mode, Executive and Luxe electric seven-seat variants. MIFA 9 is absent from the national showroom range accessed on the check date.",
+              "limitations": [
+                "Treat as legacy/residual-availability candidate, not confirmed current factory order. Dealer model page alone does not verify remaining new stock. Do not confuse petrol MIFA with MIFA 9."
+              ],
+              "sourceUrls": [
+                "https://www.callaghanldv.com.au/models/mifa-9",
+                "https://www.ldvautomotive.com.au/"
+              ]
+            }
+          ],
+          "modelYear": null,
+          "catalogueCoverage": "market_audit_only",
+          "availabilityCategory": "listing_only_order_stock_unconfirmed",
+          "completeVehicleCountEligible": null,
+          "recordScope": "model_or_named_configuration_family"
+        }
+      }
+    ],
+    "modelYear": null,
+    "catalogueCoverage": "market_audit_only",
+    "availabilityCategory": "listing_only_order_stock_unconfirmed",
+    "completeVehicleCountEligible": null,
+    "recordScope": "model_or_named_configuration_family"
+  },
+  "applicationScope": {
+    "amendedRecordId": "ldv-mifa-9",
+    "changedFields": [
+      "sourceUrls",
+      "checkedAt",
+      "evidenceNote",
+      "sourceArtifacts",
+      "evidenceHistory"
+    ],
+    "otherRecordsUnchanged": true,
+    "originalHistoryUnchanged": true,
+    "originalObservationDate": "2026-10-10",
+    "wholeMarketReverified": false
+  },
+  "qualifications": [
+    "Do not move this market-only record into unverifiedLeads, delete it, create new trim rows, change counts or resolve it.",
+    "listed_unconfirmed and named-grade coverage remain historical audit classifications; the revised note must not imply a currently surviving Callaghan listing or that all three grades are now verified for sale.",
+    "404 is an HTTP status in saved capture metadata. Received Callaghan body is sparse; not-found content also occurs in embedded framework payload. No visible browser 404 screen was verified.",
+    "26 is source query/facet scope; 21 is returned embedded hit objects; the disjunctive condition facet includes used and must not be added as another inventory total.",
+    "Generic Alan Mance dealership mention has only a saved web-tool extract in this packet, not an independently saved fresh raw response; no recommendation relies on it as a live offer.",
+    "The original commercial-ev-census.json identity is preserved by the existing row and history. This review does not reconstruct or overwrite that historical evidence."
+  ],
+  "reopenCondition": "A live exact Australian unsold New MIFA 9 BEV offer identifying stock/VIN and grade, or explicit model-specific current Australian order terms, plus exact technical/epoch verification. Petrol MIFA, brochures, generic quotes and enquiry forms do not suffice.",
+  "countEffect": {
+    "marketAuditRecords": 0,
+    "namedTrims": 0,
+    "detailedConfigurations": 0,
+    "buyerSummaries": 0,
+    "rankingAdmissions": 0
+  },
+  "holds": {
+    "orderStatus": "listed_unconfirmed",
+    "stockStatus": "unverified",
+    "modelYear": null,
+    "rankingEligible": false,
+    "nationalNonavailabilityEstablished": false,
+    "currentFactoryClosureEstablished": false
+  },
+  "exactDetailedConfigurationProposalApproved": false
+}

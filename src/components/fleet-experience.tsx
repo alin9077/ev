@@ -10,7 +10,8 @@ import {
   useState,
 } from "react";
 import type { Fact, Pack, Research } from "@/lib/types";
-import { availabilityLabels, priorities } from "@/lib/config";
+import { priorities } from "@/lib/config";
+import { buyerAvailabilityText } from "@/lib/buyer-availability";
 import { fleetSelection } from "@/lib/fleet";
 import { compareFacts } from "@/lib/compare";
 import {
@@ -34,12 +35,16 @@ export default function FleetExperience({
   initial,
   criteria,
   version,
+  afterHero,
+  totalCatalogueCount = allPacks.length,
 }: {
   allPacks: Pack[];
   initial: Selection;
   criteria: Research["criteria"];
   /** The B site: the same comparison in the second look, with its own scenes. */
   version?: "b";
+  afterHero?: React.ReactNode;
+  totalCatalogueCount?: number;
 }) {
   const [selected, setSelected] = useState(initial);
   const [restored, setRestored] = useState(false);
@@ -166,7 +171,7 @@ export default function FleetExperience({
                         {c.car.trim}
                         {c.car.availability === "current_or_order_listed"
                           ? ""
-                          : ` · ${availabilityLabels[c.car.availability]}`}
+                          : ` · ${buyerAvailabilityText(c.car)}`}
                       </option>
                     ))}
                 </select>
@@ -187,7 +192,7 @@ export default function FleetExperience({
           Starts with the lowest listed current trim in each alternative family.
           The catalogue covers nine of Australia’s ten best-selling EVs for
           January–September 2026, plus the BYD Atto 3. The tenth-ranked Atto 1
-          is not yet included.
+          is covered in discovery, outside this original ten-family comparison.
           <FootnoteRefs ids={["r5_au_ev_sales_sep2026"]} />
           <span className="fleet-swipe-hint">
             Swiping any row moves every chapter together.
@@ -205,6 +210,7 @@ export default function FleetExperience({
       <section
         key={ch.n}
         id={`chapter-${ch.n}`}
+        tabIndex={-1}
         className={`inline-chapter fleet-chapter${ch.n === "01" ? " fleet-lead-chapter" : ""}`}
         data-chapter={ch.n}
         aria-labelledby={`chapter-title-${ch.n}`}
@@ -319,6 +325,7 @@ export default function FleetExperience({
             </div>
           </div>
         </header>
+        {afterHero}
         <FleetControls
           baseline={baseline}
           alternatives={alternatives}
@@ -377,7 +384,7 @@ export default function FleetExperience({
         <section className="container fleet-end">
           <h2>Find your next EV.</h2>
           <Link className="button secondary" href="/cars">
-            Explore all 34 variants
+            Explore all {totalCatalogueCount} variants
           </Link>
           <Link className="text-link" href="/methodology">
             How this guide is researched
@@ -442,7 +449,7 @@ function VehicleHeading({ pack }: { pack: Pack }) {
       <h2>{pack.car.model}</h2>
       <p>{pack.car.trim}</p>
       <span className="small muted">
-        {pack.car.year} · {pack.car.drive}
+        {pack.car.year ?? "MY unverified"} · {pack.car.drive}
       </span>
     </div>
   );

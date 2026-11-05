@@ -26,7 +26,22 @@ export type Issue = {
   publication_action: string;
   source_ids: string[];
 };
+export type BuyerGrade = "confirmed" | "check" | "reported" | "not_published";
+export type GradeReview = {
+  reviewedAt: string;
+  overlayId: string;
+  sourceLabel?: string;
+  reason: string;
+  evidenceScope: "exact_au_version" | "explicit_au_range" | "brand_au_terms" | "secondary_or_sibling" | "searched_not_found";
+  sourceIds: string[];
+};
 export type Feature = {
+  /** Explicit sourced offer deadline, inclusive; independent of evidence age. */
+  validUntil?: string;
+  buyerGrade?: BuyerGrade;
+  gradeReview?: GradeReview;
+  /** Effective display only: the reviewed evidence changed or has not earned a grade. */
+  gradeReviewStatus?: "review_required";
   variant_id: string;
   model_id: string;
   criterion: string;
@@ -42,19 +57,38 @@ export type Feature = {
   usability_notes?: string[];
   confirmation_needed?: string;
 };
+/** Complete provenance for an explicitly bounded configuration, not a full vehicle specification. */
+export type ConfigurationEvidence = {
+  /** Explicit context citations for full packs; never automatic claim support. */
+  sourceIds?: string[];
+  /** Exact reader qualifications that guarded buyer copy must retain. */
+  requiredBuyerVisibleConditions?: string[];
+  /** Dated live-scope review; referenced historical boundary objects remain immutable. */
+  configurationReview?: {
+    overlayId: string;
+    reviewedAt: string;
+    historicalBoundaryFields: string[];
+    releasedNulls: { key: string; factKeys: string[] }[];
+  };
+  rankingEligible: boolean;
+  completeVehicleCountEligible: boolean;
+  projectionScope: string;
+  [key: string]: unknown;
+};
 export type Variant = {
+  configuration_evidence?: ConfigurationEvidence;
   id: string;
   model_id: string;
   brand: string;
   model: string;
   trim: string;
-  model_year: number | string;
+  model_year: number | string | null;
   record_state: string;
   price_aud: number | null;
   price_basis: string;
   range_km: number | null;
   range_cycle: string;
-  seats: number;
+  seats: number | null;
   source_ids: string[];
   notes: string[];
   variant_review_date: string;
@@ -102,8 +136,19 @@ export type Research = {
     [key: string]: unknown;
   };
   criteria: { key: string; label: string; group: string; definition: string }[];
-  models: { id: string; brand: string; model: string; generation: string }[];
+  models: {
+    id: string;
+    brand: string;
+    model: string;
+    generation: string;
+    family_id?: string;
+  }[];
   variants: Variant[];
+  /** Historical inputs for source-feature warnings, before dated brand changes. */
+  feature_evidence_variant_context?: Pick<
+    Variant,
+    "id" | "model_id" | "record_state" | "configuration_evidence"
+  >[];
   trim_equipment: {
     variant_id: string;
     source_ids: string[];
@@ -124,10 +169,37 @@ export type Research = {
   publication_issues: Issue[];
   prior_update_summary: unknown[];
 };
+export type EvidenceValue =
+  | string
+  | number
+  | boolean
+  | null
+  | EvidenceValue[]
+  | { [key: string]: EvidenceValue };
 export type Fact = {
+  buyerGrade?: BuyerGrade;
+  gradeReview?: GradeReview;
+  /** Effective display only: the reviewed evidence changed or has not earned a grade. */
+  gradeReviewStatus?: "review_required";
+  priceEvidence?: {
+    rung: 1 | 2 | 3 | 4 | 5 | 6;
+    basisTag: string;
+    sourceKey: string;
+    sourcePointer: string;
+    state?: string;
+    publisher?: string;
+    originalBasis: string;
+    rankingEligible: boolean;
+  };
+  /** Sourced date of a known model-year change; does not reverify the fact. */
+  modelYearChangedAt?: string;
+  validUntil?: string;
+  conditionExplanation?: string;
+  /** Explicit roadside inclusion, independent of evidence grade; legacy terms may omit it. */
+  roadsideFitment?: "standard" | "optional";
   key: string;
   label: string;
-  value: number | string | null;
+  value: EvidenceValue;
   unit: string;
   basis: string;
   comparisonBasis: string;
@@ -141,17 +213,38 @@ export type Fact = {
   /** Value resolved from a source other than the maker's Australian specification for this version. */
   resolvedElsewhere?: boolean;
 };
+export type VehicleClass =
+  "passenger" | "van" | "ute" | "truck" | "bus" | "motorcycle" | "other";
 export type Car = {
+  /** Effective Tier 1 records never fall back to legacy status-based ranking. */
+  buyerGradesRequired?: true;
+  /** Citation context retained when unused display facts are projected away. */
+  projectedEvidenceSourceIds?: string[];
+  configurationEvidence?: ConfigurationEvidence;
+  buyerSummary?: import("./selling-points").BuyerSummary;
+  researchStage?: "established" | "partial";
+  vehicleClass?: VehicleClass;
   id: string;
   modelId: string;
+  modelFamily?: string;
   family: string;
   slug: string;
   brand: string;
   model: string;
   trim: string;
   generation: string;
-  year: number | string;
+  year: number | string | null;
   availability: string;
+  availabilityRevision?: string;
+  availabilityEvidence?: {
+    physicalStockVerified?: boolean;
+    factoryOrderAcceptanceVerified?: boolean;
+    qualifications?: string[];
+    checkedAt: string;
+    orderStatus: string;
+    stockStatus: string;
+    sourceIds: string[];
+  };
   drive: string;
   facts: Record<string, Fact>;
   issues: Issue[];

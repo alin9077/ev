@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { site } from "@/lib/config";
-import { PAGE_UPDATED } from "@/lib/citable";
+// Advance only when the definitions themselves have been reviewed.
+const DEFINITIONS_REVIEWED = "2026-10-10";
 export const metadata = {
   title: "EV glossary: WLTP, LFP, V2L, FBT and driveaway",
   alternates: { canonical: "/glossary" },
@@ -55,7 +56,7 @@ export default function Glossary() {
     "@type": "DefinedTermSet",
     name: "Australian EV glossary",
     url: `${site.origin}/glossary`,
-    dateModified: PAGE_UPDATED,
+    dateModified: DEFINITIONS_REVIEWED,
     hasDefinedTerm: definitions.map((d) => ({
       "@type": "DefinedTerm",
       "@id": `${site.origin}/glossary#${d.id}`,
@@ -75,8 +76,8 @@ export default function Glossary() {
       <h1>A small EV glossary</h1>
       <p className="lede">Five terms that change how you read a comparison.</p>
       <p>
-        Definitions reviewed <time dateTime={PAGE_UPDATED}>{PAGE_UPDATED}</time>
-        .
+        Definitions reviewed{" "}
+        <time dateTime={DEFINITIONS_REVIEWED}>{DEFINITIONS_REVIEWED}</time>.
       </p>
       <nav className="glossary-index" aria-label="Glossary terms">
         {definitions.map((d) => (
@@ -91,7 +92,7 @@ export default function Glossary() {
           <p>{d.text}</p>
           <p className="small">
             Reference: <a href={d.source}>{d.publisher}</a> · Definition
-            reviewed {PAGE_UPDATED}.
+            reviewed {DEFINITIONS_REVIEWED}.
           </p>
           <Link href={`/compare/model-y-vs-sealion-7#${d.row}`}>
             See the relevant Model Y and Sealion 7 comparison row →

@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-14",
+  "notes": [
+    "Tier1 Australian new BEVs only: two current families and four exact named grades. M8/E9 hybrids and EMZOOM/GS8 combustion models are excluded.",
+    "Current maker cohorts have modelYear null because no official manufacturer model year was found. Dealer 2025/2026 and editorial 2027 labels are documented without duplicate technical identities.",
+    "CarExpert and CarsGuide full-brand lists reconcile in brand-model-list-reconciliation.json. These are brand lists, not complete whole-market C1 published lists; global C1 is not claimed.",
+    "AION UT 44 kWh/Standard Range is reported for December 2026 and absent from the current maker grade list; Hyptec HT and UT Cross lack current Australian commercial-grade evidence. They are retained as dated upcoming/overseas dispositions in the companion census.",
+    "A stale Carsales 2025 V Luxury new-stock lead G000128 is now Demo on the fresh dealer page. Other New-labelled 2025 V Premium listings have year/registration caveats and map to the existing launch-generation family, not extra technical rows."
+  ],
+  "publishedLists": [],
+  "currentVersionReviews": [
+    {
+      "id": "m1-gac-2026-10-14-ut",
+      "brand": "GAC",
+      "model": "AION UT",
+      "bodyStyle": "Hatchback",
+      "vehicleClass": "passenger",
+      "modelId": "gac_aion_ut_current",
+      "checkedAt": "2026-10-14",
+      "officialSourceUrls": [
+        "https://www.gacgroup.com/en-au/configuration/AION%20UT/2025",
+        "https://www.gacgroup.com/en-au/hatchback/aion-ut",
+        "https://www.gacgroup.com/en-au"
+      ],
+      "reason": "Complete current Australian maker Premium/Luxury grade list. Manufacturer model year is not declared; /2025 is a route identifier. Dealer calendar/build years and editorial model-year labels do not establish an additional technical cohort.",
+      "publishedModelAliases": [
+        {
+          "name": "Aion UT",
+          "reason": "Capitalisation-only publisher alias for this exact GAC Australian body and family; overseas AION models and alternative battery cohorts are not aliases.",
+          "sourceUrls": [
+            "https://www.gacgroup.com/en-au/configuration/AION%20UT/2025",
+            "https://www.gacgroup.com/en-au/hatchback/aion-ut",
+            "https://www.gacgroup.com/en-au",
+            "https://www.carexpert.com.au/gac",
+            "https://www.carsguide.com.au/gac"
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "carId": "gac_aion_ut_premium_fwd_current_au__20261010",
+          "model": "AION UT",
+          "trim": "Premium",
+          "modelYear": null
+        },
+        {
+          "carId": "gac_aion_ut_luxury_fwd_current_au__20261010",
+          "model": "AION UT",
+          "trim": "Luxury",
+          "modelYear": null
+        }
+      ]
+    },
+    {
+      "id": "m1-gac-2026-10-14-v",
+      "brand": "GAC",
+      "model": "AION V",
+      "bodyStyle": "SUV",
+      "vehicleClass": "passenger",
+      "modelId": "gac_aion_v_current",
+      "checkedAt": "2026-10-14",
+      "officialSourceUrls": [
+        "https://www.gacgroup.com/en-au/configuration/aion-v/2025",
+        "https://www.gacgroup.com/en-au/suv/aion-v",
+        "https://www.gacgroup.com/en-au"
+      ],
+      "reason": "Complete current Australian maker Premium/Luxury grade list. Manufacturer model year is not declared; /2025 is a route identifier. Dealer calendar/build years and editorial model-year labels do not establish an additional technical cohort.",
+      "publishedModelAliases": [
+        {
+          "name": "Aion V",
+          "reason": "Capitalisation-only publisher alias for this exact GAC Australian body and family; overseas AION models and alternative battery cohorts are not aliases.",
+          "sourceUrls": [
+            "https://www.gacgroup.com/en-au/configuration/aion-v/2025",
+            "https://www.gacgroup.com/en-au/suv/aion-v",
+            "https://www.gacgroup.com/en-au",
+            "https://www.carexpert.com.au/gac",
+            "https://www.carsguide.com.au/gac"
+          ]
+        }
+      ],
+      "versions": [
+        {
+          "carId": "gac_aion_v_premium_fwd_current_au__20261010",
+          "model": "AION V",
+          "trim": "Premium",
+          "modelYear": null
+        },
+        {
+          "carId": "gac_aion_v_luxury_fwd_current_au__20261010",
+          "model": "AION V",
+          "trim": "Luxury",
+          "modelYear": null
+        }
+      ]
+    }
+  ],
+  "listResolutions": [],
+  "catalogueOnlyDifferences": [],
+  "inventoryResolutions": [
+    {
+      "kind": "record",
+      "inventoryId": "gac-aion-ut",
+      "outcome": "included",
+      "modelReviewId": "m1-gac-2026-10-14-ut",
+      "reviewedAt": "2026-10-14",
+      "reason": "Current Australian manufacturer range and complete named-grade specification establish Premium and Luxury. Historical stock-advertisement identity boundaries remain intact; no physical stock or accepted order is asserted.",
+      "sourceUrls": [
+        "https://www.gacgroup.com/en-au/configuration/AION%20UT/2025",
+        "https://www.gacgroup.com/en-au/hatchback/aion-ut",
+        "https://www.gacgroup.com/en-au"
+      ]
+    },
+    {
+      "kind": "record",
+      "inventoryId": "gac-aion-v",
+      "outcome": "included",
+      "modelReviewId": "m1-gac-2026-10-14-v",
+      "reviewedAt": "2026-10-14",
+      "reason": "Current Australian manufacturer range and complete named-grade specification establish Premium and Luxury. Historical stock-advertisement identity boundaries remain intact; no physical stock or accepted order is asserted.",
+      "sourceUrls": [
+        "https://www.gacgroup.com/en-au/configuration/aion-v/2025",
+        "https://www.gacgroup.com/en-au/suv/aion-v",
+        "https://www.gacgroup.com/en-au"
+      ]
+    }
+  ]
+}

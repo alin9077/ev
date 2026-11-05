@@ -2,7 +2,11 @@ import { StaticComparison } from "@/components/static-comparison";
 import { WithEvidence } from "@/components/with-evidence";
 import { catalogue, pack, research, counts, pickerCatalogue } from "@/lib/data";
 import Experience from "@/components/experience";
-import { experienceProps, type Query } from "@/lib/page-props";
+import {
+  experienceProps,
+  selectedPackSources,
+  type Query,
+} from "@/lib/page-props";
 export const metadata = {
   title: "Compare exact Australian variants",
   robots: { index: false, follow: true },
@@ -23,9 +27,12 @@ export default async function Compare({
         />
       </WithEvidence>
     );
+  const props = experienceProps(await searchParams);
   return (
-    <WithEvidence>
-      <Experience mode="compare" {...experienceProps(await searchParams)} />
+    <WithEvidence
+      sources={selectedPackSources(props.packs, research().sources)}
+    >
+      <Experience mode="compare" {...props} />
     </WithEvidence>
   );
 }

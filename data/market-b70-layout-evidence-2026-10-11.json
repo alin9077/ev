@@ -1,0 +1,672 @@
+{
+  "id": "byd-b70-layout-reconciliation-20261011",
+  "checkedAt": "2026-10-11",
+  "scope": "Australian BYD B70 published Gemilang body/layout evidence only",
+  "decision": "bounded_market_evidence_amendment",
+  "exactDetailedConfigurationProposalApproved": false,
+  "readiness": "A separately reviewed one-row sales-sheet body envelope could be considered under the prior bounded-bus policy, but this packet proposes no detail row and does not claim a closed exact build. Two capacity modes are not two trims.",
+  "familyId": "byd-b70",
+  "sourceIds": [
+    "b70-au-commercial",
+    "b70-au-gemilang-sheet",
+    "byd-au-generic-ebus-brochure",
+    "byd-au-linkedin-demonstration"
+  ],
+  "publishedBodyPairing": {
+    "chassis": "BYD B70",
+    "bodyMaker": "Gemilang",
+    "framework": "EcoRange aluminium-alloy",
+    "status": "manufacturer_sheet_declared",
+    "completedBuildSelected": false,
+    "vin": null,
+    "auApprovalIdentity": null
+  },
+  "technicalEpoch": {
+    "visibleIssueDate": null,
+    "formalModelYear": null,
+    "pdfMetadataDate": "2024-09-09",
+    "currentlyLinkedFromAustraliaPage": true,
+    "conditions": [
+      "PDF metadata date is not issue date, model year or production date",
+      "Current link supports observed published applicability, not unchanged delivered specification",
+      "Generic brochure, demonstration and international B70A02 references do not override this sheet"
+    ]
+  },
+  "publishedCapacityModes": [
+    {
+      "modeId": "published-18-seated-no-wheelchair",
+      "sourceLabel": "18 seated = 0 WC",
+      "advertisedPassengerSeats": 18,
+      "wheelchairPositionsDeclared": 0,
+      "status": "conditional",
+      "sourceIds": [
+        "b70-au-commercial",
+        "b70-au-gemilang-sheet"
+      ],
+      "conditions": [
+        "The landing page qualifies capacity as up to 18 passengers",
+        "No standing or total-person count inferred",
+        "Not a separate manufacturer trim or verified build"
+      ]
+    },
+    {
+      "modeId": "published-16-seated-one-wheelchair",
+      "sourceLabel": "16 seated + 1 WC",
+      "advertisedPassengerSeats": 16,
+      "wheelchairPositionsDeclared": 1,
+      "status": "conditional",
+      "sourceIds": [
+        "b70-au-commercial",
+        "b70-au-gemilang-sheet"
+      ],
+      "conditions": [
+        "The landing page says 16 passengers with a wheelchair",
+        "Wheelchair support/restraint is optional in the sheet",
+        "Do not add wheelchair, driver or standees to create a total",
+        "Not a separate manufacturer trim or verified build"
+      ]
+    }
+  ],
+  "layoutInterpretation": {
+    "result": "Preserve both modes under one body/family; no separate trim count",
+    "certainty": "Manufacturer page/sheet establish two capacity statements. Manufacturer-hosted third-party demonstration describes folding two seats, supporting reconfiguration only for the reviewed vehicle.",
+    "driverCount": "Current page calls the seats passengers; demonstration says plus driver, but no formal seating plan or exact-build passenger total is established",
+    "explicitSeatingPlanInSheet": false
+  },
+  "stableSourceFieldLedger": [
+    {
+      "key": "wheelbase_mm",
+      "value": 4760,
+      "unit": "mm",
+      "status": "conditional",
+      "existingBusKey": true,
+      "runtimeImportProposed": false,
+      "basis": "Chassis table and side elevation agree",
+      "sourceIds": [
+        "b70-au-gemilang-sheet"
+      ],
+      "sourceLocation": "p2 Chassis/Wheelbase and drawing",
+      "conditions": [
+        "Current Australia-linked B70/Gemilang sales-sheet scope only; no identified delivered build, order acceptance, stock or formal technical issue date established."
+      ]
+    },
+    {
+      "key": "width_mm",
+      "value": 2100,
+      "unit": "mm",
+      "status": "conditional",
+      "existingBusKey": true,
+      "runtimeImportProposed": false,
+      "basis": "Body-table declared width; mirror basis unspecified",
+      "sourceIds": [
+        "b70-au-gemilang-sheet"
+      ],
+      "sourceLocation": "p2 Body/L x W x H",
+      "conditions": [
+        "Current Australia-linked B70/Gemilang sales-sheet scope only; no identified delivered build, order acceptance, stock or formal technical issue date established.",
+        "Do not call this mirror-inclusive width"
+      ]
+    },
+    {
+      "key": "height_mm",
+      "value": 3210,
+      "unit": "mm",
+      "status": "conditional",
+      "existingBusKey": true,
+      "runtimeImportProposed": false,
+      "basis": "Body table and drawing agree",
+      "sourceIds": [
+        "b70-au-gemilang-sheet"
+      ],
+      "sourceLocation": "p2 Body/L x W x H and drawing",
+      "conditions": [
+        "Current Australia-linked B70/Gemilang sales-sheet scope only; no identified delivered build, order acceptance, stock or formal technical issue date established."
+      ]
+    },
+    {
+      "key": "battery_kwh",
+      "value": 138.3,
+      "unit": "kWh",
+      "status": "conditional",
+      "existingBusKey": true,
+      "runtimeImportProposed": false,
+      "basis": "Declared energy on cover and chassis table only",
+      "sourceIds": [
+        "b70-au-gemilang-sheet"
+      ],
+      "sourceLocation": "p1 cover and p2 Battery Power",
+      "conditions": [
+        "Current Australia-linked B70/Gemilang sales-sheet scope only; no identified delivered build, order acceptance, stock or formal technical issue date established.",
+        "Gross/usable basis remains unknown"
+      ]
+    },
+    {
+      "key": "maximum_power_declared_kw",
+      "value": 140,
+      "unit": "kW",
+      "status": "conditional",
+      "existingBusKey": true,
+      "runtimeImportProposed": false,
+      "basis": "Maximum motor power as printed",
+      "sourceIds": [
+        "b70-au-gemilang-sheet"
+      ],
+      "sourceLocation": "p2 Chassis/Maximum Power",
+      "conditions": [
+        "Current Australia-linked B70/Gemilang sales-sheet scope only; no identified delivered build, order acceptance, stock or formal technical issue date established.",
+        "No continuous rating or motor model inferred"
+      ]
+    },
+    {
+      "key": "charging_connector",
+      "value": "Single CCS2 DC, rear-mounted",
+      "unit": null,
+      "status": "conditional",
+      "existingBusKey": true,
+      "runtimeImportProposed": false,
+      "basis": "Connector and location as printed",
+      "sourceIds": [
+        "b70-au-gemilang-sheet"
+      ],
+      "sourceLocation": "p2 Chassis/Charging Point(s)",
+      "conditions": [
+        "Current Australia-linked B70/Gemilang sales-sheet scope only; no identified delivered build, order acceptance, stock or formal technical issue date established.",
+        "Do not infer AC support or guarantee peak charge rate"
+      ]
+    },
+    {
+      "key": "equipment_accessibility",
+      "value": "Low-floor bus; manual fold-up ramp, stated s.w. 320 kg",
+      "unit": null,
+      "status": "conditional",
+      "existingBusKey": true,
+      "runtimeImportProposed": false,
+      "basis": "Cover low-floor description and body ramp row",
+      "sourceIds": [
+        "b70-au-gemilang-sheet"
+      ],
+      "sourceLocation": "p1 cover; p2 Body/Ramp",
+      "conditions": [
+        "Current Australia-linked B70/Gemilang sales-sheet scope only; no identified delivered build, order acceptance, stock or formal technical issue date established.",
+        "The ramp load is not vehicle payload or homologated passenger capacity",
+        "Wheelchair support and restraint is separately listed under Options"
+      ]
+    },
+    {
+      "key": "equipment_source_standard_text",
+      "value": "Gemilang EcoRange aluminium-alloy framework; Ventura electrically operated single-leaf outward sliding door; ISRI 6000/735 driver seat; Songz integrated air conditioner with heat pump; Thoreb Multiplex wiring",
+      "unit": null,
+      "status": "conditional",
+      "existingBusKey": true,
+      "runtimeImportProposed": false,
+      "basis": "Body-table declarations, not proven delivered standard equipment",
+      "sourceIds": [
+        "b70-au-gemilang-sheet"
+      ],
+      "sourceLocation": "p2 Body",
+      "conditions": [
+        "Current Australia-linked B70/Gemilang sales-sheet scope only; no identified delivered build, order acceptance, stock or formal technical issue date established.",
+        "Keep conditional source-listed wording; do not promote features to standard on a specific ordered build"
+      ]
+    },
+    {
+      "key": "equipment_source_optional_text",
+      "value": "TS160 door safety system; fire suppression; destination signs; CCTV; bus stopping system; reverse camera; tyre pressure monitoring; wheelchair support and restraint; electric mirrors; BYD telematics",
+      "unit": null,
+      "status": "conditional",
+      "existingBusKey": true,
+      "runtimeImportProposed": false,
+      "basis": "All ten rows appear under Options with open-circle marks",
+      "sourceIds": [
+        "b70-au-gemilang-sheet"
+      ],
+      "sourceLocation": "p2 Options",
+      "conditions": [
+        "Current Australia-linked B70/Gemilang sales-sheet scope only; no identified delivered build, order acceptance, stock or formal technical issue date established.",
+        "Every item remains optional-only; no standard-fitment inference"
+      ]
+    },
+    {
+      "key": "length_mm",
+      "value": null,
+      "status": "not_verified",
+      "existingBusKey": true,
+      "runtimeImportProposed": false,
+      "reason": "7,100 mm body table conflicts with 7,094 mm drawing; rounding is possible but unconfirmed"
+    },
+    {
+      "key": "battery_gross_kwh",
+      "value": null,
+      "status": "not_verified",
+      "existingBusKey": true,
+      "runtimeImportProposed": false,
+      "reason": "No gross-capacity label"
+    },
+    {
+      "key": "battery_usable_kwh",
+      "value": null,
+      "status": "not_verified",
+      "existingBusKey": true,
+      "runtimeImportProposed": false,
+      "reason": "No usable-capacity label"
+    },
+    {
+      "key": "dc_peak_kw",
+      "value": null,
+      "status": "not_verified",
+      "existingBusKey": true,
+      "runtimeImportProposed": false,
+      "reason": "112 kW is a charging-power declaration, not an explicit vehicle peak limit"
+    },
+    {
+      "key": "ac_kw",
+      "value": null,
+      "status": "not_verified",
+      "existingBusKey": true,
+      "runtimeImportProposed": false,
+      "reason": "No AC capability established"
+    },
+    {
+      "key": "dc_charge_time_min",
+      "value": null,
+      "status": "not_verified",
+      "existingBusKey": true,
+      "runtimeImportProposed": false,
+      "reason": "2–2.5 h has no SOC window, station conditions or temperature"
+    },
+    {
+      "key": "charge_soc_start",
+      "value": null,
+      "status": "not_verified",
+      "existingBusKey": true,
+      "runtimeImportProposed": false,
+      "reason": "Sheet omits SOC endpoints; do not substitute demonstration transcript"
+    },
+    {
+      "key": "charge_soc_end",
+      "value": null,
+      "status": "not_verified",
+      "existingBusKey": true,
+      "runtimeImportProposed": false,
+      "reason": "Sheet omits SOC endpoints; do not substitute demonstration transcript"
+    },
+    {
+      "key": "charging_station_kw",
+      "value": null,
+      "status": "not_verified",
+      "existingBusKey": true,
+      "runtimeImportProposed": false,
+      "reason": "No sheet test-station rating; demo 100 kW is a separate unbound claim"
+    },
+    {
+      "key": "seats",
+      "value": null,
+      "status": "not_verified",
+      "existingBusKey": true,
+      "runtimeImportProposed": false,
+      "reason": "No selected occupancy mode; generic seats would conflate passenger/driver counting"
+    },
+    {
+      "key": "seated_passengers",
+      "value": null,
+      "status": "not_verified",
+      "existingBusKey": true,
+      "runtimeImportProposed": false,
+      "reason": "18 versus 16-with-wheelchair are advertised alternatives; no selected configuration"
+    },
+    {
+      "key": "wheelchair_positions",
+      "value": null,
+      "status": "not_verified",
+      "existingBusKey": true,
+      "runtimeImportProposed": false,
+      "reason": "Zero versus one is mode-dependent; restraint is optional"
+    },
+    {
+      "key": "driver_seats",
+      "value": null,
+      "status": "not_verified",
+      "existingBusKey": true,
+      "runtimeImportProposed": false,
+      "reason": "Guide names a driver seat but gives no explicit count; demo plus-driver wording is not a certified sheet/build bridge"
+    },
+    {
+      "key": "standing_passengers",
+      "value": null,
+      "status": "not_verified",
+      "existingBusKey": true,
+      "runtimeImportProposed": false,
+      "reason": "No standing count; do not infer zero"
+    },
+    {
+      "key": "passenger_capacity",
+      "value": null,
+      "status": "not_verified",
+      "existingBusKey": true,
+      "runtimeImportProposed": false,
+      "reason": "No selected mode, total seated/standing definition or homologated total"
+    },
+    {
+      "key": "gvm_kg",
+      "value": null,
+      "status": "not_verified",
+      "existingBusKey": true,
+      "runtimeImportProposed": false,
+      "reason": "No GVM; 3.5 t front plus 6.0 t rear axle capacity is not GVM"
+    },
+    {
+      "key": "complete_bus_kerb_mass_kg",
+      "value": null,
+      "status": "not_verified",
+      "existingBusKey": true,
+      "runtimeImportProposed": false,
+      "reason": "No finished-bus mass"
+    },
+    {
+      "key": "chassis_mass_kg",
+      "value": null,
+      "status": "not_verified",
+      "existingBusKey": true,
+      "runtimeImportProposed": false,
+      "reason": "No chassis mass"
+    },
+    {
+      "key": "completed_vehicle_payload_kg",
+      "value": null,
+      "status": "not_verified",
+      "existingBusKey": true,
+      "runtimeImportProposed": false,
+      "reason": "No finished mass/GVM; never derive from axle limits or ramp load"
+    },
+    {
+      "key": "range_km",
+      "value": null,
+      "status": "not_verified",
+      "existingBusKey": true,
+      "runtimeImportProposed": false,
+      "reason": "No exact comparable range established; page day-long claim and demo estimates are not a test-cycle value"
+    },
+    {
+      "key": "range_cycle",
+      "value": null,
+      "status": "not_verified",
+      "existingBusKey": true,
+      "runtimeImportProposed": false,
+      "reason": "No applicable test cycle"
+    },
+    {
+      "key": "warranty",
+      "value": null,
+      "status": "not_verified",
+      "existingBusKey": true,
+      "runtimeImportProposed": false,
+      "reason": "No exact B70 vehicle/body warranty terms"
+    },
+    {
+      "key": "battery_warranty",
+      "value": null,
+      "status": "not_verified",
+      "existingBusKey": true,
+      "runtimeImportProposed": false,
+      "reason": "Generic eight-year claim not bound to exact B70 application/terms"
+    },
+    {
+      "key": "warranty_battery_retention_percent",
+      "value": null,
+      "status": "not_verified",
+      "existingBusKey": true,
+      "runtimeImportProposed": false,
+      "reason": "Generic 80% SOH marketing claim not normalized to exact B70 terms"
+    },
+    {
+      "key": "price_aud",
+      "value": null,
+      "status": "not_verified",
+      "existingBusKey": true,
+      "runtimeImportProposed": false,
+      "reason": "No exact public complete-bus price"
+    },
+    {
+      "key": "lead_time_days",
+      "value": null,
+      "status": "not_verified",
+      "existingBusKey": true,
+      "runtimeImportProposed": false,
+      "reason": "No accepted delivery commitment"
+    },
+    {
+      "key": "towing_braked_kg",
+      "value": null,
+      "status": "not_verified",
+      "existingBusKey": true,
+      "runtimeImportProposed": false,
+      "reason": "No rating"
+    },
+    {
+      "key": "towing_unbraked_kg",
+      "value": null,
+      "status": "not_verified",
+      "existingBusKey": true,
+      "runtimeImportProposed": false,
+      "reason": "No rating"
+    },
+    {
+      "key": "boot_l",
+      "value": null,
+      "status": "not_verified",
+      "existingBusKey": true,
+      "runtimeImportProposed": false,
+      "reason": "No applicable luggage-volume measurement"
+    },
+    {
+      "key": "cancellation_refund_terms",
+      "value": null,
+      "status": "not_verified",
+      "existingBusKey": true,
+      "runtimeImportProposed": false,
+      "reason": "No exact purchase terms"
+    },
+    {
+      "key": "maximum_speed_kmh",
+      "value": null,
+      "status": "not_verified",
+      "existingBusKey": true,
+      "runtimeImportProposed": false,
+      "reason": "Literal 70[-2,0] km/h not silently simplified"
+    },
+    {
+      "key": "front_overhang_mm",
+      "value": null,
+      "status": "not_verified",
+      "existingBusKey": true,
+      "runtimeImportProposed": false,
+      "reason": "End dimensions shown without explicit front/rear field labels; do not copy web-generated orientation labels"
+    },
+    {
+      "key": "rear_overhang_mm",
+      "value": null,
+      "status": "not_verified",
+      "existingBusKey": true,
+      "runtimeImportProposed": false,
+      "reason": "End dimensions shown without explicit front/rear field labels; do not copy web-generated orientation labels"
+    }
+  ],
+  "additionalUnnormalizedDeclarations": {
+    "nominalTractionVoltage": {
+      "value": 563.2,
+      "unit": "V",
+      "basis": "Nominal Voltage row; not charger voltage"
+    },
+    "maximumTorque": {
+      "value": 360,
+      "unit": "Nm",
+      "basis": "Maximum Torque row; not continuous rating"
+    },
+    "chargingPowerDeclared": {
+      "value": 112,
+      "unit": "kW",
+      "basis": "Charging Power row; no peak/continuous label"
+    },
+    "chargingTimeDeclared": {
+      "value": "2–2.5",
+      "unit": "h",
+      "basis": "No SOC or test conditions"
+    },
+    "maximumSpeedLiteral": "70[-2,0] km/h",
+    "gradeabilityDeclared": "18%",
+    "batteryTypeLiteral": "BYD, lithium iron Blade 1 Battery",
+    "bodyLengthTableMm": 7100,
+    "bodyLengthDrawingMm": 7094,
+    "stepHeightMm": 252,
+    "doorWidthMm": 992,
+    "frontAxleCapacityTonnes": 3.5,
+    "rearAxleCapacityTonnes": 6.0,
+    "tyre": "215/75 R17.5",
+    "rim": "Aluminium alloy 17.5×6.0",
+    "suspension": "Independent front; four-link air rear"
+  },
+  "warrantyHold": {
+    "genericClaim": {
+      "years": 8,
+      "retainedSOHPercent": 80,
+      "sourceId": "byd-au-generic-ebus-brochure",
+      "location": "PDF p4 / printed p7"
+    },
+    "exactB70BatteryWarranty": null,
+    "exactB70BodyWarranty": null,
+    "reason": "Generic Blade 1 marketing lacks B70-specific commencement, kilometre/cycle limits, exclusions, remedy, body scope and applicable contract terms"
+  },
+  "sourceScreenLimits": [
+    "No dealer contact, forms or procurement transaction",
+    "No unit-specific New advertisement, VIN, stock ID, unsold allocation or stock quantity established",
+    "No independently verified Australian road approval or completed-build compliance",
+    "No official dated correction to 7,100/7,094 mm or full B70 technical revision found in this bounded public-source screen",
+    "Search silence is not proof of unavailability or exhaustive market coverage"
+  ],
+  "countEffect": {
+    "detailedConfigurations": 0,
+    "detailedFamilies": 0,
+    "marketFamilies": 0,
+    "namedTrimEntries": 0,
+    "confirmedOrders": 0,
+    "verifiedStockUnits": 0,
+    "globallyComplete": false
+  },
+  "researchPacket": "b70-layout-reconciliation",
+  "proposalSHA256": "a1b93dceedb0d273284b89a7a5dddd1ce741f8f2d6397188636b2fc0d56e81e0",
+  "proposalSealSHA256": "e6e29938e921eef4bc5c453bd1ed6e89968db441aefb439659fd13150bfc8bbf",
+  "independentReviewSHA256": "fdd5d5418bdf56960a42e5ed52a23ba49a8e01a414591ddc34b36116ff85be5f",
+  "sources": [
+    {
+      "id": "b70-au-commercial",
+      "url": "https://www.bydglobal.com/au/commercial-vehicles",
+      "publisher": "BYD Australia",
+      "kind": "manufacturer Australian commercial landing page",
+      "path": "raw/byd-commercial.html",
+      "sha256": "205729b306f8dbd27d8456f13ff40da1786495ec55e7b927f73b05d5a3334ab2",
+      "capture": "HTTP 200 fetched during this review on 2026-10-11 at approximately 13:42 UTC",
+      "captureQualification": "Response is cache-served (Date 2026-09-16); fetch date is not publication/revision date. Matches the prior same-day HTML byte hash.",
+      "evidenceLocation": "data-json list entry whose title starts BYD B70; extracts/byd-commercial-b70.json",
+      "role": "Current observed Australian listing, passenger wording, direct B70-specific guide link"
+    },
+    {
+      "id": "b70-au-gemilang-sheet",
+      "url": "https://www.bydglobal.com/material/group-official/au/product/commercial/BYD_eBUS_B70.pdf",
+      "publisher": "BYD Australia & New Zealand",
+      "kind": "manufacturer-linked B70 chassis/body technical guide",
+      "path": "raw/byd-b70-sheet.pdf",
+      "sha256": "c3aaf8b8e6b11aceb92c699e5a6411c83467c88d5a330cf35b46a4023af20324",
+      "capture": "Reused exact original bytes from next-market-gap-priorities-79, fetched HTTP 200 on 2026-10-11 at 12:41:49 UTC",
+      "captureQualification": "This review rechecks live landing-page linkage; direct web PDF opens timed out and are not claimed as a fresh PDF byte recapture.",
+      "pages": 2,
+      "pdfMetadataCreationDate": "2024-09-09T03:59:50Z",
+      "pdfMetadataModificationDate": "2024-09-09T03:59:50Z",
+      "visibleIssueDate": null,
+      "modelYear": null,
+      "evidenceLocation": "PDF page 2 chassis/body/options table and side elevation, visually inspected using saved render",
+      "role": "Exact published B70/Gemilang pairing and qualified technical declarations"
+    },
+    {
+      "id": "byd-au-generic-ebus-brochure",
+      "url": "https://www.bydglobal.com/material/group-official/au/product/commercial/BYD_eBus_Brochure.pdf",
+      "publisher": "BYD Australia & New Zealand",
+      "kind": "multi-model manufacturer marketing brochure",
+      "path": "raw/byd-ebus-generic.pdf",
+      "sha256": "9bd6469586f21a23cc89504fe6dbaf4415eb8d99ec673564643967263e4d6169",
+      "capture": "HTTP 200 fetched during this review on 2026-10-11 at approximately 13:44 UTC",
+      "pages": 11,
+      "evidenceLocation": "PDF page 4 / printed pages 6–7; warranty text visually inspected; B70 among family illustrations on PDF page 7",
+      "role": "Generic Blade 1 battery warranty claim only; not transferred into exact B70 terms"
+    },
+    {
+      "id": "byd-au-linkedin-demonstration",
+      "url": "https://www.linkedin.com/posts/byd-australia-and-new-zealand_byd-bydcommercialvehicles-bydb70-activity-7390130455544684544-4_wX",
+      "publisher": "BYD Australia & New Zealand account; video presenter is Paul Aldridge of Australian Bus & Coach",
+      "kind": "manufacturer-hosted third-party demonstration transcript",
+      "path": "raw/primary-social-source.web.json",
+      "sha256": "9d78be6946043e384b285f58226183e312ba04e6a4e3c911e266ab17d1117a55",
+      "capture": "Web-tool extraction opened 2026-10-11",
+      "captureQualification": "No original HTML/video captured; auto-transcript includes obvious unit/name errors. Relative post age does not establish exact publication date or technical epoch.",
+      "evidenceLocation": "Transcript fold-up-seat paragraph and passenger/driver paragraph",
+      "role": "Corroborates a reconfigurable demonstration bus; cannot establish two factory trims or certify the current sheet-to-build bridge"
+    }
+  ],
+  "previousRecord": {
+    "familyId": "byd-b70",
+    "brand": "BYD",
+    "model": "B70",
+    "vehicleType": "small_city_bus",
+    "vehicleClass": "bus",
+    "class": "small_city_bus",
+    "trims": [],
+    "aliases": [],
+    "sourceUrls": [
+      "https://www.bydglobal.com/au/commercial-vehicles",
+      "https://www.bydglobal.com/material/group-official/au/product/commercial/BYD_eBus_Brochure.pdf"
+    ],
+    "checkedAt": "2026-10-10",
+    "orderStatus": "listed_unconfirmed",
+    "stockStatus": "unverified",
+    "evidenceNote": "The current Australian commercial-vehicle page specifically promotes B70 with local contact and brochure access.",
+    "limitations": [
+      "Current local listing is verified; open order acceptance, exact configuration and delivery allocation require supplier confirmation. No specific new stock unit verified."
+    ],
+    "recordScope": "factory_new",
+    "roadRegistrationScope": "road_vehicle_offering_registration_not_independently_verified",
+    "canonicalBrand": "BYD",
+    "canonicalModel": "B70",
+    "exactConfigurationStatus": "partial_or_unverified",
+    "id": "byd-b70",
+    "modelAliases": [],
+    "sourceRecordIds": [
+      "byd-b70"
+    ],
+    "sourceArtifacts": [
+      "heavy-ev-census.json"
+    ],
+    "rankingEligible": false,
+    "trimCoverage": "exact_trims_unverified",
+    "evidenceHistory": [
+      {
+        "sourceArtifact": "heavy-ev-census.json",
+        "sourceRecordId": "byd-b70",
+        "orderStatus": "listed_unconfirmed",
+        "stockStatus": "unverified",
+        "trims": [],
+        "evidenceNote": "The current Australian commercial-vehicle page specifically promotes B70 with local contact and brochure access.",
+        "limitations": [
+          "Current local listing is verified; open order acceptance, exact configuration and delivery allocation require supplier confirmation. No specific new stock unit verified."
+        ],
+        "sourceUrls": [
+          "https://www.bydglobal.com/au/commercial-vehicles",
+          "https://www.bydglobal.com/material/group-official/au/product/commercial/BYD_eBus_Brochure.pdf"
+        ]
+      }
+    ],
+    "modelYear": null,
+    "catalogueCoverage": "market_audit_only",
+    "availabilityCategory": "listing_only_order_stock_unconfirmed",
+    "completeVehicleCountEligible": null
+  },
+  "previousRecordCanonicalSHA256": "28ec2888415fb96896c70ba53c68172f3bea3a69e545b8a8e6d12741af260c12"
+}
