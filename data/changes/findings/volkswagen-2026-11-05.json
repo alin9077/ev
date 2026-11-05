@@ -1,0 +1,3816 @@
+{
+  "schema": "roadmark-refresh-findings-v1",
+  "brand": "Volkswagen",
+  "asOf": "2026-11-05",
+  "reviewedAt": "2026-11-05",
+  "reviewedBy": "Roadmark WS2 refresh (Claude Code worker), Volkswagen",
+  "sources": [
+    {
+      "id": "refresh-volkswagen-2026-11-05-id4",
+      "url": "https://www.volkswagen.com.au/en/models/id4.html",
+      "title": "ID.4 | Electric SUV (Volkswagen Australia)",
+      "publisher": "Volkswagen Australia",
+      "source_type": "manufacturer_au_offer",
+      "published_date": null,
+      "accessed_date": "2026-11-05",
+      "market": "AU",
+      "supports": "Opened 2026-11-05. MY26 ID. 4 Pro From $64,990 driveaway with free home EV charger; MY27 ID. 4 Pro From $65,990 Driveaway. Footnotes: manufacturer's recommended campaign driveaway price for new ID. 4 Pro 1-Speed Automatic vehicles in white purchased from 01/10/2026 and delivered by 31/12/2026, private buyers only, excludes other offers, options and metallic paint extra, while stocks last. The page invites a search of stock or contact with a dealer about placing an order."
+    },
+    {
+      "id": "refresh-volkswagen-2026-11-05-id4gtx",
+      "url": "https://www.volkswagen.com.au/en/models/id4-gtx.html",
+      "title": "ID.4 GTX | Electric Sport SUV (Volkswagen Australia)",
+      "publisher": "Volkswagen Australia",
+      "source_type": "manufacturer_au_offer",
+      "published_date": null,
+      "accessed_date": "2026-11-05",
+      "market": "AU",
+      "supports": "Opened 2026-11-05. MY27 ID. 4 GTX From $75,990 driveaway with free home EV charger; manufacturer's recommended campaign driveaway price for new MY27 ID. 4 GTX 1-Speed Automatic vehicles in white purchased from 01/10/2026 and delivered by 31/12/2026, private buyers only, while stocks last."
+    },
+    {
+      "id": "refresh-volkswagen-2026-11-05-buzz",
+      "url": "https://www.volkswagen.com.au/en/models/id-buzz.html",
+      "title": "ID. Buzz (Volkswagen Australia)",
+      "publisher": "Volkswagen Australia",
+      "source_type": "manufacturer_au_offer",
+      "published_date": null,
+      "accessed_date": "2026-11-05",
+      "market": "AU",
+      "supports": "Opened 2026-11-05. MY25 ID. Buzz Pro SWB From $77,990 Driveaway; MY25 Pro LWB From $84,990; MY26 Pro SWB From $79,990; MY26 Pro LWB From $84,990. Footnotes: manufacturer's recommended campaign driveaway price for new and demo vehicles purchased from 01/10/2026 and delivered by 31/12/2026, private buyers only, excludes government, fleet and rental buyers and other offers, while stocks last. The page invites a stock search or dealer contact about placing an order."
+    }
+  ],
+  "versions": [
+    {
+      "variantId": "volkswagen_id_4_my27__pro__20261010",
+      "vehicle": "Volkswagen ID.4 Pro",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "new_stock_listed",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/pdfs/showroom-brochures-live/VW_ID4_MY27_Brochure.pdf",
+            "https://www.volkswagen.com.au/en/range/ev.html",
+            "https://eppingvolkswagen.com.au/stock/details/OAG-AD-26307830/2026-volkswagen-id4-new"
+          ]
+        },
+        "outcome": "unchanged",
+        "note": "Model page lists the car with offers and a route to place an order via a dealer; stock and delivery not stated.",
+        "sourceIds": [
+          "refresh-volkswagen-2026-11-05-id4"
+        ]
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "65,990 AUD",
+            "basis": "Maker’s national driveaway from",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id4.html"
+            ]
+          },
+          "outcome": "unchanged",
+          "note": "Model page shows From $65,990 Driveaway (MY27 ID. 4 Pro), purchased 1 October to delivered 31 December 2026.",
+          "sourceIds": [
+            "refresh-volkswagen-2026-11-05-id4"
+          ]
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "546 km",
+            "basis": "WLTP combined",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/pdfs/showroom-brochures-live/VW_ID4_MY27_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "79 kWh",
+            "basis": "Usable battery capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/pdfs/showroom-brochures-live/VW_ID4_MY27_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "175 kW",
+            "basis": "Maximum vehicle DC acceptance",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/pdfs/showroom-brochures-live/VW_ID4_MY27_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "Exact 10–80% state-of-charge interval",
+            "grade": "not_published",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/pdfs/showroom-brochures-live/VW_ID4_MY27_Brochure.pdf",
+              "https://www.volkswagen.com.au/en/models/id4.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maximum onboard AC acceptance",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/pdfs/showroom-brochures-live/VW_ID4_MY27_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating capacity",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.redbook.com.au/cars/details/2026-volkswagen-id-4-pro-e2-auto-my27/SPOT-ITM-699391?Cr=2"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "533 L",
+            "basis": "Rear seats upright; measurement method not stated",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/pdfs/showroom-brochures-live/VW_ID4_MY27_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "6.7 s",
+            "basis": "0–100 km/h",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/pdfs/showroom-brochures-live/VW_ID4_MY27_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "210 kW",
+            "basis": "Maximum system power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/pdfs/showroom-brochures-live/VW_ID4_MY27_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Driven wheels",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/pdfs/showroom-brochures-live/VW_ID4_MY27_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,585 mm",
+            "basis": "Maker dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/pdfs/showroom-brochures-live/VW_ID4_MY27_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,852 mm",
+            "basis": "Maker dimensions; width mirror inclusion unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/pdfs/showroom-brochures-live/VW_ID4_MY27_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,640 mm",
+            "basis": "Maker dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/pdfs/showroom-brochures-live/VW_ID4_MY27_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,000 kg",
+            "basis": "Published braked capacity",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.redbook.com.au/cars/details/2026-volkswagen-id-4-pro-e2-auto-my27/SPOT-ITM-699391?Cr=2"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km",
+            "basis": "Australian new-vehicle warranty; ordinary private-use baseline",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/owners-service/about-your-car/warranty.html/__layer/layers/owners_services/warranty/5-yr-warranty-t-cs/master.layer",
+              "https://www.volkswagen.com.au/en/owners-service/about-your-car/warranty.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; 70% capacity threshold",
+            "basis": "Australian BEV high-voltage battery warranty; usable/net capacity relative to initial delivery or registration",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/owners-service/about-your-car/warranty.html/__layer/layers/owners_services/warranty/5-yr-warranty-t-cs/master.layer",
+              "https://www.volkswagen.com.au/en/hybrid-and-electric/on-ev.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "driveaway_price_aud",
+          "label": "Manufacturer driveaway from",
+          "due": true,
+          "current": {
+            "value": "65,990 AUD",
+            "basis": "Manufacturer recommended driveaway FROM offer",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id4.html"
+            ]
+          },
+          "outcome": "unchanged",
+          "note": "Model page shows From $65,990 Driveaway (MY27 ID. 4 Pro), purchased 1 October to delivered 31 December 2026.",
+          "sourceIds": [
+            "refresh-volkswagen-2026-11-05-id4"
+          ]
+        }
+      ]
+    },
+    {
+      "variantId": "volkswagen_id_4_my27__gtx__20261010",
+      "vehicle": "Volkswagen ID.4 GTX",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "new_stock_listed",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/pdfs/showroom-brochures-live/VW_ID4_MY27_Brochure.pdf",
+            "https://www.volkswagen.com.au/en/range/ev.html",
+            "https://www.alto.com.au/stock/details/OAG-AD-26331727/2026-volkswagen-id4-new"
+          ]
+        },
+        "outcome": "unchanged",
+        "note": "Model page lists the car with offers and a route to place an order via a dealer; stock and delivery not stated.",
+        "sourceIds": [
+          "refresh-volkswagen-2026-11-05-id4"
+        ]
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "75,990 AUD",
+            "basis": "Maker’s national driveaway from",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id4-gtx.html"
+            ]
+          },
+          "outcome": "unchanged",
+          "note": "Model page shows MY27 ID. 4 GTX From $75,990 driveaway.",
+          "sourceIds": [
+            "refresh-volkswagen-2026-11-05-id4gtx"
+          ]
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "522 km",
+            "basis": "WLTP combined",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/pdfs/showroom-brochures-live/VW_ID4_MY27_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "77 kWh",
+            "basis": "Usable battery capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/pdfs/showroom-brochures-live/VW_ID4_MY27_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "175 kW",
+            "basis": "Maximum vehicle DC acceptance",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/pdfs/showroom-brochures-live/VW_ID4_MY27_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "Exact 10–80% state-of-charge interval",
+            "grade": "not_published",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/pdfs/showroom-brochures-live/VW_ID4_MY27_Brochure.pdf",
+              "https://www.volkswagen.com.au/en/models/id4-gtx.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maximum onboard AC acceptance",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/pdfs/showroom-brochures-live/VW_ID4_MY27_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating capacity",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.redbook.com.au/cars/details/2026-volkswagen-id-4-gtx-e2-auto-4motion-my27/SPOT-ITM-699392?Cr=0"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "533 L",
+            "basis": "Rear seats upright; measurement method not stated",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/pdfs/showroom-brochures-live/VW_ID4_MY27_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "5.4 s",
+            "basis": "0–100 km/h",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/pdfs/showroom-brochures-live/VW_ID4_MY27_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "250 kW",
+            "basis": "Maximum system power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/pdfs/showroom-brochures-live/VW_ID4_MY27_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "AWD",
+            "basis": "Driven wheels",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/pdfs/showroom-brochures-live/VW_ID4_MY27_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,583 mm",
+            "basis": "Maker dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/pdfs/showroom-brochures-live/VW_ID4_MY27_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,852 mm",
+            "basis": "Maker dimensions; width mirror inclusion unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/pdfs/showroom-brochures-live/VW_ID4_MY27_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,624 mm",
+            "basis": "Maker dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/pdfs/showroom-brochures-live/VW_ID4_MY27_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,800 kg",
+            "basis": "Published braked capacity",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.redbook.com.au/cars/details/2026-volkswagen-id-4-gtx-e2-auto-4motion-my27/SPOT-ITM-699392?Cr=0"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km",
+            "basis": "Australian new-vehicle warranty; ordinary private-use baseline",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/owners-service/about-your-car/warranty.html/__layer/layers/owners_services/warranty/5-yr-warranty-t-cs/master.layer",
+              "https://www.volkswagen.com.au/en/owners-service/about-your-car/warranty.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; 70% capacity threshold",
+            "basis": "Australian BEV high-voltage battery warranty; usable/net capacity relative to initial delivery or registration",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/owners-service/about-your-car/warranty.html/__layer/layers/owners_services/warranty/5-yr-warranty-t-cs/master.layer",
+              "https://www.volkswagen.com.au/en/hybrid-and-electric/on-ev.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "driveaway_price_aud",
+          "label": "Manufacturer driveaway from",
+          "due": true,
+          "current": {
+            "value": "75,990 AUD",
+            "basis": "Manufacturer recommended driveaway FROM offer",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id4-gtx.html"
+            ]
+          },
+          "outcome": "unchanged",
+          "note": "Model page shows MY27 ID. 4 GTX From $75,990 driveaway.",
+          "sourceIds": [
+            "refresh-volkswagen-2026-11-05-id4gtx"
+          ]
+        }
+      ]
+    },
+    {
+      "variantId": "volkswagen_id_5_my26__pro__20261010",
+      "vehicle": "Volkswagen ID.5 Pro",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-5/id--5-pro/ID5-MY26-Brochure.pdf",
+            "https://www.volkswagen.com.au/en/range/ev.html"
+          ]
+        },
+        "outcome": "pending"
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "62,990 AUD",
+            "basis": "Reported by carsales; price when new before on-road costs",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volkswagen/id-5/2026/pro/8d1b3925-14a5-4d9e-8fea-3330a8830368/"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Price is reported by carsales or CarExpert; no Volkswagen page for ID.5 was opened. Not rechecked."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "544 km",
+            "basis": "WLTP combined",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-5/id--5-pro/ID5-MY26-Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "77 kWh",
+            "basis": "Usable battery capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-5/id--5-pro/ID5-MY26-Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "175 kW",
+            "basis": "Maximum vehicle DC acceptance",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-5/id--5-pro/ID5-MY26-Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "Exact 10–80% state-of-charge interval",
+            "grade": "not_published",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-5/id--5-pro/ID5-MY26-Brochure.pdf",
+              "https://www.volkswagen.com.au/en/models/id5.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maximum onboard AC acceptance",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-5/id--5-pro/ID5-MY26-Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating capacity",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volkswagen/id-5/2026/pro/8d1b3925-14a5-4d9e-8fea-3330a8830368/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "549 L",
+            "basis": "Rear seats upright; measurement method not stated",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-5/id--5-pro/ID5-MY26-Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "6.7 s",
+            "basis": "0–100 km/h",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-5/id--5-pro/ID5-MY26-Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "210 kW",
+            "basis": "Maximum system power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-5/id--5-pro/ID5-MY26-Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Driven wheels",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-5/id--5-pro/ID5-MY26-Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,599 mm",
+            "basis": "Maker dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-5/id--5-pro/ID5-MY26-Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,852 mm",
+            "basis": "Maker dimensions; width mirror inclusion unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-5/id--5-pro/ID5-MY26-Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,621 mm",
+            "basis": "Maker dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-5/id--5-pro/ID5-MY26-Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,200 kg",
+            "basis": "Published braked capacity",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volkswagen/id-5/2026/pro/8d1b3925-14a5-4d9e-8fea-3330a8830368/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km",
+            "basis": "Australian new-vehicle warranty; ordinary private-use baseline",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/owners-service/about-your-car/warranty.html/__layer/layers/owners_services/warranty/5-yr-warranty-t-cs/master.layer",
+              "https://www.volkswagen.com.au/en/owners-service/about-your-car/warranty.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; 70% capacity threshold",
+            "basis": "Australian BEV high-voltage battery warranty; usable/net capacity relative to initial delivery or registration",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/owners-service/about-your-car/warranty.html/__layer/layers/owners_services/warranty/5-yr-warranty-t-cs/master.layer",
+              "https://www.volkswagen.com.au/en/hybrid-and-electric/on-ev.html"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "volkswagen_id_5_my26__gtx__20261010",
+      "vehicle": "Volkswagen ID.5 GTX",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-5/id--5-pro/ID5-MY26-Brochure.pdf",
+            "https://www.volkswagen.com.au/en/range/ev.html"
+          ]
+        },
+        "outcome": "pending"
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "72,990 AUD",
+            "basis": "Reported by carsales; price when new before on-road costs",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volkswagen/id-5/2026/gtx/e7933414-6e28-4f0a-ab77-1346c77306e3/"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Price is reported by carsales or CarExpert; no Volkswagen page for ID.5 was opened. Not rechecked."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "526 km",
+            "basis": "WLTP combined",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-5/id--5-pro/ID5-MY26-Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "79 kWh",
+            "basis": "Usable battery capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-5/id--5-pro/ID5-MY26-Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "175 kW",
+            "basis": "Maximum vehicle DC acceptance",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-5/id--5-pro/ID5-MY26-Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "Exact 10–80% state-of-charge interval",
+            "grade": "not_published",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-5/id--5-pro/ID5-MY26-Brochure.pdf",
+              "https://www.volkswagen.com.au/en/models/id5-gtx.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maximum onboard AC acceptance",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-5/id--5-pro/ID5-MY26-Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating capacity",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volkswagen/id-5/2026/gtx/e7933414-6e28-4f0a-ab77-1346c77306e3/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "549 L",
+            "basis": "Rear seats upright; measurement method not stated",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-5/id--5-pro/ID5-MY26-Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "5.4 s",
+            "basis": "0–100 km/h",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-5/id--5-pro/ID5-MY26-Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "250 kW",
+            "basis": "Maximum system power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-5/id--5-pro/ID5-MY26-Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "AWD",
+            "basis": "Driven wheels",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-5/id--5-pro/ID5-MY26-Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,584 mm",
+            "basis": "Maker dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-5/id--5-pro/ID5-MY26-Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,852 mm",
+            "basis": "Maker dimensions; width mirror inclusion unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-5/id--5-pro/ID5-MY26-Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,607 mm",
+            "basis": "Maker dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-5/id--5-pro/ID5-MY26-Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,400 kg",
+            "basis": "Published braked capacity",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volkswagen/id-5/2026/gtx/e7933414-6e28-4f0a-ab77-1346c77306e3/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km",
+            "basis": "Australian new-vehicle warranty; ordinary private-use baseline",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/owners-service/about-your-car/warranty.html/__layer/layers/owners_services/warranty/5-yr-warranty-t-cs/master.layer",
+              "https://www.volkswagen.com.au/en/owners-service/about-your-car/warranty.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; 70% capacity threshold",
+            "basis": "Australian BEV high-voltage battery warranty; usable/net capacity relative to initial delivery or registration",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/owners-service/about-your-car/warranty.html/__layer/layers/owners_services/warranty/5-yr-warranty-t-cs/master.layer",
+              "https://www.volkswagen.com.au/en/hybrid-and-electric/on-ev.html"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "volkswagen_idbuzz_my26_pro_swb__20261010",
+      "vehicle": "Volkswagen ID. Buzz Pro SWB",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "new_stock_listed",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.volkswagen.com.au/en/configurator.html/__app/id-buzz.app",
+            "https://www.volkswagen.com.au/en/configurator.html/__app/id-buzz/pro.app?---=%7B%22configuration-step-navigation-service%22%3A%22%2F%3FconfigStep%3D%257B%2522context%2522%253A%252272006-74306-Pro%2522%252C%2522selectedStep%2522%253A%2522summary%2522%257D%22%7D&carlineId-app=72006&modelId-app=EBBR7R%24GPALPAL%24GPD1PD1%24GPSCPSC%24MSPRQH1%24MABAUD2%24GWGDWGD%24GWH6WH6%24GY52Y52%24GZA9ZA9%24GZC6ZC6%24GZE8ZE8%24GZR1ZR1%24MZFM0TC%24MLKA71I%24MHKA9AH&modelVersion-app=1&modelYear-app=2026&salesGroupId-app=74306&category-app=commercial&trimName-app=Pro&exteriorId-app=F14+9675&interiorId-app=F56+++++IF&buildabilityStatus-app=buildable",
+            "https://rexgorell.com.au/new-items/for-sale/volkswagen/id.-buzz/2026/pro-bev560/eb-my26/4097838/"
+          ]
+        },
+        "outcome": "unchanged",
+        "note": "Model page lists the car with offers and a route to place an order via a dealer; stock and delivery not stated.",
+        "sourceIds": [
+          "refresh-volkswagen-2026-11-05-buzz"
+        ]
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "79,990 AUD",
+            "basis": "Maker national driveaway from campaign",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id-buzz.html"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Model page shows the same MY26 campaign driveaway prices (SWB $79,990, LWB $84,990), but these versions' configuration evidence is bound to the exact price_aud fact; re-dating it needs a configuration-update row, which refresh:build does not generate. Value retained, date unchanged; needs a normal brand update."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "422 km",
+            "basis": "WLTP combined",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id-buzz.html",
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "79 kWh",
+            "basis": "Usable/net traction battery",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id-buzz.html",
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "185 kW",
+            "basis": "Manufacturer maximum vehicle DC charging rate",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id-buzz.html",
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "26 min",
+            "basis": "DC 10–80% state-of-charge, published 26 min",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id-buzz.html",
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maximum vehicle AC charging acceptance",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-reviews/2025-volkswagen-id-buzz-review-2"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Standard occupied seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/configurator.html/__app/id-buzz/pro.app?---=%7B%22configuration-step-navigation-service%22%3A%22%2F%3FconfigStep%3D%257B%2522context%2522%253A%252272006-74306-Pro%2522%252C%2522selectedStep%2522%253A%2522engine%2522%257D%22%7D&category-app=commercial&carlineId-app=72006&salesGroupId-app=74306&trimName-app=Pro&modelId-app=EBBR7R%24GPALPAL%24GPD1PD1%24GPSCPSC%24MSPRQH1%24MABAUD2%24GWGDWGD%24GWH6WH6%24GY52Y52%24GZA9ZA9%24GZC6ZC6%24GZE8ZE8%24GZR1ZR1%24MZFM0TC%24MLKA71I%24MHKA9AH&modelVersion-app=1&modelYear-app=2026"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "1,121 L",
+            "basis": "Behind all occupied seating rows; manufacturer litres, method unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id-buzz.html",
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "7.6 s",
+            "basis": "Manufacturer claimed 0–100 km/h",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id-buzz.html",
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "210 kW",
+            "basis": "Combined maximum motor power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id-buzz.html",
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Driven wheels",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/configurator.html/__app/id-buzz/pro.app?---=%7B%22configuration-step-navigation-service%22%3A%22%2F%3FconfigStep%3D%257B%2522context%2522%253A%252272006-74306-Pro%2522%252C%2522selectedStep%2522%253A%2522engine%2522%257D%22%7D&category-app=commercial&carlineId-app=72006&salesGroupId-app=74306&trimName-app=Pro&modelId-app=EBBR7R%24GPALPAL%24GPD1PD1%24GPSCPSC%24MSPRQH1%24MABAUD2%24GWGDWGD%24GWH6WH6%24GY52Y52%24GZA9ZA9%24GZC6ZC6%24GZE8ZE8%24GZR1ZR1%24MZFM0TC%24MLKA71I%24MHKA9AH&modelVersion-app=1&modelYear-app=2026"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,712 mm",
+            "basis": "Published body length",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id-buzz.html",
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,985 mm",
+            "basis": "Published body width; maker table does not specify mirrors",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id-buzz.html",
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,927 mm",
+            "basis": "Published body height",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id-buzz.html",
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,200 kg",
+            "basis": "Maximum braked towing with specified genuine towbar; towbar fitment not implied",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id-buzz.html",
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km",
+            "basis": "Australian new-vehicle warranty; ordinary private-use baseline",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/owners-service/about-your-car/warranty.html/__layer/layers/owners_services/warranty/5-yr-warranty-t-cs/master.layer",
+              "https://www.volkswagen.com.au/en/owners-service/about-your-car/warranty.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; 70% capacity threshold",
+            "basis": "Australian BEV high-voltage battery warranty; usable/net capacity relative to initial delivery or registration",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/owners-service/about-your-car/warranty.html/__layer/layers/owners_services/warranty/5-yr-warranty-t-cs/master.layer",
+              "https://www.volkswagen.com.au/en/hybrid-and-electric/on-ev.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "manufacturer_campaign_driveaway_aud",
+          "label": "Manufacturer campaign driveaway aud",
+          "due": true,
+          "current": {
+            "value": "79,990 AUD",
+            "basis": "Manufacturer campaign FROM driveaway; not MLP",
+            "grade": "check",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id-buzz.html"
+            ]
+          },
+          "outcome": "unchanged",
+          "note": "Same campaign driveaway price, purchased 1 October to delivered 31 December 2026.",
+          "sourceIds": [
+            "refresh-volkswagen-2026-11-05-buzz"
+          ]
+        }
+      ]
+    },
+    {
+      "variantId": "volkswagen_idbuzz_my26_pro_lwb__20261010",
+      "vehicle": "Volkswagen ID. Buzz Pro LWB",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "new_stock_listed",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.volkswagen.com.au/en/configurator.html/__app/id-buzz.app",
+            "https://www.volkswagen.com.au/en/configurator.html/__app/id-buzz/pro.app?---=%7B%22configuration-step-navigation-service%22%3A%22%2F%3FconfigStep%3D%257B%2522context%2522%253A%252272006-74306-Pro%2522%252C%2522selectedStep%2522%253A%2522summary%2522%257D%22%7D&carlineId-app=72006&modelId-app=EBJR7S%24GPALPAL%24GPD1PD1%24MSPRQH1%24MABAUD2%24GWGDWGD%24GWH6WH6%24GY52Y52%24GZA9ZA9%24GZC6ZC6%24GZE8ZE8%24GZJ7ZJ7%24GZR1ZR1%24MZFM0TC%24MLKA71I%24MHKA9AH&modelVersion-app=1&modelYear-app=2026&salesGroupId-app=74306&category-app=commercial&trimName-app=Pro&exteriorId-app=F14+B4B4&interiorId-app=F56+++++IF&buildabilityStatus-app=buildable",
+            "https://rexgorell.com.au/new-items/for-sale/volkswagen/id.-buzz/2026/pro-bev560/eb-my26/4056340/"
+          ]
+        },
+        "outcome": "unchanged",
+        "note": "Model page lists the car with offers and a route to place an order via a dealer; stock and delivery not stated.",
+        "sourceIds": [
+          "refresh-volkswagen-2026-11-05-buzz"
+        ]
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "84,990 AUD",
+            "basis": "Maker national driveaway from campaign",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id-buzz.html"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Model page shows the same MY26 campaign driveaway prices (SWB $79,990, LWB $84,990), but these versions' configuration evidence is bound to the exact price_aud fact; re-dating it needs a configuration-update row, which refresh:build does not generate. Value retained, date unchanged; needs a normal brand update."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "452 km",
+            "basis": "WLTP combined",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id-buzz.html",
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "86 kWh",
+            "basis": "Usable/net traction battery",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id-buzz.html",
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "200 kW",
+            "basis": "Manufacturer maximum vehicle DC charging rate",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id-buzz.html",
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "26 min",
+            "basis": "DC 10–80% state-of-charge, published 26 min",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id-buzz.html",
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maximum vehicle AC charging acceptance",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-reviews/2025-volkswagen-id-buzz-review-2"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "7",
+            "basis": "Standard occupied seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/configurator.html/__app/id-buzz/pro.app?---=%7B%22configuration-step-navigation-service%22%3A%22%2F%3FconfigStep%3D%257B%2522context%2522%253A%252272006-74306-Pro%2522%252C%2522selectedStep%2522%253A%2522engine%2522%257D%22%7D&carlineId-app=72006&modelId-app=EBJR7S%24GPALPAL%24GPD1PD1%24MSPRQH1%24MABAUD2%24GWGDWGD%24GWH6WH6%24GY52Y52%24GZA9ZA9%24GZC6ZC6%24GZE8ZE8%24GZJ7ZJ7%24GZR1ZR1%24MZFM0TC%24MLKA71I%24MHKA9AH&modelVersion-app=1&modelYear-app=2026&salesGroupId-app=74306&category-app=commercial&trimName-app=Pro&exteriorId-app=F14+B4B4&interiorId-app=F56+++++IF&buildabilityStatus-app=buildable"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "306 L",
+            "basis": "Behind all occupied seating rows; manufacturer litres, method unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id-buzz.html",
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "7.9 s",
+            "basis": "Manufacturer claimed 0–100 km/h",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id-buzz.html",
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "210 kW",
+            "basis": "Combined maximum motor power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id-buzz.html",
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Driven wheels",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/configurator.html/__app/id-buzz/pro.app?---=%7B%22configuration-step-navigation-service%22%3A%22%2F%3FconfigStep%3D%257B%2522context%2522%253A%252272006-74306-Pro%2522%252C%2522selectedStep%2522%253A%2522engine%2522%257D%22%7D&carlineId-app=72006&modelId-app=EBJR7S%24GPALPAL%24GPD1PD1%24MSPRQH1%24MABAUD2%24GWGDWGD%24GWH6WH6%24GY52Y52%24GZA9ZA9%24GZC6ZC6%24GZE8ZE8%24GZJ7ZJ7%24GZR1ZR1%24MZFM0TC%24MLKA71I%24MHKA9AH&modelVersion-app=1&modelYear-app=2026&salesGroupId-app=74306&category-app=commercial&trimName-app=Pro&exteriorId-app=F14+B4B4&interiorId-app=F56+++++IF&buildabilityStatus-app=buildable"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,962 mm",
+            "basis": "Published body length",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id-buzz.html",
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,985 mm",
+            "basis": "Published body width; maker table does not specify mirrors",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id-buzz.html",
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,924 mm",
+            "basis": "Published body height",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id-buzz.html",
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,000 kg",
+            "basis": "Maximum braked towing with specified genuine towbar; towbar fitment not implied",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id-buzz.html",
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km",
+            "basis": "Australian new-vehicle warranty; ordinary private-use baseline",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/owners-service/about-your-car/warranty.html/__layer/layers/owners_services/warranty/5-yr-warranty-t-cs/master.layer",
+              "https://www.volkswagen.com.au/en/owners-service/about-your-car/warranty.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; 70% capacity threshold",
+            "basis": "Australian BEV high-voltage battery warranty; usable/net capacity relative to initial delivery or registration",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/owners-service/about-your-car/warranty.html/__layer/layers/owners_services/warranty/5-yr-warranty-t-cs/master.layer",
+              "https://www.volkswagen.com.au/en/hybrid-and-electric/on-ev.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "manufacturer_campaign_driveaway_aud",
+          "label": "Manufacturer campaign driveaway aud",
+          "due": true,
+          "current": {
+            "value": "84,990 AUD",
+            "basis": "Manufacturer campaign FROM driveaway; not MLP",
+            "grade": "check",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id-buzz.html"
+            ]
+          },
+          "outcome": "unchanged",
+          "note": "Same campaign driveaway price, purchased 1 October to delivered 31 December 2026.",
+          "sourceIds": [
+            "refresh-volkswagen-2026-11-05-buzz"
+          ]
+        }
+      ]
+    },
+    {
+      "variantId": "volkswagen_idbuzz_my26_gtx_lwb__20261010",
+      "vehicle": "Volkswagen ID. Buzz GTX LWB",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.volkswagen.com.au/en/configurator.html/__app/id-buzz.app",
+            "https://www.volkswagen.com.au/en/configurator.html/__app/id-buzz/gtx.app?carlineId-app=72006&modelId-app=EBJG5S%24MSIBN0R%24GPALPAL%24GPC5PC5%24GPD2PD2%24GWGDWGD%24GWH6WH6%24GY52Y52%24GZA9ZA9%24GZE8ZE8%24GZJ7ZJ7%24GZM8ZM8%24GZR9ZR9%24MZFM0TC%24MSIH4A4%24MWSS4GX&modelVersion-app=1&modelYear-app=2026&salesGroupId-app=74386&category-app=commercial&trimName-app=GTX&exteriorId-app=F14+4B4B&interiorId-app=F56+++++IO&buildabilityStatus-app=buildable&---=%7B%22configuration-step-navigation-service%22%3A%22%2F%3FconfigStep%3D%257B%2522context%2522%253A%252272006-74386-GTX%2522%252C%2522selectedStep%2522%253A%2522summary%2522%257D%22%7D"
+          ]
+        },
+        "outcome": "pending"
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "117,216 AUD",
+            "basis": "Maker configurator driveaway price, NSW reference postcode 2000",
+            "grade": "check",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/configurator.html/__app/id-buzz/gtx.app?carlineId-app=72006&modelId-app=EBJG5S%24MSIBN0R%24GPALPAL%24GPC5PC5%24GPD2PD2%24GWGDWGD%24GWH6WH6%24GY52Y52%24GZA9ZA9%24GZE8ZE8%24GZJ7ZJ7%24GZM8ZM8%24GZR9ZR9%24MZFM0TC%24MSIH4A4%24MWSS4GX&modelVersion-app=1&modelYear-app=2026&salesGroupId-app=74386&category-app=commercial&trimName-app=GTX&exteriorId-app=F14+4B4B&interiorId-app=F56+++++IO&buildabilityStatus-app=buildable&---=%7B%22configuration-step-navigation-service%22%3A%22%2F%3FconfigStep%3D%257B%2522context%2522%253A%252272006-74386-GTX%2522%252C%2522selectedStep%2522%253A%2522summary%2522%257D%22%7D"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Configurator driveaway for NSW postcode 2000; the configurator was not opened and the ID. Buzz model page lists no GTX. Not rechecked."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "450 km",
+            "basis": "WLTP combined",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id-buzz.html",
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "86 kWh",
+            "basis": "Usable/net traction battery",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id-buzz.html",
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "200 kW",
+            "basis": "Manufacturer maximum vehicle DC charging rate",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id-buzz.html",
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "26 min",
+            "basis": "DC 10–80% state-of-charge, published 26 min",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id-buzz.html",
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maximum vehicle AC charging acceptance",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://drivingenthusiast.com.au/2026/02/2026-volkswagen-id-buzz-gtx-review-video/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "7",
+            "basis": "Standard occupied seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/configurator.html/__app/id-buzz/gtx.app?carlineId-app=72006&modelId-app=EBJG5S%24MSIBN0R%24GPALPAL%24GPC5PC5%24GPD2PD2%24GWGDWGD%24GWH6WH6%24GY52Y52%24GZA9ZA9%24GZE8ZE8%24GZJ7ZJ7%24GZM8ZM8%24GZR9ZR9%24MZFM0TC%24MSIH4A4%24MWSS4GX&modelVersion-app=1&modelYear-app=2026&salesGroupId-app=74386&category-app=commercial&trimName-app=GTX&exteriorId-app=F14+4B4B&interiorId-app=F56+++++IO&buildabilityStatus-app=buildable&---=%7B%22configuration-step-navigation-service%22%3A%22%2F%3FconfigStep%3D%257B%2522context%2522%253A%252272006-74386-GTX%2522%252C%2522selectedStep%2522%253A%2522engine%2522%257D%22%7D"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "306 L",
+            "basis": "Behind all occupied seating rows; manufacturer litres, method unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id-buzz.html",
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "6.4 s",
+            "basis": "Manufacturer claimed 0–100 km/h",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id-buzz.html",
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "250 kW",
+            "basis": "Combined maximum motor power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id-buzz.html",
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "AWD",
+            "basis": "Driven wheels",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/configurator.html/__app/id-buzz/gtx.app?carlineId-app=72006&modelId-app=EBJG5S%24MSIBN0R%24GPALPAL%24GPC5PC5%24GPD2PD2%24GWGDWGD%24GWH6WH6%24GY52Y52%24GZA9ZA9%24GZE8ZE8%24GZJ7ZJ7%24GZM8ZM8%24GZR9ZR9%24MZFM0TC%24MSIH4A4%24MWSS4GX&modelVersion-app=1&modelYear-app=2026&salesGroupId-app=74386&category-app=commercial&trimName-app=GTX&exteriorId-app=F14+4B4B&interiorId-app=F56+++++IO&buildabilityStatus-app=buildable&---=%7B%22configuration-step-navigation-service%22%3A%22%2F%3FconfigStep%3D%257B%2522context%2522%253A%252272006-74386-GTX%2522%252C%2522selectedStep%2522%253A%2522engine%2522%257D%22%7D"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,962 mm",
+            "basis": "Published body length",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id-buzz.html",
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,985 mm",
+            "basis": "Published body width; maker table does not specify mirrors",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id-buzz.html",
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,924 mm",
+            "basis": "Published body height",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id-buzz.html",
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,600 kg",
+            "basis": "Maximum braked towing with specified genuine towbar; towbar fitment not implied",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id-buzz.html",
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km",
+            "basis": "Australian new-vehicle warranty; ordinary private-use baseline",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/owners-service/about-your-car/warranty.html/__layer/layers/owners_services/warranty/5-yr-warranty-t-cs/master.layer",
+              "https://www.volkswagen.com.au/en/owners-service/about-your-car/warranty.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; 70% capacity threshold",
+            "basis": "Australian BEV high-voltage battery warranty; usable/net capacity relative to initial delivery or registration",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/owners-service/about-your-car/warranty.html/__layer/layers/owners_services/warranty/5-yr-warranty-t-cs/master.layer",
+              "https://www.volkswagen.com.au/en/hybrid-and-electric/on-ev.html"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "volkswagen_id_4_my26__pro__20261014",
+      "vehicle": "Volkswagen ID.4 Pro",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "outgoing",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "new_stock_listed",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.southernvw.com.au/cars/new-white-2026-volkswagen-id-4-204474"
+          ]
+        },
+        "outcome": "unchanged",
+        "note": "Model page lists the car with offers and a route to place an order via a dealer; stock and delivery not stated.",
+        "sourceIds": [
+          "refresh-volkswagen-2026-11-05-id4"
+        ]
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "64,990 AUD",
+            "basis": "Maker’s national driveaway from",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id4.html"
+            ]
+          },
+          "outcome": "unchanged",
+          "note": "Model page shows MY26 ID. 4 Pro From $64,990 driveaway with free home EV charger.",
+          "sourceIds": [
+            "refresh-volkswagen-2026-11-05-id4"
+          ]
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "547 km",
+            "basis": "WLTP combined",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volkswagen/id-4/2026/pro/352d31ae-5f3c-4174-b3e1-096278d5ad1e/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "77 kWh",
+            "basis": "Usable battery capacity",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/editorial/details/volkswagen-id-4-pro-2026-review-151531/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "175 kW",
+            "basis": "Published specification",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/editorial/details/volkswagen-id-4-pro-2026-review-151531/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "28 min",
+            "basis": "10–80% state of charge, approximately",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/editorial/details/volkswagen-id-4-pro-2026-review-151531/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Published specification",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/editorial/details/volkswagen-id-4-pro-2026-review-151531/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Published specification",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volkswagen/id-4/2026/pro/352d31ae-5f3c-4174-b3e1-096278d5ad1e/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "543 L",
+            "basis": "Rear seats upright; measurement method unstated",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volkswagen/id-4/2026/pro/352d31ae-5f3c-4174-b3e1-096278d5ad1e/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "6.7 s",
+            "basis": "Published specification",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volkswagen/id-4/2026/pro/352d31ae-5f3c-4174-b3e1-096278d5ad1e/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "210 kW",
+            "basis": "Published specification",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volkswagen/id-4/2026/pro/352d31ae-5f3c-4174-b3e1-096278d5ad1e/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Published specification",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volkswagen/id-4/2026/pro/352d31ae-5f3c-4174-b3e1-096278d5ad1e/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,585 mm",
+            "basis": "Published specification",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volkswagen/id-4/2026/pro/352d31ae-5f3c-4174-b3e1-096278d5ad1e/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,852 mm",
+            "basis": "Width; mirror basis unspecified",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volkswagen/id-4/2026/pro/352d31ae-5f3c-4174-b3e1-096278d5ad1e/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,640 mm",
+            "basis": "Published specification",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volkswagen/id-4/2026/pro/352d31ae-5f3c-4174-b3e1-096278d5ad1e/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,000 kg",
+            "basis": "Braked towing",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volkswagen/id-4/2026/pro/352d31ae-5f3c-4174-b3e1-096278d5ad1e/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km",
+            "basis": "Australian new-vehicle warranty; ordinary private-use baseline",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/owners-service/about-your-car/warranty.html/__layer/layers/owners_services/warranty/5-yr-warranty-t-cs/master.layer",
+              "https://www.volkswagen.com.au/en/owners-service/about-your-car/warranty.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; 70% capacity threshold",
+            "basis": "Australian BEV high-voltage battery warranty; usable/net capacity relative to initial delivery or registration",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/owners-service/about-your-car/warranty.html/__layer/layers/owners_services/warranty/5-yr-warranty-t-cs/master.layer",
+              "https://www.volkswagen.com.au/en/hybrid-and-electric/on-ev.html"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "volkswagen_id_5_my25_5__pro__20261014",
+      "vehicle": "Volkswagen ID.5 Pro",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "outgoing",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "new_stock_listed",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://autosportsgroup.com.au/f516066-1693240-volkswagen-id5-2025/"
+          ]
+        },
+        "outcome": "pending"
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "62,990 AUD",
+            "basis": "Reported Australian list price before on-road costs",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-reviews/2026-volkswagen-id5-review"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Price is reported by carsales or CarExpert; no Volkswagen page for ID.5 was opened. Not rechecked."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "543 km",
+            "basis": "WLTP combined",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-reviews/2026-volkswagen-id5-review"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "77 kWh",
+            "basis": "Usable capacity",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-reviews/2026-volkswagen-id5-review"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "175 kW",
+            "basis": "Published specification",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-reviews/2026-volkswagen-id5-review"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "Exact 10–80% interval",
+            "grade": "not_published",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://autosportsgroup.com.au/f516066-1693240-volkswagen-id5-2025/",
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-5/id--5-pro/ID5-MY26-Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Published specification",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-reviews/2026-volkswagen-id5-review"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Published specification",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://autosportsgroup.com.au/f516066-1693240-volkswagen-id5-2025/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "549 L",
+            "basis": "Rear seats upright; method unspecified",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-reviews/2026-volkswagen-id5-review"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "6.7 s",
+            "basis": "Published specification",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://autosportsgroup.com.au/f516066-1693240-volkswagen-id5-2025/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "210 kW",
+            "basis": "Published specification",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://autosportsgroup.com.au/f516066-1693240-volkswagen-id5-2025/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Published specification",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://autosportsgroup.com.au/f516066-1693240-volkswagen-id5-2025/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,599 mm",
+            "basis": "Published specification",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://autosportsgroup.com.au/f516066-1693240-volkswagen-id5-2025/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,852 mm",
+            "basis": "Published specification",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://autosportsgroup.com.au/f516066-1693240-volkswagen-id5-2025/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,621 mm",
+            "basis": "Published specification",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://autosportsgroup.com.au/f516066-1693240-volkswagen-id5-2025/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,200 kg",
+            "basis": "Braked towing",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://autosportsgroup.com.au/f516066-1693240-volkswagen-id5-2025/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km",
+            "basis": "Australian new-vehicle warranty; ordinary private-use baseline",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/owners-service/about-your-car/warranty.html/__layer/layers/owners_services/warranty/5-yr-warranty-t-cs/master.layer",
+              "https://www.volkswagen.com.au/en/owners-service/about-your-car/warranty.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; 70% capacity threshold",
+            "basis": "Australian BEV high-voltage battery warranty; usable/net capacity relative to initial delivery or registration",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/owners-service/about-your-car/warranty.html/__layer/layers/owners_services/warranty/5-yr-warranty-t-cs/master.layer",
+              "https://www.volkswagen.com.au/en/hybrid-and-electric/on-ev.html"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "volkswagen_id_5_my25__gtx__20261014",
+      "vehicle": "Volkswagen ID.5 GTX",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "outgoing",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "new_stock_listed",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://wakelingautomotive.com.au/stock/details/OAG-AD-25859843/2025-volkswagen-id5-new"
+          ]
+        },
+        "outcome": "pending"
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "72,990 AUD",
+            "basis": "Reported Australian list price before on-road costs",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-reviews/2026-volkswagen-id5-review"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Price is reported by carsales or CarExpert; no Volkswagen page for ID.5 was opened. Not rechecked."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "522 km",
+            "basis": "WLTP combined",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/pdfs/showroom-brochures-live/VW_ID.4_ID.5_MY25_SpecBrochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "79 kWh",
+            "basis": "Usable capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/pdfs/showroom-brochures-live/VW_ID.4_ID.5_MY25_SpecBrochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "175 kW",
+            "basis": "Maker specification",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/pdfs/showroom-brochures-live/VW_ID.4_ID.5_MY25_SpecBrochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "Exact 10–80% interval",
+            "grade": "not_published",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/pdfs/showroom-brochures-live/VW_ID.4_ID.5_MY25_SpecBrochure.pdf",
+              "https://www.volkswagen.com.au/en/brand-experience/volkswagen-newsroom/latest-news/id-walkthrough.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maker specification",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/pdfs/showroom-brochures-live/VW_ID.4_ID.5_MY25_SpecBrochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seats",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://wakelingautomotive.com.au/stock/details/OAG-AD-25859843/2025-volkswagen-id5-new"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "549 L",
+            "basis": "Rear seats upright; measurement method unstated",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/pdfs/showroom-brochures-live/VW_ID.4_ID.5_MY25_SpecBrochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "5.4 s",
+            "basis": "Maker specification",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/pdfs/showroom-brochures-live/VW_ID.4_ID.5_MY25_SpecBrochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "250 kW",
+            "basis": "Maker specification",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/pdfs/showroom-brochures-live/VW_ID.4_ID.5_MY25_SpecBrochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "AWD",
+            "basis": "Maker specification",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/pdfs/showroom-brochures-live/VW_ID.4_ID.5_MY25_SpecBrochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,584 mm",
+            "basis": "Maker specification",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/pdfs/showroom-brochures-live/VW_ID.4_ID.5_MY25_SpecBrochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,852 mm",
+            "basis": "Maker specification",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/pdfs/showroom-brochures-live/VW_ID.4_ID.5_MY25_SpecBrochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,607 mm",
+            "basis": "Maker specification",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/pdfs/showroom-brochures-live/VW_ID.4_ID.5_MY25_SpecBrochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,400 kg",
+            "basis": "Braked towing",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://wakelingautomotive.com.au/stock/details/OAG-AD-25859843/2025-volkswagen-id5-new"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km",
+            "basis": "Australian new-vehicle warranty; ordinary private-use baseline",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/owners-service/about-your-car/warranty.html/__layer/layers/owners_services/warranty/5-yr-warranty-t-cs/master.layer",
+              "https://www.volkswagen.com.au/en/owners-service/about-your-car/warranty.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; 70% capacity threshold",
+            "basis": "Australian BEV high-voltage battery warranty; usable/net capacity relative to initial delivery or registration",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/owners-service/about-your-car/warranty.html/__layer/layers/owners_services/warranty/5-yr-warranty-t-cs/master.layer",
+              "https://www.volkswagen.com.au/en/hybrid-and-electric/on-ev.html"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "volkswagen_idbuzz_my25_pro_swb__20261014",
+      "vehicle": "Volkswagen ID. Buzz Pro SWB",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.volkswagen.com.au/en/models/id-buzz.html",
+            "https://townsvillevolkswagen.com.au/544552-1859529-volkswagen-idbuzz-2025/"
+          ]
+        },
+        "outcome": "unchanged",
+        "note": "Model page lists the car with offers and a route to place an order via a dealer; stock and delivery not stated.",
+        "sourceIds": [
+          "refresh-volkswagen-2026-11-05-buzz"
+        ]
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "77,990 AUD",
+            "basis": "Maker national driveaway from campaign",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id-buzz.html"
+            ]
+          },
+          "outcome": "unchanged",
+          "note": "Model page shows the same campaign driveaway price.",
+          "sourceIds": [
+            "refresh-volkswagen-2026-11-05-buzz"
+          ]
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "422 km",
+            "basis": "WLTP combined",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "79 kWh",
+            "basis": "Usable/net traction battery",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "185 kW",
+            "basis": "Manufacturer maximum vehicle DC charging rate",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "26 min",
+            "basis": "DC 10–80% state-of-charge, published 26 min",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maximum vehicle AC charging acceptance",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-reviews/2025-volkswagen-id-buzz-review-2"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Standard occupied seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "1,121 L",
+            "basis": "Behind all occupied seating rows; manufacturer litres, method unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "7.6 s",
+            "basis": "Manufacturer claimed 0–100 km/h",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "210 kW",
+            "basis": "Combined maximum motor power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Driven wheels",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,712 mm",
+            "basis": "Published body length",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,985 mm",
+            "basis": "Published body width; maker table does not specify mirrors",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,927 mm",
+            "basis": "Published body height",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,200 kg",
+            "basis": "Maximum braked towing with specified genuine towbar; towbar fitment not implied",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km",
+            "basis": "Australian new-vehicle warranty; ordinary private-use baseline",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/owners-service/about-your-car/warranty.html/__layer/layers/owners_services/warranty/5-yr-warranty-t-cs/master.layer",
+              "https://www.volkswagen.com.au/en/owners-service/about-your-car/warranty.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; 70% capacity threshold",
+            "basis": "Australian BEV high-voltage battery warranty; usable/net capacity relative to initial delivery or registration",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/owners-service/about-your-car/warranty.html/__layer/layers/owners_services/warranty/5-yr-warranty-t-cs/master.layer",
+              "https://www.volkswagen.com.au/en/hybrid-and-electric/on-ev.html"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "volkswagen_idbuzz_my25_pro_lwb__20261014",
+      "vehicle": "Volkswagen ID. Buzz Pro LWB",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.volkswagen.com.au/en/models/id-buzz.html",
+            "https://townsvillevolkswagen.com.au/544552-1859529-volkswagen-idbuzz-2025/"
+          ]
+        },
+        "outcome": "unchanged",
+        "note": "Model page lists the car with offers and a route to place an order via a dealer; stock and delivery not stated.",
+        "sourceIds": [
+          "refresh-volkswagen-2026-11-05-buzz"
+        ]
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "84,990 AUD",
+            "basis": "Maker national driveaway from campaign",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/models/id-buzz.html"
+            ]
+          },
+          "outcome": "unchanged",
+          "note": "Model page shows the same campaign driveaway price.",
+          "sourceIds": [
+            "refresh-volkswagen-2026-11-05-buzz"
+          ]
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "452 km",
+            "basis": "WLTP combined",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "86 kWh",
+            "basis": "Usable/net traction battery",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "200 kW",
+            "basis": "Manufacturer maximum vehicle DC charging rate",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "26 min",
+            "basis": "DC 10–80% state-of-charge, published 26 min",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maximum vehicle AC charging acceptance",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-reviews/2025-volkswagen-id-buzz-review-2"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "7",
+            "basis": "Standard occupied seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "306 L",
+            "basis": "Behind all occupied seating rows; manufacturer litres, method unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "7.9 s",
+            "basis": "Manufacturer claimed 0–100 km/h",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "210 kW",
+            "basis": "Combined maximum motor power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Driven wheels",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,962 mm",
+            "basis": "Published body length",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,985 mm",
+            "basis": "Published body width; maker table does not specify mirrors",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,924 mm",
+            "basis": "Published body height",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,000 kg",
+            "basis": "Maximum braked towing with specified genuine towbar; towbar fitment not implied",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km",
+            "basis": "Australian new-vehicle warranty; ordinary private-use baseline",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/owners-service/about-your-car/warranty.html/__layer/layers/owners_services/warranty/5-yr-warranty-t-cs/master.layer",
+              "https://www.volkswagen.com.au/en/owners-service/about-your-car/warranty.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; 70% capacity threshold",
+            "basis": "Australian BEV high-voltage battery warranty; usable/net capacity relative to initial delivery or registration",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/owners-service/about-your-car/warranty.html/__layer/layers/owners_services/warranty/5-yr-warranty-t-cs/master.layer",
+              "https://www.volkswagen.com.au/en/hybrid-and-electric/on-ev.html"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "volkswagen_idbuzz_my25_gtx_lwb__20261014",
+      "vehicle": "Volkswagen ID. Buzz GTX LWB",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "outgoing",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "new_stock_listed",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://macgregorvolkswagen.com.au/v438628-1688181-volkswagen-idbuzz-2025/"
+          ]
+        },
+        "outcome": "pending"
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "104,990 AUD",
+            "basis": "Reported list price before on-road costs",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/research/volkswagen/id-buzz/2025/gtx/"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Reported list price (carsales); no Volkswagen page for MY25 GTX opened. Not rechecked."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "450 km",
+            "basis": "WLTP combined",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "86 kWh",
+            "basis": "Usable/net traction battery",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "200 kW",
+            "basis": "Manufacturer maximum vehicle DC charging rate",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "26 min",
+            "basis": "DC 10–80% state-of-charge, published 26 min",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maximum vehicle AC charging acceptance",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://drivingenthusiast.com.au/2026/02/2026-volkswagen-id-buzz-gtx-review-video/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "7",
+            "basis": "Standard occupied seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "306 L",
+            "basis": "Behind all occupied seating rows; manufacturer litres, method unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "6.4 s",
+            "basis": "Manufacturer claimed 0–100 km/h",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "250 kW",
+            "basis": "Combined maximum motor power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "AWD",
+            "basis": "Driven wheels",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,962 mm",
+            "basis": "Published body length",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,985 mm",
+            "basis": "Published body width; maker table does not specify mirrors",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,924 mm",
+            "basis": "Published body height",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,600 kg",
+            "basis": "Maximum braked towing with specified genuine towbar; towbar fitment not implied",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/idhub/content/dam/onehub_pkw/importers/au/model/id-buzz/2025/VW_CV_ID%20Buzz%20GTX_2025_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km",
+            "basis": "Australian new-vehicle warranty; ordinary private-use baseline",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/owners-service/about-your-car/warranty.html/__layer/layers/owners_services/warranty/5-yr-warranty-t-cs/master.layer",
+              "https://www.volkswagen.com.au/en/owners-service/about-your-car/warranty.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; 70% capacity threshold",
+            "basis": "Australian BEV high-voltage battery warranty; usable/net capacity relative to initial delivery or registration",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.volkswagen.com.au/en/owners-service/about-your-car/warranty.html/__layer/layers/owners_services/warranty/5-yr-warranty-t-cs/master.layer",
+              "https://www.volkswagen.com.au/en/hybrid-and-electric/on-ev.html"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    }
+  ]
+}
