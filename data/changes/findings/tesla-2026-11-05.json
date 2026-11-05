@@ -1,0 +1,2361 @@
+{
+  "schema": "roadmark-refresh-findings-v1",
+  "brand": "Tesla",
+  "asOf": "2026-11-05",
+  "reviewedAt": "2026-11-05",
+  "reviewedBy": "Roadmark WS2 refresh (Claude Code worker), Tesla",
+  "sources": [
+    {
+      "id": "refresh-tesla-2026-11-05-m3-design",
+      "url": "https://www.tesla.com/en_au/model3/design",
+      "title": "Design Your Model 3 (Tesla Australia)",
+      "publisher": "Tesla Australia",
+      "source_type": "official_configurator",
+      "published_date": null,
+      "accessed_date": "2026-11-05",
+      "market": "AU",
+      "supports": "Opened 2026-11-05. Model 3 $45,900 Rear-Wheel Drive; Model 3 Premium $54,900 Rear-Wheel Drive; Model 3 Premium $61,900 Long Range Rear-Wheel Drive; Model 3 Performance $80,900 All-Wheel Drive. Shows 'Est. Delivery: Nov 2026 - Jan 2027' and an Order Now button; a driveaway estimate needs the buyer's state. Allocation and physical stock are not stated."
+    },
+    {
+      "id": "refresh-tesla-2026-11-05-my-design",
+      "url": "https://www.tesla.com/en_au/modely/design?redirect=no",
+      "title": "Design Your Model Y (Tesla Australia)",
+      "publisher": "Tesla Australia",
+      "source_type": "official_configurator",
+      "published_date": null,
+      "accessed_date": "2026-11-05",
+      "market": "AU",
+      "supports": "Opened 2026-11-05. Model Y Premium $58,900 Rear-Wheel Drive; Model Y Premium $68,900 Long Range All-Wheel Drive; Model Y L Premium $74,900 All-Wheel Drive; Model Y Performance $84,900 All-Wheel Drive. Shows 'Est. Delivery: Nov 2026 - Jan 2027' and an Order Now button. Allocation and physical stock are not stated."
+    }
+  ],
+  "versions": [
+    {
+      "variantId": "tesla_model_y__premium_long_range_awd__1",
+      "vehicle": "Tesla Model Y Premium Long Range AWD",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "accepting_orders_advertised",
+          "stockStatus": "no_new_stock_verified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.tesla.com/en_au/modely/design?redirect=no"
+          ]
+        },
+        "outcome": "unchanged",
+        "sourceIds": [
+          "refresh-tesla-2026-11-05-my-design"
+        ],
+        "note": "Design page still offers Order Now with estimated delivery Nov 2026 - Jan 2027; stock not verified."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Published price",
+          "due": true,
+          "current": {
+            "value": "68,900 AUD",
+            "basis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/modely/design?redirect=no"
+            ]
+          },
+          "outcome": "unchanged",
+          "sourceIds": [
+            "refresh-tesla-2026-11-05-my-design"
+          ],
+          "note": "Design page shows the same price as 14 October."
+        },
+        {
+          "key": "range_km",
+          "label": "Claimed range",
+          "due": false,
+          "current": {
+            "value": "600 km",
+            "basis": "WLTP; current AU advertised configuration",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/modely",
+              "https://www.tesla.com/en_au/modely/design?redirect=no"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "85 kWh",
+            "basis": "Reported high-voltage battery capacity; gross/usable basis unspecified",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.redbook.com.au/cars/details/2026-tesla-model-y-premium-long-range-auto-awd/SPOT-ITM-701123/",
+              "https://www.tesla.com/en_au/modely",
+              "https://www.tesla.com/ownersmanual/modely/en_au/GUID-E414862C-CFA1-4A0B-9548-BE21C32CAA58.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging power",
+          "due": false,
+          "current": {
+            "value": "250 kW",
+            "basis": "Tesla Supercharging maximum DC power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/modely"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charging time",
+          "due": false,
+          "current": {
+            "value": "25–30 min",
+            "basis": "10–80% state of charge; no conversion from range-added claim",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-news/2026-tesla-model-y-l-prices-six-seat-ev-on-sale-in-australia-and-new-zealand-1",
+              "https://www.tesla.com/en_au/modely"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "AC maximum on 400 V three-phase 16 A; 7.4 kW on 230 V single-phase 32 A",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/support/charging/wall-connector",
+              "https://www.tesla.com/en_au/support/charging/home-charging"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating positions; L uses three rows of two seats",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/modely",
+              "https://www.tesla.com/ownersmanual/modely/en_au/GUID-1E76B638-7B12-4D9A-8767-94B7F1E92A0E.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot capacity",
+          "due": false,
+          "current": {
+            "value": "822 L",
+            "basis": "Rear cargo behind second row, seats up; Tesla method unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/ownersmanual/modely/en_au/GUID-1E76B638-7B12-4D9A-8767-94B7F1E92A0E.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "4.3 s",
+            "basis": "0–100 km/h; current AU advertised claim",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/modely",
+              "https://www.tesla.com/en_au/modely/design?redirect=no"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "378 kW",
+            "basis": "RedBook reported Combined Power; not calculated by adding motor ratings",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.redbook.com.au/cars/details/2026-tesla-model-y-premium-long-range-auto-awd/SPOT-ITM-701123/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "AWD",
+            "basis": "Dual-motor all-wheel drive",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/modely",
+              "https://www.tesla.com/en_au/modely/design?redirect=no"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,790 mm",
+            "basis": "Overall length excluding number-plate bracket (AU manual)",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/ownersmanual/modely/en_au/GUID-1E76B638-7B12-4D9A-8767-94B7F1E92A0E.html",
+              "https://www.tesla.com/en_au/modely"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,920 mm",
+            "basis": "Body width excluding mirrors; 1982 mm folded/2129 mm extended",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/ownersmanual/modely/en_au/GUID-1E76B638-7B12-4D9A-8767-94B7F1E92A0E.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,624 mm",
+            "basis": "Overall height",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/modely",
+              "https://www.tesla.com/ownersmanual/modely/en_au/GUID-1E76B638-7B12-4D9A-8767-94B7F1E92A0E.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,588 kg",
+            "basis": "Maximum trailer capacity with tow kit and suitable brake controller; five or fewer passengers; 19/20/21in listed wheels",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/ownersmanual/modely/en_au/GUID-F5C80FF5-8DE3-4750-8BAF-0DCC0CFA0C5C.html",
+              "https://shop.tesla.com/en_au/product/model-y_-y-l-tow-package"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited kilometres",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/support/vehicle-warranty",
+              "https://digitalassets.tesla.com/tesla-contents/image/upload/tesla-new-vehicle-limited-warranty-en-au.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 192,000 km; minimum 70% capacity retention",
+            "basis": "Australian power-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/support/vehicle-warranty",
+              "https://digitalassets.tesla.com/tesla-contents/image/upload/tesla-new-vehicle-limited-warranty-en-au.pdf"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "tesla_model_y__premium_rwd__2",
+      "vehicle": "Tesla Model Y Premium RWD",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "accepting_orders_advertised",
+          "stockStatus": "no_new_stock_verified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.tesla.com/en_au/modely/design?redirect=no"
+          ]
+        },
+        "outcome": "unchanged",
+        "sourceIds": [
+          "refresh-tesla-2026-11-05-my-design"
+        ],
+        "note": "Design page still offers Order Now with estimated delivery Nov 2026 - Jan 2027; stock not verified."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Published price",
+          "due": true,
+          "current": {
+            "value": "58,900 AUD",
+            "basis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/modely/design?redirect=no"
+            ]
+          },
+          "outcome": "unchanged",
+          "sourceIds": [
+            "refresh-tesla-2026-11-05-my-design"
+          ],
+          "note": "Design page shows the same price as 14 October."
+        },
+        {
+          "key": "range_km",
+          "label": "Claimed range",
+          "due": false,
+          "current": {
+            "value": "466 km",
+            "basis": "WLTP; current AU advertised configuration",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/modely",
+              "https://www.tesla.com/en_au/modely/design?redirect=no"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "62.5 kWh",
+            "basis": "Reported MY26 Australian RWD battery capacity; gross/usable basis unspecified",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-news/2026-tesla-model-y-price-and-specs",
+              "https://www.tesla.com/en_au/modely",
+              "https://www.redbook.com.au/cars/details/2026-tesla-model-y-premium-rear-wheel-drive-auto/SPOT-ITM-701121?Cr=3"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging power",
+          "due": false,
+          "current": {
+            "value": "175 kW",
+            "basis": "Tesla Supercharging maximum DC power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/modely"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charging time",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "10–80% state of charge; no conversion from range-added claim",
+            "grade": "not_published",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/modely",
+              "https://www.redbook.com.au/cars/details/2026-tesla-model-y-premium-rear-wheel-drive-auto/SPOT-ITM-701121?Cr=3"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "AC maximum on 400 V three-phase 16 A; 7.4 kW on 230 V single-phase 32 A",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/support/charging/wall-connector",
+              "https://www.tesla.com/en_au/support/charging/home-charging"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating positions; L uses three rows of two seats",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/modely",
+              "https://www.tesla.com/ownersmanual/modely/en_au/GUID-1E76B638-7B12-4D9A-8767-94B7F1E92A0E.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot capacity",
+          "due": false,
+          "current": {
+            "value": "822 L",
+            "basis": "Rear cargo behind second row, seats up; Tesla method unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/ownersmanual/modely/en_au/GUID-1E76B638-7B12-4D9A-8767-94B7F1E92A0E.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "5.9 s",
+            "basis": "0–100 km/h; current AU advertised claim",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/modely",
+              "https://www.tesla.com/en_au/modely/design?redirect=no"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "255 kW",
+            "basis": "RedBook reported Alternative Engine Power; not manufacturer-published retail output",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.redbook.com.au/cars/details/2026-tesla-model-y-premium-rear-wheel-drive-auto/SPOT-ITM-701121?Cr=3"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Single-motor rear-wheel drive",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/modely",
+              "https://www.tesla.com/en_au/modely/design?redirect=no"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,790 mm",
+            "basis": "Overall length excluding number-plate bracket (AU manual)",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/ownersmanual/modely/en_au/GUID-1E76B638-7B12-4D9A-8767-94B7F1E92A0E.html",
+              "https://www.tesla.com/en_au/modely"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,920 mm",
+            "basis": "Body width excluding mirrors; 1982 mm folded/2129 mm extended",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/ownersmanual/modely/en_au/GUID-1E76B638-7B12-4D9A-8767-94B7F1E92A0E.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,624 mm",
+            "basis": "Overall height",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/modely",
+              "https://www.tesla.com/ownersmanual/modely/en_au/GUID-1E76B638-7B12-4D9A-8767-94B7F1E92A0E.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,588 kg",
+            "basis": "Maximum trailer capacity with tow kit and suitable brake controller; five or fewer passengers; 19/20/21in listed wheels",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/ownersmanual/modely/en_au/GUID-F5C80FF5-8DE3-4750-8BAF-0DCC0CFA0C5C.html",
+              "https://shop.tesla.com/en_au/product/model-y_-y-l-tow-package"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited kilometres",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/support/vehicle-warranty",
+              "https://digitalassets.tesla.com/tesla-contents/image/upload/tesla-new-vehicle-limited-warranty-en-au.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; minimum 70% capacity retention",
+            "basis": "Australian power-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/support/vehicle-warranty",
+              "https://digitalassets.tesla.com/tesla-contents/image/upload/tesla-new-vehicle-limited-warranty-en-au.pdf"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "tesla_model_y__l_premium_awd__4",
+      "vehicle": "Tesla Model Y L Premium AWD (six-seat)",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "accepting_orders_advertised",
+          "stockStatus": "no_new_stock_verified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.tesla.com/en_au/modely/design?redirect=no"
+          ]
+        },
+        "outcome": "unchanged",
+        "sourceIds": [
+          "refresh-tesla-2026-11-05-my-design"
+        ],
+        "note": "Design page still offers Order Now with estimated delivery Nov 2026 - Jan 2027; stock not verified."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Published price",
+          "due": true,
+          "current": {
+            "value": "74,900 AUD",
+            "basis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/modely/design?redirect=no"
+            ]
+          },
+          "outcome": "unchanged",
+          "sourceIds": [
+            "refresh-tesla-2026-11-05-my-design"
+          ],
+          "note": "Design page shows the same price as 14 October."
+        },
+        {
+          "key": "range_km",
+          "label": "Claimed range",
+          "due": false,
+          "current": {
+            "value": "681 km",
+            "basis": "WLTP; current AU advertised configuration",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/modely",
+              "https://www.tesla.com/en_au/modely/design?redirect=no"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "85 kWh",
+            "basis": "Reported high-voltage battery capacity; gross/usable basis unspecified",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.redbook.com.au/cars/details/2026-tesla-model-y-l-premium-auto-awd/SPOT-ITM-701122?Cr=12",
+              "https://www.tesla.com/en_au/modely",
+              "https://www.tesla.com/ownersmanual/modely/en_au/GUID-E414862C-CFA1-4A0B-9548-BE21C32CAA58.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging power",
+          "due": false,
+          "current": {
+            "value": "250 kW",
+            "basis": "Tesla Supercharging maximum DC power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/modely"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charging time",
+          "due": false,
+          "current": {
+            "value": "25–30 min",
+            "basis": "10–80% state of charge; no conversion from range-added claim",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-news/2026-tesla-model-y-l-prices-six-seat-ev-on-sale-in-australia-and-new-zealand-1",
+              "https://www.tesla.com/en_au/modely"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "AC maximum on 400 V three-phase 16 A; 7.4 kW on 230 V single-phase 32 A",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/support/charging/wall-connector",
+              "https://www.tesla.com/en_au/support/charging/home-charging"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "6",
+            "basis": "Seating positions; L uses three rows of two seats",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/modely",
+              "https://www.tesla.com/ownersmanual/modely/en_au/GUID-1E76B638-7B12-4D9A-8767-94B7F1E92A0E.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot capacity",
+          "due": false,
+          "current": {
+            "value": "420 L",
+            "basis": "Rear cargo behind third row, all six seats occupied; Tesla method unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/ownersmanual/modely/en_au/GUID-1E76B638-7B12-4D9A-8767-94B7F1E92A0E.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "4.5 s",
+            "basis": "0–100 km/h; current AU advertised claim",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/modely",
+              "https://www.tesla.com/en_au/modely/design?redirect=no"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "378 kW",
+            "basis": "RedBook reported Combined Power; not calculated by adding motor ratings",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.redbook.com.au/cars/details/2026-tesla-model-y-l-premium-auto-awd/SPOT-ITM-701122?Cr=12"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "AWD",
+            "basis": "Dual-motor all-wheel drive",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/modely",
+              "https://www.tesla.com/en_au/modely/design?redirect=no"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,969 mm",
+            "basis": "Overall length excluding number-plate bracket (AU manual)",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/ownersmanual/modely/en_au/GUID-1E76B638-7B12-4D9A-8767-94B7F1E92A0E.html",
+              "https://www.tesla.com/en_au/modely"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,920 mm",
+            "basis": "Body width excluding mirrors; 1982 mm folded/2129 mm extended",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/ownersmanual/modely/en_au/GUID-1E76B638-7B12-4D9A-8767-94B7F1E92A0E.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,668 mm",
+            "basis": "Overall height",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/modely",
+              "https://www.tesla.com/ownersmanual/modely/en_au/GUID-1E76B638-7B12-4D9A-8767-94B7F1E92A0E.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,558 kg",
+            "basis": "Maximum trailer capacity with tow kit and suitable brake controller; 19/20in wheels with four or fewer passengers",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/ownersmanual/modely/en_au/GUID-F5C80FF5-8DE3-4750-8BAF-0DCC0CFA0C5C.html",
+              "https://shop.tesla.com/en_au/product/model-y_-y-l-tow-package"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited kilometres",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/support/vehicle-warranty",
+              "https://digitalassets.tesla.com/tesla-contents/image/upload/tesla-new-vehicle-limited-warranty-en-au.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 192,000 km; minimum 70% capacity retention",
+            "basis": "Australian power-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/support/vehicle-warranty",
+              "https://digitalassets.tesla.com/tesla-contents/image/upload/tesla-new-vehicle-limited-warranty-en-au.pdf"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "tesla_model_y__performance_awd__3",
+      "vehicle": "Tesla Model Y Performance AWD",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "accepting_orders_advertised",
+          "stockStatus": "no_new_stock_verified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.tesla.com/en_au/modely/design?redirect=no"
+          ]
+        },
+        "outcome": "unchanged",
+        "sourceIds": [
+          "refresh-tesla-2026-11-05-my-design"
+        ],
+        "note": "Design page still offers Order Now with estimated delivery Nov 2026 - Jan 2027; stock not verified."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Published price",
+          "due": true,
+          "current": {
+            "value": "84,900 AUD",
+            "basis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/modely/design?redirect=no"
+            ]
+          },
+          "outcome": "unchanged",
+          "sourceIds": [
+            "refresh-tesla-2026-11-05-my-design"
+          ],
+          "note": "Design page shows the same price as 14 October."
+        },
+        {
+          "key": "range_km",
+          "label": "Claimed range",
+          "due": false,
+          "current": {
+            "value": "580 km",
+            "basis": "WLTP; current AU advertised configuration",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/modely",
+              "https://www.tesla.com/en_au/modely/design?redirect=no"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "85 kWh",
+            "basis": "Reported high-voltage battery capacity; gross/usable basis unspecified",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.redbook.com.au/cars/details/2026-tesla-model-y-performance-auto-awd/SPOT-ITM-701124?Cr=10",
+              "https://www.tesla.com/en_au/modely",
+              "https://www.tesla.com/ownersmanual/modely/en_au/GUID-E414862C-CFA1-4A0B-9548-BE21C32CAA58.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging power",
+          "due": false,
+          "current": {
+            "value": "250 kW",
+            "basis": "Tesla Supercharging maximum DC power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/modely"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charging time",
+          "due": false,
+          "current": {
+            "value": "25–30 min",
+            "basis": "10–80% state of charge; no conversion from range-added claim",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-news/2026-tesla-model-y-l-prices-six-seat-ev-on-sale-in-australia-and-new-zealand-1",
+              "https://www.tesla.com/en_au/modely"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "AC maximum on 400 V three-phase 16 A; 7.4 kW on 230 V single-phase 32 A",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/support/charging/wall-connector",
+              "https://www.tesla.com/en_au/support/charging/home-charging"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating positions; L uses three rows of two seats",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/modely",
+              "https://www.tesla.com/ownersmanual/modely/en_au/GUID-1E76B638-7B12-4D9A-8767-94B7F1E92A0E.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot capacity",
+          "due": false,
+          "current": {
+            "value": "822 L",
+            "basis": "Rear cargo behind second row, seats up; Tesla method unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/ownersmanual/modely/en_au/GUID-1E76B638-7B12-4D9A-8767-94B7F1E92A0E.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "3.5 s",
+            "basis": "0–100 km/h with rollout subtracted",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/modely",
+              "https://www.tesla.com/en_au/modely/design?redirect=no"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "461 kW",
+            "basis": "RedBook reported Combined Power; not calculated by adding motor ratings",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.redbook.com.au/cars/details/2026-tesla-model-y-performance-auto-awd/SPOT-ITM-701124?Cr=10"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "AWD",
+            "basis": "Dual-motor all-wheel drive",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/modely",
+              "https://www.tesla.com/en_au/modely/design?redirect=no"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,796 mm",
+            "basis": "Overall length excluding number-plate bracket (AU manual)",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/ownersmanual/modely/en_au/GUID-1E76B638-7B12-4D9A-8767-94B7F1E92A0E.html",
+              "https://www.tesla.com/en_au/modely"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,920 mm",
+            "basis": "Body width excluding mirrors; 1982 mm folded/2129 mm extended",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/ownersmanual/modely/en_au/GUID-1E76B638-7B12-4D9A-8767-94B7F1E92A0E.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,611 mm",
+            "basis": "Overall height",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/modely",
+              "https://www.tesla.com/ownersmanual/modely/en_au/GUID-1E76B638-7B12-4D9A-8767-94B7F1E92A0E.html"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,588 kg",
+            "basis": "Maximum trailer capacity with tow kit and suitable brake controller; five or fewer passengers; 19/20/21in listed wheels",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/ownersmanual/modely/en_au/GUID-F5C80FF5-8DE3-4750-8BAF-0DCC0CFA0C5C.html",
+              "https://shop.tesla.com/en_au/product/model-y_-y-l-tow-package"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited kilometres",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/support/vehicle-warranty",
+              "https://digitalassets.tesla.com/tesla-contents/image/upload/tesla-new-vehicle-limited-warranty-en-au.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 192,000 km; minimum 70% capacity retention",
+            "basis": "Australian power-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/support/vehicle-warranty",
+              "https://digitalassets.tesla.com/tesla-contents/image/upload/tesla-new-vehicle-limited-warranty-en-au.pdf"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "tesla_model_3__premium_long_range_rwd__1",
+      "vehicle": "Tesla Model 3 Premium Long Range RWD",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "accepting_orders_advertised",
+          "stockStatus": "no_new_stock_verified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.tesla.com/en_au/model3/design"
+          ]
+        },
+        "outcome": "unchanged",
+        "sourceIds": [
+          "refresh-tesla-2026-11-05-m3-design"
+        ],
+        "note": "Design page still offers Order Now with estimated delivery Nov 2026 - Jan 2027; stock not verified."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Published price",
+          "due": true,
+          "current": {
+            "value": "61,900 AUD",
+            "basis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/model3/design"
+            ]
+          },
+          "outcome": "unchanged",
+          "sourceIds": [
+            "refresh-tesla-2026-11-05-m3-design"
+          ],
+          "note": "Design page shows the same price as 14 October."
+        },
+        {
+          "key": "range_km",
+          "label": "Claimed range",
+          "due": false,
+          "current": {
+            "value": "750 km",
+            "basis": "WLTP combined; 18-inch wheels",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/model3"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "85 kWh",
+            "basis": "Reported high-voltage battery capacity; usable/gross not stated",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/cars/details/2026-tesla-model-3-premium-long-range-rear-wheel-drive-auto/SHRM-AD-6550347/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging power",
+          "due": false,
+          "current": {
+            "value": "250 kW",
+            "basis": "Vehicle DC peak",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/model3"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charging time",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "10–80%",
+            "grade": "not_published",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/model3",
+              "https://www.carsguide.com.au/ev/tesla-model-3-premium-long-range-rwd-100750"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "11 kW on 400 V three-phase supply",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/support/charging/wall-connector"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/model3"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot capacity",
+          "due": false,
+          "current": {
+            "value": "594 L",
+            "basis": "Tesla cargo volume behind occupied seats; method unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/ownersmanual/model3/en_au/Owners_Manual.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "5.2 s",
+            "basis": "0–100 km/h",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/model3"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "235 kW",
+            "basis": "Maximum combined motor power",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/cars/details/2026-tesla-model-3-premium-long-range-rear-wheel-drive-auto/SHRM-AD-6550347/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Driven wheels",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/model3"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,720 mm",
+            "basis": "Overall length",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/model3"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,850 mm",
+            "basis": "Overall body width excluding mirrors",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/ownersmanual/model3/en_au/Owners_Manual.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,440 mm",
+            "basis": "Overall height",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/model3"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,000 kg",
+            "basis": "Maximum braked towing",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/ownersmanual/model3/en_au/Owners_Manual.pdf",
+              "https://shop.tesla.com/en_au/product/model-3-tow-package?sku=1806541-00-A"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited kilometres",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/support/vehicle-warranty",
+              "https://digitalassets.tesla.com/tesla-contents/image/upload/tesla-new-vehicle-limited-warranty-en-au.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 192,000 km; minimum 70% capacity retention",
+            "basis": "Australian power-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/support/vehicle-warranty",
+              "https://digitalassets.tesla.com/tesla-contents/image/upload/tesla-new-vehicle-limited-warranty-en-au.pdf"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "tesla_model_3__premium_rwd__2",
+      "vehicle": "Tesla Model 3 Premium RWD",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "accepting_orders_advertised",
+          "stockStatus": "no_new_stock_verified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.tesla.com/en_au/model3/design"
+          ]
+        },
+        "outcome": "unchanged",
+        "sourceIds": [
+          "refresh-tesla-2026-11-05-m3-design"
+        ],
+        "note": "Design page still offers Order Now with estimated delivery Nov 2026 - Jan 2027; stock not verified."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Published price",
+          "due": true,
+          "current": {
+            "value": "54,900 AUD",
+            "basis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/model3/design"
+            ]
+          },
+          "outcome": "unchanged",
+          "sourceIds": [
+            "refresh-tesla-2026-11-05-m3-design"
+          ],
+          "note": "Design page shows the same price as 14 October."
+        },
+        {
+          "key": "range_km",
+          "label": "Claimed range",
+          "due": false,
+          "current": {
+            "value": "520 km",
+            "basis": "WLTP combined",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/model3"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "62.5 kWh",
+            "basis": "Reported high-voltage battery capacity; usable/gross not stated",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://media.racq.com.au/articles/car-updates/tesla-introduces-cut-price-model-3",
+              "https://www.carexpert.com.au/car-news/tesla-model-3-becomes-australias-cheapest-electric-sedan"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging power",
+          "due": false,
+          "current": {
+            "value": "175 kW",
+            "basis": "Vehicle DC peak",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/model3"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charging time",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "10–80%",
+            "grade": "not_published",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/model3",
+              "https://www.carexpert.com.au/car-news/tesla-model-3-becomes-australias-cheapest-electric-sedan"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "11 kW on 400 V three-phase supply",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/support/charging/wall-connector"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/model3"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot capacity",
+          "due": false,
+          "current": {
+            "value": "594 L",
+            "basis": "Tesla cargo volume behind occupied seats; method unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/ownersmanual/model3/en_au/Owners_Manual.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "6.1 s",
+            "basis": "0–100 km/h",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/model3"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "208 kW",
+            "basis": "Maximum combined motor power",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-reviews/2026-tesla-model-3-review"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Driven wheels",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/model3"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,720 mm",
+            "basis": "Overall length",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/model3"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,850 mm",
+            "basis": "Overall body width excluding mirrors",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/ownersmanual/model3/en_au/Owners_Manual.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,440 mm",
+            "basis": "Overall height",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/model3"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,000 kg",
+            "basis": "Maximum braked towing",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/ownersmanual/model3/en_au/Owners_Manual.pdf",
+              "https://shop.tesla.com/en_au/product/model-3-tow-package?sku=1806541-00-A"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited kilometres",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/support/vehicle-warranty",
+              "https://digitalassets.tesla.com/tesla-contents/image/upload/tesla-new-vehicle-limited-warranty-en-au.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; minimum 70% capacity retention",
+            "basis": "Australian power-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/support/vehicle-warranty",
+              "https://digitalassets.tesla.com/tesla-contents/image/upload/tesla-new-vehicle-limited-warranty-en-au.pdf"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "tesla_model_3__rear_wheel_drive__3",
+      "vehicle": "Tesla Model 3 Rear-Wheel Drive",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "accepting_orders_advertised",
+          "stockStatus": "no_new_stock_verified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.tesla.com/en_au/model3/design"
+          ]
+        },
+        "outcome": "unchanged",
+        "sourceIds": [
+          "refresh-tesla-2026-11-05-m3-design"
+        ],
+        "note": "Design page still offers Order Now with estimated delivery Nov 2026 - Jan 2027; stock not verified."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Published price",
+          "due": true,
+          "current": {
+            "value": "45,900 AUD",
+            "basis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/model3/design"
+            ]
+          },
+          "outcome": "unchanged",
+          "sourceIds": [
+            "refresh-tesla-2026-11-05-m3-design"
+          ],
+          "note": "Design page shows the same price as 14 October."
+        },
+        {
+          "key": "range_km",
+          "label": "Claimed range",
+          "due": false,
+          "current": {
+            "value": "572 km",
+            "basis": "WLTP combined",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/model3"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "62.5 kWh",
+            "basis": "Reported high-voltage battery capacity; usable/gross not stated",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://media.racq.com.au/articles/car-updates/tesla-introduces-cut-price-model-3",
+              "https://www.carexpert.com.au/car-news/tesla-model-3-becomes-australias-cheapest-electric-sedan"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging power",
+          "due": false,
+          "current": {
+            "value": "175 kW",
+            "basis": "Vehicle DC peak",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/model3"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charging time",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "10–80%",
+            "grade": "not_published",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/model3",
+              "https://www.carexpert.com.au/car-news/tesla-model-3-becomes-australias-cheapest-electric-sedan"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "11 kW on 400 V three-phase supply",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/support/charging/wall-connector"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/model3"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot capacity",
+          "due": false,
+          "current": {
+            "value": "594 L",
+            "basis": "Tesla cargo volume behind occupied seats; method unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/ownersmanual/model3/en_au/Owners_Manual.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "6.2 s",
+            "basis": "0–100 km/h",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/model3"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "208 kW",
+            "basis": "Maximum combined motor power",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.redbook.com.au/cars/details/2026-tesla-model-3-rear-wheel-drive-auto/SPOT-ITM-701078?Cr=43"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Driven wheels",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/model3"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,720 mm",
+            "basis": "Overall length",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/model3"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,850 mm",
+            "basis": "Overall body width excluding mirrors",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/ownersmanual/model3/en_au/Owners_Manual.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,440 mm",
+            "basis": "Overall height",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/model3"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,000 kg",
+            "basis": "Maximum braked towing",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/ownersmanual/model3/en_au/Owners_Manual.pdf",
+              "https://shop.tesla.com/en_au/product/model-3-tow-package?sku=1806541-00-A"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited kilometres",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/support/vehicle-warranty",
+              "https://digitalassets.tesla.com/tesla-contents/image/upload/tesla-new-vehicle-limited-warranty-en-au.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; minimum 70% capacity retention",
+            "basis": "Australian power-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/support/vehicle-warranty",
+              "https://digitalassets.tesla.com/tesla-contents/image/upload/tesla-new-vehicle-limited-warranty-en-au.pdf"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    },
+    {
+      "variantId": "tesla_model_3__performance_awd__4",
+      "vehicle": "Tesla Model 3 Performance AWD",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "accepting_orders_advertised",
+          "stockStatus": "no_new_stock_verified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.tesla.com/en_au/model3/design"
+          ]
+        },
+        "outcome": "unchanged",
+        "sourceIds": [
+          "refresh-tesla-2026-11-05-m3-design"
+        ],
+        "note": "Design page still offers Order Now with estimated delivery Nov 2026 - Jan 2027; stock not verified."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Published price",
+          "due": true,
+          "current": {
+            "value": "80,900 AUD",
+            "basis": "Maker configurator base price incl GST; excludes A$1,400 delivery, A$400 order fee and government on-road costs",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/model3/design"
+            ]
+          },
+          "outcome": "unchanged",
+          "sourceIds": [
+            "refresh-tesla-2026-11-05-m3-design"
+          ],
+          "note": "Design page shows the same price as 14 October."
+        },
+        {
+          "key": "range_km",
+          "label": "Claimed range",
+          "due": false,
+          "current": {
+            "value": "600 km",
+            "basis": "WLTP combined",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/model3"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "85 kWh",
+            "basis": "Reported high-voltage battery capacity; usable/gross not stated",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carsales.com.au/cars/details/2026-tesla-model-3-performance-auto-awd/SHRM-AD-6550346/",
+              "https://www.tesla.com/en_au/model3"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging power",
+          "due": false,
+          "current": {
+            "value": "250 kW",
+            "basis": "Vehicle DC peak",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/model3"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charging time",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "10–80%",
+            "grade": "not_published",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/model3",
+              "https://www.carexpert.com.au/car-news/tesla-model-3-becomes-australias-cheapest-electric-sedan"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "11 kW on 400 V three-phase supply",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/support/charging/wall-connector"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/model3"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot capacity",
+          "due": false,
+          "current": {
+            "value": "594 L",
+            "basis": "Tesla cargo volume behind occupied seats; method unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/ownersmanual/model3/en_au/Owners_Manual.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "3.1 s",
+            "basis": "0–100 km/h with rollout subtracted",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/model3"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "343 kW",
+            "basis": "Maximum combined motor power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/model3"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "AWD",
+            "basis": "Driven wheels",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/model3"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,724 mm",
+            "basis": "Overall length",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/model3"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,850 mm",
+            "basis": "Overall body width excluding mirrors",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/ownersmanual/model3/en_au/Owners_Manual.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,431 mm",
+            "basis": "Overall height",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/model3"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "0 kg",
+            "basis": "Towing not permitted on supplied 20-inch tyres",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/ownersmanual/model3/en_au/Owners_Manual.pdf",
+              "https://shop.tesla.com/en_au/product/model-3-tow-package?sku=1806541-00-A",
+              "https://www.tesla.com/en_au/model3"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited kilometres",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/support/vehicle-warranty",
+              "https://digitalassets.tesla.com/tesla-contents/image/upload/tesla-new-vehicle-limited-warranty-en-au.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 192,000 km; minimum 70% capacity retention",
+            "basis": "Australian power-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.tesla.com/en_au/support/vehicle-warranty",
+              "https://digitalassets.tesla.com/tesla-contents/image/upload/tesla-new-vehicle-limited-warranty-en-au.pdf"
+            ]
+          },
+          "outcome": "pending"
+        }
+      ]
+    }
+  ]
+}
