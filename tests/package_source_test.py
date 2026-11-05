@@ -288,7 +288,7 @@ class SourcePackagingTests(unittest.TestCase):
                 )
                 result = json.loads(completed.stdout)
                 self.assertEqual(result["format"], archive_format)
-                self.assertEqual(result["path"], str(output))
+                self.assertEqual(os.path.realpath(result["path"]), os.path.realpath(output))
                 self.assertTrue(output.is_file())
         for arguments in (
             ["--output", str(self.directory / "wrong.tar.gz")],
