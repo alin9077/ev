@@ -57,6 +57,11 @@ Repository hygiene:
 
 Branch: `claude/ws0-roadmark-source-938862` (the plan names `ws0-roadmark-source`; the harness-assigned worktree branch is used instead). W0.4 external step requires owner approval (see below).
 
+**W0.1 — done (2026-11-05).** Extracted into a fresh empty scratchpad directory (outside the repo).
+- Archive SHA-256 `d624a00ea9f9ae0c1e4c75e12930a7cb9554a537d3e1c6ca03a7a34406295444` — matches the plan.
+- Files: 707 on disk = 706 manifest-listed source files + `SOURCE-FILE-MANIFEST.json`. Manifest entries: 706.
+- Per-file check (SHA-256 and byte size of all 706 entries against `SOURCE-FILE-MANIFEST.json`): 0 mismatches, 0 missing, 1 extra on disk (the manifest itself).
+
 ## Ambiguities found
 
 (A worker who hits a case the definitions in section 1 of the plan do not cover writes it here, with the stricter reading they chose.)
