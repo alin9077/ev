@@ -55,6 +55,8 @@ const dateOk = (value: unknown): value is string =>
   new Date(`${value}T00:00:00Z`).toISOString().slice(0, 10) === value;
 export const packetId = (brand: string, reviewedAt: string) =>
   `refresh-${brandSlug(brand)}-${reviewedAt}`;
+/** Facts the loader holds to the price ladder; companion copies without ladder evidence follow ordinary fact rules. */
+const LADDER_KEYS = ["price_aud", "promotional_driveaway_aud", "published_driveaway_aud"];
 const statusFor = (grade: BuyerGrade): Fact["status"] =>
   grade === "confirmed"
     ? "standard"
@@ -177,7 +179,7 @@ function rebuildFact(
     };
     if (f.outcome === "changed" && f.basis !== undefined)
       next.priceEvidence.originalBasis = f.basis;
-  } else if (f.outcome === "changed" && /(^|_)(price|driveaway|msrp)(_|$)/.test(f.key) && f.value !== null)
+  } else if (f.outcome === "changed" && LADDER_KEYS.includes(f.key) && f.value !== null)
     fail(`${ctx.where}: a changed price needs an existing priceEvidence ladder entry to update (add via a normal brand update)`);
   return next;
 }

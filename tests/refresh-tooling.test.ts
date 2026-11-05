@@ -183,6 +183,16 @@ test("'Not published' is only accepted with two distinct pages searched", () => 
   assert.equal(ok.packet.facts[0].after.status, "not_verified");
 });
 
+test("a companion price fact without ladder evidence can change; a ladder price cannot be changed without its evidence", () => {
+  const cars = [car()];
+  cars[0].facts.driveaway_price_aud = { ...priceFact(50000), key: "driveaway_price_aud", priceEvidence: undefined } as Fact;
+  const ok = buildPacket(findings(cars, (x) => Object.assign(x.versions[0].fields.find((f) => f.key === "driveaway_price_aud") ?? (() => { const f = { key: "driveaway_price_aud", label: "Driveaway", due: true, current: { value: "", basis: "", grade: "", checkedAt: "", sourceUrls: [] }, outcome: "pending" as const }; x.versions[0].fields.push(f); return f; })(), { outcome: "changed", value: 49990, sourceIds: ["new-config"], note: "now 49,990" })), context(cars));
+  assert.equal(ok.packet.facts[0].after.value, 49990);
+  const noEvidence = [car()];
+  noEvidence[0].facts.price_aud = { ...priceFact(50000), priceEvidence: undefined } as Fact;
+  assert.throws(() => buildPacket(findings(noEvidence, (x) => Object.assign(field(x, "price_aud"), { outcome: "changed", value: 49000, sourceIds: ["new-config"] })), context(noEvidence)), /needs an existing priceEvidence/);
+});
+
 test("every refresh script is wired to a real file", () => {
   const scripts = JSON.parse(fs.readFileSync("package.json", "utf8")).scripts as Record<string, string>;
   for (const name of REFRESH_PACKAGE_SCRIPTS) {
