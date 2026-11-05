@@ -23,7 +23,7 @@ Update this file whenever a workstream starts, pauses or finishes. Newest entry 
 | WS4 Money thresholds | not started | | | | |
 | WS5 Needs discovery + checklist | not started | | | | |
 | WS6 Step-up view | not started | | | | |
-| WS7 Live-site hygiene | not started | | | | |
+| WS7 Live-site hygiene | in progress | claude/ws7-live-site-hygiene-02d94a | | Claude Sonnet 5.5 worker | 2026-11-05 |
 
 States: not started / in progress / paused (reason) / blocked (on what) / done (acceptance pasted below).
 
@@ -52,6 +52,10 @@ Repository hygiene:
 ## Entries
 
 (Workers append below. Format: `### YYYY-MM-DD WS<N> — <state>` then the check output, gaps, decisions, failures.)
+
+### 2026-11-05 WS7 — in progress
+
+Branch `claude/ws7-live-site-hygiene-02d94a` (note: plan rule 8 names branches `ws<N>-<slug>`; the session harness assigned this name). W7.4 is blocked: needs owner to run (requires the owner's own ChatGPT, Perplexity and Google accounts). D7.1 unanswered, so the plan default applies: correction link hidden.
 
 ## Ambiguities found
 
