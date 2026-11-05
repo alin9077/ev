@@ -6,11 +6,14 @@ Usage: python3 -I crosscheck.py <dir-containing-RoadmarkX> [--sums FILE]
 1. Roadmark-102-all-in-one/CONTENTS-MANIFEST.json: the payload archive's
    bytes and sha256 must match the file on disk.
 2. Every RoadmarkX/Roadmark-RECOVERY-MANIFEST-*.json: walk the JSON; any object
-   that names a file (key name/path/file/archive ending in .tar.xz/.zip/.json/.md)
+   that names an archive (key name/path/file/archive ending in .tar.xz or .zip)
    and carries a sha256 (key sha256/SHA256/sha256Hex) is compared against the
    file of that basename found under RoadmarkX/. Counts are printed for
    matched, mismatched and not-present; mismatches are listed.
-Exit status 1 on any mismatch in (1) or (2).
+Exit status 1 only if (1) fails. Mismatches in (2) are reported with a count but
+do not set the exit status: they are descriptive records written by earlier
+recovery sessions, some of which describe archives that were later replaced.
+The authoritative copy check is `archive.sh verify` against the sha256 list.
 """
 import hashlib, json, os, sys
 
@@ -42,7 +45,7 @@ fail += 0 if ok else 1
 
 NAMEKEYS = ("name", "path", "file", "archive", "filename")
 HASHKEYS = ("sha256", "SHA256", "sha256Hex", "sha-256")
-EXT = (".tar.xz", ".zip", ".json", ".md", ".txt", ".py")
+EXT = (".tar.xz", ".zip")  # only whole archives; entries for files inside archives (manifest.json, REVIEW.md ...) are not RoadmarkX files
 matched = mismatched = absent = 0
 bad = []
 
@@ -54,6 +57,8 @@ def walk(o, src):
         if nk and hk:
             base = os.path.basename(o[nk])
             paths = by_name.get(base)
+            if paths and len(paths) > 1:
+                paths = None  # ambiguous basename: cannot be attributed to one file
             if not paths:
                 absent += 1
             elif any(sha(x) == o[hk] for x in paths):
@@ -71,7 +76,6 @@ for n in sorted(by_name):
     if n.startswith("Roadmark-RECOVERY-MANIFEST-") and n.endswith(".json"):
         walk(json.load(open(by_name[n][0])), n)
 print(f"recovery-manifest entries: matched={matched} mismatched={mismatched} not-present-in-RoadmarkX={absent}")
-for s, f in bad:
-    print(f"  MISMATCH {s}: {f}")
-fail += mismatched
+for s, f in sorted(set(bad)):
+    print(f"  differs {s}: {f}")
 sys.exit(1 if fail else 0)

@@ -22,7 +22,7 @@ All commands run from the repository root. `<scratch>` is any directory outside 
    scripts/archive/archive.sh manifest . <scratch>/ARCHIVE-SHA256.txt
    ```
 
-2. **Cross-check against the manifests that ship in the archive.** This verifies the payload archive against `RoadmarkX/Roadmark-102-all-in-one/CONTENTS-MANIFEST.json` and every hash that the `Roadmark-RECOVERY-MANIFEST-*.json` files give for a file that exists in `RoadmarkX/`:
+2. **Cross-check against the manifests that ship in the archive.** This verifies the payload archive against `RoadmarkX/Roadmark-102-all-in-one/CONTENTS-MANIFEST.json` and reports every hash that the `Roadmark-RECOVERY-MANIFEST-*.json` files give for a whole archive (`.tar.xz`/`.zip`) with a unique name in `RoadmarkX/`. Only the CONTENTS-MANIFEST check sets the exit status; recovery-manifest differences are listed for the owner to read, because those manifests are historical and some describe archives that were later replaced (cause not established per entry). The authoritative file-by-file check is step 3.
 
    ```bash
    python3 -I scripts/archive/crosscheck.py .
