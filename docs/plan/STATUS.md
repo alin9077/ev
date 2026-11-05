@@ -131,11 +131,31 @@ No test was weakened, skipped or deleted. **Owner decision (relayed by the orche
 - Tag `ev-side-by-side-2026-11-04` on old `main`: **pass locally**; pushed with the PR.
 - Archives removed from the tree and copied to `ev-archive`: **blocked** — awaiting owner go-ahead.
 - Typecheck, validate, lint: **pass**.
-- Full test suite: **fail** — 8 failures, fixes under W0.8.
+- Full test suite: **fail** — 8 failures at first run; after W0.8, 1 failure (D0.3), 1297/1299 pass.
 - Coverage 433 / 356 / 314: **pass**.
 - Build and portable build: **pass**.
 - `docs/ENVIRONMENT.md`: **pass**. PR opened: see below.
 - Lexus33 delta: **not recovered** (no fabrication).
+
+**W0.8 — 7 of 8 fixed; 1 awaiting owner (D0.3) (2026-11-05).** Full `pnpm test` rerun with no time limit after the fixes (1,573.8 s, max RSS 4.28 GB, exit 1, not killed):
+
+```
+ℹ tests 1299
+ℹ suites 0
+ℹ pass 1297
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 1
+ℹ todo 0
+ℹ duration_ms 1572938.20875
+```
+
+Remaining failure: `selling-points` "all eligible buyer reasons at the policy date have matching source dependencies" (D0.3). Resolutions, one commit each, no test weakened, skipped or deleted:
+1. `package-source`: compare `os.path.realpath` on both sides (macOS `/var` → `/private/var`); assertion otherwise unchanged.
+2–5. `mercedes-passenger-catalogue` (4): the dated 15 Oct packet (`m1-mercedes-benz-2026-10-15`, 39 sources) legitimately added 4 versions (GLC 400 4MATIC, eVito Tourer 129 Mid, EQA and EQB 250+ City Edition) and filled reported price/range, drive, AC, DC peak and per-version battery warranty on the original 7. Tests now assert the exact 7 + 4 record IDs, no stock or model-year claim on any row, that values on the originals cite the packet with an earned grade, and keep the GLB cargo, attributed DC table, usable-energy and commercial-exclusion assertions.
+6. `m1-evidence-grading`: the drift test took the first previously-standard range entry in ranking order; at the fixed as-of 2026-10-13 only 22 Tier 1 entries were rankable (0 previously-standard) and the first was a VW ID. Buzz Cargo van, which the passenger/ute-only regrading guard does not cover. Selection now restricts to guarded classes and ranks at the newest packet date (74 candidates); assertions unchanged.
+7. `scene-dynamic-geometry`: all 36 sampled frames differed from the pinned source84 SHA-256 digests while item counts matched; plan rule 4 forbids hash pins. Replaced with determinism, finite and well-formed mesh/transform/material checks, shot variation, and a populated-spec-changes-a-frame check; item counts retained.
+8. `selling-points`: not fixed, see decision D0.3 in the table at the top.
 
 ## Ambiguities found
 
