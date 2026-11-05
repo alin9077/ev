@@ -1,0 +1,1975 @@
+{
+  "schema": "roadmark-refresh-findings-v1",
+  "brand": "IM",
+  "asOf": "2026-11-05",
+  "reviewedAt": "2026-11-05",
+  "reviewedBy": "Roadmark WS2 refresh (Claude Code worker), IM",
+  "sources": [
+    {
+      "id": "refresh-im-2026-11-05-offers",
+      "url": "https://mgmotor.com.au/offers",
+      "title": "MG current offers (IM5 and IM6 cards)",
+      "publisher": "MG Motor Australia (SAIC Motor Australia)",
+      "source_type": "manufacturer_au_offer",
+      "published_date": null,
+      "accessed_date": "2026-11-05",
+      "market": "AU",
+      "supports": "Opened 2026-11-05. Current offers, prices in the order standard driveaway then driveaway after cashback: MG4 EV Urban Essence 43 $31,990 / $29,990 ($2,000 cashback); MG4 EV Urban Essence 54 $34,990 / $32,990 ($2,000); MG4 EV Essence 64 Drive Away Offer $39,990; MG4 EV XPOWER Drive Away Offer $47,990; MGS5 EV Essence 49kWh $41,990 / $39,990 ($2,000); MGS5 EV Essence 62kWh $46,990 / $44,990 ($2,000); MGS6 EV Essence RWD $49,990 / $48,990 ($1,000); MGS6 EV Essence AWD $56,990 / $55,990 ($1,000); IM5 and IM6 Premium $60,990 / $57,990, Platinum $67,990 / $64,990, Performance $77,990 / $74,990 ($3,000 cashback plus $500 accessories; card says offer ends 30 November). Other cards say offer ends 31 December. Terms expanded on the page: '*' prices are driveaway without options (12 months registration and CTP, maximum dealer delivery and estimated stamp duty); offers at participating MG dealers sold and delivered between 01 Nov and 31 Dec 2026, while stocks last; excludes fleet, government and rental buyers. Cashback is redeemed at point of sale as a deduction from the purchase price and is not combinable with other offers (IM5 and IM6 cashback combines with the $500 EV Accessories Bonus)."
+    }
+  ],
+  "versions": [
+    {
+      "variantId": "im_im5_my25__premium_rwd__20261010",
+      "vehicle": "IM IM5 Premium RWD",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "accepting_order_requests_advertised",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://mgmotor.com.au/vehicles/im5",
+            "https://mgmotor.com.au/configurator/im5",
+            "https://mgmotor.com.au/offers"
+          ]
+        },
+        "outcome": "unchanged",
+        "sourceIds": [
+          "refresh-im-2026-11-05-offers"
+        ],
+        "note": "Variant is on the offers page with Build & Price route; same order-request status. Stock not verified."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "57,990 AUD",
+            "basis": "Maker national driveaway offer including A$3,000 cashback",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/offers",
+              "https://mgmotor.com.au/configurator/im5"
+            ]
+          },
+          "outcome": "changed",
+          "value": 57990,
+          "sourceIds": [
+            "refresh-im-2026-11-05-offers"
+          ],
+          "conditionExplanation": "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Includes the displayed $3,000 cashback, redeemed at point of sale; a separate $500 EV Accessories Bonus (accessories, or at the buyer's election a $500 price reduction) can be combined and is not subtracted. Participating MG dealers, while stocks last; excludes fleet, government and rental buyers. The offer card says the offer ends 30 November 2026 while the expanded terms say sold and delivered 1 November to 31 December 2026; the earlier date is used.",
+          "qualifications": [
+            "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Includes the displayed $3,000 cashback, redeemed at point of sale; a separate $500 EV Accessories Bonus (accessories, or at the buyer's election a $500 price reduction) can be combined and is not subtracted. Participating MG dealers, while stocks last; excludes fleet, government and rental buyers. The offer card says the offer ends 30 November 2026 while the expanded terms say sold and delivered 1 November to 31 December 2026; the earlier date is used."
+          ],
+          "validUntil": "2026-11-30",
+          "note": "Offers page shows $57,990 after the $3,000 cashback; same amount as 14 October, offer window renewed to 30 November."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "490 km",
+            "basis": "WLTP combined laboratory range",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM5_Brochure.pdf",
+              "https://mgmotor.com.au/vehicles/im5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "75 kWh",
+            "basis": "Maker published battery capacity; gross/usable not specified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM5_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "DC peak charging",
+          "due": false,
+          "current": {
+            "value": "153 kW",
+            "basis": "Manufacturer maximum vehicle DC charging power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM5_Brochure.pdf",
+              "https://mgmotor.com.au/vehicles/im5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "DC 10–80% time not published for this Australian 75 kWh version",
+            "grade": "not_published",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM5_Brochure.pdf",
+              "https://mgmotor.com.au/vehicles/im5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maximum onboard AC charging power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM5_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Australian standard seating capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM5_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot volume",
+          "due": false,
+          "current": {
+            "value": "457 L",
+            "basis": "Rear boot with seats in place; VDA/SAE method not stated",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM5_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "6.8 s",
+            "basis": "Manufacturer 0–100 km/h time including starting time",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM5_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "217 kW",
+            "basis": "Maximum output of the sole rear motor",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM5_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Maker driven wheels",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM5_Brochure.pdf",
+              "https://mgmotor.com.au/vehicles/im5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,931 mm",
+            "basis": "Manufacturer overall body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM5_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,960 mm",
+            "basis": "Manufacturer overall body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM5_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,474 mm",
+            "basis": "Manufacturer overall body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM5_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,500 kg",
+            "basis": "Manufacturer maximum braked towing capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM5_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/im-mgu9-warranty",
+              "https://cdn.virtualyard.com.au/485843481a7edacbfce101ecb1e4d2a8/b14e211a7ea69c91b56bbe949331337e/documents/im-motor-australia-warranty-2025_06_10.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; 70% capacity floor",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/im-mgu9-warranty",
+              "https://cdn.virtualyard.com.au/485843481a7edacbfce101ecb1e4d2a8/b14e211a7ea69c91b56bbe949331337e/documents/im-motor-australia-warranty-2025_06_10.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "advertised_driveaway_aud",
+          "label": "Advertised configurator driveaway offer",
+          "due": true,
+          "current": {
+            "value": "57,990 AUD",
+            "basis": "Maker national driveaway offer including A$3,000 cashback",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/offers",
+              "https://mgmotor.com.au/configurator/im5"
+            ]
+          },
+          "outcome": "changed",
+          "value": 57990,
+          "sourceIds": [
+            "refresh-im-2026-11-05-offers"
+          ],
+          "conditionExplanation": "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Includes the displayed $3,000 cashback, redeemed at point of sale; a separate $500 EV Accessories Bonus (accessories, or at the buyer's election a $500 price reduction) can be combined and is not subtracted. Participating MG dealers, while stocks last; excludes fleet, government and rental buyers. The offer card says the offer ends 30 November 2026 while the expanded terms say sold and delivered 1 November to 31 December 2026; the earlier date is used.",
+          "qualifications": [
+            "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Includes the displayed $3,000 cashback, redeemed at point of sale; a separate $500 EV Accessories Bonus (accessories, or at the buyer's election a $500 price reduction) can be combined and is not subtracted. Participating MG dealers, while stocks last; excludes fleet, government and rental buyers. The offer card says the offer ends 30 November 2026 while the expanded terms say sold and delivered 1 November to 31 December 2026; the earlier date is used."
+          ],
+          "validUntil": "2026-11-30",
+          "note": "Offers page shows $57,990 after the $3,000 cashback; same amount as 14 October, offer window renewed to 30 November."
+        }
+      ]
+    },
+    {
+      "variantId": "im_im5_my25__platinum_rwd__20261010",
+      "vehicle": "IM IM5 Platinum RWD",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "accepting_order_requests_advertised",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://mgmotor.com.au/vehicles/im5",
+            "https://mgmotor.com.au/configurator/im5",
+            "https://mgmotor.com.au/offers"
+          ]
+        },
+        "outcome": "unchanged",
+        "sourceIds": [
+          "refresh-im-2026-11-05-offers"
+        ],
+        "note": "Variant is on the offers page with Build & Price route; same order-request status. Stock not verified."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "64,990 AUD",
+            "basis": "Maker national driveaway offer including A$3,000 cashback",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/offers",
+              "https://mgmotor.com.au/configurator/im5"
+            ]
+          },
+          "outcome": "changed",
+          "value": 64990,
+          "sourceIds": [
+            "refresh-im-2026-11-05-offers"
+          ],
+          "conditionExplanation": "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Includes the displayed $3,000 cashback, redeemed at point of sale; a separate $500 EV Accessories Bonus (accessories, or at the buyer's election a $500 price reduction) can be combined and is not subtracted. Participating MG dealers, while stocks last; excludes fleet, government and rental buyers. The offer card says the offer ends 30 November 2026 while the expanded terms say sold and delivered 1 November to 31 December 2026; the earlier date is used.",
+          "qualifications": [
+            "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Includes the displayed $3,000 cashback, redeemed at point of sale; a separate $500 EV Accessories Bonus (accessories, or at the buyer's election a $500 price reduction) can be combined and is not subtracted. Participating MG dealers, while stocks last; excludes fleet, government and rental buyers. The offer card says the offer ends 30 November 2026 while the expanded terms say sold and delivered 1 November to 31 December 2026; the earlier date is used."
+          ],
+          "validUntil": "2026-11-30",
+          "note": "Offers page shows $64,990 after the $3,000 cashback; same amount as 14 October, offer window renewed to 30 November."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "655 km",
+            "basis": "WLTP combined laboratory range",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM5_Brochure.pdf",
+              "https://mgmotor.com.au/vehicles/im5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "100 kWh",
+            "basis": "Maker published battery capacity; gross/usable not specified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM5_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "DC peak charging",
+          "due": false,
+          "current": {
+            "value": "396 kW",
+            "basis": "Manufacturer maximum vehicle DC charging power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM5_Brochure.pdf",
+              "https://mgmotor.com.au/vehicles/im5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "17 min",
+            "basis": "European 100 kWh IM5/IM6 sibling DC 10–80% claim; Australian exact-version time not published",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://news.mgmotor.eu/press/introducing-the-new-mg-im-range/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maximum onboard AC charging power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM5_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Australian standard seating capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM5_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot volume",
+          "due": false,
+          "current": {
+            "value": "457 L",
+            "basis": "Rear boot with seats in place; VDA/SAE method not stated",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM5_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "4.9 s",
+            "basis": "Manufacturer 0–100 km/h time including starting time",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM5_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "300 kW",
+            "basis": "Maximum output of the sole rear motor",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM5_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Maker driven wheels",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM5_Brochure.pdf",
+              "https://mgmotor.com.au/vehicles/im5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,931 mm",
+            "basis": "Manufacturer overall body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM5_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,960 mm",
+            "basis": "Manufacturer overall body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM5_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,474 mm",
+            "basis": "Manufacturer overall body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM5_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,500 kg",
+            "basis": "Manufacturer maximum braked towing capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM5_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/im-mgu9-warranty",
+              "https://cdn.virtualyard.com.au/485843481a7edacbfce101ecb1e4d2a8/b14e211a7ea69c91b56bbe949331337e/documents/im-motor-australia-warranty-2025_06_10.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; 70% capacity floor",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/im-mgu9-warranty",
+              "https://cdn.virtualyard.com.au/485843481a7edacbfce101ecb1e4d2a8/b14e211a7ea69c91b56bbe949331337e/documents/im-motor-australia-warranty-2025_06_10.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "advertised_driveaway_aud",
+          "label": "Advertised configurator driveaway offer",
+          "due": true,
+          "current": {
+            "value": "64,990 AUD",
+            "basis": "Maker national driveaway offer including A$3,000 cashback",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/offers",
+              "https://mgmotor.com.au/configurator/im5"
+            ]
+          },
+          "outcome": "changed",
+          "value": 64990,
+          "sourceIds": [
+            "refresh-im-2026-11-05-offers"
+          ],
+          "conditionExplanation": "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Includes the displayed $3,000 cashback, redeemed at point of sale; a separate $500 EV Accessories Bonus (accessories, or at the buyer's election a $500 price reduction) can be combined and is not subtracted. Participating MG dealers, while stocks last; excludes fleet, government and rental buyers. The offer card says the offer ends 30 November 2026 while the expanded terms say sold and delivered 1 November to 31 December 2026; the earlier date is used.",
+          "qualifications": [
+            "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Includes the displayed $3,000 cashback, redeemed at point of sale; a separate $500 EV Accessories Bonus (accessories, or at the buyer's election a $500 price reduction) can be combined and is not subtracted. Participating MG dealers, while stocks last; excludes fleet, government and rental buyers. The offer card says the offer ends 30 November 2026 while the expanded terms say sold and delivered 1 November to 31 December 2026; the earlier date is used."
+          ],
+          "validUntil": "2026-11-30",
+          "note": "Offers page shows $64,990 after the $3,000 cashback; same amount as 14 October, offer window renewed to 30 November."
+        }
+      ]
+    },
+    {
+      "variantId": "im_im5_my25__performance_awd__20261010",
+      "vehicle": "IM IM5 Performance AWD",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "accepting_order_requests_advertised",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://mgmotor.com.au/vehicles/im5",
+            "https://mgmotor.com.au/configurator/im5",
+            "https://mgmotor.com.au/offers"
+          ]
+        },
+        "outcome": "unchanged",
+        "sourceIds": [
+          "refresh-im-2026-11-05-offers"
+        ],
+        "note": "Variant is on the offers page with Build & Price route; same order-request status. Stock not verified."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "74,990 AUD",
+            "basis": "Maker national driveaway offer including A$3,000 cashback",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/offers",
+              "https://mgmotor.com.au/configurator/im5"
+            ]
+          },
+          "outcome": "changed",
+          "value": 74990,
+          "sourceIds": [
+            "refresh-im-2026-11-05-offers"
+          ],
+          "conditionExplanation": "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Includes the displayed $3,000 cashback, redeemed at point of sale; a separate $500 EV Accessories Bonus (accessories, or at the buyer's election a $500 price reduction) can be combined and is not subtracted. Participating MG dealers, while stocks last; excludes fleet, government and rental buyers. The offer card says the offer ends 30 November 2026 while the expanded terms say sold and delivered 1 November to 31 December 2026; the earlier date is used.",
+          "qualifications": [
+            "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Includes the displayed $3,000 cashback, redeemed at point of sale; a separate $500 EV Accessories Bonus (accessories, or at the buyer's election a $500 price reduction) can be combined and is not subtracted. Participating MG dealers, while stocks last; excludes fleet, government and rental buyers. The offer card says the offer ends 30 November 2026 while the expanded terms say sold and delivered 1 November to 31 December 2026; the earlier date is used."
+          ],
+          "validUntil": "2026-11-30",
+          "note": "Offers page shows $74,990 after the $3,000 cashback; same amount as 14 October, offer window renewed to 30 November."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "575 km",
+            "basis": "WLTP combined laboratory range",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM5_Brochure.pdf",
+              "https://mgmotor.com.au/vehicles/im5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "100 kWh",
+            "basis": "Maker published battery capacity; gross/usable not specified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM5_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "DC peak charging",
+          "due": false,
+          "current": {
+            "value": "396 kW",
+            "basis": "Manufacturer maximum vehicle DC charging power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM5_Brochure.pdf",
+              "https://mgmotor.com.au/vehicles/im5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "17 min",
+            "basis": "European 100 kWh IM5/IM6 sibling DC 10–80% claim; Australian exact-version time not published",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://news.mgmotor.eu/press/introducing-the-new-mg-im-range/",
+              "https://www.chasingcars.com.au/reviews/large-cars/mg-im5-performance-2025-review/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maximum onboard AC charging power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM5_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Australian standard seating capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM5_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot volume",
+          "due": false,
+          "current": {
+            "value": "457 L",
+            "basis": "Rear boot with seats in place; VDA/SAE method not stated",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM5_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "3.2 s",
+            "basis": "Manufacturer 0–100 km/h time including starting time",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM5_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "572 kW",
+            "basis": "Australian secondary-reported combined output; maker AU supplies motor components only",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/mg/im5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "AWD",
+            "basis": "Maker driven wheels",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM5_Brochure.pdf",
+              "https://mgmotor.com.au/vehicles/im5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,931 mm",
+            "basis": "Manufacturer overall body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM5_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,960 mm",
+            "basis": "Manufacturer overall body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM5_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,474 mm",
+            "basis": "Manufacturer overall body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM5_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,500 kg",
+            "basis": "Manufacturer maximum braked towing capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM5_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/im-mgu9-warranty",
+              "https://cdn.virtualyard.com.au/485843481a7edacbfce101ecb1e4d2a8/b14e211a7ea69c91b56bbe949331337e/documents/im-motor-australia-warranty-2025_06_10.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; 70% capacity floor",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/im-mgu9-warranty",
+              "https://cdn.virtualyard.com.au/485843481a7edacbfce101ecb1e4d2a8/b14e211a7ea69c91b56bbe949331337e/documents/im-motor-australia-warranty-2025_06_10.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "advertised_driveaway_aud",
+          "label": "Advertised configurator driveaway offer",
+          "due": true,
+          "current": {
+            "value": "74,990 AUD",
+            "basis": "Maker national driveaway offer including A$3,000 cashback",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/offers",
+              "https://mgmotor.com.au/configurator/im5"
+            ]
+          },
+          "outcome": "changed",
+          "value": 74990,
+          "sourceIds": [
+            "refresh-im-2026-11-05-offers"
+          ],
+          "conditionExplanation": "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Includes the displayed $3,000 cashback, redeemed at point of sale; a separate $500 EV Accessories Bonus (accessories, or at the buyer's election a $500 price reduction) can be combined and is not subtracted. Participating MG dealers, while stocks last; excludes fleet, government and rental buyers. The offer card says the offer ends 30 November 2026 while the expanded terms say sold and delivered 1 November to 31 December 2026; the earlier date is used.",
+          "qualifications": [
+            "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Includes the displayed $3,000 cashback, redeemed at point of sale; a separate $500 EV Accessories Bonus (accessories, or at the buyer's election a $500 price reduction) can be combined and is not subtracted. Participating MG dealers, while stocks last; excludes fleet, government and rental buyers. The offer card says the offer ends 30 November 2026 while the expanded terms say sold and delivered 1 November to 31 December 2026; the earlier date is used."
+          ],
+          "validUntil": "2026-11-30",
+          "note": "Offers page shows $74,990 after the $3,000 cashback; same amount as 14 October, offer window renewed to 30 November."
+        }
+      ]
+    },
+    {
+      "variantId": "im_im6_my25__premium_rwd__20261010",
+      "vehicle": "IM IM6 Premium RWD",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "accepting_order_requests_advertised",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://mgmotor.com.au/vehicles/im6",
+            "https://mgmotor.com.au/configurator/im6",
+            "https://mgmotor.com.au/offers"
+          ]
+        },
+        "outcome": "unchanged",
+        "sourceIds": [
+          "refresh-im-2026-11-05-offers"
+        ],
+        "note": "Variant is on the offers page with Build & Price route; same order-request status. Stock not verified."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "57,990 AUD",
+            "basis": "Maker national driveaway offer including A$3,000 cashback",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/offers",
+              "https://mgmotor.com.au/configurator/im6"
+            ]
+          },
+          "outcome": "changed",
+          "value": 57990,
+          "sourceIds": [
+            "refresh-im-2026-11-05-offers"
+          ],
+          "conditionExplanation": "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Includes the displayed $3,000 cashback, redeemed at point of sale; a separate $500 EV Accessories Bonus (accessories, or at the buyer's election a $500 price reduction) can be combined and is not subtracted. Participating MG dealers, while stocks last; excludes fleet, government and rental buyers. The offer card says the offer ends 30 November 2026 while the expanded terms say sold and delivered 1 November to 31 December 2026; the earlier date is used.",
+          "qualifications": [
+            "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Includes the displayed $3,000 cashback, redeemed at point of sale; a separate $500 EV Accessories Bonus (accessories, or at the buyer's election a $500 price reduction) can be combined and is not subtracted. Participating MG dealers, while stocks last; excludes fleet, government and rental buyers. The offer card says the offer ends 30 November 2026 while the expanded terms say sold and delivered 1 November to 31 December 2026; the earlier date is used."
+          ],
+          "validUntil": "2026-11-30",
+          "note": "Offers page shows $57,990 after the $3,000 cashback; same amount as 14 October, offer window renewed to 30 November."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "450 km",
+            "basis": "WLTP combined laboratory range",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM6_Brochure.pdf",
+              "https://mgmotor.com.au/vehicles/im6"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "75 kWh",
+            "basis": "Maker published battery capacity; gross/usable not specified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM6_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "DC peak charging",
+          "due": false,
+          "current": {
+            "value": "153 kW",
+            "basis": "Manufacturer maximum vehicle DC charging power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM6_Brochure.pdf",
+              "https://mgmotor.com.au/vehicles/im6"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "DC 10–80% time not published for this Australian 75 kWh version",
+            "grade": "not_published",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM6_Brochure.pdf",
+              "https://mgmotor.com.au/vehicles/im6"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maximum onboard AC charging power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM6_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Australian standard seating capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM6_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot volume",
+          "due": false,
+          "current": {
+            "value": "665 L",
+            "basis": "Rear boot with seats in place; VDA/SAE method not stated",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM6_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "6.8 s",
+            "basis": "Manufacturer 0–100 km/h time including starting time",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM6_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "217 kW",
+            "basis": "Maximum output of the sole rear motor",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM6_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Maker driven wheels",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM6_Brochure.pdf",
+              "https://mgmotor.com.au/vehicles/im6"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,904 mm",
+            "basis": "Manufacturer overall body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM6_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,988 mm",
+            "basis": "Manufacturer overall body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM6_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,669 mm",
+            "basis": "Manufacturer overall body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM6_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,500 kg",
+            "basis": "Manufacturer maximum braked towing capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM6_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/im-mgu9-warranty",
+              "https://cdn.virtualyard.com.au/485843481a7edacbfce101ecb1e4d2a8/b14e211a7ea69c91b56bbe949331337e/documents/im-motor-australia-warranty-2025_06_10.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; 70% capacity floor",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/im-mgu9-warranty",
+              "https://cdn.virtualyard.com.au/485843481a7edacbfce101ecb1e4d2a8/b14e211a7ea69c91b56bbe949331337e/documents/im-motor-australia-warranty-2025_06_10.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "advertised_driveaway_aud",
+          "label": "Advertised configurator driveaway offer",
+          "due": true,
+          "current": {
+            "value": "57,990 AUD",
+            "basis": "Maker national driveaway offer including A$3,000 cashback",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/offers",
+              "https://mgmotor.com.au/configurator/im6"
+            ]
+          },
+          "outcome": "changed",
+          "value": 57990,
+          "sourceIds": [
+            "refresh-im-2026-11-05-offers"
+          ],
+          "conditionExplanation": "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Includes the displayed $3,000 cashback, redeemed at point of sale; a separate $500 EV Accessories Bonus (accessories, or at the buyer's election a $500 price reduction) can be combined and is not subtracted. Participating MG dealers, while stocks last; excludes fleet, government and rental buyers. The offer card says the offer ends 30 November 2026 while the expanded terms say sold and delivered 1 November to 31 December 2026; the earlier date is used.",
+          "qualifications": [
+            "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Includes the displayed $3,000 cashback, redeemed at point of sale; a separate $500 EV Accessories Bonus (accessories, or at the buyer's election a $500 price reduction) can be combined and is not subtracted. Participating MG dealers, while stocks last; excludes fleet, government and rental buyers. The offer card says the offer ends 30 November 2026 while the expanded terms say sold and delivered 1 November to 31 December 2026; the earlier date is used."
+          ],
+          "validUntil": "2026-11-30",
+          "note": "Offers page shows $57,990 after the $3,000 cashback; same amount as 14 October, offer window renewed to 30 November."
+        }
+      ]
+    },
+    {
+      "variantId": "im_im6_my25__platinum_rwd__20261010",
+      "vehicle": "IM IM6 Platinum RWD",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "accepting_order_requests_advertised",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://mgmotor.com.au/vehicles/im6",
+            "https://mgmotor.com.au/configurator/im6",
+            "https://mgmotor.com.au/offers"
+          ]
+        },
+        "outcome": "unchanged",
+        "sourceIds": [
+          "refresh-im-2026-11-05-offers"
+        ],
+        "note": "Variant is on the offers page with Build & Price route; same order-request status. Stock not verified."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "64,990 AUD",
+            "basis": "Maker national driveaway offer including A$3,000 cashback",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/offers",
+              "https://mgmotor.com.au/configurator/im6"
+            ]
+          },
+          "outcome": "changed",
+          "value": 64990,
+          "sourceIds": [
+            "refresh-im-2026-11-05-offers"
+          ],
+          "conditionExplanation": "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Includes the displayed $3,000 cashback, redeemed at point of sale; a separate $500 EV Accessories Bonus (accessories, or at the buyer's election a $500 price reduction) can be combined and is not subtracted. Participating MG dealers, while stocks last; excludes fleet, government and rental buyers. The offer card says the offer ends 30 November 2026 while the expanded terms say sold and delivered 1 November to 31 December 2026; the earlier date is used.",
+          "qualifications": [
+            "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Includes the displayed $3,000 cashback, redeemed at point of sale; a separate $500 EV Accessories Bonus (accessories, or at the buyer's election a $500 price reduction) can be combined and is not subtracted. Participating MG dealers, while stocks last; excludes fleet, government and rental buyers. The offer card says the offer ends 30 November 2026 while the expanded terms say sold and delivered 1 November to 31 December 2026; the earlier date is used."
+          ],
+          "validUntil": "2026-11-30",
+          "note": "Offers page shows $64,990 after the $3,000 cashback; same amount as 14 October, offer window renewed to 30 November."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "555 km",
+            "basis": "WLTP combined laboratory range",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM6_Brochure.pdf",
+              "https://mgmotor.com.au/vehicles/im6"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "100 kWh",
+            "basis": "Maker published battery capacity; gross/usable not specified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM6_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "DC peak charging",
+          "due": false,
+          "current": {
+            "value": "396 kW",
+            "basis": "Manufacturer maximum vehicle DC charging power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM6_Brochure.pdf",
+              "https://mgmotor.com.au/vehicles/im6"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "17 min",
+            "basis": "European 100 kWh IM5/IM6 sibling DC 10–80% claim; Australian exact-version time not published",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://news.mgmotor.eu/press/introducing-the-new-mg-im-range/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maximum onboard AC charging power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM6_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Australian standard seating capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM6_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot volume",
+          "due": false,
+          "current": {
+            "value": "665 L",
+            "basis": "Rear boot with seats in place; VDA/SAE method not stated",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM6_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "5.4 s",
+            "basis": "Manufacturer 0–100 km/h time including starting time",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM6_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "300 kW",
+            "basis": "Maximum output of the sole rear motor",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM6_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "RWD",
+            "basis": "Maker driven wheels",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM6_Brochure.pdf",
+              "https://mgmotor.com.au/vehicles/im6"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,904 mm",
+            "basis": "Manufacturer overall body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM6_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,988 mm",
+            "basis": "Manufacturer overall body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM6_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,669 mm",
+            "basis": "Manufacturer overall body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM6_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,500 kg",
+            "basis": "Manufacturer maximum braked towing capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM6_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/im-mgu9-warranty",
+              "https://cdn.virtualyard.com.au/485843481a7edacbfce101ecb1e4d2a8/b14e211a7ea69c91b56bbe949331337e/documents/im-motor-australia-warranty-2025_06_10.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; 70% capacity floor",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/im-mgu9-warranty",
+              "https://cdn.virtualyard.com.au/485843481a7edacbfce101ecb1e4d2a8/b14e211a7ea69c91b56bbe949331337e/documents/im-motor-australia-warranty-2025_06_10.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "advertised_driveaway_aud",
+          "label": "Advertised configurator driveaway offer",
+          "due": true,
+          "current": {
+            "value": "64,990 AUD",
+            "basis": "Maker national driveaway offer including A$3,000 cashback",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/offers",
+              "https://mgmotor.com.au/configurator/im6"
+            ]
+          },
+          "outcome": "changed",
+          "value": 64990,
+          "sourceIds": [
+            "refresh-im-2026-11-05-offers"
+          ],
+          "conditionExplanation": "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Includes the displayed $3,000 cashback, redeemed at point of sale; a separate $500 EV Accessories Bonus (accessories, or at the buyer's election a $500 price reduction) can be combined and is not subtracted. Participating MG dealers, while stocks last; excludes fleet, government and rental buyers. The offer card says the offer ends 30 November 2026 while the expanded terms say sold and delivered 1 November to 31 December 2026; the earlier date is used.",
+          "qualifications": [
+            "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Includes the displayed $3,000 cashback, redeemed at point of sale; a separate $500 EV Accessories Bonus (accessories, or at the buyer's election a $500 price reduction) can be combined and is not subtracted. Participating MG dealers, while stocks last; excludes fleet, government and rental buyers. The offer card says the offer ends 30 November 2026 while the expanded terms say sold and delivered 1 November to 31 December 2026; the earlier date is used."
+          ],
+          "validUntil": "2026-11-30",
+          "note": "Offers page shows $64,990 after the $3,000 cashback; same amount as 14 October, offer window renewed to 30 November."
+        }
+      ]
+    },
+    {
+      "variantId": "im_im6_my25__performance_awd__20261010",
+      "vehicle": "IM IM6 Performance AWD",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "accepting_order_requests_advertised",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://mgmotor.com.au/vehicles/im6",
+            "https://mgmotor.com.au/configurator/im6",
+            "https://mgmotor.com.au/offers"
+          ]
+        },
+        "outcome": "unchanged",
+        "sourceIds": [
+          "refresh-im-2026-11-05-offers"
+        ],
+        "note": "Variant is on the offers page with Build & Price route; same order-request status. Stock not verified."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "74,990 AUD",
+            "basis": "Maker national driveaway offer including A$3,000 cashback",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/offers",
+              "https://mgmotor.com.au/configurator/im6"
+            ]
+          },
+          "outcome": "changed",
+          "value": 74990,
+          "sourceIds": [
+            "refresh-im-2026-11-05-offers"
+          ],
+          "conditionExplanation": "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Includes the displayed $3,000 cashback, redeemed at point of sale; a separate $500 EV Accessories Bonus (accessories, or at the buyer's election a $500 price reduction) can be combined and is not subtracted. Participating MG dealers, while stocks last; excludes fleet, government and rental buyers. The offer card says the offer ends 30 November 2026 while the expanded terms say sold and delivered 1 November to 31 December 2026; the earlier date is used.",
+          "qualifications": [
+            "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Includes the displayed $3,000 cashback, redeemed at point of sale; a separate $500 EV Accessories Bonus (accessories, or at the buyer's election a $500 price reduction) can be combined and is not subtracted. Participating MG dealers, while stocks last; excludes fleet, government and rental buyers. The offer card says the offer ends 30 November 2026 while the expanded terms say sold and delivered 1 November to 31 December 2026; the earlier date is used."
+          ],
+          "validUntil": "2026-11-30",
+          "note": "Offers page shows $74,990 after the $3,000 cashback; same amount as 14 October, offer window renewed to 30 November."
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "505 km",
+            "basis": "WLTP combined laboratory range",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM6_Brochure.pdf",
+              "https://mgmotor.com.au/vehicles/im6"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "100 kWh",
+            "basis": "Maker published battery capacity; gross/usable not specified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM6_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "DC peak charging",
+          "due": false,
+          "current": {
+            "value": "396 kW",
+            "basis": "Manufacturer maximum vehicle DC charging power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM6_Brochure.pdf",
+              "https://mgmotor.com.au/vehicles/im6"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "17 min",
+            "basis": "European 100 kWh IM5/IM6 sibling DC 10–80% claim; Australian exact-version time not published",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://news.mgmotor.eu/press/introducing-the-new-mg-im-range/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "11 kW",
+            "basis": "Maximum onboard AC charging power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM6_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Australian standard seating capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM6_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Boot volume",
+          "due": false,
+          "current": {
+            "value": "646 L",
+            "basis": "Rear boot with seats in place; VDA/SAE method not stated",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM6_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "3.4 s",
+            "basis": "Manufacturer 0–100 km/h time including starting time",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM6_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "572 kW",
+            "basis": "Australian secondary-reported combined output; maker AU supplies motor components only",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/mg/im6",
+              "https://www.carsales.com.au/editorial/details/im-presented-by-mg-im6-performance-2026-review-151767/"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "AWD",
+            "basis": "Maker driven wheels",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM6_Brochure.pdf",
+              "https://mgmotor.com.au/vehicles/im6"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,904 mm",
+            "basis": "Manufacturer overall body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM6_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,988 mm",
+            "basis": "Manufacturer overall body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM6_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,669 mm",
+            "basis": "Manufacturer overall body dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM6_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,500 kg",
+            "basis": "Manufacturer maximum braked towing capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/brochures/MG_IM6_Brochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/im-mgu9-warranty",
+              "https://cdn.virtualyard.com.au/485843481a7edacbfce101ecb1e4d2a8/b14e211a7ea69c91b56bbe949331337e/documents/im-motor-australia-warranty-2025_06_10.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "8 years / 160,000 km; 70% capacity floor",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/explore/im-mgu9-warranty",
+              "https://cdn.virtualyard.com.au/485843481a7edacbfce101ecb1e4d2a8/b14e211a7ea69c91b56bbe949331337e/documents/im-motor-australia-warranty-2025_06_10.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "advertised_driveaway_aud",
+          "label": "Advertised configurator driveaway offer",
+          "due": true,
+          "current": {
+            "value": "74,990 AUD",
+            "basis": "Maker national driveaway offer including A$3,000 cashback",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/offers",
+              "https://mgmotor.com.au/configurator/im6"
+            ]
+          },
+          "outcome": "changed",
+          "value": 74990,
+          "sourceIds": [
+            "refresh-im-2026-11-05-offers"
+          ],
+          "conditionExplanation": "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Includes the displayed $3,000 cashback, redeemed at point of sale; a separate $500 EV Accessories Bonus (accessories, or at the buyer's election a $500 price reduction) can be combined and is not subtracted. Participating MG dealers, while stocks last; excludes fleet, government and rental buyers. The offer card says the offer ends 30 November 2026 while the expanded terms say sold and delivered 1 November to 31 December 2026; the earlier date is used.",
+          "qualifications": [
+            "Driveaway price without options, including 12 months registration and CTP, maximum dealer delivery and estimated stamp duty. Includes the displayed $3,000 cashback, redeemed at point of sale; a separate $500 EV Accessories Bonus (accessories, or at the buyer's election a $500 price reduction) can be combined and is not subtracted. Participating MG dealers, while stocks last; excludes fleet, government and rental buyers. The offer card says the offer ends 30 November 2026 while the expanded terms say sold and delivered 1 November to 31 December 2026; the earlier date is used."
+          ],
+          "validUntil": "2026-11-30",
+          "note": "Offers page shows $74,990 after the $3,000 cashback; same amount as 14 October, offer window renewed to 30 November."
+        },
+        {
+          "key": "attributed_configurator_offer_aud",
+          "label": "Attributed configurator offer; exact powertrain quote unresolved",
+          "due": true,
+          "current": {
+            "value": "74,990 AUD",
+            "basis": "Maker national driveaway offer including A$3,000 cashback",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://mgmotor.com.au/offers",
+              "https://mgmotor.com.au/configurator/im6"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Attributed IM6 configurator offer; the IM6 configurator page was not opened. Not rechecked."
+        }
+      ]
+    }
+  ]
+}
