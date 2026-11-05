@@ -94,7 +94,19 @@ WS7 acceptance list:
 | W7.3 `NEXT_PUBLIC_CORRECTION_EMAIL` mailto on `/sources` and every pair page, hidden when unset; behavioural tests for set and unset | pass | `tests/correction-contact.test.ts` (3 pass: unset/empty hidden, set renders mailto, malformed/multi-recipient hidden); e2e unset case passes on chromium+webkit; set case verified by curl on a built site (3 pages); Firefox not run |
 | W7.4 Run 20 AI-citation questions in ChatGPT, Perplexity, Google | blocked: needs owner to run | requires the owner's own accounts; `qa/ai-citation-checks.csv` untouched |
 | W7.5 Dated note on homepage sales footnote; no price changed | pass | "Prices are as at 6 October 2026; a refresh is scheduled." in `src/components/fleet-experience.tsx`; e2e `price-date-note` passes on chromium+webkit; diff touches no price data |
-| Rule 5 checks | partial | validate, typecheck, lint, test, build pass; e2e not clean: 51 failures, Chromium's 7 identical on the pre-WS7 baseline, Firefox cannot launch, WebKit not baselined |
+| Rule 5 checks | partial | validate, typecheck, lint, test, build pass; e2e not clean (51 failures) but baselined: Chromium 7 and WebKit 13 are identical to `ccb31c0`, 0 new; Firefox cannot launch on either side (see comparison table below); Node 24.22.0 not 22 |
+
+#### WS7 e2e baseline comparison, 2026-11-05 (orchestrator request)
+
+Run on Node v24.22.0 (the plan baseline is Node 22.23.4); results may differ on Node 22. Baseline = clean checkout of `ccb31c0`, built and served separately; branch = this branch built with no `NEXT_PUBLIC_*` env. Same machine, same Playwright 1.63.0.
+
+| Browser | Baseline failures | Branch failures | New on branch |
+|---|---|---|---|
+| Chromium | 7 (22 passed) | 7 | 0 |
+| WebKit | 13 (14 passed, 2 skipped) | 13 (16 passed, 2 skipped) | 0 (identical tests; the 2 extra passes are the new WS7 e2e tests) |
+| Firefox | 29 (all fail at launch) | 31 | 2, which are the new WS7 e2e tests; they fail at launch like every other Firefox test and did not exist on the baseline |
+
+Firefox exact error, every test: `browserType.launch: Failed to launch the browser process ... [err] *** You are running in headless mode. [err] Could not find profile folder. process did exit: exitCode=1`. It persisted after `playwright install firefox`, so it is not a missing binary; Playwright's Firefox build will not start on this macOS. Firefox therefore verifies nothing on either side. No regression found, so no test or code change was needed.
 
 ## Ambiguities found
 
