@@ -185,7 +185,7 @@ test("'Not published' is only accepted with two distinct pages searched", () => 
 
 test("every refresh script is wired to a real file", () => {
   const scripts = JSON.parse(fs.readFileSync("package.json", "utf8")).scripts as Record<string, string>;
-  for (const name of REFRESH_PACKAGE_SCRIPTS.filter((n) => !/snapshot|diff/.test(n))) {
+  for (const name of REFRESH_PACKAGE_SCRIPTS) {
     const file = /scripts\/refresh\/[a-z-]+\.ts/.exec(scripts[name])?.[0];
     assert.ok(file && fs.existsSync(file), `${name} -> ${file}`);
   }
