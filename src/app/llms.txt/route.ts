@@ -12,7 +12,7 @@ export function GET() {
     )
     .join(
       "\n",
-    )}\n\n## Reference\n\n- [Glossary](${site.origin}/glossary)\n- [Methodology](${site.origin}/methodology)\n- [Sources and corrections](${site.origin}/sources)\n\n## Exact variants\n\n${cars
+    )}\n\n## Reference\n\n- [What changed each month](${site.origin}/changes): price moves, arrivals and withdrawals ([JSON](${site.origin}/changes.json), [RSS](${site.origin}/changes/feed.xml))\n- [Glossary](${site.origin}/glossary)\n- [Methodology](${site.origin}/methodology)\n- [Sources and corrections](${site.origin}/sources)\n\n## Exact variants\n\n${cars
     .map((c) => `- [${carName(c)}](${site.origin}${carPath(c)})`)
     .join("\n")}\n`;
   return new Response(text, {

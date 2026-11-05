@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/sources",
     "/comparisons",
     "/glossary",
+    "/changes",
     ...pairPages.map((p) => `/compare/${p.slug}`),
     ...catalogue().map((c) => `/cars/${c.family}/${c.slug}`),
   ].map((path) => ({

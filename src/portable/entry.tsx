@@ -15,7 +15,8 @@ import { CorrectionHistory } from "@/components/correction-history";
 import SourceRegistry from "@/components/source-registry";
 import ModelY from "@/app/model-y/page";
 import Methodology from "@/app/methodology/page";
-import { research, pickerCatalogue, catalogue, pack, counts } from "./data";
+import ChangesView from "@/components/changes-view";
+import { research, pickerCatalogue, catalogue, pack, counts, changes } from "./data";
 import { parseSelection } from "@/lib/compare";
 import { BASELINE } from "@/lib/config";
 import { useLocation } from "./navigation";
@@ -49,6 +50,8 @@ function App() {
     content = (
       <Discovery cars={discoveryCars(catalogue())} sources={d.sources} />
     );
+  } else if (path === "/changes") {
+    content = <ChangesView months={changes()} feeds={false} />;
   } else if (path === "/review") {
     content = <ReviewQueue />;
   } else if (path === "/market") {

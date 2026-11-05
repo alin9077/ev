@@ -4,6 +4,7 @@ import fs from "node:fs";
 import { validateCatalogueIssues } from "../src/lib/validate-catalogue-issues";
 import { storePortablePacks } from "../src/lib/portable-packs";
 import path from "node:path";
+import { loadChangeMonths } from "../src/lib/changes-data";
 import { build } from "esbuild";
 import {
   catalogue,
@@ -60,6 +61,7 @@ async function main() {
       trim_equipment: d.trim_equipment,
     },
     counts: counts(),
+    changes: loadChangeMonths(),
     art: Object.fromEntries(
       fs
         .readdirSync("public/media/chapters")
