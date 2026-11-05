@@ -17,7 +17,7 @@ Update this file whenever a workstream starts, pauses or finishes. Newest entry 
 | WS | State | Branch | Last commit | Worker | Updated |
 |---|---|---|---|---|---|
 | WS0 Consolidate Roadmark | in progress | claude/ws0-roadmark-source-938862 | | Sonnet worker (Claude Code) | 2026-11-05 |
-| WS1 Public beta (M2) | not started | | | | |
+| WS1 Public beta (M2) | in progress | claude/ws1-public-beta-3d498a (stacks on claude/ws0-roadmark-source-938862) | | Sonnet worker (Claude Code) | 2026-11-05 |
 | WS2 Refresh loop + changes page | not started | | | | |
 | WS3 Answer pages + any-pair | not started | | | | |
 | WS4 Money thresholds | not started | | | | |
@@ -69,6 +69,10 @@ Lexus33 delta not recovered; Lexus to be re-researched as a normal packet in WS2
 **W0.3 — done (2026-11-05).** Tag `ev-side-by-side-2026-11-04` created locally on `main` (`f0052a41e406974a06abdb02826fa7ad63d4b449`); not pushed yet. Root tree replaced with the 706 Ford32 files + `SOURCE-FILE-MANIFEST.json`; all 706 hashes re-verified in the working tree after copy (0 mismatches). `au_ev_all_variants_2026-10-06.json` is byte-identical to `main` (SHA-256 `010ded19…4657`). Old live-site files removed from the tree (kept in history and at the tag), including `.openai/hosting.json`, `backups/`, `CODEX_MASTER_PROMPT.md`, `IMPLEMENTATION_PLAN.md`, `docs/DOT_START_PROMPT.md`. Preserved: `docs/plan/`, `RoadmarkX/`, the two root handoff zips (+ `.sha256`). No `node_modules`, `.next`, `out` or generated root/`public` `index*.html` committed.
 
 **W0.4 — blocked: awaiting owner go-ahead to create ev-archive (2026-11-05).** Prepared, not executed: `scripts/archive/archive.sh` (manifest / create / verify / push), `scripts/archive/crosscheck.py`, `docs/ARCHIVE.md`. `RoadmarkX/` and the two root zips remain in place; nothing deleted; no repo created; nothing pushed. Git LFS is not installed on this machine (`git lfs version` fails), needed for the `create` step.
+
+### 2026-11-05 WS1 — in progress
+
+Branch: `claude/ws1-public-beta-3d498a`, cut from the in-progress WS0 branch `claude/ws0-roadmark-source-938862`; must be merged after the WS0 PR. Owner decision D1.1 default applied (all 56 brands, grade styling, coverage footer). D1.2 is the owner's after a phone test; the live site is not touched. The 8 inherited test failures (W0.8: `m1-evidence-grading`, `mercedes-passenger-catalogue`, `package-source`, `selling-points`, `scene-dynamic-geometry`) are WS0's and are not touched here.
 
 ## Ambiguities found
 
