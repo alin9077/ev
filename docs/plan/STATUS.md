@@ -174,6 +174,31 @@ Remaining failure: `selling-points` "all eligible buyer reasons at the policy da
 7. `scene-dynamic-geometry`: all 36 sampled frames differed from the pinned source84 SHA-256 digests while item counts matched; plan rule 4 forbids hash pins. Replaced with determinism, finite and well-formed mesh/transform/material checks, shot variation, and a populated-spec-changes-a-frame check; item counts retained.
 8. `selling-points`: not fixed, see decision D0.3 in the table at the top.
 
+#### WS2 follow-up (5 Nov, later): test triage and acceptance
+
+Environment: Apple M3 Max, 48 GB RAM, 16 CPUs, Node v24.22.0, pnpm 11.19.0.
+
+**First full `pnpm test` (11 failures):** (a) 2 date-pinned tests fixed here (`availability-corrections`, `brand-live-safety`: as-of dates moved to 2026-11-05, assertions unchanged); (b) 8 WS0-inherited (`m1-evidence-grading`, 4 Mercedes, `package-source`, `scene-dynamic-geometry`, `selling-points`); (c) 1 caused by WS2 data: `mg4-additions` as-of date pin (fixed the same way). I also found my Lexus packet cleared the legacy RZ/ES buyer summaries (no earlier packet to re-issue them), so it was **removed**; Lexus is not refreshed (needs a normal brand update).
+
+**Second full `pnpm test`** after merging WS0's W0.8 fixes (1,315 s):
+```
+ℹ tests 1339
+ℹ pass 1337
+ℹ fail 1
+ℹ skipped 1
+```
+The one failure is `selling-points` (Cadillac, owner decision D0.3), inherited from WS0, not WS2.
+
+`pnpm typecheck`, `pnpm lint`: pass. `pnpm validate`: pass after every packet.
+
+**Acceptance (WS2):**
+- `report:stale --as-of 2026-12-01` shows zero stale Tier 1 price claims for the 14 brands: **FAIL.** Of 147 on-sale versions in the 15 refreshed brands, 74 `price_aud` facts are stale (Volvo 16 of 18, MG 9 of 17, Hyundai 10 of 21, VW 8 of 13, BMW 8 of 9, Kia 7 of 27, IM 6 of 6, GAC 4 of 4, GWM 3 of 3, Zeekr 2 of 8, Jaecoo 1 of 1; BYD, Tesla, Geely, Toyota 0). Counting all price-like claims incl. equipment `driveaway_price` rows: 310.
+- `data/changes/2026-11.json` exists, validates against `data/changes/schema.json`, produced by `diff.ts`: **PASS** (test re-derives it from the committed snapshots).
+- `/changes` renders in Next, static and portable builds with the same entries: **Not yet verified** (build and e2e below).
+- Behavioural tests per change type; rechecked-unchanged gives no entry but moves the date: **PASS** (`tests/refresh-diff.test.ts`).
+
+**Gaps list:** brands not refreshed: Lexus (packet removed, above); Volvo, BMW, GWM, GAC mostly not rechecked (postcode forms, configuration-evidence binding, basis conflict). Claims not rechecked: 184, each with its reason in `docs/plan/WS2_UNRECHECKED_CLAIMS_2026-11-05.md`.
+
 ## Ambiguities found
 
 (A worker who hits a case the definitions in section 1 of the plan do not cover writes it here, with the stricter reading they chose.)
