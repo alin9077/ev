@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Source } from "@/lib/types";
 import { FootnoteProvider } from "./footnotes";
+import { SiteNav } from "./site-nav";
 export function SiteShell({
   sources = [],
   children,
@@ -13,6 +14,7 @@ export function SiteShell({
       <a className="skip-link" href="#main">
         Skip to content
       </a>
+      <SiteNav />
       {sources.length ? (
         <FootnoteProvider sources={sources}>{children}</FootnoteProvider>
       ) : (
