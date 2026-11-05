@@ -1,0 +1,1086 @@
+{
+  "id": "mercedes-benz-evito-tourer-seating-market-evidence",
+  "checkedAt": "2026-10-11",
+  "scope": "Evidence-only refinement of one existing eVito Tourer audit row. Eight seats includes the driver for one exact returned AU configuration, with model-year, date semantics, technical conflicts and current supply held.",
+  "sourcePacket": {
+    "path": "roadmark-research/evito-tourer-seating89",
+    "sealPath": "roadmark-research/evito-tourer-seating89/SHA256SUMS.txt",
+    "sealSHA256": "ea52ed5a82d2eb977ea2af61c1a40252a24e09f3011575eae750f0c4d1728feb",
+    "sealedFileCount": 67,
+    "independentReviewPath": "roadmark-research/evito-tourer-seating89-independent-review/README.md",
+    "independentReviewSHA256": "ad31747e7ca3932e77b83dee8804c0322d76e6eb83d15c70f00120bdfaf2a1c6",
+    "independentChecksSHA256": "984a18f3bdda5bad0c57dad1c882b809998cb3a87fe997426e2b8a7c8957e494"
+  },
+  "sources": [
+    {
+      "id": "configurator-vito.html",
+      "url": "https://www.mercedes-benz.com.au/vans/configurator.html?group=all&subgroup=all.vito",
+      "finalUrl": "https://www.mercedes-benz.com.au/vans/configurator.html?group=all&subgroup=all.vito",
+      "status": 200,
+      "method": "GET",
+      "requestBody": null,
+      "credentialsUsed": false,
+      "fetchedAt": "2026-10-11T19:36:58.278673+00:00",
+      "responseDate": "Sun, 11 Oct 2026 19:36:58 GMT",
+      "lastModified": null,
+      "localPath": "raw/configurator-vito.html",
+      "bytes": 810083,
+      "sha256": "054201d601096ead83ad8360cc65f86918f1a123b4df5120364236a5cd257ee0",
+      "metadataPath": "raw/configurator-vito.html.metadata.json"
+    },
+    {
+      "id": "configurator.html",
+      "url": "https://www.mercedes-benz.com.au/vans/buy/van-online-configurator.html",
+      "finalUrl": "https://www.mercedes-benz.com.au/vans/buy/van-online-configurator.html",
+      "status": 200,
+      "method": "GET",
+      "requestBody": null,
+      "credentialsUsed": false,
+      "fetchedAt": "2026-10-11T19:35:52.952882+00:00",
+      "responseDate": "Sun, 11 Oct 2026 19:35:52 GMT",
+      "lastModified": null,
+      "localPath": "raw/configurator.html",
+      "bytes": 273837,
+      "sha256": "4df43a1e25ffbcd120c871f57b9f1b16910c663394a58809843ae15769634b75",
+      "metadataPath": "raw/configurator.html.metadata.json"
+    },
+    {
+      "id": "electric-vans.html",
+      "url": "https://www.mercedes-benz.com.au/vans/electric-vans.html",
+      "finalUrl": "https://www.mercedes-benz.com.au/vans/electric-vans.html",
+      "status": 200,
+      "method": "GET",
+      "requestBody": null,
+      "credentialsUsed": false,
+      "fetchedAt": "2026-10-11T19:36:50.627845+00:00",
+      "responseDate": "Sun, 11 Oct 2026 19:36:50 GMT",
+      "lastModified": null,
+      "localPath": "raw/electric-vans.html",
+      "bytes": 391837,
+      "sha256": "83dbd03b207cf186c26ca2cc56ffd066a07576d0be901ce0bb53c0fc27e290c0",
+      "metadataPath": "raw/electric-vans.html.metadata.json"
+    },
+    {
+      "id": "linked-stock-diesel.html",
+      "url": "https://www.mercedes-benz.com.au/passengercars/buy/new-car/search-results.html/?emhmodelIdentifier=VITO&emhbodyType=PEOPLE_CARRIER&emhfuelType=DIESEL&emhvehicleCategory=new-commercial-vans&emhsortType=price-asc#vehicles",
+      "finalUrl": "https://www.mercedes-benz.com.au/passengercars/buy/new-car/search-results.html/?emhmodelIdentifier=VITO&emhbodyType=PEOPLE_CARRIER&emhfuelType=DIESEL&emhvehicleCategory=new-commercial-vans&emhsortType=price-asc#vehicles",
+      "status": 200,
+      "method": "GET",
+      "requestBody": null,
+      "credentialsUsed": false,
+      "fetchedAt": "2026-10-11T19:37:34.448248+00:00",
+      "responseDate": "Sun, 11 Oct 2026 19:37:34 GMT",
+      "lastModified": null,
+      "localPath": "raw/linked-stock-diesel.html",
+      "bytes": 424802,
+      "sha256": "eee891bed38c503f69a43b4177fcd46eb54e8404be80b84a48b3ccffe7825d76",
+      "metadataPath": "raw/linked-stock-diesel.html.metadata.json"
+    },
+    {
+      "id": "overview.html",
+      "url": "https://www.mercedes-benz.com.au/vans/models/evito/tourer/overview.html",
+      "finalUrl": "https://www.mercedes-benz.com.au/vans/models/evito/tourer/overview.html",
+      "status": 200,
+      "method": "GET",
+      "requestBody": null,
+      "credentialsUsed": false,
+      "fetchedAt": "2026-10-11T19:35:14.778396+00:00",
+      "responseDate": "Sun, 11 Oct 2026 19:35:14 GMT",
+      "lastModified": null,
+      "localPath": "raw/overview.html",
+      "bytes": 665051,
+      "sha256": "cda10bba80776e2200d3658a85ceeb4fc86d45df6b20361c75905fa2e4c70ab2",
+      "metadataPath": "raw/overview-metadata.json"
+    },
+    {
+      "id": "technical-my2025-jul2025.pdf",
+      "url": "https://www.mercedes-benz.com.au/content/dam/australia/vans/models/download-centre/Mercedes-Benz_Vans_Australia_VS20_Vito_Technical_Data_(JUL2025).pdf",
+      "finalUrl": "https://www.mercedes-benz.com.au/content/dam/australia/vans/models/download-centre/Mercedes-Benz_Vans_Australia_VS20_Vito_Technical_Data_(JUL2025).pdf",
+      "status": 200,
+      "method": "GET",
+      "requestBody": null,
+      "credentialsUsed": false,
+      "fetchedAt": "2026-10-11T19:35:45.747422+00:00",
+      "responseDate": "Sun, 11 Oct 2026 19:35:45 GMT",
+      "lastModified": "Mon, 21 Jul 2025 01:07:51 GMT",
+      "localPath": "raw/technical-my2025-jul2025.pdf",
+      "bytes": 4769402,
+      "sha256": "07c4f61bb3cbb10de5b4b8d3e0e330ed4fd86760f36ac4064b4b3acd65d7c934",
+      "metadataPath": "raw/technical-my2025-jul2025.pdf.metadata.json"
+    },
+    {
+      "id": "voc-au-en-classes.json",
+      "url": "https://voc.mercedes-benz.com/voc/api/au_en/classes",
+      "finalUrl": "https://voc.mercedes-benz.com/voc/api/au_en/classes",
+      "status": 200,
+      "method": "GET",
+      "requestBody": null,
+      "credentialsUsed": false,
+      "fetchedAt": "2026-10-11T19:38:10.702547+00:00",
+      "responseDate": "Sun, 11 Oct 2026 19:38:10 GMT",
+      "lastModified": null,
+      "localPath": "raw/voc-au-en-classes.json",
+      "bytes": 7442,
+      "sha256": "a7ea9c5c9c83708f5cf3cc9550f9dddb9d00bcea6468611e8dd3e2405bb51e5b",
+      "metadataPath": "raw/voc-au-en-classes.json.metadata.json"
+    },
+    {
+      "id": "voc-au-en-evito-bodytypes.json",
+      "url": "https://voc.mercedes-benz.com/voc/api/au_en/classes/EVITO/bodytypes",
+      "finalUrl": "https://voc.mercedes-benz.com/voc/api/au_en/classes/EVITO/bodytypes",
+      "status": 200,
+      "method": "GET",
+      "requestBody": null,
+      "credentialsUsed": false,
+      "fetchedAt": "2026-10-11T19:39:20.905768+00:00",
+      "responseDate": "Sun, 11 Oct 2026 19:39:20 GMT",
+      "lastModified": null,
+      "localPath": "raw/voc-au-en-evito-bodytypes.json",
+      "bytes": 3431,
+      "sha256": "8e1b7ab73cc8174def54b52e588f25513e54c84d5309f8181cb748d4c91381e9",
+      "metadataPath": "raw/voc-au-en-evito-bodytypes.json.metadata.json"
+    },
+    {
+      "id": "voc-au-en-exact-configuration.json",
+      "url": "https://voc.mercedes-benz.com/voc/api/au_en/vehicles/en_AU__44770323_AEF__0-057-05B-502-807-B25-BA3-BB7-BH1-C6L-CA3-CF9-CL1-CL3-CM2-D12-E07-E1D-E1E-E3K-E4S-E7L-E7M-E7T-ED4-EI0-EK1-EL9-ES2-ES3-ET4-EW5-EW8-EY2-EY5-EY6-F1O-F3Z-F64-F66-F68-F71-FJ3-FK2-FP2-FP4-FS5-H00-H15-H16-H1K-H20-HH4-HZ0-HZ7-IB6-IG5-IK0-IK8-IN2-J2A-J55-JA7-JA9-JB4-JB6-JH3-JK5-JK8-JM2-JM3-JS3-JW8-L10-L45-LA2-LC4-LC5-LC6-LC7-LC8-LE1-LE6-LG4-LP2-LP4-ME4-MJ3-NKHZ-P28-Q00-R17-R1S-RD9-RM4-RM7-RY2-SA1-SA2-SA6-SA8-SB1-SB2-SE4-SE5-SH1-SH2-SH8-SK6-SZ7-SZ8-T14-T19-T55-T56-T70-T74-T75-U3V-U73-UR1-US4-US5-V23-V33-V36-V44-VH1-VL2-VU9-VV0-W16-W17-W29-W68-W70-W78-WM0-X16-X42-XC8-XM0-XM7-XQ3-XZ2-Y36-Z2A-Z42-Z44-Z65-ZC5-ZJ7-ZM4-ZQ8_2-9147_D-DUP0_S-B15S-C51S-ES1S-FG8S-FZ7S-J58S-J65S-JA8S-L35S-LB5S-Q01S-SA5S-T16S-V51S/configuration",
+      "finalUrl": "https://voc.mercedes-benz.com/voc/api/au_en/vehicles/en_AU__44770323_AEF__0-057-05B-502-807-B25-BA3-BB7-BH1-C6L-CA3-CF9-CL1-CL3-CM2-D12-E07-E1D-E1E-E3K-E4S-E7L-E7M-E7T-ED4-EI0-EK1-EL9-ES2-ES3-ET4-EW5-EW8-EY2-EY5-EY6-F1O-F3Z-F64-F66-F68-F71-FJ3-FK2-FP2-FP4-FS5-H00-H15-H16-H1K-H20-HH4-HZ0-HZ7-IB6-IG5-IK0-IK8-IN2-J2A-J55-JA7-JA9-JB4-JB6-JH3-JK5-JK8-JM2-JM3-JS3-JW8-L10-L45-LA2-LC4-LC5-LC6-LC7-LC8-LE1-LE6-LG4-LP2-LP4-ME4-MJ3-NKHZ-P28-Q00-R17-R1S-RD9-RM4-RM7-RY2-SA1-SA2-SA6-SA8-SB1-SB2-SE4-SE5-SH1-SH2-SH8-SK6-SZ7-SZ8-T14-T19-T55-T56-T70-T74-T75-U3V-U73-UR1-US4-US5-V23-V33-V36-V44-VH1-VL2-VU9-VV0-W16-W17-W29-W68-W70-W78-WM0-X16-X42-XC8-XM0-XM7-XQ3-XZ2-Y36-Z2A-Z42-Z44-Z65-ZC5-ZJ7-ZM4-ZQ8_2-9147_D-DUP0_S-B15S-C51S-ES1S-FG8S-FZ7S-J58S-J65S-JA8S-L35S-LB5S-Q01S-SA5S-T16S-V51S/configuration",
+      "status": 200,
+      "method": "GET",
+      "requestBody": null,
+      "credentialsUsed": false,
+      "fetchedAt": "2026-10-11T19:39:49.602753+00:00",
+      "responseDate": "Sun, 11 Oct 2026 19:39:49 GMT",
+      "lastModified": null,
+      "localPath": "raw/voc-au-en-exact-configuration.json",
+      "bytes": 281050,
+      "sha256": "9e02ae0ab72aa7b6827098c58dd4b1a91649dab8d4eff1124eb150c822c0f6a6",
+      "metadataPath": "raw/voc-au-en-exact-configuration.json.metadata.json"
+    },
+    {
+      "id": "voc-au-en-settings.json",
+      "url": "https://voc.mercedes-benz.com/voc/api/au_en/settings",
+      "finalUrl": "https://voc.mercedes-benz.com/voc/api/au_en/settings",
+      "status": 200,
+      "method": "GET",
+      "requestBody": null,
+      "credentialsUsed": false,
+      "fetchedAt": "2026-10-11T19:39:13.163667+00:00",
+      "responseDate": "Sun, 11 Oct 2026 19:39:13 GMT",
+      "lastModified": null,
+      "localPath": "raw/voc-au-en-settings.json",
+      "bytes": 4877,
+      "sha256": "d22947ed46ab6eee87edcbaaf8c72cfdc9b5d1b8642e44cd83d0a333e6b56ed0",
+      "metadataPath": "raw/voc-au-en-settings.json.metadata.json"
+    },
+    {
+      "id": "voc-au-en-tourer-models.json",
+      "url": "https://voc.mercedes-benz.com/voc/api/au_en/models?models=VITO&bodyTypes=COMBI&fuelTypes=E",
+      "finalUrl": "https://voc.mercedes-benz.com/voc/api/au_en/models?models=VITO&bodyTypes=COMBI&fuelTypes=E",
+      "status": 200,
+      "method": "GET",
+      "requestBody": null,
+      "credentialsUsed": false,
+      "fetchedAt": "2026-10-11T19:38:26.974611+00:00",
+      "responseDate": "Sun, 11 Oct 2026 19:38:26 GMT",
+      "lastModified": null,
+      "localPath": "raw/voc-au-en-tourer-models.json",
+      "bytes": 281050,
+      "sha256": "26a31d20ee40ee27bd8c845106cb5c50c024acaa4da43e3e09f1617d3c51f0f6",
+      "metadataPath": "raw/voc-au-en-tourer-models.json.metadata.json"
+    },
+    {
+      "id": "voc-au-en-translations.json",
+      "url": "https://voc.mercedes-benz.com/voc/api/au_en/translations",
+      "finalUrl": "https://voc.mercedes-benz.com/voc/api/au_en/translations",
+      "status": 200,
+      "method": "GET",
+      "requestBody": null,
+      "credentialsUsed": false,
+      "fetchedAt": "2026-10-11T19:39:57.849683+00:00",
+      "responseDate": "Sun, 11 Oct 2026 19:39:57 GMT",
+      "lastModified": null,
+      "localPath": "raw/voc-au-en-translations.json",
+      "bytes": 43508,
+      "sha256": "5b9e8e6289f209d4babf3502fd29594e1b87bfcbf4b600d7da76116b49419f33",
+      "metadataPath": "raw/voc-au-en-translations.json.metadata.json"
+    },
+    {
+      "id": "voc.js",
+      "url": "https://assets.oneweb.mercedes-benz.com/plugin/voc-ow-voc-wrapper/voc-ow-voc-wrapper-1.156.2/voc.js",
+      "finalUrl": "https://assets.oneweb.mercedes-benz.com/plugin/voc-ow-voc-wrapper/voc-ow-voc-wrapper-1.156.2/voc.js",
+      "status": 200,
+      "method": "GET",
+      "requestBody": null,
+      "credentialsUsed": false,
+      "fetchedAt": "2026-10-11T19:37:25.820228+00:00",
+      "responseDate": "Sun, 11 Oct 2026 19:37:25 GMT",
+      "lastModified": "Thu, 08 Oct 2026 08:07:16 GMT",
+      "localPath": "raw/voc.js",
+      "bytes": 1506047,
+      "sha256": "a9b61ed5fe5ece03fe3c4a7ac24abc1b3c3f6768e173406745bdce45ae770c0e",
+      "metadataPath": "raw/voc.js.metadata.json"
+    }
+  ],
+  "evidence": {
+    "schemaVersion": 1,
+    "observedAt": "2026-10-11",
+    "targetMarketRecordId": "mercedes-benz-evito-tourer",
+    "decision": "Evidence-only refinement recommended; no detailed admission or availability upgrade",
+    "appStateChanged": false,
+    "reviewStatus": "research complete; parent independent review required before applying",
+    "identity": {
+      "countryLanguage": "au_en",
+      "nationalType": "44770323-AEF",
+      "body": "People Mover",
+      "name": "eVito Tourer 129 Mid",
+      "wheelbaseLabel": "MWB",
+      "drive": "FWD"
+    },
+    "boundedSeatingFinding": {
+      "seatsIncludingDriver": 8,
+      "layout": [
+        2,
+        3,
+        3
+      ],
+      "rawSeats": 8,
+      "rawSeatsMax": 8,
+      "driverIncludedBasis": "Selected standard driver and co-driver seats plus two selected standard three-person rear benches; sum 1+1+3+3=8",
+      "sourceId": "mb-au-voc-model-filter-2026-10-11",
+      "configurationVehicleId": "en_AU__44770323_AEF__0-057-05B-502-807-B25-BA3-BB7-BH1-C6L-CA3-CF9-CL1-CL3-CM2-D12-E07-E1D-E1E-E3K-E4S-E7L-E7M-E7T-ED4-EI0-EK1-EL9-ES2-ES3-ET4-EW5-EW8-EY2-EY5-EY6-F1O-F3Z-F64-F66-F68-F71-FJ3-FK2-FP2-FP4-FS5-H00-H15-H16-H1K-H20-HH4-HZ0-HZ7-IB6-IG5-IK0-IK8-IN2-J2A-J55-JA7-JA9-JB4-JB6-JH3-JK5-JK8-JM2-JM3-JS3-JW8-L10-L45-LA2-LC4-LC5-LC6-LC7-LC8-LE1-LE6-LG4-LP2-LP4-ME4-MJ3-NKHZ-P28-Q00-R17-R1S-RD9-RM4-RM7-RY2-SA1-SA2-SA6-SA8-SB1-SB2-SE4-SE5-SH1-SH2-SH8-SK6-SZ7-SZ8-T14-T19-T55-T56-T70-T74-T75-U3V-U73-UR1-US4-US5-V23-V33-V36-V44-VH1-VL2-VU9-VV0-W16-W17-W29-W68-W70-W78-WM0-X16-X42-XC8-XM0-XM7-XQ3-XZ2-Y36-Z2A-Z42-Z44-Z65-ZC5-ZJ7-ZM4-ZQ8_2-9147_D-DUP0_S-B15S-C51S-ES1S-FG8S-FZ7S-J58S-J65S-JA8S-L35S-LB5S-Q01S-SA5S-T16S-V51S",
+      "standardSeatCodes": [
+        "SB1",
+        "SB2",
+        "US4",
+        "US5"
+      ],
+      "scope": "This exact returned Australian configuration and its observed source epoch only; not every eVito Tourer or a certified currently purchasable physical vehicle"
+    },
+    "epochs": [
+      {
+        "id": "manufacturer-technical-my2025-jul2025",
+        "formalModelYear": 2025,
+        "effectiveMonth": "2025-07",
+        "nationalType": "44770323-AEF",
+        "source": "raw/technical-my2025-jul2025.pdf",
+        "verifiedPages": [
+          1,
+          2,
+          9
+        ],
+        "seatFinding": "Page 9 top-view illustration shows 2+3+3 positions; it is not a selected build/order matrix"
+      },
+      {
+        "id": "mb-au-voc-model-filter-2026-10-11",
+        "formalModelYear": null,
+        "observedAt": "2026-10-11",
+        "configurationDateRaw": "2027-01-11",
+        "formattedConfigurationDateRaw": "11 Jan 2027",
+        "dateParameterSent": false,
+        "codeModelYearRaw": "807",
+        "changeYearRaw": "057",
+        "code807Label": "CY X6/1",
+        "code057Label": "CY X6/2",
+        "configurationDateMeaning": "Unresolved; frontend references it in pricing presentation and AU PricingDateLabel is blank. Do not call it production effectivity, model year, delivery date or a current stock build date."
+      }
+    ],
+    "facts": [
+      {
+        "sourcePointer": "/vehicle/bm",
+        "rawValue": "44770323"
+      },
+      {
+        "sourcePointer": "/vehicle/nsrExtension",
+        "rawValue": "AEF"
+      },
+      {
+        "sourcePointer": "/vehicle/modelLine",
+        "rawValue": "eVito Tourer"
+      },
+      {
+        "sourcePointer": "/vehicle/name",
+        "rawValue": "eVito Tourer 129 Mid"
+      },
+      {
+        "sourcePointer": "/vehicle/bodyType",
+        "rawValue": "People Mover"
+      },
+      {
+        "sourcePointer": "/vehicle/bodyTypeId",
+        "rawValue": "COMBI"
+      },
+      {
+        "sourcePointer": "/vehicle/ccsClassId",
+        "rawValue": "EVITO"
+      },
+      {
+        "sourcePointer": "/vehicle/lengthType",
+        "rawValue": "MWB"
+      },
+      {
+        "sourcePointer": "/vehicle/driveType",
+        "rawValue": "Front-wheel drive"
+      },
+      {
+        "sourcePointer": "/vehicle/isElectricVehicle",
+        "rawValue": true
+      },
+      {
+        "sourcePointer": "/vehicle/seats",
+        "rawValue": 8
+      },
+      {
+        "sourcePointer": "/vehicle/seatsMax",
+        "rawValue": 8
+      },
+      {
+        "sourcePointer": "/vehicle/codeModelYear",
+        "rawValue": "807"
+      },
+      {
+        "sourcePointer": "/vehicle/changeYear",
+        "rawValue": "057"
+      },
+      {
+        "sourcePointer": "/vehicle/kw",
+        "rawValue": 150
+      },
+      {
+        "sourcePointer": "/vehicle/kerbWeight",
+        "rawValue": 2850
+      },
+      {
+        "sourcePointer": "/vehicle/payload",
+        "rawValue": 650
+      },
+      {
+        "sourcePointer": "/vehicle/grossVehicleWeight",
+        "rawValue": "3.5"
+      }
+    ],
+    "standardSeatingEquipment": [
+      {
+        "sourcePointer": "/configuration/currentEquipment/100",
+        "code": "SB1",
+        "codetype": "equipment",
+        "denotation": "Comfort driver's seat - (SB1)",
+        "description": {},
+        "equipmentType": "standard",
+        "footnotes": [],
+        "futureEquipmentFlag": false,
+        "grossPrice": 0,
+        "grossPriceFormatted": "",
+        "hidden": false,
+        "hideOnlyTile": false,
+        "id": "0-SB1",
+        "imageUrls": [
+          "https://media.oneweb.mercedes-benz.com/images/static/v1/26618/9/46/c669b76e30ff6c35e53d0af151e6adc1161b5.jpg"
+        ],
+        "mainCodeGroup": "Interior",
+        "mainCodeGroupId": "MOV10",
+        "netPrice": 0,
+        "netPriceFormatted": "",
+        "radiogroup": "100000004050880852",
+        "selected": true,
+        "sortcode": 40,
+        "subCodeGroup": "Seats",
+        "subCodeGroupId": "MOV1001",
+        "surcharge": "",
+        "unremovable": false,
+        "weightValue": 15.79
+      },
+      {
+        "sourcePointer": "/configuration/currentEquipment/101",
+        "code": "SB2",
+        "codetype": "equipment",
+        "denotation": "Comfort co-driver's seat - (SB2)",
+        "description": {},
+        "equipmentType": "standard",
+        "footnotes": [],
+        "futureEquipmentFlag": false,
+        "grossPrice": 0,
+        "grossPriceFormatted": "",
+        "hidden": false,
+        "hideOnlyTile": false,
+        "id": "0-SB2",
+        "imageUrls": [
+          "https://media.oneweb.mercedes-benz.com/images/static/v1/26618/6/22/ecb0c287ae5314f74630feaf18cb7b2ce6833.jpg"
+        ],
+        "mainCodeGroup": "Interior",
+        "mainCodeGroupId": "MOV10",
+        "netPrice": 0,
+        "netPriceFormatted": "",
+        "radiogroup": "100000004050880500",
+        "selected": true,
+        "sortcode": 41,
+        "subCodeGroup": "Seats",
+        "subCodeGroupId": "MOV1001",
+        "surcharge": "",
+        "unremovable": false,
+        "weightValue": 15.56
+      },
+      {
+        "sourcePointer": "/configuration/currentEquipment/120",
+        "code": "US4",
+        "codetype": "equipment",
+        "denotation": "3-seater comfort bench EASY-ENTRY in 1. rear row - (US4)",
+        "description": {},
+        "equipmentType": "standard",
+        "footnotes": [],
+        "futureEquipmentFlag": false,
+        "grossPrice": 0,
+        "grossPriceFormatted": "",
+        "hidden": false,
+        "hideOnlyTile": false,
+        "id": "0-US4",
+        "imageUrls": [
+          "https://media.oneweb.mercedes-benz.com/images/static/v1/26618/4/a6/2fd7890b66097ae9ab4986b0ba9b13bed2210.jpg"
+        ],
+        "mainCodeGroup": "Interior",
+        "mainCodeGroupId": "MOV10",
+        "netPrice": 0,
+        "netPriceFormatted": "",
+        "radiogroup": "100000004050880516",
+        "selected": true,
+        "sortcode": 47,
+        "subCodeGroup": "Seats",
+        "subCodeGroupId": "MOV1001",
+        "surcharge": "",
+        "unremovable": false,
+        "weightValue": 92.3
+      },
+      {
+        "sourcePointer": "/configuration/currentEquipment/121",
+        "code": "US5",
+        "codetype": "equipment",
+        "denotation": "3-seater comfort bench EASY-ENTRY in 2. rear row - (US5)",
+        "description": {},
+        "equipmentType": "standard",
+        "footnotes": [],
+        "futureEquipmentFlag": false,
+        "grossPrice": 0,
+        "grossPriceFormatted": "",
+        "hidden": false,
+        "hideOnlyTile": false,
+        "id": "0-US5",
+        "imageUrls": [
+          "https://media.oneweb.mercedes-benz.com/images/static/v1/26618/3/c5/0405f9629653a54f4c74ef10fa37f4d9f838a.jpg"
+        ],
+        "mainCodeGroup": "Interior",
+        "mainCodeGroupId": "MOV10",
+        "netPrice": 0,
+        "netPriceFormatted": "",
+        "selected": true,
+        "sortcode": 48,
+        "subCodeGroup": "Seats",
+        "subCodeGroupId": "MOV1001",
+        "surcharge": "",
+        "unremovable": true,
+        "weightValue": 90.2
+      }
+    ],
+    "unvalidatedOptionalSeatingEntries": [
+      {
+        "sourcePointer": "/configuration/selectableEquipment/44",
+        "code": "US6",
+        "codetype": "equipment",
+        "denotation": "Comfort seat in 1. rear seat row left - (US6)",
+        "description": {},
+        "footnotes": [],
+        "futureEquipmentFlag": false,
+        "grossPrice": 0,
+        "grossPriceFormatted": "",
+        "hidden": false,
+        "hideOnlyTile": false,
+        "id": "0-US6",
+        "imageUrls": [],
+        "mainCodeGroup": "Interior",
+        "mainCodeGroupId": "MOV10",
+        "netPrice": 0,
+        "netPriceFormatted": "",
+        "selected": false,
+        "sortcode": 66,
+        "subCodeGroup": "Seats",
+        "subCodeGroupId": "MOV1001",
+        "surcharge": "",
+        "unremovable": false,
+        "weightValue": 30
+      },
+      {
+        "sourcePointer": "/configuration/selectableEquipment/45",
+        "code": "US7",
+        "codetype": "equipment",
+        "denotation": "Comfort seat in 1. rear seat row right - (US7)",
+        "description": {},
+        "footnotes": [],
+        "futureEquipmentFlag": false,
+        "grossPrice": 0,
+        "grossPriceFormatted": "",
+        "hidden": false,
+        "hideOnlyTile": false,
+        "id": "0-US7",
+        "imageUrls": [],
+        "mainCodeGroup": "Interior",
+        "mainCodeGroupId": "MOV10",
+        "netPrice": 0,
+        "netPriceFormatted": "",
+        "selected": false,
+        "sortcode": 67,
+        "subCodeGroup": "Seats",
+        "subCodeGroupId": "MOV1001",
+        "surcharge": "",
+        "unremovable": false,
+        "weightValue": 30
+      },
+      {
+        "sourcePointer": "/configuration/selectableEquipment/47",
+        "code": "SF1",
+        "codetype": "equipment",
+        "deltaWeightValue": 6.220000000000002,
+        "denotation": "Driver's seat electrically adjustable - (SF1)",
+        "description": {
+          "descriptions": {
+            "coreArgument": "Thanks to the power seat adjustment, the individual setup of the comfort driver's seat can be adjusted at the touch of a button – and thanks to the memory function also very easily restored. This practical function stores the settings of the comfort seats and the height of the luxury head restraint for up to 3 persons.",
+            "extendedDescription": {
+              "headline": "Comfortable and steplessly adaptable electric seat adjustment.",
+              "text": "When there is a change of driver, your own setup is quickly restored. Added to this are the comfort qualities of the seat during the journey: on the comfort driver's seat occupants of almost any size and stature will find an appropriate seat position and therefore enjoy a pleasant journey even over long distances. The seat can be electrically adjusted in eight ways: fore/aft adjustment for maximum possible legroom, as well as seat height, seat backrest and seat cushion angle adjustment for a comfortable seat position. In addition, the head restraint height can be adjusted electrically and its angle can be adjusted manually. A further plus in comfort is offered by the armrest on the side facing the front passenger."
+            },
+            "ingredients": [
+              {
+                "headline": "Other features and advantages of the electrically adjustable comfort driver's seat:",
+                "ingredients": [
+                  {
+                    "content": "Electric fore/aft adjustment (225 mm in total at 4.5 mm intervals)"
+                  },
+                  {
+                    "content": "Stepless adjustment of the seat backrest angle"
+                  },
+                  {
+                    "content": "Stepless electrical adjustment of seat height"
+                  },
+                  {
+                    "content": "Stepless power adjustment of the seat cushion angle"
+                  },
+                  {
+                    "content": "Luxury head restraint, electrically adjustable for height, manually adjustable for angle"
+                  },
+                  {
+                    "content": "Armrest on the side facing the front passenger"
+                  },
+                  {
+                    "content": "Control element for electrical adjustment of seat settings is located in the door lining near the door opener"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "footnotes": [],
+        "futureEquipmentFlag": false,
+        "grossPrice": 0,
+        "grossPriceFormatted": "",
+        "hidden": false,
+        "hideOnlyTile": false,
+        "id": "0-SF1",
+        "imageUrls": [
+          "https://media.oneweb.mercedes-benz.com/images/static/v1/26618/9/ac/3d21f9e024afe393c1dacea5981c00147486c.jpg"
+        ],
+        "mainCodeGroup": "Interior",
+        "mainCodeGroupId": "MOV10",
+        "netPrice": 0,
+        "netPriceFormatted": "",
+        "radiogroup": "100000004050880852",
+        "selected": false,
+        "sortcode": 50,
+        "subCodeGroup": "Seats",
+        "subCodeGroupId": "MOV1001",
+        "surcharge": "",
+        "unremovable": false,
+        "weightValue": 22.01
+      },
+      {
+        "sourcePointer": "/configuration/selectableEquipment/49",
+        "code": "SF2",
+        "codetype": "equipment",
+        "deltaWeightValue": 7.49,
+        "denotation": "Co-driver's seat electrically adjustable - (SF2)",
+        "description": {
+          "descriptions": {
+            "coreArgument": "Thanks to the power seat adjustment, the individual setup of the luxury front passenger seat can be adjusted at the touch of a button – and thanks to the memory function also very easily restored. This practical function stores the settings of the comfort seats and the height of the luxury head restraint for up to 3 persons.",
+            "extendedDescription": {
+              "headline": "Comfortable and steplessly adaptable electric seat adjustment.",
+              "text": "In the event of a change of occupant on the front passenger seat your own setup can be quickly restored. Added to this are the comfort qualities of the seat during the journey: on the comfort front passenger's seat occupants of almost any size and stature will find an appropriate seat position and therefore enjoy a pleasant journey even over long distances. The seat can be electrically adjusted in eight ways: fore/aft adjustment for maximum possible legroom, as well as seat height, seat backrest and seat cushion angle adjustment for a comfortable seat position. In addition, the head restraint height can be adjusted electrically and its angle can be adjusted manually. The armrest on the side closest to the driver ensures added comfort."
+            },
+            "ingredients": [
+              {
+                "headline": "Other features and advantages of the electrically adjustable luxury front passenger seat:",
+                "ingredients": [
+                  {
+                    "content": "Electric fore/aft adjustment (225 mm in total at 4.5 mm intervals)"
+                  },
+                  {
+                    "content": "Stepless adjustment of the seat backrest angle"
+                  },
+                  {
+                    "content": "Stepless electrical adjustment of seat height"
+                  },
+                  {
+                    "content": "Stepless power adjustment of the seat cushion angle"
+                  },
+                  {
+                    "content": "Luxury head restraint, electrically adjustable for height, manually adjustable for angle"
+                  },
+                  {
+                    "content": "Armrest on the side closest to the driver"
+                  },
+                  {
+                    "content": "Control element for electrical adjustment of seat settings is located in the door lining near the door opener"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "footnotes": [],
+        "futureEquipmentFlag": false,
+        "grossPrice": 0,
+        "grossPriceFormatted": "",
+        "hidden": false,
+        "hideOnlyTile": false,
+        "id": "0-SF2",
+        "imageUrls": [
+          "https://media.oneweb.mercedes-benz.com/images/static/v1/26618/9/ac/3d21f9e024afe393c1dacea5981c00147486c.jpg"
+        ],
+        "mainCodeGroup": "Interior",
+        "mainCodeGroupId": "MOV10",
+        "netPrice": 0,
+        "netPriceFormatted": "",
+        "radiogroup": "100000004050880500",
+        "selected": false,
+        "sortcode": 52,
+        "subCodeGroup": "Seats",
+        "subCodeGroupId": "MOV1001",
+        "surcharge": "",
+        "unremovable": false,
+        "weightValue": 23.05
+      }
+    ],
+    "optionalSeatingBoundary": "US6/US7 individual first-rear-row seats and SF1/SF2 powered front seats appear in selectableEquipment but are not selected. No alternate configuration request was submitted. Do not admit another seat-count variant, infer a no-cost complete package, or infer a nine-seat build. S23 is mentioned only inside generic SB1 description, not a selectable equipment row in this response.",
+    "technicalHold": [
+      {
+        "topic": "battery",
+        "values": [
+          {
+            "pointer": "/vehicle/technicalDetails/5/value",
+            "value": "93 kWh",
+            "basis": "Battery capacity (usable)"
+          },
+          {
+            "pointer": "/configuration/currentEquipment/85/denotation",
+            "value": "Electric motor 150 kW / battery 90 kWh (usable) - (ME4)"
+          },
+          {
+            "pointer": "/configuration/currentEquipment/22/denotation",
+            "value": "High-voltage battery (90 kWh) - (E7T)"
+          }
+        ],
+        "decision": "Conflict retained; no numerical battery normalization"
+      },
+      {
+        "topic": "mass",
+        "values": [
+          {
+            "source": "MY2025 PDF p2",
+            "grossVehicleMassKg": 3500,
+            "unladenMassKg": 2846,
+            "payloadKg": 654,
+            "massDefinition": "All standard equipment, full fuel, no occupants; production tolerance and optional equipment caveats"
+          },
+          {
+            "source": "mb-au-voc-model-filter-2026-10-11",
+            "grossVehicleWeightRaw": "3.5",
+            "kerbWeightKg": 2850,
+            "payloadKg": 650,
+            "kerbWeightMinKg": 2561,
+            "kerbWeightMaxKg": 2774
+          }
+        ],
+        "decision": "Keep exact source/epoch labels. API selected kerb weight exceeds its own min/max envelope; no cross-epoch blend or corrected value inferred"
+      },
+      {
+        "topic": "charging",
+        "source": "mb-au-voc-model-filter-2026-10-11",
+        "equipmentCode": "E7L",
+        "rawDescription": "AC charging 11 kW / DC charging 110 kW - (E7L)",
+        "decision": "Retain source-scoped. No charging-time/range bridge to this returned epoch established"
+      },
+      {
+        "topic": "range",
+        "source": "Australian electric-vans comparison page",
+        "rawValue": "430 km NEDC",
+        "decision": "Family-page value only; not bound to the configurator battery conflict or a current MY"
+      },
+      {
+        "topic": "price",
+        "source": "mb-au-voc-model-filter-2026-10-11",
+        "rawCurrency": "A$",
+        "rawGross": 126395.5,
+        "rawNet": 114905,
+        "decision": "Not a public drive-away quote. Country settings also return Currency=EUR while vehicle fields say A$ and visible price strings are blank; no usable advertised price promoted"
+      }
+    ],
+    "availability": {
+      "orderStatusRecommendation": "listed_unconfirmed",
+      "stockStatusRecommendation": "unverified",
+      "reason": "Public configurator can produce the exact type, but no source proves current order acceptance, allocation, delivery, or identifiable New physical stock. Linked stock CTA requests DIESEL, not electric; generic search listings are excluded.",
+      "linkedStockUrl": "https://www.mercedes-benz.com.au/passengercars/buy/new-car/search-results.html/?emhmodelIdentifier=VITO&emhbodyType=PEOPLE_CARRIER&emhfuelType=DIESEL&emhvehicleCategory=new-commercial-vans&emhsortType=price-asc#vehicles",
+      "acceptedOrdersObserved": false,
+      "newStockUnitsVerified": 0,
+      "zeroStockClaim": false
+    },
+    "preservedBoundaries": {
+      "formalCurrentModelYear": null,
+      "rankingEligible": false,
+      "catalogueCoverage": "market_audit_only",
+      "completeVehicleCountEligible": null,
+      "detailedConfigurationsAdded": 0,
+      "marketRecordsAdded": 0,
+      "alternativeSeatingVariantsAdded": 0
+    },
+    "pdfExtractionCaution": "Poppler text extraction exposes repeated SB1/SB2/US4/US5 and 3100 kg content that is not visible on rendered page 9. This extraction residue is not promoted as the eVito specification or as proof of a visible 3100-vs-3500 conflict.",
+    "stoppingCondition": "Targeted public-primary page, live-linked technical PDF, page-linked AU configurator and exact returned type inspected. Public evidence closes only the returned eight-seat driver basis; current formal MY, conflicting battery basis and purchasability stay open. No seller contact requested or performed."
+  },
+  "requestProvenance": {
+    "method": "Read-only unauthenticated public GET retrieval; no cookies or credentials sent by the retrieval script; no browser session, form, POST, order, saved online-code request, or seller contact",
+    "chain": [
+      {
+        "step": 1,
+        "source": "raw/overview.html",
+        "extracted": "text/overview-objects.json",
+        "jsonPointer": "/18/payload/secondaryCTA/0/url",
+        "value": "https://www.mercedes-benz.com.au/vans/buy/van-online-configurator.html#/au_en?models=VITO&bodyTypes=COMBI&fuelTypes=E"
+      },
+      {
+        "step": 2,
+        "source": "raw/configurator.html",
+        "scriptUrl": "https://assets.oneweb.mercedes-benz.com/plugin/voc-ow-voc-wrapper/voc-ow-voc-wrapper-1.156.2/voc.js",
+        "scriptLocal": "raw/voc.js"
+      },
+      {
+        "step": 3,
+        "source": "raw/voc.js",
+        "apiBaseLiteral": "https://voc.mercedes-benz.com/voc/",
+        "methodLiteral": "getConfigurationByModelsAndBodyTypesAndFuelTypes",
+        "pathTemplate": "api/${countryLanguage}/models",
+        "filtersFromPageFragment": {
+          "models": "VITO",
+          "bodyTypes": "COMBI",
+          "fuelTypes": "E"
+        },
+        "countryLanguageFromPageFragment": "au_en"
+      },
+      {
+        "step": 4,
+        "requestUrl": "https://voc.mercedes-benz.com/voc/api/au_en/models?models=VITO&bodyTypes=COMBI&fuelTypes=E",
+        "method": "GET",
+        "body": null,
+        "dateParameter": null,
+        "response": "raw/voc-au-en-tourer-models.json",
+        "responseDateLiteral": "2027-01-11",
+        "selectedVehicleIdPointer": "/vehicle/id"
+      },
+      {
+        "step": 5,
+        "request": [
+          [
+            "voc-au-en-exact-configuration.json",
+            "https://voc.mercedes-benz.com/voc/api/au_en/vehicles/en_AU__44770323_AEF__0-057-05B-502-807-B25-BA3-BB7-BH1-C6L-CA3-CF9-CL1-CL3-CM2-D12-E07-E1D-E1E-E3K-E4S-E7L-E7M-E7T-ED4-EI0-EK1-EL9-ES2-ES3-ET4-EW5-EW8-EY2-EY5-EY6-F1O-F3Z-F64-F66-F68-F71-FJ3-FK2-FP2-FP4-FS5-H00-H15-H16-H1K-H20-HH4-HZ0-HZ7-IB6-IG5-IK0-IK8-IN2-J2A-J55-JA7-JA9-JB4-JB6-JH3-JK5-JK8-JM2-JM3-JS3-JW8-L10-L45-LA2-LC4-LC5-LC6-LC7-LC8-LE1-LE6-LG4-LP2-LP4-ME4-MJ3-NKHZ-P28-Q00-R17-R1S-RD9-RM4-RM7-RY2-SA1-SA2-SA6-SA8-SB1-SB2-SE4-SE5-SH1-SH2-SH8-SK6-SZ7-SZ8-T14-T19-T55-T56-T70-T74-T75-U3V-U73-UR1-US4-US5-V23-V33-V36-V44-VH1-VL2-VU9-VV0-W16-W17-W29-W68-W70-W78-WM0-X16-X42-XC8-XM0-XM7-XQ3-XZ2-Y36-Z2A-Z42-Z44-Z65-ZC5-ZJ7-ZM4-ZQ8_2-9147_D-DUP0_S-B15S-C51S-ES1S-FG8S-FZ7S-J58S-J65S-JA8S-L35S-LB5S-Q01S-SA5S-T16S-V51S/configuration"
+          ]
+        ],
+        "method": "GET",
+        "body": null,
+        "dateParameter": null,
+        "response": "raw/voc-au-en-exact-configuration.json",
+        "responseDateLiteral": "2027-01-11",
+        "returnedVehicleIdMatches": true,
+        "returnedSeatBasisMatches": true
+      },
+      {
+        "step": 6,
+        "source": "raw/voc.js",
+        "classesPathTemplate": "api/${countryLanguage}/classes",
+        "bodytypesPathTemplate": "api/${countryLanguage}/classes/${classId}/bodytypes",
+        "classIdFromResponse": "EVITO",
+        "response": "raw/voc-au-en-evito-bodytypes.json",
+        "tourerModelId": "44770323_AEF",
+        "scope": "Additional selector corroboration, not a complete variant matrix or supply proof"
+      },
+      {
+        "step": 7,
+        "source": "raw/voc.js",
+        "presentation": "formattedConfigurationDate appears beside PricingDateLabel in pricing component",
+        "translationSource": "raw/voc-au-en-translations.json",
+        "translationPointer": "/PricingDateLabel",
+        "translationValue": "",
+        "conclusion": "Do not infer date semantics beyond returned field name"
+      }
+    ],
+    "datePolicy": "Observed October 11 2026. Returned January 11 2027 configurationDate is preserved without interpretation. No date was added or altered; neither code 807 nor 057 is decoded into a formal MY.",
+    "requestSafety": "All requested endpoints were publicly linked or derived from documented frontend GET paths and observed selectors. All responded 200; no denied origin was retried. No BMW origin was touched."
+  },
+  "integrationReviewAdaptations": {
+    "legacyHistoryDateMaterialized": "2026-10-10",
+    "legacyHistoryContentPreserved": true,
+    "completeBeforeRecordPreserved": true,
+    "additionalConflictSource": "https://www.mercedes-benz.com.au/vans/electric-vans.html",
+    "overviewConflictPointers": [
+      "/18/payload/copy",
+      "/111/payload/copy",
+      "/207/payload/subline"
+    ],
+    "electricVansConflictPointers": [
+      "/86/payload/text/subline",
+      "/89/payload/subline"
+    ],
+    "dcConflictPointers": {
+      "overview": [
+        "/168/payload/headline",
+        "/168/payload/copy"
+      ],
+      "configuration": "E7L",
+      "electricVans": "text/electric-comparison-table.txt"
+    },
+    "embeddedCopyQualification": "Embedded manufacturer page components were read as source content; not every panel was independently observed rendered.",
+    "configurationDateRaw": "2027-01-11",
+    "configurationDateSemantics": "unresolved",
+    "formalCurrentModelYear": null,
+    "technicalValuesPromoted": false
+  },
+  "previousRecord": {
+    "brand": "Mercedes-Benz",
+    "model": "eVito Tourer",
+    "id": "mercedes-benz-evito-tourer",
+    "overlapKeys": [
+      "mercedes-benz-evito-tourer"
+    ],
+    "vehicleType": "people_mover",
+    "trims": [
+      "129 MWB FWD"
+    ],
+    "sourceUrls": [
+      "https://www.mercedes-benz.com.au/vans/models/evito/tourer/overview.html",
+      "https://www.mercedes-benz.com.au/content/dam/australia/vans/models/download-centre/Mercedes-Benz_Vans_Australia_VS20_Vito_Technical_Data_(JUL2025).pdf"
+    ],
+    "checkedAt": "2026-10-10",
+    "orderStatus": "listed_unconfirmed",
+    "stockStatus": "unverified",
+    "evidenceNote": "Current Australian product page and linked MY2025 technical data identify eVito Tourer 129 MWB FWD.",
+    "limitations": [
+      "Australian marketing text is inconsistent about eight occupants versus eight passengers plus driver; seat count needs final local specification verification. No specific stock claim."
+    ],
+    "vehicleClass": "passenger",
+    "modelAliases": [],
+    "sourceRecordIds": [
+      "mercedes-benz-evito-tourer"
+    ],
+    "sourceArtifacts": [
+      "commercial-ev-census.json"
+    ],
+    "rankingEligible": false,
+    "trimCoverage": "verified_named_configurations_incomplete_matrix",
+    "evidenceHistory": [
+      {
+        "sourceArtifact": "commercial-ev-census.json",
+        "sourceRecordId": "mercedes-benz-evito-tourer",
+        "orderStatus": "listed_unconfirmed",
+        "stockStatus": "unverified",
+        "trims": [
+          "129 MWB FWD"
+        ],
+        "evidenceNote": "Current Australian product page and linked MY2025 technical data identify eVito Tourer 129 MWB FWD.",
+        "limitations": [
+          "Australian marketing text is inconsistent about eight occupants versus eight passengers plus driver; seat count needs final local specification verification. No specific stock claim."
+        ],
+        "sourceUrls": [
+          "https://www.mercedes-benz.com.au/vans/models/evito/tourer/overview.html",
+          "https://www.mercedes-benz.com.au/content/dam/australia/vans/models/download-centre/Mercedes-Benz_Vans_Australia_VS20_Vito_Technical_Data_(JUL2025).pdf"
+        ]
+      }
+    ],
+    "modelYear": null,
+    "catalogueCoverage": "market_audit_only",
+    "availabilityCategory": "listing_only_order_stock_unconfirmed",
+    "completeVehicleCountEligible": null,
+    "recordScope": "model_or_named_configuration_family"
+  },
+  "previousRecordCanonicalSHA256": "59964ed765b699b8a164da9ee6ec01091fcaa0ddd8466d530296687f2d147ace",
+  "amendedRecord": {
+    "brand": "Mercedes-Benz",
+    "model": "eVito Tourer",
+    "id": "mercedes-benz-evito-tourer",
+    "overlapKeys": [
+      "mercedes-benz-evito-tourer"
+    ],
+    "vehicleType": "people_mover",
+    "trims": [
+      "129 MWB FWD"
+    ],
+    "sourceUrls": [
+      "https://www.mercedes-benz.com.au/vans/models/evito/tourer/overview.html",
+      "https://www.mercedes-benz.com.au/content/dam/australia/vans/models/download-centre/Mercedes-Benz_Vans_Australia_VS20_Vito_Technical_Data_(JUL2025).pdf",
+      "https://www.mercedes-benz.com.au/vans/buy/van-online-configurator.html#/au_en?models=VITO&bodyTypes=COMBI&fuelTypes=E",
+      "https://voc.mercedes-benz.com/voc/api/au_en/models?models=VITO&bodyTypes=COMBI&fuelTypes=E",
+      "https://www.mercedes-benz.com.au/vans/electric-vans.html"
+    ],
+    "checkedAt": "2026-10-11",
+    "orderStatus": "listed_unconfirmed",
+    "stockStatus": "unverified",
+    "evidenceNote": "Australian MY2025 technical data effective July 2025 identify eVito Tourer 129 MWB FWD, national type 44770323-AEF. A public AU configurator response observed 11 October 2026 binds the same type to eight seats including the driver (2+3+3), but returns configurationDate 2027-01-11 with unresolved date semantics and no established formal current MY or supply.",
+    "limitations": [
+      "Eight seats including the driver is substantiated only for the exact returned Australian configuration with selected standard SB1/SB2/US4/US5 (2+3+3). Alternative selections were not validated. The overview and electric-vans pages retain incompatible generic eight-occupant, eight-passengers-plus-driver and alternate-layout copy; these broader claims are not silently resolved by this one configuration.",
+      "MY2025 / July 2025 technical-sheet applicability must remain separate from the observed configurator response. Its raw 807/057 codes and configurationDate 2027-01-11 do not establish a formal MY, production effectivity or delivery date.",
+      "The configurator lists usable battery capacity as 93 kWh while selected ME4/E7T equipment descriptions say 90 kWh. Mass and price fields also require source/epoch qualification; do not combine these with older family-page specifications.",
+      "The overview also contains embedded 80 kW DC wording, while the returned E7L equipment and electric-vans table say 110 kW. The older family page range of 430 km uses NEDC. These source and epoch differences must not be normalized into a unified current exact-trim specification.",
+      "Current ordering, allocation, delivery and specific New stock remain unverified. The model-page stock link is filtered to diesel Vito people carriers and cannot establish electric Tourer stock."
+    ],
+    "vehicleClass": "passenger",
+    "modelAliases": [],
+    "sourceRecordIds": [
+      "mercedes-benz-evito-tourer"
+    ],
+    "sourceArtifacts": [
+      "commercial-ev-census.json",
+      "market-evito-tourer-seating-evidence-2026-10-11.json"
+    ],
+    "rankingEligible": false,
+    "trimCoverage": "verified_named_configurations_incomplete_matrix",
+    "evidenceHistory": [
+      {
+        "sourceArtifact": "commercial-ev-census.json",
+        "sourceRecordId": "mercedes-benz-evito-tourer",
+        "orderStatus": "listed_unconfirmed",
+        "stockStatus": "unverified",
+        "trims": [
+          "129 MWB FWD"
+        ],
+        "evidenceNote": "Current Australian product page and linked MY2025 technical data identify eVito Tourer 129 MWB FWD.",
+        "limitations": [
+          "Australian marketing text is inconsistent about eight occupants versus eight passengers plus driver; seat count needs final local specification verification. No specific stock claim."
+        ],
+        "sourceUrls": [
+          "https://www.mercedes-benz.com.au/vans/models/evito/tourer/overview.html",
+          "https://www.mercedes-benz.com.au/content/dam/australia/vans/models/download-centre/Mercedes-Benz_Vans_Australia_VS20_Vito_Technical_Data_(JUL2025).pdf"
+        ],
+        "checkedAt": "2026-10-10"
+      },
+      {
+        "kind": "exact_returned_configuration_seating_evidence_only",
+        "sourceArtifact": "market-evito-tourer-seating-evidence-2026-10-11.json",
+        "sourceRecordId": "mercedes-benz-evito-tourer",
+        "checkedAt": "2026-10-11",
+        "orderStatus": "listed_unconfirmed",
+        "stockStatus": "unverified",
+        "trims": [
+          "129 MWB FWD"
+        ],
+        "evidenceNote": "Australian MY2025 technical data effective July 2025 identify eVito Tourer 129 MWB FWD, national type 44770323-AEF. A public AU configurator response observed 11 October 2026 binds the same type to eight seats including the driver (2+3+3), but returns configurationDate 2027-01-11 with unresolved date semantics and no established formal current MY or supply.",
+        "limitations": [
+          "Eight seats including the driver is substantiated only for the exact returned Australian configuration with selected standard SB1/SB2/US4/US5 (2+3+3). Alternative selections were not validated. The overview and electric-vans pages retain incompatible generic eight-occupant, eight-passengers-plus-driver and alternate-layout copy; these broader claims are not silently resolved by this one configuration.",
+          "MY2025 / July 2025 technical-sheet applicability must remain separate from the observed configurator response. Its raw 807/057 codes and configurationDate 2027-01-11 do not establish a formal MY, production effectivity or delivery date.",
+          "The configurator lists usable battery capacity as 93 kWh while selected ME4/E7T equipment descriptions say 90 kWh. Mass and price fields also require source/epoch qualification; do not combine these with older family-page specifications.",
+          "The overview also contains embedded 80 kW DC wording, while the returned E7L equipment and electric-vans table say 110 kW. The older family page range of 430 km uses NEDC. These source and epoch differences must not be normalized into a unified current exact-trim specification.",
+          "Current ordering, allocation, delivery and specific New stock remain unverified. The model-page stock link is filtered to diesel Vito people carriers and cannot establish electric Tourer stock."
+        ],
+        "sourceUrls": [
+          "https://www.mercedes-benz.com.au/vans/models/evito/tourer/overview.html",
+          "https://www.mercedes-benz.com.au/content/dam/australia/vans/models/download-centre/Mercedes-Benz_Vans_Australia_VS20_Vito_Technical_Data_(JUL2025).pdf",
+          "https://www.mercedes-benz.com.au/vans/buy/van-online-configurator.html#/au_en?models=VITO&bodyTypes=COMBI&fuelTypes=E",
+          "https://voc.mercedes-benz.com/voc/api/au_en/models?models=VITO&bodyTypes=COMBI&fuelTypes=E",
+          "https://www.mercedes-benz.com.au/vans/electric-vans.html"
+        ],
+        "previousRecord": {
+          "brand": "Mercedes-Benz",
+          "model": "eVito Tourer",
+          "id": "mercedes-benz-evito-tourer",
+          "overlapKeys": [
+            "mercedes-benz-evito-tourer"
+          ],
+          "vehicleType": "people_mover",
+          "trims": [
+            "129 MWB FWD"
+          ],
+          "sourceUrls": [
+            "https://www.mercedes-benz.com.au/vans/models/evito/tourer/overview.html",
+            "https://www.mercedes-benz.com.au/content/dam/australia/vans/models/download-centre/Mercedes-Benz_Vans_Australia_VS20_Vito_Technical_Data_(JUL2025).pdf"
+          ],
+          "checkedAt": "2026-10-10",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "evidenceNote": "Current Australian product page and linked MY2025 technical data identify eVito Tourer 129 MWB FWD.",
+          "limitations": [
+            "Australian marketing text is inconsistent about eight occupants versus eight passengers plus driver; seat count needs final local specification verification. No specific stock claim."
+          ],
+          "vehicleClass": "passenger",
+          "modelAliases": [],
+          "sourceRecordIds": [
+            "mercedes-benz-evito-tourer"
+          ],
+          "sourceArtifacts": [
+            "commercial-ev-census.json"
+          ],
+          "rankingEligible": false,
+          "trimCoverage": "verified_named_configurations_incomplete_matrix",
+          "evidenceHistory": [
+            {
+              "sourceArtifact": "commercial-ev-census.json",
+              "sourceRecordId": "mercedes-benz-evito-tourer",
+              "orderStatus": "listed_unconfirmed",
+              "stockStatus": "unverified",
+              "trims": [
+                "129 MWB FWD"
+              ],
+              "evidenceNote": "Current Australian product page and linked MY2025 technical data identify eVito Tourer 129 MWB FWD.",
+              "limitations": [
+                "Australian marketing text is inconsistent about eight occupants versus eight passengers plus driver; seat count needs final local specification verification. No specific stock claim."
+              ],
+              "sourceUrls": [
+                "https://www.mercedes-benz.com.au/vans/models/evito/tourer/overview.html",
+                "https://www.mercedes-benz.com.au/content/dam/australia/vans/models/download-centre/Mercedes-Benz_Vans_Australia_VS20_Vito_Technical_Data_(JUL2025).pdf"
+              ]
+            }
+          ],
+          "modelYear": null,
+          "catalogueCoverage": "market_audit_only",
+          "availabilityCategory": "listing_only_order_stock_unconfirmed",
+          "completeVehicleCountEligible": null,
+          "recordScope": "model_or_named_configuration_family"
+        },
+        "previousRecordCanonicalSHA256": "59964ed765b699b8a164da9ee6ec01091fcaa0ddd8466d530296687f2d147ace",
+        "qualification": "Only this row evidence was rechecked. Formal current model year, ordering, new stock, selectable matrix and detailed/ranking admission remain unverified."
+      }
+    ],
+    "modelYear": null,
+    "catalogueCoverage": "market_audit_only",
+    "availabilityCategory": "listing_only_order_stock_unconfirmed",
+    "completeVehicleCountEligible": null,
+    "recordScope": "model_or_named_configuration_family"
+  },
+  "countEffect": {
+    "marketAuditRecords": 0,
+    "namedTrims": 0,
+    "detailedConfigurations": 0,
+    "detailedCanonicalFamilies": 0,
+    "detailedGenerations": 0,
+    "verifiedAvailableVehicles": 0,
+    "rankingAdmissions": 0
+  },
+  "holds": {
+    "modelYear": null,
+    "acceptedOrder": null,
+    "newStockUnit": null,
+    "vin": null,
+    "fullyClosedFactoryBuild": false,
+    "rankingEligible": false
+  },
+  "exactDetailedConfigurationProposalApproved": false
+}

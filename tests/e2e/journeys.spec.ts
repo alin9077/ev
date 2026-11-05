@@ -3,7 +3,7 @@ import AxeBuilder from "@axe-core/playwright";
 const baseline = "tesla_model_y__premium_long_range_awd__1",
   challenger = "byd_sealion_7__premium_rwd__1",
   third = "kia_ev3__air_2wd_standard_range__1";
-test("homepage offers an actionable comparison in the first phone viewport", async ({
+test("homepage preserves the original Model Y hero above mobile discovery", async ({
   page,
 }) => {
   await page.setViewportSize({ width: 390, height: 844 });
@@ -11,13 +11,18 @@ test("homepage offers an actionable comparison in the first phone viewport", asy
   page.on("pageerror", (e) => errors.push(e.message));
   await page.goto("/");
   await expect(page.getByRole("heading", { level: 1 })).toContainText(
-    "Tesla Model Y vs.",
+    "Tesla Model Y is the EV car of the year.",
   );
-  // On phones the home page is the one-to-one comparison: both names and the picker lead.
-  await expect(page.locator(".fleet-anchor-label")).toBeInViewport();
-  await expect(page.getByLabel("Jump to EV")).toBeInViewport();
-  await page.getByRole("button", { name: "Next EV", exact: true }).click();
-  await expect(page.locator(".fleet-position")).toHaveText("2 / 9");
+  await expect(page.locator(".verdict-reason")).toHaveCount(9);
+  await expect(page.getByRole("heading", { level: 1 })).toBeInViewport();
+  await page.locator("#discover").scrollIntoViewIfNeeded();
+  await expect(
+    page.getByRole("searchbox", { name: "Find a model or exact trim" }),
+  ).toBeVisible();
+  await page
+    .getByRole("searchbox", { name: "Find a model or exact trim" })
+    .fill("HiLux");
+  await expect(page.locator(".discovery-cards article")).toHaveCount(3);
   expect(errors).toEqual([]);
 });
 test("all four Model Ys update data, L scope stays separate, picker focus returns", async ({
@@ -29,9 +34,9 @@ test("all four Model Ys update data, L scope stays separate, picker focus return
     ["L Premium", "L Premium AWD (six-seat)", "6"],
     ["Performance", "Performance AWD", "5"],
   ]) {
-    const trigger = page.getByRole("button", { name: /Model Y baseline/ });
+    const trigger = page.getByRole("button", { name: /First vehicle/ });
     await trigger.click();
-    const dialog = page.getByRole("dialog", { name: "Model Y baseline" });
+    const dialog = page.getByRole("dialog", { name: "First vehicle" });
     await dialog.getByLabel("Search by model, trim or generation").fill(search);
     await dialog
       .getByRole("button")
@@ -42,10 +47,10 @@ test("all four Model Ys update data, L scope stays separate, picker focus return
       seat,
     );
   }
-  await page.getByRole("button", { name: /Model Y baseline/ }).click();
+  await page.getByRole("button", { name: /First vehicle/ }).click();
   await page.keyboard.press("Escape");
   await expect(
-    page.getByRole("button", { name: /Model Y baseline/ }),
+    page.getByRole("button", { name: /First vehicle/ }),
   ).toBeFocused();
 });
 test("desktop third vehicle persists on phone, refresh and history", async ({
@@ -145,7 +150,7 @@ test("URL handles duplicates, unknown IDs and dated shared context", async ({
   await expect(
     page
       .locator(".compare-selectors")
-      .getByRole("button", { name: /Model Y baseline/ }),
+      .getByRole("button", { name: /First vehicle/ }),
   ).toBeVisible();
   await expect(page.locator(".notice[role=status]")).toContainText(
     "2020-01-01",
@@ -228,10 +233,9 @@ test("discovery, detail and sources routes are usable", async ({ page }) => {
   await expect(page.getByRole("heading", { level: 1 })).toContainText(
     /ATTO 3/i,
   );
-  await page
-    .getByText("ANCAP applicability is unresolved", { exact: false })
-    .first()
-    .isVisible();
+  await expect(
+    page.getByText("ANCAP applicability is unresolved", { exact: false }).first(),
+  ).toBeVisible();
   await page.goto("/sources");
   await page.getByLabel("Search sources").fill("v2_tesla_y_l_ancap");
   await expect(page.locator(".source-registry details")).toHaveCount(2);
@@ -245,9 +249,9 @@ test("local shortlist never overrides a shared URL and copy has a fallback", asy
     .click();
   await expect(page.getByRole("status").last()).toContainText("Saved");
   await page.goto(`/compare?cars=${baseline},${challenger}`);
-  await expect(
-    page.getByRole("button", { name: /Challenger 1/ }),
-  ).toContainText("Sealion 7");
+  await expect(page.getByRole("button", { name: /Vehicle 2/ })).toContainText(
+    "Sealion 7",
+  );
   await page.getByRole("button", { name: "Copy comparison link" }).click();
   await expect(page.getByRole("status").first()).toContainText(
     /copied|Copy the link/,

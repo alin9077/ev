@@ -89,6 +89,30 @@ export function box(
   };
 }
 
+/**
+ * A box whose dimensions change with animation. Rebuild its exact softened
+ * geometry without retaining each size in the static cache. A stable,
+ * nonempty scene-specific slot reuses the renderer's uploaded buffers across frames.
+ */
+export function dynamicBox(
+  slot: string,
+  size: V3,
+  at: V3 | M4,
+  mat: Material = clay(),
+  soft = 0.03,
+  cast = true,
+): Item {
+  if (!slot) throw new Error("Dynamic geometry requires a nonempty slot");
+  const mesh = block(size[0], size[1], size[2], soft);
+  mesh.slot = slot;
+  return {
+    mesh,
+    at: at instanceof Float32Array ? at : translate(at[0], at[1], at[2]),
+    mat,
+    cast,
+  };
+}
+
 /** The floor: one sheet, far wider than any view, dimming gently outwards. */
 export function ground(
   focus: V3 = [0, 0, 0],

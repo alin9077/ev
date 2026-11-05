@@ -1,13 +1,22 @@
 "use client";
+import { issueReaderText } from "@/lib/issue-presentation";
+import { sourcePresentation } from "@/lib/source-presentation";
+import type { SoftwareTimelinePack } from "@/lib/detail-client-props";
+import { australianEvidenceDate } from "@/lib/evidence-date";
+
 import Link from "next/link";
 import Image from "next/image";
 import approvedManifest from "../../media/approved-assets.json";
 import { resolveAsset, type ApprovedAsset } from "@/lib/media";
 import { useEffect, useRef, useState } from "react";
 import type { Car, Fact, Feature, Issue, Pack, Source } from "@/lib/types";
-import { availabilityLabels, safeUrl, site, statusLabels } from "@/lib/config";
+import { safeUrl, site, statusLabels } from "@/lib/config";
 import { formatFact } from "@/lib/compare";
+import { buyerAvailabilityText } from "@/lib/buyer-availability";
+import { buyerGradeOf, gradeLabel } from "@/lib/evidence-grading";
+import type { BuyerGrade } from "@/lib/types";
 import { FootnoteRefs } from "./footnotes";
+import { FreshnessLabel } from "./freshness-label";
 import { featureCondition, factCondition } from "@/lib/fleet";
 
 export function Status({
@@ -43,25 +52,71 @@ function shortDate(iso: string) {
         timeZone: "UTC",
       });
 }
-export function FeatureValue({ feature: f }: { feature: Feature }) {
+/** Native details keeps each real condition keyboard- and touch-accessible. */
+function BuyerGradeMark({
+  grade,
+  condition,
+  sourceLabel,
+}: {
+  grade: BuyerGrade;
+  condition?: string;
+  sourceLabel?: string;
+}) {
+  if (grade === "confirmed" || grade === "not_published") return null;
+  if (grade === "check")
+    return (
+      <details className="conditional-context evidence-grade-check">
+        <summary>
+          <span aria-hidden="true">◇ </span>Check
+        </summary>
+        <p>
+          {condition ||
+            "Check the stated specification and source before signing."}
+        </p>
+      </details>
+    );
+  return (
+    <span className="small muted evidence-grade-reported">
+      {gradeLabel(grade)}
+      {sourceLabel ? ` · ${sourceLabel}` : " · see source"}
+    </span>
+  );
+}
+export function FeatureValue({ feature: f, asOf }: { feature: Feature; asOf?: string }) {
+  const grade = buyerGradeOf(f);
   return (
     <div className="feature-value">
-      <Status
-        status={f.status}
-        label={
-          f.status === "conditional" && f.condition_label
-            ? `Conditional · ${f.condition_label}`
-            : f.condition_label
-        }
-      />
-      <p className="feature-answer">{f.value}</p>
-      {f.status === "conditional" ? (
+      {!grade && (
+        <Status
+          status={f.gradeReviewStatus ? "not_verified" : f.status}
+          label={
+            f.gradeReviewStatus
+              ? "Needs review"
+              : f.status === "conditional" && f.condition_label
+                ? `Conditional · ${f.condition_label}`
+                : f.condition_label
+          }
+        />
+      )}
+      <p className={`feature-answer${grade === "reported" ? " muted" : ""}`}>
+        {grade === "not_published" ? "Not published" : f.value}
+      </p>
+      {grade ? (
+        <BuyerGradeMark
+          grade={grade}
+          condition={featureCondition(f)}
+          sourceLabel={f.gradeReview?.sourceLabel}
+        />
+      ) : f.status === "conditional" ? (
         <div className="conditional-context">
           <strong>Why conditional</strong>
           <p>{featureCondition(f)}</p>
         </div>
       ) : (
         f.conditions && <p className="qualification">{f.conditions}</p>
+      )}
+      {grade && grade !== "check" && f.conditions && (
+        <p className="qualification">{f.conditions}</p>
       )}
       {!!f.usability_notes?.length && (
         <ul className="usability-notes">
@@ -76,7 +131,12 @@ export function FeatureValue({ feature: f }: { feature: Feature }) {
         </p>
       )}
       <p className="feature-source small muted">
-        Checked {shortDate(f.last_evidence_date)}
+        <FreshnessLabel
+          checkedAt={f.last_evidence_date}
+          factKey={f.criterion}
+          validUntil={f.validUntil}
+          asOf={asOf}
+        />
         <FootnoteRefs ids={f.source_ids} />
       </p>
     </div>
@@ -87,8 +147,9 @@ export function Notice({ children }: { children?: React.ReactNode }) {
     <aside className="notice">
       {children || (
         <>
-          Dated Australian research · {site.dateLabel}. Manufacturer claims,
-          with conditions. Prices are not driveaway quotes.{" "}
+          Australian research. Check each claim’s date and conditions. List
+          prices exclude on-road costs; driveaway offers are labelled
+          separately.{" "}
           <Link href="/methodology">How to read this comparison</Link>
         </>
       )}
@@ -105,13 +166,14 @@ export function Issues({ issues }: { issues: Issue[] }) {
       {issues.map((i) => (
         <p key={i.issue_id}>
           <strong>{i.title}. </strong>
-          {i.publication_action}
+          {issueReaderText(i)}
         </p>
       ))}
     </details>
   );
 }
 export type Evidence = {
+  validUntil?: string;
   title: string;
   value: string;
   conditions: string;
@@ -120,17 +182,24 @@ export type Evidence = {
   sourceIds: string[];
   issues?: Issue[];
   status?: Feature["status"];
+  buyerGrade?: BuyerGrade;
+  gradeReviewStatus?: "review_required";
+  sourceLabel?: string;
 };
 export function factEvidence(f: Fact): Evidence {
   return {
     title: f.label,
-    value: formatFact(f),
+    value: f.buyerGrade === "not_published" ? "Not published" : formatFact(f),
     conditions: [f.basis, ...f.qualifications].join(" "),
     scope: `${f.market} · ${f.scope}. Source lineage is variant-level unless the source states a narrower scope.`,
     date: f.date,
+    ...(f.validUntil === undefined ? {} : { validUntil: f.validUntil }),
     sourceIds: f.sourceIds,
     issues: f.issues,
     status: f.status,
+    buyerGrade: buyerGradeOf(f),
+    gradeReviewStatus: f.gradeReviewStatus,
+    sourceLabel: f.gradeReview?.sourceLabel,
   };
 }
 export function featureEvidence(
@@ -140,23 +209,29 @@ export function featureEvidence(
 ): Evidence {
   return {
     title: label,
-    value: f.value,
+    value: f.buyerGrade === "not_published" ? "Not published" : f.value,
     conditions: f.conditions,
     scope: `AU · ${f.evidence_scope} · ${f.verification_state}`,
     date: f.last_evidence_date,
+    ...(f.validUntil === undefined ? {} : { validUntil: f.validUntil }),
     sourceIds: f.source_ids,
     issues,
     status: f.status,
+    buyerGrade: buyerGradeOf(f),
+    gradeReviewStatus: f.gradeReviewStatus,
+    sourceLabel: f.gradeReview?.sourceLabel,
   };
 }
 export function EvidenceDrawer({
   evidence,
   sources,
   onClose,
+  asOf,
 }: {
   evidence: Evidence | null;
   sources: Source[];
   onClose: () => void;
+  asOf?: string;
 }) {
   const ref = useRef<HTMLDialogElement>(null);
   const closeRef = useRef(onClose);
@@ -200,7 +275,25 @@ export function EvidenceDrawer({
         </div>
         <h2 id="evidence-title">{evidence.title}</h2>
         <p className="evidence-value">{evidence.value}</p>
-        {evidence.status && <Status status={evidence.status} />}
+        {evidence.validUntil !== undefined && (
+          <FreshnessLabel
+            checkedAt={evidence.date}
+            factKey="offer"
+            validUntil={evidence.validUntil}
+            asOf={asOf}
+          />
+        )}
+        {evidence.gradeReviewStatus ? (
+          <Status status="not_verified" label="Needs review" />
+        ) : evidence.buyerGrade ? (
+          <BuyerGradeMark
+            grade={evidence.buyerGrade}
+            condition={evidence.conditions}
+            sourceLabel={evidence.sourceLabel}
+          />
+        ) : (
+          evidence.status && <Status status={evidence.status} />
+        )}
         <h3>Conditions & measurement</h3>
         <p>{evidence.conditions || "No additional conditions recorded."}</p>
         <h3>Applicability</h3>
@@ -218,6 +311,7 @@ export function EvidenceDrawer({
         <ul className="source-list">
           {evidence.sourceIds.map((id) => {
             const s = sources.find((s) => s.id === id);
+            const presentation = s ? sourcePresentation(s) : undefined;
             return (
               <li key={id}>
                 {s ? (
@@ -227,9 +321,12 @@ export function EvidenceDrawer({
                       target="_blank"
                       rel="noreferrer"
                     >
-                      {s.title}
+                      {presentation?.title ?? s.title}
                       <span className="sr-only"> (opens in a new tab)</span>
                     </a>
+                    {presentation?.note && (
+                      <p className="small">{presentation.note}</p>
+                    )}
                     <p>
                       {s.publisher} · {s.source_type.replaceAll("_", " ")} ·{" "}
                       {s.market}
@@ -269,6 +366,16 @@ export function EvidenceDrawer({
     </dialog>
   );
 }
+function OfferAmount({ fact }: { fact: Fact }) {
+  const [asOf, setAsOf] = useState("");
+  useEffect(() => {
+    const update = () => setAsOf(australianEvidenceDate());
+    update();
+    const timer = setInterval(update, 60000);
+    return () => clearInterval(timer);
+  }, []);
+  return <>{asOf ? formatFact(fact, asOf) : "Checking offer validity…"}</>;
+}
 export function FactValue({
   fact,
   compact = false,
@@ -277,20 +384,61 @@ export function FactValue({
   onEvidence?: () => void;
   compact?: boolean;
 }) {
+  const grade = buyerGradeOf(fact);
   return (
     <div className="fact-value">
-      <strong>{formatFact(fact)}</strong>
-      {fact.status !== "standard" && <Status status={fact.status} />}
-      {fact.status === "conditional" && (
-        <div className="conditional-context">
-          <strong>Why conditional</strong>
-          <p>{factCondition(fact)}</p>
-        </div>
+      <strong className={grade === "reported" ? "muted" : undefined}>
+        {grade === "not_published" ? (
+          "Not published"
+        ) : fact.validUntil ? (
+          <OfferAmount fact={fact} />
+        ) : (
+          formatFact(fact)
+        )}
+      </strong>
+      {fact.validUntil && (
+        <span className="qualification">
+          Offer deadline: {shortDate(fact.validUntil)}. Eligibility and earlier
+          stock exhaustion may apply.
+        </span>
+      )}
+      {grade ? (
+        <BuyerGradeMark
+          grade={grade}
+          condition={[
+            ...new Set(
+              [factCondition(fact), ...fact.qualifications].filter(Boolean),
+            ),
+          ].join(" ")}
+          sourceLabel={
+            fact.gradeReview?.sourceLabel || fact.priceEvidence?.publisher
+          }
+        />
+      ) : (
+        <>
+          {fact.gradeReviewStatus ? (
+            <Status status="not_verified" label="Needs review" />
+          ) : (
+            fact.status !== "standard" && <Status status={fact.status} />
+          )}
+          {fact.status === "conditional" && (
+            <div className="conditional-context">
+              <strong>Why conditional</strong>
+              <p>{factCondition(fact)}</p>
+            </div>
+          )}
+        </>
       )}
       <span className="fact-basis">
-        {fact.basis} · {shortDate(fact.date)}
+        {fact.priceEvidence?.basisTag || fact.basis} ·{" "}
+        <FreshnessLabel
+          checkedAt={fact.date}
+          factKey={fact.key}
+          modelYearChangedAt={fact.modelYearChangedAt}
+        />
       </span>
       {!compact &&
+        grade !== "check" &&
         fact.qualifications.map((q) => (
           <span className="qualification" key={q}>
             {q}
@@ -301,6 +449,18 @@ export function FactValue({
   );
 }
 export function SeatingDiagram({ seats }: { seats: number }) {
+  if (!Number.isInteger(seats) || seats < 1) return null;
+  if (![5, 6].includes(seats))
+    return (
+      <div
+        className="seating"
+        role="img"
+        aria-label={`${seats} seating positions; layout not established`}
+      >
+        <strong>{seats}</strong>
+        <span> seating positions</span>
+      </div>
+    );
   const rows = seats === 6 ? [2, 2, 2] : [2, 3];
   return (
     <svg
@@ -381,14 +541,26 @@ export function VehicleCard({
     <article className="vehicle-card">
       <div className="card-top">
         <span className="eyebrow">{car.brand}</span>
-        <span className="small">{car.year}</span>
+        <span className="small">{car.year ?? "MY unverified"}</span>
       </div>
       <div className="vehicle-title">
         <h3>{car.model}</h3>
         <MediaRenderer car={car} />
       </div>
       <p className="trim">{car.trim}</p>
-      <p className="small muted">{availabilityLabels[car.availability]}</p>
+      <p className="small muted">
+        {buyerAvailabilityText(car)}
+        {car.availabilityEvidence && (
+          <>
+            {" "}
+            ·{" "}
+            <FreshnessLabel
+              checkedAt={car.availabilityEvidence.checkedAt}
+              factKey="availability"
+            />
+          </>
+        )}
+      </p>
       <div className="card-facts">
         <div>
           <span className="small">Dated listed price</span>
@@ -421,7 +593,7 @@ export function VehicleCard({
 export function SoftwareTimeline({
   pack,
 }: {
-  pack: Pack;
+  pack: SoftwareTimelinePack;
   onEvidence?: (e: Evidence) => void;
 }) {
   const [filter, setFilter] = useState("All events");

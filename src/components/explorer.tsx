@@ -1,9 +1,25 @@
 "use client";
-import { useEffect, useState } from "react";
+import {
+  matchesSearch,
+  catalogueFilterOptions,
+  driveFilterKey,
+} from "@/lib/search";
+import { useEffect, useRef, useState } from "react";
+import {
+  readExplorerFilters,
+  clearExplorerFilters,
+  explorerFilterUrl,
+  type ExplorerFilters,
+} from "@/lib/explorer-state";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import type { Car } from "@/lib/types";
-import { BASELINE, CHALLENGER, site, availabilityLabels } from "@/lib/config";
+import { BASELINE, CHALLENGER, site } from "@/lib/config";
+import {
+  buyerAvailabilityLabels,
+  matchesBuyerAvailability,
+} from "@/lib/buyer-availability";
+import { matchesVehicleScope, vehicleScopeOptions } from "@/lib/vehicle-scope";
 import { Notice, VehicleCard } from "./ui";
 export default function Explorer({
   cars,
@@ -15,25 +31,29 @@ export default function Explorer({
   equipment: Record<string, Record<string, boolean | null>>;
 }) {
   const router = useRouter();
-  const [filters, setFilters] = useState({
-    q: initial.q || "",
-    family: initial.family || "all",
-    availability: initial.availability || "current_or_order_listed",
-    budget: initial.budget || "",
-    range: initial.range || "",
-    drive: initial.drive || "all",
-    seats: initial.seats || "all",
-    equipment: initial.equipment || "all",
-  });
+  const filterOptions = catalogueFilterOptions(cars);
+  const [filters, setFilters] = useState(() => readExplorerFilters(initial));
+  const [limit, setLimit] = useState(12);
+  const grid = useRef<HTMLDivElement>(null);
+  const pendingFocus = useRef<number | null>(null);
+  useEffect(() => {
+    if (pendingFocus.current === null) return;
+    const heading =
+      grid.current?.children[pendingFocus.current]?.querySelector("h3");
+    pendingFocus.current = null;
+    if (heading instanceof HTMLElement) {
+      heading.tabIndex = -1;
+      heading.focus();
+    }
+  }, [limit]);
+  const familyCount = new Set(cars.map((car) => car.modelFamily || car.family))
+    .size;
   useEffect(() => {
     const restore = () => {
       const query = new URLSearchParams(location.search);
-      setFilters(
-        (f) =>
-          Object.fromEntries(
-            Object.entries(f).map(([k, v]) => [k, query.get(k) || v]),
-          ) as typeof f,
-      );
+      setFilters(readExplorerFilters(query));
+      setLimit(12);
+      pendingFocus.current = null;
     };
     queueMicrotask(restore);
     window.addEventListener("popstate", restore);
@@ -41,34 +61,35 @@ export default function Explorer({
   }, []);
   const [selected, setSelected] = useState<string[]>([BASELINE]),
     [message, setMessage] = useState("");
-  function change(k: string, v: string) {
-    const f = { ...filters, [k]: v };
-    setFilters(f);
-    const q = new URLSearchParams(f);
-    window.history.replaceState(
-      null,
+  function updateFilters(next: ExplorerFilters, push = false) {
+    setFilters(next);
+    setLimit(12);
+    pendingFocus.current = null;
+    window.history[push ? "pushState" : "replaceState"](
+      window.history.state,
       "",
-      window.location.pathname.endsWith("index.html") ||
-        window.location.protocol === "file:"
-        ? `${window.location.pathname}?${q}&page=/cars`
-        : `/cars?${q}`,
+      explorerFilterUrl(next, window.location),
+    );
+  }
+  function change(k: keyof ExplorerFilters, v: string) {
+    updateFilters(
+      { ...filters, [k]: v },
+      !["q", "budget", "range"].includes(k),
     );
   }
   const filtered = cars.filter(
     (c) =>
+      matchesVehicleScope(c, filters.class) &&
       (filters.family === "all" || c.family === filters.family) &&
-      `${c.brand} ${c.model} ${c.trim}`
-        .toLowerCase()
-        .includes(filters.q.toLowerCase()) &&
-      (filters.availability === "all" ||
-        c.availability === filters.availability) &&
+      matchesSearch(`${c.brand} ${c.model} ${c.trim}`, filters.q) &&
+      matchesBuyerAvailability(c, filters.availability) &&
       (!filters.budget ||
         c.facts.price_aud.value === null ||
         Number(c.facts.price_aud.value) <= Number(filters.budget)) &&
       (!filters.range ||
         c.facts.range_km.value === null ||
         Number(c.facts.range_km.value) >= Number(filters.range)) &&
-      (filters.drive === "all" || c.drive === filters.drive) &&
+      (filters.drive === "all" || driveFilterKey(c.drive) === filters.drive) &&
       (filters.seats === "all" ||
         Number(c.facts.seats.value) === Number(filters.seats)) &&
       (filters.equipment === "all" ||
@@ -93,8 +114,8 @@ export default function Explorer({
       <p className="eyebrow">Our researched shortlist</p>
       <h1>Explore cars</h1>
       <p className="lede">
-        Ten model families, including Model Y. Explore current records, outgoing
-        generations and announced variants.
+        Explore current records, outgoing generations and announced variants
+        across {familyCount} model {familyCount === 1 ? "family" : "families"}.
       </p>
       <Notice />
       <div className="explorer-filters">
@@ -106,6 +127,19 @@ export default function Explorer({
             onChange={(e) => change("q", e.target.value)}
             placeholder="Model or trim"
           />
+        </label>
+        <label>
+          Vehicle type
+          <select
+            value={filters.class}
+            onChange={(e) => change("class", e.target.value)}
+          >
+            {vehicleScopeOptions(cars).map(({ value, label }) => (
+              <option key={value} value={value}>
+                {label}
+              </option>
+            ))}
+          </select>
         </label>
         <label>
           Model family
@@ -130,7 +164,13 @@ export default function Explorer({
             onChange={(e) => change("availability", e.target.value)}
           >
             <option value="all">All records</option>
-            {Object.entries(availabilityLabels).map(([key, val]) => (
+            {!Object.hasOwn(buyerAvailabilityLabels, filters.availability) &&
+              filters.availability !== "all" && (
+                <option value={filters.availability}>
+                  Saved availability filter
+                </option>
+              )}
+            {Object.entries(buyerAvailabilityLabels).map(([key, val]) => (
               <option key={key} value={key}>
                 {val}
               </option>
@@ -138,7 +178,7 @@ export default function Explorer({
           </select>
         </label>
         <label>
-          Maximum listed AUD
+          Maximum published AUD
           <input
             type="number"
             min="0"
@@ -163,9 +203,13 @@ export default function Explorer({
             value={filters.drive}
             onChange={(e) => change("drive", e.target.value)}
           >
-            {["all", "AWD", "RWD", "FWD", "2WD"].map((v) => (
+            {["all", ...filterOptions.drive].map((v) => (
               <option key={v} value={v}>
-                {v === "all" ? "Any drive" : v}
+                {v === "all"
+                  ? "Any drive"
+                  : v === "unknown"
+                    ? "Drive unverified"
+                    : v}
               </option>
             ))}
           </select>
@@ -177,8 +221,11 @@ export default function Explorer({
             onChange={(e) => change("seats", e.target.value)}
           >
             <option value="all">Any seats</option>
-            <option value="5">5 seats</option>
-            <option value="6">6 seats</option>
+            {filterOptions.seats.map((count) => (
+              <option key={count} value={count}>
+                {count} {count === 1 ? "seat" : "seats"}
+              </option>
+            ))}
           </select>
         </label>
         <label>
@@ -196,27 +243,19 @@ export default function Explorer({
         </label>
       </div>
       <p className="small muted">
-        Budget filters use dated list/base prices. Unknown numeric and equipment
-        records stay visible for review. A selectable listing is not a stock
-        guarantee.
+        Budget filters use published amounts with their stated basis.
+        Before-on-road and driveaway prices are not like-for-like, and a listed
+        amount is not a final quote. Unknown numeric and equipment records stay
+        visible for review. A selectable listing is not a stock guarantee.
       </p>
       <div className="section-heading">
-        <p role="status">{filtered.length} matching variants</p>
+        <p role="status">
+          Showing {Math.min(limit, filtered.length)} of {filtered.length}{" "}
+          matching variants. Search checks the whole catalogue.
+        </p>
         <button
           className="text-button"
-          onClick={() => {
-            setFilters({
-              q: "",
-              family: "all",
-              availability: "all",
-              budget: "",
-              range: "",
-              drive: "all",
-              seats: "all",
-              equipment: "all",
-            });
-            window.history.replaceState(null, "", "/cars");
-          }}
+          onClick={() => updateFilters(clearExplorerFilters(), true)}
         >
           Clear all filters
         </button>
@@ -245,8 +284,8 @@ export default function Explorer({
       <p role="status" className="small">
         {message}
       </p>
-      <div className="vehicle-grid three">
-        {filtered.map((c) => (
+      <div className="vehicle-grid three" ref={grid}>
+        {filtered.slice(0, limit).map((c) => (
           <VehicleCard
             key={c.id}
             car={c}
@@ -276,6 +315,17 @@ export default function Explorer({
           />
         ))}
       </div>
+      {limit < filtered.length && (
+        <button
+          className="button secondary"
+          onClick={() => {
+            pendingFocus.current = limit;
+            setLimit((current) => Math.min(current + 12, filtered.length));
+          }}
+        >
+          Show {Math.min(12, filtered.length - limit)} more variants
+        </button>
+      )}
       {!filtered.length && (
         <Notice>No matching records. Broaden your filters to continue.</Notice>
       )}

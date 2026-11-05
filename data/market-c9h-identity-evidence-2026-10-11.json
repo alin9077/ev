@@ -1,0 +1,335 @@
+{
+  "schema": "roadmark-c9h-evidence-amendment-v1",
+  "scope": "Existing family source-only evidence, no configuration or availability admission",
+  "researchPacket": "c9h-ev-identity-bridge",
+  "proposalSHA256": "b1b9c19479d41ba5e8dc3923c4d6c6abcd047ff97334aed11cc2433628103a7c",
+  "proposalSealSHA256": "c44be2b643c046d565cc6b4c99bb1b9156e096f0df1ebdd877455ccc3df8c732",
+  "independentReviewSHA256": "16c6b23d01384daa077d82a5fcd29078e2a1008513f1081a38e4642b54229c33",
+  "previousRecord": {
+    "familyId": "sitrak-c9h-ev",
+    "brand": "Sitrak",
+    "model": "C9H EV Electric Prime Mover",
+    "vehicleType": "heavy_prime_mover",
+    "class": "heavy_prime_mover",
+    "trims": [],
+    "sourceUrls": [
+      "https://sitrak.com.au/trucks/c9h-ev-electric-prime-mover/"
+    ],
+    "checkedAt": "2026-10-10",
+    "orderStatus": "listed_unconfirmed",
+    "stockStatus": "unverified",
+    "evidenceNote": "Current Australian importer model page names the truck and its traction battery.",
+    "limitations": [
+      "Listed under the importer's wider Sinotruk products; badge/manufacturer normalization and current order lead time should be checked."
+    ],
+    "recordScope": "factory_new",
+    "vehicleClass": "truck",
+    "aliases": [],
+    "roadRegistrationScope": "road_vehicle_offering_registration_not_independently_verified",
+    "canonicalBrand": "Sitrak",
+    "canonicalModel": "C9H EV Electric Prime Mover",
+    "exactConfigurationStatus": "partial_or_unverified",
+    "id": "sitrak-c9h-ev",
+    "modelAliases": [],
+    "sourceRecordIds": [
+      "sitrak-c9h-ev"
+    ],
+    "sourceArtifacts": [
+      "heavy-ev-census.json"
+    ],
+    "rankingEligible": false,
+    "trimCoverage": "exact_trims_unverified",
+    "evidenceHistory": [
+      {
+        "sourceArtifact": "heavy-ev-census.json",
+        "sourceRecordId": "sitrak-c9h-ev",
+        "orderStatus": "listed_unconfirmed",
+        "stockStatus": "unverified",
+        "trims": [],
+        "evidenceNote": "Current Australian importer model page names the truck and its traction battery.",
+        "limitations": [
+          "Listed under the importer's wider Sinotruk products; badge/manufacturer normalization and current order lead time should be checked."
+        ],
+        "sourceUrls": [
+          "https://sitrak.com.au/trucks/c9h-ev-electric-prime-mover/"
+        ]
+      }
+    ],
+    "modelYear": null,
+    "catalogueCoverage": "market_audit_only",
+    "availabilityCategory": "listing_only_order_stock_unconfirmed",
+    "completeVehicleCountEligible": null
+  },
+  "previousRecordCanonicalSHA256": "c7cee3c1541804f8e7dae30b286510aeb87c1ac294657c14eff7b20a99a88ba8",
+  "sourceLedger": {
+    "recordId": "sitrak-c9h-ev",
+    "researchDate": "2026-10-11",
+    "boundedOutcome": "No explicit Australian EV chassis/build code or issued exact-configuration sheet found in the reviewed source set. This is a bounded negative finding, not proof no such evidence exists elsewhere.",
+    "urls": {
+      "lkauto_exact": "https://lkauto.com.au/c9h-6x4-electric-prime-mover-2/",
+      "lkauto_sibling": "https://lkauto.com.au/c9h-6x4-electric-prime-mover/",
+      "importer": "https://sitrak.com.au/trucks/c9h-ev-electric-prime-mover/",
+      "cityfleet_timing": "https://cityfleetsitrak.com.au/ready-to-work/prime-mover-trucks/",
+      "wrong_diesel_brochure": "https://cityfleetsitrak.com.au/wp-content/uploads/2026/04/SITRAK-C9H-6x4-Prime-Mover-660HP-1.pdf"
+    },
+    "retainedOriginals": [
+      {
+        "id": "c9h-lkauto",
+        "url": "https://lkauto.com.au/c9h-6x4-electric-prime-mover-2/",
+        "originalCaptureUtc": "2026-10-11T12:41:49.191604+00:00",
+        "originalPath": "roadmark-research/next-market-gap-priorities-79/raw/c9h-lkauto.html",
+        "localCopy": "roadmark-research/c9h-ev-identity-bridge/retained/raw/c9h-lkauto.html",
+        "originalBytesSha256": "75b09f9296d587243f323d3130deed2c8d3ceaec12f44d774b5cc07ac05aa90c",
+        "originalBytesVerified": true,
+        "refreshedThisPass": "Web-tool rendered content only; retained original HTML not refreshed"
+      },
+      {
+        "id": "c9h-sitrak",
+        "url": "https://sitrak.com.au/trucks/c9h-ev-electric-prime-mover/",
+        "originalCaptureUtc": "2026-10-11T12:41:49.192552+00:00",
+        "originalPath": "roadmark-research/next-market-gap-priorities-79/raw/c9h-sitrak.html",
+        "localCopy": "roadmark-research/c9h-ev-identity-bridge/retained/raw/c9h-sitrak.html",
+        "originalBytesSha256": "22a1d683255db253dde4a4710b4f16ac1838987384935386bca0c4098e1949ca",
+        "originalBytesVerified": true,
+        "refreshedThisPass": "Web-tool rendered content only; retained original HTML not refreshed"
+      },
+      {
+        "id": "cityfleet-prime-movers",
+        "url": "https://cityfleetsitrak.com.au/ready-to-work/prime-mover-trucks/",
+        "originalCaptureUtc": "2026-10-11T12:41:49.193719+00:00",
+        "originalPath": "roadmark-research/next-market-gap-priorities-79/raw/cityfleet-prime-movers.html",
+        "localCopy": "roadmark-research/c9h-ev-identity-bridge/retained/raw/cityfleet-prime-movers.html",
+        "originalBytesSha256": "f899c387df08c3735b8807e5904636b5002168637b0454e0222b29064824d938",
+        "originalBytesVerified": true,
+        "refreshedThisPass": false
+      }
+    ],
+    "freshToolPasses": [
+      {
+        "artifact": "web/fresh-opens.web.json",
+        "calledBetweenUtc": [
+          "2026-10-11T15:11:30Z",
+          "2026-10-11T15:11:50Z"
+        ],
+        "scope": "Three exact authorized pages",
+        "sourceFormat": "web_tool_rendered_text",
+        "originalSourceBytesAvailable": false
+      },
+      {
+        "artifact": "web/detail-opens.web.json",
+        "calledBetweenUtc": [
+          "2026-10-11T15:11:50Z",
+          "2026-10-11T15:12:14Z"
+        ],
+        "scope": "Continuation of same sibling/importer content",
+        "sourceFormat": "web_tool_rendered_text",
+        "originalSourceBytesAvailable": false
+      },
+      {
+        "artifact": "web/linked-images.web.json",
+        "calledBetweenUtc": [
+          "2026-10-11T15:12:14Z",
+          "2026-10-11T15:12:29Z"
+        ],
+        "scope": "Only images actually linked by the authorized pages",
+        "sourceFormat": "web_tool_link_results_only",
+        "originalSourceBytesAvailable": false,
+        "visualVerification": false
+      }
+    ],
+    "claims": [
+      {
+        "id": "supplier-family",
+        "claim": "Australian supplier-listed 6×4 battery-electric C9H family",
+        "sources": [
+          "lkauto_exact",
+          "lkauto_sibling"
+        ],
+        "locators": [
+          "fresh-opens.web.txt: turn1989view0 L157–165",
+          "detail-opens.web.txt: turn1990view0 L157–165"
+        ],
+        "use": "Existing-family source support only; the sibling is the same supplier, not another trim or independent mass-rating source."
+      },
+      {
+        "id": "battery-peak",
+        "claim": "600 kWh LFP and 825 kW peak power",
+        "sources": [
+          "lkauto_exact",
+          "lkauto_sibling",
+          "importer"
+        ],
+        "locators": [
+          "turn1989view0 L209–218",
+          "turn1990view0 L205–215",
+          "turn1990view1 L39–45"
+        ],
+        "use": "Attributed technical headlines only; gross/usable basis and exact EV build unbound."
+      },
+      {
+        "id": "range",
+        "claim": "LK Auto: up to 380 km; importer: 380 km",
+        "sources": [
+          "lkauto_exact",
+          "lkauto_sibling",
+          "importer"
+        ],
+        "locators": [
+          "turn1989view0 L211, L249",
+          "turn1990view0 L207",
+          "turn1990view1 L43"
+        ],
+        "use": "Not comparative range; cycle/load unknown. The -2 page says operation/configuration affect results."
+      },
+      {
+        "id": "mass",
+        "claim": "49,000 kg GCM appears on both LK Auto pages; 25,000 kg GVM appears only on -2",
+        "sources": [
+          "lkauto_exact",
+          "lkauto_sibling"
+        ],
+        "locators": [
+          "turn1989view0 L204–205",
+          "turn1990view0 L210"
+        ],
+        "use": "Supplier attribution retained; importer has no mass entry and no exact build/approval bound."
+      },
+      {
+        "id": "dimensions",
+        "claim": "Page dimensions: length 7,980 mm, width 2,550 mm, height 3,980 mm, clearance 350 mm, approach 19°, departure 32°",
+        "sources": [
+          "lkauto_exact",
+          "lkauto_sibling",
+          "importer"
+        ],
+        "locators": [
+          "turn1989view0 L195–200",
+          "turn1990view0 L196–201",
+          "turn1990view1 L24–34"
+        ],
+        "use": "Family-level research only, no detail import or diesel correction."
+      },
+      {
+        "id": "track-label",
+        "claim": "Importer labels front 1,492 mm/rear 855 mm under Track",
+        "sources": [
+          "importer"
+        ],
+        "locators": [
+          "turn1990view1 L28–30"
+        ],
+        "use": "Keep label as printed; not verified as overhangs."
+      },
+      {
+        "id": "efficiency-safety",
+        "claim": "Efficiency >94.5%; generic active/passive-safety and driver-environment descriptions",
+        "sources": [
+          "lkauto_exact",
+          "lkauto_sibling",
+          "importer"
+        ],
+        "locators": [
+          "turn1989view0 L213, L236–241",
+          "turn1990view0 L209, L227–232",
+          "turn1990view1 L49–55"
+        ],
+        "use": "No test basis or named complete equipment schedule; no comparison or equipment inference."
+      },
+      {
+        "id": "supplier-timing",
+        "claim": "City Fleet retained page forecasts C9H EV availability through that supplier",
+        "sources": [
+          "cityfleet_timing"
+        ],
+        "locators": [
+          "retained/extracts/cityfleet-prime-movers.txt L290–294"
+        ],
+        "use": "Preserve available-soon qualification. Not refreshed in this pass; no nationwide inference."
+      },
+      {
+        "id": "cityfleet-unit-error",
+        "claim": "Retained City Fleet EV card uses a 600 kW headline",
+        "sources": [
+          "cityfleet_timing"
+        ],
+        "locators": [
+          "retained/extracts/cityfleet-prime-movers.txt L182–188"
+        ],
+        "use": "Do not silently treat kW as kWh; battery energy supported separately by importer/LK Auto."
+      },
+      {
+        "id": "wrong-brochure",
+        "claim": "Prior City Fleet EV-linked file is diesel 660 HP/Euro 6/130 t material",
+        "sources": [
+          "wrong_diesel_brochure"
+        ],
+        "locators": [
+          "roadmark-research/next-completeness-priorities-v71/README.md, Exclusions",
+          "roadmark-research/next-completeness-priorities-v71/raw/sitrak-c9h-dealer-linked-sheet.metadata.json"
+        ],
+        "use": "Excluded; not revisited, redownloaded or retranscribed."
+      }
+    ],
+    "temporalSeparation": {
+      "auditDate": "2026-10-11",
+      "formalModelYear": null,
+      "evTechnicalIssueDate": null,
+      "buildDate": null,
+      "stockUpdateDate": null,
+      "importerFooterClaim": "Last updated Jun 2026",
+      "footerIsTechnicalIssueDate": false,
+      "imageUploadPathsAreTechnicalIssueDates": false
+    },
+    "technicalMaterialScope": {
+      "issuedEvSheetDiscovered": false,
+      "linkedEvTechnicalPdfDiscovered": false,
+      "note": "No EV brochure/specification-sheet link appears in the fresh rendered source set. Prior full importer/LK Auto HTML anchors likewise did not expose one. Fresh HTML/DOM bytes and dynamic hidden links were not independently inspected.",
+      "excludedBrochureUrl": "https://cityfleetsitrak.com.au/wp-content/uploads/2026/04/SITRAK-C9H-6x4-Prime-Mover-660HP-1.pdf",
+      "excludedBrochureRetainedSha256": "7c45f782166bdb9fb1e1bb159e677ae95888ccce6657c00e7be24a42e4fb1f32",
+      "excludedBrochureRecrawled": false,
+      "imageLinkResults": [
+        {
+          "url": "https://lkauto.com.au/wp-content/uploads/2026/08/sitrak-hd-ev-c9h.jpg",
+          "linkedFrom": [
+            "lkauto_exact",
+            "lkauto_sibling"
+          ],
+          "result": "Web tool cache miss for both links; no pixels or original bytes retained"
+        },
+        {
+          "url": "https://sitrak.com.au/wp-content/uploads/2025/05/sitrak-hd-ev-c9h.jpg",
+          "linkedFrom": [
+            "importer"
+          ],
+          "result": "Web tool returned reference only; no image pixels or original bytes exposed in this tool result"
+        }
+      ]
+    },
+    "stopCondition": "Authorized exact/link source set exhausted; no broad search, catalogue discovery crawl, fresh City Fleet crawl or further seller enquiry.",
+    "unresolvedGates": [
+      "exact Australian EV chassis/build code",
+      "issued EV technical-sheet applicability",
+      "formal MY/technical/build epoch",
+      "VIN or unit identity",
+      "unit-specific New/unused condition",
+      "accepted order/allocation/current stock",
+      "delivery commitment",
+      "complete finished build",
+      "charging limits/connector",
+      "warranty applicability",
+      "independent road approval",
+      "battery capacity basis",
+      "range cycle/load",
+      "efficiency measurement basis",
+      "exact installed safety equipment"
+    ]
+  },
+  "exactDetailedConfigurationProposalApproved": false,
+  "requestedAdmissionDeltas": {
+    "families": 0,
+    "namedTrims": 0,
+    "detailedConfigurations": 0,
+    "completeVehicles": 0,
+    "rankingAdmissions": 0
+  }
+}

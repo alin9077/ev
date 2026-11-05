@@ -1,0 +1,3536 @@
+{
+  "schemaVersion": 1,
+  "root": "roadmark",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 242,
+      "sha256": "d18fbe2be52b04932159c4762bf903033a38c2674c885ea5942e9aea51cc48bc"
+    },
+    {
+      "path": ".prettierignore",
+      "bytes": 94,
+      "sha256": "04115754134e67ac50d6c39608e3cf68aaa4fd465c34fc1ed926103a1ef1ab26"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 678,
+      "sha256": "63f2c50380ed6303237cce215ce27af1d620d094c215e28d1b1538a3c070e3bb"
+    },
+    {
+      "path": "Australian_EV_All_Variants_2026-10-06.xlsx",
+      "bytes": 364612,
+      "sha256": "86b39968aa03da252f64ba1845591952ec01939e05a1a64d9621e2d4f8f78a69"
+    },
+    {
+      "path": "Australian_EV_All_Variants_Report_2026-10-06.pdf",
+      "bytes": 114713,
+      "sha256": "9741c68a7023786358b20773ae6f0b868b55ad9f2e371f2930cf7f7a8369c3a8"
+    },
+    {
+      "path": "CLAUDE.md",
+      "bytes": 11,
+      "sha256": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49"
+    },
+    {
+      "path": "README.md",
+      "bytes": 7058,
+      "sha256": "93ea416eda41337495a99a07f60bab6522835e87ab4026082d044b25a66d8934"
+    },
+    {
+      "path": "TESLA_MEDIA_AUDIT.md",
+      "bytes": 8129,
+      "sha256": "be638f8f1103c7dacf507ce86ae9e308138777a1affc1486e2262619e2c94fc4"
+    },
+    {
+      "path": "au_ev_all_variants_2026-10-06.json",
+      "bytes": 2038348,
+      "sha256": "010ded194b4d61cd7be606ce0cc332fa7e32906bba70abff2b5c38541e634657"
+    },
+    {
+      "path": "data/RESEARCH_DATA_DICTIONARY.md",
+      "bytes": 2800,
+      "sha256": "2cd4f25d68f03fd8fd06aaeb88ec50457ae7842e92139a911a6bb9024509af9c"
+    },
+    {
+      "path": "data/approved-availability-corrections.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "data/approved-corrections.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "data/approved-feature-corrections.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "data/atto1-evidence-2026-10-10.json",
+      "bytes": 52878,
+      "sha256": "8e49a81e79f609d3a8a3be4bdde44943b3d0afa7105ffcd161cc4a81e0812441"
+    },
+    {
+      "path": "data/au_ev_all_variants_2026-10-06.json",
+      "bytes": 2038348,
+      "sha256": "010ded194b4d61cd7be606ce0cc332fa7e32906bba70abff2b5c38541e634657"
+    },
+    {
+      "path": "data/audi-porsche-evidence-2026-10-10.json",
+      "bytes": 5806562,
+      "sha256": "d7b6f96f4798531a816f1abe28291540273ef3cba1c61521f469c9e4ee3010c2"
+    },
+    {
+      "path": "data/bmw-mini-evidence-2026-10-10.json",
+      "bytes": 1610367,
+      "sha256": "625616e6b0472d6a53a45821275a05c9f4c5bcaedd2b990ae90a7fd721e5b2c5"
+    },
+    {
+      "path": "data/buyer-identity-snapshots-2026-10-10.json",
+      "bytes": 54962382,
+      "sha256": "053d096af4e282e76474164be49aca3a78afa26112441b1201ce1e752374f5b8"
+    },
+    {
+      "path": "data/buyer-selling-points-2026-10-10.json",
+      "bytes": 24074749,
+      "sha256": "f6204684f66a23150ee44619e301feb14dc8cb8514f49544efa1b145d66fb90b"
+    },
+    {
+      "path": "data/byd-seal-dolphin-evidence-2026-10-10.json",
+      "bytes": 29263,
+      "sha256": "cd04012e5a5e3485ec5e62c2de50064eacfeeb9ffa3833af54455c3c8e571653"
+    },
+    {
+      "path": "data/catalogue-additions-2026-10-10.json",
+      "bytes": 74934307,
+      "sha256": "de469dc3ee5ce872f2a22b6528fd01cb1d3dc59f76594cb2298e7c2af16988e9"
+    },
+    {
+      "path": "data/catalogue-scope-label-audit.json",
+      "bytes": 14212,
+      "sha256": "674139a6fc5973661c54b1353a498ea034f0eb639cf54384ca9d8a1266951c5f"
+    },
+    {
+      "path": "data/deepal-evidence.json",
+      "bytes": 162006,
+      "sha256": "aa59e9b63de72ce04b17455313339b4ff431768b7dce981bbcc998bb9b153253"
+    },
+    {
+      "path": "data/electric-vans-evidence-2026-10-10.json",
+      "bytes": 317540,
+      "sha256": "81802013a61175c5478323239c1a388a614fb648f3d3d6b700b703ae58166f42"
+    },
+    {
+      "path": "data/existing-trim-refresh-integration-subset.json",
+      "bytes": 309855,
+      "sha256": "43dc2d9644e2b85d361d5a1026ffecd82ecd061a324c3a01679bfc5f1020b533"
+    },
+    {
+      "path": "data/farizon-foton-jac-trucks-evidence.json",
+      "bytes": 732552,
+      "sha256": "fb34e31bc3bdf5a1a2e1673d33ba9ab1ba6a8c0a3c2d3fb49e7e4267789b422d"
+    },
+    {
+      "path": "data/fuso-hyundai-trucks-evidence.json",
+      "bytes": 1199165,
+      "sha256": "f72ef6a37581a4c43ed5bdfd3e745d9cabac0c48d05cf81a19f37729c1e071db"
+    },
+    {
+      "path": "data/geely-zeekr-xpeng-evidence.json",
+      "bytes": 455611,
+      "sha256": "60bd246dfaa6a8b359610df7c6f9016eabaf4046e9eaa87e63352054dfcd70b7"
+    },
+    {
+      "path": "data/hyundai-evidence-2026-10-10.json",
+      "bytes": 89169,
+      "sha256": "206b72c9491fefaf36e9b6d7a8f3452a30426936c8773ff5b0dc26ec38ba2391"
+    },
+    {
+      "path": "data/kia-ev6-ev9-evidence-2026-10-10.json",
+      "bytes": 307178,
+      "sha256": "1f5a898c08dd16a904e9330c1c3ae658c0bef1313ec1ecbe40311278ab9f6371"
+    },
+    {
+      "path": "data/leapmotor-evidence.json",
+      "bytes": 243480,
+      "sha256": "0bc0cfc07318b6e31318474a0fe511967520e977b54ec08fbdfde3fce4cfb765"
+    },
+    {
+      "path": "data/lexus-nissan-genesis-evidence-2026-10-10.json",
+      "bytes": 806238,
+      "sha256": "8ed580851b782813c5600e34725e8de8a20fa6606a5622e00564d45e5282d9df"
+    },
+    {
+      "path": "data/m1-audi-market-reconciliation-2026-10-15.json",
+      "bytes": 24477,
+      "sha256": "faaea450f6196ccd52bea9ddcd1e2e37012f92ee20e85ccb9cacc87e619912bf"
+    },
+    {
+      "path": "data/m1-bmw-market-reconciliation-2026-10-14.json",
+      "bytes": 18431,
+      "sha256": "b43b2609765490cf5117e1c0eeb28224424a1ec98d9a21c408fa6673378104d5"
+    },
+    {
+      "path": "data/m1-brand-updates/audi-2026-10-15.json",
+      "bytes": 859348,
+      "sha256": "4a85ee0d92c7a49e3e2265791516658699dfe2320d3e52e2ce39b58b2f6d172e"
+    },
+    {
+      "path": "data/m1-brand-updates/bmw-2026-10-14.json",
+      "bytes": 2222249,
+      "sha256": "aae1fdc66eebec438c9281809df8e2c436799693e94955e3b08882f1fdefa749"
+    },
+    {
+      "path": "data/m1-brand-updates/byd-2026-10-14.json",
+      "bytes": 656326,
+      "sha256": "f3783a1980cdc49ef1f4e49c227311b45fe8d90d030edcf05854a0c0bd26ab07"
+    },
+    {
+      "path": "data/m1-brand-updates/chery-2026-10-14.json",
+      "bytes": 889971,
+      "sha256": "7cf2c720143d68e868cb407322b295593db70d53be8bbc61dafe01d7896ef91c"
+    },
+    {
+      "path": "data/m1-brand-updates/cupra-2026-10-15.json",
+      "bytes": 116842,
+      "sha256": "24092e919c384e1bf3a8e85eeed360de39405d7ea58b46b2c79bca4d2f2e794a"
+    },
+    {
+      "path": "data/m1-brand-updates/deepal-2026-10-15.json",
+      "bytes": 260968,
+      "sha256": "cef6b8712653ad1d504c65945d0790ec631f6748474e71ab6cada9ee859e4848"
+    },
+    {
+      "path": "data/m1-brand-updates/ford-2026-10-15.json",
+      "bytes": 1696487,
+      "sha256": "8d728412f21a36aac152357d04793fd38b5efc47438e5210af610f72e868ce00"
+    },
+    {
+      "path": "data/m1-brand-updates/gac-2026-10-14.json",
+      "bytes": 2128470,
+      "sha256": "911c2bda506e72f0b6623eea86be4485634da1eaf96830105919e8f833eb6516"
+    },
+    {
+      "path": "data/m1-brand-updates/geely-2026-10-14.json",
+      "bytes": 493382,
+      "sha256": "f1a7332edda3fd9cdbb5d60f6b97636a20f5b14e623158f9c3705963f34ff882"
+    },
+    {
+      "path": "data/m1-brand-updates/gwm-2026-10-14.json",
+      "bytes": 1344097,
+      "sha256": "76212ed44d9c299a8d646e647bc26ab6026ddcae5de1d5e23fe653d233f79b75"
+    },
+    {
+      "path": "data/m1-brand-updates/hyundai-2026-10-14.json",
+      "bytes": 18134105,
+      "sha256": "99d93286d74881a571bd7b544c242bacd486c8800f5c19c8e747bf117f7a0d28"
+    },
+    {
+      "path": "data/m1-brand-updates/im-2026-10-14.json",
+      "bytes": 1378416,
+      "sha256": "14e224bbd15a219d6a530bd0218e0183ceaa454f120ab990cf45762edd4ef801"
+    },
+    {
+      "path": "data/m1-brand-updates/jaecoo-2026-10-14.json",
+      "bytes": 113514,
+      "sha256": "21770f6bfc731711fdfdb81e54c8a1276a452d2b338294f874d36b67c82333ca"
+    },
+    {
+      "path": "data/m1-brand-updates/kgm-2026-10-15.json",
+      "bytes": 212461,
+      "sha256": "be94b8a597b4bd60579985fddbabc45f03d9fa4862a0fa92ebad42d3dbba873f"
+    },
+    {
+      "path": "data/m1-brand-updates/kia-2026-10-14.json",
+      "bytes": 4718533,
+      "sha256": "7fa42384d26808dda94732b51fbdb8f6e1c666c6ab50ceff3129a8cedf23797e"
+    },
+    {
+      "path": "data/m1-brand-updates/leapmotor-2026-10-15.json",
+      "bytes": 474954,
+      "sha256": "ba6a8e7e89ea598e2cff75075e5893b1885974aa8a2ddde9acd946c9b459990c"
+    },
+    {
+      "path": "data/m1-brand-updates/mazda-2026-10-15.json",
+      "bytes": 628212,
+      "sha256": "8af4d56bba3d3ad523df3ed42f0d6f72cb0372f82b0bf19669d73345c24ee62c"
+    },
+    {
+      "path": "data/m1-brand-updates/mercedes-benz-2026-10-15.json",
+      "bytes": 726677,
+      "sha256": "a2b0859623539166e51fd1808e7cd4fbeb7314ae7dd91a11334cf66e057265f4"
+    },
+    {
+      "path": "data/m1-brand-updates/mercedes-benz-towing-basis-2026-10-15.json",
+      "bytes": 5866,
+      "sha256": "ab5a9cc13a8a2fffdbb8f302f571821aa94431a643ed78376baaf714dd2be9d1"
+    },
+    {
+      "path": "data/m1-brand-updates/mg-2026-10-14.json",
+      "bytes": 3257769,
+      "sha256": "b13872c4ffa2ae506e6a8e8c4daeac59db4fe6d6b267d5b6107797fb7c536e06"
+    },
+    {
+      "path": "data/m1-brand-updates/mini-2026-10-15.json",
+      "bytes": 596845,
+      "sha256": "14c9007e7708d70de30e0aabd4f5ab3c56dbf38cfde65a44a04f065ee147e916"
+    },
+    {
+      "path": "data/m1-brand-updates/nissan-2026-10-15.json",
+      "bytes": 660944,
+      "sha256": "6aa651b6932721365dfdee38c92fd19d9dd62cf50cb42ec6c348d495f00c9585"
+    },
+    {
+      "path": "data/m1-brand-updates/polestar-2026-10-14.json",
+      "bytes": 2803513,
+      "sha256": "b5109b22542d00dae69b7ab34dc3e04f422cdd7d00ffb59bfeddea9d2d6d48cf"
+    },
+    {
+      "path": "data/m1-brand-updates/registry.json",
+      "bytes": 1001,
+      "sha256": "0546c5e3bd213a8829221a44d3aa1f01917f2574ae821ed2adfc9ed3dfadcbb0"
+    },
+    {
+      "path": "data/m1-brand-updates/renault-2026-10-15.json",
+      "bytes": 333404,
+      "sha256": "6f89f00f147c45c5e1afdff24f8597da3b980d6f5230cd1ba5fb663754464605"
+    },
+    {
+      "path": "data/m1-brand-updates/skoda-2026-10-15.json",
+      "bytes": 571120,
+      "sha256": "378fa718b801dc907cbd2624e747e5b2a7b225c2c8ad958c2abd351b69f3e293"
+    },
+    {
+      "path": "data/m1-brand-updates/subaru-2026-10-15.json",
+      "bytes": 2082637,
+      "sha256": "6a21431aacaee96d10924ec854773c855d64b59d19ab313fa20e2a22f0f39b9c"
+    },
+    {
+      "path": "data/m1-brand-updates/tesla-2026-10-14.json",
+      "bytes": 640105,
+      "sha256": "e45015f156b981e2c6e9e94338c4d548c91a2588d092a7e0b139fe0e0cc45d03"
+    },
+    {
+      "path": "data/m1-brand-updates/toyota-2026-10-14.json",
+      "bytes": 2378554,
+      "sha256": "57ed2251d6e4f6e4bae3b5bb68390083e2f090336ef0b5f800c10c1e49f75e52"
+    },
+    {
+      "path": "data/m1-brand-updates/volkswagen-2026-10-14.json",
+      "bytes": 3007990,
+      "sha256": "208581fcff2c9e0dcd8a54ca0d11faff9423db1cb635211156722815d9e61513"
+    },
+    {
+      "path": "data/m1-brand-updates/volvo-2026-10-14.json",
+      "bytes": 2081044,
+      "sha256": "f2dccd648ad2f8ebaa6637d6f76e9991dcffc4288704599e4a3482d6e1bfedd6"
+    },
+    {
+      "path": "data/m1-brand-updates/xpeng-2026-10-15.json",
+      "bytes": 1181206,
+      "sha256": "b3ee8ff670a503c5197004bc973b7a8e020081e4547648f4974f907504e7198d"
+    },
+    {
+      "path": "data/m1-brand-updates/zeekr-2026-10-14.json",
+      "bytes": 762774,
+      "sha256": "f173bd6728fde5a2e5aa5383348e64de38b68a4cd4666187de4ec4a801a7a73b"
+    },
+    {
+      "path": "data/m1-byd-market-reconciliation-2026-10-14.json",
+      "bytes": 9322,
+      "sha256": "fe42227db84de3cb665fba5f7253730c40dfb3cb2da8f62d0edfbffeeba1ff98"
+    },
+    {
+      "path": "data/m1-chery-market-reconciliation-2026-10-14.json",
+      "bytes": 4520,
+      "sha256": "511a83fe8d5ab0ad6f180facc5265c2b53e330bda3121c5c52fc12b107a6e21c"
+    },
+    {
+      "path": "data/m1-cupra-market-reconciliation-2026-10-15.json",
+      "bytes": 2735,
+      "sha256": "cb90bdef3beb738f2f4dfc2327cfe426af8d521a922f44815f16223bafa002ae"
+    },
+    {
+      "path": "data/m1-deepal-market-reconciliation-2026-10-15.json",
+      "bytes": 9588,
+      "sha256": "c35368191d6e31d82c85c67cadefaae0bbe11026c7b77c197d2b57ffc5196435"
+    },
+    {
+      "path": "data/m1-evidence-regrading-2026-10-13.json",
+      "bytes": 15226769,
+      "sha256": "9c91e8c280028952e379ff2ea3179777ddbd235af3b9e21382b713db88c1ca2e"
+    },
+    {
+      "path": "data/m1-ford-market-reconciliation-2026-10-15.json",
+      "bytes": 4728,
+      "sha256": "07531bcbe9d57c9b89647313ced205a60a899dc2aa6c4655db161fec1debdf39"
+    },
+    {
+      "path": "data/m1-gac-market-reconciliation-2026-10-14.json",
+      "bytes": 5824,
+      "sha256": "30f801da9ff639a595b6575e322aa05070a828ecd37231011781665abacb1ae6"
+    },
+    {
+      "path": "data/m1-geely-market-reconciliation-2026-10-14.json",
+      "bytes": 8636,
+      "sha256": "682544d30b186ee1c294c20deb5bb7bdb98022c41b144bb61efb759cfc50c8ea"
+    },
+    {
+      "path": "data/m1-gwm-market-reconciliation-2026-10-14.json",
+      "bytes": 6767,
+      "sha256": "9e5c0a5bfba724b6c890a0a0b6c6bb2c9e4817bb446d1d9be37f29c1ad98f7ab"
+    },
+    {
+      "path": "data/m1-hyundai-market-reconciliation-2026-10-14.json",
+      "bytes": 25611,
+      "sha256": "aa45114f3aa6fbd7153d5ce87970060a6b0dc6b0de274fb923a610e74f661be4"
+    },
+    {
+      "path": "data/m1-im-market-reconciliation-2026-10-14.json",
+      "bytes": 5745,
+      "sha256": "7f8ade71d596bd550181199f7dc39e45c3327011704705d1da3f329b35ab2961"
+    },
+    {
+      "path": "data/m1-jaecoo-market-reconciliation-2026-10-14.json",
+      "bytes": 5238,
+      "sha256": "db337ac69f5d950068b1364b4cc25bd4f8e32b6314db74978d90d3f5a09e6c94"
+    },
+    {
+      "path": "data/m1-kgm-market-reconciliation-2026-10-15.json",
+      "bytes": 3906,
+      "sha256": "992966336096f6cbca10265ac0266045bec533872d00a6b69a2b57bbfc885196"
+    },
+    {
+      "path": "data/m1-kia-market-reconciliation-2026-10-14.json",
+      "bytes": 23540,
+      "sha256": "0be0fa552c246999f2fa9a213ae3c30cdf7abc776bbb94972acf165cad42d24e"
+    },
+    {
+      "path": "data/m1-leapmotor-market-reconciliation-2026-10-15.json",
+      "bytes": 18324,
+      "sha256": "33a3e1d6c47d3b68b0baac3a3d701af2c28ef10450d1c1175db1156802a642db"
+    },
+    {
+      "path": "data/m1-market-reconciliation-2026-10-14.json",
+      "bytes": 584,
+      "sha256": "78ef963060e8eeb3725d1664caf8c4304abcdddfa8c5988535c8b393037e4a8c"
+    },
+    {
+      "path": "data/m1-mazda-market-reconciliation-2026-10-15.json",
+      "bytes": 7759,
+      "sha256": "8cbb5d269f6914192ae6427166bc34517b9a9e6347c13413b2a5dd63e883b69c"
+    },
+    {
+      "path": "data/m1-mercedes-benz-market-reconciliation-2026-10-15.json",
+      "bytes": 17014,
+      "sha256": "dc499aeba3114b34d86868dd4e7df1baaaaa2488052a1e69dc134bb1b6d10961"
+    },
+    {
+      "path": "data/m1-mg-market-reconciliation-2026-10-14.json",
+      "bytes": 20292,
+      "sha256": "8102d0892e4cd6e7e54664749c5ab7ac4a1d3ec3ae2723d315fa3d6aa30f475c"
+    },
+    {
+      "path": "data/m1-mini-market-reconciliation-2026-10-15.json",
+      "bytes": 8727,
+      "sha256": "e82ebd0a3f1d72e358d95150d2b8f45495b8ac226d151e13edb341ab02b8dfae"
+    },
+    {
+      "path": "data/m1-nissan-market-reconciliation-2026-10-15.json",
+      "bytes": 2908,
+      "sha256": "e7fa1fa5cc7e7b27ae3490bc2a57a3049850f1c45ede1d2de6742f045b06c728"
+    },
+    {
+      "path": "data/m1-polestar-market-reconciliation-2026-10-14.json",
+      "bytes": 8302,
+      "sha256": "d875b86815f67207ef18eadef24db3118492d3c5b86d17cfb6afc4b48f308793"
+    },
+    {
+      "path": "data/m1-renault-market-reconciliation-2026-10-15.json",
+      "bytes": 5066,
+      "sha256": "8cd706a16a9666d2e26bcb72482bba0ce840566587102bf1f52abe05e67b3e07"
+    },
+    {
+      "path": "data/m1-retained-fact-fills-2026-10-13.json",
+      "bytes": 1002595,
+      "sha256": "9f18b12c2456c3cb29e41064f06e28c4539d2314ab767df4e28ee241a9383be1"
+    },
+    {
+      "path": "data/m1-skoda-market-reconciliation-2026-10-15.json",
+      "bytes": 10791,
+      "sha256": "8036b08bbb730a3ed4674e8539f80bc56d8d44fbac8d25f0c8ed696e9aab346f"
+    },
+    {
+      "path": "data/m1-subaru-market-reconciliation-2026-10-15.json",
+      "bytes": 8359,
+      "sha256": "a58c9d4885128539e47128d1710744a5dacf64e2ad6a2b5cb27198759110b0f4"
+    },
+    {
+      "path": "data/m1-tesla-market-reconciliation-2026-10-14.json",
+      "bytes": 5643,
+      "sha256": "4f1ec930cfd512fea44d890cc30e62c9b7a64287496910361dc982748eff0576"
+    },
+    {
+      "path": "data/m1-toyota-market-reconciliation-2026-10-14.json",
+      "bytes": 11680,
+      "sha256": "ed067827768e44729436205661d449af9b9ac688f02d81ed042441940d44c93d"
+    },
+    {
+      "path": "data/m1-volkswagen-market-reconciliation-2026-10-14.json",
+      "bytes": 14973,
+      "sha256": "1f91c72014f4120cc907a62937da0fd9be3431e89f74d7088cef3ba12f218b33"
+    },
+    {
+      "path": "data/m1-volvo-market-reconciliation-2026-10-14.json",
+      "bytes": 16563,
+      "sha256": "667edab8cac2e588397f780ed4b4524c735fd7452162c8d2286fd7927dfefb8a"
+    },
+    {
+      "path": "data/m1-xpeng-market-reconciliation-2026-10-15.json",
+      "bytes": 8625,
+      "sha256": "9f1f1342daf6fc6c27ab12600e2358ffe1c0bfdc4d24033dec45dc86fa42d11b"
+    },
+    {
+      "path": "data/m1-zeekr-market-reconciliation-2026-10-14.json",
+      "bytes": 7250,
+      "sha256": "68bd81b6c1e80cec5b72a83079fe41b0376c76ac06af15557e226a6ad608f5ee"
+    },
+    {
+      "path": "data/market-b70-layout-evidence-2026-10-11.json",
+      "bytes": 25834,
+      "sha256": "18d27820466a86b025dd03682364e9c39b41df78ff439885ff86437ddc0e570a"
+    },
+    {
+      "path": "data/market-c3he-evidence-2026-10-11.json",
+      "bytes": 38205,
+      "sha256": "e1756032fc42e8fa8a6774f94e26acfd8a416bda57ddccfe53f4c5519085269b"
+    },
+    {
+      "path": "data/market-c9h-identity-evidence-2026-10-11.json",
+      "bytes": 13495,
+      "sha256": "1e10bf3089ade3d6cedc6ac4215e11813773a52a90a013a5017d8fec8d415465"
+    },
+    {
+      "path": "data/market-deepway-star-lead-evidence-2026-10-12.json",
+      "bytes": 7171,
+      "sha256": "ae182e87a3bca47e0f642d5ffe99ebd93975f3be6f37e43fb171c0f582067ee1"
+    },
+    {
+      "path": "data/market-element22-epoch-evidence-2026-10-11.json",
+      "bytes": 44318,
+      "sha256": "0a625e8c3f44ff1bf48727ecf11abcc246a934d4aed1dd9b07859144269900f7"
+    },
+    {
+      "path": "data/market-evito-tourer-seating-evidence-2026-10-11.json",
+      "bytes": 52218,
+      "sha256": "1b018cbb59e5fd5337d9acb3ea5892bfe1f0d30c20b827ca390d04b7013bb06e"
+    },
+    {
+      "path": "data/market-inventory-2026-10-10.json",
+      "bytes": 1675100,
+      "sha256": "a3a08a7d7dd5abd88137711e9897a27c5fbfbe3ea51ed07a650b80afffc4ae2f"
+    },
+    {
+      "path": "data/market-mazda-cx6e-lead-evidence-2026-10-12.json",
+      "bytes": 11924,
+      "sha256": "370449ee44a832977f99952ec6fc764fe38180c5c4aa10128fc4187856863c68"
+    },
+    {
+      "path": "data/market-residual-stock-source-check-2026-10-11.json",
+      "bytes": 25478,
+      "sha256": "a56017c332f4f0a08f121b51e4784525aa67234a9ba114c95fe567361278eb04"
+    },
+    {
+      "path": "data/market-road-trikes-evidence-2026-10-12.json",
+      "bytes": 45820,
+      "sha256": "d3a3bc0d1aafbfbc5edb3849b0f4b6d05e152972f2a089ab8e0204ba18311cf4"
+    },
+    {
+      "path": "data/market-seller-evidence-2026-10-11.json",
+      "bytes": 67774,
+      "sha256": "0cacdb2aa7531d1aee1e8f79ec746296c12203d977bbcfb7613afd5c59b1df8a"
+    },
+    {
+      "path": "data/market-skywell-ecrew-evidence-2026-10-11.json",
+      "bytes": 50327,
+      "sha256": "ac5b8d45e14efb0b38931744feb43482781e58ae7f020c4a8d36b3d9dda2acd0"
+    },
+    {
+      "path": "data/market-view.generated.json",
+      "bytes": 449469,
+      "sha256": "9a3dd02a2d4f1e115d697d022e400696fd835e543ddb09662b2afc6b6c85291f"
+    },
+    {
+      "path": "data/mazda-cx6e-technical-evidence-2026-10-12.json",
+      "bytes": 18379,
+      "sha256": "cd1e678a01e47da763b78b58c6eb01c5e69670b7cd59fbce86fdbdfb9c2765cc"
+    },
+    {
+      "path": "data/mercedes-passenger-evidence-2026-10-10.json",
+      "bytes": 1121799,
+      "sha256": "575efd4e101fbb50bc04497517cd623833ac66b8691ff4b5ce20dda7264c2ac8"
+    },
+    {
+      "path": "data/mg-remaining-evidence-2026-10-10.json",
+      "bytes": 288882,
+      "sha256": "977a3dff5d051f14b306ac7ee33076044c4cc47d52fd8adc16d77a12bf37dfb5"
+    },
+    {
+      "path": "data/mg4-evidence-2026-10-10.json",
+      "bytes": 45035,
+      "sha256": "d3caab127d7d2f3ffd23a4928b9a4bd3caf75f5cf1ab9db6070842931556fb37"
+    },
+    {
+      "path": "data/motorcycle-ev-census.json",
+      "bytes": 283593,
+      "sha256": "b1676b7486125acc81046106db97e226a8670e5c26bddf028b9230be65c5222d"
+    },
+    {
+      "path": "data/next-vans-evidence-2026-10-10.json",
+      "bytes": 517798,
+      "sha256": "c156e626b03ec3c929baaa4caa487db964995a06f8d6dd1f07918d14fd318017"
+    },
+    {
+      "path": "data/omoda-jaecoo-evidence.json",
+      "bytes": 286225,
+      "sha256": "c36969258e4e71bc9d1665353ade268172de22a086098f75dc2d288a563e00cb"
+    },
+    {
+      "path": "data/price-ladder-existing-candidates-2026-10-13.json",
+      "bytes": 134038,
+      "sha256": "3de9ef64c14d411382db63704c0cec8a12297d6743d14fbda31b3d0e8298f9ee"
+    },
+    {
+      "path": "data/price-ladder-guards-2026-10-13.json",
+      "bytes": 615289,
+      "sha256": "0a6c552ab2a339070a9615b240c9bbcf77c984d25d112d64eb01a6ac32b1be1b"
+    },
+    {
+      "path": "data/price-ladder-premium-candidates-2026-10-13.json",
+      "bytes": 52346,
+      "sha256": "42e8371a9edd44b8230c3fd2ff59d057ecdfc2a539c5b9addb41854943bb2d09"
+    },
+    {
+      "path": "data/price-ladder-review-2026-10-13.json",
+      "bytes": 227602,
+      "sha256": "542b3c95d0132cd1d69d38923f9f841b84c442a130fdd5ea26248846e96d0a29"
+    },
+    {
+      "path": "data/remaining-electric-vans-evidence.json",
+      "bytes": 506188,
+      "sha256": "31a6b0af54dc4d17d518c00bdea60cf55e175640d94404efde080fcc2464b40e"
+    },
+    {
+      "path": "data/remaining-hyundai-evidence.json",
+      "bytes": 5019085,
+      "sha256": "583ce8eef94314a10003be3c48f346e67c432a6dfa827872543d677daa3f5e4d"
+    },
+    {
+      "path": "data/remaining-utes-vans-evidence.json",
+      "bytes": 1171757,
+      "sha256": "8208fbc69eb295c59bb5b5dcb8102d4493d3d31182af59a49186742eba85b857"
+    },
+    {
+      "path": "data/research-buyer-2026-10-07.json",
+      "bytes": 529591,
+      "sha256": "d482fb76421213be584923be3109263161885c9a48ba83c0b28cacb596b76c1d"
+    },
+    {
+      "path": "data/research-completion-2026-10-07.json",
+      "bytes": 375699,
+      "sha256": "c56cfe19c0e22882aae77c340f4576df077b2574ee7c603363f87f65f32737e5"
+    },
+    {
+      "path": "data/research-editorial-2026-10-07.json",
+      "bytes": 519564,
+      "sha256": "cc1b71f5a65e173fe274c61cc1069ad129978ab6402bc12a886e98481b77f95b"
+    },
+    {
+      "path": "data/research-refinement-2026-10-06.json",
+      "bytes": 29589,
+      "sha256": "e6a3d9c9aff6e91f91ccc0984b4104e3e46f099730dcfdcec2c6f369fdaf3891"
+    },
+    {
+      "path": "data/research-refresh-2026-10-10.json",
+      "bytes": 144215,
+      "sha256": "77dc7a1ed075e41c00788ed23cdb125f8313263738f2fd863799ea7d7a37fc38"
+    },
+    {
+      "path": "data/research-sales-2026-10-06.json",
+      "bytes": 780,
+      "sha256": "76736027cbfa0ab90d993312516d03411cfbd358c053bd589200f342ac49ad14"
+    },
+    {
+      "path": "data/research-schema.json",
+      "bytes": 2935,
+      "sha256": "2f683f1d3b8585fbfef7b126bd75a77c3220533a35d2c09db6d5a75b19d9f50a"
+    },
+    {
+      "path": "data/research-usability-2026-10-06.json",
+      "bytes": 98483,
+      "sha256": "24bb0701d5b328404bd8af06168ff0a5c226283a3c535ef9c75553b06fab7a81"
+    },
+    {
+      "path": "data/segway-zeeho-road-scooters-evidence.json",
+      "bytes": 248381,
+      "sha256": "a5ffeac42bdda7b264963ba3047b39b66eb84d2dda9a7259f5304e560dc09f51"
+    },
+    {
+      "path": "data/source-audit-2026-10-08.json",
+      "bytes": 12955,
+      "sha256": "8c04d15c9f700a30804f2fcf0cb71a970640aebf738746ec14cbdc5b79a9376e"
+    },
+    {
+      "path": "data/source-citation-label-92.json",
+      "bytes": 9368,
+      "sha256": "4e9dcec48be7180614597a54286da1e8b6f2a099344d1f0b3b210be0cf6f3140"
+    },
+    {
+      "path": "data/toyota-subaru-evidence-2026-10-10.json",
+      "bytes": 547562,
+      "sha256": "67a98c802c5089ecf61d7911e89f802ebe0538f4c4363d03e8df7ac2be260eb7"
+    },
+    {
+      "path": "data/transit-city-provisional-evidence-2026-10-11.json",
+      "bytes": 1288,
+      "sha256": "e80db3e3f994f86fe276e3494963d6b70da8515d6bc9a98bb0c7add905ef0c78"
+    },
+    {
+      "path": "data/volvo-polestar-evidence-2026-10-10.json",
+      "bytes": 607521,
+      "sha256": "aa05a42d47e44a21215598a463524f79a0095cfc9afb186916f1d36d8ddb172b"
+    },
+    {
+      "path": "data/vw-skoda-cupra-evidence-2026-10-10.json",
+      "bytes": 938108,
+      "sha256": "8895fa3b3910cdcdd63240df59786e6b2403a281c72d6568c7831d1798005e9f"
+    },
+    {
+      "path": "docs/AI_LAUNCH_PLAN.md",
+      "bytes": 4070,
+      "sha256": "082d52d578d46b07994725815cadf9e139d7cc9a3f9ed104b520379a36d0d61d"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "bytes": 7416,
+      "sha256": "74f9490e5d93611d8ab2fabb5fc02d3e8a03126d8b85eec8e7dfa906a4991cfc"
+    },
+    {
+      "path": "docs/ARCHIVE-MOVES.json",
+      "bytes": 933048,
+      "sha256": "03d465ceb476de6817ad7fc8d1f8d439e1e8490e23f5cbbc5d6b270db2e5ad93"
+    },
+    {
+      "path": "docs/ATTO1_EVIDENCE_2026-10-10.md",
+      "bytes": 10660,
+      "sha256": "cd89729c0342ea374120ba0eeed4c3ed2bf0882182331dd1581d87978e44fec3"
+    },
+    {
+      "path": "docs/AUDI_M1_UPDATE.md",
+      "bytes": 5694,
+      "sha256": "e767ebea754eda19a387fea5dccf069f2da332285fe31e08df92ec21c49c5628"
+    },
+    {
+      "path": "docs/AUDI_PORSCHE_BUYER_SUMMARIES_2026-10-10.md",
+      "bytes": 89905,
+      "sha256": "d33cc1742655d20d328d43a3827a0d0a89774ceac525a105c8064bcc2c34787a"
+    },
+    {
+      "path": "docs/AUDI_PORSCHE_EVIDENCE_2026-10-10.md",
+      "bytes": 39373,
+      "sha256": "fa2c45fc50a38ec960954e26f47896d32bc958c19d57c00e99bd29c13d343884"
+    },
+    {
+      "path": "docs/AVAILABILITY_RANKING_SOURCE75.md",
+      "bytes": 2226,
+      "sha256": "bb45e95dda1ef85b81e1a6bdcd5216e924449f6035e2273e81d691e89ef1488d"
+    },
+    {
+      "path": "docs/BACKLOG.md",
+      "bytes": 904,
+      "sha256": "b0b8ad7c832f5814920c096f92018666cf5dfca9e72226340fe947081dbc483e"
+    },
+    {
+      "path": "docs/BMW_MINI_BUYER_SUMMARIES_2026-10-10.md",
+      "bytes": 58619,
+      "sha256": "9c38d1398edbbcab5716da6d7dd4a17e81d2ace6bc1ff039c13a5063ec8796a5"
+    },
+    {
+      "path": "docs/BMW_MINI_EVIDENCE_2026-10-10.md",
+      "bytes": 18296,
+      "sha256": "4ae5541b1700c8f2adec8bcabb2d5a83d2aaf5e444edfd5f661310670abfd96a"
+    },
+    {
+      "path": "docs/BOUNDED_OFFERS_SOURCE71.md",
+      "bytes": 3416,
+      "sha256": "74cc9b2f07ff222d582c67e88893a24254c878772cc6648544bdab3c51d5ae78"
+    },
+    {
+      "path": "docs/BUS_BUYER_SUMMARIES_PENDING_2026-10-10.md",
+      "bytes": 54589,
+      "sha256": "3f6e2ba6284ae4143e7268c02d05caa23759b21b18ae94326026b8d734fb0229"
+    },
+    {
+      "path": "docs/BUS_INTEGRATION_BOUNDARIES_2026-10-10.md",
+      "bytes": 39789,
+      "sha256": "027dfc72d1ac7a1c7d913e47db1c38f2248e0e126c3c3d346649a69d7f170279"
+    },
+    {
+      "path": "docs/BUS_STAGED_AUDIT_2026-10-10.md",
+      "bytes": 7930,
+      "sha256": "639fa8ef7ea0e8914e9c11f9343de503c8f19d639cce283c3843f24652e3525e"
+    },
+    {
+      "path": "docs/BUYER_IDENTITY_STORAGE.md",
+      "bytes": 2358,
+      "sha256": "ec60282e9c25032cd1cfbce5f829c2f045bfe6055b16e2341dd980aa6c8dcba1"
+    },
+    {
+      "path": "docs/BUYER_SELLING_POINTS_2026-10-10.md",
+      "bytes": 24845,
+      "sha256": "6fa49b7e1fcad07fe50ab33915538de61411e3f0d6a53d0080cc13d79b85eebf"
+    },
+    {
+      "path": "docs/BYD_EVIDENCE_2026-10-10.md",
+      "bytes": 4642,
+      "sha256": "a89f8b117c989ec3facbc494d26327d69a86d6a06f944b6a56c2033534555829"
+    },
+    {
+      "path": "docs/CHECKPOINT103.md",
+      "bytes": 3654,
+      "sha256": "fa78b13ca91fa65941a1c6edbb79f89681da88fc5132989e7c6416a65c0ed416"
+    },
+    {
+      "path": "docs/CORRECTION_LOG.md",
+      "bytes": 11610,
+      "sha256": "d3acaa9e183448747734453172d5d796c9799dc1bd77e1c543f1dbbca670194f"
+    },
+    {
+      "path": "docs/CUPRA_M1_UPDATE.md",
+      "bytes": 5684,
+      "sha256": "fd32ecf44f017010a6de5e6ba595a04be2e3aee096eada2b15d5e74ffe73cb0c"
+    },
+    {
+      "path": "docs/DEEPAL_M1_UPDATE.md",
+      "bytes": 5618,
+      "sha256": "ae4dbf568798273cb1a83ac1b870d25a3fbbe1f1bc81cb5572f5925d3d56af0b"
+    },
+    {
+      "path": "docs/DEVICE_DRAFT_SNAPSHOTS_SOURCE76.md",
+      "bytes": 2567,
+      "sha256": "5990c0209a7632a8f54e1bf3405dbf3657a349854246ee806b88e00385cc681f"
+    },
+    {
+      "path": "docs/DOT-BRIEF-103.md",
+      "bytes": 17906,
+      "sha256": "b81bd6f06294486f9dd9019efc1b8aa877c09ace469d2577d630be34e0f2a64c"
+    },
+    {
+      "path": "docs/DOT_IMPLEMENTATION_HANDOFF.md",
+      "bytes": 17670,
+      "sha256": "38c6556e49035b033bbd233cf3c328ab5c339464fedfc0bca92e74a535b40a6e"
+    },
+    {
+      "path": "docs/EDITORIAL_RELEASE_CHECKLIST.md",
+      "bytes": 1928,
+      "sha256": "6a4a2f6792b2d90ab92b704d0d12f4864071645ceb3a2f881ce68e1d089ddbac"
+    },
+    {
+      "path": "docs/ELECTRIC_VANS_EVIDENCE_2026-10-10.md",
+      "bytes": 25269,
+      "sha256": "df73164ad45cac3149b6ec188ffa5b7486964eb345b7ec5e13861b6715ff4cd2"
+    },
+    {
+      "path": "docs/EVIDENCE_BACKUP_2026-10-10.md",
+      "bytes": 3370,
+      "sha256": "cd8380aabf07a2168017dab2adc029d3c84ac39f3a2fc0fa96ff5cae44d804d8"
+    },
+    {
+      "path": "docs/EVIDENCE_BACKUP_INDEX_2026-10-10.json",
+      "bytes": 27823,
+      "sha256": "0abe6d7f4ad5d766e50f7301bd02546bf8fd686bc2886689614c07a91cb7e347"
+    },
+    {
+      "path": "docs/EV_BUYER_JOURNEYS.md",
+      "bytes": 42417,
+      "sha256": "31abc00086a8851bc43e27869a88fe0fb5eed7a08eb1fc7323540bffe98dfac7"
+    },
+    {
+      "path": "docs/EXISTING_TRIM_REFRESH_2026-10-10.md",
+      "bytes": 4066,
+      "sha256": "b53ff4e5c507cadcc85ee40cb14b1b4426bb179a4c20327530e41310029c685b"
+    },
+    {
+      "path": "docs/FACT_CORRECTION_FIX_REVIEW_2026-10-10.md",
+      "bytes": 4678,
+      "sha256": "2d1f9e03fe50830bed9c3c9654b56c71d0b1f26d1bddb7728187c648265b24dc"
+    },
+    {
+      "path": "docs/FORD_M1_UPDATE.md",
+      "bytes": 5083,
+      "sha256": "70be8560c5cd6c7972254e76fd59737388b7b5308a4868049cc2bc65369fab0b"
+    },
+    {
+      "path": "docs/GEELY_ZEEKR_XPENG_IMPLEMENTATION_2026-10-10.md",
+      "bytes": 6915,
+      "sha256": "61f617da7fcb933f511208185cb30e91ff5a40e7603b12a09fb61a83da7cf631"
+    },
+    {
+      "path": "docs/HOMEPAGE_PAYLOAD_REFINEMENT_2026-10-10.md",
+      "bytes": 3244,
+      "sha256": "5e39c09e89a1808f3e096ea6c4e064e75f83f1ea83436289bda6c3719e7f2492"
+    },
+    {
+      "path": "docs/HONDA_AND_MARKET_SOURCE73.md",
+      "bytes": 3965,
+      "sha256": "e3e35b36051a62245d8b5d1dad05c48ebb280867f43935fa3236ca1f8e8de6ed"
+    },
+    {
+      "path": "docs/HYUNDAI_BUYER_SUMMARIES_2026-10-10.md",
+      "bytes": 43405,
+      "sha256": "cb3a01e8d50b6d81b7826f197f77457870d016825b4fb2a3739b0f995e272c0c"
+    },
+    {
+      "path": "docs/HYUNDAI_EVIDENCE_2026-10-10.md",
+      "bytes": 16204,
+      "sha256": "2056dc821dded31d96dc3910c987d5378d22eac95ad2fa02084f1729c81d3fca"
+    },
+    {
+      "path": "docs/HYUNDAI_INDEPENDENT_AUDIT_2026-10-10.md",
+      "bytes": 6765,
+      "sha256": "9eff3fb8d936d078041ba253cb494511404eb185acaef9cf64032b138b85d4a6"
+    },
+    {
+      "path": "docs/HYUNDAI_INTEGRATION_2026-10-10.md",
+      "bytes": 5551,
+      "sha256": "fefd16d993491d3682ed2e899524ac7cf5e2956897e65bec1ae48495d1b0832a"
+    },
+    {
+      "path": "docs/HYUNDAI_RUNTIME_BUYER_SUMMARIES_2026-10-10.md",
+      "bytes": 26821,
+      "sha256": "e5a051d4be00540ec97d074b7ba3ae2f8fb488c3be697c5867bf2792a2c5add5"
+    },
+    {
+      "path": "docs/KGM_M1_UPDATE.md",
+      "bytes": 5664,
+      "sha256": "53b86882ac888233fdf3df09199d398bc2eed1db048c142743b27b0b8550780f"
+    },
+    {
+      "path": "docs/KIA_EV6_EV9_EVIDENCE_2026-10-10.md",
+      "bytes": 14233,
+      "sha256": "92f5c6fc5ec3a1ae509f530b4a77ee4a13855cf95da456d0518121b4fb89a2b7"
+    },
+    {
+      "path": "docs/LDV_SELLING_POINTS_2026-10-10.md",
+      "bytes": 19682,
+      "sha256": "7877de2d3c950631d80ff1184541719e6d4c8f06472da8cb2ca93e37860011a4"
+    },
+    {
+      "path": "docs/LEAPMOTOR_M1_UPDATE.md",
+      "bytes": 3699,
+      "sha256": "104ed79506bec58201595e6bc6bb7ab4fb810aef40018ff0229d96ccb1d76a07"
+    },
+    {
+      "path": "docs/LEXUS_NISSAN_GENESIS_BUYER_SUMMARIES_2026-10-10.md",
+      "bytes": 68914,
+      "sha256": "0b9a114c260a475d119fe300124188929a37bce829b39ada049ea381ee33b6fb"
+    },
+    {
+      "path": "docs/LEXUS_NISSAN_GENESIS_IMPLEMENTATION_2026-10-10.md",
+      "bytes": 5165,
+      "sha256": "ba1968b79bedc61d33229dc88031029ccb4fc8a2653fd73fe55f6dbf678ce347"
+    },
+    {
+      "path": "docs/LEXUS_NISSAN_GENESIS_INTEGRATION_2026-10-10.md",
+      "bytes": 13356,
+      "sha256": "41b15f8137ef7aa46c3a96fdb79a6f35a09b5b9b6fb09de95d07784d6369a8a3"
+    },
+    {
+      "path": "docs/M1-BRAND-UPDATE-PACKET.md",
+      "bytes": 13421,
+      "sha256": "8d56da00c25efda2abae4f6fc3af4c29ae50c0a5d471c87f2c2dc42a6b2f6cee"
+    },
+    {
+      "path": "docs/M1-PRICE-ADMISSION.md",
+      "bytes": 3704,
+      "sha256": "6473d077ac2f2a54a2d9eff3abac32887b92fd6ab20e055db6bb50ff040b691a"
+    },
+    {
+      "path": "docs/M1_BRAND_ORDER.md",
+      "bytes": 4416,
+      "sha256": "09605c8d0afdac00be47c4dbb1b3e105281316161ec3b17215aa3b0c806bf7a0"
+    },
+    {
+      "path": "docs/M1_PROGRESS.md",
+      "bytes": 138919,
+      "sha256": "bfc045608a7c39e67700d37952b87e5a65b0a456595b54adcb0939601c8a1540"
+    },
+    {
+      "path": "docs/MARKET_AUDIT_2026-10-10.md",
+      "bytes": 50754,
+      "sha256": "45415a8edc834648ec6b82266c1cbf7c9ab1fe4daaf19e70773a4dd29667fb8f"
+    },
+    {
+      "path": "docs/MARKET_AUDIT_EXPANDED_2026-10-10.md",
+      "bytes": 7487,
+      "sha256": "e0871c9508a7bb350f0c76e13249c87f5354b3f2763efd2c82afad271d9a575e"
+    },
+    {
+      "path": "docs/MARKET_RECONCILIATION_2026-10-11.md",
+      "bytes": 3409,
+      "sha256": "b2b4c50cea1fae2417b71e72e57481ba5fb83dd7d3bf4f4dcd25e36d0e418e8d"
+    },
+    {
+      "path": "docs/MARKET_RECONCILIATION_2026-10-11_SOURCE66.md",
+      "bytes": 1645,
+      "sha256": "4e2be1de4a631cb69ece830d2ac39277d99ef5208e9c280c2a84cf794145c004"
+    },
+    {
+      "path": "docs/MARKET_RECONCILIATION_2026-10-11_SOURCE67.md",
+      "bytes": 1241,
+      "sha256": "e064a3c2d098bca5cd7bf51765d77a7e865ddf3b3f9bee960feba60776acc6fa"
+    },
+    {
+      "path": "docs/MARKET_RECONCILIATION_2026-10-11_SOURCE68.md",
+      "bytes": 879,
+      "sha256": "246237cc150cb16289d9ff35e03ecf69f9a85e871a964b159cb546961995d79d"
+    },
+    {
+      "path": "docs/MARKET_RECONCILIATION_2026-10-11_SOURCE69.md",
+      "bytes": 1348,
+      "sha256": "4ff912c7c148537b91a0e662eedee35de9ec5a665d0a06b3bd8459d8c6bef424"
+    },
+    {
+      "path": "docs/MARKET_SELLER_EVIDENCE_SOURCE77.md",
+      "bytes": 3783,
+      "sha256": "4328cbac67382a1416b5a8cf07887b9b2aaf56c61c6631a3b7765987a5bc92c1"
+    },
+    {
+      "path": "docs/MAZDA_M1_UPDATE.md",
+      "bytes": 3755,
+      "sha256": "017fc53d0f9e04868f38e4ebcada0c465faee4d60b597f3e359f778e6209590c"
+    },
+    {
+      "path": "docs/MERCEDES_M1_UPDATE.md",
+      "bytes": 3856,
+      "sha256": "2aee8d298481c3f566efc21c0949b2ff25edd2a64f8fc274e31d80b4477265f9"
+    },
+    {
+      "path": "docs/MERCEDES_PASSENGER_BUYER_SUMMARIES_2026-10-10.md",
+      "bytes": 8409,
+      "sha256": "37ad313e4a46221cb96ceeaa2e378af90b945f39d3ffb2eaf5b884a7bd549475"
+    },
+    {
+      "path": "docs/MERCEDES_PASSENGER_EVIDENCE_2026-10-10.md",
+      "bytes": 10875,
+      "sha256": "96e3011ff5aa663ca94d1ef5a32603a65132e4aabd5a711564450b6efb6da57b"
+    },
+    {
+      "path": "docs/MG4_EVIDENCE_2026-10-10.md",
+      "bytes": 6535,
+      "sha256": "bcf51be4e049f23c6b6057ce3830b420f3f13c80f4105f9bfe19d7af423bb77d"
+    },
+    {
+      "path": "docs/MG_REMAINING_BUYER_SUMMARIES_2026-10-10.md",
+      "bytes": 35786,
+      "sha256": "841ecbc36dcc456f07a95bc109f0f2f63ab6cb0e3e43102b02a50e6e1968adef"
+    },
+    {
+      "path": "docs/MG_REMAINING_EVIDENCE_2026-10-10.md",
+      "bytes": 7905,
+      "sha256": "e12e39cbfcec630408e728e4e6119051bd3812ed32f06f8a0b9d44a99e71797d"
+    },
+    {
+      "path": "docs/MG_REMAINING_INTEGRATION_2026-10-10.md",
+      "bytes": 3078,
+      "sha256": "53643a0f83a45665395f13af190840ec581da18b961cbfe124819bd4ab3684f2"
+    },
+    {
+      "path": "docs/MINI_M1_UPDATE.md",
+      "bytes": 5601,
+      "sha256": "2b9edee6cfc1ee6a46245e9a73e50488c2b2512746fb8890ffe46615bf7010c2"
+    },
+    {
+      "path": "docs/MOBILE_JOURNEY_2026-10-11_SOURCE70.md",
+      "bytes": 1100,
+      "sha256": "ac2a7775cff2d10f484c1c7879015009de8bbd32b62c1cf284a194844ee87f13"
+    },
+    {
+      "path": "docs/MOTORCYCLE_AUDIT_2026-10-10.md",
+      "bytes": 9096,
+      "sha256": "b1e35abdf428a2fd1d31668877ae03f996f536e978bcc93b2d29f0f42bf65c2d"
+    },
+    {
+      "path": "docs/NEXT_VANS_BUYER_SUMMARIES_2026-10-10.md",
+      "bytes": 40507,
+      "sha256": "1e6645c51f3fb0e6eaa2682d94a3b48fe627f0a0e2db20492aa218384f25dec3"
+    },
+    {
+      "path": "docs/NEXT_VANS_EVIDENCE_2026-10-10.md",
+      "bytes": 31129,
+      "sha256": "d45be7bff832381ce3038a96d6d52d98c8619c81ee48f881c2d9ae9a800a804a"
+    },
+    {
+      "path": "docs/NISSAN_M1_UPDATE.md",
+      "bytes": 4461,
+      "sha256": "aba2fe66493cb6e9c064e0cdd4ca2a7d9d91fe36e41e553b7a73f651c2647221"
+    },
+    {
+      "path": "docs/ORIGINAL_ASSET_BRIEF.md",
+      "bytes": 5034,
+      "sha256": "f067f4f4588a9ccc3d20ab7fe0e7c3235cf153ddc60b985ea85714d9bbedb51b"
+    },
+    {
+      "path": "docs/ORIGINAL_CATALOGUE_SELLING_POINTS_2026-10-10.md",
+      "bytes": 69020,
+      "sha256": "9b12174beaecd927b5a456c64bf7e8e6f59187dc849f322265fc329a84b692c4"
+    },
+    {
+      "path": "docs/PERFORMANCE_REFINEMENT_2026-10-10.md",
+      "bytes": 1997,
+      "sha256": "2689d3ed27b42ded1ce65e0b3b13702a7f98d67fec254c4d8a1100216760f5cc"
+    },
+    {
+      "path": "docs/PORTABLE_DELIVERY_SOURCE72.md",
+      "bytes": 2062,
+      "sha256": "deaa570457d4e95c52a32117fbe89b4e3cec36019debbdb138f4fbbe1a7ec01d"
+    },
+    {
+      "path": "docs/PORTABLE_MARKET_DATA_SOURCE74.md",
+      "bytes": 2674,
+      "sha256": "5fa88c0e435691f10b6184139525ff12b5a63a62860fedc7956c112a20a4353c"
+    },
+    {
+      "path": "docs/REFERENCE_SOURCES.json",
+      "bytes": 753,
+      "sha256": "d74509b9abd5f34e5d3c14573b48dd13b94dab481da87c090264c701478535a2"
+    },
+    {
+      "path": "docs/REFINEMENT_RESEARCH.md",
+      "bytes": 11706,
+      "sha256": "cadd3e40dac9a485713d5db145d2279ff7952826470875d182c2638f38ea7998"
+    },
+    {
+      "path": "docs/REMAINING_HYUNDAI_2026-10-10.md",
+      "bytes": 4776,
+      "sha256": "11e1caea94747704f049b72acba1e9f7cdc6dbfd6839cc5c88821d9e015c96d0"
+    },
+    {
+      "path": "docs/REMAINING_PASSENGER_IMPLEMENTATION_2026-10-10.md",
+      "bytes": 5167,
+      "sha256": "d73806ee4b3caf6c7eb23c45ea5480c1416adf92fb61964afc28cbeaab2dddff"
+    },
+    {
+      "path": "docs/REMAINING_UTES_VANS_2026-10-10.md",
+      "bytes": 42631,
+      "sha256": "52adb4ce0f64a82285682e47111b4ff6a750435404c322bb7a77e7c4c3a475ff"
+    },
+    {
+      "path": "docs/REMAINING_VANS_IMPLEMENTATION_2026-10-10.md",
+      "bytes": 6534,
+      "sha256": "352a746e65ea09eaa3d5dd6c8e00a8605fff1a1ff379895f1921c104cc102eaa"
+    },
+    {
+      "path": "docs/RENAULT_M1_UPDATE.md",
+      "bytes": 4186,
+      "sha256": "7ff17ffe72a465032fc40e00ffb80d5c791505d100839c4b717f0897708883c6"
+    },
+    {
+      "path": "docs/REVIEW_WORKFLOW.md",
+      "bytes": 18501,
+      "sha256": "d0bde7c41757787b4578cbebe52d7ddfda03e5ad38becf1369caa3abc8da7b07"
+    },
+    {
+      "path": "docs/ROADMARK_GOAL.md",
+      "bytes": 3412,
+      "sha256": "27c269edb840a35581fd9caee45d8ed95c6257e9458e975fe44dff2d8f850c97"
+    },
+    {
+      "path": "docs/ROAD_SCOOTER_INTEGRATION_AUDIT_2026-10-10.md",
+      "bytes": 1801,
+      "sha256": "6f98b4c1d6855d260631347ba7faf04a75f669b5363452954b290efc27d1190c"
+    },
+    {
+      "path": "docs/SCENE_DIRECTION.md",
+      "bytes": 7527,
+      "sha256": "b046acfe150dfe52d30e7f25ebd7c4aa723ca189d7de75cd5074c57feb6205dc"
+    },
+    {
+      "path": "docs/SCENE_DIRECTION_B.md",
+      "bytes": 8372,
+      "sha256": "a2c3f027ff9fd17bdf7988917cc6ef2683614efeeea7f76976c81580d38bb5ca"
+    },
+    {
+      "path": "docs/SEGWAY_ZEEHO_ROAD_SCOOTERS_2026-10-10.md",
+      "bytes": 13541,
+      "sha256": "2474d703ef9573f7e650239ab2da0efcff00e40b3c3269876014664c20a5ef05"
+    },
+    {
+      "path": "docs/SKODA_M1_UPDATE.md",
+      "bytes": 5697,
+      "sha256": "d10e8db6a68b8121548e9e2f70fe47765d821dfc974470ab802988069dff16c1"
+    },
+    {
+      "path": "docs/SOURCE-PACKAGING.md",
+      "bytes": 4333,
+      "sha256": "044b37ff9d811d9d0dfe23711a059e625cae8c13ac4fe0ae3dcfed8c48cde9cc"
+    },
+    {
+      "path": "docs/TESLA_MEDIA_AUDIT.md",
+      "bytes": 8129,
+      "sha256": "be638f8f1103c7dacf507ce86ae9e308138777a1affc1486e2262619e2c94fc4"
+    },
+    {
+      "path": "docs/TOYOTA_SUBARU_EVIDENCE_2026-10-10.md",
+      "bytes": 26969,
+      "sha256": "9701bcca88a9db1ae84cbdef35be2b6a574fcd92bff18de87c9d4419afa66d79"
+    },
+    {
+      "path": "docs/TOYOTA_SUBARU_SELLING_POINTS_2026-10-10.md",
+      "bytes": 23691,
+      "sha256": "4be48d0867d275cff39f71425d7aa8188977ec4c36717699ed809e21b0116ff0"
+    },
+    {
+      "path": "docs/TRIKE_MARKET_INTEGRATION_2026-10-12.md",
+      "bytes": 4647,
+      "sha256": "eb51219cf99d92ee928269ac0dc0cbd9723e891dbefbbe5149273c1d24cac8b9"
+    },
+    {
+      "path": "docs/TRUCK_INTEGRATION_2026-10-10.md",
+      "bytes": 2407,
+      "sha256": "ab2bb4e03666716f4a0043c2741eeb6c7f12dc3e921de19151fc0ee1d277d6a4"
+    },
+    {
+      "path": "docs/UTE_VAN_INDEPENDENT_AUDIT_2026-10-10.md",
+      "bytes": 3309,
+      "sha256": "80b558344a1c807d3d2147c51f722381fba056ca55df9a32ed60550795febad9"
+    },
+    {
+      "path": "docs/UTE_VAN_RUNTIME_BUYER_SUMMARIES_2026-10-10.md",
+      "bytes": 21118,
+      "sha256": "a2810029a057a288b0c9d2d2cc86a20b2aa3e09a000560b007409699cdeee24c"
+    },
+    {
+      "path": "docs/VOLVO_POLESTAR_BUYER_SUMMARIES_2026-10-10.md",
+      "bytes": 55072,
+      "sha256": "12d25765d220823e8273ed50e9c813f42e99379bd0de226689fd23f82792f168"
+    },
+    {
+      "path": "docs/VOLVO_POLESTAR_EVIDENCE_2026-10-10.md",
+      "bytes": 12980,
+      "sha256": "11332fe1d05d0ebaaf5f54d59307f64f8e14941956bafbf1da8fced40072a695"
+    },
+    {
+      "path": "docs/VW_SKODA_BUYER_SUMMARIES_2026-10-10.md",
+      "bytes": 41177,
+      "sha256": "4ea5b785b455eab5e6fe20196257f2752e0401ab5b5024a054664b275fe4c9b6"
+    },
+    {
+      "path": "docs/VW_SKODA_CUPRA_EVIDENCE_2026-10-10.md",
+      "bytes": 14786,
+      "sha256": "b1e8560fdb68c7551bfdd2a664b7dac97d84aab061820a1af0238ac93093c187"
+    },
+    {
+      "path": "docs/catalogue-scope-label-audit.md",
+      "bytes": 3378,
+      "sha256": "80a0cc9009cc891b770bd91f5a4f07b3fd4200506f203edb04f95030a133d405"
+    },
+    {
+      "path": "docs/deepal-evidence.md",
+      "bytes": 7865,
+      "sha256": "fea9dc8fded58c18b56a52600c2342160ce2adc17cb4fddb38049dbfec63be9d"
+    },
+    {
+      "path": "docs/electric-truck-integration-audit.md",
+      "bytes": 4985,
+      "sha256": "186270a727bf1b3803433cd38eaebcdbc5038313e43ed4d13ee36035c3b416eb"
+    },
+    {
+      "path": "docs/existing-trim-refresh-integration-subset.md",
+      "bytes": 5152,
+      "sha256": "034f2c2cce54cef3e4a2d410553ef8df8b412efa3fb7edf32b707ba5b8b8dc7a"
+    },
+    {
+      "path": "docs/existing-trim-refresh-plan.md",
+      "bytes": 38690,
+      "sha256": "c80c68566d8364f2c6e17d186689c4ef4ff97184ab3ab013e33ef308b306a8eb"
+    },
+    {
+      "path": "docs/farizon-foton-jac-trucks-evidence.md",
+      "bytes": 22073,
+      "sha256": "33a3268c98a9fc499a2951b6744920e5a15ac8ed34b50b020984d0271b5640dd"
+    },
+    {
+      "path": "docs/fuso-hyundai-trucks-evidence.md",
+      "bytes": 24674,
+      "sha256": "603ec7ffdb368d650155a2f14060808178b6d6a630d4cf7175667cc12a7e80d9"
+    },
+    {
+      "path": "docs/geely-zeekr-xpeng-evidence.md",
+      "bytes": 9716,
+      "sha256": "4b9ae1f311618c04992a7e77c7e66d0de6a69470e921c6ffd71c7f4c2772ca93"
+    },
+    {
+      "path": "docs/geely-zeekr-xpeng-integration.md",
+      "bytes": 5130,
+      "sha256": "e01e7d69938784348c3a7777f3af444ed4cde297bb2e6f7e83ddffa004eb577a"
+    },
+    {
+      "path": "docs/leapmotor-evidence.md",
+      "bytes": 7336,
+      "sha256": "a410299f48f76c994fd0367a1ca825334027a913791152742ea0ed0ef7cd8510"
+    },
+    {
+      "path": "docs/omoda-jaecoo-evidence.md",
+      "bytes": 8709,
+      "sha256": "b7c4ca94cb7509ba84944cbcb603a35f0fb1bc7dcf964e5670a2661b5b5edb48"
+    },
+    {
+      "path": "docs/performance-payload-audit.md",
+      "bytes": 14492,
+      "sha256": "dcd3ad24e3de833aa3ba6b72f16097c2cc1c6d19725668997bd0fe0f38a512c8"
+    },
+    {
+      "path": "docs/remaining-electric-vans-evidence.md",
+      "bytes": 34468,
+      "sha256": "9f252bdc591400ec4af56453d1752568b4515b68ae5163da2820383fc15282b3"
+    },
+    {
+      "path": "docs/remaining-electric-vans-integration.md",
+      "bytes": 12221,
+      "sha256": "9c8c7140c15df868e4e0b705c0e19332908451edcebbe6abdb60cae0dd73c5a5"
+    },
+    {
+      "path": "eslint.config.mjs",
+      "bytes": 347,
+      "sha256": "b1b6d3c3376a8fc2a6a2fa3fa5c231a3b87a54705dcf6e8de2d34af015ebaeb4"
+    },
+    {
+      "path": "media/approved-assets.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "media/original-assets.json",
+      "bytes": 3746,
+      "sha256": "9478f7e90f13bd3bb92d36f92c48335cb4405c5d187f58bd483055cd3e7fee1e"
+    },
+    {
+      "path": "media/tesla-media-candidates.json",
+      "bytes": 491,
+      "sha256": "16a091588ff91fc5aefc5832c2895ea1fe6276a71ed80ff2d637a32f65e82029"
+    },
+    {
+      "path": "next-env.d.ts",
+      "bytes": 288,
+      "sha256": "1862ac4bbbc5192d4bf562161df66ea547ed3e67173100656ab606ae9797db2b"
+    },
+    {
+      "path": "next.config.ts",
+      "bytes": 1770,
+      "sha256": "996afb434a51bc65ded25615a9e1e3bb5cb2c1756cedc0230b84ea72bebf7f28"
+    },
+    {
+      "path": "package.json",
+      "bytes": 1884,
+      "sha256": "db20096ad2e46b8345f76137af186273c42750149b7e46d8bf70a6ce50086c86"
+    },
+    {
+      "path": "playwright.config.ts",
+      "bytes": 577,
+      "sha256": "6b9de212c5f8336812488539ecbc8d55c65c2aeb8fb9261225e3b0f62f5a1335"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "bytes": 170217,
+      "sha256": "636941d08fa47ce568b6bb8ec03adcb9872ac94e81603330a83e7f92eceebe1b"
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "bytes": 51,
+      "sha256": "859e428e9745e2661c1f21a7ca35be06533c8332a78cb7325623fdade28e4ae6"
+    },
+    {
+      "path": "public/media/chapters/a-automated-driving-hero-desktop-still.svg",
+      "bytes": 7598,
+      "sha256": "2cfe5f820ec2b09e6e4740d3fc07fc69ac954343a8df95e9ba86a9af5965861e"
+    },
+    {
+      "path": "public/media/chapters/a-automated-driving-hero-desktop.svg",
+      "bytes": 76526,
+      "sha256": "a334198a4384863c2e3a2a1a5cb90130db92ea58307ada050c6f11a20f46aefa"
+    },
+    {
+      "path": "public/media/chapters/a-automated-driving-hero-mobile-still.svg",
+      "bytes": 7532,
+      "sha256": "bc813b9d3ab9b361ace94c81ef43f5a8aff487ab0ff5f7e4568a8c5879326424"
+    },
+    {
+      "path": "public/media/chapters/a-automated-driving-hero-mobile.svg",
+      "bytes": 76460,
+      "sha256": "2235f3b55e83d1e55a90e56b97d1372074b206b7940be109b99abeaab1decc62"
+    },
+    {
+      "path": "public/media/chapters/b-price-ownership-desktop.svg",
+      "bytes": 2869,
+      "sha256": "c091ee87cbab9fc2300f86f2608dd21ed2debf38751860090cf31d16545f5563"
+    },
+    {
+      "path": "public/media/chapters/b-price-ownership-mobile.svg",
+      "bytes": 2869,
+      "sha256": "111ae98ca1aed6474b50a57e440d33760ce96cbe32266ed9e82c9f7ee30a2006"
+    },
+    {
+      "path": "public/media/chapters/c-range-charging-desktop.svg",
+      "bytes": 2108,
+      "sha256": "1dcca8353f13565737c86e53fcec47ab92addba41d7b1d700b746ed0203c10f4"
+    },
+    {
+      "path": "public/media/chapters/c-range-charging-mobile.svg",
+      "bytes": 2108,
+      "sha256": "993b25676a9da77f6da3e02b3626667bd1b7fc1d879b1bc5c513a4d7c07d7e66"
+    },
+    {
+      "path": "public/media/chapters/d-space-safety-desktop.svg",
+      "bytes": 2858,
+      "sha256": "2fea1935e50c99986e3478d9ba8cc424b9d76d0595fff84a263ea4efc2f341c0"
+    },
+    {
+      "path": "public/media/chapters/d-space-safety-mobile.svg",
+      "bytes": 2858,
+      "sha256": "967afb264d6c1da2fa92cc9afd9b9537e82fdd02fcce432fbe0ed8efc03eca09"
+    },
+    {
+      "path": "public/media/chapters/e-daily-convenience-desktop.svg",
+      "bytes": 2019,
+      "sha256": "7bc657839fa2e6e692e0cace30f3d981003f1ae3f09eda2b303becd4817c2aba"
+    },
+    {
+      "path": "public/media/chapters/e-daily-convenience-mobile.svg",
+      "bytes": 2019,
+      "sha256": "e941beedbce333b510bbd3783fdf7f753a8732bd209bdbbfb0fb630b99e9ecf7"
+    },
+    {
+      "path": "public/media/chapters/f-comfort-drive-desktop.svg",
+      "bytes": 2692,
+      "sha256": "2ef20c29a4c5e098d0837e666869740ff057e24d1143fa550a5614a835b6cbad"
+    },
+    {
+      "path": "public/media/chapters/f-comfort-drive-mobile.svg",
+      "bytes": 2692,
+      "sha256": "0f67eb519c65e41d8ba1810a350c9d7fc5701f87f3f95f056b723085711d9957"
+    },
+    {
+      "path": "public/media/chapters/g-software-tech-desktop.svg",
+      "bytes": 2591,
+      "sha256": "9c38493e030efd44f049fcb120fef1666b7589f8fffe539897691f53f9a7b83c"
+    },
+    {
+      "path": "public/media/chapters/g-software-tech-mobile.svg",
+      "bytes": 2591,
+      "sha256": "e2d742f5b50bbcf94d0edd3c0ac5e84cb647ec0bbebae10ff1c8852a5b1578a4"
+    },
+    {
+      "path": "qa-fleet.mjs",
+      "bytes": 1777,
+      "sha256": "5e1ae4f628827c36b7705d59cb62c41752bb84e8705f42e753121e632bb1bff4"
+    },
+    {
+      "path": "qa-refinement.mjs",
+      "bytes": 1484,
+      "sha256": "ed0938f879bdf6132e0ee781874a764a978e86a829cf3361864ccceca7cb7367"
+    },
+    {
+      "path": "qa-scenes.mjs",
+      "bytes": 7161,
+      "sha256": "7ac28ffbb5eb9d35029585ccf66a95932b838a4c898eef33acf88d5ea7e77282"
+    },
+    {
+      "path": "qa/denza-gac-smart-integration-fixture.json",
+      "bytes": 30279,
+      "sha256": "a8723f1093d4cbf69754ca1ad84e5ef57fff55069e44f57d11fcc2c177cc309f"
+    },
+    {
+      "path": "qa/fonz-integration-fixture.json",
+      "bytes": 3190,
+      "sha256": "1d86fb79768cb1e99d13d2d98236f8db72488dbc654a8276efa8c8d4d6bb66be"
+    },
+    {
+      "path": "qa/fonz-z-integration-fixture.json",
+      "bytes": 11202,
+      "sha256": "5068fd9f80a02cbed0c5e3b46f458d59a5a9ef3c59beb722bd16381a65f26d2f"
+    },
+    {
+      "path": "qa/ford-custom-integration-fixture.json",
+      "bytes": 8541,
+      "sha256": "b1d385f93fe3aa3fcfb66aebe9914ccbec33148e147a1102cdfb03cb3835a75b"
+    },
+    {
+      "path": "qa/hyundai-feature-aliases.json",
+      "bytes": 33063,
+      "sha256": "5240564939e0070a76b45b2d1738c731ce61595e1039def3dc9f543a446e3ac4"
+    },
+    {
+      "path": "qa/hyundai-integrated-ids.json",
+      "bytes": 1243,
+      "sha256": "137cf8ec47eea302516d471a02199aa759729dd42c1fba2e95a5a1a6a22a66ba"
+    },
+    {
+      "path": "qa/hyundai-integration-checks.json",
+      "bytes": 1783507,
+      "sha256": "c1694e55eb5dd30fdb64907a27d704340273ed059473b510804ae8570d821590"
+    },
+    {
+      "path": "qa/jeep-ora-integration-fixture.json",
+      "bytes": 9584,
+      "sha256": "1e8523169d069093e59935478c78ed973e50eaf2deb4d0b4cec2c4e85d458f55"
+    },
+    {
+      "path": "qa/junior-integration-fixture.json",
+      "bytes": 2825,
+      "sha256": "1c00f2ffec5d87e8ba941cb4c5eca5858b3f8883a0bdcbfc1c1f55a210b4f00d"
+    },
+    {
+      "path": "qa/mache-mazda6e-integration-fixture.json",
+      "bytes": 16541,
+      "sha256": "801644d3c9c6161d76e108ddf0366e8a76cbfd3ab6e7e5b8365817accd7a0267"
+    },
+    {
+      "path": "qa/market59-reconciliation-fixture.json",
+      "bytes": 505,
+      "sha256": "c9e795b251748ebf138158f08130146f328740da0eab99531361feaab3e59b60"
+    },
+    {
+      "path": "qa/remaining-volkswagen-integration-fixture.json",
+      "bytes": 10827,
+      "sha256": "7ec5cd2e95fdba9fa975a285f45308d8095645625155b05203d9f4e6e39c6fe4"
+    },
+    {
+      "path": "qa/road-scooter-field-map.json",
+      "bytes": 17803,
+      "sha256": "51b20611344e3544f763be1f2d1ffd7d36a443b8fc1d3bb958e552ec06cd37e7"
+    },
+    {
+      "path": "qa/road-scooter-integrated-ids.json",
+      "bytes": 257,
+      "sha256": "5959a8554257514b081370cb8fd4f47def3582095feddbb861b5dcc4c2a200a9"
+    },
+    {
+      "path": "qa/road-scooter-integration-checks.json",
+      "bytes": 120032,
+      "sha256": "9a07ee775597943722f3d8759e2fe0f418aa3daeae907e20a1a3d7c1ee80882d"
+    },
+    {
+      "path": "qa/stark-integration-fixture.json",
+      "bytes": 18215,
+      "sha256": "3e861c46465b7d191e5961cbfa65b0451709af0552e0ccac042cf9d61647b0a2"
+    },
+    {
+      "path": "qa/suzuki-integration-fixture.json",
+      "bytes": 5311,
+      "sha256": "c87126bd040b64aa278de74cfe27e259b03a82d30d81221bdb6cd6c112f305d4"
+    },
+    {
+      "path": "qa/ute-van-feature-aliases.json",
+      "bytes": 21883,
+      "sha256": "b8b396a4a32766552f0ac5362bbcf8737193ffa1d4cc1413522917c386d4f86f"
+    },
+    {
+      "path": "qa/ute-van-integrated-ids.json",
+      "bytes": 605,
+      "sha256": "f1a1436120637a3f6760c65f51cb868da41ea385515316f7f63a6bec7d882796"
+    },
+    {
+      "path": "qa/ute-van-integration-checks.json",
+      "bytes": 497653,
+      "sha256": "8811d8ccc38a929005b14d205c80db1a60291923e60e94882ab5379d86320d1d"
+    },
+    {
+      "path": "scripts/audit-completeness.ts",
+      "bytes": 959,
+      "sha256": "c27fc2192d589c94f8b5c385da5c61424a53828e1e7bc308dd6b06ca615809c5"
+    },
+    {
+      "path": "scripts/audit-price-ladder.ts",
+      "bytes": 3004,
+      "sha256": "9aba50d6bcfa1e3b55c88e7241dbdfdde91abf2c7a886cc3280eabe3b26d47a8"
+    },
+    {
+      "path": "scripts/benchmark-discovery.ts",
+      "bytes": 1307,
+      "sha256": "0e2fc4ccbfc70e259e58533a4d9b3cd484e9fe0570f53e41cdc11e6bcc800693"
+    },
+    {
+      "path": "scripts/benchmark-production-response.mjs",
+      "bytes": 2807,
+      "sha256": "3503d07c091a4331b83513cd5ee2467c950fc5f8424145a11bb7c208fa83e2bf"
+    },
+    {
+      "path": "scripts/build-buyer-overlay.py",
+      "bytes": 10879,
+      "sha256": "7ee5f2ba228c9573d4b5cd897b94f042559472c5eed52abdc8e330f2db8b0756"
+    },
+    {
+      "path": "scripts/build-chapter-art.ts",
+      "bytes": 15120,
+      "sha256": "40e76a0dd224b39df94db7052394c5209b20165008a8aca20a3f3f38cbba83bb"
+    },
+    {
+      "path": "scripts/build-completion-overlay.py",
+      "bytes": 63009,
+      "sha256": "1404599d79b29ff14fb7e20770d48e3f62564a492651cdae22db89bc403c4b8c"
+    },
+    {
+      "path": "scripts/build-editorial-overlay.py",
+      "bytes": 57428,
+      "sha256": "2b00b77281d3f01795a1e6400ed5a527df5acd0fc778e6eedfae5702089277a5"
+    },
+    {
+      "path": "scripts/build-portable.ts",
+      "bytes": 3802,
+      "sha256": "93972a317c513acf9121a62390974c9487ba39e2a916a8f8764090c11fda3ebd"
+    },
+    {
+      "path": "scripts/build-public.mjs",
+      "bytes": 1818,
+      "sha256": "3a93dba17d36f531eff866a859f90f3772945dd346e1388061bec35d0e602400"
+    },
+    {
+      "path": "scripts/buyer_rows.py",
+      "bytes": 33952,
+      "sha256": "9c015fe011d4f42ba41d3acc2a9b4b4c3a10e01089fcb60ceae5c2c5459ea11d"
+    },
+    {
+      "path": "scripts/buyer_rows_2.py",
+      "bytes": 47108,
+      "sha256": "050b0658f16eaf2eb133001f29c8b639a39d8fa716529a532e4ae3251ea682a7"
+    },
+    {
+      "path": "scripts/chapter-art-driving.ts",
+      "bytes": 17323,
+      "sha256": "5bdd0be860c3b7e838259277e3ae31b029b0d7b52c6f43bd5be82d23bc4f1f61"
+    },
+    {
+      "path": "scripts/chapter-art-kit.ts",
+      "bytes": 1460,
+      "sha256": "e710193ce5587015c8d865ea4230196181708f8224ae22905d7927f62dc00e8e"
+    },
+    {
+      "path": "scripts/extract-price-ladder.py",
+      "bytes": 10912,
+      "sha256": "420168e849fcc95057b339847f4e5a2e44fd6ccb7f99f41ca9836b8079edb581"
+    },
+    {
+      "path": "scripts/generate-market-view.mjs",
+      "bytes": 2825,
+      "sha256": "467a83f5e774e23faf0eeca2fba4d9c33dbbce7077719f2432c80cae14d95961"
+    },
+    {
+      "path": "scripts/normalize-buyer-identities.ts",
+      "bytes": 2333,
+      "sha256": "467391c04dbf72414e99acd3bb5fbf048c7bb19cefa06d01e643a6ed1a0ab4ea"
+    },
+    {
+      "path": "scripts/package-history-archive.py",
+      "bytes": 2354,
+      "sha256": "68b58eacde64af8821cb3263019c620c85e3b1eac263c11d070dc5b9442237ec"
+    },
+    {
+      "path": "scripts/package-source.py",
+      "bytes": 8343,
+      "sha256": "1742adb876b577a9b71b477f5d8a1313595fd37ca7eb74c4969b99a26910b5e6"
+    },
+    {
+      "path": "scripts/preview-report-review.ts",
+      "bytes": 6737,
+      "sha256": "d01375f8cecf89fa034de48cff7dc3ec68d336386b578612db83462338027241"
+    },
+    {
+      "path": "scripts/qa-extra.mjs",
+      "bytes": 4512,
+      "sha256": "3e2ec8f618d63733592b2c9ae7fec4bf832c30b394985bdcba6682dbd150424a"
+    },
+    {
+      "path": "scripts/regrade-retained-evidence.ts",
+      "bytes": 5946,
+      "sha256": "9b74e436c8fa943d31bf6699763b9cb27a0863f595163a280ad56d0e78b591d9"
+    },
+    {
+      "path": "scripts/report-coverage.ts",
+      "bytes": 826,
+      "sha256": "e833bce9143450f5f3fa9b7ef472aeb90e042c13a6b3bb206dd0204ee7016929"
+    },
+    {
+      "path": "scripts/report-stale.ts",
+      "bytes": 895,
+      "sha256": "06a4505f483d7abd711573e5e393950ef924840a7bd832260648eb38b5c662fe"
+    },
+    {
+      "path": "scripts/reporting/load.ts",
+      "bytes": 6512,
+      "sha256": "d56114d611705b149c7bf6ecd8cc8103130cb9510516535c0c912b42362c7d53"
+    },
+    {
+      "path": "scripts/reporting/m1-reconciliation.ts",
+      "bytes": 26263,
+      "sha256": "4b42c0b69031b0a3f450f883a278c2cbc9f37aa8519478b45649b3cf07924cc0"
+    },
+    {
+      "path": "scripts/reporting/reports.ts",
+      "bytes": 36652,
+      "sha256": "e8514fdd9a3bcc6fd5a4351515a1b26a181ec2f8a69c1cee299347a833ffc88b"
+    },
+    {
+      "path": "scripts/serve-roadmark.ts",
+      "bytes": 8385,
+      "sha256": "b21fb6a6298ee955ba00334614e9ec2ff0aa62f63af0be1d65706d3f7811bc85"
+    },
+    {
+      "path": "scripts/serve-static.mjs",
+      "bytes": 1559,
+      "sha256": "552730cf8e22eb023ca1154cfd6767dbccedcdbc699f9b9837b204e92a72407c"
+    },
+    {
+      "path": "scripts/validate.ts",
+      "bytes": 2424,
+      "sha256": "0b3feed9161fe10206b5ab1fc2bb236605f70c90ffdebde664df37a2e7d1b3c0"
+    },
+    {
+      "path": "src/app/b/page.tsx",
+      "bytes": 1457,
+      "sha256": "a34be83feccdbe4a22ac895d5a926b8a684e0a07c7b8e8dfa19aa11ce5a08185"
+    },
+    {
+      "path": "src/app/cars/[family]/[variant]/page.tsx",
+      "bytes": 1556,
+      "sha256": "3a17bac14e82ddce8bee9ce2264fe94fd01721fca88bc8e09c7899f3aa72e2fd"
+    },
+    {
+      "path": "src/app/cars/page.tsx",
+      "bytes": 1118,
+      "sha256": "07e37f20d9c38e3e09a7f87344f62f1ea7f927da1cf4f8aa07a3b7382eb5903e"
+    },
+    {
+      "path": "src/app/compare/[pair]/comparison.json/route.ts",
+      "bytes": 530,
+      "sha256": "14b1d3d39afa4a83fc00158534101848a55a881ed0c486e7c7b7d350ff8286a3"
+    },
+    {
+      "path": "src/app/compare/[pair]/comparison.md/route.ts",
+      "bytes": 636,
+      "sha256": "54dc331f312a8ce69fb41538b2cbea2348bafbd2e01fb0380e8eb60162a0a23f"
+    },
+    {
+      "path": "src/app/compare/[pair]/page.tsx",
+      "bytes": 2560,
+      "sha256": "9f2254b67381fba390687da0d9a3ed2ca8f7a641339db5bb9a9f4c248901019a"
+    },
+    {
+      "path": "src/app/compare/page.tsx",
+      "bytes": 1101,
+      "sha256": "96c999e95daf24ca718f2225ab0311608c159eebfad643b932837cb99ae06728"
+    },
+    {
+      "path": "src/app/comparisons/page.tsx",
+      "bytes": 1050,
+      "sha256": "4f94829be89e9f6b80ae939d39ae11c67aad5641c8cb3a28aa5df1c050b4b62d"
+    },
+    {
+      "path": "src/app/discover/page.tsx",
+      "bytes": 650,
+      "sha256": "4799f370524a77b27436f6fa03dc552e3fcf5747db18509a38d810a2e1bb5829"
+    },
+    {
+      "path": "src/app/error.tsx",
+      "bytes": 189,
+      "sha256": "6b190b134099cfbf86546eb4592ba23e42a207bef188c9932d44870aa6ae82bc"
+    },
+    {
+      "path": "src/app/globals.css",
+      "bytes": 114336,
+      "sha256": "a2f4995e8d502cf26ed0bc4c3efda17da4586212c45ccaa2673ef2daf7939af6"
+    },
+    {
+      "path": "src/app/glossary/page.tsx",
+      "bytes": 4530,
+      "sha256": "e0fbd05302daec1264b2b33ef7bd8cb96eaccaeac2848df4574fd70a59a1e6fe"
+    },
+    {
+      "path": "src/app/icon.svg",
+      "bytes": 185,
+      "sha256": "8051b48b20ddb674a6b30d47db65ee4dbe6f7af5552a80d8e284f9aab36c5c29"
+    },
+    {
+      "path": "src/app/layout.tsx",
+      "bytes": 727,
+      "sha256": "86c839eff0fc22fa1c9a01225c3188004da9d027a76aa6cdaf815e7bb7d3119c"
+    },
+    {
+      "path": "src/app/llms.txt/route.ts",
+      "bytes": 1406,
+      "sha256": "995fdee09438a0fd997386b6501fcbb9cd80ae0259e537accca714dfe70b18b0"
+    },
+    {
+      "path": "src/app/market/page.tsx",
+      "bytes": 231,
+      "sha256": "b52174e9dede2a7fadc867ef8517e9f26e2b4885a005345af87c3050a184eb57"
+    },
+    {
+      "path": "src/app/methodology/page.tsx",
+      "bytes": 10334,
+      "sha256": "414f1fe5e8de53929aa2b687e6086c8440cfd641832e2b5d981c985d4970be65"
+    },
+    {
+      "path": "src/app/model-y/page.tsx",
+      "bytes": 2146,
+      "sha256": "2f4fcac5921205e54c488beda18cb036e2f6378c4331acfa437c782bd7491c30"
+    },
+    {
+      "path": "src/app/not-found.tsx",
+      "bytes": 483,
+      "sha256": "c9b8ee59daa59dbedc2b3837f48614896bc112f596aa374c507cb082ba449ecf"
+    },
+    {
+      "path": "src/app/page.tsx",
+      "bytes": 1246,
+      "sha256": "94d32047c3253b6417e336a585330f63d4aaa320be02038f5437cf08f867269f"
+    },
+    {
+      "path": "src/app/review/page.tsx",
+      "bytes": 199,
+      "sha256": "cc279b320392ccce3bd94772d903be5718b82a16ff9a05163a570485f2912514"
+    },
+    {
+      "path": "src/app/robots.ts",
+      "bytes": 631,
+      "sha256": "3215e5e2ac8797ae338e6281e24f5cdc1f20114a0c9dec5aba98e0da8a32f78b"
+    },
+    {
+      "path": "src/app/sitemap.ts",
+      "bytes": 689,
+      "sha256": "96c837dc08cd73fc292e02138d0bdf3e05cae7134a9b66939df4ac304737fd8e"
+    },
+    {
+      "path": "src/app/software/page.tsx",
+      "bytes": 906,
+      "sha256": "4fb47d12d65d295ede153159b182c2396d7b3e1f16068af666a57cb7939b649e"
+    },
+    {
+      "path": "src/app/sources/page.tsx",
+      "bytes": 3578,
+      "sha256": "b37217edbe14af0b2905fbe167fc6c9110d1bfe2612626c3b51d007b5008ce57"
+    },
+    {
+      "path": "src/components/buyer-summary.tsx",
+      "bytes": 1933,
+      "sha256": "b4e14f061684e38a370efc91afc3d6dd4577407ace12499afc1cba1ce3dd88a6"
+    },
+    {
+      "path": "src/components/car-avatar.tsx",
+      "bytes": 5493,
+      "sha256": "dd7854783e5a8297af3b7494cade89f73c8e114d0d05bfe4878f1134727962d2"
+    },
+    {
+      "path": "src/components/chapter-art.tsx",
+      "bytes": 4213,
+      "sha256": "f70189a09e601315e3843976632ed3215f6a17badf04807370959aa926eada91"
+    },
+    {
+      "path": "src/components/citable-report.tsx",
+      "bytes": 5677,
+      "sha256": "83f1f503604b3d1c5de7bb0f7cc18bd5dbf3fdb5727069807606a052c0e71006"
+    },
+    {
+      "path": "src/components/claim-report.tsx",
+      "bytes": 6884,
+      "sha256": "7fbb3e52940f3df260827f902dddda45664d1003649ce9020bea993e4770df4a"
+    },
+    {
+      "path": "src/components/comparison-symbol.tsx",
+      "bytes": 1518,
+      "sha256": "3cddc36f9fa8a2c199cf092e8de88e250328f093a072229968db0432742f734c"
+    },
+    {
+      "path": "src/components/copy-for-ai.tsx",
+      "bytes": 1427,
+      "sha256": "d171920d7813268c785cac19149b1080bdef09e14b2c368af8f63add687cddf2"
+    },
+    {
+      "path": "src/components/correction-history.tsx",
+      "bytes": 4091,
+      "sha256": "92a62f4bb7888fa65f894afa5f25577b7001e0f0d61e1344b8c31867710f6edb"
+    },
+    {
+      "path": "src/components/detail.tsx",
+      "bytes": 7212,
+      "sha256": "7f0ef477b0da37863d153a6d2afa760ece908cf73069b9b30f3331fb302ec324"
+    },
+    {
+      "path": "src/components/discovery.tsx",
+      "bytes": 31907,
+      "sha256": "294c09961892f32f520a8ab085ad3d0758468c59b850a298e4f8960ab8039a76"
+    },
+    {
+      "path": "src/components/evidence-conditions.tsx",
+      "bytes": 717,
+      "sha256": "c09249a1528f93b5cac37c13b949e23ba75b40835da0d3a177838a92e4743eba"
+    },
+    {
+      "path": "src/components/experience.tsx",
+      "bytes": 37583,
+      "sha256": "4563a0cedf7120eeafc322c681eedf456c48b1573c142df50e0686a5c3517307"
+    },
+    {
+      "path": "src/components/explorer.tsx",
+      "bytes": 11699,
+      "sha256": "c8b2807cc99258df065ed8dd1002ffa4643f523e3de9f4ff7b688ac6c5321d06"
+    },
+    {
+      "path": "src/components/fleet-experience.tsx",
+      "bytes": 25658,
+      "sha256": "27e825935dc6b72b6392531838ac00f3e37073c15add22b8d6e3c14ff27f05a3"
+    },
+    {
+      "path": "src/components/fleet-swipe.tsx",
+      "bytes": 7160,
+      "sha256": "454cfd0de9e35bcffbfd3bc912955f40418fde34945d00b651c9a97852f81010"
+    },
+    {
+      "path": "src/components/footnotes.tsx",
+      "bytes": 6218,
+      "sha256": "b9917980611e7fdf4886b0f263d6e3cd79150a907c342a7833cc57f956b65815"
+    },
+    {
+      "path": "src/components/freshness-label.tsx",
+      "bytes": 2107,
+      "sha256": "baeadada348505e0bc41a28e3e6e8e0c93faa559b6e6b911d644623cca07982c"
+    },
+    {
+      "path": "src/components/market-audit.tsx",
+      "bytes": 9008,
+      "sha256": "000437a84e02f9cbb234038fbd016bd65a3b354898712511f5b980b0af0b372a"
+    },
+    {
+      "path": "src/components/model-y-verdict.tsx",
+      "bytes": 6082,
+      "sha256": "c01f95e4b6738184609b9b50adc9c77b2cadece144038929f1dae885573693b4"
+    },
+    {
+      "path": "src/components/picker.tsx",
+      "bytes": 12404,
+      "sha256": "80bce56ff5459c1b5518e31cca2e9fdbd6429492f2a2411bfa7886f75f0079d8"
+    },
+    {
+      "path": "src/components/review-queue.tsx",
+      "bytes": 7439,
+      "sha256": "8662c68fa2c53b1c0c97a13464bc152a7b244e3e6327a9b4395dc41ce605de17"
+    },
+    {
+      "path": "src/components/roadmark-error.tsx",
+      "bytes": 1484,
+      "sha256": "64b3f6209e66489f450b092a010dce7f1a153704bd397c6f9ab61fbb577df2c3"
+    },
+    {
+      "path": "src/components/roadmark-logo.tsx",
+      "bytes": 8791,
+      "sha256": "a60f9bee01195bccd4d201053edf07fdb58078a189d4d73e033a598e03c6889a"
+    },
+    {
+      "path": "src/components/scene-canvas.tsx",
+      "bytes": 9461,
+      "sha256": "d5847b8cbb796fdcd2c1b7e757559d14b7163f9dea25de6a2e98c369feaa1848"
+    },
+    {
+      "path": "src/components/selected-copy.tsx",
+      "bytes": 364,
+      "sha256": "ba14b26c9cd66e1785d48e26e7ff4379f09b2c7c02bd5fed0e6125c099fd7cb9"
+    },
+    {
+      "path": "src/components/site-shell.tsx",
+      "bytes": 1471,
+      "sha256": "d38752aa0f75e93043466048c53556310fa6b49a01ad498043cfa321978d839a"
+    },
+    {
+      "path": "src/components/software.tsx",
+      "bytes": 2114,
+      "sha256": "61178d443a93a1bc8f6d1ae7a8f151e76c5ed70de5ea3aa510eacfb3d56da8bd"
+    },
+    {
+      "path": "src/components/source-registry.tsx",
+      "bytes": 2350,
+      "sha256": "04fd9a62437a4031ed2cfc6232bb80c9811dc7d14e94880c7b59e6256e58583e"
+    },
+    {
+      "path": "src/components/static-comparison.tsx",
+      "bytes": 1294,
+      "sha256": "3596d553cb5029627d7684f3a776ac17ad2a9ce7e29a995bfe7bc022c0c030aa"
+    },
+    {
+      "path": "src/components/ui.tsx",
+      "bytes": 26197,
+      "sha256": "2bf1721150e93ba747970e77fb72f9470bb8c097598b27c2f2b98e6e7498ceff"
+    },
+    {
+      "path": "src/components/verdict-pictogram.tsx",
+      "bytes": 4373,
+      "sha256": "8bc88e89f8d433c2811ed4e5058669432554db36022fc96f8cf4bb41fb39ff0c"
+    },
+    {
+      "path": "src/components/visual-action-feedback.tsx",
+      "bytes": 300,
+      "sha256": "11464bac80fd074f058f3f98930be7579c02d95b65b63a2d4d16b837b2136ecf"
+    },
+    {
+      "path": "src/components/with-evidence.tsx",
+      "bytes": 344,
+      "sha256": "53bad778aab02e4d14b793445ff53ca76f9d98675760e06cf00027ab650dbc8f"
+    },
+    {
+      "path": "src/lib/action-feedback.ts",
+      "bytes": 1229,
+      "sha256": "0585c13521cf12106ebb20699c14bf46e1754e1aa13a8e4f6c0afb6481368b98"
+    },
+    {
+      "path": "src/lib/availability-corrections.ts",
+      "bytes": 5670,
+      "sha256": "9e75e8ebce7c4392c37f46d12873bbaa472cdd1a0b127c8a89c55a34a9d94b47"
+    },
+    {
+      "path": "src/lib/brand-configuration-updates.ts",
+      "bytes": 11097,
+      "sha256": "66e65d559f71bb0ed606e67a01ebeb5ef4d6a1a5d220a280ebbdaa122b256b63"
+    },
+    {
+      "path": "src/lib/brand-update-registry.ts",
+      "bytes": 925,
+      "sha256": "826fc1f9093829a55ce638f42e89bc55baa41944671995b61076df8605365289"
+    },
+    {
+      "path": "src/lib/brand-updates.ts",
+      "bytes": 47540,
+      "sha256": "ddf52ae697c521a48788612a46c6c7c8d880b6c889ebd63b72299da139a3eb26"
+    },
+    {
+      "path": "src/lib/buyer-availability.ts",
+      "bytes": 3766,
+      "sha256": "07ef3746d960dc0a7e8608ad8b12db49e5ec474b63647d82ce7304a26e54c58e"
+    },
+    {
+      "path": "src/lib/buyer-display-copy.ts",
+      "bytes": 5764,
+      "sha256": "2d977241a95d6f83d25cee03c58cab1eb406042d3956e5133e0670f1da4f17be"
+    },
+    {
+      "path": "src/lib/buyer-proposal-storage.ts",
+      "bytes": 4108,
+      "sha256": "2febace11633321f2c103a0b3db4c4632df8e3601195922c4b83fce6354f7f7c"
+    },
+    {
+      "path": "src/lib/buyer-proposal.ts",
+      "bytes": 744,
+      "sha256": "588c5e79b694e63ecb785a80f6cef902544505a8d8fdf0492c355254ccf21b6a"
+    },
+    {
+      "path": "src/lib/buyer-summary-timing.ts",
+      "bytes": 320,
+      "sha256": "085ccd0fed859e31457eb8237f12cd9532264ebe5125ae5a23171ad8e79c1e5b"
+    },
+    {
+      "path": "src/lib/car-avatar-shapes.ts",
+      "bytes": 5862,
+      "sha256": "5eb5e0d35e6676afaf2cad34ca8bf101f3ac1a3b7119676c88d3fb270c0e5e85"
+    },
+    {
+      "path": "src/lib/catalogue-additions.ts",
+      "bytes": 1102,
+      "sha256": "87828b0925f7af8b735efffff6a44a2ae29bb4d4731183a539511f6e138a7523"
+    },
+    {
+      "path": "src/lib/chapter-art-src.ts",
+      "bytes": 156,
+      "sha256": "53e1de5a975d096775f2c2dd4674f3bff1bb4594f3e50d76a38ab823fa01a70f"
+    },
+    {
+      "path": "src/lib/chapter-art.ts",
+      "bytes": 4024,
+      "sha256": "e7ea3580fc5f5f22a140da6d3a5a22d70b46469a956f46ceb8aee0feb698912a"
+    },
+    {
+      "path": "src/lib/chapter-scenes.ts",
+      "bytes": 1243,
+      "sha256": "42b9bf2933afb595481b6bea1e46ecfc7e35d92bc1f38be2ea032b9092a00647"
+    },
+    {
+      "path": "src/lib/chapters.ts",
+      "bytes": 7932,
+      "sha256": "69b51024f414263e8827030e1a086034177d334e5dd069ec9ed71802524bc75a"
+    },
+    {
+      "path": "src/lib/citable.ts",
+      "bytes": 16063,
+      "sha256": "cd1daacc16940289d6da1af16ccc3b13512dbfb340ec5fa32844157ad128837a"
+    },
+    {
+      "path": "src/lib/compare.ts",
+      "bytes": 7403,
+      "sha256": "db7a3b134fa081b8894ae1bcaa520f88dbb85416916dae81aeb3183e91e5d5dd"
+    },
+    {
+      "path": "src/lib/comparison-context.ts",
+      "bytes": 1415,
+      "sha256": "e068fb2678aba7daf17151d501a7f253b883265ef65e9f764fd046239a3c663c"
+    },
+    {
+      "path": "src/lib/comparison-focus.ts",
+      "bytes": 1122,
+      "sha256": "522efa72db2a8eb9e8c20ce9f11f01852b9d91daa4a83a7862d2de50c1ad575f"
+    },
+    {
+      "path": "src/lib/config.ts",
+      "bytes": 1838,
+      "sha256": "12b3a1e5b1c7b60f6f80f52bb72ea0acbf0d2fe81119a31196112e1facdce9aa"
+    },
+    {
+      "path": "src/lib/configuration-evidence.ts",
+      "bytes": 621,
+      "sha256": "7ff6d81950d7ecd6697769cc01ef950d05b2e15fb4ea246a0a760559574f2aa3"
+    },
+    {
+      "path": "src/lib/correction-guards.ts",
+      "bytes": 2940,
+      "sha256": "1550c255ab7445d068cad6a32f5b6d652d8a3863e9665e0d913baac2c779fe04"
+    },
+    {
+      "path": "src/lib/corrections.ts",
+      "bytes": 12566,
+      "sha256": "24cb5824c9f6cf9a0b8d7c480cdc633be708de038d4732c3d52a43e8bd7f917d"
+    },
+    {
+      "path": "src/lib/data.ts",
+      "bytes": 21323,
+      "sha256": "a1deee5939dd30856494d49e152c0b2f51caeaec5ccdff02275689beb70afaab"
+    },
+    {
+      "path": "src/lib/detail-client-props.ts",
+      "bytes": 1008,
+      "sha256": "88b0e5a19172d7426004f828b60a6d9910326f6a0280dbd75f4731fdb4d5cc5e"
+    },
+    {
+      "path": "src/lib/device-issue-drafts.ts",
+      "bytes": 1234,
+      "sha256": "d296cbab2e1d5700f3ffbd9a2dec4eb08e9dbb2c8c6bcb64d2b921896914ef4d"
+    },
+    {
+      "path": "src/lib/discovery.ts",
+      "bytes": 14983,
+      "sha256": "d40ab1a68b081055bfd0d2a1e5a93ce6db862ae5ebaa5bfb01752e77fde4d44e"
+    },
+    {
+      "path": "src/lib/driving-sim.ts",
+      "bytes": 14344,
+      "sha256": "ca6c104caf0e7274a253b266ed09cdf6028b5e1fbbd05f9be7df5fc9ba1ee6b1"
+    },
+    {
+      "path": "src/lib/evidence-consumers.ts",
+      "bytes": 13475,
+      "sha256": "9aa9a2a63ddf5c733962577297b96b3e9fee5320ced0fffced7bc7c98262f47a"
+    },
+    {
+      "path": "src/lib/evidence-date.ts",
+      "bytes": 641,
+      "sha256": "8330e4c20317150c4c1e4ab9039b16562972741cdf0d4d1df2b86ea655574753"
+    },
+    {
+      "path": "src/lib/evidence-display.ts",
+      "bytes": 263,
+      "sha256": "2688f3e8f85e257b9ff74c939fed65e6b3211cfb00fd67f7c621a591c59ff764"
+    },
+    {
+      "path": "src/lib/evidence-grading.ts",
+      "bytes": 5199,
+      "sha256": "5159e32668fb0a9bfbc4c6740b35a469dccf0cfcc67d49245e14db3a3fac2191"
+    },
+    {
+      "path": "src/lib/evidence-regrade-policy.ts",
+      "bytes": 19878,
+      "sha256": "609cca2f9cf67d8dc378a3b55285938a8d889947f09496085df0f6f1eee06474"
+    },
+    {
+      "path": "src/lib/evidence-regrading.ts",
+      "bytes": 5591,
+      "sha256": "e8a38f4dca2e65d243c7e274cefcf04404589af48d5608afe1bdd81d4a91fae7"
+    },
+    {
+      "path": "src/lib/explorer-state.ts",
+      "bytes": 1561,
+      "sha256": "21a0a031b0dbaca5967099b55794f692eff049d7be96f7f2997ffcef48478e47"
+    },
+    {
+      "path": "src/lib/fact-presentation.ts",
+      "bytes": 586,
+      "sha256": "f9ebe52ef764decd6ab79fcee5d109e790c71833e2dff0c0f2a341388b585824"
+    },
+    {
+      "path": "src/lib/fact-validity.ts",
+      "bytes": 1428,
+      "sha256": "e63eae982b8ff117286e90c40601870cf030330c2975433cf1e01e26897ae5ca"
+    },
+    {
+      "path": "src/lib/feature-corrections.ts",
+      "bytes": 4748,
+      "sha256": "ea70dc9022ebc65107aede2100d790dbfb5a6fccc5906d99659000914381acd6"
+    },
+    {
+      "path": "src/lib/fleet.ts",
+      "bytes": 2754,
+      "sha256": "a703995220cd37d667c7a3d0a3304e0103ff5165fce38d3222dacebca1f37469"
+    },
+    {
+      "path": "src/lib/freshness.ts",
+      "bytes": 4689,
+      "sha256": "092a8281a4f8fdc07a305da8491c8f8ef340f33d97ddae10265f331cba76f893"
+    },
+    {
+      "path": "src/lib/issue-presentation.ts",
+      "bytes": 719,
+      "sha256": "98ddde091cc0f99f7b4e1bc95cbb50c5c1d4cccf5b669e85eff128ef554f973c"
+    },
+    {
+      "path": "src/lib/launch-evidence.ts",
+      "bytes": 7761,
+      "sha256": "e695329db1e89645a8a5d9f221b8cbc1585d71da72baa2dce4e8a3e167505459"
+    },
+    {
+      "path": "src/lib/local-report-intake.ts",
+      "bytes": 3291,
+      "sha256": "a9b6f6663cb120f28d859b1904a750888413536b58bebdd7a1dccca31245fb8d"
+    },
+    {
+      "path": "src/lib/local-report-store.ts",
+      "bytes": 3027,
+      "sha256": "12ae9579278a46325f16ee79870e55b91d2670fef7db3f63135dadf5b2940005"
+    },
+    {
+      "path": "src/lib/market-inventory-data.ts",
+      "bytes": 144,
+      "sha256": "1df809ae0521e986e99929dc18fe7958dd797cf0246266082f26bb567affd999"
+    },
+    {
+      "path": "src/lib/market-view-data.ts",
+      "bytes": 172,
+      "sha256": "5f31c96353a5274c49befbd5e2716ce2c8644429a418299b41d186a5af0f1fd2"
+    },
+    {
+      "path": "src/lib/media.ts",
+      "bytes": 1044,
+      "sha256": "64df39ac3c8d655ab458dff1623d9855b856ee408d18a8bcf5c53c1c1585944b"
+    },
+    {
+      "path": "src/lib/page-evidence.ts",
+      "bytes": 2049,
+      "sha256": "f1d11a021e2865e6eff1f41ee976e1bb7ab9bf4e3e423f55a33639f99b2e0377"
+    },
+    {
+      "path": "src/lib/page-props.ts",
+      "bytes": 1113,
+      "sha256": "e724d9974f5675530e172236ee47415a7248e8e65553fbc0de5336618d096048"
+    },
+    {
+      "path": "src/lib/pair-pages.ts",
+      "bytes": 1675,
+      "sha256": "d7f26fcc1e1a360471f4d1124775955834b35f62a4dd6c501b80a302b56fca16"
+    },
+    {
+      "path": "src/lib/picker-car.ts",
+      "bytes": 3464,
+      "sha256": "a6e2f076e56ef13076bed3f7c1b09181fea36864c26fbc6e2af65577a26b6319"
+    },
+    {
+      "path": "src/lib/portable-packs.ts",
+      "bytes": 1712,
+      "sha256": "6b4303fe0da00581769ae9dcc2118891999c90c5edde1486cee7021cda474771"
+    },
+    {
+      "path": "src/lib/portable-string-codec.ts",
+      "bytes": 4412,
+      "sha256": "5558a213166a5e697f072eb1cf79818cb21f533bcf267337d7f54d3316b76505"
+    },
+    {
+      "path": "src/lib/price-ladder.ts",
+      "bytes": 13254,
+      "sha256": "9939181e02d465717dea6bdcd5f598de155df385c55ce44963fe47bd49af0cd5"
+    },
+    {
+      "path": "src/lib/price-scene-copy.ts",
+      "bytes": 949,
+      "sha256": "19735c0c5b74db2b597998c83259fe1bd8029b7c5fbf89b38726c7f7f0e11011"
+    },
+    {
+      "path": "src/lib/publication-metadata.ts",
+      "bytes": 131,
+      "sha256": "337fdcd996d7657499019734aab762651b256419c68d34f79a11571c32961f4d"
+    },
+    {
+      "path": "src/lib/report-claim-binding.ts",
+      "bytes": 6953,
+      "sha256": "7c68329f50ad871fee86b70affd4b5547159d58ca84eab82105c4e7e2f1b0fc3"
+    },
+    {
+      "path": "src/lib/report-claim-shape.ts",
+      "bytes": 3470,
+      "sha256": "9f336749f2afa1dab0271c56074745384765ec0fb8365cd7ba1c66adb01eb070"
+    },
+    {
+      "path": "src/lib/report-queue-files.ts",
+      "bytes": 796,
+      "sha256": "fdc5480f50a18353dd80673aac49ad3e2e99cf93436a23a5b9151d8cfe647fd1"
+    },
+    {
+      "path": "src/lib/report-queue-projection.ts",
+      "bytes": 7942,
+      "sha256": "efdf2aaf1fc9092625838e7c5f4f9f516cb28b69a617b24f7059efea52d303e0"
+    },
+    {
+      "path": "src/lib/report-queue-reader.ts",
+      "bytes": 4911,
+      "sha256": "74286f1b01ca09c84677db2cb2d1f622ba8e525868e0dc446224e1fbdbcae4b0"
+    },
+    {
+      "path": "src/lib/report-review-dry-run.ts",
+      "bytes": 11449,
+      "sha256": "3aa9b6817764ad53f58ec4598c5a914e81c404f4f88ab750a4f667eafb0aad82"
+    },
+    {
+      "path": "src/lib/report-review-proposal.ts",
+      "bytes": 27423,
+      "sha256": "0e0fcea65b4cd9095a00a04f3bb7eaeafe93da402a91831cc86f4be5aa698e2a"
+    },
+    {
+      "path": "src/lib/report-submission-client.ts",
+      "bytes": 1568,
+      "sha256": "dc6f1573aa7dc5449ed88aa8a55956cba1a24165cefa07d6207dfc2eae379cf3"
+    },
+    {
+      "path": "src/lib/report-submission-state.ts",
+      "bytes": 2210,
+      "sha256": "484d1698dd5deea2d433fcb5ad0e4bbf618417699c60ac515381b52a608c6b3f"
+    },
+    {
+      "path": "src/lib/research-refresh.ts",
+      "bytes": 7775,
+      "sha256": "69d8dd8d9a6b7ae804445119d9bb4211dfe7142765534f28de675a9eefa99a1f"
+    },
+    {
+      "path": "src/lib/retained-fact-fills.ts",
+      "bytes": 5973,
+      "sha256": "06ba88fab408cee07441541d73d99e45d8b194bcc2c5111f6f1939a35b271e15"
+    },
+    {
+      "path": "src/lib/scene-loaders.ts",
+      "bytes": 5497,
+      "sha256": "eed2ec72783588485351cac7ebdad66756fa851abd28079cbed2ef6415f0aff1"
+    },
+    {
+      "path": "src/lib/scene-readout.ts",
+      "bytes": 5798,
+      "sha256": "ea09b496d2ab04ada6cfa6a1029bd120743bf372dd52ada4633cf25dcb300ee2"
+    },
+    {
+      "path": "src/lib/scenes/b/car.ts",
+      "bytes": 30108,
+      "sha256": "1104f281b7d13e49f00278d516e8a18731e999f3dd86f17a106a83852be17bff"
+    },
+    {
+      "path": "src/lib/scenes/b/comfort.ts",
+      "bytes": 9907,
+      "sha256": "192490c9f5d380fec73c0692f3e85f1d3cb4717853af6eb2181e6bfa09843e98"
+    },
+    {
+      "path": "src/lib/scenes/b/common.ts",
+      "bytes": 5766,
+      "sha256": "b6ddf9b824cad77c1fad57746d96f1f6d3abcfe66f7162a571119dfd8c8cbc1f"
+    },
+    {
+      "path": "src/lib/scenes/b/convenience.ts",
+      "bytes": 8010,
+      "sha256": "68862ced5e356a83a53e6bfdd2a457d5ddc8f24464c07a22aedf7c0baa039ee9"
+    },
+    {
+      "path": "src/lib/scenes/b/drive.ts",
+      "bytes": 17619,
+      "sha256": "cceb4b318345af95760ff7f4492ddead685bb7eac13bf014e8934c15cdd54d01"
+    },
+    {
+      "path": "src/lib/scenes/b/flat.ts",
+      "bytes": 3047,
+      "sha256": "d161f3a3191cc9011e817d42725ff95faa5379d98184d8f68fcc6f91d378a766"
+    },
+    {
+      "path": "src/lib/scenes/b/gl.ts",
+      "bytes": 30291,
+      "sha256": "e0f05bd0ff9d5a7444c8bc076a9ff110756c38f61ba0c447ac5b7907d378c9bb"
+    },
+    {
+      "path": "src/lib/scenes/b/home.ts",
+      "bytes": 2978,
+      "sha256": "03d876d4e2ca6c68cb285634f33a9b542e20f3a0df4eaab7fa4f24eabf802a5c"
+    },
+    {
+      "path": "src/lib/scenes/b/index.ts",
+      "bytes": 603,
+      "sha256": "18e4a7fc4067a402f0f4b2370aa63d843e089d522770f5c03c292a6ea5641c17"
+    },
+    {
+      "path": "src/lib/scenes/b/math.ts",
+      "bytes": 9156,
+      "sha256": "e4ea4b45da5789be3fd1e5e56997b52d4cdc8ebb396c149ba4cb03600b1e9022"
+    },
+    {
+      "path": "src/lib/scenes/b/mesh.ts",
+      "bytes": 10320,
+      "sha256": "a56aa3ce122c464dc6d37353e0534541a3878814205d8782eeff08f704595cb0"
+    },
+    {
+      "path": "src/lib/scenes/b/overlay.ts",
+      "bytes": 20907,
+      "sha256": "b6c18b5c857ed23c5a5251fe178a3933a7c44d4d196b58e3f5207d11a43af3f3"
+    },
+    {
+      "path": "src/lib/scenes/b/price.ts",
+      "bytes": 13628,
+      "sha256": "790ab8f131db037249e5108cb44c2a4103015f517be62eceff866a469181a906"
+    },
+    {
+      "path": "src/lib/scenes/b/props.ts",
+      "bytes": 10733,
+      "sha256": "91fa2bce7bfd872ff548e7fe969a31c6c1722ed4ea43e1655a9b1f110ec34000"
+    },
+    {
+      "path": "src/lib/scenes/b/range.ts",
+      "bytes": 16284,
+      "sha256": "0de7054204955ed71ce70c88b1744bbe69ed8f5ffa5bbcd8b09b22b918273edb"
+    },
+    {
+      "path": "src/lib/scenes/b/software.ts",
+      "bytes": 11574,
+      "sha256": "9bd2670cf616def7b7a23ae6937e089ed2861e988ee0512c5302e6599520c164"
+    },
+    {
+      "path": "src/lib/scenes/b/space.ts",
+      "bytes": 7434,
+      "sha256": "7caff62112859ffbf7bcd05eea213c66d1af16dc1b6a7f132fe4f83326de80e9"
+    },
+    {
+      "path": "src/lib/scenes/b/stage.ts",
+      "bytes": 6532,
+      "sha256": "8e6a6192ed25d73ce8514944f863f5410a6ccfc4e172adf77786c7e8a7d4cd11"
+    },
+    {
+      "path": "src/lib/scenes/b/town.ts",
+      "bytes": 13724,
+      "sha256": "a4506ece572600a2f63974caa558043b4400c44d46cb93d19212200ac8cec300"
+    },
+    {
+      "path": "src/lib/scenes/b/world.ts",
+      "bytes": 18060,
+      "sha256": "ad0f98f54e0ae1c2d91206e111b48cbcc760df5fc327b4a1f4c16ccce229abcc"
+    },
+    {
+      "path": "src/lib/scenes/comfort.ts",
+      "bytes": 9176,
+      "sha256": "1a93432de0c3833e125a12938a58b6fc4b7a4aa2fd3edbe6c5b4fc35f9809d9e"
+    },
+    {
+      "path": "src/lib/scenes/convenience.ts",
+      "bytes": 7291,
+      "sha256": "c2040cf1a9f5a491ae2bb66583d38baf3fc11d51d583ed1f761d755f28019690"
+    },
+    {
+      "path": "src/lib/scenes/drive.ts",
+      "bytes": 19795,
+      "sha256": "a5279e1f709d41aaea902ad01bcd8377fa9b88b462f4691e7f4db9aacbd27cad"
+    },
+    {
+      "path": "src/lib/scenes/figure.ts",
+      "bytes": 22745,
+      "sha256": "0f9478db6691b49a5d04de67ea74376acf0064d82b7e1b2507ca7ce936bd40d4"
+    },
+    {
+      "path": "src/lib/scenes/kit.ts",
+      "bytes": 25130,
+      "sha256": "19b2d89e1766a2db21a7b8203e7ffd3322a2004eca29e865797893b7bf6abda0"
+    },
+    {
+      "path": "src/lib/scenes/model-y.ts",
+      "bytes": 62039,
+      "sha256": "18da39f88913310d2cd7b91cc686bbdc8a3049a911e9f01b4a151a88fe58d0bc"
+    },
+    {
+      "path": "src/lib/scenes/price.ts",
+      "bytes": 8692,
+      "sha256": "29c411f4e497ffb1233bec82363ac4be2703f9f398767071e72f9b8132ebe27a"
+    },
+    {
+      "path": "src/lib/scenes/props.ts",
+      "bytes": 16109,
+      "sha256": "d7fd52470bd1b55a9e69ab644b1d3dbbf9e1e7becb4b029be380cbc196d060a2"
+    },
+    {
+      "path": "src/lib/scenes/range.ts",
+      "bytes": 10602,
+      "sha256": "8e6db67dd4a02a54cc29e0a65112ebc6251f5c58098b91ffcbb01adf5d97ab96"
+    },
+    {
+      "path": "src/lib/scenes/software.ts",
+      "bytes": 10065,
+      "sha256": "8e3b91780292fcd4c0df4063713e21d442acbfb646ea87b5e3e4c482b09d9e8f"
+    },
+    {
+      "path": "src/lib/scenes/space.ts",
+      "bytes": 7529,
+      "sha256": "29ffefe0acc6cb3cdb7737d946da4d143c7deca8c19deacd9434fb9f8fe9c90a"
+    },
+    {
+      "path": "src/lib/search.ts",
+      "bytes": 1847,
+      "sha256": "1cc767f7a3f1a36cf9cd4b2b9d4b55bdc905da058bdf6bc52691464939707274"
+    },
+    {
+      "path": "src/lib/selling-points.ts",
+      "bytes": 18439,
+      "sha256": "e812540370e7afb7cf555343a09b949d2e3876c2618ad02a0fb01c3511b9c17c"
+    },
+    {
+      "path": "src/lib/source-presentation.ts",
+      "bytes": 886,
+      "sha256": "6a87c94ced405c111494b76407527ccc8e8f222ff3e5b2c95a1c8be828816403"
+    },
+    {
+      "path": "src/lib/types.ts",
+      "bytes": 7393,
+      "sha256": "1756db9183e1c60c88ade175010e1f6f73467ec11eb69c71e7e6502f715f0ab7"
+    },
+    {
+      "path": "src/lib/validate-catalogue-issues.ts",
+      "bytes": 2041,
+      "sha256": "0340aca0cdcd85071cd107bc8a700a96206ae775db444f99ef155e91ffa79a2f"
+    },
+    {
+      "path": "src/lib/validate.ts",
+      "bytes": 3990,
+      "sha256": "5f0fab1d3827b4ba8220f49f08fbcdf78707f6e949b14726bf94a5122c7c919f"
+    },
+    {
+      "path": "src/lib/vehicle-scope.ts",
+      "bytes": 1552,
+      "sha256": "64afc2449e373399cc46aac72c12fd9b4ec0facd30bdd007f025ae83d47ced37"
+    },
+    {
+      "path": "src/portable/chapter-art-src.ts",
+      "bytes": 160,
+      "sha256": "8bb65e84021c892607eba7890b1a28ca0ee0944d812ff4cada6877d27a88be63"
+    },
+    {
+      "path": "src/portable/data.ts",
+      "bytes": 1230,
+      "sha256": "2e02649463f35015752cde5228c0359e52cdccab086c7ca46f910abc5a835f7d"
+    },
+    {
+      "path": "src/portable/entry.tsx",
+      "bytes": 4436,
+      "sha256": "0bdaab7d974e6b4da5a0580ed18002de87996e141e49e406652db52dfd5187c9"
+    },
+    {
+      "path": "src/portable/image.tsx",
+      "bytes": 315,
+      "sha256": "7cb6995f4f0920141c67c20eff62f4785aaf9fd0e079e6c02167722f3d91f4f2"
+    },
+    {
+      "path": "src/portable/link.tsx",
+      "bytes": 780,
+      "sha256": "31140de06908d3d089d6a0ae025e6cb37864334d4d2e642d7c39e029c506963b"
+    },
+    {
+      "path": "src/portable/market-inventory-data.ts",
+      "bytes": 141,
+      "sha256": "6f69cb9c54d9f78e5009eb7044bec9a4af6074a337d48db05cb6c5519589c62d"
+    },
+    {
+      "path": "src/portable/navigation.ts",
+      "bytes": 1147,
+      "sha256": "e5af0074795673341ddabb8d7ef408420c9c4ef109e9b81b37e0e311071dcac8"
+    },
+    {
+      "path": "tests/action-feedback.test.ts",
+      "bytes": 4819,
+      "sha256": "beb00ccc17ce4ccc3c8d4e1ab5dad14d0a32bb76caf286ad2ec53a82c46ff093"
+    },
+    {
+      "path": "tests/atto1-additions.test.ts",
+      "bytes": 2214,
+      "sha256": "047e924472f52f5411feca89698ac7a1bbb05c558e21779612706dae7f05ceaf"
+    },
+    {
+      "path": "tests/audi-porsche-catalogue.test.ts",
+      "bytes": 4095,
+      "sha256": "4a6f22718587fb3f5cb783fbc6e384841206dcc75be250b88d3b84072a975483"
+    },
+    {
+      "path": "tests/availability-corrections.test.ts",
+      "bytes": 7920,
+      "sha256": "6f560cb82a61bd15805ff114406c5cf6e4378aea2852cfad8c41e6ae132036df"
+    },
+    {
+      "path": "tests/availability-preorder.test.ts",
+      "bytes": 6762,
+      "sha256": "c83ea6121df66abff68f19cf1599eccbd5c16b45205d36a3d2b74dc2024e1d35"
+    },
+    {
+      "path": "tests/availability-ranking.test.ts",
+      "bytes": 7038,
+      "sha256": "05fabeb0c285ca44c42a55980ddf330cc3ca60031a53812434395962ae8c7fae"
+    },
+    {
+      "path": "tests/avatar-dimension-projection.test.ts",
+      "bytes": 4356,
+      "sha256": "54602783020d287e4b410022c17b6d2300ef3323c846ae397341ab61cc86440c"
+    },
+    {
+      "path": "tests/bmw-mini-catalogue.test.ts",
+      "bytes": 4398,
+      "sha256": "37e15f2558850d095f78e4a8c04cd18fcc32c58ee9457aed7a8f10f5e54175af"
+    },
+    {
+      "path": "tests/brand-added-detail.test.ts",
+      "bytes": 1403,
+      "sha256": "0ffaa1e3e1cb6edc9cf478ea65cabcf6372837a00d266d1ee0e04df9061c1108"
+    },
+    {
+      "path": "tests/brand-configuration-updates.test.ts",
+      "bytes": 28678,
+      "sha256": "c634b6ab3b3c9e7c55dc33d6ba74f6b7b45003bff770203fe1478e894f0ff74e"
+    },
+    {
+      "path": "tests/brand-feature-updates.test.ts",
+      "bytes": 44521,
+      "sha256": "e517657e409c8f48f43f443f052570b875eb76bc94891cb8f4b78dfec8cf3056"
+    },
+    {
+      "path": "tests/brand-live-safety.test.ts",
+      "bytes": 12739,
+      "sha256": "d5b9c0c479c30f2f171f1fffb3e7ba0a2a5c8fa28bc83e7a3a6f85872343a3d1"
+    },
+    {
+      "path": "tests/brand-updates.test.ts",
+      "bytes": 60812,
+      "sha256": "3b1a797e34d76a98b0fbfa8adb6a7c2a9c7e05ffcaff7bcea36e91854549e53c"
+    },
+    {
+      "path": "tests/bus-integration.test.ts",
+      "bytes": 5271,
+      "sha256": "b9c2840ac7a9866ade6a2f313cb741cc4afba2448342f422db62944462c426c1"
+    },
+    {
+      "path": "tests/bus-report-boundaries.test.ts",
+      "bytes": 2362,
+      "sha256": "95859ed7ba4f21892271f95413544b054633679a77ed6780d457dc7df0271653"
+    },
+    {
+      "path": "tests/buyer-availability-scope.test.ts",
+      "bytes": 21151,
+      "sha256": "53bd150d211e781d2bb91712fb1bc6bdd217d290f7eaaeb2f8ed928c2f554e21"
+    },
+    {
+      "path": "tests/buyer-display-copy-render.test.ts",
+      "bytes": 11039,
+      "sha256": "2709340a00ec2a58a95cff39bcd22a2a6773ed2554e2d89ff44f8999b9b70546"
+    },
+    {
+      "path": "tests/buyer-display-copy.test.ts",
+      "bytes": 5038,
+      "sha256": "970a0da5306d06197d3fa5c01460541a69fed2c41292c6839b83c7439516b4d8"
+    },
+    {
+      "path": "tests/buyer-grade-display.test.ts",
+      "bytes": 6514,
+      "sha256": "e53af788fefdc2907c2ae61a8f2a31b60d08e0aa0f310a050d4e5ed0765282a1"
+    },
+    {
+      "path": "tests/buyer-proposal-storage.test.ts",
+      "bytes": 4754,
+      "sha256": "05a2950e2c8a055cee4367a1bbcd4401ff23c1c6d4de9882454dc907eedddac6"
+    },
+    {
+      "path": "tests/buyer-summary-timing.test.ts",
+      "bytes": 977,
+      "sha256": "30b0cb5e60ac67bb4d78361dc186c36f4ae50f273b65bdb7740ada145d172714"
+    },
+    {
+      "path": "tests/buyer-visible-conditions.test.ts",
+      "bytes": 2947,
+      "sha256": "0f246a95c11202c0c66c6b2c183f30b995253cdc54f65926151dec78c313c943"
+    },
+    {
+      "path": "tests/c1-order-eligibility.test.ts",
+      "bytes": 7037,
+      "sha256": "3e36fc564588a331871be12c016d5e97458c070c32c5000f629547f22009abd7"
+    },
+    {
+      "path": "tests/cached-summary-ssr.test.ts",
+      "bytes": 44,
+      "sha256": "2de8e585eee12bbb76d67a180b319b19edfb1597ec7c5bc82732ff67111b8ace"
+    },
+    {
+      "path": "tests/catalogue-additions.test.ts",
+      "bytes": 1815,
+      "sha256": "f63e0b75267f96a1720b100b63a57873549c148cdae37476cd0b8d6c7b05757d"
+    },
+    {
+      "path": "tests/catalogue-reuse.test.ts",
+      "bytes": 4553,
+      "sha256": "7351d57c61dfdd1950533d68785da5f3ec1d777413709711fec8da85641525e0"
+    },
+    {
+      "path": "tests/catalogue-snapshot.test.ts",
+      "bytes": 17026,
+      "sha256": "8450d8da9be86ce9ecc5f47f032a3bd14a70f19c24f124720c1b7644cf6f5fee"
+    },
+    {
+      "path": "tests/citable.test.ts",
+      "bytes": 13548,
+      "sha256": "7950677521142cb6f99df055fe82551c8a293e292f644c8f26e5d8f01c55adf2"
+    },
+    {
+      "path": "tests/comparison-basis-safety.test.ts",
+      "bytes": 1538,
+      "sha256": "4da1607be9fe51a2ee26e2490f64a06a4ec4b7888cc349b205a8ad9aea03de6c"
+    },
+    {
+      "path": "tests/comparison-context.test.ts",
+      "bytes": 2709,
+      "sha256": "5e8f1b9aca7d3fb5e7004ca1570f3aaa31524694d2c6cd8fc0c9f9dc838707e0"
+    },
+    {
+      "path": "tests/comparison-focus.test.ts",
+      "bytes": 3808,
+      "sha256": "27c38bf755d127061ec4841bf0ad710e860b9a353da7c3dc9b4c4c80e3caaa1e"
+    },
+    {
+      "path": "tests/comparison-mobile-headers.test.ts",
+      "bytes": 3601,
+      "sha256": "adcf4d1b966d62e9b754c3ac63457a412df0ad1cc4ac7e8de64ee0770139f024"
+    },
+    {
+      "path": "tests/comparison-picker.test.ts",
+      "bytes": 6067,
+      "sha256": "8b64a8d910ed2557c0bce93dccf881ebae38749c19bf670aa4d99ea93897324f"
+    },
+    {
+      "path": "tests/configuration-evidence-transport.test.ts",
+      "bytes": 2810,
+      "sha256": "a0839b214137fae78a0ef04081dd3ff52c4cf2c26fbe57b1874e37d69e668c39"
+    },
+    {
+      "path": "tests/configuration-option.test.ts",
+      "bytes": 2799,
+      "sha256": "ed51462f2738e135c68a864ec9af5cda7bb0b9a8d220582d559562ec9bc8f80e"
+    },
+    {
+      "path": "tests/configuration-payload.test.ts",
+      "bytes": 8015,
+      "sha256": "58df6b25fc620b94cca7c7a362947ec2cdd710b56bc1adeec6dd941b06562f56"
+    },
+    {
+      "path": "tests/correction-guard-parity.test.ts",
+      "bytes": 17792,
+      "sha256": "333d05b106ebe4658961f0c0b8d902a8cb6de3d9671dad4dc8c659147f04f901"
+    },
+    {
+      "path": "tests/corrections.test.ts",
+      "bytes": 20478,
+      "sha256": "c514463094d18e1050ded34e9420f3e8718aed2410c1eaa792c465f8fc976452"
+    },
+    {
+      "path": "tests/coverage-reports.test.ts",
+      "bytes": 12706,
+      "sha256": "c15f3505dfaf2bdd25c3781130d283b3767c04b35dccb9228aeb089db8660924"
+    },
+    {
+      "path": "tests/denza-gac-smart-integration.test.ts",
+      "bytes": 3630,
+      "sha256": "1163362e33df87aa78cfabdb8b0e433489a231bd2946b3bbd0ca0058df36d61d"
+    },
+    {
+      "path": "tests/desert-strength-behaviour.test.ts",
+      "bytes": 9285,
+      "sha256": "87b5eda43af76e8754ac624a81b1b2ab82ea6c6e1633c148d7e901db81e66aa0"
+    },
+    {
+      "path": "tests/detail-client-props.test.ts",
+      "bytes": 3731,
+      "sha256": "4878a852304a6e57c0e10c3ea763beac5ec8ca9de19b431743114a16de561a04"
+    },
+    {
+      "path": "tests/detail-discovery.test.ts",
+      "bytes": 4476,
+      "sha256": "b0a5bfb655957e7eb853f34b6c9d5ef8eae691028078821c47c08a97111ba140"
+    },
+    {
+      "path": "tests/detail-evidence-layout.test.ts",
+      "bytes": 1950,
+      "sha256": "d5b67391a17974e118a54ecd14aba7887024e85a652370f4285c6536d24829b5"
+    },
+    {
+      "path": "tests/detail-responsive.test.ts",
+      "bytes": 1458,
+      "sha256": "ae8963cfd43b14e60471b4f5db838767df7c292ff961a110b5b12c3d0379ec1e"
+    },
+    {
+      "path": "tests/device-draft-interactions.test.ts",
+      "bytes": 6730,
+      "sha256": "11f803a8b257f8876ec52d26925d39a1caea56414d75ecd6a540e450ea513222"
+    },
+    {
+      "path": "tests/device-issue-drafts.test.ts",
+      "bytes": 10454,
+      "sha256": "5df2e235efc1ad29b4b2d05b3d867235f7f2a9c38205ff12ad5a03e4e3c1bdae"
+    },
+    {
+      "path": "tests/discovery-feedback.test.ts",
+      "bytes": 2823,
+      "sha256": "9cabf1f2ad8575f01da3ef088e5c018edc69d93006e4022f16e475e8193ff282"
+    },
+    {
+      "path": "tests/discovery-prefetch.test.ts",
+      "bytes": 7580,
+      "sha256": "483904d94f98711498b1635bfa1c16e1b63d948df5e20dd5f05e33a63feca31c"
+    },
+    {
+      "path": "tests/discovery.test.ts",
+      "bytes": 7605,
+      "sha256": "91336543adc0a533cf6464e11871d427fb7cd23cba2a6aa3dc923934deb5c168"
+    },
+    {
+      "path": "tests/domain.test.ts",
+      "bytes": 17952,
+      "sha256": "42a8d2cbc1c614a561b99f36f688efd8eb318d257c2f60dc5a3660e8338b2cb6"
+    },
+    {
+      "path": "tests/e2e/citable.spec.ts",
+      "bytes": 5375,
+      "sha256": "be00eb8e9c08f956d2ce85beffba1f3154c92a78c4614825ebeb7e75f41706c5"
+    },
+    {
+      "path": "tests/e2e/detail-reflow.spec.ts",
+      "bytes": 5138,
+      "sha256": "f5a7cd3d9fafe24515a9f055e7edd899dbec879674f882f8b3a87876e23981b9"
+    },
+    {
+      "path": "tests/e2e/fleet.spec.ts",
+      "bytes": 9013,
+      "sha256": "0ba0687d186cc8d5f56ec408618489f4c716d86d515f597c383a1600fea9233e"
+    },
+    {
+      "path": "tests/e2e/freshness.spec.ts",
+      "bytes": 1774,
+      "sha256": "2a3c6fe92a901b2172dc0d92a8ab1e951ef597ba1e62c31b0332b6c4df004df6"
+    },
+    {
+      "path": "tests/e2e/journeys.spec.ts",
+      "bytes": 11884,
+      "sha256": "9b4dd019a0bb1041166273d651f13ba525b5cf55c5fdb03a73be4b30e2dd3138"
+    },
+    {
+      "path": "tests/e2e/portable.spec.ts",
+      "bytes": 3638,
+      "sha256": "89f70be75bf1a0d5de3049d9753e22300d0aab2eef2c28025edf4353380bf9e7"
+    },
+    {
+      "path": "tests/e2e/scene-loading.spec.ts",
+      "bytes": 3772,
+      "sha256": "8450ad70b97c8871da841909b47b6436801e253656fea87a88a90bde352ce880"
+    },
+    {
+      "path": "tests/electric-trucks-catalogue.test.ts",
+      "bytes": 5849,
+      "sha256": "ae74475d8126e8db0c9691854cacec7237b6b2c91c505fb5de214fd86644051a"
+    },
+    {
+      "path": "tests/evidence-conditions.test.ts",
+      "bytes": 1006,
+      "sha256": "17825cbad9d97eda4fb7ddbfc47f625ef89fc3099dc6ff7b4b9db9c9373fa255"
+    },
+    {
+      "path": "tests/evidence-consumers.test.ts",
+      "bytes": 17808,
+      "sha256": "49536d663c4b3efe2c32b16fdfde72bb96a3a831c6917b8263a82af39100fbf5"
+    },
+    {
+      "path": "tests/evidence-date.test.ts",
+      "bytes": 1215,
+      "sha256": "5f2418870cfc7cba6b8d229ebe20b43d941643f624dd169a687dfb948c50d845"
+    },
+    {
+      "path": "tests/evidence-regrading-fitment.test.ts",
+      "bytes": 9164,
+      "sha256": "120d16aa20e0e34651dffcb5d81b82b3d7ab5272a6fd05b83605f68ed41de30b"
+    },
+    {
+      "path": "tests/explorer-interactions.test.ts",
+      "bytes": 9275,
+      "sha256": "ba7372842dbb7603f77e7959c58bd3afcd154a73d06accc5a07527db484404b4"
+    },
+    {
+      "path": "tests/explorer-state.test.ts",
+      "bytes": 4798,
+      "sha256": "790821691bfe059bc1100ecc8a4b04fb57c74521132d9cf3176d9638800e2019"
+    },
+    {
+      "path": "tests/fact-condition-presentation.test.ts",
+      "bytes": 1365,
+      "sha256": "ec19e2819f213d35baa874d24c9f26f2e6dc66a48a399a97c36d90bad7564c44"
+    },
+    {
+      "path": "tests/fact-issue-validation.test.ts",
+      "bytes": 4127,
+      "sha256": "db5574cee04f3b2b5f9011d77d1de8cb3a59536c79e4fadf578d508aa71283a9"
+    },
+    {
+      "path": "tests/fact-presentation.test.ts",
+      "bytes": 1789,
+      "sha256": "a2b2e11e9182b16824ad0e96ee1d15a11fcfad58e0e284fd9374f00c5d21da4c"
+    },
+    {
+      "path": "tests/fact-validity.test.ts",
+      "bytes": 1474,
+      "sha256": "1bdcef8709eda1f20e768dea367a9433e897fa37d4f87dc577b79d63528d969e"
+    },
+    {
+      "path": "tests/feature-corrections.test.ts",
+      "bytes": 4912,
+      "sha256": "f3a4605e0aea15d4cec512e0314c16e92ae11455677e44d55414be0ed1f16f1e"
+    },
+    {
+      "path": "tests/feature-offer-validity.test.ts",
+      "bytes": 19564,
+      "sha256": "5000ffe3ba79847bacfd5471e01184d58f5b0f8c362f34d527381730c550f3af"
+    },
+    {
+      "path": "tests/fixtures/buyer-copy97.json",
+      "bytes": 5387,
+      "sha256": "e694e79ac39351f315923733af5255c6502a3bbcb695a1248d6b937b1ef8f617"
+    },
+    {
+      "path": "tests/fixtures/cached-summary-ssr.mjs",
+      "bytes": 9054,
+      "sha256": "e5414204f626783d8767fa8ff22662c0fdf9a9b17cae32da04367895b6d938e2"
+    },
+    {
+      "path": "tests/fixtures/catalogue/bus-integration-staged-delta.json",
+      "bytes": 902925,
+      "sha256": "23fbdb61b4fcd61cacbed5a2fa5a2af7465212b23524b80ea4398b491d02eb5f"
+    },
+    {
+      "path": "tests/fixtures/catalogue/kia-cadillac-staged-delta.json",
+      "bytes": 8236430,
+      "sha256": "99e3ae7c37cb1481d75b4eadc7f01e8e7f20480c84f95d20bb4b3023eb2e90cb"
+    },
+    {
+      "path": "tests/fixtures/catalogue/renault-kgm-staged-delta.json",
+      "bytes": 621940,
+      "sha256": "727151bdc5874296d8413a37088f961475b7b60b705a6b159ad32d6b9d924f7b"
+    },
+    {
+      "path": "tests/fixtures/desert-strength-mutations.json",
+      "bytes": 318247,
+      "sha256": "4f93411b37830fbfdc3579d39135b90728e2c1260c73ae566fa84e9420e75935"
+    },
+    {
+      "path": "tests/fixtures/evidence-consumers/data-before.ts.txt",
+      "bytes": 32958,
+      "sha256": "5298772968b4c7e671bad630726d39f615e2e49a3aa07ecf5b629ee5c502ee24"
+    },
+    {
+      "path": "tests/fixtures/honda-evidence.json",
+      "bytes": 1114298,
+      "sha256": "6785457f02580d58a71f4f9d754aeb7786d2ee84c42a78b8e7fd1df0b38d7628"
+    },
+    {
+      "path": "tests/fixtures/llms-route-v86.txt",
+      "bytes": 1381,
+      "sha256": "a996e2f017655808e04ac3497d5cd8765040fbf0e8d3fe662f5c5f9dcbbc25db"
+    },
+    {
+      "path": "tests/fixtures/m1-inventory-split/inventory-audi.json",
+      "bytes": 850,
+      "sha256": "fe40392d418d300c7f4404cb4ad98668c3f69b0590dfe64b480209d7baa99c53"
+    },
+    {
+      "path": "tests/fixtures/m1-inventory-split/ordinary-cases.json",
+      "bytes": 14473,
+      "sha256": "3fa38cd5665c233b973fae88e2af5c2a7be678f2c6785f62ccdd82109edc60ef"
+    },
+    {
+      "path": "tests/fixtures/m1-inventory-split/ordinary-expected.json",
+      "bytes": 3623,
+      "sha256": "d5480e69c2011f0e3ade4d1439c656d5b51133273fad47208fa48a0f30404aa4"
+    },
+    {
+      "path": "tests/fixtures/m1-inventory-split/original-combined-lead.json",
+      "bytes": 706,
+      "sha256": "ceddb1a41093d543278c3f0008c84d200eb7c44b56a7b1a03e23825427f0a0c1"
+    },
+    {
+      "path": "tests/fixtures/m1-inventory-split/packet-q6-my27.json",
+      "bytes": 6954,
+      "sha256": "f05b44abf7c9423b06205acc7f0bfc7765375992866f2cfe5ed9d0f6d989262b"
+    },
+    {
+      "path": "tests/fixtures/m1-inventory-split/reconciliation.json",
+      "bytes": 24477,
+      "sha256": "faaea450f6196ccd52bea9ddcd1e2e37012f92ee20e85ccb9cacc87e619912bf"
+    },
+    {
+      "path": "tests/fixtures/m1-inventory-split/unchanged-review-dispositions.json",
+      "bytes": 17325,
+      "sha256": "f9a535c2d0dbfff459e76781c50142161f500e3f064c7e57b1a9ef48efc92bcb"
+    },
+    {
+      "path": "tests/fixtures/mazda-cx6e-evidence.json",
+      "bytes": 6926,
+      "sha256": "f431105b655474237e4b9d189294c651fd0be0a49b5b2a9f5ea6698314126e9c"
+    },
+    {
+      "path": "tests/fixtures/motorcycle-evidence.json",
+      "bytes": 17777,
+      "sha256": "fc0e73b5325ce7ccffbf48d8ae4443b52c3a173856135dec6e423efb2d36c4df"
+    },
+    {
+      "path": "tests/fixtures/ora5-legacy-configuration-holds.json",
+      "bytes": 2954,
+      "sha256": "fdc00501433b304f5db6ebd19eeb1d0af2a45e45edb5c56c5662d3d6b4b13b36"
+    },
+    {
+      "path": "tests/fixtures/pair-pages-v86.txt",
+      "bytes": 1439,
+      "sha256": "d4790479c72c9c07d88270f52215be9fd6f071b1eecc9b318285d79e688b84d9"
+    },
+    {
+      "path": "tests/fixtures/price-scene-v84-parity.json",
+      "bytes": 6633,
+      "sha256": "fd2f4e07d45e65be8fe3f1b5d13d9d5dcf20f461031a22fdbe4299e28f4d40f8"
+    },
+    {
+      "path": "tests/fixtures/streetdog-offer-evidence.json",
+      "bytes": 1325741,
+      "sha256": "d2b0b03e863fcaf8ff60108a7d4216da2e24150de53ef01141f3727e32c6b18a"
+    },
+    {
+      "path": "tests/fixtures/transit-city-evidence.json",
+      "bytes": 498733,
+      "sha256": "ed6613d31f04e1d83f6ecb2627128c0316bb3a135725b50c15c76cca8ad45155"
+    },
+    {
+      "path": "tests/fonz-integration.test.ts",
+      "bytes": 6057,
+      "sha256": "af7246b20ef59a9c211bb5724bd4612bf4549a4840b38e3847f91518a3d87fda"
+    },
+    {
+      "path": "tests/fonz-z-integration.test.ts",
+      "bytes": 5079,
+      "sha256": "8a1b210f234a330cd692c85e713765411f8e1b0283d8665822a7fb4886043c56"
+    },
+    {
+      "path": "tests/footnote-origins.test.ts",
+      "bytes": 17587,
+      "sha256": "8a20768c985724625595152ba9899aa0125f642c96a6ec37f7fd948c0bdc7ccf"
+    },
+    {
+      "path": "tests/ford-custom-integration.test.ts",
+      "bytes": 3749,
+      "sha256": "d8f67aa22a4848f23a5eaac7cbfd5fb35d5570a7a7c9239384c831defbad2505"
+    },
+    {
+      "path": "tests/freshness.test.ts",
+      "bytes": 18619,
+      "sha256": "f700e258103c17038c712f48cd02ca173d7be90e44588cbd26e8b0426d917fe2"
+    },
+    {
+      "path": "tests/geely-zeekr-xpeng-catalogue.test.ts",
+      "bytes": 6784,
+      "sha256": "242e6a8cd0f6602138722ba41a097be6558124e8d94abf6c9dc98087f2d030f1"
+    },
+    {
+      "path": "tests/helpers/compiled-source.ts",
+      "bytes": 2028,
+      "sha256": "0fdba389b91314412742c3585b0495e16591254c9a3e62b3e6a48fc43282ce2e"
+    },
+    {
+      "path": "tests/helpers/desert-strength-harness.mjs",
+      "bytes": 11638,
+      "sha256": "dd70802eb1f7ea489b4953c837b89da1a3aa3a1d41c075bf4883190c4c885610"
+    },
+    {
+      "path": "tests/helpers/kia-cadillac-stage.ts",
+      "bytes": 2949,
+      "sha256": "f8fb2ed7489d77174dad9d748762a3077ad39c90dcfb119499d01abaf507b28a"
+    },
+    {
+      "path": "tests/helpers/report-preview-fixture.ts",
+      "bytes": 3869,
+      "sha256": "1aeff036b6797db940ce28e1fafc27c962f17878708e3904f9645425d7256a98"
+    },
+    {
+      "path": "tests/helpers/reviewed-buyer-clause.ts",
+      "bytes": 1736,
+      "sha256": "e38c3bf549c751b2b415f84cbe6213edcf5b40ff1ebf997e6b9d6591ef4d6bb2"
+    },
+    {
+      "path": "tests/helpers/source-fixture.ts",
+      "bytes": 1116,
+      "sha256": "7d1c8afcaf5bf03e2f982f5a0ca2f096bb3d24c72a6949b7cd5377998e576cc1"
+    },
+    {
+      "path": "tests/home-hero.test.ts",
+      "bytes": 1278,
+      "sha256": "80aa2193b930055cf8770f94206e832ae4986f13ac38816da0a2c56cc091731a"
+    },
+    {
+      "path": "tests/home-payload.test.ts",
+      "bytes": 8673,
+      "sha256": "55fb5f0fe064ba8c83ebf5d08cbf3732c930a2dd8aa0f0967988e910ca35dedf"
+    },
+    {
+      "path": "tests/honda-super-one-behaviour.test.ts",
+      "bytes": 9578,
+      "sha256": "6a5a23185e05df59b3fcde0993fc486fea39727b45e3ff8112232fac0cfdf5e2"
+    },
+    {
+      "path": "tests/hyundai-additions.test.ts",
+      "bytes": 2355,
+      "sha256": "7f6f0ad3c65d130b620976c89e7be6c9ab3d8b5ac11f3af8aa2c541bc7305c2d"
+    },
+    {
+      "path": "tests/issue-presentation.test.ts",
+      "bytes": 1642,
+      "sha256": "739016c8cf445ff6d3b32e42bbd0226c8378552f99efdf74446a151c733e7da5"
+    },
+    {
+      "path": "tests/jeep-ora-integration.test.ts",
+      "bytes": 7548,
+      "sha256": "2150604d9a2896530fbac9482ec5e9864c7b451e28eb16f99d3b8e81557c494f"
+    },
+    {
+      "path": "tests/junior-integration.test.ts",
+      "bytes": 4826,
+      "sha256": "c263cdd5cb2af2c26d99ef30c54da864f3f08a8ac7cd54f58ce3afdf2dbcdfec"
+    },
+    {
+      "path": "tests/kia-additions.test.ts",
+      "bytes": 2928,
+      "sha256": "c4195783c2c507906d1c4fadc490cd1b6388395e41dd774b40a5a99df38d663d"
+    },
+    {
+      "path": "tests/kia-cadillac-integration.test.ts",
+      "bytes": 4945,
+      "sha256": "ff1dab21d583f140ede17e532d3dde250965cf58c531ad57ed60f8ed684ce8b5"
+    },
+    {
+      "path": "tests/kia-cadillac-stage.boundary.test.ts",
+      "bytes": 10470,
+      "sha256": "c000bdee4200ea11e6a16ab47ed9fdfdd8b7963afaa47671d281b3cd337baaa9"
+    },
+    {
+      "path": "tests/ldv-van-additions.test.ts",
+      "bytes": 2502,
+      "sha256": "0f9da9b0570e171391c5402b8d42a78a54dc34c6494c5ae7eea5f131b1d81d10"
+    },
+    {
+      "path": "tests/lexus-nissan-genesis-catalogue.test.ts",
+      "bytes": 6529,
+      "sha256": "763f2ce34a12991f3de85c674bc687eec474299d622d6c94e35e35cc48486caa"
+    },
+    {
+      "path": "tests/local-report-store.test.ts",
+      "bytes": 16131,
+      "sha256": "48af99ef1a8f38e99ebdd813657d3ae0d598372aa0cdaf8173fd85675502b476"
+    },
+    {
+      "path": "tests/local-review.test.ts",
+      "bytes": 6411,
+      "sha256": "6f56cecbc85784055d536abfbb5057c88055b2f44cb0597100418e9b4a79d728"
+    },
+    {
+      "path": "tests/m1-coverage-tracking.test.ts",
+      "bytes": 34799,
+      "sha256": "81efeea9fedfad8c436b11dca85f1626de8190daabe584d85f85a2ddea9bbc6c"
+    },
+    {
+      "path": "tests/m1-evidence-grading.test.ts",
+      "bytes": 20144,
+      "sha256": "b857d36c541269eb0ecfe465be186d521a5f9645a7f248dca9365ecc0309c138"
+    },
+    {
+      "path": "tests/m1-inventory-split.test.ts",
+      "bytes": 20336,
+      "sha256": "23ea8824e35b0e895b0dcb8102ede3795701e667a5ef1bda4361e75d6f24a8b4"
+    },
+    {
+      "path": "tests/mache-mazda6e-integration.test.ts",
+      "bytes": 7299,
+      "sha256": "efda278bb535d79b4005e57e06be96b5aa1b9d7d5125ab6dd760baa3d0d9534b"
+    },
+    {
+      "path": "tests/market-audit-interactions.test.ts",
+      "bytes": 8003,
+      "sha256": "87fa8ac6a2d336633d59fce5ba69e4d23ea147850e3c0b404367f6d085b86e40"
+    },
+    {
+      "path": "tests/market-audit.test.ts",
+      "bytes": 1981,
+      "sha256": "f07701e9e2be209261949adfc0ec985cd732c380015f776c4ca1973cce4b8df1"
+    },
+    {
+      "path": "tests/market-b70-layout.test.ts",
+      "bytes": 2905,
+      "sha256": "2841b7518cef151326ab1b4f050ba41174b3f319589a53f4ccce2ea1212f8afc"
+    },
+    {
+      "path": "tests/market-c9h-identity.test.ts",
+      "bytes": 2765,
+      "sha256": "79ed9bea15cd77dbee95a7d45e0bfbbba313ee529a6b5a6047dd8d7a1c471cd6"
+    },
+    {
+      "path": "tests/market-chassis-availability.test.ts",
+      "bytes": 4245,
+      "sha256": "5444f4efc2470992ab386a6551010b83b1b4ffc39345cd8d586159dd546cbdec"
+    },
+    {
+      "path": "tests/market-commercial-scope.test.ts",
+      "bytes": 3454,
+      "sha256": "539918c78d3b609278a2c1fff5dc6d8eb5a9473fcf2a9a747a0461c09fc3796d"
+    },
+    {
+      "path": "tests/market-deepway-lead.test.ts",
+      "bytes": 2984,
+      "sha256": "e54355e5dfd7e2410e2f6189cd245a3f3cf515950a98d137f73df0fe95e4b1d1"
+    },
+    {
+      "path": "tests/market-element-lengths.test.ts",
+      "bytes": 2489,
+      "sha256": "29cef367430a5ec8e4602304e3f40752d2fb328442f89a3c97d9584a27f007cc"
+    },
+    {
+      "path": "tests/market-evito-seating.test.ts",
+      "bytes": 4101,
+      "sha256": "023cc9278a1b5186da1178ca0bd0c068c437998de02691713db1f51a2372316e"
+    },
+    {
+      "path": "tests/market-held-evidence.test.ts",
+      "bytes": 3502,
+      "sha256": "006c017e28e8690094c5e26a6d3150f4267ad51c9bb5b4528c27bf5b2a2fab0e"
+    },
+    {
+      "path": "tests/market-maserati-fiat-scope.test.ts",
+      "bytes": 3369,
+      "sha256": "2b17e3487d4062d18864b328d56abb1f785d8beacc1db7ed8bbd75e6e279f4f8"
+    },
+    {
+      "path": "tests/market-mazda-advertisement.test.ts",
+      "bytes": 2294,
+      "sha256": "3652b41f321456157829f4ef67471c11da1fac6d8c7268eeb37efd5e816a51ad"
+    },
+    {
+      "path": "tests/market-mifa-availability.test.ts",
+      "bytes": 4210,
+      "sha256": "2f661193d1dc54e66ef48cb314ada4a13459af56b1c174ce471a668371b49723"
+    },
+    {
+      "path": "tests/market-order-advertising.test.ts",
+      "bytes": 2979,
+      "sha256": "f0c444e70b0df03e1483d18a0743b7c75862a7134d0104c6abbc56ffca017561"
+    },
+    {
+      "path": "tests/market-review-reconciliation.test.ts",
+      "bytes": 4859,
+      "sha256": "5206288f16b24a11564e04c429946b9e0a43c591a3688b9c34fc961e9330c864"
+    },
+    {
+      "path": "tests/market-seller-listings.test.ts",
+      "bytes": 4546,
+      "sha256": "ce41dc84bb71e8f286a922644c7543a6e5584bea77d3356322e5657e8fc8440a"
+    },
+    {
+      "path": "tests/market-sitrak-c3he.test.ts",
+      "bytes": 2513,
+      "sha256": "e9ed28a0b233f0f8d71188cbcfdecc1b5fbd545848d8a6e1d6a59490e60f8bc6"
+    },
+    {
+      "path": "tests/market-skywell-seating.test.ts",
+      "bytes": 2616,
+      "sha256": "3d4d3ae53bb279a505ab4d61ef02a2a0301ba769e0eb14ce418ebc2e942e05b0"
+    },
+    {
+      "path": "tests/market-trike-evidence.test.ts",
+      "bytes": 10733,
+      "sha256": "b0f577255bf54c31085d838e3f2bc73c976774b71b473d4c5c595d6dfce40549"
+    },
+    {
+      "path": "tests/market-unresolved-epochs.test.ts",
+      "bytes": 2617,
+      "sha256": "bb9bc566c1c53ede9a741b45b136be5be50b24b86a41fea5faf0a40377e3fdbd"
+    },
+    {
+      "path": "tests/market-view.test.ts",
+      "bytes": 2818,
+      "sha256": "890d0264d9c8c97dc0379b812413fd9183632582695a6d9d3bf2b023d1386c1e"
+    },
+    {
+      "path": "tests/mazda-cx6e-behaviour.test.ts",
+      "bytes": 12518,
+      "sha256": "db109540201485520903cbe053ca6ad2b598d32f39109f891f9e54f1c3de3e9a"
+    },
+    {
+      "path": "tests/mercedes-passenger-catalogue.test.ts",
+      "bytes": 2690,
+      "sha256": "81c0941138194821ad4b8c6ac8770801ddbbad6f1072f887926e5bbd11771206"
+    },
+    {
+      "path": "tests/mg-remaining-catalogue.test.ts",
+      "bytes": 4579,
+      "sha256": "a438ad89d9cbff4b3f012d2887cbb7d234f62f18e5b4e2f688b852fb370bb569"
+    },
+    {
+      "path": "tests/mg4-additions.test.ts",
+      "bytes": 3363,
+      "sha256": "3c9c1041152140deefef2b0a786ec59fe86360ea8a0166c62088337610ca1e27"
+    },
+    {
+      "path": "tests/motorcycle-offer-evidence.test.ts",
+      "bytes": 3389,
+      "sha256": "f7dc860c6e878dae4e63efa35b2bfb9cad1bf3e558d202e59f9fe7493409fe7f"
+    },
+    {
+      "path": "tests/next-van-additions.test.ts",
+      "bytes": 3343,
+      "sha256": "cda4c990d784aa37d0f4de5edd5ecbb8851a4968ab72ae4766fe3eea1a21bdd0"
+    },
+    {
+      "path": "tests/package-source.test.ts",
+      "bytes": 513,
+      "sha256": "a2737e0a76a4da5323f51c1eab4cfe746a27db82ce08fc6a41db5a3ab14b0427"
+    },
+    {
+      "path": "tests/package_source_test.py",
+      "bytes": 15880,
+      "sha256": "149407a9fe42b7ffdec375b42dad7b1a18000d5e651c14c0c1213a2a00bc61df"
+    },
+    {
+      "path": "tests/page-evidence.test.ts",
+      "bytes": 5001,
+      "sha256": "8301e4abf1afaba7fb01d59d15f26a6f3066d213f323174a75f0a1415d058997"
+    },
+    {
+      "path": "tests/pair-report-snapshot.test.ts",
+      "bytes": 3572,
+      "sha256": "91e10f0d96241696ac0b9815d6e5d545001215ff0ea431bef2c2ab9875693df7"
+    },
+    {
+      "path": "tests/portable-market-data.test.ts",
+      "bytes": 3619,
+      "sha256": "21cb840f3e31f3196a0b4873159e1285f3d61860be38d54224e4447700e6d852"
+    },
+    {
+      "path": "tests/portable-packs.test.ts",
+      "bytes": 3614,
+      "sha256": "8fee3afd01f5f7a261ba2a53aa74866e11591f499a5c89a656cdf1be6aafb630"
+    },
+    {
+      "path": "tests/portable-string-codec.test.ts",
+      "bytes": 10548,
+      "sha256": "293fe755b38df21e67add1994e9fd8406c017f47569b9d0b283755597af870f7"
+    },
+    {
+      "path": "tests/price-ladder.test.ts",
+      "bytes": 17683,
+      "sha256": "5c5a6acf97cb649f362aba546564751874ccc93e237947fdc432d3a5bb27c5a9"
+    },
+    {
+      "path": "tests/price-scene-copy.test.ts",
+      "bytes": 3284,
+      "sha256": "1ea43e82e7bf7e0a0041dbf6574b523b335e7a57ceb9e9ac1a8612b3378478d8"
+    },
+    {
+      "path": "tests/publication-review-dates.test.ts",
+      "bytes": 9809,
+      "sha256": "18306c6098a8426a2214a88e5215557049ce9c773f575f6581a1b4bf6495e518"
+    },
+    {
+      "path": "tests/remaining-electric-vans-catalogue.test.ts",
+      "bytes": 7439,
+      "sha256": "5344f4c7731fef1a1d7f4e484f20c3ff43f4f1311f2b8c1c77a65a1d58e2b006"
+    },
+    {
+      "path": "tests/remaining-hyundai.test.ts",
+      "bytes": 7746,
+      "sha256": "6593611f5234e0e01bb08a47a75a876ee31fa80aad7679b0c2395b0c62157e7b"
+    },
+    {
+      "path": "tests/remaining-passenger-catalogue.test.ts",
+      "bytes": 7224,
+      "sha256": "163638ca8314f43cd181c1f6ca185c9d3dddfff3fb68968d84c47793d06fa5e1"
+    },
+    {
+      "path": "tests/remaining-utes-vans.test.ts",
+      "bytes": 10180,
+      "sha256": "4519d860667b464863ade0d73fe81f0260e90f928523e5ec5a3d393823adcf19"
+    },
+    {
+      "path": "tests/remaining-volkswagen-integration.test.ts",
+      "bytes": 5146,
+      "sha256": "d008fb5f39e41ae10412026927b3bf8f38b03afc57f5689678fe31a618b63a60"
+    },
+    {
+      "path": "tests/renault-kgm-integration.test.ts",
+      "bytes": 4245,
+      "sha256": "5b5eef4176e63ae7379680a432cb0dc7a68d5d158cb3a278f30d70b8680605f2"
+    },
+    {
+      "path": "tests/report-binding.test.ts",
+      "bytes": 23419,
+      "sha256": "8922b0f461a87f2a4d21c7d73ee88eb9cb8371997a250cf3ea93821f1e9db8f4"
+    },
+    {
+      "path": "tests/report-queue-reader.test.ts",
+      "bytes": 4421,
+      "sha256": "9da49ad76532270eef5cd3d4eb81a61f0333e2c81f8c0e0796f33155656ac9e6"
+    },
+    {
+      "path": "tests/report-review-cli.test.ts",
+      "bytes": 17850,
+      "sha256": "56c3eaf80e449288d5b621fac01303e885bfa4953e42d4be8e47c58f8ee60526"
+    },
+    {
+      "path": "tests/report-review-dry-run.test.ts",
+      "bytes": 13329,
+      "sha256": "90264499c2bfb05741e6c56eb594681afb405748201daf76bddf0a494bb6783b"
+    },
+    {
+      "path": "tests/report-review-proposal.test.ts",
+      "bytes": 41488,
+      "sha256": "754f1845f9ad17791310af3bf8736f94f8484760571012e24f05cbb2a2e4a0a6"
+    },
+    {
+      "path": "tests/research-refresh.test.ts",
+      "bytes": 8486,
+      "sha256": "649381cafc690892769b41aed11937732ed819120fcb8554a9e3aa4d806025cf"
+    },
+    {
+      "path": "tests/retained-fact-fills.test.ts",
+      "bytes": 7619,
+      "sha256": "b5e40e34e1444c993802af37ec321e57a5075872c789062ab053f4c2fd97417d"
+    },
+    {
+      "path": "tests/road-scooters-catalogue.test.ts",
+      "bytes": 9146,
+      "sha256": "922794b791732b9372101095ac2051743ef52501b3f2f63af5fa8689b2db6844"
+    },
+    {
+      "path": "tests/scene-dynamic-geometry.test.ts",
+      "bytes": 8080,
+      "sha256": "d3c66f6342d36da110673e0df71f084c849b522bffa312a51b745868e9cd564f"
+    },
+    {
+      "path": "tests/scenes.test.ts",
+      "bytes": 12420,
+      "sha256": "ae35e41aac942e23028b38bc609c5745267631950aaa40a02cc24595409c3bbe"
+    },
+    {
+      "path": "tests/search.test.ts",
+      "bytes": 4048,
+      "sha256": "ef50c22fe97e6bccc2f131ee8694bf8951a6e09da0d99e37119e90eecf4f7eff"
+    },
+    {
+      "path": "tests/selling-points.test.ts",
+      "bytes": 17203,
+      "sha256": "5d350d3c386028c184f674f27f969224fc17cc050416d0fafa0680f7101c2849"
+    },
+    {
+      "path": "tests/server-catalogue-additions.test.ts",
+      "bytes": 1353,
+      "sha256": "40588699691bf88302ac8153345fb033e9cfdb5ee29659e6eef2139f2b69c642"
+    },
+    {
+      "path": "tests/source-citation-label92.test.ts",
+      "bytes": 13352,
+      "sha256": "5c441d5a4180add4a697f60138b3d1c0f3881ab9760b65b2d87e8f20bea32ede"
+    },
+    {
+      "path": "tests/stark-integration.test.ts",
+      "bytes": 3688,
+      "sha256": "640ff9548d2936e70795be42a347ca611e4d7a0a070fc37ea1dee22446388ff0"
+    },
+    {
+      "path": "tests/streetdog-offer-behaviour.test.ts",
+      "bytes": 5705,
+      "sha256": "1b5ad46a4da434a7670be69791f317ea8cf7eaf27a3a7364c7fbb288c6b61525"
+    },
+    {
+      "path": "tests/strength-evidence-guards.test.ts",
+      "bytes": 15824,
+      "sha256": "b519c2ff910524c3c113f0d02e562c9153bf6f955914888ddda649e988d15d72"
+    },
+    {
+      "path": "tests/structured-facts.test.ts",
+      "bytes": 1057,
+      "sha256": "6a5c43a07c9579772f4b23cbe5ea6b02e62e593cc14ed14d6986477b4daefb5d"
+    },
+    {
+      "path": "tests/suzuki-integration.test.ts",
+      "bytes": 5887,
+      "sha256": "f6a45be9570920e0b969e95bb0d01c3d9e07d25f39a6f67efad5ec319707d8e1"
+    },
+    {
+      "path": "tests/talaria-market-reconciliation.test.ts",
+      "bytes": 1931,
+      "sha256": "bb4ec7cc9d8ff70124ad4d1dd6bb8635b1e8a7f91968f10ad2d93180905ae071"
+    },
+    {
+      "path": "tests/toyota-subaru-additions.test.ts",
+      "bytes": 3067,
+      "sha256": "4d4cbf09f26f48a6d9a2dc634019c7badeab0c61039ccbc403dff2700d8caad2"
+    },
+    {
+      "path": "tests/transit-city-behaviour.test.ts",
+      "bytes": 9155,
+      "sha256": "577ebdc7ee3c27b3be9a69774f6cb3a90606a2704e1e05b400ab72d025ab5de5"
+    },
+    {
+      "path": "tests/typechecks/kia-cadillac-stage.contract.ts",
+      "bytes": 2196,
+      "sha256": "7452d4012bb57cd66620aa9129616cba775bff07df7fe3aae071fd0059e8a648"
+    },
+    {
+      "path": "tests/volvo-polestar-catalogue.test.ts",
+      "bytes": 3752,
+      "sha256": "e32c684c7ab99a0610770c0a6fc780146d2b3243d7f961b33dc8f946d5c0cbbc"
+    },
+    {
+      "path": "tests/vw-payload-correction.test.ts",
+      "bytes": 2798,
+      "sha256": "4cb1e81e9ba918c74e5dc07acc3d0b55a91ce937b8f2ad7f2f2b3110eb09fe64"
+    },
+    {
+      "path": "tests/vw-skoda-catalogue.test.ts",
+      "bytes": 3661,
+      "sha256": "ddb168aa12e8ce0c0f605616f372deead747855a8d9cc1dcd252932e8fb4f34c"
+    },
+    {
+      "path": "tsconfig.json",
+      "bytes": 518,
+      "sha256": "a2ead9aa51428a9c1d3f39e8d10f06ff722bd1936289d2deb240ead7a5e2a154"
+    }
+  ]
+}

@@ -1,7 +1,12 @@
 import { research } from "@/lib/data";
 import { FootnoteProvider } from "./footnotes";
-export function WithEvidence({ children }: { children: React.ReactNode }) {
-  return (
-    <FootnoteProvider sources={research().sources}>{children}</FootnoteProvider>
-  );
+import type { Source } from "@/lib/types";
+export function WithEvidence({
+  children,
+  sources = research().sources,
+}: {
+  children: React.ReactNode;
+  sources?: Source[];
+}) {
+  return <FootnoteProvider sources={sources}>{children}</FootnoteProvider>;
 }

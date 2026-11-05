@@ -145,6 +145,7 @@ const carB = (name: string, price: number, seconds: number) => ({
   name,
   facts: {
     price_aud: price,
+    price_comparison_basis: "Before on-road costs",
     warranty: "5 years / unlimited km",
     battery_warranty: "8 years / 160,000 km",
     range_km: 466,

@@ -37,6 +37,7 @@ import {
   STONE,
   WHITE,
   box,
+  dynamicBox,
   cable,
   charger,
   chargerHolster,
@@ -52,6 +53,7 @@ import {
   tree,
 } from "./world";
 import { post } from "./mesh";
+import { priceSceneCaption } from "../../price-scene-copy";
 
 const STARTS: [number, number, number] = [0, 5.6, 12.2];
 const LOOP = 19;
@@ -242,7 +244,8 @@ export const priceSceneB = scene({
             clay(mix3(ASPHALT, WHITE, tone)),
             0.04,
           ),
-          box(
+          dynamicBox(
+            "price-battery-empty",
             [2.5 - full, 1.36, 0.2],
             stood(PACK - 1.25 + (2.5 - full) / 2, source.y, 0.34),
             clay(mix3(ASPHALT, STONE, tone), { q: [0.29, 0, 0, 0] }),
@@ -251,7 +254,8 @@ export const priceSceneB = scene({
         );
         if (filled > 0.01)
           items.push(
-            box(
+            dynamicBox(
+              "price-battery-full",
               [full, 1.36, 0.21],
               stood(PACK + 1.25 - full / 2, source.y, 0.34),
               {
@@ -334,7 +338,11 @@ export const priceSceneB = scene({
           plate,
           roof,
           car.name,
-          prices[row] ? dollars(prices[row]!) : "Price not stated",
+          prices[row]
+            ? dollars(prices[row]!)
+            : car.facts.price_offer_expired === "expired"
+              ? "Offer expired"
+              : "Price not stated",
           {
             tone: row ? "light" : "dark",
             alpha: priced,
@@ -343,11 +351,7 @@ export const priceSceneB = scene({
           },
         );
       });
-      caption(
-        plate,
-        "Listed retail price for the selected version, before on-road costs. Each tile is A$10,000.",
-        priced,
-      );
+      caption(plate, priceSceneCaption(cars), priced);
 
       // Charging cost.
       const costed = span(7.0, 11.8, t, 0.45);

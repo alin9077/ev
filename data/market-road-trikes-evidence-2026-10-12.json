@@ -1,0 +1,928 @@
+{
+  "title": "Bounded Australian electric road-trike market-audit integration",
+  "checkedAt": "2026-10-12",
+  "scope": "Six family groups, seven dispositions; one advertised-New-offer audit row, five unresolved entries and one peripheral future candidate. No detailed, ranking, physical-stock or complete-vehicle admission.",
+  "completeMarketCensus": false,
+  "sourceObservationReperformedDuringIntegration": false,
+  "sourceSnapshotCopiesIncluded": false,
+  "evidenceLimits": "The accepted 22-source packet contains short source-bound excerpts and retrieval records, not full source bodies. Not every source establishes a current offer. Publication dates, observation dates, seller years and future forecasts remain distinct.",
+  "independentReview": {
+    "path": "roadmark-research/trike-gap-review-2026-10-12/review.json",
+    "bytes": 10032,
+    "sha256": "afd26353a2dff772dd73bce05029895f1a43b9dc026b808fbdfb170678c529b3",
+    "verdict": "GO_BOUNDED_MARKET_AUDIT_ONLY",
+    "verification": {
+      "directRequests": [
+        {
+          "id": "rover",
+          "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/VTADetails/?id=073001ac-968f-f011-b4cc-000d3ad1ce22",
+          "status": 200,
+          "bytes": 2318942,
+          "sha256": "a180ef8db0a0656e01a681ed208c4f1d86078afc32b184da4fda2f10286ac4b3",
+          "observedAt": "2026-10-12T23:16:49.925666+00:00"
+        },
+        {
+          "id": "ebay",
+          "url": "https://www.ebay.com.au/itm/376747254821",
+          "status": 200,
+          "bytes": 624806,
+          "sha256": "49db587c85a9b1ee0652903d03c46dce63ae9032a62091a38cfa6eb4694e8a0b",
+          "observedAt": "2026-10-12T23:16:57.956091+00:00"
+        },
+        {
+          "id": "home",
+          "url": "https://ozetrike.com.au/",
+          "status": 200,
+          "bytes": 203664,
+          "sha256": "b2bfb62048ddb20ab7db120754bf5eb30abc02e19d44ad99e9eeb8709f4bf222",
+          "observedAt": "2026-10-12T23:17:05.354917+00:00"
+        },
+        {
+          "id": "faq",
+          "url": "https://ozetrike.com.au/faqs",
+          "status": 200,
+          "bytes": 84852,
+          "sha256": "06eba11fea95ccdec328420966e7531a91dbf0f9b7826123df94611c0e855a96",
+          "observedAt": "2026-10-12T23:17:13.111056+00:00"
+        },
+        {
+          "id": "kargo",
+          "url": "https://www.evmotoemos.com.au/cargo/ct-kargo",
+          "error": "HTTP Error 502: Bad Gateway",
+          "observedAt": "2026-10-12T23:17:20.127546+00:00"
+        },
+        {
+          "id": "kool",
+          "url": "https://www.evmotoemos.com.au/cargo/ct-kargo-kool",
+          "error": "HTTP Error 502: Bad Gateway",
+          "observedAt": "2026-10-12T23:17:27.160384+00:00"
+        },
+        {
+          "id": "kube",
+          "url": "https://www.evmotoemos.com.au/cargo/ct-kube",
+          "error": "HTTP Error 502: Bad Gateway",
+          "observedAt": "2026-10-12T23:17:34.509937+00:00"
+        }
+      ],
+      "embeddedPdfVerification": [
+        {
+          "name": "Road Vehicle Descriptor - VTA-065474 20250912.pdf",
+          "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/VTADetails/?id=073001ac-968f-f011-b4cc-000d3ad1ce22",
+          "sha256": "e95af32d9b7c2b3a1911ca4714eab4d3c05b0238ea987b4028f662c7391ceba0",
+          "bytes": 396737,
+          "packetHashMatch": true,
+          "readMethod": "pdftotext; notice page 1 and RVD page 8 visually inspected",
+          "fullCopyIncluded": false
+        },
+        {
+          "name": "Approval Notice - VTA-065474.pdf",
+          "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/VTADetails/?id=073001ac-968f-f011-b4cc-000d3ad1ce22",
+          "sha256": "7163d001ce6f24a2686adf564f83d2a45f81c24b625aebeec7fcc1d458a38bd9",
+          "bytes": 300883,
+          "packetHashMatch": true,
+          "readMethod": "pdftotext; notice page 1 and RVD page 8 visually inspected",
+          "fullCopyIncluded": false
+        }
+      ],
+      "sourceSnapshotCopiesIncluded": false,
+      "canonicalHashMatchesPacket": true,
+      "packetInputs": {
+        "summary.txt": "20e2a909c5aa9eb23ecac6f570e621b54e0a4b167debdceda0c3850186326891",
+        "evidence.json": "04a990b4a8649f783526b3fcc8b9b973d098a2ddf1aa3c79f77b0d8484ef3baf",
+        "sources.json": "fd1e1895c5b2aa31052bc002dedfc81ab95a9bb3a1aa7bee2e401ebe344fd15a",
+        "inventory-duplication-check.json": "ca92c1c3f016fa20d642d8297b5165098f23c2996176d9317942535ff5ce2557",
+        "direct-retrieval-log.json": "4295cb2b2deb272a011a27c9f8a65907fffc054cba6972c897110b50c4bf5143"
+      }
+    },
+    "mate150Restrictions": [
+      "No lithium approval inherited by Mate150L; published RVD establishes no lithium option, not the absence of every possible separate approval.",
+      "Cargo 01/02 are regulatory variants, not two verified marketed trims. AGM/hydraulic-tipper wording is descriptive configuration wording, not proof of a separately named grade.",
+      "RVD data is applicant supplied and expressly not department-verified specification data.",
+      "Supplier curb 270 kg and RVD tare 368 kg are not harmonized. Do not derive payload or numeric ranks.",
+      "Retain original supplier rated/max and RVD net power labels. Do not combine older range/payload claims with current flyer.",
+      "Marketplace model year 2025 remains seller metadata, not verified manufacturer model year."
+    ],
+    "freshness": {
+      "freshDirectChecks": [
+        "ROVER HTML and two embedded PDFs",
+        "eBay listing",
+        "OZ eTrike home",
+        "OZ eTrike FAQ"
+      ],
+      "currentDirect502": [
+        "CT-KARGO",
+        "CT-KARGO KOOL",
+        "CT-KUBE"
+      ],
+      "webCrawlAge": {
+        "EMoS KOOL": "three months",
+        "EMoS KUBE": "three months",
+        "eBay web extractor": "two months, superseded for offer-existence evidence by independent fresh HTTP retrieval",
+        "KYBURZ local product": "two weeks",
+        "OzPOD": "four weeks",
+        "Jinpeng home": "today"
+      },
+      "interpretation": "Publication date, observation date, crawl age and seller year remain distinct. HTTP 200 is not stock proof; 502 is not discontinuation proof.",
+      "reviewLimits": [
+        "The local 28 MB KYBURZ PDF exceeded web extraction size; February 2025 printed date/hash remains packet-reported. Local 2.7 kW page and global May 2025 3.5 kW brochure independently read.",
+        "Historical 2022 price table and 2023 fleet submission were not revalidated or used to establish current admission.",
+        "Current Mate150 flyer was not re-rendered; specification conflicts conservatively retained from packet, with no numeric promotion."
+      ]
+    }
+  },
+  "researchArtifacts": [
+    {
+      "path": "roadmark-research/trike-gap-2026-10-12/direct-retrieval-log.json",
+      "bytes": 4399,
+      "sha256": "4295cb2b2deb272a011a27c9f8a65907fffc054cba6972c897110b50c4bf5143"
+    },
+    {
+      "path": "roadmark-research/trike-gap-2026-10-12/evidence.json",
+      "bytes": 10851,
+      "sha256": "04a990b4a8649f783526b3fcc8b9b973d098a2ddf1aa3c79f77b0d8484ef3baf"
+    },
+    {
+      "path": "roadmark-research/trike-gap-2026-10-12/inventory-duplication-check.json",
+      "bytes": 2828,
+      "sha256": "ca92c1c3f016fa20d642d8297b5165098f23c2996176d9317942535ff5ce2557"
+    },
+    {
+      "path": "roadmark-research/trike-gap-2026-10-12/manifest.json",
+      "bytes": 958,
+      "sha256": "14aa0764cfd847bcb403bb1628ff5d0da927eb6ba1a79b5d6634519b7ae8a2e0"
+    },
+    {
+      "path": "roadmark-research/trike-gap-2026-10-12/sources.json",
+      "bytes": 14764,
+      "sha256": "fd1e1895c5b2aa31052bc002dedfc81ab95a9bb3a1aa7bee2e401ebe344fd15a"
+    },
+    {
+      "path": "roadmark-research/trike-gap-2026-10-12/summary.txt",
+      "bytes": 3730,
+      "sha256": "20e2a909c5aa9eb23ecac6f570e621b54e0a4b167debdceda0c3850186326891"
+    }
+  ],
+  "sources": [
+    {
+      "id": "kyburz-au",
+      "url": "https://kyburz-webshop.com.au/kyburz-dxp-5-3-australian-electric-vehicle/",
+      "sourceKind": "Australian manufacturer subsidiary product page",
+      "sourceDate": null,
+      "observedAt": "2026-10-12",
+      "verbatimExcerpt": "Kyburz DXP 5.3 Australia",
+      "summary": "Specific Australian product and local seller Kyburz Pty Ltd, with inquiry route. No displayed price, stock quantity, unit VIN, condition marker or accepted-order commitment. Lists 2.7 kW motor, 302 Ah LiFePO4, 120 km estimated range and 50 km/h. Direct HTTP 200 verified.",
+      "retrieval": "direct_http_200_and_web_open"
+    },
+    {
+      "id": "kyburz-au-brochure",
+      "url": "https://kyburz-webshop.com.au/wp-content/uploads/2025/05/Kyburz-DXP-5.3-Australian.pdf",
+      "sourceKind": "Australian manufacturer subsidiary brochure",
+      "sourceDate": "2025-02",
+      "observedAt": "2026-10-12",
+      "verbatimExcerpt": "This document is accurate as of February 2025.",
+      "summary": "Linked from the DXP 5.3 product page. Names DXP 5.3 and motor AC 24 V / 2.7 kW. Month printed inside governs; /2025/05 URL is an upload path, not the brochure effective date.",
+      "retrieval": "direct_http_200_pdf_text",
+      "sha256": "6b8a81eaaa86859f4d5b7318253c70c4888123635da42d839da92aef61e6464c"
+    },
+    {
+      "id": "kyburz-global-au",
+      "url": "https://kyburz-switzerland.ch/en/australia",
+      "sourceKind": "Global manufacturer Australian product page",
+      "sourceDate": null,
+      "observedAt": "2026-10-12",
+      "verbatimExcerpt": "Link to the australian website",
+      "summary": "Manufacturer links to kyburz-webshop.com.au, establishing Australian website provenance. DXP is described as a three-wheel postal-delivery vehicle. The page gives 3.5 kW, conflicting with the 2.7 kW AU DXP 5.3 source.",
+      "retrieval": "web_open"
+    },
+    {
+      "id": "kyburz-global-brochure",
+      "url": "https://kyburz-switzerland.ch/library/Aus_DXP_EN_20250506_web2_321e.pdf",
+      "sourceKind": "Global manufacturer Australian brochure",
+      "sourceDate": "2025-05",
+      "observedAt": "2026-10-12",
+      "verbatimExcerpt": "This document is accurate as of May 2025.",
+      "summary": "Generic Australian DXP brochure specifies AC 24 V / 3.5 kW. It is later than the local 5.3 brochure, but does not establish that a new separately marketable trim exists. Do not merge motor values or invent a power upgrade.",
+      "retrieval": "direct_http_200_pdf_text",
+      "sha256": "391b4a0dbbd94c44316e3bc776d9e5bb9fcf77e0f41b06d039e3ccf6fc4d63d6"
+    },
+    {
+      "id": "kyburz-post-history",
+      "url": "https://www.infrastructure.gov.au/sites/default/files/documents/post2023-submission-no-72-kyburz-pty-ltd.pdf",
+      "sourceKind": "Manufacturer submission hosted by Australian government",
+      "sourceDate": "2023-04-28",
+      "observedAt": "2026-10-12",
+      "verbatimExcerpt": "Initially deployed in 2017, Kyburz have now delivered over 3,600 vehicles to Australia Post",
+      "summary": "Historical fleet operation is supported by manufacturer testimony. It is not current public new-stock or factory-order evidence.",
+      "retrieval": "web_search_extract"
+    },
+    {
+      "id": "kargo-dealer",
+      "url": "https://www.evmotoemos.com.au/cargo/ct-kargo",
+      "sourceKind": "Australian dealer product page",
+      "sourceDate": null,
+      "observedAt": "2026-10-12",
+      "verbatimExcerpt": "RVCS Approval 50281 LB (3W moped) Classification",
+      "summary": "Dealer catalogue lists CT-KARGO, 50 km/h, LiFePO4 73.6 V / 95 Ah / 6.992 kWh, 3.7 kW, 1,245 L cargo and white colour. Inquiry form only. Current direct HTTP retrieval failed (502); web extraction is cached/indexed, reported crawl around three months ago. Approval is a dealer claim, not independently verified.",
+      "retrieval": "web_indexed_open_direct_http_502"
+    },
+    {
+      "id": "kargo-kool-dealer",
+      "url": "https://www.evmotoemos.com.au/cargo/ct-kargo-kool",
+      "sourceKind": "Australian dealer product page",
+      "sourceDate": null,
+      "observedAt": "2026-10-12",
+      "verbatimExcerpt": "RVCS Approval 50281 LB (3W moped) Classification",
+      "summary": "Named CT-KARGO KOOL chilled-cargo derivative. Same claimed approval, battery, dimensions, wheelbase and motor as CT-KARGO; 1,000 L box and 150 kg max-load claim. Use one family with a named refrigerated configuration, not an extra unrelated model family. Inquiry-only and direct HTTP 502.",
+      "retrieval": "web_indexed_open_direct_http_502"
+    },
+    {
+      "id": "kube-dealer",
+      "url": "https://www.evmotoemos.com.au/cargo/ct-kube",
+      "sourceKind": "Australian dealer product page",
+      "sourceDate": null,
+      "observedAt": "2026-10-12",
+      "verbatimExcerpt": "RVCS Approval 50282 LB (3W moped) Classification",
+      "summary": "CT-KUBE dealer page lists 50 km/h, 4 kW, LiFePO4 51.2 V / 95 Ah / 4.864 kWh and white colour. Cargo bay descriptions: Honey Comb Panel (1) 500 L; Honey Comb Panel (2) 450 L; EPP 255 L. These are listed body options, not proved currently offered trims. Inquiry-only and direct HTTP 502.",
+      "retrieval": "web_indexed_open_direct_http_502"
+    },
+    {
+      "id": "emos-range",
+      "url": "https://www.evmotoemos.com.au/",
+      "sourceKind": "Australian dealer range page",
+      "sourceDate": null,
+      "observedAt": "2026-10-12",
+      "verbatimExcerpt": "100% Electric and 100% Street Legal",
+      "summary": "Names all three EMoS cargo products and generic road-use/finance marketing. Footer 2022 and months-old indexing do not prove supplier continuity or new availability in October 2026. Homepage was already used for other unresolved EMoS/WYLD leads in canonical inventory.",
+      "retrieval": "web_indexed_open"
+    },
+    {
+      "id": "emos-historical-market",
+      "url": "https://electricvehiclecouncil.com.au/wp-content/uploads/2022/10/State-of-EVs-October-2022.pdf",
+      "sourceKind": "Australian EV industry report",
+      "sourceDate": "2022-10",
+      "observedAt": "2026-10-12",
+      "verbatimExcerpt": "CT-KARGO",
+      "summary": "Historical report lists CT-KARGO AU$14,999 and CT-KUBE AU$12,999, both coded LA. Dealer pages instead claim LB. Neither historical price nor LA code is adopted as current. Listed figures are industry submissions/desktop research, not current stock proof.",
+      "retrieval": "web_search_extract"
+    },
+    {
+      "id": "ozetrike-home",
+      "url": "https://ozetrike.com.au/",
+      "sourceKind": "Australian supplier catalogue",
+      "sourceDate": null,
+      "observedAt": "2026-10-12",
+      "verbatimExcerpt": "Pre-order with $500 deposit for 1st batch of 12units arriving Dec 2026.",
+      "summary": "Base Mate150 is advertised at AU$6,195 before on-road costs with hydraulic tipper and VTA-065474. Separate Mate150L costs AU$7,975 and is a future batch preorder with 76 V / 125 Ah LFP and claimed 120 km range. Refund-before-delivery claim shown. Do not infer immediate stock or type-approval coverage for Mate150L.",
+      "retrieval": "direct_http_200_and_web_open"
+    },
+    {
+      "id": "ozetrike-products",
+      "url": "https://ozetrike.com.au/products",
+      "sourceKind": "Australian supplier product page",
+      "sourceDate": null,
+      "observedAt": "2026-10-12",
+      "verbatimExcerpt": "Can be delivered nationwide.",
+      "summary": "Supplier advertises its Mate150 at AU$6,195 before on-road costs and national delivery. This is an advertised supply route, not accepted-order or physical-unit verification.",
+      "retrieval": "web_search_extract"
+    },
+    {
+      "id": "ozetrike-faq",
+      "url": "https://ozetrike.com.au/faqs",
+      "sourceKind": "Australian supplier FAQ",
+      "sourceDate": null,
+      "observedAt": "2026-10-12",
+      "verbatimExcerpt": "Our VTA number for model Mate150 is VTA-065474",
+      "summary": "Explicit supplier identity join from marketed Mate150 to approval VTA-065474. Supplier says the vehicle is a road vehicle in LB (three-wheel moped), distinct from non-road utility vehicles. State licence claims are not independently adopted.",
+      "retrieval": "direct_http_200_and_web_open"
+    },
+    {
+      "id": "ozetrike-rover",
+      "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/VTADetails/?id=073001ac-968f-f011-b4cc-000d3ad1ce22",
+      "sourceKind": "Australian government current type-approval record",
+      "sourceDate": "2025-09-12",
+      "observedAt": "2026-10-12",
+      "verbatimExcerpt": "In Force",
+      "summary": "Approval VTA-065474 is shown In Force; holder JNN Pty Ltd; commencement 12 September 2025; manufacturer make JINPENG; model JP1500DZH-B; marketing designation OZetrike; category LB. Type approval only, not an identified vehicle RAV entry or state registration.",
+      "retrieval": "direct_http_200_and_web_open"
+    },
+    {
+      "id": "ozetrike-approval-notice",
+      "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/VTADetails/?id=073001ac-968f-f011-b4cc-000d3ad1ce22",
+      "sourceKind": "Government approval notice embedded in public ROVER page",
+      "sourceDate": "2025-09-12",
+      "observedAt": "2026-10-12",
+      "verbatimExcerpt": "Variants: Cargo 01, Cargo 02",
+      "summary": "Downloaded from the public current-approval button embedded in the page. Approval notice for JINPENG JP1500DZH-B, LB, holder JNN; valid from 12 September 2025 and stated expiry 11 September 2032 unless revoked earlier. Conditions apply. Public record currently shows In Force.",
+      "retrieval": "public_page_embedded_pdf_read",
+      "documentName": "Approval Notice - VTA-065474.pdf",
+      "sha256": "7163d001ce6f24a2686adf564f83d2a45f81c24b625aebeec7fcc1d458a38bd9",
+      "bytes": 300883
+    },
+    {
+      "id": "ozetrike-rvd",
+      "url": "https://www.rover.infrastructure.gov.au/PublishedApprovals/VTADetails/?id=073001ac-968f-f011-b4cc-000d3ad1ce22",
+      "sourceKind": "Applicant-supplied RVD published by government",
+      "sourceDate": "2025-09-12",
+      "observedAt": "2026-10-12",
+      "verbatimExcerpt": "This information has not been verified or approved by the department.",
+      "summary": "Current linked RVD generated 12 September 2025 lists Cargo 01 and Cargo 02. Both use 58 Ah LEAD-ACID, 3.90 kW electric engines, one seat, 368 kg tare, 1175 mm width and 2035 mm wheelbase. Engine records are 72 V DC 01 (4050 rpm) and 72 V DC 02 (2000 rpm). No lithium option appears. RVD data is supplied by applicant, with an explicit accuracy disclaimer. Regulatory variants are not demonstrated retail trims; the displayed VIN is a pattern, not a unit.",
+      "retrieval": "public_page_embedded_pdf_read",
+      "documentName": "Road Vehicle Descriptor - VTA-065474 20250912.pdf",
+      "pageReferences": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        8,
+        10
+      ],
+      "sha256": "e95af32d9b7c2b3a1911ca4714eab4d3c05b0238ea987b4028f662c7391ceba0",
+      "bytes": 396737
+    },
+    {
+      "id": "mate150-ebay",
+      "url": "https://www.ebay.com.au/itm/376747254821",
+      "sourceKind": "Public third-party Australian seller offer",
+      "sourceDate": "2026-07-19T22:10:21+10:00",
+      "observedAt": "2026-10-12",
+      "verbatimExcerpt": "Buy It Now",
+      "summary": "Fresh direct HTTP 200 advertises Mate150 in New condition, AU$6,386.55, green, seller-entered model year 2025, 72 V, 3900 W, hydraulic tipper, location Indooroopilly QLD. Seller os54073; affiliation with JNN not verified. Source displays purchase controls and a generic connection-error message. No VIN, unit stock quantity or allocation verified. Price differs from supplier MSRP and is not a drive-away quote.",
+      "retrieval": "direct_http_200_and_web_open",
+      "listingId": "376747254821",
+      "seller": "os54073",
+      "conditionVerbatim": "New"
+    },
+    {
+      "id": "mate150-current-flyer",
+      "url": "https://img1.wsimg.com/blobby/go/33dbd470-bcb9-4a28-aeba-aa82c6b61530/6%2C195%20Flyer-OZ%20eTrike%20Mate150.pdf",
+      "sourceKind": "Current supplier-linked flyer",
+      "sourceDate": null,
+      "observedAt": "2026-10-12",
+      "verbatimExcerpt": "MSRP Subject to On Road Costs",
+      "summary": "Two image-only pages visually inspected. Base Mate150 AU$6,195, VTA-065474; 42 km/h; 1500 W rated/3900 W max; six 12 V 58 Ah AGM lead-acid batteries; 50-60 km max range; curb 270 kg; battery mass 6 x 15.5 kg; GVM 543 kg. Supplier curb mass is not equivalent to applicant RVD tare 368 kg. Last-Modified header 19 July 2026 is server metadata, not a printed effective date.",
+      "retrieval": "direct_http_200_pdf_visual",
+      "httpLastModified": "2026-07-19T12:00:18Z",
+      "sha256": "f0afcc35c5ea303bb0a8f1910030af35643e6cb659a0e4e1a8dd0605da361950"
+    },
+    {
+      "id": "mate150-old-particulars",
+      "url": "https://img1.wsimg.com/blobby/go/33dbd470-bcb9-4a28-aeba-aa82c6b61530/OZetrike%20Mate150-%20Particulars-a848987.pdf",
+      "sourceKind": "Older supplier specification PDF",
+      "sourceDate": null,
+      "observedAt": "2026-10-12",
+      "verbatimExcerpt": "Mate150",
+      "summary": "Indexed older particulars claim 60-70 km range and 300 kg tray capacity, whereas current linked flyer says 50-60 km range and gives GVM 543 kg. These documents must not be silently combined. Use source-bound values only.",
+      "retrieval": "web_search_extract"
+    },
+    {
+      "id": "ozpod-manufacturer",
+      "url": "https://www.stealthspecialvehicles.com/ozpod",
+      "sourceKind": "Australian manufacturer product page",
+      "sourceDate": null,
+      "observedAt": "2026-10-12",
+      "verbatimExcerpt": "Designed and manufactured in Australia",
+      "summary": "Fresh primary product page promotes OzPOD for last-mile delivery, surveying and maintenance fleets. Values advertised: 50 km/h, 680 L storage, 120 km range, 250 kg total payload, 14 kWh battery. No exact current road-approval identifier, priced new offer, order acceptance, delivery timing or unit stock was found.",
+      "retrieval": "direct_http_200_and_web_open"
+    },
+    {
+      "id": "jinpeng-eql150",
+      "url": "https://jinpeng.com.au/",
+      "sourceKind": "Australian promotional/distribution website; manufacturer affiliation unverified",
+      "sourceDate": null,
+      "observedAt": "2026-10-12",
+      "verbatimExcerpt": "Launching in Australia 2026",
+      "summary": "E-QL150 interest-registration website aimed at farm/property applications. Text says pricing and availability will follow launch; this is not an order or new-stock offer. No current road-type approval identified for E-QL150.",
+      "retrieval": "web_open"
+    },
+    {
+      "id": "jinpeng-eql150-specs",
+      "url": "https://jinpeng.com.au/specs",
+      "sourceKind": "Australian promotional specification page; manufacturer affiliation unverified",
+      "sourceDate": null,
+      "observedAt": "2026-10-12",
+      "verbatimExcerpt": "AGM Lead Acid",
+      "summary": "E-QL150 is described with 72 V/80 Ah AGM, 3 kW motor, 45 km/h and 500 kg payload. The claimed model differs from the 58 Ah JP1500DZH-B / Mate150 approval and must not inherit it merely because both use the Jinpeng name.",
+      "retrieval": "web_open"
+    }
+  ],
+  "dispositions": [
+    {
+      "section": "records",
+      "row": {
+        "id": "ozetrike-mate150",
+        "brand": "OZ eTrike",
+        "model": "Mate150",
+        "vehicleClass": "motorcycle",
+        "vehicleType": "electric_road_trike",
+        "propulsion": "BEV",
+        "trims": [],
+        "aliases": [],
+        "modelAliases": [
+          "OZetrike",
+          "JP1500DZH-B"
+        ],
+        "checkedAt": "2026-10-12",
+        "orderStatus": "accepting_order_requests_advertised",
+        "stockStatus": "unverified",
+        "trimCoverage": "advertised_model_offer_exact_trims_unverified",
+        "evidenceNote": "An Australian seller advertises a New Mate150 offer, with order requests advertised. The supplier separately names Mate150 and links it to type approval VTA-065474. Physical stock, seller acceptance, delivery and individual registration remain unverified.",
+        "sourceUrls": [
+          "https://ozetrike.com.au/",
+          "https://ozetrike.com.au/products",
+          "https://ozetrike.com.au/faqs",
+          "https://www.rover.infrastructure.gov.au/PublishedApprovals/VTADetails/?id=073001ac-968f-f011-b4cc-000d3ad1ce22",
+          "https://www.ebay.com.au/itm/376747254821",
+          "https://img1.wsimg.com/blobby/go/33dbd470-bcb9-4a28-aeba-aa82c6b61530/6%2C195%20Flyer-OZ%20eTrike%20Mate150.pdf",
+          "https://img1.wsimg.com/blobby/go/33dbd470-bcb9-4a28-aeba-aa82c6b61530/OZetrike%20Mate150-%20Particulars-a848987.pdf"
+        ],
+        "limitations": [
+          "Type approval is not a VIN-specific RAV record or state registration. No actual VIN supplied or checked.",
+          "Cargo 01/02 are approval variants; not proved two saleable retail trims.",
+          "Supplier current flyer curb 270 kg and RVD tare 368 kg have different/unclear bases. Do not rank mass or infer payload.",
+          "No evidence of guaranteed stock count, delivery date, seller acceptance or completed sale.",
+          "eBay seller-year 2025 is offer metadata, not factory model-year certification; seller affiliation is unverified.",
+          "The supplier FAQ joins the marketed Mate150 to JINPENG JP1500DZH-B / OZetrike, VTA-065474, observed In Force on 12 October 2026. This is type-level LB approval, not verification of a particular offered build, VIN, RAV entry or state registration.",
+          "The published road vehicle descriptor lists 58 Ah lead-acid batteries for Cargo 01 and Cargo 02. Its applicant-supplied specifications are not department-verified; no exact retail grade or numeric ranking is established.",
+          "Mate150L is a separately named future lithium preorder whose approval is unverified. The base Mate150 lead-acid approval must not be transferred to Mate150L.",
+          "The supplier advertises AU$6,195 before on-road costs; the separate eBay seller advertises AU$6,386.55. ACTIVE, InStock and Buy It Now are advertising metadata, not physical-inventory, seller-acceptance or completed-sale verification."
+        ],
+        "rankingEligible": false,
+        "completeVehicleCountEligible": null,
+        "physicalStockQuantity": null,
+        "physicalStockVerified": false,
+        "factoryOrderAcceptanceVerified": false,
+        "modelYear": null,
+        "catalogueCoverage": "market_audit_only",
+        "recordScope": "advertised_model_offer_type_approval_join_only",
+        "sourceListedConfigurations": [
+          "Mate150"
+        ],
+        "sourceIds": [
+          "ozetrike-home",
+          "ozetrike-products",
+          "ozetrike-faq",
+          "ozetrike-rover",
+          "ozetrike-approval-notice",
+          "ozetrike-rvd",
+          "mate150-ebay",
+          "mate150-current-flyer",
+          "mate150-old-particulars"
+        ],
+        "sourceArtifacts": [
+          "market-road-trikes-evidence-2026-10-12.json"
+        ],
+        "evidenceSidecar": {
+          "path": "data/market-road-trikes-evidence-2026-10-12.json",
+          "recordId": "ozetrike-mate150"
+        },
+        "familyId": "ozetrike-mate150",
+        "relatedRecordIds": [
+          "ozetrike-mate150l"
+        ],
+        "advertisingEvidence": {
+          "supplier": {
+            "sourceIds": [
+              "ozetrike-home",
+              "ozetrike-products"
+            ],
+            "url": "https://ozetrike.com.au/",
+            "advertisedPriceAUD": 6195,
+            "basis": "before on-road costs",
+            "description": "Mate150 AGM lead-acid / hydraulic tipper; descriptive wording, not a separately verified retail grade"
+          },
+          "marketplace": {
+            "sourceIds": [
+              "mate150-ebay"
+            ],
+            "url": "https://www.ebay.com.au/itm/376747254821",
+            "seller": "os54073",
+            "sellerAffiliationVerified": false,
+            "advertisedPriceAUD": 6386.55,
+            "condition": "New",
+            "sellerYearMetadata": 2025,
+            "buyItNowObserved": true,
+            "embeddedListingStatus": "ACTIVE",
+            "embeddedAvailability": "https://schema.org/InStock",
+            "genericConnectionErrorAlsoDisplayed": true,
+            "interpretation": "Advertising only; physical stock, accepted orders, delivery and final total unverified"
+          },
+          "checkedAt": "2026-10-12"
+        },
+        "typeApprovalEvidence": {
+          "sourceIds": [
+            "ozetrike-faq",
+            "ozetrike-rover",
+            "ozetrike-approval-notice",
+            "ozetrike-rvd"
+          ],
+          "supplierFaq": "https://ozetrike.com.au/faqs",
+          "regulator": "https://www.rover.infrastructure.gov.au/PublishedApprovals/VTADetails/?id=073001ac-968f-f011-b4cc-000d3ad1ce22",
+          "approval": "VTA-065474",
+          "approvalHolder": "JNN PTY LTD",
+          "make": "JINPENG",
+          "model": "JP1500DZH-B",
+          "marketingDesignation": "OZetrike",
+          "category": "LB",
+          "statusObserved": "In Force",
+          "noticeEffectiveDate": "2025-09-12",
+          "noticeStatedExpiry": "2032-09-11 unless revoked earlier",
+          "variants": [
+            "Cargo 01",
+            "Cargo 02"
+          ],
+          "bothVariantBatteries": "58 Ah lead-acid",
+          "ravEntryVerified": false,
+          "unitVinVerified": false,
+          "stateRegistrationVerified": false,
+          "exactOfferedBuildBridgeVerified": false,
+          "lithiumApprovalVerified": false,
+          "numericRankingEligible": false
+        }
+      }
+    },
+    {
+      "section": "unverifiedLeads",
+      "row": {
+        "id": "kyburz-dxp",
+        "brand": "KYBURZ",
+        "model": "DXP",
+        "vehicleClass": "motorcycle",
+        "vehicleType": "electric_road_trike",
+        "propulsion": "BEV",
+        "trims": [],
+        "aliases": [],
+        "modelAliases": [],
+        "checkedAt": "2026-10-12",
+        "orderStatus": "listed_unconfirmed",
+        "stockStatus": "unverified",
+        "trimCoverage": "exact_current_retail_trims_unverified",
+        "evidenceNote": "KYBURZ names DXP 5.3 Australia on its Australian product page and offers an enquiry route. Historical Australian fleet use supports the road-delivery context. Current New supply, accepted orders and the exact current configuration approval remain unverified; conflicting local and generic power descriptions are not separate verified trims.",
+        "sourceUrls": [
+          "https://kyburz-webshop.com.au/kyburz-dxp-5-3-australian-electric-vehicle/",
+          "https://kyburz-webshop.com.au/wp-content/uploads/2025/05/Kyburz-DXP-5.3-Australian.pdf",
+          "https://kyburz-switzerland.ch/en/australia",
+          "https://kyburz-switzerland.ch/library/Aus_DXP_EN_20250506_web2_321e.pdf",
+          "https://www.infrastructure.gov.au/sites/default/files/documents/post2023-submission-no-72-kyburz-pty-ltd.pdf"
+        ],
+        "limitations": [
+          "No exact current stock, factory-order acceptance, price, VIN or RAV entry.",
+          "February 2025 local DXP 5.3 2.7 kW and May 2025 generic DXP 3.5 kW sources conflict; do not create an inferred trim."
+        ],
+        "rankingEligible": false,
+        "completeVehicleCountEligible": false,
+        "physicalStockQuantity": null,
+        "physicalStockVerified": false,
+        "factoryOrderAcceptanceVerified": false,
+        "modelYear": null,
+        "catalogueCoverage": "unresolved_lead_only",
+        "recordScope": "unverified_lead",
+        "sourceListedConfigurations": [
+          "DXP 5.3 Australia"
+        ],
+        "sourceIds": [
+          "kyburz-au",
+          "kyburz-au-brochure",
+          "kyburz-global-au",
+          "kyburz-global-brochure",
+          "kyburz-post-history"
+        ],
+        "sourceArtifacts": [
+          "market-road-trikes-evidence-2026-10-12.json"
+        ],
+        "evidenceSidecar": {
+          "path": "data/market-road-trikes-evidence-2026-10-12.json",
+          "recordId": "kyburz-dxp"
+        },
+        "familyId": "kyburz-dxp",
+        "relatedRecordIds": [],
+        "resolutionStatus": "unresolved"
+      }
+    },
+    {
+      "section": "unverifiedLeads",
+      "row": {
+        "id": "emos-ct-kargo",
+        "brand": "EMoS",
+        "model": "CT-KARGO",
+        "vehicleClass": "motorcycle",
+        "vehicleType": "electric_road_trike",
+        "propulsion": "BEV",
+        "trims": [],
+        "aliases": [
+          "CT Kargo"
+        ],
+        "modelAliases": [],
+        "checkedAt": "2026-10-12",
+        "orderStatus": "listed_unconfirmed",
+        "stockStatus": "unverified",
+        "trimCoverage": "exact_current_retail_trims_unverified",
+        "evidenceNote": "Indexed Australian dealer pages name CT-KARGO and its CT-KARGO KOOL refrigerated derivative within one family. Current direct retrieval failed on 12 October 2026. Dealer-claimed RVCS 50281 LB approval, current New supply and accepted orders remain unverified.",
+        "sourceUrls": [
+          "https://www.evmotoemos.com.au/cargo/ct-kargo",
+          "https://www.evmotoemos.com.au/cargo/ct-kargo-kool",
+          "https://www.evmotoemos.com.au/",
+          "https://electricvehiclecouncil.com.au/wp-content/uploads/2022/10/State-of-EVs-October-2022.pdf"
+        ],
+        "limitations": [
+          "Both dealer pages direct-fetch 502; only indexed content observed, approximately three-month crawler age.",
+          "No accepted current order or New unit offer found.",
+          "KOOL shares base claimed approval and principal dimensions/drivetrain; named refrigerated derivative, not fourth standalone original-candidate family.",
+          "Historical Australian distributor aliases Bange/RAP-SEV are leads only; no current alias join independently validated."
+        ],
+        "rankingEligible": false,
+        "completeVehicleCountEligible": false,
+        "physicalStockQuantity": null,
+        "physicalStockVerified": false,
+        "factoryOrderAcceptanceVerified": false,
+        "modelYear": null,
+        "catalogueCoverage": "unresolved_lead_only",
+        "recordScope": "unverified_lead",
+        "sourceListedConfigurations": [
+          "CT-KARGO",
+          "CT-KARGO KOOL"
+        ],
+        "sourceIds": [
+          "kargo-dealer",
+          "kargo-kool-dealer",
+          "emos-range",
+          "emos-historical-market"
+        ],
+        "sourceArtifacts": [
+          "market-road-trikes-evidence-2026-10-12.json"
+        ],
+        "evidenceSidecar": {
+          "path": "data/market-road-trikes-evidence-2026-10-12.json",
+          "recordId": "emos-ct-kargo"
+        },
+        "familyId": "emos-ct-kargo",
+        "relatedRecordIds": [],
+        "resolutionStatus": "unresolved",
+        "sourceListedDerivativeRelationship": {
+          "derivative": "CT-KARGO KOOL",
+          "familyId": "emos-ct-kargo",
+          "basis": "Shared dealer-claimed approval and principal dimensions/drivetrain; no independently verified homologated derivative scope"
+        }
+      }
+    },
+    {
+      "section": "unverifiedLeads",
+      "row": {
+        "id": "emos-ct-kube",
+        "brand": "EMoS",
+        "model": "CT-KUBE",
+        "vehicleClass": "motorcycle",
+        "vehicleType": "electric_road_trike",
+        "propulsion": "BEV",
+        "trims": [],
+        "aliases": [
+          "CT Kube"
+        ],
+        "modelAliases": [],
+        "checkedAt": "2026-10-12",
+        "orderStatus": "listed_unconfirmed",
+        "stockStatus": "unverified",
+        "trimCoverage": "exact_current_retail_trims_unverified",
+        "evidenceNote": "Indexed Australian dealer material names CT-KUBE and three cargo-body options. Current direct retrieval failed on 12 October 2026. Dealer-claimed RVCS 50282 LB approval, current New supply and accepted orders remain unverified; the body options are not verified retail trims.",
+        "sourceUrls": [
+          "https://www.evmotoemos.com.au/cargo/ct-kube",
+          "https://www.evmotoemos.com.au/",
+          "https://electricvehiclecouncil.com.au/wp-content/uploads/2022/10/State-of-EVs-October-2022.pdf"
+        ],
+        "limitations": [
+          "Direct-fetch 502; indexed content only.",
+          "Three cargo-body capacity options are not verified current named trims.",
+          "Historical price/LA classification from 2022 industry table is not substituted for current approval, price or stock."
+        ],
+        "rankingEligible": false,
+        "completeVehicleCountEligible": false,
+        "physicalStockQuantity": null,
+        "physicalStockVerified": false,
+        "factoryOrderAcceptanceVerified": false,
+        "modelYear": null,
+        "catalogueCoverage": "unresolved_lead_only",
+        "recordScope": "unverified_lead",
+        "sourceListedConfigurations": [
+          "CT-KUBE"
+        ],
+        "sourceIds": [
+          "kube-dealer",
+          "emos-range",
+          "emos-historical-market"
+        ],
+        "sourceArtifacts": [
+          "market-road-trikes-evidence-2026-10-12.json"
+        ],
+        "evidenceSidecar": {
+          "path": "data/market-road-trikes-evidence-2026-10-12.json",
+          "recordId": "emos-ct-kube"
+        },
+        "familyId": "emos-ct-kube",
+        "relatedRecordIds": [],
+        "resolutionStatus": "unresolved",
+        "sourceListedBodyOptions": [
+          "Honey Comb Panel (1) 500 L",
+          "Honey Comb Panel (2) 450 L",
+          "EPP 255 L"
+        ]
+      }
+    },
+    {
+      "section": "unverifiedLeads",
+      "row": {
+        "id": "stealth-ozpod",
+        "brand": "Stealth Special Vehicles",
+        "model": "OzPOD",
+        "vehicleClass": "motorcycle",
+        "vehicleType": "electric_road_trike",
+        "propulsion": "BEV",
+        "trims": [],
+        "aliases": [],
+        "modelAliases": [],
+        "checkedAt": "2026-10-12",
+        "orderStatus": "listed_unconfirmed",
+        "stockStatus": "unverified",
+        "trimCoverage": "exact_current_retail_trims_unverified",
+        "evidenceNote": "The manufacturer describes OzPOD as an Australian delivery trike. Product-page presence does not establish a current New offer, accepted order, available physical vehicle or exact current road approval.",
+        "sourceUrls": [
+          "https://www.stealthspecialvehicles.com/ozpod"
+        ],
+        "limitations": [
+          "Fresh product page alone does not prove manufacturing/order availability or immediate delivery.",
+          "No current road-registration approval joined to exact offered configuration.",
+          "Do not import performance values from older forums or confuse MilPOD/QuadPOD/C-17 products with OzPOD."
+        ],
+        "rankingEligible": false,
+        "completeVehicleCountEligible": false,
+        "physicalStockQuantity": null,
+        "physicalStockVerified": false,
+        "factoryOrderAcceptanceVerified": false,
+        "modelYear": null,
+        "catalogueCoverage": "unresolved_lead_only",
+        "recordScope": "unverified_lead",
+        "sourceListedConfigurations": [
+          "OzPOD"
+        ],
+        "sourceIds": [
+          "ozpod-manufacturer"
+        ],
+        "sourceArtifacts": [
+          "market-road-trikes-evidence-2026-10-12.json"
+        ],
+        "evidenceSidecar": {
+          "path": "data/market-road-trikes-evidence-2026-10-12.json",
+          "recordId": "stealth-ozpod"
+        },
+        "familyId": "stealth-ozpod",
+        "relatedRecordIds": [],
+        "resolutionStatus": "unresolved"
+      }
+    },
+    {
+      "section": "unverifiedLeads",
+      "row": {
+        "id": "ozetrike-mate150l",
+        "brand": "OZ eTrike",
+        "model": "Mate150L",
+        "vehicleClass": "motorcycle",
+        "vehicleType": "electric_road_trike",
+        "propulsion": "BEV",
+        "trims": [],
+        "aliases": [],
+        "modelAliases": [],
+        "checkedAt": "2026-10-12",
+        "orderStatus": "preorder",
+        "stockStatus": "unverified",
+        "trimCoverage": "exact_current_retail_trims_unverified",
+        "evidenceNote": "The supplier advertises Mate150L as a separate future lithium preorder, with a December 2026 arrival forecast. The advertised batch and deposit do not establish physical stock or delivery. Lithium approval is unverified and must not be inherited from the base Mate150 lead-acid approval.",
+        "sourceUrls": [
+          "https://ozetrike.com.au/",
+          "https://www.rover.infrastructure.gov.au/PublishedApprovals/VTADetails/?id=073001ac-968f-f011-b4cc-000d3ad1ce22"
+        ],
+        "limitations": [
+          "December 2026 and 12 units are supplier forecast/allocation wording, not verified arrival or inventory.",
+          "Current published approval RVD is lead-acid 58 Ah only. No lithium sales-to-approval join.",
+          "Do not count as a separate physical stocked unit or already available configuration."
+        ],
+        "rankingEligible": false,
+        "completeVehicleCountEligible": false,
+        "physicalStockQuantity": null,
+        "physicalStockVerified": false,
+        "factoryOrderAcceptanceVerified": false,
+        "modelYear": null,
+        "catalogueCoverage": "unresolved_lead_only",
+        "recordScope": "unverified_future_derivative",
+        "sourceListedConfigurations": [
+          "Mate150L"
+        ],
+        "sourceIds": [
+          "ozetrike-home",
+          "ozetrike-rvd",
+          "ozetrike-approval-notice"
+        ],
+        "sourceArtifacts": [
+          "market-road-trikes-evidence-2026-10-12.json"
+        ],
+        "evidenceSidecar": {
+          "path": "data/market-road-trikes-evidence-2026-10-12.json",
+          "recordId": "ozetrike-mate150l"
+        },
+        "familyId": "ozetrike-mate150",
+        "relatedRecordIds": [
+          "ozetrike-mate150"
+        ],
+        "resolutionStatus": "unresolved",
+        "futureBatchAdvertisingEvidence": {
+          "sourceIds": [
+            "ozetrike-home"
+          ],
+          "advertisedPriceAUD": 7975,
+          "advertisedDepositAUD": 500,
+          "advertisedArrival": "2026-12",
+          "advertisedBatchUnits": 12,
+          "batteryClaim": {
+            "chemistry": "LiFePO4",
+            "voltageV": 76,
+            "capacityAh": 125
+          },
+          "interpretation": "Supplier claims and future forecast only; no verified stock quantity, delivery or lithium approval"
+        },
+        "lithiumApprovalVerified": false
+      }
+    },
+    {
+      "section": "peripheralRecords",
+      "row": {
+        "id": "jinpeng-e-ql150",
+        "brand": "Jinpeng",
+        "model": "E-QL150",
+        "vehicleClass": "other",
+        "vehicleType": "electric_cargo_trike_road_eligibility_unverified",
+        "propulsion": "BEV",
+        "trims": [],
+        "aliases": [],
+        "modelAliases": [],
+        "checkedAt": "2026-10-12",
+        "orderStatus": "not_current",
+        "stockStatus": "unverified",
+        "trimCoverage": "exact_current_retail_trims_unverified",
+        "evidenceNote": "An Australian promotional site invites interest in a future E-QL150 launch. Expression of interest is not a preorder or current New offer. Exact road eligibility, current supply and supplier authority remain unverified; no identity link to Mate150 is established.",
+        "sourceUrls": [
+          "https://jinpeng.com.au/",
+          "https://jinpeng.com.au/specs"
+        ],
+        "limitations": [
+          "Interest registration is not preorder or purchase availability.",
+          "No current Australian type approval established for E-QL150.",
+          "No identity join to JP1500DZH-B / Mate150; brand alone is insufficient.",
+          "Promotional site manufacturer/distributor authority not independently established."
+        ],
+        "rankingEligible": false,
+        "completeVehicleCountEligible": false,
+        "physicalStockQuantity": null,
+        "physicalStockVerified": false,
+        "factoryOrderAcceptanceVerified": false,
+        "modelYear": null,
+        "catalogueCoverage": "peripheral_candidate_only",
+        "recordScope": "future_road_eligibility_unverified",
+        "sourceListedConfigurations": [
+          "E-QL150"
+        ],
+        "sourceIds": [
+          "jinpeng-eql150",
+          "jinpeng-eql150-specs"
+        ],
+        "sourceArtifacts": [
+          "market-road-trikes-evidence-2026-10-12.json"
+        ],
+        "evidenceSidecar": {
+          "path": "data/market-road-trikes-evidence-2026-10-12.json",
+          "recordId": "jinpeng-e-ql150"
+        },
+        "familyId": "jinpeng-e-ql150",
+        "relatedRecordIds": [],
+        "coreRoadVehicleRecord": false,
+        "peripheralCategory": "future_road_eligibility_unverified"
+      }
+    }
+  ],
+  "counts": {
+    "familyGroups": 6,
+    "dispositions": 7,
+    "newAuditRecords": 1,
+    "newUnresolvedEntries": 5,
+    "newPeripheralCandidates": 1,
+    "newNamedTrimEntries": 0,
+    "verifiedPhysicalStockUnits": 0,
+    "verifiedCurrentDeliverableCompleteVehicles": 0
+  },
+  "classificationQualification": "motorcycle is the existing Roadmark display grouping for moped/motorcycle-category road vehicles; it does not establish a new legal class, ranked cohort or per-VIN registration.",
+  "methodsAndLimits": [
+    "Public manufacturer/distributor/dealer/regulator browsing only. No contacts, form submissions, credentials, purchases, application changes, deployment, Git or cloud tasks.",
+    "Source dates, observation dates and seller-entered model years are kept distinct.",
+    "No exact VIN or individual RAV record verified. Approval status is type-level only.",
+    "All numeric claims are source-bound and non-ranking; class/measurement comparability has not been audited.",
+    "An unsuccessful fetch is a research limitation, not proof a business/model is discontinued.",
+    "No result here closes the Australian EV universe."
+  ]
+}

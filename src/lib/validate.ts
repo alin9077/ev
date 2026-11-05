@@ -109,7 +109,8 @@ export function validateResearch(input: unknown): string[] {
   // Later overlays declare what they add; the supplied counts must still reconcile.
   const added = (key: string) => Number(d.metadata[key] ?? 0);
   if (
-    d.metadata.record_count !== d.variants.length ||
+    d.metadata.record_count + added("added_variant_count") !==
+      d.variants.length ||
     d.metadata.criterion_count + added("added_criterion_count") !==
       d.criteria.length ||
     d.metadata.feature_row_count + added("added_feature_row_count") !==

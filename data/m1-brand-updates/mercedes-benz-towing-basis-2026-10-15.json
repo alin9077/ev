@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "id": "m1-mercedes-benz-towing-basis-2026-10-15",
+  "brand": "Mercedes-Benz",
+  "reviewedAt": "2026-10-15",
+  "reviewedBy": "Roadmark independently reviewed Australian Mercedes-Benz towing-basis correction",
+  "sources": [
+    {
+      "id": "m1-mercedes-benz-2026-10-15-eqa-towing",
+      "url": "https://www.carsguide.com.au/mercedes-benz/eq-class/eqa/towing-capacity/2026",
+      "title": "2026 EQA 250+ Australian towing table",
+      "publisher": "CarsGuide / Glass’s",
+      "source_type": "secondary_australian_price_guide",
+      "published_date": null,
+      "accessed_date": "2026-10-15",
+      "market": "AU",
+      "supports": "2026 EQA 250+ Australian towing table",
+      "retrievalMethod": "Fresh public text HTTP; no login, forms, location or response headers retained",
+      "capture_locator": "mercedes-research/technical/eqa-towing.raw.html",
+      "capture_sha256": "ba514cffcc778c4063e285a74f9effdd28a7ba40f22a2af0b5b622f316f10615",
+      "retainedCaptures": [
+        {
+          "locator": "mercedes-research/technical/eqa-towing.raw.html",
+          "sha256": "ba514cffcc778c4063e285a74f9effdd28a7ba40f22a2af0b5b622f316f10615",
+          "bytes": 219612,
+          "purpose": "Public source capture"
+        }
+      ]
+    },
+    {
+      "id": "m1-mercedes-benz-2026-10-15-eqa-choice",
+      "url": "https://www.choice.com.au/products/transport/cars/eco-friendly/mercedes-benz-eqa-250",
+      "title": "EQA 250+ public specifications, cargo and towing",
+      "publisher": "CHOICE",
+      "source_type": "secondary_australian_review",
+      "published_date": "2025 model cohort; page date not stated",
+      "accessed_date": "2026-10-15",
+      "market": "AU",
+      "supports": "EQA 250+ public specifications, cargo and towing",
+      "notes": "Only publicly visible fields used. No member-only content accessed. Height 1620 mm conflicts with current CarsGuide 1624 mm; cargo measurement protocol unstated. Earlier-cohort carryover must be labelled Reported.",
+      "retrievalMethod": "Fresh public text HTTP; no login, forms, location or response headers retained",
+      "capture_locator": "mercedes-research/technical/eqa-choice.raw.html",
+      "capture_sha256": "306e6986a4149505818d86bbd8d8591519032c76378af45cb7ef7e1f0b20756e",
+      "retainedCaptures": [
+        {
+          "locator": "mercedes-research/technical/eqa-choice.raw.html",
+          "sha256": "306e6986a4149505818d86bbd8d8591519032c76378af45cb7ef7e1f0b20756e",
+          "bytes": 538630,
+          "purpose": "Public source capture"
+        }
+      ]
+    }
+  ],
+  "models": [],
+  "variants": [],
+  "versionGuards": [
+    {
+      "variantId": "mercedes_benz_eqa_current__eqa_250_plus__20261010",
+      "before": {
+        "id": "mercedes_benz_eqa_current__eqa_250_plus__20261010",
+        "modelId": "mercedes_benz_eqa_current",
+        "brand": "Mercedes-Benz",
+        "model": "EQA",
+        "trim": "EQA 250+",
+        "year": null,
+        "generation": "Current Australian manufacturer-listed technical table; formal MY unverified",
+        "vehicleClass": "passenger",
+        "drive": "FWD"
+      }
+    }
+  ],
+  "versionUpdates": [],
+  "facts": [
+    {
+      "variantId": "mercedes_benz_eqa_current__eqa_250_plus__20261010",
+      "before": {
+        "key": "towing_braked_kg",
+        "label": "Braked towing",
+        "value": 0,
+        "unit": "kg",
+        "basis": "Secondary sources expressly state zero / no towing",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "m1-mercedes-benz-2026-10-15-eqa-towing",
+          "m1-mercedes-benz-2026-10-15-eqa-choice"
+        ],
+        "date": "2026-10-15",
+        "market": "AU",
+        "scope": "Mercedes-Benz EQA EQA 250+",
+        "qualifications": [],
+        "issues": [],
+        "buyerGrade": "reported",
+        "gradeReview": {
+          "reviewedAt": "2026-10-15",
+          "overlayId": "m1-mercedes-benz-2026-10-15",
+          "reason": "2026 CarsGuide exact EQA 250+ table explicitly publishes 0 kg braked. CHOICE’s earlier 2025 page separately states No Towing categorically. Zero is sourced from CarsGuide, not derived from a dash or from the categorical label.",
+          "evidenceScope": "secondary_or_sibling",
+          "sourceIds": [
+            "m1-mercedes-benz-2026-10-15-eqa-towing",
+            "m1-mercedes-benz-2026-10-15-eqa-choice"
+          ],
+          "sourceLabel": "CarsGuide / Glass’s / CHOICE"
+        },
+        "resolvedElsewhere": true
+      },
+      "after": {
+        "key": "towing_braked_kg",
+        "label": "Braked towing",
+        "value": 0,
+        "unit": "kg",
+        "basis": "CarsGuide 2026 EQA 250+: explicitly published 0 kg braked towing",
+        "comparisonBasis": "",
+        "status": "conditional",
+        "sourceIds": [
+          "m1-mercedes-benz-2026-10-15-eqa-towing",
+          "m1-mercedes-benz-2026-10-15-eqa-choice"
+        ],
+        "date": "2026-10-15",
+        "market": "AU",
+        "scope": "Mercedes-Benz EQA EQA 250+",
+        "qualifications": [],
+        "issues": [],
+        "buyerGrade": "reported",
+        "gradeReview": {
+          "reviewedAt": "2026-10-15",
+          "overlayId": "m1-mercedes-benz-towing-basis-2026-10-15",
+          "reason": "2026 CarsGuide exact EQA 250+ table explicitly publishes 0 kg braked. CHOICE’s earlier 2025 page separately states No Towing categorically. Zero is sourced from CarsGuide, not derived from a dash or from the categorical label.",
+          "evidenceScope": "secondary_or_sibling",
+          "sourceIds": [
+            "m1-mercedes-benz-2026-10-15-eqa-towing",
+            "m1-mercedes-benz-2026-10-15-eqa-choice"
+          ],
+          "sourceLabel": "CarsGuide / Glass’s / CHOICE"
+        },
+        "resolvedElsewhere": true
+      }
+    }
+  ],
+  "availability": [],
+  "summaries": []
+}
