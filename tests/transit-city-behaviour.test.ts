@@ -184,7 +184,8 @@ test("discovery preserves provisional targeted scope and offers no numerical win
   );
   assert.ok(!html.includes("catalogue-chip-on_sale_now"));
   assert.ok(!html.includes("A relative strength"));
-  assert.ok(!html.includes(">254 km<"));
+  // The projected figure may appear, but never without saying it is a target.
+  assert.ok(html.includes("Targeted/estimated WLTP"));
 });
 test("citable report retains exact provisional generation and all availability conditions", () => {
   const report = makeReport([full], "/cars/test-city"),

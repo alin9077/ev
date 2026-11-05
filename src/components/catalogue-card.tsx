@@ -38,10 +38,20 @@ function Figure({
     </div>
   );
 }
-const rangeBasis = (fact?: Fact) =>
-  fact && /WLTP/i.test(`${fact.comparisonBasis} ${fact.basis}`)
+/** A range that is only a maker's target or estimate must say so on the card. */
+const rangeBasis = (fact?: Fact) => {
+  if (!fact) return "";
+  const text = JSON.stringify([
+    fact.basis,
+    fact.comparisonBasis,
+    fact.qualifications,
+    fact.conditionExplanation,
+  ]);
+  if (/targeted|estimated/i.test(text)) return "Targeted/estimated WLTP";
+  return /WLTP/i.test(`${fact.comparisonBasis} ${fact.basis}`)
     ? "WLTP"
-    : fact?.comparisonBasis || "";
+    : fact.comparisonBasis || "";
+};
 
 /**
  * One catalogue card, phone-first. It carries exactly: brand, model, version,
