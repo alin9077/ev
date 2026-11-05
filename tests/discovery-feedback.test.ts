@@ -37,7 +37,13 @@ test("share, card, ranked and unranked actions have local feedback while the par
     new URL("../src/components/discovery.tsx", import.meta.url),
     "utf8",
   );
-  assert.equal((source.match(/<VisualActionFeedback\b/g) || []).length, 4);
+  // Share, ranked and unranked here; the per-card message lives in the card.
+  assert.equal((source.match(/<VisualActionFeedback\b/g) || []).length, 3);
+  const card = readFileSync(
+    new URL("../src/components/catalogue-card.tsx", import.meta.url),
+    "utf8",
+  );
+  assert.equal((card.match(/<VisualActionFeedback\b/g) || []).length, 1);
   assert.equal(
     (source.match(/className="sr-only" role="status"/g) || []).length,
     1,

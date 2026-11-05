@@ -1,8 +1,6 @@
 "use client";
 import { australianEvidenceDate } from "@/lib/evidence-date";
-import { buyerDisplayCopy } from "@/lib/buyer-display-copy";
 
-import { EvidenceConditions } from "./evidence-conditions";
 import { VisualActionFeedback } from "./visual-action-feedback";
 import {
   createActionFeedbackGate,
@@ -13,17 +11,12 @@ import Link from "next/link";
 import {
   attributes,
   rankAttribute,
-  buildStrengthsIndex,
   filterDiscoveryCars,
   type AttributeKey,
 } from "@/lib/discovery";
-import { currentBuyerSummary } from "@/lib/selling-points";
-import { buyerSummaryNeedsClock } from "@/lib/buyer-summary-timing";
 import type { Car, Source } from "@/lib/types";
 import { RoadmarkLogo } from "./roadmark-logo";
-import { CarAvatar } from "./car-avatar";
 import { FootnoteRefs } from "./footnotes";
-import { buyerAvailabilityText } from "@/lib/buyer-availability";
 import {
   DEFAULT_VEHICLE_SCOPE,
   matchesVehicleScope,
@@ -33,6 +26,11 @@ import {
 import { FreshnessLabel } from "./freshness-label";
 import { freshnessWindowDays } from "@/lib/freshness";
 import { formatFact } from "@/lib/compare";
+import { CatalogueCard } from "./catalogue-card";
+import { buyerSummaryNeedsClock } from "@/lib/buyer-summary-timing";
+import { cardModel, standingSentences } from "@/lib/catalogue-card";
+import { brandCoverage, isOnSale, passengerEvCount } from "@/lib/on-sale";
+import brandReviewStatus from "@/lib/generated/brand-review-status.json";
 const urlFor = (c: Car) => `/cars/${c.family}/${c.slug}`;
 export default function Discovery({
   cars,
@@ -74,6 +72,8 @@ export default function Discovery({
   }
   const [clockReady, setClockReady] = useState(false);
   const [asOf, setAsOf] = useState("2026-10-10");
+  // "on_sale" is the default view; "all" adds announced and withdrawn versions.
+  const [listing, setListing] = useState<"on_sale" | "all">("on_sale");
   useEffect(() => {
     const gate = feedbackGate.current;
     const restore = () => {
@@ -85,6 +85,7 @@ export default function Discovery({
       setQuery(q.get("q") || "");
       setVehicleClass(readVehicleScope(q.get("class")));
       setStockOnly(q.get("stock") === "new");
+      setListing(q.get("show") === "all" ? "all" : "on_sale");
       setLimit(12);
       setUnrankedLimit(12);
       const key = q.get("attribute");
@@ -128,10 +129,6 @@ export default function Discovery({
     () => rankAttribute(scopedCars, sources, attribute, rankingPolicy),
     [scopedCars, sources, attribute, rankingPolicy],
   );
-  const strengthsIndex = useMemo(
-    () => buildStrengthsIndex(scopedCars, sources, rankingPolicy),
-    [scopedCars, sources, rankingPolicy],
-  );
   const current = attributes.find((a) => a.key === attribute)!;
   const matching = filterDiscoveryCars(
     cars,
@@ -140,11 +137,33 @@ export default function Discovery({
     stockOnly,
     policy,
   );
+  // Searching looks across every version we hold; browsing lists what is on sale.
+  const listed = useMemo(
+    () =>
+      // Only the default Tier 1 browse is narrowed to what is on sale; an
+      // explicit type filter or a search shows everything we hold.
+      listing === "all" ||
+      query.trim() ||
+      vehicleClass !== DEFAULT_VEHICLE_SCOPE
+        ? matching
+        : matching.filter(isOnSale),
+    [matching, listing, query, vehicleClass],
+  );
+  const standing = useMemo(
+    () => standingSentences(cars, sources, policy),
+    [cars, sources, policy],
+  );
+  const headlineCount = useMemo(() => passengerEvCount(cars), [cars]);
+  const coverage = useMemo(
+    () => brandCoverage(cars, brandReviewStatus),
+    [cars],
+  );
   function stateUrl(next: {
     mode?: typeof mode;
     q?: string;
     vehicleClass?: string;
     stockOnly?: boolean;
+    listing?: "on_sale" | "all";
     attribute?: AttributeKey;
     selected?: string[];
   }) {
@@ -155,12 +174,14 @@ export default function Discovery({
     u.searchParams.set("q", next.q ?? query);
     u.searchParams.set("class", next.vehicleClass ?? vehicleClass);
     u.searchParams.set("stock", (next.stockOnly ?? stockOnly) ? "new" : "all");
+    u.searchParams.set("show", next.listing ?? listing);
     u.searchParams.set("attribute", next.attribute ?? attribute);
     u.searchParams.set("selected", (next.selected ?? selected).join(","));
     const push =
       next.mode !== undefined ||
       next.vehicleClass !== undefined ||
       next.stockOnly !== undefined ||
+      next.listing !== undefined ||
       next.attribute !== undefined;
     history[push ? "pushState" : "replaceState"](history.state, "", u);
   }
@@ -241,9 +262,7 @@ export default function Discovery({
         </div>
         <div className="discovery-scope">
           <span className="discovery-dot" />
-          Research shortlist ·{" "}
-          {new Set(cars.map((c) => c.modelFamily || c.family)).size} families ·{" "}
-          {cars.length} exact versions
+          {headlineCount} passenger EVs on sale in Australia
           <span>
             Market-wide audit in progress. No Australian-market “best” badges
             yet.
@@ -317,211 +336,70 @@ export default function Discovery({
             </label>
             <div className="discovery-filters">
               <label>
-                Stock evidence
+                Show
                 <select
-                  value={stockOnly ? "new" : "all"}
+                  value={stockOnly ? "new" : listing}
                   onChange={(e) => {
-                    const next = e.target.value === "new";
-                    setStockOnly(next);
+                    const next = e.target.value;
+                    const nextListing = next === "all" ? "all" : "on_sale";
+                    setListing(nextListing);
+                    setStockOnly(next === "new");
                     setLimit(12);
-                    stateUrl({ stockOnly: next });
+                    stateUrl({
+                      listing: nextListing,
+                      stockOnly: next === "new",
+                    });
                   }}
                 >
-                  <option value="all">All researched trims</option>
-                  <option value="new">Fresh new-stock advertisements</option>
+                  <option value="on_sale">On sale now</option>
+                  <option value="new">With a dealer new-stock advert</option>
+                  <option value="all">Also announced or withdrawn</option>
                 </select>
               </label>
             </div>
             <p role="status" className="small muted">
-              {matching.length} version{" "}
-              {matching.length === 1 ? "record" : "records"}. Stock and order
-              availability need separate confirmation.
+              {listed.length} {listed.length === 1 ? "car" : "cars"}
+              {query.trim() ? " found across every version we hold" : ""}. “On
+              sale” means listed by the maker or a dealer, not in stock.
             </p>
-            <div className="discovery-cards">
-              {matching.slice(0, limit).map((c) => {
-                const strengths = strengthsIndex.get(c.id) || [];
-                const buyer = currentBuyerSummary(
-                  clockReady || !buyerSummaryNeedsClock(c.buyerSummary)
-                    ? c.buyerSummary
-                    : undefined,
-                  sources,
-                  policy,
-                );
-                const best = strengths.find((s) => s.percentile > 0.5);
-                const tradeoff = [...strengths]
-                  .reverse()
-                  .find(
-                    (s) =>
-                      s.attribute.key !== best?.attribute.key &&
-                      s.percentile < 0.5,
-                  );
-                return (
-                  <article className="discovery-car" key={c.id}>
-                    <div className="discovery-car-top">
-                      <span className="eyebrow">{c.brand}</span>
-                      <span className="small muted">
-                        {c.year ?? "MY unverified"}
-                      </span>
-                    </div>
-                    <h3>
-                      <Link href={urlFor(c)} prefetch={false}>
-                        {c.model}
-                      </Link>
-                    </h3>
-                    <p className="discovery-trim">{c.trim}</p>
-                    {c.configurationEvidence && (
-                      <div className="small muted">
-                        <p>
-                          Captured configuration · specifications incomplete
-                        </p>
-                        <p>
-                          {buyerDisplayCopy(
-                            c.id,
-                            "configurationEvidence.projectionScope",
-                            c.configurationEvidence.projectionScope,
-                          )}
-                        </p>
-                      </div>
-                    )}
-                    <CarAvatar car={c} />
-                    <p className="discovery-state">
-                      {buyerAvailabilityText(c)} ·
-                      {c.availabilityEvidence?.stockStatus ===
-                      "new_stock_listed"
-                        ? "New stock advertised"
-                        : "Stock not verified"}
-                      {c.availabilityEvidence && (
-                        <>
-                          {" "}
-                          ·{" "}
-                          <FreshnessLabel
-                            checkedAt={c.availabilityEvidence.checkedAt}
-                            factKey="availability"
-                            asOf={clockReady ? asOf : ""}
-                          />
-                        </>
-                      )}
-                      {c.availabilityEvidence?.stockStatus ===
-                        "new_stock_listed" && (
-                        <FootnoteRefs ids={c.availabilityEvidence.sourceIds} />
-                      )}
-                    </p>
-                    <div className="discovery-strength">
-                      <p className="eyebrow">
-                        {buyer?.strength
-                          ? "Why consider it"
-                          : best
-                            ? "A relative strength"
-                            : "Evidence first"}
-                      </p>
-                      <h4>
-                        {buyer?.strength
-                          ? buyer.strength.label
-                          : best
-                            ? best.attribute.title
-                            : "Worth checking in detail"}
-                      </h4>
-                      <p>
-                        {buyer?.strength ? (
-                          <>
-                            {buyer.strength.text}{" "}
-                            <FootnoteRefs ids={buyer.strength.sourceIds} />
-                          </>
-                        ) : best ? (
-                          <>
-                            <strong>
-                              {Number(best.fact.value).toLocaleString("en-AU")}{" "}
-                              {best.fact.unit}
-                            </strong>{" "}
-                            · {best.tied ? "Joint " : ""}#{best.rank} of{" "}
-                            {best.compared} compatible shortlist trims.{" "}
-                            <FootnoteRefs ids={best.fact.sourceIds} />
-                          </>
-                        ) : strengths.length ? (
-                          "No clear numerical advantage stands out in the verified shortlist. Explore this exact trim’s figures and trade-offs."
-                        ) : (
-                          "Comparable evidence is still incomplete. Open the exact-trim record for its verified facts and remaining gaps."
-                        )}
-                      </p>
-                      {buyer?.strength && (
-                        <p className="small muted">
-                          Evidence {buyer.checkedAt} · Buyer-use interpretation,
-                          not a market-leading claim.
-                        </p>
-                      )}
-                      {!buyer?.strength && best && (
-                        <p className="small muted">
-                          {best.basis} · Evidence {best.fact.date}. A shortlist
-                          result, not a market-wide award.
-                        </p>
-                      )}
-                    </div>
-                    {(!buyer?.strength || buyer.tradeoff) && (
-                      <p className="discovery-tradeoff">
-                        <strong>Keep in mind</strong>{" "}
-                        {buyer?.tradeoff ? (
-                          <>
-                            {buyer.tradeoff.text}{" "}
-                            <FootnoteRefs ids={buyer.tradeoff.sourceIds} />
-                          </>
-                        ) : tradeoff ? (
-                          <>
-                            {tradeoff.attribute.label}:{" "}
-                            {Number(tradeoff.fact.value).toLocaleString(
-                              "en-AU",
-                            )}{" "}
-                            {tradeoff.fact.unit};{" "}
-                            {tradeoff.tied ? "Joint " : ""}#{tradeoff.rank} of{" "}
-                            {tradeoff.compared} comparable trims.{" "}
-                            <FootnoteRefs ids={tradeoff.fact.sourceIds} />
-                          </>
-                        ) : best ? (
-                          best.attribute.note
-                        ) : (
-                          "Availability and the evidence gaps still need checking before a buying decision."
-                        )}
-                      </p>
-                    )}
-                    {buyer && (
-                      <EvidenceConditions conditions={buyer.conditions} />
-                    )}
-                    <div className="discovery-card-actions">
-                      <Link href={urlFor(c)} prefetch={false}>
-                        Exact trim & evidence →
-                      </Link>
-                      <button
-                        aria-pressed={selected.includes(c.id)}
-                        onClick={() => toggle(c.id)}
-                      >
-                        {selected.includes(c.id) ? "Remove" : "Compare +"}
-                      </button>
-                    </div>
-                    <VisualActionFeedback
-                      message={
-                        visibleFeedback?.kind === "selection" &&
-                        visibleFeedback.carId === c.id
-                          ? visibleFeedback.message
-                          : undefined
-                      }
-                    />
-                  </article>
-                );
-              })}
+            <div className="discovery-cards catalogue-cards">
+              {listed.slice(0, limit).map((c) => (
+                <CatalogueCard
+                  key={c.id}
+                  car={c}
+                  card={cardModel(
+                    clockReady || !buyerSummaryNeedsClock(c.buyerSummary)
+                      ? c
+                      : { ...c, buyerSummary: undefined },
+                    sources,
+                    policy,
+                    standing,
+                  )}
+                  selected={selected.includes(c.id)}
+                  onToggle={() => toggle(c.id)}
+                  feedback={
+                    visibleFeedback?.kind === "selection" &&
+                    visibleFeedback.carId === c.id
+                      ? visibleFeedback.message
+                      : undefined
+                  }
+                />
+              ))}
             </div>
-            {matching.length > limit && (
+            {listed.length > limit && (
               <div className="discovery-more">
                 <p>
-                  Showing {limit} of {matching.length} matching trims. Search
-                  checks the whole researched catalogue.
+                  Showing {Math.min(limit, listed.length)} of {listed.length}.
+                  Search looks across every version we hold.
                 </p>
                 <button className="button" onClick={() => setLimit(limit + 12)}>
-                  Show 12 more trims
+                  Show 12 more
                 </button>
               </div>
             )}
-            {!matching.length && (
+            {!listed.length && (
               <div className="discovery-empty">
-                <h3>No matching trims in this shortlist</h3>
+                <h3>No cars match</h3>
                 <p>
                   The market audit is still growing. No result here doesn’t mean
                   the car isn’t sold in Australia.
@@ -532,11 +410,13 @@ export default function Discovery({
                     setQuery("");
                     setVehicleClass(DEFAULT_VEHICLE_SCOPE);
                     setStockOnly(false);
+                    setListing("on_sale");
                     setLimit(12);
                     stateUrl({
                       q: "",
                       vehicleClass: DEFAULT_VEHICLE_SCOPE,
                       stockOnly: false,
+                      listing: "on_sale",
                     });
                   }}
                 >
@@ -805,6 +685,11 @@ export default function Discovery({
           {feedback}
         </p>
       </aside>
+      <p className="container discovery-coverage">
+        Coverage: {coverage.fullyReviewed} brands fully reviewed,{" "}
+        {coverage.partly} partly; see{" "}
+        <Link href="/methodology">methodology</Link>.
+      </p>
       <div className="container discovery-legacy">
         <Link href="/b">
           Explore the original illustrated Model Y comparison →

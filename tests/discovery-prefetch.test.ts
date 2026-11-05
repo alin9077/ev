@@ -48,15 +48,11 @@ test("every Discovery exact-trim Link site, including unranked figures, explicit
   );
   const details = links.filter((node) => href(node)?.startsWith("{urlFor("));
   assert.deepEqual(details.map(href), [
-    "{urlFor(c)}",
-    "{urlFor(c)}",
     "{urlFor(e.car)}",
     "{urlFor(entry.car)}",
     "{urlFor(c)}",
   ]);
   const labels = [
-    "vehicle heading",
-    "exact trim and evidence",
     "attribute ranking",
     "unranked published figure",
     "excluded record",
@@ -81,6 +77,7 @@ test("Discovery comparison and supporting links retain their existing prefetch p
   const other = links.filter((node) => !href(node)?.startsWith("{urlFor("));
   assert.deepEqual(other.map(href), [
     '{`/compare?cars=${selected.join(",")}`}',
+    '"/methodology"',
     '"/b"',
     '"/market"',
     '"/sources"',
@@ -222,4 +219,30 @@ test("portable disabled prefetch still honors prior and caller cancellation", ()
     assert.equal(event.defaultPrevented, true);
     assert.deepEqual(h.calls, ["caller"]);
   }
+});
+
+test("the catalogue card's exact-version link also disables prefetch", () => {
+  const source = ts.createSourceFile(
+    "catalogue-card.tsx",
+    readFileSync("src/components/catalogue-card.tsx", "utf8"),
+    ts.ScriptTarget.Latest,
+    true,
+    ts.ScriptKind.TSX,
+  );
+  const links: ts.JsxOpeningElement[] = [];
+  (function visit(node: ts.Node) {
+    if (
+      ts.isJsxOpeningElement(node) &&
+      node.tagName.getText(source) === "Link"
+    )
+      links.push(node);
+    ts.forEachChild(node, visit);
+  })(source);
+  assert.equal(links.length, 1);
+  const prefetch = links[0].attributes.properties.find(
+    (item): item is ts.JsxAttribute =>
+      ts.isJsxAttribute(item) && item.name.getText(source) === "prefetch",
+  )?.initializer;
+  assert.ok(prefetch && ts.isJsxExpression(prefetch));
+  assert.equal(prefetch.expression?.kind, ts.SyntaxKind.FalseKeyword);
 });

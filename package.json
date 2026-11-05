@@ -5,7 +5,7 @@
   "packageManager": "pnpm@11.19.0",
   "scripts": {
     "dev": "node scripts/generate-market-view.mjs --check && next dev --hostname 127.0.0.1",
-    "build": "pnpm validate && next build && pnpm build:portable",
+    "build": "pnpm validate && pnpm check:brand-review-status && next build && pnpm build:portable",
     "start": "next start --hostname 127.0.0.1",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src tests scripts",
@@ -16,12 +16,14 @@
     "format": "prettier --write src tests scripts",
     "build:portable": "node --import tsx scripts/build-portable.ts",
     "build:art": "node --import tsx scripts/build-chapter-art.ts",
-    "build:public": "pnpm validate && node scripts/build-public.mjs",
+    "build:public": "pnpm validate && pnpm check:brand-review-status && node scripts/build-public.mjs",
     "preview:review": "node --import tsx scripts/serve-roadmark.ts",
     "generate:market-view": "node scripts/generate-market-view.mjs --write",
     "check:market-view": "node scripts/generate-market-view.mjs --check",
     "report:coverage": "node --import tsx scripts/report-coverage.ts",
-    "report:stale": "node --import tsx scripts/report-stale.ts"
+    "report:stale": "node --import tsx scripts/report-stale.ts",
+    "generate:brand-review-status": "node --import tsx scripts/generate-brand-review-status.ts --write",
+    "check:brand-review-status": "node --import tsx scripts/generate-brand-review-status.ts --check"
   },
   "dependencies": {
     "next": "16.3.8",

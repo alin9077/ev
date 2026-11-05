@@ -25,6 +25,8 @@ import {
 import { filterDiscoveryCars } from "../src/lib/discovery";
 import { comparisonPickerCars } from "../src/lib/picker-car";
 import { compiledSource, elementNodes } from "./helpers/compiled-source";
+import { CatalogueCard } from "../src/components/catalogue-card";
+import { isOnSale } from "../src/lib/on-sale";
 
 const cars = catalogue();
 const sourceIds = ["maker"];
@@ -347,10 +349,13 @@ function browserHarness(initial: string) {
 }
 
 test("discovery vehicle and attribute modes respect scope and restore URLs without losing selected vehicles", () => {
+  // The default list is on-sale cars, so the fixtures must be on sale.
   const passenger = cars.find(
-    (car) => (car.vehicleClass || "passenger") === "passenger",
+    (car) => (car.vehicleClass || "passenger") === "passenger" && isOnSale(car),
   )!;
-  const van = cars.find((car) => car.vehicleClass === "van")!;
+  const van = cars.find(
+    (car) => car.vehicleClass === "van" && isOnSale(car),
+  )!;
   const subset = [passenger, van];
   const browser = browserHarness(`/discover?selected=${van.id}&class=van`);
   try {
@@ -358,9 +363,7 @@ test("discovery vehicle and attribute modes respect scope and restore URLs witho
     const props = { cars: subset, sources: research().sources };
     const initial = harness.render(props);
     const cards = (tree: unknown) =>
-      elementNodes(tree).filter(
-        (node) => node.props.className === "discovery-car",
-      );
+      elementNodes(tree).filter((node) => node.type === CatalogueCard);
     assert.equal(cards(initial).length, 1);
     assert.match(renderToStaticMarkup(initial), new RegExp(passenger.model));
     harness.mountEffects();

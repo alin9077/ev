@@ -37,7 +37,8 @@ test("server discovery route exists with one main heading and catalogue controls
   assert.equal((html.match(/<main\b/g) || []).length, 1);
   assert.equal((html.match(/<h1\b/g) || []).length, 1);
   assert.ok(html.includes("Vehicle type"));
-  assert.ok(html.includes("Stock evidence"));
+  assert.ok(html.includes("On sale now"));
+  assert.ok(html.includes("With a dealer new-stock advert"));
 });
 
 test("unknown MY and manufacturer-only listing stay explicit in exact detail", () => {
@@ -113,7 +114,7 @@ test("captured build scope remains visible when dated buyer copy is absent", () 
   );
 });
 
-test("a single matching version uses a singular record label", () => {
+test("a single matching version uses a singular car label", () => {
   const car = catalogue().find(
     (c) => c.id === "ford_e_transit_custom_my26_50__trend_lwb__20261010",
   )!;
@@ -125,6 +126,6 @@ test("a single matching version uses a singular record label", () => {
     ),
   );
   const text = html.replace(/<!--[\s\S]*?-->/g, "");
-  assert.ok(text.includes("1 version record."));
-  assert.ok(!text.includes("1 version records."));
+  assert.ok(text.includes("1 car."));
+  assert.ok(!text.includes("1 cars."));
 });

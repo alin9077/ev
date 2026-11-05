@@ -274,7 +274,7 @@ test("pre-clock Discovery keeps the existing evidence fallback and does not reve
     sources,
   );
   assert.ok(html.includes(escape(row.after)));
-  assert.match(html, /Comparable evidence is still incomplete/);
+  assert.match(html, /No strength or trade-off written for this version yet/);
   assert.doesNotMatch(
     html,
     /CLOCK-BOUND-LABEL|CLOCK-BOUND-TEXT|Checking evidence freshness/,

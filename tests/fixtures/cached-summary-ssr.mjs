@@ -235,7 +235,10 @@ test("actual Discovery SSR never substitutes a timed ranking fallback", () => {
   );
   assert.ok(!html.includes("UNIQUE_TIMED_BUYER_COPY"));
   assert.ok(!html.includes("39,991"));
-  assert.ok(!html.includes("59,992"));
+  // The catalogue card now shows an untimed price as a plain fact; only the
+  // timed offer waits for the clock, and no rank sentence is ever invented.
+  assert.ok(html.includes("59,992"));
+  assert.ok(html.includes("Checking offer validity"));
   assert.ok(!html.includes("#1 of 2"));
 });
 test("Sydney date is independent of UTC date and handles summer/winter + invalid dates", () => {
