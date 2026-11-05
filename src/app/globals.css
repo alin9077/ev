@@ -6034,3 +6034,29 @@ nav.site-nav li a {
     display: none;
   }
 }
+
+/* The long Model Y comparison sits behind one summary on the home page. */
+.fleet-full-comparison > summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 18px 16px;
+  margin: 0 auto;
+  max-width: var(--max);
+  font-weight: 600;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  min-height: 56px;
+}
+.fleet-full-comparison > summary::-webkit-details-marker {
+  display: none;
+}
+.fleet-full-comparison > summary span::after {
+  content: " +";
+}
+.fleet-full-comparison[open] > summary span::after {
+  content: " −";
+}
+.fleet-full-comparison > summary:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: -3px;
+}

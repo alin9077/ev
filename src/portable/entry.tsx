@@ -36,6 +36,7 @@ function App() {
         initial={fleetSelection(catalogue(), query)}
         criteria={d.criteria}
         version="b"
+        collapseComparison
         afterHero={
           <Discovery
             cars={discoveryCars(catalogue())}

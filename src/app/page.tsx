@@ -29,6 +29,7 @@ export default function Home() {
         criteria={d.criteria}
         version="b"
         afterHero={<Discovery cars={discovery} sources={sources} embedded />}
+        collapseComparison
       />
     </WithEvidence>
   );
