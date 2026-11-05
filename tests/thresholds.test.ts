@@ -10,6 +10,7 @@ import {
   REASON_CLOSE_TO_CAP,
   REASON_NEEDS_LIST_PRICE,
   REASON_THRESHOLD_NOT_RETRIEVED,
+  REASON_UTE_NOT_ELIGIBLE,
   REASON_UTE_PAYLOAD_NOT_CHECKED,
   rungOneListPrice,
   thresholdFreshness,
@@ -479,5 +480,38 @@ test("utes: unknown unless a sourced payload settles the one-tonne condition", (
   assert.equal(
     run({ vehicleClass: "passenger", facts: version(under).facts }).underFbtCap,
     true,
+  );
+});
+
+test("ute payload boundary: 999 kg is eligible and falls through to price; 1000 kg is not eligible and says why", () => {
+  const ute = (price: number, kg: number) =>
+    ({
+      vehicleClass: "ute",
+      facts: {
+        ...version(price).facts,
+        payload_kg: { value: kg, sourceIds: ["s"] },
+      },
+    }) as ThresholdVersion;
+  const at999 = run(ute(CAP * 0.5, 999));
+  assert.equal(at999.underFbtCap, true);
+  assert.equal(at999.fbtReason, null);
+  assert.equal(formatFbtRow(at999).answer, "Yes");
+  assert.equal(run(ute(CAP * 2, 999)).underFbtCap, false);
+  assert.equal(run(ute(CAP * 2, 999)).fbtReason, null);
+  assert.equal(formatFbtRow(run(ute(CAP * 2, 999))).answer, "No");
+  // Not eligible regardless of price, and the reason is not a price reason.
+  for (const price of [CAP * 0.5, CAP, CAP * 2]) {
+    const r = run(ute(price, 1000));
+    assert.equal(r.underFbtCap, false);
+    assert.equal(r.fbtReason, REASON_UTE_NOT_ELIGIBLE);
+    assert.equal(
+      formatFbtRow(r).answer,
+      "No (not eligible: ute designed to carry one tonne or more)",
+    );
+    assert.equal(formatFbtRow(r).notice, FBT_NOT_TAX_ADVICE);
+  }
+  assert.equal(
+    REASON_UTE_NOT_ELIGIBLE,
+    "not eligible: ute designed to carry one tonne or more",
   );
 });

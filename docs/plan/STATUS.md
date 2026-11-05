@@ -132,7 +132,7 @@ Of the 265 "needs maker list price": 31 are rung 2, 66 rung 3, 29 rung 4, 83 run
 
 ## Ambiguities found
 
-- WS4: ATO ties the FBT cap to the LCT *value* (GST-inclusive, includes dealer delivery), while the catalogue holds the maker list price before on-road costs; hence the 2% "close to cap" band. Utes must also be designed to carry under one tonne to qualify: a ute returns `unknown` ("utes qualify only if designed to carry under one tonne; payload not checked") unless the catalogue holds a sourced `payload_kg`; a sourced payload of 1,000 kg or more returns false.
+- WS4: ATO ties the FBT cap to the LCT *value* (GST-inclusive, includes dealer delivery), while the catalogue holds the maker list price before on-road costs; hence the 2% "close to cap" band. Utes must also be designed to carry under one tonne to qualify: a ute returns `unknown` ("utes qualify only if designed to carry under one tonne; payload not checked") unless the catalogue holds a sourced `payload_kg`; a sourced payload of 1,000 kg or more returns false with the reason "not eligible: ute designed to carry one tonne or more" (row text: "No (not eligible: …)"). Counts unchanged (no catalogue ute is at 1,000 kg or more); scoped tests now 28/28, validate/typecheck/lint exit 0.
 - WS4: 33 Tier 1 price facts have no ladder rung; read strictly as not rung 1.
 
 (A worker who hits a case the definitions in section 1 of the plan do not cover writes it here, with the stricter reading they chose.)

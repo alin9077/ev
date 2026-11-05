@@ -49,6 +49,8 @@ export const REASON_CLOSE_TO_CAP =
 export const REASON_THRESHOLD_NOT_RETRIEVED = "threshold not retrieved";
 export const REASON_UTE_PAYLOAD_NOT_CHECKED =
   "utes qualify only if designed to carry under one tonne; payload not checked";
+export const REASON_UTE_NOT_ELIGIBLE =
+  "not eligible: ute designed to carry one tonne or more";
 /** The exemption needs a car designed to carry a load of less than one tonne. */
 export const UTE_PAYLOAD_LIMIT_KG = 1000;
 export const FBT_NOT_TAX_ADVICE =
@@ -172,7 +174,7 @@ export function assessThresholds(
     if (known === null)
       fbt = { result: "unknown", reason: REASON_UTE_PAYLOAD_NOT_CHECKED };
     else if (known >= UTE_PAYLOAD_LIMIT_KG)
-      fbt = { result: false, reason: null };
+      fbt = { result: false, reason: REASON_UTE_NOT_ELIGIBLE };
   }
   const lct = against(
     price,
@@ -252,7 +254,9 @@ export function formatFbtRow(result: ThresholdResult): FbtRowText {
     result.underFbtCap === true
       ? "Yes"
       : result.underFbtCap === false
-        ? "No"
+        ? result.fbtReason
+          ? `No (${result.fbtReason})`
+          : "No"
         : `Can't tell (${result.fbtReason ?? REASON_NEEDS_LIST_PRICE})`;
   return {
     label: "Under the FBT exemption price cap?",
