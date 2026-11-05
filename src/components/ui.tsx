@@ -19,8 +19,15 @@ import { FreshnessLabel } from "./freshness-label";
 import { BuyerGradeMark, FactValue, Status, shortDate } from "./graded-figure";
 export { FactValue, Status };
 import { featureCondition } from "@/lib/fleet";
+import { plainWords } from "@/lib/plain-words";
 
-export function FeatureValue({ feature: f, asOf }: { feature: Feature; asOf?: string }) {
+export function FeatureValue({
+  feature: f,
+  asOf,
+}: {
+  feature: Feature;
+  asOf?: string;
+}) {
   const grade = buyerGradeOf(f);
   return (
     <div className="feature-value">
@@ -42,24 +49,26 @@ export function FeatureValue({ feature: f, asOf }: { feature: Feature; asOf?: st
       {grade ? (
         <BuyerGradeMark
           grade={grade}
-          condition={featureCondition(f)}
+          condition={plainWords(featureCondition(f))}
           sourceLabel={f.gradeReview?.sourceLabel}
         />
       ) : f.status === "conditional" ? (
         <div className="conditional-context">
           <strong>Why conditional</strong>
-          <p>{featureCondition(f)}</p>
+          <p>{plainWords(featureCondition(f))}</p>
         </div>
       ) : (
-        f.conditions && <p className="qualification">{f.conditions}</p>
+        f.conditions && (
+          <p className="qualification">{plainWords(f.conditions)}</p>
+        )
       )}
       {grade && grade !== "check" && f.conditions && (
-        <p className="qualification">{f.conditions}</p>
+        <p className="qualification">{plainWords(f.conditions)}</p>
       )}
       {!!f.usability_notes?.length && (
         <ul className="usability-notes">
           {f.usability_notes.map((note) => (
-            <li key={note}>{note}</li>
+            <li key={note}>{plainWords(note)}</li>
           ))}
         </ul>
       )}

@@ -5,6 +5,7 @@ import { formatFact } from "@/lib/compare";
 import { buyerGradeOf, gradeLabel } from "@/lib/evidence-grading";
 import { factCondition } from "@/lib/fleet";
 import type { BuyerGrade, Fact } from "@/lib/types";
+import { plainWords } from "@/lib/plain-words";
 import { FootnoteRefs } from "./footnotes";
 import { FreshnessLabel } from "./freshness-label";
 import { statusLabels } from "@/lib/config";
@@ -128,7 +129,9 @@ export function FactValue({
             ...new Set(
               [factCondition(fact), ...fact.qualifications].filter(Boolean),
             ),
-          ].join(" ")}
+          ]
+            .map((c) => plainWords(c))
+            .join(" ")}
           sourceLabel={
             fact.gradeReview?.sourceLabel || fact.priceEvidence?.publisher
           }
@@ -151,7 +154,7 @@ export function FactValue({
           {fact.status === "conditional" && (
             <div className="conditional-context">
               <strong>Why conditional</strong>
-              <p>{factCondition(fact)}</p>
+              <p>{plainWords(factCondition(fact))}</p>
             </div>
           )}
         </>
@@ -159,7 +162,7 @@ export function FactValue({
       <span className="fact-basis">
         {basisLabel === ""
           ? null
-          : `${basisLabel ?? (fact.priceEvidence?.basisTag || fact.basis)} · `}
+          : `${plainWords(basisLabel ?? (fact.priceEvidence?.basisTag || fact.basis))} · `}
         <FreshnessLabel
           checkedAt={fact.date}
           factKey={fact.key}
@@ -171,7 +174,7 @@ export function FactValue({
         grade !== "check" &&
         fact.qualifications.map((q) => (
           <span className="qualification" key={q}>
-            {q}
+            {plainWords(q)}
           </span>
         ))}
       <FootnoteRefs ids={fact.sourceIds} />

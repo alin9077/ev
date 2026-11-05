@@ -14,15 +14,14 @@ function* htmlFiles(dir: string): Generator<string> {
     else if (name.endsWith(".html")) yield full;
   }
 }
-// The plan's required pages fail the build. Every other prerendered page is
-// reported (and fails only with --all) until their data text is reworded.
 const REQUIRED = [
   "index.html",
   "discover.html",
   "cars/kia-ev5/air-2wd-standard-range-1.html",
   "compare/model-y-vs-atto-2.html",
 ];
-const all = process.argv.includes("--all");
+// Every prerendered page, including every version page, fails the build.
+const all = !process.argv.includes("--required-only");
 const args = process.argv.slice(2).filter((a) => !a.startsWith("--"));
 const roots = (args.length ? args : [".next/server/app", "out"]).filter(
   existsSync,
@@ -45,7 +44,7 @@ for (const root of roots)
   }
 if (others.length)
   console.warn(
-    `Plain-words: ${others.length} other page(s) still contain banned words (run with --all to fail on them).`,
+    `Plain-words: ${others.length} other page(s) still contain banned words (--required-only).`,
   );
 if (failures.length) {
   console.error(`Plain-words check failed in ${failures.length} page(s):`);

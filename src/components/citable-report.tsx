@@ -1,3 +1,4 @@
+import { plainWords } from "@/lib/plain-words";
 import { EvidenceConditions } from "./evidence-conditions";
 import Link from "next/link";
 import {
@@ -33,7 +34,7 @@ export function CitedClaim({
       : claim.sentence;
   return (
     <div className="cited-claim">
-      <p>{sentence}</p>
+      <p>{plainWords(sentence)}</p>
       {claim.validUntil !== undefined && (
         <FreshnessLabel
           checkedAt={claim.evidenceDate}
@@ -104,7 +105,7 @@ export function CitableReportContent({
         )}
       </div>
       <pre id={copyId} hidden>
-        {reportMarkdown(report)}
+        {plainWords(reportMarkdown(report))}
       </pre>
       <section aria-labelledby="key-facts">
         <h2 id="key-facts">Key facts</h2>

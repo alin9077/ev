@@ -5,6 +5,7 @@ import { renderToStaticMarkup } from "react-dom/server";
 import { catalogue, pack, research } from "../src/lib/data";
 import {
   PLAIN_WORDS_BANNED,
+  plainWords,
   plainWordsViolations,
 } from "../src/lib/plain-words";
 import Home from "../src/app/page";
@@ -80,4 +81,53 @@ test("no internal vocabulary on a comparison", () => {
   );
   assert.match(html, /Sealion 7/);
   assert.deepEqual(plainWordsViolations(html), []);
+});
+
+test("display mapping swaps internal words and leaves ordinary text alone", () => {
+  assert.equal(
+    plainWords("Not established in bounded packet"),
+    "Not established in this research",
+  );
+  assert.equal(
+    plainWords("a comparison/ranking-eligible range"),
+    "a comparison/can be ranked range",
+  );
+  assert.equal(
+    plainWords("technical cohort remains source-scoped"),
+    "technical cohort remains limited to the named source",
+  );
+  assert.equal(
+    plainWords("outside this Tier 1 inheritance"),
+    "outside this passenger-vehicle inheritance",
+  );
+  assert.equal(plainWords("Maker's list price"), "Maker's list price");
+  assert.equal(plainWords(undefined), undefined);
+  for (const word of PLAIN_WORDS_BANNED)
+    assert.deepEqual(
+      plainWordsViolations(plainWords(`An ${word} here`)),
+      [],
+      word,
+    );
+});
+
+test("formerly failing version pages are clean, including the copy-for-AI text", async () => {
+  const VariantPage = (await import("../src/app/cars/[family]/[variant]/page"))
+    .default as (p: {
+    params: Promise<{ family: string; variant: string }>;
+  }) => Promise<React.ReactElement>;
+  const cars = catalogue();
+  for (const family of [
+    "fonz-z-series",
+    "alfa-romeo-junior",
+    "mercedes-benz-eqb-city-edition",
+  ]) {
+    const car = cars.find((c) => c.family === family);
+    assert.ok(car, family);
+    const html = renderToStaticMarkup(
+      await VariantPage({
+        params: Promise.resolve({ family, variant: car.slug }),
+      }),
+    );
+    assert.deepEqual(plainWordsViolations(html), [], family);
+  }
 });

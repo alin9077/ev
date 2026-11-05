@@ -1,3 +1,4 @@
+import { plainWords } from "@/lib/plain-words";
 import {
   buyerSummaryCar,
   softwareTimelinePack,
@@ -64,7 +65,7 @@ export default function Detail({
           <p>
             {c.year ?? "MY unverified"} · {buyerAvailabilityText(c)} · {c.drive}
           </p>
-          <p className="small muted">{c.generation}</p>
+          <p className="small muted">{plainWords(c.generation)}</p>
           <p className="small muted">{genericEvidenceNote}</p>
           {c.configurationEvidence && (
             <p className="small muted">

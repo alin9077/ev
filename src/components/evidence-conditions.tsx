@@ -1,3 +1,4 @@
+import { plainWords } from "@/lib/plain-words";
 /** Native disclosure keeps all qualifications available without burying the next vehicle. */
 export function EvidenceConditions({
   conditions,
@@ -17,7 +18,7 @@ export function EvidenceConditions({
       </p>
       <ul className="small muted">
         {conditions.map((condition) => (
-          <li key={condition}>{condition}</li>
+          <li key={condition}>{plainWords(condition)}</li>
         ))}
       </ul>
     </details>
