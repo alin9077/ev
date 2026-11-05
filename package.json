@@ -5,7 +5,7 @@
   "packageManager": "pnpm@11.19.0",
   "scripts": {
     "dev": "node scripts/generate-market-view.mjs --check && next dev --hostname 127.0.0.1",
-    "build": "pnpm validate && pnpm check:brand-review-status && next build && pnpm build:portable",
+    "build": "pnpm validate && pnpm check:brand-review-status && next build && pnpm check:plain-words && pnpm build:portable",
     "start": "next start --hostname 127.0.0.1",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src tests scripts",
@@ -23,6 +23,7 @@
     "report:coverage": "node --import tsx scripts/report-coverage.ts",
     "report:stale": "node --import tsx scripts/report-stale.ts",
     "generate:brand-review-status": "node --import tsx scripts/generate-brand-review-status.ts --write",
+    "check:plain-words": "node --import tsx scripts/check-plain-words.ts",
     "check:brand-review-status": "node --import tsx scripts/generate-brand-review-status.ts --check"
   },
   "dependencies": {

@@ -51,7 +51,7 @@ export default function Methodology() {
         <p>
           On 8 October 2026, all 32 buyer sources previously marked as
           search-summary-only were attempted: 22 returned readable articles and
-          10 remained inaccessible. The source audit records corrections and
+          10 remained inaccessible. The source check logs corrections and
           access failures. Figures without support remain unknown; supported
           secondary figures are labelled Reported. This was a targeted audit,
           not a new check of every specification.{" "}
