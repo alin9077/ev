@@ -1,0 +1,1544 @@
+{
+  "schema": "roadmark-refresh-findings-v1",
+  "brand": "Lexus",
+  "asOf": "2026-11-05",
+  "reviewedAt": "2026-11-05",
+  "reviewedBy": "Roadmark WS2 refresh (Claude Code worker), Lexus",
+  "sources": [
+    {
+      "id": "refresh-lexus-2026-11-05-rz-sept",
+      "url": "https://www.lexus.com.au/news/2026/09/lexus-australia-to-launch-ultra-exclusive-rz-600e-f-sport-performance-flagship",
+      "title": "Lexus Australia to launch ultra exclusive RZ 600e F Sport Performance flagship (Lexus Australia news)",
+      "publisher": "Lexus Australia",
+      "source_type": "manufacturer_au_pricing_release",
+      "published_date": null,
+      "accessed_date": "2026-11-05",
+      "market": "AU",
+      "supports": "Opened 2026-11-05 with Disclaimers expanded. 'Lexus RZ pricing': RZ 600e F Sport Performance $135,000; RZ 550e F Sport $104,920; RZ 500e Sports Luxury $91,000; RZ 500e Luxury $84,500. Footnote 1: manufacturer's recommended retail price provided for media purposes only; statutory charges or other on-road costs not included. A dated news release, not a live price list."
+    },
+    {
+      "id": "refresh-lexus-2026-11-05-es-july",
+      "url": "https://www.lexus.com.au/news/2026/07/all-new-lexus-es-a-new-generation-of-luxury-sedan",
+      "title": "All-New Lexus ES a new generation of luxury sedan (Lexus Australia news)",
+      "publisher": "Lexus Australia",
+      "source_type": "manufacturer_au_pricing_release",
+      "published_date": null,
+      "accessed_date": "2026-11-05",
+      "market": "AU",
+      "supports": "Opened 2026-11-05 with Disclaimers expanded. '2026 Lexus ES pricing': ES 350e FWD Sports Luxury $77,000; ES 500e AWD Sports Luxury $84,000 (also ES 300h models). Footnote 7: manufacturer's list price provided for media purposes only; statutory charges or other on-road costs not included; optional colours or features at additional cost. A dated news release, not a live price list."
+    },
+    {
+      "id": "refresh-lexus-2026-11-05-rz-build",
+      "url": "https://www.lexus.com.au/models/build-and-price/RZ",
+      "title": "Lexus Build and Price, RZ",
+      "publisher": "Lexus Australia",
+      "source_type": "manufacturer_au_pricing_release",
+      "published_date": null,
+      "accessed_date": "2026-11-05",
+      "market": "AU",
+      "supports": "Opened 2026-11-05. Build and Price page loads for the RZ with a 'See drive away price' step that needs a location; the driveaway price was not requested. No order status or stock stated."
+    }
+  ],
+  "versions": [
+    {
+      "variantId": "lexus_rz_2026_revision__500e_luxury_awd__20261010",
+      "vehicle": "Lexus RZ 500e Luxury AWD",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-10",
+          "sourceUrls": [
+            "https://www.lexus.com.au/models/rz/overview",
+            "https://www.lexus.com.au/news/2026/05/lexus-expands-rz-line-up-with-new-performance-model"
+          ]
+        },
+        "outcome": "unchanged",
+        "note": "RZ is listed with Build and Price, dealers and test-drive routes; order acceptance and stock not stated.",
+        "sourceIds": [
+          "refresh-lexus-2026-11-05-rz-build",
+          "refresh-lexus-2026-11-05-rz-sept"
+        ]
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Published price",
+          "due": true,
+          "current": {
+            "value": "84,500 AUD",
+            "basis": "Maker’s list price · before on-road costs",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/news/2026/09/lexus-australia-to-launch-ultra-exclusive-rz-600e-f-sport-performance-flagship"
+            ]
+          },
+          "outcome": "unchanged",
+          "note": "Lexus's September release still lists the same RZ price. (The May release listed the 550e F Sport at $105,000; the September release, which the catalogue follows, lists $104,920.)",
+          "sourceIds": [
+            "refresh-lexus-2026-11-05-rz-sept"
+          ]
+        },
+        {
+          "key": "range_km",
+          "label": "Claimed range",
+          "due": false,
+          "current": {
+            "value": "460 km",
+            "basis": "WLTP laboratory test accepted under ADR81/02",
+            "grade": "check",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/rz_ebrochure.pdf?rev=722d7e2a6d8b45eab2ce6f856ae5370a"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Declared battery capacity",
+          "due": false,
+          "current": {
+            "value": "74.69 kWh",
+            "basis": "manufacturer-declared; gross/net not specified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/rz_ebrochure.pdf?rev=722d7e2a6d8b45eab2ce6f856ae5370a"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak vehicle DC acceptance",
+          "due": false,
+          "current": {
+            "value": "150 kW",
+            "basis": "Vehicle peak DC acceptance, not station nameplate rating",
+            "grade": "check",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/news/2026/05/lexus-expands-rz-line-up-with-new-performance-model"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charging claim",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "10–80% SOC at unverified kW test charger",
+            "grade": "Unreviewed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/rz_ebrochure.pdf?rev=722d7e2a6d8b45eab2ce6f856ae5370a"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "Standard on-board AC input",
+          "due": false,
+          "current": {
+            "value": "22 kW",
+            "basis": "Standard maximum on-board AC input; supply and phase conditions apply",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/rz_ebrochure.pdf?rev=722d7e2a6d8b45eab2ce6f856ae5370a"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seating positions",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Occupied seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/rz_ebrochure.pdf?rev=722d7e2a6d8b45eab2ce6f856ae5370a"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Cargo behind occupied seats",
+          "due": false,
+          "current": {
+            "value": "522 L",
+            "basis": "Rear seats occupied; measurement method unverified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/rz_ebrochure.pdf?rev=722d7e2a6d8b45eab2ce6f856ae5370a"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "Exact-trim research pending",
+            "grade": "Unreviewed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": []
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Maximum system power (normal mode)",
+          "due": false,
+          "current": {
+            "value": "280 kW",
+            "basis": "Manufacturer exact system or acceleration claim; normal/boost mode kept separate",
+            "grade": "check",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/rz_ebrochure.pdf?rev=722d7e2a6d8b45eab2ce6f856ae5370a"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive",
+          "due": false,
+          "current": {
+            "value": "AWD",
+            "basis": "Exact manufacturer specification: drive",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/rz_ebrochure.pdf?rev=722d7e2a6d8b45eab2ce6f856ae5370a"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Exterior length",
+          "due": false,
+          "current": {
+            "value": "4,805 mm",
+            "basis": "Exact manufacturer specification: length mm",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/rz_ebrochure.pdf?rev=722d7e2a6d8b45eab2ce6f856ae5370a"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Published width",
+          "due": false,
+          "current": {
+            "value": "1,895 mm",
+            "basis": "Manufacturer width; mirror boundary unverified",
+            "grade": "check",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/rz_ebrochure.pdf?rev=722d7e2a6d8b45eab2ce6f856ae5370a"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Exterior height",
+          "due": false,
+          "current": {
+            "value": "1,635 mm",
+            "basis": "Exact manufacturer specification: height mm",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/rz_ebrochure.pdf?rev=722d7e2a6d8b45eab2ce6f856ae5370a"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "Exact-trim research pending",
+            "grade": "Unreviewed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": []
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km private use",
+            "basis": "Base vehicle warranty, exact use and commencement conditions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/smallprint/warranty"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "Defects: 5-year base, conditional annual extensions up to 10 years; capacity: 8 years/160,000 km below 70%",
+            "basis": "Separate battery defect and capacity cover; not interchangeable",
+            "grade": "check",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/smallprint/warranty"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "price_basis",
+          "label": "Price basis",
+          "due": true,
+          "current": {
+            "value": "Manufacturer list price excluding on-road costs",
+            "basis": "Exact manufacturer specification: price basis",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/news/2026/09/lexus-australia-to-launch-ultra-exclusive-rz-600e-f-sport-performance-flagship",
+              "https://www.lexus.com.au/news/2026/04/09/new-lexus-rz-battery-electric-suv-brings-innovation-and-enjoyment-to-australian-customers"
+            ]
+          },
+          "outcome": "unchanged",
+          "note": "Lexus's September release still lists the same RZ price. (The May release listed the 550e F Sport at $105,000; the September release, which the catalogue follows, lists $104,920.)",
+          "sourceIds": [
+            "refresh-lexus-2026-11-05-rz-sept"
+          ]
+        }
+      ]
+    },
+    {
+      "variantId": "lexus_rz_2026_revision__500e_sports_luxury_awd__20261010",
+      "vehicle": "Lexus RZ 500e Sports Luxury AWD",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-10",
+          "sourceUrls": [
+            "https://www.lexus.com.au/models/rz/overview",
+            "https://www.lexus.com.au/news/2026/05/lexus-expands-rz-line-up-with-new-performance-model"
+          ]
+        },
+        "outcome": "unchanged",
+        "note": "RZ is listed with Build and Price, dealers and test-drive routes; order acceptance and stock not stated.",
+        "sourceIds": [
+          "refresh-lexus-2026-11-05-rz-build",
+          "refresh-lexus-2026-11-05-rz-sept"
+        ]
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Published price",
+          "due": true,
+          "current": {
+            "value": "91,000 AUD",
+            "basis": "Maker’s list price · before on-road costs",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/news/2026/09/lexus-australia-to-launch-ultra-exclusive-rz-600e-f-sport-performance-flagship"
+            ]
+          },
+          "outcome": "unchanged",
+          "note": "Lexus's September release still lists the same RZ price. (The May release listed the 550e F Sport at $105,000; the September release, which the catalogue follows, lists $104,920.)",
+          "sourceIds": [
+            "refresh-lexus-2026-11-05-rz-sept"
+          ]
+        },
+        {
+          "key": "range_km",
+          "label": "Claimed range",
+          "due": false,
+          "current": {
+            "value": "460 km",
+            "basis": "WLTP laboratory test accepted under ADR81/02",
+            "grade": "check",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/rz_ebrochure.pdf?rev=722d7e2a6d8b45eab2ce6f856ae5370a"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Declared battery capacity",
+          "due": false,
+          "current": {
+            "value": "74.69 kWh",
+            "basis": "manufacturer-declared; gross/net not specified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/rz_ebrochure.pdf?rev=722d7e2a6d8b45eab2ce6f856ae5370a"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak vehicle DC acceptance",
+          "due": false,
+          "current": {
+            "value": "150 kW",
+            "basis": "Vehicle peak DC acceptance, not station nameplate rating",
+            "grade": "check",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/news/2026/05/lexus-expands-rz-line-up-with-new-performance-model"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charging claim",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "10–80% SOC at unverified kW test charger",
+            "grade": "Unreviewed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/rz_ebrochure.pdf?rev=722d7e2a6d8b45eab2ce6f856ae5370a"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "Standard on-board AC input",
+          "due": false,
+          "current": {
+            "value": "22 kW",
+            "basis": "Standard maximum on-board AC input; supply and phase conditions apply",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/rz_ebrochure.pdf?rev=722d7e2a6d8b45eab2ce6f856ae5370a"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seating positions",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Occupied seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/rz_ebrochure.pdf?rev=722d7e2a6d8b45eab2ce6f856ae5370a"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Cargo behind occupied seats",
+          "due": false,
+          "current": {
+            "value": "522 L",
+            "basis": "Rear seats occupied; measurement method unverified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/rz_ebrochure.pdf?rev=722d7e2a6d8b45eab2ce6f856ae5370a"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "Exact-trim research pending",
+            "grade": "Unreviewed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": []
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Maximum system power (normal mode)",
+          "due": false,
+          "current": {
+            "value": "280 kW",
+            "basis": "Manufacturer exact system or acceleration claim; normal/boost mode kept separate",
+            "grade": "check",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/rz_ebrochure.pdf?rev=722d7e2a6d8b45eab2ce6f856ae5370a"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive",
+          "due": false,
+          "current": {
+            "value": "AWD",
+            "basis": "Exact manufacturer specification: drive",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/rz_ebrochure.pdf?rev=722d7e2a6d8b45eab2ce6f856ae5370a"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Exterior length",
+          "due": false,
+          "current": {
+            "value": "4,805 mm",
+            "basis": "Exact manufacturer specification: length mm",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/rz_ebrochure.pdf?rev=722d7e2a6d8b45eab2ce6f856ae5370a"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Published width",
+          "due": false,
+          "current": {
+            "value": "1,895 mm",
+            "basis": "Manufacturer width; mirror boundary unverified",
+            "grade": "check",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/rz_ebrochure.pdf?rev=722d7e2a6d8b45eab2ce6f856ae5370a"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Exterior height",
+          "due": false,
+          "current": {
+            "value": "1,635 mm",
+            "basis": "Exact manufacturer specification: height mm",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/rz_ebrochure.pdf?rev=722d7e2a6d8b45eab2ce6f856ae5370a"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "Exact-trim research pending",
+            "grade": "Unreviewed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": []
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km private use",
+            "basis": "Base vehicle warranty, exact use and commencement conditions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/smallprint/warranty"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "Defects: 5-year base, conditional annual extensions up to 10 years; capacity: 8 years/160,000 km below 70%",
+            "basis": "Separate battery defect and capacity cover; not interchangeable",
+            "grade": "check",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/smallprint/warranty"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "price_basis",
+          "label": "Price basis",
+          "due": true,
+          "current": {
+            "value": "Manufacturer list price excluding on-road costs",
+            "basis": "Exact manufacturer specification: price basis",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/news/2026/09/lexus-australia-to-launch-ultra-exclusive-rz-600e-f-sport-performance-flagship",
+              "https://www.lexus.com.au/news/2026/04/09/new-lexus-rz-battery-electric-suv-brings-innovation-and-enjoyment-to-australian-customers"
+            ]
+          },
+          "outcome": "unchanged",
+          "note": "Lexus's September release still lists the same RZ price. (The May release listed the 550e F Sport at $105,000; the September release, which the catalogue follows, lists $104,920.)",
+          "sourceIds": [
+            "refresh-lexus-2026-11-05-rz-sept"
+          ]
+        }
+      ]
+    },
+    {
+      "variantId": "lexus_rz_2026_revision__550e_f_sport_awd__20261010",
+      "vehicle": "Lexus RZ 550e F Sport AWD",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-10",
+          "sourceUrls": [
+            "https://www.lexus.com.au/models/rz/overview",
+            "https://www.lexus.com.au/news/2026/05/lexus-expands-rz-line-up-with-new-performance-model"
+          ]
+        },
+        "outcome": "unchanged",
+        "note": "RZ is listed with Build and Price, dealers and test-drive routes; order acceptance and stock not stated.",
+        "sourceIds": [
+          "refresh-lexus-2026-11-05-rz-build",
+          "refresh-lexus-2026-11-05-rz-sept"
+        ]
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Published price",
+          "due": true,
+          "current": {
+            "value": "104,920 AUD",
+            "basis": "Maker’s list price · before on-road costs",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/news/2026/09/lexus-australia-to-launch-ultra-exclusive-rz-600e-f-sport-performance-flagship"
+            ]
+          },
+          "outcome": "unchanged",
+          "note": "Lexus's September release still lists the same RZ price. (The May release listed the 550e F Sport at $105,000; the September release, which the catalogue follows, lists $104,920.)",
+          "sourceIds": [
+            "refresh-lexus-2026-11-05-rz-sept"
+          ]
+        },
+        {
+          "key": "range_km",
+          "label": "Claimed range",
+          "due": false,
+          "current": {
+            "value": "437 km",
+            "basis": "WLTP laboratory test accepted under ADR81/02",
+            "grade": "check",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/rz_ebrochure.pdf?rev=722d7e2a6d8b45eab2ce6f856ae5370a"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Declared battery capacity",
+          "due": false,
+          "current": {
+            "value": "76.96 kWh",
+            "basis": "manufacturer-declared; gross/net not specified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/rz_ebrochure.pdf?rev=722d7e2a6d8b45eab2ce6f856ae5370a"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak vehicle DC acceptance",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "Vehicle peak DC acceptance, not station nameplate rating",
+            "grade": "Unreviewed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/rz_ebrochure.pdf?rev=722d7e2a6d8b45eab2ce6f856ae5370a"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charging claim",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "10–80% SOC at unverified kW test charger",
+            "grade": "Unreviewed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/rz_ebrochure.pdf?rev=722d7e2a6d8b45eab2ce6f856ae5370a"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "Standard on-board AC input",
+          "due": false,
+          "current": {
+            "value": "22 kW",
+            "basis": "Standard maximum on-board AC input; supply and phase conditions apply",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/rz_ebrochure.pdf?rev=722d7e2a6d8b45eab2ce6f856ae5370a"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seating positions",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Occupied seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/rz_ebrochure.pdf?rev=722d7e2a6d8b45eab2ce6f856ae5370a"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Cargo behind occupied seats",
+          "due": false,
+          "current": {
+            "value": "522 L",
+            "basis": "Rear seats occupied; measurement method unverified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/rz_ebrochure.pdf?rev=722d7e2a6d8b45eab2ce6f856ae5370a"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "Exact-trim research pending",
+            "grade": "Unreviewed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": []
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Maximum system power (normal mode)",
+          "due": false,
+          "current": {
+            "value": "300 kW",
+            "basis": "Manufacturer exact system or acceleration claim; normal/boost mode kept separate",
+            "grade": "check",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/rz_ebrochure.pdf?rev=722d7e2a6d8b45eab2ce6f856ae5370a"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive",
+          "due": false,
+          "current": {
+            "value": "AWD",
+            "basis": "Exact manufacturer specification: drive",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/rz_ebrochure.pdf?rev=722d7e2a6d8b45eab2ce6f856ae5370a"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Exterior length",
+          "due": false,
+          "current": {
+            "value": "4,805 mm",
+            "basis": "Exact manufacturer specification: length mm",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/rz_ebrochure.pdf?rev=722d7e2a6d8b45eab2ce6f856ae5370a"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Published width",
+          "due": false,
+          "current": {
+            "value": "1,895 mm",
+            "basis": "Manufacturer width; mirror boundary unverified",
+            "grade": "check",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/rz_ebrochure.pdf?rev=722d7e2a6d8b45eab2ce6f856ae5370a"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Exterior height",
+          "due": false,
+          "current": {
+            "value": "1,635 mm",
+            "basis": "Exact manufacturer specification: height mm",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/rz_ebrochure.pdf?rev=722d7e2a6d8b45eab2ce6f856ae5370a"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "Exact-trim research pending",
+            "grade": "Unreviewed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": []
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km private use",
+            "basis": "Base vehicle warranty, exact use and commencement conditions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/smallprint/warranty"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "Defects: 5-year base, conditional annual extensions up to 10 years; capacity: 8 years/160,000 km below 70%",
+            "basis": "Separate battery defect and capacity cover; not interchangeable",
+            "grade": "check",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/smallprint/warranty"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "price_basis",
+          "label": "Price basis",
+          "due": true,
+          "current": {
+            "value": "Manufacturer list price excluding on-road costs",
+            "basis": "Exact manufacturer specification: price basis",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/news/2026/09/lexus-australia-to-launch-ultra-exclusive-rz-600e-f-sport-performance-flagship",
+              "https://www.lexus.com.au/news/2026/04/09/new-lexus-rz-battery-electric-suv-brings-innovation-and-enjoyment-to-australian-customers"
+            ]
+          },
+          "outcome": "unchanged",
+          "note": "Lexus's September release still lists the same RZ price. (The May release listed the 550e F Sport at $105,000; the September release, which the catalogue follows, lists $104,920.)",
+          "sourceIds": [
+            "refresh-lexus-2026-11-05-rz-sept"
+          ]
+        }
+      ]
+    },
+    {
+      "variantId": "lexus_es_bev_2026_launch__350e_sports_luxury_fwd__20261010",
+      "vehicle": "Lexus ES 350e Sports Luxury FWD",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-10",
+          "sourceUrls": [
+            "https://www.lexus.com.au/news/2026/07/all-new-lexus-es-a-new-generation-of-luxury-sedan",
+            "https://www.lexus.com.au/models/es/overview"
+          ]
+        },
+        "outcome": "unchanged",
+        "note": "ES release invites a test drive and booking; order acceptance and stock not stated.",
+        "sourceIds": [
+          "refresh-lexus-2026-11-05-es-july"
+        ]
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Published price",
+          "due": true,
+          "current": {
+            "value": "77,000 AUD",
+            "basis": "Maker’s list price · before on-road costs",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/news/2026/07/all-new-lexus-es-a-new-generation-of-luxury-sedan",
+              "https://pressroom.lexus.com.au/PressKit?pk-code=445aee65-8d2b-4092-ac26-3d261cc3c8a8"
+            ]
+          },
+          "outcome": "unchanged",
+          "note": "Lexus's July release still lists the same ES price.",
+          "sourceIds": [
+            "refresh-lexus-2026-11-05-es-july"
+          ]
+        },
+        {
+          "key": "range_km",
+          "label": "Claimed range",
+          "due": false,
+          "current": {
+            "value": "510 km",
+            "basis": "WLTP laboratory test accepted under ADR81/02",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/es_ebrochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Declared battery capacity",
+          "due": false,
+          "current": {
+            "value": "74.69 kWh",
+            "basis": "manufacturer-declared; gross/net not specified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/es_ebrochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak vehicle DC acceptance",
+          "due": false,
+          "current": {
+            "value": "150 kW",
+            "basis": "Vehicle peak DC acceptance, not station nameplate rating",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/es_ebrochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charging claim",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "10–80% SOC at unverified kW test charger",
+            "grade": "Unreviewed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://pressroom.lexus.com.au/PressKit?pk-code=445aee65-8d2b-4092-ac26-3d261cc3c8a8",
+              "https://www.lexus.com.au/news/2026/07/all-new-lexus-es-a-new-generation-of-luxury-sedan"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "Standard on-board AC input",
+          "due": false,
+          "current": {
+            "value": "22 kW",
+            "basis": "Standard maximum on-board AC input; supply and phase conditions apply",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/es_ebrochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seating positions",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Occupied seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/es_ebrochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Cargo behind occupied seats",
+          "due": false,
+          "current": {
+            "value": "517 L",
+            "basis": "Rear seats occupied; measurement method unverified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/es_ebrochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "Exact-trim research pending",
+            "grade": "Unreviewed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": []
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Maximum system power (normal mode)",
+          "due": false,
+          "current": {
+            "value": "165 kW",
+            "basis": "Manufacturer exact system or acceleration claim; normal/boost mode kept separate",
+            "grade": "check",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/es_ebrochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive",
+          "due": false,
+          "current": {
+            "value": "FWD",
+            "basis": "Exact manufacturer specification: drive",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/es_ebrochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Exterior length",
+          "due": false,
+          "current": {
+            "value": "5,145 mm",
+            "basis": "Exact manufacturer specification: length mm",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/es_ebrochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Published width",
+          "due": false,
+          "current": {
+            "value": "1,920 mm",
+            "basis": "Manufacturer width; mirror boundary unverified",
+            "grade": "check",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/es_ebrochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Exterior height",
+          "due": false,
+          "current": {
+            "value": "1,560 mm",
+            "basis": "Exact manufacturer specification: height mm",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/es_ebrochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "Exact-trim research pending",
+            "grade": "Unreviewed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": []
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km private use",
+            "basis": "Base vehicle warranty, exact use and commencement conditions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/smallprint/warranty"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "Defects: 5-year base, conditional annual extensions up to 10 years; capacity: 8 years/160,000 km below 70%",
+            "basis": "Separate battery defect and capacity cover; not interchangeable",
+            "grade": "check",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/smallprint/warranty"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "price_basis",
+          "label": "Price basis",
+          "due": true,
+          "current": {
+            "value": "Manufacturer list price excluding on-road costs",
+            "basis": "Exact manufacturer specification: price basis",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://pressroom.lexus.com.au/PressKit?pk-code=445aee65-8d2b-4092-ac26-3d261cc3c8a8"
+            ]
+          },
+          "outcome": "unchanged",
+          "note": "Lexus's July release still lists the same ES price.",
+          "sourceIds": [
+            "refresh-lexus-2026-11-05-es-july"
+          ]
+        }
+      ]
+    },
+    {
+      "variantId": "lexus_es_bev_2026_launch__500e_sports_luxury_awd__20261010",
+      "vehicle": "Lexus ES 500e Sports Luxury AWD",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-10",
+          "sourceUrls": [
+            "https://www.lexus.com.au/news/2026/07/all-new-lexus-es-a-new-generation-of-luxury-sedan",
+            "https://www.lexus.com.au/models/es/overview"
+          ]
+        },
+        "outcome": "unchanged",
+        "note": "ES release invites a test drive and booking; order acceptance and stock not stated.",
+        "sourceIds": [
+          "refresh-lexus-2026-11-05-es-july"
+        ]
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Published price",
+          "due": true,
+          "current": {
+            "value": "84,000 AUD",
+            "basis": "Maker’s list price · before on-road costs",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/news/2026/07/all-new-lexus-es-a-new-generation-of-luxury-sedan",
+              "https://pressroom.lexus.com.au/PressKit?pk-code=445aee65-8d2b-4092-ac26-3d261cc3c8a8"
+            ]
+          },
+          "outcome": "unchanged",
+          "note": "Lexus's July release still lists the same ES price.",
+          "sourceIds": [
+            "refresh-lexus-2026-11-05-es-july"
+          ]
+        },
+        {
+          "key": "range_km",
+          "label": "Claimed range",
+          "due": false,
+          "current": {
+            "value": "465 km",
+            "basis": "WLTP laboratory test accepted under ADR81/02",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/es_ebrochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Declared battery capacity",
+          "due": false,
+          "current": {
+            "value": "74.69 kWh",
+            "basis": "manufacturer-declared; gross/net not specified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/es_ebrochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak vehicle DC acceptance",
+          "due": false,
+          "current": {
+            "value": "150 kW",
+            "basis": "Vehicle peak DC acceptance, not station nameplate rating",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/es_ebrochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charging claim",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "10–80% SOC at unverified kW test charger",
+            "grade": "Unreviewed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://pressroom.lexus.com.au/PressKit?pk-code=445aee65-8d2b-4092-ac26-3d261cc3c8a8",
+              "https://www.lexus.com.au/news/2026/07/all-new-lexus-es-a-new-generation-of-luxury-sedan"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "Standard on-board AC input",
+          "due": false,
+          "current": {
+            "value": "22 kW",
+            "basis": "Standard maximum on-board AC input; supply and phase conditions apply",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/es_ebrochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seating positions",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Occupied seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/es_ebrochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Cargo behind occupied seats",
+          "due": false,
+          "current": {
+            "value": "517 L",
+            "basis": "Rear seats occupied; measurement method unverified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/es_ebrochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "Exact-trim research pending",
+            "grade": "Unreviewed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": []
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Maximum system power (normal mode)",
+          "due": false,
+          "current": {
+            "value": "252 kW",
+            "basis": "Manufacturer exact system or acceleration claim; normal/boost mode kept separate",
+            "grade": "check",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/es_ebrochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive",
+          "due": false,
+          "current": {
+            "value": "AWD",
+            "basis": "Exact manufacturer specification: drive",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/es_ebrochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Exterior length",
+          "due": false,
+          "current": {
+            "value": "5,145 mm",
+            "basis": "Exact manufacturer specification: length mm",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/es_ebrochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Published width",
+          "due": false,
+          "current": {
+            "value": "1,920 mm",
+            "basis": "Manufacturer width; mirror boundary unverified",
+            "grade": "check",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/es_ebrochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Exterior height",
+          "due": false,
+          "current": {
+            "value": "1,560 mm",
+            "basis": "Exact manufacturer specification: height mm",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/-/media/lexus/ebrochures/es_ebrochure.pdf"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "Exact-trim research pending",
+            "grade": "Unreviewed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": []
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km private use",
+            "basis": "Base vehicle warranty, exact use and commencement conditions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/smallprint/warranty"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "Defects: 5-year base, conditional annual extensions up to 10 years; capacity: 8 years/160,000 km below 70%",
+            "basis": "Separate battery defect and capacity cover; not interchangeable",
+            "grade": "check",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.lexus.com.au/smallprint/warranty"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "price_basis",
+          "label": "Price basis",
+          "due": true,
+          "current": {
+            "value": "Manufacturer list price excluding on-road costs",
+            "basis": "Exact manufacturer specification: price basis",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://pressroom.lexus.com.au/PressKit?pk-code=445aee65-8d2b-4092-ac26-3d261cc3c8a8"
+            ]
+          },
+          "outcome": "unchanged",
+          "note": "Lexus's July release still lists the same ES price.",
+          "sourceIds": [
+            "refresh-lexus-2026-11-05-es-july"
+          ]
+        }
+      ]
+    }
+  ]
+}
