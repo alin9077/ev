@@ -3,7 +3,6 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
 import vm from "node:vm";
-import { createHash } from "node:crypto";
 import { build } from "esbuild";
 import type { Item } from "../src/lib/scenes/b/gl";
 import type { Mesh } from "../src/lib/scenes/b/mesh";
@@ -157,24 +156,62 @@ test("actual price charging frames plateau in CPU cache for distinct times", () 
   }
 });
 
-test("36 populated-spec price scene frames preserve source84 geometry, materials, transforms and shot definitions", () => {
+test("36 populated-spec price scene frames keep their item counts and stay deterministic, finite and well-formed", () => {
+  // Behavioural replacement for a SHA-256 pin of source84 geometry (plan rule 4
+  // forbids pinning hashes of past checkpoints). The fixture still supplies the
+  // spec and the sampled shots; the per-frame item count is retained.
   const fixture = JSON.parse(
     fs.readFileSync("tests/fixtures/price-scene-v84-parity.json", "utf8"),
   );
+  assert.equal(fixture.samples.length, 36);
+  const finite = (values: ArrayLike<number>) =>
+    Array.from(values).every((n) => Number.isFinite(n));
+  const frames = new Map<string, string>();
   for (const sample of fixture.samples) {
+    const label = `${sample.t}s wide=${sample.wide}`;
     const frame = probe.moment(sample.t, sample.wide, fixture.spec);
-    assert.equal(frame.items.length, sample.itemCount);
-    const digest = createHash("sha256")
-      .update(JSON.stringify(visualValues(frame)))
-      .digest("hex");
+    assert.equal(frame.items.length, sample.itemCount, label);
+    const serialised = JSON.stringify(visualValues(frame));
+    // The same shot rendered twice is identical.
     assert.equal(
-      digest,
-      sample.geometrySHA256,
-      `${sample.t}s wide=${sample.wide}`,
+      JSON.stringify(
+        visualValues(probe.moment(sample.t, sample.wide, fixture.spec)),
+      ),
+      serialised,
+      `${label} is not deterministic`,
     );
+    frames.set(label, serialised);
+    for (const item of frame.items) {
+      const m = item.mesh;
+      assert.ok(m.pos.length > 0 && m.pos.length % 3 === 0, label);
+      assert.equal(m.nrm.length, m.pos.length, label);
+      assert.ok(finite(m.pos) && finite(m.nrm) && finite(m.aux), label);
+      const vertices = m.pos.length / 3;
+      assert.ok(m.idx.length > 0 && m.idx.length % 3 === 0, label);
+      assert.ok(
+        Array.from(m.idx).every((i) => i < vertices),
+        label,
+      );
+      assert.equal(item.at.length, 16, label);
+      assert.ok(finite(item.at as unknown as number[]), label);
+      assert.ok(item.mat && typeof item.mat === "object", label);
+    }
   }
+  // The shots are not all the same picture: time and framing move the scene.
+  assert.ok(new Set(frames.values()).size > 1);
+  assert.ok(
+    fixture.samples.some(
+      (sample: { t: number; wide: boolean }) =>
+        JSON.stringify(
+          visualValues(probe.moment(sample.t, sample.wide, fixture.spec)),
+        ) !==
+        JSON.stringify(
+          visualValues(probe.moment(sample.t, sample.wide, undefined)),
+        ),
+    ),
+    "a populated spec must change at least one sampled frame",
+  );
 });
-
 test("actual uploader reuses two battery buffer slots across changing meshes and render passes", () => {
   let vertices = 0,
     buffers = 0,
