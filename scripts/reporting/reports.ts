@@ -1,6 +1,11 @@
 /** Read-only milestone reports over the effective catalogue, never the immutable snapshot. */
 import { rankAttribute, type AttributeKey } from "../../src/lib/discovery";
 import {
+  thresholdFreshness,
+  type AuThresholds,
+  type ThresholdFreshness,
+} from "../../src/lib/thresholds";
+import {
   evidenceDateValue,
   evidenceFreshness,
   factFreshness,
@@ -387,6 +392,7 @@ export function buildStaleReport(
   asOf: string,
   days = 30,
   allTiers = false,
+  thresholds?: AuThresholds,
 ) {
   const cars = allTiers ? input.cars : input.cars.filter(isTierOne);
   const end = new Date(`${asOf}T00:00:00Z`);
@@ -423,6 +429,22 @@ export function buildStaleReport(
   );
   const overdue = entries.filter((entry) => entry.state === "stale");
   const invalid = entries.filter((entry) => entry.state === "invalid");
+  // Money-threshold rows (WS4) use the 45-day price window and are reported apart from per-version claims.
+  const thresholdRows = thresholds ? thresholdFreshness(thresholds, asOf) : [];
+  const thresholdReport = thresholds
+    ? {
+        rows: thresholdRows,
+        due: thresholdRows.filter(
+          (row) =>
+            row.state === "fresh" &&
+            !!row.staleOn &&
+            row.staleOn > asOf &&
+            row.staleOn <= through,
+        ),
+        overdue: thresholdRows.filter((row) => row.state === "stale"),
+        invalid: thresholdRows.filter((row) => row.state === "invalid"),
+      }
+    : null;
   const brandNames = [
     ...new Set([...due, ...overdue, ...invalid].map((e) => e.brand)),
   ].sort();
@@ -446,6 +468,7 @@ export function buildStaleReport(
     overdue,
     invalid,
     brands,
+    thresholds: thresholdReport,
   };
 }
 function coreCoverage(
@@ -987,6 +1010,18 @@ export function formatStaleReport(
         lines.push(
           `  ${entry.state}: ${entry.vehicle} [${entry.carId}] ${entry.kind}/${entry.key}; checked ${entry.checkedAt || "undated"}; fresh through ${entry.expiresOn || "unknown"}; stale ${entry.staleOn || "unknown"}`,
         );
+  }
+  if (report.thresholds) {
+    const t = report.thresholds;
+    lines.push(
+      "",
+      `Money thresholds (45-day window): ${t.due.length} due; ${t.overdue.length} already aged; ${t.invalid.length} dates need review; ${t.rows.length} rows checked`,
+    );
+    const line = (label: string, row: ThresholdFreshness) =>
+      `  ${label}: ${row.label} [${row.key}]; checked ${row.checkedAt || "undated"}; fresh through ${row.expiresOn || "unknown"}; stale ${row.staleOn || "unknown"}; ${row.status}`;
+    for (const row of t.due) lines.push(line("due", row));
+    for (const row of t.overdue) lines.push(line("aged", row));
+    for (const row of t.invalid) lines.push(line("review", row));
   }
   if (!details)
     lines.push(

@@ -1,5 +1,9 @@
 import { buildStaleReport, formatStaleReport } from "./reporting/reports";
-import { loadReportInput, reportOptions } from "./reporting/load";
+import {
+  loadReportInput,
+  loadThresholds,
+  reportOptions,
+} from "./reporting/load";
 try {
   const options = reportOptions(process.argv.slice(2), true);
   if (options.help)
@@ -12,6 +16,7 @@ try {
       options.asOf,
       options.days,
       options.allTiers,
+      loadThresholds(),
     );
     console.log(
       options.json

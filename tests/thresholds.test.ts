@@ -16,6 +16,11 @@ import {
   type StateIncentive,
   type ThresholdVersion,
 } from "../src/lib/thresholds";
+import {
+  buildStaleReport,
+  formatStaleReport,
+} from "../scripts/reporting/reports";
+import { loadThresholds } from "../scripts/reporting/load";
 
 const CAP = 100_000;
 const LCT = 100_000;
@@ -373,4 +378,44 @@ test("the committed threshold data file is sourced, dated and never fabricated",
     state: "NSW",
   });
   assert.ok(["boolean", "string"].includes(typeof r.underFbtCap));
+});
+
+test("report:stale includes threshold rows on the 45-day window, apart from per-version claims", () => {
+  const empty = { cars: [], features: [] };
+  assert.equal(buildStaleReport(empty, ASOF, 30).thresholds, null);
+  const t = thresholds({
+    fbt_exempt_price_cap: money(CAP, "2026-10-01"), // stale 2026-11-16: due within 30 days
+    lct_threshold_fuel_efficient: money(LCT, "2026-08-01"), // already aged
+    lct_threshold_other: money(80_000, "2026-11-05"), // not due within 30 days
+    state_incentives: [],
+  });
+  const report = buildStaleReport(empty, ASOF, 30, false, t);
+  assert.ok(report.thresholds);
+  assert.deepEqual(
+    report.thresholds.due.map((r) => r.key),
+    ["fbt_exempt_price_cap"],
+  );
+  assert.deepEqual(
+    report.thresholds.overdue.map((r) => r.key),
+    ["lct_threshold_fuel_efficient"],
+  );
+  assert.equal(report.thresholds.invalid.length, 0);
+  assert.equal(report.due.length + report.overdue.length, 0);
+  const text = formatStaleReport(report, false);
+  assert.match(
+    text,
+    /Money thresholds \(45-day window\): 1 due; 1 already aged/,
+  );
+  assert.match(text, /aged: LCT threshold, fuel-efficient/);
+  // Without thresholds the report has no money section.
+  assert.doesNotMatch(
+    formatStaleReport(buildStaleReport(empty, ASOF, 30), false),
+    /Money thresholds/,
+  );
+});
+
+test("loadThresholds returns the newest dated file", () => {
+  const loaded = loadThresholds();
+  assert.ok(loaded);
+  assert.match(loaded.as_of, /^\d{4}-\d{2}-\d{2}$/);
 });

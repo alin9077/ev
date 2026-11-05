@@ -42,6 +42,19 @@ import {
   type M1MarketReconciliation,
 } from "./m1-reconciliation";
 import type { ReportInput, ReportInventory } from "./reports";
+import { readdirSync, readFileSync } from "node:fs";
+import { join } from "node:path";
+import type { AuThresholds } from "../../src/lib/thresholds";
+/** Newest dated money-threshold file in data/, or undefined when none exists. */
+export function loadThresholds(dataDir = "data"): AuThresholds | undefined {
+  const files = readdirSync(dataDir)
+    .filter((name) => /^au-thresholds-\d{4}-\d{2}-\d{2}\.json$/.test(name))
+    .sort();
+  const latest = files.at(-1);
+  return latest
+    ? (JSON.parse(readFileSync(join(dataDir, latest), "utf8")) as AuThresholds)
+    : undefined;
+}
 export function loadReportInput(snapshot?: CatalogueSnapshot): ReportInput {
   const { data, cars } = snapshot ?? catalogueSnapshot();
   return {
