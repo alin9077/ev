@@ -1,6 +1,5 @@
 import type { Car } from "@/lib/types";
-import { carAvatarShape } from "@/lib/car-avatar-shapes";
-
+import { avatarProfile, WHEELBASE_SHARE } from "@/lib/car-avatar-shapes";
 
 const WIDTH = 96,
   HEIGHT = 38,
@@ -13,7 +12,8 @@ const mm = (car: Car, key: string, fallback: number) => {
 const n = (v: number) => Math.round(v * 100) / 100;
 
 export function CarAvatar({ car }: { car: Car }) {
-  const s = carAvatarShape(car.modelId);
+  const profile = avatarProfile(car);
+  const s = profile.kind === "class" ? undefined : profile.shape;
   if (!s)
     return (
       <svg
@@ -38,9 +38,10 @@ export function CarAvatar({ car }: { car: Car }) {
         </text>
       </svg>
     );
-  const length = mm(car, "length_mm", 4600) * SCALE,
+  const lengthMm = mm(car, "length_mm", 4600);
+  const length = lengthMm * SCALE,
     height = mm(car, "height_mm", 1620) * SCALE,
-    wheelbase = mm(car, "wheelbase_mm", 2750) * SCALE;
+    wheelbase = mm(car, "wheelbase_mm", lengthMm * WHEELBASE_SHARE) * SCALE;
   const left = (WIDTH - length) / 2;
   const x = (f: number) => n(left + f * length),
     y = (f: number) => n(GROUND - f * height),

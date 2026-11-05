@@ -4,6 +4,7 @@ import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { CarAvatar } from "../src/components/car-avatar";
 import {
+  avatarUsesDimensions,
   carAvatarShape,
   hasCarAvatarShape,
 } from "../src/lib/car-avatar-shapes";
@@ -28,8 +29,11 @@ test("one avatar registry preserves exact markup while generic records omit only
   let bespoke = 0,
     generic = 0;
   for (const [i, car] of all.entries()) {
-    const supported = hasCarAvatarShape(car.modelId);
-    assert.equal(supported, !!carAvatarShape(car.modelId));
+    // Dimensions are kept exactly when the drawing uses them: a hand-drawn
+    // model or a body-type outline scaled to the version's own dimensions.
+    const supported = avatarUsesDimensions(car);
+    assert.equal(hasCarAvatarShape(car.modelId), !!carAvatarShape(car.modelId));
+    if (hasCarAvatarShape(car.modelId)) assert.ok(supported);
     if (supported) bespoke++;
     else generic++;
     for (const key of ["height_mm", "wheelbase_mm"]) {
@@ -71,12 +75,12 @@ test("dimension omission preserves complete current citation closure and canonic
   const saved =
     Buffer.byteLength(JSON.stringify(prior)) -
     Buffer.byteLength(JSON.stringify(slim));
-  assert.ok(saved > 350_000);
+  assert.ok(saved > 100_000);
 });
 
 test("omitted dimensions retain unique direct and Issue citation context without restoring unused facts", () => {
   const original = structuredClone(
-    all.find((car) => !hasCarAvatarShape(car.modelId))!,
+    all.find((car) => !avatarUsesDimensions(car) && !!car.facts.height_mm)!,
   );
   const before = structuredClone(original);
   original.facts.height_mm = {

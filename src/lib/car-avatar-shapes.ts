@@ -243,11 +243,88 @@ const shapes: Record<string, Shape> = {
 };
 shapes.byd_atto_3_legacy = shapes.byd_atto_3_evo;
 
-
 /** Shared lookup: discovery must retain dimensions whenever the renderer has a drawing. */
 export function carAvatarShape(modelId: string): Shape | undefined {
   return shapes[modelId];
 }
 export function hasCarAvatarShape(modelId: string): boolean {
   return carAvatarShape(modelId) !== undefined;
+}
+
+type DimensionCar = {
+  modelId: string;
+  vehicleClass?: string;
+  facts: Record<string, { value: unknown } | undefined>;
+};
+export const hasOwnWheelbase = (car: DimensionCar) =>
+  typeof car.facts.wheelbase_mm?.value === "number";
+const dimension = (car: DimensionCar, key: string) => {
+  const value = car.facts[key]?.value;
+  return typeof value === "number" && value > 0 ? value : undefined;
+};
+/**
+ * Body types share one hand-drawn outline each. The car's own length, height
+ * and wheelbase set its proportions, so the drawing is to scale for the
+ * version; only the styling of the outline is shared within a body type.
+ */
+export const BODY_TYPE_SHAPE_SOURCE = {
+  compact: "byd_atto_2",
+  sedan: "tesla_model_3",
+  crossover: "tesla_model_y",
+  suv: "kia_ev5",
+} as const;
+/** Typical wheelbase as a share of length, used only to draw a car with no published wheelbase. */
+export const WHEELBASE_SHARE = 0.59;
+export type BodyType = keyof typeof BODY_TYPE_SHAPE_SOURCE;
+export type AvatarProfile =
+  | { kind: "model"; shape: Shape }
+  | { kind: "body-type"; bodyType: BodyType; shape: Shape }
+  | { kind: "class" };
+
+/**
+ * Utes, vans, 6+ seaters and cars without a published length and height keep
+ * the class silhouette. A missing wheelbase is drawn at the typical share of
+ * length (see WHEELBASE_SHARE); the drawing is a picture, never a stated figure.
+ */
+export function bodyTypeOf(car: DimensionCar): BodyType | undefined {
+  if (
+    car.vehicleClass &&
+    car.vehicleClass !== "passenger" &&
+    car.vehicleClass !== "ute"
+  )
+    return undefined;
+  if (car.vehicleClass === "ute") return undefined;
+  const length = dimension(car, "length_mm"),
+    height = dimension(car, "height_mm"),
+    wheelbase = dimension(car, "wheelbase_mm"),
+    seats = dimension(car, "seats");
+  if (!length || !height) return undefined;
+  if (seats !== undefined && seats >= 6) return undefined;
+  // Sanity: a wheelbase longer than the car, or an implausible height, is bad data.
+  if (
+    (wheelbase !== undefined && wheelbase >= length) ||
+    height / length > 0.5 ||
+    height / length < 0.25
+  )
+    return undefined;
+  const ratio = height / length;
+  if (length < 4300) return "compact";
+  if (ratio < 0.325) return "sedan";
+  return ratio >= 0.36 ? "suv" : "crossover";
+}
+export function avatarProfile(car: DimensionCar): AvatarProfile {
+  const own = carAvatarShape(car.modelId);
+  if (own) return { kind: "model", shape: own };
+  const bodyType = bodyTypeOf(car);
+  return bodyType
+    ? {
+        kind: "body-type",
+        bodyType,
+        shape: shapes[BODY_TYPE_SHAPE_SOURCE[bodyType]],
+      }
+    : { kind: "class" };
+}
+/** Discovery keeps height and wheelbase exactly when the drawing uses them. */
+export function avatarUsesDimensions(car: DimensionCar): boolean {
+  return avatarProfile(car).kind !== "class";
 }

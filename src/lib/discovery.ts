@@ -6,7 +6,7 @@ import { matchesVehicleScope } from "./vehicle-scope";
 /** Pure discovery policy. Never infer market leadership from a partial catalogue. */
 import { carEvidenceIds } from "./page-evidence";
 import { matchesSearch } from "./search";
-import { hasCarAvatarShape } from "./car-avatar-shapes";
+import { avatarUsesDimensions } from "./car-avatar-shapes";
 import { offerExpired } from "./fact-validity";
 import { evidenceAgeDays, evidenceFreshness, factFreshness } from "./freshness";
 import type { Car, Fact, Source } from "./types";
@@ -89,7 +89,7 @@ export function discoveryCars(cars: Car[]): Car[] {
         Object.entries(car.facts).filter(
           ([key]) =>
             keys.has(key) ||
-            (hasCarAvatarShape(car.modelId) &&
+            (avatarUsesDimensions(car) &&
               (key === "height_mm" || key === "wheelbase_mm")),
         ),
       ),

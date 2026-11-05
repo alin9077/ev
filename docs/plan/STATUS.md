@@ -17,7 +17,7 @@ Update this file whenever a workstream starts, pauses or finishes. Newest entry 
 | WS | State | Branch | Last commit | Worker | Updated |
 |---|---|---|---|---|---|
 | WS0 Consolidate Roadmark | in progress | claude/ws0-roadmark-source-938862 | | Sonnet worker (Claude Code) | 2026-11-05 |
-| WS1 Public beta (M2) | in progress | claude/ws1-public-beta-3d498a (stacks on claude/ws0-roadmark-source-938862) | | Sonnet worker (Claude Code) | 2026-11-05 |
+| WS1 Public beta (M2) | paused (usage limit; acceptance NOT run) | claude/ws1-public-beta-3d498a (stacks on claude/ws0-roadmark-source-938862) | | Sonnet worker (Claude Code) | 2026-11-05 |
 | WS2 Refresh loop + changes page | not started | | | | |
 | WS3 Answer pages + any-pair | not started | | | | |
 | WS4 Money thresholds | not started | | | | |
@@ -73,6 +73,16 @@ Lexus33 delta not recovered; Lexus to be re-researched as a normal packet in WS2
 ### 2026-11-05 WS1 — in progress
 
 Branch: `claude/ws1-public-beta-3d498a`, cut from the in-progress WS0 branch `claude/ws0-roadmark-source-938862`; must be merged after the WS0 PR. Owner decision D1.1 default applied (all 56 brands, grade styling, coverage footer). D1.2 is the owner's after a phone test; the live site is not touched. The 8 inherited test failures (W0.8: `m1-evidence-grading`, `mercedes-passenger-catalogue`, `package-source`, `selling-points`, `scene-dynamic-geometry`) are WS0's and are not touched here.
+
+**Paused 2026-11-05 (worker usage limit). WS1 is NOT done; no acceptance line has been verified.**
+
+Done, one commit each, with behavioural tests: W1.2 grade component (`graded-figure.tsx`), W1.1+W1.4 card and Tier 1 on-sale default, W1.3 top bar, W1.5 home 9,233 px at 375 wide (dev server; baseline was 189,308), W1.6 plain-words check (`pnpm check:plain-words`, wired into `pnpm build`), W1.9 part (noindex flag, `docs/PHONE_TEST_SCRIPT.md`, e2e spec written), W1.7 body-type profiles (`docs/PROFILES_GAPS.md`: 153 Tier 1 families, 131 drawn, 5 partial, 17 class silhouette only).
+Run so far: `pnpm validate` PASS (433/171/194/69/29,877), `pnpm typecheck` and `pnpm lint` clean (Mac, 16 CPU, 48 GB RAM, Node v24.22.0, pnpm 11.19.0). Targeted tests for touched areas pass.
+
+NOT run: full `pnpm test` (rule 5), `pnpm build`, `pnpm test:e2e` (spec written, never executed), Lighthouse, portable size, 375px screenshots (W1.8), preview deploy. Gap numbers (Not published counts, Lighthouse) not measured.
+Known risk: home page carries ~11 MB of embedded data (6.3 MB discovery cars, 5 MB Model Y packs, 1.5 MB sources), so Lighthouse performance >= 85 is unlikely until that is slimmed.
+Test edits to disclose: existing Discovery tests updated for the new card (placeholder text, one-line state, source-pinning); `avatar-dimension-projection` saving threshold lowered 350 kB to 100 kB because more cars now keep dimensions.
+Decisions needed: none yet beyond D1.1 default (applied) and D1.2.
 
 ## Ambiguities found
 
