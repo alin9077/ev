@@ -1,0 +1,1927 @@
+{
+  "schema": "roadmark-refresh-findings-v1",
+  "brand": "Toyota",
+  "asOf": "2026-11-05",
+  "reviewedAt": "2026-11-05",
+  "reviewedBy": "Roadmark WS2 refresh (Claude Code worker), Toyota",
+  "sources": [
+    {
+      "id": "refresh-toyota-2026-11-05-bz4x-news",
+      "url": "https://www.toyota.com.au/discover/news/upgraded-toyota-bz4x-family-expanded-with-larger-more-powerful-all-new-touring-grade",
+      "title": "Upgraded Toyota bZ4X family expanded with larger, more powerful all-new Touring grade (Toyota Australia news)",
+      "publisher": "Toyota Australia",
+      "source_type": "official_au_manufacturer",
+      "published_date": null,
+      "accessed_date": "2026-11-05",
+      "market": "AU",
+      "supports": "Re-opened 2026-11-05. '2026 Toyota bZ4X pricing': 2WD $55,990, AWD $67,990, Touring $69,990; 'from $69,990 plus on-road costs' for Touring. This is a dated news article, not a live price list."
+    },
+    {
+      "id": "refresh-toyota-2026-11-05-hilux-pr",
+      "url": "https://pressroom.toyota.com.au/PressRelease?pr-code=99a32fd3-dff8-46eb-9ba4-79cef3186202",
+      "title": "Toyota PressRoom: HiLux BEV (added 31-03-2026)",
+      "publisher": "Toyota Australia",
+      "source_type": "official_au_manufacturer",
+      "published_date": null,
+      "accessed_date": "2026-11-05",
+      "market": "AU",
+      "supports": "Re-opened 2026-11-05. '2026 Toyota HiLux BEV pricing': SR double cab-chassis $74,990; SR double-cab pick-up $76,490; SR5 double-cab pick-up $82,990, as manufacturer's list prices provided for media purposes, plus on-road costs. This is a dated press release, not a live price list."
+    },
+    {
+      "id": "refresh-toyota-2026-11-05-charging-terms",
+      "url": "https://www.toyota.com.au/policies/promotions/bz4x-charging-offer",
+      "title": "bZ4X charging offer terms and conditions (Toyota Australia)",
+      "publisher": "Toyota Australia",
+      "source_type": "manufacturer_au_offer_terms",
+      "published_date": null,
+      "accessed_date": "2026-11-05",
+      "market": "AU",
+      "supports": "Opened 2026-11-05. Last updated 7 May 2026. Retail customers who order and take delivery of a bZ4X or HiLux BEV (all grades) between 10 December 2025 and 31 December 2026 may choose a complimentary 7 kW Jet Charge home wall charger (installation not included) or up to 12 months of Chargefox charging capped at 625 kWh; subject to availability, eligibility and registration steps before 31 January 2027."
+    },
+    {
+      "id": "refresh-toyota-2026-11-05-offers",
+      "url": "https://www.toyota.com.au/current-offers",
+      "title": "Toyota current offers",
+      "publisher": "Toyota Australia",
+      "source_type": "manufacturer_au_offer",
+      "published_date": null,
+      "accessed_date": "2026-11-05",
+      "market": "AU",
+      "supports": "Opened 2026-11-05. bZ4X offers listed include a $5,000 Plate Clearance Bonus on bZ4X 2WD and AWD models built 1 January to 31 December 2026 (and two other bZ4X offers); no bZ4X price change stated."
+    }
+  ],
+  "versions": [
+    {
+      "variantId": "toyota_bz4x_current__2wd__20261010",
+      "vehicle": "Toyota bZ4X 2WD",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.toyota.com.au/bz4x-ev/specs",
+            "https://www.toyota.com.au/discover/news/upgraded-toyota-bz4x-battery-electric-range-arrives-in-australian-showrooms",
+            "https://www.toyota.com.au/bz4x-ev/range"
+          ]
+        },
+        "outcome": "unchanged",
+        "note": "bZ4X is still listed with current offers; order status and stock not stated.",
+        "sourceIds": [
+          "refresh-toyota-2026-11-05-offers",
+          "refresh-toyota-2026-11-05-bz4x-news"
+        ]
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "55,990 AUD",
+            "basis": "Maker’s list price · before on-road costs",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/discover/news/upgraded-toyota-bz4x-family-expanded-with-larger-more-powerful-all-new-touring-grade"
+            ]
+          },
+          "outcome": "unchanged",
+          "note": "The news article still states the same 2026 pricing (plus on-road costs).",
+          "sourceIds": [
+            "refresh-toyota-2026-11-05-bz4x-news"
+          ]
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "591 km",
+            "basis": "WLTP",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/bz4x-ev/specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "74.7 kWh",
+            "basis": "Gross battery capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/bz4x-ev/specs",
+              "https://www.toyota.com.au/bz4x-ev"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "150 kW",
+            "basis": "Manufacturer stated vehicle DC capability",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/bz4x-ev"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "28 min",
+            "basis": "10–80%; 150 kW DC charger; current Toyota page claim",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/bz4x-ev",
+              "https://www.toyota.com.au/bz4x-ev/range",
+              "https://www.toyota.com.au/bz4x-ev/specs",
+              "https://www.toyota.com.au/discover/news/upgraded-toyota-bz4x-battery-electric-range-arrives-in-australian-showrooms"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "22 kW",
+            "basis": "Maximum three-phase AC charging power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/bz4x-ev/specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/bz4x-ev/specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "452 L",
+            "basis": "Manufacturer cargo volume; measurement/load configuration unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/bz4x-ev/specs",
+              "https://www.toyota.com.au/bz4x-ev/range"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "7.4 s",
+            "basis": "Manufacturer 0–100 km/h claim",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/bz4x-ev/specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "167 kW",
+            "basis": "Front motor maximum output",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/bz4x-ev/specs",
+              "https://www.toyota.com.au/bz4x-ev",
+              "https://www.toyota.com.au/bz4x-ev/range"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "FWD",
+            "basis": "Manufacturer driven-wheel configuration",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/bz4x-ev/specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,690 mm",
+            "basis": "Manufacturer exterior dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/bz4x-ev/specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,860 mm",
+            "basis": "Manufacturer exterior dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/bz4x-ev/specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,650 mm",
+            "basis": "Manufacturer exterior dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/bz4x-ev/specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "750 kg",
+            "basis": "Braked towing reported by CarExpert",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/toyota/bz4x/2026-suv-fwd-electric-jsg5ffoo20251210",
+              "https://www.toyota.com.au/bz4x-ev/specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/owners/warranty",
+              "https://www.toyota.com.au/-/media/project/toyota/toyota/owners/warranty/20260401_toyota-warranty-advantage_tandcs_t2026-022197.pdf?rev=a9c6245447e84c2fa4c0cff88b0c50c5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "5 years/unlimited km defects; 8 years/160,000 km capacity assurance below 70%",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/owners/warranty",
+              "https://www.toyota.com.au/-/media/project/toyota/toyota/owners/warranty/20260401_toyota-warranty-advantage_tandcs_t2026-022197.pdf?rev=a9c6245447e84c2fa4c0cff88b0c50c5",
+              "https://pressroom.toyota.com.au/PressKit?pk-code=18d15948-2ca0-49fb-9369-61c5ce492cd9"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "charging_offer",
+          "label": "Charging benefit",
+          "due": true,
+          "current": {
+            "value": "Eligible buyers can choose a 7 kW home wall charger (installation excluded) or up to 12 months of Chargefox charging capped at 625 kWh",
+            "basis": "Australian maker conditional non-cash charging benefit",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/policies/promotions/bz4x-charging-offer"
+            ]
+          },
+          "outcome": "unchanged",
+          "note": "Offer terms still run to 31 December 2026 for bZ4X and HiLux BEV.",
+          "sourceIds": [
+            "refresh-toyota-2026-11-05-charging-terms"
+          ]
+        }
+      ]
+    },
+    {
+      "variantId": "toyota_bz4x_current__awd__20261010",
+      "vehicle": "Toyota bZ4X AWD",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.toyota.com.au/bz4x-ev/specs",
+            "https://www.toyota.com.au/discover/news/upgraded-toyota-bz4x-battery-electric-range-arrives-in-australian-showrooms",
+            "https://www.toyota.com.au/bz4x-ev/range"
+          ]
+        },
+        "outcome": "unchanged",
+        "note": "bZ4X is still listed with current offers; order status and stock not stated.",
+        "sourceIds": [
+          "refresh-toyota-2026-11-05-offers",
+          "refresh-toyota-2026-11-05-bz4x-news"
+        ]
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "67,990 AUD",
+            "basis": "Maker’s list price · before on-road costs",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/discover/news/upgraded-toyota-bz4x-family-expanded-with-larger-more-powerful-all-new-touring-grade"
+            ]
+          },
+          "outcome": "unchanged",
+          "note": "The news article still states the same 2026 pricing (plus on-road costs).",
+          "sourceIds": [
+            "refresh-toyota-2026-11-05-bz4x-news"
+          ]
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "517 km",
+            "basis": "WLTP",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/bz4x-ev/specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "74.7 kWh",
+            "basis": "Gross battery capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/bz4x-ev/specs",
+              "https://www.toyota.com.au/bz4x-ev"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "150 kW",
+            "basis": "Manufacturer stated vehicle DC capability",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/bz4x-ev"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "28 min",
+            "basis": "10–80%; 150 kW DC charger; current Toyota page claim",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/bz4x-ev",
+              "https://www.toyota.com.au/bz4x-ev/range",
+              "https://www.toyota.com.au/bz4x-ev/specs",
+              "https://www.toyota.com.au/discover/news/upgraded-toyota-bz4x-battery-electric-range-arrives-in-australian-showrooms"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "22 kW",
+            "basis": "Maximum three-phase AC charging power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/bz4x-ev/specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/bz4x-ev/specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "452 L",
+            "basis": "Manufacturer cargo volume; measurement/load configuration unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/bz4x-ev/specs",
+              "https://www.toyota.com.au/bz4x-ev/range"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "5.1 s",
+            "basis": "Manufacturer 0–100 km/h claim",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/bz4x-ev/specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "252 kW",
+            "basis": "Manufacturer combined system output",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/discover/news/upgraded-toyota-bz4x-battery-electric-range-arrives-in-australian-showrooms"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "AWD",
+            "basis": "Manufacturer driven-wheel configuration",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/bz4x-ev/specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,690 mm",
+            "basis": "Manufacturer exterior dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/bz4x-ev/specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,860 mm",
+            "basis": "Manufacturer exterior dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/bz4x-ev/specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,650 mm",
+            "basis": "Manufacturer exterior dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/bz4x-ev/specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,500 kg",
+            "basis": "Maximum braked towing",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/bz4x-ev/specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/owners/warranty",
+              "https://www.toyota.com.au/-/media/project/toyota/toyota/owners/warranty/20260401_toyota-warranty-advantage_tandcs_t2026-022197.pdf?rev=a9c6245447e84c2fa4c0cff88b0c50c5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "5 years/unlimited km defects; 8 years/160,000 km capacity assurance below 70%",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/owners/warranty",
+              "https://www.toyota.com.au/-/media/project/toyota/toyota/owners/warranty/20260401_toyota-warranty-advantage_tandcs_t2026-022197.pdf?rev=a9c6245447e84c2fa4c0cff88b0c50c5",
+              "https://pressroom.toyota.com.au/PressKit?pk-code=18d15948-2ca0-49fb-9369-61c5ce492cd9"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "charging_offer",
+          "label": "Charging benefit",
+          "due": true,
+          "current": {
+            "value": "Eligible buyers can choose a 7 kW home wall charger (installation excluded) or up to 12 months of Chargefox charging capped at 625 kWh",
+            "basis": "Australian maker conditional non-cash charging benefit",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/policies/promotions/bz4x-charging-offer"
+            ]
+          },
+          "outcome": "unchanged",
+          "note": "Offer terms still run to 31 December 2026 for bZ4X and HiLux BEV.",
+          "sourceIds": [
+            "refresh-toyota-2026-11-05-charging-terms"
+          ]
+        },
+        {
+          "key": "driveaway_price_aud",
+          "label": "Exact dealer advertised driveaway",
+          "due": true,
+          "current": {
+            "value": "73,690 AUD",
+            "basis": "Specific dealer advertisement; not a market-wide price",
+            "grade": "reported",
+            "checkedAt": "2026-10-10",
+            "sourceUrls": [
+              "https://www.southnowraautogroup.com.au/cars/new-black-2026-toyota-bz4x-13026009"
+            ]
+          },
+          "outcome": "unavailable",
+          "note": "Toyota's bZ4X page shows 'driveaway from' only after a postcode is entered; no postcode was entered. Not rechecked."
+        }
+      ]
+    },
+    {
+      "variantId": "toyota_bz4x_touring_current__awd__20261010",
+      "vehicle": "Toyota bZ4X Touring AWD",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.toyota.com.au/bz4x-touring/specs",
+            "https://pressroom.toyota.com.au/PressKit?pk-code=7276be87-5737-4c13-aeca-8bbf0e8523e3",
+            "https://www.toyota.com.au/bz4x-touring/range"
+          ]
+        },
+        "outcome": "unchanged",
+        "note": "bZ4X is still listed with current offers; order status and stock not stated.",
+        "sourceIds": [
+          "refresh-toyota-2026-11-05-offers",
+          "refresh-toyota-2026-11-05-bz4x-news"
+        ]
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "69,990 AUD",
+            "basis": "Maker’s list price · before on-road costs",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/discover/news/upgraded-toyota-bz4x-family-expanded-with-larger-more-powerful-all-new-touring-grade"
+            ]
+          },
+          "outcome": "unchanged",
+          "note": "The news article still states the same 2026 pricing (plus on-road costs).",
+          "sourceIds": [
+            "refresh-toyota-2026-11-05-bz4x-news"
+          ]
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "488 km",
+            "basis": "WLTP",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/bz4x-touring/specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "74.7 kWh",
+            "basis": "Gross battery capacity",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/bz4x-touring/specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "150 kW",
+            "basis": "Maximum DC charging rate reported by CarExpert",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.carexpert.com.au/car-reviews/2026-toyota-bz4x-touring-review",
+              "https://pressroom.toyota.com.au/PressKit?pk-code=7276be87-5737-4c13-aeca-8bbf0e8523e3"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "28 min",
+            "basis": "10–80%; 150 kW DC charger; current Toyota page claim",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/bz4x-touring",
+              "https://www.toyota.com.au/bz4x-touring/range",
+              "https://www.toyota.com.au/bz4x-touring/specs",
+              "https://pressroom.toyota.com.au/PressKit?pk-code=7276be87-5737-4c13-aeca-8bbf0e8523e3"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "22 kW",
+            "basis": "Maximum three-phase AC charging power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/bz4x-touring/specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/bz4x-touring/specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "603 L",
+            "basis": "VDA cargo capacity, labelled Max; loading configuration unspecified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/bz4x-touring/specs",
+              "https://www.toyota.com.au/bz4x-touring/range"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "4.4 s",
+            "basis": "Manufacturer 0–100 km/h claim",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/bz4x-touring/specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "280 kW",
+            "basis": "Manufacturer combined system output",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/bz4x-touring/specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "AWD",
+            "basis": "Manufacturer driven-wheel configuration",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/bz4x-touring/specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "4,830 mm",
+            "basis": "Manufacturer exterior dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/bz4x-touring/specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,860 mm",
+            "basis": "Manufacturer exterior dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/bz4x-touring/specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,675 mm",
+            "basis": "Manufacturer exterior dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/bz4x-touring/specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "1,500 kg",
+            "basis": "Maximum braked towing",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/bz4x-touring/specs"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/owners/warranty",
+              "https://www.toyota.com.au/-/media/project/toyota/toyota/owners/warranty/20260401_toyota-warranty-advantage_tandcs_t2026-022197.pdf?rev=a9c6245447e84c2fa4c0cff88b0c50c5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "5 years/unlimited km defects; 8 years/160,000 km capacity assurance below 70%",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/owners/warranty",
+              "https://www.toyota.com.au/-/media/project/toyota/toyota/owners/warranty/20260401_toyota-warranty-advantage_tandcs_t2026-022197.pdf?rev=a9c6245447e84c2fa4c0cff88b0c50c5",
+              "https://pressroom.toyota.com.au/PressKit?pk-code=18d15948-2ca0-49fb-9369-61c5ce492cd9"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "charging_offer",
+          "label": "Charging benefit",
+          "due": true,
+          "current": {
+            "value": "Eligible buyers can choose a 7 kW home wall charger (installation excluded) or up to 12 months of Chargefox charging capped at 625 kWh",
+            "basis": "Australian maker conditional non-cash charging benefit",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/policies/promotions/bz4x-charging-offer"
+            ]
+          },
+          "outcome": "unchanged",
+          "note": "Offer terms still run to 31 December 2026 for bZ4X and HiLux BEV.",
+          "sourceIds": [
+            "refresh-toyota-2026-11-05-charging-terms"
+          ]
+        }
+      ]
+    },
+    {
+      "variantId": "toyota_hilux_bev_current__sr_double_cab_cab_chassis__20261010",
+      "vehicle": "Toyota HiLux BEV SR Double-Cab Cab-Chassis",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5",
+            "https://pressroom.toyota.com.au/PressKit?pk-code=18d15948-2ca0-49fb-9369-61c5ce492cd9",
+            "https://pressroom.toyota.com.au/PressRelease?pr-code=99a32fd3-dff8-46eb-9ba4-79cef3186202"
+          ]
+        },
+        "outcome": "unavailable",
+        "note": "No current Toyota page was opened that states HiLux BEV order status; the only page read is the 31 March 2026 press release. Not rechecked; value retained, date unchanged."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "74,990 AUD",
+            "basis": "Maker’s list price · before on-road costs",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://pressroom.toyota.com.au/PressRelease?pr-code=99a32fd3-dff8-46eb-9ba4-79cef3186202"
+            ]
+          },
+          "outcome": "unchanged",
+          "note": "The press release still states the same HiLux BEV list prices.",
+          "sourceIds": [
+            "refresh-toyota-2026-11-05-hilux-pr"
+          ]
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "245 km",
+            "basis": "NEDC combined",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "59.2 kWh",
+            "basis": "Manufacturer battery capacity; gross/usable split not specified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "150 kW",
+            "basis": "Manufacturer stated vehicle DC capability",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://pressroom.toyota.com.au/PressRelease?pr-code=99a32fd3-dff8-46eb-9ba4-79cef3186202"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "30 min",
+            "basis": "10–80%; 150 kW DC charger; Toyota approximate claim",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5",
+              "https://pressroom.toyota.com.au/PressRelease?pr-code=99a32fd3-dff8-46eb-9ba4-79cef3186202"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "10 kW",
+            "basis": "Maximum three-phase AC charging power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "Open ute load body; no enclosed passenger boot volume published",
+            "grade": "not_published",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5",
+              "https://pressroom.toyota.com.au/PressKit?pk-code=18d15948-2ca0-49fb-9369-61c5ce492cd9"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "Not published for this Australian configuration",
+            "grade": "not_published",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5",
+              "https://pressroom.toyota.com.au/PressKit?pk-code=18d15948-2ca0-49fb-9369-61c5ce492cd9"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "144 kW",
+            "basis": "Manufacturer combined system output",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "AWD",
+            "basis": "Manufacturer driven-wheel configuration",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "5,080 mm",
+            "basis": "Published cab-chassis length before final tray/body",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,855 mm",
+            "basis": "Manufacturer exterior dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,865 mm",
+            "basis": "Manufacturer exterior dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "2,000 kg",
+            "basis": "Maximum braked towing",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/owners/warranty",
+              "https://www.toyota.com.au/-/media/project/toyota/toyota/owners/warranty/20260401_toyota-warranty-advantage_tandcs_t2026-022197.pdf?rev=a9c6245447e84c2fa4c0cff88b0c50c5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "5 years/unlimited km defects; 8 years/160,000 km capacity assurance below 70%",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/owners/warranty",
+              "https://www.toyota.com.au/-/media/project/toyota/toyota/owners/warranty/20260401_toyota-warranty-advantage_tandcs_t2026-022197.pdf?rev=a9c6245447e84c2fa4c0cff88b0c50c5",
+              "https://pressroom.toyota.com.au/PressKit?pk-code=18d15948-2ca0-49fb-9369-61c5ce492cd9"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "charging_offer",
+          "label": "Charging benefit",
+          "due": true,
+          "current": {
+            "value": "Eligible buyers can choose a 7 kW home wall charger (installation excluded) or up to 12 months of Chargefox charging capped at 625 kWh",
+            "basis": "Australian maker conditional non-cash charging benefit",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/policies/promotions/bz4x-charging-offer"
+            ]
+          },
+          "outcome": "unchanged",
+          "note": "Offer terms still run to 31 December 2026 for bZ4X and HiLux BEV.",
+          "sourceIds": [
+            "refresh-toyota-2026-11-05-charging-terms"
+          ]
+        }
+      ]
+    },
+    {
+      "variantId": "toyota_hilux_bev_current__sr_double_cab_pick_up__20261010",
+      "vehicle": "Toyota HiLux BEV SR Double-Cab Pick-Up",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5",
+            "https://pressroom.toyota.com.au/PressKit?pk-code=18d15948-2ca0-49fb-9369-61c5ce492cd9",
+            "https://pressroom.toyota.com.au/PressRelease?pr-code=99a32fd3-dff8-46eb-9ba4-79cef3186202"
+          ]
+        },
+        "outcome": "unavailable",
+        "note": "No current Toyota page was opened that states HiLux BEV order status; the only page read is the 31 March 2026 press release. Not rechecked; value retained, date unchanged."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "76,490 AUD",
+            "basis": "Maker’s list price · before on-road costs",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://pressroom.toyota.com.au/PressRelease?pr-code=99a32fd3-dff8-46eb-9ba4-79cef3186202"
+            ]
+          },
+          "outcome": "unchanged",
+          "note": "The press release still states the same HiLux BEV list prices.",
+          "sourceIds": [
+            "refresh-toyota-2026-11-05-hilux-pr"
+          ]
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "315 km",
+            "basis": "NEDC combined",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "59.2 kWh",
+            "basis": "Manufacturer battery capacity; gross/usable split not specified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "150 kW",
+            "basis": "Manufacturer stated vehicle DC capability",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://pressroom.toyota.com.au/PressRelease?pr-code=99a32fd3-dff8-46eb-9ba4-79cef3186202"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "30 min",
+            "basis": "10–80%; 150 kW DC charger; Toyota approximate claim",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5",
+              "https://pressroom.toyota.com.au/PressRelease?pr-code=99a32fd3-dff8-46eb-9ba4-79cef3186202"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "10 kW",
+            "basis": "Maximum three-phase AC charging power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "Open ute load body; no enclosed passenger boot volume published",
+            "grade": "not_published",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5",
+              "https://pressroom.toyota.com.au/PressKit?pk-code=18d15948-2ca0-49fb-9369-61c5ce492cd9"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "Not published for this Australian configuration",
+            "grade": "not_published",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5",
+              "https://pressroom.toyota.com.au/PressKit?pk-code=18d15948-2ca0-49fb-9369-61c5ce492cd9"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "144 kW",
+            "basis": "Manufacturer combined system output",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "AWD",
+            "basis": "Manufacturer driven-wheel configuration",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "5,320 mm",
+            "basis": "Manufacturer exterior dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,855 mm",
+            "basis": "Manufacturer exterior dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,845 mm",
+            "basis": "Manufacturer exterior dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "2,000 kg",
+            "basis": "Maximum braked towing",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/owners/warranty",
+              "https://www.toyota.com.au/-/media/project/toyota/toyota/owners/warranty/20260401_toyota-warranty-advantage_tandcs_t2026-022197.pdf?rev=a9c6245447e84c2fa4c0cff88b0c50c5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "5 years/unlimited km defects; 8 years/160,000 km capacity assurance below 70%",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/owners/warranty",
+              "https://www.toyota.com.au/-/media/project/toyota/toyota/owners/warranty/20260401_toyota-warranty-advantage_tandcs_t2026-022197.pdf?rev=a9c6245447e84c2fa4c0cff88b0c50c5",
+              "https://pressroom.toyota.com.au/PressKit?pk-code=18d15948-2ca0-49fb-9369-61c5ce492cd9"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "charging_offer",
+          "label": "Charging benefit",
+          "due": true,
+          "current": {
+            "value": "Eligible buyers can choose a 7 kW home wall charger (installation excluded) or up to 12 months of Chargefox charging capped at 625 kWh",
+            "basis": "Australian maker conditional non-cash charging benefit",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/policies/promotions/bz4x-charging-offer"
+            ]
+          },
+          "outcome": "unchanged",
+          "note": "Offer terms still run to 31 December 2026 for bZ4X and HiLux BEV.",
+          "sourceIds": [
+            "refresh-toyota-2026-11-05-charging-terms"
+          ]
+        }
+      ]
+    },
+    {
+      "variantId": "toyota_hilux_bev_current__sr5_double_cab_pick_up__20261010",
+      "vehicle": "Toyota HiLux BEV SR5 Double-Cab Pick-Up",
+      "availability": {
+        "due": true,
+        "current": {
+          "availability": "current_or_order_listed",
+          "orderStatus": "listed_unconfirmed",
+          "stockStatus": "unverified",
+          "checkedAt": "2026-10-14",
+          "sourceUrls": [
+            "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5",
+            "https://pressroom.toyota.com.au/PressKit?pk-code=18d15948-2ca0-49fb-9369-61c5ce492cd9",
+            "https://pressroom.toyota.com.au/PressRelease?pr-code=99a32fd3-dff8-46eb-9ba4-79cef3186202"
+          ]
+        },
+        "outcome": "unavailable",
+        "note": "No current Toyota page was opened that states HiLux BEV order status; the only page read is the 31 March 2026 press release. Not rechecked; value retained, date unchanged."
+      },
+      "fields": [
+        {
+          "key": "price_aud",
+          "label": "Price",
+          "due": true,
+          "current": {
+            "value": "82,990 AUD",
+            "basis": "Maker’s list price · before on-road costs",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://pressroom.toyota.com.au/PressRelease?pr-code=99a32fd3-dff8-46eb-9ba4-79cef3186202"
+            ]
+          },
+          "outcome": "unchanged",
+          "note": "The press release still states the same HiLux BEV list prices.",
+          "sourceIds": [
+            "refresh-toyota-2026-11-05-hilux-pr"
+          ]
+        },
+        {
+          "key": "range_km",
+          "label": "Range",
+          "due": false,
+          "current": {
+            "value": "315 km",
+            "basis": "NEDC combined",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_kwh",
+          "label": "Battery capacity",
+          "due": false,
+          "current": {
+            "value": "59.2 kWh",
+            "basis": "Manufacturer battery capacity; gross/usable split not specified",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_peak_kw",
+          "label": "Peak DC charging acceptance",
+          "due": false,
+          "current": {
+            "value": "150 kW",
+            "basis": "Manufacturer stated vehicle DC capability",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://pressroom.toyota.com.au/PressRelease?pr-code=99a32fd3-dff8-46eb-9ba4-79cef3186202"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "dc_charge_time_min",
+          "label": "DC 10–80% charge time",
+          "due": false,
+          "current": {
+            "value": "30 min",
+            "basis": "10–80%; 150 kW DC charger; Toyota approximate claim",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5",
+              "https://pressroom.toyota.com.au/PressRelease?pr-code=99a32fd3-dff8-46eb-9ba4-79cef3186202"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "ac_kw",
+          "label": "AC charging power",
+          "due": false,
+          "current": {
+            "value": "10 kW",
+            "basis": "Maximum three-phase AC charging power",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "seats",
+          "label": "Seats",
+          "due": false,
+          "current": {
+            "value": "5",
+            "basis": "Seating positions",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "boot_l",
+          "label": "Rear luggage volume",
+          "due": false,
+          "current": {
+            "value": "Not published",
+            "basis": "Open ute load body; no enclosed passenger boot volume published",
+            "grade": "not_published",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5",
+              "https://pressroom.toyota.com.au/PressKit?pk-code=18d15948-2ca0-49fb-9369-61c5ce492cd9"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "zero_to_100_s",
+          "label": "0–100 km/h",
+          "due": false,
+          "current": {
+            "value": "8.85 s",
+            "basis": "CarSauce Australian SR5 road-test measurement",
+            "grade": "reported",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://carsauce.com/reviews/2026-toyota-hilux-bev-sr5-review"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "power_kw",
+          "label": "Motor power",
+          "due": false,
+          "current": {
+            "value": "144 kW",
+            "basis": "Manufacturer combined system output",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "drive",
+          "label": "Drive type",
+          "due": false,
+          "current": {
+            "value": "AWD",
+            "basis": "Manufacturer driven-wheel configuration",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "length_mm",
+          "label": "Length",
+          "due": false,
+          "current": {
+            "value": "5,320 mm",
+            "basis": "Manufacturer exterior dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "width_mm",
+          "label": "Width",
+          "due": false,
+          "current": {
+            "value": "1,855 mm",
+            "basis": "Manufacturer exterior dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "height_mm",
+          "label": "Height",
+          "due": false,
+          "current": {
+            "value": "1,845 mm",
+            "basis": "Manufacturer exterior dimension",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "towing_braked_kg",
+          "label": "Braked towing",
+          "due": false,
+          "current": {
+            "value": "2,000 kg",
+            "basis": "Maximum braked towing",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/-/media/toyota/main-site/vehicle-hubs/hilux/files/20260506_hilux_bev_specifications_sheet-_gto009923.pdf?rev=724f0a708cee4c468d30fc35213b72c5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "warranty",
+          "label": "Vehicle warranty",
+          "due": false,
+          "current": {
+            "value": "5 years / unlimited km",
+            "basis": "Australian new-vehicle warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/owners/warranty",
+              "https://www.toyota.com.au/-/media/project/toyota/toyota/owners/warranty/20260401_toyota-warranty-advantage_tandcs_t2026-022197.pdf?rev=a9c6245447e84c2fa4c0cff88b0c50c5"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "battery_warranty",
+          "label": "Battery warranty",
+          "due": false,
+          "current": {
+            "value": "5 years/unlimited km defects; 8 years/160,000 km capacity assurance below 70%",
+            "basis": "Australian traction-battery warranty",
+            "grade": "confirmed",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/owners/warranty",
+              "https://www.toyota.com.au/-/media/project/toyota/toyota/owners/warranty/20260401_toyota-warranty-advantage_tandcs_t2026-022197.pdf?rev=a9c6245447e84c2fa4c0cff88b0c50c5",
+              "https://pressroom.toyota.com.au/PressKit?pk-code=18d15948-2ca0-49fb-9369-61c5ce492cd9"
+            ]
+          },
+          "outcome": "pending"
+        },
+        {
+          "key": "charging_offer",
+          "label": "Charging benefit",
+          "due": true,
+          "current": {
+            "value": "Eligible buyers can choose a 7 kW home wall charger (installation excluded) or up to 12 months of Chargefox charging capped at 625 kWh",
+            "basis": "Australian maker conditional non-cash charging benefit",
+            "grade": "check",
+            "checkedAt": "2026-10-14",
+            "sourceUrls": [
+              "https://www.toyota.com.au/policies/promotions/bz4x-charging-offer"
+            ]
+          },
+          "outcome": "unchanged",
+          "note": "Offer terms still run to 31 December 2026 for bZ4X and HiLux BEV.",
+          "sourceIds": [
+            "refresh-toyota-2026-11-05-charging-terms"
+          ]
+        }
+      ]
+    }
+  ]
+}
