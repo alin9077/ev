@@ -2,7 +2,6 @@
 import { issueReaderText } from "@/lib/issue-presentation";
 import { sourcePresentation } from "@/lib/source-presentation";
 import type { SoftwareTimelinePack } from "@/lib/detail-client-props";
-import { australianEvidenceDate } from "@/lib/evidence-date";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -10,78 +9,17 @@ import approvedManifest from "../../media/approved-assets.json";
 import { resolveAsset, type ApprovedAsset } from "@/lib/media";
 import { useEffect, useRef, useState } from "react";
 import type { Car, Fact, Feature, Issue, Pack, Source } from "@/lib/types";
-import { safeUrl, site, statusLabels } from "@/lib/config";
+import { safeUrl, site } from "@/lib/config";
 import { formatFact } from "@/lib/compare";
 import { buyerAvailabilityText } from "@/lib/buyer-availability";
-import { buyerGradeOf, gradeLabel } from "@/lib/evidence-grading";
+import { buyerGradeOf } from "@/lib/evidence-grading";
 import type { BuyerGrade } from "@/lib/types";
 import { FootnoteRefs } from "./footnotes";
 import { FreshnessLabel } from "./freshness-label";
-import { featureCondition, factCondition } from "@/lib/fleet";
+import { BuyerGradeMark, FactValue, Status, shortDate } from "./graded-figure";
+export { FactValue, Status };
+import { featureCondition } from "@/lib/fleet";
 
-export function Status({
-  status,
-  label,
-}: {
-  status: Feature["status"];
-  label?: string;
-}) {
-  return (
-    <span className={`status ${status}`}>
-      <span aria-hidden="true">
-        {status === "standard"
-          ? "✓"
-          : status === "not_verified"
-            ? "?"
-            : status === "conditional"
-              ? "◇"
-              : "·"}
-      </span>{" "}
-      {label || statusLabels[status]}
-    </span>
-  );
-}
-function shortDate(iso: string) {
-  const d = new Date(`${iso}T00:00:00Z`);
-  return Number.isNaN(d.getTime())
-    ? iso
-    : d.toLocaleDateString("en-AU", {
-        day: "numeric",
-        month: "short",
-        year: "numeric",
-        timeZone: "UTC",
-      });
-}
-/** Native details keeps each real condition keyboard- and touch-accessible. */
-function BuyerGradeMark({
-  grade,
-  condition,
-  sourceLabel,
-}: {
-  grade: BuyerGrade;
-  condition?: string;
-  sourceLabel?: string;
-}) {
-  if (grade === "confirmed" || grade === "not_published") return null;
-  if (grade === "check")
-    return (
-      <details className="conditional-context evidence-grade-check">
-        <summary>
-          <span aria-hidden="true">◇ </span>Check
-        </summary>
-        <p>
-          {condition ||
-            "Check the stated specification and source before signing."}
-        </p>
-      </details>
-    );
-  return (
-    <span className="small muted evidence-grade-reported">
-      {gradeLabel(grade)}
-      {sourceLabel ? ` · ${sourceLabel}` : " · see source"}
-    </span>
-  );
-}
 export function FeatureValue({ feature: f, asOf }: { feature: Feature; asOf?: string }) {
   const grade = buyerGradeOf(f);
   return (
@@ -364,88 +302,6 @@ export function EvidenceDrawer({
         </button>
       </div>
     </dialog>
-  );
-}
-function OfferAmount({ fact }: { fact: Fact }) {
-  const [asOf, setAsOf] = useState("");
-  useEffect(() => {
-    const update = () => setAsOf(australianEvidenceDate());
-    update();
-    const timer = setInterval(update, 60000);
-    return () => clearInterval(timer);
-  }, []);
-  return <>{asOf ? formatFact(fact, asOf) : "Checking offer validity…"}</>;
-}
-export function FactValue({
-  fact,
-  compact = false,
-}: {
-  fact: Fact;
-  onEvidence?: () => void;
-  compact?: boolean;
-}) {
-  const grade = buyerGradeOf(fact);
-  return (
-    <div className="fact-value">
-      <strong className={grade === "reported" ? "muted" : undefined}>
-        {grade === "not_published" ? (
-          "Not published"
-        ) : fact.validUntil ? (
-          <OfferAmount fact={fact} />
-        ) : (
-          formatFact(fact)
-        )}
-      </strong>
-      {fact.validUntil && (
-        <span className="qualification">
-          Offer deadline: {shortDate(fact.validUntil)}. Eligibility and earlier
-          stock exhaustion may apply.
-        </span>
-      )}
-      {grade ? (
-        <BuyerGradeMark
-          grade={grade}
-          condition={[
-            ...new Set(
-              [factCondition(fact), ...fact.qualifications].filter(Boolean),
-            ),
-          ].join(" ")}
-          sourceLabel={
-            fact.gradeReview?.sourceLabel || fact.priceEvidence?.publisher
-          }
-        />
-      ) : (
-        <>
-          {fact.gradeReviewStatus ? (
-            <Status status="not_verified" label="Needs review" />
-          ) : (
-            fact.status !== "standard" && <Status status={fact.status} />
-          )}
-          {fact.status === "conditional" && (
-            <div className="conditional-context">
-              <strong>Why conditional</strong>
-              <p>{factCondition(fact)}</p>
-            </div>
-          )}
-        </>
-      )}
-      <span className="fact-basis">
-        {fact.priceEvidence?.basisTag || fact.basis} ·{" "}
-        <FreshnessLabel
-          checkedAt={fact.date}
-          factKey={fact.key}
-          modelYearChangedAt={fact.modelYearChangedAt}
-        />
-      </span>
-      {!compact &&
-        grade !== "check" &&
-        fact.qualifications.map((q) => (
-          <span className="qualification" key={q}>
-            {q}
-          </span>
-        ))}
-      <FootnoteRefs ids={fact.sourceIds} />
-    </div>
   );
 }
 export function SeatingDiagram({ seats }: { seats: number }) {

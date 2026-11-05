@@ -31,6 +31,29 @@ const serverDate = () => "";
 export function useEvidenceDate() {
   return useSyncExternalStore(subscribe, australianEvidenceDate, serverDate);
 }
+const MONTHS = [
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec",
+];
+/** "2026-10-14" → "14 Oct". Anything that is not a real ISO date is returned unchanged. */
+export function shortCheckedDate(iso: string): string {
+  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso);
+  if (!m) return iso;
+  const month = Number(m[2]);
+  return month >= 1 && month <= 12
+    ? `${Number(m[3])} ${MONTHS[month - 1]}`
+    : iso;
+}
 export function FreshnessLabel({
   checkedAt,
   factKey,
@@ -38,6 +61,7 @@ export function FreshnessLabel({
   modelYearChangedAt,
   validUntil,
   prefix = "Checked on",
+  short = false,
 }: {
   checkedAt: string;
   factKey: string;
@@ -45,6 +69,8 @@ export function FreshnessLabel({
   modelYearChangedAt?: string;
   validUntil?: string;
   prefix?: string;
+  /** Card style: "checked 14 Oct", amber when aged; the figure itself never changes. */
+  short?: boolean;
 }) {
   const clockDate = useEvidenceDate();
   const date = asOf ?? clockDate;
@@ -59,6 +85,23 @@ export function FreshnessLabel({
   const offerLabel = offerValidityLabel({ validUntil }, date);
   const offerNeedsCheck =
     validUntil !== undefined && offerExpired({ validUntil }, date);
+  if (short)
+    return (
+      <span
+        className={
+          needsCheck || (date && offerNeedsCheck)
+            ? "evidence-freshness evidence-stale"
+            : "evidence-freshness"
+        }
+      >
+        {checkedAt
+          ? `checked ${shortCheckedDate(checkedAt)}`
+          : "date not recorded"}
+        {(needsCheck || (date && offerNeedsCheck)) && (
+          <span className="sr-only"> (needs a fresh check)</span>
+        )}
+      </span>
+    );
   return (
     <span
       className={
